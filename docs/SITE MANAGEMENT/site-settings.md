@@ -18,9 +18,9 @@ The Site Settings section in Recurly provides a centralized location for users t
 
 # Key benefits
 
-- **Centralized configuration management:** Exercise centralized control over various site configurations, streamlining the administration process.
-- **Tailored user experience:** Leverage enhanced customization options to create a user-centric experience that meets individual preferences and business requirements.
-- **Optimized communication:** Efficiently manage email settings to improve communication, ensuring timely and accurate information exchange.
+* **Centralized configuration management:** Exercise centralized control over various site configurations, streamlining the administration process.
+* **Tailored user experience:** Leverage enhanced customization options to create a user-centric experience that meets individual preferences and business requirements.
+* **Optimized communication:** Efficiently manage email settings to improve communication, ensuring timely and accurate information exchange.
 
 # Key details
 
@@ -76,26 +76,12 @@ Please refer to our documentation on **<a href="https://docs.recurly.com/docs/se
 
 #### Debt Collection Email notifications
 
-The federal Fair Debt Collection Practices Act (FDCPA) provides key protections to consumers. These include rules for how debt collectors can communicate with debtors and third parties.  
+The federal Fair Debt Collection Practices Act (FDCPA) provides key protections to consumers. These include rules for how debt collectors can communicate with debtors and third parties.\
 To support FDCPA, merchants will have the opportunity to choose whether or not they wish to opt into sending their emails that are payment-related between the hours of 2-4 PM ET daily to adhere to the federal law about not communicating with customers about money owed to their business between the hours of 9 pm and 8 am.
 
 To choose to opt into sending payment-related emails between the hours of 2-4 PM ET daily, check the box next to "Send payment collection emails between 2:00-4:00 PM ET."
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f471ac6b5f46f923964b88a5dfa9ec60a437d7a983e9ef6a45494c24b69dac91-Image_10-3-24_at_3.18_PM.jpeg",
-        null,
-        "screenshot site setting debt collection email]"
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/f471ac6b5f46f923964b88a5dfa9ec60a437d7a983e9ef6a45494c24b69dac91-Image_10-3-24_at_3.18_PM.jpeg" />
 
 ### Address requirements
 
@@ -103,7 +89,7 @@ Configure the minimum fields required for the billing address of your customers.
 
 ![](https://files.readme.io/a41c57b-image.png)
 
-**_Recurly recommends collecting postal code at a minimum._**
+***Recurly recommends collecting postal code at a minimum.***
 
 ### Allowlist IP addresses
 
@@ -113,14 +99,14 @@ This feature enables you to designate a public IP address or range that will byp
 
 **IP addresses can be entered in the following formats:**
 
-**Single IP**: 192.168.0.1  
-**IP Range**: 192.168.12.0/24 (**_The range must be narrower than /24_**).
+**Single IP**: 192.168.0.1\
+**IP Range**: 192.168.12.0/24 (***The range must be narrower than /24***).
 
 By specifying the desired IP addresses or range, ensure that transactions originating from those sources are exempted from Recurly's fraud checks.
 
 ### Invoice prefixing
 
-If you have multiple billing systems consolidating into a single gateway account, you can define an **Order Number Prefix **within Recurly. This allows you to easily identify Recurly transactions in your payment gateway's virtual terminal. It's important to note that this prefix is only used on the backend and will not be displayed on the invoice.
+If you have multiple billing systems consolidating into a single gateway account, you can define an **Order Number Prefix** within Recurly. This allows you to easily identify Recurly transactions in your payment gateway's virtual terminal. It's important to note that this prefix is only used on the backend and will not be displayed on the invoice.
 
 Please be aware that **PayPal Payment Gateways do not support invoice prefixing**.
 
