@@ -16,11 +16,11 @@ next:
 ---
 ## Clear Test Data
 
-To remove all test data from your Recurly sandbox site, simply utilize the **Clear Test Data** button. This action will delete all test [accounts][2], along with their associated [subscriptions][3] and [transactions][4], ensuring a clean slate for further testing and experimentation.
+To remove all test data from your Recurly sandbox site, simply utilize the **Clear Test Data** button. This action will delete all test \[2], along with their associated \[3] and \[4], ensuring a clean slate for further testing and experimentation.
 
 ![](https://files.readme.io/82abc75-Screenshot_1.png)
 
-It's important to note that this action will not affect any configuration elements like [subscription plans][5], [coupons][6], or email templates. However, it will remove third-party integrations such as Xero and QuickBooks Online, as well as any configured webhook endpoints. It's crucial to exercise caution when using this irreversible action.
+It's important to note that this action will not affect any configuration elements like \[5], \[6], or email templates. However, it will remove third-party integrations such as Xero and QuickBooks Online, as well as any configured webhook endpoints. It's crucial to exercise caution when using this irreversible action.
 
 ## Site Subdomain
 
@@ -29,14 +29,14 @@ To update the name shown on your customer bank statements, please contact your m
 Site subdomain is used on hosted pages and within your API credentials, so changes to site subdomain will also require an update to your API authentication. You may need to log out and log back in to see subdomain changes take effect.
 
 > 📘 Company DBA Name
-> 
+>
 > For certain gateways, you may need to configure your company's DBA (doing business as) name as this will be included in the transaction request. This will be configured under your Site Settings. Note, if this field is left blank, then Recurly will use the Site Name populated on your Site Settings page.
 
 ## Address Requirements
 
 This sets the minimum fields required for billing address from your customers. Please make sure this matches the address requirements for [your gateway][7]'s **Address Validation Service** requirements. Most gateways require **Street Address** and **Postal Code**, while [PayPal][7] requires a full address, and [Beanstream][7] asks for full address and phone number.
 
-_Recurly recommends collecting postal code at a minimum._
+*Recurly recommends collecting postal code at a minimum.*
 
 ### Taxes
 
@@ -44,9 +44,9 @@ If you are collecting taxes, make sure you are collecting enough address informa
 
 Here are our recommendations:
 
-- United States - Full Address (Postal Code and Country is required at a minimum for U.S. Sales Tax to be calculated.)
-- Canada - Country and State/Province
-- Australia, New Zealand, Israel, European Union, Non-EU Europe - Country
+* United States - Full Address (Postal Code and Country is required at a minimum for U.S. Sales Tax to be calculated.)
+* Canada - Country and State/Province
+* Australia, New Zealand, Israel, European Union, Non-EU Europe - Country
 
 ### Countries, Provinces and States
 
@@ -56,7 +56,7 @@ Recurly uses <a href="https://docs.recurly.com/countries-provinces-and-states">I
 
 ## Accepted Currencies
 
-Merchants with [our Multiple Currency add-on][8] are able to define multiple currencies in their Recurly account, which is set here. Once you start processing transactions in one currency, _you will not be able to change your site to another currency_.
+Merchants with [our Multiple Currency add-on][8] are able to define multiple currencies in their Recurly account, which is set here. Once you start processing transactions in one currency, *you will not be able to change your site to another currency*.
 
 [8]: /docs/currencies
 
@@ -90,4 +90,4 @@ IP Addresses can be given in the following formats:
 
 Merchants who have multiple billing systems funneling into one gateway account can define an **Order Number Prefix** inside of Recurly. This will help you uniquely identify Recurly transactions inside your payment gateway virtual terminal. Please note that this is on the backend only and will not show up on the invoice.
 
-**_Paypal Payment Gateways does not support invoice prefixing._**
+***Paypal Payment Gateways does not support invoice prefixing.***
