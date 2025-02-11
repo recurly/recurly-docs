@@ -38,43 +38,11 @@ Add-ons are additional charges billed each billing period alongside a subscripti
 
 2. Choose to create an add-on that is unique to the plan, or create an add-on from a saved item in your catalog.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" />
 
 3. Define the add-on’s properties. This includes type, name, code, accounting code, pricing model, price, tiers, taxes, and options for opting out or editable quantity. Some properties will auto-populate if you're creating an item-based add-on.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a986346-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/a986346-image.png" />
 
 4. Save your changes. 
 
