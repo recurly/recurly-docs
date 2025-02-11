@@ -48,8 +48,6 @@ A payment gateway can be enabled or disabled at any time to allow transactions t
 
 ![](https://files.readme.io/cfee537-Screen_Shot_2019-06-19_at_3.36.49_PM.png "Screen Shot 2019-06-19 at 3.36.49 PM.png")
 
-
-
 [6]: https://docs.recurly.com/docs/custom-gateway-routing-configuration
 
 ## Payment Routing
