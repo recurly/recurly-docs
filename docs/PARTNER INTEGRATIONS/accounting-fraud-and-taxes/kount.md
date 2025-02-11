@@ -20,8 +20,8 @@ This feature is only available to customers on the Professional and/or Elite sub
 
 ### Limitations
 
-- Risk inquiries are only performed on new card verifications (sign-ups and billing info updates).
-- Existing accounts with a credit or debit card on file will not undergo risk inquiries unless they update their billing information.
+* Risk inquiries are only performed on new card verifications (sign-ups and billing info updates).
+* Existing accounts with a credit or debit card on file will not undergo risk inquiries unless they update their billing information.
 
 # Definition
 
@@ -31,29 +31,13 @@ Recurly recognizes the importance of safeguarding businesses from potential thre
 
 # Key benefits
 
-- **Reduced fraudulent orders**: Minimize the risk of accepting deceptive orders to safeguard your business.
-- **Decreased chargebacks**: Lower the incidence of chargebacks, preserving both time and financial resources.
-- **Enhanced customer experience**: Offer a secure transaction environment, elevating customer confidence and satisfaction.
-- **Cost efficiency**: Curtail operational expenses tied to fraud detection and management, promoting a healthier bottom line.
-- **Retention boost**: Foster a secure transaction milieu, aiding in reducing customer churn and enhancing loyalty.
+* **Reduced fraudulent orders**: Minimize the risk of accepting deceptive orders to safeguard your business.
+* **Decreased chargebacks**: Lower the incidence of chargebacks, preserving both time and financial resources.
+* **Enhanced customer experience**: Offer a secure transaction environment, elevating customer confidence and satisfaction.
+* **Cost efficiency**: Curtail operational expenses tied to fraud detection and management, promoting a healthier bottom line.
+* **Retention boost**: Foster a secure transaction milieu, aiding in reducing customer churn and enhancing loyalty.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/82814e8-d063eb2-image_7.png",
-        "d063eb2-image_7.png",
-        684
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/82814e8-d063eb2-image_7.png" />
 
 Once Kount’s Fraud Service is activated, Recurly initiates risk assessments for new card verifications, including sign-ups and billing info updates. Accounts with existing credit or debit cards will only be assessed if their billing information is updated.
 
@@ -61,10 +45,10 @@ Once Kount’s Fraud Service is activated, Recurly initiates risk assessments fo
 
 For businesses seeking a robust and customizable fraud management solution, Kount Enterprise is the ideal choice. It offers the foundational fraud prevention technology of Kount Basic, enhanced with direct access to your Kount Control Center and a dedicated Kount Customer Success Manager. With Kount Enterprise, you can:
 
-- Create custom rules based on observed fraud trends and specific business policies.
-- Access Kount’s business intelligence tools for comprehensive analysis.
-- Conduct manual reviews for transactions.
-- Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
+* Create custom rules based on observed fraud trends and specific business policies.
+* Access Kount’s business intelligence tools for comprehensive analysis.
+* Conduct manual reviews for transactions.
+* Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
 
 ## How does it work?
 
