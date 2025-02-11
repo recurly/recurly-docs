@@ -21,8 +21,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-- Invoice number customization and prefix addition may require support assistance.
-- Certain invoice display customizations might not be supported in all configurations.
+* Invoice number customization and prefix addition may require support assistance.
+* Certain invoice display customizations might not be supported in all configurations.
 
 # Definition
 
@@ -30,9 +30,9 @@ Recurly's invoice management system provides tools for generating, tracking, and
 
 ## Key benefits
 
-- **Detailed transaction records:** Invoices in Recurly provide a full breakdown of transactions, including origins, amounts, and associated customer details, enhancing transparency and trust.
-- **Customizable numbering and sequencing:** Tailor invoice numbering to start from a specific number or add prefixes for better organization and identification, especially useful for businesses operating in multiple markets or with varied product lines.
-- **Comprehensive display options:** Customize the invoice display to include essential business and customer information, ensuring invoices are informative, compliant, and aligned with your brand.
+* **Detailed transaction records:** Invoices in Recurly provide a full breakdown of transactions, including origins, amounts, and associated customer details, enhancing transparency and trust.
+* **Customizable numbering and sequencing:** Tailor invoice numbering to start from a specific number or add prefixes for better organization and identification, especially useful for businesses operating in multiple markets or with varied product lines.
+* **Comprehensive display options:** Customize the invoice display to include essential business and customer information, ensuring invoices are informative, compliant, and aligned with your brand.
 
 ## Numbering
 
@@ -56,66 +56,66 @@ The display of invoices in the Recurly Admin Console, Hosted Invoice, or as a PD
 
 ### Number and collection
 
-- **Invoice number & posting date:** Every invoice displays its number and the date it was posted.
-- **Charge Invoices:** These will additionally show a term option and due date.
-- **Credit Invoices:** If issued against a charge invoice, the relevant charge invoice number(s) will be listed.
+* **Invoice number & posting date:** Every invoice displays its number and the date it was posted.
+* **Charge Invoices:** These will additionally show a term option and due date.
+* **Credit Invoices:** If issued against a charge invoice, the relevant charge invoice number(s) will be listed.
 
 ### From address
 
 Located at the top left of the invoice, this section lists your company's information as provided in Site Settings under Configuration in the Admin Console. It includes:
 
-- Company Name
-- Address (Address 1 and Address 2)
-- City
-- State/Province
-- Zip/Postal Code
-- Country
-- Phone Number
-- Billing Contact Email
-- VAT Number
-- Registration Number
+* Company Name
+* Address (Address 1 and Address 2)
+* City
+* State/Province
+* Zip/Postal Code
+* Country
+* Phone Number
+* Billing Contact Email
+* VAT Number
+* Registration Number
 
 ### Bill to
 
 Every invoice includes a Bill To address for the customer:
 
-- Defaults to Billing Information for automatic collection methods or Account Information for manual methods.
-- Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration > Taxes > Tax Settings.  
+* Defaults to Billing Information for automatic collection methods or Account Information for manual methods.
+* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration > Taxes > Tax Settings.\
   Fields displayed in the Bill To section:
-- First and Last Name
-- Company Name (from Account Information)
-- Address (Address 1 and Address 2)
-- City
-- State/Province
-- Zip/Postal Code
-- Country
-- VAT Number
+* First and Last Name
+* Company Name (from Account Information)
+* Address (Address 1 and Address 2)
+* City
+* State/Province
+* Zip/Postal Code
+* Country
+* VAT Number
 
 ### Ship to
 
 An invoice includes a Ship To address if a shipping address is associated with the subscription or specified for a line item:
 
-- First and Last Name
-- Address (Address 1 and Address 2)
-- City
-- State/Province
-- Zip/Postal Code
-- Country
-- VAT Number  
+* First and Last Name
+* Address (Address 1 and Address 2)
+* City
+* State/Province
+* Zip/Postal Code
+* Country
+* VAT Number\
   Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses)
 
 ### Line items
 
 Invoices contain a table of line items with these columns:
 
-- Date
-- Description
-- Quantity
-- Price
-- Discount (shown only if applicable)
-- Subtotal
-- Tax (shown only if applicable, displaying the rate)
-- Total (shown only if tax is applicable)
+* Date
+* Description
+* Quantity
+* Price
+* Discount (shown only if applicable)
+* Subtotal
+* Tax (shown only if applicable, displaying the rate)
+* Total (shown only if tax is applicable)
 
 <br />
 
@@ -125,90 +125,42 @@ Invoices contain a table of line items with these columns:
 
 At the bottom right of the invoice, the following invoice-level values are displayed:
 
-- **Subtotal:** The total before taxes and additional charges.
-- **Tax:** Shown only if tax is applicable to the invoice.
-- **Total:** The invoice total, inclusive of all charges and taxes.
-- **Balance:** The remaining amount due on the invoice.  
+* **Subtotal:** The total before taxes and additional charges.
+* **Tax:** Shown only if tax is applicable to the invoice.
+* **Total:** The invoice total, inclusive of all charges and taxes.
+* **Balance:** The remaining amount due on the invoice.\
   Between the Total and Balance, the following balance-changing entries are listed:
-- **Paid:** Represents the total of all payment transactions.
-- **Credit Applied/Redeemed:** The total value of all credit payments applied to the invoice.
-- **Payment Refund:** The total of all refund transactions made against the invoice.
-- **Credit Voided:** Any portion of the credit balance that has been removed or voided.
-- **Write-Off:** The amount of the invoice that has been written off.
+* **Paid:** Represents the total of all payment transactions.
+* **Credit Applied/Redeemed:** The total value of all credit payments applied to the invoice.
+* **Payment Refund:** The total of all refund transactions made against the invoice.
+* **Credit Voided:** Any portion of the credit balance that has been removed or voided.
+* **Write-Off:** The amount of the invoice that has been written off.
 
 ### Quantity-based pricing line items
 
-Recurly's invoice line items are structured differently based on the pricing model used, such as Tiered Volume and Stairstep. The first charge typically reflects the plan's base fee, followed by charges for Add-Ons determined by the chosen pricing model and quantity. For more information, refer to [Billing Models](https://docs.recurly.com/docs/billing-models#section-quantity-based){:target="\_blank"}.
+Recurly's invoice line items are structured differently based on the pricing model used, such as Tiered Volume and Stairstep. The first charge typically reflects the plan's base fee, followed by charges for Add-Ons determined by the chosen pricing model and quantity. For more information, refer to [Billing Models](https://docs.recurly.com/docs/billing-models#section-quantity-based)\{:target="\_blank"}.
 
 #### Tiered pricing
 
-- **Description:** For the Tiered model, each tier results in a separate line item.
-- **Naming:** The Add-On name includes the range of units. Example: "Seats: 1-10".
-- **Visualization:** 
+* **Description:** For the Tiered model, each tier results in a separate line item.
+* **Naming:** The Add-On name includes the range of units. Example: "Seats: 1-10".
+* **Visualization:** 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3dc4f14-Image_2020-03-20_at_8.53.19_AM.png",
-        "Image 2020-03-20 at 8.53.19 AM.png",
-        "Tiered Pricing Example"
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/3dc4f14-Image_2020-03-20_at_8.53.19_AM.png" />
 
 #### Volume pricing
 
-- **Description:** Line items for Volume pricing are similar to those for fixed-price products, using the per-unit price from the relevant subscription tier.
-- **Visualization:** 
+* **Description:** Line items for Volume pricing are similar to those for fixed-price products, using the per-unit price from the relevant subscription tier.
+* **Visualization:** 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/576c291-volume.png",
-        "volume.png",
-        "Volume Pricing Example"
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/576c291-volume.png" />
 
 #### Stairstep pricing
 
-- **Description:** A single line item is created, displaying the Add-On name and purchased quantity. The charge quantity is set to 1, with the price reflecting the fixed price for the applicable tier.
-- **Visualization:**
+* **Description:** A single line item is created, displaying the Add-On name and purchased quantity. The charge quantity is set to 1, with the price reflecting the fixed price for the applicable tier.
+* **Visualization:**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a983819-Image_2020-03-20_at_8.59.44_AM.png",
-        "Image 2020-03-20 at 8.59.44 AM.png",
-        "Stairstep Pricing Example"
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/a983819-Image_2020-03-20_at_8.59.44_AM.png" />
 
 ### Payment history
 
@@ -220,18 +172,18 @@ Invoices feature three types of notes sections, which are visible only if they c
 
 #### Customer notes
 
-- **Description:** A section for any customer-specific notes, such as special invoice details or a thank-you message. 
-- **Title Visibility:** The title of this section does not appear on the invoice.
+* **Description:** A section for any customer-specific notes, such as special invoice details or a thank-you message. 
+* **Title Visibility:** The title of this section does not appear on the invoice.
 
 #### Terms and conditions
 
-- **Description:** A section for payment terms, legal notes, or other important information.
-- **Title Visibility:** The title of this section is always visible and cannot be altered.
+* **Description:** A section for payment terms, legal notes, or other important information.
+* **Title Visibility:** The title of this section is always visible and cannot be altered.
 
 #### VAT reverse charge notes
 
-- **Description:** Used for European Union reverse charge tax scenarios.
-- **Configuration:** Set up on the Tax Settings page.  
+* **Description:** Used for European Union reverse charge tax scenarios.
+* **Configuration:** Set up on the Tax Settings page.\
   Learn more about [VAT Reverse Charge Notes](https://docs.recurly.com/docs/eu-vat-2015#section-eu-vat-registered-customers)
 
 ## PDFs
@@ -240,37 +192,22 @@ Enable PDF invoice attachments in email notifications by navigating to the Email
 
 Email Templates that support invoice PDF attachments:
 
-- New Subscription
-- New Invoice (Manual Invoice feature only)
-- Invoice Past Due (Manual Invoice feature only)
-- Payment Confirmation
-- Payment Declined
-- Payment Refunded
-- Payment Voided
+* New Subscription
+* New Invoice (Manual Invoice feature only)
+* Invoice Past Due (Manual Invoice feature only)
+* Payment Confirmation
+* Payment Declined
+* Payment Refunded
+* Payment Voided
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/142bd85-Screenshot_2024-08-05_at_9.21.28_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/142bd85-Screenshot_2024-08-05_at_9.21.28_AM.png" />
 
 ## Emails
 
-- **Initial Subscription:** The first invoice is included in the "New Subscription" email.
-- **Automatic Collection Invoices:** Subsequent invoices are sent using the "Payment Confirmation" email. Invoices with a $0.00 total are not sent.
-- **Manual Collection Invoices:** These always trigger the "New Invoice" email template.
-- **Resending Emails:** Invoice emails can be resent using the **Resend Last Email** button on an invoice. Enable PDF attachments for all invoice-related emails in the [Invoice Settings](https://app.recurly.com/go/configuration/invoice_settings/edit).
+* **Initial Subscription:** The first invoice is included in the "New Subscription" email.
+* **Automatic Collection Invoices:** Subsequent invoices are sent using the "Payment Confirmation" email. Invoices with a $0.00 total are not sent.
+* **Manual Collection Invoices:** These always trigger the "New Invoice" email template.
+* **Resending Emails:** Invoice emails can be resent using the **Resend Last Email** button on an invoice. Enable PDF attachments for all invoice-related emails in the [Invoice Settings](https://app.recurly.com/go/configuration/invoice_settings/edit).
 
 ## Proration
 
@@ -292,8 +229,8 @@ Posting an invoice with manual collection prompts Recurly to issue the invoice w
 
 To manually record an external payment, view the invoice in the Admin Console and enter the payment details in the left sidebar. A manually paid invoice can be reopened.
 
-- Learn more about [manual collection](https://docs.recurly.com/docs/manual-payments).
-- Learn more about our [Make a Payment option](https://docs.recurly.com/docs/hosted-account-management#section-online-payments).
+* Learn more about [manual collection](https://docs.recurly.com/docs/manual-payments).
+* Learn more about our [Make a Payment option](https://docs.recurly.com/docs/hosted-account-management#section-online-payments).
 
 ### Modify subscription's collection method
 
@@ -326,57 +263,25 @@ To refund an invoice, select "Refund Invoice" in the Invoice Actions dropdown in
 Once you are on the Issue Refund page, you have a few options to choose how to handle your refund. You can issue your refund either by the line item level, or for the entire invoice. 
 
 > 🚧 Important Callout:
-> 
-> Merchants **_without_** the "Only Bill What Changed" and "Credit Memos" feature flags enabled on their site only have the option the to refund by "Quantity" for line items, and by "Specific Amounts" for entire invoices. Refunding by percentages and specific amounts on line items, and percentages on entire invoices, is _not available_ for merchants without the "Credit Memos" and "OBWC" features enabled. 
+>
+> Merchants ***without*** the "Only Bill What Changed" and "Credit Memos" feature flags enabled on their site only have the option the to refund by "Quantity" for line items, and by "Specific Amounts" for entire invoices. Refunding by percentages and specific amounts on line items, and percentages on entire invoices, is *not available* for merchants without the "Credit Memos" and "OBWC" features enabled.
 
 **Select to refund by line item**:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1d7bd0ff3a3c0d40d7baa51e77984d63c2a1b382e0913f5ea12724339d7e7566-Screenshot_2024-08-20_at_1.18.46_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/1d7bd0ff3a3c0d40d7baa51e77984d63c2a1b382e0913f5ea12724339d7e7566-Screenshot_2024-08-20_at_1.18.46_PM.png" />
 
 **Select to refund by entire invoice:** 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/155cce782e09c877c4053f44bd9913362ac7a89b8a9794883765198888a69af3-Screenshot_2024-08-20_at_1.27.12_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/155cce782e09c877c4053f44bd9913362ac7a89b8a9794883765198888a69af3-Screenshot_2024-08-20_at_1.27.12_PM.png" />
 
 Refund options for issuing refunds by individual line items include refunding a line item by quantity, specific amount, or percentage. Refund options for issuing refunds for whole invoices include refunding by a specific amount, or percentage amount. 
 
-- Quantity refunds allow you to refund quantity amounts on each/any line item on an invoice.
-- Specific amount refunds allow you to refund specific dollar/cent amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
-- Percentage refunds allow you to refund percentage amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
+* Quantity refunds allow you to refund quantity amounts on each/any line item on an invoice.
+* Specific amount refunds allow you to refund specific dollar/cent amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
+* Percentage refunds allow you to refund percentage amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
 
 > 👍 Good to know:
-> 
+>
 > If you choose to issue a line item by a specific dollar amount or percentage, the “quantity” item for the line item(s) will show up as “1” on the invoice. Only quantity-based refunds will show specific quantity amounts for items on the invoice.
 
 ## Testing
