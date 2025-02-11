@@ -14,7 +14,7 @@ next:
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+* Users must have Analytics user role permission.
 
 # Definition
 
