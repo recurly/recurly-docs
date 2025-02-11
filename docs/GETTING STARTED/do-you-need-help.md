@@ -16,7 +16,7 @@ next:
   description: ''
 ---
 <Tabs>
-  <Tab title="First Tab" icon="fa:user">
+  <Tab title="First Tab" icon="fa-user">
     Welcome to the content that you can only see inside the first Tab.
   </Tab>
 
