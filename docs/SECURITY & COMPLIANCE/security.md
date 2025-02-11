@@ -21,15 +21,15 @@ In addition to security considerations, compliance with regulations is also crit
 
 # Key benefits
 
-- **Top-tier security:** With PGP encryption, Two-Factor Authentication, and IP Allowlisting, we ensure robust security, minimizing the risk of unauthorized access and data breaches.
-- **Optimized data hosting:** Our advanced data hosting solutions provide secure, reliable, and efficient storage and management of customer data.
-- **Global compliance:** Our adherence to GDPR signifies our commitment to user privacy and data protection, ensuring operations align with international regulations.
-- **Secure access:** Features like Single Sign-On offer a balance of security and convenience, enhancing user experience without compromising data protection.
+* **Top-tier security:** With PGP encryption, Two-Factor Authentication, and IP Allowlisting, we ensure robust security, minimizing the risk of unauthorized access and data breaches.
+* **Optimized data hosting:** Our advanced data hosting solutions provide secure, reliable, and efficient storage and management of customer data.
+* **Global compliance:** Our adherence to GDPR signifies our commitment to user privacy and data protection, ensuring operations align with international regulations.
+* **Secure access:** Features like Single Sign-On offer a balance of security and convenience, enhancing user experience without compromising data protection.
 
 # Key details
 
-- **Data Hosting:** We provide secure, reliable, and efficient data hosting solutions, ensuring your data is stored, managed, and retrieved in a secure environment. <a href="https://docs.recurly.com/docs/data-hosting" target="_blank">Learn more</a>
-- **PGP Encryption:** Recurly supports PGP Encryption for an added layer of data security for certain sensitive communications. <a href="https://docs.recurly.com/docs/pgp-encryption" target="_blank">Learn more</a>
-- **IP Allowlist:** Recurly communicates with external systems via a set list of IP addresses. <a href="https://docs.recurly.com/docs/ip-allowlist" target="_blank">Learn more</a>
+* **Data Hosting:** We provide secure, reliable, and efficient data hosting solutions, ensuring your data is stored, managed, and retrieved in a secure environment. <a href="https://docs.recurly.com/docs/data-hosting" target="_blank">Learn more</a>
+* **PGP Encryption:** Recurly supports PGP Encryption for an added layer of data security for certain sensitive communications. <a href="https://docs.recurly.com/docs/pgp-encryption" target="_blank">Learn more</a>
+* **IP Allowlist:** Recurly communicates with external systems via a set list of IP addresses. <a href="https://docs.recurly.com/docs/ip-allowlist" target="_blank">Learn more</a>
 
 **Your trust, our commitment. Your data, our responsibility.**
