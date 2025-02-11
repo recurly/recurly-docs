@@ -30,27 +30,27 @@ Using PayPal as a payment method in Recurly comes with a set of restrictions tha
 
 #### Availability
 
-- **Recurly Checkout, Hosted Payment Pages, or Recurly.js:** PayPal payments can only be facilitated through these mediums. The Recurly API does not support PayPal checkouts. PayPal Complete is only available in Recurly.js.
-- **Facebook's In-App Browser:** The PayPal checkout process is currently not compatible with Facebook's in-app browser due to its lack of support for tabbed browsing, hindering the correct display of the PayPal checkout flow.
-- **PayPal Business Account:** The PayPal Business Account is a legacy platform, and Recurly no longer suppports new configurations for this gateway. If the gateway tile is not available on your production site, this indicates the mechanism has been disabled. For further instructions, please reach out to [support@recurly.com](mailto:support@recurly.com).
+* **Recurly Checkout, Hosted Payment Pages, or Recurly.js:** PayPal payments can only be facilitated through these mediums. The Recurly API does not support PayPal checkouts. PayPal Complete is only available in Recurly.js.
+* **Facebook's In-App Browser:** The PayPal checkout process is currently not compatible with Facebook's in-app browser due to its lack of support for tabbed browsing, hindering the correct display of the PayPal checkout flow.
+* **PayPal Business Account:** The PayPal Business Account is a legacy platform, and Recurly no longer suppports new configurations for this gateway. If the gateway tile is not available on your production site, this indicates the mechanism has been disabled. For further instructions, please reach out to [support@recurly.com](mailto:support@recurly.com).
 
 #### Transaction Details
 
-- **Checkout & Hosted Payment Page Parameters:** If a customer cancels the payment process midway and initiates a new signup, details such as the account code entered during the initial attempt will not be retained.
-- **Address Information:** Recurly doesn't automatically obtain address information from PayPal. If you're not utilizing the "Collect PayPal Shipping Address" feature, ensure to gather this information outside of the PayPal checkout form for tax calculations. Note that PayPal uses the billing address stored in their system for payment processing, while Recurly uses the internally stored address for tax computations.
+* **Checkout & Hosted Payment Page Parameters:** If a customer cancels the payment process midway and initiates a new signup, details such as the account code entered during the initial attempt will not be retained.
+* **Address Information:** Recurly doesn't automatically obtain address information from PayPal. If you're not utilizing the "Collect PayPal Shipping Address" feature, ensure to gather this information outside of the PayPal checkout form for tax calculations. Note that PayPal uses the billing address stored in their system for payment processing, while Recurly uses the internally stored address for tax computations.
 
 #### Approvals and Compliance
 
-- **Approval for Reference Transactions:** Generally reserved for merchants who have an established operational history with PayPal.
-- **VAT Collection:** For guidance on complying with VAT regulations when processing PayPal payments, kindly refer to our [VAT documentation](https://docs.recurly.com/docs/vat-number-validation).
+* **Approval for Reference Transactions:** Generally reserved for merchants who have an established operational history with PayPal.
+* **VAT Collection:** For guidance on complying with VAT regulations when processing PayPal payments, kindly refer to our [VAT documentation](https://docs.recurly.com/docs/vat-number-validation).
 
 Recurly supports merchants who want to let customers pay using their PayPal account. To use Recurly to process PayPal payments, you can use either PayPal Business or Braintree as the gateway. Recurly helps you get the most from your PayPal customers by supporting the latest Express Checkout and OneTouch experiences.
 
 ### Use cases
 
-- Offering familiar and secure PayPal payment options to increase customer trust and satisfaction.
-- Leveraging Express Checkout and One Touch™ for a faster and smoother payment experience.
-- Allowing customers to manage billing agreements directly through PayPal, or by using Recurly to terminate subscriptions.
+* Offering familiar and secure PayPal payment options to increase customer trust and satisfaction.
+* Leveraging Express Checkout and One Touch™ for a faster and smoother payment experience.
+* Allowing customers to manage billing agreements directly through PayPal, or by using Recurly to terminate subscriptions.
 
 # Checkout flows
 
@@ -60,7 +60,7 @@ Recurly supports PayPal’s latest and greatest PayPal offering which is support
 
 ## PayPal Express Checkout and One Touch™
 
-Recurly supports the Express Checkout flow and One Touch™ flow for all customers using the latest version of Recurly.js. With Express Checkout and One Touch™, your customers have a more seamless checkout experience. [Learn more about Express Checkout and One Touch](https://www.paypal.com/us/webapps/mpp/one-touch-for-business?utm_source=hs_email&utm_medium=email&utm_content=2&_hsenc=p2ANqtz-8nejbQrZ8vp-2ygd1nlveotz94L9LdeP8DCA-acUaIxO6dmjgrJbnPYOkfEFQlnhyYK3GvO60ekMDKFZBkczSnoApWeA&_hsmi=2). 
+Recurly supports the Express Checkout flow and One Touch™ flow for all customers using the latest version of Recurly.js. With Express Checkout and One Touch™, your customers have a more seamless checkout experience. [Learn more about Express Checkout and One Touch](https://www.paypal.com/us/webapps/mpp/one-touch-for-business?utm_source=hs_email\&utm_medium=email\&utm_content=2&_hsenc=p2ANqtz-8nejbQrZ8vp-2ygd1nlveotz94L9LdeP8DCA-acUaIxO6dmjgrJbnPYOkfEFQlnhyYK3GvO60ekMDKFZBkczSnoApWeA&_hsmi=2). 
 
 ### The PayPal Express Checkout experience
 
