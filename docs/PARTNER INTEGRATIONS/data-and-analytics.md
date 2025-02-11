@@ -20,15 +20,15 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 ### Prerequisites
 
-- Proficiency with the specific third-party software you're integrating.
-- An active account or subscription with the chosen third-party service.
-- Necessary API keys or authentication credentials as specified by the third-party software.
+* Proficiency with the specific third-party software you're integrating.
+* An active account or subscription with the chosen third-party service.
+* Necessary API keys or authentication credentials as specified by the third-party software.
 
 ### Limitations
 
-- The scope of integration is dependent on the third-party software's API and feature updates.
-- Some functionalities might not be fully compatible or may demand additional configurations.
-- Periodic maintenance and updates might be essential to ensure uninterrupted integration.
+* The scope of integration is dependent on the third-party software's API and feature updates.
+* Some functionalities might not be fully compatible or may demand additional configurations.
+* Periodic maintenance and updates might be essential to ensure uninterrupted integration.
 
 # Definition
 
@@ -36,11 +36,11 @@ The Data & Analytics integrations refer to the strategic linkage between our pla
 
 # Key benefits
 
-- **Streamlined data flow**: Ensure consistency and accuracy with seamless data transfer between platforms.
-- **Enhanced analytical capabilities**: Leverage advanced tools to derive actionable insights from your data.
-- **Automated workflows**: Utilize triggers and actions to automate routine tasks, enhancing operational efficiency.
-- **Unified data view**: Aggregate and analyze data from various sources in a centralized location for better understanding.
-- **Scalability**: Effortlessly adapt integrations to meet your growing data requirements, ensuring a future-proof solution.
+* **Streamlined data flow**: Ensure consistency and accuracy with seamless data transfer between platforms.
+* **Enhanced analytical capabilities**: Leverage advanced tools to derive actionable insights from your data.
+* **Automated workflows**: Utilize triggers and actions to automate routine tasks, enhancing operational efficiency.
+* **Unified data view**: Aggregate and analyze data from various sources in a centralized location for better understanding.
+* **Scalability**: Effortlessly adapt integrations to meet your growing data requirements, ensuring a future-proof solution.
 
 # Key details
 
