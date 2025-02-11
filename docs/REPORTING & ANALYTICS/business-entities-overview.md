@@ -29,9 +29,9 @@ The Business Entity Overview dashboard allows merchants to choose which of their
 
 # Key benefits
 
-- **Singular birds eye view into top metrics**: This dashboard is a one-stop-shop surfacing all of our most utilized tables in one place, making understanding individual entity performance a breeze
-- **Entity performance comparison**: Compare key subscription metrics across each of your business entities 
-- **Understand subscriber trends**: Track churn and refund patterns, which entities have the highest rates of acquisition and expansion, and more. This will help in demonstrating when it's time to leverage Recurly's many tools for raising retention and acquisition rates such as launching new promotional and dunning campaigns, adjusting pricing, offering discounted add-ons, and incentivizing loyal customers through descending ramp-pricing plans.
+* **Singular birds eye view into top metrics**: This dashboard is a one-stop-shop surfacing all of our most utilized tables in one place, making understanding individual entity performance a breeze
+* **Entity performance comparison**: Compare key subscription metrics across each of your business entities 
+* **Understand subscriber trends**: Track churn and refund patterns, which entities have the highest rates of acquisition and expansion, and more. This will help in demonstrating when it's time to leverage Recurly's many tools for raising retention and acquisition rates such as launching new promotional and dunning campaigns, adjusting pricing, offering discounted add-ons, and incentivizing loyal customers through descending ramp-pricing plans.
 
 # Key details
 
@@ -39,9 +39,9 @@ The Business Entity Overview dashboard allows merchants to choose which of their
 
 Filter by the timeframe, date range, and the business entity(ies) you want to see the data for. 
 
-- **Timeframe: ** How to display the data. Choose between displaying data in your dashboards aggregated in a daily, weekly, monthly, quarterly, or yearly view. 
-- **Date range: ** The duration you want to see the data reflect. For example, you can set your timeframe to monthly and date range to "is in the last 6 months" to have a monthly view of the given dashboard and its performance over the last 6 months. 
-- **Business Entity: ** The entity or entities you wish to view the data for. You can select all, some, or one. The other individual dashboards under Recurly's Analytics section automatically show comprehensive data across all of your business entities. 
+* **Timeframe:** How to display the data. Choose between displaying data in your dashboards aggregated in a daily, weekly, monthly, quarterly, or yearly view. 
+* **Date range:** The duration you want to see the data reflect. For example, you can set your timeframe to monthly and date range to "is in the last 6 months" to have a monthly view of the given dashboard and its performance over the last 6 months. 
+* **Business Entity:** The entity or entities you wish to view the data for. You can select all, some, or one. The other individual dashboards under Recurly's Analytics section automatically show comprehensive data across all of your business entities. 
 
 ## Key dashboards
 
@@ -53,33 +53,33 @@ The MRR calculation incorporates various components related to invoiced recurrin
 
 Examples of adjustments included in the MRR calculation:
 
-- Subscription and subscription add-on amounts
-- Manual recurring charges
-- Proration credit from a subscription downgrade/upgrade
-- Refund of a subscription amount
-- Invoiced one-time charges with start_date and end_date
+* Subscription and subscription add-on amounts
+* Manual recurring charges
+* Proration credit from a subscription downgrade/upgrade
+* Refund of a subscription amount
+* Invoiced one-time charges with start\_date and end\_date
 
 The following are **NOT** included in the MRR calculation:
 
-- One-time charges without start_date and end_date
-- One-time credits
-- Taxes
-- Usage-based billing amounts
+* One-time charges without start\_date and end\_date
+* One-time credits
+* Taxes
+* Usage-based billing amounts
 
-For sites that support multiple currencies, the default view shows total MRR across all currencies, converted to the primary currency and summed. Conversion rates are updated daily using data from <https://openexchangerates.org/>. Historical MRR uses the conversion rate at the time the charge was created and does not change over time for current conversion rates.
+For sites that support multiple currencies, the default view shows total MRR across all currencies, converted to the primary currency and summed. Conversion rates are updated daily using data from [https://openexchangerates.org/](https://openexchangerates.org/). Historical MRR uses the conversion rate at the time the charge was created and does not change over time for current conversion rates.
 
 ### Monthly Recurring Revenue Growth
 
 This dashboard provides a breakdown of the key factors driving MRR changes, helping you track revenue trends over time.  
 
-- **New Business** – Revenue from new customers subscribing for the first time.  
-- **Expansion** – Additional revenue from existing customers, such as plan upgrades or add-ons.  
-- **Reactivation** – Revenue from previously canceled accounts that resubscribed after having no active subscriptions.  
-- **Total Growth** – Combined revenue from new business, expansion, and reactivation.  
-- **Churn** – Revenue lost from customers fully canceling their subscriptions.  
-- **Contraction** – Revenue reduction from downgrades or plan changes.  
-- **Total Loss** – Combined revenue lost from churn and contraction.  
-- **Net MRR** – Total Growth minus Total Loss, reflecting overall MRR movement.  
+* **New Business** – Revenue from new customers subscribing for the first time.  
+* **Expansion** – Additional revenue from existing customers, such as plan upgrades or add-ons.  
+* **Reactivation** – Revenue from previously canceled accounts that resubscribed after having no active subscriptions.  
+* **Total Growth** – Combined revenue from new business, expansion, and reactivation.  
+* **Churn** – Revenue lost from customers fully canceling their subscriptions.  
+* **Contraction** – Revenue reduction from downgrades or plan changes.  
+* **Total Loss** – Combined revenue lost from churn and contraction.  
+* **Net MRR** – Total Growth minus Total Loss, reflecting overall MRR movement.  
 
 #### **Clarification on Reactivation**
 
@@ -91,48 +91,48 @@ The Billings Dashboard is your guide to understanding payments, refunds, and net
 
 **Net New Billings & New Renewal Billings**
 
-- The Net Billings Dashboard offers a meticulous comparative analysis, differentiating between net new and net renewing payments. Here's how it works:
-  - **Net New**: Derived by taking the new payments and subtracting any new refunds.
-  - **Net Renewing**: Calculated by deducting renewing refunds from renewing payments.  
-      The culmination of these two values presents the Total Net Billings.  
+* The Net Billings Dashboard offers a meticulous comparative analysis, differentiating between net new and net renewing payments. Here's how it works:
+  * **Net New**: Derived by taking the new payments and subtracting any new refunds.
+  * **Net Renewing**: Calculated by deducting renewing refunds from renewing payments.\
+      The culmination of these two values presents the Total Net Billings.\
     **For clarity**, within this dashboard:
-  - “New” refers to the inaugural payment made by a subscriber.
-  - “Renewing” encompasses any subsequent payments made after the initial one.
+  * “New” refers to the inaugural payment made by a subscriber.
+  * “Renewing” encompasses any subsequent payments made after the initial one.
 
 ### Recovered Revenue
 
 The Recovered Revenue dashboard is a robust tool that provides insights into how much revenue you have recovered through Recurly's system. By monitoring involuntary churn from declined invoices, the dashboard uses three main mechanisms - Expiration Date Changes, Account Updater, and Dunning Retries, to ensure the highest rate of paid invoices.
 
-- **Expiration date changes: **This mechanism updates the expiration date on the account's billing information, allowing continuity of invoices and subscriptions. This reduces the likelihood of service disruption for the customer and prevents potential revenue loss.
-- **Account updater:** If enabled, this tool checks for credit card updates with providers before a subscription renewal, or when a one-time invoices or re-subscribe sign-up results in a hard decline. By staying up-to-date with customer's payment details, this tool aids in reducing failed invoices and maintaining a steady revenue stream.
-- **Intelligent retries: **This is Recurly's sophisticated retry logic that maximizes the likelihood of turning failed invoices into successful ones. By strategically timing the retries, it significantly reduces involuntary churn caused by failed invoices.
-- **Backup payment method:** Our Backup Payment Method feature acts as your safety net, ensuring uninterrupted service for your customers even when their primary payment method fails. By securely storing an alternative payment option, it safeguards your revenue stream and minimizes disruptions. 
-- **Customer Updates:** When a customer updates their payment method, Recurly will attempt collection on the failed automated invoice. Customers may be prompted to update their payment method via Recurly's dunning emails, or other notifications built into your application. This data does not include manual invoices.
-- **External Recovery:** When other systems successfully collect on a failed invoice, and send an update to Recurly.
+* **Expiration date changes:** This mechanism updates the expiration date on the account's billing information, allowing continuity of invoices and subscriptions. This reduces the likelihood of service disruption for the customer and prevents potential revenue loss.
+* **Account updater:** If enabled, this tool checks for credit card updates with providers before a subscription renewal, or when a one-time invoices or re-subscribe sign-up results in a hard decline. By staying up-to-date with customer's payment details, this tool aids in reducing failed invoices and maintaining a steady revenue stream.
+* **Intelligent retries:** This is Recurly's sophisticated retry logic that maximizes the likelihood of turning failed invoices into successful ones. By strategically timing the retries, it significantly reduces involuntary churn caused by failed invoices.
+* **Backup payment method:** Our Backup Payment Method feature acts as your safety net, ensuring uninterrupted service for your customers even when their primary payment method fails. By securely storing an alternative payment option, it safeguards your revenue stream and minimizes disruptions. 
+* **Customer Updates:** When a customer updates their payment method, Recurly will attempt collection on the failed automated invoice. Customers may be prompted to update their payment method via Recurly's dunning emails, or other notifications built into your application. This data does not include manual invoices.
+* **External Recovery:** When other systems successfully collect on a failed invoice, and send an update to Recurly.
 
 ### Subscribers
 
 This table allows for a deeper dive into the specific changes month over month, offering insights into the ebb and flow of your subscriber dynamics. This data is crucial for understanding the overall health and growth trajectory of your subscriber base.
 
-- **New Subscribers:** Individuals signing up for a subscription for the first time.
-- **Returning Subscribers:** Former subscribers who have reactivated their subscription.
-- **Churned Subscribers:** Subscribers whose subscriptions have ended, either voluntarily or involuntarily.
+* **New Subscribers:** Individuals signing up for a subscription for the first time.
+* **Returning Subscribers:** Former subscribers who have reactivated their subscription.
+* **Churned Subscribers:** Subscribers whose subscriptions have ended, either voluntarily or involuntarily.
 
 ### Churn Reasons
 
 Dive into the data to understand the specifics across all churn reasons
 
-- Active Subscribers 
-- Churned Subscribers 
-- Non-payment
-- Tax Location Invalid
-- Canceled
-- Non-Payment Gift Card
-- Non-Renewing
-- Account Closed
-- Unknown
-- Non-Payment Trial
-- Canceled Trial
+* Active Subscribers 
+* Churned Subscribers 
+* Non-payment
+* Tax Location Invalid
+* Canceled
+* Non-Payment Gift Card
+* Non-Renewing
+* Account Closed
+* Unknown
+* Non-Payment Trial
+* Canceled Trial
 
 ### Explore Invoices Dashboard
 
@@ -140,11 +140,11 @@ View details around all invoices created across your Recurly site in the Explore
 
 **This dashboard has an array of ways to filter down invoice details by, including:**
 
-- Custom Fields 
-- Account Primary Billing Info 
-- Accounts 
-- Busienss Entities 
-- Charges
-- Dunning Settings
-- Plans
-- Subscriptions
+* Custom Fields 
+* Account Primary Billing Info 
+* Accounts 
+* Busienss Entities 
+* Charges
+* Dunning Settings
+* Plans
+* Subscriptions
