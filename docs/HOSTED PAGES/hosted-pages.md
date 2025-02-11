@@ -20,11 +20,11 @@ Recurly's Hosted Pages offer a set of out-of-the-box solutions, designed for qui
 
 # Key benefits
 
-- **Rapid deployment:** Kickstart subscription processes without waiting for development resources.
-- **Diverse payment options:** Support for 3D Secure, credit cards, bank accounts, PayPal, and Amazon.
-- **Efficient management:** Offer subscribers a comprehensive portal to view invoices, credits, manage billing details, and more.
-- **Heightened security:** Abide by high PCI compliance standards, ensuring the utmost security for payment processes.
-- **Localization:** Multi-lingual support catering to a global customer base.
+* **Rapid deployment:** Kickstart subscription processes without waiting for development resources.
+* **Diverse payment options:** Support for 3D Secure, credit cards, bank accounts, PayPal, and Amazon.
+* **Efficient management:** Offer subscribers a comprehensive portal to view invoices, credits, manage billing details, and more.
+* **Heightened security:** Abide by high PCI compliance standards, ensuring the utmost security for payment processes.
+* **Localization:** Multi-lingual support catering to a global customer base.
 
 # Key Details
 
