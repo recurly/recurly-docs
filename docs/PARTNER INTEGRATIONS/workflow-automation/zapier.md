@@ -20,15 +20,15 @@ This feature is only available to customers on the Professional and/or Elite sub
 
 ### Prerequisites
 
-- An active Recurly account.
-- A Zapier account (free or paid).
-- Recurly API Key for Zapier.
-- Webhooks setup to be received by Zapier.
+* An active Recurly account.
+* A Zapier account (free or paid).
+* Recurly API Key for Zapier.
+* Webhooks setup to be received by Zapier.
 
 ### Limitations
 
-- Billing information, due to PCI compliance, cannot be created or updated within Recurly by Zapier.
-- The integration's efficiency is subject to the limitations of the user's Zapier account type (free or paid).
+* Billing information, due to PCI compliance, cannot be created or updated within Recurly by Zapier.
+* The integration's efficiency is subject to the limitations of the user's Zapier account type (free or paid).
 
 # Definition
 
@@ -36,11 +36,11 @@ Zapier, a renowned integration platform, offers a simple way to connect SaaS app
 
 # Key benefits
 
-- **Automated workflows**: Establish Zaps to automate repetitive tasks seamlessly, eliminating the need for coding.
-- **Versatile integration**: Link Recurly with a wide range of applications such as Slack, Shipstation, Klaviyo, and more for enhanced functionality.
-- **Real-time notifications**: Get instant notifications in other platforms for events unfolding in Recurly, keeping you updated on-the-go.
-- **Data consistency**: Maintain data integrity and uniformity across platforms with automated data transfers, ensuring reliable information flow.
-- **Enhanced business processes**: Optimize and streamline business operations by incorporating Recurly data into other business systems, promoting efficiency.
+* **Automated workflows**: Establish Zaps to automate repetitive tasks seamlessly, eliminating the need for coding.
+* **Versatile integration**: Link Recurly with a wide range of applications such as Slack, Shipstation, Klaviyo, and more for enhanced functionality.
+* **Real-time notifications**: Get instant notifications in other platforms for events unfolding in Recurly, keeping you updated on-the-go.
+* **Data consistency**: Maintain data integrity and uniformity across platforms with automated data transfers, ensuring reliable information flow.
+* **Enhanced business processes**: Optimize and streamline business operations by incorporating Recurly data into other business systems, promoting efficiency.
 
 ## Zapier setup
 
@@ -52,58 +52,19 @@ To begin, you'll need to set up an account with Zapier. You can set up an accoun
 
 Before beginning, you'll need to set up an [API Key](doc:api-keys)  for Zapier, and set up [Webhooks](doc:webhooks)  to be received by Zapier.  Also you will need to select a Region that matches the region of our site.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4b3e4a3-Screen_Shot_2019-09-13_at_11.42.52.png",
-        "Screen Shot 2019-09-13 at 11.42.52.png",
-        2136
-      ],
-      "align": "center",
-      "caption": "**Step 1**: select Recurly Zap in My Apps or through My Zaps"
-    }
-  ]
-}
-[/block]
+<Image title="Screen Shot 2019-09-13 at 11.42.52.png" alt={2136} align="center" src="https://files.readme.io/4b3e4a3-Screen_Shot_2019-09-13_at_11.42.52.png">
+  **Step 1**: select Recurly Zap in My Apps or through My Zaps
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4cef953-new_zapier_region.png",
-        "new_zapier_region.png",
-        1230
-      ],
-      "align": "center",
-      "caption": "**Step 2**: follow installation process in adding your API key, Region and webhook details"
-    }
-  ]
-}
-[/block]
-
+<Image title="new_zapier_region.png" alt={1230} align="center" src="https://files.readme.io/4cef953-new_zapier_region.png">
+  **Step 2**: follow installation process in adding your API key, Region and webhook details
+</Image>
 
 ### Setting up webhooks
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6691e86-Screen_Shot_2019-09-20_at_16.11.32.png",
-        "Screen Shot 2019-09-20 at 16.11.32.png",
-        1598
-      ],
-      "align": "center",
-      "caption": "**Step 3**: Zapier will give you a URL which can receive webhook notifications from Recurlyw"
-    }
-  ]
-}
-[/block]
-
+<Image title="Screen Shot 2019-09-20 at 16.11.32.png" alt={1598} align="center" src="https://files.readme.io/6691e86-Screen_Shot_2019-09-20_at_16.11.32.png">
+  **Step 3**: Zapier will give you a URL which can receive webhook notifications from Recurlyw
+</Image>
 
 In order to set up webhooks, follow this path in Recurly: Integrations > Webhooks > Add New Endpoint. Add the URL given to you by Zapier as a webhooks endpoint.
 
@@ -125,25 +86,25 @@ Zapier can call the Recurly API to:
 2. Update customer account information in Recurly
 
 > 🚧 Billing Information Not Supported
-> 
+>
 > Note that because billing information is protected in PCI compliance, Zapier is not able to create or update customer billing information (including billing address details) within Recurly.
 
 ## Common use cases
 
-- Connect Recurly with Slack to notify channels whenever you have a new subscriber
-- Connect Recurly with Shipstation to send orders to customers after an invoice has been paid
-- Connect Recurly with Klaviyo to enable powerful email marketing programs
-- Connect Hubspot with Recurly to enrich billing data with customer acquisition data
-- Connect Recurly with Pipedrive to keep customer relationship data in sync
-- Connect Recurly with Twilio to send SMS Dunning messages to customers
+* Connect Recurly with Slack to notify channels whenever you have a new subscriber
+* Connect Recurly with Shipstation to send orders to customers after an invoice has been paid
+* Connect Recurly with Klaviyo to enable powerful email marketing programs
+* Connect Hubspot with Recurly to enrich billing data with customer acquisition data
+* Connect Recurly with Pipedrive to keep customer relationship data in sync
+* Connect Recurly with Twilio to send SMS Dunning messages to customers
 
 # FAQs
 
-**Q:** If Zapier is not functioning properly, who should I contact?  
+**Q:** If Zapier is not functioning properly, who should I contact?\
 **A:** For issues related to Zapier's platform, it's best to directly reach out to **Zapier support**. They are equipped to handle platform-specific concerns.
 
-**Q:** I have a question about the data returned in a webhook. Where can I get answers?  
+**Q:** I have a question about the data returned in a webhook. Where can I get answers?\
 **A:** For queries related to data from webhooks, **Recurly support** is your go-to resource. They can provide insights into data specifics.
 
- **Q:** I'm interested in integrating with a system that Zapier doesn't currently support. How can I make a request?  
+ **Q:** I'm interested in integrating with a system that Zapier doesn't currently support. How can I make a request?\
 **A:** Zapier is always keen on expanding its integration capabilities. To request a new system integration, simply submit a feature request to the **Zapier team**. They'll be happy to consider your suggestion.
