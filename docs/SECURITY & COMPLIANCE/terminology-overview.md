@@ -20,7 +20,7 @@ next:
 
 Merchant bank account is a bank account used to accept payments. It serves as a buffer in the event that a transaction is contested via chargebacks. An example of a merchant bank account would be TSYS.
 
-For more information:
+For more information: 
 
 * \[1]
 * \[2]\
@@ -57,9 +57,9 @@ A subscription tells Recurly how often and how much to charge your customers. Th
 
 ### States
 
-A subscription can be:\ <br>\
-**Active** - Renewing.\ <br>\
-**Canceled** - The subscription will not renew. Canceled subscriptions can be reopened.\ <br>\
+A subscription can be:\ <br/>\
+**Active** - Renewing.\ <br/>\
+**Canceled** - The subscription will not renew. Canceled subscriptions can be reopened.\ <br/>\
 **Expired** - Also known as terminated. The subscription will not renew, and cannot be reopened.
 
 For more information, see the [Subscription documentation][6].
@@ -72,10 +72,10 @@ An invoice relates charges, credits, and payments together.
 
 ### States
 
-An invoice can be:\ <br>\
-**Open** - An invoice that is pending collection.\ <br>\
-**Past due** - An invoice that attempted collection, but had the payment fail. These will be retried automatically through the dunning process.\ <br>\
-**Failed** - An invoice that has either experienced 20 declines, or has been through the dunning process without successful payment. These invoices will not be retried.\ <br>\
+An invoice can be:\ <br/>\
+**Open** - An invoice that is pending collection.\ <br/>\
+**Past due** - An invoice that attempted collection, but had the payment fail. These will be retried automatically through the dunning process.\ <br/>\
+**Failed** - An invoice that has either experienced 20 declines, or has been through the dunning process without successful payment. These invoices will not be retried.\ <br/>\
 **Closed** - A successfully collected invoice.
 
 For more information, see the [Invoice documentation][7].
@@ -88,16 +88,16 @@ A transaction is any purchasing information that is sent to your payment gateway
 
 ### Types
 
-There are multiple types of transactions.\ <br>\
-**Payments** - Purchases processed through Recurly.\ <br>\
-**Refunds** - Refunds processed on a previously-successful Recurly transaction.\ <br>\
+There are multiple types of transactions.\ <br/>\
+**Payments** - Purchases processed through Recurly.\ <br/>\
+**Refunds** - Refunds processed on a previously-successful Recurly transaction.\ <br/>\
 **Authorizations** - $0 or $1 transactions used to verify billing information. These are voided immediately.
 
 ### States
 
-A transaction can be:\ <br>\
-**Successful** - Approved by the payment gateway\ <br>\
-**Declined** - Declined by the payment gateway\ <br>\
+A transaction can be:\ <br/>\
+**Successful** - Approved by the payment gateway\ <br/>\
+**Declined** - Declined by the payment gateway\ <br/>\
 **Voided** - Voided before the payment has settled
 
 For more information, see the [Transaction documentation][8].
