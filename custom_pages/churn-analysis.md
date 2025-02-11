@@ -18,39 +18,39 @@ The widgets on this dashboard’s user interface provide you with access to the 
 
 **Actions** at the top right corner of the dashboard provide the following functionality:
 
-- Reload action tracks the last time you refreshed your data up to four hours. The counter then resets, beginning with 1m ago This tells you how current your data is from the last refresh.
-- Hide Filters action hides the filters that display in the top left corner of the dashboard.
-- Dashboard actions allow you to clear the cache and refresh the data, view a Download Dashboard from where you can select a download format, page size, or choose how to arrange downloaded data, or reset the filters.
-- Open Folders action allows you to open/close folders from the dashboard.
+* Reload action tracks the last time you refreshed your data up to four hours. The counter then resets, beginning with 1m ago This tells you how current your data is from the last refresh.
+* Hide Filters action hides the filters that display in the top left corner of the dashboard.
+* Dashboard actions allow you to clear the cache and refresh the data, view a Download Dashboard from where you can select a download format, page size, or choose how to arrange downloaded data, or reset the filters.
+* Open Folders action allows you to open/close folders from the dashboard.
 
 **Filters** in the top left corner of both parts of this dashboard provide the following options:
 
-- Date filter provides dropdown menus where you can choose a timeframe and date range from within the last 18 months to determine the data that will display on the dashboard.
-- Select Timeframe filter allows you to choose a daily, weekly, or monthly option for displaying subscriber data.
+* Date filter provides dropdown menus where you can choose a timeframe and date range from within the last 18 months to determine the data that will display on the dashboard.
+* Select Timeframe filter allows you to choose a daily, weekly, or monthly option for displaying subscriber data.
 
 **Multi-Currency support** is available in the Recurly Professional, Elite, and Enterprise plans. You may run transactions in more than one currency, through one or more payment gateways that accept the currencies you want to collect. If you choose US dollars, this will be your Primary currency and the default choice. Totals on the dashboard will display in US dollars.
 
 Once Multiple Currency support is enabled on your Recurly account, you can then specify which currencies you want to accept for your account. When a currency is added to your accepted list, you may then define pricing for your subscription plans and coupons using the new currency. Then, choose one of the enabled currencies for the dashboard.
 
-- Sites that support more than one currency (the primary currency) will see a default view that shows the total payments, refunds and net billings across all currencies, converted to their primary currency and summed.
-- Users can also view the payments, refunds and net billings processed in each individually supported currency on their site.
-- Conversion rates are updated daily (via https://openexchangerates.org/) Historical billings use the conversion rate at time of transaction and do not change over time for current conversion rates.
+* Sites that support more than one currency (the primary currency) will see a default view that shows the total payments, refunds and net billings across all currencies, converted to their primary currency and summed.
+* Users can also view the payments, refunds and net billings processed in each individually supported currency on their site.
+* Conversion rates are updated daily (via [https://openexchangerates.org/](https://openexchangerates.org/)) Historical billings use the conversion rate at time of transaction and do not change over time for current conversion rates.
 
 **Clear Cache options** allow you to clear cache and refresh data in three places on this dashboard:
 
-- Click the vertical ellipse on any of the widgets, at the bottom of the dashboard to see the timestamp for the most current version of uploaded data.
-- Click the vertical ellipse on any of the widgets within the dashboard to update the selected widget with the most current data available during the session.
-- Click the Actions widget -> vertical ellipse at top right corner of the dashboard to clear the cache and refresh the data. Recurly updates the data multiple times a day, so after a refresh, the most current data available will upload.
+* Click the vertical ellipse on any of the widgets, at the bottom of the dashboard to see the timestamp for the most current version of uploaded data.
+* Click the vertical ellipse on any of the widgets within the dashboard to update the selected widget with the most current data available during the session.
+* Click the Actions widget -> vertical ellipse at top right corner of the dashboard to clear the cache and refresh the data. Recurly updates the data multiple times a day, so after a refresh, the most current data available will upload.
 
 **Vertical ellipses** available on both widgets and tables, provide you with a dropdown menu where you can select the following options:
 
-- Click the vertical ellipse on a widget to download data or clear cache and refresh data for a selected widget.
-- Click the vertical ellipse on a column in a table to download data or clear the cache and refresh the data on display, but also to auto size or resize columns.
+* Click the vertical ellipse on a widget to download data or clear cache and refresh data for a selected widget.
+* Click the vertical ellipse on a column in a table to download data or clear the cache and refresh the data on display, but also to auto size or resize columns.
 
 **Charts and legends** display data on this dashboard within widgets in bar, line, and pie charts. This data often includes customer, subscriber, subscription, plans, and revenue totals in increments specified by time and date ranges. If the information on one of these charts is color-coded, there will be a legend on the widget that identifies the value assigned to the color. For example, specific colors are assigned to specific data or totals being tracked, to enable you to read the chart. 
 
-- Click a point in a line chart or a specific color on a bar or pie chart to display the corresponding timeframe and value in hover text. For example, total number of subscribers for a corresponding month.
-- Click the corresponding color in the legend to hide that corresponding line or bar or pie chart segment from the widget. Click on the color again, to restore the data.
+* Click a point in a line chart or a specific color on a bar or pie chart to display the corresponding timeframe and value in hover text. For example, total number of subscribers for a corresponding month.
+* Click the corresponding color in the legend to hide that corresponding line or bar or pie chart segment from the widget. Click on the color again, to restore the data.
 
 # Churn Analysis Section
 
@@ -60,89 +60,40 @@ The Churn Analysis section includes a Voluntary vs Involuntary Churn Rate line c
 
 ## Voluntary Churn Reasons:
 
-- **Non-renewing** = The subscription churned because it was configured to expire after a limited number of billing cycles (the term) and not renewed. In exports, this value is represented as "non renewing".
-- **Account closed** = The subscription churned because the account connected to that subscription was manually closed through the admin console or API. In exports, this value is represented as "account_closed".
-- **Canceled** = The subscription churned because the customer canceled it. In exports, this value is represented as "canceled" or "terminated."
-- **Trial Ended** = The subscription churned at the end of a cardless free trial because billing information was not added by the end of the trial. In exports, this value is represented as "nonpayment_trial".
-- **Gift Ended** = The subscription churned because a gift card amount was exhausted and billing information was not added before the next renewal. In exports, this value is represented as "nonpayment_gift".
+* **Non-renewing** = The subscription churned because it was configured to expire after a limited number of billing cycles (the term) and not renewed. In exports, this value is represented as "non renewing".
+* **Account closed** = The subscription churned because the account connected to that subscription was manually closed through the admin console or API. In exports, this value is represented as "account\_closed".
+* **Canceled** = The subscription churned because the customer canceled it. In exports, this value is represented as "canceled" or "terminated."
+* **Trial Ended** = The subscription churned at the end of a cardless free trial because billing information was not added by the end of the trial. In exports, this value is represented as "nonpayment\_trial".
+* **Gift Ended** = The subscription churned because a gift card amount was exhausted and billing information was not added before the next renewal. In exports, this value is represented as "nonpayment\_gift".
 
 ## Involuntary Churn Reasons:
 
-- **Non-payment** = The subscription churned because the transaction failed, the invoice went into the dunning process and was never recovered. In exports, this value is represented as "nonpayment".
-- **Invalid Tax location** = The subscription churned because the EU or NZ GST tax validation check failed and the account’s information was not updated to meet the validation check criteria.
+* **Non-payment** = The subscription churned because the transaction failed, the invoice went into the dunning process and was never recovered. In exports, this value is represented as "nonpayment".
+* **Invalid Tax location** = The subscription churned because the EU or NZ GST tax validation check failed and the account’s information was not updated to meet the validation check criteria.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7d9e199-Vol_vs_invol_churn_analysis.png",
-        "Vol vs invol churn analysis.png",
-        2604,
-        926,
-        "#fdfcfc"
-      ],
-      "caption": "Churn Analysis Voluntary vs Involuntary Rate"
-    }
-  ]
-}
-[/block]
+<Image title="Vol vs invol churn analysis.png" alt={2604} src="https://files.readme.io/7d9e199-Vol_vs_invol_churn_analysis.png">
+  Churn Analysis Voluntary vs Involuntary Rate
+</Image>
+
 **Subscription Churn Reasons:** shows the reasons for subscription churn in a color-coded bar chart, for a designated timeframe.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f5c0506-subscription_churn_reason.png",
-        "subscription churn reason.png",
-        1290,
-        896,
-        "#f4e6d7"
-      ],
-      "caption": "Subscription Churn Reasons"
-    }
-  ]
-}
-[/block]
-**Subscription Churn Reasons %: ** shows total subscription churn, by a percentage of that reason and percentage, in a color-coded bar chart, for a designated timeframe.
+<Image title="subscription churn reason.png" alt={1290} src="https://files.readme.io/f5c0506-subscription_churn_reason.png">
+  Subscription Churn Reasons
+</Image>
+
+**Subscription Churn Reasons %:** shows total subscription churn, by a percentage of that reason and percentage, in a color-coded bar chart, for a designated timeframe.
 
 ## Percentage (%) Churn Definitions
 
-- **Active Subscriptions** = An active subscription includes any subscription that is NOT expired (i.e. active, in trial, canceled, paused). For monthly/weekly intervals, the active subscriptions value is the total number of subscriptions at the BEGINNING of the month/week.
-- **% Churn** = Total subscriptions churned over the selected interval / total subscriptions active at the BEGINNING of the selected interval.
+* **Active Subscriptions** = An active subscription includes any subscription that is NOT expired (i.e. active, in trial, canceled, paused). For monthly/weekly intervals, the active subscriptions value is the total number of subscriptions at the BEGINNING of the month/week.
+* **% Churn** = Total subscriptions churned over the selected interval / total subscriptions active at the BEGINNING of the selected interval.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f1b892c-subscription_churn_reasons_.png",
-        "subscription churn reasons %.png",
-        1288,
-        920,
-        "#ebcdae"
-      ],
-      "caption": "Churn Reasons by Percentages"
-    }
-  ]
-}
-[/block]
+<Image title="subscription churn reasons %.png" alt={1288} src="https://files.readme.io/f1b892c-subscription_churn_reasons_.png">
+  Churn Reasons by Percentages
+</Image>
+
 **Churn Analysis Detail:** calculates a churn rate for active subscribers by churn reasons.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/68883ec-churn_analysis_detail.png",
-        "churn analysis detail.png",
-        2608,
-        890,
-        "#f3f4f4"
-      ],
-      "caption": "Churn Analysis Detail"
-    }
-  ]
-}
-[/block]
+<Image title="churn analysis detail.png" alt={2608} src="https://files.readme.io/68883ec-churn_analysis_detail.png">
+  Churn Analysis Detail
+</Image>
