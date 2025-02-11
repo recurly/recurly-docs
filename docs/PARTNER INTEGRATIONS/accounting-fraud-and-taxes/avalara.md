@@ -14,23 +14,7 @@ metadata:
 next:
   description: ''
 ---
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3wGkBioYTHmhmmMELngy_Avalara_CERTIFIED-150x25-01.png",
-        "Avalara_CERTIFIED-150x25-01.png",
-        "150"
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="smart" border={true} src="https://files.readme.io/3wGkBioYTHmhmmMELngy_Avalara_CERTIFIED-150x25-01.png" />
 
 # Overview
 
@@ -54,19 +38,19 @@ Avalara AvaTax offers real-time sales tax decisions based on accurate geolocatio
 
 # Key benefits
 
-- **Automated tax calculation**: Experience real-time sales and use tax calculations for transactions, invoices, and other business processes with Avalara AvaTax.
-- **Geolocation technology**: Utilize geolocation for precise sales tax rate determination down to a specific address in the U.S.
-- **Up-to-date compliance**: Benefit from continuous updates ensuring the application of the most current tax rates, rules, and regulations.
-- **Global coverage**: Expand operations internationally with confidence as AvaTax supports tax calculations in over 200 countries.
-- **Reduced audit risk**: Lower the risk of audit, penalties, and fines by enhancing tax accuracy and compliance with Avalara AvaTax.
-- **Time and resource savings**: Save time, resources, and reduce tax compliance effort, allowing a sharper focus on core business functions through automated sales tax calculation.
+* **Automated tax calculation**: Experience real-time sales and use tax calculations for transactions, invoices, and other business processes with Avalara AvaTax.
+* **Geolocation technology**: Utilize geolocation for precise sales tax rate determination down to a specific address in the U.S.
+* **Up-to-date compliance**: Benefit from continuous updates ensuring the application of the most current tax rates, rules, and regulations.
+* **Global coverage**: Expand operations internationally with confidence as AvaTax supports tax calculations in over 200 countries.
+* **Reduced audit risk**: Lower the risk of audit, penalties, and fines by enhancing tax accuracy and compliance with Avalara AvaTax.
+* **Time and resource savings**: Save time, resources, and reduce tax compliance effort, allowing a sharper focus on core business functions through automated sales tax calculation.
 
 # Merchant tax address
 
 To calculate taxes, Avalara requires a merchant address for each invoice, known as the "Origin" address. In Recurly, this is represented by the Business Entity company address. This address is sent as the Origin address to Avalara. For the Avalara integration to work, the following criteria must be met in your Recurly Business Entity company address:
 
-- The address must include at least a country and postal code.
-- The address must match your Organization's "Company Address Settings" in Avalara.
+* The address must include at least a country and postal code.
+* The address must match your Organization's "Company Address Settings" in Avalara.
 
 # Customer tax address
 
@@ -74,7 +58,7 @@ The customer's location is crucial for tax calculations. Without this informatio
 
 ## Which address to tax
 
-You have the option to calculate taxes based on the Billing address or the Account address. By default, Recurly will use the Billing address for automatic transactions and the Account address for manual invoices.  
+You have the option to calculate taxes based on the Billing address or the Account address. By default, Recurly will use the Billing address for automatic transactions and the Account address for manual invoices.\
 To change your tax address to the Account address, navigate to Configuration > Taxes > Tax Settings and enable "Use Account Information Address for all Invoices". Once enabled, all invoices will use the Account Information address as the customer address. If an Account address does not exist for a customer, the Billing address will be used by default.
 
 ## Which address fields to require
@@ -91,8 +75,8 @@ All invoices that receive tax need a customer country. If a country isn't provid
 
 By default, our integration with Avalara AvaTax will validate all customer addresses. If a customer address is invalid, an error is returned and the purchase is blocked. Here are potential error messages that Recurly will return in the API, Checkout and on the Hosted Pages:
 
-- The address provided is invalid, could not determine taxing jurisdictions.
-- The state/province provided is invalid, could not apply tax.
+* The address provided is invalid, could not determine taxing jurisdictions.
+* The state/province provided is invalid, could not apply tax.
 
 Renewals aren't blocked if an invalid address error occurs, but the resulting invoice will be rejected by Avalara and won't be considered for tax calculation. We don't block renewals to limit disruptions for your current customers. As it can be challenging to identify which accounts had invalid addresses and did not receive tax, we strongly suggest conducting an address audit and updating addresses before enabling taxes.
 
@@ -116,7 +100,7 @@ Recurly allows you to designate specific customer accounts as tax-exempt, which 
 
 Currently, there's no mechanism for a customer to indicate tax exemption at the time of purchase. We recommend notifying customers that tax-exempt customers should reach out to you. You will need to create an account for the customer and assign them an Entity Use Code. The customer can then sign up using the same account email address. While they might still see a tax preview, they will not be taxed.
 
-Avalara offers a tool called Avalara CertCapture for managing exemption certificates. While Recurly does not currently integrate with Avalara CertCapture, we are gathering requests for this functionality. If you are interested in using Avalara CertCapture with Recurly, please submit a support ticket at <https://support.recurly.com/>.
+Avalara offers a tool called Avalara CertCapture for managing exemption certificates. While Recurly does not currently integrate with Avalara CertCapture, we are gathering requests for this functionality. If you are interested in using Avalara CertCapture with Recurly, please submit a support ticket at [https://support.recurly.com/](https://support.recurly.com/).
 
 ## Tax inclusive pricing
 
@@ -140,174 +124,66 @@ It's important to note that you will not be able to commit paid invoices to Aval
 
 Accounts can be referenced on your Avalara tax documents using these fields.
 
-- **Account code:** The Account Code that you use when creating an account in Recurly is mapped to the Customer Code field in your Avalara records.
-- **Entity use code: ** The Entity Use Code is an optional field that you can set in Recurly to help manage your customer’s exempt status. It's mapped to the same field, Entity Use Code, in Avalara.
-- **Address info:** For automatic invoices, your customer's Billing Info address is passed to Avalara. For manual invoices, the Account Info address is passed to Avalara. If you have your Tax Settings set to "Use Account Information Address", this address will always be sent to Avalara, even for automatic invoices.
+* **Account code:** The Account Code that you use when creating an account in Recurly is mapped to the Customer Code field in your Avalara records.
+* **Entity use code:** The Entity Use Code is an optional field that you can set in Recurly to help manage your customer’s exempt status. It's mapped to the same field, Entity Use Code, in Avalara.
+* **Address info:** For automatic invoices, your customer's Billing Info address is passed to Avalara. For manual invoices, the Account Info address is passed to Avalara. If you have your Tax Settings set to "Use Account Information Address", this address will always be sent to Avalara, even for automatic invoices.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/312ae1a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/312ae1a-image.png" />
 
 ## Plans
 
 Plans can be referenced on your Avalara tax documents using these fields. Note that a plan's setup fee also inherits these values in your Avalara tax records.
 
-- **Plan name:** The Plan Name is only used in Recurly and is not passed to Avalara.
-- **Plan code:** The Plan Code is only used in Recurly and is not passed to Avalara.
-- **Plan description:** The Plan Description is passed to Avalara as the Description for line items when invoices are created.
-- **Accounting code:** The Accounting Code is passed to Avalara as the Item Code.
-- **Tax code:** The Tax Code is passed to Avalara and is used to apply specific taxability rules for products and/or regions.
-- **Editable quantity:** Editable Quantity is not passed to Avalara, but see the Invoices section for quantities on tax records.
-- **Pricing information:** The Pricing Information, including the Currency, is passed on to Avalara for your plan.
+* **Plan name:** The Plan Name is only used in Recurly and is not passed to Avalara.
+* **Plan code:** The Plan Code is only used in Recurly and is not passed to Avalara.
+* **Plan description:** The Plan Description is passed to Avalara as the Description for line items when invoices are created.
+* **Accounting code:** The Accounting Code is passed to Avalara as the Item Code.
+* **Tax code:** The Tax Code is passed to Avalara and is used to apply specific taxability rules for products and/or regions.
+* **Editable quantity:** Editable Quantity is not passed to Avalara, but see the Invoices section for quantities on tax records.
+* **Pricing information:** The Pricing Information, including the Currency, is passed on to Avalara for your plan.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/67114d0-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/67114d0-image.png" />
 
+<Image align="center" width="75% " src="https://files.readme.io/cd68451-Screenshot_2024-07-09_at_11.23.12_AM.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cd68451-Screenshot_2024-07-09_at_11.23.12_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0cd3be5-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/0cd3be5-image.png" />
 
 ## Add-ons
 
 Add-ons can be referenced on your Avalara tax documents using these fields.
 
-- **Name:** The Name is passed to Avalara as part of the Description for line items when invoices are created.
-- **Add-on code: **The Add-On Code is only used in Recurly and is not passed to Avalara.
-- **Accounting code: **The Accounting Code is passed to Avalara as the Item Code.
-- **Tax code: **The Tax Code is passed to Avalara and is used to apply specific taxability rules for products and/or regions.
-- **Price: **The Price, including the Currency, is passed on to Avalara for your add-on. This is the default fixed price for this item. The price and pricing model can be changed prior to purchase.
-- **Editable quantity:** Editable Quantity is not passed to Avalara, but see the Invoices section for quantities on tax records.
+* **Name:** The Name is passed to Avalara as part of the Description for line items when invoices are created.
+* **Add-on code:** The Add-On Code is only used in Recurly and is not passed to Avalara.
+* **Accounting code:** The Accounting Code is passed to Avalara as the Item Code.
+* **Tax code:** The Tax Code is passed to Avalara and is used to apply specific taxability rules for products and/or regions.
+* **Price:** The Price, including the Currency, is passed on to Avalara for your add-on. This is the default fixed price for this item. The price and pricing model can be changed prior to purchase.
+* **Editable quantity:** Editable Quantity is not passed to Avalara, but see the Invoices section for quantities on tax records.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c511c84-Screenshot_2024-07-09_at_11.25.32_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/c511c84-Screenshot_2024-07-09_at_11.25.32_AM.png" />
 
 ## Items
 
 Items can be referenced on your Avalara tax documents using these fields.
 
-- **Name:** The Name is passed to Avalara as part of the Description for line items when invoices are created.
-- **Item code: **The Add-On Code is only used in Recurly and is not passed to Avalara.
-- **External SKU: **This is an optional field for associating items in Recurly to other systems.
-- **Accounting code: **The Accounting Code is passed to Avalara as the Item Code.
-- **Price: **The Price, including the Currency, is passed on to Avalara for your item. This is the default fixed price for this item. The price and pricing model can be changed prior to purchase.
-- **Tax code: **The Tax Code is passed to Avalara and is used to apply specific taxability rules for products and/or regions.
+* **Name:** The Name is passed to Avalara as part of the Description for line items when invoices are created.
+* **Item code:** The Add-On Code is only used in Recurly and is not passed to Avalara.
+* **External SKU:** This is an optional field for associating items in Recurly to other systems.
+* **Accounting code:** The Accounting Code is passed to Avalara as the Item Code.
+* **Price:** The Price, including the Currency, is passed on to Avalara for your item. This is the default fixed price for this item. The price and pricing model can be changed prior to purchase.
+* **Tax code:** The Tax Code is passed to Avalara and is used to apply specific taxability rules for products and/or regions.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7aca526-Screenshot_2024-07-09_at_11.29.30_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
+<Image align="center" width="75% " src="https://files.readme.io/7aca526-Screenshot_2024-07-09_at_11.29.30_AM.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b22d975-Screenshot_2024-07-09_at_11.29.50_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/b22d975-Screenshot_2024-07-09_at_11.29.50_AM.png" />
 
 ## Invoices
 
 Invoice details can be referenced on your Avalara tax documents using these fields.
 
-- **Invoice number:** The Invoice Number is passed to Avalara as the Document Code.
-- **Invoice date:** The Invoice Date is passed to Avalara as the Document Date.
-- **Line items:** The line item details on an invoice are passed to Avalara.
-- **Invoice amounts:** The total taxable and non-taxable amounts are passed to Avalara.
+* **Invoice number:** The Invoice Number is passed to Avalara as the Document Code.
+* **Invoice date:** The Invoice Date is passed to Avalara as the Document Date.
+* **Line items:** The line item details on an invoice are passed to Avalara.
+* **Invoice amounts:** The total taxable and non-taxable amounts are passed to Avalara.
 
 # Return and void scenarios
 
@@ -339,7 +215,7 @@ Merchants using their own AvaTax account with Recurly can ensure compliance with
 If you have a plan, add-on, or charge that falls under the category of a Digital Service, you will need to use Avalara's Tax Codes to distinguish it. When your AvaTax account is connected, you will find the plan Tax Code box on the Edit Plan page, below the "Collect Sales Tax" checkbox. Additional Tax Code fields can be found next to the add-ons on that page and on the Create a Charge page.
 
 > 📘 **Callout**
-> 
+>
 > To determine the appropriate tax codes for your products and achieve the EU VAT Digital Services distinction, consult with our Avalara representative. A basic Digital Services tax code that can be used is D0000000.
 
 ## Other EU VAT features
@@ -350,28 +226,12 @@ AvaTax merchants have access to Location Validation for Digital Services, which 
 
 In compliance with Canadian regulations, Recurly displays country and province-level taxes as separate subtotals on the customer's invoice. This allows customers to see a breakdown of the different tax rates.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8c93f9b-Screen_Shot_2021-04-22_at_12.59.44_PM.png",
-        "Screen Shot 2021-04-22 at 12.59.44 PM.png",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/8c93f9b-Screen_Shot_2021-04-22_at_12.59.44_PM.png" />
 
 # Handling Avalara downtime
 
-When an invoice is created on a site with Avalara AvaTax credentials, Recurly sends a request to Avalara for tax calculations to include on the invoice. In the event that Recurly is unable to receive a response from Avalara or the internal Recurly tax service experiences unresponsiveness, the response will depend on whether the invoice is for a new sign-up or purchase, or for a future subscription activation or renewal.  
-To check Avalara's status, you can visit <http://status.avalara.com/> and expand the Avalara AvaTax section to view the status of the "Tax Calculation Service".
+When an invoice is created on a site with Avalara AvaTax credentials, Recurly sends a request to Avalara for tax calculations to include on the invoice. In the event that Recurly is unable to receive a response from Avalara or the internal Recurly tax service experiences unresponsiveness, the response will depend on whether the invoice is for a new sign-up or purchase, or for a future subscription activation or renewal.\
+To check Avalara's status, you can visit [http://status.avalara.com/](http://status.avalara.com/) and expand the Avalara AvaTax section to view the status of the "Tax Calculation Service".
 
 ## For new sign-ups and purchases
 
@@ -381,23 +241,7 @@ If Recurly is unable to receive a response from Avalara or the internal Recurly 
 
 If you prefer to allow new sign-ups and purchases to proceed even when tax cannot be calculated, you can change the default behavior for your site. Simply go to Configuration > Taxes > Tax Settings > Tax Service Settings and disable the option "Require tax response from tax service".
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fc9cd94-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/fc9cd94-image.png" />
 
 Feel free to reach out if you have any further questions or need assistance with these VAT and tax-related functionalities.
 
@@ -443,42 +287,42 @@ If your site is in sandbox mode, meaning you are testing Avalara, Recurly will i
 
 To ensure a seamless integration of Avalara AvaTax with your Recurly account, follow this checklist:
 
-1. **Confirm **that your Business Entity company address(es) is/are correctly filled out.
-2. **Decide **whether you want to tax the billing or account customer address.
-3. **Update **your purchase form to require at least the minimum address fields needed for your tax regions.
-4. **Ensure **the current customer addresses you are going to tax are correct and include a country.
-5. **Enter **your Avalara AvaTax credentials on your production site before enabling the tax jurisdictions in Avalara.
-6. **Configure **your plans and add-ons with the correct taxability and tax codes.
-7. **Update **any purchase or subscription change previews to use Recurly's APIs for the tax preview portion, not Recurly.js.
-8. **Mark **any tax-exempt current customers with an Entity Use Code in their Account Info.
-9. **Test **your integration on a sandbox site.
+1. **Confirm** that your Business Entity company address(es) is/are correctly filled out.
+2. **Decide** whether you want to tax the billing or account customer address.
+3. **Update** your purchase form to require at least the minimum address fields needed for your tax regions.
+4. **Ensure** the current customer addresses you are going to tax are correct and include a country.
+5. **Enter** your Avalara AvaTax credentials on your production site before enabling the tax jurisdictions in Avalara.
+6. **Configure** your plans and add-ons with the correct taxability and tax codes.
+7. **Update** any purchase or subscription change previews to use Recurly's APIs for the tax preview portion, not Recurly.js.
+8. **Mark** any tax-exempt current customers with an Entity Use Code in their Account Info.
+9. **Test** your integration on a sandbox site.
 10. **Go live** by enabling your tax jurisdictions in Avalara.
 
 ## Connect your Avalara AvaTax account
 
 To connect your Avalara AvaTax account to Recurly, follow these steps:
 
-1. **Ensure **your site is in production mode. You can test in sandbox mode but are limited to Avalara's development environment.
-2. **Select **the 'Taxes' section in the left-hand navigation.
-3. **Click **'Sign in with Avalara' in the right sidebar of the page.
-4. **Have **your Avalara Account Number, Company Code, and License Key ready and enter those values on the form.
-5. **Decide **whether you want Recurly to set your tax records to 'committed' in Avalara when an invoice is marked as paid in Recurly. The default is set to 'uncommitted'.
+1. **Ensure** your site is in production mode. You can test in sandbox mode but are limited to Avalara's development environment.
+2. **Select** the 'Taxes' section in the left-hand navigation.
+3. **Click** 'Sign in with Avalara' in the right sidebar of the page.
+4. **Have** your Avalara Account Number, Company Code, and License Key ready and enter those values on the form.
+5. **Decide** whether you want Recurly to set your tax records to 'committed' in Avalara when an invoice is marked as paid in Recurly. The default is set to 'uncommitted'.
 6. If you want to commit invoices to Avalara, decide whether you want to follow accrual basis (committed on creation) or cash basis (committed when paid) accounting for reporting sales tax in Avalara. The default is set to accrual basis in line with GAAP compliance.
-7. **Select **the Avalara environment Development or Production you want to use. When you're processing real transactions, you should be sending transactions to Production.
+7. **Select** the Avalara environment Development or Production you want to use. When you're processing real transactions, you should be sending transactions to Production.
 8. **Decide** if you want to send $0 invoices to Avalara. Invoices created at the start of a trial are $0 and will not have any taxes applied. To avoid Avalara charging for these invoices, don't send $0 invoices.
-9. **Select **which Account Identifier to send to Avalara as the Customer Code. Recurly Account Codes are typically set by you and are used by default. Recurly Account IDs are system generated IDs Recurly sets. If you are storing any potential PII in Recurly's Account Code (e.g., email address), you should select Account ID.
-10. **Click **'Save Changes'.
-11. **Test **the connection by clicking the 'Test Configuration' button to ensure the connection is made properly.
+9. **Select** which Account Identifier to send to Avalara as the Customer Code. Recurly Account Codes are typically set by you and are used by default. Recurly Account IDs are system generated IDs Recurly sets. If you are storing any potential PII in Recurly's Account Code (e.g., email address), you should select Account ID.
+10. **Click** 'Save Changes'.
+11. **Test** the connection by clicking the 'Test Configuration' button to ensure the connection is made properly.
 
 ## Configure plans and add-ons
 
 To send Avalara line items that are taxable, configure the plans and add-ons by following these steps:
 
-1. **Go **to 'Configuration' > 'Subscription Plans' > Select a plan > Click 'Edit'.
-2. **Select **'Collect Tax' under 'Plan Details'. This will make all plan items taxable: setup fee, plan fee, add-on fees.
+1. **Go** to 'Configuration' > 'Subscription Plans' > Select a plan > Click 'Edit'.
+2. **Select** 'Collect Tax' under 'Plan Details'. This will make all plan items taxable: setup fee, plan fee, add-on fees.
 3. Enabling tax for the plan will expose a 'Tax Code' field where you can place your Avalara tax code for the plan level fee.
 4. If you have a setup fee, it will use the same tax code as the plan fee.
 5. Each add-on can have its own tax code as well.
-6. **Save **your plan. Any customer in one of your tax jurisdictions that purchases this plan will now be taxed.
+6. **Save** your plan. Any customer in one of your tax jurisdictions that purchases this plan will now be taxed.
 
 Please note, taxes are always added to the line item's price, unless the Tax Inclusive Pricing feature is used. This means that new customers will pay your pricing plus tax, and current customers in your taxing jurisdictions will see their next renewal invoice with tax added on top of their normal fees.
