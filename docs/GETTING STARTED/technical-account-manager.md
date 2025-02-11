@@ -24,11 +24,11 @@ To request a dedicated Technical Account Manager (TAM) customers must meet speci
 
 # Key benefits
 
-- **Lifecycle management:** Efficiently manage different stages of your operations, ensuring smooth transitions and optimized performance throughout.
-- **Proactive information sharing:** Stay ahead with proactive sharing of crucial information, facilitating better decision-making and preparedness.
-- **Training opportunities:** Enhance skills and knowledge through various training opportunities, fostering continuous learning and improvement.
-- **Critical situation management:** Effectively navigate through critical situations with structured management strategies, minimizing adverse impacts.
-- **Annual site optimization audit:** Conduct thorough annual audits to assess site optimization, identifying areas of improvement to boost performance and results.
+* **Lifecycle management:** Efficiently manage different stages of your operations, ensuring smooth transitions and optimized performance throughout.
+* **Proactive information sharing:** Stay ahead with proactive sharing of crucial information, facilitating better decision-making and preparedness.
+* **Training opportunities:** Enhance skills and knowledge through various training opportunities, fostering continuous learning and improvement.
+* **Critical situation management:** Effectively navigate through critical situations with structured management strategies, minimizing adverse impacts.
+* **Annual site optimization audit:** Conduct thorough annual audits to assess site optimization, identifying areas of improvement to boost performance and results.
 
 # Key details
 
@@ -46,10 +46,10 @@ Recurly's Technical Account Managers (TAMs) are here to ensure your success by p
 
 ### Examples
 
-**Site optimization audit: **Tam’s are able to assist their merchants by taking a deep dive into how the merchant is using the Recurly platform. We make a close inspection of the configuration of the site, getting granular with information about payment gateway usage, email and dunning campaign utilization, plan, coupon, and currency health, to name a few. Each of your configuration settings will be meticulously reviewed by the TAM who will then advise on best practices, and assist with implementation if there are any practices that need changed. 
+**Site optimization audit:** Tam’s are able to assist their merchants by taking a deep dive into how the merchant is using the Recurly platform. We make a close inspection of the configuration of the site, getting granular with information about payment gateway usage, email and dunning campaign utilization, plan, coupon, and currency health, to name a few. Each of your configuration settings will be meticulously reviewed by the TAM who will then advise on best practices, and assist with implementation if there are any practices that need changed. 
 
 We take extra care to look at the integration as well- TAM’s dive into a review of the merchant’s API’s, including versioning, usage, and potential optimization, as well as their Recurly.js usage, Client Library usage, and Webhooks usage and best practices. Additionally, we do a deep review of your signup flow; we’ll review a few recent signups and advise on any potential optimization in this area. In addition to all this, we go over current and potential future utilization of all of our features, like email and dunning campaigns, alternate payment methods and account updater, fraud protection, and custom fields to name a few. Our merchants find they benefit greatly from the site optimization audit, and come out of the process with a subject matter expert on their specific Recurly site to partner with on ongoing projects.
 
-**Adding new payment methods: **When one of our merchant’s made a push to add all available new payment methods to their Recurly site, it was all hands on deck for the TAM team. There were some specific tasks that came from the merchant, as they wanted to customize their customer experience so that taxes were visible prior to payment, so that the customer was able to see the total that they were paying before they committed. TAM’s were able to project, manage, and organize available resources so that the merchant could successfully implement as many payment methods as possible, in the way that worked for them.
+**Adding new payment methods:** When one of our merchant’s made a push to add all available new payment methods to their Recurly site, it was all hands on deck for the TAM team. There were some specific tasks that came from the merchant, as they wanted to customize their customer experience so that taxes were visible prior to payment, so that the customer was able to see the total that they were paying before they committed. TAM’s were able to project, manage, and organize available resources so that the merchant could successfully implement as many payment methods as possible, in the way that worked for them.
 
 **Upgrading APIs:** Another one of our merchants was looking to upgrade their Recurly API version from V2 to V3. By working with their dedicated TAM, the merchant had a go-to subject matter expert to answer any questions they had and advise on best practices to prevent any future hiccups as well.
