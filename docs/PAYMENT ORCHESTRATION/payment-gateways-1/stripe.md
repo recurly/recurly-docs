@@ -21,14 +21,14 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 ### Prerequisites
 
-- Access to Recurly Payment Gateway Configuration page.
-- An active Stripe account (existing or newly created).
-- Consistency in currency and card type support when utilizing Gateway Failover.
+* Access to Recurly Payment Gateway Configuration page.
+* An active Stripe account (existing or newly created).
+* Consistency in currency and card type support when utilizing Gateway Failover.
 
 ### Limitations
 
-- Updates in the billing information on Recurly do not reflect automatically on Stripe customers.
-- Necessitates manual search for the most recent Stripe customer while processing payments directly inside of Stripe.
+* Updates in the billing information on Recurly do not reflect automatically on Stripe customers.
+* Necessitates manual search for the most recent Stripe customer while processing payments directly inside of Stripe.
 
 # Definition
 
@@ -38,37 +38,103 @@ The integration of Stripe with Recurly facilitates a smooth pathway for managing
 
 # Key details
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Feature",
-    "h-1": "Description",
-    "0-0": "Services that work with Recurly",
-    "0-1": "Payment processing, including Gateway Failover support, Stripe Elements (Payment, Express Checkout, LinkPay)",
-    "1-0": "Supported operations",
-    "1-1": "Authorize & Capture, Purchase, Recurring, Refund, Void",
-    "2-0": "Supported payment types",
-    "2-1": "**Native Support**: Credit/Debit Cards, Apple Pay, Google Pay  \n**Stripe Elements Early Access**: Credit/Debit Cards, Apple Pay, Google Pay, Link Pay (Cards), Cash App Pay, Revolut (UK/EU only)",
-    "3-0": "Supported card brands",
-    "3-1": "**Native Support**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay  \n**Stripe Elements**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay, Cartes Bancaires",
-    "4-0": "Gateway Specific 3DS2 Supported",
-    "4-1": "Yes",
-    "5-0": "Card on File Supported",
-    "5-1": "Yes",
-    "6-0": "Regions",
-    "6-1": "Global, some APMs are not supported in all Regions",
-    "7-0": "Currencies",
-    "7-1": "Must match in both Stripe and Recurly when using Gateway Failover. Stripe supports all currencies. See <a href=\"https://docs.recurly.com/docs/currency-support-by-gateway\" target=\"_blank\">all available.</a>"
-  },
-  "cols": 2,
-  "rows": 8,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Feature
+      </th>
 
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Services that work with Recurly
+      </td>
+
+      <td>
+        Payment processing, including Gateway Failover support, Stripe Elements (Payment, Express Checkout, LinkPay)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Supported operations
+      </td>
+
+      <td>
+        Authorize & Capture, Purchase, Recurring, Refund, Void
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Supported payment types
+      </td>
+
+      <td>
+        * \*Native Support\*\*: Credit/Debit Cards, Apple Pay, Google Pay  
+        * \*Stripe Elements Early Access\*\*: Credit/Debit Cards, Apple Pay, Google Pay, Link Pay (Cards), Cash App Pay, Revolut (UK/EU only)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Supported card brands
+      </td>
+
+      <td>
+        * \*Native Support\*\*: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay  
+        * \*Stripe Elements\*\*: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay, Cartes Bancaires
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Gateway Specific 3DS2 Supported
+      </td>
+
+      <td>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Card on File Supported
+      </td>
+
+      <td>
+        Yes
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Regions
+      </td>
+
+      <td>
+        Global, some APMs are not supported in all Regions
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Currencies
+      </td>
+
+      <td>
+        Must match in both Stripe and Recurly when using Gateway Failover. Stripe supports all currencies. See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## Authorization and capture
 
@@ -106,9 +172,9 @@ You will be prompted to log in to your Stripe account or you can enter your emai
 
 After logging in to your Stripe account, you'll be redirected back to the Recurly platform where you can configure your payment settings according to your preferences and business requirements. This includes:
 
-- Excluding this instance from Gateway Failover
-- Setting up Alternative Payment Methods (Apple Pay or Google Pay)
-- Setting up currency preferences
+* Excluding this instance from Gateway Failover
+* Setting up Alternative Payment Methods (Apple Pay or Google Pay)
+* Setting up currency preferences
 
 #### **Step 6: Review gateway failover settings**
 
