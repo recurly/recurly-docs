@@ -24,23 +24,23 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 Sagepay is a payment gateway specifically designed to accept Credit Card payments. To process card payments with Sagepay, merchants must: 
 
-- Establish an Opayo / Sagepay account 
-- Ensure Continuous Authority is enabled on the Sagepay account
-- Ensure Repeat Transactions is enabled on the Sagepay account
+* Establish an Opayo / Sagepay account 
+* Ensure Continuous Authority is enabled on the Sagepay account
+* Ensure Repeat Transactions is enabled on the Sagepay account
 
 ### Limitations
 
-- 3D Secure is only supported when integrated via Recurly.js 
-- Sagepay is only available for merchants located in the United Kingdom
+* 3D Secure is only supported when integrated via Recurly.js 
+* Sagepay is only available for merchants located in the United Kingdom
 
 # Definition
 
 Sagepay (Opayo) is a full-service payment management platform using the Opayo direct integration. When configured with Recurly, it allows you to securely manage your transactions. You will need a Sagepay Vendor ID to enable this integration. 
 
 > 📘 **Notes**:
-> 
+>
 > Visit our [guide ](https://docs.recurly.com/docs/how-to-test-your-gateway)on testing your gateway configurations in Recurly to ensure your payment processes are set up correctly.
-> 
+>
 > Optionally, you will also need SagePay Reporting credentials available
 
 # Key details
@@ -60,56 +60,56 @@ Sagepay (Opayo) is a full-service payment management platform using the Opayo di
 
 ### Step 1: Obtain your sagepay credentials and enable sagepay settings
 
-- When your Sagepay / Opayo account is created your Vendor will be made available to you. 
+* When your Sagepay / Opayo account is created your Vendor will be made available to you. 
 
 > :small_red_triangle_down: If you do not have this detail, please contact Sagepay directly for assistance. 
 
-- Ensure that you have Continuous Authority and Repeat Transactions enabled on your Sagepay account.
-- Ensure you have added [Recurly IP](https://docs.recurly.com/docs/ip-allowlist) details to your Opayo / Sagepay account. You can find more information on how to do this [here](https://www.elavon.co.uk/resource-center/help-with-your-solutions/opayo/myopayo/settings.html) .
+* Ensure that you have Continuous Authority and Repeat Transactions enabled on your Sagepay account.
+* Ensure you have added [Recurly IP](https://docs.recurly.com/docs/ip-allowlist) details to your Opayo / Sagepay account. You can find more information on how to do this [here](https://www.elavon.co.uk/resource-center/help-with-your-solutions/opayo/myopayo/settings.html) .
 
 ### Step 2: Enter Sagepay credentials in Recurly
 
-- Log into your Recurly account and navigate to the Payment Gateways page.
-- Click on the "Add a New Gateway" button at the top right of the Payment Gateways page.
-- Select “Sagepay” from the list of available gateways.
-- Enter your **Sagepay Vendor ID** into the “Vendor” field.
-- Check ‘Continuous Authority’ and ‘Repeat Transactions’ settings after confirming with Sagepay that these settings are enabled at the Sagepay level.
+* Log into your Recurly account and navigate to the Payment Gateways page.
+* Click on the "Add a New Gateway" button at the top right of the Payment Gateways page.
+* Select “Sagepay” from the list of available gateways.
+* Enter your **Sagepay Vendor ID** into the “Vendor” field.
+* Check ‘Continuous Authority’ and ‘Repeat Transactions’ settings after confirming with Sagepay that these settings are enabled at the Sagepay level.
 
 ### Step 3: Configure your Sagepay reporting API credentials (optional)
 
 To ensure seamless processing Recurly can query Sagepay in the event of a timeout issue, so that transaction status can be updated automatically. Without these credentials in place, transactions may stay in an unknown or incorrect state after a communication issue with the gateway. 
 
-- Create your query username and query password at Sagepay. Ensure you log in at least once with these credentials to activate them with the Sagepay gateway.
-- Enter your **Sagepay Query Username** into the “Query Username” field.
-- Enter your **Sagepay Query Password** into the “Query Password” field.
+* Create your query username and query password at Sagepay. Ensure you log in at least once with these credentials to activate them with the Sagepay gateway.
+* Enter your **Sagepay Query Username** into the “Query Username” field.
+* Enter your **Sagepay Query Password** into the “Query Password” field.
 
 ### Step 4: Set your credit card types
 
-- Under the ‘ACCEPTED CARD TYPES’ header, you will see multiple card brand names. Only enable (select) those card types that you have enabled on your Sagepay / Opayo account.
+* Under the ‘ACCEPTED CARD TYPES’ header, you will see multiple card brand names. Only enable (select) those card types that you have enabled on your Sagepay / Opayo account.
 
 ### Step 6: Enable currencies
 
-- USD will be enabled by default. If you want to add additional currencies, or remove USD, use the selection tool on the left to add the currencies your Sagepay gateway accepts.
+* USD will be enabled by default. If you want to add additional currencies, or remove USD, use the selection tool on the left to add the currencies your Sagepay gateway accepts.
 
 ### Step 7: Enable 3D Secure
 
-- The option 'Enable 3DS when available' will be selected by default, but you have the option of forcing 3DS on all Customer initiated transactions, or disabling 3D Secure all-together if your business qualifies for such a thing (such as a MOTO only Business). If you are taking online payments from consumers, you should ensure 3DS is enabled and that you are integrated to Recurly in such a way that allows SCA to occur. 
-  - Enable 3DS when available (Default): This option will allow 3DS challenges to occur if desired by the Issuer.
-  - Force 3DS on all transactions where possible: This option will force a 3DS challenge on all CIT transactions.
-  - Disable 3DS on all transactions (3DS Exempt): This option will attempt to exempt your transactions from SCA. 
-    - **Note:** If you are currently set to 'Disabled', do not enable this feature unless your integrations supports Recurly.js. Enabling without this key integration will cause payment errors to occur immediately.
+* The option 'Enable 3DS when available' will be selected by default, but you have the option of forcing 3DS on all Customer initiated transactions, or disabling 3D Secure all-together if your business qualifies for such a thing (such as a MOTO only Business). If you are taking online payments from consumers, you should ensure 3DS is enabled and that you are integrated to Recurly in such a way that allows SCA to occur. 
+  * Enable 3DS when available (Default): This option will allow 3DS challenges to occur if desired by the Issuer.
+  * Force 3DS on all transactions where possible: This option will force a 3DS challenge on all CIT transactions.
+  * Disable 3DS on all transactions (3DS Exempt): This option will attempt to exempt your transactions from SCA. 
+    * **Note:** If you are currently set to 'Disabled', do not enable this feature unless your integrations supports Recurly.js. Enabling without this key integration will cause payment errors to occur immediately.
 
 > 📘 3D Secure transactions are only supported when using Recurly.js tokens, and will not support transactions sent with raw card data via API.
-> 
+>
 > Immediate payment failures will occur if 3DS is enabled without Recurly.js integrated.
 
 ### Step 8: Test the configuration (recommended)
 
-- Make a test transaction to ensure that the integration is working correctly. This can be done in development mode for your sandbox site in Recurly before moving to a live environment.
+* Make a test transaction to ensure that the integration is working correctly. This can be done in development mode for your sandbox site in Recurly before moving to a live environment.
 
 ### Step 9: Go live
 
-- After testing, if everything is working as expected, you are ready to accept live payments through the Sagepay gateway via Recurly.
+* After testing, if everything is working as expected, you are ready to accept live payments through the Sagepay gateway via Recurly.
 
 # Gateway troubleshooting
 
