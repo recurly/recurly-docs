@@ -25,43 +25,43 @@ Account Hierarchy - Invoice Rollup is a feature in Recurly that allows businesse
 
 # Key benefits
 
-- **Simplified billing:** Consolidate charges from multiple accounts into a single invoice, reducing administrative effort and enhancing clarity.
-- **Enhanced tracking:** Easily track charges and invoices across multiple accounts with detailed invoice displays and API support.
-- **Flexible management:** Handle one-time charges, recurring charges, and subscription changes across multiple accounts with ease.
-- **Improved customer experience:** Provide a more streamlined and clear billing experience for your customers by consolidating invoices.
-- **Efficient taxation:** Tax line items based on the parent account's taxable address or, if needed, on the child account's address.
+* **Simplified billing:** Consolidate charges from multiple accounts into a single invoice, reducing administrative effort and enhancing clarity.
+* **Enhanced tracking:** Easily track charges and invoices across multiple accounts with detailed invoice displays and API support.
+* **Flexible management:** Handle one-time charges, recurring charges, and subscription changes across multiple accounts with ease.
+* **Improved customer experience:** Provide a more streamlined and clear billing experience for your customers by consolidating invoices.
+* **Efficient taxation:** Tax line items based on the parent account's taxable address or, if needed, on the child account's address.
 
 # Key details
 
 This functionality is powered by Recurly's Calendar Billing feature, detailed as follows:
 
-- Through [Calendar Billing - Aggregate Invoices](https://docs.recurly.com/docs/calendar-billing#section-aggregate-invoices), charges from both child and parent accounts are merged into a single invoice. This is provided the child accounts are set to bill to the parent account and all [required conditions](https://docs.recurly.com/docs/calendar-billing#eligible-subscriptions) are met.
+* Through [Calendar Billing - Aggregate Invoices](https://docs.recurly.com/docs/calendar-billing#section-aggregate-invoices), charges from both child and parent accounts are merged into a single invoice. This is provided the child accounts are set to bill to the parent account and all [required conditions](https://docs.recurly.com/docs/calendar-billing#eligible-subscriptions) are met.
 
-  - [Calendar Billing - Alignment](https://docs.recurly.com/docs/calendar-billing#alignment) allows for the automatic alignment of billing dates across a hierarchy of accounts to match the billing date of the common parent account.
+  * [Calendar Billing - Alignment](https://docs.recurly.com/docs/calendar-billing#alignment) allows for the automatic alignment of billing dates across a hierarchy of accounts to match the billing date of the common parent account.
 
   #### One-time charges
 
-  - Any one-time charges on an account (whether parent or child) will be included in the consolidated invoice if they are present before the invoicing event. This includes recurring charges, as long as there is no shipping address associated. One-time charges requiring immediate billing will be invoiced separately.
+  * Any one-time charges on an account (whether parent or child) will be included in the consolidated invoice if they are present before the invoicing event. This includes recurring charges, as long as there is no shipping address associated. One-time charges requiring immediate billing will be invoiced separately.
 
   ## Interface updates
 
   #### PDF and Emails
 
-  - Invoice-related emails will now include charges from multiple accounts within a hierarchy in the HTML/Text invoice display. Charges will be listed collectively, not by the originating account. However, email templates can be customized to include account information for each line item.
+  * Invoice-related emails will now include charges from multiple accounts within a hierarchy in the HTML/Text invoice display. Charges will be listed collectively, not by the originating account. However, email templates can be customized to include account information for each line item.
 
-  - Invoice PDFs will similarly reflect the amalgamation of charges from multiple accounts. Here, the charges will be categorized by their originating accounts and will include relevant account details (such as Account Code).
+  * Invoice PDFs will similarly reflect the amalgamation of charges from multiple accounts. Here, the charges will be categorized by their originating accounts and will include relevant account details (such as Account Code).
 
   > 📘 Important!
-  > 
+  >
   > The Admin Console, Hosted Invoice display, and PDFs will show only the first 500 line items, but the subtotal, tax, and total will accurately represent all items. To access details of line items beyond the initial 500, use the Adjustments Export.
 
   #### Recurly admin and hosted invoices
 
-  - The Recurly Admin UI and hosted invoice page will display consolidated invoices, mirroring the format of the PDFs.
+  * The Recurly Admin UI and hosted invoice page will display consolidated invoices, mirroring the format of the PDFs.
 
   #### API Support
 
-  - Charges are retrievable via the Recurly API v3 through the <a href="https://developers.recurly.com/api/v2021-02-25/index.html#tag/invoice" target="_blank">invoices</a> or <a href="https://developers.recurly.com/api/v2021-02-25/index.html#tag/line_item" target="_blank">line items</a> endpoints. The data includes which account the charges were billed from and to (e.g., parent or child). Recurly API v2 continues to be supported.
+  * Charges are retrievable via the Recurly API v3 through the <a href="https://developers.recurly.com/api/v2021-02-25/index.html#tag/invoice" target="_blank">invoices</a> or <a href="https://developers.recurly.com/api/v2021-02-25/index.html#tag/line_item" target="_blank">line items</a> endpoints. The data includes which account the charges were billed from and to (e.g., parent or child). Recurly API v2 continues to be supported.
 
 # Instructions for use
 
@@ -79,11 +79,11 @@ Consider two child accounts, A and B, that are set to bill to a common parent ac
 
 3. At the time of the invoicing event (when the common billing date arrives), the recurring charges from subscriptions on both child accounts will be billed together. You will notice:
 
-- A PDF of the collective invoice, itemizing charges by originating account along with details such as account code, name, and company, should these details be provided on the Account. This PDF can be found attached to invoicing emails, as well as on the hosted pages and Invoice details page in the Recurly Admin UI.
+* A PDF of the collective invoice, itemizing charges by originating account along with details such as account code, name, and company, should these details be provided on the Account. This PDF can be found attached to invoicing emails, as well as on the hosted pages and Invoice details page in the Recurly Admin UI.
 
-- Use Recurly API v3 or v2 to review the comprehensive invoice and its individual line items.
+* Use Recurly API v3 or v2 to review the comprehensive invoice and its individual line items.
 
-**Note:** _Subscriptions on the parent account can be synchronized with those on child accounts, allowing the parent's charges to be incorporated into the collective invoice._
+**Note:** *Subscriptions on the parent account can be synchronized with those on child accounts, allowing the parent's charges to be incorporated into the collective invoice.*
 
 #### Combining recurring and one-time charges
 
@@ -110,7 +110,7 @@ With Calendar Billing - Alignment and Account Hierarchy combined, a parent accou
 The default setting taxes all items on a consolidated invoice according to the parent account's [taxable address](https://docs.recurly.com/docs/tax#taxable-address). To tax a child account's line items based on its specific address, enable the new setting provided. Absent an address for the child account, the system defaults to the parent's taxable address.
 
 > 📘 Note on Shipping Addresses
-> 
+>
 > Currently, shipping addresses are not compatible with Account Hierarchy Invoice Consolidation. Charges linked to a shipping address will be billed separately or at the next qualifying event.
 
 ## Coupons
