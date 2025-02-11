@@ -13,6 +13,7 @@ next:
 The Transaction Transparent Post API allows you to securely create one-time transactions from your website.
 
 ## Required Protected Fields
+
 Transparent Post API requires certain fields to be protected from tampering. The protected field is digitally signed using your private key to ensure that the user does not tamper with the value. At a minimum, you must include the redirect URL and account URL for every transparent post request. The one-time transaction endpoint also requires an amount in cents attribute so Recurly knows how much to charge.
 
 <dl>
@@ -29,9 +30,11 @@ Transparent Post API requires certain fields to be protected from tampering. The
 </dl>
 
 ### Hidden HTML Field: Protected Data
+
 The client library saves the protected fields to a hidden field in the HTML form. While the values of the hidden field may be visible to a user viewing the HTML source, the values are protected with a secure hash. The hidden field is hashed using your private key to ensure that the form was legitimately created on your site and the values have not been tampered with before submission.
 
 #### HTML Example
+
 ```
 <form method="POST" action="https://api.recurly.com/transparent/[subdomain]/transaction">
   <input type="hidden" name="data" value="[protected form data]" />
@@ -41,9 +44,11 @@ The client library saves the protected fields to a hidden field in the HTML form
 ```
 
 ## Transaction HTML Form Fields
+
 The following form fields may be submitted by your HTML form:
 
 #### Account Fields (optional)
+
 The account will be created upon a successful transaction if it does not already exist. These fields will update the account if it does exist.
 
 <dl>
@@ -54,8 +59,8 @@ The account will be created upon a successful transaction if it does not already
 <dt>account[company_name]</dt>
 </dl>
 
-
 #### Billing Information Fields
+
 <dl>
 <dt>billing_info[first_name]</dt>
 <dt>billing_info[last_name]</dt>
@@ -80,6 +85,7 @@ The account will be created upon a successful transaction if it does not already
 </dl>
 
 #### HTML Example
+
 ```
 <form method="POST" action="https://api.recurly.com/transparent/[subdomain]/transaction">
   <input type="hidden" name="data" value="[protected form data]" />
@@ -94,9 +100,11 @@ The account will be created upon a successful transaction if it does not already
 ```
 
 ## Endpoint URL
+
 The client libraries handle the URL details automatically. If you are building your own transparent post implementation, use the endpoint below, substituting `subdomain` with your Recurly account's subdomain:
 
 `POST` `https://api.recurly.com/transparent/[subdomain]/transaction`
 
 ## More Info
+
 Please see the [Transactions API](/api/transactions) for more information. The behavior of the Transactions Transparent Post API closely mirrors the behavior of the Subscriptions API for creating a new transaction.
