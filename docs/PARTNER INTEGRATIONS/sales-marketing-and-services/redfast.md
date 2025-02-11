@@ -1,0 +1,368 @@
+---
+title: Redfast integration
+excerpt: >-
+  Drive action across your in-app subscriber lifecycle with Recurly's
+  integration with Redfast.
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# Overview
+
+### Required plan
+
+This feature is only available to customers on the Professional and/or Elite subscription plan. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+
+### Additional Cost
+
+This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
+
+<a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book a Redfast demo</a>
+
+# Definition
+
+Redfast is a platform that delivers real-time, personalized messages across web, mobile, and TV based on users’ behavior, allowing B2C companies to guide their customers to take actions that will drive acquisition, retention, and upselling. Your best chance to get your subscribers' attention is when they’re actively using your product. 
+
+# Key benefits
+
+- **Personalized subscriber engagement:** Deliver targeted in-app messages to drive actions like purchases, renewals, and upgrades.
+- **Increased subscriber lifetime value:** Enhance customer experience and loyalty through tailored prompts and guidance.
+- **Streamlined implementation:** Easily create and manage engaging subscriber journeys without extensive development resources.
+
+# Key details
+
+- **Minimal dev lift and easy to implement**: Growth and product teams can drive engagement and subscriber journey prompts without waiting for engineering resources.
+- **Real-time and cross-platform**: Don’t wait for that scheduled email to go out, deliver real-time prompts based on actions and segments across desktop and mobile web, iOS, Android, Apple TV, Roku, Fire TV, and Samsung TV. No other platform offers TV device support.
+- **Predict and prevent churn**: Predict users likely to cancel and create personalized cancellation flows to save them.
+- **Subscription changes with 1-click**: With only 1-click from your subscribers, automatically make changes to their subscription in Recurly (ie. add-ons, pause, change plans, apply coupons).  
+  A/B test and analyze what’s working: Easily A/B test unlimited variations to drive conversions and optimize revenue.
+- **Drive engagement across your subscriber’s lifecycle**: Prompt your customers at every phase of their journey, from acquisition to renewals, upgrading, and cancellation.
+
+# Implementation guide
+
+## Step 1: Recurly configuration / Redfast (pulse account) provisioning
+
+1. From within Recurly Admin: **go** to Integrations section -> Redfast
+
+- When a merchant has purchased Redfast, they will be able to connect from within the Recurly app.
+- Fill out the form to create a Redfast instance.
+- This will automatically generate your Redfast instance, provision the Recurly API key, and complete the creation process.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/56557a4-image.png",
+        null,
+        "Image"
+      ],
+      "align": "center",
+      "sizing": "80% ",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/aa285a2-image.png",
+        null,
+        "Image"
+      ],
+      "align": "center",
+      "sizing": "80% ",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+2. **Configure** Redfast.
+
+- You will receive an invitation to create your account/password in Redfast.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/feab6cf-image.png",
+        null,
+        "Image"
+      ],
+      "align": "center",
+      "sizing": "60% ",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+- **Log** into Redfast using your new Redfast account from the step above.
+
+> **Note:** You can only have one email address associated with each Redfast instance (site/subdomain).
+
+- If you are planning to be in more than one instance (site/subdomain), you will have to use the alias process (similar to Recurly), e.g., [chad+demo@recurly.com](mailto:chad+demo@recurly.com).
+- Once you are logged into Redfast, **go** to Settings > Application:
+  - **Enter** your domain.
+  - You can also change/edit the name of the instance here if needed—make it descriptive so that you know what the instance usage will be.
+  - **Click** save changes.
+    > **Note:** the ID and API keys should already be populated from Recurly.
+
+**Inviting a co-worker to the Redfast console is easy:**
+
+- Go to Settings > Users and click on 'Add User'.
+- Enter their email and click + Add User.
+- Learn more in Redfast: <a href="https://help.redfast.com/docs/invite-users" target="_blank">invite users</a>.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/1ede92b-image.png",
+        null,
+        "Image"
+      ],
+      "align": "center",
+      "sizing": "60% ",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+## Step 2: Configure RedFast / add RedFast tag
+
+- **Go** to Settings > User Tracking
+
+  - User tracking is set by either enabling the Redfast tag in Google Tag Manager or copying the script displayed to each page in the customer’s storefront to enable tracking.
+  - Once one of these options is enabled on the storefront, tracking will begin. You can verify this by noting the status of “Active” with a green dot.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/a4444bf-image.png",
+        null,
+        "Image"
+      ],
+      "align": "center",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+- You can configure additional tracking items here. Some examples include identifying the cancellation button ID or creating a new tracker.
+- Learn more in Redfast: <a href="https://help.redfast.com/docs/usage-tracking-1" target="_blank">usage tracking</a>
+
+## Step 3: Fetch ID logic
+
+In order for Redfast to populate prompts to users, the Redfast tag needs to be able to access information about the user.
+
+**Example:** A webpage that authenticates a user, and pulls in information from Recurly including the account code, plan information, and other customer attributes, needs to be live to allow the Redfast JS tag to access this data to identify the user. Device applications (mobile & TV SDKs) will also need to authenticate a user in order to provide targeted prompts to the users.
+
+- Learn more in Redfast: <a href="https://help.redfast.com/docs/custom-js-snippet" target="_blank">custom JS snippet</a>.
+
+Admin users may override certain behaviors of the Redfast Javascript SDK. Upon deploying Redfast for the first time, it is important to configure the following to ensure that users are recognized using your unique identifiers. These identifiers will be utilized for 1-click actions as well as downstream reporting, so it is important that these are correctly configured.
+
+You may need to work with your developers to determine the best method to identify users. The most common methods to retrieve a User ID are:
+
+- localStorage or sessionStorage item
+- browser cookie
+- accessing an item stored in the browser's dataLayer
+
+## Step 4: Import user traits (using both Recurly and RedFast sites)
+
+#### Recurly - Automated Exports
+
+Within Recurly, **go** to Integrations > Automated Exports and enable the following automated exports:
+
+1. Billing Info v6
+   1. Filter on "Modified Yesterday"
+2. Invoices - Summary v5
+   1. Filter on "Modified Yesterday"
+3. Subscriptions v5
+   1. Filter on "Modified Yesterday"
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/aaa214d-image.png",
+        null,
+        "Image"
+      ],
+      "align": "center",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+#### RedFast - Importing Traits
+
+Follow the steps outlined in Redfast: <a href="https://help.redfast.com/docs/user-traits" target="_blank">user traits</a> - After completing these steps in Redfast, you can:
+
+1. Create a CSV file.
+2. Upload the file to AWS.
+3. This file will be validated after it is uploaded. Notify Recurly Support to complete this process. Once complete, you can view the attributes in Settings > User Traits.
+
+#### Redfast - customizing user traits
+
+Learn more in Redfast: <a href="https://help.redfast.com/docs/user-traits#customizing-user-traits" target="_blank">customizing user traits</a>
+
+1. Within Redfast, go to Settings > User Traits to view the attributes.
+2. Configure the Type field for each attribute: Boolean, String, Number, or Date.
+3. Configure the Display field for each attribute: HINT, the options are different for each type so assign accordingly.
+
+## Step 5: Customize segments, triggers, and actions
+
+Continuing in Redfast and based on Use Cases, modify the specific user segments, triggers and actions. 
+
+#### Test Users
+
+To test your implementation, configure Test Users as outlined within Redfast, (Settings > Users > Test Users) <https://help.redfast.com/docs/test-users>
+
+#### Guides
+
+Within Redfast, you sill see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/e52e66e-image.png",
+        null,
+        ""
+      ],
+      "align": "center",
+      "sizing": "80% ",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+### Syncing Recurly data
+
+Recurly data will be synced to Redfast for use in building out offers. This includes plan and coupon data. In order to keep plan and coupon data in sync, there is a step to take anytime that a new plan or coupon is created. 
+
+To force a sync, navigate to Redfast -> Settings -> Integrations -> External -> Recurly. Uncheck the active checkbox, save, then recheck it, which forces a refresh
+
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png",
+        "",
+        ""
+      ],
+      "align": "center",
+      "sizing": "60% ",
+      "border": true
+    }
+  ]
+}
+[/block]
+
+
+### Cancel save guide
+
+1. Add or modify the options on the reasons for cancellation screen. The following three options are standard (optional):
+   - Too expensive with CTA to a save offer
+   - Not enough content with CTA to save offer or the latest content
+   - Technical issues with CTA to support
+2. Create an A-B experiment on any of the prompts in the guide to experiment with offers or design (optional).
+3. Set the segment to Test Users (optional - this will allow you to test the guide).
+4. Set the trigger to activate using the cancel button click (required).
+5. The 'Live' feature can detect and add the cancel click event.
+6. Start the guide (required).
+7. Add your User ID to the Test Users segment within Settings > Users > Test Users (required for using the test users segment).
+8. Confirm that the guide launches when you click on cancel (required).
+
+### Failed payment guide
+
+Configuration steps: <a href="https://help.redfast.com/docs/failed-rebill" target="_blank">failed rebill</a>.
+
+1. The failed payment guide will be set to “Journey” (required).
+2. The first prompt is set to a Notification prompt type that is shown when the first subscription renewal attempt has failed (required).
+3. Set the CTA for this prompt to redirect to your payment update screen (required).
+4. You may also set the redirect to Recurly’s hosted billing info update page.
+5. Create an A-B experiment on any of the prompts in the guide to experiment with offers or design (optional).
+6. Set the segment to Test Users (optional - this will allow you to test the guide).
+7. Set the trigger to activate on Any Page (this may be changed later).
+8. Start the guide (required).
+9. Add your user ID to the Test Users segment from Settings > Users > Test Users (required for using the test users segment).
+10. Confirm that the guide is triggered as configured (required).
+11. Change the targeting for this prompt to be members with failed payment (required).
+
+## Step 6: Set up, test, activate prompts
+
+Based on use cases, set up the specific prompts triggered by actions.
+
+1. Configure all additional prompts and guides.
+2. Apply the applicable segments to all prompts and guides.
+3. Complete testing of all additional prompts and guides.
+4. Activate all prompts and guides.
+
+Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Redfast. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. Learn more about Test Users in the Redfast docs portal [here](https://help.redfast.com/docs/test-users). 
+
+### Post go-live
+
+After the merchant is up and running with prompts, CSM can help monitor the progress and results of prompts to optimize their business. This is a mix of Redfast performance data and Recurly Analytics.
+
+# Helpful resources
+
+Learn more about Redfast by visiting these resources: 
+
+<a href="https://recurly.com/product/subscriber-engagement/" target="_blank">Recurly's subscriber engagement solutions</a>
+
+<a href="https://www.redfast.com/" target="_blank">Redfast</a> 
+
+Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book a Redfast demo</a>
+
+# FAQs
+
+**Q: What is Redfast and how does Redfast work?  
+A:** Redfast is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and a Redfast JS token on the merchant web page, or SKDs or mobile apps.
+
+**Q: What is a prompt?  
+A:** A prompt refers to content or behavior that is presented to users within one or more segments.
+
+**Q: What is a guide?  
+A:** A guide is a collection of prompts that appear one after another.
+
+**Q: What segmentation is available in Redfast?  
+A:** Recurly subscriber data can be used for driving segmentation across prompts and guides to target the message to your unique subscribers.
+
+**Q: How do I monitor the success of the prompts displayed to customers?  
+A: **Redfast offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data from Redfast into Recurly Analytics.
+
+**Q: What if a merchant does not use Google Tag Manager?  
+A: **Adobe, Tealium or GTM are the tag options out of the box. Other tag managers can be used, and need to have tag script added to each page
+
+**Q: Does my Redfast API key count towards my API key limit?  
+A: **Yes, the Redfast API key that is generated via the Recurly provisioning flow will utilize one of your API keys. If you need additional API keys, contact sales to increase your limit.
