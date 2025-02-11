@@ -18,11 +18,11 @@ The Accounts section in Recurly provides a centralized hub to manage all subscri
 
 # Key benefits
 
-- **Centralized subscriber management:** One-stop location for all subscriber-related data and actions.
-- **Flexibility in billing:** Enables structured invoice rollups within account hierarchies for efficient billing processes.
-- **Geographic customization:** Manage specific details for countries, provinces, and states, ensuring accurate billing and shipping.
-- **Streamlined shipping management:** Allocate and manage shipping addresses efficiently for each purchase.
-- **Enhanced payment solutions:** The Subscriber Wallet feature facilitates multiple payment methods, providing flexibility and convenience for subscribers.
+* **Centralized subscriber management:** One-stop location for all subscriber-related data and actions.
+* **Flexibility in billing:** Enables structured invoice rollups within account hierarchies for efficient billing processes.
+* **Geographic customization:** Manage specific details for countries, provinces, and states, ensuring accurate billing and shipping.
+* **Streamlined shipping management:** Allocate and manage shipping addresses efficiently for each purchase.
+* **Enhanced payment solutions:** The Subscriber Wallet feature facilitates multiple payment methods, providing flexibility and convenience for subscribers.
 
 # Key details
 
