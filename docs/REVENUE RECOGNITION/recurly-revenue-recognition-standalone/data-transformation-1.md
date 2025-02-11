@@ -27,20 +27,20 @@ Please reach out to [support@recurly.com](mailto:support@recurly.com) for more p
 
 ### Prerequisites
 
-- Familiarity with the organization's revenue recognition standards.
-- Understanding of product bundling and data rule configurations.
-- Knowledge of the desired attributes for data transformation.
+* Familiarity with the organization's revenue recognition standards.
+* Understanding of product bundling and data rule configurations.
+* Knowledge of the desired attributes for data transformation.
 
 ### Limitations
 
-- Dataset, product bundle and data rules cannot be deleted. They can only be inactivated or modified.
+* Dataset, product bundle and data rules cannot be deleted. They can only be inactivated or modified.
 
 ### Key benefits
 
-- **Streamlined Data Management:** Efficiently manage product bundles, apply customized data rules, and analyze data for accurate revenue recognition.
-- **Comprehensive Analysis:** Create datasets for in-depth data analysis, with daily automatic refreshes ensuring up-to-date information.
-- **Customizable Configurations:** Tailor product bundles, data rules, and datasets to specific business requirements.
-- **Consistent Reporting:** Datasets ensure uniformity in data analysis and reporting across different functionalities.
+* **Streamlined Data Management:** Efficiently manage product bundles, apply customized data rules, and analyze data for accurate revenue recognition.
+* **Comprehensive Analysis:** Create datasets for in-depth data analysis, with daily automatic refreshes ensuring up-to-date information.
+* **Customizable Configurations:** Tailor product bundles, data rules, and datasets to specific business requirements.
+* **Consistent Reporting:** Datasets ensure uniformity in data analysis and reporting across different functionalities.
 
 # Key details
 
@@ -48,22 +48,7 @@ Please reach out to [support@recurly.com](mailto:support@recurly.com) for more p
 
 The Data Transformation section in Recurly revenue recognition Standalone enables efficient data management through features like product bundling for simplified sales, configurable data rules for customized revenue recognition, and datasets for comprehensive data analysis. It streamlines processes, ensures accuracy, and provides valuable insights for informed decision-making.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/56719facd7bd21a7af3e2c9e90e183dd096b94761541b670b18c50b1e3b4475d-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/56719facd7bd21a7af3e2c9e90e183dd096b94761541b670b18c50b1e3b4475d-image.png" />
 
 ## Product bundle
 
@@ -73,23 +58,7 @@ Product Bundle allows grouping multiple individual products into a single unit f
 
 1. **Navigate** to the Transformation section and select Product Bundle.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5cc6c56b69ce025a1e01f6c4782cd18b8e426e1b80f2c497f4b6205831b99a10-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="40% " border={true} src="https://files.readme.io/5cc6c56b69ce025a1e01f6c4782cd18b8e426e1b80f2c497f4b6205831b99a10-image.png" />
 
 2. **Click** on the New icon to create a new Product Bundle configuration.
 3. **Provide** a unique name for the Product Bundle.
@@ -103,22 +72,7 @@ Product Bundle allows grouping multiple individual products into a single unit f
 
 Please find below a screenshot illustrating the configuration of a TV Bundle in the Recurly's Revenue Recognition Standalone system based on the Parent Identifier. This TV Bundle is eligible for Revenue, Cost, and Commission Attribution.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc893de43f50b031a7e2a24912628d8d016a9680dbb7fe51865d655b6b0b4017-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/cc893de43f50b031a7e2a24912628d8d016a9680dbb7fe51865d655b6b0b4017-image.png" />
 
 1. **Go** to the Rule Set page by clicking on "Rule Set" at the top.
 2. To add new lines, **click** on the "New" icon. This will allow you to define child lines under the Rule Set.
@@ -145,23 +99,7 @@ Recurly Revenue Recognition Standalone allows for the configuration of data rule
 
 1. **Navigate** to the Transformation section and select Data Rules.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5cc6c56b69ce025a1e01f6c4782cd18b8e426e1b80f2c497f4b6205831b99a10-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="40% " border={true} src="https://files.readme.io/5cc6c56b69ce025a1e01f6c4782cd18b8e426e1b80f2c497f4b6205831b99a10-image.png" />
 
 2. **Enter** a unique name for the data rule in the "Rule Name" field.
 3. **Select** the desired object from the drop-down list (Contract, Order Line, Doc Line, or Cost) to determine at which level the rule should be applied.
@@ -174,10 +112,10 @@ Recurly Revenue Recognition Standalone allows for the configuration of data rule
 
 > **Notes:**
 >
-> - Once configured, Data Rules in Recurly revenue recognition cannot be deleted but can be set to an inactive status.
-> - To change the status of a Data Rule, click on the option under the Status column and switch it from Active to Inactive. Remember to save the changes by clicking on the Save icon.
-> - If you need to make edits to a Data Rule configuration, you can modify the necessary fields and save the changes using the Save icon.
-> - While deletion is not possible, you have the flexibility to update and adjust Data Rules to suit your business requirements as needed.
+> * Once configured, Data Rules in Recurly revenue recognition cannot be deleted but can be set to an inactive status.
+> * To change the status of a Data Rule, click on the option under the Status column and switch it from Active to Inactive. Remember to save the changes by clicking on the Save icon.
+> * If you need to make edits to a Data Rule configuration, you can modify the necessary fields and save the changes using the Save icon.
+> * While deletion is not possible, you have the flexibility to update and adjust Data Rules to suit your business requirements as needed.
 
 ### How to configure the Rules section under the data rules
 
@@ -198,7 +136,7 @@ Recurly Revenue Recognition Standalone allows for the configuration of data rule
 4. **Enter** the value corresponding to the data mentioned under the Field column.
 5. Multiple criteria can be added by repeating the above steps.
 
-If any of the criteria need to be edited, make the necessary changes and click on the Save icon.  
+If any of the criteria need to be edited, make the necessary changes and click on the Save icon.\
 To delete a criteria, click on the Delete icon next to it.
 
 ## Datasets
@@ -213,23 +151,7 @@ It's important to note that once a dataset is created, it cannot be deleted. How
 
 1. **Navigate** to the Transformation section and select Datasets.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5cc6c56b69ce025a1e01f6c4782cd18b8e426e1b80f2c497f4b6205831b99a10-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="40% " border={true} src="https://files.readme.io/5cc6c56b69ce025a1e01f6c4782cd18b8e426e1b80f2c497f4b6205831b99a10-image.png" />
 
 2. **Enter** a name for the dataset in the provided field.
 3. **Select** the appropriate books for which you want to apply this dataset.
