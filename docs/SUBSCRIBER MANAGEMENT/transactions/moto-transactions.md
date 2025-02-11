@@ -25,9 +25,9 @@ MOTO (Mail Order / Telephone Order) transactions allow businesses or agents to a
 
 # Key details
 
-- **Improved customer experience:** Facilitate smooth transactions for customers who prefer phone or mail orders, enhancing their overall experience.
-- **Flexible payment options:** Diversify your payment channels, catering to a broader segment of customers and enhancing accessibility.
-- **Enhanced gateway support:** MOTO transactions are supported by a plethora of prominent gateways, ensuring versatility and ease of integration.
+* **Improved customer experience:** Facilitate smooth transactions for customers who prefer phone or mail orders, enhancing their overall experience.
+* **Flexible payment options:** Diversify your payment channels, catering to a broader segment of customers and enhancing accessibility.
+* **Enhanced gateway support:** MOTO transactions are supported by a plethora of prominent gateways, ensuring versatility and ease of integration.
 
 # Key details
 
