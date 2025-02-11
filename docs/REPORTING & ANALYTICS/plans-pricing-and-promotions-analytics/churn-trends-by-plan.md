@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+* Users must have Analytics user role permission.
 
 # Definition
 
@@ -31,70 +31,25 @@ Plan Performance Subscription Churn is a feature within Recurly that offers a de
 >
 > **Note**: Data only includes plans that have had at least 1 subscriber.
 >
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
 
 # Key benefits
 
-- **Comprehensive churn overview:** By assessing all three charts, businesses gain a holistic understanding of churn dynamics, enabling better decision-making for customer retention.  
-- **Reasons behind churn:** The segregation between voluntary and involuntary churn charts offers insights into specific reasons driving customer attrition for each plan.  
-- **Strategic intervention:** With clear visibility into the different churn categories, businesses can craft tailored strategies to tackle and reduce high churn rates effectively.
+* **Comprehensive churn overview:** By assessing all three charts, businesses gain a holistic understanding of churn dynamics, enabling better decision-making for customer retention.  
+* **Reasons behind churn:** The segregation between voluntary and involuntary churn charts offers insights into specific reasons driving customer attrition for each plan.  
+* **Strategic intervention:** With clear visibility into the different churn categories, businesses can craft tailored strategies to tackle and reduce high churn rates effectively.
 
 # Plan performance subscription churn
 
 The 'Churn' view displays three line charts that calculate total, voluntary, and involuntary churn.
 
-- By examining the total churn, voluntary churn, and involuntary churn charts, you can understand the reasons behind the churn rates for each plan, which is essential for mitigating churn and improving customer retention.
+* By examining the total churn, voluntary churn, and involuntary churn charts, you can understand the reasons behind the churn rates for each plan, which is essential for mitigating churn and improving customer retention.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/68a2528-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
+<Image align="center" width="75% " src="https://files.readme.io/68a2528-image.png" />
 
+<Image align="center" width="75% " src="https://files.readme.io/ad4ab1a-image.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ad4ab1a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc695b6-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/cc695b6-image.png" />
 
 ### How to use the Plan Performance Subscription Churn
 
