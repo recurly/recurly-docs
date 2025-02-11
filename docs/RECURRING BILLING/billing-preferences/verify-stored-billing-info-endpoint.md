@@ -20,15 +20,15 @@ This feature is only available to customers on the Professional and/or Elite sub
 
 ### Prerequisites
 
-- Integration with API V3 or V2.
-- Use of credit card gateways (non-credit card payment methods are unsupported).
+* Integration with API V3 or V2.
+* Use of credit card gateways (non-credit card payment methods are unsupported).
 
 ### Limitations
 
-- Only accessible via the API; no Admin functionality currently available.
-- Verification is based on your gateway configuration, either as a $1 authorization or ZDA.
-- CVV will not be included in the verification due to PCI compliance regulations.
-- Verifications are counted as transactions, potentially incurring transaction fees from both Recurly and gateways.
+* Only accessible via the API; no Admin functionality currently available.
+* Verification is based on your gateway configuration, either as a $1 authorization or ZDA.
+* CVV will not be included in the verification due to PCI compliance regulations.
+* Verifications are counted as transactions, potentially incurring transaction fees from both Recurly and gateways.
 
 # Definition
 
@@ -36,18 +36,18 @@ Recurly's "Verify Billing Info" feature offers merchants the capability to valid
 
 # Key benefits
 
-- **Proactive verification**: Actively confirm the validity of stored billing information, reducing payment failures.
-- **Enhanced customer targeting**: Identify subsets of customers for targeted marketing campaigns or communications to update billing details.
-- **Boosted merchant confidence**: Ensure stored billing information remains accurate, irrespective of its duration in the system.
+* **Proactive verification**: Actively confirm the validity of stored billing information, reducing payment failures.
+* **Enhanced customer targeting**: Identify subsets of customers for targeted marketing campaigns or communications to update billing details.
+* **Boosted merchant confidence**: Ensure stored billing information remains accurate, irrespective of its duration in the system.
 
 # Supported functionality
 
 Recurly's Verify Billing Info feature is robust and versatile:
 
-- Initiate a billing info verification for the default stored billing info via API using the account code.
-- Choose a gateway code to direct verifications through a specific gateway.
-- Opt for a $1 or zero-dollar authorization based on gateway configuration settings.
-- Obtain billing info verification responses via API, including both successful and declined verifications.
+* Initiate a billing info verification for the default stored billing info via API using the account code.
+* Choose a gateway code to direct verifications through a specific gateway.
+* Opt for a $1 or zero-dollar authorization based on gateway configuration settings.
+* Obtain billing info verification responses via API, including both successful and declined verifications.
 
 # Supported gateways
 
@@ -57,19 +57,19 @@ Recurly's Verify Billing Info feature is compatible with all Recurly credit card
 
 ### 1. Initiate billing info verification
 
-- **Step 1**: Access your Recurly dashboard.
-- **Step 2**: Using API V3 or V2, send a POST request to `/accounts/:account/billing_info/verify`.
-- **Step 3**: Ensure the `account_code` is included in your API call.
+* **Step 1**: Access your Recurly dashboard.
+* **Step 2**: Using API V3 or V2, send a POST request to `/accounts/:account/billing_info/verify`.
+* **Step 3**: Ensure the `account_code` is included in your API call.
 
 ### 2. Specify gateway (optional)
 
-- **Step 1**: In your API call, optionally include a `gateway_code` to direct the verification through a specific gateway.
-- **Step 2**: If the gateway code doesn't support the card type, an error will be returned.
+* **Step 1**: In your API call, optionally include a `gateway_code` to direct the verification through a specific gateway.
+* **Step 2**: If the gateway code doesn't support the card type, an error will be returned.
 
 ### 3. Receive verification response
 
-- **Step 1**: After submitting the verification request, wait for a response from Recurly.
-- **Step 2**: Review  the response to determine if the verification was successful or declined.
+* **Step 1**: After submitting the verification request, wait for a response from Recurly.
+* **Step 2**: Review  the response to determine if the verification was successful or declined.
 
 # Implementation details
 
