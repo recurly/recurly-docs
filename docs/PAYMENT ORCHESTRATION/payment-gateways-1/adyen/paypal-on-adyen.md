@@ -18,14 +18,14 @@ This feature or setting is only available to Recurly merchants who’ve been spe
 
 ### Prerequisites
 
-- Active PayPal and Adyen account.
-- Integration with Adyen gateways.
+* Active PayPal and Adyen account.
+* Integration with Adyen gateways.
 
 ### Limitations
 
-- This integration uses Adyen tokens so cannot be easily migrated or moved to direct Paypal integrations such as PayPal Business or Complete.
-- Recurly does not have access to the PayPal BAID or Vault ID.
-- PayPal does not allow transaction amount requests between .01 and .48 cents. It's best practice to send transaction amounts of .50 cents and above when not offering free trials.
+* This integration uses Adyen tokens so cannot be easily migrated or moved to direct Paypal integrations such as PayPal Business or Complete.
+* Recurly does not have access to the PayPal BAID or Vault ID.
+* PayPal does not allow transaction amount requests between .01 and .48 cents. It's best practice to send transaction amounts of .50 cents and above when not offering free trials.
 
 # Definition
 
@@ -33,14 +33,14 @@ PayPal via Adyen enables aggregated reporting at the Gateway level. It requires 
 
 If you’d like to learn more about PayPal payments or Adyen, find it in our new and improved Recurly docs here:
 
-- [PayPal Payment Method](https://docs.recurly.com/docs/paypal-payments)
-- [Adyen Gateway](https://docs.recurly.com/docs/adyen)
+* [PayPal Payment Method](https://docs.recurly.com/docs/paypal-payments)
+* [Adyen Gateway](https://docs.recurly.com/docs/adyen)
 
 # Key benefits
 
-- **Consolidated reporting**: Merchants no longer need to reference PayPal and Adyen reporting separately.
-- **Trusted brand**: Merchants can be certain their payments are processed accurately by both Adyen and PayPal.
-- **Consolidated gateways**: Have less gateways in your Recurly site! Less is sometimes more.
+* **Consolidated reporting**: Merchants no longer need to reference PayPal and Adyen reporting separately.
+* **Trusted brand**: Merchants can be certain their payments are processed accurately by both Adyen and PayPal.
+* **Consolidated gateways**: Have less gateways in your Recurly site! Less is sometimes more.
 
 # Key Details
 
@@ -66,22 +66,7 @@ If you are struggling with enabling PayPal on your Adyen site, please reach out 
 
 2. After the feature flag is enabled, merchants can navigate to their Payment Gateway settings within the Recurly platform. You will find a checkbox within your Adyen gateway settings to enable PayPal as an Alternative Payment Method. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/10a6f1b-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/10a6f1b-image.png" />
 
 ## Enabling PayPal on Adyen via Recurly.js
 
