@@ -21,10 +21,8 @@ This feature or setting is available if you have the Gift Cards feature activate
 
 ### Prerequisites
 
-
-
-- Active Recurly account with administrative privileges.
-- Gift cards feature activated.
+* Active Recurly account with administrative privileges.
+* Gift cards feature activated.
 
 # Definition
 
@@ -32,55 +30,19 @@ The Gift Cards Dashboard in Recurly offers a specialized interface for managing 
 
 # Key benefits
 
-- **Centralized gift card management**: Simplifies the oversight of gift card transactions, from purchase to redemption, ensuring efficient tracking and management.
-- **Enhanced customer engagement**: Facilitates the promotion and use of gift cards, a popular and flexible option for customers, thereby boosting sales and customer loyalty.
-- **Real-time insights and reporting**: Offers up-to-date insights into gift card usage and trends, aiding in strategic decisions and marketing efforts.
+* **Centralized gift card management**: Simplifies the oversight of gift card transactions, from purchase to redemption, ensuring efficient tracking and management.
+* **Enhanced customer engagement**: Facilitates the promotion and use of gift cards, a popular and flexible option for customers, thereby boosting sales and customer loyalty.
+* **Real-time insights and reporting**: Offers up-to-date insights into gift card usage and trends, aiding in strategic decisions and marketing efforts.
 
 # Dashboard
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5a25d6-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/c5a25d6-image.png" />
 
 The Gift Cards dashboard is your central hub for locating and managing all Gift Card products for your customers. This interface enables you to perform searches using various identifiers, such as the redemption code, the gifter's name, or the recipient's name.
 
 ## Gift card status
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/22b16b5-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
-
+<Image align="center" className="border" width="25% " border={true} src="https://files.readme.io/22b16b5-image.png" />
 
 | Category              | Description                                                     |
 | --------------------- | --------------------------------------------------------------- |
@@ -93,46 +55,13 @@ The Gift Cards dashboard is your central hub for locating and managing all Gift 
 
 # Gift card details
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/54081b0-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "60% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="60% " src="https://files.readme.io/54081b0-image.png" />
 
 To access detailed information about a specific gift card, select a product from the list and click on its redemption code. 
 
 This action will take you to a detailed view of the gift card. Here, you can find all the associated information. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6072a05-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
-
+<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/6072a05-image.png" />
 
 Additionally, clicking on the Gifter’s name will redirect you to their account, and clicking on the Purchase Invoice number will take you to the invoice view.
 
