@@ -25,10 +25,10 @@ The HIPAA Guidelines highlight the necessary steps that Recurly, a leading subsc
 
 # Key benefits
 
-- **Enhanced data privacy and security:** By aligning with HIPAA guidelines, Recurly ensures robust protection of sensitive consumer healthcare data, reinforcing trust among its user base.
-- **Unlocking new market opportunities:** With HIPAA compliance, Recurly can now support the fast-growing healthcare subscription sector, presenting new growth avenues for businesses.
-- **Compliance with regulatory standards:** Recurly's compliance with major regulatory standards including GDPR, CPRA, CCPA, and now HIPAA, demonstrates its commitment to uphold the highest data protection measures across industries.
-- **Boosted consumer confidence:** By ensuring data security and privacy, Recurly builds long-term consumer relationships rooted in trust, fostering enhanced customer loyalty and retention.
+* **Enhanced data privacy and security:** By aligning with HIPAA guidelines, Recurly ensures robust protection of sensitive consumer healthcare data, reinforcing trust among its user base.
+* **Unlocking new market opportunities:** With HIPAA compliance, Recurly can now support the fast-growing healthcare subscription sector, presenting new growth avenues for businesses.
+* **Compliance with regulatory standards:** Recurly's compliance with major regulatory standards including GDPR, CPRA, CCPA, and now HIPAA, demonstrates its commitment to uphold the highest data protection measures across industries.
+* **Boosted consumer confidence:** By ensuring data security and privacy, Recurly builds long-term consumer relationships rooted in trust, fostering enhanced customer loyalty and retention.
 
 # Recurly's leap into HIPAA compliance
 
@@ -48,4 +48,4 @@ Already serving over 2,220 consumer brands globally, Recurly is a subscription m
 
 # Helpful resources
 
-- [Recurly can now support HIPAA regulated subscription businesses](https://recurly.com/press/recurly-can-now-support-hipaa-regulated-subscription-businesses/)
+* [Recurly can now support HIPAA regulated subscription businesses](https://recurly.com/press/recurly-can-now-support-hipaa-regulated-subscription-businesses/)
