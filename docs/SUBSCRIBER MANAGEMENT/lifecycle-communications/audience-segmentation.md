@@ -25,11 +25,11 @@ Recurly's Audience Segmentation lets merchants craft alternate versions of the P
 
 # Key benefits
 
-- **Targeted messaging**: Deliver content tailored to your customers by segmenting your audience based on their billing or account country codes.  
-- **Stay compliant**: Seamlessly communicate any country or region-specific regulatory requirements, ensuring alignment with compliance mandates.  
-- **Enhanced engagement**: Personalized emails often result in higher open rates, fostering better engagement with your audience.  
-- **Streamlined process**: With in-built multi-locale support, establish your segment once and watch as Recurly sends locale-specific templates to the right audience.  
-- **Adaptable tools**: Modify, delete, or add to your templates with ease, providing an agile communication toolkit for your business.
+* **Targeted messaging**: Deliver content tailored to your customers by segmenting your audience based on their billing or account country codes.  
+* **Stay compliant**: Seamlessly communicate any country or region-specific regulatory requirements, ensuring alignment with compliance mandates.  
+* **Enhanced engagement**: Personalized emails often result in higher open rates, fostering better engagement with your audience.  
+* **Streamlined process**: With in-built multi-locale support, establish your segment once and watch as Recurly sends locale-specific templates to the right audience.  
+* **Adaptable tools**: Modify, delete, or add to your templates with ease, providing an agile communication toolkit for your business.
 
 # Key details
 
@@ -41,14 +41,14 @@ Messages tailored to individual audiences often see better engagement. For scena
 
 Recurly's Audience Segmentation feature is integrated with two primary email templates: New Subscription and Payment Confirmation. Each has a default version, but merchants can design an alternate version targeting a specific audience. When designing:
 
-- Remember, only the New Subscription and Payment Confirmation templates support audience segments.
-- Define criteria in the "Audience" section. If a customer meets just one criterion, they receive the alternate version.
-- Customers outside the defined audience segment criteria will get the default email template.
+* Remember, only the New Subscription and Payment Confirmation templates support audience segments.
+* Define criteria in the "Audience" section. If a customer meets just one criterion, they receive the alternate version.
+* Customers outside the defined audience segment criteria will get the default email template.
 
 ## Audience criteria
 
-- Define at least one criterion in the Audience section.
-- The segment builder operates on "OR" logic – if a customer meets one criterion, they receive the alternate template.
+* Define at least one criterion in the Audience section.
+* The segment builder operates on "OR" logic – if a customer meets one criterion, they receive the alternate template.
 
 ## Locale Support
 
@@ -66,44 +66,13 @@ Attach a PDF to your alternate email templates. For every locale on the alternat
 
 After creation, your new template appears under the Email Templates section. From there, options include previewing the HTML, editing, renaming, or deleting the template.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a922248-Screen_Shot_2022-12-05_at_3.58.28_PM.png",
-        "Screen Shot 2022-12-05 at 3.58.28 PM.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/a922248-Screen_Shot_2022-12-05_at_3.58.28_PM.png" />
 
 ## Renaming templates
 
 Hover over the ellipsis next to the desired alternate template and select "Rename". Remember to save your changes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c0e4aa6-Screen_Shot_2022-12-05_at_9.07.12_PM.png",
-        "Screen Shot 2022-12-05 at 9.07.12 PM.png",
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/c0e4aa6-Screen_Shot_2022-12-05_at_9.07.12_PM.png" />
 
 # How to create an alternate template
 
@@ -117,7 +86,7 @@ Hover over the ellipsis next to the desired alternate template and select "Renam
 
 1. Click "Add Attribute" located near the screen's bottom.
 2. Choose the desired attributes.
-3. Define your country criteria and save.  
+3. Define your country criteria and save.\
    Once saved, your segment is active, and the alternate template is ready for deployment.
 
 # How to upload a PDF attachment
