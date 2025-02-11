@@ -21,42 +21,26 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Active Recurly account with administrative access.
-- Basic understanding of transaction processes and payment gateway functions.
+* Active Recurly account with administrative access.
+* Basic understanding of transaction processes and payment gateway functions.
 
 ### Limitations
 
-- Inability to reactivate voided transactions.
-- Limitations on issuing partial refunds for unsettled transactions.
-- Dependence on third-party gateways for transaction settlement times and fraud checks.
+* Inability to reactivate voided transactions.
+* Limitations on issuing partial refunds for unsettled transactions.
+* Dependence on third-party gateways for transaction settlement times and fraud checks.
 
 # Definition
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e75403-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="70% " border={true} src="https://files.readme.io/1e75403-image.png" />
 
 The Transactions Dashboard in Recurly provides a comprehensive overview of all financial transactions processed through the platform. It includes features for searching transactions, understanding various transaction types, managing refunds and voids, and performing fraud checks, all designed to streamline the financial management of customer accounts.
 
 # Key benefits
 
-- **Comprehensive transaction search**: Easily locate transactions using a wide range of criteria, from customer information to transaction IDs, enhancing tracking efficiency.
-- **Streamlined refund and void processes**: Simplify the handling of unsettled and settled transactions, with intuitive options for voids, full, and partial refunds.
-- **Enhanced fraud management**: Facilitate safer transactions with built-in features for fraud checks, supplemented by integration with third-party fraud prevention services.
+* **Comprehensive transaction search**: Easily locate transactions using a wide range of criteria, from customer information to transaction IDs, enhancing tracking efficiency.
+* **Streamlined refund and void processes**: Simplify the handling of unsettled and settled transactions, with intuitive options for voids, full, and partial refunds.
+* **Enhanced fraud management**: Facilitate safer transactions with built-in features for fraud checks, supplemented by integration with third-party fraud prevention services.
 
 # Key details
 
@@ -94,17 +78,17 @@ This table outlines possible statuses a transaction can have, offering insights 
 
 Finding a specific transaction in Recurly is simple and flexible, thanks to a wide range of search fields available. 
 
-- **Account Code**: Locate transactions tied to a specific Recurly account code.
-- **Company Name**: Search for transactions associated with a company's name.
-- **First Name**: Find transactions by the customer's first name.
-- **Last Name**: Search transactions using the customer's last name.
-- **Email Address**: Locate transactions linked to a specific email address.
-- **Username**: Find transactions by the username associated with the customer's account.
-- **Amount**: Search for transactions based on the transaction amount.
-- **First Six Digits of the Credit Card**: Locate transactions using the first six digits of the customer's credit card. This is helpful for identifying the card issuer and type.
-- **Last Four Digits of the Credit Card**: Narrow down transactions with the last four digits of the credit card, offering a quick way to reference a specific payment method.
-- **Transaction Reference ID**: Search for transactions using the payment gateway's reference ID.
-- **Transaction Unique ID (UUID)**: Locate a transaction with its unique identifier, offering the most direct way to find a specific transaction.
+* **Account Code**: Locate transactions tied to a specific Recurly account code.
+* **Company Name**: Search for transactions associated with a company's name.
+* **First Name**: Find transactions by the customer's first name.
+* **Last Name**: Search transactions using the customer's last name.
+* **Email Address**: Locate transactions linked to a specific email address.
+* **Username**: Find transactions by the username associated with the customer's account.
+* **Amount**: Search for transactions based on the transaction amount.
+* **First Six Digits of the Credit Card**: Locate transactions using the first six digits of the customer's credit card. This is helpful for identifying the card issuer and type.
+* **Last Four Digits of the Credit Card**: Narrow down transactions with the last four digits of the credit card, offering a quick way to reference a specific payment method.
+* **Transaction Reference ID**: Search for transactions using the payment gateway's reference ID.
+* **Transaction Unique ID (UUID)**: Locate a transaction with its unique identifier, offering the most direct way to find a specific transaction.
 
 ## Creation of a transaction
 
@@ -126,14 +110,14 @@ This includes the transaction type (such as payment, refund, authorization, etc.
 
 This section helps you understand the current status of a transaction. If a transaction is declined, you can investigate further to uncover the reason behind the decline or other error-related statuses.
 
-1. **Select **the transaction in question to view its details.
+1. **Select** the transaction in question to view its details.
 2. **Look for** the gateway error codes or internal error codes provided. These codes offer insights into what went wrong.
 
 For a detailed explanation of each error code, please visit our developers' documentation at <a href="https://recurly.com/developers/pages/api-transaction-errors.html" target="_blank">Recurly API Transaction Errors</a>. This resource provides a comprehensive list of possible errors, helping you diagnose and address any issues more effectively.
 
 ### Fraud details
 
-This section provides information about the address verification checks performed by the payment gateway.  
+This section provides information about the address verification checks performed by the payment gateway.\
 For Fraud Velocity Checks and additional fraud prevention measures, we recommend partnering with our third-party fraud providers. Please contact your Account Executive or Account Manager for more information.
 
 ## Settling transactions
@@ -154,10 +138,10 @@ Refunds are always issued to the original payment method (credit card or bank ac
 
 To refund or void a transaction or invoice:
 
-1. **Open **the customer's account and select the desired transaction in the Transactions section or the invoice in the Invoices section.
-2. For transactions, **proceed **to the Transaction Details page and click **Refund Transaction**. For invoices, go to the Invoice Details page and click **Refund Invoice**.
-3. **Choose **the specific charge line items for refund, with options to prorate subscription charges or select specific quantities. For custom refund amounts, **click **"Refund a partial item or specific amount?" ensuring the amount does not exceed the original transaction value. Unsettled transactions can only be fully refunded (voided).
-4. If the invoice includes credit line items and you're doing a partial refund, **choose **to return credit to the account first and then create a transaction for any remaining amount, or **opt **for "Transaction first" to issue money back to the customer before returning any credit. By default, refunds return credit to the account first. Change this preference using the radio buttons at the top of the page.
+1. **Open** the customer's account and select the desired transaction in the Transactions section or the invoice in the Invoices section.
+2. For transactions, **proceed** to the Transaction Details page and click **Refund Transaction**. For invoices, go to the Invoice Details page and click **Refund Invoice**.
+3. **Choose** the specific charge line items for refund, with options to prorate subscription charges or select specific quantities. For custom refund amounts, **click** "Refund a partial item or specific amount?" ensuring the amount does not exceed the original transaction value. Unsettled transactions can only be fully refunded (voided).
+4. If the invoice includes credit line items and you're doing a partial refund, **choose** to return credit to the account first and then create a transaction for any remaining amount, or **opt** for "Transaction first" to issue money back to the customer before returning any credit. By default, refunds return credit to the account first. Change this preference using the radio buttons at the top of the page.
 5. **Click Preview Refund** to review the refund details, including discounts, taxes, and credit being returned.
-6. To complete the refund, **click Refund Charges**. This action will generate a refund invoice and transaction.  
+6. To complete the refund, **click Refund Charges**. This action will generate a refund invoice and transaction.\
    Learn more about invoices for voided and refunded transactions in our [Invoices](/docs/invoices) section.
