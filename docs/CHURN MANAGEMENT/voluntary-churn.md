@@ -17,15 +17,15 @@ next:
 
 ### Prerequisites
 
-- A system to capture and analyze customer feedback.
-- Integration with your subscription management or CRM platform.
-- A dedicated team or personnel to handle and address churn-related concerns.
+* A system to capture and analyze customer feedback.
+* Integration with your subscription management or CRM platform.
+* A dedicated team or personnel to handle and address churn-related concerns.
 
 ### Limitations
 
-- Not all reasons for voluntary churn can be addressed or prevented.
-- Requires a proactive approach and might not yield immediate results.
-- Some strategies might be more effective for specific customer segments.
+* Not all reasons for voluntary churn can be addressed or prevented.
+* Requires a proactive approach and might not yield immediate results.
+* Some strategies might be more effective for specific customer segments.
 
 # Definition
 
@@ -33,9 +33,9 @@ Voluntary churn refers to customers or subscribers who actively choose to end th
 
 # Key benefits
 
-- **Deeper customer understanding**: Gain insights into customer departure reasons to inform retention strategies.
-- **Retention enhancement**: Tackle common churn reasons to maintain a more stable customer base.
-- **Revenue predictability**: Minimize voluntary churn for more consistent revenue streams.
+* **Deeper customer understanding**: Gain insights into customer departure reasons to inform retention strategies.
+* **Retention enhancement**: Tackle common churn reasons to maintain a more stable customer base.
+* **Revenue predictability**: Minimize voluntary churn for more consistent revenue streams.
 
 # Key details
 
