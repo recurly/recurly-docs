@@ -13,6 +13,7 @@ next:
   description: ''
 ---
 ## Required Protected Fields
+
 The Transparent Post API requires certain fields to be protected from tampering. The protected field is digitally signed using your private key to ensure that the user does not tamper with the value. At a minimum, you must include the redirect URL and account code for every transparent post request.
 
 <dl>
@@ -23,6 +24,7 @@ The Transparent Post API requires certain fields to be protected from tampering.
 </dl>
 
 ### Hidden HTML Field: Protected Data
+
 The client library saves the protected fields to a hidden field in the HTML form. While the values of the hidden field may be visible to a user viewing the HTML source, the values are protected with a secure hash. The hidden field is hashed using your private key to ensure that the form was legitimately created on your site and the values have not been tampered with before submission.
 
 #### HTML Example
@@ -37,6 +39,7 @@ The client library saves the protected fields to a hidden field in the HTML form
 ```
 
 ## Transaction HTML Form Fields
+
 The following form fields may be submitted by your HTML form:
 
 ### Billing Information Fields
@@ -81,9 +84,11 @@ First name and last name are required fields, they will default to the name on t
 ```
 
 ## Endpoint URL
+
 The client libraries handle the URL details automatically. If you are building your own transparent post implementation, use the endpoint below, substituting `subdomain` with your Recurly account's subdomain:
 
 `POST` `https://api.recurly.com/transparent/[subdomain]/billing_info`
 
 ## More Info
+
 Please see the [Billing Info API](/api/billing-info) for more information. The behavior of the Billing Info Transparent Post API closely mirrors the behavior of the Billing Info API for updating an accounts' billing information.
