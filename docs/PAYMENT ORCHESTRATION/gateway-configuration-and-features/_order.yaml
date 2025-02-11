@@ -3,3 +3,4 @@
 - gateway-configuration
 - test
 - custom-gateway-routing-configuration
+- gateway-failover
