@@ -14,19 +14,7 @@ next:
 ---
 # Overview
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FjJsmG-2a95Y%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjJsmG-2a95Y&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FjJsmG-2a95Y%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=jJsmG-2a95Y",
-  "title": "How to Cancel a Subscription",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/jJsmG-2a95Y/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=jJsmG-2a95Y",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=jJsmG-2a95Y" title="How to Cancel a Subscription" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/jJsmG-2a95Y/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=jJsmG-2a95Y" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FjJsmG-2a95Y%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DjJsmG-2a95Y%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FjJsmG-2a95Y%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ### Required plan
 
@@ -42,9 +30,9 @@ When a customer elects to end their subscription at the next bill date or term e
 
 # Key benefits
 
-- **Empowered customer experience**: Offer cancellation choice, fostering trust and a positive brand interaction.
-- **Customizable subscription expiry**: Flexibility in setting subscription end dates—immediate, next bill, or term end.
-- **Automated revenue recovery**: Streamline expiration actions based on payment outcomes for efficient dunning management.
+* **Empowered customer experience**: Offer cancellation choice, fostering trust and a positive brand interaction.
+* **Customizable subscription expiry**: Flexibility in setting subscription end dates—immediate, next bill, or term end.
+* **Automated revenue recovery**: Streamline expiration actions based on payment outcomes for efficient dunning management.
 
 # Key details
 
@@ -54,37 +42,24 @@ Subscriptions often run through various states during their lifecycle. They can 
 
 When a subscription is **cancelled**, it remains active for the duration of the subscription period in a 'pre-expiry' state, which means the customer still has the liberty to reactivate it before it moves to the **expired** state and access to the service is terminated. Once a subscription is in the expired state, it cannot be reactivated; a new subscription has to be initiated. Here, the differentiation between 'canceling' and 'terminating' becomes crucial. While cancellation leads to an eventual expiration at a pre-set future date, termination results in an immediate expiration.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9ebba7b-2019-09-04_0922.png",
-        "2019-09-04_0922.png",
-        866
-      ],
-      "align": "center",
-      "caption": "Subscriptions can be cancelled at three different timeframes: immediately, next bill date, or term renewal."
-    }
-  ]
-}
-[/block]
-
+<Image title="2019-09-04_0922.png" alt={866} align="center" src="https://files.readme.io/9ebba7b-2019-09-04_0922.png">
+  Subscriptions can be cancelled at three different timeframes: immediately, next bill date, or term renewal.
+</Image>
 
 # Cancel a Subscription
 
 **a. Admin console:** 
 
-- Navigate to the desired account.
-- Click on the subscription name.
-- From the **Subscription Actions** dropdown, choose **Cancel Subscription**.
-- Decide the cancellation type: immediate, at the next billing cycle, or at the end of the term.
+* Navigate to the desired account.
+* Click on the subscription name.
+* From the **Subscription Actions** dropdown, choose **Cancel Subscription**.
+* Decide the cancellation type: immediate, at the next billing cycle, or at the end of the term.
 
 **b. Hosted account management:** 
 
-- Navigate to the **Hosted Page Settings** under Configuration in the Admin Console.  
-- Enable the **Cancel subscriptions** option under Customer Options.  
-- The customer, upon accessing their Hosted Account, will have the option to cancel.
+* Navigate to the **Hosted Page Settings** under Configuration in the Admin Console.  
+* Enable the **Cancel subscriptions** option under Customer Options.  
+* The customer, upon accessing their Hosted Account, will have the option to cancel.
 
 # Reactivate a subscription
 
@@ -92,22 +67,22 @@ When a subscription is **cancelled**, it remains active for the duration of the 
 
 **a. Admin console:** 
 
-- Go to the desired account.  
-- Select the canceled subscription's name.  
-- Use the **Subscription Actions** dropdown and opt for **Reactivate Subscription**.
+* Go to the desired account.  
+* Select the canceled subscription's name.  
+* Use the **Subscription Actions** dropdown and opt for **Reactivate Subscription**.
 
 **b. Hosted account management:** 
 
-- If the cancellation option was provided to the customer, they'll see a reactivation option until the subscription expires.
+* If the cancellation option was provided to the customer, they'll see a reactivation option until the subscription expires.
 
 # Terminate a subscription
 
 **a. Admin console:** 
 
-- Access the desired account.  
-- Click on the subscription name.  
-- From the **Subscription Actions** dropdown, opt for **Cancel Subscription**.  
-- On the following page, select **Terminate Subscription**.
+* Access the desired account.  
+* Click on the subscription name.  
+* From the **Subscription Actions** dropdown, opt for **Cancel Subscription**.  
+* On the following page, select **Terminate Subscription**.
 
 **b. API:**
 
