@@ -21,12 +21,12 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Active Recurly account with necessary administrative permissions.
-- Basic understanding of Recurly's subscription models and billing cycles.
+* Active Recurly account with necessary administrative permissions.
+* Basic understanding of Recurly's subscription models and billing cycles.
 
 ### Limitations
 
-- Inability to reactivate expired subscriptions.
+* Inability to reactivate expired subscriptions.
 
 # Definition
 
@@ -34,29 +34,13 @@ The Subscription Dashboard in Recurly is a centralized platform for managing cus
 
 # Key benefits
 
-- **Flexible subscription management**: Easily create and modify customer subscriptions, offering versatility with options to upgrade, downgrade, or change billing methods.
-- **Efficient renewal and postponement tools**: Seamlessly manage subscription renewals and implement postponements, catering to diverse customer needs and scenarios.
-- **Clarity in subscription lifecycle**: Gain a clear understanding of the subscription lifecycle stages, from active and paused states to cancellation and expiration, ensuring accurate customer account management.
+* **Flexible subscription management**: Easily create and modify customer subscriptions, offering versatility with options to upgrade, downgrade, or change billing methods.
+* **Efficient renewal and postponement tools**: Seamlessly manage subscription renewals and implement postponements, catering to diverse customer needs and scenarios.
+* **Clarity in subscription lifecycle**: Gain a clear understanding of the subscription lifecycle stages, from active and paused states to cancellation and expiration, ensuring accurate customer account management.
 
 # Key details
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/862f5f4-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/862f5f4-image.png" />
 
 This dashboard provides an overview of your subscriptions, providing many ways to organize, search and examine subscriptions. 
 
