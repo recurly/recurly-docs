@@ -33,8 +33,8 @@ By integrating GoCardless with your Recurly account, you can enhance your busine
 
 # Use Cases
 
-- International Transactions: Easily conduct transactions across borders leveraging various global direct debit schemes supported by GoCardless.
-- Recurly Subscriptions: Seamlessly integrate Recurly’s subscription platform with GoCardless for straightforward BACS transactions.
+* International Transactions: Easily conduct transactions across borders leveraging various global direct debit schemes supported by GoCardless.
+* Recurly Subscriptions: Seamlessly integrate Recurly’s subscription platform with GoCardless for straightforward BACS transactions.
 
 # Checkout flow
 
