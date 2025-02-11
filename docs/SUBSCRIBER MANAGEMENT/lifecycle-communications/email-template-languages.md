@@ -25,11 +25,11 @@ Email Language Support (30) in Recurly pertains to the feature where merchants a
 
 # Key benefits
 
-- **Global reach with a local touch:** Engage customers worldwide, addressing them in their native languages.
-- **Enhanced customer experience:** Elevate the user experience by ensuring clearer understanding and minimized communication barriers.
-- **Increased engagement rates:** Emails in native languages are more likely to be opened and read, boosting interaction.
-- **Streamlined communications:** Avoid confusion and misunderstandings that can arise from language barriers.
-- **Flexible configuration:** Tailor email language settings as per customer or business needs, ensuring optimal results.
+* **Global reach with a local touch:** Engage customers worldwide, addressing them in their native languages.
+* **Enhanced customer experience:** Elevate the user experience by ensuring clearer understanding and minimized communication barriers.
+* **Increased engagement rates:** Emails in native languages are more likely to be opened and read, boosting interaction.
+* **Streamlined communications:** Avoid confusion and misunderstandings that can arise from language barriers.
+* **Flexible configuration:** Tailor email language settings as per customer or business needs, ensuring optimal results.
 
 # Key details
 
@@ -37,11 +37,11 @@ Recurly, appreciating the global nature of business, brings forth an extensive l
 
 ### **Supported languages & locales**
 
-A locale isn't just about language; it also encompasses specific regional conventions for dates, times, and numbers. With Recurly's support for 30 locales, merchants have a broad spectrum to ensure they're effectively communicating with their international clientele.  
+A locale isn't just about language; it also encompasses specific regional conventions for dates, times, and numbers. With Recurly's support for 30 locales, merchants have a broad spectrum to ensure they're effectively communicating with their international clientele.\
 For instance:
 
-- English (United States) or `en-US` follows the `mm/dd/yyyy` format for dates.
-- English (United Kingdom) or `en-GB` adopts the `dd/mm/yyyy` format.
+* English (United States) or `en-US` follows the `mm/dd/yyyy` format for dates.
+* English (United Kingdom) or `en-GB` adopts the `dd/mm/yyyy` format.
 
 | Language                 | API Value |
 | :----------------------- | :-------- |
@@ -86,7 +86,7 @@ An integral aspect of this feature is setting the language preference for indivi
 
 ### Email translations & parameters by language
 
-While Recurly offers default email templates in every supported language, it allows for considerable customization. Merchants can edit templates to ensure their content aligns with regional differences within a language. It's crucial to remember that certain elements, like the names of plans or a company's name, won't be automatically translated.  
+While Recurly offers default email templates in every supported language, it allows for considerable customization. Merchants can edit templates to ensure their content aligns with regional differences within a language. It's crucial to remember that certain elements, like the names of plans or a company's name, won't be automatically translated.\
 Furthermore, Recurly ensures that specific email parameters align with a country's conventions. For example, currency symbols might appear before or after the amount based on regional customs.
 
 ### PDF Invoice Attachments
@@ -96,27 +96,27 @@ Recurly's attention to detail shines with its feature where attached PDF invoice
 ## **Step-by-step Process to Configure Email Language Support**
 
 1. **Navigating to the Configuration:**
-   - Log into your Recurly dashboard.
-   - Proceed to Configuration > Email Templates > Configure Languages.
+   * Log into your Recurly dashboard.
+   * Proceed to Configuration > Email Templates > Configure Languages.
 2. **Enabling a New Language:**
-   - On the "Configure Languages" page, you'll notice options to enable new languages for your site. Select the desired language.
-   - With the language enabled, it's now possible to set it for individual customers, ensuring they receive emails in this specific language.
+   * On the "Configure Languages" page, you'll notice options to enable new languages for your site. Select the desired language.
+   * With the language enabled, it's now possible to set it for individual customers, ensuring they receive emails in this specific language.
 3. **Setting the Default Language:**
-   - Within the same "Configure Languages" page, you have the option to set a default language for your site.
-   - Remember, the default language is crucial as it's used for customers who haven't specified any language preference.
+   * Within the same "Configure Languages" page, you have the option to set a default language for your site.
+   * Remember, the default language is crucial as it's used for customers who haven't specified any language preference.
 4. **Disabling an Existing Language:**
-   - On the "Configure Languages" page, find the option to disable a previously set language. 
-   - Note: Customers set to a now-disabled language will revert to receiving emails in the site's default language.
+   * On the "Configure Languages" page, find the option to disable a previously set language. 
+   * Note: Customers set to a now-disabled language will revert to receiving emails in the site's default language.
 5. **Customizing Email Templates for Different Languages:**
-   - Visit the "Email Templates" page.
-   - Here, you can edit email templates for different languages by selecting the desired language from the language selector.
-   - Make sure to preview and send test emails to ensure that the templates align with your expectations before going live.
+   * Visit the "Email Templates" page.
+   * Here, you can edit email templates for different languages by selecting the desired language from the language selector.
+   * Make sure to preview and send test emails to ensure that the templates align with your expectations before going live.
 6. **Adjusting Customer Language Preferences:**
-   - For individual customer preferences, you can set their email language through the Recurly UI, API, Hosted Payment Pages, or Hosted Account Management Pages.
-   - Always ensure the language set is one that's enabled on your site to avoid any validation errors.
+   * For individual customer preferences, you can set their email language through the Recurly UI, API, Hosted Payment Pages, or Hosted Account Management Pages.
+   * Always ensure the language set is one that's enabled on your site to avoid any validation errors.
 7. **Checking & Editing Email Translations and Parameters:**
 
-- Periodically review and, if necessary, customize email templates to make them region-specific within a language.
-- Also, familiarize yourself with how Recurly adjusts email parameters based on regional conventions to avoid miscommunication.
+* Periodically review and, if necessary, customize email templates to make them region-specific within a language.
+* Also, familiarize yourself with how Recurly adjusts email parameters based on regional conventions to avoid miscommunication.
 
 By configuring and harnessing the power of Email Language Support, businesses can achieve a more global reach while maintaining a local touch.
