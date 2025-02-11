@@ -21,20 +21,20 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Use cases
 
-- E-commerce platforms looking to enhance user experience with a swift and secure payment method.
-- Subscription services aiming to streamline the payment process for their customers.
+* E-commerce platforms looking to enhance user experience with a swift and secure payment method.
+* Subscription services aiming to streamline the payment process for their customers.
 
 ### Prerequisites & supported gateways
 
 To integrate Apple Pay on the Web, ensure you have:
 
-- An Apple Developer's Account and a verified domain.
-- Recurly.js v4 or <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a>.
-- Recurly currently supports Apple Pay transactions through [Adyen](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe), [Braintree](https://docs.recurly.com/docs/braintree), [Vantiv](https://docs.recurly.com/docs/vantiv), [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), Chase [Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital), and [Cybersource](https://docs.recurly.com/docs/cybersource) as gateways.
+* An Apple Developer's Account and a verified domain.
+* Recurly.js v4 or <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a>.
+* Recurly currently supports Apple Pay transactions through [Adyen](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe), [Braintree](https://docs.recurly.com/docs/braintree), [Vantiv](https://docs.recurly.com/docs/vantiv), [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), Chase [Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital), and [Cybersource](https://docs.recurly.com/docs/cybersource) as gateways.
 
 ### Limitations
 
-- Not available on Recurly <a href="https://docs.recurly.com/docs/hosted-payment-pages" target="_blank">Hosted Payment Pages (HPP)</a>. 
+* Not available on Recurly <a href="https://docs.recurly.com/docs/hosted-payment-pages" target="_blank">Hosted Payment Pages (HPP)</a>. 
 
 # Description
 
@@ -46,8 +46,8 @@ Recurly supports Apple Pay on the Web, allowing a smooth and secure payment proc
 
 Once you have completed the prerequisites described above, contact Recurly Support to initiate the following actions:
 
-- Enable the Apple Pay feature flags for your site and gateway.
-- Generate Certificate Signing Request files (CSRs), which will be used to create the necessary Apple Pay Payment and Merchant Identity Certificates. You **must** use the CSRs provided by Recurly for this integration to function correctly. Since each CSR is unique to a merchant account, allow several business days for the generation of the appropriate CSRs.
+* Enable the Apple Pay feature flags for your site and gateway.
+* Generate Certificate Signing Request files (CSRs), which will be used to create the necessary Apple Pay Payment and Merchant Identity Certificates. You **must** use the CSRs provided by Recurly for this integration to function correctly. Since each CSR is unique to a merchant account, allow several business days for the generation of the appropriate CSRs.
 
 # Configuration in Apple and Recurly
 
@@ -56,25 +56,25 @@ After receiving the necessary CSRs from Recurly Support, proceed with the follow
 1. Navigate to the Apple Developer’s and request a “Apple Pay Certificate”.  
 2. Choose the correct Merchant ID on the subsequent page.
 3. Upload the CSR file labeled “payment.csr”.
-4. Repeat the above steps, but select “Merchant Identity Certificate” and use the “merchant_id.csr” file in the second iteration.
+4. Repeat the above steps, but select “Merchant Identity Certificate” and use the “merchant\_id.csr” file in the second iteration.
 
-For your reference, the _Merchant Identity Certificate_ authenticates your merchant sessions with Apple Pay servers, while the _Apple Pay Certificate_ (also known as the Payment Processing Certificate) facilitates the submission and processing of transactions on your behalf through Apple Pay.
+For your reference, the *Merchant Identity Certificate* authenticates your merchant sessions with Apple Pay servers, while the *Apple Pay Certificate* (also known as the Payment Processing Certificate) facilitates the submission and processing of transactions on your behalf through Apple Pay.
 
 After generating the necessary certificates, upload them to your Recurly site and complete the remaining configuration fields as detailed below:
 
 1. Open the Recurly console and select Configuration > Apple Pay to start the setup process.
 
-2. Enter the verified domain of your store in the format: `www.DOMAIN.com`. Important Note: After generating the CSR and uploading it to your site, avoid using the domain name listed under the cert_UID field. This is a common mistake among new merchants setting up Apple Pay; ensure you use the actual domain of your store.
+2. Enter the verified domain of your store in the format: `www.DOMAIN.com`. Important Note: After generating the CSR and uploading it to your site, avoid using the domain name listed under the cert\_UID field. This is a common mistake among new merchants setting up Apple Pay; ensure you use the actual domain of your store.
 
 3. Input the store name as it should appear to customers during the checkout process. This name will be visible to your customers and should accurately reflect your store's branding.
 
 4. Provide the URL that customers can visit to update their billing information. This should be formatted like `https://www.DOMAIN.com/login`. Make sure this link directs your customers to the correct page where they can easily access and update their billing details.
 
-   - If you are utilizing the Hosted Pages Account Login, Recurly can automatically determine the management URL for you.
+   * If you are utilizing the Hosted Pages Account Login, Recurly can automatically determine the management URL for you.
 
 5. Upload the certificates to the corresponding sections as outlined below:
-   - Merchant Identity Certificate: Merchant ID Certificate section.
-   - Apple Pay Certificate: Payment Processing Certificate section.
+   * Merchant Identity Certificate: Merchant ID Certificate section.
+   * Apple Pay Certificate: Payment Processing Certificate section.
 
 6. **Bypass the “Payment Processing Private Key” and “Merchant ID Private Key” sections.** Recurly will handle these entries.
 
@@ -105,10 +105,10 @@ Apple Pay on the Web is a payment method that allows customers to make secure an
 
 Before integrating Apple Pay on the Web with Recurly, you need to:
 
-- Create an Apple Merchant ID and sign up for an Apple Developer's Account.
-- Verify the domain where your checkout page will reside.
-- Upgrade to Recurly.js v4.
-- Add a supported payment gateway to your Recurly site.
+* Create an Apple Merchant ID and sign up for an Apple Developer's Account.
+* Verify the domain where your checkout page will reside.
+* Upgrade to Recurly.js v4.
+* Add a supported payment gateway to your Recurly site.
 
 #### 3. How do I enable Apple Pay on the Web for my website?
 
