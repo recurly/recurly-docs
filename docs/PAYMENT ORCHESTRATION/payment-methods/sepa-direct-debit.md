@@ -25,8 +25,8 @@ Recurly currently supports SEPA transactions through [Adyen ](https://docs.recur
 
 ### Limitations
 
-- **Currency:** SEPA exclusively processes transactions denominated in EUR.
-- **Customer notification: **Every time a debit occurs, merchants are required to notify their customers — a function automatically handled by Recurly through email notifications.
+* **Currency:** SEPA exclusively processes transactions denominated in EUR.
+* **Customer notification:** Every time a debit occurs, merchants are required to notify their customers — a function automatically handled by Recurly through email notifications.
 
 # Description
 
@@ -36,8 +36,8 @@ Consistent with the SEPA Direct Debit rulebook, merchants are mandated to notify
 
 ### Use cases
 
-- Recurring Subscriptions: Easily handle subscriptions with recurring payments in EUR.
-- One-off Payments: Securely process single payments leveraging the SEPA Direct Debit scheme.
+* Recurring Subscriptions: Easily handle subscriptions with recurring payments in EUR.
+* One-off Payments: Securely process single payments leveraging the SEPA Direct Debit scheme.
 
 # Checkout flow
 
@@ -45,4 +45,4 @@ Consistent with the SEPA Direct Debit rulebook, merchants are mandated to notify
 
 Collect essential customer details, including their name and bank account number in IBAN format, during the checkout process to facilitate SEPA Direct Debit transactions.
 
-Recurring SEPA payments can be leveraged even when the first transaction is handled through a different payment method that _does not_ support recurring billing, such as iDeal and Sofort.
+Recurring SEPA payments can be leveraged even when the first transaction is handled through a different payment method that *does not* support recurring billing, such as iDeal and Sofort.
