@@ -18,9 +18,9 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Moderate understanding of JavaScript.
-- An active Recurly account.
-- Familiarity with payment gateway integrations.
+* Moderate understanding of JavaScript.
+* An active Recurly account.
+* Familiarity with payment gateway integrations.
 
 # Definition
 
@@ -28,10 +28,10 @@ Recurly.js is a browser JavaScript library designed to securely handle your cust
 
 # Key benefits
 
-- **Security**: Reduces PCI scope, reducing risks associated with handling sensitive payment information.
-- **Customizability**: Offers a tailored customer experience to match your brand's look and feel.
-- **Flexibility**: Open-source nature allows for community-driven improvements and adaptability.
-- **Integration**: Easily integrates with other Recurly features and third-party applications.
+* **Security**: Reduces PCI scope, reducing risks associated with handling sensitive payment information.
+* **Customizability**: Offers a tailored customer experience to match your brand's look and feel.
+* **Flexibility**: Open-source nature allows for community-driven improvements and adaptability.
+* **Integration**: Easily integrates with other Recurly features and third-party applications.
 
 # Key details
 
