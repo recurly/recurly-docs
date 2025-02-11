@@ -24,25 +24,26 @@ This timing complexity is the main reason we let each object sync by itself and 
 
 In general the sync object order is:
 
-  * Plans
-  * Addons
-  * Recurly Accounts/Accounts
-  * Subscriptions
-  * Invoices
-  * Line Items
-  * Transactions
+* Plans
+* Addons
+* Recurly Accounts/Accounts
+* Subscriptions
+* Invoices
+* Line Items
+* Transactions
 
 Each of those objects will sync and link to each other if the related record is there. If the related record is not yet present in Salesforce, there is a separate batch job for linking that occurs after the sync job completes to ensure all the records are properly linked.
 
 ### What code gets used? What are the resources that are required?
 
-For the best answer to this question, please reach out to support@recurly.com.
+For the best answer to this question, please reach out to [support@recurly.com](mailto:support@recurly.com).
 
 ### Which data can be synced back to Recurly?
 
 The following objects are synced back to Recurly (provided you have enabled the bidirectional sync on the Recurly Admin tab):
 
 #### Recurly Accounts (creation and edit)
+
 * Account Code (this is the only required field on Recurly account)
 * Company
 * First Name
@@ -52,30 +53,15 @@ The following objects are synced back to Recurly (provided you have enabled the 
 * CC Email
 * VAT Number
 * ALL Account Address fields
-[block:callout]
-{
-  "type": "warning",
-  "body": "Reminder: Using the Edit button on the Recurly Account will not enable you to edit the \"Billing Information\" fields"
-}
-[/block]
+
+> 🚧 Reminder: Using the Edit button on the Recurly Account will not enable you to edit the "Billing Information" fields
+
 #### Billing Information
 
 This data can be synced by using the Add Payment Information button on a Recurly Account.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/32b8ce5-Screen_Shot_2017-07-31_at_10.32.45_AM.png",
-        "Screen Shot 2017-07-31 at 10.32.45 AM.png",
-        1241,
-        410,
-        "#f2f2fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1241](https://files.readme.io/32b8ce5-Screen_Shot_2017-07-31_at_10.32.45_AM.png "Screen Shot 2017-07-31 at 10.32.45 AM.png")
+
 * First Name
 * Last Name
 * Credit Card Number
@@ -86,30 +72,15 @@ This data can be synced by using the Add Payment Information button on a Recurly
 * State
 * ZIP
 * Country
-[block:callout]
-{
-  "type": "info",
-  "body": "This field will transfer credit card information to Recurly in a PCI-compliant fashion using [Recurly.JS](https://recurly.com/recurlyjs/)"
-}
-[/block]
+
+> 📘 This field will transfer credit card information to Recurly in a PCI-compliant fashion using [Recurly.JS](https://recurly.com/recurlyjs/)
+
 #### Recurly Subscriptions
 
 The only way to sync Recurly Subscription information from Salesforce to Recurly is to use the Manage Subscription Plan button. Clicking the Edit button on the Subscription record will not send information to Recurly.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/92512b2-Screen_Shot_2017-07-31_at_10.36.42_AM.png",
-        "Screen Shot 2017-07-31 at 10.36.42 AM.png",
-        1242,
-        281,
-        "#f2f2fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![1242](https://files.readme.io/92512b2-Screen_Shot_2017-07-31_at_10.36.42_AM.png "Screen Shot 2017-07-31 at 10.36.42 AM.png")
+
 * Plan
 * Currency
 * Price
@@ -123,7 +94,7 @@ Yes, you can! Whatever currency settings you have for your org is available on t
 
 ### Which permissions are required for users of the integration?
 
-Users will need access to a Recurly permission set. While it is technically possible to assign the necessary object and code level permissions, we strongly recommend using one of the permission sets that are provided to avoid any issues with data syncing.  If you do need a custom set of permissions, please contact support@recurly.com with the functionality your users need and we can help define what permissions they need.
+Users will need access to a Recurly permission set. While it is technically possible to assign the necessary object and code level permissions, we strongly recommend using one of the permission sets that are provided to avoid any issues with data syncing.  If you do need a custom set of permissions, please contact [support@recurly.com](mailto:support@recurly.com) with the functionality your users need and we can help define what permissions they need.
 
 It's important to note that a permission set will not be assigned to a standard Salesforce admin when the package is initially installed. You should ensure that you assign the Recurly Admin permission set to any user that will be activating or deactivating the sync, even if that person is already a system administrator.
 
