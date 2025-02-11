@@ -45,8 +45,6 @@ dt>CPF</dt>
   <dd>Essentially Brazil's version of a SSN. Used for processing PrimieroPay transactions.</dd>
 </dl>
 
-
-
 ### D
 
 <dl>
