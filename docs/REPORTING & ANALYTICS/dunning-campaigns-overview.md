@@ -18,7 +18,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+* Users must have Analytics user role permission.
 
 # Definition
 
