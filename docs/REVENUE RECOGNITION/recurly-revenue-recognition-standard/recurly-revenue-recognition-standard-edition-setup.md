@@ -20,22 +20,7 @@ next:
 
 To ensure accurate revenue recognition, it is important to apply the appropriate rules to each of the products you offer, such as plans, items, add-ons, and set-up fees. In the Recurly App, you can easily configure the way you want to recognize revenue and specify the liability and revenue accounts to be used. These fields are available for all transactions, providing flexibility and customization.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b55e42a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/b55e42a-image.png" />
 
 By selecting the right rules for each product, you can align revenue recognition with your business requirements. If certain products deviate from the default settings, you can easily modify the Performance Obligation (POB) or account codes to reflect the desired configurations.
 
@@ -43,9 +28,9 @@ By selecting the right rules for each product, you can align revenue recognition
 
 Setting up the initial configuration for Recurly's revenue recognition is essential to ensure accurate revenue recognition data. Follow these steps to successfully set up your configuration:
 
-**Step 1: ** Create accounting codes & determine the defaults.  
-**Step 2: ** Determine performance obligations & accounting codes for products.  
-**Step 3: ** Test and Validate.
+**Step 1:** Create accounting codes & determine the defaults.\
+**Step 2:** Determine performance obligations & accounting codes for products.\
+**Step 3:** Test and Validate.
 
 ## Step 1: Create accounting codes & determining the defaults
 
@@ -61,22 +46,7 @@ On the General Ledger Accounts page, click the "New Accounting Code" button to c
 
 ### 3. Setting up the accounting code type
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6110df3-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/6110df3-image.png" />
 
 Select whether the accounting code is for Revenue or Deferred Revenue. This selection determines the type of revenue that will be tracked in your accounting system.
 
@@ -92,22 +62,7 @@ From the Accounting Codes page, you can also edit existing accounting codes. To 
 
 On the Business entities page, select from your list of accounting codes to set the default revenue and liability account codes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6aa2097-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/6aa2097-image.png" />
 
 ## Step 2: Applying performance obligations and accounting codes to products
 
@@ -115,22 +70,7 @@ After setting up the accounting codes, the next step is to apply the appropriate
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/df3ad7a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/df3ad7a-image.png" />
 
 <br />
 
