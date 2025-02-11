@@ -10,13 +10,12 @@ metadata:
 next:
   description: ''
 ---
-[block:callout]
-{
-  "type": "success",
-  "title": "Try our new Usage-Based Billing!",
-  "body": "This Metered Billing page has been deprecated.\n\nThere is a new, better way to handle usage-based billing. Read about it <a href=\"https://docs.recurly.com/docs/usage-based-billing\">here.</a>"
-}
-[/block]
+> 👍 Try our new Usage-Based Billing!
+>
+> This Metered Billing page has been deprecated.
+>
+> There is a new, better way to handle usage-based billing. Read about it <a href="https://docs.recurly.com/docs/usage-based-billing">here.</a>
+
 Most metered billing plans charge upfront for the monthly costs, then  look back historically for any overage fees. This means that if you sign up for new service on the first day of June, you will immediately pay the monthly base fee for June. On the first day of July, you will receive a bill for July's monthly base fee plus any usage fees from June. In other words, you are prepaying the base fee and you pay the usage fees in arrears.
 
 Traditionally, it has taken a tremendous effort to build billing systems for usage based models. Quite often, a company will bill its customers so that all the billing periods start and stop on the same day. This leads to an uneven flow of revenue and less flexibility with respect to pricing.
