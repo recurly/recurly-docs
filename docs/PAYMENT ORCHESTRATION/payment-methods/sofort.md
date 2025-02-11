@@ -17,9 +17,9 @@ next:
 # Overview
 
 > 📘 Sofort has been deprecated and migrated to Klarna Debit Risk as of Sept 30th, 2024.
-> 
+>
 > Ensure you are passing the customer's country in your integrations to Recurly.js before this date. No other changes are necessary.
-> 
+>
 > As a result of this deprecation, only merchants who had existing Sofort accounts with Adyen can continue to use this product. New merchant signups are not supported.
 
 ### Required plan
@@ -28,15 +28,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-- Recurly currently supports Sofort (Klarna Debit Risk) transactions through [Adyen](https://docs.recurly.com/docs/adyen).
+* Recurly currently supports Sofort (Klarna Debit Risk) transactions through [Adyen](https://docs.recurly.com/docs/adyen).
 
-- To incorporate Sofort (Klarna Debit Risk) into your payment method lineup, initiate with setting up the Adyen gateway, followed by configuring SEPA for recurring payments and enabling the necessary currencies in both Recurly and Adyen settings.
+* To incorporate Sofort (Klarna Debit Risk) into your payment method lineup, initiate with setting up the Adyen gateway, followed by configuring SEPA for recurring payments and enabling the necessary currencies in both Recurly and Adyen settings.
 
 ### Limitations
 
-- Free trials: Sofort (Klarna Debit Risk) cannot be employed for free trials; SEPA Direct Debit is recommended in such cases.
-- Recurly Checkout and Hosted Payment Pages: Sofort (Klarna Debit Risk) is incompatible with these pages. 
-- Additional limitations can be found [here](https://docs.recurly.com/docs/adyen#limitations).
+* Free trials: Sofort (Klarna Debit Risk) cannot be employed for free trials; SEPA Direct Debit is recommended in such cases.
+* Recurly Checkout and Hosted Payment Pages: Sofort (Klarna Debit Risk) is incompatible with these pages. 
+* Additional limitations can be found [here](https://docs.recurly.com/docs/adyen#limitations).
 
 # Description
 
@@ -46,8 +46,8 @@ It should be noted that while Sofort can facilitate the initial payment, recurri
 
 # Use cases
 
-- Initial Payments: Ideal for processing initial payments in subscriptions.
-- European Market: Sofort opens up avenues in major European markets like Germany, Austria, Switzerland, and Belgium.
+* Initial Payments: Ideal for processing initial payments in subscriptions.
+* European Market: Sofort opens up avenues in major European markets like Germany, Austria, Switzerland, and Belgium.
 
 # Checkout flow
 
