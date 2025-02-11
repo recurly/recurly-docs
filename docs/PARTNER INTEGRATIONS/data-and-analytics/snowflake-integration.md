@@ -24,11 +24,11 @@ This integration allows Recurly users to seamlessly export a comprehensive range
 
 # Key benefits
 
-- **Seamless data integration**: Enjoy effortless data transition from Recurly to your Snowflake account, with Recurly managing all intricate ETL processes, eliminating manual intervention, coding, or server management.
-- **Real-time insights**: Stay updated with fresh data through automatic hourly updates, ensuring your latest business metrics are always accessible.
-- **Unified data experience**: Merge your Recurly data seamlessly with other datasets in Snowflake for a holistic data analysis, leveraging Snowflake's robust capabilities.
-- **Enhanced reporting**: Utilize Snowflake's adaptability for custom reports and comprehensive analysis without any hassle.
-- **Cost and time efficiency**: Bypass traditional ETL pipelines or third-party intermediaries to streamline processes, saving both time and resources.
+* **Seamless data integration**: Enjoy effortless data transition from Recurly to your Snowflake account, with Recurly managing all intricate ETL processes, eliminating manual intervention, coding, or server management.
+* **Real-time insights**: Stay updated with fresh data through automatic hourly updates, ensuring your latest business metrics are always accessible.
+* **Unified data experience**: Merge your Recurly data seamlessly with other datasets in Snowflake for a holistic data analysis, leveraging Snowflake's robust capabilities.
+* **Enhanced reporting**: Utilize Snowflake's adaptability for custom reports and comprehensive analysis without any hassle.
+* **Cost and time efficiency**: Bypass traditional ETL pipelines or third-party intermediaries to streamline processes, saving both time and resources.
 
 # Dive into Snowflake
 
@@ -58,10 +58,10 @@ Recurly integrates with Snowflake to share merchant data directly. If you're a R
 
 **A:** The schema mirrors the <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> with a few exceptions:
 
-- All timestamps are in UTC.
-- Custom fields appear as a JSON object in the `custom_fields` column instead of separate columns.
-- Additional status columns on accounts and subscriptions mirror the export settings available in the UI.
-- An `export_id` column ensures data integrity in the integration.
+* All timestamps are in UTC.
+* Custom fields appear as a JSON object in the `custom_fields` column instead of separate columns.
+* Additional status columns on accounts and subscriptions mirror the export settings available in the UI.
+* An `export_id` column ensures data integrity in the integration.
 
 **Q: What data is included?**
 
