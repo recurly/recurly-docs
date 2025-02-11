@@ -19,20 +19,15 @@ next:
 
 Venture into our concise video overview and unveil the power of Recurly's Revenue Recognition product. Crafted for enterprising merchants, we're poised to reshape your financial reporting and drive revenue growth. Jump in, and let's magnify your monetary momentum!
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://fast.wistia.net/embed/iframe/u36vw1exuu?videoFoam=true",
-  "title": "iframe",
-  "provider": "fast.wistia.net",
-  "href": "https://fast.wistia.net/embed/iframe/u36vw1exuu?videoFoam=true",
-  "typeOfEmbed": "iframe",
-  "height": "580px",
-  "width": "800px",
-  "iframe": true
-}
-[/block]
-
+<iframe
+  src="https://fast.wistia.net/embed/iframe/u36vw1exuu?videoFoam=true"
+  width="800"
+  height="580"
+  frameborder="0"
+  allow="autoplay; fullscreen"
+  allowfullscreen
+>
+</iframe>
 
 ### Plan availability
 
@@ -80,22 +75,19 @@ Before we dive into the specifics, let's highlight the benefits of using Recurly
 
 Recurly has designed a suite of Revenue Recognition products to cater to diverse business needs. Here's a closer look at each offering:
 
-1. **Recurly Revenue Recognition Advanced**: 
+1. **Recurly Revenue Recognition Advanced**:  
+   - **Overview**: A premium offering designed for businesses with more complex revenue recognition needs.  
+   - **Availability**: Exclusively tailored for our Professional and Elite plans, ensuring advanced functionalities for larger or more intricate operations.  
+   - **Features**: Includes advanced tools for detailed revenue tracking, in-depth analytics, and more granular financial control.  
 
-- **Overview**: A premium offering designed for businesses with more complex revenue recognition needs.
-- **Availability**: Exclusively tailored for our Professional and Elite plans, ensuring advanced functionalities for larger or more intricate operations.
-- **Features**: Includes advanced tools for detailed revenue tracking, in-depth analytics, and more granular financial control. 
+2. **Recurly Revenue Recognition Standard**:  
+   - **Overview**: This is a foundational solution suitable for businesses of all sizes.  
+   - **Integration**: It can be seamlessly integrated with any Recurly subscription management plan.  
+   - **Features**: Provides essential tools for automating revenue recognition, ensuring compliance, and simplifying financial reporting.
 
-2. **Recurly Revenue Recognition Standard**: 
-
-- **Overview**: This is a foundational solution suitable for businesses of all sizes.
-- **Integration**: It can be seamlessly integrated with any Recurly subscription management plan.
-- **Features**: Provides essential tools for automating revenue recognition, ensuring compliance, and simplifying financial reporting.
-
-3. **Recurly Revenue Recognition Legacy solution**: 
-
-- **Overview**: Our initial revenue recognition solution.
-- **Support**: As our product suite has expanded, we remain committed to continuity. We continue to support this legacy solution to ensure uninterrupted service for our long-standing clients.
+3. **Recurly Revenue Recognition Legacy solution**:  
+   - **Overview**: Our initial revenue recognition solution.  
+   - **Support**: As our product suite has expanded, we remain committed to continuity. We continue to support this legacy solution to ensure uninterrupted service for our long-standing clients.
 
 Each product is crafted with precision, ensuring that businesses can choose a solution that aligns perfectly with their revenue recognition requirements.
 
@@ -104,8 +96,8 @@ Each product is crafted with precision, ensuring that businesses can choose a so
 Recurly provides robust features and capabilities to support businesses in their revenue recognition process. Here's how Recurly helps streamline and simplify revenue recognition:
 
 - **Automated revenue recognition:** Recurly automates the complex calculations and allocation of revenue, streamlining recognition according to the specific rules and guidelines of accounting standards such as ASC-606 and IFRS-15. This automation eliminates manual errors and saves time for finance teams.
-- **Multiple revenue  models:** Recurly supports multiple revenue recognition methods to accommodate various pricing and monetization scenarios. Whether you recognize revenue at a point-in-time or over-time , Recurly can adapt to your specific requirements. You can configure revenue recognition rules based on different billing events, subscription types, or performance obligations.
-- **Ready-to-use revenue reports:** Recurly provides comprehensive revenue reports and packaged dashboards that give you a clear and real-time view of your revenue performance. You can easily track revenue waterfalls, deferred revenue and liability balances, and other key metrics across different time periods, product type, or revenue source . These insights enable you to make data-driven decisions and monitor the financial health of your subscription business.
+- **Multiple revenue models:** Recurly supports multiple revenue recognition methods to accommodate various pricing and monetization scenarios. Whether you recognize revenue at a point-in-time or over-time, Recurly can adapt to your specific requirements. You can configure revenue recognition rules based on different billing events, subscription types, or performance obligations.
+- **Ready-to-use revenue reports:** Recurly provides comprehensive revenue reports and packaged dashboards that give you a clear and real-time view of your revenue performance. You can easily track revenue waterfalls, deferred revenue and liability balances, and other key metrics across different time periods, product type, or revenue source. These insights enable you to make data-driven decisions and monitor the financial health of your subscription business.
 - **Integration with financial systems:** Recurly seamlessly integrates with popular accounting and financial systems, such as QuickBooks, NetSuite, and Xero, to ensure a smooth flow of revenue data to the general ledger. This integration eliminates manual data entry and improves accuracy by synchronizing revenue recognition information between Recurly and your core financial or ERP systems.
 - **Compliance and audit support:** With Recurly, you can confidently meet the requirements of revenue recognition standards and be well-prepared for audits. Recurly provides audit-ready documentation, detailed transaction histories, and granular revenue data that can be easily accessed and shared with auditors or accounting teams.
 
@@ -144,6 +136,5 @@ Recurly provides robust features and capabilities to support businesses in their
 
 ✔ = Feature or Add-on is available in this edition
 
-> 👍 Want to know more?
-> 
-> For a detailed feature comparison between the Standard and Advanced Recurly Revenue Recognition solutions, please refer to our main site on our <a href="https://xd.adobe.com/view/16444d90-fca3-4dea-abc5-9182a0d452f1-4317/screen/47a32356-e01f-4e50-a948-04f9a492fe0a/" target="_blank">dedicated infographic</a>
+> 👍 **Want to know more?**  
+> For a detailed feature comparison between the Standard and Advanced Recurly Revenue Recognition solutions, please refer to our main site on our [dedicated infographic](https://xd.adobe.com/view/16444d90-fca3-4dea-abc5-9182a0d452f1-4317/screen/47a32356-e01f-4e50-a948-04f9a492fe0a/).
