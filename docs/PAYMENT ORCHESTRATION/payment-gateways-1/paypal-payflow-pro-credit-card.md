@@ -24,15 +24,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 To integrate PayPal Payflow Pro with Recurly, you will need to have the following details that are used to access [PayPal Manager](https://manager.paypal.com/):
 
-- Vendor (Merchant Login)
-- Password
-- User (Merchant Login)
-- Partner (This is optional; PayPal might provide you with this information.)
+* Vendor (Merchant Login)
+* Password
+* User (Merchant Login)
+* Partner (This is optional; PayPal might provide you with this information.)
 
 #### Limitations
 
-- **Limited Payment Methods**: The gateway facilitates only credit card payments.
-- **Dedicated Payflow Pro Account Needed**: Users must have a distinct Payflow Pro account, as standard PayPal account details or API credentials are not applicable here.
+* **Limited Payment Methods**: The gateway facilitates only credit card payments.
+* **Dedicated Payflow Pro Account Needed**: Users must have a distinct Payflow Pro account, as standard PayPal account details or API credentials are not applicable here.
 
 # Definition
 
@@ -57,11 +57,11 @@ PayPal Payflow Pro is a specialized payment gateway product that works exclusive
 
 The PayPal Payflow Pro is exclusively a payment gateway product that is proficiently backed by Recurly, facilitating credit card payments in specific regions including the US, UK, Canada, and Australia. To leverage the functionalities of this payment gateway, the following details that pertain to [PayPal Manager](https://manager.paypal.com/) need to be at your disposal:
 
-- **Vendor**: This refers to the Merchant Login utilized to access the [PayPal Manager](https://manager.paypal.com/).
-- **Password**: The secure keyword that is used alongside the vendor details to log in to the [PayPal Manager](https://manager.paypal.com/).
-- **User**: Often synonymous with the Vendor, this is the Merchant Login used to facilitate access to the [PayPal Manager](https://manager.paypal.com/).
-- **Partner**: This is an optional field and PayPal might provide you with this specific detail.  
-  To note distinctly, the credentials required here are not associated with your standard PayPal account details (like your email) or the API credentials that you might be familiar with. It is paramount to use the credentials specific to the Payflow Pro account to enable this integration successfully.  
+* **Vendor**: This refers to the Merchant Login utilized to access the [PayPal Manager](https://manager.paypal.com/).
+* **Password**: The secure keyword that is used alongside the vendor details to log in to the [PayPal Manager](https://manager.paypal.com/).
+* **User**: Often synonymous with the Vendor, this is the Merchant Login used to facilitate access to the [PayPal Manager](https://manager.paypal.com/).
+* **Partner**: This is an optional field and PayPal might provide you with this specific detail.\
+  To note distinctly, the credentials required here are not associated with your standard PayPal account details (like your email) or the API credentials that you might be familiar with. It is paramount to use the credentials specific to the Payflow Pro account to enable this integration successfully.\
   Understanding the specificity of the required credentials is vital to seamlessly enjoy the seamless payment processing solutions brought to you by the collaborative forces of Recurly and PayPal Payflow Pro.
 
 ### Step-by-Step Process to Enable Gateway
