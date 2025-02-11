@@ -19,11 +19,11 @@ The **Data Imports and Exports** section of Recurly’s user guide encompasses d
 
 # Key benefits
 
-- **Comprehensive insight**: Gain deep insights from the vast array of reports available, aiding in data-driven decision making.
-- **Ease of access**: Simplified data importing and exporting functionalities for a hassle-free data management experience.
-- **Customization**: Tailor your data reports to meet specific business needs and preferences, thanks to a range of customizable report options.
-- **Automation**: Leverage automated exports to streamline your reporting process and save time.
-- **Compliance and record keeping**: Easily maintain detailed records for compliance and reference, with features facilitating external invoice generation and revenue recognition schedules.
+* **Comprehensive insight**: Gain deep insights from the vast array of reports available, aiding in data-driven decision making.
+* **Ease of access**: Simplified data importing and exporting functionalities for a hassle-free data management experience.
+* **Customization**: Tailor your data reports to meet specific business needs and preferences, thanks to a range of customizable report options.
+* **Automation**: Leverage automated exports to streamline your reporting process and save time.
+* **Compliance and record keeping**: Easily maintain detailed records for compliance and reference, with features facilitating external invoice generation and revenue recognition schedules.
 
 Below is a structured overview of the wide range of dedicated pages available in this section to guide you through the meticulous process of data imports and exports, ensuring efficient and effective utilization of Recurly’s functionalities.
 
@@ -53,10 +53,10 @@ Understand the nuances of managing and exporting data related to various [accoun
 
 ##### - Sub-categories (Accounts)
 
-- [Adjustments](https://docs.recurly.com/docs/adjustments-exports)
-- [Adjustments ](https://docs.recurly.com/docs/adjustments-coupons)- Coupons
-- [Adjustments ](https://docs.recurly.com/docs/adjustments-taxes-export)- Taxes
-- [Billing Info](https://docs.recurly.com/docs/billing-info-export)
+* [Adjustments](https://docs.recurly.com/docs/adjustments-exports)
+* [Adjustments ](https://docs.recurly.com/docs/adjustments-coupons)- Coupons
+* [Adjustments ](https://docs.recurly.com/docs/adjustments-taxes-export)- Taxes
+* [Billing Info](https://docs.recurly.com/docs/billing-info-export)
 
 #### Coupons
 
@@ -64,8 +64,8 @@ Navigate through the comprehensive guides on [managing coupons](https://docs.rec
 
 ##### - Sub-categories (Coupons)
 
-- [Coupon Redemptions](https://docs.recurly.com/docs/coupons-redemption)
-- Coupons - [Bulk Unique Codes](https://docs.recurly.com/docs/coupons-bulk-unique-codes)
+* [Coupon Redemptions](https://docs.recurly.com/docs/coupons-redemption)
+* Coupons - [Bulk Unique Codes](https://docs.recurly.com/docs/coupons-bulk-unique-codes)
 
 #### Credit payments
 
@@ -81,10 +81,10 @@ This segment covers a rich set of functionalities available for invoice manageme
 
 ##### - Sub-categories (Invoices)
 
-- [Invoices ](https://docs.recurly.com/docs/invoices-external)— External
-- [Invoices ](https://docs.recurly.com/docs/accounts-receivable-export)— Accounts Receivable
-- [Invoices ](https://docs.recurly.com/docs/invoices-summary)— Summary
-- [Invoices ](https://docs.recurly.com/docs/invoices-unused-numbers)— Unused Numbers
+* [Invoices ](https://docs.recurly.com/docs/invoices-external)— External
+* [Invoices ](https://docs.recurly.com/docs/accounts-receivable-export)— Accounts Receivable
+* [Invoices ](https://docs.recurly.com/docs/invoices-summary)— Summary
+* [Invoices ](https://docs.recurly.com/docs/invoices-unused-numbers)— Unused Numbers
 
 #### Items
 
@@ -92,8 +92,8 @@ This section provides detailed guidelines on managing and reporting various item
 
 ##### - Sub-categories (Items)
 
-- [Items ](https://docs.recurly.com/docs/items-associated-plans)— Associated Plans
-- [Items ](https://docs.recurly.com/docs/items-associated-subscriptions)— Associated Subscriptions
+* [Items ](https://docs.recurly.com/docs/items-associated-plans)— Associated Plans
+* [Items ](https://docs.recurly.com/docs/items-associated-subscriptions)— Associated Subscriptions
 
 #### Revenue Recognition schedules
 
@@ -105,14 +105,14 @@ A comprehensive guide to managing and reporting [subscription ](https://docs.rec
 
 ##### - Sub-categories (subscriptions)
 
-- [Subscription Add-ons](https://docs.recurly.com/docs/subscription-add-ons-export)
-- [Subscriptions Usage Records](https://docs.recurly.com/docs/usages-records-export)
-- [Subscriptions — Churned](https://docs.recurly.com/docs/subscriptions-churned)
-- [Subscriptions — External](https://docs.recurly.com/docs/subscriptions-external)
-- [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
-- [Subscription Add-ons — History](https://docs.recurly.com/docs/subscriptions-add-ons-history-export)
-- [Subscriptions - Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
-- Subscriptions History Export
+* [Subscription Add-ons](https://docs.recurly.com/docs/subscription-add-ons-export)
+* [Subscriptions Usage Records](https://docs.recurly.com/docs/usages-records-export)
+* [Subscriptions — Churned](https://docs.recurly.com/docs/subscriptions-churned)
+* [Subscriptions — External](https://docs.recurly.com/docs/subscriptions-external)
+* [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
+* [Subscription Add-ons — History](https://docs.recurly.com/docs/subscriptions-add-ons-history-export)
+* [Subscriptions - Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
+* Subscriptions History Export
 
 #### Transactions
 
