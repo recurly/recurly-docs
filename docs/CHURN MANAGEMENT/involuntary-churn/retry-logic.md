@@ -20,15 +20,15 @@ This feature is available exclusively to customers on the Professional and Elite
 
 ### Prerequisites
 
-- An active Recurly account in production mode.
-- Recurring credit card payment setup.
-- Access to the Recurly dashboard and configurations.
+* An active Recurly account in production mode.
+* Recurring credit card payment setup.
+* Access to the Recurly dashboard and configurations.
 
 ### Limitations
 
-- Not applicable for hard declines unless specific conditions are met.
-- Direct debit payment methods do not undergo automatic retries.
-- Retries will cease after 7 transaction declines, 20 total transaction attempts, or 60 days since the invoice creation.
+* Not applicable for hard declines unless specific conditions are met.
+* Direct debit payment methods do not undergo automatic retries.
+* Retries will cease after 7 transaction declines, 20 total transaction attempts, or 60 days since the invoice creation.
 
 # Definition
 
@@ -36,11 +36,11 @@ Recurly's Intelligent Retries employs machine learning to determine the optimal 
 
 # Key benefits
 
-- **Data-driven decisions**: Utilizes machine learning to determine the best retry schedule.
-- **Enhanced revenue recovery**: Increases the chances of successful payment collection.
-- **Reduced subscriber churn**: Minimizes disruptions and involuntary subscriber churn.
-- **Adaptable logic**: Tailors retry schedules to maximize the opportunity of success.
-- **Comprehensive coverage**: Works alongside other revenue recovery strategies such as Dunning.
+* **Data-driven decisions**: Utilizes machine learning to determine the best retry schedule.
+* **Enhanced revenue recovery**: Increases the chances of successful payment collection.
+* **Reduced subscriber churn**: Minimizes disruptions and involuntary subscriber churn.
+* **Adaptable logic**: Tailors retry schedules to maximize the opportunity of success.
+* **Comprehensive coverage**: Works alongside other revenue recovery strategies such as Dunning.
 
 # Recurly's intelligent retry logic
 
@@ -60,17 +60,17 @@ Soft declines, which occur for reasons like insufficient funds or temporary hold
 
 While hard declines typically aren't retried, there are exceptions:
 
-- **Exception A:** Immediate retry if Account Updater or the customer updates billing information.
-- **Exception B:** Change from hard to soft decline during dunning after billing information update.
-- **Exception C:** Forced collection outside the typical recurring schedule.
+* **Exception A:** Immediate retry if Account Updater or the customer updates billing information.
+* **Exception B:** Change from hard to soft decline during dunning after billing information update.
+* **Exception C:** Forced collection outside the typical recurring schedule.
 
 ## Handling gateway payment declines
 
 Different gateway errors have specific retry schedules:
 
-- **Try Again/Gateway Error:** Every 2 days.
-- **Issuer or Processor Unavailable:** Every 3 days.
-- **Communication/Configuration Error:** Initial retries up to 2 times, 4 hours apart, followed by 6 retries, 1 day apart, and finally retries through the end of the dunning cycle, 3 days apart.
+* **Try Again/Gateway Error:** Every 2 days.
+* **Issuer or Processor Unavailable:** Every 3 days.
+* **Communication/Configuration Error:** Initial retries up to 2 times, 4 hours apart, followed by 6 retries, 1 day apart, and finally retries through the end of the dunning cycle, 3 days apart.
 
 # Manual retry and forced collection
 
