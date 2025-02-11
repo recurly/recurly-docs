@@ -12,18 +12,18 @@ Recurly Analytics provide visibility into key business metrics and surface insig
 
 Recurly makes analytics data available from the dashboards where you see calculated details, plan performance metrics, and revenue totals. The dashboards include key performance indicators you can use to determine the state of your business. The data is frequently refreshed, and the dashboards cover the following details 
 
-- Monthly recurring revenue predictions 
-- Net calculations for billing, payments, and refunds
-- Churn, plan comparisons, and plan performance details 
-- Recovered revenue and subscriber retention data
-- Active subscribers and account totals
-- Dunning processes and campaigns 
+* Monthly recurring revenue predictions 
+* Net calculations for billing, payments, and refunds
+* Churn, plan comparisons, and plan performance details 
+* Recovered revenue and subscriber retention data
+* Active subscribers and account totals
+* Dunning processes and campaigns 
 
 You can update your data by selecting the refresh action on any of the dashboard to clear your cache and refresh the data on the screen with the most currently available information. When the data is updated, a date stamp, in a widget at the bottom of the screen, indicates the time of the most recent update.
 
 # Using Recurly Dashboards
 
-In order to configure how the data displays on the dashboards, you first need to set up and configure your Recurly account. This identifies your default settings and allows you to specify any additional enablement. 
+In order to configure how the data displays on the dashboards, you first need to set up and configure your Recurly account. This identifies your default settings and allows you to specify any additional enablement.\
 For example, when setting up your account you will designate a default currency. This is the currency that will display on the dashboards as the Primary currency. If you enable multiple currencies, you will have the option to view calculations on the dashboards in your Primary currency or in any additional currencies you may have enabled.
 
 Once the account is set up and in production, Recurly will work with you to import your customer data into your account.
