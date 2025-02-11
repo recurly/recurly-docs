@@ -20,15 +20,15 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 ### Prerequisites
 
-- Familiarity with the third-party software you intend to integrate.
-- An active account or subscription with the third-party service.
-- API keys or authentication credentials, as required by the third-party software.
+* Familiarity with the third-party software you intend to integrate.
+* An active account or subscription with the third-party service.
+* API keys or authentication credentials, as required by the third-party software.
 
 ### Limitations
 
-- Integration capabilities are dependent on the third-party software's API and feature updates.
-- Some features may not be fully compatible or may require additional configuration.
-- Regular maintenance and updates may be needed to ensure seamless integration.
+* Integration capabilities are dependent on the third-party software's API and feature updates.
+* Some features may not be fully compatible or may require additional configuration.
+* Regular maintenance and updates may be needed to ensure seamless integration.
 
 # Definition
 
@@ -36,11 +36,11 @@ Partner Integrations in the realm of Accounting, Fraud, and Taxes refer to the c
 
 # Key benefits
 
-- **Efficiency:** Automate and streamline accounting, tax calculations, and fraud detection processes.
-- **Accuracy:** Reduce human errors by automating data transfers and calculations.
-- **Security:** Benefit from advanced fraud detection and prevention mechanisms.
-- **Unified Dashboard:** Manage all integrations from a single platform, simplifying operations.
-- **Scalability:** Easily add or remove integrations as your business needs evolve.
+* **Efficiency:** Automate and streamline accounting, tax calculations, and fraud detection processes.
+* **Accuracy:** Reduce human errors by automating data transfers and calculations.
+* **Security:** Benefit from advanced fraud detection and prevention mechanisms.
+* **Unified Dashboard:** Manage all integrations from a single platform, simplifying operations.
+* **Scalability:** Easily add or remove integrations as your business needs evolve.
 
 # Key details
 
