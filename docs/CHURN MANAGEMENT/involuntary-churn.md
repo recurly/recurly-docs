@@ -21,15 +21,15 @@ Churn Management  is available to all customers on any Recurly subscription plan
 
 ### Prerequisites
 
-- Familiarity with your customer's payment methods and patterns.
-- Integration with payment gateways, processors and relationships with card brands.
-- Access to customer communication channels for timely notifications.
+* Familiarity with your customer's payment methods and patterns.
+* Integration with payment gateways, processors and relationships with card brands.
+* Access to customer communication channels for timely notifications.
 
 ### Limitations
 
-- Not all involuntary churn can be prevented, as some factors are beyond control.
-- Requires regular monitoring and updates to ensure effectiveness.
-- Some strategies might not be applicable to all customer segments or payment methods.
+* Not all involuntary churn can be prevented, as some factors are beyond control.
+* Requires regular monitoring and updates to ensure effectiveness.
+* Some strategies might not be applicable to all customer segments or payment methods.
 
 # Definition
 
@@ -37,11 +37,11 @@ Involuntary churn refers to the loss of customers due to reasons beyond their di
 
 # Key benefits
 
-- **Revenue protection**: Reduce revenue loss from failed transactions and expiring cards.
-- **Enhanced customer experience**: Proactively address issues, reducing friction for customers.
-- **Operational efficiency**: Automate processes like card updates and payment retries.
-- **Improved retention**: Decrease involuntary churn rates, leading to higher customer lifetime value.
-- **Data insights**: Gain a better understanding of churn reasons and patterns to inform future strategies.
+* **Revenue protection**: Reduce revenue loss from failed transactions and expiring cards.
+* **Enhanced customer experience**: Proactively address issues, reducing friction for customers.
+* **Operational efficiency**: Automate processes like card updates and payment retries.
+* **Improved retention**: Decrease involuntary churn rates, leading to higher customer lifetime value.
+* **Data insights**: Gain a better understanding of churn reasons and patterns to inform future strategies.
 
 # Key details
 
