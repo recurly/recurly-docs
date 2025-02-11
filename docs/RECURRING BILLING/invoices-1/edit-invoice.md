@@ -24,9 +24,9 @@ Recurly's Edit Invoice allows merchants to modify specific attributes of an invo
 
 # Key benefits
 
-- **Flexibility**: Adapt to changing business requirements or customer details with ease, ensuring invoices always stay relevant.
-- **Compliance and accuracy**: Maintain precise and compliant billing records by editing invoice attributes as required.
-- **Efficient process**: With integrated tools like activity logs, webhooks, and integration syncs, ensure that every edit is logged and synced, maintaining transparency.
+* **Flexibility**: Adapt to changing business requirements or customer details with ease, ensuring invoices always stay relevant.
+* **Compliance and accuracy**: Maintain precise and compliant billing records by editing invoice attributes as required.
+* **Efficient process**: With integrated tools like activity logs, webhooks, and integration syncs, ensure that every edit is logged and synced, maintaining transparency.
 
 # Key details
 
