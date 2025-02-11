@@ -25,9 +25,9 @@ Gift subscriptions are a method for existing customers to purchase a subscriptio
 
 # Key benefits
 
-- **Acquisition and retention synergy**: Gift subscriptions can attract new users and improve loyalty among current customers.
-- **Revenue expansion**: Tapping into the gift market can open up additional revenue streams.
-- **Customer-centric flexibility**: Offers choices between Gift Cards and Gift Subscriptions to suit varied customer preferences.
+* **Acquisition and retention synergy**: Gift subscriptions can attract new users and improve loyalty among current customers.
+* **Revenue expansion**: Tapping into the gift market can open up additional revenue streams.
+* **Customer-centric flexibility**: Offers choices between Gift Cards and Gift Subscriptions to suit varied customer preferences.
 
 # Key details
 
@@ -49,11 +49,11 @@ Setting up Gift Subscriptions on Recurly is straightforward and involves the fol
 
 3. **Implementing gift plans**: Gift Plans are set up as separate plans on your Recurly account. Depending on your requirements, you can set up non-recurring or recurring Gift Plans.
 
-   - For non-recurring gift plans, create a new plan with "1" billing cycle and set the recurring cycle to the length of the gift.
+   * For non-recurring gift plans, create a new plan with "1" billing cycle and set the recurring cycle to the length of the gift.
 
-   - For recurring gift plans, either use your regular plans or create a separate plan set to "Auto renew until canceled". 
+   * For recurring gift plans, either use your regular plans or create a separate plan set to "Auto renew until canceled". 
 
-   [block:image]{"images":[{"image":["https://files.readme.io/ef06d61-image.png",null,null],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/ef06d61-image.png" />
 
    <br />
 
