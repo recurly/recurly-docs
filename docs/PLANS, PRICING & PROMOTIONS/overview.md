@@ -17,16 +17,4 @@ next:
 
 Dive into our short video showcase and unlock the potential of our Plans, Pricing & Promotions tools. Why wait? Explore now and elevate your business!
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://fast.wistia.net/embed/iframe/s13n8pz1pu?videoFoam=true",
-  "title": "iframe",
-  "provider": "fast.wistia.net",
-  "href": "https://fast.wistia.net/embed/iframe/s13n8pz1pu?videoFoam=true",
-  "typeOfEmbed": "iframe",
-  "height": "580px",
-  "width": "800px",
-  "iframe": true
-}
-[/block]
+<Embed url="https://fast.wistia.net/embed/iframe/s13n8pz1pu?videoFoam=true" title="iframe" provider="fast.wistia.net" href="https://fast.wistia.net/embed/iframe/s13n8pz1pu?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800px" iframe="true" />
