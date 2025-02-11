@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+# Overview 
 
 ### Required plan
 
@@ -79,43 +79,13 @@ The merchant’s taxable address will always reflect the appropriate business en
 
 **Business Entity where the same address is used for both invoice display and taxation.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9490870-Screenshot_2024-06-06_at_9.44.56_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/9490870-Screenshot_2024-06-06_at_9.44.56_PM.png" />
 
 
 
 **Business Entity where a different address is used for invoice display versus taxation**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3508a11-Screenshot_2024-06-06_at_9.43.52_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/3508a11-Screenshot_2024-06-06_at_9.43.52_PM.png" />
 
 
 
@@ -131,80 +101,19 @@ There are **three (3) types of customer addresses** that can be used as the cust
 
 The **Account Information address** is always used as the customer’s taxable address on **manual invoices**, **unless there is a customer shipping address on the invoice**. You also have the option to enable using the customer Account Info address as the customer taxable address for all invoices generated across your site on the Tax Settings page. This will also ensure that the Account address of your customer is always used as the “Bill To” address presented on the invoice.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1b1e2d0-Screenshot_2024-06-11_at_2.25.27_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/1b1e2d0-Screenshot_2024-06-11_at_2.25.27_PM.png" />
 
 To enable or disable using the Account address as the customer taxable address for all invoices, visit the "Tax Settings" page. This option is disabled out-of-the-box.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6e7280d-Screenshot_2024-06-11_at_12.44.48_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/6e7280d-Screenshot_2024-06-11_at_12.44.48_PM.png" />
 
 The **Billing Information address** is always used as the customer’s taxable address on all **automatic invoices, unless there is a shipping address present on the invoice,** or if the Tax Settings option to use the Account Info address for the taxable address on all invoices is enabled.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dd6b481-Screenshot_2024-06-11_at_8.04.03_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "300px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" sizing="300px" border="true" src="https://files.readme.io/dd6b481-Screenshot_2024-06-11_at_8.04.03_PM.png" />
 
 The **Shipping address is always used as the customer’s taxable address on any invoice where there is a Shipping address applied**. Regardless of whether the invoice is manual, automatic, or if you have the Account Info address overriding option enabled on Tax Settings, customer Shipping addresses will always be used for the customer taxable address if there is one available on the invoice.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/155b94a-Screenshot_2024-06-11_at_2.26.13_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/155b94a-Screenshot_2024-06-11_at_2.26.13_PM.png" />
 
 #### Multiple Shipping Addresses
 
@@ -216,23 +125,7 @@ If different tax rates are used for each line item based on the end-customer's s
 
 **Sample invoice displaying tax  behavior when multiple shipping addresses are present **
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/39e4e93-multi_shipping_address.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" sizing="75%" border="true" src="https://files.readme.io/39e4e93-multi_shipping_address.png" />
 
 ## Setting Taxable Addresses
 
@@ -242,64 +135,18 @@ Controlling which taxable addresses from invoices to send to your tax service is
 > 
 > If a customer and/or plan is "tax exempt," no tax will be applied to the invoice and/or subscription.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b0a13d1-Screenshot_2024-06-06_at_9.47.06_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
-
+<Image align="center" border="true" src="https://files.readme.io/b0a13d1-Screenshot_2024-06-06_at_9.47.06_PM.png" />
 
 
 By default, **Recurly sets all entity taxable address configurations to use the Business Entity Tax Address as the Origin Tax Address and the Customer Tax Address as the Destination Tax Address**. Choosing to keep these default settings on an entity’s Taxable Address configuration  will ensure that all invoices where the given business entity is applied will send the merchant's entity tax address as the Origin Address to the tax service, and the customer’s taxable address from the invoice as the Destination Address to the tax service.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6876f6c-Screenshot_2024-06-06_at_9.31.37_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/6876f6c-Screenshot_2024-06-06_at_9.31.37_PM.png" />
 
 **Sample invoice where Business Entity tax address is used for the origin address, and Customer tax address is used for the destination address. This is the default/standard behavior for all Business Entities unless overridden. **
 
 Here, you see that the tax rate applied to the invoice is based off the customer's taxable address, which used the Denver, Colorado sales tax amount. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8463c4b-Screenshot_2024-06-11_at_3.11.17_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/8463c4b-Screenshot_2024-06-11_at_3.11.17_PM.png" />
 
 However, you can override these settings if you wish to do so. Some merchants require that the merchant’s taxable address be used for both the Origin and Destination Addresses, and others may require that the customer’s taxable address be used for both the origin and destination addresses. Recurly supports merchants in controlling which taxable addresses to send their tax service for this reason.
 
@@ -309,43 +156,13 @@ However, you can override these settings if you wish to do so. Some merchants re
 
 Since in the vast amount of cases, tax services use the Destination Address to calculate tax off of, if your business requires that all customers be taxed based off of your business entity’s tax address, you can try setting the Business Entity Tax Address to be used for both the Origin and Destination Addresses.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a4d250b-Screenshot_2024-06-06_at_10.02.15_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/a4d250b-Screenshot_2024-06-06_at_10.02.15_PM.png" />
 
 **Sample invoice where Business Entity tax address is used for both origin and destination address values**
 
 Here, you see that as both the origin and destination addresses used the Business Entity tax address for tax calculation, the resulting tax rate applied to the customer's invoice is based off of the GB VAT rate amount of 20%, since the merchant is located in the United Kingdom.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/46c9707-Screenshot_2024-06-11_at_3.05.09_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/46c9707-Screenshot_2024-06-11_at_3.05.09_PM.png" />
 
 **Sample invoice where Business Entity tax address is used for both origin and destination address values**
 
@@ -353,62 +170,18 @@ In this example, the Business Entity is located outside of the United States, an
 
 > 🚧 If you choose to make both the origin and destination address values use the Business Entity tax address, and the Business Entity tax address is outside of the United States, the VAT prefix shown on the invoice will show "USST" for United States Sales Tax instead of the local country code prefix. The correct tax rate will still apply to the invoice based on the Business Entity's taxable address location.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b9362c2-Screenshot_2024-06-11_at_2.47.18_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
 
+<Image align="center" border="true" src="https://files.readme.io/b9362c2-Screenshot_2024-06-11_at_2.47.18_PM.png" />
 
 Some US states require that a customer’s address be used for both the Origin and Destination address for particular goods, or if a merchant ships from a warehouse but does not maintain a taxable address at the warehouse location. In this case, you can try setting the Customer Tax Address to be used for both the Origin and Destination Addresses.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/88ae714-Screenshot_2024-06-06_at_10.04.49_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/88ae714-Screenshot_2024-06-06_at_10.04.49_PM.png" />
 
 **Sample invoice where Customer tax address is used for both origin and destination address values**
 
 Here, you see that the tax rate applied to the invoice is based off of the customer's taxable address, which is out of Wyoming. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/927dd57-Screenshot_2024-06-11_at_2.41.58_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/927dd57-Screenshot_2024-06-11_at_2.41.58_PM.png" />
 
 Keep in mind that whichever taxable address configuration you set on your business entity will apply to all invoices associated with that entity. However, you can set unique taxable address configurations for each of your business entities. This allows merchants with different taxation requirements in varying global regions to successfully apply taxes to invoices based on the expected tax application behavior for each legal entity. 
 
@@ -422,65 +195,17 @@ The taxable address settings for charges will assume the settings from the busin
 
 The screenshot below shows an example of a merchant creating a new charge on a customer account. To ensure tax is applied to the invoice, the customer must not be tax-exempt, and the checkbox must be enabled under "Tax Collection." 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d5b7a87-Screenshot_2024-07-02_at_4.12.49_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" sizing="70%" border="true" src="https://files.readme.io/d5b7a87-Screenshot_2024-07-02_at_4.12.49_PM.png" />
 
 Once "Tax Collection" is enabled, you will see a new section on the charge expand to provide you the ability to override the Business Entity taxable address configurations for the given charge. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cc827b9-Screenshot_2024-07-02_at_4.15.32_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" sizing="70%" border="true" src="https://files.readme.io/cc827b9-Screenshot_2024-07-02_at_4.15.32_PM.png" />
 
 At this point, if you decide to create the charge without enabling the option to "Override taxable address settings from business entity," the taxable addresses used for the charge will leverage the Origin and Destination addresses from the invoice based on the configurations set on the specific business entity that is applied to that charge invoice. In other words, the charge will follow the same taxable address behavior as [subscriptions](https://docs.recurly.com/docs/tax#setting-taxable-addresses) do.  
 
 Alternatively, you can enable the "Override taxable address settings from business entity" checkbox, and set your desired values for the Origin and Destination addresses for the given charge. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b702ee9-Screenshot_2024-07-02_at_4.26.14_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "70% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" sizing="70%" border="true" src="https://files.readme.io/b702ee9-Screenshot_2024-07-02_at_4.26.14_PM.png" />
 
 The tax calculated for the invoice will reflect the overriding taxable address settings applied to the charge. 
 
@@ -812,26 +537,27 @@ With Recurly, you can collect GST Numbers from New Zealand business customers an
 
 Activating tax collection in Canada results in a 5% GST being applied to all taxable plan, add-on, or adjustment line items for customers in Canada. Additional provincial level taxes (PST, HST, or QST) are applied if you enable the specific province as a taxable sub-region and the customer is located in that province. To collect only GST across all provinces in Canada, enable Canada as a taxable region, but refrain from selecting any specific province.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Tax Region",
-    "h-1": "Tax Type",
-    "h-2": "Minimum Address Requirement",
-    "0-0": "CA",
-    "0-1": "GST  \nGST/PST  \nGST/HST  \nGST/QST",
-    "0-2": "Postal Code and Country"
-  },
-  "cols": 3,
-  "rows": 1,
-  "align": [
-    "left",
-    "left",
-    "left"
-  ]
-}
-[/block]
-
+<HTMLBlock>{`
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+<tr>
+  <th style="border: 1px solid #ddd; padding: 8px;">Tax Region</th>
+  <th style="border: 1px solid #ddd; padding: 8px;">Tax Type</th>
+  <th style="border: 1px solid #ddd; padding: 8px;">Minimum Address Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>CA</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>GST<br>GST/PST<br>GST/HST<br>GST/QST</p>
+</td>
+  <td style="border: 1px solid #ddd; padding: 8px;"><p>Postal Code and Country</p>
+</td>
+</tr>
+</tbody>
+</table>
+`}</HTMLBlock>
 
 When managing tax collection in Canada using Recurly, it's important to understand the different tax types applicable in each province. Here's a breakdown of the Canadian provinces, indicating whether they charge a provincial level tax and the name of this tax:
 
@@ -911,44 +637,13 @@ The Minimum Address Requirement for U.S. Sales Tax is _Postal Code_ and _Country
 
 Once you enable a taxable region, you can configure your plans to collect taxes. All existing plans will default to tax exempt. You will need to edit each individual plan that you want to tax to enable the "Collect Tax" option. All new plans created will default to collecting tax. If a plan has "Collect Tax" enabled, any included add-ons will also be taxed.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/I4jdxgmIRjq5DT9kW6vE_tax-on-plan.png",
-        "tax-on-plan.png",
-        "1699"
-      ],
-      "align": "center",
-      "caption": "How to enable a plan to collect tax"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" caption="How to enable a plan to collect tax" src="https://files.readme.io/I4jdxgmIRjq5DT9kW6vE_tax-on-plan.png" />
 
 ## One-time charges
 
 Once you enable a taxable region, you can create custom charge adjustments that collect tax. The Create Charge page in the Admin Console for an account will default to collecting tax on charges. Recurly does not support tax calculations on custom credit adjustments.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/LHEDJwmZRAu5dYDWRxOx_tax-on-charge.png",
-        "tax-on-charge.png",
-        "1694"
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "How to create a charge with tax"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} caption="How to create a charge with tax" src="https://files.readme.io/LHEDJwmZRAu5dYDWRxOx_tax-on-charge.png" />
 
 ## Tax product type
 
@@ -958,22 +653,7 @@ You can find a list of <a href="https://taxcode.avatax.avalara.com/" target="_bl
 
 For more advanced product distinctions and tax rules, upgrading to your own <a href="https://docs.recurly.com/docs/avalara" target="_blank">AvaTax account</a> or <a href="https://docs.recurly.com/docs/vertex" target="_blank">Vertex account</a> is recommended for access to rate/rule mappings.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a0b212d-Screenshot_2024-07-09_at_1.48.10_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} caption="How to create a charge with tax" src="https://files.readme.io/a0b212d-Screenshot_2024-07-09_at_1.48.10_PM.png" />
 
 # Tax previews at checkout
 
