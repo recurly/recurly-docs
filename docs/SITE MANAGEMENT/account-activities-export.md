@@ -37,15 +37,15 @@ The Account Activities report provides various filtering options to refine and n
 
 ![](https://files.readme.io/d2e40d3-image.png)
 
-- **<span id="Account_Code">Account Code</span>:** The unique numerical identifier for the corresponding customer account associated with the activity.
-- **<span id="Acted_Upon_Object_ID">Acted Upon Object ID</span>:** The unique numerical identifier for the specific object where the activity occurred, such as an invoice or a transaction.
-  - **Tip:** You can click on any "Acted ID" within the table to quickly open the corresponding object in a new tab and view the related activity. For example, clicking on an Acted ID linked to a subscription change allows you to instantly see that specific subscription in a new tab by selecting "Open in Recurly App."
-- **<span id="Acted_Type">Acted Type</span>:** Indicates the location within RA where the activity took place, such as an invoice or a subscription.
-- **<span id="Actor_Name">Actor Name</span>:** Represents the entity or user on your RA site responsible for the activity. This could be the Recurly Background Bot, an API call, or a unique user.
-- **<span id="Actor_Type">Actor Type</span>: **Specifies the type of actor who performed the activity, such as a user.
-- **<span id="Created_at_Time_Date">Created at Time/Date</span>:** Records the timestamp or date when the activity occurred. You have the option to choose either the time or date representation.
-- **<span id="Verb">Verb</span>:** Describes the action performed on an object and how it was changed. For instance, it could be "<span id="sent_email">sent_email</span>," "<span id="renewed">renewed</span>," or "<span id="marked_past_due">marked_past_due</span>."
-- **<span id="Metadata">Metadata</span>: **Provides specific details about the activity, such as the name of the plan assigned to a customer or the invoice ID number sent to a customer.
+* **<span id="Account_Code">Account Code</span>:** The unique numerical identifier for the corresponding customer account associated with the activity.
+* **<span id="Acted_Upon_Object_ID">Acted Upon Object ID</span>:** The unique numerical identifier for the specific object where the activity occurred, such as an invoice or a transaction.
+  * **Tip:** You can click on any "Acted ID" within the table to quickly open the corresponding object in a new tab and view the related activity. For example, clicking on an Acted ID linked to a subscription change allows you to instantly see that specific subscription in a new tab by selecting "Open in Recurly App."
+* **<span id="Acted_Type">Acted Type</span>:** Indicates the location within RA where the activity took place, such as an invoice or a subscription.
+* **<span id="Actor_Name">Actor Name</span>:** Represents the entity or user on your RA site responsible for the activity. This could be the Recurly Background Bot, an API call, or a unique user.
+* **<span id="Actor_Type">Actor Type</span>:** Specifies the type of actor who performed the activity, such as a user.
+* **<span id="Created_at_Time_Date">Created at Time/Date</span>:** Records the timestamp or date when the activity occurred. You have the option to choose either the time or date representation.
+* **<span id="Verb">Verb</span>:** Describes the action performed on an object and how it was changed. For instance, it could be "<span id="sent_email">sent\_email</span>," "<span id="renewed">renewed</span>," or "<span id="marked_past_due">marked\_past\_due</span>."
+* **<span id="Metadata">Metadata</span>:** Provides specific details about the activity, such as the name of the plan assigned to a customer or the invoice ID number sent to a customer.
 
 ## Select additional filters
 
@@ -59,14 +59,14 @@ Tailor your data presentation to suit your preferences by selecting a visualizat
 
 ![](https://files.readme.io/74b5576-image.png)
 
-- Table (Default)
-- Column Chart
-- Bar Graph
-- Scatterplot
-- Line Graph
-- Pie Chart
-- Map
-- Single Value
+* Table (Default)
+* Column Chart
+* Bar Graph
+* Scatterplot
+* Line Graph
+* Pie Chart
+* Map
+* Single Value
 
 Additional options are available by clicking the ellipses button at the end of the options list where a dropdown list of several more visualization options are presented. 
 
