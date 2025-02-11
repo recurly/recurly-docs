@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+# Overview 
 
 ### Required plan
 
@@ -104,4 +104,4 @@ Dive into the data to understand the specifics across all churn reasons.
 
 <Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/282a130-Screen_Shot_2024-04-15_at_4.13.05_PM.png" />
 
-<br>
+<br/>
