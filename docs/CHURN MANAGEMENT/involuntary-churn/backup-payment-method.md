@@ -24,9 +24,9 @@ There are additional fees to use Wallet. Please reach out to your Account Manage
 
 ### Prerequisites
 
-- Merchants must have the Wallet feature enabled.
-- Merchants should be aware of additional fees associated with using Wallet.
-- Subscribers' consent is required before setting their payment method as a backup
+* Merchants must have the Wallet feature enabled.
+* Merchants should be aware of additional fees associated with using Wallet.
+* Subscribers' consent is required before setting their payment method as a backup
 
 # Definition
 
@@ -34,11 +34,11 @@ The Backup Payment Method is a feature in Recurly that allows subscribers to set
 
 # Key benefits
 
-- **Reduced churn**: Lower the risk of involuntary churn due to payment failures.
-- **Enhanced customer experience**: Ensure uninterrupted service for subscribers by having a backup payment option.
-- **Increased revenue recovery**: Improve chances of successful transactions, especially for recurring payments.
-- **Automated payment handling**: Automatic switch to the backup method without manual intervention.
-- **Flexibility**: Supports a wide range of payment methods across different regions.
+* **Reduced churn**: Lower the risk of involuntary churn due to payment failures.
+* **Enhanced customer experience**: Ensure uninterrupted service for subscribers by having a backup payment option.
+* **Increased revenue recovery**: Improve chances of successful transactions, especially for recurring payments.
+* **Automated payment handling**: Automatic switch to the backup method without manual intervention.
+* **Flexibility**: Supports a wide range of payment methods across different regions.
 
 # Key details
 
@@ -48,28 +48,15 @@ Recurly's Backup Payment Method is a strategic approach to tackle the common iss
 
 With the [Wallet](https://docs.recurly.com/docs/wallet) feature, subscribers can store multiple payment methods. The Backup Payment Method is an extension of this, allowing a specific payment method to be designated as a backup. In the event of a primary payment method decline, Recurly will automatically switch to the backup method, ensuring a higher success rate for transactions.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/db76b76-Screen_Recording_2021-03-29_at_02.50_PM.gif",
-        "Screen Recording 2021-03-29 at 02.50 PM.gif",
-        1672
-      ],
-      "align": "center",
-      "caption": "Setting a backup payment method in the Admin Console"
-    }
-  ]
-}
-[/block]
-
+<Image title="Screen Recording 2021-03-29 at 02.50 PM.gif" alt={1672} align="center" src="https://files.readme.io/db76b76-Screen_Recording_2021-03-29_at_02.50_PM.gif">
+  Setting a backup payment method in the Admin Console
+</Image>
 
 # Implementation guidelines
 
 ### Setting a backup payment method
 
-Subscribers can set a backup payment method through the Admin Console, [API V3](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_billing_info), and [API V2](https://developers.recurly.com/api-v2/v2.29/index.html#operation/createAccountsBillingInfoCreditCard). When using APIs, the backup can be set via several endpoints, including [/billing_infos](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_billing_info), [/subscriptions](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_subscription), and [/purchases](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_purchase). Always ensure you have the subscriber's consent before setting their payment method as a backup.
+Subscribers can set a backup payment method through the Admin Console, [API V3](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_billing_info), and [API V2](https://developers.recurly.com/api-v2/v2.29/index.html#operation/createAccountsBillingInfoCreditCard). When using APIs, the backup can be set via several endpoints, including [/billing\_infos](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_billing_info), [/subscriptions](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_subscription), and [/purchases](https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_purchase). Always ensure you have the subscriber's consent before setting their payment method as a backup.
 
 ### Setting a backup payment method via admin console
 
@@ -103,14 +90,14 @@ Merchants need to update their integration to support [Wallet](https://docs.recu
 
 ## Analytics
 
-Recurly has updated the Recovered Revenue and Dunning Effectiveness reports to account for recoveries from a backup payment method. Merchants can also use the [billing_info v5](https://docs.recurly.com/docs/billing-info-export) and [transactions v5](https://docs.recurly.com/docs/transaction-export) exports to gain insights into backup payment method usage.
+Recurly has updated the Recovered Revenue and Dunning Effectiveness reports to account for recoveries from a backup payment method. Merchants can also use the [billing\_info v5](https://docs.recurly.com/docs/billing-info-export) and [transactions v5](https://docs.recurly.com/docs/transaction-export) exports to gain insights into backup payment method usage.
 
 ### Monitoring backup payment method analytics
 
 1. Log in to your Recurly Admin Console.
 2. Navigate to the **Reports** section.
 3. Access the **Recovered Revenue** and **Dunning Effectiveness** reports to view recoveries from backup payment methods.
-4. For more detailed insights, download the [billing_info v5](https://docs.recurly.com/docs/billing-info-export) and [transactions v5](https://docs.recurly.com/docs/transaction-export) exports.
+4. For more detailed insights, download the [billing\_info v5](https://docs.recurly.com/docs/billing-info-export) and [transactions v5](https://docs.recurly.com/docs/transaction-export) exports.
 
 ## Testing
 
@@ -143,8 +130,8 @@ Merchants can test the backup payment method in Development mode against their g
 
 **Merchants should be aware of certain scenarios and considerations**
 
-- If the primary payment method is also set as the backup, only the primary method will be used for retries.
-- Custom Gateway Routing considerations apply to backup payment methods.
-- Using two ACH payment methods for both primary and backup is not recommended.
-- Only one backup payment method can be set for each account.
-- Backup payment method won't be used for purchase requests and subscription changes.
+* If the primary payment method is also set as the backup, only the primary method will be used for retries.
+* Custom Gateway Routing considerations apply to backup payment methods.
+* Using two ACH payment methods for both primary and backup is not recommended.
+* Only one backup payment method can be set for each account.
+* Backup payment method won't be used for purchase requests and subscription changes.
