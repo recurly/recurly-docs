@@ -26,11 +26,11 @@ Entitlements are granular features built and bundled to manage customer access r
 
 # Key benefits
 
-- **Controlled access:** Define and manage access to various features within your product environment, creating a customized user experience.
-- **Cross-platform consistency:** Configure and apply entitlements across different platforms (web, mobile, and app stores), providing users with a seamless experience.
-- **Efficiency:** With Recurly's API support, conduct entitlement checks effectively, streamlining your operations and saving time.
-- **Enhanced monetization:** With the ability to create paywalls, drive revenue by gating premium features or content.
-- **Flexibility:** An unlimited number of entitlements can be created, offering flexibility to meet changing business needs.
+* **Controlled access:** Define and manage access to various features within your product environment, creating a customized user experience.
+* **Cross-platform consistency:** Configure and apply entitlements across different platforms (web, mobile, and app stores), providing users with a seamless experience.
+* **Efficiency:** With Recurly's API support, conduct entitlement checks effectively, streamlining your operations and saving time.
+* **Enhanced monetization:** With the ability to create paywalls, drive revenue by gating premium features or content.
+* **Flexibility:** An unlimited number of entitlements can be created, offering flexibility to meet changing business needs.
 
 # Key details
 
@@ -48,42 +48,11 @@ Creating an entitlement in Recurly requires you to define specific attributes li
 
    b. **Navigate** to the Entitlements section.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a27e3418d1c785fe38623167fbcb01816c93d3569a252f6faf9a2bbff59b35ee-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/a27e3418d1c785fe38623167fbcb01816c93d3569a252f6faf9a2bbff59b35ee-image.png" />
 
    c. **Click on** "Create your first entitlement" to start creating a new entitlement.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/38e1b03-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/38e1b03-image.png" />
 
    d. **Define** the attributes - Name, Code, Description, and Grantors.
 
@@ -107,128 +76,33 @@ e. **Save** your changes by pressing "Create Entitlement".
 
 # Assigning an entitlement
 
-a. In your Recurly Admin UI, **navigate **to the Entitlements section.
+a. In your Recurly Admin UI, **navigate** to the Entitlements section.
 
 b. **Select** the entitlement you want to assign. **Note**: You can complete this step when creating a new entitlement.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5c40763-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/5c40763-image.png" />
 
 c. **Click** on “Edit Entitlement”.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/83ec1b0-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/83ec1b0-image.png" />
 
 d. **Click** on “Add Assignment” and **choose** between **Plan** or **Item**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/23fac5a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/23fac5a-image.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5121661-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "5px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="5px" src="https://files.readme.io/5121661-image.png" />
 
 e. **Select** one from the list to add it.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2886755-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/2886755-image.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3a4c308-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/3a4c308-image.png" />
 
 f. **Save** changes.
 
 # Updating an entitlement
 
-   a.** Navigate** to the Entitlements section in your Recurly Admin UI.
+   a. **Navigate** to the Entitlements section in your Recurly Admin UI.
 
    b. **Select** the entitlement you want to update.
 
@@ -244,39 +118,8 @@ f. **Save** changes.
 
    b. Select the entitlement you want to delete.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5c40763-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/5c40763-image.png" />
 
    c. Click on "Delete" and then “Confirm”. This will remove the entitlement instantly.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/83ec1b0-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "65% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/83ec1b0-image.png" />
