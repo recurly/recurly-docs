@@ -20,15 +20,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-PGP, or _Pretty Good Privacy_, is a data encryption and decryption program that provides cryptographic privacy and authentication for data communication. Recurly uses PGP encryption to ensure the security and privacy of certain communications.
+PGP, or *Pretty Good Privacy*, is a data encryption and decryption program that provides cryptographic privacy and authentication for data communication. Recurly uses PGP encryption to ensure the security and privacy of certain communications.
 
 By using our public PGP key, you can encrypt your communications to us, ensuring the safety of sensitive information.
 
 # Key benefits
 
-- **Robust security:** Enhance the security and confidentiality of your communications with Recurly, safeguarding sensitive information.
-- **Protection against unauthorized access:** Add an extra layer of protection against unauthorized data access, ensuring a safer operational environment.
-- **Secure interactions:** Enable secure interactions even on non-secure networks, promoting continuous and protected communications.
+* **Robust security:** Enhance the security and confidentiality of your communications with Recurly, safeguarding sensitive information.
+* **Protection against unauthorized access:** Add an extra layer of protection against unauthorized data access, ensuring a safer operational environment.
+* **Secure interactions:** Enable secure interactions even on non-secure networks, promoting continuous and protected communications.
 
 # PGP key
 
@@ -36,11 +36,11 @@ Our PGP key is publicly available and can be used to encrypt any communication s
 
 ## Key details
 
-- **ID: **49B0FD86
-- **Type:** RSA
-- **Size: **4096
-- **Fingerprint:** DB31 DC0C 932B EF94 8498  6389 2126 913A 49B0 FD86
-- **User ID: **[security@recurly.com](mailto:security@recurly.com)
+* **ID:** 49B0FD86
+* **Type:** RSA
+* **Size:** 4096
+* **Fingerprint:** DB31 DC0C 932B EF94 8498  6389 2126 913A 49B0 FD86
+* **User ID:**[security@recurly.com](mailto:security@recurly.com)
 
 ## Public key
 
