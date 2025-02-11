@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-Recurly's Transparent Post API allows you to host a <a href="/transparent-post/subscriptions">subscription signup</a>, <a href="/transparent-post/transactions">transaction</a>, and <a href="/transparent-post/billing-info">update billing information</a> page on your website and still be PCI compliant with minimal work. When the customer submits the credit card form, the sensitive information is submitted directly to Recurly for processing. When the transaction completes, the user is redirected back to your site and you retrieve the results securely using a standard API call.</p>
+Recurly's Transparent Post API allows you to host a <a href="/transparent- post/subscriptions">subscription signup</a>, <a href="/transparent-post/transactions">transaction</a>, and <a href="/transparent-post/billing-info">update billing information</a> page on your website and still be PCI compliant with minimal work. When the customer submits the credit card form, the sensitive information is submitted directly to Recurly for processing. When the transaction completes, the user is redirected back to your site and you retrieve the results securely using a standard API call.
 
 <p>Your users will not see Recurly's website, you control the look and feel of your own signup pages, and you benefit from a reduced PCI compliance scope. Because credit card numbers do not pass through your network, your PCI compliance scope is dramatically reduced.</p>
 
