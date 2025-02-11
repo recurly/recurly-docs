@@ -22,12 +22,12 @@ To access this feature or setting, you must have an active subscription to eithe
 
 ### Prerequisites
 
-- Cancellation and refund policy that supports prepayment crediting.
+* Cancellation and refund policy that supports prepayment crediting.
 
 ### Limitations
 
-- Prepayment credits can only be used for purchases and cannot be refunded.
-- Specific configurations may restrict the use of prepayment credits for certain plans or products.
+* Prepayment credits can only be used for purchases and cannot be refunded.
+* Specific configurations may restrict the use of prepayment credits for certain plans or products.
 
 # Definition
 
@@ -35,9 +35,9 @@ Prepayment credit refers to an advance payment made by a customer for purchases 
 
 # Key benefits
 
-- **Streamlined revenue recognition**: Incorporating prepayment credits into revenue reports enhances financial accuracy by reflecting real-time customer balances and potential sales.
-- **Enhanced financial reporting**: Prepayment credits contribute to a more comprehensive view of financial health, allowing for precise revenue tracking and forecasting in revenue recognition reports.
-- **Increased operational efficiency**: The management of prepayment credits through automated systems simplifies the reconciliation process, ensuring that credits are accurately reported in financial statements, improving overall financial transparency and compliance.
+* **Streamlined revenue recognition**: Incorporating prepayment credits into revenue reports enhances financial accuracy by reflecting real-time customer balances and potential sales.
+* **Enhanced financial reporting**: Prepayment credits contribute to a more comprehensive view of financial health, allowing for precise revenue tracking and forecasting in revenue recognition reports.
+* **Increased operational efficiency**: The management of prepayment credits through automated systems simplifies the reconciliation process, ensuring that credits are accurately reported in financial statements, improving overall financial transparency and compliance.
 
 # Key details
 
@@ -45,43 +45,11 @@ Customers are encouraged to make advance payments, known as prepayment credits, 
 
 **Payment invoice**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/41591a7-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/41591a7-image.png" />
 
 **Credit Invoice**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9ed19d1-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/9ed19d1-image.png" />
 
 Prepayment credits are integrated into the Revenue Recognition (RevRec) system as a single Sales Order (SO) line, accompanied by two invoices. Adjustments to the credit are recorded as new lines, identifiable by their origin and plan code.
 
@@ -91,41 +59,10 @@ Prepayment credits are integrated into the Revenue Recognition (RevRec) system a
 | credit-event | prepayment credit redeemed | credit-prepayment redeemed |
 | credit-event | Prepayment credit voided   | credit-prepayment-voided   |
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/00ce3ca-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/00ce3ca-image.png" />
 
 Customers can view their total credit balance in Recurly, which is equal to the total sell price of the credit lines. This balance is visible in the customer information section.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0a9446b-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "45% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="45% " border={true} src="https://files.readme.io/0a9446b-image.png" />
 
 Through prepayment credits, Recurly provides a flexible and efficient way for businesses and customers to recognize and manage advance payments, offering benefits such as improved cash flow, convenience, and simplified billing processes.
