@@ -22,19 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Video
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FZzXGa8dH68w%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZzXGa8dH68w&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZzXGa8dH68w%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=ZzXGa8dH68w",
-  "title": "Quantity Based Pricing",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/ZzXGa8dH68w/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=ZzXGa8dH68w",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=ZzXGa8dH68w" title="Quantity Based Pricing" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/ZzXGa8dH68w/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=ZzXGa8dH68w" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FZzXGa8dH68w%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DZzXGa8dH68w%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FZzXGa8dH68w%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 # Definition
 
@@ -42,9 +30,9 @@ Quantity-based pricing is a versatile pricing model suitable for businesses want
 
 # Key benefits
 
-- **Pricing flexibility**: This model encourages businesses to incentivize larger purchases, catering to different strategic goals.
-- **Cross-industry adaptability**: The model is versatile, fitting seamlessly across multiple industries and product categories.
-- **Simplified cost calculation**: Users can effortlessly determine the total cost based on the quantity purchased, streamlining transactions.
+* **Pricing flexibility**: This model encourages businesses to incentivize larger purchases, catering to different strategic goals.
+* **Cross-industry adaptability**: The model is versatile, fitting seamlessly across multiple industries and product categories.
+* **Simplified cost calculation**: Users can effortlessly determine the total cost based on the quantity purchased, streamlining transactions.
 
 # A dynamic approach to pricing: quantity-based
 
@@ -54,121 +42,25 @@ Quantity-Based Pricing isn't just a model, it's an innovative approach to billin
 
 Tiered Pricing is a model that facilitates a gradual cost system based on specified thresholds or "tiers". The unit price changes as the customer purchases more of the product or service, creating a pricing ladder. For example, an office services firm may charge $1 per document for the first 100 documents. However, if a customer requires more, the cost of each document beyond the initial 100 drops to 50¢. This structure provides an incentive for customers to buy more, thereby driving up sales volumes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eb76209-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/eb76209-image.png" />
 
 ### Volume pricing
 
 Volume Pricing is a strategic approach that motivates customers to purchase in larger quantities by offering a lower per-unit price once they reach a certain volume. All units are charged based on the price of the highest tier reached. So, in the case of a screen-printing t-shirt company, if a customer purchases more than 20 shirts, the per-shirt price reduces from $10 to $9. It's an excellent model for bulk purchases, allowing both the business and customer to benefit from economies of scale.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/50fedf7bf0859eea6dd2c1c9e5acc7f142f91f9e3fec6bb1049d151cca5fcd50-Screenshot_2025-01-16_at_11.34.57_AM.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/50fedf7bf0859eea6dd2c1c9e5acc7f142f91f9e3fec6bb1049d151cca5fcd50-Screenshot_2025-01-16_at_11.34.57_AM.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/271a5ac-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/271a5ac-image.png" />
 
 ### Stairstep pricing
 
 Stairstep Pricing charges a flat rate for a range of quantities, based on specific tiers. For example, a SaaS company might offer pricing tiers based on the number of seats a customer purchases: $50 for 1-10 seats, $100 for 11-20 seats, and $150 for 21+ seats. Regardless of whether a customer acquires 25, 50, or 100 seats, they will pay $150. This model is particularly effective in instances where service delivery costs don't increase linearly with each additional unit, providing predictable revenue and simplifying budget planning for the customer.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c997473503d6a04046f5bc0df17ba02c179f3b7bf47860faed273b86863abdc5-Screenshot_2025-01-16_at_11.36.23_AM.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/c997473503d6a04046f5bc0df17ba02c179f3b7bf47860faed273b86863abdc5-Screenshot_2025-01-16_at_11.36.23_AM.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8c9fd3c-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/8c9fd3c-image.png" />
 
 ## Setting up quantity-based pricing model
 
@@ -178,81 +70,18 @@ The quantity-based model can be configured using a plan with an add-on. Establis
 
 1. **Choose the right model**: Determine whether tiered, volume, or stair step pricing is the best fit for your business needs.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0fd67a2-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/0fd67a2-image.png" />
 
 2. **Plansetup**: Use a plan with an add-on to set up the quantity-based model.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png" />
 
 3. **Define tiers and prices**: Set up tiers and prices at the plan level.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fd0557c-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/fd0557c-image.png" />
 
 4. **Define quantity for subscription add-on**: Provide the quantity for the subscription add-on.
 5. **Manage Calculation**: Recurly will take care of calculating the correct total based on the pricing model and quantity.
 6. **Set editable quantity**: If you're using Recurly's Checkout or Hosted Payment Pages, select the "Editable Quantity" checkbox, so your subscribers can set a quantity when signing up.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c2bacf2-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/c2bacf2-image.png" />
