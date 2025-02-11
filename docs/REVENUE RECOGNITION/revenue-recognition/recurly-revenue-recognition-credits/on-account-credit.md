@@ -21,12 +21,12 @@ To access this feature or setting, you must have an active subscription to eithe
 
 ### Prerequisites
 
-- Cancellation and refund policy that supports account crediting.
+* Cancellation and refund policy that supports account crediting.
 
 ### Limitations
 
-- On-account credits are non-transferable between accounts.
-- Credits may be subject to expiration as per the business's terms and conditions.
+* On-account credits are non-transferable between accounts.
+* Credits may be subject to expiration as per the business's terms and conditions.
 
 # Definition
 
@@ -34,9 +34,9 @@ On-account credit in Recurly refers to the balance credited to a customer's acco
 
 # Key benefits:
 
-- **Streamlined revenue recognition**: Incorporating on-account credits into revenue reports enhances financial accuracy by reflecting real-time customer balances and potential sales.
-- **Enhanced financial reporting**: On-account credits contribute to a more comprehensive view of financial health, allowing for precise revenue tracking and forecasting in revenue recognition reports.
-- **Increased operational efficiency**: The management of on-account credits through automated systems simplifies the reconciliation process, ensuring that credits are accurately reported in financial statements, improving overall financial transparency and compliance.
+* **Streamlined revenue recognition**: Incorporating on-account credits into revenue reports enhances financial accuracy by reflecting real-time customer balances and potential sales.
+* **Enhanced financial reporting**: On-account credits contribute to a more comprehensive view of financial health, allowing for precise revenue tracking and forecasting in revenue recognition reports.
+* **Increased operational efficiency**: The management of on-account credits through automated systems simplifies the reconciliation process, ensuring that credits are accurately reported in financial statements, improving overall financial transparency and compliance.
 
 # Key details
 
@@ -48,23 +48,7 @@ Upon issuing on-account credit, Recurly generates a credit invoice, reflecting t
 
 The credits and their redemptions are recorded in Recurly Revenue Recognition as distinct entries, allowing for clear financial tracking and reporting. These entries are categorized based on their origin (credit-event) and specified by unique plan codes, enabling easy identification and reconciliation.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8ed64f5-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/8ed64f5-image.png" />
 
 ### Accounting table for on-account credits
 
@@ -75,21 +59,6 @@ The credits and their redemptions are recorded in Recurly Revenue Recognition as
 | credit-event | on-account credit Voided   | credit-voided              |
 | credit-event | on-account credit Refunded | credit-paid                |
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ccb7b62-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/ccb7b62-image.png" />
 
 This feature not only enhances customer satisfaction by providing flexible refund options but also streamlines financial processes, making it a valuable tool for businesses looking to improve their subscription management and accounting practices.
