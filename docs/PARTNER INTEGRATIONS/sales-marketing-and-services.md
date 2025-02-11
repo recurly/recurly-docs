@@ -21,15 +21,15 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 ### Prerequisites
 
-- Knowledge of the specific third-party software you're integrating.
-- An active account or subscription with the chosen third-party service.
-- Necessary API keys or authentication credentials as specified by the third-party software.
+* Knowledge of the specific third-party software you're integrating.
+* An active account or subscription with the chosen third-party service.
+* Necessary API keys or authentication credentials as specified by the third-party software.
 
 ### Limitations
 
-- The depth and breadth of integration are contingent upon the third-party software's API and feature updates.
-- Some functionalities might not be fully compatible or may demand additional configurations.
-- Periodic maintenance and updates might be essential to ensure uninterrupted integration.
+* The depth and breadth of integration are contingent upon the third-party software's API and feature updates.
+* Some functionalities might not be fully compatible or may demand additional configurations.
+* Periodic maintenance and updates might be essential to ensure uninterrupted integration.
 
 # Definition
 
@@ -37,11 +37,11 @@ The Sales, Marketing & Services integrations refer to the strategic connection b
 
 # Key benefits
 
-- **Unified operations:** Centralize your sales, marketing, and service operations on one platform.
-- **Enhanced customer engagement:** Leverage advanced tools to boost customer interactions and satisfaction.
-- **Data-driven decisions:** Gain insights from integrated platforms to make informed marketing and sales strategies.
-- **Automated workflows:** Reduce manual tasks, ensuring efficiency and accuracy in operations.
-- **Scalability:** Adapt and expand integrations based on evolving business requirements.
+* **Unified operations:** Centralize your sales, marketing, and service operations on one platform.
+* **Enhanced customer engagement:** Leverage advanced tools to boost customer interactions and satisfaction.
+* **Data-driven decisions:** Gain insights from integrated platforms to make informed marketing and sales strategies.
+* **Automated workflows:** Reduce manual tasks, ensuring efficiency and accuracy in operations.
+* **Scalability:** Adapt and expand integrations based on evolving business requirements.
 
 # Key details
 
