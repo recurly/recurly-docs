@@ -39,7 +39,7 @@ In addition to these great choices, we also have our [Hosted Payment Pages](http
 
 Please, visit our dedicated pages if you would like to know more about our integration methods.
 
-- **REST API Keys**: Direct communication with Recurly's systems using our [RESTful API keys](https://docs.recurly.com/docs/api-keys). Designed for developers seeking precision and control.
-- **Recurly.js**: Elevate your website's payment capabilities with [Recurly.js](https://docs.recurly.com/docs/recurlyjs). A streamlined solution offering robust integration with simplicity.
-- **Webhooks (JSON & XML)**: Receive real-time notifications about events in your Recurly account. With both [JSON and XML](https://docs.recurly.com/docs/webhooks) support, our webhooks ensure maximum compatibility and adaptability.
-- **Native Mobile SDKs**: Integrate Recurly smoothly into your mobile apps using our [native SDKs](https://docs.recurly.com/docs/native-mobile-sdks). Created for iOS and Android platforms to facilitate payments on the move.
+* **REST API Keys**: Direct communication with Recurly's systems using our [RESTful API keys](https://docs.recurly.com/docs/api-keys). Designed for developers seeking precision and control.
+* **Recurly.js**: Elevate your website's payment capabilities with [Recurly.js](https://docs.recurly.com/docs/recurlyjs). A streamlined solution offering robust integration with simplicity.
+* **Webhooks (JSON & XML)**: Receive real-time notifications about events in your Recurly account. With both [JSON and XML](https://docs.recurly.com/docs/webhooks) support, our webhooks ensure maximum compatibility and adaptability.
+* **Native Mobile SDKs**: Integrate Recurly smoothly into your mobile apps using our [native SDKs](https://docs.recurly.com/docs/native-mobile-sdks). Created for iOS and Android platforms to facilitate payments on the move.
