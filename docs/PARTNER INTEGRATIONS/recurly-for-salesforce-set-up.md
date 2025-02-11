@@ -24,13 +24,9 @@ Setting up an integration with Salesforce can be complicated, especially if you 
 
 ![](https://files.readme.io/21213b6-Screen_Shot_2016-09-01_at_12.56.33_PM.png "Screen Shot 2016-09-01 at 12.56.33 PM.png")
 
-
-
-4. Choose the roles you would like to assign Recurly permissions to.  It is important to do this before installing the package because you will assign the permission sets in the package to these profiles during package installation. If you would like to make new profiles, clone existing Salesforce profiles that you would like to have Recurly permission sets added to and label them "**Recurly **\_\_** Profile**." e.g. "**Recurly Support Profile**." 
+4. Choose the roles you would like to assign Recurly permissions to.  It is important to do this before installing the package because you will assign the permission sets in the package to these profiles during package installation. If you would like to make new profiles, clone existing Salesforce profiles that you would like to have Recurly permission sets added to and label them " **Recurly**\_\_**Profile** ." e.g. "**Recurly Support Profile**." 
 
 ![](https://files.readme.io/1bb405c-Screen_Shot_2016-09-22_at_1.49.46_PM.png "Screen Shot 2016-09-22 at 1.49.46 PM.png")
-
-
 
 5. Click Install. Grant access to the Recurly API when prompted.
 
@@ -46,9 +42,9 @@ Setting up an integration with Salesforce can be complicated, especially if you 
 
 After installing the app, navigate to the **API Settings** tab on the **Recurly Admin** page in Salesforce and follow these instructions to connect your Recurly site(s) to your Salesforce org. You'll leverage the API key(s) found on the **API Credentials** page within the **Integrations** menu in Recurly.
 
-1. Set the _Private API Key_: This is the field that will capture your API key to authenticate with Recurly. You can find this under "API Credentials" in Recurly. If you do not already have a Salesforce private API key in Recurly, click the "Add Private API Key" button to create a new API key called "Salesforce".
+1. Set the *Private API Key*: This is the field that will capture your API key to authenticate with Recurly. You can find this under "API Credentials" in Recurly. If you do not already have a Salesforce private API key in Recurly, click the "Add Private API Key" button to create a new API key called "Salesforce".
 
-2. Set the _Public API Key_: This field will accept your public API key on the "API Credentials" page in Recurly so that you can integrate with Recurly.js for payment information. If you do not want to sync information from SFDC back to Recurly, you do not need to include the Public API Key.
+2. Set the *Public API Key*: This field will accept your public API key on the "API Credentials" page in Recurly so that you can integrate with Recurly.js for payment information. If you do not want to sync information from SFDC back to Recurly, you do not need to include the Public API Key.
 
 3. Continue to set the Private and Public API keys for any other Recurly subdomains which you would like to have populate data in Salesforce. The integration supports a maximum of ten (10) subdomains syncing data from Recurly. This functionality is helpful if you have multiple business units or product lines using different Recurly sites.
 
@@ -56,137 +52,89 @@ After installing the app, navigate to the **API Settings** tab on the **Recurly 
 
 Once your API settings are configured, continue to the **Sync Settings** tab to set the rest of your automated data sync preferences:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/07dab88-Sync_Settings.png",
-        "Sync_Settings.png",
-        2366
-      ],
-      "align": "center",
-      "caption": "Sync Settings tab"
-    }
-  ]
-}
-[/block]
+<Image title="Sync_Settings.png" alt={2366} align="center" src="https://files.readme.io/07dab88-Sync_Settings.png">
+  Sync Settings tab
+</Image>
 
-1. _Enable Outbound Sync_: Checking this box will enable the ability to sync records from Salesforce to Recurly. These new/edited records sync immediately. If this option is disabled, records updated in Salesforce will not sync to Recurly. Note that this functionality requires that the Public API Key be populated in step #2, above.
+1. *Enable Outbound Sync*: Checking this box will enable the ability to sync records from Salesforce to Recurly. These new/edited records sync immediately. If this option is disabled, records updated in Salesforce will not sync to Recurly. Note that this functionality requires that the Public API Key be populated in step #2, above.
 
-2. _Invoice Roll-Ups_: By enabling this option, Salesforce accounts that are linked to Recurly accounts will be populated with the overview and summarization fields listed in [our docs](https://docs.recurly.com/docs/salesforce#section-recurly-data-on-standard-salesforce-accounts), which can be used for reporting on Salesforce accounts.
+2. *Invoice Roll-Ups*: By enabling this option, Salesforce accounts that are linked to Recurly accounts will be populated with the overview and summarization fields listed in [our docs](https://docs.recurly.com/docs/salesforce#section-recurly-data-on-standard-salesforce-accounts), which can be used for reporting on Salesforce accounts.
 
-3. _Most Recent Invoice_: By enabling this option, Salesforce accounts you have linked to Recurly accounts will be populated with "Recurly Most Recent Invoice Amount" which can be used for reporting on Salesforce accounts.
+3. *Most Recent Invoice*: By enabling this option, Salesforce accounts you have linked to Recurly accounts will be populated with "Recurly Most Recent Invoice Amount" which can be used for reporting on Salesforce accounts.
 
-4. _Only Sync Accounts with Subscriptions_: Checking this box will only sync accounts that have active, pending, or expired subscriptions to Salesforce. Accounts without subscriptions will not be synced. This will limit the amount of data sent to Salesforce.
+4. *Only Sync Accounts with Subscriptions*: Checking this box will only sync accounts that have active, pending, or expired subscriptions to Salesforce. Accounts without subscriptions will not be synced. This will limit the amount of data sent to Salesforce.
 
 > 🚧 Warning
-> 
+>
 > DO NOT click **Activate Recurly Sync** yet. This will be the last step after more settings are enabled.
 
 ### Linking Recurly Accounts with Native Salesforce Accounts
 
 The **Account Link Settings** enable you to link the Recurly Accounts custom object with the native Account object within Salesforce. By clicking this checkbox, when accounts are integrated from Recurly, the app will create a link between the Recurly Account record and a related Salesforce account record if a match exists.
 
-_For example, if you link Recurly accounts and Salesforce accounts based on email address: If you have a Recurly account with email address "test@salesforce.com" and you enable the setting, the integration will look to see if there is a Salesforce account with the email address "test@salesforce.com". If a Salesforce account with this email exists, then it will be linked to the applicable Recurly account. If there is no account with this email address, the Recurly account will not be linked to any accounts in Salesforce._
+*For example, if you link Recurly accounts and Salesforce accounts based on email address: If you have a Recurly account with email address "[test@salesforce.com](mailto:test@salesforce.com)" and you enable the setting, the integration will look to see if there is a Salesforce account with the email address "[test@salesforce.com](mailto:test@salesforce.com)". If a Salesforce account with this email exists, then it will be linked to the applicable Recurly account. If there is no account with this email address, the Recurly account will not be linked to any accounts in Salesforce.*
 
 This setting is not required, and we advise you to review the documentation below before enabling it or contact Recurly Support for assistance.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1b859a9-Account_Link_Settings.png",
-        "Account_Link_Settings.png",
-        2352
-      ],
-      "align": "center",
-      "caption": "Account Link Settings tab"
-    }
-  ]
-}
-[/block]
+<Image title="Account_Link_Settings.png" alt={2352} align="center" src="https://files.readme.io/1b859a9-Account_Link_Settings.png">
+  Account Link Settings tab
+</Image>
 
-1. _Link Accounts Enabled_: Checking this box will enable the ability to link Recurly accounts to related Salesforce accounts that already exist in your organization.
+1. *Link Accounts Enabled*: Checking this box will enable the ability to link Recurly accounts to related Salesforce accounts that already exist in your organization.
 
-2. Choose the desired fields on which to match accounts in the _Salesforce Account Link Field_ and _Recurly Account Link Field_. Note that this is mandatory to enable account linking.
+2. Choose the desired fields on which to match accounts in the *Salesforce Account Link Field* and *Recurly Account Link Field*. Note that this is mandatory to enable account linking.
 
 > ❗️ Warning on Calculated Fields
-> 
+>
 > Do not use a calculated field, a field that is not writable from external systems, or a field that is not visible to your Salesforce users. If you choose a field that fits this description, Recurly will not be able to create accounts in Salesforce and this functionality will not work.
 
-3. _Create Accounts To Link To_: If account linking is configured, this setting enables Salesforce to create accounts in the native Accounts object for any Recurly accounts that don't match an existing Salesforce account. See below for more details.
+3. *Create Accounts To Link To*: If account linking is configured, this setting enables Salesforce to create accounts in the native Accounts object for any Recurly accounts that don't match an existing Salesforce account. See below for more details.
 
 #### Creating Salesforce Accounts from Recurly Accounts
 
-If you choose to link Recurly accounts to standard Salesforce accounts, the integration gives you the additional option to create a Salesforce account if a Recurly account does not find a match within Salesforce. In the **Account Link Settings**, checking the _Create Accounts to Link to_ box will cause Salesforce accounts to be created if a link is not found to associate a Recurly account to an existing Salesforce account.
+If you choose to link Recurly accounts to standard Salesforce accounts, the integration gives you the additional option to create a Salesforce account if a Recurly account does not find a match within Salesforce. In the **Account Link Settings**, checking the *Create Accounts to Link to* box will cause Salesforce accounts to be created if a link is not found to associate a Recurly account to an existing Salesforce account.
 
-_For example, if you link Recurly accounts and Salesforce accounts based on email address: If you have a Recurly account with email address "test@salesforce.com" and you enable the setting, the integration will look to see if there is a Salesforce account with email address "test@salesforce.com". If a Salesforce account with this email exists, then it will be linked to the applicable Recurly account. If there is no account with this email address, the integration will attempt to create a Salesforce account for it._
+*For example, if you link Recurly accounts and Salesforce accounts based on email address: If you have a Recurly account with email address "[test@salesforce.com](mailto:test@salesforce.com)" and you enable the setting, the integration will look to see if there is a Salesforce account with email address "[test@salesforce.com](mailto:test@salesforce.com)". If a Salesforce account with this email exists, then it will be linked to the applicable Recurly account. If there is no account with this email address, the integration will attempt to create a Salesforce account for it.*
 
 This feature is helpful for merchants who have an online channel that generates leads for their sales team. It will create Salesforce accounts that can be edited and owned by sales and service teams.
 
 > ❗️ Warning on Salesforce Account Creation
-> 
+>
 > This setting is not required, and we advise you to review all documentation before enabling the setting as it may result in a significant number of accounts being created in your Salesforce instance.
 
 ### Configure Product Sync Settings
 
 If you have enabled the integration to sync your Recurly offerings (plans, add-ons, and items) with the native Product object in Salesforce (via the [Advanced Settings tab](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-advanced-sync-settings)), these settings will allow you to tailor that sync.
 
-> 📘 
-> 
+> 📘
+>
 > This option **will not** be editable if product syncing is not enabled
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a392e94-Product_Sync_Settings.png",
-        "Product_Sync_Settings.png",
-        2400
-      ],
-      "align": "center",
-      "caption": "Product Sync Settings tab"
-    }
-  ]
-}
-[/block]
+<Image title="Product_Sync_Settings.png" alt={2400} align="center" src="https://files.readme.io/a392e94-Product_Sync_Settings.png">
+  Product Sync Settings tab
+</Image>
 
-1. _Product Linking Enabled_: This setting defaults to disabled. Checking this box will cause the integration to link Recurly Plans, Recurly Add-Ons, and Recurly Items to related Salesforce products that already exist in your organization. If a matching Salesforce product does not exist, or if this setting is disabled, then a new product will be created and linked to each Recurly custom object.
+1. *Product Linking Enabled*: This setting defaults to disabled. Checking this box will cause the integration to link Recurly Plans, Recurly Add-Ons, and Recurly Items to related Salesforce products that already exist in your organization. If a matching Salesforce product does not exist, or if this setting is disabled, then a new product will be created and linked to each Recurly custom object.
 
-_For example, if you link Recurly plans and Salesforce products based on Plan Code and Product Code: If you have a Recurly plan with plan code "test123" and you enable the setting, the integration will look to see if there is a Salesforce product with the product code "test123". If a Salesforce product with this product code exists, then it will be linked to the applicable Recurly plan. If there is no product with this product code, then a new product will be created and linked to the Recurly plan._
+*For example, if you link Recurly plans and Salesforce products based on Plan Code and Product Code: If you have a Recurly plan with plan code "test123" and you enable the setting, the integration will look to see if there is a Salesforce product with the product code "test123". If a Salesforce product with this product code exists, then it will be linked to the applicable Recurly plan. If there is no product with this product code, then a new product will be created and linked to the Recurly plan.*
 
 2. Choose the desired fields on which to match your Recurly offerings and your Salesforce products. Note that this is mandatory to enable product linking. If a 1:1 match can't be identified for any Recurly offering (e.g. multiple Recurly objects match to a single existing product), then the existing product will be untouched and new products will be created for each Recurly object.
 
 > ❗️ Warning on Calculated Fields
-> 
+>
 > Do not use a calculated field, a field that is not writable from external systems, or a field that is not visible to your Salesforce users. If you choose a field that fits this description, Recurly will not be able to create accounts in Salesforce and this functionality will not work.
 
-3. _Product Pricing Sync Enabled_: This setting defaults to disabled. Checking this box will cause the integration to sync the price for each Recurly offering to a Standard Price Book entry for the related product. Only prices that match the default currency of your Salesforce organization will be synced.
+3. *Product Pricing Sync Enabled*: This setting defaults to disabled. Checking this box will cause the integration to sync the price for each Recurly offering to a Standard Price Book entry for the related product. Only prices that match the default currency of your Salesforce organization will be synced.
 
-4. _Convert Opportunities to Recurly Subscriptions_: This setting defaults to disabled. Checking this box will enable the ability to create subscriptions, one-time charges, and accounts in Recurly from Closed Won opportunities in Salesforce.
+4. *Convert Opportunities to Recurly Subscriptions*: This setting defaults to disabled. Checking this box will enable the ability to create subscriptions, one-time charges, and accounts in Recurly from Closed Won opportunities in Salesforce.
 
 ### Configure Sync Custom Field Settings
 
 In this section, you will be able to setup mappings to sync over Recurly custom field data into Salesforce.  To learn more about Recurly custom fields: check out this [documentation](https://docs.recurly.com/docs/custom-fields).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7d06eac-custom_fields.png",
-        "custom_fields.png",
-        1656
-      ],
-      "align": "center",
-      "caption": "Setting up the mapping for custom fields"
-    }
-  ]
-}
-[/block]
+<Image title="custom_fields.png" alt={1656} align="center" src="https://files.readme.io/7d06eac-custom_fields.png">
+  Setting up the mapping for custom fields
+</Image>
 
 This section will be populated with all your custom fields set up on your site(s) and categorized by Item, Account, and Subscription for easy configuration.  From there, you can proceed to select which Salesforce custom field from the drop down you will want to map to the Recurly custom field.  You can reuse the Salesforce custom field in the mapping for different sites but not in the same site.
 
@@ -196,45 +144,33 @@ The custom fields available in the drop down will be only be String type fields 
 
 The majority of users should ignore this section. If you have complex needs, please read on.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/710efd3-Advanced_Settings.png",
-        "Advanced_Settings.png",
-        2370
-      ],
-      "align": "center",
-      "caption": "Advanced Settings tab"
-    }
-  ]
-}
-[/block]
+<Image title="Advanced_Settings.png" alt={2370} align="center" src="https://files.readme.io/710efd3-Advanced_Settings.png">
+  Advanced Settings tab
+</Image>
 
-1. _Sync Batch Frequency_: By default, Salesforce will query Recurly once every 5 minutes to get new data. This can put a lot of strain on your Salesforce system but it gets you near-real-time information. If you would like to increase this interval, you can use this selector to choose any time between 5 and 60 minutes as the interval between data syncs.
+1. *Sync Batch Frequency*: By default, Salesforce will query Recurly once every 5 minutes to get new data. This can put a lot of strain on your Salesforce system but it gets you near-real-time information. If you would like to increase this interval, you can use this selector to choose any time between 5 and 60 minutes as the interval between data syncs.
 
-2. _Nightly Account Rollup Start Time_: If you have invoice roll-ups enabled in your Sync Settings, these fields on the Salesforce account will be calculated each night at the specified time.
+2. *Nightly Account Rollup Start Time*: If you have invoice roll-ups enabled in your Sync Settings, these fields on the Salesforce account will be calculated each night at the specified time.
 
-3. _Use Person Accounts_: If you have person accounts enabled in your Salesforce org, you will see the option to associate Person Accounts with Recurly Accounts when setting up Advanced Settings. Enable it to use the account linking functionality to work with person accounts.
+3. *Use Person Accounts*: If you have person accounts enabled in your Salesforce org, you will see the option to associate Person Accounts with Recurly Accounts when setting up Advanced Settings. Enable it to use the account linking functionality to work with person accounts.
 
-4. _Item Sync Enabled_: This setting defaults to enabled. If you uncheck this box, items from your Recurly item catalog will not be synced with Salesforce. The purpose of this option is to limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. If you elect to remove this option, items sold as add-ons or one-time charges will still be visible within the Recurly Add Ons and Recurly Line Items objects.
+4. *Item Sync Enabled*: This setting defaults to enabled. If you uncheck this box, items from your Recurly item catalog will not be synced with Salesforce. The purpose of this option is to limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. If you elect to remove this option, items sold as add-ons or one-time charges will still be visible within the Recurly Add Ons and Recurly Line Items objects.
 
-5. _Transaction Sync Enabled_: This setting defaults to enabled. If you uncheck this box, transactions will not be synced with Salesforce. The purpose of this option is to limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. If you elect to remove this option, you can use the payment fields on the Recurly Invoice object to report on transactions.
+5. *Transaction Sync Enabled*: This setting defaults to enabled. If you uncheck this box, transactions will not be synced with Salesforce. The purpose of this option is to limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. If you elect to remove this option, you can use the payment fields on the Recurly Invoice object to report on transactions.
 
-6. _Line Item Sync Enabled_: This setting defaults to enabled. If you uncheck this box, invoice line items will not be synced with Salesforce. The purpose of this option is to limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. If you elect to remove this option, you can use the total fields on the Recurly Invoice object to report on amounts invoiced, but you may lose detail that is only held on line item records.
+6. *Line Item Sync Enabled*: This setting defaults to enabled. If you uncheck this box, invoice line items will not be synced with Salesforce. The purpose of this option is to limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. If you elect to remove this option, you can use the total fields on the Recurly Invoice object to report on amounts invoiced, but you may lose detail that is only held on line item records.
 
-7. _Product Sync Enabled_: This setting defaults to disabled. If you check this box, your plans, add-ons, and items from Recurly will be synced with the native Product object in Salesforce. The purpose of this option is the limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. With this option disabled, your Recurly offerings will still sync with the custom Recurly objects in Salesforce but will not be available to sell on Opportunities. More details around configuring this functionality are [above](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-product-sync-settings).
+7. *Product Sync Enabled*: This setting defaults to disabled. If you check this box, your plans, add-ons, and items from Recurly will be synced with the native Product object in Salesforce. The purpose of this option is the limit the amount of data that is sent to Salesforce and should be used when you have concerns about data limits in your Salesforce org. With this option disabled, your Recurly offerings will still sync with the custom Recurly objects in Salesforce but will not be available to sell on Opportunities. More details around configuring this functionality are [above](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-product-sync-settings).
 
-8. _Plan Name Assigned to Account_: This setting will transfer the name of any subscriptions linked to the Recurly account to the linked Salesforce standard accounts. You will also need to add the "Recurly Plan" field to the Salesforce account layout. This is best used in Salesforce for reporting on accounts by plan type. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
+8. *Plan Name Assigned to Account*: This setting will transfer the name of any subscriptions linked to the Recurly account to the linked Salesforce standard accounts. You will also need to add the "Recurly Plan" field to the Salesforce account layout. This is best used in Salesforce for reporting on accounts by plan type. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
 
-9. _Past Due Account Notification_: If you enable this function, any Salesforce account with a linked Recurly account that is past due will have the "Recurly Past Due Invoice" field on the Salesforce account checked. This is best used in Salesforce for reporting on accounts that are past due. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
+9. *Past Due Account Notification*: If you enable this function, any Salesforce account with a linked Recurly account that is past due will have the "Recurly Past Due Invoice" field on the Salesforce account checked. This is best used in Salesforce for reporting on accounts that are past due. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
 
-10. _Billing Address_: If you enable this setting, the billing address from the Recurly account will transfer to the Billing Address fields on the linked Salesforce account. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
+10. *Billing Address*: If you enable this setting, the billing address from the Recurly account will transfer to the Billing Address fields on the linked Salesforce account. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
 
-11. _Active Subscriber_: If you enable this setting, when a Recurly account that is linked to a Salesforce account has an active subscription, then the "Recurly Active Subscriber" checkbox on the Salesforce account will be checked. This feature is best used in reporting to see which customers have active subscriptions. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
+11. *Active Subscriber*: If you enable this setting, when a Recurly account that is linked to a Salesforce account has an active subscription, then the "Recurly Active Subscriber" checkbox on the Salesforce account will be checked. This feature is best used in reporting to see which customers have active subscriptions. Note that this option is only available if you elect to link Recurly accounts and Salesforce accounts.
 
-12. _In Trial_: If you enable this setting, any Salesforce account with a linked Recurly account that has a subscription in the trial stage will have the "Recurly In Trial" checkbox on the Salesforce account checked. 
+12. *In Trial*: If you enable this setting, any Salesforce account with a linked Recurly account that has a subscription in the trial stage will have the "Recurly In Trial" checkbox on the Salesforce account checked. 
 
 ## Editing Your Salesforce Layouts
 
@@ -242,8 +178,8 @@ To take full advantage of your integration between Salesforce and Recurly, a num
 
 ### Modifying the Salesforce Account Layout
 
-> 📘 
-> 
+> 📘
+>
 > If you are not linking Recurly accounts and Salesforce standard accounts, you can ignore this section.
 
 In order to view Recurly data alongside the sales data that you have on your linked Salesforce accounts, you will need to edit the layout of your Salesforce account page. To do this, navigate to a Salesforce account layout and click "Edit Layout." Note that you need to have appropriate permissions to edit and save these forms.
@@ -252,40 +188,34 @@ In order to view Recurly data alongside the sales data that you have on your lin
 
 ![](https://files.readme.io/bc0294a-Screen_Shot_2016-11-04_at_4.26.53_PM.png "Screen Shot 2016-11-04 at 4.26.53 PM.png")
 
-
-
-1. _Recurly Active Subscriber_: If there are linked accounts with an active subscription, this will be True.
-2. _Recurly Average Last 3 Invoices_: Average of the last 3 invoices issued in Recurly (updated overnight).
-3. _Recurly Most Recent Invoice Amount_: The amount of the most recent invoice issued to this customer.
-4. _Recurly Past Due Invoice_: If the account has a past due invoice in Recurly, this will be True.
-5. _Recurly Plan Name_: If the account has an active subscription, the name of the plan will be populated here.
-6. _Recurly Total Invoice Amount_: The sum of the total amount of invoices issued to this customer (updated overnight).
-7. _Recurly Total Payment Amount_: The sum of the total amount of payments this customer has paid (updated overnight).
+1. *Recurly Active Subscriber*: If there are linked accounts with an active subscription, this will be True.
+2. *Recurly Average Last 3 Invoices*: Average of the last 3 invoices issued in Recurly (updated overnight).
+3. *Recurly Most Recent Invoice Amount*: The amount of the most recent invoice issued to this customer.
+4. *Recurly Past Due Invoice*: If the account has a past due invoice in Recurly, this will be True.
+5. *Recurly Plan Name*: If the account has an active subscription, the name of the plan will be populated here.
+6. *Recurly Total Invoice Amount*: The sum of the total amount of invoices issued to this customer (updated overnight).
+7. *Recurly Total Payment Amount*: The sum of the total amount of payments this customer has paid (updated overnight).
 
 You can choose to drag any of these fields onto your account layout. An example layout is below:
 
 ![](https://files.readme.io/9ef09ca-Screen_Shot_2016-11-04_at_4.30.59_PM.png "Screen Shot 2016-11-04 at 4.30.59 PM.png")
 
-
-
 **Related Lists:** You can also add Related Lists for Recurly objects to your Salesforce account. This allows your sales reps and support reps to see billing information on the account object and is available for:
 
-- Recurly Accounts
-- Recurly Subscriptions
-- Recurly Invoices
-- Recurly Transactions
-- Recurly Line Items
+* Recurly Accounts
+* Recurly Subscriptions
+* Recurly Invoices
+* Recurly Transactions
+* Recurly Line Items
 
 Below is our recommended account layout if you use all of the Recurly sync features:
 
 ![](https://files.readme.io/77d3945-Screen_Shot_2016-11-04_at_4.36.23_PM.png "Screen Shot 2016-11-04 at 4.36.23 PM.png")
 
-
-
 ### Modifying the Salesforce Product Layout
 
-> 📘 
-> 
+> 📘
+>
 > If you are not [syncing Recurly offerings to Salesforce products](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-advanced-sync-settings), you can ignore this section.
 
 In order to easily transition between your Salesforce products and their linked Recurly offerings, you can edit the layout of your Salesforce product page. To do this, navigate to a Salesforce product layout and click "Edit Layout." Note that you need to have appropriate permissions to edit and save these forms.
@@ -294,14 +224,12 @@ In order to easily transition between your Salesforce products and their linked 
 
 ![](https://files.readme.io/a625ef4-Product_Layout.png "Product_Layout.png")
 
-
-
-_Linked Recurly Object_: If there is a linked plan, add-on, or item for this product, the name and link will be provided here. The field name is dynamic and will indicate the object type for this linked object.
+*Linked Recurly Object*: If there is a linked plan, add-on, or item for this product, the name and link will be provided here. The field name is dynamic and will indicate the object type for this linked object.
 
 ### Modifying the Salesforce Opportunity Layout
 
-> 📘 
-> 
+> 📘
+>
 > If you are not [creating Recurly subscriptions from Salesforce opportunities](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-product-sync-settings), you can ignore this section.
 
 In order to create Recurly subscriptions directly from Closed Won opportunities in Salesforce, you need to edit the layout of your Salesforce opportunity page. To do this, navigate to a Salesforce opportunity layout and click "Edit Layout." Note that you need to have appropriate permissions to edit and save these forms.
@@ -310,105 +238,79 @@ In order to create Recurly subscriptions directly from Closed Won opportunities 
 
 ![](https://files.readme.io/e326103-Opportunity_Layout.png "Opportunity_Layout.png")
 
-
-
-_Recurly Subscription Button_: If the opportunity includes one or more Recurly-based products and is in a Closed Won status, this button will appear on the page to trigger the process of subscription (and account) creation in Recurly. Once a subscription has been created for an opportunity, this button will no longer be displayed. If you want to control access to this subscription creation capability, consider restricting the visibility of this button to specific user profiles.
+*Recurly Subscription Button*: If the opportunity includes one or more Recurly-based products and is in a Closed Won status, this button will appear on the page to trigger the process of subscription (and account) creation in Recurly. Once a subscription has been created for an opportunity, this button will no longer be displayed. If you want to control access to this subscription creation capability, consider restricting the visibility of this button to specific user profiles.
 
 **Related Lists:** You can also add Related Lists for Recurly subscriptions to your Salesforce opportunity. This allows your sales reps and support reps to see the final Recurly subscription that was created from an opportunity.
 
 ### Modifying the Salesforce Opportunity Product Layout
 
-> 📘 
-> 
+> 📘
+>
 > If you are not [creating Recurly One-Time Charges from Salesforce opportunities](https://docs.recurly.com/docs/salesforce#section-creating-one-time-charges-from-salesforce-opportunities), you can ignore this section.
 
 In order to create one-time charges from Closed Won opportunities in Salesforce, you need to edit the layout of your Salesforce opportunity product page. To do this, navigate to a Salesforce opportunity product layout and click "Edit Layout."  
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e9afb4-opportunity_product_page.png",
-        "opportunity_product_page.png",
-        1244
-      ],
-      "align": "center",
-      "caption": "Opportunity Product Layout Setup"
-    }
-  ]
-}
-[/block]
+<Image title="opportunity_product_page.png" alt={1244} align="center" src="https://files.readme.io/1e9afb4-opportunity_product_page.png">
+  Opportunity Product Layout Setup
+</Image>
 
 Once here, you will need to select the "Edit Multi-Line Layout" option at the top.  Note that you need to have appropriate permissions to edit and save these forms.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/322f8b2-opportunity_multi_line.png",
-        "opportunity_multi_line.png",
-        817
-      ],
-      "align": "center",
-      "caption": "Opportunity Product Multi-Line Layout Setup"
-    }
-  ]
-}
-[/block]
+<Image title="opportunity_multi_line.png" alt={817} align="center" src="https://files.readme.io/322f8b2-opportunity_multi_line.png">
+  Opportunity Product Multi-Line Layout Setup
+</Image>
 
 To add Recurly Charge Frequency to the Opportunity Product related list, you will have to edit the Opportunity Layout of your choosing and follow the steps below:
 
-- Click the wrench icon above **Products** and below **Related Lists**
-- Select **Recurly Charge Frequency** under **Available Fields**
-- Click **Add**
-- Click **Okay**
+* Click the wrench icon above **Products** and below **Related Lists**
+* Select **Recurly Charge Frequency** under **Available Fields**
+* Click **Add**
+* Click **Okay**
 
 ### How to view the Subscription Term Fields (on the Recurly Subscription Layout)
 
 If you are not able to see all the Subscription Term fields on the Recurly Subscription layout, you will need to go to the edit layout and add the relevant fields as listed below (in any order you prefer):
 
-- Current Period Started At
-  - Date-time of when the _billing period_ began
-- Current Period Ends At 
-  - Date-time of when the _billing period_ ends
-- Trial Started At
-  - Date-time of when the _trial period_ began
-- Trial Ends At
-  - Date-time of when the _trial period_ ends
-- Current Term Started At 
-  - The start date of the term when the first _billing period_ starts. The subscription term is the length of time that a customer will be committed to a subscription. A term can span multiple billing periods
-- Current Term Ends At 
-  - When the _term_ ends. This is calculated by a plan's interval and Total Billing Cycles in a term
-- Paused At
-  - Null unless _subscription_ is paused or will pause at the end of the current billing period
-- Activated At
-  - Date-time of when the _subscription_ was activated
-- Canceled At
-  - Date-time of when the _subscription_ was cancelled
-- Expires At
-  - Date-time of when the _subscription_ expired
-- Total Billing Cycles
-  - The number of _cycles/billing periods_ in a term. When Remaining Billing Cycles equals 0, if Auto Renew is true the subscription will renew and a new term will begin, otherwise the subscription will expire
-- Renewal Billing Cycles
-  - If Auto Renew is true, when a term completes, Total Billing Cycles takes this value as the _length of subsequent terms_. Defaults to the plan's Total Billing Cycles
-- Remaining Billing Cycles
-  - The remaining billing cycles in the current term
-- Remaining Pause Cycles
-  - Null unless _subscription_ is paused or will pause at the end of the current billing period
-- Auto Renew
-  - Whether the _subscription_ renews at the end of its term
+* Current Period Started At
+  * Date-time of when the *billing period* began
+* Current Period Ends At 
+  * Date-time of when the *billing period* ends
+* Trial Started At
+  * Date-time of when the *trial period* began
+* Trial Ends At
+  * Date-time of when the *trial period* ends
+* Current Term Started At 
+  * The start date of the term when the first *billing period* starts. The subscription term is the length of time that a customer will be committed to a subscription. A term can span multiple billing periods
+* Current Term Ends At 
+  * When the *term* ends. This is calculated by a plan's interval and Total Billing Cycles in a term
+* Paused At
+  * Null unless *subscription* is paused or will pause at the end of the current billing period
+* Activated At
+  * Date-time of when the *subscription* was activated
+* Canceled At
+  * Date-time of when the *subscription* was cancelled
+* Expires At
+  * Date-time of when the *subscription* expired
+* Total Billing Cycles
+  * The number of *cycles/billing periods* in a term. When Remaining Billing Cycles equals 0, if Auto Renew is true the subscription will renew and a new term will begin, otherwise the subscription will expire
+* Renewal Billing Cycles
+  * If Auto Renew is true, when a term completes, Total Billing Cycles takes this value as the *length of subsequent terms*. Defaults to the plan's Total Billing Cycles
+* Remaining Billing Cycles
+  * The remaining billing cycles in the current term
+* Remaining Pause Cycles
+  * Null unless *subscription* is paused or will pause at the end of the current billing period
+* Auto Renew
+  * Whether the *subscription* renews at the end of its term
 
 ## Salesforce CPQ Configuration Considerations
 
-> 📘 
-> 
+> 📘
+>
 > If you are not [creating Recurly subscriptions from Salesforce opportunities](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-product-sync-settings) or [creating Recurly One-Time Charges from Salesforce opportunities](https://docs.recurly.com/docs/salesforce#section-creating-one-time-charges-from-salesforce-opportunities), you can ignore this section.
 
 If you are using Salesforce CPQ, you can leverage quotes to select and configure your products as you would normally.  They will then flow into the Opportunity and follow the same Closed Won Subscription creation flow.  The validations for the out of the box integration will prevent incompatible behavior to persist onto the Subscription page like multiple plans on one opportunity or a recurring one-time charge by hiding the button.
 
-For one-time charges though, you can continue to leverage your CPQ setup with a little extra configuration on your end. You will need add your own [twin field](https://help.salesforce.com/s/articleView?id=sf.cpq_twin_fields.htm&type=5) to Quote Line and Opportunity Product. Then to complete the flow, you will add a workflow (or other similar mechanism, like Apex triggers or Lightning Flows) to copy the value from your field on the Opportunity Product to field in the manage package (api name: "_recurly_v2_Recurly_Charge_Frequency\_\_c_") on the Opportunity Product before insertion. This will put the validations we have placed to occur when the quote is synced into the opportunity
+For one-time charges though, you can continue to leverage your CPQ setup with a little extra configuration on your end. You will need add your own [twin field](https://help.salesforce.com/s/articleView?id=sf.cpq_twin_fields.htm\&type=5) to Quote Line and Opportunity Product. Then to complete the flow, you will add a workflow (or other similar mechanism, like Apex triggers or Lightning Flows) to copy the value from your field on the Opportunity Product to field in the manage package (api name: "*recurly\_v2\_Recurly\_Charge\_Frequency\_\_c*") on the Opportunity Product before insertion. This will put the validations we have placed to occur when the quote is synced into the opportunity
 
 ## Begin Syncing Data
 
@@ -416,19 +318,19 @@ Once you've completed the setup above, we recommend that you ensure your setting
 
 When you are ready, click the Activate Recurly Sync button on the **Sync Settings** tab in order to sync data from Recurly to Salesforce. Note that the user who clicks the "Activate Recurly Sync" button will be the owner of the Recurly custom objects, as well as the Salesforce Account, Product, and Price Book Entry objects created in your instance.
 
-> 🚧 
-> 
+> 🚧
+>
 > The first sync process will likely take longer than your future syncs due to your historical Recurly data syncing to Salesforce
 
 **After the initial sync:**
 
-- Records will be queried from Recurly into Salesforce every 5 minutes (or other cadence specified in your [Advanced Sync Settings](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-advanced-sync-settings)
+* Records will be queried from Recurly into Salesforce every 5 minutes (or other cadence specified in your [Advanced Sync Settings](https://docs.recurly.com/docs/recurly-for-salesforce-set-up#section-configure-advanced-sync-settings)
 
-- Updates made to these records within Salesforce will be sent back to Recurly immediately (if you have the Outbound Sync setting enabled).
+* Updates made to these records within Salesforce will be sent back to Recurly immediately (if you have the Outbound Sync setting enabled).
 
-- If you would like to retry a sync process, you can change the date/time in the Last Sync Time field on the Sync Settings tab to trigger a fresh sync
+* If you would like to retry a sync process, you can change the date/time in the Last Sync Time field on the Sync Settings tab to trigger a fresh sync
 
-- If you would like to stop Salesforce from querying Recurly, click the "Deactivate Recurly Sync" button on the Sync Settings tab
+* If you would like to stop Salesforce from querying Recurly, click the "Deactivate Recurly Sync" button on the Sync Settings tab
 
 ## Uninstalling Recurly for Salesforce
 
@@ -440,8 +342,6 @@ If you need to uninstall a previous version of the package (version 1.5 is incom
 4. Click on Build > Installed Packages
 
 ![](https://files.readme.io/d6f758b-Screen_Shot_2016-09-02_at_12.16.24_PM.png "Screen Shot 2016-09-02 at 12.16.24 PM.png")
-
-
 
 5. Click "Uninstall" next to Recurly for Salesforce
 6. You will be asked whether or not you would like to keep your data in your org or delete it
