@@ -25,9 +25,9 @@ Workflow automation refers to the design and implementation of automated process
 
 # Key benefits
 
-- **Enhanced efficiency**: Automate repetitive tasks to save time and focus on more critical activities.
-- **Improved accuracy**: Minimize human errors by automating data entry and task management.
-- **Scalability**: Easily scale operations by integrating with a wide range of applications and services.
+* **Enhanced efficiency**: Automate repetitive tasks to save time and focus on more critical activities.
+* **Improved accuracy**: Minimize human errors by automating data entry and task management.
+* **Scalability**: Easily scale operations by integrating with a wide range of applications and services.
 
 # Key details
 
