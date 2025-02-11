@@ -18,19 +18,7 @@ next:
 
 ### Video
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FfobfzwxjtDE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfobfzwxjtDE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfobfzwxjtDE%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=fobfzwxjtDE",
-  "title": "Recurly to Xero Integration",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/fobfzwxjtDE/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=fobfzwxjtDE",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=fobfzwxjtDE" title="Recurly to Xero Integration" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/fobfzwxjtDE/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=fobfzwxjtDE" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FfobfzwxjtDE%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DfobfzwxjtDE%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FfobfzwxjtDE%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ### Required plan
 
@@ -38,16 +26,16 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- An active Xero account.
-- Proper setup of items, plans, add-ons, and setup fees in Recurly to ensure unique and distinct codes.
-- Familiarity with both Recurly and Xero's interface and functionalities.
+* An active Xero account.
+* Proper setup of items, plans, add-ons, and setup fees in Recurly to ensure unique and distinct codes.
+* Familiarity with both Recurly and Xero's interface and functionalities.
 
 ### Limitations
 
-- Subscription details are not sent to Xero; only financial transactions are synced.
-- Foreign currency refunds might face exchange rate issues.
-- Only invoiced credits in Recurly are synced to Xero.
-- Auth transactions, which don't have a financial impact, are not synced.
+* Subscription details are not sent to Xero; only financial transactions are synced.
+* Foreign currency refunds might face exchange rate issues.
+* Only invoiced credits in Recurly are synced to Xero.
+* Auth transactions, which don't have a financial impact, are not synced.
 
 # Definition
 
@@ -57,9 +45,9 @@ By consolidating this data, users gain a comprehensive perspective on their recu
 
 # Key benefits
 
-- **Automated syncing**: Ensure automatic reflection of all your Recurly financial transactions in Xero, reducing manual data entry and errors.
-- **Error handling**: Identify and resolve sync errors between Recurly and Xero easily, ensuring data integrity.
-- **Flexible customization**: Adjust income accounts on a product-by-product basis for granular control over financial data representation.
+* **Automated syncing**: Ensure automatic reflection of all your Recurly financial transactions in Xero, reducing manual data entry and errors.
+* **Error handling**: Identify and resolve sync errors between Recurly and Xero easily, ensuring data integrity.
+* **Flexible customization**: Adjust income accounts on a product-by-product basis for granular control over financial data representation.
 
 # Product and service items
 
@@ -77,67 +65,37 @@ Once items are synchronized to Xero, their default account can be modified. The 
 
 For those using a deferred revenue account as the default, Recurly's revenue recognition solution or a spreadsheet can be employed to compute recognized revenue monthly.
 
-Users also have the flexibility to assign different products to various revenue accounts. This ensures that when invoices are integrated, accounting will be directed to the desired accounts. After the initial integration, users can specify the desired account for each item in Xero by navigating to **Accounts **→ **Inventory**.
+Users also have the flexibility to assign different products to various revenue accounts. This ensures that when invoices are integrated, accounting will be directed to the desired accounts. After the initial integration, users can specify the desired account for each item in Xero by navigating to **Accounts** → **Inventory**.
 
 ## Client accounts
 
 Recurly's client accounts are synchronized to Xero's customer records.
 
-- All Recurly accounts will synchronize regardless of the chosen Start Date.
-- With Recurly syncing customer email addresses to Xero, users can send emails directly from Xero. However, it's advisable to avoid using both platforms for automated email communications to clients.
-- Only the billing address will synchronize.
-- Multiple shipping addresses and account addresses (other than the billing address) will not synchronize.
+* All Recurly accounts will synchronize regardless of the chosen Start Date.
+* With Recurly syncing customer email addresses to Xero, users can send emails directly from Xero. However, it's advisable to avoid using both platforms for automated email communications to clients.
+* Only the billing address will synchronize.
+* Multiple shipping addresses and account addresses (other than the billing address) will not synchronize.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6aa9220-Screen_Shot_2017-06-19_at_12.00.53_PM.png",
-        null,
-        "Customer account in Recurly"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/6aa9220-Screen_Shot_2017-06-19_at_12.00.53_PM.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/594ba03-Screen_Shot_2017-06-19_at_11.59.55_AM.png",
-        null,
-        "The same customer as a contact in Xero"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/594ba03-Screen_Shot_2017-06-19_at_11.59.55_AM.png" />
 
 The integration will synchronize the following fields from Recurly to Xero:
 
-- Account Number
-- Contact Person (First / Last Name)
-- Email Address
-- Postal Address (from Recurly's Billing Address)
-- Phone Number
+* Account Number
+* Contact Person (First / Last Name)
+* Email Address
+* Postal Address (from Recurly's Billing Address)
+* Phone Number
 
 ### Client naming
 
 Xero mandates uniqueness for the "Contact Name" field. During Recurly's Xero setup, users can choose from several fields to use as the Account Name in Xero:
 
-- First Name + Last Name
-- Account Code (Recurly's unique ID), which will also synchronize with Xero's Account Number.
-- Company Name
-- Email address
+* First Name + Last Name
+* Account Code (Recurly's unique ID), which will also synchronize with Xero's Account Number.
+* Company Name
+* Email address
 
 The chosen field will be used as the Contact Name in Xero's customer record. For B2C companies, using the Account Code or First + Last Name is recommended, while B2B companies might prefer the Company Name.
 
@@ -149,8 +107,8 @@ Xero offers a merge function to manage duplicate client accounts. Before integra
 
 After integrating client accounts from Recurly to Xero, the merge function remains available. However, there are guidelines to consider:
 
-- When merging a newly synchronized account (from Recurly) with a manually created account in Xero, it's recommended to merge the manually created account into the automatically created one. This ensures Recurly maintains the association between the Recurly client and the Xero account.
-- If there are significant duplicate accounts in Xero before integration, it's advisable to [contact the support team](https://support.recurly.com) for assistance.
+* When merging a newly synchronized account (from Recurly) with a manually created account in Xero, it's recommended to merge the manually created account into the automatically created one. This ensures Recurly maintains the association between the Recurly client and the Xero account.
+* If there are significant duplicate accounts in Xero before integration, it's advisable to [contact the support team](https://support.recurly.com) for assistance.
 
 ### Addressing duplicate client errors
 
@@ -162,35 +120,19 @@ To address this, users can click the "Resolve Error" button, which displays simi
 
 Invoices in Xero reference client accounts and items. Each line item from a Recurly invoice will synchronize to Xero. The revenue treatment applied to each line item (item, plan, add-on, or setup fee) will be determined by the associated revenue account. Additionally, a link to the Recurly invoice will be available on the Xero invoice.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ad5a261-Screen_Shot_2017-06-19_at_12.03.12_PM.png",
-        null,
-        "Invoice in Recurly"
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/ad5a261-Screen_Shot_2017-06-19_at_12.03.12_PM.png" />
 
 The integration will synchronize the following fields from Recurly's invoice to Xero:
 
-- Customer Reference
-- Hyperlink to Recurly's invoice
-- Invoice Date
-- Due Date
-- Line Items: Item Code, Description, Quantity, Unit Price, Discount %, Account, Tax Rate, Amount, Currency
-- Subtotal
-- Tax
-- Total
-- Payment status and amount, which helps determine the Amount Due.
+* Customer Reference
+* Hyperlink to Recurly's invoice
+* Invoice Date
+* Due Date
+* Line Items: Item Code, Description, Quantity, Unit Price, Discount %, Account, Tax Rate, Amount, Currency
+* Subtotal
+* Tax
+* Total
+* Payment status and amount, which helps determine the Amount Due.
 
 ### Taxation
 
@@ -198,51 +140,51 @@ While Recurly supports customer taxation, it doesn't support Xero's taxation fun
 
 ### Discounts
 
-- Fixed-amount discounts will reflect the exact amount in Xero.
-- Percentage-based discounts will calculate the discount amount and adjust the line item amount on the Xero invoice accordingly.
-- Multiple discounts on a single invoice will be combined into one total on the Xero invoice.
-- A list of discount redemption records won't synchronize with Xero.
-- For more details on discounts, refer to the [Recurly Discounts documentation](https://docs.recurly.com/docs/coupons).
+* Fixed-amount discounts will reflect the exact amount in Xero.
+* Percentage-based discounts will calculate the discount amount and adjust the line item amount on the Xero invoice accordingly.
+* Multiple discounts on a single invoice will be combined into one total on the Xero invoice.
+* A list of discount redemption records won't synchronize with Xero.
+* For more details on discounts, refer to the [Recurly Discounts documentation](https://docs.recurly.com/docs/coupons).
 
 ### One-time transactions
 
-Recurly allows the creation of charges and credits outside of a subscription. These won't synchronize to Xero until invoiced. Once invoiced, they'll appear as line items on the Xero invoice.  
+Recurly allows the creation of charges and credits outside of a subscription. These won't synchronize to Xero until invoiced. Once invoiced, they'll appear as line items on the Xero invoice.\
 If a one-time transaction uses an item, that item will appear on the Xero invoice.
 
 ## Transaction management
 
 Recurly's transactions are mapped to Xero's payment object. The nature of the transaction determines its mapping:
 
-- Positive transactions (payments) are mapped to the payment object and linked to the respective invoice.
-- Negative transactions create a payment on the associated credit note in Xero.  
+* Positive transactions (payments) are mapped to the payment object and linked to the respective invoice.
+* Negative transactions create a payment on the associated credit note in Xero.\
   Payments are directed to the payment account specified during setup. In Xero, payments reference the invoice they settle. Auth transactions, which lack financial implications, aren't synced with Xero. Refunds, on the other hand, are synced and associated with a credit note to counterbalance the invoice's accounting impact. The transaction number is recorded in the Reference field on the transaction record.
 
 The integration syncs the following fields from Recurly's transaction to Xero's transaction record:
 
-- Payment Date
-- Credit Card Reference
-- Relevant Invoice Number
-- Payment Amount
-- Payment Account (based on integration configuration)
+* Payment Date
+* Credit Card Reference
+* Relevant Invoice Number
+* Payment Amount
+* Payment Account (based on integration configuration)
 
 ## Credit handling
 
 Recurly's credits correspond to Xero's Credit Note object:
 
-- Credits at the account level aren't synced until invoiced.
-- Invoices with credit line items generate an invoice record, credit note record, and a payment record in Xero.
-- Taxed credits reduce the Recurly Sales Tax account.
-- Uninvoiced carryforward credits sync to Xero. Deleting such a credit in Recurly doesn't reflect in Xero, necessitating manual deletion in Xero.
+* Credits at the account level aren't synced until invoiced.
+* Invoices with credit line items generate an invoice record, credit note record, and a payment record in Xero.
+* Taxed credits reduce the Recurly Sales Tax account.
+* Uninvoiced carryforward credits sync to Xero. Deleting such a credit in Recurly doesn't reflect in Xero, necessitating manual deletion in Xero.
 
 The integration syncs the following fields from Recurly's credit invoice to Xero's credit memo record:
 
-- Customer Reference
-- Hyperlink to Recurly's invoice record
-- Invoice Date
-- Due Date
-- Line Items details
-- Subtotal, Tax, and Total
-- Status of credit application to an invoice.
+* Customer Reference
+* Hyperlink to Recurly's invoice record
+* Invoice Date
+* Due Date
+* Line Items details
+* Subtotal, Tax, and Total
+* Status of credit application to an invoice.
 
 ## Revenue recognition with Xero
 
@@ -254,23 +196,7 @@ Xero lacks native revenue recognition functionality. Thus, users are advised to 
 
 Recurly offers visibility into sync discrepancies between itself and Xero. This ensures users that all objects are consistently synced.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cdb1436-Xero_Ignore_Error.png",
-        null,
-        "Xero Ignore Error"
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/cdb1436-Xero_Ignore_Error.png" />
 
 However, perfect synchronization isn't always feasible due to various potential issues. Therefore, Recurly allows users to overlook sync errors on Invoice and Transaction objects. If an error isn't easily rectifiable, it's recommended to manually recreate the invoice or transaction in Xero and then "Ignore" the error in Recurly.
 
@@ -286,21 +212,7 @@ When transitioning from sandbox to production in Recurly, it's advised to connec
 
 # Integration process
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8b19300-Standard_Objects_Mapping_Xero.png",
-        "Standard Objects Mapping_Xero.png",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/8b19300-Standard_Objects_Mapping_Xero.png" />
 
 The data synchronization from Recurly to Xero follows this sequence:
 
@@ -322,93 +234,61 @@ The Recurly-Xero data transfer occurs hourly. Each session will sync records cre
 
 ### Suggestions
 
-- Test the Xero configuration in a Recurly sandbox before integrating with the Recurly Production site.
-- In case of accidental deletions, contact the Technical Support team without attempting to recreate the same plan or add-on code to avoid duplication errors.
+* Test the Xero configuration in a Recurly sandbox before integrating with the Recurly Production site.
+* In case of accidental deletions, contact the Technical Support team without attempting to recreate the same plan or add-on code to avoid duplication errors.
 
 ### Preparatory steps
 
-- Decide on a transition date between your current and new processes, preferably at the start of a year or quarter.
-- Ensure consistent Base Currency in both Xero and Recurly.
-- Match the currencies in both platforms for smooth synchronization.
+* Decide on a transition date between your current and new processes, preferably at the start of a year or quarter.
+* Ensure consistent Base Currency in both Xero and Recurly.
+* Match the currencies in both platforms for smooth synchronization.
 
 ### Integration setup
 
-1. To initiate, **navigate **to Integrations → Xero.
+1. To initiate, **navigate** to Integrations → Xero.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eb6799f-Screen_Shot_2017-07-18_at_5.52.16_PM.png",
-        "Screen Shot 2017-07-18 at 5.52.16 PM.png",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/eb6799f-Screen_Shot_2017-07-18_at_5.52.16_PM.png" />
 
-
-2. **Click **the 'Connect to Xero' button, which redirects you to the Xero login page. If you have multiple Xero organizations, select the one you wish to sync with Recurly.
+2. **Click** the 'Connect to Xero' button, which redirects you to the Xero login page. If you have multiple Xero organizations, select the one you wish to sync with Recurly.
 
 ![Screen Shot 2017-07-18 at 5.52.35 PM.png](https://files.readme.io/7e811ad-Screen_Shot_2017-07-18_at_5.52.35_PM.png)
 
 After granting access, you'll return to Recurly to adjust the sync settings.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1293955-Screen_Shot_2017-07-18_at_5.55.09_PM.png",
-        null,
-        "Screen Shot 2017-07-18 at 5.55.09 PM.png"
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/1293955-Screen_Shot_2017-07-18_at_5.55.09_PM.png" />
 
 Finalize the integration by configuring the sync settings. Options include:
 
-- **Income Account**: Determines the credited account upon invoice dispatch to Xero.
-- **Payment Account**: Specifies the debited account when a payment transfers from Recurly to Xero.
-- **Sync Start Date**: Defines the date from which transactions will be synchronized.
-- **Contact Display Name Format**: Determines the format of the Contact Name in Xero.
-- **Invoice Number Prefix**: Prefix for the Invoice Number field.
-- **Credit Note Number Prefix**: Prefix for the Credit Note field.
+* **Income Account**: Determines the credited account upon invoice dispatch to Xero.
+* **Payment Account**: Specifies the debited account when a payment transfers from Recurly to Xero.
+* **Sync Start Date**: Defines the date from which transactions will be synchronized.
+* **Contact Display Name Format**: Determines the format of the Contact Name in Xero.
+* **Invoice Number Prefix**: Prefix for the Invoice Number field.
+* **Credit Note Number Prefix**: Prefix for the Credit Note field.
 
 Once the Sync Settings are defined, the integration will commence within two hours. The subsequent sections detail the synchronized objects between Recurly and Xero.
 
 # FAQs
 
-**Q:** Do you send subscription information to Xero?  
+**Q:** Do you send subscription information to Xero?\
 **A:** No, we only send Invoices, Credit Notes, Payments, and Refunds.
 
-**Q:** What are the accounting entries made by the integration?  
+**Q:** What are the accounting entries made by the integration?\
 **A:** By default:
 
-- Invoices debit accounts receivable and credit an account that you select under "Income Account" in the integration setup.
-- Payments debit Undeposited Funds and credit accounts receivable.
-- Credit Notes (negative invoices) debit an account that you select under "Income Account" in the integration setup and credit Accounts Receivable.
-- Refunds debit Accounts Receivable and Credit Undeposited Funds.
+* Invoices debit accounts receivable and credit an account that you select under "Income Account" in the integration setup.
+* Payments debit Undeposited Funds and credit accounts receivable.
+* Credit Notes (negative invoices) debit an account that you select under "Income Account" in the integration setup and credit Accounts Receivable.
+* Refunds debit Accounts Receivable and Credit Undeposited Funds.
 
-**Q:** How do I manage my revenue with this integration?  
+**Q:** How do I manage my revenue with this integration?\
 **A:** While we are not accountants and cannot advise you on exactly how to handle your accounting to become compliant with GAAP or IFRS, we can suggest a process to handle revenue. We recommend that you set up the integration with a deferred revenue account. When invoices are posted to Recurly, they will transfer to Xero using this deferred revenue account. You can then use Recurly Revenue Recognition (see above) or another process to calculate the amount of deferred revenue which should be recognized each month, and prepare a journal entry. This is how most of our merchants handle rev rec in Xero. Again, this is not a hard and fast accounting rule, but a suggestion on process.
 
-**Q:** Am I able to alter the Income accounts on a product-by-product basis?  
+**Q:** Am I able to alter the Income accounts on a product-by-product basis?\
 **A:** Yes! All items, plans, add-ons, and setup fees are transferred to Xero as non-inventory items, and by default are applied the Income account you set up in the integration setup. However, you can change these accounts on an item-by-item basis.
 
-**Q:** I am getting an error that foreign currency refunds are failing for an exchange rate problem?  
+**Q:** I am getting an error that foreign currency refunds are failing for an exchange rate problem?\
 **A:** If you have several currencies set up in Xero and Recurly, you may run into issues with refunds syncing to Xero because of a system limitation in Xero. Unfortunately, Recurly is not able to provide an exchange rate properly for these refunds automatically. We recommend that what you do in this case is manually create the refund in Xero, and Ignore the error in Recurly.
 
-**Q:** I use Stripe as my gateway, and I see transactions marked with a pi\_ value, why is that?  
+**Q:** I use Stripe as my gateway, and I see transactions marked with a pi\_ value, why is that?\
 **A:** Stripe's newest API version uses Payment Intents, which Recurly migrated all merchants over to March 25th, 2021 or earlier. The new PI integration updated the transaction value that maps back to a Stripe transaction using a pi value. The old charges endpoint is not their supported API version, and may be deprecated at some point. Previous transactions will still be marked with the previous ch ID in Recurly, which would be reflected in Xero.
