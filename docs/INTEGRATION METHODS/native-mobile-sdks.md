@@ -28,11 +28,11 @@ Native Mobile SDKs are software libraries provided by Recurly, designed specific
 
 # Key benefits
 
-- **Quick and easy integration**: Integrate swiftly into existing mobile applications.
-- **Secure payment handling**: Manage sensitive payment information securely and reduce PCI compliance concerns.
-- **Seamless user experience**: Enjoy native app integration for a smooth user interface.
-- **Direct encryption and storage**: Safeguard payment details with direct encryption and storage through Recurly.
-- **Enhanced functionalities**: Access Recurly's robust API for extended features.
+* **Quick and easy integration**: Integrate swiftly into existing mobile applications.
+* **Secure payment handling**: Manage sensitive payment information securely and reduce PCI compliance concerns.
+* **Seamless user experience**: Enjoy native app integration for a smooth user interface.
+* **Direct encryption and storage**: Safeguard payment details with direct encryption and storage through Recurly.
+* **Enhanced functionalities**: Access Recurly's robust API for extended features.
 
 # Introduction to Recurly's Native Mobile SDKs
 
@@ -50,7 +50,7 @@ One of the significant advantages of using Recurly's Native Mobile SDKs is the r
 
 1. **Integrate the SDK**: Depending on your platform (Android or iOS), download the respective SDK source code from Recurly's official repository.
 
-> **Note: **For information on how to implement the SDKs, you can refer to the **<a href="https://recurly.com/developers/api/#mobile-sdks" target="_blank">Recurly API Documentation</a>**.
+> **Note:** For information on how to implement the SDKs, you can refer to the **<a href="https://recurly.com/developers/api/#mobile-sdks" target="_blank">Recurly API Documentation</a>**.
 
 2. **Initialize the SDK**: Within your app, initialize the SDK using your Recurly account credentials.
 3. **Implement the payment form**: Design and implement the payment form within your app, ensuring it captures all necessary details.
