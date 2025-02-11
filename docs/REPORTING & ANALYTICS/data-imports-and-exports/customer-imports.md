@@ -21,14 +21,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Subscription to one of Recurly's plans
-- Pre-existing customer data ready for migration
-- Proper configuration of your Recurly site into Production mode for self-managed imports
+* Subscription to one of Recurly's plans
+* Pre-existing customer data ready for migration
+* Proper configuration of your Recurly site into Production mode for self-managed imports
 
 ### Limitations
 
-- Requires careful planning and execution to avoid data mishandling
-- Self-managed imports necessitate a comprehensive understanding of Recurly's API
+* Requires careful planning and execution to avoid data mishandling
+* Self-managed imports necessitate a comprehensive understanding of Recurly's API
 
 # Definitions
 
@@ -36,10 +36,10 @@ Customer Imports refer to the process of migrating your existing customers' acco
 
 # Key benefits
 
-- **Secure data transfer**: Leverage Recurly’s PCI-compliant process for a secure data migration.
-- **Expert assistance**: Benefit from Recurly’s Professional Services Team's expertise for a guided migration process.
-- **Seamless customer experience**: Ensure a smooth transition for your customers, maintaining the continuity of their subscription services.
-- **Flexible migration options**: Choose between self-managed and Recurly-managed migration options to suit your business needs.
+* **Secure data transfer**: Leverage Recurly’s PCI-compliant process for a secure data migration.
+* **Expert assistance**: Benefit from Recurly’s Professional Services Team's expertise for a guided migration process.
+* **Seamless customer experience**: Ensure a smooth transition for your customers, maintaining the continuity of their subscription services.
+* **Flexible migration options**: Choose between self-managed and Recurly-managed migration options to suit your business needs.
 
 # Key details
 
@@ -49,7 +49,7 @@ Transition your existing customer base into Recurly with ease, either independen
 
 #### Account information
 
-Recreate existing customer accounts in Recurly using the [create_account API endpoint](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_account). If you intend to have Recurly manage your credit card or subscription import, do not create accounts prior to the import.
+Recreate existing customer accounts in Recurly using the [create\_account API endpoint](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_account). If you intend to have Recurly manage your credit card or subscription import, do not create accounts prior to the import.
 
 #### Billing information
 
@@ -63,9 +63,9 @@ Bring your existing customer subscription data into Recurly either with the Recu
 
 Opt from three distinct choices for migrating your customers’ subscriptions into Recurly:
 
-- [Recurly-managed](https://info.recurly.com/hubfs/data-sheets/Recurly-EnablementServices-Imports-SubsInfo.pdf) - A formal procedure guided by Recurly experts, encompassing all facets of customer data migration.
-- Self-managed - [Manual Invoice Method](#section-option-1-manual-invoice-method-)
-- Self-managed - [Free Trial Method](#section-option-2-free-trial-method)
+* [Recurly-managed](https://info.recurly.com/hubfs/data-sheets/Recurly-EnablementServices-Imports-SubsInfo.pdf) - A formal procedure guided by Recurly experts, encompassing all facets of customer data migration.
+* Self-managed - [Manual Invoice Method](#section-option-1-manual-invoice-method-)
+* Self-managed - [Free Trial Method](#section-option-2-free-trial-method)
 
 # Import process
 
@@ -73,7 +73,7 @@ Follow the step-by-step import process to successfully transition to Recurly:
 
 ### 1\. Create accounts
 
-Employ the [Create Account API](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_account) to create your customer data in Recurly, defining at least an account_code as the unique identifier.
+Employ the [Create Account API](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_account) to create your customer data in Recurly, defining at least an account\_code as the unique identifier.
 
 ### 2\. Provide billing information
 
@@ -85,13 +85,13 @@ Utilize the [Billing Info Update API](https://developers.recurly.com/api/v2019-1
 
 After defining subscription plans in Recurly, deactivate automated communications you wish to suppress such as emails or webhooks. Use the [Create Subscription API](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_subscription) for subscription creation, setting the first renewal date to match the next renewal and generating a manual invoice. Mark invoices as "paid" and switch subscriptions to automatic collection, being wary of potential setup fees and manually managing these to prevent extra charges to the customer.
 
-> ** Note: ** During this phase, disable triggering emails and webhooks for new and paid invoice events, as well as new subscription or subscription changed emails, to avoid sending unnecessary alerts to customers.
+> **Note:** During this phase, disable triggering emails and webhooks for new and paid invoice events, as well as new subscription or subscription changed emails, to avoid sending unnecessary alerts to customers.
 
 #### Option 2: Free trial method
 
 Prepare by establishing subscription plans and disabling unwanted automated communications in Recurly. Create new subscriptions via the [Create Subscriptions API](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_subscription) with a specified free trial end date matching each customer's next invoice date, modulating the `trial_ends_at` parameter. The free trial must be a cardless free trial indicated on the plan (billing info is not required for free trial).
 
-> ** Note: ** Manage analytics and subscriber activities diligently during the trial period to maintain accurate reporting and prevent unauthorized upgrades.  Additionally be cautious about potential setup fees and manage them manually to avoid unjust charges to the customer. 
+> **Note:** Manage analytics and subscriber activities diligently during the trial period to maintain accurate reporting and prevent unauthorized upgrades.  Additionally be cautious about potential setup fees and manage them manually to avoid unjust charges to the customer. 
 
 ### 4\. Disable your legacy system
 
