@@ -24,11 +24,11 @@ With Recurly, businesses can provide their customers with the flexibility to hav
 
 # Key benefits
 
-- **Streamlined management**: Manage all your subscriptions under one roof, making administration and customer management easier.
-- **Enhanced customer experience**: Offer your customers greater choice and flexibility in how they engage with your services.
-- **Flexible billing**: Combine various subscriptions into a single invoice or maintain separate billing for each, as per your business needs.
-- **Unified communication**: Single consolidated emails for new subscription notifications, even with multiple subscriptions.
-- **Data insights**: Track, analyze, and leverage data from multiple subscriptions for improved business decisions.
+* **Streamlined management**: Manage all your subscriptions under one roof, making administration and customer management easier.
+* **Enhanced customer experience**: Offer your customers greater choice and flexibility in how they engage with your services.
+* **Flexible billing**: Combine various subscriptions into a single invoice or maintain separate billing for each, as per your business needs.
+* **Unified communication**: Single consolidated emails for new subscription notifications, even with multiple subscriptions.
+* **Data insights**: Track, analyze, and leverage data from multiple subscriptions for improved business decisions.
 
 # Key details
 
@@ -38,36 +38,18 @@ In today's fast-paced digital economy, flexibility is key. With Recurly's Multip
 
 The API forms the backbone of managing multiple subscriptions. By harnessing the capabilities of the [purchase endpoint](https://developers.recurly.com/api/latest.html#operation/create_purchase), businesses can seamlessly create an array of subscriptions for both new and existing accounts. This endpoint facilitates the amalgamation of various subscriptions and even one-time charges as a part of the [Hybrid](https://docs.recurly.com/docs/billing-models#section-hybrid) billing model.
 
-- **Uniform payment:** All subscriptions in a purchase must utilize a shared payment method. 
-- **Consistent collection method: **Subscriptions in a purchase must have the same collection method, ensuring uniformity in processing.
+* **Uniform payment:** All subscriptions in a purchase must utilize a shared payment method. 
+* **Consistent collection method:** Subscriptions in a purchase must have the same collection method, ensuring uniformity in processing.
 
 ### Unpacking the purchase invoice
 
 Purchases that encompass more than one subscription will culminate in an invoice that lists all the individual subscriptions and charges. This consolidated approach simplifies the invoicing process, displaying each charge distinctly, ensuring clarity for customers.
 
 > 📘 **Consolidating multiple subscriptions into a single invoice**
-> 
+>
 > Combining multiple subscriptions into one invoice is a streamlined process, but it requires the subscriptions to meet certain criteria. Utilize either the "Aggregate Invoice" or "Alignment" features to achieve this. These tools are designed to simplify billing by grouping eligible subscriptions on a single invoice. For an efficient way to merge various subscription charges into one convenient bill, explore our [Calendar Billing](https://docs.recurly.com/v1.0/docs/calendar-billing) feature. This method not only enhances administrative efficiency but also provides a more cohesive billing experience for your customers.
 
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/17cdebe-Screenshot_2.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/17cdebe-Screenshot_2.png" />
 
 # Communication and notifications
 
@@ -77,11 +59,11 @@ Maintain a consistent communication strategy even with multiple subscriptions in
 
 The following email templates also support multiple subscription purchases:
 
-- [New Subscription](https://docs.recurly.com/v1.0/docs/email-templates#section-new-subscription)
-- [New Invoice](https://docs.recurly.com/v1.0/docs/email-templates#section-new-invoice)
-- [Payment Confirmation](https://docs.recurly.com/v1.0/docs/email-templates#section-payment-confirmation)
+* [New Subscription](https://docs.recurly.com/v1.0/docs/email-templates#section-new-subscription)
+* [New Invoice](https://docs.recurly.com/v1.0/docs/email-templates#section-new-invoice)
+* [Payment Confirmation](https://docs.recurly.com/v1.0/docs/email-templates#section-payment-confirmation)
 
-When creating multiple subscriptions in purchase, a _single_ New Subscription email will be sent that will contain all subscriptions purchased.
+When creating multiple subscriptions in purchase, a *single* New Subscription email will be sent that will contain all subscriptions purchased.
 
 To update your email templates to support multiple subscription purchases, see [Subscription](https://docs.recurly.com/v1.0/docs/email-templates#section-subscriptions) fields.
 
@@ -89,13 +71,13 @@ To update your email templates to support multiple subscription purchases, see [
 
 If the multiple subscriptions feature is turned on your site, the following webhooks will include a subscriptions xml tag with a list of subscriptions. 
 
-- new_invoice
-- closed_invoice
-- successful payment
-- failed_payment
-- past_due_invoice
-- new_dunning_event
-- successful_refund
+* new\_invoice
+* closed\_invoice
+* successful payment
+* failed\_payment
+* past\_due\_invoice
+* new\_dunning\_event
+* successful\_refund
 
 This is new behavior based on if the feature is enabled. If multiple subscriptions is not enabled on your site, we will maintain  the original subscription xml tag.
 
@@ -113,8 +95,8 @@ Recurly offers customizable default terms and notes for your invoices, including
 
 For <a href="https://docs.recurly.com/docs/invoice-settings#section-vat-reverse-charge-notes" target="_blank">VAT Reverse Charge Notes</a> to be included on an invoice, the following conditions must be met:
 
-- Your Recurly site has EU VAT enabled or uses an Avalara AvaTax account.
-- The customer is in the EU, has a VAT number, and is based in a different country than your company.
+* Your Recurly site has EU VAT enabled or uses an Avalara AvaTax account.
+* The customer is in the EU, has a VAT number, and is based in a different country than your company.
 
 If these conditions are met, the invoice will display the VAT Reverse Charge Notes from the Tax Settings page in Recurly admin, unless custom VAT notes are specified for the invoice.
 
