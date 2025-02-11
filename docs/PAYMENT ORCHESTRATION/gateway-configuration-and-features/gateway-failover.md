@@ -23,15 +23,15 @@ This feature is only available to customers on the Professional and/or Elite sub
 
 ### Prerequisites
 
-- Merchants should have multiple gateways configured for each credit card type and currency they accept.
-- Merchants should be on the Recurly's Professional plan to access this feature.
+* Merchants should have multiple gateways configured for each credit card type and currency they accept.
+* Merchants should be on the Recurly's Professional plan to access this feature.
 
 ### Limitations
 
-- Transactions tied to a specific gateway via a `gateway_code` will always route to the specified gateway, despite a failover scenario.
-- The Auth and Capture feature may not be compatible with Gateway Failover as captures need to be completed on the same gateway as the original authorization.
-- If using Stripe with Gateway Failover, ensure that both gateways support the same currency and card type.
-- Testing Gateway Failover in sandbox mode is not supported; the feature is functional only in production mode.
+* Transactions tied to a specific gateway via a `gateway_code` will always route to the specified gateway, despite a failover scenario.
+* The Auth and Capture feature may not be compatible with Gateway Failover as captures need to be completed on the same gateway as the original authorization.
+* If using Stripe with Gateway Failover, ensure that both gateways support the same currency and card type.
+* Testing Gateway Failover in sandbox mode is not supported; the feature is functional only in production mode.
 
 # Definition
 
@@ -39,9 +39,9 @@ Gateway Failover is a feature designed to provide a safety net for merchants by 
 
 # Key benefits
 
-- **Continuity in transactions processing**: Ensures transactions are processed without interruption even during primary gateway outages.
-- **Minimized financial impact**: By rerouting transactions, financial losses due to gateway outages are substantially reduced.
-- **Operational resilience**: Enhances operational resilience by providing a backup plan for payment processing, thereby maintaining a good customer experience.
+* **Continuity in transactions processing**: Ensures transactions are processed without interruption even during primary gateway outages.
+* **Minimized financial impact**: By rerouting transactions, financial losses due to gateway outages are substantially reduced.
+* **Operational resilience**: Enhances operational resilience by providing a backup plan for payment processing, thereby maintaining a good customer experience.
 
 # Enable gateway failover
 
@@ -74,10 +74,10 @@ This exclusion is crucial for merchants utilizing [Custom Gateway Routing](https
 
 ## Gateway Failover implementation details
 
-- Merchants will be able to [enable](https://docs.recurly.com/docs/gateway-failover#section-enable-gateway-failover) Gateway Failover from their gateway configuration page, by designating a primary and backup gateway for each credit card type and currency. Recurly will default to the first gateway added or set default gateway for the specific card type and currency. Gateway(s) added to the site after will then be used for failover scenarios (prioritizing the earlier addition(s) first). 
-- Recurly will track gateway error code responses to detect potential outages or downtime, specifically targeting communication error type responses. This will be calculated on a rolling time period. 
-- When gateway errors are detected and reach a certain velocity, Recurly will failover to the backup gateway, routing transactions to that gateway. 
-- The calculation will also be able to inform Recurly when the primary gateway has recovered, so Recurly can revert back to the primary gateway. 
-- Initial signup transactions that were routed to a backup gateway will be initiated as recurring transactions on the primary gateway, even if they were originally routed to the backup gateway.
-- Merchants will be notified on their gateway configuration page that a gateway failover scenario was detected and a secondary gateway was used.
-- Recurring transactions will be paused, so that these transactions are not attempted on the gateway that is down. When Recurly identifies that the gateway has recovered, Recurly will release the queue of recurring transactions to be routed to the primary gateway.
+* Merchants will be able to [enable](https://docs.recurly.com/docs/gateway-failover#section-enable-gateway-failover) Gateway Failover from their gateway configuration page, by designating a primary and backup gateway for each credit card type and currency. Recurly will default to the first gateway added or set default gateway for the specific card type and currency. Gateway(s) added to the site after will then be used for failover scenarios (prioritizing the earlier addition(s) first). 
+* Recurly will track gateway error code responses to detect potential outages or downtime, specifically targeting communication error type responses. This will be calculated on a rolling time period. 
+* When gateway errors are detected and reach a certain velocity, Recurly will failover to the backup gateway, routing transactions to that gateway. 
+* The calculation will also be able to inform Recurly when the primary gateway has recovered, so Recurly can revert back to the primary gateway. 
+* Initial signup transactions that were routed to a backup gateway will be initiated as recurring transactions on the primary gateway, even if they were originally routed to the backup gateway.
+* Merchants will be notified on their gateway configuration page that a gateway failover scenario was detected and a secondary gateway was used.
+* Recurring transactions will be paused, so that these transactions are not attempted on the gateway that is down. When Recurly identifies that the gateway has recovered, Recurly will release the queue of recurring transactions to be routed to the primary gateway.
