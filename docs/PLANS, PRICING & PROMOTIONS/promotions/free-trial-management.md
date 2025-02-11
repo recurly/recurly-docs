@@ -25,32 +25,17 @@ Free trials can be defined within Recurly's system in terms of days or months, w
 
 # Key benefits
 
-- **Boost user acquisition:** Offering a free trial helps attract more customers by allowing them to test your product or service risk-free.
-- **Increase engagement:** Users who sign up for a free trial are more likely to engage with your product or service, improving user experience and satisfaction.
-- **Flexible billing:** Choose to require or bypass billing information during the trial period based on your business model.
-- **Automate transition:** Automatic transition to paid subscriptions at the end of the trial period helps in seamless conversion and enhances user experience.
-- **Custom notifications:** Automatically notify your customers when their free trial is about to end, improving communication and transparency.
+* **Boost user acquisition:** Offering a free trial helps attract more customers by allowing them to test your product or service risk-free.
+* **Increase engagement:** Users who sign up for a free trial are more likely to engage with your product or service, improving user experience and satisfaction.
+* **Flexible billing:** Choose to require or bypass billing information during the trial period based on your business model.
+* **Automate transition:** Automatic transition to paid subscriptions at the end of the trial period helps in seamless conversion and enhances user experience.
+* **Custom notifications:** Automatically notify your customers when their free trial is about to end, improving communication and transparency.
 
 # Key details
 
 ## Free trials
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/75c3fc8f55da02d98408fbf6e88a53d1e15f84d7f265ea4303d4d2166e88c9d2-Screenshot_2025-01-16_at_11.46.09_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/75c3fc8f55da02d98408fbf6e88a53d1e15f84d7f265ea4303d4d2166e88c9d2-Screenshot_2025-01-16_at_11.46.09_AM.png" />
 
 Recurly's plans offer the flexibility to include an optional trial period, which can be defined in either days or months. This allows potential customers to try out your service before committing to a paid subscription. At the end of the trial period, the subscription will automatically convert to a paid one, facilitating a smooth transition for your subscribers.
 
@@ -66,23 +51,7 @@ It's important to note that adding a free trial to a plan will extend the subscr
 
 Recurly provides the option to either require or bypass billing information for free trials at the plan level. This setting is accessible when creating a plan with a trial period. Please note that when a plan has a set up fee, the fee is charged immediately. If you don't want to require billing information for your free trial, a coupon, gift card, or other credits can be used to cover the cost of the setup fee, allowing you to bypass the billing information step. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bc00048702aa2e00372aedce44a3db3fc7be465806884452bd728790045ab736-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/bc00048702aa2e00372aedce44a3db3fc7be465806884452bd728790045ab736-image.png" />
 
 Free trial coupons can be used on any plan. However, the plan's billing requirement setting determines if the billing information needs to be presented. 
 
@@ -102,19 +71,4 @@ The Trial Ending email is a valuable tool designed to notify your customers 3 da
 
 If you use Recurly's either Checkout or Hosted payment pages, you will have the flexibility to require or bypass billing information for your subscriptions with free trials.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/df31c3a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/df31c3a-image.png" />
