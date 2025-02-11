@@ -24,9 +24,9 @@ The Reserve Bank of India's (RBI) new regulations on e-mandates for recurring tr
 
 # Key benefits
 
-- **Enhanced transparency:** The RBI's regulations require issuing banks to provide their credit card users with detailed pre-transaction notifications, enhancing customer awareness and control over their finances.
-- **Increased security:** With a cap on e-mandate transactions, customers are safeguarded against high-value unauthorized transactions, necessitating additional authentication for transactions exceeding INR 15,000.
-- **Ease of subscription cancellation:** The new guidelines allow customers to cancel subscriptions directly through their bank account, bypassing the need to engage with the merchant for this purpose.
+* **Enhanced transparency:** The RBI's regulations require issuing banks to provide their credit card users with detailed pre-transaction notifications, enhancing customer awareness and control over their finances.
+* **Increased security:** With a cap on e-mandate transactions, customers are safeguarded against high-value unauthorized transactions, necessitating additional authentication for transactions exceeding INR 15,000.
+* **Ease of subscription cancellation:** The new guidelines allow customers to cancel subscriptions directly through their bank account, bypassing the need to engage with the merchant for this purpose.
 
 # Key details
 
@@ -48,5 +48,5 @@ Recurly is actively working with its gateway partners to align with these mandat
 
 ## Recurly's response to the RBI's new guidelines
 
-To minimize the impact of these changes on your business, we recommend ceasing standard recurring payments for customers in India due to the high risk of declines, and instead, utilize Recurly’s new dunning campaigns. These automated messages will inform your Indian customers about expected payment declines and guide them on how to activate customer-initiated transactions (CIT). Offering multi-month or annual subscriptions can also be an effective strategy to reduce monthly confirmations by customers. With Recurly’s prepaid account balance functionality, you can allow subscribers to add to their prepaid account balance, and then decrement subscribers’ account balances monthly.  
+To minimize the impact of these changes on your business, we recommend ceasing standard recurring payments for customers in India due to the high risk of declines, and instead, utilize Recurly’s new dunning campaigns. These automated messages will inform your Indian customers about expected payment declines and guide them on how to activate customer-initiated transactions (CIT). Offering multi-month or annual subscriptions can also be an effective strategy to reduce monthly confirmations by customers. With Recurly’s prepaid account balance functionality, you can allow subscribers to add to their prepaid account balance, and then decrement subscribers’ account balances monthly.\
 For any additional questions, feel free to contact us. Your success in navigating these new RBI regulations is our priority.
