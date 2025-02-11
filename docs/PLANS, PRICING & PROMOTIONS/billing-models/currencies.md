@@ -29,10 +29,10 @@ The ability to accept payments in a customer's local currency can significantly 
 
 # Key benefits
 
-- **Broaden your customer base:** Support for 141 currencies opens up your business to a global audience, allowing you to cater to customers in their preferred local currency.
-- **Simplified financial management:** With all charges and credits in the same currency on a single invoice, financial management becomes streamlined, saving you time and reducing complexity.
-- **Enhanced customer experience:** Automatic selection of the most appropriate currency based on customer's geo-location improves user experience and boosts conversion rates.
-- **Flexible pricing models:** The ability to define prices independently by currency provides you with the flexibility to optimize pricing strategies in different markets.
+* **Broaden your customer base:** Support for 141 currencies opens up your business to a global audience, allowing you to cater to customers in their preferred local currency.
+* **Simplified financial management:** With all charges and credits in the same currency on a single invoice, financial management becomes streamlined, saving you time and reducing complexity.
+* **Enhanced customer experience:** Automatic selection of the most appropriate currency based on customer's geo-location improves user experience and boosts conversion rates.
+* **Flexible pricing models:** The ability to define prices independently by currency provides you with the flexibility to optimize pricing strategies in different markets.
 
 # Setting up multiple currencies
 
@@ -60,11 +60,11 @@ Recurly.js forms allow a currency parameter, enabling currency specification whe
 
 ## Invoices
 
-All charges and credits on an invoice will be in the same currency. As Recurly does not perform currency conversion, _charges in different currencies cannot be combined on the same invoice_.
+All charges and credits on an invoice will be in the same currency. As Recurly does not perform currency conversion, *charges in different currencies cannot be combined on the same invoice*.
 
 ## Subscriptions
 
-At the commencement of a new subscription, the currency is stored at the subscription level. _The currency of a subscription cannot be changed_ once the subscription has begun. For a change of currency, the current subscription must be terminated, and a new one must be initiated.
+At the commencement of a new subscription, the currency is stored at the subscription level. *The currency of a subscription cannot be changed* once the subscription has begun. For a change of currency, the current subscription must be terminated, and a new one must be initiated.
 
 ## Payment gateway support for multiple currencies
 
