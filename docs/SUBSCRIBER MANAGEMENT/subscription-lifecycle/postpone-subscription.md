@@ -24,11 +24,11 @@ The 'Postpone Subscription' feature in Recurly offers a solution to adjust a cus
 
 # Key benefits
 
-- **Billing flexibility:** Easily adjust billing cycles, meeting both business and customer needs.
-- **Cost-effective adjustments:** Instead of creating new subscription plans or making complex changes, simply postpone to align with specific dates.
-- **Enhanced customer experience:** Provide customers with tailored billing solutions without affecting their subscription services.
-- **Streamlined administrative processes:** Both API and Admin Console support make implementation smooth.
-- **Retention strategy:** Can cater to special requests or situations where a customer needs short-term changes, increasing loyalty.
+* **Billing flexibility:** Easily adjust billing cycles, meeting both business and customer needs.
+* **Cost-effective adjustments:** Instead of creating new subscription plans or making complex changes, simply postpone to align with specific dates.
+* **Enhanced customer experience:** Provide customers with tailored billing solutions without affecting their subscription services.
+* **Streamlined administrative processes:** Both API and Admin Console support make implementation smooth.
+* **Retention strategy:** Can cater to special requests or situations where a customer needs short-term changes, increasing loyalty.
 
 # Key details
 
@@ -56,5 +56,5 @@ Recurly’s feature to postpone doesn't invoice the customer for any extra time 
 
 # Important remarks
 
-- **Calendar Billing Note:** Adjusting a single subscription's bill date doesn't simultaneously modify all subscription bill dates for that account. For instance, if an account's subscriptions uniformly bill on the 15th of each month, changing one won't impact the rest.
-- **Alternative to Postponement:** Should you aim to skip several billing cycles without altering the regular billing date, consider the 'Pause Subscription' feature instead. [Read more about pausing subscriptions](https://docs.recurly.com/docs/pause-subscription).
+* **Calendar Billing Note:** Adjusting a single subscription's bill date doesn't simultaneously modify all subscription bill dates for that account. For instance, if an account's subscriptions uniformly bill on the 15th of each month, changing one won't impact the rest.
+* **Alternative to Postponement:** Should you aim to skip several billing cycles without altering the regular billing date, consider the 'Pause Subscription' feature instead. [Read more about pausing subscriptions](https://docs.recurly.com/docs/pause-subscription).
