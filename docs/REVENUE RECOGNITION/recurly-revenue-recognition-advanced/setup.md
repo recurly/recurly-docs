@@ -13,7 +13,7 @@ next:
   description: ''
 ---
 # Overview
-
+ 
 This feature is part of our product, Recurly Revenue Recognition Advanced. [<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
 
 ### Prerequisites
@@ -49,8 +49,8 @@ In Recurly Revenue Recognition Advanced, books are instrumental in determining t
 **Creating Books:**
 
 1. **Navigate to: **Set Up → Books
+<Image align="center" border="true" src="https://files.readme.io/69476ad-image.png" />
 
-   [block:image]{"images":[{"image":["https://files.readme.io/69476ad-image.png",null,null],"align":"center","border":true}]}[/block]
 2. **Click **on the “+” to initiate book creation. Ensure the following fields are completed:  
    - **Name:** Must be unique (e.g., Revenue subledger book).
    - **Compliance:** Choose the relevant accounting standard (e.g., ASC 606 or IFRS 15).
@@ -59,7 +59,8 @@ In Recurly Revenue Recognition Advanced, books are instrumental in determining t
    - **Status:** Mark as Active if the book is in use. Once deactivated, a book cannot be reactivated.
    - **System controls:** Choose among Allocation, forecasting, cost, posting. Note: Primary books must always have posting active.
 
-     [block:image]{"images":[{"image":["https://files.readme.io/3a64df9-image.png",null,null],"align":"center","border":true}]}[/block]
+<Image align="center" border="true" src="https://files.readme.io/3a64df9-image.png" />
+
 3. After setting up the book(s),** click the Save icon**.
 4. Once books are established, the Revenue workbench offers options to view contracts under each book individually or collectively. Reports are tailored based on the created books.
 
@@ -72,8 +73,7 @@ Profiles in Recurly Revenue Recognition Advanced are designed to set application
 **Configuring Profiles:**
 
 1. **Navigate** to: Set Up → Profiles
-
-   [block:image]{"images":[{"image":["https://files.readme.io/8ea6717-image.png",null,null],"align":"center","border":true}]}[/block]
+<Image align="center" border="true" src="https://files.readme.io/8ea6717-image.png" />
 
 2. **Profile Options:**  
    - **Account separator:** Specifies the value for account separation.
@@ -105,8 +105,8 @@ Attribute labels bridge the gap between Recurly attribute names and their counte
 **Setting up Attribute Labels:**
 
 1. **Navigate to** Setup → Attribute Labels.
+<Image align="center" border="true" src="https://files.readme.io/735ad0b-image.png" />
 
-   [block:image]{"images":[{"image":["https://files.readme.io/735ad0b-image.png",null,null],"align":"center","border":true}]}[/block]
 2. **Adjust** and add attribute labels as required.
 3. **Click **the Save icon after configuration.
 
@@ -123,7 +123,7 @@ Segments help define a company's accounting structure, typically based on report
 2. **Select** “Segment”.
 3. **Click **“+” to add new segments and mark the natural segment containing the account.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/3c26ee3-image.png",null,null],"align":"center","border":true}]}[/block]
+<Image align="center" border="true" src="https://files.readme.io/3c26ee3-image.png" />
 
 ### Segment mapper
 
@@ -151,8 +151,8 @@ Users can create custom events in Recurly Revenue Recognition Advanced, such as:
 **Configuring Events:**
 
 1. **Navigate** to Set up → Events
+<Image align="center" border="true" src="https://files.readme.io/9648676-image.png" />
 
-   [block:image]{"images":[{"image":["https://files.readme.io/9648676-image.png",null,null],"align":"center","border":true}]}[/block]
 2. **Fill in **the necessary fields and select options as needed.
 3. After setting up the event, **click the Save icon**.
 
@@ -161,8 +161,7 @@ Users can create custom events in Recurly Revenue Recognition Advanced, such as:
 Before uploading an event file to Recurly Revenue Recognition Advanced, it's essential to link the business event with a POB.
 
 1. **Navigate** to the desired POB. Within the revenue release tab, click on the "+" icon. From the dropdown, choose the event and specify the percentage of revenue release based on the chosen event (set to 100 if it's the only one).
-
-   [block:image]{"images":[{"image":["https://files.readme.io/a76fa5f-image.png",null,"POB Association"],"align":"center","border":true}]}[/block]
+<Image align="center" border="true" caption="POB Association" src="https://files.readme.io/a76fa5f-image.png" />
 
 2. Multiple events can be linked in Recurly Revenue Recognition Advanced. Additionally, you have the flexibility to edit or delete revenue release events.
 
