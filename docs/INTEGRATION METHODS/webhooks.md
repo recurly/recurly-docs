@@ -26,11 +26,11 @@ Webhooks serve as alerts, notifying your systems and partner applications of act
 
 # Key benefits
 
-- **Real-time updates**: Stay informed on significant events within Recurly as they happen.
-- **Enhanced security**: Benefit from HTTP Basic Authentication for secure data transmission.
-- **Reduced PCI scope**: Minimize PCI compliance burden with indirect handling of sensitive payment information.
-- **Improved error handling**: Enjoy automatic retries for enhanced error resolution.
-- **Payload format flexibility**: Choose between JSON and XML payload formats for tailored data handling.
+* **Real-time updates**: Stay informed on significant events within Recurly as they happen.
+* **Enhanced security**: Benefit from HTTP Basic Authentication for secure data transmission.
+* **Reduced PCI scope**: Minimize PCI compliance burden with indirect handling of sensitive payment information.
+* **Improved error handling**: Enjoy automatic retries for enhanced error resolution.
+* **Payload format flexibility**: Choose between JSON and XML payload formats for tailored data handling.
 
 # Key details
 
@@ -38,7 +38,7 @@ Webhooks serve as alerts, notifying your systems and partner applications of act
 
 Recurly takes the security of webhooks seriously. If a webhook delivery fails, it will be retried. Webhooks also support HTTP Basic Authentication, ensuring that the request originates from Recurly's servers. Always refer to the [IP Allowlist documentation](https://docs.recurly.com/docs/ip-allowlist) for the current list of Recurly IPs and configure your endpoint to accept only these IPs.
 
-> **Note**: Recurly does not advocate the use of specific web servers or plugins. However, if using Apache with ModSecurity, you may need to disable rule #990011 in mod_security to unblock webhooks.
+> **Note**: Recurly does not advocate the use of specific web servers or plugins. However, if using Apache with ModSecurity, you may need to disable rule #990011 in mod\_security to unblock webhooks.
 
 ## Webhook details
 
@@ -50,7 +50,7 @@ If Recurly receives an error in response to a webhook, the notification will be 
 
 ## Manual retries
 
-Notifications can be individually retried by clicking on them and then pressing the Retry button.  
+Notifications can be individually retried by clicking on them and then pressing the Retry button.\
 Notifications that are paused or failed can be bulk retried by selecting the appropriate button in the Webhook Actions select dropdown.
 
 ## Notification types
