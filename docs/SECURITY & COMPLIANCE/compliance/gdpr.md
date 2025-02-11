@@ -21,11 +21,11 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 While the General Data Protection Regulation (GDPR) provides extensive data protection measures, it is essential to recognize its limitations and constraints, both for businesses and consumers.
 
-- **Geographical constraints:** GDPR applies to the European Union and data transferred out of it. Therefore, data protection standards may vary for regions outside the EU and UK, even when dealing with the same multinational corporation.
-- **Business size and scope:** Smaller businesses and startups may face difficulties due to the cost and complexity of GDPR compliance. These organizations may lack the necessary resources to meet all GDPR requirements effectively.
-- **Data transfer limitations:** While Standard Contractual Clauses (SCCs) provide a legal basis for transferring data from the EU and UK to the US, it's not a one-size-fits-all solution. There are cases where other legal bases may be more suitable.
-- **Enforcement challenges:** Despite GDPR's extensive reach, enforcement can be challenging due to differences in interpretation and implementation among UK and  EU member states.
-- **End user awareness:** For GDPR to be truly effective, end users need to be aware of their rights under this regulation. However, not all users fully understand their rights and how to exercise them.
+* **Geographical constraints:** GDPR applies to the European Union and data transferred out of it. Therefore, data protection standards may vary for regions outside the EU and UK, even when dealing with the same multinational corporation.
+* **Business size and scope:** Smaller businesses and startups may face difficulties due to the cost and complexity of GDPR compliance. These organizations may lack the necessary resources to meet all GDPR requirements effectively.
+* **Data transfer limitations:** While Standard Contractual Clauses (SCCs) provide a legal basis for transferring data from the EU and UK to the US, it's not a one-size-fits-all solution. There are cases where other legal bases may be more suitable.
+* **Enforcement challenges:** Despite GDPR's extensive reach, enforcement can be challenging due to differences in interpretation and implementation among UK and  EU member states.
+* **End user awareness:** For GDPR to be truly effective, end users need to be aware of their rights under this regulation. However, not all users fully understand their rights and how to exercise them.
 
 # Definition
 
@@ -33,10 +33,10 @@ Data Hosting with Recurly provides flexible options for your data storage across
 
 # Key benefits
 
-- **Ensure regional compliance: **With data centers in the US and EU, Recurly enables you to meet regional data residency requirements.
-- **Flexibility and control:** When setting up your Recurly account, you can choose your preferred data hosting region. This offers a degree of control over where your data is stored. However, please note that data processing may still occur outside your chosen region, including regions outside the EU.
-- **Comprehensive coverage:** All data - from what's visible in the Recurly UI to APIs, webhooks, exports, and hosted pages - is processed and stored within your chosen region.
-- **Uniform service quality:** Enjoy consistent performance and GDPR compliance across all our data centers.
+* **Ensure regional compliance:** With data centers in the US and EU, Recurly enables you to meet regional data residency requirements.
+* **Flexibility and control:** When setting up your Recurly account, you can choose your preferred data hosting region. This offers a degree of control over where your data is stored. However, please note that data processing may still occur outside your chosen region, including regions outside the EU.
+* **Comprehensive coverage:** All data - from what's visible in the Recurly UI to APIs, webhooks, exports, and hosted pages - is processed and stored within your chosen region.
+* **Uniform service quality:** Enjoy consistent performance and GDPR compliance across all our data centers.
 
 # Key details
 
