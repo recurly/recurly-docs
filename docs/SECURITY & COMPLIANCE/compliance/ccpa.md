@@ -25,9 +25,9 @@ CCPA, the California’s Consumer Privacy Act, is a legislation aimed at improvi
 
 # Key benefits
 
-- **Robust data security:** Recurly's commitment to the CCPA ensures the highest standards of data security.
-- **Transparency and control:** Recurly provides clear and accessible mechanisms for users to exercise their rights under the CCPA, including the right to access their personal information and request its deletion.
-- **Comprehensive compliance:** Recurly's alignment with CCPA regulations offers peace of mind to users, demonstrating the company's commitment to upholding stringent data privacy standards and legal obligations.
+* **Robust data security:** Recurly's commitment to the CCPA ensures the highest standards of data security.
+* **Transparency and control:** Recurly provides clear and accessible mechanisms for users to exercise their rights under the CCPA, including the right to access their personal information and request its deletion.
+* **Comprehensive compliance:** Recurly's alignment with CCPA regulations offers peace of mind to users, demonstrating the company's commitment to upholding stringent data privacy standards and legal obligations.
 
 # Recurly's commitment to CCPA
 
@@ -37,10 +37,10 @@ As a thriving entity within the dynamic business landscape of California, Recurl
 
 Recurly's commitment to CCPA can be demonstrated through its alignment with key elements of the Act:
 
-- **Section 1798.135 - Opt-Out Right for Sales:** This provision does not apply as Recurly ensures the personal information of its users is never sold.
-- **Section 1798.150 - Right of Action:** Recurly, upholding the highest standard of data security, encrypts all personal information at rest, making this section irrelevant.
-- **Section 1798.130(b) - CCPA-Compliant Privacy Notice:** Recurly's Privacy Policy articulates our commitment to data privacy clearly and thoroughly.
-- **Section 1798.100(d) & 1798.105(c) - Right to Access and Deletion:** Recurly honors these rights by enabling users to request access to, or deletion of, their personal information via [compliance@recurly.com.](mailto:compliance@recurly.com.) Upon request, Recurly delivers the requested information, free of charge, in an electronic format within 45 days.
+* **Section 1798.135 - Opt-Out Right for Sales:** This provision does not apply as Recurly ensures the personal information of its users is never sold.
+* **Section 1798.150 - Right of Action:** Recurly, upholding the highest standard of data security, encrypts all personal information at rest, making this section irrelevant.
+* **Section 1798.130(b) - CCPA-Compliant Privacy Notice:** Recurly's Privacy Policy articulates our commitment to data privacy clearly and thoroughly.
+* **Section 1798.100(d) & 1798.105(c) - Right to Access and Deletion:** Recurly honors these rights by enabling users to request access to, or deletion of, their personal information via [compliance@recurly.com.](mailto:compliance@recurly.com.) Upon request, Recurly delivers the requested information, free of charge, in an electronic format within 45 days.
 
 However, please note that there might be instances where Recurly reserves the right to decline deletion requests. These may include, but are not limited to, situations involving transaction completion, detection of security incidents, debugging, legal obligations, or conducting research in the public interest.
 
