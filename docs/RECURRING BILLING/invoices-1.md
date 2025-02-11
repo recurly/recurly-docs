@@ -19,11 +19,11 @@ In Recurly, invoices serve as a comprehensive record of transactions between the
 
 # Key benefits
 
-- **Enhanced transparency:** Detailed breakdowns provide both merchants and subscribers clarity on financial exchanges.
-- **Adaptability:** Easily create invoices to accommodate changing subscriber needs or rectify errors.
-- **Optimized cash flow:** With tools to issue credit invoices, manage potential revenue losses, and retain customer trust.
-- **Streamlined operations:** Simplify the invoicing process with automated tools and integrations.
-- **Compliance and record-keeping:** Keep accurate financial records, aiding in tax compliance and financial analysis.
+* **Enhanced transparency:** Detailed breakdowns provide both merchants and subscribers clarity on financial exchanges.
+* **Adaptability:** Easily create invoices to accommodate changing subscriber needs or rectify errors.
+* **Optimized cash flow:** With tools to issue credit invoices, manage potential revenue losses, and retain customer trust.
+* **Streamlined operations:** Simplify the invoicing process with automated tools and integrations.
+* **Compliance and record-keeping:** Keep accurate financial records, aiding in tax compliance and financial analysis.
 
 # Key details
 
