@@ -11,7 +11,7 @@ next:
   description: ''
 ---
 > 📘 Updated Visa Documentation
-> 
+>
 > Visa has released updated documentation regarding the mandate. Please see our updated link below.
 
 ### COVID-19 Update from Visa
@@ -70,8 +70,8 @@ Visa’s Free Trial Mandate is designed to provide clearer information on subscr
 
 For more specific details, please review Visa’s documentation as linked below:
 
-_[COVID-19 Update](https://usa.visa.com/dam/VCOM/global/support-legal/documents/may-vbn.pdf)_  
-_[Updated documentation](https://usa.visa.com/dam/VCOM/global/support-legal/documents/recurring-vbn-public.pdf)_  
+*[COVID-19 Update](https://usa.visa.com/dam/VCOM/global/support-legal/documents/may-vbn.pdf)*\
+*[Updated documentation](https://usa.visa.com/dam/VCOM/global/support-legal/documents/recurring-vbn-public.pdf)*\
 [Summary Sheet](https://usa.review.visa.com/content/dam/VCOM/global/support-legal/documents/visa-new-subscription-rules-flier.pdf)
 
 ## Configuration
@@ -109,33 +109,33 @@ This template will be sent when the subscription is set to renew and a subscript
 
 The last pieces of the mandate state that certain information must be included in your transaction requests, which may appear on your customers’ statements. Since transactions processed through Recurly are submitted by Recurly on your behalf, we will be making the changes needed to support the mandate’s requirements. Specifically:
 
-- The first charge at the end of the trial period must include verbiage indicating that it is a trial related charge, which will appear on your customer’s statement, and
-- Every subsequent charge thereafter must include a recurring indicator flag when sent to your gateway.
+* The first charge at the end of the trial period must include verbiage indicating that it is a trial related charge, which will appear on your customer’s statement, and
+* Every subsequent charge thereafter must include a recurring indicator flag when sent to your gateway.
 
 The latter of the two points above is something that Recurly is already doing for any recurring charges sent to your gateway, so no additional updates will be needed to support this portion of the mandate. As for the former, Recurly is working with each gateway partner to identify the specific changes needed to support the mandate. In most cases, this is simply using a pre-existing field to pass “Trial” verbiage to your gateway when the first charge at the end of your trial period is processed. 
 
 > 📘 Note for DBA Name
-> 
+>
 > For certain gateways, you may need to configure your company's DBA (doing business as) name as this will be included in the transaction request. This will be configured under your Site Settings. Note, if this field is left blank, then Recurly will use the Site Name populated on your Site Settings page.
 
 **Here are the major changes you can expect:**
 
-If you use one of the following gateways, Recurly will pass the word “trial” with the first transaction processed at the end of the trial period, which will be appended to your DBA as it appears on your customers’ statements. _Gateway names marked with an asterisk will require you to contact your gateway to enable support for "Dynamic / Soft Descriptor" fields:_
+If you use one of the following gateways, Recurly will pass the word “trial” with the first transaction processed at the end of the trial period, which will be appended to your DBA as it appears on your customers’ statements. *Gateway names marked with an asterisk will require you to contact your gateway to enable support for "Dynamic / Soft Descriptor" fields:*
 
-- Adyen
-- CardConnect\*
-- Stripe
-- Wirecard\*
+* Adyen
+* CardConnect\*
+* Stripe
+* Wirecard\*
 
-If you use one of the following gateways, Recurly will pass the word “trial” along with the DBA Name value you currently have set under your Site Settings (Recurly will use the Company Name value if DBA Name is not set). Since this will appear on your customers’ statements with the first charge at the end of the trial period, please ensure this is updated according to your needs. _Gateway names marked with an asterisk will require you to contact your gateway to enable support for "Dynamic / Soft Descriptor" field(s):_
+If you use one of the following gateways, Recurly will pass the word “trial” along with the DBA Name value you currently have set under your Site Settings (Recurly will use the Company Name value if DBA Name is not set). Since this will appear on your customers’ statements with the first charge at the end of the trial period, please ensure this is updated according to your needs. *Gateway names marked with an asterisk will require you to contact your gateway to enable support for "Dynamic / Soft Descriptor" field(s):*
 
-- Braintree\*
-- Bambora
-- First Data GGe4\*
-- Payeezy Gateway\*
-- TSYS\*
-- Vantiv\*
-- WorldPay\*
+* Braintree\*
+* Bambora
+* First Data GGe4\*
+* Payeezy Gateway\*
+* TSYS\*
+* Vantiv\*
+* WorldPay\*
 
 Note: If your gateway is not listed above, then Recurly is still finalizing the necessary requirements with your gateway. We will actively update this page with new gateway partners as we receive final specifications from their teams.
 
@@ -180,7 +180,7 @@ Unique to Braintree, the statement descriptor formatting may differ depending on
 
 ## FAQ
 
-- **What happens if I offer a trial period with a duration of 7 days or less? How should I handle the required notifications?** **_Your initial email notification (that is sent at sign-up) will serve as both the subscription sign-up confirmation and the trial ending notification. Please ensure that it includes all necessary information as outlined by Visa._**
-- **What happens if there’s a subscription modification that occurs within 7 days of a customer’s renewal? How should I handle the required notifications?** _The 7 day notification requirement for subscription modifications only applies to changes performed by the merchant (i.e. you’re raising the prices of a user’s subscription without an express request from the end customer). If the change is requested by the user, then you can notify as normal even if this notification is within 7 days or less of their upcoming renewal._ 
-- **Can the “Trial” wording be customized?** _Currently, Recurly will use a standard “Trial” descriptor across all gateways. This will appear on the first charge at the end of the introductory promotional period and will not be seen on later, subsequent charges. At this time, this text cannot be customized._
-- **What are the consequences of non-compliance? Are there any fines that will be assessed by Visa?** _Visa will be expanding the dispute conditions for "misrepresentation" as they relate to free trial / promo related transactions. These can be remedied by providing evidence to Visa that you've acted appropriately by (1) providing proof that customers expressly agreed to future transactions and (2) proof that you've notified consumers according to the guidelines of this mandate. Currently, Visa has not announced any fees due to non-compliance (March 2019)._
+* **What happens if I offer a trial period with a duration of 7 days or less? How should I handle the required notifications?** ***Your initial email notification (that is sent at sign-up) will serve as both the subscription sign-up confirmation and the trial ending notification. Please ensure that it includes all necessary information as outlined by Visa.***
+* **What happens if there’s a subscription modification that occurs within 7 days of a customer’s renewal? How should I handle the required notifications?** *The 7 day notification requirement for subscription modifications only applies to changes performed by the merchant (i.e. you’re raising the prices of a user’s subscription without an express request from the end customer). If the change is requested by the user, then you can notify as normal even if this notification is within 7 days or less of their upcoming renewal.* 
+* **Can the “Trial” wording be customized?** *Currently, Recurly will use a standard “Trial” descriptor across all gateways. This will appear on the first charge at the end of the introductory promotional period and will not be seen on later, subsequent charges. At this time, this text cannot be customized.*
+* **What are the consequences of non-compliance? Are there any fines that will be assessed by Visa?** *Visa will be expanding the dispute conditions for "misrepresentation" as they relate to free trial / promo related transactions. These can be remedied by providing evidence to Visa that you've acted appropriately by (1) providing proof that customers expressly agreed to future transactions and (2) proof that you've notified consumers according to the guidelines of this mandate. Currently, Visa has not announced any fees due to non-compliance (March 2019).*
