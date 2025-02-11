@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+* Users must have Analytics user role permission.
 
 # Definition
 
@@ -30,11 +30,11 @@ Recurring Billing is a comprehensive feature that enables businesses to streamli
 
 # Key benefits
 
-- **Data-driven decisions: **Empower your strategic decision-making with in-depth and accurate data insights.
-- **Subscriber insights:** Understand your subscriber behavior, churn rates, and retention trends for personalized marketing.
-- **Financial analysis: **Dive into MRR, billings, recovered revenue and more to monitor your financial health.
-- **Performance overview: **Evaluate your trial performance and plan effectiveness for continual optimization.
-- **Dunning effectiveness: **Analyze the efficiency of your dunning (debt recovery) process for improved results.
+* **Data-driven decisions:** Empower your strategic decision-making with in-depth and accurate data insights.
+* **Subscriber insights:** Understand your subscriber behavior, churn rates, and retention trends for personalized marketing.
+* **Financial analysis:** Dive into MRR, billings, recovered revenue and more to monitor your financial health.
+* **Performance overview:** Evaluate your trial performance and plan effectiveness for continual optimization.
+* **Dunning effectiveness:** Analyze the efficiency of your dunning (debt recovery) process for improved results.
 
 # Key details
 
