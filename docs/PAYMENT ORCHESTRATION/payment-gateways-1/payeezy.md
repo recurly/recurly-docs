@@ -24,10 +24,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 To initiate the connection to your Payeezy account through Recurly, you will need to have:
 
-- A Payeezy account
-- API Key
-- API Secret
-- Merchant Token
+* A Payeezy account
+* API Key
+* API Secret
+* Merchant Token
 
 # Definition
 
@@ -37,46 +37,16 @@ Payeezy is a dynamic payment gateway integrated into the Recurly platform, lever
 
 ## Connection to Payeezy
 
-Recurly extends support for First Data’s reputable Payeezy gateway, paving the path for secure and seamless transaction processing. To connect to your Payeezy account via Recurly, it is requisite to have your API Key, API Secret, and Merchant Token at hand.  
+Recurly extends support for First Data’s reputable Payeezy gateway, paving the path for secure and seamless transaction processing. To connect to your Payeezy account via Recurly, it is requisite to have your API Key, API Secret, and Merchant Token at hand.\
 Upon setting up your Payeezy credentials accurately, Recurly takes the onus of verifying the details to ensure a smooth integration. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c79e595-payeezy-api-credentials.png",
-        "payeezy-api-credentials.png",
-        "Payeezy API Credentials"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/c79e595-payeezy-api-credentials.png" />
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fec7532-payeezy-credentials2.png",
-        "payeezy-credentials2.png",
-        "Payeezy Credentials 2"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/fec7532-payeezy-credentials2.png" />
 
 #### CVV Settings
 
-In the bid to curtail fraudulent transactions, utilizing CVV settings stands paramount. Recurly showcases the competency to distinctly identify a subscription signup from a renewal transaction, hence it is advised to disable the CVV checks in Payeezy while enabling them in Recurly for enhanced security.  
+In the bid to curtail fraudulent transactions, utilizing CVV settings stands paramount. Recurly showcases the competency to distinctly identify a subscription signup from a renewal transaction, hence it is advised to disable the CVV checks in Payeezy while enabling them in Recurly for enhanced security.\
 By setting up the CVV preferences judiciously, one can foster a secure transaction environment, shielding your business from potential frauds.
 
 # Key Details
