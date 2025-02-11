@@ -24,11 +24,11 @@ A subscription allows customers to access your products or services for a specif
 
 # Key benefits
 
-- **Flexibility:** Offer subscriptions that start immediately, with a trial, or at a future date.
-- **Customization:** Override the default settings to set up tailor-made subscriptions, including prices, term length, and add-ons.
-- **Automation:** Let Recurly handle the billing, freeing you to focus on enhancing your product and serving your customers.
-- **Multiple integration options:** Whether it's via the Admin Console, Checkout, Hosted Payment Pages, or the API, choose the method that best suits your business.
-- **Enhanced customer experience:** With features like automatic renewals and multiple currency support, provide a smooth and localized customer journey.
+* **Flexibility:** Offer subscriptions that start immediately, with a trial, or at a future date.
+* **Customization:** Override the default settings to set up tailor-made subscriptions, including prices, term length, and add-ons.
+* **Automation:** Let Recurly handle the billing, freeing you to focus on enhancing your product and serving your customers.
+* **Multiple integration options:** Whether it's via the Admin Console, Checkout, Hosted Payment Pages, or the API, choose the method that best suits your business.
+* **Enhanced customer experience:** With features like automatic renewals and multiple currency support, provide a smooth and localized customer journey.
 
 # How to create a subscription
 
@@ -41,240 +41,82 @@ The journey to create a subscription is straightforward, and Recurly offers mult
 
 ## Creating a subscription in Recurly
 
-1. **Navigate **to “Customers” → Accounts.
-2. **Select **an account. 
+1. **Navigate** to “Customers” → Accounts.
+2. **Select** an account. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/286d380-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/286d380-image.png" />
 
 3. **Press** "Add subscription".
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/930c6d6-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/930c6d6-image.png" />
 
-
-4. **Fill **in all of the fields, described below:
+4. **Fill** in all of the fields, described below:
 
 **Subscription Details**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0abf905-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/0abf905-image.png" />
 
 This section captures the core aspects of the subscription. 
 
-- **Plan**: The core subscription model the customer is choosing. This is a mandatory field as it determines the features or services the subscriber will access.
-- **Currency**: This is the currency in which the customer will be billed. Essential for businesses operating across different regions.
-- **Price per billing period**: Indicates the amount a customer will be charged each cycle. This can be specified per unique subscription created, though Recurly can also auto-populate it based on the chosen plan & respective plan configuration.
-- **Quantity**: Represents how many units of the plan the subscriber is opting for. This could correspond to the number of users, licenses, or any other measurable metric relevant to the subscription.
-- **Description, billing period, setup fee, and trial length**: These fields auto-populate from the default settings defined during the creation of the subscription. They offer information about the plan, the frequency of billing, any initial fees, and if there's a trial period involved.
+* **Plan**: The core subscription model the customer is choosing. This is a mandatory field as it determines the features or services the subscriber will access.
+* **Currency**: This is the currency in which the customer will be billed. Essential for businesses operating across different regions.
+* **Price per billing period**: Indicates the amount a customer will be charged each cycle. This can be specified per unique subscription created, though Recurly can also auto-populate it based on the chosen plan & respective plan configuration.
+* **Quantity**: Represents how many units of the plan the subscriber is opting for. This could correspond to the number of users, licenses, or any other measurable metric relevant to the subscription.
+* **Description, billing period, setup fee, and trial length**: These fields auto-populate from the default settings defined during the creation of the subscription. They offer information about the plan, the frequency of billing, any initial fees, and if there's a trial period involved.
 
 **Add-ons**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4a5ace5-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/4a5ace5-image.png" />
 
 In this section, additional services or features can be added to the main subscription. These could be supplementary tools, extended capacities, or any other value-added elements that aren't part of the core plan.
 
 **Timing**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/29c4802-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/29c4802-image.png" />
 
 This section dictates when and how long the subscription lasts:
 
-- **Start subscription**: Choose to begin the subscription immediately or set a future date for its commencement.
-- **Subscription term**: Define the length of the initial subscription in terms of billing periods, e.g., 12 monthly billing cycles would imply a year-long subscription.
-- **At the end of the subscription term**: Decide the behavior post the completion of the initial term - whether to automatically renew the subscription or let it expire.
-- **Renewal subscription term**: If opting for auto-renewal, specify the length of the renewal term in billing periods.
+* **Start subscription**: Choose to begin the subscription immediately or set a future date for its commencement.
+* **Subscription term**: Define the length of the initial subscription in terms of billing periods, e.g., 12 monthly billing cycles would imply a year-long subscription.
+* **At the end of the subscription term**: Decide the behavior post the completion of the initial term - whether to automatically renew the subscription or let it expire.
+* **Renewal subscription term**: If opting for auto-renewal, specify the length of the renewal term in billing periods.
 
 **Shipping**
 
-For products or services that require physical delivery, **check **the "Include Shipping" box and **enter **a new shipping address to ensure accurate delivery.
+For products or services that require physical delivery, **check** the "Include Shipping" box and **enter** a new shipping address to ensure accurate delivery.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bf72b16-image.png",
-        null,
-        "Add a shipping fee if required."
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Add a shipping fee if required."
-    }
-  ]
-}
-[/block]
+<Image alt="Add a shipping fee if required." align="center" width="50% " border={true} src="https://files.readme.io/bf72b16-image.png">
+  Add a shipping fee if required.
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e44366-image.png",
-        null,
-        "Fill in the shipping address details."
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true,
-      "caption": "Fill in the shipping address details."
-    }
-  ]
-}
-[/block]
-
+<Image alt="Fill in the shipping address details." align="center" width="50% " border={true} src="https://files.readme.io/1e44366-image.png">
+  Fill in the shipping address details.
+</Image>
 
 **Coupons & gift cards**
 
 Here, any promotional codes or discounts can be applied. Coupons might offer a percentage off, a fixed amount reduction.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9b65d37-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/9b65d37-image.png" />
 
 Subscribers can redeem gift cards. This could either cover the entire subscription cost or provide a partial offset.
 
 **Invoicing**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f3e081-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/0f3e081-image.png" />
 
 This section focuses on the billing specifics:
 
-- **Collection method**: Select a payment collection method from the dropdown menu, including direct debit, credit card, online gateways, or other methods.
-  - **Automatic collection**: Upon invoice generation, Recurly will attempt to collect payment using the billing information associated with the account.
-  - **Manual collection**: Payment collection will not be initiated upon invoice generation. Instead, the merchant will handle payment collection externally (e.g., via check) and will manually update the invoice to "paid" in Recurly once payment is received and processed outside of the platform.
-- **PO number**: Fill in the Purchase Order number if it's relevant to the transaction.
-- **Note to customer**: Add any specific messages or instructions for the subscriber.
-- **Terms and conditions**: Specify the legal clauses, policies, and stipulations that the subscriber agrees to during the transaction.
+* **Collection method**: Select a payment collection method from the dropdown menu, including direct debit, credit card, online gateways, or other methods.
+  * **Automatic collection**: Upon invoice generation, Recurly will attempt to collect payment using the billing information associated with the account.
+  * **Manual collection**: Payment collection will not be initiated upon invoice generation. Instead, the merchant will handle payment collection externally (e.g., via check) and will manually update the invoice to "paid" in Recurly once payment is received and processed outside of the platform.
+* **PO number**: Fill in the Purchase Order number if it's relevant to the transaction.
+* **Note to customer**: Add any specific messages or instructions for the subscriber.
+* **Terms and conditions**: Specify the legal clauses, policies, and stipulations that the subscriber agrees to during the transaction.
 
 4. Lastly, always preview the invoice before finalizing. It provides a glimpse into the financial documentation generated for the customer. Not only does it bolster accuracy, but it also fosters confidence in the subscription process. If you need more granular control or face any hiccups, don't hesitate to reach out to Recurly's support team at [support@recurly.com](mailto:support@recurly.com).
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2ddc27f-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/2ddc27f-image.png" />
 
 ## Subscription options considerations
 
