@@ -20,16 +20,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- A Recurly account with administrator access.
-- Familiarity with the Recurly dashboard and gateway configurations.
+* A Recurly account with administrator access.
+* Familiarity with the Recurly dashboard and gateway configurations.
 
 ### Limitations
 
-- Test Gateway transactions are solely for testing and do not represent real monetary transactions.
-- Not all real-world error scenarios can be simulated.
-- Transaction results in the Test Gateway may not always reflect outcomes in a live gateway setting.
-
-
+* Test Gateway transactions are solely for testing and do not represent real monetary transactions.
+* Not all real-world error scenarios can be simulated.
+* Transaction results in the Test Gateway may not always reflect outcomes in a live gateway setting.
 
 # Definition
 
@@ -37,10 +35,10 @@ The Test Gateway in Recurly offers a simulated environment, letting you test tra
 
 # Key benefits
 
-- **Risk-free testing:** Trial run configurations without the concern of real-world consequences.
-- **Diverse scenarios:** Simulate various transaction outcomes, from success to multiple decline reasons.
-- **3DS2 ready:** Test the 3DS2 challenge flows without actual cardholder authentication.
-- **Comprehensive feedback:** Understand potential issues and troubleshoot with immediate feedback.
+* **Risk-free testing:** Trial run configurations without the concern of real-world consequences.
+* **Diverse scenarios:** Simulate various transaction outcomes, from success to multiple decline reasons.
+* **3DS2 ready:** Test the 3DS2 challenge flows without actual cardholder authentication.
+* **Comprehensive feedback:** Understand potential issues and troubleshoot with immediate feedback.
 
 # Test credit card numbers
 
@@ -51,7 +49,7 @@ With the Test Gateway activated, various credit card numbers are at your disposa
 | Card Number         | Outcome                                                                                                                  |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | 4111-1111-1111-1111 | Success.                                                                                                                 |
-| 4222-2222-2222-2220 | Success, but flagged for Fraud Review by the gateway (_Note: Relevant only to PayPal gateways when in production mode._) |
+| 4222-2222-2222-2220 | Success, but flagged for Fraud Review by the gateway (*Note: Relevant only to PayPal gateways when in production mode.*) |
 | 4000000000002024    | Successful purchase with a declined refund.                                                                              |
 
 ## Other successful numbers
@@ -144,19 +142,19 @@ Testing ACH does not test your gateway connection, but uses an internal Recurly 
 
 ### Accessing the Test Gateway
 
-- Navigate to the "Payment Gateways" section after logging into your Recurly account.
-- The Test Gateway is active by default on your Recurly Sandbox.
+* Navigate to the "Payment Gateways" section after logging into your Recurly account.
+* The Test Gateway is active by default on your Recurly Sandbox.
 
 ### Testing with Credit Card Numbers
 
-- Start a transaction using one of the provided test credit card numbers.
-- Observe the system's response and act accordingly.
+* Start a transaction using one of the provided test credit card numbers.
+* Observe the system's response and act accordingly.
 
 ### Testing with Bank Account Numbers (ACH)
 
-- Through the API, Hosted Account Management pages, or the "Make a Payment" option on the hosted invoice page, input a bank account detail.
+* Through the API, Hosted Account Management pages, or the "Make a Payment" option on the hosted invoice page, input a bank account detail.
   > **Note:** Direct input through Admin is restricted due to NACHA regulations.
-- Initiate a transaction using one of the provided test bank account numbers.
-- Monitor the simulated response.
+* Initiate a transaction using one of the provided test bank account numbers.
+* Monitor the simulated response.
 
 In conclusion, Recurly’s Test Gateway provides a simulated and safe environment for businesses to ensure their configurations are correctly set up, reducing the likelihood of issues when running live transactions.
