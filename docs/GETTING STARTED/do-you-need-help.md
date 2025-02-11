@@ -15,6 +15,17 @@ metadata:
 next:
   description: ''
 ---
+\<Cards columns=\{2}>
+&#x20; \<Card title="First Card" href="https\://readme.com" icon="fa-home" target="\_blank">
+&#x20;   Neque porro quisquam est qui dolorem ipsum quia
+&#x20; \</Card>
+
+&#x20; \<Card title="Second Card" icon="fa-user">
+&#x20;   \*Lorem ipsum dolor sit amet, consectetur adipiscing elit\*
+&#x20; \</Card>
+&#x20; \</Card>
+\</Cards>
+
 # Support channels
 
 We're here to assist you every step of the way! Feel free to reach out to our dedicated support team through the following channels.
