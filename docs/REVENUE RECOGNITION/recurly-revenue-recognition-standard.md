@@ -44,26 +44,26 @@ The end result is a significant reduction in audit and revenue reporting errors,
 
 1. **[Apply](https://docs.recurly.com/docs/recurly-revenue-recognition-standard-edition-setup)** the appropriate rules to each of the products you offer, such as plans, items, add-ons, and set-up fees.
 2. **Go** through the validation and [activation](https://docs.recurly.com/docs/activation) protocol to ensure accurate rule application and reduce errors. 
-3. **Examine **the information after it flows into the [reporting](https://docs.recurly.com/docs/recurly-revenue-recognition-standard-reports).
+3. **Examine** the information after it flows into the [reporting](https://docs.recurly.com/docs/recurly-revenue-recognition-standard-reports).
 
 ## Helpful tips for using Recurly Revenue Recognition Standard
 
-- Carefully and accurately configure the settings to ensure precise revenue recognition.
-- Regularly review the key reports to monitor your revenue streams, identify potential issues, and discover areas for improvement.
-- Follow-up on how each line item on the invoice was recognized at the bottom of invoices.
-- Consider seeking guidance from an accountant or financial professional to ensure compliance with accounting standards and best practices.
-- To maximize the benefits of Recurly revenue recognition standard, we recommend regularly reviewing the key reports, monitoring revenue streams, and using the insights gained to make informed business decisions and optimize your revenue recognition process.
+* Carefully and accurately configure the settings to ensure precise revenue recognition.
+* Regularly review the key reports to monitor your revenue streams, identify potential issues, and discover areas for improvement.
+* Follow-up on how each line item on the invoice was recognized at the bottom of invoices.
+* Consider seeking guidance from an accountant or financial professional to ensure compliance with accounting standards and best practices.
+* To maximize the benefits of Recurly revenue recognition standard, we recommend regularly reviewing the key reports, monitoring revenue streams, and using the insights gained to make informed business decisions and optimize your revenue recognition process.
 
 # FAQ
 
 **Q:** Is it a prerequisite to be on the Professional plan for Standard and on the Elite plan for Advanced?
 
-**A: **There are no prerequisites for the Standard edition, allowing you to access it without any specific plan requirement. However, for the Advanced edition, it is necessary to be on an annual plan to be eligible. If you need assistance in selecting the best option for your needs, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+**A:** There are no prerequisites for the Standard edition, allowing you to access it without any specific plan requirement. However, for the Advanced edition, it is necessary to be on an annual plan to be eligible. If you need assistance in selecting the best option for your needs, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
-**Q: **Can I purchase the Standard edition as a standalone product?
+**Q:** Can I purchase the Standard edition as a standalone product?
 
-**A: **No, the Standard edition of Recurly Revenue Recognition is not available as a standalone product. It is a feature embedded right within the Recurly platform. To access the Standard edition, you will need a Recurly subscription. However, <a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Recurly Revenue Recognition Advanced</a> is available for purchase as a standalone product.
+**A:** No, the Standard edition of Recurly Revenue Recognition is not available as a standalone product. It is a feature embedded right within the Recurly platform. To access the Standard edition, you will need a Recurly subscription. However, <a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Recurly Revenue Recognition Advanced</a> is available for purchase as a standalone product.
 
-**Q: **Which is better for me - the standard or advanced solution of Recurly revenue recognition?
+**Q:** Which is better for me - the standard or advanced solution of Recurly revenue recognition?
 
 **A:** To determine which version of Recurly revenue recognition—standard or advanced—is the best fit for your business needs, please reach out to our support team at [support@recurly.com.](mailto:support@recurly.com.) They can initiate discussions with the appropriate personnel to assist you in making an informed decision.
