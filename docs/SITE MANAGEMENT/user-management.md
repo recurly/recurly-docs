@@ -16,7 +16,6 @@ next:
 #### Single Sign-On Settings
 
 Single Sign-On (SSO/2FA) settings are available for Recurly merchants on Pro or Elite plans. SSO was previously accessible via the User’s page, and is now its own page, accessible via the left-hand navigation panel. 
- 
 
 #### Search for Users
 
@@ -43,6 +42,7 @@ You can create multiple Recurly sites for production and testing. Go to [https:/
 Inside [your Users control panel][1], click **Invite User** to access [the invitation page][2]. Enter in a user's email address and select the appropriate role. Your user will be sent an email to log in and configure their name and password.
 
 [1]: https://app.recurly.com/go/users
+
 [2]: https://app.recurly.com/go/users/new
 
 #### Removing Users
