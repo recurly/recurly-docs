@@ -18,11 +18,11 @@ Subscription Lifecycle within Recurly refers to the various stages and actions a
 
 # Key benefits
 
-- **Holistic subscriber management:** Complete visibility and control over each stage of a subscriber's lifecycle.
-- **Adaptable solutions:** Easily modify, pause, or postpone subscriptions according to subscriber preferences or business needs.
-- **Optimized revenue streams:** Minimize churn and maximize revenue through efficient lifecycle management tools.
-- **Enhanced user experience:** Provide subscribers with tailored options and flexibility in their subscription journey.
-- **Streamlined multiple subscription handling:** Efficiently manage subscribers with multiple active subscriptions.
+* **Holistic subscriber management:** Complete visibility and control over each stage of a subscriber's lifecycle.
+* **Adaptable solutions:** Easily modify, pause, or postpone subscriptions according to subscriber preferences or business needs.
+* **Optimized revenue streams:** Minimize churn and maximize revenue through efficient lifecycle management tools.
+* **Enhanced user experience:** Provide subscribers with tailored options and flexibility in their subscription journey.
+* **Streamlined multiple subscription handling:** Efficiently manage subscribers with multiple active subscriptions.
 
 # Key details
 
