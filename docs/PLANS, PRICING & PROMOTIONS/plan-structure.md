@@ -25,10 +25,10 @@ A Plan Structure is a strategic organization of your products or services. It in
 
 # Key benefits
 
-- **Effective product management:** Easily define and manage recurring products, add-ons, and sellable units through Recurly's UI.
-- **Increased monetization:** With add-ons, provide additional services/products to customers, driving up revenue.
-- **Streamlined operations:** A well-structured plan simplifies operations and helps to track sales effectively.
-- **Customer centric:** Tailor your offerings to meet diverse customer needs with flexible plans and add-ons.
+* **Effective product management:** Easily define and manage recurring products, add-ons, and sellable units through Recurly's UI.
+* **Increased monetization:** With add-ons, provide additional services/products to customers, driving up revenue.
+* **Streamlined operations:** A well-structured plan simplifies operations and helps to track sales effectively.
+* **Customer centric:** Tailor your offerings to meet diverse customer needs with flexible plans and add-ons.
 
 # Key details
 
