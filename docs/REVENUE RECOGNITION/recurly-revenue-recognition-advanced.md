@@ -29,21 +29,21 @@ Recurly Revenue Recognition Advanced is an innovative solution tailored for busi
 
 # Key benefits
 
-- **Automated compliance:** Seamlessly adhere to ASC 606, IFRS 15/16, ASC 842, and ASC 340-40 standards, ensuring your revenue recognition is always compliant.
-- **Real-time revenue insights:** Gain immediate visibility into your revenue performance, aiding in informed decision-making and accurate forecasting.
-- **Streamlined financial operations:** Simplify complex processes with automated contract modifications, SSO authentication, and multi-revenue model support.
-- **Multi-currency & multi-book capabilities:** Expand your global reach with support for various currencies and accounting books.
-- **Dedicated support:** Benefit from continuous feature enhancements, subscription strategy guidance, and dedicated account management.
+* **Automated compliance:** Seamlessly adhere to ASC 606, IFRS 15/16, ASC 842, and ASC 340-40 standards, ensuring your revenue recognition is always compliant.
+* **Real-time revenue insights:** Gain immediate visibility into your revenue performance, aiding in informed decision-making and accurate forecasting.
+* **Streamlined financial operations:** Simplify complex processes with automated contract modifications, SSO authentication, and multi-revenue model support.
+* **Multi-currency & multi-book capabilities:** Expand your global reach with support for various currencies and accounting books.
+* **Dedicated support:** Benefit from continuous feature enhancements, subscription strategy guidance, and dedicated account management.
 
 # Key details
 
 Recurly's advanced revenue recognition solution is a game-changer for businesses aiming for precision and compliance in their financial operations. With its robust compliance features, it ensures adherence to standards like ASC 606, IFRS 15/16, ASC 842, and ASC 340-40. The platform's capabilities extend beyond just compliance:
 
-- **Automated contract modifications:** Say goodbye to manual adjustments. Automate complex contract changes with ease.
-- **Single-sign-on (SSO) authentication:** Enhance security and user experience with SSO capabilities.
-- **Automated revenue recognition & expense allocations:** Streamline your financial processes, ensuring accuracy and efficiency.
-- **Real-time revenue insights & forecasting:** Stay ahead with immediate insights into your revenue performance and accurate forecasting tools.
-- **Multi-currency & multi-book support:** Cater to a global audience with support for various currencies and accounting books, ensuring you never miss out on any revenue opportunity.
+* **Automated contract modifications:** Say goodbye to manual adjustments. Automate complex contract changes with ease.
+* **Single-sign-on (SSO) authentication:** Enhance security and user experience with SSO capabilities.
+* **Automated revenue recognition & expense allocations:** Streamline your financial processes, ensuring accuracy and efficiency.
+* **Real-time revenue insights & forecasting:** Stay ahead with immediate insights into your revenue performance and accurate forecasting tools.
+* **Multi-currency & multi-book support:** Cater to a global audience with support for various currencies and accounting books, ensuring you never miss out on any revenue opportunity.
 
 By integrating Recurly's advanced solution, businesses can optimize their revenue management processes, simplify operations, and drive growth with real-time revenue performance insights.
 
