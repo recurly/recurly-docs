@@ -20,18 +20,18 @@ This feature is only available to customers on the Elite subscription plan. To r
 
 ### Prerequisites
 
-- Enrollment in the Recurly Elite plan is required.
-- An operational and active Vindicia Retain account is required before the integration can be enabled.
+* Enrollment in the Recurly Elite plan is required.
+* An operational and active Vindicia Retain account is required before the integration can be enabled.
 
 ### Limitations
 
-- Integration works only for users using Recurly’s Stripe, Adyen, Cybersource, Chase, or Braintree payment integrations.
+* Integration works only for users using Recurly’s Stripe, Adyen, Cybersource, Chase, or Braintree payment integrations.
 
-- Integration does not support partial payments/collections.
+* Integration does not support partial payments/collections.
 
-- Once enabled, integration only works on net new past due invoices (not past due invoices that are currently in dunning).
+* Once enabled, integration only works on net new past due invoices (not past due invoices that are currently in dunning).
 
-- This functionality is not available to test in sandbox, and there is no ability to A/B test.
+* This functionality is not available to test in sandbox, and there is no ability to A/B test.
 
 # Definition
 
@@ -39,9 +39,9 @@ Vindicia Retain integration allows Recurly users to send past due invoices to Vi
 
 # Key benefits
 
-- **Reduce involuntary churn**: Use multiple approaches and strategies through Recurly AND Vindicia to collect payment on past due renewal invoices
-- **Maximize automated recovery attempts**: Take advantage of both Recurly’s and Vindicia’s automated recovery solutions through a hassle free and seamless integration
-- **Monitor results through comprehensive reporting**: Monitor the efficacy of Recurly and Vindicia collection efforts through Recurly’s revenue recovery and renewal invoice paid rate dashboards.
+* **Reduce involuntary churn**: Use multiple approaches and strategies through Recurly AND Vindicia to collect payment on past due renewal invoices
+* **Maximize automated recovery attempts**: Take advantage of both Recurly’s and Vindicia’s automated recovery solutions through a hassle free and seamless integration
+* **Monitor results through comprehensive reporting**: Monitor the efficacy of Recurly and Vindicia collection efforts through Recurly’s revenue recovery and renewal invoice paid rate dashboards.
 
 # How the Vindicia integration works
 
@@ -91,14 +91,14 @@ You can see the efficacy of Recurly and Vindicia Retain in Recurly’s Renewal I
 
 # FAQ
 
-**Q:** Do you send in flight past due invoices to Vindicia Retain?  
+**Q:** Do you send in flight past due invoices to Vindicia Retain?\
 **A:** No, we only send net new past due invoices and those invoices will go through Recurly’s entire retry cycle before they are sent to Vindicia Retain's retry cycle.  So if for example you set your Recurly dunning cycle to 45 days and want Vindicia to retry for 15 days, a net new past due invoice will go through Recurly's retry cycle for 30 days and then Vindicia's retry cycle for 15 days.  Note in this example the total dunning cycle is 45 days so Recurly will continue to send emails and webhooks throughout the entire 45 dunning window irregardless of whether the invoice is in Recurly's or Vindicia's retry window. 
 
-**Q:** Can I use different gateways in Recurly and Vindicia Retain to attempt collections on invoices?  
+**Q:** Can I use different gateways in Recurly and Vindicia Retain to attempt collections on invoices?\
 **A:** No. Past due invoices that are sent to gateway A for collection in Recurly can only be sent to gateway A for collection in Vindicia Retain
 
-**Q:** Are all past due invoices that Recurly fails to collect sent to Vindica for collection?  Or only invoices that are failing collection for specific reasons/errors?  
+**Q:** Are all past due invoices that Recurly fails to collect sent to Vindica for collection?  Or only invoices that are failing collection for specific reasons/errors?\
 **A:** All invoices, irregardless of why they are failing, are sent to Vindicia for collection once the Recurly retry cycle ends and the Vindicia retry cycle begins.
 
-**Q:** How can I be sure I don't exceed the allowable number of retries when sending a failed invoice/transaction through both Recurly's and Vindicia's retry schedules?  
+**Q:** How can I be sure I don't exceed the allowable number of retries when sending a failed invoice/transaction through both Recurly's and Vindicia's retry schedules?\
 **A:** Vindicia's retry schedule is fully configurable (i.e. number of days and attempts). Vindicia and Recurly can work with you to configure the optimal retry schedule in Vindicia to ensure retry limits are not exceeded.
