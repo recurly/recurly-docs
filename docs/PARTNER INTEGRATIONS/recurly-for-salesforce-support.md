@@ -38,28 +38,95 @@ You are able to add Force.com customization on top of Recurly custom objects wit
 ## Troubleshooting
 
 Below you will find some common issues and the solutions for them:
-[block:parameters]
-{
-  "data": {
-    "h-0": "Issue",
-    "h-1": "Troubleshooting Steps",
-    "0-0": "Recurly accounts are not being linked to Salesforce standard accounts.",
-    "0-1": "Check the Recurly Admin tab and make sure that you have linking to Salesforce accounts enabled.\n\nIf you are still experiencing issues, ensure that the field on which you link Salesforce and Recurly accounts is populating correctly on Recurly accounts.",
-    "2-0": "Salesforce accounts are not being created in my org when Recurly accounts are created.",
-    "2-1": "Check the Recurly Admin tab to make sure that you have the option to create Salesforce accounts enabled.",
-    "3-0": "I am missing Recurly data in my Salesforce org.",
-    "3-1": "There could be a number of reasons for this. Follow these steps:\n1. Check the Recurly Logs tab and ensure that there are no errors being experienced.\n2. If there are no logs, navigate to Setup > Apex Jobs and ensure that there are no Apex jobs which experienced an error.\n3. Check your email to ensure that your Recurly API key has not errored. If there is an API key failure, Recurly for Salesforce will send you an email.\n4. Ensure that the user the integration is running as has the permission necessary to insert records.",
-    "4-0": "My users can't see data.",
-    "4-1": "This is either due to:\n1. Page layouts\n2. Permissions",
-    "5-0": "I can't uninstall the package.",
-    "5-1": "1. Deactivate the sync by going to the admin page and hitting the \"Deactivate sync\" button.\n\n2. Ensure there are no custom fields, workflow rules, or apex code referencing any objects/fields in the package. Due to the amount of potential complexity in Salesforce complexity, the easiest way to see if there are **custom** fields or rules referencing the package is to attempt to uninstall and see if there is an error.",
-    "1-0": "I can't add my Recurly API keys to the API Settings tab in Salesforce.",
-    "1-1": "Check the character length of your Recurly subdomain (subdomain.recurly.com). The Salesforce character limit for a Recurly subdomain is 25 characters. An error will occur when trying to connect Salesforce to Recurly via the API keys if your subdomain exceeds this length."
-  },
-  "cols": 2,
-  "rows": 6
-}
-[/block]
+
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Issue
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Troubleshooting Steps
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Recurly accounts are not being linked to Salesforce standard accounts.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Check the Recurly Admin tab and make sure that you have linking to Salesforce accounts enabled.
+
+        If you are still experiencing issues, ensure that the field on which you link Salesforce and Recurly accounts is populating correctly on Recurly accounts.
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        I can't add my Recurly API keys to the API Settings tab in Salesforce.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Check the character length of your Recurly subdomain (subdomain.recurly.com). The Salesforce character limit for a Recurly subdomain is 25 characters. An error will occur when trying to connect Salesforce to Recurly via the API keys if your subdomain exceeds this length.
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Salesforce accounts are not being created in my org when Recurly accounts are created.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Check the Recurly Admin tab to make sure that you have the option to create Salesforce accounts enabled.
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        I am missing Recurly data in my Salesforce org.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        There could be a number of reasons for this. Follow these steps:
+
+        1. Check the Recurly Logs tab and ensure that there are no errors being experienced.
+        2. If there are no logs, navigate to Setup > Apex Jobs and ensure that there are no Apex jobs which experienced an error.
+        3. Check your email to ensure that your Recurly API key has not errored. If there is an API key failure, Recurly for Salesforce will send you an email.
+        4. Ensure that the user the integration is running as has the permission necessary to insert records.
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        My users can't see data.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        This is either due to:
+
+        1. Page layouts
+        2. Permissions
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        I can't uninstall the package.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        1. Deactivate the sync by going to the admin page and hitting the "Deactivate sync" button.
+
+        2. Ensure there are no custom fields, workflow rules, or apex code referencing any objects/fields in the package. Due to the amount of potential complexity in Salesforce complexity, the easiest way to see if there are **custom** fields or rules referencing the package is to attempt to uninstall and see if there is an error.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 ## Data.com Duplicate Management and Recurly for Salesforce
 
 Salesforce offers duplicate management through data.com functionality.  While the ability to report on and block duplicates is great for your users, it can cause issues for API integrations.  In order to ensure that your data can sync and update properly from Recurly, we urge you to take the following steps:
