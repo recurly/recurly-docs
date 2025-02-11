@@ -20,13 +20,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Ensure you have access to the Business Entities configuration in your Recurly account.
-- Familiarize yourself with the tax regulations of the countries you operate in.
+* Ensure you have access to the Business Entities configuration in your Recurly account.
+* Familiarize yourself with the tax regulations of the countries you operate in.
 
 ### Limitations
 
-- Tax rates are based on current regulations and may change. Always stay updated with local tax authorities.
-- The system applies default tax rates for each country. Custom rates need manual configuration.
+* Tax rates are based on current regulations and may change. Always stay updated with local tax authorities.
+* The system applies default tax rates for each country. Custom rates need manual configuration.
 
 # Definition
 
@@ -34,8 +34,8 @@ VAT (Value Added Tax) & GST (Goods and Services Tax) are consumption taxes appli
 
 # Key benefits
 
-- **Current regulation adherence**: Tax rates are based on current regulations and may change. Always stay updated with local tax authorities.
-- **Default rate application**: The system applies default tax rates for each country. Custom rates need manual configuration.
+* **Current regulation adherence**: Tax rates are based on current regulations and may change. Always stay updated with local tax authorities.
+* **Default rate application**: The system applies default tax rates for each country. Custom rates need manual configuration.
 
 # Tax registration numbers
 
@@ -79,7 +79,7 @@ Enabling tax collection in Chile will apply 19% VAT to all taxable plan, add-on 
 
 Enabling tax collection in a non-EU European country will apply that country's VAT rate to all taxable plan, add-on or adjustment line items for customers in the country.
 
-All countries have a Tax Type of _VAT_ and a Minimum Address Requirement of _Country_.
+All countries have a Tax Type of *VAT* and a Minimum Address Requirement of *Country*.
 
 ## European Union
 
@@ -145,44 +145,44 @@ Enabling tax collection in the United Kingdom will apply 20% VAT to all taxable 
 
 ### 1. **Accessing Business Entities Configuration**
 
-- Log in to your Recurly account.
-- Navigate to the main dashboard.
-- On the left sidebar, click on Configuration.
-- From the dropdown, select Business Entities.
+* Log in to your Recurly account.
+* Navigate to the main dashboard.
+* On the left sidebar, click on Configuration.
+* From the dropdown, select Business Entities.
 
 ### 2. **Setting up default tax registration numbers**
 
-- Within the Business Entities section, locate the Tax Registration Numbers area.
-- Enter your default VAT Number and Tax Registration Number in the respective fields.
-- Click Save to apply changes.
+* Within the Business Entities section, locate the Tax Registration Numbers area.
+* Enter your default VAT Number and Tax Registration Number in the respective fields.
+* Click Save to apply changes.
 
 ### 3. **Configuring country-specific tax registration numbers**
 
-- Still within the Business Entities section, find and click on the Advanced Settings link.
-- Alternatively, navigate to Configuration > Taxes > Tax Settings.
-- Here, you can specify different VAT and Tax Registration Numbers for each country you're registered in.
-- Click Add Country, select the desired country from the dropdown, and input the respective VAT and Tax Registration Numbers.
-- Repeat for all countries as necessary.
-- Click Save to store these settings.
+* Still within the Business Entities section, find and click on the Advanced Settings link.
+* Alternatively, navigate to Configuration > Taxes > Tax Settings.
+* Here, you can specify different VAT and Tax Registration Numbers for each country you're registered in.
+* Click Add Country, select the desired country from the dropdown, and input the respective VAT and Tax Registration Numbers.
+* Repeat for all countries as necessary.
+* Click Save to store these settings.
 
 ### 4. **Enabling tax collection for specific countries**
 
-- Navigate to Configuration > Taxes.
-- Here, you'll see a list of countries. Click on the country you wish to enable tax collection for.
-- Toggle the Enable Tax Collection switch to the 'ON' position.
-- The system will automatically apply the default tax rate for that country. If you wish to set a custom rate, input the desired percentage in the Tax Rate field.
-- Ensure the correct Tax Type (VAT or GST) is selected from the dropdown.
-- Click Save.
+* Navigate to Configuration > Taxes.
+* Here, you'll see a list of countries. Click on the country you wish to enable tax collection for.
+* Toggle the Enable Tax Collection switch to the 'ON' position.
+* The system will automatically apply the default tax rate for that country. If you wish to set a custom rate, input the desired percentage in the Tax Rate field.
+* Ensure the correct Tax Type (VAT or GST) is selected from the dropdown.
+* Click Save.
 
 ### 5. **Setting Up province or state-specific taxes (e.g., for Canada)**
 
-- If you're enabling tax collection for a country with province or state-specific taxes, you'll see an additional section labeled Sub-regions.
-- Click Add Sub-region, select the desired province or state, and input the respective tax rate.
-- Click Save.
+* If you're enabling tax collection for a country with province or state-specific taxes, you'll see an additional section labeled Sub-regions.
+* Click Add Sub-region, select the desired province or state, and input the respective tax rate.
+* Click Save.
 
 ### 6. **Reviewing and testing**
 
-- Once you've set up all desired tax settings, it's crucial to review and test them.
-- Create a test invoice for a customer from one of the countries you've configured.
-- Ensure the correct tax rate is applied and that the invoice displays the appropriate VAT or Tax Registration Number.
-- If everything looks correct, your setup is complete. If not, revisit the previous steps to troubleshoot and correct any discrepancies.
+* Once you've set up all desired tax settings, it's crucial to review and test them.
+* Create a test invoice for a customer from one of the countries you've configured.
+* Ensure the correct tax rate is applied and that the invoice displays the appropriate VAT or Tax Registration Number.
+* If everything looks correct, your setup is complete. If not, revisit the previous steps to troubleshoot and correct any discrepancies.
