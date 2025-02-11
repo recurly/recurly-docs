@@ -24,10 +24,10 @@ The tax ID validation for this location is automatically turned on for all sites
 
 VAT numbers are validated whenever a VAT number is added or updated to an account, at each billing event, or if an invoice is created more than six months from the last time the VAT number was validated. Here are the validation points:
 
-- Adding or editing Billing Information
-- Adding or editing Account Information
-- Creating or renewing Subscriptions
-- Creating one-time charges
+* Adding or editing Billing Information
+* Adding or editing Account Information
+* Creating or renewing Subscriptions
+* Creating one-time charges
 
 ## EU VAT validation
 
@@ -39,7 +39,7 @@ VAT numbers are business tax registration numbers in countries that collect VAT 
 
 ### Validation through VIES
 
-Recurly is integrated with the European Commission's VAT Information Exchange System (VIES) for validating EU VAT numbers. This is the only means of validating a VAT number for an EU member state. All other services and tools that do VAT number validation are using the VIES system. It is not possible to access the individual country VAT number databases directly. You can access the VIES website here: <a href="http://ec.europa.eu/taxation_customs/vies/">http\://ec.europa.eu/taxation_customs/vies/</a>.
+Recurly is integrated with the European Commission's VAT Information Exchange System (VIES) for validating EU VAT numbers. This is the only means of validating a VAT number for an EU member state. All other services and tools that do VAT number validation are using the VIES system. It is not possible to access the individual country VAT number databases directly. You can access the VIES website here: <a href="http://ec.europa.eu/taxation_customs/vies/">http\://ec.europa.eu/taxation\_customs/vies/</a>.
 
 VIES VAT number validation is a separate feature from Recurly's EU VAT collection and is on by default for sites in production mode. The VAT number validation response (valid/invalid) is stored in Recurly, along with the date/time of the validation response, but Recurly does not currently capture or store the VIES consultation number (also called request identifier) for these responses that would tie them back to the VIES system.
 
@@ -49,15 +49,15 @@ A VAT number is invalid if we get a response from VIES explicitly saying the num
 
 If a VAT number becomes invalid while it's already on an account, the VAT number will remain on the account, but subscription renewals will go through with VAT applied.
 
-If you have a customer claiming their VAT number is correct and VIES is showing that it is invalid, please consult the European Commission's FAQ question #13 on how the customer can fix the official record of their VAT number. <http://ec.europa.eu/taxation_customs/vies/faq.html>
+If you have a customer claiming their VAT number is correct and VIES is showing that it is invalid, please consult the European Commission's FAQ question #13 on how the customer can fix the official record of their VAT number. [http://ec.europa.eu/taxation\_customs/vies/faq.html](http://ec.europa.eu/taxation_customs/vies/faq.html)
 
 ### VIES downtime and country maintenance windows
 
-VIES is a validation endpoint that aggregates the 28 different EU country databases. Some of the 28 countries have regular downtime for maintenance. Unfortunately, VAT numbers for those countries cannot be validated at those times. You can see their maintenance windows here: <http://ec.europa.eu/taxation_customs/vies/help.html>
+VIES is a validation endpoint that aggregates the 28 different EU country databases. Some of the 28 countries have regular downtime for maintenance. Unfortunately, VAT numbers for those countries cannot be validated at those times. You can see their maintenance windows here: [http://ec.europa.eu/taxation\_customs/vies/help.html](http://ec.europa.eu/taxation_customs/vies/help.html)
 
 If we are unable to determine the validity of a VAT number, we will not save it on the customer's account and will block any sign-up attempts. We will re-validate a VAT number at subscription renewal if the VAT number has not been validated for six months. If the re-validation comes back without a valid or invalid response, meaning VIES or the individual country is down, we will fallback to the last validation status of the VAT number and will let the subscription renewal go through without VAT applied if the last status was valid, or VAT applied if the last status was invalid. 
 
-You can view the status of each state's VIES validator at <http://ec.europa.eu/taxation_customs/vies/technicalInformation.html>. Recurly uses the VIES SOAP API, which is represented in the right column, titled "Ws Access Status".
+You can view the status of each state's VIES validator at [http://ec.europa.eu/taxation\_customs/vies/technicalInformation.html](http://ec.europa.eu/taxation_customs/vies/technicalInformation.html). Recurly uses the VIES SOAP API, which is represented in the right column, titled "Ws Access Status".
 
 ### Disable VAT number validation
 
@@ -130,7 +130,7 @@ There is a set of countries that Recurly provides customer VAT/tax ID number for
 
 To turn on format validation for all of the locations below, please contact <a href="https://support.recurly.com/">Recurly support</a>. 
 
-**Please Note**: All locations below _except for the United States_ are grouped together under 1 enablement option. If you would like to _enable format validation for the United States, please call that out specifically_ in your Support ticket. 
+**Please Note**: All locations below *except for the United States* are grouped together under 1 enablement option. If you would like to *enable format validation for the United States, please call that out specifically* in your Support ticket. 
 
 <br />
 
