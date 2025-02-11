@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+* Users must have Analytics user role permission.
 
 # Definition
 
@@ -30,13 +30,13 @@ The 'KPIs' view on the dashboard bifurcates into two distinct sections: Plan Att
 >
 > **Note**: Data only includes plans that have had at least 1 subscriber.
 >
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
 
 # Key benefits
 
-- **Streamlined plan overview**: The 'Attributes' segment acts as a quick reference, detailing essential plan specifications, enabling swift and effective cross-referencing.
-- **Holistic performance assessment**: With metrics like churn rate, MRR growth, and average LTV, the 'KPIs' section offers a panoramic view of plan health, making it easier to pinpoint areas of excellence and improvement.
-- **Efficient navigation and integration**: The actionable links embedded in the KPI page, particularly with the plan name and plan code, ensure seamless transitions between analytical insights and actionable configurations within the Recurly app.
+* **Streamlined plan overview**: The 'Attributes' segment acts as a quick reference, detailing essential plan specifications, enabling swift and effective cross-referencing.
+* **Holistic performance assessment**: With metrics like churn rate, MRR growth, and average LTV, the 'KPIs' section offers a panoramic view of plan health, making it easier to pinpoint areas of excellence and improvement.
+* **Efficient navigation and integration**: The actionable links embedded in the KPI page, particularly with the plan name and plan code, ensure seamless transitions between analytical insights and actionable configurations within the Recurly app.
 
 # KPIs
 
@@ -44,43 +44,15 @@ This view consists of two subsections: Plan Attributes & KPIs and Key Performanc
 
 The '**Attributes**' section displays plan details such as the plan name, plan code, pricing, trial length, current subscriptions, and current MRR. You can use these details to cross-reference plan information and for easier navigation when analyzing multiple plans.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f672bed-pp_kpi_attributes.png",
-        "pp kpi attributes.png",
-        2370
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "caption": "Plan Performance Attributes"
-    }
-  ]
-}
-[/block]
-
+<Image title="pp kpi attributes.png" alt={2370} align="center" width="75% " src="https://files.readme.io/f672bed-pp_kpi_attributes.png">
+  Plan Performance Attributes
+</Image>
 
 The '**KPIs**' section provides a snapshot of various plan performances, including subscription growth, churn rate, trial conversion rate, subscriptions moving in, subscriptions moving out, monthly recurring revenue (MRR) growth, and average lifetime value (LTV). This overview can help identify which plans are performing well and which ones need improvement.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f632b6d-pp_kpi_key_performance_indicators_detail.png",
-        "pp kpi key performance indicators detail.png",
-        2370
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "caption": "Plan Performance Indicators"
-    }
-  ]
-}
-[/block]
-
+<Image title="pp kpi key performance indicators detail.png" alt={2370} align="center" width="75% " src="https://files.readme.io/f632b6d-pp_kpi_key_performance_indicators_detail.png">
+  Plan Performance Indicators
+</Image>
 
 ### Utilizing the KPIs Feature
 
@@ -96,81 +68,25 @@ The '**KPIs**' section provides a snapshot of various plan performances, includi
 
 The 'Subscriptions' view includes a line chart that illustrates subscription totals and three bar charts that show subscription growth.
 
-- The line chart showing total subscriptions is beneficial for viewing the overall growth trend and determining which plans have the highest subscription rates.
+* The line chart showing total subscriptions is beneficial for viewing the overall growth trend and determining which plans have the highest subscription rates.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/00cdb39-pp_subscription_totals.png",
-        "pp subscription totals.png",
-        2372
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "caption": "Plan Performance Subscription Totals"
-    }
-  ]
-}
-[/block]
+<Image title="pp subscription totals.png" alt={2372} align="center" width="75% " src="https://files.readme.io/00cdb39-pp_subscription_totals.png">
+  Plan Performance Subscription Totals
+</Image>
 
+* The three bar charts include net subscriptions, new subscriptions, and churn subscriptions. These charts can be used to analyze the subscription growth rate, identify which plans are gaining or losing subscribers, and determine if certain plans have higher churn rates.
 
-- The three bar charts include net subscriptions, new subscriptions, and churn subscriptions. These charts can be used to analyze the subscription growth rate, identify which plans are gaining or losing subscribers, and determine if certain plans have higher churn rates.
+<Image title="pp subscriptions net subscriptions.png" alt={2372} align="center" width="75% " src="https://files.readme.io/ac198dc-pp_subscriptions_net_subscriptions.png">
+  Plan Performance Net Subscriptions
+</Image>
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ac198dc-pp_subscriptions_net_subscriptions.png",
-        "pp subscriptions net subscriptions.png",
-        2372
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "caption": "Plan Performance Net Subscriptions"
-    }
-  ]
-}
-[/block]
+<Image title="pp subscriptions new subscriptions bar chart.png" alt={2376} align="center" width="75% " src="https://files.readme.io/40199bb-pp_subscriptions_new_subscriptions_bar_chart.png">
+  Plan Performance New Subscriptions
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/40199bb-pp_subscriptions_new_subscriptions_bar_chart.png",
-        "pp subscriptions new subscriptions bar chart.png",
-        2376
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "caption": "Plan Performance New Subscriptions"
-    }
-  ]
-}
-[/block]
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7dac6f2-pp_subscriptions_churn_subscriptions.png",
-        "pp subscriptions churn subscriptions.png",
-        2370
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "caption": "Plan Performance Churn Subscriptions"
-    }
-  ]
-}
-[/block]
-
+<Image title="pp subscriptions churn subscriptions.png" alt={2370} align="center" width="75% " src="https://files.readme.io/7dac6f2-pp_subscriptions_churn_subscriptions.png">
+  Plan Performance Churn Subscriptions
+</Image>
 
 The analysis showcases either the top 5 or top 10 subscription plans, ranked by their total subscriber count. This approach helps in identifying which plans are experiencing higher churn rates, offering a clear perspective on subscriber trends and behaviors.
 
@@ -185,60 +101,17 @@ The analysis showcases either the top 5 or top 10 subscription plans, ranked by 
 
 The 'Plan Movement' view consists of one trend chart in the 'Plan Movement' section and two bar charts in the 'Plan Movement Breakout' section.
 
-- The trend chart provides a visualization of the net movement for the top five plans, which can be valuable in identifying which plans are gaining or losing subscribers.
+* The trend chart provides a visualization of the net movement for the top five plans, which can be valuable in identifying which plans are gaining or losing subscribers.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0651bdf-pp_Plan_Movement_trend_chart.png",
-        "pp Plan Movement trend chart.png",
-        2408
-      ],
-      "align": "center",
-      "caption": "Plan Movement Trend"
-    }
-  ]
-}
-[/block]
+<Image title="pp Plan Movement trend chart.png" alt={2408} align="center" src="https://files.readme.io/0651bdf-pp_Plan_Movement_trend_chart.png">
+  Plan Movement Trend
+</Image>
 
+* The bar charts in the 'Plan Movement Breakout' section depict incoming and outgoing subscriptions, allowing you to see how customers are moving between different plans.
 
-- The bar charts in the 'Plan Movement Breakout' section depict incoming and outgoing subscriptions, allowing you to see how customers are moving between different plans.
+<Image align="center" width="75% " src="https://files.readme.io/770b06d-image.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/770b06d-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c103e4f-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/c103e4f-image.png" />
 
 ### How to use the plan performance plan movement feature
 
