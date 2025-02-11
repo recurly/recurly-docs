@@ -22,7 +22,7 @@ This feature is only available to customers on the Professional and/or Elite sub
 
 Please contact [support@recurly.com](mailto:support@recurly.com) to have this feature enabled on your site.
 
-If you are an existing customer, you **_must_** have "**Only Bill What Changed**" enabled on your site first. See <a href="https://docs.recurly.com/docs/change-subscription#section-only-bill-what-changed-release" target="_blank">here</a> for more information.
+If you are an existing customer, you ***must*** have "**Only Bill What Changed**" enabled on your site first. See <a href="https://docs.recurly.com/docs/change-subscription#section-only-bill-what-changed-release" target="_blank">here</a> for more information.
 
 # Definition
 
@@ -32,11 +32,11 @@ For businesses seeking to provide a seamless shopping experience to their custom
 
 # Key benefits
 
-- **Individualized taxation:** Tax each line item based on its distinct shipping address, improving taxation accuracy.
-- **Enhanced flexibility:** Assign various shipping addresses for each line item within a single purchase.
-- **Improved customer experience:** Allow customers the flexibility to receive products at multiple destinations within a single purchase.
-- **Efficient data management:** Avoid duplicity by ensuring that identical addresses aren't added to an account multiple times.
-- **Clear invoicing:** Enhanced invoice displays clearly associate shipping addresses with their respective line items, eliminating confusion.
+* **Individualized taxation:** Tax each line item based on its distinct shipping address, improving taxation accuracy.
+* **Enhanced flexibility:** Assign various shipping addresses for each line item within a single purchase.
+* **Improved customer experience:** Allow customers the flexibility to receive products at multiple destinations within a single purchase.
+* **Efficient data management:** Avoid duplicity by ensuring that identical addresses aren't added to an account multiple times.
+* **Clear invoicing:** Enhanced invoice displays clearly associate shipping addresses with their respective line items, eliminating confusion.
 
 # Key details
 
@@ -44,10 +44,10 @@ The recent feature enhancement to Recurly offers businesses the capability to in
 
 **Using the API**: Through the purchase endpoint, businesses can:
 
-- Designate a new shipping address for an entire purchase, which will be applicable to all line items.
-- For multiple shipping addresses, the final one listed in the API request is applied to the purchase.
-- Assign new or existing shipping addresses for individual line items.
-- However, errors arise if both a shipping address ID and a new address are provided for the same charge or subscription.
+* Designate a new shipping address for an entire purchase, which will be applicable to all line items.
+* For multiple shipping addresses, the final one listed in the API request is applied to the purchase.
+* Assign new or existing shipping addresses for individual line items.
+* However, errors arise if both a shipping address ID and a new address are provided for the same charge or subscription.
 
 **Invoice Display**: Invoices have been revamped to clearly showcase multiple shipping addresses, ensuring clarity about which address correlates with which line items.
 
@@ -66,31 +66,31 @@ It's a great feature for B2C physical goods businesses that allow customers to s
 1. **Enable the Feature**: Contact [support@recurly.com](mailto:support@recurly.com) to activate "Shipping Address(es) per Purchase" for your site.
 2. **Check settings**: Ensure you have the "**Only Bill What Changed**" feature activated.
 3. **API Integration**:
-   - Use the v2/purchases endpoint in the API.
-   - For assigning a new shipping address to the entire purchase, provide the address details.
-   - To assign shipping addresses to individual line items, specify the address or address ID for each line item.
-   - Avoid providing both a shipping address ID and a new address for the same item.
+   * Use the v2/purchases endpoint in the API.
+   * For assigning a new shipping address to the entire purchase, provide the address details.
+   * To assign shipping addresses to individual line items, specify the address or address ID for each line item.
+   * Avoid providing both a shipping address ID and a new address for the same item.
 4. **Check Invoice Display**: After making a purchase with multiple shipping addresses, review the invoice display to ensure clarity in address-line item associations.
 5. **Handle Taxes**: Ensure your site's tax settings are adjusted to tax each line item based on its shipping address.
 6. **Review Exports**: Regularly check the Adjustments - Export to keep track of shipping addresses associated with each line item.
 
-[block:image]{"images":[{"image":["https://files.readme.io/369dd28-Screenshot_2018-02-18_15.06.55.png",null,"Multiple Shipping Address Invoice Display"],"align":"center","border":true}]}[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/369dd28-Screenshot_2018-02-18_15.06.55.png" />
 
 ## Using the API
 
 The purchase endpoint in our API supports the following shipping address functionality:
 
-- Apply a new shipping address for a purchase
-- This top level address will apply to all line items (subscriptions and one time charges) in a purchase  
-- If multiple new shipping addresses are provided, the last address in the API request will be applied to the purchase
-- any subscriptions in the purchase will be associated with the shipping address applied 
-  - Apply a new or existing shipping addresses per line item 
-- A new shipping address or existing shipping address ID can be specified per line item (subscription or charge)
-- If both a shipping address ID and new shipping address are provided for the same subscription or charge, an error will be returned. 
+* Apply a new shipping address for a purchase
+* This top level address will apply to all line items (subscriptions and one time charges) in a purchase  
+* If multiple new shipping addresses are provided, the last address in the API request will be applied to the purchase
+* any subscriptions in the purchase will be associated with the shipping address applied 
+  * Apply a new or existing shipping addresses per line item 
+* A new shipping address or existing shipping address ID can be specified per line item (subscription or charge)
+* If both a shipping address ID and new shipping address are provided for the same subscription or charge, an error will be returned. 
 
 > 🚧 Duplicate shipping addresses
-> 
-> If a new address is specified either at the purchase level or line-item level, and the exact address already exists on the account, Recurly will ensure that the duplicate address will not be added to  the account. It is also suggested that you reference the shipping_id if the shipping address already exists.
+>
+> If a new address is specified either at the purchase level or line-item level, and the exact address already exists on the account, Recurly will ensure that the duplicate address will not be added to  the account. It is also suggested that you reference the shipping\_id if the shipping address already exists.
 
 ## Invoice Display
 
@@ -102,30 +102,16 @@ Lisa purchases three monthly Kale Krate subscriptions. One box is for her sister
 
 **Enhancements**
 
-- Address at the top of line item table for each shipping address and its associated line items
-- if a line item(s) does not have a shipping address and inherits the billing address as its taxable address, this billing address will be specified at the top of the table with the associated line-items
-  - Shipped To section will include special note (the Shipping Address Count will not include billing or account addresses)
+* Address at the top of line item table for each shipping address and its associated line items
+* if a line item(s) does not have a shipping address and inherits the billing address as its taxable address, this billing address will be specified at the top of the table with the associated line-items
+  * Shipped To section will include special note (the Shipping Address Count will not include billing or account addresses)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/369dd28-Screenshot_2018-02-18_15.06.55.png",
-        "Screenshot 2018-02-18 15.06.55.png",
-        1260
-      ],
-      "align": "center",
-      "border": true,
-      "caption": "This is the invoice display for a multiple shipping address purchase example, outlined above."
-    }
-  ]
-}
-[/block]
-
+<Image title="Screenshot 2018-02-18 15.06.55.png" alt={1260} align="center" border={true} src="https://files.readme.io/369dd28-Screenshot_2018-02-18_15.06.55.png">
+  This is the invoice display for a multiple shipping address purchase example, outlined above.
+</Image>
 
 > 📘 Is there a limit on shipping addresses allowed on an account?
-> 
+>
 > Yes. We will still enforce the existing rule of 20 allowed shipping addresses per customer account. This applies to shipping addresses created in the API (via purchase endpoint or shipping address endpoints) and the Admin UI. Also keep in mind that Recurly can only render up to 500 line items in an invoice.
 
 # Taxes
@@ -135,24 +121,24 @@ If taxes are enabled on your site, with this feature, an invoice can have more t
 Please see [Tax Invoices](https://docs.recurly.com/v1.0/docs/tax#section-tax-invoices) for more information. 
 
 > 🚧 Multiple Tax Rate Invoice and Open Amount Refunds
-> 
+>
 > Until you have the Credit Invoices feature enabled on your site, open amount refunds will not succeed on invoices where there are multiple tax rates. This is due to existing behavior, where a line-item specific tax rate can't be applied. Credit Invoices resolves this issue, and thus must be enabled on your site.
 
 # Exports
 
 With this feature, an invoice can have more than one shipping address associated with it since each subscription(s) charge and/or one time charge(s) adjustment could have different addresses. We recommend that you reference the Adjustments - Export to determine the shipping address associated with a line item. 
 
-**Adjustments Export**  
-We have added new columns for expanded shipping_address fields. This will be useful in determining the shipping address associated with each subscription and/or one time charge adjustment. 
+**Adjustments Export**\
+We have added new columns for expanded shipping\_address fields. This will be useful in determining the shipping address associated with each subscription and/or one time charge adjustment. 
 
-- ship_address_name
-- ship_address_line1
-- ship_address_line2
-- ship_address_city
-- ship_address_state
-- ship_address_zip
-- ship_address_country
-- ship_address_phone
+* ship\_address\_name
+* ship\_address\_line1
+* ship\_address\_line2
+* ship\_address\_city
+* ship\_address\_state
+* ship\_address\_zip
+* ship\_address\_country
+* ship\_address\_phone
 
-**Invoice - Summary Export**  
-For shipping addresses created using the purchase endpoint, there will be a new shipping_address_count field. This is a count of the number of shipping addresses created on an invoice. The shipping_address field will never be set for invoices created in the purchase endpoint, as there can be more than one shipping address per invoice. This shipping_address field will only be populated for invoices created using the subscriptions endpoint. You can reference the shipping_address_count field to determine if there is more than 1 address and use the **Line Items** export to identify each shipping address.
+**Invoice - Summary Export**\
+For shipping addresses created using the purchase endpoint, there will be a new shipping\_address\_count field. This is a count of the number of shipping addresses created on an invoice. The shipping\_address field will never be set for invoices created in the purchase endpoint, as there can be more than one shipping address per invoice. This shipping\_address field will only be populated for invoices created using the subscriptions endpoint. You can reference the shipping\_address\_count field to determine if there is more than 1 address and use the **Line Items** export to identify each shipping address.
