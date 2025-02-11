@@ -26,13 +26,13 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 ### Prerequisites
 
-- Integration with Recurly's platform.
-- Activation of the Account Updater feature in the Recurly payment settings page. 
-- For American Express® Cardrefresher, an American Express® merchant account is required.
+* Integration with Recurly's platform.
+* Activation of the Account Updater feature in the Recurly payment settings page. 
+* For American Express® Cardrefresher, an American Express® merchant account is required.
 
 ### Limitation
 
-- One-time transactions are not submitted to the Account Updater service.
+* One-time transactions are not submitted to the Account Updater service.
 
 # Definition
 
@@ -58,44 +58,12 @@ Experience the capabilities of the Account Updater across all Recurly plan level
 
 5. **Enter MCC and SE Number:** A prompt will appear asking for your Mastercard Merchant Category Code (required to enable Mastercard®) and 10-digit American Express® SE number (required to enable Cardrefresher). Enter the details accurately.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/79af8f5-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/79af8f5-image.png" />
 
 6. **Confirmation:** After entering the MCC and/or SE number, check the box to confirm the monthly charge for Account Updater.  If you do not have your MCC or SE number, you can still proceed to enable Visa® and Discover®. 
 7. **Completion:** Once done, click on the enable button. After you have enabled, your Account Updater status will reflect that you are enabled for Visa®, Mastercard®, Discover® and American Express®. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/17be4e7-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/17be4e7-image.png" />
 
 Remember, always ensure that the details entered, especially the SE number, are accurate to avoid any discrepancies or delays in the update process.
 
@@ -107,9 +75,9 @@ Recurly's Account Updater constantly ensures that credit card details remain cur
 
 For Mastercard®, Visa®, American Express® and Discover® credit cards, the following events ensure your account credit card details are always fresh:
 
-- **Updated Expiration Date:** Your account billing info will reflect the new date.
-- **Updated Credit Card Number:** The changes will be visible in the customer’s account, showcasing an updated first six and last four digits.
-- **Credit Card Account Closed:** The billing info is flagged as invalid, preventing billing.
+* **Updated Expiration Date:** Your account billing info will reflect the new date.
+* **Updated Credit Card Number:** The changes will be visible in the customer’s account, showcasing an updated first six and last four digits.
+* **Credit Card Account Closed:** The billing info is flagged as invalid, preventing billing.
 
 All these events spark the **Update Billing Info** webhook.
 
@@ -141,22 +109,7 @@ Here's how:
 
 2. A pop up **will appear** for you to disable your Account Updater feature. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/133d86c-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/133d86c-image.png" />
 
 3. **Check** all three boxes and click Disable.
 
