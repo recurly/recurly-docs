@@ -42,41 +42,11 @@ Transmission of Account Acquisition data can be carried out <a href="https://dev
 
 On choosing to amend an account record in the UI, the following fields will appear:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/904f1cd-Screen_Shot_2016-09-07_at_3.33.36_PM.png",
-        "Screen Shot 2016-09-07 at 3.33.36 PM.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/904f1cd-Screen_Shot_2016-09-07_at_3.33.36_PM.png" />
 
 Post the account information update with acquisition details, this data becomes visible on the account screen's right flank in Recurly. Hover over "Acquisition Data" to view the populated fields when data is available.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5085df9-Screen_Shot_2016-09-07_at_3.34.03_PM.png",
-        "Screen Shot 2016-09-07 at 3.34.03 PM.png",
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/5085df9-Screen_Shot_2016-09-07_at_3.34.03_PM.png" />
 
 # Exports
 
