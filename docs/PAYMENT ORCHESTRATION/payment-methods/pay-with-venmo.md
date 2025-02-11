@@ -21,14 +21,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-- A connection with the Braintree gateway.
-- Integration via Recurly.JS. 
-- Your site must support USD transactions, as it is the only currency supported.
+* A connection with the Braintree gateway.
+* Integration via Recurly.JS. 
+* Your site must support USD transactions, as it is the only currency supported.
 
 ### Limitations
 
-- Only supports USD as the transaction currency.
-- The integration process involves setting up with Braintree and Recurly.js, and requires technical know-how.
+* Only supports USD as the transaction currency.
+* The integration process involves setting up with Braintree and Recurly.js, and requires technical know-how.
 
 # Description
 
@@ -36,18 +36,18 @@ Venmo™ stands at the forefront of payment technology, catering to a massive us
 
 #### Supported Features
 
-- Synchronous transactions: Venmo™ supports synchronous payment methods, including purchases, refunds, and manual captures.
+* Synchronous transactions: Venmo™ supports synchronous payment methods, including purchases, refunds, and manual captures.
 
-- Token utilization: Utilize Venmo Recurly.js tokens to execute transactions via V2 or V3 Recurly endpoints.
+* Token utilization: Utilize Venmo Recurly.js tokens to execute transactions via V2 or V3 Recurly endpoints.
 
-- Platform support: Facilitates both mobile and desktop transaction flows.
+* Platform support: Facilitates both mobile and desktop transaction flows.
 
-- Multi-Use Funding Sources: This enables consumers to change their funding source while the subscription is active without having to resubscribe.
+* Multi-Use Funding Sources: This enables consumers to change their funding source while the subscription is active without having to resubscribe.
 
 ## Use cases
 
-- Easy subscriptions: Venmo™ makes subscriptions easy, attracting a younger, tech-savvy demographic.
-- Quick transactions: With Venmo™, offer a speedy checkout process, both on mobile and desktop platforms.
+* Easy subscriptions: Venmo™ makes subscriptions easy, attracting a younger, tech-savvy demographic.
+* Quick transactions: With Venmo™, offer a speedy checkout process, both on mobile and desktop platforms.
 
 ## Checkout flow
 
@@ -67,7 +67,7 @@ Ensure that your site is set up to handle USD transactions, as it is the only su
 
 #### Feature Flag Enablement
 
-In order to take advantage of addresses provided directly from the Venmo SDK when using R.js, talk to Support about enabling two feature flags on your site: Save Braintree Venmo Shipping and Billing Address. With this setting enabled, you will not be required to provide an Address via V2 or V3 APIs, however, if an address _is_ provided via API, that data will override any Venmo SDK-sourced information.
+In order to take advantage of addresses provided directly from the Venmo SDK when using R.js, talk to Support about enabling two feature flags on your site: Save Braintree Venmo Shipping and Billing Address. With this setting enabled, you will not be required to provide an Address via V2 or V3 APIs, however, if an address *is* provided via API, that data will override any Venmo SDK-sourced information.
 
 ## Gateway settings
 
