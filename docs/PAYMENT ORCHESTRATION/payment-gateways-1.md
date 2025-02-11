@@ -19,11 +19,11 @@ Payment gateways are crucial conduits in the payment processing ecosystem, enabl
 
 # Key benefits
 
-- **Diverse selection**: Choose from a wide array of reputable payment gateways to match your business requirements and geographic focus.
-- **Secure transactions**: Each supported gateway comes with robust security measures ensuring secure transactions and safeguarding sensitive payment information.
-- **Global reach**: Accommodate global customers with multiple currency and regional support offered by various payment gateways.
-- **Seamless integration**: Easy and seamless integration with Recurly, facilitating quick setup, configuration, and a smooth payment processing journey.
-- **Optimized payment flow**: Utilize gateway-specific features to optimize payment acceptance, reduce declines, and improve the overall payment experience.
+* **Diverse selection**: Choose from a wide array of reputable payment gateways to match your business requirements and geographic focus.
+* **Secure transactions**: Each supported gateway comes with robust security measures ensuring secure transactions and safeguarding sensitive payment information.
+* **Global reach**: Accommodate global customers with multiple currency and regional support offered by various payment gateways.
+* **Seamless integration**: Easy and seamless integration with Recurly, facilitating quick setup, configuration, and a smooth payment processing journey.
+* **Optimized payment flow**: Utilize gateway-specific features to optimize payment acceptance, reduce declines, and improve the overall payment experience.
 
 # Key details
 
