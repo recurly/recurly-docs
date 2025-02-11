@@ -23,10 +23,10 @@ While Trials, Discounts/Coupons, and Gift Subscriptions are available on all Rec
 
 Promotions are marketing strategies designed to increase customer engagement and sales. Recurly enables effective promotion management through Free Trials, Coupons & Discounts, and Gift Subscriptions & Cards.
 
-- **Customer Acquisition:** Attract new customers with enticing offers like Free Trials and Discounts.
-- **Customer Retention:** Encourage customer loyalty with Gift Cards.
-- **Increased Sales:** With effective promotions, drive up sales and revenue.
-- **Brand Engagement:** Boost brand engagement and awareness through unique promotional strategies.
+* **Customer Acquisition:** Attract new customers with enticing offers like Free Trials and Discounts.
+* **Customer Retention:** Encourage customer loyalty with Gift Cards.
+* **Increased Sales:** With effective promotions, drive up sales and revenue.
+* **Brand Engagement:** Boost brand engagement and awareness through unique promotional strategies.
 
 # Key details
 
