@@ -25,11 +25,11 @@ To accept prepaid cards on your Recurly site, just enable any payment gateway th
 
 ### Limitations
 
-- Prepaid cards often don't pass address verification system (AVS) checks. This is because they're not linked to a specific bank account or the cardholder's current address, and few consumers register their prepaid cards with their addresses.
+* Prepaid cards often don't pass address verification system (AVS) checks. This is because they're not linked to a specific bank account or the cardholder's current address, and few consumers register their prepaid cards with their addresses.
 
-- Non-reloadable prepaid cards have a fixed amount of money available. When the balance is depleted, customers will need to use another payment method to keep their subscriptions active. Adding a card to Recurly or getting initial approval doesn't ensure it will always be approved in the future.
+* Non-reloadable prepaid cards have a fixed amount of money available. When the balance is depleted, customers will need to use another payment method to keep their subscriptions active. Adding a card to Recurly or getting initial approval doesn't ensure it will always be approved in the future.
 
-- Accepting prepaid cards can lead to an increase in free trial abuse. If this concerns you, some gateways might offer the option to block the use of prepaid cards on your site.
+* Accepting prepaid cards can lead to an increase in free trial abuse. If this concerns you, some gateways might offer the option to block the use of prepaid cards on your site.
 
 # Description
 
@@ -39,7 +39,7 @@ For information on Recurly-specific gift cards, visit our gift card documentatio
 
 Prepaid cards, provided by major credit card companies, come in two forms: reloadable and non-reloadable. This means some cards let you add money to them and others don't. Unlike gift cards, prepaid cards aren't restricted to a particular store or brand. These cards will have the logo of the major network they belong to, indicating they can be used widely.
 
-For instance, the Visa Vanilla Prepaid Card, a non-reloadable option, is widely available and preloaded with a set amount of money. Meanwhile, the Emerald Prepaid MasterCard, a reloadable option offered by H&R Block, is popular for managing tax refunds in the U.S. Reloadable cards are particularly useful for people without traditional bank accounts, offering a way to shop or pay bills online and in stores.
+For instance, the Visa Vanilla Prepaid Card, a non-reloadable option, is widely available and preloaded with a set amount of money. Meanwhile, the Emerald Prepaid MasterCard, a reloadable option offered by H\&R Block, is popular for managing tax refunds in the U.S. Reloadable cards are particularly useful for people without traditional bank accounts, offering a way to shop or pay bills online and in stores.
 
 # Use cases
 
