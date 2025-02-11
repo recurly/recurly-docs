@@ -15,7 +15,7 @@ next:
   description: ''
 ---
 > 👍 Note on gateways
-> 
+>
 > To discover the ideal gateway for your transactions, visit our detailed guide on the [Recurly Payment Gateways page](https://docs.recurly.com/docs/payment-gateways-1).
 
 # Integration partners
