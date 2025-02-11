@@ -1,0 +1,40 @@
+---
+title: Define Payment Methods
+description: Recipe Description
+hidden: true
+recipe:
+  color: '#018FF4'
+  icon: 🦉
+---
+```curl cURL
+POST https://app.recurly.com/payment_gateways_partners/{partner_id}/payment_methods
+
+{
+  "payment_method": "credit_card",
+  "currencies": ["USD", "BRL"],
+}
+
+PATCH https://app.recurly.com/payment_gateways_partners/{partner_id}/payment_methods/credit_card
+
+{
+  "currencies": ["USD"]
+}
+```
+
+```json Response Example
+{
+  "payment_method": "credit_card",
+  "currencies": ["USD", "BRL"],
+}
+```
+
+# Create
+
+<!-- curl@1-6 -->
+
+
+
+# Update
+
+<!-- curl@8-12 -->
+
