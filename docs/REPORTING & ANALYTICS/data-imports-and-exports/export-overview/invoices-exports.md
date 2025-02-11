@@ -12,7 +12,7 @@ metadata:
 next:
   description: ''
 ---
-Recurly provides two exports to help you retrieve data related to invoices: Invoices - Summary and Invoices - Unused Numbers. These exports complement each other to provide details about different subsets of invoice numbers.
+Recurly provides two exports to help you retrieve data related to invoices: Invoices - Summary and Invoices - Unused Numbers. These exports complement each other to provide details about different subsets of invoice numbers. 
 
 ## Version Change Log
 
@@ -556,7 +556,7 @@ Shows invoices last modified during the selected time range. An invoice is only 
       </td>
 
       <td style={{ textAlign: "left" }}>
-        This is the invoice origin. The original invoice will have a type of 'purchase'. Any refunds or voids will create a negative invoice to cancel out the original. This negative invoice will have a type of 'refund'.\ <br>\
+        This is the invoice origin. The original invoice will have a type of 'purchase'. Any refunds or voids will create a negative invoice to cancel out the original. This negative invoice will have a type of 'refund'.\ <br/>\
         All other invoice types are unlocked only when the Credit Invoices feature is enabled. See the full table of <a href='/docs/invoices#section-origins'>invoice origins</a> for descriptions.
       </td>
     </tr>
@@ -842,7 +842,7 @@ All invoice numbers unsuccessfully attempted on or after July 1, 2019 will be sh
       </td>
 
       <td style={{ textAlign: "left" }}>
-        This is the invoice origin. The original invoice will have a type of 'purchase'. Any refunds or voids will create a negative invoice to cancel out the original. This negative invoice will have a type of 'refund'.\ <br>\
+        This is the invoice origin. The original invoice will have a type of 'purchase'. Any refunds or voids will create a negative invoice to cancel out the original. This negative invoice will have a type of 'refund'.\ <br/>\
         All other invoice types are unlocked only when the Credit Invoices feature is enabled. See the full table of <a href='/docs/invoices#section-origins'>invoice origins</a> for descriptions.
       </td>
     </tr>
