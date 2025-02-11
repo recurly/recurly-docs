@@ -29,9 +29,9 @@ PCI-DSS provides a security framework to protect credit card transactions and co
 
 # Recurly benefits
 
-- **Simplified compliance process:** With Recurly, achieving PCI-DSS compliance can be quite straightforward. Use Checkout, hosted payment pages or Recurly.js to remove card data from your own systems and accept credit card payments securely. Using these methods of payment acceptance can greatly assist in reducing your business's PCI scope and adhering to compliance requirements with more ease.
-- **Enhanced security: **We prioritize security. Recurly maintains PCI-DSS Level 1 compliance, we meet and exceed industry-standard payment security practices, providing you with a safe environment for your transactions. Keep in mind, all businesses who accept card data must maintain PCI compliance; Recurly's PCI compliance only assists you in yours, it does not take the place of security measures and compliance for your business.
-- **Flexible solutions: **Whether you opt for Checkout, hosted payment pages, use the Recurly.js library, or use our API, we offer solutions tailored to your business's needs, facilitating your path to PCI compliance. Using our hosted or Recurly.js options can help you reduce your scope, though for merchants who need to manage card data directly, working with a qualified QSA is recommended as you will have greater PCI scope.
+* **Simplified compliance process:** With Recurly, achieving PCI-DSS compliance can be quite straightforward. Use Checkout, hosted payment pages or Recurly.js to remove card data from your own systems and accept credit card payments securely. Using these methods of payment acceptance can greatly assist in reducing your business's PCI scope and adhering to compliance requirements with more ease.
+* **Enhanced security:** We prioritize security. Recurly maintains PCI-DSS Level 1 compliance, we meet and exceed industry-standard payment security practices, providing you with a safe environment for your transactions. Keep in mind, all businesses who accept card data must maintain PCI compliance; Recurly's PCI compliance only assists you in yours, it does not take the place of security measures and compliance for your business.
+* **Flexible solutions:** Whether you opt for Checkout, hosted payment pages, use the Recurly.js library, or use our API, we offer solutions tailored to your business's needs, facilitating your path to PCI compliance. Using our hosted or Recurly.js options can help you reduce your scope, though for merchants who need to manage card data directly, working with a qualified QSA is recommended as you will have greater PCI scope.
 
 # Key details
 
@@ -84,14 +84,14 @@ By following these best practices, you're not only complying with PCI-DSS standa
 
 **A:** To adhere to PCI Compliance best practices, you should take the advice of a qualified security advisor. In general though these high level steps are a good start: 
 
-- Hosting any webpages that handle the submission of card data should use SSL / TLS and encrypt cardholder data in motion.
-- Never log or store any sensitive credit card data without proper encryption as well as masking sensitive values in all communications (UIs, logs, emails, etc.). Never store card data in clear-text format.
-- Protect your site from cross-site scripting attacks.
-- Ensure default passwords are not in use, passwords are changed at appropriate intervals and are complex versus simple, and ensure MFA/2FA is employed.
-- Utilize and regularly update antivirus software and firewalls.
-- If necessary, regularly schedule penetration tests and scans of your environment.
-- Do not share login / users amongst multiple people - everyone should have their own login to systems that touch payment information, including Recurly. Regularly review these users and remove those that no longer need access.
+* Hosting any webpages that handle the submission of card data should use SSL / TLS and encrypt cardholder data in motion.
+* Never log or store any sensitive credit card data without proper encryption as well as masking sensitive values in all communications (UIs, logs, emails, etc.). Never store card data in clear-text format.
+* Protect your site from cross-site scripting attacks.
+* Ensure default passwords are not in use, passwords are changed at appropriate intervals and are complex versus simple, and ensure MFA/2FA is employed.
+* Utilize and regularly update antivirus software and firewalls.
+* If necessary, regularly schedule penetration tests and scans of your environment.
+* Do not share login / users amongst multiple people - everyone should have their own login to systems that touch payment information, including Recurly. Regularly review these users and remove those that no longer need access.
 
  These steps help to create a more secure environment for transactions and limit the risk of data breaches but are only scratching the surface. 
 
-You can find additional information and assistance at <https://www.pcisecuritystandards.org>.
+You can find additional information and assistance at [https://www.pcisecuritystandards.org](https://www.pcisecuritystandards.org).
