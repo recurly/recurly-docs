@@ -21,12 +21,12 @@ To access this feature or setting, you must have an active subscription to eithe
 
 ### Prerequisites
 
-- Cancellation and refund policy that supports account crediting.
+* Cancellation and refund policy that supports account crediting.
 
 ### Limitations
 
-- Goodwill credits are non-transferable and must be used within the issuing account.
-- Credits may have expiration dates or usage conditions, depending on the business policy.
+* Goodwill credits are non-transferable and must be used within the issuing account.
+* Credits may have expiration dates or usage conditions, depending on the business policy.
 
 # Definition
 
@@ -34,9 +34,9 @@ Goodwill credit is a complimentary credit balance given to customers as a gestur
 
 # Key benefits
 
-- **Streamlined revenue recognition**: Incorporating goodwill credits into revenue reports enhances financial accuracy by reflecting real-time customer balances and potential sales.
-- **Enhanced financial reporting**: Goodwill credits contribute to a more comprehensive view of financial health, allowing for precise revenue tracking and forecasting in revenue recognition reports.
-- **Increased operational efficiency**: The management of goodwill credits through automated systems simplifies the reconciliation process, ensuring that credits are accurately reported in financial statements, improving overall financial transparency and compliance.
+* **Streamlined revenue recognition**: Incorporating goodwill credits into revenue reports enhances financial accuracy by reflecting real-time customer balances and potential sales.
+* **Enhanced financial reporting**: Goodwill credits contribute to a more comprehensive view of financial health, allowing for precise revenue tracking and forecasting in revenue recognition reports.
+* **Increased operational efficiency**: The management of goodwill credits through automated systems simplifies the reconciliation process, ensuring that credits are accurately reported in financial statements, improving overall financial transparency and compliance.
 
 # Key details
 
@@ -44,23 +44,7 @@ To support business growth and enhance customer satisfaction, companies can issu
 
 When goodwill credit is allocated, Recurly generates a credit invoice, reflecting the credit balance which can be adjusted against subsequent payments. This process not only simplifies account management but also ensures transparency in financial transactions.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/82c8766-Screenshot_1_2024-03-04_at_4.45.08_PM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/82c8766-Screenshot_1_2024-03-04_at_4.45.08_PM.png" />
 
 The issuing and redemption of goodwill credits are accurately documented, facilitating seamless financial reporting. Credits are recorded as a single line in revenue recognition reports, with redemptions detailed separately. This clear delineation helps businesses track credit usage and its impact on financial health.
 
@@ -72,37 +56,8 @@ The following table outlines the identifiers for goodwill credit transactions:
 | credit-event | Goodwill redeemed | credit-goodwill-redeemed |
 | credit-event | Goodwill voided   | credit-goodwill-voided   |
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/19cd870-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/19cd870-image.png" />
 
 In instances where goodwill credit is issued erroneously or remains unused, it can be voided, removing the balance from the customer's account. This action, along with all other credit transactions, is recorded in Revenue Recogntion, ensuring comprehensive financial oversight.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/efb1208-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/efb1208-image.png" />
