@@ -18,16 +18,16 @@ This feature is part of our product, Recurly revenue recognition advanced. [<a h
 
 ### Prerequisites
 
-- Familiarity with Recurly's user interface.
-- Understanding of the organization's hierarchy and user roles.
-- Knowledge of the desired access levels and functionalities for each user.
+* Familiarity with Recurly's user interface.
+* Understanding of the organization's hierarchy and user roles.
+* Knowledge of the desired access levels and functionalities for each user.
 
 ### Limitations
 
-- Any changes that are made will be applied for future transactions only.
-- User roles and access levels are predefined and cannot be customized beyond the available options.
-- Changes to user privileges may require re-login or session refresh to take effect.
-- Only users with administrative privileges can modify or create new roles.
+* Any changes that are made will be applied for future transactions only.
+* User roles and access levels are predefined and cannot be customized beyond the available options.
+* Changes to user privileges may require re-login or session refresh to take effect.
+* Only users with administrative privileges can modify or create new roles.
 
 # Definition
 
@@ -35,11 +35,11 @@ Recurly's Access Management is a robust feature designed to streamline user acce
 
 # Key benefits:
 
-- **Enhanced security:** Define user roles and access levels to ensure data protection and prevent unauthorized modifications.
-- **Customizable roles:** Create roles tailored to specific job functions, ensuring users have the right tools for their tasks.
-- **Streamlined operations:** Easily manage and modify user access, ensuring efficient operations without compromising security.
-- **Clear oversight:** Monitor user activities and access levels, ensuring compliance and accountability.
-- **Flexibility:** Provide either read-only or administrative access, catering to various operational needs within the organization.
+* **Enhanced security:** Define user roles and access levels to ensure data protection and prevent unauthorized modifications.
+* **Customizable roles:** Create roles tailored to specific job functions, ensuring users have the right tools for their tasks.
+* **Streamlined operations:** Easily manage and modify user access, ensuring efficient operations without compromising security.
+* **Clear oversight:** Monitor user activities and access levels, ensuring compliance and accountability.
+* **Flexibility:** Provide either read-only or administrative access, catering to various operational needs within the organization.
 
 # Revenue Recognition user management
 
@@ -51,28 +51,12 @@ To create roles and manage their specific settings, follow these steps:
 
 1. From the **Recurly** main menu, navigate to Admin → Roles → Create a Role.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c995693-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/c995693-image.png" />
 
 2. Fill in the Role Name and Roles Description fields.
 3. Select the desired configuration in the Permissions section.
    1. Note that in the revenue recognition settings, you can select whether that role provides read-only or admin access. This is something that can only be managed in this initial configuration. We advise you to create two different roles differentiating both read-only and admin access.
-   2. However, you can always manage user’s privileges within the revenue recognition [platform](https://docs.recurly.com/docs/access-management#providing-administrator-or-read-only-privileges-in-the-revenue-recognition-site).  
+   2. However, you can always manage user’s privileges within the revenue recognition [platform](https://docs.recurly.com/docs/access-management#providing-administrator-or-read-only-privileges-in-the-revenue-recognition-site).\
       ![](https://files.readme.io/12745bb-image.png)
 4. Press Create Role.
 
@@ -84,12 +68,12 @@ A read-only user has limited access and can only view data and reports within th
 
 ## Creating users and providing Recurly access
 
-In the Recurly User Management section, you have the ability to create new users and grant them access to Recurly's revenue recognition platform. This functionality is available during the initial configuration phase, assuming you have purchased Recurly's revenue recognition service.  
+In the Recurly User Management section, you have the ability to create new users and grant them access to Recurly's revenue recognition platform. This functionality is available during the initial configuration phase, assuming you have purchased Recurly's revenue recognition service.\
 To create a new user and provide them with access to Recurly, follow these steps:
 
 1. From the Recurly main menu, navigate to Admin → Users → User Actions → Invite Users.
 
-2. Fill in the user's email address and select their access level/role. Then, click "Send Invite."  
+2. Fill in the user's email address and select their access level/role. Then, click "Send Invite."\
    ![](https://files.readme.io/b51b780-image.png)
 
 3. The user will receive an invitation to join the platform and must accept it to participate as part of your team.
@@ -110,7 +94,7 @@ To create a new user and provide them with access to Recurly, follow these steps
 
 5. Configure the role settings by clicking on each dropdown button and selecting the desired options.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/4e5c5bc-image.png",null,""],"align":"center","sizing":"60% ","border":true}]}[/block]
+   <Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/4e5c5bc-image.png" />
 
 6. Once you have configured the role settings, click Save to create the new role with the specified configurations.
 
@@ -124,7 +108,7 @@ To create a new user and provide them with access to Recurly, follow these steps
 
 4. In the Roles section, press “+” to add a role configuration and set to active. The roles available depend on those created previously.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/f3ff6a4-image.png",null,""],"align":"center","sizing":"75% ","border":true}]}[/block]
+   <Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/f3ff6a4-image.png" />
 
 5. Press Save to update the user privileges.
 
