@@ -25,24 +25,24 @@ This feature or setting is available to all customers on any Recurly subscriptio
 The Coupons and Discounts feature is a dynamic tool in the Recurly system that allows you to provide valuable promotions to your customers, boosting customer loyalty and encouraging increased sales. This guide will help you understand all aspects of this feature, so you can make the most of it.
 
 > 👍 **Note to readers:**
-> 
+>
 > It's essential to understand the nuanced difference between a 'coupon' and a 'discount' as they serve different purposes in promoting sales.
-> 
+>
 > 1. **Discount:** A discount is a reduction in price applied automatically by the merchant to certain products or services, without requiring any action from the customer. For example, a 20% off on all sneakers during a weekend sale.
 > 2. **Coupon:** A coupon, on the other hand, is a ticket, code or document that can be exchanged for a financial discount on a product or service. Coupons are typically distributed by the business to customers, who then have the option to use them to get a price reduction. The discount contained within the coupon needs to be applied or redeemed manually by the customer, usually by entering a code at checkout. For example, a $10 off coupon that can be used on any purchase over $50.
-> 
+>
 > In this guide, when we refer to "**apply the discount**", we are talking about a reduction in price that can be manifested in two ways: 
-> 
-> - As a **direct discount** applied automatically to the price of the product or service without any additional action required from the customer.
-> - Or, through a **coupon** that contains a discount, which the customer can apply manually to obtain a price reduction.
-> 
+>
+> * As a **direct discount** applied automatically to the price of the product or service without any additional action required from the customer.
+> * Or, through a **coupon** that contains a discount, which the customer can apply manually to obtain a price reduction.
+>
 > Therefore, whether it's a direct discount or a coupon-based discount, the phrase "apply the discount" encompasses both scenarios, aiming to provide a clearer understanding of the promotional strategies described in this guide.
 
 # Key benefits
 
-- **Revenue enhancement**: Leverage coupons and discounts to attract, retain customers, and boost revenue.
-- **Customer loyalty and engagement**: Use discounts to appreciate top customers, fostering loyalty and increased interaction.
-- **Strategic flexibility and insights**: Tailor and analyze promotions to stay agile and informed in the marketplace.
+* **Revenue enhancement**: Leverage coupons and discounts to attract, retain customers, and boost revenue.
+* **Customer loyalty and engagement**: Use discounts to appreciate top customers, fostering loyalty and increased interaction.
+* **Strategic flexibility and insights**: Tailor and analyze promotions to stay agile and informed in the marketplace.
 
 # Creating and customizing coupons
 
@@ -53,63 +53,63 @@ Before initiating the creation of coupons, acquaint yourself with the various fi
 Here we break down the significance and usage of each field in the coupon creation form:
 
 1. **Internal Name:** 
-   - **Purpose:** To identify the coupon campaign internally.
-   - **Visibility:** Not exposed to customers unless intentionally shared through API or emails.
-   - **Best Practice:** Utilize distinctive names to facilitate easy referencing.
+   * **Purpose:** To identify the coupon campaign internally.
+   * **Visibility:** Not exposed to customers unless intentionally shared through API or emails.
+   * **Best Practice:** Utilize distinctive names to facilitate easy referencing.
 
 2. **Code Type & Code:**
 
-- **Purpose:** This is how customers will redeem their coupon. You have two options for the type of code to use:
+* **Purpose:** This is how customers will redeem their coupon. You have two options for the type of code to use:
 
-  - **Single Code**: This is one code that can be used multiple times, depending on the settings you choose for the number of redemptions allowed. It's simple to create and distribute.
-  - **Bulk Unique Codes**: These are a set of unique codes generated in bulk, with each code being usable only once. This option is great for creating personalized offers and preventing code sharing. To learn more about creating and using bulk unique codes, please visit our [dedicated bulk codes page](https://docs.recurly.com/docs/bulk-unique-coupons).
-- **Character Allowance:** Alphanumeric, dashes (-), underscores (\_), and plus signs (+).
-- **Reuse:** Permissible only after the prior coupon has either expired or achieved its maximum redemption limit.
+  * **Single Code**: This is one code that can be used multiple times, depending on the settings you choose for the number of redemptions allowed. It's simple to create and distribute.
+  * **Bulk Unique Codes**: These are a set of unique codes generated in bulk, with each code being usable only once. This option is great for creating personalized offers and preventing code sharing. To learn more about creating and using bulk unique codes, please visit our [dedicated bulk codes page](https://docs.recurly.com/docs/bulk-unique-coupons).
+* **Character Allowance:** Alphanumeric, dashes (-), underscores (\_), and plus signs (+).
+* **Reuse:** Permissible only after the prior coupon has either expired or achieved its maximum redemption limit.
 
 3. **Type of Discount:** 
-   - **Options:** Select from fixed amount, percentage, or free trial.
-   - **Multi-currency Support:** Allows specifying different fixed amounts for various currencies.
+   * **Options:** Select from fixed amount, percentage, or free trial.
+   * **Multi-currency Support:** Allows specifying different fixed amounts for various currencies.
 
 4. **Duration:** 
-   - **Usage:** Determines the period that the coupon will be applicable.
-   - **Options:** Forever, single use, or limited time.
+   * **Usage:** Determines the period that the coupon will be applicable.
+   * **Options:** Forever, single use, or limited time.
 
 5. **Maximum Redemptions:** 
-   - **Usage:** To define the total redemption count for the coupon.
-   - **Utility:** Helpful in restricting the coupon usage to a certain number of customers.
+   * **Usage:** To define the total redemption count for the coupon.
+   * **Utility:** Helpful in restricting the coupon usage to a certain number of customers.
 
 6. **Redemptions Per Account:** 
-   - **Purpose:** To limit the number of times a single account can redeem the coupon.
-   - **Benefit:** Prevents customers from exploiting the discount offer by redeeming it multiple times through a single account.
+   * **Purpose:** To limit the number of times a single account can redeem the coupon.
+   * **Benefit:** Prevents customers from exploiting the discount offer by redeeming it multiple times through a single account.
 
 7. **Redeem By Date:** 
-   - **Definition:** The expiration date for the coupon.
-   - **Effect:** Post this date, the coupon cannot be redeemed.
+   * **Definition:** The expiration date for the coupon.
+   * **Effect:** Post this date, the coupon cannot be redeemed.
 
 8. **Eligible Charges:** 
-   - **Function:** Allows you to specify the charges that the coupon can discount.
-   - **Options:** Recurring charges (including plans, add-ons, and setup fees), one-time charges only, or both.
+   * **Function:** Allows you to specify the charges that the coupon can discount.
+   * **Options:** Recurring charges (including plans, add-ons, and setup fees), one-time charges only, or both.
 
 9. **Eligible Plans:** 
-   - **Usage:** To designate the plans which can avail the discount.
-   - **Default Setting:** All plans are eligible but can be customized to specific plans.
+   * **Usage:** To designate the plans which can avail the discount.
+   * **Default Setting:** All plans are eligible but can be customized to specific plans.
 
 10. **Eligible Items:** 
 
-- **Usage:** To designate the items which can avail the discount.
-- **Default Setting:** All items are eligible but can be customized to specific plans.
+* **Usage:** To designate the items which can avail the discount.
+* **Default Setting:** All items are eligible but can be customized to specific plans.
 
 11. **Discount Level:** 
 
-- **Function:** To ascertain whether the discount applies at the account level or only to a specific subscription.
+* **Function:** To ascertain whether the discount applies at the account level or only to a specific subscription.
 
 12. **Payment Page Description:** 
 
-- **Visibility:** Shown to customers during the redemption process on your payment or checkout page.
+* **Visibility:** Shown to customers during the redemption process on your payment or checkout page.
 
 13. **Invoice Description:** 
 
-- **Appearance:** Featured on the invoice where coupons are applied, except for free trial coupons as they don't offer a monetary discount.
+* **Appearance:** Featured on the invoice where coupons are applied, except for free trial coupons as they don't offer a monetary discount.
 
 ## General step-by-step process
 
@@ -118,37 +118,21 @@ Here we break down the significance and usage of each field in the coupon creati
 1. **Navigate** to the "Configuration” section.
 2. **Click** on "Coupons".
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5be2e36-image.png",
-        null,
-        "Coupons option"
-      ],
-      "align": "center",
-      "sizing": "20% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="20% " border={true} src="https://files.readme.io/5be2e36-image.png" />
 
 3. **Select** the "New Coupon" button.
 
 ![New coupon button](https://files.readme.io/16b40a3-image.png)
 
 4. **Enter** a unique Coupon ID (Internal Name).
-5. **Choose** the code type, selecting between a single code or bulk unique codes.  
+5. **Choose** the code type, selecting between a single code or bulk unique codes.\
    ![Code type](https://files.readme.io/4c830b2-image.png)
-6. **Decide** on the type of discount — either a percentage or a fixed amount.  
+6. **Decide** on the type of discount — either a percentage or a fixed amount.\
    ![Discount type](https://files.readme.io/ca241f9-image.png)
-7. **Define** the Coupon Duration — options include single-use, forever, or a limited number of months.  
+7. **Define** the Coupon Duration — options include single-use, forever, or a limited number of months.\
    ![Coupon duration](https://files.readme.io/da16c95-image.png)
 8. **Optional:** Under the "Elegible Charges" section, set additional rules such as redemption limitations, eligibility settings, or expiration dates.  
-9. **Eligible Charges:** Define which plans or items are eligible for the discount.  
+9. **Eligible Charges:** Define which plans or items are eligible for the discount.\
    ![Advanced rules](https://files.readme.io/fa425ca-image.png)
 10. **Click** on "Create Coupon" to finalize the setup.
 
@@ -160,15 +144,15 @@ To edit an existing coupon, follow these steps:
 
 1. **Navigate** to the "Configuration" section.
 2. **Click** on "Coupons".
-3. **Identify** and **select** the coupon you desire to amend, then **press** “Edit”.  
+3. **Identify** and **select** the coupon you desire to amend, then **press** “Edit”.\
    ![Edit coupon](https://files.readme.io/a687ef0-image.png), or hover on the right side of the table to select the ‘edit’ option.
 4. **Implement** the necessary changes. 
 5. **Click** on "Save Changes" to finalize your modifications. 
 
 > **Note:** 
 >
-> - Please be aware that any changes will only affect coupons redeemed after the modifications have been saved; existing redemptions will remain unaffected. 
-> - Additionally, once created, certain coupon attributes cannot be edited. These include the coupon code, discount type, duration, plans, items, and discount level.
+> * Please be aware that any changes will only affect coupons redeemed after the modifications have been saved; existing redemptions will remain unaffected. 
+> * Additionally, once created, certain coupon attributes cannot be edited. These include the coupon code, discount type, duration, plans, items, and discount level.
 
 # Understanding different types of discounts
 
@@ -182,10 +166,10 @@ Percentage discounts will apply the same percentage to each eligible charge on t
 
 Assume a coupon offers a 10% discount off Plan A. Plan A has a setup fee of $50.00, a plan fee of $15.00 and an add-on of $7.00. The invoice with the discounts would look like this:
 
-- The setup fee of $50.00 for Plan A will not be discounted.
-- The plan fee of $15.00 for Plan A will be discounted by 10%, bringing a discount total of ($1.50).
-- The add-on of $7.00 for Plan A will be discounted by 10%, yielding a discount total of ($0.70).
-- The total discount on the invoice is ($2.20), making the final payable amount $69.80.
+* The setup fee of $50.00 for Plan A will not be discounted.
+* The plan fee of $15.00 for Plan A will be discounted by 10%, bringing a discount total of ($1.50).
+* The add-on of $7.00 for Plan A will be discounted by 10%, yielding a discount total of ($0.70).
+* The total discount on the invoice is ($2.20), making the final payable amount $69.80.
 
 ## Fixed amount discounts
 
@@ -199,9 +183,9 @@ For a fixed amount coupon, it is important to note the order of how charges appe
 
 Assume a coupon offers a $20.00 discount off Plan A. Plan A has a plan fee of $15.00 and an add-on of $7.00. The invoice with the discount would look like this:
 
-- The plan fee of $15.00 for Plan A will receive a full discount of ($15.00).
-- The add-on of $7.00 for Plan A will get a discount of ($5.00), since there was only $5.00 remaining on the coupon redemption.
-- The total discount on the invoice is ($20.00), making the final payable amount $2.00.
+* The plan fee of $15.00 for Plan A will receive a full discount of ($15.00).
+* The add-on of $7.00 for Plan A will get a discount of ($5.00), since there was only $5.00 remaining on the coupon redemption.
+* The total discount on the invoice is ($20.00), making the final payable amount $2.00.
 
 ## Free trial coupons (custom length)
 
@@ -225,7 +209,7 @@ Choose this option to offer the discount for a limited, predefined period. Once 
 
 A recurring discount that is only valid for a specified number of days, weeks, months or years. The coupon will discount any invoices generated during the lifespan of the coupon. We recommend you select a period that matches the billing cycle of the eligible plans included in the coupon. 
 
-> 🚧 _Limited lifespan coupons will automatically expire one hour prior to the anniversary of their redemption._
+> 🚧 *Limited lifespan coupons will automatically expire one hour prior to the anniversary of their redemption.*
 
 # Redemption
 
@@ -343,12 +327,12 @@ Coupons, once applied to a user's account, initiate a reduction on upcoming invo
 
 In most cases, a user can input a Coupon during checkout, which is then applied to their purchase. This can be done via the provided payment page or on your personal checkout page using Recurly.js and the API. There are some things you should keep in mind:
 
-- For the discount to be applied, the purchase must include charges that are eligible for the discount. For instance, a Coupon applicable only to Plan B cannot be used during the sign-up for Plan A.
-- If the sign-up process for the subscription fails due to a declined transaction, the Coupon will not be applied.
-- If only one active Coupon is allowed on an account at a time, the application of a new Coupon will replace the existing one.
-- If more than one active Coupon is allowed, the new code will be added to the list of active discounts and applied after existing discounts.
-- If the coupon is subscription-level, redeeming it in a subscription creation action will automatically tie the redemption to that subscription.
-- Account-level Coupons can be used during the subscription process and will apply to the new subscription and any additional subscriptions added to the account later.
+* For the discount to be applied, the purchase must include charges that are eligible for the discount. For instance, a Coupon applicable only to Plan B cannot be used during the sign-up for Plan A.
+* If the sign-up process for the subscription fails due to a declined transaction, the Coupon will not be applied.
+* If only one active Coupon is allowed on an account at a time, the application of a new Coupon will replace the existing one.
+* If more than one active Coupon is allowed, the new code will be added to the list of active discounts and applied after existing discounts.
+* If the coupon is subscription-level, redeeming it in a subscription creation action will automatically tie the redemption to that subscription.
+* Account-level Coupons can be used during the subscription process and will apply to the new subscription and any additional subscriptions added to the account later.
 
 **API and Recurly.js**
 
@@ -364,9 +348,9 @@ To allow the application of Coupons on the provided payment page, you need to en
 
 The payment page description will show when a customer redeems a coupon on your checkout or hosted payment pages, or if you choose to show the description on your own checkout page. The description can be up to 255 characters.
 
-- If you would like to allow coupons to be redeemed on your checkout page or hosted payment pages, enable Coupons on the Checkout or Hosted Page Settings page on your Recurly site.
+* If you would like to allow coupons to be redeemed on your checkout page or hosted payment pages, enable Coupons on the Checkout or Hosted Page Settings page on your Recurly site.
 
-Additionally, you can pre populate the field by setting it in the URL, e.g. ?subscription[coupon_code]=10off
+Additionally, you can pre populate the field by setting it in the URL, e.g. ?subscription\[coupon\_code]=10off
 
 **Hosted Account Management** 
 
@@ -376,9 +360,9 @@ Currently, we do not allow Coupons to be applied on existing accounts through th
 
 You can apply a coupon when upgrading or downgrading a subscription, so the discount applies to the changed invoice. This is useful for Subscription-level discounts that apply only to the new version of the subscription.
 
-- The Coupon's eligible charges must include the new plan of the subscription. 
-- Coupons cannot be applied with "On next renewal" changes to avoid any conflicts with any Maximum Redemption rules for the campaign or the account.
-- A subscription change that would generate an invoice (e.g. - change the plan, quantity, or price) must be made. The Coupon cannot be the only thing changed during the subscription change.
+* The Coupon's eligible charges must include the new plan of the subscription. 
+* Coupons cannot be applied with "On next renewal" changes to avoid any conflicts with any Maximum Redemption rules for the campaign or the account.
+* A subscription change that would generate an invoice (e.g. - change the plan, quantity, or price) must be made. The Coupon cannot be the only thing changed during the subscription change.
 
 ### Direct application on account
 
@@ -407,12 +391,12 @@ When you remove a coupon from a customer's account, it means that the discount a
 
 Coupons can be adjusted to alter display text or redemption rules. However, you cannot modify any attributes that would affect active redemptions on a customer's account. The following fields can be edited after the Coupon is created:
 
-- Internal Name
-- Maximum Redemptions
-- Redeem By date
-- Redemptions Per Account
-- Payment Page Description
-- Invoice Description _(not applicable to free trial coupons)_
+* Internal Name
+* Maximum Redemptions
+* Redeem By date
+* Redemptions Per Account
+* Payment Page Description
+* Invoice Description *(not applicable to free trial coupons)*
 
 # Expiration and coupons
 
@@ -456,7 +440,7 @@ Refer to our [Coupon Redemptions export documentation](https://docs.recurly.com/
 
 ### Invoice summary
 
-The Invoices - Summary export provides information on which coupons were applied to an invoice, as seen in the coupon_code column.
+The Invoices - Summary export provides information on which coupons were applied to an invoice, as seen in the coupon\_code column.
 
 For more information, refer to our [Invoices - Summary export documentation](https://docs.recurly.com/docs/invoices-summary).
 
