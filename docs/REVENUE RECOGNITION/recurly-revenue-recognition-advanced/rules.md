@@ -19,23 +19,23 @@ This feature is part of our product, Recurly Revenue Recognition Advanced. [<a h
 
 ### Prerequisites
 
-- Familiarity with Recurly's basic functionalities.
-- Access to Recurly Revenue Recognition Advanced module.
-- Necessary permissions to configure rules and holds.
+* Familiarity with Recurly's basic functionalities.
+* Access to Recurly Revenue Recognition Advanced module.
+* Necessary permissions to configure rules and holds.
 
 > **Please note:** 
 >
-> - Once a Contract Grouping Rule is created, it cannot be deleted but can be inactivated.
-> - Approved SSP data cannot be deleted.
-> - Holds, once applied, can only be released based on the set criteria or manually by authorized personnel.
+> * Once a Contract Grouping Rule is created, it cannot be deleted but can be inactivated.
+> * Approved SSP data cannot be deleted.
+> * Holds, once applied, can only be released based on the set criteria or manually by authorized personnel.
 
 # Key benefits
 
-- **Streamlined revenue recognition:** Simplify the revenue recognition process with clear rules and functionalities, enabling an organized and efficient workflow.
-- **Contract flexibility:** Define contract groupings, performance obligations, and variable considerations with ease to suit your business model.
-- **Automated calculations:** Reduce manual errors and save time with automated calculations for costs and variable considerations.
-- **Enhanced control:** Gain better control over revenue recognition through the Holds feature, ensuring accuracy and compliance.
-- **Insightful analysis:** Utilize the SSP Analyzer tool for comprehensive insights, aiding in informed decision-making and strategy optimization.
+* **Streamlined revenue recognition:** Simplify the revenue recognition process with clear rules and functionalities, enabling an organized and efficient workflow.
+* **Contract flexibility:** Define contract groupings, performance obligations, and variable considerations with ease to suit your business model.
+* **Automated calculations:** Reduce manual errors and save time with automated calculations for costs and variable considerations.
+* **Enhanced control:** Gain better control over revenue recognition through the Holds feature, ensuring accuracy and compliance.
+* **Insightful analysis:** Utilize the SSP Analyzer tool for comprehensive insights, aiding in informed decision-making and strategy optimization.
 
 # Overview
 
@@ -43,23 +43,7 @@ In Recurly's revenue recognition, the Rules section is advanced and seamlessly i
 
 # Rules functionalities
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d33a162-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="25% " border={true} src="https://files.readme.io/d33a162-image.png" />
 
 ## Contract grouping
 
@@ -71,63 +55,15 @@ This essential feature allows you to define specific criteria for grouping trans
 
 2. Click on the “+” icon in the right menu to create a new grouping rule.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/73e91e0-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/73e91e0-image.png" />
 
 3. Provide a name for the contract grouping and specify the active date.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7609ae3-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/7609ae3-image.png" />
 
 4. Under the "Grouping" section, click on the "+" button to add grouping criteria.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/37d95e4-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/37d95e4-image.png" />
 
 5. Select the required grouping attribute(s) to define how contracts should be grouped.
 6. Specify the rolling date and the number of days for the grouping rule.
@@ -138,35 +74,20 @@ This essential feature allows you to define specific criteria for grouping trans
 
 ### How to inactivate Contract Grouping Rule
 
-**Note: **Once a Contract Grouping Rule is created/configured, it cannot be deleted. However, you can choose to inactivate a grouping rule if needed.
+**Note:** Once a Contract Grouping Rule is created/configured, it cannot be deleted. However, you can choose to inactivate a grouping rule if needed.
 
 To inactivate a grouping rule, follow these steps:
 
 1. **Go** to the Contract Grouping section and select the grouping rule tab that you want to inactivate.
 
-2. The current status of the grouping rule will be "active." **Change **the status to "inactive."
+2. The current status of the grouping rule will be "active." **Change** the status to "inactive."
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8c5328f-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/8c5328f-image.png" />
 
+3. **Click** on the Save icon to save the changes.
 
-3. **Click **on the Save icon to save the changes.
-
-**Points to Remember:**  
-➔	Only the active grouping rules will be visible in the Contract Grouping section.  
+**Points to Remember:**\
+➔	Only the active grouping rules will be visible in the Contract Grouping section.\
 ➔	Once a grouping rule is made inactive, it will be moved to the inactive tab for reference.
 
 ➔	The inactive grouping rule cannot be made active.
@@ -179,45 +100,45 @@ In Recurly Revenue Recognition Advanced, the second step of ASC 606 / IFRS 15 co
 
 1. Navigate to Rules → POB.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/9e57f37-image.png",null,""],"align":"center","border":true}]}[/block]
+   <Image align="center" className="border" border={true} src="https://files.readme.io/9e57f37-image.png" />
 
-2. Click on the "+" button to add a new performance obligation.  
+2. Click on the "+" button to add a new performance obligation.\
    ![](https://files.readme.io/4fd4296-image.png)
 
-3. Enter a unique name for the performance obligation.  
+3. Enter a unique name for the performance obligation.\
    ![](https://files.readme.io/b21625b-image.png)
 
-4. Provide the active date for the new POB.  
+4. Provide the active date for the new POB.\
    ![](https://files.readme.io/f281b16-image.png)
 
-5. Select the appropriate waterfall type (WF Type) from the dropdown:  
+5. Select the appropriate waterfall type (WF Type) from the dropdown:\
    ![](https://files.readme.io/9c4764d-image.png)
    1. **PointInTime:** Performance obligations recognized at a point in time.
-   2. **OverTime: **Performance obligations recognized over the contract period.
-   3. **OverTime Slide: **Performance obligations recognized over the contract period, with a delayed release date extending revenue recognition.
+   2. **OverTime:** Performance obligations recognized over the contract period.
+   3. **OverTime Slide:** Performance obligations recognized over the contract period, with a delayed release date extending revenue recognition.
    4. **OverTime Condense:** Performance obligations recognized based on the release date, with revenue recognition adjusted based on event timing.
-   5. **Manual: **Revenue realized based on manual input.
+   5. **Manual:** Revenue realized based on manual input.
 
-6. Choose the accounting method for the new POB from the dropdown options:  
+6. Choose the accounting method for the new POB from the dropdown options:\
    ![](https://files.readme.io/2b6ede8-image.png)
-   1. **Daily: **Revenue recognized daily, based on the number of days in the contract.
+   1. **Daily:** Revenue recognized daily, based on the number of days in the contract.
    2. **FixedMonthly:** Revenue calculated in fixed amounts based on the number of months in the contract, with adjustments for start date.
-   3. **PartialMonthly: **Revenue calculated partially for the first and last months of the contract, with equal recognition for the remaining months.
+   3. **PartialMonthly:** Revenue calculated partially for the first and last months of the contract, with equal recognition for the remaining months.
    4. **Annually:** Revenue calculated annually.
 
-7. Select the ratable method from the dropdown options:  
+7. Select the ratable method from the dropdown options:\
    ![](https://files.readme.io/0bd9e92-image.png)
    1. **Sales Order Ratable:** Revenue amortized on a prorated basis, with catch-up in the current open period.
    2. **Sales Order Dates:** Revenue scheduled based on the start and end dates of the sales order lines.
-   3. **Billing Dates: **Revenue scheduled based on the start and end dates of billing/invoice.
+   3. **Billing Dates:** Revenue scheduled based on the start and end dates of billing/invoice.
 
 After completing step 1 – 6, save your changes and then your POB could look like this.
 
 ![](https://files.readme.io/2a3d5ab-image.png)
 
-8. You can choose how a date change in a contract affects the waterfall:  
-   **Default (Blank)**: The waterfall remains unchanged.  
-   **Cumulative Date Change**: The entire waterfall is recalculated, considering both past and future payments. This ensures that the total amount is distributed accurately based on the new dates.  
+8. You can choose how a date change in a contract affects the waterfall:\
+   **Default (Blank)**: The waterfall remains unchanged.\
+   **Cumulative Date Change**: The entire waterfall is recalculated, considering both past and future payments. This ensures that the total amount is distributed accurately based on the new dates.\
    **Prospective Date Change**: Only future payments are adjusted to reflect the new dates. Past payments remain unaffected
 9. In the POB configuration screen, locate the Revenue Release section.
 10. Click on the "+" button in the Revenue Release section to add a new release event.
@@ -247,37 +168,21 @@ To access POB Rules, there are three methods available:
 
 1. **Open** the desired POB.
 
-2. **Navigate **to the "Rules" tab located at the top.
+2. **Navigate** to the "Rules" tab located at the top.
 
 **Please note** you can view the rules of the POB by clicking on the POB and scrolling to the bottom of the page. You will not get an edit rule or add rule option here.
 
 Once in the Rules section, follow these steps to add POB Rules:
 
-1. Click on the "+" icon under the Rules section.  
+1. Click on the "+" icon under the Rules section.\
    ![](https://files.readme.io/165cf0c-image.png)
 
-2. Select the specific POB to which the rule should be assigned.  
+2. Select the specific POB to which the rule should be assigned.\
    ![](https://files.readme.io/e247385-image.png)
 
 3. Define the attribute value used for recognizing the POB. For example, select the "Item" attribute. If the desired value is not available, click on the window-shaped button and select the attribute from the window that appears, then click on "Save." In this case, we have chosen "Account Code" as the attribute for POB recognition.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8698dfd-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/8698dfd-image.png" />
 
 ![](https://files.readme.io/79bb6b3-image.png)
 
@@ -291,16 +196,14 @@ Once in the Rules section, follow these steps to add POB Rules:
 
 **Notes:**
 
-- Avoid editing the default POBs, such as "Material right" and "manual journal."
-- Multiple release events can be associated with a single POB, but the total release percentage must equal 100%.
-- POBs require an assigned rule to function properly.
-- You can change the hierarchy of POB rules by dragging and rearranging them using the drag icon.
-- Remember to save any changes made to the rules or hierarchy.
-- To delete a POB Rule, select the rule and click on the "Delete" icon. Click on the "Save" icon to confirm the deletion.
+* Avoid editing the default POBs, such as "Material right" and "manual journal."
+* Multiple release events can be associated with a single POB, but the total release percentage must equal 100%.
+* POBs require an assigned rule to function properly.
+* You can change the hierarchy of POB rules by dragging and rearranging them using the drag icon.
+* Remember to save any changes made to the rules or hierarchy.
+* To delete a POB Rule, select the rule and click on the "Delete" icon. Click on the "Save" icon to confirm the deletion.
 
 ![](https://files.readme.io/d7091a2-image.png)
-
-
 
 ### POB Forecasting
 
@@ -312,10 +215,10 @@ Forecast Management allows you to forecast revenue based on both external events
 
 1. Navigate to the required POB
 2. Click on Forecast. This will land you in the forecast page. 
-3. Select the waterfall type for forecast.  
-   Point in time  
-   Overtime  
-   Overtime Slide  
+3. Select the waterfall type for forecast.\
+   Point in time\
+   Overtime\
+   Overtime Slide\
    Overtime Condense
 4. Enter the percent of revenue you need to forecast based on this rule. At any given point, the forecast release should not be more than 100%.
 5. Select the “forecast on” date. This is the date on which revenue has to be forecasted. The system gives several forecasts on options like Book Date, Start date, End date, delivery date.
@@ -327,85 +230,40 @@ Setting up the Stand-Alone Selling Price (SSP) involves a streamlined process co
 
 ### Creating the SSP
 
-1. **Navigate **to the Rules section and click on **SSP Definition**.
+1. **Navigate** to the Rules section and click on **SSP Definition**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7bdf656-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/7bdf656-image.png" />
 
+2. **Click** on the "+" icon to create a new SSP.
 
-2. **Click **on the "+" icon to create a new SSP.
+<Image align="center" className="border" border={true} src="https://files.readme.io/50c8572-image.png" />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/50c8572-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+3. **Enter** a name for the SSP.
+4. **Leave** the Range tab blank when uploading SSP data.
+5. **Select** the **Type** of SSP as SSP or RSSP.
 
+**Note:** Select SSP, if you want to define standalone selling price and select RSSP when you want to define Residual standalone selling price.
 
-3. **Enter **a name for the SSP.
-4. **Leave **the Range tab blank when uploading SSP data.
-5. **Select **the **Type **of SSP as SSP or RSSP.
-
-**Note: **Select SSP, if you want to define standalone selling price and select RSSP when you want to define Residual standalone selling price.
-
-6. Under the Books tab, choose the relevant Book for the SSP.  
+6. Under the Books tab, choose the relevant Book for the SSP.\
    ![](https://files.readme.io/ad342cf-image.png)
-7. Select the appropriate SSP value from the drop-down menu.  
+7. Select the appropriate SSP value from the drop-down menu.\
    ![](https://files.readme.io/0695b7d-image.png)
-8. Specify the SSP statistics as Simple Median, Simple Average, Weighted Median, or Weighted Average.  
+8. Specify the SSP statistics as Simple Median, Simple Average, Weighted Median, or Weighted Average.\
    ![](https://files.readme.io/886d8aa-image.png)
-9. Determine the SSP base as Low, Median, High, or Follow SellPrice.  
+9. Determine the SSP base as Low, Median, High, or Follow SellPrice.\
    ![](https://files.readme.io/b2875c5-image.png)
-10. Under the Grouping tab, select the attribute that will define the SSP. For example, if you choose "item" as the attribute, the SSP will be based on items.  
+10. Under the Grouping tab, select the attribute that will define the SSP. For example, if you choose "item" as the attribute, the SSP will be based on items.\
     ![](https://files.readme.io/e3e1791-image.png)
-11. Save the SSP configuration. The newly created SSP card will appear on the left side under active SSPs.  
+11. Save the SSP configuration. The newly created SSP card will appear on the left side under active SSPs.\
     ![](https://files.readme.io/bc6db73-image.png)
-12. To delete any SSP configured in Recurly Revenue Recognition Advanced, click on the delete icon located on the black menu bar.  
+12. To delete any SSP configured in Recurly Revenue Recognition Advanced, click on the delete icon located on the black menu bar.\
     ![](https://files.readme.io/26004bd-image.png)
 
 ### Configuring the SSP Analyzer for data upload
 
 1. Navigate to the Rules section and click on SSP Analyzer, or click on SSP Analyzer at the top of the SSP page. In case of multiple SSP definitions, go to the required SSP card and click on SSP Analyzer.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d108a7b-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/d108a7b-image.png" />
 
 2. On the SSP Analyzer page, click on the “+” icon to create a new SSP Analyzer.
 
@@ -416,23 +274,7 @@ Setting up the Stand-Alone Selling Price (SSP) involves a streamlined process co
 5. Define the active dates, including the start and end date (if applicable), for the SSP data.
 6. Once you have configured the SSP Analyzer, click the Save icon to save your changes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c58f0b0-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/c58f0b0-image.png" />
 
 7. The Flow Status will be displayed as "New" once the configuration is saved.
 
@@ -440,7 +282,7 @@ Setting up the Stand-Alone Selling Price (SSP) involves a streamlined process co
 
 ### Preparing and uploading SSP data
 
-1. Ensure that the information in the table corresponds to the selections made for the SSP configuration, maintaining consistency with the chosen value type (e.g., amount or percentage).  
+1. Ensure that the information in the table corresponds to the selections made for the SSP configuration, maintaining consistency with the chosen value type (e.g., amount or percentage).\
    ![](https://files.readme.io/1ada774-image.png)
 
 2. To upload the SSP data, click on the Upload icon.
@@ -455,16 +297,16 @@ Setting up the Stand-Alone Selling Price (SSP) involves a streamlined process co
 
 7. The flow status will change to Approved once the SSP data is approved.
 
-8. The SSP data will appear on the SSP Analyzer screen as shown below:  
+8. The SSP data will appear on the SSP Analyzer screen as shown below:\
    ![](https://files.readme.io/c3025e9-image.png)
 
 9. After the SSP data is approved, it can be downloaded by clicking on the Download icon.
 
 **Notes:**
 
-- If the SSP data needs to be deleted, it can only be done before approving it. Click on the Delete icon to remove the data. Once approved, the data cannot be deleted.
-- If the approved SSP data will not be used, specify an end date so that the data will not be utilized beyond that date.
-- Recurly Revenue Recognition Advanced allows you to provide validity for the uploaded SSP data by specifying the start and end dates for the approved data.
+* If the SSP data needs to be deleted, it can only be done before approving it. Click on the Delete icon to remove the data. Once approved, the data cannot be deleted.
+* If the approved SSP data will not be used, specify an end date so that the data will not be utilized beyond that date.
+* Recurly Revenue Recognition Advanced allows you to provide validity for the uploaded SSP data by specifying the start and end dates for the approved data.
 
 ### SSP Analysis by the system
 
@@ -500,7 +342,7 @@ In Recurly Revenue Recognition Advanced, the setup for automatically applying va
 5. **Ensure** that the VC-related accounts in your ERP system are accurately reflected:
    1. **Accrual Account:** A liability account used for VC accrual.
    2. **Contra Account:** A revenue account for VC revenue.
-   3. **Clearing Account: **A clearing account associated with VC.  
+   3. **Clearing Account:** A clearing account associated with VC.\
       ![](https://files.readme.io/05b4de3-image.png)
 
 6. **Define** the timing for VC accrual.
@@ -542,10 +384,10 @@ Any changes made to the variable consideration will be accurately reflected in t
 
 **Notes:**
 
-- The transaction price displayed in the Revenue Workbench reflects the price after the adjustments for variable consideration.
-- The revenue to date shown in the Revenue Workbench is the cumulative sum of revenue, allocations, and favorable variable considerations scheduled for the respective period.
-- The Revenue Workbench provides visibility into the waterfall analysis for variable consideration, showcasing the breakdown and impact of variable consideration on revenue recognition.
-- The VC Accrual represents either the amount calculated by the system or the liability that will be cleared once the actuals are incorporated into the process.
+* The transaction price displayed in the Revenue Workbench reflects the price after the adjustments for variable consideration.
+* The revenue to date shown in the Revenue Workbench is the cumulative sum of revenue, allocations, and favorable variable considerations scheduled for the respective period.
+* The Revenue Workbench provides visibility into the waterfall analysis for variable consideration, showcasing the breakdown and impact of variable consideration on revenue recognition.
+* The VC Accrual represents either the amount calculated by the system or the liability that will be cleared once the actuals are incorporated into the process.
 
 ## Cost
 
@@ -555,32 +397,16 @@ Recurly Revenue Recognition Advanced includes functionality to account for costs
 
 1. Navigate to Rules and select Cost from the menu.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f03f8f4-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="25% " border={true} src="https://files.readme.io/f03f8f4-image.png" />
 
 2. Enter the 'Cost Type' to specify the type of cost you are defining.
 3. Determine the cost treatment based on the following options:
-   1. **Point in time: **Recognize the cost in the month it is incurred.
-   2. **Follow Revenue: **Recognize the cost according to the revenue recognition pattern over the contract period.
+   1. **Point in time:** Recognize the cost in the month it is incurred.
+   2. **Follow Revenue:** Recognize the cost according to the revenue recognition pattern over the contract period.
 4. Set the cost keys by clicking on the field and selecting the appropriate options from the pop-up menu. Note that selecting cost keys is optional.
 5. If you need the Recurly Revenue Recognition Advanced tool to calculate the cost amount, use the "Formula on" feature. Type "Line.SellPrice" (case sensitive) to apply cost rules based on a percentage of the sell price.
 6. Specify a unique account number for the debit account ('Dr account number') and the credit account ('Cr account number'). These account numbers will be compared with the Sales Order number.
-7. If your incremental cost needs to be amortized and capitalized, activate the "Cost Capitalize" option.  
+7. If your incremental cost needs to be amortized and capitalized, activate the "Cost Capitalize" option.\
    ![](https://files.readme.io/b6ce8f1-image.png)
 8. Finally, click on the Save icon to save your cost configuration.
 
@@ -590,10 +416,10 @@ To add rules to the cost configuration in order to apply the cost formula to spe
 2. Select the book for which the cost should be applied. This ensures that the cost rule is associated with the correct book.
 3. In the "Item" column, enter the name "Macbook" to specify that this cost rule should be applied to contract lines related to the item "Macbook."
 4. In the "Value" column, enter the percentage of the sell price that should be treated as cost for the specified item.
-5. Click on the save button to save the cost rule.  
+5. Click on the save button to save the cost rule.\
    ![](https://files.readme.io/c0e7dae-image.png)
 
-**Note: **If your cost calculation is based on any other attribute other than “item”, go to the mapper and select the required fields.
+**Note:** If your cost calculation is based on any other attribute other than “item”, go to the mapper and select the required fields.
 
 ### Calculation of cost using a cost file
 
@@ -603,7 +429,7 @@ To add rules to the cost configuration in order to apply the cost formula to spe
 
 3. Click on the "Upload" icon to upload the Cost file.
 
-4. Choose the Cost file from your local system by clicking on "Browse" or "Choose File" and select the appropriate file.  
+4. Choose the Cost file from your local system by clicking on "Browse" or "Choose File" and select the appropriate file.\
    ![](https://files.readme.io/43d3a70-image.png)
 
 5. Once the file is selected, click on "Open" to initiate the upload process.
@@ -620,18 +446,18 @@ There are two types of holds available: Contract Level hold and Element Level ho
 
 **Contract Level Hold:**
 
-- A Contract Level hold applies to the entire contract.
-- It prevents revenue recognition for the contract until the hold condition is met.
-- The hold condition could be a specific event, date, or any other criteria defined by the management.
-- Once the hold condition is satisfied, revenue recognition for the contract can proceed.
+* A Contract Level hold applies to the entire contract.
+* It prevents revenue recognition for the contract until the hold condition is met.
+* The hold condition could be a specific event, date, or any other criteria defined by the management.
+* Once the hold condition is satisfied, revenue recognition for the contract can proceed.
 
 **Element Level Hold:**
 
-- An Element Level hold applies to individual revenue elements within a contract.
-- It allows for holding revenue recognition for specific elements until the hold condition is met.
-- Each revenue element can have its own hold condition.
-- The hold condition could be based on the fulfillment of certain criteria or the occurrence of specific events.
-- Once the hold condition for an element is satisfied, revenue recognition for that particular element can proceed.
+* An Element Level hold applies to individual revenue elements within a contract.
+* It allows for holding revenue recognition for specific elements until the hold condition is met.
+* Each revenue element can have its own hold condition.
+* The hold condition could be based on the fulfillment of certain criteria or the occurrence of specific events.
+* Once the hold condition for an element is satisfied, revenue recognition for that particular element can proceed.
 
 The **Holds** feature in Recurly Revenue Recognition Advanced provides flexibility in managing revenue recognition by allowing for temporary holds based on defined conditions. It ensures that revenue recognition aligns with the requirements and policies set by management, providing accurate and compliant financial reporting.
 
@@ -639,64 +465,48 @@ The **Holds** feature in Recurly Revenue Recognition Advanced provides flexibili
 
 1. Navigation: Go to Rules → Holds
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f03f8f4-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "25% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="25% " border={true} src="https://files.readme.io/f03f8f4-image.png" />
 
-
-2. **Name: **Enter a name for the hold, such as "Delivery Hold."
+2. **Name:** Enter a name for the hold, such as "Delivery Hold."
 3. **Apply on:** Select whether the hold should be applied at the Contract level or Element level.
 4. **Release on:** Select an event based on which the hold can be released. Note that this option is inactive for a contract level hold.
 5. **Books:** Select the books to which the hold configuration should apply. You can select all or specific books.
-6. **Expiry Date: **Choose the date on which the hold will expire and will no longer be applied.
+6. **Expiry Date:** Choose the date on which the hold will expire and will no longer be applied.
 7. **Days:** Enter the number of days after which the hold will no longer apply.
-8. **Active Dates: **Specify the date or period during which you want the hold to be active.
-9. **Release Hold: **Choose one of the following options:
+8. **Active Dates:** Specify the date or period during which you want the hold to be active.
+9. **Release Hold:** Choose one of the following options:
    1. **Active:** When the release hold is active, revenue cannot be scheduled and revenue will not be transferred to the general ledger even if you try to release revenue manually.
-   2. **Inactive:** When the release hold is inactive, you can schedule revenue and revenue will be transferred to the general ledger when you try to release revenue manually.  
+   2. **Inactive:** When the release hold is inactive, you can schedule revenue and revenue will be transferred to the general ledger when you try to release revenue manually.\
       ![](https://files.readme.io/d644991-image.png)
-10. **Criteria: **This section allows you to define criteria for applying the hold to a contract or element. It includes the following columns:
+10. **Criteria:** This section allows you to define criteria for applying the hold to a contract or element. It includes the following columns:
     1. **Field type:** Specify the field type, such as "All" or a specific field.
-    2. **Field: **Choose the field on which the hold criteria will be based.
+    2. **Field:** Choose the field on which the hold criteria will be based.
     3. **Operator:** Select the operator to define the comparison, such as "=", "\<", ">", etc.
     4. **Value:** Enter the value against which the field will be compared, such as "Damaged" (text) or a specific number.
 
 ### Applying and releasing holds (functional scenarios)
 
-1. **Create** a hold at the contract level by filling in the mandatory fields and selecting a criteria based on which the hold will apply. For example, set the criteria as "quantity equal to greater than 5."  
+1. **Create** a hold at the contract level by filling in the mandatory fields and selecting a criteria based on which the hold will apply. For example, set the criteria as "quantity equal to greater than 5."\
    ![](https://files.readme.io/0eafa22-image.png)
 
-2. **Upload **the sales order (SO) file that satisfies the hold criteria.
+2. **Upload** the sales order (SO) file that satisfies the hold criteria.
 
 3. **Open** the contract in the revenue workbench.
 
-4. **Go **to the "Hold" tab in the contract view.  
+4. **Go** to the "Hold" tab in the contract view.\
    ![](https://files.readme.io/d0b9ff7-image.png)
 
 5. **Right-click** on each order line that needs to have the hold released.
 
-6. A dialog box titled "Release Line Hold" will appear.  
+6. A dialog box titled "Release Line Hold" will appear.\
    ![](https://files.readme.io/bea81c0-image.png)
 
 7. **Click** on the dialog box to release the hold on the selected order line.
 
-8. The released hold will be reflected in the waterfall view, showing the updated revenue recognition.  
+8. The released hold will be reflected in the waterfall view, showing the updated revenue recognition.\
    ![](https://files.readme.io/1be3a75-image.png)
 
-9. It's also possible to configure holds at the element level, providing more flexibility in managing revenue recognition.  
+9. It's also possible to configure holds at the element level, providing more flexibility in managing revenue recognition.\
    ![](https://files.readme.io/ab318a9-image.png)
 
 10. If holds are configured at the element level, you can follow the same process to release them manually.
@@ -713,7 +523,7 @@ The **Holds** feature in Recurly Revenue Recognition Advanced provides flexibili
 
 Now, to apply the hold on an element level manually:
 
-1. **Upload **a contract that does not satisfy the element level hold criteria.
+1. **Upload** a contract that does not satisfy the element level hold criteria.
 
 2. **Go** to the Revenue Workbench and open the contract.
 
@@ -721,10 +531,10 @@ Now, to apply the hold on an element level manually:
 
 4. Once the hold screen appears, **right-click** on the order line that needs to have the hold applied.
 
-5. A dialogue box titled "Apply Line Hold" will appear.  
+5. A dialogue box titled "Apply Line Hold" will appear.\
    ![](https://files.readme.io/7481598-image.png)
 
-6. **Click **on "Apply Line Hold," and another dialogue box will appear.  
+6. **Click** on "Apply Line Hold," and another dialogue box will appear.\
    ![](https://files.readme.io/538007b-image.png)
 
 7. **Choose** a predefined hold from the options and add comments explaining why the hold is being applied. Note that you can apply the hold even if it does not satisfy the criteria set for the hold.
@@ -733,10 +543,8 @@ Now, to apply the hold on an element level manually:
 
 **Notes:**
 
-- In the "Hold" tab of the Revenue Workbench, you can see the information about when and who applied the line hold.
-- Holds can also be applied to partial revenue. For example, if 50% of the revenue for a contract has been released, you can apply a hold on the remaining 50% and release it at a later time. The same process mentioned above can be used to apply holds on partial revenue in the Revenue Workbench manually.
-
-
+* In the "Hold" tab of the Revenue Workbench, you can see the information about when and who applied the line hold.
+* Holds can also be applied to partial revenue. For example, if 50% of the revenue for a contract has been released, you can apply a hold on the remaining 50% and release it at a later time. The same process mentioned above can be used to apply holds on partial revenue in the Revenue Workbench manually.
 
 ## Additional Journals
 
