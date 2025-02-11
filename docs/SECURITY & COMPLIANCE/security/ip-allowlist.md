@@ -26,9 +26,9 @@ This feature allows Recurly to communicate securely with external systems using 
 
 # Key benefits
 
-- **Enhanced security**: Recurly's IP Allowlist ensures that only trusted IP addresses have access, minimizing the risk of unauthorized intrusion.
-- **Controlled access**: With IP Allowlisting, your payment gateway, tax provider, email service, and other systems can restrict access to only Recurly's IP addresses, enhancing your control over your data.
-- **Compliance and trust**: By using the IP Allowlist, Recurly fortifies trust and compliance between your business and your service providers.
+* **Enhanced security**: Recurly's IP Allowlist ensures that only trusted IP addresses have access, minimizing the risk of unauthorized intrusion.
+* **Controlled access**: With IP Allowlisting, your payment gateway, tax provider, email service, and other systems can restrict access to only Recurly's IP addresses, enhancing your control over your data.
+* **Compliance and trust**: By using the IP Allowlist, Recurly fortifies trust and compliance between your business and your service providers.
 
 # Key details
 
