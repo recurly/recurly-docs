@@ -19,11 +19,11 @@ Transactions, in the realm of Recurly, represent individual payment exchanges be
 
 # Key benefits
 
-- **Versatility:** Ability to handle various transaction types, from digital to MOTO, ensuring you never miss a sale.
-- **Enhanced security:** Transactions, especially non-face-to-face ones like MOTO, are processed with top-tier security measures.
-- **Operational efficiency:** Speed up the payment process by directly entering transaction details, reducing the wait time for both merchants and subscribers.
-- **Accurate record-keeping:** Each transaction is meticulously logged, aiding in financial analytics, forecasting, and audits.
-- **Improved subscriber trust:** With secured and diverse transaction methods, subscribers enjoy flexibility and assurance in their payments.
+* **Versatility:** Ability to handle various transaction types, from digital to MOTO, ensuring you never miss a sale.
+* **Enhanced security:** Transactions, especially non-face-to-face ones like MOTO, are processed with top-tier security measures.
+* **Operational efficiency:** Speed up the payment process by directly entering transaction details, reducing the wait time for both merchants and subscribers.
+* **Accurate record-keeping:** Each transaction is meticulously logged, aiding in financial analytics, forecasting, and audits.
+* **Improved subscriber trust:** With secured and diverse transaction methods, subscribers enjoy flexibility and assurance in their payments.
 
 # Key details
 
