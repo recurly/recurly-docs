@@ -20,13 +20,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Integration with Recurly's API or select client libraries.
-- Subscription to Recurly's out-of-box tax solution or direct integration with Avatax and Vertex
+* Integration with Recurly's API or select client libraries.
+* Subscription to Recurly's out-of-box tax solution or direct integration with Avatax and Vertex
 
 ### Limitations
 
-- **Once enabled, the Tax Inclusive Pricing feature cannot be disabled on your Recurly site.**
-- Inclusivity status of a subscription cannot be altered post-creation.
+* **Once enabled, the Tax Inclusive Pricing feature cannot be disabled on your Recurly site.**
+* Inclusivity status of a subscription cannot be altered post-creation.
 
 # Definition
 
@@ -34,23 +34,23 @@ Recurly's "Tax Inclusive Pricing" feature allows merchants to set prices that al
 
 # Key benefits
 
-- **Transparent pricing**: Offer clarity to customers by displaying prices inclusive of taxes.
-- **Flexibility**: Set tax inclusivity at subscription creation, catering to diverse customer preferences.
-- **Efficient tax handling**: Seamlessly integrate with Recurly's tax solutions or other direct integrations like Avatax and Vertex.
+* **Transparent pricing**: Offer clarity to customers by displaying prices inclusive of taxes.
+* **Flexibility**: Set tax inclusivity at subscription creation, catering to diverse customer preferences.
+* **Efficient tax handling**: Seamlessly integrate with Recurly's tax solutions or other direct integrations like Avatax and Vertex.
 
 # Introduction to tax inclusive pricing
 
 Recurly introduces the "Tax Inclusive Pricing" feature, enabling merchants to display prices that already account for any applicable taxes. Whether you're setting up subscriptions, items, fees, or add-ons, you can choose to display prices as tax-inclusive or exclusive.
 
-[block:image]{"images":[{"image":["https://files.readme.io/7f758cf-Screen_Shot_2022-04-22_at_12.12.14_PM.png",null,"Tax Inclusive Pricing UI"],"align":"center","border":true}]}[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/7f758cf-Screen_Shot_2022-04-22_at_12.12.14_PM.png" />
 
 ## How it works
 
 When creating a subscription plan, you can configure it as usual. At the point of subscription creation, you can select the tax status. For instance, if you have a plan priced at $10.00 and you subscribe two different customers with different tax inclusivity preferences, their final prices might differ based on the tax rate applied.
 
-[block:image]{"images":[{"image":["https://files.readme.io/6195d9b-Screen_Shot_2022-04-22_at_12.23.30_PM.png",null,"Tax Inclusive Invoice"],"align":"center","border":true}]}[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/6195d9b-Screen_Shot_2022-04-22_at_12.23.30_PM.png" />
 
-[block:image]{"images":[{"image":["https://files.readme.io/8de7238-Screen_Shot_2022-04-22_at_12.23.19_PM.png",null,"Tax Exclusive Invoice"],"align":"center","border":true}]}[/block]
+<Image align="center" className="border" border={true} src="https://files.readme.io/8de7238-Screen_Shot_2022-04-22_at_12.23.19_PM.png" />
 
 Items created outside of the plan page will inherit the tax inclusivity status of the associated subscription. For one-time purchases, you can add a charge to an account and select the tax inclusivity preference.
 
@@ -60,18 +60,18 @@ Discounts can be applied to purchases with tax inclusivity. Here's how they work
 
 **Percentage Discount**
 
-Original Price (Tax Inclusive): $300.00  
-Tax Rate: 10.250%  
-Discount: 20%  
-Final Price: $240.00  
+Original Price (Tax Inclusive): $300.00\
+Tax Rate: 10.250%\
+Discount: 20%\
+Final Price: $240.00\
 Breakdown: $217.69 (subtotal) + $22.32 (tax)
 
 **Fixed Amount Discount**
 
-Original Price (Tax Inclusive): $300.00  
-Tax Rate: 10.250%  
-Discount: $60.00  
-Final Price: $240.00  
+Original Price (Tax Inclusive): $300.00\
+Tax Rate: 10.250%\
+Discount: $60.00\
+Final Price: $240.00\
 Breakdown: $217.69 (subtotal) + $22.32 (tax)
 
 ## Integration with Recurly.js
