@@ -12,7 +12,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+# Overview 
 
 ### Required plan
 
@@ -96,7 +96,7 @@ Initiate the creation of a new account from the accounts overview page by clicki
 
 ## Billing info
 
-The **Billing Info** section displays stored payment information, usually provided by the customer during a purchase or update. Determine the required billing address fields in the Admin under Site Settings. Note that Billing Info can differ from the account address. Learn more about Wallet <Insert link here>.
+The **Billing Info** section displays stored payment information, usually provided by the customer during a purchase or update. Determine the required billing address fields in the Admin under Site Settings. Note that Billing Info can differ from the account address. Learn more about Wallet \<Insert link here>.
 
 ## Account notes
 
