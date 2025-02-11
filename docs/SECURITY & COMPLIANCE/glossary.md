@@ -12,7 +12,7 @@ next:
 ---
 Is something not defined here? Please [contact our support team][1].
 
-[1]: /contact.html
+[1]: /contact.html 
 
 ### A
 
@@ -22,7 +22,7 @@ Is something not defined here? Please [contact our support team][1].
   <dt>account code</dt>
   <dd>The unique identifier of an account.</dd>
   <dt>add-on</dt>
-  <dd>Optional products that can be rolled into the recurring invoice of a subscription plan.</dd>
+  <dd>Optional products that can be rolled into the recurring invoice of a subscription plan </dd>
   <dt>API</dt>
   <dd>Stands for "application programming interface" and helps you integrate your website with Recurly.</dd>
 </dl>
@@ -41,7 +41,7 @@ Is something not defined here? Please [contact our support team][1].
   <dd>A discount applied to an account.</dd>
   <dt>CVV</dt>
   <dd>Stands for "card verification value" (and sometimes called CVC). A validation number provided by credit cards to ensure an additional layer of security. Billing providers like Recurly are not allowed to store CVV values.</dd>
-dt>CPF</dt>
+<dt>CPF</dt>
   <dd>Essentially Brazil's version of a SSN. Used for processing PrimieroPay transactions.</dd>
 </dl>
 
