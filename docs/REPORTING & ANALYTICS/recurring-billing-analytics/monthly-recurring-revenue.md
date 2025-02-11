@@ -18,7 +18,7 @@ This feature is only available to customers on the Professional and/or Elite sub
 
 ### Prerequisites
 
-- Users must have Analytics user role permission.
+* Users must have Analytics user role permission.
 
 # Definition
 
@@ -26,7 +26,7 @@ The Monthly Recurring Revenue (MRR) dashboard is a vital tool for subscription-b
 
 > **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
 >
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation <a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
 
 # Understanding MRR
 
@@ -34,22 +34,7 @@ The Monthly Recurring Revenue (MRR) dashboard provides valuable insights into yo
 
 To ensure access to up-to-date information, utilize the widgets on this dashboard to refresh the screen. The data is updated multiple times a day, and you can check the widget at the bottom of the dashboard to verify the time of the last update.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/91e2f4a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/91e2f4a-image.png" />
 
 The MRR dashboard now offers a more nuanced view of your monthly recurring revenue, including insights into failed transactions, transactions in dunning, discounts, and expected MRR.
 
@@ -59,86 +44,40 @@ The MRR calculation incorporates various components related to invoiced recurrin
 
 Examples of adjustments included in the MRR calculation:
 
-- Subscription and subscription add-on amounts
-- Manual recurring charges
-- Proration credit from a subscription downgrade/upgrade
-- Refund of a subscription amount
-- Invoiced one-time charges with start_date and end_date
+* Subscription and subscription add-on amounts
+* Manual recurring charges
+* Proration credit from a subscription downgrade/upgrade
+* Refund of a subscription amount
+* Invoiced one-time charges with start\_date and end\_date
 
 The following are **NOT** included in the MRR calculation:
 
-- One-time charges without start_date and end_date
-- One-time credits
-- Taxes
-- Usage-based billing amounts
+* One-time charges without start\_date and end\_date
+* One-time credits
+* Taxes
+* Usage-based billing amounts
 
 You have the option to include or exclude the following in the MRR calculation:
 
-- Recurring charges from failed invoices
-- Coupon discounts
-- Multi-currency support
+* Recurring charges from failed invoices
+* Coupon discounts
+* Multi-currency support
 
-For sites that support multiple currencies, the default view shows total MRR across all currencies, converted to the primary currency and summed. Conversion rates are updated daily using data from <https://openexchangerates.org/>. Historical MRR uses the conversion rate at the time the charge was created and does not change over time for current conversion rates.
+For sites that support multiple currencies, the default view shows total MRR across all currencies, converted to the primary currency and summed. Conversion rates are updated daily using data from [https://openexchangerates.org/](https://openexchangerates.org/). Historical MRR uses the conversion rate at the time the charge was created and does not change over time for current conversion rates.
 
 For both the Total MRR graph and the MRR Break-Out we have drills for accounts, plans or add-ons. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/23085f8-mrr_bar_chart.png",
-        "mrr bar chart.png",
-        2372
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true,
-      "caption": "MRR Totals"
-    }
-  ]
-}
-[/block]
+<Image title="mrr bar chart.png" alt={2372} align="center" width="75% " border={true} src="https://files.readme.io/23085f8-mrr_bar_chart.png">
+  MRR Totals
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0bcc8ae-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/0bcc8ae-image.png" />
 
 These drills provide a detailed view of each account contributing to the data in the bar/number, sorted by total MRR. A convenient filter at the top lets you narrow down the data by specific accounts or emails.
 
 For a more granular view, you can further drill into a particular account by selecting the Total MRR or Total ARR number.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/02f934a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/02f934a-image.png" />
 
 This deeper drill showcases all the associated charges that contribute to the total MRR or ARR for the selected account. The same drill-down functionality is available in the MRR Growth section.
 
@@ -154,29 +93,13 @@ The newly added “In Dunning” series provides insights into the MRR of the cu
 
 In this section, the MRR can be viewed by:
 
-- Collected MRR
-- MRR in Dunning
-- Expected MRR (based on upcoming subscription bills)
-- Discounts applied to MRR
-- Total MRR (Sum of MRR, In Dunning, Expected MRR, minus Discounts)
+* Collected MRR
+* MRR in Dunning
+* Expected MRR (based on upcoming subscription bills)
+* Discounts applied to MRR
+* Total MRR (Sum of MRR, In Dunning, Expected MRR, minus Discounts)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/01e67fa-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/01e67fa-image.png" />
 
 As you can see with the MRR graph,  you have the ability to drill by account, plan or add-on and then can dive even further, as needed. 
 
