@@ -26,11 +26,11 @@ Please reach out to [support@recurly.com](mailto:support@recurly.com) for more p
 
 # Key benefits
 
-- Clear methodology for comprehensive implementation.
-- Guidance from Recurly throughout the process.
-- Customizable implementation to fit specific business needs.
-- Multiple testing phases for solution reliability.
-- Integration with existing systems for operational continuity.
+* Clear methodology for comprehensive implementation.
+* Guidance from Recurly throughout the process.
+* Customizable implementation to fit specific business needs.
+* Multiple testing phases for solution reliability.
+* Integration with existing systems for operational continuity.
 
 # Implementation process
 
@@ -58,8 +58,8 @@ In the final phase, you'll go live with the Recurly Revenue Recognition Standalo
 
 ## FAQ
 
-**Q: Can I purchase the Standard edition as a standalone product?**  
+**Q: Can I purchase the Standard edition as a standalone product?**\
 A: No, the Standard edition of Recurly revenue recognition is not available as a standalone product. It is a feature offered within the Recurly platform. To access the Standard edition, you will need a Recurly subscription.
 
-**Q: How is the data integrated with Recurly's Revenue Recognition Standalone?**  
+**Q: How is the data integrated with Recurly's Revenue Recognition Standalone?**\
 A: Recurly's Revenue Recognition supports manual load of data and data integration through API calls. Please refer to the Import/export section for more details on the procedure.
