@@ -18,11 +18,11 @@ Lifecycle Communications in Recurly pertains to the structured and strategic com
 
 # Key benefits
 
-- **Personalized engagement:** Tailor messages to resonate with subscribers, enhancing user experience and loyalty.
-- **Global outreach:** With 30 language supports, communicate effortlessly with a diverse subscriber base.
-- **Timely notifications:** Ensure subscribers never miss an update with timezone-specific emails and crucial reminders.
-- **Segmented targeting:** Drive better engagement by reaching out to the right audience with relevant content.
-- **Seamless deliverability:** Advanced integrations, like Sendgrid, guarantee your emails hit the inbox every time.
+* **Personalized engagement:** Tailor messages to resonate with subscribers, enhancing user experience and loyalty.
+* **Global outreach:** With 30 language supports, communicate effortlessly with a diverse subscriber base.
+* **Timely notifications:** Ensure subscribers never miss an update with timezone-specific emails and crucial reminders.
+* **Segmented targeting:** Drive better engagement by reaching out to the right audience with relevant content.
+* **Seamless deliverability:** Advanced integrations, like Sendgrid, guarantee your emails hit the inbox every time.
 
 # Key details
 
