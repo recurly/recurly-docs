@@ -24,6 +24,6 @@ If you use Stripe and Gateway Failover, you must make sure the two gateways matc
 
 Stripe descriptor suffix will be sent in the following manners automatically depending on the actions you are taking for your customers: 
 
-- For Subscriptions with free trials, Recurly will send the Stripe suffix with the word 'Trial' and the Plan name in adherence with the [Visa Trial Mandate](https://docs.recurly.com/docs/visa-free-trial-mandate). The first payment after the trial ends will adhere to this behavior.
-- Transactions as part of a recurring series will also use Stripe suffix logic, including the Plan name, however standard subscriptions without a trial, and transactions that occur after the first trial-end payment will not contain the word 'Trial'.
-- Transactions that are not part of a recurring series or a first payment after trial ending will contain the invoice / payment description.
+* For Subscriptions with free trials, Recurly will send the Stripe suffix with the word 'Trial' and the Plan name in adherence with the [Visa Trial Mandate](https://docs.recurly.com/docs/visa-free-trial-mandate). The first payment after the trial ends will adhere to this behavior.
+* Transactions as part of a recurring series will also use Stripe suffix logic, including the Plan name, however standard subscriptions without a trial, and transactions that occur after the first trial-end payment will not contain the word 'Trial'.
+* Transactions that are not part of a recurring series or a first payment after trial ending will contain the invoice / payment description.
