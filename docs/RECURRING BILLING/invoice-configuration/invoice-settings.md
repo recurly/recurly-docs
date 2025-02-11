@@ -24,11 +24,11 @@ Automated Invoicing in Recurly simplifies the billing process by automatically c
 
 # Key benefits
 
-- **Efficiency and time savings:** Automates the invoicing process, eliminating manual effort and reducing the risk of errors, which allows your team to focus on more strategic tasks.
+* **Efficiency and time savings:** Automates the invoicing process, eliminating manual effort and reducing the risk of errors, which allows your team to focus on more strategic tasks.
 
-- **Customization and professionalism:** Offers extensive customization options for invoices, enabling businesses to maintain a consistent and professional appearance in all customer billing communications.
+* **Customization and professionalism:** Offers extensive customization options for invoices, enabling businesses to maintain a consistent and professional appearance in all customer billing communications.
 
-- **Compliance and tax management:** Facilitates compliance with various tax regulations, including EU VAT, by allowing for precise configuration of tax-related invoice notes and address information, helping to ensure that your invoicing practices align with relevant laws and regulations.
+* **Compliance and tax management:** Facilitates compliance with various tax regulations, including EU VAT, by allowing for precise configuration of tax-related invoice notes and address information, helping to ensure that your invoicing practices align with relevant laws and regulations.
 
 ## Default Values
 
@@ -64,30 +64,15 @@ Invoices are sent in the body of Recurly's email templates. You can choose to at
 
 Email Templates that support invoice PDF attachments:
 
-- New Subscription
-- New Invoice (Manual Invoice feature only)
-- Invoice Past Due (Manual Invoice feature only)
-- Payment Confirmation
-- Payment Declined
-- Payment Refunded
-- Payment Voided
+* New Subscription
+* New Invoice (Manual Invoice feature only)
+* Invoice Past Due (Manual Invoice feature only)
+* Payment Confirmation
+* Payment Declined
+* Payment Refunded
+* Payment Voided
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2c2422e-Screenshot_2024-08-05_at_9.21.28_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/2c2422e-Screenshot_2024-08-05_at_9.21.28_AM.png" />
 
 ## Bill To Address
 
@@ -101,13 +86,13 @@ Select "Use Account Info Address for all Invoices" to force all customer invoice
 
 This feature is useful for merchants who:
 
-- Want to display a shipping or mailing address on the invoice
-- Need to calculate taxes based on a shipping or mailing address
+* Want to display a shipping or mailing address on the invoice
+* Need to calculate taxes based on a shipping or mailing address
 
 When Account Info Address does not exist:
 
-- Automatic collection invoices will default back to the Billing Info, including Billing Info Address, Name, and VAT Number.
-- Manual collection invoices will still use Account Info, resulting in no address on the invoice.
+* Automatic collection invoices will default back to the Billing Info, including Billing Info Address, Name, and VAT Number.
+* Manual collection invoices will still use Account Info, resulting in no address on the invoice.
 
 ### Modification Enforcement
 
@@ -127,8 +112,8 @@ When downgrading an existing subscription, require that all invoices have been s
 
 #### Notes
 
-- If you use this setting your customers will NOT be allowed to downgrade if they have a past-due payment.
-- These settings only apply for immediate upgrade or downgrades. At bill date or term renewals will be allowed to be applied to an account even with an unpaid invoice.
+* If you use this setting your customers will NOT be allowed to downgrade if they have a past-due payment.
+* These settings only apply for immediate upgrade or downgrades. At bill date or term renewals will be allowed to be applied to an account even with an unpaid invoice.
 
 ## Integration Notes
 
@@ -136,35 +121,35 @@ This section provides important information to consider when integrating Recurly
 
 ### API Integration
 
-- Recurly provides a robust API that allows you to integrate Automated Invoicing directly into your existing systems. Be sure to review the [Recurly API Documentation](https://developers.recurly.com/) for detailed information on how to set up and manage this integration.
+* Recurly provides a robust API that allows you to integrate Automated Invoicing directly into your existing systems. Be sure to review the [Recurly API Documentation](https://developers.recurly.com/) for detailed information on how to set up and manage this integration.
 
 ### Webhooks
 
-- Recurly supports webhooks, which are automated messages sent from Recurly when a specific event happens (e.g., a new invoice is generated). Consider setting up webhooks to sync invoice data between Recurly and your internal systems in real time.
+* Recurly supports webhooks, which are automated messages sent from Recurly when a specific event happens (e.g., a new invoice is generated). Consider setting up webhooks to sync invoice data between Recurly and your internal systems in real time.
 
 ### Customization Limitations
 
-- While Recurly’s Automated Invoicing feature is highly customizable, there are certain fields and sections (e.g., the title of the “Terms and Conditions” section) that cannot be changed. Be sure to review these limitations in detail and plan accordingly.
+* While Recurly’s Automated Invoicing feature is highly customizable, there are certain fields and sections (e.g., the title of the “Terms and Conditions” section) that cannot be changed. Be sure to review these limitations in detail and plan accordingly.
 
 ### Error Handling
 
-- When integrating with Recurly’s API, ensure that your system is set up to handle errors gracefully. For example, if an API call to create a new invoice fails, your system should be able to retry the request or log the error for manual review.
+* When integrating with Recurly’s API, ensure that your system is set up to handle errors gracefully. For example, if an API call to create a new invoice fails, your system should be able to retry the request or log the error for manual review.
 
 ### Security Considerations
 
-- Ensure that your integration with Recurly adheres to best practices for security. This includes using secure connections (HTTPS) for all API calls and safeguarding any API keys or credentials.
+* Ensure that your integration with Recurly adheres to best practices for security. This includes using secure connections (HTTPS) for all API calls and safeguarding any API keys or credentials.
 
 ### Compliance and Tax Considerations
 
-- Automated Invoicing in Recurly is designed to be compliant with various tax regulations, including EU VAT. However, tax regulations can vary significantly between regions, so it is essential to consult with a tax professional to ensure that your invoicing practices are fully compliant with all relevant laws and regulations.
+* Automated Invoicing in Recurly is designed to be compliant with various tax regulations, including EU VAT. However, tax regulations can vary significantly between regions, so it is essential to consult with a tax professional to ensure that your invoicing practices are fully compliant with all relevant laws and regulations.
 
 ### Performance and Rate Limiting
 
-- Be mindful of API rate limits when integrating Recurly’s Automated Invoicing feature. Ensure that your integration is designed to stay within these limits to avoid service disruptions.
+* Be mindful of API rate limits when integrating Recurly’s Automated Invoicing feature. Ensure that your integration is designed to stay within these limits to avoid service disruptions.
 
 ### Testing Environment
 
-- Before deploying your integration in a production environment, thoroughly test it in a sandbox or staging environment. Recurly provides a [sandbox environment](https://docs.recurly.com/docs/sandbox) for this purpose.
+* Before deploying your integration in a production environment, thoroughly test it in a sandbox or staging environment. Recurly provides a [sandbox environment](https://docs.recurly.com/docs/sandbox) for this purpose.
 
 By paying attention to these integration notes, you can ensure a smooth and effective implementation of Recurly's Automated Invoicing feature within your existing infrastructure and workflows.
 
