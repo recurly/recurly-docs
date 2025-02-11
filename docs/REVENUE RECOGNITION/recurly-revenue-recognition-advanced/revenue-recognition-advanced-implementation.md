@@ -22,11 +22,11 @@ The Recurly Revenue Recognition Advanced implementation process is a phase-wise 
 
 # Key benefits
 
-- **Structured implementation:** Employ a clear, phase-wise methodology for a comprehensive and systematic implementation.
-- **Expert guidance:** Receive continuous support and guidance from Recurly throughout the implementation process.
-- **Tailored solutions:** Customize the implementation to align with specific business requirements and objectives.
-- **Reliable testing:** Engage in multiple testing phases to ensure solution reliability and effectiveness.
-- **Seamless integration:** Ensure operational continuity through seamless integration with existing systems and processes.
+* **Structured implementation:** Employ a clear, phase-wise methodology for a comprehensive and systematic implementation.
+* **Expert guidance:** Receive continuous support and guidance from Recurly throughout the implementation process.
+* **Tailored solutions:** Customize the implementation to align with specific business requirements and objectives.
+* **Reliable testing:** Engage in multiple testing phases to ensure solution reliability and effectiveness.
+* **Seamless integration:** Ensure operational continuity through seamless integration with existing systems and processes.
 
 # Implementation process
 
