@@ -12,8 +12,10 @@ metadata:
 next:
   description: ''
 ---
-##Required Protected Fields
+## Required Protected Fields
+
 The Transparent Post API requires certain fields to be protected from tampering. The protected field is digitally signed using your private key to ensure that the user does not tamper with the value. At a minimum, you must include the redirect URL or account code for every transparent post request. You may include additional attributes to override the trial duration, unit amount, and quantity.
+
 <dl>
 <dt>redirect_url</dt>
 <dd>URL for redirection after the Transparent Post completes. This should be a URL on your web site.</dd>
@@ -23,8 +25,10 @@ The Transparent Post API requires certain fields to be protected from tampering.
 <dd>The plan code for the new subscription. This must be specified in the protected fields or in the HTML form.</dd>
 </dl>
 
-###Optional Protected Fields
+### Optional Protected Fields
+
 Unit amounts and trial durations may be overridden when included as attributes in the protected fields list. These attributes may not be submitted by users.
+
 <dl>
 <dt>subscription[unit_amount_in_cents]</dt>
 <dd>Override the default unit amount in cents</dd>
@@ -35,9 +39,11 @@ Unit amounts and trial durations may be overridden when included as attributes i
 </dl>
 
 ### Hidden HTML Field: Protected Data
+
 The client library saves the protected fields to a hidden field in the HTML form. While the values of the hidden field may be visible to a user viewing the HTML source, the values are protected with a secure hash. The hidden field is hashed using your private key to ensure that the form was legitimately created on your site and the values have not been tampered with before submission.
 
-####HTML Example
+#### HTML Example
+
 ```
 <form method="POST" action="https://api.recurly.com/transparent/[subdomain]/subscription">
   <input type="hidden" name="data" value="[protected form data]" />
@@ -49,9 +55,11 @@ The client library saves the protected fields to a hidden field in the HTML form
 ```
 
 ## Subscription HTML Form Fields
+
 The following form fields may be submitted by your HTML form:
 
-####Subscription Fields
+#### Subscription Fields
+
 <dl>
 <dt>subscription[plan_code]</dt>
 <dd>must be provided, protected or form field</dd>
@@ -61,15 +69,18 @@ The following form fields may be submitted by your HTML form:
 <dd>Subscription quantity</dd>
 </dl>
 
-####Subscription Add-On Fields
+#### Subscription Add-On Fields
+
 <dl>
 <dt>subscription[add_ons][__x__][add_on_code]</dt>
 <dt>subscription[add_ons][__x__][quantity]</dt>
 </dl>
 Note: __x__ should increment, starting from `0`, to specify multiple add-ons.
 
-####Account Fields
+#### Account Fields
+
 The account will be created upon a successful transaction if it does not already exist. These fields will update the account if it does exist.
+
 <dl>
 <dt>account[username]</dt>
 <dt>account[first_name]</dt>
@@ -78,7 +89,8 @@ The account will be created upon a successful transaction if it does not already
 <dt>account[company_name]</dt>
 </dl>
 
-####Billing Information Fields
+#### Billing Information Fields
+
 <dl>
 <dt>billing_info[first_name]</dt>
 <dt>billing_info[last_name]</dt>
@@ -102,7 +114,8 @@ The account will be created upon a successful transaction if it does not already
 <dd>`credit_card` (default) or `paypal` for PayPal transactions (requires PayPal Referential Transactions)</dd>
 </dl>
 
-####HTML Example
+#### HTML Example
+
 ```
 <form method="POST" action="https://api.recurly.com/transparent/[subdomain]/subscription">
   <input type="hidden" name="data" value="[protected form data]" />
@@ -116,12 +129,15 @@ The account will be created upon a successful transaction if it does not already
 </form>
 ```
 
-###Specifying Add-Ons
-You may optionally apply add-ons using the Transparent Post API. The `subscription[add_ons]` is treated as an array and should be indexed starting at 0\. To specify the add-on, set the appropriate `add_on_code` using a hidden input. Then, set the appropriate `quantity` using an input field. If the `quantity` field is not specified, an empty string, or '0', the add-on will not be included.
-You may also set the add_on_code and quantity using the protected variables of the Transparent Post.
+### Specifying Add-Ons
 
-####Quantity Example
+You may optionally apply add-ons using the Transparent Post API. The `subscription[add_ons]` is treated as an array and should be indexed starting at 0\. To specify the add-on, set the appropriate `add_on_code` using a hidden input. Then, set the appropriate `quantity` using an input field. If the `quantity` field is not specified, an empty string, or '0', the add-on will not be included.\
+You may also set the add\_on\_code and quantity using the protected variables of the Transparent Post.
+
+#### Quantity Example
+
 This example allows your users to specify a quantity for the Silver and Gold add-ons:
+
 ```
 <p>Silver Add-On</p>
 <input name="subscription[add_ons][0][add_on_code]" type="hidden" value="silver-addon" />
@@ -134,8 +150,10 @@ This example allows your users to specify a quantity for the Silver and Gold add
 <input name="subscription[add_ons][1][quantity]" type="text" value="1" />
 ```
 
-####Checkbox Example
+#### Checkbox Example
+
 Or using a checkbox:
+
 ```
 <input name="subscription[add_ons][0][add_on_code]" type="hidden" value="silver-addon" />
 <!-- the "quantity" value of "1" is set only if the checkbox is checked -->
@@ -147,9 +165,11 @@ Or using a checkbox:
 <label for="subscription[add_ons][1][quantity]">Gold Add-On</label>
 ```
 
-##Endpoint URL
-The client libraries handle the URL details automatically. If you are building your own transparent post implementation, use the endpoint below, substituting `subdomain` with your Recurly account's subdomain:
+## Endpoint URL
+
+The client libraries handle the URL details automatically. If you are building your own transparent post implementation, use the endpoint below, substituting `subdomain` with your Recurly account's subdomain:\
 `POST` `https://api.recurly.com/transparent/[subdomain]/subscription`
 
-##More Info
+## More Info
+
 Please see the [Subscription API](/api/subscriptions) for more information. The behavior of the Subscriptions Transparent Post API closely mirrors the behavior of the Subscriptions API for creating a new subscription.
