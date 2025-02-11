@@ -21,16 +21,4 @@ Dive into the world of subscription management with Recurly and discover a range
 
 # Product tour video
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true",
-  "title": "iframe",
-  "provider": "fast.wistia.net",
-  "href": "https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true",
-  "typeOfEmbed": "iframe",
-  "height": "580px",
-  "width": "800%",
-  "iframe": true
-}
-[/block]
+<Embed url="https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true" title="iframe" provider="fast.wistia.net" href="https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800%" iframe="true" />
