@@ -30,7 +30,7 @@ Before integrating Google Pay™ into your Recurly account, ensure you have a Go
 Currently, Google Pay™ is not supported on Recurly Checkout or Hosted Payment Pages. 
 
 > 📘 Google Pay App was deprecated by Google on June 4, 2024.
-> 
+>
 > This does not extend to the Payment Method itself. Users can continue to enjoy payments with Google Pay through the Google Wallet app.
 
 # Description
@@ -39,8 +39,8 @@ Google Pay™ is a prominent payment method, allowing customers to perform trans
 
 ### Use cases
 
-- Web Purchases: Customers can utilize Google Pay™ for straightforward transactions while shopping on web browsers such as Google Chrome.
-- Android Transactions: Enable swift and secure purchases for customers using Android devices without the need for entering payment details every time.
+* Web Purchases: Customers can utilize Google Pay™ for straightforward transactions while shopping on web browsers such as Google Chrome.
+* Android Transactions: Enable swift and secure purchases for customers using Android devices without the need for entering payment details every time.
 
 # Checkout Flow
 
