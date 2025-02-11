@@ -38,121 +38,27 @@ Recurly supports Ecommerce and Recurring transactions with FreedomPay. If you ar
 
 # Key details
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Features
-      </th>
-
-      <th>
-        Availability
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Services that work with Recurly
-      </td>
-
-      <td>
-        Payment Processing
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported integrations
-      </td>
-
-      <td>
-        Recurly.js, API, Checkout, HPP
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported operations
-      </td>
-
-      <td>
-        Verify, Purchase, Void, and Refund
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported payment types
-      </td>
-
-      <td>
-        Credit and Debit Cards, Gateway tokens
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported card brands
-      </td>
-
-      <td>
-        Visa, MasterCard, Discover, Amex, JCB, Diners, UnionPay
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Gateway Specific 3DS2 Supported
-      </td>
-
-      <td>
-        N/A
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported capabilities
-      </td>
-
-      <td>
-        Card-on-file, Gateway Tokens, ZDA
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Regions
-      </td>
-
-      <td>
-        United States
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Currencies
-      </td>
-
-      <td>
-        FreedomPay supports all ISO-standard currencies. See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Features                        | Availability                                                                                                                                                |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Payment Processing                                                                                                                                          |
+| Supported integrations          | Recurly.js, API, Checkout, HPP                                                                                                                              |
+| Supported operations            | Verify, Purchase, Void, and Refund                                                                                                                          |
+| Supported payment types         | Credit and Debit Cards, Gateway tokens                                                                                                                      |
+| Supported card brands           | Visa, MasterCard, Discover, Amex, JCB, Diners, UnionPay                                                                                                     |
+| Gateway Specific 3DS2 Supported | N/A                                                                                                                                                         |
+| Supported capabilities          | Card-on-file, Gateway Tokens, ZDA                                                                                                                           |
+| Regions                         | United States                                                                                                                                               |
+| Currencies                      | FreedomPay supports all ISO-standard currencies. See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a> |
 
 # Configuring FreedomPay gateway in Recurly
 
-Follow the steps below to configure FreedomPay in Recurly. Make sure you use the correct site mode and FreedomPay credentials for a seamless setup. 
+Follow the steps below to configure FreedomPay in Recurly. Make sure you use the correct site mode and FreedomPay credentials for a seamless setup.
 
 > **Please note:** While the URLs are listed below, there is no configuration or specific integration necessary other than Recurly site mode to access these endpoints.
 
-* **Development mode**: Connects to the FreedomPay UAT environment: [https://cs.uat.freedompay.com/Freeway/Service.asmx](https://cs.uat.freedompay.com/Freeway/Service.asmx) 
-* **Production mode**: Connects to the FreedomPay production environment: [https://cs12.freedompay.us/Freeway/Service.asmx](https://cs12.freedompay.us/Freeway/Service.asmx)  
-* **Sandbox mode**: Does not use either environment,, and will hit the internal Recurly Test Gateway. 
+* **Development mode**: Connects to the FreedomPay UAT environment: [https://cs.uat.freedompay.com/Freeway/Service.asmx](https://cs.uat.freedompay.com/Freeway/Service.asmx)
+* **Production mode**: Connects to the FreedomPay production environment: [https://cs12.freedompay.us/Freeway/Service.asmx](https://cs12.freedompay.us/Freeway/Service.asmx)
+* **Sandbox mode**: Does not use either environment,, and will hit the internal Recurly Test Gateway.
 
 ### Step 1: Obtain your FreedomPay Store ID and Terminal ID
 
@@ -168,52 +74,46 @@ Log into your FreedomPay Gateway account. If you do not have an account, sign up
 6. Click **Create** at the bottom of the page.
 7. Copy the key using the copy icon. You can click to view the masked key, but it's not necessary for configuration.
 
-### Step 3: Enter your FreedomPay credentials in Recurly
+### Step 3: Acquire RSA Key Permissions and RSA key Slot ID from FreedomPay
+
+1. Ask your FreedomPay contact to enable RSA Key Management for your Freeway user account.
+2. Navigate to **Administration** › **RSA Key Management**.
+3. Select ‘RSA Key Provider’ of ‘FreedomPay’. This should be the default.
+4. Click CREATE NEW RSA KEY
+5. Type in a Key Slot ID name. The key name must be alpha-numeric with no spaces. Ensure you will recognize the key slot ID to avoid deletion.
+6. Type in a description of the key slot ID for future reference.
+7. Click Save
+
+### Step 4: Enter your FreedomPay credentials in Recurly
 
 1. Log into your Recurly account and navigate to the **Payment Gateways** page.
 2. Click **Add a New Gateway**.
 3. Select **FreedomPay** from the list of gateways.
 4. Enter your **Store ID** and **Terminal ID**.
 5. Enter the **Enhanced Security Key (ES Key)** generated in Step 2.
+6. Enter the **Enterprise Code** given to you by your FreedomPay representative.
+7. Enter your **RSA Key ID** generated in Step 3.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/970cffc46d1a2ea0027cb5a9b88bb9248c4593a8e17a8a511e47207af6db29b6-Credentials_-_FreedomPay.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/33fdca18f84fb22cd0419e959e33f43dd03df30040d0d1bf9aff296b02c05983-Screenshot_2025-02-11_at_2.38.45_PM.png" />
 
-### Step 4: Configure your gateway settings
+### Step 5: Configure your gateway settings
 
 1. Under **Accepted Credit Card Types**, select which card types you want to accept. This should match what you have set up in your FreedomPay account.
 2. Under **Accepted Currencies**, select the currencies you want to accept.
-3. Select the type of goods you plan to sell—Digital, Physical, or a combination of both.
-4. Click **Add Payment Gateway** once all sections are complete.
+3. Click **Add Payment Gateway** once all sections are complete.
 
-![](https://files.readme.io/08079a1b763dd45fb7bbc6b9bc323ce3d8b653b7b9f198abcdd0c69ef0add7f0-Goods_Selection_-_FreedomPay.png)
+<br />
 
-### Step 5: Configure your AVS and CVV rules
-
-FreedomPay supports verifying AVS (Address Verification) and CVV codes for customer-initiated transactions. To enable this feature for your Recurly site, go to **Configuration** › **Payment Settings** and enable the following:
-
-* **Credit Card Verification Check**
-* **Address Verification Check**
-
-When enabled, mismatches in AVS or CVV will cause customer-initiated transactions to be automatically declined, reducing the risk of fraud.
-
-**Customer-initiated transactions include:**
-
-* Signing up for a subscription
-* Making a one-time purchase
-* Updating billing information
-
-Recurring and other merchant-initiated transactions are not affected by these rules.
-
-> **For more information, see the[Payments Settings documentation](https://docs.recurly.com/docs/payment-settings).**
+## Processing with FreedomPay
 
 Further reading on Recurly functionality can be found elsewhere on this site. Please use the left-menu to discover and troubleshoot other features of our platform
 
 * [Developer Hub: Error Messages](https://recurly.com/developers/pages/api-transaction-errors.html)
-* Invoice Management: 
-  * [View Invoices: Invoice dashboard](https://docs.recurly.com/docs/invoices#view-invoices) 
+* Invoice Management:
+  * [View Invoices: Invoice dashboard](https://docs.recurly.com/docs/invoices#view-invoices)
   * [Refunds: Refund / Credit invoices](https://docs.recurly.com/docs/credit-invoices)
   * [Voids: Voiding invoices](https://docs.recurly.com/docs/credit-invoices#voiding-credit-invoices-or-balances)
-  * [Auth and Capture: Authorization and capture](https://docs.recurly.com/docs/auth-and-capture) 
+  * [Auth and Capture: Authorization and capture](https://docs.recurly.com/docs/auth-and-capture)
 
 ### Escalating to FreedomPay or Recurly Tech Support
 
@@ -221,7 +121,7 @@ If you need to reach out to FreedomPay directly, ensure you have all appropriate
 
 **Details to Collect and Provide**
 
-* Store ID, Terminal ID, Error Code, Request ID
+* Store ID, Terminal ID, Error Code, Request ID of the Transaction
 
 **Contact Details**
 
@@ -293,7 +193,6 @@ If you cannot access this PDF, please reach out to FreedomPay directly. Recurly 
           <nameOnCard>Jane Doe</nameOnCard>  
         </card>  
         <invoiceHeader>  
-          <goodsIndicator>physical</goodsIndicator>  
           <invoiceNumber>1000</invoiceNumber>  
           <purchaserCode>12345</purchaserCode>  
         </invoiceHeader>  
@@ -309,14 +208,13 @@ If you cannot access this PDF, please reach out to FreedomPay directly. Recurly 
           <paymentDate>2024-12-31T17:22:18Z</paymentDate>  
           <caps>K</caps>  
         </pos>  
-        <purchaseTotals>  
-          <currency>USD</currency>  
+        <purchaseTotals>   
           <chargeAmount>10.00</chargeAmount>  
           <taxTotal>0</taxTotal>  
         </purchaseTotals>  
         <items>  
           <item>  
-            <id>0</id>  
+            <id>1234567890</id>  
             <productName>Product Name</productName>  
             <productDescription>Description of the Product</productDescription>  
             <unitPrice>10.00</unitPrice>  
@@ -398,7 +296,7 @@ Per FreedomPay request, we are providing their security suggestions. Not all of 
 
 ### How do I contact Recurly Support?
 
-Please reference this page: [https://docs.recurly.com/docs/do-you-need-help](https://docs.recurly.com/docs/do-you-need-help) 
+Please reference this page: [https://docs.recurly.com/docs/do-you-need-help](https://docs.recurly.com/docs/do-you-need-help)
 
 ### What if my customer does not provide an address or CVV on the initial transaction and AVS Rejection is enabled?
 
@@ -431,11 +329,11 @@ For Merchant Initiated Transactions, the customer is no longer in session, but t
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/f101629887765a924175984e6e7c1d7407b72e5d0ef2cdbbc4cd41e3d7b72306-Screenshot_2024-12-12_at_11.49.49_AM.png" />
 
-Recurly does not approve or decline transactions. If you would like more information on a decline, we suggest having the customer reach out directly to their bank. 
+Recurly does not approve or decline transactions. If you would like more information on a decline, we suggest having the customer reach out directly to their bank.
 
 # Additional resources
 
-For additional Recurly troubleshooting and how-tos, please search this documentation site, as this FAQ is specific to FreedomPay: [Recurly Documentation](https://docs.recurly.com/) 
+For additional Recurly troubleshooting and how-tos, please search this documentation site, as this FAQ is specific to FreedomPay: [Recurly Documentation](https://docs.recurly.com/)
 
 Here are some helpful starter pages:
 
