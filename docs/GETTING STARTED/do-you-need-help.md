@@ -15,16 +15,23 @@ metadata:
 next:
   description: ''
 ---
-\<Cards columns=\{2}>
-&#x20; \<Card title="First Card" href="https\://readme.com" icon="fa-home" target="\_blank">
-&#x20;   Neque porro quisquam est qui dolorem ipsum quia
-&#x20; \</Card>
+<Cards columns={4}>
+  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
+    Neque porro quisquam est qui dolorem ipsum quia
+  </Card>
 
-&#x20; \<Card title="Second Card" icon="fa-user">
-&#x20;   \*Lorem ipsum dolor sit amet, consectetur adipiscing elit\*
-&#x20; \</Card>
-&#x20; \</Card>
-\</Cards>
+  <Card title="Second Card" icon="fa-user">
+    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
+  </Card>
+
+  <Card title="Third Card" icon="fa-star">
+    > Ut enim ad minim veniam, quis nostrud ullamco
+  </Card>
+
+  <Card title="Fourth Card" icon="fa-question">
+    **Excepteur sint occaecat cupidatat non proident**
+  </Card>
+</Cards>
 
 # Support channels
 
