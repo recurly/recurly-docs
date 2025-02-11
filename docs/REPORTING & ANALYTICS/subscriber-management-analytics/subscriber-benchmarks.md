@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+# Overview 
 
 ### Required plan
 
@@ -98,7 +98,7 @@ The churn rate metric offers insight into the proportion of subscribers lost dur
 
 <Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/2640816-Churn_Rate_Benchmark.png" />
 
-<br>
+<br/>
 
 Your performance is represented as a percentile, showing how your churn rate compares to others in your industry. Watching the trend of your percentile over time can reveal valuable insights into the effectiveness of your retention strategies and how they stack up against industry norms. 
 
