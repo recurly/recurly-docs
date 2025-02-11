@@ -20,17 +20,17 @@ This feature is only available to customers on the Elite subscription plan. To r
 
 ### Prerequisites
 
-- Integration supports Oracle NetSuite OneWorld or Oracle NetSuite Standard accounts
-- Must have _Credit Invoices_ and _Only Bill What Changed_ configured in your Recurly site.
-- Unique codes for each plan, add-on, or item in Recurly.
-- An unused API key in Recurly for the integration setup.
-- An Oracle NetSuite Sandbox account for User Acceptance Testing.
+* Integration supports Oracle NetSuite OneWorld or Oracle NetSuite Standard accounts
+* Must have *Credit Invoices* and *Only Bill What Changed* configured in your Recurly site.
+* Unique codes for each plan, add-on, or item in Recurly.
+* An unused API key in Recurly for the integration setup.
+* An Oracle NetSuite Sandbox account for User Acceptance Testing.
 
 ### Limitations
 
-- The integration is a one-way synchronization from Recurly to Oracle NetSuite.
-- Custom fields in Recurly need to be agreed upon for mapping in Oracle NetSuite.
-- Hierarchical structures, if present in Recurly accounts, need to be retained during data mapping.
+* The integration is a one-way synchronization from Recurly to Oracle NetSuite.
+* Custom fields in Recurly need to be agreed upon for mapping in Oracle NetSuite.
+* Hierarchical structures, if present in Recurly accounts, need to be retained during data mapping.
 
 # Definition
 
@@ -38,11 +38,11 @@ Oracle NetSuite Integration with Recurly offers businesses a streamlined approac
 
 # Key benefits
 
-- **Unified data management**: Centralize subscription billing and financial data in one integrated platform for streamlined operations.
-- **Enhanced financial reporting**: Utilize Oracle NetSuite's GAAP-compliant revenue recognition and standard financial reporting tailored for subscription-based businesses.
-- **Automated synchronization**: Minimize manual efforts with hourly automatic data transfers from Recurly to Oracle NetSuite, ensuring timely data updates.
-- **Accurate revenue management**: Maintain accurate and up-to-date recurring revenue data in Oracle NetSuite for reliable financial tracking.
-- **Custom data mapping**: Adapt the integration to your specific needs by mapping custom fields and unique item codes for a tailored data management experience.
+* **Unified data management**: Centralize subscription billing and financial data in one integrated platform for streamlined operations.
+* **Enhanced financial reporting**: Utilize Oracle NetSuite's GAAP-compliant revenue recognition and standard financial reporting tailored for subscription-based businesses.
+* **Automated synchronization**: Minimize manual efforts with hourly automatic data transfers from Recurly to Oracle NetSuite, ensuring timely data updates.
+* **Accurate revenue management**: Maintain accurate and up-to-date recurring revenue data in Oracle NetSuite for reliable financial tracking.
+* **Custom data mapping**: Adapt the integration to your specific needs by mapping custom fields and unique item codes for a tailored data management experience.
 
 # Key details
 
@@ -54,22 +54,9 @@ The Recurly for Oracle NetSuite implementation captures your customer-centric da
 
 Using this integration, Recurly can seamlessly integrate your Recurly billing and subscription data to your accounting and financial data within Oracle NetSuite, a leading cloud-based business software for accounting and Enterprise Resource Planning (ERP). Through this integration, you can effectively and accurately manage recurring revenue data using Oracle NetSuite’s automatic, Generally Accepted Accounting Principles (GAAP)-compliant revenue recognition and standard financial reporting.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/35dfd85-oracle_netsuite.png",
-        "oracle netsuite.png",
-        1600
-      ],
-      "align": "center",
-      "caption": "Recurly to Oracle NetSuite Integration Flow"
-    }
-  ]
-}
-[/block]
-
+<Image title="oracle netsuite.png" alt={1600} align="center" src="https://files.readme.io/35dfd85-oracle_netsuite.png">
+  Recurly to Oracle NetSuite Integration Flow
+</Image>
 
 The integration process is divided into five stages, ensuring a comprehensive and thorough approach to onboarding. Each stage involves close collaboration between the merchant and Recurly to ensure a seamless integration experience.
 
@@ -77,9 +64,9 @@ The integration process is divided into five stages, ensuring a comprehensive an
 
 The integration follows specific rules to ensure data integrity and compliance:
 
-- It offers a one-way synchronization, moving transaction details from Recurly to Oracle NetSuite.
-- The integration adheres to Generally Accepted Accounting Principles (GAAP).
-- Data mapping ensures that items in Recurly correspond to the appropriate records in Oracle NetSuite, retaining any hierarchical structures.
+* It offers a one-way synchronization, moving transaction details from Recurly to Oracle NetSuite.
+* The integration adheres to Generally Accepted Accounting Principles (GAAP).
+* Data mapping ensures that items in Recurly correspond to the appropriate records in Oracle NetSuite, retaining any hierarchical structures.
 
 ## Data mapping and synchronization
 
@@ -142,18 +129,18 @@ Should any issues arise post-implementation, merchants can contact Recurly Suppo
 ### Step 5: Project Completion
 
 1. **Post Go Live Support:** Recurly’s professional services team provides support through the merchant's month end.
-2. **Transition to Recurly Support:** Transition to Recurly's Support for ongoing support of the integration.  
+2. **Transition to Recurly Support:** Transition to Recurly's Support for ongoing support of the integration.\
    By following these step-by-step processes, merchants can ensure a smooth and efficient integration of Recurly with Oracle NetSuite, enabling them to manage their subscription billing and financial data seamlessly.
 
 # FAQs
 
 ### Q: How does the sync process work? Please go into detail.
 
-**A:** The integration follows a structured 3-step approach: Accounts, Plans, & Transactions.  
+**A:** The integration follows a structured 3-step approach: Accounts, Plans, & Transactions.\
 Initially, we synchronize the Accounts to ensure that your customer data is prepared and ready for the upcoming transactions.
 
-Subsequently, we sync the plans. This step is crucial as it inserts the necessary details into the relevant transactions. Moreover, it's within these records that we persist the essential revenue recognition data.  
-Lastly, we synchronize the transactions to ensure that your financial data aligns accurately with your billing system.  
+Subsequently, we sync the plans. This step is crucial as it inserts the necessary details into the relevant transactions. Moreover, it's within these records that we persist the essential revenue recognition data.\
+Lastly, we synchronize the transactions to ensure that your financial data aligns accurately with your billing system.\
 For a deeper dive or more specific queries, please contact your CSM/AM to obtain our data sheet.
 
 ### Q: What is the cadence of the syncs?
