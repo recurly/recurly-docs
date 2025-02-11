@@ -21,8 +21,8 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 ### Prerequisites
 
-- A Recurly account set to development or production mode.
-- Configured payment gateway within Recurly.
+* A Recurly account set to development or production mode.
+* Configured payment gateway within Recurly.
 
 # Definition
 
