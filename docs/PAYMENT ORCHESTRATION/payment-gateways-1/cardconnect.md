@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-- Check CardConnect / [CardPointe's list of prohibited businesses](https://support.cardpointe.com/assets/support/assets/Wells-Fargo-US-RISO-Agent-ISV-Unqualified-List-062422.01962.pdf) if you do not yet have an account.
+* Check CardConnect / [CardPointe's list of prohibited businesses](https://support.cardpointe.com/assets/support/assets/Wells-Fargo-US-RISO-Agent-ISV-Unqualified-List-062422.01962.pdf) if you do not yet have an account.
 
 # Definition
 
@@ -43,9 +43,9 @@ CardConnect is a payment gateway that enables merchants in the US and Canada to 
 
 ## Integration notes
 
-- Initially, closing your day's transaction batch is set to automatic, but you can adjust this according to your business needs.
-- Chargebacks can be managed and viewed within the CardPointe application, with customizable notifications and support from Fiserv's chargeback support.
-- The integration with CardConnect supports the [Auth and Capture](https://docs.recurly.com/docs/auth-and-capture) transaction flow, allowing for robust and secure credit card transactions.
+* Initially, closing your day's transaction batch is set to automatic, but you can adjust this according to your business needs.
+* Chargebacks can be managed and viewed within the CardPointe application, with customizable notifications and support from Fiserv's chargeback support.
+* The integration with CardConnect supports the [Auth and Capture](https://docs.recurly.com/docs/auth-and-capture) transaction flow, allowing for robust and secure credit card transactions.
 
 ## Merchant account application
 
@@ -55,9 +55,9 @@ CardConnect processes your merchant application rapidly—with a minimum of a 4-
 
 If you have questions or need support related to your CardConnect merchant account:
 
-- For existing CardConnect accounts: If you want to use this account with Recurly, reach out to your CardConnect representative to update your account information.
-- To delete a CardConnect account: First, remove the payment gateway from within Recurly, and then contact CardConnect to deactivate or delete your merchant account.
-- For general support: Contact CardPointe Support at [cardpointeSupport@cardconnect.com](mailto:cardpointeSupport@cardconnect.com), or call 877-828-0720 (Opt 1, Opt 1), or get assistance through CoPilot merchant ticketing.
+* For existing CardConnect accounts: If you want to use this account with Recurly, reach out to your CardConnect representative to update your account information.
+* To delete a CardConnect account: First, remove the payment gateway from within Recurly, and then contact CardConnect to deactivate or delete your merchant account.
+* For general support: Contact CardPointe Support at [cardpointeSupport@cardconnect.com](mailto:cardpointeSupport@cardconnect.com), or call 877-828-0720 (Opt 1, Opt 1), or get assistance through CoPilot merchant ticketing.
 
 # Integration guide
 
@@ -66,44 +66,44 @@ Ensure that you have an active CardConnect account. If you don't have one, follo
 ## Step 1: Applying for a CardConnect Merchant Account via Recurly
 
 1. **Access the CardConnect Application Link**
-   - From the 'Add CardConnect Gateway' page in Recurly, follow the link to CardConnect’s Hosted Application Page.
+   * From the 'Add CardConnect Gateway' page in Recurly, follow the link to CardConnect’s Hosted Application Page.
 2. **Complete the Merchant Application**
-   - Fill out the application form with your business details.
+   * Fill out the application form with your business details.
 3. **Submit Your Application**
-   - Review your information and submit the application.
+   * Review your information and submit the application.
 4. **Monitor Your Email**
-   - Check your email for updates on the application status from CardConnect.
+   * Check your email for updates on the application status from CardConnect.
 
 ## Step 2: Configuring CardConnect in Recurly
 
 1. **Login to Your Recurly Account**
-   - Log in to your Recurly dashboard.
+   * Log in to your Recurly dashboard.
 2. **Navigate to Payment Gateway Settings**
-   - Go to **Configuration > Payment Gateways**.
+   * Go to **Configuration > Payment Gateways**.
 3. **Select CardConnect Gateway**
-   - Choose ‘CardConnect’ from the list of available payment gateways.
+   * Choose ‘CardConnect’ from the list of available payment gateways.
 4. **Enter CardConnect Credentials**
-   - Input the following information as provided by CardConnect:
-     - Username
-     - Password
+   * Input the following information as provided by CardConnect:
+     * Username
+     * Password
 5. **Enable Supported Card Brands**
-   - Specify which card brands you want to support.
+   * Specify which card brands you want to support.
 6. **Enable Accepted Currencies**
 
-- In the Acceptance Currencies section, use the dropdown menu in the left section under Available Currencies and add all currencies associated with your CardConnect account(s).
-- In the same Accepted Currencies section, to the right, enter your CardConnect Merchant ID associated with each selected currency under Merchant IDs for Selected Currencies’.
+* In the Acceptance Currencies section, use the dropdown menu in the left section under Available Currencies and add all currencies associated with your CardConnect account(s).
+* In the same Accepted Currencies section, to the right, enter your CardConnect Merchant ID associated with each selected currency under Merchant IDs for Selected Currencies’.
 
 7. If your CardConnect Account is set up to accept Zero Dollar Authorizations, select which card types are authorized under ‘Zero Dollar Authorizations (Advanced)’.
 8. **Enable the Gateway for New Transactions**
-   - Select the radio button labeled 'Enabled’ when you are ready to go live.
+   * Select the radio button labeled 'Enabled’ when you are ready to go live.
 9. **Save Your Settings**
-   - Click on ‘Add Payment Gateway’ to finalize the setup.
+   * Click on ‘Add Payment Gateway’ to finalize the setup.
 
 ## Step 3: Merchant Account Support and Maintenance
 
 1. **Modify Existing CardConnect Account (if needed)**
-   - If you have an existing merchant account with CardConnect and would like to use this account with Recurly, please contact your CardConnect representative to modify your account information.
+   * If you have an existing merchant account with CardConnect and would like to use this account with Recurly, please contact your CardConnect representative to modify your account information.
 2. **Deleting Your CardConnect Account (if needed)**
-   - To delete a CardConnect account, first remove the payment gateway from within Recurly, and then contact CardConnect to inactivate or delete your merchant account.
+   * To delete a CardConnect account, first remove the payment gateway from within Recurly, and then contact CardConnect to inactivate or delete your merchant account.
 3. **CardConnect Support**
-   - For additional support, contact CardPointe Support at [cardpointeSupport@cardconnect.com](mailto:cardpointeSupport@cardconnect.com), or call 877-828-0720 (Opt 1, Opt 1).
+   * For additional support, contact CardPointe Support at [cardpointeSupport@cardconnect.com](mailto:cardpointeSupport@cardconnect.com), or call 877-828-0720 (Opt 1, Opt 1).
