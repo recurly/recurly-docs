@@ -21,14 +21,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-- Sign up for an [Amazon Pay account](https://payments.amazon.com/register?registration_source=SPPD&spId=A35095BGBGQR66).
-- Set up an Amazon application to authenticate users on your site.
-- Enable Amazon Pay on your Recurly site.
+* Sign up for an [Amazon Pay account](https://payments.amazon.com/register?registration_source=SPPD\&spId=A35095BGBGQR66).
+* Set up an Amazon application to authenticate users on your site.
+* Enable Amazon Pay on your Recurly site.
 
 ### Limitations
 
-- Doesn't support 3DS or PSD2 currently.
-- Amazon Pay is available only in specific regions including the US, Europe, and the UK.
+* Doesn't support 3DS or PSD2 currently.
+* Amazon Pay is available only in specific regions including the US, Europe, and the UK.
 
 # Key details
 
@@ -55,28 +55,14 @@ Please note that, as of now, the Amazon Pay integration with Recurly does not su
 
 # Use cases
 
-- Facilitating easy subscriptions for Amazon customers without leaving your site.
-- Allowing subscribers to manage their subscription, including payment and billing details through Amazon Pay integration.
+* Facilitating easy subscriptions for Amazon customers without leaving your site.
+* Allowing subscribers to manage their subscription, including payment and billing details through Amazon Pay integration.
 
 ## Integration
 
 After configuring your Recurly site and establishing your Amazon Pay accounts, you can proceed to integrate the Amazon Pay library into your subscription checkout process.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3lOrtM3jSyypS3EE8Kxw_amzn-overview.png",
-        "amzn-overview.png",
-        "650"
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/3lOrtM3jSyypS3EE8Kxw_amzn-overview.png" />
 
 Recurly offers a complimentary [JavaScript plug-in library](https://github.com/recurly/pay-with-amazon) to seamlessly incorporate Amazon Pay into your system. The library facilitates inline widget interactions which can be customized according to simple parameters. The only part of the process requiring navigation away from your site is the initial Amazon login. After login, customers are redirected to your site to confirm their address and payment details using the Amazon widgets.
 
@@ -102,7 +88,7 @@ var payWithAmazon = new PayWithAmazon({
 });
 ```
 
-- It is essential to specify the region if not located in the US. EU or UK regions must specify this in each transaction request.
+* It is essential to specify the region if not located in the US. EU or UK regions must specify this in each transaction request.
 
 Upon customer confirmation of the Amazon payment details for the subscription, the Amazon Billing Agreement ID (`id`) will be generated. This ID can be utilized with Recurly's [create subscription API](https://docs.recurly.com/api/subscriptions#create-subscription) to establish the account's billing information.
 
@@ -161,27 +147,12 @@ When leveraging Amazon Pay in your subscription checkout, customers will initiat
 
 Once the subscription is activated, Recurly retains the billing agreement and pertinent Amazon details. This agreement is automatically employed in subsequent subscription renewals, ensuring a hassle-free transaction cycle for your customers.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/AkKPBQK6TJapjcMRCJgW_amzn-flow.png",
-        "amzn-flow.png",
-        "600"
-      ],
-      "align": "center",
-      "sizing": "50% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="50% " src="https://files.readme.io/AkKPBQK6TJapjcMRCJgW_amzn-flow.png" />
 
 Customers retain the autonomy to alter their billing agreements through both Amazon and Recurly platforms:
 
-- **Amazon Interface:** Customers can update payment methods or cancel the billing agreement directly from their Amazon account.
-- **Recurly Interface:** As a service provider, you can refresh the billing information using a recently acquired Amazon Billing Agreement ID via this JavaScript library or alternate payment avenues such as credit cards or PayPal. Leverage the [update billing info API](https://docs.recurly.com/api/billing-info) for this. Additionally, Recurly integrates with Amazon's CloseBillingAgreement API, outlined in the [Amazon documentation](https://pay.amazon.com/us/developer/documentation/apireference/201752870), to facilitate billing agreement termination notifications. Enable this feature by contacting Recurly support.
+* **Amazon Interface:** Customers can update payment methods or cancel the billing agreement directly from their Amazon account.
+* **Recurly Interface:** As a service provider, you can refresh the billing information using a recently acquired Amazon Billing Agreement ID via this JavaScript library or alternate payment avenues such as credit cards or PayPal. Leverage the [update billing info API](https://docs.recurly.com/api/billing-info) for this. Additionally, Recurly integrates with Amazon's CloseBillingAgreement API, outlined in the [Amazon documentation](https://pay.amazon.com/us/developer/documentation/apireference/201752870), to facilitate billing agreement termination notifications. Enable this feature by contacting Recurly support.
 
 > **Note:** Activities prompted by the user are logged in the account's activity feed.
 
@@ -189,7 +160,7 @@ Customers retain the autonomy to alter their billing agreements through both Ama
 
 ## Sign up for Amazon
 
-To get started, you'll need to create an **Amazon Pay** account. You can do this for free [online](https://payments.amazon.com/register?registration_source=SPPD&spId=A35095BGBGQR66). If you are already an **Amazon Pay** account holder, simply [log in here](https://sellercentral.amazon.com/).
+To get started, you'll need to create an **Amazon Pay** account. You can do this for free [online](https://payments.amazon.com/register?registration_source=SPPD\&spId=A35095BGBGQR66). If you are already an **Amazon Pay** account holder, simply [log in here](https://sellercentral.amazon.com/).
 
 ## Setup in Recurly
 
@@ -210,10 +181,10 @@ To activate Amazon Pay on your Recurly site, adhere to the instructions below:
 
 Recurly supports the Amazon Pay Instant Payment Notification (IPN) feature, allowing you to receive notifications regarding successful payment refunds. To enable this feature and start receiving refund updates, follow these [instructions](https://pay.amazon.com/us/developer/documentation/lpwa/201909440). When activated, Recurly will obtain the necessary data to update the refund transaction status in your account.
 
-Input your Merchant URL in the designated field in Amazon using the following format:  
-<https://callbacks.recurly.com/amazon/>\<MERCHANT_SUBDOMAIN>
+Input your Merchant URL in the designated field in Amazon using the following format:\
+[https://callbacks.recurly.com/amazon/](https://callbacks.recurly.com/amazon/)\<MERCHANT\_SUBDOMAIN>
 
-> **Note:** For Recurly sites hosted in the European Union (EU) data centers, use <https://callbacks.eu.recurly.com/amazon/>\<MERCHANT_SUBDOMAIN> instead.
+> **Note:** For Recurly sites hosted in the European Union (EU) data centers, use [https://callbacks.eu.recurly.com/amazon/](https://callbacks.eu.recurly.com/amazon/)\<MERCHANT\_SUBDOMAIN> instead.
 
 ## Amazon Shipping Address
 
@@ -233,23 +204,7 @@ It is imperative to collect both first and last names for storing a shipping add
 
 Within the Recurly Admin panel, under the Billing Info section of an Account Details page, you can find references to Amazon Pay engagements. This section provides access to the Amazon Billing Agreement ID, a crucial tool for customer service interactions.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fdc8297-amzn-billing-info.png",
-        "amzn-billing-info.png",
-        ""
-      ],
-      "align": "center",
-      "sizing": "40% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="40% " border={true} src="https://files.readme.io/fdc8297-amzn-billing-info.png" />
 
 Within the Recurly Admin panel, under the Billing Info section of an Account Details page, you can find references to Amazon Pay engagements. This section provides access to the Amazon Billing Agreement ID, a crucial tool for customer service interactions.
 
@@ -259,8 +214,8 @@ Within the Recurly Admin panel, under the Billing Info section of an Account Det
 
 Recurly facilitates transactions in the subsequent regions and currencies:
 
-- Europe region, transacting in Euros (€)
-- The United Kingdom, transacting in Pounds Sterling (£)
+* Europe region, transacting in Euros (€)
+* The United Kingdom, transacting in Pounds Sterling (£)
 
 To successfully integrate Amazon Pay in Europe and the UK, note the unique steps and credentials involved below:
 
@@ -276,8 +231,8 @@ Begin by registering for an Amazon Pay account. Choose between an [EU or a UK ac
 2. Click "Visit Manage Your Apps."
 3. Opt for "Authorize new developer."
 4. Provide the "Developer's Name" and "Developer ID." 
-   - **Developer's Name:** Can be any chosen value
-   - **Developer ID:** Procure this from your Amazon representative
+   * **Developer's Name:** Can be any chosen value
+   * **Developer ID:** Procure this from your Amazon representative
 5. Consent to the MWS terms of service.
 
 ## Gateway addition
