@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-## Welcome to Bring Your Own Gateway, Beta Program!#\#
+## Welcome to Bring Your Own Gateway, Beta Program!#\# 
 
 In the current phase of BYOG our Beta Partners will be able to define their gateway configuration, define templates and test purchase requests (Updated July 22, 2021)
 
