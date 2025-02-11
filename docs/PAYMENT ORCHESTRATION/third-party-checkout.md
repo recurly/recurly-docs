@@ -26,34 +26,18 @@ The Ecommerce checkout options from our trusted gateway partners are designed to
 
 Using Stripe Web Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "300px",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="300px" border={true} src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" />
 
-
-- When using Stripe Elements, you can build a custom checkout solution and pass a Stripe "confirmation token" to Recurly via API. Recurly will pass that token to Stripe to obtain reusable payment details for recurring and one-time payments.
-- If customers wish to update their billing information, they can do so through Stripe Elements, or through an existing Recurly solution such as Checkout, HPP, or Recurly.js. What you choose to offer is up to you!
+* When using Stripe Elements, you can build a custom checkout solution and pass a Stripe "confirmation token" to Recurly via API. Recurly will pass that token to Stripe to obtain reusable payment details for recurring and one-time payments.
+* If customers wish to update their billing information, they can do so through Stripe Elements, or through an existing Recurly solution such as Checkout, HPP, or Recurly.js. What you choose to offer is up to you!
 
 Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/).
 
 ### Supported Payment Methods
 
-- **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available: 
-  - Cards, Link by Stripe, KakaoPay, PayCo, Naver Pay, Apple Pay, Google Pay, Cash App Pay
+* **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available: 
+  * Cards, Link by Stripe, KakaoPay, PayCo, Naver Pay, Apple Pay, Google Pay, Cash App Pay
 
 ### Limitations
 
-- **Stripe gateway**: We do not support Stripe Payment Links, Stripe Checkout, or Radar at this time. See the limited list of payment methods available, or visit the [Stripe gateway documentation](https://docs.recurly.com/docs/stripe) in Recurly docs.
+* **Stripe gateway**: We do not support Stripe Payment Links, Stripe Checkout, or Radar at this time. See the limited list of payment methods available, or visit the [Stripe gateway documentation](https://docs.recurly.com/docs/stripe) in Recurly docs.
