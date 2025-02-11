@@ -10,21 +10,8 @@ metadata:
 next:
   description: ''
 ---
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/012f8c0-PoweredByRecurly-Badges_DevDocs.png",
-        "PoweredByRecurly-Badges_DevDocs.png",
-        1300,
-        400,
-        "#464546"
-      ]
-    }
-  ]
-}
-[/block]
+![1300](https://files.readme.io/012f8c0-PoweredByRecurly-Badges_DevDocs.png "PoweredByRecurly-Badges_DevDocs.png")
+
 As a PCI-DSS Level 1 compliant provider, we’re committed to providing the highest level of security your business can offer.
 
 We’ve created the Powered by Recurly badge to help reinforce credibility and customer confidence in your checkout process. Use this badge on your website or application to indicate that you are using Recurly to enable your subscription billing.
