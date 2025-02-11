@@ -43,9 +43,9 @@ Bambora, now Worldline, a global payment gateway, allows businesses to accept pa
 
 To integrate Recurly with your Bambora / Worldline account, the following credentials are required:
 
-- API username, also known as a Merchant ID
-- Username
-- API password
+* API username, also known as a Merchant ID
+* Username
+* API password
 
 These credentials are configured within your Bambora account under **Administration → Account Settings → Order Settings → Use username/password validation against transaction**. 
 
@@ -63,36 +63,36 @@ Please note: For Canadian merchants, American Express restricts the acceptance o
 
 ## Step 2: Configure Recurly with Bambora credentials
 
-- Log in to your Recurly account.
-- Navigate to **Configuration → Payment Gateways**.
-- Click on the **Add payment gateway** button and select **Bambora** from the list.
-- Enter the **User** and **Password** that you generated in Step 1.
-- Select the **Accepted card types** you wish to accept from your customers. 
-- Under **Accepted currencies**, ensure you have entered a unique Merchant ID for every currency you have access to process. You will need a unique Merchant ID for each accepted currency when using Bambora.
-- Select the Card types you wish to accept a Zero Dollar Authorization with. This is useful when adding Billing Information to verify CVV and AVS data for your customers without processing a transaction.
-- Click **Add payment gateway**.
+* Log in to your Recurly account.
+* Navigate to **Configuration → Payment Gateways**.
+* Click on the **Add payment gateway** button and select **Bambora** from the list.
+* Enter the **User** and **Password** that you generated in Step 1.
+* Select the **Accepted card types** you wish to accept from your customers. 
+* Under **Accepted currencies**, ensure you have entered a unique Merchant ID for every currency you have access to process. You will need a unique Merchant ID for each accepted currency when using Bambora.
+* Select the Card types you wish to accept a Zero Dollar Authorization with. This is useful when adding Billing Information to verify CVV and AVS data for your customers without processing a transaction.
+* Click **Add payment gateway**.
 
 ## Step 3: Verify the integration
 
-- After configuring Bambora in Recurly, run a test transaction to ensure everything is working as expected. You can also click ‘Test Configuration’ against your Bambora setup in the ‘Payment Gateways’ page by choosing ‘Options >> Test configuration”.
-- If the test transaction is successful, this confirms that the integration is properly set up.
+* After configuring Bambora in Recurly, run a test transaction to ensure everything is working as expected. You can also click ‘Test Configuration’ against your Bambora setup in the ‘Payment Gateways’ page by choosing ‘Options >> Test configuration”.
+* If the test transaction is successful, this confirms that the integration is properly set up.
 
 ## Step 4: Resolve American Express limitation for Canadian merchants
 
-- If you are a Canadian merchant who needs to accept USD American Express transactions, ensure you have an entity located within the United States.
-- Contact American Express to set up the necessary arrangements.
+* If you are a Canadian merchant who needs to accept USD American Express transactions, ensure you have an entity located within the United States.
+* Contact American Express to set up the necessary arrangements.
 
 ## Step 5: Consult Bambora documentation for advanced settings
 
-- For additional security or specific features, consult [Bambora's documentation](https://help.na.bambora.com/hc/en-us/articles/360045713754-How-do-I-connect-my-shopping-cart-to-Bambora).
-- Follow the [documentation](https://help.na.bambora.com/hc/en-us/articles/360045712594-How-do-I-automatically-decline-transactions-with-incorrect-billing-credit-card-information) to set up additional settings such as fraud prevention tools, address verification settings, etc.
+* For additional security or specific features, consult [Bambora's documentation](https://help.na.bambora.com/hc/en-us/articles/360045713754-How-do-I-connect-my-shopping-cart-to-Bambora).
+* Follow the [documentation](https://help.na.bambora.com/hc/en-us/articles/360045712594-How-do-I-automatically-decline-transactions-with-incorrect-billing-credit-card-information) to set up additional settings such as fraud prevention tools, address verification settings, etc.
 
 ## Step 6: Contact Bambora's customer experience team for assistance (if needed)
 
-- If you encounter any issues or need further assistance with the setup, don’t hesitate to contact Bambora's Customer Experience team.
+* If you encounter any issues or need further assistance with the setup, don’t hesitate to contact Bambora's Customer Experience team.
 
 ## Step 7: Monitor and manage transactions
 
-- Regularly check your Recurly and Bambora dashboards to monitor transactions, manage disputes, and ensure smooth operation.
+* Regularly check your Recurly and Bambora dashboards to monitor transactions, manage disputes, and ensure smooth operation.
 
 This step-by-step process section is designed to guide the user in a detailed and orderly fashion on how to integrate Bambora as a payment gateway with Recurly. It starts from gathering the necessary credentials from Bambora, configuring them in Recurly, and verifying the integration through test transactions. The steps also guide users on how to resolve issues specific to Canadian merchants using American Express and where to seek additional help if needed.
