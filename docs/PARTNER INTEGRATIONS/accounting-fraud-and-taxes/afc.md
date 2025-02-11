@@ -32,7 +32,7 @@ Our integration with Avalara for Communications (AFC) is designed to streamline 
 2. **Disabling AFC:** If you choose to disable AFC, refunds of invoices that include taxes will not be processed.
 3. **Switching to AFC:** If you decide to switch providers to AFC, refunds that include charges from various tax services will not be processed.
 4. **Tax Exemptions:** Tax exemptions at the account level are limited to "yes" or "no" options, excluding the possibility for complex jurisdiction level exemptions.
-5. **Customer Type: **An account's customer type is not editable and defaults to "residential".
+5. **Customer Type:** An account's customer type is not editable and defaults to "residential".
 6. **Lifeline Participant Status:** An account cannot hold a status as a lifeline participant.
 7. **Telecommunications-specific Billing Units:** Recurly does not support taxation based on billing units specific to telecommunications, such as "Minute", "Line", or "Location".
 
@@ -42,12 +42,12 @@ Avalara for Communications (AFC) is a service designed to meet the specific need
 
 # Key benefits
 
-- **Flexible tax management**: AFC enables accurate calculation and application of appropriate taxes to various transaction types like subscriptions, one-time charges, and add-ons.
-- **Comprehensive coverage**: Cover a wide range of tax jurisdictions for precise and up-to-date tax calculations, aiding compliance across diverse geographical areas, including international locations.
-- **Tax exemption handling**: Designate specific customer accounts as tax-exempt for efficient tax management and compliance, through the collaborative functionality of Recurly and AFC.
-- **Downtime management**: Protocols are in place to handle tax considerations during Avalara service downtimes, ensuring uninterrupted tax management.
-- **Testing and validation**: Test AFC integration using a sandbox site for accurate setup before going live, with Recurly validating Avalara credentials periodically to prevent disruptions.
-- **Detailed reporting**: Access detailed tax reports for easier reconciliation and transparency during tax filing periods, courtesy of the combined functionality of Recurly and AFC.
+* **Flexible tax management**: AFC enables accurate calculation and application of appropriate taxes to various transaction types like subscriptions, one-time charges, and add-ons.
+* **Comprehensive coverage**: Cover a wide range of tax jurisdictions for precise and up-to-date tax calculations, aiding compliance across diverse geographical areas, including international locations.
+* **Tax exemption handling**: Designate specific customer accounts as tax-exempt for efficient tax management and compliance, through the collaborative functionality of Recurly and AFC.
+* **Downtime management**: Protocols are in place to handle tax considerations during Avalara service downtimes, ensuring uninterrupted tax management.
+* **Testing and validation**: Test AFC integration using a sandbox site for accurate setup before going live, with Recurly validating Avalara credentials periodically to prevent disruptions.
+* **Detailed reporting**: Access detailed tax reports for easier reconciliation and transparency during tax filing periods, courtesy of the combined functionality of Recurly and AFC.
 
 # Key details
 
@@ -63,23 +63,7 @@ If your business offers a communications product and utilizes Recurly for subscr
 
 The integration between Recurly and Avalara for Communications (AFC) is made possible through both Recurly's and Avalara's publicly available APIs. This allows for the application of sales tax, communications taxes, and communications surcharges as invoices are generated in Recurly. Each product setup or purchase initiated via Recurly necessitates a transaction and service type, which are linked to the tax surcharge rates enabled for your jurisdictions in AFC. The customer's address registered in Recurly assists AFC in determining the applicable amounts for each invoice.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f85c5e-AFC_-_Invoice.jpg",
-        "AFC - Invoice.jpg",
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/0f85c5e-AFC_-_Invoice.jpg" />
 
 ## Invoice appearance
 
@@ -91,8 +75,8 @@ The appearance of your invoices greatly depends on the jurisdiction involved. Fo
 
 Avalara requires the merchant's address for each invoice to calculate taxes. This is referred to as the "Origin" address. Recurly utilizes the Business Entity's company address(s) as the Origin address that gets transmitted to Avalara. For the Avalara integration to operate, the following criteria must be fulfilled in your Recurly Business Entity’s company address:
 
-- A country and postal code must be present.
-- The address must align with your Organization's "Company Address Settings" in Avalara.
+* A country and postal code must be present.
+* The address must align with your Organization's "Company Address Settings" in Avalara.
 
 ## Customer tax address
 
@@ -104,23 +88,7 @@ You can calculate taxes based on either the Billing address or Account address. 
 
 To change your tax address to the Account address, navigate to Configuration > Taxes > Tax Settings and enable "Use Account Information Address for all Invoices". Once this option is enabled, all invoices will use the Account Information address as the customer's address. If an Account address doesn't exist for a customer, the Billing address will be used as the default.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/11ad40c-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/11ad40c-image.png" />
 
 ## Required address fields
 
@@ -136,30 +104,14 @@ Any invoice that receives tax will require a customer's country. Without a custo
 
 By default, our integration with AFC will validate all customer addresses. If an address is invalid, an error will be returned, blocking the purchase. Here are the potential error messages that Recurly will return in the API, and on the Hosted Pages, including Checkout pages:
 
-- The address provided is invalid, and could not determine taxing jurisdictions.
-- The state/province provided is invalid, and could not apply tax.
+* The address provided is invalid, and could not determine taxing jurisdictions.
+* The state/province provided is invalid, and could not apply tax.
 
 Renewals won't be blocked if an invalid address error occurs, but the invoice produced will be rejected by Avalara and won't be considered for tax calculation. To limit disruptions with your current customers, renewals aren't blocked. As it's not straightforward to identify accounts with invalid addresses that didn't receive tax, we strongly advise auditing addresses and updating them before activating taxes.
 
 You can disable Avalara address validation in your Tax Settings under Configuration > Taxes > Tax Settings. Deselect the checkbox next to "Use Avalara's address validation" and save your settings. Disabling address validation allows purchases with invalid addresses to proceed in Recurly, but Avalara will reject the invoice, and it won't be considered for tax calculation.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7dff8ef-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/7dff8ef-image.png" />
 
 # Alter one-time charge flows
 
@@ -196,8 +148,8 @@ There are a few things to remember when testing:
 Recurly populates extra information on AFC line items from the corresponding Recurly line items, which can be beneficial for reconciliation and reporting from your AFC account:
 
 1. **Optional Field 1:** Product Code.
-2. **Optional Field 2: **Item SKU (only present on Item line items).
-3. **Optional Field 3: **Original Invoice Number (only for refund line items).
+2. **Optional Field 2:** Item SKU (only present on Item line items).
+3. **Optional Field 3:** Original Invoice Number (only for refund line items).
 
 # International taxation
 
@@ -209,41 +161,25 @@ Consult with your Avalara representative to figure out the appropriate T/S pairs
 
 # Invalid Avalara credentials
 
-Recurly validates your Avalara credentials whenever they are added or edited to prevent you from saving invalid credentials. Your Avalara credentials will become invalid in Recurly if your AFC account becomes "Inactive" - meaning your sandbox or production Avalara account has expired, or if Avalara experiences authentication service issues.  
-When your credentials are determined to be invalid, Recurly will notify your Technical Contact via email. If no Technical Contact is specified, the email will go to your Billing Contact. If you haven't specified a Billing Contact, the email will be sent to the first user on the account with Admin user rights. This email will only be sent once, at the time the credentials become invalid.  
+Recurly validates your Avalara credentials whenever they are added or edited to prevent you from saving invalid credentials. Your Avalara credentials will become invalid in Recurly if your AFC account becomes "Inactive" - meaning your sandbox or production Avalara account has expired, or if Avalara experiences authentication service issues.\
+When your credentials are determined to be invalid, Recurly will notify your Technical Contact via email. If no Technical Contact is specified, the email will go to your Billing Contact. If you haven't specified a Billing Contact, the email will be sent to the first user on the account with Admin user rights. This email will only be sent once, at the time the credentials become invalid.\
 If your Avalara site is in sandbox mode (i.e., you are testing Avalara), Recurly will disregard your credentials and cease sending requests to Avalara when an invoice is created. This means that each invoice will not include tax until your credentials are fixed.
 
 # Handling Avalara downtime
 
-Recurly sends a request to Avalara for tax calculation whenever an invoice is created on a site with AFC credentials. If Recurly cannot get a response from Avalara or if the internal Recurly tax service that communicates with Avalara is unresponsive, Recurly's response will depend on whether the invoice is for a new sign-up or purchase, or a future subscription activation or renewal.  
-To check Avalara's status, visit <http://status.avalara.com/> and expand the Avalara for Communications section to view the "Avalara AvaTax for Communications SaaS Pro REST" status.
+Recurly sends a request to Avalara for tax calculation whenever an invoice is created on a site with AFC credentials. If Recurly cannot get a response from Avalara or if the internal Recurly tax service that communicates with Avalara is unresponsive, Recurly's response will depend on whether the invoice is for a new sign-up or purchase, or a future subscription activation or renewal.\
+To check Avalara's status, visit [http://status.avalara.com/](http://status.avalara.com/) and expand the Avalara for Communications section to view the "Avalara AvaTax for Communications SaaS Pro REST" status.
 
 ### New sign-ups and purchases
 
-For **new sign-ups and purchases**, if Recurly cannot get a response from Avalara or if the internal Recurly tax service is unresponsive, the signup or purchase will be blocked (meaning neither a subscription nor an invoice will be created). This is to ensure that no invoice for a customer in a taxable location is created without a tax consideration.  
+For **new sign-ups and purchases**, if Recurly cannot get a response from Avalara or if the internal Recurly tax service is unresponsive, the signup or purchase will be blocked (meaning neither a subscription nor an invoice will be created). This is to ensure that no invoice for a customer in a taxable location is created without a tax consideration.\
 If you prefer to allow new sign-ups and purchases to go through when tax cannot be calculated, you can change the default behavior for your site. Go to Configuration > Taxes > Tax Settings > Tax Service Settings and disable "Require tax response from tax service".
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3d846cb-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/3d846cb-image.png" />
 
 ### Future subscriptions and renewals
 
-For future subscriptions and renewals, if Recurly can't get a response from Avalara or if the internal Recurly tax service is unresponsive, Recurly won't activate a future subscription or renew a subscription, but will keep retrying the activation or renewal every hour until a response is received from Avalara. This functionality cannot be configured or changed.  
+For future subscriptions and renewals, if Recurly can't get a response from Avalara or if the internal Recurly tax service is unresponsive, Recurly won't activate a future subscription or renew a subscription, but will keep retrying the activation or renewal every hour until a response is received from Avalara. This functionality cannot be configured or changed.\
 However, if Avalara's tax service returns an error during a renewal, the renewal will be processed without tax.
 
 ### Disable tax response requirement
@@ -260,14 +196,14 @@ Setting up your Avalara for Communications (AFC) integration with Recurly involv
 
 > **Note:** Be sure to double-check all the details during setup to avoid any discrepancies in tax calculation later on.
 
-1. **Confirm your business entity company address: **Make sure the address is accurate as it can affect the tax calculation. If you are on a Recurly Elite plan, you may have multiple Business Entities and thus can set up multiple tax addresses.
+1. **Confirm your business entity company address:** Make sure the address is accurate as it can affect the tax calculation. If you are on a Recurly Elite plan, you may have multiple Business Entities and thus can set up multiple tax addresses.
 2. **Decide the customer address to tax:** Choose between the billing address or account address.
 3. **Update your purchase form:** The form should require at least the minimum address fields needed for your tax regions.
-4. **Update purchase or subscription change previews: **Use Recurly's APIs for the tax preview portion (please note this isn't possible via Recurly.js).
-5. **Enter your AFC credentials on your sandbox site: **This is the first step towards testing your integration.  
+4. **Update purchase or subscription change previews:** Use Recurly's APIs for the tax preview portion (please note this isn't possible via Recurly.js).
+5. **Enter your AFC credentials on your sandbox site:** This is the first step towards testing your integration.\
    Configure Your Plans and Add-ons: Assign the correct Transaction and Service Types for each product you sell to test your integration effectively.
 6. **Confirm the current customer addresses:** Make sure they are correct and include a country.
-7. **Mark any tax exempt current customers: **Do this in their Account Info.
+7. **Mark any tax exempt current customers:** Do this in their Account Info.
 8. **Go live:** Enter your AFC credentials on your production site and configure your plans and add-ons Transaction and Service Types.
 
 # Connect your AFC account
@@ -278,17 +214,17 @@ Connecting your AFC account to Recurly enables you to configure the Transaction 
 2. **Navigate to the Taxes Section:** This is located in the left-hand navigation menu.
 3. **Click 'Connect' under AFC's Logo:** This is found on the right sidebar of the page.
 4. **Enter AFC Credentials:** These include your AFC Username, Password, Client ID, and Client Profile.
-5. **Adjust AFC Business Settings: **These settings should match how you are registered to tax.
+5. **Adjust AFC Business Settings:** These settings should match how you are registered to tax.
 6. **Determine Tax Records Commitment:** Decide whether you want Recurly to commit your tax records in Avalara when an invoice is marked as paid in Recurly.
-7. **Select Avalara Environment: **Choose either Sandbox or Production, depending on your current needs.
+7. **Select Avalara Environment:** Choose either Sandbox or Production, depending on your current needs.
 8. **Select Account Identifier to send to Avalara:** By default, Recurly Account Codes are used, but you can choose Recurly Account IDs.
-9. **Save Changes: **Click this once you've confirmed all information is correct.
+9. **Save Changes:** Click this once you've confirmed all information is correct.
 
 # Configure plans and add-ons
 
 To calculate taxes, Recurly needs to send Avalara line items for which you configure the Transaction Type and Service type (T/S pairs).
 
-1. **Navigate to Configuration → Plans: **Select a plan and click Edit.}
+1. **Navigate to Configuration → Plans:** Select a plan and click Edit.}
 2. **Enable Tax for the Plan:** This exposes a Transaction Type field and a Service Type where you can place your Avalara T/S pairs for the plan-level fee.
 3. **Setup Fee T/S Pairs:** If you have a setup fee, it will use the same T/S pair as the plan fee.
 4. **Configure Add-on T/S Pairs:** Each add-on can have its own T/S pairs.
