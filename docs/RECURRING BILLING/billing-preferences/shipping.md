@@ -22,35 +22,22 @@ Shipping is more complex in a subscription commerce context. Subscriptions are m
 The concept is simple: you have the ability to record the cost of shipping and the method used to ship the item(s). You can record this method and cost on a subscription, or on a one-time purchase.
 
 > 🚧 Site Requirements
-> 
+>
 > In order to use this feature, your site must be configured with the [Credit Invoices](https://docs.recurly.com/v1.0/docs/credit-invoices-release), [Only Bill What Changed](https://docs.recurly.com/v1.0/docs/only-bill-what-changed), and [Subscription Billing Terms](https://docs.recurly.com/docs/subscription-terms-new) features. Please contact us if you would like more information about upgrading to these features.
-> 
+>
 > Recurly sites created after July 26, 2018 will automatically have these features enabled.
 
 > 📘 Rate Lookups
-> 
+>
 > If you would like Recurly to add the ability to directly integrate with shipping providers (DHL, USPS, etc) we'd love to hear from you! Feel free to [reach out to us](https://recurly.zendesk.com/).
 
 # Configuring Shipping on Your Recurly Site
 
 To begin using Shipping Fees, navigate to Configuration > Shipping.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cbd41fa-Blank_Slate.png",
-        "Blank Slate.png",
-        1200
-      ],
-      "align": "center",
-      "caption": "This is the screen you will see when configuring shipping for the first time."
-    }
-  ]
-}
-[/block]
-
+<Image title="Blank Slate.png" alt={1200} align="center" src="https://files.readme.io/cbd41fa-Blank_Slate.png">
+  This is the screen you will see when configuring shipping for the first time.
+</Image>
 
 Once you enable shipping on your site, Recurly will create a default shipping method for you. If you do not display the shipping method (e.g. USPS Priority Mail) you use to your customers, or use only one shipping method, there is no further configuration needed.
 
@@ -60,22 +47,9 @@ If you do use multiple shipping methods or would like to show your customers whi
 
 Shipping Methods can be useful to display to your customers which method you use to ship their item(s), or differentiate between methods you use in different geographies. To set up a shipping method, navigate to Configuration > Shipping. You can add as many Shipping Methods as your business requires.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ecd628d-Create.png",
-        "Create.png",
-        1200
-      ],
-      "align": "center",
-      "caption": "You can use Shipping Methods to show your customers which method is being used to ship their items."
-    }
-  ]
-}
-[/block]
-
+<Image title="Create.png" alt={1200} align="center" src="https://files.readme.io/ecd628d-Create.png">
+  You can use Shipping Methods to show your customers which method is being used to ship their items.
+</Image>
 
 ## Changing Shipping Providers
 
@@ -103,13 +77,13 @@ In order to create a subscription with shipping fees, navigate to the account to
 
 When you add a shipping fee, you will also need to add a Shipping Address to the subscription. You can either manually enter the address, or copy it from another address on the account.
 
-Once you click _Add Subscription_, you will see the shipping fee has been added to the cost of the subscription on a recurring basis. The tax estimate will include tax on the shipping cost.
+Once you click *Add Subscription*, you will see the shipping fee has been added to the cost of the subscription on a recurring basis. The tax estimate will include tax on the shipping cost.
 
 ![](https://files.readme.io/b74cde9-Screen_Shot_2019-02-25_at_12.43.03_PM.png "Screen Shot 2019-02-25 at 12.43.03 PM.png")
 
 ## API
 
-On the subscription PUT call you can insert an amount for shipping_amount_in_cents.
+On the subscription PUT call you can insert an amount for shipping\_amount\_in\_cents.
 
 ```xml
 <subscription>
@@ -273,7 +247,7 @@ To refund shipping in the Admin UI, navigate to the invoice you would like to re
 
 ## Shipping Fees on One-Time Charges
 
-To charge a shipping fee on a purchase with a one-time fee, we recommend using our API. The /purchases endpoint beginning in version 2.20 of the API. See documentation here: <https://developers.recurly.com/api/latest.html#operation/create_purchase>.
+To charge a shipping fee on a purchase with a one-time fee, we recommend using our API. The /purchases endpoint beginning in version 2.20 of the API. See documentation here: [https://developers.recurly.com/api/latest.html#operation/create\_purchase](https://developers.recurly.com/api/latest.html#operation/create_purchase).
 
 ## Coupons
 
@@ -285,6 +259,6 @@ We are gathering feedback on whether Recurly should offer a coupon for free ship
 
 Shipping information is available in the following exports:
 
-- Adjustments
-- Subscriptions
-- Subscriptions - Churned
+* Adjustments
+* Subscriptions
+* Subscriptions - Churned
