@@ -1,0 +1,53 @@
+---
+title: Data and analytics
+excerpt: >-
+  Unlock powerful insights and automate workflows with our Data & Analytics
+  integrations. Connect with leading platforms to drive data-driven decisions.
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# Overview
+
+### Additional cost
+
+This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
+
+### Prerequisites
+
+- Proficiency with the specific third-party software you're integrating.
+- An active account or subscription with the chosen third-party service.
+- Necessary API keys or authentication credentials as specified by the third-party software.
+
+### Limitations
+
+- The scope of integration is dependent on the third-party software's API and feature updates.
+- Some functionalities might not be fully compatible or may demand additional configurations.
+- Periodic maintenance and updates might be essential to ensure uninterrupted integration.
+
+# Definition
+
+The Data & Analytics integrations refer to the strategic linkage between our platform and premier third-party data processing and analytics solutions. These integrations aim to facilitate data flow, enhance analytical capabilities, and provide actionable insights to users.
+
+# Key benefits
+
+- **Streamlined data flow**: Ensure consistency and accuracy with seamless data transfer between platforms.
+- **Enhanced analytical capabilities**: Leverage advanced tools to derive actionable insights from your data.
+- **Automated workflows**: Utilize triggers and actions to automate routine tasks, enhancing operational efficiency.
+- **Unified data view**: Aggregate and analyze data from various sources in a centralized location for better understanding.
+- **Scalability**: Effortlessly adapt integrations to meet your growing data requirements, ensuring a future-proof solution.
+
+# Key details
+
+**Zapier Integration**
+
+Integrate with [Zapier ](https://docs.recurly.com/docs/zapier)to automate workflows between our platform and over 2,000+ apps. Set up triggers and actions, creating a web of automated tasks that save time and reduce manual interventions.
+
+**Snowflake Integration**
+
+Connect with [Snowflake](https://docs.recurly.com/docs/snowflake-integration), a leading cloud data platform, to enhance your data warehousing, processing, and analytical capabilities. With this integration, harness the power of real-time data analytics and drive informed business decisions.
