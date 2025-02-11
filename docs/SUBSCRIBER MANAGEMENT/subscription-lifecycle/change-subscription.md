@@ -21,14 +21,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Admin access to manage subscription settings.
-- A clear understanding of your subscription model and billing cycle.
+* Admin access to manage subscription settings.
+* A clear understanding of your subscription model and billing cycle.
 
 ### Limitations
 
-- Changes during a free trial period won't generate an invoice.
-- Coupon redemption is limited to immediate changes with product alterations.
-- Subscription modifications enforcement based on payment status.
+* Changes during a free trial period won't generate an invoice.
+* Coupon redemption is limited to immediate changes with product alterations.
+* Subscription modifications enforcement based on payment status.
 
 # Definition
 
@@ -36,9 +36,9 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Key benefits
 
-- **Flexible management:** Easily upgrade, downgrade, or modify your subscription settings to suit evolving needs.
-- **Real-time billing adjustments:** Immediate invoicing for any changes ensures accurate billing and a clear transaction history.
-- **Enhanced customer experience:** Empower customers with the ability to manage their subscriptions, fostering satisfaction and loyalty.
+* **Flexible management:** Easily upgrade, downgrade, or modify your subscription settings to suit evolving needs.
+* **Real-time billing adjustments:** Immediate invoicing for any changes ensures accurate billing and a clear transaction history.
+* **Enhanced customer experience:** Empower customers with the ability to manage their subscriptions, fostering satisfaction and loyalty.
 
 # How to modify a subscription
 
@@ -62,22 +62,22 @@ Product modifications can be executed immediately, at the next billing date, or 
 
 ## Can be changed immediately
 
-- Plan
-- Plan/Add-on Price
-- Plan/Add-on Quantity
-- Add or Remove Add-on
-- Collection Method
-- Net-Terms
-- PO Number
-- Customer Notes
-- Terms and Conditions
+* Plan
+* Plan/Add-on Price
+* Plan/Add-on Quantity
+* Add or Remove Add-on
+* Collection Method
+* Net-Terms
+* PO Number
+* Customer Notes
+* Terms and Conditions
 
 ## Can be changed at bill date and term renewal
 
-- Plan
-- Plan/Add-on Price
-- Plan/Add-on Quantity
-- Add or Remove Add-on
+* Plan
+* Plan/Add-on Price
+* Plan/Add-on Quantity
+* Add or Remove Add-on
 
 # Handling Immediate Subscription Changes
 
@@ -91,15 +91,15 @@ Why do credits and/or charges result? Think about the reasons for making an imme
 
 Options for how to apply a **credit** to an immediate subscription change are:
 
-- Prorated Credit
-- Full Credit
-- No Credit
+* Prorated Credit
+* Full Credit
+* No Credit
 
 Options for how to apply a **charge** to an immediate subscription change are:
 
-- Prorated Charge
-- Full Charge
-- No Charge
+* Prorated Charge
+* Full Charge
+* No Charge
 
 ## Choose how to handle charges and credits from immediate subscription changes
 
@@ -109,41 +109,13 @@ The first way is by setting your preferences on the Invoice Settings page within
 
 **Site-level setting**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c8e180b-Screenshot_2024-05-06_at_7.55.42_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/c8e180b-Screenshot_2024-05-06_at_7.55.42_PM.png" />
 
 The second way you can choose how to handle credits and/or charges resulting from immediate subscription changes is by setting your preferences during the immediate subscription change itself. You can set subscription-level overrides in the UI and both API V2 and V3. If you do not override the immediate subscription change charge and credit behavior when making the actual subscription change(s), then the credit/charge behavior used will reflect the settings from your site-level default settings on the Invoice Settings page.
 
 **Subscription-level overrides**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6388d2b-Screenshot_2024-05-06_at_8.10.01_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/6388d2b-Screenshot_2024-05-06_at_8.10.01_PM.png" />
 
 ### Rebills
 
@@ -155,9 +127,9 @@ Merchants without OBWC on their site still have the same flexibility to handle c
 
 Both a **credit and a charge** (a rebill) result when:
 
-- Change in _both price and quantity_ on the subscription or an add-on
-- Changing the _plan_ on the subscription regardless of upgrading or downgrading
-- Any immediate subscription change is made when the _OBWC (only bill what changed) feature is not enabled on a site_
+* Change in *both price and quantity* on the subscription or an add-on
+* Changing the *plan* on the subscription regardless of upgrading or downgrading
+* Any immediate subscription change is made when the *OBWC (only bill what changed) feature is not enabled on a site*
 
 <br />
 
@@ -165,15 +137,15 @@ Both a **credit and a charge** (a rebill) result when:
 
 **Only a credit** results when:
 
-- Only Bill What Changed is enabled and
-- Decrease in price on sub or add-on, no change in plan
-- Decrease in quantity on sub or add-on, no change in plan
+* Only Bill What Changed is enabled and
+* Decrease in price on sub or add-on, no change in plan
+* Decrease in quantity on sub or add-on, no change in plan
 
 **Only a charge** results when:
 
-- Only Bill What Changed is enabled and
-- Increase in price of sub or add-on, no change in plan
-- Increase in quantity of sub or add-on, no change in plan
+* Only Bill What Changed is enabled and
+* Increase in price of sub or add-on, no change in plan
+* Increase in quantity of sub or add-on, no change in plan
 
 <br />
 
@@ -183,30 +155,15 @@ As outlined above, you have three (3) options to choose from for handling both c
 
 ### If you choose a prorated credit/charge
 
-Proration is a popular choice for handling credits and charge for immediate subscription changes amongst merchants who only wish to credit or charge a customer for how much value they were able to receive from the old/current state of their subscription before they made a change.  
+Proration is a popular choice for handling credits and charge for immediate subscription changes amongst merchants who only wish to credit or charge a customer for how much value they were able to receive from the old/current state of their subscription before they made a change.\
 Proration is calculated as follows:
 
 1. Determine the time remaining in the current billing period.
 2. Divide this time by the total duration of the subscription's plan billing period.
-3. Multiply the result by the per-unit price to calculate the prorated charge or credit.  
+3. Multiply the result by the per-unit price to calculate the prorated charge or credit.\
    The formula is represented as:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/28bfa13-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/28bfa13-image.png" />
 
 It's important to remember that the "plan billing period" in this formula refers to the set duration of the subscription plan, not the adjusted subscription's billing period. This is relevant when the billing date is changed. For example, if a subscription on an annual plan has its billing cycle end date adjusted, the denominator in the formula will still represent a full year, while the numerator will reflect the adjusted end date.
 
@@ -238,15 +195,15 @@ However, if you choose to skip a “Charge,” a zero dollar invoice will still 
 
 ## Types of subscription changes and practical examples
 
-- [Plan change](#plan-change)
-- [Quantity change](#quantity-change)
-- [Price change](#price-change)
-- [Change quantity and price](#change-quantity-and-price)
-- [Add or remove add-on](#add-or-remove-add-on)
-- [Change quantity-based add-on](#change-quantity-based-add-on)
-- [Change usage-based add-on](#change-usage-based-add-on)
-- [Terminate and refund subscription](https://docs.recurly.com/docs/change-subscription#terminate-and-refund-subscription)
-- [Change plan period](#change-plan-period)
+* [Plan change](#plan-change)
+* [Quantity change](#quantity-change)
+* [Price change](#price-change)
+* [Change quantity and price](#change-quantity-and-price)
+* [Add or remove add-on](#add-or-remove-add-on)
+* [Change quantity-based add-on](#change-quantity-based-add-on)
+* [Change usage-based add-on](#change-usage-based-add-on)
+* [Terminate and refund subscription](https://docs.recurly.com/docs/change-subscription#terminate-and-refund-subscription)
+* [Change plan period](#change-plan-period)
 
 <br />
 
@@ -258,99 +215,99 @@ In cases where add-ons with identical add-on codes are used across different pla
 
 #### Plan change examples
 
-**Scenario:**  
+**Scenario:**\
 You downgrade your customer’s monthly subscription from a $100/month plan to a $60/month plan with 10 days left in their billing cycle. Because this requires a full rebill, both a credit and a charge will result. A rebill will occur as a result of a plan change regardless of if OBWC is enabled on your site or not.
 
-- If you choose prorated credit:
-  - By choosing “prorated credit,” you would credit your customer for the unused portion of the original plan that they will no longer receive value from for the remainder of the billing period. Your customer would receive a $33 credit to account for the decrease in price from moving to their new plan.
-    - (10 days remaining/30 days in billing period)\*100 as the per unit cost= $33
-- If you choose full credit:
-  - By choosing “full credit,” you would fully credit your customer $100 for the original state of the subscription.
-- If you choose no credit:
-  - By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a credit invoice
-    > 👍 Tip: 
-    > 
+* If you choose prorated credit:
+  * By choosing “prorated credit,” you would credit your customer for the unused portion of the original plan that they will no longer receive value from for the remainder of the billing period. Your customer would receive a $33 credit to account for the decrease in price from moving to their new plan.
+    * (10 days remaining/30 days in billing period)\*100 as the per unit cost= $33
+* If you choose full credit:
+  * By choosing “full credit,” you would fully credit your customer $100 for the original state of the subscription.
+* If you choose no credit:
+  * By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a credit invoice
+    > 👍 Tip:
+    >
     > This is a **great** option for merchants who ship physical goods. This way, you can ensure your customer is not credited for the items they already received at the beginning of the billing period, since the full “value” of the plan’s offering is considered fulfilled by the merchant once the customer receives the shipment.
 
 You will also need to handle the resulting charge to account for the new/updated state of the subscription.
 
-- If you choose prorated charge:
-  - By choosing “prorated charge,” you would charge your customer only for the portion of the new/updated plan that they will be able to receive value from for the remainder of the billing period. Your customer would receive a $19.80 charge to account for the prorated amount of 10 days remaining on a $60 plan.
-    - (10 days remaining/30 days in billing period)\*60 as the per unit cost= $19.80
-- If you choose full charge:
-  - By choosing “full charge,” you would fully charge your customer $60 for the new/updated state of the subscription.
-- If you choose no charge:
-  - By choosing “no charge,” you would not charge your customer anything for this subscription change and they would receive a zero dollar invoice showing them the new state of their subscription change, reflecting the new plan at a zero dollar cost to them.
+* If you choose prorated charge:
+  * By choosing “prorated charge,” you would charge your customer only for the portion of the new/updated plan that they will be able to receive value from for the remainder of the billing period. Your customer would receive a $19.80 charge to account for the prorated amount of 10 days remaining on a $60 plan.
+    * (10 days remaining/30 days in billing period)\*60 as the per unit cost= $19.80
+* If you choose full charge:
+  * By choosing “full charge,” you would fully charge your customer $60 for the new/updated state of the subscription.
+* If you choose no charge:
+  * By choosing “no charge,” you would not charge your customer anything for this subscription change and they would receive a zero dollar invoice showing them the new state of their subscription change, reflecting the new plan at a zero dollar cost to them.
 
 ### Quantity change
 
 When there's a change in the quantity of a plan fee or add-on, a charge or credit will be generated for the difference in quantity.
 
-- For quantity increases, the charge quantity will represent the additional quantity.
-- For quantity decreases, the quantity will always be 1 and the price will reflect the total value of the removed quantity.
+* For quantity increases, the charge quantity will represent the additional quantity.
+* For quantity decreases, the quantity will always be 1 and the price will reflect the total value of the removed quantity.
 
 <br />
 
 #### Quantity increase example
 
-**Scenario:**  
+**Scenario:**\
 You increase your customer’s plan quantity priced at $30/month from a quantity of 1 to a quantity of 2 with 10 days left in their billing cycle. This will not result in a rebill if you have OBWC enabled on your site. If you do not have OBWC enabled, the change will follow standard rebill behavior (see plan change example above).
 
 <br />
 
-- If you choose prorated charge:
-  - By choosing “prorated charge,” you would charge your customer only for the portion of the new quantity that they will be able to receive value from for the remainder of the billing period. Your customer would receive a $9.90 charge to account for the prorated amount of 10 days remaining on the additional $30 plan.
-    - (10 days remaining/30 days in billing period)\*30 as the per unit cost= $9.90
-- If you choose full charge:
-  - By choosing “full charge,” you would fully charge your customer $30 for the newly added quantity.
-- If you choose no charge:
-  - By choosing “no charge,” you would not charge your customer anything for this subscription change and they would receive a zero dollar invoice showing them the new state of their subscription change, reflecting the new plan quantity at a zero dollar cost to them.
+* If you choose prorated charge:
+  * By choosing “prorated charge,” you would charge your customer only for the portion of the new quantity that they will be able to receive value from for the remainder of the billing period. Your customer would receive a $9.90 charge to account for the prorated amount of 10 days remaining on the additional $30 plan.
+    * (10 days remaining/30 days in billing period)\*30 as the per unit cost= $9.90
+* If you choose full charge:
+  * By choosing “full charge,” you would fully charge your customer $30 for the newly added quantity.
+* If you choose no charge:
+  * By choosing “no charge,” you would not charge your customer anything for this subscription change and they would receive a zero dollar invoice showing them the new state of their subscription change, reflecting the new plan quantity at a zero dollar cost to them.
 
 #### Quantity decrease example
 
-**Scenario:**  
+**Scenario:**\
 You decrease your customer’s add-on quantity priced at $15 per unit from a quantity of 2 to a quantity of 1 with 10 days left in their billing cycle. This will not result in a rebill if you have OBWC enabled on your site. If you do not have OBWC enabled, the change will follow standard rebill behavior (see plan change example above).
 
-- If you choose prorated credit:
-  - By choosing “prorated credit,” you would credit your customer only for the portion of the original add-on quantity count that they will no longer be able to receive value from for the remainder of the billing period. Your customer would receive a $9.90 credit to account for the prorated amount of 10 days remaining on one less $30 plan.
-    - (10 days remaining/30 days in billing period)\*15 as the per unit cost= $4.95
-  - If you choose full credit:
-    - By choosing “full credit,” you would fully credit your customer $15 for the decrease in quantity.
-  - If you choose no credit:
-    - By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a zero dollar invoice since Recurly does not issue zero dollar invoices for immediate subscription changes.
+* If you choose prorated credit:
+  * By choosing “prorated credit,” you would credit your customer only for the portion of the original add-on quantity count that they will no longer be able to receive value from for the remainder of the billing period. Your customer would receive a $9.90 credit to account for the prorated amount of 10 days remaining on one less $30 plan.
+    * (10 days remaining/30 days in billing period)\*15 as the per unit cost= $4.95
+  * If you choose full credit:
+    * By choosing “full credit,” you would fully credit your customer $15 for the decrease in quantity.
+  * If you choose no credit:
+    * By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a zero dollar invoice since Recurly does not issue zero dollar invoices for immediate subscription changes.
 
 ### Price change
 
 When there's a change in the price of a plan fee or add-on, a charge or credit will be generated for the price difference.
 
-- For price increases, the charge quantity will correspond to the current product's quantity in the subscription, and the price will be the difference between the previous price and the new price, then multiplied by the proration percentage.
-- For price decreases, the quantity will always be 1, and the price will reflect the prorated price difference, multiplied by the current quantity of the product in the subscription.
+* For price increases, the charge quantity will correspond to the current product's quantity in the subscription, and the price will be the difference between the previous price and the new price, then multiplied by the proration percentage.
+* For price decreases, the quantity will always be 1, and the price will reflect the prorated price difference, multiplied by the current quantity of the product in the subscription.
 
 #### Price increase example
 
-**Scenario:**  
+**Scenario:**\
 You increase your customer’s monthly subscription from $80/month to $100/month because you are giving them immediate access to a new feature in your application that they could not previously utilize due to their monthly plan cost. They have 10 days left in their billing cycle.
 
-- If you choose prorated charge:
-  - By choosing “prorated charge,” you would charge your customer only for the remainder of the billing period where they would be able to access the new feature they received access to from the price increase. Your customer would receive a $33 dollar charge.
-    - (10 days remaining/30 days in billing period)\*100 as the per unit cost= $33
-- If you choose full charge:
-  - By choosing “full charge,” you would charge your customer the $20 price difference for the increase in plan price.
-- If you choose no charge:
-  - By choosing “no charge,” you would not charge your customer anything for this subscription change and they will receive a zero dollar invoice reflecting the new plan information resulting from the immediate change.
+* If you choose prorated charge:
+  * By choosing “prorated charge,” you would charge your customer only for the remainder of the billing period where they would be able to access the new feature they received access to from the price increase. Your customer would receive a $33 dollar charge.
+    * (10 days remaining/30 days in billing period)\*100 as the per unit cost= $33
+* If you choose full charge:
+  * By choosing “full charge,” you would charge your customer the $20 price difference for the increase in plan price.
+* If you choose no charge:
+  * By choosing “no charge,” you would not charge your customer anything for this subscription change and they will receive a zero dollar invoice reflecting the new plan information resulting from the immediate change.
 
 #### Price decrease example
 
-**Scenario:**  
+**Scenario:**\
 You decrease the price of your customer’s subscription add-on from $20/month to $10/month because their add-on has become outdated and a newer more improved model of the add-on is available for $20/month. They have 10 days left in their billing cycle.
 
-- If you choose prorated credit:
-  - By choosing “prorated credit,” you would credit your customer only for the unused portion of the billing period for the $20 price. Your customer would receive a $6.60 dollar credit.
-    - (10 days remaining/30 days in billing period)\*20 as the per unit cost= $6.60
-- If you choose full credit:
-  - By choosing “full credit,” you would credit your customer the $10 price difference for the decrease in the add-on price.
-- If you choose no credit:
-  - By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a zero dollar invoice since Recurly does not issue zero dollar invoices for immediate subscription changes.
+* If you choose prorated credit:
+  * By choosing “prorated credit,” you would credit your customer only for the unused portion of the billing period for the $20 price. Your customer would receive a $6.60 dollar credit.
+    * (10 days remaining/30 days in billing period)\*20 as the per unit cost= $6.60
+* If you choose full credit:
+  * By choosing “full credit,” you would credit your customer the $10 price difference for the decrease in the add-on price.
+* If you choose no credit:
+  * By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a zero dollar invoice since Recurly does not issue zero dollar invoices for immediate subscription changes.
 
 ### Change quantity and price
 
@@ -360,29 +317,29 @@ When there's a change in the subscription’s plan, Recurly will rebill the enti
 
 #### Quantity and price change example
 
-**Scenario:**  
+**Scenario:**\
 You increase the per-unit price of your customer’s subscription add-on from $15 to $20 because their add-on has become more updated and advanced, and you also increase their add-on quantity from 1 item to 3 items. They have 10 days left in their billing cycle. Because both quantity and price on the subscription are changing, this will result in a rebill, regardless of if Only Bill What Changed (OBWC) is enabled on your site or not.
 
-- If you choose prorated credit:
-  - By choosing “prorated credit,” you would credit your customer for the unused portion of the original add-on total that they will no longer receive value from for the remainder of the billing period. Your customer would receive a $4.95 credit to account for the decrease in price from moving to their new plan.
-    - (10 days remaining/30 days in billing period)\*15 as the per unit cost= $4.95
-- If you choose full credit:
-  - By choosing “full credit,” you would fully credit your customer $15 for the original cost of their 1 add-on
-- If you choose no credit:
-  - By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a credit invoice
+* If you choose prorated credit:
+  * By choosing “prorated credit,” you would credit your customer for the unused portion of the original add-on total that they will no longer receive value from for the remainder of the billing period. Your customer would receive a $4.95 credit to account for the decrease in price from moving to their new plan.
+    * (10 days remaining/30 days in billing period)\*15 as the per unit cost= $4.95
+* If you choose full credit:
+  * By choosing “full credit,” you would fully credit your customer $15 for the original cost of their 1 add-on
+* If you choose no credit:
+  * By choosing “no credit,” you would not credit your customer anything for this subscription change and they would not receive a credit invoice
     > 👍 Tip:
-    > 
+    >
     > This is a **great** option for merchants who ship physical goods. This way, you can ensure your customer is not credited for the items they already received at the beginning of the billing period, since the full “value” of the plan’s offering is considered fulfilled by the merchant once the customer receives the shipment.
 
 You will also need to handle the resulting charge to the account for the new/updated state of the subscription.
 
-- If you choose prorated charge:
-  - By choosing “prorated charge,” you would charge your customer only for the portion of the new add-ons that they will be able to receive value from for the remainder of the billing period. Your customer would receive a $60 charge to account for the prorated amount of 10 days remaining on a $60 plan.
-    - (10 days remaining/30 days in billing period)\*60 as the total cost= $19.80
-- If you choose full charge:
-  - By choosing “full charge,” you would fully charge your customer $60 for the new/updated state of the subscription.
-- If you choose no charge:
-  - By choosing “no charge,” you would not charge your customer anything for this subscription change and they would receive a zero dollar invoice showing them the new state of their subscription change, reflecting the new plan at a zero dollar cost to them.
+* If you choose prorated charge:
+  * By choosing “prorated charge,” you would charge your customer only for the portion of the new add-ons that they will be able to receive value from for the remainder of the billing period. Your customer would receive a $60 charge to account for the prorated amount of 10 days remaining on a $60 plan.
+    * (10 days remaining/30 days in billing period)\*60 as the total cost= $19.80
+* If you choose full charge:
+  * By choosing “full charge,” you would fully charge your customer $60 for the new/updated state of the subscription.
+* If you choose no charge:
+  * By choosing “no charge,” you would not charge your customer anything for this subscription change and they would receive a zero dollar invoice showing them the new state of their subscription change, reflecting the new plan at a zero dollar cost to them.
 
 #### Change quantity-based add-on
 
@@ -394,10 +351,10 @@ Thus, Tiered, Volume, and Stair Step add-ons will either follow the charge/credi
 
 In case of an immediate change that doesn't alter the subscription's plan, usage-based add-ons will generate charges and credits as follows:
 
-- Unchanged usage-based add-ons will not appear on the change invoice, and any unbilled usage remains unbilled.
-- If a usage-based add-on is removed, or its price or percentage is changed, a charge for any unbilled current usage will be created.
-- Adding a usage-based add-on alone will not create an invoice for the immediate change, as usage-based add-ons are billed in arrears and do not appear on their first invoice.
-- Unbilled corrections logged against a past cycle for a usage-based add-on will not be invoiced in the immediate change unless the add-on is altered. If unchanged, the corrections will be invoiced at the next billing date.
+* Unchanged usage-based add-ons will not appear on the change invoice, and any unbilled usage remains unbilled.
+* If a usage-based add-on is removed, or its price or percentage is changed, a charge for any unbilled current usage will be created.
+* Adding a usage-based add-on alone will not create an invoice for the immediate change, as usage-based add-ons are billed in arrears and do not appear on their first invoice.
+* Unbilled corrections logged against a past cycle for a usage-based add-on will not be invoiced in the immediate change unless the add-on is altered. If unchanged, the corrections will be invoiced at the next billing date.
 
 #### Terminate and refund subscription
 
@@ -407,22 +364,22 @@ Recurly allows for a refund when a subscription is terminated. This refund appli
 
 Immediate subscription changes retaining the same plan period (e.g., monthly to monthly or yearly to yearly) will keep the current billing period and subscription term, following the usual proration rules. However, if the immediate subscription change alters the underlying period (e.g., monthly to yearly or yearly to monthly) and/or the term length (e.g., 12 periods to 6 periods), the subscription billing term will restart, and the new charges will not be prorated.
 
-**_Example Change with Same Billing Period and Subscription Term_**
+***Example Change with Same Billing Period and Subscription Term***
 
 A customer subscribes to the Silver Plan, billed monthly with an annual term, on Jan 15, 2018, and upgrades to the Gold plan, also billed monthly with an annual term, on May 15, 2018.
 
-- The subscription maintains the current billing period of May 15 - June 15, 2018.
-- The change invoice presents a prorated charge for Gold covering May 15 - June 15, 2018.
-- The change invoice also shows a prorated credit for Silver covering May 15 - June 15, 2018.
-- The remaining number of billing periods in the term remains unaffected.
+* The subscription maintains the current billing period of May 15 - June 15, 2018.
+* The change invoice presents a prorated charge for Gold covering May 15 - June 15, 2018.
+* The change invoice also shows a prorated credit for Silver covering May 15 - June 15, 2018.
+* The remaining number of billing periods in the term remains unaffected.
 
-**_Example Change with Different Billing Period and Subscription Term_**
+***Example Change with Different Billing Period and Subscription Term***
 
 A customer subscribes to the Silver Plan, billed monthly with an annual term, on Jan 15, 2018, and upgrades to the Gold Plan, billed quarterly with a two-year term, on May 15, 2018.
 
-- The subscription now has a new billing period of May 15, 2018 - Aug 15, 2018.
-- The change invoice shows a full charge for the two-year Gold covering May 15, 2018 - Aug 15, 2018.
-- The change invoice also includes a prorated credit for the monthly Silver covering May 15 - June 15, 2018.
+* The subscription now has a new billing period of May 15, 2018 - Aug 15, 2018.
+* The change invoice shows a full charge for the two-year Gold covering May 15, 2018 - Aug 15, 2018.
+* The change invoice also includes a prorated credit for the monthly Silver covering May 15 - June 15, 2018.
 
 ### Credits
 
@@ -430,57 +387,27 @@ A customer subscribes to the Silver Plan, billed monthly with an annual term, on
 
 To identify the invoice containing the charge line item from which a credit line item originated, you'll need to refer to the credit's invoice. The display added on the invoice provides a reference to help you and your customers trace back the credit to its original charge.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4c1998d-DOCS_-_credit_link.png",
-        "DOCS - credit link.png",
-        1242
-      ],
-      "align": "center",
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="80%" src="https://files.readme.io/4c1998d-DOCS_-_credit_link.png" />
 
 #### Multiple credits for one product
 
 Each credit line item is linked to a single charge line item. This is crucial as reversing any discounts or taxes would muddle your reporting if a single large credit was linked to multiple charges. Due to this one-to-one credit-to-charge relationship, a subscription change invoice could present two credits for the same product. Each credit line item links back to a different charge line item on a different invoice, and the invoice display will showcase the different invoices, as illustrated in the above example of the invoice reference.
 
-**_Multiple Credit Example_**
+***Multiple Credit Example***
 
 Initially, 5 users of Gold at $10/user/month are purchased. Later, 2 more users are added mid-cycle, making it 7 users. Then, with a quarter of the cycle remaining, 3 users are removed, bringing the total to 4 users.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c93c957-DOCS_-_Multiple_Credits.jpg",
-        "DOCS - Multiple Credits.jpg",
-        559
-      ],
-      "align": "center",
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="80%" src="https://files.readme.io/c93c957-DOCS_-_Multiple_Credits.jpg" />
 
 In the last invoice, #3, the aim is to credit the customer for 3 users, which equates to 3 x $10 = $30. However, with only 25% of the cycle left, only 25% of $30, which is $7.50, should be credited back.
 
 The charge on invoice #2 has $10.00 that can be credited, but since it only represents 2 users and 3 users are being credited, we need to locate the correct charges to credit before applying proration. The target is to credit $30 before proration, thus $30 worth of charges pre-proration need to be found. The charge on invoice #2 is $20 before proration, and the charge on invoice #1 is $50 without any proration. Working our way back, we require the full charge on invoice #2 and only $10 of the charge on invoice #1.
 
-- Pre-proration credit remaining for Gold (from invoice #2): 1 x ($20)
-- Pre-proration credit remaining for Gold (from invoice #1): 1 x ($10)  
+* Pre-proration credit remaining for Gold (from invoice #2): 1 x ($20)
+* Pre-proration credit remaining for Gold (from invoice #1): 1 x ($10)\
   Then, applying a 25% proration, we get:
-- Post-proration credit remaining for Gold (from invoice #2): 1 x ($5)
-- Post-proration credit remaining for Gold (from invoice #1): 1 x ($2.50)  
+* Post-proration credit remaining for Gold (from invoice #2): 1 x ($5)
+* Post-proration credit remaining for Gold (from invoice #1): 1 x ($2.50)\
   Accumulating to a total credit of ($7.50).
 
 #### Credit quantity is 1
@@ -489,26 +416,11 @@ Credits generated during a subscription change event always carry a quantity of 
 
 Recurly users have the liberty to alter the price and quantity of a subscription. When delving into more complex permutations of changes within a single billing cycle, it's possible to see two credits for the same product with unclear quantities and prices. To avoid the need for special rules for a credit's quantity and price based on the type of change, and to minimize confusion, it's decided that the quantity will always be marked as 1 on the invoice. This way, customers can focus on the amount credited, with their subscription accurately reflecting the current quantity and price, affirming any product changes made.
 
-**_Why Quantity is 1 Example_**
+***Why Quantity is 1 Example***
 
 Initially, 5 users of Gold at $10/user/month are purchased. Then, a quarter into the cycle, 2 more users are added, bringing the total to 7 users. At mid-cycle, the price per user is increased from $10 to $15. Lastly, with a quarter of the cycle remaining, 3 users are removed, leaving 4 users at $15/user.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5a6324-DOCS_-_Confusing_Quantity.jpg",
-        "DOCS - Confusing Quantity.jpg",
-        561
-      ],
-      "align": "center",
-      "sizing": "80"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="80%" src="https://files.readme.io/c5a6324-DOCS_-_Confusing_Quantity.jpg" />
 
 Invoice #4A illustrates what the invoice would resemble if the quantity wasn't set to 1. The removal of 3 users shows a credit with a quantity of 7 and another with a quantity of 2, neither of which correspond to the 3 users. Invoice #4B, on the other hand, enforces a credit quantity of 1, directing the customer's attention to the amounts being credited from the two previous invoices for Gold in the billing cycle.
 
@@ -536,30 +448,16 @@ Should mixed tax rates appear on the invoice, Recurly will exhibit the tax rate 
 
 Subscriptions can be altered either immediately, at the next billing date, or upon the renewal of the subscription term. Each choice has its own implications:
 
-- **Immediate changes**: These changes are billed right away, ensuring any upgrades or modifications are reflected in the customer's billing without delay.
-- **At next bill date**: Changes chosen to be effective at the next billing date will be reflected on the customer's next bill, ensuring the changes are accounted for in the upcoming billing cycle.
-- **At term renewal**: If changes are selected to be effective at term renewal, they will reflect on the first bill date of the renewal term. This option does not allow an immediate change to a subscription with billing for that change at term renewal. For such functionality, it's advised to contact [Recurly Support](https://support.recurly.com/).
+* **Immediate changes**: These changes are billed right away, ensuring any upgrades or modifications are reflected in the customer's billing without delay.
+* **At next bill date**: Changes chosen to be effective at the next billing date will be reflected on the customer's next bill, ensuring the changes are accounted for in the upcoming billing cycle.
+* **At term renewal**: If changes are selected to be effective at term renewal, they will reflect on the first bill date of the renewal term. This option does not allow an immediate change to a subscription with billing for that change at term renewal. For such functionality, it's advised to contact [Recurly Support](https://support.recurly.com/).
 
-Often, merchants prefer immediate upgrades to allow customers access to higher value products promptly, while collecting additional revenue right away. Conversely, downgrades are usually set for the next bill date or at term renewal. This approach helps lock the customer into the agreed-upon, and already paid for, billing cycle, continuing to provide the customer with the higher value product until the commencement of the next billing period or term.  
+Often, merchants prefer immediate upgrades to allow customers access to higher value products promptly, while collecting additional revenue right away. Conversely, downgrades are usually set for the next bill date or at term renewal. This approach helps lock the customer into the agreed-upon, and already paid for, billing cycle, continuing to provide the customer with the higher value product until the commencement of the next billing period or term.\
 In instances where there are already pending changes on a subscription, there's flexibility to alter certain attributes of the subscription without affecting other pending changes. When preserving pending changes is desired, there's an option to keep them intact while updating values like shipping address, subscription terms, invoicing and payment, and custom fields, without any impacts on the existing pending changes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/90e7347-Edit_Subscription_Options.png",
-        "Edit Subscription Options.png",
-        865
-      ],
-      "align": "center",
-      "sizing": "smart",
-      "caption": "Subscriptions can be canceled at three different timeframes: immediately, next bill date, or term renewal."
-    }
-  ]
-}
-[/block]
-
+<Image title="Edit Subscription Options.png" alt={865} align="center" width="smart" src="https://files.readme.io/90e7347-Edit_Subscription_Options.png">
+  Subscriptions can be canceled at three different timeframes: immediately, next bill date, or term renewal.
+</Image>
 
 The illustration above depicts the various options available for modifying subscriptions, with cancellation available at three different timeframes. This flexibility allows for better management and control over subscription modifications, aligning with both merchant and customer preferences.
 
@@ -569,49 +467,33 @@ Immediate subscription changes will bill for the difference in cost right away. 
 
 ### At next bill date changes
 
-When the timeframe for a subscription change is set to "next bill date", Recurly saves the changes to apply them when it next bills the subscription. Recurly only retains one change request. If you submit a change request to apply at renewal and then submit a second change request, the first request will be canceled. The second request will be applied at the time frame indicated by the time frame parameter. For "next bill date" change requests, there's no need to prorate the amounts. Recurly will adjust the subscription appropriately and then invoice the user at the new amount on the invoice.  
+When the timeframe for a subscription change is set to "next bill date", Recurly saves the changes to apply them when it next bills the subscription. Recurly only retains one change request. If you submit a change request to apply at renewal and then submit a second change request, the first request will be canceled. The second request will be applied at the time frame indicated by the time frame parameter. For "next bill date" change requests, there's no need to prorate the amounts. Recurly will adjust the subscription appropriately and then invoice the user at the new amount on the invoice.\
 If you wish to update a pending change, please submit the original change along with the updated information. Pending changes can be cleared by updating the subscription immediately with no other changes.
 
 At next bill date change requests only apply to product changes. All other changes, like collection method and notes, will take effect immediately, even if the change request is for the next bill date. These types of changes can be saved and applied at next bill date:
 
-- Change the subscription's plan
-- Change the plan fee price
-- Change the plan fee quantity
-- Add or remove an add-on
-- Change an add-on price
-- Change an add-on quantity
+* Change the subscription's plan
+* Change the plan fee price
+* Change the plan fee quantity
+* Add or remove an add-on
+* Change an add-on price
+* Change an add-on quantity
 
 ### At term renewal changes
 
 When the timeframe for a subscription change is set to "when term renews", Recurly saves the changes to apply them when it's time to renew the subscription. Recurly only retains one change request. If you submit a change request to apply at renewal and then submit a second change request before renewal, the first request will be canceled. The second request will be applied at the time frame indicated by the time frame parameter. For "At renewal" change requests, there's no need to prorate the amounts. Recurly will adjust the subscription appropriately and then invoice the user at the new amount on the renewal invoice.
 
-If you want to update a pending change, please submit the original change along with the updated information. Pending changes can be cleared by updating the subscription **immediately** with no other changes.  
+If you want to update a pending change, please submit the original change along with the updated information. Pending changes can be cleared by updating the subscription **immediately** with no other changes.\
 At renewal change requests only apply to product changes. All other changes, like collection method and notes, will take effect immediately, even if the change request is for when the term renews. These types of changes can be saved and applied at renewal:
 
-- Change the subscription's plan
-- Change the plan fee price
-- Change the plan fee quantity
-- Add or remove an add-on
-- Change an add-on price
-- Change an add-on quantity
+* Change the subscription's plan
+* Change the plan fee price
+* Change the plan fee quantity
+* Add or remove an add-on
+* Change an add-on price
+* Change an add-on quantity
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0087b30-DOCS_-_mixed-tax-rates.png",
-        "DOCS - mixed-tax-rates.png",
-        1430
-      ],
-      "align": "center",
-      "sizing": "80",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80%" border={true} src="https://files.readme.io/0087b30-DOCS_-_mixed-tax-rates.png" />
 
 # Changes to subscriptions with discounts
 
@@ -624,11 +506,11 @@ Discounts on immediate subscription change invoices adhere to two primary rules:
 
 When discounts are reversed on a credit, Recurly will smooth the discounts in the proportion of the credit to the charge it is against.
 
-**_Percentage Example:_**
+***Percentage Example:***
 
 Consider a subscription with quantity 10, priced at $1 per quantity and a 20% off forever coupon. The first invoice will be for $8 ($10 - $2 discount). A downgrade of quantity 3 will result in a credit for $3 and $0.60 discount, so ($2.40) after the discount reversal. The discount of $0.60 comes from $3/$10 x $2.
 
-**_Fixed Amount Example:_**
+***Fixed Amount Example:***
 
 Consider a subscription with quantity 10, priced at $1 per quantity and a $2 off forever coupon. The first invoice will be for $8 ($10 - $2 discount). A downgrade of quantity 3 will result in a credit for $3 and $0.60 discount, so ($2.40). The discount of $0.60 comes from $3/$10 x $2.
 
@@ -642,7 +524,7 @@ It is not possible to have a fixed amount coupon redemption not prorate when app
 
 Single-use coupons only discount charges on one invoice. If a single-use coupon is used on a bill date invoice, it will not discount new charges on an immediate change invoice.
 
-For instance, if your single-use coupon is for "all plans" and is used on the purchase of the Silver plan, but then the customer upgrades to Gold mid-cycle, the Gold charge will not be discounted and a portion of the single-use discount will be reversed on the credit for Silver. The customer ends up losing a portion of the discount they previously received.  
+For instance, if your single-use coupon is for "all plans" and is used on the purchase of the Silver plan, but then the customer upgrades to Gold mid-cycle, the Gold charge will not be discounted and a portion of the single-use discount will be reversed on the credit for Silver. The customer ends up losing a portion of the discount they previously received.\
 If it's crucial that the customer never loses the discount due to immediate changes, you should use limited time or forever duration coupons, not single-use.
 
 ### Fixed amount and long duration coupons
@@ -669,15 +551,15 @@ While an invoice is created when a subscription starts its free trial, Recurly w
 
 If a subscription change alters the underlying plan and the new plan has a different trial rule, the original plan's trial rules will hold.
 
-_**Example: 7-day trial to no trial**_
+***Example: 7-day trial to no trial***
 
 If a subscription currently in a 7-day trial changes its plan to one without a trial, the subscription will stay in the current 7-day trial, but now have access to the new plan. For example, if the customer is 4 days into the trial and changes their plan, they will get the new plan free for 3 days.
 
-_**Example: No trial to 7-day trial**_
+***Example: No trial to 7-day trial***
 
 If a subscription is currently not in a trial and changes its plan to one with a 7-day trial, the subscription will not receive a trial and will be charged for the new plan.
 
-_**Example: 7-day trial to 14-day trial**_
+***Example: 7-day trial to 14-day trial***
 
 If a subscription currently in a 7-day trial changes its plan to one with a 14-day trial, the subscription will stay in the current 7-day trial, but now with access to the new plan. For example, if the customer is 4 days into the trial and changes their plan, they will only get a 3-day trial of the new plan that normally has a 14-day trial.
 
@@ -687,10 +569,10 @@ If you do not want the original trial to continue, you can submit a request to t
 
 # Redeeming a coupon as part of a change
 
-Coupons can only be redeemed in subscription changes that are immediate and include a product change.  
+Coupons can only be redeemed in subscription changes that are immediate and include a product change.\
 Coupon redemption was added to subscription changes to support upgrades with subscription-level coupons. Since a subscription-level coupon must be tied to a subscription with an eligible plan at the time of redemption, upgrades present a scenario where the account does not necessarily have a subscription to the coupon's eligible plans. Therefore, redeeming the subscription-level coupon while the subscription's plan is changing to an eligible plan solves that problem.
 
-While coupon redemption was added to subscription changes for subscription-level coupons, account-level coupons can be redeemed as well. Note that the subscription's new version has to have a plan that is eligible for the new coupon.  
+While coupon redemption was added to subscription changes for subscription-level coupons, account-level coupons can be redeemed as well. Note that the subscription's new version has to have a plan that is eligible for the new coupon.\
 Recurly does not allow coupons to be redeemed at renewal requests because the coupon may have redemption limits for the campaign or the account and managing pending redemptions or immediate redemptions related to pending changes that might be canceled could lead to a poor user experience.
 
 Coupon redemption requires a product change to avoid a subscription being changed only for the sake of redeeming a coupon. Coupons can always be redeemed directly on the account, outside of a subscription action. A product change includes a plan, price, quantity, or add-on change.
@@ -701,29 +583,14 @@ When you are making an immediate change to a subscription, and would like to see
 
 When 'Save Changes' is selected, the final amounts will be created and applied to the customer account. This amount may be slightly different than the amount seen on the preview invoice(s), since the final amount is calculated down to the exact second the change is made.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6776efd99af877a51a54be06a5fda062aab4948204e0528ae1573aeecd5a1460-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/6776efd99af877a51a54be06a5fda062aab4948204e0528ae1573aeecd5a1460-image.png" />
 
 # Email communications
 
 Both automatic and manually collected subscriptions will issue the Subscription Change email, if enabled, to the customer at the time of the change. This means an immediate change will issue the email immediately and an at renewal change will issue the email when the subscription renews.
 
-- Manually collected subscriptions will additionally send the New Invoice email, if enabled, to the customer.
-- Automatically collected subscriptions will additionally send either the Payment Confirmation or Payment Declined email, if enabled, to the customer, depending on whether the transaction was successful or declined. If the immediate change was a downgrade, no "Payment" email will go out.
+* Manually collected subscriptions will additionally send the New Invoice email, if enabled, to the customer.
+* Automatically collected subscriptions will additionally send either the Payment Confirmation or Payment Declined email, if enabled, to the customer, depending on whether the transaction was successful or declined. If the immediate change was a downgrade, no "Payment" email will go out.
 
 > **Note:** If Credit Invoices is enabled, the Subscription Change email will be sent immediately regardless of the time of change.
 
