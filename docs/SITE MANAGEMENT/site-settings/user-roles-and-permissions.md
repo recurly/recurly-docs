@@ -24,11 +24,11 @@ User Roles and Permissions in Recurly define the access rights and functionaliti
 
 # Key benefits
 
-- **Tailored access**: Customize roles to grant specific permissions, ensuring users only access relevant sections.
-- **Enhanced security**: Limit access to sensitive data by assigning roles with restricted permissions.
-- **Optimized collaboration**: Ensure team members have the tools they need by assigning roles that match their responsibilities.
-- **Streamlined management**: Easily manage and modify roles from a centralized dashboard.
-- **Flexibility**: Adapt roles as your organization grows or changes, ensuring continued alignment with business needs.
+* **Tailored access**: Customize roles to grant specific permissions, ensuring users only access relevant sections.
+* **Enhanced security**: Limit access to sensitive data by assigning roles with restricted permissions.
+* **Optimized collaboration**: Ensure team members have the tools they need by assigning roles that match their responsibilities.
+* **Streamlined management**: Easily manage and modify roles from a centralized dashboard.
+* **Flexibility**: Adapt roles as your organization grows or changes, ensuring continued alignment with business needs.
 
 # Key details
 
@@ -43,22 +43,7 @@ Take control of access management within your organization using User-Based Role
 1. Navigate to the "Admin" section in the Recurly App.
 2. Click on the "Roles" page.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c775f3e-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "25% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="25% " src="https://files.readme.io/c775f3e-image.png" />
 
 3. On the top-right corner of the screen, find and click the "Create Role" button.
 
@@ -74,14 +59,14 @@ Take control of access management within your organization using User-Based Role
 
 The Site Admin role is the most powerful role within the Recurly application, providing unrestricted access to all features and settings. It is essential to carefully manage who has this level of access due to the permissions that come with it. Here are key things to know about the Site Admin role:
 
-- **Default Behavior**: By default, Recurly will assign the first user who is ever added to the site as the Site Admin. This is the user who typically sets up the Recurly account initially.
-- **Unrestricted Access**: The Site Admin role provides full access to all permissions in the Recurly App. This includes billing information, account settings, user permissions, and more.
-- **Mandatory Presence**: It is essential to assign at least one user as a Site Admin on every Recurly production site. This ensures that there is always at least one user with the ability to manage and configure the site as needed.
-- **Indelibility**: The Site Admin role itself cannot be deleted or edited, except for the role description. This is designed to prevent a situation where no users have full access to manage the site.
-- **Responsibility**: Given the extensive permissions that the Site Admin role carries, it should be assigned thoughtfully and typically only to trusted individuals within the organization, such as business owners or top-level managers.
+* **Default Behavior**: By default, Recurly will assign the first user who is ever added to the site as the Site Admin. This is the user who typically sets up the Recurly account initially.
+* **Unrestricted Access**: The Site Admin role provides full access to all permissions in the Recurly App. This includes billing information, account settings, user permissions, and more.
+* **Mandatory Presence**: It is essential to assign at least one user as a Site Admin on every Recurly production site. This ensures that there is always at least one user with the ability to manage and configure the site as needed.
+* **Indelibility**: The Site Admin role itself cannot be deleted or edited, except for the role description. This is designed to prevent a situation where no users have full access to manage the site.
+* **Responsibility**: Given the extensive permissions that the Site Admin role carries, it should be assigned thoughtfully and typically only to trusted individuals within the organization, such as business owners or top-level managers.
 
 > 👍 **Recommendation**
-> 
+>
 > Review your Site Admin assignments regularly and ensure that only necessary individuals have this level of access. Remove the Site Admin role from users who no longer require it to maintain the security and integrity of your Recurly account.
 
 ## Deleting a role
@@ -90,41 +75,11 @@ The Site Admin role is the most powerful role within the Recurly application, pr
 2. From the Roles list page, find the role you want to delete.
 3. Select the "Delete" option.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/342cf78-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/342cf78-image.png" />
 
 4. If there are users assigned to the role, a prompt will appear asking you to reassign them to an alternative role. Choose the appropriate role for reassignment.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/176cfc0-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/176cfc0-image.png" />
 
 5. If none of the existing roles fit the users you need to reassign, you can create a new role at this point.
 6. Confirm the deletion by following the prompts or clicking the appropriate button.
@@ -137,22 +92,7 @@ The Site Admin role is the most powerful role within the Recurly application, pr
 1. Access the user's profile directly.
 2. Select the desired alternative role from the User Role selection field.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6fe5b06-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/6fe5b06-image.png" />
 
 If the user is the only active site user assigned to the Site Admin role, designate an alternative site user to be assigned as the Site Admin before reassigning the user. It is necessary to have at least one site user assigned to this role at all times.
 
@@ -160,35 +100,19 @@ If the user is the only active site user assigned to the Site Admin role, design
 
 If your site was live in production prior to migrating to the roles-based user management system, Recurly provides a set of "out-of-the-box" roles to ensure a seamless transition:
 
-- The out-of-the-box roles match the permission sets that were assigned to individual site users before the migration.
-- These roles reflect the unique permission combinations assigned to each site's users.
-- You can create your own custom roles and rename or delete the “out-of-the-box” provided roles as needed, except for the "Site Admin" role.
-- The "Site Admin" role is essential and must have at least one site user assigned to it at all times. Recurly will create the Site Admin role for all sites.
+* The out-of-the-box roles match the permission sets that were assigned to individual site users before the migration.
+* These roles reflect the unique permission combinations assigned to each site's users.
+* You can create your own custom roles and rename or delete the “out-of-the-box” provided roles as needed, except for the "Site Admin" role.
+* The "Site Admin" role is essential and must have at least one site user assigned to it at all times. Recurly will create the Site Admin role for all sites.
 
 ## User permissions
 
 There are two options for providing access to the Customers section of the application: Read Only and Can Edit.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ea6bf4e-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/ea6bf4e-image.png" />
 
-
-- **Read Only:** Users with this access level can view accounts, invoices, transactions, and subscriptions. They are also able to add account notes and view customer information. However, they do not have access to the links for hosted account management or the ability to update billing information.
-- **Can Edit:**Users with this access level have the ability to view and edit accounts, subscriptions, invoices, and transactions. In addition to the permissions of the Read Only level, they can make changes to customer records. 
+* **Read Only:** Users with this access level can view accounts, invoices, transactions, and subscriptions. They are also able to add account notes and view customer information. However, they do not have access to the links for hosted account management or the ability to update billing information.
+* **Can Edit:**Users with this access level have the ability to view and edit accounts, subscriptions, invoices, and transactions. In addition to the permissions of the Read Only level, they can make changes to customer records. 
 
 However, they are not able to edit, delete, or add to plans, transactions, coupons, items, or gift card redemptions from the Customers section, unless they also have edit access to the Configuration section of Recurly.
 
@@ -196,48 +120,18 @@ However, they are not able to edit, delete, or add to plans, transactions, coupo
 
 Users with this access level can view and export all data under the Analytics section. They have comprehensive visibility into analytics-related information.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/270b250-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/270b250-image.png" />
 
 ### Revenue Recognition
 
-Users in this category have either Read-Only or Admin access to Recurly's Revenue Recognition platform. The "Allow Access" checkmark enables or disables general access to Recurly's revenue recognition in a role, and it can always be edited. However, the ability to set whether a role has "Read-Only" or "Admin" access within the revenue recognition platform is only available during the initial configuration of the role. After the role has been configured and saved, granular access control within the revenue recognition platform itself is the only way to configure access.  
+Users in this category have either Read-Only or Admin access to Recurly's Revenue Recognition platform. The "Allow Access" checkmark enables or disables general access to Recurly's revenue recognition in a role, and it can always be edited. However, the ability to set whether a role has "Read-Only" or "Admin" access within the revenue recognition platform is only available during the initial configuration of the role. After the role has been configured and saved, granular access control within the revenue recognition platform itself is the only way to configure access.\
 Please note that the Revenue Recognition section and corresponding permission set will only appear on Recurly sites that have the Revenue Recognition feature flag enabled.
 
 ### Configuration
 
 Users with Configuration access can view and edit Site Settings, Business Entities, Email Templates, Payment Gateways, Custom Fields, Checkout, Hosted Payment Pages, Dunning Management, Measured Units, Tax Settings, Currencies, Fraud Management, Shipping Information, Network Tokens, Apple Pay, Entitlements, Payment Settings, Gift Card Settings, and Analytics Settings. They also have the ability to create, edit, and view Plans, Items, and Coupons.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/56e2aa4-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/56e2aa4-image.png" />
 
 ### Integrations
 
