@@ -36,129 +36,460 @@ To utilize this export, select all or the desired bulk coupon from a dropdown me
 
 #### **Created**
 
-Defines the date range according to the 'created_at' column in the export. Leveraging the "All Time" option with "Created" will showcase the entire compilation of your unique codes. To zero in on a subset of codes crafted during a specific span of the campaign, simply filter the dates accordingly.
+Defines the date range according to the 'created\_at' column in the export. Leveraging the "All Time" option with "Created" will showcase the entire compilation of your unique codes. To zero in on a subset of codes crafted during a specific span of the campaign, simply filter the dates accordingly.
 
 #### **Modified**
 
-Establishes the date range based on the most recent modification date, aligned with the 'modified_at' column in the export. A unique code experiences modification upon its redemption (tracked in 'applied_at') or premature expiration (noted in 'deactivated_at'). The expiration date ('expired_at') does not constitute a modification event.
+Establishes the date range based on the most recent modification date, aligned with the 'modified\_at' column in the export. A unique code experiences modification upon its redemption (tracked in 'applied\_at') or premature expiration (noted in 'deactivated\_at'). The expiration date ('expired\_at') does not constitute a modification event.
 
 # Exports table
 
-[block:html]
-{
-  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Download Button</title>\n    <style>\n        .download-button {\n            display: inline-block;\n            padding: 5px 10px;\n            text-align: center;\n            text-decoration: none;\n            color: #1C2833FF; \n            background-color: #F8F8F8FF; \n            border-radius: 5px;\n            font-weight: normal;\n            transition: background-color 0.5s ease, transform 0.3s ease;\n          \ttransition: 0.4s !important;\n            font-family: 'Proxima-nova', Arial, sans-serif;\n            max-width: 100%; \n        }\n\n        .download-button:hover {\n            background-color: #FFFFFFFF; \n            transform: scale(1.02); \n        }\n      \ta:hover {\n          \tcolor: #1C2833FF;\n          \ttext-decoration: underline !important;\n        }\n      </style>\n</head>\n<body>\n    <a href=\"https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx\" class=\"download-button\">Download our complete export schema</a>\n</body>\n</html>\n\n"
-}
-[/block]
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Button</title>
+    <style>
+        .download-button {
+            display: inline-block;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #1C2833FF; 
+            background-color: #F8F8F8FF; 
+            border-radius: 5px;
+            font-weight: normal;
+            transition: background-color 0.5s ease, transform 0.3s ease;
+          	transition: 0.4s !important;
+            font-family: 'Proxima-nova', Arial, sans-serif;
+            max-width: 100%; 
+        }
 
+        .download-button:hover {
+            background-color: #FFFFFFFF; 
+            transform: scale(1.02); 
+        }
+      	a:hover {
+          	color: #1C2833FF;
+          	text-decoration: underline !important;
+        }
+      </style>
+</head>
+<body>
+    <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download our complete export schema</a>
+</body>
+</html>
+`}</HTMLBlock>
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "**<span id=\"Id\">Id</span>**",
-    "h-1": "**Example**",
-    "h-2": "**Description**",
-    "h-3": "",
-    "0-0": "<span id=\"bulk_coupon_id\">bulk_coupon_id</span>",
-    "0-1": "769158967603640335",
-    "0-2": "UUID identifying the bulk coupon campaign, referential to the id in the Coupons export.",
-    "0-3": "",
-    "1-0": "<span id=\"bulk_coupon_prefix\">bulk_coupon_prefix</span>",
-    "1-1": "save",
-    "1-2": "Prefix common to all unique codes, mapped to the coupon_code of the bulk coupon in the Coupons export.",
-    "1-3": "",
-    "2-0": "<span id=\"unique_coupon_code\">unique_coupon_code</span>",
-    "2-1": "save-012478",
-    "2-2": "Specific code for the bulk coupon, displayed as the coupon_code in the Coupon Redemptions export where the customer applied it at redemption.",
-    "2-3": "",
-    "3-0": "<span id=\"discount\">discount</span>",
-    "3-1": "5",
-    "3-2": "Details of the fixed amount discount, which is applicable post-redemption, with the associated currency being showcased in the currency column. Maintains a null value for percentage discounts.",
-    "3-3": "",
-    "4-0": "<span id=\"discount_percent\">discount_percent</span>",
-    "4-1": "5",
-    "4-2": "Represents the percentage discount, remaining visible irrespective of the redemption status. Assumes a null value for fixed amount discounts.",
-    "4-3": "",
-    "5-0": "<span id=\"timeframe\">timeframe</span>",
-    "5-1": "forever",
-    "5-2": "Stipulates the active duration of the coupon.",
-    "5-3": "",
-    "6-0": "<span id=\"redeem_by_date\">redeem_by_date</span>",
-    "6-1": "2015-10-10 11:59:59 PST",
-    "6-2": "Defines the expiration date and time post which the code becomes non-redeemable. Always set at 11:59:59 PST of the designated day.",
-    "6-3": "",
-    "7-0": "<span id=\"created_at\">created_at</span>",
-    "7-1": "2015-09-07 19:23:03 PST",
-    "7-2": "Marks the creation date and time of the unique code.",
-    "7-3": "",
-    "8-0": "<span id=\"modified_at\">modified_at</span>",
-    "8-1": "2015-09-07 19:23:03 PST",
-    "8-2": "Logs the most recent modification date and time, aligning with redemption ('applied_at') or early expiration ('deactivated_at').",
-    "8-3": "",
-    "9-0": "<span id=\"deactivated_at\">deactivated_at</span>",
-    "9-1": "2015-09-07 19:23:03 PST",
-    "9-2": "Registers the early expiration date and time, if applicable.",
-    "9-3": "",
-    "10-0": "<span id=\"applied_at\">applied_at</span>",
-    "10-1": "2013-01-02 06:21:14 PST",
-    "10-2": "Records the date and time of the code's redemption on an account.",
-    "10-3": "",
-    "11-0": "<span id=\"expires_at\">expires_at</span>",
-    "11-1": "2014-01-02 06:21:14 PST",
-    "11-2": "Signifies the automatic expiration date and time of the code after the preset duration concludes.",
-    "11-3": "",
-    "12-0": "<span id=\"redemption_uuid\">redemption_uuid</span>",
-    "12-1": "306f7937d86f088f046dd945a1a24df2",
-    "12-2": "The unique ID representing each unique code's redemption.",
-    "12-3": "",
-    "13-0": "<span id=\"account_code\">account_code</span>",
-    "13-1": "306f7937d86f088f046dd945a1a24df2",
-    "13-2": "The unique identifier for the account where the code was redeemed.",
-    "13-3": "",
-    "14-0": "<span id=\"subscription_id\">subscription_id</span>",
-    "14-1": "306f7937d86f088f046dd945a1a24df2",
-    "14-2": "UUID of the subscription linked to the unique code's redemption on a customer account, displayed only for subscription-level redemptions.",
-    "14-3": "",
-    "15-0": "<span id=\"total_discount\">total_discount</span>",
-    "15-1": "100.50",
-    "15-2": "The aggregated discount applied on the account from the unique code's redemption till date.",
-    "15-3": "",
-    "16-0": "<span id=\"currency\">currency</span>",
-    "16-1": "USD",
-    "16-2": "The currency assigned to the 'total_discount' and 'discount' columns.",
-    "16-3": "",
-    "17-0": "<span id=\"discount_type\">discount_type</span>",
-    "17-1": "percent, fixed_amount, free_trial",
-    "17-2": "The category of the coupon — percentage discount, fixed amount discount, or a custom trial period.",
-    "17-3": "",
-    "18-0": "<span id=\"free_trial_coupon_amount\">free_trial_coupon_amount</span>",
-    "18-1": "14",
-    "18-2": "For 'free_trial' discount type, it defines the period number corresponding to the unit period (like 14 for a 14-day trial).",
-    "18-3": "",
-    "19-0": "<span id=\"free_trial_coupon_unit\">free_trial_coupon_unit</span>",
-    "19-1": "day, week, month",
-    "19-2": "For 'free_trial' discount type, it specifies the unit of the trial period (day/week/month corresponding to the trial period).",
-    "19-3": "",
-    "20-0": "unique_coupon_code_api_id",
-    "20-1": "e28zov4fw0v2",
-    "20-2": "Unique Coupon Code API ID",
-    "20-3": "String"
-  },
-  "cols": 4,
-  "rows": 21,
-  "align": [
-    null,
-    null,
-    null,
-    "left"
-  ]
-}
-[/block]
+<Table align={[null,null,null,"left"]}>
+  <thead>
+    <tr>
+      <th>
+        **<span id="Id">Id</span>**
+      </th>
 
+      <th>
+        **Example**
+      </th>
+
+      <th>
+        **Description**
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <span id="bulk_coupon_id">bulk\_coupon\_id</span>
+      </td>
+
+      <td>
+        769158967603640335
+      </td>
+
+      <td>
+        UUID identifying the bulk coupon campaign, referential to the id in the Coupons export.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="bulk_coupon_prefix">bulk\_coupon\_prefix</span>
+      </td>
+
+      <td>
+        save
+      </td>
+
+      <td>
+        Prefix common to all unique codes, mapped to the coupon\_code of the bulk coupon in the Coupons export.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="unique_coupon_code">unique\_coupon\_code</span>
+      </td>
+
+      <td>
+        save-012478
+      </td>
+
+      <td>
+        Specific code for the bulk coupon, displayed as the coupon\_code in the Coupon Redemptions export where the customer applied it at redemption.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="discount">discount</span>
+      </td>
+
+      <td>
+        5
+      </td>
+
+      <td>
+        Details of the fixed amount discount, which is applicable post-redemption, with the associated currency being showcased in the currency column. Maintains a null value for percentage discounts.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="discount_percent">discount\_percent</span>
+      </td>
+
+      <td>
+        5
+      </td>
+
+      <td>
+        Represents the percentage discount, remaining visible irrespective of the redemption status. Assumes a null value for fixed amount discounts.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="timeframe">timeframe</span>
+      </td>
+
+      <td>
+        forever
+      </td>
+
+      <td>
+        Stipulates the active duration of the coupon.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="redeem_by_date">redeem\_by\_date</span>
+      </td>
+
+      <td>
+        2015-10-10 11:59:59 PST
+      </td>
+
+      <td>
+        Defines the expiration date and time post which the code becomes non-redeemable. Always set at 11:59:59 PST of the designated day.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="created_at">created\_at</span>
+      </td>
+
+      <td>
+        2015-09-07 19:23:03 PST
+      </td>
+
+      <td>
+        Marks the creation date and time of the unique code.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="modified_at">modified\_at</span>
+      </td>
+
+      <td>
+        2015-09-07 19:23:03 PST
+      </td>
+
+      <td>
+        Logs the most recent modification date and time, aligning with redemption ('applied\_at') or early expiration ('deactivated\_at').
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="deactivated_at">deactivated\_at</span>
+      </td>
+
+      <td>
+        2015-09-07 19:23:03 PST
+      </td>
+
+      <td>
+        Registers the early expiration date and time, if applicable.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="applied_at">applied\_at</span>
+      </td>
+
+      <td>
+        2013-01-02 06:21:14 PST
+      </td>
+
+      <td>
+        Records the date and time of the code's redemption on an account.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="expires_at">expires\_at</span>
+      </td>
+
+      <td>
+        2014-01-02 06:21:14 PST
+      </td>
+
+      <td>
+        Signifies the automatic expiration date and time of the code after the preset duration concludes.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="redemption_uuid">redemption\_uuid</span>
+      </td>
+
+      <td>
+        306f7937d86f088f046dd945a1a24df2
+      </td>
+
+      <td>
+        The unique ID representing each unique code's redemption.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="account_code">account\_code</span>
+      </td>
+
+      <td>
+        306f7937d86f088f046dd945a1a24df2
+      </td>
+
+      <td>
+        The unique identifier for the account where the code was redeemed.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="subscription_id">subscription\_id</span>
+      </td>
+
+      <td>
+        306f7937d86f088f046dd945a1a24df2
+      </td>
+
+      <td>
+        UUID of the subscription linked to the unique code's redemption on a customer account, displayed only for subscription-level redemptions.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="total_discount">total\_discount</span>
+      </td>
+
+      <td>
+        100.50
+      </td>
+
+      <td>
+        The aggregated discount applied on the account from the unique code's redemption till date.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="currency">currency</span>
+      </td>
+
+      <td>
+        USD
+      </td>
+
+      <td>
+        The currency assigned to the 'total\_discount' and 'discount' columns.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="discount_type">discount\_type</span>
+      </td>
+
+      <td>
+        percent, fixed\_amount, free\_trial
+      </td>
+
+      <td>
+        The category of the coupon — percentage discount, fixed amount discount, or a custom trial period.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="free_trial_coupon_amount">free\_trial\_coupon\_amount</span>
+      </td>
+
+      <td>
+        14
+      </td>
+
+      <td>
+        For 'free\_trial' discount type, it defines the period number corresponding to the unit period (like 14 for a 14-day trial).
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="free_trial_coupon_unit">free\_trial\_coupon\_unit</span>
+      </td>
+
+      <td>
+        day, week, month
+      </td>
+
+      <td>
+        For 'free\_trial' discount type, it specifies the unit of the trial period (day/week/month corresponding to the trial period).
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        unique\_coupon\_code\_api\_id
+      </td>
+
+      <td>
+        e28zov4fw0v2
+      </td>
+
+      <td>
+        Unique Coupon Code API ID
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        String
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Version changelog
 
 ### Version 2 - 2/5/2025
 
-- Addition of `unique_coupon_code_api_id`.
+* Addition of `unique_coupon_code_api_id`.
