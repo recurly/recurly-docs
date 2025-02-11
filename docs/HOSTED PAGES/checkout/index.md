@@ -16,7 +16,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+# Overview 
 
 ### Required plan
 
@@ -116,7 +116,7 @@ Use the Hostname to specify the locations where your customers will complete the
 
 #### Recurly-hosted domain
 
- The default hostname which is set up for you out of the box. Your checkout will be available at <your-subdomain>.recurlycheckout.com.
+ The default hostname which is set up for you out of the box. Your checkout will be available at \<your-subdomain>.recurlycheckout.com.
 
 **Please note:** if your subdomain is changed, the Checkout URLs will still be set to the original subdomain that was configured and will not be updated. To update your Checkout pages, please contact [Support]().
 
