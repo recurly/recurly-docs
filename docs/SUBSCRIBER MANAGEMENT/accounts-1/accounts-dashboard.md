@@ -20,40 +20,25 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Admin access to Recurly's dashboard.
-- Familiarity with your customer data and billing processes.
+* Admin access to Recurly's dashboard.
+* Familiarity with your customer data and billing processes.
 
 ### Limitations
 
-- Account codes, once set, cannot be modified.
-- Accounts can only be deleted while in sandbox mode.
+* Account codes, once set, cannot be modified.
+* Accounts can only be deleted while in sandbox mode.
 
 # Definition
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d74cea9-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/d74cea9-image.png" />
 
 The Accounts Management section in Recurly provides an organized interface to handle all customer account related activities. This encompasses monitoring and managing subscriptions, billing information, account statuses, and provides the ability to search, create, update, close, or delete accounts as required.
 
 # Key benefits
 
-- **Centralized management**: View all customer accounts and subscriptions from a unified platform for streamlined operations.
-- **Easy tracking and updating**: Effortlessly track and update billing information, ensuring accurate and up-to-date financial records.
-- **Efficient account search**: Utilize effective search and filter capabilities for quick access to account details, enhancing operational speed and accuracy.
+* **Centralized management**: View all customer accounts and subscriptions from a unified platform for streamlined operations.
+* **Easy tracking and updating**: Effortlessly track and update billing information, ensuring accurate and up-to-date financial records.
+* **Efficient account search**: Utilize effective search and filter capabilities for quick access to account details, enhancing operational speed and accuracy.
 
 # Key details
 
@@ -85,12 +70,12 @@ Your accounts dashboard is the gateway to all customer accounts managed by Recur
 
 Locate accounts easily with the search functionality, using any of the following fields:
 
-- Account code
-- Company name
-- Email
-- First name
-- Last name
-- Username
+* Account code
+* Company name
+* Email
+* First name
+* Last name
+* Username
 
 ## Account creation
 
