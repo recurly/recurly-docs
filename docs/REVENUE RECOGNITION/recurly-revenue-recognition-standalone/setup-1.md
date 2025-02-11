@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-This feature is part of our product, Recurly Revenue Recognition Standalone. [<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-standalone" target="_blank">Learn more here</a>].
+This feature is part of our product, Recurly Revenue Recognition Standalone. [<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-standalone" target="_blank">Learn more here</a>]. 
 
 ### Required plan
 
@@ -52,22 +52,7 @@ In Recurly Revenue Recognition Standalone, books are instrumental in determining
 
 1. **Navigate** to: Set Up → Books
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/69476ad-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/69476ad-image.png" />
 
 2. Click on the “+” to initiate book creation. Ensure the following fields are completed:  
 
@@ -78,7 +63,7 @@ In Recurly Revenue Recognition Standalone, books are instrumental in determining
 - **Status:** Mark as Active if the book is in use. Once deactivated, a book cannot be reactivated.
 - **System controls:** Choose among Allocation, forecasting, cost, posting. Note: Primary books must always have posting active.
 
-  [block:image]{"images":[{"image":["https://files.readme.io/3a64df9-image.png",null,""],"align":"center","border":true}]}[/block]
+<Image align="center" border="true" src="https://files.readme.io/3a64df9-image.png" />
 
 3. After setting up the book(s), click the Save icon.
 4. Once books are established, the Revenue workbench offers options to view contracts under each book individually or collectively. Reports are tailored based on the created books.
@@ -98,7 +83,7 @@ Profiles in Recurly Revenue Recognition Standalone are designed to set applicati
 
 1. **Navigate** to: Set Up → Profiles
 
-   [block:image]{"images":[{"image":["https://files.readme.io/8ea6717-image.png",null,""],"align":"center","border":true}]}[/block]
+<Image align="center" border="true" src="https://files.readme.io/8ea6717-image.png" />
 
 2. **Profile Options:**  
    - **Account separator:** Specifies the value for account separation.
@@ -147,7 +132,7 @@ Segments help define a company's accounting structure, typically based on report
 2. **Select** “Segment”.
 3. **Click** “+” to add new segments and mark the natural segment containing the account.
 
-   [block:image]{"images":[{"image":["https://files.readme.io/3c26ee3-image.png",null,""],"align":"center","border":true}]}[/block]
+<Image align="center" border="true" src="https://files.readme.io/3c26ee3-image.png" />
 
 ### Segment Mapper
 
@@ -176,21 +161,7 @@ Users can create custom events in Recurly Revenue Recognition Standalone, that i
 
 1. **Navigate** to: Set up → Events
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8b4b6aecab2c62b4ba7f3f3a5ef3d0b7ae826a1329f01fce96ae19f2e0939b2a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" border="true" src="https://files.readme.io/8b4b6aecab2c62b4ba7f3f3a5ef3d0b7ae826a1329f01fce96ae19f2e0939b2a-image.png" />
 
 
 2. Fill in the necessary fields and select options as needed.
@@ -206,7 +177,8 @@ Before uploading an event file to Recurly Revenue Recognition Standalone, it's e
 
 3. From the dropdown, **choose** the event and specify the percentage of revenue release based on the chosen event (set to 100 if it's the only one).
 
-   [block:image]{"images":[{"image":["https://files.readme.io/f3ba38303718b2f46252dae337cd2bcd50e6481b0409fdf68f663b1174b0b9ba-image.png",null,""],"align":"center","sizing":"80% ","border":true}]}[/block]
+<Image align="center" border="true" sizing="80%" src="https://files.readme.io/f3ba38303718b2f46252dae337cd2bcd50e6481b0409fdf68f663b1174b0b9ba-image.png" />
+
 
 4. Multiple events can be linked in Recurly Revenue Recognition Standalone. Additionally, you have the flexibility to edit or delete revenue release events.
 
@@ -249,8 +221,8 @@ Recurly Revenue Recognition Standalone predefines all currencies as ISO Codes, e
 **Editing Currencies Configuration:**
 
 1. **Navigate** to: Setup → Currencies
+<Image align="center" border="true" src="https://files.readme.io/4ae93a3-image.png" />
 
-   [block:image]{"images":[{"image":["https://files.readme.io/4ae93a3-image.png",null,""],"align":"center","border":true}]}[/block]
 2. All currencies are predefined in Recurly Revenue Recognition Standalone. To edit:
    - **Double-click** on the desired currency or precision field.
    - **Make** the necessary changes.
