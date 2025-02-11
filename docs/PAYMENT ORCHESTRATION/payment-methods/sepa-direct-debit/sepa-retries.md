@@ -23,15 +23,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Active Recurly account with SEPA Direct Debit set up.
-- Integration with Adyen or GoCardless gateways.
+* Active Recurly account with SEPA Direct Debit set up.
+* Integration with Adyen or GoCardless gateways.
 
 ### Limitations
 
-- SEPA payments can only be retried twice, in compliance with SEPA regulations.
-- Retry time frame is fixed to 24 hours after a failure notification; customization is not available.
-- Adyen’s Auto Rescue and GoCardless Success+ services must be disabled to avoid conflict.
-- SEPA retries will not occur if your Dunning settings are set to immediately expire subscriptions upon failed payments.
+* SEPA payments can only be retried twice, in compliance with SEPA regulations.
+* Retry time frame is fixed to 24 hours after a failure notification; customization is not available.
+* Adyen’s Auto Rescue and GoCardless Success+ services must be disabled to avoid conflict.
+* SEPA retries will not occur if your Dunning settings are set to immediately expire subscriptions upon failed payments.
 
 # Definition
 
@@ -41,9 +41,9 @@ If you’d like to learn more about SEPA Direct Debit payments, find it in our n
 
 # Key benefits
 
-- **Reduced manual effort**: Merchants no longer need to manually retry failed SEPA payments, saving time and operational costs.
-- **Minimized involuntary churn**: By automatically retrying failed payments, merchants can retain more customers who might otherwise be lost due to payment issues.
-- **Compliance with SEPA regulations**: Recurly ensures that retry attempts are within the bounds of SEPA rules, offering peace of mind to merchants.
+* **Reduced manual effort**: Merchants no longer need to manually retry failed SEPA payments, saving time and operational costs.
+* **Minimized involuntary churn**: By automatically retrying failed payments, merchants can retain more customers who might otherwise be lost due to payment issues.
+* **Compliance with SEPA regulations**: Recurly ensures that retry attempts are within the bounds of SEPA rules, offering peace of mind to merchants.
 
 # Key details
 
@@ -75,22 +75,7 @@ Updating billing information with a new SEPA IBAN (International Bank Account Nu
 
 To activate SEPA retries, merchants need to navigate to their Payment Settings within the Recurly platform. Here, the SEPA Retries feature can be enabled with a simple toggle. By default, this feature is turned off to prevent conflicts with any existing retry mechanisms merchants might already have in place.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5cb91ed-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" border={true} src="https://files.readme.io/5cb91ed-image.png" />
 
 ## Understanding invoice details with SEPA Retries
 
@@ -98,29 +83,13 @@ To activate SEPA retries, merchants need to navigate to their Payment Settings w
 
 With SEPA retries activated, invoices will present additional information to help manage and understand the retry process:
 
-- **Next attempt:** This shows when the next retry attempt for a payment will occur, provided there are retries left. It's designed to give both merchants and customers visibility into the payment schedule.
+* **Next attempt:** This shows when the next retry attempt for a payment will occur, provided there are retries left. It's designed to give both merchants and customers visibility into the payment schedule.
 
-- **Remaining attempts:** Displays the count of remaining retries out of the total allowed. This number decreases with each attempt, from 2 down to 0, indicating the number of retries left before the system stops trying.
+* **Remaining attempts:** Displays the count of remaining retries out of the total allowed. This number decreases with each attempt, from 2 down to 0, indicating the number of retries left before the system stops trying.
 
 Before a payment fails due to insufficient funds, these specific details (next scheduled attempt and attempt collection option) won't be visible. However, the remaining attempts will still be shown. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f4bccb6-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/f4bccb6-image.png" />
 
 After a failure, the next attempt's timing will be visible, scheduled 24 hours post-failure, to potentially allow customers to address their insufficient funds issue. The "Attempt Collection" option also becomes available post-failure, allowing for manual initiation of a retry.
 
@@ -128,77 +97,29 @@ After a failure, the next attempt's timing will be visible, scheduled 24 hours p
 
 Using the 'Attempt Collection' function manually will cancel any queued collection if there's already a scheduled attempt. If it's the last attempt (out of the two retries allowed), no further automated retries will be scheduled, marking the end of the retry process for that invoice.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ef6ee5a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/ef6ee5a-image.png" />
 
 ### Retry completion
 
 After exhausting the retry attempts (the initial attempt plus two retries), the invoice will indicate "Retry schedule completed," signaling that no further attempts will be made against that IBAN for the payment.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f98f733-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/f98f733-image.png" />
 
 ## Behavior when SEPA Retries are disabled
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/83ffed4-Collection_Disabled.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/83ffed4-Collection_Disabled.png" />
 
 If the SEPA retries feature is turned off:
 
-- **Remaining attempts:** Will not be displayed in the Collection Info section. Merchants can still manually Attempt Collection, but should not exceed the mandated 2 retries.
+* **Remaining attempts:** Will not be displayed in the Collection Info section. Merchants can still manually Attempt Collection, but should not exceed the mandated 2 retries.
 
-- **Next attempt:** Will read 'Retry schedule completed', indicating that despite the default setting allowing retries, Recurly will not automatically attempt SEPA transaction retries with this feature disabled. This setup preserves the original behavior, ensuring no automatic retries are made without explicit merchant activation of the feature.
+* **Next attempt:** Will read 'Retry schedule completed', indicating that despite the default setting allowing retries, Recurly will not automatically attempt SEPA transaction retries with this feature disabled. This setup preserves the original behavior, ensuring no automatic retries are made without explicit merchant activation of the feature.
 
 # FAQs
 
 ### Will I get webhooks for failed SEPA payments?
 
-Yes! Integrators using Recurly webhook events will receive failed transaction updates for SEPA payments in the same way they receive event notifications for other payment methods. See [Recurly Webhook documentation on Failed Payments](https://www.google.com/url?q=https://recurly.com/developers/reference/webhooks/%23failed-payment&sa=D&source=docs&ust=1711474330170410&usg=AOvVaw3Qz4QqiEii9x0v-MJt1Qgd) for more information.
+Yes! Integrators using Recurly webhook events will receive failed transaction updates for SEPA payments in the same way they receive event notifications for other payment methods. See [Recurly Webhook documentation on Failed Payments](https://www.google.com/url?q=https://recurly.com/developers/reference/webhooks/%23failed-payment\&sa=D\&source=docs\&ust=1711474330170410\&usg=AOvVaw3Qz4QqiEii9x0v-MJt1Qgd) for more information.
 
 ### Will automatic retries start again if my customer updates to a new form of payment?
 
