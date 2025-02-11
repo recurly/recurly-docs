@@ -15,7 +15,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+# Overview 
 
 ### Required plan
 
@@ -68,7 +68,7 @@ This section outlines how the gateway\_code parameter influences the routing of 
 * The gateway\_code persists for recurring transactions, routing subsequent subscription renewals to the specified gateway unless updated.
 * Update the gateway\_code through a PUT request using the v2/subscriptions/:uuid/notes or v3 /subscriptions/\{subscription\_id} endpoint, or clear it with an empty tag to revert to standard routing logic.
 * Utilize GET requests to /subscriptions to fetch the gateway\_code associated with an account's subscription.
-* Use the v2/invoices/<uuid> or v3 /invoices/\<invoice\_id> endpoint to alter the gateway\_code at the Invoice level, modifying the specified gateway accordingly.
+* Use the v2/invoices/\<uuid> or v3 /invoices/\<invoice\_id> endpoint to alter the gateway\_code at the Invoice level, modifying the specified gateway accordingly.
 * Unique Recurly gateway instances are essential for routing to different gateways, either through a unique Merchant Account ID / MID or using a different gateway altogether.
 * Payment method-specific routing is available. If a gateway\_code sent is incompatible with the payment method, the transaction defaults to the original gateway for that method.
 * Applying gateway codes to all subscriptions within a single API request is supported.
