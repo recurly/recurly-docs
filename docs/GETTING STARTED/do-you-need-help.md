@@ -39,7 +39,7 @@ At Recurly, we recognize the importance of prompt and effective problem-solving 
 
 Are you new to Recurly and do you have questions about our plans or are you interested in a demo? Reach out to our sales team at <a href="mailto:sales@recurly.com">[sales@recurly.com](mailto:sales@recurly.com)</a> or start a conversation with us by visiting our <a href="https://recurly.com/demo/contact-sales/" target="_blank">Contact Sales</a> page.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/91b38fd88e6583b0c4660966e9c774118f948dc093f8db935167402ce90ae7e3-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/91b38fd88e6583b0c4660966e9c774118f948dc093f8db935167402ce90ae7e3-image.png" />
 
 <br />
 
