@@ -17,9 +17,11 @@ next:
   description: ''
 ---
 ## US Sales Tax
+
 Sales tax for subscription plans is supported by Recurly for US merchants. Recurly applies state, county, local and special tax rates when your subscriber is in a state that you've identified to collect tax in your tax settings.
 
 ### Available Features
+
 The current release of the US Sales Tax feature allows merchants to collect taxes in US tax regions on their new and existing subscription plans. The summary of features includes:
 
 * No Recurly plan change or upgrade is required. There is no additional cost for this feature.
@@ -39,6 +41,7 @@ The current release of the US Sales Tax feature allows merchants to collect taxe
 * New invoice summary export that aligns to the invoice view.
 
 Future features include:
+
 * Invoice line item export with the tax breakdown by state, county, state, special.
 * Full address tax support (based on your site address requirements).
 * A direct integration with Avalara to your own tax reporting account.
@@ -47,30 +50,20 @@ Future features include:
 * Enhancements to VAT tax support.
 
 ### Configure US Sales Tax on your Account
+
 US Sales Tax is available on all Recurly accounts where country is set to United States under [Site Settings][1]. To enable US Sales Tax for your site, follow the steps below.
+
 1. Select the Taxes section in the left-hand navigation.
 2. Click the Enable US Sales Tax button and agree to the terms.
 3. Select the regions to collect sales tax and click Save Changes.
 4. US Sales Tax will now be applied to new and existing invoices whose billing    address is in the selected regions.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/JnLnSRCXRL65epnfHwSG_st-config.png",
-        "st-config.png",
-        "600",
-        "227",
-        "#a55049",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
+
+![600](https://files.readme.io/JnLnSRCXRL65epnfHwSG_st-config.png "st-config.png")
+
 [1]: https://app.recurly.com/go/configuration/edit
 
 ### US Sales Tax Scenarios
+
 * US sales tax is determined based on matching data across configured tax regions and the customer’s billing address. This requires that you have a minimum of Postal Code set as the Address Requirement in your [Site Settings][1].
 * US Sales Tax is only applied to charges in the currency US Dollars (USD).
 * The total tax amount and rate applied are reflected in invoices, exports (invoices & transactions), emails and webhooks (transaction).
@@ -79,39 +72,35 @@ US Sales Tax is available on all Recurly accounts where country is set to United
 * Specific accounts can be set as exempt from taxes by going to [Accounts][2] and setting the account as exempt. Otherwise taxes will be applied to accounts according to the above scenarios.
 
 [1]: https://app.recurly.com/go/configuration/edit
+
 [2]: https://app.recurly.com/go/accounts
+
 [3]: https://app.recurly.com/go/plans
 
 ### Invoices and Exports
+
 Invoices have been updated to support the display of US Sales Tax along with other enhancements to improve the readability of the format. US Sales Tax is calculated for the charges on an invoice, including proration adjustments for upgrade and downgrades. A customer must have a postal code and country in order for taxes to be calculated on an invoice. Automatic invoices (e.g. - credit card, PayPal), require this address information in the Billing address. You can view your invoice by going to the [Invoices][5] page. For general information about invoices, view the [invoices][4] reference page.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/uQ32iuQdS5qDUbaHvRoL_inv-sample.png",
-        "inv-sample.png",
-        "600",
-        "627",
-        "#737a3a",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
+
+![600](https://files.readme.io/uQ32iuQdS5qDUbaHvRoL_inv-sample.png "inv-sample.png")
+
 [Exports][7] will also provide US Sales Tax data. The transactions export will include the total tax amount applied to each transaction and the invoices export will include the line item tax and total tax amounts. For details on the available data fields, view the [exports][6] reference page.
 
 [4]: /invoices
+
 [5]: https://app.recurly.com/go/invoices
+
 [6]: /export-details
+
 [7]: https://app.recurly.com/go/exports
 
 ## VAT (Value-added Tax)
+
 VAT, or value-added tax, is supported by Recurly for European merchants. Recurly handles VAT percentages across different countries and different purchasing scenarios.
 
 ### Configure VAT on your Account
+
 VAT is available on all Recurly accounts that have set an EU country in their configuration page. If you have not done so already, set your company country under [Site Settings][1]. To enable VAT for your site, follow the steps below.
+
 1. Select the [Taxes][2] section in the left-hand navigation under Configuration.
 2. Click the Enable VAT button.
 3. Input VAT Number and VAT Percentage and click Save Changes.
@@ -120,13 +109,17 @@ VAT is available on all Recurly accounts that have set an EU country in their co
 6. VAT will now be applied to new and existing invoices according to the scenarios below
 
 [1]: https://app.recurly.com/go/configuration/edit
+
 [2]: https://app.recurly.com/go/configuration/taxes
+
 [3]: https://app.recurly.com/go/configuration/hosted_pages
 
 ### VAT Scenarios
+
 * If purchaser is outside of the EU, they will not be charged the VAT fee. This   is determined by the country a purchaser provides in their billing   information.
 * If purchaser is outside the company's country, but inside the EU, the   purchaser will be charged the VAT fee. The purchaser can enter a VAT number   in their billing information to avoid having the VAT charged.
 * If purchaser and company are inside the same country, the purchaser will be   charged the VAT fee.
 
 ### Validation
+
 Recurly validates the VAT number for all production transactions against VIES. Please contact Recurly support if you'd like to disable VAT validation on your Recurly site.
