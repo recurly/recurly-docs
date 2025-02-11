@@ -25,11 +25,11 @@ The Hybrid Pricing Model allows for a combination of different pricing models su
 
 # Key benefits
 
-- **Flexibility:** It accommodates a wide variety of business models and product offerings, accommodating both recurring subscriptions and one-time charges.
-- **Single transaction:** Simplifies the purchasing process by allowing customers to purchase subscriptions and one-time products in a single transaction.
-- **Tailored pricing:** Allows businesses to precisely tailor their pricing strategies to their unique product offerings and customer needs.
-- **Improved customer experience:** By offering a seamless purchasing process, it enhances the overall customer experience.
-- **Effective for diverse product offerings:** Perfect for businesses that offer a combination of digital goods, physical goods, SaaS, and more.
+* **Flexibility:** It accommodates a wide variety of business models and product offerings, accommodating both recurring subscriptions and one-time charges.
+* **Single transaction:** Simplifies the purchasing process by allowing customers to purchase subscriptions and one-time products in a single transaction.
+* **Tailored pricing:** Allows businesses to precisely tailor their pricing strategies to their unique product offerings and customer needs.
+* **Improved customer experience:** By offering a seamless purchasing process, it enhances the overall customer experience.
+* **Effective for diverse product offerings:** Perfect for businesses that offer a combination of digital goods, physical goods, SaaS, and more.
 
 # Key details
 
