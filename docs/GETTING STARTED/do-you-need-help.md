@@ -23,8 +23,6 @@ We're here to assist you every step of the way! Feel free to reach out to our de
 
 For instant help, simply visit <a href="https://recurly.com" target="_blank">Recurly</a> or your Sandbox, login, and click on the purple Live Chat button located at the bottom-right corner of your screen. Our knowledgeable team members are standing by to chat with you, and answer any questions you may have.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/27e2b34-image.png" />
-
 ## Technical support channel
 
 Need help with your products or have technical inquiries? Open a support ticket with us by visiting our <a href="https://support.recurly.com/hc/en-us/requests/new" target="_blank">Support Ticket page</a>.
