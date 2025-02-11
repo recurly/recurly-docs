@@ -27,14 +27,14 @@ Please reach out to [support@recurly.com](mailto:support@recurly.com) for more p
 
 Recurly's Standalone revenue recognition solution is a game-changer for businesses aiming for precision and compliance in their financial operations. With its robust compliance features, it ensures adherence to standards like ASC 606, IFRS 15 and ASC 340-40. The platform's capabilities extend beyond just compliance:
 
-- **Automated Contract Modifications:** Say goodbye to manual adjustments. Automate complex contract changes with ease.
-- **Streamlined Financial Operations:** Simplify complex processes with automated contract modifications, SSP Analysis, and multi-revenue model support.
-- **Single-Sign-On (SSO) Authentication:** Enhance security and user experience with SSO capabilities.
-- **Standalone Selling Price Allocation :** Contracts are allocated based on the SSP rules. SSP Analysis based on the historical data. 
-- **Automated Revenue Recognition & Expense Allocations:** Streamline your financial processes, ensuring accuracy and efficiency.
-- **Real-time Revenue Insights & Forecasting:** Stay ahead with immediate insights into your revenue performance and accurate forecasting tools.
-- **Multi-currency & Multi-book Capabilities:** Expand your global reach with support for various currencies and accounting books.
-- **Dedicated Support:** Benefit from continuous feature enhancements, subscription strategy guidance, and dedicated account management.
+* **Automated Contract Modifications:** Say goodbye to manual adjustments. Automate complex contract changes with ease.
+* **Streamlined Financial Operations:** Simplify complex processes with automated contract modifications, SSP Analysis, and multi-revenue model support.
+* **Single-Sign-On (SSO) Authentication:** Enhance security and user experience with SSO capabilities.
+* **Standalone Selling Price Allocation :** Contracts are allocated based on the SSP rules. SSP Analysis based on the historical data. 
+* **Automated Revenue Recognition & Expense Allocations:** Streamline your financial processes, ensuring accuracy and efficiency.
+* **Real-time Revenue Insights & Forecasting:** Stay ahead with immediate insights into your revenue performance and accurate forecasting tools.
+* **Multi-currency & Multi-book Capabilities:** Expand your global reach with support for various currencies and accounting books.
+* **Dedicated Support:** Benefit from continuous feature enhancements, subscription strategy guidance, and dedicated account management.
 
 By integrating Recurly's Standalone solution, businesses can optimize their revenue management processes, simplify operations, and drive growth with real-time revenue performance insights.
 
