@@ -20,10 +20,10 @@ This feature is only available to customers on the Elite subscription plan. To r
 
 ### Prerequisites
 
-- Enrollment in the Recurly Elite plan is required.
-- Activation of credit invoices is necessary.
-- An operational and active Braze account is required before synchronization can be enabled.
-- Possession of the Braze API key and access to a sandbox for testing are essential.
+* Enrollment in the Recurly Elite plan is required.
+* Activation of credit invoices is necessary.
+* An operational and active Braze account is required before synchronization can be enabled.
+* Possession of the Braze API key and access to a sandbox for testing are essential.
 
 # Definition
 
@@ -33,9 +33,9 @@ Our Braze Integration allows Recurly users to effortlessly feed subscription inf
 
 # Key benefits
 
-- **Enhanced engagement**: Personalized communication with real-time data.
-- **Real-time synchronization**: Ensures up-to-date subscriber information flow.
-- **Scalable marketing**: Supports advanced, data-driven marketing strategies.
+* **Enhanced engagement**: Personalized communication with real-time data.
+* **Real-time synchronization**: Ensures up-to-date subscriber information flow.
+* **Scalable marketing**: Supports advanced, data-driven marketing strategies.
 
 # Getting started with Braze and Recurly
 
@@ -43,28 +43,12 @@ Integrating Braze with Recurly simplifies the process of sharing subscription da
 
 ### Integration steps
 
-To begin, ensure you have active accounts on both Braze and Recurly.  
+To begin, ensure you have active accounts on both Braze and Recurly.\
 Follow these steps after setting up your Braze account:
 
 1. **Access Recurly**: **Navigate** to the Integrations section in your Recurly account and select Braze.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fb381db-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/fb381db-image.png" />
 
 2. **Establish connection with Braze**: **Enter** your Braze API key to connect. **Select** from the dropdown, the URL of your Braze instance. For instance, your URL might look like: 
 
@@ -76,11 +60,11 @@ Follow these steps after setting up your Braze account:
 
 ### Braze Profiles
 
-Recurly will create profiles in Braze using the Recurly account_code, which will be sent over as the external_id to Braze. 
+Recurly will create profiles in Braze using the Recurly account\_code, which will be sent over as the external\_id to Braze. 
 
 If you wish to send Recurly account data to Braze, then enable the "Share profile attributes with Braze" checkbox during configuration. This will keep Recurly account data in sync on the Braze profile. 
 
-By disabling this configuration, only the custom event and subscription attributes will be sent to Braze, and linked to the Braze external_id. 
+By disabling this configuration, only the custom event and subscription attributes will be sent to Braze, and linked to the Braze external\_id. 
 
 ### Configuring custom events in Braze
 
@@ -91,22 +75,7 @@ For effective customer engagement, configuring custom events in Braze to utilize
 1. **Access custom events in braze**: **Sign into Braze**, **navigate** to “Data Settings,” and **select** “Custom Events” to initiate the setup.
 2. **Incorporate Recurly events**: **Choose** “Add Custom Event” to start adding Recurly's events. **Ensure** to include each event from Recurly for thorough data integration. These events can also be tracked within Braze analytics.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/da51958-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " src="https://files.readme.io/da51958-image.png" />
 
 > **Tip**: Always **check** the “raw data” from test users when setting up your Recurly integration. This data aids in further customer segmentation within Braze.
 
@@ -141,27 +110,11 @@ Within Braze, navigate to “Messaging” and select “Campaigns”. Here you w
 2. **Schedule delivery**: When on this step, **select** Action Based delivery type, and specify the New Trigger Action to be based on one of the Recurly Custom Events. 
 3. **Specify values**: Custom event values can also be included as additional property filters for granular message configuration.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a2f81d-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/6a2f81d-image.png" />
 
 ### Configuring Segments and Canvases in Braze using Custom Attributes
 
-Braze allows you to create deep segmentation within Braze to craft automatic communications throughout the entire subscriber lifecycle to create dynamic and personalized journeys that adapt to individual preferences and behaviors.  
+Braze allows you to create deep segmentation within Braze to craft automatic communications throughout the entire subscriber lifecycle to create dynamic and personalized journeys that adapt to individual preferences and behaviors.\
 Recurly will send two types of Custom Attributes to Braze: 
 
 1. **Account Custom Attributes**: Recurly will send account custom attributes to Braze to update the primary Braze account data, and store as a custom attribute on the user. 
@@ -169,57 +122,25 @@ Recurly will send two types of Custom Attributes to Braze:
 
 > **Note:** When account or subscription data is updated, Recurly will only transmit the new or changed account or subscription information to Braze. This method is designed to conserve data points, which are a component of merchants' contracts with Braze. By only sending updated values, our integration aims to be mindful of costs and avoid unnecessary expenditure on data points.
 
-** Segments **
+**Segments**
 
 Power your segmentation efforts using Recurly subscriber data. You can use the custom attribute information including top-level custom attribute data or nested objects to build out your customer segments. This will help you to better customize messaging for each segment like lapsed users, loyal users, users on specific plans, or target users with a failed payment for example.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0714917-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/0714917-image.png" />
 
-
-** Canvases **
+**Canvases**
 
 Leverage your segments in Braze’s canvas functionality to create customer journey communication. Canvases include the ability to create a series of communications across different channels with a predefined cadence. With Canvases you can:
 
-- Create campaigns to invite past subscribers back with appealing offers.
-- Reward loyal subscribers with discounts as a gesture of appreciation.
-- Offer guidance and tips to users who engage less frequently, highlighting new or upcoming features they might enjoy.
-- Provide new subscribers with easy-to-follow guides to enhance their experience from the start.
-- For any issues with payment failures, send friendly reminders to update payment methods to ensure uninterrupted access.
+* Create campaigns to invite past subscribers back with appealing offers.
+* Reward loyal subscribers with discounts as a gesture of appreciation.
+* Offer guidance and tips to users who engage less frequently, highlighting new or upcoming features they might enjoy.
+* Provide new subscribers with easy-to-follow guides to enhance their experience from the start.
+* For any issues with payment failures, send friendly reminders to update payment methods to ensure uninterrupted access.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e38d28d-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/e38d28d-image.png" />
 
-
-** Dunning Guide **
+**Dunning Guide**
 
 Targeting subscribers with a failed payment with specific messaging is a great way to ensure that you’ll recover unpaid invoices, decrease involuntary churn, and increase subscriber LTV.
 
