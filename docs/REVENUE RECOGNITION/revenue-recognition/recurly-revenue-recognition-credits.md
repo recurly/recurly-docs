@@ -21,13 +21,13 @@ To access these features or settings, you must have an active subscription to ei
 
 ### Prerequisites
 
-- Cancellation and refund policy that supports account crediting.
+* Cancellation and refund policy that supports account crediting.
 
 ### Limitations
 
-- Prepayment credits can only be used for purchases and cannot be refunded.
-- Goodwill credits are non-transferable and must be used within the issuing account.
-- Credits may have expiration dates or usage conditions, depending on the business policy.
+* Prepayment credits can only be used for purchases and cannot be refunded.
+* Goodwill credits are non-transferable and must be used within the issuing account.
+* Credits may have expiration dates or usage conditions, depending on the business policy.
 
 # Definition
 
@@ -40,23 +40,7 @@ You have the flexibility to incorporate credits into your revenue recognition in
 1. **Navigate** to Setup → Profiles
 2. Under 'Ignore Credit Event Transactions' **select** 'Yes' or 'No'.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5e90165b450dba809bb3614de2b2eba06b3b2d562d3ec5f1af57539d9f9909b4-Screenshot_2024-10-15_at_12.05.59_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/5e90165b450dba809bb3614de2b2eba06b3b2d562d3ec5f1af57539d9f9909b4-Screenshot_2024-10-15_at_12.05.59_PM.png" />
 
 ## Key details
 
