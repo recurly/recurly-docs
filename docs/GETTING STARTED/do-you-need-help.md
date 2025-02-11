@@ -15,20 +15,6 @@ metadata:
 next:
   description: ''
 ---
-<Tabs>
-  <Tab title="First Tab" icon="fa-user">
-    Welcome to the content that you can only see inside the first Tab.
-  </Tab>
-
-  <Tab title="Second Tab">
-    Here's content that's only inside the second Tab.
-  </Tab>
-
-  <Tab title="Third Tab">
-    Here's content that's only inside the third Tab.
-  </Tab>
-</Tabs>
-
 # Support channels
 
 We're here to assist you every step of the way! Feel free to reach out to our dedicated support team through the following channels.
