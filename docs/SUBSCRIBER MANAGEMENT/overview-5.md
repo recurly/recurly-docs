@@ -17,16 +17,4 @@ next:
 
 Step into our video tour and experience the powerful features of our Subscriber Management tools.
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://fast.wistia.net/embed/iframe/tyyztm17dq?videoFoam=true",
-  "title": "iframe",
-  "provider": "fast.wistia.net",
-  "href": "https://fast.wistia.net/embed/iframe/tyyztm17dq?videoFoam=true",
-  "typeOfEmbed": "iframe",
-  "height": "580px",
-  "width": "800px",
-  "iframe": true
-}
-[/block]
+<Embed url="https://fast.wistia.net/embed/iframe/tyyztm17dq?videoFoam=true" title="iframe" provider="fast.wistia.net" href="https://fast.wistia.net/embed/iframe/tyyztm17dq?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800px" iframe="true" />
