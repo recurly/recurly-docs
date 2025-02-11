@@ -24,9 +24,9 @@ Recurly currently supports Boleto  transactions through [Adyen](https://docs.rec
 
 ### Limitations
 
-- Every Boleto generation via Recurly results in the creation of a new invoice.
-- Boleto is not a recurring payment method. Customers must return to session for every payment.
-- Boleto lacks refund capabilities; external refunds are suggested.
+* Every Boleto generation via Recurly results in the creation of a new invoice.
+* Boleto is not a recurring payment method. Customers must return to session for every payment.
+* Boleto lacks refund capabilities; external refunds are suggested.
 
 # Description
 
