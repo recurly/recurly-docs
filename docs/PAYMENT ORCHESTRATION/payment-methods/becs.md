@@ -24,8 +24,8 @@ Through the effective integration of GoCardless or Adyen and Recurly, enhance yo
 
 ### Use cases
 
-- Global transactions: Facilitate cross-border transactions effortlessly through the diverse range of global direct debit schemes supported by GoCardless and Adyen.
-- Recurly Subscription Plans: Simplify BECS transactions by using the Recurly subscription platform with GoCardless or Adyen.
+* Global transactions: Facilitate cross-border transactions effortlessly through the diverse range of global direct debit schemes supported by GoCardless and Adyen.
+* Recurly Subscription Plans: Simplify BECS transactions by using the Recurly subscription platform with GoCardless or Adyen.
 
 # Checkout flow
 
