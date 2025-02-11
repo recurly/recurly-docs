@@ -28,22 +28,22 @@ To use Recurly's credit card solutions, you'll need a merchant bank account and 
 
 Explore detailed documentation for each gateway to ensure seamless integration with Recurly:
 
-- [Adyen](https://docs.recurly.com/docs/adyen)
-- [Authorize.net](https://docs.recurly.com/docs/authorizenet)
-- [Bambora/Worldline](#section-bambora)
-- [Braintree](https://docs.recurly.com/docs/braintree)
-- [CardConnect](https://docs.recurly.com/docs/cardconnect)
-- [Chase Paymentech Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital)
-- [CyberSource](https://docs.recurly.com/docs/cybersource)
-- [First Data GGe4](https://docs.recurly.com/docs/additional)
-- [Merchant eSolutions](https://docs.recurly.com/docs/additional)
-- [Payeezy](https://docs.recurly.com/docs/additional)
-- [PayPal Payflow Pro](https://docs.recurly.com/docs/additional)
-- [PayPal Payments Pro](https://docs.recurly.com/docs/additional)
-- [Stripe](https://docs.recurly.com/docs/additional)
-- [TSYS](https://docs.recurly.com/docs/tsys)
-- [Vantiv](https://docs.recurly.com/docs/additional)
-- [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support)
+* [Adyen](https://docs.recurly.com/docs/adyen)
+* [Authorize.net](https://docs.recurly.com/docs/authorizenet)
+* [Bambora/Worldline](#section-bambora)
+* [Braintree](https://docs.recurly.com/docs/braintree)
+* [CardConnect](https://docs.recurly.com/docs/cardconnect)
+* [Chase Paymentech Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital)
+* [CyberSource](https://docs.recurly.com/docs/cybersource)
+* [First Data GGe4](https://docs.recurly.com/docs/additional)
+* [Merchant eSolutions](https://docs.recurly.com/docs/additional)
+* [Payeezy](https://docs.recurly.com/docs/additional)
+* [PayPal Payflow Pro](https://docs.recurly.com/docs/additional)
+* [PayPal Payments Pro](https://docs.recurly.com/docs/additional)
+* [Stripe](https://docs.recurly.com/docs/additional)
+* [TSYS](https://docs.recurly.com/docs/tsys)
+* [Vantiv](https://docs.recurly.com/docs/additional)
+* [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support)
 
 Refer to the above guides to ensure a successful setup and leverage the full potential of Recurly’s supported gateways for credit card transactions.
 
@@ -77,9 +77,9 @@ Understand the importance of [offering alternative payment methods](https://recu
 
 All transactions process at level I rates by default. However, Recurly facilitates level II card data support for most gateways, granting lower interchange rates for qualified transactions for US merchants. To benefit from this, ensure your sales tax is calculated through Recurly. The necessary data fields included are:
 
-- Sales tax amount
-- Customer code / PO number
-- Merchant zip code
+* Sales tax amount
+* Customer code / PO number
+* Merchant zip code
 
 ### Dual / Co-Badged Card Support
 
@@ -87,4 +87,4 @@ In compliance with [Article 8 of EU IFR Regulation 2015/751](https://eur-lex.eur
 
 Recurly offers dual-badged compliance on the following gateways:
 
-- [Adyen](https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards) (Cartes Bancaires)
+* [Adyen](https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards) (Cartes Bancaires)
