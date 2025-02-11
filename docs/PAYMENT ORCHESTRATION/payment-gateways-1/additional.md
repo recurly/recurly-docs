@@ -11,7 +11,7 @@ next:
   description: ''
 ---
 > 📘 Gateway Specific Updates for PSD2
-> 
+>
 > If you are in-scope of the [PSD2 mandate](https://docs.recurly.com/docs/revised-payment-services-directive-psd2), there may be specific configuration changes required on your gateway account. [Learn more.](https://docs.recurly.com/docs/gateway-specific-updates)
 
 ## Gateway Support
@@ -28,29 +28,29 @@ Recurly supports credit / debit payments from most card types approved by your m
 
 By default, all transactions are processed at level I rates. For most of the gateways, Recurly also supports level II card data, which will allow you to qualify for lower interchange rates when processing qualified transactions **as a US merchant**. This involves the inclusion of the following data fields:
 
-- Sales tax amount
-- Customer code / PO number
-- Merchant zip code
+* Sales tax amount
+* Customer code / PO number
+* Merchant zip code
 
 **What you need to do to benefit from level II card data support**: Recurly will include necessary data fields automatically when formatting your transaction requests to the gateways called out above. Given this, you'll simply need to ensure that sales tax is being collected / calculated through Recurly to ensure that your gateway can submit transactions to your processor with the appropriate level 2 data fields. If the transaction qualifies for level 2 rates, this would be addressed while the transaction is processed by the card network.
 
 ## Supported Credit Card Gateways
 
-[Adyen](https://docs.recurly.com/docs/adyen)  
-[Authorize.net](#section-authorize-net)  
-[Bambora](#section-bambora)  
-[Braintree](#section-braintree)  
-[CardConnect](https://docs.recurly.com/docs/cardconnect)  
-[Chase Paymentech Orbital](#section-chase-paymentech-orbital)  
-[CyberSource](#section-cybersource)  
-[First Data GGe4](#section-first-data-global-gateway-e4-gge4-)  
-[Merchant eSolutions](#section-merchant-e-solutions)  
-[Payeezy](#section-payeezy)  
-[PayPal Payflow Pro](#section-paypal-payflow-pro)  
-[PayPal Payments Pro](#section-paypal-payments-pro)  
-[Stripe](#section-stripe)  
-[TSYS](#section-tsys)  
-[Vantiv](#section-world-pay-us-e-commerce-formerly-vantiv)  
+[Adyen](https://docs.recurly.com/docs/adyen)\
+[Authorize.net](#section-authorize-net)\
+[Bambora](#section-bambora)\
+[Braintree](#section-braintree)\
+[CardConnect](https://docs.recurly.com/docs/cardconnect)\
+[Chase Paymentech Orbital](#section-chase-paymentech-orbital)\
+[CyberSource](#section-cybersource)\
+[First Data GGe4](#section-first-data-global-gateway-e4-gge4-)\
+[Merchant eSolutions](#section-merchant-e-solutions)\
+[Payeezy](#section-payeezy)\
+[PayPal Payflow Pro](#section-paypal-payflow-pro)\
+[PayPal Payments Pro](#section-paypal-payments-pro)\
+[Stripe](#section-stripe)\
+[TSYS](#section-tsys)\
+[Vantiv](#section-world-pay-us-e-commerce-formerly-vantiv)\
 [Worldpay](#section-worldpay)
 
 ## Authorize.net
@@ -75,9 +75,9 @@ Once you have obtained your credentials, please enter them into Recurly's Paymen
 
 To configure Recurly with a Bambora account, you will need:
 
-- API username, also known as a Merchant ID
-- username
-- API password
+* API username, also known as a Merchant ID
+* username
+* API password
 
 The API username and password are configured under **Administration → Account Settings → Order Settings → Use username/password validation against transaction**. You'll need to check that checkbox and then create a username and password.
 
@@ -112,7 +112,7 @@ Recurly supports the Chase Paymentech Orbital, Salem Platform. In order for Recu
 
 1. To start you must be on the Chase Paymentech Orbital, Salem Platform for the integration to work correctly. Chase offers a few different processing platforms, at this time we only support the Salem Platform.  
 
-2. Configuring Chase: Recurly is a certified Orbital Submitter; not just a certified integrator of the gateway.  To set up your chase account you would want to reach out to Chase directly and ask them to setup your Chase account to allow connections from Recurly, a Certified Orbital Submitter on the Salem Platform. If Chase asks for our submitter ID that can be found here <https://docs.recurly.com/docs/chase-orbital-gateway-setup>. Generally that is sufficient information for chase to allow connections, in some cases they might ask for specific IP addresses that are used to sent transactions from Recurly to chase, if they require the IP addresses those can be found here <https://docs.recurly.com/docs/ip-allowlist>
+2. Configuring Chase: Recurly is a certified Orbital Submitter; not just a certified integrator of the gateway.  To set up your chase account you would want to reach out to Chase directly and ask them to setup your Chase account to allow connections from Recurly, a Certified Orbital Submitter on the Salem Platform. If Chase asks for our submitter ID that can be found here [https://docs.recurly.com/docs/chase-orbital-gateway-setup](https://docs.recurly.com/docs/chase-orbital-gateway-setup). Generally that is sufficient information for chase to allow connections, in some cases they might ask for specific IP addresses that are used to sent transactions from Recurly to chase, if they require the IP addresses those can be found here [https://docs.recurly.com/docs/ip-allowlist](https://docs.recurly.com/docs/ip-allowlist)
 
 3. You would want to obtain your Merchant Account ID, Username, and Password from Chase so that when you go to add the Chase gateway in your Recurly site you can fill out those fields to correctly connect your Recurly site to your Chase Paymentech gateway. 
 
@@ -158,10 +158,10 @@ Cybersource requires different integrations based on the processor used for a gi
 
 Recurly supports First Data’s GGe4 gateway for US merchants. In order to connect to your First Data account, you will need the following:
 
-- Gateway ID
-- Password
-- HMAC Key ID
-- HMAC
+* Gateway ID
+* Password
+* HMAC Key ID
+* HMAC
 
 #### User for Results API
 
@@ -169,17 +169,17 @@ We strongly recommend that you create a separate account for Recurly to automati
 
 ## IMPORTANT NOTES:
 
-- **'Results API' credentials expire every 60 days. Be sure to update your credentials prior to the deadline.** 
-- **Failure to update the 'Results API' credentials will result in requests with an invalid_credentials error. If there are 12 of these bad requests made in 15 minutes, the entire integration may be shut down due to an "IP-Lockout" scenario.** 
+* **'Results API' credentials expire every 60 days. Be sure to update your credentials prior to the deadline.** 
+* **Failure to update the 'Results API' credentials will result in requests with an invalid\_credentials error. If there are 12 of these bad requests made in 15 minutes, the entire integration may be shut down due to an "IP-Lockout" scenario.** 
 
 In order to create a read-only user:
 
-1. Log into the First Data GGe4 Gateway portal at  
-   <https://globalgatewaye4.firstdata.com/?lang=en>.
+1. Log into the First Data GGe4 Gateway portal at\
+   [https://globalgatewaye4.firstdata.com/?lang=en](https://globalgatewaye4.firstdata.com/?lang=en).
 2. Click on the "Administration" tab on the far right
 3. Click "Create New User" link
 4. Create a user name
-5. Under the "Login" tab, give the user the "read only" role  
+5. Under the "Login" tab, give the user the "read only" role\
    First Data's documentation on how to create an account [here](https://support.payeezy.com/hc/en-us/articles/203731249-Real-time-Payment-Manager-RPM-User-Guide#3). 
 
 After the user is created, please click the user and then visit the "Merchant / Terminal Restrictions" tab to verify the user has access to the terminals that Recurly uses to create transactions on your behalf.
@@ -188,10 +188,10 @@ After the user is created, please click the user and then visit the "Merchant / 
 
 When adding a new credit card in Recurly, a transaction is created and the provided billing address is submitted to the payment gateway alongside other transaction information. An AVS (Address Validation System) response is then returned to Recurly. AVS checks generally work for US and Canada addresses, but can be inconsistent or unsupported for other countries. This can lead to transactions from customers outside the US/Canada being rejected due to their billing address.
 
-The First Data GGe4 gateway gives you the option to require a partial match on AVS responses for transactions (recommended), or to ignore the AVS response altogether (in which case transactions will not be rejected due to any AVS issues). If the **partial match** option is enabled, transactions with an AVS response of "N" (_No Match_) will be rejected. All other AVS responses will be allowed.
+The First Data GGe4 gateway gives you the option to require a partial match on AVS responses for transactions (recommended), or to ignore the AVS response altogether (in which case transactions will not be rejected due to any AVS issues). If the **partial match** option is enabled, transactions with an AVS response of "N" (*No Match*) will be rejected. All other AVS responses will be allowed.
 
 > 📘 Credentials
-> 
+>
 > To enable your Vantiv gateway, you will need to enter the MID for your Vantiv gateway on the credentials page within Recurly.
 
 **Please note:** AVS responses are only validated on initial transactions (ie; when a credit card is first added in Recurly). AVS responses for recurring transactions will be ignored.
@@ -222,9 +222,9 @@ Merchant eSolutions runs AVS on recurring transactions. This allows their mercha
 
 Recurly supports First Data’s Payeezy gateway. In order to connect to your Payeezy account, you will need the following:
 
-- API Key
-- API Secret
-- Merchant Token
+* API Key
+* API Secret
+* Merchant Token
 
 After you setup your Payeezy credentials, Recurly will verify your credentials. 
 
@@ -240,14 +240,14 @@ CVV is a basic yet effective way to block fraudulent transactions. Recurly can e
 
 PayPal Payflow Pro is a payment gateway only product. Recurly supports Payflow Pro in the US, UK, Canada, and Australia for credit card payments.
 
-Enter the details that you use to access <https://manager.paypal.com/> as follows:
+Enter the details that you use to access [https://manager.paypal.com/](https://manager.paypal.com/) as follows:
 
-- Vendor: The MERCHANT LOGIN you use to access <https://manager.paypal.com/>
-- Password: The PASSWORD you use to access <https://manager.paypal.com/>
-- User: The MERCHANT LOGIN you use to access <https://manager.paypal.com/>
-- Partner: Optional (PayPal may supply you with this)
+* Vendor: The MERCHANT LOGIN you use to access [https://manager.paypal.com/](https://manager.paypal.com/)
+* Password: The PASSWORD you use to access [https://manager.paypal.com/](https://manager.paypal.com/)
+* User: The MERCHANT LOGIN you use to access [https://manager.paypal.com/](https://manager.paypal.com/)
+* Partner: Optional (PayPal may supply you with this)
 
-Please note, these are _not_ the details from your standard PayPal account (your email) or your API credentials.
+Please note, these are *not* the details from your standard PayPal account (your email) or your API credentials.
 
 ## PayPal Payments Pro
 
@@ -257,13 +257,13 @@ Recurly can use PayPal's [Payments Pro][3] to process credit cards. WebSite Paym
 
 To get started with PayPal's Payments Pro, you only need to sign up for their base account. You do not need their Recurring Payments feature---that's completely handled by Recurly.
 
-_Payments Pro only works for merchants located in the US, Canada, and UK. Due to PayPal restrictions, we cannot integrate with PayPal Website Payments Pro in any other country._
+*Payments Pro only works for merchants located in the US, Canada, and UK. Due to PayPal restrictions, we cannot integrate with PayPal Website Payments Pro in any other country.*
 
 #### Card Security Code (CSC)
 
 Some PayPal accounts are required to present the Card Security Code (CSC) for every transaction. After you setup your PayPal credentials, Recurly will verify your credentials. If Recurly determines your account requires CSC for every transaction, you will need to contact PayPal to disable this requirement before your account can be used with Recurly.
 
-_Important Note:_ By default, Recurly requires the CSC (also known as CVV) to start a new subscription or transaction. Due to PCI requirements, Recurly cannot store the CSC. Therefore, Recurly submits recurring transactions without the CSC, and your PayPal account must be configured to not require this value.
+*Important Note:* By default, Recurly requires the CSC (also known as CVV) to start a new subscription or transaction. Due to PCI requirements, Recurly cannot store the CSC. Therefore, Recurly submits recurring transactions without the CSC, and your PayPal account must be configured to not require this value.
 
 #### Configuring Recurly to use PayPal
 
@@ -307,19 +307,19 @@ If you use Stripe and [Gateway Failover](https://docs.recurly.com/docs/gateway-f
 
  The TSYS Gateway can connect to over 400 merchant account banks in the United States
 
-Please ask your merchant bank to create a TSYS Merchant Profile using Host Capture (Summit platform) for Recurly, version 1.0. Once the profile is created, please send the merchant profile along with your POS ID, Authentication Code, and zip code to support@recurly.com.
+Please ask your merchant bank to create a TSYS Merchant Profile using Host Capture (Summit platform) for Recurly, version 1.0. Once the profile is created, please send the merchant profile along with your POS ID, Authentication Code, and zip code to [support@recurly.com](mailto:support@recurly.com).
 
-**Getting started**  
+**Getting started**\
 To get started, Recurly needs to know how to connect to your merchant account. If you have a merchant account, see the instructions for connecting to an existing merchant account. Otherwise, start with creating a new merchant account.
 
 **Database Name**
 
 TSYS requires a database name of at least 5 characters. This can be set in the site settings page of Recurly. If no database name is entered, it will default to the site name. Please ensure at least 5 characters or all transactions will fail.
 
-**New Merchant Accounts**  
+**New Merchant Accounts**\
 If you need a merchant account, we can help you get started. Create a Recurly account, or log into your existing account, and the payment gateway setup process will walk you through the application for a new merchant account.
 
-**Existing Merchant Accounts**  
+**Existing Merchant Accounts**\
 If you have an existing merchant account, please ask your merchant bank to create a TSYS Merchant Profile using Host Capture (Summit platform).
 
 Your merchant bank account provider will need to contact Recurly with your Authentication code, POS ID, merchant zip code, and approved payment methods. POS ID should be 15 numbers and Authentication code is 6-10 letters/numbers. Once this data is received, you can expect to have the Recurly gateway configured on your site in one business day.
@@ -328,13 +328,13 @@ Your merchant bank account provider will need to contact Recurly with your Authe
 
 #### Advanced
 
-**Multi Currency**  
-Today, the TSYS integration is only available for US merchants and for US Dollars. You may combine with other gateways to accept additional currencies.  
-**Merchant Geography**  
-TSYS can process credit cards from customers around the world. However, it is only available today for merchants with a US based presence.  
-**Address Requirements**  
-TSYS has no minimum address requirements.  
-**CVV Requirements**  
+**Multi Currency**\
+Today, the TSYS integration is only available for US merchants and for US Dollars. You may combine with other gateways to accept additional currencies.\
+**Merchant Geography**\
+TSYS can process credit cards from customers around the world. However, it is only available today for merchants with a US based presence.\
+**Address Requirements**\
+TSYS has no minimum address requirements.\
+**CVV Requirements**\
 Because TSYS is designed to handle recurring billing, there is no Card Security Code configuration needed.
 
 [1]: https://app.recurly.com/go/configuration/payment_gateways
@@ -347,27 +347,27 @@ Because TSYS is designed to handle recurring billing, there is no Card Security 
 
 1. Contact WorldPay to configure your merchant account.
 2. Login to the WorldPay portal and allow Recurly's IP addresses. See our [IP Allowlist documentation](https://docs.recurly.com/docs/ip-allowlist) for the full list of IPs to supply.
-3. While logged into WorldPay, set the Capture delay to **1-Day**.  
-   a. Configure callbacks with the urls <https://callbacks.recurly.com/worldpay>, and select which notifications you'd like to receive. If your data is hosted in our European Union (EU) data centers you must use this url instead: <https://callbacks.eu.recurly.com/worldpay>
+3. While logged into WorldPay, set the Capture delay to **1-Day**.\
+   a. Configure callbacks with the urls [https://callbacks.recurly.com/worldpay](https://callbacks.recurly.com/worldpay), and select which notifications you'd like to receive. If your data is hosted in our European Union (EU) data centers you must use this url instead: [https://callbacks.eu.recurly.com/worldpay](https://callbacks.eu.recurly.com/worldpay)
 4. We also recommend that you configure WorldPay notifications to be sent to Recurly. This will help keep Recurly's transaction status in sync with WorldPay's status.
 
 #### Configuration in Recurly
 
 1. Go to the “Payment Gateways” page in your Recurly app. Click on “Add Payment Gateway” and then choose the WorldPay gateway.
-2. Enter your WorldPay _MerchantCode_, **XML** _UserName_ and **XML** _Password_ credentials. Please keep in mind that the UserName and Password details will not be the ones you use to log into your WorldPay merchant account.
+2. Enter your WorldPay *MerchantCode*, **XML** *UserName* and **XML** *Password* credentials. Please keep in mind that the UserName and Password details will not be the ones you use to log into your WorldPay merchant account.
 3. Choose the currencies and card types you want to support.
 4. If necessary, select the card types you'd like to apply Zero Dollar Authorizations to.
 5. Click "Save".
 6. Once the gateway configuration is saved, you can verify the settings by clicking the “Test Configuration” option associated with the gateway.
 
 > 📘 Credentials
-> 
+>
 > Worldpay Payment Gateway (WPG) requires you to enter XML credentials obtained from Worldpay.
 
-**Voids and Refunds**  
+**Voids and Refunds**\
 Void (also known as 'cancel') and Refund order modifications are processed asynchronously by WorldPay. There is a remote chance that WorldPay may reject a Void or Refund request 5 to 45 minutes after receiving receiving it.
 
-**Billing Address**  
-At Recurly, we want to submit as much information (including the billing address) to WorldPay as possible. WorldPay, however, requires four mandatory fields - _Address line1, City, Postal code_ and _Country_. If not provided, Recurly may use default values for these fields.
+**Billing Address**\
+At Recurly, we want to submit as much information (including the billing address) to WorldPay as possible. WorldPay, however, requires four mandatory fields - *Address line1, City, Postal code* and *Country*. If not provided, Recurly may use default values for these fields.
 
 For example: If a customer has only provided a postal code we will submit the provided Postal code, use the country from their IP address, and default the City to “city” and Address line1 to “address”. If we don't have the Country (or can’t derive the country from the IP address) a billing address will not be submitted for the transaction.
