@@ -12,7 +12,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+# Overview 
 
 ### Required plan
 
@@ -38,22 +38,8 @@ Email templates in Recurly refer to predefined layouts and formats which busines
 
 Recurly provides a robust suite of email templates for various account and subscription actions. These templates not only maintain communication with your subscribers but can also be tailored to mirror your brand's image. Furthermore, the granularity in our settings ensures you have the utmost control over which notifications are relayed to your subscribers throughout their subscription journey.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1c4ff3a-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "80% ",
-      "border": true
-    }
-  ]
-}
-[/block]
+
+<Image align="center" sizing="80%" border="true" src="https://files.readme.io/1c4ff3a-image.png" />
 
 
 # Email notification templates
@@ -122,23 +108,7 @@ This new option resides on the [Site Settings page](https://docs.recurly.com/doc
 
 > **Note:** These templates can be configured the days prior.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e3b9d56-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" sizing="60%" border="true" src="https://files.readme.io/e3b9d56-image.png" />
 
 ## Gift card templates
 
@@ -223,7 +193,7 @@ Here is an example:
   Your account will be billed {{{subscription_total_amount}}} in 10 days.
   {{/billing_has_active_mandate?}}
   {{^subscription_has_trial?}}
-  Your mandate ID is: {{{direct_debit_mandate_id}}}.
+  Your mandate ID is: {'{{direct_debit_mandate_id}}'}.
   {{/billing_has_active_mandate?}}
 ```
 
@@ -335,22 +305,7 @@ Disabling a site-level email also deactivates it for all plans.
 
 While modifying an email template, the **Preview** button becomes accessible. By clicking on it, you can get a real-time view of the changes you've applied to the template.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eae8fdd-Screen_Shot_2017-06-16_at_11.48.24_AM.png",
-        null,
-        "Live Email Preview Screenshot"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border="true" src="https://files.readme.io/eae8fdd-Screen_Shot_2017-06-16_at_11.48.24_AM.png" />
 
 #### **2. Sending test emails**
 
@@ -360,23 +315,7 @@ To do this:
 1. **Access** the email template editing page.
 2. **Locate **and **click **on the **Send Test Email** button, adjacent to the **Preview** button.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0961d6-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "85% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" sizing="85%" border="true" src="https://files.readme.io/e0961d6-image.png" />
 
 After initiating the test email send, wait for its arrival in your inbox. If it doesn't appear shortly, check your spam or junk folders.
 
@@ -506,7 +445,7 @@ The shipping address (street 1, street 2, city, state, postal code, country) in 
 | `{{account_state}}`                  | State or province.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `{{account_zip}}`                    | Zip or postal code.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `{{account_country}}`                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `{{account_hosted_maintenance_url}}` | URL with embedded authorization token to automatically log into your hosted account management page. If hosted account management is set to "Guest View Only", this parameter will return the Guest View Edit Billing Info URL. If hosted account management is disabled, this URL will be 404. The conditional parameters {{#company_hosted_account_management_full_access?}} and the closing {{/company_hosted_account_management_full_access?}} will need to be removed from the template in order for the Guest View Edit Billing Info URL to generate properly. |
+| `{{account_hosted_maintenance_url}}` | URL with embedded authorization token to automatically log into your hosted account management page. If hosted account management is set to "Guest View Only", this parameter will return the Guest View Edit Billing Info URL. If hosted account management is disabled, this URL will be 404. The conditional parameters {'{{#company_hosted_account_management_full_access?}}'} and the closing {'{{/company_hosted_account_management_full_access?}}'} will need to be removed from the template in order for the Guest View Edit Billing Info URL to generate properly. |
 | ` {{coupons}}`                       | Returns coupon information if this account has active coupons.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `{{account_vat_number}}`             | The Account Info VAT Number is relevant for customers being issued a manual invoice or if you have your Tax Settings set to have invoices use the Account Info address on the invoice.                                                                                                                                                                                                                                                                                                                                                                               |
 
@@ -542,7 +481,7 @@ The shipping address (street 1, street 2, city, state, postal code, country) in 
 | `{{billing_ip_address}}`         | Account's IP address during the last billing info update.                                                                               |
 | `{{billing_vat_applicable?}}`    | Returns `true` if the account charges VAT.                                                                                              |
 | `{{billing_vat_number}}`         | Account's VAT number.                                                                                                                   |
-| `{{billing_has_active_mandate}}` | Can be used to hide an entire sentence containing the {{direct_debit_mandate_id}} parameter to display a Mandate ID only if one exists. |
+| `{{billing_has_active_mandate}}` | Can be used to hide an entire sentence containing the `{{direct_debit_mandate_id}}` parameter to display a Mandate ID only if one exists. |
 
 #### **Invoice details**
 
@@ -702,7 +641,7 @@ The shipping address (street 1, street 2, city, state, postal code, country) in 
 
 | Field                                  | Description                                                                          |
 | -------------------------------------- | ------------------------------------------------------------------------------------ |
-| `{{direct_debit_mandate_id}}`          | Mandate information for direct debit transactions made through GoCardless.           |
+| {'{direct_debit_mandate_id}'}          | Mandate information for direct debit transactions made through GoCardless.           |
 | `{{direct_debit_creditor_identifier}}` | Creditor information for charging your customers in direct debit through GoCardless. |
 
 ### Custom fields
