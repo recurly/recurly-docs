@@ -24,17 +24,17 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Merchant location in the US, Canada, or the UK due to PayPal's restrictions.
-- PayPal Payments Pro base account (Recurring Payments feature from PayPal is not needed as Recurly handles this).
-- PayPal API credentials: API Username, API Password, and Signature or PEM Certificate.
-- Ensure your PayPal account is configured to not require Card Security Code (CSC) for recurring transactions.
+* Merchant location in the US, Canada, or the UK due to PayPal's restrictions.
+* PayPal Payments Pro base account (Recurring Payments feature from PayPal is not needed as Recurly handles this).
+* PayPal API credentials: API Username, API Password, and Signature or PEM Certificate.
+* Ensure your PayPal account is configured to not require Card Security Code (CSC) for recurring transactions.
 
 ### Limitations
 
-- Limited to merchants located in the US, Canada, and UK.
-- In Canada, American Express is not supported.
-- Full address details are mandatory for every transaction.
-- The Recurring Payments feature of PayPal is not required as Recurly takes care of recurring transactions.
+* Limited to merchants located in the US, Canada, and UK.
+* In Canada, American Express is not supported.
+* Full address details are mandatory for every transaction.
+* The Recurring Payments feature of PayPal is not required as Recurly takes care of recurring transactions.
 
 # Definition
 
@@ -57,11 +57,11 @@ PayPal Payments Pro, supported through Recurly, acts as both a payment gateway a
 
 #### **Getting Started with PayPal Payments Pro**
 
-Kickstart your journey with [PayPal Payments Pro](https://merchant.paypal.com/cgi-bin/marketingweb?cmd=_render-content&content_ID=merchant/wp_pro) and Recurly to streamline your credit card processing. Simply sign up for the base account with PayPal Payments Pro, without the necessity for their Recurring Payments feature, and you are set to sail. This service is confined to merchants operating from the US, Canada, and the UK due to PayPal's regional restrictions.
+Kickstart your journey with [PayPal Payments Pro](https://merchant.paypal.com/cgi-bin/marketingweb?cmd=_render-content\&content_ID=merchant/wp_pro) and Recurly to streamline your credit card processing. Simply sign up for the base account with PayPal Payments Pro, without the necessity for their Recurring Payments feature, and you are set to sail. This service is confined to merchants operating from the US, Canada, and the UK due to PayPal's regional restrictions.
 
 #### **Card Security Code (CSC) Considerations**
 
-A pivotal element is the Card Security Code (CSC), also referred to as CVV, which, by default, is mandated by Recurly for initiating any new transaction or subscription. Post the setup of your PayPal credentials in Recurly, it validates the necessity for CSC in every transaction based on your PayPal account configurations.  
+A pivotal element is the Card Security Code (CSC), also referred to as CVV, which, by default, is mandated by Recurly for initiating any new transaction or subscription. Post the setup of your PayPal credentials in Recurly, it validates the necessity for CSC in every transaction based on your PayPal account configurations.\
 To harmonize with Recurly's operation, which doesn't store CSC owing to PCI stipulations, ensure to contact PayPal and deactivate the compulsory CSC specification for every transaction, facilitating the smooth progression of recurring transactions without CSC inputs.
 
 #### **PEM versus Signature**
@@ -70,8 +70,8 @@ While Recurly backs both PEM and signature methods for transactions, it is advis
 
 #### **Transactional Specifics**
 
-- **American Express in Canada**: Merchants should note the non-compatibility of American Express with PayPal Website Payments Pro in Canada.
-- **Address Details**: An essential requirement is the provision of complete address particulars for every transaction to maintain accord with PayPal Payment Pro's prerequisites, thus, configure Recurly to demand full billing information encompassing name, contact number, and address details including city, state/province, postal/zip code, and country.
+* **American Express in Canada**: Merchants should note the non-compatibility of American Express with PayPal Website Payments Pro in Canada.
+* **Address Details**: An essential requirement is the provision of complete address particulars for every transaction to maintain accord with PayPal Payment Pro's prerequisites, thus, configure Recurly to demand full billing information encompassing name, contact number, and address details including city, state/province, postal/zip code, and country.
 
 #### **Integration Essentials**
 
@@ -79,7 +79,7 @@ While delving into the integration, it’s crucial to pay heed to some fundament
 
 # **Guidelines for Configuring Recurly with PayPal**
 
-To bridge your Recurly account with the [PayPal Payments Pro](https://merchant.paypal.com/cgi-bin/marketingweb?cmd=_render-content&content_ID=merchant/wp_pro) facility, follow the enlisted steps to fetch your PayPal API credentials:
+To bridge your Recurly account with the [PayPal Payments Pro](https://merchant.paypal.com/cgi-bin/marketingweb?cmd=_render-content\&content_ID=merchant/wp_pro) facility, follow the enlisted steps to fetch your PayPal API credentials:
 
 1. **Access PayPal**: Visit [paypal.com](https://www.paypal.com/) and log in to your account.
 2. **Profile Sub-Tab**: Locate and click on the “Profile” sub-tab under the “My Account” segment.
