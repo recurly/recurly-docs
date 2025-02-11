@@ -24,10 +24,10 @@ Additionally, this pricing structure empowers merchants to sell products to thei
 
 # Key benefits
 
-- **Increased revenue streams:** Charging a one-time fee or selling additional items can significantly augment your revenue.
-- **Versatility:** It supports a broad spectrum of business types, from IoT to gyms, web stores, and SaaS companies.
-- **Ease of management:** The Catalog feature simplifies the management of one-time purchases.
-- **Customer engagement:** Offering additional one-time purchases can boost customer engagement and satisfaction.
+* **Increased revenue streams:** Charging a one-time fee or selling additional items can significantly augment your revenue.
+* **Versatility:** It supports a broad spectrum of business types, from IoT to gyms, web stores, and SaaS companies.
+* **Ease of management:** The Catalog feature simplifies the management of one-time purchases.
+* **Customer engagement:** Offering additional one-time purchases can boost customer engagement and satisfaction.
 
 # Key details
 
@@ -44,23 +44,7 @@ The One-Time Billing Model leverages Recurly's Catalog feature for ease of recor
 
 1. **Incorporate a Setup Fee:** Each plan can have one set-up fee. This is ideal for businesses that require an initial investment from the customer, such as gyms, SaaS, or IoT companies.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d9b94cc-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/d9b94cc-image.png" />
 
 2. **Use the item catalog feature:** If your business sells one-time items, use Recurly's <a href="https://docs.recurly.com/docs/catalog" target="_blank">catalog</a>. feature to detail what you sell. This feature helps to record one-time purchases and set a default price. Additionally, it lets you document commonly used attributes such as SKU, accounting code, and tax information, making it easy to sell items via Recurly API or UI.
 3. **Implement one-time purchases:** In your checkout flow, create an adjustment on the account for the product through the Purchases endpoint. This endpoint allows for billing both recurring and one-time purchases together.
