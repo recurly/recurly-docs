@@ -38,17 +38,17 @@ To fully embrace the changes brought by PSD2, we've prepared a step-by-step read
 This checklist provides a step-by-step guide on how to ensure your SCA support through Recurly:
 
 1. **Engage with your gateway provider:** Make sure your setup supports 3D Secure 2.0 transactions along with any other required modifications. Find out the necessary changes in our <a href="https://docs.recurly.com/docs/gateway-specific-updates" target="_blank">Gateway-specific Updates</a>.
-2. **Revise your Recurly setup:** Enable SCA challenge flows during checkout. <a href="https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide" target="_blank">Our Implementation Guide</a> provides detailed instructions. _Note: If you use our hosted checkout pages, this step is not required._
+2. **Revise your Recurly setup:** Enable SCA challenge flows during checkout. <a href="https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide" target="_blank">Our Implementation Guide</a> provides detailed instructions. *Note: If you use our hosted checkout pages, this step is not required.*
 3. **Adjust your dunning flow:** Set up your dunning flow and associated emails. You can learn more about this hosted flow in <a href="https://docs.recurly.com/docs/dunning-configuration-for-3ds-2-declines" target="_blank">our Documentation</a>. For those preferring a custom solution, refer to the implementation guide mentioned in Step 2.
 4. **Practice makes perfect – Test!:** Review our testing notes in our <a href="https://developers.recurly.com/guides/3ds2.html" target="_blank">PSD2 Integration Guide</a>. You can also find test cards for use with the hosted pages <a href="https://docs.recurly.com/docs/test" target="_blank">here</a>.
 
 # More resources
 
-- <a href="https://www.adyen.com/blog/psd2-understanding-strong-customer-authentication" target="_blank">Adyen</a>: Dive deeper into understanding PSD2 and its implications with Adyen.
-- <a href="https://www.braintreepayments.com/blog/understanding-and-preparing-for-psd2-strong-customer-authentication/" target="_blank">Braintree</a>: Navigate your preparations for PSD2 with this comprehensive guide from Braintree.
-- <a href="https://stripe.com/guides/strong-customer-authentication" target="_blank">Stripe</a>: Explore Stripe's detailed guide on Strong Customer Authentication under PSD2.
-- <a href="https://www.worldpay.com/global/psd2" target="_blank">WorldPay</a>: WorldPay's resource on PSD2 provides a global perspective on this regulation.
-- <a href="https://www.cybersource.com/en-us/solutions/fraud-and-risk-management/3d-secure-and-psd2.html" target="_blank">Cybersource</a>: Learn about the intersection of 3D Secure and PSD2 with Cybersource.
+* <a href="https://www.adyen.com/blog/psd2-understanding-strong-customer-authentication" target="_blank">Adyen</a>: Dive deeper into understanding PSD2 and its implications with Adyen.
+* <a href="https://www.braintreepayments.com/blog/understanding-and-preparing-for-psd2-strong-customer-authentication/" target="_blank">Braintree</a>: Navigate your preparations for PSD2 with this comprehensive guide from Braintree.
+* <a href="https://stripe.com/guides/strong-customer-authentication" target="_blank">Stripe</a>: Explore Stripe's detailed guide on Strong Customer Authentication under PSD2.
+* <a href="https://www.worldpay.com/global/psd2" target="_blank">WorldPay</a>: WorldPay's resource on PSD2 provides a global perspective on this regulation.
+* <a href="https://www.cybersource.com/en-us/solutions/fraud-and-risk-management/3d-secure-and-psd2.html" target="_blank">Cybersource</a>: Learn about the intersection of 3D Secure and PSD2 with Cybersource.
 
 # FAQs
 
