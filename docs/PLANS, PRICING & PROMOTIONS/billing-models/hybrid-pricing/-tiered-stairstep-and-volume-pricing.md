@@ -21,19 +21,19 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-**Tiered pricing **is a progressive cost model that changes the unit price based on specified thresholds or "tiers." This dynamic pricing model incentivizes customers to purchase more, driving up sales volumes while creating a personalized buying experience.
+**Tiered pricing** is a progressive cost model that changes the unit price based on specified thresholds or "tiers." This dynamic pricing model incentivizes customers to purchase more, driving up sales volumes while creating a personalized buying experience.
 
-**Volume pricing **is a pricing model where the per-unit cost decreases as the quantity purchased increases, encouraging customers to buy in bulk. The price for all units is determined by the highest tier reached by the quantity, resulting in overall cost savings for the customer.
+**Volume pricing** is a pricing model where the per-unit cost decreases as the quantity purchased increases, encouraging customers to buy in bulk. The price for all units is determined by the highest tier reached by the quantity, resulting in overall cost savings for the customer.
 
 **Stairstep pricing** is a pricing model that charges a flat rate for a defined range of quantities, creating distinct pricing "steps''. Each step represents a tier of volume, with the price remaining the same within that tier, regardless of the exact quantity purchased.
 
 # Key benefits
 
-1. **Tiered pricing benefit: **Encourages customers to purchase more items to reach a lower price per unit, thereby potentially increasing overall sales volumes.
+1. **Tiered pricing benefit:** Encourages customers to purchase more items to reach a lower price per unit, thereby potentially increasing overall sales volumes.
 
 2. **Volume pricing benefit:** Offers incentives for bulk purchases, which can lead to economies of scale, benefiting both the business and the customer through better prices and operational efficiencies.
 
-3. **Stairstep pricing benefit: **Provides clear and predictable pricing within defined quantity ranges, simplifying budget planning for customers and revenue forecasting for businesses.
+3. **Stairstep pricing benefit:** Provides clear and predictable pricing within defined quantity ranges, simplifying budget planning for customers and revenue forecasting for businesses.
 
 # Key details
 
@@ -57,85 +57,21 @@ Stairstep Pricing is a unique pricing strategy that charges a consistent rate wi
 
 1. **Plan creation:** Start by creating a new plan or using an existing add-on in your Recurly account.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e850bbb00f83aebde0b5d78c438e65fa23822353957f35b74c219822162ac5cd-Screenshot_2025-01-16_at_11.38.57_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/e850bbb00f83aebde0b5d78c438e65fa23822353957f35b74c219822162ac5cd-Screenshot_2025-01-16_at_11.38.57_AM.png" />
 
 2. **Pricing model selection:** In the pricing model section, choose 'Tiered Pricing'.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png" />
 
 3. **Tier and price definition:** Since 'Tiered Pricing' is selected, you can now set up different tiers and respective prices at the plan level.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/77da2e9-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/77da2e9-image.png" />
 
 4. **Quantity assignment:** Input the quantity for the subscription add-on in line with the different tiers you've defined.
 5. **Calculation management:** Recurly will automatically calculate the correct total based on the pricing model and quantity input.
 6. **Editable quantity configuration:** If you're utilizing Recurly's Checkout or Hosted Payment Pages, check the "Editable Quantity" box. This enables your subscribers to choose their desired quantity when signing up.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dd26624-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/dd26624-image.png" />
 
 By implementing Tiered Pricing, you can maximize your sales volumes, provide your customers with compelling incentives, and scale your business with ease and efficiency.
 
@@ -143,104 +79,24 @@ By implementing Tiered Pricing, you can maximize your sales volumes, provide you
 
 1. **Plan Creation:** Begin by creating a new plan or using an existing add-on in your Recurly account.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/004922a55d36ae8e15474590e1bd1f78fbc016ec9ca92736c3d9532bc3452abd-Screenshot_2025-01-16_at_11.38.57_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/004922a55d36ae8e15474590e1bd1f78fbc016ec9ca92736c3d9532bc3452abd-Screenshot_2025-01-16_at_11.38.57_AM.png" />
 
 2. **Pricing Model Selection:** In the pricing model section, select 'Volume Pricing'.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/50fedf7bf0859eea6dd2c1c9e5acc7f142f91f9e3fec6bb1049d151cca5fcd50-Screenshot_2025-01-16_at_11.34.57_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/50fedf7bf0859eea6dd2c1c9e5acc7f142f91f9e3fec6bb1049d151cca5fcd50-Screenshot_2025-01-16_at_11.34.57_AM.png" />
 
 3. **Range and cost configuration:** Define the ranges based on the volume of the products. The larger the volume, the lower the costs.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/85273ad-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/85273ad-image.png" />
 
 4. **Quantity assignment:** Enter the quantity for the subscription add-on, keeping in mind the different tiers you've defined.
 5. **Calculation management:** Recurly will automatically calculate the correct total based on the pricing model and quantity input.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/57e6827-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/57e6827-image.png" />
 
 6. **Editable quantity configuration:** If you're using Recurly's Checkout or Hosted Payment Pages, enable the "Editable Quantity" checkbox, allowing your subscribers to select their desired quantity during sign-up.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f2f99db-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/f2f99db-image.png" />
 
 Volume pricing presents a win-win scenario for both businesses and customers, creating a compelling incentive for larger purchases while promoting economies of scale. Recurly makes implementing this pricing strategy a seamless process, providing an efficient way to drive your revenue growth.
 
@@ -248,104 +104,24 @@ Volume pricing presents a win-win scenario for both businesses and customers, cr
 
 1. **Plan Creation:** Initiate by creating a new plan or employing an existing add-on in your Recurly account.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/004922a55d36ae8e15474590e1bd1f78fbc016ec9ca92736c3d9532bc3452abd-Screenshot_2025-01-16_at_11.38.57_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/004922a55d36ae8e15474590e1bd1f78fbc016ec9ca92736c3d9532bc3452abd-Screenshot_2025-01-16_at_11.38.57_AM.png" />
 
 1. **Pricing model selection:** In the pricing model section, opt for 'Stairstep Pricing'.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c997473503d6a04046f5bc0df17ba02c179f3b7bf47860faed273b86863abdc5-Screenshot_2025-01-16_at_11.36.23_AM.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/c997473503d6a04046f5bc0df17ba02c179f3b7bf47860faed273b86863abdc5-Screenshot_2025-01-16_at_11.36.23_AM.png" />
 
 1. **Define range and cost:** Define the range for the stairstep pricing by selecting the starting and ending quantities and assigning the corresponding flat rate for that range. The rate remains consistent within this range.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7b3c437-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "50% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/7b3c437-image.png" />
 
 1. **Add "stairs":** Incorporate as many "stairs" (or tiers) as needed, adjusting the cost accordingly for each tier.
 
 2. **Calculation management:** Recurly will take care of calculating the appropriate total, factoring in the chosen pricing model and quantity.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/de697fe-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/de697fe-image.png" />
 
 1. **Editable quantity configuration:** If you're using Recurly's Checkout or Hosted Payment Pages, tick the "Editable Quantity" box, enabling your subscribers to specify their quantity when signing up.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eddbaf2-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "75% ",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/eddbaf2-image.png" />
 
 Through the implementation of Stairstep Pricing, you can create a predictable revenue stream while offering an adaptable pricing model that caters to your customers' diverse needs.
