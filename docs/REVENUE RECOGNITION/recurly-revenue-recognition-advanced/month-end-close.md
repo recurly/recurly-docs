@@ -76,7 +76,7 @@ To properly close a month in RevRec, follow these steps in order. Avoid opening 
    * Go to **Reports → Exception Reports** and select **Hold Exception**.
    * Confirm that any items on hold are meant to be on hold. If you need to remove a hold so revenue is recognized, open the contract in Revenue Workbench and manually release the appropriate amount.
 
-### 3) Reconciliation of reports
+### 3. Reconciliation of reports
 
 <a name="3-reconciliation-of-reports" />
 
