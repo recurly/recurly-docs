@@ -19,7 +19,7 @@ The rows in the following table briefly identify the new UI features available i
 
 ## Modern Analytics Dashboard UI/UX Changes
 
-<Table align={["left","left","left"]}>
+<Table align={["left","left","left"]}> 
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
