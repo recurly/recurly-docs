@@ -26,17 +26,18 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The Dunning Recovery dashboard is designed to showcase the effectiveness of Recurly's mechanisms in recovering revenue from declined transactions. It features several tools aimed at mitigating payment failures and enhancing overall collection rates:
+The **Dunning Recovery** dashboard highlights how Recurly recovers revenue from declined transactions. It provides key tools to reduce payment failures and improve collection rates:
 
-1. **Account updater:** Automatically refreshes payment details to ensure up-to-date information, reducing the chances of transaction declines due to outdated payment methods.
-2. **Customer updates (dunning):** Encourages customers to update their payment method when a transaction fails, facilitating successful future attempts.
-3. **Intelligent retries:** Employs a strategic approach to retrying failed transactions, optimizing the timing and methodology to increase the likelihood of success.
-4. **Manual:** Allows merchants to manually initiate a collection attempt on a past-due invoice, providing a direct intervention option when automated processes do not succeed.
-5. **Other:** Includes scenarios when expiration data forwarding applies to retry transactions as a recovery reason, and for external recoveries.
+1. **Account Updater** – Automatically refreshes payment details to minimize declines due to outdated payment methods.
+2. **Customer Updates (Dunning)** – Prompts customers to update their payment method when a transaction fails.
+3. **Intelligent Retries** – Optimizes retry attempts using data-driven timing and methods to maximize recovery success.
+4. **Forced Collection** – Allows merchants to manually initiate a collection attempt on a past-due invoice when automated processes do not succeed.
+5. **Manual** – Any **Manual Invoice** that entered dunning and was successfully recovered.
+6. **Other** – Includes cases where expiration date forwarding applies to retry transactions, as well as external recoveries.
 
 # Key benefits
 
-* **Effectiveness**: Ensure your dunning strategy is effective to recover failed invoices. 
+* **Effectiveness**: Ensure your dunning strategy is effective to recover failed invoices.
 
 * **Insights**: Gain insights into how your dunning recovery rate is trending over time.
 
@@ -66,20 +67,14 @@ The Dunning Recovery dashboard offers a detailed view of the revenue you've succ
 
 * **Manual Collection:** Allows merchants to manually intervene and attempt to collect payment on failed invoices, offering a direct path to address and resolve payment issues.
 
-* **Other:** Invoices that are collected by all other methods not listed above, included backup payment method 
+* **Other:** Invoices that are collected by all other methods not listed above, included backup payment method
 
 This dashboard empowers you with actionable insights into the effectiveness of your dunning strategies and the impact on your revenue recovery efforts.
 
-<Image alt="Dunning Summary" align="center" width="80% " border={true} src="https://files.readme.io/321b7d1-Dunning_Summary.png">
-  Dunning Summary
-</Image>
+<Image align="center" alt="Dunning Summary" border={true} caption="Dunning Summary" src="https://files.readme.io/321b7d1-Dunning_Summary.png" width="80% " />
 
-<Image alt="Invoice Revenue" align="center" width="80% " border={true} src="https://files.readme.io/1d9cccf-Invoice_Revenue_.png">
-  Invoice Revenue
-</Image>
+<Image align="center" alt="Invoice Revenue" border={true} caption="Invoice Revenue" src="https://files.readme.io/1d9cccf-Invoice_Revenue_.png" width="80% " />
 
-<Image alt="Invoice Counts" align="center" width="80% " border={true} src="https://files.readme.io/866f6d4-Invoice_Counts.png">
-  Invoice Counts
-</Image>
+<Image align="center" alt="Invoice Counts" border={true} caption="Invoice Counts" src="https://files.readme.io/866f6d4-Invoice_Counts.png" width="80% " />
 
 By having a clear understanding of the Dunning Recovery features, you can maximize their usage and significantly reduce involuntary churn, thereby enhancing your revenue recovery.
