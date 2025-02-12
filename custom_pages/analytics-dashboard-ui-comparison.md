@@ -60,7 +60,7 @@ The rows in the following table briefly identify the new UI features available i
         Request Clear Cache & Refresh:<ul>
 
         <li>Any time from Actions Area</li>
-        <li>Any time from widget drop<br>
+        <li>Any time from widget drop<br/>
         downs</li>
         </ul>
       </td>
