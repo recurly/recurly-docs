@@ -254,7 +254,7 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Data Uploads occurred once a day in the Classic version.\
+        Data Uploads occurred once a day in the Classic version.
         Ability to Select and compare 2 Plan
       </td>
     </tr>
