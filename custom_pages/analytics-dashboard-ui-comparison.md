@@ -113,12 +113,12 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Download Data in multiple formats:\
+        Download Data in multiple formats:
         TXT, to Excel spreadsheet, CSV, JSON, HTML, Markdown, and PNG
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Download Data in one format:\
+        Download Data in one format:
         CSV
       </td>
     </tr>
@@ -138,8 +138,7 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Dunning Effectiveness dashboard: Dunning version selection was localized to the chart component to which it applied.\
-        Does not have campaigns
+        Dunning Effectiveness dashboard: Dunning version selection was localized to the chart component to which it applied. Does not have campaigns
       </td>
     </tr>
 
