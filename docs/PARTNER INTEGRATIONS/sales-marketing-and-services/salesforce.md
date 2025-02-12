@@ -14,18 +14,7 @@ next:
 ---
 # Overview
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fd9zwiRqaPOk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dd9zwiRqaPOk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fd9zwiRqaPOk%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=d9zwiRqaPOk",
-  "title": "Recurly for Salesforce integration demo",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/d9zwiRqaPOk/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=d9zwiRqaPOk",
-  "typeOfEmbed": "youtube"
-}
-[/block]
+<Embed typeOfEmbed="iframe" url="https://www.youtube.com/watch?v=d9zwiRqaPOk" href="https://www.youtube.com/watch?v=d9zwiRqaPOke" html="false" iframe="true" height="854px" width="480px" />
 
 
 ### Required plan
@@ -82,21 +71,7 @@ Furthermore, custom fields and related objects will be added to native Salesforc
 
 The data model below illustrates the synchronization of Recurly data with Salesforce. Detailed setup instructions will be provided once the feature is activated on your Recurly account.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/22248f2-_img-2021-04-salesforce-opportunity-chart-1995__2260.png",
-        null,
-        "Recurly for Salesforce data model"
-      ],
-      "align": "center",
-      "sizing": "60% "
-    }
-  ]
-}
-[/block]
+<Image align="center" width="60% " border={true} caption="Recurly for Salesforce data model" src="https://files.readme.io/22248f2-_img-2021-04-salesforce-opportunity-chart-1995__2260.png" />
 
 
 ## Synchronization insights
@@ -125,22 +100,7 @@ Users can update fields like Company, First Name, Last Name, and more to sync ba
 
 Payment details can only be added or updated via the **Add Payment Information button** on the Recurly Account page. This ensures secure and PCI-compliant data submission.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/22bf897-Screen_Shot_2017-07-05_at_2.40.53_PM.png",
-        null,
-        "Collecting payment information securely within Salesforce"
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="75% " border={true} caption="Collecting payment information securely within Salesforce" src="https://files.readme.io/22bf897-Screen_Shot_2017-07-05_at_2.40.53_PM.png" />
 
 > 🚧 Note: For PCI compliance, use the method above. Editing payment information using the **Edit button** won't sync changes back to Recurly.
 
@@ -336,22 +296,7 @@ Once submitted, a subscription is created from the specified Recurly-based plan 
 
 Recurly offers an enhanced feature to automatically create subscriptions when Salesforce Opportunities are marked as closed-won. This feature can be activated for specific subdomains via the Recurly Admin page. Once enabled, Salesforce Opportunities will have a checkbox automatically activated. When an opportunity is set to closed-won with this checkbox enabled, a subscription is instantly created in Recurly, eliminating the need to navigate to the custom Visual Force order page. The subscription will be generated using default values assigned to the plan within Recurly.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b1268e8-Screen_Shot_2022-07-05_at_1.52.21_PM.png",
-        null,
-        "Automatic Subscription Creation"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} caption="Automatic Subscription Creation" src="https://files.readme.io/b1268e8-Screen_Shot_2022-07-05_at_1.52.21_PM.png" />
 
 ## Creating one-time charges from Salesforce opportunities
 
@@ -361,62 +306,17 @@ When adding products to an opportunity, users can set the Recurly Charge Frequen
 - **Recurring** for plans and add-ons.
 - **One-Time** for items.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/210ccb4-one_time_field_selection_2.png",
-        null,
-        "Recurly Charge Frequency"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} caption="Recurly Charge Frequency" src="https://files.readme.io/210ccb4-one_time_field_selection_2.png" />
 
 For Salesforce CPQ users, specific configurations are required to create twin fields between the Quote Line and Opportunity Product. Once the opportunity is closed-won, the subscription creation process remains the same, but with an additional section for one-time charge items.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0c06d77-one_time_charge.png",
-        null,
-        "One-time charge during Subscription creation"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} caption="One-time charge during Subscription creation" src="https://files.readme.io/0c06d77-one_time_charge.png" />
 
 ## Editing subscriptions from Salesforce opportunities
 
 Active subscriptions can now be updated directly from Salesforce Opportunities. When accessing an active subscription opportunity (in closed-won status), users will notice a "Create or Change Subscription in Recurly" button. Clicking this button will lead to the order review page, where users can select the "Change Existing Subscription" option. This allows users to edit plan details, amounts, and add-ons. A new sidebar provides a real-time preview of changes made.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aea13e7-Screen_Shot_2022-01-28_at_6.57.38_PM.png",
-        null,
-        "Editing Subscriptions"
-      ],
-      "align": "center",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} caption="Editing Subscriptions" src="https://files.readme.io/aea13e7-Screen_Shot_2022-01-28_at_6.57.38_PM.png" />
 
 ## Utilizing automatic payment link in Salesforce opportunities
 
@@ -514,22 +414,7 @@ If a Recurly account doesn't match an existing Salesforce account, the integrati
 
 This section allows you to synchronize your Recurly offerings, which include plans, add-ons, and items, with Salesforce's native Product object.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a392e94-Product_Sync_Settings.png",
-        null,
-        "Product Sync Settings tab"
-      ],
-      "align": "center",
-      "sizing": "50% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} sizing="50% " caption="Product Sync Settings tab" src="https://files.readme.io/a392e94-Product_Sync_Settings.png" />
 
 1. **Product Linking Enabled**: Initially set to disabled. When enabled, the integration will attempt to link Recurly Plans, Add-Ons, and Items to corresponding Salesforce products. If no match is found, a new Salesforce product will be created and linked to the Recurly custom object. This feature ensures that your Recurly offerings and Salesforce products are in sync based on specific criteria, such as Plan Code and Product Code.
 2. **Field Matching**: You must specify the fields that will be used to match Recurly offerings with Salesforce products. This is crucial for product linking. If a direct 1:1 match isn't found for a Recurly offering, the existing Salesforce product remains unchanged, and new products are created for each unmatched Recurly object.
@@ -550,22 +435,7 @@ All custom fields set up on your Recurly site(s) will be displayed, categorized 
 
 This section is for users with more complex synchronization needs.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/710efd3-Advanced_Settings.png",
-        null,
-        "Advanced Settings tab"
-      ],
-      "align": "center",
-      "sizing": "65% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} sizing="65% " caption="Advanced Settings tab" src="https://files.readme.io/710efd3-Advanced_Settings.png" />
 
 1. **Sync Batch Frequency**: Salesforce will, by default, query Recurly every 5 minutes for new data. This frequent querying ensures near-real-time data synchronization but can strain your Salesforce system. You can adjust this frequency anywhere between 5 to 60 minutes based on your needs.
 2. **Nightly Account Rollup Start Time**: If you've enabled invoice roll-ups in your Sync Settings, specific fields on the Salesforce account will be recalculated nightly at the time you specify.
@@ -638,22 +508,7 @@ Add the "Recurly Charge Frequency" to your Salesforce opportunity product layout
 
 Once you're in the Salesforce interface, you'll need to navigate to the "Edit Multi-Line Layout" option located at the top of the page. This option allows you to customize the layout of multiple lines within the Opportunity Product section. However, it's essential to note that you must have the necessary permissions to edit and save these forms.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/322f8b2-opportunity_multi_line.png",
-        null,
-        "Opportunity Product Multi-Line Layout Setup"
-      ],
-      "align": "center",
-      "sizing": "75% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" border={true} sizing="75% " caption="Opportunity Product Multi-Line Layout Setup" src="https://files.readme.io/322f8b2-opportunity_multi_line.png" />
 
 To** incorporate the Recurly Charge Frequency** into the **Opportunity Product** related list, **follow** these steps:
 
