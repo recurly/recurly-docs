@@ -181,11 +181,11 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Hover Text shows dates / totals in individual messages for each selected segment of bar or line charts.
+        Hover Text shows dates totals in individual messages for each selected segment of bar or line charts.
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Hover Text shows dates / totals in one message for all segments of bar or line charts.
+        Hover Text shows dates totals in one message for all segments of bar or line charts.
       </td>
     </tr>
 
@@ -261,7 +261,7 @@ The rows in the following table briefly identify the new UI features available i
 
     <tr>
       <td style={{ textAlign: "left" }}>
-        Sort / Hide Data
+        Sort Hide Data
       </td>
 
       <td style={{ textAlign: "left" }}>
