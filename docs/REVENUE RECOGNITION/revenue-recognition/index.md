@@ -15,7 +15,7 @@ next:
 ---
 # Overview
 
-## Recurly Revenue Recognition overview video
+## Recurly Revenue Recognition overview video 
 
 Venture into our concise video overview and unveil the power of Recurly's Revenue Recognition product. Crafted for enterprising merchants, we're poised to reshape your financial reporting and drive revenue growth. Jump in, and let's magnify your monetary momentum!
 
