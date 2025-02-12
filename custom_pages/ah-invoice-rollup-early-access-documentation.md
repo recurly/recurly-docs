@@ -12,7 +12,7 @@ metadata:
 
 ## Current Milestone: 4
 
- <span style="color:green">READY FOR PREVIEW</span>
+<span style="color:green">READY FOR PREVIEW</span> 
 
 # Available Functionality
 
@@ -20,7 +20,7 @@ metadata:
 
 *New functionality that is core to the feature, with significant changes to existing application functions*
 
-* Ability to use Account Hierarchy in conjunction with [Calendar Billing - Aggregation](https://docs.recurly.com/docs/calendar-billing#section-aggregate-invoices). Charges from Child Accounts will consolidate onto one invoice, billed to a common Parent Account so long as the the Child Accounts bill to the Parent Account and all other [ conditions of Calendar Billing - Aggregation]
+* Ability to use Account Hierarchy in conjunction with [Calendar Billing - Aggregation](https://docs.recurly.com/docs/calendar-billing#section-aggregate-invoices). Charges from Child Accounts will consolidate onto one invoice, billed to a common Parent Account so long as the the Child Accounts bill to the Parent Account and all other \[ conditions of Calendar Billing - Aggregation]
 * Ability to use Account Hierarchy in conjunction with Calendar Billing - Alignment. Charges from Child Accounts will consolidate onto one invoice, billed to a common Parent Account so long as the following conditions are met.([https://docs.recurly.com/docs/calendar-billing#section-eligible-subscriptions](https://docs.recurly.com/docs/calendar-billing#section-eligible-subscriptions)) are met.
 * One-time charges on an Account are included in the consolidated invoice along with any recurring charges if they exist on the Account prior to an invoicing event.
 * Support for refunds of consolidated invoices: full, partial, line item, and prorated
@@ -65,7 +65,7 @@ Additionally, you will need to complete the following:
 
 3. When the invoicing event occurs (ie.  common bill date on the subscriptions is reached), the recurring charges from the subscription(s) on Child Account A will be invoiced together with the recurring charges from the subscription(s) on Child Account B, **and you should be able to observe the following:**
 
-* The PDF representation of the consolidated invoice will display the charges, grouped by the Accounts from which they originated, along with the Account Code, and the Name and Company (if they are populated on the Account). The PDF can be seen as an attachment on invoicing related emails, and accessed through the hosted pages and Invoices detail page in Recurly App. 
+* The PDF representation of the consolidated invoice will display the charges, grouped by the Accounts from which they originated, along with the Account Code, and the Name and Company (if they are populated on the Account). The PDF can be seen as an attachment on invoicing related emails, and accessed through the hosted pages and Invoices detail page in Recurly App.
 
 * View the consolidated invoice and line items using the V3 API.
 
@@ -89,7 +89,7 @@ Time to get creative! It's entirely possible to create various 'billing batches'
 
 ## Upcoming Functionality
 
- <span style="color:orange">IN DEVELOPMENT</span>
+<span style="color:orange">IN DEVELOPMENT</span>
 
 *Doesn’t include any functionality listed in the subsequent releases. While it may be possible to use some of the functionality listed in those releases, there could be unintended side effects*
 
