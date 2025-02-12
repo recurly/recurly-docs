@@ -2,7 +2,7 @@
 title: Jack Henry
 excerpt: Simplify and secure your ACH payments with Jack Henry through Recurly.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
