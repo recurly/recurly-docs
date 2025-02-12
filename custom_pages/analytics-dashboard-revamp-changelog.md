@@ -10,7 +10,7 @@ metadata:
 
 This section covers changes that span all of the analytics dashboards. 
 
-### Feature Enhancements
+### Feature Enhancements 
 
 <Table align={["left","left"]}>
   <thead>
