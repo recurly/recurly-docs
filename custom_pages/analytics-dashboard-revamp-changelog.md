@@ -38,7 +38,7 @@ This section covers changes that span all of the analytics dashboards.
 
     <tr>
       <td style={{ textAlign: "left" }}>
-        <ul> <li>Ability to download dashboard components (e.g. charts, tables) in
+        <ul> <li>Ability to download dashboard components (e.g. charts, tables) in</li> </ul>
       </td>
 
       <td style={{ textAlign: "left" }}>
