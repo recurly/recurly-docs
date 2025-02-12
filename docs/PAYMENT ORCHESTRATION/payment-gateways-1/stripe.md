@@ -32,7 +32,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 # Definition
 
-The integration of Stripe with Recurly facilitates a smooth pathway for managing your financial transactions. Whether you are a new user applying for a Stripe account or already hold one, the process is designed to be straightforward and efficient. It is essential to note that changes in billing information in Recurly accounts do not transfer automatically to Stripe, requiring manual updates for direct Stripe payments. 
+The integration of Stripe with Recurly facilitates a smooth pathway for managing your financial transactions. Whether you are a new user applying for a Stripe account or already hold one, the process is designed to be straightforward and efficient. It is essential to note that changes in billing information in Recurly accounts do not transfer automatically to Stripe, requiring manual updates for direct Stripe payments.
 
 > **Note**: Visit our [guide on testing your gateway configurations ](https://docs.recurly.com/docs/how-to-test-your-gateway)in Recurly to ensure your payment processes are set up correctly-
 
@@ -78,8 +78,8 @@ The integration of Stripe with Recurly facilitates a smooth pathway for managing
       </td>
 
       <td>
-        * \*Native Support\*\*: Credit/Debit Cards, Apple Pay, Google Pay  
-        * \*Stripe Elements Early Access\*\*: Credit/Debit Cards, Apple Pay, Google Pay, Link Pay (Cards), Cash App Pay, Revolut (UK/EU only)
+        * **Native Support**: Credit/Debit Cards, Apple Pay, Google Pay
+        * **Stripe Elements Early Access**: Credit/Debit Cards, Apple Pay, Google Pay, Link Pay (Cards), Cash App Pay, Revolut (UK/EU only)
       </td>
     </tr>
 
@@ -89,8 +89,8 @@ The integration of Stripe with Recurly facilitates a smooth pathway for managing
       </td>
 
       <td>
-        * \*Native Support\*\*: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay  
-        * \*Stripe Elements\*\*: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay, Cartes Bancaires
+        * **Native Support**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay
+        * **Stripe Elements**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay, Cartes Bancaires
       </td>
     </tr>
 
@@ -130,7 +130,7 @@ The integration of Stripe with Recurly facilitates a smooth pathway for managing
       </td>
 
       <td>
-        Must match in both Stripe and Recurly when using Gateway Failover. Stripe supports all currencies. See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>
+        Must match in both Stripe and Recurly when using Gateway Failover. Stripe supports all currencies. See [https://docs.recurly.com/docs/currency-support-by-gateway](https://docs.recurly.com/docs/currency-support-by-gateway) .
       </td>
     </tr>
   </tbody>
@@ -143,6 +143,8 @@ This gateway supports Recurly's authorization and capture feature, facilitating 
 #### **Integration with Stripe**
 
 Stepping into a seamless financial operation is easy with Recurly's Stripe integration. Begin your journey by navigating to the [Recurly Payment Gateway Configuration](https://app.recurly.com/go/configuration/payment_gateways/new) page. Here, you can either log in using your existing Stripe account or initiate the process for a new account.
+
+Stripe onboarding uses OAuth credential authentication. You will not need to copy/paste your credentials using this gateway.
 
 #### **Understanding Stripe customer updates**
 
@@ -204,6 +206,6 @@ Keep a close eye on the performance and conduct regular checks to ensure smooth 
 
 #### **Stripe Dashboard Maintenance**
 
-Keeping an eye on your Stripe transactions in the Stripe Dashboard should be common practice. Stripe can send notices on transactions that Recurly may not receive notice of. Additionally, MetaData that Recurly sends to Stripe will be visible here. 
+Keeping an eye on your Stripe transactions in the Stripe Dashboard should be common practice. Stripe can send notices on transactions that Recurly may not receive notice of. Additionally, MetaData that Recurly sends to Stripe will be visible here.
 
 Ensure that you are not modifying any Recurly meta-data sent to Stripe, as we rely on this detail to ensure the integration functions properly. While Stripe does give merchants access to edit these details, it is important to keep the information intact and unedited.
