@@ -57,7 +57,7 @@ This section covers changes that span all of the analytics dashboards.
 
       <td style={{ textAlign: "left" }}>
         \:-----------------------------------------------------------------------------------------------------------
-      </td>
+      </td> 
     </tr>
 
     <tr>
