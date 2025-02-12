@@ -57,8 +57,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Request Clear Cache & Refresh:<ul>
-
+        Request Clear Cache & Refresh:
+        <ul>
         <li>Any time from Actions Area</li>
         <li>Any time from widget drop<br>
         downs</li>
@@ -90,8 +90,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Specify Date Range:<ul>
-
+        Specify Date Range:
+        <ul>
         <li>Default to the last 12 months</li>
         <li>Sophisticated searches</li>
         <li>Granular filtering</li>
@@ -99,8 +99,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Specify Date Range:<ul>
-
+        Specify Date Range:
+        <ul> 
         <li>Default to the last 18 months</li>
         <li>Simplistic setting &#x26; choices</li>
         </ul>
@@ -129,8 +129,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Dunning Effectiveness dashboard:<ul>
-
+        Dunning Effectiveness dashboard:
+        <ul>
         <li>Select appropriate dunning version from views at the top of the dashboard.</li>
         <li>All Dunning Campaign views show summary of all campaign</li>
         <li>Individual Dunning Campaign views show details from individual campaigns</li>
@@ -149,8 +149,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Ellipses in widgets provide drop down menu options, use:<ul>
-
+        Ellipses in widgets provide drop down menu options, use:
+        <ul>
         <li>Vertical Ellipses to Clear Cache and Refresh Data &#x26; to Download Data</li>
         <li>Horizontal Ellipses to drill into MRR Account Details</li>
         </ul>
@@ -195,8 +195,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Key Performance Indicators (KIPs) show:<ul>
-
+        Key Performance Indicators (KIPs) show:
+         <ul>
         <li>Active Totals</li>
         <li>Last Month</li>
         <li>Previous Month</li>
@@ -206,8 +206,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Key Performance Indicators (KIPs) show:<ul>
-
+        Key Performance Indicators (KIPs) show:
+        <ul>
         <li>Active Totals</li>
         <li>Previous Month</li>
         <li>3 Months Ago</li>
@@ -265,8 +265,8 @@ The rows in the following table briefly identify the new UI features available i
       </td>
 
       <td style={{ textAlign: "left" }}>
-        Sort details in widgets:<ul>
-
+        Sort details in widgets:
+         <ul>
         <li>Show/Hide details on bar, line, and pie charts using the widget’s color-coded legends</li>
         <li>Sort details on tables in ascending or descending order.</li>
         </ul>
