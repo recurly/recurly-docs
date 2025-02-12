@@ -13,7 +13,7 @@ This document includes the following two sections:
 * **Dashboard UI Features At-A-Glance** provides a short description of the changed/new features
 * **Dashboard UI Features in Detail** provides a detailed description and screenshots of the changed/new features
 
-# Dashboard UI Features At-A-Glance
+# Dashboard UI Features At-A-Glance 
 
 The rows in the following table briefly identify the new UI features available in the Modern Looker-enhanced versions of the Recurly Analytics dashboards. This table gives you a quick "look at-a-glance" at the features. These features greatly improve on those offered in the Classic versions and allow you to filter, organize, and access reliable details, pertinent to your business’s performance, faster and more efficiently.  An individual section that covers each of these UI features,  follows this table. Each topic provides details and screenshots that describe how to use each feature.
 
