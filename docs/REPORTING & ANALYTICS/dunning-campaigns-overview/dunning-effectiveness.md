@@ -45,11 +45,23 @@ This section provides a comprehensive view of your invoice recovery performance 
 2. **Invoice recovery rate:** This chart shows the recovery rate of invoices that went past due during the selected date range. It's a valuable tool for gauging the success of your overall recovery efforts.\
    ![](https://files.readme.io/0a8e038-image.png)
 
-For both the Invoice by Recovery Reason and Dunning Life Cycle by Day graphs below, the following are the recovery reasons:\
-**Successful retries:** our static or [intelligent retries](https://docs.recurly.com/docs/retry-logic)\
-**Customer updates:** updates your customers made to their accounts usually prompted by dunning\
-**Manual:** updates you and your team made to your customer accounts\
-**Other:** can include invoices which briefly entered Dunning processing and were saved using our expiration management process
+### Recovery Reasons
+
+In both the **Invoice by Recovery Reason** and **Dunning Life Cycle by Day** graphs, recoveries are grouped into four primary categories:
+
+1. **Successful retries**\
+   Invoices that were collected after one of Recurly’s [static or intelligent retry](https://docs.recurly.com/docs/retry-logic) attempts.
+2. **Customer updates**\
+   Invoices recovered because the customer updated their own payment information (often in response to a dunning email prompt).
+3. **Manual**\
+   Invoices recovered due to direct action by your team—such as manually updating the payment method on file or marking an invoice as paid.
+4. **Other**\
+   Invoices that do not cleanly fit into the above categories. Common examples include:
+
+* **Expiration Management**\
+  When a card’s expiration date is automatically updated, causing the invoice to be recovered without a direct customer or manual update.
+* **Account Updater (post-dunning)**\
+  If an invoice has already entered dunning, any successful collection attempt—whether prompted by Account Updater or otherwise—is reported as a “retry” in analytics. As a result, **post-dunning Account Updater recoveries** may appear in your dashboards under **Other** (or “retry”) rather than under an explicit “account\_updater” label.
 
 1. **Invoice recovery by reason (Recovered Invoices by Recovery Reason):** This detailed breakdown helps you understand the reasons for invoice recovery, providing valuable insights into where your strategies are most effective.\
    ![](https://files.readme.io/baaaf1c-image.png)
