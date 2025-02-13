@@ -38,21 +38,20 @@ The integration of Stripe with Recurly facilitates a smooth pathway for managing
 
 # Key details
 
-| Feature                             | Description     |
-|-------------------------------------|-----------------|
-| Services that work with Recurly     | Payment processing, including Gateway Failover support, Stripe Elements (Payment, Express Checkout, LinkPay) |
-| Supported operations                | Purchase, Auth and Capture, Void, Refund, Recurring Billing   |
-| Supported payment types | 
-**Native Support**: Credit/Debit Cards, Apple Pay, Google Pay 
-**Stripe Elements**: Cards, Apple Pay, Google Pay, Link Pay (Cards), Cash App Pay, Revolut (UK/EU only) |
-| Supported card brands | 
-**Native Support**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay
-**Stripe Elements**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay, Cartes Bancaires |
-| Gateway Specific 3DS2 Supported | Yes |
-| Card on File Supported | Yes |
-| Regions | Global, some APMs are not supported |
-| Currencies | Must match in both Stripe and Recurly when using Gateway Failover |
-
+| Feature                                                                                                           | Description                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Services that work with Recurly                                                                                   | Payment processing, including Gateway Failover support, Stripe Elements (Payment, Express Checkout, LinkPay) |
+| Supported operations                                                                                              | Purchase, Auth and Capture, Void, Refund, Recurring Billing                                                  |
+| Supported payment types                                                                                           |                                                                                                              |
+| **Native Support**: Credit/Debit Cards, Apple Pay, Google Pay                                                     |                                                                                                              |
+| **Stripe Elements**: Cards, Apple Pay, Google Pay, Link Pay (Cards), Cash App Pay, Revolut (UK/EU only)           |                                                                                                              |
+| Supported card brands                                                                                             |                                                                                                              |
+| **Native Support**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay                    |                                                                                                              |
+| **Stripe Elements**: Visa, MasterCard, American, Express, Discover, JCB, Diners Club, Union Pay, Cartes Bancaires |                                                                                                              |
+| Gateway Specific 3DS2 Supported                                                                                   | Yes                                                                                                          |
+| Card on File Supported                                                                                            | Yes                                                                                                          |
+| Regions                                                                                                           | Global, some APMs are not supported                                                                          |
+| Currencies                                                                                                        | Must match in both Stripe and Recurly when using Gateway Failover                                            |
 
 ## Authorization and capture
 
@@ -66,7 +65,9 @@ Stripe onboarding uses OAuth credential authentication. You will not need to cop
 
 #### **Understanding Stripe customer updates**
 
-Any Billing / Account Information updates made in your Recurly account are not automatically updated in your Stripe gateway. To update Billing or Account information, perform a manual check and update in Stripe directly, especially when you opt to execute payments directly through the Stripe platform. Always ensure to locate and select the most recently created Stripe customer for up-to-date transactions.
+Recurly and Stripe work together to streamline subscription billing; however, **changes to billing or account information in Recurly do not currently sync automatically from Stripe.** If you process payments directly in Stripe, please verify and update the corresponding customer record there. For accuracy, remember to use the most recently created Stripe customer record.
+
+> **Looking ahead**: We’re actively working on enhancements that will better sync Recurly and Stripe customer data, reducing the need for manual updates. Stay tuned for updates!
 
 # Integrate Stripe with Recurly
 
