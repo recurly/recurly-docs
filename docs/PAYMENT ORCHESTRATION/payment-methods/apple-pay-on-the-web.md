@@ -31,10 +31,11 @@ To integrate Apple Pay on the Web, ensure you have:
 * An Apple Developer's Account and a verified domain.
 * Recurly.js v4 or <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a>.
 * Recurly currently supports Apple Pay transactions through [Adyen](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe), [Braintree](https://docs.recurly.com/docs/braintree), [Vantiv](https://docs.recurly.com/docs/vantiv), [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), Chase [Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital), and [Cybersource](https://docs.recurly.com/docs/cybersource) as gateways.
+* This payment method allows using [Zero Dollar Authorizations](https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda).
 
 ### Limitations
 
-* Not available on Recurly <a href="https://docs.recurly.com/docs/hosted-payment-pages" target="_blank">Hosted Payment Pages (HPP)</a>. 
+* Not available on Recurly <a href="https://docs.recurly.com/docs/hosted-payment-pages" target="_blank">Hosted Payment Pages (HPP)</a>.
 
 # Description
 
@@ -53,7 +54,7 @@ Once you have completed the prerequisites described above, contact Recurly Suppo
 
 After receiving the necessary CSRs from Recurly Support, proceed with the following steps to generate the appropriate certificates:
 
-1. Navigate to the Apple Developer’s and request a “Apple Pay Certificate”.  
+1. Navigate to the Apple Developer’s and request a “Apple Pay Certificate”.
 2. Choose the correct Merchant ID on the subsequent page.
 3. Upload the CSR file labeled “payment.csr”.
 4. Repeat the above steps, but select “Merchant Identity Certificate” and use the “merchant\_id.csr” file in the second iteration.
@@ -80,7 +81,7 @@ After generating the necessary certificates, upload them to your Recurly site an
 
 ### Braintree Setup
 
-Setting up Recurly's Apple Pay integration with Braintree differs from other gateways and involves coordination between Recurly and Braintree. 
+Setting up Recurly's Apple Pay integration with Braintree differs from other gateways and involves coordination between Recurly and Braintree.
 
 #### 1. Enable Apple Pay on Braintree
 
