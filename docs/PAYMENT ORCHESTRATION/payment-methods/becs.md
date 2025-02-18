@@ -12,7 +12,7 @@ next:
 ---
 ### Prerequisites & supported gateways
 
-Recurly currently supports BECS transactions through [Adyen](https://docs.recurly.com/docs/adyen) and [GoCardless](https://docs.recurly.com/docs/gocardless) gateways.
+Recurly currently supports BECS transactions [GoCardless](https://docs.recurly.com/docs/gocardless) gateway.
 
 # Description
 
