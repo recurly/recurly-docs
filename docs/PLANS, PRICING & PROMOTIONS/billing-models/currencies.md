@@ -17,7 +17,7 @@ next:
 
 ### Required plan
 
-This feature is only available to customers on any Recurly subscription plan. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Prerequisites
 
