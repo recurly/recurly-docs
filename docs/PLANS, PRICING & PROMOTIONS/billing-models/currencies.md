@@ -17,7 +17,7 @@ next:
 
 ### Required plan
 
-This feature is only available to customers on the Professional and/or Elite subscription plan. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature is only available to customers on any Recurly subscription plan. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
 ### Prerequisites
 
@@ -48,7 +48,7 @@ The ability to accept payments in a customer's local currency can significantly 
 
 ### Checkout
 
-For Checkout's hosted page, when multiple currencies are accepted, you have a couple options. To learn more about currencies on Checkout, refer to [Currencies on Checkout](https://docs.recurly.com/docs/checkout#currencies). 
+For Checkout's hosted page, when multiple currencies are accepted, you have a couple options. To learn more about currencies on Checkout, refer to [Currencies on Checkout](https://docs.recurly.com/docs/checkout#currencies).
 
 ### Hosted Payment Pages
 
