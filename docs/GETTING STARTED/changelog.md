@@ -28,6 +28,8 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 2/18/2025: **V3 Libraries** -- updated to support new `payment_gateway_references` parameters.
 * 2/18/2025: **Vantiv Gateway** -- added support for response code 378 on the gateway.
+* 2/4/2025: **Check Commerce gateway** -- updated endpoint for sandbox Check Commerce to support new gateway development endpoint.
+* 2/4/2025: **Vantiv Gateway** -- Updated handling of response codes 229 and 992 on the gateway.
 
 ## January
 
