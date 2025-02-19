@@ -27,9 +27,9 @@ The "analytics settings" page is designed to empower you with control over vario
 
 ## Time zone
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/68f8f91-image.png" />
+Recurly records all transactions in UTC as the underlying billing timezone. The analytics system then aligns its displayed calculations with the time zone specified in your site settings. This approach ensures that while billing events are consistently tracked in UTC, your analytics, reports, and metrics are presented in the local time most relevant to your business operations.
 
-The analytics system aligns its calculations with the time zone specified within your site's settings. This ensures that all analytics data, including reports and metrics, are synchronized with your local business operations, providing accurate and timely insights.
+<Image align="center" className="border" border={true} src="https://files.readme.io/68f8f91-image.png" />
 
 ## MRR calculations
 
@@ -65,7 +65,7 @@ Select the industry category that most accurately represents your business to en
 
 ## Back-to-back subscriptions
 
-Use this setting to automatically apply the desired configuration to the Hourly Activations and Churn dashboard. 
+Use this setting to automatically apply the desired configuration to the Hourly Activations and Churn dashboard.
 
 By using this configuration, if a subscriber started a new subscription after their previous subscription expired, this can be counted as one continuous subscription. This helps ensure that activations and churn are counted appropriately for your business.
 
