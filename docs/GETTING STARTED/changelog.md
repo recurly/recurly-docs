@@ -26,14 +26,14 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## February
 
-* 2/18/2025: **V3 Libraries** -- updated to support new `payment_gateway_references` parameters.
-* 2/18/2025: **Vantiv Gateway** -- added support for response code 378 on the gateway.
-* 2/4/2025: **Check Commerce gateway** -- updated endpoint for sandbox Check Commerce to support new gateway development endpoint.
-* 2/4/2025: **Vantiv Gateway** -- Updated handling of response codes 229 and 992 on the gateway.
+* 2/18/2025: **V3 Libraries** - updated to support new `payment_gateway_references` parameters.
+* 2/18/2025: **Vantiv Gateway** - added support for response code 378 on the gateway.
+* 2/4/2025: **Check Commerce gateway** - updated endpoint for sandbox Check Commerce to support new gateway development endpoint.
+* 2/4/2025: **Vantiv Gateway** - Updated handling of response codes 229 and 992 on the gateway.
 
 ## January
 
-* 1/28/2025: **Cybersource gateway** -- Enable adding the P12 certificate to gateway configuration. This will be required for all Cybersource merchants before Feb 13th, 2025. Check app notifications for details, or visit our instructions on the [Cybersource documentation](https://docs.recurly.com/docs/cybersource#configuring-cybersource-gateway-in-recurly).
+* 1/28/2025: **Cybersource gateway** - Enable adding the P12 certificate to gateway configuration. This will be required for all Cybersource merchants before Feb 13th, 2025. Check app notifications for details, or visit our instructions on the [Cybersource documentation](https://docs.recurly.com/docs/cybersource#configuring-cybersource-gateway-in-recurly).
 * 1/21/2025:**Adyen gateway**-- Enabled SEPA retry capabilities when using Adyen gateway tokens. Read more about [SEPA retries](https://docs.recurly.com/docs/sepa-retries) on our dedicated documentation page.
 * 1/21/2025:  **Webhooks**- Expanded the webhooks auto-pause functionality to production merchant sites for webhook endpoints that have not responded with a 2xx status code for multiple consecutive days.
 * 1/21/2025: **Webhooks**- Added the notification ID to the webhook headers of JSON formatted webhooks.
