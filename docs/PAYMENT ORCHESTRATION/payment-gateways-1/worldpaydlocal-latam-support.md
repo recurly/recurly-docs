@@ -99,7 +99,7 @@ For a global reach, WorldPay allows merchants to configure their accounts for in
       </td>
 
       <td>
-        Visa, MasterCard, Discover, JCB, Diner's Club, American Express for most currencies. Tarjeta Naranja supported on ARS currency only.
+        Visa, MasterCard, Discover, UnionPay, JCB, Diner's Club, American Express for most currencies. Tarjeta Naranja supported on ARS currency only.
       </td>
     </tr>
 
@@ -139,7 +139,7 @@ For a global reach, WorldPay allows merchants to configure their accounts for in
       </td>
 
       <td>
-        * \*ARS\*\* (Visa, MC, Amex, Discover, JCB, Diner's Club, *Tarjeta Naranja*)  
+        * \*ARS\*\* (Visa, MC, Amex, Discover, JCB, Diner's Club, *Tarjeta Naranja*)
         * \*Else\*\*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
       </td>
     </tr>
@@ -180,7 +180,7 @@ Find additional guidance in the [technical documentation](https://developers.rec
 3. If you are utilizing 3D Secure, input your Issuer ID, Unit ID, HMAC Key, and Challenge URL.
 4. Specify the currencies and card types you plan to accept.
 5. Optional: Designate which card types should undergo Zero Dollar Authorizations.
-6. If you are using Worldpay in a Back Office “[MOTO](https://docs.recurly.com/docs/moto-transactions)” environment, check the Enable MOTO Transactions checkbox. 
+6. If you are using Worldpay in a Back Office “[MOTO](https://docs.recurly.com/docs/moto-transactions)” environment, check the Enable MOTO Transactions checkbox.
 7. Finalize your setup by clicking "Add Payment Gateway".
 8. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
 
@@ -189,7 +189,7 @@ Find additional guidance in the [technical documentation](https://developers.rec
 Leveraging the WorldPay LATAM gateway for your business involves a streamlined process. Follow the detailed steps below to enable this gateway seamlessly:
 
 1. **Enable ARS currency on your Recurly site**
-   * Log in to your Recurly account. 
+   * Log in to your Recurly account.
    * Navigate to the currency settings and enable Argentine Peso (ARS) as a supported currency.
 2. **Configure WorldPay as your payment Gateway**
    * Still in your Recurly dashboard, go to payment gateways.
