@@ -20,7 +20,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 Please be aware of the following limitations of PayPal Complete:
 
-* PayPal Complete does not support Hosted Payment Pages (HPP) for PayPal specifically. Credit Cards are fully supported. PayPal is supported on Checkout. 
+* PayPal Complete does not support Hosted Payment Pages (HPP) for PayPal specifically. Credit Cards are fully supported. PayPal is supported on Checkout.
 * Subscriptions initiated on PayPal Complete cannot migrate to PayPal Business due to the PPC’s vaulting features differing from the PP Business’s Billing Agreement IDs.
 * Existing Billing Agreement IDs will still function if migrating subscriptions from PayPal Business Account to a PayPal Complete gateway.
 * PayPal Complete is only supported in certain regions.
@@ -38,7 +38,7 @@ PayPal Complete is the latest and greatest payment gateway solution by PayPal th
 | Supported Recurly services      | PayPal Complete                                                                               |
 | Supported operations            | Payment, Refund                                                                               |
 | Supported payment types         | Credit and Debit Cards, PayPal                                                                |
-| Supported card brands           | Visa, Mastercard, American Express, Discover, JCB\*, Diner Club                               |
+| Supported card brands           | Visa, Mastercard, American Express, Discover, JCB, UnionPay, Diner Club                       |
 | Gateway specific 3DS2 supported | N/A                                                                                           |
 | Card on File Supported          | N/A                                                                                           |
 | Regions                         | United States, Australia, Canada, United Kingdom                                              |
@@ -46,7 +46,7 @@ PayPal Complete is the latest and greatest payment gateway solution by PayPal th
 
 ## Required PayPal Setup
 
-Before processing using your PayPal Complete gateway, you must contact your PayPal Account Executive or CSM and enable the Referenced Transactions flag. All accounts must have this feature enabled prior to processor, or errors will be encountered. If there is no CSM/sales contact assigned to your account, please call customer service at 1-888-221-1161. 
+Before processing using your PayPal Complete gateway, you must contact your PayPal Account Executive or CSM and enable the Referenced Transactions flag. All accounts must have this feature enabled prior to processor, or errors will be encountered. If there is no CSM/sales contact assigned to your account, please call customer service at 1-888-221-1161.
 
 ## Differences between eCheck and other PayPal transactions
 
@@ -59,7 +59,7 @@ Before processing using your PayPal Complete gateway, you must contact your PayP
 * **Processing Status**:
   * Upon receiving and initiating a transaction request from Recurly, PayPal communicates a "pending" status back to Recurly. This status, visible in the Recurly App, exports, and API, simultaneously updates both the transaction and the related invoice to "processing."
   * Concurrently, Recurly dispatches a "processing payment" webhook to any designated endpoints and, if enabled, sends a "payment processing" email to the customer.
-* **Status Updates**: 
+* **Status Updates**:
   * As PayPal updates transaction statuses—like successful payment reception—it informs Recurly. Depending on the update, Recurly then adjusts the transaction and invoice statuses, marking them as "successful" and "paid" respectively.
   * Simultaneously, Recurly sends out relevant webhooks, like a successful payment or an overdue invoice, and if activated, emails the customer with either a payment confirmation or a decline notice.
 
@@ -69,15 +69,15 @@ Due to the asynchronous nature of PayPal eChecks, Recurly treats related "past d
 
 Here's a sample scenario of status updates:
 
-| Event                                                                                                                                    | PayPal Transaction Status | Recurly Transaction Status | Recurly Invoice Status |
-| :--------------------------------------------------------------------------------------------------------------------------------------- | :------------------------ | :------------------------- | :--------------------- |
-| 1\. Payment request by Recurly, acknowledged and processed by PayPal.                                                                    | Pending                   | Processing                 | Processing             |
-| 2\. Days later, PayPal indicates payment failure, Recurly starts dunning.                                                                | Failed                    | Declined                   | Past Due               |
-| 3\. Recurly's dunning schedule triggers a dunning email after some days.                                                                 | No change                 | No change                  | No change              |
-| 4\. Retry #1: Following Recurly's retry logic, a new payment attempt with PayPal is made after several days.                             | Pending                   | Processing                 | Processing             |
-| 5\. Days later, PayPal flags the payment as declined. Recurly notes the invoice's **dunning period is ongoing**.                         | Failed                    | Declined                   | Past Due               |
-| 6\. Retry #2: Recurly tries another payment with PayPal after a few more days.                                                           | Pending                   | Processing                 | Processing             |
-| 7\. After several days, PayPal reports payment failure. Recurly updates the status after verifying the **dunning period has concluded**. | Failed                    | Declined                   | Failed                 |
+| Event                                                                                                                                   | PayPal Transaction Status | Recurly Transaction Status | Recurly Invoice Status |
+| :-------------------------------------------------------------------------------------------------------------------------------------- | :------------------------ | :------------------------- | :--------------------- |
+| 1. Payment request by Recurly, acknowledged and processed by PayPal.                                                                    | Pending                   | Processing                 | Processing             |
+| 2. Days later, PayPal indicates payment failure, Recurly starts dunning.                                                                | Failed                    | Declined                   | Past Due               |
+| 3. Recurly's dunning schedule triggers a dunning email after some days.                                                                 | No change                 | No change                  | No change              |
+| 4. Retry #1: Following Recurly's retry logic, a new payment attempt with PayPal is made after several days.                             | Pending                   | Processing                 | Processing             |
+| 5. Days later, PayPal flags the payment as declined. Recurly notes the invoice's **dunning period is ongoing**.                         | Failed                    | Declined                   | Past Due               |
+| 6. Retry #2: Recurly tries another payment with PayPal after a few more days.                                                           | Pending                   | Processing                 | Processing             |
+| 7. After several days, PayPal reports payment failure. Recurly updates the status after verifying the **dunning period has concluded**. | Failed                    | Declined                   | Failed                 |
 
 # Integrating PayPal complete with Recurly
 
@@ -104,7 +104,7 @@ Ensure that the 'reference transaction flag' is active on your PayPal account.
 
 ## **Status alerts**
 
-* Be attentive to various status messages such as email confirmation requirements, application reviews, and any account restrictions. 
+* Be attentive to various status messages such as email confirmation requirements, application reviews, and any account restrictions.
 * If you encounter multiple alerts, address each one as the application progresses.
 * Existing PayPal Business account holders that support credit and debit cards might bypass these alerts.
 
@@ -136,18 +136,18 @@ PayPal transactions financed or refunded via a bank account, or eChecks, are cru
 To ensure that the transaction status from PayPal syncs accurately with Recurly, follow the steps below. Detailed guidelines can also be found on [PayPal's developer page](https://developer.paypal.com/docs/classic/ipn/integration-guide/IPNSetup/):
 
 1. **Accessing your PayPal merchant account**:
-   * Navigate to [www.paypal.com](https://www.paypal.com) and sign in to your merchant account.   
+   * Navigate to [www.paypal.com](https://www.paypal.com) and sign in to your merchant account.
 2. **Navigating to the profile settings**:
-   * Click on the profile icon, located on the top right corner of the page. From the dropdown Business Profile menu, choose **Profile and Settings**. 
+   * Click on the profile icon, located on the top right corner of the page. From the dropdown Business Profile menu, choose **Profile and Settings**.
    * If you can't locate the profile icon, follow this path: **My Account** → **Profile** → **My Selling Tools**.
 3. **Updating instant payment notifications (IPN)**:
 
-   * Within the **My Selling Tools** section, locate the **Instant payment notifications** row under the **Getting paid and managing my risk** category. Click on the **Update** link adjacent to it.   
+   * Within the **My Selling Tools** section, locate the **Instant payment notifications** row under the **Getting paid and managing my risk** category. Click on the **Update** link adjacent to it.
 4. **Configuring IPN settings**:
    * Opt for **Choose IPN Settings**. This lets you set your listener's URL and activate it.
-   * Insert the following URL: `https://callbacks.recurly.com/paypal/_recurly_subdomain_here_`. For instance, if your subdomain is "kalekrate", the URL would be [https://callbacks.recurly.com/paypal/kalekrate](https://callbacks.recurly.com/paypal/kalekrate).   
+   * Insert the following URL: `https://callbacks.recurly.com/paypal/_recurly_subdomain_here_`. For instance, if your subdomain is "kalekrate", the URL would be [https://callbacks.recurly.com/paypal/kalekrate](https://callbacks.recurly.com/paypal/kalekrate).
 5. **Enabling IPN messages**:
-   * Select the **Receive IPN messages (Enabled)** option to activate your listener.   
+   * Select the **Receive IPN messages (Enabled)** option to activate your listener.
 6. **Saving and exiting**:
    * Click on the **Save** button to preserve the changes.
    * To return to the main profile, select **Back to Profile Summary**.
