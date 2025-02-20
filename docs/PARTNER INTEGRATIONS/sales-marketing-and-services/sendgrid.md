@@ -36,15 +36,13 @@ Recurly’s SendGrid integration lets you manage customer emails through SendGri
 * **Detailed Analytics**: Visibility into email performance, including bounce rates and open rates.
 
 \<Cards columns=\{1}>
-&#x20; \<Card title="Important Setup Detail" icon="fa-cog">
-\*\*Make sure the “From” email address in your Recurly site settings matches the authorized email address in your SendGrid account.\*\* If they differ, your emails might fail to send or be flagged as suspicious.
 
-After configuring your Recurly settings to use SendGrid, you can monitor your email performance within SendGrid’s dashboard for insights into delivery rates, bounces, and other key metrics.  \</Card>
-\</Cards>
-
-Important Setup Detail
-
-<br />
+<Cards columns={1}>
+  <Card title="Important Setup Detail" icon="fa-exclamation-triangle">
+    Make sure the “From” email address in your Recurly site settings matches the authorized email address in your SendGrid account.
+    If they differ, your emails might fail to send or be flagged as suspicious.
+  </Card>
+</Cards>
 
 # SendGrid implementation guide
 
