@@ -16,6 +16,10 @@ next:
 
 The Accounts section in Recurly provides a centralized hub to manage all subscriber-related details, from hierarchical structures to billing and shipping addresses. This essential feature ensures organized, streamlined operations and subscriber management for businesses using Recurly.
 
+### Dates and Times
+
+Recurly records all transactions in **UTC** as the underlying billing timezone. Any dates or times shown on Accounts are automatically converted from UTC to the local time specified in your site settings.
+
 # Key benefits
 
 * **Centralized subscriber management:** One-stop location for all subscriber-related data and actions.
