@@ -35,8 +35,6 @@ Recurly’s SendGrid integration lets you manage customer emails through SendGri
 * **Improved Deliverability**: Reduced chances of emails going to spam.
 * **Detailed Analytics**: Visibility into email performance, including bounce rates and open rates.
 
-\<Cards columns=\{1}>
-
 <Cards columns={1}>
   <Card title="Important Setup Detail" icon="fa-exclamation-triangle">
     Make sure the “From” email address in your Recurly site settings matches the authorized email address in your SendGrid account.
