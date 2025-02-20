@@ -14,21 +14,37 @@ next:
 ---
 # Overview
 
+Recurly’s SendGrid integration allows you to seamlessly connect your merchant account to SendGrid using your own service and API key. This setup streamlines your email communications by leveraging SendGrid’s SMTP server relays, improving deliverability, and offering detailed analytics to ensure messages reach your subscribers effectively.
+
 ### Required Plan
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Additional Cost
 
-Although Recurly doesn’t charge extra for this integration, there are associated costs from SendGrid which are determined by their pricing and policies.
+Recurly does not charge extra for this integration. However, SendGrid fees apply based on their pricing and policies.
 
 ### Managed Integration
 
-For those who prefer not to use this self-service integration detailed below and are on the Elite plan, Recurly offers a Professional Services integration. There are additional costs associated with this service. For more information on this, reach out to Recurly account manager or [support@recurly.com]() for more details.
+For merchants on the Elite plan who prefer not to use the self-service approach below, Recurly offers a Professional Services integration for an additional cost. Please contact your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
-# Definition
+## Definition
 
-Recurly's SendGrid integration is a feature that allows users to connect their merchant account to SendGrid using their own service and API key. This integration facilitates the management of customer communications by utilizing SendGrid’s SMTP server relays. It provides improved email deliverability and access to detailed analytics, ensuring that emails are delivered efficiently and reach the intended recipients accurately.
+Recurly’s SendGrid integration lets you manage customer emails through SendGrid’s SMTP server relays. By sending emails via SendGrid, you benefit from:
+
+* **Improved Deliverability**: Reduced chances of emails going to spam.
+* **Detailed Analytics**: Visibility into email performance, including bounce rates and open rates.
+
+\<Cards columns=\{1}>
+&#x20; \<Card title="Important Setup Detail" icon="fa-cog">
+\*\*Make sure the “From” email address in your Recurly site settings matches the authorized email address in your SendGrid account.\*\* If they differ, your emails might fail to send or be flagged as suspicious.
+
+After configuring your Recurly settings to use SendGrid, you can monitor your email performance within SendGrid’s dashboard for insights into delivery rates, bounces, and other key metrics.  \</Card>
+\</Cards>
+
+Important Setup Detail
+
+<br />
 
 # SendGrid implementation guide
 
