@@ -19,7 +19,7 @@ In Recurly, invoices serve as a comprehensive record of transactions between the
 
 ### Dates and Times
 
-Recurly records all transactions in **UTC** as the underlying billing timezone. Any dates or times shown on invoices are automatically converted from UTC to the local time specified in your site settings.
+Recurly records all transactions in **UTC** as the underlying billing timezone. Any dates or times shown on invoices or emails are automatically converted from UTC to the local time specified in your site settings.
 
 # Key benefits
 
