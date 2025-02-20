@@ -17,6 +17,10 @@ next:
 
 In Recurly, invoices serve as a comprehensive record of transactions between the merchant and the customer. They detail the products or services exchanged, their prices, and other vital financial information. Acting as both a request for payment and proof of purchase, invoices are crucial for maintaining transparency and accountability in business dealings.
 
+### Dates and Times
+
+Recurly records all transactions in **UTC** as the underlying billing timezone. Any dates or times shown on invoices are automatically converted from UTC to the local time specified in your site settings.
+
 # Key benefits
 
 * **Enhanced transparency:** Detailed breakdowns provide both merchants and subscribers clarity on financial exchanges.
