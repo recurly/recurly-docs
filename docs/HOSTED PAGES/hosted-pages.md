@@ -18,6 +18,10 @@ next:
 
 Recurly's Hosted Pages offer a set of out-of-the-box solutions, designed for quick deployment with minimal development intervention. With tools like [Checkout ](https://docs.recurly.com/docs/checkout)(**new**), Hosted Payment Pages and Hosted Account Management, businesses can provide their customers with seamless subscription sign-up experiences, purchase capabilities, and account management portals.
 
+### Dates and Times
+
+Recurly records all transactions in **UTC** as the underlying billing timezone. Any dates or times shown on Hosted Pages are automatically converted from UTC to the local time specified in your site settings.
+
 # Key benefits
 
 * **Rapid deployment:** Kickstart subscription processes without waiting for development resources.
