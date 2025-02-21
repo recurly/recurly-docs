@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
-This feature is only available to customers on the Elite subscription plan. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature is only available to customers on the Elite subscription plan and customers MUST have the Credit Memos feature enabled. To request to upgrade to this plan or enable the Credit Memos feature, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ This section explains how the Vindicia integration functions within Recurly, det
 
 2. **Configuring Vindicia's collection duration**: Next, in Vindicia, specify the period for which Vindicia should attempt to collect on an overdue invoice. For instance, setting it to 15 days means Vindicia will spend this duration trying to secure payment.
 
-3. **Integration and retry schedules**: The integration works by first allowing Recurly to handle the invoice for the initial part of the set period, minus the duration allocated to Vindicia. For example, if Recurly is set for 45 days and Vindicia for 15, Recurly will handle the invoice for the first 30 days (45-15). During this time, Recurly will send reminders and attempt to collect payment. 
+3. **Integration and retry schedules**: The integration works by first allowing Recurly to handle the invoice for the initial part of the set period, minus the duration allocated to Vindicia. For example, if Recurly is set for 45 days and Vindicia for 15, Recurly will handle the invoice for the first 30 days (45-15). During this time, Recurly will send reminders and attempt to collect payment.
 
 4. **Transition to Vindicia**: If Recurly cannot collect payment within its assigned period (e.g., 30 days in our example), the invoice will then be handed over to Vindicia. Vindicia will then use its set period (e.g., 15 days) to try and collect the payment.
 
@@ -67,11 +67,11 @@ This section explains how the Vindicia integration functions within Recurly, det
 
 ### Step 1: Sign a contract with Vindicia
 
-Ensure you have an active contract and account with both **Recurly** and **Vindicia Retain**.  Vindicia will onboard and certify you as part of their go live process. 
+Ensure you have an active contract and account with both **Recurly** and **Vindicia Retain**.  Vindicia will onboard and certify you as part of their go live process.
 
 ### Step 2: Determine Recurly and Vindicia dunning window lengths
 
-Work with Recurly and Vindicia to determine how many days you would like past due invoices go through Recurly’s retry cycle and how many days you would like past due invoices go through Vindicia’s retry cycle.  For example, you may want a past due invoice to go through a 30 day retry cycle in Recurly and then a 15 day retry cycle in Vindicia Retain. Note, Recurly will trigger webhooks and emails for the total length of the combined Recurly/Vindicia dunning/retry cycle. 
+Work with Recurly and Vindicia to determine how many days you would like past due invoices go through Recurly’s retry cycle and how many days you would like past due invoices go through Vindicia’s retry cycle.  For example, you may want a past due invoice to go through a 30 day retry cycle in Recurly and then a 15 day retry cycle in Vindicia Retain. Note, Recurly will trigger webhooks and emails for the total length of the combined Recurly/Vindicia dunning/retry cycle.
 
 ### Step 3: Work with Recurly to turn on the integration
 
@@ -92,7 +92,7 @@ You can see the efficacy of Recurly and Vindicia Retain in Recurly’s Renewal I
 # FAQ
 
 **Q:** Do you send in flight past due invoices to Vindicia Retain?\
-**A:** No, we only send net new past due invoices and those invoices will go through Recurly’s entire retry cycle before they are sent to Vindicia Retain's retry cycle.  So if for example you set your Recurly dunning cycle to 45 days and want Vindicia to retry for 15 days, a net new past due invoice will go through Recurly's retry cycle for 30 days and then Vindicia's retry cycle for 15 days.  Note in this example the total dunning cycle is 45 days so Recurly will continue to send emails and webhooks throughout the entire 45 dunning window irregardless of whether the invoice is in Recurly's or Vindicia's retry window. 
+**A:** No, we only send net new past due invoices and those invoices will go through Recurly’s entire retry cycle before they are sent to Vindicia Retain's retry cycle.  So if for example you set your Recurly dunning cycle to 45 days and want Vindicia to retry for 15 days, a net new past due invoice will go through Recurly's retry cycle for 30 days and then Vindicia's retry cycle for 15 days.  Note in this example the total dunning cycle is 45 days so Recurly will continue to send emails and webhooks throughout the entire 45 dunning window irregardless of whether the invoice is in Recurly's or Vindicia's retry window.
 
 **Q:** Can I use different gateways in Recurly and Vindicia Retain to attempt collections on invoices?\
 **A:** No. Past due invoices that are sent to gateway A for collection in Recurly can only be sent to gateway A for collection in Vindicia Retain
