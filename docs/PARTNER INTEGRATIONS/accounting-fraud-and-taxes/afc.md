@@ -63,11 +63,11 @@ If your business offers a communications product and utilizes Recurly for subscr
 
 The integration between Recurly and Avalara for Communications (AFC) is made possible through both Recurly's and Avalara's publicly available APIs. This allows for the application of sales tax, communications taxes, and communications surcharges as invoices are generated in Recurly. Each product setup or purchase initiated via Recurly necessitates a transaction and service type, which are linked to the tax surcharge rates enabled for your jurisdictions in AFC. The customer's address registered in Recurly assists AFC in determining the applicable amounts for each invoice.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/0f85c5e-AFC_-_Invoice.jpg" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/0f85c5e-AFC_-_Invoice.jpg" />
 
 ## Invoice appearance
 
-The appearance of your invoices greatly depends on the jurisdiction involved. For most jurisdictions, a simple sales and use tax will be applied. However, for complex jurisdictions and services involving multiple taxes and surcharges, these will be displayed on the invoice in a detailed format. This way, both you and the merchant can understand what is being billed. Many jurisdictions allow you as a communications provider to pass the tax and surcharge amounts on to your customers. 
+The appearance of your invoices greatly depends on the jurisdiction involved. For most jurisdictions, a simple sales and use tax will be applied. However, for complex jurisdictions and services involving multiple taxes and surcharges, these will be displayed on the invoice in a detailed format. This way, both you and the merchant can understand what is being billed. Many jurisdictions allow you as a communications provider to pass the tax and surcharge amounts on to your customers.
 
 # Integration setup
 
@@ -88,7 +88,7 @@ You can calculate taxes based on either the Billing address or Account address. 
 
 To change your tax address to the Account address, navigate to Configuration > Taxes > Tax Settings and enable "Use Account Information Address for all Invoices". Once this option is enabled, all invoices will use the Account Information address as the customer's address. If an Account address doesn't exist for a customer, the Billing address will be used as the default.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/11ad40c-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/11ad40c-image.png" />
 
 ## Required address fields
 
@@ -111,7 +111,7 @@ Renewals won't be blocked if an invalid address error occurs, but the invoice pr
 
 You can disable Avalara address validation in your Tax Settings under Configuration > Taxes > Tax Settings. Deselect the checkbox next to "Use Avalara's address validation" and save your settings. Disabling address validation allows purchases with invalid addresses to proceed in Recurly, but Avalara will reject the invoice, and it won't be considered for tax calculation.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/7dff8ef-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/7dff8ef-image.png" />
 
 # Alter one-time charge flows
 
@@ -162,7 +162,7 @@ Consult with your Avalara representative to figure out the appropriate T/S pairs
 # Invalid Avalara credentials
 
 Recurly validates your Avalara credentials whenever they are added or edited to prevent you from saving invalid credentials. Your Avalara credentials will become invalid in Recurly if your AFC account becomes "Inactive" - meaning your sandbox or production Avalara account has expired, or if Avalara experiences authentication service issues.\
-When your credentials are determined to be invalid, Recurly will notify your Technical Contact via email. If no Technical Contact is specified, the email will go to your Billing Contact. If you haven't specified a Billing Contact, the email will be sent to the first user on the account with Admin user rights. This email will only be sent once, at the time the credentials become invalid.\
+When your credentials are determined to be invalid, Recurly will notify your Technical Contact via email. If no Technical Contact is specified, the email will go to your Billing Contact. If you haven't specified a Billing Contact, the email will be sent to the first user on the account with Admin user rights. This email will only be sent once, at the time the credentials become invalid.
 If your Avalara site is in sandbox mode (i.e., you are testing Avalara), Recurly will disregard your credentials and cease sending requests to Avalara when an invoice is created. This means that each invoice will not include tax until your credentials are fixed.
 
 # Handling Avalara downtime
@@ -175,7 +175,7 @@ To check Avalara's status, visit [http://status.avalara.com/](http://status.aval
 For **new sign-ups and purchases**, if Recurly cannot get a response from Avalara or if the internal Recurly tax service is unresponsive, the signup or purchase will be blocked (meaning neither a subscription nor an invoice will be created). This is to ensure that no invoice for a customer in a taxable location is created without a tax consideration.\
 If you prefer to allow new sign-ups and purchases to go through when tax cannot be calculated, you can change the default behavior for your site. Go to Configuration > Taxes > Tax Settings > Tax Service Settings and disable "Require tax response from tax service".
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/3d846cb-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/3d846cb-image.png" />
 
 ### Future subscriptions and renewals
 
@@ -229,7 +229,7 @@ To calculate taxes, Recurly needs to send Avalara line items for which you confi
 3. **Setup Fee T/S Pairs:** If you have a setup fee, it will use the same T/S pair as the plan fee.
 4. **Configure Add-on T/S Pairs:** Each add-on can have its own T/S pairs.
 5. **Save your plan:** Any customer in one of your tax jurisdictions that purchases this plan will now be taxed.
-6. Learn more about transaction type and service type pairs from AFC <a href="https://developer.avalara.com/avatax/taxtype-service-pairs-explained/" target="_blank">here</a>.
+6. Learn more about transaction type and service type pairs from [AFC](https://knowledge.avalara.com/bundle/qvv1656594440497/page/Transactions_and_Service_Types.html)
 
 # FAQs
 
