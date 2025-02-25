@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
-This feature is only available to customers on the Elite subscription plan and customers MUST have the Credit Memos feature enabled. To request to upgrade to this plan or enable the Credit Memos feature, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature is only available to customers on the Elite subscription plan and customers MUST have the "Credit Memos" and "OBWC" features enabled. To request to upgrade to this plan or enable the Credit Memos feature, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
 ### Prerequisites
 
@@ -32,6 +32,8 @@ This feature is only available to customers on the Elite subscription plan and c
 * Once enabled, integration only works on net new past due invoices (not past due invoices that are currently in dunning).
 
 * This functionality is not available to test in sandbox, and there is no ability to A/B test.
+
+* MUST have the "Credit Memos" and "OBWC" features enabled.
 
 # Definition
 
