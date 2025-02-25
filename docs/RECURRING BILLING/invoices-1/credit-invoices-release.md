@@ -1,5 +1,5 @@
 ---
-title: Credit Invoices before 2018
+title: Credit Invoices for Recurly sites created before 2018
 excerpt: >-
   Elevate your billing experience with Recurly's Credit Invoice feature.
   Streamline your credit adjustments, ensure clarity in financial records, and
