@@ -133,12 +133,9 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Navigate to **Developers > Additional Data** in Adyen to enable this feature. Once activated, Adyen will generate a unique transaction ID for direct integrations; however, this ID will **not** be visible in Recurly.
 
-1. **Add the Adyen gateway**\
-   Go to **Configuration → Payment Gateways → Add New Gateway** in your Recurly Admin.
-2. **Enter your Adyen credentials**\
-   Provide the **username**, **password**, and **merchant account** details from your Adyen configuration.
-3. **Set the custom endpoint** (recommended)\
-   Only include the specific portion of the endpoint provided by Adyen, rather than the entire URL. While testing, you can use any placeholder, but update it for production.
+1. **Add the Adyen gateway**: Go to **Configuration → Payment Gateways → Add New Gateway** in your Recurly Admin.
+2. **Enter your Adyen credentials**: Provide the **username**, **password**, and **merchant account** details from your Adyen configuration.
+3. **Set the custom endpoint** (recommended): Only include the specific portion of the endpoint provided by Adyen, rather than the entire URL. While testing, you can use any placeholder, but update it for production.
 4. **Select "Zero Dollar Authorization"** for all card types.
 5. **Save** your configurations.
 
