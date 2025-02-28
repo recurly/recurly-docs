@@ -1,6 +1,8 @@
 ---
 title: Adyen
-excerpt: ''
+excerpt: >-
+  Harness the power of Adyen's global payment solutions, seamlessly integrated
+  with Recurly, to elevate your business's payment experience.
 deprecated: false
 hidden: false
 metadata:
