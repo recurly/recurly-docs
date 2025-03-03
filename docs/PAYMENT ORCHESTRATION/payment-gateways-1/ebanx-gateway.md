@@ -63,7 +63,7 @@ Ebanx is a full-service payment management platform focused on upcoming markets 
 
 ### Step 3: Set your payment methods
 
-* Under the ‘ACCEPTED CARD TYPES’ header, you will not see any card options as this gateway supports UPI - AutoPay only at the moment. 
+* Under the ‘ACCEPTED CARD TYPES’ header, you will not see any card options as this gateway supports UPI - AutoPay only at the moment.
 * Enable 'UPI - AutoPay' under Alternative Payment Methods.
 
 ### Step 4: Enable currencies
@@ -90,7 +90,7 @@ Ebanx is a full-service payment management platform focused on upcoming markets 
 
 # UPI - AutoPay on Ebanx Best Practices
 
-UPI, or Unified Payments Interface, is a real-time payment system in India that allows users to transfer money between bank accounts, businesses, and individuals. UPI is a mobile-based system that combines multiple bank accounts into a single app, allowing users to make payments using a variety of methods including a VPA or Virtual Payment Address. A VPA is a digital ID that takes the place of banking details. 
+UPI, or Unified Payments Interface, is a real-time payment system in India that allows users to transfer money between bank accounts, businesses, and individuals. UPI is a mobile-based system that combines multiple bank accounts into a single app, allowing users to make payments using a variety of methods including a VPA or Virtual Payment Address. A VPA is a digital ID that takes the place of banking details.
 
 ### What is a VPA?
 
@@ -102,38 +102,38 @@ Consumers also receive a pre-renewal push notification to the UPI app between 24
 
 ### Recommended Integration
 
-UPI AutoPay is a highly regulated payment method, and not all of Recurly's API functionality will work with this payment method. 
+UPI AutoPay is a highly regulated payment method, and not all of Recurly's API functionality will work with this payment method.
 
-* **Creating Subscriptions**: You can use the subscription or purchase endpoints to create subscriptions using UPI AutoPay VPAs. You must reference the VPA value in our `gateway_token` parameter. 
-  * Enrollment actions will result in a Pending transaction that will be later updated after the customer interacts with the UPI application. This transaction will move into a Approved state if the customer confirms the enrollment successfully. If the customer does not confirm the subscription enrollment *or* the enrollment encounters an error, the Transaction will be failed. 
+* **Creating Subscriptions**: You can use the subscription or purchase endpoints to create subscriptions using UPI AutoPay VPAs. You must reference the VPA value in our `payment_gateway_references` object and provide the VPA as the `token` value and the `reference_type` should be `upi_vpa`.
+  * Enrollment actions will result in a Pending transaction that will be later updated after the customer interacts with the UPI application. This transaction will move into a Approved state if the customer confirms the enrollment successfully. If the customer does not confirm the subscription enrollment *or* the enrollment encounters an error, the Transaction will be failed.
   * Keep in mind, the VPA will still exist on the Billing Info, so if it needs to be updated, the Billing Info should be deleted and re-added during a second sign up attempt. Otherwise, send the Account Code or Billing Info ID with the existing VPA to have the customer re-attempt enrollment.
-* **Billing Information Updates**: If a customer needs to update their VPA, their current subscription must be cancelled and the consumer must re-enroll with their new VPA. Updating the VPA on file will not change the mandate or bank account associated with their subscription.
+* **Billing Information Updates**: If a customer needs to update their VPA, their current subscription must be cancelled and the consumer must re-enroll with their new VPA. Updating the VPA on file will not change the mandate or bank account associated with their subscription. If the customer is not updating their VPA, they can update their bank details in the UPI app itself.
 * **Cancellations**: If a customer cancels their subscription within the UPI App, ensure you're listening to Recurly webhooks to update your own records. Subscriptions will be automatically cancelled in these instances.
 * **Paused Subscriptions**: If a customer pauses their subscription within the UPI App, ensure you're listening to Recurly webhooks to update your own records. Subscriptions will be automatically paused in these instances.
 * **Resumed Subscriptions**: If a customer resumes their subscription after cancellation within the UPI App, ensure you're listening to Recurly webhooks to update your own records. Subscriptions will be automatically resumed in these instances. If you do not wish to accept subscriptions that go through this flow (pause, resume), you can cancel subscriptions using Recurly APIs when you receive a pause webhook on a given subscription.
 
 ### Gateway Tokens
 
-UPI requires using Recurly's gateway token management, as UPI uses a 'Virtual Payment Account' identifier that a consumer sets up within their UPI application. It may look like this: **payer\@bankname**. Ensure your integration to Recurly allows for sending this value to Recurly via `gateway_token` and `gateway_code`. 
+UPI requires using Recurly's gateway token management, as UPI uses a 'Virtual Payment Account' identifier that a consumer sets up within their UPI application. It may look like this: **payer\@bankname**. Ensure your integration to Recurly allows for sending this value to Recurly via `payment_gateway_references` and `gateway_code`.
 
 See Recurly's API documentation for more information on how to use these values in your integration.
 
 ### Net Terms and Subscription Updates
 
-Since UPI charge windows are very limited, it is advised to **avoid using non-zero Net Terms** other than '0' to avoid failed payments. 
+Since UPI charge windows are very limited, it is advised to **avoid using non-zero Net Terms** other than '0' to avoid failed payments.
 
 Additionally, UPI mandates for monthly, *fixed*-price subscriptions require cancellation and customer-engagement to recreate the mandate. Subscription price updates for fixed-price subscriptions are not supported with UPI - Recurring.
 
 ### Mandate Preferences
 
-UPI - Recurring makes use of a mandate ID that is assigned to a consumer's subscription upon signing up. Consumers have the ability to revoke or pause that mandate from the UPI app outside of Recurly's system. This capability can cause subscriptions to become past due, expire or pause depending on the settings you select: 
+UPI - Recurring makes use of a mandate ID that is assigned to a consumer's subscription upon signing up. Consumers have the ability to revoke or pause that mandate from the UPI app outside of Recurly's system. This capability can cause subscriptions to become past due, expire or pause depending on the settings you select:
 
-Selecting your Mandate Preferences in **Invoice Settings** will require going into Configuration > Invoice Templates > Invoice Settings and configuring one of two options: 
+Selecting your Mandate Preferences in **Invoice Settings** will require going into Configuration > Invoice Templates > Invoice Settings and configuring one of two options:
 
-* Automatically handle Subscriptions: 
+* Automatically handle Subscriptions:
   * Automatically Cancel the Subscription: This will, if the customer has cancelled their UPI mandate within the UPI App, allow subscriptions in Recurly to auto-expire rather than going into dunning.
   * Automatically Pause the Subscription: This will, if the customer has paused their UPI mandate within the UPI App, allow subscriptions in Recurly to auto-pause rather than continue to bill.
-* Manually handle Subscriptions: 
+* Manually handle Subscriptions:
   * Manually process mandate revocations and pauses: This will, if a customer either pauses or cancels their UPI mandate, allow you to drive actions against subscriptions yourself. This option will only send webhooks for subscription lifecycle events and will not automatically take action on subscriptions.
 
 ## Recommended Webhooks
@@ -146,7 +146,7 @@ Since UPI - Recurring customer actions are outside of Recurly's view, our Ebanx 
 
 ### UPI Retries
 
-UPI, given the constraints around charge windows, will retry upon failure event from Ebanx in the following flow: 
+UPI, given the constraints around charge windows, will retry upon failure event from Ebanx in the following flow:
 
 1. First retry 10 minutes after initial failure
 2. Second through final (up to 8) retries every hour, on the hour, after the first retry.
