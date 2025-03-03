@@ -114,7 +114,7 @@ UPI AutoPay is a highly regulated payment method, and not all of Recurly's API f
 
 ### Gateway Tokens
 
-UPI requires using Recurly's gateway token management, as UPI uses a 'Virtual Payment Account' identifier that a consumer sets up within their UPI application. It may look like this: **payer\@bankname**. Ensure your integration to Recurly allows for sending this value to Recurly via `payment_gateway_references` and `gateway_code`.
+UPI requires using Recurly's gateway token management, as UPI uses a 'Virtual Payment Account' identifier that a consumer sets up within their UPI application. It may look like this: **payer\@bankname**. Ensure your integration to Recurly allows for sending this value to Recurly via`payment_gateway_references` and `gateway_code` in the V3 API only.
 
 See Recurly's API documentation for more information on how to use these values in your integration.
 
