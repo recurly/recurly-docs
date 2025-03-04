@@ -72,6 +72,22 @@ After receiving the necessary **keys** and **CSRs** from Recurly Support, follow
 > * The **Merchant Identity Certificate** authenticates your merchant sessions with Apple Pay servers.
 > * The **Apple Pay Certificate** (Payment Processing Certificate) is used to process transactions through Apple Pay.
 
+### Upload certificates and finalize setup in Recurly
+
+1. **Open the Recurly console** and select **Configuration > Apple Pay** to begin setup.
+2. **Enter your verified domain** in the format `www.DOMAIN.com`.
+   * **Important**: Do not use the domain listed under the `cert_UID` field. This is a common mistake. Always use your actual store domain.
+3. **Input your store name**, as it should appear to customers during checkout.
+4. **Provide a link** where customers can update billing information, e.g., `https://www.DOMAIN.com/login`.
+   * If you use **Hosted Pages Account Login**, Recurly can determine this URL automatically.
+5. **Upload the keys and certificates** in the corresponding fields:
+   * **Payment Processing Key** → *Payment Processing Private Key*
+   * **Merchant ID Key** → *Merchant ID Private Key*
+   * **Merchant Identity Certificate** → *Merchant ID Certificate*
+   * **Apple Pay Certificate** → *Payment Processing Certificate*
+
+Once these steps are complete, you’ll be able to accept Apple Pay transactions via your Recurly site. If you have any questions or encounter issues, contact **Recurly Support** for assistance.
+
 ### Braintree Setup
 
 Setting up Recurly's Apple Pay integration with Braintree differs from other gateways and involves coordination between Recurly and Braintree.
