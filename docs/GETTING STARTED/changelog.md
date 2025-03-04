@@ -26,6 +26,8 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## February
 
+* 2/26/2025: **WorldPay Gateway** - Added support for passing Sales Tax to the gateway.
+* 2/26/2025: **Vantiv Gateway** - Added support for two new response codes: 142 and 141. These are associated with Prepaid cards.
 * 2/18/2025: **V3 Libraries** - updated to support new `payment_gateway_references` parameters.
 * 2/18/2025: **Vantiv Gateway** - added support for response code 378 on the gateway.
 * 2/4/2025: **Check Commerce gateway** - updated endpoint for sandbox Check Commerce to support new gateway development endpoint.
