@@ -37,19 +37,14 @@ Jack Henry is a payment gateway specifically designed to accept ACH (Automated C
 
 ## Configure Jack Henry in Recurly
 
-1. **Add a Gateway to Recurly**\
-   Log into Recurly and navigate to the **Payment Gateways** page.
-2. **Select Jack Henry**\
-   Click **Add a New Gateway** at the top right, then select **Jack Henry** from the list.
-3. **Enter Jack Henry Credentials**\
-   Fill in the required fields with your Jack Henry account details:
+1. **Add a Gateway to Recurly**: Log into Recurly and navigate to the **Payment Gateways** page.
+2. **Select Jack Henry**: Click **Add a New Gateway** at the top right, then select **Jack Henry** from the list.
+3. **Enter Jack Henry Credentials**: Fill in the required fields with your Jack Henry account details:
 
 * **Entity ID**
 * **Store ID**
 * **Store Key**
 * **Location ID**
 
-4. **Enable Jack Henry**\
-   Set Jack Henry to **Enabled** for new transactions when you're ready.
-5. **Add Payment Gateway**\
-   Click **Add Payment Gateway** to complete the setup.
+4. **Enable Jack Henry**: Set Jack Henry to **Enabled** for new transactions when you're ready.
+5. **Add Payment Gateway**: Click **Add Payment Gateway** to complete the setup.
