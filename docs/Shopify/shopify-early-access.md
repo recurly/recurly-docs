@@ -8,13 +8,11 @@ metadata:
 ---
 # Overview
 
-Purpose-built for enterprise shops, our Shopify app makes it easy to diversify your revenue and scale with ease. Integrated directly into Shopify admin, the Recurly app enables features like auto-ship, mixed-cart purchases, free trials, customizable coupons, and a customer portal—all with no-code installation. Once integrated, you’ll have access to Recurly’s advanced features like customized dunning, intelligent payment retries, and robust analytics to help you engage and retain your customers.
+Purpose-built for enterprise shops, Recurly's Shopify app makes it easy to diversify your revenue and scale with ease. Integrated directly into Shopify admin, the Recurly app enables features like auto-ship, mixed-cart purchases, free trials, customizable coupons, and a customer portal—all with no-code installation. Once integrated, you will have access to Recurly’s advanced features like customized dunning, intelligent payment retries, and robust analytics to help you engage and retain your customers.
 
 ### Prerequisites
 
 To participate in Early Access, merchants must must first [schedule a demo](https://recurly.com/request-a-demo/). Recurly will answer any questions, and support merchants through the setup and testing.
-
-<br />
 
 # Definition
 
@@ -62,7 +60,7 @@ Navigate to Shopify Admin of your store, and complete the following steps
 * In Settings -> Payment, activate the test payment provider, or set your payment provider (e.g., Adyen, Shopify Payments) to test mode. For now, let’s activate the test payment provider (bogus gateway) by following [these Shopify instructions](https://help.shopify.com/en/partners/dashboard/managing-stores/test-orders-in-dev-stores#testing-using-bogus-gateway).
   * You can also click “See all other providers”, and navigate to the top entry, which is the bogus gateway.
 * Recurly requires that payment info is captured in Shopify Checkout, so that Shopify can successfully charge your customer and vault the payment info.
-  * If you are using a manual payment method, reach out to Recurly Support.
+  * If you are using a manual payment method, reach out to Recurly.
   * If payment is not configured, your customer will see “This store can’t accept payments right now.” when trying to checkout.
 
 ## Create, and configure a Recurly site
@@ -74,6 +72,44 @@ For Early Access merchants, Recurly will take care of this step. There a few req
 * Click the Shopify App Store URL Recurly provided, to navigate to the Recurly Subscriptions App
 * Before you click Install, verify you are in the correct Shopify store by clicking the colored square on the top right of the Recurly application page.
 * Click Install
-* You will be directed to your Shopify store, and presented a model to Install the app. Review the requested permissions, and click Install
+* You will be directed to your Shopify store, and presented a modal to Install the app. Review the requested permissions, and click Install
 
 ## Configure the embedded Recurly Subscriptions App within Shopify
+
+Note: You can click the Pin icon to pin the Recurly Subscriptions app to your left navigation
+
+* Follow the Setup guide and connect your Recurly site by adding an API key from Recurly
+* Once connected with Recurly, navigate to Products and create at least one test product. Be sure the product is published to the “Online Store” sales channel, and has available inventory.
+* Resume with the Recurly Setup guide, and create a subscription plan with one of those test products
+* Continue with the Setup guide, and install the Recurly subscription widget into your theme. The widget will be dropped into the “Default product” page. You can move it around as desired within that page.
+
+Once done with the configuration of the embedded app, follow these steps to provide a link within the default Shopify portal to direct customers to the Recurly portal to manage their subscription.
+
+* Navigate within Shopify Admin to Settings -> Checkout. Click Customize next to your Configuration.
+* Click Checkout in the top center, change to Orders
+* Click Section from the far left nav.
+* Click Add app block, and add the "Customer Portal Link". It should look like the attached screenshot in the next thread post.
+
+## Run a test order to demonstrate a successful subscription purchase
+
+By completing the steps above, the install and configuration steps are complete. Let's now run a test order.
+
+* Click the eye icon to the right of Online Store from the left navigation, and go into your online store
+* Find the product, and check out.
+* For the credit card, use the following for the credit card number (assuming you are using the bogus gateway)
+  * 1 - To Simulate an Approved Transaction
+  * 2 - To Simulate a Declined Transaction
+  * 3 - To Simulate a Gateway Failure
+  * Any three numbers can be used as the "Card Security Code" and any expiry date in the future will work.
+
+Once the purchase is complete, log into your Recurly site and look at the latest Subscription in Customers. If you can see a subscription related to the test order (aka: purchase), you have completed the configuration. The subscription should have customer data, charges and credits, invoices, transactions, and activity.
+
+## Next Steps
+
+Given this is currently Early Access, you may run into issues or have suggestions. Be sure to talk with your Recurly contact about those. It is important to test several different scenarios (e.g., mixed cart purchase of a hardware product and software subscription) to be sure everything is working as expected.
+
+## Limitations
+
+<br />
+
+## FAQs
