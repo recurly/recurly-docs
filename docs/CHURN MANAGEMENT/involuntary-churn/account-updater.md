@@ -18,7 +18,7 @@ next:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly subscription plan. 
+This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Additional cost
 
@@ -27,7 +27,7 @@ This feature or setting requires an additional cost. Please reach out to your Re
 ### Prerequisites
 
 * Integration with Recurly's platform.
-* Activation of the Account Updater feature in the Recurly payment settings page. 
+* Activation of the Account Updater feature in the Recurly payment settings page.
 * For American Express® Cardrefresher, an American Express® merchant account is required.
 
 ### Limitation
@@ -58,12 +58,12 @@ Experience the capabilities of the Account Updater across all Recurly plan level
 
 5. **Enter MCC and SE Number:** A prompt will appear asking for your Mastercard Merchant Category Code (required to enable Mastercard®) and 10-digit American Express® SE number (required to enable Cardrefresher). Enter the details accurately.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/79af8f5-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/79af8f5-image.png" />
 
-6. **Confirmation:** After entering the MCC and/or SE number, check the box to confirm the monthly charge for Account Updater.  If you do not have your MCC or SE number, you can still proceed to enable Visa® and Discover®. 
-7. **Completion:** Once done, click on the enable button. After you have enabled, your Account Updater status will reflect that you are enabled for Visa®, Mastercard®, Discover® and American Express®. 
+6. **Confirmation:** After entering the MCC and/or SE number, check the box to confirm the monthly charge for Account Updater.  If you do not have your MCC or SE number, you can still proceed to enable Visa® and Discover®.
+7. **Completion:** Once done, click on the enable button. After you have enabled, your Account Updater status will reflect that you are enabled for Visa®, Mastercard®, Discover® and American Express®.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/17be4e7-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/17be4e7-image.png" />
 
 Remember, always ensure that the details entered, especially the SE number, are accurate to avoid any discrepancies or delays in the update process.
 
@@ -105,9 +105,9 @@ Here's how:
 
 > 🚧 If you choose to disable Account Updater, you will not be able to enable Account Updater for 10 business days.
 
-1. **Navigate** to your Payment Settings page, and click on Disable in the upper right hand corner of the Account Updater box. 
+1. **Navigate** to your Payment Settings page, and click on Disable in the upper right hand corner of the Account Updater box.
 
-2. A pop up **will appear** for you to disable your Account Updater feature. 
+2. A pop up **will appear** for you to disable your Account Updater feature.
 
 <Image align="center" width="75% " src="https://files.readme.io/133d86c-image.png" />
 
@@ -118,3 +118,29 @@ Here's how:
 1. The Account Updater is exclusive to credit cards. Hence, this option is only visible for accounts with stored credit card billing info.
 2. Only users with billing info editing rights can access this option.
 3. By default, all billing info is submitted to the Account Updater service if activated.
+
+# FAQs
+
+### **Q: Does Recurly receive updates if I enable Account Updater with another gateway?**
+
+A: No. Recurly does not listen for or consume updates directly from third-party gateways. To update card information stored in Recurly, you must enable Recurly’s own Account Updater.
+
+### **Q: What happens if I have Account Updater enabled both in Recurly and at another gateway?**
+
+A: There’s no guarantee which system updates the card information first, since Recurly does not have visibility into other gateways’ timing. Maintaining both can lead to temporary data mismatches and additional costs, as Recurly’s records might remain out-of-date if the gateway updates first (or vice versa).
+
+### **Q: When is it beneficial to enable Account Updater at another gateway instead of Recurly?**
+
+A: If you’re only using tokens stored at that external gateway (and not storing full card details in Recurly), updating card information at the gateway level can be useful. However, this does not update the payment information within Recurly itself.
+
+### **Q: How does Recurly’s Account Updater work?**
+
+A: When enabled, Recurly periodically checks with participating card brands to refresh stored payment details. This helps avoid declined transactions due to outdated card information, improving payment success rates for merchant-initiated billing.
+
+### **Q: Which card brands participate in Recurly’s Account Updater?**
+
+A: Card brand participation may vary over time. Generally, major brands like Visa, Mastercard, and American Express are supported.
+
+### **Q: Do I need to do anything special after enabling Recurly’s Account Updater?**
+
+A: Typically, no. Once enabled, Recurly handles all the checks and updates for you. You’ll see improved authorization rates over time as stale card details are replaced automatically.
