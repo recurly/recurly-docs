@@ -125,14 +125,29 @@ Yes, two things.
 
 ### Are there any known limitations with this Early Access release?
 
-### If a subscriber subscribes via Shopify, and also Recurly, are they duplicated in Recurly? No, we match based on e-mail address
+Given this is an early release, there are some limitations. These will be addressed over time.
 
-<br />
+* Google Pay, Apple Pay, PayPal, and ShopPay are not yet supported. They will be very soon. Recurly currently supports credit card payments via Shopify Checkout.
+* Pre-paid (e.g., bill annually, delivery monthly) subscriptions are not yet supported.
+* There are certain types of Shopify discounts that are not yet supported on Recurly. The following two, “Buy X get Y” and “Free Shipping”, are not supported.
+* There are certain discount requirements that are not supported. These requirements will be shared soon.
+* There are character limitations to be mindful of between Shopify and Recurly
+  * Coupon codes need to 50 character or less
+  * Product title and Variant title need to be 255 characters or less when combined
+  * external\_sku for a Product needs to be 50 characters or less
+* The following Recurly revenue recovery features do not apply in the Shopify model. In this partnership with Shopify, Shopify is handling those features given Shopify owns the customer payment information.
+  * Account updater, expiration date changes, backup payment method
+
+### If a subscriber subscribes via Shopify, and also Recurly, are they duplicated in Recurly
+
+No. If a Recurly account (aka: customer) is already present with the same e-mail address as the new Shopify customer, Recurly will match that subscriber with the existing Recurly account.
 
 ### What changes from Recurly sync back to Shopify?
 
-Only subscription changes (cancel, or pause)
+For Early Access, only these subscription changes (cancel, pause, expire) are synced back to Recurly. In future releases, Recurly will sync back additional pertinent information.
 
 ### Is there one customer portal for everything?
 
-No. Shopify powers one, and Recurly powers another.
+No. Shopify always provides a default customer portal, focused on order information, profile information, and billing information. That portal will continue to exist. Recurly also provides a portal, but more focused on the subscription management aspects (e.g., cancel subscription). When logged into the Recurly customer portal, the customer can see information about their active subscription, and past orders.
+
+In a future release, the portals will be more integrated and Recurly will continue to add more valuable features (e.g., change quantity of products in an active subscription) over time.
