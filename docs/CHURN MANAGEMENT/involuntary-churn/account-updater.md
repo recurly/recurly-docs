@@ -121,18 +121,6 @@ Here's how:
 
 # FAQs
 
-### **Q: Does Recurly receive updates if I enable Account Updater with another gateway?**
-
-A: No. Recurly does not listen for or consume updates directly from third-party gateways. To update card information stored in Recurly, you must enable Recurly’s own Account Updater.
-
-### **Q: What happens if I have Account Updater enabled both in Recurly and at another gateway?**
-
-A: There’s no guarantee which system updates the card information first, since Recurly does not have visibility into other gateways’ timing. Maintaining both can lead to temporary data mismatches and additional costs, as Recurly’s records might remain out-of-date if the gateway updates first (or vice versa).
-
-### **Q: When is it beneficial to enable Account Updater at another gateway instead of Recurly?**
-
-A: If you’re only using tokens stored at that external gateway (and not storing full card details in Recurly), updating card information at the gateway level can be useful. However, this does not update the payment information within Recurly itself.
-
 ### **Q: How does Recurly’s Account Updater work?**
 
 A: When enabled, Recurly periodically checks with participating card brands to refresh stored payment details. This helps avoid declined transactions due to outdated card information, improving payment success rates for merchant-initiated billing.
@@ -144,3 +132,11 @@ A: Card brand participation may vary over time. Generally, major brands like Vis
 ### **Q: Do I need to do anything special after enabling Recurly’s Account Updater?**
 
 A: Typically, no. Once enabled, Recurly handles all the checks and updates for you. You’ll see improved authorization rates over time as stale card details are replaced automatically.
+
+### **Q: What happens if I have Account Updater enabled both in Recurly and at another gateway?**
+
+A: There’s no guarantee which system updates the card information first, since Recurly does not have visibility into other gateways’ timing. Maintaining both can lead to temporary data mismatches and additional costs, as Recurly’s records might remain out-of-date if the gateway updates first (or vice versa).
+
+### **Q: When is it beneficial to enable Account Updater at another gateway instead of Recurly?**
+
+A: If you’re only using tokens stored at that external gateway (and not storing full card details in Recurly), updating card information at the gateway level can be useful. However, this does not update the payment information within Recurly itself.
