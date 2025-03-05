@@ -108,8 +108,31 @@ Once the purchase is complete, log into your Recurly site and look at the latest
 
 Given this is currently Early Access, you may run into issues or have suggestions. Be sure to talk with your Recurly contact about those. It is important to test several different scenarios (e.g., mixed cart purchase of a hardware product and software subscription) to be sure everything is working as expected.
 
+While you are testing, Recurly will request partner access to your test Shopify store. This allows Recurly to better support you.
+
 ## Limitations
 
 <br />
 
 ## FAQs
+
+### Is there anything else I need to know regarding testing?
+
+Yes, two things.
+
+1. When testing the Recurly subscription portal, the portal will open in another tab. Some browsers may block the popup by default, so check your popup settings if the portal does not appear.
+2. The app proxy URL associated with the Recurly Subscription app should not change. This URL is pre-defined for the Recurly Subscription app within your Shopify Admin settings.
+
+### Are there any known limitations with this Early Access release?
+
+### If a subscriber subscribes via Shopify, and also Recurly, are they duplicated in Recurly? No, we match based on e-mail address
+
+<br />
+
+### What changes from Recurly sync back to Shopify?
+
+Only subscription changes (cancel, or pause)
+
+### Is there one customer portal for everything?
+
+No. Shopify powers one, and Recurly powers another.
