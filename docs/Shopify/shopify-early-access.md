@@ -12,7 +12,7 @@ Purpose-built for enterprise shops, our Shopify app makes it easy to diversify y
 
 ### Prerequisites
 
-To participate in Early Access, merchants must must first schedule a demo and we will walk you through how to download it.
+To participate in Early Access, merchants must must first schedule a demo. Recurly will answer any questions, and support merchants through the setup and testing.
 
 <br />
 
