@@ -28,6 +28,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 3/05/2025: **Cybersource Gateway** - Added support for enforcing 3DS via `challengeCode`on certain Cybersource processors. Read more in our [Cybersource documentation](https://docs.recurly.com/docs/cybersource#/step-5-configure-your-3ds2-support-optional).
 * 3/05/2025: **Braintree Gateway** - Improved response code handling to retry additional soft-declined card transactions moving forward.
+* 3/05/2025: **Vantiv Gateway** - Added new response codes to our system to ensure proper handling of new decline codes.
 
 ## February
 
