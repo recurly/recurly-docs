@@ -38,12 +38,42 @@ For merchants selling via a Shopify store, they can now leverage Recurly to offe
 
 Follow the steps in order, and reach out to Recurly as needed.
 
-## Create, or utilize a test Shopify store
+## Create a test Shopify store
 
-* Log into your Shopify account here
-* If you are a Shopify partner, log in here and follow these instructions to create a free test store
+Utilize one of the two methods below to create a test Shopify store. You are also welcome to use an existing test store.
+
+* Log into your Shopify account [here](https://www.shopify.com/store-login)
+  * Click the top right button, which is the name of the current store you are logged into.
+  * Select "All stores", and then click "+ Create store"
+* If you are a Shopify partner, log in [here](https://partners.shopify.com/organizations) and follow these instructions to create a free test store
   * From your Partner Dashboard, click Stores.
   * Click Add store > Create development store.
   * In the Development store use section, select Create a store to test and build.
   * In the Store details section, enter a name for your store.
   * In “Data and Configurations”, select “Start with an empty store”
+
+## Configure your test Shopify store
+
+**Pre-requisite** Your Shopify store should not have any existing Products, nor Discounts. Recurly will support migrating those very soon.
+
+Navigate to Shopify Admin of your store, and complete the following steps
+
+* In Settings -> Checkout, select “Require first and last name” in “Customer information”
+* In Settings -> Payment, activate the test payment provider, or set your payment provider (e.g., Adyen, Shopify Payments) to test mode. For now, let’s activate the test payment provider (bogus gateway) by following [these Shopify instructions](https://help.shopify.com/en/partners/dashboard/managing-stores/test-orders-in-dev-stores#testing-using-bogus-gateway).
+  * You can also click “See all other providers”, and navigate to the top entry, which is the bogus gateway.
+* Recurly requires that payment info is captured in Shopify Checkout, so that Shopify can successfully charge your customer and vault the payment info.
+  * If you are using a manual payment method, reach out to Recurly Support.
+  * If payment is not configured, your customer will see “This store can’t accept payments right now.” when trying to checkout.
+
+## Create, and configure a Recurly site
+
+For Early Access merchants, Recurly will take care of this step. There a few required configurations, and feature flags that need to be set for the integration with Shopify. Once created and configured, Recurly will provide you Admin access to your test Recurly site.
+
+## Install the Recurly Shopify app into your test Shopify store
+
+* Click the Shopify App Store URL Recurly provided, to navigate to the Recurly Subscriptions App
+* Before you click Install, verify you are in the correct Shopify store by clicking the colored square on the top right of the Recurly application page.
+* Click Install
+* You will be directed to your Shopify store, and presented a model to Install the app. Review the requested permissions, and click Install
+
+## Configure the embedded Recurly Subscriptions App within Shopify
