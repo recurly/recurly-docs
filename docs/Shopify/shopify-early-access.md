@@ -52,7 +52,7 @@ Utilize one of the two methods below to create a test Shopify store. You are als
 
 ## Configure your test Shopify store
 
-**Pre-requisite** Your Shopify store should not have any existing Products, nor Discounts. Recurly will support migrating those very soon.
+**Pre-requisite:** Your Shopify store should not have any existing Products, nor Discounts. Recurly will support migrating those very soon.
 
 Navigate to Shopify Admin of your store, and complete the following steps
 
