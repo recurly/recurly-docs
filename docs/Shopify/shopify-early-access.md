@@ -10,7 +10,9 @@ metadata:
 
 Purpose-built for enterprise shops, our Shopify app makes it easy to diversify your revenue and scale with ease. Integrated directly into Shopify admin, the Recurly app enables features like auto-ship, mixed-cart purchases, free trials, customizable coupons, and a customer portal—all with no-code installation. Once integrated, you’ll have access to Recurly’s advanced features like customized dunning, intelligent payment retries, and robust analytics to help you engage and retain your customers.
 
-## Prerequisites
+### Prerequisites
+
+To participate in Early Access, merchants must must first schedule a demo and we will walk you through how to download it.
 
 <br />
 
