@@ -31,7 +31,7 @@ At a high level, Recurly is listening to real-time notifications sent from the A
 
 For a deeper understanding of how App Management works, and to understand some of the technical requirements, read through the detailed walkthrough below.
 
-Note: Recurly does not require customers to implement a SDK within their mobile app.
+Note: Recurly does **not** require customers to implement a SDK within their mobile app.
 
 ## 1) Uniquely identifying your customers
 
