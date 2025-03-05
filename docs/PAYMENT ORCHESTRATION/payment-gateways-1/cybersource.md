@@ -64,7 +64,7 @@ CyberSource is a full-service payment management platform. When configured with 
       </td>
 
       <td>
-        Credit/Debit Card, Apple and Google Pay  
+        Credit/Debit Card, Apple and Google Pay
 
         * Apple Pay is not supported with TSYS/Vital acquirer
       </td>
@@ -173,6 +173,7 @@ This is essential as it determines how transactions are handled between Recurly,
 ### Step 5: Configure your 3DS2 support (optional)
 
 * If you wish to support 3DS2 verification flows on Cybersource, check the box **Enable 3DS2 support**. Only enable this if you have 3DS enabled at Cybersource.
+* Reach out to Recurly Support to enable the `challengeCode` parameter for your implementation if you want to enforce 3DS challenges for subscription signups and one-time charges. **Note**: not all Cybersource processors support this feature. Talk to your Cybersource representative before enabling this on Recurly, or payments can fail.
 
 ### Step 6: Set your credit card processor and card types
 
@@ -193,7 +194,7 @@ This is essential as it determines how transactions are handled between Recurly,
   * All Transactions
   * US/Canada Transactions Only (recommended)
   * Disable AVS Checks
-* Select your desired option from the AVS settings while configuring/editing the CyberSource gateway in Recurly. 
+* Select your desired option from the AVS settings while configuring/editing the CyberSource gateway in Recurly.
 
 ### Step 10: Save and enable the gateway
 
@@ -207,5 +208,5 @@ This is essential as it determines how transactions are handled between Recurly,
 ### Step 12: Go live
 
 * After testing, if everything is working as expected, you are ready to accept live payments through the CyberSource gateway via Recurly.\
-  **Pro Tip:** Keep your CyberSource credentials secure and ensure only authorized personnel have access to this information. Regularly review and regenerate your SOAP Toolkit Keys for added security.\
+  **Pro Tip:** Keep your CyberSource credentials secure and ensure only authorized personnel have access to this information. Regularly review and regenerate your SOAP Toolkit Keys for added security.
   *Please note:* Always consult with your CyberSource account representative or support resources to ensure that your account is in good standing and that you are compliant with all relevant regulations and requirements.
