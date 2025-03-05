@@ -35,3 +35,15 @@ For merchants selling via a Shopify store, they can now leverage Recurly to offe
 * Our customer portal makes it easy for your subscribers to easily update their information
 
 # Key details
+
+Follow the steps in order, and reach out to Recurly as needed.
+
+## Create, or utilize a test Shopify store
+
+* Log into your Shopify account here
+* If you are a Shopify partner, log in here and follow these instructions to create a free test store
+  * From your Partner Dashboard, click Stores.
+  * Click Add store > Create development store.
+  * In the Development store use section, select Create a store to test and build.
+  * In the Store details section, enter a name for your store.
+  * In “Data and Configurations”, select “Start with an empty store”
