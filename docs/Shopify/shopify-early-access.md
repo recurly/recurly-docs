@@ -12,7 +12,7 @@ Purpose-built for enterprise shops, Recurly's Shopify app makes it easy to diver
 
 ### Prerequisites
 
-To participate in Early Access, merchants must must first [schedule a demo](https://recurly.com/request-a-demo/). Recurly will answer any questions, and support merchants through the setup and testing.
+To participate in Early Access, merchants must first [schedule a demo](https://recurly.com/request-a-demo/). Recurly will answer any questions, and support merchants through the setup and testing.
 
 # Definition
 
@@ -136,7 +136,7 @@ Given this is an early release, there are some limitations. These will be addres
 * The following Recurly revenue recovery features do not apply in the Shopify model. In this partnership with Shopify, Shopify is handling those features given Shopify owns the customer payment information.
   * Account updater, expiration date changes, backup payment method
 
-### If a subscriber subscribes via Shopify, and also Recurly, are they duplicated in Recurly
+### If a subscriber subscribes via Shopify, and also Recurly, are they duplicated in Recurly?
 
 No. If a Recurly account (aka: customer) is already present with the same e-mail address as the new Shopify customer, Recurly will match that subscriber with the existing Recurly account.
 
