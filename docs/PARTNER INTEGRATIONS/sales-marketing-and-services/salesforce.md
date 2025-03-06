@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-<Embed typeOfEmbed="iframe" url="https://www.youtube.com/watch?v=d9zwiRqaPOk" href="https://www.youtube.com/watch?v=d9zwiRqaPOke" html="false" iframe="true" height="854px" width="480px" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9zwiRqaPOk?si=g6wEu1uQe-aiZEH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
 ### Required plan
 
@@ -360,7 +360,7 @@ Integrating Salesforce with Recurly streamlines your sales and billing processes
 
    ![Package Installation](https://files.readme.io/21213b6-Screen_Shot_2016-09-01_at_12.56.33_PM.png)
 
-4. **Assign Roles**: Decide which roles should have Recurly permissions. Create new profiles by cloning existing Salesforce profiles and label them as "**Recurl&#x79;**\_\_** Profile**" (e.g., "**Recurly Support Profile**").
+4. **Assign Roles**: Decide which roles should have Recurly permissions. Create new profiles by cloning existing Salesforce profiles and label them as "**Recurly**\_\_\*\* Profile\*\*" (e.g., "**Recurly Support Profile**").
 
    ![Roles Assignment](https://files.readme.io/1bb405c-Screen_Shot_2016-09-22_at_1.49.46_PM.png)
 
