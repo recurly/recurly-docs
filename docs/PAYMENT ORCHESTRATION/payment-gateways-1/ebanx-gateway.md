@@ -101,6 +101,8 @@ Recurly only supports INR, so no selection is necessary.
 
 # Configuring Webhooks in Ebanx
 
+## Step 1: Set Recurly Callback Endpoint in Ebanx
+
 To successfully receive required webhooks for Enrollments and Payments from Ebanx in sandbox and production, follow the below steps:
 
 **Note**: The state of your Ebanx dashboard (sandbox or production) will determine which Service URLs are are updated. Ensure your service URL is pointed at the correct Recurly site.
@@ -113,9 +115,7 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
    1. Example: [https://callbacks.recurly.com/ebanx/subdomain](https://callbacks.recurly.com/ebanx/subdomain)
 4. Click **Save integration settings** at the bottom of the page.
 
-## Step 1: Set Recurly Callback Endpoint in Ebanx
-
-1
+<br />
 
 ***
 
