@@ -40,15 +40,15 @@ Follow the steps in order, and reach out to Recurly as needed.
 
 Utilize one of the two methods below to create a test Shopify store. You are also welcome to use an existing test store.
 
-* Log into your Shopify account [here](https://www.shopify.com/store-login)
-  * Click the top right button, which is the name of the current store you are logged into.
-  * Select "All stores", and then click "+ Create store"
-* If you are a Shopify partner, log in [here](https://partners.shopify.com/organizations) and follow these instructions to create a **free** test store
+* As a Shopify partner, you can create test stores for free which is the path we recommend. To become a Shopify partner, sign up via [this link](https://partners.shopify.com/signup?locale=en) . Log in as a Shopify partner [here](https://partners.shopify.com/organizations), and then follow the below steps.
   * From your Partner Dashboard, click Stores.
   * Click Add store > Create development store.
   * In the Development store use section, select Create a store to test and build.
   * In the Store details section, enter a name for your store.
   * In “Data and Configurations”, select “Start with an empty store”
+* An alternate method is to log into your Shopify account, and create a store. Please note that this method many incur a cost. Log into your Shopify account [here](https://www.shopify.com/store-login), and then follow the below steps.
+  * Click the top right button, which is the name of the current store you are logged into.
+  * Select "All stores", and then click "+ Create store".
 
 ## Configure your test Shopify store
 
