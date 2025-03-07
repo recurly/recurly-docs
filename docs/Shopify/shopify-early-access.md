@@ -8,8 +8,6 @@ metadata:
 ---
 # Overview
 
-Purpose-built for enterprise shops, Recurly's Shopify app makes it easy to diversify your revenue and scale with ease. Integrated directly into Shopify admin, the Recurly app enables features like auto-ship, mixed-cart purchases, free trials, customizable coupons, and a customer portal—all with no-code installation. Once integrated, you will have access to Recurly’s advanced features like customized dunning, intelligent payment retries, and robust analytics to help you engage and retain your customers.
-
 ### Prerequisites
 
 To participate in Early Access, merchants must first [schedule a demo](https://recurly.com/request-a-demo/). Recurly will answer any questions, and support merchants through the setup and testing.
@@ -17,6 +15,8 @@ To participate in Early Access, merchants must first [schedule a demo](https://r
 # Definition
 
 For merchants selling via a Shopify store, they can now leverage Recurly to offer subscriptions and power a reliable, recurring revenue stream.
+
+Purpose-built for enterprise shops, Recurly's Shopify app makes it easy to diversify your revenue and scale with ease. Integrated directly into Shopify admin, the Recurly app enables features like auto-ship, mixed-cart purchases, free trials, customizable coupons, and a customer portal—all with no-code installation. Once integrated, you will have access to Recurly’s advanced features like customized dunning, intelligent payment retries, and robust analytics to help you engage and retain your customers.
 
 # Key benefits
 
