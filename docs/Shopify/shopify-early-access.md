@@ -43,7 +43,7 @@ Utilize one of the two methods below to create a test Shopify store. You are als
 * Log into your Shopify account [here](https://www.shopify.com/store-login)
   * Click the top right button, which is the name of the current store you are logged into.
   * Select "All stores", and then click "+ Create store"
-* If you are a Shopify partner, log in [here](https://partners.shopify.com/organizations) and follow these instructions to create a free test store
+* If you are a Shopify partner, log in [here](https://partners.shopify.com/organizations) and follow these instructions to create a **free** test store
   * From your Partner Dashboard, click Stores.
   * Click Add store > Create development store.
   * In the Development store use section, select Create a store to test and build.
