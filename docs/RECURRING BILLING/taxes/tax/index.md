@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview 
+# Overview
 
 ### Required plan
 
@@ -21,57 +21,55 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-- Familiarity with your business's tax obligations in the regions you operate.
+* Familiarity with your business's tax obligations in the regions you operate.
 
 ### Limitations
 
-- Recurly's out-of-the-box tax calculations are based on Avalara's AvaTax. For advanced tax rules and rate mappings, integration with Avalara AvaTax Pro or Vertex is required.
-- Custom credit adjustments in Recurly do not support tax calculations.
-- In sandbox mode, Avalara's Address Validation cannot be tested, and minor variations in applied tax rates might be observed.
+* Recurly's out-of-the-box tax calculations are based on Avalara's AvaTax. For advanced tax rules and rate mappings, integration with Avalara AvaTax or Vertex is required.
+* Custom credit adjustments in Recurly do not support tax calculations.
+* In sandbox mode, Avalara's Address Validation cannot be tested, and minor variations in applied tax rates might be observed.
 
 # Introduction to sales tax
 
 Recurly is a leading subscription billing platform. We collaborate with Avalara and Vertex to facilitate sales tax billing and collection worldwide.
 
-This page outlines our fundamental taxation feature, Recurly Taxes, which is powered by Avalara. Recurly Taxes provides essential sales tax compliance for specific use cases and regions. 
+This page outlines our fundamental taxation feature, Recurly Taxes, which is powered by Avalara. Recurly Taxes provides essential sales tax compliance for specific use cases and regions.
 
-- Recurly’s in the box tax solution does not support tax calculation for regions aside from those included on this page.  For wider global sales tax support, consider our [Direct Integration with Avalara AvaTax](https://docs.recurly.com/docs/avalara). 
-- Recurly Taxes supports tax-inclusive pricing through Avalara AvaTax, Vertex, and Recurly's own In-The-Box taxes. Learn more about [Tax Inclusive Pricing](https://docs.recurly.com/docs/tax-inclusive-pricing).
-- Recurly Taxes do not handle communications taxes and surcharges. For these needs, explore our [Avalara for Communications](https://docs.recurly.com/docs/afc) integration.
+* Recurly’s in the box tax solution does not support tax calculation for regions aside from those included on this page.  For wider global sales tax support, consider our [Direct Integration with Avalara AvaTax](https://docs.recurly.com/docs/avalara).
+* Recurly Taxes supports tax-inclusive pricing through Avalara AvaTax, Vertex, and Recurly's own In-The-Box taxes. Learn more about [Tax Inclusive Pricing](https://docs.recurly.com/docs/tax-inclusive-pricing).
+* Recurly Taxes do not handle communications taxes and surcharges. For these needs, explore our [Avalara for Communications](https://docs.recurly.com/docs/afc) integration.
 
-Recurly is not a tax expert. Our tools are designed to help merchants comply with local sales tax and VAT laws, but we do not guarantee tax compliance. 
+Recurly is not a tax expert. Our tools are designed to help merchants comply with local sales tax and VAT laws, but we do not guarantee tax compliance.
 
 For advice on laws applicable to your business, consult a sales tax professional. They can provide guidance on local laws in your service areas. If you need a referral to a tax professional, contact our support team, and we'll connect you with a firm that can assist.
 
-> 👍 For more advanced options, connect your own Avalara AvaTax Pro or Vertex account:
-> 
-> - Access to many more taxable regions
-> - Detailed product taxability rules
-> - Advanced tax reporting
-> - Tax filing services
-> 
-> Discover more about <a href="https://docs.recurly.com/docs/avalara">Avalara AvaTax Pro</a> and <a href="https://docs.recurly.com/docs/vertex">Vertex</a>.
+> 👍 For more advanced options, connect your own Avalara AvaTax or Vertex account:
+>
+> * Access to many more taxable regions
+> * Detailed product taxability rules
+> * Advanced tax reporting
+> * Tax filing services
+>
+> Discover more about <a href="https://docs.recurly.com/docs/avalara">Avalara AvaTax</a> and <a href="https://docs.recurly.com/docs/vertex">Vertex</a>.
 
 # Go live with taxes checklist
 
 To start tax collection with Recurly, follow these steps. We recommend testing your tax configurations in sandbox mode before applying them to your production Recurly site.
 
 1. Activate the[ tax countries and/or state/provinces](https://docs.recurly.com/docs/tax#section-taxable-regions) where you plan to collect tax. This step will make tax options visible on your plan and account pages.
-2. Decide [which customer address to tax](https://docs.recurly.com/docs/tax#customer-taxable-address) where applicable: the Billing address or Account address. 
+2. Decide [which customer address to tax](https://docs.recurly.com/docs/tax#customer-taxable-address) where applicable: the Billing address or Account address.
 3. Ensure your <a href="#section-which-address-fields-to-collect">existing and new customer addresses</a> are accurate, enabling correct tax calculations upon going live.
 4. Verify that your <a href="#section-your-merchant-address">merchant address(es)</a> meets the requirements for tax calculations.
 5. Set the [taxable addresses](https://docs.recurly.com/docs/tax#determining-taxable-addresses) you prefer to use for each of your business entities directly on the business entity. This allows you to control which taxable addresses associated with an invoice to send the service as the Origin Address and Destination Address for tax calculation.
 6. Identify <a href="#section-exempt-customers">tax-exempt customers</a> and mark their accounts accordingly.
-7. <a href="#section-taxable-plans-and-adjustments">Modify all relevant plans</a> to enable "Tax Collected." _This action will initiate tax collection on invoices for both new and existing subscribers to the plan. However, it will not apply taxes to invoices that have already been generated, only new ones created after tax collection was applied to the corresponding plan._
+7. <a href="#section-taxable-plans-and-adjustments">Modify all relevant plans</a> to enable "Tax Collected." *This action will initiate tax collection on invoices for both new and existing subscribers to the plan. However, it will not apply taxes to invoices that have already been generated, only new ones created after tax collection was applied to the corresponding plan.*
 8. Update your checkout pages to include <a href="#section-tax-previews-at-checkout">tax previews</a>.
-
-
 
 # Determining Taxable Addresses
 
-With every invoice that is generated, there are two (2) types of addresses passed to your site’s tax service that the tax service uses for tax calculation. The first type of address is the “Origin Address,” which is intended to represent the seller’s (your) business address, and the second type of address is the “Destination Address,” which is intended to represent the buyer’s (customer) location where the goods or services are used or fulfilled. Once the appropriate taxable addresses are sent to your tax service provider, the tax service will assess the Origin and Destination address values and use those locations to identify the appropriate tax rate to apply to the invoice. Once the tax service applies the necessary tax rate, tax is calculated, and the tax location, rate, and amount are added and displayed on the invoice. 
+With every invoice that is generated, there are two (2) types of addresses passed to your site’s tax service that the tax service uses for tax calculation. The first type of address is the “Origin Address,” which is intended to represent the seller’s (your) business address, and the second type of address is the “Destination Address,” which is intended to represent the buyer’s (customer) location where the goods or services are used or fulfilled. Once the appropriate taxable addresses are sent to your tax service provider, the tax service will assess the Origin and Destination address values and use those locations to identify the appropriate tax rate to apply to the invoice. Once the tax service applies the necessary tax rate, tax is calculated, and the tax location, rate, and amount are added and displayed on the invoice.
 
-There are two (2) address types that can be applied to the Origin and/or Destination addresses. These are known as the invoice’s “taxable addresses”. The taxable address options from the invoice represent the merchant’s taxable address and the customer’s taxable address.  
+There are two (2) address types that can be applied to the Origin and/or Destination addresses. These are known as the invoice’s “taxable addresses”. The taxable address options from the invoice represent the merchant’s taxable address and the customer’s taxable address.
 
 ## Merchant Taxable Address
 
@@ -79,90 +77,85 @@ The merchant’s taxable address will always reflect the appropriate business en
 
 **Business Entity where the same address is used for both invoice display and taxation.**
 
-<Image align="center" border="true" src="https://files.readme.io/9490870-Screenshot_2024-06-06_at_9.44.56_PM.png" />
-
-
+<Image align="center" className="border" border="true" src="https://files.readme.io/9490870-Screenshot_2024-06-06_at_9.44.56_PM.png" />
 
 **Business Entity where a different address is used for invoice display versus taxation**
 
-<Image align="center" border="true" src="https://files.readme.io/3508a11-Screenshot_2024-06-06_at_9.43.52_PM.png" />
-
-
+<Image align="center" className="border" border="true" src="https://files.readme.io/3508a11-Screenshot_2024-06-06_at_9.43.52_PM.png" />
 
 ## Customer Taxable Address
 
-The customer’s taxable address will always reflect the appropriate customer address to be used for taxation based on the type of invoice, your site’s Tax Settings, and which customer addresses are present on a given invoice. 
+The customer’s taxable address will always reflect the appropriate customer address to be used for taxation based on the type of invoice, your site’s Tax Settings, and which customer addresses are present on a given invoice.
 
 There are **three (3) types of customer addresses** that can be used as the customer’s “taxable” address.
 
-- Account Information address
-- Billing Information address
-- Shipping Information address 
+* Account Information address
+* Billing Information address
+* Shipping Information address
 
 The **Account Information address** is always used as the customer’s taxable address on **manual invoices**, **unless there is a customer shipping address on the invoice**. You also have the option to enable using the customer Account Info address as the customer taxable address for all invoices generated across your site on the Tax Settings page. This will also ensure that the Account address of your customer is always used as the “Bill To” address presented on the invoice.
 
-<Image align="center" border="true" src="https://files.readme.io/1b1e2d0-Screenshot_2024-06-11_at_2.25.27_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/1b1e2d0-Screenshot_2024-06-11_at_2.25.27_PM.png" />
 
 To enable or disable using the Account address as the customer taxable address for all invoices, visit the "Tax Settings" page. This option is disabled out-of-the-box.
 
-<Image align="center" border="true" src="https://files.readme.io/6e7280d-Screenshot_2024-06-11_at_12.44.48_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/6e7280d-Screenshot_2024-06-11_at_12.44.48_PM.png" />
 
 The **Billing Information address** is always used as the customer’s taxable address on all **automatic invoices, unless there is a shipping address present on the invoice,** or if the Tax Settings option to use the Account Info address for the taxable address on all invoices is enabled.
 
-<Image align="center" sizing="300px" border="true" src="https://files.readme.io/dd6b481-Screenshot_2024-06-11_at_8.04.03_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/dd6b481-Screenshot_2024-06-11_at_8.04.03_PM.png" />
 
 The **Shipping address is always used as the customer’s taxable address on any invoice where there is a Shipping address applied**. Regardless of whether the invoice is manual, automatic, or if you have the Account Info address overriding option enabled on Tax Settings, customer Shipping addresses will always be used for the customer taxable address if there is one available on the invoice.
 
-<Image align="center" border="true" src="https://files.readme.io/155b94a-Screenshot_2024-06-11_at_2.26.13_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/155b94a-Screenshot_2024-06-11_at_2.26.13_PM.png" />
 
 #### Multiple Shipping Addresses
 
-Some invoices will have [multiple unique shipping addresses](https://docs.recurly.com/docs/shipping-address-per-line-item#shipping-addresses-per-purchase) on them. Since tax is calculated at the line-item level on an invoice, Recurly will send the unique tax shipping address for each line item to the tax service if "Customer tax address" is set for the Origin/Destination addresses based on the Business Entity applied to the given invoice. 
+Some invoices will have [multiple unique shipping addresses](https://docs.recurly.com/docs/shipping-address-per-line-item#shipping-addresses-per-purchase) on them. Since tax is calculated at the line-item level on an invoice, Recurly will send the unique tax shipping address for each line item to the tax service if "Customer tax address" is set for the Origin/Destination addresses based on the Business Entity applied to the given invoice.
 
-Common scenarios where this can occur are when [Account Hierarchy Invoice Rollup](https://docs.recurly.com/docs/ah-invoice-rollup) and/or [Calendar Billing](https://docs.recurly.com/docs/calendar-billing) are enabled on your site. 
+Common scenarios where this can occur are when [Account Hierarchy Invoice Rollup](https://docs.recurly.com/docs/ah-invoice-rollup) and/or [Calendar Billing](https://docs.recurly.com/docs/calendar-billing) are enabled on your site.
 
-If different tax rates are used for each line item based on the end-customer's shipping destination, "Tax" on the invoice will show a generic "Tax" label, with the final comprehensive tax amount accounting for the total dollar amount in taxes applied for all line items. There will also be a section on the invoice that will show each shipping address's state/country code, corresponding tax rate, and cumulative tax amount for each tax rate for your customer's reference. 
+If different tax rates are used for each line item based on the end-customer's shipping destination, "Tax" on the invoice will show a generic "Tax" label, with the final comprehensive tax amount accounting for the total dollar amount in taxes applied for all line items. There will also be a section on the invoice that will show each shipping address's state/country code, corresponding tax rate, and cumulative tax amount for each tax rate for your customer's reference.
 
-**Sample invoice displaying tax  behavior when multiple shipping addresses are present **
+\*\*Sample invoice displaying tax  behavior when multiple shipping addresses are present \*\*
 
-<Image align="center" sizing="75%" border="true" src="https://files.readme.io/39e4e93-multi_shipping_address.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/39e4e93-multi_shipping_address.png" />
 
 ## Setting Taxable Addresses
 
 Controlling which taxable addresses from invoices to send to your tax service is configurable at the Business Entity level. Each of your business entities has a “Tax Settings” section, where you can set the taxable address(s) to use for the Origin Address and Destination Address.
 
 > 👍 Keep in mind
-> 
+>
 > If a customer and/or plan is "tax exempt," no tax will be applied to the invoice and/or subscription.
 
-<Image align="center" border="true" src="https://files.readme.io/b0a13d1-Screenshot_2024-06-06_at_9.47.06_PM.png" />
-
+<Image align="center" className="border" border="true" src="https://files.readme.io/b0a13d1-Screenshot_2024-06-06_at_9.47.06_PM.png" />
 
 By default, **Recurly sets all entity taxable address configurations to use the Business Entity Tax Address as the Origin Tax Address and the Customer Tax Address as the Destination Tax Address**. Choosing to keep these default settings on an entity’s Taxable Address configuration  will ensure that all invoices where the given business entity is applied will send the merchant's entity tax address as the Origin Address to the tax service, and the customer’s taxable address from the invoice as the Destination Address to the tax service.
 
-<Image align="center" border="true" src="https://files.readme.io/6876f6c-Screenshot_2024-06-06_at_9.31.37_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/6876f6c-Screenshot_2024-06-06_at_9.31.37_PM.png" />
 
-**Sample invoice where Business Entity tax address is used for the origin address, and Customer tax address is used for the destination address. This is the default/standard behavior for all Business Entities unless overridden. **
+\*\*Sample invoice where Business Entity tax address is used for the origin address, and Customer tax address is used for the destination address. This is the default/standard behavior for all Business Entities unless overridden. \*\*
 
-Here, you see that the tax rate applied to the invoice is based off the customer's taxable address, which used the Denver, Colorado sales tax amount. 
+Here, you see that the tax rate applied to the invoice is based off the customer's taxable address, which used the Denver, Colorado sales tax amount.
 
-<Image align="center" border="true" src="https://files.readme.io/8463c4b-Screenshot_2024-06-11_at_3.11.17_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/8463c4b-Screenshot_2024-06-11_at_3.11.17_PM.png" />
 
 However, you can override these settings if you wish to do so. Some merchants require that the merchant’s taxable address be used for both the Origin and Destination Addresses, and others may require that the customer’s taxable address be used for both the origin and destination addresses. Recurly supports merchants in controlling which taxable addresses to send their tax service for this reason.
 
 > 🚧 Using the merchant’s taxable address for the Origin Address and the customer’s taxable address for the Destination Address is standard practice for most regions.
-> 
+>
 > You should consult your accounting and/or compliance team to determine which taxable address configuration is best for you and your business entity/entities. By choosing to override these default settings, your invoices may ignore standard tax rules from the tax service, such as reverse VAT.
 
 Since in the vast amount of cases, tax services use the Destination Address to calculate tax off of, if your business requires that all customers be taxed based off of your business entity’s tax address, you can try setting the Business Entity Tax Address to be used for both the Origin and Destination Addresses.
 
-<Image align="center" border="true" src="https://files.readme.io/a4d250b-Screenshot_2024-06-06_at_10.02.15_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/a4d250b-Screenshot_2024-06-06_at_10.02.15_PM.png" />
 
 **Sample invoice where Business Entity tax address is used for both origin and destination address values**
 
 Here, you see that as both the origin and destination addresses used the Business Entity tax address for tax calculation, the resulting tax rate applied to the customer's invoice is based off of the GB VAT rate amount of 20%, since the merchant is located in the United Kingdom.
 
-<Image align="center" border="true" src="https://files.readme.io/46c9707-Screenshot_2024-06-11_at_3.05.09_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/46c9707-Screenshot_2024-06-11_at_3.05.09_PM.png" />
 
 **Sample invoice where Business Entity tax address is used for both origin and destination address values**
 
@@ -170,46 +163,45 @@ In this example, the Business Entity is located outside of the United States, an
 
 > 🚧 If you choose to make both the origin and destination address values use the Business Entity tax address, and the Business Entity tax address is outside of the United States, the VAT prefix shown on the invoice will show "USST" for United States Sales Tax instead of the local country code prefix. The correct tax rate will still apply to the invoice based on the Business Entity's taxable address location.
 
-
-<Image align="center" border="true" src="https://files.readme.io/b9362c2-Screenshot_2024-06-11_at_2.47.18_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/b9362c2-Screenshot_2024-06-11_at_2.47.18_PM.png" />
 
 Some US states require that a customer’s address be used for both the Origin and Destination address for particular goods, or if a merchant ships from a warehouse but does not maintain a taxable address at the warehouse location. In this case, you can try setting the Customer Tax Address to be used for both the Origin and Destination Addresses.
 
-<Image align="center" border="true" src="https://files.readme.io/88ae714-Screenshot_2024-06-06_at_10.04.49_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/88ae714-Screenshot_2024-06-06_at_10.04.49_PM.png" />
 
 **Sample invoice where Customer tax address is used for both origin and destination address values**
 
-Here, you see that the tax rate applied to the invoice is based off of the customer's taxable address, which is out of Wyoming. 
+Here, you see that the tax rate applied to the invoice is based off of the customer's taxable address, which is out of Wyoming.
 
-<Image align="center" border="true" src="https://files.readme.io/927dd57-Screenshot_2024-06-11_at_2.41.58_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/927dd57-Screenshot_2024-06-11_at_2.41.58_PM.png" />
 
-Keep in mind that whichever taxable address configuration you set on your business entity will apply to all invoices associated with that entity. However, you can set unique taxable address configurations for each of your business entities. This allows merchants with different taxation requirements in varying global regions to successfully apply taxes to invoices based on the expected tax application behavior for each legal entity. 
+Keep in mind that whichever taxable address configuration you set on your business entity will apply to all invoices associated with that entity. However, you can set unique taxable address configurations for each of your business entities. This allows merchants with different taxation requirements in varying global regions to successfully apply taxes to invoices based on the expected tax application behavior for each legal entity.
 
 If you decide to change your business entity’s taxable address configuration settings at any point, no historic invoices will be impacted. All invoices generated after updating the taxable address settings will assume the new behavior.
 
 ## Taxable Addresses for one-time-charges
 
-Recurly supports taxable address settings for one-time-charges via UI and both API versions for merchants on Recurly's Elite plan. 
+Recurly supports taxable address settings for one-time-charges via UI and both API versions for merchants on Recurly's Elite plan.
 
 The taxable address settings for charges will assume the settings from the business entity that will be applied to the invoice by default. However, you can choose to override this default behavior in the event that you require separate tax calculation behavior for one-time-charges than you do for standard subscription purchases.
 
-The screenshot below shows an example of a merchant creating a new charge on a customer account. To ensure tax is applied to the invoice, the customer must not be tax-exempt, and the checkbox must be enabled under "Tax Collection." 
+The screenshot below shows an example of a merchant creating a new charge on a customer account. To ensure tax is applied to the invoice, the customer must not be tax-exempt, and the checkbox must be enabled under "Tax Collection."
 
-<Image align="center" sizing="70%" border="true" src="https://files.readme.io/d5b7a87-Screenshot_2024-07-02_at_4.12.49_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/d5b7a87-Screenshot_2024-07-02_at_4.12.49_PM.png" />
 
-Once "Tax Collection" is enabled, you will see a new section on the charge expand to provide you the ability to override the Business Entity taxable address configurations for the given charge. 
+Once "Tax Collection" is enabled, you will see a new section on the charge expand to provide you the ability to override the Business Entity taxable address configurations for the given charge.
 
-<Image align="center" sizing="70%" border="true" src="https://files.readme.io/cc827b9-Screenshot_2024-07-02_at_4.15.32_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/cc827b9-Screenshot_2024-07-02_at_4.15.32_PM.png" />
 
-At this point, if you decide to create the charge without enabling the option to "Override taxable address settings from business entity," the taxable addresses used for the charge will leverage the Origin and Destination addresses from the invoice based on the configurations set on the specific business entity that is applied to that charge invoice. In other words, the charge will follow the same taxable address behavior as [subscriptions](https://docs.recurly.com/docs/tax#setting-taxable-addresses) do.  
+At this point, if you decide to create the charge without enabling the option to "Override taxable address settings from business entity," the taxable addresses used for the charge will leverage the Origin and Destination addresses from the invoice based on the configurations set on the specific business entity that is applied to that charge invoice. In other words, the charge will follow the same taxable address behavior as [subscriptions](https://docs.recurly.com/docs/tax#setting-taxable-addresses) do.
 
-Alternatively, you can enable the "Override taxable address settings from business entity" checkbox, and set your desired values for the Origin and Destination addresses for the given charge. 
+Alternatively, you can enable the "Override taxable address settings from business entity" checkbox, and set your desired values for the Origin and Destination addresses for the given charge.
 
-<Image align="center" sizing="70%" border="true" src="https://files.readme.io/b702ee9-Screenshot_2024-07-02_at_4.26.14_PM.png" />
+<Image align="center" className="border" border="true" src="https://files.readme.io/b702ee9-Screenshot_2024-07-02_at_4.26.14_PM.png" />
 
-The tax calculated for the invoice will reflect the overriding taxable address settings applied to the charge. 
+The tax calculated for the invoice will reflect the overriding taxable address settings applied to the charge.
 
-If there are multiple charges on a single invoice, you can set distinct taxable address settings for each charge/line item. Tax will be applied for each line item on the charge invoice based on each line item's individual taxable address settings. 
+If there are multiple charges on a single invoice, you can set distinct taxable address settings for each charge/line item. Tax will be applied for each line item on the charge invoice based on each line item's individual taxable address settings.
 
 ## Which address fields to collect
 
@@ -217,18 +209,18 @@ To accurately calculate tax, you need specific minimum address fields in the cus
 
 ### Minimum address requirements
 
-- [Australia](#section-australia): Country
-- [Canada](#section-canada): Country and postal code
-- [Chile](#section-chile): Country
-- [Europe (Non-EU)](#section-europe-non-eu-): Country
-- [European Union](#section-european-union): Country
-- [Indonesia](#section-indonesia): Country
-- [Israel](#section-israel): Country
-- [New Zealand](#section-new-zealand): Country
-- [South Africa](#section-south-africa): Country
-- [Thailand](#section-thailand): Country
-- [United Kingdom](#section-united-kingdom): Country
-- [United States](#section-united-states): Country and postal code (full street address recommended)
+* [Australia](#section-australia): Country
+* [Canada](#section-canada): Country and postal code
+* [Chile](#section-chile): Country
+* [Europe (Non-EU)](#section-europe-non-eu-): Country
+* [European Union](#section-european-union): Country
+* [Indonesia](#section-indonesia): Country
+* [Israel](#section-israel): Country
+* [New Zealand](#section-new-zealand): Country
+* [South Africa](#section-south-africa): Country
+* [Thailand](#section-thailand): Country
+* [United Kingdom](#section-united-kingdom): Country
+* [United States](#section-united-states): Country and postal code (full street address recommended)
 
 ### Recurly's address requirements
 
@@ -238,7 +230,7 @@ However, this Site Settings Address Requirement doesn't extend to the Account In
 
 ### Recurly Taxes address requirements
 
-Recurly Taxes sets a maximum character limit for each address field, affecting invoices taxed through Recurly Taxes and Avalara AvaTax Pro. Exceeding these limits in Recurly can lead to inaccurate taxation or the absence of tax application.
+Recurly Taxes sets a maximum character limit for each address field, affecting invoices taxed through Recurly Taxes and Avalara AvaTax. Exceeding these limits in Recurly can lead to inaccurate taxation or the absence of tax application.
 
 | Field Name        | Max Character Length                                                                                                  | Example         |
 | :---------------- | :-------------------------------------------------------------------------------------------------------------------- | :-------------- |
@@ -275,11 +267,11 @@ Recurly employs Avalara’s address validation tools to verify the validity of a
 
 When using Recurly Taxes, if the address is deemed invalid or the customer's tax region (tax jurisdiction) can't be determined due to insufficient address information, the sign-up will be blocked, meaning neither a subscription nor an invoice will be created. One of the following errors will be returned:
 
-- _"The address provided is invalid, could not determine taxing jurisdictions"_: This error occurs when either the customer's address or the merchant/site's address is invalid or lacks sufficient information for tax jurisdiction determination.
+* *"The address provided is invalid, could not determine taxing jurisdictions"*: This error occurs when either the customer's address or the merchant/site's address is invalid or lacks sufficient information for tax jurisdiction determination.
 
-- _"The state/province provided is invalid, could not apply tax"_: This error is returned when the state/province in either the customer's or the merchant/site's address is invalid.
+* *"The state/province provided is invalid, could not apply tax"*: This error is returned when the state/province in either the customer's or the merchant/site's address is invalid.
 
-- "The city provided is invalid, could not apply tax": This is returned when the city in either the customer's or the merchant/site's address is invalid for the specified country.
+* "The city provided is invalid, could not apply tax": This is returned when the city in either the customer's or the merchant/site's address is invalid for the specified country.
 
 ### For future subscriptions and renewals
 
@@ -287,7 +279,7 @@ Addresses are still sent to Avalara for validation for ongoing subscriptions and
 
 ### When Avalara address validation is used
 
-For merchants utilizing Recurly Taxes, only addresses within your taxable regions are sent to Avalara for validation. If insufficient information is available to identify the taxable region, the address won't be sent to Avalara. For merchants with their own Avalara AvaTax Pro account, all addresses undergo Avalara validation. If an account lacks an address, its invoices are created without tax and don't undergo Avalara's address validation.
+For merchants utilizing Recurly Taxes, only addresses within your taxable regions are sent to Avalara for validation. If insufficient information is available to identify the taxable region, the address won't be sent to Avalara. For merchants with their own Avalara AvaTax account, all addresses undergo Avalara validation. If an account lacks an address, its invoices are created without tax and don't undergo Avalara's address validation.
 
 ### Military addresses
 
@@ -313,7 +305,7 @@ In the Business Entities section, you can specify a default VAT Number and Tax R
 
 ### Country-specific tax registration numbers
 
-To display different VAT Numbers and Tax Registration Numbers on invoices for customers in specific countries (for example, if you're registered in Turkey and want to show both your Turkish VAT number and Tax **Registration** Number on invoices to customers in Turkey), you can configure this when adding or updating a Business Entity. 
+To display different VAT Numbers and Tax Registration Numbers on invoices for customers in specific countries (for example, if you're registered in Turkey and want to show both your Turkish VAT number and Tax **Registration** Number on invoices to customers in Turkey), you can configure this when adding or updating a Business Entity.
 
 ## Enable a taxable region
 
@@ -331,9 +323,9 @@ To enable a tax region:
 Note: While Recurly supports tax calculations for listed regions, invoice compliance for each region is not guaranteed.
 
 > 🚧 Enable tax regions and taxable plans at the start of the day UTC
-> 
+>
 > Avalara's taxable region start and end dates do not include times. Therefore, enabling taxes in a region mid-day UTC might result in customers invoiced earlier without tax. If a refund is needed, Avalara may calculate taxes on the refund, potentially leading to a larger refund amount than the original transaction. This discrepancy can cause an error and block the refund.
-> 
+>
 > To prevent this, try to enable new taxable regions and relevant plans around the start of the day UTC. If this issue arises, contact Recurly Support.
 
 ### Supported regions
@@ -362,7 +354,7 @@ Note: While Recurly supports tax calculations for listed regions, invoice compli
 
 ## Supported tax regions and their rates
 
-Tax regions are organized by continent in the tables below. 
+Tax regions are organized by continent in the tables below.
 
 ### Africa
 
@@ -440,7 +432,7 @@ Enabling tax collection in Australia will apply 10% GST to all taxable plan, add
 Recurly supports the handling and verification of Australian Business Numbers (ABN) and Australian Company Numbers (ACN). When the customer's country is set to Australia, the VAT number field on the invoice, Checkout, Hosted Pages, and in the Admin Console will be labeled "ABN / ACN." Any number entered in this field for Australia will undergo validation to confirm it is either 9 or 11 digits, and will be saved and displayed in the formats "000 000 000" or "00 000 000 000," respectively.
 
 > 📘 Enable ABN validation with Australian Business Register
-> 
+>
 > For identifying customers with an active and GST-registered ABN, thereby exempting them from Australian GST, reach out to [Recurly Support](https://support.recurly.com/). Request the activation of **ABN validation through the Australian Business Register** on your Recurly site. More information on this feature is available in the **AU GST on Digital Services** section below.
 
 #### AU GST on digital services
@@ -457,9 +449,9 @@ Recurly revalidates ABNs with the Australian Business Register every six months.
 
 ABN validation with the Australian Business Register is only active in production mode on your Recurly site. In sandbox mode, you can simulate responses with these test ABNs:
 
-- 10 120 000 004: Treated as a real, GST-registered ABN, exempt from tax.
-- 10 000 000 000: Treated as a real ABN not registered for GST, and will be taxed.
-- 51 824 753 555: Not recognized as a real ABN and will not be saved.
+* 10 120 000 004: Treated as a real, GST-registered ABN, exempt from tax.
+* 10 000 000 000: Treated as a real ABN not registered for GST, and will be taxed.
+* 51 824 753 555: Not recognized as a real ABN and will not be saved.
 
 ##### Location Validation
 
@@ -471,7 +463,7 @@ To require two pieces of matching location evidence from taxable Australian cust
 
 Enabling tax collection in a non-EU European country will apply that country's VAT rate to all taxable plan, add-on or adjustment line items for customers in the country.
 
-All countries have a Tax Type of _VAT_ and a Minimum Address Requirement of _Country_.
+All countries have a Tax Type of *VAT* and a Minimum Address Requirement of *Country*.
 
 Here are all the supported non-EU European countries and their rates:
 
@@ -526,10 +518,10 @@ Starting from October 1, 2016, New Zealand mandated non-resident digital service
 
 With Recurly, you can collect GST Numbers from New Zealand business customers and ensure invoices are not taxed when a valid New Zealand GST Number is provided.
 
-- Input the GST Number in the VAT Number field of the customer's address in Recurly.
-- For addresses with New Zealand as the country, Recurly requires the GST Number to be either 8 or 9 digits.
-- On invoices, Recurly will label the field as "GST Number" instead of "VAT Number" for New Zealand customers to correctly identify the provided information.
-- If you have enabled New Zealand taxes and your Site Settings country is not New Zealand, Recurly will not apply tax on invoices where the customer is in New Zealand and has a valid GST Number in the VAT Number field.
+* Input the GST Number in the VAT Number field of the customer's address in Recurly.
+* For addresses with New Zealand as the country, Recurly requires the GST Number to be either 8 or 9 digits.
+* On invoices, Recurly will label the field as "GST Number" instead of "VAT Number" for New Zealand customers to correctly identify the provided information.
+* If you have enabled New Zealand taxes and your Site Settings country is not New Zealand, Recurly will not apply tax on invoices where the customer is in New Zealand and has a valid GST Number in the VAT Number field.
 
 ### North America
 
@@ -577,7 +569,7 @@ When managing tax collection in Canada using Recurly, it's important to understa
 | Saskatchewan\*              | GST/PST  |
 | Yukon                       | GST      |
 
-- For customers located in a province different from the one you have enabled in your Canada tax settings, they will only be charged GST.
+* For customers located in a province different from the one you have enabled in your Canada tax settings, they will only be charged GST.
 
 Note: Some Canadian cities have unique exemption rules. For instance, the city of Lloydminster spans both Alberta and Saskatchewan and is exempt from PST due to its unique location. Recurly Taxes takes these city-specific rules into account. However, Recurly's tax calculations in sandbox mode and for production previews are at the provincial level and may not reflect these city-level exceptions.
 
@@ -587,10 +579,10 @@ Enabling tax collection in the United States will apply Sales Tax to all taxable
 
 The Tax Region for U.S. Sales Tax is always the two letter state code of the tax being applied. This is shown on the invoice next to the combined tax rate.
 
-The Minimum Address Requirement for U.S. Sales Tax is _Postal Code_ and _Country_.
+The Minimum Address Requirement for U.S. Sales Tax is *Postal Code* and *Country*.
 
 > 📘 Collect full street address for more accurate rate calculations
-> 
+>
 > U.S. Sales Tax has complex tax jurisdiction dividing lines that go down to the street address. The house across the street from you can be in the same postal code, but be in a different tax jurisdiction. While a postal code and country are the minimum address requirement for taxes to be calculated, we strongly suggest merchants collect the full street address in order to calculate more accurate tax rates through Recurly Taxes.
 
 | Country            | Tax Region | Tax Rate | Tax Type |
@@ -629,7 +621,7 @@ The Minimum Address Requirement for U.S. Sales Tax is _Postal Code_ and _Country
 | Uruguay             | UY         | 22%      | GST      |
 | Venezuela           | VE         | 16%      | GST      |
 
-- Recurly does not support RUT number validation, format validation, or IP address validation in Chile. 
+* Recurly does not support RUT number validation, format validation, or IP address validation in Chile.
 
 # Taxable plans and adjustments
 
@@ -637,7 +629,7 @@ The Minimum Address Requirement for U.S. Sales Tax is _Postal Code_ and _Country
 
 Once you enable a taxable region, you can configure your plans to collect taxes. All existing plans will default to tax exempt. You will need to edit each individual plan that you want to tax to enable the "Collect Tax" option. All new plans created will default to collecting tax. If a plan has "Collect Tax" enabled, any included add-ons will also be taxed.
 
-<Image align="center" caption="How to enable a plan to collect tax" src="https://files.readme.io/I4jdxgmIRjq5DT9kW6vE_tax-on-plan.png" />
+<Image align="center" border={false} caption="How to enable a plan to collect tax" src="https://files.readme.io/I4jdxgmIRjq5DT9kW6vE_tax-on-plan.png" />
 
 ## One-time charges
 
@@ -647,7 +639,7 @@ Once you enable a taxable region, you can create custom charge adjustments that 
 
 ## Tax product type
 
-Recurly's in-the-box tax calculations, leveraging AvaTax by Avalara, treats each line item (plan, add-on, adjustment) as "Tangible Personal Property" (TPP), typically considered physical goods. In many regions, tax rules for physical and digital goods, as well as services, align with those for TPP. You should ensure that the basic rates calculated meet your taxation needs. You can also choose to enter a specific tax code for a given product, if you have a particular tax code(s) your business requires for the products/services being sold. Recurly recommends consulting with your tax and accounting experts before applying a specific tax code to products within the application. 
+Recurly's in-the-box tax calculations, leveraging AvaTax by Avalara, treats each line item (plan, add-on, adjustment) as "Tangible Personal Property" (TPP), typically considered physical goods. In many regions, tax rules for physical and digital goods, as well as services, align with those for TPP. You should ensure that the basic rates calculated meet your taxation needs. You can also choose to enter a specific tax code for a given product, if you have a particular tax code(s) your business requires for the products/services being sold. Recurly recommends consulting with your tax and accounting experts before applying a specific tax code to products within the application.
 
 You can find a list of <a href="https://taxcode.avatax.avalara.com/" target="_blank">suggested tax codes</a> on Avalara’s website. Click into the category of products you are selling to see the tax codes.
 
@@ -663,9 +655,9 @@ Recurly provides tax estimate previews based on internal rate tables, while fina
 
 Invoices that include tax will feature:
 
-- A "Tax" column next to Subtotal, displaying the tax rate for each line item. If tax is not applicable, it will show as 0.00%.
-- A "Total" column after the Tax column, showing the combined amount of the subtotal and tax for each line item.
-- An invoice-level total tax row, detailing the tax region, rate, and total tax amount for the invoice, equaling the sum of the tax amounts from all line items.
+* A "Tax" column next to Subtotal, displaying the tax rate for each line item. If tax is not applicable, it will show as 0.00%.
+* A "Total" column after the Tax column, showing the combined amount of the subtotal and tax for each line item.
+* An invoice-level total tax row, detailing the tax region, rate, and total tax amount for the invoice, equaling the sum of the tax amounts from all line items.
 
 #### Tax invoices with multiple tax rates
 
@@ -673,8 +665,8 @@ An invoice may contain more than one tax rate, depending on the tax treatment of
 
 In such cases, the invoice will also include:
 
-- A Tax Details card that outlines each tax rate, the associated subtotal amount, and the tax amount.
-- An invoice-level total tax row that shows only the total tax amount for the invoice, as the Tax Details card provides detailed information about rates and subtotal amounts.
+* A Tax Details card that outlines each tax rate, the associated subtotal amount, and the tax amount.
+* An invoice-level total tax row that shows only the total tax amount for the invoice, as the Tax Details card provides detailed information about rates and subtotal amounts.
 
 ## Tax amount rounding
 
@@ -682,23 +674,23 @@ In sandbox mode, tax amount estimates and production mode previews are always ro
 
 ### Example
 
-_Given Scenario:_
+*Given Scenario:*
 
-- Invoice rate is HU VAT 27% (Hungary VAT)
-- First line item costs $5.79 (raw tax = $1.5633)
-- Second line item costs $5.81 (raw tax = $1.5687)
+* Invoice rate is HU VAT 27% (Hungary VAT)
+* First line item costs $5.79 (raw tax = $1.5633)
+* Second line item costs $5.81 (raw tax = $1.5687)
 
-_Sandbox Mode and Production Previews:_
+*Sandbox Mode and Production Previews:*
 
-- Tax for the first line item = $1.57
-- Tax for the second line item = $1.57
-- Total tax = $3.14
+* Tax for the first line item = $1.57
+* Tax for the second line item = $1.57
+* Total tax = $3.14
 
-_Production Actual Invoice:_
+*Production Actual Invoice:*
 
-- Tax for the first line item = $1.56
-- Tax for the second line item = $1.57
-- Total tax = $3.13
+* Tax for the first line item = $1.56
+* Tax for the second line item = $1.57
+* Total tax = $3.13
 
 ## Tax on credits
 
@@ -708,14 +700,14 @@ When refunding tax, the entire tax amount should be itemized and documented on a
 
 Refunds in Recurly generate a refund invoice, acting as a credit memo. The refund method influences the tax calculation approach.
 
-_Line Item Refunds:_  
+*Line Item Refunds:*\
 Recurly calculates tax on the selected refund line items. These refunds maintain the product identity, ensuring the correct tax amount is linked with the refunded credit on both the refund invoice and your "Adjustments" export.
 
-_Open Amount Refunds:_  
+*Open Amount Refunds:*\
 Also known as Specific Amount Refunds, Recurly calculates the tax to be returned so that the net refund to the customer matches the requested amount. If the invoice being refunded has multiple line items, the returned tax isn't linked to any specific item. As Open Amount Refunds are at the invoice level, specific line item associations are lost. Hence, Line Item Refunds are recommended unless a custom refund amount is necessary.
 
 > 🚧 Rounding Issues with Multiple Partial Refunds
-> 
+>
 > Partial refunds that include tax might lead to rounding issues, where the final refund amount's tax is slightly higher than the original transaction amount. This can block the refund with an error. If this occurs, contact Recurly Support.
 
 ### Immediate upgrades and downgrades
@@ -732,14 +724,14 @@ Recurly does not calculate tax on custom credit adjustments. To credit a custome
 
 Recurly offers detailed tax reporting at the line item level through the ["Adjustments" export](https://docs.recurly.com/docs/adjustments-exports). This export itemizes state, county, local, and special tax rates and amounts as calculated by Avalara.
 
-However, specialized reports or exports for taxes are not directly provided by Recurly. These features are available when you upgrade to your own Avalara AvaTax Pro or Vertex account.
+However, specialized reports or exports for taxes are not directly provided by Recurly. These features are available when you upgrade to your own Avalara AvaTax or Vertex account.
 
 ## Disable a taxable region
 
 Disabling a taxable region will stop tax collection on future invoices from customers in that location. If a refund is later processed on a taxed invoice from that disabled region, tax will be refunded appropriately because we track the date range where you collected tax in the region.
 
 > ❗️ Do not disable and re-enable a Tax Region in Production Mode
-> 
+>
 > We allow merchants to disable tax regions because they may no longer have a tax obligation in that area. Be careful about mistakenly disabling a tax region because re-enabling it will reset the date range tracked for the region and past invoices will not refund tax correctly. If you get yourself in this situation, please contact Recurly Support.
 
 # Sandbox testing
@@ -756,7 +748,7 @@ To check Avalara's operational status, visit [Avalara's status page](http://stat
 
 In cases where Recurly can't obtain a successful response from Avalara, or if the internal tax service is unresponsive, new sign-ups or purchases will be blocked (preventing the creation of a subscription or invoice). This measure ensures that no invoice is generated for a customer in a taxable location without accounting for tax. The error message provided will be:
 
-- "Tax service currently unavailable, please try again later"
+* "Tax service currently unavailable, please try again later"
 
 ### Disable tax response requirement for initial purchases
 
@@ -778,5 +770,5 @@ If Avalara or Recurly's internal tax service encounters an error during a renewa
 
 There are several ways to determine if the tax service was used for an invoice:
 
-- In the API and exports, there is a boolean field called `used_tax_service` indicating whether the tax service was utilized.
-- In the Recurly user interface, there will be a note on the invoice specifying whether the tax service was used.
+* In the API and exports, there is a boolean field called `used_tax_service` indicating whether the tax service was utilized.
+* In the Recurly user interface, there will be a note on the invoice specifying whether the tax service was used.
