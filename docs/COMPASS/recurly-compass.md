@@ -79,6 +79,10 @@ Find exactly what you need, fast. The in-app Global Search feature puts key Recu
 
 <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/98a5ba2243c6ced22c5a40fa73b5ce69de82dbefb455606b0855b4f06357395b-compassAssistant.png" />
 
+# Legal
+
+Recurly AI Data Insights, Recurly Data Explorer, and Recurly Assistant Document Search all share non-merchant identifiable information and additional inputs with respective third parties, such as Google Vertex AI, Google’s Gemini LLM, and Elastic Cloud. Insights and responses are generated based on the Google Vertex AI Language Model, Gemini LLM, and a retrieval-augmented generation (RAG) model, and may include inaccurate information. Therefore, all data insights and responses must be carefully reviewed, verified for accuracy, and checked for applicability.
+
 # FAQs
 
 #### **What permissions do I need to access Compass features?**
