@@ -44,7 +44,7 @@ Recurly's EU VAT feature is a comprehensive tool designed to facilitate the auto
 
 # European Union VAT with Recurly
 
-Recurly provides comprehensive support for VAT collection and validation across all 28 EU member states. For merchants offering digital products, an automated Location Validation feature is available to accommodate the 2015 digital rate amendments.
+Recurly provides comprehensive support for VAT collection and validation across all 27 EU member states. For merchants offering digital products, an automated Location Validation feature is available to accommodate the 2015 digital rate amendments.
 
 ## EU countries and territories
 
@@ -208,21 +208,21 @@ With the Brexit transitionary period ending on 12/31/2020, Recurly will apply GB
 
 For B2C merchants:
 
-1. If your Business Entity country is set to the UK and your customer is located in an EU member region, and that member region is not enabled in your tax configuration settings, no tax will be applied to the invoice.  Previously, GB VAT would be applied.  If you need to apply tax in this scenario, enable all the EU regions you are doing business in your tax configuration settings.  Doing so will ensure the appropriate destination VAT is applied. 
+1. If your Business Entity country is set to the UK and your customer is located in an EU member region, and that member region is not enabled in your tax configuration settings, no tax will be applied to the invoice.  Previously, GB VAT would be applied.  If you need to apply tax in this scenario, enable all the EU regions you are doing business in your tax configuration settings.  Doing so will ensure the appropriate destination VAT is applied.
 
-2. If your Business Entity country is set to an EU member region and your customer is located in the UK, and the UK is not enabled in your tax configuration settings, no tax will be applied to the invoice.  Previously, your EU member region VAT rate would be applied.  If you need to apply tax in this scenario, enable the UK as a region in which you are doing business in your tax configuration settings.  Doing so will ensure the appropriate UK VAT rate is applied. 
+2. If your Business Entity country is set to an EU member region and your customer is located in the UK, and the UK is not enabled in your tax configuration settings, no tax will be applied to the invoice.  Previously, your EU member region VAT rate would be applied.  If you need to apply tax in this scenario, enable the UK as a region in which you are doing business in your tax configuration settings.  Doing so will ensure the appropriate UK VAT rate is applied.
 
 3. If your Business Entity country is set to a country outside of the UK or EU, and the UK is not enabled in your tax configuration settings, no tax will be applied to the invoice.  If you need to apply tax in this scenario, enable the UK as a region in which you are doing business in your tax configuration settings.  Doing so will ensure the appropriate UK VAT rate is applied.
 
 > **Note:** For scenarios 2 and 3 above, some considerations if you sell physical goods. Starting 1/1/2021, all imported goods purchased will be subject to value-added tax (VAT). This will end the current £15 (about $20) VAT exemption thresholds known as low value consignment stock relief.  Foreign sellers must begin collecting U.K. VAT at the time of checkout on consignments not exceeding £135 ($180). Non-U.K. based businesses will need to register in the U.K. so they can make proper customs clearance declarations before shipments will be allowed into the country.  If you are supplying physical goods to the UK above £135, additional rules may apply.  Please consult a tax professional to determine which  Recurly configurations are appropriate for you.
 
-For B2B merchants: 
+For B2B merchants:
 
-1. If you are not currently capturing VAT numbers from your UK based customers, no reverse VAT charge notes will be included on your customers' invoices.  If you need to include reverse VAT charges, enable the UK as a region in which you are doing business in your tax configuration settings and begin collecting VAT numbers from your business customers. 
+1. If you are not currently capturing VAT numbers from your UK based customers, no reverse VAT charge notes will be included on your customers' invoices.  If you need to include reverse VAT charges, enable the UK as a region in which you are doing business in your tax configuration settings and begin collecting VAT numbers from your business customers.
 
 For Merchants located and/or doing business in Northern Ireland:
 
- If you are located in Northern Ireland, to properly calculate VAT, you may need to update your Site Address Country to Northern Ireland.   If you are doing business in Northern Ireland, to properly calculate VAT, you may need to enable Northern Ireland as a Taxable Region within the EU on your site's Tax Settings and ensure your customers located in Northern Ireland specify Northern Ireland as their billing/account address country.  Please consult a tax professional to determine which Recurly configurations are appropriate for you.
+If you are located in Northern Ireland, to properly calculate VAT, you may need to update your Site Address Country to Northern Ireland.   If you are doing business in Northern Ireland, to properly calculate VAT, you may need to enable Northern Ireland as a Taxable Region within the EU on your site's Tax Settings and ensure your customers located in Northern Ireland specify Northern Ireland as their billing/account address country.  Please consult a tax professional to determine which Recurly configurations are appropriate for you.
 
 ### Exempt customers
 
@@ -236,15 +236,11 @@ The EU VAT feature is designed to tax all transactions by default. However, it o
 
 For accurate taxation, it's essential to categorize digital services such as telecommunications, broadcasting, and electronic services at the product level. This ensures that EU consumers are taxed based on their respective country rates, especially for cross-border sales. With Recurly Taxes activated, you can configure plans, add-ons, and one-time charges to have a Tax Type of either "Digital Product", "Physical Product", or "Unknown". By default, all items are set to "Unknown". Both "Unknown" and "Physical Product" are treated as Tangible Personal Property (TPP) in Avalara during tax computation. In the Admin Console, this field is labeled as Tax Type, while in the API and Recurly.js, it's referred to as tax\_code.
 
-<Image title="Screen Shot 2018-11-06 at 1.52.34 PM.png" alt={1348} align="center" src="https://files.readme.io/0bae8b0-Screen_Shot_2018-11-06_at_1.52.34_PM.png">
-  Ensure the plan is set to "Collect Tax" to view the Tax Type.
-</Image>
+<Image align="center" alt={1348} border={false} caption="Ensure the plan is set to &#x22;Collect Tax&#x22; to view the Tax Type." title="Screen Shot 2018-11-06 at 1.52.34 PM.png" src="https://files.readme.io/0bae8b0-Screen_Shot_2018-11-06_at_1.52.34_PM.png" />
 
-<Image title="Screen Shot 2018-11-06 at 1.53.53 PM.png" alt={1348} align="center" src="https://files.readme.io/735a9c8-Screen_Shot_2018-11-06_at_1.53.53_PM.png">
-  Configuring the Tax Type for Add-Ons.
-</Image>
+<Image align="center" alt={1348} border={false} caption="Configuring the Tax Type for Add-Ons." title="Screen Shot 2018-11-06 at 1.53.53 PM.png" src="https://files.readme.io/735a9c8-Screen_Shot_2018-11-06_at_1.53.53_PM.png" />
 
-If you categorize plans, add-ons, or charges as a Digital Product, ensure you're VAT registered across all 28 EU countries and have selected all these countries on the EU VAT Configuration page. If you're not VAT registered in an EU country where the digital item is being billed, the invoice will be halted.
+If you categorize plans, add-ons, or charges as a Digital Product, ensure you're VAT registered across all 27 EU countries and have selected all these countries on the EU VAT Configuration page. If you're not VAT registered in an EU country where the digital item is being billed, the invoice will be halted.
 
 ### Understanding VAT rates
 
@@ -333,11 +329,13 @@ For each notification received or for each "FALSE" account in the Accounts expor
 
 ## Invoice sequencing by country
 
-By default, Recurly uses a single sequence for invoice numbers across your site, adhering to the European Commission's invoicing rules. However, certain EU member states mandate a unique sequence for their country. To cater to this, we offer the Country Invoice Sequencing feature. This allows merchants to establish distinct sequences for each EU member state. Once activated, all new EU invoices will have a number that progresses based on that country's sequence. Each sequence commences at 1000 and is prefixed with the respective two-letter country code (e.g., FR1000 for France). This country-specific sequencing is exclusive to the 28 EU member states. Invoices for customers outside the EU will follow the site-level sequence.
+By default, Recurly uses a single sequence for invoice numbers across your site, adhering to the European Commission's invoicing rules. However, certain EU member states mandate a unique sequence for their country. To cater to this, we offer the Country Invoice Sequencing feature. This allows merchants to establish distinct sequences for each EU member state. Once activated, all new EU invoices will have a number that progresses based on that country's sequence. Each sequence commences at 1000 and is prefixed with the respective two-letter country code (e.g., FR1000 for France). This country-specific sequencing is exclusive to the 27 EU member states. Invoices for customers outside the EU will follow the site-level sequence.
 
-## Not supported: VAT currency conversion
+## VAT currency conversion
 
-EU VAT rules require the VAT amount on an invoice to be displayed in the local currency of the customer. Recurly does not provide this feature and does not have support in the EU VAT tool.
+EU VAT rules require invoices to show VAT amounts in the customer’s local currency. When issuing invoices in Europe, display both the VAT and subtotal in the country’s official currency according to the corresponding ISO code. This ensures customers see accurate tax calculations aligned with local regulations. These guidelines apply to countries using the euro (EU member states) as well as the UK (GBP).
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5d26619ac0b078da14bc655cb4c19c191f46beb7fc9bab2925c9c31024bb9558-VATCurrencyConversionInvoice.png" />
 
 ### Alternative solutions
 
@@ -371,7 +369,7 @@ Consult with our Avalara representative to determine the appropriate tax codes f
 
 AvaTax Pro users can utilize **Location Validation** to meet Digital Services evidence requirements and **Country Invoice Sequencing** if a distinct invoice sequence for each EU country is needed. Both features are accessible from the "Tax Settings" page, found at the top right corner of the Taxes page. Additionally, AvaTax Pro
 
- users automatically benefit from VAT Number validation and will observe new Reverse Charge notes on invoices that contain customer VAT Numbers.
+users automatically benefit from VAT Number validation and will observe new Reverse Charge notes on invoices that contain customer VAT Numbers.
 
 ### Implementing Recurly.js
 
