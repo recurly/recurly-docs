@@ -109,6 +109,10 @@ No, merchant and subscriber data is **never** shared with competitors.
 
 No, Recurly does not currently use merchant data for AI training.
 
+#### **What if I want to opt-out of Recurly Compass?**
 
-<script async src="https://js.storylane.io/js/v2/storylane.js"></script>
-<iframe loading="lazy" class="sl-demo" src="https://app.storylane.io/demo/ad51kvwsh5db?embed=inline" name="sl-embed" allow="fullscreen" allowfullscreen></iframe>
+Contact [support@recurly.com](mailto:support@recurly.com) to opt-out.
+
+<script async src="https://js.storylane.io/js/v2/storylane.js" />
+
+<iframe loading="lazy" class="sl-demo" src="https://app.storylane.io/demo/ad51kvwsh5db?embed=inline" name="sl-embed" allow="fullscreen" allowfullscreen />
