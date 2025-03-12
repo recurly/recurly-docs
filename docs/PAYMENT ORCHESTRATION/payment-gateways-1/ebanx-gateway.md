@@ -121,24 +121,7 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 ## Mandate Preferences
 
-**UPI – Recurring** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. Depending on your settings, the subscription may become past due, expire, or pause.
-
-### Configuring Mandate Preferences
-
-Go to **Configuration → Invoice Templates → Invoice Settings** to pick one of two approaches:
-
-1. **Automatically Handle Subscriptions**
-
-* **Automatically Cancel the Subscription**: If the customer cancels their UPI mandate in the UPI app, the subscription in Recurly will auto-expire instead of going into dunning.
-* **Automatically Pause the Subscription**: If the customer pauses their UPI mandate, the subscription in Recurly will auto-pause rather than continue billing.
-
-2. **Manually Handle Subscriptions**
-
-* **Manually Process Mandate Revocations/Pauses**: If a customer pauses or cancels their UPI mandate, you’ll receive webhooks about the subscription’s status. You decide how to handle the subscription (cancel, pause, etc.).
-
-***
-
-<br />
+**UPI – Recurring** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future.
 
 ## Troubleshooting FAQs
 
