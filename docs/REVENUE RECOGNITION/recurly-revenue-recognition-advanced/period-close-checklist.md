@@ -25,6 +25,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 Recurly Revenue Recognition includes a **Period Close Checklist** to ensure accurate and efficient period closures. The checklist begins with **four system-defined tasks** and can be expanded with your own custom tasks.
 
+<Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/e5684605bed5eeb29626cfb74bddd32d2305b6e5a007bde21a9ea74563147aec-4._System_Defined_Tasks.png" />
+
 ### System-Defined Tasks
 
 1. **Data processed for the current open period**: Ensures all Recurly invoices, credits, and voids are transferred into RevRec, including data up to the period’s end date. *(This task cannot be skipped.)*
@@ -40,17 +42,29 @@ Recurly Revenue Recognition includes a **Period Close Checklist** to ensure accu
 You can create any number of user-defined tasks essential for period close:
 
 1. Go to **Setup → Period Task**.
+
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/d71ad5d26e258a599e71f5f7a2600a822edb5750c1e16c93c8f67036971c39b2-1._Period_Task.png" />
+
+<br />
+
 2. Click the **"+"** button.
 3. Enter a **Task Name**.
 4. Choose **Required** or **Optional**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/fcb1c2c356433e70d4af97013f4f31d943576d776ad01c5310f29725a44c8699-2._New_Task.png" />
+
 5. Define the **Activation Period** (tasks activate in the subsequent period).
 6. **Save** your changes.
 
 If needed, reorder tasks by clicking the "**⋮**" icon on the bottom right.
 
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/645c32df97dbf8e54bb01e00817febf42e64b46a152a7492df8b52b94bb3fdb0-3._Hierarchy_change.png" />
+
+<br />
+
 ***
 
-## How to Close the Period
+## How to close the period
 
 1. **Navigate to** **Import/Export → Period Close**.
 2. You’ll see a list of **Open** tasks—both system-defined and any custom tasks you’ve created.
