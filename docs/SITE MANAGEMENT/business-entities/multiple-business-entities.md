@@ -110,11 +110,21 @@ Currently, Recurly supports assigning entities on the subscription object within
 
 To assign a business entity to a subscription upon creation in the Recurly Admin UI, select your desired "Override Business Entity" on the subscription itself, and press save. If you wish to change a business entity on an existing subscription, you may do so, however changes to Business Entities on the Subscription object can only take place on "Next\_Bill\_Date" or "Subscription\_term". To assign a subscription upon [creation via API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription), set the subscription's business\_entity\_id. To [change a subscription's assigned entity via API,](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change) change the subscription's business\_entity\_id, and the new entity will be applied upon the next billing renewal event.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/28a26036f5ad18459f83533ce056389cec74a2505f33e4a9bc878b4b680e8da0-Screenshot_2024-12-19_at_12.56.48_PM.png" />
+**See for "immediate changes," changing the Business Entity on the subscription is not available.**
 
-Entities assigned to subscriptions takes precedence over location-based subscription assignment and business entity overrides applied to a customer's Account.
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/055d80c92324ec381d8c0f07e9e7118bc7357d6b86aa69583e6e05ca077a5dad-Screenshot_2025-03-12_at_4.44.52_PM.png" />
+
+**When scheduling subscription changes for the next bill date, or the next term renewal, however, you are able to change the Business Entity on the subscription.**
+
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/bd3a9f1e3793369725930fd3f4c05a283806f930fd83dbee6cd94fa48af46e27-Screenshot_2025-03-12_at_4.45.15_PM.png" />
 
 <br />
+
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/d06d479f1fd7879eb4a38b65321d5d9efa98e94f9a2c6400d2926bb5391dd833-Screenshot_2025-03-12_at_4.45.34_PM.png" />
+
+<br />
+
+Entities assigned to subscriptions takes precedence over location-based subscription assignment and business entity overrides applied to a customer's Account.
 
 ## Apply an overriding entity to a customer's Account
 
