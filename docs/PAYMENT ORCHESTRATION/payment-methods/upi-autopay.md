@@ -108,7 +108,7 @@ Since UPI - Recurring customer actions are outside of Recurly's view, our Ebanx 
 
 * Ensure the subscription price has not changed without customer-engagement to re-subscribe.
 * Ensure your Mandate Management settings are set properly. If they are set to manual, you may have missed a webhook that requires a change to the subscription status.
-* Ensure your customer is responding to the UPI application push notifications when pre-renewal notifications are sent or on charges that are above 15 INR.
+* Ensure your customer is responding to the UPI application push notifications when pre-renewal notifications are sent or on charges that are above 100000 INR.
 * Ensure you have not ignored a webhook to pause or cancel a subscription. Your customer may have requested such, and you will need to act on the specific subscription via API or within the UI.
 
 ### **Q: I updated my customer's VPA on an existing subscription, but the original bank account was charged. How do I fix this?**
