@@ -180,9 +180,8 @@ Find additional guidance in the [technical documentation](https://developers.rec
 3. If you are utilizing 3D Secure, input your Issuer ID, Unit ID, HMAC Key, and Challenge URL.
 4. Specify the currencies and card types you plan to accept.
 5. Optional: Designate which card types should undergo Zero Dollar Authorizations.
-6. If you are using Worldpay in a Back Office “[MOTO](https://docs.recurly.com/docs/moto-transactions)” environment, check the Enable MOTO Transactions checkbox.
-7. Finalize your setup by clicking "Add Payment Gateway".
-8. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
+6. Finalize your setup by clicking "Add Payment Gateway".
+7. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
 
 # Enable gateway for LATAM
 
