@@ -117,7 +117,7 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 > ❗️ Warning
 >
-> Enrollment and Payment Updates will not occur properly without webhook setup. Please follow these steps in both production and test environments in Ebanx.
+> Enrollment, Mandate Status, and Payment Updates will not occur properly without webhook setup. Please follow these steps in both production and test environments in Ebanx.
 
 ## Mandate Preferences
 
