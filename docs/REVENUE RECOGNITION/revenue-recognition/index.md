@@ -19,7 +19,7 @@ next:
 
 Venture into our concise video overview and unveil the power of Recurly's Revenue Recognition product. Crafted for enterprising merchants, we're poised to reshape your financial reporting and drive revenue growth. Jump in, and let's magnify your monetary momentum!
 
-<Embed typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/u36vw1exuu?videoFoam=true" href="https://fast.wistia.net/embed/iframe/u36vw1exuu?videoFoam=true" html="false" iframe="true" height="600px" width="400px" />
+<Embed typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/u36vw1exuu?videoFoam=true" href="https://fast.wistia.net/embed/iframe/u36vw1exuu?videoFoam=true" html="false" iframe="true" height="800px" width="500px" />
 
 ### Plan availability
 
