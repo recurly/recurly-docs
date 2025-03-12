@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-This feature is part of our product, Recurly Revenue Recognition Advanced. [<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
+This feature is part of our product, Recurly Revenue Recognition Advanced. \[<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
 
 ### Prerequisites:
 
@@ -43,11 +43,11 @@ Recurly's reporting module offers a plethora of detailed reports that cater to v
 
 # Configuring reports
 
-<Embed url="https://drive.google.com/file/d/1OFspF-jRqmIixfx2RQn5j8VQyf95MOi4/preview" title="iframe" provider="drive.google.com" href="https://drive.google.com/file/d/1OFspF-jRqmIixfx2RQn5j8VQyf95MOi4/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
+<Embed url="https://drive.google.com/file/d/1OFspF-jRqmIixfx2RQn5j8VQyf95MOi4/preview" href="https://drive.google.com/file/d/1OFspF-jRqmIixfx2RQn5j8VQyf95MOi4/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
 
 1. **Navigate** to the Reports section and select the desired report from the available options.
 
-   <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/a4ad3bf-image.png" />
+   <Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/a4ad3bf-image.png" />
 
 2. **Click** on the Mapper icon, and a dialogue box will appear displaying the available attributes.\
    ![](https://files.readme.io/33a3ddf-image.png)
@@ -65,29 +65,43 @@ Recurly's reporting module offers a plethora of detailed reports that cater to v
 
    <Image align="center" className="border" border={true} src="https://files.readme.io/74e51b9-image.png" />
 
+<br />
+
 ## How to save layouts in reports
 
-By saving layouts, you can customize and store different views of the reports based on your preferences and analysis needs.
+Once you open a report, you can apply filters and adjust columns to create a custom format, referred to as a “Layout,” which can be saved for future use:
 
-1. **Open** the desired report; click on the mapper icon, and check the attributes you want to include in the report. Drag and arrange them in the desired order.
+1. **Set Up Your Report:**
+   * Open the desired report and fill in any search criteria.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/cd479e6-image.png" />
+2. **Customize the Layout:**
+   * Click on the Mapper, check the attributes you wish to display, and drag them into the desired order.
 
-2. **Apply** any necessary search criteria to filter the data.
+3. **Generate the Report:**
+   * Click the **Run** button to view the customized report.
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/7d9a3fb-image.png" />
+4. **Save the Layout:**
 
-3. **Click** on the Run button to generate the report with the selected layout.
+   * Click on the **Save Layout** option on the right-side bar.
 
-4. On the right-side bar, click on the Save Layout option.
+   <br />
 
-   <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/4ea98cf-image.png" />
+   <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/66b63691b31bbf5ab33615a3c3c3bda57930285e8eb26a5a3b698a631548bc04-5._Save_Layout_-_Step_5.png" />
 
-5. The layout is now saved. To access it, click on the drop-down menu in the upper left corner next to Search. Your saved layouts will be listed there.
+   * Enter a unique name for the layout and click **Save**.
 
-   <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/b5a1e5e-image.png" />
+5. **Accessing Saved Layouts:**
+   * To view a saved layout, click on the drop-down menu in the upper right corner next to **Search**; your saved layouts will be listed there.
 
-6. If you want to save another layout, make changes to the filter or columns as desired, and click on Save again. This time, untick the "Yes" option (toggle it to "No") to save it as a new layout.
+6. **Saving Additional Layouts:**
+
+   * To create another layout, modify the filters or columns and click **Save** again. Toggle the save option to "No" when prompted to save it as a new layout.
+
+   <br />
+
+   <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/6cbb0aba2d81c66592747d50d9abe44002831fec96f8a395780dca11de4daa98-6._Save_Layout_-_Step_7.png" />
+
+   By following these steps, you can easily access, customize, and manage your Event Stage Report layouts, ensuring the data is presented in the most useful format for your analysis.
 
 # Revenue reports
 
@@ -102,19 +116,19 @@ The **revenue insights report** provides a comprehensive overview of revenue dis
 * **Accounted:** Reflects the revenue that has been accounted for.
 * **Unaccounted:** Highlights any revenue that is yet to be accounted for.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/7e3a07a-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/7e3a07a-image.png" />
 
 ## Revenue waterfall report
 
 Checkout our step-by-step guide to leverage the waterfall report feature:
 
-<Embed url="https://drive.google.com/file/d/1AUOf-PNrquiVtv8zazJ4-0iEdwlCXWUl/preview" title="iframe" provider="drive.google.com" href="https://drive.google.com/file/d/1AUOf-PNrquiVtv8zazJ4-0iEdwlCXWUl/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
+<Embed url="https://drive.google.com/file/d/1AUOf-PNrquiVtv8zazJ4-0iEdwlCXWUl/preview" href="https://drive.google.com/file/d/1AUOf-PNrquiVtv8zazJ4-0iEdwlCXWUl/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
 
 The **revenue waterfall report** provides a visual representation of revenue recognition throughout the contract period. This report showcases the revenue recognized from the start date to the end date of the contract. It displays the balances of the revenue lines, starting from the selected period and extending until the contract's conclusion.
 
 By presenting the revenue waterfall, this report allows you to track the progression of revenue recognition over time. It provides a comprehensive view of how revenue is distributed and accumulated throughout the contract duration. This report is valuable for monitoring revenue performance, identifying trends, and gaining insights into the revenue dynamics of the business. With the Revenue Waterfall Report, businesses can make informed decisions and optimize their revenue recognition strategies.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/85771d7-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/85771d7-image.png" />
 
 ## Defer revenue waterfall report
 
@@ -122,7 +136,7 @@ The **defer revenue waterfall report** allows you to gain insights into the amou
 
 By examining the deferred revenue waterfall, you can assess the distribution and accumulation of deferred revenue throughout the duration of your contracts. This report provides valuable information for understanding your revenue recognition pattern and identifying the remaining balance of deferred revenue for each period.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/9e42329-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9e42329-image.png" />
 
 # Reports on balances
 
@@ -130,7 +144,7 @@ By examining the deferred revenue waterfall, you can assess the distribution and
 
 The **contract balances report** provides insights into the changes to contract assets and contract liabilities within a specified period. This report helps you understand the financial dynamics of your contracts by disclosing key information related to revenue, billing, adjustments, and more.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/7c4a2c8-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/7c4a2c8-image.png" />
 
 The default columns in the **contract balances report** include:
 
@@ -206,7 +220,7 @@ The **asset balances report** provides a comprehensive view of the movement of c
 
 Checkout our step-by-step guide to leverage the liabilities balances report feature:
 
-<Embed url="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" title="iframe" provider="drive.google.com" href="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
+<Embed url="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" href="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
 
 The **liability balances report** provides insights into the changes in contract liability for a specified period. A contract liability represents outstanding costs after payment is received. The report includes the following default columns:
 
