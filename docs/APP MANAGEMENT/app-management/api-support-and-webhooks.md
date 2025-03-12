@@ -44,6 +44,10 @@ This endpoint is used to view information about the entitlements granted to a sp
 
 For pertinent events in the subscription lifecycle, Recurly triggers a webhook. This allows you to take any subsequent action (e.g., e-mail your customer) based on that webhook notification.
 
+> 👍 **Important:**
+>
+> **Webhooks** can be configured via the Recurly Admin UI and **cannot be configured via API.**
+
 Recurly webhook payloads are “lightweight” in nature and will require a subsequent call to the REST API in order to obtain the most up to date information about the App Store subscriptions. The below XML and JSON representations show an example of a webhook notification for a new External subscription. To get more info about the subscription, you would then utilize the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_external_subscription" target="_blank">Fetch an External Subscription</a> endpoint with the "id" provided in the webhook.
 
 ```json
@@ -84,15 +88,15 @@ The following tables provides a complete list of the webhooks Recurly will send 
 <Table align={["left","left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Recurly Event
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Apple Event
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Google Event
       </th>
     </tr>
@@ -100,354 +104,354 @@ The following tables provides a complete list of the webhooks Recurly will send 
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         canceled
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         DID\_CHANGE\_RENEWAL\_STATUS > AUTO\_RENEW\_DISABLED
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_CANCELED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         consumption\_requested
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         CONSUMPTION\_REQUEST
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         created (i.e., new subscription)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIBED > INITIAL\_BUY
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_PURCHASED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         downgraded
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         DID\_CHANGE\_RENEWAL\_PREF > DOWNGRADE
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         downgrade\_canceled
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         DID\_CHANGE\_RENEWAL\_PREF
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         expired
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        EXPIRED > VOLUNTARY\
-        EXPIRED > BILLING\_RETRY\
+      <td>
+        EXPIRED > VOLUNTARY
+        EXPIRED > BILLING\_RETRY
         EXPIRED > PRICE\_INCREASE
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_EXPIRED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         extended\_renewal
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         RENEWAL\_EXTENDED
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_DEFERRED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         failed\_renewal
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         DID\_FAIL\_TO\_RENEW
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_ON\_HOLD
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         failed\_renewal\_with\_grace\_period
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         DID\_FAIL\_TO\_RENEW > GRACE\_PERIOD
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_IN\_GRACE\_PERIOD
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         grace\_period\_expired
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         GRACE\_PERIOD\_EXPIRED
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         pause\_schedule\_changed
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_PAUSE\_SCHEDULE\_CHANGED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         paused
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_PAUSED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         plan\_changed
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_PURCHASED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         price\_change\_confirmed
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_PRICE\_CHANGE\_CONFIRMED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         reactivated
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         DID\_CHANGE\_RENEWAL\_STATUS > AUTO\_RENEW\_ENABLED
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_RESTARTED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         recovered
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_RECOVERED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         refunded
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         REFUND
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         refund\_declined
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         REFUND\_DECLINED
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         refund\_reversed
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         REFUND\_REVERSED
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         renewed
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        DID\_RENEW\
+      <td>
+        DID\_RENEW
         DID\_RENEW > BILLING\_RECOVERY
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_RENEWED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         resubscribed
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIBED > RESUBSCRIBE
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         resubscribed\_incorrect\_account
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIBED > RESUBSCRIBE
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         revoked
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_REVOKED
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         upgraded
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         DID\_CHANGE\_RENEWAL\_PREF > UPGRADE
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         voided
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         N/A
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         SUBSCRIPTION\_VOIDED
       </td>
     </tr>
