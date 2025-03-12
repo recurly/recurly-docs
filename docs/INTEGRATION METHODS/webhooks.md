@@ -24,6 +24,10 @@ Webhooks should not be solely relied upon for critical functions. They should be
 
 Webhooks serve as alerts, notifying your systems and partner applications of actions within Recurly. They are not standalone actionable items. Instead, they should be used in tandem with the Recurly API to ensure data integrity and synchronization. When an event in Recurly triggers a webhook, such as when an account is opened, Recurly will attempt to send this notification to the endpoint(s) you specify.
 
+> 👍 **Important:**
+>
+> **Webhooks** can be configured via the Recurly Admin UI and **cannot be configured via API.**
+
 # Key benefits
 
 * **Real-time updates**: Stay informed on significant events within Recurly as they happen.
