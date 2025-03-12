@@ -1,5 +1,5 @@
 ---
-title: Doc stage details report
+title: Doc stage report
 excerpt: ''
 deprecated: false
 hidden: true
