@@ -11,6 +11,7 @@
 - contract-transaction-details
 - contract-stage-report
 - doc-stage-details-report
+- event-stage-report
 - cost-stage-details-report
 - contract-balances-report
 - unbilled-balances-report
@@ -22,4 +23,3 @@
 - transfer-accounting-details-report
 - ssp-exception-report
 - hold-exceptions-report
-- event-stage-report
