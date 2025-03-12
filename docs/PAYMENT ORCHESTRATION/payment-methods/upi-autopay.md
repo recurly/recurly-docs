@@ -98,11 +98,6 @@ Since UPI - Recurring customer actions are outside of Recurly's view, our Ebanx 
 * [Paused Subscription](https://recurly.com/developers/reference/webhooks/#paused-subscription) Will be sent if the customer pauses their UPI mandate externally.
 * [Resumed Subscription](https://recurly.com/developers/reference/webhooks/#resumed-subscription) Will be sent if the customer unpauses their UPI mandate externally.
 
-Use the V3 API endpoints listed below to take action in these cases:\
-Pause a Subscription: [Recurly V3 API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/pause_subscription) (v2021-02-25)
-Resume a Subscription: [Recurly V3 API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/resume_subscription) (v2021-02-25)
-Cancel a Subscription: [Recurly V3 API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/cancel_subscription) (v2021-02-25)
-
 # FAQs
 
 ### Q: Do you support UPI QR Code or One-Time transactions?
