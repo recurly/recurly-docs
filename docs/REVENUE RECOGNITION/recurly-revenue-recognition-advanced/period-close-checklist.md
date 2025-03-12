@@ -45,8 +45,6 @@ You can create any number of user-defined tasks essential for period close:
 
 <Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/d71ad5d26e258a599e71f5f7a2600a822edb5750c1e16c93c8f67036971c39b2-1._Period_Task.png" />
 
-<br />
-
 2. Click the **"+"** button.
 3. Enter a **Task Name**.
 4. Choose **Required** or **Optional**.
@@ -68,13 +66,18 @@ If needed, reorder tasks by clicking the "**⋮**" icon on the bottom right.
 
 1. **Navigate to** **Import/Export → Period Close**.
 2. You’ll see a list of **Open** tasks—both system-defined and any custom tasks you’ve created.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9a3be1e42458d56d98f631b6ddecd3523a6c0fda123eaa791a4fdf667107f5a1-5._Period_Close_-_Step_1.png" />
+
 3. **Review** and **update** each task:
-   * Click **Review Task** to open the task details.
-   * **Complete** the task when you’re finished, add **comments** or **attachments** for audit purposes.
-   * **Optional tasks** may be set to **Skipped** if you do not need to complete them.
-4. **Required tasks** must be marked as **Complete** before you can close the period.
-5. Once all mandatory tasks are complete, the **Initiate period close** button becomes active.
-6. Click **Initiate period close**, add final comments, then click **Close period**.
+
+* Click **Review Task** to open the task details.
+* **Complete** the task when you’re finished, add **comments** or **attachments** for audit purposes.
+* **Optional tasks** may be set to **Skipped** if you do not need to complete them.
+
+3. **Required tasks** must be marked as **Complete** before you can close the period.
+4. Once all mandatory tasks are complete, the **Initiate period close** button becomes active.
+5. Click **Initiate period close**, add final comments, then click **Close period**.
    * If any required tasks aren’t in **Complete** status, you’ll see an **internal server error** message.
 
 With all tasks finalized, you’ll successfully close the period in Recurly RevRec, ensuring an accurate and compliant end-of-period process.
