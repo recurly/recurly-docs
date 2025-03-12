@@ -49,11 +49,13 @@ Consumers can **pause** or **cancel** subscriptions directly from their UPI app 
 
 ### Creating Subscriptions
 
-Use the **subscription** or **purchase** endpoints to create subscriptions with UPI AutoPay. Provide the VPA in Recurly’s `gateway_token` parameter.
+Use the **subscription** or **purchase** endpoints to create subscriptions with UPI AutoPay. Provide the VPA in Recurly’s `payment_gateway_references` object and specify `upi_vpa` as the reference type. See Recurly documentation for more details.
 
 ### Billing information updates
 
-UPI AutoPay **doesn’t support direct updates** to a VPA. If a customer’s VPA changes, **cancel the existing subscription** and have them re-enroll with the new VPA.
+UPI AutoPay **doesn’t support direct updates** to a VPA. Customers must update their banking information in the UPI app directly.
+
+If a customer’s VPA changes, **cancel the existing subscription** and have them re-enroll with the new VPA to create a new mandate.
 
 ### Cancellations
 
@@ -65,11 +67,13 @@ If a customer pauses via the UPI app, Recurly webhooks notify you. Subscriptions
 
 ### Resumed Subscriptions
 
-A customer may resume a paused subscription directly in the UPI app. Recurly sends a webhook, and the subscription is automatically resumed. If you prefer not to allow this flow, you can **cancel** the subscription in Recurly when you receive the pause webhook.
+A customer may resume a paused subscription directly in the UPI app. Recurly sends a webhook, and the subscription is automatically resumed.
+
+If you prefer not to allow this flow, you can **cancel** the subscription in Recurly when you receive the pause webhook.
 
 ### Gateway tokens
 
-UPI requires Recurly's **gateway token** approach, as each consumer’s VPA functions like a virtual account identifier (`payer@bankname`). Your integration must pass the VPA through `gateway_token` and `gateway_code` parameters. Refer to Recurly’s API documentation for details.
+UPI requires Recurly's **gateway token** approach, as each consumer’s VPA functions like a virtual account identifier (`payer@bankname`). Your integration must pass the VPA through `payment_gateway_references` object and ensure you are setting the reference type as `upi_vpa`  and `gateway_code` parameters. Refer to Recurly’s API documentation for details.
 
 ### Net terms and subscription updates
 
