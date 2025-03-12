@@ -110,7 +110,7 @@ Currently, Recurly supports assigning entities on the subscription object within
 
 To assign a business entity to a subscription upon creation in the Recurly Admin UI, select your desired "Override Business Entity" on the subscription itself, and press save. If you wish to change a business entity on an existing subscription, you may do so, however changes to Business Entities on the Subscription object can only take place on "Next\_Bill\_Date" or "Subscription\_term". To assign a subscription upon [creation via API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription), set the subscription's business\_entity\_id. To [change a subscription's assigned entity via API,](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change) change the subscription's business\_entity\_id, and the new entity will be applied upon the next billing renewal event.
 
-**See for "immediate changes," changing the Business Entity on the subscription is not available.**
+**Changing the Business Entity on the subscription is not available for immediate subscription changes.**
 
 <Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/055d80c92324ec381d8c0f07e9e7118bc7357d6b86aa69583e6e05ca077a5dad-Screenshot_2025-03-12_at_4.44.52_PM.png" />
 
