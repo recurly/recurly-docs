@@ -115,7 +115,7 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
    1. Example: [https://callbacks.recurly.com/ebanx/subdomain](https://callbacks.recurly.com/ebanx/subdomain)
 4. Click **Save integration settings** at the bottom of the page.
 
-> 📘 Warning
+> ❗️ Warning
 >
 > Enrollment and Payment Updates will not occur properly without webhook setup. Please follow these steps in both production and test environments in Ebanx.
 
