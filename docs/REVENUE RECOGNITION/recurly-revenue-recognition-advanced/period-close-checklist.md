@@ -73,7 +73,14 @@ If needed, reorder tasks by clicking the "**⋮**" icon on the bottom right.
 
 * Click **Review Task** to open the task details.
 * **Complete** the task when you’re finished, add **comments** or **attachments** for audit purposes.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/3044c605415d1bbda4afbba7b31ecaf13c31a498d0d5c398ad16b8de47c34042-6._Period_Close_-_Step_3.png" />
+
+<br />
+
 * **Optional tasks** may be set to **Skipped** if you do not need to complete them.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/5802364502736289fb780bb5f62e681e53e78a040c3d823d3d61080782258d8a-7._Perid_Close_-_Step_4.png" />
 
 3. **Required tasks** must be marked as **Complete** before you can close the period.
 4. Once all mandatory tasks are complete, the **Initiate period close** button becomes active.
