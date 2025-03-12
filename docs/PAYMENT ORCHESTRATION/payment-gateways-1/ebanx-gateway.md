@@ -138,16 +138,7 @@ Go to **Configuration → Invoice Templates → Invoice Settings** to pick one o
 
 ***
 
-## UPI Retries
-
-Due to UPI’s charge window constraints, Recurly handles retries if an Ebanx transaction fails:
-
-1. **First retry** occurs **10 minutes** after the initial failure.
-2. **Second through final retries** (up to eight more) occur **hourly** on the hour.
-3. A total of **nine retries** plus the **original attempt** = **10 total attempts**.\
-   If the transaction remains unsuccessful after the final retry, the subscription may move into a past-due or canceled state, depending on your settings.
-
-***
+<br />
 
 ## Troubleshooting FAQs
 
