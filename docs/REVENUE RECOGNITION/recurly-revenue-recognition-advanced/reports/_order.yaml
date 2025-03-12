@@ -10,6 +10,7 @@
 - billing-transaction-details
 - contract-transaction-details
 - contract-stage-details-report
+- contract-stage-report
 - doc-stage-details-report
 - cost-stage-details-report
 - contract-balances-report
@@ -22,4 +23,3 @@
 - transfer-accounting-details-report
 - ssp-exception-report
 - hold-exceptions-report
-- contract-stage-report
