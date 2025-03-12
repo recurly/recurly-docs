@@ -58,7 +58,7 @@ Additionally, leverage the Site Customization subsection to easily personalize t
 
 ### Email settings
 
-Customize your email settings by managing your contact and technical email information. Choose whether optional email copies are sent as CC or BCC. Set the default timezone for dates and timestamps in your emails. Refer to the **<a href="https://docs.recurly.com/docs/email-templates" target="_blank">Email Templates</a>** documentation for more information on managing email copies and templates. 
+Customize your email settings by managing your contact and technical email information. Choose whether optional email copies are sent as CC or BCC. Set the default timezone for dates and timestamps in your emails. Refer to the **<a href="https://docs.recurly.com/docs/email-templates" target="_blank">Email Templates</a>** documentation for more information on managing email copies and templates.
 
 Maintaining an accurate Billing Contact Email Address is crucial as this is the default address for all Recurly receipts and acts as the 'from' address for all customer communications. By correctly specifying this email, you ensure seamless, prompt, and professional correspondence with your customers, further enhancing their trust and experience with your business. Always remember to override these default settings for specific accounts on their respective pages to uphold personalized communication based on your unique needs and preferences.
 
@@ -108,7 +108,7 @@ By specifying the desired IP addresses or range, ensure that transactions origin
 
 If you have multiple billing systems consolidating into a single gateway account, you can define an **Order Number Prefix** within Recurly. This allows you to easily identify Recurly transactions in your payment gateway's virtual terminal. It's important to note that this prefix is only used on the backend and will not be displayed on the invoice.
 
-Please be aware that **PayPal Payment Gateways do not support invoice prefixing**.
+Please be aware that **PayPal and Stripe Payment Gateways do not support invoice prefixing**.
 
 ![](https://files.readme.io/7dd13ea-image.png)
 
