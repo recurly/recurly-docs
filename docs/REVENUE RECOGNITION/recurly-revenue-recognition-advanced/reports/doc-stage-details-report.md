@@ -29,13 +29,27 @@ The Doc Stage Report displays billing transactions that are currently stuck in t
 To access and configure the Doc Stage Report:
 
 1. **Navigate to the Report:**
+
    * Go to **Reports** and select **Doc Stage Details Report** from the menu.
+
+   <br />
+
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/51a3f800e0db6092eae7f5f93f8b6134d94c1405a640db3f09a79f2acdbdcf27-1.Introduction.png" />
+
+   <br />
 
 2. **Access the Mapper:**
    * Locate and open the report's **Mapper** tool.
 
 3. **Add Required Columns:**
+
    * Within the Mapper, select and add the specific attributes you wish to include. Note that only doc level attributes are available in the mapper, in addition to the contract ID, subscription, and order line.
+
+   <br />
+
+   <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/a43bc945c949d4568003f9af5a8cd3f4f51acbbad7316f9a6df2fe0d8ced1e2d-3._Doc_Stage_Report_Mapper.png" />
+
+   <br />
 
 4. **Run the Report:**
    * Click the **Run** button to generate the report.
