@@ -42,7 +42,7 @@ When the pause is initiated, the subscription remains active until the end of th
 
 **Consumer needs:** Various reasons could drive a customer to halt subscription billing, such as:
 
-* Financial constraints. 
+* Financial constraints.
 * Infrequent service usage during specific periods.
 * Temporary unavailability, like vacation or travel.
 * Seasonal relevance of a service, as seen with [seasonal services like sports streaming](https://recurly.com/blog/addressing-seasonality-in-your-subscription-business/).
@@ -51,7 +51,7 @@ When the pause is initiated, the subscription remains active until the end of th
 
 ### How It works
 
-**Prerequisites for Pausing:** 
+**Prerequisites for Pausing:**
 
 * The subscription should be active.
 * The subscription cannot be set to a future date, in-trial, a non-converted gift, canceled, or terminated.
@@ -62,7 +62,7 @@ When the pause is initiated, the subscription remains active until the end of th
 
 # How to pause subscriptions
 
-There are 3 ways to pause subscriptions - through the Subscription Details section in the UI, the Account section in the UI or the use of APIs. 
+There are 3 ways to pause subscriptions - through the Subscription Details section in the UI, the Account section in the UI or the use of APIs.
 
 ## Pausing from subscription details
 
@@ -75,7 +75,7 @@ There are 3 ways to pause subscriptions - through the Subscription Details secti
 
 **Pause Start Date**: It's the onset date for the pause, defaulting to the subscription's billing date.
 
-  ![Pause Date Configuration](https://files.readme.io/5b4473e-Screen_Shot_2020-03-16_at_1.44.49_PM.png)
+![Pause Date Configuration](https://files.readme.io/5b4473e-Screen_Shot_2020-03-16_at_1.44.49_PM.png)
 
 **Number of Billing Cycles to Skip**: Dictates the duration for the subscription pause.
 
@@ -99,7 +99,7 @@ There are 3 ways to pause subscriptions - through the Subscription Details secti
 
 > 🚧 Current Term Renewal Dates
 >
-> While a subscription is paused, the original term renewal date of the subscription will not be updated (in the API this is represented as the current\_term\_ends\_at timestamp). This is due to the fact that the scheduled pause can be canceled, the subscription could be resumed earlier, or the number of pause cycles could be updated. Any of the former events could potentially change the renewal date. Once a subscription is returned to active, the term renewal date will be updated. 
+> While a subscription is paused, the original term renewal date of the subscription will not be updated (in the API this is represented as the current\_term\_ends\_at timestamp). This is due to the fact that the scheduled pause can be canceled, the subscription could be resumed earlier, or the number of pause cycles could be updated. Any of the former events could potentially change the renewal date. Once a subscription is returned to active, the term renewal date will be updated.
 >
 > To calculate the new renewal date while a subscription is paused, you will want to take original renewal date and add the length of the pause period.
 
@@ -112,6 +112,10 @@ There are 3 ways to pause subscriptions - through the Subscription Details secti
 Pausing, restarting, and other related actions can be executed through the API, as detailed in the [API documentation](https://developers.recurly.com/api/latest.html#operation/pause_subscription).
 
 ## Resuming a subscription
+
+> 📘 SCA Notice
+>
+> Please note: In regions where SCA is required, resuming or reactivating a subscription via the Dashboard may result in renewal failures and therefore is not recommended. Your customer must be involved in the resume/reactivation of a subscription if 3DS Authentication is required, and dashboard updates cannot be used. Please see API integration for more details.
 
 To resume a subscription that is currently paused:
 
@@ -137,11 +141,11 @@ For usage-based add-ons, billing occurs prior to a subscription entering a pause
 * **Indefinite Pauses:** For longer pauses, a high value (like 1200 for a monthly subscription, translating to 100 years) can be set, but this may [impact churn rate calculations](https://recurly.com/blog/better-way-to-calculate-your-churn-rate/).
 * **Implications of Subscription Changes During a Pause Period:** When a subscription is set to pause or is currently in a paused state, any immediate changes made to the subscription will cancel the pause. This means that if you adjust the subscription details after the pause has been scheduled or while it is active, the pause will no longer be in effect.
 
-**Example scenarios:** 
+**Example scenarios:**
 
-1. Joe, a football streaming subscriber, requests a 4-month pause post season. With his next billing on March 1st, the pause ensures no billing until July 1st. 
+1. Joe, a football streaming subscriber, requests a 4-month pause post season. With his next billing on March 1st, the pause ensures no billing until July 1st.
 2. If Joe's subscription, set for a February 1st pause, gets upgraded on January 20th to include baseball streaming, the scheduled pause is canceled. He will be billed on February 1st for the new plan.\
-   1st pause, gets upgraded on January 20th to include baseball streaming, the scheduled pause is canceled. He will be billed on February 1st for the new plan. 
+   1st pause, gets upgraded on January 20th to include baseball streaming, the scheduled pause is canceled. He will be billed on February 1st for the new plan.
 
 ## Billing and invoicing
 
@@ -167,13 +171,13 @@ Subscribers with paused subscriptions may  wish to be notified about the upcomin
 
 ## Webhook notifications
 
-Recurly's Pause Subscription feature can send six notification events: 
+Recurly's Pause Subscription feature can send six notification events:
 
 * Scheduled subscription pause
 * Subscription pause canceled
 * Subscription paused
 * Subscription pause modified
-* Paused subscription renewal 
+* Paused subscription renewal
 * Subscription resumed\
   For each pause notification's specifics, refer to the [Webhooks](https://docs.recurly.com/v1.0/docs/webhooks) documentation.
 
