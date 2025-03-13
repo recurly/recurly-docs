@@ -63,12 +63,6 @@ Stepping into a seamless financial operation is easy with Recurly's Stripe integ
 
 Stripe onboarding uses OAuth credential authentication. You will not need to copy/paste your credentials using this gateway.
 
-#### **Understanding Stripe customer updates**
-
-Recurly and Stripe work together to streamline subscription billing; however, **changes to billing or account information in Recurly do not currently sync automatically from Stripe.** If you process payments directly in Stripe, please verify and update the corresponding customer record there. For accuracy, remember to use the most recently created Stripe customer record.
-
-> **Looking ahead**: We’re actively working on enhancements that will better sync Recurly and Stripe customer data, reducing the need for manual updates. Stay tuned for updates!
-
 # Integrate Stripe with Recurly
 
 ## Setup
@@ -112,6 +106,19 @@ Once you have tested and confirmed that the integration works as expected, switc
 ## Payment Method Enablement
 
 1. You can enable payment methods within your Stripe Dashboard. Keep in mind, if you are using Stripe Elements to process payments, only enable those that Recurly can support (see above). Enablement of a payment method not on the supported list will result in payment failures.
+
+## Stripe Webhook Behavior
+
+Recurly supports several webhooks with Stripe including gateway token lifecycle events, external Account Updater lifecycle events, and certain transaction lifecycle events. There is no additional configuration needed in your Stripe dashboard or Recurly site other than asking your Recurly contact to enable a feature flag on your behalf.
+
+* **Payment method and Customer token lifecycle events**
+  * Payment Method "Detach" Events: This webhook will disable billing infos in Recurly if a payment method token at Stripe is deleted within the Stripe Dashboard. This will cause active subscriptions to go into dunning if there is no additional payment method on file.
+  * Customer Deletion Events: Similar to Payment Method "Detach" events, deleting a Stripe Customer from the Stripe dashboard will delete all associated payment methods stored at Stripe. Doing so will have a similar effect in that active subscriptions will no longer have valid billing info, and may go into dunning if there is no other payment method on file.
+  * Payment Method "Update" Events: Certain elements of a Stripe gateway token can be updated within the Stripe Dashboard, such as an expiration date. When this occurs, Recurly will update the billing info expiration date on file automatically.
+  * Account Updater Events: If you are using Account Updater at Stripe, Recurly will consume events driven by Stripe's Account Updater service to keep payment gateway tokens on file at Recurly up to date and in sync.
+* **Transaction Lifecycle Events**
+  * Expired Authorization Events: If you are using Auth and Capture logic with Stripe, uncaptured authorizations may expire if not captured within 7 days. In this case, the authorization will be updated to a Void status in Recurly and can no longer be captured.
+  * Hard Decline Events: In certain cases, Stripe may update a charge to reflect new retry advice. In cases where Stripe deems it necessary, Recurly will stop retries on a previously soft-declined transaction.
 
 ## Ongoing maintenance
 
