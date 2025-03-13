@@ -55,7 +55,7 @@ This guide outlines the process for migrating active subscriptions from a legacy
 4. **Review Import Results**: Examine the import report for any subscriptions that failed to import due to issues (like missing valid payment methods) and address these manually.
 5. **Verify Subscription Status**: Confirm that subscriptions marked as paused in the export remain paused after the import.
 
-## Post Migration Considerations
+## Post migration considerations
 
 1. **Cancel Legacy Subscriptions**: Once test migrations are verified, cancel the corresponding subscriptions in the previous app to avoid duplicate communications.
 2. **Archive Historical Data**: Preserve any necessary historical data before uninstalling the legacy migration app.
