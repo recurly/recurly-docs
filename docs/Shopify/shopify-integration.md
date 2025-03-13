@@ -41,35 +41,35 @@ Shopify Integration with Recurly enables merchants to automate recurring billing
 # Setup Shopify and Recurly
 
 <Cards columns={4}>
-  <Card title="Test Shopify Store" icon="fa-store">
+  <Card title="1. Test Shopify Store" icon="fa-store">
     Create or use a test Shopify store. For partners, set up a development store without adding products or discounts.
   </Card>
 
-  <Card title="Configure Checkout" icon="fa-check">
+  <Card title="2. Configure Checkout" icon="fa-check">
     Update Shopify Checkout settings to require first and last name for customer information.
   </Card>
 
-  <Card title="Payment Setup" icon="fa-credit-card">
+  <Card title="3. Payment Setup" icon="fa-credit-card">
     Activate a test payment provider (e.g., bogus gateway or test mode) to capture payment details successfully.
   </Card>
 
-  <Card title="Recurly Config" icon="fa-cogs">
+  <Card title="4. Recurly Config" icon="fa-cogs">
     Set up your Recurly site by configuring custom fields, currencies, coupons, and site settings.
   </Card>
 
-  <Card title="Install Recurly App" icon="fa-plug">
+  <Card title="5. Install Recurly App" icon="fa-plug">
     Install the Recurly Shopify app, connect via API key, and create a test product with a subscription plan.
   </Card>
 
-  <Card title="Portal Link" icon="fa-link">
+  <Card title="6. Portal Link" icon="fa-link">
     Add a Customer Portal Link in Shopify Checkout so customers can manage their subscriptions.
   </Card>
 
-  <Card title="Run Test Order" icon="fa-vial">
+  <Card title="7. Run Test Order" icon="fa-vial">
     Execute a test order using the test payment method to simulate various transaction outcomes.
   </Card>
 
-  <Card title="Adyen Setup" icon="fa-rocket">
+  <Card title="8. Adyen Setup" icon="fa-rocket">
     If using Adyen, install it as your test payment provider and configure a test account with the required credentials.
   </Card>
 </Cards>
