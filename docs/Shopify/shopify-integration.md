@@ -1,5 +1,5 @@
 ---
-title: Shopify Integration
+title: Shopify integration
 excerpt: >-
   Shopify Integration: Your comprehensive guide to integrating Shopify with
   Recurly for seamless recurring billing and subscription management.
