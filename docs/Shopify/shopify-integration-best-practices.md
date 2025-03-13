@@ -10,7 +10,7 @@ metadata:
 ---
 The Shopify-Recurly integration combines Shopify’s powerful storefront and checkout features with Recurly’s advanced subscription billing and management capabilities. Although the integration handles most processes seamlessly, there are several important details and limitations to be aware of when setting up and managing your storefront.
 
-## Key Best Practices
+## Key best practices
 
 ### 1. Install the Recurly App before creating products and discounts
 
