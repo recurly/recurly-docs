@@ -147,8 +147,6 @@ Follow the steps below in the order shown to set up your integration:
 
 ***
 
-<br />
-
 <Cards columns={2}>
   <Card title="Do Not Change the App Proxy URL" icon="fa-lock">
     In Shopify Admin, go to **Settings → Apps and sales channels**, click on the Recurly Subscriptions app, and locate the **App Proxy URL**. This URL must remain unchanged to avoid breaking the subscription customer portal.
