@@ -33,6 +33,8 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 * The Tarjeta Naranja card brand does not support ZDA; verifications for this card are processed with a one-dollar charge.
 * Transactions require the submission of a CUIT (tax ID) with each transaction in Argentina.
+* If you are not using CUIT, CPF, or CNPJ tax types, send the tax ID without a `tax_identifier_type`.
+* Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
 * Check if your business is on Worldpay's list of [Prohibited Business types](http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm).
 
 > 🚧 Warning
@@ -162,7 +164,8 @@ At Recurly, we want to submit as much information (including the billing address
 
 # Navigating the LATAM  ecommerce landscape
 
-Recurly has forged collaborations with WorldPay, Ebanx, and dLocal (no new dLocal accounts provisioned by Worldpay), endeavoring to offer merchants unparalleled support in Latin America, a region harboring a booming ecommerce market amidst a complex payment ecosystem.\
+Recurly has forged collaborations with WorldPay, Ebanx, and dLocal (no new dLocal accounts provisioned by Worldpay), endeavoring to offer merchants unparalleled support in Latin America, a region harboring a booming ecommerce market amidst a complex payment ecosystem.
+
 Find additional guidance in the [technical documentation](https://developers.recurly.com/), where the billing information block references the CUIT. This vigilant approach ensures a smooth, compliant transaction process, embracing the specific needs of the Latin American market.
 
 # Configuring WorldPay WPG for international processing
