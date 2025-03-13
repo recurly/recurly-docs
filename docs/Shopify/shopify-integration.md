@@ -145,6 +145,10 @@ Follow the steps below in the order shown to set up your integration:
    * Find Adyen in the list of payment providers and click **Install**.
    * When prompted, select **Test account** and provide the necessary username, account, and password details.
 
+***
+
+<br />
+
 <Cards columns={2}>
   <Card title="Do Not Change the App Proxy URL" icon="fa-lock">
     In Shopify Admin, go to **Settings → Apps and sales channels**, click on the Recurly Subscriptions app, and locate the **App Proxy URL**. This URL must remain unchanged to avoid breaking the subscription customer portal.
@@ -154,6 +158,8 @@ Follow the steps below in the order shown to set up your integration:
     Customers must enable popups in their browsers to access the Recurly customer portal from Shopify.
   </Card>
 </Cards>
+
+***
 
 ## FAQs
 
