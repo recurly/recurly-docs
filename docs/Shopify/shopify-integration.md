@@ -74,8 +74,6 @@ Shopify Integration with Recurly enables merchants to automate recurring billing
   </Card>
 </Cards>
 
-<br />
-
 Follow the steps below in the order shown to set up your integration:
 
 1. **Create or Utilize a Test Shopify Store**
