@@ -1,5 +1,5 @@
 ---
-title: Shopify Early Access
+title: Shopify early access
 excerpt: As of March 2025, Recurly is now available in the Shopify App Store.
 deprecated: false
 hidden: true
