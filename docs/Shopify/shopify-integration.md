@@ -46,18 +46,18 @@ Follow the steps below in the order shown to set up your integration:
    * **For Standard Merchants**: Log into your Shopify account [here](https://www.shopify.com/login).
    * **For Shopify Partners**:
      * Log in to your Partner Dashboard.
-     * Navigate to **Stores** and click **Add store** -> **Create development store**.
+     * Navigate to **Stores** and click **Add store** → **Create development store**.
      * Select **Create a store to test and build**.
      * Enter your store’s name and select **Start with an empty store**.
    * **Note**: Do not create any Products or Discounts at this stage.
 
 2. **Configure Shopify Checkout**
-   * In your Shopify Admin, go to **Settings -> Checkout**.
+   * In your Shopify Admin, go to **Settings → Checkout**.
    * Under **Customer Information**, select **Require first and last name**.
    * Verify the setting by scrolling to the Customer Information section.
 
 3. **Set Up Payment Provider**
-   * Navigate to **Settings -> Payment** in Shopify Admin.
+   * Navigate to **Settings → Payment** in Shopify Admin.
    * Activate the test payment provider (such as the bogus gateway) or set your existing provider (e.g., Adyen, Shopify Payments) to test mode.
    * Ensure payment information is captured so that Shopify can successfully charge and vault customer details.
    * **Important**: If payment isn’t properly configured, customers will see “This store can’t accept payments right now.”
@@ -65,16 +65,18 @@ Follow the steps below in the order shown to set up your integration:
 4. **Configure Your Recurly Site**
    * **Custom Fields**:
 
-     In **Configuration -> Custom Fields**, create a new custom field with:
+     In **Configuration → Custom Fields**, create a new custom field with:
+
      * **API Field Name**: `subscription_source`
      * **Recurly Object**: Subscription
      * **Admin Console Field Name**: Subscription Source
    * **Currencies**:
 
-     In **Configuration -> Currencies**, enable any additional currencies you plan to transact in.
+     In **Configuration → Currencies**, enable any additional currencies you plan to transact in.
    * **Coupons**:
 
-     Under **Coupons -> Coupon Settings**, enable:
+     Under **Coupons → Coupon Settings**, enable:
+
      * **Multiple Coupons Per Account**
      * **One-Time Charges**: (For any configuration not available through the Admin Console, contact Recurly Support via the #support Slack channel.)
    * **Site Settings**: Enable **Allow multiple subscriptions to the same plan** and activate the feature flag **tax\_inclusive\_pricing**.
@@ -90,7 +92,7 @@ Follow the steps below in the order shown to set up your integration:
      * Install the Recurly subscription widget into your theme—by default, it is added to the “Default product” page (you may reposition it as needed).
 
 6. **Configure the Customer Portal Link**
-   * In Shopify Admin, navigate to **Settings -> Checkout** and click **Customize** next to your Checkout configuration.
+   * In Shopify Admin, navigate to **Settings → Checkout** and click **Customize** next to your Checkout configuration.
    * Switch to the **Orders** view.
    * From the left navigation, click **Section**, then **Add app block**.
    * Add the **Customer Portal Link** block to provide customers with a direct link to the Recurly portal for managing subscriptions.
