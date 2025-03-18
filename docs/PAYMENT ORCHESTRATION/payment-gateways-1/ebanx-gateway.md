@@ -153,3 +153,7 @@ When in sandbox ONLY, the response will contain a response URL for simulating in
 ### **Q: I updated my customer’s VPA, but the original account was charged. How do I fix this?**
 
 * **Billing Info Updates** aren’t supported with UPI AutoPay. Cancel the current subscription and have your customer re-subscribe using their new VPA.
+
+### **Q: A subscription renewal failed, and I cannot attempt collection. Why?**
+
+* **Merchant-initiated one-time transactions** aren’t supported with UPI AutoPay. Reach out to your customer about payment options.
