@@ -20,6 +20,10 @@ The Liability Balances Report provides crucial insights into the fluctuations in
 
 # Guide
 
+<Embed url="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" href="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" html="false" />
+
+<br />
+
 ## Accessing and configuring the report
 
 To access and configure the Liability Balances Report:
