@@ -119,6 +119,8 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 >
 > Enrollment, Mandate Status, and Payment Updates will not occur properly without webhook setup. Please follow these steps in both production and test environments in Ebanx.
 
+# Other Notes
+
 ## Mandate Preferences
 
 **UPI – Recurring** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future.
