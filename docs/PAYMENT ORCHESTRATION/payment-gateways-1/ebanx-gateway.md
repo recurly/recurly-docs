@@ -123,6 +123,10 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 **UPI – Recurring** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future.
 
+## Testing in Sandbox
+
+When in sandbox ONLY, the response will contain a response URL for simulating interactions with the UPI Application. This interaction would typically take place with the customer directly via push notifications on their phone. For testing purposes, use the URL to accept or reject the mandate enrollment request.
+
 ## Troubleshooting FAQs
 
 ### **Q: My UPI subscription is failing. How can I fix this?**
