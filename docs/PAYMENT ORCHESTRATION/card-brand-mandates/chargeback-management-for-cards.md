@@ -28,7 +28,8 @@ More gateways will be available in the future.
 1. Shoppers issue a chargeback with their issuing bank. Merchant can dispute or accept a chargeback through their gateway.
 2. When chargeback is in the final state (lost or accepted) Recurly receives a “Chargeback Completed” event from a gateway.
 3. Recurly creates an external refund invoice and a chargeback transaction
-4. Recurly expires a shopper subscription. If supported by gateway Recurly will expire subscription only for fraud and service chargebacks.
+4. Recurly expires a shopper subscription.
+   1. **Note:** If supported by gateway Recurly will only expire subscription only for fraud and service chargebacks.
 
 NOTE: Recurly does not process chargeback reversals
 
@@ -53,3 +54,19 @@ NOTE: Recurly does not process chargeback reversals
 #### Chase Orbital
 
 To enable chargeback management with Chase Orbital gateway you need to provide Recurly access to Chase chargeback file reports. Please reach out to your Recurly contact for more information.
+
+## Service and Fraud Chargeback Codes
+
+<Tabs>
+  <Tab title="First Tab">
+    Welcome to the content that you can only see inside the first Tab.
+  </Tab>
+
+  <Tab title="Second Tab">
+    Here's content that's only inside the second Tab.
+  </Tab>
+
+  <Tab title="Third Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+</Tabs>
