@@ -61,7 +61,7 @@ To access and configure the Transfer Account Details Report:
 3. **Total Balances:**
    * The report allows you to see the total balances in one or all accounts, similar to the Transfer JE card, by aggregating the debits and credits. This feature simplifies the process of analyzing and comparing accounts.
 
-## Report Columns
+## Report columns
 
 The **Transfer Account Details Report** includes several key columns, which can be customized to display the most relevant information for your needs:
 
