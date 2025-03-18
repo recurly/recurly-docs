@@ -220,7 +220,7 @@ The **asset balances report** provides a comprehensive view of the movement of c
 
 Checkout our step-by-step guide to leverage the liabilities balances report feature:
 
-<Embed url="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" href="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
+<Embed url="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" href="https://drive.google.com/file/d/10AqwXHA_ULUiV_LAO1Jlx3Lc23J-RiQP/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" html="false" />
 
 The **liability balances report** provides insights into the changes in contract liability for a specified period. A contract liability represents outstanding costs after payment is received. The report includes the following default columns:
 
