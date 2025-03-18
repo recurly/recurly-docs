@@ -38,7 +38,7 @@ PayPal Complete is the latest and greatest payment gateway solution by PayPal th
 | Supported Recurly services      | PayPal Complete                                                                               |
 | Supported operations            | Payment, Refund                                                                               |
 | Supported payment types         | Credit and Debit Cards, PayPal                                                                |
-| Supported card brands           | Visa, Mastercard, American Express, Discover, JCB, UnionPay, Diner Club                       |
+| Supported card brands           | Visa, Mastercard, American Express, Discover, JCB, Diner Club                                 |
 | Gateway specific 3DS2 supported | N/A                                                                                           |
 | Card on File Supported          | N/A                                                                                           |
 | Regions                         | United States, Australia, Canada, United Kingdom                                              |
