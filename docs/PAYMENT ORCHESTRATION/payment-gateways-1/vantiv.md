@@ -22,7 +22,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 ### Prerequisites
 
-* A WorldPay eCommerce (formerly Vantiv) merchant account 
+* A WorldPay eCommerce (formerly Vantiv) merchant account
 * WorldPay's approval for Recurly connection
 * Configuration settings adjusted to incorporate WorldPay's automatic account updater (if required)
 
@@ -44,101 +44,16 @@ The WorldPay eCommerce (formerly known as Vantiv or the Litle platform) facilita
 
 # Key details
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Feature
-      </th>
-
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Services that work with Recurly
-      </td>
-
-      <td>
-        Credit Cards
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported operations
-      </td>
-
-      <td>
-        Transaction Processing (Verify, Purchase, Separate Authorize and Capture, Void, Refund)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported payment types
-      </td>
-
-      <td>
-        Credit Card, Apple Pay
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported card brands
-      </td>
-
-      <td>
-        Visa, MasterCard, Amex, Discover, JCB, Diners Club
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Gateway Specific 3DS2 Supported
-      </td>
-
-      <td>
-        No
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Card on File Supported
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Regions
-      </td>
-
-      <td>
-        US and Canada
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Currencies
-      </td>
-
-      <td>
-        See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Feature                         | Description                                                                                                |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Credit Cards                                                                                               |
+| Supported operations            | Transaction Processing (Verify, Purchase, Separate Authorize and Capture, Void, Refund)                    |
+| Supported payment types         | Credit Card, Apple Pay                                                                                     |
+| Supported card brands           | Visa, MasterCard, Amex, Discover, UnionPay, JCB, Diners Club                                               |
+| Gateway Specific 3DS2 Supported | No                                                                                                         |
+| Card on File Supported          | Yes                                                                                                        |
+| Regions                         | US and Canada                                                                                              |
+| Currencies                      | See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a> |
 
 Recurly is compatible with **WorldPay eCommerce**, previously known as the Vantiv or Litle platform. Before initializing the connection between your Recurly account and WorldPay eCommerce, it is mandatory to procure authorization from WorldPay to facilitate Recurly's connectivity.
 
@@ -159,7 +74,7 @@ For a comprehensive understanding and an effortless setup process, consult with 
 Setting up your WorldPay eCommerce (formerly Vantiv) with Recurly is a seamless process. Follow the steps outlined below to establish a robust payment solution for your business:
 
 1. **Merchant account setup**
-   * If you don't already have a WorldPay eCommerce merchant account, establish one.   
+   * If you don't already have a WorldPay eCommerce merchant account, establish one.
 2. **Request connection permission**
    * Reach out to WorldPay to request permission for Recurly to access and connect to your WorldPay eCommerce account.
 3. **Recurly setup**
@@ -173,7 +88,7 @@ Setting up your WorldPay eCommerce (formerly Vantiv) with Recurly is a seamless 
    * In the same Accepted Currencies section, to the right, **enter** your Worldpay / Vantiv Merchant ID associated with each selected currency under Merchant IDs for Selected Currencies’.
    * If your Worldpay Account is set up to accept Zero Dollar Authorizations, **select** which card types are authorized under ‘Zero Dollar Authorizations (Advanced)’.
    * If desired, **enable** WorldPay's Automatic Account Updater. This allows Recurly to make an additional attempt after a hard decline to obtain potential updates from WorldPay.
-   * **Click** ‘Add Payment Gateway’ when complete.  
+   * **Click** ‘Add Payment Gateway’ when complete.
 5. **Test the integration**
    * Once configured, **perform** test transactions to ensure the integration is functioning correctly.
    * **Review** transactions and monitor for any errors to correct them promptly.
