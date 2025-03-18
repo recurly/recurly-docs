@@ -135,7 +135,6 @@ When in sandbox ONLY, the response will contain a response URL for simulating in
 * Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so Net-0 terms can cause payment failures.
 * One-time transactions: VPAs cannot be used for one-time transactions.
 * Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
-* Force Collections: Mandates do not allow one-time MITs.
 * Standard Retries: UPI can only be retried on the same day. UPI-specific retries are coming soon.
 * Account hierarchy: VPAs associated with a parent or child account will not be used in a recurring subscription – changing the hierarchy won’t affect existing subscriptions as a result.
 * Aggregated / Calendar Invoicing: Taking existing subscriptions and combining them is against mandate-regulations in India, and therefore cannot be allowed.
@@ -152,7 +151,7 @@ When in sandbox ONLY, the response will contain a response URL for simulating in
 
 ### **Q: I updated my customer’s VPA, but the original account was charged. How do I fix this?**
 
-* **Billing Info Updates** aren’t supported with UPI AutoPay. Cancel the current subscription and have your customer re-subscribe using their new VPA.
+* **Billing Info Updates** aren’t supported with UPI AutoPay. Cancel the current subscription and have your customer re-subscribe using their new VPA. If Customers need to update their bank details, they must do so in the UPI App.
 
 ### **Q: A subscription renewal failed, and I cannot attempt collection. Why?**
 
