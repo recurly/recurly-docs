@@ -55,18 +55,18 @@ NOTE: Recurly does not process chargeback reversals
 
 To enable chargeback management with Chase Orbital gateway you need to provide Recurly access to Chase chargeback file reports. Please reach out to your Recurly contact for more information.
 
-## Service and Fraud Chargeback Codes
+## Service and Fraud Chargeback Code
 
-<Tabs>
-  <Tab title="First Tab">
-    Welcome to the content that you can only see inside the first Tab.
-  </Tab>
+Card brands have unique Fraud codes for each network. These codes include:
 
-  <Tab title="Second Tab">
-    Here's content that's only inside the second Tab.
-  </Tab>
+#### Fraud Chargeback Codes
 
-  <Tab title="Third Tab">
-    Here's content that's only inside the third Tab.
-  </Tab>
-</Tabs>
+| Visa                         | MasterCard                               | Cartes Bancaires | Discover                     | UnionPay         | Diners                  | JCB                     | Elo    | American Express                                                                                 |
+| :--------------------------- | :--------------------------------------- | :--------------- | :--------------------------- | :--------------- | :---------------------- | :---------------------- | :----- | :----------------------------------------------------------------------------------------------- |
+| 10.1, 10.2, 10.3, 10.4, 10.5 | 4837, 4840, 4849, 4863, 4870, 4871, 4999 | 45               | 4752, 4866, 4867, 7010, 7030 | 4515, 4514, 4562 | C46, C41, C42, C53, C54 | 534, 546, 526, 526, 527 | 75, 83 | 4526, 4527, 4534, 4540, 4755, 4763, 4798, 4799, F10, F14, F24, F29, F30, F31, FR2, FR4, FR5, FR6 |
+
+#### Service Chargeback Codes
+
+| Visa                                    | MasterCard                         | Cartes Bancaires | Discover            | UnionPay       | Diners          | JCB                         | Elo      | American Express                                                  |
+| :-------------------------------------- | :--------------------------------- | :--------------- | :------------------ | :------------- | :-------------- | :-------------------------- | :------- | :---------------------------------------------------------------- |
+| 13.1 13.2 13.3 13.4 13.5 13.6 13.7 13.8 | 4841 4853 4854 4855 4859 4860 6305 | 30, 41, 53       | 4755 4553 4541 8002 | 4502 4532 4544 | D62 D66 D69 D70 | 502 513 516 544 554 537 538 | 30 41 53 | 4513 4515 4544 4553 4554 4754 C02 C04 C05 C08 C14 C18 C28 C31 C32 |
