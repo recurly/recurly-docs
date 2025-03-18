@@ -129,6 +129,20 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 When in sandbox ONLY, the response will contain a response URL for simulating interactions with the UPI Application. This interaction would typically take place with the customer directly via push notifications on their phone. For testing purposes, use the URL to accept or reject the mandate enrollment request.
 
+## Features that will not work with UPI AutoPay
+
+* Subscription upgrades: Mandates stored on the UPI app control the amount and frequency. Changing this on the recurly side could cause declines.
+* Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so Net-0 terms can cause payment failures.
+* One-time transactions: VPAs cannot be used for one-time transactions.
+* Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
+* Force Collections: Mandates do not allow one-time MITs.
+* Standard Retries: UPI can only be retried on the same day. UPI-specific retries are coming soon.
+* Account hierarchy: VPAs associated with a parent or child account will not be used in a recurring subscription – changing the hierarchy won’t affect existing subscriptions as a result.
+* Aggregated / Calendar Invoicing: Taking existing subscriptions and combining them is against mandate-regulations in India, and therefore cannot be allowed.
+* Bundling Subscriptions: See calendar aggregation.
+* Multiple Subscriptions on a Single Account: Each individual subscription uses a mandate ID, and only one mandate ID is allowed per account.
+* Merchant Admin-created Subscriptions: due to pre-debit notification and enrollment verification that occurs in the UPI app, MIT subscription enrollments are not allowed.
+
 ## Troubleshooting FAQs
 
 ### **Q: My UPI subscription is failing. How can I fix this?**
