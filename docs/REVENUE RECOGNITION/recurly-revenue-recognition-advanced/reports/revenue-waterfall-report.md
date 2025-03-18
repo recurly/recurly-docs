@@ -24,6 +24,10 @@ The revenue Waterfall report displays the revenue schedules of various transacti
 
 # Guide
 
+<Embed url="https://drive.google.com/file/d/1AUOf-PNrquiVtv8zazJ4-0iEdwlCXWUl/preview" href="https://drive.google.com/file/d/1AUOf-PNrquiVtv8zazJ4-0iEdwlCXWUl/preview" typeOfEmbed="iframe" height="450px" width="800%" iframe="true" />
+
+<br />
+
 ## Accessing and configuring the report
 
 To access and configure the Liability Balances Report:
