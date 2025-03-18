@@ -25,10 +25,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-* The only supported currencies for this test gateway are USD, AUD, BRL, CAD, CHF, CZK, DKK, EUR, GBP, HUF, ILS, INR, JPY, MXN, NOK, NZD, PLN, SEK, SGD, ZAR.
-* Test Gateway transactions are solely for testing and do not represent real monetary transactions.
+* Transactions are for testing purposes only and do not involve real money.
+* Test Gateway results may not always match live gateway outcomes.
 * Not all real-world error scenarios can be simulated.
-* Transaction results in the Test Gateway may not always reflect outcomes in a live gateway setting.
+* Currencies supported are limited to **USD, AUD, BRL, CAD, CHF, CZK, DKK, EUR, GBP, HUF, ILS, INR, JPY, MXN, NOK, NZD, PLN, SEK, SGD**, and **ZAR**.
 
 # Definition
 
