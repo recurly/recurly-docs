@@ -70,3 +70,7 @@ Card brands have unique Fraud codes for each network. These codes include:
 | Visa                                    | MasterCard                         | Cartes Bancaires | Discover            | UnionPay       | Diners          | JCB                         | Elo      | American Express                                                  |
 | :-------------------------------------- | :--------------------------------- | :--------------- | :------------------ | :------------- | :-------------- | :-------------------------- | :------- | :---------------------------------------------------------------- |
 | 13.1 13.2 13.3 13.4 13.5 13.6 13.7 13.8 | 4841 4853 4854 4855 4859 4860 6305 | 30, 41, 53       | 4755 4553 4541 8002 | 4502 4532 4544 | D62 D66 D69 D70 | 502 513 516 544 554 537 538 | 30 41 53 | 4513 4515 4544 4553 4554 4754 C02 C04 C05 C08 C14 C18 C28 C31 C32 |
+
+You can reference these codes on the Gateway's documentation pages:
+
+* Adyen: [Adyen Dispute Reasons and Defense Requirements](https://docs.adyen.com/risk-management/understanding-disputes/dispute-reason-codes/)
