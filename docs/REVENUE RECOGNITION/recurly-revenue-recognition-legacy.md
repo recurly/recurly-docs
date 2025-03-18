@@ -22,9 +22,9 @@ This feature is no longer offered.
 
 # Legacy solution: Recurly Revenue Recognition
 
-Please be advised that our **legacy revenue recognition solution is no longer available for new subscriptions**. 
+Please be advised that our **legacy revenue recognition solution is no longer available for new subscriptions**. However, we are committed to ensuring that existing users can continue to access this solution without interruption.
 
-However, we are committed to ensuring that existing users can continue to access this solution without interruption. Because we no longer sell our legacy solution, we recommend new merchants explore our enhanced Recurly Revenue Recognition Advanced or Standalone editions, which are both designed to meet today's complex financial reporting requirements with ease and precision, and are ASC 606 and IFRS 15 compliant.
+Because we no longer sell our legacy solution, we recommend new merchants explore our enhanced Recurly Revenue Recognition Advanced or Standalone editions, which are both designed to meet today's complex financial reporting requirements with ease and precision, and are ASC 606 and IFRS 15 compliant.
 
 > 📘 Notes:
 >
