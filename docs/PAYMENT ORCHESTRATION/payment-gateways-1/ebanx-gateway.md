@@ -148,8 +148,7 @@ When in sandbox ONLY, the response will contain a response URL for simulating in
 ### **Q: My UPI subscription is failing. How can I fix this?**
 
 * Confirm the subscription price hasn’t changed without re-engaging the customer.
-* Verify your **Mandate Management** settings. If they’re set to manual, you may need to act on a webhook to update the subscription status.
-* Make sure the customer is responding to UPI app push notifications, especially for charges above **15 INR**.
+* Make sure the customer is responding to UPI app push notifications, especially for charges above **15000 INR**.
 
 ### **Q: I updated my customer’s VPA, but the original account was charged. How do I fix this?**
 
