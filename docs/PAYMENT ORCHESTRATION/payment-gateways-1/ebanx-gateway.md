@@ -123,7 +123,7 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 ## Mandate Preferences
 
-**UPI – Recurring** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future.
+**UPI – Recurring** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in the UPI app
 
 ## Testing in Sandbox
 
