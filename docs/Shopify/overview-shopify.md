@@ -65,7 +65,7 @@ Combat involuntary churn with an **optimized payment retry process**, applying a
 
 ### How can subscription management through Recurly supercharge my Shopify store
 
-Recurly streamlines the complexities of subscription management, enabling you to focus on what you do best. From best-in-class analytics to intelligent retries, and a Recurly team member will walk you thorugh the download process.
+Recurly streamlines the complexities of subscription management, enabling you to focus on what you do best. From best-in-class analytics to intelligent retries, and a Recurly team member will walk you through the download process.
 
 ### Is Recurly available on the Shopify marketplace?
 
@@ -73,7 +73,7 @@ Yes! It is available on the marketplace, but you must first submit a support tic
 
 ### How will checkout work for my Shopify subscription purchases?
 
-Shopify requires that all app integrations leverage their checkout experience which includes access to ShopPay, a high-converting one-click payment method
+Shopify requires that all app integrations leverage their checkout experience which includes access to [ShopPay](https://www.shopify.com/shop-pay), a high-converting one-click payment method.
 
 ### Can I launch a digital or physical subscription in Shopify?
 
@@ -81,4 +81,4 @@ Both! You can launch either a digital or physical subscription, or a combination
 
 ### Can I migrate from another subscription management platform like Recharge or Ordergroove?
 
-Yes, you can absolutely migrate from another platform. Just mention that when you submit your support ticket!
+Yes, you can absolutely migrate from another platform. Just mention that when you submit your [support ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852)!
