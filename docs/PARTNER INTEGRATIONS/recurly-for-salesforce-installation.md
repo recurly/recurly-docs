@@ -10,6 +10,6 @@ metadata:
 next:
   description: ''
 ---
-Once the Recurly for Salesforce integration has been added to your Recurly plan and production account,  [**click here**](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tHp000001qqy1) for the installation link for the production Salesforce integration.
+Once the Recurly for Salesforce integration has been added to your Recurly plan and production account,  [**click here**](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tHp000001rPL1) for the installation link for the production Salesforce integration.
 
 Then, follow the steps on the [Recurly for Salesforce Setup](doc:recurly-for-salesforce-set-up) page to download and configure the integration to meet your needs.
