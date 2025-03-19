@@ -29,35 +29,35 @@ The [Recurly Shopify App](https://recurly.com/product/recurly-shopify-integratio
 
 # Shopify benefits
 
-**Effortless setup**
+### **Effortless setup**
 
 Implement our subscription solution quickly through a **no-code installation**, minimizing deployment time and technical overhead. You can start offering subscription products alongside your existing Shopify store in minutes.
 
-**Native admin integration**
+### **Native admin integration**
 
 Manage subscriptions directly within the **Shopify admin**, creating a seamless, centralized experience for both merchants and customers. This unified approach streamlines setup, billing processes, and customer management tasks.
 
-**Mixed cart support**
+### **Mixed cart support**
 
 Encourage higher order values and boost customer satisfaction by allowing shoppers to combine **subscription and one-time purchases** in a single transaction. This flexible checkout experience encourages cross-selling and repeat business.
 
-**Customer portal**
+### **Customer portal**
 
 Empower subscribers with a self-service **portal** where they can manage their subscriptions, update payment details, and adjust preferences. By reducing support tickets and giving customers more control, you’ll bolster long-term loyalty.
 
-**Flexible coupons**
+### **Flexible coupons**
 
 Drive sales and retention with **promotional offers** tailored to your audience. Whether it’s a one-time discount or an ongoing promotion, you can quickly create and manage coupons that attract new customers and reward existing ones.
 
-**Robust analytics**
+### **Robust analytics**
 
 Leverage **data-driven insights** to optimize your subscription business. Our analytics dashboard provides real-time visibility into performance metrics, enabling you to refine pricing strategies, retention efforts, and overall growth tactics.
 
-**Smart dunning campaigns**
+### **Smart dunning campaigns**
 
 Recover lost revenue with **intelligent dunning** that automatically handles declined payments. By retrying payments at the ideal times, you’ll preserve customer relationships while reducing manual workloads.
 
-**Best-in-class intelligent retry model**
+### **Best-in-class intelligent retry model**
 
 Combat involuntary churn with an **optimized payment retry process**, applying advanced algorithms to pinpoint the best times for reattempts. This approach maximizes successful charges and drives higher revenue retention.
 
