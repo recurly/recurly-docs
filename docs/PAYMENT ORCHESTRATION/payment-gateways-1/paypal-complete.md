@@ -155,7 +155,7 @@ To ensure that the transaction status from PayPal syncs accurately with Recurly,
    * Within the **My Selling Tools** section, locate the **Instant payment notifications** row under the **Getting paid and managing my risk** category. Click on the **Update** link adjacent to it.
 4. **Configuring IPN settings**:
    * Opt for **Choose IPN Settings**. This lets you set your listener's URL and activate it.
-   * Insert the following URL: `https://callbacks.recurly.com/paypal/_recurly_subdomain_here_`. For instance, if your subdomain is "kalekrate", the URL would be [https://callbacks.recurly.com/paypal/kalekrate](https://callbacks.recurly.com/paypal/kalekrate).
+   * Insert the following URL: `https://callbacks.recurly.com/paypal/_recurly_subdomain_here_`. For instance, if your subdomain is "kalekrate", the URL would be `[https://callbacks.recurly.com/paypal/kalekrate](https://callbacks.recurly.com/paypal/kalekrate).`
 5. **Enabling IPN messages**:
    * Select the **Receive IPN messages (Enabled)** option to activate your listener.
 6. **Saving and exiting**:
