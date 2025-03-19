@@ -17,7 +17,7 @@ next:
 
 ### Required plan
 
-This feature is available to all customers on any subscription plan.
+This feature or setting is available to all customers on Professional and Elite subscription plans. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
 ### Limitations
 
@@ -86,7 +86,7 @@ Set the status to ‘Enable’ to activate real-time fraud management monitoring
 
 ### High risk decline
 
-Utilizing Kount's extensive data and logic, this feature gives a detailed analysis of transactions, checking for connections to fraudulent activities outside of Recurly's network. Any transaction identified as High Risk by Kount will be automatically declined. 
+Utilizing Kount's extensive data and logic, this feature gives a detailed analysis of transactions, checking for connections to fraudulent activities outside of Recurly's network. Any transaction identified as High Risk by Kount will be automatically declined.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/69df826-Screen_Shot_2024-06-21_at_12.42.52_PM.png" />
 
@@ -94,7 +94,7 @@ Utilizing Kount's extensive data and logic, this feature gives a detailed analys
 
 ### Risk score decline threshold
 
-This setting allows you to define the risk score threshold that, if exceeded by a transaction, will trigger an automatic decline. A higher Risk Score setting means a more lenient approach to risk, potentially reducing the number of declined transactions. Conversely, a lower Risk Score setting indicates a stricter risk threshold, leading to more declined transactions. 
+This setting allows you to define the risk score threshold that, if exceeded by a transaction, will trigger an automatic decline. A higher Risk Score setting means a more lenient approach to risk, potentially reducing the number of declined transactions. Conversely, a lower Risk Score setting indicates a stricter risk threshold, leading to more declined transactions.
 
 Adjust this threshold by selecting an option from the dropdown menu to align with your organization's risk tolerance.
 
@@ -126,6 +126,6 @@ This regulation controls the frequency of billing updates initiated from the sam
 
 ## Blocked countries
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/4fce49a-Screen_Shot_2024-06-21_at_12.45.05_PM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/4fce49a-Screen_Shot_2024-06-21_at_12.45.05_PM.png" />
 
 You have the option to automatically reject transactions originating from countries you designate as high risk. This automatic decline activates when the customer's transaction BIN (Bank Identification Number) Country is a match with any selected on your deny list. This rule is specifically applied to credit card transactions, enhancing your fraud prevention measures by geography.
