@@ -31,7 +31,7 @@ Please be aware of the following limitations of PayPal Complete:
 
 PayPal Complete is the latest and greatest payment gateway solution by PayPal that simplifies the payment process by accommodating a variety of PayPal payment methods within one single integration. Incorporating PayPal Complete into Recurly is swift and hassle-free, eliminating the need to acquire a separate merchant account.
 
-> 📣 Upgrade to PayPal Complete Today!
+> 👍 Upgrade to PayPal Complete Today!
 >
 > If you're using PayPal Payflow Pro, PayPal Payment Pro (US), or PayPal Business, now’s the time to switch! All new Recurly + PayPal features will be available only on PayPal Complete.
 >
