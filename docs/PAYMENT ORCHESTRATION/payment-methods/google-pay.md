@@ -48,3 +48,5 @@ Google Pay™ is a prominent payment method, allowing customers to perform trans
 #### Recurly.js Integration
 
 To integrate Google Pay™, refer to the [Recurly.js documentation](https://developers.recurly.com/reference/recurly-js/index.html#google-pay) which guides through adding Google Pay™ as a payment method.
+
+* **Note**: for return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Google Pay.
