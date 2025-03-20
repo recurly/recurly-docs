@@ -30,6 +30,7 @@ To integrate Apple Pay on the Web, ensure you have:
 
 * An Apple Developer's Account and a verified domain.
 * Recurly.js v4 or <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a>.
+  * **Note**: for return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Apple Pay.
 * Recurly currently supports Apple Pay transactions through [Adyen](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe), [Braintree](https://docs.recurly.com/docs/braintree), [Vantiv](https://docs.recurly.com/docs/vantiv), [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), Chase [Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital), and [Cybersource](https://docs.recurly.com/docs/cybersource) as gateways.
 * This payment method allows using [Zero Dollar Authorizations](https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda).
 
