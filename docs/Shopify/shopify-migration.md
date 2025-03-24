@@ -44,7 +44,7 @@ This guide outlines the process for migrating active subscriptions from a legacy
 1. **Develop a Communication Strategy**: Inform active customers about the migration, disable automatic email notifications from the previous subscription app to avoid confusion, and clearly communicate that the customer portal URL will change.
 2. **Schedule the Migration**: Plan the migration during a low-activity period to minimize discrepancies between data export and the migration process.
 3. **Ensure Customer Data Compliance**: Verify that Shopify Checkout requires both first and last names, as this is mandatory for new subscriptions and the migration.
-4. **Prepare the Recurly Site**: [Set up and configure](https://docs.recurly.com/docs/shopify-early-access#/)  your non-Production Recurly site with the necessary custom fields, currencies, coupon settings, and site configurations. (
+4. **Prepare the Recurly Site**: [Set up and configure](https://docs.recurly.com/docs/shopify-early-access#/create-and-configure-a-recurly-site)  your non-Production Recurly site with the necessary custom fields, currencies, coupon settings, and site configurations. (
 5. **Install and Configure the Recurly Shopify App**: Install the app in your Shopify store and create equivalent Recurly plans for every active subscription to ensure proper associations during migration.
 
 ## Migration process
