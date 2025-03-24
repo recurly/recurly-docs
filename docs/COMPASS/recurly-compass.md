@@ -18,9 +18,13 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Prerequisites
+### Permissions
 
-This feature is in Early Access. To participate, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com).
+Access requirements vary by feature:
+
+* **Insights** – Requires **Analytics** permissions
+* **Playbooks** – Requires **Analytics AND Configuration** permissions
+* **Search** – Available to **all users**
 
 # Definition
 
