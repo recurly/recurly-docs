@@ -14,8 +14,6 @@ next:
 ---
 # Overview
 
-<br />
-
 <script async src="https://js.storylane.io/js/v2/storylane.js" />
 
 <iframe loading="lazy" class="sl-demo" src="https://app.storylane.io/demo/hukto58a8ui8?embed=inline" name="sl-embed" allow="fullscreen" allowfullscreen />
@@ -127,7 +125,3 @@ No, Recurly does not currently use merchant data for AI training.
 #### **What if I want to opt-out of Recurly Compass?**
 
 Contact [support@recurly.com](mailto:support@recurly.com) to opt-out.
-
-<script async src="https://js.storylane.io/js/v2/storylane.js" />
-
-<iframe loading="lazy" class="sl-demo" src="https://app.storylane.io/demo/hukto58a8ui8?embed=inline" name="sl-embed" allow="fullscreen" allowfullscreen />
