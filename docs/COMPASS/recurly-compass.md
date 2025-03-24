@@ -42,7 +42,7 @@ Stay ahead of the competition with proactive, tailored insights designed to opti
 
 Receive AI-driven, proactive prompts based on your subscription data.
 
-🚀 6 Key Business Metrics:
+🚀 9 Key Business Metrics:
 
 * Subscriber Activations
 * Acquisition Rate
