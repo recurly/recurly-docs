@@ -77,7 +77,7 @@ Guided and self paced journeys designed to help you optimize your subscription s
 
 **Self-Paced:** Self-Paced plays offer additional strategies to help you grow your business.
 
-* **Accept PayPal Payments** In order to successfully implement PayPal Complete, you must be in a location supported by PayPal, and that the email addressed used to connect to PayPal will be pulled from the Billing Contact Email in Recurly.
+* In order to successfully run the **Accept PayPal Payments** play and implement PayPal Complete, you must be in a location supported by PayPal, and that the email addressed used to connect to PayPal will be pulled from the Billing Contact Email in Recurly.
 
 **🎯 What Playbooks help you do:**
 
