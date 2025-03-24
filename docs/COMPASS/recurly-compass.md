@@ -4,7 +4,7 @@ excerpt: >-
   An extension of your team. Recurly Compass AI-powered tools help you make
   smarter, faster decisions to grow your subscription business.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
