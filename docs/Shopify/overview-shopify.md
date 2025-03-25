@@ -21,8 +21,7 @@ This feature or setting is available to all customers on Professional and Elite 
 
 ### Prerequisites & limitations
 
-To request access to Recurly’s Shopify App, contact Recurly Support by sending an email to [support@recurly.com](mailto:support@recurly.com) with “Shopify” In the subject line or submitting a request\
-<a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">here</a>.
+To request access to Recurly’s Shopify App, contact Recurly Support by sending an email to [support@recurly.com](mailto:support@recurly.com) with “Shopify” In the subject line or submitting a request <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">here</a>.\
 Our team will set up your account and guide you through the onboarding process.
 
 # Definition
