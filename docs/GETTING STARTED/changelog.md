@@ -105,6 +105,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 9/24/2024: **Braintree gateway**- Added support for Google Pay. Please see [Google Pay documentation](https://dash.readme.com/project/reference-docs/v1.0/docs/google-pay) for more information.
 * 9/11/2024: **Cybersource gateway**- Added support for returning request ID and capture reconciliation ID in API responses.
 * 09/11/2024: **SingleSignOn** - Revenue Recognition Advanced login/logout is now in sync with the Recurly login/logout. While in Revenue Recognitions Advanced, users can navigate to the Recurly app by clicking on the Recurly logo on RevRec. Users can toggle between different sites from RevRec.
+* 09/11/2024: **Gateway Enhancements** - Made improvements to card on file handling for gateways including: Stripe, Adyen, Braintree, Cybersource, Chase Orbital, WorldPay, Authorize.net, Payeezy, First Data, TSYS, and AmazonV2. No integration changes are expected in most cases. Please see notes on respective payment method pages depending on your integration specific to return customers.
 * 9/4/2024: **Worldpay gateway**- Added support for additional response codes related to virtual card numbers.
 
 ## August
