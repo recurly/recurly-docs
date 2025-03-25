@@ -1,6 +1,11 @@
 ---
 title: PayPal Complete
-excerpt: ''
+excerpt: >-
+  PayPal Complete is the latest and greatest payment gateway solution by PayPal
+  that simplifies the payment process by accommodating a variety of PayPal
+  payment methods within one single integration. Incorporating PayPal Complete
+  into Recurly is swift and hassle-free, eliminating the need to acquire a
+  separate merchant account
 deprecated: false
 hidden: false
 metadata:
