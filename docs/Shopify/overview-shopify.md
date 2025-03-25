@@ -82,4 +82,4 @@ Both! You can launch either a digital or physical subscription, or a combination
 
 ### Can I migrate from another subscription management platform like Recharge or Ordergroove?
 
-Yes, you can absolutely migrate from another platform. Just mention that when you submit your [support ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852)!
+Yes, you can absolutely migrate from another platform. Just mention that when you submit your <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">support ticket</a>!
