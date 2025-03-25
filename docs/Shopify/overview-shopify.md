@@ -26,7 +26,7 @@ Our team will set up your account and guide you through the onboarding process.
 
 # Definition
 
-The [Recurly Shopify App](https://recurly.com/product/recurly-shopify-integration/) makes it simple to launch and manage subscription offerings directly from your Shopify store. By installing our no-code integration, you can offer advanced subscription features—like auto-ship, mixed-cart purchases, customizable coupons, and a dedicated customer portal—without leaving the Shopify admin. Your subscription plans and purchases automatically sync with Recurly, granting you access to our robust, enterprise-grade lifecycle management platform. With tools such as intelligent dunning campaigns, payment retries, and real-time analytics, you can elevate revenue retention and delight customers with a seamless subscription experience.
+The <a href="https://recurly.com/product/recurly-shopify-integration/" target="_blank" rel="noopener noreferrer">Recurly Shopify App</a> makes it simple to launch and manage subscription offerings directly from your Shopify store. By installing our no-code integration, you can offer advanced subscription features—like auto-ship, mixed-cart purchases, customizable coupons, and a dedicated customer portal—without leaving the Shopify admin. Your subscription plans and purchases automatically sync with Recurly, granting you access to our robust, enterprise-grade lifecycle management platform. With tools such as intelligent dunning campaigns, payment retries, and real-time analytics, you can elevate revenue retention and delight customers with a seamless subscription experience.
 
 # Shopify benefits
 
@@ -74,7 +74,7 @@ Yes! It is available on the marketplace, but you must first submit a support tic
 
 ### How will checkout work for my Shopify subscription purchases?
 
-Shopify requires that all app integrations leverage their checkout experience which includes access to [ShopPay](https://www.shopify.com/shop-pay), a high-converting one-click payment method.
+Shopify requires that all app integrations leverage their checkout experience which includes access to <a href="https://www.shopify.com/shop-pay" target="_blank" rel="noopener noreferrer">ShopPay</a>, a high-converting one-click payment method.
 
 ### Can I launch a digital or physical subscription in Shopify?
 
