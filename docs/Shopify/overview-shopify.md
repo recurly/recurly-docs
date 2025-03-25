@@ -13,7 +13,7 @@ metadata:
 ---
 # Overview
 
-<Embed typeOfEmbed="iframe" url="https://drive.google.com/file/d/18KloKkpZNzEchlM1W-YEdQUMBlVeZ6m0/preview" href="https://drive.google.com/file/d/18KloKkpZNzEchlM1W-YEdQUMBlVeZ6m0/preview" html="false" iframe="true" height="600px" width="400px" />
+<iframe src="https://fast.wistia.net/embed/iframe/h1zbgifndg?web_component=true&seo=true" title="Shopify + Recurly demo (2025-02-14) Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="100%" height="100%"></iframe>
 
 ### Required plan
 
