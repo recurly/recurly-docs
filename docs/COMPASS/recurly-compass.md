@@ -1,5 +1,5 @@
 ---
-title: Recurly Compass
+title: 'Overview: Recurly Compass'
 excerpt: >-
   An extension of your team. Recurly Compass AI-powered tools help you make
   smarter, faster decisions to grow your subscription business.
