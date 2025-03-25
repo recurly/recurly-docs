@@ -63,7 +63,7 @@ Combat involuntary churn with an **optimized payment retry process**, applying a
 
 # FAQs
 
-### How can subscription management through Recurly supercharge my Shopify store
+### How can subscription management through Recurly supercharge my Shopify store?
 
 Recurly streamlines the complexities of subscription management, enabling you to focus on what you do best. From best-in-class analytics to intelligent retries, and a Recurly team member will walk you through the download process.
 
