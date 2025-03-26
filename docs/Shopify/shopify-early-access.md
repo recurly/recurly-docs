@@ -83,7 +83,7 @@ Once the purchase is complete, log into your Recurly site and look at the latest
 
 ## Next Steps
 
-Given this is currently Early Access, you may run into issues or have suggestions. Be sure to talk with your Recurly contact about those. It is important to test several different scenarios (e.g., mixed cart purchase of a hardware product and software subscription) to be sure everything is working as expected.
+Given this is currently early access, you may run into issues or have suggestions. Be sure to talk with your Recurly contact about those. It is important to test several different scenarios (e.g., mixed cart purchase of a hardware product and software subscription) to be sure everything is working as expected.
 
 In addition to testing, it is important to read the FAQs below.
 
