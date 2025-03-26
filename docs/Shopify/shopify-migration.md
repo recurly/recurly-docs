@@ -14,6 +14,8 @@ Imports can be broken down into multiple phases depending on your requirements.
 
 # Key details
 
+To help ensure a seamless transition to Shopify and Recurly, Recurly Professional Services will work with you throughout the following phases.
+
 ## Preparation phase
 
 * Recurly embedded Shopify app is installed and is connected to your Recurly site
