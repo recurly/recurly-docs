@@ -13,11 +13,11 @@ metadata:
 ---
 # Overview
 
-<iframe src="https://fast.wistia.net/embed/iframe/h1zbgifndg?web_component=true&seo=true" title="Shopify + Recurly demo (2025-02-14) Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="100%" height="100%"></iframe>
+<iframe src="https://fast.wistia.net/embed/iframe/h1zbgifndg?web_component=true&seo=true" title="Shopify + Recurly demo (2025-02-14) Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="100%" height="100%" />
 
 ### Required plan
 
-This feature or setting is available to all customers on Professional and Elite subscription plans. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature or setting is available to all customers on Professional and Elite subscription plans. To request to upgrade to this plan, please reach out to your Recurly Account Manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
 ### Prerequisites & limitations
 
