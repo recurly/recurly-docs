@@ -8,7 +8,7 @@ metadata:
 ---
 # Prerequisites
 
-To participate in Early Access, merchants must first [create a ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852). Recurly will answer any questions, and support merchants through the setup and testing.
+To participate in Early Access, merchants must reach out to their Recurly Account Manager, or [create a ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852). Recurly will answer any questions, and support merchants through the setup and testing.
 
 # Key details
 
