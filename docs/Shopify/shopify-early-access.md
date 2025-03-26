@@ -1,36 +1,14 @@
 ---
 title: Shopify early access
-excerpt: As of March 2025, Recurly is now available in the Shopify App Store.
+excerpt: Recurly is now available in the Shopify App Store, and ready for early access
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-# Overview
+# Prerequisites
 
-### Prerequisites
-
-To participate in Early Access, merchants must first [schedule a demo](https://recurly.com/request-a-demo/). Recurly will answer any questions, and support merchants through the setup and testing.
-
-# Definition
-
-For merchants selling via a Shopify store, they can now leverage Recurly to offer subscriptions and power a reliable, recurring revenue stream.
-
-Purpose-built for enterprise shops, Recurly's Shopify app makes it easy to diversify your revenue and scale with ease. Integrated directly into Shopify admin, the Recurly app enables features like auto-ship, mixed-cart purchases, free trials, customizable coupons, and a customer portal—all with no-code installation. Once integrated, you will have access to Recurly’s advanced features like customized dunning, intelligent payment retries, and robust analytics to help you engage and retain your customers.
-
-# Key benefits
-
-### Simple setup and management to accelerate growth
-
-* Reduce deployment time and technical overhead with our no-code installation
-* Streamline setup, billing and customer management with our native admin integration
-* Easily create and manage promos with our coupon functionality
-
-### Build loyalty with seamless customer experiences
-
-* Leverage Shopify checkout and ShopPay for a seamless, accelerated checkout experience
-* Customers can mix their carts with any combination of subscriptions and one-time purchases
-* Our customer portal makes it easy for your subscribers to easily update their information
+To participate in Early Access, merchants must first [create a ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852). Recurly will answer any questions, and support merchants through the setup and testing.
 
 # Key details
 
@@ -40,32 +18,31 @@ Follow the steps in order, and reach out to Recurly as needed.
 
 Utilize one of the two methods below to create a test Shopify store. You are also welcome to use an existing test store.
 
-* As a Shopify partner, you can create test stores for free which is the path we recommend. To become a Shopify partner, sign up via [this link](https://partners.shopify.com/signup?locale=en) . Log in as a Shopify partner [here](https://partners.shopify.com/organizations), and then follow the below steps.
+* As a Shopify partner, you can create test stores for free which is the recommended path. To become a Shopify partner, sign up via [this link](https://partners.shopify.com/signup?locale=en) . Log in as a Shopify partner [here](https://partners.shopify.com/organizations), and then follow the below steps.
   * From your Partner Dashboard, click Stores.
   * Click Add store > Create development store.
   * In the Development store use section, select Create a store to test and build.
   * In the Store details section, enter a name for your store.
-  * In “Data and Configurations”, select “Start with an empty store”
+  * In “Data and Configurations”, you can either select “Start with an empty store” or "Start with test data" depending on your preference.
 * An alternate method is to log into your Shopify account, and create a store. Please note that this method many incur a cost. Log into your Shopify account [here](https://www.shopify.com/store-login), and then follow the below steps.
   * Click the top right button, which is the name of the current store you are logged into.
   * Select "All stores", and then click "+ Create store".
 
 ## Configure your test Shopify store
 
-**Pre-requisite:** Your Shopify store should not have any existing Products, nor Discounts. Recurly will support migrating those very soon.
-
 Navigate to Shopify Admin of your store, and complete the following steps
 
 * In Settings -> Checkout, select “Require first and last name” in “Customer information”
 * In Settings -> Payment, activate the test payment provider, or set your payment provider (e.g., Adyen, Shopify Payments) to test mode. For now, let’s activate the test payment provider (bogus gateway) by following [these Shopify instructions](https://help.shopify.com/en/partners/dashboard/managing-stores/test-orders-in-dev-stores#testing-using-bogus-gateway).
   * You can also click “See all other providers”, and navigate to the top entry, which is the bogus gateway.
+  * If you created your store with test data, the bogus gateway should already be configured.
 * Recurly requires that payment info is captured in Shopify Checkout, so that Shopify can successfully charge your customer and vault the payment info.
   * If you are using a manual payment method, reach out to Recurly.
   * If payment is not configured, your customer will see “This store can’t accept payments right now.” when trying to checkout.
 
 ## Create, and configure a Recurly site
 
-For Early Access merchants, Recurly will take care of this step. There a few required configurations, and feature flags that need to be set for the integration with Shopify. Once created and configured, Recurly will provide you Admin access to your test Recurly site.
+For early access merchants, Recurly will take care of this step. There a few required configurations, and feature flags that need to be set for the integration with Shopify. Once created and configured, Recurly will provide you Admin access to your test Recurly site.
 
 ## Install the Recurly Shopify app into your test Shopify store
 
@@ -79,7 +56,7 @@ For Early Access merchants, Recurly will take care of this step. There a few req
 Note: You can click the Pin icon to pin the Recurly Subscriptions app to your left navigation
 
 * Follow the Setup guide and connect your Recurly site by adding an API key from Recurly
-* Once connected with Recurly, navigate to Products and create at least one test product. Be sure the product is published to the “Online Store” sales channel, and has available inventory.
+* Once connected with Recurly, navigate to Products and create at least one test product if you do not already have published products within your Shopify product catalog. Be sure the product is published to the “Online Store” sales channel, and has available inventory.
 * Resume with the Recurly Setup guide, and create a subscription plan with one of those test products
 * Continue with the Setup guide, and install the Recurly subscription widget into your theme. The widget will be dropped into the “Default product” page. You can move it around as desired within that page.
 
