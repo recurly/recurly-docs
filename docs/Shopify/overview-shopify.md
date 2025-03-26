@@ -17,12 +17,11 @@ metadata:
 
 ### Required plan
 
-This feature or setting is available to all customers on Professional and Elite subscription plans. To request to upgrade to this plan, please reach out to your Recurly Account Manager or [create a ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852).
+This feature or setting is available to all customers on Professional and Elite subscription plans. To upgrade to this plan, please reach out to your Recurly Account Manager or [create a ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852).
 
 ### Prerequisites & limitations
 
-To request access to Recurly’s Shopify App, <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">create a ticket</a>.\
-Our team will set up your account and guide you through the onboarding process.
+To request access to Recurly’s Shopify App, <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">create a ticket</a>. Our team will set up your account and guide you through the onboarding process.
 
 # Definition
 
