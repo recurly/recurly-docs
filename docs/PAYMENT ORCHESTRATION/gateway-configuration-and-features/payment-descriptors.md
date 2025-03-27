@@ -63,14 +63,6 @@ On Recurly, we handle descriptors in the following manner:
 
 * [Credit Cards](https://docs.recurly.com/docs/credit-cards)
 
-# Definition
-
-A dynamic descriptor, also known as a soft descriptor, is a customizable piece of information that can be included with a credit card transaction and appears on the customer's bank statement, allowing merchants to provide specific details about the transaction beyond just their business name.
-
-Dynamic descriptors assist customers in recognizing their purchases with your business and avoiding "friendly" chargebacks due to an unrecognizable charge.
-
-Descriptors are typically limited to 22 characters, but will depend on the gateway logic and Issuing bank support. Descriptors may or may not include a domain (acme.com) or a customer service phone number. Visibility is dependent on the consumer's bank support for descriptors and the gateway support for data within a given descriptor.
-
 # Key benefits
 
 * **Chargeback reduction:** Let customers know on their bank statements who you are and what you're charging them for. This reduces instances of friendly-fraud and chargebacks due to static or vague descriptors.
@@ -82,17 +74,6 @@ Descriptors are typically limited to 22 characters, but will depend on the gatew
 ## Additional details
 
 This section outlines how dynamic descriptors are created for your site(s) using already present data for subscriptions and one-time transactions.
-
-### Format and Behavior of Descriptors
-
-Example Descriptor:
-
-* **DBA\*Description of Charge**
-
-On Recurly, we handle descriptors in the following manner:
-
-* For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: AcmeInc\*Gold Plan
-* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc\*Charge or AcmeInc\*One-Time Payment
 
 ### Best Practices for Descriptors
 
