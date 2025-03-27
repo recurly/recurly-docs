@@ -19,7 +19,7 @@ This feature is only available to all customers on any plan.
 
 We support trial descriptors on all gateways that support cards. Visa Trial descriptors function by adding the word 'Trial' to any Visa transaction that is converting after a trial period ends.
 
-We support descriptors beyond Visa trial descriptors on the following gateways:
+We support descriptors beyond Visa trial descriptors on the following gateways with the enablement of a feature flag. Reach out to Recurly Support or your account manager to have the related feature flag enabled:
 
 * Stripe
 * Braintree
