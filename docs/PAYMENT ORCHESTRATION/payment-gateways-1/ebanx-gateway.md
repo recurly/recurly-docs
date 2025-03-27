@@ -129,9 +129,16 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 When in sandbox ONLY, the response will contain a response URL for simulating interactions with the UPI Application. This interaction would typically take place with the customer directly via push notifications on their phone. For testing purposes, use the URL to accept or reject the mandate enrollment request.
 
+## Features that WILL work with UPI AutoPay
+
+* Trial Subscriptions *with payment data* -- trials without a prior UPI enrollment will not function.
+* Non-Trial Subscriptions
+* Renewals
+
 ## Features that will not work with UPI AutoPay
 
 * Subscription upgrades: Mandates stored on the UPI app control the amount and frequency. Changing this on the recurly side could cause declines.
+* Trials without Enrollment (payment data on file)
 * Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so Net-0 terms can cause payment failures.
 * One-time transactions: VPAs cannot be used for one-time transactions.
 * Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
