@@ -112,9 +112,9 @@ Yes, two things.
 1. When testing the Recurly subscription portal, the portal will open in another tab. Some browsers may block the popup by default, so check your popup settings if the portal does not appear.
 2. The app proxy URL associated with the Recurly Subscription app should not change. This URL is pre-defined for the Recurly Subscription app within your Shopify Admin settings.
 
-### Are there any known limitations with this Early Access release?
+### Are there any known limitations with the current release?
 
-Given this is an early release, there are some limitations. These will be addressed over time.
+These limitations will be addressed in the near future:
 
 * Google Pay, Apple Pay, PayPal, and ShopPay are not yet supported. They will be very soon. Recurly currently supports credit card payments via Shopify Checkout.
 * Pre-paid (e.g., bill annually, delivery monthly) subscriptions are not yet supported.
@@ -133,7 +133,7 @@ No. If a Recurly account (aka: customer) is already present with the same e-mail
 
 ### What changes from Recurly sync back to Shopify?
 
-For Early Access, only these subscription changes (cancel, pause, expire) are synced back to Recurly. In future releases, Recurly will sync back additional pertinent information.
+For this release, only these subscription changes (cancel, pause, expire) are synced back to Recurly. In future releases, Recurly will sync back additional pertinent information.
 
 ### Is there one customer portal for everything?
 
