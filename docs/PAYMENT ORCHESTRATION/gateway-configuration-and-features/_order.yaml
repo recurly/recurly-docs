@@ -4,7 +4,7 @@
 - custom-gateway-routing-configuration
 - gateway-failover
 - fraud-management
+- payment-descriptors
 - currency-support-by-gateway
 - test
 - how-to-test-your-gateway
-- payment-descriptors
