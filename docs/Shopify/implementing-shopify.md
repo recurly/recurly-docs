@@ -107,7 +107,7 @@ When testing is complete, you will work closely with Recurly for next steps rega
 
 ### Is there anything else I need to know regarding testing?
 
-Yes, two things.
+Yes, there are two things to know.
 
 1. When testing the Recurly subscription portal, the portal will open in another tab. Some browsers may block the popup by default, so check your popup settings if the portal does not appear.
 2. The app proxy URL associated with the Recurly Subscription app should not change. This URL is pre-defined for the Recurly Subscription app within your Shopify Admin settings.
