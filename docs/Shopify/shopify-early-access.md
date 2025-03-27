@@ -4,7 +4,7 @@ excerpt: >-
   The Recurly Subscriptions App connects Recurly to Shopify to power your
   subscriptions
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 next:
