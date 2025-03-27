@@ -1,6 +1,8 @@
 ---
-title: Shopify early access
-excerpt: Recurly is now available in the Shopify App Store, and ready for early access
+title: Implementing Shopify
+excerpt: >-
+  The Recurly Subscriptions App connects Recurly to Shopify to power your
+  subscriptions
 deprecated: false
 hidden: true
 metadata:
@@ -8,7 +10,7 @@ metadata:
 ---
 # Prerequisites
 
-To participate in Early Access, merchants must reach out to their Recurly Account Manager, or <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">create a ticket</a>. Recurly will answer any questions, and support merchants through the setup and testing.
+Merchants must reach out to their Recurly Account Manager, or <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">create a ticket</a>. Recurly will answer any questions, and support merchants through the setup and testing.
 
 # Key details
 
@@ -42,7 +44,7 @@ Navigate to Shopify Admin of your store, and complete the following steps
 
 ## Create, and configure a Recurly site
 
-For early access merchants, Recurly will take care of this step. There a few required configurations, and feature flags that need to be set for the integration with Shopify. Once created and configured, Recurly will provide you Admin access to your test Recurly site.
+For now, Recurly will take care of this step. There a few required configurations, and feature flags that need to be set for the integration with Shopify. Once created and configured, Recurly will provide you Admin access to your test Recurly site.
 
 ## Install the Recurly Shopify app into your test Shopify store
 
@@ -81,13 +83,17 @@ By completing the steps above, the install and configuration steps are complete.
 
 Once the purchase is complete, log into your Recurly site and look at the latest Subscription in Customers. If you can see a subscription related to the test order (aka: purchase), you have completed the configuration. The subscription should have customer data, charges and credits, invoices, transactions, and activity.
 
-## Next Steps
+## Additional testing information
 
-Given this is currently early access, you may run into issues or have suggestions. Be sure to talk with your Recurly contact about those. It is important to test several different scenarios (e.g., mixed cart purchase of a hardware product and software subscription) to be sure everything is working as expected.
+If you run into issues or have suggestions, be sure to talk with your Recurly contact about those. It is important to test several different scenarios (e.g., mixed cart purchase of a hardware product and software subscription) to be sure everything is working as expected.
 
 In addition to testing, it is important to read the FAQs below.
 
 While you are testing, Recurly will request partner access to your test Shopify store. This allows Recurly to better support you.
+
+## Next Steps
+
+When testing is complete, you will work closely with Recurly for next steps regarding customer communication and timeline. Recurly will help ensure the transition is seamless. Even after you are live with Shopify and Recurly, Recurly remains with you to ensure success and help if any issues arise.
 
 ## FAQs
 
