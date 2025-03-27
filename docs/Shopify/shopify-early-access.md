@@ -7,6 +7,10 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  description: >-
+    If you migrating from another Shopify subscription app, view the next page
+    regarding migration
 ---
 # Overview
 
