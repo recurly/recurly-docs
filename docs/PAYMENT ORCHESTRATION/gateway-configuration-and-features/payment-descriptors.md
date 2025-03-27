@@ -81,3 +81,4 @@ This section outlines how dynamic descriptors are created for your site(s) using
 * When naming plans in Recurly, ensure the plan names are something a customer will recognize when viewing their bank statement.
 * When creating one-time Invoices, ensure you add an Invoice Description that a customer will recognize, whether for the purchase or service you are providing to them. Order numbers are great for transparency.
 * If you do not supply an Invoice Description on a one-time charge, we will supply the word 'Charge' to fill out the necessary information for a descriptor where supported.
+* Ensure you have dynamic descriptors enabled at your given gateway. Some gateways require a setting or flag to be enabled to pass along the data Recurly provides.
