@@ -13,7 +13,7 @@ metadata:
 
 ### Required plan
 
-This feature is only available to all customers on any plan.
+This feature is available to all customers on any plan.
 
 ### Prerequisites
 
