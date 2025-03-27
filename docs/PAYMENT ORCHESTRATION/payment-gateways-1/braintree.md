@@ -30,101 +30,16 @@ Braintree, a full-stack payment platform known for its robust support for mobile
 
 # Key details
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Features
-      </th>
-
-      <th>
-        Description/Availability
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Services that work with Recurly
-      </td>
-
-      <td>
-        Subscription Billing, One-time Payments
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported Operations
-      </td>
-
-      <td>
-        Authorize & Capture, Purchase, Refund, Void
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported Payment Types
-      </td>
-
-      <td>
-        Credit/Debit Cards, PayPal, Venmo, Apple Pay, Google Pay
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Supported Card Brands
-      </td>
-
-      <td>
-        Visa, Mastercard, Amex, Discover, JCB, Diners, Union Pay
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Gateway Specific 3DS2 Supported
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Card on File Supported
-      </td>
-
-      <td>
-        Yes
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Regions
-      </td>
-
-      <td>
-        Global
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Currencies
-      </td>
-
-      <td>
-        Multiple (per merchant account ID). See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>. PayPal currencies will be limited to PayPal supported currencies.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Features                        | Description/Availability                                                                                                                                                                                          |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Subscription Billing, One-time Payments, [Dynamic Descriptors](https://docs.recurly.com/docs/payment-descriptors#/)                                                                                               |
+| Supported Operations            | Authorize & Capture, Purchase, Refund, Void                                                                                                                                                                       |
+| Supported Payment Types         | Credit/Debit Cards, PayPal, Venmo, Apple Pay, Google Pay                                                                                                                                                          |
+| Supported Card Brands           | Visa, Mastercard, Amex, Discover, JCB, Diners, Union Pay                                                                                                                                                          |
+| Gateway Specific 3DS2 Supported | Yes                                                                                                                                                                                                               |
+| Card on File Supported          | Yes                                                                                                                                                                                                               |
+| Regions                         | Global                                                                                                                                                                                                            |
+| Currencies                      | Multiple (per merchant account ID). See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>. PayPal currencies will be limited to PayPal supported currencies. |
 
 ## Braintree and multi-currency
 
@@ -144,18 +59,18 @@ See the <a href="https://docs.recurly.com/docs/pay-with-venmo" target="_blank">V
 
 ## Processing Verifications with 3DS through Braintree
 
-Braintree's Verification path generally does not include 3DS capabilities on the traditional verify route unless you have integrated the [Proactive 3D-Secure route through Recurly.js](https://recurly.com/developers/reference/recurly-js/#additional-configuration-2). If you are a PSD2-mandated merchant (EU) or require 3DS for risk purposes and want to process verifications versus purchases, you will need to integrate to this style of 3D-secure. 
+Braintree's Verification path generally does not include 3DS capabilities on the traditional verify route unless you have integrated the [Proactive 3D-Secure route through Recurly.js](https://recurly.com/developers/reference/recurly-js/#additional-configuration-2). If you are a PSD2-mandated merchant (EU) or require 3DS for risk purposes and want to process verifications versus purchases, you will need to integrate to this style of 3D-secure.
 
 Additionally, there are two mutually-exclusive settings that need enabling, one of which requires Braintree assistance. Contact your Braintree account manager for assistance with 'Enable without Verification'.
 
-1. If you are not Vaulting with Braintree, and want to use Proactive 3DS, you must have a special setting enabled.  **Enable Verifications without Vaulting**: This setting requires the holder of information to be PCI compliant. PayPal has advised us to instruct merchants to request this feature be enabled and to indicate that Recurly is storing the card data. 
+1. If you are not Vaulting with Braintree, and want to use Proactive 3DS, you must have a special setting enabled.  **Enable Verifications without Vaulting**: This setting requires the holder of information to be PCI compliant. PayPal has advised us to instruct merchants to request this feature be enabled and to indicate that Recurly is storing the card data.
    1. When that is complete, please ask Support to enable the following feature flag on the Recurly side that will give you access to this route: **Enable Braintree ZDA**
-   2. Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should*not* be enabled prior to the setting at Braintree** to avoid payment failures.
+   2. Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should\_not\_ be enabled prior to the setting at Braintree** to avoid payment failures.
 2. **Card Verification**: this setting can be enabled in your Braintree control panel to ensure all vaulted cards are being verified prior to entering into the Braintree Vault. See an image of this setting below.
 
 <Image align="center" src="https://files.readme.io/681d369645a07ae29f6a77ea7353288b5417a3641d99540622a318784d53c8af-Screenshot_2024-11-12_at_3.52.41_PM.png" />
 
-Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should*not* be enabled prior to the setting at Braintree** to avoid payment failures.
+Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should\_not\_ be enabled prior to the setting at Braintree** to avoid payment failures.
 
 # Integrating Braintree with Recurly
 
@@ -190,7 +105,7 @@ If you want to process PayPal transactions through Braintree:
 
 ## Step 4: Test the configuration
 
-Before going live, it’s wise to run test transactions to ensure the integration is functioning as expected. To test, your Recurly Account must be in development mode or production mode. It cannot be tested in sandbox mode. 
+Before going live, it’s wise to run test transactions to ensure the integration is functioning as expected. To test, your Recurly Account must be in development mode or production mode. It cannot be tested in sandbox mode.
 
 1. In your Recurly account, navigate to the **Payment Gateways** configuration page for Braintree and click **Test Configuration**.
 2. Check the test results. Successful tests will confirm that Recurly can communicate with Braintree and process transactions.
