@@ -158,7 +158,9 @@ When in sandbox ONLY, the response will contain a response URL for simulating in
 
 ### **Q: I updated my customer’s VPA, but the original account was charged. How do I fix this?**
 
-* **Billing Info Updates** aren’t supported with UPI AutoPay. Cancel the current subscription and have your customer re-subscribe using their new VPA. If Customers need to update their bank details, they must do so in the UPI App.
+* **Billing Info Updates** made through Recurly APIs aren’t supported with UPI AutoPay. If a customer has a new VPA, they must re-enroll in the subscription.
+  * Cancel the current subscription and have your customer re-subscribe using their new VPA.
+  * If Customers only need to update their bank details, they can do so in the UPI App directly.
 
 ### **Q: A subscription renewal failed, and I cannot attempt collection. Why?**
 
