@@ -2,7 +2,7 @@
 title: Shopify migration
 excerpt: Migration from another Shopify subscription app to Shopify + Recurly
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
