@@ -74,6 +74,8 @@ Descriptors are typically limited to 22 characters, but will depend on the gatew
 # Key benefits
 
 * **Chargeback reduction:** Let customers know on their bank statements who you are and what you're charging them for. This reduces instances of friendly-fraud and chargebacks due to static or vague descriptors.
+* **Transparency:** Customers will appreciate knowing that their bank statement is showing them accurate information for their records.
+* **Consistency:** Customers will see the same prefix and memorable plan / charge information from your business on their bank statement. If you change your business name, ensure you notify existing customers that they can expect to see this change on their bank statements.
 
 # Key details
 
@@ -94,7 +96,7 @@ On Recurly, we handle descriptors in the following manner:
 
 ### Best Practices for Descriptors
 
-* Ensure you have your known Business Name either in Site Settings (Company Name) or a DBA filled in. We will use this information to create descriptors for your supported gateways.
+* Ensure you have your known Business Name either in Site Settings (Company Name) or a DBA filled in. We will use this information to create descriptors for your supported gateways. Ensure this company name and/or DBA is kept up to date as your business evolves.
 * When naming plans in Recurly, ensure the plan names are something a customer will recognize when viewing their bank statement.
 * When creating one-time Invoices, ensure you add an Invoice Description that a customer will recognize, whether for the purchase or service you are providing to them. Order numbers are great for transparency.
 * If you do not supply an Invoice Description on a one-time charge, we will supply the word 'Charge' to fill out the necessary information for a descriptor where supported.
