@@ -91,7 +91,7 @@ Refer to the **Ebanx gateway documentation** for testing procedures.
 
 ### Retries
 
-UPI AutoCollect retries will not be allowed through typical retry logic (Basic or Intelligent Retries) as declined UPI transactions must be retried the *same day.* Retries are not yet supported, but are planned.
+UPI AutoPay payments retries will not be allowed through typical retry logic (Basic or Intelligent Retries) as declined UPI transactions must be retried the *same day.* Retries are not yet supported, but are planned.
 
 # Checkout flow
 
