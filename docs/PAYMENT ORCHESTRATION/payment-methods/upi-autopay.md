@@ -49,7 +49,8 @@ They also receive a **pre-renewal push notification** 24–48 hours prior to the
 
 ### Use cases
 
-* Recurly Subscription Plans: Simplify UPI AutoPay transactions by merging the Recurly subscription platform with Ebanx.
+* Subscription Plans: Simplify UPI AutoPay transactions by merging the Recurly subscription platform with Ebanx.
+* Trial Subscriptions: Allow your customer to authorize their enrollment and enjoy a free trial before their first charge.
 
 ### Creating Subscriptions
 
