@@ -70,7 +70,7 @@ Guided and self paced journeys designed to help you optimize your subscription s
 
 **Guided:** Guided plays walk through the setup of features that can help boost your subscription business.
 
-* 📧 **Optimize Default Dunning Length:** Running the dunning play will create an additional email to be sent before the final Expired for Non-Payment email extending the total dunning length to 27 days.
+* 📧 **Optimize Default Dunning Length:** Running the dunning play will create an additional email to be sent before the final Expired for Non-Payment email extending the total dunning length to 27 days. This will only make changes to the default dunning campaign for your site.
 * 💳 **Enable Account Updater:** Running account updater play will enable Visa and Discover card brands to be eligible to receive updates.  Mastercard and American Express must be enabled separately from the Payments Settings page.
 
 **Self-Paced:** Self-Paced plays offer additional strategies to help you grow your business.
