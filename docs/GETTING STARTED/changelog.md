@@ -24,6 +24,14 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## 2025
 
+## April
+
+<br />
+
+| Release Date |                 **Feature**                | **Potential Impact** | **Description / Overview**                                      |
+| :----------- | :----------------------------------------: | :------------------- | :-------------------------------------------------------------- |
+| Apr 1        | **Create subscriptions with date in past** | Low                  | Ability to add a date in the past when creating a subscription. |
+
 ## March
 
 | Release Date |              **Feature**              | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
