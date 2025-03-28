@@ -32,16 +32,16 @@ Ebanx is a full-service payment management platform focused on upcoming markets 
 
 # Key details
 
-| Feature                         | Description                                             |
-| ------------------------------- | ------------------------------------------------------- |
-| Services that work with Recurly | Payment Processing                                      |
-| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions |
-| Supported Payment Types         | UPI - AutoPay                                           |
-| Supported Card Brands           | N/A                                                     |
-| Gateway Specific 3DS2 Supported | No                                                      |
-| Card On File Supported          | No                                                      |
-| Regions                         | India                                                   |
-| Currencies                      | INR                                                     |
+| Feature                         | Description                                                  |
+| ------------------------------- | ------------------------------------------------------------ |
+| Services that work with Recurly | Payment Processing                                           |
+| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions      |
+| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/) |
+| Supported Card Brands           | N/A                                                          |
+| Gateway Specific 3DS2 Supported | No                                                           |
+| Card On File Supported          | No                                                           |
+| Regions                         | India                                                        |
+| Currencies                      | INR                                                          |
 
 # Configuring Ebanx in Recurly
 
@@ -123,7 +123,7 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 ## Mandate Preferences
 
-**UPI – Recurring** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in the UPI app will be automatically handled.
+**UPI – AutoPay** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in the UPI app will be automatically handled.
 
 ## Testing in Sandbox
 
