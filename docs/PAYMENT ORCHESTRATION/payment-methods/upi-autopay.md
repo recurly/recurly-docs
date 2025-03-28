@@ -41,7 +41,9 @@ A **Virtual Payment Address (VPA)**, such as `payer@bankname`, uniquely identifi
 
 Consumers will be required to \*\*confirm their signup enrollment \*\*via the UPI app whenever they are subscribing to a plan.
 
-Consumers can **pause** or **cancel** subscriptions directly from their UPI app and must **confirm** transactions of **15 INR or higher** within one hour of receiving a push notification. They also receive a **pre-renewal push notification** 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel.
+Consumers can **pause** or **cancel** subscriptions directly from their UPI app and must **confirm** transactions of **15000 INR or higher** within one hour of receiving a push notification.
+
+They also receive a **pre-renewal push notification** 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription.
 
 # Recommended integration
 
