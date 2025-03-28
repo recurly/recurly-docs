@@ -89,6 +89,10 @@ UPI requires Recurly's **gateway token** approach, as each consumer’s VPA func
 
 Refer to the **Ebanx gateway documentation** for testing procedures.
 
+### Retries
+
+UPI AutoCollect retries will not be allowed through typical retry logic (Basic or Intelligent Retries) as declined UPI transactions must be retried the *same day.* Retries are not yet supported, but are planned.
+
 # Checkout flow
 
 During the checkout, allow your consumer to provide their VPA (Virtual Payment Address) and pass it to Recurly using documented gateway token parameters. This will create an enrollment request to the gateway, and if accepted by the customer within their UPI app, will set up a subscription and, if the plan is not set up for a trial, charge the first amount according to the plan settings.
