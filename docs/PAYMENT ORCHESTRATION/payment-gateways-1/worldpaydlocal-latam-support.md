@@ -48,6 +48,8 @@ Expand your business globally and in the dynamic Latin American e-commerce secto
 
 For a global reach, WorldPay allows merchants to configure their accounts for international processing, including IP allowlisting, capture delay settings, and callback configurations for seamless transaction synchronization. Recurly's integration ensures merchants can support a broad range of currencies and card types, including the application of Zero Dollar Authorizations if needed. With WorldPay's asynchronous processing for voids and refunds, and Recurly's commitment to submitting comprehensive transaction information, businesses are equipped to offer a robust and adaptable payment processing experience worldwide and specifically in the Latin American market.
 
+Supported Regions:
+
 > **Note**: Visit our [guide on testing your gateway configurations ](https://docs.recurly.com/docs/how-to-test-your-gateway)in Recurly to ensure your payment processes are set up correctly.
 
 # Key details
@@ -132,7 +134,7 @@ For a global reach, WorldPay allows merchants to configure their accounts for in
       </td>
 
       <td>
-        Global with a focus on Latin America, specifically Argentina
+        Global with a focus on Latin America, including Argentina, Brazil, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Mexico, Ecuador, Panama, Paraguay, Uruguay, Honduras, and Peru.
       </td>
     </tr>
 
