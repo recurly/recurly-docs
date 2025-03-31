@@ -23,17 +23,18 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 ### Prerequisites
 
-* An active Recurly account with Argentine Peso (ARS) currency support.
-* WorldPay payment gateway configured for ARS transactions.
 * Established commercial agreements with WorldPay and Ebanx to facilitate local transactions.
   * WorldPay also supports dLocal but is not provisioning new accounts for that relationship. For merchants that do not already have a dLocal account, connect with Worldpay on an Ebanx solution.
-* A WorldPay merchant account optimized for handling ARS and capable of performing Zero Dollar Authorizations (ZDA).
+* For **Argentinian** processing:
+  * An active Recurly account with Argentine Peso (ARS) currency support
+  * WorldPay payment gateway configured for ARS transactions.
+  * A WorldPay merchant account optimized for handling ARS and capable of performing Zero Dollar Authorizations (ZDA).
 
 ### Limitations
 
 * The Tarjeta Naranja card brand does not support ZDA; verifications for this card are processed with a one-dollar charge.
 * Transactions require the submission of a CUIT (tax ID) with each transaction in Argentina.
-* If you are not using CUIT, CPF, or CNPJ tax types, send the tax ID without a `tax_identifier_type`.
+* If you are not using CUIT, CPF, or CNPJ tax types, send the tax ID without a`tax_identifier_type`.
 * Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
 * Check if your business is on Worldpay's list of [Prohibited Business types](http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm).
 
