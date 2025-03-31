@@ -34,7 +34,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 * The Tarjeta Naranja card brand does not support ZDA; verifications for this card are processed with a one-dollar charge.
 * Transactions require the submission of a CUIT (tax ID) with each transaction in Argentina.
-* If you are not using CUIT, CPF, or CNPJ tax types, send the tax ID without a`tax_identifier_type`.
+* If you are using CUIT, CPF, or CNPJ tax types, you must specify the type via API, else send the tax ID without a`tax_identifier_type`.
 * Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
 * Check if your business is on Worldpay's list of [Prohibited Business types](http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm).
 
@@ -114,7 +114,7 @@ Supported Regions:
       </td>
 
       <td>
-        Yes, Depends on WorldPay configuration. Requires usage of Recurly.js.
+        Yes, Depends on WorldPay configuration. Requires usage of Recurly.js in certain cases.
       </td>
     </tr>
 
@@ -155,13 +155,13 @@ Supported Regions:
 
 Worldpay Payment Gateway (WPG) requires you to enter XML credentials obtained from Worldpay.
 
-**Voids and refunds**
-
-Void (also known as 'cancel') and Refund order modifications are processed asynchronously by WorldPay. There is a remote chance that WorldPay may reject a Void or Refund request 5 to 45 minutes after receiving it.
-
 **Billing address**
 
 At Recurly, we want to submit as much information (including the billing address) to WorldPay as possible. WorldPay, however, requires four mandatory fields - *Address line1, City, Postal code* and *Country*. If not provided, Recurly may use default values for these fields.
+
+**Voids and refunds**
+
+Void (also known as 'cancel') and Refund order modifications are processed asynchronously by WorldPay. There is a remote chance that WorldPay may reject a Void or Refund request 5 to 45 minutes after receiving it.
 
 **For example:** If a customer has only provided a postal code we will submit the provided Postal code, use the country from their IP address, and default the City to “city” and Address line1 to “address”. If we don't have the Country (or can’t derive the country from the IP address) a billing address will not be submitted for the transaction.
 
@@ -169,7 +169,7 @@ At Recurly, we want to submit as much information (including the billing address
 
 Recurly has forged collaborations with WorldPay, Ebanx, and dLocal (no new dLocal accounts provisioned by Worldpay), endeavoring to offer merchants unparalleled support in Latin America, a region harboring a booming ecommerce market amidst a complex payment ecosystem.
 
-Find additional guidance in the [technical documentation](https://developers.recurly.com/), where the billing information block references the CUIT. This vigilant approach ensures a smooth, compliant transaction process, embracing the specific needs of the Latin American market.
+Find additional guidance in the [technical documentation](https://developers.recurly.com/), where the billing information block references the related tax ID documentation, such as CUIT. This vigilant approach ensures a smooth, compliant transaction process, embracing the specific needs of the Latin American market.
 
 # Configuring WorldPay WPG for international processing
 
@@ -193,13 +193,13 @@ Find additional guidance in the [technical documentation](https://developers.rec
 
 Leveraging the WorldPay LATAM gateway for your business involves a streamlined process. Follow the detailed steps below to enable this gateway seamlessly:
 
-1. **Enable ARS currency on your Recurly site**
+1. **Enable LATAM currencies on your Recurly site**
    * Log in to your Recurly account.
-   * Navigate to the currency settings and enable Argentine Peso (ARS) as a supported currency.
+   * Navigate to the currency settings and enable Argentine Peso (ARS) as a supported currency if you are processing in Argentina and wish to accept the Tarjeta Naranja card. Otherwise, add applicable LATAM currencies to your account.
 2. **Configure WorldPay as your payment Gateway**
    * Still in your Recurly dashboard, go to payment gateways.
-   * Select and configure WorldPay as your payment gateway, ensuring it's set up to accept ARS.
-3. **Enable Tarjeta Naranja**
+   * Select and configure WorldPay as your payment gateway, ensuring it's set up to accept your supported currencies.
+3. **Enable Tarjeta Naranja if applicable**
    * Within your WorldPay gateway settings in Recurly, find and toggle on the option to accept payments through Tarjeta Naranja.
 4. **Establish commercial relationships**
    * Set up commercial relationships with both WorldPay and either Ebanx or dLocal. If necessary, contact [partnerships@recurly.com](mailto:partnerships@recurly.com) for introductions.
@@ -216,7 +216,7 @@ Setting up your WorldPay account correctly is crucial in ensuring smooth transac
 3. **Integration with Ebanx or dLocal**
    * Establish a functioning relationship with Ebanx or dLocal, integrating them appropriately with your WorldPay account. You do not need to integrate *directly* to Ebanx or dLocal.
 4. **Setting up transaction details**
-   * Be prepared to collect the CUIT (tax ID) from your Argentine customers during the initial transactions.
+   * Be prepared to collect tax ID information, such as the CUIT (tax ID) from your LATAM customers during the initial transactions. If you are not using one of CUIT, CPF, or CNPJ, you can send the Tax ID field without a type definition.
    * Configure your system to include fields for the tax identifier and its type during the payment process, aligning it to send this information correctly with each transaction to comply with the Argentine regulations.
 5. **Testing**
 
