@@ -17,7 +17,7 @@ next:
 
 ## Required plan
 
-This feature is only available to customers on the Professional and/or Elite subscription plan. To upgrade to this plan, please contact your Recurly account manager or reach out to [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature is only available on advanced plans. If you’re currently on Pro or Starter, you may need to upgrade your plan to access it. Please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) for more information.
 
 ### Prerequisites
 

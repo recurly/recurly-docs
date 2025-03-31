@@ -22,7 +22,7 @@ Discover how Recurly seamlessly integrates subscription metrics from both Apple 
 
 ### Required plan
 
-This feature is only available on advanced plans. If you’re currently on Pro or Starter, you may need to upgrade your plan to access it. Please contact Recurly Sales for more information.
+This feature is only available on advanced plans. If you’re currently on Pro or Starter, you may need to upgrade your plan to access it. Please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) for more information.
 
 ### Additional cost
 
