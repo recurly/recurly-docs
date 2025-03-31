@@ -22,7 +22,7 @@ Discover how Recurly seamlessly integrates subscription metrics from both Apple 
 
 ### Required plan
 
-This feature is only available to customers on the Professional or Elite subscription plan. To request to upgrade to your plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature is only available on advanced plans. If you’re currently on Pro or Starter, you may need to upgrade your plan to access it. Please contact Recurly Sales for more information.
 
 ### Additional cost
 
