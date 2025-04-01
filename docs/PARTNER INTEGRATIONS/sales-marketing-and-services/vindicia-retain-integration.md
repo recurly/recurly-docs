@@ -25,7 +25,7 @@ This feature is only available to customers on the Elite subscription plan and c
 
 ### Limitations
 
-* Integration works only for users using Recurly’s Stripe, Adyen, Cybersource, Chase, or Braintree payment integrations.
+* Integration works only for users using Recurly’s Stripe, Adyen, Cybersource, Chase, Braintree, Vantiv or First Data payment integrations.
 
 * Integration does not support partial payments/collections.
 
