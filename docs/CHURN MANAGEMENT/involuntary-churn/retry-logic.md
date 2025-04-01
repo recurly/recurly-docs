@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
-This feature is available exclusively to customers on the Professional and Elite subscription plans. For those interested in upgrading to these plans, please contact your Recurly account manager or email [support@recurly.com](mailto:support@recurly.com) for further information.
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 ### Prerequisites
 
@@ -74,7 +74,7 @@ Different gateway errors have specific retry schedules:
 
 # Manual retry and forced collection
 
-For more control, you can initiate a forced collection attempt by clicking the **Attempt Collection Now** button on a pending or past due invoice's details page. However, excessive manual retries might exhaust the allowed transaction count for automated retries. This function is also available via API. 
+For more control, you can initiate a forced collection attempt by clicking the **Attempt Collection Now** button on a pending or past due invoice's details page. However, excessive manual retries might exhaust the allowed transaction count for automated retries. This function is also available via API.
 
 ![Force Collection](https://files.readme.io/50e0c55-9c0e247-forcecollect.png "9c0e247-forcecollect.png")
 
