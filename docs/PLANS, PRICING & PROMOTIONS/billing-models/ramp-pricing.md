@@ -191,6 +191,16 @@ Ramp Pricing can be tested on all Recurly sites in sandbox or development mode, 
 
 Upon conversion from a sandbox or development site to a production site on our Core plan, all Ramp Priced plans will be deleted. These deleted plans cannot be edited or re-enabled while on the Core plan. However, once upgraded to a Pro or Elite plan, Ramp Priced plans can be created and used for subscriptions.
 
+### General considerations about ramp pricing
+
+* Ramp intervals can be an increase or decrease in price.
+* A maximum of 12 intervals can be assigned to plans and subscriptions.
+* Prices for ramp intervals can be set in all currencies configured on your site.
+* A subscription must be created from a plan that already has ramp intervals to have ramp intervals itself.
+* Ramp intervals can extend beyond the subscription term.
+* Ramp intervals can exceed a subscription term when the term is set to auto-renew. In this case, intervals will continue at the configured interval once a new subscription term starts.
+* Ramp Pricing Plans cannot be created with a start date in the past.
+
 # Migrating existing subscribers
 
 If you plan on using Ramp Pricing for all your plans and subscriptions, the following options will help you do so:
@@ -204,13 +214,3 @@ If you plan on using Ramp Pricing for all your plans and subscriptions, the foll
 
 * **Step 1**: Develop new ramp-priced plans for new and/or existing subscribers.
 * **Step 2**: Use the subscription change <a href="https://developers.recurly.com/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">endpoint</a> to shift existing subscribers to a new ramp-priced plan. This change will cause the subscription to adopt the base ramp pricing schedule from the plan. After the subscription is on a ramp plan, you can modify the pricing schedule as necessary.
-
-### General considerations about ramp pricing
-
-* Ramp intervals can be an increase or decrease in price.
-* A maximum of 12 intervals can be assigned to plans and subscriptions.
-* Prices for ramp intervals can be set in all currencies configured on your site.
-* A subscription must be created from a plan that already has ramp intervals to have ramp intervals itself.
-* Ramp intervals can extend beyond the subscription term.
-* Ramp intervals can exceed a subscription term when the term is set to auto-renew. In this case, intervals will continue at the configured interval once a new subscription term starts.
-* Ramp Pricing Plans cannot be created with a start date in the past.
