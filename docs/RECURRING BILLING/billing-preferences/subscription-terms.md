@@ -175,7 +175,9 @@ If the immediate change results in a different term structure, the subscription 
 
 For more details, visit [Change Subscription](https://docs.recurly.com/docs/change-subscription#section-plan-period-changes).
 
-> 🚧 **Note**: If a subscription is set to expire at the term's end and you're editing it to apply changes upon renewal, saving these changes will automatically update the subscription to renew at the term's end and apply the pending changes.
+> 🚧 **Note**:
+>
+> If a subscription is set to expire at the term's end and you're editing it to apply changes upon renewal, saving these changes will automatically update the subscription to renew at the term's end and apply the pending changes.
 
 # Canceling a subscription
 
