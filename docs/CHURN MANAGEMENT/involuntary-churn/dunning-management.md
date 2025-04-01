@@ -23,7 +23,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * An active Recurly account.
 * Configuration user access.
-* For multiple dunning campaigns: Pro or Elite Recurly plan.
+* For multiple dunning campaigns: This feature may not be included in the Starter or Pro plans. If you are interested, please contact Recurly Sales to discuss upgrade options.
 
 ### Limitations
 
@@ -37,7 +37,7 @@ Dunning Management refers to the strategies and communications used to prompt su
 
 # Key benefits
 
-* **Customized collection strategies**: Tailor your dunning campaigns to specific customer cohorts for optimized results. Additionally, track which customers are assigned which dunning campaign, and received which dunning email, in the Account Activities export. 
+* **Customized collection strategies**: Tailor your dunning campaigns to specific customer cohorts for optimized results. Additionally, track which customers are assigned which dunning campaign, and received which dunning email, in the Account Activities export.
 * **Enhanced subscriber communication**: Send targeted emails to subscribers, informing them of payment failures and prompting action.
 * **Flexible dunning cycles**: Choose from automatic, manual, and post-trial dunning cycles, each with its own set of emails and schedules.
 * **Improved revenue recovery**: Longer dunning windows have shown to result in higher recovery rates.
@@ -76,7 +76,7 @@ Access Dunning Management via your account's Configuration menu. Here, users wit
 
 ## Modifying the default dunning campaign
 
-Recurly already has a default dunning campaign set up for you, and you are free to modify it to suit your needs. 
+Recurly already has a default dunning campaign set up for you, and you are free to modify it to suit your needs.
 
 1. From the Dunning Management page, **select** the dunning campaign you wish to edit.
 2. **Click** the **Campaign Actions** dropdown.
@@ -165,11 +165,11 @@ Then, head to the Email Templates page and locate the email. If there's a note s
 
 ## Updating billing info
 
-[3]: https://dev.recurly.com/docs/list-accounts
+[3]: https\://dev.recurly.com/docs/list-accounts
 
 When your customers receive a failed payment email, they should know how to refresh their billing details. The default payment declined email template provides your customers a direct link to their hosted account management page, where they can submit updated billing details.
 
-You can incorporate a direct link to a customer's account management page from your website using the `hosted_login_token` parameter available on the [Accounts API][3]. API users can also modify the email template to direct to a billing update form on their own site.
+You can incorporate a direct link to a customer's account management page from your website using the `hosted_login_token` parameter available on the \[Accounts API]\[3]. API users can also modify the email template to direct to a billing update form on their own site.
 
 When billing details are successfully updated, Recurly will retry collection on all overdue invoices on the account (note: automated updates executed by Recurly's <a href="https://docs.recurly.com/docs/account-updater">Account Updater</a> also initiate a collection attempt).
 
@@ -236,16 +236,16 @@ When a campaign is deactivated:
 
 ## Dunning best practices
 
-We trust our merchants to understand their customers and their collection process best. We offer the flexibility to modify dunning settings, granting you ultimate control over your collection strategy. 
+We trust our merchants to understand their customers and their collection process best. We offer the flexibility to modify dunning settings, granting you ultimate control over your collection strategy.
 
 Here are some best practices to consider:
 
 * Extended dunning windows lead to better recovery rates.
-* For monthly subscriptions, we recommend a dunning length of no longer than 27 days. If your dunning exceeds 27 days in February, subscribers who don't pay might receive a second invoice and then have their subscription expire soon after. In addition, a 27-day duration will allow Recurly to maximize the number of intelligent retries (link to: [https://docs.recurly.com/docs/retry-logic](https://docs.recurly.com/docs/retry-logic)) on a failed invoice, giving you the highest chance of recovering a failed invoice. 
+* For monthly subscriptions, we recommend a dunning length of no longer than 27 days. If your dunning exceeds 27 days in February, subscribers who don't pay might receive a second invoice and then have their subscription expire soon after. In addition, a 27-day duration will allow Recurly to maximize the number of intelligent retries (link to: [https://docs.recurly.com/docs/retry-logic](https://docs.recurly.com/docs/retry-logic)) on a failed invoice, giving you the highest chance of recovering a failed invoice.
 * Direct debit payments can take 3 days or more for a response, which can influence the end of the dunning cycle.
 * Unless otherwise configured, the default dunning campaign will be employed and will expire the subscription and fail the invoice.
 * For high-value subscribers, most merchants prefer to keep the subscription active and the invoice open.
-* Enabling different dunning campaign messages and durations for your different plans is a great method to achieve the highest success rate of recovered invoices, resulting in subscriber retention. For example, having a 27 day window for monthly plans, yet up to a 60 day window for quarterly, bi-annual and annual plans is a great approach. 
+* Enabling different dunning campaign messages and durations for your different plans is a great method to achieve the highest success rate of recovered invoices, resulting in subscriber retention. For example, having a 27 day window for monthly plans, yet up to a 60 day window for quarterly, bi-annual and annual plans is a great approach.
 
 ## Examining previous configurations of a dunning campaigns
 
