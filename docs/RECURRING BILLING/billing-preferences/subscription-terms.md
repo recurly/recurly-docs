@@ -45,13 +45,13 @@ This feature brings novel improvements to the billing setup during the plan crea
 
 Plans must have a billing period. Once a plan is created, the billing period cannot be changed because it would affect the term length of active subscriptions. If you need to make changes to the billing period, create a new plan.
 
-![Billing Period And Price Per Billing Period](https://files.readme.io/b0a3676-Billing_Period_And_Price_Per_Billing_Period.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/b0a3676-Billing_Period_And_Price_Per_Billing_Period.png" />
 
 #### Subscription billing term length
 
 The term length of a subscription is determined by its billing intervals. By default, the subscription adheres to the term configuration of the plan unless specified otherwise during creation or editing.
 
-![Subscription Billing Term Length](https://files.readme.io/62a7d19-Subscription_Billing_Term_Length.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/62a7d19-Subscription_Billing_Term_Length.png" />
 
 > 📘 Month to month subscriptions
 >
@@ -61,7 +61,7 @@ The term length of a subscription is determined by its billing intervals. By def
 
 The renewal behavior post the end of a subscription term must be specified during plan creation. Subscriptions can be set to renew automatically post the term's end after the term's completion.
 
-![End of Billing Term Behavior](https://files.readme.io/9da2dd2-End_of_Billing_Term_Behavior.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/9da2dd2-End_of_Billing_Term_Behavior.png" />
 
 Depending on business needs, you can either opt for auto-renewal or allow subscriptions to expire. For instance, streaming platforms might prefer auto-renewals to minimize churn, while businesses selling physical devices via installment payments might favor expiration post the completion of all payment installments.
 
@@ -69,13 +69,13 @@ Depending on business needs, you can either opt for auto-renewal or allow subscr
 
 While associating a subscription to an account, the default behavior is adopted from the plan’s term settings. However, custom configurations are possible.
 
-<Image align="center" alt="Price per Billing Period" border={false} caption="***Note:** &#x22;Price per Billing Period&#x22; refers to the recurring charge for each billing interval. Default price and quantity can be overridden as needed.*" src="https://files.readme.io/5a493f0-Screen_Shot_2018-06-05_at_9.28.50_AM.png" />
+<Image align="center" alt="Price per Billing Period" border={true} caption="***Note:** &#x22;Price per Billing Period&#x22; refers to the recurring charge for each billing interval. Default price and quantity can be overridden as needed.*" src="https://files.readme.io/5a493f0-Screen_Shot_2018-06-05_at_9.28.50_AM.png" />
 
 #### Timing
 
 This section provides information about when the subscription starts (it can start immediately or be scheduled to start at a later date) and the settings that determine the length of the subscription term.
 
-<Image align="center" width="80% " src="https://files.readme.io/de09aa30d62445d0bb29151bd72e6cf5dd99ebd3d7c3c476ba13ddf0ca6566a0-StartSubPastDate_1.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/de09aa30d62445d0bb29151bd72e6cf5dd99ebd3d7c3c476ba13ddf0ca6566a0-StartSubPastDate_1.png" />
 
 #### Subscription details
 
@@ -89,9 +89,9 @@ Our revamped subscription details interface now accommodates information pertine
 * **Ends On**: Marks the expiry date for subscriptions intended to cease post the term.
 * **Started On**: Notes the date when the subscription got activated.
 
-<Image align="center" alt="Multiple Billing Period Subscription Term" border={false} caption="*Example: Subscription details for a term spanning 12 monthly billing cycles.*" src="https://files.readme.io/18d6c96-FireShot_Capture_35_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
+<Image align="center" alt="Multiple Billing Period Subscription Term" border={true} caption="\_" src="https://files.readme.io/18d6c96-FireShot_Capture_35_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
 
-<Image align="center" alt="Single Period Subscription Billing Term" border={false} caption="*Illustration: Details of a subscription term encompassing just one billing cycle.*" src="https://files.readme.io/914c3ae-FireShot_Capture_36_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/914c3ae-FireShot_Capture_36_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
 
 # Changing a subscription
 
@@ -141,19 +141,19 @@ When a subscription is altered immediately, the difference in cost is billed rig
 
 For a detailed breakdown of the proration logic for immediate changes, refer [here](https://docs.recurly.com/docs/change-subscription#section-immediate-changes).
 
-<Image align="center" width="75% " src="https://files.readme.io/2344d3d-2019-09-04_1129.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/2344d3d-2019-09-04_1129.png" />
 
 ## Adjustments for the next billing date
 
 When set to "When subscription next bills", Recurly will store the modifications and apply them on the customer's next invoice. For instance, if an annual plan is upgraded to reflect on the next bill date, the upgrade will begin at the conclusion of the current billing cycle.
 
-<Image align="center" width="75% " src="https://files.readme.io/ece1cd8-2019-09-04_1233.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/ece1cd8-2019-09-04_1233.png" />
 
 ## Adjustments for term renewal
 
 When set to "When subscription term renews", Recurly stores the changes and implements them upon the subscription term's renewal. For instance, if an annual plan is upgraded to be effective upon term renewal, the upgrade will take place at the conclusion of the initial annual plan.
 
-<Image align="center" width="75% " src="https://files.readme.io/579cbf6-2019-09-04_1233.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/579cbf6-2019-09-04_1233.png" />
 
 ### One change request limitation
 
@@ -179,7 +179,7 @@ For more details, visit [Change Subscription](https://docs.recurly.com/docs/chan
 
 When a customer chooses to cancel their subscription at the next billing date or at the term's end, it's known as canceling the subscription. If you opt to terminate the subscription prematurely, within the cycle, it's called terminating the subscription. Both actions result in the subscription's expiration. Once expired, a subscription can't be reactivated. However, a canceled subscription can be reactivated if the customer decides to continue before the renewal date.
 
-<Image align="center" width="75% " src="https://files.readme.io/fc695d5-2019-09-04_1238.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/fc695d5-2019-09-04_1238.png" />
 
 ## Immediate termination
 
