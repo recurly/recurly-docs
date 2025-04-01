@@ -69,17 +69,13 @@ Depending on business needs, you can either opt for auto-renewal or allow subscr
 
 While associating a subscription to an account, the default behavior is adopted from the plan’s term settings. However, custom configurations are possible.
 
-<Image alt="Price per Billing Period" align="center" src="https://files.readme.io/5a493f0-Screen_Shot_2018-06-05_at_9.28.50_AM.png">
-  ***Note:** "Price per Billing Period" refers to the recurring charge for each billing interval. Default price and quantity can be overridden as needed.*
-</Image>
+<Image align="center" alt="Price per Billing Period" border={false} caption="***Note:** &#x22;Price per Billing Period&#x22; refers to the recurring charge for each billing interval. Default price and quantity can be overridden as needed.*" src="https://files.readme.io/5a493f0-Screen_Shot_2018-06-05_at_9.28.50_AM.png" />
 
 #### Timing
 
 This section provides information about when the subscription starts (it can start immediately or be scheduled to start at a later date) and the settings that determine the length of the subscription term.
 
-<Image alt="Timing Details" align="center" src="https://files.readme.io/e86adf8-Screen_Shot_2018-06-05_at_9.31.15_AM.png">
-  ***Tip:** During subscription creation, specify unique term details if you would prefer different term settings than the ones configured on the associated plan.*
-</Image>
+<Image align="center" width="80% " src="https://files.readme.io/de09aa30d62445d0bb29151bd72e6cf5dd99ebd3d7c3c476ba13ddf0ca6566a0-StartSubPastDate_1.png" />
 
 #### Subscription details
 
@@ -93,13 +89,9 @@ Our revamped subscription details interface now accommodates information pertine
 * **Ends On**: Marks the expiry date for subscriptions intended to cease post the term.
 * **Started On**: Notes the date when the subscription got activated.
 
-<Image alt="Multiple Billing Period Subscription Term" align="center" src="https://files.readme.io/18d6c96-FireShot_Capture_35_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png">
-  *Example: Subscription details for a term spanning 12 monthly billing cycles.*
-</Image>
+<Image align="center" alt="Multiple Billing Period Subscription Term" border={false} caption="*Example: Subscription details for a term spanning 12 monthly billing cycles.*" src="https://files.readme.io/18d6c96-FireShot_Capture_35_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
 
-<Image alt="Single Period Subscription Billing Term" align="center" src="https://files.readme.io/914c3ae-FireShot_Capture_36_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png">
-  *Illustration: Details of a subscription term encompassing just one billing cycle.*
-</Image>
+<Image align="center" alt="Single Period Subscription Billing Term" border={false} caption="*Illustration: Details of a subscription term encompassing just one billing cycle.*" src="https://files.readme.io/914c3ae-FireShot_Capture_36_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
 
 # Changing a subscription
 
@@ -112,7 +104,7 @@ Adjustments to a customer's subscription typically involve upgrades or downgrade
 3. **Select 'Change Subscription'**: This option will be available for active subscriptions.
 4. **Choose 'Immediate Change'**: This ensures that the changes are applied right away.
 5. **Update Subscription Details**: Modify the plan, add-ons, or other subscription attributes as needed.
-6. **Review Invoice Impact**: Check how the change will impact the current billing. 
+6. **Review Invoice Impact**: Check how the change will impact the current billing.
 7. **Confirm and Save**: Once satisfied with the changes, confirm to immediately reflect them on the account
 
 ## Timing of modifications
