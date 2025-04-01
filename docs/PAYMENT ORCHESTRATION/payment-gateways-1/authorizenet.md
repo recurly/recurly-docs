@@ -30,7 +30,7 @@ For pricing and signup information for a new production Authorize.net account, p
 | Supported Operations            | Anti-Fraud, Authorize and Capture, Purchase, Refund, Verify, Void |
 | Supported Payment Types         | Credit Card                                                       |
 | Supported Card Brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club, Union Pay     |
-| Gateway Specific 3DS2 Supported | No                                                                |
+| Gateway Specific 3DS2 Supported | No. Authorize.net does not support 3DS.                           |
 | Card on File Supported          | Yes                                                               |
 | Regions                         | Worldwide                                                         |
 | Currencies                      | AUD, CAD, EUR, GBP, NZD, PLN, and USD.                            |
@@ -73,16 +73,16 @@ Please note, checking the box to “Disable Old Transaction Key Immediately” w
 
 4. **Click** ‘Submit’.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/2c5f346-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/2c5f346-image.png" />
 
 In certain cases, you may be asked to provide a PIN to create a Transaction Key. Check your email for a PIN provided by Authorize.net in order to continue with this process.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/cdbb55e-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/cdbb55e-image.png" />
 
 If you have any issues, call the number at the bottom of the modal to speak to an Auth.net representative.\
 The email will contain a PIN, like the example below, which you will need to copy/paste into the field provided on Auth.net.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/4976dc3-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/4976dc3-image.png" />
 
 After you have provided your PIN, you will be given a Transaction Key to use for transactions in Recurly.
 
@@ -96,19 +96,19 @@ After you have provided your PIN, you will be given a Transaction Key to use for
 
 4. **Enter** your API Login ID and Transaction Key from Authorize.net.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/060ff09-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/060ff09-image.png" />
 
 5. You can **select** which Card Types you wish to accept. This will depend on which card types you are approved to accept. Speak to your representative at Auth.net if you have questions.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/73811e6-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/73811e6-image.png" />
 
 6. You can also **change** which currencies your Auth.net gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/c4a227a-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/c4a227a-image.png" />
 
 7. Lastly, Auth.net accepts a zero dollar authorization (verification) for card types. Please **choose** which you would like to accept ZDA-style transactions for. ZDA transactions are good for checking the validity of a card without billing a dollar amount.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/b4559de-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/b4559de-image.png" />
 
 8. Once your configuration is set up the way you would prefer, **click** ‘Add Payment Gateway’. If you are editing your implementation, the button will state ‘Update Payment Gateway’.
 
@@ -129,7 +129,7 @@ If ‘Enabled’, if Recurly receives information in the transaction response th
 3. **Set** the Radio Button option to ‘Enabled’. When Enabled, invalid or mismatched CVV code submissions will be rejected based on feedback from the card Issuer.
 4. **Click** `Save Changes`.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/9306094-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/9306094-image.png" />
 
 **Please note**, these settings apply to all supported gateways and will not be Auth.net specific.
 
