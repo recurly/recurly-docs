@@ -26,7 +26,7 @@ Recurly does not charge extra for this integration. However, SendGrid fees apply
 
 ### Managed Integration
 
-For merchants on the Elite plan who prefer not to use the self-service approach below, Recurly offers a Professional Services integration for an additional cost. Please contact your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+For merchants who prefer not to use the self-service approach below, Recurly offers a Professional Services integration for an additional cost. This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 ## Definition
 
