@@ -47,6 +47,8 @@ They also receive a **pre-renewal push notification** 24–48 hours prior to the
 
 # Recommended integration
 
+Currently, UPI AutoCollect is not supported on Recurly Checkout or Hosted Payment Pages.
+
 ### Use cases
 
 * Subscription Plans: Simplify UPI AutoPay transactions by merging the Recurly subscription platform with Ebanx.
