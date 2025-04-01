@@ -10,8 +10,8 @@
 - pay-with-venmo
 - sepa-direct-debit
 - ideal
-- sofort
 - becs
 - boleto
+- sofort
 - stripe-link-pay
 - upi-autopay
