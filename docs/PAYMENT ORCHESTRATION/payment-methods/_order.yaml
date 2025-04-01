@@ -3,6 +3,7 @@
 - apple-pay-on-the-web
 - google-pay
 - ach-bank-payments
+- bacs
 - prepaid-and-gift-cards
 - stripe-link-pay
 - amazon-pay
@@ -11,7 +12,6 @@
 - sepa-direct-debit
 - ideal
 - sofort
-- bacs
 - becs
 - boleto
 - upi-autopay
