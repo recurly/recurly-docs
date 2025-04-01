@@ -129,6 +129,8 @@ This section discusses subscription alignment scenarios based on whether there's
 
 When a non-trial subscription is purchased, its bill date will either prorate to the account's bill date or, if there's no bill date, the non-trial subscription's bill date will be set as the account's bill date.
 
+If a subscription is created with a date in the past and there is calendar alignment on the account with a Bill Date set, the new subscription will use the Bill Date on the invoice for the Due On date and the invoice will be prorated for the Bill Date.
+
 ##### Monthly and monthly subscription example
 
 An **existing** customer is subscribed to a monthly Silver subscription ($5) billing on the first of every month. The customer buys a monthly Gold subscription ($10) on March 15th.
@@ -234,14 +236,14 @@ If you're interested in any of these features included in Calendar Billing, plea
 
 Before you can use Calendar Billing, you need to have it enabled for your Recurly account.
 
-* **Step 1**: Contact Recurly Support at [support@recurly.com](mailto:support@recurly.com) to request the activation of the Calendar Billing feature. 
-* **Calendar Billing options:** You have a few options for how to enable Calendar Billing across your site. 
-  * Request to have Calendar Billing provide *both* aggregate invoices as well as renewal alignment 
-    * Once enabled, all customers' subscriptions with equal billing period intervals (months) created moving forward will be adopt the same bill date and invoice cadence of the very first subscription created on a given customer's account. All subscriptions will appear on a single invoice 
+* **Step 1**: Contact Recurly Support at [support@recurly.com](mailto:support@recurly.com) to request the activation of the Calendar Billing feature.
+* **Calendar Billing options:** You have a few options for how to enable Calendar Billing across your site.
+  * Request to have Calendar Billing provide *both* aggregate invoices as well as renewal alignment
+    * Once enabled, all customers' subscriptions with equal billing period intervals (months) created moving forward will be adopt the same bill date and invoice cadence of the very first subscription created on a given customer's account. All subscriptions will appear on a single invoice
       > 👍 Choosing to enable Calendar Billing with both renewal alignment and aggregate invoices will ensure all monthly subscriptions across your site moving forward will assume the new behavior
   * Request to have Calendar Billing provide either aggregate invoices *or* renewal alignment
     * Once *only* renewal alignment is enabled, all customer's subscriptions with equal billing period intervals (months) will be billed on the same date of the very first subscription created on a given customer's account but will not aggregated on a single invoice
-    * Once *only* aggregate invoices is enabled, all customer's subscriptions that have the exact same period end date down to the second will be displayed on a single invoice. 
+    * Once *only* aggregate invoices is enabled, all customer's subscriptions that have the exact same period end date down to the second will be displayed on a single invoice.
       > 👍 Choosing to only enable "aggregate invoices" allows you as the merchant to own which subscriptions you would like to align for customer accounts
 
 ## Aligning Renewals
