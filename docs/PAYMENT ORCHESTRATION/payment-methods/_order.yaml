@@ -5,7 +5,6 @@
 - ach-bank-payments
 - bacs
 - prepaid-and-gift-cards
-- stripe-link-pay
 - amazon-pay
 - cash-app-pay
 - pay-with-venmo
@@ -14,4 +13,5 @@
 - sofort
 - becs
 - boleto
+- stripe-link-pay
 - upi-autopay
