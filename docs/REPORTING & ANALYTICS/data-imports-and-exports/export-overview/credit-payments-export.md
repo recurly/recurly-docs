@@ -106,7 +106,7 @@ To help you identify and organize information effectively, the export provides a
 
 ### Version 3 - 4/1/2025
 
-* Bugfix on original\_invoice\_number and applied\_to\_invoice\_number
+* Corrected issue appending the prefix to original\_invoice\_number and applied\_to\_invoice\_number columns
 
 ### Version 2 - 2/5/2025
 
