@@ -51,7 +51,7 @@ Automate the update of customer payment information with the [Account Updater](h
 
 ## Intelligent retries
 
-The [Intelligent Retries](https://docs.recurly.com/docs/retry-logic) feature, available to Pro and Elite merchants, employs machine learning to determine the best times to reattempt failed transactions, increasing the likelihood of successful payments and reducing involuntary churn. Starter merchants have access to a basic static retry system, with the option to upgrade for more advanced payment recovery solutions.
+The [Intelligent Retries](https://docs.recurly.com/docs/retry-logic) feature employs machine learning to determine the best times to reattempt failed transactions, increasing the likelihood of successful payments and reducing involuntary churn. Starter merchants have access to a basic static retry system, with the option to upgrade for more advanced payment recovery solutions.
 
 ## Dunning campaigns
 
