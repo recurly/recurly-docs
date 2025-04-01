@@ -73,7 +73,7 @@ While associating a subscription to an account, the default behavior is adopted 
 
 #### Timing
 
-This section provides information about when the subscription starts (it can start immediately or be scheduled to start at a later date) and the settings that determine the length of the subscription term.
+This section provides information about when the subscription starts (it can start immediately or be scheduled to start on a specific date) and the settings that determine the length of the subscription term.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/de09aa30d62445d0bb29151bd72e6cf5dd99ebd3d7c3c476ba13ddf0ca6566a0-StartSubPastDate_1.png" />
 
