@@ -6,7 +6,7 @@ excerpt: >-
   customers can save their credit cards, debit cards, or US bank accounts for
   faster checkout at any Link-enabled business.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
