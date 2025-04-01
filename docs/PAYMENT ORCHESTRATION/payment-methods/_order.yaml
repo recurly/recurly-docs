@@ -1,6 +1,7 @@
 - credit-cards
 - paypal-payments
 - apple-pay-on-the-web
+- ach-bank-payments
 - prepaid-and-gift-cards
 - stripe-link-pay
 - amazon-pay
@@ -12,6 +13,5 @@
 - sofort
 - bacs
 - becs
-- ach-bank-payments
 - boleto
 - upi-autopay
