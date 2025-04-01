@@ -21,11 +21,11 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-Recurly currently supports BACS transactions through the [GoCardless](https://docs.recurly.com/docs/gocardless) and [Adyen](https://docs.recurly.com/docs/adyen) gateways.
+Recurly currently supports BACS transactions through the [GoCardless](https://docs.recurly.com/docs/gocardless), [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)),  and [Adyen](https://docs.recurly.com/docs/adyen) gateways.
 
 # Description
 
-Integrate Recurly with GoCardless to leverage the potential of direct debit payment schemes through BACS, thus combining the robust gateway platforms and Recurly’s subscription prowess. 
+Integrate Recurly with GoCardless to leverage the potential of direct debit payment schemes through BACS, thus combining the robust gateway platforms and Recurly’s subscription prowess.
 
 Visit our "[How to test your gateway](https://docs.recurly.com/docs/how-to-test-your-gateway)" page.
 
