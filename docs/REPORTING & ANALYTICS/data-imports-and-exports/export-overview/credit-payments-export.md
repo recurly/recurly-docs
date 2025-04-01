@@ -104,6 +104,10 @@ To help you identify and organize information effectively, the export provides a
 
 # Version Changelog
 
+### Version 3 - 4/1/2025
+
+* Bugfix on original\_invoice\_number and applied\_to\_invoice\_number
+
 ### Version 2 - 2/5/2025
 
 * Addition of `credit_payment_api_id`.
