@@ -1,5 +1,5 @@
 ---
-title: Sofort (Klarna Debit Risk)
+title: Klarna Debit Risk (frmly Sofort)
 excerpt: >-
   Seamlessly integrate Sofort (Klarna Debit Risk), a dominant online banking
   payment method in regions including Germany and Austria, into your Recurly
