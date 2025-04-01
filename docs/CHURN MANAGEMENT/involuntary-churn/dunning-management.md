@@ -23,7 +23,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * An active Recurly account.
 * Configuration user access.
-* For multiple dunning campaigns: This feature may not be included in the Starter or Pro plans. If you are interested, please contact Recurly Sales to discuss upgrade options.
+* For multiple dunning campaigns: This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 ### Limitations
 
