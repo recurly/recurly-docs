@@ -89,7 +89,9 @@ Our revamped subscription details interface now accommodates information pertine
 * **Ends On**: Marks the expiry date for subscriptions intended to cease post the term.
 * **Started On**: Notes the date when the subscription was activated.
 
-<Image align="center" alt="Multiple Billing Period Subscription Term" border={true} caption="\_" src="https://files.readme.io/18d6c96-FireShot_Capture_35_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/18d6c96-FireShot_Capture_35_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
+
+<br />
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/914c3ae-FireShot_Capture_36_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
 
