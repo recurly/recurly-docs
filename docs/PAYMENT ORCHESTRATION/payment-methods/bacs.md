@@ -1,5 +1,5 @@
 ---
-title: BACS
+title: BACS (UK Only)
 excerpt: >-
   Harness the convenience of direct debit payments globally with Recurly's
   integration with GoCardless, facilitating smooth BACS transactions to enhance
