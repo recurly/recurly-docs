@@ -27,7 +27,7 @@ A subscription allows customers to access your products or services for a specif
 * **Flexibility:** Offer subscriptions that start immediately, with a trial, or at a future date.
 * **Customization:** Override the default settings to set up tailor-made subscriptions, including prices, term length, and add-ons.
 * **Automation:** Let Recurly handle the billing, freeing you to focus on enhancing your product and serving your customers.
-* **Multiple integration options:** Whether it's via the Admin Console, Checkout, Hosted Payment Pages, or the API, choose the method that best suits your business.
+* **Multiple integration options:** Whether it's via the Admin Console, Hosted Payment Pages, or the API, choose the method that best suits your business.
 * **Enhanced customer experience:** With features like automatic renewals and multiple currency support, provide a smooth and localized customer journey.
 
 # How to create a subscription
@@ -42,21 +42,21 @@ The journey to create a subscription is straightforward, and Recurly offers mult
 ## Creating a subscription in Recurly
 
 1. **Navigate** to “Customers” → Accounts.
-2. **Select** an account. 
+2. **Select** an account.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/286d380-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/286d380-image.png" />
 
 3. **Press** "Add subscription".
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/930c6d6-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/930c6d6-image.png" />
 
 4. **Fill** in all of the fields, described below:
 
 **Subscription Details**
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/0abf905-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/0abf905-image.png" />
 
-This section captures the core aspects of the subscription. 
+This section captures the core aspects of the subscription.
 
 * **Plan**: The core subscription model the customer is choosing. This is a mandatory field as it determines the features or services the subscriber will access.
 * **Currency**: This is the currency in which the customer will be billed. Essential for businesses operating across different regions.
@@ -66,13 +66,13 @@ This section captures the core aspects of the subscription.
 
 **Add-ons**
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/4a5ace5-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/4a5ace5-image.png" />
 
 In this section, additional services or features can be added to the main subscription. These could be supplementary tools, extended capacities, or any other value-added elements that aren't part of the core plan.
 
 **Timing**
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/29c4802-image.png" />
+<Image align="center" width="50% " src="https://files.readme.io/cdb8cbc7e651652fc28050c1ac4998fdc88c16cdb52b6e8db4f3a3cc98ab5304-StartSubPastDate.png" />
 
 This section dictates when and how long the subscription lasts:
 
@@ -85,25 +85,21 @@ This section dictates when and how long the subscription lasts:
 
 For products or services that require physical delivery, **check** the "Include Shipping" box and **enter** a new shipping address to ensure accurate delivery.
 
-<Image alt="Add a shipping fee if required." align="center" width="50% " border={true} src="https://files.readme.io/bf72b16-image.png">
-  Add a shipping fee if required.
-</Image>
+<Image align="center" alt="Add a shipping fee if required." border={true} caption="Add a shipping fee if required." src="https://files.readme.io/bf72b16-image.png" width="50% " />
 
-<Image alt="Fill in the shipping address details." align="center" width="50% " border={true} src="https://files.readme.io/1e44366-image.png">
-  Fill in the shipping address details.
-</Image>
+<Image align="center" alt="Fill in the shipping address details." border={true} caption="Fill in the shipping address details." src="https://files.readme.io/1e44366-image.png" width="50% " />
 
 **Coupons & gift cards**
 
 Here, any promotional codes or discounts can be applied. Coupons might offer a percentage off, a fixed amount reduction.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/9b65d37-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/9b65d37-image.png" />
 
 Subscribers can redeem gift cards. This could either cover the entire subscription cost or provide a partial offset.
 
 **Invoicing**
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/0f3e081-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/0f3e081-image.png" />
 
 This section focuses on the billing specifics:
 
@@ -116,7 +112,7 @@ This section focuses on the billing specifics:
 
 4. Lastly, always preview the invoice before finalizing. It provides a glimpse into the financial documentation generated for the customer. Not only does it bolster accuracy, but it also fosters confidence in the subscription process. If you need more granular control or face any hiccups, don't hesitate to reach out to Recurly's support team at [support@recurly.com](mailto:support@recurly.com).
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/2ddc27f-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/2ddc27f-image.png" />
 
 ## Subscription options considerations
 
