@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-Recurly currently supports SEPA transactions through [Adyen ](https://docs.recurly.com/docs/adyen)and [GoCardless ](https://docs.recurly.com/docs/gocardless)gateways.
+Recurly currently supports SEPA transactions through [Adyen ](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)), and [GoCardless ](https://docs.recurly.com/docs/gocardless)gateways.
 
 ### Limitations
 
