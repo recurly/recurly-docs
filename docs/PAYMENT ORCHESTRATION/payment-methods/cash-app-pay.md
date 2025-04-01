@@ -5,7 +5,7 @@ excerpt: >-
   Recurly payment gateway to provide a smooth subscription payment experience
   leveraging a platform utilized by millions of Cash App customers worldwide.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
