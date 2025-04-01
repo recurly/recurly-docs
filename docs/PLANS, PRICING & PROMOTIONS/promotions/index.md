@@ -17,7 +17,7 @@ next:
 
 ### Required plan
 
-While Trials, Discounts/Coupons, and Gift Subscriptions are available on all Recurly plans, Gift Cards are an exclusive feature available only to merchants on Pro and Elite plans. For detailed pricing information regarding these features, please reach out to your Recurly account manager or contact [support@recurly.com](mailto:support@recurly.com).
+This feature **may not be included** in the Starter or Pro plans. While Trials, Discounts/Coupons, and Gift Subscriptions are available on all Recurly plans, Gift Cards are an exclusive feature available only on Pro and Elite plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 # Definition
 
