@@ -32,13 +32,13 @@ With Recurly, businesses can provide their customers with the flexibility to hav
 
 # Key details
 
-In today's fast-paced digital economy, flexibility is key. With Recurly's Multiple Subscriptions feature, businesses can offer a range of subscription options tailored to the unique needs of their customers. 
+In today's fast-paced digital economy, flexibility is key. With Recurly's Multiple Subscriptions feature, businesses can offer a range of subscription options tailored to the unique needs of their customers.
 
 ## The power of the API
 
 The API forms the backbone of managing multiple subscriptions. By harnessing the capabilities of the [purchase endpoint](https://developers.recurly.com/api/latest.html#operation/create_purchase), businesses can seamlessly create an array of subscriptions for both new and existing accounts. This endpoint facilitates the amalgamation of various subscriptions and even one-time charges as a part of the [Hybrid](https://docs.recurly.com/docs/billing-models#section-hybrid) billing model.
 
-* **Uniform payment:** All subscriptions in a purchase must utilize a shared payment method. 
+* **Uniform payment:** All subscriptions in a purchase must utilize a shared payment method.
 * **Consistent collection method:** Subscriptions in a purchase must have the same collection method, ensuring uniformity in processing.
 
 ### Unpacking the purchase invoice
@@ -49,7 +49,7 @@ Purchases that encompass more than one subscription will culminate in an invoice
 >
 > Combining multiple subscriptions into one invoice is a streamlined process, but it requires the subscriptions to meet certain criteria. Utilize either the "Aggregate Invoice" or "Alignment" features to achieve this. These tools are designed to simplify billing by grouping eligible subscriptions on a single invoice. For an efficient way to merge various subscription charges into one convenient bill, explore our [Calendar Billing](https://docs.recurly.com/v1.0/docs/calendar-billing) feature. This method not only enhances administrative efficiency but also provides a more cohesive billing experience for your customers.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/17cdebe-Screenshot_2.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/17cdebe-Screenshot_2.png" />
 
 # Communication and notifications
 
@@ -69,7 +69,7 @@ To update your email templates to support multiple subscription purchases, see [
 
 ### Webhooks
 
-If the multiple subscriptions feature is turned on your site, the following webhooks will include a subscriptions xml tag with a list of subscriptions. 
+If the multiple subscriptions feature is turned on your site, the following webhooks will include a subscriptions xml tag with a list of subscriptions.
 
 * new\_invoice
 * closed\_invoice
@@ -83,7 +83,7 @@ This is new behavior based on if the feature is enabled. If multiple subscriptio
 
 ### Exports
 
-When the multiple subscriptions feature is active on your site, any export containing a `subscription_id` will now include a new column listing `subscription_ids` in a comma-separated format. 
+When the multiple subscriptions feature is active on your site, any export containing a `subscription_id` will now include a new column listing `subscription_ids` in a comma-separated format.
 
 ### Coupon Redemption in Multiple Subscription Purchase
 
@@ -107,3 +107,5 @@ To add multiple subscriptions to an account, one option is through the Admin UI.
 Alternatively, the <a href="https://developers.recurly.com/api/latest.html#operation/create_subscription" target="_blank">create subscription</a> endpoint allows adding individual subscriptions to an account, with separate invoicing and billing for each upon successful payment.
 
 If using Recurly's New Subscription or New Invoice email notifications, an email will be sent for each subscription added.
+
+> **Note:** Multiple subscriptions cannot be created when a subscription start date in the past is provided.
