@@ -18,7 +18,7 @@ next:
 
 ### Required plan
 
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options. **You can try this in a sandbox environment before making the upgrade**.
 
 ### Prerequisites & supported gateways
 
