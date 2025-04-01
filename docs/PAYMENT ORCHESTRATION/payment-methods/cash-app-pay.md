@@ -19,6 +19,8 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+Recurly currently supports Cash App transactions on [Adyen](https://docs.recurly.com/docs/adyen#/), and [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)) gateways.
+
 ### Use cases
 
 * **Seamless subscriptions:** Cash App Pay enables effortless sign-ups for subscriptions, by allowing customers to pay merchants by scanning a QR code.
@@ -26,7 +28,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-* A connection with Adyen  gateway if your Integration is via Recurly.JS.
+* A connection with Adyen gateway if your Integration is via Recurly.JS.
 * A connection with Stripe gateway if your integration is via Stripe Elements.
 * Your site must support transactions in USD.
 
@@ -46,9 +48,9 @@ Available for use with Recurly.js for subscription signups for ecommerce Merchan
 
 * **Cash App balance and linked debit card purchases:** Customers are not required to have a linked bank account, and can use their Cash App balance or a linked Debit Card to pay for purchases and subscriptions. If the Cash balance is not sufficient, the customer’s linked card will be used for the purchase.
 
-* **R.js Token utilization:** Use Cash App Pay Recurly.js tokens to carry out transactions via V2 or V3 Recurly endpoints. 
+* **R.js Token utilization:** Use Cash App Pay Recurly.js tokens to carry out transactions via V2 or V3 Recurly endpoints.
 
-* **Stripe Elements ctoken utilization:** Use Stripe Payment Element, and V3 API to support this payment method. 
+* **Stripe Elements ctoken utilization:** Use Stripe Payment Element, and V3 API to support this payment method.
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
