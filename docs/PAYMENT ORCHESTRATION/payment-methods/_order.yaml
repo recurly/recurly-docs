@@ -6,11 +6,11 @@
 - bacs
 - prepaid-and-gift-cards
 - amazon-pay
-- cash-app-pay
 - pay-with-venmo
 - sepa-direct-debit
 - ideal
 - becs
+- cash-app-pay
 - boleto
 - sofort
 - stripe-link-pay
