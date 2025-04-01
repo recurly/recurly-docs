@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
- This feature is only available to customers on the Professional and Elite subscription plans. To request to upgrade to this plan, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 # Definition
 
@@ -32,7 +32,7 @@ Manual Invoicing in Recurly allows businesses to create and manage invoices manu
 
 ### Email templates
 
-Enhance the clarity and professionalism of your communications by personalizing the default text for your Invoice New, Subscription New, and Invoice Past Due emails. Incorporate additional fields like `po_number`, `net_terms`, and potentially `net_terms_type` to ensure your communication resonates with your company's branding and messaging approach. 
+Enhance the clarity and professionalism of your communications by personalizing the default text for your Invoice New, Subscription New, and Invoice Past Due emails. Incorporate additional fields like `po_number`, `net_terms`, and potentially `net_terms_type` to ensure your communication resonates with your company's branding and messaging approach.
 
 > **Note**: The inclusion of `net_terms_type` may be contingent upon specific feature availability.
 
@@ -109,25 +109,25 @@ By paying attention to these integration notes, you can ensure a smooth and effe
 
 ## Collection terms
 
-### 1\. Automatically charge
+### 1. Automatically charge
 
 This method will directly bill a credit card that the customer has on file.
 
-### 2\. Invoice
+### 2. Invoice
 
 This method allows for a manual invoice to be generated for the customer.
 
-### 3\. Terms options for invoices
+### 3. Terms options for invoices
 
-* **General Note**: All invoices are due "On-Receipt" by default. 
+* **General Note**: All invoices are due "On-Receipt" by default.
 * **Manual Invoices**: If you're on our Professional or Elite plans and issue manual invoices, you'll have access to a Terms dropdown. Here are the available options:
   * On-Receipt
   * Net-10
   * Net-30
   * Net-60
-  * Custom days 
+  * Custom days
 
-### 4\. End of month (EOM) terms
+### 4. End of month (EOM) terms
 
 These terms are particularly useful when you have business customers who pay invoices weeks or even months after the initial invoice was issued.
 
@@ -147,11 +147,11 @@ These terms are particularly useful when you have business customers who pay inv
 * **Restrictions**: Custom EOM terms are not supported. Once an EOM term is set on an invoice, its Due Date can't be edited. To change the Due Date, a refund must be issued for the current invoice, and a new one should be created.
 * **API Availability**: This feature is currently accessible via our User Interface and both V2 and V3 API
 
-### 5\. Understanding past due invoices
+### 5. Understanding past due invoices
 
 An invoice is considered past due the day after its official due date. For example, a "Net 30" invoice becomes past due exactly on the 31st day.
 
-### 6\. Modifying a subscription payment method
+### 6. Modifying a subscription payment method
 
 To modify:
 
