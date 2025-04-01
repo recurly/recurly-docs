@@ -18,7 +18,7 @@ next:
 
 ### Required plan
 
-Merchants not currently subscribed to the Professional or Elite plans have the opportunity to try ACH transactions on a sandbox site before deciding to upgrade their plan.
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 ### Prerequisites & supported gateways
 
@@ -26,8 +26,8 @@ Recurly currently supports ACH transactions through [Adyen](https://docs.recurly
 
 ### Limitations
 
-* The ACH feature is available exclusively for merchants based in the US, thereby limiting its global outreach. 
-* ACH has a varying processing time and a series of invoice states, ranging from pending to scheduled to processed, with each stage holding its implications and possible actions. 
+* The ACH feature is available exclusively for merchants based in the US, thereby limiting its global outreach.
+* ACH has a varying processing time and a series of invoice states, ranging from pending to scheduled to processed, with each stage holding its implications and possible actions.
 * ACH transactions cannot be voided via API. This action is only supported in the UI.
 
 # Definition
@@ -40,13 +40,13 @@ The ACH (Automated Clearing House) payment method is designed for merchants in t
 
 ACH is regulated by an organization called <a href="https://www.nacha.org/" target="_blank" rel="noopener noreferrer">NACHA</a>. Customers must provide authorization to Merchants for all payments and any future recurring collections. The type of information a Merchant must collect must include:
 
-* Date of purchase  
-* Amount of purchase  
-* Customer name  
-* Account number  
-* Routing number and bank name  
-* Authorization language for the payment and whether there are renewals  
-* Authorization language to attempt additional collections if the first transaction fails  
+* Date of purchase
+* Amount of purchase
+* Customer name
+* Account number
+* Routing number and bank name
+* Authorization language for the payment and whether there are renewals
+* Authorization language to attempt additional collections if the first transaction fails
 * Language letting the customer know that if they need to cancel, they must contact the merchant by a certain number of days before the payment and how they should contact the merchant.
 
 #### Email communication
