@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
-* This feature or setting is available to all customers on any Recurly subscription plan. 
+* This feature or setting is available to all customers on any Recurly subscription plan.
 
 # Definition
 
@@ -24,9 +24,9 @@ Collect your automatic invoices on a date after the invoice creation. This allow
 
 # Key benefits
 
-* **Communicate final invoice amounts before charge:** For merchants who use Recurly's “usage based billing” feature, after all usage is logged, the invoice will be created so you can inform your customer of the final invoice amount before they are billed. 
-* **Prioritize compliance:** Customer communication is key for merchants who comply with strict payments regulations. Customers may need to be informed of the final invoice amount a certain number of days prior to their payment method being charged. 
-* **Charge customer upon shipment or delivery:** Merchants who ship physical goods may want to create the customer invoice when a subscription renews, and delay charging the customer until their box ships or is delivered. 
+* **Communicate final invoice amounts before charge:** For merchants who use Recurly's “usage based billing” feature, after all usage is logged, the invoice will be created so you can inform your customer of the final invoice amount before they are billed.
+* **Prioritize compliance:** Customer communication is key for merchants who comply with strict payments regulations. Customers may need to be informed of the final invoice amount a certain number of days prior to their payment method being charged.
+* **Charge customer upon shipment or delivery:** Merchants who ship physical goods may want to create the customer invoice when a subscription renews, and delay charging the customer until their box ships or is delivered.
 
 # Key details
 
@@ -50,11 +50,11 @@ This method allows for a manual invoice to be generated for the customer. [Learn
 * Net-10
 * Net-30
 * Net-60
-* Custom days 
+* Custom days
 
 ### End of month (EOM) terms
 
-End of month terms are only available for Professional or Elite plans. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to activate this feature.
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 These terms are particularly useful when you have business customers who pay invoices weeks or even months after the initial invoice was issued.
 
@@ -87,15 +87,15 @@ An invoice is considered past due the day after its official due date. For examp
 
 1. **Configure default terms for automatic invoices**
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/485a128-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/485a128-image.png" />
 
-You are able to configure the default terms for automatic invoices. By default, this value is set to “On-Receipt”. Selecting a different value will set terms on automatic invoices unless otherwise specified on an invoice. Note, you can configure different terms for automatic and manual invoices. 
+You are able to configure the default terms for automatic invoices. By default, this value is set to “On-Receipt”. Selecting a different value will set terms on automatic invoices unless otherwise specified on an invoice. Note, you can configure different terms for automatic and manual invoices.
 
 2. **Configure terms on specific invoices**
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/9806032-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/9806032-image.png" />
 
-When generating an automatic invoice, you can override the site default and set a different term for the invoice being generated. This is available via the API and in the Recurly Admin console. 
+When generating an automatic invoice, you can override the site default and set a different term for the invoice being generated. This is available via the API and in the Recurly Admin console.
 
 3. **Communicate to your customers**
 
@@ -104,7 +104,7 @@ When terms are set on an automatic invoice, the “New Invoice” email template
 # FAQs
 
 **Q: What if an invoice fails on the due date?**\
-**A**: The invoice will be set in a past\_due state, and will enter the dunnings schedule as configured by the merchants' dunning configuration. Applicable emails will be sent. 
+**A**: The invoice will be set in a past\_due state, and will enter the dunnings schedule as configured by the merchants' dunning configuration. Applicable emails will be sent.
 
 **Q: What if I attempt collection prior to the invoice term and the collection attempt fails?**\
 **A**: The invoice will not enter dunning or be marked as past due, yet will attempt to collect on the due date set on the subscription or invoice. Applicable emails will be sent.
