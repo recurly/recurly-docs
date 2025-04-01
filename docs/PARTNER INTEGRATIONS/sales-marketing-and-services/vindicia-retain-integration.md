@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
-This feature is only available to customers on the Elite subscription plan and customers MUST have the "Credit Memos" and "OBWC" features enabled. To request to upgrade to this plan or enable the Credit Memos feature, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options. Additionally, customers **MUST** have the "Credit Memos" and "OBWC" features enabled. To request an upgrade or enable the Credit Memos feature, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more details.
 
 ### Prerequisites
 
