@@ -77,7 +77,7 @@ These terms are particularly useful when you have business customers who pay inv
 
 **Restrictions**: Custom EOM terms are not supported. Once an [EOM ](https://docs.recurly.com/docs/manual-payments#4-end-of-month-eom-terms)term is set on an invoice, **its due date can't be edited**. To change the due date, a refund must be issued for the current invoice, and a new one should be created.
 
-**API availability**: This feature is currently accessible via our User Interface and V3 API. Client libraries and the V2 API have yet to be updated.
+**API availability**: This feature is currently accessible via our User Interface and V2 and V3 APIs.
 
 ### Understanding past due invoices
 
