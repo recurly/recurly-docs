@@ -87,7 +87,7 @@ Our revamped subscription details interface now accommodates information pertine
 * **Term Balance**: Estimates outstanding billable amounts.
 * **Renews On**: Indicates the renewal date for subscriptions set to auto-renew.
 * **Ends On**: Marks the expiry date for subscriptions intended to cease post the term.
-* **Started On**: Notes the date when the subscription got activated.
+* **Started On**: Notes the date when the subscription was activated.
 
 <Image align="center" alt="Multiple Billing Period Subscription Term" border={true} caption="\_" src="https://files.readme.io/18d6c96-FireShot_Capture_35_-_Internal__Subscription_Terms_-_Google___-_https___docs.google.com_document_d.png" />
 
