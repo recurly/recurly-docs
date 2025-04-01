@@ -43,17 +43,23 @@ Without a trial period, a new subscription request will incur the full charge fo
 
 Additionally, Recurly offers the option to set up free trials using coupons. This can be a strategic move to attract more subscribers by offering a risk-free trial period. To learn more about leveraging free trials through coupons, <a href="https://docs.recurly.com/docs/coupons" target="_blank">visit this page</a>.
 
-However, if a subscription is canceled before the end of the trial period, no charges will be applied. The subscription will simply expire at the end of the trial. Conversely, if the trial period ends without cancellation, the subscription will be billed normally. 
+However, if a subscription is canceled before the end of the trial period, no charges will be applied. The subscription will simply expire at the end of the trial. Conversely, if the trial period ends without cancellation, the subscription will be billed normally.
+
+## Subscription and Period Term Dates
 
 It's important to note that adding a free trial to a plan will extend the subscription term. For instance, an annual plan billed monthly with a 30-day free trial will result in a 13-month subscription term.
 
+If a subscription is created with a start date in the past and it has a free trial and the trial dates are in the current billing period, then the subscription is in a free trial and the trial end date and subscription terms are calculated from the start date.
+
+If a subscription is created with a start date in the past and it has a free trial and the trial dates are prior to the current billing period, then the sub renewal dates reflect the start date plus trial length.
+
 ### Cardless free trials
 
-Recurly provides the option to either require or bypass billing information for free trials at the plan level. This setting is accessible when creating a plan with a trial period. Please note that when a plan has a set up fee, the fee is charged immediately. If you don't want to require billing information for your free trial, a coupon, gift card, or other credits can be used to cover the cost of the setup fee, allowing you to bypass the billing information step. 
+Recurly provides the option to either require or bypass billing information for free trials at the plan level. This setting is accessible when creating a plan with a trial period. Please note that when a plan has a set up fee, the fee is charged immediately. If you don't want to require billing information for your free trial, a coupon, gift card, or other credits can be used to cover the cost of the setup fee, allowing you to bypass the billing information step.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/bc00048702aa2e00372aedce44a3db3fc7be465806884452bd728790045ab736-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/bc00048702aa2e00372aedce44a3db3fc7be465806884452bd728790045ab736-image.png" />
 
-Free trial coupons can be used on any plan. However, the plan's billing requirement setting determines if the billing information needs to be presented. 
+Free trial coupons can be used on any plan. However, the plan's billing requirement setting determines if the billing information needs to be presented.
 
 If you change your free trial settings, the new settings will only apply to new sign-ups. For subscriptions that start with a free trial as a future date, the billing settings at the time the subscription starts will be used.
 
@@ -63,7 +69,7 @@ When the trial ends and the subscription payment isn’t fulfilled, it may enter
 
 ## Trial ending email
 
-The Trial Ending email is a valuable tool designed to notify your customers 3 days before the conclusion of their free trial. It is highly recommended to enable this feature, particularly for free trial plans that do not mandate billing information at the point of sign-up. 
+The Trial Ending email is a valuable tool designed to notify your customers 3 days before the conclusion of their free trial. It is highly recommended to enable this feature, particularly for free trial plans that do not mandate billing information at the point of sign-up.
 
 > This practice aligns with certain card brand regulations that require clear communication with customers as their trial period approaches its end. Some card brands have mandates to communicate with customers when their trial is ending.
 
@@ -71,4 +77,4 @@ The Trial Ending email is a valuable tool designed to notify your customers 3 da
 
 If you use Recurly's either Checkout or Hosted payment pages, you will have the flexibility to require or bypass billing information for your subscriptions with free trials.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/df31c3a-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/df31c3a-image.png" />
