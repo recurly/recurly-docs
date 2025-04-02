@@ -36,7 +36,7 @@ To integrate Apple Pay on the Web, ensure you have:
 ### Best Practices and Compliance
 
 * For return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Apple Pay.
-* Always request Merchant-level tokens (**MPANS**) for Apple Pay, to comply with upcoming Visa MPAN requirement regulations. After July, 2025, Merchants should request MPANs in their Apple Pay implementations to avoid declines.
+* Always request Merchant-level tokens (**MPANS**) for Apple Pay, to comply with upcoming Visa MPAN requirement regulations. After July, 2025, Merchants should request MPANs in their Apple Pay implementations to avoid declines. DPANs are grandfathered in, but are not guaranteed to continue functioning forever.
 
 ### Limitations
 
