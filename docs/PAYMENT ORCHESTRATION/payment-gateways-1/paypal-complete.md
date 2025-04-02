@@ -61,13 +61,10 @@ Please be aware of the following limitations of PayPal Complete:
 
 ## Required PayPal Setup
 
-Before processing using your PayPal Complete gateway, you must contact your PayPal Account Executive or CSM and enable the Referenced Transactions flag. All accounts must have this feature enabled prior to processor, or errors will be encountered. If there is no CSM/sales contact assigned to your account, please call customer service at 1-888-221-1161.
-
 ## Differences between eCheck and other PayPal transactions
 
 * Transactions funded by bank accounts function similarly to direct debits (such as ACH in the United States), requiring 3-6 days for funds to clear in a customer’s PayPal account. Similarly, if you process a refund directly from your bank account—especially when there's no balance in your PayPal account—it may also take 3-6 days (or longer) for the customer to see a credit.
 * During this waiting period, PayPal labels the transaction as "pending" until the involved banks finalize the transaction.
-* Once settled, PayPal sends an "Instant Payment Notification" (or webhook) signaling the transaction's conclusion. If the funds aren't received, a similar notification indicates the transaction was declined.
 
 ## Bank account funded transactions in Recurly
 
@@ -109,8 +106,6 @@ Here's a sample scenario of status updates:
 * Currencies
 * Card brands
 
-Ensure that the 'reference transaction flag' is active on your PayPal account.
-
 ## Verification
 
 * Once the gateway is added, verify your PayPal account.
@@ -122,47 +117,3 @@ Ensure that the 'reference transaction flag' is active on your PayPal account.
 * Be attentive to various status messages such as email confirmation requirements, application reviews, and any account restrictions.
 * If you encounter multiple alerts, address each one as the application progresses.
 * Existing PayPal Business account holders that support credit and debit cards might bypass these alerts.
-
-## **Recurly configuration**
-
-* After gateway integration, define the desired settings, especially the supported currencies and card brands.
-
-## **PayPal settings**
-
-* Ensure the "reference transaction" flag is enabled in your account. You will not be able to enable this on your own, contact your PayPal Account manager or PayPal customer service to enable this for you.
-
-## **Handling eCheck transactions**
-
-* Set up your PayPal account to dispatch "IPNs" to Recurly for optimal eCheck transaction processing. [Refer to the detailed instructions here.](https://docs.recurly.com/docs/paypal-payments#section-configuring-pay-pal-to-send-recurly-the-status-updates)
-
-# PayPal's eCheck feature
-
-PayPal transactions financed or refunded via a bank account, or eChecks, are crucial for comprehensive PayPal functionalities in Recurly. Hence, setting up IPNs (Instant Payment Notifications) on your PayPal account becomes imperative. Here's a concise guide for setting up IPNs:
-
-1. Sign into your merchant account on [PayPal](https://www.paypal.com).
-2. Navigate through the profile icon → Profile and Settings → My selling tools.
-3. Update 'Instant payment notifications' under the 'Getting paid and managing my risk' section.
-4. Enable the listener by choosing IPN Settings and inserting the URL: [https://callbacks.recurly.com/paypal/\_recurly\_subdomain\_here\_](https://callbacks.recurly.com/paypal/_recurly_subdomain_here_).
-5. Activate 'Receive IPN messages' and save your settings.\
-   **Important:** For Recurly sites hosted within the European Union (EU) data centers, use the base URL as callbacks.eu.recurly.com.
-
-### Setting Up PayPal to relay status updates to Recurly
-
-To ensure that the transaction status from PayPal syncs accurately with Recurly, follow the steps below. Detailed guidelines can also be found on [PayPal's developer page](https://developer.paypal.com/docs/classic/ipn/integration-guide/IPNSetup/):
-
-1. **Accessing your PayPal merchant account**:
-   * Navigate to [www.paypal.com](https://www.paypal.com) and sign in to your merchant account.
-2. **Navigating to the profile settings**:
-   * Click on the profile icon, located on the top right corner of the page. From the dropdown Business Profile menu, choose **Profile and Settings**.
-   * If you can't locate the profile icon, follow this path: **My Account** → **Profile** → **My Selling Tools**.
-3. **Updating instant payment notifications (IPN)**:
-
-   * Within the **My Selling Tools** section, locate the **Instant payment notifications** row under the **Getting paid and managing my risk** category. Click on the **Update** link adjacent to it.
-4. **Configuring IPN settings**:
-   * Opt for **Choose IPN Settings**. This lets you set your listener's URL and activate it.
-   * Insert the following URL: `https://callbacks.recurly.com/paypal/_recurly_subdomain_here_`. For instance, if your subdomain is "kalekrate", the URL would be `https://callbacks.recurly.com/paypal/kalekrate.`
-5. **Enabling IPN messages**:
-   * Select the **Receive IPN messages (Enabled)** option to activate your listener.
-6. **Saving and exiting**:
-   * Click on the **Save** button to preserve the changes.
-   * To return to the main profile, select **Back to Profile Summary**.
