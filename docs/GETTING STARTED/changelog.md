@@ -69,6 +69,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 1/28/2025: **Cybersource gateway** - Enable adding the P12 certificate to gateway configuration. This will be required for all Cybersource merchants before Feb 13th, 2025. Check app notifications for details, or visit our instructions on the [Cybersource documentation](https://docs.recurly.com/docs/cybersource#configuring-cybersource-gateway-in-recurly).
 * 1/21/2025:**Adyen gateway**-- Enabled SEPA retry capabilities when using Adyen gateway tokens. Read more about [SEPA retries](https://docs.recurly.com/docs/sepa-retries) on our dedicated documentation page.
+* 1/21/2025: **ApplePay** -- Support tracking MPAN and reporting for merchant-derived tokens.
 * 1/21/2025:  **Webhooks**- Expanded the webhooks auto-pause functionality to production merchant sites for webhook endpoints that have not responded with a 2xx status code for multiple consecutive days.
 * 1/21/2025: **Webhooks**- Added the notification ID to the webhook headers of JSON formatted webhooks.
 * 1/21/2025:  **Password criteria**- Upon the next user password expiration, there will be a new password length requirement where length must be at minimum 12 characters long with at least one numeric character.
