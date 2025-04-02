@@ -88,7 +88,7 @@ Here's a sample scenario of status updates:
 | 3. Recurly's dunning schedule triggers a dunning email after some days.                                                                 | No change                 | No change                  | No change              |
 | 4. Retry #1: Following Recurly's retry logic, a new payment attempt with PayPal is made after several days.                             | Pending                   | Processing                 | Processing             |
 | 5. Days later, PayPal flags the payment as declined. Recurly notes the invoice's **dunning period is ongoing**.                         | Failed                    | Declined                   | Past Due               |
-| 6. Retry #2: Recurly tries another payment with PayPal after a few more days.                                                           | Pending                   | Processing                 | Processing             |
+| 6. Retry #2: Recurly attempts another payment with PayPal after a few more days.                                                        | Pending                   | Processing                 | Processing             |
 | 7. After several days, PayPal reports payment failure. Recurly updates the status after verifying the **dunning period has concluded**. | Failed                    | Declined                   | Failed                 |
 
 # Integrating PayPal complete with Recurly
