@@ -37,6 +37,10 @@ To integrate Apple Pay on the Web, ensure you have:
 
 * For return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Apple Pay.
 * Always request Merchant-level tokens (**MPANS**) for Apple Pay, to comply with upcoming Visa MPAN requirement regulations. After July, 2025, Merchants should request MPANs in their Apple Pay implementations to avoid declines. DPANs are grandfathered in, but are not guaranteed to continue functioning forever.
+  * Usage of MPAN vs DPAN is exposed on the payment method by `apple_pay` or `apple_pay_merchant_token`
+* It is up to you, the integrator, to request merchant tokens in your configuration by [specifying the recurring payment request.](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/3955946-recurringpaymentrequest) in one of two ways:
+  * Simple Labeling: Add the recurring flag to the ApplePay constructor. See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#apple-pay) for more information.
+  * Advanced Labeling: Configure the RecurringPaymentRequest. See [Apple Documentation](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrecurringpaymentrequest) for more information.
 
 ### Limitations
 
