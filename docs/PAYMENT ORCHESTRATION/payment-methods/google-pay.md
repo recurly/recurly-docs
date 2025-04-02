@@ -26,6 +26,11 @@ Google Pay is a payment method that allows customers to pay with preferred payme
 * Before integrating Google Pay™ into your Recurly account, ensure you have a Google Merchant ID. Recurly currently supports Google Pay™ transactions through [Stripe](https://docs.recurly.com/docs/stripe), [Adyen](https://docs.recurly.com/docs/adyen), [Braintree](https://docs.recurly.com/docs/braintree),  [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), and [Chase Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital) gateways.
 * This payment method allows using [Zero Dollar Authorizations](https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda).
 
+### Best Practices and Compliance
+
+* For return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Google Pay.
+* Always request Merchant-level tokens (**MPANS**) for Google Pay, to comply with upcoming Visa MPAN requirement regulations. After July, 2025, Merchants should request MPANs in their Google Pay implementations to avoid declines. DPANs are grandfathered in, but are not guaranteed to continue functioning forever.
+
 ### Limitations
 
 Currently, Google Pay™ is not supported on Recurly Checkout or Hosted Payment Pages.
