@@ -1,56 +1,65 @@
 ---
 title: Getting Started
+excerpt: >-
+  A comprehensive guide to getting started with Recurly.js—covering script
+  integration, configuration, and building a secure, PCI-compliant payment form
+  using Elements.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-## Getting Started
-
-To begin, you'll include the Recurly.js script on your page.
+To begin, include the Recurly.js script on your page:
 
 ```html
 <script src="https://js.recurly.com/v4/recurly.js"></script>
 <link href="https://js.recurly.com/v4/recurly.css" rel="stylesheet" type="text/css">
 ```
 
-This exposes a single global object, `recurly`.
+> **Note:** Including `recurly.css` is optional but recommended as it provides helpful default styles for Recurly Elements during setup.
 
-It is not necessary to include recurly.css, but we highly recommend it while you're getting set up.\
-It provides some helpful default styles to Recurly Elements.
+### Prerequisites & limitations
 
-### Self-Hosting Recurly.js
+* You must have a valid Recurly account with API access.
+* Basic familiarity with HTML, JavaScript, and RESTful APIs.
+* Using Recurly.js is optional but recommended for enhanced security and reduced PCI scope.
 
-The Recurly-hosted version of recurly.js is designed and updated to maintain compatibility\
-with system update deployments that take place from time-to-time. Locally hosted versions of
-recurly.js run the risk of encountering issues with system interaction and incompatibility which
-may result in avoidable service interruptions on your client page. It is for this reason, we highly
-recommend against and do not support locally hosted copies of recurly.js.
+***
 
-### Configure
+# How it works
 
-Simply call `recurly.configure` anywhere on your page, passing your public key.\
-This identifies your site to Recurly servers. You can find your public key in the
-[API Access section](https://app.recurly.com/go/developer/api_access) of your admin app.
+Recurly.js streamlines your checkout by securely capturing customer payment information. When a customer submits your payment form, Recurly.js encrypts their payment data and stores it on our servers, returning an authorization key (or *token*). With this token, you can complete the subscription process using our API—without ever directly handling sensitive payment data. This reduces your PCI compliance requirements significantly.
+
+***
+
+# Self-hosting Recurly.js
+
+We highly recommend using the Recurly-hosted version of Recurly.js. This version is updated to maintain compatibility with Recurly’s system updates. Locally hosted copies may encounter integration issues or service interruptions.
+
+***
+
+# Configure
+
+Call `recurly.configure` anywhere on your page, passing your public key to identify your site to Recurly servers. You can find your public key in the [API Access section](https://app.recurly.com/go/developer/api_access) of your admin app.
 
 ```js
 recurly.configure('sc-ABCDEFGHI123456789');
 ```
 
-### Use Your Site's Public Key
+**Use Your Site's Public Key:** Replace `sc-ABCDEFGHI123456789` with your own public key.
 
-Be sure to replace `sc-ABCDEFGHI123456789` with [your own public key](https://app.recurly.com/go/developer/api_access).
+*Note:`recurly.configure` accepts additional options. For further details, refer to the [source](https://github.com/recurly/recurly-js/blob/master/lib/recurly.js#L48).*
 
-`recurly.configure` accepts other options not detailed here. You may refer to the [source](https://github.com/recurly/recurly-js/blob/master/lib/recurly.js#L48) for more detail.
+***
 
-### Build a Payment Form With Elements
+# Build a payment form with elements
 
-To collect card payment information from your customers, you may build an HTML form however you wish, collecting all user data that you require.  Use the `data-recurly` attribute to identify any non-card billing fields to Recurly.js. Card fields are built using Elements
+Design an HTML form to collect customer payment details. Use the `data-recurly` attribute to identify non-card billing fields. Recurly.js builds the card fields using Elements.
 
 ```html
 <form id="my-form">
-  <input type="text" data-recurly="first_name">
-  <input type="text" data-recurly="last_name">
+  <input type="text" data-recurly="first_name" placeholder="First Name">
+  <input type="text" data-recurly="last_name" placeholder="Last Name">
 
   <div id="recurly-elements">
     <!-- Recurly Elements will be attached here -->
@@ -59,15 +68,17 @@ To collect card payment information from your customers, you may build an HTML f
   <!-- Recurly.js will update this field automatically -->
   <input type="hidden" name="recurly-token" data-recurly="token">
 
-  <button>submit</button>
+  <button type="submit">Submit</button>
 </form>
 ```
 
-### The Card Element
+***
+
+# The card element
 
 <Image align="center" width="80% " src="https://files.readme.io/5a6031def261981056429456e6e339475283e49e59948602bf500c497b358182-image.png" />
 
-This is the simplest and most streamlined way to accept customer card data.  Recurly will inject a single field that will accept the card number, expiry, and cvv.  This field is responsive and includes helpful UX enhancements to make card entry as smooth as possible on a multitude of devices.
+The Card Element is the simplest way to accept customer card data. Recurly.js injects a single, responsive field for the card number, expiry, and CVV. This field includes helpful UX enhancements for smooth entry on any device.
 
 ```js
 const elements = recurly.Elements();
@@ -75,33 +86,29 @@ const cardElement = elements.CardElement();
 cardElement.attach('#recurly-elements');
 ```
 
-### Other Elements
+***
 
-Recurly.js has Elements for individual card fields as well. Use these fields when you would like to display card fields separately from each other.  This is helpful when the combined field does not fit your design needs.
+# Other elements
 
-See [Elements](#elements) for more details on creating and interacting with Elements
+Recurly.js also offers individual Elements for separate card fields if a combined field doesn't fit your design needs. See the [Elements documentation](#elements) for further details.
 
-The example forms above contain the minimum required input fields, and **the tables below document all possible input fields.**
+***
 
-### Billing fields
+# Billing fields
 
-| Field Name            | Example                           | Description                                                                                                                                                                                                                                                                                                     |    |
-| :-------------------- | :-------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :- |
-| first\_name           | `Ben`                             | Cardholder first name. **Required**                                                                                                                                                                                                                                                                             |    |
-| last\_name            | `du Monde`                        | Cardholder last name. **Required**                                                                                                                                                                                                                                                                              |    |
-| address1              | `1313 Main St.`                   | First line of a street address.                                                                                                                                                                                                                                                                                 |    |
-| address2              | `Unit 1`                          | Second line of a street address.                                                                                                                                                                                                                                                                                |    |
-| city                  | `Hope`                            | Town or locality.                                                                                                                                                                                                                                                                                               |    |
-| state                 | `WA`                              | Province or region.                                                                                                                                                                                                                                                                                             |    |
-| postal\_code          | `98552`                           | Postal code.                                                                                                                                                                                                                                                                                                    |    |
-| country               | `US`                              | [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code.                                                                                                                                                                                                                            |    |
-| phone                 | `555-867-5309`                    | Phone number.                                                                                                                                                                                                                                                                                                   |    |
-| vat\_number           | `SE0000`                          | Customer VAT number. Used for VAT exclusion                                                                                                                                                                                                                                                                     |    |
-| tax\_identifier       | `972.791.615-53`, `20-12345678-6` | A valid [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas) or [CUIT](https://es.wikipedia.org/wiki/Clave_%C3%9Anica_de_Identificaci%C3%B3n_Tributaria). Required if it is a consumer card in Brazil [**early access**](https://docs.recurly.com/docs/primeiropay-via-adyen) or in Argentina. |    |
-| tax\_identifier\_type | `cpf`, `cuit`                     | `cpf` and `cuit` are the only accepted values for this field. Required if it is a consumer card in Brazil [**early access**](https://docs.recurly.com/docs/primeiropay-via-adyen) or in Argentina.                                                                                                              |    |
+Below is a table of potential billing fields supported by Recurly.js. Some fields may be required depending on your [billing address requirements](https://docs.recurly.com/site-settings#address_requirements).
 
-Depending on how you've configured your [billing address requirements](https://docs.recurly.com/site-settings#address_requirements), some of the fields in the table above may be required.
-
-### Try it now
-
-This page includes recurly.js. Try it out now it your browser's developer console.
+| Field Name            | Example          | Description                                                              |
+| --------------------- | ---------------- | ------------------------------------------------------------------------ |
+| first\_name           | `Ben`            | Cardholder first name (**Required**)                                     |
+| last\_name            | `du Monde`       | Cardholder last name (**Required**)                                      |
+| address1              | `1313 Main St.`  | First line of a street address                                           |
+| address2              | `Unit 1`         | Second line of a street address                                          |
+| city                  | `Hope`           | Town or locality                                                         |
+| state                 | `WA`             | Province or region                                                       |
+| postal\_code          | `98552`          | Postal code                                                              |
+| country               | `US`             | ISO 3166-1 alpha-2 country code                                          |
+| phone                 | `555-867-5309`   | Phone number                                                             |
+| vat\_number           | `SE0000`         | Customer VAT number (used for VAT exclusion)                             |
+| tax\_identifier       | `972.791.615-53` | A valid CPF or CUIT (required for consumer cards in Brazil or Argentina) |
+| tax\_identifier\_type | `cpf` or `cuit`  | Accepted values: `cpf` or `cuit`                                         |
