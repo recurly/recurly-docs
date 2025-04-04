@@ -17,7 +17,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Supported gateways
 
-Recurly currently supports UPI AutoPay transactions through Ebanx gateway.
+Recurly currently supports UPI AutoPay transactions through [Ebanx](https://docs.recurly.com/docs/ebanx-gateway#/) gateway.
 
 # Definition
 
