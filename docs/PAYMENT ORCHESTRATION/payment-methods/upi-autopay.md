@@ -25,7 +25,7 @@ Integrating Recurly with Ebanx enables merchants to leverage UPI payment methods
 
 # Key details
 
-## What is UPI?
+## What is UPI
 
 **UPI (Unified Payments Interface)** is a real-time payment system in India that consolidates multiple bank accounts into a single mobile app. Users can pay using a **VPA (Virtual Payment Address)**—for example, `payer@bankname`—which masks their bank details for increased security.
 
@@ -33,13 +33,13 @@ Integrating Recurly with Ebanx enables merchants to leverage UPI payment methods
 
 **UPI AutoPay** facilitates compliant recurring payments from an Indian bank account. Consumers can schedule recurring payments for subscriptions, bills, and more through their UPI app. UPI is set up initially with an enrollment into a mandate. Consumers need to authorize this enrollment, and subscriptions cannot be activated without this step.
 
-## What is a VPA?
+### What is a VPA?
 
 A **Virtual Payment Address (VPA)**, such as `payer@bankname`, uniquely identifies a consumer’s bank account in a UPI app. It conceals direct bank information; therefore, Recurly does not see the underlying payment method.
 
 ## What can users do within the UPI App?
 
-Consumers will be required to \*\*confirm their signup enrollment \*\*via the UPI app whenever they are subscribing to a plan.
+Consumers will be required to **confirm their signup enrollment** via the UPI app whenever they are subscribing to a plan. As a result, all UPI transactions begin life as a scheduled transaction. If the consumer does not confirm the subscription enrollment, the scheduled transaction will fail and the subscription will be expired.
 
 Consumers can **pause** or **cancel** subscriptions directly from their UPI app and must **confirm** transactions of **15000 INR or higher** within one hour of receiving a push notification.
 
