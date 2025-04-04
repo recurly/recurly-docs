@@ -140,6 +140,19 @@ Since UPI - Recurring customer actions are outside of Recurly's view, our Ebanx 
 * [Paused Subscription](https://recurly.com/developers/reference/webhooks/#paused-subscription) Will be sent if the customer pauses their UPI mandate externally.
 * [Resumed Subscription](https://recurly.com/developers/reference/webhooks/#resumed-subscription) Will be sent if the customer unpauses their UPI mandate externally.
 
+Other good webhooks to listen for are:
+
+* charge\_invoice.created: Will be sent when a customer initially signs up for a subscription with no trial.
+* charge\_invoice.processing: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has not been confirmed.
+* charge\_invoice.paid: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been confirmed.
+* charge\_invoice.failed: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been rejected by the customer.
+* payment.transaction\_status\_updated: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been confirmed.
+* payment.scheduled:  Will be sent when a customer signs up for a subscription with no trial, and the enrollment has not been confirmed.
+* subscription.created:  Will be sent when a customer signs up for a subscription with or without a trial.
+* subscription.expired: Will be sent when a customer signs up for a subscription with or without a trial and does not confirm the enrollment.
+
+**Note:** Subscriptions with a plan inclusive of a trial are not initially invoices. You will only receive subscription and payment webhooks, and not invoice webhooks. Look for payment.scheduled and updates accordingly when using Trials.
+
 # FAQs
 
 ### Q: Do you support UPI QR Code or One-Time transactions?
