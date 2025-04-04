@@ -93,6 +93,7 @@ Recurly only supports INR, so no selection is necessary.
 
 1. Once testing is successful, you’re ready to accept live payments through Ebanx.
 2. Make sure your **Production Credentials** are entered in Recurly and your Ebanx account is in **Production mode**.
+3. Make sure you have Ebanx production webhooks enabled prior to launch. See configuration steps below.
 
 > **Pro Tip:** Keep your Ebanx credentials secure. Only authorized personnel should have access.\
 > **Note:** Always consult with your Ebanx representative or Ebanx support to ensure your account is in good standing and you’re meeting all relevant regulations.
@@ -129,17 +130,24 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 When in sandbox ONLY, the response will contain a response URL for simulating interactions with the UPI Application. This interaction would typically take place with the customer directly via push notifications on their phone. For testing purposes, use the URL to accept or reject the mandate enrollment request.
 
-## Features that WILL work with UPI AutoPay
+## Transaction, Invoice, and Subscription Status
+
+When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/), as with any asynchronous payment method in Recurly, subscriptions are immediately active, but transactions and invoices will be in a scheduled/processing state respectively. If customers do not authorize a subscription enrollment or payment via the UPI App, transactions will fail and subscriptions will be expired upon consumer rejection.
+
+See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) for more information.
+
+## Subscriptions and Transactions that work with UPI AutoPay
 
 * Trial Subscriptions *with payment data* -- trials without a prior UPI enrollment will not function.
 * Non-Trial Subscriptions
-* Renewals
+* Renewals / Purchase
 
 ## Features that will not work with UPI AutoPay
 
+* Transaction type of Authorize and Capture, and Void. UPI AutoPay transactions must be refunded.
 * Subscription upgrades: Mandates stored on the UPI app control the amount and frequency. Changing this on the recurly side could cause declines.
 * Trials without Enrollment (payment data on file)
-* Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so Net-0 terms can cause payment failures.
+* Non-Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so terms above Net-0 can cause payment failures.
 * One-time transactions: VPAs cannot be used for one-time transactions.
 * Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
 * Standard Retries: UPI can only be retried on the same day. UPI-specific retries are coming soon.
