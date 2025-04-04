@@ -123,6 +123,15 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 # Other Notes
 
+## Required Fields
+
+Ebanx and UPI AutoPay together require a minimum of fields to create a mandate for a recurring subscription. The minimum required fields to submit a UPI AutoPay transaction are as follows:
+
+* VPA
+* Email Address
+* Customer First and Last Name
+* Phone Number
+
 ## Mandate Preferences
 
 **UPI – AutoPay** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in the UPI app will be automatically handled.
