@@ -64,19 +64,50 @@ UPI AutoPay **doesn’t support direct updates** to a VPA. Customers must update
 
 If a customer’s VPA changes, **cancel the existing subscription** and have them re-enroll with the new VPA to create a new mandate.
 
+### Enrollments and Charges
+
+When creating a subscription, ensure you are listening to the following webhooks. UPI AutoPay is an asynchronous payment method as transactions initially begin in a scheduled state until the consumer authenticates in-app.
+
+Signup transactions will begin in a **scheduled** state before moving to failed or approved.
+
+Listen for the following webhooks:
+
+* payment.scheduled
+* subscription.created
+
+Once the consumer authenticates in-app (UPI App), listen for the following webhooks:
+
+* payment.transaction\_status\_updated
+* charge\_invoice.paid
+
+You can Fetch a transaction, invoice, or subscription status to update your records. When the invoice moves into a paid state, this indicates a successful consumer authentication from the UPI Application.
+
+### Unconfirmed or Rejected Enrollments
+
+If, when signing up, the consumer rejects the enrollment or fails to respond to the in-app push notification, the subscription will move into an expired state, and the invoice/transaction will fail. Listen for the following events.
+
+* subscription.expired
+* charge\_invoice.failed
+
+These indicate the enrollment or charge was rejected upon signup.
+
 ### Cancellations
 
-If a customer cancels via the UPI app, Recurly webhooks will notify you. Subscriptions are automatically canceled in Recurly.
+If a customer cancels via the UPI app, Recurly webhooks will notify you. Subscriptions are automatically canceled in Recurly. Listen for the following webhook:
+
+* subscription.canceled
 
 ### Paused subscriptions
 
-If a customer pauses via the UPI app, Recurly webhooks notify you. Subscriptions are automatically paused in Recurly.
+If a customer pauses via the UPI app, Recurly webhooks notify you. Subscriptions are automatically paused in Recurly. Listen for the following webhook:
+
+* subscription.paused
 
 ### Resumed Subscriptions
 
-A customer may resume a paused subscription directly in the UPI app. Recurly sends a webhook, and the subscription is automatically resumed.
+A customer may resume a paused subscription directly in the UPI app. Recurly sends a webhook, and the subscription is automatically resumed. If you prefer not to allow customers to resume after pausing, you can **cancel** the subscription in Recurly when you receive the pause webhook. Listen for the following webhook:
 
-If you prefer not to allow this flow, you can **cancel** the subscription in Recurly when you receive the pause webhook.
+* subscription.resumed
 
 ### Gateway tokens
 
@@ -97,7 +128,7 @@ UPI AutoPay payments retries will not be allowed through typical retry logic (Ba
 
 # Checkout flow
 
-During the checkout, allow your consumer to provide their VPA (Virtual Payment Address) and pass it to Recurly using documented gateway token parameters. This will create an enrollment request to the gateway, and if accepted by the customer within their UPI app, will set up a subscription and, if the plan is not set up for a trial, charge the first amount according to the plan settings.
+During the checkout, allow your consumer to provide their VPA (Virtual Payment Address) and pass it to Recurly using documented gateway token parameters. This will create an enrollment request to the gateway, and if accepted by the customer within their UPI app, will set up a subscription and, if the plan is not set up for a trial, charge the first amount according to the plan currency/amount settings. **Ensure you have INR currency and applicable pricing set up properly.**
 
 Renewals will occur according to plan settings, unless the customer interrupts the subscription from the UPI Application on their phone. We recommend enabling specific webhooks so that you can act on these cases to pause, resume, or cancel the subscription based on the customer’s request.
 
