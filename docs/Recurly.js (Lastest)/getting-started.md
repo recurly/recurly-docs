@@ -21,7 +21,7 @@ It provides some helpful default styles to Recurly Elements.
 
 ### Self-Hosting Recurly.js
 
-The Recurly-hosted version of recurly.js is designed and updated to maintain compatibility
+The Recurly-hosted version of recurly.js is designed and updated to maintain compatibility\
 with system update deployments that take place from time-to-time. Locally hosted versions of
 recurly.js run the risk of encountering issues with system interaction and incompatibility which
 may result in avoidable service interruptions on your client page. It is for this reason, we highly
@@ -37,11 +37,9 @@ This identifies your site to Recurly servers. You can find your public key in th
 recurly.configure('sc-ABCDEFGHI123456789');
 ```
 
-<div class="alert alert--info" markdown="1">
-  ### Use Your Site's Public Key
+### Use Your Site's Public Key
 
-  Be sure to replace `sc-ABCDEFGHI123456789` with [your own public key](https://app.recurly.com/go/developer/api_access).
-</div>
+Be sure to replace `sc-ABCDEFGHI123456789` with [your own public key](https://app.recurly.com/go/developer/api_access).
 
 `recurly.configure` accepts other options not detailed here. You may refer to the [source](https://github.com/recurly/recurly-js/blob/master/lib/recurly.js#L48) for more detail.
 
@@ -67,7 +65,7 @@ To collect card payment information from your customers, you may build an HTML f
 
 ### The Card Element
 
-<div data-recurly="card" />
+<Image align="center" width="80% " src="https://files.readme.io/5a6031def261981056429456e6e339475283e49e59948602bf500c497b358182-image.png" />
 
 This is the simplest and most streamlined way to accept customer card data.  Recurly will inject a single field that will accept the card number, expiry, and cvv.  This field is responsive and includes helpful UX enhancements to make card entry as smooth as possible on a multitude of devices.
 
@@ -81,9 +79,7 @@ cardElement.attach('#recurly-elements');
 
 Recurly.js has Elements for individual card fields as well. Use these fields when you would like to display card fields separately from each other.  This is helpful when the combined field does not fit your design needs.
 
-<div class="alert alert--warning" markdown="1">
-  See [Elements](#elements) for more details on creating and interacting with Elements
-</div>
+See [Elements](#elements) for more details on creating and interacting with Elements
 
 The example forms above contain the minimum required input fields, and **the tables below document all possible input fields.**
 
@@ -106,8 +102,6 @@ The example forms above contain the minimum required input fields, and **the tab
 
 Depending on how you've configured your [billing address requirements](https://docs.recurly.com/site-settings#address_requirements), some of the fields in the table above may be required.
 
-<div class="alert alert--info" markdown="1">
-  ### Try it now
+### Try it now
 
-  This page includes recurly.js. Try it out now it your browser's developer console.
-</div>
+This page includes recurly.js. Try it out now it your browser's developer console.
