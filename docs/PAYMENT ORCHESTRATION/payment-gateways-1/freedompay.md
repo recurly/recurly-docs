@@ -5,7 +5,7 @@ excerpt: >-
   transactions, advanced data analytics, and enhanced customer experiences for
   retail, e-commerce, and SaaS businesses.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
