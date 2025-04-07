@@ -18,6 +18,15 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Limitations
+
+Authorize.net's API response detail is limited as far as in-depth responses on retries, and other processor, issuer, and network responses. In general, Recurly does not retry renewal declines in cases where Auth.net recommends treating a decline as a 'hard' decline. These include instances of:
+
+* Expired Cards
+* Lost or Stolen cards
+
+We can update this behavior if the API returns details Network Retry Advice and/or upstream processor codes in the future.
+
 # Definition
 
 Authorize.net is a well-established payment gateway that facilitates the seamless and secure transfer of credit card transactions between a payment portal (such as a website or mobile phone) and the credit card processors. It employs various features and tools to help businesses prevent fraudulent transactions while accepting payments with ease.
