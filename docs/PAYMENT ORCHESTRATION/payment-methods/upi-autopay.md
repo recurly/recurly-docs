@@ -5,7 +5,7 @@ excerpt: >-
   UPI AutoPay, a secure and popular payment method in India, specifically built
   for subscriptions, for your business needs.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
