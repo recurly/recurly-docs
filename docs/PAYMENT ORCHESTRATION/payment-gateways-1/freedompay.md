@@ -39,7 +39,7 @@ Recurly supports Ecommerce and Recurring transactions with FreedomPay. If you ar
 
 | Features                        | Availability                                                                                                                                                |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Payment Processing                                                                                                                                          |
+| Services that work with Recurly | Payment Processing, Renewals                                                                                                                                |
 | Supported integrations          | Recurly.js, API, Checkout, HPP                                                                                                                              |
 | Supported operations            | Verify, Purchase, Void, and Refund                                                                                                                          |
 | Supported payment types         | Credit and Debit Cards, Gateway tokens                                                                                                                      |
