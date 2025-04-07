@@ -23,8 +23,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 To use a Point of Sale system with FreedomPay and provide POS-derived NTIDs via API, your Recurly account must have the following prerequisites:
 
-* **Feature flag**: Allow NTIDs to be sent via API.
-  * Reach out to support to have this enabled.
+* **Feature flag**: Allow NTIDs to be sent via API. Reach out to support to have this enabled.
 
 ### Limitations
 
