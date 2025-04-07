@@ -37,7 +37,7 @@ Recurly recognizes the importance of safeguarding businesses from potential thre
 * **Cost efficiency**: Curtail operational expenses tied to fraud detection and management, promoting a healthier bottom line.
 * **Retention boost**: Foster a secure transaction milieu, aiding in reducing customer churn and enhancing loyalty.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/82814e8-d063eb2-image_7.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/82814e8-d063eb2-image_7.png" />
 
 Once Kount’s Fraud Service is activated, Recurly initiates risk assessments for new card verifications, including sign-ups and billing info updates. Accounts with existing credit or debit cards will only be assessed if their billing information is updated.
 
@@ -52,7 +52,7 @@ For businesses seeking a robust and customizable fraud management solution, Koun
 
 ## How does it work?
 
-Upon activation, for every new card transaction, Recurly communicates with Kount’s Fraud Service, sharing essential transaction details like IP address, email address, shipping address, card details, billing info, and more.
+Upon activation, for every new card transaction, Recurly communicates with Kount’s Fraud Service, sharing essential transaction details like IP address, email address, shipping address, card details or apple pay tokens, billing info, and more.
 
 Kount processes this data using its proprietary AI, applies your custom rules, and returns a risk decision. Recurly respects this decision: if Kount advises declining the transaction, Recurly halts the process, avoiding the payment gateway. If approved, Recurly continues with the transaction, forwarding details to the payment gateway.
 
