@@ -20,12 +20,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-Authorize.net's API response detail is limited as far as in-depth responses on retries, and other processor, issuer, and network responses. In general, Recurly does not retry renewal declines in cases where Auth.net recommends treating a decline as a 'hard' decline. These include instances of:
+Authorize.net's API response detail is limited as far as in-depth responses on declines. Recurly uses decline reasons and merchant-advice-code logic to inform retries, and other processor, issuer, and network responses to help us decide when and how to retry. Due to the generic nature of this gateway's response information, we have employed best practices as instructed by the gateway.
+
+In general, Recurly does not retry renewal declines in cases where Auth.net recommends treating a decline as a 'hard' decline. These include instances of:
 
 * Expired Cards
 * Lost or Stolen cards
 
-We can update this behavior if the API returns details Network Retry Advice and/or upstream processor codes in the future.
+We can update this behavior if the API returns details Network Retry Advice and/or upstream processor codes in the future. If you have further questions about the decline reason
 
 # Definition
 
