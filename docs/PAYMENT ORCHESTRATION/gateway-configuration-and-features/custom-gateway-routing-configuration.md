@@ -15,7 +15,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview 
+# Overview
 
 ### Required plan
 
@@ -27,7 +27,7 @@ Prerequisites
 Merchants should have multiple gateways configured for a particular payment type (e.g., credit cards) within Recurly.\
 Limitations
 
-* To follow Card on File Mandates: Depending on the gateways, the information will be packaged in different formats. In most cases, the raw network transaction ID is accepted and recurring transactions will process as usual. In rare cases, the information is not compatible and failover will not occur. 
+* To follow Card on File Mandates: Depending on the gateways, the information will be packaged in different formats. In most cases, the raw network transaction ID is accepted and recurring transactions will process as usual. In rare cases, the information is not compatible and failover will not occur.
 
 * When passing the gateway\_code for multiple subscriptions within a single request, routing to different gateways will not be honored.
 
@@ -44,7 +44,7 @@ Limitations
 #### Supported payment methods
 
 * [Credit Cards](https://docs.recurly.com/docs/credit-cards)
-* [PayPal](https://docs.recurly.com/docs/paypal-payments) (excluding PayPal Complete or PayPal through Braintree Gateway)
+* [PayPal](https://docs.recurly.com/docs/paypal-payments) (excluding PayPal through Braintree Gateway)
 * Amazon Pay
 
 # Definition
@@ -102,7 +102,7 @@ If no gateway\_code is passed, Recurly will route transactions based on whether 
 
 ### Step 5: Reviewing the setup
 
-* Once you've configured the Custom Gateway Routing feature, you can visit the gateway configuration page in Recurly to view a list of all the gateways along with their unique `gateway_code`. 
+* Once you've configured the Custom Gateway Routing feature, you can visit the gateway configuration page in Recurly to view a list of all the gateways along with their unique `gateway_code`.
 
 ### Step 6: Testing
 
