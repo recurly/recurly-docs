@@ -25,6 +25,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * Active Recurly account with SEPA Direct Debit set up.
 * Integration with Adyen or GoCardless gateways.
+* This feature is not yet supported on Stripe.
 
 ### Limitations
 
@@ -87,9 +88,9 @@ With SEPA retries activated, invoices will present additional information to hel
 
 * **Remaining attempts:** Displays the count of remaining retries out of the total allowed. This number decreases with each attempt, from 2 down to 0, indicating the number of retries left before the system stops trying.
 
-Before a payment fails due to insufficient funds, these specific details (next scheduled attempt and attempt collection option) won't be visible. However, the remaining attempts will still be shown. 
+Before a payment fails due to insufficient funds, these specific details (next scheduled attempt and attempt collection option) won't be visible. However, the remaining attempts will still be shown.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/f4bccb6-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f4bccb6-image.png" />
 
 After a failure, the next attempt's timing will be visible, scheduled 24 hours post-failure, to potentially allow customers to address their insufficient funds issue. The "Attempt Collection" option also becomes available post-failure, allowing for manual initiation of a retry.
 
@@ -97,17 +98,17 @@ After a failure, the next attempt's timing will be visible, scheduled 24 hours p
 
 Using the 'Attempt Collection' function manually will cancel any queued collection if there's already a scheduled attempt. If it's the last attempt (out of the two retries allowed), no further automated retries will be scheduled, marking the end of the retry process for that invoice.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/ef6ee5a-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ef6ee5a-image.png" />
 
 ### Retry completion
 
 After exhausting the retry attempts (the initial attempt plus two retries), the invoice will indicate "Retry schedule completed," signaling that no further attempts will be made against that IBAN for the payment.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/f98f733-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f98f733-image.png" />
 
 ## Behavior when SEPA Retries are disabled
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/83ffed4-Collection_Disabled.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/83ffed4-Collection_Disabled.png" />
 
 If the SEPA retries feature is turned off:
 
