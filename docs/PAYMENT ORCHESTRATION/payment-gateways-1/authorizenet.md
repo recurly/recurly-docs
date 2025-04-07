@@ -27,7 +27,9 @@ In general, Recurly does not retry renewal declines in cases where Auth.net reco
 * Expired Cards
 * Lost or Stolen cards
 
-We can update this behavior if the API returns details Network Retry Advice and/or upstream processor codes in the future. If you have further questions about the decline reason
+We can update this behavior if the API returns details Network Retry Advice and/or upstream processor codes in the future. If you have further questions about the decline reasons seen in Recurly, our recommendation is to escalate to Authorize.net or your Merchant Account Provider for more information.
+
+You can read more about Auth.net's gateway responses in their [knowledgebase article](https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111).
 
 # Definition
 
