@@ -28,7 +28,6 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Limitations
 
 * Dunning settings are versioned; changes to a campaign won't affect invoices already in dunning.
-* Multiple dunning campaigns are available only to merchants on Pro and Elite plans.
 * Maximum of 50 dunning campaigns for eligible merchants.
 
 # Definition
