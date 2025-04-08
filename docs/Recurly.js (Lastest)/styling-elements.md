@@ -20,8 +20,6 @@ Since Recurly.js Elements are rendered within iframes, any style properties must
 
 ***
 
-# Styling Elements
-
 When you instantiate an Element, you can pass a style configuration as part of its options. For example:
 
 ```javascript
@@ -44,7 +42,7 @@ const cardElement = elements.CardElement({
 });
 ```
 
-## Styling the Card Element
+## Styling the card element
 
 Below are the options available when styling the card element:
 
@@ -67,7 +65,7 @@ Below are the options available when styling the card element:
 | **style.invalid.fontColor**          | `'#a3a3a7'`         | Font color applied when input is invalid.                                                                                                                                                                                                                                     |
 | **tabIndex**                         | *(none)*            | Applies the `tabindex` attribute to the outer iframe.                                                                                                                                                                                                                         |
 
-## Styling the Individual Card Elements
+## Styling the individual card elements
 
 These options apply specifically to individual card fields:
 
@@ -81,7 +79,7 @@ These options apply specifically to individual card fields:
 | **style.placeholder.content** | `''`     | Default placeholder content, for example, `'Card number'` or `'CVV'`.                                                                                                                                                        |
 | **tabIndex**                  | *(none)* | Applies the `tabIndex` attribute to the outer iframe.                                                                                                                                                                        |
 
-## Common Field Style Properties
+## Common field style properties
 
 These are the default style properties available for all Recurly.js Elements:
 
@@ -89,7 +87,7 @@ These are the default style properties available for all Recurly.js Elements:
 | ------------------- | --------- | --------- |
 | **style.fontColor** | `'black'` |           |
 
-## CSS Classes
+## CSS classes
 
 Recurly.js Elements come with default CSS classes to help you achieve a look that matches your billing form. Use these classes to fine-tune the appearance:
 
@@ -102,10 +100,10 @@ Recurly.js Elements come with default CSS classes to help you achieve a look tha
 * **recurly-element-year**: Styles for the expiry year input container.
 * **recurly-element-cvv**: Styles for the CVV input container.
 
-## Custom Fonts
+## Custom fonts
 
 Custom fonts are sourced from [Google Web Fonts](https://www.google.com/fonts) . Simply specify the font name as it appears on the Google Web Fonts site.
 
-## Responsive Styles
+## Responsive styles
 
 All built-in Element CSS classes support media queries for responsiveness. You can call `Element.configure` on an individual Element to adjust style properties dynamically, ensuring the Elements blend seamlessly into your payment form at any screen size.
