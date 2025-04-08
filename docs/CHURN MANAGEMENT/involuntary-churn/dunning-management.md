@@ -53,7 +53,7 @@ Dunning activates when an automatic invoice (such as credit card, ACH, direct de
 
 Recurly's Dunning Management lets you devise multiple collection strategies tailored for different customer groups. If invoices become past due, Recurly employs the relevant dunning campaign to recover the payment. While every account has a default dunning campaign, those with permissions can create targeted campaigns for specific plans or accounts.
 
-Recurly's Dunning Management feature offers the capability to conduct multiple dunning campaigns for our Pro and Elite merchants. These multiple dunning campaigns can be assigned to specific plans and/or accounts, enabling a more tailored approach for communications with different audiences. This customization aims to enhance failed payment recovery and boost subscriber retention. Additionally, merchants can evaluate the effectiveness of various campaigns through testing and utilize the <a href="https://docs.recurly.com/docs/dunning-effectiveness" target="_blank">Dunning Campaign analytics</a> to determine the optimal dunning configuration for their customer base. For further information, refer to the section on multiple dunning campaigns below.
+These multiple dunning campaigns can be assigned to specific plans and/or accounts, enabling a more tailored approach for communications with different audiences (this feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options). This customization aims to enhance failed payment recovery and boost subscriber retention. Additionally, merchants can evaluate the effectiveness of various campaigns through testing and utilize the <a href="https://docs.recurly.com/docs/dunning-effectiveness" target="_blank">Dunning Campaign analytics</a> to determine the optimal dunning configuration for their customer base. For further information, refer to the section on multiple dunning campaigns below.
 
 ### Accessing dunning management
 
@@ -186,7 +186,7 @@ Note that halting collection on an invoice *will not* automatically cancel the r
 
 For merchants on Recurly's Starter plan, all invoices that become overdue will follow the default Automatic Invoice Dunning Cycle, the default Manual Invoice Dunning Cycle, or the default Post-Trial Dunning Cycle, based on the invoice's collection method and the subscription type.
 
-For our Pro and Elite users, you can create and customize dunning campaigns for up to 50 different scenarios. Your existing Dunning Configuration will be retained as your Default campaign.
+You can create and customize dunning campaigns for up to 50 different scenarios. Your existing Dunning Configuration will be retained as your Default campaign. This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 ### Creating a new dunning campaign
 
@@ -198,7 +198,7 @@ For our Pro and Elite users, you can create and customize dunning campaigns for 
 
 ### Assigning a dunning campaign to a plan or account
 
-For Pro and Elite plan users, you can specify the dunning campaign of your choice for each plan and/or account. After crafting your dunning campaign(s) in the Configuration section of the Recurly Admin console, access any new or existing **Plan** or **Account** and select your preferred dunning campaign for that entity from the dropdown. You can also choose your desired dunning campaign for any plan or account via our [API](https://developers.recurly.com/api/). To allocate a dunning campaign to a large number of plans simultaneously, you can utilize our bulk update API endpoint.
+You can specify the dunning campaign of your choice for each plan and/or account (this feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options). After crafting your dunning campaign(s) in the Configuration section of the Recurly Admin console, access any new or existing **Plan** or **Account** and select your preferred dunning campaign for that entity from the dropdown. You can also choose your desired dunning campaign for any plan or account via our [API](https://developers.recurly.com/api/). To allocate a dunning campaign to a large number of plans simultaneously, you can utilize our bulk update API endpoint.
 
 1. Navigate to the desired **Plan** or **Account** page.
 2. Locate the **Dunning Campaign** dropdown.
