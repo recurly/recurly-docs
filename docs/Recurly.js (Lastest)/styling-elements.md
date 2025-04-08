@@ -83,9 +83,25 @@ These options apply specifically to individual card fields:
 
 These are the default style properties available for all Recurly.js Elements:
 
-| Property            | Default   | Reference |
-| ------------------- | --------- | --------- |
-| **style.fontColor** | `'black'` |           |
+| Property                  | Default       | Reference                                                                                       |
+|---------------------------|---------------|-------------------------------------------------------------------------------------------------|
+| **style.fontColor**       | `'black'`     | [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color)                                 |
+| **style.fontFamily**      | `'Helvetica'` | [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)                     |
+| **style.fontFeatureSettings** | `'normal'` | [font-feature-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings) |
+| **style.fontKerning**     | `'auto'`      | [font-kerning](https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning)                   |
+| **style.fontSize**        | `'normal'`    | [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)                         |
+| **style.fontSmoothing**   | `'normal'`    | [font-smoothing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smoothing)               |
+| **style.fontStretch**     | `'normal'`    | [font-stretch](https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch)                   |
+| **style.fontStyle**       | `'normal'`    | [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)                       |
+| **style.fontVariant**     | `'normal'`    | [font-variant](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)                   |
+| **style.fontWeight**      | `'normal'`    | [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)                     |
+| **style.letterSpacing**   | `'normal'`    | [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)               |
+| **style.lineHeight**      | `'normal'`    | [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)                     |
+| **style.textAlign**       | _(none)_      | [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)                       |
+| **style.textDecoration**  | _(none)_      | [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)             |
+| **style.textRendering**   | `'auto'`      | [text-rendering](https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering)               |
+| **style.textShadow**      | `'none'`      | [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)                     |
+| **style.textTransform**   | `'none'`      | [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)               |
 
 ## CSS classes
 
