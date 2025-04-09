@@ -1,5 +1,5 @@
 ---
-title: Amazon Pay
+title: Amazon Pay V1
 excerpt: >-
   Elevate your Recurly site with Amazon Pay – an easy and trusted way for Amazon
   customers to subscribe to your plans, using information already stored in
