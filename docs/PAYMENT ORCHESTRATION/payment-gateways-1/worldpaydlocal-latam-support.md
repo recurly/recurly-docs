@@ -42,6 +42,10 @@ This payment gateway or setting is available to all customers on any Recurly sub
 >
 > If you have a Vantiv/Litle Merchant ID, use [these direction](https://docs.recurly.com/docs/vantiv)s instead.
 
+> 📘 Online refunds
+>
+> WorldPay will be enabling Online Refunds for merchants in May to comply with Online refund compliance. Since refunds can now be 'authorized', banks can now decline refund attempts. You may see declined refunds, which will need to be resubmitted, or resolved outside of Recurly directly with your consumer if their bank will not accept the refund attempt.
+
 # Definition
 
 Expand your business globally and in the dynamic Latin American e-commerce sector with Recurly's integration with WorldPay and Ebanx/dLocal. This solution offers a seamless way to navigate complex payment ecosystems, supporting local currencies, card brands, and distinct regional payment preferences. WorldPay facilitates international transactions with configurable merchant accounts, while WorldPay LATAM, via partnerships with Ebanx/dLocal, caters specifically to Latin American markets, optimizing payment processes by accommodating local currencies like the Argentine Peso (ARS) and the widely recognized card brand, Tarjeta Naranja.
