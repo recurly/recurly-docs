@@ -36,6 +36,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Use cases
 
 * Subscriptions and one-time transactions for customers preferring Amazon Pay.
+* Support for 3DS in the UK and EU Regions.
 * Businesses targeting Amazon's vast user base for increased convenience.
 
 # Description
@@ -91,7 +92,7 @@ Firstly, sign up for an Amazon Pay account tailored for the EU or UK. If you alr
 Within your Amazon Seller Central account:
 
 1. Click on the Gear icon in the upper right corner navigation.
-2. Choose **Integration Settings**. 
+2. Choose **Integration Settings**.
 3. Under **Instant Notification Settings**, choose **Edit** and add your site's callback URL. Use the URL format below and replace `<merchantsubdomain>` with your own site.
    1. Callback URL format:  `https://callbacks.recurly.com/amazon_v2/<merchantsubdomain>`
 4. Click **Update** to finalize your settings.
@@ -127,7 +128,7 @@ Incorporating Recurly.js is essential for integrating Amazon Pay V2 with your Re
 
 Recurly sends additional data to Amazon on subscriptions and transactions, based on data available for a given merchant site, subscription plan, or invoice description.
 
-Recurly will send the following information: 
+Recurly will send the following information:
 
 * Merchant DBA as Seller Store Name
 * Transaction Description as Buyer Notes
@@ -165,14 +166,14 @@ Customers can modify their charge permission ID through Amazon or Recurly:
 
 In the Recurly Admin interface, under the Billing Info section of an Account Details page, you can view details of Amazon Pay usage. This includes the Amazon Charge Permission ID and corresponding Refund and Charge IDs, facilitating customer service and reporting alignment between Recurly and Amazon.
 
-Recurly stores several details relating to Amazon transactions in Gateway Parameters in UIs and APIs including: 
+Recurly stores several details relating to Amazon transactions in Gateway Parameters in UIs and APIs including:
 
 * Charge Permission ID
 * Capture Amount
 * Transaction Status (at Amazon)
 * Creation, Updated, and Expiration Timestamps
 * Charge ID (formerly Auth and Capture ID in V1)
-* Currency Code 
+* Currency Code
 * Capture Now indicator
 
 ## Testing your implementation
