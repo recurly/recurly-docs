@@ -59,41 +59,21 @@ Check Commerce specializes in ACH payment processing to offer alternative paymen
 
 [Cybersource ](https://docs.recurly.com/docs/cybersource)is a complete payment management solutions provider ensuring safe and seamless transactions.
 
-### First Data
+### Ebanx
 
-[First Data](https://docs.recurly.com/docs/additional#first-data-global-gateway-e4-gge4) offers a wide range of payment solutions aiming to drive business growth.
+[Ebanx](https://docs.recurly.com/docs/ebanx-gateway#/) is a solutions provider specializing in expansion into international payment methods and regions. Expansion into India with UPI AutoPay for subscriptions is currently supported.
 
 ### GoCardless
 
 [GoCardless](https://docs.recurly.com/docs/gocardless) streamlines recurring payments with its global bank debit network.
 
-### Merchant eSolutions
+### FreedomPay
 
-[Merchant eSolutions](https://docs.recurly.com/docs/additional#merchant-esolutions) provides a range of innovative payment processing solutions.
-
-### Opayo (formerly Sage Pay)
-
-Opayo, formerly known as Sage Pay, is renowned for its secure and reliable payment solutions catering to various business needs.
-
-### Payeezy
-
-Payeezy is focused on simplifying the payment process to provide better service to customers.
-
-### PayPal Business
-
-Leverage the global reach of PayPal to accept payments from around the world.
+[FreedomPay](https://docs.recurly.com/docs/freedompay#/) is a gateway specializing in Omnichannel transaction processing. Your subscriptions can start out from a card-present terminal and renew right within Recurly.
 
 ### PayPal Complete
 
 [PayPal Complete](https://docs.recurly.com/docs/paypal-complete) integrates PayPal and credit card payments to offer a complete payment solution.
-
-### PayPal Payflow Pro (credit card)
-
-PayPal Payflow Pro securely processes credit card payments with extensive customization options.
-
-### PayPal Payments Pro (credit card)
-
-PayPal Payments Pro provides a seamless checkout experience with customizable payment solutions.
 
 ### Stripe
 
