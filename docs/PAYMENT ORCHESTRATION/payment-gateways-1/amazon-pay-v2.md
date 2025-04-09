@@ -5,7 +5,7 @@ excerpt: >-
   using their Amazon account information. It enhances the subscription
   experience by leveraging familiar Amazon payment methods.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
