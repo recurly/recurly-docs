@@ -69,7 +69,7 @@ Check Commerce specializes in ACH payment processing to offer alternative paymen
 
 ### FreedomPay
 
-[FreedomPay](https://docs.recurly.com/docs/freedompay#/) is a gateway specializing in Omnichannel transaction processing. Your subscriptions can start out from a card-present terminal and renew right within Recurly.
+[FreedomPay](https://docs.recurly.com/docs/freedompay#/) is a gateway specializing in Omnichannel transaction processing. Your customers can sign up for subscriptions on a card-present terminal and their renewal will process within Recurly.
 
 ### PayPal Complete
 
