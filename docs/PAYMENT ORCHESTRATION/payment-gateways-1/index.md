@@ -37,7 +37,7 @@ Renowned for its payment processing services, [Authorize.net](https://docs.recur
 
 ### Amazon Pay
 
-[Amazon Pay](https://docs.recurly.com/docs/amazon-payments) provides a trusted and familiar payment solution leveraging Amazon’s secure checkout process.
+[Amazon Pay](https://docs.recurly.com/docs/amazon-payments) provides a trusted and familiar payment solution leveraging Amazon’s secure checkout process. Now supporting [Amazon Pay V2](https://docs.recurly.com/docs/amazon-pay-v2#/)! Upgrade today!
 
 ### Braintree
 
