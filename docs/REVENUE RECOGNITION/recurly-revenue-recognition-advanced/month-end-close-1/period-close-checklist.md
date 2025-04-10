@@ -1,5 +1,5 @@
 ---
-title: Period close checklist
+title: Automatic month end close
 excerpt: >-
   A succinct checklist to guide and streamline your period close process in
   Recurly RevRec, from system-defined tasks to custom, site-specific
