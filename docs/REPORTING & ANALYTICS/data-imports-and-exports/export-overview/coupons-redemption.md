@@ -22,7 +22,7 @@ To access this export feature, ensure that the "Multiple Coupons Per Account" op
 
 # Definition
 
-The "Coupon Redemptions" export in Recurly provides a detailed list of all coupon redemptions in your account. This export is essential for use cases such as determining your most popular coupon this week or analyzing redemptions broken down by coupon code over a specific period. By leveraging these insights, you can evaluate the effectiveness of your discount strategies and gain a deeper understanding of customer engagement.
+The "Coupons Redemptions" export in Recurly provides a detailed list of all coupon redemptions in your account. This export is essential for use cases such as determining your most popular coupon this week or analyzing redemptions broken down by coupon code over a specific period. By leveraging these insights, you can evaluate the effectiveness of your discount strategies and gain a deeper understanding of customer engagement.
 
 # Filters
 
