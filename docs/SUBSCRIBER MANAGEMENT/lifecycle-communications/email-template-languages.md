@@ -21,9 +21,9 @@ Depending on the Recurly subscription plan, you can enable a varied number of la
 
 # Definition
 
-Email Language Support (30) in Recurly pertains to the feature where merchants are granted the capability to send emails to their customers in their preferred language. It emphasizes cultural respect and ensures a personalized customer experience by sending relevant communications in the language they understand best.
+Email Language Support in Recurly empowers merchants to send customer communications in their preferred language, ensuring a personalized and culturally respectful experience. By delivering emails in the language your customers understand best, you create more engaging and relevant interactions.
 
-While your site is in sandbox mode you can enable as many languages as you need for testing purposes. Depending on your Recurly subscription you may need to disable some languages before entering production mode.
+In sandbox mode, you can enable and test as many languages as needed. However, in production, the number of languages available depends on your Recurly subscription plan. This feature **may not be included** in the Starter or Pro plans. If you wish to use full Email Language Support, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 # Key benefits
 
