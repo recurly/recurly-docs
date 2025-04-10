@@ -17,11 +17,13 @@ next:
 
 ### Required plan
 
-Depending on the Recurly plan available, businesses can enable a varied number of languages – from one in the Starter plan to unlimited in the Elite plans.
+Depending on the Recurly subscription plan, you can enable a varied number of languages in sandbox and production. This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 # Definition
 
 Email Language Support (30) in Recurly pertains to the feature where merchants are granted the capability to send emails to their customers in their preferred language. It emphasizes cultural respect and ensures a personalized customer experience by sending relevant communications in the language they understand best.
+
+While your site is in sandbox mode you can enable as many languages as you need for testing purposes. Depending on your Recurly subscription you may need to disable some languages before entering production mode.
 
 # Key benefits
 
@@ -78,7 +80,7 @@ For instance:
 
 ### Setting a default language & disabling one
 
-While Recurly sets English (United States) as the default language, businesses with multi-language plans can alter the default to any enabled language. Should there be a need, it's also feasible to disable an already set up email language. 
+While Recurly sets English (United States) as the default language, businesses with multi-language plans can alter the default to any enabled language. Should there be a need, it's also feasible to disable an already set up email language.
 
 ### Customer language preference
 
@@ -105,7 +107,7 @@ Recurly's attention to detail shines with its feature where attached PDF invoice
    * Within the same "Configure Languages" page, you have the option to set a default language for your site.
    * Remember, the default language is crucial as it's used for customers who haven't specified any language preference.
 4. **Disabling an Existing Language:**
-   * On the "Configure Languages" page, find the option to disable a previously set language. 
+   * On the "Configure Languages" page, find the option to disable a previously set language.
    * Note: Customers set to a now-disabled language will revert to receiving emails in the site's default language.
 5. **Customizing Email Templates for Different Languages:**
    * Visit the "Email Templates" page.
