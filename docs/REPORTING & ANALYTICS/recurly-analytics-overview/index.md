@@ -30,10 +30,6 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * **Subscriber insights:** Understand your subscriber behavior, churn rates, and retention trends based on cohorts to identify what products and pricing are performing well.
 * **Financial analysis:** Dive into MRR, billings, recovered revenue and more to monitor your financial health.
 
-# Key details
-
-(The rest of the information)
-
 # Definition
 
 Recurly Analytics' Dashboards & Reports section serves as your command center for comprehensive subscription analytics. It provides a suite of reporting tools and analytical insights, delivering a broad view of your business performance and the dynamics of your subscription metrics.
