@@ -40,7 +40,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 > 🚧 Warning
 >
-> If you have a Vantiv/Litle Merchant ID, use [these direction](https://docs.recurly.com/docs/vantiv)s instead.
+> If you have a Vantiv/Litle Merchant ID, use [these directions](https://docs.recurly.com/docs/vantiv) instead.
 
 > 📘 Online refunds
 >
