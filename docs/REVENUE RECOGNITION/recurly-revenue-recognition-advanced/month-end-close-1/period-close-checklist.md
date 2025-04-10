@@ -13,7 +13,7 @@ metadata:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+This feature is part of our product, Recurly Revenue Recognition Advanced. \[<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
 
 # Definition
 
