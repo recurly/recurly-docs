@@ -16,8 +16,6 @@ next:
 ---
 # Overview
 
-### Video
-
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly subscription plan.
