@@ -15,6 +15,10 @@ metadata:
 
 This feature is part of our product, Recurly Revenue Recognition Advanced. \[<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
 
+# Definition
+
+**Month End Close** is a formal process that finalizes all billing and financial data for a given period. It involves verifying, reconciling, and summarizing all invoices, credits, journal entries, and related reports to ensure that every transaction is accurately accounted for before transitioning to the next billing cycle.
+
 # Key details
 
 * **Automatic Month End Close**: An automated process that executes a predefined checklist of tasks (both system-defined and custom) to ensure that all billing data is properly processed, synchronized, and transferred from Recurly to Revenue Recognition. This method minimizes manual intervention and reduces the risk of errors by automating critical reconciliation and data transfer steps. [Learn more](https://docs.recurly.com/docs/period-close-checklist#/).
