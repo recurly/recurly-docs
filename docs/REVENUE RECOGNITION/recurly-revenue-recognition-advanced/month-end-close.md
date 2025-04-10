@@ -1,5 +1,5 @@
 ---
-title: Month end close
+title: Manual month end close
 excerpt: >-
   Use Recurly’s Revenue Recognition Advanced to finalize each billing period
   with accuracy. By following a structured close process, you can ensure all
