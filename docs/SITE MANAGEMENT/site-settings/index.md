@@ -16,6 +16,10 @@ next:
 
 The Site Settings section in Recurly provides a centralized location for users to manage and modify various configurations related to their account, company profile, and site customizations. It offers tools to fine-tune technical settings, manage email communications, and personalize the platform's appearance.
 
+### Limitations
+
+* The Recurly App UI supports English natively. Localization and multi-language capabilities are available only for email templates. For more details, see our [Email Language Support documentation](https://docs.recurly.com/docs/email-template-languages#/).
+
 # Key benefits
 
 * **Centralized configuration management:** Exercise centralized control over various site configurations, streamlining the administration process.
