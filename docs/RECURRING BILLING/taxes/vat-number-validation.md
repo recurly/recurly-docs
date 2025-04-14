@@ -16,7 +16,7 @@ next:
 ---
 # Enable or disable Tax ID validation on your Recurly site
 
-VAT/Tax ID validation can be enabled or disabled for any merchant on any site by contacting Recurly Support. Recurly supports tax ID number validation via government lookups for some countries, and format validation checks for others. This page outlines the type of validation provided for each country where VAT/Tax ID number validation is supported on Recurly. 
+VAT/Tax ID validation can be enabled or disabled for any merchant on any site by contacting Recurly Support. Recurly supports tax ID number validation via government lookups for some countries, and format validation checks for others. This page outlines the type of validation provided for each country where VAT/Tax ID number validation is supported on Recurly.
 
 The tax ID validation for this location is automatically turned on for all sites. If you would like to disable it, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
@@ -39,7 +39,7 @@ VAT numbers are business tax registration numbers in countries that collect VAT 
 
 ### Validation through VIES
 
-Recurly is integrated with the European Commission's VAT Information Exchange System (VIES) for validating EU VAT numbers. This is the only means of validating a VAT number for an EU member state. All other services and tools that do VAT number validation are using the VIES system. It is not possible to access the individual country VAT number databases directly. You can access the VIES website here: <a href="http://ec.europa.eu/taxation_customs/vies/">http\://ec.europa.eu/taxation\_customs/vies/</a>.
+Recurly is integrated with the European Commission's VAT Information Exchange System (VIES) for validating EU VAT numbers. This is the only means of validating a VAT number for an EU member state. All other services and tools that do VAT number validation are using the VIES system. It is not possible to access the individual country VAT number databases directly. You can access the VIES website here: <a href="http://ec.europa.eu/taxation_customs/vies/">[http://ec.europa.eu/taxation\_customs/vies/](http://ec.europa.eu/taxation_customs/vies/)</a>.
 
 VIES VAT number validation is a separate feature from Recurly's EU VAT collection and is on by default for sites in production mode. The VAT number validation response (valid/invalid) is stored in Recurly, along with the date/time of the validation response, but Recurly does not currently capture or store the VIES consultation number (also called request identifier) for these responses that would tie them back to the VIES system.
 
@@ -55,7 +55,7 @@ If you have a customer claiming their VAT number is correct and VIES is showing 
 
 VIES is a validation endpoint that aggregates the 28 different EU country databases. Some of the 28 countries have regular downtime for maintenance. Unfortunately, VAT numbers for those countries cannot be validated at those times. You can see their maintenance windows here: [http://ec.europa.eu/taxation\_customs/vies/help.html](http://ec.europa.eu/taxation_customs/vies/help.html)
 
-If we are unable to determine the validity of a VAT number, we will not save it on the customer's account and will block any sign-up attempts. We will re-validate a VAT number at subscription renewal if the VAT number has not been validated for six months. If the re-validation comes back without a valid or invalid response, meaning VIES or the individual country is down, we will fallback to the last validation status of the VAT number and will let the subscription renewal go through without VAT applied if the last status was valid, or VAT applied if the last status was invalid. 
+If we are unable to determine the validity of a VAT number, we will not save it on the customer's account and will block any sign-up attempts. We will re-validate a VAT number at subscription renewal if the VAT number has not been validated for six months. If the re-validation comes back without a valid or invalid response, meaning VIES or the individual country is down, we will fallback to the last validation status of the VAT number and will let the subscription renewal go through without VAT applied if the last status was valid, or VAT applied if the last status was invalid.
 
 You can view the status of each state's VIES validator at [http://ec.europa.eu/taxation\_customs/vies/technicalInformation.html](http://ec.europa.eu/taxation_customs/vies/technicalInformation.html). Recurly uses the VIES SOAP API, which is represented in the right column, titled "Ws Access Status".
 
@@ -74,8 +74,8 @@ If you are planning on transitioning from sandbox mode to production mode, then 
 ##### Request
 
 <pre class="headers">
-Accept: application/xml
-Content-Type: application/xml; charset=utf-8
+  Accept: application/xml
+  Content-Type: application/xml; charset=utf-8
 </pre>
 
 ```
@@ -102,25 +102,25 @@ Content-Type: application/xml; charset=utf-8
 
 ## UK VAT validation
 
-Similar to the European Union, there is a VAT ID validation government lookup system available for businesses registered in the United Kingdom. Support for customer VAT ID/tax ID numbers out of the UK being validated for UK-based customers is automatically enabled for all merchants on all sites. This integration provided is via the HRMC. Recurly integrates with [this site](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-registered-companies-api/1.0) via API for UK VAT ID lookups. 
+Similar to the European Union, there is a VAT ID validation government lookup system available for businesses registered in the United Kingdom. Support for customer VAT ID/tax ID numbers out of the UK being validated for UK-based customers is automatically enabled for all merchants on all sites. This integration provided is via the HMRC. Recurly integrates with [this site](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-registered-companies-api/1.0) via API for UK VAT ID lookups.
 
 To turn on tax ID validation for this location on your Recurly site, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
 ## Australia ABN validation
 
-Recurly maintains an [integration](https://abr.business.gov.au/) with the Australian Business Register (ABR) for tax ID number lookups with their government's business register for Australian Business Numbers (ABNs). 
+Recurly maintains an [integration](https://abr.business.gov.au/) with the Australian Business Register (ABR) for tax ID number lookups with their government's business register for Australian Business Numbers (ABNs).
 
 To turn on tax ID validation for this location on your Recurly site, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
 ## Belarus UNP validation
 
-Recurly maintains an [integration](http://grp.nalog.gov.by/grp/rest-api) with the Belarus government business register lookup. 
+Recurly maintains an [integration](http://grp.nalog.gov.by/grp/rest-api) with the Belarus government business register lookup.
 
 To turn on tax ID validation for this location on your Recurly site, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
 ## Dominican republic RNC validation
 
-Recurly maintains an [integration](https://www.dgii.gov.do/wsMovilDGII/WSMovilDGII.asmx) with the government business register lookup in the Dominican Republic. 
+Recurly maintains an [integration](https://www.dgii.gov.do/wsMovilDGII/WSMovilDGII.asmx) with the government business register lookup in the Dominican Republic.
 
 To turn on tax ID validation for this location on your Recurly site, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
@@ -128,9 +128,9 @@ To turn on tax ID validation for this location on your Recurly site, please cont
 
 There is a set of countries that Recurly provides customer VAT/tax ID number format checks for that do not leverage integrations with local government business registers, but are supported by a ensuring the VAT/tax ID number entered on a customer's account follows the given country's specific format guidelines. Upon account creation, or updating a customer accounts' VAT/tax ID number, Recurly will use parameters to ensure the number entered is adequate based on the given country's specifications.
 
-To turn on format validation for all of the locations below, please contact <a href="https://support.recurly.com/">Recurly support</a>. 
+To turn on format validation for all of the locations below, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
-**Please Note**: All locations below *except for the United States* are grouped together under 1 enablement option. If you would like to *enable format validation for the United States, please call that out specifically* in your Support ticket. 
+**Please Note**: All locations below *except for the United States* are grouped together under 1 enablement option. If you would like to *enable format validation for the United States, please call that out specifically* in your Support ticket.
 
 <br />
 
