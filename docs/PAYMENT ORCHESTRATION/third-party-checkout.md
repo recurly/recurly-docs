@@ -30,6 +30,7 @@ Using Stripe Web Elements is currently supported when using the Recurly V3 API. 
 
 * When using Stripe Elements, you can build a custom checkout solution and pass a Stripe "confirmation token" to Recurly via API. Recurly will pass that token to Stripe to obtain reusable payment details for recurring and one-time payments.
 * If customers wish to update their billing information, they can do so through Stripe Elements, or through an existing Recurly solution such as Checkout, HPP, or Recurly.js. What you choose to offer is up to you!
+* Use Stripe's demo website to see what's possible: [https://checkout.stripe.dev/elements](https://checkout.stripe.dev/elements) while keeping in mind limitations to what Recurly has built and allowed.
 
 Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/).
 
