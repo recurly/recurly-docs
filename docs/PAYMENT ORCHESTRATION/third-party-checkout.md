@@ -26,7 +26,7 @@ The Ecommerce checkout options from our trusted gateway partners are designed to
 
 Using Stripe Web Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information:
 
-<Image align="center" className="border" width="300px" border={true} src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" />
+<Image align="center" className="border" border={true} width="300px" src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" />
 
 * When using Stripe Elements, you can build a custom checkout solution and pass a Stripe "confirmation token" to Recurly via API. Recurly will pass that token to Stripe to obtain reusable payment details for recurring and one-time payments.
 * If customers wish to update their billing information, they can do so through Stripe Elements, or through an existing Recurly solution such as Checkout, HPP, or Recurly.js. What you choose to offer is up to you!
@@ -35,8 +35,11 @@ Read more about enabling Stripe Payment Elements in the [Developer Hub guide](ht
 
 ### Supported Payment Methods
 
-* **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available: 
+* **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available:
   * Cards, Link by Stripe, KakaoPay, PayCo, Naver Pay, Apple Pay, Google Pay, Cash App Pay
+  * Direct Debit offerings include: ACH, SEPA, BACS, and BECS.
+* **Please note:** certain APMs and payment methods are restricted to merchants operating in certain countries. If you do not see one of the above payment methods available to enable in your Stripe Dashboard, your account merchant country of origin does not qualify to use it.
+  * Example: Revolut is restricted to merchants operating in the UK and EU only. US merchants are unable to enable it.
 
 ### Limitations
 
