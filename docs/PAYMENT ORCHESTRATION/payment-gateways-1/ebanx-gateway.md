@@ -26,7 +26,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported with UPI AutoPay.
 * Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
 * Recurly.js is not supported with UPI AutoPay.
-* Refunds through Ebanx must be the full amount.
+* Refunds through Ebanx must be the **full** amount.
 
 # Definition
 
