@@ -1,5 +1,5 @@
 ---
-title: Third Party Checkout
+title: 'Third Party Checkout: Stripe Elements'
 excerpt: >-
   To better serve our customer base and keep up to speed with the expansion of
   payment methods and wallets, we are building support for our most trusted
