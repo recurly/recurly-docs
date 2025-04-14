@@ -28,7 +28,7 @@ The Subscribers dashboard of Recurly's Reporting & Analytics offers a comprehens
 
 # Key benefits
 
-* **Measure growth**: Understand how your acquisition rates are trending over time. 
+* **Measure growth**: Understand how your acquisition rates are trending over time.
 
 * **Subscriber composition**: Gain insights into what your target group of subscribers your targeting efforts are attracting between new or returning.
 
@@ -56,7 +56,7 @@ This dashboard segment is designed to clarify the total number of customers who 
 
 The KPI widget immediately shows the total number of active subscribers and highlights how this number has changed compared to the same date in the previous year.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/9e8cfa7-Subscribers_count.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9e8cfa7-Subscribers_count.png" />
 
 ## Subscriber growth
 
@@ -72,20 +72,20 @@ This section is designed to give you a clear perspective on the trends influenci
 
 Accompanying this chart, a detailed table breaks down these figures on a monthly basis. This breakdown allows for a deeper dive into the specific changes month over month, offering insights into the ebb and flow of your subscriber dynamics. This data is crucial for understanding the overall health and growth trajectory of your subscriber base.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/9130b9a-Subscriber_Growth.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9130b9a-Subscriber_Growth.png" />
 
 ## Acquisition and churn rates
 
-View the acquisition rate and churn rates in a YOY comparison to learn how your subscriber base is growing, and what percentage of your subscribers discontinued their subscription either voluntarily or involuntarily. Compare these rates to the benchmarked version to understand how you compare to those in your industry. 
+View the acquisition rate and churn rates in a YOY comparison to learn how your subscriber base is growing, and what percentage of your subscribers discontinued their subscription either voluntarily or involuntarily. Compare these rates to the benchmarked version to understand how you compare to those in your industry.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/302fbb4-Aqusition_and_Churn_Rates.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/302fbb4-Aqusition_and_Churn_Rates.png" />
 
 # FAQs
 
-**Where did the previous Subscribers dashboard go?** 
+**Where did the previous Subscribers dashboard go?**
 
 If you're looking for the previous version of the Subscribers dashboard, it hasn't disappeared. A link to the “Subscribers (Legacy)” dashboard is provided at the bottom of the subscribers page. Please note, Recurly plans to phase out the legacy dashboard, so it's a good idea to familiarize yourself with the current dashboard's features and capabilities.
 
-**How is churn and acquisition calculated?** 
+**How is churn and acquisition calculated?**
 
 Throughout our dashboards, churn and acquisition are calculated by comparing subscribers who are not expired at the beginning of the time period vs the subscribers who are not expired at the end of the time period. For example, if using a weekly timeframe, if a subscriber is not expired at the beginning of the week but is expired at the end of the week would be churn.
