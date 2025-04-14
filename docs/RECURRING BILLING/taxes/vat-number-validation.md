@@ -1,10 +1,9 @@
 ---
-title: VAT Number/Tax ID Number Validation
+title: VAT number/Tax ID number validation
 excerpt: >-
-  Recurly supports a wide array of customer tax ID number validations for
-  merchants who are B2B, to reduce the risk of merchants being responsible for
-  paying taxes on a purchase with a business consumer who falsely entered a tax
-  ID number.
+  A comprehensive guide on Tax ID Validation in Recurly, detailing how customer
+  tax IDs and VAT numbers are verified through government lookups and format
+  validation to ensure compliance with local regulations.
 deprecated: false
 hidden: false
 metadata:
@@ -14,6 +13,20 @@ metadata:
 next:
   description: ''
 ---
+# Overview
+
+### Required plan
+
+# Definition
+
+**Tax ID Validation** is a feature that verifies customer-provided tax identification numbers—such as VAT numbers—using government lookup systems and format checks. This process is essential to ensure that tax information is accurate for invoice generation, VAT collection, and regulatory compliance.
+
+# Key benefits
+
+* **Enhanced accuracy**: Ensures that customer tax IDs are correctly validated, which leads to more accurate VAT and tax calculations on your invoices.
+* **Streamlined Billing**: Automates the verification process to reduce manual errors and simplify tax application, making invoicing more efficient.
+* **Risk Mitigation**: Helps maintain regulatory compliance and minimizes the risk of fines by ensuring that all tax identifiers meet local standards.
+
 # Enable or disable Tax ID validation on your Recurly site
 
 VAT/Tax ID validation can be enabled or disabled for any merchant on any site by contacting Recurly Support. Recurly supports tax ID number validation via government lookups for some countries, and format validation checks for others. This page outlines the type of validation provided for each country where VAT/Tax ID number validation is supported on Recurly.
