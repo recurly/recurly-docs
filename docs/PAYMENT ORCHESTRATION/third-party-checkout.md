@@ -38,9 +38,9 @@ Read more about enabling Stripe Payment Elements in the [Developer Hub guide](ht
 * **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available:
   * Cards, Link by Stripe, KakaoPay, PayCo, Naver Pay, Apple Pay, Google Pay, Cash App Pay
   * Direct Debit offerings include: ACH, SEPA, BACS, and BECS.
-* **Please note:** certain APMs and payment methods are restricted to merchants operating in certain countries. If you do not see one of the above payment methods available to enable in your Stripe Dashboard, your account merchant country of origin does not qualify to use it.
-  * Example: Revolut is restricted to merchants operating in the UK and EU only. US merchants are unable to enable it.
 
 ### Limitations
 
 * **Stripe gateway**: We do not support Stripe Payment Links, Stripe Checkout, or Radar at this time. See the limited list of payment methods available, or visit the [Stripe gateway documentation](https://docs.recurly.com/docs/stripe) in Recurly docs.
+* Certain APMs and payment methods are restricted to merchants operating in certain countries. If you do not see one of the above payment methods available to enable in your Stripe Dashboard, your account merchant country of origin does not qualify to use it.
+  * Example: Revolut is restricted to merchants operating in the UK and EU only. US merchants are unable to enable it.
