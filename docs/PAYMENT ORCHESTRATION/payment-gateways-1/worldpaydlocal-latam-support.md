@@ -88,7 +88,7 @@ Supported Regions:
       </td>
 
       <td>
-        Transactions, Voids, Refunds
+        Transactions, Voids, Refunds (Online and Offline)
       </td>
     </tr>
 
@@ -227,3 +227,8 @@ Setting up your WorldPay account correctly is crucial in ensuring smooth transac
 * Before going live, rigorously test the setup to ensure all elements work harmoniously and comply with the regional requirements.
 
 By carefully following this step-by-step process, you will have the WorldPay LATAM gateway up and running, ready to facilitate transactions in the Latin American market efficiently. Ensure to refer to the [technical documentation](https://developers.recurly.com/) for any technical assistance during the setup.
+
+### FAQs
+
+1. Why is my WorldPay refund failing?
+   1. Refunds can fail due to Online Refund Authorization behavior that WorldPay supports. In May 2025, this will become standard across all WorldPay accounts. Banks will 'authorize' refunds in realtime, which can cause errors if the account is closed, or the bank does not wish to authorize the refund for some reason. If this happens, you must coordinate with your customer to return funds in another manner.
