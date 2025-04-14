@@ -26,6 +26,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported with UPI AutoPay.
 * Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
 * Recurly.js is not supported with UPI AutoPay.
+* Refunds through Ebanx must be the full amount.
 
 # Definition
 
@@ -33,16 +34,16 @@ Ebanx is a full-service payment management platform focused on upcoming markets 
 
 # Key details
 
-| Feature                         | Description                                                  |
-| ------------------------------- | ------------------------------------------------------------ |
-| Services that work with Recurly | Payment Processing                                           |
-| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions      |
-| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/) |
-| Supported Card Brands           | N/A                                                          |
-| Gateway Specific 3DS2 Supported | No                                                           |
-| Card On File Supported          | No                                                           |
-| Regions                         | India                                                        |
-| Currencies                      | INR                                                          |
+| Feature                         | Description                                                      |
+| ------------------------------- | ---------------------------------------------------------------- |
+| Services that work with Recurly | Payment Processing, Subscriptions                                |
+| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions, Refunds |
+| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/)     |
+| Supported Card Brands           | N/A                                                              |
+| Gateway Specific 3DS2 Supported | No                                                               |
+| Card On File Supported          | No                                                               |
+| Regions                         | India                                                            |
+| Currencies                      | INR                                                              |
 
 # Configuring Ebanx in Recurly
 
