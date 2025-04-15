@@ -5,7 +5,7 @@ excerpt: >-
   Recurly RevRec, from system-defined tasks to custom, site-specific
   requirements.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
