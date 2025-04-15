@@ -5,7 +5,7 @@ excerpt: >-
   with accuracy. By following a structured close process, you can ensure all
   transactions are accounted for and properly reflected in your General Ledger.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
