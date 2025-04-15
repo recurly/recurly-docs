@@ -3,7 +3,7 @@ title: Month end close
 excerpt: >-
   A concise overview of Recurly’s Month End Close options, comparing the
   benefits and processes of the automatic versus manual approaches to finalizing
-  billing periods.
+  billing periods. 
 deprecated: false
 hidden: false
 metadata:
