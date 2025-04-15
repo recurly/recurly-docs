@@ -39,7 +39,7 @@ Read more about enabling Stripe Payment Elements in the [Developer Hub guide](ht
 * **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available:
   * Cards, Link by Stripe, KakaoPay, PayCo, Naver Pay, Apple Pay, Google Pay, Cash App Pay
   * Direct Debit offerings include: ACH, SEPA, BACS, and BECS.
-    * Financial Connections is required for verifying bank information prior to signup.
+    * [Financial Connections](https://stripe.com/financial-connections) is required for verifying bank information prior to signup.
 
 ### Limitations
 
