@@ -33,7 +33,7 @@ Subscriber Management encompasses a range of analytics dashboards focused on und
 
 ## Subscribers
 
-Gain a comprehensive understanding of your [subscriber ](https://docs.recurly.com/docs/subscribers)base including their demographic information and subscription status, aiding in effective targeting and personalized interactions.
+Gain a comprehensive understanding of your [subscriber ](https://docs.recurly.com/docs/subscribers-new)base including their demographic information and subscription status, aiding in effective targeting and personalized interactions.
 
 ## Subscribers metrics (Beta)
 
