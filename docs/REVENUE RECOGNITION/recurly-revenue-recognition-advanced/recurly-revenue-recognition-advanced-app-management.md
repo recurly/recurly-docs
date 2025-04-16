@@ -17,7 +17,7 @@ This feature is part of our product, Recurly Revenue Recognition Advanced. \[<a 
 
 # Definition
 
-Recurly Revenue Recognition Advanced has the capability to handle data from both the App Store and the Play Store data, whether it’s from Apple or Android. To manage App Management data, a few straightforward configurations must be done in Recurly Revenue Recognition Advanced.
+Recurly Revenue Recognition Advanced has the capability to handle data from both the App Store and the Google Play Store data, whether it’s from Apple or Android. To manage App Management data, a few straightforward configurations must be done in Recurly Revenue Recognition Advanced.
 
 # Key benefits
 
@@ -101,10 +101,10 @@ Applies the appropriate account number for all order lines with a source of "Pla
 
 **Rule**
 
-| Appplication Attribute | Formula |
-| :--------------------- | :------ |
-| Liability Account      | 23100   |
-| Revenue Account        | 33200   |
+| Application Attribute | Formula |
+| :-------------------- | :------ |
+| Liability Account     | 23100   |
+| Revenue Account       | 33200   |
 
 **Criteria**
 
@@ -120,10 +120,10 @@ Applies the appropriate account number for all order lines with a source of "App
 
 **Rule**
 
-| Appplication Attribute | Formula |
-| :--------------------- | :------ |
-| Liability Account      | 23000   |
-| Revenue Account        | 33000   |
+| Application Attribute | Formula |
+| :-------------------- | :------ |
+| Liability Account     | 23000   |
+| Revenue Account       | 33000   |
 
 **Criteria**
 
