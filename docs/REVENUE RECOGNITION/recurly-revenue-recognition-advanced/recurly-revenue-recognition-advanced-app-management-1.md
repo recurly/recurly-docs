@@ -130,3 +130,17 @@ Applies the appropriate account number for all order lines with a source of "App
 | Field  | Operator | Value       |
 | :----- | :------- | :---------- |
 | Source | =        | Apple Store |
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a2c2dcb2dd29f02108ad4743f7102558b5593742e85cad7ece22c67ea661afd3-7_Data_Rule_4.png" />
+
+# App management integration
+
+Once you've configured these data rules, it's critical to run the App Management Integration job. This integration pushes all processed App Management data into Recurly Revenue Recognition Advanced.
+
+## How to enable the App Management integration?
+
+**Navigate:** Import/Export → Scheduled Jobs → App Management Integration
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/4cacd6bf89fb34de50b38315f39b77e53c155f362ea72336094c9d6406bd2152-8_App_management_Integration.png" />
+
+Ensure that the job is active, then click **Run** to execute the integration.
