@@ -61,7 +61,7 @@ To ensure accurate revenue recognition, you need to configure data rules that tr
 
 We have defined four data rules:
 
-### Data Rule 1: Copy Google Fees to App Fees
+### Data rule 1 - Copy Google fees to app fees
 
 Copies the sell price from "Google Fees" lines into the "App Fees" attribute.
 
@@ -76,3 +76,25 @@ Copies the sell price from "Google Fees" lines into the "App Fees" attribute.
 | Field | Operator | Value       |
 | :---- | :------- | :---------- |
 | Plan  | =        | Google Fees |
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6ce5c2ecf7e0343039efd0c9cf37d3b8f1151eaa89492acb3b69bc867052e0d6-4_Data_Rule.png" />
+
+<br />
+
+### Data Rule 2 - Zero out Google fees
+
+Sets the sell price of the Google Fees plan to zero to avoid duplicative charges.
+
+**Rule:**
+
+| Application Attribute | Formula |
+| :-------------------- | :------ |
+| App Fees              | 0       |
+
+**Criteria:**
+
+| Field | Operator | Value       |
+| :---- | :------- | :---------- |
+| Plan  | =        | Google Fees |
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/14ab1e62d857d59865b8ed09371367da4df6e629723f87c270bf4dd280cba05d-5_Data_Rule_2.png" />
