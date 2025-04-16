@@ -115,7 +115,7 @@ If you are planning on transitioning from sandbox mode to production mode, then 
 
 ## UK VAT validation
 
-Similar to the European Union, there is a VAT ID validation government lookup system available for businesses registered in the United Kingdom. Support for customer VAT ID/tax ID numbers out of the UK being validated for UK-based customers is automatically enabled for all merchants on all sites. This integration provided is via the HMRC. Recurly integrates with [this site](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-registered-companies-api/1.0) via API for UK VAT ID lookups.
+Similar to the European Union, there is a VAT ID validation government lookup system available for businesses registered in the United Kingdom. Support for customer VAT ID/tax ID numbers out of the UK being validated for UK-based customers is automatically enabled for all merchants on all sites. This integration provided is via the HMRC. Recurly integrates with [this site](https://developer.service.hmrc.gov.uk/api-documentation) via API for UK VAT ID lookups.
 
 To turn on tax ID validation for this location on your Recurly site, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
