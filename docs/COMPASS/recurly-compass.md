@@ -101,6 +101,20 @@ Find exactly what you need, fast. The in-app Global Search feature puts key Recu
 
 <Image align="center" width="70% " src="https://files.readme.io/1ae54ee8804022bc38a276f931aa2a2b27fe8ddea3c52b0179510e55324ea5b9-Screenshot_2025-03-24_at_12.39.38_PM.png" />
 
+# Explore Assistant
+
+Explore Assistant is your natural language interface for creating charts and graphs from your site’s data. Just ask, for example, “Show me failed invoices each month for the past 12 months” or “Display transaction success rate by country,” and let Explore generate the insights you need.
+
+As you review the results, you can refine your queries in real time—narrowing down from a broad view of failed transactions over three months to a detailed breakdown by credit card or by country. A built-in chat history, accessible via the hamburger menu, makes it easy to revisit previous queries and data.
+
+Using the Settings icon in the upper right, you will find options such as the ability to save or download your dashboard.
+
+With Explore Assistant, data exploration is intuitive, fast, and flexible.
+
+<Image align="center" src="https://files.readme.io/261762306e23a0cc4fff870013de429e5b11a4f46080c6c3466660bc3d9b0781-Screenshot_2025-04-16_at_9.31.57_AM.png" />
+
+<Image align="center" src="https://files.readme.io/f3ca6d62501f8d16e178621918a217b4deb6b493c61a44b7e2058124223cc87c-Screenshot_2025-04-16_at_9.34.22_AM.png" />
+
 # Legal
 
 Recurly AI Data Insights, Recurly Data Explorer, and Recurly Assistant Document Search all share non-merchant identifiable information and additional inputs with respective third parties, such as Google Vertex AI, Google’s Gemini LLM, and Elastic Cloud. Insights and responses are generated based on the Google Vertex AI Language Model, Gemini LLM, and a retrieval-augmented generation (RAG) model, and may include inaccurate information. Therefore, all data insights and responses must be carefully reviewed, verified for accuracy, and checked for applicability.
