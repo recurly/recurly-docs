@@ -1,6 +1,7 @@
 - integration-paths
 - api-keys
 - recurlyjs
+- third-party-checkout
 - webhooks
 - native-mobile-sdks
 - scim
