@@ -34,33 +34,23 @@ The Subscriptions by Plans dashboard, a crucial feature of Recurly, displays a c
 * **Customizable timeframe:** You have the flexibility to view subscription trends over your chosen period, be it daily, weekly, or monthly.
 * **Detailed breakdown:** Each subscription plan is thoroughly examined, with specific counts for active, trial, canceled, and paused subscriptions.
 
-# Definition
-
-The Subscriptions by Plans dashboard, a crucial feature of Recurly, displays a complete breakdown of your active subscriptions based on different plans. It's your go-to tool for assessing the popularity of your plans, helping you identify which are driving growth and which need tweaking. Its rich data visualization includes subscriptions in different states, offering a panoramic view of your subscription model's health.
-
-# Key benefits
-
-* **Intuitive data visualization:** The dashboard simplifies complex subscription data into easy-to-understand formats like graphs, bar charts, and tables.
-* **Customizable timeframe:** You have the flexibility to view subscription trends over your chosen period, be it daily, weekly, or monthly.
-* **Detailed breakdown:** Each subscription plan is thoroughly examined, with specific counts for active, trial, canceled, and paused subscriptions.
-
 # Key details
 
 ### Subscriptions key performance indicator
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/4a6eaf1-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/4a6eaf1-image.png" />
 
-The Subscriptions Key Performance Indicator (KPI) widget offers a quick overview of your active subscription counts across different time periods. It compares current active subscription numbers by plan to previous periods, such as last month, three months, or a year ago, with indicators showing whether there's an increase or decrease. This widget is crucial for tracking subscription trends and making informed decisions based on these patterns. You can filter down to look at plans by total subscriptions, new subscriptions, and churned subscriptions. 
+The Subscriptions Key Performance Indicator (KPI) widget offers a quick overview of your active subscription counts across different time periods. It compares current active subscription numbers by plan to previous periods, such as last month, three months, or a year ago, with indicators showing whether there's an increase or decrease. This widget is crucial for tracking subscription trends and making informed decisions based on these patterns. You can filter down to look at plans by total subscriptions, new subscriptions, and churned subscriptions.
 
 ### Subscription by plans graph
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/242c4e8-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/242c4e8-image.png" />
 
 This feature visually breaks down your subscriptions by plan over your selected timeframe. Each bar in the chart represents a time unit, and its height indicates the total number of subscriptions. The bars are color-coded for different plans, allowing for immediate visual comparison. Clicking on a bar or section provides detailed subscription totals for each plan.
 
 ### Subscriptions by plans details table
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/829117b-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/829117b-image.png" />
 
 The detail table provides a thorough view of your active subscriptions for chosen plans compared to the overall total. Organized by your selected timeframe, this table is essential for analyzing the long-term performance and popularity of your plans. It helps in identifying which plans are consistently successful and which may require adjustments.
 
