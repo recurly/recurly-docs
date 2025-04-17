@@ -263,7 +263,7 @@ See 'Adyen Direct Debit > SEPA'.
 
 ## Adyen iDeal
 
-iDEAL is a widely embraced banking payment option in the Netherlands, representing a significant portion of the region's online transactions. During a transaction using iDEAL on Recurly’s checkout, customers will choose their respective banks from an accessible list of iDEAL-affiliated banks. Subsequently, they will be redirected to their bank's platform to complete the payment process.
+iDEAL is a widely embraced banking payment option in the Netherlands, representing a significant portion of the region's online transactions. During a transaction using iDEAL on Recurly’s checkout, customers will choose their respective banks from an accessible list of iDEAL-affiliated banks. Subsequently, they will be redirected to a unified interface to select their bank (as of April 1st 2025).
 
 It's important to note that the inaugural payment for a subscription employs iDEAL, while subsequent payments utilize SEPA Direct Debit (owing to iDEAL's non-support for recurring payments). It's advisable to clearly communicate to customers that post the initial iDEAL transaction, recurring payments will be managed through SEPA Direct Debit.
 
