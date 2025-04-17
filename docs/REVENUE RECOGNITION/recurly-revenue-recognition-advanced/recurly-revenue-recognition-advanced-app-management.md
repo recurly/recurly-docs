@@ -5,7 +5,7 @@ excerpt: >-
   Store into Recurly Revenue Recognition with tailored grouping, performance
   obligations, and data rules.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
