@@ -77,4 +77,4 @@ You can reference these codes on the Gateway's documentation pages:
 * Adyen: [Adyen Dispute Reasons and Defense Requirements](https://docs.adyen.com/risk-management/understanding-disputes/dispute-reason-codes/)
 * In the case of Stripe, the chargeback status and code will be available in your Recurly Admin UI. [Stripe dispute reasons](https://docs.stripe.com/disputes/reason-codes-defense-requirements) are available in Stripe's documentation as well.
 
-<Image align="center" src="https://files.readme.io/973cc8453fd49fe6b23321b0f83ce4e02e27af1dc570e83d74b2a07ff8a43488-Stripe_Chargeback_Reasons.png" />
+<Image align="center" src="https://files.readme.io/e9acffbb0f13b82929d43f981f8d65a12bddf59b6fe1b91e760d7b7335be2653-Stripe_Reason_Code_-_Visa_Chargeback.png" />
