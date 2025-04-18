@@ -46,7 +46,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 >
 > WorldPay will be enabling Online Refunds for merchants in mid-late April to comply with Online refund compliance. Since refunds can now be 'authorized', banks can now decline refund attempts. You may see declined refunds, which will need to be resubmitted, or resolved outside of Recurly directly with your consumer if their bank will not accept the refund attempt.
 >
-> You may wish to check your Refund Invoice settings to avoid unintended behavior related to declined refunds.
+> You may wish to check your Refund Invoice settings to avoid unintended behavior related to declined refunds. Read more about how Recurly handles failed refunds by default in our [dedicated documentation](https://docs.recurly.com/docs/credit-invoices#/4-handling-failed-refunds).
 
 # Definition
 
