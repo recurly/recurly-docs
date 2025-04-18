@@ -121,6 +121,7 @@ Recurly supports several webhooks with Stripe including gateway token lifecycle 
 * **Transaction Lifecycle Events**
   * Expired Authorization Events: If you are using Auth and Capture logic with Stripe, uncaptured authorizations may expire if not captured within 7 days. In this case, the authorization will be updated to a Void status in Recurly and can no longer be captured.
   * Hard Decline Events: In certain cases, Stripe may update a charge to reflect new retry advice. In cases where Stripe deems it necessary, Recurly will stop retries on a previously soft-declined transaction.
+  * Chargeback Dispute Events: If you receive a chargeback for a card payment, and you are using the early access Chargeback management feature, you will see Refund Invoices with an origin of Chargeback shown in your Recurly dashboard -- depending on your settings, the affected subscription can be automatically expired.
 
 ## Ongoing maintenance
 
