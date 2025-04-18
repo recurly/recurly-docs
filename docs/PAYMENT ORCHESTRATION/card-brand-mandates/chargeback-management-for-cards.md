@@ -37,9 +37,10 @@ NOTE: Recurly does not process chargeback reversals
 ## How to enable card chargebacks
 
 * Request chargeback management feature from support
-* Select `Create a refund transaction when a chargeback is received (default)` option in the chargeback setting on the `Invoice Settings` page
+* Select `Create a refund transaction when a chargeback is received (default)` option in the chargeback setting on the `Invoice Settings` page.
+* You may optionally select to auto-expire subscriptions when a chargeback is received.
 
-![](https://files.readme.io/3a53754-invoice_settings.png)
+<Image align="center" src="https://files.readme.io/6582a56971bedb4e9a9b2d5f0563f1e747f1952c00bd1cf07c9150b5c43919ae-Chargeback_Settings.png" />
 
 ## Special gateways setup or management
 
