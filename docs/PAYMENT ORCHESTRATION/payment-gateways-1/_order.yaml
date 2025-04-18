@@ -11,6 +11,7 @@
 - freedompay
 - gocardless
 - paypal-complete
+- stripe
 - first-data
 - jack-henry
 - merchant-esolutions
@@ -18,7 +19,6 @@
 - paypal-payflow-pro-credit-card
 - paypal-payments-pro-credit-card
 - payeezy
-- stripe
 - tsys
 - vantiv
 - worldpaydlocal-latam-support
