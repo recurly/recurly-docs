@@ -53,15 +53,7 @@ The integration of Stripe with Recurly facilitates a smooth pathway for managing
 | **Regions**                         | Global, some APMs are not supported                                                                                                                                                                                      |
 | **Currencies**                      | Must match in both Stripe and Recurly when using Gateway Failover                                                                                                                                                        |
 
-## Authorization and capture
-
-This gateway supports Recurly's authorization and capture feature, facilitating pre-authorization of funds and their subsequent capture. This process confirms fund availability before transaction completion, optimizing payment processing on the Recurly platform. For a detailed understanding of how this feature can benefit your transactions, we encourage you to visit our [dedicated page on authorization and capture](https://docs.recurly.com/docs/auth-and-capture).
-
-#### **Integration with Stripe**
-
-Stepping into a seamless financial operation is easy with Recurly's Stripe integration. Begin your journey by navigating to the [Recurly Payment Gateway Configuration](https://app.recurly.com/go/configuration/payment_gateways/new) page. Here, you can either log in using your existing Stripe account or initiate the process for a new account.
-
-Stripe onboarding uses OAuth credential authentication. You will not need to copy/paste your credentials using this gateway.
+<br />
 
 # Integrate Stripe with Recurly
 
@@ -105,7 +97,17 @@ Once you have tested and confirmed that the integration works as expected, switc
 
 ## Payment Method Enablement
 
-1. You can enable payment methods within your Stripe Dashboard. Keep in mind, if you are using Stripe Elements to process payments, only enable those that Recurly can support (see above). Enablement of a payment method not on the supported list will result in payment failures.
+You can enable payment methods within your Stripe Dashboard. Keep in mind, if you are using Stripe Elements to process payments, only enable those that Recurly can support (see above). Enablement of a payment method not on the supported list will result in payment failures.
+
+## Authorization and capture
+
+This gateway supports Recurly's authorization and capture feature, facilitating pre-authorization of funds and their subsequent capture. This process confirms fund availability before transaction completion, optimizing payment processing on the Recurly platform. For a detailed understanding of how this feature can benefit your transactions, we encourage you to visit our [dedicated page on authorization and capture](https://docs.recurly.com/docs/auth-and-capture).
+
+#### **Integration with Stripe**
+
+Stepping into a seamless financial operation is easy with Recurly's Stripe integration. Begin your journey by navigating to the [Recurly Payment Gateway Configuration](https://app.recurly.com/go/configuration/payment_gateways/new) page. Here, you can either log in using your existing Stripe account or initiate the process for a new account.
+
+Stripe onboarding uses OAuth credential authentication. You will not need to copy/paste your credentials using this gateway.
 
 ## Stripe Webhook Behavior
 
