@@ -45,6 +45,8 @@ This payment gateway or setting is available to all customers on any Recurly sub
 > 📘 Online refunds
 >
 > WorldPay will be enabling Online Refunds for merchants in mid-late April to comply with Online refund compliance. Since refunds can now be 'authorized', banks can now decline refund attempts. You may see declined refunds, which will need to be resubmitted, or resolved outside of Recurly directly with your consumer if their bank will not accept the refund attempt.
+>
+> You may wish to check your Refund Invoice settings to avoid unintended behavior related to declined refunds.
 
 # Definition
 
@@ -148,8 +150,8 @@ Supported Regions:
       </td>
 
       <td>
-        * \*ARS\*\* (Visa, MC, Amex, Discover, JCB, Diner's Club, *Tarjeta Naranja*)
-        * \*Else\*\*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
+        * *ARS*\* (Visa, MC, Amex, Discover, JCB, Diner's Club, *Tarjeta Naranja*)
+        * *Else*\*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
       </td>
     </tr>
   </tbody>
