@@ -75,6 +75,6 @@ Card brands have unique Fraud codes for each network. These codes include:
 You can reference these codes on the Gateway's documentation pages:
 
 * Adyen: [Adyen Dispute Reasons and Defense Requirements](https://docs.adyen.com/risk-management/understanding-disputes/dispute-reason-codes/)
-* In the case of Stripe, the chargeback status and code will be available in your Recurly Admin UI.
+* In the case of Stripe, the chargeback status and code will be available in your Recurly Admin UI. [Stripe dispute reasons](https://docs.stripe.com/disputes/reason-codes-defense-requirements) are available in Stripe's documentation as well.
 
 <Image align="center" src="https://files.readme.io/973cc8453fd49fe6b23321b0f83ce4e02e27af1dc570e83d74b2a07ff8a43488-Stripe_Chargeback_Reasons.png" />
