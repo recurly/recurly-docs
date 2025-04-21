@@ -26,7 +26,7 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 # Definition
 
-Redfast is a platform that delivers real-time, personalized messages across web, mobile, and TV based on users’ behavior, allowing B2C companies to guide their customers to take actions that will drive acquisition, retention, and upselling. Your best chance to get your subscribers' attention is when they’re actively using your product. 
+Redfast is a platform that delivers real-time, personalized messages across web, mobile, and TV based on users’ behavior, allowing B2C companies to guide their customers to take actions that will drive acquisition, retention, and upselling. Your best chance to get your subscribers' attention is when they’re actively using your product.
 
 # Key benefits
 
@@ -53,15 +53,15 @@ Redfast is a platform that delivers real-time, personalized messages across web,
 * Fill out the form to create a Redfast instance.
 * This will automatically generate your Redfast instance, provision the Recurly API key, and complete the creation process.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/56557a4-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/56557a4-image.png" />
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/aa285a2-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aa285a2-image.png" />
 
 2. **Configure** Redfast.
 
 * You will receive an invitation to create your account/password in Redfast.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/feab6cf-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/feab6cf-image.png" />
 
 * **Log** into Redfast using your new Redfast account from the step above.
 
@@ -80,7 +80,7 @@ Redfast is a platform that delivers real-time, personalized messages across web,
 * Enter their email and click + Add User.
 * Learn more in Redfast: <a href="https://help.redfast.com/docs/invite-users" target="_blank">invite users</a>.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/1ede92b-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/1ede92b-image.png" />
 
 ## Step 2: Configure RedFast / add RedFast tag
 
@@ -122,6 +122,9 @@ Within Recurly, **go** to Integrations > Automated Exports and enable the follow
    1. Filter on "Modified Yesterday"
 3. Subscriptions v5
    1. Filter on "Modified Yesterday"
+4. External Subscriptions v5
+   1. Filter on "Modified Yesterday"
+   2. Note: this is only available if utilizing App Management
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/aaa214d-image.png" />
 
@@ -143,7 +146,7 @@ Learn more in Redfast: <a href="https://help.redfast.com/docs/user-traits#custom
 
 ## Step 5: Customize segments, triggers, and actions
 
-Continuing in Redfast and based on Use Cases, modify the specific user segments, triggers and actions. 
+Continuing in Redfast and based on Use Cases, modify the specific user segments, triggers and actions.
 
 #### Test Users
 
@@ -153,15 +156,15 @@ To test your implementation, configure Test Users as outlined within Redfast, (S
 
 Within Redfast, you sill see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/e52e66e-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e52e66e-image.png" />
 
 ### Syncing Recurly data
 
-Recurly data will be synced to Redfast for use in building out offers. This includes plan and coupon data. In order to keep plan and coupon data in sync, there is a step to take anytime that a new plan or coupon is created. 
+Recurly data will be synced to Redfast for use in building out offers. This includes plan and coupon data. In order to keep plan and coupon data in sync, there is a step to take anytime that a new plan or coupon is created.
 
 To force a sync, navigate to Redfast -> Settings -> Integrations -> External -> Recurly. Uncheck the active checkbox, save, then recheck it, which forces a refresh
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png" />
 
 ### Cancel save guide
 
@@ -202,7 +205,7 @@ Based on use cases, set up the specific prompts triggered by actions.
 3. Complete testing of all additional prompts and guides.
 4. Activate all prompts and guides.
 
-Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Redfast. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. Learn more about Test Users in the Redfast docs portal [here](https://help.redfast.com/docs/test-users). 
+Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Redfast. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. Learn more about Test Users in the Redfast docs portal [here](https://help.redfast.com/docs/test-users).
 
 ### Post go-live
 
@@ -210,11 +213,11 @@ After the merchant is up and running with prompts, CSM can help monitor the prog
 
 # Helpful resources
 
-Learn more about Redfast by visiting these resources: 
+Learn more about Redfast by visiting these resources:
 
 <a href="https://recurly.com/product/subscriber-engagement/" target="_blank">Recurly's subscriber engagement solutions</a>
 
-<a href="https://www.redfast.com/" target="_blank">Redfast</a> 
+<a href="https://www.redfast.com/" target="_blank">Redfast</a>
 
 Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book a Redfast demo</a>
 
