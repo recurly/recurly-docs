@@ -21,10 +21,9 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 * **Transaction limits:** GoCardless imposes varying minimum and maximum transaction thresholds based on the payment method. Ensure alignment with your business requirements by reviewing the details [here](https://support.gocardless.com/hc/en-us/articles/115002831125-Transactions-and-fees-FAQs#transaction_limits).
   * Minimum ACH transaction value of $2.
 * **Address requirements:** Specific payment methods demand minimum address details; ensure to gather these during the checkout process.
-* No ability to import existing direct debit billing info initially.
 * Hosted Gift Card pages do not support GoCardless.
 * Direct debit transactions can move from past\_due to processing status under certain conditions.
-* See GoCardless' website for their list of restricted activities and business models: [https://gocardless.com/legal/restrictions/](https://gocardless.com/legal/restrictions/) 
+* See GoCardless' website for their list of restricted activities and business models: [https://gocardless.com/legal/restrictions/](https://gocardless.com/legal/restrictions/)
 
 # Definition
 
@@ -49,9 +48,9 @@ Recurly’s integration with GoCardless allows merchants to harness the robust c
 
 ### Recurly integration details
 
-SEPA and ACH are currently available through various Recurly integration points, while BACS and BECS are supported on Recurly.js, API V2, and V3. For BACS, BECS, and ACH, please contact support to enable this feature. 
+SEPA and ACH are currently available through various Recurly integration points, while BACS and BECS are supported on Recurly.js, API V2, and V3. For BACS, BECS, and ACH, please contact support to enable this feature.
 
-> **Note on credentials:**Merchants are encouraged to use distinct sets of GoCardless credentials across Recurly sites to avoid transaction processing issues.
+> \*\*Note on credentials:\*\*Merchants are encouraged to use distinct sets of GoCardless credentials across Recurly sites to avoid transaction processing issues.
 
 ## API documentation
 
@@ -66,7 +65,7 @@ SEPA and ACH are currently available through various Recurly integration points,
      * IBAN bank details (SEPA)
      * Account number and routing number (ACH)
      * Account code, sort code, and type (BACS)
-     * Account code and BSB code (BECS) 
+     * Account code and BSB code (BECS)
    * These details are included within the `billing_info` parameter.
    * [Learn more about API V3](https://developers.recurly.com/api/v2019-10-10/index.html#operation/update_billing_info).
 2. **API V2:**
@@ -96,17 +95,17 @@ Recurly supports automated retries for SEPA payments on GoCardless. [Learn more 
 
 Managing refunds effectively is crucial for maintaining customer satisfaction and trust. Here is how refunds are handled when using GoCardless as your payment gateway:
 
-### 1\. Safer Refund Period
+### 1. Safer Refund Period
 
 * GoCardless offers a feature known as the **Safer Refund Period**. This feature prevents refunds from being initiated within 7 days of the original payment request. This function is designed to enhance security and is **OFF by default**.
 * [Learn more](https://developer.gocardless.com/api-reference/#refunds-create-a-refund) about the Safer Refund Period and how to create a refund with GoCardless.\
   **To Enable the Safer Refund Period:**
-* If you wish to activate this feature, contact your GoCardless account manager or support team. 
+* If you wish to activate this feature, contact your GoCardless account manager or support team.
 * It is important to adjust your billing flows to account for this delay in payment confirmations when issuing refunds.
 
-### 2\. Refund limitations
+### 2. Refund limitations
 
-* A single GoCardless invoice can be refunded a maximum of **five times**, through partial refund amounts. 
+* A single GoCardless invoice can be refunded a maximum of **five times**, through partial refund amounts.
 * If an attempt is made to refund an invoice more than five times, both GoCardless and Recurly will return an error, preventing further refunds on that invoice.
 
 **Examples and scenarios:**
@@ -127,7 +126,7 @@ Managing refunds effectively is crucial for maintaining customer satisfaction an
 1. Log in to Recurly.
 2. Navigate to the ‘Payment Gateways’ page and select ‘GoCardless’ from the list of available gateways under Alternative Payment Solutions.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/7c1c289-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/7c1c289-image.png" />
 
 3. On the popup, select either ‘Production’ or ‘Development’ depending on your intentions for this gateway.
 
@@ -136,7 +135,7 @@ Managing refunds effectively is crucial for maintaining customer satisfaction an
 1. You will be redirected to the GoCardless onboarding OAuth flow to begin. If you do not have a GoCardless merchant account and credentials, you can create one during this step or click ‘Sign In’ to provide your existing credentials.
 2. If you’ve chosen ‘Sign In’, enter your GoCardless credentials and choose ‘Connect Account’. Once you have been successfully authenticated, you will be redirected back to your Recurly admin dashboard.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/82c67b7-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/82c67b7-image.png" />
 
 3. If you do not already have a GoCardless account, complete the onboarding process with GoCardless and wait until your account is approved by GoCardless. **Important**: Do not proceed to the next steps until your account with GoCardless is fully approved.
 4. Once redirected back to Recurly, you will see a GoCardless gateway instance with a ‘Status’. If the status is not approved, you will need to contact GoCardless, or log into your GoCardless account to satisfy any further requirements. The account could be listed as ‘Action Required’ for a handful of reasons, including but not limited to:
@@ -158,7 +157,7 @@ Managing refunds effectively is crucial for maintaining customer satisfaction an
 
 ### Step 5: Configure address requirements
 
-1. Based on the payment methods you will be using, ensure that you are collecting the required address fields during checkout (e.g., ACH requires a full address and name). 
+1. Based on the payment methods you will be using, ensure that you are collecting the required address fields during checkout (e.g., ACH requires a full address and name).
 
 ### Step 6: Configure Checkout and Hosted Pages (optional)
 
@@ -204,7 +203,7 @@ When SEPA payments experience a failure (typically when a customer disputes a ch
 
 ### Step 2: Initiate the refund
 
-1. In your Recurly dashboard, locate the invoice for the transaction you want to refund. 
+1. In your Recurly dashboard, locate the invoice for the transaction you want to refund.
 2. Click on the “Refund” button, typically located at the top or bottom of the invoice page.
 
 ### Step 3: Specify refund details
@@ -213,11 +212,11 @@ When SEPA payments experience a failure (typically when a customer disputes a ch
 
 ### Step 4: Process the refund
 
-1. Review the details and click the “Process Refund” button. 
+1. Review the details and click the “Process Refund” button.
 2. Wait for confirmation from GoCardless.
 3. Note that GoCardless may impose a delay due to its Safer Refund feature.
 
 ### Step 5: Handle additional scenarios
 
-1. If a refund fails due to GoCardless’ Safer Refund feature, a credit memo will be generated on the account in Recurly. 
+1. If a refund fails due to GoCardless’ Safer Refund feature, a credit memo will be generated on the account in Recurly.
 2. This can later be refunded externally if needed.
