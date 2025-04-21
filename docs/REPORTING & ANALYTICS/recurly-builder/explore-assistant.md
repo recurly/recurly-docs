@@ -1,5 +1,5 @@
 ---
-title: Explore assistant
+title: Explore Assistant
 excerpt: >-
   Explore Assistant is your natural language chat interface for creating charts
   and graphs from your site’s data.
