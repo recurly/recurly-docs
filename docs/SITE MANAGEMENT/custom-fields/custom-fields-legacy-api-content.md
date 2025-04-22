@@ -198,12 +198,12 @@ You can read custom fields on all plans or an individual plan a GET plans call.
 
 ```
 <plan>
-  	<custom_fields>
-  		<custom_fields>
-  			<name>region</name>
-				<value>central</value>
-			</custom_field>
-		</custom_fields>
+ <custom_fields>
+    <custom_fields>
+  		<name>region</name>
+			<value>central</value>
+		</custom_field>
+	</custom_fields>
 </plan>
 ```
 
