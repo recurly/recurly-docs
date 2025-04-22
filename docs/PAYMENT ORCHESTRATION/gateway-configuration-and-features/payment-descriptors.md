@@ -1,5 +1,5 @@
 ---
-title: Payment Descriptors
+title: Payment descriptors
 excerpt: >-
   Ensure seamless payment processing by using default dynamic payment
   descriptors with your gateway. Ensure your plans and invoice descriptions are
@@ -13,31 +13,14 @@ metadata:
 
 ### Required plan
 
-This feature is available to all customers on any plan.
+This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Prerequisites
 
-We support trial descriptors on all gateways that support cards. Visa Trial descriptors function by adding the word 'Trial' to any Visa transaction that is converting after a trial period ends.
-
-We support descriptors beyond Visa trial descriptors on the following gateways with the enablement of a feature flag. Reach out to Recurly Support or your account manager to have the related feature flag enabled:
-
-* Stripe
-* Braintree
-
-## Overview
-
-A dynamic descriptor, also known as a soft descriptor, is a customizable piece of information that can be included with a credit card transaction and appears on the customer's bank statement, allowing merchants to provide specific details about the transaction beyond just their business name.
-
-Dynamic descriptors assist customers in recognizing their purchases with your business and avoiding "friendly" chargebacks due to an unrecognizable charge.
-
-Descriptors are typically limited to 22 characters, and often look like the below. They may or may not include a domain (acme.com) or a phone number. Visibility is dependent on the consumer's bank support for descriptors and the gateway support for data within a given descriptor.
-
-* **DBA\*Description of Charge**
-
-On Recurly, we handle descriptors in the following manner:
-
-* For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: AcmeInc\*Gold Plan
-* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc\*Charge or AcmeInc\*One-Time Payment
+* We support trial descriptors on all gateways that support cards. Visa Trial descriptors function by adding the word 'Trial' to any Visa transaction that is converting after a trial period ends.
+* We support descriptors beyond Visa trial descriptors on the following gateways with the enablement of a feature flag. Reach out to Recurly Support or your account manager to have the related feature flag enabled:
+  * Stripe
+  * Braintree
 
 ### Limitations
 
@@ -50,6 +33,21 @@ On Recurly, we handle descriptors in the following manner:
 * While Recurly can send dynamic descriptors to a given gateway, Gateways may not pass descriptors on to the network as well as Issuers have final say on descriptor support. Reach out to your gateway to inquire about their descriptor support for your merchant account specifically.
 
 * Currently, only the Default Business Entity information is used for Prefix information. Dynamic Business Entity usage is planned.
+
+# Definition
+
+A dynamic descriptor, also known as a soft descriptor, is a customizable piece of information that can be included with a credit card transaction and appears on the customer's bank statement, allowing merchants to provide specific details about the transaction beyond just their business name.
+
+Dynamic descriptors assist customers in recognizing their purchases with your business and avoiding "friendly" chargebacks due to an unrecognizable charge.
+
+Descriptors are typically limited to 22 characters, and often look like the below. They may or may not include a domain (acme.com) or a phone number. Visibility is dependent on the consumer's bank support for descriptors and the gateway support for data within a given descriptor.
+
+* **DBA\*Description of Charge**
+
+On Recurly, we handle descriptors in the following manner:
+
+* For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: AcmeInc\*Gold Plan
+* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc*Charge or AcmeInc*One-Time Payment
 
 ### Supported payment methods & transactions
 
@@ -75,7 +73,7 @@ On Recurly, we handle descriptors in the following manner:
 
 This section outlines how dynamic descriptors are created for your site(s) using already present data for subscriptions and one-time transactions.
 
-### Best Practices for Descriptors
+### Best practices for descriptors
 
 * Ensure you have your known Business Name either in Site Settings (Company Name) or a DBA filled in. We will use this information to create descriptors for your supported gateways. Ensure this company name and/or DBA is kept up to date as your business evolves.
 * When naming plans in Recurly, ensure the plan names are something a customer will recognize when viewing their bank statement.
