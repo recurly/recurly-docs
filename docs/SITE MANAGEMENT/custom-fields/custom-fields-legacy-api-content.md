@@ -97,7 +97,7 @@ You can read custom fields on an individual subscription with a GET call.
 
 You can write custom field data to an individual subscription with a PUT or POST call through the API.
 
-The subscription POST call can be made while creating the subscription. This functionality is available beginning in [API version 2.14](https://dev.recurly.com/v2.14).
+The subscription POST call can be made while creating the subscription. This functionality is available beginning in [API version 2.14](https://recurly.com/developers/api-v2/v2.14/).
 
 ```json
 <subscription>
