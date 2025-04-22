@@ -37,7 +37,7 @@ Use this option to create custom field values for the Charge object when you wis
 
 When defining the custom field object, if you selected the option for 'Able to set...', you can set those values via the UI by pulling up a customer's account, selecting to Add Charge/Item or Add Credit and scroll to the bottom of the page, just above the Add Another Charge button. The name will be whatever you defined for Admin Console Field Name. In the example below it was CHARGECUSTOMFIELD. Once set, the data will only be viewable via an API call.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/f842535-Screen_Shot_2023-02-22_at_8.38.14_AM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f842535-Screen_Shot_2023-02-22_at_8.38.14_AM.png" />
 
 ### Recurly Charges API
 
@@ -147,15 +147,15 @@ When defining the item object, if you selected the label as read-only in the UI,
 
 The API for custom fields will be available to your site regardless of whether or not you allow the custom field to be viewed or edited in the Recurly UI.
 
-You can read custom fields on an individual item with a [GET call][1].
+You can read custom fields on an individual item with a \[GET call]\[1].
 
-You can write custom field data to an individual item with a [POST][2] or [PUT][3] call through the API.
+You can write custom field data to an individual item with a \[POST]\[2] or \[PUT]\[3] call through the API.
 
-[1]: https://developers.recurly.com/api/v2019-10-10/index.html#operation/get_item
+[1]: https\://developers.recurly.com/api/v2019-10-10/index.html#operation/get_item
 
-[2]: https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_item
+[2]: https\://developers.recurly.com/api/v2019-10-10/index.html#operation/create_item
 
-[3]: https://developers.recurly.com/api/v2019-10-10/index.html#operation/update_item
+[3]: https\://developers.recurly.com/api/v2019-10-10/index.html#operation/update_item
 
 ```json
 <item>
@@ -170,20 +170,18 @@ You can write custom field data to an individual item with a [POST][2] or [PUT][
 
 ## Custom Fields on a Plan
 
-Use this option to create custom field values for the Plan object when the information you need is account-specific. Examples of custom fields on a plan: 
+Use this option to create custom field values for the Plan object when the information you need is account-specific. Examples of custom fields on a plan:
 
 * Customer region or location (US vs Europe or California vs New York)
 * Specific Customer Channel
-* New or returning customer 
+* New or returning customer
 * Tax purposes
 
 ### Recurly Plan UI
 
 When defining the custom field object, if you selected the option to be *editable in the UI*, you can set those values via the Admin UI when creating or editing a plan:
 
-<Image title="docs image export3x.png" alt={2595} align="center" width="smart" border={true} src="https://files.readme.io/7e8662a-docs_image_export3x.png">
-  Creation of a custom field on a plan
-</Image>
+<Image align="center" alt={2595} border={true} caption="Creation of a custom field on a plan" title="docs image export3x.png" src="https://files.readme.io/7e8662a-docs_image_export3x.png" width="smart" />
 
 When defining the plan object, if you selected the option for as *read-only in the UI,* the field values will be readable when viewing the plan but will not be present on the edit plan screen.
 
@@ -198,7 +196,16 @@ You can read custom fields on all plans or an individual plan a GET plans call.
 [Learn more v2 api](https://recurly.com/developers/api-v2/v2.29/#tag/plans)\
 [Learn more v3 api](https://recurly.com/developers/api/v2019-10-10/index.html#tag/plan)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/1e39830-Screen_Shot_2022-11-18_at_9.49.19_AM.png" />
+```
+<plan>
+  	<custom_fields>
+  		<custom_fields>
+  			<name>region</name>
+				<value>central</value>
+			</custom_field>
+		</custom_fields>
+</plan>
+```
 
 ## FAQ
 
