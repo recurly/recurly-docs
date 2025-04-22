@@ -1,5 +1,5 @@
 ---
-title: Gateway Token Support
+title: Gateway token support
 deprecated: false
 hidden: true
 metadata:
@@ -24,15 +24,15 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 * **Amazon**: By design, all payment methods are stored at Amazon, and Recurly stores a billing agreement or charge permission ID for renewals and one-time payments with Amazon V1 and V2.
 * **PayPal**: By design, all payment methods are stored at PayPal, and Recurly retains a token or billing agreement for renewals and one-time payments with all PayPal gateways.
 
-## Overview
-
-A gateway token, which can be an overloaded term, is a value that references a payment instrument (card, bank account, cash app token, etc.) that is stored at a partner gateway. Gateway tokens are not transferrable to other gateways, meaning if you are using Adyen tokens for renewals on Recurly, that subscription cannot be processed on Stripe.
-
 ### Limitations
 
 * Gateway failover to other gateways
 
 * Imported tokens do not display payment methods details
+
+# Definition
+
+A gateway token, which can be an overloaded term, is a value that references a payment instrument (card, bank account, cash app token, etc.) that is stored at a partner gateway. Gateway tokens are not transferrable to other gateways, meaning if you are using Adyen tokens for renewals on Recurly, that subscription cannot be processed on Stripe.
 
 # Key benefits
 
@@ -41,11 +41,3 @@ A gateway token, which can be an overloaded term, is a value that references a p
 * **Benefit:** Sentences...
 
 # Key details
-
-## Additional details
-
-Sentences...
-
-### Best Practices for Descriptors
-
-* Sentences...
