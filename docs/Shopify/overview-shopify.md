@@ -7,7 +7,7 @@ excerpt: >-
   enterprise-grade subscription lifecycle engine for optimal revenue retention
   and a streamlined customer experience.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
