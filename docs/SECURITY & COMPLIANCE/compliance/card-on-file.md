@@ -50,6 +50,12 @@ A “merchant” initiated transaction, or “MIT” for short, is when a transa
 
 * Recurring Subscription transactions (automated by Recurly).
 * Resubmission attempts (manually forced collection via the Recurly UI or API): Transactions that are meant to be used to collect a previously declined transaction.
+* Industry-practice Unscheduled transactions (coming soon via API) including:
+  * No Show Transactions: When a consumer does not follow cancellation policies properly and a merchant charges a cancellation fee.
+  * Service Extension / Reauthorization Transactions: When the original fulfillment of an order or service is extended beyond the original agreement.
+  * Incremental Transactions: When the original authorization amount is not sufficient to cover the cost of goods or services.
+  * Split Shipment Transactions: When an original purchase amount needs to be split into multiple / partial shipments.
+  * Top Up Transactions: When a previously established agreement with the consumer allows one-time authorizations to meet a specific threshold.
 
 # How does Recurly help you with credential on file compliance?
 
@@ -59,13 +65,19 @@ A “merchant” initiated transaction, or “MIT” for short, is when a transa
 
 # How can you help ensure compliance?
 
-* **3D-Secure Enabled**: In areas where PSD2 / SCA compliance is necessary, ensure you are properly integrated to Recurly.js and have 3DS enabled at your gateway. 
+* **3D-Secure Enabled**: In areas where PSD2 / SCA compliance is necessary, ensure you are properly integrated to Recurly.js and have 3DS enabled at your gateway.
 * **Customer Engagement**: When signing up customers for new subscriptions, ensure they are an active participant in the event! Make sure you've got an integration via our APIs properly enabled, or are using a hosted checkout system supported by Recurly where customers can sign up or make purchases directly.
 * **MOTO**: If your business handles payments over the phone where customers do not interact with a website, ensure you're passing the proper `moto` indicator via API, or creating invoices via your Recurly Admin.
 
 # Common use cases
 
 * **Billing info updates:** When a consumer updates their billing info with Recurly, our systems reach out to your integrated gateway to gain authorization by verifying the data provided including billing address, and card information, as well as ensuring proper storage of the resulting NTID upon approval. Merchants in the EU region as well as merchants who use 3DS as a fraud-reduction solution will also see their consumer’s transactions subject to SCA and/or 3D Secure challenges to ensure follow up transactions function properly.
-* **Subscription signups:** When a consumer signs up for a subscription, whether it’s a free trial where the card number is supplied, or a sign-up where there is a non-zero amount, this is a customer-initiated transaction that can occur with a new card or a known / stored card. Like billing info updates, if the card is brand new, the consumer could be challenged by 3D Secure in SCA/fraud-reductive environments. 
+* **Subscription signups:** When a consumer signs up for a subscription, whether it’s a free trial where the card number is supplied, or a sign-up where there is a non-zero amount, this is a customer-initiated transaction that can occur with a new card or a known / stored card. Like billing info updates, if the card is brand new, the consumer could be challenged by 3D Secure in SCA/fraud-reductive environments.
 * **Customer initiated purchases:** Merchants who offer one-click payments to their customers can use Recurly’s billing info IDs. Using stored information is a great way of reducing shopping cart abandonment and reducing friction at checkout. Keep in mind that if consumers update their billing info in the process of making a one-time purchase, they may be challenged by 3D-Secure in SCA-regulated regions.
 * **Recurring subscriptions - fixed price:** Automated subscriptions will use consumer-provided billing information and the associated NTIDs that were stored upon successful signups. Some card brands have special requirements depending on whether or not the subscription’s price changes or not.
+* **Unscheduled Merchant Transactions**Non-Recurring Merchant Initiated transactions are also valid use cases for card on file storage. Merchants who have specific industry uses for these types of transactions will be able to use API parameters to facilitate cases such as:
+  * Top Ups
+  * Cancellation Fees (No Show Fees)
+  * Split Shipment Behaviors
+  * Service Extensions
+  * Resubmission for declined transactions
