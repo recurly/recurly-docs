@@ -16,7 +16,7 @@ next:
 
 This page walks you through the process to configure both Recurly and Shopify, connect the platforms, and start powering subscriptions. If a migration from another subscription provider is needed, read through both this page, and the next page regarding migration.
 
-## Prerequisites
+### Prerequisites
 
 Merchants must reach out to their Recurly Account Manager, or <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">create a ticket</a>. Recurly will answer any questions, and support merchants through the setup and testing.
 
