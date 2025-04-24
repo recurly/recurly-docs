@@ -24,6 +24,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 * Hosted Gift Card pages do not support GoCardless.
 * Direct debit transactions can move from past\_due to processing status under certain conditions.
 * See GoCardless' website for their list of restricted activities and business models: [https://gocardless.com/legal/restrictions/](https://gocardless.com/legal/restrictions/)
+* No ability to import existing direct debit billing info via the API.  However, this is possible with a professional services engagement.
 
 # Definition
 
