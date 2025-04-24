@@ -64,7 +64,7 @@ No. When a customer is in session on your website, this is considered a Customer
 
 ### How can I process a MOTO transaction through Recurly?
 
-If you are integrating to Recurly via API from your back office, ensure you are classifying your transactions through the /purchase endpoint as MOTO and have your gateway settings set to MOTO specifically. 
+If you are integrating to Recurly via API from your back office, ensure you are classifying your transactions through the /purchase endpoint as MOTO and have your gateway settings set to MOTO specifically.
 
 You may also add Billing Information and create Invoices directly within your Recurly control panel.
 
@@ -73,3 +73,5 @@ Transactions processed from your website directly by customers, and your recurri
 ### What’s the difference between MOTO and Unscheduled Card on File MIT Transactions?
 
 MIT (Merchant Initiated Transactions) generally occur without any direct interaction with your customer, such as processing a transaction on a pre-approved schedule outside of a subscription environment, such as a Top Up or Resubmission scenario.
+
+MOTO, on the other hand, it typically driven by direct consumer interaction, such as phone or email, but the actual transaction is driven by the business.
