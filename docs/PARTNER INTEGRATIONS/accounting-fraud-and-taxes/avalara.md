@@ -14,7 +14,7 @@ metadata:
 next:
   description: ''
 ---
-<Image align="center" className="border" width="smart" border={true} src="https://files.readme.io/3wGkBioYTHmhmmMELngy_Avalara_CERTIFIED-150x25-01.png" />
+<Image align="center" className="border" border={true} width="smart" src="https://files.readme.io/3wGkBioYTHmhmmMELngy_Avalara_CERTIFIED-150x25-01.png" />
 
 # Overview
 
@@ -28,7 +28,7 @@ This feature requires a separate cost and contract to be managed directly with A
 
 ### Support and limitations
 
-Recurly recommends you refer to [Avalara's support documentation](https://knowledge.avalara.com/) to understand the scope of tax support provided by their service. 
+Recurly recommends you refer to [Avalara's support documentation](https://knowledge.avalara.com/) to understand the scope of tax support provided by their service.
 
 # Definition
 
@@ -80,7 +80,7 @@ By default, our integration with Avalara AvaTax will validate all customer addre
 
 Renewals aren't blocked if an invalid address error occurs, but the resulting invoice will be rejected by Avalara and won't be considered for tax calculation. We don't block renewals to limit disruptions for your current customers. As it can be challenging to identify which accounts had invalid addresses and did not receive tax, we strongly suggest conducting an address audit and updating addresses before enabling taxes.
 
-You can disable Avalara address validation in your Tax Settings under Configuration > Taxes > Tax Settings. To do so, deselect the checkbox next to "Use Avalara's address validation" and save your settings. Disabling address validation will allow purchases with invalid addresses to go through in Recurly, but Avalara will reject the invoice and will not consider it for tax calculation.
+You can disable Avalara address validation in your Tax Settings under Configuration > Taxes > Tax Settings. To do so, deselect the checkbox next to "Use Avalara's address validation" and save your settings. Disabling address validation will allow purchases with invalid addresses to go through in Recurly, but Avalara will reject the invoice and will not consider it for tax calculation. If you don't see this option, [refer to this documentation](https://docs.recurly.com/docs/tax#/disable-tax-response-requirement-for-initial-purchases).
 
 # Tax jurisdictions in Avalara
 
@@ -128,7 +128,7 @@ Accounts can be referenced on your Avalara tax documents using these fields.
 * **Entity use code:** The Entity Use Code is an optional field that you can set in Recurly to help manage your customer’s exempt status. It's mapped to the same field, Entity Use Code, in Avalara.
 * **Address info:** For automatic invoices, your customer's Billing Info address is passed to Avalara. For manual invoices, the Account Info address is passed to Avalara. If you have your Tax Settings set to "Use Account Information Address", this address will always be sent to Avalara, even for automatic invoices.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/312ae1a-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/312ae1a-image.png" />
 
 ## Plans
 
@@ -142,11 +142,11 @@ Plans can be referenced on your Avalara tax documents using these fields. Note t
 * **Editable quantity:** Editable Quantity is not passed to Avalara, but see the Invoices section for quantities on tax records.
 * **Pricing information:** The Pricing Information, including the Currency, is passed on to Avalara for your plan.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/67114d0-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/67114d0-image.png" />
 
 <Image align="center" width="75% " src="https://files.readme.io/cd68451-Screenshot_2024-07-09_at_11.23.12_AM.png" />
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/0cd3be5-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0cd3be5-image.png" />
 
 ## Add-ons
 
@@ -226,7 +226,7 @@ AvaTax merchants have access to Location Validation for Digital Services, which 
 
 In compliance with Canadian regulations, Recurly displays country and province-level taxes as separate subtotals on the customer's invoice. This allows customers to see a breakdown of the different tax rates.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/8c93f9b-Screen_Shot_2021-04-22_at_12.59.44_PM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/8c93f9b-Screen_Shot_2021-04-22_at_12.59.44_PM.png" />
 
 # Handling Avalara downtime
 
@@ -241,7 +241,7 @@ If Recurly is unable to receive a response from Avalara or the internal Recurly 
 
 If you prefer to allow new sign-ups and purchases to proceed even when tax cannot be calculated, you can change the default behavior for your site. Simply go to Configuration > Taxes > Tax Settings > Tax Service Settings and disable the option "Require tax response from tax service".
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/fc9cd94-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/fc9cd94-image.png" />
 
 Feel free to reach out if you have any further questions or need assistance with these VAT and tax-related functionalities.
 
