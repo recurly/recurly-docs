@@ -24,7 +24,7 @@ A subscription allows customers to access your products or services for a specif
 
 # Key benefits
 
-* **Flexibility:** Offer subscriptions that start immediately, with a trial, or at a future date.
+* **Flexibility:** Offer subscriptions that start immediately, with a trial, at a future date or backdated to a date in the past to align with contract dates.
 * **Customization:** Override the default settings to set up tailor-made subscriptions, including prices, term length, and add-ons.
 * **Automation:** Let Recurly handle the billing, freeing you to focus on enhancing your product and serving your customers.
 * **Multiple integration options:** Whether it's via the Admin Console, Hosted Payment Pages, or the API, choose the method that best suits your business.
@@ -76,7 +76,7 @@ In this section, additional services or features can be added to the main subscr
 
 This section dictates when and how long the subscription lasts:
 
-* **Start subscription**: Choose to begin the subscription immediately or set a future date or set a date up to 10 years in the past for its commencement.
+* **Start subscription**: Choose to begin the subscription immediately or set a future date or backdate up to 10 years in the past for its commencement.
 * **Subscription term**: Define the length of the initial subscription in terms of billing periods, e.g., 12 monthly billing cycles would imply a year-long subscription.
 * **At the end of the subscription term**: Decide the behavior post the completion of the initial term - whether to automatically renew the subscription or let it expire.
 * **Renewal subscription term**: If opting for auto-renewal, specify the length of the renewal term in billing periods.
