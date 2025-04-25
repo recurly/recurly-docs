@@ -9,6 +9,10 @@ metadata:
 
 Tokens come in all shapes and sizes, and in payments, is an overloaded word. There are different types of tokens that Recurly supports internally and with our various gateways with varying levels of portability, expiry, and interoperability. The three types of tokens this article will focus on are:
 
+* Network Tokens
+* Gateway Tokens
+* One-time Use Tokens
+
 ### Required plan
 
 This feature is available to all customers on any plan.
