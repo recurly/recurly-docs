@@ -1,5 +1,5 @@
 ---
-title: Gateway token support
+title: Gateways and Token support
 deprecated: false
 hidden: true
 metadata:
