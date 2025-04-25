@@ -58,14 +58,14 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 
 Sometimes, with all the different terms and token types, it can become confusing to understand who really has the card or payment details in their system. Use this handy table to understand where the card or payment instrument is stored, depending on your gateway solution, payment method and the checkout system you're using.
 
-| Checkout Solution/ Use Case       | Payment Method                                     | Gateway                          | Who Stores the Payment Instrument? |
-| :-------------------------------- | :------------------------------------------------- | :------------------------------- | :--------------------------------- |
-| Recurly.js or API                 | Cards                                              | Any, except Stripe, Braintree    | Recurly                            |
-| Recurly.js or API                 | Cards                                              | Stripe, Braintree                | Recurly and Stripe or Braintree    |
-| Recurly.js or API                 | Bank Accounts (ACH, SEPA, BACS, BECS)              | GoCardless                       | Recurly and GoCardless             |
-| Recurly.js                        | APMs (Wallets like Cash App, PayPal, Amazon, etc.) | Adyen, PayPal, Braintree, Amazon | Adyen, PayPal, Braintree, Amazon   |
-| Stripe Payment / Express Elements | Any                                                | Stripe                           | Stripe                             |
-| Adyen Web Components              | Any                                                | Adyen                            | Adyen                              |
-| Imported Gateway Tokens           | Any                                                | Token Supportive Gateways        | The Gateway                        |
-| Imported Cards                    | Cards                                              | Any                              | Recurly                            |
-| Network Tokens                    | Cards                                              | Any                              | Recurly and Visa                   |
+| Checkout Solution/ Use Case                      | Payment Method                                     | Gateway                          | Who Stores the Payment Instrument? |
+| :----------------------------------------------- | :------------------------------------------------- | :------------------------------- | :--------------------------------- |
+| Recurly.js or API                                | Cards                                              | Any, except Stripe, Braintree    | Recurly                            |
+| Recurly.js or API                                | Cards                                              | Stripe, Braintree                | Recurly and Stripe or Braintree    |
+| Recurly.js or API                                | Bank Accounts (ACH, SEPA, BACS, BECS)              | GoCardless                       | Recurly and GoCardless             |
+| Recurly.js                                       | APMs (Wallets like Cash App, PayPal, Amazon, etc.) | Adyen, PayPal, Braintree, Amazon | Adyen, PayPal, Braintree, Amazon   |
+| Stripe Payment / Express Elements                | Any                                                | Stripe                           | Stripe                             |
+| Adyen Web Components                             | Any                                                | Adyen                            | Adyen                              |
+| Imported Gateway Tokens                          | Any                                                | Token Supportive Gateways        | The Gateway                        |
+| Imported Cards or Bank Accounts, where supported | Cards, Bank Details                                | Any                              | Recurly                            |
+| Network Tokens                                   | Cards                                              | Any                              | Recurly and Visa                   |
