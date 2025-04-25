@@ -35,6 +35,14 @@ A gateway token, which can be an overloaded term, is a value that references a p
 * **One-time Use Tokens**: A type of token that can only be used once, typically has a short lifespan (and sometimes expires), and is only useful for porting sensitive data from a merchant's website to Recurly via API. These tokens cannot be used for renewals and are only created and used for consumer checkout experiences.
   * Examples include: Recurly.js tokens, Stripe c\_tokens (for Payment Elements), and Braintree nonces.
 
+# Key benefits
+
+* **Network Tokens:** Using a network token instead of a gateway token assures that you can failover to other gateways if you use multiple providers. You can also move existing subscriptions to other gateways if you choose to leave your current gateway for another one that supports network tokens.
+* **Gateway Tokens:** With gateway tokens, this assures that your gateway has full control over the payment instrument, and if you are using Account Updater with your gateway partner, those details will remain up to date. Downsides arise when you wish to move to another gateway partner with Recurly, or use certain features that require the full payment instrument stored in our system. See limitations for more information.
+* **One-time Use Tokens:** Security and reduced PCI Scope! Usage of an R.js token or Stripe confirmation tokens (ctokens) ensure that your customer's sensitive data does not touch your servers. However, these tokens are ephemeral, and cannot be stored for future usage. Ensure you are passing these tokens to Recurly in a timely manner to avoid complications and data loss.
+
+## Key Details
+
 ### When does Recurly Tokenize?
 
 In certain cases though, we do tokenize payment methods where necessary or desirable with certain gateways. See below for a supported list:
@@ -46,8 +54,16 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 * **Amazon**: By design, all payment methods are stored at Amazon, and Recurly stores a billing agreement or charge permission ID for renewals and one-time payments with Amazon V1 and V2.
 * **PayPal**: By design, all payment methods are stored at PayPal, and Recurly retains a token or billing agreement for renewals and one-time payments with all PayPal gateways. One caveat is PayPal Complete, where we do retain the raw card details or 'PAN' as well as create a PayPal gateway token for renewals.
 
-# Key benefits
+### Who Stores the Payment Information?
 
-* **Network Tokens:** Using a network token instead of a gateway token assures that you can failover to other gateways if you use multiple providers. You can also move existing subscriptions to other gateways if you choose to leave your current gateway for another one that supports network tokens.
-* **Gateway Tokens:** With gateway tokens, this assures that your gateway has full control over the payment instrument, and if you are using Account Updater with your gateway partner, those details will remain up to date. Downsides arise when you wish to move to another gateway partner with Recurly, or use certain features that require the full payment instrument stored in our system. See limitations for more information.
-* **One-time Use Tokens:** Security and reduced PCI Scope! Usage of an R.js token or Stripe confirmation tokens (ctokens) ensure that your customer's sensitive data does not touch your servers. However, these tokens are ephemeral, and cannot be stored for future usage. Ensure you are passing these tokens to Recurly in a timely manner to avoid complications and data loss.
+Sometimes, with all the different terms and token types, it can become confusing to understand who really has the card or payment details in their system. Use this handy table to understand where the card or payment instrument is stored, depending on your gateway solution, payment method and the checkout system you're using.
+
+| Checkout Solution/ Use Case       | Payment Method                             | Gateway                       | Who Stores the Payment Instrument? |
+| :-------------------------------- | :----------------------------------------- | :---------------------------- | :--------------------------------- |
+| Recurly.js or API                 | Cards                                      | Any, except Stripe, Braintree | Recurly                            |
+| Recurly.js or API                 | Cards                                      | Stripe, Braintree             | Recurly and Stripe or Braintree    |
+| Recurly.js or API                 | Bank Accounts (ACH, SEPA, BACS, BECS)      | GoCardless                    | Recurly and GoCardless             |
+| Imported Tokens                   | Any                                        | Token Supportive Gateways     | The Gateway                        |
+| Recurly.js                        | APMs (Wallets like Cash App, PayPal, etc.) | Adyen                         | Adyen                              |
+| Stripe Payment / Express Elements | Any                                        | Stripe                        | Stripe                             |
+| Adyen Web Components              | Any                                        | Adyen                         | Adyen                              |
