@@ -9,12 +9,6 @@ metadata:
 
 Tokens come in all shapes and sizes, and in payments, is an overloaded word. There are different types of tokens that Recurly supports internally and with our various gateways with varying levels of portability, expiry, and interoperability. The three types of tokens this article will focus on are:
 
-* Network Tokens: A card token derived by the Network (such as Visa) that can be sent to many different gateways. It is not bound to a single gateway provider.
-* Gateway Tokens: A payment method "token" derived by an individual gateway that can contain payment instrument data for multiple different payment methods including cards, bank details, and wallet details. Gateway tokens are tied to the provider they come from.
-  * For example, Adyen gateway tokens can only be used with Adyen, and are not usable on Stripe or Braintree.
-* One-time Use Tokens: A type of token that can only be used once, typically has a short lifespan (and sometimes expires), and is only useful for porting sensitive data from a merchant's website to Recurly via API. These tokens cannot be used for renewals and are only created and used for consumer checkout experiences.
-  * Examples include: Recurly.js tokens, Stripe c\_tokens (for Payment Elements), and Braintree nonces.
-
 ### Required plan
 
 This feature is available to all customers on any plan.
@@ -22,6 +16,24 @@ This feature is available to all customers on any plan.
 ### Prerequisites
 
 To use gateway tokens from a supported gateway, or import them, it is important to ensure that Recurly supports the logic to handle this piece of data properly. Overall, for cards and certain Direct Debit payment methods, Recurly stores this information in our systems encrypted, and does not tokenize the payment method. This storage ensures that you, as a merchant, can [configure multiple gateways](https://docs.recurly.com/docs/gateway-configuration#/) for a truly scaleable and flexible business.
+
+### Limitations
+
+* Where we only have a Gateway Token, gateway failover to other gateways is not possible.
+
+* Imported tokens do not display payment methods details in most cases.
+
+* Where we only have a Gateway Token, Account Updater for cards is not possible.
+
+# Definition
+
+A gateway token, which can be an overloaded term, is a value that references a payment instrument (card, bank account, cash app token, etc.) that is stored at a partner gateway. Gateway tokens are not transferrable to other gateways, meaning if you are using Adyen tokens for renewals on Recurly, that subscription cannot be processed on Stripe. We support other types of tokens as well, so the space becomes confusing as Recurly makes use of all types of tokens to support the complex payments space.
+
+* **Network Tokens**: A card token derived by the Network (such as Visa) that can be sent to many different gateways. It is not bound to a single gateway provider.
+* **Gateway Tokens**: A payment method "token" derived by an individual gateway that can contain payment instrument data for multiple different payment methods including cards, bank details, and wallet details. Gateway tokens are tied to the provider they come from.
+  * For example, Adyen gateway tokens can only be used with Adyen, and are not usable on Stripe or Braintree.
+* **One-time Use Tokens**: A type of token that can only be used once, typically has a short lifespan (and sometimes expires), and is only useful for porting sensitive data from a merchant's website to Recurly via API. These tokens cannot be used for renewals and are only created and used for consumer checkout experiences.
+  * Examples include: Recurly.js tokens, Stripe c\_tokens (for Payment Elements), and Braintree nonces.
 
 ### When does Recurly Tokenize?
 
@@ -34,22 +46,8 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 * **Amazon**: By design, all payment methods are stored at Amazon, and Recurly stores a billing agreement or charge permission ID for renewals and one-time payments with Amazon V1 and V2.
 * **PayPal**: By design, all payment methods are stored at PayPal, and Recurly retains a token or billing agreement for renewals and one-time payments with all PayPal gateways. One caveat is PayPal Complete, where we do retain the raw card details or 'PAN' as well as create a PayPal gateway token for renewals.
 
-### Limitations
-
-* Where we only have a Gateway Token, gateway failover to other gateways is not possible.
-
-* Imported tokens do not display payment methods details in most cases.
-
-* Where we only have a Gateway Token, Account Updater for cards is not possible.
-
-# Definition
-
-A gateway token, which can be an overloaded term, is a value that references a payment instrument (card, bank account, cash app token, etc.) that is stored at a partner gateway. Gateway tokens are not transferrable to other gateways, meaning if you are using Adyen tokens for renewals on Recurly, that subscription cannot be processed on Stripe.
-
 # Key benefits
 
-* **Benefit:** Sentences...
-* **Benefit:** Sentences...
-* **Benefit:** Sentences...
-
-# Key details
+* **Network Tokens:** Using a network token instead of a gateway token assures that you can failover to other gateways if you use multiple providers. You can also move existing subscriptions to other gateways if you choose to leave your current gateway for another one that supports network tokens.
+* **Gateway Tokens:** With gateway tokens, this assures that your gateway has full control over the payment instrument, and if you are using Account Updater with your gateway partner, those details will remain up to date. Downsides arise when you wish to move to another gateway partner with Recurly, or use certain features that require the full payment instrument stored in our system. See limitations for more information.
+* **One-time Use Tokens:** Security and reduced PCI Scope! Usage of an R.js token or Stripe confirmation tokens (ctokens) ensure that your customer's sensitive data does not touch your servers. However, these tokens are ephemeral, and cannot be stored for future usage. Ensure you are passing these tokens to Recurly in a timely manner to avoid complications and data loss.
