@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Prerequisites
 
 * Integration with Recurly's API or select client libraries.
-* Recurly's Authorization and Capture feature is compatible with several credit card gateways, including Braintree, Stripe, Adyen, Cybersource, Authorize.net, and CardConnect. Additional gateways will be integrated based on merchant demand.
+* Recurly's Authorization and Capture feature is compatible with several credit card gateways, including Braintree, Stripe, Adyen, PayPal Complete, Cybersource, Authorize.net, and CardConnect. Additional gateways will be integrated based on merchant demand.
 
 ### Limitations
 
@@ -67,7 +67,7 @@ Recurly’s "Authorization and Capture" functionality enables merchants to first
 
 #### Part 1: Initiating authorization
 
-* **Step 1**: Access Recurly's API or select client libraries. 
+* **Step 1**: Access Recurly's API or select client libraries.
 * **Step 2**: Submit a POST request to `v2/purchases/authorize` OR `v3/purchases/authorize` (based on your current API version).
 * **Step 3**: Ensure the transaction details are correctly entered.
 
@@ -81,6 +81,6 @@ Recurly’s "Authorization and Capture" functionality enables merchants to first
 * **Step 1**: If you decide not to capture the funds, use the `/cancel` endpoint.
 * **Step 2**: Include the transaction UUID from the original authorization: `v2/purchases/transaction-uuid-<AUTHORIZED-TXN-UUID-HERE>/cancel`or `v3/purchase/{transaction_id}/cancel`, again depending on your version in use.
 
-**For V2 Implementations**: You can find all documentation for [V2 Authorize](https://recurly.com/developers/api-v2/v2.29/#operation/authorizePurchase), [V2 Capture](https://recurly.com/developers/api-v2/v2.29/#operation/capturePurchase) and [V2 Cancel](https://recurly.com/developers/api-v2/v2.29/#operation/cancelPurchase) documentation in Recurly's developer hub. 
+**For V2 Implementations**: You can find all documentation for [V2 Authorize](https://recurly.com/developers/api-v2/v2.29/#operation/authorizePurchase), [V2 Capture](https://recurly.com/developers/api-v2/v2.29/#operation/capturePurchase) and [V2 Cancel](https://recurly.com/developers/api-v2/v2.29/#operation/cancelPurchase) documentation in Recurly's developer hub.
 
 **For V3 Implementations**: You can find [V3 Authorize](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_authorize_purchase), [V3 Capture](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_capture_purchase) and [V3 Cancel](https://recurly.com/developers/api/v2021-02-25/index.html#operation/cancelPurchase) as well in the [latest V3 documentation](https://recurly.com/developers/api/v2021-02-25/index.html).
