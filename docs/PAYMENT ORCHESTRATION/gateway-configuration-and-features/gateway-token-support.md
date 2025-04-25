@@ -63,7 +63,8 @@ Sometimes, with all the different terms and token types, it can become confusing
 | Recurly.js or API                 | Cards                                      | Any, except Stripe, Braintree | Recurly                            |
 | Recurly.js or API                 | Cards                                      | Stripe, Braintree             | Recurly and Stripe or Braintree    |
 | Recurly.js or API                 | Bank Accounts (ACH, SEPA, BACS, BECS)      | GoCardless                    | Recurly and GoCardless             |
-| Imported Tokens                   | Any                                        | Token Supportive Gateways     | The Gateway                        |
 | Recurly.js                        | APMs (Wallets like Cash App, PayPal, etc.) | Adyen                         | Adyen                              |
 | Stripe Payment / Express Elements | Any                                        | Stripe                        | Stripe                             |
 | Adyen Web Components              | Any                                        | Adyen                         | Adyen                              |
+| Imported Tokens                   | Any                                        | Token Supportive Gateways     | The Gateway                        |
+| Network Tokens                    | Cards                                      | Any                           | Recurly and Visa                   |
