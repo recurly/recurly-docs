@@ -64,8 +64,8 @@ Sometimes, with all the different terms and token types, it can become confusing
 | Recurly.js or API                                | Cards                                              | Stripe, Braintree                | Recurly and Stripe or Braintree    |
 | Recurly.js or API                                | Bank Accounts (ACH, SEPA, BACS, BECS)              | GoCardless                       | Recurly and GoCardless             |
 | Recurly.js                                       | APMs (Wallets like Cash App, PayPal, Amazon, etc.) | Adyen, PayPal, Braintree, Amazon | Adyen, PayPal, Braintree, Amazon   |
-| Stripe Payment / Express Elements                | Any                                                | Stripe                           | Stripe                             |
-| Adyen Web Components                             | Any                                                | Adyen                            | Adyen                              |
-| Imported Gateway Tokens                          | Any                                                | Token Supportive Gateways        | The Gateway                        |
+| Stripe Payment / Express Elements                | Any Supported                                      | Stripe                           | Stripe                             |
+| Adyen Web Components                             | Any Supported                                      | Adyen                            | Adyen                              |
+| Imported Gateway Tokens                          | Any Supported                                      | Token Supportive Gateways        | The Gateway                        |
 | Imported Cards or Bank Accounts, where supported | Cards, Bank Details                                | Any                              | Recurly                            |
 | Network Tokens                                   | Cards                                              | Any                              | Recurly and Visa                   |
