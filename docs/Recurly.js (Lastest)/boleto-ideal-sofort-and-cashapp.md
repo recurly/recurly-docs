@@ -9,9 +9,19 @@ hidden: false
 metadata:
   robots: index
 ---
-## Boleto, iDEAL, Sofort, CashApp
+`recurly.AlternativePaymentMethods` is a convenience wrapper around Adyen’s JavaScript component.\
+With one configuration object you can:
 
-Each of these payment methods share almost the same implementation, with some differences in the initial configuration and some other parameters.
+* **Render** a localized payment-method UI (Boleto, iDEAL, Sofort, or Cash App) inside any container.
+* **Tokenize** the shopper’s details—no sensitive information hits your server.
+* **Emit** a Recurly token that you send to any v3 endpoint that accepts `billing_info`.
+* **Hand off / handle actions** (iDEAL & Sofort redirects) or skip them entirely (Cash App).
+
+### Prerequisites and limitations
+
+* Your Recurly site must be connected to **Adyen** and the payment-method(s) you intend to offer must be enabled in your Adyen merchant account.
+* For **iDEAL** and **Sofort** you **must** provide a `returnURL`.
+* Cash App does **not** return an `action_result`; you can ignore `paymentMethod.handleAction`.
 
 ### Configuration
 
