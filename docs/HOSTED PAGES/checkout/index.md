@@ -16,7 +16,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview 
+# Overview
 
 ### Required plan
 
@@ -50,7 +50,7 @@ A Checkout Session's framework is composed of three core components: Checkout St
 ### Checkout styles
 
 Checkout Styles define your Checkout's visual theme. You have the flexibility to craft various styles that resonate with your brand identity, including incorporating your logo and brand colors.\
-A standard default style is available for immediate use. 
+A standard default style is available for immediate use.
 
 ### Checkout hostnames
 
@@ -70,7 +70,9 @@ Checkout Configurations act as blueprints for determining the structure of your 
 
 ### Targeted Personalization
 
-* **Localization** Checkout determines the customer location and updates the language automatically.
+#### **Localization**
+
+Checkout determines the customer location and updates the language automatically.
 
 With Recurly's Hosted Pages, businesses can cater to a diverse global audience. The pages support a plethora of languages, ensuring that subscribers have a native and intuitive experience. The languages offered are:
 
@@ -91,10 +93,13 @@ With Recurly's Hosted Pages, businesses can cater to a diverse global audience. 
 
 Each language rendition is meticulously crafted, ensuring that nuances and specific regional dialects are considered, providing subscribers with a seamless and localized experience based on their browser's language preferences.
 
-* **Payment method & Currency**  Checkout provides the recommended payment method and currency based on the user location.
-  * **Cards**: credit & debit
-  * **Direct Debits**: ACH, SEPA, BECS, BACS
-  * **Wallets**: Apple Pay & Amazon Pay
+#### **Payment method an currency**
+
+Checkout provides the recommended payment method and currency based on the user location.
+
+* **Cards**: credit & debit
+* **Direct Debits**: ACH, SEPA, BECS, BACS
+* **Wallets**: Apple Pay, Amazon Pay V1 and Amazon Pay V2
 
 **Device responsive**:  Checkout detects the device type and resizes to the optimized layout.
 
@@ -102,9 +107,9 @@ Each language rendition is meticulously crafted, ensuring that nuances and speci
 
 To begin, navigate to Configuration → Checkout.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/e536530-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e536530-image.png" />
 
-The configuration page offers flexibility with 3 main areas to modify the Checkout configurations. Here you can create different sets of hostnames, modify configurations and styles to create different experiences for customers based on where they are coming from, different promotions, different products or brands. 
+The configuration page offers flexibility with 3 main areas to modify the Checkout configurations. Here you can create different sets of hostnames, modify configurations and styles to create different experiences for customers based on where they are coming from, different promotions, different products or brands.
 
 ## Hostname
 
@@ -116,7 +121,7 @@ Use the Hostname to specify the locations where your customers will complete the
 
 #### Recurly-hosted domain
 
- The default hostname which is set up for you out of the box. Your checkout will be available at \<your-subdomain>.recurlycheckout.com.
+The default hostname which is set up for you out of the box. Your checkout will be available at \<your-subdomain>.recurlycheckout.com.
 
 **Please note:** if your subdomain is changed, the Checkout URLs will still be set to the original subdomain that was configured and will not be updated. To update your Checkout pages, please contact [Support]().
 
@@ -124,11 +129,11 @@ Use the Hostname to specify the locations where your customers will complete the
 
 A custom Checkout domain allow you to operate a Checkout on your own domain. Setting up a custom Checkout domain involves some domain configuration on your part, outside of Recurly.
 
-Note: there is no limit to the number of hostnames that can be configured for production sites. Sandbox sites can have up to 5 hostnames. 
+Note: there is no limit to the number of hostnames that can be configured for production sites. Sandbox sites can have up to 5 hostnames.
 
 To create a new hostname, select **Create new Hostname**.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/b173f28-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b173f28-image.png" />
 
 **Location details** - URL is where you specify the hostname location (domain and optional subdomain) where your customers will access your Checkouts..In order to use a custom domain:
 
@@ -155,11 +160,11 @@ Recurly will provision an SSL certificate for your custom domain. The provisioni
 
 **Configuration - default checkout configuration:** initially, this will be set to the default checkout configuration, but can be configured to include any checkout configuration.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/fc3f956-Screen_Shot_2024-06-03_at_5.12.51_PM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/fc3f956-Screen_Shot_2024-06-03_at_5.12.51_PM.png" />
 
 ## Configurations
 
-Configuration is where you set up the products to sell and configure additional Checkout capabilities. 
+Configuration is where you set up the products to sell and configure additional Checkout capabilities.
 
 **About this configuration**
 
@@ -177,10 +182,10 @@ For the selected configuration, you are able to choose the style you wish to app
    2. Without a URL, the customer will receive the standard confirmation page upon purchase.
 2. **Configure** a Cancellation URL
    1. A **Back** button will become visible and the user will be sent to the specified URL when a customer uses that **Back** button.
-3. **Utilize** a Finish URL 
+3. **Utilize** a Finish URL
    1. The URL will appear at the bottom of the standard confirmation page with the words "Return to \[site name]."
 4. Privacy Policy URL
-   1. A checkbox to accept the Privacy Policy and/or Terms of Service will appear on the Checkout page with a link to the URL provided. 
+   1. A checkbox to accept the Privacy Policy and/or Terms of Service will appear on the Checkout page with a link to the URL provided.
 5. Terms of Service URL
    1. A checkbox to accept the Privacy Policy and/or Terms of Service will appear on the Checkout page with a link to the URL provided.
 6. Additional address fields
@@ -201,7 +206,7 @@ This section allows additional configuration regarding the products, currencies,
 
 * When enabled, customers will be able to select one among any subscriptions in the cart. This option is ideal for allowing your customers to select a plan period during Checkout.
 
-**Disable currency selection** 
+**Disable currency selection**
 
 * When enabled, customers will be unable to change their currency on the Checkout page. Currency will be determined by the browser locale.
 
@@ -215,7 +220,7 @@ This section allows additional configuration regarding the products, currencies,
 
 ## Cart
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/21982cb-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/21982cb-image.png" />
 
 ### Currencies
 
@@ -235,14 +240,14 @@ The products your customer can purchase using this Checkout Configuration.
 * Specify the quantity of the plan that a customer can purchase, and optionally enable the customer to edit the quantity they wish to purchase.
 * Any plans with add-ons can have the add-ons configured to be able to be sold along with the subscription sign up, and define if they are able to be added, specify the quantity, or allow the customer to edit the quantity.
   * Add-ons may be plan based or item based.
-* Specify the one time purchases you would like to add to the checkout configuration. 
+* Specify the one time purchases you would like to add to the checkout configuration.
   * One time purchases must be in the item catalog.
-* One time purchases can be sold as a standalone product without a subscription. 
-  * One time purchases must be in the item catalog. 
+* One time purchases can be sold as a standalone product without a subscription.
+  * One time purchases must be in the item catalog.
 
 ## Styles
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/0326777-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0326777-image.png" />
 
 Customize the appearance of your checkout pages to match your brand identity. To begin, click edit on the starter style or click new style to create your own.
 
@@ -251,17 +256,17 @@ Customize the appearance of your checkout pages to match your brand identity. To
 * Add **Logo**, which will display in the header. Logo file size cannot exceed 256 KB. The logo will be autoscaled based on the viewport size of the device.
 * Add **Icon**, which will display as the browser favicon.
 * **Styles** can be added to a configuration (one style per configuration).
-* **Enable** as many styles as needed to match each configuration. 
+* **Enable** as many styles as needed to match each configuration.
 
 # Checkout pages - view checkout (preview)
 
-<Image align="center" className="border" width="33% " border={true} src="https://files.readme.io/f642418-image.png" />
+<Image align="center" className="border" border={true} width="33% " src="https://files.readme.io/f642418-image.png" />
 
 Checkout Pages configuration allows you to mix and match different host names and configurations on the fly.
 
 * **Select** a host name and a configuration.
 * **View** Checkout allows you to preview the Checkout page in real time.
-* **Copy** link to embed into your checkout workflow. 
+* **Copy** link to embed into your checkout workflow.
 
 # Analytics
 
@@ -278,7 +283,7 @@ This chart outlines the new capabilities that Checkout offers, that were not ava
 ### Enablement and access
 
 **Q: How can I access this feature?**\
-**A:**All sites created after May of 2024 will have Checkout automatically. Please contact support to enable it on your site if not already enabled. If you have Checkout, this feature is under Configuration > Checkout in the Recurly App navigation. 
+\*\*A:\*\*All sites created after May of 2024 will have Checkout automatically. Please contact support to enable it on your site if not already enabled. If you have Checkout, this feature is under Configuration > Checkout in the Recurly App navigation.
 
 ### Requirements for use
 
