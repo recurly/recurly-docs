@@ -9,14 +9,6 @@ hidden: false
 metadata:
   robots: index
 ---
-### metadata description
-
-Add PSD2-compliant 3-D Secure (3DS 2.x) flows to your Recurly.js checkout so cardholders can complete issuer-mandated authentication without leaving your page.
-
-***
-
-## Overview
-
 `recurly.Risk().ThreeDSecure()` lets you trigger and complete Strong Customer Authentication (SCA) in-browser. Pass the `three_d_secure_action_token_id` (or proactive token) you received from the Recurly API, attach the component to an element on your page, and listen for either a `token` (success) or `error` event. The library handles device-fingerprinting, challenge display, and returns a `three_d_secure_action_result` token you can use in any subsequent API call (purchase, subscription, billing-info update, etc.).
 
 ## Prerequisites & limitations
