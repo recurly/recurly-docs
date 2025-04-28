@@ -79,7 +79,7 @@ InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 
 ***
 
-## Token rules & security
+## Token rules and security
 
 | Rule          | Detail                                                                                          |
 | ------------- | ----------------------------------------------------------------------------------------------- |
