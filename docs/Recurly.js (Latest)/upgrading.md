@@ -1,5 +1,8 @@
 ---
 title: Upgrading
+excerpt: >-
+  Step-by-step guidance for migrating legacy Recurly.js integrations—Hosted
+  Fields, v3, and older—to modern v4 Elements.
 deprecated: false
 hidden: false
 metadata:
