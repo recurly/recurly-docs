@@ -1,5 +1,9 @@
 ---
 title: Boleto, iDEAL, Sofort, and CashApp
+excerpt: >-
+  Implement Boleto, iDEAL, Sofort, and Cash App with a single Recurly.js
+  integration that renders the Adyen payment component, handles tokenization,
+  and returns a secure payment-method token for your server-side purchase call.
 deprecated: false
 hidden: false
 metadata:
