@@ -16,9 +16,9 @@ Recurly.js lets you gather bank-account information directly on your checkout pa
 * **UK Bacs**
 * **Australia Becs**
 
-## Bank Accounts: US, IBAN, Bacs, Becs
+# Key details
 
-### US Bank Accounts
+### US bank accounts
 
 Tokenize your users' bank account information
 
@@ -36,7 +36,7 @@ Just as with a card form, use the `data-recurly` attribute to identify fields to
 </form>
 ```
 
-#### US Bank Account inputs
+#### US bank account inputs
 
 | Field Name                    | Example                 | Description                               |
 | :---------------------------- | :---------------------- | :---------------------------------------- |
@@ -46,7 +46,7 @@ Just as with a card form, use the `data-recurly` attribute to identify fields to
 | account\_type                 | `checking` or `savings` | Account type. **Required**                |
 | name\_on\_account             | `Pat Smith`             | Full name on account. **Required**        |
 
-#### Getting a Token
+#### Getting a token
 
 ##### <span class="heading-tag heading-tag--fn">fn</span> recurly.bankAccount.token
 
@@ -96,7 +96,7 @@ This sends bank account billing information to Recurly to store as a token, retu
 
 ***
 
-### International Bank Accounts (IBAN)
+### International bank accounts (IBAN)
 
 Tokenize your users' International Bank Account (IBAN) information in\
 order to process SEPA transactions.
@@ -122,7 +122,7 @@ identify IBAN specific inputs. Since Recurly.js does not need to inject fields f
 | iban              | `GB33BUKB20201555555555` | The [International Bank Account Number](https://en.wikipedia.org/wiki/International_Bank_Account_Number), up to 34 alphanumeric characters comprising a country code, two check digits, and a number that includes the domestic bank account number, branch identifier, and potential routing information. (SEPA only) **Required** |
 | country           | `FR`                     | ISO 3166 two-letter country code. This code must match a country in the European Union (EU) **Required**                                                                                                                                                                                                                            |
 
-#### Getting a Token
+#### Getting a token
 
 ##### <span class="heading-tag heading-tag--fn">fn</span> recurly.bankAccount.token
 
@@ -158,7 +158,7 @@ function tokenHandler (err, token) {
 
 This sends IBAN information to Recurly to store as a token, returning that token id back to you via callback.
 
-### UK Bank Accounts (Bacs)
+### UK bank accounts (BACS)
 
 Tokenize your users' UK based Bank Account (Bacs) information in\
 order to process Bacs transactions.
@@ -178,7 +178,7 @@ identify Bacs specific inputs. Since Recurly.js does not need to inject fields f
 </form>
 ```
 
-### UK Bank Account (Bacs) inputs
+### UK bank account (BACS) inputs
 
 | Field Name                    | Example          | Description                               |
 | :---------------------------- | :--------------- | :---------------------------------------- |
@@ -188,7 +188,7 @@ identify Bacs specific inputs. Since Recurly.js does not need to inject fields f
 | type                          | `bacs`           | Account type. **Required**                |
 | name\_on\_account             | `Charles George` | Full name on account. **Required**        |
 
-#### Getting a Token
+#### Getting a token
 
 ##### <span class="heading-tag heading-tag--fn">fn</span> recurly.bankAccount.token
 
@@ -244,7 +244,7 @@ Alternatively, you can call `recurly.bankAccount.token` with a plain JavaScript 
 
 A callback is always required
 
-#### Callback Arguments
+#### Callback arguments
 
 | Param      | Type                     | Description                                              |
 | :--------- | :----------------------- | :------------------------------------------------------- |
@@ -259,7 +259,7 @@ Nothing.
 
 ***
 
-### Australian Bank Accounts (Becs)
+### Australian bank accounts (BECS)
 
 Tokenize your users' Australian based Bank Account (Becs) information in\
 order to process Becs transactions.
@@ -279,7 +279,7 @@ identify Becs specific inputs. Since Recurly.js does not need to inject fields f
 </form>
 ```
 
-#### Australian Bank Account (Becs) inputs
+#### Australian bank account (BECS) inputs
 
 | Field Name                    | Example          | Description                               |
 | :---------------------------- | :--------------- | :---------------------------------------- |
@@ -289,7 +289,7 @@ identify Becs specific inputs. Since Recurly.js does not need to inject fields f
 | type                          | `becs`           | Account type. **Required**                |
 | name\_on\_account             | `Charles George` | Full name on account. **Required**        |
 
-#### Getting a Token
+#### Getting a token
 
 ##### <span class="heading-tag heading-tag--fn">fn</span> recurly.bankAccount.token
 
@@ -345,7 +345,7 @@ Alternatively, you can call `recurly.bankAccount.token` with a plain JavaScript 
 
 A callback is always required
 
-#### Callback Arguments
+#### Callback arguments
 
 | Param      | Type                     | Description                                              |
 | :--------- | :----------------------- | :------------------------------------------------------- |
