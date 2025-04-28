@@ -31,7 +31,6 @@ purchase = {
 }
 invoice_collection = @client.create_purchase(body: purchase)
 ```
-
 ```js node.js
 const purchaseReq = {
   currency: 'USD',
