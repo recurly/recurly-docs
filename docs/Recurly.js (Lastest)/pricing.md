@@ -1,11 +1,23 @@
 ---
 title: Pricing
+excerpt: >-
+  Programmatically calculate real-time checkout totals—plans, add-ons, coupons,
+  taxes, adjustments, gift cards, multi-subscription carts, and more—using
+  `recurly.Pricing.Checkout` in Recurly.js.  
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-## Pricing
+`recurly.Pricing.Checkout` is a client-side pricing engine that mirrors Recurly’s server logic. Attach it to a section of your checkout (or drive it purely through code) and it will keep subtotals, discounts, taxes, and grand totals in sync as customers pick plans, quantities, coupons, gift cards, or custom adjustments. The class emits events on every change, so you can update UI elements or trigger additional logic without extra API calls.
+
+## Prerequisites and limitations
+
+* **Site configuration:** The plans, add-ons, coupons, gift cards, and taxes referenced in your checkout must exist—and be active—on the Recurly site whose public key you’re using.
+* **Currency:** All items in a single `CheckoutPricing` instance must share the same currency code. Change the currency via the `data-recurly="currency"` input or the API before adding items.
+* **One-way DOM binding:** If you call the JavaScript API methods on a pricing instance that’s already `attach`-ed to DOM elements, those input/output elements will **not** auto-update; use API-only mode or re-render values yourself.
+
+# Key details
 
 Recurly automates complicated subscriptions, with many factors influencing the total price at\
 checkout. With this in mind, Recurly.js provides a robust `recurly.Pricing.Checkout` class designed
@@ -147,9 +159,9 @@ information for your item.
 
 It's also possible to specify all adjustment values inline.
 
-| `data-recurly` value | Example Value | Description                                                                                                                                                                                                                                                                                                                                                                        |
-| :------------------- | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| adjustment           | `0`, `1`      | \*\*Adjustment quantity.\*\* \<br>\<br> Set a unique identifier using \`data-recurly-adjustment\`. \<br>\<br> Set the amount using \`data-recurly-adjustment-amount\`, \<br>\<br> currency with \`data-recurly-adjustment-currency\`, \<br>\<br> tax code with \`data-recurly-adjustment-tax-code\`, \<br>\<br> and tax exempt status with \`data-recurly-adjustment-tax-exempt\`. |
+| `data-recurly` value | Example Value | Description                                                                                                                                                                                                                                                                                                                                                          |
+| :------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| adjustment           | `0`, `1`      | **Adjustment quantity.** \<br>\<br> Set a unique identifier using `data-recurly-adjustment`. \<br>\<br> Set the amount using `data-recurly-adjustment-amount`, \<br>\<br> currency with `data-recurly-adjustment-currency`, \<br>\<br> tax code with `data-recurly-adjustment-tax-code`, \<br>\<br> and tax exempt status with `data-recurly-adjustment-tax-exempt`. |
 
 *Example*:
 
