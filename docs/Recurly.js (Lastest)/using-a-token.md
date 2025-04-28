@@ -43,7 +43,6 @@ const purchaseReq = {
 };
 const invoiceCollection = await client.createPurchase(purchaseReq);
 ```
-
 ```python
 purchase = {
     "currency": "USD",
@@ -55,7 +54,6 @@ purchase = {
 }
 invoice_collection = client.create_purchase(purchase)
 ```
-
 ```java
 PurchaseCreate purchase = new PurchaseCreate()
   .currency("USD")
@@ -66,7 +64,6 @@ PurchaseCreate purchase = new PurchaseCreate()
 
 InvoiceCollection collection = client.createPurchase(purchase);
 ```
-
 ```csharp
 var purchaseReq = new PurchaseCreate {
   Currency = "USD",
