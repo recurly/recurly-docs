@@ -9,14 +9,20 @@ hidden: false
 metadata:
   robots: index
 ---
-Once Recurly.js encrypts card data and returns a **token** (`token_id`), your server can pass that token to Recurly’s API in place of raw payment details.\
-This page shows:
+Once Recurly.js encrypts card data and returns a **token** (`token_id`), your server can pass that token to Recurly’s API in place of raw payment details. This page shows:
 
 * Code samples (Ruby, Node, Python, Java, C#) for creating a purchase with a token
 * Which API endpoints accept `token_id`
 * Lifespan, reuse rules, and security best-practices
 
 Tokens keep you out of PCI scope, but they **expire 20 minutes** after creation—so move them from browser → backend → Recurly quickly.
+
+**Take into account**: 
+
+- **Faster PCI compliance**: SAQ-A level—no sensitive data touches your servers.  
+- **Consistent across endpoints**: The same `token_id` works for purchases, subscriptions, or standalone billing-info updates.  
+- **Safe to retry**: Tokens can be reused within 20 minutes, simplifying idempotent flows and error recovery.
+
 
 # Using a token to create a purchase
 
