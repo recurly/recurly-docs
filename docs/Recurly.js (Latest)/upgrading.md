@@ -5,7 +5,19 @@ hidden: false
 metadata:
   robots: index
 ---
-## Upgrading
+Recurly.js v4 replaces legacy approaches with **Elements**, a flexible, iframe-based system that improves security, styling control, and future-proof access to features such as 3-D Secure, Apple Pay, and risk tools. This upgrade guide shows:
+
+1. How to convert Hosted Fields configs to Elements.
+2. What changes are required when moving from v3.
+3. Why versions prior to v3 require a full re-implementation.
+
+## Prerequisites and limitations
+
+* **Site must already be on Recurly.js v4+** (Elements are not back-ported).
+* **Token format unchanged** – existing server-side API calls continue to work once you pass the new token.
+* Upgrading from v2 or earlier **necessitates a complete rewrite**; there is no drop-in shim.
+
+# Key details
 
 Upgrading from previous versions and deprecated features of Recurly.js
 
