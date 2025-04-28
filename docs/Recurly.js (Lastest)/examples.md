@@ -1,0 +1,15 @@
+---
+title: Examples
+excerpt: >-
+  Quick links to officially-maintained sample integrations for Ruby, Node.js,
+  Python, and PHP.
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+---
+We've prepared a full suite of example integrations for Ruby, Node.js, Python, and PHP using popular web frameworks for each language. These examples demonstrate the simplest method of integration, with a no-frills UI.
+
+* [**See examples in GitHub**](https://github.com/recurly/recurly-integration-examples)
+
+***
