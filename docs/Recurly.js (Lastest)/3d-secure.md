@@ -1,5 +1,9 @@
 ---
 title: 3D Secure
+excerpt: >-
+  Add PSD-2 compliant 3-D Secure (3DS 2.x) flows to your Recurly.js checkout so
+  card-holders can complete issuer-mandated authentication without leaving your
+  page.
 deprecated: false
 hidden: false
 metadata:
