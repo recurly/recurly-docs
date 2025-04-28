@@ -32,6 +32,8 @@ A new `CheckoutPricing` instance.
 
 #### <span class="heading-tag heading-tag--fn">fn</span> CheckoutPricing.attach
 
+Given the following example HTML structure
+
 ```html
 <section id="my-checkout">
   <select data-recurly="plan">
@@ -42,29 +44,20 @@ A new `CheckoutPricing` instance.
 </section>
 ```
 
-<br />
-
-<br />
-
-<br />
-
-Given the following example HTML structure
-
 Use `checkoutPricing.attach` to bind the `<section>` to the checkout pricing calculator.
 
-```js
+```javascript
 const checkoutPricing = recurly.Pricing.Checkout();
 
 checkoutPricing.attach('#my-checkout');
 ```
 
-This is the simplest way to use a `CheckoutPricing` instance. Simply pass a container element, and the
+This is the simplest way to use a `CheckoutPricing` instance. Simply pass a container element, and the\
 `CheckoutPricing` instance will use all elements with a valid `data-recurly` attribute to determine
 price. When a value changes, the `CheckoutPricing` instance will automatically update its calculations.
-This allows your customers to manipulate your checkout form at will, and have your checkout page's
-prices update automatically.
 
-<br />
+This allows your customers to manipulate your checkout form at will, and have your checkout page's\
+prices update automatically.
 
 ##### Arguments
 
@@ -74,23 +67,13 @@ prices update automatically.
 
 ##### Returns
 
-<br />
-
 Nothing.
-
-<br />
 
 ##### HTMLElements
 
-<br />
-
 `HTMLElement`s bound to a `CheckoutPricing` instance may be for either input or output.
 
-<br />
-
 ##### Input HTMLElements
-
-<br />
 
 Input elements should be user-manipulable elements like `input` or `select`. If you want to input a\
 value but not let a customer manipulate it, use an `<input type="hidden">`.
@@ -142,13 +125,13 @@ adjustments.
 You may specify an item code from your Recurly catalog. This will automatically retrieve the pricing\
 information for your item.
 
-| `data-recurly` value | Example Value | Description                                                                                                                                                                  |
-| :------------------- | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| adjustment           | `0`, `1`      | \*\*Adjustment quantity.\*\* \<br>\<br> Set a unique identifier using \`data-recurly-adjustment\`. \<br>\<br> Set the item code using \`data-recurly-adjustment-item-code\`. |
+| `data-recurly` value | Example Value | Description                                                                                                                                                          |
+| :------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| adjustment           | `0`, `1`      | **Adjustment quantity.** \<br>\<br> Set a unique identifier using `data-recurly-adjustment`. \<br>\<br> Set the item code using `data-recurly-adjustment-item-code`. |
 
 *Example*:
 
-````html
+```html
 <section id="my-checkout">
   My product
   x
@@ -160,15 +143,13 @@ information for your item.
 </section>
 ```
 
-<br>
-
 **Specifying adjustment properties inline**
 
 It's also possible to specify all adjustment values inline.
 
-| `data-recurly` value | Example Value | Description          |
-|:---------------------|:--------------|:---------------------|
-| adjustment           | `0`, `1`      | **Adjustment quantity.** <br><br> Set a unique identifier using `data-recurly-adjustment`. <br><br> Set the amount using `data-recurly-adjustment-amount`, <br><br> currency with `data-recurly-adjustment-currency`, <br><br> tax code with `data-recurly-adjustment-tax-code`, <br><br> and tax exempt status with `data-recurly-adjustment-tax-exempt`.
+| `data-recurly` value | Example Value | Description                                                                                                                                                                                                                                                                                                                                                                        |
+| :------------------- | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| adjustment           | `0`, `1`      | \*\*Adjustment quantity.\*\* \<br>\<br> Set a unique identifier using \`data-recurly-adjustment\`. \<br>\<br> Set the amount using \`data-recurly-adjustment-amount\`, \<br>\<br> currency with \`data-recurly-adjustment-currency\`, \<br>\<br> tax code with \`data-recurly-adjustment-tax-code\`, \<br>\<br> and tax exempt status with \`data-recurly-adjustment-tax-exempt\`. |
 
 *Example*:
 
@@ -195,8 +176,7 @@ It's also possible to specify all adjustment values inline.
          data-recurly-adjustment-tax-exempt="true"
          value="1">
 </section>
- 
-````
+```
 
 ###### Other
 
@@ -222,7 +202,7 @@ Output elements should be plain text elements like `output`, `span`, or `div`.
 | currency\_code       | `USD`, `EUR`  | ISO-4217 currency code.                                                  |
 | currency\_symbol     | `$`, `€`      | Symbolic representation of `currency_code`.                              |
 
-> **Note**: `data-recurly` values ending in `_now` like `subtotal_now` have counterparts ending in `_next`.
+> **Note**: `data-recurly` values ending in `_now` like `subtotal_now` have counterparts ending in `_next`.\
 > As you might expect, these correspond to the next billing cycle cost. These values are especially
 > useful for subscriptions with trial periods.
 
@@ -265,7 +245,7 @@ consider using our **[react-recurly library](https://github.com/recurly/react-re
 The example below demonstrates all the ways that a `CheckoutPricing` instance can be manipulated\
 directly.
 
-```js
+```javascript
 const checkoutPricing = recurly.Pricing.Checkout();
 
 // Add a $10 adjustment
@@ -323,7 +303,7 @@ out of your way and facilitate asynchronous calls for you.
 The `catch` method, as shown in the example, is used to handle error scenarios, such as when an\
 addon cannot be applied to the selected plan.
 
-> **Note**: At the end of a chain of pricing method calls, be sure to call `.done()` as this tells the Pricing
+> **Note**: At the end of a chain of pricing method calls, be sure to call `.done()` as this tells the Pricing\
 > instance to begin calculating, and gives you the subscription price.
 
 ### Example PricingState Object
