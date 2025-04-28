@@ -97,7 +97,7 @@ card.on('submit', () => {
 });
 ```
 
-See [Elements](#elements) for details on all events emitted by an `Element`.
+See [Elements](https://docs.recurly.com/v1.2/docs/elements#/) for details on all events emitted by an `Element`.
 
 **Changes to Getting a Token**
 
@@ -125,22 +125,22 @@ recurly.token(elements, form, (err, token) => {
 });
 ```
 
-We are happy to assist further in your upgrade path. Feel free to reach out to us for [Support](#support).
+We are happy to assist further in your upgrade path. Feel free to reach out to us for [Support](https://support.recurly.com/hc/en-us).
 
 ### Upgrading from v3
 
 Recurly.js v4 introduced the concept of Elements. These are a more secure method of capturing customer card data, ensuring that their payment information is never exposed to your payment form. This is a huge benefit for security and reduced PCI compliance exposure.
 
-First, you will need to update your payment form. The credit card fields `number`, `month`, `year`, and `cvv` will need to be removed and replaced with a container element in the form `<div id="my-recurly-card-element"></div>`. The id is entirely optional, and is simply added for ease of reference. We recommend using the card field since it incorporates validation and UX improvements, but it is also possible to use separate fields for the number, month, year, and cvv. This is explained more completely in the [Getting Started](#getting-started) section.
+First, you will need to update your payment form. The credit card fields `number`, `month`, `year`, and `cvv` will need to be removed and replaced with a container element in the form `<div id="my-recurly-card-element"></div>`. The id is entirely optional, and is simply added for ease of reference. We recommend using the card field since it incorporates validation and UX improvements, but it is also possible to use separate fields for the number, month, year, and cvv. This is explained more completely in the [Getting Started](https://docs.recurly.com/v1.2/docs/getting-started#/) section.
 
-Your `recurly.token` call may also need to be updated. It is now necessary to pass a reference to your `Elements` instance and the checkout `<form>` that contains your user's billing info. Your callback function requires no modification. More info is available in the [Getting a Token](#getting-a-token) section.
+Your `recurly.token` call may also need to be updated. It is now necessary to pass a reference to your `Elements` instance and the checkout `<form>` that contains your user's billing info. Your callback function requires no modification. More info is available in the [Getting a Token](https://docs.recurly.com/v1.2/docs/getting-a-token#/) section.
 
-You'll notice that the Elements won't look like the rest of your payment form inputs. That is because they are in fact iframes, and will need to be styled in order to get them to look right. We provide a stylesheet that works as a good baseline for styling the Elements to your needs (See the [Getting Started](#getting-started) section). To tweak styles further, and to cover styles for when the Element is focused, etc, see the [Styling Elements](#styling-elements) section.
+You'll notice that the Elements won't look like the rest of your payment form inputs. That is because they are in fact iframes, and will need to be styled in order to get them to look right. We provide a stylesheet that works as a good baseline for styling the Elements to your needs (See the [Getting Started](https://docs.recurly.com/v1.2/docs/getting-started#/) section). To tweak styles further, and to cover styles for when the Element is focused, etc, see the [Styling Elements](https://docs.recurly.com/v1.2/docs/styling-elements#/) section.
 
-We are happy to assist further in your upgrade path. Feel free to reach out to us for [Support](#support).
+We are happy to assist further in your upgrade path. Feel free to reach out to us for [Support](https://support.recurly.com/hc/en-us).
 
 ### Upgrading from versions prior to v3
 
-Since version 3, Recurly.js shifted to credit card tokenization as its method of billing info capture. Given the significant changes, upgrading from an earlier version of Recurly.js will require a full rewrite of your integration. Please see the [Getting Started](#getting-started) section to begin.
+Since version 3, Recurly.js shifted to credit card tokenization as its method of billing info capture. Given the significant changes, upgrading from an earlier version of Recurly.js will require a full rewrite of your integration. Please see the [Getting Started](https://docs.recurly.com/v1.2/docs/getting-started#/) section to begin.
 
 ***
