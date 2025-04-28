@@ -9,7 +9,7 @@ hidden: false
 metadata:
   robots: index
 ---
-`recurly.PayPal` wraps PayPal’s pop-up flow for web. When a shopper authorizes the payment:
+`recurly.PayPal` wraps PayPal’s pop-up flow for the web. When a shopper authorizes the payment:
 
 1. A PayPal window opens and collects approval.
 2. Recurly receives the PayPal billing-agreement details and gives your browser a short-lived token.
