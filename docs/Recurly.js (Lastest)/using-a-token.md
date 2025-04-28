@@ -23,7 +23,6 @@ Tokens keep you out of PCI scope, but they **expire 20 minutes** after creationâ
 - **Consistent across endpoints**: The same `token_id` works for purchases, subscriptions, or standalone billing-info updates.  
 - **Safe to retry**: Tokens can be reused within 20 minutes, simplifying idempotent flows and error recovery.
 
-
 # Using a token to create a purchase
 
 ```ruby
