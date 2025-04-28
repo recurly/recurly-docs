@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Getting started
 excerpt: >-
   A comprehensive guide to getting started with Recurly.js—covering script
   integration, configuration, and building a secure, PCI-compliant payment form
