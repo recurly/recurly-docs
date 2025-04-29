@@ -8,7 +8,7 @@ metadata:
 ---
 ## Using a Token
 
-Create a new purchase with a token using one of our [client libraries](/developers/api/#client-libraries) or [API v3](/developers/api/#api-reference/)
+Create a new purchase with a token using one of our [client libraries](https://recurly.com/developers/api/#client-libraries) or [API v3](https://recurly.com/developers/api/v2021-02-25/index.html)
 
 ```ruby
 purchase = {
