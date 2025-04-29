@@ -1,5 +1,5 @@
 ---
-title: 'Overview: Recurly.js'
+title: 'Overview: Recurly.js (4.10.3)'
 excerpt: Learn about our Recurly.js solution!
 deprecated: false
 hidden: false
