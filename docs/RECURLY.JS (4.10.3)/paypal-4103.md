@@ -36,7 +36,7 @@ var paypal = recurly.PayPal({
 });
 ```
 
-Your instance must then be setup to handle error scenarios and start the checkout flow.
+Your instance must then be set up to handle error scenarios and start the checkout flow.
 
 ```javascript
 paypal.on('error', function (err) {
