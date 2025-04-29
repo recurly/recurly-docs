@@ -16,7 +16,7 @@ next:
 ---
 # Welcome to Recurly
 
-From acquisition to retention to scale, Recurly does it all. Whether you are choosing Recurly to optimize your subscription growth strategy, realize industry-leading revenue recovery, and/or greatly reduce involuntary churn, we are glad you are here. 
+From acquisition to retention to scale, Recurly does it all. Whether you are choosing Recurly to optimize your subscription growth strategy, realize industry-leading revenue recovery, and/or greatly reduce involuntary churn, we are glad you are here. Test.
 
 Recurly is the only platform that has mastered plan management, recurring billing and payments, and intelligent retention, and we look forward to working with you through this experience.
 
