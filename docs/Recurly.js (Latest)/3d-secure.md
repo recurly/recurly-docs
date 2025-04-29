@@ -29,7 +29,7 @@ Strong customer authentication for your users.
 
 Recurly.js provides a set of utilities that allow you to support 3-D Secure authentication on your checkout page seamlessly. For more information on 3-D Secure, see our [Introduction to Strong Customer Authentication](https://docs.recurly.com/docs/revised-payment-services-directive-psd2).
 
-Recurly's support for 3-D Secure utilizes both Recurly.js and our API. For a complete guide to this integration, start with our [Strong Customer Authentication (SCA) Integration Guide](/developers/guides/3ds2.html).
+Recurly's support for 3-D Secure utilizes both Recurly.js and our API. For a complete guide to this integration, start with our [Strong Customer Authentication (SCA) Integration Guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/).
 
 Let's take a look at an example implementation.
 
