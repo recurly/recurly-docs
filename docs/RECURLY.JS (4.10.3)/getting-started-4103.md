@@ -1,11 +1,12 @@
 ---
 title: Getting started (4.10.3)
+excerpt: This is how you get started with **Recurly.js version 4.10.3**.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-## Getting Started
+## Getting started
 
 To begin, you'll include the Recurly.js script on your page.
 
@@ -19,17 +20,17 @@ This exposes a single global object, `recurly`.
 It is not necessary to include recurly.css, but we highly recommend it while you're getting set up.\
 It provides some helpful default styles to Recurly payment fields.
 
-### Self-Hosting Recurly.js
+### Self-hosting Recurly.js
 
-The Recurly-hosted version of recurly.js is designed and updated to maintain compatibility
+The Recurly-hosted version of recurly.js is designed and updated to maintain compatibility\
 with system update deployments that take place from time-to-time. Locally hosted versions of
 recurly.js run the risk of encountering issues with system interaction and incompatibility which
 may result in avoidable service interruptions on your client page. It is for this reason, we highly
 recommend against and do not support locally hosted copies of recurly.js.
 
-### Framework Support
+### Framework support
 
-Due to the necessity of gathering customer payment data within iframe elements, and the nature of
+Due to the necessity of gathering customer payment data within iframe elements, and the nature of\
 reactive framework re-rendering requirements, Recurly does not at this time provide native support
 for reactive frameworks like React and Angular.
 
@@ -43,7 +44,7 @@ This identifies your site to Recurly servers. You can find your public key in th
 recurly.configure('sc-ABCDEFGHI123456789');
 ```
 
-### Use Your Site's Public Key
+### Use your site's public key
 
 Be sure to replace `sc-ABCDEFGHI123456789` with your own public key.
 
