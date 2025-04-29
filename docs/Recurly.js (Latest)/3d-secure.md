@@ -33,7 +33,7 @@ Recurly's support for 3-D Secure utilizes both Recurly.js and our API. For a com
 
 Let's take a look at an example implementation.
 
-```js
+```javascript
 const risk = recurly.Risk();
 const threeDSecure = risk.ThreeDSecure({
   actionTokenId: myActionTokenId
@@ -74,7 +74,7 @@ properly handling 3DS2 challenges.
 Below is an example of disabling this preflight fingerprinting for said gateways\
 above.
 
-```js
+```javascript
 recurly.configure({
   // ...
   risk: {
@@ -100,7 +100,7 @@ This feature is currently available for the following gateways:
 
 Below is an example for enabling this feature.
 
-```js
+```javascript
 recurly.configure({
   // ...
   risk: {
