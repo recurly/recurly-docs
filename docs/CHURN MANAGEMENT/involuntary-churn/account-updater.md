@@ -28,12 +28,12 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 * Integration with Recurly's platform.
 * Activation of the Account Updater feature in the Recurly payment settings page.
-* For American Express® Cardrefresher, an American Express® merchant account is required, and your business / customers must be located in the United States.
+* For American Express® Cardrefresher, an American Express® merchant account is required, and your business must be located in the United States.
 
 ### Limitation
 
 * One-time transactions are not submitted to the Account Updater service.
-* For American Express® Cardrefresher, your business / customers must be located in the United States.
+* For American Express® Cardrefresher, your business must be located in the United States.
 * Account Updater will not work for merchants using exclusively gateway tokens where Recurly does not have access to actual card data. Work with your respective gateway partners to enable Account Updater if you fall into this subset of users.
 
 # Definition
