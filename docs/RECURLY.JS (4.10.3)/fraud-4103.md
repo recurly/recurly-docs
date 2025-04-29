@@ -1,5 +1,6 @@
 ---
 title: Fraud (4.10.3)
+excerpt: Learn all about Fraud  using Recurly.js version 4.10.3.
 deprecated: false
 hidden: false
 metadata:
