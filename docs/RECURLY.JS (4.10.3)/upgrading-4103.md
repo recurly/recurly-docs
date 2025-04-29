@@ -22,7 +22,7 @@ Your `recurly.token` call may also need to be updated. It is now necessary to pa
 
 You'll notice that the hosted fields won't look like the rest of your payment form inputs. That is because they are in fact iframes, and will need to be styled in order to get them to look right. We provide a stylesheet that works as a good baseline for styling the hosted fields to your needs (See the [Getting Started](https://docs.recurly.com/v1.2/docs/getting-started-4103#/) section). To tweak styles further, and to cover styles for when the field is invalid, etc, see the [Styling Card Fields](https://docs.recurly.com/v1.2/docs/styling-card-fields#/) section.
 
-We are happy to assist further in your upgrade path. Feel free to reach out to us for [Support](#support).
+We are happy to assist further in your upgrade path. Feel free to reach out to us for [Support](support@recurly.com).
 
 ### Upgrading from versions prior to v3
 
