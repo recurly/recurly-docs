@@ -81,7 +81,7 @@ See [Errors](https://docs.recurly.com/v1.2/docs/errors-4103#/)
 
 ### Example
 
-```JavaScript
+```javascript
 var risk = recurly.Risk();
 var threeDSecure = risk.ThreeDSecure({
   actionTokenId: myActionTokenId
