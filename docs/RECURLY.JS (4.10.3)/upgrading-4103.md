@@ -20,7 +20,7 @@ First, you will need to update your payment form. The credit card fields `number
 
 Your `recurly.token` call may also need to be updated. It is now necessary to pass a reference to your checkout `<form>` that contains the hosted fields. Your callback function requires no modification. More info is available in the [Getting a Token](#getting-a-token) section.
 
-You'll notice that the hosted fields won't look like the rest of your payment form inputs. That is because they are in fact iframes, and will need to be styled in order to get them to look right. We provide a stylesheet that works as a good baseline for styling the hosted fields to your needs (See the [Getting Started](https://docs.recurly.com/v1.2/docs/getting-started-4103#/) section). To tweak styles further, and to cover styles for when the field is invalid, etc, see the [Styling Card Fields](#styling-card-fields) section.
+You'll notice that the hosted fields won't look like the rest of your payment form inputs. That is because they are in fact iframes, and will need to be styled in order to get them to look right. We provide a stylesheet that works as a good baseline for styling the hosted fields to your needs (See the [Getting Started](https://docs.recurly.com/v1.2/docs/getting-started-4103#/) section). To tweak styles further, and to cover styles for when the field is invalid, etc, see the [Styling Card Fields](https://docs.recurly.com/v1.2/docs/styling-card-fields#/) section.
 
 We are happy to assist further in your upgrade path. Feel free to reach out to us for [Support](#support).
 
