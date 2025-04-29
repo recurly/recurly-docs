@@ -109,7 +109,7 @@ This event is emitted when any error is encountered, whether during setup of the
 
 ### Error codes
 
-See [Errors](#errors)
+See [Errors](https://docs.recurly.com/v1.2/docs/errors-4103#/)
 
 ### `cancel`
 
