@@ -118,8 +118,7 @@ recurly.configure({
 
 With proactive 3D-Secure enabled, you will receive a `three_d_secure_proactive_action_token` when you\
 tokenize your billing information. This value can be passed in as an `actionTokenId` to the `threeDSecure`
-class to enable the Strong Customer Authentication flow. Refer to the [3-D Secure Example Implementation](/developers/reference/recurly-js/#3d-secure)
-for more details.
+class to enable the Strong Customer Authentication flow.
 
 ### Reference
 
