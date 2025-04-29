@@ -1,13 +1,14 @@
 ---
-title: Styling card fields
+title: Styling card fields (4.10.3)
+excerpt: Learn about Styling Card Fields in Recurly.js version (4.10.3)
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-## Styling Card Fields
+## Styling card fields
 
-### Style Configuration
+### Style configuration
 
 Since card fields must be injected within iframes, any style properties within those iframes must be passed to `recurly.configure`. See the code example at right.
 
