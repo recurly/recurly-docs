@@ -34,6 +34,7 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 * One-time transactions are not submitted to the Account Updater service.
 * For American Express® Cardrefresher, your business / customers must be located in the United States.
+* Account Updater will not work for merchants using exclusively gateway tokens where Recurly does not have access to actual card data. Work with your respective gateway partners to enable Account Updater if you fall into this subset of users.
 
 # Definition
 
