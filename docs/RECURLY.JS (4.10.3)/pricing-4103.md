@@ -182,7 +182,7 @@ The `catch` method, as shown in the example, is used to handle error scenarios, 
 
 emitted by the **change** event
 
-```JavaScript
+```javascript
 {
   now: {
     subtotal: '25.00',
