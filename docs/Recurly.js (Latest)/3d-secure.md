@@ -178,8 +178,8 @@ This event is emitted when any error is encountered, whether during setup of the
 
 ##### Signature
 
-| Param | Type           | Description |                                              |
-| :---- | :------------- | :---------- | :------------------------------------------- |
-| error | `RecurlyError` |             | An error describing the issue that occurred. |
+| Param | Type           | Description                                  |
+| :---- | :------------- | :------------------------------------------- |
+| error | `RecurlyError` | An error describing the issue that occurred. |
 
 ***
