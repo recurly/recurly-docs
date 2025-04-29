@@ -12,6 +12,6 @@ metadata:
 
 # How it works
 
-When a customer submits your payment form, Recurly.js immediately encrypts and securely stores their payment information on our servers. It then returns an authorization key—commonly known as a *token*—that you use to complete the subscription process through our API.
+When a customer submits your payment form, Recurly.js sends customer payment information to be encrypted and stored at Recurly and gives you an authorization key to complete the subscription process using our API.
 
-With this token, you can perform any API operation that requires payment details. Because you never directly handle sensitive payment information, your PCI compliance scope is significantly reduced.
+With this authorization key (or token), you can do anything with our API that requires payment information. Because you never handle any sensitive payment information, your PCI scope is drastically reduced.
