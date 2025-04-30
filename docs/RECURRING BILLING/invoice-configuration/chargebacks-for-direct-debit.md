@@ -51,11 +51,11 @@ To enhance clarity and aid in decision-making for merchants, it's crucial to dis
 
 ## Chargeback settings
 
-Within Recurly, you can define how you want to manage direct debit failures through settings available on the invoice settings page. 
+Within Recurly, you can define how you want to manage direct debit failures through settings available on the invoice settings page.
 
 Find this setting at “Configuration → Invoice Templates →> Invoice Settings” and scroll down to “Chargebacks”.
 
-<Image align="center" className="border" width="90% " border={true} src="https://files.readme.io/4d7f6fd-image.png" />
+<Image align="center" className="border" border={true} width="90% " src="https://files.readme.io/4d7f6fd-image.png" />
 
 There are two primary options available for handling these types of failures:
 
@@ -66,7 +66,7 @@ With this default setting enabled, Recurly automates the invoicing and status pr
 * **Maintain the Original Transaction Status:** The status of the original transaction that the chargeback is associated with remains unchanged in most cases. For users who are taking advantage of automatic SEPA retries, transactions that fail due to Insufficient Funds will be marked as Past Due. Read more about Automatic SEPA retries here.
 * **Generate a New Refund Transaction:** Recurly will automatically create a new refund invoice. The amount of this transaction will be equal to the chargeback amount. Please note, this does not return funds to your customer via an actual refund transaction request to your gateway, it is indicating that funds were reversed by the customer’s bank.
 * **Update the Original Invoice with Failure / Chargeback Information:** The original invoice associated with the transaction will be updated to include detailed information about the chargeback.
-* **Automatically Expire the Subscription** If this extra setting, labeled “Automatically expire subscriptions when a chargeback is received”, is checked, not only will Recurly produce a Refund Invoice for the failed payment, but also expire the specific customer’s subscription, if applicable. This is an optional setting, allowing you flexibility to retry the transaction prior to expiring a subscription if you wish.
+* **Automatically Expire the Subscription** Please note, this setting is for Card Subscriptions only. It will not have an effect on non-Card subscriptions.
 
 These chargeback refund transactions are easily accessible and can be found on the Transactions page within the Recurly admin UI. To view them, simply select “Chargeback” in the Status filter, and a list of chargeback refund transactions or invoices will be displayed.
 
@@ -84,7 +84,7 @@ With this setting, you will not be able to filter by Chargeback status on the Tr
 
 ### Webhook notifications
 
-* Ensure that your systems are set up to receive and process these webhook notifications appropriately. 
+* Ensure that your systems are set up to receive and process these webhook notifications appropriately.
 * For manual chargeback processing, these webhooks are essential as they alert you that action may be required.
 
 ### Refund transactions
