@@ -17,7 +17,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-* Recurly currently supports Klarna BNPL, Pay Now, and Pay Later transactions through Stripe, and via Payment Elements (Third Party Checkout).
+* Recurly currently supports Klarna BNPL, Pay Now, and Pay Later transactions through Stripe, via Payment Elements (Third Party Checkout).
 
 ### Limitations
 
