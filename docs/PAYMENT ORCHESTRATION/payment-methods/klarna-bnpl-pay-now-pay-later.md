@@ -57,8 +57,10 @@ Stripe Elements dynamically presents Klarna options based on customer location a
 
 ### Klarna prohibited businesses and ethics messaging
 
-Klarna maintains a list of prohibited and restricted business categories: <a href="https://docs.klarna.com/resources/legal-and-compliance/policies-and-term-of-service/prohibited-and-restricted-businesses/" target="_blank">Klarna Docs – Prohibited and restricted businesses</a>.\
+Klarna maintains a list of prohibited and restricted business categories: <a href="https://docs.klarna.com/resources/legal-and-compliance/policies-and-term-of-service/prohibited-and-restricted-businesses/" target="_blank">Klarna Docs – Prohibited and restricted businesses</a>.
+
 Use Stripe’s Messaging Element to surface ethical considerations and payment method details: <a href="https://docs.stripe.com/payments/payment-method-messaging" target="_blank">Payment Method Messaging Element | Stripe Documentation</a>.
+
 For advertising guidelines, see: <a href="https://docs.klarna.com/resources/legal-and-compliance/more-solutions-guidelines/ad-policies-for-klarna-advertisers/" target="_blank">Ad policies for Klarna advertisers</a>.
 
 #### API, Stripe Elements, and Recurly.js
