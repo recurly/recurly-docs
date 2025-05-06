@@ -30,7 +30,6 @@ Explore detailed documentation for each gateway to ensure seamless integration w
 
 * [Adyen](https://docs.recurly.com/docs/adyen)
 * [Authorize.net](https://docs.recurly.com/docs/authorizenet)
-* [Bambora/Worldline](#section-bambora)
 * [Braintree](https://docs.recurly.com/docs/braintree)
 * [CardConnect](https://docs.recurly.com/docs/cardconnect)
 * [Chase Paymentech Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital)
