@@ -1,8 +1,7 @@
 ---
-title:Recurly Engage integration
+title: Recurly Engage integration
 excerpt: >-
-  Drive action across your in-app subscriber lifecycle with Recurly's
-  integration withRecurly Engage.
+ Drive action across your in-app subscriber lifecycle with Recurly's integration with Recurly Engag.
 deprecated: false
 hidden: false
 metadata:
