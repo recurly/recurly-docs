@@ -235,11 +235,11 @@ A:** A guide is a collection of prompts that appear one after another.
 **Q: What segmentation is available inRecurly Engage?\
 A:** Recurly subscriber data can be used for driving segmentation across prompts and guides to target the message to your unique subscribers.
 
-\*\*Q: How do I monitor the success of the prompts displayed to customers?\
-A:\*\*Recurly Engage offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data fromRecurly Engage into Recurly Analytics.
+**Q: How do I monitor the success of the prompts displayed to customers?\
+A:** Recurly Engage offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data fromRecurly Engage into Recurly Analytics.
 
 **Q: What if a merchant does not use Google Tag Manager?\
 A:** Adobe, Tealium or GTM are the tag options out of the box. Other tag managers can be used, and need to have tag script added to each page
 
-**Q: Does myRecurly Engage API key count towards my API key limit?\
+**Q: Does my Recurly Engage API key count towards my API key limit?\
 A:** Yes, theRecurly Engage API key that is generated via the Recurly provisioning flow will utilize one of your API keys. If you need additional API keys, contact sales to increase your limit.
