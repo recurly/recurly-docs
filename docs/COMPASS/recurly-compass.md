@@ -103,7 +103,7 @@ Find exactly what you need, fast. The in-app Global Search feature puts key Recu
 
 # Explore Assistant
 
-Explore Assistant is your natural language interface for creating charts and graphs from your site’s data. Just ask, for example, “Show me failed invoices each month for the past 12 months” or “Display transaction success rate by country,” and let Explore generate the insights you need.
+Explore Assistant is your natural language interface for creating charts and graphs from your site’s data. Just ask, for example, **“Show me failed invoices each month for the past 12 months”** or **“Display transaction success rate by country**”, and let Explore generate the insights you need.
 
 As you review the results, you can refine your queries in real time—narrowing down from a broad view of failed transactions over three months to a detailed breakdown by credit card or by country. A built-in chat history, accessible via the hamburger menu, makes it easy to revisit previous queries and data.
 
