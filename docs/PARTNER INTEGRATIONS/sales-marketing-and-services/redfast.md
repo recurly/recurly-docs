@@ -1,8 +1,8 @@
 ---
-title: Redfast integration
+title:Recurly Engage integration
 excerpt: >-
   Drive action across your in-app subscriber lifecycle with Recurly's
-  integration with Redfast.
+  integration withRecurly Engage.
 deprecated: false
 hidden: false
 metadata:
@@ -22,7 +22,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
 
-<a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book a Redfast demo</a>
+<a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book aRecurly Engage demo</a>
 
 # Definition
 
@@ -45,64 +45,64 @@ Redfast is a platform that delivers real-time, personalized messages across web,
 
 # Implementation guide
 
-## Step 1: Recurly configuration / Redfast (pulse account) provisioning
+## Step 1: Recurly configuration /Recurly Engage (pulse account) provisioning
 
-1. From within Recurly Admin: **go** to Integrations section -> Redfast
+1. From within Recurly Admin: **go** to Integrations section ->Recurly Engage
 
-* When a merchant has purchased Redfast, they will be able to connect from within the Recurly app.
-* Fill out the form to create a Redfast instance.
-* This will automatically generate your Redfast instance, provision the Recurly API key, and complete the creation process.
+* When a merchant has purchasedRecurly Engage, they will be able to connect from within the Recurly app.
+* Fill out the form to create aRecurly Engage instance.
+* This will automatically generate yourRecurly Engage instance, provision the Recurly API key, and complete the creation process.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/56557a4-image.png" />
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aa285a2-image.png" />
 
-2. **Configure** Redfast.
+2. **Configure**Recurly Engage.
 
-* You will receive an invitation to create your account/password in Redfast.
+* You will receive an invitation to create your account/password inRecurly Engage.
 
 <Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/feab6cf-image.png" />
 
-* **Log** into Redfast using your new Redfast account from the step above.
+* **Log** intoRecurly Engage using your newRecurly Engage account from the step above.
 
-> **Note:** You can only have one email address associated with each Redfast instance (site/subdomain).
+> **Note:** You can only have one email address associated with eachRecurly Engage instance (site/subdomain).
 
 * If you are planning to be in more than one instance (site/subdomain), you will have to use the alias process (similar to Recurly), e.g., [chad+demo@recurly.com](mailto:chad+demo@recurly.com).
-* Once you are logged into Redfast, **go** to Settings > Application:
+* Once you are logged intoRecurly Engage, **go** to Settings > Application:
   * **Enter** your domain.
   * You can also change/edit the name of the instance here if needed—make it descriptive so that you know what the instance usage will be.
   * **Click** save changes.
     > **Note:** the ID and API keys should already be populated from Recurly.
 
-**Inviting a co-worker to the Redfast console is easy:**
+**Inviting a co-worker to theRecurly Engage console is easy:**
 
 * Go to Settings > Users and click on 'Add User'.
 * Enter their email and click + Add User.
-* Learn more in Redfast: <a href="https://help.redfast.com/docs/invite-users" target="_blank">invite users</a>.
+* Learn more inRecurly Engage: <a href="https://help.redfast.com/docs/invite-users" target="_blank">invite users</a>.
 
 <Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/1ede92b-image.png" />
 
-## Step 2: Configure RedFast / add RedFast tag
+## Step 2: ConfigureRecurly Engage / addRecurly Engage tag
 
 * **Go** to Settings > User Tracking
 
-  * User tracking is set by either enabling the Redfast tag in Google Tag Manager or copying the script displayed to each page in the customer’s storefront to enable tracking.
+  * User tracking is set by either enabling theRecurly Engage tag in Google Tag Manager or copying the script displayed to each page in the customer’s storefront to enable tracking.
   * Once one of these options is enabled on the storefront, tracking will begin. You can verify this by noting the status of “Active” with a green dot.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/a4444bf-image.png" />
 
 * You can configure additional tracking items here. Some examples include identifying the cancellation button ID or creating a new tracker.
-* Learn more in Redfast: <a href="https://help.redfast.com/docs/usage-tracking-1" target="_blank">usage tracking</a>
+* Learn more inRecurly Engage: <a href="https://help.redfast.com/docs/usage-tracking-1" target="_blank">usage tracking</a>
 
 ## Step 3: Fetch ID logic
 
-In order for Redfast to populate prompts to users, the Redfast tag needs to be able to access information about the user.
+In order forRecurly Engage to populate prompts to users, theRecurly Engage tag needs to be able to access information about the user.
 
-**Example:** A webpage that authenticates a user, and pulls in information from Recurly including the account code, plan information, and other customer attributes, needs to be live to allow the Redfast JS tag to access this data to identify the user. Device applications (mobile & TV SDKs) will also need to authenticate a user in order to provide targeted prompts to the users.
+**Example:** A webpage that authenticates a user, and pulls in information from Recurly including the account code, plan information, and other customer attributes, needs to be live to allow theRecurly Engage JS tag to access this data to identify the user. Device applications (mobile & TV SDKs) will also need to authenticate a user in order to provide targeted prompts to the users.
 
-* Learn more in Redfast: <a href="https://help.redfast.com/docs/custom-js-snippet" target="_blank">custom JS snippet</a>.
+* Learn more inRecurly Engage: <a href="https://help.redfast.com/docs/custom-js-snippet" target="_blank">custom JS snippet</a>.
 
-Admin users may override certain behaviors of the Redfast Javascript SDK. Upon deploying Redfast for the first time, it is important to configure the following to ensure that users are recognized using your unique identifiers. These identifiers will be utilized for 1-click actions as well as downstream reporting, so it is important that these are correctly configured.
+Admin users may override certain behaviors of theRecurly Engage Javascript SDK. Upon deployingRecurly Engage for the first time, it is important to configure the following to ensure that users are recognized using your unique identifiers. These identifiers will be utilized for 1-click actions as well as downstream reporting, so it is important that these are correctly configured.
 
 You may need to work with your developers to determine the best method to identify users. The most common methods to retrieve a User ID are:
 
@@ -110,7 +110,7 @@ You may need to work with your developers to determine the best method to identi
 * browser cookie
 * accessing an item stored in the browser's dataLayer
 
-## Step 4: Import user traits (using both Recurly and RedFast sites)
+## Step 4: Import user traits (using both Recurly andRecurly Engage sites)
 
 #### Recurly - Automated Exports
 
@@ -128,41 +128,41 @@ Within Recurly, **go** to Integrations > Automated Exports and enable the follow
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/aaa214d-image.png" />
 
-#### RedFast - Importing Traits
+####Recurly Engage - Importing Traits
 
-Follow the steps outlined in Redfast: <a href="https://help.redfast.com/docs/user-traits" target="_blank">user traits</a> - After completing these steps in Redfast, you can:
+Follow the steps outlined inRecurly Engage: <a href="https://help.redfast.com/docs/user-traits" target="_blank">user traits</a> - After completing these steps inRecurly Engage, you can:
 
 1. Create a CSV file.
 2. Upload the file to AWS.
 3. This file will be validated after it is uploaded. Notify Recurly Support to complete this process. Once complete, you can view the attributes in Settings > User Traits.
 
-#### Redfast - customizing user traits
+####Recurly Engage - customizing user traits
 
-Learn more in Redfast: <a href="https://help.redfast.com/docs/user-traits#customizing-user-traits" target="_blank">customizing user traits</a>
+Learn more inRecurly Engage: <a href="https://help.redfast.com/docs/user-traits#customizing-user-traits" target="_blank">customizing user traits</a>
 
-1. Within Redfast, go to Settings > User Traits to view the attributes.
+1. WithinRecurly Engage, go to Settings > User Traits to view the attributes.
 2. Configure the Type field for each attribute: Boolean, String, Number, or Date.
 3. Configure the Display field for each attribute: HINT, the options are different for each type so assign accordingly.
 
 ## Step 5: Customize segments, triggers, and actions
 
-Continuing in Redfast and based on Use Cases, modify the specific user segments, triggers and actions.
+Continuing inRecurly Engage and based on Use Cases, modify the specific user segments, triggers and actions.
 
 #### Test Users
 
-To test your implementation, configure Test Users as outlined within Redfast, (Settings > Users > Test Users) [https://help.redfast.com/docs/test-users](https://help.redfast.com/docs/test-users)
+To test your implementation, configure Test Users as outlined withinRecurly Engage, (Settings > Users > Test Users) [https://help.redfast.com/docs/test-users](https://help.redfast.com/docs/test-users)
 
 #### Guides
 
-Within Redfast, you sill see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
+WithinRecurly Engage, you sill see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e52e66e-image.png" />
 
 ### Syncing Recurly data
 
-Recurly data will be synced to Redfast for use in building out offers. This includes plan and coupon data. In order to keep plan and coupon data in sync, there is a step to take anytime that a new plan or coupon is created.
+Recurly data will be synced toRecurly Engage for use in building out offers. This includes plan and coupon data. In order to keep plan and coupon data in sync, there is a step to take anytime that a new plan or coupon is created.
 
-To force a sync, navigate to Redfast -> Settings -> Integrations -> External -> Recurly. Uncheck the active checkbox, save, then recheck it, which forces a refresh
+To force a sync, navigate toRecurly Engage -> Settings -> Integrations -> External -> Recurly. Uncheck the active checkbox, save, then recheck it, which forces a refresh
 
 <Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png" />
 
@@ -205,26 +205,26 @@ Based on use cases, set up the specific prompts triggered by actions.
 3. Complete testing of all additional prompts and guides.
 4. Activate all prompts and guides.
 
-Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Redfast. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. Learn more about Test Users in the Redfast docs portal [here](https://help.redfast.com/docs/test-users).
+Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/orRecurly Engage. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. Learn more about Test Users in theRecurly Engage docs portal [here](https://help.redfast.com/docs/test-users).
 
 ### Post go-live
 
-After the merchant is up and running with prompts, CSM can help monitor the progress and results of prompts to optimize their business. This is a mix of Redfast performance data and Recurly Analytics.
+After the merchant is up and running with prompts, CSM can help monitor the progress and results of prompts to optimize their business. This is a mix ofRecurly Engage performance data and Recurly Analytics.
 
 # Helpful resources
 
-Learn more about Redfast by visiting these resources:
+Learn more aboutRecurly Engage by visiting these resources:
 
 <a href="https://recurly.com/product/subscriber-engagement/" target="_blank">Recurly's subscriber engagement solutions</a>
 
 <a href="https://www.redfast.com/" target="_blank">Redfast</a>
 
-Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book a Redfast demo</a>
+Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book aRecurly Engage demo</a>
 
 # FAQs
 
-**Q: What is Redfast and how does Redfast work?\
-A:** Redfast is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and a Redfast JS token on the merchant web page, or SKDs or mobile apps.
+**Q: What isRecurly Engage and how doesRecurly Engage work?\
+A:**Recurly Engage is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and aRecurly Engage JS token on the merchant web page, or SKDs or mobile apps.
 
 **Q: What is a prompt?\
 A:** A prompt refers to content or behavior that is presented to users within one or more segments.
@@ -232,14 +232,14 @@ A:** A prompt refers to content or behavior that is presented to users within on
 **Q: What is a guide?\
 A:** A guide is a collection of prompts that appear one after another.
 
-**Q: What segmentation is available in Redfast?\
+**Q: What segmentation is available inRecurly Engage?\
 A:** Recurly subscriber data can be used for driving segmentation across prompts and guides to target the message to your unique subscribers.
 
 **Q: How do I monitor the success of the prompts displayed to customers?\
-A:** Redfast offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data from Redfast into Recurly Analytics.
+A:**Recurly Engage offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data fromRecurly Engage into Recurly Analytics.
 
 **Q: What if a merchant does not use Google Tag Manager?\
 A:** Adobe, Tealium or GTM are the tag options out of the box. Other tag managers can be used, and need to have tag script added to each page
 
-**Q: Does my Redfast API key count towards my API key limit?\
-A:** Yes, the Redfast API key that is generated via the Recurly provisioning flow will utilize one of your API keys. If you need additional API keys, contact sales to increase your limit.
+**Q: Does myRecurly Engage API key count towards my API key limit?\
+A:** Yes, theRecurly Engage API key that is generated via the Recurly provisioning flow will utilize one of your API keys. If you need additional API keys, contact sales to increase your limit.
