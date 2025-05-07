@@ -59,6 +59,32 @@ You can preview the email address that will be used on an invoice by clicking th
 
 Billing contact email addresses are only configurable via the Recurly Admin UI.
 
+## Automatic assignment of entities by Subscriber Location
+
+### Behavior
+
+Automatic assignment is the default method of entity application to invoices for all customers at the time of their next billing event. This assignment is based on the billing address of the customer's account at the time the transaction takes place. If a customer has manual billing set up, or if your site is configured to use the account address for all invoices, then the account address will be used as the "BILL TO" address on the invoice.
+
+## Subscriber Locations
+
+The logic behind the automatic assignment of entities from the "BILL TO" address of a customer is based on the entity's configured subscriber locations. These locations are an optional configuration setting on alternate business entities. You can add specific countries to the entity to create rules for automatic assignment. Each unique country can only be added to a single Subscriber Location/entity at a time. You can adjust the countries within your Subscriber Locations at any time, but changes will reconfigure the entity assigned on any transaction if a customer's country location matches a country that has been moved to a new entity.
+
+If you choose not to add any regions to any or all of your alternate entities' Subscriber Locations, all customers will be "automatically" assigned to the Site Default Entity, which serves as the site's fallback entity for assignment.
+
+After subscriber locations are set, customers meeting location criteria will begin to receive invoices from the corresponding business entity at the start of their next billing period. This applies to new *and* existing subscribers, unless their subscription(s) are assigned to a specific business entity, or their account has an overriding business entity assigned.
+
+### How does it work?
+
+For example, if you create an entity called "Acme Inc. Western Europe" and add Germany, Italy, France, Spain, Ireland, and England to its Subscriber Locations, customers whose "BILL TO" address is in one of those countries will receive the "Acme Inc. Western Europe" entity's invoice address settings and origin tax address.
+
+If you set up another entity called "Acme Inc. Eastern Europe" with Poland and Hungary in its Subscriber Locations, customers with a billing address in these two countries will automatically have the "Acme Inc. Eastern Europe" entity applied to their invoices.
+
+If your headquarters serves customers globally, you can set it up as your Site Default Business Entity on Recurly, which will serve as the fallback entity for customers who are not covered by a subscriber location within another entity.
+
+### How can I see what entities are applied to invoices when using automatic assignment?
+
+You can view this information on the individual invoices on a customer's account. This view will display the corresponding entity on each transaction associated with their billing address at a given point in time. You can also use an API query on the Invoice object to identify which entity was associated with a specific invoice.
+
 ## Entity-level invoice treatments
 
 In addition to setting your entity's company information such as company name and contact number, invoice display and tax addresses, and tax ID numbers, you can also set entity-level invoice display settings for header and footer logo images, notes to the customer, and terms and conditions.
@@ -147,32 +173,6 @@ You can see the business entity assigned at the account level for customers with
 <Image align="center" width="75% " src="https://files.readme.io/74b18a2-image.png" />
 
 <br />
-
-## Automatic assignment of entities by Subscriber Location
-
-### Behavior
-
-Automatic assignment is the default method of entity application to invoices for all customers at the time of their next billing event. This assignment is based on the billing address of the customer's account at the time the transaction takes place. If a customer has manual billing set up, or if your site is configured to use the account address for all invoices, then the account address will be used as the "BILL TO" address on the invoice.
-
-## Subscriber Locations
-
-The logic behind the automatic assignment of entities from the "BILL TO" address of a customer is based on the entity's configured subscriber locations. These locations are an optional configuration setting on alternate business entities. You can add specific countries to the entity to create rules for automatic assignment. Each unique country can only be added to a single Subscriber Location/entity at a time. You can adjust the countries within your Subscriber Locations at any time, but changes will reconfigure the entity assigned on any transaction if a customer's country location matches a country that has been moved to a new entity.
-
-If you choose not to add any regions to any or all of your alternate entities' Subscriber Locations, all customers will be "automatically" assigned to the Site Default Entity, which serves as the site's fallback entity for assignment.
-
-After subscriber locations are set, customers meeting location criteria will begin to receive invoices from the corresponding business entity at the start of their next billing period. This applies to new *and* existing subscribers, unless their subscription(s) are assigned to a specific business entity, or their account has an overriding business entity assigned.
-
-### How does it work?
-
-For example, if you create an entity called "Acme Inc. Western Europe" and add Germany, Italy, France, Spain, Ireland, and England to its Subscriber Locations, customers whose "BILL TO" address is in one of those countries will receive the "Acme Inc. Western Europe" entity's invoice address settings and origin tax address.
-
-If you set up another entity called "Acme Inc. Eastern Europe" with Poland and Hungary in its Subscriber Locations, customers with a billing address in these two countries will automatically have the "Acme Inc. Eastern Europe" entity applied to their invoices.
-
-If your headquarters serves customers globally, you can set it up as your Site Default Business Entity on Recurly, which will serve as the fallback entity for customers who are not covered by a subscriber location within another entity.
-
-### How can I see what entities are applied to invoices when using automatic assignment?
-
-You can view this information on the individual invoices on a customer's account. This view will display the corresponding entity on each transaction associated with their billing address at a given point in time. You can also use an API query on the Invoice object to identify which entity was associated with a specific invoice.
 
 ## Account hierarchy and entities
 
