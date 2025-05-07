@@ -1,7 +1,8 @@
 ---
 title: Recurly Engage integration
 excerpt: >-
- Drive action across your in-app subscriber lifecycle with Recurly's integration with Recurly Engag.
+  Drive action across your in-app subscriber lifecycle with Recurly's
+  integration with Recurly Engage.
 deprecated: false
 hidden: false
 metadata:
@@ -21,7 +22,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
 
-<a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book aRecurly Engage demo</a>
+<a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book a Recurly Engage demo</a>
 
 # Definition
 
@@ -58,7 +59,7 @@ Redfast is a platform that delivers real-time, personalized messages across web,
 
 2. **Configure**Recurly Engage.
 
-* You will receive an invitation to create your account/password inRecurly Engage.
+* You will receive an invitation to create your account/password in Recurly Engage.
 
 <Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/feab6cf-image.png" />
 
@@ -73,7 +74,7 @@ Redfast is a platform that delivers real-time, personalized messages across web,
   * **Click** save changes.
     > **Note:** the ID and API keys should already be populated from Recurly.
 
-**Inviting a co-worker to theRecurly Engage console is easy:**
+**Inviting a co-worker to the Recurly Engage console is easy:**
 
 * Go to Settings > Users and click on 'Add User'.
 * Enter their email and click + Add User.
@@ -127,7 +128,7 @@ Within Recurly, **go** to Integrations > Automated Exports and enable the follow
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/aaa214d-image.png" />
 
-####Recurly Engage - Importing Traits
+#### Recurly Engage - Importing Traits
 
 Follow the steps outlined inRecurly Engage: <a href="https://help.redfast.com/docs/user-traits" target="_blank">user traits</a> - After completing these steps inRecurly Engage, you can:
 
@@ -135,7 +136,7 @@ Follow the steps outlined inRecurly Engage: <a href="https://help.redfast.com/do
 2. Upload the file to AWS.
 3. This file will be validated after it is uploaded. Notify Recurly Support to complete this process. Once complete, you can view the attributes in Settings > User Traits.
 
-####Recurly Engage - customizing user traits
+#### Recurly Engage - customizing user traits
 
 Learn more inRecurly Engage: <a href="https://help.redfast.com/docs/user-traits#customizing-user-traits" target="_blank">customizing user traits</a>
 
@@ -222,8 +223,8 @@ Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo
 
 # FAQs
 
-**Q: What isRecurly Engage and how doesRecurly Engage work?\
-A:**Recurly Engage is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and aRecurly Engage JS token on the merchant web page, or SKDs or mobile apps.
+\*\*Q: What isRecurly Engage and how doesRecurly Engage work?\
+A:\*\*Recurly Engage is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and aRecurly Engage JS token on the merchant web page, or SKDs or mobile apps.
 
 **Q: What is a prompt?\
 A:** A prompt refers to content or behavior that is presented to users within one or more segments.
@@ -234,8 +235,8 @@ A:** A guide is a collection of prompts that appear one after another.
 **Q: What segmentation is available inRecurly Engage?\
 A:** Recurly subscriber data can be used for driving segmentation across prompts and guides to target the message to your unique subscribers.
 
-**Q: How do I monitor the success of the prompts displayed to customers?\
-A:**Recurly Engage offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data fromRecurly Engage into Recurly Analytics.
+\*\*Q: How do I monitor the success of the prompts displayed to customers?\
+A:\*\*Recurly Engage offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data fromRecurly Engage into Recurly Analytics.
 
 **Q: What if a merchant does not use Google Tag Manager?\
 A:** Adobe, Tealium or GTM are the tag options out of the box. Other tag managers can be used, and need to have tag script added to each page
