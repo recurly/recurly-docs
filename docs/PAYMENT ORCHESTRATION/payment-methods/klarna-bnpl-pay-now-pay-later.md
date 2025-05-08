@@ -5,7 +5,7 @@ excerpt: >-
   Choose to pay in 4 interest-free payments, pay the full amount immediately, or
   pay later on their pay day. 
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
