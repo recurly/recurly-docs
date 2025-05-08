@@ -38,7 +38,8 @@ Klarna payments are offered by Klarna Bank AB, a Swedish bank that provides paym
 
 #### Completing the order
 
-To pay with Klarna, customers are redirected to Klarna’s site to select their preferred payment option, then returned to your website to complete the order. Klarna presents options based on the customer’s currency, subscription interval (monthly, weekly, yearly, etc.), and transaction amount.\
+To pay with Klarna, customers are redirected to Klarna’s site to select their preferred payment option, then returned to your website to complete the order. Klarna presents options based on the customer’s currency, subscription interval (monthly, weekly, yearly, etc.), and transaction amount.
+
 Once approved, Stripe immediately makes the full order amount (minus fees) available in your account, and Klarna collects payment from the customer.
 
 # Key details
