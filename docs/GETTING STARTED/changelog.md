@@ -26,45 +26,735 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## May
 
-| Release Date |                   **Feature**                  | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| :----------- | :--------------------------------------------: | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| May 6        | **Stripe Gateway** \| **Third Party Checkout** | Low                  | Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html) for more details.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| May 6        |            **Hosted Page settings**            | Low                  | Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see [the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring).                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| May 6        |           **Gateway Token Handling**           | Medium               | Updated handling of gateway tokens to that gateway tokens referenced in billing information updates that cause a *decline* do not override existing data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| May 6        |              **WorldPay Gateway**              | Low                  | Updated handling of refund failures on the gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| May 6        |           **PayPal Complete Gateway**          | Medium               | Updated Recurly.js to support passing the gateway\_code value for PayPal Complete.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| May 5        |                **Adyen Gateway**               | Medium               | Minor updates to improve authorization rates for card billing information updates.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| April 29     |                    **Braze**                   | Low                  | Adding two new Braze data centers, US-10 and IN-01.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| April 29     |             **Plan Configuration**             | Low                  | Introducing a new currency picker to the Create and Edit Plan pages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| April 29     |               **Stripe Gateway**               | Low                  | Adding support for Late Failures/Chargebacks to Direct Debit payment methods. Additionally, mandate status display will accompany this release.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| April 29     |    **Stripe Gateway** \| **Gateway Routing**   | Medium               | Updated behavior in gateway routing to ensure bank details that are not Stripe Payment Tokens are routed to the Stripe Gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| April 29     |                **Ebanx Gateway**               | Low                  | Updated available regions when onboarding the gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| April 29     |              **WorldPay Gateway**              | Low                  | Updated available regions when onboarding the gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| April 29     |       **General + Security Enhancements**      | High                 | Recurly is committed to compliance and general upkeep of our systems. In doing so, several features are receiving behind-the-scenes updates that may affect front-end features including [Recurly.js](https://recurly.com/developers/reference/recurly-js/), [Checkout](https://docs.recurly.com/docs/checkout#/) and [HPP](https://docs.recurly.com/docs/hosted-payment-pages#/) (Hosted Pages), Data Collectors for 3DS and Kount, and Redirect Payment Methods. Specific payment methods or redirect features include, but are not limited to: PayPal, PayPal Complete, 3DS Challenge windows, iDeal and Klarna Debit Risk (Sofort), and Amazon Pay (v1 and v2). Learn more about our [security](https://docs.recurly.com/docs/security#/) and [compliance](https://docs.recurly.com/docs/compliance#/) practices in our documentation. |
-| April 22     |             **Order Number Prefix**            | Low                  | Updated title and text to be more clear and consistent and updated the hint for valid characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| April 22     |              **Braintree Gateway**             | Medium               | Updated behind-the-scenes query behavior to ensure "in-flight" transactions' status are not inaccurately updated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| April 18     |              **WorldPay Gateway**              | Medium               | Updated handling of MOTO transactions to correct intermittent payment failures.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| April 18     |         **Recurly.js \| Checkout/HPP**         | HIgh                 | Updated handling of Recurly.js tokens to address an error in processing related to 3DS handling. This updated addresses direct Recurly.js integrations and usage of Checkout and Hosted Pages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| April 17     |                **Ebanx Gateway**               | Low                  | Updated to send additional customer data to the platform including address, phone and email information.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| April 15     |              **Explore Assistant**             | Low                  | A new natural language chat interface that returns site data in the form of charts and graphs.  It can be found within Analytics.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| April 15     |             **Revenue Recognition**            | High                 | Period Close Automation to ensure accurate and consistent monthly closures. The process starts with four system-defined tasks, and users can add custom, site-specific tasks to meet their unique requirements. This feature ensures a consistent and error-free period close by preventing missed steps, reducing manual and reconciliation errors, and detecting unresolved issues before closure. It also standardizes the process across all monthly cycles for greater reliability.                                                                                                                                                                                                                                                                                                                                                   |
-| April 15     |             **Revenue Recognition**            | Low                  | POB Rule: Users can upload and download POB rules.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| April 15     |                **Ebanx Gateway**               | Low                  | Added support for full refunds to Ebanx. Additionally, UPI mandates will not be created if a chosen plan does not have INR currency enabled.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| April 15     |                **Activity Logs**               | Low                  | The subscription activity log will be updated if a chargeback triggered the subscription to expire for fraud or service-based chargeback reasons.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| April 15     |                **Adyen Gateway**               | Low                  | Updated iDeal support in Recurly.js to support new streamlined redirects related to bank selection.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| April 15     |               **Stripe Gateway**               | Medium               | Stripe gateway now supports basic chargeback management, including lost chargeback display in Recurly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| April 11     |               **Stripe Gateway**               | Medium               | Updated Connected Accounts to enable merchant-configuration of payment methods within the Stripe Dashboard. Additionally, updated supported payment methods to block methods Recurly does not support.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| April 8      |              **WorldPay Gateway**              | Medium               | Added support for Online Refunds to the platform. WorldPay will enable Online Refund behavior to all merchants this year. No effort from merchants is expected with this change.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| April 8      |             **FreedomPay Gateway**             | Low                  | Introducing FreedomPay to the Recurly Platform! This gateway supports tokenized card payments for merchants with Omnichannel use cases where the subscription begins its life in a card-present environment. Learn more about [FreedomPay](https://docs.recurly.com/docs/freedompay#/) in our dedicated documentation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| April 8      |       **Ebanx Gateway** with UPI AutoPay       | Low                  | Introducing Ebanx, with UPI AutoPay for recurring subscriptions. This brand new gateway and payment method supports customers in India who want to use the UPI App to sign up for subscriptions. Learn more about [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) and [Ebanx](https://docs.recurly.com/docs/ebanx-gateway#/) in our dedicated documentation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| April 8      |             **V3 Client Libraries**            | Medium               | Updated enums to support `upi_vpa` for UPI AutoPay on Ebanx.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| April 4      |                   **iOS SDK**                  | Low                  | Updated SDK to resolve Swift build errors.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Apr 1        |   **Create subscriptions with date in past**   | Low                  | Ability to add a date in the past when creating a subscription.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| April 1      |               **Stripe Gateway**               | Medium               | Adding support for ACH, SEPA, BACS, and BECS through Stripe Elements. Read through our [Third Party Checkout guide](https://recurly.com/developers/guides/3rd-party-checkout.html) for more information.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| April 1      |                **Adyen Gateway**               | Low                  | Adding support for ACH, SEPA, and BACS through Adyen Components x Recurly.js.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| April 1      |           **Kount Fraud Management**           | Medium               | Adding support for Apple Pay fraud scrubbing through Kount. Read more about Kount on our dedicated [fraud management](https://docs.recurly.com/docs/fraud-management#/) documentation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| April 1      |              **WorldPay Gateway**              | Low                  | Removed the `tax_identifier_type` parameter requirement when processing in LATAM regions. No integration changes are necessary, but this will allow processing in additional LATAM regions that do not support documented tax types. Read more about [Worldpay LATAM support ](https://docs.recurly.com/docs/worldpaydlocal-latam-support#/) in our documentation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| April 1      |               **Stripe Gateway**               | Low                  | Added support for CoBadge behavior on the Stripe gateway in Recurly.js. Please look at our [Cobadged Guide](https://recurly.com/developers/guides/co-badge.html) for more details on implementation. **Pulled from Release**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+<Table align={["left","center","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Release Date
+      </th>
+
+      <th>
+        **Feature**
+      </th>
+
+      <th>
+        **Potential Impact**
+      </th>
+
+      <th>
+        **Description / Overview**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
+        **Stripe Gateway** | **Third Party Checkout**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html) for more details.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
+        **Hosted Page settings**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see [the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
+        **Compass Insights**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added 3 new insights to the Welcome page:
+
+        1. Daily Subscriber Churn Trends
+        2. Daily Billings Trends
+        3. Monthly Recovered Revenue Trends (Recurly Value)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
+        **Email Templates**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introduced a fourth option for Audience Criteria when creating alternative email templates
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
+        **Gateway Token Handling**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of gateway tokens to that gateway tokens referenced in billing information updates that cause a *decline* do not override existing data.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated handling of refund failures on the gateway.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
+        **PayPal Complete Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated Recurly.js to support passing the gateway\_code value for PayPal Complete.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 5
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Minor updates to improve authorization rates for card billing information updates.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 29
+      </td>
+
+      <td>
+        **Braze**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adding two new Braze data centers, US-10 and IN-01.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 29
+      </td>
+
+      <td>
+        **Plan Configuration**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing a new currency picker to the Create and Edit Plan pages.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 29
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adding support for Late Failures/Chargebacks to Direct Debit payment methods. Additionally, mandate status display will accompany this release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 29
+      </td>
+
+      <td>
+        **Stripe Gateway** | **Gateway Routing**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated behavior in gateway routing to ensure bank details that are not Stripe Payment Tokens are routed to the Stripe Gateway.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 29
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated available regions when onboarding the gateway.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 29
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated available regions when onboarding the gateway.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 29
+      </td>
+
+      <td>
+        **General + Security Enhancements**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Recurly is committed to compliance and general upkeep of our systems. In doing so, several features are receiving behind-the-scenes updates that may affect front-end features including [Recurly.js](https://recurly.com/developers/reference/recurly-js/), [Checkout](https://docs.recurly.com/docs/checkout#/) and [HPP](https://docs.recurly.com/docs/hosted-payment-pages#/) (Hosted Pages), Data Collectors for 3DS and Kount, and Redirect Payment Methods. Specific payment methods or redirect features include, but are not limited to: PayPal, PayPal Complete, 3DS Challenge windows, iDeal and Klarna Debit Risk (Sofort), and Amazon Pay (v1 and v2). Learn more about our [security](https://docs.recurly.com/docs/security#/) and [compliance](https://docs.recurly.com/docs/compliance#/) practices in our documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 22
+      </td>
+
+      <td>
+        **Order Number Prefix**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated title and text to be more clear and consistent and updated the hint for valid characters.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 22
+      </td>
+
+      <td>
+        **Braintree Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated behind-the-scenes query behavior to ensure "in-flight" transactions' status are not inaccurately updated.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 18
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of MOTO transactions to correct intermittent payment failures.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 18
+      </td>
+
+      <td>
+        **Recurly.js | Checkout/HPP**
+      </td>
+
+      <td>
+        HIgh
+      </td>
+
+      <td>
+        Updated handling of Recurly.js tokens to address an error in processing related to 3DS handling. This updated addresses direct Recurly.js integrations and usage of Checkout and Hosted Pages.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 17
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated to send additional customer data to the platform including address, phone and email information.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 15
+      </td>
+
+      <td>
+        **Explore Assistant**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        A new natural language chat interface that returns site data in the form of charts and graphs.  It can be found within Analytics.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 15
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Period Close Automation to ensure accurate and consistent monthly closures. The process starts with four system-defined tasks, and users can add custom, site-specific tasks to meet their unique requirements. This feature ensures a consistent and error-free period close by preventing missed steps, reducing manual and reconciliation errors, and detecting unresolved issues before closure. It also standardizes the process across all monthly cycles for greater reliability.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 15
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        POB Rule: Users can upload and download POB rules.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 15
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added support for full refunds to Ebanx. Additionally, UPI mandates will not be created if a chosen plan does not have INR currency enabled.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 15
+      </td>
+
+      <td>
+        **Activity Logs**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        The subscription activity log will be updated if a chargeback triggered the subscription to expire for fraud or service-based chargeback reasons.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 15
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated iDeal support in Recurly.js to support new streamlined redirects related to bank selection.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 15
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Stripe gateway now supports basic chargeback management, including lost chargeback display in Recurly.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 11
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated Connected Accounts to enable merchant-configuration of payment methods within the Stripe Dashboard. Additionally, updated supported payment methods to block methods Recurly does not support.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 8
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Added support for Online Refunds to the platform. WorldPay will enable Online Refund behavior to all merchants this year. No effort from merchants is expected with this change.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 8
+      </td>
+
+      <td>
+        **FreedomPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing FreedomPay to the Recurly Platform! This gateway supports tokenized card payments for merchants with Omnichannel use cases where the subscription begins its life in a card-present environment. Learn more about [FreedomPay](https://docs.recurly.com/docs/freedompay#/) in our dedicated documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 8
+      </td>
+
+      <td>
+        **Ebanx Gateway** with UPI AutoPay
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing Ebanx, with UPI AutoPay for recurring subscriptions. This brand new gateway and payment method supports customers in India who want to use the UPI App to sign up for subscriptions. Learn more about [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) and [Ebanx](https://docs.recurly.com/docs/ebanx-gateway#/) in our dedicated documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 8
+      </td>
+
+      <td>
+        **V3 Client Libraries**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated enums to support `upi_vpa` for UPI AutoPay on Ebanx.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 4
+      </td>
+
+      <td>
+        **iOS SDK**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated SDK to resolve Swift build errors.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Apr 1
+      </td>
+
+      <td>
+        **Create subscriptions with date in past**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Ability to add a date in the past when creating a subscription.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 1
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Adding support for ACH, SEPA, BACS, and BECS through Stripe Elements. Read through our [Third Party Checkout guide](https://recurly.com/developers/guides/3rd-party-checkout.html) for more information.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 1
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adding support for ACH, SEPA, and BACS through Adyen Components x Recurly.js.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 1
+      </td>
+
+      <td>
+        **Kount Fraud Management**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Adding support for Apple Pay fraud scrubbing through Kount. Read more about Kount on our dedicated [fraud management](https://docs.recurly.com/docs/fraud-management#/) documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 1
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Removed the `tax_identifier_type` parameter requirement when processing in LATAM regions. No integration changes are necessary, but this will allow processing in additional LATAM regions that do not support documented tax types. Read more about [Worldpay LATAM support ](https://docs.recurly.com/docs/worldpaydlocal-latam-support#/) in our documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        April 1
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added support for CoBadge behavior on the Stripe gateway in Recurly.js. Please look at our [Cobadged Guide](https://recurly.com/developers/guides/co-badge.html) for more details on implementation. **Pulled from Release**.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## March
 
