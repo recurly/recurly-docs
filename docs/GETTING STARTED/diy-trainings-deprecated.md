@@ -6,7 +6,7 @@ excerpt: >-
   Most of the manual exercises below are actions that can also be completed via
   use of the Recurly API, in addition to the admin console.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
