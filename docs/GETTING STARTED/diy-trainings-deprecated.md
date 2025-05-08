@@ -1,12 +1,12 @@
 ---
-title: DIY trainings
+title: DIY trainings (deprecated)
 excerpt: >-
   The fastest way to get familiar with Recurly's capabilities and UI is to
   undergo a series of exercises based on actual use cases for the application.
   Most of the manual exercises below are actions that can also be completed via
   use of the Recurly API, in addition to the admin console.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
