@@ -1,7 +1,7 @@
 ---
 title: Getting started
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
