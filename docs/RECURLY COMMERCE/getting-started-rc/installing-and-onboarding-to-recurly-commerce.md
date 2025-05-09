@@ -51,5 +51,5 @@ Installing and onboarding with Recurly Commerce is a seamless process, whether y
 
   Recurly Commerce offers transactional email and SMS notifications at no additional cost to communicate with subscribers at every stage of their subscription journey. These communications are not for marketing purposes. Learn more about configuring comms below.
 
-  [enabling-transactional-emails.md](../notifications/enabling-transactional-emails.md "mention")
+  [enabling-transactional-emails.md](https://docs.recurly.com/docs/transactional-emails)
 </details>
