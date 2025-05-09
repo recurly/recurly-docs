@@ -15,19 +15,20 @@ metadata:
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
 * [**Installing and onboarding to Recurly Commerce**](https://docs.recurly.com/docs/installing-and-onboarding-to-recurly-commerce#/)
-* **Migrating to Recurly Commerce**
-* **Creating a subscription plan**
+* **[Migrating to Recurly Commerce](https://docs.recurly.com/docs/migrating-to-recurly-commerce#/)**
+* **[Creating a subscription plan](https://docs.recurly.com/docs/create-a-subscription-plan#/)**
 
 ## Storefront and customer portal
 
 The basics for a delightful storefront and subscriber portal.
 
-* **Storefront setup**
-* **Storefront management**
-* **Customer portal management**
+* **[Storefront setup](https://docs.recurly.com/docs/storefront-setup#/)**
+* **[Storefront management](https://docs.recurly.com/docs/storefront-management#/)**
+* **[Customer portal management](https://docs.recurly.com/docs/customer-portal-management#/)**
 
 ## Recurly Commerce admin 101
 
 Some quick places to start in the Recurly Commerce admin
 
-* **Editing subscriptions**
+* **[Editing a customer subscription](https://docs.recurly.com/docs/edit-a-subscription#/)**
+* [**Subscriber activity**](https://docs.recurly.com/docs/subscriber-activity#/)
