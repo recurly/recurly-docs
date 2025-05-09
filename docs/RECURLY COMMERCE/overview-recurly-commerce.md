@@ -10,7 +10,7 @@ metadata:
 ---
 ![](https://files.readme.io/85d875d5343f78b8af7d27d954e0aa81a17b1f76bd49c0be3d0b9bddb296abd2-image.png)
 
-## Get started
+## Getting started
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
@@ -18,7 +18,7 @@ We've put together some helpful guides for you to get setup with our product qui
 * **Migrating to Recurly Commerce**
 * **Creating a subscription plan**
 
-## Storefront & Customer Portal
+## Storefront and customer portal
 
 The basics for a delightful storefront and subscriber portal.
 
