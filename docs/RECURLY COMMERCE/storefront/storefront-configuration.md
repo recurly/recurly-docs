@@ -1,7 +1,7 @@
 ---
-title: Storefront configuration
+title: Storefront management
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
