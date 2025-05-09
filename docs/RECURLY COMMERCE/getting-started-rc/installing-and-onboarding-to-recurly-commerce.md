@@ -1,7 +1,7 @@
 ---
 title: Installing and onboarding to Recurly Commerce
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
