@@ -48,7 +48,7 @@ Recurly's intelligent retry logic uses data from billions of transactions to inc
 
 # Simplified retry strategy
 
-Rather than a one-size-fits-all retry attempt, Recurly applies a customized approach for each failed payment, informed by ongoing analysis and machine learning. This method adapts over time, aiming to find the best moment to re-attempt a transaction. Core plan users can contact Recurly support to learn more about the advantages of upgrading for this feature.
+Rather than a one-size-fits-all retry attempt, Recurly applies a customized approach for each failed payment, informed by ongoing analysis and machine learning. This method adapts over time, aiming to find the best moment to re-attempt a transaction. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 # General retry guidelines
 
