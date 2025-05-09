@@ -44,7 +44,7 @@ Recurly's Intelligent Retries employs machine learning to determine the optimal 
 
 # Recurly's intelligent retry logic
 
-Recurly's intelligent retry logic uses data from billions of transactions to increase the chances of successful payments. This helps keep your customers' subscriptions active and reduces the chance of losing them due to payment issues. By upgrading to Recurly's Professional or Elite plans you have access to an optimized retry schedule designed by machine learning for each of your declined transactions, increasing the likelihood of successful transactions.
+Recurly's intelligent retry logic uses data from billions of transactions to increase the chances of successful payments. This helps keep your customers' subscriptions active and reduces the chance of losing them due to payment issues. By upgrading your Recurly plan, you have access to an optimized retry schedule designed by machine learning for each of your declined transactions, increasing the likelihood of successful transactions.
 
 # Simplified retry strategy
 
