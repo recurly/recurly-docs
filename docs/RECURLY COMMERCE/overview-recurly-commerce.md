@@ -1,34 +1,58 @@
 ---
 title: 'Overview: Recurly Commerce'
 excerpt: >-
-  In this knowledge base we share the most important info and tips to help grow,
-  retain, and build a long-term relationship with info subscribers.
+  Recurly Commerce empowers merchants to build, customize, and manage
+  subscription storefronts and customer portals with end-to-end tools, guides,
+  and integrated admin workflows.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-![](https://files.readme.io/85d875d5343f78b8af7d27d954e0aa81a17b1f76bd49c0be3d0b9bddb296abd2-image.png)
+# Overview
 
-## Getting started
+![Recurly Commerce screenshot](https://files.readme.io/85d875d5343f78b8af7d27d954e0aa81a17b1f76bd49c0be3d0b9bddb296abd2-image.png)
 
-We've put together some helpful guides for you to get setup with our product quickly and easily.
+### Required plan
 
-* [**Installing and onboarding to Recurly Commerce**](https://docs.recurly.com/docs/installing-and-onboarding-to-recurly-commerce#/)
-* **[Migrating to Recurly Commerce](https://docs.recurly.com/docs/migrating-to-recurly-commerce#/)**
-* **[Creating a subscription plan](https://docs.recurly.com/docs/create-a-subscription-plan#/)**
+This feature or setting is available to all customers on any Recurly subscription plan.
 
-## Storefront and customer portal
+### Additional cost
 
-The basics for a delightful storefront and subscriber portal.
+This feature or setting requires an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> for more pricing details.
 
-* **[Storefront setup](https://docs.recurly.com/docs/storefront-setup#/)**
-* **[Storefront management](https://docs.recurly.com/docs/storefront-management#/)**
-* **[Customer portal management](https://docs.recurly.com/docs/customer-portal-management#/)**
+# Definition
 
-## Recurly Commerce admin 101
+Recurly Commerce is an end-to-end subscription commerce platform that combines guided setup, flexible storefront and portal tools, and streamlined admin workflows—so you can launch, manage, and grow your subscriptions all in one place.
 
-Some quick places to start in the Recurly Commerce admin
+# Key benefits
 
-* **[Editing a customer subscription](https://docs.recurly.com/docs/edit-a-subscription#/)**
-* [**Subscriber activity**](https://docs.recurly.com/docs/subscriber-activity#/)
+* **Rapid onboarding:** Follow step-by-step guides to install and configure Recurly Commerce in minutes.
+* **Flexible storefront & portal:** Customize your customer storefront and self-service portal without writing custom code.
+* **Integrated admin workflows:** Access common subscription actions—editing, activity monitoring, churn prevention—directly in the Recurly Commerce UI.
+
+# Key details
+
+### Getting started
+
+Kick off your Recurly Commerce journey with our core setup and migration guides:
+
+* [Installing and onboarding to Recurly Commerce](https://docs.recurly.com/docs/installing-and-onboarding-to-recurly-commerce#/)
+* [Migrating to Recurly Commerce](https://docs.recurly.com/docs/migrating-to-recurly-commerce#/)
+* [Creating a subscription plan](https://docs.recurly.com/docs/create-a-subscription-plan#/)
+
+### Storefront and customer portal
+
+Design and manage delightful customer experiences with our built-in storefront and portal tools:
+
+* [Storefront setup](https://docs.recurly.com/docs/storefront-setup#/)
+* [Storefront management](https://docs.recurly.com/docs/storefront-management#/)
+* [Customer portal management](https://docs.recurly.com/docs/customer-portal-management#/)
+
+### Recurly Commerce admin 101
+
+Quick links for everyday subscription administration tasks:
+
+* [Editing a customer subscription](https://docs.recurly.com/docs/edit-a-subscription#/)
+* [Subscriber activity](https://docs.recurly.com/docs/subscriber-activity#/)
+* [Cancellation and churn prevention flows](https://docs.recurly.com/docs/cancellation-and-churn-prevention-flows#/)
