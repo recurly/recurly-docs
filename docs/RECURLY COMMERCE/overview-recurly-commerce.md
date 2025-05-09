@@ -14,7 +14,7 @@ metadata:
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-* **Installing and onboarding to Recurly Commerce**
+* [**Installing and onboarding to Recurly Commerce**](https://docs.recurly.com/docs/installing-and-onboarding-to-recurly-commerce#/)
 * **Migrating to Recurly Commerce**
 * **Creating a subscription plan**
 
