@@ -1,7 +1,7 @@
 ---
 title: Transactional emails
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
