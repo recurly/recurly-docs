@@ -1,44 +1,65 @@
 ---
 title: Installing and onboarding to Recurly Commerce
+excerpt: >-
+  Step-by-step guide to installing and onboarding Recurly Commerce in your
+  Shopify store—covering app installation, plan selection, subscription
+  creation, storefront setup, and communications configuration.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-<Tabs>
-  <Tab icon="fa-download" title="Step 1: Download App">
-    **Recurly Commerce** is supported for both Shopify and Shopify Plus merchants.\
-    Install via the Shopify App Store:
+# Overview
 
-    * [Download the app here](https://apps.shopify.com/prive-subscriptions)
-  </Tab>
+### Required plan
 
-  <Tab icon="fa-list" title="Step 2: Choose a Plan">
-    Recurly Commerce offers three plans—pick the one that fits your business and growth goals.
+This feature is available to all customers on any Recurly subscription plan.
 
-    1. Open the Recurly Commerce app and click **Start Trial** in the top-right.
-    2. Select your plan (you can always upgrade later).
-    3. Complete checkout through Shopify.
-    4. Once purchased, you’ll have full access to create and launch subscriptions.
+### Additional cost
 
-    * [Compare plans](https://www.tryprive.com/pricing)
-  </Tab>
+This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
 
-  <Tab icon="fa-plus-circle" title="Step 3: Create Subscription Plan">
-    Quickly define your subscription offers—these feed directly into your storefront widget.
+### Prerequisites & limitations
 
-    * [Create a subscription plan](https://docs.recurly.com/docs/create-a-subscription-plan#/)
-  </Tab>
+* A Shopify or Shopify Plus store is required.
 
-  <Tab icon="fa-store" title="Step 4: Set Up Storefront">
-    Ensure your subscription purchase widget displays correctly on your product pages.
+# Definition
 
-    * [Storefront setup guide](https://docs.recurly.com/docs/storefront-setup#/)
-  </Tab>
+The Installing & Onboarding workflow guides you through adding the Recurly Commerce app to Shopify and configuring your first subscriptions, storefront, and notifications.
 
-  <Tab icon="fa-envelope" title="Step 5: Configure Comms">
-    Recurly Commerce includes free transactional email & SMS to keep subscribers informed at every stage.
+# Key benefits
 
-    * [Transactional emails](https://docs.recurly.com/docs/transactional-emails)
-  </Tab>
-</Tabs>
+* **Rapid launch**: Get subscriptions up and running in minutes.
+* **Plan flexibility**: Choose or upgrade plans to match your business needs.
+* **Native integration**: Manage everything directly within Shopify’s interface.
+
+# Key detail
+
+<Cards columns={3}>
+  <Card title="Download App" icon="fa-download" target="_blank" href="https://apps.shopify.com/prive-subscriptions">
+    Recurly Commerce is supported on Shopify and Shopify Plus.\
+    Install it from the Shopify App Store.
+  </Card>
+
+  <Card title="Choose a Plan" icon="fa-list" target="_blank" href="https://www.tryprive.com/pricing">
+    1. Open the Recurly Commerce app and click **Start Trial**
+    2. Select one of three plans (upgrade anytime)
+    3. Complete checkout via Shopify\
+       [Compare plans](https://www.tryprive.com/pricing)
+  </Card>
+
+  <Card title="Create Subscription Plan" icon="fa-plus-circle" target="_blank" href="https://docs.recurly.com/docs/create-a-subscription-plan#/">
+    Define your subscription offers—these feed directly into your storefront widget.\
+    [Create a subscription plan](https://docs.recurly.com/docs/create-a-subscription-plan#/)
+  </Card>
+
+  <Card title="Set Up Storefront" icon="fa-store" target="_blank" href="https://docs.recurly.com/docs/storefront-setup#/">
+    Ensure the subscription purchase widget displays on your product pages.\
+    [Storefront setup guide](https://docs.recurly.com/docs/storefront-setup#/)
+  </Card>
+
+  <Card title="Configure Comms" icon="fa-envelope" target="_blank" href="https://docs.recurly.com/docs/transactional-emails">
+    Free transactional email & SMS keep subscribers informed at every stage.\
+    [Configure transactional emails](https://docs.recurly.com/docs/transactional-emails)
+  </Card>
+</Cards>
