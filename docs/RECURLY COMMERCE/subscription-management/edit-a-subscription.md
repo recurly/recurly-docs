@@ -170,19 +170,35 @@ Adjust the number of items your subscriber receives on each renewal.
 
 ***
 
-## Apply Coupon / Discount Code
+## Apply coupon / discount code
 
-1. In the **Discounts** section, click **Add Coupon**.
-2. Enter a valid Shopify coupon code.
-3. Click **Apply**.
+Add a coupon code created in the “Discounts” section of the Shopify storefront and add it directly to a customer’s contract.
+
+1. **Click** **Coupon Code**.
+
+![](https://files.readme.io/b78fd515467a4eb3b15ec8f1dbf2f2f15ebe855f74996bd37c7e2feb05903309-image.png)
+
+2. **Enter** a valid Shopify coupon code.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3d27a32157260922d8e6b844fb81e6a7ddf0f86bf0096860c03b4c990a9be836-image.png" />
+
+3. **Click** **Apply**.
 
 ***
 
-## Swap Product
+## Swap product
 
-1. In the **Products** section, click **Swap** next to the SKU.
-2. Select a replacement SKU from your configured swap list.
-3. Click **Swap & Save**.
+Change the product that is currently selected by swapping to another product SKU that has been previously configured in the “Product Swap and Add-ons” section of the “Subscription Plans” tab.
+
+1. **Click Swap Product**.
+
+![](https://files.readme.io/6fe491aacae79f89409287b6d2a317c872fe801c04072de41b2a7c44e68775d6-image.png)
+
+2. **Select** a replacement SKU from your configured swap list.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png" />
+
+3. **Click** **Swap & Save**.
 
 ***
 
