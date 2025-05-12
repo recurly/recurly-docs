@@ -110,7 +110,7 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 ## Archive a Subscription Plan
 
-1. On the plan’s card, click the **•••** menu and select **Archive**.
+1. On the plan’s card, click the **⋮** menu and select **Archive**.
 2. Confirm to deactivate the offer—archived plans move into the **Archived** tab.
 
 > **Warning:** Archiving does **not** cancel active subscriptions; those contracts continue to renew. Archived plans cannot be reactivated.
