@@ -55,7 +55,7 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6c4491e678495f72c1b3ae9c8f82ce6bcbbf430091786b90b251ce95a2dcc80b-image.png" />
 
-5. Click **Confirm**, then be sure to hit **Save Changes** at the top to apply your updates.
+5. **Click** **Confirm**, then be sure to **hit** **Save Changes** at the top to apply your updates.
 
 > **Note:** Only products without an existing subscription offer are listed.
 
@@ -63,26 +63,38 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 ## Edit Purchase Options & Discounts
 
-1. In the **Options** section, click **Edit**.
-2. View each purchase mode (e.g., One-time & Subscribe & Save, Subscription Only, Pre-Paid). You’ll see delivery cadence and current subscriber counts.
-3. Reorder options by dragging to control display priority on your widget.
-4. Archive any unwanted purchase modes to remove them from new signups.
-5. Toggle **Add Gift Option** on or off to prompt “Is this a gift?” during checkout.
-6. Click **Save Changes** to lock in your revised purchase options.
+1. In the **Options** section, **click** **Edit**.
+2. **View** each purchase mode (e.g., One-time & Subscribe & Save, Subscription Only, Pre-Paid). You’ll see delivery cadence and current subscriber counts.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d9c7021a51a7421419a119720ce3c3b682b7c5075014f1294b1906ba137d375c-image.png" />
+
+3. **Reorder** options by dragging to control display priority on your widget.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ef9a70b573f8e7e674bbca8ee6dcf0aa7960d66a69298bf5125bf2a482971ef3-image.png" />
+
+4. **Archive** any unwanted purchase modes to remove them from new signups.
+5. **Toggle** **Add Gift Option** on or off to prompt “Is this a gift?” during checkout.
+6. **Click** **Save Changes** to lock in your revised purchase options.
 
 ***
 
 ## Edit Product Swaps & Add-ons
 
-1. Scroll to **Product Swap and Add-Ons** and click **Edit**.
+1. **Scroll** to **Product Swap and Add-Ons** and **click** **Edit**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/31a564c55d34c35983d4d499f623b0d9ebdebe5555c42f7a2382c1d963a3a705-image.png" />
+
 2. By default, your selected subscription products are available for swaps and add-ons.
-3. Click **+ Select Products** to include additional SKUs for:
+3. **Click** **+ Select Products** to include additional SKUs for:
 
    * **Swap** – let customers swap one SKU for another at renewal.
    * **One-Time Add-On** – enable single delivery extras (e.g., tote bags).
    * **Subscription Add-On** – include add-ons on every renewal cycle.
-4. Check or uncheck each SKU’s boxes to configure.
-5. Click **Confirm**, then **Save Changes**.
+4. **Check** or **uncheck** each SKU’s boxes to configure.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a1a783d40969367070c69067932ed4760e4bc347e4e80a14daf4cc1074c2326c-image.png" />
+
+5. **Click** **Confirm**, then **Save Changes**.
 
 ***
 
