@@ -53,7 +53,7 @@ With Recurly Commerce, you can create a subscription offer in minutes, which wil
    * Uncheck to remove. These selections determine which product detail pages (PDPs) display the subscription widget.
 4. Click **Confirm** at the bottom to save your product selection.
 
-![](https://files.readme.io/6cbcdd748375a8be4bbcfc74b7e6a5cb1d569b9cf0d657872159ee86a87394c4-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6cbcdd748375a8be4bbcfc74b7e6a5cb1d569b9cf0d657872159ee86a87394c4-image.png" />
 
 > **Note:** Only products that do not currently have a subscription offer are available for selection.
 
@@ -76,7 +76,7 @@ Once your products are chosen, select how they’ll be offered to customers:
 
   * All three options appear in the widget, letting customers choose among one-time purchase, recurring billing, or prepaid plans.
 
-![](https://files.readme.io/0c3562de13c54df346e4311943672b0b1c76378536ece3c7373ad4b34ce13004-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0c3562de13c54df346e4311943672b0b1c76378536ece3c7373ad4b34ce13004-image.png" />
 
 ***
 
@@ -88,7 +88,7 @@ Once your products are chosen, select how they’ll be offered to customers:
 
 > **Note:** Offering larger discounts for more frequent deliveries incentivizes subscriptions and boosts customer retention.
 
-![](https://files.readme.io/53b6b70e3476393b720119f426d940765154f9b28a181907d4019b06a0c0ccba-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/53b6b70e3476393b720119f426d940765154f9b28a181907d4019b06a0c0ccba-image.png" />
 
 ***
 
@@ -114,7 +114,7 @@ For each product in your plan, you can configure:
 
   * Automatically include this SKU on every renewal—for staples your subscribers always need.
 
-![](https://files.readme.io/a7fa49c9a5894858ec0592e4ec126ba845f1bc15f1b49870b55fbede076018ae-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a7fa49c9a5894858ec0592e4ec126ba845f1bc15f1b49870b55fbede076018ae-image.png" />
 
 > **Note:** By default, only the products you selected for this subscription are available to swap or add-on—but you can extend add-on availability to any store product.
 
@@ -131,7 +131,7 @@ In addition to recurring frequency discounts, you can grant one-time promotions 
 
   * Discount based on the total quantity of product (e.g., 20% off when ordering 3+ units per delivery) to encourage larger baskets.
 
-![](https://files.readme.io/de4d7decca07c55fc2b9f8af6b694fe539d1eb3864576f484fb1010511cccb0e-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/de4d7decca07c55fc2b9f8af6b694fe539d1eb3864576f484fb1010511cccb0e-image.png" />
 
 > **Note:** Discounts don’t stack. Special discounts override the recurring frequency discount until they expire—for example, a “first 3 orders 50% off” runs first, then the “10% off every 4 weeks” takes over.
 
@@ -145,7 +145,7 @@ Define your subscription shipping rules:
 * **Minimum spend** or **minimum quantity** threshold.
 * **First-order only** vs. **every renewal** toggle.
 
-![](https://files.readme.io/97262007e0b799bfa8569cbeb2ecd05bfd50cbb3d17d0b825328afd9c9df40b5-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/97262007e0b799bfa8569cbeb2ecd05bfd50cbb3d17d0b825328afd9c9df40b5-image.png" />
 
 > **Note:** If your Shopify store’s existing shipping profile already handles subscriptions, skip this section to avoid conflicting rules.
 
