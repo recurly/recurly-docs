@@ -106,7 +106,7 @@ Define:
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/97262007e0b799bfa8569cbeb2ecd05bfd50cbb3d17d0b825328afd9c9df40b5-image.png" />
 
-> *Note: If your Shopify shipping profile already covers subscriptions, skip this step.*
+> **Note:** If your Shopify shipping profile already covers subscriptions, skip this step.
 
 ## Publish offer
 
