@@ -16,7 +16,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Additional cost
 
-This feature or setting does not require any additional cost beyond your existing Recurly subscription.
+This feature or setting requires an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> for more pricing details.
 
 ### Prerequisites & limitations
 
