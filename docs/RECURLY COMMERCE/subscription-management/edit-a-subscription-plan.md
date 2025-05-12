@@ -121,14 +121,23 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 ## Edit Free Shipping
 
-1. Scroll to the **Free Shipping** section and click **Edit**.
-2. Toggle free shipping **On** or **Off**.
-3. Configure:
+1. **Scroll** to the **Free Shipping** section and click **Edit**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/15fa5ce353fa164e093a993c7fe5b69fc02a40687b017594d1d225cecea9cf68-image.png" />
+
+2. **Toggle** free shipping **On** or **Off**.
+3. **Configure**:
 
    * **Countries** where free shipping applies.
    * **Minimum spend** or **minimum quantity** thresholds.
-   * Apply to **first order only** or **every renewal**.
-4. Click **Save Changes**.
+   * **Apply** to **first order only** or **every renewal**.
+
+   <br />
+
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8774a6685ed75503009dee71fbefb3b792eb0e77911c27f7b64db6bdf84f6fb3-image.png" />
+
+   <br />
+4. **Click** **Save Changes**.
 
 > **Note:** If your Shopify shipping profiles already cover subscription orders, omit this step to avoid conflicts.
 
