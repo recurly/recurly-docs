@@ -79,7 +79,7 @@ Select a new date the subscriber’s payment method will be charged. This will c
 
 2. **Select** a new date for all future billing/deliveries.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png" />
 
 3. **Click** **Update**.
 
@@ -87,15 +87,27 @@ Select a new date the subscriber’s payment method will be charged. This will c
 
 ## Process Now
 
-Click **Process Now** to immediately charge the payment method on file.
+Selecting this button will immediately charge the payment method on file in a subscriber’s subscription contract.
+
+1. **Click** **Process Now** to immediately charge the payment method on file.
+
+![](https://files.readme.io/92b011924d257926ba60fb8cefac655dc9b58423708c1a1df11f4e710b411444-image.png)
 
 ***
 
 ## Edit Frequency
 
-1. Click **Frequency** dropdown.
-2. Choose a new cadence from pre-configured options.
-3. Click **Save**—applies to all future renewals.
+Select a new frequency for the subscriber from the pre-configured options. This change will take effect on all subsequent renewals/deliveries.
+
+1. **Click** **Edit Frequency**.
+
+![](https://files.readme.io/f0729cd660a0ff7c669868be2ba46717e3bcfaae933a0ca3d4843be81a060dbb-image.png)
+
+2. **Choose** a new cadence from pre-configured options.
+
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png" />
+
+3. Click **Update**—applies to all future renewals.
 
 ***
 
