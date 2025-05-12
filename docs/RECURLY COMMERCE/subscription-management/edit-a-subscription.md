@@ -107,7 +107,7 @@ Change how often this subscriber is billed going forward.
 
 2. **Choose** a new cadence from the list of your configured options.
 
-![](https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png)
+<Image align="center" width="60% " src="https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png" />
 
 1. **Click** **Update** to save—it applies to all upcoming renewals.
 
