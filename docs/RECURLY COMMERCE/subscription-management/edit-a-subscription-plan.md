@@ -11,8 +11,6 @@ metadata:
 ---
 # Overview
 
-Editing a subscription plan in Recurly Commerce lets you refine your offerings—add or remove products, adjust purchase options and frequency discounts, configure gifting prompts, manage add-ons and swaps, set special discounts, tweak shipping rules, and archive plans—all while keeping your subscribers active and uninterrupted.
-
 ### Video
 
 <iframe src="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" frameborder="0" allowfullscreen width="100%" height="450" />
