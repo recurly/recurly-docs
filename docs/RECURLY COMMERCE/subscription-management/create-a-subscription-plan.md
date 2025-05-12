@@ -13,6 +13,10 @@ metadata:
 
 With Recurly Commerce, you can build a subscription offer in minutes that automatically feeds into your storefront widget, letting customers add subscription products to their cart seamlessly.
 
+### Video
+
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" href="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" html="false" iframe="true" />
+
 ### Prerequisites & limitations
 
 * Only products without an existing subscription offer can be selected.
@@ -109,9 +113,5 @@ Define:
 Click **Publish Offer** (top right) to make the subscription live on your site.
 
 ***
-
-# Video demo
-
-<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" href="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" html="false" iframe="true" />
 
 Still need help? Contact [support@recurly.com](mailto:support@recurly.com).
