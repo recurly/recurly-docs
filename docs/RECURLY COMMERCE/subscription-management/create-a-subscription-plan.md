@@ -11,8 +11,6 @@ metadata:
 ---
 # Overview
 
-With Recurly Commerce, you can build a subscription offer in minutes that automatically feeds into your storefront widget, letting customers add subscription products to their cart seamlessly.
-
 ### Video
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" href="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" html="false" iframe="true" />
