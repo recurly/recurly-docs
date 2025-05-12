@@ -166,7 +166,7 @@ Adjust the number of items your subscriber receives on each renewal.
 
 2. **Enter** the new quantity for all future deliveries.
 
-![](https://files.readme.io/c32aa566d8bdffa6d126c8215782eb99100e3b08214349767312b9ed429aedfd-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/c32aa566d8bdffa6d126c8215782eb99100e3b08214349767312b9ed429aedfd-image.png" />
 
 3. **Click** **Apply** to save the updated quantity.
 
