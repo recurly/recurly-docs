@@ -228,7 +228,7 @@ A subscription product will be added once to a specific renewal/delivery of choi
 
 2. **Select** the SKU and specify which upcoming renewal.
 
-![](https://files.readme.io/ad267487bf391edaebfbd9b362b11fb01fd835b5c482844b1a154e0aa126ab1e-image.png)
+<Image align="center" width="% " src="https://files.readme.io/ad267487bf391edaebfbd9b362b11fb01fd835b5c482844b1a154e0aa126ab1e-image.png" />
 
 3. **Save** your changes.
 
@@ -236,18 +236,39 @@ A subscription product will be added once to a specific renewal/delivery of choi
 
 ## Cancel Subscription
 
-1. Click **Cancel Subscription**.
+Cancelling the subscription will immediately stop all subsequent renewals/deliveries in the contract and push the contract status to an “inactive” state.
+
+1. **Click** **Cancel Subscription**.
+
+![](https://files.readme.io/73a94ff26c936edbedafbfe0f2717ec01338573825b8a738dd08d7f7e8cdd073-image.png)
+
 2. Confirm in the pop-up to stop all future renewals and set status to **Inactive**.
 
-> **Note**: Cancellation is immediate and irreversible; active subscribers will no longer renew.
+![](https://files.readme.io/caf03f940a65a4e783885faca2128e981faa6277f0091bdd081e635842d38c92-image.png)
 
 ***
 
+<br />
+
+![](https://files.readme.io/7b8abf13562797bb5f42b394aa9dc5f51ae31a7ebd978cf5501198bed150b7c5-image.png)
+
+<br />
+
 ## Reactivate a Subscription
 
-1. Switch to the **Inactive** tab and locate the subscriber.
-2. Click **Reactivate** next to their contract.
-3. Confirm in the pop-up—status reverts to **Active** and it returns to the **Active** list.
+Bring a cancelled subscription contract back to life in three easy steps:
+
+1. **Switch** to the **Inactive** tab in the **Customers** section and find the subscriber.
+
+![](https://files.readme.io/1715fdc88b964559864e2b505c2a6d4d40c53c9713b00956f7ec2beb0fb7e57a-image.png)
+
+2. **Click** **Reactivate** next to their contract.
+
+![](https://files.readme.io/03c16f07ee5172dca7d58b1c3f73e242db552806e874ac45ed053e40dd7c354b-image.png)
+
+3. **Confirm** the action in the pop-up. Their status will immediately revert to **Active**, and they’ll reappear in the **Active** list.
+
+![](https://files.readme.io/7b8abf13562797bb5f42b394aa9dc5f51ae31a7ebd978cf5501198bed150b7c5-image.png)
 
 ***
 
