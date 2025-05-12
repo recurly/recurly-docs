@@ -32,8 +32,11 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 
 ## Accessing a subscriber’s contract
 
-1. Go to **Customers** → **Active** (or **Inactive**) tab.
-2. Find the subscriber in the list and click anywhere on their row.
+1. **Go** to **Customers** → **Active** (or **Inactive**) tab.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2465e345e7995b90ec60b3bea0fef15c2ca88a23c915655eef7adc34934d5667-image.png" />
+
+2. **Find** the subscriber in the list and click anywhere on their row.
 3. The contract detail page opens, showing name, email, phone and status badge.
 
 **Statuses**:
