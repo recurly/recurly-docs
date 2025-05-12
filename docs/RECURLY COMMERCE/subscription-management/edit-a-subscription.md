@@ -228,13 +228,13 @@ A subscription product will be added once to a specific renewal/delivery of choi
 
 2. **Select** the SKU and specify which upcoming renewal.
 
-<Image align="center" width="% " src="https://files.readme.io/ad267487bf391edaebfbd9b362b11fb01fd835b5c482844b1a154e0aa126ab1e-image.png" />
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/ad267487bf391edaebfbd9b362b11fb01fd835b5c482844b1a154e0aa126ab1e-image.png" />
 
 3. **Save** your changes.
 
 ***
 
-## Cancel Subscription
+## Cancel subscription
 
 Cancelling the subscription will immediately stop all subsequent renewals/deliveries in the contract and push the contract status to an “inactive” state.
 
@@ -248,7 +248,7 @@ Cancelling the subscription will immediately stop all subsequent renewals/delive
 
 ***
 
-## Reactivate a subscription
+## Reactivate subscription
 
 Bring a cancelled subscription contract back to life in three easy steps:
 
@@ -306,11 +306,17 @@ When a customer needs to change their payment method on file, trigger a secure r
 
 ## Create a New Subscription Contract
 
-1. Go to **Subscriptions** → **Create Contract** (top right).
-2. Only available for customers who already have a contract under that email.
-3. Complete the form and click **Create**.
+Use this flow to add a brand-new contract for a customer who already has at least one active subscription under their email:
 
-> **Note**: Shopify merges all subscriptions by email; to create a separate contract, the customer must use a different email.
+1. **Navigate** to **Subscriptions** → **Create Contract** in the top right corner.
+
+![](https://files.readme.io/7adcc1328f1ba211db4f01195e2fe1bbfb5237ba34ade9062b0c98e639c121ba-image.png)
+
+2. **Complete** the contract form—select the customer, plan, start date, and any options—then click **Create**.
+
+![](https://files.readme.io/e80a9096c8dadf1b949b438f03528d226654e26e18bb900bf7b7fa0797e723ef-image.png)
+
+> **Note**: Shopify merges all subscriptions by email. To issue a separate contract under the same store account, the customer must checkout with a different email address.
 
 ***
 
