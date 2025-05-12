@@ -1,7 +1,193 @@
 ---
 title: Edit a customer subscription
+excerpt: >-
+  Step-by-step instructions for merchants to modify any aspect of an active
+  subscriber’s contract—from status and contact info to billing cadence,
+  pricing, add-ons, shipping, and cancellation—while preserving continuity.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
+The **Edit a Customer Subscription** screen in Recurly Commerce empowers you to manage every facet of an individual subscriber’s contract in real time: update their status, contact details, next-billing date, frequency, pricing, discounts, add-ons, shipping and more, or pause, skip, cancel, and even re-activate—all without code.
+
+### Prerequisites & limitations
+
+* The subscriber must already have an active contract.
+* Email address changes require Recurly support intervention.
+
+# Definition
+
+Editing a subscription contract lets you tailor an individual customer’s upcoming renewals and deliveries—updating their billing schedule, quantities, product selections, pricing, discounts, shipping, and status—while existing subscribers continue uninterrupted.
+
+# Key benefits
+
+* **Immediate adjustments**: Apply changes on the spot for any single subscriber’s contract.
+* **Subscriber retention**: Pause, skip, or modify schedules to keep customers engaged and satisfied.
+* **Personalized service**: Offer one-off add-ons, custom discounts, and gifting directly on their contract.
+
+# Key detail
+
+## Accessing a subscriber’s contract
+
+1. Go to **Customers** → **Active** (or **Inactive**) tab.
+2. Find the subscriber in the list and click anywhere on their row.
+3. The contract detail page opens, showing name, email, phone and status badge.
+
+**Statuses**:
+
+* **Active:** This means the contract is active with no issues found.
+* **Inactive:** This means the contract is cancelled.
+  * (**Click** the “Reactivate” button to reactivate a subscription contract)
+* **Failed (in dunning):** This means the contract’s payment method is currently being re-tried through a process called dunning.
+  * (Pause and unpause the contract to stop dunning and bring the contract back to an active state)
+
+***
+
+## Edit Phone Number
+
+1. In the contract header, click the ✎ icon beside **Phone**.
+2. Enter the new number and click **Save**.
+
+***
+
+## Edit Email
+
+> **Note**: Email changes require support assistance. Contact [support@recurly.com](mailto:support@recurly.com).
+
+***
+
+## Set Delivery / Renewal Date
+
+1. Click the calendar icon next to **Next Renewal**.
+2. Select a new date for all future billing/deliveries.
+3. Click **Save**.
+
+***
+
+## Process Now
+
+Click **Process Now** to immediately charge the payment method on file.
+
+***
+
+## Edit Frequency
+
+1. Click **Frequency** dropdown.
+2. Choose a new cadence from pre-configured options.
+3. Click **Save**—applies to all future renewals.
+
+***
+
+## Change Price
+
+1. Click the pencil icon beside **Price**.
+2. Enter a new subscription price (this contract only).
+3. Click **Save**.
+
+***
+
+## Pause Contract
+
+1. Click **Pause**.
+2. Choose indefinite or a set number of deliveries (if configured).
+3. Click **Confirm**.
+
+***
+
+## Skip Next
+
+1. Click **Skip Next**.
+2. Select one or more upcoming orders to skip.
+3. Click **Confirm**—renewals resume afterward.
+
+***
+
+## Update Quantity
+
+1. Click the quantity field.
+2. Enter the new quantity for future renewals.
+3. Click **Save**.
+
+***
+
+## Apply Coupon / Discount Code
+
+1. In the **Discounts** section, click **Add Coupon**.
+2. Enter a valid Shopify coupon code.
+3. Click **Apply**.
+
+***
+
+## Swap Product
+
+1. In the **Products** section, click **Swap** next to the SKU.
+2. Select a replacement SKU from your configured swap list.
+3. Click **Swap & Save**.
+
+***
+
+## Add-On Subscription Product
+
+1. Click **Add Subscription Add-On**.
+2. Choose an add-on SKU to include on every renewal.
+3. Click **Add & Save**.
+
+***
+
+## One-Time Add-On Product
+
+1. Click **Add One-Time Add-On**.
+2. Select the SKU and specify which upcoming renewal.
+3. Click **Add & Save**.
+
+***
+
+## Cancel Subscription
+
+1. Click **Cancel Subscription**.
+2. Confirm in the pop-up to stop all future renewals and set status to **Inactive**.
+
+> **Note**: Cancellation is immediate and irreversible; active subscribers will no longer renew.
+
+***
+
+## Reactivate a Subscription
+
+1. Switch to the **Inactive** tab and locate the subscriber.
+2. Click **Reactivate** next to their contract.
+3. Confirm in the pop-up—status reverts to **Active** and it returns to the **Active** list.
+
+***
+
+## Update Shipping Information
+
+1. In **Shipping Information**, click ✎ **Edit**.
+2. Modify name, address, city, state, postal code, country.
+3. Click **Update**.
+
+***
+
+## Update Billing Information
+
+1. Click **Send reset email** in the **Billing Information** section.
+2. Subscriber receives a link to update their payment details via Shopify Payments.
+3. Once updated, Recurly Commerce syncs the new billing info automatically.
+
+> **Note**: Merchants cannot directly edit payment details for security and compliance.
+
+***
+
+## Create a New Subscription Contract
+
+1. Go to **Subscriptions** → **Create Contract** (top right).
+2. Only available for customers who already have a contract under that email.
+3. Complete the form and click **Create**.
+
+> **Note**: Shopify merges all subscriptions by email; to create a separate contract, the customer must use a different email.
+
+***
+
+Still need help? Contact [support@recurly.com](mailto:support@recurly.com).
