@@ -172,7 +172,7 @@ Adjust the number of items your subscriber receives on each renewal.
 
 ## Apply coupon / discount code
 
-Add a coupon code created in the “Discounts” section of the Shopify storefront and add it directly to a customer’s contract.
+Attach a Shopify coupon code directly to a subscriber’s contract to apply promotional pricing on all future renewals.
 
 1. **Click** **Coupon Code**.
 
@@ -180,33 +180,40 @@ Add a coupon code created in the “Discounts” section of the Shopify storefro
 
 2. **Enter** a valid Shopify coupon code.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3d27a32157260922d8e6b844fb81e6a7ddf0f86bf0096860c03b4c990a9be836-image.png" />
+![](https://files.readme.io/3d27a32157260922d8e6b844fb81e6a7ddf0f86bf0096860c03b4c990a9be836-image.png)
 
-3. **Click** **Apply**.
+3. **Click** **Apply** to activate the discount for this subscription contract.
 
 ***
 
 ## Swap product
 
-Change the product that is currently selected by swapping to another product SKU that has been previously configured in the “Product Swap and Add-ons” section of the “Subscription Plans” tab.
+Replace the current subscription item with a different SKU you’ve pre-configured in your plan’s swap list.
 
-1. **Click Swap Product**.
+1. **Click** **Swap Product**.\
+   ![](https://files.readme.io/6fe491aacae79f89409287b6d2a317c872fe801c04072de41b2a7c44e68775d6-image.png)
 
-![](https://files.readme.io/6fe491aacae79f89409287b6d2a317c872fe801c04072de41b2a7c44e68775d6-image.png)
+2. **Select** a replacement SKU from the enabled swap list.
 
-2. **Select** a replacement SKU from your configured swap list.
+![](https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png)
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png" />
-
-3. **Click** **Swap & Save**.
+3. **Click** **Swap & Save** to update the contract.
 
 ***
 
-## Add-On Subscription Product
+## Add-on subscription product
 
-1. Click **Add Subscription Add-On**.
-2. Choose an add-on SKU to include on every renewal.
-3. Click **Add & Save**.
+Include an extra product on every delivery to boost order value and subscriber satisfaction.
+
+1. **Click** **Add-on Subscription Product to all Deliveries**.
+
+![](https://files.readme.io/1b83551dc32b5ad2c958886d115fec4b2aecb8ac741b6d6591e762815a333e36-image.png)
+
+2. **Choose** the add-on SKU to include on each renewal.
+
+![](https://files.readme.io/cf71f14540e667cd3dff6dfdd61e66be3996e0b8d7767e3152389d2172e5220c-image.png)
+
+3. **Save** your changes to lock in the add-on for all future deliveries.
 
 ***
 
