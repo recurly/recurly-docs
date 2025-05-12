@@ -113,9 +113,7 @@ Change how often this subscriber is billed going forward.
 
 ***
 
-<br />
-
-## Change Price
+## Change price
 
 Update the per-renewal cost for this subscriber’s contract—future renewals will charge the new amount without affecting any other subscribers.
 
@@ -131,7 +129,7 @@ Update the per-renewal cost for this subscriber’s contract—future renewals w
 
 ***
 
-## Pause Contract
+## Pause contract
 
 Temporarily halt a subscriber’s renewals—either indefinitely or for a predefined number of deliveries.
 
@@ -143,7 +141,7 @@ Temporarily halt a subscriber’s renewals—either indefinitely or for a predef
 
 ***
 
-## Skip Next
+## Skip next
 
 Skip one or more upcoming orders without cancelling the subscription; the schedule will pick up after the skipped delivery.
 
@@ -156,7 +154,7 @@ Skip one or more upcoming orders without cancelling the subscription; the schedu
 
 ***
 
-## Update Quantity
+## Update quantity
 
 Adjust the number of items your subscriber receives on each renewal.
 
