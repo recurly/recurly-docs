@@ -91,8 +91,9 @@ Adjust when this subscriber’s payment method is charged—and all future renew
 
 Charge the subscriber immediately—no waiting for the next scheduled date.
 
-1. **Click** **Process Now** to trigger an on-demand payment.\
-   ![](https://files.readme.io/92b011924d257926ba60fb8cefac655dc9b58423708c1a1df11f4e710b411444-image.png)
+1. **Click** **Process Now** to trigger an on-demand payment.
+
+![](https://files.readme.io/92b011924d257926ba60fb8cefac655dc9b58423708c1a1df11f4e710b411444-image.png)
 
 ***
 
@@ -100,10 +101,15 @@ Charge the subscriber immediately—no waiting for the next scheduled date.
 
 Change how often this subscriber is billed going forward.
 
-1. **Click** **Edit Frequency**.\
-   ![](https://files.readme.io/f0729cd660a0ff7c669868be2ba46717e3bcfaae933a0ca3d4843be81a060dbb-image.png)
-2. **Choose** a new cadence from the list of your configured options. ![](https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png)
-3. **Click** **Update** to save—it applies to all upcoming renewals.
+1. **Click** **Edit Frequency**.
+
+![](https://files.readme.io/f0729cd660a0ff7c669868be2ba46717e3bcfaae933a0ca3d4843be81a060dbb-image.png)
+
+2. **Choose** a new cadence from the list of your configured options.
+
+![](https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png)
+
+1. **Click** **Update** to save—it applies to all upcoming renewals.
 
 ***
 
