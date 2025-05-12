@@ -310,11 +310,11 @@ Use this flow to add a brand-new contract for a customer who already has at leas
 
 1. **Navigate** to **Subscriptions** → **Create Contract** in the top right corner.
 
-![](https://files.readme.io/7adcc1328f1ba211db4f01195e2fe1bbfb5237ba34ade9062b0c98e639c121ba-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7adcc1328f1ba211db4f01195e2fe1bbfb5237ba34ade9062b0c98e639c121ba-image.png" />
 
 2. **Complete** the contract form—select the customer, plan, start date, and any options—then click **Create**.
 
-![](https://files.readme.io/e80a9096c8dadf1b949b438f03528d226654e26e18bb900bf7b7fa0797e723ef-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e80a9096c8dadf1b949b438f03528d226654e26e18bb900bf7b7fa0797e723ef-image.png" />
 
 > **Note**: Shopify merges all subscriptions by email. To issue a separate contract under the same store account, the customer must checkout with a different email address.
 
