@@ -42,7 +42,7 @@ With Recurly Commerce, you can create a subscription offer in minutes, which wil
 
 3. Click **+ Select Products** and check the SKUs to include.
 
-![](https://files.readme.io/6cbcdd748375a8be4bbcfc74b7e6a5cb1d569b9cf0d657872159ee86a87394c4-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6cbcdd748375a8be4bbcfc74b7e6a5cb1d569b9cf0d657872159ee86a87394c4-image.png" />
 
 4. **Click** **Confirm**.
 
