@@ -1,7 +1,124 @@
 ---
 title: Edit a subscription plan
+excerpt: >-
+  Comprehensive guide to updating every aspect of an existing subscription plan
+  in Recurly Commerce, including products, purchase modes, discounts, add-ons,
+  gifting, shipping, and plan archiving.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
+Editing a subscription plan in Recurly Commerce lets you refine your offerings—add or remove products, adjust purchase options and frequency discounts, configure gifting prompts, manage add-ons and swaps, set special discounts, tweak shipping rules, and archive plans—all while keeping your subscribers active and uninterrupted.
+
+### Video
+
+<iframe src="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" frameborder="0" allowfullscreen width="100%" height="450" />
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly subscription plan.
+
+### Prerequisites & limitations
+
+* You must have at least one live subscription plan to edit.
+* Only products not already tied to another subscription offer will appear when selecting SKUs.
+
+# Definition
+
+Editing a subscription plan allows you to modify all live offer settings—products, purchase modes, billing cadences, discounts, gifting, add-ons, and shipping—without affecting current subscriber contracts. Changes apply prospectively, ensuring seamless continuity for your customers.
+
+# Key benefits
+
+* **Real-time control**: Instantly update products, pricing, and perks to respond to inventory changes or promotions.
+* **Subscriber continuity**: All edits take effect on future renewals—active subscribers remain uninterrupted.
+* **Holistic management**: Centralize every aspect of your subscription offer in one intuitive interface.
+
+# Key detail
+
+## Accessing the edit screen
+
+1. Navigate to **Subscription Plans** in the left sidebar.
+2. Locate the plan you wish to update.
+3. Click the **⋮** menu on its card and select **Edit**.
+
+***
+
+## Add or Remove Products
+
+1. Scroll to the **Details** section and click the purple **Edit** button.
+2. (Optional) Update the internal **Name** and **Description** for clarity—these labels are for your team only.
+3. Click **+ Select Products** to open your full Shopify SKU catalog.
+4. Check boxes next to SKUs to add, or uncheck to remove.
+5. Click **Confirm**, then be sure to hit **Save Changes** at the top to apply your updates.
+
+> **Note:** Only products without an existing subscription offer are listed.
+
+***
+
+## Edit Purchase Options & Discounts
+
+1. In the **Options** section, click **Edit**.
+2. View each purchase mode (e.g., One-time & Subscribe & Save, Subscription Only, Pre-Paid). You’ll see delivery cadence and current subscriber counts.
+3. Reorder options by dragging to control display priority on your widget.
+4. Archive any unwanted purchase modes to remove them from new signups.
+5. Toggle **Add Gift Option** on or off to prompt “Is this a gift?” during checkout.
+6. Click **Save Changes** to lock in your revised purchase options.
+
+***
+
+## Edit Product Swaps & Add-ons
+
+1. Scroll to **Product Swap and Add-Ons** and click **Edit**.
+2. By default, your selected subscription products are available for swaps and add-ons.
+3. Click **+ Select Products** to include additional SKUs for:
+
+   * **Swap** – let customers swap one SKU for another at renewal.
+   * **One-Time Add-On** – enable single delivery extras (e.g., tote bags).
+   * **Subscription Add-On** – include add-ons on every renewal cycle.
+4. Check or uncheck each SKU’s boxes to configure.
+5. Click **Confirm**, then **Save Changes**.
+
+***
+
+## Edit Special Discounts
+
+1. Find the **Special Discounts** section and click **Edit**.
+2. You’ll see existing discounts by:
+
+   * **By Order** – a percentage off the first N orders.
+   * **By Quantity** – a discount based on item quantity per order.
+3. Adjust the values, or select **None** to disable special discounts.
+4. Click **Save Changes**.
+
+> **Note:** Special discounts override any frequency-based discounts until they expire.
+
+***
+
+## Edit Free Shipping
+
+1. Scroll to the **Free Shipping** section and click **Edit**.
+2. Toggle free shipping **On** or **Off**.
+3. Configure:
+
+   * **Countries** where free shipping applies.
+   * **Minimum spend** or **minimum quantity** thresholds.
+   * Apply to **first order only** or **every renewal**.
+4. Click **Save Changes**.
+
+> **Note:** If your Shopify shipping profiles already cover subscription orders, omit this step to avoid conflicts.
+
+***
+
+## Archive a Subscription Plan
+
+1. On the plan’s card, click the **•••** menu and select **Archive**.
+2. Confirm to deactivate the offer—archived plans move into the **Archived** tab.
+
+> **Warning:** Archiving does **not** cancel active subscriptions; those contracts continue to renew. Archived plans cannot be reactivated.
+
+***
+
+Still need help? Contact [support@recurly.com](mailto:support@recurly.com).
