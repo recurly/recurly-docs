@@ -260,7 +260,7 @@ Bring a cancelled subscription contract back to life in three easy steps:
 
 1. **Switch** to the **Inactive** tab in the **Customers** section and find the subscriber.
 
-![](https://files.readme.io/1715fdc88b964559864e2b505c2a6d4d40c53c9713b00956f7ec2beb0fb7e57a-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1715fdc88b964559864e2b505c2a6d4d40c53c9713b00956f7ec2beb0fb7e57a-image.png" />
 
 2. **Click** **Reactivate** next to their contract.
 
@@ -268,7 +268,7 @@ Bring a cancelled subscription contract back to life in three easy steps:
 
 3. **Confirm** the action in the pop-up. Their status will immediately revert to **Active**, and they’ll reappear in the **Active** list.
 
-![](https://files.readme.io/7b8abf13562797bb5f42b394aa9dc5f51ae31a7ebd978cf5501198bed150b7c5-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7b8abf13562797bb5f42b394aa9dc5f51ae31a7ebd978cf5501198bed150b7c5-image.png" />
 
 ***
 
