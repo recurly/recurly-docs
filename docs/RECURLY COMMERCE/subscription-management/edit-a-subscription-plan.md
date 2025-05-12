@@ -17,10 +17,6 @@ Editing a subscription plan in Recurly Commerce lets you refine your offeringsâ€
 
 <iframe src="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" frameborder="0" allowfullscreen width="100%" height="450" />
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
-
 ### Prerequisites & limitations
 
 * You must have at least one live subscription plan to edit.
