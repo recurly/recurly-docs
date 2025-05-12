@@ -43,9 +43,18 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 ## Add or Remove Products
 
 1. Scroll to the **Details** section and click the purple **Edit** button.
-2. (Optional) Update the internal **Name** and **Description** for clarity—these labels are for your team only.
-3. Click **+ Select Products** to open your full Shopify SKU catalog.
-4. Check boxes next to SKUs to add, or uncheck to remove.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2aebb5a4416113d9634c50df72b0231638da434fdaae8a66719f543a0fabdd14-image.png" />
+
+2. (Optional) **Update** the internal **Name** and **Description** for clarity—these labels are for your team only.
+3. **Click** **+ Select Products** to open your full Shopify SKU catalog.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a5867979940d8892500e62e229934834e0b7c290c1eead0f43827826b4ceb6a2-image.png" />
+
+4. **Check** boxes next to SKUs to add, or uncheck to remove.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6c4491e678495f72c1b3ae9c8f82ce6bcbbf430091786b90b251ce95a2dcc80b-image.png" />
+
 5. Click **Confirm**, then be sure to hit **Save Changes** at the top to apply your updates.
 
 > **Note:** Only products without an existing subscription offer are listed.
