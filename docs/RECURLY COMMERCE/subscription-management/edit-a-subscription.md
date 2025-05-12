@@ -41,6 +41,8 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 
 **Statuses**:
 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e80e529203b09b3af6e8d56445a200a4773351f95fcdb6b8ffb7ffecb7f332ef-image.png" />
+
 * **Active:** This means the contract is active with no issues found.
 * **Inactive:** This means the contract is cancelled.
   * (**Click** the “Reactivate” button to reactivate a subscription contract)
@@ -52,6 +54,9 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 ## Edit Phone Number
 
 1. In the contract header, click the ✎ icon beside **Phone**.
+
+<Image align="center" src="https://files.readme.io/43753f0a143cc6e1a870512991dfa6e3a98fd54bba777aad5cca057c7ea4e48b-image.png" />
+
 2. Enter the new number and click **Save**.
 
 ***
@@ -59,6 +64,8 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 ## Edit Email
 
 > **Note**: Email changes require support assistance. Contact [support@recurly.com](mailto:support@recurly.com).
+
+Subscribers nor merchants can make changes at this time to email addresses because the subscription contract is tied to the email address and is used to leverage the one-time password portal. Recurly Commerce customer support can assist with this functionality should it be needed.
 
 ***
 
