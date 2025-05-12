@@ -71,7 +71,7 @@ Email addresses are locked to the contract and power the one-time-password porta
 
 ***
 
-## Set Delivery / Renewal Date
+## Set delivery / renewal date
 
 Adjust when this subscriber’s payment method is charged—and all future renewals follow.
 
@@ -79,7 +79,7 @@ Adjust when this subscriber’s payment method is charged—and all future renew
 
 ![](https://files.readme.io/61803eae4434fadd437f9dc14b0a618e728e2c477154f486f49c9ac17fa25049-image.png)
 
-1. **Select** your new billing date.
+2. **Select** your new billing date.
 
 <Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png" />
 
@@ -87,7 +87,7 @@ Adjust when this subscriber’s payment method is charged—and all future renew
 
 ***
 
-## Process Now
+## Process now
 
 Charge the subscriber immediately—no waiting for the next scheduled date.
 
@@ -97,7 +97,7 @@ Charge the subscriber immediately—no waiting for the next scheduled date.
 
 ***
 
-## Edit Frequency
+## Edit frequency
 
 Change how often this subscriber is billed going forward.
 
@@ -109,7 +109,7 @@ Change how often this subscriber is billed going forward.
 
 <Image align="center" width="60% " src="https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png" />
 
-1. **Click** **Update** to save—it applies to all upcoming renewals.
+3. **Click** **Update** to save—it applies to all upcoming renewals.
 
 ***
 
