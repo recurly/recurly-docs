@@ -10,8 +10,6 @@ metadata:
 ---
 # Overview
 
-<br />
-
 ### Prerequisites & limitations
 
 * Available on all Recurly Commerce plans.
