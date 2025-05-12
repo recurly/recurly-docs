@@ -248,13 +248,7 @@ Cancelling the subscription will immediately stop all subsequent renewals/delive
 
 ***
 
-<br />
-
-![](https://files.readme.io/7b8abf13562797bb5f42b394aa9dc5f51ae31a7ebd978cf5501198bed150b7c5-image.png)
-
-<br />
-
-## Reactivate a Subscription
+## Reactivate a subscription
 
 Bring a cancelled subscription contract back to life in three easy steps:
 
@@ -274,19 +268,33 @@ Bring a cancelled subscription contract back to life in three easy steps:
 
 ## Update Shipping Information
 
-1. In **Shipping Information**, click ✎ **Edit**.
-2. Modify name, address, city, state, postal code, country.
-3. Click **Update**.
+Adjust the subscriber’s delivery address on file to ensure future orders ship to the correct location:
+
+1. In the **Shipping Information** panel, **click** **Edit**.\
+   ![](https://files.readme.io/9fa36508fb8f10f302d3463c0433deac908e9775c47453a074f29c80fe935e6c-image.png)
+
+2. **Modify** any of the fields—name, street address, city, state, postal code, or country—to the new values.\
+   ![](https://files.readme.io/909a1d2de214cb65fe019c05eaf1fdf2fe00a514d3f2b021d66e81a237326366-image.png)
+
+3. **Click** **Update** to save the new shipping information. All future renewals and deliveries will use this updated address.
 
 ***
 
 ## Update Billing Information
 
-1. Click **Send reset email** in the **Billing Information** section.
-2. Subscriber receives a link to update their payment details via Shopify Payments.
-3. Once updated, Recurly Commerce syncs the new billing info automatically.
+When a customer needs to change their payment method on file, trigger a secure reset through Shopify Payments:
 
-> **Note**: Merchants cannot directly edit payment details for security and compliance.
+> **Note**: For security and PCI compliance, merchants cannot directly edit a customer’s payment details. You must send a reset link.
+
+1. In the **Billing & Shipping** section, **click** **Send reset email**.\
+   ![](https://files.readme.io/506b3b70c9c5d3c2a525c0dad8d0d90c564f07acad96196823f0e60718a849b1-image.png)
+
+2. The subscriber receives an email with a link to update their payment details via the Shopify Payments gateway.\
+   ![](https://files.readme.io/043e181c421c08cf83218993a7621899e2862f85cc8600fd69d652191818b8ab-image.png)
+
+3. Once the customer completes the update in Shopify, Recurly Commerce automatically syncs the new billing information into the subscription contract. ![](https://www.gitbook.com/cdn-cgi/image/dpr=2,width=2400,onerror=redirect,format=auto/https%3A%2F%2Ffiles.gitbook.com%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F8fL56bv4OV5TqEAqXpvt%252Fuploads%252Fpx9UxrCPhCzsijb7Ue6W%252Fezgif.com-gif-maker.gif%3Falt%3Dmedia%26token%3D6273e900-9c2d-417d-8764-bc8e42eef1ee)
+
+> **Note**: This reset process ensures you never handle raw payment data directly, keeping both you and your customers secure.
 
 ***
 
