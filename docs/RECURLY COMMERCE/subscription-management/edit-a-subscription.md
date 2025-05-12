@@ -61,53 +61,44 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 
 ***
 
+<br />
+
 ## Edit Email
 
 > **Note**: Email changes require support assistance. Contact [support@recurly.com](mailto:support@recurly.com).
 
-Subscribers nor merchants can make changes at this time to email addresses because the subscription contract is tied to the email address and is used to leverage the one-time password portal. Recurly Commerce customer support can assist with this functionality should it be needed.
+Email addresses are locked to the contract and power the one-time-password portal. If you need to update a subscriber’s email, our support team can guide you through the process.
 
 ***
 
 ## Set Delivery / Renewal Date
 
-Select a new date the subscriber’s payment method will be charged. This will change the date the subscriber is charged on all subsequent renewals/deliveries.
+Adjust when this subscriber’s payment method is charged—and all future renewals follow.
 
-1. **Click** **Set Delivery**.
-
-![](https://files.readme.io/61803eae4434fadd437f9dc14b0a618e728e2c477154f486f49c9ac17fa25049-image.png)
-
-2. **Select** a new date for all future billing/deliveries.
-
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png" />
-
-3. **Click** **Update**.
+1. **Click** **Set Delivery**.\
+   ![](https://files.readme.io/61803eae4434fadd437f9dc14b0a618e728e2c477154f486f49c9ac17fa25049-image.png)
+2. **Select** your new billing date. ![](https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png)
+3. **Click** **Update** to apply.
 
 ***
 
 ## Process Now
 
-Selecting this button will immediately charge the payment method on file in a subscriber’s subscription contract.
+Charge the subscriber immediately—no waiting for the next scheduled date.
 
-1. **Click** **Process Now** to immediately charge the payment method on file.
-
-![](https://files.readme.io/92b011924d257926ba60fb8cefac655dc9b58423708c1a1df11f4e710b411444-image.png)
+1. **Click** **Process Now** to trigger an on-demand payment.\
+   ![](https://files.readme.io/92b011924d257926ba60fb8cefac655dc9b58423708c1a1df11f4e710b411444-image.png)
 
 ***
 
 ## Edit Frequency
 
-Select a new frequency for the subscriber from the pre-configured options. This change will take effect on all subsequent renewals/deliveries.
+Change how often this subscriber is billed going forward.
 
-1. **Click** **Edit Frequency**.
-
-![](https://files.readme.io/f0729cd660a0ff7c669868be2ba46717e3bcfaae933a0ca3d4843be81a060dbb-image.png)
-
-2. **Choose** a new cadence from pre-configured options.
-
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png" />
-
-3. Click **Update**—applies to all future renewals.
+1. **Click** **Edit Frequency**.\
+   ![](https://files.readme.io/f0729cd660a0ff7c669868be2ba46717e3bcfaae933a0ca3d4843be81a060dbb-image.png)
+2. **Choose** a new cadence from the list of your configured options. ![](https://files.readme.io/ec3a998f6e8a30bdf5522e4ed496394bf33e8a9e684ce2fb3aef5dbe0b58205d-image.png)
+3. **Click** **Update** to save—it applies to all upcoming renewals.
 
 ***
 
