@@ -32,7 +32,7 @@ A subscription plan in Recurly Commerce defines which products customers can sub
 * **Flexible pricing & discounts**: Configure one-time, subscription-only, prepaid, or hybrid offers with tiered discounts and special promotions.
 * **Rich add-ons & gifting**: Enable product swaps, one-time or recurring add-ons, and gift-option prompts to boost average order value and delight customers.
 
-# Key detail
+# Key details
 
 ## Creating a subscription plan
 
