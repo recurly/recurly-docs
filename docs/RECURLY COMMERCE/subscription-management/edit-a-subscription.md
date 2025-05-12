@@ -198,7 +198,7 @@ Replace the current subscription item with a different SKU you’ve pre-configur
 
 <br />
 
-![](https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png)
+<Image align="center" src="https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png" />
 
 3. **Click** **Swap & Save** to update the contract.
 
