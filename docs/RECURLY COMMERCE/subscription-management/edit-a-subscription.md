@@ -125,7 +125,7 @@ Update the per-renewal cost for this subscriber’s contract—future renewals w
 
 2. **Enter** the new subscription price for this contract only.
 
-![](https://files.readme.io/fe50ad810dc5fbf937a342df8c10e821d6df2153ac97849401f1566abf5cd8fa-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/fe50ad810dc5fbf937a342df8c10e821d6df2153ac97849401f1566abf5cd8fa-image.png" />
 
 3. **Click** **Apply** to confirm the new price.
 
