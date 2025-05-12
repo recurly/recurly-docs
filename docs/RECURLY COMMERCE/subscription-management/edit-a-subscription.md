@@ -190,10 +190,13 @@ Attach a Shopify coupon code directly to a subscriber’s contract to apply prom
 
 Replace the current subscription item with a different SKU you’ve pre-configured in your plan’s swap list.
 
-1. **Click** **Swap Product**.\
-   ![](https://files.readme.io/6fe491aacae79f89409287b6d2a317c872fe801c04072de41b2a7c44e68775d6-image.png)
+1. **Click** **Swap Product**.
 
-2. **Select** a replacement SKU from the enabled swap list.
+![](https://files.readme.io/6fe491aacae79f89409287b6d2a317c872fe801c04072de41b2a7c44e68775d6-image.png)
+
+1. **Select** a replacement SKU from the enabled swap list.
+
+<br />
 
 ![](https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png)
 
