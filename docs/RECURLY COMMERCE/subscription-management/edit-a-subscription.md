@@ -113,11 +113,21 @@ Change how often this subscriber is billed going forward.
 
 ***
 
+<br />
+
 ## Change Price
 
-1. Click the pencil icon beside **Price**.
-2. Enter a new subscription price (this contract only).
-3. Click **Save**.
+Update the per-renewal cost for this subscriber’s contract—future renewals will charge the new amount without affecting any other subscribers.
+
+1. **Click** **Change Price**.
+
+![](https://files.readme.io/66dccf75868d9cfbdadeb6b6b0b2d8815344bbfb6bddd1a1e817bd7ef71104dd-image.png)
+
+2. **Enter** the new subscription price for this contract only.
+
+![](https://files.readme.io/fe50ad810dc5fbf937a342df8c10e821d6df2153ac97849401f1566abf5cd8fa-image.png)
+
+3. **Click** **Apply** to confirm the new price.
 
 ***
 
