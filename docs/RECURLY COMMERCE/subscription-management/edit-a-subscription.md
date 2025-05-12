@@ -135,10 +135,11 @@ Update the per-renewal cost for this subscriber’s contract—future renewals w
 
 Temporarily halt a subscriber’s renewals—either indefinitely or for a predefined number of deliveries.
 
-1. **Click** **Pause**.\
-   ![](https://files.readme.io/ba39e69e836b3f2ec5cbd8111890d03b648ec99a34df3b52bb21a18729c8b914-image.png)
+1. **Click** **Pause**.
 
-2. **Choose** between pausing indefinitely or specifying a number of upcoming deliveries (if your plan supports it).
+![](https://files.readme.io/ba39e69e836b3f2ec5cbd8111890d03b648ec99a34df3b52bb21a18729c8b914-image.png)
+
+1. **Choose** between pausing indefinitely or specifying a number of upcoming deliveries (if your plan supports it).
 
 ***
 
@@ -146,11 +147,11 @@ Temporarily halt a subscriber’s renewals—either indefinitely or for a predef
 
 Skip one or more upcoming orders without cancelling the subscription; the schedule will pick up after the skipped delivery.
 
-1. **Click** **Skip Next**.\
-   ![](https://files.readme.io/00bfc039d87d36923442af5752dcee8753ee4e8047a2c44907ad6a08217b0c17-image.png)
+1. **Click** **Skip Next**.
+
+![](https://files.readme.io/00bfc039d87d36923442af5752dcee8753ee4e8047a2c44907ad6a08217b0c17-image.png)
 
 2. **Select** the orders you want to skip.
-
 3. **Click** **Confirm**—all future renewals resume once those orders have been skipped.
 
 ***
@@ -159,11 +160,13 @@ Skip one or more upcoming orders without cancelling the subscription; the schedu
 
 Adjust the number of items your subscriber receives on each renewal.
 
-1. **Click** **Update Quantity**.\
-   ![](https://files.readme.io/5738bf05f51b78bdaf844980df316ea58e44511abfd7c7198b3e5b81c586957b-image.png)
+1. **Click** **Update Quantity**.
 
-2. **Enter** the new quantity for all future deliveries.\
-   ![](https://files.readme.io/c32aa566d8bdffa6d126c8215782eb99100e3b08214349767312b9ed429aedfd-image.png)
+![](https://files.readme.io/5738bf05f51b78bdaf844980df316ea58e44511abfd7c7198b3e5b81c586957b-image.png)
+
+2. **Enter** the new quantity for all future deliveries.
+
+![](https://files.readme.io/c32aa566d8bdffa6d126c8215782eb99100e3b08214349767312b9ed429aedfd-image.png)
 
 3. **Click** **Apply** to save the updated quantity.
 
