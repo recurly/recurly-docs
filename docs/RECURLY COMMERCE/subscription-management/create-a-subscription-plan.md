@@ -1,118 +1,117 @@
 ---
 title: Create a subscription plan
+excerpt: >-
+  Learn how to create and configure a subscription plan in Recurly Commerce—from
+  product selection and purchasing options to discounts, gifting, and shipping
+  rules—so you can launch offers in minutes.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-With Recurly Commerce, you can create a subscription offer in minutes, which will feed into your storefront widget where your customers can add a subscription   product to cart.
+# Overview
 
-# ➕ Creating a subscription plan
+With Recurly Commerce, you can build a subscription offer in minutes that automatically feeds into your storefront widget, letting customers add subscription products to their cart seamlessly.
 
-### Subscription Information
+### Prerequisites & limitations
 
-* Navigate to the subscription plans tab and select “+ create offer” in the top right hand corner of the page.
+* Only products without an existing subscription offer can be selected.
+* Your Shopify catalog must be synced to Recurly Commerce.
 
-![](https://files.readme.io/823b2379481ad43a068186c6985fdb7cf78914be556c90f1c51be9ae0a5a962b-image.png)
+# Definition
 
-* In the “Subscription Information” section, name your subscription offer and write a description. This name and description is only for internal reference. Your customers will not see the naming.
-* Next, click the “+ select products” button to add on products to the subscription plan. Your Shopify store’s entire product SKU catalog will appear. You can always add or remove products in the future by checking or unchecking the checkbox next to each product. The products you select will dictate on which PDP the subscription widget will appear. Select the “Confirm” button at the bottom of the page to save the changes.
+A subscription plan in Recurly Commerce defines which products customers can subscribe to, how often they’re billed, and any discounts, gifting options, add-ons, or shipping rules that apply.
+
+# Key benefits
+
+* **Launch in minutes**: Spin up subscription offers without touching code or waiting on engineering.
+* **Flexible pricing & discounts**: Customize one-time, subscription-only, prepaid or hybrid offers with tiered discounts and special promotions.
+* **Rich add-ons & gifting**: Enable product swaps, one-time or recurring add-ons, and gift-option prompts to boost average order value and delight customers.
+
+# Key detail
+
+## Creating a subscription plan
+
+With Recurly Commerce, you can create a subscription offer in minutes, which will feed into your storefront widget where your customers can add a subscription product to cart.
+
+## Subscription Information
+
+1. Go to **Subscription Plans** → **+ Create Offer**.
+
+2. Enter an internal **Name** and **Description** (customers won’t see these).
+
+3. Click **+ Select Products** and check the SKUs to include.
 
 ![](https://files.readme.io/6cbcdd748375a8be4bbcfc74b7e6a5cb1d569b9cf0d657872159ee86a87394c4-image.png)
 
-**Note:** Only products that do not currently have a subscription offer will be available to select.
+4. **Click** **Confirm**.
 
-![](https://files.readme.io/d003ebfe15dc0c4cdcdd18b5a069ac2ca828f24528b6f5912017b882f4bee577-image.png)
+> **Note:** Only products without an existing offer appear.
 
-<br />
+## Choosing purchasing options
 
-### Choose Purchasing Options
+Pick one of four modes:
 
-Once the products have been selected, choose the purchasing option for the products. There are 4 purchasing options to choose from:
+* **One-time & Subscribe & Save**
+* **Subscription Only**
+* **Pre-Paid Subscription Only**
+* **One-time, Subscribe & Save & Prepaid**
 
-* \[MOST POPULAR] **One-time and Subscribe & Save**: The product(s) will have the option of being a one-time purchase or purchased on a recurring basis.
-* **Subscription Only:** The product(s) will only be offered on a recurring basis.
-* **Pre-Paid Subscription Only:** The product(s) will only be offered on prepaid basis. (i.e the customer will pay upfront in full for the complete duration of the subscription and receive the products on the selected frequency.)
-* **One-time, Subscribe & Save, and Prepaid subscription:** The product(s) will have the option of being a one-time purchase, or purchased on a recurring basis and/or on a prepayment basis. (All options will be visible on the widget)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0c3562de13c54df346e4311943672b0b1c76378536ece3c7373ad4b34ce13004-image.png" />
 
-![](https://files.readme.io/0c3562de13c54df346e4311943672b0b1c76378536ece3c7373ad4b34ce13004-image.png)
+## Add subscription options & discounts
 
-<br />
+1. Toggle **Offer Discounts** on or off.
+2. Click **+ Add Option** for each frequency (e.g. every 4 weeks).
+3. Specify discount percentage per schedule.
 
-### Add Subscription Options
+> **Note**: Larger discounts for more frequent deliveries drive higher adoption.
 
-Once the purchase option has been selected, configure the order schedules and associated discounts. Choose between 2 buttons labeled “offer discounts” or “do not offer discounts.” *Tip: Offering discounts for a subscription option helps incentivize your customers to sign up for a subscription. Consider offering higher discounts for more frequent deliveries.* Click the “+ Add Option” button to add specific frequencies and choose the discounts associated with each schedule. If you have selected more than one subscription option (i.e. subscribe and pre-paid) you will need to configure discounts and frequencies for both plans.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/53b6b70e3476393b720119f426d940765154f9b28a181907d4019b06a0c0ccba-image.png" />
 
-![](https://files.readme.io/53b6b70e3476393b720119f426d940765154f9b28a181907d4019b06a0c0ccba-image.png)
+## Gifting option
 
-Choose to toggle on the “add gift option” button. Toggling the gifting option on, will add a radio button to the bottom of the subscription widget that prompts an “Is this a gift” question to customers after they have selected their preferred subscription option. [Click here to learn more about our gifting feature.](https://www.tryprive.com/blog/gifting)
+Toggle **Add Gift Option** to prompt “Is this a gift?” in the widget. [Learn more about gifting](https://www.tryprive.com/blog/gifting).
 
-### Product Swap and Add-ons
+## Product swaps and add-ons
 
-Next, configure product swaps and add-ons for each product on the subscription plan.
+For each product, enable:
 
-***Note:** By default, products you have selected for this subscription will be available to swap across and add-on.*
+* **Swap**: let customers swap this SKU for another.
+* **One-Time Add-On**: allow single-delivery extras (e.g. tote bags).
+* **Subscription Add-On**: include on every renewal.
 
-![](https://files.readme.io/a7fa49c9a5894858ec0592e4ec126ba845f1bc15f1b49870b55fbede076018ae-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a7fa49c9a5894858ec0592e4ec126ba845f1bc15f1b49870b55fbede076018ae-image.png" />
 
-<br />
+## Special discounts
 
-There are 3 checkbox options to select for each product:
+* **By Order**: apply a discount to the first N orders (boosts LTV).
+* **By Quantity**: discount based on item quantity (increases AOV).
 
-* **Swap:** This option will enable the current product to be swapped out to another product SKU. (By default, the products you have selected for the subscription plan will be available for this option.)
-* **One Time Add-on:** This option will enable the product to be selected for a one time add-on to the delivery/renewal of choice. You can also select other products from your Shopify store that are not attached to the subscription plan to be available as one time add-ons your subscribers will see in their customer portal. (i.e. tote bag, booklet, water bottle, etc.)
-* **Subscription Add-on:** This option will enable the product to be selected as a subscription add-on that will appear on every delivery/renewal. (By default, the products you have selected for the subscription plan will be available for this option.
+<Image align="center" width="80% " src="https://files.readme.io/de4d7decca07c55fc2b9f8af6b694fe539d1eb3864576f484fb1010511cccb0e-image.png" />
 
-Select the “Confirm” button at the bottom of the page to save the changes.
+> Discounts don’t stack—special discounts override frequency discounts until they expire.
 
-![](https://files.readme.io/1be439d8ac6a04982966004ec5cf36d01777e273b5cd69c6fa996321647b57c2-image.png)
+## Free shipping
 
-<br />
+Define:
 
-<br />
+* Applicable countries
+* Minimum spend or quantity
+* “First-order only” vs. “every renewal”
 
-### Provide Special Discounts
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/97262007e0b799bfa8569cbeb2ecd05bfd50cbb3d17d0b825328afd9c9df40b5-image.png" />
 
-<br />
+> *Note: If your Shopify shipping profile already covers subscriptions, skip this step.*
 
-* In addition to frequency discounts, you have the option to provide special discounts based on the first number of orders or product quantity.
-  * **By Order:** This option configures a special discount based on the first number of orders requested to increase the lifetime value of a subscriber.
-    * **By Quantity:** This option configures a special discount based on the amount of product quantity for the subscriber’s future subscriptions to increase average order value.
+## Publish offer
 
-      \<figure>\<img src="../.gitbook/assets/Screen Shot 2022-12-13 at 12.40.15 PM.png" alt="">\<figcaption>\</figcaption>\</figure>
+Click **Publish Offer** (top right) to make the subscription live on your site.
 
-      \_\*\*Note:\*\* Recurly Commerce does not stack discounts. If both a frequency discount and a special discount are configured, the special discounts will override the frequency discount for a limited time.\_ \\\*\\\*\\\*\\\*(i.e. A frequency discount for every 4 weeks with 10% off will not begin until the special discount of the first 3 orders is complete. On the customer’s 4th order the frequency discount of 10% every 4 weeks will begin.)
+***
 
+# Video demo
 
-      <br />
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" href="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" html="false" iframe="true" />
 
-### Set Free Shipping
-
-<br />
-
-* Set up free shipping by selecting specific countries, specifying the minimum purchase amount or quantity minimum, and choose if free shipping applies to all recurring orders or is only applied to the first number of orders.
-
-  \<figure>\<img src="../.gitbook/assets/Screen Shot 2022-12-13 at 12.42.11 PM (1).png" alt="">\<figcaption>\</figcaption>\</figure>
-
-  \_\*\*Note:\*\* Toggle free shipping on only if different rules should apply for subscription orders. If your storefront already has a shipping profile rule that also applies to subscription orders, do not set up free shipping in Recurly Commerce. The original shipping profile rule will apply to all orders the store receives- both one-time purchases and subscription orders.\_
-
-  Select Publish Offer in the top right hand corner and the subscription plan will be live on your site.
-
-
-  <br />
-
-### Video
-
-<br />
-
-* Watch the video below to see the above steps completed in action
-
-<br />
-
-\{% embed url="https\://www\.loom.com/share/6d76a0c604b2499788f2d7c398f989da" %}
-
-<br />
-
-\{% hint style="info" %} &#x20;
-Still need help? Contact \[support\@recurly.com]\(mailto:support\@recurly.com)&#x20;
-\{% endhint %}
+Still need help? Contact [support@recurly.com](mailto:support@recurly.com).
