@@ -180,7 +180,7 @@ Attach a Shopify coupon code directly to a subscriber’s contract to apply prom
 
 2. **Enter** a valid Shopify coupon code.
 
-![](https://files.readme.io/3d27a32157260922d8e6b844fb81e6a7ddf0f86bf0096860c03b4c990a9be836-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/3d27a32157260922d8e6b844fb81e6a7ddf0f86bf0096860c03b4c990a9be836-image.png" />
 
 3. **Click** **Apply** to activate the discount for this subscription contract.
 
@@ -194,11 +194,9 @@ Replace the current subscription item with a different SKU you’ve pre-configur
 
 ![](https://files.readme.io/6fe491aacae79f89409287b6d2a317c872fe801c04072de41b2a7c44e68775d6-image.png)
 
-1. **Select** a replacement SKU from the enabled swap list.
+2. **Select** a replacement SKU from the enabled swap list.
 
-<br />
-
-<Image align="center" src="https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6f7585a8dd52437d4f1b2785960e99b7aa9178db28cd74584ad48016dc43cf7b-image.png" />
 
 3. **Click** **Swap & Save** to update the contract.
 
@@ -214,7 +212,7 @@ Include an extra product on every delivery to boost order value and subscriber s
 
 2. **Choose** the add-on SKU to include on each renewal.
 
-![](https://files.readme.io/cf71f14540e667cd3dff6dfdd61e66be3996e0b8d7767e3152389d2172e5220c-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/cf71f14540e667cd3dff6dfdd61e66be3996e0b8d7767e3152389d2172e5220c-image.png" />
 
 3. **Save** your changes to lock in the add-on for all future deliveries.
 
