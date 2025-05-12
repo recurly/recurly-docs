@@ -65,9 +65,9 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 
 ## Edit Email
 
-> **Note**: Email changes require support assistance. Contact [support@recurly.com](mailto:support@recurly.com).
-
 Email addresses are locked to the contract and power the one-time-password portal. If you need to update a subscriber’s email, our support team can guide you through the process.
+
+> **Note**: Email changes require support assistance. Contact [support@recurly.com](mailto:support@recurly.com).
 
 ***
 
