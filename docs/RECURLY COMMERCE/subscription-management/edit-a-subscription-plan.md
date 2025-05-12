@@ -30,7 +30,7 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 * **Subscriber continuity**: All edits take effect on future renewals—active subscribers remain uninterrupted.
 * **Holistic management**: Centralize every aspect of your subscription offer in one intuitive interface.
 
-# Key detail
+# Key details
 
 ## Accessing the edit screen
 
