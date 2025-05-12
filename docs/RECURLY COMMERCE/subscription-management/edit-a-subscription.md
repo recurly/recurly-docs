@@ -218,11 +218,19 @@ Include an extra product on every delivery to boost order value and subscriber s
 
 ***
 
-## One-Time Add-On Product
+## One-time add-on product
 
-1. Click **Add One-Time Add-On**.
-2. Select the SKU and specify which upcoming renewal.
-3. Click **Add & Save**.
+A subscription product will be added once to a specific renewal/delivery of choice.
+
+1. **Click** **Select One-Time Add-On**.
+
+![](https://files.readme.io/d51f0e48131a349e29a271bb85fade171d8d1750a38490accbe11dc154141d21-image.png)
+
+2. **Select** the SKU and specify which upcoming renewal.
+
+![](https://files.readme.io/ad267487bf391edaebfbd9b362b11fb01fd835b5c482844b1a154e0aa126ab1e-image.png)
+
+3. **Save** your changes.
 
 ***
 
