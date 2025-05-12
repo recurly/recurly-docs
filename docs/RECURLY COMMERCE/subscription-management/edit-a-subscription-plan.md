@@ -101,12 +101,19 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 ## Edit Special Discounts
 
 1. Find the **Special Discounts** section and click **Edit**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/de282c89a319da610117c38d275be200710b1e60e6309c534921c256b898f9b6-image.png" />
+
 2. You’ll see existing discounts by:
 
-   * **By Order** – a percentage off the first N orders.
-   * **By Quantity** – a discount based on item quantity per order.
-3. Adjust the values, or select **None** to disable special discounts.
-4. Click **Save Changes**.
+* **By Order** – a percentage off the first N orders.
+* **By Quantity** – a discount based on item quantity per order.
+
+3. **Adjust** the values, or select **None** to disable special discounts.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8ea50ec213b7433b2f9296c941c12a7ec45a4511ea4f1b9810c3cfe7e90ad62e-image.png" />
+
+4. **Click** **Save Changes**.
 
 > **Note:** Special discounts override any frequency-based discounts until they expire.
 
