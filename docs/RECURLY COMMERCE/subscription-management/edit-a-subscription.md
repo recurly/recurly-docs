@@ -79,7 +79,7 @@ Adjust when this subscriber’s payment method is charged—and all future renew
    ![](https://files.readme.io/61803eae4434fadd437f9dc14b0a618e728e2c477154f486f49c9ac17fa25049-image.png)
 2. **Select** your new billing date.
 
-![](https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png)
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png" />
 
 3. **Click** **Update** to apply.
 
