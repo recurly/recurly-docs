@@ -71,9 +71,17 @@ Subscribers nor merchants can make changes at this time to email addresses becau
 
 ## Set Delivery / Renewal Date
 
-1. Click the calendar icon next to **Next Renewal**.
-2. Select a new date for all future billing/deliveries.
-3. Click **Save**.
+Select a new date the subscriber’s payment method will be charged. This will change the date the subscriber is charged on all subsequent renewals/deliveries.
+
+1. **Click** **Set Delivery**.
+
+![](https://files.readme.io/61803eae4434fadd437f9dc14b0a618e728e2c477154f486f49c9ac17fa25049-image.png)
+
+2. **Select** a new date for all future billing/deliveries.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7259ddf8ee27f3bbaa4f49daffa6d0dd8d1f12f5eaf8fab59aef194dd341aa45-image.png" />
+
+3. **Click** **Update**.
 
 ***
 
