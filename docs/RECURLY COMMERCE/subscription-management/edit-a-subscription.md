@@ -270,11 +270,13 @@ Bring a cancelled subscription contract back to life in three easy steps:
 
 Adjust the subscriber’s delivery address on file to ensure future orders ship to the correct location:
 
-1. In the **Shipping Information** panel, **click** **Edit**.\
-   ![](https://files.readme.io/9fa36508fb8f10f302d3463c0433deac908e9775c47453a074f29c80fe935e6c-image.png)
+1. In the **Shipping Information** panel, **click** **Edit**.
 
-2. **Modify** any of the fields—name, street address, city, state, postal code, or country—to the new values.\
-   ![](https://files.readme.io/909a1d2de214cb65fe019c05eaf1fdf2fe00a514d3f2b021d66e81a237326366-image.png)
+![](https://files.readme.io/9fa36508fb8f10f302d3463c0433deac908e9775c47453a074f29c80fe935e6c-image.png)
+
+2. **Modify** any of the fields—name, street address, city, state, postal code, or country—to the new values.
+
+![](https://files.readme.io/909a1d2de214cb65fe019c05eaf1fdf2fe00a514d3f2b021d66e81a237326366-image.png)
 
 3. **Click** **Update** to save the new shipping information. All future renewals and deliveries will use this updated address.
 
