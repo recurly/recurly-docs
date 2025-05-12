@@ -50,6 +50,60 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        May 13
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated Adyen Drop-in Components to ensure proper iDeal bank redirect handling in Recurly.js
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 13
+      </td>
+
+      <td>
+        **Braintree Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We will be updating the Braintree SDK version to 3.118.2 in Recurly.js. This will enable MPAN creation for Apple Pay transactions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 13
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Recurly transaction detail UIs will now show the Chargeback reason code associated with a chargeback invoice.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 6
       </td>
 
