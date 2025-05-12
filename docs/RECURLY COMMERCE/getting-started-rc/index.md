@@ -1,8 +1,8 @@
 ---
 title: Getting started in Recurly Commerce
 excerpt: >-
-  A quick guide to begin your journey with Recurly Commerce, linking to setup
-  and migration resources.
+  Navigate all subscriber management workflows in Recurly Commerce: plan
+  creation, plan editing, contract updates, and activity logs.
 deprecated: false
 hidden: true
 metadata:
@@ -18,16 +18,19 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 This feature or setting requires an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> for more pricing details.
 
-### Prerequisites & limitations
-
-* You’ll need a Shopify store to install the Recurly Commerce app.
-* Migration services are available for merchants with 500+ subscribers (smaller merchants may incur a one-time migration fee).
-
 # Definition
 
-This page serves as your starting point for Recurly Commerce, directing you to the two core areas you’ll tackle first: installation/onboarding and migration.
+Subscriber Management in Recurly Commerce centralizes everything you need to launch and refine your subscription business: from building and tweaking subscription plans to updating individual customer contracts and auditing every order and change.
+
+# Key benefits
+
+* **End-to-end control**: Create, modify, pause, or cancel subscription plans and contracts in one intuitive interface.
+* **Rapid adjustments**: Instantly update delivery dates, pricing, frequency, discounts, swaps, and add-ons to meet customer needs.
+* **Full visibility**: Access a complete order history and activity log for every subscription, ensuring clear audit trails and seamless support.
 
 # Key details
 
-* **Installing and onboarding to Recurly Commerce**: Get up and running with our step-by-step setup guide. <a href="https://docs.recurly.com/docs/installing-and-onboarding-to-recurly-commerce#/" target="_blank">Learn more</a>.
-* **Migrating to Recurly Commerce**: Seamlessly transfer your existing subscription contracts into Recurly Commerce. <a href="https://docs.recurly.com/docs/migrating-to-recurly-commerce#/" target="_blank">Learn more</a>.
+* **Create a subscription plan**: Build new subscription offers in minutes—select products, set pricing options, discounts, add-ons, gifting, and shipping rules. <a href="https://docs.recurly.com/docs/create-a-subscription-plan#/" target="_blank">Learn more</a>
+* **Edit a subscription plan**: Modify any existing plan’s products, purchase options, discounts, swaps/add-ons, or shipping configuration. <a href="https://docs.recurly.com/docs/edit-a-subscription-plan#/" target="_blank">Learn more</a>
+* **Edit a customer subscription**: Update individual subscriber contracts—change delivery dates, frequency, price, pause, skip, swap products, apply coupons, and more. <a href="https://docs.recurly.com/docs/edit-a-subscription#/" target="_blank">Learn more</a>
+* **Subscriber activity**: Review the full order history and audit trail for any subscription contract to resolve questions and support customers. <a href="https://docs.recurly.com/docs/subscriber-activity#/" target="_blank">Learn more</a>
