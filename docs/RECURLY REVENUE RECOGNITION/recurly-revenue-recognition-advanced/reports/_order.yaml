@@ -19,10 +19,10 @@
 - remaining-pob
 - asset-balances-report
 - liability-balances-report
-- config-audit-report
 - user-and-role-access-report
 - role-details
 - audit-details-report
+- config-audit-report
 - transfer-accounting-details-report
 - ssp-exception-report
 - hold-exceptions-report
