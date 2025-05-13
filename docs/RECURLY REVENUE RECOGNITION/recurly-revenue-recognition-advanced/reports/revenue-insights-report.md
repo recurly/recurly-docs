@@ -4,7 +4,7 @@ excerpt: >-
   Explore the detailed guide on Revenue Insights export in Recurly's Revenue
   Recognition user guide.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
