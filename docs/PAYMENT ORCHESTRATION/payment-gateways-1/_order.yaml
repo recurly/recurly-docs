@@ -5,6 +5,7 @@
 - braintree
 - chase-paymentech-orbital
 - check-commerce
+- commerce-hub
 - cybersource
 - ebanx-gateway
 - freedompay
@@ -24,4 +25,3 @@
 - paypal-payments-pro-credit-card
 - payeezy
 - wordline-bambora
-- commerce-hub
