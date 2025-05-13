@@ -100,3 +100,15 @@ Once you open a report, you can apply filters and adjust columns to create a cus
    <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/6cbb0aba2d81c66592747d50d9abe44002831fec96f8a395780dca11de4daa98-6._Save_Layout_-_Step_7.png" />
 
    By following these steps, you can easily access, customize, and manage your Event Stage Report layouts, ensuring the data is presented in the most useful format for your analysis.
+
+# Reports list
+
+Find a comprehensive list of reports below, with a detailed guide for each category.
+
+* Revenue Reports
+* Cost / VC Report
+* Transaction Details Reports
+* Stage Details Reports
+* Balances Reports
+* Audit Reports
+* Exception Reports
