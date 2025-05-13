@@ -6,7 +6,7 @@ excerpt: >-
   gateway partners' checkout solutions and enabling Recurly merchants to use
   them within the Recurly ecosystem.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
