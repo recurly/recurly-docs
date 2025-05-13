@@ -47,25 +47,23 @@ Recurly's reporting module offers a plethora of detailed reports that cater to v
 
 1. **Navigate** to the Reports section and select the desired report from the available options.
 
-   <Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/a4ad3bf-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/342448ef1fe194283d6edc83b9698c991fb29cc9c17b588f6515a936608ff4e8-image.png" />
 
-2. **Click** on the Mapper icon, and a dialogue box will appear displaying the available attributes.\
-   ![](https://files.readme.io/33a3ddf-image.png)
+2. **Click** on the Mapper icon, available on the black right column, and a dialogue box will appear displaying the available attributes.
 
-3. **Select** the attributes you want to view under the Search/Pin & Results column, and click on Save to save your selections.\
-   ![](https://files.readme.io/cafa5be-image.png)
+<Image align="center" border={true} caption="Report view" src="https://files.readme.io/dc496e695c4786a619e12292b862c8691d3648188710729ee162911f28c61227-Screenshot_2025-05-13_at_11.49.04_AM.png" width="80% " />
+
+<Image align="center" border={false} caption="Mapper icon" src="https://files.readme.io/cbdd58518f5f870e622bbcaf0b129c29598d24bb052b018ea8480da9f266fc8b-image.png" />
+
+3. **Select** the attributes you want to view under the Search/Pin & Results column, and click on Save to save your selections.
+
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/fee6d71d717e40d9ede0212e18de1630e8a43bce90245ef7ab78e59acc296d93-image.png" />
 
 4. **Enter** any search criteria you want to apply to the report, or leave it blank for a complete report.
 
-5. **Select** the desired requirements for the report and click on the Run button to generate the report.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a8044784c0826b8e9c8ce403b215d851213f34178496740ad175d39b80776d1d-image.png" />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/ff0517e-image.png" />
-
-6. **Once** the report is generated, click on the Download Icon to download the report in your preferred format.
-
-   <Image align="center" className="border" border={true} src="https://files.readme.io/74e51b9-image.png" />
-
-<br />
+4. **Once** the report is generated, click on the Download Icon to download the report in your preferred format.
 
 ## How to save layouts in reports
 
