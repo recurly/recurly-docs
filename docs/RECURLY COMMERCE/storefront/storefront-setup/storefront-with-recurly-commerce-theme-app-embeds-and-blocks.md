@@ -59,19 +59,33 @@ Below are 4 easy steps to add and publish the Recurly Commerce subscriptions app
 
 Before adding the app block make sure that you have the theme editor open and navigate to a product page that has a subscription offer attached to it.
 
+![](https://files.readme.io/d9b0e14ed5c133080967b145d11c85edc84b5cd908de42657aab6679d720adaa-image.png)
+
 ### **Step 2: Add Block**
 
 Expand the “Product information” section and click on “Add block”. Under the “APPS” section click on the “Prive subscriptions widget” app block.
 
+![](https://files.readme.io/3560be608ce4ca60e5315db2cdd1a5a60884572ef8b123a41124c0b196a0989b-image.png)
+
+<br />
+
 ### **Step 3:** Move Prive Subscriptions Widget block above the "Buy button"
+
+![](https://files.readme.io/604e06f8e775adb9e178f18b50781ebf0d86c816783929b0566e86354aefd918-image.png)
 
 ### **Step 4:** Click Save & Go live 🎉
 
 In the right-hand corner, click **Save**. You are ready to go. Shoppers will now be able to go to your store and purchase a subscription according to the Subscription Offers you configured in the Prive Subscriptions App.
 
+![](https://files.readme.io/ec6e334daeff0ac15e415aca2af53f893b4442be3b2ebd072d1e97f7cf96648a-image.png)
+
+<br />
+
 ## Removing App Block
 
 To remove the app block, click on the “Prive subscriptions widget” app block and then click “Remove block” in the bottom left-hand corner and then click Save.
+
+![](https://files.readme.io/32d52b6a7fa47f7fc50214ebeed0830cb0fc6d94cba87ba12dcdc4dbb855e641-image.png)
 
 ## Customizing the App Block
 
