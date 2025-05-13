@@ -57,4 +57,4 @@ For new subscribers, ensure you change the `gateway_code`value you are sending A
 
 # Address Verification System (AVS) settings
 
-Unlike previous First Data and Payeezy gateway implementations, Merchants using Commerce Hub have the option to tailor their Address Verification System (AVS) and CVV (Card Verification Value) checks via the Payment Settings page. Learn more about our gateway agnostic AVS / CVV rules here.
+Unlike previous First Data and Payeezy gateway implementations, Merchants using Commerce Hub have the option to tailor their Address Verification System (AVS) and CVV (Card Verification Value) checks via the Payment Settings page. Learn more about our gateway agnostic AVS / CVV rules [here](https://docs.recurly.com/docs/payment-settings#/enabling-cvv-checks).
