@@ -1,5 +1,5 @@
 ---
-title: Doc stage report
+title: Doc stage details report
 excerpt: >-
   Explore the detailed guide on Docs Stage Report in Recurly's Revenue
   Recognition user guide.
