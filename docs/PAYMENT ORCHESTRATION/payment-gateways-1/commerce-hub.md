@@ -4,7 +4,7 @@ excerpt: >-
   Seamless and secure payment processing with Commerce Hub integration for
   Recurly.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
