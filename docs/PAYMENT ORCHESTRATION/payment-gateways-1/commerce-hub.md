@@ -55,6 +55,6 @@ Since First Data and Payeezy merchants have already been migrated to Commerce Hu
 
 For new subscribers, ensure you change the `gateway_code`value you are sending API transactions to in order to avoid interruptions or errors once you disable your Fiserv or Payeezy gateway instances in your Recurly site.
 
-# Address Verification System (AVS) Settings
+# Address Verification System (AVS) settings
 
 Unlike previous First Data and Payeezy gateway implementations, Merchants using Commerce Hub have the option to tailor their Address Verification System (AVS) and CVV (Card Verification Value) checks via the Payment Settings page. Learn more about our gateway agnostic AVS / CVV rules here.
