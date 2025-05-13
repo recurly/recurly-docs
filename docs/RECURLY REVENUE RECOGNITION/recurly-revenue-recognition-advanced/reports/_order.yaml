@@ -9,8 +9,8 @@
 - vc-balances
 - contract-transaction-details
 - billing-transaction-details
-- cost-transaction-details-report
 - contract-stage-report
+- cost-transaction-details-report
 - doc-stage-details-report
 - event-stage-report
 - config-audit-report
