@@ -1,5 +1,5 @@
 ---
-title: Contract stage report
+title: Contract stage details report
 excerpt: >-
   Explore the detailed guide on Contract Stage Report in Recurly's Revenue
   Recognition user guide.
