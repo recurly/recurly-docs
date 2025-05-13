@@ -33,6 +33,8 @@ To access and configure the Cost Transaction Details Report:
 
 ## Report columns
 
+> **Note**: The report columns are visible based on the mapper selection.
+
 * **Contract ID:** Displays the unique identifier for the contract.
 * **Order Number:** Lists the order number associated with the cost transaction.
 * **Cost Type:** Specifies the type of cost involved.
