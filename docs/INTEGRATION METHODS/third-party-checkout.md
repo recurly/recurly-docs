@@ -37,9 +37,10 @@ Read more about enabling Stripe Payment Elements in the [Developer Hub guide](ht
 ### Supported Payment Methods
 
 * **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available:
-  * Cards, Link by Stripe, KakaoPay, PayCo, Naver Pay, Apple Pay, Google Pay, Cash App Pay
-  * Direct Debit offerings include: ACH, SEPA, BACS, and BECS.
+  * Cards, Link by Stripe, Apple Pay, Google Pay, Cash App Pay
+  * Direct Debit offerings include: ACH, SEPA, BACS, iDeal, and BECS.
     * [Financial Connections](https://stripe.com/financial-connections) is required for verifying bank information prior to signup.
+  * Other APMs include: Klarna Recurring (Pay Now, Pay Later, and BNPL), Revolut
 
 ### Limitations
 
