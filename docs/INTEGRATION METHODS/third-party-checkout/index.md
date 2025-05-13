@@ -1,5 +1,5 @@
 ---
-title: 'Third Party Checkout: Stripe Elements'
+title: 'Third Party Checkout: Stripe and Adyen'
 excerpt: >-
   To better serve our customer base and keep up to speed with the expansion of
   payment methods and wallets, we are building support for our most trusted
@@ -22,17 +22,15 @@ The Ecommerce checkout options from our trusted gateway partners are designed to
 
 ## Supported Gateways and Features
 
-#### Stripe gateway
+#### Stripe Gateway
 
-Stripe Payment or Express Checkout Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information:
+* Stripe Payment or Express Checkout Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information.
 
-<Image align="center" className="border" border={true} width="300px" src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" />
+#### Adyen Gateway
 
-* When using Stripe Elements, you can build a custom checkout solution and pass a Stripe "confirmation token" to Recurly via API. Recurly will pass that token to Stripe to obtain reusable payment details for recurring and one-time payments.
-* If customers wish to update their billing information, they can do so through Stripe Elements, or through an existing Recurly solution such as Checkout, HPP, or Recurly.js. What you choose to offer is up to you!
-* Use Stripe's demo website to see what's possible: [https://checkout.stripe.dev/elements](https://checkout.stripe.dev/elements) while keeping in mind limitations to what Recurly has built and allowed.
+* Adyen Web Components is currently supported when used in combination with Recurly.js. Visit our [developer hub](https://recurly.com/developers/guides/) for more information.
 
-Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/).
+Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/third-party-checkout-adyen-components.html).
 
 ### Supported Payment Methods
 
