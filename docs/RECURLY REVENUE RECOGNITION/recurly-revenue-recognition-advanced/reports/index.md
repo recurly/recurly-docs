@@ -106,37 +106,37 @@ Once you open a report, you can apply filters and adjust columns to create a cus
 Find a comprehensive list of reports below, with a detailed guide for each category.
 
 * **Revenue Reports**
-  * Revenue Insights
-  * Revenue Waterfall
-  * Defer Revenue Waterfall
+  * [Revenue Insights](https://docs.recurly.com/docs/revenue-insights-report#/)
+  * [Revenue Waterfall](https://docs.recurly.com/docs/revenue-waterfall-report#/)
+  * [Defer Revenue Waterfall](https://docs.recurly.com/docs/defer-revenue-waterfall-report#/)
 * **Cost / VC Report**
-  * Cost Details
-  * Cost Waterfall
-  * Cost Balances
-  * VC Details
-  * VC Waterfall
-  * VC Balances
+  * [Cost Details](https://docs.recurly.com/docs/cost-details-report#/)
+  * [Cost Waterfall](https://docs.recurly.com/docs/cost-waterfall-report#/)
+  * [Cost Balances](http://docs.recurly.com/docs/cost-balances-report#/)
+  * [VC Details](https://docs.recurly.com/docs/vc-details-report#/)
+  * [VC Waterfall](https://docs.recurly.com/docs/vc-waterfall-report#/)
+  * [VC Balances](http://docs.recurly.com/docs/vc-balances#/)
 * **Transaction Details Reports**
-  * Billing Transaction Details
-  * Contract Stage Details
-  * Cost Transaction Details
+  * [Billing Transaction Details](https://docs.recurly.com/docs/billing-transaction-details#/)
+  * [Contract Transaction Details](https://docs.recurly.com/docs/contract-transaction-details#/)
+  * [Cost Transaction Details](https://docs.recurly.com/docs/cost-transaction-details-report#/)
 * **Stage Details Reports**
-  * Doc Stage Details
-  * Contract Stage Details
+  * [Doc Stage Details](https://docs.recurly.com/docs/doc-stage-details-report#/)
+  * [Contract Stage Details](https://docs.recurly.com/docs/contract-stage-report#/)
   * Cost Stage Details
-  * Event Stage Details
+  * [Event Stage Details](https://docs.recurly.com/docs/event-stage-report#/)
 * **Balances Reports**
-  * Contract Balances
-  * Unbilled Balances
-  * Remaining POB
-  * Asset Balances
-  * Liability Balances
+  * [Contract Balances](https://docs.recurly.com/docs/contract-balances-report#/)
+  * [Unbilled Balances](https://docs.recurly.com/docs/unbilled-balances-report#/)
+  * [Remaining POB](https://docs.recurly.com/docs/remaining-pob#/)
+  * [Asset Balances](https://docs.recurly.com/docs/asset-balances-report#/)
+  * [Liability Balances](http://docs.recurly.com/docs/liability-balances-report#/)
 * **Audit Reports**
-  * User & Role Access
-  * Role Details
-  * Audit Details
-  * Config Audit Report
-  * Transfer Accounting Details
+  * [User & Role Access](https://docs.recurly.com/docs/user-and-role-access-report#/)
+  * [Role Details](https://docs.recurly.com/docs/role-details#/)
+  * [Audit Details](https://docs.recurly.com/docs/audit-details-report#/)
+  * [Config Audit](https://docs.recurly.com/docs/config-audit-report#/)
+  * [Transfer Accounting Details](https://docs.recurly.com/docs/transfer-accounting-details-report#/)
 * **Exception Reports**
-  * SSP Exception
-  * Hold Exceptions
+  * [SSP Exception](https://docs.recurly.com/docs/ssp-exception-report#/)
+  * [Hold Exceptions](https://docs.recurly.com/docs/hold-exceptions-report#/)
