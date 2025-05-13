@@ -7,8 +7,8 @@
 - vc-details-report
 - vc-waterfall-report
 - vc-balances
-- billing-transaction-details
 - contract-transaction-details
+- billing-transaction-details
 - contract-stage-report
 - doc-stage-details-report
 - event-stage-report
