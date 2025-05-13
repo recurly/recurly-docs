@@ -21,12 +21,12 @@ Use Shopify’s Theme Editor to enable the mandatory Recurly Commerce Subscripti
 # Definition
 
 * **App Embed Block**: A global toggle in Theme Settings that injects Recurly Commerce’s subscription widget scripts across your storefront.
-* **Inline App Block**: A draggable block you can place within a theme section (e.g. Product information) to control exactly where the widget appears on OS 2.0 themes.
+* **Inline App Block**: A draggable block you can place within a theme section (e.g. Product information) to control exactly where the widget appears on [OS 2.0 themes](https://help.shopify.com/en/manual/online-store/themes/managing-themes/upgrading-themes).
 
 # Key benefits
 
 * **Zero-code installation**: Enable or disable the embed with a single toggle—no theme file editing required.
-* **Flexible placement**: For OS 2.0 themes, use app blocks to position the widget anywhere within your product template.
+* **Flexible placement**: For [OS 2.0 themes](https://help.shopify.com/en/manual/online-store/themes/managing-themes/upgrading-themes), use app blocks to position the widget anywhere within your product template.
 * **Future-proof**: Blocks and embeds inherit your theme’s styles and support upcoming customization features.
 
 # Key details
