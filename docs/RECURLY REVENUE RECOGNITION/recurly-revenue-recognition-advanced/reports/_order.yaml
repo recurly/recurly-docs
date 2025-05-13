@@ -11,10 +11,10 @@
 - billing-transaction-details
 - cost-transaction-details-report
 - doc-stage-details-report
+- cost-stage-details-report
 - contract-stage-report
 - event-stage-report
 - config-audit-report
-- cost-stage-details-report
 - contract-balances-report
 - unbilled-balances-report
 - remaining-pob
