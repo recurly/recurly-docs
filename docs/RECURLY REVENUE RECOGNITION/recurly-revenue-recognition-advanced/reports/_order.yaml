@@ -16,10 +16,10 @@
 - contract-stage-report
 - contract-balances-report
 - unbilled-balances-report
-- config-audit-report
 - remaining-pob
 - asset-balances-report
 - liability-balances-report
+- config-audit-report
 - user-and-role-access-report
 - role-details
 - audit-details-report
