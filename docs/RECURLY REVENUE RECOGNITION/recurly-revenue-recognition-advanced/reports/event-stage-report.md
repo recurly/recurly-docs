@@ -1,5 +1,5 @@
 ---
-title: Event stage report
+title: Event stage details report
 excerpt: >-
   Explore the detailed guide on Event Stage Report in Recurly's Revenue
   Recognition user guide.
