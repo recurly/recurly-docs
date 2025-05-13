@@ -14,9 +14,9 @@
 - cost-stage-details-report
 - event-stage-report
 - contract-stage-report
-- config-audit-report
 - contract-balances-report
 - unbilled-balances-report
+- config-audit-report
 - remaining-pob
 - asset-balances-report
 - liability-balances-report
