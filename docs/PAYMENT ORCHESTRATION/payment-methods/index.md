@@ -27,19 +27,23 @@ Payment Methods refer to the various ways customers can execute payments for the
 
 # Key details
 
-* **Credit Cards**: The most common payment method, offering quick and convenient transactions for customers globally.
-* **Debit Cards**: Another widely accepted payment method allowing direct transactions from the customer's bank account.
-* **PayPal**: A highly popular online [payment system](https://docs.recurly.com/docs/paypal-payments) providing a secure and speedy checkout experience.
-* **Amazon Pay**: Leverage Amazon’s checkout technology to provide a familiar payment process.
-* **Apple Pay on the web**: Offer a fast, secure, and privacy-oriented [payment method](https://docs.recurly.com/docs/apple-pay-on-the-web) for Apple users.
-* **Google Pay**: Facilitate a simple and speedy [payment process](https://docs.recurly.com/docs/google-pay) for Android users.
-* **Venmo**: Popular among younger demographics, [Venmo ](https://docs.recurly.com/docs/pay-with-venmo)provides a social way to pay.
-* **SEPA (Single Euro Payments Area)**: Enable direct debit payments in the Eurozone with SEPA.
-* **iDEAL**: A popular payment method in the Netherlands, facilitating direct bank transfers.
-* **Sofort**: Known for its simplicity and security, Sofort is widely used in many European countries.
-* **BACS (Bankers' Automated Clearing Services)**: A reliable method for direct debit payments in the UK.
-* **BECS (Bulk Electronic Clearing System)**: Facilitate direct debit payments in Australia through BECS.
-* **ACH (Automated Clearing House, US Only)**: A secure and cost-effective [payment method](https://docs.recurly.com/docs/ach-bank-payments) for US-based transactions.
-* **Boleto**: A widely used [payment method](https://docs.recurly.com/docs/boleto) in Brazil, allowing online and cash payments at a vast network of locations.
+* **ACH (Automated Clearing House, US only)**: A secure and cost-effective network for US-based electronic funds transfers—learn more in the <a href="https://docs.recurly.com/docs/ach-bank-payments#/" target="_blank" rel="noopener noreferrer">ACH documentation</a>.
+* **Apple Pay on the web**: A fast, secure, and privacy-oriented payment method for Apple users—see the <a href="https://docs.recurly.com/docs/apple-pay-on-the-web#/" target="_blank" rel="noopener noreferrer">Apple Pay on the web docs</a>.
+* **Amazon Pay**: Leverages a customer’s Amazon account for seamless checkout—review the <a href="https://docs.recurly.com/docs/amazon-pay#/" target="_blank" rel="noopener noreferrer">Amazon Pay guide</a>.
+* **BACS (Bankers’ Automated Clearing Services, UK only)**: The primary scheme for electronic bank-to-bank payments in the U.K.—read more in the <a href="https://docs.recurly.com/docs/bacs#/" target="_blank" rel="noopener noreferrer">BACS documentation</a>.
+* **BECS (Bulk Electronic Clearing System)**: Australia’s main direct-debit system for recurring and one-off payments—check the <a href="https://docs.recurly.com/docs/becs#/" target="_blank" rel="noopener noreferrer">BECS docs</a>.
+* **Boleto**: A Brazilian payment-slip system generating vouchers for online or physical payment—learn more in the <a href="https://docs.recurly.com/docs/boleto#/" target="_blank" rel="noopener noreferrer">Boleto documentation</a>.
+* **Cash App Pay**: Allows customers to pay via their Cash App balance or linked account—see the <a href="https://docs.recurly.com/docs/cash-app-pay#/" target="_blank" rel="noopener noreferrer">Cash App Pay guide</a>.
+* **Credit Cards**: The most common online payment method charging purchases to a line of credit—details in the <a href="https://docs.recurly.com/docs/credit-cards#/" target="_blank" rel="noopener noreferrer">Credit Cards docs</a>.
+* **Google Pay™**: A digital wallet for Android and Chrome users enabling one-tap checkout—explore the <a href="https://docs.recurly.com/docs/google-pay#/" target="_blank" rel="noopener noreferrer">Google Pay docs</a>.
+* **iDEAL**: Netherlands-only bank transfer method redirecting customers to their own bank site—find out more in the <a href="https://docs.recurly.com/docs/ideal#/" target="_blank" rel="noopener noreferrer">iDEAL documentation</a>.
+* **Klarna (BNPL, Pay Now, Pay Later)**: Financing options for splitting purchases or paying later—see the <a href="https://docs.recurly.com/docs/klarna-bnpl-pay-now-pay-later#/" target="_blank" rel="noopener noreferrer">Klarna BNPL docs</a>.
+* **Klarna Debit Risk (formerly Sofort)**: Immediate bank transfers guaranteed by Klarna—details in the <a href="https://docs.recurly.com/docs/sofort#/" target="_blank" rel="noopener noreferrer">Klarna Debit Risk documentation</a>.
+* **Link Pay by Stripe**: A one-click checkout solution storing card details securely—learn more in the <a href="https://docs.recurly.com/docs/stripe-link-pay#/" target="_blank" rel="noopener noreferrer">Link Pay docs</a>.
+* **PayPal**: Enables checkout via PayPal balance, bank accounts, or cards—check the <a href="https://docs.recurly.com/docs/paypal-payments#/" target="_blank" rel="noopener noreferrer">PayPal guide</a>.
+* **Prepaid and gift cards**: Pre-loaded cards or digital codes redeeming a fixed balance—see the <a href="https://docs.recurly.com/docs/prepaid-and-gift-cards#/" target="_blank" rel="noopener noreferrer">Prepaid & Gift Cards docs</a>.
+* **SEPA (Single Euro Payments Area)**: Euro-denominated credit and direct-debit scheme across Europe—read the <a href="https://docs.recurly.com/docs/sepa-direct-debit#/" target="_blank" rel="noopener noreferrer">SEPA docs</a>.
+* **UPI AutoPay**: India’s UPI-based recurring-payment feature for automatic debits—review the <a href="https://docs.recurly.com/docs/upi-autopay#/" target="_blank" rel="noopener noreferrer">UPI AutoPay documentation</a>.
+* **Venmo**: A social mobile wallet for peer-to-peer and merchant payments—details in the <a href="https://docs.recurly.com/docs/pay-with-venmo#/" target="_blank" rel="noopener noreferrer">Venmo guide</a>.
 
 Immerse yourself in our dedicated pages to understand the unique advantages and setup processes of each payment method, ensuring your business is well-equipped to provide a superior and convenient payment experience for your customers, regardless of their location or preferred payment channels.
