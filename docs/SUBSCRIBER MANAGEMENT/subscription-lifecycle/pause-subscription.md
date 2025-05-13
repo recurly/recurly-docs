@@ -167,7 +167,7 @@ Joe, a Silver Sports Package subscriber, has his subscription paused for several
 
 ## Email
 
-Subscribers with paused subscriptions may  wish to be notified about the upcoming restart of their subscription. Similarly, those with an upcoming pause at the next renewal may also want a notification. Leveraging the Renewal Reminder email with fields `{{subscription_paused_at}}` and `{{remaining_pause_cycles}}` can display the pause date and remaining paused billing cycles, respectively.
+Subscribers with paused subscriptions may  wish to be notified about the upcoming restart of their subscription. Similarly, those with an upcoming pause at the next renewal may also want a notification. Leveraging the Renewal Reminder email with fields `{{subscription_paused_at}}` and `{{remaining_pause_cycles}}` can display the pause date and remaining paused billing cycles, respectively. Learn more in our **[Email templates](https://docs.recurly.com/docs/email-templates#/)** dedicated page.
 
 ## Webhook notifications
 
