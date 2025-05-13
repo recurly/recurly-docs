@@ -106,9 +106,37 @@ Once you open a report, you can apply filters and adjust columns to create a cus
 Find a comprehensive list of reports below, with a detailed guide for each category.
 
 * **Revenue Reports**
+  * Revenue Insights
+  * Revenue Waterfall
+  * Defer Revenue Waterfall
 * **Cost / VC Report**
+  * Cost Details
+  * Cost Waterfall
+  * Cost Balances
+  * VC Details
+  * VC Waterfall
+  * VC Balances
 * **Transaction Details Reports**
+  * Billing Transaction Details
+  * Contract Stage Details
+  * Cost Transaction Details
 * **Stage Details Reports**
+  * Doc Stage Details
+  * Contract Stage Details
+  * Cost Stage Details
+  * Event Stage Details
 * **Balances Reports**
+  * Contract Balances
+  * Unbilled Balances
+  * Remaining POB
+  * Asset Balances
+  * Liability Balances
 * **Audit Reports**
+  * User & Role Access
+  * Role Details
+  * Audit Details
+  * Config Audit Report
+  * Transfer Accounting Details
 * **Exception Reports**
+  * SSP Exception
+  * Hold Exceptions
