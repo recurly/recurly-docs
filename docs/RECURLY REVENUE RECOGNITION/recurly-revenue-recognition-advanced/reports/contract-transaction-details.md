@@ -4,7 +4,7 @@ excerpt: >-
   Explore the detailed guide on Contract Transaction Details Report in Recurly's
   Revenue Recognition user guide.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
@@ -36,6 +36,8 @@ To access and configure the Contract Transaction Details Report:
    * Click the **Download** button to save the report locally.
 
 ## Report columns
+
+> **Note**: The report columns are visible based on the mapper selection.
 
 * **Contract Id:** Displays the unique identifier for the contract.
 * **Order Number:** Lists the order number associated with the transaction.
