@@ -26,7 +26,7 @@ The Revenue Insights report compares the distributed revenue to the scheduled re
 
 ## Accessing and configuring the report
 
-To access and configure the Liability Balances Report:
+To access and configure the Revenue Insights Report:
 
 1. **Navigate to the Report:**
 
@@ -46,7 +46,7 @@ To access and configure the Liability Balances Report:
 
 ## Report columns
 
-* **Schedule**: Indicates the planned timeline for the delivery of products or services under the contract.
+* **Schedules**: Indicates the planned revenue recognition for the period..
 * **Reversal**: Represents any transactions that have been reversed, negating the original entry.
 * **Distributed**: Shows the amount of revenue that has been allocated or distributed to the appropriate accounts.
 * **Hold**: Marks transactions that are on hold and pending further action or approval.
