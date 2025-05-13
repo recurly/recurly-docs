@@ -31,7 +31,7 @@ Commerce Hub is a full-service payment management platform, developed by Fiserv 
 | Gateway Specific 3DS2 Supported | No                                                                                                                                                                                                  |
 | Card On File Supported          | Yes                                                                                                                                                                                                 |
 | Regions                         | Global                                                                                                                                                                                              |
-| Currencies                      | All ISO Standard                                                                                                                                                                                    |
+| Currencies                      | [All ISO Standard](https://docs.recurly.com/docs/currency-support-by-gateway#/)                                                                                                                     |
 | Transaction Categories          | Ecommerce, Recurring, MOTO                                                                                                                                                                          |
 | Additional Feature Support      | Billing and Shipping Information, Level 2 Data, Visa Trial Descriptors,  AVS / CVV Checks, Fiserv Transarmor Gateway Tokens, Omnichannel Point of Sale Subscriptions, VAT and Line Item Passthrough |
 
