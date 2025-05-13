@@ -104,6 +104,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        May 13
+      </td>
+
+      <td>
+        **Plan Configuration**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Redesigned the Create Billable Add-on UI component when choosing a Tiered, Volume, or Stairstep pricing model; impacting both the Create and Edit plan pages.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 6
       </td>
 
