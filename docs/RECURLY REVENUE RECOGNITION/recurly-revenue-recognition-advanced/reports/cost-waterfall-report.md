@@ -1,8 +1,10 @@
 ---
 title: Cost waterfall report
-excerpt: ''
+excerpt: >-
+  Explore the detailed guide on Cost Waterfall Report in Recurly's Revenue
+  Recognition user guide.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
