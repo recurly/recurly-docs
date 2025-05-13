@@ -60,8 +60,7 @@ A Recurly Commerce migration is a fully automated process that pulls your existi
 
 4. **Submit migration questionnaire**
 
-   * Complete our form with your Shopify and Stripe API keys:\
-     [https://docs.google.com/forms/d/e/1FAIpQLSeTDvctTNzJI3PBCi1miHTqYq7q3XYR1gcYGD6bSIlPRIxYEw/viewform](https://docs.google.com/forms/d/e/1FAIpQLSeTDvctTNzJI3PBCi1miHTqYq7q3XYR1gcYGD6bSIlPRIxYEw/viewform)
+   * Complete our [form](https://docs.google.com/forms/d/e/1FAIpQLSeTDvctTNzJI3PBCi1miHTqYq7q3XYR1gcYGD6bSIlPRIxYEw/viewform) with your Shopify and Stripe API keys.
    * This allows us to pull in your subscriber contracts, plans, and customer profiles.
 
 5. **Approve storefront components**
