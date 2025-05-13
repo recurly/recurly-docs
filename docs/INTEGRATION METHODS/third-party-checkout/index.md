@@ -30,18 +30,8 @@ The Ecommerce checkout options from our trusted gateway partners are designed to
 
 * Adyen Web Components is currently supported when used in combination with Recurly.js. Visit our [developer hub](https://recurly.com/developers/guides/) for more information. Read more about enabling Adyen Web Components in the [Developer Hub guide](https://recurly.com/developers/guides/).
 
-<br />
-
-### Supported Payment Methods
-
-* **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available:
-  * Cards, Link by Stripe, Apple Pay, Google Pay, Cash App Pay
-  * Direct Debit offerings include: ACH, SEPA, BACS, iDeal, and BECS.
-    * [Financial Connections](https://stripe.com/financial-connections) is required for verifying bank information prior to signup.
-  * Other APMs include: Klarna Recurring (Pay Now, Pay Later, and BNPL), Revolut
-
 ### Limitations
 
-* **Stripe gateway**: We do not support Stripe Payment Links, Stripe Checkout, or Radar at this time. See the limited list of payment methods available, or visit the [Stripe gateway documentation](https://docs.recurly.com/docs/stripe) in Recurly docs.
+* Third Party Checkout utilizes Gateway Tokens. Gateway failover and migrating to a different gateway will not be possible without involving the gateway that is storing the payment instruments. Reach out to Recurly support with any questions.
 * Certain APMs and payment methods are restricted to merchants operating in certain countries. If you do not see one of the above payment methods available to enable in your Stripe Dashboard, your account merchant country of origin does not qualify to use it.
   * Example: Revolut is restricted to merchants operating in the UK and EU only. US merchants are unable to enable it.
