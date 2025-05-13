@@ -10,8 +10,6 @@ metadata:
 ---
 # Overview
 
-The Widget API surfaces subscription-related data—product metadata, selling plans, and theme settings—to power Recurly Commerce’s storefront components directly in your Shopify theme.
-
 ### Prerequisites & limitations
 
 * Requires a live Recurly Commerce integration on Shopify with storefront widget enabled.
