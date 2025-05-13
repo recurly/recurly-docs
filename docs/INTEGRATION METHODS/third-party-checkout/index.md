@@ -24,7 +24,7 @@ The Ecommerce checkout options from our trusted gateway partners are designed to
 
 #### Stripe Gateway
 
-* Stripe Payment or Express Checkout Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information. Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/third-party-checkout-adyen-components.html).
+* Stripe Payment or Express Checkout Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information. Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html).
 
 #### Adyen Gateway
 
