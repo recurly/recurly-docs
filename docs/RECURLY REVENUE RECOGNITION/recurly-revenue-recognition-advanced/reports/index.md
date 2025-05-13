@@ -105,10 +105,10 @@ Once you open a report, you can apply filters and adjust columns to create a cus
 
 Find a comprehensive list of reports below, with a detailed guide for each category.
 
-* Revenue Reports
-* Cost / VC Report
-* Transaction Details Reports
-* Stage Details Reports
-* Balances Reports
-* Audit Reports
-* Exception Reports
+* **Revenue Reports**
+* **Cost / VC Report**
+* **Transaction Details Reports**
+* **Stage Details Reports**
+* **Balances Reports**
+* **Audit Reports**
+* **Exception Reports**
