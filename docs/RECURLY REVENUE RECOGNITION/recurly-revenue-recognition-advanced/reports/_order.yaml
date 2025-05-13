@@ -10,8 +10,8 @@
 - contract-transaction-details
 - billing-transaction-details
 - cost-transaction-details-report
-- contract-stage-report
 - doc-stage-details-report
+- contract-stage-report
 - event-stage-report
 - config-audit-report
 - cost-stage-details-report
