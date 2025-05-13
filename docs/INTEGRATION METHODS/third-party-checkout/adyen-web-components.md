@@ -17,6 +17,7 @@ Adyen Web Components Payment  is currently supported when used in conjunction wi
 
 * When using Adyen Web Components, you can build a custom checkout solution and pass the Adyen "state data" to Recurly.js and then use the resulting token ID via API. Recurly will pass unpack the token ID and pass the state data to Adyen to obtain reusable payment details for recurring and one-time payments.
 * If customers wish to update their billing information, they can do so through Adyen Components, or through an existing Recurly solution such as Checkout, HPP, or Recurly.js. What you choose to offer is up to you!
+* You can play around with Adyen's live demo to see how Web Components work at [https://www.mystoredemo.io/#/checkout](https://www.mystoredemo.io/#/checkout)
 
 Read more about enabling Adyen Web Components in the [Developer Hub guide](https://recurly.com/developers/guides/third-party-checkout-adyen-components.html).
 
