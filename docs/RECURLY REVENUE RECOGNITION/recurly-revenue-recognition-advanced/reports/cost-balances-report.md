@@ -4,7 +4,7 @@ excerpt: >-
   Explore the detailed guide on Cost Balances Report in Recurly's Revenue
   Recognition user guide.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
@@ -29,7 +29,7 @@ The Cost Balances Report presents the beginning, scheduled, and ending cost bala
 To access and configure the Cost Balances Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Cost VC > Cost balances report**.
+   * Go to **Reports > Cost/VC > Cost balances report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
    * Optionally, click the **Download** button to save the report locally.
@@ -40,7 +40,7 @@ To access and configure the Cost Balances Report:
 * **Period:** Indicates the time period for which the cost balances are reported.
 * **Beginning Balance:** Shows the cost balance at the start of the chosen period.
 * **New Billing:** Represents any new cost entries added during the period.
-* **Schedule:** Details the scheduled costs for the period.
+* **Scheduled:** Details the scheduled costs for the period.
 * **Reversal:** Captures any cost reversals during the reporting period.
 * **Hold:** Lists any cost amounts that are temporarily on hold.
 * **Accounted:** Indicates the cost amounts that have been recorded in the accounting system.
