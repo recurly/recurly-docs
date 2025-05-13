@@ -51,4 +51,6 @@ Once installed, you can customize the widget to match your brand:
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/435de9d2755111e7a494ed04234fb0e2138f9cd47521d9a412e47cd2cf0808d5-image.png" />
 
+***
+
 Still need help? Contact <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
