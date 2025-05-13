@@ -29,7 +29,7 @@ Cost Waterfall Report showcases the waterfall of recognized costs for the contra
 To access and configure the Cost Waterfall Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Cost VC > Cost waterfall report**.
+   * Go to **Reports > Cost/VC > Cost waterfall report**.
 
 ## Report columns
 
