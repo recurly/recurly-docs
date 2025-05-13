@@ -37,6 +37,8 @@ To access and configure the Billing Transaction Details Report:
 
 ## Report columns
 
+> **Note**: The report columns are visible based on the mapper selection.
+
 * **Contract ID:** Displays the unique identifier for each contract.
 * **Document No:** Shows the document number associated with the billing transaction.
 * **POB Name:** Indicates the name of the POB (Point of Billing) involved in the transaction.
