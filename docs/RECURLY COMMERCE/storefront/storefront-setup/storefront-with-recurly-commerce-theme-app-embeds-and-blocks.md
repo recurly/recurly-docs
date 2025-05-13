@@ -62,7 +62,7 @@ Whether you’re on a vintage theme or a Shopify OS 2.0 theme, you must enable t
 
 OS 2.0 themes support inline app blocks, giving you granular control over widget placement on your product pages.
 
-### Adding an Inline App Block
+### Adding an inline app block
 
 1. **Open** the Theme Editor and navigate to a **Product page** with an active subscription offer.
 
@@ -73,21 +73,22 @@ OS 2.0 themes support inline app blocks, giving you granular control over widget
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3560be608ce4ca60e5315db2cdd1a5a60884572ef8b123a41124c0b196a0989b-image.png" />
 
-2. **Drag** the block above your **Buy button** to set its position.
+4. **Drag** the block above your **Buy button** to set its position.
 
-   ![](https://files.readme.io/604e06f8e775adb9e178f18b50781ebf0d86c816783929b0566e86354aefd918-image.png)
-3. Click **Save** (top right) to publish.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/604e06f8e775adb9e178f18b50781ebf0d86c816783929b0566e86354aefd918-image.png" />
 
-   ![](https://files.readme.io/ec6e334daeff0ac15e415aca2af53f893b4442be3b2ebd072d1e97f7cf96648a-image.png)
+5. **Click** **Save** (top right) to publish.
 
-### Removing an Inline App Block
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ec6e334daeff0ac15e415aca2af53f893b4442be3b2ebd072d1e97f7cf96648a-image.png" />
 
-1. In your product template, select the **Recurly Commerce Subscriptions Widget** block.
-2. Click **Remove block** (bottom left).
-3. Click **Save** to publish.
+### Removing an inline app block
 
-   ![](https://files.readme.io/32d52b6a7fa47f7fc50214ebeed0830cb0fc6d94cba87ba12dcdc4dbb855e641-image.png)
+1. In your product template, **select** the **Recurly Commerce Subscriptions Widget** block.
+2. **Click** **Remove block** (bottom left).
+3. **Click** **Save** to publish.
 
-### Customizing the Inline App Block
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/32d52b6a7fa47f7fc50214ebeed0830cb0fc6d94cba87ba12dcdc4dbb855e641-image.png" />
+
+### Customizing the inline app block
 
 > Custom styling for app blocks is not yet supported—watch this space for upcoming features!
