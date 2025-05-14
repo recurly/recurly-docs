@@ -2,7 +2,7 @@
 title: External
 excerpt: Enable 1-Click actions by connecting Redfast to 3rd party systems
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
