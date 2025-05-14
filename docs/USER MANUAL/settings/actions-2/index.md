@@ -2,7 +2,7 @@
 title: Integrations
 excerpt: Connect with external platforms, internal APIs, and web clients
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
