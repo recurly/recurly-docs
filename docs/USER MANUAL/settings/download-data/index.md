@@ -2,7 +2,7 @@
 title: Download Data
 excerpt: Downloading prompt activity data from Redfast
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
