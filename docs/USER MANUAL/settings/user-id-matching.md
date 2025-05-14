@@ -2,7 +2,7 @@
 title: User ID Matching
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
