@@ -2,7 +2,7 @@
 title: Pipelines
 excerpt: Lifecycle driven approach to prompts and guides
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
