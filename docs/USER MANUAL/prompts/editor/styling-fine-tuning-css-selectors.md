@@ -2,7 +2,7 @@
 title: Styling/ Fine tuning (CSS selectors)
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
