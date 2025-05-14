@@ -2,7 +2,7 @@
 title: Push
 excerpt: Send a push notification to user on iOS, Android, or Amazon devices
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
