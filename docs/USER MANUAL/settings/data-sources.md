@@ -2,7 +2,7 @@
 title: Data sources
 excerpt: Use content from external sources within dynamic variables
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
