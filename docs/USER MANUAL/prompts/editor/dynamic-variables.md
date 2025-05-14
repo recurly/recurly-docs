@@ -2,7 +2,7 @@
 title: Dynamic Variables
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
@@ -45,4 +45,4 @@ Adding a dynamic variable to your prompt is as simple as clicking the **“+ Ins
 
   ![](https://files.readme.io/3e79ce8-image.png)
 
-<br />  
+<br />
