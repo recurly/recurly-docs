@@ -105,7 +105,7 @@ With Explore Assistant, data exploration is intuitive, fast, and flexible.
 
 # Legal
 
-Recurly AI Data Insights, Recurly Data Explorer, and Recurly Chat Assistant all share non-merchant identifiable information and additional inputs with respective third parties, such as Google Vertex AI, Google’s Gemini LLM, and Elastic Cloud. Insights and responses are generated based on the Google Vertex AI Language Model, Gemini LLM, and a retrieval-augmented generation (RAG) model, and may include inaccurate information. Therefore, all data insights and responses must be carefully reviewed, verified for accuracy, and checked for applicability.
+Recurly AI Data Insights, Recurly Data Explorer, and Recurly Chat Assistant all share non-merchant identifiable information and additional inputs with respective third parties, such as Google Vertex AI, Google’s Gemini LLM ([learn more](https://cloud.google.com/gemini/docs/discover/data-governance)), and Elastic Cloud. Insights and responses are generated based on the Google Vertex AI Language Model, Gemini LLM, and a retrieval-augmented generation (RAG) model, and may include inaccurate information. Therefore, all data insights and responses must be carefully reviewed, verified for accuracy, and checked for applicability.
 
 # FAQs
 
@@ -119,7 +119,7 @@ Access requirements vary by feature:
 
 #### **What AI models power Compass?**
 
-Compass is powered by **Google Gemini AI** for intelligent insights and recommendations.
+Compass is powered by **Google Gemini AI** for intelligent insights and recommendations. [Learn more about Gemini Data Governance](https://cloud.google.com/gemini/docs/discover/data-governance).
 
 #### **How is my data secured with AI?**
 
