@@ -4,7 +4,7 @@ excerpt: >-
   Javascript snippets that can connect with your website code to unlock 1-click
   capabilities
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
