@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-* Recurly currently supports iDeal transactions through the [Adyen ](https://docs.recurly.com/docs/adyen)gateway.
+* Recurly currently supports iDeal transactions through the [Adyen ](https://docs.recurly.com/docs/adyen) and Stripe via Third Party Checkout.
 
 * Remember to set up [SEPA ](https://docs.recurly.com/docs/sepa-1)Direct Debit for recurring payments and enable EUR as the currency.
 
@@ -31,7 +31,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Free trials: iDEAL cannot facilitate free trials; opt for SEPA Direct Debit in such scenarios.
 * Future start date: Subscriptions initiated via iDEAL cannot have a future commencement date.
 * Chargeback handling: This feature is unsupported by iDEAL.
-* Recurly Checkout and Hosted Payment Pages: iDEAL integration is unavailable on these pages. 
+* Recurly Checkout and Hosted Payment Pages: iDEAL integration is unavailable on these pages.
 * iDEAL payments cannot be reversed.
 
 # Description
