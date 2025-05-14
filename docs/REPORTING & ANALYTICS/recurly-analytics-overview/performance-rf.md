@@ -5,7 +5,7 @@ excerpt: >-
   illustrative charts on the Analytics Dashboard, your window to performance
   metrics.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
