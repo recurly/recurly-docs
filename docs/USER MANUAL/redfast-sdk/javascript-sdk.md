@@ -2,7 +2,7 @@
 title: JS (Web and CTV)
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
