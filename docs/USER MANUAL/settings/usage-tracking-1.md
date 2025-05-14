@@ -2,7 +2,7 @@
 title: Usage tracking
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
