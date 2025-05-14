@@ -2,7 +2,7 @@
 title: Mobile Interstitial
 excerpt: Full screen prompt for iOS and Android phones
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
