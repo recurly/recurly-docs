@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-To integrate PayPal with your Recurly account, you'll need to be approved for PayPal's "Reference Transactions" feature through either PayPal Business, PayPal Complete, or Braintree gateways.
+To integrate PayPal with your Recurly account, you'll need to be approved for PayPal's "Reference Transactions" feature through either PayPal Complete, or Braintree gateways.
 
 ### Limitations
 
@@ -60,7 +60,7 @@ Recurly supports PayPal’s latest and greatest PayPal offering which is support
 
 ## PayPal Express Checkout and One Touch™
 
-Recurly supports the Express Checkout flow and One Touch™ flow for all customers using the latest version of Recurly.js. With Express Checkout and One Touch™, your customers have a more seamless checkout experience. [Learn more about Express Checkout and One Touch](https://www.paypal.com/us/webapps/mpp/one-touch-for-business?utm_source=hs_email\&utm_medium=email\&utm_content=2&_hsenc=p2ANqtz-8nejbQrZ8vp-2ygd1nlveotz94L9LdeP8DCA-acUaIxO6dmjgrJbnPYOkfEFQlnhyYK3GvO60ekMDKFZBkczSnoApWeA&_hsmi=2). 
+Recurly supports the Express Checkout flow and One Touch™ flow for all customers using the latest version of Recurly.js. With Express Checkout and One Touch™, your customers have a more seamless checkout experience. [Learn more about Express Checkout and One Touch](https://www.paypal.com/us/webapps/mpp/one-touch-for-business?utm_source=hs_email\&utm_medium=email\&utm_content=2&_hsenc=p2ANqtz-8nejbQrZ8vp-2ygd1nlveotz94L9LdeP8DCA-acUaIxO6dmjgrJbnPYOkfEFQlnhyYK3GvO60ekMDKFZBkczSnoApWeA&_hsmi=2).
 
 ### The PayPal Express Checkout experience
 
