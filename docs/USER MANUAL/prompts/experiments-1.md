@@ -2,7 +2,7 @@
 title: Experiments
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
@@ -76,4 +76,4 @@ Keep in mind that the z test is not a perfect method for experiments with a larg
 
 <br />
 
-Your experiment is now running and should report click through rates on the variation within minutes depending on your traffic level. The variation with a higher click through rate is one that is performing better. You have the option of allowing the experiment to conitnue to run or you can click on 'Use This' which will replace the control item with the selected variation and end the experiment.  
+Your experiment is now running and should report click through rates on the variation within minutes depending on your traffic level. The variation with a higher click through rate is one that is performing better. You have the option of allowing the experiment to conitnue to run or you can click on 'Use This' which will replace the control item with the selected variation and end the experiment.
