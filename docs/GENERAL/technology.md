@@ -2,7 +2,7 @@
 title: Platform Overview
 excerpt: A broad overview of the Redfast platform and technology
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
