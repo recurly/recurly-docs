@@ -2,7 +2,7 @@
 title: Custom JS snippet
 excerpt: Configuring default behaviors of the Redfast JS SDK
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
