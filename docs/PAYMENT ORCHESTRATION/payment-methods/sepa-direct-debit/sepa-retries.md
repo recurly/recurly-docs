@@ -1,5 +1,5 @@
 ---
-title: SEPA Retries
+title: Direct Debit Retries
 excerpt: >-
   Streamline your SEPA Direct Debit payments with Recurly's Automatic retries!
   Our new feature supports automated retries for failed SEPA payments due to
@@ -29,6 +29,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
+* This feature presently only retries qualifying SEPA transactions on specific gateways.
 * SEPA payments can only be retried twice, in compliance with SEPA regulations.
 * Retry time frame is fixed to 24 hours after a failure notification; customization is not available.
 * Adyen’s Auto Rescue and GoCardless Success+ services must be disabled to avoid conflict.
