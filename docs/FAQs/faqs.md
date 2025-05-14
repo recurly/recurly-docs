@@ -2,7 +2,7 @@
 title: How can I debug a prompt that is not showing?
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
