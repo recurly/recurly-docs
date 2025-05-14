@@ -35,7 +35,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * See Stripe’s website for Link Pay limitations and country availability: [https://docs.stripe.com/payments/link](https://docs.stripe.com/payments/link) (Link is not available in India. Also, in Brazil and Thailand, Payment Elements do not support Link.)
 * Link with Direct Debit is limited to USD, US-based customers.
 * Link Customers cannot update their billing method through Recurly. They must visit link.com to update details.
-* Link by Stripe is a proprietary Stripe offering. It will not be available on other gateways.
+* Link by Stripe is a *proprietary* Stripe-only offering. It will not be available on other gateways.
 
 # Description
 
