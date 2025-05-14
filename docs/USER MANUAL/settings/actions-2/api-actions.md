@@ -2,7 +2,7 @@
 title: APIs
 excerpt: Private or public APIs you have access to
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
