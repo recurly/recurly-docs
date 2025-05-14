@@ -2,7 +2,7 @@
 title: How should I test a prompt before launching?
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
