@@ -2,7 +2,7 @@
 title: Can I integrate a prompt inside an iFrame on my site?
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
