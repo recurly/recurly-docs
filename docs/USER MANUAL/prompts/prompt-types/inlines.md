@@ -2,7 +2,7 @@
 title: Inline
 excerpt: 'Inline Styles: horizontal banner, vertical banner, tile, and text bar'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
