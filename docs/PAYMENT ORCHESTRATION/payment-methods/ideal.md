@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-* Recurly currently supports iDeal transactions through the [Adyen ](https://docs.recurly.com/docs/adyen) and Stripe via Third Party Checkout.
+* Recurly currently supports iDeal transactions through the [Adyen ](https://docs.recurly.com/docs/adyen) and [Stripe](https://docs.recurly.com/docs/stripe#/) via Third Party Checkout.
 
 * Remember to set up [SEPA ](https://docs.recurly.com/docs/sepa-1)Direct Debit for recurring payments and enable EUR as the currency.
 
