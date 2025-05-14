@@ -2,7 +2,7 @@
 title: Data Privacy and Security
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
