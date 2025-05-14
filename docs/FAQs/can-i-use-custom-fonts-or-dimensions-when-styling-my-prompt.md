@@ -2,7 +2,7 @@
 title: Can I use a custom font in my prompts?
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
