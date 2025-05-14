@@ -2,7 +2,7 @@
 title: Can I download prompt activity data?
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
