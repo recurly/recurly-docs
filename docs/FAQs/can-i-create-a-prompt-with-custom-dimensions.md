@@ -2,7 +2,7 @@
 title: Can I create a prompt with custom dimensions?
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
