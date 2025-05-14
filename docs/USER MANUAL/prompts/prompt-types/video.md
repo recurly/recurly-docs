@@ -2,7 +2,7 @@
 title: Video
 excerpt: Best practices for delivering video prompts
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
