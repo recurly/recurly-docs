@@ -12,7 +12,7 @@ metadata:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
+This feature may not be included in the Recurly Commerce Core plan. If you are interested, please contact Recurly Sales to discuss upgrade options.
 
 # Definition
 
