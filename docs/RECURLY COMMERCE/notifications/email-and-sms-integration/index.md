@@ -1,5 +1,5 @@
 ---
-title: Email and SMS integration
+title: Email and SMS integrations
 excerpt: >-
   Easily connect your favorite email and SMS platforms to automate subscriber
   communications directly from Recurly Commerce.
