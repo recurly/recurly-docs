@@ -18,6 +18,10 @@ metadata:
 
 > **Note**: To unlock additional cancellation-flow controls, reach out to your CSM.
 
+# Required plan
+
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+
 # Definition
 
 Cancellation & churn prevention flows let you tailor the onscreen experience when a subscriber attempts to cancel. You decide what messages, incentives, and offers appear—turning a cancellation point into a revenue-recovering opportunity.
