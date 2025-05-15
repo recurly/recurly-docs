@@ -11,8 +11,6 @@ metadata:
 ---
 # Overview
 
-Integrate Recurly Commerce (“Prive”) with Klaviyo to fire custom subscription events and surface subscriber properties directly in Klaviyo. Use these signals to build targeted email and SMS journeys that drive engagement, reduce churn, and grow lifetime value.
-
 ### Prerequisites & limitations
 
 * You must have an active Klaviyo account and the Recurly Commerce (Prive) Klaviyo integration enabled in your merchant admin.
