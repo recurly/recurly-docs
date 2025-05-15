@@ -16,8 +16,6 @@ Recurly Commerce tags every subscription order in Shopify—so you can instantly
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/5f9882b2fca94287b34bf53f93e37df2" />
 
-<br />
-
 ### Prerequisites & limitations
 
 * Only subscription orders are tagged; one-time purchase orders remain untagged.
@@ -39,13 +37,13 @@ Order tagging is the automatic assignment of Shopify tags to subscription orders
 
 Recurly Commerce applies these five standard tags to subscription orders:
 
-| Tag                                  | Description                                                                                                                                     |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Subscription order**               | Applied to every subscription order—use it to separate subscription orders from one-time purchases.                                             |
-| \*\*Subscription order \<number>\*\* | Sequential tag per subscription: initial purchase is “Subscription order 1,” renewals increment the number (e.g. “Subscription order 2,” etc.). |
-| **First time subscriber**            | Marks a customer’s very first subscription order. (Migrated subscribers will not receive this tag.)                                             |
-| **Recurring subscription order**     | Applied to all renewal orders after the first—signifies returning subscribers.                                                                  |
-| **Shipping Profile**                 | Reflects the Shopify shipping profile selected for that order (e.g., economy, free shipping), enabling fulfillment or reporting logic.          |
+| Tag                              | Description                                                                                                                                     |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Subscription order**           | Applied to every subscription order—use it to separate subscription orders from one-time purchases.                                             |
+| **Subscription order \<number>** | Sequential tag per subscription: initial purchase is “Subscription order 1,” renewals increment the number (e.g. “Subscription order 2,” etc.). |
+| **First time subscriber**        | Marks a customer’s very first subscription order. (Migrated subscribers will not receive this tag.)                                             |
+| **Recurring subscription order** | Applied to all renewal orders after the first—signifies returning subscribers.                                                                  |
+| **Shipping Profile**             | Reflects the Shopify shipping profile selected for that order (e.g., economy, free shipping), enabling fulfillment or reporting logic.          |
 
 > **Note**: Pro/Enterprise merchants can request custom tagging—reach out to <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
 
