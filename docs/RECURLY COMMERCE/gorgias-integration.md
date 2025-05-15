@@ -1,76 +1,94 @@
 ---
 title: Gorgias integration
+excerpt: >-
+  Integrate Recurly Commerce with Gorgias to surface subscriber details and
+  manage subscriptions right from your support tickets.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-Gorgias provides you with the ability to view subscriptions alongside customer support tickets and perform basic operations.
+# Overview
 
-# Available Recurly Commerce properties
+### Video
+
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" href="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" html="false" iframe="true" />
+
+### Prerequisites & limitations
+
+* Requires a Gorgias account with API access and a Recurly Commerce subscription.
+* Subscription data refreshes only when a ticket is updated (e.g., by sending a message or toggling a tag).
+
+# Definition
+
+The Gorgias integration pulls Recurly Commerce subscriber and subscription contract data into the Gorgias ticket sidebar. Agents can inspect subscriber properties, review contract details, and invoke common subscription actions directly from the support interface.
+
+# Key benefits
+
+* **Faster support resolution**: See subscriber history and next order dates without leaving Gorgias.
+* **In-ticket subscription controls**: Skip orders, change delivery dates, or jump to the contract in Recurly with one click.
+* **Seamless data syncing**: Subscriber and subscription details stay up to date whenever the ticket is refreshed.
+
+# Key details
+
+## Available Recurly Commerce properties
 
 ### Subscriber Properties
 
-Below is a list of Recurly Commerce Subscriber properties that are available in Gorgias Widgets. The subscriber card is the first card and displays general attributes of the user.
+Below is a list of Recurly Commerce subscriber properties available in the Gorgias “Subscriber” widget:
 
-| Prive Subscriber Property  | Description                                       |
-| -------------------------- | ------------------------------------------------- |
-| Customer Since             | Earliest date the customer was a subscriber since |
-| Email                      | Subscriber Email                                  |
-| First Name                 | Subscriber first name                             |
-| Id                         | Subscriber id                                     |
-| last name                  | subscriber last name                              |
-| last order                 | last order date                                   |
-| next order                 | next order date                                   |
-| phone                      | phone number                                      |
-| total active subscriptions | total active subscriptions                        |
-| total orders               | total orders shopper has ever placed              |
+| Property                       | Description                                      |
+| ------------------------------ | ------------------------------------------------ |
+| **Customer Since**             | Earliest date the customer became a subscriber   |
+| **Email**                      | Subscriber’s email address                       |
+| **First Name**                 | Subscriber’s first name                          |
+| **Id**                         | Unique subscriber identifier                     |
+| **Last Name**                  | Subscriber’s last name                           |
+| **Last Order**                 | Date of the last processed order                 |
+| **Next Order**                 | Date of the next scheduled order                 |
+| **Phone**                      | Subscriber’s phone number                        |
+| **Total Active Subscriptions** | Count of active subscriptions for the subscriber |
+| **Total Orders**               | Total number of orders the shopper has placed    |
 
-### Subscription properties
+![Gorgias subscriber widget](https://files.readme.io/3cff9280d25a1f28c54899c0b247017e74bb1bcddb960513889e66a43ed848be-image.png)
 
-Below is a list of Prive subscription contract properties that are available in Gorgias Widgets. The subscription card represents a distinct subscription contract and displays all the items in the contract.
+### Subscription Properties
 
-| Prive Subscription Contract Property | Description                             |
-| ------------------------------------ | --------------------------------------- |
-| Contract id                          | subscription contract unique identifier |
-| product title                        | the items produdct title                |
-| Status                               | ACTIVE, PAUSED, CANCELLED               |
-| Updated at                           | last time contract was updated          |
-| order interval frequency             | order frequency number                  |
-| order interval unit                  | DAY, WEEK, MONTH                        |
-| Next Order Date                      | Next order date                         |
-| Cancellation reason                  | if theres a cancellation reason         |
+The “Subscription” widget displays contract-specific properties:
 
-![](https://files.readme.io/3cff9280d25a1f28c54899c0b247017e74bb1bcddb960513889e66a43ed848be-image.png)
+| Property                     | Description                                  |
+| ---------------------------- | -------------------------------------------- |
+| **Contract id**              | Unique subscription contract identifier      |
+| **Product Title**            | Title of the subscribed product              |
+| **Status**                   | Contract state: ACTIVE, PAUSED, or CANCELLED |
+| **Updated at**               | Timestamp of the last contract update        |
+| **Order Interval Frequency** | Numeric frequency of renewals                |
+| **Order Interval Unit**      | Unit of frequency (DAY, WEEK, MONTH)         |
+| **Next Order Date**          | Date of the next renewal                     |
+| **Cancellation Reason**      | Reason provided at cancellation              |
 
-### Subscription actions
+### Subscription Actions
 
-| Recurly Commerce Subscription Contract Action | Description                                                                            |
-| --------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Skip Subscription                             | Skips the next order                                                                   |
-| Change Delivery Date                          | changes the next delivery date                                                         |
-| Manage Subscription                           | Links to the subscription in prive. User must be logged in through the shopify portal. |
+Agents can trigger these actions directly from the sidebar:
 
-![](https://files.readme.io/d9a02f6815a530855942f406237f87d47d05843c94c926ebffe9ec08eb36c4d3-image.png)
+| Action                   | Description                                                            |
+| ------------------------ | ---------------------------------------------------------------------- |
+| **Skip Subscription**    | Skip the next scheduled order                                          |
+| **Change Delivery Date** | Set a new date for the upcoming delivery                               |
+| **Manage Subscription**  | Open the full subscription in Recurly Commerce (requires portal login) |
+
+![Gorgias subscription actions](https://files.readme.io/d9a02f6815a530855942f406237f87d47d05843c94c926ebffe9ec08eb36c4d3-image.png)
 
 ## Data refresh
 
-Data is refreshed in the tickets for all of your subscription customers, including migrated customers.  The refresh on the ticket occurs ***on ticket update***. Unfortunately, gorgias does not define this as the page simply loading - it requires an action like a message sent or I’ve found adding and then quickly removing a tag does the trick and constitutes an update which loads the sidebar.
+All subscriber and contract data appears for migrated and new customers. Because Gorgias only reloads sidebar data on ticket updates (not on simple page load), perform an action like sending a message or adding/removing a tag to force a refresh.
 
-# Setup
+## Setup
 
-You can setup the connection between Prive and Gorgias at [https://admin.tryprive.com/integrations/gorgias](https://admin.tryprive.com/integrations/gorgias)
+1. In your Recurly Commerce admin, go to **Integrations → Gorgias** or visit:\
+   [https://admin.tryprive.com/integrations/gorgias](https://admin.tryprive.com/integrations/gorgias)
+2. Copy the Gorgias **API URL** and **API Key** from your Gorgias dashboard (Settings → API).
+3. Paste them into Recurly Commerce and click **Connect**.
 
-<br />
-
-![](https://files.readme.io/ae0f23457f5e288ec934e5f953cec169ad6444d58105216bbc1ae2c80b819d38-image.png)
-
-<br />
-
-The necessary api url and passwords to input can be found in the gorgias admin properties. Input the values into prive and click connect and it’ll be done.
-
+![](https://files.readme.io/ae0f23457f5e288ec934e5f953cec169ad6444d58105216bbc1ae2c80b819d38-image.png)\
 ![](https://files.readme.io/8d153beb5939badb4a0f59ac4e8fc3a18235482f7cef28a736a6ccb4b55e3755-image.png)
-
-# Video
-
-<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" html="false" iframe="true" href="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" />
