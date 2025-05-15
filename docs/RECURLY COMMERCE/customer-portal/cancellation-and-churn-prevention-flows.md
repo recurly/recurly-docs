@@ -12,6 +12,10 @@ metadata:
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/396d7724793d48f3b7cb2399dcddb803" href="https://www.loom.com/embed/396d7724793d48f3b7cb2399dcddb803" html="false" iframe="true" />
 
+### Required plan
+
+This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+
 ### Prerequisites & limitations
 
 * **Beta feature**: Intelligent cancellation flow enhancements are currently in beta.
