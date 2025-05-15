@@ -11,8 +11,6 @@ metadata:
 ---
 # Overview
 
-The General tab of Recurly Commerce Analytics shows a summary of key information which allows you to drill deeper into the data. For all metrics, you can select custom time windows and compare them to previous periods for trend analysis.
-
 # Definition
 
 General Analytics surfaces high-level subscription health metrics—revenue, order volume, average order value—and empowers you to dive into monthly and daily breakdowns via the Executive Report and daily summaries.
