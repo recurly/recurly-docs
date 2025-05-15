@@ -8,6 +8,12 @@ hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly subscription plan.
+
 # Definition
 
 Subscriptions Analytics visualizes the total number of active and renewed subscriptions in your store over any selectable date range, with side-by-side comparison to a prior period.
