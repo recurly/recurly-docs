@@ -24,4 +24,4 @@ Subscriptions Analytics visualizes the total number of active and renewed subscr
 
 Select your desired time frame in the date picker, and the chart will update to show both the current period (solid line) and the comparison period (dotted line). Hover over any data point to see exact subscription counts for that date in each period.
 
-![](https://files.readme.io/d631ffbf87ea45b625c1c5a74ad64fdab4bf767883ee3a96aeec26e78b61b366-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d631ffbf87ea45b625c1c5a74ad64fdab4bf767883ee3a96aeec26e78b61b366-image.png" />
