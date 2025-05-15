@@ -28,5 +28,8 @@ A cohort groups subscribers by the date of their first purchase and measures how
 
 Cohort analysis in Recurly Commerce breaks down your subscriber base by the date of their first subscription, then tracks how many remain active or renew over subsequent periods. Toggle between contract retention rates and raw subscription counts to see your retention curve plotted linearly—flatter curves mean better retention.
 
-![](https://files.readme.io/d570b3cc61699f233bd8c4972b5ed20f83f0c2929fe5da999fc3ec0f791efbaf-image.png)\
-![](https://files.readme.io/9eaa6f7983106791bb9bec5265acf7cbc271c4250e7c7243cc2cde5b7d3f3955-image.png)
+![](https://files.readme.io/d570b3cc61699f233bd8c4972b5ed20f83f0c2929fe5da999fc3ec0f791efbaf-image.png)
+
+<br />
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/9eaa6f7983106791bb9bec5265acf7cbc271c4250e7c7243cc2cde5b7d3f3955-image.png" />
