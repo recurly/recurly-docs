@@ -14,7 +14,7 @@ Recurly Commerce tags every subscription order in Shopify—so you can instantly
 
 ### Video
 
-<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/5f9882b2fca94287b34bf53f93e37df2" />
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/5f9882b2fca94287b34bf53f93e37df2" href="https://www.loom.com/embed/5f9882b2fca94287b34bf53f93e37df2" html="false" iframe="true" />
 
 ### Prerequisites & limitations
 
