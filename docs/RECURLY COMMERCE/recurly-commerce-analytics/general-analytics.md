@@ -1,187 +1,76 @@
 ---
 title: General analytics
+excerpt: >-
+  The General Analytics dashboard provides an at-a-glance view of your
+  subscription business performance, with flexible date ranges, comparison
+  periods, and detailed executive reports.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# General Analytics
+# Overview
 
-The General tab of Recurly Commerce Analytics shows a summary of key information which allows you to drill deeper into the data. For all data, you are able to select custom windows of time and compare the data to previous periods of time.&#x20;
+The General tab of Recurly Commerce Analytics shows a summary of key information which allows you to drill deeper into the data. For all metrics, you can select custom time windows and compare them to previous periods for trend analysis.
 
-**Total Gross Sales During Selected Period**
+# Definition
 
-\<figure>\<img src="../../.gitbook/assets/image (25).png" alt="">\<figcaption>\</figcaption>\</figure>
+General Analytics surfaces high-level subscription health metrics—revenue, order volume, average order value—and empowers you to dive into monthly and daily breakdowns via the Executive Report and daily summaries.
 
-View a chart of how your subscription gross sales have changed over time. The dotted line shows what your gross sales looked like during the previous period of comparison so you can see how your current sales track against previous history.
+# Key benefits
 
-\*\*Average Order Value\*\*
+* **Holistic performance view**: See total gross sales, average order value, and order volume all in one place.
+* **Flexible comparisons**: Compare current data against any prior period to spot trends and anomalies.
+* **Deep drill-downs**: Access a comprehensive Executive Report and daily summaries for granular KPI insights.
 
-!\[]\(\<../../.gitbook/assets/image (31).png>)
+# Key details
 
-Average dollar amount of subscription orders (includes the initial subscription purchase). See how your subscription cart size changes over time.
+## Total gross sales during selected period
 
-\*\*Subscription Orders Processed\*\*
+A line chart of subscription gross sales over time. The solid line reflects the current period; the dotted line shows the previous comparison period.
 
+## Average order value
 
+Tracks the average dollar amount per subscription order (including initial purchases), helping you monitor changes in cart size over time.
 
-## Monthly Executive Report
+## Subscription orders processed
 
-The Monthly Executive Report is a tabular view that allows you to understand the key KPIs of your subscription business. The following are definitions for each row of data:
+Displays the total number of subscription orders—both new and renewals—processed in the selected period.
 
-<details>
-  <summary><strong>Gross Subscription Sales</strong></summary>
+## Monthly executive report
 
-  Total gross sales (in merchant local currency, including tax and shipping) from subscription orders
-</details>
+| Metric                                                         | Definition                                                                                               |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Gross Subscription Sales**                                   | Total gross sales (in merchant local currency, including tax and shipping) from all subscription orders. |
+| **Subscription Sales (from first orders)**                     | Gross sales (including tax and shipping) from initial subscription purchase orders only.                 |
+| **Subscription Sales (from recurring orders)**                 | Gross sales (including tax and shipping) from all subscription renewals, excluding initial purchases.    |
+| **Subscription Orders**                                        | The count of subscription orders processed in the month (initial orders plus renewals).                  |
+| **Gross Subscription Sales (from one-time add-ons)**           | Sum of gross sales from one-time add-on items purchased alongside subscriptions.                         |
+| **Subscription Orders (with one-time add-ons)**                | Count of subscription orders that included at least one one-time add-on item.                            |
+| **New Subscriptions**                                          | Number of initial subscription purchase orders processed in the month.                                   |
+| **New Migrated Subscriptions**                                 | Number of initial subscription orders that were migrated into Recurly Commerce from another platform.    |
+| **New Subscribers**                                            | Count of unique shoppers who purchased a new subscription in the month.                                  |
+| **New Migrated Subscribers**                                   | Count of unique shoppers migrated into Recurly Commerce who had at least one subscription.               |
+| **Active Subscriptions (including paused & dunning) (ending)** | Number of subscriptions in an active, paused, or dunning state at month-end.                             |
+| **Cancelled Subscriptions (ending)**                           | Number of subscriptions in a cancelled state (excluding paused or dunning) at month-end.                 |
+| **Actively Cancelled Subscriptions (ending)**                  | Subscriptions cancelled by either customer or merchant action at month-end.                              |
+| **Passively Cancelled Subscriptions (ending)**                 | Subscriptions cancelled automatically due to failed payments & dunning policies at month-end.            |
+| **Migrated Cancelled Subscriptions (ending)**                  | Subscriptions migrated into Recurly Commerce already in a cancelled state at month-end.                  |
+| **Paused Subscriptions (ending)**                              | Subscriptions in a paused state at month-end, whether indefinitely or for a set number of deliveries.    |
+| **Failed/Dunning Subscriptions (ending)**                      | Subscriptions in a failed payment state undergoing dunning management at month-end.                      |
+| **All Subscriptions (ending)**                                 | Total subscriptions at month-end (active + paused + dunning + cancelled).                                |
+| **Active Subscribers (including paused & dunning) (ending)**   | Unique subscribers with at least one active, paused, or dunning subscription at month-end.               |
+| **Churned Subscribers (ending)**                               | Subscribers with zero active, paused, or dunning subscriptions at month-end.                             |
+| **Actively Churned Subscribers (ending)**                      | Subscribers who churned by direct cancellation (customer or merchant) at month-end.                      |
+| **Passively Churned Subscribers (ending)**                     | Subscribers who churned due to passive cancellation (failed payments & dunning) at month-end.            |
+| **All Subscribers (ending)**                                   | Sum of Active Subscribers and Churned Subscribers at month-end.                                          |
 
-<details>
-  <summary>Subscription Sales (from first orders)</summary>
+## Subscription daily summary
 
-  Total gross sales (including tax and shipping) from the initial subscription purchase order
-</details>
+Provides a day-by-day breakdown of each Executive Report metric for the selected period. Refer to the monthly definitions above for metric meanings.
 
-<details>
-  <summary>Subscription Sales (from recurring orders)</summary>
+## Subscriber daily summary
 
-  Total gross sales (including tax and shipping) from recurring subscription orders. This does not include sales from the initial subscription purchase.
-</details>
+Offers a daily view of subscriber counts—new, active, churned—matching the Executive Report definitions.
 
-<details>
-  <summary>Subscription Orders</summary>
-
-  The number of orders that have been processed in the month (includes initial subscription order as well as renewals).
-</details>
-
-<details>
-  <summary><strong>Gross Subscription Sales (from one-time add-ons)</strong> </summary>
-
-  Sum of gross sales from one-time add-on items in the subscriptions.
-</details>
-
-<details>
-  <summary><strong>Subscription Orders (with one-time add-ons)</strong> </summary>
-
-  Sum of number of subscription orders that include one-time add-on items.
-</details>
-
-<details>
-  <summary><strong>New Subscriptions</strong></summary>
-
-  The number of new subscription orders that have been processed in the month (does not include any subscription renewals).
-</details>
-
-<details>
-  <summary>New Migrated Subscriptions </summary>
-
-  Sum of new subscriptions that were migrated to Recurly Commerce from other providers.
-</details>
-
-<details>
-  <summary><strong>New Subscribers</strong></summary>
-
-  The number of shoppers who have purchased a new subscription in the month.
-</details>
-
-<details>
-  <summary>New Migrated Subscribers </summary>
-
-  Sum of new subscribers who were migrated to Recurly Commerce from other providers
-</details>
-
-<details>
-  <summary>Active Subscriptions (including paused & dunning) (ending)</summary>
-
-  The number of active subscriptions at the end of the month, including subscriptions that have been paused or are in dunning (period of time where payment has failed, but system retries payment).
-</details>
-
-<details>
-  <summary>Cancelled Subscriptions (ending)</summary>
-
-  The number of subscriptions at the end of the month that are in a canceled state. This does not include paused subscriptions or subscriptions that are in dunning. Cancelled Subscriptions consist of subscriptions that have been actively cancelled, have been cancelled due to failed payments, or have been migrated into Recurly Commerce as a cancelled subscription.
-</details>
-
-<details>
-  <summary>Actively Cancelled Subscriptions (ending)</summary>
-
-  The number of subscriptions at the end of the month that have been cancelled by the customer or by the merchant by clicking on “cancel subscription” in the Recurly Commerce portal/merchant admin.
-</details>
-
-<details>
-  <summary>Passively Cancelled Subscriptions (ending)</summary>
-
-  The number of subscriptions at the end of the month that have been cancelled because they have had a failed payment method, gone through dunning management, and payment was not updated. See your dunning management settings to configure your policy on whether or not a subscription gets cancelled after failed payment attempts.
-</details>
-
-<details>
-  <summary><strong>Migrated Cancelled Subscriptions (ending)</strong> </summary>
-
-  Total subscriptions that were migrated to Recurly Commerce from other providers as cancelled.
-
-  Helps answer: "At the end of the month, how many migrated cancelled subscriptions did we have?"
-</details>
-
-<details>
-  <summary>Paused Subscriptions (ending)</summary>
-
-  The number of subscriptions at the end of the month that are in a paused state. Depending on your store configuration, customers may have paused for an indefinite period of time (only will unpause if an action to unpause is taken), or for a specific period of time (i.e 3 renewals), at which point they will automatically unpause. See Customer Portal tab to configure your pause settings.
-</details>
-
-<details>
-  <summary>Failed/Dunning Subscriptions (ending)</summary>
-
-  The number of subscriptions at the end of the month that are in a failed state and are going through active dunning management. These are subscriptions where the system tried to process payment at the time of renewal and failed to do so (generally due to expired credit cards, insufficient funds, etc). If a customer updates their payment method, the subscription will become active and will no longer be in a failed state.
-</details>
-
-<details>
-  <summary>All Subscriptions (ending)</summary>
-
-  The total number of subscriptions at the end of the month. The sum of Active Subscriptions (including paused & dunning) and Cancelled Subscriptions.
-</details>
-
-<details>
-  <summary>Active Subscribers (including paused & dunning) (ending)</summary>
-
-  Total number of subscribers at the end of the month with at least 1 active, paused, or dunning subscription. The number of active subscribers can be lower than active subscriptions since a subscriber can have multiple active subscriptions under the same email/account.
-</details>
-
-<details>
-  <summary>Churned Subscribers (ending)</summary>
-
-  Total number of subscribers with 0 active, paused, or dunning subscriptions at the end of the month.
-</details>
-
-<details>
-  <summary>Actively Churned Subscribers (ending)</summary>
-
-  Total number of subscribers who churned as a result of them, or the merchant, directly cancelling their subscriptions, at the end of a month.
-</details>
-
-<details>
-  <summary>Passively Churned Subscribers (ending)</summary>
-
-  Total number of subscribers who churned as a result of their subscriptions being passively cancelled, at the end of the month.
-</details>
-
-<details>
-  <summary>All Subscribers (ending)</summary>
-
-  All Subscribers (ending) = Active Subscribers (including paused & dunning) (ending) + Churned Subscribers (ending)
-</details>
-
-<br />
-
-## Subscription Daily Summary
-
-The Subscription Daily Summary provides a day by day breakdown for all of the subscription metrics found in the Executive Report. For metric definitions, see "Monthly Executive Report" above.&#x20;
-
-<br />
-
-## Subscriber Daily Summary
-
-
-The Subscriber Daily Summary provides a day by day breakdown for all of the subscriber related metrics found in the Executive Report. For metric definitions, see "Monthly Executive Report" above.\&#x20;
-
-\{% hint style="info" %}
-All data is shown in the timezone of your store and may differ from Shopify's analytics timezone and data aggregation cutoffs. Shopify and Recurly Commerce analytics will not match 1-1 due to different policy decisions. This does not mean the data from either source is incorrect.\&#x20;
-\{% endhint %}
+> **Note:** All data is shown in your store’s timezone and may differ from Shopify analytics due to differing aggregation methods.
