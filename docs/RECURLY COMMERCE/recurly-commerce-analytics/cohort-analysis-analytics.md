@@ -12,8 +12,7 @@ metadata:
 
 ### Required plan
 
-* Available only on Recurly Commerce Pro and Enterprise plans.
-* To upgrade, contact <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
+* Available only on Recurly Commerce Pro and Enterprise plans. To upgrade, contact <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
 
 # Definition
 
@@ -31,7 +30,3 @@ Cohort analysis in Recurly Commerce breaks down your subscriber base by the date
 
 ![](https://files.readme.io/d570b3cc61699f233bd8c4972b5ed20f83f0c2929fe5da999fc3ec0f791efbaf-image.png)\
 ![](https://files.readme.io/9eaa6f7983106791bb9bec5265acf7cbc271c4250e7c7243cc2cde5b7d3f3955-image.png)
-
-###
-
-Cohort analysis is only available on Pro or Enterprise plans. Want to upgrade? Contact us at [support@recurly.com](mailto:support@recurly.com)
