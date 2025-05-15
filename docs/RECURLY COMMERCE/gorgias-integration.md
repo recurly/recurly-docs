@@ -7,11 +7,11 @@ metadata:
 ---
 Gorgias provides you with the ability to view subscriptions alongside customer support tickets and perform basic operations.
 
-# Available Prive Properties
+# Available Recurly Commerce properties
 
 ### Subscriber Properties
 
-Below is a list of Prive Subscriber properties that are available in Gorgias Widgets. The subscriber card is the first card and displays general attributes of the user.
+Below is a list of Recurly Commerce Subscriber properties that are available in Gorgias Widgets. The subscriber card is the first card and displays general attributes of the user.
 
 | Prive Subscriber Property  | Description                                       |
 | -------------------------- | ------------------------------------------------- |
@@ -26,11 +26,7 @@ Below is a list of Prive Subscriber properties that are available in Gorgias Wid
 | total active subscriptions | total active subscriptions                        |
 | total orders               | total orders shopper has ever placed              |
 
-![](https://files.readme.io/282a564e131a2cd9fbbadf3fdc92ed9e849bdf5c0857eafd0fd5aeb95d7bd40e-image.png)
-
-<br />
-
-### Subscription Properties
+### Subscription properties
 
 Below is a list of Prive subscription contract properties that are available in Gorgias Widgets. The subscription card represents a distinct subscription contract and displays all the items in the contract.
 
@@ -47,21 +43,17 @@ Below is a list of Prive subscription contract properties that are available in 
 
 ![](https://files.readme.io/3cff9280d25a1f28c54899c0b247017e74bb1bcddb960513889e66a43ed848be-image.png)
 
-<br />
+### Subscription actions
 
-### Subscription Actions
-
-| Prive Subscription Contract Action | Description                                                                            |
-| ---------------------------------- | -------------------------------------------------------------------------------------- |
-| Skip Subscription                  | Skips the next order                                                                   |
-| Change Delivery Date               | changes the next delivery date                                                         |
-| Manage Subscription                | Links to the subscription in prive. User must be logged in through the shopify portal. |
+| Recurly Commerce Subscription Contract Action | Description                                                                            |
+| --------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Skip Subscription                             | Skips the next order                                                                   |
+| Change Delivery Date                          | changes the next delivery date                                                         |
+| Manage Subscription                           | Links to the subscription in prive. User must be logged in through the shopify portal. |
 
 ![](https://files.readme.io/d9a02f6815a530855942f406237f87d47d05843c94c926ebffe9ec08eb36c4d3-image.png)
 
-<br />
-
-## Data Refresh
+## Data refresh
 
 Data is refreshed in the tickets for all of your subscription customers, including migrated customers.  The refresh on the ticket occurs ***on ticket update***. Unfortunately, gorgias does not define this as the page simply loading - it requires an action like a message sent or I’ve found adding and then quickly removing a tag does the trick and constitutes an update which loads the sidebar.
 
