@@ -12,7 +12,11 @@ metadata:
 
 ### Required plan
 
-* Available only on Recurly Commerce Pro and Enterprise plans. To upgrade, contact <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
+This feature **may not be included** in the Core or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+
+### Additional cost
+
+This feature or setting in Recurly Commerce requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
 
 # Definition
 
