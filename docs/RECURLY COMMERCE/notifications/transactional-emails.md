@@ -12,7 +12,6 @@ metadata:
 
 ### Prerequisites & limitations
 
-* None – transactional emails are included with Recurly Commerce.
 * Emails cannot be used for promotional content; they must remain informational.
 
 # Definition
