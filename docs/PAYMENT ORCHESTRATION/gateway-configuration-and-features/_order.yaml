@@ -7,5 +7,6 @@
 - payment-descriptors
 - currency-support-by-gateway
 - test-re
+- test
 - how-to-test-your-gateway
 - gateway-token-support
