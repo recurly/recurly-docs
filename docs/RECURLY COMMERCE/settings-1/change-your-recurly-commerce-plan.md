@@ -1,18 +1,31 @@
 ---
 title: Change your Recurly Commerce plan
+excerpt: >-
+  Upgrade or downgrade your Recurly Commerce subscription plan directly from the
+  app to unlock new features, support tiers, and flexible billing options.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# 🌠 Changing your Recurly Commerce Plan
+# Overview
 
-In the Recurly Commerce app under the “Settings” tab, you can view your current plan and upgrade at anytime to unlock advanced features, a dedicated CSM, shorter SLA response times and more.
+### Prerequisites & limitations
 
-To change your current plan, select the “change plan” button in the top right hand corner.
+* You must be an active Recurly Commerce merchant with billing managed through Shopify.
 
-To learn more about our pricing [view our detailed plan comparison document here](https://recurly.com/product/commerce/).
+# Change your plan
 
-Once the plan of choice has been selected, you will be re-directed to Shopify where you will approve the monthly charges and confirm your new subscription plan to Recurly Commerce.
+1. In the Recurly Commerce app, go to **Settings** → **Change Plan** (top right).
 
-Return to the “Settings” tab of your Recurly Commerce app to see your new plan reflected in your portal.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/30c38e4a2b5221754b3efa48fcc7011ec89861565df87bb9b51d58d2465bdcf2-image.png" />
+
+2. Select your desired plan tier. You’ll be redirected to Shopify to review and approve the new recurring charge.
+
+> **Note:** To learn more about each plan’s features and pricing, <a href="https://recurly.com/product/commerce/" target="_blank">view our detailed plan comparison document here</a>.
+
+3. Complete the approval in Shopify to confirm your new Recurly Commerce subscription.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/044b4240934783219b54fbda8520c8119e2e284c91ae85ded8c2b5dc8a637aa9-image.png" />
+
+4. Return to **Settings** in the Recurly Commerce app—your updated plan will be displayed.
