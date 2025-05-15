@@ -48,7 +48,7 @@ To begin, follow these steps:
 
 # Recurly Configuration:
 
-Enablement of MOTO on each gateway can be completed via the following steps:
+Enablement of MOTO can be completed on certain gateways via the following steps:
 
 1. From the Recurly Admin UI, select Configuration > Payment Gateways from the menu on the left.
 2. Select Options > Edit for the appropriate gateway instance.
