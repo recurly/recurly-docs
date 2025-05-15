@@ -138,29 +138,29 @@ At the bottom right of the invoice, the following invoice-level values are displ
 
 ### Quantity-based pricing line items
 
-Recurly's invoice line items are structured differently based on the pricing model used, such as Tiered Volume and Stairstep. The first charge typically reflects the plan's base fee, followed by charges for Add-Ons determined by the chosen pricing model and quantity. For more information, refer to [Billing Models](https://docs.recurly.com/docs/billing-models#section-quantity-based)\{:target="\_blank"}.
+Recurly's invoice line items are structured differently based on the pricing model used, such as Tiered Volume and Stairstep. The first charge typically reflects the plan's base fee, followed by charges for Add-Ons determined by the chosen pricing model and quantity. For more information, refer to [Billing Models](https://docs.recurly.com/docs/billing-models#section-quantity-based).
 
 #### Tiered pricing
 
 * **Description:** For the Tiered model, each tier results in a separate line item.
 * **Naming:** The Add-On name includes the range of units. Example: "Seats: 1-10".
-* **Visualization:** 
+* **Visualization:**
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/3dc4f14-Image_2020-03-20_at_8.53.19_AM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3dc4f14-Image_2020-03-20_at_8.53.19_AM.png" />
 
 #### Volume pricing
 
 * **Description:** Line items for Volume pricing are similar to those for fixed-price products, using the per-unit price from the relevant subscription tier.
-* **Visualization:** 
+* **Visualization:**
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/576c291-volume.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/576c291-volume.png" />
 
 #### Stairstep pricing
 
 * **Description:** A single line item is created, displaying the Add-On name and purchased quantity. The charge quantity is set to 1, with the price reflecting the fixed price for the applicable tier.
 * **Visualization:**
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/a983819-Image_2020-03-20_at_8.59.44_AM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a983819-Image_2020-03-20_at_8.59.44_AM.png" />
 
 ### Payment history
 
@@ -172,7 +172,7 @@ Invoices feature three types of notes sections, which are visible only if they c
 
 #### Customer notes
 
-* **Description:** A section for any customer-specific notes, such as special invoice details or a thank-you message. 
+* **Description:** A section for any customer-specific notes, such as special invoice details or a thank-you message.
 * **Title Visibility:** The title of this section does not appear on the invoice.
 
 #### Terms and conditions
@@ -188,7 +188,7 @@ Invoices feature three types of notes sections, which are visible only if they c
 
 ## PDFs
 
-Enable PDF invoice attachments in email notifications by navigating to the Email Templates page in the Configuration section of Recurly App. From here, you can go into the "edit" view of any of the 7 email templates with invoices associated, select "Attach PDF" under "Attachments" and save your changes. PDFs of invoices can also be downloaded from the Admin Console or Hosted Pages. 
+Enable PDF invoice attachments in email notifications by navigating to the Email Templates page in the Configuration section of Recurly App. From here, you can go into the "edit" view of any of the 7 email templates with invoices associated, select "Attach PDF" under "Attachments" and save your changes. PDFs of invoices can also be downloaded from the Admin Console or Hosted Pages.
 
 Email Templates that support invoice PDF attachments:
 
@@ -258,9 +258,9 @@ Once failed, an invoice cannot be reopened. This applies to manual collection in
 
 Refunds are processed at the invoice level. Options include changing a subscription, refunding a specific invoice, or refunding the last invoice while terminating a subscription. These actions generate a refund credit invoice with credit line items against previously paid charge line items. Directly refunding an invoice allows you to distribute the credit as a payment refund or retain it as a credit balance for future invoices.
 
-To refund an invoice, select "Refund Invoice" in the Invoice Actions dropdown in the Admin Console. Invoice refunds are also supported in both versions of Recurly's API. 
+To refund an invoice, select "Refund Invoice" in the Invoice Actions dropdown in the Admin Console. Invoice refunds are also supported in both versions of Recurly's API.
 
-Once you are on the Issue Refund page, you have a few options to choose how to handle your refund. You can issue your refund either by the line item level, or for the entire invoice. 
+Once you are on the Issue Refund page, you have a few options to choose how to handle your refund. You can issue your refund either by the line item level, or for the entire invoice.
 
 > 🚧 Important Callout:
 >
@@ -268,13 +268,13 @@ Once you are on the Issue Refund page, you have a few options to choose how to h
 
 **Select to refund by line item**:
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/1d7bd0ff3a3c0d40d7baa51e77984d63c2a1b382e0913f5ea12724339d7e7566-Screenshot_2024-08-20_at_1.18.46_PM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/1d7bd0ff3a3c0d40d7baa51e77984d63c2a1b382e0913f5ea12724339d7e7566-Screenshot_2024-08-20_at_1.18.46_PM.png" />
 
-**Select to refund by entire invoice:** 
+**Select to refund by entire invoice:**
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/155cce782e09c877c4053f44bd9913362ac7a89b8a9794883765198888a69af3-Screenshot_2024-08-20_at_1.27.12_PM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/155cce782e09c877c4053f44bd9913362ac7a89b8a9794883765198888a69af3-Screenshot_2024-08-20_at_1.27.12_PM.png" />
 
-Refund options for issuing refunds by individual line items include refunding a line item by quantity, specific amount, or percentage. Refund options for issuing refunds for whole invoices include refunding by a specific amount, or percentage amount. 
+Refund options for issuing refunds by individual line items include refunding a line item by quantity, specific amount, or percentage. Refund options for issuing refunds for whole invoices include refunding by a specific amount, or percentage amount.
 
 * Quantity refunds allow you to refund quantity amounts on each/any line item on an invoice.
 * Specific amount refunds allow you to refund specific dollar/cent amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
