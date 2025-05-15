@@ -1,7 +1,7 @@
 ---
 title: Recurly Commerce integrations
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
