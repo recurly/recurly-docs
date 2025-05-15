@@ -10,7 +10,19 @@ metadata:
 ---
 # Overview
 
-Product Breakdown Analytics presents a detailed table showing how many orders, product units, and subscription revenue each product variant generates—helping you spot your top performers and revenue drivers.
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Commerce subscription plan.
+
+### Required plan
+
+This feature **may not be included** in the Core plan. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+
+### Additional cost
+
+This feature or setting in Recurly Commerce requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
+
+#
 
 # Definition
 
