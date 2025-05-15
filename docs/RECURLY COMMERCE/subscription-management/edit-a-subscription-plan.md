@@ -13,7 +13,7 @@ metadata:
 
 ### Video
 
-<iframe src="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" frameborder="0" allowfullscreen width="100%" height="450" />
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" href="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" html="false" iframe="true" />
 
 ### Prerequisites & limitations
 
