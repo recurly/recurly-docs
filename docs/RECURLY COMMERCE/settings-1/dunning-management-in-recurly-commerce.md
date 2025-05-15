@@ -36,21 +36,21 @@ In the **Settings > Dunning** section of the Recurly Commerce app, choose one of
 
 **Prive’s standard dunning setting**: Subscription contracts automatically cancel if all retries fail. By default, the system retries every 2 days up to 5 times.
 
-![](https://files.readme.io/3bf5832600003bd3b17e282c64e971bfa1f39b855cec40f27f8e237e8810ca0a-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3bf5832600003bd3b17e282c64e971bfa1f39b855cec40f27f8e237e8810ca0a-image.png" />
 
 **Retry after failed billing**: Specify how many days—and how many retry attempts—to schedule **after** the renewal date, and decide whether to pause or cancel once retries complete.
 
-![](https://files.readme.io/af06f66ba65c9cbc0dcfd02450a5fa2edc05b99c51cdbda69a470a8f756f9046-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/af06f66ba65c9cbc0dcfd02450a5fa2edc05b99c51cdbda69a470a8f756f9046-image.png" />
 
 **Retry before failed billing**: Define retry attempts **before** the renewal date, plus pause-or-cancel behavior post-retries.
 
-![](https://files.readme.io/e42f13d781adc8e6abba25442334c698dc1c6ad63279f0b9700b9b85ab657d78-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e42f13d781adc8e6abba25442334c698dc1c6ad63279f0b9700b9b85ab657d78-image.png" />
 
 ## Payment failure notification
 
 Enable the **Failed payment method** email in **Notifications** to alert customers immediately when a charge fails. The message includes a link to their portal to update payment details.
 
-![](https://files.readme.io/6b7f0ec80fa3dbde857f2708efc35c769674f6c576da4ea56bc51d44a037fc56-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6b7f0ec80fa3dbde857f2708efc35c769674f6c576da4ea56bc51d44a037fc56-image.png" />
 
 ## Reset billing information
 
@@ -59,10 +59,10 @@ Merchants can’t edit payment details directly, but you can prompt a reset emai
 1. Go to **Customers**, select a subscriber, and scroll to **Billing & Shipping**.
 2. Click **Send email to reset** to trigger a Shopify-hosted billing update flow.
 
-![](https://files.readme.io/b320e86d113266aa9acb2cfb4a106ac6ceb882de0f94865aa9b716080bd45f21-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b320e86d113266aa9acb2cfb4a106ac6ceb882de0f94865aa9b716080bd45f21-image.png" />
 
 ## Process failed payment
 
 After a subscriber updates their payment method, click **Process Now** on their contract to immediately re-charge and, on success, resume the next renewal without altering the schedule.
 
-![](https://files.readme.io/fe4a69f7fba47c5ab1fdff5e35f3a3093106bb827a4b5dc0fc014303222eb956-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/fe4a69f7fba47c5ab1fdff5e35f3a3093106bb827a4b5dc0fc014303222eb956-image.png" />
