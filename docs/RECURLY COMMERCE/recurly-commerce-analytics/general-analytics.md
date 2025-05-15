@@ -29,13 +29,19 @@ General Analytics surfaces high-level subscription health metrics—revenue, ord
 
 A line chart of subscription gross sales over time. The solid line reflects the current period; the dotted line shows the previous comparison period.
 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a136c4d9bb1959ccf266daf761337f4dca1bb77bc229dbf1d51f60073feadeb1-image.png" />
+
 ## Average order value
 
 Tracks the average dollar amount per subscription order (including initial purchases), helping you monitor changes in cart size over time.
 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1b45129d690bc4d59d0fde7d5c7eef0d62f3ee4c238b96d01ce8c791699166b1-image.png" />
+
 ## Subscription orders processed
 
 Displays the total number of subscription orders—both new and renewals—processed in the selected period.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e6da7fd91451fc35b24e0c5df374512ff54220fccb71db28169592807982a056-image.png" />
 
 ## Monthly executive report
 
@@ -68,6 +74,8 @@ Displays the total number of subscription orders—both new and renewals—proce
 ## Subscription daily summary
 
 Provides a day-by-day breakdown of each Executive Report metric for the selected period. Refer to the monthly definitions above for metric meanings.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/62910208917ca12c6e67b2b0111713b52e7d1f19529ff9b38b9c2110458a1c19-image.png" />
 
 ## Subscriber daily summary
 
