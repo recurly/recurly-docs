@@ -55,9 +55,9 @@ A discount code in Recurly Commerce is a Shopify-created promo code that you can
 2. **Click** the **Coupon Code** button.
 3. **Enter** the Shopify code exactly as created, then click **Apply**.
 
-![](https://files.readme.io/989da17991673ae79871dab09350954762fb1ea5de068f9999b30b81ab8654fe-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/989da17991673ae79871dab09350954762fb1ea5de068f9999b30b81ab8654fe-image.png" />
 
-![](https://files.readme.io/4606e311a6626c13dc2a0a2ca1c44e27140fbc683294cd73b6319e333da98889-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/4606e311a6626c13dc2a0a2ca1c44e27140fbc683294cd73b6319e333da98889-image.png" />
 
 The code’s parameters—minimum purchase, usage limits, applicable products—are enforced exactly as defined in Shopify. You can apply it:
 
