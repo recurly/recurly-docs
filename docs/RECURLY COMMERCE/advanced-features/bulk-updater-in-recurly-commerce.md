@@ -4,7 +4,7 @@ excerpt: >-
   Quickly apply changes across multiple subscriptions at once using the Bulk
   Updater tool.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
