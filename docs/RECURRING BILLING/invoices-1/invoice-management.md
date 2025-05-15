@@ -223,7 +223,7 @@ Posting an invoice with automatic collection instructs Recurly to attempt paymen
 
 ### Manual collection
 
-Posting an invoice with manual collection prompts Recurly to issue the invoice without attempting any payment. External payments can be manually entered later, or customers can pay the invoice using an automatic method via our Make a Payment button on the hosted invoice.
+Posting an invoice with manual collection prompts Recurly to issue the invoice without attempting any payment. External payments can be manually entered later as a manual transaction, or customers can pay the invoice using an automatic method via our Make a Payment button on the hosted invoice.
 
 > **Note:** Once a manual invoice is paid, or an attempt is made to pay it, with the billing information on the account, it converts to automatic collection. It is currently not possible to record a manual payment on an automatic collection invoice or convert a charge invoice from automatic to manual collection.
 
