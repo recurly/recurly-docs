@@ -10,8 +10,6 @@ metadata:
 ---
 # Overview
 
-Recurly Commerce offers transactional email notifications at no additional cost to communicate with subscribers at every stage of their subscription journey. These messages are purely operational—they’re not for marketing blasts.
-
 ### Prerequisites & limitations
 
 * None – transactional emails are included with Recurly Commerce.
