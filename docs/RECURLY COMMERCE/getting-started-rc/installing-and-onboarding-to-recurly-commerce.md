@@ -15,10 +15,6 @@ metadata:
 
 This feature is available to all customers on any Recurly subscription plan.
 
-### Additional cost
-
-This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
-
 ### Prerequisites & limitations
 
 * A Shopify or Shopify Plus store is required.
