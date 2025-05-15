@@ -18,7 +18,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ### Additional cost
 
-This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
+This feature or setting in Recurly Commerce requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
 
 ### Prerequisites & limitations
 
