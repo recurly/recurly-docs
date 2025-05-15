@@ -79,14 +79,6 @@ The necessary api url and passwords to input can be found in the gorgias admin p
 
 ![](https://files.readme.io/8d153beb5939badb4a0f59ac4e8fc3a18235482f7cef28a736a6ccb4b55e3755-image.png)
 
-<br />
-
 # Video
 
-View the video below to see the Gorgias X Prive Integration in action.
-
-[https://www.loom.com/share/1f8b9b9e05584c87bf8665fa4f42e47d](https://www.loom.com/share/1f8b9b9e05584c87bf8665fa4f42e47d)
-
-# Chat with us
-
-If you have any questions, please chat with us live from within the Prive Subscriptions App or via email at [support@tryprive.com](mailto:support@tryprive.com).
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" html="false" iframe="true" href="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" />
