@@ -12,7 +12,7 @@ metadata:
 
 ### Required plan
 
-This feature **may not be included** in the Core or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+This feature **may not be included** in the Core plan. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 ### Additional cost
 
