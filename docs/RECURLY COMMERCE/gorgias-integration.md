@@ -26,9 +26,9 @@ Below is a list of Prive Subscriber properties that are available in Gorgias Wid
 | total active subscriptions | total active subscriptions                        |
 | total orders               | total orders shopper has ever placed              |
 
-![Screen Shot 2023-12-11 at 2.52.01 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ea57b89-63cb-4329-92c7-218cfd9586fe/96e2a3d6-744d-4d91-8c5a-57380697fbad/Screen_Shot_2023-12-11_at_2.52.01_PM.png)
+![](https://files.readme.io/282a564e131a2cd9fbbadf3fdc92ed9e849bdf5c0857eafd0fd5aeb95d7bd40e-image.png)
 
-***example subscriber data card***
+<br />
 
 ### Subscription Properties
 
@@ -45,9 +45,9 @@ Below is a list of Prive subscription contract properties that are available in 
 | Next Order Date                      | Next order date                         |
 | Cancellation reason                  | if theres a cancellation reason         |
 
-***example subscription data card***
+![](https://files.readme.io/3cff9280d25a1f28c54899c0b247017e74bb1bcddb960513889e66a43ed848be-image.png)
 
-![Screen Shot 2023-12-11 at 2.32.45 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ea57b89-63cb-4329-92c7-218cfd9586fe/18e017e3-88be-437e-80c0-79d1eabbd610/Screen_Shot_2023-12-11_at_2.32.45_PM.png)
+<br />
 
 ### Subscription Actions
 
@@ -57,7 +57,9 @@ Below is a list of Prive subscription contract properties that are available in 
 | Change Delivery Date               | changes the next delivery date                                                         |
 | Manage Subscription                | Links to the subscription in prive. User must be logged in through the shopify portal. |
 
-![Screen Shot 2023-12-11 at 2.53.36 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ea57b89-63cb-4329-92c7-218cfd9586fe/6db408ad-16b8-45e6-9a1a-6d8153b879af/Screen_Shot_2023-12-11_at_2.53.36_PM.png)
+![](https://files.readme.io/d9a02f6815a530855942f406237f87d47d05843c94c926ebffe9ec08eb36c4d3-image.png)
+
+<br />
 
 ## Data Refresh
 
@@ -67,13 +69,17 @@ Data is refreshed in the tickets for all of your subscription customers, includi
 
 You can setup the connection between Prive and Gorgias at [https://admin.tryprive.com/integrations/gorgias](https://admin.tryprive.com/integrations/gorgias)
 
-![Screen Shot 2023-12-11 at 2.56.18 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ea57b89-63cb-4329-92c7-218cfd9586fe/15a5ce06-22c2-4a70-8824-f9ff096d2df4/Screen_Shot_2023-12-11_at_2.56.18_PM.png)
+<br />
 
-[]()
+![](https://files.readme.io/ae0f23457f5e288ec934e5f953cec169ad6444d58105216bbc1ae2c80b819d38-image.png)
+
+<br />
 
 The necessary api url and passwords to input can be found in the gorgias admin properties. Input the values into prive and click connect and it’ll be done.
 
-![Screen Shot 2023-12-11 at 2.57.52 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ea57b89-63cb-4329-92c7-218cfd9586fe/890d5d0c-0729-423a-aebc-b5c87f8a1bae/Screen_Shot_2023-12-11_at_2.57.52_PM.png)
+![](https://files.readme.io/8d153beb5939badb4a0f59ac4e8fc3a18235482f7cef28a736a6ccb4b55e3755-image.png)
+
+<br />
 
 # Video
 
