@@ -14,10 +14,6 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly Commerce subscription plan.
 
-### Additional cost
-
-This feature or setting in Recurly Commerce requires an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> for more pricing details.
-
 # Definition
 
 Advanced features in Recurly Commerce unlock new levels of automation, gifting flexibility, and bulk operations to streamline your workflows and delight subscribers at scale.
