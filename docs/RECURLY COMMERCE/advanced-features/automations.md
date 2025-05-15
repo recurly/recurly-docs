@@ -10,11 +10,9 @@ metadata:
 ---
 # Overview
 
-To create one of the following automations, navigate to the **Automations** tab of the Recurly Commerce app and select the type of automation you’d like to configure.
-
 ### Video
 
-\{% embed url="\[https\://www\.loom.com/embed/a16340030ac94c289ec11b565c53047c]\(https\://www\.loom.com/embed/a16340030ac94c289ec11b565c53047c) " %}
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/a16340030ac94c289ec11b565c53047c" href="https://www.loom.com/embed/a16340030ac94c289ec11b565c53047c" html="false" iframe="true" />
 
 ### Prerequisites & limitations
 
