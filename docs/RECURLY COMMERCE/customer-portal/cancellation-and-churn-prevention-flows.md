@@ -16,6 +16,10 @@ metadata:
 
 This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
+### Additional cost
+
+This feature or setting requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
+
 ### Prerequisites & limitations
 
 * **Beta feature**: Intelligent cancellation flow enhancements are currently in beta.
