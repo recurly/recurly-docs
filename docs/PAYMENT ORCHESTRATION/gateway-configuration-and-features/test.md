@@ -1,5 +1,5 @@
 ---
-title: Test gateway (error)
+title: Test gateway
 excerpt: >-
   Effortlessly test your transaction configurations with Recurly's Test Gateway,
   ensuring seamless live operations.
