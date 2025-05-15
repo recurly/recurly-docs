@@ -13,7 +13,7 @@ metadata:
 
 ### Required plan
 
-You must be on a Shopify store with the Recurly Commerce app installed (Core or Pro plan).
+This feature or setting is available to all customers on any Recurly Commerce subscription plan.
 
 ### Additional cost
 
