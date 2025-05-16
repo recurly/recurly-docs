@@ -43,7 +43,7 @@ Take control of access management within your organization using User-Based Role
 1. **Navigate** to the "Admin" section in the Recurly App.
 2. **Click** on "Roles".
 
-![](https://files.readme.io/540ff370d0d48eb9193c1a5e2918625c2b34ea42312fa604cac05ed19d906404-image.png)
+<Image align="center" src="https://files.readme.io/540ff370d0d48eb9193c1a5e2918625c2b34ea42312fa604cac05ed19d906404-image.png" />
 
 3. On the top-right corner of the screen, **find** and **click** the "Create Role" button.
 
