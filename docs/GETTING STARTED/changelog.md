@@ -50,6 +50,132 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        May 20
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Several invalid actions will be blocked based on the UPI payment method usage and presence on a given account. Please see list of invalid actions on the UPI AutoPay and Ebanx gateway pages respectively. Examples include multiple subscriptions on a single customer account, and one-time transactions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 20
+      </td>
+
+      <td>
+        **V3 Client Libraries**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Several origin enums will be added to the V3 client libraries.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 20
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated handling of mandate reference data for applicable payment methods (Direct Debit). Mandate references will appear in UIs and API response payloads where applicable, and if available from the gateway.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 20
+      </td>
+
+      <td>
+        **Adyen Gateway | iDeal in Recurly.js**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        When using iDeal via Recurly.js, if the consumer cancels out of their consumer authorization flow modal, the subscription associated with the customer will be expired automatically.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 20
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        When enabled in your Adyen Gateway Webhook configuration, the Expired Authorization webhook will now mark uncaptured, expired authorization transactions as voided. You can enable this webhook in your Adyen Gateway settings (at the gateway), with no configuration on the Recurly site. See Adyen gateway setup instructions for additional details on webhook configuration.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 19
+      </td>
+
+      <td>
+        **Recurly.js, HPP, Checkout**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        We will be making scheduled maintenance updates for security purposes that will include a Recurly.js client update. No functional changes are expected.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 14
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adyen (Third Party) Network Token usage on a per transaction basis will be reported in UIs and gateway params via API when applicable. If you have Network Tokens enabled at the Adyen level, you will be able to see when they are used on a transaction moving forward.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 14
       </td>
 
