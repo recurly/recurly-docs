@@ -4,7 +4,7 @@ excerpt: >-
   Guide to adding, removing, and customizing the Recurly Commerce Subscriptions
   app embed and inline app blocks via the Shopify Theme Editor.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
