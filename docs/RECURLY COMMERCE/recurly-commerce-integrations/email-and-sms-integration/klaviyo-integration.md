@@ -5,7 +5,7 @@ excerpt: >-
   and customer properties—unlock powerful segmentation and personalized
   messaging.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
