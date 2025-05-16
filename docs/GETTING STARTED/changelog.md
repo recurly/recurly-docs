@@ -158,6 +158,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        May 20
+      </td>
+
+      <td>
+        **Compass Insights**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adding feedback options (thumbs up or down) to each insight which will be visible with mouse hover-over.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 19
       </td>
 
