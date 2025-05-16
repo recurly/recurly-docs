@@ -38,7 +38,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 
 | Feature                         | Description                                                                                                                                                                                                                                                                                                                   |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Credit/Debit cards, ACH, Boleto, iDeal, Sofort (Klarna Debit Risk), SEPA, BACS, Google Pay and Apple Pay, Cash App                                                                                                                                                                                                            |
+| Services that work with Recurly | Credit/Debit cards, Recurring, Adyen Web Components, Adyen-derived Network Tokens                                                                                                                                                                                                                                             |
 | Supported operations            | Authorize & Capture, Purchase, Refund, Verify, Void                                                                                                                                                                                                                                                                           |
 | Supported payment types         | Credit/Debit cards, ACH, Boleto, iDeal, Klarna Debit Risk (only existing merchants), SEPA, Google Pay and Apple Pay, Cash App. **Note:** Only a subset of payment methods are supported in the new Adyen Components Recurly.js support. Excluded payment methods are: All Direct Debit, Klarna Debit Risk, iDeal, and Boleto. |
 | Supported card brands           | Visa, MasterCard, American Express, Discover, JCB, Diners Club, China Union Pay, ELO (BRL only), Hipercard (BRL only), Cartes Bancaires, Dankort, Bancontact                                                                                                                                                                  |
@@ -47,32 +47,9 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 | Regions                         | Global                                                                                                                                                                                                                                                                                                                        |
 | Currencies                      | <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available.</a> with special behavior for **ISK** and **CLP**.                                                                                                                                                                         |
 
-## How asynchronous payments work
+<br />
 
-* Upon a successful purchase, the subscription is marked "active", but the invoice and transaction remain "processing" until Adyen confirms payment approval.
-* Recurly sends a "processing payment" webhook to configured endpoints and a "payment processing" email to customers (if enabled).
-* Adyen's initial return token post-billing is "unverified", awaiting bank payment approval.
-* Within 48 hours, the token is "verified" after bank confirmation, enabling further transactions.
-* The status of the transaction and invoice is updated in Recurly based on Adyen's feedback. Appropriate webhooks and emails are issued to businesses and customers respectively.
-* **Dunning and Retries:** Asynchronous payments require special handling in dunning. Refer to the [PayPal eChecks section](https://docs.recurly.com/docs/paypal-payments#paypal-echecks) for detailed insights.
-
-## Asynchronous payment methods
-
-Adyen offers various asynchronous payment methods like SEPA and Boleto, which take several days for settlement. Due to this, the payment processing for such methods deviates slightly in Recurly.
-
-## For customer billing information updates
-
-For billing information changes, direct customers to Recurly's hosted pages. Recurly charges the new billing info a minimal amount. Once Adyen validates the new info (i.e., approves the purchase), Recurly automatically issues a refund.
-
-## IP address allowlist
-
-For certain scenarios, Adyen may employ additional IP addresses. These must be whitelisted in Recurly. Before transitioning to Production, contact Recurly Support for assistance.
-
-## API Integration with Recurly
-
-Typically, purchases using Recurly.js involve Recurly handling payments natively. The customer first provides their billing details. Once authorized, you create the subscription and process the charge.
-
-# Setting up payments with Adyen
+# Setting up Adyen with Recurly
 
 > 📘 Ensure Adyen Settings are set properly:
 >
@@ -407,6 +384,31 @@ These payment methods are pivotal for merchants aiming to expand in Europe and o
 * Recurly can export billing info from Adyen for SEPA subscription renewals.
 * Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings.
 * Currently, Recurly's Adyen integration doesn't support Level 3 card data.
+
+## How asynchronous payments work
+
+* Upon a successful purchase, the subscription is marked "active", but the invoice and transaction remain "processing" until Adyen confirms payment approval.
+* Recurly sends a "processing payment" webhook to configured endpoints and a "payment processing" email to customers (if enabled).
+* Adyen's initial return token post-billing is "unverified", awaiting bank payment approval.
+* Within 48 hours, the token is "verified" after bank confirmation, enabling further transactions.
+* The status of the transaction and invoice is updated in Recurly based on Adyen's feedback. Appropriate webhooks and emails are issued to businesses and customers respectively.
+* **Dunning and Retries:** Asynchronous payments require special handling in dunning. Refer to the [PayPal eChecks section](https://docs.recurly.com/docs/paypal-payments#paypal-echecks) for detailed insights.
+
+## Asynchronous payment methods
+
+Adyen offers various asynchronous payment methods like SEPA and Boleto, which take several days for settlement. Due to this, the payment processing for such methods deviates slightly in Recurly.
+
+## For customer billing information updates
+
+For billing information changes, direct customers to Recurly's hosted pages. Recurly charges the new billing info a minimal amount. Once Adyen validates the new info (i.e., approves the purchase), Recurly automatically issues a refund.
+
+## IP address allowlist
+
+For certain scenarios, Adyen may employ additional IP addresses. These must be whitelisted in Recurly. Before transitioning to Production, contact Recurly Support for assistance.
+
+## API Integration with Recurly
+
+Typically, purchases using Recurly.js involve Recurly handling payments natively. The customer first provides their billing details. Once authorized, you create the subscription and process the charge.
 
 # Troubleshooting
 
