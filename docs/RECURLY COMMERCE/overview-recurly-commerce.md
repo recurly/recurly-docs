@@ -5,7 +5,7 @@ excerpt: >-
   subscription storefronts and customer portals with end-to-end tools, guides,
   and integrated admin workflows.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
