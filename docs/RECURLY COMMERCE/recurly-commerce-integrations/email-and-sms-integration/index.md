@@ -4,7 +4,7 @@ excerpt: >-
   Easily connect your favorite email and SMS platforms to automate subscriber
   communications directly from Recurly Commerce.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
