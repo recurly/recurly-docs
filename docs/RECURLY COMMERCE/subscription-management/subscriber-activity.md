@@ -4,7 +4,7 @@ excerpt: >-
   Track every purchase and update on a subscription contract with Recurly
   Commerce’s order history and activity log.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
