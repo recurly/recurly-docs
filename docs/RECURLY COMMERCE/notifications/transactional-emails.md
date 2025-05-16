@@ -4,7 +4,7 @@ excerpt: >-
   Keep subscribers informed and engaged at every subscription milestone with
   fully customizable transactional emails—no extra cost, no coding required.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
