@@ -4,7 +4,7 @@ excerpt: >-
   Visualize your subscriber count over time and compare it to a prior period to
   see how churn is evolving.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
