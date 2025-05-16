@@ -4,7 +4,7 @@ excerpt: >-
   Export your subscription contracts and historical events as CSVs to power
   custom analyses and reporting.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
