@@ -4,7 +4,7 @@ excerpt: >-
   Comprehensive reference for the Recurly Commerce storefront widget API,
   including endpoints, full JSON payload examples, and configuration details.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
