@@ -4,7 +4,7 @@ excerpt: >-
   Integrate Recurly Commerce with Gorgias to surface subscriber details and
   manage subscriptions right from your support tickets.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
