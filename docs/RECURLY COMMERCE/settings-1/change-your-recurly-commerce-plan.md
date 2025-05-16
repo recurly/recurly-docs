@@ -4,7 +4,7 @@ excerpt: >-
   Upgrade or downgrade your Recurly Commerce subscription plan directly from the
   app to unlock new features, support tiers, and flexible billing options.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
