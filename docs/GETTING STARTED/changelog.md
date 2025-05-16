@@ -176,6 +176,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        May 20
+      </td>
+
+      <td>
+        **Checkout**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing a new Checkout configuration option that, if enabled, will display a recurring charge consent message and checkbox in Checkout *if* there are recurring billable items in the cart.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 19
       </td>
 
