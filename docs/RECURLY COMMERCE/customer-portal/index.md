@@ -5,7 +5,7 @@ excerpt: >-
   portal—letting them skip, swap, pause, gift, and manage billing details
   without support tickets.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
