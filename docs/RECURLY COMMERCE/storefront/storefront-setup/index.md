@@ -4,7 +4,7 @@ excerpt: >-
   How to set up and customize the Recurly Commerce subscription purchase widget
   on your Shopify storefront to deliver a seamless, branded experience.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
