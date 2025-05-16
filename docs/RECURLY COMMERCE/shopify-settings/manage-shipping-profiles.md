@@ -4,7 +4,7 @@ excerpt: >-
   Learn how Recurly Commerce uses your Shopify shipping profiles to configure
   free shipping for subscriptions without duplicating rules.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
