@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to refund subscription renewals processed via Recurly Commerce using
   Shopify’s native refund tools—no extra setup required.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
