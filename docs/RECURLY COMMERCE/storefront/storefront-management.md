@@ -4,7 +4,7 @@ excerpt: >-
   How to update and style the Recurly Commerce storefront widget to match your
   brand—no code required.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
