@@ -4,7 +4,7 @@ excerpt: >-
   Build recurring revenue, boost loyalty, and turn customers into advocates with
   Recurly Commerce’s end-to-end gifting feature for subscriptions.  #
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
