@@ -13,10 +13,6 @@ metadata:
 
 ![Recurly Commerce screenshot](https://files.readme.io/85d875d5343f78b8af7d27d954e0aa81a17b1f76bd49c0be3d0b9bddb296abd2-image.png)
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
-
 # Definition
 
 Recurly Commerce is an end-to-end subscription commerce platform that combines guided setup, flexible storefront and portal tools, and streamlined admin workflows—so you can launch, manage, and grow your subscriptions all in one place.
