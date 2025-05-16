@@ -4,7 +4,7 @@ excerpt: >-
   Discover powerful enhancements—automations, gifting, and bulk updates—that
   help you scale and personalize your subscription business.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
