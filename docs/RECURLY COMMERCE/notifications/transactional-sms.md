@@ -4,7 +4,7 @@ excerpt: >-
   Keep subscribers in the loop on the go with concise, event-driven SMS
   alerts—no extra cost, no spam.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
