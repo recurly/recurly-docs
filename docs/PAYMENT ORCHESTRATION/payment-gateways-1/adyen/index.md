@@ -369,8 +369,13 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 <Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/99e16dc-image.png" />
 
-3. **Add** these 4 webhook types: Direct-Debit Pending, Generic Pending, Report details, and Standard webhook.
-   1. Ensure you have enabled the `RECURRING_CONTRACT` event code. This is required for tokenized payment methods to function properly.
+3. **Add** these 4 webhook types: Direct-Debit Pending, Generic Pending, Recurring Token Lifecycle events, and Standard webhook.
+   1. Double-check that you have enabled the following event codes:
+      1. `RECURRING_CONTRACT`- Required for tokenized payment methods to function properly.
+      2. `REPORT_AVAILABLE`- Required for notifying when Adyen reports for various details are available such as settlement reports for Revenue Recognition.
+      3. `EXPIRE` - Required for proper Auth and Capture behavior. Ensures proper report syncing from Adyen when pending authorizations expire prior to capture.
+      4. `CAPTURE_FAILED` - Required to ensure proper transaction handling in general, especially when Auth and Capture are in use.
+      5. `recurring.token.updated` - Required when using Adyen gateway tokens to ensure Recurly receives timely meta-data updates on Adyen tokens when an update occurs outside of Recurly.
    2. Adyen Documentation lists two places -- please ensure both are handled, or the webhook may not be sent.
       1. [Standard Webhooks Page](https://docs.adyen.com/development-resources/webhooks/webhook-types/#standard-webhook-page)
       2. [Webhooks Settings Page](https://docs.adyen.com/development-resources/webhooks/webhook-types/#webhooks-settings-page)
