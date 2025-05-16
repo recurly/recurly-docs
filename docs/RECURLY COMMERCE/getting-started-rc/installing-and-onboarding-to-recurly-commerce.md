@@ -38,8 +38,8 @@ The Installing & Onboarding workflow guides you through adding the Recurly Comme
   </Card>
 
   <Card title="Choose a Plan" icon="fa-list" target="_blank" href="https://www.tryprive.com/pricing">
-    1. Open the Recurly Commerce app and click **Start Trial**
-    2. Select one of three plans (upgrade anytime)
+    1. Open the Recurly Commerce app.
+    2. Select one of two plans (upgrade anytime)
     3. Complete checkout via Shopify<br />
        [Compare plans](https://www.tryprive.com/pricing)
   </Card>
