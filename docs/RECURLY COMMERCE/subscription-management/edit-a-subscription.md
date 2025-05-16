@@ -5,7 +5,7 @@ excerpt: >-
   subscriber’s contract—from status and contact info to billing cadence,
   pricing, add-ons, shipping, and cancellation—while preserving continuity.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
