@@ -5,7 +5,7 @@ excerpt: >-
   subscription business to Recurly Commerce, including eligibility, process
   overview, and step-by-step instructions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
