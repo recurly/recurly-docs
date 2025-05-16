@@ -40,14 +40,14 @@ Take control of access management within your organization using User-Based Role
 
 ## Creating a new role
 
-1. Navigate to the "Admin" section in the Recurly App.
-2. Click on the "Roles" page.
+1. **Navigate** to the "Admin" section in the Recurly App.
+2. **Click** on "Roles".
 
-<Image align="center" width="25% " src="https://files.readme.io/c775f3e-image.png" />
+![](https://files.readme.io/540ff370d0d48eb9193c1a5e2918625c2b34ea42312fa604cac05ed19d906404-image.png)
 
-3. On the top-right corner of the screen, find and click the "Create Role" button.
+3. On the top-right corner of the screen, **find** and **click** the "Create Role" button.
 
-![](https://files.readme.io/a8faa98-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/62a5f2d519f87321ed20db7a4775c7e2fe03641ef29179bad5b03a58d752ebd5-image.png" />
 
 4. Give the new role a descriptive name that reflects its purpose.
 5. Provide a brief description to help others understand the role's function and scope.
@@ -109,10 +109,10 @@ If your site was live in production prior to migrating to the roles-based user m
 
 There are two options for providing access to the Customers section of the application: Read Only and Can Edit.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/ea6bf4e-image.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/ea6bf4e-image.png" />
 
 * **Read Only:** Users with this access level can view accounts, invoices, transactions, and subscriptions. They are also able to add account notes and view customer information. However, they do not have access to the links for hosted account management or the ability to update billing information.
-* **Can Edit:**Users with this access level have the ability to view and edit accounts, subscriptions, invoices, and transactions. In addition to the permissions of the Read Only level, they can make changes to customer records. 
+* \*\*Can Edit:\*\*Users with this access level have the ability to view and edit accounts, subscriptions, invoices, and transactions. In addition to the permissions of the Read Only level, they can make changes to customer records.
 
 However, they are not able to edit, delete, or add to plans, transactions, coupons, items, or gift card redemptions from the Customers section, unless they also have edit access to the Configuration section of Recurly.
 
@@ -129,7 +129,7 @@ Please note that the Revenue Recognition section and corresponding permission se
 
 ### Configuration
 
-Users with Configuration access can view and edit Site Settings, Business Entities, Email Templates, Payment Gateways, Custom Fields, Checkout, Hosted Payment Pages, Dunning Management, Measured Units, Tax Settings, Currencies, Fraud Management, Shipping Information, Network Tokens, Apple Pay, Entitlements, Payment Settings, Gift Card Settings, and Analytics Settings. They also have the ability to create, edit, and view Plans, Items, and Coupons.
+Users with Configuration access can view and edit Site Settings, Business Entities, Email Templates, Payment Gateways, Custom Fields, Hosted Payment Pages, Dunning Management, Measured Units, Tax Settings, Currencies, Fraud Management, Shipping Information, Network Tokens, Apple Pay, Entitlements, Payment Settings, Gift Card Settings, and Analytics Settings. They also have the ability to create, edit, and view Plans, Items, and Coupons.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/56e2aa4-image.png" />
 
