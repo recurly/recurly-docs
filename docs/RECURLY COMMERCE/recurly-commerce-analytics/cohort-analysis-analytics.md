@@ -4,7 +4,7 @@ excerpt: >-
   Visualize subscriber retention over time by cohort to understand how well
   you’re keeping customers.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
