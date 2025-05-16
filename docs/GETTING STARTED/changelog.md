@@ -140,6 +140,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        May 20
+      </td>
+
+      <td>
+        **V3 API Invoice Preview**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Update v3 api invoice response to include subtotal after discount.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 19
       </td>
 
