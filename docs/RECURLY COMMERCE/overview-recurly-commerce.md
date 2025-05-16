@@ -17,10 +17,6 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Additional cost
-
-This feature or setting requires an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> for more pricing details.
-
 # Definition
 
 Recurly Commerce is an end-to-end subscription commerce platform that combines guided setup, flexible storefront and portal tools, and streamlined admin workflows—so you can launch, manage, and grow your subscriptions all in one place.
