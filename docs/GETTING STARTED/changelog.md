@@ -72,6 +72,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
+        **Adyen Gateway | 3DS**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of 'origin' field to avoid errors. Origin is sent when a referring URL for **3DS** (such as with R.js and Checkout) is present.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 20
+      </td>
+
+      <td>
         **V3 Client Libraries**
       </td>
 
