@@ -50,6 +50,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        May 27
+      </td>
+
+      <td>
+        **PayPal Complete**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated support for webhooks to disable deleted tokens when a consumer cancels their agreement via PayPal directly. When Recurly wallet is in use, if the token is the primary billing info, deactivation is not possible.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 20
       </td>
 
