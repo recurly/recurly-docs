@@ -68,6 +68,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        May 27
+      </td>
+
+      <td>
+        **Amazon Pay V2**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of Charge Permission IDs to query status prior to transaction processing. This will gather the chargeable 'status' of a buyer's Amazon payment methods and reduce declines. We will also be updating transaction params to include the Charge Permission ID status in the event of a decline, and closing Charge Permission IDs when subscriptions expire.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 20
       </td>
 
