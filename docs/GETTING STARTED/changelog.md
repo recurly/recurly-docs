@@ -86,6 +86,42 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        May 27
+      </td>
+
+      <td>
+        **V3 API Subscription Change**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Considered a *breaking change* -- updated the validation messaging so that it matches the public API documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 27
+      </td>
+
+      <td>
+        **Plan Configuration UI Updates**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Replacing the toggles for Free Trial and Setup Fee with checkboxes.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         May 20
       </td>
 
