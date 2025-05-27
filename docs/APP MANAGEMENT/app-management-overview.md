@@ -18,7 +18,7 @@ next:
 
 Discover how Recurly seamlessly integrates subscription metrics from both Apple App Store and Google Play. Experience the power of automation and gain a unified view of your data. Do not miss out on unlocking the full potential of our App Management product.
 
-> 👍
+> 👍 Sell and manage Apple subscriptions through Recurly
 >
 > You can also sell and manage Apple App Store subscriptions directly through Recurly. Learn more here.
 
