@@ -23,8 +23,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ### Prerequisites
 
-* Vertex account
-* Elite Recurly plan
+* Vertex account (Vertex O Series or Vertex Cloud)
 * Credit Invoices feature enabled
 
 ### Limitations
@@ -45,7 +44,7 @@ To successfully integrate Vertex into your Recurly setup, follow this comprehens
 4. Confirm the current customer addresses you will tax are accurate and include a country.
 5. Configure your plans and charges with the correct taxability and tax codes.
 6. Enter your Vertex credentials on your production site before enabling the tax jurisdictions in Vertex.
-7. If your site has Multiple Business Entities configured, ensure that entities are mapped to your Vertex Company and (if necessary) Division(s) appropriately for accurate invoice data mapping and entity-specific tax filing. 
+7. If your site has Multiple Business Entities configured, ensure that entities are mapped to your Vertex Company and (if necessary) Division(s) appropriately for accurate invoice data mapping and entity-specific tax filing.
 8. Update any purchase or subscription change previews to use Recurly's APIs for the tax preview portion, not Recurly.js.
 9. Mark any current customers as tax-exempt in their Account Info, if applicable.
 10. Test your integration on a sandbox site.
@@ -64,7 +63,7 @@ We recommend connecting your Vertex account to Recurly before you enable your ta
 
 If you meet the prerequisites and have a Vertex O Series, 9 Series, or Vertex Cloud account, follow these steps to enable Vertex for your Recurly site:
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/e2e2fba-Screenshot_2024-06-05_at_5.32.57_PM.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/e2e2fba-Screenshot_2024-06-05_at_5.32.57_PM.png" />
 
 1. **Contact** Recurly Support to request the Vertex option for your site.
 2. After Recurly Support has enabled Vertex for your site, **navigate** to the Taxes section in the left-hand panel.
@@ -73,8 +72,8 @@ If you meet the prerequisites and have a Vertex O Series, 9 Series, or Vertex Cl
    1. **Endpoint**: Enter the URL where your WSDL is hosted, up to the ".com" part. You must provide a secure HTTPS URL. For example, if your URL is [https://vertex-prod.yourcompany.com/vertex-ws/services/CalculateTax90?wsdl](https://vertex-prod.yourcompany.com/vertex-ws/services/CalculateTax90?wsdl), then enter [https://vertex-prod.yourcompany.com.](https://vertex-prod.yourcompany.com.) Recurly will append the /vertex-ws/services/CalculateTax90?wsdl to the end of your URL and replace 9.0 with 8.0 or 7.0 depending on the version you select. Check our IP Allowlist documentation for IP addresses to allow through.
    2. **Trusted Id**: Every Vertex instance has a trusted ID, which is your API password. Recurly doesn't use a username and password to ensure your tax collection isn't shut off due to a user lockout or accidental password reset or deletion. If you're unsure about your Trusted Id, contact Vertex.
    3. **Company**: This represents the taxpayer in your Vertex instance with jurisdiction rules that apply to your invoices. If you have a division, this is the parent taxpayer.
-   4. **Division**: This is the child taxpayer in your Vertex instance. If you have a Division(s), it's likely that this taxpayer has jurisdiction rules that apply to your invoices. You can have multiple Divisions configured on your Vertex site that map to Recurly Business Entities, however, the Divisions must roll up to the same singular Company code within Vertex. If you do *not* add Division codes to Business Entities within your Recurly tax configuration, all invoices assigned to unmapped entities will fall back to and be filed under the main Vertex Company code configured in your tax integration. 
-   5. **Version**: The Recurly Vertex integration currently supports O Series or Cloud 7.0, 8.0, or 9.0. Select your version. 
+   4. **Division**: This is the child taxpayer in your Vertex instance. If you have a Division(s), it's likely that this taxpayer has jurisdiction rules that apply to your invoices. You can have multiple Divisions configured on your Vertex site that map to Recurly Business Entities, however, the Divisions must roll up to the same singular Company code within Vertex. If you do *not* add Division codes to Business Entities within your Recurly tax configuration, all invoices assigned to unmapped entities will fall back to and be filed under the main Vertex Company code configured in your tax integration.
+   5. **Version**: The Recurly Vertex integration currently supports O Series or Cloud 7.0, 8.0, or 9.0. Select your version.
 5. **Click** Save Changes.
 6. **Test** the connection by clicking the Test Configuration button to ensure successful integration.
 
@@ -88,9 +87,9 @@ In the Recurly Admin Console, under Configuration → Business Entities, you can
 
 ## Business Entity division mapping
 
-In the Recurly Admin Console, configure invoice data mappings between your Recurly Business Entities and your Vertex Company and/or Divisions. All Divisions in Vertex must be configured under the same Company for a successful invoice mapping. This will help ensure that an invoice with a given Business Entity applied will be sent to the correct Vertex Company or Company's Division for tax filing purposes within Vertex. 
+In the Recurly Admin Console, configure invoice data mappings between your Recurly Business Entities and your Vertex Company and/or Divisions. All Divisions in Vertex must be configured under the same Company for a successful invoice mapping. This will help ensure that an invoice with a given Business Entity applied will be sent to the correct Vertex Company or Company's Division for tax filing purposes within Vertex.
 
-Recurly only support mappings of Divisions within 1 single Vertex Company. However, you can add as many Divisions within that single Company as you need within Vertex to reflect each unique Business Entity you have configured within Recurly. Always double check that you enter Company and Division codes into Recurly exactly as they present within Vertex, as this field is case-sensitive in Recurly App. If you do not map the Company and Division codes exactly as they are entered into Vertex in the corresponding Company/Division fields in Recurly, the mapping will be unsuccessful. 
+Recurly only support mappings of Divisions within 1 single Vertex Company. However, you can add as many Divisions within that single Company as you need within Vertex to reflect each unique Business Entity you have configured within Recurly. Always double check that you enter Company and Division codes into Recurly exactly as they present within Vertex, as this field is case-sensitive in Recurly App. If you do not map the Company and Division codes exactly as they are entered into Vertex in the corresponding Company/Division fields in Recurly, the mapping will be unsuccessful.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/ce25fd9-Screenshot_2024-06-05_at_5.32.57_PM.png" />
 
@@ -120,15 +119,15 @@ If you are not using Recurly Taxes powered by Avalara and have the Vertex featur
 
 ### Vertex Transaction Type field
 
-The Vertex Transaction Type field is a field only available for merchants with Vertex integrations, and requires a Recurly Support ticket to enable. 
+The Vertex Transaction Type field is a field only available for merchants with Vertex integrations, and requires a Recurly Support ticket to enable.
 
-The Vertex Transaction Type field is currently only configurable on the Plan object, via UI and both API versions. This field is essentially a secondary tax code to help further classify the type of transaction you are taxing via Vertex. Merchants can use this to classify if their products/services should be taxed as a standard sale, or as a rental, or lease. Distinguishing transaction types can lead to transactions in certain subscriber locations being tax-exempt or otherwise, which ensures your subscribers pay the most accurate tax amount on your goods. By default, each plan is assigned the standard "Sale" Vertex Transaction Type. All one-time-charges (non plan-based subscription invoices) are set to use the "Sale" type, and cannot be overridden at this time. 
+The Vertex Transaction Type field is currently only configurable on the Plan object, via UI and both API versions. This field is essentially a secondary tax code to help further classify the type of transaction you are taxing via Vertex. Merchants can use this to classify if their products/services should be taxed as a standard sale, or as a rental, or lease. Distinguishing transaction types can lead to transactions in certain subscriber locations being tax-exempt or otherwise, which ensures your subscribers pay the most accurate tax amount on your goods. By default, each plan is assigned the standard "Sale" Vertex Transaction Type. All one-time-charges (non plan-based subscription invoices) are set to use the "Sale" type, and cannot be overridden at this time.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/0b5c45719f70810951d4589f8b845ec48f58f28096dde8d608946d33c284cb8b-Screenshot_2024-12-02_at_11.27.57_AM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0b5c45719f70810951d4589f8b845ec48f58f28096dde8d608946d33c284cb8b-Screenshot_2024-12-02_at_11.27.57_AM.png" />
 
-Open the dropdown to select the desired transaction type you would like to apply to the given plan. The Vertex-provided options are **Sale, Lease, and Rental**. Once you select your Vertex Transaction Type of choice, make sure to **Save** your changes. After saving, all renewals and forward-moving invoices and subscriptions created under that plan will have the corresponding transaction type applied when calculating tax. 
+Open the dropdown to select the desired transaction type you would like to apply to the given plan. The Vertex-provided options are **Sale, Lease, and Rental**. Once you select your Vertex Transaction Type of choice, make sure to **Save** your changes. After saving, all renewals and forward-moving invoices and subscriptions created under that plan will have the corresponding transaction type applied when calculating tax.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/5c84729324ad81e4d56a012bd153c517ef6c0c1118632fd5545f9628ab66a808-Screenshot_2024-12-02_at_11.30.11_AM.png" />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/5c84729324ad81e4d56a012bd153c517ef6c0c1118632fd5545f9628ab66a808-Screenshot_2024-12-02_at_11.30.11_AM.png" />
 
 If you are transitioning from your own Avalara account to Vertex, you need to configure your current tax codes as product classes in Vertex, mapping them to the appropriate taxability rules. Only after configuring your Avalara codes in Vertex should you add your Vertex credentials in Recurly. This ensures proper refund support for invoices processed through Avalara.
 
@@ -174,16 +173,16 @@ During integration setup, you can specify a FlexibleField ID and the value you'd
 
 # Field mapping
 
-This section details the fields that Recurly sends to Vertex with each invoice that is created. This core set of data fields supports basic tax configurations. If you require additional fields as part of your tax setup, contact your Vertex rep and Recurly <a href="https://recurly.com/contact-form/" target="_blank">Sales</a> or <a href="https://support.recurly.com/" target="_blank">Support</a> to see if that request can be supported. 
+This section details the fields that Recurly sends to Vertex with each invoice that is created. This core set of data fields supports basic tax configurations. If you require additional fields as part of your tax setup, contact your Vertex rep and Recurly <a href="https://recurly.com/contact-form/" target="_blank">Sales</a> or <a href="https://support.recurly.com/" target="_blank">Support</a> to see if that request can be supported.
 
 <Table align={["left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Recurly Attribute
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Vertex Attribute
       </th>
     </tr>
@@ -191,154 +190,154 @@ This section details the fields that Recurly sends to Vertex with each invoice t
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Invoice number
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/documentNumber
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Invoice posted date
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/documentDate
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        *N/A* 
+      <td>
+        *N/A*
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/TransactionType (always sends "SALE")
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Invoice currency
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/isoCurrencyCodeAlpha (defaults to "USD")
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Vertex credentials/company
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/Seller/Company
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Vertex credentials/division(s)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/Seller/Division(s)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Business Entity address
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Request/Seller/PhysicalOrigin\
+      <td>
+        Request/Seller/PhysicalOrigin
         Request/Seller/AdministrativeOrigin
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Customer account code
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Request/Customer/CustomerCode\
-        *Must be 40 characters or less.* 
+      <td>
+        Request/Customer/CustomerCode
+        *Must be 40 characters or less.*
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Invoice taxable address (e.g. - Bill To or Ship To)
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Request/Customer/Destination\
+      <td>
+        Request/Customer/Destination
         Request/LineItem/Customer/Destination (for credit line items)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         VAT number for invoice taxable address
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/LineItem/Customer/TaxRegistration
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Line item product code (e.g. - plan code, add-on code)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/LineItem/Product
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Line item tax code
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/LineItem/productClass
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Line item subtotal after discounts
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/LineItem/ExtendedPrice
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Line item's original invoice number (for credit line items / refunds)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/LineItem/FlexibleFields
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         Line items' original invoice posted date (for credit line items / refunds)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Request/LineItem/taxDate
       </td>
     </tr>
