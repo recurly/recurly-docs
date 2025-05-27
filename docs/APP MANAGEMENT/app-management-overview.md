@@ -20,7 +20,7 @@ Discover how Recurly seamlessly integrates subscription metrics from both Apple 
 
 > 👍 Sell and manage Apple subscriptions through Recurly
 >
-> You can also sell and manage Apple App Store subscriptions directly through Recurly. Learn more here.
+> You can also sell and manage Apple App Store subscriptions directly through Recurly. [Learn more here](https://docs.recurly.com/docs/sell-and-manage-apple-subscriptions-through-recurly#/).
 
 <Embed url="https://fast.wistia.net/embed/iframe/k1vgnmix5h?videoFoam=true" href="https://fast.wistia.net/embed/iframe/k1vgnmix5h?videoFoam=true" typeOfEmbed="iframe" height="450px" width="800px" iframe="true" />
 
