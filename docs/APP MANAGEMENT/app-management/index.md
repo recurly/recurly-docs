@@ -18,6 +18,10 @@ next:
 
 App Management gives you a complete picture of your subscription business by combining analytics across App Stores with web through a simple, automated data sync. In addition, App Management streamlines your processes for entitlement checking and centralizes all of your subscription lifecycle notifications.
 
+> 👍 Sell and manage Apple subscriptions through Recurly
+>
+> You can also sell and manage Apple App Store subscriptions directly through Recurly. [Learn more here](https://docs.recurly.com/docs/sell-and-manage-apple-subscriptions-through-recurly#/).
+
 # Key Benefits
 
 * Grow subscription revenue by uncovering new subscription acquisition and retention insights and opportunities through cross-platform analytics
@@ -33,7 +37,7 @@ For a deeper understanding of how App Management works, and to understand some o
 
 Note: Recurly does **not** require customers to implement a SDK within their mobile app.
 
-## 1) Uniquely identifying your customers
+## 1. Uniquely identifying your customers
 
 In order for Recurly to properly associate a subscription related event from Apple or Google, Recurly needs to have a unique ID established for each customer. For mobile app subscriptions, Recurly will look for that unique ID in the notification from Apple or Google. It is important that those unique IDs are incorporated into your subscription purchasing workflows for your mobile apps. The below list highlights requirements for this unique ID.
 
@@ -60,17 +64,17 @@ To help you decipher that unique ID when in Recurly and view information such as
 
 As seen above, Recurly is flexible and has several API endpoints to support your workflow.
 
-## 2) Receiving real-time notifications
+## 2. Receiving real-time notifications
 
 After completing the [Step-by-Step process](https://docs.recurly.com/docs/step-by-step-process) to connect and configure App Management, Recurly will begin to receive real-time notifications specific to subscription related activity in your mobile apps. This allows Recurly to be aware of important events, such as a new customer purchased a subscription, or if a subscription failed to renew.
 
 Depending on the notification, Recurly will use the provided API key to pull additional information to help provide a complete picture into the specific subscription related event.
 
-## 3) Updating Recurly with subscription lifecycle activity
+## 3. Updating Recurly with subscription lifecycle activity
 
 For each event, Recurly will map the subscription to the corresponding existing customer account. For example, if a paid renewal event is received, Recurly will note that renewal activity for the correct customer account, and associate a paid invoice showing the amount.
 
-## 4) Notifying you for any subsequent actions
+## 4. Notifying you for any subsequent actions
 
 Immediately after Recurly has processed the notification, Recurly will trigger the respective webhook to your endpoint. This allows you to take any subsequent action (e.g., e-mail your customer) based on that webhook notification.
 
