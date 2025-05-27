@@ -18,7 +18,11 @@ next:
 
 Discover how Recurly seamlessly integrates subscription metrics from both Apple App Store and Google Play. Experience the power of automation and gain a unified view of your data. Do not miss out on unlocking the full potential of our App Management product.
 
-<Embed url="https://fast.wistia.net/embed/iframe/k1vgnmix5h?videoFoam=true" title="iframe" provider="fast.wistia.net" href="https://fast.wistia.net/embed/iframe/k1vgnmix5h?videoFoam=true" typeOfEmbed="iframe" height="450px" width="800px" iframe="true" />
+> 👍
+>
+> You can also sell and manage Apple App Store subscriptions directly through Recurly. Learn more here.
+
+<Embed url="https://fast.wistia.net/embed/iframe/k1vgnmix5h?videoFoam=true" href="https://fast.wistia.net/embed/iframe/k1vgnmix5h?videoFoam=true" typeOfEmbed="iframe" height="450px" width="800px" iframe="true" />
 
 ### Required plan
 
