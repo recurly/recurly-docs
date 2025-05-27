@@ -4,7 +4,7 @@ excerpt: >-
   Enable web-based payment flows for digital goods and subscriptions outside the
   App Store using Recurly’s secure, customizable checkout tools.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
