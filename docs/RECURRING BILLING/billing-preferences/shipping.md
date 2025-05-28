@@ -15,9 +15,9 @@ next:
 ---
 # Feature Overview
 
-Shipping in one-time [eCommerce](www.websiteadvisor.com/ecommerce/bests/) is simple: a customer places an order and the seller passes the shipping provider's fee along to the customer or charges a flat fee.
+Shipping in one-time [eCommerce](https://www.websiteadvisor.com/ecommerce/bests/) is simple: a customer places an order and the seller passes the shipping provider's fee along to the customer or charges a flat fee.
 
-Shipping is more complex in a subscription commerce context. Subscriptions are much more long-lived than standalone orders. Recurly makes decisions around shipping costs easy for merchants. 
+Shipping is more complex in a subscription commerce context. Subscriptions are much more long-lived than standalone orders. Recurly makes decisions around shipping costs easy for merchants.
 
 The concept is simple: you have the ability to record the cost of shipping and the method used to ship the item(s). You can record this method and cost on a subscription, or on a one-time purchase.
 
@@ -35,9 +35,7 @@ The concept is simple: you have the ability to record the cost of shipping and t
 
 To begin using Shipping Fees, navigate to Configuration > Shipping.
 
-<Image title="Blank Slate.png" alt={1200} align="center" src="https://files.readme.io/cbd41fa-Blank_Slate.png">
-  This is the screen you will see when configuring shipping for the first time.
-</Image>
+<Image align="center" alt={1200} border={false} caption="This is the screen you will see when configuring shipping for the first time." title="Blank Slate.png" src="https://files.readme.io/cbd41fa-Blank_Slate.png" />
 
 Once you enable shipping on your site, Recurly will create a default shipping method for you. If you do not display the shipping method (e.g. USPS Priority Mail) you use to your customers, or use only one shipping method, there is no further configuration needed.
 
@@ -47,9 +45,7 @@ If you do use multiple shipping methods or would like to show your customers whi
 
 Shipping Methods can be useful to display to your customers which method you use to ship their item(s), or differentiate between methods you use in different geographies. To set up a shipping method, navigate to Configuration > Shipping. You can add as many Shipping Methods as your business requires.
 
-<Image title="Create.png" alt={1200} align="center" src="https://files.readme.io/ecd628d-Create.png">
-  You can use Shipping Methods to show your customers which method is being used to ship their items.
-</Image>
+<Image align="center" alt={1200} border={false} caption="You can use Shipping Methods to show your customers which method is being used to ship their items." title="Create.png" src="https://files.readme.io/ecd628d-Create.png" />
 
 ## Changing Shipping Providers
 
@@ -57,7 +53,7 @@ If you are changing your shipping provider, we recommend you change the name on 
 
 ## Removing a Shipping Method
 
-Exercise caution when removing a shipping method. If there are active subscriptions with the shipping method in place, these subscriptions will renew without a shipping method. 
+Exercise caution when removing a shipping method. If there are active subscriptions with the shipping method in place, these subscriptions will renew without a shipping method.
 
 We recommend you to not use this unless you have made a Shipping Method by mistake. If you have changed your shipping provider, we recommend either making a new Shipping Method or changing the name.
 
@@ -172,9 +168,9 @@ You can also preview a subscription with shipping fees using by calling the Subs
 
 # Changing the Shipping Fee or Method on a Subscription
 
-If you change the amount of the Shipping Fee on a subscription immediately versus at renewal, your customer will be issued a full refund for the original shipping amount plus the corresponding tax amount, and will receive a charge invoice for the newly updated shipping amount plus its corresponding tax amount. This can be done via UI or API. 
+If you change the amount of the Shipping Fee on a subscription immediately versus at renewal, your customer will be issued a full refund for the original shipping amount plus the corresponding tax amount, and will receive a charge invoice for the newly updated shipping amount plus its corresponding tax amount. This can be done via UI or API.
 
-We recommend making all changes to the Shipping Fee at the next renewal to avoid numerous separate charge and credit invoices. 
+We recommend making all changes to the Shipping Fee at the next renewal to avoid numerous separate charge and credit invoices.
 
 # Adding Shipping to a purchase (one-time charge or adjustment)
 
@@ -217,7 +213,7 @@ Shipping will appear on invoices as a line item below any other subscription or 
 
 Recurly works with industry-best sales tax providers to ensure that our merchants are in compliance with sales tax regulations. Shipping is taxable in some jurisdictions, and not in others.
 
-If you are using multiple shipping addresses, the VAT number associated to the billing address will be used for invoices. If you need to use reverse VAT charges, we recommend only using one shipping address per invoice. 
+If you are using multiple shipping addresses, the VAT number associated to the billing address will be used for invoices. If you need to use reverse VAT charges, we recommend only using one shipping address per invoice.
 
 For merchants who use Recurly's in-the-box Avalara product, we give options on the Shipping Method to specify the type of tax which should be charged on the fees for that method. The following tax codes are available for out-of-the-box merchants:
 
@@ -241,7 +237,7 @@ In most cases, if you use a common carrier, they will handle the collection and 
 
 ## Refunding Shipping Fees
 
-When refunding the shipping fee from an invoice, you have two options: either refund the entire shipping amount, or do not refund the shipping fee. There is currently no ability to refund a partial shipping fee. Refunds for a shipping fee will also issue a refund for the tax amount related to the shipping fee line item. 
+When refunding the shipping fee from an invoice, you have two options: either refund the entire shipping amount, or do not refund the shipping fee. There is currently no ability to refund a partial shipping fee. Refunds for a shipping fee will also issue a refund for the tax amount related to the shipping fee line item.
 
 To refund shipping in the Admin UI, navigate to the invoice you would like to refund and click Invoice Actions > Refund Invoice.
 
