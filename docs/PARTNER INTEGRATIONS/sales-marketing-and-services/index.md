@@ -47,7 +47,7 @@ The Sales, Marketing & Services integrations refer to the strategic connection b
 
 **Zendesk Integration**
 
-Integrate with [Zendesk ](https://docs.recurly.com/docs/recurly-for-zendesk3)to offer top-notch customer service. Manage tickets, track customer interactions, and ensure timely responses, all from our unified platform.
+Integrate with [Zendesk ](https://docs.recurly.com/docs/recurly-for-zendesk)to offer top-notch customer service. Manage tickets, track customer interactions, and ensure timely responses, all from our unified platform.
 
 **Salesforce Integration**
 
