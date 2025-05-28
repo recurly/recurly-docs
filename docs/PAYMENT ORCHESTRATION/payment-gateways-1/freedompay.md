@@ -314,7 +314,7 @@ Check the following:
 ### I am using a Point of Sale card terminal. How can I connect this to Recurly?
 
 Recurly does not directly support EMV or Card Present transactions. To set up a Card Present → Recurring Subscription flow, first integrate and build out your card present solution with FreedomPay. Your card present integration should result in a gateway token and your subscription Network Transaction ID (NTID).\
-Once that is complete, follow this [guide](tokens-guide) to create subscriptions in Recurly and provide the external NTID correctly. Learn more about [Card on File](https://docs.recurly.com/docs/card-on-file) in our compliance documentation.
+Once that is complete, follow this [guide](https://docs.recurly.com/docs/recurlyjs) to create subscriptions in Recurly and provide the external NTID correctly. Learn more about [Card on File](https://docs.recurly.com/docs/card-on-file) in our compliance documentation.
 
 ### How does information get from my customer to FreedomPay?
 
