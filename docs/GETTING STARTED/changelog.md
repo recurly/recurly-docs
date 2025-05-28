@@ -1290,7 +1290,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 11/16/17: New password security coming soon: starting 12/4 your Recurly password will need to be updated at least once every 90 days and your new password cannot match one of your 4 previous passwords.
 * 11/9/17: Recurly launches an [integration with the Adyen Hosted Payment Pages](https://docs.recurly.com/docs/adyen#section-adyen-hosted-payment-pages).
 * 11/2/17:  Recurly supports Amazon's CloseBillingAgreement API. This API will notify Recurly when a user closes the billing agreement within Amazon, Recurly can be notified and clear out the billing agreement, since it is no longer valid. This is a recommended best practice from Amazon. This feature is behind a feature flag. Contact support to enable this feature.
-* 11/9/17: Analytics Subscriber Retention calculation for paying subscriber cohorts has been modified. See more [HERE ](https://docs.recurly.com/docs/subscriber-retention-report)
+* 11/9/17: Analytics Subscriber Retention calculation for paying subscriber cohorts has been modified.
 * 11/16/17: NEW Analytics Report released.  Understand how effective your dunning settings are at recovering revenue and subscriptions with the new Dunning Effectiveness Report. [Learn More](https://docs.recurly.com/docs/dunning-effectiveness-report)
 
 ### October
@@ -1311,7 +1311,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### July
 
-* 7/27/17: Introduced a new Analytics report: [Trial Performance](https://docs.recurly.com/docs/trial-performance-report). It is available to sites on our Enterprise and Professional plans. Enhancements made to [Analytics Billings report](https://docs.recurly.com/docs/billings-report)  to separate out new vs. renewing customer billings and provide better multi-currency support.
+* 7/27/17: Introduced a new Analytics report: [Trial Performance](https://docs.recurly.com/docs/trial-performance-report). It is available to sites on our Enterprise and Professional plans. Enhancements made to Analytics Billings report to separate out new vs. renewing customer billings and provide better multi-currency support.
 * 7/13/17: API v1 has been deprecated. We added a date picker to the Customer index pages (Accounts, Subscriptions, Invoices, and Transactions) so that you can now narrow your search to a date or range of dates. We also added a "currencies" filter to the transactions index page. You can now [save an end-customer's PayPal shipping address to Recurly](https://docs.recurly.com/docs/paypal-payments#section-collect-paypal-shipping-address).)
 
 ### June
