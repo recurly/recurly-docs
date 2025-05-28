@@ -118,7 +118,7 @@ This section focuses on the billing specifics:
 
 #### Subscription purchase option
 
-If you're integrating with the Purchase API, you can combine one-time charges, subscriptions, and other purchase-related components into a single invoice. This makes it easier for businesses with complex sales cycles to generate one invoice for a customer. See [Purchase API](https://docs.recurly.com/docs/purchase) for further details.
+If you're integrating with the Purchase API, you can combine one-time charges, subscriptions, and other purchase-related components into a single invoice. This makes it easier for businesses with complex sales cycles to generate one invoice for a customer. See [Purchase API](https://recurly.com/developers/api/) for further details.
 
 #### Custom fields
 
