@@ -38,7 +38,7 @@ The default value for all automatic and manual invoices is "On-Receipt". This me
 
 #### Terms
 
-Terms configuration applies to all invoices. Learn more about terms for manual invoices [here](https://docs.recurly.com/docs/manual-payments#3-terms-options-for-invoices). For information about terms for automatic invoicing, click [here](https://docs.recurly.com/docs/automatic-invoicing-terms#collection-terms). 
+Terms configuration applies to all invoices. Learn more about terms for manual invoices [here](https://docs.recurly.com/docs/manual-payments#3-terms-options-for-invoices). For information about terms for automatic invoicing, click [here](https://docs.recurly.com/docs/automatic-invoicing-terms#collection-terms).
 
 #### Terms and Conditions
 
@@ -100,7 +100,7 @@ Some merchants may prefer to have their customers current on all payments before
 
 #### Require paid invoice and successful transaction on upgrades
 
-Using this setting will ensure that any time a customer upgrades, or is upgraded through the admin console, the account has no past due invoices and the upgrade invoice is paid. An upgrade is defined as any increase in subscription price from changing the base price, changing the quantity, adding add-ons, or changing to a more expensive plan. 
+Using this setting will ensure that any time a customer upgrades, or is upgraded through the admin console, the account has no past due invoices and the upgrade invoice is paid. An upgrade is defined as any increase in subscription price from changing the base price, changing the quantity, adding add-ons, or changing to a more expensive plan.
 
 When a customer attempts to upgrade, Recurly will first check to see if there are any automatic collection invoices on the account. If so, Recurly will attempt collection on those past due invoices first. If they cannot be successfully collected, the upgrade will be blocked and the customer will get the following error: "Your account is currently past due, please update your billing information before changing your subscription." If the past due invoices are collected successfully, or the account didn't have any past due invoices, Recurly will attempt to collect on the upgrade. If the upgrade transaction declines, the upgrade will be blocked. If the upgrade transaction is successful, the upgrade will go through.
 
@@ -149,7 +149,7 @@ This section provides important information to consider when integrating Recurly
 
 ### Testing Environment
 
-* Before deploying your integration in a production environment, thoroughly test it in a sandbox or staging environment. Recurly provides a [sandbox environment](https://docs.recurly.com/docs/sandbox) for this purpose.
+* Before deploying your integration in a production environment, thoroughly test it in a sandbox or staging environment. Recurly provides a [sandbox environment](https://docs.recurly.com/docs/sandbox-features-to-discover) for this purpose.
 
 By paying attention to these integration notes, you can ensure a smooth and effective implementation of Recurly's Automated Invoicing feature within your existing infrastructure and workflows.
 
