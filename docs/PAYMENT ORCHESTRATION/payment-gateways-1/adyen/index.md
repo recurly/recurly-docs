@@ -384,6 +384,13 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 These payment methods are pivotal for merchants aiming to expand in Europe and other relevant regions. With Recurly’s integration with Adyen, businesses can offer their customers a plethora of payment options, facilitating smoother transactions and increasing conversion rates. For any queries, connect with our <a href="https://www.recurly.com/contact-us/" target="_blank">support</a> or explore our expansive <a href="https://docs.recurly.com/docs/" target="_blank">knowledge base</a>.
 
+# Important notes
+
+* Adhere to regulations around customer notifications, like SEPA's renewal notice requirements.
+* Recurly can export billing info from Adyen for SEPA subscription renewals.
+* Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings.
+* Currently, Recurly's Adyen integration doesn't support Level 3 card data.
+
 ## Adyen Network Tokens
 
 If you have enabled Adyen to create Network Tokens for your merchant account (cards only), whether or not they are used on a given transaction will be visible in transaction detail and gateway param responses via API.
@@ -393,13 +400,6 @@ This indicator will appear as a boolean value in the new 'Third Party Network To
 If you do not have Adyen Network tokens enabled with the gateway, you will always see 'False' for the value. If you have Adyen Network Tokens enabled in your gateway, you will see 'True' when a network token was used on a given transaction, and 'false' when the raw PAN / Card Data was used for the transaction.
 
 For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems.
-
-# Important notes
-
-* Adhere to regulations around customer notifications, like SEPA's renewal notice requirements.
-* Recurly can export billing info from Adyen for SEPA subscription renewals.
-* Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings.
-* Currently, Recurly's Adyen integration doesn't support Level 3 card data.
 
 ## How asynchronous payments work
 
