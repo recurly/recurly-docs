@@ -119,13 +119,15 @@ To successfully process **MIT (Merchant-Initiated Transactions)** across all pay
 
 > **Note:** Enabling **Network Transaction Reference** in Adyen is required for successful MIT exemptions and payment processing across all methods—including (but not limited to) Google Pay, Apple Pay, and cards. If this setting isn’t enabled, transactions may fail even if your other Adyen settings are correct.
 
-## Special Currency Considerations
+# Special Currency Considerations
 
 While **ISK** and **CLP** are technically zero decimal currencies (meaning they cannot have partial amounts in cents), Adyen does not have plans to update their logic around these currencies. In order to support these currencies, Recurly will be taking the amount sent in the V3 API and adding the necessary '00' decimal places when sending these transactions to Adyen. It is important to not do this in your own integration to avoid overcharging your customers.
 
 **Examples:**
 
 If the Amount value is sent in as '23', Recurly will send '2300' to Adyen. Ensure your intent is to charge 23 ISK. If a Plan amount is set to 23.00, we will also send the amount to Adyen as 2300 instead of just '23'.
+
+# Payment Method Specifics
 
 ## Adyen ACH
 
