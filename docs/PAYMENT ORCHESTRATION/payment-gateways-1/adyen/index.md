@@ -129,11 +129,13 @@ If the Amount value is sent in as '23', Recurly will send '2300' to Adyen. Ensur
 
 # Payment Method Specifics
 
-## Adyen ACH
+## Adyen Direct Debit
+
+### Adyen ACH
 
 Recurly provides an integrated solution for ACH transactions through Adyen. Delve into the nuances of ACH payments by visiting our dedicated ACH Bank Payments <a href="https://docs.recurly.com/docs/check-gateway-ach" target="_blank">documentation</a>.
 
-### Adyen configuration
+#### Adyen configuration
 
 To integrate the ACH gateway, initiate the 'Adyen ACH' gateway on the "Add Payment Gateway" page.
 
@@ -144,8 +146,6 @@ Moreover, ensure these specific configurations are correctly set to effectively 
 3. Within Adyen, **adjust** settings to "immediate capture" for transactions.
 
 > **Note**: First/Last name on Checks should not be sent as dashes ( - - ) as this will cause immediate declines.
-
-## Adyen Direct Debit
 
 ### BACS
 
