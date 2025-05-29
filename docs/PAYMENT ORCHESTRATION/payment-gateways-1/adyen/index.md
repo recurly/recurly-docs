@@ -46,8 +46,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 | Card on File Supported          | Yes                                                                                                                                                                                                                                                                                                                           |
 | Regions                         | Global                                                                                                                                                                                                                                                                                                                        |
 | Currencies                      | <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available.</a> with special behavior for **ISK** and **CLP**.                                                                                                                                                                         |
-
-<br />
+| Gateway Features                | Network Token usage awareness (see notes)                                                                                                                                                                                                                                                                                     |
 
 # Setting up Adyen with Recurly
 
@@ -382,6 +381,16 @@ For Adyen to send essential details to Recurly, set up specific features based o
 4. **Ensure** you are entering the correct callback URL in the Server configuration of each webhook. Click “Apply” and then “Save changes” for each webhook you activate.
 
 These payment methods are pivotal for merchants aiming to expand in Europe and other relevant regions. With Recurly’s integration with Adyen, businesses can offer their customers a plethora of payment options, facilitating smoother transactions and increasing conversion rates. For any queries, connect with our <a href="https://www.recurly.com/contact-us/" target="_blank">support</a> or explore our expansive <a href="https://docs.recurly.com/docs/" target="_blank">knowledge base</a>.
+
+## Adyen Network Tokens
+
+If you have enabled Adyen to create Network Tokens for your merchant account (cards only), whether or not they are used on a given transaction will be visible in transaction detail and gateway param responses via API.
+
+This indicator will appear as a boolean value in the new 'Third Party Network Token Used'.
+
+If you do not have Adyen Network tokens enabled with the gateway, you will always see 'False' for the value. If you have Adyen Network Tokens enabled in your gateway, you will see 'True' when a network token was used on a given transaction, and 'false' when the raw PAN / Card Data was used for the transaction.
+
+For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems.
 
 # Important notes
 
