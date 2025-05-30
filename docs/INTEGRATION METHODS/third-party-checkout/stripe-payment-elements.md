@@ -1,5 +1,5 @@
 ---
-title: Stripe Payment Elements
+title: Stripe payment elements
 excerpt: >-
   Accept and tokenize Stripe Payment Elements in Recurly for a fully
   customizable, secure checkout experience.
