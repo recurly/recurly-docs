@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-Make the most of App Store policy updates by offering web-based subscription checkouts outside the App Store using Recurly’s secure, customizable tools. Recurly provides two turnkey solutions for handling payments for digital subscriptions and goods outside Apple’s in-app purchase system:
+Make the most of App Store policy updates by offering web-based subscription checkouts outside the App Store using Recurly’s secure, customizable tools. Recurly provides two turnkey solutions for handling payments for digital subscriptions and goods outside Apple’s in-app purchase system.
 
 ## Recurly Checkout
 
@@ -36,4 +36,4 @@ A lightweight JavaScript library for building your own secure, hosted payment ex
 
 Learn more: [Recurly.js](https://docs.recurly.com/docs/recurlyjs)
 
-Both options deliver a fully web-based, PCI-compliant checkout experience—so you can sell subscriptions and digital goods outside the App Store without compromising on security or user experience.
+Both options deliver a fully web-based, PCI-compliant checkout experience—so you can sell subscriptions and digital goods outside the App Store without compromising on security or user experience. **[Learn more](https://recurly.com/blog/product-perspectives-how-to-avoid-apple-app-store-comissions/).**
