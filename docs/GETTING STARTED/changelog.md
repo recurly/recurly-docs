@@ -24,6 +24,16 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## 2025
 
+## June
+
+<br />
+
+| Release Date | **Feature**                 | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                      |
+| :----------- | :-------------------------- | :------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Jun 3        | **PayPal Complete Gateway** | Low                  | Updated handling of status updates for PayPal transactions using a bank account as a funding source to avoid transactions suck in pending state.                                                                                                                                                                                                                                                                |
+| Jun 3        | **Webhooks**                | Medium               | Added webhook support for `payment.succeeded` event to enable events firing when UPI AutoPay transactions are updated asynchronously.                                                                                                                                                                                                                                                                           |
+| Jun 3        | **Adyen Gateway**           | Medium               | Updated handling of Late Failure (Chargeback) invoices for ACH Bank payments to ensure transactions that fail asynchronously are invoiced or marked failed appropriately. Transactions that experience a return due to insufficient funds (R01) will have the invoice marked Past due so the transaction can be reattempted. All other ACH return codes will cause a Refund / Chargeback invoice to be applied. |
+
 ## May
 
 <Table align={["left","center","left","left"]}>
@@ -54,7 +64,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        **PayPal Complete**
+        **PayPal Complete Gateway**
       </td>
 
       <td>
@@ -72,7 +82,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        **Amazon Pay V2**
+        **Amazon Pay V2 Gateway**
       </td>
 
       <td>
