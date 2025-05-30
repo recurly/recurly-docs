@@ -38,7 +38,7 @@ Adyen Web Components are customizable UI elements for various payment methods. W
 
 <Image align="center" className="border" border={true} width="300px" src="https://files.readme.io/2e5c1d8c261f4d9d718ee6da88a975fdb279a0b8d951aa48112cbc179c42c1ba-Screenshot_2025-05-13_at_3.55.51_PM.png" />
 
-Read more in our [Developer Hub guide](https://recurly.com/developers/guides/third-party-checkout-adyen-components.html).
+Read more in our [Developer Hub guide](https://docs.recurly.com/v1.1/docs/third-party-checkout-guide-adyen-components#/).
 
 ## Supported payment methods
 
