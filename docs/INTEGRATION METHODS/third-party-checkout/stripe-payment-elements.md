@@ -1,5 +1,8 @@
 ---
 title: Stripe Payment Elements
+excerpt: >-
+  Accept and tokenize Stripe Payment Elements in Recurly for a fully
+  customizable, secure checkout experience.
 deprecated: false
 hidden: true
 metadata:
@@ -9,29 +12,36 @@ metadata:
 
 Stripe offers powerful tools to support quick and dynamic consumer checkout solutions including Payment Elements and Express Checkout Elements. Recurly supports ingesting the Stripe confirmation token in our V3 APIs for payment processing.
 
-## Supported Features
+### Prerequisites & limitations
 
-Stripe Payment or Express Checkout Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information:
+* Requires a working Recurly V3 API integration and Recurly.js setup.
+* Some Stripe payment methods and APMs are restricted by merchant country—if you don’t see a method in your Stripe Dashboard, your account’s country may not qualify (e.g. Revolut is available only in the UK/EU).
+* Stripe Payment Links, Stripe Checkout, and Radar are not supported through this integration.
+
+# Definition
+
+Stripe Payment Elements lets you build a fully branded checkout UI using Stripe’s hosted components, then pass a “confirmation token” to Recurly’s V3 API to process payments and store reusable payment details for both one-time and recurring charges.
+
+# Key benefits
+
+* **Customizable checkout**: Design your own UI with Stripe Elements for a seamless, on-brand experience.
+* **Seamless tokenization**: Send Stripe confirmation tokens to Recurly for secure, PCI-compliant payment processing.
+* **Wide payment support**: Offer cards, wallets, direct debits, and select APMs—all within your custom checkout flow.
+
+# Key details
+
+## Supported features
+
+* Build a bespoke checkout solution with Stripe Payment Elements or Express Checkout Elements and pass the resulting confirmation token to Recurly via the V3 API.
+* Allow customers to update their billing information through Stripe Elements or existing Recurly solutions (Checkout, HPP, Recurly.js).
+* Preview Stripe Elements capabilities on Stripe’s demo site: [https://checkout.stripe.dev/elements](https://checkout.stripe.dev/elements)
 
 <Image align="center" className="border" border={true} width="300px" src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" />
 
-* When using Stripe Elements, you can build a custom checkout solution and pass a Stripe "confirmation token" to Recurly via API. Recurly will pass that token to Stripe to obtain reusable payment details for recurring and one-time payments.
-* If customers wish to update their billing information, they can do so through Stripe Elements, or through an existing Recurly solution such as Checkout, HPP, or Recurly.js. What you choose to offer is up to you!
-* Use Stripe's demo website to see what's possible: [https://checkout.stripe.dev/elements](https://checkout.stripe.dev/elements) while keeping in mind limitations to what Recurly has built and allowed.
-
 Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/).
 
-### Supported Payment Methods
+## Supported payment methods
 
-* **Stripe gateway**: Recurly does not support all Stripe payment methods at this time. Presently, the below options are available:
-  * Cards, Link by Stripe, Apple Pay, Google Pay, Cash App Pay
-  * Direct Debit offerings include: ACH, SEPA, BACS, iDeal, and BECS.
-    * [Financial Connections](https://stripe.com/financial-connections) is required for verifying bank information prior to signup.
-  * Other APMs include: Klarna Recurring (Pay Now, Pay Later, and BNPL), Revolut
-
-### Limitations
-
-* **Stripe gateway**: We do not support Stripe Payment Links, Stripe Checkout, or Radar at this time. See the limited list of payment methods available, or visit the [Stripe gateway documentation](https://docs.recurly.com/docs/stripe) in Recurly docs.
-* Certain APMs and payment methods are restricted to merchants operating in certain countries. If you do not see one of the above payment methods available to enable in your Stripe Dashboard, your account merchant country of origin does not qualify to use it.
-  * Example: Revolut is restricted to merchants operating in the UK and EU only. US merchants are unable to enable it.
-* Stripe Elements and Recurly.js are technically usable together, but Stripe Elements will dynamically display all payment methods enabled on the given Stripe account, which can include duplicitous payment methods that Recurly.js also supports.
+* **Cards, Link by Stripe, Apple Pay, Google Pay, Cash App Pay**
+* **Direct Debit**: ACH, SEPA, BACS, iDEAL, BECS (requires [Financial Connections](https://stripe.com/financial-connections))
+* **Other APMs**: Klarna Recurring (Pay Now, Pay Later, BNPL), Revolut
