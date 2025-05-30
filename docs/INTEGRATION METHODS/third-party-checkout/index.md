@@ -41,11 +41,9 @@ Third Party Checkout: Stripe and Adyen lets you plug Stripe Payment Elements or 
 #### Stripe Gateway
 
 * **Stripe Payment Elements** or **Express Checkout Elements** via Recurly V3 API.
-* Visit our [developer hub](https://recurly.com/developers/guides/) for setup instructions.
-* Read more about enabling Stripe Payment Elements in our [Third Party Checkout: Stripe Elements guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html).
+* Read more about enabling Stripe Payment Elements in our [Third Party Checkout: Stripe Elements guide](https://docs.recurly.com/v1.1/docs/third-party-checkout-guide-adyen-components#/).
 
 #### Adyen Gateway
 
 * **Adyen Web Components** used alongside Recurly.js.
-* Visit our [developer hub](https://recurly.com/developers/guides/) for setup instructions.
 * Read more about enabling Adyen Web Components in our [Developer Hub guide](https://recurly.com/developers/guides/).
