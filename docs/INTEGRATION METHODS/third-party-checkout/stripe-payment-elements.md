@@ -34,3 +34,4 @@ Read more about enabling Stripe Payment Elements in the [Developer Hub guide](ht
 * **Stripe gateway**: We do not support Stripe Payment Links, Stripe Checkout, or Radar at this time. See the limited list of payment methods available, or visit the [Stripe gateway documentation](https://docs.recurly.com/docs/stripe) in Recurly docs.
 * Certain APMs and payment methods are restricted to merchants operating in certain countries. If you do not see one of the above payment methods available to enable in your Stripe Dashboard, your account merchant country of origin does not qualify to use it.
   * Example: Revolut is restricted to merchants operating in the UK and EU only. US merchants are unable to enable it.
+* Stripe Elements and Recurly.js are technically usable together, but Stripe Elements will dynamically display all payment methods enabled on the given Stripe account, which can include duplicitous payment methods that Recurly.js also supports.
