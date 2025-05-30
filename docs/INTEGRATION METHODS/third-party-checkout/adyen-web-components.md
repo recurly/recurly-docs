@@ -1,5 +1,5 @@
 ---
-title: Adyen Web Components
+title: Adyen web components
 excerpt: >-
   Accept and tokenize Adyen Web Components in Recurly for a seamless, branded
   checkout experience powered by Recurly.js.
