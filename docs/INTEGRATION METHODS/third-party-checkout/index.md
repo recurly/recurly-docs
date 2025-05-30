@@ -1,10 +1,8 @@
 ---
 title: 'Third Party Checkout: Stripe and Adyen'
 excerpt: >-
-  To better serve our customer base and keep up to speed with the expansion of
-  payment methods and wallets, we are building support for our most trusted
-  gateway partners' checkout solutions and enabling Recurly merchants to use
-  them within the Recurly ecosystem.
+  Enable a broad array of payment methods from Stripe and Adyen without leaving
+  your Recurly-powered storefront.
 deprecated: false
 hidden: true
 metadata:
@@ -18,20 +16,36 @@ next:
 
 By using the massive wealth of APMs built by our most trusted and well-established partners, you will be able to quickly and easily enable a wide range of payment options, catering to diverse customer preferences and expanding their potential market reach.
 
-The Ecommerce checkout options from our trusted gateway partners are designed to be user-friendly and highly customizable, allowing you to maintain a consistent brand experience while ensuring secure and reliable payment processing.
+The ecommerce checkout options from our trusted gateway partners are designed to be user-friendly and highly customizable, allowing you to maintain a consistent brand experience while ensuring secure and reliable payment processing.
+
+### Prerequisites & limitations
+
+* Requires a working Recurly V3 API integration and Recurly.js setup.
+* Third Party Checkout uses gateway tokens—migrating payment instruments to a different gateway requires coordination with the original gateway provider.
+* Some APMs are country-restricted. If a method isn’t visible in your Stripe or Adyen dashboard, your merchant country of origin may not qualify for it (e.g. Revolut is available only to UK/EU merchants).
+
+# Definition
+
+Third Party Checkout: Stripe and Adyen lets you plug Stripe Payment Elements or Adyen Web Components into your Recurly checkout flow, unlocking local payment methods, wallets, and co-branded cards in a single integration.
+
+# Key benefits
+
+* **Broaden payment acceptance**: Offer cards, wallets, and regional APMs without building separate integrations.
+* **Seamless brand consistency**: Widgets inherit your storefront styling for a cohesive experience.
+* **Reliable security & compliance**: Leverage proven, PCI-compliant components from Stripe and Adyen under Recurly’s unified API.
+
+# Key details
 
 ## Supported Gateways and Features
 
 #### Stripe Gateway
 
-* Stripe Payment or Express Checkout Elements is currently supported when using the Recurly V3 API. Visit our [developer hub](https://recurly.com/developers/guides/) for more information. Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html).
+* **Stripe Payment Elements** or **Express Checkout Elements** via Recurly V3 API.
+* Visit our [developer hub](https://recurly.com/developers/guides/) for setup instructions.
+* Read more about enabling Stripe Payment Elements in our [Third Party Checkout: Stripe Elements guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html).
 
 #### Adyen Gateway
 
-* Adyen Web Components is currently supported when used in combination with Recurly.js. Visit our [developer hub](https://recurly.com/developers/guides/) for more information. Read more about enabling Adyen Web Components in the [Developer Hub guide](https://recurly.com/developers/guides/).
-
-### Limitations
-
-* Third Party Checkout utilizes Gateway Tokens. Gateway failover and migrating to a different gateway will not be possible without involving the gateway that is storing the payment instruments. Reach out to Recurly support with any questions.
-* Certain APMs and payment methods are restricted to merchants operating in certain countries. If you do not see one of the above payment methods available to enable in your Stripe Dashboard, your account merchant country of origin does not qualify to use it.
-  * Example: Revolut is restricted to merchants operating in the UK and EU only. US merchants are unable to enable it.
+* **Adyen Web Components** used alongside Recurly.js.
+* Visit our [developer hub](https://recurly.com/developers/guides/) for setup instructions.
+* Read more about enabling Adyen Web Components in our [Developer Hub guide](https://recurly.com/developers/guides/).
