@@ -147,7 +147,7 @@ When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/)
 
 See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) for more information.
 
-## Confirming Renewals in Sandbox
+## Confirming High Amount Renewals in Sandbox
 
 When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to follow these instructions:
 
