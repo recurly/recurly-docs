@@ -153,7 +153,7 @@ When processing with UPI, any amount over 15K INR, a push notification would go 
 
 * Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
   * *Confirming* the payment will create a Approval in Recurly.
-  * *Cancelling* will cause the payment to decline and the subscription to enter dunning.
+  * *Cancelling* will cause the payment to decline and the invoice to enter dunning.
 
 # Additional Information
 
