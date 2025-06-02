@@ -149,12 +149,11 @@ See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/
 
 ## Confirming Renewals in Sandbox
 
-When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to do one of two actions:
+When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to follow these instructions:
 
 * Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
   * Confirming the payment will create a Approval in Recurly.
   * Cancelling will cause the payment to decline
-* Fetch the transaction ID and interact with the redirect URL to simulate app interaction.
 
 # Additional Information
 
