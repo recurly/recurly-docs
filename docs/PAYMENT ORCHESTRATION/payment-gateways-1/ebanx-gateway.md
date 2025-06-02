@@ -137,7 +137,7 @@ Ebanx and UPI AutoPay together require a minimum of fields to create a mandate f
 
 **UPI – AutoPay** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in the UPI app will be automatically handled.
 
-## Testing in Sandbox
+# Testing in Sandbox
 
 When in sandbox ONLY, the response will contain a response URL for simulating interactions with the UPI Application. This interaction would typically take place with the customer directly via push notifications on their phone. For testing purposes, use the URL to accept or reject the mandate enrollment request.
 
@@ -146,6 +146,17 @@ When in sandbox ONLY, the response will contain a response URL for simulating in
 When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/), as with any asynchronous payment method in Recurly, subscriptions are immediately active, but transactions and invoices will be in a scheduled/processing state respectively. If customers do not authorize a subscription enrollment or payment via the UPI App, transactions will fail and subscriptions will be expired upon consumer rejection.
 
 See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) for more information.
+
+## Confirming Renewals in Sandbox
+
+When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to do one of two actions:
+
+* Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
+  * Confirming the payment will create a Approval in Recurly.
+  * Cancelling will cause the payment to decline
+* Fetch the transaction ID and interact with the redirect URL to simulate app interaction.
+
+# Additional Information
 
 ## Subscriptions and Transactions that work with UPI AutoPay
 
@@ -169,7 +180,7 @@ See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/
 * Merchant Admin-created Subscriptions: due to pre-debit notification and enrollment verification/consumer authentication that occurs in the UPI app, MIT subscription enrollments are not allowed per NPCI regulations in India.
 * Retries: While planned, retries on failed renewals are not supported due to NPCI regulations around retry rules. As these rules do not follow card-brand retry rules, UPI AutoPay transactions will not retry using basic or intelligent retry logic.
 
-## Troubleshooting FAQs
+# Troubleshooting FAQs
 
 ### **Q: My UPI subscription is failing. How can I fix this?**
 
