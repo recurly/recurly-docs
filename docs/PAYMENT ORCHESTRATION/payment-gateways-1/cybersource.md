@@ -64,7 +64,7 @@ CyberSource is a full-service payment management platform. When configured with 
       </td>
 
       <td>
-        Credit/Debit Card, Apple and Google Pay
+        Credit/Debit Card, Apple Pay
 
         * Apple Pay is not supported with TSYS/Vital acquirer
       </td>
