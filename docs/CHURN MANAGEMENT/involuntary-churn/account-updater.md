@@ -28,7 +28,7 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 * Integration with Recurly's platform.
 * Activation of the Account Updater feature in the Recurly payment settings page.
-* For American Express® Cardrefresher, an American Express® merchant account is required, and your business must be located in the United States.
+* For American Express® Cardrefresher, an American Express® merchant account is required, and your business must be located in the United States. OptBlue merchant accounts are not supported.
 
 ### Limitation
 
