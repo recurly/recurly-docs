@@ -50,23 +50,23 @@ Recurly for Salesforce is a robust integration tool that allows businesses to sy
 
 Upon installation, the following custom objects will be integrated into your Salesforce organization:
 
-* [Recurly Accounts](https://docs.recurly.com/docs/salesforce%20delete#recurly-accounts)
-* [Recurly Subscriptions](https://docs.recurly.com/docs/salesforce%20delete#recurly-subscriptions)
-* [Recurly Plans](https://docs.recurly.com/docs/salesforce%20delete#recurly-plans-add-ons-and-items)
-* [Recurly Add Ons](https://docs.recurly.com/docs/salesforce%20delete#recurly-plans-add-ons-and-items)
-* [Recurly Items](https://docs.recurly.com/docs/salesforce%20delete#recurly-plans-add-ons-and-items)
-* [Recurly Invoices](https://docs.recurly.com/docs/salesforce%20delete#recurly-invoices)
-* [Recurly Line Items](https://docs.recurly.com/docs/salesforce#recurly-line-items)
-* [Recurly Transactions](https://docs.recurly.com/docs/salesforce#recurly-transactions)
-* [Recurly Logs](https://docs.recurly.com/docs/salesforce#recurly-logs---sync-stats-record)
-* [Recurly Admin](https://docs.recurly.com/docs/salesforce#roles--permissions)
+* [Recurly Accounts](https://docs.recurly.com/docs/salesforce-recurly#recurly-accounts)
+* [Recurly Subscriptions](https://docs.recurly.com/docs/salesforce-recurly#/recurly-subscriptions)
+* [Recurly Plans](https://docs.recurly.com/docs/salesforce-recurly#recurly-plans-add-ons-and-items)
+* [Recurly Add Ons](https://docs.recurly.com/docs/salesforce-recurly#recurly-plans-add-ons-and-items)
+* [Recurly Items](https://docs.recurly.com/docs/salesforce-recurly#recurly-plans-add-ons-and-items)
+* [Recurly Invoices](https://docs.recurly.com/docs/salesforce-recurly#recurly-invoices)
+* [Recurly Line Items](https://docs.recurly.com/docs/salesforce-recurly#recurly-line-items)
+* [Recurly Transactions](https://docs.recurly.com/docs/salesforce-recurly#recurly-transactions)
+* [Recurly Logs](https://docs.recurly.com/docs/salesforce-recurly#roles--permissions)
+* [Recurly Admin](https://docs.recurly.com/docs/salesforce-recurly#roles--permissions)
 
 Furthermore, custom fields and related objects will be added to native Salesforce objects:
 
-* [Accounts](https://docs.recurly.com/docs/salesforce#salesforce-accounts-and-recurly-integration)
-* [Products](https://docs.recurly.com/docs/salesforce#salesforce-products-and-recurly-offerings)
-* [Price Books](https://docs.recurly.com/docs/salesforce#salesforce-price-books-and-recurly-pricing)
-* [Opportunities](https://docs.recurly.com/docs/salesforce#salesforce-opportunities-and-recurly-subscriptions)
+* [Accounts](https://docs.recurly.com/docs/salesforce-recurly#salesforce-accounts-and-recurly-integration)
+* [Products](https://docs.recurly.com/docs/salesforce-recurly#salesforce-products-and-recurly-offerings)
+* [Price Books](https://docs.recurly.com/docs/salesforce-recurly#salesforce-price-books-and-recurly-pricing)
+* [Opportunities](https://docs.recurly.com/docs/salesforce-recurly#salesforce-opportunities-and-recurly-subscriptions)
 
 The data model below illustrates the synchronization of Recurly data with Salesforce. Detailed setup instructions will be provided once the feature is activated on your Recurly account.
 
