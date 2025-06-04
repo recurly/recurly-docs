@@ -56,7 +56,7 @@ Account Updater is available on all Recurly plans. As of October 26, enabling Ac
 6. **Confirm Charges:** Check the box to authorize the monthly Account Updater fee. If you lack MCC or SE number, you can still enable Visa® and Discover® only.
 7. **Completion:** Click **Enable**. Your status will update to show you’re enabled for Visa®, Mastercard®, Discover®, and American Express®.
 
-![](https://files.readme.io/17be4e7-image.png)
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/17be4e7-image.png" />
 
 > **Note:** Ensure the SE number is correct. Gateway‐provided (OptBlue) SE numbers will not work—only direct Amex SE numbers are supported.
 
@@ -91,7 +91,10 @@ If you prefer not to update billing info for certain customers, you can opt them
 > 🚧 If you disable Account Updater, you cannot re-enable it for 10 business days.
 
 1. **Navigate** to Payments Settings and click **Disable** in the Account Updater box’s upper right.
-2. A pop-up will appear—confirm you want to disable. ![](https://files.readme.io/133d86c-image.png)
+2. A pop-up will appear—confirm you want to disable.
+
+![](https://files.readme.io/133d86c-image.png)
+
 3. **Check** all three boxes and click **Disable**.
 
 # Notes
