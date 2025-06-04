@@ -37,7 +37,7 @@ To integrate Apple Pay on the Web, ensure you have:
 
 > ❗️ Important
 >
-> Apple has provided guidance that merchants should migrate from DPANs to MPANs when creating recurring subscriptions. This is a requirement for Visa recurring payments, and your Recurly.js integration should be updated to accomodate this requirement.
+> Apple has provided guidance that merchants should migrate from DPANs to MPANs when creating recurring subscriptions. This is a requirement for Visa recurring payments, and your Recurly.js integration should be updated to accommodate this requirement.
 
 * For return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Apple Pay.
 * Always request Merchant-level tokens (**MPANS**) for Apple Pay, to comply with upcoming Visa MPAN requirement regulations. After July, 2025, Merchants should request MPANs in their Apple Pay implementations to avoid declines. DPANs are grandfathered in, but are not guaranteed to continue functioning forever.
