@@ -50,12 +50,12 @@ Recurly for Salesforce is a robust integration tool that allows businesses to sy
 
 Upon installation, the following custom objects will be integrated into your Salesforce organization:
 
-* [Recurly Accounts](https://docs.recurly.com/docs/recurly-for-salesforce#recurly-accounts)
-* [Recurly Subscriptions](https://docs.recurly.com/docs/recurly-for-salesforce#recurly-subscriptions)
-* [Recurly Plans](https://docs.recurly.com/docs/salesforce#recurly-plans-add-ons-and-items)
-* [Recurly Add Ons](https://docs.recurly.com/docs/salesforce#recurly-plans-add-ons-and-items)
-* [Recurly Items](https://docs.recurly.com/docs/salesforce#recurly-plans-add-ons-and-items)
-* [Recurly Invoices](https://docs.recurly.com/docs/recurly-for-salesforce#section-recurly-invoices)
+* [Recurly Accounts](https://docs.recurly.com/docs/salesforce%20delete#recurly-accounts)
+* [Recurly Subscriptions](https://docs.recurly.com/docs/salesforce%20delete#recurly-subscriptions)
+* [Recurly Plans](https://docs.recurly.com/docs/salesforce%20delete#recurly-plans-add-ons-and-items)
+* [Recurly Add Ons](https://docs.recurly.com/docs/salesforce%20delete#recurly-plans-add-ons-and-items)
+* [Recurly Items](https://docs.recurly.com/docs/salesforce%20delete#recurly-plans-add-ons-and-items)
+* [Recurly Invoices](https://docs.recurly.com/docs/salesforce%20delete#recurly-invoices)
 * [Recurly Line Items](https://docs.recurly.com/docs/salesforce#recurly-line-items)
 * [Recurly Transactions](https://docs.recurly.com/docs/salesforce#recurly-transactions)
 * [Recurly Logs](https://docs.recurly.com/docs/salesforce#recurly-logs---sync-stats-record)
