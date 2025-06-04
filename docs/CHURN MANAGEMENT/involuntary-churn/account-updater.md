@@ -93,7 +93,7 @@ If you prefer not to update billing info for certain customers, you can opt them
 1. **Navigate** to Payments Settings and click **Disable** in the Account Updater box’s upper right.
 2. A pop-up will appear—confirm you want to disable.
 
-![](https://files.readme.io/133d86c-image.png)
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/133d86c-image.png" />
 
 3. **Check** all three boxes and click **Disable**.
 
