@@ -56,7 +56,7 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 * **Adyen**: Presently, only non-card payment methods are tokenized when using native Recurly checkout flows. When using Adyen Components with Recurly.js, all payment methods are tokenized.
 * **Vantiv**: Imported card tokens are supported. Recurly does not tokenize cards with Vantiv. For imported token usage, Recurly does not have access to the raw PAN / card information for gateway failover or orchestration to other gateway providers.
 * **Amazon**: By design, all payment methods are stored at Amazon, and Recurly stores a billing agreement or charge permission ID for renewals and one-time payments with Amazon V1 and V2.
-* **PayPal**: By design, all payment methods are stored at PayPal, and Recurly retains a token or billing agreement for renewals and one-time payments with all PayPal gateways. One caveat is PayPal Complete, where we do retain the raw card details or 'PAN' as well as create a PayPal gateway token for renewals.
+* **PayPal**: By design, all payment methods are stored at PayPal, and Recurly retains a token or billing agreement for renewals and one-time payments with all PayPal gateways. One caveat is PayPal Complete, where we do retain the raw card details or 'PAN' as well as create a PayPal gateway token for renewals. Legacy gateways for PayPal support 'Billing Agreement IDs'.
 
 ### Who Stores the Payment Information?
 
