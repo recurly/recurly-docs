@@ -20,7 +20,6 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-* Integration with Recurly's API or select client libraries.
 * Subscription to Recurly's out-of-box tax solution or direct integration with Avatax and Vertex
 
 ### Limitations
@@ -61,17 +60,17 @@ Discounts can be applied to purchases with tax inclusivity. Here's how they work
 **Percentage Discount**
 
 Original Price (Tax Inclusive): $300.00\
-Tax Rate: 10.250%\
-Discount: 20%\
-Final Price: $240.00\
+Tax Rate: 10.250%
+Discount: 20%
+Final Price: $240.00
 Breakdown: $217.69 (subtotal) + $22.32 (tax)
 
 **Fixed Amount Discount**
 
 Original Price (Tax Inclusive): $300.00\
-Tax Rate: 10.250%\
-Discount: $60.00\
-Final Price: $240.00\
+Tax Rate: 10.250%
+Discount: $60.00
+Final Price: $240.00
 Breakdown: $217.69 (subtotal) + $22.32 (tax)
 
 ## Integration with Recurly.js
