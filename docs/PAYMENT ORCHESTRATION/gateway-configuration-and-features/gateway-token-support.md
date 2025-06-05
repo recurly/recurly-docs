@@ -60,7 +60,7 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 
 ### Supported Gateway Tokens
 
-* Stripe: Support Creation and Usage of 'Payment Methods'. We do not support Stripe Tokens.
+* Stripe: Support Creation and Usage of 'Payment Method IDs'. We do not support Stripe Tokens.
 * Adyen: Support Creation and Usage as necessary (certain payment methods require tokenization)
 * Braintree: Support Creation and Usage per merchant settings (merchants can choose in configuration to tokenize or not).
 * PayPal Complete: Support Creation and Usage of PayPal Tokens.
