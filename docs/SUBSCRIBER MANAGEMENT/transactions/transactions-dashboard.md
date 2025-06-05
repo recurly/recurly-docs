@@ -32,7 +32,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-<Image align="center" className="border" width="70% " border={true} src="https://files.readme.io/1e75403-image.png" />
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/1e75403-image.png" />
 
 The Transactions Dashboard in Recurly provides a comprehensive overview of all financial transactions processed through the platform. It includes features for searching transactions, understanding various transaction types, managing refunds and voids, and performing fraud checks, all designed to streamline the financial management of customer accounts.
 
@@ -76,7 +76,7 @@ This table outlines possible statuses a transaction can have, offering insights 
 
 ## Transaction search
 
-Finding a specific transaction in Recurly is simple and flexible, thanks to a wide range of search fields available. 
+Finding a specific transaction in Recurly is simple and flexible, thanks to a wide range of search fields available.
 
 * **Account Code**: Locate transactions tied to a specific Recurly account code.
 * **Company Name**: Search for transactions associated with a company's name.
@@ -130,7 +130,13 @@ When billing information is added or updated on an account, Recurly issues a $1.
 
 ## Refunds and voids
 
-An unsettled transaction can be voided, which stops the transaction from processing and removes it from the customer's account. Once a transaction has settled, it can only be refunded. Since payment gateways have varying processing times for settling transactions, Recurly automatically attempts a void before processing a refund. Note that partial refunds can only be issued on a settled transaction, so it's advisable to wait 24 hours after an initial transaction before attempting a partial refund.
+> ❗️ **Refunding Direct Debit transactions**
+>
+> It is recommended to only refund Direct Debit transactions after at least 1 week from the original authorization date to avoid financial losses. Bank transactions are not immediately authorized and can take several days to return from the consumer's bank as insufficient funds or otherwise not successful.
+>
+> Direct Debit chargebacks are also typically non-defensible and can occur quite a while after the initial payment takes place. Ensure you are offering refunds to KYC'd customers and ensure consumers are aware of bank refund timeframes so they do not *also* initiate a chargeback which could result in financial losses.
+
+An unsettled transaction can be voided, which stops the transaction from settling and removes it from the customer's bank statement (timing is up to the consumer's individual bank). Once a transaction has settled, it can only be refunded. Since payment gateways have varying processing times for settling transactions, Recurly automatically attempts a void before processing a refund. Note that partial refunds can only be issued on a settled transaction, so it's advisable to wait 24 hours after an initial transaction before attempting a partial refund.
 
 A voided transaction usually disappears from a customer's credit/debit account statement within 24 hours. In contrast, a refund may take 3 to 5 business days to reflect on the statement.
 
