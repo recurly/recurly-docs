@@ -154,7 +154,7 @@ To test your implementation, configure Test Users as outlined within Recurly Eng
 
 #### Guides
 
-Within Recurly Engage, you sill see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
+Within Recurly Engage, you still see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e52e66e-image.png" />
 
