@@ -58,6 +58,17 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 * **Amazon**: By design, all payment methods are stored at Amazon, and Recurly stores a billing agreement or charge permission ID for renewals and one-time payments with Amazon V1 and V2.
 * **PayPal**: By design, all payment methods are stored at PayPal, and Recurly retains a token or billing agreement for renewals and one-time payments with all PayPal gateways. One caveat is PayPal Complete, where we do retain the raw card details or 'PAN' as well as create a PayPal gateway token for renewals. Legacy gateways for PayPal support 'Billing Agreement IDs'.
 
+### Supported Token List
+
+* Stripe: Support Creation and Usage of 'Payment Methods'. We do not support Stripe Tokens.
+* Adyen: Support Creation and Usage as necessary (certain payment methods require tokenization)
+* Braintree: Support Creation and Usage per merchant settings (merchants can choose in configuration to tokenize or not).
+* PayPal Complete: Support Creation and Usage of PayPal Tokens.
+* Legacy PayPal Gateways: Support Creation and Usage of Billing Agreement IDs.
+* Amazon Gateways: Support Creation of Billing Info IDs / Charge Permission IDs and Usage.
+* Vantiv: Support Usage after Import. Recurly systems do not support token creation.
+* Payeezy: Support Usage after Import. Recurly systems do not support token creation.
+
 ### Who Stores the Payment Information?
 
 Sometimes, with all the different terms and token types, it can become confusing to understand who really has the card or payment details in their system. Use this handy table to understand where the card or payment instrument is stored, depending on your gateway solution, payment method and the checkout system you're using.
