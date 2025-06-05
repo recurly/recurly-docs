@@ -67,7 +67,7 @@ In certain cases though, we do tokenize payment methods where necessary or desir
 * Legacy PayPal Gateways: Support Creation and Usage of Billing Agreement IDs.
 * Amazon Gateways: Support Creation of Billing Info IDs / Charge Permission IDs and Usage.
 * Vantiv: Support Usage after Import. Recurly systems do not support token creation.
-* Payeezy: Support Usage after Import. Recurly systems do not support token creation.
+* Payeezy: Support Usage after Import of TransArmor Tokens. Recurly systems do not support token creation.
 
 ### Who Stores the Payment Information?
 
