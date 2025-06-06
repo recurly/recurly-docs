@@ -1,6 +1,8 @@
 ---
 title: Invite Users
-excerpt: ''
+excerpt: >-
+  Steps to invite team members and manage their access within your Recurly
+  Engage application.
 deprecated: false
 hidden: true
 metadata:
@@ -10,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Steps to invite team members and manage their access within your Recurly Engage application.
-
 # Overview
 
 Learn how to invite users to your Recurly Engage app, assign permission levels, and ensure your team has the right access.
@@ -42,14 +40,14 @@ Administrators can invite users to individual apps in Recurly Engage. To grant a
 
 To add a user:
 
-1. In the Recurly Engage console, go to **Settings > Users** and click **Add user**.
+1. In the Recurly Engage console, **go** to **Settings > Users** and **click** **Add user**.
 
-![](https://files.readme.io/8080696-image.png)
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/8080696-image.png" />
 
 2. **Enter** the user’s name, email, and select a permission level. For details on each level, see [User permissions](pulse-users).
 
-![](https://files.readme.io/9bca05b-image.png)
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/9bca05b-image.png" />
 
 3. **Click** **Send invitation**. The invitee will receive an email to create their login credentials.
 
-![](https://files.readme.io/2af7842-image.png)
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/2af7842-image.png" />
