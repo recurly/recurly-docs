@@ -1,5 +1,5 @@
 ---
-title: Recurly Engage Setup
+title: Recurly Engage setup
 excerpt: >-
   Guidance on configuring your application in Recurly Engage: name, domain, and
   alias setup for a branded, secure integration.
