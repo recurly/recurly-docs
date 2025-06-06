@@ -16,8 +16,8 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ### Prerequisites & limitations
 
-* **Minimum Annual Volume:** Reach is best suited for merchants processing at least $10 million+ in annual revenue. This threshold allows Reach to negotiate and provision localized acquiring relationships with tier-1 processors on your behalf (<a href="https://www.chargebee.com/docs/payments/2.0/others/reach" target="_blank">chargebee.com</a>, <a href="https://www.withreach.com/who-we-help/digital-saas" target="_blank">withreach.com</a>).
-* **Reach Contract:** You must sign a master agreement directly with Reach to establish your merchant-of-record relationship. Once executed, Reach will generate the necessary credentials for:
+* **Minimum annual volume:** Reach is best suited for merchants processing at least $10 million+ in annual revenue. This threshold allows Reach to negotiate and provision localized acquiring relationships with tier-1 processors on your behalf (<a href="https://www.chargebee.com/docs/payments/2.0/others/reach" target="_blank">chargebee.com</a>, <a href="https://www.withreach.com/who-we-help/digital-saas" target="_blank">withreach.com</a>).
+* **Reach contract:** You must sign a master agreement directly with Reach to establish your merchant-of-record relationship. Once executed, Reach will generate the necessary credentials for:
 
   * One or more payment gateways (commonly Adyen, PayPal Complete, or Stripe)
   * Avalara for tax calculation and remittance
