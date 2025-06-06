@@ -1,5 +1,5 @@
 ---
-title: Invite Users
+title: Invite users
 excerpt: >-
   Steps to invite team members and manage their access within your Recurly
   Engage application.
