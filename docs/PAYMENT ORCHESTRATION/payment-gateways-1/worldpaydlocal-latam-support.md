@@ -232,5 +232,6 @@ By carefully following this step-by-step process, you will have the WorldPay LAT
 
 ### FAQs
 
-1. Why is my WorldPay refund failing?
-   1. Refunds can fail due to Online Refund Authorization behavior that WorldPay supports. In May 2025, this will become standard across all WorldPay accounts. Banks will 'authorize' refunds in realtime, which can cause errors if the account is closed, or the bank does not wish to authorize the refund for some reason. If this happens, you must coordinate with your customer to return funds in another manner.
+**Q: Why is my WorldPay refund failing?**
+
+**A**: Refunds can fail due to Online Refund Authorization behavior that WorldPay supports. In May 2025, this will become standard across all WorldPay accounts. Banks will 'authorize' refunds in realtime, which can cause errors if the account is closed, or the bank does not wish to authorize the refund for some reason. If this happens, you must coordinate with your customer to return funds in another manner.
