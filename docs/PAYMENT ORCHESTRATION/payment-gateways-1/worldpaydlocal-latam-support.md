@@ -1,8 +1,8 @@
 ---
-title: Worldpay - eCommerce & LATAM
+title: Worldpay - Global e-commerce
 excerpt: >-
-  Unlock the potential of the Latin American e-commerce landscape by integrating
-  Recurly with WorldPay and Ebanx/dLocal. This powerful collaboration simplifies
+  Unlock the potential of the Global e-commerce landscape by integrating Recurly
+  with WorldPay and Ebanx/dLocal. This powerful collaboration simplifies
   navigation through the region's complex payment ecosystem, offering robust
   support for local currencies and preferred card brands, facilitating seamless
   expansion.
@@ -50,9 +50,9 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 # Definition
 
-Expand your business globally and in the dynamic Latin American e-commerce sector with Recurly's integration with WorldPay and Ebanx/dLocal. This solution offers a seamless way to navigate complex payment ecosystems, supporting local currencies, card brands, and distinct regional payment preferences. WorldPay facilitates international transactions with configurable merchant accounts, while WorldPay LATAM, via partnerships with Ebanx/dLocal, caters specifically to Latin American markets, optimizing payment processes by accommodating local currencies like the Argentine Peso (ARS) and the widely recognized card brand, Tarjeta Naranja.
+Expand your business globally and in the dynamic global e-commerce sector with Recurly's integration with WorldPay and Ebanx/dLocal. This solution offers a seamless way to navigate complex payment ecosystems, supporting local currencies, card brands, and distinct regional payment preferences. WorldPay facilitates international transactions with configurable merchant accounts, while WorldPay, via partnerships with Ebanx/dLocal, caters specifically to global markets, optimizing payment processes by accommodating local currencies like the Argentine Peso (ARS) and the widely recognized card brand, Tarjeta Naranja.
 
-For a global reach, WorldPay allows merchants to configure their accounts for international processing, including IP allowlisting, capture delay settings, and callback configurations for seamless transaction synchronization. Recurly's integration ensures merchants can support a broad range of currencies and card types, including the application of Zero Dollar Authorizations if needed. With WorldPay's asynchronous processing for voids and refunds, and Recurly's commitment to submitting comprehensive transaction information, businesses are equipped to offer a robust and adaptable payment processing experience worldwide and specifically in the Latin American market.
+For a global reach, WorldPay allows merchants to configure their accounts for international processing, including IP allowlisting, capture delay settings, and callback configurations for seamless transaction synchronization. Recurly's integration ensures merchants can support a broad range of currencies and card types, including the application of Zero Dollar Authorizations if needed. With WorldPay's asynchronous processing for voids and refunds, and Recurly's commitment to submitting comprehensive transaction information, businesses are equipped to offer a robust and adaptable payment processing experience worldwide and specifically in the global market.
 
 Supported Regions:
 
@@ -140,7 +140,7 @@ Supported Regions:
       </td>
 
       <td>
-        Global with a focus on Latin America, including Argentina, Brazil, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Mexico, Ecuador, Panama, Paraguay, Uruguay, Honduras, and Peru.
+        Global with a focus on global, including Argentina, Brazil, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Mexico, Ecuador, Panama, Paraguay, Uruguay, Honduras, and Peru.
       </td>
     </tr>
 
@@ -171,11 +171,11 @@ Void (also known as 'cancel') and Refund order modifications are processed async
 
 **For example:** If a customer has only provided a postal code we will submit the provided Postal code, use the country from their IP address, and default the City to “city” and Address line1 to “address”. If we don't have the Country (or can’t derive the country from the IP address) a billing address will not be submitted for the transaction.
 
-# Navigating the LATAM  ecommerce landscape
+# Navigating the Global  ecommerce landscape
 
-Recurly has forged collaborations with WorldPay, Ebanx, and dLocal (no new dLocal accounts provisioned by Worldpay), endeavoring to offer merchants unparalleled support in Latin America, a region harboring a booming ecommerce market amidst a complex payment ecosystem.
+Recurly has forged collaborations with WorldPay, Ebanx, and dLocal (no new dLocal accounts provisioned by Worldpay), endeavoring to offer merchants unparalleled support in global, a region harboring a booming ecommerce market amidst a complex payment ecosystem.
 
-Find additional guidance in the [technical documentation](https://developers.recurly.com/), where the billing information block references the related tax ID documentation, such as CUIT. This vigilant approach ensures a smooth, compliant transaction process, embracing the specific needs of the Latin American market.
+Find additional guidance in the [technical documentation](https://developers.recurly.com/), where the billing information block references the related tax ID documentation, such as CUIT. This vigilant approach ensures a smooth, compliant transaction process, embracing the specific needs of the global market.
 
 # Configuring WorldPay WPG for international processing
 
@@ -195,13 +195,13 @@ Find additional guidance in the [technical documentation](https://developers.rec
 6. Finalize your setup by clicking "Add Payment Gateway".
 7. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
 
-# Enable gateway for LATAM
+# Enable gateway for global support
 
-Leveraging the WorldPay LATAM gateway for your business involves a streamlined process. Follow the detailed steps below to enable this gateway seamlessly:
+Leveraging the WorldPay global gateway for your business involves a streamlined process. Follow the detailed steps below to enable this gateway seamlessly:
 
-1. **Enable LATAM currencies on your Recurly site**
+1. **Enable global currencies on your Recurly site**
    * Log in to your Recurly account.
-   * Navigate to the currency settings and enable Argentine Peso (ARS) as a supported currency if you are processing in Argentina and wish to accept the Tarjeta Naranja card. Otherwise, add applicable LATAM currencies to your account.
+   * Navigate to the currency settings and enable Argentine Peso (ARS) as a supported currency if you are processing in Argentina and wish to accept the Tarjeta Naranja card. Otherwise, add applicable global currencies to your account.
 2. **Configure WorldPay as your payment Gateway**
    * Still in your Recurly dashboard, go to payment gateways.
    * Select and configure WorldPay as your payment gateway, ensuring it's set up to accept your supported currencies.
@@ -222,13 +222,13 @@ Setting up your WorldPay account correctly is crucial in ensuring smooth transac
 3. **Integration with Ebanx or dLocal**
    * Establish a functioning relationship with Ebanx or dLocal, integrating them appropriately with your WorldPay account. You do not need to integrate *directly* to Ebanx or dLocal.
 4. **Setting up transaction details**
-   * Be prepared to collect tax ID information, such as the CUIT (tax ID) from your LATAM customers during the initial transactions. If you are not using one of CUIT, CPF, or CNPJ, you can send the Tax ID field without a type definition.
+   * Be prepared to collect tax ID information, such as the CUIT (tax ID) from your global customers during the initial transactions. If you are not using one of CUIT, CPF, or CNPJ, you can send the Tax ID field without a type definition.
    * Configure your system to include fields for the tax identifier and its type during the payment process, aligning it to send this information correctly with each transaction to comply with the Argentine regulations.
 5. **Testing**
 
 * Before going live, rigorously test the setup to ensure all elements work harmoniously and comply with the regional requirements.
 
-By carefully following this step-by-step process, you will have the WorldPay LATAM gateway up and running, ready to facilitate transactions in the Latin American market efficiently. Ensure to refer to the [technical documentation](https://developers.recurly.com/) for any technical assistance during the setup.
+By carefully following this step-by-step process, you will have the WorldPay global gateway up and running, ready to facilitate transactions in the global market efficiently. Ensure to refer to the [technical documentation](https://developers.recurly.com/) for any technical assistance during the setup.
 
 ### FAQs
 
