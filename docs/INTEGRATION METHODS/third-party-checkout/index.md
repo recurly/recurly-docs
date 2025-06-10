@@ -20,7 +20,7 @@ The ecommerce checkout options from our trusted gateway partners are designed to
 
 ### Prerequisites & limitations
 
-* Requires a working Recurly V3 API integration and Recurly.js setup.
+* Using Adyen Web Components will require a working Recurly V3 API integration and Recurly.js setup. Stripe Elements does not require Recurly.js, but will require a V3 API implementation.
 * Third Party Checkout uses gateway tokens—migrating payment instruments to a different gateway requires coordination with the original gateway provider.
 * Some APMs are country-restricted. If a method isn’t visible in your Stripe or Adyen dashboard, your merchant country of origin may not qualify for it (e.g. Revolut is available only to UK/EU merchants).
 
