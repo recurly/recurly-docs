@@ -1,6 +1,6 @@
 ---
-title: Events (4.10.3)
-excerpt: Learn about Events for Recurly.js version 4.10.3
+title: Events
+excerpt: Learn about Events for Recurly.js
 deprecated: false
 hidden: false
 metadata:
