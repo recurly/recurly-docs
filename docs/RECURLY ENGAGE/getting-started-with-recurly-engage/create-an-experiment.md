@@ -45,13 +45,19 @@ Define what success looks like—e.g., a click or purchase—before creating var
 
 1. In Recurly Engage, **go** to **Settings > Usage Tracker** and **add** a new tracker.
 
-![](https://files.readme.io/92f9bc4-image.png) ![](https://files.readme.io/0aa0cf3-image.png)
+![](https://files.readme.io/92f9bc4-image.png)
 
 <br />
 
+![](https://files.readme.io/0aa0cf3-image.png)
+
 2. Return to your prompt and attach the custom goal under **Goals**.
 
-![](https://files.readme.io/b7ac98d-image.png) ![](https://files.readme.io/ae3bdf1-image.png)
+![](https://files.readme.io/b7ac98d-image.png)
+
+<br />
+
+![](https://files.readme.io/ae3bdf1-image.png)
 
 <br />
 
