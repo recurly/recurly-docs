@@ -19,12 +19,12 @@ Adyen offers powerful tools to support quick and dynamic consumer checkout solut
 
 # Definition
 
-Adyen Web Components are customizable UI elements for various payment methods. When paired with Recurly.js, you collect an Adyen “state data” token on your site, pass it into Recurly.js to generate an `r.js` token ID, and then submit that to Recurly via API to complete one-time or recurring charges.
+Adyen Web Components are customizable UI elements for various payment methods. When paired with Recurly.js, you collect an Adyen “state data” on your site, pass it into Recurly.js to generate a Recurly.js `token_id`and then submit that to Recurly via API to complete one-time or recurring charges.
 
 # Key benefits
 
 * **Branded checkout**: Use Adyen’s Web Components to deliver a consistent, on-brand payment UI within your own site.
-* **Seamless tokenization**: Leverage Recurly.js to turn Adyen state data into a reusable payment token for future renewals.
+* **Seamless tokenization**: Leverage Recurly.js to turn Adyen state data into a reusable payment token for future renewals and one time charges (where supported).
 * **Flexible billing updates**: Let customers update payment details via Adyen Components or any other Recurly payment solution (Checkout, HPP, Recurly.js).
 
 # Key details
@@ -32,7 +32,7 @@ Adyen Web Components are customizable UI elements for various payment methods. W
 ## Supported Features
 
 * Build a custom checkout flow with Adyen Web Components and pass the component’s state data into Recurly.js.
-* Recurly.js generates a token ID you submit to the V3 API—Recurly unpacks it and sends the state data back to Adyen to authorize and store payment details.
+* Recurly.js generates a token ID you submit to the V3 API—Recurly unpacks the encrypted Adyen data and sends the state data to Adyen to authorize and store payment details.
 * Customers may update billing info through Adyen Components or via Recurly’s other payment solutions (Checkout, HPP, Recurly.js).
 * Explore Adyen’s live demo: [Adyen Web Components Demo](https://www.mystoredemo.io/#/checkout)
 
