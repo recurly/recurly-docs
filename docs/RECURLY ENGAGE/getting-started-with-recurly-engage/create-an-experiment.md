@@ -59,7 +59,9 @@ Define what success looks like—e.g., a click or purchase—before creating var
 
 ![](https://files.readme.io/26772c2-image.png)
 
-2. Give your experiment a clear name—see the [overview on experiments](experiments-1) for best practices. ![](https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png)
+2. Give your experiment a clear name—see the [overview on experiments](experiments-1) for best practices.
+
+![](https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png)
 
 ### Configure variations
 
