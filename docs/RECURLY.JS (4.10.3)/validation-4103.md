@@ -1,6 +1,6 @@
 ---
-title: Validation (4.10.3)
-excerpt: Learn all about Validation  using Recurly.js version 4.10.3.
+title: Validation
+excerpt: Learn all about Validation  using Recurly.js
 deprecated: false
 hidden: false
 metadata:
