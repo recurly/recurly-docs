@@ -1,6 +1,8 @@
 ---
 title: Create a Pop up
-excerpt: ''
+excerpt: >-
+  Steps to create and configure a pop-up prompt in Recurly Engage, from initial
+  setup to live deployment.
 deprecated: false
 hidden: true
 metadata:
@@ -10,13 +12,7 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Steps to create and configure a pop-up prompt in Recurly Engage, from initial setup to live deployment.
-
 # Overview
-
-This guide walks you through building a pop-up prompt in Recurly Engage. The same steps apply to interstitials, notifications, and video prompts—only the type you select changes.
 
 ### Required plan
 
@@ -40,22 +36,25 @@ A **pop-up** is a modal prompt that appears over your site’s content to delive
 
 In this guide, you’ll create a browser pop-up. To start:
 
-1. **Go** to Prompts > New Prompt (**+** sign)
+1. **Go** to Prompts > New Prompt (**+** sign).
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/c46f2ae-Screenshot_2024-05-23_at_16.31.29.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c46f2ae-Screenshot_2024-05-23_at_16.31.29.png" />
 
-### Select “Desktop and Mobile” then choose “Pop-up”
+2. **Select** “Desktop and Mobile” then **choose** “Pop-up”.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/66c5557-Screenshot_2024-05-23_at_16.32.40.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/66c5557-Screenshot_2024-05-23_at_16.32.40.png" />
 
-### Add a name and description
+3. **Add** a name and description.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/6d1cd5a-Screenshot_2024-05-23_at_16.34.02.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6d1cd5a-Screenshot_2024-05-23_at_16.34.02.png" />
 
-### Add one or more segments
+4. **Add** one or more segments
 
-Use segments to control who sees the prompt.\
-For testing, add the **Test Users** segment so you can preview as a specific user group. ![](https://files.readme.io/c389c63-Screenshot_2024-05-23_at_16.35.19.png) ![](https://files.readme.io/9acb5c6-Screenshot_2024-05-23_at_16.36.08.png) ![](https://files.readme.io/8b788cc-Screenshot_2024-05-23_at_16.37.00.png) ![](https://files.readme.io/74f4509-Screenshot_2024-05-23_at_16.37.51.png)
+Use segments to control who sees the prompt. For testing, add the **Test Users** segment so you can preview as a specific user group.
+
+![](https://files.readme.io/c389c63-Screenshot_2024-05-23_at_16.35.19.png) ![](https://files.readme.io/9acb5c6-Screenshot_2024-05-23_at_16.36.08.png) ![](https://files.readme.io/8b788cc-Screenshot_2024-05-23_at_16.37.00.png) ![](https://files.readme.io/74f4509-Screenshot_2024-05-23_at_16.37.51.png)
+
+<br />
 
 ### Add a trigger
 
