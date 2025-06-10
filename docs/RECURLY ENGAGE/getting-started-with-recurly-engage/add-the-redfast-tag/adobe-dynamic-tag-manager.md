@@ -1,6 +1,8 @@
 ---
-title: Adobe Dynamic Tag Manager
-excerpt: ''
+title: Adobe dynamic tag manager
+excerpt: >-
+  Step-by-step instructions for integrating the Recurly Engage JavaScript client
+  via Adobe Dynamic Tag Manager.
 deprecated: false
 hidden: true
 metadata:
@@ -10,37 +12,63 @@ metadata:
 next:
   description: ''
 ---
-You can integrate the Redfast javascript client into your web application via Adobe DTM with the tutorial below. Once you've finished this step Redfast will begin connecting our data with your imported data to learn about your customers.
+# Overview
 
-### Configure Embed Code
+Learn how to deploy the Recurly Engage tag through Adobe Dynamic Tag Manager (DTM) to begin syncing your site’s data with Engage for personalized customer experiences.
 
-There are three hosting options available with DTM:
+### Required plan
 
-* Akamai
-* FTP Delivery
-* Library Download
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-Location options are:
+### Prerequisites & limitations
 
-* Header
-* Footer
+* You must have publish and rule-creation permissions in your Adobe DTM account.
+* Ensure you can add or modify embed code in your site’s header.
 
-We recommend that you choose Akamai hosting and placing the embed tag in the Header section. For greater control Redfast can work with your IT team to support the Library Download option.
+# Definition
 
-#### Rules
+The **Adobe Dynamic Tag Manager integration** injects the Recurly Engage JavaScript client into your pages using DTM rules and workflows, enabling Engage to collect events and deliver customized checkout experiences.
 
-In most cases the Page-Load rule is most appropriate when targeting areas of the site.
+# Key benefits
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/b53b37f-rules2.png.img.png" />
+* **Seamless deployment**: Use your existing DTM workflows to roll out Engage without touching site code.
+* **Controlled release**: Leverage DTM’s approval process to test in staging before going live.
+* **Performance-safe**: Host the client via Akamai or your preferred DTM option to minimize latency.
 
-#### Workflows
+# Key details
 
-We recommend that you configure a workflow such that the tag can be propagated from a non production (i.e. Staging) to the production environment utilizing the approval workflow made available in DTM.
+## Guide
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/77107ad-image_8.png.img.png" />
+### Configure embed code
 
-#### Installation
+Choose one of three hosting options in DTM, then select where to place the embed tag:
 
-The DTM header code that is needed to load the Redfast tag should be added to all pages of the site./
+* **Hosting options**
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/cdc7383-image_11.png.img.png" />
+  * Akamai
+  * FTP Delivery
+  * Library Download
+* **Location options**
+
+  * Header
+  * Footer
+
+We recommend **Akamai hosting** with the embed tag in the **Header** for fastest load times. For more control, coordinate with your IT team to use the Library Download option.
+
+### Rules
+
+In most cases, use a **Page-Load** rule when targeting your site’s pages.
+
+![](https://files.readme.io/b53b37f-rules2.png.img.png)
+
+### Workflows
+
+Propagate your tag from non-production (staging) to production using DTM’s approval workflow to ensure safe rollouts.
+
+![](https://files.readme.io/77107ad-image_8.png.img.png)
+
+### Installation
+
+Add the DTM header code that loads the Recurly Engage tag to **all pages** of your site.
+
+![](https://files.readme.io/cdc7383-image_11.png.img.png)
