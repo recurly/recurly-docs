@@ -1,6 +1,8 @@
 ---
-title: Tealium iQ Tag Manager
-excerpt: ''
+title: Tealium iQ tag manager
+excerpt: >-
+  Step-by-step instructions for integrating the Recurly Engage JavaScript client
+  via Tealium iQ Tag Manager.
 deprecated: false
 hidden: true
 metadata:
@@ -10,74 +12,70 @@ metadata:
 next:
   description: ''
 ---
-You can integrate the Redfast javascript client into your web application via Tealium iQ Tag Manager with the tutorial below. Once you've finished this step Redfast will begin connecting our data with your imported data to learn about your customers.
+# Overview
 
-### Login to redfast and go to your app
+Use Tealium iQ Tag Manager to load the Recurly Engage SDK on your site without editing page code.
 
-Make sure you are on the right app.
+### Required plan
 
-### Locate the JS code snippet from Redfast > Settings > Usage Tracking
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/539dc52-Screenshot_2024-05-22_at_21.56.18.png" />
+### Prerequisites & limitations
 
-### Copy the URL portion of the code snippet. We will use it in step 7
+* You must have publish permissions in both your Recurly Engage and Tealium iQ accounts.
+* Access to **Settings > Usage Tracking** in your Recurly Engage app.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/1e10450-Screenshot_2024-05-22_at_21.59.39.png" />
+# Definition
 
-### Login to tealium and select the correct app
+The **Tealium iQ Tag Manager integration** injects the Recurly Engage JS client via a generic script tag, enabling data collection and branded checkout flows.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/7cde0a3-tealium-2a.png" />
+# Key benefits
 
-### Go to the tag manager tab and click "Add Tag"
+* **Rapid setup**: Deploy the client through Tealium’s UI—no code changes needed.
+* **Unified tagging**: Manage Engage alongside all your marketing and analytics tags.
+* **Instant rollouts**: Publish to Dev, QA, and Prod environments in one workflow.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/daa497e-tealium-3.png" />
+# Key details
 
-### In the pop up search box type "Generic Tag" and click "Add"
+You can integrate the Recurly Engage JavaScript client into your web application via Tealium iQ Tag Manager by following the steps below. Once complete, Recurly Engage will begin syncing its data with your site to personalize customer experiences.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/af67285-tealium-4.png" />
+1. **Log in to Recurly Engage and select your application**: Ensure you’re in the correct app context.
 
-### Add the Redfast tag information
+2. **Retrieve the client URL**: Navigate to **Settings > Usage Tracking**.
 
-* Update the title to "Redfast Tag"
-* Update the "Type" to "Script"
-* Update the "Base Url" to the Url from step 1
-* Scroll down a bit and update the "Request Script Once" to "Enable"
-* Click "Finish"
+![](https://files.readme.io/539dc52-Screenshot_2024-05-22_at_21.56.18.png)
+
+3. Copy the URL portion of the code snippet; you’ll need it in step 6.
+
+![](https://files.readme.io/1e10450-Screenshot_2024-05-22_at_21.59.39.png)
+
+4. **Log in to Tealium iQ and select the correct profile**
+
+![](https://files.readme.io/7cde0a3-tealium-2a.png)
+
+5. **Add a new tag**: Go to the **Tags** tab and click **Add Tag**.
+
+![](https://files.readme.io/daa497e-tealium-3.png)
+
+6. **Choose the Generic Tag template**: In the popup search for “Generic Tag” and click **Add**.
+
+![](https://files.readme.io/af67285-tealium-4.png)
+
+7. **Configure the Recurly Engage tag**
+
+* **Title**: Recurly Engage Tag
+* **Type**: Script
+* **Base URL**: Paste the URL from step 2
+* **Request Script Once**: Enable
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/aaa8198-tealium-5a.png" />
+
+<br />
 
 <Image align="left" className="border" border={true} src="https://files.readme.io/93928cb-tealium-5.png" />
 
 <br />
 
-<br />
+8. **Publish the tag**: Click **Dev**, **QA**, and **Prod** to push the tag through each environment.
 
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/aaa8198-tealium-5a.png" />
-
-### Publish the tag
-
-Click the "Dev", "QA", and "Prod" buttons to publish the redfast SDK. That's it!
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/e8db19b-tealium-6.png" />
+![](https://files.readme.io/e8db19b-tealium-6.png)
