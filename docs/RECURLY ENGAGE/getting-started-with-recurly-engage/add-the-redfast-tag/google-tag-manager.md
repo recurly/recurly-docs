@@ -1,5 +1,5 @@
 ---
-title: Google Tag Manager
+title: Google tag manager
 excerpt: >-
   Step-by-step instructions for deploying the Recurly Engage client SDK via
   Google Tag Manager.
