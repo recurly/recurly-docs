@@ -4,7 +4,7 @@ excerpt: Learn about our Recurly.js solution!
 deprecated: false
 hidden: false
 metadata:
-  robots: index
+  robots: noindex
 ---
 ![](https://recurly.com/developers/images/recurly-js-logo.png)
 
