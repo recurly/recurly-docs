@@ -4,7 +4,7 @@ excerpt: >-
   Enable a broad array of payment methods from Stripe and Adyen without leaving
   your Recurly-powered storefront.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
