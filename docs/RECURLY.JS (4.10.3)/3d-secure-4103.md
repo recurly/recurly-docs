@@ -1,6 +1,6 @@
 ---
-title: 3D Secure (4.10.3)
-excerpt: Learn all about 3D Secure using Recurly.js version 4.10.3.
+title: 3D Secure
+excerpt: Learn all about 3D Secure using Recurly.js
 deprecated: false
 hidden: false
 metadata:
