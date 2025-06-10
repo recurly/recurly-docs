@@ -1,6 +1,8 @@
 ---
 title: Create an Experiment
-excerpt: ''
+excerpt: >-
+  Step-by-step guide to creating and running A/B experiments on your prompts in
+  Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,66 +12,66 @@ metadata:
 next:
   description: ''
 ---
-Experiments allow you to test all aspects of your prompt: triggers, design, copy, and actions.
+# Overview
 
-### Add a custom goal (optional)
+### Required plan
 
-Adding a custom goal allows you to track whether the action you wanted to take place actually occurred. For example, you may want to see if a user who clicks a prompt actually ended up purchasing. To add a control group you must do this step before moving on.
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-* [ ]  First add a tracker by going to Settings > Usage Tracker
+### Prerequisites & limitations
 
-  ![](https://files.readme.io/92f9bc4-image.png)
+* You must have **Company** or **App Administrator** permissions in Recurly Engage.
+* At least one prompt must exist in draft or review status before creating an experiment.
 
-  ![](https://files.readme.io/0aa0cf3-image.png)
+# Definition
 
-* [ ] Now go to your prompt and add the custom goal
+An **experiment** runs multiple versions (variations) of a prompt against each other—optionally including a control group—to measure performance based on custom goals and decide which version to deploy.
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/b7ac98d-image.png" />
+# Key benefits
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/ae3bdf1-image.png" />
+* **Data-driven decisions**: Use real user interactions to choose the most effective prompt variant.
+* **Controlled testing**: Isolate single changes (copy, design, trigger) to understand their impact.
+* **Seamless rollout**: Promote the winning variation automatically when the experiment completes.
 
-<br />
+# Key details
+## Guide
 
-### Select "+New experiment"
+Experiments follow these steps:
 
-Now that you've added your custom goal it's time to create the experiment
+1. (Optional) Add a custom goal
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/26772c2-image.png" />
+Define what success looks like—e.g., a click or purchase—before creating variations.
 
-### Name the experiment
+- In Recurly Engage, go to **Settings > Usage Tracker** and add a new tracker.
 
-Refer to the [overview on experiments](experiments-1) for additional information.
+![](https://files.readme.io/92f9bc4-image.png) ![](https://files.readme.io/0aa0cf3-image.png)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png" />
+- Return to your prompt and attach the custom goal under **Goals**.
 
-### Default setup
+![](https://files.readme.io/b7ac98d-image.png) ![](https://files.readme.io/ae3bdf1-image.png)
 
-By default there is only one variation - the original prompt. If you added a custom goal in step one you can also specify a control. The control will allow you to see whether showing a prompt is making a meaningful impact or not.
+### 2) Create the experiment
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/743630a-image.png" />
+1. Open your prompt and click **+ New experiment**. ![](https://files.readme.io/26772c2-image.png)
+2. Give your experiment a clear name—see the [overview on experiments](experiments-1) for best practices. ![](https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png)
 
-### Add a variation
+### 3) Configure variations
 
-A variation is a change to the Original prompt. Changes can be made on most aspects of a prompt including title, message, buttons, appearance, triggers, and actions.
+* **Default setup**\
+  By default, your experiment contains the **Original** prompt. If you added a custom goal, you may also include a **Control** group to measure the impact of showing vs. hiding the prompt. ![](https://files.readme.io/743630a-image.png)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png" />
+* **Add a variation**\
+  Click **Add variation**, name it to reflect the change (e.g., “New headline”), and modify one or more aspects—text, design, triggers, or actions. ![](https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png)
+  Use the editor to scroll down and adjust settings as needed: ![](https://files.readme.io/c7be6b1-image.png)
 
-### Make one or more changes
+### 4. Allocate traffic
 
-Start by naming the variant based on the change you wish to make, this will allow you to differentiate this variation from others that you may wish to create for the same prompt. Make changes to one or more aspects of this prompt such as the title. To change Actions or Triggers you will need to scroll down to see the settings.
+Set the percentage of users who see each variation—ensure that total equals 100%. ![](https://files.readme.io/f175e0f-image.png)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/c7be6b1-image.png" />
+### 5. Launch and monitor
 
-### Set the percent of traffic to each variation
+1. Click **Start experiment** and confirm. ![](https://files.readme.io/db1802e-image.png)
+2. Monitor performance in real time—click-through and conversion rates update within minutes, depending on traffic.
+3. When ready, click **Use This** on the winning variation to replace the control and end the experiment. ![](https://files.readme.io/5f30ea5-image.png)
 
-![](https://files.readme.io/f175e0f-image.png)
-
-### Start the experiment and confirm
-
-![](https://files.readme.io/db1802e-image.png)
-
-### Review an in progress experiment
-
-Your experiment is now running and should report click through rates on the variation within minutes depending on your traffic level. The variation with a higher click through rate is one that is performing better. You have the option of allowing the experiment to conitnue to run or you can click on 'Use This' which will replace the control item with the selected variation and end the experiment.
-
-![](https://files.readme.io/5f30ea5-image.png)
+That’s it—your experiment is live, and you can review results to make data-driven optimizations to your prompts.
