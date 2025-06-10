@@ -52,24 +52,25 @@ In this guide, you’ll create a browser pop-up. To start:
 
 Use segments to control who sees the prompt. For testing, add the **Test Users** segment so you can preview as a specific user group.
 
-![](https://files.readme.io/c389c63-Screenshot_2024-05-23_at_16.35.19.png) ![](https://files.readme.io/9acb5c6-Screenshot_2024-05-23_at_16.36.08.png) ![](https://files.readme.io/8b788cc-Screenshot_2024-05-23_at_16.37.00.png) ![](https://files.readme.io/74f4509-Screenshot_2024-05-23_at_16.37.51.png)
-
+![](https://files.readme.io/c389c63-Screenshot_2024-05-23_at_16.35.19.png)
+<br />
+![](https://files.readme.io/9acb5c6-Screenshot_2024-05-23_at_16.36.08.png)
+<br />
+![](https://files.readme.io/8b788cc-Screenshot_2024-05-23_at_16.37.00.png)
+<br />
+![](https://files.readme.io/74f4509-Screenshot_2024-05-23_at_16.37.51.png)
 <br />
 
-<br />
-
-<br />
-
-### Add a trigger
+5. **Add** a trigger.
 
 Define when and where the pop-up appears. Selecting **All Pages** shows it to every visitor.
 
 ![](https://files.readme.io/035de64-Screenshot_2024-05-23_at_16.38.49.png)
-
+<br />
 ![](https://files.readme.io/7bfe1b7-Screenshot_2024-05-23_at_16.39.44.png)
-
+<br />
 ![](https://files.readme.io/371bb5f-Screenshot_2024-05-23_at_16.40.39.png)
-
+<br />
 ![](https://files.readme.io/21823b1-Screenshot_2024-05-23_at_16.41.38.png)
 
 ### Set a limit (optional)
