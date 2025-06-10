@@ -70,6 +70,6 @@ The **Google Tag Manager integration** leverages a custom GTM template to inject
 
 7. **Publish your container**: **Click** **Submit** in the top right of GTM, **add** a descriptive version name (e.g., “Add Recurly Engage SDK”), and **hit** **Publish**.
 
-![](https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png" />
