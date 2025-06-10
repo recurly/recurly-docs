@@ -1,6 +1,6 @@
 ---
 title: Getting started
-excerpt: This is how you get started with **Recurly.js version 4.10.3**.
+excerpt: This is how you get started with Recurly.js
 deprecated: false
 hidden: false
 metadata:
