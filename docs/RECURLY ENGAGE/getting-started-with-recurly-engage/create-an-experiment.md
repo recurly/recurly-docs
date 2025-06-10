@@ -45,19 +45,19 @@ Define what success looks like—e.g., a click or purchase—before creating var
 
 1. In Recurly Engage, **go** to **Settings > Usage Tracker** and **add** a new tracker.
 
-![](https://files.readme.io/92f9bc4-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/92f9bc4-image.png" />
 
 <br />
 
-![](https://files.readme.io/0aa0cf3-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0aa0cf3-image.png" />
 
 2. Return to your prompt and attach the custom goal under **Goals**.
 
-![](https://files.readme.io/b7ac98d-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b7ac98d-image.png" />
 
 <br />
 
-![](https://files.readme.io/ae3bdf1-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ae3bdf1-image.png" />
 
 <br />
 
@@ -65,42 +65,42 @@ Define what success looks like—e.g., a click or purchase—before creating var
 
 1. Open your prompt and click **+ New experiment**.
 
-![](https://files.readme.io/26772c2-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/26772c2-image.png" />
 
 2. Give your experiment a clear name—see the [overview on experiments](experiments-1) for best practices.
 
-![](https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png" />
 
 ### Configure variations
 
 **Default setup**: By default, your experiment contains the **Original** prompt. If you added a custom goal, you may also include a **Control** group to measure the impact of showing vs. hiding the prompt.
 
-![](https://files.readme.io/743630a-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/743630a-image.png" />
 
 **Add a variation**: Click **Add variation**, name it to reflect the change (e.g., “New headline”), and modify one or more aspects—text, design, triggers, or actions.
 
-![](https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png" />
 
 **Use** the editor to scroll down and adjust settings as needed:
 
-![](https://files.readme.io/c7be6b1-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c7be6b1-image.png" />
 
 ### Allocate traffic
 
 Set the percentage of users who see each variation—ensure that total equals 100%.
 
-![](https://files.readme.io/f175e0f-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f175e0f-image.png" />
 
 ### Launch and monitor
 
 1. Click **Start experiment** and confirm.
 
-![](https://files.readme.io/db1802e-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/db1802e-image.png" />
 
 2. Monitor performance in real time—click-through and conversion rates update within minutes, depending on traffic.
 
 3. When ready, click **Use This** on the winning variation to replace the control and end the experiment.
 
-![](https://files.readme.io/5f30ea5-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5f30ea5-image.png" />
 
 That’s it—your experiment is live, and you can review results to make data-driven optimizations to your prompts.
