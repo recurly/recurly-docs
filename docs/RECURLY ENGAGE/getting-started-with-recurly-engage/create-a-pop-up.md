@@ -86,28 +86,45 @@ Use segments to control who sees the prompt. For testing, add the **Test Users**
 
 Control how many times or how many users can see the pop-up by choosing from available limit types.
 
-![](https://files.readme.io/f44ce1a-Screenshot_2024-05-23_at_16.43.11.png) ![](https://files.readme.io/ecd3c1c-Screenshot_2024-05-23_at_16.44.28.png)
+![](https://files.readme.io/f44ce1a-Screenshot_2024-05-23_at_16.43.11.png)
+<br /> 
+![](https://files.readme.io/ecd3c1c-Screenshot_2024-05-23_at_16.44.28.png)
 
 ### Set a schedule (optional)
 
-Schedule start and end dates or times for your pop-up campaign. ![](https://files.readme.io/3ea543f-Screenshot_2024-05-24_at_16.13.26.png) ![](https://files.readme.io/8779e53-Screenshot_2024-05-24_at_16.14.16.png)
+Schedule start and end dates or times for your pop-up campaign.
+
+![](https://files.readme.io/3ea543f-Screenshot_2024-05-24_at_16.13.26.png)
+<br /> 
+![](https://files.readme.io/8779e53-Screenshot_2024-05-24_at_16.14.16.png)
 
 ### Set an action (optional)
 
-Redirect users after they interact with the pop-up by configuring **Website Actions**. ![](https://files.readme.io/2d57a20-Screenshot_2024-05-24_at_16.16.39.png) ![](https://files.readme.io/e353f8a-Screenshot_2024-05-24_at_17.13.47.png)
+Redirect users after they interact with the pop-up by configuring **Website Actions**. 
+
+![](https://files.readme.io/2d57a20-Screenshot_2024-05-24_at_16.16.39.png) 
+<br />
+![](https://files.readme.io/e353f8a-Screenshot_2024-05-24_at_17.13.47.png)
 
 ### Select **Edit** to design the prompt
 
-Click **Edit** to open the designer and tweak styles, copy, and layout. ![](https://files.readme.io/e5df649-Screenshot_2024-05-24_at_17.15.01.png)
+Click **Edit** to open the designer and tweak styles, copy, and layout. 
+
+![](https://files.readme.io/e5df649-Screenshot_2024-05-24_at_17.15.01.png)
 
 ### Design the prompt
 
-Customize colors, text, buttons, and images. Preview updates live.\
-For sample background images, download [this ZIP file](https://docs.redfast.com/images/samples.zip). ![](https://files.readme.io/67fe571-Screenshot_2024-05-24_at_17.20.04.png)
+Customize colors, text, buttons, and images. Preview updates live. For sample background images, download [this ZIP file](https://docs.redfast.com/images/samples.zip). 
+
+![](https://files.readme.io/67fe571-Screenshot_2024-05-24_at_17.20.04.png)
 
 ### Preview your prompt
 
-Once saved, preview your pop-up on your live site to ensure it looks and behaves as expected. ![](https://files.readme.io/23d54d9-Screenshot_2024-05-24_at_17.23.01.png) ![](https://files.readme.io/d5b09d4-Screenshot_2024-05-24_at_17.23.34.png)
+Once saved, preview your pop-up on your live site to ensure it looks and behaves as expected.
+
+![](https://files.readme.io/23d54d9-Screenshot_2024-05-24_at_17.23.01.png) 
+<br />
+![](https://files.readme.io/d5b09d4-Screenshot_2024-05-24_at_17.23.34.png)
 
 ### That’s it!
 
