@@ -82,53 +82,51 @@ Use segments to control who sees the prompt. For testing, add the **Test Users**
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/21823b1-Screenshot_2024-05-23_at_16.41.38.png" />
 
-### Set a limit (optional)
+6. **Set** a limit (optional).
 
 Control how many times or how many users can see the pop-up by choosing from available limit types.
 
-![](https://files.readme.io/f44ce1a-Screenshot_2024-05-23_at_16.43.11.png)
-<br /> 
-![](https://files.readme.io/ecd3c1c-Screenshot_2024-05-23_at_16.44.28.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f44ce1a-Screenshot_2024-05-23_at_16.43.11.png" />
 
-### Set a schedule (optional)
-
-Schedule start and end dates or times for your pop-up campaign.
-
-![](https://files.readme.io/3ea543f-Screenshot_2024-05-24_at_16.13.26.png)
-<br /> 
-![](https://files.readme.io/8779e53-Screenshot_2024-05-24_at_16.14.16.png)
-
-### Set an action (optional)
-
-Redirect users after they interact with the pop-up by configuring **Website Actions**. 
-
-![](https://files.readme.io/2d57a20-Screenshot_2024-05-24_at_16.16.39.png) 
 <br />
-![](https://files.readme.io/e353f8a-Screenshot_2024-05-24_at_17.13.47.png)
 
-### Select **Edit** to design the prompt
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ecd3c1c-Screenshot_2024-05-23_at_16.44.28.png" />
 
-Click **Edit** to open the designer and tweak styles, copy, and layout. 
+7. **Set** a schedule (optional): **Schedule** start and end dates or times for your pop-up campaign.
 
-![](https://files.readme.io/e5df649-Screenshot_2024-05-24_at_17.15.01.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3ea543f-Screenshot_2024-05-24_at_16.13.26.png" />
 
-### Design the prompt
-
-Customize colors, text, buttons, and images. Preview updates live. For sample background images, download [this ZIP file](https://docs.redfast.com/images/samples.zip). 
-
-![](https://files.readme.io/67fe571-Screenshot_2024-05-24_at_17.20.04.png)
-
-### Preview your prompt
-
-Once saved, preview your pop-up on your live site to ensure it looks and behaves as expected.
-
-![](https://files.readme.io/23d54d9-Screenshot_2024-05-24_at_17.23.01.png) 
 <br />
-![](https://files.readme.io/d5b09d4-Screenshot_2024-05-24_at_17.23.34.png)
 
-### That’s it!
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8779e53-Screenshot_2024-05-24_at_16.14.16.png" />
 
-When you’re happy with your design, click **Save**, then set the status to **Start**. Your pop-up is now live. ![](https://files.readme.io/72e4d57-Screenshot_2024-05-24_at_17.24.40.png)
+8. **Set** an action (optional): **Redirect** users after they interact with the pop-up by configuring **Website Actions**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2d57a20-Screenshot_2024-05-24_at_16.16.39.png" />
+
+<br />
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e353f8a-Screenshot_2024-05-24_at_17.13.47.png" />
+
+9. **Click** **Edit** to open the designer and tweak styles, copy, and layout.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e5df649-Screenshot_2024-05-24_at_17.15.01.png" />
+
+10. **Design** the prompt: **Customize** colors, text, buttons, and images. **Preview** updates live. For sample background images, **download** [this ZIP file](https://docs.redfast.com/images/samples.zip).
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/67fe571-Screenshot_2024-05-24_at_17.20.04.png" />
+
+11. **Preview** your prompt: Once saved, **preview** your pop-up on your live site to ensure it looks and behaves as expected.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/23d54d9-Screenshot_2024-05-24_at_17.23.01.png" />
+
+<br />
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d5b09d4-Screenshot_2024-05-24_at_17.23.34.png" />
+
+11. When you’re happy with your design, click **Save**, then set the status to **Start**. Your pop-up is now live.
+
+![](https://files.readme.io/72e4d57-Screenshot_2024-05-24_at_17.24.40.png)
 
 ### Test the prompt
 
