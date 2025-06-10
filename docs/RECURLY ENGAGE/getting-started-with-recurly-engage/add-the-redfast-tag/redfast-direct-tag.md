@@ -1,5 +1,5 @@
 ---
-title: Direct tag manager
+title: Direct tag management
 excerpt: >-
   Instructions for embedding the Recurly Engage JavaScript SDK directly into
   your site’s HTML.
