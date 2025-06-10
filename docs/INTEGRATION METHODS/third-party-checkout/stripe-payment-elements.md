@@ -4,7 +4,7 @@ excerpt: >-
   Accept and tokenize Stripe Payment Elements in Recurly for a fully
   customizable, secure checkout experience.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
