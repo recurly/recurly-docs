@@ -6,12 +6,6 @@ hidden: false
 metadata:
   robots: index
 ---
-## Upgrading
-
-Upgrading from a previous version of Recurly.js.
-
-***
-
 ### Upgrading from v3
 
 Recurly.js v4 introduced the concept of hosted fields. These are a more secure method of capturing customer card data, ensuring that their payment information is never exposed to your payment form. This is a huge benefit for security and reduced PCI compliance exposure.
