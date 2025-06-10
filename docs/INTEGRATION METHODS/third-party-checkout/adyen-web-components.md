@@ -4,7 +4,7 @@ excerpt: >-
   Accept and tokenize Adyen Web Components in Recurly for a seamless, branded
   checkout experience powered by Recurly.js.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
