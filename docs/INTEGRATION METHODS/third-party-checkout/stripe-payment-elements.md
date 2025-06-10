@@ -15,18 +15,18 @@ Stripe offers powerful tools to support quick and dynamic consumer checkout solu
 ### Prerequisites & limitations
 
 * Requires a working Recurly V3 API integration and Recurly.js setup.
-* Some Stripe payment methods and APMs are restricted by merchant country—if you don’t see a method in your Stripe Dashboard, your account’s country may not qualify (e.g. Revolut is available only in the UK/EU).
+* Some Stripe payment methods and APMs are restricted by merchant country—if you don’t see a method in your Stripe Dashboard, your account’s country may not qualify to enable it (e.g. Revolut is available only in the UK/EU).
 * Stripe Payment Links, Stripe Checkout, and Radar are not supported through this integration.
 
 # Definition
 
-Stripe Payment Elements lets you build a fully branded checkout UI using Stripe’s hosted components, then pass a “confirmation token” to Recurly’s V3 API to process payments and store reusable payment details for both one-time and recurring charges.
+Stripe Payment Elements lets you build a fully branded checkout UI using Stripe’s components, then pass a “confirmation token” to Recurly’s V3 API to process payments and store reusable payment details for both one-time and recurring charges.
 
 # Key benefits
 
-* **Customizable checkout**: Design your own UI with Stripe Elements for a seamless, on-brand experience.
-* **Seamless tokenization**: Send Stripe confirmation tokens to Recurly for secure, PCI-compliant payment processing.
-* **Wide payment support**: Offer cards, wallets, direct debits, and select APMs—all within your custom checkout flow.
+* **Customizable checkout**: Design your own UI with Stripe Payment Elements for a seamless, on-brand experience. Use Stripe's pre-built themes, or design your own with the customization APIs.
+* **Seamless tokenization**: Send Stripe confirmation tokens to Recurly for secure, PCI-compliant payment processing, and upon approval, a gateway token will be returned for processing renewals and charges.
+* **Wide payment support**: Offer cards, wallets, direct debit options, and select APMs—all within your custom checkout flow.
 
 # Key details
 
@@ -43,5 +43,5 @@ Read more about enabling Stripe Payment Elements in the [Developer Hub guide](ht
 ## Supported payment methods
 
 * **Cards, Link by Stripe, Apple Pay, Google Pay, Cash App Pay**
-* **Direct Debit**: ACH, SEPA, BACS, iDEAL, BECS (requires [Financial Connections](https://stripe.com/financial-connections))
+* **Direct Debit**: ACH, SEPA, BACS, iDEAL, BECS (ACH requires [Financial Connections](https://stripe.com/financial-connections) for NACHA compliance.)
 * **Other APMs**: Klarna Recurring (Pay Now, Pay Later, BNPL), Revolut
