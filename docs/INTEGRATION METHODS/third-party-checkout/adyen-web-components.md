@@ -1,5 +1,5 @@
 ---
-title: Adyen web components
+title: Adyen Web Components
 excerpt: >-
   Accept and tokenize Adyen Web Components in Recurly for a seamless, branded
   checkout experience powered by Recurly.js.
@@ -15,7 +15,7 @@ Adyen offers powerful tools to support quick and dynamic consumer checkout solut
 ### Prerequisites & limitations
 
 * Requires a working Recurly.js and V3 API integration.
-* Does **not** support Adyen’s app components or React/Native SDKs—only the Web Components.
+* Does **not** support Adyen’s app (iOS/Android) components or React/Native SDKs—only the Web Components for the listed payment methods are supported.
 
 # Definition
 
