@@ -59,16 +59,16 @@ We recommend **Akamai hosting** with the embed tag in the **Header** for fastest
 
 In most cases, use a **Page-Load** rule when targeting your site’s pages.
 
-![](https://files.readme.io/b53b37f-rules2.png.img.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b53b37f-rules2.png.img.png" />
 
 ### Workflows
 
 Propagate your tag from non-production (staging) to production using DTM’s approval workflow to ensure safe rollouts.
 
-![](https://files.readme.io/77107ad-image_8.png.img.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/77107ad-image_8.png.img.png" />
 
 ### Installation
 
 Add the DTM header code that loads the Recurly Engage tag to **all pages** of your site.
 
-![](https://files.readme.io/cdc7383-image_11.png.img.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/cdc7383-image_11.png.img.png" />
