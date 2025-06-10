@@ -53,22 +53,24 @@ The **Google Tag Manager integration** leverages a custom GTM template to inject
 
 4. **Search for the Recurly Engage template**: In the **Choose tag type** pane, **use** the search bar (top right) and **enter** **Recurly Engage**.
 
-![](https://files.readme.io/d98bcf3-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d98bcf3-image.png" />
 
-1. **Get your Application ID**: Log in to your Recurly Engage console and navigate to **Settings > Application** to copy the ID.
+5. **Get your Application ID**: Log in to your Recurly Engage console and navigate to **Settings > Application** to copy the ID.
 
-![](https://files.readme.io/f048f16-Screenshot_2024-05-22_at_18.30.09.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f048f16-Screenshot_2024-05-22_at_18.30.09.png" />
 
-1. **Configure the tag**
+6. **Configure the tag**
 
-   * Name it **Recurly Engage Tag**
-   * Paste your **Application ID** into the template field
-   * Under **Triggering**, choose **All Pages**
-   * Click **Save**
+* **Name** it **Recurly Engage Tag**
+* **Paste** your **Application ID** into the template field
+* Under **Triggering**, **choose** **All Pages**
+* **Click** **Save**
 
-     <Image align="center" className="border" border={true} src="https://files.readme.io/1056d86-Screenshot_2024-05-22_at_18.33.53.png" />
+<br />
 
-2. **Publish your container**\
+<Image align="center" className="border" border={true} src="https://files.readme.io/1056d86-Screenshot_2024-05-22_at_18.33.53.png" />
+
+1. **Publish your container**\
    Click **Submit** in the top right of GTM, add a descriptive version name (e.g., “Add Recurly Engage SDK”), and hit **Publish**. ![](https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png)
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png" />
