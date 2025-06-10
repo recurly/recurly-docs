@@ -43,18 +43,18 @@ Follow these steps to add the Recurly Engage SDK directly:
 
 2. **Retrieve the JavaScript snippet**: In the Engage console, **navigate** to **Settings > Usage Tracking**.
 
-![](https://files.readme.io/2c35d83-Screenshot_2024-05-23_at_16.23.58.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2c35d83-Screenshot_2024-05-23_at_16.23.58.png" />
 
 3. **Copy the code snippet**: **Select** and **copy** the entire `<script>` block provided.
 
-![](https://files.readme.io/9e21b53-Screenshot_2024-05-23_at_16.25.30.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9e21b53-Screenshot_2024-05-23_at_16.25.30.png" />
 
 4. **Locate your root HTML file**: Open your project and find the main HTML file (commonly named `index.html`) where other scripts load.
 
-![](https://files.readme.io/3520de0-js-tag-direct-3.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3520de0-js-tag-direct-3.png" />
 
-5. **Paste the snippet above the closing`</head>` tag**: Insert the `<script>` block right before `</head>`. You may add `defer` if desired; it won’t affect the SDK’s operation.
+5. **Paste the snippet above the closing`</head>` tag**: **Insert** the `<script>` block right before `</head>`. You may add `defer` if desired; it won’t affect the SDK’s operation.
 
-![](https://files.readme.io/5bffbbf-js-tag-direct-4.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5bffbbf-js-tag-direct-4.png" />
 
-6. **Save and deploy your project**: Commit your changes, deploy your site, and confirm the SDK loads on page view.
+6. **Save and deploy your project**: **Commit** your changes, **deploy** your site, and **confirm** the SDK loads on page view.
