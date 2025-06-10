@@ -1,6 +1,6 @@
 ---
-title: Pricing (4.10.3)
-excerpt: Learn about pricing using Recurly.js version 4.10.3
+title: Pricing
+excerpt: Learn about pricing using Recurly.js
 deprecated: false
 hidden: false
 metadata:
