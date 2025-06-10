@@ -40,7 +40,7 @@ A **pop-up** is a modal prompt that appears over your site’s content to delive
 
 In this guide, you’ll create a browser pop-up. To start:
 
-### Go to Prompts > New Prompt (Plus sign)
+1. **Go** to Prompts > New Prompt (**+** sign)
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/c46f2ae-Screenshot_2024-05-23_at_16.31.29.png" />
 
