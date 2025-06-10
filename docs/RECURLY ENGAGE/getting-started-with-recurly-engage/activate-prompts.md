@@ -1,6 +1,8 @@
 ---
 title: Activate Prompts
-excerpt: ''
+excerpt: >-
+  How to move your prompts from draft to live in Recurly Engage, including QA
+  review and full deployment.
 deprecated: false
 hidden: true
 metadata:
@@ -10,18 +12,47 @@ metadata:
 next:
   description: ''
 ---
-# Activate Prompts
+# Overview
 
-Activation of prompts has two phases:
+### Required plan
 
-1. **Review phase** - this refers to activating your prompt on an internal segment, generally “Test Users.” You should use this time to QA and perform a final review of your prompt before launching to a broader audience. Adding [test users](test-users) will allow you to live preview your prompts to make adjustments and changes.
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-2. **Active phase**  - this refers to deployment at scale to your specified audience. In this phase you should attach all segments to the prompt that you wish to engage with.
+### Prerequisites & limitations
 
-Prompts can be placed on your site in one of two ways:
+* You must have Company or App Administrator permissions in Recurly Engage.
+* At least one prompt and the necessary segments must already exist.
 
-1. **Using the Redfast[Live tool](live)**. Your support contact can demonstrate how you can use the interactive point-and-click tool to place prompts in the desired area on your site (web only).
+# Definition
 
-2. **Adding class identifiers to your site**. With assistance from your development team, you can add Redfast ids to specific areas of your site.
+**Activating prompts** means enabling your designed prompts (pop-ups, interstitials, notifications, or video prompts) first for testing, then for full audience delivery.
 
-Once a prompt is started it can be paused, restarted or ended as long as there is no active experiment. If you have an active experiment it must be ended before you can pause the prompt.
+# Key benefits
+
+* **Safe QA**: Preview and tweak your prompt with a small group before broad release.
+* **Phased rollout**: Control exactly when and to whom a prompt goes live.
+* **Dynamic lifecycle**: Easily pause, restart, or end prompts without touching code.
+
+# Key details
+
+**Activation phases**
+
+1. **Review phase**
+
+   * Enable your prompt on an internal segment (for example, [Test Users](test-users)).
+   * Perform final QA, preview live behavior, and refine settings.
+
+2. **Active phase**
+
+   * Attach all target segments to deploy the prompt at scale.
+   * Monitor performance and engagement.
+
+**Placement methods**
+
+* **Recurly Engage Live tool**: Use the interactive point-and-click console tool (web only) with guidance from your support contact.
+* **Class identifiers**: Work with your development team to add Recurly Engage IDs to specific elements for precise on-page placement.
+
+**Managing prompt status**
+
+* Once a prompt is live, you can **pause**, **restart**, or **end** it at any time—unless there’s an active experiment.
+* If an experiment is running, end it before pausing the prompt to avoid conflicts.
