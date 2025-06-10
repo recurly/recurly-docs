@@ -1,6 +1,6 @@
 ---
-title: Getting a token (4.10.3)
-excerpt: Learn how to get a token using Recurly.js version 4.10.3.
+title: Getting a token
+excerpt: Learn how to get a token using Recurly.js
 deprecated: false
 hidden: false
 metadata:
