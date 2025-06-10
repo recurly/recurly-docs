@@ -1,6 +1,6 @@
 ---
-title: Apple Pay (4.10.3)
-excerpt: Learn about Apple Pay using Recurly.js version 4.10.3.
+title: Apple Pay
+excerpt: Learn about Apple Pay using Recurly.js
 deprecated: false
 hidden: false
 metadata:
