@@ -1,6 +1,6 @@
 ---
-title: Styling card fields (4.10.3)
-excerpt: Learn about Styling Card Fields in Recurly.js version (4.10.3)
+title: Styling card fields
+excerpt: Learn about Styling Card Fields in Recurly.js version
 deprecated: false
 hidden: false
 metadata:
