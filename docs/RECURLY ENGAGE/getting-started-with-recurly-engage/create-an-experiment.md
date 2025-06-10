@@ -1,5 +1,5 @@
 ---
-title: Create an Experiment
+title: Create an experiment
 excerpt: >-
   Step-by-step guide to creating and running A/B experiments on your prompts in
   Recurly Engage.
@@ -43,7 +43,7 @@ Experiments follow these steps:
 
 Define what success looks like—e.g., a click or purchase—before creating variations.
 
-1. In Recurly Engage, go to **Settings > Usage Tracker** and add a new tracker.
+1. In Recurly Engage, **go** to **Settings > Usage Tracker** and **add** a new tracker.
 
 ![](https://files.readme.io/92f9bc4-image.png) ![](https://files.readme.io/0aa0cf3-image.png)
 
@@ -65,15 +65,15 @@ Define what success looks like—e.g., a click or purchase—before creating var
 
 ### Configure variations
 
-* **Default setup**: By default, your experiment contains the **Original** prompt. If you added a custom goal, you may also include a **Control** group to measure the impact of showing vs. hiding the prompt.
+**Default setup**: By default, your experiment contains the **Original** prompt. If you added a custom goal, you may also include a **Control** group to measure the impact of showing vs. hiding the prompt.
 
 ![](https://files.readme.io/743630a-image.png)
 
-* **Add a variation**: Click **Add variation**, name it to reflect the change (e.g., “New headline”), and modify one or more aspects—text, design, triggers, or actions.
+**Add a variation**: Click **Add variation**, name it to reflect the change (e.g., “New headline”), and modify one or more aspects—text, design, triggers, or actions.
 
 ![](https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png)
 
-Use the editor to scroll down and adjust settings as needed:
+**Use** the editor to scroll down and adjust settings as needed:
 
 ![](https://files.readme.io/c7be6b1-image.png)
 
