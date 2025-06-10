@@ -105,11 +105,15 @@ paymentMethod.submit();
 
 // You may wish to provide a specific customer billing address when calling `submit`.
 paymentMethod.submit({
-  billinAddress: {
+  billingAddress: {
     first_name: 'Ben',
     last_name: 'du Monde',
     address1: '1313 Main St.',
-    // etc.
+    address2: 'Unit 1',
+    city: 'Hope',
+    state: 'WA',
+    postalCode: '98552',
+    country: 'US'
   }
 });
 
