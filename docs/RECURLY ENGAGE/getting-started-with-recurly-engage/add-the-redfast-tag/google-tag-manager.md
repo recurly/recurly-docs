@@ -45,17 +45,19 @@ The **Google Tag Manager integration** leverages a custom GTM template to inject
 
 2. **Select your container**: Ensure it matches the domain you registered in [app setup](setup-your-app).
 
-![](https://files.readme.io/2fe6657-Screenshot_2024-05-22_at_18.16.19.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2fe6657-Screenshot_2024-05-22_at_18.16.19.png" />
 
-1. **Add a new tag**: In the left nav, click **Tags** → **New**. ![](https://files.readme.io/ac79c42-Screenshot_2024-05-22_at_18.17.19.png)
+1. **Add a new tag**: In the left nav, click **Tags** → **New**.
 
-2. **Search for the Recurly Engage template**\
+![](https://files.readme.io/ac79c42-Screenshot_2024-05-22_at_18.17.19.png)
+
+1. **Search for the Recurly Engage template**\
    In the **Choose tag type** pane, use the search bar (top right) and enter **Recurly Engage**. ![](https://files.readme.io/d98bcf3-image.png)
 
-3. **Get your Application ID**\
+2. **Get your Application ID**\
    Log in to your Recurly Engage console and navigate to **Settings > Application** to copy the ID. ![](https://files.readme.io/f048f16-Screenshot_2024-05-22_at_18.30.09.png)
 
-4. **Configure the tag**
+3. **Configure the tag**
 
    * Name it **Recurly Engage Tag**
    * Paste your **Application ID** into the template field
@@ -64,7 +66,7 @@ The **Google Tag Manager integration** leverages a custom GTM template to inject
 
      <Image align="center" className="border" border={true} src="https://files.readme.io/1056d86-Screenshot_2024-05-22_at_18.33.53.png" />
 
-5. **Publish your container**\
+4. **Publish your container**\
    Click **Submit** in the top right of GTM, add a descriptive version name (e.g., “Add Recurly Engage SDK”), and hit **Publish**. ![](https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png)
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png" />
