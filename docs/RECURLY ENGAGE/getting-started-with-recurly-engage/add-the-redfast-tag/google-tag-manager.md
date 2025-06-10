@@ -1,6 +1,8 @@
 ---
 title: Google Tag Manager
-excerpt: ''
+excerpt: >-
+  Step-by-step instructions for deploying the Recurly Engage client SDK via
+  Google Tag Manager.
 deprecated: false
 hidden: true
 metadata:
@@ -10,44 +12,60 @@ metadata:
 next:
   description: ''
 ---
-Using Google Tag Manager is the easiest way to enable Redfast client SDK on your site. Redfast partnered with Google to provide an easy 1-click install solution by following the steps below:
+# Overview
 
-## How-to-video
+### Video
 
-<Embed url="https://www.loom.com/embed/9299487b721c4345a6326916ef68f287?sid=a721bfdd-f71a-431c-ae76-bd8f84bbbc82" href="https://www.loom.com/embed/9299487b721c4345a6326916ef68f287?sid=a721bfdd-f71a-431c-ae76-bd8f84bbbc82" typeOfEmbed="iframe" height="460px" width="100%" iframe="true" provider="loom.com" title="undefined" />
+<Embed url="https://www.loom.com/embed/9299487b721c4345a6326916ef68f287?sid=a721bfdd-f71a-431c-ae76-bd8f84bbbc82" href="https://www.loom.com/embed/9299487b721c4345a6326916ef68f287?sid=a721bfdd-f71a-431c-ae76-bd8f84bbbc82" typeOfEmbed="iframe" height="460px" width="100%" iframe="true" />
 
-## How-to-guide
+### Required plan
 
-### Login to [Google Tag Manager](https://tagmanager.google.com/#/home)
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-### Select your application
+### Prerequisites & limitations
 
-Make sure this matches with the domain information you entered during [app creation](setup-your-app).
+* You must have publish permissions in the GTM container for your site.
+* Ensure you already created a Recurly Engage application and have its Application ID.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/2fe6657-Screenshot_2024-05-22_at_18.16.19.png" />
+# Definition
 
-### Add a new tag
+The **Google Tag Manager integration** leverages a custom GTM template to inject the Recurly Engage SDK onto every page you specify, enabling tracking and branded checkout across your site.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/ac79c42-Screenshot_2024-05-22_at_18.17.19.png" />
+# Key benefits
 
-### Search for Redfast template
+* **One-click setup**: Install the SDK entirely within GTM—no manual code edits.
+* **Centralized management**: Control SDK triggers and updates from a single GTM interface.
+* **Instant rollouts**: Publish changes immediately without redeploying your site.
 
-In the top right-hand corner of the Choose tag type pane, select the search option and type **Redfast**
+# Key details
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/d98bcf3-image.png" />
+## Guide
 
-### Get your Application ID in Pulse
+1. **Log in to Google Tag Manager**\
+   Visit [GTM](https://tagmanager.google.com/#/home) and open the container for your application.
 
-Login into [Pulse](https://pulse.redfast.com/) and locate your **Application ID** under **Settings/Application**
+2. **Select your container**\
+   Ensure it matches the domain you registered in [app setup](setup-your-app). ![](https://files.readme.io/2fe6657-Screenshot_2024-05-22_at_18.16.19.png)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f048f16-Screenshot_2024-05-22_at_18.30.09.png" />
+3. **Add a new tag**\
+   In the left nav, click **Tags** → **New**. ![](https://files.readme.io/ac79c42-Screenshot_2024-05-22_at_18.17.19.png)
 
-### Update the tag
+4. **Search for the Recurly Engage template**\
+   In the **Choose tag type** pane, use the search bar (top right) and enter **Recurly Engage**. ![](https://files.readme.io/d98bcf3-image.png)
 
-Name it **Redfast Tag** and fill in your **Application ID**, and in Triggering, select **All Pages** and hit **Save**
+5. **Get your Application ID**\
+   Log in to your Recurly Engage console and navigate to **Settings > Application** to copy the ID. ![](https://files.readme.io/f048f16-Screenshot_2024-05-22_at_18.30.09.png)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/1056d86-Screenshot_2024-05-22_at_18.33.53.png" />
+6. **Configure the tag**
 
-### Publish the tag
+   * Name it **Recurly Engage Tag**
+   * Paste your **Application ID** into the template field
+   * Under **Triggering**, choose **All Pages**
+   * Click **Save**
+
+     <Image align="center" className="border" border={true} src="https://files.readme.io/1056d86-Screenshot_2024-05-22_at_18.33.53.png" />
+
+7. **Publish your container**\
+   Click **Submit** in the top right of GTM, add a descriptive version name (e.g., “Add Recurly Engage SDK”), and hit **Publish**. ![](https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png)
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/a0de186-Screenshot_2024-05-22_at_18.35.42.png" />
