@@ -1,5 +1,5 @@
 ---
-title: Upgrading (4.10.3)
+title: Upgrading
 excerpt: Learn how to upgrade your Recurly.js features.
 deprecated: false
 hidden: false
