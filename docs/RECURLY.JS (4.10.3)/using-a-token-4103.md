@@ -1,6 +1,6 @@
 ---
-title: Using a token (4.10.3)
-excerpt: Learn how to use a token using Recurly.js version 4.10.3.
+title: Using a token
+excerpt: Learn how to use a token using Recurly.js
 deprecated: false
 hidden: false
 metadata:
