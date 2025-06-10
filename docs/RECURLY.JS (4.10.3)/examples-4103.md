@@ -1,6 +1,6 @@
 ---
-title: Examples (4.10.3)
-excerpt: Leverage examples for Recurly.js version 4.10.3.
+title: Examples
+excerpt: Leverage examples for Recurly.js
 deprecated: false
 hidden: false
 metadata:
