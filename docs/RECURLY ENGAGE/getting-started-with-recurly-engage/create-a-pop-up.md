@@ -124,10 +124,8 @@ Control how many times or how many users can see the pop-up by choosing from ava
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d5b09d4-Screenshot_2024-05-24_at_17.23.34.png" />
 
-11. When you’re happy with your design, click **Save**, then set the status to **Start**. Your pop-up is now live.
+11. When you’re happy with your design, **click** **Save**, then **set** the status to **Start**. Your pop-up is now live.
 
-![](https://files.readme.io/72e4d57-Screenshot_2024-05-24_at_17.24.40.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/72e4d57-Screenshot_2024-05-24_at_17.24.40.png" />
 
-### Test the prompt
-
-Before full rollout, validate your pop-up using test users. See the [test users guide](test-users) for step-by-step instructions.
+12. **Test** the prompt: Before full rollout, **validate** your pop-up using test users. **See** the [test users guide](test-users) for step-by-step instructions.
