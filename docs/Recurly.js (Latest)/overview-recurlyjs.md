@@ -3,6 +3,8 @@ title: Overview
 deprecated: false
 hidden: false
 metadata:
+  title: 'Overview: Recurly.js'
+  description: Learn about our Recurly.js solution
   robots: index
 ---
 ![](https://recurly.com/developers/images/recurly-js-logo.png)
