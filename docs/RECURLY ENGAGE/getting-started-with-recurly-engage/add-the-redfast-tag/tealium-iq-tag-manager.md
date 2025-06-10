@@ -43,23 +43,23 @@ You can integrate the Recurly Engage JavaScript client into your web application
 
 2. **Retrieve the client URL**: Navigate to **Settings > Usage Tracking**.
 
-![](https://files.readme.io/539dc52-Screenshot_2024-05-22_at_21.56.18.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/539dc52-Screenshot_2024-05-22_at_21.56.18.png" />
 
-3. Copy the URL portion of the code snippet; you’ll need it in step 6.
+3. **Copy** the URL portion of the code snippet; you’ll need it in step 7.
 
-![](https://files.readme.io/1e10450-Screenshot_2024-05-22_at_21.59.39.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1e10450-Screenshot_2024-05-22_at_21.59.39.png" />
 
 4. **Log in to Tealium iQ and select the correct profile**
 
-![](https://files.readme.io/7cde0a3-tealium-2a.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7cde0a3-tealium-2a.png" />
 
 5. **Add a new tag**: Go to the **Tags** tab and click **Add Tag**.
 
-![](https://files.readme.io/daa497e-tealium-3.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/daa497e-tealium-3.png" />
 
 6. **Choose the Generic Tag template**: In the popup search for “Generic Tag” and click **Add**.
 
-![](https://files.readme.io/af67285-tealium-4.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/af67285-tealium-4.png" />
 
 7. **Configure the Recurly Engage tag**
 
@@ -68,14 +68,12 @@ You can integrate the Recurly Engage JavaScript client into your web application
 * **Base URL**: Paste the URL from step 2
 * **Request Script Once**: Enable
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/aaa8198-tealium-5a.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aaa8198-tealium-5a.png" />
 
 <br />
 
-<Image align="left" className="border" border={true} src="https://files.readme.io/93928cb-tealium-5.png" />
-
-<br />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/93928cb-tealium-5.png" />
 
 8. **Publish the tag**: Click **Dev**, **QA**, and **Prod** to push the tag through each environment.
 
-![](https://files.readme.io/e8db19b-tealium-6.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e8db19b-tealium-6.png" />
