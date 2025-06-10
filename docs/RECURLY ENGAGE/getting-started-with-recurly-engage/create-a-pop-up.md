@@ -52,30 +52,41 @@ In this guide, you’ll create a browser pop-up. To start:
 
 Use segments to control who sees the prompt. For testing, add the **Test Users** segment so you can preview as a specific user group.
 
-![](https://files.readme.io/c389c63-Screenshot_2024-05-23_at_16.35.19.png)
-<br />
-![](https://files.readme.io/9acb5c6-Screenshot_2024-05-23_at_16.36.08.png)
-<br />
-![](https://files.readme.io/8b788cc-Screenshot_2024-05-23_at_16.37.00.png)
-<br />
-![](https://files.readme.io/74f4509-Screenshot_2024-05-23_at_16.37.51.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c389c63-Screenshot_2024-05-23_at_16.35.19.png" />
+
 <br />
 
-5. **Add** a trigger.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9acb5c6-Screenshot_2024-05-23_at_16.36.08.png" />
 
-Define when and where the pop-up appears. Selecting **All Pages** shows it to every visitor.
+<br />
 
-![](https://files.readme.io/035de64-Screenshot_2024-05-23_at_16.38.49.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8b788cc-Screenshot_2024-05-23_at_16.37.00.png" />
+
 <br />
-![](https://files.readme.io/7bfe1b7-Screenshot_2024-05-23_at_16.39.44.png)
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/74f4509-Screenshot_2024-05-23_at_16.37.51.png" />
+
+5. **Add** a trigger: **Define** when and where the pop-up appears. Selecting **All Pages** shows it to every visitor.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/035de64-Screenshot_2024-05-23_at_16.38.49.png" />
+
 <br />
-![](https://files.readme.io/371bb5f-Screenshot_2024-05-23_at_16.40.39.png)
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7bfe1b7-Screenshot_2024-05-23_at_16.39.44.png" />
+
 <br />
-![](https://files.readme.io/21823b1-Screenshot_2024-05-23_at_16.41.38.png)
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/371bb5f-Screenshot_2024-05-23_at_16.40.39.png" />
+
+<br />
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/21823b1-Screenshot_2024-05-23_at_16.41.38.png" />
 
 ### Set a limit (optional)
 
-Control how many times or how many users can see the pop-up by choosing from available limit types. ![](https://files.readme.io/f44ce1a-Screenshot_2024-05-23_at_16.43.11.png) ![](https://files.readme.io/ecd3c1c-Screenshot_2024-05-23_at_16.44.28.png)
+Control how many times or how many users can see the pop-up by choosing from available limit types.
+
+![](https://files.readme.io/f44ce1a-Screenshot_2024-05-23_at_16.43.11.png) ![](https://files.readme.io/ecd3c1c-Screenshot_2024-05-23_at_16.44.28.png)
 
 ### Set a schedule (optional)
 
