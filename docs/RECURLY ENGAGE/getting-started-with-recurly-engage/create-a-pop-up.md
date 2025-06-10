@@ -56,14 +56,18 @@ Use segments to control who sees the prompt. For testing, add the **Test Users**
 
 <br />
 
+<br />
+
+<br />
+
 ### Add a trigger
 
 Define when and where the pop-up appears. Selecting **All Pages** shows it to every visitor.
- 
+
 ![](https://files.readme.io/035de64-Screenshot_2024-05-23_at_16.38.49.png)
 
 ![](https://files.readme.io/7bfe1b7-Screenshot_2024-05-23_at_16.39.44.png)
- 
+
 ![](https://files.readme.io/371bb5f-Screenshot_2024-05-23_at_16.40.39.png)
 
 ![](https://files.readme.io/21823b1-Screenshot_2024-05-23_at_16.41.38.png)
