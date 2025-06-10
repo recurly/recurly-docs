@@ -25,3 +25,9 @@ Recurly.js is open source, and we welcome you to view and contribute to the code
 
   <span> View code on GitHub</span>
 </a>
+
+# How it works
+
+When a customer submits your payment form, Recurly.js immediately encrypts and securely stores their payment information on our servers. It then returns an authorization key—commonly known as a *token*—that you use to complete the subscription process through our API.
+
+With this token, you can perform any API operation that requires payment details. Because you never directly handle sensitive payment information, your PCI compliance scope is significantly reduced.
