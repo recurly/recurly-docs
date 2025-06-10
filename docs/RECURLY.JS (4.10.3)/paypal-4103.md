@@ -1,6 +1,6 @@
 ---
-title: PayPal (4.10.3)
-excerpt: Learn about PayPal using Recurly.js version 4.10.3.
+title: PayPal
+excerpt: Learn about PayPal using Recurly.js
 deprecated: false
 hidden: false
 metadata:
