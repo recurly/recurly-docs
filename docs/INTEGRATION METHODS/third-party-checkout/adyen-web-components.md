@@ -14,7 +14,7 @@ Adyen offers powerful tools to support quick and dynamic consumer checkout solut
 
 ### Prerequisites & limitations
 
-* Requires a working Recurly.js and V3 API integration.
+* Requires a working Recurly.js integration and V3 API integration.
 * Does **not** support Adyen’s app (iOS/Android) components or React/Native SDKs—only the Web Components for the listed payment methods are supported.
 
 # Definition
