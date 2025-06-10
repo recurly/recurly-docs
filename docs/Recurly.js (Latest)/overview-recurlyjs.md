@@ -1,6 +1,5 @@
 ---
-title: 'Overview: Recurly.js'
-excerpt: Learn about our Recurly.js solution!
+title: Overview
 deprecated: false
 hidden: false
 metadata:
