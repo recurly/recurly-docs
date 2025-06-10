@@ -1,5 +1,5 @@
 ---
-title: Getting started (4.10.3)
+title: Getting started
 excerpt: This is how you get started with **Recurly.js version 4.10.3**.
 deprecated: false
 hidden: false
