@@ -1,5 +1,5 @@
 ---
-title: Editor
+title: Prompt editor
 excerpt: >-
   Overview of the design editor for creating and customizing prompts in Recurly
   Engage.
