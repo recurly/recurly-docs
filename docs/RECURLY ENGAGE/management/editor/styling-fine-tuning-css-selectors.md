@@ -1,6 +1,8 @@
 ---
 title: Styling/ Fine tuning (CSS selectors)
-excerpt: ''
+excerpt: >-
+  CSS selector reference for customizing the look and feel of Recurly Engage
+  prompts.
 deprecated: false
 hidden: true
 metadata:
@@ -10,299 +12,263 @@ metadata:
 next:
   description: ''
 ---
-# Prompt Styling
+# Overview
 
-## Quick Reference
+This page provides a structured reference of CSS selectors you can override to style prompts across devices and prompt types.
 
-The following CSS style classes may be used to modify the default styling of any Redfast prompt.
+### Required plan
 
-| Item                       | Description                  |
-| -------------------------- | ---------------------------- |
-| .rfmodal-content-wrapper   | prompt area                  |
-| .rfmodal-inner-wrapper     | prompt text content area     |
-| .rfmodal-backgroundimage   | prompt background image      |
-| .rfmodal-header            | prompt title                 |
-| .rfmodal-header-mobileweb  | prompt title (mobile)        |
-| .rfmodal-message           | prompt message body          |
-| .rfmodal-message-mobileweb | prompt message body (mobile) |
-| .rfmodal-button-yes        | primary accept button        |
-| .rfmodal-button-no         | secondary button             |
-| .rfmodal-footer            | button area                  |
-| .rfmodal-close             | dismiss button               |
-| .rfmodal-close-icon        | dismiss button icon          |
-| .rf-radio-group            | survey form options          |
-| .rf-radio-item             | survey form line item        |
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Familiarity with CSS and your site’s stylesheet.
+* Custom styles must be loaded after the default Recurly Engage CSS to take effect.
+
+# Definition
+
+**Prompt Styling** refers to the customization of prompt elements—layout containers, text areas, buttons, and form controls—via CSS selectors.
+
+# Key benefits
+
+* **Full branding control**: Match prompts to your application’s design system.
+* **Responsive tweaks**: Adjust styles for desktop, mobile, and TV viewports.
+* **Targeted overrides**: Fine-tune individual prompt types without affecting others.
+
+# Key details
+
+## Quick reference
+
+Use these core selectors to modify the default styling of any Recurly Engage prompt.
+
+| Selector                     | Description                    |
+| ---------------------------- | ------------------------------ |
+| `.rfmodal-content-wrapper`   | Prompt area (outer container)  |
+| `.rfmodal-inner-wrapper`     | Prompt text content area       |
+| `.rfmodal-backgroundimage`   | Background image/video element |
+| `.rfmodal-header`            | Prompt title                   |
+| `.rfmodal-header-mobileweb`  | Mobile prompt title            |
+| `.rfmodal-message`           | Prompt message body            |
+| `.rfmodal-message-mobileweb` | Mobile message body            |
+| `.rfmodal-button-yes`        | Primary accept button          |
+| `.rfmodal-button-no`         | Secondary button               |
+| `.rfmodal-footer`            | Footer container for buttons   |
+| `.rfmodal-close`             | Dismiss (close) button         |
+| `#rfmodal-close-icon`        | Dismiss icon                   |
+| `.rf-radio-group`            | Survey form options wrapper    |
+| `.rf-radio-item`             | Individual survey option       |
 
 ## Full Reference
 
-### Desktop | (Video(web), retention\_modal(web), ios, android\_os, tv\_os,roku\_os)
+Detailed selectors by prompt context and device.
 
-* .rfmodal-content.outer-modal - **modal**
-  * .rfmodal-backgroundimage - **background image or video for modal**
-  * .rfmodal-wrapper.inner-modal - **layout container**
-    * [See Desktop Retention Message](#desktop-retention-message)
+### Desktop (Video(web), retention\_modal(web), ios, android\_os, tv\_os, roku\_os)
 
-### Mobile | (Video(web), retention\_modal(web), interstitial(web), ios, android\_os, tv\_os, roku\_os)
+| Selector                       | Description               |
+| ------------------------------ | ------------------------- |
+| `.rfmodal-content.outer-modal` | Modal container           |
+| `.rfmodal-backgroundimage`     | Background image or video |
+| `.rfmodal-wrapper.inner-modal` | Inner content wrapper     |
 
-* .mobileFrameDisplay - **modal**
-  * .mobileFrameInner - **inner frame**
-    * [See close button](#close-button) **interstitial only**
-    * .rfmodal-backgroundimage - **background image for modal**
-    * .mobileWebModalWrapper - **modal wrapper**
-      * .mobilewebModalContentWrapper - **content wrapper**
-        * [See close button](#close-button) **everything, except interstitial**
-        * .rfmodal-backgroundimage - **background video for modal**
-          * .videoPosterImgDefault - **video poster**
-        * [See TOS](#tos)
-        * [See Mobile header and body](#mobile-header-and-body)
-        * [See Input](#input)
-        * [See Survey input](#survey-input)
-        * [See Mobile footer](#mobile-footer)
+### Mobile (Video(web), retention\_modal(web), interstitial(web), ios, android\_os, tv\_os, roku\_os)
 
-### Mobile | (widget(web), bottom\_banner(web))
+| Selector                        | Description                   |
+| ------------------------------- | ----------------------------- |
+| `.mobileFrameDisplay`           | Mobile interstitial container |
+| `.mobileFrameInner`             | Inner frame wrapper           |
+| `.rfmodal-backgroundimage`      | Background image for modal    |
+| `.mobileWebModalWrapper`        | Mobile modal wrapper          |
+| `.mobilewebModalContentWrapper` | Content wrapper               |
+| `.videoPosterImgDefault`        | Video poster image            |
 
-* .mweb-widget-container - **modal**
-  * .mweb-phone-kit-bg - **inner frame**
-    * .mweb-canvas-bound - **inner frame**
-      * .mweb-widget-wrapper - **layout wrapper**
-        * .rfmodal-backgroundimage - **background image for modal**
-        * .mobilewebModalContentWrapper - **content wrapper**
-          * [See close button](#close-button) **close button**
-          * .mweb-widget-msg-container - **message wrapper**
-            * .mweb-widget-spacer - **message spacer**
-            * .mweb-widget-content-colm - **message content**
-            * .rfmodal-footer-mobileweb - **buttons and countdown wrapper**
-              * [See Mobile footer](#mobile-footer)
-              * [See Input](#input)
-            * [See Mobile header and body](#mobile-header-and-body)
+### Mobile (widget(web), bottom\_banner(web))
 
-### Desktop | (widget(web))
+| Selector                        | Description                   |
+| ------------------------------- | ----------------------------- |
+| `.mweb-widget-container`        | Widget prompt container (web) |
+| `.mweb-phone-kit-bg`            | Inner widget frame            |
+| `.mweb-canvas-bound`            | Canvas wrapper                |
+| `.mweb-widget-wrapper`          | Layout wrapper                |
+| `.rfmodal-backgroundimage`      | Widget background image       |
+| `.mobilewebModalContentWrapper` | Widget content wrapper        |
+| `.mweb-widget-msg-container`    | Message wrapper               |
+| `.mweb-widget-spacer`           | Message spacer                |
+| `.mweb-widget-content-colm`     | Message content column        |
+| `.rfmodal-footer-mobileweb`     | Buttons and countdown wrapper |
 
-* .modal-overlay-style.widget-rf-promo - **modal**
-  * .rf-widgetpromo-wrapper - **inner frame**
-    * .rfmodal-backgroundimage - **background image for modal**
-    * .rfmodal-wrapper - **content wrapper**
-      * [See Desktop Retention Message](#desktop-retention-message)
+### Desktop (widget(web))
 
-### Desktop | (interstitial(web))
+| Selector                               | Description          |
+| -------------------------------------- | -------------------- |
+| `.modal-overlay-style.widget-rf-promo` | Widget modal overlay |
+| `.rf-widgetpromo-wrapper`              | Inner frame wrapper  |
+| `.rfmodal-backgroundimage`             | Background image     |
+| `.rfmodal-wrapper`                     | Content wrapper      |
 
-* .modal-overlay-style.interstitialModal - **modal**
-  * [See close button](#close-button)
-  * .rfmodal-content.outer-modal - **outer modal**
-    * .rfmodal-wrapper.inner-modal - **inner modal**
-      * [See Desktop Retention Message](#desktop-retention-message)
+### Desktop (interstitial(web))
 
-### Desktop | (text)
+| Selector                                 | Description           |
+| ---------------------------------------- | --------------------- |
+| `.modal-overlay-style.interstitialModal` | Interstitial overlay  |
+| `.rfmodal-content.outer-modal`           | Outer modal container |
+| `.rfmodal-wrapper.inner-modal`           | Inner modal wrapper   |
 
-* .promo-text-wrapper - **prompt text**
-  * [See close button](#close-button)
-  * .promo-text-wrapper-container - **text container**
-    * .promo-text-title - **text title**
-    * .promo-text-message - **text message**
+### Desktop (text)
 
-### Mobile | (text)
+| Selector                        | Description           |
+| ------------------------------- | --------------------- |
+| `.promo-text-wrapper`           | Prompt text container |
+| `.promo-text-wrapper-container` | Text container        |
+| `.promo-text-title`             | Text title            |
+| `.promo-text-message`           | Text message body     |
 
-* .promo-text-wrapper-mobile - **prompt text**
-  * [See close button](#close-button)
-  * .promo-text-wrapper-container - **text container**
-    * .promo-text-title - **text title**
-    * .promo-text-message - **text message**
+### Mobile (text)
 
-### Desktop | (horizontal, tile, vertical)
+| Selector                        | Description           |
+| ------------------------------- | --------------------- |
+| `.promo-text-wrapper-mobile`    | Prompt text container |
+| `.promo-text-wrapper-container` | Text container        |
+| `.promo-text-title`             | Text title            |
+| `.promo-text-message`           | Text message body     |
 
-* .promo-tile-wrapper - **prompt tile**
-  * [See close button](#close-button)
-  * .promo-tile-backgroundimage - **background image**
-  * .promo-tile-wrapper-container - **alignment class**
-    * .tile-header-msg-wrp - **message wrapper**
-      * [Promo Content](#promo-content)
+### Desktop (horizontal, tile, vertical)
 
-### Mobile | (horizontal, tile, vertical)
+| Selector                        | Description           |
+| ------------------------------- | --------------------- |
+| `.promo-tile-wrapper`           | Prompt tile container |
+| `.promo-tile-backgroundimage`   | Tile background image |
+| `.promo-tile-wrapper-container` | Alignment wrapper     |
+| `.tile-header-msg-wrp`          | Message wrapper       |
 
-* .rtile-mweb-content-wrapper - **prompt tile**
-  * .rtile-mweb-content - **content wrapper**
-    * .rfmodal-backgroundimage - **background image**
-    * .rtile-mweb-content-msg - **message wrapper**
-      * [Promo Content](#promo-content)
+### Mobile (horizontal, tile, vertical)
 
-### Desktop, Mobile | (email)
+| Selector                      | Description           |
+| ----------------------------- | --------------------- |
+| `.rtile-mweb-content-wrapper` | Inline tile container |
+| `.rtile-mweb-content`         | Content wrapper       |
+| `.rfmodal-backgroundimage`    | Background image      |
+| `.rtile-mweb-content-msg`     | Message wrapper       |
 
-* .pr-email-logo - **Logo**
-* .pr-email-wrapper - **email content wrapper**
-  * .pr-email-container - **email content container**
-    * .pr-email-image - **email image**
-  * .pr-email-msg - **email message container**
-    * .pr-email-msg-title - **email message title**
-    * .pr-email-msg-body - **email message body**
-  * .pr-email-btn - **email buttons wrapper**
-    * [See Input](#input)
-    * [See Buttons promo](#buttons-promo)
-* .pr-email-footer - **email footer (links)**
+### Desktop, Mobile (email)
 
-### Desktop | (bottom\_banner)
+| Selector              | Description            |
+| --------------------- | ---------------------- |
+| `.pr-email-logo`      | Email logo             |
+| `.pr-email-wrapper`   | Email content wrapper  |
+| `.pr-email-container` | Email container        |
+| `.pr-email-image`     | Email image            |
+| `.pr-email-msg`       | Message container      |
+| `.pr-email-msg-title` | Message title          |
+| `.pr-email-msg-body`  | Message body           |
+| `.pr-email-btn`       | Buttons wrapper        |
+| `.pr-email-footer`    | Footer links container |
 
-* .modal-overlay-style.banner-rf-promo - **banner**
-  * .rfmodal-content.rf-bannerpromo-wrapper - **layout wrapper**
-    * .rfmodal-backgroundimage - **background image**
-    * .rfmodal-wrapper - **content wrapper**
-      * [See Desktop Retention Message](#desktop-retention-message)
+### Desktop (bottom\_banner)
 
-## Basic components
+| Selector                                  | Description             |
+| ----------------------------------------- | ----------------------- |
+| `.modal-overlay-style.banner-rf-promo`    | Banner overlay          |
+| `.rfmodal-content.rf-bannerpromo-wrapper` | Banner layout wrapper   |
+| `.rfmodal-backgroundimage`                | Banner background image |
+| `.rfmodal-wrapper`                        | Content wrapper         |
 
-### Buttons
-
-* .rfmodal-button-yes.primary-btn-p - **primary confirm button**
-* .rfmodal-button-yes.secondary-btn-p - **secondary confirm button**
-* .rfmodal-button-no - **no button**
+## Basic Components
 
 ### Buttons
 
-* .promo-tile-wrapper-btn-accept - **primary confirm button**
-* .promo-tile-wrapper-btn-accept.btn-ac-2 - **secondary confirm button**
-* .promo-tile-wrapper-btn-no - **no button**
+| Selector                              | Description              |
+| ------------------------------------- | ------------------------ |
+| `.rfmodal-button-yes.primary-btn-p`   | Primary confirm button   |
+| `.rfmodal-button-yes.secondary-btn-p` | Secondary confirm button |
+| `.rfmodal-button-no`                  | Cancel/decline button    |
+
+### Tile Buttons
+
+| Selector                                  | Description           |
+| ----------------------------------------- | --------------------- |
+| `.promo-tile-wrapper-btn-accept`          | Primary tile button   |
+| `.promo-tile-wrapper-btn-accept.btn-ac-2` | Secondary tile button |
+| `.promo-tile-wrapper-btn-no`              | Cancel tile button    |
 
 ### Survey input
 
-* .survey-wrapper(.center-align-mode | .right-align-mode) - **survey wrapper (alignment class)**
-  * .rf-radio-group - **radio buttons wrapper**
-    * .rf-radio-item - **radio item wrapper**
+| Selector                               | Description             |
+| -------------------------------------- | ----------------------- |
+| `.survey-wrapper` (.center-align-mode) | Survey wrapper (center) |
+| `.survey-wrapper` (.right-align-mode)  | Survey wrapper (right)  |
+| `.rf-radio-group`                      | Radio buttons wrapper   |
+| `.rf-radio-item`                       | Individual radio item   |
 
 ### Input
 
-* .rfmodal-input-wrapper - **input container**
-  * .rfmodal-input-label - **label for input**
-  * .rfmodal-input-inputfield - **input**
+| Selector                    | Description         |
+| --------------------------- | ------------------- |
+| `.rfmodal-input-wrapper`    | Input container     |
+| `.rfmodal-input-label`      | Input label         |
+| `.rfmodal-input-inputfield` | Input field element |
 
 ### Close button
 
-* .rfmodal-close - **modal close button**
-  * `#rfmodal-close-icon` - **modal close icon**
+| Selector              | Description        |
+| --------------------- | ------------------ |
+| `.rfmodal-close`      | Modal close button |
+| `#rfmodal-close-icon` | Close icon         |
 
 ### TOS
 
-* .modal-privacy-tos - **TOS**
+| Selector             | Description           |
+| -------------------- | --------------------- |
+| `.modal-privacy-tos` | Terms of service link |
 
 ### Mobile header and body
 
-* .rfmodal-header-mobileweb - **content header**
-* .rfmodal-body-mobileweb - **content body**
-  * .rfmodal-message-mobileweb - **content**
+| Selector                     | Description           |
+| ---------------------------- | --------------------- |
+| `.rfmodal-header-mobileweb`  | Mobile header text    |
+| `.rfmodal-body-mobileweb`    | Mobile body container |
+| `.rfmodal-message-mobileweb` | Mobile message text   |
 
 ### Mobile footer
 
-* .rfmodal-footer-mobileweb - **buttons and countdown wrapper**
-  * [See Buttons](#buttons)
-  * .rfmodal-countdown - **countdown label**
+| Selector                    | Description                   |
+| --------------------------- | ----------------------------- |
+| `.rfmodal-footer-mobileweb` | Buttons and countdown wrapper |
+| `.rfmodal-countdown`        | Countdown timer label         |
 
 ### Desktop Retention Message
 
-* [See close button](#close-button)
-* .video-volume-control - **volume button (video only)**
-* .rfmodal-inner-wrapper - **content container**
-  * .rfmodal-content-wrapper(.b-left-align | .b-right-align) - **alignment class**
-    * .rfmodal-text-container - **content container**
-      * [See TOS](#tos)
-      * .rfmodal-header - **content header**
-      * .rfmodal-body - **content body**
-        * .rfmodal-message - **content**
-      * [See Input](#input)
-      * [See Survey input](#survey-input)
-      * .rfmodal-footer - **footer container**
-        * .rf-button-wrapper - **buttons and countdown wrapper**
-          * .rf-buttons-inner - **button wrapper**
-            * [See Buttons](#buttons)
-          * .rfmodal-countdown - **countdown label (desktop / mobile)**
+| Selector                                    | Description                   |
+| ------------------------------------------- | ----------------------------- |
+| `.video-volume-control`                     | Video volume control button   |
+| `.rfmodal-inner-wrapper`                    | Inner content container       |
+| `.rfmodal-content-wrapper` (.b-left-align)  | Left alignment wrapper        |
+| `.rfmodal-content-wrapper` (.b-right-align) | Right alignment wrapper       |
+| `.rfmodal-text-container`                   | Text content container        |
+| `.rfmodal-header`                           | Content header                |
+| `.rfmodal-body`                             | Content body                  |
+| `.rfmodal-message`                          | Content message               |
+| `.rfmodal-footer`                           | Footer container              |
+| `.rf-button-wrapper`                        | Buttons and countdown wrapper |
+| `.rf-buttons-inner`                         | Button wrapper                |
+| `.rfmodal-countdown`                        | Countdown label               |
 
 ### Prompt Content
 
-* .promo-tile-wrapper-header - **message header**
-* .promo-tile-wrapper-body - **message body**
-* .promo-tile-wrapper-footer - **message footer**
-  * .promo-tile-wrapper-btn - **buttons wrapper**
-    * [See Input](#input)
-    * [See Buttons promo](#buttons-promo)
+| Selector                     | Description     |
+| ---------------------------- | --------------- |
+| `.promo-tile-wrapper-header` | Message header  |
+| `.promo-tile-wrapper-body`   | Message body    |
+| `.promo-tile-wrapper-footer` | Message footer  |
+| `.promo-tile-wrapper-btn`    | Buttons wrapper |
 
-<br />
+## Fine Tuning
 
-# Fine Tuning
-
-While Redfast works out of the box, your customer experience can be further improved. This guide will provide potential optimizations you may want to employ.
-
-## Absolutely positioning by inserting prompts
-
-When dealing with absolutely positioned content it is best to avoid using the Live Tool. While the Live Tool provides a convenient way to quickly insert the appropriate HTML tag necessary to render prompts the best way to handle absolute content is as follows.
-
-**Adding new content** 
-
-1. Insert the zone tag into your app. 
-
-`<div data-rf-zone="example-tag"></div>`
-
-2. Wrap the tag and set a height for the Redfast html element using the Redfast IAB style standards.
-
-`<div style="height: 200px"><div data-rf-zone="example-tag"></div></div>`
-
-3. Initialize your page scroll effect
-
-4. Resizing should be handled accordingly
-
-## Absolutely positioning by replacing existing content
-
-If you want to replace existing content it can be done with the Live Tool. This should be used sparingly. Make sure the dimensions of the prompt is the same as the content block you are replacing.
-
-1. Using Live Tool select your prompt, click "Add" and hover over the appropriate sections.
-
-2. Once the outline is completely solid you may click
-
-3. The prompt will now replace the underlying content.
-
-### Content delay for asynchronous data
-
-Prompts may be delayed for a variety of reasons. Below are common solutions towards addressing most issues you may encounter using a combination of design and technical solutions.
-
-1. Fixed content such as in the header does not appear immediately.
-
-**Solution** - use an animation (css or behavior similar to skeleton loader)
-
-2. Above fold content does not appear immediately
-
-**Solution** - set an explicit height with a 1 second no content collapse timer (e.g. bandwidth constraints)
-
-3. Redfast data loading too slowly
-
-**JS tag Solution** - move Redfast up in your list of tags to allow for earlier loading
-
-**Synchronous data loading Solution (Sledge hammer)** - wait for Redfast event data before proceeding to render app up to a maximum time limit
-
-**Redfast Solution** - priority processing
-
-4. User specific data loading too slowly\
-   **Set default content solution** - Add a prompt set to All Users 
-
-## Resizing issues
-
-In some cases the user may run into issues with undersized or oversized browser windows. This can be improved using various CSS techniques. 
-
-1. Width issues
-
-**Solution** - Media queries
-
-**Solution** - Scaling with transform or font size (e.g. 5vw)
-
-2. Background image issues
-
-**Solution** - Bake text into image
-
-**Solution** - Background cover or contain, scaling with transform
-
-**Solution** - Media queries
+For advanced scenarios—absolute positioning, delay handling, and responsive resizing—review the fine-tuning guide to optimize prompt performance and appearance.
 
 ## Tools and Resources
 
-Redfast provides you several resources to address the above issues.
+Recurly Engage offers:
 
-1. Previewing using your styles with the Live Tool and Live Preview mode
-
-2. Built in custom CSS overrides and ability to enhance existing elements with additional HTML
-
-3. Direct Support from the Redfast technical team
+1. Live Tool and Live Preview for style testing.
+2. Custom CSS overrides and HTML enhancements.
+3. Direct support from the Recurly technical team.
