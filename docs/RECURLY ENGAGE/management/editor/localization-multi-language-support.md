@@ -36,9 +36,9 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ## Setup
 
-1. Prepare a CSV with one row per language, using [ISO 639-1](https://www.w3schools.com/tags/ref_language_codes.asp) codes. Columns correspond to prompt fields (headline, body, button labels).
-2. Use the [sample CSV](https://assets.redfast.com/docs/translations_sample.csv) as a template.
-3. Upload the CSV in Pulse under your prompt’s **Localization** section.
+1. **Prepare** a CSV with one row per language, using [ISO 639-1](https://www.w3schools.com/tags/ref_language_codes.asp) codes. Columns correspond to prompt fields (headline, body, button labels).
+2. **Use** the [sample CSV](https://assets.redfast.com/docs/translations_sample.csv) as a template.
+3. **Upload** the CSV in Pulse under your prompt’s **Localization** section.
 
 > 🚧 Important
 >
@@ -46,18 +46,23 @@ This feature or setting is available to all customers on any Recurly Engage subs
 >
 > Exactly **one** row must have `default=true`; this language serves as the fallback.
 
-**Desktop preview**
+### **Desktop preview**
 
 ![](https://files.readme.io/dc57b6a-image.png) 
 <br/>
-
 ![](https://files.readme.io/18bf885-image.png)
 
-**Mobile preview** ![](https://files.readme.io/1facf58-image.png) ![](https://files.readme.io/a2ca771-image.png)
+### **Mobile preview** 
 
-After saving, a language selector appears in the preview area. Choose a language to verify translations, then use **Live Preview** to test on your site. ![](https://files.readme.io/ecfc764-image.png)
+![](https://files.readme.io/1facf58-image.png)
+<br/>
+![](https://files.readme.io/a2ca771-image.png)
 
-## Technical Information
+After saving, a language selector appears in the preview area. Choose a language to verify translations, then use **Live preview** to test on your site. 
+
+![](https://files.readme.io/ecfc764-image.png)
+
+## Technical information
 
 Recurly Engage determines the end user’s language from three sources (in priority order):
 
@@ -65,7 +70,7 @@ Recurly Engage determines the end user’s language from three sources (in prior
 2. User’s `language` trait
 3. Browser `Accept-Language` HTTP header
 
-Matching logic:
+**Matching logic:**
 
 * Exact match on 2-letter or 4-letter code (e.g., `en-US`).
 * If no exact match, attempts generic 2-letter match (`en` for `en-GB`).
