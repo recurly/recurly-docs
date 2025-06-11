@@ -38,32 +38,32 @@ This feature or setting is available to all customers on any Recurly Engage subs
 2. Add variables via the **+ Insert Variable** link when designing a prompt.
 3. Supported in both **Title** and **Message** fields—use as many as needed.
 
-## Step-by-step guide
+## Guide
 
-1. Navigate to **Prompts** and select the prompt you wish to personalize.
+1. **Navigate** to **Prompts** and select the prompt you wish to personalize.
 
-![](https://files.readme.io/309a30e-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/309a30e-image.png" />
 
-1. Click **Edit prompt design** to open the editor.
+2. **Click** **Edit prompt design** to open the editor.
 
-![](https://files.readme.io/f2e4389-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f2e4389-image.png" />
 
-1. Click the **Insert variable** link near the Title or Message field.
+3. **Click** the **Insert variable** link near the Title or Message field.
 
-![](https://files.readme.io/7915a13-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7915a13-image.png" />
 
-1. Choose **Dynamic variables** from the options.
+4. **Choose** **Dynamic variables** from the options.
 
-![](https://files.readme.io/9f84933-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9f84933-image.png" />
 
-1. Open the dropdown and select the desired trait variable.
+5. **Open** the dropdown and select the desired trait variable.
 
-![](https://files.readme.io/f845d05-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f845d05-image.png" />
 
-1. Click **Insert variable** to add it to your copy.
+6. **Click** **Insert variable** to add it to your copy.
 
-![](https://files.readme.io/69cd32e-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/69cd32e-image.png" />
 
-1. Verify placement in the Title or Message, then click **Save** to apply your changes.
+7. **Verify** placement in the Title or Message, then **click** **Save** to apply your changes.
 
-![](https://files.readme.io/3e79ce8-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3e79ce8-image.png" />
