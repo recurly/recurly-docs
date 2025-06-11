@@ -39,15 +39,17 @@ A **trigger** is a rule that opens a prompt when a user visits a specified page,
 
 Triggers allow you to specify the criteria for when and what you want your prompt to display. To configure triggers in the console:
 
-1. Open the prompt under **Prompts** to view **Prompt Details**.
-2. Click the **Edit** (pencil) icon beside **Triggers**.
-3. Choose **Create new trigger** to define a new rule, or **Select & Add trigger** to reuse an existing one.
+1. **Open** the prompt under **Prompts** to **view** **Prompt Details**.
+2. **Click** the **Edit** (pencil) icon beside **Triggers**.
+3. **Choose** **Create new trigger** to define a new rule, or **Select & Add trigger** to reuse an existing one.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/0e913f0-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0e913f0-image.png" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/b54e824-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b54e824-image.png" />
 
-> 🚧 Note: Any edits to a saved trigger in Prompt Details will apply to all prompts using that trigger. Create a new trigger for prompt-specific behavior.
+> 🚧 Note:
+>
+> Any edits to a saved trigger in Prompt Details will apply to all prompts using that trigger. Create a new trigger for prompt-specific behavior.
 
 ***
 
@@ -55,13 +57,13 @@ Triggers allow you to specify the criteria for when and what you want your promp
 
 The page trigger displays a prompt when visitors arrive on a screen matching the specified URL path. You can set a delay timer to show the prompt after a number of seconds instead of immediately.
 
-<Image align="center" src="https://files.readme.io/1227b33-Screenshot_2024-04-25_at_19.21.09.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1227b33-Screenshot_2024-04-25_at_19.21.09.png" />
 
 ### Any page
 
 This option triggers your prompt on every page of your site.
 
-<Image align="center" src="https://files.readme.io/2c363a4-Screenshot_2024-04-25_at_19.22.59.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2c363a4-Screenshot_2024-04-25_at_19.22.59.png" />
 
 ### Wildcard URL path
 
@@ -72,7 +74,7 @@ Match URL patterns using `*`. Always include a leading slash.\
 * `/categories/movies/*` matches `/categories/movies/top-ten`
 * `/movies/the-*` matches `/movies/the-end` or `/movies/the-best/123`
 
-<Image align="center" src="https://files.readme.io/929942b-Screenshot_2024-04-25_at_19.27.22.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/929942b-Screenshot_2024-04-25_at_19.27.22.png" />
 
 #### Query parameters
 
@@ -91,7 +93,7 @@ Match URL fragments after `#`.
 
 Combine Wildcard URL Path, Query Parameters, and URL Hash; leave fields blank if unused.
 
-<Image align="center" src="https://files.readme.io/25bec36-Screenshot_2024-04-25_at_21.36.00.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/25bec36-Screenshot_2024-04-25_at_21.36.00.png" />
 
 ### Regular expression URL path
 
@@ -117,15 +119,15 @@ Contact Customer Success for assistance.
 * `/skus/123[a-z]{3,}456` matches SKUs like `/skus/123abc456`
 * `/series/.+-episode-[246]` matches episodes ending in 2, 4, or 6
 
-<Image align="center" src="https://files.readme.io/a7d9477-Screenshot_2024-04-29_at_18.00.48.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a7d9477-Screenshot_2024-04-29_at_18.00.48.png" />
 
 ### Regular expression tester
 
 Validate sample paths against your regex.
 
-<Image align="center" src="https://files.readme.io/a61d37b-Screenshot_2024-04-29_at_18.04.25.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a61d37b-Screenshot_2024-04-29_at_18.04.25.png" />
 
-<Image align="center" src="https://files.readme.io/ddfd19c-Screenshot_2024-04-29_at_18.06.00.png" />
+<Image align="center" width="80% " src="https://files.readme.io/ddfd19c-Screenshot_2024-04-29_at_18.06.00.png" />
 
 ***
 
@@ -137,11 +139,11 @@ Display a prompt after a set number of clicks on a specific element, identified 
 
 * After 5 clicks on any element (`*`).
 
-<Image align="center" src="https://files.readme.io/66db085-Screenshot_2024-04-29_at_18.08.12.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/66db085-Screenshot_2024-04-29_at_18.08.12.png" />
 
 * After 1 click on the Cancel Subscription button (`#cancel-subscription`) on `/accounts`.
 
-<Image align="center" src="https://files.readme.io/001f9ed-Screenshot_2024-04-29_at_18.10.37.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/001f9ed-Screenshot_2024-04-29_at_18.10.37.png" />
 
 ***
 
@@ -206,7 +208,7 @@ When editing a prompt, select your Advanced Trigger.
 * For polling-based triggers, set the polling interval (default 2s).
 * For event-based triggers, choose **Event-based** mode.
 
-<Image align="center" src="https://files.readme.io/49ebd62-Screenshot_2024-04-29_at_18.12.52.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/49ebd62-Screenshot_2024-04-29_at_18.12.52.png" />
 
 ***
 
