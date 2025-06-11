@@ -1,5 +1,5 @@
 ---
-title: Push
+title: Push prompts
 excerpt: >-
   Details on creating and managing push notifications (Push Prompts) in Recurly
   Engage.
