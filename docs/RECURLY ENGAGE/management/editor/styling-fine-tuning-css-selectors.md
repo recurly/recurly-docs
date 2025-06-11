@@ -1,5 +1,5 @@
 ---
-title: Styling/ Fine tuning (CSS selectors)
+title: Styling (CSS selectors)
 excerpt: >-
   CSS selector reference for customizing the look and feel of Recurly Engage
   prompts.
