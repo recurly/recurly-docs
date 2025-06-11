@@ -35,7 +35,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 # Key details
 
-## Quick Reference
+## Quick reference
 
 Use these core selectors to modify the default styling of any Redfast prompt.
 
@@ -56,7 +56,7 @@ Use these core selectors to modify the default styling of any Redfast prompt.
 | `.rf-radio-group`            | survey form options          |
 | `.rf-radio-item`             | survey form line item        |
 
-## Full Reference
+## Full reference
 
 ### Desktop | (Video(web), retention\_modal(web), ios, android\_os, tv\_os, roku\_os)
 
@@ -201,7 +201,7 @@ Use these core selectors to modify the default styling of any Redfast prompt.
 | `.rfmodal-button-yes.secondary-btn-p` | **secondary confirm button** |
 | `.rfmodal-button-no`                  | **no button**                |
 
-### Tile Buttons
+### Tile buttons
 
 | Selector                                  | Description               |
 | ----------------------------------------- | ------------------------- |
@@ -254,7 +254,7 @@ Use these core selectors to modify the default styling of any Redfast prompt.
 | `.rfmodal-footer-mobileweb` | **buttons and countdown wrapper** |
 | `.rfmodal-countdown`        | **countdown label**               |
 
-### Desktop Retention Message
+### Desktop retention message
 
 | Selector                                   | Description                          |
 | ------------------------------------------ | ------------------------------------ |
@@ -275,7 +275,7 @@ Use these core selectors to modify the default styling of any Redfast prompt.
 | `.rf-buttons-inner`                        | **button wrapper**                   |
 | `.rfmodal-countdown`                       | **countdown label (desktop/mobile)** |
 
-### Prompt Content
+### Prompt content
 
 | Selector                            | Description         |
 | ----------------------------------- | ------------------- |
