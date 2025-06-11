@@ -64,11 +64,13 @@ Media-rich overlays combining video playback with text and actionable buttons.
 
 * **Size**: 1100×619 (configurable).
 
-![](https://files.readme.io/5b26f7a-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5b26f7a-image.png" />
 
 ### Notification
 
-Subtle corner prompts with a brief headline, background image, and a single call to action—ideal for low-impact messaging. ![](https://files.readme.io/45dbbcc-image.png)
+Subtle corner prompts with a brief headline, background image, and a single call to action—ideal for low-impact messaging.
+
+![](https://files.readme.io/45dbbcc-image.png)
 
 ### Bottom banner
 
