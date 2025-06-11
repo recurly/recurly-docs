@@ -88,3 +88,95 @@ If needed, reorder tasks by clicking the "**⋮**" icon on the bottom right.
    * If any required tasks aren’t in **Complete** status, you’ll see an **internal server error** message.
 
 With all tasks finalized, you’ll successfully close the period in Recurly RevRec, ensuring an accurate and compliant end-of-period process.
+
+# FAQs
+
+***
+
+## Doc stage errors
+
+These errors typically occur when processing documents like invoices and credit memos.
+
+##### What should I do about an "Invalid References on INV" error?
+
+**Reason:** The reference invoice number or reference invoice line number provided is incorrect.
+
+**Solution:** Please check and correct the reference invoice details.
+
+##### Why did I get the error "Invalid INV. INV belongs to Material Right Contract"?
+
+**Reason:** The system does not allow an invoice to be associated with a material right contract line. Invoices linked to material rights cannot be collected.
+
+**Solution:** Remove the invoice information from the material right line.
+
+##### How do I resolve a "Bill Amount is incorrect" error?
+
+**Reason:** The amount on the bill is not correct.
+
+**Solution:** Please check and validate that the bill amount is accurate.
+
+##### What does "Original Credit Memo does not exist or already Cancelled" mean?
+
+**Reason:** This error occurs when you try to cancel a credit memo, but the reference details provided do not correspond to an existing, active credit memo in the system.
+
+**Solution:** Re-upload the cancellation file with the correct reference invoice details.
+
+##### How do I fix "Original Invoice does not exist or already Cancelled" or "Original Invoice does not exist"?
+
+**Reason:** This error appears when a credit memo is uploaded with reference details for an invoice that does not exist or has already been cancelled.
+
+**Solution:** Correct the reference invoice details in your upload file and re-process it.
+
+##### Why am I seeing "Invalid INV. SO not present in System"?
+
+**Reason:** This error occurs when an invoice is loaded with a reference to a Sales Order (SO) that is not in the system.
+
+**Solution:** Please re-process the file with a valid and existing SO number.
+
+##### What should I do for an "Error Loading SO Line"?
+
+**Reason:** The associated Sales Order (SO) line has not been successfully processed from the contract stage into the system.
+
+**Solution:** Check the contract stage for the relevant SO and ensure it is processed successfully before you proceed with the invoice.
+
+##### How do I resolve "CM cannot be processed as INV is in error"?
+
+**Reason:** You are trying to process a Credit Memo (CM) against an invoice that is currently in an error state in the stage area.
+
+**Solution:** First, review and resolve the error associated with the original invoice. Once the invoice is processed successfully, you can process the credit memo.
+
+##### What causes the "Cumulative bill amount is over sell price" error?
+
+**Reason:** This error occurs when the total value of invoices for a subscription exceeds the sell price, and the system is not configured to allow over-billing.
+
+**Solution:** To resolve this, navigate to Profiles → Overage and enable the overage setting.
+
+***
+
+## Cost stage errors
+
+These errors occur during the processing of cost-related data.
+
+##### What does "Invalid Cost,  SO not present in System" mean?
+
+**Reason:** The Sales Order (SO) number referenced in the cost file is incorrect or does not exist in the system.
+
+**Solution:** Please verify the SO number in your cost file is accurate and re-upload the file.
+
+##### Why am I seeing "Bundle child updates are not allowed" in the Cost Stage?
+
+**Reason:** The revenue recognition module does not permit direct updates to the child lines of a bundle, and this rule applies to cost updates as well.
+
+**Solution:** Updates must be made at the parent bundle level.
+
+##### How do I fix "Invalid Cost Type, Cost Type Setup is missing"?
+
+**Reason:** The cost type specified is not valid because it has not been configured in the system.
+
+**Solution:** Please revisit your configuration to ensure the cost type setup is correct. Refer to the user manual for more details on this setup.
+
+##### What does "Allocated Commission lines cannot be updated" mean?
+
+**Reason:** Once commission has been allocated to a line, the revenue recognition module does not allow that line to be updated.
+
+**Solution:** Avoid attempting to update lines where commission has already been allocated. Any changes may require a new transaction or reversal.
