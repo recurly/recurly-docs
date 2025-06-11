@@ -38,3 +38,7 @@ For each of the prompts you can view:
 You can click on the **Search** button at the top-right corner of the screen to search for the prompt by its name or use one of the filtering options to filter all prompts of a certain **Status**, **Device/type** or **Segment**.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/b2e10b0-Screenshot_2024-04-18_173049.png" />
+
+## Prompt Types
+
+![](https://files.readme.io/3044b9e56c373343fa3a936e456ae9619a782ee1feb0fd0079b362a8c1e2da0d-image.png)
