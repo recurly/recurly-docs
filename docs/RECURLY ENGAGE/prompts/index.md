@@ -41,3 +41,5 @@ Creating prompts is core to what your customers experience. In this section, you
 The **Prompts** page provides a quick view of all prompts in your account, displaying their status, design preview, target segments, schedule, and high-level performance metrics (impressions, clicks, CTR). Use the **Search** bar or filters (Status, Device/type, Segment) to find what you need.
 
 ![](https://files.readme.io/b2e10b0-Screenshot_2024-04-18_173049.png)
+
+## Prompts types
