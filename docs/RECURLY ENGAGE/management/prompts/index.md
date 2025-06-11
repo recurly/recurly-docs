@@ -35,12 +35,12 @@ A **prompt** is an in-app message that appears when a user visits your applicati
 Recurly Engage supports a variety of in-app message formats, all designed in accordance with the [IAB Guidelines](https://www.iab.com/guidelines/iab-new-ad-portfolio/):
 
 * [Inlines](inlines) (horizontal, vertical, tile, text-only): Prompts embedded directly within your page layout.
-
 * [Overlays](overlays) (notification, interstitial, pop up, video, bottom banner): Floating prompts that appear above your content.
-
 * [Invisible](invisible-1): Silent prompts delivered via tracking pixels or JavaScript callbacks for analytics.
-
-* [Other](other) (Email, Push notification\*): Messages sent outside the page—email campaigns or push notifications.
+* [Email](other): Messages sent outside the page—email campaigns.
+* [Push](push): Scheduled notifications sent to users’ devices (ADM, APNs, FCM) to drive re-engagement.
+* [Video](video): Rich-media overlays that play video content with text and call-to-action buttons in a popup modal.
+* [Mobile interstitial](mobile-interstitial): Full-screen native prompts on iOS and Android, rendered via the SDK for immersive mobile experiences.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b91dfe4-image.png" />
 
