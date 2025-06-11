@@ -44,39 +44,34 @@ Overlay prompts appear above your content and may fully block interaction (inter
 
 ![](https://files.readme.io/eb0dc55-image.png)
 
-## Interstitial
+### Interstitial
 
 Full-screen or near–full-screen prompts shown before or after page load. They respect device aspect ratios and safe-area margins to keep key content visible.\
 ![](https://files.readme.io/0ab0f6f-image.png)
 
-## Pop-up
+### Pop-up
 
 Overlay windows featuring an image, text, and one or more calls to action. Users can dismiss them if configured.
 
 * **Sizes**: 1200×800, 960×640, or 750×500 (configurable)\
   ![](https://files.readme.io/d2cb3d2-image.png)
 
-## Video
+### Video
 
 Media-rich overlays combining video playback with text and actionable buttons.
 
 * **Size**: 1100×619 (configurable)\
   ![](https://files.readme.io/5b26f7a-image.png)
 
-## Notification
+### Notification
 
 Subtle corner prompts with a brief headline, background image, and a single call to action—ideal for low-impact messaging. ![](https://files.readme.io/45dbbcc-image.png)
 
-## Bottom banner
+### Bottom banner
 
-Banner prompts spanning the bottom of the viewport, displaying text and imagery without fully blocking content.\
+Banner prompts spanning the bottom of the viewport, displaying text and imagery without fully blocking content.
+
 ![](https://files.readme.io/1500b39-image.png)
-
-### Video
-
-<Embed url="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286" href="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
-
-***
 
 ## Step-by-step
 
