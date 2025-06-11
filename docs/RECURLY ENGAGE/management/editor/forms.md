@@ -1,6 +1,8 @@
 ---
 title: Forms
-excerpt: ''
+excerpt: >-
+  How to add input fields or survey options to your prompts and handle submitted
+  values in actions.
 deprecated: false
 hidden: true
 metadata:
@@ -10,43 +12,70 @@ metadata:
 next:
   description: ''
 ---
-You can include up to three input fields or up to five survey options in your prompt. 
+# Overview
 
-## Step-by-step
+Enhance your prompts with up to three input fields or five survey options to collect data from users directly within the in-app message.
 
-* [ ] Go to **Prompts** and select your prompt
+### Required plan
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/ce4a893-image.png" />
-* [ ] Click **Edit prompt design**
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/5477d38-image.png" />
+### Prerequisites & limitations
 
-### Adding an input field
+* Company or App Administrator permissions in Recurly Engage.
+* Maximum of three input fields per prompt, or up to five survey choices.
 
-* [ ] Select **Forms** and check **Enable Inputs** 
-* [ ] Configure the input. The changes are reflected in the preview 
+# Definition
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/70ea517-image.png" />
+**Forms** in Recurly Engage prompts allow you to gather user input—text entries or survey selections—raising engagement and capturing valuable feedback.
+
+# Key benefits
+
+* **Direct feedback**: Collect emails, names, or other details without redirecting users.
+* **Quick surveys**: Gather opinions or preferences in-context.
+* **Actionable data**: Pass form responses into API, connector, or website actions for immediate processing.
+
+# Key details
+
+## Adding form fields to a prompt
+
+1. Open **Prompts** and select the prompt you wish to enhance.
+
+![](https://files.readme.io/ce4a893-image.png)
+
+2. Click **Edit prompt design** to launch the editor.
+
+![](https://files.readme.io/5477d38-image.png)
+
+### Adding input fields
+
+1. In the **Forms** panel, enable **Inputs**.
+2. Configure each input field (label, placeholder, validation). Preview updates live.
+
+![](https://files.readme.io/70ea517-image.png)
 
 ### Adding a survey
 
-* [ ] Select **Forms** and toggle on **Survey** 
-* [ ] Configure the options. The changes are reflected in the preview
+1. In the **Forms** panel, enable **Survey**.
+2. Define up to five survey options with labels and values. Preview updates live.
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/bb79ff4-image.png" />
+![](https://files.readme.io/bb79ff4-image.png)
 
-## Set up Actions
+## Handling form submissions
 
-Form input and survey option values can be sent to Connector Actions, API Actions, and Website Actions.
+Form inputs and survey selections can trigger downstream actions:
 
-Connector actions that support form inputs: SendGrid, Braze, Freshdesk, Iterable.
+* **Connector Actions**: Send data to services like SendGrid, Braze, Freshdesk, or Iterable.
+* **API Actions**: Call your custom APIs with the form data.
+* **Website Actions**: Execute custom JavaScript; submitted values are available in the `args` object. For example:
 
-How to use form inputs in website actions: When website action code is called, it will have access to an object variable called `args`. A sample value for args:
-
-```
-{  
-  promoInput1Value: "[john@smith.com](mailto:john@smith.com)"  
+```javascript
+// args example when user submits an email field
+{
+  promoInput1Value: "john@smith.com"
 }
 ```
 
-Form inputs may be utilized in Connector Actions. An example is capturing an email address via form field and sending a predefined [Sendgrid](sendgrid) template to that contact.
+**Example use case**: Capture an email via an input field, then use a SendGrid connector action to send a templated email to that address. [SendGrid connector details](sendgrid)
+
+When you’re done configuring fields, click **Save & Exit** to apply your changes and deploy the updated prompt.
