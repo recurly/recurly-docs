@@ -42,7 +42,7 @@ Recurly Engage supports a variety of in-app message formats, all designed in acc
 
 * [Other](other) (Email, Push notification\*): Messages sent outside the page—email campaigns or push notifications.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/b91dfe4-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b91dfe4-image.png" />
 
 A prompt can be targeted to one or more [Segments](segments) and set to [Trigger](triggers) on events like button clicks, page visits, or time spent on a page. You can [Schedule](schedule-1) prompts for specific dates and times and [Limit](limits) their delivery by user count or budget. For use-case inspiration, explore our [Popular Use Cases](popular-uses).
 
