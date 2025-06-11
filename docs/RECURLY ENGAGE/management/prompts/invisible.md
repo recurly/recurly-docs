@@ -1,6 +1,8 @@
 ---
 title: Invisible
-excerpt: ''
+excerpt: >-
+  Configure and trigger background behaviors in your application without any
+  user-facing UI using Invisible Prompts.
 deprecated: false
 hidden: true
 metadata:
@@ -10,37 +12,56 @@ metadata:
 next:
   description: ''
 ---
-This unique prompt is used to activate or deactivate particular behaviors on your application without a user interaction. A hidden action that is performed on a particular page or when a particular event is fired. 
+# Overview
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/c386e48-image.png" />
+Invisible Prompts allow you to activate or deactivate features, trigger API calls, or modify content silently when a user visits a page or a specific event occurs—no user interaction required.
 
-Example use cases include hiding ads, automatically adding a show to a user’s watchlist, providing a discount or triggering an API.
+### Required plan
 
-The configuration is very similar to a [popup](overlays#how-to-video) with the following differences:
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-* There is no UI associated with this prompt.
-* All server-side and client-side actions will automatically execute upon trigger.
+### Prerequisites & limitations
 
-## Add Metadata
+* You must have **Company** or **App Administrator** permissions in Recurly Engage.
 
-Metadata tags may be added to provide additional context or ability to implement custom behavior not handled by preconfigured server-side and client-side actions. These tags are accessible via the Redfast SDK and can be used to adjust the user experience or enable/disable features.
+# Definition
 
-* [ ] Click the Edit (pencil) icon to open the Metadata modal.
+An **Invisible Prompt** is a hidden rule that executes server-side or client-side actions automatically upon matching a trigger. Unlike other prompts, it presents no UI to the user.
 
-  ![](https://files.readme.io/e45aa27-image.png)
-* [ ] Add one or more key-value pairs
+# Key benefits
 
-  ![](https://files.readme.io/7db1c7e-image.png)
-* [ ] Retrieve Metadata
+* **Automate background tasks**: Launch API calls, hide or show UI elements, or apply discounts without user clicks.
+* **Seamless user experience**: Modify behavior or content without interrupting the user.
+* **Flexible triggers**: Fire on page load, custom events, or segment entry to suit any workflow.
 
-```
+# Key details
+
+This prompt type shares its configuration flow with a [popup](overlays#how-to-video) but with no visual component. All actions run immediately when the trigger fires.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c386e48-image.png" />
+
+**Example use cases**
+
+* Automatically add a show to a user’s watchlist on page load
+* Hide competing ads for premium subscribers
+* Trigger a fulfillment API or apply a discount coupon
+
+## Configuring metadata
+
+Use metadata tags to pass custom key-value pairs into your Invisible Prompt for advanced behaviors:
+
+1. Click the **Edit** (pencil) icon on your Invisible Prompt to open the Metadata modal.\
+   ![](https://files.readme.io/e45aa27-image.png)
+2. Add one or more key-value pairs to tailor your action logic.\
+   ![](https://files.readme.io/7db1c7e-image.png)
+
+### Retrieving metadata in code
+
+```javascript
 Redfast.getMetas()
-
-  {'meta1': 'val1', 'meta2': 'val2'}
+// returns { 'meta1': 'val1', 'meta2': 'val2' }
 ```
 
 ## Test the prompt
 
-A prompt can be tested before it is published to all users. These tests are useful for refining triggers, creative, schedules, and actions. You can learn to do so by following the [test user guide](test-users).
-
-<br />
+Validate your trigger and actions before full deployment by assigning the **Test Users** segment. Learn how in the [test user guide](test-users).
