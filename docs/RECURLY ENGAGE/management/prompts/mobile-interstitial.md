@@ -1,6 +1,8 @@
 ---
-title: Mobile Interstitial
-excerpt: Full screen prompt for iOS and Android phones
+title: Mobile interstitial prompts
+excerpt: >-
+  Guide to creating and managing full-screen mobile interstitial prompts in
+  Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,15 +12,7 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Guide to creating and managing full-screen mobile interstitial prompts in Recurly Engage.
-
 # Overview
-
-A **mobile interstitial prompt** displays a full-screen message on mobile devices (iOS and Android) to capture user attention at key moments.
-
-> 📘 Note: This prompt type is scheduled to be released in 2024 Q4. Reach out to your customer success manager for more details.
 
 ### Required plan
 
