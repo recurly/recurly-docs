@@ -1,6 +1,8 @@
 ---
-title: Inline
-excerpt: 'Inline Styles: horizontal banner, vertical banner, tile, and text bar'
+title: Inline prompts
+excerpt: >-
+  Comprehensive guide to creating and managing inline prompts—horizontal,
+  vertical, tile, and text-only—using defined zones in Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,231 +12,194 @@ metadata:
 next:
   description: ''
 ---
-These 4 prompts occupy particular pieces of real estate on your site/application. Since the prompts live alongside your content we frequently refer to these as inlines.
+# Overview
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/3306b54-Screenshot_2024-04-18_193019.png" />
+### Video
 
-Inlines are defined inside of [zones](zones). Once a zone is defined, any prompt designated for it will be shown in the locations specified. For example, a horizontal prompt could be added into the **Web Featured** horizontal zone.
+<Embed url="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" href="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/e0c5481-Screenshot_2024-04-18_191758.png" />
+### Required plan
 
-A single zone may contain one or more items of the same type. For instance, you can place multiple horizontal prompts within a zone to render a slider on your site. Multiple items can be displayed as:
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-* A stack where items are behind one another. The user sees the second item when he has completed an interaction with the first item.
-* A list where items are shown beside each other. This is useful to display a row of personalized items on your site.
-* A slider where items are shown beside each other in a carousel or slider mode where only one item is visible at a time. When this display type is selected, the SDK can optionally render:
-  * Bullet indicators allowing users to navigate between slides
-  * Automatic rotation of slides with a configurable number of seconds per slide
+### Prerequisites & limitations
 
-## Inline Types
+* You must have **Company** or **App Administrator** permissions in Recurly Engage.
+
+# Definition
+
+Inline prompts occupy predefined [zones](zones) on your site or application. Four styles are supported—horizontal banners, vertical panels, tiles, and text-only bars—each designed to blend with your layout.
+
+# Key benefits
+
+* **Contextual placement**: Deliver messages directly within your page for higher relevance.
+* **Versatile formats**: Choose from four inline styles to suit any design.
+* **Dynamic sequencing**: Render multiple items per zone in stack, list, or slider modes.
+
+# Key details
+
+These four prompt types occupy defined zones on your site or application alongside your content—hence the name **inline**.
+
+![](https://files.readme.io/3306b54-Screenshot_2024-04-18_193019.png)
+
+Inline prompts live in [zones](zones). Any prompt assigned to a zone appears in that location—for example, a horizontal banner in the **Web Featured** zone.
+
+![](https://files.readme.io/e0c5481-Screenshot_2024-04-18_191758.png)
+
+A single zone can render multiple items of the same type in one of three modes:
+
+* **Stack**: items overlap; each new item appears after the prior one is dismissed.
+* **List**: items display side by side, ideal for showing a row of personalized recommendations.
+* **Slider**: a carousel showing one item at a time, with optional bullet indicators or auto-rotation.
 
 ### Horizontal
 
-A horizontal prompt is usually created in a zone with a landscape layout i.e. larger width and smaller height aspects. It is expected to fit edge to edge of screen width or margin to margin of content layout width. 
+A wide banner with a landscape orientation that spans the width of your content area or screen edge-to-edge. Commonly placed at the top or bottom of pages, it can include a call-to-action button and hide itself on click or remain visible.
 
-Typical zones are top or bottom of the screen and sometimes in between page sections. It may be clickable and/or set to a timer. It may include an optional call to action button. A horizontal banner may be hidden once clicked or continue to be shown. 
-
-The recommended aspect ratios are: 2x1, 4x1, **6x1**, 8x1, 10x1
+* **Recommended ratios**: 2×1, 4×1, **6×1**, 8×1, 10×1.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/994d3cd-image.png" />
 
 ### Vertical
 
-A vertical prompt is created in a zone with portrait layout i.e. larger height and smaller width aspects. It is expected to fit edge to edge from top to bottom or margin to margin vertically between page layout elements. 
+A tall panel with a portrait orientation, typically along the left or right edge of your layout. Like horizontals, it may include buttons and can be timed or click-to-dismiss.
 
-Typical zones are on the right or left edges of the screen or page layout. It may be clickable and/or set to a timer. It may include an optional call to action button. A vertical banner may be hidden once clicked or continue to be shown.
-
-The recommended aspect ratios are: 1x2, **1x3**, 1x4
+* **Recommended ratios**: 1×2, **1×3**, 1×4.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/a1fb469-image.png" />
 
 ### Tile
 
-Tiles are usually rectangle or square zones with very closely measured height and width aspects. Typical zones are tiles in grid layouts. Usually they are small to medium-sized zones. A square image with text and that can be clicked. A tile may be hidden once clicked or continue to be shown. 
+A square or rectangle zone—perfect for grid layouts. Tiles display media and text, and can be closed or persist after interaction.
 
-The recommended aspect ratios are: 2x1, 4x1, **6x1**, 8x1, 10x1
+* **Recommended ratios**: 1×1, 4×3, 16×9.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/5729a7f-image.png" />
 
-### Text Only
+### Text-only
 
-The text bar is created in a text only zone that can be clicked. It may be hidden once clicked or continue to be shown. 
+A clickable text bar without images, useful for simple announcements or links. It can be configured to hide on click or remain in view.
 
-The recommended aspect ratios are: 6x1, 8x1, 10x1
+* **Recommended ratios**: 6×1, 8×1, 10×1.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/392d0bc-image.png" />
 
-<br />
+***
 
-## How-to-video
+## Step-by-step guide
 
-This guide will teach you how to create a horizontal banner that is visible to all users who visit our home page. The instructions for creating vertical, tile, and text prompts are exactly the same.
+1. **Create a zone**
 
-<Embed url="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" title="iframe" provider="loom.com" href="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+   * Navigate to **Settings > Zones > New Zone**.
+   * Name the zone (no spaces) and select its placement (e.g., “Home Page Top Banner”).
+
+   <br />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/0e07cb5-image.png" />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/60a9382-inline2.png" />
+
+2. **Build an inline prompt**
+
+   * Go to **Prompts > New Prompt**.
+   * Choose **Desktop and Mobile**, then select **Horizontal** (or your desired inline type).
+
+   <br />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/564d84a-image.png" />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/664a781-image.png" />
+
+   * Enter a **Name**, **Description**, and assign it to your new zone, then click **Submit**.
+
+   <br />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/c8c3561-image.png" />
+
+   * Configure **Segments**, **Limits** (optional), **Schedule** (optional), and **Actions**.
+
+   * Click **Edit prompt design** to customize visuals and copy.
+
+   <br />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/6a6227a-Screenshot_2024-04-22_173653.png" />
+
+   * Tweak settings in the designer and preview live changes. Download sample backgrounds [here](/images/samples.zip).
+
+   <br />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/0d80810-Screenshot_2024-04-22_174308.png" />
+
+   * Click **Publish** to make the prompt live.
+
+   <br />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/a55eac9-Screenshot_2024-04-22_174752.png" />
+
+3. **Manage your zone**
+
+   * Under **Settings > Zones**, view all prompts assigned to a zone.
+   * Switch between **Stack**, **List**, or **Slider** display modes for multiple items.
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/dcbb8c2-Screenshot_2024-04-22_175035.png" />
 
 ***
 
-## Step-by-step
-
-* [ ] Create a Zone
-
-  * [ ] Go to Settings > Zones > New Zone\
-    This zone will live on the home page in the top banner section. The identifier should not have any spaces. You can add as many prompts as you want into the zone.
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/0e07cb5-image.png" />
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/60a9382-inline2.png" />
-
-* [ ] Create an inline prompt 
-
-  * [ ] Go to Prompts > New Prompt.\
-    Now we can create horizontal prompts that will be shown inside the zone. While the zone should typically be considered permanent real estate, the prompts inside can be added and removed as desired.
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/564d84a-image.png" />
-
-  * [ ] Select "Desktop and Mobile" since we are creating a prompt for the browser. Then select the horizontal prompt.
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/664a781-image.png" />
-
-  * [ ]  Name your prompt, create a description, select the zone and hit Submit.
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/c8c3561-image.png" />
-
-  * [ ] Add segments, limits (optional), schedule (optional), and action.
-
-  * [ ] Click the 'Edit prompt design' button to update the creative
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/6a6227a-Screenshot_2024-04-22_173653.png" />
-
-  * [ ] Design.
-
-    This is where the magic happens. Feel free to tinker with the settings and see your changes live in the preview on the left. In our example we will leave it as is, but you should feel comfortable making changes to any settings within the highlighted area. 
-
-    Background image size varies by device. Click here for a [zip file with sample background images](/images/samples.zip).
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/0d80810-Screenshot_2024-04-22_174308.png" />
-
-  * [ ] Publish your newly created item
-
-    <Image align="center" className="border" border={true} src="https://files.readme.io/a55eac9-Screenshot_2024-04-22_174752.png" />
-
-* [ ] Go to the zone list view. This page shows all current prompts running in the zone. If you have more than one prompt you can change the 'Style' to a slider or list.
-
-  <Image align="center" className="border" border={true} src="https://files.readme.io/dcbb8c2-Screenshot_2024-04-22_175035.png" />
-
-<br />
-
 ## Integration
 
-Redfast provides two paths of integration for websites - 1) the Live Tool integration and 2) custom developer integration. For the sake of this guide the Live Tool integration may be sufficient.
+### Live Tool
 
-### Live Tool Implementation
+1. Click the **Live Tool** button and select your domain.
 
-This integration will open the the Live Tool panel as an overlay over your site. Then you can point and click to insert the zone in your desired location.
+![](https://files.readme.io/7cb2ded-Screenshot_2024-04-22_175333.png) ![](https://files.readme.io/03543e0-Screenshot_2024-04-22_175548.png)
 
-* [ ] Click the Live Tool button and select the domain
+2. Expand the panel, switch to the **Add** tab, and choose your zone.
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/7cb2ded-Screenshot_2024-04-22_175333.png" />
+![](https://files.readme.io/a1fe85f-image.png)
 
-  ![](https://files.readme.io/03543e0-Screenshot_2024-04-22_175548.png)
-* [ ] Expand the Live Tool panel
+1. Hover over the target area until the outline appears, then click to insert the zone.
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/a1fe85f-image.png" />
-* [ ] Open the 'Add' tab
-* [ ] Click 'Add' on the zone you created earlier
+![](https://files.readme.io/7878719-image.png)
 
-  ![](https://files.readme.io/598537b-image.png)
-* [ ] Hover over the part of the site you wish to add the zone.\
-  Move your mouse closer to the edge will show a thick outline. In this case the thicker portion of the outline is shown at the top. This indicates we will be inserting above the highlighted section. Which in this case is the 'New Releases'.
+### Developer guide
 
-  ![](https://files.readme.io/7878719-image.png)
-* [ ] Click to add your zone. Your banner will now appear
+1. Copy the zone identifier (e.g., `data-rf-zone="example-tag"`).
+2. Insert into your HTML:
 
-  ![](https://files.readme.io/997c32a-image.png)
-* [ ] That's it!
+```html
+<div data-rf-zone="example-tag"></div>
+```
 
-### Developer Guide
+3. Optionally wrap in a container with explicit height for absolute positioning:
 
-* [ ] Retrieve the identifier
-* [ ] You can give the identifier to your developer or you can add it to your app yourself.
-* [ ] That's it!
+```html
+<div style="height:200px">
+  <div data-rf-zone="example-tag"></div>
+</div>
+```
 
-> 📘 Absolutely positioning by inserting prompts
+***
+
+## Tips and tricks
+
+> **Absolute positioning—new content**
 >
-> When dealing with absolutely positioned content it is best to avoid using the Live Tool. While the Live Tool provides a convenient way to quickly insert the appropriate HTML tag necessary to render prompts the best way to handle absolute content is as follows.
+> 1. Insert the zone tag where needed.
+> 2. Wrap in a container with a set height.
+> 3. Initialize your scroll or animation logic.
 >
-> Adding new content
->
-> 1. Insert the zone tag into your app.
->
-> `<div data-rf-zone="example-tag"></div>\`
->
-> 2. Wrap the tag and set a height for the Redfast html element using the Redfast IAB style standards.
->
-> `<div style="height: 200px"><div data-rf-zone="example-tag"></div></div>\`
->
-> 3. Initialize your page scroll effect
->
-> 4. Resizing should be handled accordingly
+> **Absolute positioning—replacing content**\
+> Use the Live Tool sparingly—ensure your prompt dimensions match the existing element.
 
-> 📘 Absolutely positioning by replacing existing content
->
-> If you want to replace existing content it can be done with the Live Tool. This should be used sparingly. Make sure the dimensions of the prompt is the same as the content block you are replacing.
->
-> 1. Using Live Tool select your prompt, click “Add” and hover over the appropriate sections.
->
-> 2. Once the outline is completely solid you may click
->
-> 3. The prompt will now replace the underlying content.
+**Content delay solutions**
 
-### More tips and tricks
+* **Header load lag**: add CSS animations or skeleton loaders.
+* **Above-the-fold delay**: set explicit height with a brief no-collapse timer.
+* **Slow SDK load**: move the Recurly Engage tag earlier in your tag order.
 
-#### Content delay for asynchronous data
+**Responsive resizing**
 
-Prompts may be delayed for a variety of reasons. Below are common solutions towards addressing most issues you may encounter using a combination of design and technical solutions.
+* Use CSS media queries or `transform: scale()` for width issues.
+* Apply `background-size: cover` or bake text into images for backgrounds.
 
-**Fixed content such as in the header does not appear immediately.**
-
-Solution - use an animation (css or behavior similar to skeleton loader)
-
-**Above fold content does not appear immediately**
-
-Solution - set an explicit height with a 1 second no content collapse timer (e.g. bandwidth constraints)
-
-**Redfast data loading too slowly**
-
-JS tag Solution - move Redfast up in your list of tags to allow for earlier loading
-
-Synchronous data loading Solution (Sledge hammer) - wait for Redfast event data before proceeding to render app up to a maximum time limit
-
-Redfast Solution - priority processing
-
-**User specific data loading too slowly** 
-
-Set default content solution - Add a prompt set to All Users
-
-**Resizing issues**\
-In some cases the user may run into issues with undersized or oversized browser windows. This can be improved using various CSS techniques.
-
-1. Width issues
-
-Solution - Media queries
-
-Solution - Scaling with transform or font size (e.g. 5vw)
-
-2. Background image issues
-
-Solution - Bake text into image
-
-Solution - Background cover or contain, scaling with transform
-
-Solution - Media queries
-
-Tools and Resources\
-Redfast provides you several resources to address the above issues.
-
-1. Previewing using your styles with the Live Tool and Live Preview mode
-
-2. Built in custom CSS overrides and ability to enhance existing elements with additional HTML
-
-3. Direct Support from the Redfast technical team
+For further assistance, contact our technical team or explore our developer resources.
