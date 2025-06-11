@@ -1,5 +1,5 @@
 ---
-title: Dynamic Variables
+title: Dynamic variables
 excerpt: >-
   Configure and use dynamic variables (custom traits) within your prompts to
   deliver personalized messaging.
