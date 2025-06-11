@@ -56,6 +56,10 @@ The **Prompts** page provides a quick view of all prompts in your account, displ
 
 ## Inline
 
+This video shows how to create a horizontal inline banner for all visitors on your homepage. The steps for vertical, tile, and text-only prompts are identical.
+
+<Embed url="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" href="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+
 These four prompt types occupy defined zones on your site or application alongside your content—hence the name **inline**.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/3306b54-Screenshot_2024-04-18_193019.png" />
@@ -70,7 +74,7 @@ A single zone can render multiple items of the same type in one of three modes:
 * **List**: items display side by side, ideal for showing a row of personalized recommendations.
 * **Slider**: a carousel showing one item at a time, with optional bullet indicators or auto-rotation.
 
-#### Horizontal
+### Horizontal
 
 A wide banner with a landscape orientation that spans the width of your content area or screen edge-to-edge. Commonly placed at the top or bottom of pages, it can include a call-to-action button and hide itself on click or remain visible.
 
@@ -78,7 +82,7 @@ A wide banner with a landscape orientation that spans the width of your content 
 
 ![](https://files.readme.io/994d3cd-image.png)
 
-#### Vertical
+### Vertical
 
 A tall panel with a portrait orientation, typically along the left or right edge of your layout. Like horizontals, it may include buttons and can be timed or click-to-dismiss.
 
@@ -86,34 +90,32 @@ A tall panel with a portrait orientation, typically along the left or right edge
 
 ![](https://files.readme.io/a1fb469-image.png)
 
-#### Tile
+### Tile
 
-A square or rectangle zone—perfect for grid layouts. Tiles display media and text, and can be closed or persist after interaction.\
-**Recommended ratios**: 1×1, 4×3, 16×9 ![](https://files.readme.io/5729a7f-image.png)
+A square or rectangle zone—perfect for grid layouts. Tiles display media and text, and can be closed or persist after interaction.
 
-#### Text-only
+* **Recommended ratios**: 1×1, 4×3, 16×9.
 
-A clickable text bar without images, useful for simple announcements or links. It can be configured to hide on click or remain in view.\
-**Recommended ratios**: 6×1, 8×1, 10×1 ![](https://files.readme.io/392d0bc-image.png)
+![](https://files.readme.io/5729a7f-image.png)
 
-***
+### Text-only
 
-## How-to video
+A clickable text bar without images, useful for simple announcements or links. It can be configured to hide on click or remain in view.
 
-This video shows how to create a horizontal inline banner for all visitors on your homepage. The steps for vertical, tile, and text-only prompts are identical.
+* **Recommended ratios**: 6×1, 8×1, 10×1.
 
-<Embed url="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" href="https://www.loom.com/embed/0b567941dcf24629b1c053d4900ff0d3?sid=0d2335cd-d92d-4fcd-8438-3a35c781d0ca" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+![](https://files.readme.io/392d0bc-image.png)
 
-***
-
-## Step-by-step
+### Implementation Guide
 
 1. **Create a zone**
 
-   * Navigate to **Settings > Zones > New Zone**.
-   * Name the zone (no spaces) and select its placement (e.g., “Home Page Top Banner”).
+   * **Navigate** to **Settings > Zones > New Zone**.
+   * **Name** the zone (no spaces) and **select** its placement (e.g., “Home Page Top Banner”).
 
-     <Image align="center" className="border" border={true} src="https://files.readme.io/0e07cb5-image.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} src="https://files.readme.io/0e07cb5-image.png" />
 
    <Image align="center" className="border" border={true} src="https://files.readme.io/60a9382-inline2.png" />
 
