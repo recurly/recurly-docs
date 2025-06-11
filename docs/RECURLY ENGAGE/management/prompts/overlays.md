@@ -42,19 +42,21 @@ An **overlay prompt** is an in-app message rendered atop your interface to captu
 
 Overlay prompts appear above your content and may fully block interaction (interstitial, pop-up, video) or sit unobtrusively (notification, bottom banner).
 
-![](https://files.readme.io/eb0dc55-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/eb0dc55-image.png" />
 
 ### Interstitial
 
-Full-screen or near–full-screen prompts shown before or after page load. They respect device aspect ratios and safe-area margins to keep key content visible.\
+Full-screen or near–full-screen prompts shown before or after page load. They respect device aspect ratios and safe-area margins to keep key content visible.
+
 ![](https://files.readme.io/0ab0f6f-image.png)
 
 ### Pop-up
 
 Overlay windows featuring an image, text, and one or more calls to action. Users can dismiss them if configured.
 
-* **Sizes**: 1200×800, 960×640, or 750×500 (configurable)\
-  ![](https://files.readme.io/d2cb3d2-image.png)
+* **Sizes**: 1200×800, 960×640, or 750×500 (configurable).
+
+![](https://files.readme.io/d2cb3d2-image.png)
 
 ### Video
 
@@ -75,7 +77,7 @@ Banner prompts spanning the bottom of the viewport, displaying text and imagery 
 
 ## Step-by-step
 
-1. Go to **Prompts > +New Prompt**.
+1. **Go** to **Prompts > +New Prompt**.
 2. Select **Desktop and Mobile**, then choose your overlay type (e.g., **Pop-up**).
 3. Add a name and optional description.
 4. Add one or more segments.\
