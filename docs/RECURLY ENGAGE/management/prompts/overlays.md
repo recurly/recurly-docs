@@ -70,42 +70,35 @@ Media-rich overlays combining video playback with text and actionable buttons.
 
 Subtle corner prompts with a brief headline, background image, and a single call to action—ideal for low-impact messaging.
 
-![](https://files.readme.io/45dbbcc-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/45dbbcc-image.png" />
 
 ### Bottom banner
 
 Banner prompts spanning the bottom of the viewport, displaying text and imagery without fully blocking content.
 
-![](https://files.readme.io/1500b39-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1500b39-image.png" />
 
 ## Step-by-step
 
 1. **Go** to **Prompts > +New Prompt**.
 2. Select **Desktop and Mobile**, then choose your overlay type (e.g., **Pop-up**).
-3. Add a name and optional description.
-4. Add one or more segments.\
-   Adding the **Test Users** segment allows you to view the prompt as if you were a targeted user.
-5. Add a trigger.\
-   Learn more about triggers [here](triggers).
-6. Set a limit (optional).\
-   There are multiple types of limits; see [limits](limits-1).
-7. Set a schedule (optional).\
-   Click [Schedule](schedule-1) to configure timing.
-8. Set an action (optional).\
-   Define post-click behavior via [Actions](actions-1).
-9. Select **Edit prompt design** to design the prompt.
-10. Tinker with settings in the preview—when done, click **Continue**.
-11. Preview your prompt on your live site.
-12. When satisfied, click **Save** and set status to **Start**.
-
-### Test the prompt
-
-Validate your setup with the **Test Users** segment; see the [test user guide](test-users).
+3. **Add** a name and optional description.
+4. **Add** one or more segments: Adding the **Test Users** segment allows you to view the prompt as if you were a targeted user.
+5. **Add** a trigger: Learn more about triggers [here](triggers).
+6. **Set** a limit (optional): There are multiple types of limits; see [limits](limits-1).
+7. **Set** a schedule (optional): **Click** [Schedule](schedule-1) to configure timing.
+8. **Set** an action (optional): **Define** post-click behavior via [Actions](actions-1).
+9. **Select** **Edit prompt design** to design the prompt.
+10. Tinker with settings in the preview—when done, **click** **Continue**.
+11. **Preview** your prompt on your live site.
+12. When satisfied, **click** **Save** and **set** status to **Start**.
+13. **Test** the prompt: Validate your setup with the **Test Users** segment; see the [test user guide](test-users).
 
 ### Activate the prompt
 
 Activation has two phases:
 
 1. **Review phase**: launch to **Test Users** for final QA.
-2. **Active phase**: attach all target segments for full-scale deployment.\
-   You can **pause**, **restart**, or **end** a prompt at any time—just end any active experiment first.
+2. **Active phase**: attach all target segments for full-scale deployment.
+
+You can **pause**, **restart**, or **end** a prompt at any time—just end any active experiment first.
