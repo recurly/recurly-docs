@@ -147,34 +147,32 @@ A clickable text bar without images, useful for simple announcements or links. I
 
 ## Integration
 
-### Live Tool
+### Live tool
 
-1. Click the **Live Tool** button and select your domain.
+1. **Click** the **Live Tool** button and **select** your domain.
 
-![](https://files.readme.io/7cb2ded-Screenshot_2024-04-22_175333.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7cb2ded-Screenshot_2024-04-22_175333.png" />
 
-![](https://files.readme.io/03543e0-Screenshot_2024-04-22_175548.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/03543e0-Screenshot_2024-04-22_175548.png" />
 
-<br />
+2. **Expand** the panel, switch to the **Add** tab, and choose your zone.
 
-2. Expand the panel, switch to the **Add** tab, and choose your zone.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a1fe85f-image.png" />
 
-![](https://files.readme.io/a1fe85f-image.png)
+3. **Hover** over the target area until the outline appears, then click to insert the zone.
 
-1. Hover over the target area until the outline appears, then click to insert the zone.
-
-![](https://files.readme.io/7878719-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7878719-image.png" />
 
 ### Developer guide
 
-1. Copy the zone identifier (e.g., `data-rf-zone="example-tag"`).
-2. Insert into your HTML:
+1. **Copy** the zone identifier (e.g., `data-rf-zone="example-tag"`).
+2. **Insert** into your HTML:
 
 ```html
 <div data-rf-zone="example-tag"></div>
 ```
 
-3. Optionally wrap in a container with explicit height for absolute positioning:
+3. **Optionally** **wrap in** a container with explicit height for absolute positioning:
 
 ```html
 <div style="height:200px">
@@ -186,24 +184,23 @@ A clickable text bar without images, useful for simple announcements or links. I
 
 ## Tips and tricks
 
-> **Absolute positioning—new content**
->
-> 1. Insert the zone tag where needed.
-> 2. Wrap in a container with a set height.
-> 3. Initialize your scroll or animation logic.
->
-> **Absolute positioning—replacing content**\
-> Use the Live Tool sparingly—ensure your prompt dimensions match the existing element.
+### Absolute positioning - new content
 
-**Content delay solutions**
+1. Insert the zone tag where needed.
+2. Wrap in a container with a set height.
+3. Initialize your scroll or animation logic.
+
+### Absolute positioning—replacing content
+
+Use the Live Tool sparingly—ensure your prompt dimensions match the existing element.
+
+### Content delay solutions
 
 * **Header load lag**: add CSS animations or skeleton loaders.
 * **Above-the-fold delay**: set explicit height with a brief no-collapse timer.
 * **Slow SDK load**: move the Recurly Engage tag earlier in your tag order.
 
-**Responsive resizing**
+### Responsive resizing
 
 * Use CSS media queries or `transform: scale()` for width issues.
 * Apply `background-size: cover` or bake text into images for backgrounds.
-
-For further assistance, contact our technical team or explore our developer resources.
