@@ -39,27 +39,27 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ## Adding form fields to a prompt
 
-1. Open **Prompts** and select the prompt you wish to enhance.
+1. **Open** **Prompts** and **select** the prompt you wish to enhance.
 
-![](https://files.readme.io/ce4a893-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ce4a893-image.png" />
 
-2. Click **Edit prompt design** to launch the editor.
+2. **Click** **Edit prompt design** to launch the editor.
 
-![](https://files.readme.io/5477d38-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5477d38-image.png" />
 
 ### Adding input fields
 
-1. In the **Forms** panel, enable **Inputs**.
-2. Configure each input field (label, placeholder, validation). Preview updates live.
+1. In the **Forms** panel, **enable** **Inputs**.
+2. **Configure** each input field (label, placeholder, validation). **Preview** updates live.
 
-![](https://files.readme.io/70ea517-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/70ea517-image.png" />
 
 ### Adding a survey
 
-1. In the **Forms** panel, enable **Survey**.
-2. Define up to five survey options with labels and values. Preview updates live.
+1. In the **Forms** panel, **enable** **Survey**.
+2. **Define** up to five survey options with labels and values. Preview updates live.
 
-![](https://files.readme.io/bb79ff4-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bb79ff4-image.png" />
 
 ## Handling form submissions
 
