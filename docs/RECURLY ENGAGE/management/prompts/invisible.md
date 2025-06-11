@@ -14,8 +14,6 @@ next:
 ---
 # Overview
 
-Invisible Prompts allow you to activate or deactivate features, trigger API calls, or modify content silently when a user visits a page or a specific event occurs—no user interaction required.
-
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
