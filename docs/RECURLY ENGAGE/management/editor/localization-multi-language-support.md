@@ -48,7 +48,10 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 **Desktop preview**
 
-![](https://files.readme.io/dc57b6a-image.png) ![](https://files.readme.io/18bf885-image.png)
+![](https://files.readme.io/dc57b6a-image.png) 
+<br/>
+
+![](https://files.readme.io/18bf885-image.png)
 
 **Mobile preview** ![](https://files.readme.io/1facf58-image.png) ![](https://files.readme.io/a2ca771-image.png)
 
