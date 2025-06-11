@@ -110,7 +110,7 @@ With all tasks finalized, you’ll successfully close the period in Recurly RevR
 * Review and process the stuck data to resolve any underlying errors.
 * Once the data flows correctly into RevRec, click Retry on the period close task to continue.
 
-**Please note:** Refer to the [stage data error FAQs](https://docs.recurly.com/docs/period-close-checklist#/contract-stage-errors) below for understanding how to resolve the stage data errors.
+**Please note:** Refer to the [stage data error FAQs](https://docs.recurly.com/docs/period-close-checklist#contract-stage-errors) below for understanding how to resolve the stage data errors.
 
 ### What does the error in the system task “Transfer Journals” mean?
 
