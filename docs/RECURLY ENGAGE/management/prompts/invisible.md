@@ -52,11 +52,11 @@ Use metadata tags to pass custom key-value pairs into your Invisible Prompt for 
 
 1. Click the **Edit** (pencil) icon on your Invisible Prompt to open the Metadata modal.
 
-![](https://files.readme.io/e45aa27-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/e45aa27-image.png" />
 
-1. Add one or more key-value pairs to tailor your action logic.
+2. Add one or more key-value pairs to tailor your action logic.
 
-![](https://files.readme.io/7db1c7e-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7db1c7e-image.png" />
 
 ### Retrieving metadata in code
 
