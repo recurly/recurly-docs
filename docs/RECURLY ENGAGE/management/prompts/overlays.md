@@ -56,14 +56,15 @@ Overlay windows featuring an image, text, and one or more calls to action. Users
 
 * **Sizes**: 1200×800, 960×640, or 750×500 (configurable).
 
-![](https://files.readme.io/d2cb3d2-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d2cb3d2-image.png" />
 
 ### Video
 
 Media-rich overlays combining video playback with text and actionable buttons.
 
-* **Size**: 1100×619 (configurable)\
-  ![](https://files.readme.io/5b26f7a-image.png)
+* **Size**: 1100×619 (configurable).
+
+![](https://files.readme.io/5b26f7a-image.png)
 
 ### Notification
 
