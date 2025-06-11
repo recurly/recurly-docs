@@ -93,59 +93,185 @@ With all tasks finalized, you’ll successfully close the period in Recurly RevR
 
 ***
 
+## General period close errors
+
+### What does the error in the system task "Data processed for the current open period" mean?
+
+**Problem:** Recurly invoices for the current open period have not been successfully transferred into RevRec.\
+**Solution:** Initiate the billing integration job to synchronize the missing invoices. After the integration completes successfully, click Retry. The system will not allow the period close to proceed until all invoices are synced.
+
+### What does the error in the system task “Billing pending processing or Stuck in Stage” mean?
+
+**Problem:** Billing data or other uploaded transaction data for the current or a previous open period is stuck in the staging area and has not been processed.
+
+**Solution:**
+
+* Generate Stage Reports by navigating to Reports → Stage to find the specific transactions that are stuck.
+* Review and process the stuck data to resolve any underlying errors.
+* Once the data flows correctly into RevRec, click Retry on the period close task to continue.
+
+**Please note:** Refer to the stage data error FAQs below for understanding how to resolve the stage data errors.
+
+### What does the error in the system task “Transfer Journals” mean?
+
+**Problem:** Transfer Journal Cards for the primary book have not been approved or summarized.
+
+**Solution:**
+
+* Go to Import/Export → Transfer JE to locate the journals that are still open.
+* Approve and summarize all open journals.
+* Click Retry. This step ensures all journal entries are properly accounted for before closing the period.
+
+### What does the error in the system task “Review the Accounted Reports” mean?
+
+**Problem:** There are summarization issues or balance discrepancies in key financial reports.
+
+**Solution:**
+
+* Review the roll-forward reports (like Liability and Asset Balances) and verify that all unaccounted columns show zero.
+* Confirm that the beginning balances for the current period match the ending balances from the previous period.
+* Check that the revenue waterfall aligns with the scheduled balances.
+* If you cannot identify the specific report causing the issue, please contact Recurly Support for assistance.
+
+### Is it possible to reopen a closed period?
+
+**Answer:** No, a period that has been closed cannot be reopened.
+
+**Workaround:** Any transactions that belong to a closed period can be loaded into the current open period.
+
+### Will the new period close process allow closing the period if invoices haven't been integrated?
+
+**Answer:** No, the new period close process has a built-in check that prevents the period from being closed until all relevant invoices have been integrated.
+
+### The data in the stage area is not needed, but the system is preventing the period close. What can be done?
+
+**Problem:** The system will not allow the period to be closed while there is still data in the staging area, even if that data is unnecessary.
+
+**Solution:** If the data in the staging area is not required, you must manually delete it. The period close process will only continue once the stage is empty.
+
+### What does the system check during the validation step?
+
+**Answer:** The system task checks for the following alignments in the reports:
+
+* The unaccounted column must be zero in the liability balance and asset balance reports.
+* The beginning balance of the current period must match the ending balance of the previous period in the liability and asset balance reports.
+* The total of the revenue waterfall report should match the scheduled balances.
+
+### Can I skip a user-created task?
+
+**Answer:** A user-created task can only be skipped if it was marked as optional during its creation. Mandatory tasks cannot be skipped.
+
+### Can I add a new user task for the current period?
+
+**Answer:** No. A user task added during the current period will only become visible and active in the period close process starting from the next period. You cannot add a new task for a period that is already in progress.
+
+### Can I delete a user task in the current period?
+
+**Answer:** Yes, you can delete a user task. However, the deletion will only take effect from the following period. The task will remain part of the period close checklist for the current period.
+
+### Can I close a future period?
+
+**Answer:** No. The new period close process will only allow you to close periods previous to the current calendar month. You cannot close the current month or any future months in advance.
+
+***
+
+## Contract stage errors
+
+These errors occur during the initial contract processing stage.
+
+### What does the "Debit Account is Blank" or "Credit Account is Blank" error mean?
+
+**Reason:** This error indicates that a transaction line is missing its assigned debit or credit account.
+
+**Solution:** Please review the system configurations and assign the correct debit and credit accounts to the relevant lines to resolve the issue.
+
+### Why am I seeing the error "Updated SO Amount is in a different sign than previous Billed Amount"?
+
+**Reason:** This happens when an update to a Sales Order (SO) has an amount with a different sign (positive/negative) than the original SO. For example, a positive SO amount cannot be updated with a negative amount.
+
+**Solution:** Ensure that the updated SO amount maintains the same sign as the original.
+
+### What causes the "Error Processing So update"?
+
+**Reason:** This error can occur in the case of a Credit Memo Request (CMR) when the updated Sales Order (SO) amount is less than the amount that has already been billed.
+
+**Solution:** Verify the SO update amount and ensure it is not less than the billed amount.
+
+### What does "Updated SO Amount is less than Billed Amount" mean?
+
+**Reason:** This error indicates that the total billed amount for a line has exceeded the total amount specified in the Sales Order (SO).
+
+**Solution:** To proceed, you must either increase the SO amount to match or exceed the billed amount.
+
+### Why am I getting the "Bundle child updates are not allowed" error?
+
+**Reason:** The revenue recognition module does not permit direct updates to the child lines of a bundle.
+
+**Solution:** Updates should be made to the parent bundle line, not the individual child components.
+
+### How do I fix "Pob Rule setup is missing in the book" or "Pob setup missing for some lines in this contract in book"?
+
+**Reason:** These errors mean that one or more lines in the contract do not have a Price Obligation (POB) rule configured. The system requires POB rules to correctly recognize revenue.
+
+**Solution:** Navigate to the POB rules section for the contract and configure the appropriate POB rules for all lines that are missing them.
+
+**Please note:** If one line in the contract has no POB assigned, all the other lines will also be stuck in the stage area.
+
+***
+
 ## Doc stage errors
 
 These errors typically occur when processing documents like invoices and credit memos.
 
-##### What should I do about an "Invalid References on INV" error?
+### What should I do about an "Invalid References on INV" error?
 
 **Reason:** The reference invoice number or reference invoice line number provided is incorrect.
 
 **Solution:** Please check and correct the reference invoice details.
 
-##### Why did I get the error "Invalid INV. INV belongs to Material Right Contract"?
+### Why did I get the error "Invalid INV. INV belongs to Material Right Contract"?
 
 **Reason:** The system does not allow an invoice to be associated with a material right contract line. Invoices linked to material rights cannot be collected.
 
 **Solution:** Remove the invoice information from the material right line.
 
-##### How do I resolve a "Bill Amount is incorrect" error?
+### How do I resolve a "Bill Amount is incorrect" error?
 
 **Reason:** The amount on the bill is not correct.
 
 **Solution:** Please check and validate that the bill amount is accurate.
 
-##### What does "Original Credit Memo does not exist or already Cancelled" mean?
+### What does "Original Credit Memo does not exist or already Cancelled" mean?
 
 **Reason:** This error occurs when you try to cancel a credit memo, but the reference details provided do not correspond to an existing, active credit memo in the system.
 
 **Solution:** Re-upload the cancellation file with the correct reference invoice details.
 
-##### How do I fix "Original Invoice does not exist or already Cancelled" or "Original Invoice does not exist"?
+### How do I fix "Original Invoice does not exist or already Cancelled" or "Original Invoice does not exist"?
 
 **Reason:** This error appears when a credit memo is uploaded with reference details for an invoice that does not exist or has already been cancelled.
 
 **Solution:** Correct the reference invoice details in your upload file and re-process it.
 
-##### Why am I seeing "Invalid INV. SO not present in System"?
+### Why am I seeing "Invalid INV. SO not present in System"?
 
 **Reason:** This error occurs when an invoice is loaded with a reference to a Sales Order (SO) that is not in the system.
 
 **Solution:** Please re-process the file with a valid and existing SO number.
 
-##### What should I do for an "Error Loading SO Line"?
+### What should I do for an "Error Loading SO Line"?
 
 **Reason:** The associated Sales Order (SO) line has not been successfully processed from the contract stage into the system.
 
 **Solution:** Check the contract stage for the relevant SO and ensure it is processed successfully before you proceed with the invoice.
 
-##### How do I resolve "CM cannot be processed as INV is in error"?
+### How do I resolve "CM cannot be processed as INV is in error"?
 
 **Reason:** You are trying to process a Credit Memo (CM) against an invoice that is currently in an error state in the stage area.
 
 **Solution:** First, review and resolve the error associated with the original invoice. Once the invoice is processed successfully, you can process the credit memo.
 
-##### What causes the "Cumulative bill amount is over sell price" error?
+### What causes the "Cumulative bill amount is over sell price" error?
 
 **Reason:** This error occurs when the total value of invoices for a subscription exceeds the sell price, and the system is not configured to allow over-billing.
 
@@ -157,25 +283,25 @@ These errors typically occur when processing documents like invoices and credit 
 
 These errors occur during the processing of cost-related data.
 
-##### What does "Invalid Cost,  SO not present in System" mean?
+### What does "Invalid Cost,  SO not present in System" mean?
 
 **Reason:** The Sales Order (SO) number referenced in the cost file is incorrect or does not exist in the system.
 
 **Solution:** Please verify the SO number in your cost file is accurate and re-upload the file.
 
-##### Why am I seeing "Bundle child updates are not allowed" in the Cost Stage?
+### Why am I seeing "Bundle child updates are not allowed" in the Cost Stage?
 
 **Reason:** The revenue recognition module does not permit direct updates to the child lines of a bundle, and this rule applies to cost updates as well.
 
 **Solution:** Updates must be made at the parent bundle level.
 
-##### How do I fix "Invalid Cost Type, Cost Type Setup is missing"?
+### How do I fix "Invalid Cost Type, Cost Type Setup is missing"?
 
 **Reason:** The cost type specified is not valid because it has not been configured in the system.
 
 **Solution:** Please revisit your configuration to ensure the cost type setup is correct. Refer to the user manual for more details on this setup.
 
-##### What does "Allocated Commission lines cannot be updated" mean?
+### What does "Allocated Commission lines cannot be updated" mean?
 
 **Reason:** Once commission has been allocated to a line, the revenue recognition module does not allow that line to be updated.
 
