@@ -40,11 +40,11 @@ Inline prompts occupy predefined [zones](zones) on your site or application. Fou
 
 These four prompt types occupy defined zones on your site or application alongside your content—hence the name **inline**.
 
-![](https://files.readme.io/3306b54-Screenshot_2024-04-18_193019.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3306b54-Screenshot_2024-04-18_193019.png" />
 
 Inline prompts live in [zones](zones). Any prompt assigned to a zone appears in that location—for example, a horizontal banner in the **Web Featured** zone.
 
-![](https://files.readme.io/e0c5481-Screenshot_2024-04-18_191758.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e0c5481-Screenshot_2024-04-18_191758.png" />
 
 A single zone can render multiple items of the same type in one of three modes:
 
@@ -58,7 +58,7 @@ A wide banner with a landscape orientation that spans the width of your content 
 
 * **Recommended ratios**: 2×1, 4×1, **6×1**, 8×1, 10×1.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/994d3cd-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/994d3cd-image.png" />
 
 ### Vertical
 
@@ -74,7 +74,7 @@ A square or rectangle zone—perfect for grid layouts. Tiles display media and t
 
 * **Recommended ratios**: 1×1, 4×3, 16×9.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/5729a7f-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5729a7f-image.png" />
 
 ### Text-only
 
@@ -82,7 +82,7 @@ A clickable text bar without images, useful for simple announcements or links. I
 
 * **Recommended ratios**: 6×1, 8×1, 10×1.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/392d0bc-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/392d0bc-image.png" />
 
 ***
 
@@ -95,9 +95,9 @@ A clickable text bar without images, useful for simple announcements or links. I
 
    <br />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/0e07cb5-image.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0e07cb5-image.png" />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/60a9382-inline2.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/60a9382-inline2.png" />
 
 2. **Build an inline prompt**
 
@@ -106,15 +106,15 @@ A clickable text bar without images, useful for simple announcements or links. I
 
    <br />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/564d84a-image.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/564d84a-image.png" />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/664a781-image.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/664a781-image.png" />
 
    * Enter a **Name**, **Description**, and assign it to your new zone, then click **Submit**.
 
    <br />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/c8c3561-image.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c8c3561-image.png" />
 
    * Configure **Segments**, **Limits** (optional), **Schedule** (optional), and **Actions**.
 
@@ -122,26 +122,26 @@ A clickable text bar without images, useful for simple announcements or links. I
 
    <br />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/6a6227a-Screenshot_2024-04-22_173653.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6a6227a-Screenshot_2024-04-22_173653.png" />
 
    * Tweak settings in the designer and preview live changes. Download sample backgrounds [here](/images/samples.zip).
 
    <br />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/0d80810-Screenshot_2024-04-22_174308.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0d80810-Screenshot_2024-04-22_174308.png" />
 
    * Click **Publish** to make the prompt live.
 
    <br />
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/a55eac9-Screenshot_2024-04-22_174752.png" />
+   <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a55eac9-Screenshot_2024-04-22_174752.png" />
 
 3. **Manage your zone**
 
    * Under **Settings > Zones**, view all prompts assigned to a zone.
    * Switch between **Stack**, **List**, or **Slider** display modes for multiple items.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/dcbb8c2-Screenshot_2024-04-22_175035.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/dcbb8c2-Screenshot_2024-04-22_175035.png" />
 
 ***
 
