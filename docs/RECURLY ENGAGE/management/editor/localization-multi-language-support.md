@@ -1,6 +1,8 @@
 ---
-title: Localization (Multi Language Support)
-excerpt: ''
+title: Localization (Multi-language support)
+excerpt: >-
+  How to localize prompts based on your user’s browser or app locale without
+  duplicating prompts for each language.
 deprecated: false
 hidden: true
 metadata:
@@ -10,44 +12,58 @@ metadata:
 next:
   description: ''
 ---
-This article describes how to localize a single prompt to the language specified by the user’s browser or app’s locale settings without creating multiple prompts (one for each language).
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+
+# Definition
+
+**Prompt localization** uses a CSV of translations to serve prompt copy in multiple languages, automatically matching your user’s locale without creating separate prompts.
+
+# Key benefits
+
+* **Single-prompt maintenance**: Manage all languages in one place—no need for multiple prompt copies.
+* **Automatic matching**: Detects user locale and serves the correct translation.
+* **Fallback support**: Default language ensures coverage when no match is found.
+
+# Key details
 
 ## Setup
 
-Typically each prompt contains a headline, message body, and call to action buttons. Redfast prompt localization process will require you to provide translations for each of these elements in each of the desired languages. This is accomplished via a CSV that is uploaded to Pulse. Each row in the CSV should correspond to a [ISO 639-1 2-letter or 4-letter language code](https://www.w3schools.com/tags/ref_language_codes.asp). The columns correspond to specific text fields within the prompt. Use the [sample csv](https://assets.redfast.com/docs/translations_sample.csv), and the graphics below, as a guide.
+1. Prepare a CSV with one row per language, using [ISO 639-1](https://www.w3schools.com/tags/ref_language_codes.asp) codes. Columns correspond to prompt fields (headline, body, button labels).
+2. Use the [sample CSV](https://assets.redfast.com/docs/translations_sample.csv) as a template.
+3. Upload the CSV in Pulse under your prompt’s **Localization** section.
 
-Desktop:
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/dc57b6a-image.png" />
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/18bf885-image.png" />
-
-Devices:
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/1facf58-image.png" />
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/a2ca771-image.png" />
-
-<br />
-
-> 🚧 Do not delete columns in the CSV. All columns are required.
+> 🚧 Important
 >
-> Leave the fields you do not intend to use blank.
+> **Do not delete columns** in the CSV—all columns are required. Leave unused fields blank.
+>
+> Exactly **one** row must have `default=true`; this language serves as the fallback.
 
-<br />
+**Desktop preview**
 
-Exactly **one** (1) language should have `default` set to `true`. The values in this row will be returned as the default for end users whose detected language does not appear in the list.
+![](https://files.readme.io/dc57b6a-image.png) ![](https://files.readme.io/18bf885-image.png)
 
-After uploading the CSV and saving the prompt, the language selector dropdown will appear in the prompt preview area. Select a language to view the preview in Pulse. Click Live Preview to view the preview within your site.
+**Mobile preview** ![](https://files.readme.io/1facf58-image.png) ![](https://files.readme.io/a2ca771-image.png)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/ecfc764-image.png" />
+After saving, a language selector appears in the preview area. Choose a language to verify translations, then use **Live Preview** to test on your site. ![](https://files.readme.io/ecfc764-image.png)
 
 ## Technical Information
 
-Redfast detects the end user’s language from three sources:
+Recurly Engage determines the end user’s language from three sources (in priority order):
 
-1. The return value of the `setLanguage()` function within the custom web snippet (highest priority)
-2. The `language` trait associated with the end user
-3. The `Accept-Language` HTTP header (lowest priority)
+1. Value passed by `Redfast.setLanguage()` in your web snippet
+2. User’s `language` trait
+3. Browser `Accept-Language` HTTP header
 
-Redfast will first attempt to find an exact match against the end user’s detected language. If no exact match is found, Redfast may attempt to find a more generic match. For example, if the end user’s language is EN-US, Redfast will first try to find EN-US, and then EN. In this example, EN-GB WOULD NOT be matched to this user. If no matching 4-letter or 2-letter languages are available, Redfast will return the default language, as specified in the CSV.
+Matching logic:
+
+* Exact match on 2-letter or 4-letter code (e.g., `en-US`).
+* If no exact match, attempts generic 2-letter match (`en` for `en-GB`).
+* If still no match, serves the row with `default=true` from your CSV.
