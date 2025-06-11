@@ -1,5 +1,5 @@
 ---
-title: Invisible
+title: Invisible prompts
 excerpt: >-
   Configure and trigger background behaviors in your application without any
   user-facing UI using Invisible Prompts.
