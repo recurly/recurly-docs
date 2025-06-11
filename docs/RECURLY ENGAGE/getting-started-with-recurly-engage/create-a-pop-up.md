@@ -1,5 +1,5 @@
 ---
-title: Create a Pop up
+title: Create a pop-up
 excerpt: >-
   Steps to create and configure a pop-up prompt in Recurly Engage, from initial
   setup to live deployment.
