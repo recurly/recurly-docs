@@ -21,7 +21,6 @@ This feature or setting is available to all customers on any Recurly Engage subs
 ### Prerequisites & limitations
 
 * Company or App Administrator permissions in Recurly Engage.
-* Feature release planned for Q4 2024; availability may vary until then.
 
 # Definition
 
