@@ -1,6 +1,8 @@
 ---
 title: Editor
-excerpt: ''
+excerpt: >-
+  Overview of the design editor for creating and customizing prompts in Recurly
+  Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,15 +12,37 @@ metadata:
 next:
   description: ''
 ---
-The Editor view allows you to control your prompt design and set prompt interactions (add up to 3 CTA buttons, input fields, survey options, close icons etc.).\
-This is where the magic happens. 
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* You must have **Company** or **App Administrator** permissions in Recurly Engage.
+
+# Definition
+
+The **Editor** is the interactive designer within the Prompts console that lets you customize the look, feel, and interactions of your in-app messages in real time.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/38b466a-image.png" />
 
-Feel free to tinker with the settings and see your changes live in the preview at the top. If you don't want to change any settings you can leave it as is and click 'Save & Exit'.
+# Key benefits
+
+* **Live preview**: See your design changes reflected immediately in the canvas above.
+* **Rich interactivity**: Add buttons, forms, surveys, or custom HTML to create engaging experiences.
+* **Cross-functional collaboration**: Fine-tune visuals, copy, and behaviors with designers, developers, and marketers all in one place.
+
+# Key details
+
+* Adjust styling options (colors, fonts, spacing) and upload background images or videos.
+* Configure up to three CTA buttons with custom labels, actions, and deep links.
+* Add input fields or survey questions to collect user feedback directly in-app.
+* Toggle close icons, delay timers, and animation settings for optimal user experience.
+
+Feel free to tinker with any setting in the sidebar and watch updates live in the preview panel. When ready, click **Save & Exit** to apply your changes.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/d6c8f68-image.png" />
 
-While prompts are easy to create, the content and design may require a cross functional team.
-
-<br />
+While creating prompts is intuitive, finalizing content and design often involves input from designers, copywriters, and product teams—use this editor as your single source of truth.
