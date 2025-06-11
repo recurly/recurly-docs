@@ -1,6 +1,8 @@
 ---
 title: Prompts
-excerpt: ''
+excerpt: >-
+  An introduction to in-app messaging prompts in Recurly Engage and quick access
+  to their management console.
 deprecated: false
 hidden: true
 metadata:
@@ -10,35 +12,32 @@ metadata:
 next:
   description: ''
 ---
-A prompt is an in-app message that can be shown to users when they visit your app or website. Its purpose is to motivate the user to take an action they might not have taken otherwise. Here is a list of [Popular Use Cases](popular-uses) to start with.
+# Overview
 
-Prompts can appear as an overlay (i.e., popup) or inline (i.e., horizontal). Most prompts consist of a headline, message body, background, and up to three call-to-action buttons. Redfast provides several types of prompts available across desktop, mobile, tablet, and TV devices.
+Prompts are versatile in-app messages designed to engage users with timely calls to action. Whether you want to announce a feature, offer a discount, or gather feedback, prompts help drive the actions that matter most.
 
-A prompt can be targeted at one or more [Segments](segments) of users. It can be set to [Trigger](triggers) during specific events like a button click, a visit to a specific URL, or time spent on a page. It can also be [Scheduled](schedule-1) to appear on a specific date and time and further [Limited](limits) to a certain number of users or a specific budget.
+### Required plan
 
-It is also possible to experiment with a prompt using the built-in A-B testing [Experiments](experiments-1).
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-Creating prompts is core to what your customers will experience. In this section you will find a detailed overview of the Prompts feature and how-to guides for creating different prompt types.
+# Definition
 
-We hope these help you create the best prompts for your use cases and if you need any help configuring them out, we're just a message away – we can even help you manage them through a Managed Campaign option, chat with us to know more!
+A **prompt** is an in-app message that appears when a user visits your application or website. It consists of a headline, body copy, background, and up to three call-to-action buttons. Recurly Engage supports multiple prompt types—overlay and inline—across desktop, mobile, tablet, and TV devices.
 
-<br />
+# Key benefits
 
-The **Prompts** page provides a quick view of all the prompts created on your account along with basic information on their configuration and performance.
+* **Contextual engagement**: Reach users at the right moment with targeted in-app messages.
+* **Flexible customization**: Choose from various prompt types, designs, triggers, and schedules to match your brand and objectives.
+* **Data-driven optimization**: Leverage segments, limits, and A/B experiments to refine and improve performance.
 
-For each of the prompts you can view:
+# Key details
 
-* Status (Draft, Running, Paused, Limited, Ended)
-* Design preview
-* Name, Device/Prompt type, Creator
-* Segments the prompt is targeted at
-* Start and Finish date
-* High-level prompt performance data (Users, Goals, Conversion rate + Impressions, Clicks, CTR, if the **Show performance** toggle is enabled). Note that the performance data is displayed for the selected **Date range**, which you can update by clicking into the date field below the **+New Prompt** button.
+A prompt can be targeted to one or more [Segments](segments) and set to [Trigger](triggers) on events like button clicks, page visits, or time spent on a page. You can [Schedule](schedule-1) prompts for specific dates and times and [Limit](limits) their delivery by user count or budget. For use-case inspiration, explore our [Popular Use Cases](popular-uses).
 
-You can click on the **Search** button at the top-right corner of the screen to search for the prompt by its name or use one of the filtering options to filter all prompts of a certain **Status**, **Device/type** or **Segment**.
+It’s also possible to run A/B tests with our built-in [Experiments](experiments-1), helping you choose the most effective variation before a full rollout.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/b2e10b0-Screenshot_2024-04-18_173049.png" />
+Creating prompts is core to what your customers experience. In this section, you’ll find detailed how-to guides for building and managing every prompt type. If you need hands-on support or want us to manage campaigns on your behalf, chat with us to learn about our Managed Campaign options.
 
-## Prompt Types
+The **Prompts** page provides a quick view of all prompts in your account, displaying their status, design preview, target segments, schedule, and high-level performance metrics (impressions, clicks, CTR). Use the **Search** bar or filters (Status, Device/type, Segment) to find what you need.
 
-![](https://files.readme.io/3044b9e56c373343fa3a936e456ae9619a782ee1feb0fd0079b362a8c1e2da0d-image.png)
+![](https://files.readme.io/b2e10b0-Screenshot_2024-04-18_173049.png)
