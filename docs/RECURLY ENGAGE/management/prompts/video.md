@@ -1,6 +1,6 @@
 ---
 title: Video
-excerpt: Best practices for delivering video prompts
+excerpt: Configuration and best practices for creating video prompts in Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,14 +10,32 @@ metadata:
 next:
   description: ''
 ---
-A video prompt allows you to display a video within a popup modal.
+# Overview
 
-<Embed url="https://www.loom.com/embed/fe1d6051af2d417eb95dddb4702014f1?sid=9ccd4e6f-3e97-474d-8100-a4afc1561db2" title="iframe" provider="loom.com" href="https://www.loom.com/embed/fe1d6051af2d417eb95dddb4702014f1?sid=9ccd4e6f-3e97-474d-8100-a4afc1561db2" typeOfEmbed="iframe" height="400px" width="100%" iframe="true" />
+### Video
 
-The following video specific configuration parameters are available for video prompts:
+<Embed url="https://www.loom.com/embed/fe1d6051af2d417eb95dddb4702014f1?sid=9ccd4e6f-3e97-474d-8100-a4afc1561db2" href="https://www.loom.com/embed/fe1d6051af2d417eb95dddb4702014f1?sid=9ccd4e6f-3e97-474d-8100-a4afc1561db2" typeOfEmbed="iframe" height="400px" width="100%" iframe="true" />
 
-* Video URL: This is a link to the source video file to played. While MP4 format is fully supported by most browsers, we recommend using HLS format links to minimize buffering. MP4 files should be less than 25 MB for best performance.
-* Video Cover: You can optionally upload a poster image to display before and after the video is played.
-* Mute: Best practice is to set video prompts that autoplay to be muted.
-* Loop: This allows you to play the specified video on a loop when it reaches the end.
-* Autoplay: When enabled, the video will play as soon as the prompt is shown. Note that most browsers will restrict autoplay videos to be muted.
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+
+# Definition
+
+A **video prompt** is an overlay that plays a video file with optional text and calls to action, designed to capture user attention in a modal window.
+
+# Key benefits
+
+* **High engagement**: Video content drives higher attention and conversion rates.
+* **Customizable playback**: Control autoplay, looping, and mute settings for optimal UX.
+* **Seamless integration**: Use the existing prompt designer—no additional coding required.
+
+# Key details
+
+## Video-specific configuration parameters
+
+* **Video URL**: Link to the source video file. HLS format is recommended; MP4 files should be under 25 MB.
+* **Video Cover**: Optional poster image displayed before and after playback.
+* **Mute**: Best practice for autoplay videos to be muted by default.
+* **Loop**: Enable continuous playback when the video ends.
+* **Autoplay**: Play the video immediately when the prompt appears (browsers require muted autoplay).
