@@ -48,21 +48,25 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### **Desktop preview**
 
-![](https://files.readme.io/dc57b6a-image.png) 
-<br/>
-![](https://files.readme.io/18bf885-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/dc57b6a-image.png" />
 
-### **Mobile preview** 
+<br />
 
-![](https://files.readme.io/1facf58-image.png)
-<br/>
-![](https://files.readme.io/a2ca771-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/18bf885-image.png" />
 
-After saving, a language selector appears in the preview area. Choose a language to verify translations, then use **Live preview** to test on your site. 
+### **Mobile preview**
 
-![](https://files.readme.io/ecfc764-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1facf58-image.png" />
 
-## Technical information
+<br />
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a2ca771-image.png" />
+
+After saving, a language selector appears in the preview area. Choose a language to verify translations, then use **Live preview** to test on your site.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ecfc764-image.png" />
+
+## Technical elements
 
 Recurly Engage determines the end user’s language from three sources (in priority order):
 
