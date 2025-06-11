@@ -151,7 +151,11 @@ A clickable text bar without images, useful for simple announcements or links. I
 
 1. Click the **Live Tool** button and select your domain.
 
-![](https://files.readme.io/7cb2ded-Screenshot_2024-04-22_175333.png) ![](https://files.readme.io/03543e0-Screenshot_2024-04-22_175548.png)
+![](https://files.readme.io/7cb2ded-Screenshot_2024-04-22_175333.png)
+
+![](https://files.readme.io/03543e0-Screenshot_2024-04-22_175548.png)
+
+<br />
 
 2. Expand the panel, switch to the **Add** tab, and choose your zone.
 
