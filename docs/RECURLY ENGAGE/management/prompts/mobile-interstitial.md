@@ -10,54 +10,67 @@ metadata:
 next:
   description: ''
 ---
+#### Metadata description
+
+Guide to creating and managing full-screen mobile interstitial prompts in Recurly Engage.
+
+# Overview
+
+A **mobile interstitial prompt** displays a full-screen message on mobile devices (iOS and Android) to capture user attention at key moments.
+
 > 📘 Note: This prompt type is scheduled to be released in 2024 Q4. Reach out to your customer success manager for more details.
 
-## Summary
+### Required plan
 
-Redfast supports the creation and delivery of a full screen prompt for use on mobile devices such as iPhones and Android phones.
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-<block:image>
-  {`
-    "images": [
-      {
-        "image": [
-          "https://files.readme.io/fb9833de82d86aafb60d172d84d67b7c7b2d7d361dbecf2bd8419825736f7e54-Screenshot_2024-10-01_at_3.36.35_PM.png",
-          "",
-          ""
-        ],
-        "align": "center"
-      }
-    ]
-  `}
-</block:image>
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Feature release planned for Q4 2024; availability may vary until then.
+
+# Definition
+
+A **mobile interstitial** is a native-style, full-screen prompt delivered within your mobile app to highlight offers, announcements, or calls to action.
+
+# Key benefits
+
+* **Full-screen impact**: Captures the entire device viewport for maximum visibility.
+* **Native rendering**: Uses device SDK to ensure smooth performance and consistent styling.
+* **Flexible configuration**: Customize text, visuals, and interactive buttons for mobile-specific use cases.
+
+# Key details
+
+Redfast supports the creation and delivery of full-screen interstitials on mobile devices such as iPhones and Android phones.
+
+<Image align="center" width="30% " src="https://files.readme.io/fb9833de82d86aafb60d172d84d67b7c7b2d7d361dbecf2bd8419825736f7e54-Screenshot_2024-10-01_at_3.36.35_PM.png" />
+
+<br />
 
 ## UI Elements
 
-Using the Redfast admin console (Pulse), you may specify various elements and interactions for this prompt style. The background image, title, and message body are rendered into a composite image used by the device SDK while the buttons are native elements rendered by the device SDK.
+Use the Recurly Engage admin console to configure these properties; the SDK will render native buttons at runtime.
 
-The following elements of the prompt may be configured:
-
-| Item             | Type      | Description                                             |
-| :--------------- | :-------- | :------------------------------------------------------ |
-| Title            | Text      | Headline text                                           |
-| Message          | Text      | Message body                                            |
-| Background color | Hex color | Solid color                                             |
-| Background Image | Image     | Image to be used as background                          |
-| Legal text       | Text      | Legal disclaimer text                                   |
-| Close button     | Radio     | Allow close or not                                      |
-| Close timer      | Text      | Countdown timer in seconds                              |
-| **Buttons**      |           | Up to three buttons                                     |
-| Text             | Text      | Button text                                             |
-| Text color       | Hex color | Button text color                                       |
-| Background color | Hex color | Button background color - Hex code with alpha (8 chars) |
-| Font family      | Dropdown  | iOS: standard fonts; Android: font family name          |
-| Border radius    | String    | Border radius (px)                                      |
-| Border color     | Hex color | Button border color - Hex code with alpha (8 chars)     |
-| Border thickness | Number    | Thickness (px)                                          |
-| In App           | Text      | IAP Product/SKU Code                                    |
-| Deep Link        | Link      | Deep link URL                                           |
-|                  |           |                                                         |
+| Item             | Type      | Description                                     |
+| :--------------- | :-------- | :---------------------------------------------- |
+| Title            | Text      | Headline text                                   |
+| Message          | Text      | Message body                                    |
+| Background color | Hex color | Solid background color                          |
+| Background Image | Image     | Full-screen background image                    |
+| Legal text       | Text      | Legal disclaimer                                |
+| Close button     | Radio     | Allow user to close or force display time       |
+| Close timer      | Number    | Countdown in seconds before auto-close          |
+| **Buttons**      |           | Up to three native SDK buttons                  |
+| • Text           | Text      | Button label                                    |
+| • Text color     | Hex color | Button text color                               |
+| • Background     | Hex color | Button background color (8‑char hex with alpha) |
+| • Font family    | Dropdown  | System fonts on iOS or Android                  |
+| • Border radius  | Number    | Corner radius (px)                              |
+| • Border color   | Hex color | Button border color (8‑char hex with alpha)     |
+| • Border width   | Number    | Border thickness (px)                           |
+| • In App SKU     | Text      | In-app purchase product/SKU code                |
+| • Deep Link      | Link      | Deep link URL                                   |
 
 ## Triggers
 
-As with any native device prompt, your app must decide when the prompt will be shown by specifying screen name and/or element clickID. Please refer to the Redfast [iOS](ios-sdk) and [Android SDK](android-sdk) docs for additional information.
+Configure when to show the prompt by specifying screen name or element click ID in your app. For implementation details, see the Redfast [iOS](ios-sdk) and [Android SDK](android-sdk) docs.
