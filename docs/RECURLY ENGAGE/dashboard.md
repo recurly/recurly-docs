@@ -14,8 +14,6 @@ next:
 ---
 # Overview
 
-The **Performance** tab gives you a quick view of your account’s key metrics and high-level conversion analytics, helping you understand how effectively your prompts and guides engage users.
-
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
@@ -50,4 +48,4 @@ Here you can access:
 * **Active Experiments**: Running A/B tests with the highest conversion counts.
 * **Activity Log**: Timeline of recent updates to prompts, triggers, and actions.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/1646d2e-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1646d2e-image.png" />
