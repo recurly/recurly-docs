@@ -1,6 +1,8 @@
 ---
 title: Schedule
-excerpt: ''
+excerpt: >-
+  How to schedule prompts or guides to run only during specific dates, days, and
+  times in Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,28 +12,49 @@ metadata:
 next:
   description: ''
 ---
-**A schedule allows you to restrict a prompt or guide to a specific time schedule.** For example, you can restrict a prompt or guide to be active between May 1st, 2024 to December 31st, 2024 and further limited to Thursdays, Fridays, and Saturdays between 6 pm and 11 pm.
+# Overview
 
-A time schedule consists of:
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Times are interpreted in the selected time zone (user’s or app’s).
+
+# Definition
+
+A **schedule** is a configuration that limits when a prompt or guide is active, using three nested settings: Date Window, Day Part, and Time Part.
+
+# Key benefits
+
+* **Precision timing**: Target promotions or messages during high-traffic windows.
+* **Automated control**: Automatically enable and disable prompts without manual intervention.
+* **Flexible recurrence**: Combine date ranges, weekdays, and hourly windows for complex schedules.
+
+# Key details
 
 ## Date Window
 
-This is an overall start date and end date setting for the prompt or path. The prompt or path will only be active between 12:01 am on the start date and 11:59 pm on the end date. This is an optional setting. If it is not set, the prompt or path will be shown on all dates.
+Defines the overall start and end dates for your prompt or guide. The item is active from 12:01 AM on the start date to 11:59 PM on the end date. Leave blank to run indefinitely.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/bc5ca6e-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bc5ca6e-image.png" />
 
 ## Day Part
 
-This setting allows you to specify specific days of the week when the prompt or path is active. This is an optional setting. If it is not set, the prompt or path will be shown on all days.
+Choose specific weekdays when the prompt or guide is active. If unset, all days are included.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/bfd314d-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bfd314d-image.png" />
 
 ### Time Part
 
-This setting allows you to set specific times of the day when the prompt is active. A time part is treated as a sub setting of the day part which means that in order to specify a time window, you will also need to specify the days. You are required to also specify whether the schedule is enforced on the user's timezone or the app's timezone.
+Set specific hours within each selected day when the prompt or guide will appear. Time parts are a sub-setting of Day Parts—days must be selected first. You must also choose whether to enforce the schedule in the **user’s timezone** or the **app’s timezone**.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a77ae00-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a77ae00-image.png" />
 
-![](https://files.readme.io/fcbe451-image.png)
+Ensure your time windows do not overlap midnight unless you intend the schedule to wrap across days.
 
-<br />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/fcbe451-image.png" />
+
+Use these settings together to create complex schedules—for example, showing a weekend-only special offer every Friday and Saturday evening between 6 PM and 11 PM, from May 1, 2024, through December 31, 2024.
