@@ -50,9 +50,11 @@ Actions can be tied to any of these five prompt events:
 
 Use the two buttons (Accept/Decline) for complementary actions, such as “Sign me up” on Accept and “Add to watchlist” on Decline.
 
-![](https://files.readme.io/dbba980-image.png) 
-<br/>
-![](https://files.readme.io/ae7b5ec-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/dbba980-image.png" />
+
+<br />
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ae7b5ec-image.png" />
 
 ***
 
