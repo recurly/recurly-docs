@@ -14,8 +14,6 @@ next:
 ---
 # Overview
 
-**Actions** are events you assign to user interactions with a prompt (e.g., clicks, dismisses, timeouts) to drive downstream behavior such as redirects, API calls, or third-party integrations.
-
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
@@ -62,7 +60,7 @@ Use the two buttons (Accept/Decline) for complementary actions, such as “Sign 
 
 One or more actions can be attached to each interaction. For example, you might apply a discount via API and then send a confirmation email upon Accept.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/48dd9f9-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/48dd9f9-image.png" />
 
 ### Built-in actions
 
@@ -72,22 +70,33 @@ Available by default on every prompt:
 * **Send an SMS**: Send an SMS to a specified number on Accept.
 * **Redirect the user**: Navigate the user to a URL when they accept.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/48dd9f9-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/48dd9f9-image.png" />
 
 ### Connector actions
 
 Integrate with external systems—billing, CRM, support—using prebuilt connectors. Supply credentials in **Settings > Connectors** before use.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/87d7647-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/87d7647-image.png" />
 
 #### Step-by-step: Adding a connector action
 
-1. Open your prompt under **Prompts**. ![](https://files.readme.io/aace646-image.png)
-2. Click **Add action** next to the desired interaction (e.g., Accept). ![](https://files.readme.io/d186553-image.png)
-3. In the action modal, select **Connector Actions**, choose a connector (e.g., Zuora) and action (e.g., Subscribe a user to a plan), set **Error Behavior** (Stop or Continue), then click **Add Action**. ![](https://files.readme.io/4b6e880-image.png)
-4. Reorder actions by dragging; configure multiple actions per interaction as needed. ![](https://files.readme.io/09969e8-image.png)
+1. Open your prompt under **Prompts**.
 
-> **Error Behavior**:
+![](https://files.readme.io/aace646-image.png)
+
+1. Click **Add action** next to the desired interaction (e.g., Accept).
+
+![](https://files.readme.io/d186553-image.png)
+
+1. In the action modal, select **Connector Actions**, choose a connector (e.g., Zuora) and action (e.g., Subscribe a user to a plan), set **Error Behavior** (Stop or Continue), then click **Add Action**.
+
+![](https://files.readme.io/4b6e880-image.png)
+
+1. Reorder actions by dragging; configure multiple actions per interaction as needed.
+
+![](https://files.readme.io/09969e8-image.png)
+
+> **Error behavior**:
 >
 > * **Stop**: Halt downstream actions if this action fails.
 > * **Continue**: Proceed to next actions even if this one errors.
