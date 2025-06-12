@@ -57,9 +57,9 @@ To use a custom goal, first create a [Usage Tracker](usage-tracking-1). Then fol
 
 2. In the popup, select your usage tracker, set the attribution window (e.g., 24 hours), and click **Save**.
 
-![](https://files.readme.io/075d4bd-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/075d4bd-image.png" />
 
 2. Publish your prompt to start recording custom goal completions.
 3. Under **Performance**, a **Custom goal** bar displays the number of users who completed the tracked action after interacting with the prompt.
 
-![](https://files.readme.io/f478e3a-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f478e3a-image.png" />
