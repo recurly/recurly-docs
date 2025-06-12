@@ -1,6 +1,8 @@
 ---
 title: Performance
-excerpt: ''
+excerpt: >-
+  Overview of the Performance tab for monitoring prompt and guide metrics in
+  Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,22 +12,42 @@ metadata:
 next:
   description: ''
 ---
-The Performance tab gives you a quick view of your account main metrics and provides you with high level conversion analytics to help you understand how well your prompts are performing.
+# Overview
 
-By default, it displays weekly statistics, but you can update the date rage by clicking on the dates window in the upper-rigth corner of the screen.
+The **Performance** tab gives you a quick view of your account’s key metrics and high-level conversion analytics, helping you understand how effectively your prompts and guides engage users.
 
-<br />
+### Required plan
 
-Here you can access information on:
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-* **Total Users**: the number of users who visited your website or application within the selected date range;
-* **Total impressions**: the number of times your prompts were shown within the selected date range;
-* **Total clicks**: the number of times your ptompts were accepted by your users by clicking on the CTA button/s;
-* **Average CTR**: the number of clicks that your prompts received divided by the number of impressions;
-* **Top 5 prompts** and **Top 5 guides** with high level analytics for each of them;
-* **Active experiments**: variations within your running A/B tests that have the highest number of goals met;
-* **Activity log**: the latest updates to your prompts, triggers, and actions.
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Data reflects the selected date range; historical data availability depends on your account’s retention settings.
+
+# Definition
+
+The **Performance** tab aggregates usage data—users, impressions, clicks, and conversions—across prompts, guides, and experiments, with insights into top performers and recent activity.
+
+# Key benefits
+
+* **Holistic overview**: Monitor total users, impressions, clicks, and average CTR at a glance.
+* **Top performers**: Identify your Top 5 prompts and guides by engagement metrics.
+* **Experiment insights**: Track active experiments and their leading variations.
+* **Activity log**: Stay informed on recent changes to prompts, triggers, and actions.
+
+# Key details
+
+By default, the Performance tab shows weekly statistics. Update the date range by clicking on the date picker in the upper-right corner of the screen.
+
+Here you can access:
+
+* **Total Users**: Users who visited your site or app within the selected date range.
+* **Total Impressions**: Times your prompts were displayed in that period.
+* **Total Clicks**: Number of times users accepted prompts by clicking CTA buttons.
+* **Average CTR**: Clicks divided by impressions (click-through rate).
+* **Top 5 Prompts** and **Top 5 Guides**: Ranked by performance with high-level metrics for each.
+* **Active Experiments**: Running A/B tests with the highest conversion counts.
+* **Activity Log**: Timeline of recent updates to prompts, triggers, and actions.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/1646d2e-image.png" />
-
-<br />
