@@ -1,6 +1,8 @@
 ---
 title: Pipelines
-excerpt: Lifecycle driven approach to prompts and guides
+excerpt: >-
+  Overview of Recurly Engage Pipelines for lifecycle staging and behavior-based
+  user segmentation.
 deprecated: false
 hidden: true
 metadata:
@@ -10,62 +12,79 @@ metadata:
 next:
   description: ''
 ---
-Redfast pipelines is a unique way to manage your users across various lifecycle stages. It is also a way to create and reinforce positive behavior loops with your audience.
+# Overview
 
-### Lifecycle
+Recurly Engage Pipelines provide a unique way to manage users across various lifecycle stages or custom behavior loops. Use pipelines to visualize where users are and to trigger targeted prompts that move them to the next stage.
 
-Redfast provides three lifecycle-based pipelines:
+### Required plan
 
-* Member pipeline: This pipeline segments active users into five stages.
-  * Anonymous: Visitors to your marketing landing pages.
-  * Trial: Users in the trial phase of their subscription.
-  * Monthly: Users on the monthly plan.
-  * Premium: Users on the premium plan.
-  * Pending Cancel: Users that have canceled their subscription but continue to have access.
-  * Cancelled: Users that have churned.
-* Engagement pipeline: This pipeline segments active users into the following stages:
-  * New users
-  * Repeat users
-  * Regular users
-  * Frequent users
-  * Heavy users  
-    Each stage's default settings can be modified to match your organization's definitions.
-* E-commerce pipeline: 
-  * Visitor: Users that have not yet commenced checkout
-  * Shopper: Users with an item added to their cart
-  * Checkout: Users in the checkout process
-  * Customer: Users that have completed checkout
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-Each stage of every pipeline automatically further segments the users into:
+### Prerequisites & limitations
 
-* Engaged: users whose visits and minutes are on an increasing trajectory
-* At Risk: users whose visits and minutes are on a decreasing trajectory
-* Everyone else
+* Company or App Administrator permissions in Recurly Engage.
+* Pipelines update automatically based on incoming trait and usage data; allow time for data refresh.
 
-### Behavior
+# Definition
 
-Custom pipelines can be used to reinforce LTV-enhancing usage patterns. For example, if your analytics suggest that users who watch more episodic content have a higher LTV, you can set a 'Watch more episodic content' pipeline comprised of the following stages:
+A **pipeline** is a multi-stage user lane—either lifecycle-based or custom—that organizes users by progression and allows you to attach prompts to drive movement between stages.
 
-* Users who have watched one episode
-* Users who have watched two episodes
-* Users who have watched three or more episodes
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/effdb79-Screenshot_2024-04-30_at_6.53.20_PM.png" />
 
-### Moving users from one stage to the next
+# Key benefits
 
-While a pipeline can give you a bird's-eye view of your active users, it can also be an invaluable tool for moving users from one stage to the next.
+* **Holistic user view**: See where users reside in their journey—from anonymous visitors to loyal customers.
+* **Behavioral reinforcement**: Create custom pipelines to reward and reinforce desired usage patterns.
+* **Prompt orchestration**: Attach prompts at each stage to guide users forward in the funnel.
 
-<br />
+# Key details
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/effdb79-Screenshot_2024-04-30_at_6.53.20_PM.png" />
+## Lifecycle pipelines
 
-For example, you can encourage engaged trial users to become members before their trial ends with a prompt that provides a one-time offer to a membership plan. Click on Add Prompt on the stage to select a prompt style for your prompt
+Recurly Engage includes three out‑of‑the‑box pipelines:
 
-Next, specify the sub-segments of users within this stage that will see the prompt as well as the goal for this prompt as shown below.
+### Member Pipeline
 
-<br />
+1. **Anonymous**: Visitors to marketing pages.
+2. **Trial**: Users in their trial period.
+3. **Monthly**: Subscribers on a monthly plan.
+4. **Premium**: Subscribers on a premium plan.
+5. **Pending Cancel**: Canceled subscribers with continued access.
+6. **Cancelled**: Users who have fully churned.
 
-<Image align="center" src="https://files.readme.io/05d43d1-Screenshot_2024-04-30_at_7.00.32_PM.png" />
+### Engagement Pipeline
 
-The remaining steps are identical to those for [creating a prompt](prompts).
+1. **New users**
+2. **Repeat users**
+3. **Regular users**
+4. **Frequent users**
+5. **Heavy users**
 
-<br />
+> Each stage can be further segmented into **Engaged** (increasing activity), **At Risk** (decreasing activity), or **Everyone Else** based on visits and minutes trends.
+
+### E‑commerce Pipeline
+
+1. **Visitor**: Has not started checkout.
+2. **Shopper**: Added items to cart.
+3. **Checkout**: In the checkout process.
+4. **Customer**: Completed purchase.
+
+## Behavior pipelines
+
+Create custom, behavior‑driven pipelines to reinforce lifetime value patterns. For example, a “Watch More” pipeline:
+
+1. Watched one episode
+2. Watched two episodes
+3. Watched three or more episodes
+
+## Moving users between stages
+
+You can attach prompts directly to any pipeline stage. For example, to convert **Engaged Trial** users into paying members before trial expiry:
+
+1. Click **Add Prompt** on the **Trial** stage.
+2. Select a prompt style and target the sub‑segment (“Engaged Trial”).
+3. Define a custom goal and continue configuring the prompt as usual.
+
+The remaining setup steps follow the same flow as [creating a prompt](prompts). Once live, prompts will fire when users enter that pipeline stage, driving them toward the next segment.
+
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/05d43d1-Screenshot_2024-04-30_at_7.00.32_PM.png" />
