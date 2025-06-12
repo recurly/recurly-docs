@@ -80,21 +80,21 @@ Integrate with external systems—billing, CRM, support—using prebuilt connect
 
 #### Step-by-step: Adding a connector action
 
-1. Open your prompt under **Prompts**.
+1. **Open** your prompt under **Prompts**.
 
-![](https://files.readme.io/aace646-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aace646-image.png" />
 
-1. Click **Add action** next to the desired interaction (e.g., Accept).
+2. **Click** **Add action** next to the desired interaction (e.g., Accept).
 
-![](https://files.readme.io/d186553-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/d186553-image.png" />
 
-1. In the action modal, select **Connector Actions**, choose a connector (e.g., Zuora) and action (e.g., Subscribe a user to a plan), set **Error Behavior** (Stop or Continue), then click **Add Action**.
+3. In the action modal, **select** **Connector Actions**, **choose** a connector (e.g., Zuora) and action (e.g., Subscribe a user to a plan), **set** **Error Behavior** (Stop or Continue), then **click** **Add Action**.
 
-![](https://files.readme.io/4b6e880-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/4b6e880-image.png" />
 
-1. Reorder actions by dragging; configure multiple actions per interaction as needed.
+4. **Reorder** actions by dragging; **configure** multiple actions per interaction as needed.
 
-![](https://files.readme.io/09969e8-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/09969e8-image.png" />
 
 > **Error behavior**:
 >
