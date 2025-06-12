@@ -1,6 +1,8 @@
 ---
 title: Actions
-excerpt: ''
+excerpt: >-
+  Overview of prompt actions—triggered events tied to user interactions,
+  built-in connectors, and custom integrations in Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,77 +12,90 @@ metadata:
 next:
   description: ''
 ---
-Actions are events you can assign to a user's interaction with a prompt. For example, with a redirect action you can take the user to a specific area within your site as a result of the user clicking a prompt button. There are five possible user interactions that can be associated with one or more actions:
+# Overview
 
-1. Accept: when the user clicks on the Accept button. 
-2. Secondary Accept: when the user clicks on the secondary button (not available on all prompt types)
-3. Decline: when the user clicks on the Decline button.
-4. Dismiss: when the user clicks on the close button.
-5. Timeout: when the prompt is closed due to a timeout timer.
+**Actions** are events you assign to user interactions with a prompt (e.g., clicks, dismisses, timeouts) to drive downstream behavior such as redirects, API calls, or third-party integrations.
 
-A common use for a prompt with two buttons (accept and decline) is to have the accept button perform the affirmative action and the decline button perform the negative action. 
+### Required plan
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/dbba980-image.png" />
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-**However, you may also use the two buttons to perform related actions**. The accept button can be configured to perform the primary action associated with the prompt while decline can be configured to perform a secondary action. For example, a prompt promoting the new release of content may set the accept button to the "Sign me up" action and the decline button to the "Add to watchlist" action.
+### Prerequisites & limitations
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/ae7b5ec-image.png" />
+* Company or App Administrator permissions in Recurly Engage.
+* For connector actions, you must supply third-party credentials.
+* Website actions require custom JavaScript knowledge.
 
-<br />
+# Definition
 
-## Configure an Action on a prompt
+An **action** is a task executed when a user interacts with a prompt (Accept, Decline, Secondary Accept, Dismiss, or Timeout), enabling personalized flows and integrations.
 
-Actions are what happen when a user clicks on a button in a prompt. One or more actions can be performed. A simple action could be to subscribe a user to a mailing list or apply a discount to a user's account. Redfast comes with actions for a variety of platforms: billing, CMS, marketing, etc.
+# Key benefits
+
+* **Custom workflows**: Chain multiple actions—redirects, emails, API calls—on a single interaction.
+* **Seamless integrations**: Connect to billing, marketing, or support systems with prebuilt connectors.
+* **Immediate responses**: Trigger website JS actions for in-app behavior without page reloads.
+
+# Key details
+
+## User interactions
+
+Actions can be tied to any of these five prompt events:
+
+1. **Accept**: User clicks the primary button.
+2. **Secondary Accept**: User clicks the secondary button (if configured).
+3. **Decline**: User clicks a Decline option.
+4. **Dismiss**: User closes the prompt via the X icon.
+5. **Timeout**: Prompt auto-closes after a timer.
+
+Use the two buttons (Accept/Decline) for complementary actions, such as “Sign me up” on Accept and “Add to watchlist” on Decline.
+
+![](https://files.readme.io/dbba980-image.png) ![](https://files.readme.io/ae7b5ec-image.png)
 
 ***
 
-## Built-in Actions
+## Configure actions on a prompt
+
+One or more actions can be attached to each interaction. For example, you might apply a discount via API and then send a confirmation email upon Accept.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/48dd9f9-image.png" />
 
-Built in actions are available with every prompt you create.
+### Built-in actions
 
-* Send an email. Sends an email to the specified address when the user accepts the prompt.
-* Send an SMS. Sends a prompt-specific SMS message to the specified mobile number when the user accepts the prompt.
-* Redirect the user. Redirects the user to the specified url when the user accepts the prompt.
+Available by default on every prompt:
 
-## Connector actions
+* **Send an email**: Dispatch an email to a specified address on Accept.
+* **Send an SMS**: Send an SMS to a specified number on Accept.
+* **Redirect the user**: Navigate the user to a URL when they accept.
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/48dd9f9-image.png" />
+
+### Connector actions
+
+Integrate with external systems—billing, CRM, support—using prebuilt connectors. Supply credentials in **Settings > Connectors** before use.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/87d7647-image.png" />
 
-Connector actions are actions that can be performed within third party business systems or backends. To use them all you need to do is add the respective credentials of the third party system. Refer to the following table for more information on connector actions.
+#### Step-by-step: Adding a connector action
 
-* [ ] Go to prompts and select your prompt
+1. Open your prompt under **Prompts**. ![](https://files.readme.io/aace646-image.png)
+2. Click **Add action** next to the desired interaction (e.g., Accept). ![](https://files.readme.io/d186553-image.png)
+3. In the action modal, select **Connector Actions**, choose a connector (e.g., Zuora) and action (e.g., Subscribe a user to a plan), set **Error Behavior** (Stop or Continue), then click **Add Action**. ![](https://files.readme.io/4b6e880-image.png)
+4. Reorder actions by dragging; configure multiple actions per interaction as needed. ![](https://files.readme.io/09969e8-image.png)
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/aace646-image.png" />
-* [ ] Add an action to a prompt
+> **Error Behavior**:
+>
+> * **Stop**: Halt downstream actions if this action fails.
+> * **Continue**: Proceed to next actions even if this one errors.
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/d186553-image.png" />
-* [ ] Configure the action settings.\
-  Select the Action type (i.e., External & API Actions), a user interaction that'll trigger the action (i.e., Sign Me Up button click), Connector (i.e., Zuora), a specific action (i.e., Subscribe a user to a specific plan), Plan value and Error Behavior:\
-  **"Stop"** means downstream actions WILL NOT be executed.\
-  **"Continue"** means downstream actions WILL be executed.
+***
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/4b6e880-image.png" />
+## Custom actions
 
-  When you have a single action enabled it doesn't matter which Error Behavior option is selected. However, if you enable multiple actions it may matter. For example, you may need to unsubscribe a user before adding a new subscription plan. If the unsubscribe fails you most likely don't want to subscribe the user to the new plan or they may end up with 2 plans. In this case you would want to set the Cancel user subscription error action to "Stop" which will prevent the email from sending.
-* [ ] Click Add Action
+Build your own actions for advanced scenarios:
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/09969e8-image.png" />
-* [ ] You can repeat this process to add as many actions as you like for one or more interactions. Additionally you can re-order the actions by dragging and dropping.
+1. **Connector Actions**: Integrate additional business systems. [More info](connector-actions)
+2. **API Actions**: Call your custom endpoints. [More info](api-actions)
+3. **Website Actions**: Run custom JavaScript in the user’s browser. [More info](website-actions)
 
-  ![](https://files.readme.io/44de77d-image.png)
-
-<br />
-
-## Creating custom actions
-
-You can create actions to: 
-
-1. Connect to external marketing, support, and billing systems. [More info](connector-actions)
-2. Perform custom API driven actions. [More info](api-actions)
-3. Perform custom JS website actions. [More info](website-actions)
-
-<br />
-
-In some cases such as “1-click save offers,” assistance from the Redfast technical team may be helpful in getting things up and running quicker. Please reach out on the Slack channel for hands-on assistance.
+For complex setups—like “1-click save offers”—our technical team can assist. Reach out on Slack for hands-on support.
