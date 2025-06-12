@@ -14,7 +14,9 @@ next:
 ---
 # Overview
 
-A guide is a collection of prompts that appear one after another. They can span across screens of an app or site and across devices. Use guides to onboard users, conduct surveys, deliver time-based journeys, or reinforce messaging in a contextual and personalized sequence.
+### Video
+
+<Embed url="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" href="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
 
 ### Required plan
 
@@ -78,7 +80,7 @@ Supported on all devices.
 
 Triggered guides reinforce messages by delivering one of several prompts based on user eligibility and predefined conditions. You can prevent users from receiving multiple similar items by setting exclusion rules across guide items.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/831f597-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/831f597-image.png" />
 
 ***
 
