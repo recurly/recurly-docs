@@ -28,13 +28,13 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 Our integration with Avalara for Communications (AFC) is designed to streamline your operations and is specifically optimized for the streaming media industry. However, there are some limitations that you should be aware of:
 
-1. **Non-Billable Taxes and Surcharges:** Taxes and surcharges that Avalara categorizes as non-billable are not included in our invoices.
-2. **Disabling AFC:** If you choose to disable AFC, refunds of invoices that include taxes will not be processed.
-3. **Switching to AFC:** If you decide to switch providers to AFC, refunds that include charges from various tax services will not be processed.
-4. **Tax Exemptions:** Tax exemptions at the account level are limited to "yes" or "no" options, excluding the possibility for complex jurisdiction level exemptions.
-5. **Customer Type:** An account's customer type is not editable and defaults to "residential".
-6. **Lifeline Participant Status:** An account cannot hold a status as a lifeline participant.
-7. **Telecommunications-specific Billing Units:** Recurly does not support taxation based on billing units specific to telecommunications, such as "Minute", "Line", or "Location".
+* **Non-Billable Taxes and Surcharges:** Taxes and surcharges that Avalara categorizes as non-billable are not included in our invoices.
+* **Disabling AFC:** If you choose to disable AFC, refunds of invoices that include taxes will not be processed.
+* **Switching to AFC:** If you decide to switch providers to AFC, refunds that include charges from various tax services will not be processed.
+* **Tax Exemptions:** Tax exemptions at the account level are limited to “yes” or “no” options, excluding the possibility for complex jurisdiction-level exemptions.
+* **Customer Type:** An account’s customer type is not editable and defaults to “residential.”
+* **Lifeline Participant Status:** An account cannot hold a status as a lifeline participant.
+* **Telecommunications-specific Billing Units:** Recurly supports taxation based on the **Line** billing unit only. Other billing units that Avalara has deprecated or that are not commonly used—specifically **Location** and **Minutes**—are **not** supported.
 
 # Definition
 
