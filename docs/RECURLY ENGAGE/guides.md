@@ -72,8 +72,6 @@ Items within a guide can be connected based on:
 * **Days**: Delay the next item by a set number of days across sessions.
 * **Minutes**: Delay the next item by minutes within the same session.
 
-<Embed url="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" href="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
-
 ## Triggered
 
 Supported on all devices.
