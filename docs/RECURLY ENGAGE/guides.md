@@ -1,6 +1,8 @@
 ---
 title: Guides
-excerpt: ''
+excerpt: >-
+  Overview and how-to for multi-step Guides in Recurly Engage, including
+  wizards, surveys, journeys, and triggered flows.
 deprecated: false
 hidden: true
 metadata:
@@ -10,73 +12,85 @@ metadata:
 next:
   description: ''
 ---
-A guide is a collection of prompts that appear one after another. They can be connected across screens of an app/site or across devices. Guides can be used to onboard users, conduct surveys, persist offers or announcements, and reinforce messaging. All in a highly contextual and personalized manner. 
+# Overview
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/bd78e59-image.png" />
+A guide is a collection of prompts that appear one after another. They can span across screens of an app or site and across devices. Use guides to onboard users, conduct surveys, deliver time-based journeys, or reinforce messaging in a contextual and personalized sequence.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Guide type is fixed on creation and cannot be changed later.
+
+# Definition
+
+A **guide** binds multiple prompts into a controlled flow, enabling sequential, branched, or conditional delivery based on user behavior and scheduling.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bd78e59-image.png" />
+
+# Key benefits
+
+* **Structured interactions**: Deliver step-by-step experiences to users.
+* **Dynamic branching**: Use survey logic or conditions to tailor the flow.
+* **Cross-device continuity**: Maintain guide state as users switch devices.
+
+# Key details
 
 ## Wizard
 
-Supported device platforms: Web, HTML5 based smart TVs
+Supported on Web and HTML5-based smart TVs.
 
-This is commonly used for various step-by-step prompts. An example use case for this type of guide is a confirmation message that is shown after a pop-up is accepted.
+Wizard guides present prompts immediately in the defined order within a single session. Only the first prompt requires a trigger; subsequent prompts fire automatically upon interaction with the previous prompt.
 
-* Prompts are shown immediately in the set order within one session.
-* The trigger is only set up for the first prompt, and the rest of the prompts are triggered right away by interaction with the previous prompt.
+Items within a guide inherit the guide’s configurations: [Limits](limits-1), [Segments](segments), [Schedule](schedule-1).
 
- Items within a guide will also inherit the following configurations from the guide: [Limits](limits-1), [Segments](segments), [Schedule](schedule-1)
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/8a86d2f-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8a86d2f-image.png" />
 
 ## Survey
 
-Supported device platforms: Web, HTML5 based smart TVs
+Supported on Web and HTML5-based smart TVs.
 
-This is commonly used for conditional cancellation flows. Prompts within a survey may be branched based on the user's input on the first prompt. 
+Survey guides collect user input through branching prompts. Subsequent prompts are shown based on the user’s selection in earlier steps.
 
-![](https://files.readme.io/e09a8bd-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e09a8bd-image.png" />
 
 ## Journey
 
-Supported device platforms: All
+Supported on all devices.
 
-This is the most commonly used for user onboarding. For example, you can create a journey to onboard new users to the various features of your app in a personalized manner as they visit various areas within your app. 
+Journey guides onboard new users or deliver feature tours over time. You can configure them to show only unseen items or enforce a strict order, triggering based on visits, interactions, or time delays.
 
-The guide can be configured to only show the items the user has not tried. You can also configure an ordered guide to make sure the user receives items in the specified order. For example you engage a user with an offer in different parts of an app over a period of time.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9a5b99e-image.png" />
 
-![](https://files.readme.io/9a5b99e-image.png)
+Items within a guide can be connected based on:
 
-Items within a guide can be connected with each other based on:
+* **Interactions**: Show an item only if another guide item was seen, accepted, declined, or dismissed.
+* **Next Visit**: Trigger the next item on the user’s subsequent session.
+* **Days**: Delay the next item by a set number of days across sessions.
+* **Minutes**: Delay the next item by minutes within the same session.
 
-* **Interactions**. Make an item contingent on whether another item in the guide has been seen, accepted, declined, or dismissed by the end user.
-* **Next Visit**. Create a guide to be shown to the user based on the on the next visit to your app across devices.
-* **Days**. Create a guide to be shown to the user based on the number of days between user visits your app across devices.
-* **Minutes**. Create a guide to be shown to the user based on number of minutes within a single session on a device.
-
-<Embed url="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" provider="loom.com" href="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" title="undefined" />
+<Embed url="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" href="https://www.loom.com/embed/936c535cfaf74ba2afcd89474b8a9d9b?sid=faff98b4-6cde-49fb-b205-f1df5dac4075" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
 
 ## Triggered
 
-Supported device platforms: All
+Supported on all devices.
 
-Typically used to reinforce a message or action that you would like the user to take. For example, you can configure an unordered guide to provide a user with an incentive to upgrade their plan with two prompts within the guide. You may start with an inline banner in one area and a popup in another area. The popup is shown only if the user has not seen or interacted with the inline banner. Additionally, if the user has seen or interacted with the prompt on one device then you may configure it to not show on other devices.
-
-You can configure a set of conditions on each item within an unordered guide that will make the user ineligible to receive the other items within the same guide. This prevents the user from receiving similar items multiple times. 
+Triggered guides reinforce messages by delivering one of several prompts based on user eligibility and predefined conditions. You can prevent users from receiving multiple similar items by setting exclusion rules across guide items.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/831f597-image.png" />
 
-## How-to-video
+***
 
-Here is a video tutorial that shows how to set up a Journey guide.
+## Guide
 
-<Embed url="https://www.loom.com/embed/d1c5c4f59f7a4b23a5e99e92c1381b8b?sid=2ea41637-d7ec-4f32-b722-0c1bceb4d91b" provider="loom.com" href="https://www.loom.com/embed/d1c5c4f59f7a4b23a5e99e92c1381b8b?sid=2ea41637-d7ec-4f32-b722-0c1bceb4d91b" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" title="undefined" />
+1. **Go** to **Guides > New Guide**.
+2. **Enter** a **Name** and optional **Description**. **Select** the **Guide Type** and **Segments** (guide type cannot be changed later).
+3. **Add** at least two prompts as guide items.
+4. **Configure** **Continue** and **Exit** conditions for each item.
+5. (Optional) **Set** **Limits** and a **Schedule** for the entire guide.
+6. **Click** **Start** to make your guide live.
 
-## Step-by-step
-
-* [ ] Go to Guides > New Guide
-* [ ] Enter name and description (optional). Select the guide type. Select segment(s)\
-  In this case, we create a journey guide. Note that guide type cannot be changed after creation.
-* [ ] Add at least two items.
-* [ ] Set continue and exit conditions
-* [ ] Add limits and schedule (optional)
-* [ ] That’s it!\
-  Once you are satisifed with your configurations, set the guide status to ‘Start’. Your guide has been created and is now live.
+Your multi-prompt guide is now running—monitor performance and adjust as needed!
