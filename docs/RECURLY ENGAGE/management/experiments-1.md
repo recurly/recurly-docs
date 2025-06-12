@@ -71,7 +71,7 @@ Once statistical significance is reached, click **Use This** to end the experime
 
 2. **Scroll** to the **Experiments** section and **click** **+ New Experiment**.
 
-![](https://files.readme.io/0a15434-Screenshot_2024-04-24_at_19.02.02.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0a15434-Screenshot_2024-04-24_at_19.02.02.png" />
 
 3. **Enter** a clear experiment name.
 
