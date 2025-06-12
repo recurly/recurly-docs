@@ -1,6 +1,8 @@
 ---
-title: Preview Tool
-excerpt: ''
+title: Live Now - Preview Tool
+excerpt: >-
+  Overview of the Preview Tool (Live Now) in Recurly Engage for visual editing
+  and validation of prompts, segments, and trackers directly on your website.
 deprecated: false
 hidden: true
 metadata:
@@ -10,41 +12,53 @@ metadata:
 next:
   description: ''
 ---
-Preview is a tool that helps you visualize and interact with Redfast features directly in your website, akin to a visual editor or website builder.
+# Overview
 
-With Preview, you can:
+### Required plan
 
-* Impersonate users
-* See matching segments for a user
-* Preview prompts
-* Add trackers and triggers on the page
-* View metrics on inline prompts with x-ray
-* Visualize user traits in effect
-* Override traits
-* Add inline prompts
-* Get stats on inline prompts
-* Highlight Redfast elements on the page
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-Using our powerful point and click feature, you can add inline prompts and trackers anywhere on the page by just using a mouse; it’s intuitive and doesn’t require any coding.
+### Prerequisites & limitations
 
-Preview is the perfect tool to check if users are in the expected segments, trackers are in the right place, user traits are correct, and to help you test and validate your prompts before they go live.
+* Must have **Company** or **App Administrator** permissions.
+* Ensure your site is loaded with the Recurly Engage JS snippet with Preview enabled.
 
-## Using the Preview Tool
+# Definition
 
-Before going through this tutorial, make sure you've followed some of the previous guides, including:
+The **Preview Tool** is a point‑and‑click interface that overlays your live site, allowing you to manage and debug Recurly Engage elements—segments, trackers, prompts, and inline placements—in real time.
 
-* [Create a segment](segments)
-* [Create an inline](inlines)
+# Key benefits
 
-These guides will give you a good understanding of how Redfast works and will serve as the basis to use the Preview Tool effectively.\
-The Preview Tool is a visual tool that allows you to perform actions previously only available inside Pulse directly into your website with instant feedback.
+* **Instant validation**: See segment membership, trait values, and inline prompt placements live.
+* **No-code editing**: Add trackers or inline prompts by clicking elements on the page.
+* **Deep inspection**: Use X‑Ray to highlight prompts, trackers, and view stats directly on the site.
 
-For the purpose of this guide, we will focus on its core workflow and most powerful feature, which is the ability to add inline prompts anywhere on the page without any coding assistance.
+# Key details
 
-Assuming you already created an inline prompt targeted at a segment like all users, you can use the Preview Tool to help you add this prompt to a specific position on a page by following the steps below:
+With Live Now, you can:
 
-<Embed url="https://www.loom.com/embed/df4eeff2622046f7a939e3cf361513fb" title="iframe" provider="loom.com" href="https://www.loom.com/embed/df4eeff2622046f7a939e3cf361513fb" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+* Impersonate individual users to test personalized flows.
+* View which segments a user matches.
+* Preview any prompt or guide in context.
+* Add usage trackers and triggers on the fly.
+* Inspect inline prompts: check stats and placement with X‑Ray.
+* Visualize and override user traits in real time.
+* Seamlessly insert inline prompts without coding.
 
-If your page has many elements sometimes, it might be hard to distinguish which Redfast components are on a page. That's why the Preview Tool includes a handy feature called **X-Ray** that helps you highlight items like prompts and trackers, giving you insights into how they are performing and their location on the page.
+***
 
-<Embed url="https://www.loom.com/embed/e49c3ffac05c478e9d82a01027fa5384" title="iframe" provider="loom.com" href="https://www.loom.com/embed/e49c3ffac05c478e9d82a01027fa5384" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+## Using the preview tool
+
+Before you begin, ensure you have created at least one segment ([Create a segment](segments)) and one inline prompt ([Create an inline](inlines)). These assets will serve as the basis for your in-page testing.
+
+The Preview Tool injects a toolbar into your site. Its core workflow enables you to add inline prompts anywhere on the page with a simple click-and-select action.
+
+<Embed url="https://www.loom.com/embed/df4eeff2622046f7a939e3cf361513fb" href="https://www.loom.com/embed/df4eeff2622046f7a939e3cf361513fb" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+
+### X‑Ray for inline prompts
+
+When your page contains many Recurly Engage components, use **X‑Ray** mode to highlight all prompts and trackers. X‑Ray overlays outlines and metrics, helping you locate items and understand their live performance.
+
+<Embed url="https://www.loom.com/embed/e49c3ffac05c478e9d82a01027fa5384" href="https://www.loom.com/embed/e49c3ffac05c478e9d82a01027fa5384" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+
+Use these capabilities to test, validate, and fine‑tune your Recurly Engage setup before pushing changes live to your entire audience.
