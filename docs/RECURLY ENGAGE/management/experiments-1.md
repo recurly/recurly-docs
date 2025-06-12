@@ -1,6 +1,8 @@
 ---
 title: Experiments
-excerpt: ''
+excerpt: >-
+  Guide to creating and running A/B tests (experiments) on your prompts in
+  Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,70 +12,95 @@ metadata:
 next:
   description: ''
 ---
-**Experiments allow you to test variations of a prompt to see which variation results in the greatest positive impact.** You can specify any number of variations within an experiment but at any given point in time only one experiment may run on a given prompt. Over time you may have multiple experiments that have been conducted on a single prompt.
+# Overview
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/f2b3598-image.png" />
+Experiments enable you to test multiple variations of a prompt—copy, design, triggers, actions—to identify which version drives the best performance based on your conversion goals.
 
-An experiment can modify nearly any configuration set on a prompt:
+### Required plan
 
-* Title
-* Message body
-* CTA text and behavior
-* Prompt imagery and styling
-* 1-Click Actions
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-Experiment allocations can be set to direct as much or as little traffic as you want to each variation (test group). A percentage of the traffic may be assigned to a Control group in which users within the group are not presented the prompt itself, but are still monitored for conversions against the custom goal.
+### Prerequisites & limitations
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/e053b1d-image.png" />
+* Company or App Administrator permissions in Recurly Engage.
+* Only one active experiment may run per prompt at a time; historical experiments remain accessible.
+* A minimum of 30 users and 5 conversions per variation is recommended for statistical reliability.
 
-Experiment statistics indicate the number of users assigned to each variation, as well as the number of goal conversions and conversion rate. The z test method is used to determine the statistical significance of the difference between the variation and the control. For this method to produce reliable results, a minimum of 30 users and 5 conversions are required. Furthermore, the larger the conversion rate of the control, the larger will be the number of users required in the variation. For example, for a prompt where the control converts 20% of the users, a minimum of 1000 users will be required in each variation to detect improvement greater than 5%. Because of this, it may take your experiment some time before a winner can be established. Please refrain from drawing conclusions before a winner has been assigned.
+# Definition
 
-Once a winning variation has been determined, you may click on the "Use this" button to end the experiment and update the baseline prompt to match that of the winning variation going forward.
+An **experiment** divides traffic among a prompt’s variations (including an optional control group) and measures conversions—with statistical tests—to determine a winning configuration.
 
-Keep in mind that the z test is not a perfect method for experiments with a large number of variations. The statistical significance only denotes the extent to which that variation is superior to the control not whether the variation is superior to the other variations. In the future, we expect to include Bayesian methods for experiment design.
+# Key benefits
 
-## Step-by-step
+* **Data-driven optimization**: Use real user interactions to choose the best-performing variation.
+* **Controlled testing**: Isolate single changes—title, imagery, behavior—to understand their impact.
+* **Seamless rollout**: Promote the winning variation to replace the original prompt at experiment end.
 
-* [ ] Go to Prompts and select the prompt you'd like to experiment with
+# Key details
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/23131d0-Screenshot_2024-04-24_at_18.58.50.png" />
+## What experiments can modify
 
-* [ ] Scrol down to the Experiments section and click **+New Experiment**
+* Prompt title and message body
+* Call-to-action text and behaviors
+* Images, styling, and layout
+* Triggers, schedules, and actions (including 1-click workflows)
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/0a15434-Screenshot_2024-04-24_at_19.02.02.png" />
+## Traffic allocation
 
-* [ ] Name the experiment
+Assign any percentage of visitors to each variation and to a **Control** group (users who see no prompt). Control group users are still measured for conversion against your custom goal.
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/e053b1d-image.png" />
 
-* [ ] Add a control (optional)\
-  Default setup.\
-  By default there is only one variation - the original prompt. If there is a custom goal configured on your original prompt, you can also specify a control. The control will allow you to see whether showing a prompt is making a meaningful impact or not.
+## Statistical analysis
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/7c0ec9e-image.png" />
+Experiments use a Z‑test to compare variation conversion rates against the control. To detect a meaningful lift (e.g., >5% improvement), each variation should see at least 30 users and 5 conversions—often requiring hundreds or thousands of users depending on baseline rate.
 
-* [ ] Add a variation.\
-  A variation is a change to the Original prompt. Changes can be made on most aspects of a prompt including title, message, buttons, appearance, triggers, and actions.
+Once statistical significance is reached, click **Use This** to end the experiment and update your baseline prompt to the winning variation.
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png" />
+> **Note:** Z‑test significance indicates superiority over control only; it does not compare variations against each other. We plan to support Bayesian methods in the future.
 
-* [ ] Make one or more changes\
-  Start by naming the variant based on the change you wish to make, this will allow you to differentiate this variation from others that you may wish to create for the same prompt. Make changes to one or more aspects of this prompt such as the title. To change Actions or Triggers you will need to scroll down to see the settings.
+<Image align="center" className="border" border={true} src="https://files.readme.io/f2b3598-image.png" />
 
-<Image align="center" className="border" border="true" src="https://files.readme.io/c7be6b1-image.png" />
+***
 
-* [ ] Set the percent of traffic to each variation. Total traffic must add up to 100%.
+## Step-by-step guide
+
+1. Navigate to **Prompts** and select the prompt you want to experiment on.
+
+![](https://files.readme.io/23131d0-Screenshot_2024-04-24_at_18.58.50.png)
+
+1. Scroll to the **Experiments** section and click **+ New Experiment**.
+
+![](https://files.readme.io/0a15434-Screenshot_2024-04-24_at_19.02.02.png)
+
+1. Enter a clear experiment name.
+
+![](https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png)
+
+1. (Optional) Add a **Control** group if you have a custom goal configured—this measures baseline conversions without showing a prompt.
+
+![](https://files.readme.io/7c0ec9e-image.png)
+
+1. Click **Add variation**, name it to reflect the change (e.g., “New headline”), and modify title, copy, imagery, triggers, or actions.
+
+![](https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png)
+
+1. Configure the variation details—edit directly in the prompt editor.
+
+![](https://files.readme.io/c7be6b1-image.png)
+
+1. Allocate traffic percentages to each variation and control, ensuring they total 100%.
 
 ![](https://files.readme.io/f175e0f-image.png)
 
-* [ ] Start the experiment and confirm
+1. Click **Start experiment** and confirm to begin dividing traffic.
 
 ![](https://files.readme.io/db1802e-image.png)
 
-* [ ] Review an in-progress experiment
+1. Monitor in-progress experiments: view users per variation, conversions, and conversion rates in real time.
 
 ![](https://files.readme.io/5f30ea5-image.png)
 
-<br />
+1. When a variation demonstrates statistical significance, click **Use This** to end the experiment and promote that variation as your new baseline.
 
-Your experiment is now running and should report click through rates on the variation within minutes depending on your traffic level. The variation with a higher click through rate is one that is performing better. You have the option of allowing the experiment to conitnue to run or you can click on 'Use This' which will replace the control item with the selected variation and end the experiment.  
+Your experiment is now live—give it time to gather sufficient data before drawing conclusions. Good luck optimizing!
