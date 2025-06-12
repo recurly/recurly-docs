@@ -44,19 +44,22 @@ A **custom goal** is a user-defined conversion event—tracked via a usage track
 
 To use a custom goal, first create a [Usage Tracker](usage-tracking-1). Then follow the steps below to attach it to a prompt.
 
-## Step-by-step guide
+## Guide
 
 1. Locate the usage tracker you want to use. In this example, we track when a user updates their payment method and lands on `/payment-updated`.
 
-![](https://files.readme.io/c80c651-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c80c651-image.png" />
 
 2. Open the prompt you wish to measure and click **Edit prompt details**.
 3. Scroll to the **Custom Goal** section and click **Add custom goal**.
 
-![](https://files.readme.io/ea36176-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ea36176-image.png" />
 
-2. In the popup, select your usage tracker, set the attribution window (e.g., 24 hours), and click **Save**. ![](https://files.readme.io/075d4bd-image.png)
-3. Publish your prompt to start recording custom goal completions.
-4. Under **Performance**, a **Custom goal** bar displays the number of users who completed the tracked action after interacting with the prompt.
+2. In the popup, select your usage tracker, set the attribution window (e.g., 24 hours), and click **Save**.
+
+![](https://files.readme.io/075d4bd-image.png)
+
+2. Publish your prompt to start recording custom goal completions.
+3. Under **Performance**, a **Custom goal** bar displays the number of users who completed the tracked action after interacting with the prompt.
 
 ![](https://files.readme.io/f478e3a-image.png)
