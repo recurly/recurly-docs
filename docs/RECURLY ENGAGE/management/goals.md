@@ -1,6 +1,6 @@
 ---
 title: Goals
-excerpt: ''
+excerpt: How to set up and use custom conversion goals for your Recurly Engage prompts.
 deprecated: false
 hidden: true
 metadata:
@@ -10,35 +10,53 @@ metadata:
 next:
   description: ''
 ---
-# Custom Goals
+# Overview
 
-Custom goals allow you to specify conversion goals outside of the Redfast system. Normally, Redfast defines a conversion as the total number of users that have accepted a prompt. If your prompt uses an action such as Stripe to upgrade/modify a user's plan then that would be perfectly acceptable. 
+Custom goals let you track conversions beyond Redfast’s built‑in “prompt accepted” metric, such as page visits, API events, or external system activities.
 
-Your actual conversion goal can be one of many things. Here are some examples:
+### Required plan
 
-* Visit to a particular page on your webapp
-* Visit to a particular screen on your device (TV, tablet, phone)
-* Payment processed in your backend payment system
-* Activity in a disparate system that Redfast cannot access
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-To add a custom goal you must create a [usage tracker](usage-tracking-1) first and then continue with this guide. Your usage tracker does not have to be integrated into your system at the outset. You can complete this guide without issue.
+### Prerequisites & limitations
 
-## Step-by-step
+* You must have Company or App Administrator permissions in Recurly Engage.
+* At least one usage tracker must exist before adding a custom goal.
 
-* [ ] Find a usage tracker you're interested in\
-  In this example we are interested in when a user updates their payment method on the Redflix demo site and lands on the confirmation page` /payment-updated`. 
+# Definition
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/c80c651-image.png" />
-* [ ] Create or go to a prompt that you want to add the custom goal to.
-* [ ] Go to to the **Custom Goal** section and click the **Add custom goal** button
+A **custom goal** is a user-defined conversion event—tracked via a usage tracker—that you attach to a prompt to measure success based on your specific criteria.
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/ea36176-image.png" />
-* [ ] Select the goal tracker from the drop-down list, set the attribution duration and hit **Save**
+# Key benefits
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/075d4bd-image.png" />
-* [ ] Publish your prompt.
-* [ ] A new **Custom goal** bar will appear under **Performance** to give you the number of users who performed your usage activity/completed the custom goal after interacting with the Redfast prompt.
+* **Flexible measurement**: Define conversions like page visits, payment completions, or external API events.
+* **Accurate attribution**: Attribute custom goals to prompt interactions with configurable time windows.
+* **Deeper insights**: Compare prompt acceptance versus actual business outcomes for better optimization.
 
-  ![](https://files.readme.io/f478e3a-image.png)
+# Key details
 
-<br />
+## What you can track
+
+* Visit to a specific URL path (e.g., `/payment-updated`)
+* Arrival on a particular app screen (mobile or TV)
+* Backend events (payment processed, subscription changed)
+* External system activities accessible via your usage tracker
+
+To use a custom goal, first create a [Usage Tracker](usage-tracking-1). Then follow the steps below to attach it to a prompt.
+
+## Step-by-step guide
+
+1. Locate the usage tracker you want to use. In this example, we track when a user updates their payment method and lands on `/payment-updated`.
+
+![](https://files.readme.io/c80c651-image.png)
+
+2. Open the prompt you wish to measure and click **Edit prompt details**.
+3. Scroll to the **Custom Goal** section and click **Add custom goal**.
+
+![](https://files.readme.io/ea36176-image.png)
+
+2. In the popup, select your usage tracker, set the attribution window (e.g., 24 hours), and click **Save**. ![](https://files.readme.io/075d4bd-image.png)
+3. Publish your prompt to start recording custom goal completions.
+4. Under **Performance**, a **Custom goal** bar displays the number of users who completed the tracked action after interacting with the prompt.
+
+![](https://files.readme.io/f478e3a-image.png)
