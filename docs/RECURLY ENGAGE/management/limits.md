@@ -1,6 +1,8 @@
 ---
 title: Limits
-excerpt: ''
+excerpt: >-
+  Guide to configuring prompt delivery limits—impression, frequency, budget,
+  user, and delivery caps—in Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,37 +12,59 @@ metadata:
 next:
   description: ''
 ---
-**A limit allows you to restrict the number of users that receive a prompt.**\
-You can limit each of your prompts separately or apply [global limits](global-limits) per account. 
+# Overview
+
+Limits let you control how often and to how many users a prompt can be shown. Apply limits per prompt or use [Global limits](global-limits) for account-wide caps.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Global limits affect all prompts and require appropriate account-level configuration.
+
+# Definition
+
+A **limit** restricts prompt exposures based on impressions, user frequency, spendable budget, or user and delivery caps, ensuring controlled rollout and budget adherence.
+
+# Key benefits
+
+* **Cost control**: Prevent overspending by capping impressions or budget.
+* **Audience management**: Avoid overexposure by limiting frequency per user or total deliveries.
+* **Scalable governance**: Use global limits for consistent thresholds across all prompts.
+
+# Key details
 
 ## Impression limit
 
-Impression limit allows you to restrict the total number of times a prompt can be shown to the targeted segment with no regard to a specific user. For example, setting it to 100 impressions, will limit the system to only show the prompt the first 100 times it's triggered.
+Restricts the total number of times a prompt is shown to the targeted segment, regardless of user. Once the impression count is reached, the prompt stops displaying.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a7d13f1-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a7d13f1-image.png" />
 
-## Frequency Cap
+## Frequency cap
 
-Frequency Cap allows you to restrict the total number of times a user can be shown a prompt with a specified number of time. For example, setting it to 2 impressions over 30 days allows a particular user to see the prompt twice over a 30 day period. The 30 day period would start when the first impression is shown.
+Limits how many times an individual user can see the prompt within a defined period. For example, 2 impressions over 30 days means each user can view the prompt twice in a rolling 30-day window starting from their first impression.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/fb6c9f7-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/fb6c9f7-image.png" />
 
 ## Budget limit
 
-Budget limit allows you to specify a consumable quantity that is decreased with each user action for a prompt. Budgets may be specified on a stand alone basis or in concert with user limits. This is useful when working with a financial budget. For example, if the budget is set to 10,000 with a decrement of 10; it is equivalent to a $10,000 budget that is reduced $10 at a time.
+Sets a consumable budget that decreases each time a user takes the prompted action. Configure a total budget and decrement value—for instance, a $10,000 budget with a decrement of $10 charges $10 per user interaction until funds are exhausted.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/42214b6-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/42214b6-image.png" />
 
-## User Limit
+## User limit
 
-User Limit allows you to restrict the total number of users that can take action on the prompt presented to them. For example, setting this to 1,000 will limit the total number of users that receive the prompt or segment to the first 1,000 users from the specified segments.
+Caps the total number of unique users who can receive or act on the prompt. For example, a user limit of 1,000 ensures that only the first 1,000 eligible users see the prompt.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/b726d62-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b726d62-image.png" />
 
 ## Delivery limit
 
-Delivery limit allows you to set the maximum number of unique deliveries (times when a user is eligible to see the prompt should they satisfy the condition of the trigger). For example, if it is set to 1,000, we will deliver the prompt to 1,000 unique users and then stop.
+Restricts the number of unique deliveries—instances when a user meets trigger conditions and is eligible to see the prompt. A delivery limit of 1,000 delivers to the first 1,000 unique users matching the trigger, then stops.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/9a7bf89-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9a7bf89-image.png" />
 
-To learn about Global limits check [here](global-limits).
+Learn more about account-wide limits in [Global limits](global-limits).
