@@ -59,48 +59,48 @@ Once statistical significance is reached, click **Use This** to end the experime
 
 > **Note:** Z‑test significance indicates superiority over control only; it does not compare variations against each other. We plan to support Bayesian methods in the future.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f2b3598-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f2b3598-image.png" />
 
 ***
 
 ## Step-by-step guide
 
-1. Navigate to **Prompts** and select the prompt you want to experiment on.
+1. **Navigate** to **Prompts** and select the prompt you want to experiment on.
 
-![](https://files.readme.io/23131d0-Screenshot_2024-04-24_at_18.58.50.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/23131d0-Screenshot_2024-04-24_at_18.58.50.png" />
 
-1. Scroll to the **Experiments** section and click **+ New Experiment**.
+2. **Scroll** to the **Experiments** section and **click** **+ New Experiment**.
 
 ![](https://files.readme.io/0a15434-Screenshot_2024-04-24_at_19.02.02.png)
 
-1. Enter a clear experiment name.
+3. **Enter** a clear experiment name.
 
-![](https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d785a04-Screenshot_2024-04-24_at_19.03.27.png" />
 
-1. (Optional) Add a **Control** group if you have a custom goal configured—this measures baseline conversions without showing a prompt.
+4. (Optional) **Add** a **Control** group if you have a custom goal configured—this measures baseline conversions without showing a prompt.
 
-![](https://files.readme.io/7c0ec9e-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/7c0ec9e-image.png" />
 
-1. Click **Add variation**, name it to reflect the change (e.g., “New headline”), and modify title, copy, imagery, triggers, or actions.
+5. **Click** **Add variation**, name it to reflect the change (e.g., “New headline”), and **modify** title, copy, imagery, triggers, or actions.
 
-![](https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bc5027f-Screenshot_2024-04-24_at_19.17.57.png" />
 
-1. Configure the variation details—edit directly in the prompt editor.
+6. **Configure** the variation details—**edit** directly in the prompt editor.
 
-![](https://files.readme.io/c7be6b1-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c7be6b1-image.png" />
 
-1. Allocate traffic percentages to each variation and control, ensuring they total 100%.
+7. **Allocate** traffic percentages to each variation and control, ensuring they total 100%.
 
-![](https://files.readme.io/f175e0f-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f175e0f-image.png" />
 
-1. Click **Start experiment** and confirm to begin dividing traffic.
+8. **Click** **Start experiment** and confirm to begin dividing traffic.
 
-![](https://files.readme.io/db1802e-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/db1802e-image.png" />
 
-1. Monitor in-progress experiments: view users per variation, conversions, and conversion rates in real time.
+9. **Monitor** in-progress experiments: view users per variation, conversions, and conversion rates in real time.
 
-![](https://files.readme.io/5f30ea5-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5f30ea5-image.png" />
 
-1. When a variation demonstrates statistical significance, click **Use This** to end the experiment and promote that variation as your new baseline.
+10. When a variation demonstrates statistical significance, **click** **Use This** to end the experiment and promote that variation as your new baseline.
 
 Your experiment is now live—give it time to gather sufficient data before drawing conclusions. Good luck optimizing!
