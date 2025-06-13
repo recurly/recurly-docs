@@ -127,6 +127,12 @@ While **ISK** and **CLP** are technically zero decimal currencies (meaning they 
 
 If the Amount value is sent in as '23', Recurly will send '2300' to Adyen. Ensure your intent is to charge 23 ISK. If a Plan amount is set to 23.00, we will also send the amount to Adyen as 2300 instead of just '23'.
 
+# Special Address Considerations
+
+Though Recurly supports sending shipping addresses to Adyen, the gateway requires the full and complete address in order to avoid errors. Recurly will not send partial addresses to Adyen as a result. If you are attempting to utilize reporting or fraud services with Adyen and want to use shipping address information in those settings, you must ensure that the full and complete address is set within a customer's shipping address information. This includes the street address, city, state, country, and postal code.
+
+If one or more of these fields is absent, Recurly will omit the entire shipping address.
+
 # Payment Method Specifics
 
 ## Adyen Direct Debit
