@@ -95,6 +95,7 @@ There are 3 ways to pause subscriptions - through the Subscription Details secti
 ## Pause from subscription details
 
 * Restarting brings a subscription back to its active state, billing the customer for the new cycle. Paused subscriptions can be resumed from the Subscription Details or Account.
+  * If you are subject to PSD2 / SCA Compliance, you can verify your customer's billing information and re-authenticate 3DS using these steps: [3D secure with stored Billing Information](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/)
   * Scheduled pauses can be canceled via **Pause** under the subscription's **Options** or **Subscription Actions**.
 
 > 🚧 Current Term Renewal Dates
