@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-<Embed url="https://www.youtube.com/watch?v=jJsmG-2a95Y" title="How to Cancel a Subscription" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/jJsmG-2a95Y/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=jJsmG-2a95Y" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FjJsmG-2a95Y%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DjJsmG-2a95Y%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FjJsmG-2a95Y%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+<Embed url="https://www.youtube.com/watch?v=jJsmG-2a95Y" href="https://www.youtube.com/watch?v=jJsmG-2a95Y" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FjJsmG-2a95Y%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DjJsmG-2a95Y%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FjJsmG-2a95Y%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ### Required plan
 
@@ -42,46 +42,44 @@ Subscriptions often run through various states during their lifecycle. They can 
 
 When a subscription is **cancelled**, it remains active for the duration of the subscription period in a 'pre-expiry' state, which means the customer still has the liberty to reactivate it before it moves to the **expired** state and access to the service is terminated. Once a subscription is in the expired state, it cannot be reactivated; a new subscription has to be initiated. Here, the differentiation between 'canceling' and 'terminating' becomes crucial. While cancellation leads to an eventual expiration at a pre-set future date, termination results in an immediate expiration.
 
-<Image title="2019-09-04_0922.png" alt={866} align="center" src="https://files.readme.io/9ebba7b-2019-09-04_0922.png">
-  Subscriptions can be cancelled at three different timeframes: immediately, next bill date, or term renewal.
-</Image>
+<Image align="center" alt={866} border={false} caption="Subscriptions can be cancelled at three different timeframes: immediately, next bill date, or term renewal." title="2019-09-04_0922.png" src="https://files.readme.io/9ebba7b-2019-09-04_0922.png" />
 
 # Cancel a Subscription
 
-**a. Admin console:** 
+**a. Admin console:**
 
 * Navigate to the desired account.
 * Click on the subscription name.
 * From the **Subscription Actions** dropdown, choose **Cancel Subscription**.
 * Decide the cancellation type: immediate, at the next billing cycle, or at the end of the term.
 
-**b. Hosted account management:** 
+**b. Hosted account management:**
 
-* Navigate to the **Hosted Page Settings** under Configuration in the Admin Console.  
-* Enable the **Cancel subscriptions** option under Customer Options.  
+* Navigate to the **Hosted Page Settings** under Configuration in the Admin Console.
+* Enable the **Cancel subscriptions** option under Customer Options.
 * The customer, upon accessing their Hosted Account, will have the option to cancel.
 
 # Reactivate a subscription
 
-> **Note**: The subscription can only be reactivated if it isn't expired or permanently canceled.
+> **Note**: The subscription can only be reactivated if it isn't expired or permanently canceled. If you are subject to SCA / PSD2 Compliance mandates, your customer must reauthenticate their stored billing information prior to reactivation. See [3D secure with stored Billing Information](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/) for more details.
 
-**a. Admin console:** 
+**a. Admin console:**
 
-* Go to the desired account.  
-* Select the canceled subscription's name.  
+* Go to the desired account.
+* Select the canceled subscription's name.
 * Use the **Subscription Actions** dropdown and opt for **Reactivate Subscription**.
 
-**b. Hosted account management:** 
+**b. Hosted account management:**
 
 * If the cancellation option was provided to the customer, they'll see a reactivation option until the subscription expires.
 
 # Terminate a subscription
 
-**a. Admin console:** 
+**a. Admin console:**
 
-* Access the desired account.  
-* Click on the subscription name.  
-* From the **Subscription Actions** dropdown, opt for **Cancel Subscription**.  
+* Access the desired account.
+* Click on the subscription name.
+* From the **Subscription Actions** dropdown, opt for **Cancel Subscription**.
 * On the following page, select **Terminate Subscription**.
 
 **b. API:**
