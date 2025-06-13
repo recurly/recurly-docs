@@ -57,3 +57,7 @@ Upon activation, for every new card transaction, Recurly communicates with Kount
 Kount processes this data using its proprietary AI, applies your custom rules, and returns a risk decision. Recurly respects this decision: if Kount advises declining the transaction, Recurly halts the process, avoiding the payment gateway. If approved, Recurly continues with the transaction, forwarding details to the payment gateway.
 
 Kount has additional layers of fraud protection in Kount Enterprise. Contact Kount to learn more about this offering and then, to integrate Kount Enterprise with Recurly, reach out to Recurly's [onboarding team](mailto:onboarding-team@recurly.com).
+
+### High Risk Decline Settings
+
+When using fraud settings related to Kount inside Recurly Admin, within Decline Thresholds Rules, there is an option to reject / decline High Risk transactions when Kount does not explicitly state to decline the transaction. If this checkbox is not checked, Recurly will not reject low score transactions *unless* Kount return instruction to Decline the transaction.
