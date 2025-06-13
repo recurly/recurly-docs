@@ -122,6 +122,7 @@ To resume a subscription that is currently paused:
 
 1. **Navigate** to the subscription's **Account** page or **access** the **Subscription Details**.
 2. In the **Subscription Details**, use the **Subscription Action** dropdown menu and select **Resume** to reactivate the subscription.
+   1. **EU Compliance Note**If you are subject to PSD2 / SCA Compliance, you will need to re-authenticate your customer prior to resuming a subscription. Re-authentication must be handled by the consumer directly. You can verify your customer's billing information and re-authenticate 3DS using these steps: [3D secure with stored Billing Information](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/). After a successful billing info verification, feel free to resume the subscription using these steps.
 3. If resuming from the **Account** page, **locate** the individual subscription and select **Resume** from the **Options** dropdown menu.
 4. Upon resuming, the subscription will move from the paused state to an active state, initiating a new billing cycle.
 5. The customer will receive an immediate invoice for the new billing cycle, and the payment method will be charged if the collection method is automatic.
