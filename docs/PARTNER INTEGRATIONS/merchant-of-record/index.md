@@ -1,7 +1,34 @@
 ---
 title: Merchant of record
+excerpt: >-
+  A quick guide to the merchant-of-record model and where to configure your
+  Reach MoR integration in Recurly.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly subscription plan.
+
+### Additional cost
+
+This feature or setting requires an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> for pricing details.
+
+# Definition
+
+The merchant-of-record (MoR) is the entity that legally processes payments, handles tax compliance, and assumes dispute liability. When you integrate Reach as your MoR, Reach’s acquiring credentials are used under the hood, but all Recurly billing, dunning, analytics, and APIs remain unchanged.
+
+# Key benefits
+
+* **Liability offload**: Reach handles compliance, tax remittance, and chargebacks on your behalf.
+* **Global reach**: Gain localized acquiring in 60+ markets without managing individual merchant accounts.
+* **Seamless Recurly experience**: Checkout flows, subscription management, and reporting work exactly as before.
+
+# Key details
+
+* **Reach Integration**: Configure Reach’s gateway, tax, and fraud credentials in your Recurly dashboard.\
+  Learn more on the <a href="https://docs.recurly.com/docs/reach-integration#/" target="_blank">Reach Integration</a> page.
