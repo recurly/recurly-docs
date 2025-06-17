@@ -18,8 +18,6 @@ The **Recurly** integration allows you to sync your subscription data and execut
 <iframe width="712" height="400" src="https://www.loom.com/embed/46bc074c2ae84fcd8fd55d7b342859d2?sid=d12f25e0-c01d-4ce7-b63c-a6c26f28f83d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 `}</HTMLBlock>
 
-<br />
-
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.<br />
