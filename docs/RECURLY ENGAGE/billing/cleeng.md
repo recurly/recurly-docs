@@ -10,38 +10,72 @@ metadata:
 next:
   description: ''
 ---
-## Required Settings
+#### Metadata description
 
-* API Key (Instructions [here](https://publisher.support.cleeng.com/hc/en-us/articles/218389137-Obtaining-your-API-Broadcaster-Token)).
+Configuration and usage guide for the Cleeng connector in Recurly Engage, including API setup, supported actions, and subscription data syncing.
 
-## Supported Actions
+# Overview
 
-| Action                  | Description                                                   | Dependencies                                                 |
-| :---------------------- | :------------------------------------------------------------ | :----------------------------------------------------------- |
-| Switch Subscription     | Subscribe User to Different Offer                             | Offer Upgrade/Downgrade must be configured in Cleeng console |
-| Apply Coupon            | Apply Coupon Code to Subscription                             |                                                              |
-| Reactivate Subscription | Reactivate Subscription that has been marked for Cancellation |                                                              |
+The **Cleeng** integration enables you to manage subscriber offers, coupons, and reactivations directly from prompts within Recurly Engage by connecting to your Cleeng account.
 
-## Sync Subscription Data
+### Required plan
 
-It is recommended to schedule an automated data sync with Cleeng from the admin console.
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-<Image align="center" src="https://files.readme.io/217df5b-Screenshot_2024-06-02_at_10.08.45_PM.png" />
+### Prerequisites & limitations
 
-**Steps:**
+* Company or App Administrator permissions in Recurly Engage.
+* A Cleeng Publisher account with a valid API Broadcaster Token.
 
-1. Within the Cleeng console go to "Segments"
-2. Click "Build a Segment" then click on the gear icon on the upper right
-3. Click "Schedule" from the dropdown menu
-4. Click "New". Give the schedule a name, i.e. "Redfast Sync"
-5. Select "Amazon S3"
-6. Fill out the Bucket, Optional Path, Access Key and Secret key information that available from the Settings > User Traits > AWS S3 Credentials section from Pulse. Select "US West (Oregion) - us-west-2" for the Region.
-7. Select "CSV"
-8. Trigger: "Repeating interval"
-9. Deliver this Schedule: "Daily" > "Every day". Select a time after midnight, i.e. 1:00AM.
-10. Advanced Options
-    1. Send this schedule if: "there are results"
-    2. Check the box next to "and results changed since last run"
-    3. Timezone: "United States - Los Angeles"
-11. Select "Send Test" and work with your Customer Success Manager to confirm successful transmission
-12. Make sure to "Save All" when complete
+# Definition
+
+The **Cleeng** connector synchronizes offers and subscription data from Cleeng, allowing you to trigger subscription management actions from within your prompts.
+
+# Key benefits
+
+* **Seamless plan management**: Upgrade or downgrade user subscriptions via prompts.
+* **Coupon application**: Apply promo codes instantly when users interact.
+* **Reactivation support**: Easily reactivate churned subscribers through targeted prompts.
+
+# Key details
+
+## Required settings
+
+Configure your Cleeng connector under **Settings > Connectors**:
+
+* **API Key**: Your Broadcaster Token. Instructions [here](https://publisher.support.cleeng.com/hc/en-us/articles/218389137-Obtaining-your-API-Broadcaster-Token).
+
+## Supported actions
+
+Available billing actions you can attach to prompt interactions:
+
+| Action                  | Description                                                | Dependencies                                         |
+| :---------------------- | :--------------------------------------------------------- | :--------------------------------------------------- |
+| Switch Subscription     | Subscribe user to a different offer (upgrade or downgrade) | Offer upgrade/downgrade configured in Cleeng console |
+| Apply Coupon            | Apply coupon code to the user’s subscription               | None                                                 |
+| Reactivate Subscription | Reactivate a subscription marked for cancellation          | None                                                 |
+
+## Sync subscription data
+
+Schedule periodic export of subscription data from Cleeng into Recurly Engage using CSV via S3.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/217df5b-Screenshot_2024-06-02_at_10.08.45_PM.png" />
+
+## Setup
+
+1. In the Cleeng console, **navigate** to **Segments**.
+2. **Click** **Build a Segment**, then **click** the gear icon (upper right).
+3. **Select** **Schedule** from the dropdown.
+4. **Click** **New**, **name** the schedule (e.g., “Recurly Engage Sync”).
+5. **Choose** **Amazon S3** as the delivery method.
+6. **Fill in** **Bucket**, **Optional Path**, **Access Key**, and **Secret Key** from **Pulse > Settings > User Traits > AWS S3 Credentials**. **Select** **US West (Oregon) – us-west-2** for the region.
+7. **Set** format to **CSV**.
+8. For **Trigger**, **choose** **Repeating interval**.
+9. Under **Deliver this Schedule**, **select** **Daily** → **Every day** at a post-midnight time (e.g., 1:00 AM).
+10. **Expand** **Advanced Options**:
+
+    1. **Send this schedule if**: “there are results”.
+    2. **Check** “and results changed since last run”.
+    3. **Set** **Timezone** to “United States – Los Angeles”.
+11. **Use** **Send Test** and coordinate with your Customer Success Manager to verify the data transfer.
+12. **Click** **Save All** to finalize the schedule.
