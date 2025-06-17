@@ -1,6 +1,8 @@
 ---
 title: Evergent
-excerpt: ''
+excerpt: >-
+  Configuration guide for the Evergent connector in Recurly Engage—activation,
+  data sync, and supported subscription actions.
 deprecated: false
 hidden: true
 metadata:
@@ -10,50 +12,77 @@ metadata:
 next:
   description: ''
 ---
+# Overview
+
+The **Evergent** integration lets you synchronize subscriber data and trigger subscription management actions from within Recurly Engage prompts by connecting to your Evergent REST API.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Uses the Evergent REST API; legacy SOAP-only setups may require Customer Success assistance.
+
+# Definition
+
+Evergent Connector for Recurly Engage synchronizes subscriber traits from Evergent and enables prompt-driven subscription workflows (coupon redemption, service changes, pauses, resumes, etc.).
+
+# Key benefits
+
+* **Real-time subscriber data**: Import detailed subscription traits for precise segment targeting.
+* **Seamless subscription control**: Execute subscription actions (pause, resume, change service) directly from prompts.
+* **Customizable workflows**: Tailor actions to your Evergent instance and business logic.
+
+# Key details
+
 ## Activation
 
-Provide the following to activate the Evergent integration. Note the integration utilizes the Evergent REST API - contact your Customer Success Manager if you utilize legacy platforms such as the SOAP API.
+To enable the Evergent connector under **Settings > Connectors**, provide:
 
-* Domain
-* apiKey
-* channelPartnerID
+* **Domain**: Your Evergent API domain.
+* **apiKey**: Your Evergent REST API key.
+* **channelPartnerID**: Your channel partner identifier.
 
-## Data Integration
+## Data integration
 
-Evergent can be configured to sync a daily CSV report with Redfast, which include the following subscriber traits that can be utilized for audience targeting. Reach out to your Customer Success Manager for details of the AWS S3 bucket destination for file sync operations.
+Schedule a daily CSV export from Evergent into Recurly Engage via S3. The CSV should include the following subscriber traits for audience targeting:
 
 | Trait Name                    | Description                                                                 |
-| :---------------------------- | :-------------------------------------------------------------------------- |
-| customer\_id                  | Customer/User ID                                                            |
-| business\_unit                | Business unit owning subscription                                           |
-| country                       | Billing country                                                             |
-| current\_payment\_method      | \[Google Wallet, App Store Billing, Credit Card, Roku Payment, Coupon, etc] |
-| pack\_id                      | Package ID                                                                  |
-| package                       | Package Name                                                                |
-| pack\_price                   | Package Price                                                               |
-| pack\_type                    | Package Type                                                                |
-| currency\_code                | 3 character currency code                                                   |
-| valid\_from\_date             | Billing period start                                                        |
-| valid\_to\_date               | Billing period end                                                          |
-| payment\_status               | \[Declined, Posted]                                                         |
-| payment\_type                 | \[Renewal, Purchase]                                                        |
-| payment\_date                 | Date of most recent payment                                                 |
-| declined\_reason              | Reason for payment decline                                                  |
-| promotion\_amount             | Promotion Amount, if applicable                                             |
-| promotion\_code               | Promotion Code, if applicable                                               |
-| coupon\_code                  | Coupon code, if applicable                                                  |
-| cancellation\_requested\_date | Date of cancellation request, if applicable                                 |
-| classification                | Subscription classification status: \[Paid, Free Trial, Retail, etc]        |
+| ----------------------------- | --------------------------------------------------------------------------- |
+| `customer_id`                 | Customer/User ID                                                            |
+| `business_unit`               | Business unit owning subscription                                           |
+| `country`                     | Billing country                                                             |
+| `current_payment_method`      | \[Google Wallet, App Store Billing, Credit Card, Roku Payment, Coupon, etc] |
+| `pack_id`                     | Package ID                                                                  |
+| `package`                     | Package Name                                                                |
+| `pack_price`                  | Package Price                                                               |
+| `pack_type`                   | Package Type                                                                |
+| `currency_code`               | 3-character currency code                                                   |
+| `valid_from_date`             | Billing period start                                                        |
+| `valid_to_date`               | Billing period end                                                          |
+| `payment_status`              | \[Declined, Posted]                                                         |
+| `payment_type`                | \[Renewal, Purchase]                                                        |
+| `payment_date`                | Date of most recent payment                                                 |
+| `declined_reason`             | Reason for payment decline                                                  |
+| `promotion_amount`            | Promotion amount (if applicable)                                            |
+| `promotion_code`              | Promotion code (if applicable)                                              |
+| `coupon_code`                 | Coupon code (if applicable)                                                 |
+| `cancellation_requested_date` | Date of cancellation request (if applicable)                                |
+| `classification`              | Subscription classification status (\[Paid, Free Trial, Retail, etc])       |
 
-## Supported Actions
+## Supported actions
 
-> 📘 Evergent configuration varies from one instance to another. Not all of the below mentioned actions may be supported with your instance.
+> 📘 Important:
+>
+> Evergent configurations can vary; verify which APIs your instance supports.
 
-| Action                  | Description                                                                   | API Integration        |
-| :---------------------- | :---------------------------------------------------------------------------- | :--------------------- |
-| Redeem Coupon           | Apply coupon code to on existing package/product                              | redeemCoupon           |
-| Change Service          | Upgrade or downgrade existing service on specified services (from and to)     | changeService          |
-| Pause Subscription      | Pause active subscription for configurable number of days (max 90)            | pauseSubscription      |
-| Resume Subscription     | Resume previously paused subscription                                         | resumeSubscription     |
-| Reactivate Subscription | Reactivate previously removed subscription - subject to package/product terms | reactivateSubscription |
-| Remove Subscription     | Remove active subscription as of billing period end date                      | removeSubscription     |
+| Action                  | Description                                                                  | API Method               |
+| ----------------------- | ---------------------------------------------------------------------------- | ------------------------ |
+| Redeem Coupon           | Apply a coupon code to an existing package/product                           | `redeemCoupon`           |
+| Change Service          | Upgrade or downgrade an existing service (specify from and to services)      | `changeService`          |
+| Pause Subscription      | Pause an active subscription for up to 90 days                               | `pauseSubscription`      |
+| Resume Subscription     | Resume a previously paused subscription                                      | `resumeSubscription`     |
+| Reactivate Subscription | Reactivate a subscription marked for cancellation (subject to package terms) | `reactivateSubscription` |
+| Remove Subscription     | Remove (cancel) a subscription at period end                                 | `removeSubscription`     |
