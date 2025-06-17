@@ -412,7 +412,7 @@ For questions on when a network token was or was not used, please reach out to y
 
 ### Revenue Protect + Protect Premium
 
-If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect. Fields you can add to your payloads include:
+If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect.
 
 * **Billing and Shipping Address Data**. See considerations for [Shipping Data on Adyen](https://docs.recurly.com/docs/adyen#/special-address-considerations) for more details on handling, and our own Shipping Address documentation for how to [add multiple customer shipping addresses to Recurly](https://docs.recurly.com/docs/shipping-addresses#/).
 * **Browser Info**: Recurly sends this data when the shopper is routed through 3DS. Revenue Protect allows you to create and configure rules around browser data at the Adyen gateway.
