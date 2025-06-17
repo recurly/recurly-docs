@@ -415,6 +415,7 @@ For questions on when a network token was or was not used, please reach out to y
 If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect. Fields you can add to your payloads include:
 
 * **Billing and Shipping Address Data**. See considerations for [Shipping Data on Adyen](https://docs.recurly.com/docs/adyen#/special-address-considerations) for more details on handling, and our own Shipping Address documentation for how to [add multiple customer shipping addresses to Recurly](https://docs.recurly.com/docs/shipping-addresses#/).
+* **Browser Info**: Recurly sends this data when the shopper is routed through 3DS. Revenue Protect allows you to create and configure rules around browser data at the Adyen gateway.
 * **Shopper Data** including:
   * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
   * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
