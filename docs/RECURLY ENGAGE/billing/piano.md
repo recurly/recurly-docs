@@ -1,6 +1,8 @@
 ---
 title: Piano
-excerpt: Connecting Redfast with Piano
+excerpt: >-
+  How to connect and sync subscriber data from Piano to Recurly Engage, plus
+  configure 1‑Click subscription actions.
 deprecated: false
 hidden: true
 metadata:
@@ -10,32 +12,52 @@ metadata:
 next:
   description: ''
 ---
-Connecting and syncing Redfast with Piano is done by setting up a periodic sync of user information from Piano to Redfast and configuring available 1-click actions.
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Access to your Piano account with Permissions to export subscription reports or use the Piano Export API.
+* Recurly Engage users must have the `subscription_id` trait set from Piano for action targeting.
+
+# Definition
+
+**Piano integration** synchronizes subscriber logs and traits into Recurly Engage and enables 1‑Click subscription actions via Piano’s Publisher APIs.
+
+# Key benefits
+
+* **Automated data sync**: Periodically import subscription logs for real‑time segment targeting.
+* **In‑prompt workflows**: Use 1‑Click actions to resume or upgrade subscriptions without leaving the UI.
+* **Flexible integrations**: Leverage both Piano Console exports and Piano’s REST APIs for custom sync schedules.
+
+# Key details
 
 ## Sync subscriber info
 
-### Using Piano Console
+### Using piano console
 
-To export users from Piano software, please follow the below steps:
+1. **Log in** to your Piano account.
+2. **Navigate** to **Reports → Logs → Subscriptions**.
+3. **Click** **Export**.
+4. **Download** the completed file from the **Download Center**.
 
-1. Log in to your Piano account.
-2. Navigate to Reports → Logs → Subscriptions
-3. Click on 'Export'
-4. Once the export file has been prepared, it will be available in the Download Center
+> **Note:** Steps may vary by Piano version. **See** Piano’s docs for details: [Subscription Log Report](https://docs.piano.io/subscription-log-report/).
 
-Please note that these steps might slightly vary based on the version of Piano software you are using. Please refer to this page for additional information: [Link](https://docs.piano.io/subscription-log-report/)
+### Using piano API
 
-### Using Piano API
+Use the **Piano Export API** to schedule subscription log exports programmatically.
 
-To export the subscription log, make use of the Piano Export API. Following the API's guidelines and documentation, you can export the subscription log which can then be further manipulated or analyzed as per your requirements.
+See the API spec here: [Subscription Log Export API](https://docs.piano.io/api/?endpoint=post~2F~2Fexport~2Fschedule~2Fvx~2FsubscriptionLog).
 
-Link: [Subscription Log Export API](https://docs.piano.io/api/?endpoint=post~2F~2Fexport~2Fschedule~2Fvx~2FsubscriptionLog)
-
-Use the above API to schedule a Subscription Log export. Your Customer Success Manager can work with you to automate this process.
+Coordinate with your Customer Success Manager for automation assistance.
 
 ### Information synced
 
-The following traits will be synced over for targeting purposes (this list may be updated depending on targeted use cases):
+Include these traits in your CSV export for targeting in Recurly Engage:
 
 ```
 Subscription ID
@@ -70,29 +92,26 @@ Offer name
 Promo code
 ```
 
-## 1-Click Actions
+## 1‑click actions
 
-The following actions require the following to be configured with your Pulse instance:
-
-* Piano Publisher API Token / API Key
-* `aid` - Piano Application ID
+Configure these actions under your Piano connector settings in Recurly Engage (provide the Publisher API Token and `aid` Application ID).
 
 ### Resubscribe
 
-In the event a subscription is marked to be cancelled, a 1-click action will invoke the [Resume Subscription API](https://docs.piano.io/api?endpoint=post~2F~2Fpublisher~2Fsubscription~2Fresume) to disable the cancellation and instead resume the subscription. In the event that the `subscription_id` is not specified. Redfast will automatically retrieve the required information through the List Subscriptions API.
+Invokes Piano’s **Resume Subscription API** to cancel a pending cancellation and resume service. If `subscription_id` isn’t provided, Recurly Engage will discover it via the List Subscriptions API.
 
-### Upgrade Subscription
+### Upgrade subscription
 
-The [Upgrade Subscription API](https://docs.piano.io/api?endpoint=post~2F~2Fpublisher~2Fterm~2Fchange~2Fdo) is utilized to upgrade the term of the subscription. The “from” and “to” subscription IDs must be selected from the dropdown within Pulse. Before the transaction is completed, a check for the availability of the term change must return true.
+Calls Piano’s **Upgrade Subscription API** to change the subscription term. You must select the “from” and “to” term IDs in the prompt editor. The API will return availability status before proceeding; include messaging to indicate processing time to users.
 
-The subscription term upgrade may take some time to be fulfilled, so it is suggeted that you include some language in the prompt indicating as such.
+## Promo codes
 
-## Promo Codes
+Although Piano lacks a direct API for coupon redemption, you can support promo workflows by:
 
-While there is currently no API to apply a promo code via 1-click action, the following integrations are available to support this use case.
+* Listing and selecting available promo codes in prompt configurations
+* Creating segments for promo‑eligible audiences
+* Auto‑filling the promo code during your checkout process
+* Tracking conversion post‑checkout
+* A/B testing different promo codes for performance analysis
 
-* List and select from available promo codes
-* Setup user segments targeting audiences for specific types of promo codes
-* Auto-fill promo code during checkout process
-* Conversion tracking from successful checkout process
-* A/B testing performance across different promo codes
+Use these capabilities together to deliver seamless subscription management experiences within your in‑app or in‑site prompts.
