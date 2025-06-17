@@ -27,6 +27,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Asynchronous payment methods might take 48 hours or more (dependent on the payment method) for confirmation.
 * Use Recurly.js or the Recurly API for credit and debit card transactions.
 * SEPA supports only EUR payments. Ensure SEPA transactions are in EUR.
+* Certain features will not be available unless migrated to latest version of Adyen -- talk to Customer Support about enabling V71 for Adyen gateway.
 
 # Definition
 
@@ -38,7 +39,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 
 | Feature                         | Description                                                                                                                                                                                                                                                                                                                   |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Credit/Debit cards, Recurring, Adyen Web Components, [Adyen-derived Network Tokens](https://docs.recurly.com/docs/adyen#/adyen-network-tokens)                                                                                                                                                                                |
+| Services that work with Recurly | Credit/Debit cards, Recurring, Adyen Web Components, [Adyen-derived Network Tokens](https://docs.recurly.com/docs/adyen#/adyen-network-tokens), Revenue Protect / Protect                                                                                                                                                     |
 | Supported operations            | Authorize & Capture, Purchase, Refund, Verify, Void                                                                                                                                                                                                                                                                           |
 | Supported payment types         | Credit/Debit cards, ACH, Boleto, iDeal, Klarna Debit Risk (only existing merchants), SEPA, Google Pay and Apple Pay, Cash App. **Note:** Only a subset of payment methods are supported in the new Adyen Components Recurly.js support. Excluded payment methods are: All Direct Debit, Klarna Debit Risk, iDeal, and Boleto. |
 | Supported card brands           | Visa, MasterCard, American Express, Discover, JCB, Diners Club, China Union Pay, ELO (BRL only), Hipercard (BRL only), Cartes Bancaires, Dankort, Bancontact                                                                                                                                                                  |
@@ -46,7 +47,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 | Card on File Supported          | Yes                                                                                                                                                                                                                                                                                                                           |
 | Regions                         | Global                                                                                                                                                                                                                                                                                                                        |
 | Currencies                      | <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available.</a> with special behavior for **ISK** and **CLP**.                                                                                                                                                                         |
-| Gateway Features                | [Network Token usage](https://docs.recurly.com/docs/adyen#/adyen-network-tokens) awareness (see notes)                                                                                                                                                                                                                        |
+| Gateway Features                | [Network Token usage](https://docs.recurly.com/docs/adyen#/adyen-network-tokens) awareness (see notes), Revenue Protect / Protect Premium                                                                                                                                                                                     |
 
 # Setting up Adyen with Recurly
 
@@ -397,7 +398,9 @@ These payment methods are pivotal for merchants aiming to expand in Europe and o
 * Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings.
 * Currently, Recurly's Adyen integration doesn't support Level 3 card data.
 
-## Adyen Network Tokens
+## Gateway Feature Support
+
+### Adyen Network Tokens
 
 If you have enabled Adyen to create Network Tokens for your merchant account (cards only), whether or not they are used on a given transaction will be visible in transaction detail and gateway param responses via API.
 
@@ -406,6 +409,15 @@ This indicator will appear as a boolean value in the new 'Third Party Network To
 If you do not have Adyen Network tokens enabled with the gateway, you will always see 'False' for the value. If you have Adyen Network Tokens enabled in your gateway, you will see 'True' when a network token was used on a given transaction, and 'false' when the raw PAN / Card Data was used for the transaction.
 
 For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems.
+
+### Revenue Protect
+
+If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect. Fields you can add to your payloads include:
+
+* **Billing and Shipping Address Data**. See considerations for [Shipping Data on Adyen](https://docs.recurly.com/docs/adyen#/special-address-considerations) for more details on handling, and our own Shipping Address documentation for how to [add multiple customer shipping addresses to Recurly](https://docs.recurly.com/docs/shipping-addresses#/).
+* **Shopper Data** including:
+  * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
+  * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
 
 ## How asynchronous payments work
 
