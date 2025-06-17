@@ -12,7 +12,7 @@ next:
 ---
 ## Required Settings
 
-- API Key (Instructions [here](https://publisher.support.cleeng.com/hc/en-us/articles/218389137-Obtaining-your-API-Broadcaster-Token))
+* API Key (Instructions [here](https://publisher.support.cleeng.com/hc/en-us/articles/218389137-Obtaining-your-API-Broadcaster-Token)).
 
 ## Supported Actions
 
@@ -28,8 +28,6 @@ It is recommended to schedule an automated data sync with Cleeng from the admin 
 
 <Image align="center" src="https://files.readme.io/217df5b-Screenshot_2024-06-02_at_10.08.45_PM.png" />
 
-
-
 **Steps:**
 
 1. Within the Cleeng console go to "Segments"
@@ -37,10 +35,10 @@ It is recommended to schedule an automated data sync with Cleeng from the admin 
 3. Click "Schedule" from the dropdown menu
 4. Click "New". Give the schedule a name, i.e. "Redfast Sync"
 5. Select "Amazon S3"
-6. Fill out the Bucket, Optional Path, Access Key and Secret key information that available from the Settings &gt; User Traits &gt; AWS S3 Credentials section from Pulse. Select "US West (Oregion) - us-west-2" for the Region.
+6. Fill out the Bucket, Optional Path, Access Key and Secret key information that available from the Settings > User Traits > AWS S3 Credentials section from Pulse. Select "US West (Oregion) - us-west-2" for the Region.
 7. Select "CSV"
 8. Trigger: "Repeating interval"
-9. Deliver this Schedule: "Daily" &gt; "Every day". Select a time after midnight, i.e. 1:00AM.
+9. Deliver this Schedule: "Daily" > "Every day". Select a time after midnight, i.e. 1:00AM.
 10. Advanced Options
     1. Send this schedule if: "there are results"
     2. Check the box next to "and results changed since last run"
