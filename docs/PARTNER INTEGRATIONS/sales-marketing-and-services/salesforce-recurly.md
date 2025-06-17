@@ -51,7 +51,7 @@ Recurly for Salesforce is a robust integration tool that allows businesses to sy
 Upon installation, the following custom objects will be integrated into your Salesforce organization:
 
 * [Recurly Accounts](https://docs.recurly.com/docs/salesforce-recurly#recurly-accounts)
-* [Recurly Subscriptions](https://docs.recurly.com/docs/salesforce-recurly#/recurly-subscriptions)
+* [Recurly Subscriptions](https://docs.recurly.com/docs/salesforce-recurly#recurly-subscriptions)
 * [Recurly Plans](https://docs.recurly.com/docs/salesforce-recurly#recurly-plans-add-ons-and-items)
 * [Recurly Add Ons](https://docs.recurly.com/docs/salesforce-recurly#recurly-plans-add-ons-and-items)
 * [Recurly Items](https://docs.recurly.com/docs/salesforce-recurly#recurly-plans-add-ons-and-items)
