@@ -36,19 +36,19 @@ The **Chargify** connector synchronizes products, coupons, and subscription data
 
 # Key details
 
-## Required Settings
+## Required settings
 
 Configure your Chargify connector under **Settings > Connectors**:
 
 * **API Key**: Your Chargify API key.
 * **Domain**: Your Chargify site domain (e.g., `your-site.chargify.com`).
 
-## Data Integration
+## Data integration
 
 * **Products and coupons** are synchronized on a scheduled basis to ensure availability in prompt configurations.
 * **Chargify ID** must be mapped to the user’s `chargify_id` trait in Recurly Engage for action execution.
 
-## Supported Actions
+## Supported actions
 
 Use these actions within your prompt configurations to perform billing operations:
 
