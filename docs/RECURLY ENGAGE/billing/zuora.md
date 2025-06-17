@@ -88,6 +88,6 @@ Once your connector is activated and rate plans have synchronized, you can confi
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f6b632e-Zuora_action.png" />
 
-## Additional References
+## Additional references
 
 * [Zuora API Reference](https://www.zuora.com/developer/api-reference/)
