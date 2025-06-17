@@ -410,7 +410,7 @@ If you do not have Adyen Network tokens enabled with the gateway, you will alway
 
 For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems.
 
-### Revenue Protect
+### Revenue Protect + Protect Premium
 
 If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect. Fields you can add to your payloads include:
 
