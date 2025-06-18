@@ -1,6 +1,8 @@
 ---
 title: Shopify
-excerpt: ''
+excerpt: >-
+  Configuration guide for the Shopify connector in Recurly Engage—setup,
+  supported actions, and usage steps.
 deprecated: false
 hidden: true
 metadata:
@@ -10,26 +12,58 @@ metadata:
 next:
   description: ''
 ---
-## Required Settings
+# Overview
 
-* Shop URL
+### Required plan
 
-Instructions to configure required settings are [here](settings).
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-## Supported Actions
+### Prerequisites & limitations
 
-| Action       | Description                            | User Dependencies | Additional Instructions |
-| ------------ | -------------------------------------- | ----------------- | ----------------------- |
-| Add to cart  | Add one or more items to existing cart | None              |                         |
-| Redirect     | Redirect to Shopify URL                | None              |                         |
-| Add Discount | Apply discount code to existing cart   | None              |                         |
+* Company or App Administrator permissions in Recurly Engage.
+* Your site must be hosted on Shopify with the storefront API enabled.
 
-## Step by Step
+# Definition
 
-Steps to configure a Shopify action
+The **Shopify** connector enables web prompts to interact with your Shopify storefront—adding items to carts, redirecting to product or checkout pages, and applying discount codes seamlessly.
 
-1. Go to Settings → Actions → Website Actions
-2. Within the Shopify section click "Add"
-3. Select action (i.e. Add item(s) to cart)
-4. Add one or more item SKUs, along with quantity
-5. Once action is saved, it may be associated with any Web prompt
+# Key benefits
+
+* **Streamlined purchase flows**: Let users add products or apply discounts without leaving your prompt.
+* **Increased conversions**: Reduce friction by embedding cart actions directly in your engagement messages.
+* **Flexible redirects**: Guide users to specific Shopify pages (collections, products, checkout) with a single click.
+
+# Key details
+
+## Required settings
+
+Under **Settings > Connectors > Shopify**, provide:
+
+* **Shop URL**: Your Shopify store domain (e.g., `your-store.myshopify.com`).
+
+## Supported actions
+
+Use the following actions within web prompts to drive e-commerce interactions:
+
+| Action       | Description                                | User Dependencies | Additional Instructions                        |
+| ------------ | ------------------------------------------ | ----------------- | ---------------------------------------------- |
+| Add to cart  | Add one or more items to the existing cart | None              | Specify SKU(s) and quantity                    |
+| Redirect     | Navigate the user to a Shopify URL         | None              | Enter the target URL (product, checkout, etc.) |
+| Add Discount | Apply a discount code to the existing cart | None              | Provide the discount code                      |
+
+## Step by step
+
+Follow these steps to configure a Shopify action within a prompt:
+
+1. In Recurly Engage, **go** to **Settings → Actions → Website Actions**.
+2. **Scroll** to the **Shopify** section and **click** **Add Action**.
+3. **Select** your desired action type (e.g., **Add to cart**).
+4. **Configure** the action details:
+
+   * **Add to cart**: Enter SKU(s) and quantity for each item.
+   * **Redirect**: Provide the Shopify URL to navigate users.
+   * **Add Discount**: Input the discount code to apply.
+5. **Save** the action.
+6. **Attach** this action to any **Web** prompt under the **Actions** panel.
+
+Once published, users interacting with the configured prompt will experience seamless Shopify workflows directly within your engagement messages.
