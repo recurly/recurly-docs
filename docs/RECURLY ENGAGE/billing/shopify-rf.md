@@ -12,9 +12,9 @@ next:
 ---
 ## Required Settings
 
-- Shop URL
+* Shop URL
 
-Instructions to configure required settings are [here][1].
+Instructions to configure required settings are [here](settings).
 
 ## Supported Actions
 
