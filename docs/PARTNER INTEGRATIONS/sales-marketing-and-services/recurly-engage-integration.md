@@ -216,9 +216,8 @@ After the merchant is up and running with prompts, CSM can help monitor the prog
 
 Learn more about Recurly Engage by visiting these resources:
 
-<a href="https://recurly.com/product/subscriber-engagement/" target="_blank">Recurly's subscriber engagement solutions</a>
-
-<a href="https://www.redfast.com/" target="_blank">Redfast</a>
+* <a href="https://recurly.com/product/subscriber-engagement/" target="_blank">Recurly's subscriber engagement solutions</a>
+* <a href="https://www.redfast.com/" target="_blank">Redfast</a>
 
 Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book aRecurly Engage demo</a>
 
