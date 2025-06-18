@@ -224,8 +224,8 @@ Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo
 
 # FAQs
 
-\*\*Q: What is Recurly Engage and how does Recurly Engage work?\
-A:\*\*Recurly Engage is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and aRecurly Engage JS token on the merchant web page, or SKDs or mobile apps.
+**Q: What is Recurly Engage and how does Recurly Engage work?**\
+**A:** Recurly Engage is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and a Recurly Engage JS token on the merchant web page, or SKDs or mobile apps.
 
 **Q: What is a prompt?\
 A:** A prompt refers to content or behavior that is presented to users within one or more segments.
