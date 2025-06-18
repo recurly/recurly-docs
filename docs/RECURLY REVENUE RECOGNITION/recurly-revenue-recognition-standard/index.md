@@ -26,9 +26,9 @@ This feature or setting requires an additional cost. Please reach out to your Re
 
 # Definition
 
-Recurly Revenue Recognition Standard is a comprehensive, integrated solution within Recurly's subscription management application designed to streamline and automate the process of revenue recognition in accordance with major reporting standards, including ASC 606 and IFRS 15. 
+Recurly Revenue Recognition Standard is a comprehensive, integrated solution within Recurly's subscription management application designed to streamline and automate the process of revenue recognition in accordance with major reporting standards, including ASC 606 and IFRS 15.
 
-This powerful tool simplifies how businesses track, manage, and report revenue accurately by enabling users to effortlessly establish recognition rules and automate accounting processes through a single, user-friendly interface. With Recurly's revenue recognition standard, organizations can benefit from detailed insights into contracted revenue via extensive built-in reports, such as the Revenue Waterfall Report, Liability Balances Report, and Transfer Accounting Report. 
+This powerful tool simplifies how businesses track, manage, and report revenue accurately by enabling users to effortlessly establish recognition rules and automate accounting processes through a single, user-friendly interface. With Recurly's revenue recognition standard, organizations can benefit from detailed insights into contracted revenue via extensive built-in reports, such as the Revenue Waterfall Report, Liability Balances Report, and Transfer Accounting Report.
 
 The end result is a significant reduction in audit and revenue reporting errors, elevated compliance standards, and enhanced revenue insights and accuracy, empowering businesses to focus more on strategic activities rather than complex revenue calculations and compliance tasks.
 
@@ -42,8 +42,8 @@ The end result is a significant reduction in audit and revenue reporting errors,
 
 # Steps to implement
 
-1. **[Apply](https://docs.recurly.com/docs/recurly-revenue-recognition-standard-edition-setup)** the appropriate rules to each of the products you offer, such as plans, items, add-ons, and set-up fees.
-2. **Go** through the validation and [activation](https://docs.recurly.com/docs/activation) protocol to ensure accurate rule application and reduce errors. 
+1. **[Apply](https://docs.recurly.com/docs/recurly-revenue-recognition-standard-edition-setup)** the appropriate rules to each of the products you already offer, such as plans, items, add-ons, and set-up fees.
+2. **Go** through the validation and [activation](https://docs.recurly.com/docs/activation) protocol to ensure accurate rule application and reduce errors.
 3. **Examine** the information after it flows into the [reporting](https://docs.recurly.com/docs/recurly-revenue-recognition-standard-reports).
 
 ## Helpful tips for using Recurly Revenue Recognition Standard
