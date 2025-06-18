@@ -1,5 +1,5 @@
 ---
-title: Billing
+title: Billing integrations
 excerpt: ''
 deprecated: false
 hidden: true
