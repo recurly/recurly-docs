@@ -33,7 +33,7 @@ The **Braintree** connector syncs with your Braintree gateway using merchant cre
 
 # Key details
 
-## Required Settings
+## Required settings
 
 Under **Settings > Connectors**, provide:
 
