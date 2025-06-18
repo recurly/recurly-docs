@@ -57,7 +57,7 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aa285a2-image.png" />
 
-2. **Configure**Recurly Engage.
+2. **Configure** Recurly Engage.
 
 * You will receive an invitation to create your account/password in Recurly Engage.
 
@@ -72,7 +72,8 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
   * **Enter** your domain.
   * You can also change/edit the name of the instance here if needed—make it descriptive so that you know what the instance usage will be.
   * **Click** save changes.
-    > **Note:** the ID and API keys should already be populated from Recurly.
+  <br />
+  > **Note:** the ID and API keys should already be populated from Recurly.
 
 **Inviting a co-worker to the Recurly Engage console is easy:**
 
