@@ -1,6 +1,8 @@
 ---
 title: mParticle
-excerpt: ''
+excerpt: >-
+  Integration guide for capturing Recurly Engage prompt interactions as custom
+  events in mParticle via Custom Feed.
 deprecated: false
 hidden: true
 metadata:
@@ -10,61 +12,93 @@ metadata:
 next:
   description: ''
 ---
+# Overview
+
+The **mParticle** connector lets you export prompt events and attributes from Recurly Engage to your mParticle workspace, enabling unified user activity tracking across platforms.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* An mParticle account with permissions to create Custom Feeds.
+* Access to your mParticle workspace’s Server Key and Secret.
+
+# Definition
+
+Using mParticle’s Custom Feed integration, Recurly Engage will send prompt interaction events and related attributes to mParticle for real-time analytics and segmentation.
+
+# Key benefits
+
+* **Streamlined event export**: Automatically push Recurly Engage events into mParticle without custom coding.
+* **Unified user data**: Leverage mParticle’s identity resolution and data pipeline for prompt events.
+* **Real-time insights**: View prompt impressions, clicks, and custom goals alongside all other mParticle-tracked events.
+
+# Key details
+
 ## Activation
 
-You may activate the mParticle connector with the following steps:
-
-1. Within your mParticle console, visit Setup > Inputs. You should see a screen like below.\
-   ![Setup->Inputs](https://files.readme.io/d0f22ee-mParticle_add_new_custom_feed.png)
-2. Click on "Feeds tab". Add a Custom Feed by clicking on the `+` icon on the right.
-3. Set a Configuration Name for your Custom Feed.\
+1. In **mParticle**, **navigate** to **Setup → Inputs**.\
+   ![Setup→Inputs](https://files.readme.io/d0f22ee-mParticle_add_new_custom_feed.png)
+2. **Click** on the **Feeds** tab and add a **Custom Feed** by clicking the **+** icon.\
    ![Feeds](https://files.readme.io/9b94f9b-mParticle_add_new_custom_feed_1.png)
-4. Please provide the Server Key, Server Secret and API endpoint to your Redfast Customer Success manager.\
-   ![Key and Secret](https://files.readme.io/27a2abc-mParticle_add_new_custom_feed_2.png)
+   3. Provide a **Configuration Name**, then share the **Server Key**, **Server Secret**, and **API Endpoint** with your Recurly Engage Customer Success Manager.\
+      ![Key and Secret](https://files.readme.io/27a2abc-mParticle_add_new_custom_feed_2.png)
+      <br />
+      ### Required Settings
+      Under **Settings → Integrations → External → mParticle** in Recurly Engage, configure:
+      * **Base API Endpoint** (including mParticle Pod)
+        * **Server Key**
+          * **Server Secret**
+            * **Mode**: Production or Development
 
-### Required Settings
+              <br />
 
-* Base API endpoint (including Pod)
-* Server Key and Server Secret
-* Production or Development mode
+              ### Supported Actions
 
-### Supported Actions
+              | Action            | Description                                                                 |
+              | ----------------- | --------------------------------------------------------------------------- |
+              | **Export Events** | Reports custom events with user-specific prompt interactions and attributes |
 
-| Action        | Description                                                                    |
-| ------------- | ------------------------------------------------------------------------------ |
-| Export Events | Reports custom events with the user-specific prompt interaction and attributes |
+              ***
+
+              <br />
 
 ## Custom Events and Attributes
 
-Once we have activated the integration, custom events will be reported to your mParticle account.
+After activation, mParticle will receive the following custom events tagged to the user’s identity, visible in the User Activity screen:
 
-The custom events are tagged with their respective "Customer ID" identity, so you may review all of the events within the mParticle User Activity screen.
+![User Activity](https://files.readme.io/b504573-mparticle-user-activity-4.png)!![Custom Event](https://files.readme.io/e006d0a-mparticle-custom-event-5.png)
 
-![User Activity](https://files.readme.io/b504573-mparticle-user-activity-4.png)\
-![Custom Event](https://files.readme.io/e006d0a-mparticle-custom-event-5.png)
+| Custom Event                          | Description                                                               |
+| ------------------------------------- | ------------------------------------------------------------------------- |
+| **Recurly Engage Prompt Impression**  | A user has seen the prompt                                                |
+| **Recurly Engage Prompt Dismiss**     | A user has dismissed the prompt by clicking close or outside (if enabled) |
+| **Recurly Engage Prompt Timeout**     | The prompt closed automatically due to a timer                            |
+| **Recurly Engage Prompt Decline**     | A user declined the prompt by clicking the decline button                 |
+| **Recurly Engage Prompt Click**       | A user accepted the prompt via the primary CTA                            |
+| **Recurly Engage Prompt Custom Goal** | A user completed the custom goal action defined for the prompt            |
 
-| Custom Event               | Description                                                                                                                                    |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Redfast Prompt Impression  | A user has seen the prompt                                                                                                                     |
-| Redfast Prompt Dismiss     | A user has dismissed the prompt by clicking on the 'close'('X') button or outside the prompt view (if the 'Click outside to close' is enabled) |
-| Redfast Prompt Timeout     | The prompt has been closed automatically due to close timer timeout (if set)                                                                   |
-| Redfast Prompt Decline     | A user has declined the prompt by clicking on the decline button (Button 3)                                                                    |
-| Redfast Prompt Click       | A user has accepted the prompt by clicking on the primary CTA button (Button 1)                                                                |
-| Redfast Prompt Custom Goal | A user has completed the set of actions / met the requirements to qualify for the custom goal completion (if a custom goal is set)             |
+**Attributes** sent with each event (when available):
 
-The following attributes (if applicable) are sent with each custom event.
+| Custom Attribute  | Description                                                          |
+| ----------------- | -------------------------------------------------------------------- |
+| `app_name`        | The name of your Recurly Engage instance in Pulse                    |
+| `prompt_id`       | Unique prompt identifier (from Details)                              |
+| `prompt_name`     | The name of the prompt                                               |
+| `experiment_id`   | Unique experiment identifier (if the prompt is part of an A/B test)  |
+| `experiment_name` | Name of the running experiment                                       |
+| `variation_id`    | Identifier for the specific prompt variation                         |
+| `variation_name`  | Name of that prompt variation                                        |
+| `survey_value`    | Value of selected survey option (if survey is enabled on the prompt) |
 
-| Custom Attribute | Description                                                                                              |
-| ---------------- | -------------------------------------------------------------------------------------------------------- |
-| app\_name        | The name of the application in your Pulse account                                                        |
-| prompt\_id       | A unique prompt identifier that can be found in the 'Prompt ID' field under 'Details'                    |
-| prompt\_name     | The name of the prompt                                                                                   |
-| experiement\_id  | A unique experiemnt identifier                                                                           |
-| experiment\_name | The name of the running experiment                                                                       |
-| variation\_id    | A unique identifier of a prompt variation running within an experiment                                   |
-| variation\_name  | The name of the prompt variation running within an experiment                                            |
-| survey\_value    | A survey option value that has been selected and submitted (exists only if survey defined within prompt) |
+***
+
+<br />
 
 ## Additional Information
 
-[mParticle Custom Feed Reference](https://docs.mparticle.com/integrations/custom-feed/feed/)
+<br />
+
+* [mParticle Custom Feed Reference](https://docs.mparticle.com/integrations/custom-feed/feed/)
