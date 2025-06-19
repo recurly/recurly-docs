@@ -41,9 +41,10 @@ By routing Segment events through an AWS Lambda function, Recurly Engage ingests
 Recurly Engage allows you to ingest Segment.com events and target your users according to your existing Page (web), Screen (mobile), and Track calls. This article explains how to add us as a destination via Amazon Lambda.
 
 1. **Login** to Segment.
+
 2. **Go** to the correct app workspace.
 
-   ![Settings→Integrations](https://files.readme.io/f5c742b-Segment_configure.png)
+   <Image align="center" className="border" border={true} src="https://files.readme.io/f5c742b-Segment_configure.png" />
 
 3. **Add** a new destination.
 
