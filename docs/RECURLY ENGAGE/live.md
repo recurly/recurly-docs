@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* Must have **Company** or **App Administrator** permissions.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * Ensure your site is loaded with the Recurly Engage JS snippet with Preview enabled.
 
 # Definition
