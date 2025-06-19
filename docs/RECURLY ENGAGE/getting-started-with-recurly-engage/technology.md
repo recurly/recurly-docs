@@ -42,7 +42,7 @@ Central hub to configure applications, user traits, segments, prompts, guides, a
 
 Real-time engine segments incoming events into cohorts using rule-based or ML-driven logic. These segments feed prompt targeting and journey orchestration.
 
-<Image align="center" alt="Recurly Engage Platform" border={true} caption="Recurly Engage Platform" src="https://files.readme.io/2a163da-image.png" />
+<Image align="center" alt="Recurly Engage Platform" border={false} caption="Recurly Engage Platform" src="https://files.readme.io/2a163da-image.png" />
 
 ## Third-party integrations
 
