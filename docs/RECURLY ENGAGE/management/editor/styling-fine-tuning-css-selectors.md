@@ -20,6 +20,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * Familiarity with CSS and your site’s stylesheet.
 * Custom styles are loaded default Recurly Engage CSS. Please ensure your styles are specific enough to override the default style.
 
