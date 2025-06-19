@@ -26,7 +26,7 @@ This feature **may not be included** in the all plans. If you are interested, pl
 
 ### Prerequisites & limitations
 
-* Company or App Administrator permissions in Recurly Engage.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * Guide type is fixed on creation and cannot be changed later.
 
 # Definition
