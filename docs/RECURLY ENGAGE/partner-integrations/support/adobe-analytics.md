@@ -18,7 +18,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* An Adobe Experience Platform Web SDK (Alloy.js) setup on your web property.
+* An Adobe Experience Platform Web SDK ([Alloy.js](https://github.com/adobe/alloy?tab=readme-ov-file)) setup on your web property.
 * Access to **Recurly Engage → Settings → Integrations → External → Adobe Analytics**.
 
 # Definition
