@@ -39,31 +39,40 @@ Using mParticle’s Custom Feed integration, Recurly Engage will send prompt int
 
 ## Activation
 
-1. In **mParticle**, **navigate** to **Setup → Inputs**.\
-   ![Setup→Inputs](https://files.readme.io/d0f22ee-mParticle_add_new_custom_feed.png)
-2. **Click** on the **Feeds** tab and add a **Custom Feed** by clicking the **+** icon.\
-   ![Feeds](https://files.readme.io/9b94f9b-mParticle_add_new_custom_feed_1.png)
-   3. Provide a **Configuration Name**, then share the **Server Key**, **Server Secret**, and **API Endpoint** with your Recurly Engage Customer Success Manager.\
-      ![Key and Secret](https://files.readme.io/27a2abc-mParticle_add_new_custom_feed_2.png)
-      <br />
-      ### Required Settings
-      Under **Settings → Integrations → External → mParticle** in Recurly Engage, configure:
-      * **Base API Endpoint** (including mParticle Pod)
-        * **Server Key**
-          * **Server Secret**
-            * **Mode**: Production or Development
+1. In **mParticle**, **navigate** to **Setup → Inputs**.
 
-              <br />
+![Setup→Inputs](https://files.readme.io/d0f22ee-mParticle_add_new_custom_feed.png)
 
-              ### Supported Actions
+2. **Click** on the **Feeds** tab and add a **Custom Feed** by clicking the **+** icon.
 
-              | Action            | Description                                                                 |
-              | ----------------- | --------------------------------------------------------------------------- |
-              | **Export Events** | Reports custom events with user-specific prompt interactions and attributes |
+![Feeds](https://files.readme.io/9b94f9b-mParticle_add_new_custom_feed_1.png)
 
-              ***
+3. Provide a **Configuration Name**, then share the **Server Key**, **Server Secret**, and **API Endpoint** with your Recurly Engage Customer Success Manager.
 
-              <br />
+![Key and Secret](https://files.readme.io/27a2abc-mParticle_add_new_custom_feed_2.png)
+
+<br />
+
+### Required Settings
+
+Under **Settings → Integrations → External → mParticle** in Recurly Engage, configure:
+
+* **Base API Endpoint** (including mParticle Pod)
+  * **Server Key**
+    * **Server Secret**
+      * **Mode**: Production or Development
+
+        <br />
+
+        ### Supported Actions
+
+        | Action            | Description                                                                 |
+        | ----------------- | --------------------------------------------------------------------------- |
+        | **Export Events** | Reports custom events with user-specific prompt interactions and attributes |
+
+        ***
+
+        <br />
 
 ## Custom Events and Attributes
 
