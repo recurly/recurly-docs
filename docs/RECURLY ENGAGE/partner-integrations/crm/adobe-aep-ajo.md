@@ -1,6 +1,8 @@
 ---
 title: Adobe
-excerpt: ''
+excerpt: >-
+  How to integrate Recurly Engage with Adobe Experience Platform, Journey
+  Optimizer, and Analytics for event streaming and in-app triggers.
 deprecated: false
 hidden: true
 metadata:
@@ -15,10 +17,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-How to integrate Recurly Engage with Adobe Experience Platform, Journey Optimizer, and Analytics for event streaming and in-app triggers.
-
 # Overview
 
 The **Adobe** connector suite lets you forward Recurly Engage prompt interactions to Adobe Experience Platform (AEP), trigger in-app prompts via Adobe Journey Optimizer (AJO), and send web events to Adobe Analytics using the Experience Platform Web SDK.
@@ -45,9 +43,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 # Key details
 
-***
-
-## Adobe Experience Platform (AEP)
+## Adobe experience platform (AEP)
 
 The **Recurly Engage AEP connector** pushes prompt interaction events—`impression`, `goal`, `decline`, `dismiss`, `timeout`, `custom_goal`, and `holdout`—to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview).
 
@@ -72,9 +68,9 @@ The **Recurly Engage AEP connector** pushes prompt interaction events—`impress
 * **Adobe Instance Name** (e.g., `_production`, visible in schema details)
 * **Data Stream ID**
 
-\<Image align="center" src="https\://files.readme.io/6fb869da2965a8f79d20ef00ec618c6537524de444351e992c8df3bcd0fbbe46-Screenshot\_2025-03-06\_at\_9.56.33\_AM.png>
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6fb869da2965a8f79d20ef00ec618c6537524de444351e992c8df3bcd0fbbe46-Screenshot_2025-03-06_at_9.56.33_AM.png" />
 
-## Adobe Journey Optimizer (AJO)
+## Adobe journey optimizer (AJO)
 
 Use AJO **Custom HTTP Actions** to call Recurly Engage endpoints from within customer journeys, updating user traits or triggering in-app prompts.
 
@@ -93,7 +89,7 @@ Once live, AJO will send requests to Recurly Engage, syncing properties and enab
 
 ***
 
-## Adobe Analytics
+## Adobe analytics
 
 Leverage the Experience Platform Web SDK (`alloy.js`) to forward prompt interaction events to Adobe Analytics on your web properties.
 
