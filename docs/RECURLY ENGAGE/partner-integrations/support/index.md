@@ -1,5 +1,5 @@
 ---
-title: Analytics
+title: Analytics integrations
 excerpt: ''
 deprecated: false
 hidden: true
