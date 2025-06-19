@@ -1,53 +1,88 @@
 ---
 title: Amplitude
+excerpt: >-
+  Integration guide for sending Recurly Engage prompt events to Amplitude and
+  syncing user data via CSV, Webhooks, or Export API.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
+The **Amplitude** integration streams Recurly Engage prompt interactions—impressions, clicks, dismissals, timeouts—into your Amplitude analytics instance using the existing Amplitude JS SDK, and supports inbound user and event data syncs.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* An Amplitude account with project API Key and access to SDK or Export API.
+* For outbound events, ensure the Amplitude JS SDK is initialized on your site.
+
+# Definition
+
+The **Amplitude** connector provides:
+
+* **Outbound Events**: Leverage the running Amplitude JS SDK to fire prompt events in-session.
+* **Inbound Data Sync**: Import historical events and user traits via CSV uploads, Webhooks, or scheduled Export API jobs.
+
+# Key benefits
+
+* **Seamless event tracking**: Capture prompt interactions in the same session context as your other Amplitude events.
+* **Flexible data import**: Choose CSV, Webhooks, or Export API based on your data flow needs.
+* **Unified analytics**: Analyze prompt performance alongside full user behavior in Amplitude.
+
+# Key details
+
 ## Outbound Events
 
-For web based devices, Redfast utilizes the running instance of the Amplitude JS SDK. This ensures that session and user data context is maintained while reporting real-time Redfast prompt events. Contact your Customer Success Manager to confirm the details of your Amplitude JS SDK config and to enable the integration. Input the [API key](https://amplitude.com/docs/apis/authentication)  in Settings -> Integrations -> External -> Amplitude within Pulse.
+For web-based devices, Recurly Engage uses the existing Amplitude JS SDK instance to emit events. Contact your Customer Success Manager to confirm your SDK configuration and enable the integration.
+
+1. In **Recurly Engage**, navigate to **Settings → Integrations → External → Amplitude**.
+2. Enter your Amplitude **Project API Key** (see [Amplitude authentication](https://amplitude.com/docs/apis/authentication)).
 
 **Event Details**
 
-| Activity                  | Description                                                                                                                                    |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Redfast Prompt Impression | A user has seen the prompt                                                                                                                     |
-| Redfast Prompt Dismiss    | A user has dismissed the prompt by clicking on the 'close'('X') button or outside the prompt view (if the 'Click outside to close' is enabled) |
-| Redfast Prompt Timeout    | The prompt has been closed automatically due to close timer timeout (if set)                                                                   |
-| Redfast Prompt Decline    | A user has declined the prompt by clicking on the decline button (Button 3)                                                                    |
-| Redfast Prompt Click      | A user has accepted the prompt by clicking on the primary CTA button (Button 1)                                                                |
-| Redfast Prompt Holdout    | A holdout user has triggered the prompt                                                                                                        |
-| Redfast Prompt Click 2    | A user has accepted the prompt by clicking on the secondary CTA button (Button 2)                                                              |
+| Activity                         | Description                                                               |
+| -------------------------------- | ------------------------------------------------------------------------- |
+| Recurly Engage Prompt Impression | A user has seen the prompt                                                |
+| Recurly Engage Prompt Dismiss    | A user has dismissed the prompt by clicking close or outside (if enabled) |
+| Recurly Engage Prompt Timeout    | The prompt closed automatically due to a timer                            |
+| Recurly Engage Prompt Decline    | A user declined the prompt by clicking the decline button                 |
+| Recurly Engage Prompt Click      | A user accepted the prompt via the primary CTA                            |
+| Recurly Engage Prompt Holdout    | A holdout user reached the prompt without exposure                        |
+| Recurly Engage Prompt Click 2    | A user accepted via the secondary CTA                                     |
 
-The following attributes (if applicable) are sent with each custom event.
+Attributes sent with each event:
 
-| Event Property   | Description                                                                           |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| promo\_id        | A unique prompt identifier that can be found in the 'Prompt ID' field under 'Details' |
-| promo\_name      | The name of the prompt                                                                |
-| variation\_id    | A unique identifier of a prompt variation running within an experiment                |
-| variation\_name  | The name of the prompt variation running within an experiment                         |
-| event\_timestamp | The time when the activity occurred                                                   |
+| Property          | Description                              |
+| ----------------- | ---------------------------------------- |
+| `promo_id`        | Unique prompt identifier (from Details)  |
+| `promo_name`      | Prompt name                              |
+| `variation_id`    | Experiment variation identifier (if any) |
+| `variation_name`  | Variation name                           |
+| `event_timestamp` | When the event occurred                  |
 
-## Inbound Data Sync
+***
 
-Depending on use case, Event as well as User data may be synced via one of the following methods. We recommend discussing with your Customer Success Integration Specialist to determine the best integration method.
+## Inbound data sync
 
-### CSV Export
+Depending on your use cases, import user or event data into Recurly Engage via these methods:
 
-One-off report exports can be downloaded from Amplitude and uploaded to Pulse. Please ensure that the User ID is the first column of the CSV export.
+### CSV export
+
+Download one-off reports from Amplitude (ensure **User ID** is first column) and upload to **Settings → User Traits → CSV Import** in Pulse.
 
 ### Webhook
 
-You may want to report certain events to be synced in real-time, for example, user activity like new signups, user property updates or cohort assignments.
-
-1. Add a new Webhook destination from your Data Catalog
-2. Your Customer Success Integration Specialist will provide the endpoint details. In most cases the default Amplitude Event payload is sufficient
-3. Configure the webhook to filter for only events that are necessary to power your intended use cases
-4. Click on "Test Connection" to validate the configuration
+1. In Amplitude’s Data Catalog, add a **Webhook** destination.
+2. Configure the endpoint details provided by your Customer Success Manager.
+3. Filter for only the events needed for your use cases.
+4. Test the connection to validate payload delivery.
 
 ### Export API
 
-For recurring CSV exports that require automation, Redfast uses the Export API to run scheduled exports and initiate syncs with Redfast. Please ensure that you share an API key with appropriate permissions and work with our Customer Success team to setup the automation.
+For automated exports, work with your Customer Success team to schedule jobs using the Amplitude [Export API](https://developers.amplitude.com/docs/export-api). Provide an API key with appropriate permissions and configure the schedule to automatically sync data into Recurly Engage.
