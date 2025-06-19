@@ -15,64 +15,86 @@ metadata:
 next:
   description: ''
 ---
+#### Metadata description
+
+How to integrate Recurly Engage with Adobe Experience Platform, Journey Optimizer, and Analytics for event streaming and in-app triggers.
+
+# Overview
+
+The **Adobe** connector suite lets you forward Recurly Engage prompt interactions to Adobe Experience Platform (AEP), trigger in-app prompts via Adobe Journey Optimizer (AJO), and send web events to Adobe Analytics using the Experience Platform Web SDK.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions.
+* Active Adobe Experience Platform, Journey Optimizer, or Analytics licenses.
+* Schema and data stream configurations in AEP prior to ingestion.
+
+# Definition
+
+**Adobe integrations** enable bidirectional data flows: prompt events (impressions, clicks, custom goals) stream into AEP; AJO can call Recurly Engage APIs to trigger in-app prompts; and web events can be vaulted into Adobe Analytics.
+
+# Key benefits
+
+* **Unified data layer**: Stream prompt interaction events into Adobe’s Data Lake in real time.
+* **Cross-product orchestration**: Use AJO journeys to trigger in-app messaging via Recurly Engage.
+* **Web analytics**: Capture prompt metrics alongside site analytics using the Experience Platform Web SDK.
+
+# Key details
+
+***
+
 ## Adobe Experience Platform (AEP)
 
-The Redfast AEP connector pushes Redfast prompt interaction events to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview). Events include impressions, goals, declines, dismisses, timeouts, custom\_goals, and holdouts.
+The **Recurly Engage AEP connector** pushes prompt interaction events—`impression`, `goal`, `decline`, `dismiss`, `timeout`, `custom_goal`, and `holdout`—to an Adobe [Data Stream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview).
 
-**Configure the following objects within AEP**
+**Configure these objects in AEP:**
 
-* [Identity Map](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/map-identities). Create an identity map or use an existing one.
-* [Schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition). Enable the Profile toggle to view incoming data in real time from the Profiles section. Add the following traits to the schema within a [Field Group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/field-groups)
-  * activity (String). The type of activity being reported, for example: "impression"
-  * app\_id (String). The id of the Pulse instance
-  * app\_name (String). The name of the Pulse instance
-  * event\_timestamp (DateTime). The timestamp when the activity occurred
-  * promo\_id (String). The id of the Redfast prompt
-  * promo\_name (String). The name of the Redfast prompt
-  * variation\_id (String). The id of the Redfast experiment variation (if applicable)
-  * variation\_name (String). The name of the Redfast experiment variation (if applicable)
-* Data stream. Add the schema to the data stream
-* [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) . Select the schema from the previous step. Enable the Profile toggle to view incoming data in real time from the Profiles section.
+* **Identity Map**: Create or reuse an [Identity Map](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/map-identities).
+* **Schema**: Enable **Profile** toggle and add traits in a [Field Group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/field-groups):
 
-<br />
+  * `activity` (String) — event type, e.g. "impression"
+  * `app_id` (String) — Recurly Engage instance ID
+  * `app_name` (String) — instance name
+  * `event_timestamp` (DateTime) — when the event occurred
+  * `promo_id`, `promo_name` — prompt identifiers
+  * `variation_id`, `variation_name` — experiment variation identifiers (if applicable)
+* **Data Stream**: Attach the schema to your data stream.
+* **Dataset**: Create a [Dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) from the same schema and enable the **Profile** toggle.
 
-**Input the following information within Pulse -> Settings -> Integrations -> External -> Adobe**
+**In Recurly Engage:** Navigate to **Settings → Integrations → External → Adobe** and enter:
 
-* Identity Map Symbol
-* [Event Type](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) . Use a known event type or create a new one.
-* Adobe Instance Name. The name of your Adobe Instance, for example `_production`. Viewable in the details of the schema
-* Data Stream Id
+* **Identity Map Symbol**
+* **Event Type** (use known [xdm:eventType](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values))
+* **Adobe Instance Name** (e.g., `_production`, visible in schema details)
+* **Data Stream ID**
 
-<br />
-
-**Sample Schema with required fields, Adobe Instance Name, and profile toggle**
-
-<Image align="center" src="https://files.readme.io/6fb869da2965a8f79d20ef00ec618c6537524de444351e992c8df3bcd0fbbe46-Screenshot_2025-03-06_at_9.56.33_AM.png" />
+\<Image align="center" src="https\://files.readme.io/6fb869da2965a8f79d20ef00ec618c6537524de444351e992c8df3bcd0fbbe46-Screenshot\_2025-03-06\_at\_9.56.33\_AM.png>
 
 ## Adobe Journey Optimizer (AJO)
 
-Your journey can sync updates to Redfast via a custom HTTP request, which allows you to update audience information as well as trigger in-app prompts for your targeted audience.
+Use AJO **Custom HTTP Actions** to call Recurly Engage endpoints from within customer journeys, updating user traits or triggering in-app prompts.
 
-Before proceeding, consult with your Customer Success Manager with your intended set of use cases so that Redfast can provide guidance on the necessary endpoints and params to be configured within the custom HTTP request.
+1. In AJO, navigate to **Actions → Create Action**, choose **Custom HTTP Action**.
+2. Enter **Name** and **Description**.
+3. Under **Endpoint Configuration**:
 
-Once provided the endpoint information, you may create the custom action as follows:
+   * Set **HTTP Method** to **GET**.
+   * Enter your Recurly Engage API endpoint.
+   * Configure **Query Params** using `properties[<keyName>]=<value>`.
+   * Add the `USER-ID` HTTP header.
+4. **Test** the action with your Customer Success Manager.
+5. **Save** and **Deploy** the action in your journey.
 
-1. Navigate to **Actions** within Adobe Journey Optimizer
-2. Click **Create Action** and choose **Custom HTTP Action**
-3. Provide a Name and Description for the action
-4. In the Endpoint Configuration section:
-   1. Set HTTP method to **GET**
-   2. Enter the API endpoint
-   3. Configure the query params which include one or more property key names along with their associated values. The convention is: properties\[**keyName**]=**value**
-   4. Specify the `USER-ID` HTTP header
-5. Test the Custom HTTP Action - your Customer Success Manager will confirm that the action processed successfully
-6. Deploy the Action in AJO
-   1. Save the Action
-   2. Add it to your customer journey
-   3. Monitor incoming requests to verify successful integration
+Once live, AJO will send requests to Recurly Engage, syncing properties and enabling prompt triggering based on journey logic.
 
-Once the Custom HTTP Action is running within your journeys, the specified property name and values will be synced in real-time with Redfast for the specified user. This allows you to create user segments utilizing these properties and target specific prompts to be triggered when users are within your apps.
+***
 
 ## Adobe Analytics
 
-Redfast can send prompt interaction events via the Adobe Experience Platform Web SDK (alloy.js) for users on your web platforms. These events include impressions, goals, declines, dismisses, timeouts, custom\_goals, and holdouts. Contact your Customer Success Manager for instructions to enable this feature, as there is some configuration required before events can be sent to your data stream.
+Leverage the Experience Platform Web SDK (`alloy.js`) to forward prompt interaction events to Adobe Analytics on your web properties.
+
+Contact your Customer Success Manager to enable Web SDK configuration and ensure events map to your Analytics data streams.
