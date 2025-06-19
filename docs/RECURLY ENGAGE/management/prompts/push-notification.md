@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
+This feature **may not be included** in the all plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 ### Prerequisites & limitations
 
