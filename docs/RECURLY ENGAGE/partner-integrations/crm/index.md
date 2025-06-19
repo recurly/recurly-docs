@@ -1,5 +1,5 @@
 ---
-title: CRM
+title: CRM integrations
 excerpt: ''
 deprecated: false
 hidden: true
