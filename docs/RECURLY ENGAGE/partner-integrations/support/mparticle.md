@@ -70,11 +70,11 @@ Under **Settings → Integrations → External → mParticle** in Recurly Engage
 
 After activation, mParticle will receive the following custom events tagged to the user’s identity, visible in the User Activity screen:
 
-![User Activity](https://files.readme.io/b504573-mparticle-user-activity-4.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b504573-mparticle-user-activity-4.png" />
 
 <br />
 
-![Custom Event](https://files.readme.io/e006d0a-mparticle-custom-event-5.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e006d0a-mparticle-custom-event-5.png" />
 
 | Custom Event                          | Description                                                               |
 | ------------------------------------- | ------------------------------------------------------------------------- |
@@ -100,10 +100,6 @@ After activation, mParticle will receive the following custom events tagged to t
 
 ***
 
-<br />
-
-## Additional Information
-
-<br />
+## Additional resources
 
 * [mParticle Custom Feed Reference](https://docs.mparticle.com/integrations/custom-feed/feed/)
