@@ -44,7 +44,7 @@ Once activated, Recurly Engage will send both prompt interaction events (impress
 * [Mixpanel Service Accounts](https://developer.mixpanel.com/reference/service-accounts)
 * [Mixpanel Project Token](https://developer.mixpanel.com/reference/project-token)
 
-## Required Settings
+## Required settings
 
 Under **Settings → Integrations → External → Mixpanel**, provide:
 
