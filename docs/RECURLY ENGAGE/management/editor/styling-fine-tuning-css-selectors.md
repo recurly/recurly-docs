@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 ### Prerequisites & limitations
 
 * Familiarity with CSS and your site’s stylesheet.
-* Custom styles must be loaded after the default Recurly Engage CSS to take effect.
+* Custom styles are loaded default Recurly Engage CSS. Please ensure your styles are specific enough to override the default style.
 
 # Definition
 
