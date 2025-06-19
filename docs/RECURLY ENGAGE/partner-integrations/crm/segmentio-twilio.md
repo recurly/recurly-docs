@@ -55,7 +55,7 @@ Recurly Engage allows you to ingest Segment.com events and target your users acc
 7. Now **go** to **Usage Tracking** and locate the credentials to enter\
    ![Settings→Integrations](https://files.readme.io/58f7707-Segment_Configure_6.png)
 8. **Copy over** the `Region`, `Role Address` and `Lambda ARN` values. Make sure to provide the read-only `External ID` to your customer success manager as the final step. Note that `Client Context` and `Log Type` do not need any special configuration.\
-   ![Settings→Integrations](https://files.readme.io/a036acc-Segment_configure_7.png)\
+   ![Settings→Integrations](https://files.readme.io/a036acc-Segment_configure_7.png)
    ![Settings→Integrations](https://files.readme.io/a6f4a75-Segment_Configure_8.png)
    <br />
    > **Note:** Segment data can take up to one hour before it appears in Recurly Engage.
@@ -67,7 +67,7 @@ Recurly Engage allows you to ingest Segment.com events and target your users acc
 2. **Select** a Segment event\
    ![Settings→Integrations](https://files.readme.io/0caf0ba-Segment_configure_10.png)
 3. **Click** **Submit**\
-   ![Settings→Integrations](https://files.readme.io/8c96b24-Segment_Configure_11.png)\
+   ![Settings→Integrations](https://files.readme.io/8c96b24-Segment_Configure_11.png)
    ![Settings→Integrations](https://files.readme.io/f74c2d1-Segment_Configure_12.png)
 4. **Go** to **Segments > New Segment** and **choose** the **Usage** tab\
    ![Settings→Integrations](https://files.readme.io/8ec2610-Segment_Configure_13.png)
