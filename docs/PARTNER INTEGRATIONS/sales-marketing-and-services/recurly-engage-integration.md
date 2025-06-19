@@ -219,7 +219,7 @@ Learn more about Recurly Engage by visiting these resources:
 * <a href="https://recurly.com/product/subscriber-engagement/" target="_blank">Recurly's subscriber engagement solutions</a>
 * <a href="https://recurly.com/product/engage/" target="_blank">Recurly Engage</a>
 
-Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book aRecurly Engage demo</a>
+Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo/" target="_blank">Book a Recurly Engage demo</a>
 
 # FAQs
 
