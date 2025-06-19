@@ -172,7 +172,8 @@ In the new subscription email, it might be helpful to customize the email depend
 {{/subscription_has_trial?}}
 ```
 
-In the above example, the ^ character tests that the variable is false. The second code block is executed if the customer is not in a trial period.\
+In the above example, the ^ character tests that the variable is false. The second code block is executed if the customer is not in a trial period.
+
 You can also hide information when it's not relevant using a similar method. This technique also works for testing if a variable has a value. You might not want to display a Next payment date if there is no next payment. This works as follows:
 
 ```
