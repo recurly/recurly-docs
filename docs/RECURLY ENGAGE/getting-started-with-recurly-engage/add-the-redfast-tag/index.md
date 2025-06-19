@@ -1,5 +1,5 @@
 ---
-title: Recurly Engage tag
+title: Recurly Engage javascript tag
 excerpt: >-
   Implementation details for adding the Recurly Engage tag to your site, via tag
   managers or direct script injection.
