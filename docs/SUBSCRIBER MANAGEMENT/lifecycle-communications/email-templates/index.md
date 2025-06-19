@@ -163,14 +163,13 @@ Personalize your new subscription emails based on whether a trial period is offe
 In the new subscription email, it might be helpful to customize the email depending on the presence of a trial. If the subscription has a trial, the email should read "Your credit card will be charged at XXX." Whereas a subscription without a trial might say, "Your credit card was charged." Here is an example:
 
 ```
-  {{#subscription_has_trial?}}
-  Your card will be billed {{{subscription_total_amount}}}
-  when your trial ends on {{subscription_trial_ends_at}}.
-  {{/subscription_has_trial?}}
-and/or
-  {{^subscription_has_trial?}}
-  Your card was charged {{{invoice_total_paid}}}.
-  {{/subscription_has_trial?}}
+{{#subscription_has_trial?}}
+  Your account will be billed {{{subscription_total_amount}}} in 10 days.
+{{/subscription_has_trial?}}
+
+{{^subscription_has_trial?}}
+  Your mandate ID is: {{direct_debit_mandate_id}}.
+{{/subscription_has_trial?}}
 ```
 
 In the above example, the ^ character tests that the variable is false. The second code block is executed if the customer is not in a trial period.\
