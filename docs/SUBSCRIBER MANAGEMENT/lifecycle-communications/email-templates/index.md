@@ -190,6 +190,7 @@ Here is an example:
   {{#subscription_has_trial?}}
   Your account will be billed {{{subscription_total_amount}}} in 10 days.
   {{/billing_has_active_mandate?}}
+
   {{^subscription_has_trial?}}
   Your mandate ID is: {'{{direct_debit_mandate_id}}'}.
   {{/billing_has_active_mandate?}}
