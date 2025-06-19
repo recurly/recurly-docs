@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* Company or App Administrator permissions in Recurly Engage.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * Only one active experiment may run per prompt at a time; historical experiments remain accessible.
 * A minimum of 30 users and 5 conversions per variation is recommended for statistical reliability.
 
