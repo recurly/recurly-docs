@@ -1,6 +1,8 @@
 ---
 title: Salesforce
-excerpt: ''
+excerpt: >-
+  Configuration guide for the Salesforce connector in Recurly Engage—setup,
+  credentials, and supported actions for Support Cloud and Marketing Cloud.
 deprecated: false
 hidden: true
 metadata:
@@ -10,46 +12,75 @@ metadata:
 next:
   description: ''
 ---
-The Redfast Salesforce connector integrates with Support Cloud as well as Marketing Cloud. In order to activate the connector, go to Pulse → Settings → Actions, then select the Salesforce connector. Required connector credentials are below.
+# Overview
 
-## Support Cloud Credentials
+### Required plan
 
-* username
-* password
-* security token
-* client id
-* client secret
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-## Marketing Cloud Credentials
+### Prerequisites & limitations
 
-* client id
-* client secret
-* from email address
-* base url
-* auth base url
-* soap base url
+* Company or App Administrator permissions in Recurly Engage.
+* Active Salesforce Support Cloud and/or Marketing Cloud licenses.
 
-## Supported Connector Actions
+# Definition
 
-| Action                                                        | Description                                                                                                                                 | User Dependencies                | Additional Instructions                                                                                   | Form Inputs |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------- |
-| Create a Case (Support)                                       | Creates a support case within Salesforce with information about the user and prompt                                                         | n/a                              | n/a                                                                                                       | n/a         |
-| Post offer acceptance to feed of all existing cases (Support) | Adds a feed item with information about the user and prompt to all support cases within Salesforce that have the user listed as the Contact | salesforce\_id or email\_address | n/a                                                                                                       | n/a         |
-| Triggered Send (Marketing Cloud)                              | Sends a templated email to the user                                                                                                         | email\_address (optional)        | Select the email template on the prompt screen. Set up dynamic templates in the Marketing Cloud dashboard | optional    |
-| Add Subscriber to List (Marketing Cloud)                      | Adds an existing subscriber to the specified list                                                                                           | n/a                              | Select the list on the prompt screen. Set up lists in the Marketing Cloud dashboard                       | n/a         |
-| Add User to List with form input (Marketing Cloud)            | Creates a subscriber based on the input email address and adds them to the specified list                                                   | n/a                              | Select the list on the prompt screen. Set up lists in the Marketing Cloud dashboard                       | required    |
+The **Salesforce** connector streams Recurly Engage prompt events and actions into Salesforce, allowing you to create cases, post feed items, send Marketing Cloud emails, and manage subscriber lists directly from prompts.
+
+# Key benefits
+
+* **Real-time case creation**: Automatically generate support cases from user interactions.
+* **Feed updates**: Log offer acceptances to existing case feeds for full context.
+* **Marketing Cloud sends**: Trigger personalized email sends and list subscriptions without leaving the prompt UI.
+
+# Key details
+
+## Support cloud credentials
+
+Under **Settings → Connectors → Salesforce**, provide:
+
+* **Username**
+* **Password**
+* **Security Token**
+* **Client ID**
+* **Client Secret**
+
+## Marketing cloud credentials
+
+Provide:
+
+* **Client ID**
+* **Client Secret**
+* **From Email Address**
+* **Base URL**
+* **Auth Base URL**
+* **SOAP Base URL**
+
+## Supported actions
+
+Use these actions in your prompt configurations to drive Salesforce workflows:
+
+| Action                                                        | Description                                                                        | User Dependencies                  | Additional Instructions                                                                        | Form Inputs |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------- | ----------- |
+| **Create a Case (Support)**                                   | Creates a support case in Salesforce with user and prompt details                  | n/a                                | n/a                                                                                            | n/a         |
+| **Post offer acceptance to feed of existing cases (Support)** | Adds a feed item to all cases associated with the user, detailing offer acceptance | `salesforce_id` or `email_address` | n/a                                                                                            | n/a         |
+| **Triggered Send (Marketing Cloud)**                          | Sends a templated email to the user via Marketing Cloud                            | `email_address` (optional)         | Select an email template in the prompt editor; configure dynamic templates in Marketing Cloud. | optional    |
+| **Add Subscriber to List (Marketing Cloud)**                  | Adds an existing subscriber to a specified list                                    | n/a                                | Select the list in the prompt editor; ensure lists exist in Marketing Cloud dashboard.         | n/a         |
+| **Add User to List with Form Input (Marketing Cloud)**        | Creates a subscriber based on prompt input and adds them to a specified list       | n/a                                | Select the list in the prompt editor; configure form input field for email address.            | required    |
 
 ## Installing Journey Builder Activity
 
-1. Go to Marketing Cloud Setup screen
-2. Within Apps → Installed Packages, click on "New"
-3. Specify Name "Redfast"
-4. Click "Add Component", select `Journey Builder Activity` and click "Next"
-5. Specify Name `Redfast`, Category `Messages` and Endpoint URL `https://jbuilder.redfast.com>/<appid>/` (AppID can be found within Pulse → Settings → Application)
+1. In Marketing Cloud Setup, navigate to **Apps → Installed Packages**, then click **New**.
+2. Enter **Name**: `Recurly Engage`, then click **Save**.
+3. Under **Components**, click **Add Component**, choose **Journey Builder Activity**, and click **Next**.
+4. Provide:
 
-Once completed, Redfast will appear as a Message activity within Journey Builder.
+   * **Name**: `Recurly Engage`
+   * **Category**: `Messages`
+   * **Endpoint URL**: `https://jbuilder.recurlyengage.com/<appid>/` (find App ID under **Settings → Application**).
+5. Save the activity. Recurly Engage will now appear as a Message activity in Journey Builder.
 
 ## Additional Information
 
-* [Salesforce Credentials](https://developer.salesforce.com/forums/?id=906F0000000AfcgIAC)
-* [Salesforce Client ID and Secret](https://salesforce.stackexchange.com/questions/40346/where-do-i-find-the-client-id-and-client-secret-of-an-existing-connected-app/224659#224659)
+* [Salesforce Credentials reference](https://developer.salesforce.com/forums/?id=906F0000000AfcgIAC)
+* [Finding Client ID and Secret](https://salesforce.stackexchange.com/questions/40346/where-do-i-find-the-client-id-and-client-secret-of-an-existing-connected-app/224659#224659)
