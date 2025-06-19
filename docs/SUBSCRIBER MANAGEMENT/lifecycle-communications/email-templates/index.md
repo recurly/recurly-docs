@@ -159,7 +159,8 @@ To show non-US currency symbols correctly, use three curly braces (`{{{`) instea
 
 #### Using boolean sections for custom messages
 
-Personalize your new subscription emails based on whether a trial period is offered. Use code blocks like the ones below to display different messages for trial and non-trial subscriptions:\
+Personalize your new subscription emails based on whether a trial period is offered. Use code blocks like the ones below to display different messages for trial and non-trial subscriptions:
+
 In the new subscription email, it might be helpful to customize the email depending on the presence of a trial. If the subscription has a trial, the email should read "Your credit card will be charged at XXX." Whereas a subscription without a trial might say, "Your credit card was charged." Here is an example:
 
 ```
