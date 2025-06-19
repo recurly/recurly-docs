@@ -66,7 +66,7 @@ Volume pricing is a straightforward model where the more units a customer consum
 
 ## Prepaid account balance
 
-[Prepaid account balance](https://docs.recurly.com/docs/hybrid-pricing) allows customers to prepay and maintain a balance in their account, which can then be used for future purchases.
+[Prepaid account balance](https://docs.recurly.com/docs/prepaid-account-balance#/) allows customers to prepay and maintain a balance in their account, which can then be used for future purchases.
 
 ## Currencies (140+)
 
