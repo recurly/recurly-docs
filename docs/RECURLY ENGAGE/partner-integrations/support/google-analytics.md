@@ -1,6 +1,8 @@
 ---
 title: Google Analytics
-excerpt: ''
+excerpt: >-
+  Integration guide for sending Recurly Engage prompt interaction events to
+  Google Analytics via client-side SDK and server-side Measurement Protocol.
 deprecated: false
 hidden: true
 metadata:
@@ -10,48 +12,86 @@ metadata:
 next:
   description: ''
 ---
-# Client Integration
+# Overview
 
-For web based devices, Redfast utilizes the running instance of the Google Analytics JS SDK. This ensures that session and user data context is maintained while reporting real-time Redfast prompt events. Enter your [GA Tag ID](https://support.google.com/analytics/answer/9539598?hl=en)  within Settings -> Integrations -> External within Pulse
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* A Google Analytics property and tracking ID (GA Tag ID).
+* Access to **Recurly Engage → Settings → Integrations → External → Google Analytics**.
+* For server-side calls, familiarity with the Measurement Protocol (v1).
+
+# Definition
+
+The **Google Analytics** integration provides two methods:
+
+1. **Client Integration**: Uses your existing GA JavaScript SDK instance to fire custom events for prompt interactions.
+2. **Server Integration**: Sends events via an API action using Google Analytics Measurement Protocol.
+
+# Key benefits
+
+* **Unified reporting**: View prompt metrics within your GA dashboards alongside pageviews and user behavior.
+* **Session continuity**: Events fire in the same session context as your GA page events.
+* **Custom payloads**: Leverage GA’s Measurement Protocol to include any relevant parameters.
+
+# Key details
+
+## Client integration
+
+For web-based devices, Recurly Engage leverages the running instance of the Google Analytics JS SDK. This ensures session and user context is preserved when reporting real-time prompt events.
+
+1. In **Recurly Engage**, go to **Settings → Integrations → External → Google Analytics**.
+2. Enter your [GA Tag ID](https://support.google.com/analytics/answer/9539598?hl=en).
 
 **Event Details**
 
-| Activity                  | Description                                                                                                                                    |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Redfast Prompt Impression | A user has seen the prompt                                                                                                                     |
-| Redfast Prompt Dismiss    | A user has dismissed the prompt by clicking on the 'close'('X') button or outside the prompt view (if the 'Click outside to close' is enabled) |
-| Redfast Prompt Timeout    | The prompt has been closed automatically due to close timer timeout (if set)                                                                   |
-| Redfast Prompt Decline    | A user has declined the prompt by clicking on the decline button (Button 3)                                                                    |
-| Redfast Prompt Click      | A user has accepted the prompt by clicking on the primary CTA button (Button 1)                                                                |
-| Redfast Prompt Holdout    | A holdout user has triggered the prompt                                                                                                        |
-| Redfast Prompt Click 2    | A user has accepted the prompt by clicking on the secondary CTA button (Button 2)                                                              |
+| Activity                         | Description                                                                             |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| Recurly Engage Prompt Impression | A user has seen the prompt                                                              |
+| Recurly Engage Prompt Dismiss    | A user has dismissed the prompt by clicking the close button or outside the prompt view |
+| Recurly Engage Prompt Timeout    | The prompt closed automatically due to a timer                                          |
+| Recurly Engage Prompt Decline    | A user has declined the prompt by clicking the decline button                           |
+| Recurly Engage Prompt Click      | A user has accepted the prompt by clicking the primary CTA button                       |
+| Recurly Engage Prompt Holdout    | A holdout user has reached the prompt but not seen it                                   |
+| Recurly Engage Prompt Click 2    | A user has accepted the prompt by clicking the secondary CTA button                     |
 
-The following attributes (if applicable) are sent with each custom event.
+Each event includes these attributes when applicable:
 
-| Event Property   | Description                                                                           |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| promo\_id        | A unique prompt identifier that can be found in the 'Prompt ID' field under 'Details' |
-| promo\_name      | The name of the prompt                                                                |
-| variation\_id    | A unique identifier of a prompt variation running within an experiment                |
-| variation\_name  | The name of the prompt variation running within an experiment                         |
-| event\_timestamp | The time when the activity occurred                                                   |
+| Event Property    | Description                                     |
+| ----------------- | ----------------------------------------------- |
+| `promo_id`        | Unique prompt identifier (see Prompt Details)   |
+| `promo_name`      | Name of the prompt                              |
+| `variation_id`    | Identifier of the experiment variation (if any) |
+| `variation_name`  | Name of the experiment variation (if any)       |
+| `event_timestamp` | Timestamp when the interaction occurred         |
 
-##
+***
 
-<br />
+## Server integration
 
-# Server Integration
+### Create an API action
 
-## Create an action
+Configure a POST action in **Settings → Actions → API Actions** to send events via Google Analytics Measurement Protocol (v1). Use the following endpoint:
 
-Follow the steps to create an API action. This action should be a POST request. The required url is listed here.
+```
+https://www.google-analytics.com/collect
+```
 
-<Image align="center" width="650px" src="https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png" />
 
 ### Specify the payload
 
-Add parameters to the payload. These values can be static or dynamic. Supported parameters are described [here](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters). Required parameters include `v` (protocol version), `tid` (web property ID), and `t` (hit type). Optional parameters include `cid` (client id), `ea` (event action), and `el` (event label).
+Include required and optional Measurement Protocol parameters.
 
-### Add action to prompt or experience
+* **Required**: `v` (protocol version), `tid` (Tracking ID), `t` (hit type, e.g., `event`).
+* **Optional**: `cid` (Client ID), `ec` (event category), `ea` (event action), `el` (event label), `ev` (event value).
 
-Follow the steps here to [add the action](actions-1) to a prompt or experience.
+See full parameter reference: [https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters)
+
+### Add action to prompt
+
+Attach the newly created API action to a prompt interaction (Accept, Decline, etc.) or within a Guide/Experience.\
+Follow the [Add Action guide](actions-1) for detailed steps.
