@@ -114,13 +114,13 @@ If you have multiple billing systems consolidating into a single gateway account
 
 Please be aware that **PayPal and Stripe Payment Gateways do not support invoice prefixing**.
 
-![](https://files.readme.io/7dd13ea-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/7dd13ea-image.png" />
 
 ### Site customizations
 
 Add your personal touch to the Recurly Sidebar by customizing its look. With the "sidebar theme" option, you can choose a style that perfectly matches your company's unique personality and vibe. Explore the different options available and select the one that resonates with your brand.
 
-![](https://files.readme.io/2e186a0-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/2e186a0-image.png" />
 
 ## Additional subdomain
 
