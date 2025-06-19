@@ -18,7 +18,7 @@ This page walks you through setting up your application in the Recurly Engage co
 
 ### Prerequisites & limitations
 
-* You need **Administrator** access to your Recurly Engage account.
+* You need **Administrator** access to configure your Recurly Engage account.
 * Ensure your DNS is configured so that your domain (and any aliases) point to Recurly Engage’s infrastructure.
 
 # Definition
