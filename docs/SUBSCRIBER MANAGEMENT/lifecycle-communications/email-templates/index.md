@@ -187,13 +187,13 @@ You can also customize your subscription renewal reminders for Direct Debit cust
 Here is an example:
 
 ```
-  {{#subscription_has_trial?}}
+{{#subscription_has_trial?}}
   Your account will be billed {{{subscription_total_amount}}} in 10 days.
-  {{/billing_has_active_mandate?}}
+{{/subscription_has_trial?}}
 
-  {{^subscription_has_trial?}}
-  Your mandate ID is: {'{{direct_debit_mandate_id}}'}.
-  {{/billing_has_active_mandate?}}
+{{^subscription_has_trial?}}
+  Your mandate ID is: {{direct_debit_mandate_id}}.
+{{/subscription_has_trial?}}
 ```
 
 With this addition, the email can display this sentence dynamically instead of ending up with a sentence with a missing piece.
