@@ -1,6 +1,8 @@
 ---
-title: Platform Overview
-excerpt: A broad overview of the Redfast platform and technology
+title: 'Overview: Recurly Engage'
+excerpt: >-
+  High-level architecture and integration overview of the Recurly Engage
+  platform—SDKs, console, core processor, and supported third-party connectors.
 deprecated: false
 hidden: true
 metadata:
@@ -10,28 +12,46 @@ metadata:
 next:
   description: ''
 ---
-Redfast’s innovative architecture creates an always-on-no-code platform that enables business teams to prompt users to perform actions they would not have discovered independently. Here are some [popular use cases](popular-uses).
+# Overview
 
-The system is made up of the following components:
+Recurly Engage is an always-on, no-code platform that empowers business teams to deliver targeted in-app and web prompts, guides, and notifications—driving user actions they might not otherwise take. Use cases range from trial-to-paid conversions and feature adoption to churn prevention and cross-sell campaigns. Explore our [Popular Use Cases](popular-uses).
+
+# Key benefits
+
+* **Rapid deployment**: Launch prompts without engineering cycles, using tag managers or direct SDK integration.
+* **Real-time personalization**: Dynamic segmentation and machine learning drive targeted messages to the right users at the right time.
+* **Seamless integration**: Deep 1‑click connectors across billing, support, marketing, CRM, and analytics systems.
+
+# Key details
 
 ## Client SDKs
 
-The client SDKs act as data and event collectors and render end-user-facing prompts and guides. The Javascript client can be added using [Google tag manager](google-tag-manager), [Tealium tag manager](tealium-iq-tag-manager), or directly integrated into your website. Libraries are also available for [iOS, Apple TV, Android, and Roku](ios-sdk).
+Lightweight clients collect events and render prompts & guides across web and devices.
 
-## Console
+* **Web**: Install via [Google Tag Manager](google-tag-manager), [Tealium](tealium-iq-tag-manager), or direct snippet.
+* **Mobile & TV**: Native libraries for [iOS](ios-sdk), Android, Apple TV, Roku.
 
-The Redfast console, called Pulse, is the management console where you can configure your apps, setup traits, segments, prompts, guides, and integrations. You can also check in daily to view dashboards and pipelines and run experiments.
+## Management Console (Pulse)
+
+Central hub to configure applications, user traits, segments, prompts, guides, and integrations.
+
+* Dashboards & Pipelines: Monitor account-wide metrics and dynamic user pipelines.
+* Experiments: A/B test prompt variations and custom goals.
 
 ## Stream Data Processor
 
-The heart of the platform is the real time stream data processor that dynamically segments incoming traffic into manageable user segments and cohorts based on rules or machine learning. These real time user segments can be targeted with personalized in-app prompts to drive actions beneficial to the business.
+Real-time engine segments incoming events into cohorts using rule-based or ML-driven logic. These segments feed prompt targeting and journey orchestration.
 
-<Image alt="Redfast Platform" align="center" border={true} src="https://files.readme.io/2a163da-image.png">
-  Redfast Platform
-</Image>
+<Image align="center" alt="Recurly Engage Platform" border={true} caption="Recurly Engage Platform" src="https://files.readme.io/2a163da-image.png" />
 
-<br />
+## Third-party integrations
 
-## Third Party Integrations
+Broad ecosystem of 1‑click connectors across business domains:
 
-Redfast supports integrations with business systems like **Billing** ([Recurly](recurly), [Zuora](zuora), [Stripe](stripe), [Vindicia](vindicia), Braintree, Apple), **Support** ([Zendesk](zendesk), [Freshdesk](freshdesk), [Salesforce](salesforce-marketing-cloud)), **Marketing** ([Sendgrid](sendgrid), [Salesforce Marketing Cloud](salesforce-marketing-cloud), [Braze](braze)), **E-commerce** ([Shopify](shopify)). See [1-Click Integrations](recurly) for more info.
+* **Billing & Subscription**: [Recurly](recurly), [Zuora](zuora), [Stripe](stripe), [Vindicia](vindicia), Braintree, Piano
+* **Support & CRM**: [Zendesk](zendesk), [Freshdesk](freshdesk), [Salesforce](salesforce), [ActiveCampaign](activecampaign), [Braze](braze), [SendGrid](sendgrid), [Segment](segment)
+* **Marketing Automation**: Salesforce Marketing Cloud, Iterable, Adobe Campaign
+* **E‑commerce**: [Shopify](shopify), Cleeng, Chargify
+* **Analytics**: [Google Analytics](google-analytics), [Amplitude](amplitude), [Mixpanel](mixpanel), [mParticle](mparticle), [Heap](heap), [Adobe Analytics](adobe-analytics)
+
+Leverage these integrations to sync user data, trigger 1‑click actions, and report prompt events—seamlessly embedding Recurly Engage into your tech stack.
