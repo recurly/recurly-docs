@@ -22,8 +22,9 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* Company or App Administrator permissions in Recurly Engage.
-* Global limits affect all prompts and require appropriate account-level configuration.
+* You must have **Company**, **App Administrator**, **App Member** permissions in Recurly Engage in order to create or update Prompt limits.
+* You must have **Company**, **App Administrator** permissions in Recurly Engage in order to update Global Limits.
+* Global limits affect all prompts and require appropriate application-level configuration.
 
 # Definition
 
