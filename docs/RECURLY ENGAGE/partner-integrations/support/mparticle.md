@@ -70,7 +70,11 @@ Under **Settings → Integrations → External → mParticle** in Recurly Engage
 
 After activation, mParticle will receive the following custom events tagged to the user’s identity, visible in the User Activity screen:
 
-![User Activity](https://files.readme.io/b504573-mparticle-user-activity-4.png)!![Custom Event](https://files.readme.io/e006d0a-mparticle-custom-event-5.png)
+![User Activity](https://files.readme.io/b504573-mparticle-user-activity-4.png)
+
+<br />
+
+![Custom Event](https://files.readme.io/e006d0a-mparticle-custom-event-5.png)
 
 | Custom Event                          | Description                                                               |
 | ------------------------------------- | ------------------------------------------------------------------------- |
