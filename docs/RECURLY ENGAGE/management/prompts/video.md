@@ -18,7 +18,7 @@ next:
 
 ### Prerequisites & limitations
 
-* Company or App Administrator permissions in Recurly Engage.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 
 # Definition
 
