@@ -37,7 +37,7 @@ The **Naviga** connector integrates Recurly Engage with the Naviga Subscribe API
 
 # Key details
 
-## Supported Actions
+## Supported actions
 
 Use these actions within prompt configurations (accept, secondary accept, etc.) to drive Naviga workflows:
 
