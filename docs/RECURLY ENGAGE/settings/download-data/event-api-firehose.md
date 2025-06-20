@@ -39,15 +39,15 @@ The **Event API Firehose** feature pushes usage tracking events in JSON format t
 
 Usage tracking data that has been enabled in Recurly Engage can be pushed to external systems. Anything added in the Usage Tracker section is sent as an event once the integration is set up.
 
-<Image align="center" src="https://files.readme.io/d7f9c3c-Event_Export_1.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d7f9c3c-Event_Export_1.png" />
 
 There are two ways to receive usage data. You must provide the following values to your account manager:
 
 1. **AWS S3 Requirements** – Pull data using Recurly Engage
    * **Go** to **Settings > User Traits**.
    ![AWS Settings](https://files.readme.io/bfbf239-Event_Exports_settings.png)
-   * **Select** “Click here for AWS S3 credentials”
-   ![AWS Settings](https://files.readme.io/a970314-Event_Exports_settings_1.png)
+   * **Select** “Click here for AWS S3 credentials”\
+     ![AWS Settings](https://files.readme.io/a970314-Event_Exports_settings_1.png)
    * **Copy** the **AWS Bucket**, **Access Key**, and **Secret Key**, then **navigate** to the `exports` folder. All filenames start with the `usages` prefix. Pull this data on demand.
 
 ### AWS S3 data specifications
