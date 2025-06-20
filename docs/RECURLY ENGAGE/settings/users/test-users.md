@@ -1,5 +1,5 @@
 ---
-title: Test Users
+title: Test users
 excerpt: >-
   Configuration guide for the Test Users feature, which allows whitelisted users
   to preview active prompts in a production environment.
