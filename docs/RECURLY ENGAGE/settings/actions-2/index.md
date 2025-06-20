@@ -1,6 +1,8 @@
 ---
 title: Integrations
-excerpt: Connect with external platforms, internal APIs, and web clients
+excerpt: >-
+  How to activate and configure third-party connectors for billing, support,
+  marketing, and analytics within Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,106 +12,124 @@ metadata:
 next:
   description: ''
 ---
+# Overview
+
+Recurly Engage supports dozens of prebuilt integrations—connectors that let you trigger actions in, or stream events to, your existing business systems.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Connector-specific credentials (API keys, client IDs/secrets, etc.)
+* Appropriate permissions in both Recurly Engage and the target system
+
+# Definition
+
+An **integration** (or connector) links Recurly Engage prompts and user interactions with external platforms—enabling 1-click actions, event streaming, and data sync.
+
+# Key benefits
+
+* **Streamline workflows**: Automate subscription changes, support tickets, emails, and more directly from in-app prompts.
+* **Unified user experience**: Keep your user’s context in sync across billing, CRM, support, and analytics systems.
+* **Rapid time to value**: Prebuilt connectors mean you can be live in minutes, not weeks.
+
+# Key details
+
 ## Configure External Integrations
 
-* [ ] Go to Settings > Actions
+1. **Go to** Settings → Actions
 
-  ![](https://files.readme.io/3f60efa-image.png)
+![](https://files.readme.io/3f60efa-image.png)
 
-* [ ] Select a connector, i.e., Zuora
+1. **Select** a connector (e.g. Zuora)
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/2bae331-image.png" />
+![](https://files.readme.io/2bae331-image.png)
 
-* [ ] Fill in the required data
+1. **Fill in** the required credentials
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/5f1e9d9-image.png" />
+![](https://files.readme.io/5f1e9d9-image.png)
 
-* [ ]  Set the toggle to 'Active' and hit 'Save changes'.
+1. **Toggle** to **Active** and **Save changes**
 
-  <Image align="center" className="border" border={true} src="https://files.readme.io/dbee0b4-image.png" />
+![](https://files.readme.io/dbee0b4-image.png)
+
+***
+
+## Connector Capabilities
 
 ### SendGrid
 
-* Send dynamic template email to user email address
+* Send dynamic template email to user’s email address
 * Add user to contact list
-* Send dynamic template email to user submitted email
+* Send dynamic template email to a user-submitted address
 
 ### Salesforce.com
 
-* Create a case
-* Post offer acceptance to feed of all existing cases
+* Create a Case (Support Cloud)
+* Post offer acceptance to feed on all existing Cases
 
 ### Zendesk
 
-* Create support ticket with notification of offer acceptance
-* Set priority of all existing tickets
-* Assign all existing tickets to specific agent
-* Suspend user
-* Restore suspended user
-* Assign all existing tickets to a group
-* Delete all tickets
-* Set status of all existing tickets
-* Delete and spam all existing tickets
+* Create support ticket with offer details
+* Set priority on all tickets by that user
+* Assign all existing tickets to a specific agent
+* Suspend or restore a user
+* Assign tickets to a group
+* Delete or spam all existing tickets
+* Update ticket status or source
 
 ### Stripe
 
 * Subscribe the user to a specific plan
-* Unsubscribe user from a specific plan
-* Add coupon code to the user at checkout
-* Extend the user's trial for a specific plan
-* Unsubscribe the user from their first active or trial subscription
-* Switch active or trial subscription to a new plan
-* Switch active or trial subscription to new plan at the end of the current billing period
+* Unsubscribe the user from a plan
+* Add a coupon code at checkout
+* Extend a user’s trial period
+* Switch subscriptions immediately or at period end
 
 ### Zuora
 
-* Subscribe the user to a specific plan
-* Cancel user subscriptions
-* Suspend user subscriptions
-* Resume user subscription
+* Subscribe user to a rate plan
+* Cancel, suspend, or resume a subscription
+* Change auto-renew settings
 
 ### Freshdesk
 
-* Create support ticket with notification of offer acceptance
-* Update priority for all tickets created by the user
-* Update status for all tickets created by the user
-* Update responder for all tickets created by the user
-* Update group for all tickets created by the user
-* Update source for all tickets created by the user
-* Set the contact to a deleted state
-* Restore the contact from a deleted state
-* Deletes all tickets created by the contact
+* Create support ticket upon offer acceptance
+* Bulk-update ticket priority, status, group, responder, or source
+* Soft-delete or restore contacts
+* Delete all tickets for a contact
 
 ### Recurly
 
-* Applies a coupon to a user
-* Changes a user's subscription to a new plan
-* Creates a subscription for an existing account
-* Reactivate a user's subscription
-* Pauses a user's subscription
-* Resumes a user's subscription
-* Logs a usage record for a subscription add-on
+* Apply coupon codes
+* Change, pause, resume, or create subscriptions
+* Convert trials to paid
+* Record usage
 
 ### Iterable
 
-* Post an event to Iterable
-* Add user to Iterable list
-* Send campaign email to user
-* Send campaign email to user inputted email (form inputs required)
-* Add user to Iterable list by email
+* Track custom events in Iterable
+* Add users to lists or automations
+* Send campaign emails to stored or inputted addresses
 
 ### Cleeng
 
-* Switch User to Different Subscription
-* Apply Coupon Code to Subscription
-* Reactivate Subscription
+* Switch subscription offers
+* Apply coupon codes
+* Reactivate subscriptions
 
 ### Braze
 
-* Add user with email
+* Create or update a user record by email
 
-### Apple
+### Apple (APNS)
 
-* Upgrade/Downgrade user subscription plan
+* Trigger in-app purchase flows (Upgrade/Downgrade)
+* Send push notifications via APNs
 
-Please contact a member of the Redfast team to create custom connectors or request a new connector.
+***
+
+**Need another connector?**\
+Contact your Recurly Engage Customer Success team to request a custom integration or new connector.
