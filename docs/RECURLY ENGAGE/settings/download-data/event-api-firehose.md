@@ -22,8 +22,8 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-- You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.  
-- add additional prerequisites or limitations if any
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+* add additional prerequisites or limitations if any
 
 # Definition
 
@@ -31,9 +31,9 @@ The **Event API Firehose** feature pushes usage tracking events in JSON format t
 
 # Key benefits
 
-- **Real-time insights**: Stream usage events as they occur for immediate data-driven decisions.  
-- **Scalable storage**: Offload event logs to S3 for long-term retention and BI integration.  
-- **Flexible integration**: Send data to any HTTP endpoint or cloud storage service to fit your architecture.
+* **Real-time insights**: Stream usage events as they occur for immediate data-driven decisions.
+* **Scalable storage**: Offload event logs to S3 for long-term retention and BI integration.
+* **Flexible integration**: Send data to any HTTP endpoint or cloud storage service to fit your architecture.
 
 # Key details
 
@@ -45,56 +45,56 @@ Usage tracking data that has been enabled in Recurly Engage can be pushed to ext
 
 There are two ways to receive usage data. You must provide the following values to your account manager:
 
-1. **AWS S3 Requirements** – Pull data using Recurly Engage  
-   1. Go to **Settings > User Traits**  
-      ![AWS Settings](https://files.readme.io/bfbf239-Event_Exports_settings.png)  
-   2. Select “Click here for AWS S3 credentials”  
-      ![AWS Settings](https://files.readme.io/a970314-Event_Exports_settings_1.png)  
-   3. Copy the **AWS Bucket**, **Access Key**, and **Secret Key**, then navigate to the `exports` folder. All filenames start with the `usages` prefix. Pull this data on demand.
+1. **AWS S3 Requirements** – Pull data using Recurly Engage
+   * **Go** to **Settings > User Traits**.
+   ![AWS Settings](https://files.readme.io/bfbf239-Event_Exports_settings.png)
+   * **Select** “Click here for AWS S3 credentials”
+   ![AWS Settings](https://files.readme.io/a970314-Event_Exports_settings_1.png)
+   * **Copy** the **AWS Bucket**, **Access Key**, and **Secret Key**, then **navigate** to the `exports` folder. All filenames start with the `usages` prefix. Pull this data on demand.
 
-### AWS S3 Data Specifications
+### AWS S3 data specifications
 
 All data is JSON formatted with the following fields. To enable optional fields, ask your account manager:
 
-| Field               | Description                                                                                 | Notes                                             |
-|---------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------|
-| user_id             | Primary user identifier                                                                     |                                                   |
-| anonymous_user_id   | Identifier when userId is unavailable                                                       |                                                   |
-| event               | Name of event                                                                               |                                               |
-| platform            | Type of integration                                                                         | Always `redfast` for usage                       |
-| type                | Type of tracker                                                                             | Values: `page`, `track`, `custom`                |
-| properties.id       | Usage Tracker id                                                                            |                                                   |
-| properties.values   | Configured values in Recurly Engage Console                                                 |                                                   |
-| properties.options  | Additional options                                                                          | Specifies if regex is used for page trackers     |
-| ts                  | Timestamp when activity occurred (epoch)                                                    |                                                   |
-| app_id              | Recurly Engage app id                                                                       | Optional                                          |
-| traits              | Key/value pairs of user attributes ingested from external and in-app sources                | Optional                                          |
-| segments            | List of segment objects (id + name) at event time                                           | Optional                                          |
-| paths               | List of personalization path objects (id, name, device_type, zone)                          | Optional                                          |
+| Field               | Description                                                                  | Notes                                        |
+| ------------------- | ---------------------------------------------------------------------------- | -------------------------------------------- |
+| user\_id            | Primary user identifier                                                      |                                              |
+| anonymous\_user\_id | Identifier when userId is unavailable                                        |                                              |
+| event               | Name of event                                                                |                                              |
+| platform            | Type of integration                                                          | Always `redfast` for usage                   |
+| type                | Type of tracker                                                              | Values: `page`, `track`, `custom`            |
+| properties.id       | Usage Tracker id                                                             |                                              |
+| properties.values   | Configured values in Recurly Engage Console                                  |                                              |
+| properties.options  | Additional options                                                           | Specifies if regex is used for page trackers |
+| ts                  | Timestamp when activity occurred (epoch)                                     |                                              |
+| app\_id             | Recurly Engage app id                                                        | Optional                                     |
+| traits              | Key/value pairs of user attributes ingested from external and in-app sources | Optional                                     |
+| segments            | List of segment objects (id + name) at event time                            | Optional                                     |
+| paths               | List of personalization path objects (id, name, device\_type, zone)          | Optional                                     |
 
-### Event Types
+### Event types
 
-| Type                            | Description                                                                                          |
-|---------------------------------|------------------------------------------------------------------------------------------------------|
-| Impression                      | User was shown the prompt                                                                            |
-| Timeout                         | User did not respond before timer expired                                                            |
-| Dismiss                         | User dismissed by clicking `X` or outside the window                                                 |
-| Decline                         | User clicked on the decline link                                                                     |
-| Click                           | User accepted the prompt (phased out in favor of Goal)                                               |
-| Goal                            | User accepted the prompt                                                                             |
-| Custom_Goals_[Activity Type]    | User completed a defined custom goal on a prompt                                                     |
-| Exclude                         | User excluded due to holdout or user limits                                                          |
-| Holdout                         | User in holdout group                                                                                 |
-| Pipeline_Impression             | User shown the prompt and is in a pipeline stage                                                     |
-| Pipeline_Transition             | User moved from one pipeline stage to another                                                        |
+| Type                            | Description                                            |
+| ------------------------------- | ------------------------------------------------------ |
+| Impression                      | User was shown the prompt                              |
+| Timeout                         | User did not respond before timer expired              |
+| Dismiss                         | User dismissed by clicking `X` or outside the window   |
+| Decline                         | User clicked on the decline link                       |
+| Click                           | User accepted the prompt (phased out in favor of Goal) |
+| Goal                            | User accepted the prompt                               |
+| Custom\_Goals\_\[Activity Type] | User completed a defined custom goal on a prompt       |
+| Exclude                         | User excluded due to holdout or user limits            |
+| Holdout                         | User in holdout group                                  |
+| Pipeline\_Impression            | User shown the prompt and is in a pipeline stage       |
+| Pipeline\_Transition            | User moved from one pipeline stage to another          |
 
 ## Custom Web API Firehose
 
 This option provides near-real-time delivery. Recurly Engage can send single or batched events within sub-minute windows to an endpoint you specify. Provide your account manager with:
 
-- **URL**  
-- **API Key** / **Access Token**  
-- **Request type** (`GET`, `POST`, `PUT`)
+* **URL**
+* **API Key** / **Access Token**
+* **Request type** (`GET`, `POST`, `PUT`)
 
 ### Payload format
 
@@ -105,7 +105,7 @@ The payload is a JSON array of event objects. In S3 each event is one object per
   { /* event object as shown below */ },  
   { /* ... */ }  
 ]
-````
+```
 
 ### Example event payload
 
@@ -129,7 +129,7 @@ The payload is a JSON array of event objects. In S3 each event is one object per
 }
 ```
 
-### API Data Specifications
+### API data specifications
 
 | Field               | Description                                              | Notes    |
 | ------------------- | -------------------------------------------------------- | -------- |
@@ -147,7 +147,7 @@ The payload is a JSON array of event objects. In S3 each event is one object per
 | segments            | Segment list (id + name)                                 | Optional |
 | paths               | Personalization path list (id, name, device\_type, zone) | Optional |
 
-### Usage Types
+### Usage types
 
 | Type   | Description                               |
 | ------ | ----------------------------------------- |
@@ -155,7 +155,7 @@ The payload is a JSON array of event objects. In S3 each event is one object per
 | track  | Button or CSS class click                 |
 | custom | Custom event (e.g., transaction complete) |
 
-### API Push Example
+#### API Push example
 
 ```bash
 curl 'example.backendurl.com/v1/api/ingest/' \
