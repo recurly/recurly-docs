@@ -18,7 +18,7 @@ next:
 
 This guide will teach you how to create a horizontal zone. The instructions for creating vertical, tile, and text zones are exactly the same.
 
-`<Embed url="https://www.loom.com/embed/d5e34c1c9e8140a5b381d78c5e9edce5?sid=97a6a644-4af3-4d90-8cef-21a888bb9aa9" provider="loom.com" href="https://www.loom.com/embed/d5e34c1c9e8140a5b381d78c5e9edce5?sid=97a6a644-4af3-4d90-8cef-21a888bb9aa9" typeOfEmbed="iframe" height="460px" width="100%" iframe="true" title="undefined" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} />`
+<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/d5e34c1c9e8140a5b381d78c5e9edce5?sid=97a6a644-4af3-4d90-8cef-21a888bb9aa9" href="https://www.loom.com/embed/d5e34c1c9e8140a5b381d78c5e9edce5?sid=97a6a644-4af3-4d90-8cef-21a888bb9aa9" html="false" iframe="true" />
 
 ### Required plan
 
@@ -42,9 +42,7 @@ A **zone** is a named placeholder in your application or website where Recurly E
 
 You can deliver one or more prompt items into a zone. When multiple items are present, you can choose Stack, List, or Slider display modes.
 
-***
-
-## Step-by-step
+## Guide
 
 1. **Create a Zone**: Go to **Settings > Zones > New Zone**
 2. This zone will live on the home page in the top banner section. Use a single identifier (no spaces). You can add multiple prompts into this zone.
