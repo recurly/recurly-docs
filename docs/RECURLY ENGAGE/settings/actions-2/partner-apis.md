@@ -16,6 +16,7 @@ This feature is available to all customers on any Recurly Engage subscription pl
 
 ### Prerequisites & limitations
 
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * Partner code and shared secrets provided by Recurly Engage Partnerships.
 * RSA key pair for JWT user provisioning.
 
