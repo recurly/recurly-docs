@@ -1,6 +1,8 @@
 ---
 title: APIs
-excerpt: Private or public APIs you have access to
+excerpt: >-
+  How to configure custom API actions within Recurly Engage, including setting
+  up credentials and defining action details.
 deprecated: false
 hidden: true
 metadata:
@@ -10,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-How to configure custom API actions within Recurly Engage, including setting up credentials and defining action details.
-
 # Overview
 
 ### Required plan
@@ -22,7 +20,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* None beyond base Recurly Engage access.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 
 # Definition
 
