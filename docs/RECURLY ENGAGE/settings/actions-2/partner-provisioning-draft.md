@@ -1,65 +1,67 @@
 ---
 title: Partner Provisioning
+excerpt: >-
+  How to provision and manage tenants and users programmatically via the Recurly
+  Engage Partner Provisioning API.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-# Introduction
+# Overview
 
-The Provisioning API allows for the creation and modification of a Redfast tenant via server-side integration with partners. It also allows you to provision users just in time (JIT) and redirect them into pulse.redfast.com with a logged  in session. Please work with your partnership manager if you require access to this API.
+### Required plan
 
-## Endpoint Info
+This feature is available to all customers on any Recurly Engage subscription plan.
 
-<br />
+### Prerequisites & limitations
 
-**Base URL**: `https://<subdomain>.redfast.com`
+* Partner code and shared secrets provided by Recurly Engage Partnerships.
+* RSA key pair for JWT user provisioning.
 
-<br />
+# Definition
 
-# Get Tenant
+The **Partner Provisioning API** enables partners to create, retrieve, update, and manage Recurly Engage tenants and perform just-in-time (JIT) user provisioning with seamless single sign-on.
 
-<br />
+# Key benefits
 
-This API should be invoked to retrieve an existing tenant.
+* **Automate tenant setup**: Create and configure new Recurly Engage tenants via API, eliminating manual onboarding steps.
+* **Just-in-time user provisioning**: Provision users and obtain session tokens on demand, enabling embedded partner portals.
+* **Secure integration**: Authenticate API calls with partner-specific shared secrets and RSA-signed JWTs.
 
-<br />
+# Key details
+
+The Provisioning API allows for the creation and modification of a Recurly Engage tenant via server-side integration with partners. It also supports just-in-time (JIT) user provisioning and redirects users into `pulse.recurlyengage.com` with a logged-in session. Please work with your Partnership Manager if you require access to this API.
+
+## Endpoint info
+
+**Base URL**: `https://<subdomain>.recurlyengage.com`
+
+# Get tenant
+
+Retrieve an existing tenant by its external partner ID.
 
 ## Endpoint
 
-<br />
-
 **GET /v1/tenants/\<external\_tenant\_id>**
-
-<br />
 
 ## Headers
 
-<br />
-
 * **Content-Type**: `application/json`
-* **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
-  <br />
+* **rf-secret**: Shared secret provided by Recurly Engage (test and production secrets differ)
 
-## Query Params
+## Query params
 
-<br />
-
-The request should include the following query params:
-
-* **partner\_code**: Partner Code assigned by Redfast
-  <br />
+* **partner\_code**: Partner Code assigned by Recurly Engage
 
 ## Response
 
-<br />
-
-```json json
+```json
 {
   "success": true,
   "external_tenant_id": "<external_tenant_id>",
   "app_id": "<app_id>",
-  "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
+  "tag_url": "https://<app_id>.recurlyengage.com/assets/recurly_engage.js",
   "user_first_name": "John",
   "user_last_name": "Smith",
   "user_email": "jsmith@myemail.com",
@@ -71,53 +73,39 @@ The request should include the following query params:
 }
 ```
 
-<br />
+# Create tenant
 
-# Create Tenant
-
-<br />
-
-This API should be invoked to create a new tenant on the Redfast platform.
-
-<br />
+Create a new tenant in Recurly Engage.
 
 ## Endpoint
 
-<br />
-
 **POST /v1/tenants**
-
-<br />
 
 ## Headers
 
-<br />
-
 * **Content-Type**: `application/json`
-* **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
-  <br />
+* **rf-secret**: Shared secret provided by Recurly Engage
 
 ## Body
 
-<br />
+All fields are required:
 
-The request body should be a JSON including the following properties (all required):
-
-* **company\_name**: Company name
-* **external\_tenant\_id**: Unique Partner Tenant ID
-* **app\_name**: Name of the app/site utilizing Redfast platform
-* **app\_domain**: Top level domain
-* **user\_email**: Email address of initial Admin user
-* **user\_first\_name**: First name of Admin user
-* **user\_last\_name**: Last name of Admin user
-* **partner\_code**: Partner Code assigned by Redfast
-* **api\_key**: API key utilized for integration with partner for the tenant
-* **jwt\_public\_key**: Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. Use newline characters for each line.
-  <br />
+```json
+{
+  "company_name": "My Company",
+  "external_tenant_id": "<external_tenant_id>",
+  "app_name": "My App",
+  "app_domain": "myco.com",
+  "user_email": "jsmith@myemail.com",
+  "user_first_name": "John",
+  "user_last_name": "Smith",
+  "partner_code": "<partner_code>",
+  "api_key": "<integration_api_key>",
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n..."
+}
+```
 
 ## Response
-
-<br />
 
 ```json
 {
@@ -125,55 +113,41 @@ The request body should be a JSON including the following properties (all requir
   "status": "provisioning_started",
   "external_tenant_id": "<external_tenant_id>",
   "app_id": "<app_id>",
-  "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
+  "tag_url": "https://<app_id>.recurlyengage.com/assets/recurly_engage.js",
   "test_mode": false,
   "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n...",
   "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
 }
 ```
 
-<br />
+***
 
-# Update Tenant
+# Update tenant
 
-<br />
-
-This API should be invoked to update an existing tenant on the Redfast platform.
-
-<br />
+Modify an existing tenant’s configuration.
 
 ## Endpoint
 
-<br />
-
 **PATCH /v1/tenants**
-
-<br />
 
 ## Headers
 
-<br />
-
 * **Content-Type**: `application/json`
-* **rf-secret**: Shared secret provided by Redfast (separate secrets for Test and Production)
-  <br />
+* **rf-secret**: Shared secret provided by Recurly Engage
 
 ## Body
 
-<br />
-
-The request body should be a JSON including the following properties:
-
-* **external\_tenant\_id**: Unique Partner Tenant ID
-* **partner\_code**: Partner Code assigned by Redfast
-* **app\_domain**: (optional) Top level domain
-* **api\_key**: (optional) API key utilized for integration with partner for the tenant
-* **jwt\_public\_key**: (optional) Public key utilized for provisioning and authenticating users. Must be an RSA public key in PEM format, between 2048–4096 bits. Only displayed if updated. Use newline characters for each line.
-  <br />
+```json
+{
+  "external_tenant_id": "<external_tenant_id>",
+  "partner_code": "<partner_code>",
+  "app_domain": "myco.com",             // optional
+  "api_key": "<new_integration_api_key>",// optional
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n..." // optional
+}
+```
 
 ## Response
-
-<br />
 
 ```json
 {
@@ -181,18 +155,18 @@ The request body should be a JSON including the following properties:
   "status": "updated",
   "external_tenant_id": "<external_tenant_id>",
   "app_id": "<app_id>",
-  "tag_url": "https://<app_id>.redfastlabs.com/assets/redfast.js",
+  "tag_url": "https://<app_id>.recurlyengage.com/assets/recurly_engage.js",
   "test_mode": false,
   "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n...",
   "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
 }
 ```
 
-<br />
+***
 
-# User provisioning and session token
+## User provisioning and session token
 
-This API should be invoked to create a user session. If a user does not already exist, they will be provisioned first and then a session will be created upon JWT validation.
+Provision or retrieve a user session with a signed JWT. JIT provisions new users.
 
 ## Endpoint
 
@@ -200,28 +174,28 @@ This API should be invoked to create a user session. If a user does not already 
 
 ## Body
 
-The request body should be a JSON including the following properties:
-
-* **jwt\_token**: A jwt token that will be used to verify and create the user session. Below is the payload
-
-<br />
-
 ```json
 {
-  "sub": "<partner_user_id>,                          // Unique partner user ID
-  "external_tenant_id": "<external_tenant_id>",       // Tenant they belong to
-  "app_id": "<app_id>",                               // App they belong to
-  "role": "admin",                                    // "admin" or "member", defaults to "member"
-  "exp": 1712800000,                                  // Expiry 
-  "iat": 1712796400,                                  // Issued at
-  "iss": "<partner_code>"                             // Partner Code
-  "email": "<email>",
-  "first_name": "<first_name>",
-  "last_name": "<last_name>"
+  "jwt_token": "<signed_jwt>"
 }
 ```
 
-<br />
+### JWT Payload Example
+
+```json
+{
+  "sub": "<partner_user_id>",
+  "external_tenant_id": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "role": "admin",           // "admin" or "member"
+  "exp": 1712800000,
+  "iat": 1712796400,
+  "iss": "<partner_code>",
+  "email": "jsmith@myemail.com",
+  "first_name": "John",
+  "last_name": "Smith"
+}
+```
 
 ## Response
 
@@ -234,11 +208,9 @@ The request body should be a JSON including the following properties:
 }
 ```
 
-<br />
+## User redirect
 
-# User redirect
-
-This API should be invoked to redirect a user to pulse.redfast.com.
+Redirect an end user to Pulse with an active session.
 
 ## Endpoint
 
@@ -246,90 +218,20 @@ This API should be invoked to redirect a user to pulse.redfast.com.
 
 ## Query Params
 
-The request should include the following query params:
+* **session\_token**: JWT session token
+* **redirect\_url**: (optional) relative path in Pulse, defaults to `/`
 
-* **redirect\_url**: (optional) Pulse URL to redirect the user to. Only requires the relative path, the domain pulse.redfast.com is optional. If not included will redirect the user to pulse.redfast.com.
-* **session\_token**: A Redfast session token that will be used to redirect the user to a logged in page.
+**Response**: HTTP redirect to `pulse.recurlyengage.com` (or login if invalid token)
 
-<br />
+## Testing and error responses
 
-## Response
+Use Test vs Production `rf-secret` to simulate or perform live provisioning. Standard HTTP codes apply:
 
-Redirects the user to pulse.redfast.com. When the user does not have a valid session it redirects the user to the login page.
+* **200 OK** – Success
+* **401 Unauthorized** – Invalid `rf-secret`
+* **404 Not Found** – Tenant or user not found
+* **409 Conflict** – Tenant already provisioned
+* **422 Unprocessable Entity** – Missing/invalid fields
+* **5xx** – Server error
 
-# Testing
-
-<br />
-
-Authentication utilizes a shared secret (both Test and Production secrets will be provided). When utilizing the Test secret, a valid API response is returned but a new tenant will not be provisioned.
-
-<br />
-
-# Error Responses
-
-<br />
-
-Redfast uses conventional HTTP response codes indicating success or failure of an API request. Codes in the 2xx range indicate success while codes in the 4xx or 5xx ranges indicate an error.
-
-<br />
-
-* 200 OK - Normal response
-* 401 Unauthorized - Shared secret is incorrect
-
-<br />
-
-```json
-{
-  "success": false,
-  "status": "invalid_secret"
-}
-```
-
-<br />
-
-* 404 Not Found - Requested resource was not found
-
-<br />
-
-```json
-{
-  "success": false,
-  "status": "not_found",
-  "message": "resource not found"
-}
-```
-
-<br />
-
-<br />
-
-* 409 Conflict - Tenant has already been provisioned
-
-<br />
-
-```json
-{
-  "success": false,
-  "status": "already_provisioned",
-  "external_tenant_id": "<external_tenant_id>"
-}
-```
-
-<br />
-
-* 422 Unprocessable Entity - Invalid or missing information
-
-<br />
-
-```json
-{
-  "success": false,
-  "status": "missing_or_invalid_info",
-  "message": "partner_code missing"
-  "external_tenant_id": "<external_tenant_id>"
-}
-```
-
-<br />
-
-* 5xx - Something went wrong with the Redfast endpoint (rare)
+Error payloads include `success: false` and `status` fields indicating the failure reason.
