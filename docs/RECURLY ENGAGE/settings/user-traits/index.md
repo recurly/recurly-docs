@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* Company or App Administrator permissions.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * Access to an S3 bucket or CSV export source.
 * For third‑party connector activation, ensure required ID columns are present.
 
