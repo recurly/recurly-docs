@@ -36,7 +36,7 @@ Custom API actions allow you to call external backend endpoints with dynamic use
 
 You may define custom API actions to leverage existing backend endpoints, specifying to send dynamic user data and secure credentials as required.
 
-### Add Credentials
+### Add credentials
 
 Credentials data is stored in a secure, encrypted location that is only accessible to components tasked with performing the action. The most common credentials are API keys or client secrets.
 
@@ -44,7 +44,7 @@ Add a new credential and specify the name and the value.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/faeced9-Screenshot_2024-05-02_at_15.50.02.png" />
 
-### Add Actions
+### Add actions
 
 Define a custom API action—specify the URL, HTTP Method, request headers, query string, and request payload (if necessary).
 
