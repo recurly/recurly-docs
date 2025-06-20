@@ -108,13 +108,13 @@ This feature enables you to designate a public IP address or range that will byp
 
 By specifying the desired IP addresses or range, ensure that transactions originating from those sources are exempted from Recurly's fraud checks.
 
-### Invoice prefixing
+### Order Number Prefix
 
 If you have multiple billing systems consolidating into a single gateway account, you can define an **Order Number Prefix** within Recurly. This allows you to easily identify Recurly transactions in your payment gateway's virtual terminal. It's important to note that this prefix is only used on the backend and will not be displayed on the invoice.
 
 Please be aware that **PayPal and Stripe Payment Gateways do not support invoice prefixing**.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/7dd13ea-image.png" />
+![Order Number Prefix](https://drive.google.com/file/d/1MypjSoH13qtFnX4YExAchLZ_yQ3oDV2f/view?usp=drive_link "Order Number Prefix")
 
 ### Site customizations
 
