@@ -1,6 +1,8 @@
 ---
 title: Google Analytics
-excerpt: ''
+excerpt: >-
+  Configuration guide for integrating Recurly Engage with Google Analytics
+  Measurement Protocol via API actions.
 deprecated: false
 hidden: true
 metadata:
@@ -10,20 +12,53 @@ metadata:
 next:
   description: ''
 ---
-# Google Analytics
+# Overview
 
-API actions can be used to send data to the Google Analytics Measurement Protocol.
+### Required plan
 
-### Create an action
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-Follow the steps to create an API action. This action should be a POST request. The required url is listed here.
+### Prerequisites & limitations
 
-<Image align="center" src="https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png" />
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+* A valid Google Analytics property with Measurement Protocol enabled.
 
-### Specify the payload
+# Definition
 
-Add parameters to the payload. These values can be static or dynamic. Supported parameters are described [here](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters). Required parameters include `v` (protocol version), `tid` (web property ID), and `t` (hit type). Optional parameters include `cid` (client id), `ea` (event action), and `el` (event label).
+The **Google Analytics** integration allows you to send prompt and experience events from Recurly Engage to Google Analytics using API actions configured as POST requests to the Measurement Protocol endpoint.
 
-### Add action to prompt or experience
+# Key benefits
+
+* **Enhanced analytics**: Track prompt interactions alongside other site events in Google Analytics.
+* **Custom reporting**: Leverage dynamic parameters to slice and dice user engagement data.
+* **Seamless setup**: Configure actions within the Recurly Engage console without additional middleware.
+
+# Key details
+
+## Create an action
+
+Follow the steps to create an API action. This action must be a POST request to the Google Analytics Measurement Protocol endpoint: `https://www.google-analytics.com/collect`.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ebf7cc4-Google_Analytics_Custom_Action.png" />
+
+## Specify the payload
+
+Add parameters to the payload—static or dynamic—using Measurement Protocol fields. Required parameters include:
+
+* `v`: protocol version
+* `tid`: web property ID (Tracking ID)
+* `t`: hit type (e.g., `event`)
+
+Optional parameters include:
+
+* `cid`: client ID
+* `ea`: event action
+* `el`: event label
+
+For a full list of supported parameters, see the [Measurement Protocol Parameter Reference](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters).
+
+## Add action to prompt or experience
+
+Once the action is defined, attach it to a prompt or experience:
 
 Follow the steps here to [add the action](actions-1) to a prompt or experience.
