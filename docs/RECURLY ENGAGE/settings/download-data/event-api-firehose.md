@@ -47,11 +47,11 @@ There are two ways to receive usage data. You must provide the following values 
 
 * **Go** to **Settings > User Traits**.
 
-![AWS Settings](https://files.readme.io/bfbf239-Event_Exports_settings.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bfbf239-Event_Exports_settings.png" />
 
 * **Select** “Click here for AWS S3 credentials”.
 
-![AWS Settings](https://files.readme.io/a970314-Event_Exports_settings_1.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a970314-Event_Exports_settings_1.png" />
 
 * **Copy** the **AWS Bucket**, **Access Key**, and **Secret Key**, then **navigate** to the `exports` folder. All filenames start with the `usages` prefix. Pull this data on demand.
 
