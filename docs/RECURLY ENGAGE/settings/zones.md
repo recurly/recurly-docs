@@ -26,7 +26,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* None beyond base Recurly Engage access.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 
 # Definition
 
