@@ -48,8 +48,6 @@ You may need to work with your developers to determine the best method to identi
 
 Reach out to Recurly Engage Support if you need assistance.
 
-***
-
 ## FetchUserID (required)
 
 This function is invoked to determine a user’s authenticated User ID when the Recurly Engage JS tag is loaded.
