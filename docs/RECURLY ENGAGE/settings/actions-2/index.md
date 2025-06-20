@@ -39,25 +39,23 @@ An **integration** (or connector) links Recurly Engage prompts and user interact
 
 ## Configure External Integrations
 
-1. **Go to** Settings → Actions
+1. **Go to** Settings → Actions.
 
-![](https://files.readme.io/3f60efa-image.png)
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3f60efa-image.png" />
 
-1. **Select** a connector (e.g. Zuora)
+2. **Select** a connector (e.g. Zuora).
 
-![](https://files.readme.io/2bae331-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/2bae331-image.png" />
 
-1. **Fill in** the required credentials
+3. **Fill in** the required credentials.
 
-![](https://files.readme.io/5f1e9d9-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/5f1e9d9-image.png" />
 
-1. **Toggle** to **Active** and **Save changes**
+4. **Toggle** to **Active** and **Save changes**
 
-![](https://files.readme.io/dbee0b4-image.png)
+<Image align="center" width="80% " src="https://files.readme.io/dbee0b4-image.png" />
 
-***
-
-## Connector Capabilities
+## Connector capabilities
 
 ### SendGrid
 
@@ -131,5 +129,6 @@ An **integration** (or connector) links Recurly Engage prompts and user interact
 
 ***
 
-**Need another connector?**\
+**Need another connector?**
+
 Contact your Recurly Engage Customer Success team to request a custom integration or new connector.
