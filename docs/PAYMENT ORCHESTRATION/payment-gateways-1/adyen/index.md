@@ -421,6 +421,11 @@ If you are using Protect Premium or Revenue Protect with Adyen, we support sendi
   * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
   * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
 
+Some limitations include:
+
+* Review Rules are not supported at this time for 'Protect' (new risk engine at Adyen) when using Purchase transactions. You may use 'Review' if you are already handling the capture through your system by using Authorize and Capture behavior.
+  * Options generally include: Allow, Block, Review, and Check for 3DS. Please ensure you are using only Allow, Block, or Check for 3DS if sending purchases instead of authorizations.
+
 ## How asynchronous payments work
 
 * Upon a successful purchase, the subscription is marked "active", but the invoice and transaction remain "processing" until Adyen confirms payment approval.
