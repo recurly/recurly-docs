@@ -23,7 +23,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* Company or App Administrator permissions to configure tracking.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * For IP‑based metrics (fraud score, location), IP‑processing must be enabled in your agreement.
 
 # Definition
