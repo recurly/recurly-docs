@@ -40,11 +40,11 @@ Use the **Settings > Users** page to invite new users and update existing user p
 
 ## Permission levels
 
-### Company Admin
+### Company admin
 
 Company Admins can create, modify, and delete any app within the company, manage all settings, and invite new users across applications.
 
-### App Admin
+### App admin
 
 App Admins have full control over a specific app’s settings, prompts, segments, and guides but cannot create new apps.
 
@@ -64,18 +64,12 @@ To invite a new user:
 
 * Go to **Settings > Users > Add User**
 
-<br />
-
 <Image align="center" className="border" border={true} src="https://files.readme.io/8080696-image.png" />
 
 * Enter the user’s **Name**, **Email**, and select a **Permission Level**. Click **Save**.
 
-<br />
-
 <Image align="center" className="border" border={true} src="https://files.readme.io/9bca05b-image.png" />
 
 * The invitee will receive an email to set up their account and access Pulse.
-
-<br />
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/9f75c54-image.png" />
