@@ -1,6 +1,8 @@
 ---
 title: User ID Matching
-excerpt: ''
+excerpt: >-
+  Guide for configuring how Recurly Engage matches authenticated users via
+  unique browser-stored identifiers.
 deprecated: false
 hidden: true
 metadata:
@@ -10,113 +12,132 @@ metadata:
 next:
   description: ''
 ---
-When authenticated users visit your site, a unique identifier (User ID) is typically stored in their browsers. Redfast needs to access this to differentiate between visitors for customizing actions, and for downstream reporting. 
+# Overview
 
-You may need to work with your developers to determine the best method to identify users. The most common methods to retrieve a User ID are from within:
+Recurly Engage requires a consistent **User ID** to differentiate authenticated visitors, personalize prompts, and attribute downstream reporting. This page explains how to configure User ID matching.
 
-* localStorage item 
-* sessionStorage item
-* browser cookie
-* accessing an item stored in the browser's dataLayer
+### Required plan
 
-Please specify the storage location and key in the User ID Matching configuration.
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* Company or App Administrator permissions in Recurly Engage.
+* Developer assistance may be required for custom storage or decoding logic.
+
+# Definition
+
+**User ID Matching** tells the Recurly Engage client how to retrieve and normalize a unique user identifier from browser storage or global objects.
+
+# Key benefits
+
+* **Accurate personalization**: Ensures prompts target the correct authenticated user.
+* **Reliable reporting**: Associates prompt interactions with user profiles for analytics.
+* **Flexible storage**: Supports cookies, localStorage, sessionStorage, dataLayer, or custom JS logic.
+
+# Key details
+
+***
+
+When authenticated users visit your site, their unique **User ID** is stored in the browser. Configure Recurly Engage to read this value from one of the following sources:
+
+* **localStorage** item
+* **sessionStorage** item
+* **Cookie**
+* **dataLayer** variable
+
+Specify the storage location and key in the **User ID Matching** form:
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/997b754b9eca52a38e829bfb135e3a944f21ae3abdcb7736520990b6561e118c-image.png" />
 
-If the resulting value is encoded, please specify how it should be decoded. 
+If the value is encoded (e.g. Base64), select the appropriate decode option:
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/a10af0c7a355927ec26e1db6537ebf1727b49ac6d90a2486d9fb6a5b52d4213a-image.png" />
 
-Finally, if the resulting value is a JSON object, specify a path to access the desired property.
+If the decoded value is a JSON object, provide a property path to extract the final ID:
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/40644c7db538ade718d1542656d22f4a71f2330860e791905b935daa6ea1c894-image.png" />
 
-Once the form is filled in, scroll down to the bottom and hit the Save button.
+Once configured, scroll to the bottom and click **Save**:
 
-![](https://files.readme.io/935237ece01241309498a59cc33773274673fd51a06cf21dee221983a34202ce-image.png)
+<Image align="center" src="https://files.readme.io/935237ece01241309498a59cc33773274673fd51a06cf21dee221983a34202ce-image.png" />
 
-Please reach out to Redfast Support if you need assistance.
+For assistance, please contact Recurly Engage Support.
 
-# fetchUserId Examples
+***
 
-While we provide a UI for User ID matching, sometimes you will need to write your own JS function for more complex cases. In this case, select the 'Custom JS Snippet' option in the form, and input the function code under Settings -> Custom JS Snippet. 
+# `fetchUserId` examples
 
-Below are some fetchUserId examples to help you configure this function.
+For complex cases, choose **Custom JS Snippet** and implement a `fetchUserId` function in **Settings → Custom JS Snippet**. Below are examples using built-in `RFHelpers`:
 
-For your convenience, we also include a number of helper functions under `RFHelpers` that you can use in the function to solve common use cases. You can view the full source code and docs of the available `RFHelpers` functions [here](https://gist.github.com/peter-redfast/24555da8e489a0278bda2c29f8092f3c).
+You can view all helper functions here: [RFHelpers on GitHub](https://gist.github.com/peter-redfast/24555da8e489a0278bda2c29f8092f3c)
 
-## Basic Example
+### Basic example
 
-This is the most basic and common example when you are using [Twilio Segment](https://segment.com/):
+Retrieve a JSON-wrapped ID from localStorage (common with Twilio Segment):
 
-```jsx
+```javascript
 static fetchUserId() {
-  // Get value from localstorage
+  // Get value from localStorage
   const value = window.localStorage.getItem('ajs_user_id'); // '"user123"'
  
-  // Parses JSON if it is parseable 
+  // Parse JSON if possible, otherwise return raw value
   return RFHelpers.tryParseJSON(value); // 'user123'
 }
 ```
 
-First, the function gets the stored value of `ajs_user_id` from localStorage (`"user123"`). This value is wrapped in quotations, so to return the actual string, we have to use `JSON.parse()`. 
+## Cookies and decoding
 
-We then use `RFHelpers.tryParseJSON()` — it does the same as `JSON.parse()` if the value is a JSON string, otherwise, it simply returns the original value instead of an error.
+Read a Base64-encoded ID from a cookie and decode:
 
-## Cookies and Decoding
-
-In a slightly more complex example, we have a Base64-encoded value stored in a cookie:
-
-```jsx
+```javascript
 static fetchUserId() {
-  // Get value from cookie
+  // Get cookie value
   const value = RFHelpers.getCookie('encoded_user'); // 'dXNlcjEyMw=='
  
-  // Decode the value using Base64
+  // Decode Base64
   return RFHelpers.decodeBase64(value); // 'user123'
 }
 ```
 
-The document cookie value here might look like `'foo=bar; encoded_user=dXNlcjEyMw==; something=else;'`. As above, instead of writing your own code, we can utilise `RFHelpers.getCookie` to get the cookie value, and then `RFHelpers.decodeBase64` to decode it into a human-recognisable user value.
+## JavaScript object digging
 
-## Javascript Object Digging
+Decode a JWT from a window variable and extract a nested `user.id`:
 
-Finally, we have a value stored in global window variable, but it is encoded as a JWT token, and the user ID is deeply nested in a Javascript object:
-
-```jsx
+```javascript
 static fetchUserId() {
-  // Get the value stored in the global window variable
-  const token = window['_JWT_USER_VAR']; 
-  // 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNTE2MjM5MDIyLCJhdXRoIjoie1widXNlclwiOntcImlkXCI6XCJ1c2VyMTIzXCJ9fSJ9.sucsd6A2vgK6sIhKPqDqHBZ4uUhr5gsI3-C1RANaiQo'
+  // Get JWT token
+  const token = window['_JWT_USER_VAR'];
  
-  // Decode the value using JWT
-  const obj = RFHelpers.decodeJWT(value);
-  // {sub: '1234567890', iat: 1516239022, auth: '{"user":{"id":"user123"}}'}
+  // Decode JWT payload
+  const obj = RFHelpers.decodeJWT(token);
+  // e.g. { auth: '{"user":{"id":"user123"}}', ... }
   
-  // Get the deeply-nested value
+  // Extract nested ID
   return RFHelpers.dig(obj, 'auth.user.id'); // 'user123'
 }
 ```
 
-First, the JWT token is retrieved simply from the global window variable. Then, the token is decoded using `RFHelpers.decodeJWT`. This also automatically parses the JSON string into a Javascript object. Finally, to retrieve the actual user value, we use `RFHelpers.dig` to access the deeply-nested value. This helper function works on both Arrays as well as Objects.
+## Multiple fallbacks
 
-## Multiple Fallbacks
+Combine methods to handle various sources:
 
-Of course, you can combine these to check for multiple possible values or to utilise conditionals:
-
-```jsx
+```javascript
 static fetchUserId() {
-  if (window.location.pathname.match('/smart-console-apps/') {
+  // Path-based logic
+  if (window.location.pathname.startsWith('/app/')) {
     return window.localStorage.getItem('USERID');
   }
 
-  const cookieValue = RFHelpers.getCookie('user');
-  if (cookieValue) return cookieValue;
+  // Try cookie
+  const cookie = RFHelpers.getCookie('user');
+  if (cookie) return cookie;
   
-  const localValue = window.localStorage.getItem('auth');
-  if (localValue) {
-    const hash = RFHelpers.decodeJWT(localValue);  
-    return RFHelpers.dig(hash, 'auth.id');
-   }
+  // Fall back to JWT in localStorage
+  const local = window.localStorage.getItem('auth_token');
+  if (local) {
+    const decoded = RFHelpers.decodeJWT(local);
+    return RFHelpers.dig(decoded, 'auth.id');
+  }
 }
 ```
