@@ -1,6 +1,8 @@
 ---
 title: Push
-excerpt: Configuration information for push providers and syncing endpoint information
+excerpt: >-
+  How to configure push notification endpoints and credentials for Recurly
+  Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,78 +12,92 @@ metadata:
 next:
   description: ''
 ---
-## Add Endpoint Addresses
+# Overview
 
-Share a CSV with Redfast that includes the following columns: 
+### Required plan
 
-1. `Id`: the id of the device (aka endpoint) 
-2. `ChannelType`: the push channel of this endpoint. Allowed values: `FCM`, `ADM`, `APNS`
-3. `Address`: The device token 
-4. `User.UserId`: the id of the user. This should be the same id that Redfast uses
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-This CSV can be used as a one time to do an initial load of endpoint information. To keep this information updated, you may: 
+### Prerequisites & limitations
 
-1. Upload an updated CSV periodically into your S3 bucket from Redfast OR 
-2. Call the [Device Registration](ref:device-registration) API with the device token from your client application 
+* None beyond base Recurly Engage access.
 
-Registration API details: 
+# Definition
 
-**POST** \<base\_url>/ingest/update\_push\_endpoint 
+Push prompts use device-specific endpoints to deliver notifications to users outside the app or website.
 
-Body: 
+# Key benefits
 
-```Text json
-{
-   "token": "4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c",
-   "channel_type": "GCM",
-   "endpoint_id": "eqmj8wpxszeqy/b3vch04sn41yw"
-}
+* **Reach users off-app**: Engage users even when they aren’t actively using your site or app.
+* **Highly targeted**: Deliver notifications to specific user segments based on traits and behaviors.
+* **Flexible delivery**: Support FCM, ADM, and APNs channels from a single interface.
+
+***
+
+## Add endpoint addresses
+
+First, upload or sync your device endpoint information to Recurly Engage via CSV or API:
+
+1. Prepare a CSV with columns:
+
+   1. `Id`: The device endpoint identifier.
+   2. `ChannelType`: The push service (`FCM`, `ADM`, or `APNS`).
+   3. `Address`: The device token.
+   4. `User.UserId`: The Recurly Engage user ID.
+
+   This can be a one-time initial load. To keep endpoints up to date:
+
+   1. Periodically upload updated CSVs to the S3 bucket provided by Recurly Engage.
+   2. Or call the Device Registration API from your application.
+
+**Registration API**
 
 ```
+POST <base_url>/ingest/update_push_endpoint
+Headers:
+  Rf-App: <app_slug>
+  User-Id: <user_id>
+  Content-Type: application/json
+Body:
+{
+  "token": "4d5e6f1a2b3c4d5e6f7g8h9i0j1a2b3c",
+  "channel_type": "GCM",
+  "endpoint_id": "eqmj8wpxszeqy/b3vch04sn41yw"
+}
+```
 
-Headers: 
+### Amazon Device Messaging (ADM)
 
-Rf-App: \<app\_slug> 
-
-User-Id: \<user\_id> 
-
-Content-Type: application/json
-
-### Amazon Device Messaging
-
-Required information: `ADM Client ID`, `ADM Client Secret` 
-
-Follow the instructions in this [document](https://developer.amazon.com/docs/adm/obtain-credentials.html) on Amazon's website
-
-<br />
+Required information: `ADM Client ID`, `ADM Client Secret`.\
+Follow Amazon’s credential guide: [Obtain ADM Credentials](https://developer.amazon.com/docs/adm/obtain-credentials.html).
 
 ### Apple Push Notification Service (APNs)
 
-Required information: `Apple Push Notifications Service Bundle ID`, `Apple Push Notifications Service Team ID`, `Apple Push Notifications Service Token Key`, `Apple Push Notifications Service Token Key ID`
+**Required information:**
 
-Steps: 
+* `Apple Push Notifications Service Bundle ID`
+* `Apple Push Notifications Service Team ID`
+* `Apple Push Notifications Service Token Key`
+* `Apple Push Notifications Service Token Key ID`
 
-1. Log in to [https://developer.apple.com/account](https://developer.apple.com/account) 
-2. Retrieve the bundle id by navigating to Certificates, Ids & Profiles -> Identifiers. Click on the desired app and view the bundle id.
-3. Retrieve the team id by navigating to Membership Details 
-4. Create (or retrieve) the token key and token key id by navigating to Certificates, Ids & Profiles -> Keys. Create a new key with APNs authorized. View the key name and key id
+**Steps:**
 
-<br />
+1. Log in to [Apple Developer](https://developer.apple.com/account).
+2. Under Certificates, IDs & Profiles → Identifiers, select your app to view the Bundle ID.
+3. Under Membership Details, note your Team ID.
+4. Under Certificates, IDs & Profiles → Keys, create or retrieve an APNs key.
 
-### Google Firebase Cloud Messaging (FCM)
+### Firebase Cloud Messaging (FCM)
 
-Required information: `FCM service json`
+Required information: `FCM service JSON` key.
 
 Steps:
 
-1. Select your project from [https://console.firebase.google.com/](https://console.firebase.google.com/), and click the gear icon on the top of the sidebar.
-2. Navigate to Project Settings -> Service Account tab 
-3. Generate New Private Key
-4. Download the JSON file 
+1. In [Firebase Console](https://console.firebase.google.com/), go to Project Settings → Service Accounts.
+2. Click **Generate New Private Key** and download the JSON file.
+3. Upload this JSON in the Recurly Engage console under Settings → Integrations → Push.
 
-Sample payload: 
-
-```Text json
+```json
 {
   "type": "service_account",
   "project_id": "PROJECT_ID",
@@ -94,9 +110,12 @@ Sample payload:
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "CLIENT_X509_CERT_URL"
 }
-
 ```
 
-### Upload file to Redfast
+### Upload file to Recurly Engage
 
-Uploaded the saved JSON file.
+Once you have your FCM JSON file or ADM/APNs credentials, upload them in the Recurly Engage console:
+
+1. Go to **Settings → Integrations → Push**.
+2. Select the channel and upload the corresponding credential file or enter key values.
+3. Click **Save** to activate push messaging for your application.
