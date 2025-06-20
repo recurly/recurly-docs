@@ -10,44 +10,81 @@ metadata:
 next:
   description: ''
 ---
-# Export Looker CSV data to Redfast AWS S3 bucket
+#### Metadata description
 
-Rather than manually creating a CSV to import [traits](user-traits) to Redfast you can export it from Looker instead. This guide will help you create a daily export of your data.
+# Overview
 
-1. Go to Settings > Custom Traits
+The Looker integration lets you schedule daily exports of CSV user trait data directly from Looker into your Recurly Engage AWS S3 bucket for seamless ingestion.
 
-   <Image align="center" width="700px" src="https://files.readme.io/c23d4a0-settings-integrations.png" />
+### Required plan
 
-2. Select "Click here for AWS S3 credentials"
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-   <Image align="center" width="700px" src="https://files.readme.io/3ab86ef-settings-aws-modal.png" />
+### Prerequisites & limitations
 
-3. Check the show credentials box to view your credentials. You will need to use the AWS Bucket, Access Key and Secret Key to login and securely upload via AWS. Keep this information handy, you will need it to upload the CSV.
+* A Looker account with access to the dashboard containing your user traits.
+* AWS S3 credentials retrieved from Recurly Engage (pulse) for secure uploads.
 
-   <Image align="center" width="700px" src="https://files.readme.io/7b8d41a-aws-settings-1.png" />
+# Definition
 
-4. In another tab login to your [Looker account](https://looker.com/login)
+Configures a scheduled Looker data export to push CSV files of user traits into the Recurly Engage S3 bucket.
 
-   <Image align="center" width="700px" src="https://files.readme.io/a91f5e4-looker-1.png" />
+# Key benefits
 
-5. Select your folder with your user data
+* **Automated workflows**: Eliminate manual CSV downloads by scheduling daily Looker exports directly into S3.
+* **Consistent data**: Ensure your trait imports always use the latest data without human intervention.
+* **Secure transfer**: Credentials are managed by Recurly Engage and only grant access to the designated S3 bucket.
 
-   <Image align="center" className="border" width="700px" border={true} src="https://files.readme.io/2d62fee-looker-2.png" />
+# Key details
 
-6. Select an existing look from your list of files
+Below is a step-by-step guide to configure your Looker schedules and connect them to your Recurly Engage S3 bucket.
 
-   <Image align="center" className="border" width="700px" border={true} src="https://files.readme.io/7d73497-looker-3.png" />
+1. **Retrieve S3 credentials in Pulse**
 
-7. Make sure the first column of your data contains your customer IDs, if it does not please edit your Look and move it to the first column
+   * Go to **Settings > Custom Traits** in your Recurly Engage console.
 
-   <Image align="center" className="border" width="700px" border={true} src="https://files.readme.io/844acc0-looker-4a.png" />
+     <Image align="center" width="700px" src="https://files.readme.io/c23d4a0-settings-integrations.png" />
 
-8. Select "Create Schedules"
+   * Click **Click here for AWS S3 credentials** and check **Show Credentials** to reveal your Bucket name, Access Key, and Secret Key.
 
-   <Image align="center" className="border" width="700px" border={true} src="https://files.readme.io/90c9d44-looker-4.png" />
+     <Image align="center" width="700px" src="https://files.readme.io/3ab86ef-settings-aws-modal.png" />
 
-9. Select "Amazon S3" and copy over your credentials from Pulse and hit save. If you want you can also update the schedule from the default 6am at this time
+     <Image align="center" width="700px" src="https://files.readme.io/7b8d41a-aws-settings-1.png" />
 
-   <Image align="center" width="700px" src="https://files.readme.io/d2a0178-looker-5.png" />
+2. **Log in to Looker**
 
-10. Redfast will now receive your user traits on a daily basis.
+   * Open a new browser tab and navigate to [Looker](https://looker.com/login).
+
+     <Image align="center" width="700px" src="https://files.readme.io/a91f5e4-looker-1.png" />
+
+3. **Locate your user data Look**
+
+   * Select the folder containing your user trait data.
+
+     <Image align="center" width="700px" src="https://files.readme.io/2d62fee-looker-2.png" />
+
+   * Choose an existing Look that outputs all required trait columns.
+
+     <Image align="center" width="700px" src="https://files.readme.io/7d73497-looker-3.png" />
+
+4. **Ensure correct column ordering**
+
+   * Make sure the first column is your customer ID (e.g., `user_id`). If not, edit the Look to reposition it.
+
+     <Image align="center" width="700px" src="https://files.readme.io/844acc0-looker-4a.png" />
+
+5. **Create a schedule**
+
+   * Click **Create Schedules** on the Look.
+
+     <Image align="center" width="700px" src="https://files.readme.io/90c9d44-looker-4.png" />
+
+   * In the schedule modal, choose **Amazon S3**, then paste your Recurly Engage Bucket, Access Key, and Secret Key into the fields. Adjust the delivery time if needed.
+
+     <Image align="center" width="700px" src="https://files.readme.io/d2a0178-looker-5.png" />
+
+6. **Save and verify**
+
+   * Save the schedule. Looker will now push a CSV of your user traits to the S3 bucket each day at the scheduled time.
+
+Once set up, your Recurly Engage instance will automatically ingest the daily CSV upload within a few hours, keeping your user traits up to date for segmentation and targeting purposes.
