@@ -1,214 +1,237 @@
 ---
 title: Partner APIs
+excerpt: >-
+  How to provision and manage tenants and users programmatically via the Recurly
+  Engage Partner Provisioning API.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-# Introduction
+# Overview
 
-The Partner APIs allows for the creation and modification of Redfast prompts via server-side integration with partners.
+### Required plan
 
-## Endpoint Info
+This feature is available to all customers on any Recurly Engage subscription plan.
 
-**Base URL**: `https://<subdomain>.redfast.com`
+### Prerequisites & limitations
 
-<br />
+* Partner code and shared secrets provided by Recurly Engage Partnerships.
+* RSA key pair for JWT user provisioning.
 
-# Get Prompts by Tag Name
+# Definition
 
-<br />
+The **Partner Provisioning API** enables partners to create, retrieve, update, and manage Recurly Engage tenants and perform just-in-time (JIT) user provisioning with seamless single sign-on.
 
-This API should be invoked to retrieve a list of prompts based on tag name.
+# Key benefits
 
-<br />
+* **Automate tenant setup**: Create and configure new Recurly Engage tenants via API, eliminating manual onboarding steps.
+* **Just-in-time user provisioning**: Provision users and obtain session tokens on demand, enabling embedded partner portals.
+* **Secure integration**: Authenticate API calls with partner-specific shared secrets and RSA-signed JWTs.
+
+# Key details
+
+## Introduction
+
+The Provisioning API allows for the creation and modification of a Recurly Engage tenant via server-side integration with partners. It also supports just-in-time (JIT) user provisioning and redirects users into `pulse.recurlyengage.com` with a logged-in session. Please work with your Partnership Manager if you require access to this API.
+
+## Endpoint info
+
+**Base URL**: `https://<subdomain>.recurlyengage.com`
+
+# Get tenant
+
+Retrieve an existing tenant by its external partner ID.
 
 ## Endpoint
 
-**GET /v1/apps/\<app\_id>/paths?tag\_name=involuntary\_churn**
-
-<br />
+**GET /v1/tenants/\<external\_tenant\_id>**
 
 ## Headers
 
 * **Content-Type**: `application/json`
-* **Authorization**: Bearer \<jwt\_token>
+* **rf-secret**: Shared secret provided by Recurly Engage (test and production secrets differ)
 
-## Query Params
+## Query params
 
-The request should include the following query params:
-
-* **tag\_name**: (optional) Get prompts by tag\_name
-  <br />
+* **partner\_code**: Partner Code assigned by Recurly Engage
 
 ## Response
 
-<br />
-
-```json json
-[{
-  "id": "c6e948dd-06ec-4d10-acc9-a6b4ba2823ff",
-  "name": "Sample Prompt",
-  "description": "This is an example prompt",
-  "start_date": "2025-02-18T00:00:00.000Z",
-  "end_date": "2026-02-18T23:59:59.000Z",
-  "is_enabled": false,
-  "is_expired": false,
-  "actions": {
-    "rf_retention_title": "Movies without limits",
-    "rf_retention_message": "Download New Episodes. Brand new full length episodes you can watch while offline. Free for 1 month.",
-    "rf_retention_button1_text": "Accept",
-    "rf_retention_button2_text": "Maybe Later",
-    "rf_retention_button3_text": "No thanks",
-    "rf_settings_bg_image": "https://assets.redfastlabs.com/videos/cover.jpg",
-    "rf_settings_mobile_bg_image": "https://assets.redfastlabs.com/videos/mweb_video_bg.jpg",
-    "rf_mobile_title": "Movies without limits",
-    "rf_mobile_message": "Download New Episodes. Brand new full length episodes you can watch while offline. Free for 1 month.",
-  }
-}]
+```json
+{
+  "success": true,
+  "external_tenant_id": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "tag_url": "https://<app_id>.recurlyengage.com/assets/recurly_engage.js",
+  "user_first_name": "John",
+  "user_last_name": "Smith",
+  "user_email": "jsmith@myemail.com",
+  "app_name": "My App",
+  "company_name": "My Company",
+  "app_domain": "myco.com",
+  "test_mode": false,
+  "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
+}
 ```
 
-# Update Prompt
+***
 
-This API should be invoked to update an existing prompt. Omitted attributes will be ignored.
+## Create tenant
+
+Create a new tenant in Recurly Engage.
 
 ## Endpoint
 
-**PUT /v1/apps/\<app\_id>/paths/\<path\_id>**
+**POST /v1/tenants**
 
 ## Headers
 
 * **Content-Type**: `application/json`
-* **Authorization**: Bearer \<jwt\_token>
-
-<br />
+* **rf-secret**: Shared secret provided by Recurly Engage
 
 ## Body
 
-The request body should be a JSON including the following properties. All fields are optional except for actions:
+All fields are required:
 
-* **id**: (required) Prompt id
-* **name**: Prompt name
-* **description**: Prompt description
-* **start\_date**: Start date
-* **end\_date**: Start date
-* **is\_enabled**: Enable prompt
-* **actions**: Prompt attributes. All attributes are strings.
-
-## Response
-
-```json json
+```json
 {
-  "id": "c6e948dd-06ec-4d10-acc9-a6b4ba2823ff",
-  "name": "Sample Prompt",
-  "description": "This is an example prompt",
-  "start_date": "2025-02-18T00:00:00.000Z",
-  "end_date": "2026-02-18T23:59:59.000Z",
-  "is_enabled": false,
-  "is_expired": false,
-  "actions": {
-    "rf_retention_title": "Movies without limits",
-    "rf_retention_message": "Download New Episodes. Brand new full length episodes you can watch while offline. Free for 1 month.",
-    "rf_retention_button1_text": "Accept",
-    "rf_retention_button2_text": "Maybe Later",
-    "rf_retention_button3_text": "No thanks",
-    "rf_settings_bg_image": "https://assets.redfastlabs.com/videos/cover.jpg",
-    "rf_settings_mobile_bg_image": "https://assets.redfastlabs.com/videos/mweb_video_bg.jpg",
-    "rf_mobile_title": "Movies without limits",
-    "rf_mobile_message": "Download New Episodes. Brand new full length episodes you can watch while offline. Free for 1 month.",
-  }
+  "company_name": "My Company",
+  "external_tenant_id": "<external_tenant_id>",
+  "app_name": "My App",
+  "app_domain": "myco.com",
+  "user_email": "jsmith@myemail.com",
+  "user_first_name": "John",
+  "user_last_name": "Smith",
+  "partner_code": "<partner_code>",
+  "api_key": "<integration_api_key>",
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n..."
 }
 ```
 
-<br />
+## Response
 
-# GenAI Generator
+```json
+{
+  "success": true,
+  "status": "provisioning_started",
+  "external_tenant_id": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "tag_url": "https://<app_id>.recurlyengage.com/assets/recurly_engage.js",
+  "test_mode": false,
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n...",
+  "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
+}
+```
 
-This API should be invoked to generate prompt titles and descriptions.
+## Update tenant
 
-<br />
+Modify an existing tenant’s configuration.
 
 ## Endpoint
 
-**POST /v1/apps/\<app\_id>/ai/inference**
+**PATCH /v1/tenants**
 
 ## Headers
 
 * **Content-Type**: `application/json`
-* **Authorization**: Bearer \<jwt\_token>
+* **rf-secret**: Shared secret provided by Recurly Engage
 
 ## Body
 
-The request body should be a JSON including the following properties. All fields are optional except for type:
-
-* **session\_id**: Prompt session ID to persist chat.
-* **type**: title, description, accept\_button, cancel\_button.
-* **custom\_content**: Additional context for the AI agent. If session\_id is set previously submitted content will be kept as part of the overall context.
+```json
+{
+  "external_tenant_id": "<external_tenant_id>",
+  "partner_code": "<partner_code>",
+  "app_domain": "myco.com",             // optional
+  "api_key": "<new_integration_api_key>",// optional
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n..." // optional
+}
+```
 
 ## Response
 
-```
-{ result: "Your credit card has expired!" }
-```
-
-# Testing
-
-<br />
-
-Authentication utilizes a shared secret (both Test and Production secrets will be provided). When utilizing the Test secret, a valid API response is returned but a new tenant will not be provisioned.
-
-<br />
-
-# Error Responses
-
-<br />
-
-Redfast uses conventional HTTP response codes indicating success or failure of an API request. Codes in the 2xx range indicate success while codes in the 4xx or 5xx ranges indicate an error.
-
-<br />
-
-* 200 OK - Normal response
-* 401 Unauthorized - Shared secret is incorrect
-
-<br />
-
-```
+```json
 {
-  "success": false,
-  "status": "invalid_token"
+  "success": true,
+  "status": "updated",
+  "external_tenant_id": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "tag_url": "https://<app_id>.recurlyengage.com/assets/recurly_engage.js",
+  "test_mode": false,
+  "jwt_public_key": "-----BEGIN PUBLIC KEY-----\n...",
+  "jwt_public_key_updated_at": "2025-02-18T17:02:26.000Z"
 }
 ```
 
-<br />
+## User provisioning and session token
 
-* 404 Not Found - Requested resource was not found
+Provision or retrieve a user session with a signed JWT. JIT provisions new users.
 
-<br />
+## Endpoint
 
-```
+**POST /v1/jwt\_session**
+
+## Body
+
+```json
 {
-  "success": false,
-  "status": "not_found",
-  "message": "resource not found"
+  "jwt_token": "<signed_jwt>"
 }
 ```
 
-<br />
+### JWT Payload Example
 
-<br />
-
-* 422 Unprocessable Entity - Invalid or missing information
-
-<br />
-
-```
+```json
 {
-  "success": false,
-  "status": "missing_or_invalid_info",
-  "message": "id missing"
+  "sub": "<partner_user_id>",
+  "external_tenant_id": "<external_tenant_id>",
+  "app_id": "<app_id>",
+  "role": "admin",           // "admin" or "member"
+  "exp": 1712800000,
+  "iat": 1712796400,
+  "iss": "<partner_code>",
+  "email": "jsmith@myemail.com",
+  "first_name": "John",
+  "last_name": "Smith"
 }
 ```
 
-<br />
+## Response
 
-* 5xx - Something went wrong with the Redfast endpoint (rare)
+```json
+{
+  "success": true,
+  "external_tenant_id": "<external_tenant_id>",
+  "session_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "session_token_expires_at": "2025-02-18T17:02:26.000Z"
+}
+```
+
+## User redirect
+
+Redirect an end user to Pulse with an active session.
+
+## Endpoint
+
+**GET /v1/session/redirect**
+
+## Query params
+
+* **session\_token**: JWT session token
+* **redirect\_url**: (optional) relative path in Pulse, defaults to `/`
+
+**Response**: HTTP redirect to `pulse.recurlyengage.com` (or login if invalid token)
+
+## Testing and error responses
+
+Use Test vs Production `rf-secret` to simulate or perform live provisioning. Standard HTTP codes apply:
+
+* **200 OK** – Success
+* **401 Unauthorized** – Invalid `rf-secret`
+* **404 Not Found** – Tenant or user not found
+* **409 Conflict** – Tenant already provisioned
+* **422 Unprocessable Entity** – Missing/invalid fields
+* **5xx** – Server error
+
+Error payloads include `success: false` and `status` fields indicating the failure reason.
