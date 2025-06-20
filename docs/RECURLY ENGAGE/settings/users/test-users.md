@@ -1,6 +1,8 @@
 ---
 title: Test Users
-excerpt: ''
+excerpt: >-
+  Configuration guide for the Test Users feature, which allows whitelisted users
+  to preview active prompts in a production environment.
 deprecated: false
 hidden: true
 metadata:
@@ -10,46 +12,61 @@ metadata:
 next:
   description: ''
 ---
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+
+# Definition
+
+The **Test Users** segment is an automatically provisioned group that enables you to restrict prompt visibility to a curated list of user IDs for QA and preview purposes.
+
+# Key benefits
+
+* **Safe testing environment**: Preview prompts in production without impacting all users.
+* **Rapid iteration**: Validate creative, triggers, and actions with a controlled audience.
+* **Granular control**: Whitelist or remove specific test accounts on demand.
+
+# Key details
+
 ## Setup Test Users
 
-Redfast automatically creates a Test Users segment when your app is created. This allows you to test a prompt in your production environment in a fully published state but only visible to a small group of users.
+Recurly Engage automatically creates a **Test Users** segment for each app upon creation. To configure which users belong to this segment:
 
-You may whitelist specific user IDs to be part of the "Test Users" segment. This allows you to test various prompts that are seen only by users within this group. 
+* **Go** to **Settings > Users > Test Users**.
 
-To add a test users: 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9c4e603-Screenshot_2024-05-22_at_15.20.44.png" />
 
-* [ ] Go to Settings > Users > Test Users
+* **Enter** the **User ID** of a test account. User IDs can be long alphanumeric or GUID strings—ensure you copy the exact value from your source system.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/9c4e603-Screenshot_2024-05-22_at_15.20.44.png" />
+* Click **Add**.
 
-* [ ] Designate a test user. Enter the User ID of a test account. User IDs can sometimes be a long alpha-numeric or hex string so make sure you copy the user id correctly from your source reference before entering it here.
-* [ ] Hit 'Add'
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/85a7cff-Screenshot_2024-05-22_at_15.22.28.png" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/85a7cff-Screenshot_2024-05-22_at_15.22.28.png" />
+Once added, this user will see all active prompts targeted to **Test Users** when they log in.
 
-Once a test user is added, you can log in to your site/app with this user's credentials, and you will be eligible to see all active prompts targeted at the Test Users segment.
+## Preview via Live tool
 
-You can also preview prompts targeted at Test Users using our Live tool. To test using the Live tool:
+You can also simulate a Test User using the Live Preview feature:
 
-* [ ] Click the Live Preview button. This will open your site and emulate your selected user.
+* Click the **Live Preview** button in the console. This opens your site and impersonates the selected Test User.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/2714f17-Screenshot_2024-05-22_at_15.23.56.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2714f17-Screenshot_2024-05-22_at_15.23.56.png" />
 
-* [ ] Open the Redfast Preview tool
+* Open the **Recurly Engage Preview** tool on your site.
 
-<Image align="left" className="border" border={true} src="https://files.readme.io/0543e15-Screenshot_2024-05-22_at_15.25.01.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0543e15-Screenshot_2024-05-22_at_15.25.01.png" />
 
-* [ ] Notice your user ID is automatically set. Also notice the prompt status. If the status is 'Inactive' go to the page that the prompt is supposed to be active on.
+* The **User ID** field will auto-populate with your Test User’s ID.
+* If the prompt status is **Inactive**, navigate to the page where the prompt should appear.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/5deb9c6-Screenshot_2024-05-22_at_15.35.23.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5deb9c6-Screenshot_2024-05-22_at_15.35.23.png" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a7583fa-Screenshot_2024-05-22_at_15.39.40.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a7583fa-Screenshot_2024-05-22_at_15.39.40.png" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/0eb2ab1-Screenshot_2024-05-22_at_15.40.24.png" />
-
-* [ ] The prompt will now open
-* [ ] The prompt has now been seen/ interacted with. To re-open the prompt hit the 'Reset' button. If it's not showing up click the Reset Clicks and Refresh button.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/91b3825-Screenshot_2024-05-22_at_15.46.19.png" />
-
-* [ ] Once you are satisfied you can exit
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0eb2ab1-Screenshot_2024-05-22_at_15.40.24.png" />
