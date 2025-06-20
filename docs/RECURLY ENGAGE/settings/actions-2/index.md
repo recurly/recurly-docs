@@ -38,7 +38,7 @@ An **integration** (or connector) links Recurly Engage prompts and user interact
 
 # Key details
 
-## Configure External Integrations
+## Configure external integrations
 
 1. **Go to** Settings → Actions.
 
