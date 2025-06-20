@@ -20,6 +20,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 * Relevant third‑party accounts and API credentials must be provisioned before configuring connectors.
 
 # Definition
