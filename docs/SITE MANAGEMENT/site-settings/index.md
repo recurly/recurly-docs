@@ -114,7 +114,7 @@ If you have multiple billing systems consolidating into a single gateway account
 
 Please be aware that **PayPal and Stripe Payment Gateways do not support invoice prefixing**.
 
-![Order Number Prefix](https://drive.google.com/file/d/1MypjSoH13qtFnX4YExAchLZ_yQ3oDV2f/view?usp=drive_link "Order Number Prefix")
+<Image align="center" src="https://files.readme.io/f8e626444600f6eae524cfc81f151363fe927f63c00cde8e06bfa343bd79e1a6-OrderNumberPrefix.png" />
 
 ### Site customizations
 
