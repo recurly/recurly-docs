@@ -1,6 +1,9 @@
 ---
 title: Looker
-excerpt: ''
+excerpt: >-
+  The Looker integration lets you schedule daily exports of CSV user trait data
+  directly from Looker into your Recurly Engage AWS S3 bucket for seamless
+  ingestion.
 deprecated: false
 hidden: true
 metadata:
@@ -10,11 +13,7 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
 # Overview
-
-The Looker integration lets you schedule daily exports of CSV user trait data directly from Looker into your Recurly Engage AWS S3 bucket for seamless ingestion.
 
 ### Required plan
 
@@ -41,47 +40,63 @@ Below is a step-by-step guide to configure your Looker schedules and connect the
 
 1. **Retrieve S3 credentials in Pulse**
 
-   * Go to **Settings > Custom Traits** in your Recurly Engage console.
+   * **Go** to **Settings > Custom Traits** in your Recurly Engage console.
 
-     <Image align="center" width="700px" src="https://files.readme.io/c23d4a0-settings-integrations.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/c23d4a0-settings-integrations.png" />
 
    * Click **Click here for AWS S3 credentials** and check **Show Credentials** to reveal your Bucket name, Access Key, and Secret Key.
 
-     <Image align="center" width="700px" src="https://files.readme.io/3ab86ef-settings-aws-modal.png" />
+   <br />
 
-     <Image align="center" width="700px" src="https://files.readme.io/7b8d41a-aws-settings-1.png" />
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/3ab86ef-settings-aws-modal.png" />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/7b8d41a-aws-settings-1.png" />
 
 2. **Log in to Looker**
 
    * Open a new browser tab and navigate to [Looker](https://looker.com/login).
 
-     <Image align="center" width="700px" src="https://files.readme.io/a91f5e4-looker-1.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/a91f5e4-looker-1.png" />
 
 3. **Locate your user data Look**
 
    * Select the folder containing your user trait data.
 
-     <Image align="center" width="700px" src="https://files.readme.io/2d62fee-looker-2.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/2d62fee-looker-2.png" />
 
    * Choose an existing Look that outputs all required trait columns.
 
-     <Image align="center" width="700px" src="https://files.readme.io/7d73497-looker-3.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/7d73497-looker-3.png" />
 
 4. **Ensure correct column ordering**
 
    * Make sure the first column is your customer ID (e.g., `user_id`). If not, edit the Look to reposition it.
 
-     <Image align="center" width="700px" src="https://files.readme.io/844acc0-looker-4a.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/844acc0-looker-4a.png" />
 
 5. **Create a schedule**
 
    * Click **Create Schedules** on the Look.
 
-     <Image align="center" width="700px" src="https://files.readme.io/90c9d44-looker-4.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/90c9d44-looker-4.png" />
 
    * In the schedule modal, choose **Amazon S3**, then paste your Recurly Engage Bucket, Access Key, and Secret Key into the fields. Adjust the delivery time if needed.
 
-     <Image align="center" width="700px" src="https://files.readme.io/d2a0178-looker-5.png" />
+   <br />
+
+   <Image align="center" className="border" border={true} width="700px" src="https://files.readme.io/d2a0178-looker-5.png" />
 
 6. **Save and verify**
 
