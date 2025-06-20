@@ -1,6 +1,8 @@
 ---
 title: Event API Firehose
-excerpt: ''
+excerpt: >-
+  Configuration guide for the Event API Firehose feature, which allows you to
+  export and stream usage tracking data via AWS S3 or custom webhooks.
 deprecated: false
 hidden: true
 metadata:
@@ -10,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Configuration guide for the Event API Firehose feature, which allows you to export and stream usage tracking data via AWS S3 or custom webhooks.
-
 # Overview
 
 ### Required plan
