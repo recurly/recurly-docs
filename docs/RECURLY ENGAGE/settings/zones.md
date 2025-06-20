@@ -1,6 +1,8 @@
 ---
 title: Zones
-excerpt: ''
+excerpt: >-
+  Zones designate areas in your app or site where personalized content—text,
+  images, or invisible actions—can be injected by Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Zones designate areas in your app or site where personalized content—text, images, or invisible actions—can be injected by Recurly Engage.
-
 # Overview
 
 ### Video
