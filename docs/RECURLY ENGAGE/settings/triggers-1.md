@@ -3,6 +3,8 @@ title: Triggers
 excerpt: ''
 deprecated: false
 hidden: true
+link:
+  url: https://help.redfast.com/docs/triggers-1#/
 metadata:
   title: ''
   description: ''
