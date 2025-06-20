@@ -55,6 +55,6 @@ For example, with the settings below, only 90% of your users across all segments
 
 **Overlay Interval** allows you to set a minimum interval between overlay prompt impressions on web (page triggers only). For example, if you set the interval to 5 minutes, your users won't be shown page-triggered overlay prompts on web more often than every 5 minutes. Note that the interval resets if the browser tab is closed.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/e9f0c59531668b8b7da64d915c0cc155e828c69edc4c1106ff079f8456972c88-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e9f0c59531668b8b7da64d915c0cc155e828c69edc4c1106ff079f8456972c88-image.png" />
 
 Once you've set the limits, make sure to hit the **Save changes** button to apply them to your account.
