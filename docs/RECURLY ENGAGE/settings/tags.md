@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* App Administrator permissions are required to create or edit tags.
+* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
 
 # Definition
 
