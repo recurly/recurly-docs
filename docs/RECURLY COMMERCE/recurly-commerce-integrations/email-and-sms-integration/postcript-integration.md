@@ -61,10 +61,10 @@ Fire these Postscript triggers in real time to power automations:
 
 | Trigger Name                  | Description                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------------- |
-| Prive: Subscription Started   | Fires when a subscription is created/purchased by the shopper.                                |
-| Prive: Subscription Canceled  | Fires when a subscription is canceled in the merchant admin or by the customer in the portal. |
-| Prive: Billing Attempt Failed | Fires when a billing attempt fails for a renewal order.                                       |
-| Prive: Upcoming Order         | Fires **3 days** before the next scheduled renewal order.                                     |
+| Recurly Commerce: Subscription Started   | Fires when a subscription is created/purchased by the shopper.                                |
+| Recurly Commerce: Subscription Canceled  | Fires when a subscription is canceled in the merchant admin or by the customer in the portal. |
+| Recurly Commerce: Billing Attempt Failed | Fires when a billing attempt fails for a renewal order.                                       |
+| Recurly Commerce: Upcoming Order         | Fires **3 days** before the next scheduled renewal order.                                     |
 
 > **Use Case:** Send an SMS reminder for upcoming orders or recovery texts for failed payments.
 

@@ -34,15 +34,15 @@ Below is the complete list of Recurly Commerce metrics/events that will be sent 
 
 | Prive Metric in Klaviyo      | When is it triggered?                                                                                                            |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Prive Subscription Started   | This metric is triggered when a subscription is created/purchased by the shopper.                                                |
-| Prive Subscription Cancelled | This metric is triggered when a subscription is canceled by you in the merchant admin or by the customer in the customer portal. |
-| Prive Subscription Paused    | This metric is triggered when a subscription is paused by you in the merchant admin or by the customer in the customer portal.   |
-| Prive Status Update          | This metric is triggered when a subscription’s status changes.                                                                   |
-| Prive Billing Attempt Failed | This metric is triggered when a billing attempt failed.                                                                          |
-| Prive Upcoming Order         | This metric is triggered **3 calendar days** before the scheduled upcoming order.                                                |
-| Prive Gift Confirmation      | This metric is triggered when a gift subscription is created/purchased by the shopper.                                           |
-| Prive Out of Stock           | This metric is triggered when a product variant is deleted or has 0 quantity left.                                               |
-| Prive Order Placed           | This metric is triggered when a renewal order has successfully been placed.                                                      |
+| Recurly Commerce Subscription Started   | This metric is triggered when a subscription is created/purchased by the shopper.                                                |
+| Recurly Commerce Subscription Cancelled | This metric is triggered when a subscription is canceled by you in the merchant admin or by the customer in the customer portal. |
+| Recurly Commerce Subscription Paused    | This metric is triggered when a subscription is paused by you in the merchant admin or by the customer in the customer portal.   |
+| Recurly Commerce Status Update          | This metric is triggered when a subscription’s status changes.                                                                   |
+| Recurly Commerce Billing Attempt Failed | This metric is triggered when a billing attempt failed.                                                                          |
+| Recurly Commerce Upcoming Order         | This metric is triggered **3 calendar days** before the scheduled upcoming order.                                                |
+| Recurly Commerce Gift Confirmation      | This metric is triggered when a gift subscription is created/purchased by the shopper.                                           |
+| Recurly Commerce Out of Stock           | This metric is triggered when a product variant is deleted or has 0 quantity left.                                               |
+| Recurly Commerce Order Placed           | This metric is triggered when a renewal order has successfully been placed.                                                      |
 
 ### Recurly Commerce metric / event properties
 
@@ -50,7 +50,7 @@ Each event is accompanied by a rich set of properties for granular segmentation:
 
 | Metric(s)                      | Property                      | Type             | Description                                                                           |
 | ------------------------------ | ----------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
-| Prive Subscription Started     | charge\_amount                | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
+| Recurly Commerce Subscription Started     | charge\_amount                | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
 | …                              | product\_title                | String           | Shopify product title.                                                                |
 | …                              | product\_id                   | Number           | Shopify product ID.                                                                   |
 | …                              | variant\_id                   | Number           | Shopify variant ID.                                                                   |
@@ -63,12 +63,12 @@ Each event is accompanied by a rich set of properties for granular segmentation:
 | …                              | is\_prepaid                   | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
 | …                              | value                         | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
 | …                              | price                         | Number           | Subscription contract price before discounts.                                         |
-| – Prive Subscription Cancelled | cancel\_reason                | String           | Reason captured from the cancellation survey.                                         |
-| – Prive Billing Attempt Failed | total\_retries                | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
-| – Prive Upcoming Order         | is\_prepaid\_upcoming\_charge | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
-| – Prive Gift Confirmation      | order\_number                 | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
-| – Prive Out of Stock           | (same as above properties)    | …                | …                                                                                     |
-| – Prive Order Placed           | order\_number                 | Number           | The number of completed orders at the time the order placed metric fires.             |
+| – Recurly Commerce Subscription Cancelled | cancel\_reason                | String           | Reason captured from the cancellation survey.                                         |
+| – Recurly Commerce Billing Attempt Failed | total\_retries                | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
+| – Recurly Commerce Upcoming Order         | is\_prepaid\_upcoming\_charge | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
+| – Recurly Commerce Gift Confirmation      | order\_number                 | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
+| – Recurly Commerce Out of Stock           | (same as above properties)    | …                | …                                                                                     |
+| – Recurly Commerce Order Placed           | order\_number                 | Number           | The number of completed orders at the time the order placed metric fires.             |
 
 > **Use Case:** Leverage these events to create custom segments in Klaviyo (e.g., “All subscribers with paused subscriptions AND billing failures in the last 7 days”) and trigger tailored flows.
 
@@ -89,8 +89,8 @@ These properties are written to each Klaviyo profile under **Custom Properties**
 
 Embed “Quick Action” links in Klaviyo emails to let subscribers self-serve common tasks (skip next order, reactivate subscription, add add-ons, etc.).
 
-1. In the Prive merchant admin, configure a quicklink with a **name** and an **action**.
-2. After the next Prive metric fires (e.g., upcoming order or cancelled), the quicklink appears in the customer’s Klaviyo profile.
+1. In the Recurly Commerce merchant admin, configure a quicklink with a **name** and an **action**.
+2. After the next Recurly Commerce metric fires (e.g., upcoming order or cancelled), the quicklink appears in the customer’s Klaviyo profile.
 3. Reference the quicklink in a Klaviyo flow using the variable syntax `{{ event.extra.quicklink_name }}`.
 
    Once clicked, the action executes immediately and the subscriber sees a confirmation message.
