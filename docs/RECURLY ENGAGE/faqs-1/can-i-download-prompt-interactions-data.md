@@ -1,6 +1,8 @@
 ---
-title: Can I download prompt activity data?
-excerpt: ''
+title: Dowloading prompt activity data
+excerpt: >-
+  Configuration guide for downloading prompt metrics and activity data from
+  Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,25 +12,28 @@ metadata:
 next:
   description: ''
 ---
-# Metrics Data
+# How can I download prompt activity data?
 
-You may download prompt metrics data via the following methods:
+## Metrics data
 
-1. Select the desired date range followed by checking the desired prompt(s) within Prompts screen and click the **Export to CSV** button. Select the `Summary` option from the dropdown.
+You may download summary metrics for one or more prompts:
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/2cec8af-image.png" />
-2. Click on **Manage** -> **Export to CSV** on the prompt details screen.
-
-   <Image align="center" className="border" border={true} src="https://files.readme.io/733eebf-image.png" />
-
-# Detailed Activity Data
-
-Prompt activity events may be downloaded via the following methods.
-
-1. Select the desired date range followed by checking the desired prompt(s) within Prompts screen and click the **Export to CSV** button. Select the `Detail` option from the dropdown. The exported file will be available within the Settings > Download Data screen.
+1. On the **Prompts** screen, **select** your desired date range, **check** the prompt(s) you want, and **click** **Export to CSV**, then choose **Summary**.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/2cec8af-image.png" />
 
-2. On the Settings > Download Data screen, select the desired date range and click on the `Export CSV` button. The exported file may take up to 15 minutes to be available for download.
+2. From a prompt’s **Manage** menu on its detail screen, **choose** **Export to CSV**.
 
-The CSV field [data specs](/docs/download-data#prompt-activity-data-specifications) describe the prompt activity event data.
+<Image align="center" className="border" border={true} src="https://files.readme.io/733eebf-image.png" />
+
+## Detailed activity data
+
+For a full event-level export:
+
+1. On the **Prompts** screen, **select** date range, **check** your prompt(s), **click** **Export to CSV**, and **choose** **Detail**. The file will appear under **Settings > Download Data**.
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/2cec8af-image.png" />
+
+2. In **Settings > Download Data**, **pick** the same date range and click **Export CSV**. It may take up to 15 minutes for the download link to become available.
+
+For field definitions and data schema, see the [Prompt Activity Data Specifications](/docs/download-data#prompt-activity-data-specifications).
