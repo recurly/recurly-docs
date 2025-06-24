@@ -17,7 +17,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-- You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
 
 # Definition
 
@@ -25,17 +25,17 @@ The **Recurly Engage React Native SDK** provides components and APIs to render c
 
 # Key benefits
 
-- **Cross-platform UI**: Seamlessly display modals and inline prompts on both iOS and Android via React Native.  
-- **Built-in interaction handling**: Automatically track impressions, clicks, dismissals, and other user events.  
-- **Customizable rendering**: Use prebuilt components or implement your own views based on prompt metadata.
+* **Cross-platform UI**: Seamlessly display modals and inline prompts on both iOS and Android via React Native.
+* **Built-in interaction handling**: Automatically track impressions, clicks, dismissals, and other user events.
+* **Customizable rendering**: Use prebuilt components or implement your own views based on prompt metadata.
 
 # Key details
 
 The Recurly Engage React Native SDK provides:
 
-- A prompt manager for initialization and user ID management  
-- Hooks and components for displaying modal prompts and inline prompts  
-- APIs for reporting user interactions (impression, goal, decline, dismiss, timeout, holdout)
+* A prompt manager for initialization and user ID management
+* Hooks and components for displaying modal prompts and inline prompts
+* APIs for reporting user interactions (impression, goal, decline, dismiss, timeout, holdout)
 
 ## Install the SDK
 
@@ -48,7 +48,7 @@ Add the Recurly Engage registry to your package manager config (`.npmrc` or `.ya
 
 # .yarnrc.yml
 npmAuthToken: "AUTHTOKEN"
-````
+```
 
 Install packages:
 
@@ -222,8 +222,5 @@ promptMgr.resetGoal();
 ```
 ```
 
-<br />
-
 ```javascript
-promptMgr.resetGoal()
 ```
