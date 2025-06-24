@@ -1,6 +1,8 @@
 ---
 title: Popular Use Cases
-excerpt: Lists the common uses of Redfast
+excerpt: >-
+  Overview of the most popular use cases for Recurly Engage prompts across the
+  customer lifecycle.
 deprecated: false
 hidden: true
 metadata:
@@ -10,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Overview of the most popular use cases for Recurly Engage prompts across the customer lifecycle.
-
 # Overview
 
 From acquisition to churn prevention, Recurly Engage supports a variety of proven engagement patterns to drive conversions, increase retention, and maximize customer value.
