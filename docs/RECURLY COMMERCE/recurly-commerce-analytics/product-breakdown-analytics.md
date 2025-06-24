@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 Product Breakdown Analytics is a customizable, tabular report that attributes subscription metrics (order count, units sold, and revenue) to individual product variants for both first-time and all subsequent subscription orders.
 
 # Key benefits
