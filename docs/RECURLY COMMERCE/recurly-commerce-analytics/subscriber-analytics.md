@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 Subscriber analytics charts the total number of active subscribers over your selected time window, with a dashed overlay representing the prior period for direct comparison.
 
 # Key benefits
