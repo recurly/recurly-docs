@@ -18,7 +18,7 @@ The SDK section contains comprehensive guides for integrating Recurly Engage int
 
 # Key details
 
-* **JavaScript (Web and CTV)**: Guide for installing and configuring the JavaScript SDK on web browsers and HTML5-based CTV devices. ([JavaScript (Web and CTV)](javascript-web-and-ctv))
+* **JavaScript (Web and CTV)**: Guide for installing and configuring the JavaScript SDK on web browsers and HTML5-based CTV devices. ([JavaScript (Web and CTV)](javascript-sdk))
 * **iOS**: Instructions for integrating the Recurly Engage Apple SDK in native iOS and tvOS apps, including Swift Package Manager and legacy frameworks. ([iOS](ios))
 * **Android**: Steps to add the Recurly Engage Android SDK for phones, tablets, and TV devices via Gradle/Maven or local packages. ([Android](android))
 * **Roku**: Setup and usage details for the Recurly Engage Roku SDK within SceneGraph-based Roku channels. ([Roku](roku))
