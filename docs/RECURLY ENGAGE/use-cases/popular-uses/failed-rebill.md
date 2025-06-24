@@ -18,6 +18,12 @@ next:
 ---
 # Overview
 
+### Video
+
+Here is a video tutorial that shows how to set this up for your website and app.
+
+<Embed url="https://www.loom.com/embed/d1c5c4f59f7a4b23a5e99e92c1381b8b?sid=2ea41637-d7ec-4f32-b722-0c1bceb4d91b" href="https://www.loom.com/embed/d1c5c4f59f7a4b23a5e99e92c1381b8b?sid=2ea41637-d7ec-4f32-b722-0c1bceb4d91b" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
@@ -49,12 +55,6 @@ Recurly Engage provides an additional tool to reduce involuntary churn by using 
 > Make sure you enable the **Sync events** option, if available for your billing platform under **Settings > Actions**. This ensures that dunning updates are synced with your Recurly Engage segments.
 
 ***
-
-### Video
-
-Here is a video tutorial that shows how to set this up for your website and app.
-
-<Embed url="https://www.loom.com/embed/d1c5c4f59f7a4b23a5e99e92c1381b8b?sid=2ea41637-d7ec-4f32-b722-0c1bceb4d91b" href="https://www.loom.com/embed/d1c5c4f59f7a4b23a5e99e92c1381b8b?sid=2ea41637-d7ec-4f32-b722-0c1bceb4d91b" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
 
 ## Guide
 
