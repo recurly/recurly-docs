@@ -1,5 +1,5 @@
 ---
-title: Settings
+title: Platform settings
 excerpt: ''
 deprecated: false
 hidden: true
