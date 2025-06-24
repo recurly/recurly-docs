@@ -32,7 +32,7 @@ Here is a video tutorial that shows how to set this up for your website and app.
 
 <br />
 
-<Embed url="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286 nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" title="iframe" provider="loom.com" href="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286 nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
+<Embed url="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286 nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" href="https://www.loom.com/embed/37d0ba60b71e4444be6ddcfe14e56add?sid=77dddded-5f13-4cd0-899b-9105cde9f286 nJvsnLtmKCrXY4dDsfkpywOr4wmdOyAf" typeOfEmbed="iframe" height="480px" width="100%" iframe="true" />
 
 ***
 
@@ -53,7 +53,7 @@ Here is a video tutorial that shows how to set this up for your website and app.
   * [ ] Technical issues with CTA to support
 * [ ] Create an A-B experiment on any of the prompts in the guide to experiment with offers or design.
 * [ ] Set the segment to **Test Users**.
-* [ ] Set the trigger to activate using the cancel button click. 
+* [ ] Set the trigger to activate using the cancel button click.
   * [ ] The 'Live' feature can detect and add the cancel click event. See how.
   * [ ] Invite a member of your development team to specify the click event using regex or Javascript.
 * [ ] Start the Guide
