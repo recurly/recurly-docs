@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 Notifications encompass Recurly Commerce’s built-in transactional emails and SMS, as well as integrations with third-party messaging platforms to ensure timely, personalized communication across the subscription lifecycle.
 
 # Key benefits
