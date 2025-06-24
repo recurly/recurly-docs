@@ -12,7 +12,6 @@ metadata:
 
 ### Prerequisites & limitations
 
-* Available on all Recurly Commerce plans.
 * Requires that your Shopify store is connected to Recurly Commerce.
 
 # Definition
