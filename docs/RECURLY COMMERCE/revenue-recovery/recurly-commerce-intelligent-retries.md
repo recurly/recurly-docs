@@ -36,7 +36,7 @@ Unlike static schedules, Intelligent Retries dynamically adapts to each failure 
 
 For new merchants to Recurly Commerce, Intelligent Retries is already active. For existing merchants that may have another Payment Failure Experience selected, navigate to **Settings** -> **Payment Failure Experience**. From there, use the dropdown (shown below) to select **Intelligent Retries**.
 
-<br />
+<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/6a3e8f9edb4e88cb1c221d92d774ca8b71be10131c5fa20cb5aaeacc57fbbc80-image.png" />
 
 ## Activity logging & reporting
 
