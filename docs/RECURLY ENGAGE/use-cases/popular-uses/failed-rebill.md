@@ -11,11 +11,10 @@ metadata:
   description: ''
   robots: index
 next:
-  description: See more popular uses
   pages:
-    - type: basic
-      slug: popular-uses
+    - slug: popular-uses
       title: Popular Uses
+      type: basic
 ---
 # Overview
 
