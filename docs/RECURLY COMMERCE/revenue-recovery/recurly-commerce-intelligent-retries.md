@@ -1,5 +1,5 @@
 ---
-title: Recurly Commerce intelligent retries
+title: Intelligent retries
 excerpt: >-
   Intelligently recover failed payments with AI-driven retry logic tailored for
   Shopify merchants.
