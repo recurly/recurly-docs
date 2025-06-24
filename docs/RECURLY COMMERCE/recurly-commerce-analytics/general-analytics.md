@@ -11,12 +11,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 General Analytics surfaces high-level subscription health metrics—revenue, order volume, average order value—and empowers you to dive into monthly and daily breakdowns via the Executive Report and daily summaries.
 
 # Key benefits
