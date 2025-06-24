@@ -97,8 +97,23 @@ You may add the SDK from the public GitHub [repository](https://github.com/redfa
 3. Ensure the **Embed & Sign** option is selected.
 4. Import the SDK into your project.
 
-   <Image align="left" src="https://files.readme.io/ff07460-Screenshot_2024-05-23_at_3.22.56_PM.png" />
-5. Initialize the SDK per instructions below.
+<Image align="left" src="https://files.readme.io/ff07460-Screenshot_2024-05-23_at_3.22.56_PM.png" />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+Initialize the SDK per instructions below.
 
 ## Initialize Recurly Engage
 
