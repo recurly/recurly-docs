@@ -14,7 +14,7 @@ next:
 ---
 # How can I create a prompt with custom dimensions?
 
-Yes—you can override the default size by adding CSS rules in the **Custom CSS** section of the prompt Editor. For example, to set a popup to 550 × 420 px:
+You can override the default size by adding CSS rules in the **Custom CSS** section of the prompt Editor. For example, to set a popup to 550 × 420 px:
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/e357b8c-image.png" />
 
