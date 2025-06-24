@@ -31,7 +31,7 @@ Visit our "[How to test your gateway](https://docs.recurly.com/docs/how-to-test-
 
 By integrating GoCardless with your Recurly account, you can enhance your business capabilities to handle direct debit transactions globally, including BACS, thereby offering a seamless payment experience for your customers.
 
-# Use Cases
+# Use cases
 
 * International Transactions: Easily conduct transactions across borders leveraging various global direct debit schemes supported by GoCardless.
 * Recurly Subscriptions: Seamlessly integrate Recurly’s subscription platform with GoCardless for straightforward BACS transactions.
