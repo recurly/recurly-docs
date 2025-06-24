@@ -1,7 +1,7 @@
 ---
 title: FAQs
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
