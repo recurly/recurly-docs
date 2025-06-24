@@ -49,14 +49,14 @@ The Live feature can be used to:
 
 ## Event types
 
-| Type                        | Description                                                                                                        |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Impression                  | User was shown the prompt                                                                                          |
-| Timeout                     | User did not respond before the prompt timer ran out                                                               |
-| Dismiss                     | User dismissed the prompt by clicking on the X or outside the window (as configured in the Recurly Engage console) |
-| Decline                     | User clicked on the decline link                                                                                   |
-| Click                       | User accepted the prompt (this has been phased out in favor of Goal)                                               |
-| Goal                        | User accepted the prompt                                                                                           |
-| CustomGoals\[Activity Type] | User completed the defined custom goal after previously performing the specified activity type on a prompt         |
-| Exclude                     | User is part of the holdout group or not eligible for a prompt after the specified User Limit has been exceeded.   |
-| Holdout                     | User is part of the holdout group or not eligible for a prompt after the specified User Limit has been exceeded.   |
+| Type                        | Description                                                                                                         |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Impression                  | User was shown the prompt.                                                                                          |
+| Timeout                     | User did not respond before the prompt timer ran out.                                                               |
+| Dismiss                     | User dismissed the prompt by clicking on the X or outside the window (as configured in the Recurly Engage console). |
+| Decline                     | User clicked on the decline link.                                                                                   |
+| Click                       | User accepted the prompt (this has been phased out in favor of Goal).                                               |
+| Goal                        | User accepted the prompt.                                                                                           |
+| CustomGoals\[Activity Type] | User completed the defined custom goal after previously performing the specified activity type on a prompt.         |
+| Exclude                     | User is part of the holdout group or not eligible for a prompt after the specified User Limit has been exceeded.    |
+| Holdout                     | User is part of the holdout group or not eligible for a prompt after the specified User Limit has been exceeded.    |
