@@ -22,10 +22,11 @@ For example, to set the modal content wrapper to use Roboto:
 
 ```css
 .rfmodal-content-wrapper {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Roboto", sans-serif!important;
 }
 ```
 
-> **Notes:** 
-> - Only use fonts that are already loaded on your website.
-> - Custom fonts won’t render in the Editor’s built-in preview, but they will display correctly when using **Live Preview** or on the live site, provided your site loads those font files.
+> **Notes:**
+>
+> * Only use fonts that are already loaded on your website.
+> * Custom fonts won’t render in the Editor’s built-in preview, but they will display correctly when using **Live Preview** or on the live site, provided your site loads those font files.
