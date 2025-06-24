@@ -36,11 +36,11 @@ The **Testing Tips** guide outlines steps and considerations for effectively tes
 
 # Key details
 
-## Setup Test Users
+## Setup test users
 
 You may whitelist specific user IDs to be part of the **Test Users** segment. This allows you to test prompts that are visible only to users in this group. See [Test Users](test-users) for instructions on configuring your Test Users.
 
-## Test Cases
+## Test cases
 
 When executing test cases, we recommend:
 
