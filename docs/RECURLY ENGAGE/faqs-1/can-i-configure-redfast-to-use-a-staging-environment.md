@@ -1,5 +1,5 @@
 ---
-title: Can I configure Redfast to use a staging environment?
+title: Configuring a staging environment
 excerpt: ''
 deprecated: false
 hidden: true
