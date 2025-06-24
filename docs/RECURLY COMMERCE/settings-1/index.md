@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 The **Settings** section of the Recurly Commerce app lets you fine-tune your dunning (payment retry) workflows and change your subscription tier—putting essential billing controls at your fingertips.
 
 # Key benefits
