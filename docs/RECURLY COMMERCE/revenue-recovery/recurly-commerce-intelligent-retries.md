@@ -4,7 +4,7 @@ excerpt: >-
   Intelligently recover failed payments with AI-driven retry logic tailored for
   Shopify merchants.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
