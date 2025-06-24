@@ -31,14 +31,14 @@ Lightweight clients collect events and render prompts & guides across web and de
 * **Web**: Install via [Google Tag Manager](google-tag-manager), [Tealium](tealium-iq-tag-manager), or direct snippet.
 * **Mobile & TV**: Native libraries for [iOS](ios-sdk), Android, Apple TV, Roku.
 
-## Management Console (Pulse)
+## Management console (Pulse)
 
 Central hub to configure applications, user traits, segments, prompts, guides, and integrations.
 
 * Dashboards & Pipelines: Monitor account-wide metrics and dynamic user pipelines.
 * Experiments: A/B test prompt variations and custom goals.
 
-## Stream Data Processor
+## Stream data processor
 
 Real-time engine segments incoming events into cohorts using rule-based or ML-driven logic. These segments feed prompt targeting and journey orchestration.
 
