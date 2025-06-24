@@ -12,14 +12,6 @@ metadata:
 
 Recurly Commerce Forecasting unlocks smarter revenue and subscription order predictions. With Recurly Commerce Forecasting, merchants can accurately predict future revenue, orders, and SKU sales for the next 12 months.
 
-### Required plan
-
-This feature **may not be included** in the Core plan. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
-
-### Additional cost
-
-This feature or setting in Recurly Commerce requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
-
 # Definition
 
 Forecasting leverages your current active, paused, and dunning subscriptions to project future order volumes and gross sales across customizable time windows.
