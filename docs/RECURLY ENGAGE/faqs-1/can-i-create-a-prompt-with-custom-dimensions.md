@@ -1,5 +1,5 @@
 ---
-title: Can I create a prompt with custom dimensions?
+title: Creating a prompt with custom dimensions
 excerpt: >-
   Configuration guide for setting custom dimensions on Recurly Engage prompts
   using Custom CSS.
