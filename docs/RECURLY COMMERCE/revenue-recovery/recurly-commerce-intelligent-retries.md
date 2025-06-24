@@ -16,13 +16,13 @@ Intelligent Retries is an automated retry engine that blends Shopify’s detaile
 
 * **Higher recovery rates**: Maximize involuntary churn reduction by retrying at the precise moments most likely to succeed.
 * **Data-driven timing**: Leverage an AI/ML engine trained on extensive historical patterns—both Shopify-specific and cross-merchant—to pick the best retry schedule, independent of traditional dunning settings.
-* **Transparent reporting**: Every retry is recorded in your subscription’s activity log and exportable via **Subscription Contract Activity** for full visibility.
+* **Transparent reporting**: Every retry is recorded in your subscription’s activity log and exportable via the **Subscription Contract Activity** report for full visibility.
 
 # Key details
 
 ## How intelligent retries works
 
-Recurly collects Shopify’s decline codes and available payment metadata, then combines that with patterns learned from thousands of merchants. Our AI/ML engine analyzes each failure reason and customer context to select the ideal retry window—whether hours, days, or weeks later—maximizing the likelihood of success.
+Recurly collects Shopify’s payment failure codes and available payment metadata, and combines that with patterns learned from thousands of merchants. Our AI/ML engine analyzes each failure reason and customer context to select the ideal retry window—whether hours, days, or weeks later—maximizing the likelihood of success.
 
 ## AI/ML engine
 
@@ -32,12 +32,18 @@ Built on years of data from 2,000+ merchants, these models continuously learn wh
 
 Unlike static schedules, Intelligent Retries dynamically adapts to each failure type. It assesses factors such as gateway error category, customer behavior, and historical outcomes—all while preserving your original renewal date.
 
+## Enabling Intelligent Retries
+
+For new merchants to Recurly Commerce, Intelligent Retries is already active. For existing merchants that may have another Payment Failure Experience selected, navigate to **Settings** -> **Payment Failure Experience**. From there, use the dropdown (shown below) to select **Intelligent Retries**.
+
+<br />
+
 ## Activity logging & reporting
 
 * **Subscription Activity Log**: Each retry attempt appears as an entry, showing timestamp, outcome, and the next scheduled retry.
 * **Exportable Data**: Use the **Subscription Contract Activity** report in Settings to analyze retry patterns and outcomes at scale.
 
-## Cancellation on exhaustion
+## Cancellation if payment issue remains unresolved
 
 If no retry succeeds after the AI-determined maximum attempts, the subscription is automatically canceled—closing the loop on recovery and preventing endless billing attempts.
 
