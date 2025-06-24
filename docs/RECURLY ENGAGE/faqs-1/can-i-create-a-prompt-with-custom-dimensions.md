@@ -1,6 +1,8 @@
 ---
 title: Can I create a prompt with custom dimensions?
-excerpt: ''
+excerpt: >-
+  Configuration guide for setting custom dimensions on Recurly Engage prompts
+  using Custom CSS.
 deprecated: false
 hidden: true
 metadata:
@@ -10,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Configuration guide for setting custom dimensions on Recurly Engage prompts using Custom CSS.
-
 # How can I create a prompt with custom dimensions?
 
 Yes—you can override the default size by adding CSS rules in the **Custom CSS** section of the prompt Editor. For example, to set a popup to 550 × 420 px:
@@ -27,5 +25,6 @@ Yes—you can override the default size by adding CSS rules in the **Custom CSS*
 }
 ````
 
-> 📘 Use `!important` to ensure your dimensions take precedence over default styles.\
-> 🚧 Test in **Live Preview** to verify your custom sizing behaves correctly across devices.
+> **Notes:**
+> - Use `!important` to ensure your dimensions take precedence over default styles.
+> - Test in **Live Preview** to verify your custom sizing behaves correctly across devices.
