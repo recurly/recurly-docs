@@ -20,10 +20,6 @@ Recurly Engage processes only the data you designate, with strict controls aroun
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-### Prerequisites & limitations
-
-* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
-
 # Definition
 
 The **Data Privacy & Security** section outlines how Recurly Engage handles end-user information, including what is collected, how it is stored, and how it is protected.
