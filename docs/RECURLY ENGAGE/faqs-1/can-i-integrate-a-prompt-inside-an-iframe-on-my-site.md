@@ -28,8 +28,10 @@ In your iFrame’s HTML/JS, attach a click handler that sends the prompt ID to t
     parent.postMessage("rf_prompt_66bc51c0-9829-4c4a-8697-223d0fff860a", "*");
   }
 </script>
-````
+```
 
 Once the SDK on the parent page receives that message, it will open the specified prompt just as if it were triggered natively. You can call `postMessage` as many times as needed; all user interactions (accept, decline, dismiss) will function normally.
 
-> 📘 For cross-domain iFrames, replace `"*"` with your parent page’s origin for secure messaging.
+> 📘 Important
+>
+> For cross-domain iFrames, replace `"*"` with your parent page’s origin for secure messaging.
