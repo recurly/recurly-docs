@@ -1,6 +1,8 @@
 ---
-title: Can I use a custom font in my prompts?
-excerpt: ''
+title: Using custom fonts in a prompt
+excerpt: >-
+  Configuration guide for applying custom fonts to Recurly Engage prompts using
+  Custom CSS.
 deprecated: false
 hidden: true
 metadata:
@@ -10,17 +12,19 @@ metadata:
 next:
   description: ''
 ---
-Sure, you can apply your custom font to any of your prompt elements using the Custom CSS section of the Editor.\
-Refer to this [article](styling-fine-tuning-css-selectors) for a list of CSS style classes that may be used to modify the default styling of any Redfast prompt.
+# How can I use custom fonts in a prompt?
+
+You can apply any web-loaded font to your prompt elements via the **Custom CSS** section in the prompt Editor. Refer to the [styling guide](styling-fine-tuning-css-selectors) for the full list of CSS classes available for prompt styling.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/396ca85-image.png" />
 
-```
+For example, to set the modal content wrapper to use Roboto:
+
+```css
 .rfmodal-content-wrapper {
-  font-family: "Roboto", sans-serif!important;
+  font-family: "Roboto", sans-serif !important;
 }
-```
 
-> 📘 Make sure to only use the fonts that load on your website.
+> 📘 Only use fonts that are already loaded on your website.
 
-> 🚧 Custom fonts won't display in the Editor, but you will see them loaded when using the 'Live preview' button and when the prompt is live as long as the custom fonts you set are loaded on your website.
+> 🚧 Custom fonts won’t render in the Editor’s built-in preview, but they will display correctly when using **Live Preview** or on the live site, provided your site loads those font files.
