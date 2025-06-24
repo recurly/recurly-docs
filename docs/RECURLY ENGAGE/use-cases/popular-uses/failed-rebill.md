@@ -3,7 +3,7 @@ title: Failed rebill
 excerpt: >-
   How to use Configuration guide for the Failed Rebill use case, which reduces
   involuntary churn by prompting users to update their payment information after
-  a failed billing attempt. to reduce active cancellations (voluntary churn)
+  a failed billing attempt.
 deprecated: false
 hidden: true
 metadata:
