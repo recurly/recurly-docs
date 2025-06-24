@@ -1,6 +1,8 @@
 ---
-title: Ad Blocker Mitigation
-excerpt: ''
+title: Adblocker mitigation
+excerpt: >-
+  Configuration guide for Ad Blocker Mitigation, enabling Recurly Engage to
+  function when users have ad blockers enabled.
 deprecated: false
 hidden: true
 metadata:
@@ -10,24 +12,35 @@ metadata:
 next:
   description: ''
 ---
-## Summary
+# Overview
 
-Public reports ( [link](https://backlinko.com/ad-blockers-users), [link2](https://www.statista.com/topics/3201/ad-blocking/#topicOverview) ) indicate up to 50% of web browser ad blocker usage, varying by country, device type and demographic.
+Public reports ([Backlinko](https://backlinko.com/ad-blockers-users), [Statista](https://www.statista.com/topics/3201/ad-blocking/#topicOverview)) indicate up to 50% of web users employ ad blockers, which may block third-party JavaScript tags—including Recurly Engage’s—disabling engagement prompts.
 
-Ad blockers browser extensions not only block banner ads but may also block JavaScript tags hosted on third-party domains, which may include Redfast, effectively disabling Redfast platform functionality.
+### Required plan
 
-In order to mitigate the potential loss of reach, Redfast customers who are on an Enterprise tier or have opted for the add-on may have the Redfast tag and associated API traffic handled on client browsers via a subdomain of the top level domain utilized by the web application. By configuring traffic to occur via subdomain, ad blocker extensions no longer disable the Redfast platform. With this setup Redfast will otherwise continue to host the necessary files, including the deployment of periodic updates as needed. This change is enabled purely with a DNS update.
+This feature or setting is available to customers on the Recurly Engage Enterprise tier or as an add-on.
 
-Here are the steps required to enable this functionality:
+### Prerequisites & limitations
+
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+* You must be on the Enterprise plan or have purchased the Ad Blocker Mitigation add-on.
+
+# Definition
+
+**Ad Blocker Mitigation** routes the Recurly Engage tag and API traffic through a customer-owned subdomain (e.g., `track.yourcompany.com`) so that browser extensions no longer block prompt delivery. The change requires only a DNS update and reconfiguration of your tag manager.
+
+# Key benefits
+
+* **Maximized reach**: Ensure prompts reach users even when ad blockers are enabled.
+* **DNS-only setup**: No code changes—just configure a CNAME and update your script tag.
+* **Seamless updates**: Recurly Engage continues to host and update SDK assets on the new subdomain.
+
+# Key details
+
+To enable Ad Blocker Mitigation, complete the following steps:
 
 ## Update DNS
 
-Once a subdomain has been agreed upon, your Redfast customer success manager will provide instructions for your I.T. team to provision the new subdomain via CNAME entries in your DNS configuration.
-
-## Update Tags
-
-Once the DNS configuration has been updated and validated, the tag manager should be updated to reflect the new subdomain.
-
-Old tag: `<script src="https://[appID].redfastlabs.com/assets/redfast.js" async></script>`
-
-New tag: `<script src="https://[subdomain].yourcompany.com/assets/redfast.js" async></script>`
+1. **Agree upon** a subdomain (e.g., `track.yourcompany.com`).
+2. Your Recurly Engage Customer Success Manager will provide the CNAME target (e.g., `yourapp.redcurlyengage.com`).
+3. Your IT team adds a CNAME entry in your DNS:
