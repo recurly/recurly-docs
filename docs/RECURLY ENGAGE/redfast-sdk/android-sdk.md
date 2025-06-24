@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-- You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
 
 # Definition
 
@@ -28,9 +28,9 @@ The **Recurly Engage Android SDK** provides support for Android phones, tablets,
 
 # Key benefits
 
-- **SDK integration**: Seamlessly embed prompts and track events across Android form factors.  
-- **Automatic UI handling**: Built-in support for modals, banners, and inline prompts without manual UI code.  
-- **Broad device support**: One SDK for phones, tablets, and TV devices.
+* **SDK integration**: Seamlessly embed prompts and track events across Android form factors.
+* **Automatic UI handling**: Built-in support for modals, banners, and inline prompts without manual UI code.
+* **Broad device support**: One SDK for phones, tablets, and TV devices.
 
 # Key details
 
@@ -59,7 +59,7 @@ dependencies {
   amazonImplementation("com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.3")
   googleImplementation("com.github.redfast.redfast-sdk-android-build:redfast-sdk-google:v2.2.1.3")
 }
-````
+```
 
 **Maven**
 
