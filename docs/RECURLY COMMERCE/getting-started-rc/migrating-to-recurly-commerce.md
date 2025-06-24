@@ -11,10 +11,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
 ### Additional cost
 
 If you have fewer than 500 active subscribers, a one-time migration fee may apply. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for pricing details.
