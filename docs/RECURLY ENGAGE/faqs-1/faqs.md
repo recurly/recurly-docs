@@ -1,6 +1,8 @@
 ---
 title: Debugging a prompt that is not showing
-excerpt: ''
+excerpt: >-
+  Configuration guide for debugging prompts that fail to display in Recurly
+  Engage.
 deprecated: false
 hidden: true
 metadata:
