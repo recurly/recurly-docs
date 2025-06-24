@@ -1,6 +1,8 @@
 ---
 title: Javascript (Web and CTV)
-excerpt: ''
+excerpt: >-
+  Configuration guide for the JavaScript SDK, supporting both web browsers and
+  HTML5-based CTV devices in Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,15 +12,38 @@ metadata:
 next:
   description: ''
 ---
-The Javascript SDK supports web browsers as well as HTML5 based CTV devices. To install the Javascript SDK, please visit this [article](add-the-redfast-tag).
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+
+# Definition
+
+The **JavaScript SDK** enables prompt delivery and tracking in standard web browsers as well as HTML5-based connected TV (CTV) platforms.
+
+# Key benefits
+
+* **Cross-platform support**: Use a single SDK for both web and CTV environments.
+* **Custom device targeting**: Deliver prompts selectively to named CTV devices.
+* **Consistent user ID fetching**: Ensure correct user identification across different app contexts.
+
+# Key details
+
+The JavaScript SDK supports web browsers as well as HTML5-based CTV devices. To install the JavaScript SDK, please visit this [article](add-the-redfast-tag).
 
 ## CTV Considerations
 
 We recommend the following when integrating the JS SDK on CTV apps:
 
-* Create a Custom Devices within Settings > Custom Devices. Multiple entries may be defined, e.g. `SamsungTV`, `LGTV`, `Vidaa`.
-* Prompts should be created for the Custom Device(s). This allows for control over exactly which prompts are delivered to the various CTV platforms.
-* The JS tag should specify the Custom Device representing the CTV platform. For example: `<script src="..." data-rf-device-type="SamsungTV" />`
-* Ensure that the fetchUserId() functionality is integrated as this is often different than the normal Desktop/mobile web-app.
-* As CTV apps are normall implemented as Single Page Apps, using prompts to navigate to specific screens may require a discussion with your dev team.
-* Reach out to your Customer Success Manager if you have any questions!
+* **Create** **Custom Devices** under **Settings > Custom Devices**. **Define** entries like `SamsungTV`, `LGTV`, or `Vidaa`.
+* **Create** prompts targeted to each Custom Device to control delivery on specific CTV platforms.
+* **Include** the `data-rf-device-type` attribute in your script tag. For example:
+
+```html
+<script src="https://cdn.redfast.com/sdk.js" data-rf-device-type="SamsungTV"></script>
+```
