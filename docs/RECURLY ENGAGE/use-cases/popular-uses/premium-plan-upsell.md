@@ -1,6 +1,8 @@
 ---
 title: Premium Plan Adoption
-excerpt: How to use Redfast to increase the adoption of add-ons and premium plans
+excerpt: >-
+  Configuration guide for the Premium Plan Adoption use case, which targets
+  engaged users with contextual prompts to upgrade to premium plans or add-ons.
 deprecated: false
 hidden: true
 metadata:
@@ -10,46 +12,56 @@ metadata:
 next:
   description: ''
 ---
-Most subscription businesses use outbound email campaigns to inform users about premium plans and add-ons. While this can work with your highly engaged users, your casual users require context to establish relevance for why they should make this purchase.
+# Overview
 
-Redfast provides a highly personalized approach to getting your users to purchase add-ons and premium plans. By targeting users on the site who have not purchased the add-on or the premium plan with a prompt, you can provide the user with greater context. You can further increase the context by creating a trigger based on a screen or event on the site that can be used to show the prompt.
+Most subscription businesses use outbound email campaigns to inform users about premium plans and add-ons. While effective for highly engaged users, casual visitors need context to understand the value of upgrading. Recurly Engage offers an on-site, personalized approach: prompt users who haven’t purchased an add-on or premium plan, using screen- or event-based triggers to deliver relevant upgrade messaging precisely when it matters.
 
-<br />
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+
+# Definition
+
+The **Premium Plan Adoption** use case delivers targeted on-site prompts to users who meet engagement criteria but haven’t yet upgraded, leveraging contextual triggers (page views or events) for maximum relevance.
+
+# Key benefits
+
+* **Increased conversions**: Reach users in context to motivate plan upgrades.
+* **Personalized offers**: Dynamically tailor messaging based on user behavior and variables (e.g., first name).
+* **Optimized timing**: Trigger upgrade prompts on key screens or after specific actions to maximize impact.
+
+# Key details
+
+This scenario prompts users on your site who have not yet purchased the add-on or premium plan, providing them with contextual upgrade offers. By configuring the trigger on relevant screens or events, you ensure users see the right message at the right time.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/b953f97-Screenshot_2024-04-22_at_4.48.39_PM.png" />
 
-<br />
-
 ***
 
-## Step-by-step
+## Guide
 
-* [ ] Modify the `Engaged Users` segment to target users on the monthly subscription plan
-
-* [ ] Follow these instructions to [Create a Popup Prompt](create-a-pop-up) 
-
-* [ ] Modify the headline and message, including any dynamic variables for personalization, such as first name
-
-* [ ] Under Add Action, select your [Billing](billing) platform and specify the plan that the user should be upgraded to
-
-* [ ] Additionally, specify when you would like the plan change to be effective
-
-* [ ] Set the segment to **Test Users**.
-
-* [ ] Set the trigger to activate on the home page of your site (usually '/')
-
-* [ ] Set the prompt to start
-
-* [ ] Add your user ID to the Test Users segment (Settings > Users > Test Users)
-
-* [ ] Confirm that the prompt is triggered when visiting the homepage
-
-* [ ] Update the targeted segments for this prompt to include `Engaged Users`
-
-<br />
+1. **Modify** the **Engaged Users** segment to include users on the target subscription plan.
+2. **Create** a **Popup Prompt** (Settings > Prompts) and **customize** the headline, message, and dynamic variables (e.g., first name).
+3. Under **Add Action**, **select** your [Billing](billing) platform and specify the plan to which users should upgrade.
+4. Optionally **set** the effective date for the plan change.
+5. **Target** the prompt to the **Test Users** segment.
+6. **Set** the trigger to fire on the homepage (e.g., URL `/`), or other key pages.
+7. **Start** the prompt.
+8. **Add** your User ID to **Test Users** (Settings > Users > Test Users).
+9. **Verify** the prompt launches when you visit the homepage.
+10. **Update** the prompt’s targeting to include **Engaged Users** for production roll-out.
 
 ## Example
 
 <HTMLBlock>{`
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c977818bce834868ae954663a38083f2?sid=6e1c0360-be70-4276-ba3e-38d96ed60a1b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/c977818bce834868ae954663a38083f2?sid=6e1c0360-be70-4276-ba3e-38d96ed60a1b"
+    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
 `}</HTMLBlock>
