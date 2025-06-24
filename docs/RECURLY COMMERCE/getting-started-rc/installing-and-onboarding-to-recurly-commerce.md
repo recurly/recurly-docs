@@ -11,10 +11,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
-
 ### Prerequisites & limitations
 
 * A Shopify or Shopify Plus store is required.
