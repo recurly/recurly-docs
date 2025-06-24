@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
-
-* Available on Recurly Commerce Pro and Enterprise plans only.
-
-# Definition
-
 Bulk Updater lets you modify subscription contracts in bulk—no need to edit each subscriber individually.
 
 # Key benefits
