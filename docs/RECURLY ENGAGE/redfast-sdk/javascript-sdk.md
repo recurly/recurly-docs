@@ -1,5 +1,5 @@
 ---
-title: JS (Web and CTV)
+title: Javascript (Web and CTV)
 excerpt: ''
 deprecated: false
 hidden: true
