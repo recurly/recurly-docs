@@ -1,6 +1,8 @@
 ---
 title: Cancel save
-excerpt: How to use Redfast to reduce active cancellations (voluntary churn)
+excerpt: >-
+  Configuration guide for the “Cancel Save” use case, which intercepts
+  cancellation flows to offer retention prompts.
 deprecated: false
 hidden: true
 metadata:
@@ -13,10 +15,6 @@ next:
       title: Popular Uses
       type: basic
 ---
-#### Metadata description
-
-Configuration guide for the “Cancel Save” use case, which intercepts cancellation flows to offer retention prompts.
-
 # Overview
 
 ### Video
