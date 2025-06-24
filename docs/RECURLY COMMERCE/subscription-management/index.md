@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 Subscriber Management in Recurly Commerce centralizes everything you need to launch and refine your subscription business: from building and tweaking subscription plans to updating individual customer contracts and auditing every order and change.
 
 # Key benefits
