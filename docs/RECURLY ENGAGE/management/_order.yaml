@@ -1,5 +1,6 @@
 - prompts
 - editor
+- prompt-settings
 - triggers
 - limits
 - schedule-1
@@ -7,4 +8,3 @@
 - actions-1
 - experiments-1
 - default-prompt-sizes
-- prompt-settings
