@@ -1,5 +1,5 @@
 ---
-title: Personalized Onboarding
+title: Personalized onboarding
 excerpt: Use Redfast to onboard new and existing users in a personalized manner
 deprecated: false
 hidden: true
@@ -14,35 +14,55 @@ next:
       slug: popular-uses
       title: Popular Uses
 ---
-Traditional approaches to onboarding new users include a step-by-step home page tour with highlighted callouts to various features. This method is relevant for B2B sites or apps, but B2C service users find it annoying as it impedes their flow. 
+#### Metadata description
 
-Redfast's Journey guide is a breakthrough new approach to onboarding users in a personalized and contextual manner. Here is how it works.
+Configuration guide for the Personalized Onboarding use case, leveraging Journey guides to educate new users contextually.
 
-Even before a new user arrives on the site, a Redfast guide is configured with links to the key elements of the site and the order in which they should be presented to the end user. Further, the elements are only shown to the user if they have not visited that section or performed the desired action. Lastly, the prompts in this guide can be configured to be shown over multiple visits. All of this produces a much more user-friendly approach to the challenge of educating and informing new users.
+# Overview
 
-<br />
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+
+# Definition
+
+Traditional onboarding tours interrupt the user flow with step-by-step callouts. The **Personalized Onboarding** Journey guide delivers prompts only for actions or sections the user hasn’t yet seen—and can span multiple visits—for a frictionless, contextual experience.
+
+# Key benefits
+
+* **Contextual guidance**: Show prompts only for features the user hasn’t accessed.
+* **Multi-visit flexibility**: Space your onboarding steps across sessions to avoid overload.
+* **Higher engagement**: Streamlined education that respects the user’s flow.
+
+# Key details
+
+Traditional approaches to onboarding new users include a step-by-step homepage tour with highlighted callouts to various features. This method may work for B2B, but B2C users often find it disruptive.
+
+Recurly Engage’s Journey guide lets you predefine a sequence of prompts linked to key site elements. Each prompt fires only if the user hasn’t completed the associated action, and you can schedule them over multiple visits—resulting in a more user-friendly onboarding flow.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/8e77a00-Screenshot_2024-04-19_at_1.33.00_PM.png" />
 
-<br />
+> 📘 Important
+>
+> Create usage trackers for your key features and content, then reference those trackers in your onboarding guide to target only first-time interactions.
 
-> 📘 Create trackers for key features and content of your site and use them in an onboarding guide to only target users that have not accessed those items.
+## Guide
 
-***
+1. **Create** a new Guide (Settings > Guides) and **set** the type to **Journey**.
+2. **Configure** the first prompt as a **Popup** targeting first-time visitors.
+3. **Set** the CTA on that prompt to either trigger the feature directly (1-Click) or **redirect** to the relevant page.
+4. **Add** a second prompt in the guide and schedule it for the user’s next visit.
+5. **Add** a third prompt scheduled for a subsequent visit as needed.
+6. **Target** the guide to the **Test Users** segment.
+7. **Specify** the trigger conditions (e.g., specific page URLs or tracker events).
+8. **Start** the Guide.
+9. **Add** your User ID to **Test Users** (Settings > Users > Test Users).
+10. **Verify** that each prompt appears in the correct order across visits.
 
-## Step-by-step
-
-* [ ] Follow these instructions to [Create a Guide](guides) and set the type to **Journey**
-* [ ] Set the first prompt to be a popup prompt to be shown to first-time users
-* [ ] Set the CTA for this prompt to either 1-click trigger the feature/content or redirect
-* [ ] Set the second prompt in the guide to show on the next visit
-* [ ] Set the third prompt to show on the subsequent (or later) visit
-* [ ] Set the segment to **Test Users**.
-* [ ] Set the trigger to activate on one or more page URLs of your site
-* [ ] Start the Guide
-* [ ] Add your user ID to the Test Users segment (Settings > Users > Test Users)
-* [ ] Confirm that the Guide is triggered as configured
-
-<br />
-
-> 📘 Switching up the order of your unique selling propositions can be done via an A-B experiment
+> 📘 Important
+>
+> To experiment with different onboarding sequences, run an A/B test on your guide prompts.
