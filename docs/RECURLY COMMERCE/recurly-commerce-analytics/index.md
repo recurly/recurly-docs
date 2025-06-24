@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 Recurly Commerce Analytics provides powerful dashboards and exports to help you monitor subscription health, understand subscriber behavior, and plan for future growth.
 
 # Key benefits
