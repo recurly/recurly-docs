@@ -1,6 +1,8 @@
 ---
 title: Accessibility
-excerpt: ''
+excerpt: >-
+  Accessibility compliance guidelines for Recurly Engage prompts, aligned with
+  WCAG standards.
 deprecated: false
 hidden: true
 metadata:
@@ -10,60 +12,80 @@ metadata:
 next:
   description: ''
 ---
-Redfast monitors the Web Content Accessibility Guidelines (WCAG), which outline a set of guidelines to provide greater accessibility to the components rendered by the platform. The following describes the steps taken to comply with relevant guidelines. Please reach out to your account manager if you have questions pertaining to how to best configure Redfast prompts within your existing WCAG compliant web site.
+# Overview
+
+Recurly Engage prompts are designed to meet key aspects of the Web Content Accessibility Guidelines (WCAG), ensuring that all users—including those using assistive technologies—can perceive, operate, and understand prompt content.
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+# Definition
+
+The **Accessibility** section outlines how Recurly Engage implements WCAG principles—Perceivable, Operable, Understandable, and Robust—within prompt designs and interactions.
+
+# Key benefits
+
+* **Screen reader compatibility**: All prompt text is rendered as live text, not images.
+* **Keyboard navigation**: Prompts and buttons fully support keyboard focus and actions.
+* **Non-flashing content**: Default designs avoid flashing that could trigger seizures.
+
+# Key details
+
+Recurly Engage monitors and implements the following WCAG guidelines for prompt components. Contact your Customer Success Manager for help integrating prompts into an already WCAG-compliant site.
 
 ## Perceivable
 
-### 1.1 Text Alternatives
+### Text alternatives
 
-All text configured for a prompt is rendered without further modification and not composited as an image. This ensures compatibility with screen readers. Images utilized within a prompt are used in the background for styling purposes. A text alternative may be specified for the background image if needed.
+All prompt text is rendered as HTML text (not composited into images), ensuring compatibility with screen readers. Background images used for styling may include an optional text alternative.
 
-### 1.2 Time-based Media
+### Time-based media
 
-Not applicable.
+Not applicable to prompt interactions.
 
-### 1.3 Adaptable
+### Adaptable
 
-Not applicable for common use cases.
+Not applicable for standard prompt configurations.
 
-### 1.4 Distinguishable
+### Distinguishable
 
-When configuring a prompt, Redfast provides the designer the flexibility to address these set of guidelines.
+Designers can customize colors, contrast, and spacing in the prompt editor to meet visual clarity requirements.
 
 ## Operable
 
-### 2.1 Keyboard Accessible
+### Keyboard accessible
 
-Keyboard controls work as intended across all prompt types. Buttons rendered by the Redfast SDK support keyboard-based focus and click actions. For non-standard elements that accept a click, the designer may make custom HTML/CSS modifications to comply with guidelines.
+All buttons and interactive elements support keyboard focus, activation via Enter/Space, and logical tab order. Custom HTML/CSS modifications may be applied for non-standard elements.
 
-### 2.2 Enough Time
+### Enough time
 
-Prompts can be configured with a design and a specified amount of time the content is available to comply with this set of guidelines.
+Prompts with timers can be configured to allow sufficient time for users to read and interact, and timers may be paused or extended.
 
-### 2.3 Seizures
+### Seizures
 
-By default, prompts do not contain any flashing that may induce this medical condition.
+Default prompt designs do not include rapid flashing or animations that could induce seizures.
 
-### 2.4 Navigable
+### Navigable
 
-Redfast prompts are generally utilized to introduce smaller pieces of content within an existing web page, and most of these guidelines apply to the existing web page containing all of the content and do not apply to Redfast directly. To the extent these guidelines call for navigation of Redfast elements within the context of the entire web page, Redfast can be configured with a design for compliance..
+Prompts integrate into existing page layouts without disrupting global navigation. Designers can adjust focus behavior to ensure a logical flow.
 
 ## Understandable
 
-### 3.1 Readable
+### Readable
 
-Redfast provides a configuration console from which designers have full editorial control over the language and text content of the prompt.
+Prompt text is fully customizable via the console, allowing clear, plain-language messaging.
 
-### 3.2 Predictable
+### Predictable
 
-Within a Redfast prompt, focus events operate without an unintended change of context. Guidelines about Input and Consistent Navigation generally apply to the entire web page, and not the Redfast prompt specifically. To the extent needed, Redfast prompts can be configured within the console to fit within the guidelines required by the parent web page.
+Prompt interactions do not cause unexpected context changes. Designers should ensure any custom behaviors align with page-level consistency guidelines.
 
-### 3.3 Input Assistance
+### Input assistance
 
-If applicable, Redfast provides error messages if input is invalid/does not pass validation. Error messages are removed once input has been corrected.
+If a prompt collects user input (e.g., survey responses), error messages appear inline and are cleared when input is corrected.
 
 ## Robust
 
-### 4.1 Compatible
+### Compatible
 
-Redfast complies with modern web standards and utilizes standard HTML elements per best practice guidelines. Per the specification, rendered HTML will be nested and have complete start and end tags. Note that designers must ensure compliance if utilizing custom HTML/CSS in the configuration of a prompt.
+Recurly Engage prompts use standard, well-formed HTML elements. Custom HTML/CSS must also adhere to best practices to maintain accessibility compliance.
