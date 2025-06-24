@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 The Shopify settings section outlines how to fulfill and refund subscription orders, manage discount codes, configure shipping profiles, and leverage order tagging—all within Shopify’s interface.
 
 # Key benefits
