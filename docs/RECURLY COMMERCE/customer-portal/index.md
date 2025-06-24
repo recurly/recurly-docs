@@ -11,12 +11,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 The Customer Portal is the self-service area where subscribers can view and manage every aspect of their subscriptions—skips, pauses, swaps, gifting, billing info, and more.
 
 # Key benefits
