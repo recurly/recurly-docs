@@ -1,6 +1,8 @@
 ---
-title: Testing Tips
-excerpt: ''
+title: Testing tips
+excerpt: >-
+  Testing best practices for validating prompt delivery and user state in
+  Recurly Engage.
 deprecated: false
 hidden: true
 metadata:
@@ -10,17 +12,41 @@ metadata:
 next:
   description: ''
 ---
-### Setup Test Users
+# Overview
 
-You may whitelist specific user IDs to be part of the "Test Users" segment. This allows you to test various prompts that are seen only by users within this group. See [here](test-users) for instructions on setting up test users.
+The **Testing Tips** page provides recommendations to ensure accurate, reliable testing of prompts using the Test Users segment and to handle reset and propagation considerations.
 
-### Test Cases
+### Required plan
 
-When testing, we recommend the following tips as you perform your test cases:
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-* Wait 5 seconds or so after starting the app before performing the test. Due to network connectivity, it may take a few seconds for the SDK to retrieve the prompt data.
-* Perform the following steps to ensure the test user reset process completes properly:
-  * Reset Test User from web interface
-  * Start the app, wait a few seconds, close the app (this allows the SDK to completely reset the user)
-  * Start the app, wait a few seconds and perform the test
-* Note that pausing and starting prompt may take a few minutes to take effect due to propagation time. Leaving your test app open for a bit will help reduce propagation time.
+### Prerequisites & limitations
+
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+
+# Definition
+
+The **Testing Tips** guide outlines steps and considerations for effectively testing prompt configurations, including user whitelisting, reset workflows, and timing allowances.
+
+# Key benefits
+
+* **Reliable validation**: Confirm that prompts render correctly under production-like conditions.
+* **Efficient troubleshooting**: Quickly reset and re-test user states to isolate issues.
+* **Consistent results**: Mitigate network and caching delays for standardized test outcomes.
+
+# Key details
+
+## Setup Test Users
+
+You may whitelist specific user IDs to be part of the **Test Users** segment. This allows you to test prompts that are visible only to users in this group. See [Test Users](test-users) for instructions on configuring your Test Users.
+
+## Test Cases
+
+When executing test cases, we recommend:
+
+* **Allow SDK initialization**: Wait at least 5 seconds after launching the app before testing. Network latency can delay prompt retrieval.
+* **Reset and retest workflow**:
+  1. **Reset** the Test User via the web interface.
+  2. **Launch** the app, wait a few seconds, then **close** the app—this ensures the SDK fully resets the user state.
+  3. **Relaunch** the app, wait a few seconds, then **perform** your test.
+* **Propagation delay**: Changes such as pausing or starting prompts may take a few minutes to propagate. Keeping the test app open helps reduce delay and stabilizes test conditions.
