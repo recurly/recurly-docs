@@ -217,9 +217,3 @@ Reset a user’s prompt state for testing:
 ```javascript
 promptMgr.resetGoal();
 ```
-
-```
-```
-
-```javascript
-```
