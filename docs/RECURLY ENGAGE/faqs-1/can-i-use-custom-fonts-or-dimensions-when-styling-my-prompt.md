@@ -24,6 +24,7 @@ For example, to set the modal content wrapper to use Roboto:
 .rfmodal-content-wrapper {
   font-family: "Roboto", sans-serif !important;
 }
+```
 
 > 📘 Only use fonts that are already loaded on your website.
 
