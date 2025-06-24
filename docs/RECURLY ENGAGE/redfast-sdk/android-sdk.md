@@ -1,6 +1,8 @@
 ---
 title: Android
-excerpt: ''
+excerpt: >-
+  Configuration guide for the Recurly Engage Android SDK, enabling native prompt
+  display and usage tracking in your mobile and TV apps.
 deprecated: false
 hidden: true
 metadata:
@@ -10,19 +12,39 @@ metadata:
 next:
   description: ''
 ---
-The Redfast Android SDK brings the ability to monitor consumption and show Redfast configured prompts within your native Android app. The Android SDK is the common starting point for Android Phones, Tablets, TVs, Fire Tablets, and Fire TV. The SDK automatically handles display of modals (popups, video popups and banners) and the related user triggered events. Inline prompts are accessible via helper functions with the necessary metadata for rendering within chosen areas of the app.
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
+
+### Prerequisites & limitations
+
+- You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+
+# Definition
+
+The **Recurly Engage Android SDK** provides support for Android phones, tablets, TVs, Fire Tablets, and Fire TV. The SDK automatically handles display of modals (popups, video popups, and banners) and related user-triggered events. Inline prompts are accessible via helper functions with the necessary metadata for rendering within chosen areas of the app.
+
+# Key benefits
+
+- **SDK integration**: Seamlessly embed prompts and track events across Android form factors.  
+- **Automatic UI handling**: Built-in support for modals, banners, and inline prompts without manual UI code.  
+- **Broad device support**: One SDK for phones, tablets, and TV devices.
+
+# Key details
+
+The Recurly Engage Android SDK brings the ability to monitor consumption and show configured prompts within your native Android apps.
 
 ## Install the SDK
 
-The Redfast Android SDK includes support for mobile, tablet and TV devices. The latest SDK version as well as the source code of an example app is available [here](https://github.com/redfast/redfast-sdk-android/releases). Please reach out to your customer success manager if you would like the keys needed to run the example app.
+The Recurly Engage Android SDK supports mobile, tablet, and TV devices. The latest SDK version and example app source code are available [here](https://github.com/redfast/redfast-sdk-android/releases). Contact your Customer Success Manager for access keys to run the example.
 
-There are two options with installing the SDK: Add a dependency to an existing Gradle/Maven config, or add the local SDK packages.
-
-### Gradle/Maven Config
+### Gradle/Maven configuration
 
 **Gradle**
 
-```java
+```gradle
 // settings.gradle
 dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -32,176 +54,146 @@ dependencyResolutionManagement {
   }
 }
 
-// dependency
+// dependencies
 dependencies {
-  "amazonImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.3")
-  "googleImplementation"("com.github.redfast.redfast-sdk-android-build:redfast-sdk-google:v2.2.1.3")
+  amazonImplementation("com.github.redfast.redfast-sdk-android-build:redfast-sdk-amazon:v2.2.1.3")
+  googleImplementation("com.github.redfast.redfast-sdk-android-build:redfast-sdk-google:v2.2.1.3")
 }
-```
+````
 
 **Maven**
 
-```java
-// Maven pom.xml
+```xml
+<!-- pom.xml -->
 <repositories>
   <repository>
     <id>jitpack.io</id>
     <url>https://jitpack.io</url>
   </repository>
 </repositories>
-
-// dependency
-<dependency>
-  <groupId>com.github.redfast.redfast-sdk-android-build</groupId>
-  <artifactId>redfast-sdk-google</artifactId> // or redfast-sdk-amazon
-  <version>v2.2.1.3</version>
-</dependency>
+<dependencies>
+  <dependency>
+    <groupId>com.github.redfast.redfast-sdk-android-build</groupId>
+    <artifactId>redfast-sdk-google</artifactId> <!-- or redfast-sdk-amazon -->
+    <version>v2.2.1.3</version>
+  </dependency>
+</dependencies>
 ```
 
-### Local Package
+### Local package
 
-**Steps:**
+1. **Download** the latest `.aar` files from [here](https://github.com/redfast/redfast-sdk-android/releases).
 
-1. Download the latest .aar files from [here](https://github.com/redfast/redfast-sdk-android/releases)
-2. Create folder “libs” under “src/main”
-3. Add .aar libraries to “libs” folder
-4. Add library as a dependency in “build.gradle”. Example:
+2. **Create** a `libs` folder under `src/main`.
+
+3. **Add** the `.aar` libraries to the `libs` folder.
+
+4. **Add** them as dependencies in `build.gradle`:
+
+   ```gradle
+   implementation(files("src/main/libs/redfast-google-release.aar"))
+   implementation(files("src/main/libs/redfast-amazon-release.aar"))
+   ```
+
+5. For Google IAP support, **also add**:
+
+   ```gradle
+   implementation("com.android.billingclient:billing:6.0.1")
+   implementation("com.android.billingclient:billing-ktx:6.0.1")
+   ```
+
+6. **Enable** viewBinding and dataBinding:
+
+   ```gradle
+   buildFeatures {
+     viewBinding = true
+     dataBinding = true
+   }
+   ```
+
+## Initialize Recurly Engage
+
+In your app’s main activity or Application class, initialize the SDK with your AppID and UserID (found under **Settings > Application** in Pulse):
 
 ```kotlin
-"implementation"(files("src/main/libs/redfast-google-release.aar"))
-"implementation"(files("src/main/libs/redfast-amazon-release.aar"))
+PromotionManager.initPromotion("[Your AppID]", "[Your UserID]")
 ```
 
-4. For the`google-sdk.aar`library, it is also required to add the Android billing library dependency. Example:
+## Trigger popup via screen name
+
+In your activity or fragment’s `onCreate`:
 
 ```kotlin
-"implementation"("com.android.billingclient:billing:6.0.1")
-"implementation"("com.android.billingclient:billing-ktx:6.0.1")
-```
-
-5. Enable the following features in `build.gradle`:
-
-```kotlin Kotlin
-buildFeatures {
-  viewBinding = true
-  dataBinding = true
-}
-```
-
-## Initialize Redfast
-
-In the your app's main activity or application file, add the following line and replace with your appID and the userID of the current user. The appID is available on the Settings > Application screen within Pulse.
-
-```kotlin Kotlin
-PromotionManager.initPromotion([appID], [userID])
-```
-
-## Trigger Popup via Screen Name
-
-Allow the Redfast SDK to display a popup on a specific Screen Name. Add the following line in the activity or fragment's onCreate function:
-
-```kotlin
-override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-    ...
-    PromotionManager.setScreenName(binding.root, "ViewController") {
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    PromotionManager.setScreenName(binding.root, "HomeScreen") {
         when (it.code) {
             PromotionResult.timerExpired,
             PromotionResult.declined,
             PromotionResult.abort,
-            PromotionResult.accepted...
+            PromotionResult.accepted -> {
+                // handle each case
+            }
+            else -> { }
         }
     }
 }
 ```
 
-## Trigger Popup via Button Click
-
-Allow the Redfast SDK to display a popup configured with a Screen Name and Click ID. Add the following line in the button's click handler:
+## Trigger popup via button click
 
 ```kotlin
-PromotionManager.getTriggerablePrompts(screenName = "home", clickId = "clickId", type = PathType.MODAL) {
-  val item = it.asList().firstOrNull()
-  item?.let { prompt ->
-    PromotionManager.showModal(promptId = prompt.id, requireContext()) {
-      Log.d("HomeFragment", "${it.code}")
+PromotionManager.getTriggerablePrompts(
+    screenName = "home",
+    clickId = "click_purchase",
+    type = PathType.MODAL
+) { prompts ->
+    prompts.firstOrNull()?.let { prompt ->
+        PromotionManager.showModal(prompt.id, requireContext()) { result ->
+            when (result.code) {
+                PromotionResult.accepted,
+                PromotionResult.declined,
+                PromotionResult.timerExpired,
+                PromotionResult.abort -> {
+                    // handle each case
+                }
+                else -> { }
+            }
+        }
     }
-  }
 }
 ```
 
-## Retrieve Inline Prompts
-
-The SDK provides a function to retrieve a collection of inline items that are configured to trigger based on a Screen Name and/or Click ID. The properties of each Prompt object may be used to render the inline prompt in the appropriate location.
+## Retrieve inline prompts
 
 ```kotlin
 PromotionManager.getTriggerablePrompts("ScreenName", "ClickId") { prompts ->
-  prompts.firstOrNull()?.let {
-    /* Inline Prompt Image - based on device settings, one of:
-      rf_settings_bg_image_android_os_fire_tv_composite
-      rf_settings_bg_image_android_os_tablet_composite
-      rf_settings_bg_image_android_os_phone_composite
-    */
-    val bgImage = it.bgImage
-    // Device Metadata - rf_metadata
-    val deviceMeta = it.deviceMeta
-    // Deeplink - rf_settings_deeplink
-    val deeplink  = it.deeplink
-    // Confirm Button Color - rf_retention_confirm_button_text_color
-    val button1Color = it.button1Color
-    // Second Button Color - rf_retention_confirm_button_2_text_color
-    val button2Color = it.button2Color
-    // Cancel Button Color - rf_retention_cancel_button_text_color
-    val button3Color = it.button3Color
-    // All of the properties related to Timer
-    // rf_settings_close_seconds
-    val timerSeconds = it.timerSeconds
-    // rf_settings_close_seconds
-    val timerText = it.timerText
-    // rf_settings_timer_font_size
-    val timerTextFontSize = it.timerTextFontSize
-    // rf_settings_timer_font_color
-    val timerTextFontColor = it.timerTextFontColor
-    // All of the properties
-    val properties = it.properties
- 
-    // Following methods will report the interaction to Redfast:
-    // Invoke when inline prompt is shown to user
-    it.impression()
-    // Invoke when user dismisses prompt
-    it.dismiss()
-    // Invoke when user declines prompt (Button 3)
-    it.decline()
-    // Invoke when timerSeconds expire and prompt is dismissed
-    it.timeout()
-    // Invoke if the "holdout" property is "true". This is normally automatically invoked.
-    it.holdout()
-    // Invoke when Button 1 is pressed
-    it.click()
-    // Invoke when Button 2 is pressed
-    it.click2()
-  }
+    prompts.firstOrNull()?.let { prompt ->
+        // Access properties
+        prompt.impression()
+        prompt.dismiss()
+        prompt.decline()
+        prompt.timeout()
+        prompt.holdout()
+        prompt.click()
+        prompt.click2()
+    }
 }
 ```
 
-## Deep Link to a Media Asset
+## Deep link to a media asset
 
-You can insert deeplink key-value pairs in Pulse. When the user invokes the CTA, you can utilize these key-value pairs to send the user to a specific media asset within the app.
+Configure deep links in Pulse. Access them via callbacks for `setScreenName`, `buttonClick`, or `getTriggerablePrompts`.
 
-The deeplink value is saved in the completion callback from your `setScreenName`, `buttonClick`, and `getInlines`
+## Access custom metadata
 
-## Access Custom Metadata
+Decode custom metadata:
 
-Custom key-value pairs can be added to an item via Pulse. These values may be used to perform an action that is not the typical media asset deep link, like sending the user to a registration screen.
+```kotlin
+val meta = prompt.deviceMeta?.decodeValue(Meta::class.java)
+```
 
-The meta data json is saved in the completion callback from your `setScreenName`, `buttonClick`, and `getInlines`
-
-## Send Usage Tracking Event
-
-Use this to send custom events using the SDK. If configured as a tracker within Pulse, these custom events can be used to target prompts at specific sets of users.
+## Send usage tracking event
 
 ```kotlin
 PromotionManager.customTrack("[customTrackId]")
@@ -209,37 +201,42 @@ PromotionManager.customTrack("[customTrackId]")
 
 ## Set UserId
 
-You may change the userid after the SDK has been initialized, for example, when the user authenticates mid session. Note that it may take several seconds for the user's prompts to refresh.
+Update the user ID mid-session:
 
 ```kotlin
-PromotionManager.setUserId("[New userID]")
+PromotionManager.setUserId("[New UserID]")
 ```
 
-## Debug View
+## Debug view
 
-The SDK provides a debug view modal, in which you can use the onscreen keyboard to either reset the current user or set a new user id.
+Show the debug modal:
 
-To trigger the debug view for a specific screen, you can call the `PromotionManager.showDebugView` function.
+```kotlin
+PromotionManager.showDebugView(this)
+```
 
 ## External libraries
 
-Common
-
+```text
+com.squareup.moshi:moshi-kotlin:1.9.2
+com.squareup.moshi:moshi-kotlin-codegen:1.9.2
+com.squareup.retrofit2:retrofit:2.6.2
+com.squareup.retrofit2:converter-moshi:2.6.2
+com.squareup.okhttp3:okhttp:4.2.2
+com.squareup.okhttp3:logging-interceptor:4.2.2
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1
+org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
+com.github.bumptech.glide:glide:4.16.0
+com.google.code.gson:gson:2.8.9
 ```
-    com.squareup.moshi:moshi-kotlin:1.9.2
-    com.squareup.moshi:moshi-kotlin-codegen:1.9.2
-    com.squareup.retrofit2:retrofit:2.6.2
-    com.squareup.retrofit2:converter-moshi:2.6.2
-    com.squareup.okhttp3:okhttp:4.2.2
-    com.squareup.okhttp3:logging-interceptor:4.2.2
-    org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1
-    org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1
-    com.github.bumptech.glide:glide:4.16.0
-    com.google.code.gson:gson:2.8.9
+```text
+Google IAP:
+  com.android.billingclient:billing:6.0.1
+  com.android.billingclient:billing-ktx:6.0.1
+
+Amazon IAP:
+  amazon/in-app-purchasing-2.0.76.jar
 ```
-
-Conditional
-
 ```
 Google IAP: 
     com.android.billingclient:billing:6.0.1
