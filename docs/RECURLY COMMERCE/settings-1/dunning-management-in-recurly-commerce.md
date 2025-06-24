@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 Dunning is an automated payment management process that allows you to set up retries for failed payment methods on a specific schedule and send reminders about outstanding dues after a declined payment.
 
 # Key benefits
