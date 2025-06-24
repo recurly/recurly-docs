@@ -10,153 +10,40 @@ metadata:
 next:
   description: ''
 ---
-The following outlines the most popular uses of Redfast across the customer lifecycle. Churn-related uses are a popular starting point for most customers.
+#### Metadata description
 
-<Table align={["left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th style={{ textAlign: "left" }}>
-        Acquisition
-      </th>
+Overview of the most popular use cases for Recurly Engage prompts across the customer lifecycle.
 
-      <th style={{ textAlign: "left" }}>
-        Engagement
-      </th>
+# Overview
 
-      <th style={{ textAlign: "left" }}>
-        Upsell
-      </th>
+From acquisition to churn prevention, Recurly Engage supports a variety of proven engagement patterns to drive conversions, increase retention, and maximize customer value.
 
-      <th style={{ textAlign: "left" }}>
-        Churn
-      </th>
-    </tr>
-  </thead>
+### Required plan
 
-  <tbody>
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        [**Abandon Cart**](abandon-cart)  
+This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-        Prompt exiting and return visitors who started signup to finish/resume checkout
-      </td>
+### Prerequisites & limitations
 
-      <td style={{ textAlign: "left" }}>
-        [**Personalized Onboarding**](personalized-onboarding)  
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
 
-        Onboard new users with prompts only showing unused features
-      </td>
+# Definition
 
-      <td style={{ textAlign: "left" }}>
-        [**Premium Plan Adoption**](premium-plan-upsell)  
+**Popular use cases** are turnkey prompt patterns and templates that address common business goals—such as cart recovery, feature adoption, upsells, and churn mitigation—allowing you to deploy best practices with minimal configuration.
 
-        Prompt users with high engagement to upgrade with an incentive
-      </td>
+# Key benefits
 
-      <td style={{ textAlign: "left" }}>
-        **[Cancel Save](cancel-save)**  
+* **Accelerated outcomes**: Quickly launch battle-tested engagement patterns without trial and error.
+* **Cross-lifecycle coverage**: Address key moments from acquisition through renewal in one unified tool.
+* **Data-driven success**: Leverage built-in analytics and recommendations based on real customer behavior.
 
-        Reduce cancellations by using a survey response to serve a dynamic save offer to canceling users
-      </td>
-    </tr>
+# Key details
 
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        **[1-Click Resubscribe](one-click-resubscribe)**\
-        Customize MLP, site experience for churned users to resubscribe
-      </td>
+The following outlines the most popular uses of Recurly Engage across the customer lifecycle. Churn-related use cases are often the starting point for many customers.
 
-      <td style={{ textAlign: "left" }}>
-        **Boost App Installs**  
-
-        Use a survey to guide users to install and activate on other platforms
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Personalize Add Ons**  
-
-        Personalize one time purchase items for each user
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **[Involuntary Churn](failed-rebill)**  
-
-        Active remediation via Redfast guide for failed payments
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        **Increase Registration**  
-
-        Prompt engaged users to provide email, mobile info contextually
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Increase Feature Adoption**  
-
-        Personalize feature adoption based on usage
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Shorten Trials**  
-
-        Target engaged trialists with an incentive to subscribe
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Calm Renewal Anxiety**  
-
-        Prompt users with declining usage and upcoming renewals
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        **Personalize by Source**  
-
-        Customize site experience for SEM, SEO, partner, organic visitors
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Increase Editorial Impact**  
-
-        Enable editorial team to place content recommendation in active user path
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **1-Click Upsell Paywalls**  
-
-        Prompts triggered by usage meters like concurrency, device, location
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Dynamic Downgrade**  
-
-        Match user with lower tier plan based on churn events or consumption
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Improve Error Experience**  
-
-        Prompt users experiencing site errors with acknowledgement or an offer
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        **Win Back Guide**  
-
-        Guide dunning users or save offer users to engagement building actions
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Acquisition                                                                                                           | Engagement                                                                                                              | Upsell                                                                                                               | Churn                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [**Abandon Cart**](abandon-cart)<br />Prompt exiting and return visitors who started signup to finish/resume checkout | [**Personalized Onboarding**](personalized-onboarding)<br />Onboard new users with prompts only showing unused features | [**Premium Plan Adoption**](premium-plan-upsell)<br />Prompt users with high engagement to upgrade with an incentive | **[Cancel Save](cancel-save)**<br />Reduce cancellations via survey-driven save offers         |
+| **[1-Click Resubscribe](one-click-resubscribe)**<br />Customize flow for churned users to resubscribe with one click  | **Boost App Installs**<br />Use a survey to guide users to install and activate on other platforms                      | **Personalize Add-Ons**<br />Recommend one-time purchase items tailored to each user                                 | **[Involuntary Churn](failed-rebill)**<br />Remediate failed payments with active guides       |
+| **Increase Registration**<br />Prompt engaged visitors to submit email or mobile info contextually                    | **Increase Feature Adoption**<br />Personalize feature discovery based on usage patterns                                | **Shorten Trials**<br />Target engaged trialists with an incentive to subscribe early                                | **Calm Renewal Anxiety**<br />Prompt users with declining usage ahead of renewals              |
+| **Personalize by Source**<br />Tailor site experience for SEM, SEO, partner, or organic visitors                      | **Increase Editorial Impact**<br />Enable content team to surface recommendations in-app                                | **1-Click Upsell Paywalls**<br />Trigger prompts based on usage meters like concurrency or location                  | **Dynamic Downgrade**<br />Match users to a lower-tier plan based on churn risk or consumption |
+| *—*                                                                                                                   | **Improve Error Experience**<br />Prompt users experiencing errors with acknowledgement or offer                        | *—*                                                                                                                  | **Win Back Guide**<br />Guide save-offer or dunning users back to engagement                   |
