@@ -54,8 +54,6 @@ Recurly Engage provides an additional tool to reduce involuntary churn by using 
 >
 > Make sure you enable the **Sync events** option, if available for your billing platform under **Settings > Actions**. This ensures that dunning updates are synced with your Recurly Engage segments.
 
-***
-
 ## Guide
 
 1. **Follow** these instructions to [Create a Guide](guides) and **choose** the **Journey** type.
