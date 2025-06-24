@@ -20,8 +20,8 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-- You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.  
-- No additional prerequisites or limitations.
+* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
+* No additional prerequisites or limitations.
 
 # Definition
 
@@ -29,9 +29,9 @@ The **Recurly Engage Roku SDK** provides the ability to monitor consumption and 
 
 # Key benefits
 
-- **Seamless integration**: Easily add prompt functionality to your Roku apps via the Roku SceneGraph SDK.  
-- **Automatic event handling**: Built-in support for prompt display, button clicks, and lifecycle events without extra UI code.  
-- **Flexible triggers**: Activate prompts by screen name or button click to fit your application flow.
+* **Seamless integration**: Easily add prompt functionality to your Roku apps via the Roku SceneGraph SDK.
+* **Automatic event handling**: Built-in support for prompt display, button clicks, and lifecycle events without extra UI code.
+* **Flexible triggers**: Activate prompts by screen name or button click to fit your application flow.
 
 # Key details
 
@@ -44,9 +44,10 @@ To build your project with the Recurly Engage Roku SDK, ensure it’s using the 
 ## Initialize SDK
 
 1. In your main scene XML file, add the PromotionManager node:
+
    ```xml
    <PromotionManager id="promoMgr" />
-````
+   ```
 
 2. In the main BrightScript (`.brs`) file’s `sub init()` function, initialize and observe:
 
