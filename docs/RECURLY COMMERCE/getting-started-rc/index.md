@@ -10,10 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
 ### Prerequisites & limitations
 
 * You’ll need a Shopify store to install the Recurly Commerce app.
