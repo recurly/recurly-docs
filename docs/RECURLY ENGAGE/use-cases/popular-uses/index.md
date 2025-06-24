@@ -1,5 +1,5 @@
 ---
-title: Popular Use Cases
+title: Popular use cases
 excerpt: >-
   Overview of the most popular use cases for Recurly Engage prompts across the
   customer lifecycle.
