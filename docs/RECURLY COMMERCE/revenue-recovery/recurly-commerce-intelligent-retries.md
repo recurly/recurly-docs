@@ -59,8 +59,6 @@ A: Every retry is recorded in the subscription’s activity log. You can also ex
 A: No—successful retries simply process the payment and renew the subscription as originally scheduled.
 
 **Q: Can I disable Intelligent Retries for certain plans or customers?**\
-A: No—Intelligent Retries is an all-or-nothing feature at the account level. If you’d like to discuss exceptions, please contact your Recurly account manager.
-
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/6a3e8f9edb4e88cb1c221d92d774ca8b71be10131c5fa20cb5aaeacc57fbbc80-image.png" />
+A: No—Intelligent Retries is enabled at the account level. If you’d like to discuss exceptions, please contact your Recurly account manager.
 
 Still need help? Contact <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
