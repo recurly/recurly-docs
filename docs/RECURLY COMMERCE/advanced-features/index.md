@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature may not be included in the Recurly Commerce Core plan. If you are interested, please contact Recurly Sales to discuss upgrade options.
-
-# Definition
-
 Advanced features in Recurly Commerce unlock new levels of automation, gifting flexibility, and bulk operations to streamline your workflows and delight subscribers at scale.
 
 # Key benefits
