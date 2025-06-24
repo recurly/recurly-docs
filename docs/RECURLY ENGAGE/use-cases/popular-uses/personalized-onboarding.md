@@ -1,6 +1,8 @@
 ---
 title: Personalized onboarding
-excerpt: Use Redfast to onboard new and existing users in a personalized manner
+excerpt: >-
+  Configuration guide for the Personalized Onboarding use case, leveraging
+  Journey guides to educate new users contextually.
 deprecated: false
 hidden: true
 metadata:
@@ -14,10 +16,6 @@ next:
       slug: popular-uses
       title: Popular Uses
 ---
-#### Metadata description
-
-Configuration guide for the Personalized Onboarding use case, leveraging Journey guides to educate new users contextually.
-
 # Overview
 
 ### Required plan
