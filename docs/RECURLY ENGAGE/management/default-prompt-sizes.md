@@ -1,5 +1,5 @@
 ---
-title: Default Prompt Sizes
+title: Default prompt sizes
 excerpt: ''
 deprecated: false
 hidden: true
@@ -319,3 +319,5 @@ next:
     </tr>
   </tbody>
 </Table>
+
+p
