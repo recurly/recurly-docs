@@ -23,4 +23,4 @@ The SDK section contains comprehensive guides for integrating Recurly Engage int
 * **Android**: Steps to add the Recurly Engage Android SDK for phones, tablets, and TV devices via Gradle/Maven or local packages. ([Android](android-sdk))
 * **Roku**: Setup and usage details for the Recurly Engage Roku SDK within SceneGraph-based Roku channels. ([Roku](roku))
 * **React Native**: Guide for rendering modals and inline prompts in React Native apps using prebuilt components and APIs. ([React Native](react-native))
-* **Testing tips**: Best practices for using the Test Users segment, resetting state, and accounting for propagation delays during SDK testing. ([Testing tips](testing-tips))
+* **Testing tips**: Best practices for using the Test Users segment, resetting state, and accounting for propagation delays during SDK testing. ([Testing tips](sdk-testing-tips))
