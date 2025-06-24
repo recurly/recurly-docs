@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Commerce subscription plan.
-
-# Definition
-
 The “Storefront” section brings together everything you need to install, customize, and extend the Recurly Commerce subscription widget on your Shopify storefront, whether through the visual theme editor or programmatic API.
 
 # Key benefits
