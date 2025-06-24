@@ -1,6 +1,8 @@
 ---
 title: iOS
-excerpt: ''
+excerpt: >-
+  Configuration guide for the Recurly Engage iOS and tvOS SDK, enabling native
+  prompt display and usage tracking in your mobile apps.
 deprecated: false
 hidden: true
 metadata:
@@ -10,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-Configuration guide for the Recurly Engage iOS and tvOS SDK, enabling native prompt display and usage tracking in your mobile apps.
-
 # Overview
 
 ### Required plan
@@ -22,8 +20,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-- You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.  
-- add additional prerequisites or limitations if any
+- You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
 
 # Definition
 
