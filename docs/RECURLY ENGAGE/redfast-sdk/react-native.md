@@ -1,14 +1,13 @@
 ---
 title: React Native
+excerpt: >-
+  Configuration guide for the Recurly Engage React Native SDK, enabling prompt
+  rendering and event tracking in your React Native applications.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-#### Metadata description
-
-Configuration guide for the Recurly Engage React Native SDK, enabling prompt rendering and event tracking in your React Native applications.
-
 # Overview
 
 ### Required plan
@@ -39,7 +38,7 @@ The Recurly Engage React Native SDK provides:
 
 ## Install the SDK
 
-Add the Recurly Engage registry to your package manager config (`.npmrc` or `.yarnrc.yml`):
+**Add** the Recurly Engage registry to your package manager config (`.npmrc` or `.yarnrc.yml`):
 
 ```text
 # .npmrc
@@ -50,7 +49,7 @@ Add the Recurly Engage registry to your package manager config (`.npmrc` or `.ya
 npmAuthToken: "AUTHTOKEN"
 ```
 
-Install packages:
+**Install** packages:
 
 ```shell
 npm install @redfast/redfast-core
@@ -90,7 +89,7 @@ Update the current user ID at runtime (e.g., after login):
 promptMgr.setUserId(newUserId);
 ```
 
-## Render Modal Prompts
+## Render modal prompts
 
 Use the `displayPrompt` helper to show interstitials, popups, or banners upon screen entry or button click:
 
@@ -112,7 +111,7 @@ displayPrompt(showModal, path, (result) => {
 });
 ```
 
-## Render Inline Prompts
+## Render inline prompts
 
 Use the `RedfastInline` component to render an inline prompt:
 
@@ -132,7 +131,7 @@ import { RedfastInline } from '@redfast/react-native-redfast';
 />
 ```
 
-## Custom Prompt Rendering
+## Custom prompt rendering
 
 Optionally fetch and render prompts yourself using the prompt manager API:
 
@@ -154,7 +153,7 @@ prompts.forEach(prompt => {
 });
 ```
 
-### PathType Values
+### PathType values
 
 ```text
 PathType.ALL = -1
@@ -167,7 +166,7 @@ PathType.INTERSTITIAL = 10
 PathType.BOTTOM_BANNER = 13
 ```
 
-### PromptResultCode Values
+### PromptResultCode values
 
 ```text
 OK = 1
@@ -197,13 +196,13 @@ interface PromptResult {
 }
 ```
 
-## Deeplink, In-App Purchase & Custom Metadata
+## Deeplink, in-app purchase and custom metadata
 
 * **Deeplink**: Configured in Pulse, available in `result.meta.deeplink`.
-* **In-App Purchase**: SKU defined on prompt, trigger purchase flow on `result` callback.
-* **Custom Metadata**: Available in `result.meta.meta` for bespoke behavior.
+* **In-app purchase**: SKU defined on prompt, trigger purchase flow on `result` callback.
+* **Custom metadata**: Available in `result.meta.meta` for bespoke behavior.
 
-## Send Usage Tracking Event
+## Send usage tracking event
 
 Report custom tracking events to enable segmentation:
 
@@ -211,7 +210,7 @@ Report custom tracking events to enable segmentation:
 promptMgr.customTrack(customFieldId);
 ```
 
-## Debugging
+## Debug view
 
 Reset a user’s prompt state for testing:
 
