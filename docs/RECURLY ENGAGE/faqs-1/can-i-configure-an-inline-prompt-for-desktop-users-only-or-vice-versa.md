@@ -1,5 +1,5 @@
 ---
-title: Can I configure an inline prompt to show only the Desktop/Mobile version?
+title: Configuring an inline prompt to show only the desktop/mobile version
 excerpt: ''
 deprecated: false
 hidden: true
