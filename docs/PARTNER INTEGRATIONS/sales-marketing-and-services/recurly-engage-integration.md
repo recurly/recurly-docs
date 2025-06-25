@@ -61,7 +61,7 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 
 * You will receive an invitation to create your account/password in Recurly Engage.
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/feab6cf-image.png" />
+![](https://files.readme.io/376835ea973bd71fdf1416dbc6e4dc135c11d35327a0740e6d3513e9584ca821-image.png)
 
 * **Log** into Recurly Engage using your new Recurly Engage account from the step above.
 
