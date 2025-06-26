@@ -179,7 +179,7 @@ When processing with UPI, any amount over 15K INR, a push notification would go 
 * Bundling Subscriptions: See calendar aggregation.
 * Multiple Subscriptions on a Single Account: Each individual subscription uses a mandate ID, and only one mandate ID is allowed per account.
 * Merchant Admin-created Subscriptions: due to pre-debit notification and enrollment verification/consumer authentication that occurs in the UPI app, MIT subscription enrollments are not allowed per NPCI regulations in India.
-* Retries: While planned, retries on failed renewals are not supported due to NPCI regulations around retry rules. As these rules do not follow card-brand retry rules, UPI AutoPay transactions will not retry using basic or intelligent retry logic.
+* Retries: While planned, our standard issue retries on failed renewals are not supported due to NPCI regulations around retry rules. As these rules do not follow card-brand retry rules, UPI AutoPay transactions will not retry using basic or intelligent retry logic.
 
 # Troubleshooting FAQs
 
