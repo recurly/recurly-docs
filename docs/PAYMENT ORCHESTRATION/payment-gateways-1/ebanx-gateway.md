@@ -132,6 +132,7 @@ Ebanx and UPI AutoPay together require a minimum of fields to create a mandate f
 * VPA
 * Email Address
 * Customer First and Last Name
+* Customer Address
 * Phone Number
 
 ## Mandate Preferences
