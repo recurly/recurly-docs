@@ -37,6 +37,15 @@ Integrating Recurly with Ebanx enables merchants to leverage UPI payment methods
 
 A **Virtual Payment Address (VPA)**, such as `payer@bankname`, uniquely identifies a consumer’s bank account in a UPI app. It conceals direct bank information; therefore, Recurly does not see the underlying payment method.
 
+### UPI AutoPay Limitations
+
+UPI AutoPay is specifically designed for subscriptions, and subscriptions only. It is not flexible like a credit card and does not support many of the functions available in Recurly where credit cards and some other payment methods are available. Some notable limitations include:
+
+* One-time transactions, including force collections and purchases, are not supported.
+* Adding a subscription through the UI: Since UPI requires a customer in session to confirm the subscription, this is not recommended.
+* Changing billing information: Recurly will store the consumer's VPA for future subscriptions, but the billing information is stored within the UPI App itself, not with the gateway or Recurly.
+* Changing the renewal date defined by the mandate: If a customer wants to change their renewal date, they need to resubscribe and confirm a new mandate. UPI mandates are strict about the date we can charge the consumer, and so modifications of the date after enrollment are not recommended as declines will occur. This includes using Calendar billing / aggregation features.
+
 ## What can users do within the UPI App?
 
 Consumers will be required to **confirm their signup enrollment** via the UPI app whenever they are subscribing to a plan. As a result, all UPI transactions begin life as a scheduled transaction. If the consumer does not confirm the subscription enrollment, the scheduled transaction will fail and the subscription will be expired.
@@ -72,7 +81,7 @@ Signup transactions will begin in a **scheduled** state before moving to failed 
 
 Listen for the following webhooks:
 
-* payment.scheduled
+* payment.scheduled / payment.success
 * subscription.created
 
 Once the consumer authenticates in-app (UPI App), listen for the following webhooks:
