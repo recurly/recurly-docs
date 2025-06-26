@@ -32,7 +32,7 @@ Built on years of data from 2,000+ merchants, these models continuously learn wh
 
 Unlike static schedules, Intelligent Retries dynamically adapts to each failure type. It assesses factors such as gateway error category, customer behavior, and historical outcomes—all while preserving your original renewal date.
 
-## Enabling Intelligent Retries
+## Enabling intelligent retries
 
 For new merchants to Recurly Commerce, Intelligent Retries is already active. For existing merchants that may have another Payment Failure Experience selected, navigate to **Settings** -> **Payment Failure Experience**. From there, use the dropdown (shown below) to select **Intelligent Retries**.
 
