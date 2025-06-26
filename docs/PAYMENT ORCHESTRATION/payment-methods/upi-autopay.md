@@ -81,12 +81,13 @@ Signup transactions will begin in a **scheduled** state before moving to failed 
 
 Listen for the following webhooks:
 
-* payment.scheduled / payment.success
+* payment.scheduled
 * subscription.created
 
 Once the consumer authenticates in-app (UPI App), listen for the following webhooks:
 
 * payment.transaction\_status\_updated
+* payment.success
 * charge\_invoice.paid
 
 You can Fetch a transaction, invoice, or subscription status to update your records. When the invoice moves into a paid state, this indicates a successful consumer authentication from the UPI Application.
