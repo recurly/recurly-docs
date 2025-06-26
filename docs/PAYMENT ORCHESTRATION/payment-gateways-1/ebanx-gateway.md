@@ -27,6 +27,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
 * Recurly.js is not supported with UPI AutoPay.
 * Refunds through Ebanx must be the **full** amount.
+* See the [UPI AutoPay payment method](https://docs.recurly.com/docs/upi-autopay#/) for additional information.
 
 # Definition
 
