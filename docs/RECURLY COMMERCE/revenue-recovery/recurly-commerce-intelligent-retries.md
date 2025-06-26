@@ -10,7 +10,7 @@ metadata:
 ---
 # Recurly Commerce: Intelligent retries
 
-Intelligent Retries is an automated retry engine that blends Shopify’s detailed gateway decline codes and payment metadata with Recurly’s proprietary AI/ML models—honed over years across 2,000+ merchants—to determine the optimal timing and frequency for successful payment recovery.
+Intelligent Retries is an automated retry engine that blends Shopify’s detailed gateway decline codes and payment metadata with Recurly’s proprietary AI/ML models, honed over years across 2,000+ merchants, to determine the optimal timing and frequency for successful payment recovery.
 
 # Key benefits
 
@@ -22,11 +22,11 @@ Intelligent Retries is an automated retry engine that blends Shopify’s detaile
 
 ## How intelligent retries works
 
-Recurly collects Shopify’s payment failure codes and available payment metadata, and combines that with patterns learned from thousands of merchants. Our AI/ML engine analyzes each failure reason and customer context to select the ideal retry window—whether hours, days, or weeks later—maximizing the likelihood of success.
+Recurly collects Shopify’s payment failure codes and available payment metadata, and combines that with patterns learned from thousands of merchants. Our AI/ML engine analyzes each failure reason and customer context to select the ideal retry window, whether hours, days, or weeks later, maximizing the likelihood of success.
 
 ## AI/ML engine
 
-Built on years of data from 2,000+ merchants, these models continuously learn which timing, cadence, and conditions convert declined attempts into successful payments—resulting in fewer manual interventions and more recovered revenue.
+Built on years of data from 2,000+ merchants, these models continuously learn which timing, cadence, and conditions convert declined attempts into successful payments, resulting in fewer manual interventions and more recovered revenue.
 
 ## Retry decision logic
 
