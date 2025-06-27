@@ -62,7 +62,7 @@ If needed, reorder tasks by clicking the "**⋮**" icon on the bottom right.
 
 ***
 
-## How to close the period
+# How to close the period
 
 1. **Navigate to** **Import/Export → Period Close**.
 2. **Click “Initiate Period Close.”**
