@@ -31,13 +31,13 @@ Recurly Revenue Recognition includes a **Period Close Checklist** to ensure accu
 
 1. **Data processed for the current open period**: Ensures all Recurly invoices, credits, and voids are transferred into RevRec, including data up to the period’s end date. *(This task cannot be skipped.)*
 
-2. **Billing Pending Processing or Stuck in Stage**: Identifies transactions stuck in the **Order** or **Doc Stage** tables for the current open period, prompting investigation and resolution.
+2. **Billing Pending Processing or Stuck in Stage**: Identifies transactions stuck in the **Order** or **Doc Stage** tables for the current open period, which you must investigate and resolve.
 
-3. **Transfer Journals**: Ensures that all batches containing journals are approved and summarized for the current period. Batches without journals can remain open.
+3. **Transfer Journals**: Ensures that all batches containing journals are approved and summarized for the current period. Open batches without journals can remain open.
 
 4. **Review the Accounted Reports**: Confirms the accuracy of journal entries and reconciles beginning and ending balances. Verifies that the **Liability Balance plus Asset Balance** matches the **Revenue Workflow** for the current open month.
 
-### Creating Custom Tasks
+### Creating User-Defined Tasks
 
 You can create any number of user-defined tasks essential for period close:
 
@@ -86,6 +86,11 @@ If needed, reorder tasks by clicking the "**⋮**" icon on the bottom right.
 4. Once all mandatory tasks are complete, the **Initiate period close** button becomes active.
 5. Click **Initiate period close**, add final comments, then click **Close period**.
    * If any required tasks aren’t in **Complete** status, you’ll see an **internal server error** message.
+
+## **Important note on data synchronization**
+
+* The system requires **30–60 minutes** for data to synchronize.
+* After making any corrections, please wait up to an hour before clicking “Retry” or contacting Support.
 
 With all tasks finalized, you’ll successfully close the period in Recurly RevRec, ensuring an accurate and compliant end-of-period process.
 
@@ -172,6 +177,10 @@ With all tasks finalized, you’ll successfully close the period in Recurly RevR
 ### Can I close a future period?
 
 **Answer:** No. The new period close process will only allow you to close periods previous to the current calendar month. You cannot close the current month or any future months in advance.
+
+### Why if I made my corrections, can I not close the period?
+
+**Answer:** The system requires **30–60 minutes** for data to synchronize.
 
 ***
 
