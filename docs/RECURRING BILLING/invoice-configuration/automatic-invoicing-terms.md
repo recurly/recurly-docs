@@ -34,7 +34,7 @@ Collect your automatic invoices on a date after the invoice creation. This allow
 
 ### Automatic invoices
 
-This method will directly bill a credit card that the customer has on file. Invoice terms When invoice terms are not set, the invoice will collect “On-Receipt”. [Learn more](https://docs.recurly.com/docs/invoice-settings#default-values)
+This method will directly bill a credit card that the customer has on file. When invoice terms are not set, the invoice will collect “On-Receipt”. [Learn more](https://docs.recurly.com/docs/invoice-settings#default-values)
 
 ### Manual invoices
 
