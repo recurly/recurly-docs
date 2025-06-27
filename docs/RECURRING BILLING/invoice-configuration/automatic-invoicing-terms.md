@@ -50,12 +50,6 @@ This method allows for a manual invoice to be generated for the customer. [Learn
 * Net-10
 * Net-30
 * Net-60
-* EOM+0
-* EOM+15
-* EOM+30
-* EOM+45
-* EOM+60
-* EOM+90
 * Custom days
 
 ### End of month (EOM) terms
