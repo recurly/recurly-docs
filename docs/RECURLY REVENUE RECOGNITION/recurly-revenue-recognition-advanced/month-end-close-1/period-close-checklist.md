@@ -65,27 +65,44 @@ If needed, reorder tasks by clicking the "**⋮**" icon on the bottom right.
 ## How to close the period
 
 1. **Navigate to** **Import/Export → Period Close**.
-2. You’ll see a list of **Open** tasks—both system-defined and any custom tasks you’ve created.
+2. **Click “Initiate Period Close.”**
+   * Perform this step only after the open period has concluded.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9a3be1e42458d56d98f631b6ddecd3523a6c0fda123eaa791a4fdf667107f5a1-5._Period_Close_-_Step_1.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ab01604cf77a9c63e0213c6478101aa15ed2a6829c18f39c628164369e3eb7fd-Screenshot_2025-06-27_at_9.08.42_AM.png" />
 
-3. **Review** and **update** each task:
+3. **Confirm period close**
+   * A dialogue box will appear.
+   * Enter any necessary message/comment.
+   * Click **“Close Period”** to confirm and begin the automated close process.
 
-* Click **Review Task** to open the task details.
-* **Complete** the task when you’re finished, add **comments** or **attachments** for audit purposes.
-
-<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/3044c605415d1bbda4afbba7b31ecaf13c31a498d0d5c398ad16b8de47c34042-6._Period_Close_-_Step_3.png" />
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/44a525a8455f53f840096291d8901fe552f8e3711a3cb1c71a3583e84545761b-6.Comments.png" />
 
 <br />
 
-* **Optional tasks** may be set to **Skipped** if you do not need to complete them.
+4. **System Checks**
+
+* The system runs a **“period close automated”** job to verify:
+* All invoices from Recurly are transferred into RevRec.
+* Data in contract stage, doc stage, and cost stage are fully processed.
+* Transfer JEs are summarized.
+* Accounted reports are reconciled with Revenue Recognition standards.
+* Refer to the “Period Task” section for details on each automated check.
+
+5. **Complete User-Defined Tasks**
+
+* Review each user-defined task.
+* Mark each task as **“Complete”** when finalized.
+* Add comments or file attachments as an **audit trail** and for future reference.
+
+6. **Optional tasks** may be set to **Skipped** if you do not need to complete them.
 
 <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/5802364502736289fb780bb5f62e681e53e78a040c3d823d3d61080782258d8a-7._Perid_Close_-_Step_4.png" />
 
-3. **Required tasks** must be marked as **Complete** before you can close the period.
-4. Once all mandatory tasks are complete, the **Initiate period close** button becomes active.
-5. Click **Initiate period close**, add final comments, then click **Close period**.
-   * If any required tasks aren’t in **Complete** status, you’ll see an **internal server error** message.
+7. **Automatic Close & Next Period Open**
+   * Once **all required tasks** are complete, the system automatically closes the **current period** and opens the **next one**.
+   * The final screen will display the period as closed and all tasks as completed.
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/d27624399376acf0cd8a8026d2f19a8d7a1c080bc953a79e5f16294dbeaee9c5-8._Point_6.png" />
 
 ## **Important note on data synchronization**
 
