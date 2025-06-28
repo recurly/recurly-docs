@@ -18,10 +18,6 @@ next:
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-### Prerequisites & limitations
-
-* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
-
 # Definition
 
 The **JavaScript SDK** enables prompt delivery and tracking in standard web browsers as well as HTML5-based connected TV (CTV) platforms.
