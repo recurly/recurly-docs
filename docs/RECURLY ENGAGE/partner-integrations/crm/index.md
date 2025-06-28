@@ -16,10 +16,6 @@ next:
 
 Recurly Engage integrates with a variety of CRM, marketing automation, and support platforms to synchronize user data, trigger campaigns, and manage contacts and tickets directly from in-app or web prompts.
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 # Definition
 
 **CRM Integrations** are pre-built connectors that enable you to:
