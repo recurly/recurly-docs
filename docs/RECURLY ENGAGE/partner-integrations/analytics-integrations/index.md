@@ -14,10 +14,6 @@ next:
 
 Recurly Engage can forward prompt interaction events to major analytics platforms, enabling unified visibility into user engagement alongside your existing tracking data.
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 # Definition
 
 **Analytics integrations** allow Recurly Engage to emit prompt impressions, clicks, dismissals, timeouts, and custom goal events directly into your analytics provider of choice, preserving session and user context.
