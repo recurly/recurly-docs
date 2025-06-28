@@ -21,6 +21,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 ### Prerequisites & limitations
 
 * App must integrate the Recurly Engage SDK on the target platform.
+* Company or App Administrator permissions in Recurly Engage.
 * In‑app products must be configured in the respective platform stores (Roku Channel Store, App Store Connect, Google Play Console).
 
 # Definition
