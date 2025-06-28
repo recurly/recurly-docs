@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-Recurly Engage integrates with a variety of CRM, marketing automation, and support platforms to synchronize user data, trigger campaigns, and manage contacts and tickets directly from in-app or web prompts.
+Recurly Engage integrates with a variety of CRM, marketing automation, and support platforms to synchronize user data, activate campaigns, and manage contacts and tickets directly from in-app or web prompts.
 
 ### Required plan
 
@@ -25,7 +25,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 **CRM Integrations** are pre-built connectors that enable you to:
 
 * Synchronize user profiles and traits with external CRM or marketing platforms.
-* Trigger email, SMS, or in-app messaging workflows based on prompt interactions.
+* Send email, SMS, or in-app messaging workflows based on prompt interactions.
 * Automate support ticket creation and management in helpdesk systems.
 
 # Key details
