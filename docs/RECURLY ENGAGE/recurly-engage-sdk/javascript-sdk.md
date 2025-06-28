@@ -14,8 +14,6 @@ next:
 ---
 # Overview
 
-# Definition
-
 The **JavaScript SDK** enables prompt delivery and tracking in standard web browsers as well as HTML5-based connected TV (CTV) platforms.
 
 # Key benefits
