@@ -14,12 +14,6 @@ next:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
-# Definition
-
 The **Recurly Engage Android SDK** provides support for Android phones, tablets, TVs, Fire Tablets, and Fire TV. The SDK automatically handles display of modals (popups, video popups, and banners) and related user-triggered events. Inline prompts are accessible via helper functions with the necessary metadata for rendering within chosen areas of the app.
 
 # Key benefits
