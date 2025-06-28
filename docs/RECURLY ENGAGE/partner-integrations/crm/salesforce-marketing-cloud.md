@@ -16,7 +16,7 @@ next:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
+This feature is an add on and can be purchased for any Recurly Engage subscription plan.
 
 ### Prerequisites & limitations
 
