@@ -14,12 +14,6 @@ next:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
-# Definition
-
 The **Recurly Engage Apple SDK** provides native support for iOS and tvOS apps, automatically handling modal, banner, video popups, and inline prompt rendering, as well as tracking user-triggered events.
 
 # Key benefits
