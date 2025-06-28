@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-Recurly Engage integrates with a variety of CRM, marketing automation, and support platforms to synchronize user data, activate campaigns, and manage contacts and tickets directly from in-app or web prompts.
+Recurly Engage integrates with a variety of CRM, marketing automation, and support platforms to synchronize user data, trigger campaigns, and manage contacts and tickets directly from in-app or web prompts.
 
 ### Required plan
 
