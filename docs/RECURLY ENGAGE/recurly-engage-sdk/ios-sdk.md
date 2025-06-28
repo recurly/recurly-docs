@@ -18,10 +18,6 @@ next:
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-### Prerequisites & limitations
-
-* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
-
 # Definition
 
 The **Recurly Engage Apple SDK** provides native support for iOS and tvOS apps, automatically handling modal, banner, video popups, and inline prompt rendering, as well as tracking user-triggered events.
