@@ -14,10 +14,6 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
-### Prerequisites & limitations
-
-* You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
-
 # Definition
 
 The **Recurly Engage React Native SDK** provides components and APIs to render configured prompts—modals (popups, bottom banners, interstitials) and inline views—and handle related user interaction events in React Native apps.
