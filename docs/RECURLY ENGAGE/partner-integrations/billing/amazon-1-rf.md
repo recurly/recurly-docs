@@ -21,6 +21,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 ### Prerequisites & limitations
 
 * Company or App Administrator permissions in Recurly Engage.
+* App must integrate the Recurly Engage SDK on the target platform.
 * Supported only on Fire OS devices with ADM support.
 
 # Definition
