@@ -20,6 +20,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
+* Company or App Administrator permissions in Recurly Engage.
 * A Google Analytics property and tracking ID (GA Tag ID).
 * Access to **Recurly Engage → Settings → Integrations → External → Google Analytics**.
 * For server-side calls, familiarity with the Measurement Protocol (v1).
