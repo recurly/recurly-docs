@@ -23,7 +23,7 @@ The **Adobe** connector suite lets you forward Recurly Engage prompt interaction
 
 ### Required plan
 
-This paid feature or setting is available to all customers on any Recurly Engage subscription plan.
+This feature is an add on and can be purchased for any Recurly Engage subscription plan.
 
 ### Prerequisites & limitations
 
