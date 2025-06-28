@@ -22,6 +22,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
+* Company or App Administrator permissions in Recurly Engage.
 * An mParticle account with permissions to create Custom Feeds.
 * Access to your mParticle workspace’s Server Key and Secret.
 
