@@ -14,12 +14,6 @@ next:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
-# Definition
-
 The **Recurly Engage Roku SDK** provides the ability to monitor consumption and show configured prompts within your native Roku app. The SDK automatically handles prompt display and user-triggered events.
 
 # Key benefits
