@@ -14,10 +14,6 @@ next:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 # Definition
 
 **Billing Integrations** are pre-built connectors that synchronize user subscription and billing data from third‑party systems into Recurly Engage and expose actions to manage subscriptions, apply coupons, or trigger billing workflows directly from engagement prompts.
