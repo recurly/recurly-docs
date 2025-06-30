@@ -54,7 +54,7 @@ Compass Assistant will also detect when you want to help from our Support team o
 
 **What AI models power Compass Assistant?**
 
-Compass Assistant is powered by Google Agent Development Kit for the conversational chat.  Learn more about the [ADK](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/develop/overview), [Gemini Data Governance](https://cloud.google.com/gemini/docs/discover/data-governance), and [Generative AI Governance](https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance).
+Compass Assistant is powered by Google Gemini.  Learn more about [Gemini Data Governance](https://cloud.google.com/gemini/docs/discover/data-governance) and [Generative AI Governance](https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance).
 
 **How is my data secured with AI?**
 
