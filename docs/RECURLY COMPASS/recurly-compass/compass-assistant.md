@@ -49,3 +49,25 @@ Find exactly what you need, fast. The in-app conversational search feature puts 
 Compass Assistant will also detect when you want to help from our Support team or you can always click *Chat with Support*.
 
 <Image align="center" width="50% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" />
+
+# FAQs
+
+1. **What AI models power Compass Assistant?**
+
+Compass Assistant is powered by Google Agent Development Kit for the conversational chat.  Learn more about the [ADK](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/develop/overview), [Gemini Data Governance](https://cloud.google.com/gemini/docs/discover/data-governance), and [Generative AI Governance](https://cloud.google.com/vertex-ai/generative-ai/docs/data-governance).
+
+2. **How is my data secured with AI?**
+
+Merchant data is anonymized in accordance with **Recurly’s Privacy Policy**. AI models run on **Google Vertex AI, Looker, and Elasticsearch**, ensuring data security and compliance.
+
+3. **Is my data used for AI training?**
+
+No, Recurly does not currently use merchant data for AI training.
+
+4. **Is my data shared with competitors?**
+
+No, merchant and subscriber data is never shared with competitors.
+
+5. **What if I want to opt-out of Recurly Compass?**
+
+Contact [support@recurly.com](mailto:support@recurly.com) to opt-out.
