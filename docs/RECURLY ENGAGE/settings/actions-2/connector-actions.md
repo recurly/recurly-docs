@@ -16,11 +16,11 @@ next:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
+This feature or setting is available to all customers on any Recurly Engage subscription plan. Adobe and Salesforce integrations can be purchased for an add-on fee.
 
 ### Prerequisites & limitations
 
-* You must have **Company**, **App Administrator** or **App member** permissions in Recurly Engage.
+* You must have **Company** or **App Administrator** permissions in Recurly Engage.
 * Relevant third‑party accounts and API credentials must be provisioned before configuring connectors.
 
 # Definition
