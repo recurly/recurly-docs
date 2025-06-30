@@ -58,7 +58,7 @@ Compass Assistant is powered by Google Gemini.  Learn more about [Gemini Data Go
 
 **How is my data secured with AI?**
 
-Merchant data is anonymized in accordance with **Recurly’s Privacy Policy**. AI models run on **Google Vertex AI, Looker, and Elasticsearch**, ensuring data security and compliance.
+Merchant data used in conjunction with Recurly AI tools is stored in accordance with **Recurly’s Privacy Policy**. AI models run on **Google Vertex AI, Looker, and Elasticsearch**, ensuring data security and compliance.
 
 **Is my data used for AI training?**
 
