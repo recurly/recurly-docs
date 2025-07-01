@@ -1,5 +1,5 @@
 ---
-title: Abandon Cart
+title: Abandon cart
 excerpt: >-
   Configuration guide for the Abandon Cart use case, which targets visitors who
   leave items in their cart and encourages them to complete checkout.
