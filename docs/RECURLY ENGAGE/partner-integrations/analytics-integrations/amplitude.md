@@ -4,7 +4,7 @@ excerpt: >-
   Integration guide for sending Recurly Engage prompt events to Amplitude and
   syncing user data via CSV, Webhooks, or Export API.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
