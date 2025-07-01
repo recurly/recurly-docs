@@ -4,7 +4,7 @@ excerpt: >-
   Integration guide for capturing Recurly Engage prompt interactions as custom
   events in mParticle via Custom Feed.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
