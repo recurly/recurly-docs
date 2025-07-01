@@ -5,7 +5,7 @@ excerpt: >-
   directly from Looker into your Recurly Engage AWS S3 bucket for seamless
   ingestion.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
