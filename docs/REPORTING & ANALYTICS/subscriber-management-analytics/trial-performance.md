@@ -39,40 +39,34 @@ The Trial Performance Dashboard is structured into several sections, each provid
 
 This widget provides an at-a-glance view of your trial performance. It displays the current Trials Started totals, as well as totals for last month, the previous month, three months ago, and one year ago. An up arrow under each total indicates the difference between that timeframe and the Total Started value, providing a quick visual representation of the growth or decline of your trials over time.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/a821cc1-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/a821cc1-image.png" />
 
 ## Trial conversion rate
 
 This section features a line chart that shows the conversion rate for trial subscriptions that transitioned to paid subscriptions during the selected date range. It's important to note that "converted" means the subscription moved from a free trial to a paid subscription, either automatically or manually. However, setup fees charged while the customer is in trial aren't included in this conversion metric. Also, this dashboard doesn't track the state of the subscription after conversion. The date range and interval picker impact the date the subscription started in trial.
 
-<Image title="trial conversion rate.png" alt={2320} align="center" border={true} src="https://files.readme.io/2c0e218-trial_conversion_rate.png">
-  Trial Performance Rates
-</Image>
+<Image align="center" alt={2320} border={true} caption="Trial Performance Rates" title="trial conversion rate.png" src="https://files.readme.io/2c0e218-trial_conversion_rate.png" />
 
 ## Trial subscription status
 
-This bar chart tracks the current state of subscriptions that began as trials during the selected date range. Only subscriptions that started with a trial are included in this chart. 
+This bar chart tracks the current state of subscriptions that began as trials during the selected date range. Only subscriptions that started with a trial are included in this chart.
 
-<Image title="Screen Shot 2022-12-17 at 6.44.32 PM.png" alt={2836} align="center" src="https://files.readme.io/2b1d075-Screen_Shot_2022-12-17_at_6.44.32_PM.png">
-  Trial Performance Subscription Status
-</Image>
+<Image align="center" alt={2836} border={false} caption="Trial Performance Subscription Status" title="Screen Shot 2022-12-17 at 6.44.32 PM.png" src="https://files.readme.io/2b1d075-Screen_Shot_2022-12-17_at_6.44.32_PM.png" />
 
 The potential states for these subscriptions are:
 
 * **Canceled:** The subscription was canceled.
 * **Payment Failed:** Customer entered billing information, and the trial churned after failing to collect payment.
 * **Pending:** A temporary state of subscriptions that started in trial and have not yet converted or churned.
-* **Converted Manual:** The subscription, where manual invoices/payment collection is enabled, ended trial and successfully converted to paid (through a manual payment).
-* **Converted Auto:** The subscription ended its trial and successfully converted to paid, where automatic invoices/payment collection is enabled.
+* **Converted Manual:** The subscription, where manual invoices/payment collection is enabled, ended trial and successfully converted to paid (through a manual payment greater than 0).
+* **Converted Auto:** The subscription ended its trial and the invoice of greater than 0 is successfully converted to paid , where automatic invoices/payment collection is enabled.
 * **No Billing Info:** The customer never entered billing information.
 
 ## Trial subscription status details
 
 This section provides more granular detail on the status of trial subscriptions for a selected date range.
 
-<Image title="Screen Shot 2022-12-17 at 6.26.17 PM.png" alt={2840} align="center" src="https://files.readme.io/9336ab9-Screen_Shot_2022-12-17_at_6.26.17_PM.png">
-  Trial Performance Subscription Status Detail
-</Image>
+<Image align="center" alt={2840} border={false} caption="Trial Performance Subscription Status Detail" title="Screen Shot 2022-12-17 at 6.26.17 PM.png" src="https://files.readme.io/9336ab9-Screen_Shot_2022-12-17_at_6.26.17_PM.png" />
 
 It tracks the following metrics:
 
