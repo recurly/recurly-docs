@@ -4,7 +4,7 @@ excerpt: >-
   CSS selector reference for customizing the look and feel of Recurly Engage
   prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
