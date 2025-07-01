@@ -55,3 +55,7 @@ Broad ecosystem of 1‑click connectors across business domains:
 * **Analytics**: [Google Analytics](google-analytics), [Amplitude](amplitude), [Mixpanel](mixpanel), [mParticle](mparticle), [Heap](heap), [Adobe Analytics](adobe-analytics)
 
 Leverage these integrations to sync user data, trigger 1‑click actions, and report prompt events—seamlessly embedding Recurly Engage into your tech stack.
+
+## Unlock the Standalone Benefits of Recurly Engage
+
+Ready to transform your revenue recognition processes? Reach out to [support@recurly.com](mailto:support@recurly.com) for detailed pricing. Our team of experts will evaluate your specific use cases and craft a solution tailored to your needs. Harness the power of our Standalone features to streamline your financial operations, minimize errors, improve compliance, and increase the accuracy of financial reporting.
