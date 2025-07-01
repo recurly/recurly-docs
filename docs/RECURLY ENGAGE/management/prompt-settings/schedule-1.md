@@ -4,7 +4,7 @@ excerpt: >-
   How to schedule prompts or guides to run only during specific dates, days, and
   times in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
