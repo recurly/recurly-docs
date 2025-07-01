@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the ActiveCampaign connector in Recurly Engage—API
   setup and supported automation actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
