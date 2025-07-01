@@ -2,7 +2,7 @@
 title: Braintree
 excerpt: Setup and action guide for the Braintree connector in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
