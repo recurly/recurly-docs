@@ -16,10 +16,6 @@ next:
 
 This page presents thirty-one example scenarios where Recurly Engage prompts can be applied—from retention offers to feature discovery and registration drives.
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 ### Prerequisites & limitations
 
 * You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
@@ -36,7 +32,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 # Key details
 
-<Table>
+<Table align={["left","left","left"]}>
   <thead>
     <tr>
       <th>
