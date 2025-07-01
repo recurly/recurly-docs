@@ -4,7 +4,7 @@ excerpt: >-
   How to configure and use Website Actions within Recurly Engage, including
   adding simple built-in actions and custom JavaScript code.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
