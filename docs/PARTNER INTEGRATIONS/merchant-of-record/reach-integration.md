@@ -4,7 +4,7 @@ excerpt: >-
   A turnkey integration that lets you plug Reach’s global MoR capabilities—local
   gateways, tax, and fraud—directly into Recurly’s subscription management.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
