@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 ### Prerequisites & limitations
 
-* You must have **Company Admin**, **App Admin**, or **App Member** permissions to invite or manage users.
+* You must have **Company Admin** or **App Admin** permissions to invite or manage users.
 
 # Definition
 
