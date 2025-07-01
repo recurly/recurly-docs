@@ -4,7 +4,7 @@ excerpt: >-
   How to activate and configure third-party connectors for billing, support,
   marketing, and analytics within Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
