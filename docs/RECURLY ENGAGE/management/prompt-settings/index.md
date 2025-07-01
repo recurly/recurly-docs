@@ -4,7 +4,7 @@ excerpt: >-
   Overview of the Prompt Settings section in Recurly Engage, providing quick
   access to all prompt-level configuration pages.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
