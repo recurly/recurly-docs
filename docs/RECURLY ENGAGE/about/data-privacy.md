@@ -4,7 +4,7 @@ excerpt: >-
   Overview of Recurly Engage’s data privacy and security practices, ensuring
   compliance and user trust.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
