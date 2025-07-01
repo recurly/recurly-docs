@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Test Users feature, which allows whitelisted users
   to preview active prompts in a production environment.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
