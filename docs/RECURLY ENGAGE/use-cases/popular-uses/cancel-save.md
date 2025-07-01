@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the “Cancel Save” use case, which intercepts
   cancellation flows to offer retention prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
