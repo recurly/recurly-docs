@@ -1,5 +1,5 @@
 ---
-title: Product bundle (COPY)
+title: Product bundle - Revenue Recognition Standalone
 excerpt: >-
   Create and manage complex product bundles with precise pricing and cost
   allocation using Recurly Revenue Recognition Advanced.
