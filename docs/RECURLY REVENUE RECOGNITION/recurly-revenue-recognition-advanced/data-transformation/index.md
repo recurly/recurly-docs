@@ -12,10 +12,6 @@ metadata:
 next:
   description: ''
 ---
-#### Metadata description
-
-A suite of tools for transforming your sales order data—bundle products, apply rules, auto-generate invoices, derive exchange rates, and build analysis datasets.
-
 # Overview
 
 These Data Transformation features are part of **Recurly Revenue Recognition Advanced**. \[<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
