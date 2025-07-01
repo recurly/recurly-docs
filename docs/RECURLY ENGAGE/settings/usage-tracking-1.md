@@ -5,7 +5,7 @@ excerpt: >-
   and act on user behavior metrics such as visits, session duration, and custom
   events.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
