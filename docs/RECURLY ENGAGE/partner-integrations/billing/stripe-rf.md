@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Stripe connector in Recurly Engage—activation,
   data sync, 1-Click actions, and subscription management.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
