@@ -2,7 +2,6 @@
 - data-rules
 - autobill-for-external-data
 - '-autobill-for-external-data-copy'
-- '-derive-exrate-for-external-data-copy'
 - derive-exrate-for-external-data
 - datasets-copy
 - data-sets
