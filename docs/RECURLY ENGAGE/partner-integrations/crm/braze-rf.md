@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Braze connector in Recurly Engage—API setup and
   supported user management actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
