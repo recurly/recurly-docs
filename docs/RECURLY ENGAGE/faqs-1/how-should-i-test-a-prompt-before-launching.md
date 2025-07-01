@@ -4,7 +4,7 @@ excerpt: >-
   Guidance on how to safely test prompts before launching to production
   audiences in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
