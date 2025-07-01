@@ -14,11 +14,7 @@ next:
 ---
 # Overview
 
-Recurly Engage processes only the data you designate, with strict controls around retention, pseudonymization, and access—providing a secure, privacy-first engagement platform.
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
+Recurly Engage processes only the data you designate, with strict controls around retention, and access—providing a secure, privacy-first engagement platform.
 
 # Definition
 
