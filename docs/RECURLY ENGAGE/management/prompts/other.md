@@ -2,7 +2,7 @@
 title: Email prompts
 excerpt: Triggered send of email to targeted segment
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
