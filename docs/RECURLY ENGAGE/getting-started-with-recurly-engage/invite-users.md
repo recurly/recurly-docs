@@ -4,7 +4,7 @@ excerpt: >-
   Steps to invite team members and manage their access within your Recurly
   Engage application.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
