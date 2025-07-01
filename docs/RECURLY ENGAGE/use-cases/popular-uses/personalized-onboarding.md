@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Personalized Onboarding use case, leveraging
   Journey guides to educate new users contextually.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
