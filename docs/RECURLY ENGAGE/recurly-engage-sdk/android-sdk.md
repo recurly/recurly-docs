@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Recurly Engage Android SDK, enabling native prompt
   display and usage tracking in your mobile and TV apps.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
