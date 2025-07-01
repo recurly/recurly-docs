@@ -4,7 +4,7 @@ excerpt: >-
   Overview of the Platform settings section in Recurly Engage, providing quick
   links to each configuration subpage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
