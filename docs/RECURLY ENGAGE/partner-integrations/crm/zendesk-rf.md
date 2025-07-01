@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Recurly Engage Zendesk integration, enabling
   support workflows to be triggered directly from prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
