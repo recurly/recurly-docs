@@ -4,7 +4,7 @@ excerpt: >-
   High‑level overview of all billing and subscription connectors available in
   Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
