@@ -4,7 +4,7 @@ excerpt: >-
   Manage and report on groups of prompts using tags, with combined analytics and
   frequency controls.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
