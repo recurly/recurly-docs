@@ -4,7 +4,7 @@ excerpt: >-
   Configure and use dynamic variables (custom traits) within your prompts to
   deliver personalized messaging.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
