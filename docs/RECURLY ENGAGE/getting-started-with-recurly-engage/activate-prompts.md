@@ -1,5 +1,5 @@
 ---
-title: Activate Prompts
+title: Activate prompts
 excerpt: >-
   How to move your prompts from draft to live in Recurly Engage, including QA
   review and full deployment.
