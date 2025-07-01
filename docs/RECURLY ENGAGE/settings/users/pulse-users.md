@@ -1,10 +1,10 @@
 ---
-title: Pulse Users
+title: Pulse users
 excerpt: >-
   Manage user access to your Recurly Engage (Pulse) application by assigning
   permission levels to team members.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
