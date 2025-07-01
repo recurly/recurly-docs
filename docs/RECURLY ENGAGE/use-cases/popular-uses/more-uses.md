@@ -4,7 +4,7 @@ excerpt: >-
   Additional use cases for Recurly Engage, showcasing diverse prompt strategies
   across lifecycle stages.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
