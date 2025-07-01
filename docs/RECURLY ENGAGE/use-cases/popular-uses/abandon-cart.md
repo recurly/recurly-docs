@@ -16,10 +16,6 @@ next:
 
 More than 95% of visitors to your website won’t convert on their first visit. The **Abandon Cart** use case recovers lost revenue by prompting returning visitors to resume their checkout process—recovering 40% or more of abandoned carts.
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 ### Prerequisites & limitations
 
 * You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
