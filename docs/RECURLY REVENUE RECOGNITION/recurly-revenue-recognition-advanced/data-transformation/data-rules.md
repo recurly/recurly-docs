@@ -54,7 +54,7 @@ A **Data Rule** is a configurable set of conditions, formulas, and effective dat
 5. **Click** **Save**.
 6. **Repeat** to add multiple rules or sub-criteria.
 
-![](https://files.readme.io/bda0b72-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/bda0b72-image.png" />
 
 5. To delete a rule or sub-criteria, select its row and click the **Delete** icon, then save.
 
@@ -62,14 +62,14 @@ A **Data Rule** is a configurable set of conditions, formulas, and effective dat
 
 1. In the **Criteria** section, **click** the **Add** icon.
 
-![](https://files.readme.io/2f8bfa0-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/2f8bfa0-image.png" />
 
 2. **Choose** a **Field** from the dropdown.
 3. **Select** an **Operator**.
 4. **Enter** the matching **Value**.
 5. **Add** multiple rows as needed.
 
-![](https://files.readme.io/9e698ad-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/9e698ad-image.png" />
 
 6. **Edit** any row inline and click **Save**, or remove it via the **Delete** icon.
 
