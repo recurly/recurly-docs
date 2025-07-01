@@ -5,7 +5,7 @@ excerpt: >-
   involuntary churn by prompting users to update their payment information after
   a failed billing attempt.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
