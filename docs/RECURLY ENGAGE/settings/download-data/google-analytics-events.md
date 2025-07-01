@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for integrating Recurly Engage with Google Analytics
   Measurement Protocol via API actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
