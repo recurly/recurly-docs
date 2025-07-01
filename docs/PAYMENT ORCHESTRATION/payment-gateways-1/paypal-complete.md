@@ -36,7 +36,7 @@ Please be aware of the following limitations of PayPal Complete:
 
 [PayPal Complete](https://recurly.com/partner/paypal-recurly/) is the latest and greatest payment gateway solution by PayPal that simplifies the payment process by accommodating a variety of PayPal payment methods within one single integration. Incorporating PayPal Complete into Recurly is swift and hassle-free, eliminating the need to acquire a separate merchant account.
 
-PayPal can be used in a META (Facebook / Instagram) environment when limited by WebView browsers.
+PayPal can be used in a META (Facebook / Instagram) environment when limited by WebView browsers. See our [PayPal Recurly.js documentation](https://docs.recurly.com/v1.2/docs/paypal#/) for more information.
 
 ***
 
