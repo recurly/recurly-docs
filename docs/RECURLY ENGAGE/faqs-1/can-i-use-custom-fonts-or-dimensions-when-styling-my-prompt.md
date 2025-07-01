@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for applying custom fonts to Recurly Engage prompts using
   Custom CSS.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
