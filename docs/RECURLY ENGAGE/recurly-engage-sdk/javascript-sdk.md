@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the JavaScript SDK, supporting both web browsers and
   HTML5-based CTV devices in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
