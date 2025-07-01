@@ -4,7 +4,7 @@ excerpt: >-
   Integration guide for sending Recurly Engage prompt interaction events to
   Google Analytics via client-side SDK and server-side Measurement Protocol.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
