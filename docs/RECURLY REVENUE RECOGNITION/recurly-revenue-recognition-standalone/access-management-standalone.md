@@ -1,5 +1,5 @@
 ---
-title: Access management Revenue Recognition Standalone
+title: Access management -  Revenue Recognition Standalone
 excerpt: >-
   Recurly access management: Tailored user privileges for secure financial
   operations.
