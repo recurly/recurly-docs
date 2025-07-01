@@ -16,10 +16,6 @@ next:
 
 Recurly Engage prompts are designed to meet key aspects of the Web Content Accessibility Guidelines (WCAG), ensuring that all users—including those using assistive technologies—can perceive, operate, and understand prompt content.
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 # Definition
 
 The **Accessibility** section outlines how Recurly Engage implements WCAG principles—Perceivable, Operable, Understandable, and Robust—within prompt designs and interactions.
