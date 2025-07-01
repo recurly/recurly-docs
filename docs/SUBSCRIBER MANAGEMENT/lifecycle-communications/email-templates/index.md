@@ -625,7 +625,6 @@ The shipping address (street 1, street 2, city, state, postal code, country) in 
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | `{{transaction_id}}`              | Transaction's UUID: 32-characters, alphanumeric.                                                             |
 | `{{transaction_amount}}`          | Transaction dollar amount.                                                                                   |
-| `{{transaction_status}}`          | Transaction status (success/void/decline).                                                                   |
 | `{{transaction_date}}`            | Transaction date.                                                                                            |
 | `{{transaction_date_and_time}}`   | Transaction Date and Time (adjusted for timezone).                                                           |
 | `{{transaction_declined?}}`       | Show if given transaction was declined.                                                                      |
