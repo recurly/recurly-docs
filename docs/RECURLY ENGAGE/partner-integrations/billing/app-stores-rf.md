@@ -4,7 +4,7 @@ excerpt: >-
   Guidance for configuring in-app purchase flows in Recurly Engage prompts
   across Roku, Apple, and Google platforms.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
