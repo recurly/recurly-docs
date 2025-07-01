@@ -4,7 +4,7 @@ excerpt: >-
   Overview of the Users settings section in Recurly Engage, covering account
   access and user management tools.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
