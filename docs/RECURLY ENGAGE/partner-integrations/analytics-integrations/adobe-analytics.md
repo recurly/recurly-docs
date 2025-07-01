@@ -4,7 +4,7 @@ excerpt: >-
   Integration guide for sending Recurly Engage prompt events to Adobe Analytics
   using the Experience Platform Web SDK (Alloy.js).
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
