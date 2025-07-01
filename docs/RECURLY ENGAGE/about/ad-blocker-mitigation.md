@@ -16,10 +16,6 @@ next:
 
 Public reports ([Backlinko](https://backlinko.com/ad-blockers-users), [Statista](https://www.statista.com/topics/3201/ad-blocking/#topicOverview)) indicate up to 50% of web users employ ad blockers, which may block third-party JavaScript tags—including Recurly Engage’s—disabling engagement prompts.
 
-### Required plan
-
-This feature or setting is available to customers on the Recurly Engage Enterprise tier or as an add-on.
-
 ### Prerequisites & limitations
 
 * You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
