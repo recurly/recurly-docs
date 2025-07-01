@@ -4,7 +4,7 @@ excerpt: >-
   How to add input fields or survey options to your prompts and handle submitted
   values in actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
