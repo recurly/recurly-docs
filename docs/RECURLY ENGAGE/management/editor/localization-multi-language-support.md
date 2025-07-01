@@ -4,7 +4,7 @@ excerpt: >-
   How to localize prompts based on your user’s browser or app locale without
   duplicating prompts for each language.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
