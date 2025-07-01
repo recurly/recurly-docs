@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Naviga connector in Recurly Engage—setup and
   supported subscription actions for news and publishing platforms.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
