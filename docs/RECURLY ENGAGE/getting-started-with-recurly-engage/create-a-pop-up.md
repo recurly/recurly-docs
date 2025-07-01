@@ -4,7 +4,7 @@ excerpt: >-
   Steps to create and configure a pop-up prompt in Recurly Engage, from initial
   setup to live deployment.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
