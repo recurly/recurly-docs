@@ -1,10 +1,10 @@
 ---
-title: 1-Click resubscribe
+title: 1-click resubscribe
 excerpt: >-
   Configuration guide for the 1-Click Resubscribe use case, which enables
   churned users to reactivate their subscription with a single click.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
