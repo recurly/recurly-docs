@@ -4,7 +4,7 @@ excerpt: >-
   How to configure custom API actions within Recurly Engage, including setting
   up credentials and defining action details.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
