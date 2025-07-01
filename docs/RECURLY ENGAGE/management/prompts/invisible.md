@@ -4,7 +4,7 @@ excerpt: >-
   Configure and trigger background behaviors in your application without any
   user-facing UI using Invisible Prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
