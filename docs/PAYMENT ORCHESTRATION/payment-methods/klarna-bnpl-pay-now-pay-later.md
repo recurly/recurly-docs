@@ -66,7 +66,7 @@ For advertising guidelines, see: <a href="https://docs.klarna.com/resources/lega
 
 #### API, Stripe Elements, and Recurly.js
 
-Leverage Third Party Checkout with: <a href="https://docs.recurly.com/v1.1/docs/third-party-checkout#/" target="_blank">Third Party Checkout: Stripe Elements</a> and <a href="https://docs.recurly.com/v1.2/docs/overview" target="_blank">Recurly.js Overview</a> via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html" target="_blank">V3 API</a>.
+Leverage Third Party Checkout with: <a href="https://docs.recurly.com/v1.1/docs/third-party-checkout#/" target="_blank">Third Party Checkout: Stripe Elements</a> and <a href="https://docs.recurly.com/v1.2/docs/overview-recurlyjs/" target="_blank">Recurly.js Overview</a> via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html" target="_blank">V3 API</a>.
 
 #### Sandbox testing
 
