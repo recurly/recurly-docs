@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for triggering Recurly Engage prompts from within a child
   iFrame using the browser `postMessage` API.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
