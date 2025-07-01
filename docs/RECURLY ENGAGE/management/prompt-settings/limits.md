@@ -4,7 +4,7 @@ excerpt: >-
   Guide to configuring prompt delivery limits—impression, frequency, budget,
   user, and delivery caps—in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
