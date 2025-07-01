@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Premium Plan Adoption use case, which targets
   engaged users with contextual prompts to upgrade to premium plans or add-ons.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
