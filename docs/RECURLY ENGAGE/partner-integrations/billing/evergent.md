@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Evergent connector in Recurly Engage—activation,
   data sync, and supported subscription actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
