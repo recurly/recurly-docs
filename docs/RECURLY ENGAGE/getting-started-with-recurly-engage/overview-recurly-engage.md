@@ -58,4 +58,4 @@ Leverage these integrations to sync user data, trigger 1‑click actions, and re
 
 ## Unlock the Standalone Benefits of Recurly Engage
 
-Ready to transform your revenue recognition processes? Reach out to [support@recurly.com](mailto:support@recurly.com) for detailed pricing. Our team of experts will evaluate your specific use cases and craft a solution tailored to your needs. Harness the power of our Standalone features to streamline your financial operations, minimize errors, improve compliance, and increase the accuracy of financial reporting.
+Ready to uplevel your subscriber lifecycle engagement? Reach out to [support@recurly.com](mailto:support@recurly.com) for detailed pricing. Our team of experts will evaluate your specific use cases and see if the Recurly Engage platform is a fit. Harness the power of our Standalone features to unlock acquisition, engagement, retention, upsells, cross sells and more for your entire subscriber base.
