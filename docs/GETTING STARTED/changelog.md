@@ -37,29 +37,558 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## June
 
-| Release Date | **Feature**                      | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| :----------- | :------------------------------- | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Jun 24       | **Adyen Gateway**                | Low                  | Enabled support for sending the Shipping Method "name" to Adyen in API transactions. This is also in relation to [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Jun 24       | **Adyen Gateway**                | Low                  | Enabled support via V3 API to pass in Adyen's Revenue Protect Risk Profile IDs on API driven transactions. Documentation will be added to the V3 API upon release. Read more about [Recurly's Revenue Protect support ](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)in our Adyen documentation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Jun 24       | **Adyen Gateway**                | Medium               | Enabled support for Adyen's token update lifecycle webhooks for credit cards. If you are using Adyen tokens for card processing and updates occur at the Gateway level, Recurly will receive those updates to ensure the card number and/or expiration date shown in billing information is up to date. This will require enabling this event in your Adyen settings to take advantage of the new behavior.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Jun 24       | **Checkout**                     | Low                  | Fixed an issue where country is required when the Address Requirement is set to 'No Address'.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Jun 18       | **Ebanx Gateway**                | Low                  | Updated handling of failed UPI AutoPay signups to avoid errors when re-subscribing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Jun 17       | **Cybersource Gateway**          | Medium               | Updated to support Google Pay transactions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Jun 17       | **Cybersource Gateway**          | Low                  | Updated handling of phone numbers to avoid errors in rare cases where a partial phone number is present.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Jun 17       | **Adyen Gateway**                | Medium               | Enabled Late failure / Chargeback Invoice behavior for Adyen ACH transactions and invoices. In the event an ACH transaction returns after initial processing and the status is *not* "Insufficient Funds", a chargeback Invoice will be created and recorded. You can read more about this feature and how to enable it in our [Chargebacks / late failures for Direct Debit](https://docs.recurly.com/docs/chargebacks-for-direct-debit#/) documentation.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Jun 16       | **App Management MRR Dashboard** | Low                  | Updated the App Management net MRR chart from a bar to a line chart to be in parity with the Recurly App MRR Dashboard.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Jun 16       | **Business Entities Dashboard**  | Low                  | Updated descriptions for New & Renewing Billings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Jun 16       | **Transactions Explore**         | Low                  | Added "cc\_payment\_id" field which is the unique identifier for a credit card.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Jun 16       | **Invoice Explore**              | Low                  | Added "cc\_payment\_id" field which is the unique identifier for a credit card.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Jun 10       | **Adyen Gateway**                | Low                  | Enabled support for the `CAPTURE_FAILED` event. Capture failures will mark Purchase transactions as declined. If you are using separate Auth and Capture, and the Capture fails, you can re-try the capture. This will require enabling this event in your Adyen settings to take advantage of the new behavior.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Jun 10       | **Adyen Gateway**                | Medium               | Enabled support for sending shipping addresses to Adyen. If you are providing a shipping / delivery address in your transactions, or a consumer has one on file, the information will be sent to Adyen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Jun 10       | **PayPal Complete Gateway**      | High                 | Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable R.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. You can view more information in [Recurly.js documentation](https://docs.recurly.com/v1.2/docs/paypal#/) after release.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Jun 10       | **V3 API \| Verify Routes**      | High                 | Updated the V3 [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info) and [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv) endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/). This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release. |
-| Jun 9        | **General Security Enhancement** | High                 | We will be making scheduled maintenance updates for security purposes that will include a Recurly.js client update. No functional changes are expected. Recurly.js can be used natively but is also used in HPP and Recurly Checkout products, which are included in this update.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Jun 3        | **PayPal Complete Gateway**      | Low                  | Updated handling of status updates for PayPal transactions using a bank account as a funding source to avoid transactions suck in pending state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Jun 3        | **Webhooks**                     | Medium               | Added webhook support for `payment.succeeded` event to enable events firing when UPI AutoPay transactions are updated asynchronously.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Jun 3        | **Adyen Gateway**                | Medium               | Updated handling of Late Failure (Chargeback) invoices for ACH Bank payments to ensure transactions that fail asynchronously are invoiced or marked failed appropriately. Transactions that experience a return due to insufficient funds (R01) will be marked as declined and have the associated invoice marked Past due so the invoice collection can be reattempted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Jun 3        | **Vantiv Gateway**               | Low                  | Remapped a response code (218) to a soft decline due to remapping by WorldPay.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Release Date
+      </th>
+
+      <th>
+        **Feature**
+      </th>
+
+      <th>
+        **Potential Impact**
+      </th>
+
+      <th>
+        **Description / Overview**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Bug Fixes
+        Resolved issue causing duplicate POB rule entries.
+        Fixed Issue with Saving Multi-Element POB Rules.
+        Fixed UI total display when all data fits on the screen.
+        Addressed unauthorized error appearing on UI after login.
+        Corrected redirection link to Recurly App on authentication click.
+        Updated default user role to "No Access".
+        Resolved a race condition issue that occurred when users updated multiple contract modifications simultaneously.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Config Audit for Scheduled Jobs -  Config audit reports now include changes made to scheduled jobs.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Align Credit Journal Accounting with Invoice Accounting -  The journal entries for credits are now aligned with the invoice accounting. The ledger accounts used in invoice accounting would be considered for CM/CMR accounting entries, when the CM/CMR does not have accounts present then the system reads from the associated invoices or Subscriptions
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Activate Multi-Element Revenue Rule for RA-Enabled Merchants -  The multi element POB rule support is extended to Recurly Managed merchants too.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Import only Subs/Orders and auto create the billing records for Non Recurly data -  This feature allows businesses to import just their subscription or order data into Recurly Revenue Recognition. The system will automatically create the related billing records, saving time for companies that use external systems to manage subscriptions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Auto-fetch exchange rates for non-Recurly data -  This feature automatically retrieves and applies the correct exchange rates for contracts/subscriptions and invoices associated with subscriptions that are created outside the Recurly platform.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Referenced Credit Standalone Treatment Credit Memos for which the invoice is not present in Revenue Recognition will now be collected and processed as a standalone invoice with a negative amount.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        June 30
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Invoice Sync Check in Auto Period Close Job -  Added a check in the auto period close job to ensure invoice counts are synced before closing the period for standard merchants.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 24
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabled support for sending the Shipping Method "name" to Adyen in API transactions. This is also in relation to [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 24
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabled support via V3 API to pass in Adyen's Revenue Protect Risk Profile IDs on API driven transactions. Documentation will be added to the V3 API upon release. Read more about [Recurly's Revenue Protect support ](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)in our Adyen documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 24
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Enabled support for Adyen's token update lifecycle webhooks for credit cards. If you are using Adyen tokens for card processing and updates occur at the Gateway level, Recurly will receive those updates to ensure the card number and/or expiration date shown in billing information is up to date. This will require enabling this event in your Adyen settings to take advantage of the new behavior.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 24
+      </td>
+
+      <td>
+        **Checkout**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Fixed an issue where country is required when the Address Requirement is set to 'No Address'.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 18
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated handling of failed UPI AutoPay signups to avoid errors when re-subscribing.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 17
+      </td>
+
+      <td>
+        **Cybersource Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated to support Google Pay transactions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 17
+      </td>
+
+      <td>
+        **Cybersource Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated handling of phone numbers to avoid errors in rare cases where a partial phone number is present.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 17
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Enabled Late failure / Chargeback Invoice behavior for Adyen ACH transactions and invoices. In the event an ACH transaction returns after initial processing and the status is *not* "Insufficient Funds", a chargeback Invoice will be created and recorded. You can read more about this feature and how to enable it in our [Chargebacks / late failures for Direct Debit](https://docs.recurly.com/docs/chargebacks-for-direct-debit#/) documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 16
+      </td>
+
+      <td>
+        **App Management MRR Dashboard**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated the App Management net MRR chart from a bar to a line chart to be in parity with the Recurly App MRR Dashboard.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 16
+      </td>
+
+      <td>
+        **Business Entities Dashboard**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated descriptions for New & Renewing Billings.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 16
+      </td>
+
+      <td>
+        **Transactions Explore**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added "cc\_payment\_id" field which is the unique identifier for a credit card.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 16
+      </td>
+
+      <td>
+        **Invoice Explore**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added "cc\_payment\_id" field which is the unique identifier for a credit card.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 10
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabled support for the `CAPTURE_FAILED` event. Capture failures will mark Purchase transactions as declined. If you are using separate Auth and Capture, and the Capture fails, you can re-try the capture. This will require enabling this event in your Adyen settings to take advantage of the new behavior.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 10
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Enabled support for sending shipping addresses to Adyen. If you are providing a shipping / delivery address in your transactions, or a consumer has one on file, the information will be sent to Adyen.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 10
+      </td>
+
+      <td>
+        **PayPal Complete Gateway**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable R.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. You can view more information in [Recurly.js documentation](https://docs.recurly.com/v1.2/docs/paypal#/) after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 10
+      </td>
+
+      <td>
+        **V3 API | Verify Routes**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updated the V3 [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info) and [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv) endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/). This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 9
+      </td>
+
+      <td>
+        **General Security Enhancement**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        We will be making scheduled maintenance updates for security purposes that will include a Recurly.js client update. No functional changes are expected. Recurly.js can be used natively but is also used in HPP and Recurly Checkout products, which are included in this update.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 3
+      </td>
+
+      <td>
+        **PayPal Complete Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated handling of status updates for PayPal transactions using a bank account as a funding source to avoid transactions suck in pending state.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 3
+      </td>
+
+      <td>
+        **Webhooks**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Added webhook support for `payment.succeeded` event to enable events firing when UPI AutoPay transactions are updated asynchronously.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 3
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of Late Failure (Chargeback) invoices for ACH Bank payments to ensure transactions that fail asynchronously are invoiced or marked failed appropriately. Transactions that experience a return due to insufficient funds (R01) will be marked as declined and have the associated invoice marked Past due so the invoice collection can be reattempted.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jun 3
+      </td>
+
+      <td>
+        **Vantiv Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Remapped a response code (218) to a soft decline due to remapping by WorldPay.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## May
 
