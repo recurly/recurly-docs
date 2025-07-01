@@ -4,7 +4,7 @@ excerpt: >-
   How to integrate Recurly Engage with Adobe Experience Platform, Journey
   Optimizer, and Analytics for event streaming and in-app triggers.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Adobe AEP AJO
   description: ''
