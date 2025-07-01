@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for default prompt sizes and CSS controls in Recurly
   Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
