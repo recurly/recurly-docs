@@ -4,7 +4,7 @@ excerpt: >-
   Guide to configuring Apple Push Notification Service (APNs) credentials in
   Recurly Engage for push prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
