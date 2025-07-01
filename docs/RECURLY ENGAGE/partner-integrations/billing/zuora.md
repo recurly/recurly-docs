@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Zuora connector in Recurly Engage, including
   setup, data sync, and 1-Click subscription actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
