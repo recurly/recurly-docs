@@ -4,7 +4,7 @@ excerpt: >-
   This article explains how to import, configure, and manage custom user traits
   in Recurly Engage to extend targeting beyond default behavior metrics.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
