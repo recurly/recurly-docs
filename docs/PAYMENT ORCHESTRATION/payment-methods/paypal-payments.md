@@ -31,7 +31,6 @@ Using PayPal as a payment method in Recurly comes with a set of restrictions tha
 #### Availability
 
 * **Recurly Checkout, Hosted Payment Pages, or Recurly.js:** PayPal payments can only be facilitated through these mediums. The Recurly API does not support PayPal checkouts. PayPal Complete is only available in Recurly.js.
-* **Facebook's In-App Browser:** The PayPal checkout process is currently not compatible with Facebook's in-app browser due to its lack of support for tabbed browsing, hindering the correct display of the PayPal checkout flow.
 * **PayPal Business Account:** The PayPal Business Account is a legacy platform, and Recurly no longer supports new configurations for this gateway. If the gateway tile is not available on your production site, this indicates the mechanism has been disabled. For further instructions, please reach out to [support@recurly.com](mailto:support@recurly.com).
 
 #### Transaction Details
