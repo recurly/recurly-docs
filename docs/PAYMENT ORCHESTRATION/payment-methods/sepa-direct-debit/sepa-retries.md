@@ -1,5 +1,5 @@
 ---
-title: Direct Debit Retries
+title: Direct debit retries
 excerpt: >-
   Streamline your Direct Debit payments with Recurly's Automatic retries! Our
   new feature supports automated retries for failed SEPA payments due to
