@@ -4,7 +4,7 @@ excerpt: >-
   Configure your application settings—ID, API Key, domain, aliases, and
   timezone—to ensure Recurly Engage functions correctly on your site or app.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
