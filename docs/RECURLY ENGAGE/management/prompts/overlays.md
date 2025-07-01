@@ -4,7 +4,7 @@ excerpt: >-
   Details on creating and managing overlay prompts—interstitials, pop-ups, video
   overlays, notifications, and bottom banners—in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
