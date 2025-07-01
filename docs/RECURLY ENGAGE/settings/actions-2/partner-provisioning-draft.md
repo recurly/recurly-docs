@@ -4,7 +4,7 @@ excerpt: >-
   How to provision and manage tenants and users programmatically via the Recurly
   Engage Partner Provisioning API.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
