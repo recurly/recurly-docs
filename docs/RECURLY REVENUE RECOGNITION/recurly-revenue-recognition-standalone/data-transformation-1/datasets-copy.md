@@ -1,5 +1,5 @@
 ---
-title: Datasets (COPY)
+title: Datasets - Revenue Recognition Standalone
 excerpt: >-
   Unlock powerful analytics by defining and updating custom data tables that
   feed all reports and dashboards automatically.
