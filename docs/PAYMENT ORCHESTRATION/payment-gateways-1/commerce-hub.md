@@ -4,7 +4,7 @@ excerpt: >-
   Seamless and secure payment processing with Commerce Hub integration for
   Recurly.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
@@ -60,6 +60,8 @@ For new subscribers, ensure you change the `gateway_code`value you are sending A
 Unlike previous First Data and Payeezy gateway implementations, Merchants using Commerce Hub have the option to tailor their Address Verification System (AVS) and CVV (Card Verification Value) checks via the Payment Settings page. Learn more about our gateway agnostic AVS / CVV rules [here](https://docs.recurly.com/docs/payment-settings#/enabling-cvv-checks).
 
 ## Configuring Commerce Hub Gateway in Recurly
+
+> **Note**: Zero-dollar verifications are available by default and do not require configuration.
 
 ### Step 1: Obtain Your Commerce Hub  Credentials
 
@@ -151,6 +153,8 @@ USD will be enabled by default. If you want to add additional currencies, or rem
 After entering all the required information, click on the "Add Payment Gateway" button at the bottom of the page.
 
 You will see that Commerce Hub has been added to your list of Production Gateways in Recurly with a status of "Enabled".
+
+<br />
 
 ### Step 7: Test the configuration (recommended)
 
