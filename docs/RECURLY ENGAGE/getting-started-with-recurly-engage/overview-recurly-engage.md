@@ -4,7 +4,7 @@ excerpt: >-
   High-level architecture and integration overview of the Recurly Engage
   platform—SDKs, console, core processor, and supported third-party connectors.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
