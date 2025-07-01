@@ -2,7 +2,7 @@
 title: Goals
 excerpt: How to set up and use custom conversion goals for your Recurly Engage prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
