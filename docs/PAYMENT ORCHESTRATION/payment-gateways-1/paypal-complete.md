@@ -65,6 +65,7 @@ Please be aware of the following limitations of PayPal Complete:
 
 * Transactions funded by bank accounts function similarly to direct debits (such as ACH in the United States), requiring 3-6 days for funds to clear in a customer’s PayPal account. Similarly, if you process a refund directly from your bank account—especially when there's no balance in your PayPal account—it may also take 3-6 days (or longer) for the customer to see a credit.
 * During this waiting period, PayPal labels the transaction as "pending" until the involved banks finalize the transaction.
+* You must enable PayPal status update webhooks in your site developer settings to allow status updates to occur.
 
 ## Bank account funded transactions in Recurly
 
@@ -81,15 +82,155 @@ Due to the asynchronous nature of PayPal eChecks, Recurly treats related "past d
 
 Here's a sample scenario of status updates:
 
-| Event                                                                                                                                   | PayPal Transaction Status | Recurly Transaction Status | Recurly Invoice Status |
-| :-------------------------------------------------------------------------------------------------------------------------------------- | :------------------------ | :------------------------- | :--------------------- |
-| 1. Payment request by Recurly, acknowledged and processed by PayPal.                                                                    | Pending                   | Processing                 | Processing             |
-| 2. Days later, PayPal indicates payment failure, Recurly starts dunning.                                                                | Failed                    | Declined                   | Past Due               |
-| 3. Recurly's dunning schedule triggers a dunning email after some days.                                                                 | No change                 | No change                  | No change              |
-| 4. Retry #1: Following Recurly's retry logic, a new payment attempt with PayPal is made after several days.                             | Pending                   | Processing                 | Processing             |
-| 5. Days later, PayPal flags the payment as declined. Recurly notes the invoice's **dunning period is ongoing**.                         | Failed                    | Declined                   | Past Due               |
-| 6. Retry #2: Recurly attempts another payment with PayPal after a few more days.                                                        | Pending                   | Processing                 | Processing             |
-| 7. After several days, PayPal reports payment failure. Recurly updates the status after verifying the **dunning period has concluded**. | Failed                    | Declined                   | Failed                 |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Event
+      </th>
+
+      <th>
+        PayPal Transaction Status
+      </th>
+
+      <th>
+        Recurly Transaction Status
+      </th>
+
+      <th>
+        Recurly Invoice Status
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        1. Payment request by Recurly, acknowledged and processed by PayPal.
+      </td>
+
+      <td>
+        Pending
+      </td>
+
+      <td>
+        Processing
+      </td>
+
+      <td>
+        Processing
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        2. Days later, PayPal indicates payment failure, Recurly starts dunning.
+      </td>
+
+      <td>
+        Failed
+      </td>
+
+      <td>
+        Declined
+      </td>
+
+      <td>
+        Past Due
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        3. Recurly's dunning schedule triggers a dunning email after some days.
+      </td>
+
+      <td>
+        No change
+      </td>
+
+      <td>
+        No change
+      </td>
+
+      <td>
+        No change
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        4. Retry #1: Following Recurly's retry logic, a new payment attempt with PayPal is made after several days.
+      </td>
+
+      <td>
+        Pending
+      </td>
+
+      <td>
+        Processing
+      </td>
+
+      <td>
+        Processing
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        5. Days later, PayPal flags the payment as declined. Recurly notes the invoice's **dunning period is ongoing**.
+      </td>
+
+      <td>
+        Failed
+      </td>
+
+      <td>
+        Declined
+      </td>
+
+      <td>
+        Past Due
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        6. Retry #2: Recurly attempts another payment with PayPal after a few more days.
+      </td>
+
+      <td>
+        Pending
+      </td>
+
+      <td>
+        Processing
+      </td>
+
+      <td>
+        Processing
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        7. After several days, PayPal reports payment failure. Recurly updates the status after verifying the **dunning period has concluded**.
+      </td>
+
+      <td>
+        Failed
+      </td>
+
+      <td>
+        Declined
+      </td>
+
+      <td>
+        Failed
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Integrating PayPal complete with Recurly
 
