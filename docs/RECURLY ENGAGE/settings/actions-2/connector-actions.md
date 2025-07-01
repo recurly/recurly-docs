@@ -4,7 +4,7 @@ excerpt: >-
   How to configure and use connector actions in Recurly Engage to interact with
   third‑party services.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
