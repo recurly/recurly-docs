@@ -4,7 +4,7 @@ excerpt: >-
   Instructions for configuring when and where your prompts should appear using
   page, event, and advanced triggers—all within a single, comprehensive guide.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
