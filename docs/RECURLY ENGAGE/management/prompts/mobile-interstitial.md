@@ -4,7 +4,7 @@ excerpt: >-
   Guide to creating and managing full-screen mobile interstitial prompts in
   Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
