@@ -26,24 +26,18 @@ In Recurly Revenue Recognition Advanced, a **Product Bundle** is defined by a Pa
 
 ## Configuring Product Bundles
 
-1. Navigate to the **Transformation** section and select **Product Bundle**. ![](https://files.readme.io/bb61372-image.png)
+1. Navigate to the **Transformation** section and select **Product Bundle**.
 
-2. Click the **New** icon to create a Product Bundle.
+![](https://files.readme.io/bb61372-image.png)
 
-3. Provide a **unique name** for the bundle.
-
-4. Select the **Parent Identifier** attribute—this drives how parent lines split into child lines.
-
-5. Toggle **Revenue Recognition**, **Cost**, and **Commission Attribution** on if applicable.
-
-6. Set the bundle **Status** (active/inactive).
-
-7. Specify **Effective Start** and **End Dates**.
-
-8. Click the **Save** icon.
-
+2. **Click** the **New** icon to create a Product Bundle.
+3. **Provide** a **unique name** for the bundle.
+4. **Select** the **Parent Identifier** attribute—this drives how parent lines split into child lines.
+5. **Toggle** **Revenue Recognition**, **Cost**, and **Commission Attribution** on if applicable.
+6. **Set** the bundle **Status** (active/inactive).
+7. **Specify** **Effective Start** and **End Dates**.
+8. **Click** the **Save** icon.
 9. To edit, modify fields and click **Save** again.
-
 10. To delete a bundle configuration, click the **Delete** icon.
 
 *Below: example configuration of a “TV Bundle”.*
