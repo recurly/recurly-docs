@@ -4,7 +4,7 @@ excerpt: >-
   Admin users may override certain behaviors of the Recurly Engage JavaScript
   SDK by supplying custom `fetchUserId` and `fetchAnonUserId` functions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
