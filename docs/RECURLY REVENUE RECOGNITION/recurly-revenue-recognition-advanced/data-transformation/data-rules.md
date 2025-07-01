@@ -26,13 +26,13 @@ A **Data Rule** is a configurable set of conditions, formulas, and effective dat
 
 1. **Navigate** to **Transformation → Data Rules**.
 
-![](https://files.readme.io/bb61372-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/bb61372-image.png" />
 
 2. **Enter** a **Rule Name**.
 3. **Select** the **Object** level: Contract, Order Line, Doc Line, or Cost.
 4. **Choose** the **Book** that the rule applies to.
 
-![](https://files.readme.io/34685d1-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/34685d1-image.png" />
 
 5. **Set** **Effective Start** and **End Dates**.
 6. **Click** the **Save** icon.
@@ -41,26 +41,36 @@ A **Data Rule** is a configurable set of conditions, formulas, and effective dat
 
 ## Defining Rule Logic
 
-1. In your Data Rule, open the **Rules** tab and click the **Add** icon.
-2. Select an **Application** attribute (fields vary by object).\
-   ![](https://files.readme.io/aa3f447-image.png)
-3. Enter a **Formula** or static value to assign to that attribute.
-4. (Optional) Click **Add** under **Sub Criteria** to refine when this rule fires: choose a field, operator, and value.\
-   ![](https://files.readme.io/2bebae0-image.png)
-5. Click **Save**.
-6. Repeat to add multiple rules or sub-criteria.\
-   ![](https://files.readme.io/bda0b72-image.png)
-7. To delete a rule or sub-criteria, select its row and click the **Delete** icon, then save.
+1. In your Data Rule, **open** the **Rules** tab and click the **Add** icon.
+2. **Select** an **Application** attribute (fields vary by object).
 
-## Configuring Criteria
+![](https://files.readme.io/aa3f447-image.png)
 
-1. In the **Criteria** section, click the **Add** icon.\
-   ![](https://files.readme.io/2f8bfa0-image.png)
-2. Choose a **Field** from the dropdown.
-3. Select an **Operator**.
-4. Enter the matching **Value**.
-5. Add multiple rows as needed.\
-   ![](https://files.readme.io/9e698ad-image.png)
-6. Edit any row inline and click **Save**, or remove it via the **Delete** icon.
+3. **Enter** a **Formula** or static value to assign to that attribute.
+4. (Optional) **Click** **Add** under **Sub Criteria** to refine when this rule fires: choose a field, operator, and value.
+
+![](https://files.readme.io/2bebae0-image.png)
+
+5. **Click** **Save**.
+6. **Repeat** to add multiple rules or sub-criteria.
+
+![](https://files.readme.io/bda0b72-image.png)
+
+5. To delete a rule or sub-criteria, select its row and click the **Delete** icon, then save.
+
+## Configuring criteria
+
+1. In the **Criteria** section, **click** the **Add** icon.
+
+![](https://files.readme.io/2f8bfa0-image.png)
+
+2. **Choose** a **Field** from the dropdown.
+3. **Select** an **Operator**.
+4. **Enter** the matching **Value**.
+5. **Add** multiple rows as needed.
+
+![](https://files.readme.io/9e698ad-image.png)
+
+6. **Edit** any row inline and click **Save**, or remove it via the **Delete** icon.
 
 > **Tip:** Carefully review and test your Data Rules after configuration to confirm they behave as expected before running large imports.
