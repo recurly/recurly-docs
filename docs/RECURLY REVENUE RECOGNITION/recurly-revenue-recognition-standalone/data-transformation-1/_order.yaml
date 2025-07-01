@@ -1,5 +1,5 @@
 - product-bundle-sa
-- data-rules-copy
+- data-rules-sa
 - '-autobill-for-external-data-copy-1'
 - '-derive-exrate-for-external-data-copy'
 - datasets-copy
