@@ -28,7 +28,7 @@ In Recurly Revenue Recognition Advanced, a **Product Bundle** is defined by a Pa
 
 1. Navigate to the **Transformation** section and select **Product Bundle**.
 
-![](https://files.readme.io/bb61372-image.png)
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/bb61372-image.png" />
 
 2. **Click** the **New** icon to create a Product Bundle.
 3. **Provide** a **unique name** for the bundle.
