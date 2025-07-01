@@ -5,7 +5,7 @@ excerpt: >-
   account-wide holdout, frequency cap, impression limits, and overlay interval
   settings in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
