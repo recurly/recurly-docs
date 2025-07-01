@@ -4,7 +4,7 @@ excerpt: >-
   Details on creating and managing push notifications (Push Prompts) in Recurly
   Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
