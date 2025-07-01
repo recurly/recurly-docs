@@ -4,7 +4,7 @@ excerpt: >-
   Guide to configuring the Vindicia connector in Recurly Engage—setup, data
   sync, and subscription actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
