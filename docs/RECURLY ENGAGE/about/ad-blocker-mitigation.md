@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for Ad Blocker Mitigation, enabling Recurly Engage to
   function when users have ad blockers enabled.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
