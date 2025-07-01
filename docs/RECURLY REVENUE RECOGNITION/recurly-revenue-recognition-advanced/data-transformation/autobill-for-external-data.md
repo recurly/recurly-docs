@@ -54,6 +54,8 @@ Once flagged, you don’t need to import any separate invoice records for those 
 3. Under **Application Attributes**, choose `Auto Bill` and set **Value** to `Yes`.
 4. **Save** the rule.
 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/31abf4fc4251a0d1934f82f1bfe679415d11294178022045e07b78f2581ca654-image.png" />
+
 With this rule active, every uploaded line defaults to Auto Bill = `Y`, so the system will generate invoices without any file-level flags.
 
 > **Note:** Auto Bill only works for full-term, upfront-billed subscriptions. If your billing cadence diverges from the subscription term, continue importing billing records manually.
