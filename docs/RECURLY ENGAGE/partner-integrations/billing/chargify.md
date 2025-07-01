@@ -2,7 +2,7 @@
 title: Chargify
 excerpt: Configuration and usage guide for the Chargify connector in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
