@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for ingesting Segment.com events into Recurly Engage via
   AWS Lambda and using them as usage trackers.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
