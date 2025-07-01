@@ -2,17 +2,13 @@
 title: Getting started with Recurly Engage
 excerpt: >-
   Short descriptions and direct links to the core Recurly Engage setup and
-  management guides for quick navigation.
+  management guides for quick navigationion.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
 # Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
 
 # Definition
 
