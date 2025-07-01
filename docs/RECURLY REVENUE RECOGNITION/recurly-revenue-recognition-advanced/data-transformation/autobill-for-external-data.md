@@ -1,5 +1,5 @@
 ---
-title: Autobill for external data
+title: '- Autobill for external data'
 excerpt: >-
   Automatically generate invoice lines from imported sales orders—no separate
   billing imports needed.
