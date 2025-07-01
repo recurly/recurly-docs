@@ -14,7 +14,7 @@ Recurly Revenue Recognition Advanced can derive the correct exchange rate for an
 
 # Definition
 
-The **Derive ExRate** feature automatically retrieves the appropriate currency exchange rate—by contract date for subscriptions and invoice date for invoices—so merchants don’t need to upload rates manually for external data feeds.
+The **Derive ExRate** feature automatically retrieves the appropriate currency exchange rate—by contract date for subscriptions and invoice date for invoices, so merchants don’t need to upload rates manually for external data feeds.
 
 # Key benefits
 
