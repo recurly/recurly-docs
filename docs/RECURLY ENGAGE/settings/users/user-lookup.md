@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the User Lookup tool, which enables you to
   troubleshoot individual users by viewing their traits and eligible prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
