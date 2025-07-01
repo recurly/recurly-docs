@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for downloading prompt metrics and activity data from
   Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
