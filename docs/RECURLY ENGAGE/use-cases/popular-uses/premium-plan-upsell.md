@@ -16,10 +16,6 @@ next:
 
 Most subscription businesses use outbound email campaigns to inform users about premium plans and add-ons. While effective for highly engaged users, casual visitors need context to understand the value of upgrading. Recurly Engage offers an on-site, personalized approach: prompt users who haven’t purchased an add-on or premium plan, using screen- or event-based triggers to deliver relevant upgrade messaging precisely when it matters.
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 ### Prerequisites & limitations
 
 * You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
