@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Salesforce connector in Recurly Engage—setup,
   credentials, and supported actions for Support Cloud and Marketing Cloud.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
