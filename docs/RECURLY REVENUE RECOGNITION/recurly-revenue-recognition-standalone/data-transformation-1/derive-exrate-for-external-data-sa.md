@@ -1,5 +1,5 @@
 ---
-title: '- Derive exrate for external data (COPY)'
+title: '- Derive exrate for external data - Revenue Recognition Standalone'
 excerpt: >-
   Automatically fetch and apply historical exchange rates for imported
   multi-currency subscriptions and invoices—no manual rates needed.
