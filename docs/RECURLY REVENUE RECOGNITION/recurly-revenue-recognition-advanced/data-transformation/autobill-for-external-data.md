@@ -33,6 +33,8 @@ Recurly Revenue Recognition Advanced can auto–populate billing records by gene
 
 **Navigation**: **Setup → Attribute labels**
 
+<Image align="center" className="border" border={true} src="https://files.readme.io/a33ed901139845e5312c3b10eda7ba3b0335d36167f672e5aaff62f9d3aa2804-image.png" />
+
 You can turn on Auto Bill either in your upload file or via a Data Rule:
 
 #### Method 1: “Auto Bill” Attribute in your upload file
