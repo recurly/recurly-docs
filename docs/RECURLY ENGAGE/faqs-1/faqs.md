@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for debugging prompts that fail to display in Recurly
   Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
