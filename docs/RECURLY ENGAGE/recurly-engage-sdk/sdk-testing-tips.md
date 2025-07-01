@@ -4,7 +4,7 @@ excerpt: >-
   Testing best practices for validating prompt delivery and user state in
   Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
