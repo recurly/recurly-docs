@@ -44,12 +44,12 @@ A **Data Rule** is a configurable set of conditions, formulas, and effective dat
 1. In your Data Rule, **open** the **Rules** tab and click the **Add** icon.
 2. **Select** an **Application** attribute (fields vary by object).
 
-![](https://files.readme.io/aa3f447-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/aa3f447-image.png" />
 
 3. **Enter** a **Formula** or static value to assign to that attribute.
 4. (Optional) **Click** **Add** under **Sub Criteria** to refine when this rule fires: choose a field, operator, and value.
 
-![](https://files.readme.io/2bebae0-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/2bebae0-image.png" />
 
 5. **Click** **Save**.
 6. **Repeat** to add multiple rules or sub-criteria.
