@@ -1,10 +1,10 @@
 ---
-title: User ID Matching
+title: User ID matching
 excerpt: >-
   Guide for configuring how Recurly Engage matches authenticated users via
   unique browser-stored identifiers.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
