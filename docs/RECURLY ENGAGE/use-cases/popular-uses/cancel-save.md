@@ -27,10 +27,6 @@ Here is a video tutorial that shows how to set this up for your website and app.
 >
 > Conversions are significantly lower when using a redirect URL instead of 1-Click Actions.
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly Engage subscription plan.
-
 ### Prerequisites & limitations
 
 * You must have **Company**, **App Administrator**, or **App Member** permissions in Recurly Engage.
