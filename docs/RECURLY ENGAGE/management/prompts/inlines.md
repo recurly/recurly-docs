@@ -4,7 +4,7 @@ excerpt: >-
   Comprehensive guide to creating and managing inline prompts—horizontal,
   vertical, tile, and text-only—using defined zones in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
