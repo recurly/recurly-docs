@@ -2,7 +2,7 @@
 title: Video prompts
 excerpt: Configuration and best practices for creating video prompts in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
