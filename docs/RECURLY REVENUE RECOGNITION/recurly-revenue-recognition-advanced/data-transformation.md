@@ -14,7 +14,7 @@ next:
 ---
 # Overview
 
-This feature is part of our product, Recurly Revenue Recognition Advanced. [<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
+This feature is part of our product, Recurly Revenue Recognition Advanced. \[<a href="https://docs.recurly.com/docs/recurly-revenue-recognition-advanced" target="_blank">Learn more here</a>].
 
 ### Prerequisites
 
@@ -31,7 +31,7 @@ This feature is part of our product, Recurly Revenue Recognition Advanced. [<a h
 
 Data transformation encompasses various functionalities in Recurly Revenue Recognition Advanced. It includes configuring product bundles where multiple products are grouped together and sold as a single unit. Data Rules allow the definition of transaction-specific criteria based on formulas or attributes. Datasets are created for comprehensive data analysis, with fields from different attributes. Once created, datasets refresh daily and can only be inactivated. These features enable businesses to transform data, manage product bundling, apply customized rules, and analyze data effectively for accurate revenue recognition.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/6cb0c82-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/6cb0c82-image.png" />
 
 ## Product bundle
 
@@ -51,7 +51,7 @@ Product Bundle allows grouping multiple individual products into a single unit f
 7. **Specify** the effective start and end dates for the Product Bundle.
 8. **Click** on the Save icon to save the configuration.
 9. To edit a Product Bundle configuration, **make** the desired changes and **click on the Save icon**.
-10. To delete a configuration, **click on the Delete icon**. 
+10. To delete a configuration, **click on the Delete icon**.
 
 These steps allow you to efficiently manage and customize your Product Bundles in Recurly Revenue Recognition Advanced.
 
