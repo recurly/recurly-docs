@@ -4,7 +4,7 @@ excerpt: >-
   Setup guide for Google’s Firebase Cloud Messaging (FCM) connector in Recurly
   Engage Push Prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
