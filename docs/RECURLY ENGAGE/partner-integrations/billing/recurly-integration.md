@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Recurly connector in Recurly Engage, including
   activation, data sync, and 1-Click subscription actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
