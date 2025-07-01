@@ -4,7 +4,7 @@ excerpt: >-
   How to move your prompts from draft to live in Recurly Engage, including QA
   review and full deployment.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
