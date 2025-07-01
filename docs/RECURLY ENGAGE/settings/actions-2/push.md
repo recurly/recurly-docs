@@ -1,10 +1,10 @@
 ---
-title: Push Notifications
+title: Push notifications
 excerpt: >-
   How to configure push notification endpoints and credentials for Recurly
   Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
