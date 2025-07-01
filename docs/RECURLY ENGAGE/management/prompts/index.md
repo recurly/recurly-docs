@@ -4,7 +4,7 @@ excerpt: >-
   An introduction to in-app messaging prompts in Recurly Engage and quick access
   to their management console.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
