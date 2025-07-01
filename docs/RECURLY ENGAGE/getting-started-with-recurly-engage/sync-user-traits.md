@@ -4,7 +4,7 @@ excerpt: >-
   How to sync and import user attributes into Recurly Engage for targeted
   campaigns and personalized experiences.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
