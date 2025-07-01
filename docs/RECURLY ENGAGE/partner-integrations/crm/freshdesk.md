@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Freshdesk connector in Recurly Engage—API setup
   and supported support ticket and contact management actions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
