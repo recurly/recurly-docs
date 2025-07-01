@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Abandon Cart use case, which targets visitors who
   leave items in their cart and encourages them to complete checkout.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
