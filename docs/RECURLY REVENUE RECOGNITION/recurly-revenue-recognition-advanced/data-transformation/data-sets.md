@@ -1,5 +1,5 @@
 ---
-title: Data sets
+title: Datasets
 excerpt: >-
   Unlock powerful analytics by defining and updating custom data tables that
   feed all reports and dashboards automatically.
@@ -24,7 +24,7 @@ A **Dataset** is a custom collection of fields (attributes) from your sales orde
 
 # Key details
 
-## Creating a Dataset
+## Creating a dataset
 
 1. **Navigate** to **Transformation → Dataset**.
 
@@ -38,7 +38,8 @@ A **Dataset** is a custom collection of fields (attributes) from your sales orde
 
 5. **Click** **Save** to finalize the configuration.
 
-Once saved, any uploaded sales order with matching identifiers will populate your new dataset. You’ll see the data reflected in the Revenue Workbench and across all analytics reports, ensuring consistent, accurate insights.\
+Once saved, any uploaded sales order with matching identifiers will populate your new dataset. You’ll see the data reflected in the Revenue Workbench and across all analytics reports, ensuring consistent, accurate insights.
+
 ![](https://files.readme.io/9cdca79-image.png)
 
 > **Note:** Datasets cannot be permanently deleted; you can only toggle a dataset to **Inactive** to retire it from future use while retaining historical records.
