@@ -4,7 +4,7 @@ excerpt: >-
   Overview of the design editor for creating and customizing prompts in Recurly
   Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
