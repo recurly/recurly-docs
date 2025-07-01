@@ -1,5 +1,5 @@
 ---
-title: '- Autobill for external data (COPY)'
+title: '- Autobill for external data - Revenue Recognition Standalone'
 excerpt: >-
   Automatically generate invoice lines from imported sales orders—no separate
   billing imports needed.
