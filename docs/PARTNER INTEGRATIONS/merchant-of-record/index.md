@@ -4,7 +4,7 @@ excerpt: >-
   A quick guide to the merchant-of-record model and where to configure your
   Reach MoR integration in Recurly.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
