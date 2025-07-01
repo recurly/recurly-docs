@@ -4,7 +4,7 @@ excerpt: >-
   Overview of prompt actions—triggered events tied to user interactions,
   built-in connectors, and custom integrations in Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
