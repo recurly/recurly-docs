@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Shopify connector in Recurly Engage—setup,
   supported actions, and usage steps.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
