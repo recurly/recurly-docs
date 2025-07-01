@@ -4,7 +4,7 @@ excerpt: >-
   Setup guide for the Amazon Device Messaging (ADM) connector in Recurly Engage
   Push Prompts.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
