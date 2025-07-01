@@ -4,7 +4,7 @@ excerpt: >-
   Use CSV uploads as data sources for dynamic prompt content and enrich in-app
   messages.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
