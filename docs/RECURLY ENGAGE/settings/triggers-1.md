@@ -2,8 +2,9 @@
 title: Triggers
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 link:
+  new_tab: true
   url: https://help.redfast.com/docs/triggers-1#/
 metadata:
   title: ''
