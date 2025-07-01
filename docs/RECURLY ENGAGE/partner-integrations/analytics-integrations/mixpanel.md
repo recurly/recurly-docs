@@ -4,7 +4,7 @@ excerpt: >-
   Integration guide for the Mixpanel connector in Recurly Engage—setup and
   required credentials for event and user trait sync.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
