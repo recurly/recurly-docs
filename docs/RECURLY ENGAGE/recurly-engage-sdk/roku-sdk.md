@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for the Recurly Engage Roku SDK, which enables native
   prompt display and usage tracking in your Roku applications.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
