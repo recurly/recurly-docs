@@ -2,7 +2,7 @@
 title: Product bundle - Revenue Recognition Standalone
 excerpt: >-
   Create and manage complex product bundles with precise pricing and cost
-  allocation using Recurly Revenue Recognition Advanced.
+  allocation using Recurly Revenue Recognition Standalone.
 deprecated: false
 hidden: false
 metadata:
