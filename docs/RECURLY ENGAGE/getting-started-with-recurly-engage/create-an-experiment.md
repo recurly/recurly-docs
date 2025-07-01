@@ -4,7 +4,7 @@ excerpt: >-
   Step-by-step guide to creating and running A/B experiments on your prompts in
   Recurly Engage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
