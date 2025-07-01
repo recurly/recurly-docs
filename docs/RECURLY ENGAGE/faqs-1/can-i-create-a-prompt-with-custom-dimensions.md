@@ -4,7 +4,7 @@ excerpt: >-
   Configuration guide for setting custom dimensions on Recurly Engage prompts
   using Custom CSS.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
