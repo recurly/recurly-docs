@@ -4,7 +4,7 @@ excerpt: >-
   Accessibility compliance guidelines for Recurly Engage prompts, aligned with
   WCAG standards.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
