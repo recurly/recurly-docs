@@ -1,5 +1,5 @@
 ---
-title: User Lookup
+title: User lookup
 excerpt: >-
   Configuration guide for the User Lookup tool, which enables you to
   troubleshoot individual users by viewing their traits and eligible prompts.
