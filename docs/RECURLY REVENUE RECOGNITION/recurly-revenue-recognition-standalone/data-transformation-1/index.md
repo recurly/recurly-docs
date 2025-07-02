@@ -15,8 +15,6 @@ next:
 ---
 # Overview
 
-<br />
-
 ### Required plan
 
 The Standalone Revenue Recognition module is available to merchants who need a revenue tool to automate their ASC 606 / IFRS 15 accounting but do not, at this time, need the Recurly billing platform.
