@@ -32,7 +32,7 @@ Recurly Revenue Recognition Advanced offers a convenient **Derive ExRate** attri
 
 **Navigation**: **Setup → Attribute labels**
 
-![](https://files.readme.io/d16237a7e65513909fb2023b3fcf6f100ba183876684236f262a37d7f8b65281-1_Screenshot_.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/d16237a7e65513909fb2023b3fcf6f100ba183876684236f262a37d7f8b65281-1_Screenshot_.png" />
 
 You can enable this feature using one of two methods:
 
@@ -52,6 +52,6 @@ You can enable this feature using one of two methods:
 3. Under **Application Attributes**, choose **Derive ExRate** and set **Value** to `Yes`.
 4. **Save** the Data Rule.
 
-![](https://files.readme.io/9c6b8a88518e4be2b7d7a990132723e42e06472348b28522b36da7b8c4333e2f-image.png)
+<Image align="center" className="border" border={true} src="https://files.readme.io/9c6b8a88518e4be2b7d7a990132723e42e06472348b28522b36da7b8c4333e2f-image.png" />
 
 Once saved, every uploaded line will default to **Derive ExRate = Y**, and you no longer need to supply exchange rates manually. Lines without a `Y` will assume **N** (No) by default.
