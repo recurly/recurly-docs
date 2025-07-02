@@ -18,18 +18,22 @@ next:
 
 ### Prerequisites
 
-- Access to one or more supported payment gateways.
-- Setup and configuration of the desired payment gateway(s) within Recurly.
+* Access to one or more supported payment gateways.
+* Setup and configuration of the desired payment gateway(s) within Recurly.
 
 ### Limitations
 
-- The range of supported currencies is dependent on the selected payment gateway(s).
+* The range of supported currencies is dependent on the selected payment gateway(s).
 
 # Definition
 
 Recurly’s Currency Support feature provides merchants with the flexibility to manage transactions in a wide range of currencies. This capability is essential for businesses that operate in multiple countries or target customers in different regions, allowing them to offer prices in the local currency, which can improve customer satisfaction and conversion rates.
 
 > **Note:** Not all gateways support all currencies. For a specific gateway's supported currencies, check our dedicated gateway pages. If "All available" is listed, the gateway supports all Recurly currencies listed below.
+
+## Gateways with all-currencies support
+
+<br />
 
 # ISO standard currencies
 
