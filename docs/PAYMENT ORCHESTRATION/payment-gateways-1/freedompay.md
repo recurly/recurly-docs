@@ -37,17 +37,17 @@ Recurly supports Ecommerce and Recurring transactions with FreedomPay. If you ar
 
 # Key details
 
-| Features                        | Availability                                                                                                                                                |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Payment Processing, Renewals                                                                                                                                |
-| Supported integrations          | Recurly.js, API, Checkout, HPP                                                                                                                              |
-| Supported operations            | Verify, Purchase, Void, and Refund                                                                                                                          |
-| Supported payment types         | Credit and Debit Cards, Gateway tokens                                                                                                                      |
-| Supported card brands           | Visa, MasterCard, Discover, Amex, JCB, Diners, UnionPay                                                                                                     |
-| Gateway Specific 3DS2 Supported | N/A                                                                                                                                                         |
-| Supported capabilities          | Card-on-file, Gateway Tokens, ZDA                                                                                                                           |
-| Regions                         | United States                                                                                                                                               |
-| Currencies                      | FreedomPay supports all ISO-standard currencies. See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a> |
+| Features                        | Availability                                                                                               |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Payment Processing, Renewals                                                                               |
+| Supported integrations          | Recurly.js, API, Checkout, HPP                                                                             |
+| Supported operations            | Verify, Purchase, Void, and Refund                                                                         |
+| Supported payment types         | Credit and Debit Cards, Gateway tokens                                                                     |
+| Supported card brands           | Visa, MasterCard, Discover, Amex, JCB, Diners, UnionPay                                                    |
+| Gateway Specific 3DS2 Supported | N/A                                                                                                        |
+| Supported capabilities          | Card-on-file, Gateway Tokens, ZDA                                                                          |
+| Regions                         | United States                                                                                              |
+| Currencies                      | See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a> |
 
 # Configuring FreedomPay gateway in Recurly
 
