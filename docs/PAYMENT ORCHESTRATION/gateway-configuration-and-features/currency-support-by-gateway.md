@@ -37,13 +37,13 @@ Recurly’s Currency Support feature provides merchants with the flexibility to 
 
 [Braintree](braintree-rd) - PayPal currencies will be limited to PayPal supported currencies.
 
-Commerce Hub by Fiserv - All
+[Commerce Hub](commerce-hub) by Fiserv - All
 
-Cybersource - All
+[Cybersource](cybersource) - All
 
-FreedomPay - All
+[FreedomPay](freedompay) - All
 
-Stripe - Must match in both Stripe and Recurly when using Gateway Failover.
+[Stripe](stripe) - Must match in both Stripe and Recurly when using Gateway Failover.
 
 WorldPay US eCommerce - All
 
