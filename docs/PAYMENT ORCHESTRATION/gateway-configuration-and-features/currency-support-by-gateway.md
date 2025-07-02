@@ -33,9 +33,9 @@ Recurly’s Currency Support feature provides merchants with the flexibility to 
 
 ## Gateways with all-currencies-available support
 
-Adyen - with special behavior for ISK and CLP
+[Adyen](adyen) - with special behavior for ISK and CLP
 
-Braintree - PayPal currencies will be limited to PayPal supported currencies.
+[Braintree](braintree-rd) - PayPal currencies will be limited to PayPal supported currencies.
 
 Commerce Hub by Fiserv - All
 
