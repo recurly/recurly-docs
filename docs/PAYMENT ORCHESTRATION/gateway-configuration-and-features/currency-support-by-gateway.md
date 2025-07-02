@@ -31,22 +31,6 @@ Recurly’s Currency Support feature provides merchants with the flexibility to 
 
 > **Note:** Not all gateways support all currencies. For a specific gateway's supported currencies, check our dedicated gateway pages. If "All available" is listed, the gateway supports all Recurly currencies listed below.
 
-## Gateways with all-currencies-available support
-
-[Adyen](adyen) - with special behavior for ISK and CLP
-
-[Braintree](braintree-rd) - PayPal currencies will be limited to PayPal supported currencies.
-
-[Commerce Hub](commerce-hub) by Fiserv - All
-
-[Cybersource](cybersource) - All
-
-[FreedomPay](freedompay) - All
-
-[Stripe](stripe) - Must match in both Stripe and Recurly when using Gateway Failover.
-
-WorldPay US eCommerce - All
-
 # ISO standard currencies
 
 | Currency |     |       |     |     |       |
