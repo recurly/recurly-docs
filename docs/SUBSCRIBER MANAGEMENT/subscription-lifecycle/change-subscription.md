@@ -85,7 +85,7 @@ When making an immediate subscription change, as opposed to making a change that
 
 Your customer may have requested to upgrade their plan, or you want to change the quantity and/or price of their current plan, or adjust pricing or quantity of associated add-ons, and you wish to provide them access to these immediate changes right away. In these cases, Recurly allows you to handle the resulting credit and/or charge that reflects the time left in the current billing period, in the way that is most effective for your business and your customer. Because there is no one-size-fits-all approach for how much or little to charge or credit a customer for an immediate subscription change in a line of business or across varying industry verticals, Recurly leaves the flexibility to control proration behavior up to you and your organizations’ needs.
 
-## Charges and Credits
+## Charges and credits
 
 Why do credits and/or charges result? Think about the reasons for making an immediate subscription change… You can upgrade a customer by moving them to a higher tier plan, downgrade a customer to immediately provide them with a less expensive service, you could add more add-ons to a subscription, update the quantity of their subscription so their friends or family can receive your goods immediately as well- the list goes on. Sometimes you’ll want to charge your customers for those changes, sometimes you’ll want to credit them, sometimes you’ll want to issue both a credit and a charge. Sometimes, you’ll want to skip the credits and charges resulting from your change entirely. Recurly allows you to choose what you want to do, when you want to do it.
 
@@ -105,17 +105,17 @@ Options for how to apply a **charge** to an immediate subscription change are:
 
 There are two ways to choose how to handle the credits and/or charges resulting from immediate subscription changes.
 
-The first way is by setting your preferences on the Invoice Settings page within the Configuration section in Recurly. The options you choose for Credits and Charges on the Invoice Settings page will serve as the default behavior for how to handle all credits/charge resulting from all immediate subscription changes made on your site. You can update your settings at any time. All charges and credits resulting from  immediate subscription changes moving forward will assume the new settings. Previously executed charges and credits will remain unchanged. This site level setting is only supported in Recurly App’s user interface. 
+The first way is by setting your preferences on the Invoice Settings page within the Configuration section in Recurly. The options you choose for Credits and Charges on the Invoice Settings page will serve as the default behavior for how to handle all credits/charge resulting from all immediate subscription changes made on your site. You can update your settings at any time. All charges and credits resulting from  immediate subscription changes moving forward will assume the new settings. Previously executed charges and credits will remain unchanged. This site level setting is only supported in Recurly App’s user interface.
 
 **Site-level setting**
 
-<Image align="center" src="https://files.readme.io/c8e180b-Screenshot_2024-05-06_at_7.55.42_PM.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/c8e180b-Screenshot_2024-05-06_at_7.55.42_PM.png" />
 
 The second way you can choose how to handle credits and/or charges resulting from immediate subscription changes is by setting your preferences during the immediate subscription change itself. You can set subscription-level overrides in the UI and both API V2 and V3. If you do not override the immediate subscription change charge and credit behavior when making the actual subscription change(s), then the credit/charge behavior used will reflect the settings from your site-level default settings on the Invoice Settings page.
 
 **Subscription-level overrides**
 
-<Image align="center" src="https://files.readme.io/6388d2b-Screenshot_2024-05-06_at_8.10.01_PM.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/6388d2b-Screenshot_2024-05-06_at_8.10.01_PM.png" />
 
 ### Rebills
 
@@ -131,8 +131,6 @@ Both a **credit and a charge** (a rebill) result when:
 * Changing the *plan* on the subscription regardless of upgrading or downgrading
 * Any immediate subscription change is made when the *OBWC (only bill what changed) feature is not enabled on a site*
 
-<br />
-
 ### Either charge or credit is created (no rebill)
 
 **Only a credit** results when:
@@ -146,8 +144,6 @@ Both a **credit and a charge** (a rebill) result when:
 * Only Bill What Changed is enabled and
 * Increase in price of sub or add-on, no change in plan
 * Increase in quantity of sub or add-on, no change in plan
-
-<br />
 
 ## How each charge and credit option is calculated
 
@@ -163,7 +159,7 @@ Proration is calculated as follows:
 3. Multiply the result by the per-unit price to calculate the prorated charge or credit.\
    The formula is represented as:
 
-<Image align="center" width="75% " src="https://files.readme.io/28bfa13-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/28bfa13-image.png" />
 
 It's important to remember that the "plan billing period" in this formula refers to the set duration of the subscription plan, not the adjusted subscription's billing period. This is relevant when the billing date is changed. For example, if a subscription on an annual plan has its billing cycle end date adjusted, the denominator in the formula will still represent a full year, while the numerator will reflect the adjusted end date.
 
@@ -343,7 +339,7 @@ You will also need to handle the resulting charge to the account for the new/upd
 
 #### Change quantity-based add-on
 
-For any add-ons with Tiered, Volume, or Stair Step Pricing Models, all mid-cycle changes will be credited/charged based on the site-level settings configured on the Invoice Settings page for handling credits and charges that result from immediate subscription changes. However, the flexibility in choosing how to issue a charge or credit for these types of add-ons is not supported with subscription-level overrides in the Recurly App UI. However, you are able to override the charge/credit behavior for these types of add-ons at the subscription level via the API.  
+For any add-ons with Tiered, Volume, or Stair Step Pricing Models, all mid-cycle changes will be credited/charged based on the site-level settings configured on the Invoice Settings page for handling credits and charges that result from immediate subscription changes. However, the flexibility in choosing how to issue a charge or credit for these types of add-ons is not supported with subscription-level overrides in the Recurly App UI. However, you are able to override the charge/credit behavior for these types of add-ons at the subscription level via the API.
 
 Thus, Tiered, Volume, and Stair Step add-ons will either follow the charge/credit settings from the site-level configuration on the Invoice Settings page, or you can override their charge/credit options at the subscription level using the API, or else they will follow the custom options applied on the subscription change that were made as a result of changing the plan, price and/or quantity of the existing plan, or making a change to fixed-price add-ons. The invoices will display the charge/credit based on the subscription's tiers and prices.
 
@@ -455,9 +451,7 @@ Subscriptions can be altered either immediately, at the next billing date, or up
 Often, merchants prefer immediate upgrades to allow customers access to higher value products promptly, while collecting additional revenue right away. Conversely, downgrades are usually set for the next bill date or at term renewal. This approach helps lock the customer into the agreed-upon, and already paid for, billing cycle, continuing to provide the customer with the higher value product until the commencement of the next billing period or term.\
 In instances where there are already pending changes on a subscription, there's flexibility to alter certain attributes of the subscription without affecting other pending changes. When preserving pending changes is desired, there's an option to keep them intact while updating values like shipping address, subscription terms, invoicing and payment, and custom fields, without any impacts on the existing pending changes.
 
-<Image title="Edit Subscription Options.png" alt={865} align="center" width="smart" src="https://files.readme.io/90e7347-Edit_Subscription_Options.png">
-  Subscriptions can be canceled at three different timeframes: immediately, next bill date, or term renewal.
-</Image>
+<Image align="center" alt={865} border={false} caption="Subscriptions can be canceled at three different timeframes: immediately, next bill date, or term renewal." title="Edit Subscription Options.png" src="https://files.readme.io/90e7347-Edit_Subscription_Options.png" width="smart" />
 
 The illustration above depicts the various options available for modifying subscriptions, with cancellation available at three different timeframes. This flexibility allows for better management and control over subscription modifications, aligning with both merchant and customer preferences.
 
@@ -493,7 +487,7 @@ At renewal change requests only apply to product changes. All other changes, lik
 * Change an add-on price
 * Change an add-on quantity
 
-<Image align="center" className="border" width="80%" border={true} src="https://files.readme.io/0087b30-DOCS_-_mixed-tax-rates.png" />
+<Image align="center" className="border" border={true} width="80%" src="https://files.readme.io/0087b30-DOCS_-_mixed-tax-rates.png" />
 
 # Changes to subscriptions with discounts
 
