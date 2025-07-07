@@ -28,6 +28,14 @@ Calendar Billing is a feature in Recurly that allows businesses to consolidate m
 * **Enhanced customer experience**: Customers receive a single, consolidated invoice, leading to clearer communication and fewer queries.
 * **Flexible options**: Choose between aggregate invoices for physical goods or aligning renewals for digital goods, depending on your business model.
 
+> 📘 About proration
+>
+> When active coupon redemptions are applied to new charges, Recurly will prorate any fixed amount discounts following the same proration rate of the charge. Recurly prorates fixed amount discounts in an immediate subscription change because the discount represents the time of the cycle. If the customer is 50% through their cycle and only going to be charged 50% of the plan price, we want to ensure that they only get 50% of the discount amount. Percentage discounts automatically represent a prorated portion because they are a percentage of an already prorated amount.
+>
+> <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/736422361c55f851bdda94ecfb515c19003bad390b37346e06c97ee3bb63316c-image.png" />
+>
+> It is not possible to have a fixed amount coupon redemption not prorate when applied in an immediate change. If you require this use case, please look at custom credits as an alternative and write in to <a href="https://support.recurly.com/" target="_blank">Recurly Support</a> to express your interest in this feature.
+
 # Background
 
 For businesses offering multiple subscriptions, it's often desirable to bill these subscriptions together. Depending on your business model, Recurly provides tailored solutions:
@@ -208,7 +216,7 @@ A **new** customer buys a 7-day trial subscription on January 15th.
 * The account's bill date is set to January 22nd.
 * Any subsequent non-trial subscription purchases or activations will align to this date.
 
-#### Trial Subscription with Bill Date
+#### Trial subscription with bill date
 
 If a customer already has an account bill date and buys a new trial subscription, when the subscription finishes its trial, we'll adjust the bill date to match the account bill date. This results in a one-time prorated invoice. At the next bill date, the subscriptions will bill together.
 
@@ -232,7 +240,7 @@ If you've enabled automatic email templates on your site or plans, the following
 
 If you're interested in any of these features included in Calendar Billing, please contact Support at [support@recurly.com](mailto:support@recurly.com).
 
-# Enabling Calendar Billing
+# Enabling calendar billing
 
 Before you can use Calendar Billing, you need to have it enabled for your Recurly account.
 
