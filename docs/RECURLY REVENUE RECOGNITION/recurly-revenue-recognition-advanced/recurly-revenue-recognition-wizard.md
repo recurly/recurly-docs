@@ -300,6 +300,6 @@ During and after activation, you will notice the following changes:
    **Close the Period**
 
    * Once your journal entries are summarized, formally close the period.
-   * For full details, see the **Period Close Documentation**.
+   * For full details, see the **[Period Close Documentation](period-close-checklist)**.
 
 After completing these steps, Revenue Recognition will be activated on your site.
