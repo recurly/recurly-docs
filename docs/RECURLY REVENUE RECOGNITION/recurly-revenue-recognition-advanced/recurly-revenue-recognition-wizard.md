@@ -17,8 +17,6 @@ After the Revenue Recognition feature is enabled for your site, you’ll notice 
 
 <Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/27828464882adf638cfbb5b9fb7fd86edb683a33cd92f320e560949c6a2ce914-SS_2.png" />
 
-<br />
-
 ### **Revenue settings page:**
 
 1. **Navigate** to Revenue Recognition > Revenue Settings.
@@ -222,6 +220,8 @@ Under this step we assign default revenue rules to each product defined in Recur
 
 Set up default revenue rules for any products that do not have specific settings assigned. Any changes made here will also be reflected on the main Revenue Settings page.  Currently default rules assigned cannot be changed.
 
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/225f3e74c8e66832d2191e8d40d6b829d15711ec8e08d4e5bd02278bd05b6b57-SS_11.png" />
+
 Under this step we will assign default rules to the following product types:
 
 * Plan Prices
@@ -251,6 +251,8 @@ This feature ensures that all revenue and journal entries are accurately reflect
 2. The minimum recommended delay is 2 days, allowing the system to start closing the period at the end of the second day.
 3. You have the flexibility to configure auto-closure for any time after the 2-day minimum, based on your operational needs.
 
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/03808af4b77fcac2c22439c8f9a05fb7ef22c0c6cce258ef4d2e41fa24d2dcbf-SS_12.png" />
+
 This setting will delay the period close for the number of days mentioned in the setting.
 
 > **Please note:** Only the auto-period close lag days can be changed after activation. No other settings can be changed.
@@ -264,6 +266,10 @@ This setting will delay the period close for the number of days mentioned in the
 * For detailed information on the types of credits supported, consult the [Recurly Revenue Recognition Credits Documentation](recurly-revenue-recognition-credits).
 
 Decide how credit transactions should be managed.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/71f65e68827411677aab71666816be77b6828d1b18af8aebe96ad075da528c99-SS_13.png" />
+
+<br />
 
 Please note, only the auto-period close lag days can be changed after activation. No other settings can be changed.
 
