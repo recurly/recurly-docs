@@ -65,7 +65,7 @@ Enable the Bank Account option on your hosted pages settings in your Recurly sit
 
 #### Webhooks
 
-Ensure to update the relevant webhooks to support ACH, covering aspects like invoice state and payment state notifications. Details on code samples can be found in the [Webhooks documentation](https://recurly.readme.io/v2.0/page/webhooks).
+Ensure to update the relevant webhooks to support ACH, covering aspects like invoice state and payment state notifications. Details on code samples can be found in the [Webhooks documentation](https://docs.recurly.com/v1.3/docs/overview-webhooks#/).
 
 #### API and Recurly.js
 
