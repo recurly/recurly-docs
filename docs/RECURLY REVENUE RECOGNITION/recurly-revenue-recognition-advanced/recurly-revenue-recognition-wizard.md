@@ -107,10 +107,30 @@ Out of the box, the system provides several Revenue Performance Obligations (POB
 ### `PointInTime` recognition
 
 * **Definition:** Revenue is recognized at a specific point in time, typically the month the billing is issued.
-* **Setup:** Attach the "PointInTime" POB to the relevant plan or item.
+* **Setup:** **Attach** the "PointInTime" POB to the relevant plan or item.
 * **Example Table:**
 
 | Invoice Created Month | Invoice Amount | Start Date | End Date   | Recognized Period | Recognized Amount |
 | --------------------- | -------------- | ---------- | ---------- | ----------------- | ----------------- |
 | JAN 2025              | $129.00        | 01/21/2025 | 07/20/2025 | JAN 2025          | $129.00           |
 | FEB 2025              | $120.00        | 02/02/2025 |            | FEB 2025          | $120.00           |
+
+### `OverTime` (daily) Recognition
+
+* **Definition:** Revenue is recognized evenly over the contract period, calculated daily.
+* **Setup:** **Select** "OverTime (Daily)" POB for the plan or item.
+* **Amortization Example:**
+
+| Period | Number of Days | Amortized Amount |
+| ------ | -------------- | ---------------- |
+| Jan    | 11             | $7.84            |
+| Feb    | 28             | $19.96           |
+| Mar    | 31             | $22.09           |
+| Apr    | 30             | $21.38           |
+| May    | 31             | $22.09           |
+| Jun    | 30             | $21.38           |
+| July   | 20             | $14.25           |
+
+* **Calculation:**
+  * **Number of days:** 181
+  * **Per day rate:** $129.00 / 181 = $0.713
