@@ -150,3 +150,23 @@ Out of the box, the system provides several Revenue Performance Obligations (POB
 | May    | 31             | $21.38           |
 | Jun    | 30             | $21.38           |
 | July   | 20             | $14.26           |
+
+* **Calculation:**
+  * **Number of days:** 181
+  * **Per day rate:** $129.00 / 181 = $0.713
+
+### Manual recognition (only for Revenue Recognition Advanced)
+
+* **Definition:** No revenue is released automatically; amounts remain in the deferred bucket. The Advanced Revenue recognition merchants will be able to release revenue manually using the Revenue Workbench.
+* **Setup:** Select "Manual Recognition" in the Advanced Revenue Recognition rules.
+
+#### Configuration steps
+
+1. **Review each plan and item:** Evaluate every plan and item individually to determine the correct revenue recognition rule and GL account.
+2. **Select performance obligation:** From the configuration page, choose the appropriate POB (PointInTime, OverTime (Daily), OverTime (Partial Monthly), or Manual) for each plan, item, or add-on.
+3. **Assign GL accounts:** Specify the relevant GL accounts for revenue and deferred revenue at each configuration section.
+4. **Save and validate:** Ensure all selections are saved. The system will use these settings to create journal entries and amortization schedules.
+5. **Default handling:**
+
+* If no values are selected, the system assigns default POBs from the missing Rules page  and GL accounts from the business entities.
+* For inactive plans, rules are drawn from the default section.
