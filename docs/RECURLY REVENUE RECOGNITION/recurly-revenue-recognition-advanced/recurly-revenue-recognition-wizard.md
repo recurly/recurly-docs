@@ -103,3 +103,14 @@ One of the required tasks is to assign default accounting codes for your busines
 To ensure compliance with best accounting practices, you must review each plan  individually to apply the correct revenue recognition rules and accounting codes.
 
 Out of the box, the system provides several Revenue Performance Obligations (POBs) that can be attached at the Setup, Plan, and Add-On levels. Users must select the correct values for each section to ensure the system generates accurate accounting entries.
+
+### `PointInTime` recognition
+
+* **Definition:** Revenue is recognized at a specific point in time, typically the month the billing is issued.
+* **Setup:** Attach the "PointInTime" POB to the relevant plan or item.
+* **Example Table:**
+
+| Invoice Created Month | Invoice Amount | Start Date | End Date   | Recognized Period | Recognized Amount |
+| --------------------- | -------------- | ---------- | ---------- | ----------------- | ----------------- |
+| JAN 2025              | $129.00        | 01/21/2025 | 07/20/2025 | JAN 2025          | $129.00           |
+| FEB 2025              | $120.00        | 02/02/2025 |            | FEB 2025          | $120.00           |
