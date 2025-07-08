@@ -170,3 +170,14 @@ Out of the box, the system provides several Revenue Performance Obligations (POB
 
 * If no values are selected, the system assigns default POBs from the missing Rules page  and GL accounts from the business entities.
 * For inactive plans, rules are drawn from the default section.
+
+**The steps to review plans are as under:**
+
+1. **Review** each product type listed.
+2. **Assign** the [appropriate revenue recognition rules](recurly-revenue-recognition-standard-edition-setup#step-2-applying-performance-obligations-and-accounting-codes-to-products) and accounting codes for each one.
+3. As you complete the review for each item, **check it** off to confirm.
+4. Once all types have been reviewed and configured, **click** "Apply" to save the changes.
+
+Please note, if the products are not configured with rules or accounting codes, they will pick the default ones.
+
+You can modify and revalidate these settings as needed until you activate Revenue Recognition.
