@@ -99,3 +99,7 @@ One of the required tasks is to assign default accounting codes for your busines
 4. Once completed, **click** "Next" to move to the following step.
 
 ## Step 2: Reviewing settings of all products
+
+To ensure compliance with best accounting practices, you must review each plan  individually to apply the correct revenue recognition rules and accounting codes.
+
+Out of the box, the system provides several Revenue Performance Obligations (POBs) that can be attached at the Setup, Plan, and Add-On levels. Users must select the correct values for each section to ensure the system generates accurate accounting entries.
