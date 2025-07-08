@@ -23,3 +23,53 @@ After the Revenue Recognition feature is enabled for your site, you’ll notice 
    You can modify all these settings any time before activation. After activation, only the **Auto Period Close Delay** will remain editable.
 
 ### General ledger accounts
+
+Recurly's Revenue Recognition feature provides flexible configuration for liability and revenue accounts at the charge, plan, or item level. This means you can designate specific liability accounts (such as Deferred Revenue) and revenue accounts for each product, plan, or charge, aligning them with the accounts you use in your General Ledger (GL) system:
+
+1. **Click** on “New Accounting Code”.
+2. **Fill in** the accounting code and select the account type as Revenue or Liability. Give the description if required.
+3. **Click on** Create. Once all the required accounts are created, the screen looks like this.
+
+# Onboarding Wizard
+
+This onboarding wizard is designed to guide you through the process of self-enabling and activating the Revenue Recognition feature for both the Standard and RA Manage Advanced systems. The wizard will walk you through each step, explaining the purpose of each control and providing guidance on which values to select for your specific use case.
+
+**What to expect in this wizard:**
+
+* Each step provides a clear explanation of the control or setting involved.
+* You will receive recommendations and best practices for selecting the appropriate values.
+* The flow is structured to ensure compliance with revenue recognition standards and to help you avoid common pitfalls.
+
+## Preparation
+
+To ensure a smooth onboarding experience, please **complete** the following preparations before starting the wizard:
+
+* **Gather your technical memos:** Have your internal documentation and technical memos on hand. These should outline your organization’s revenue recognition policies, processes, and any unique requirements.
+* **Chart of accounts:** Understand which General Ledger (GL) accounts will be used for revenue and liabilities. You will need to associate the correct GL accounts to revenue and deferred revenue postings.
+* **Performance obligations:** Identify the different revenue recognition performance obligation types that will be associated with each charge, plan, or item. Performance obligations are promises to deliver distinct goods or services to your customers and are central to accurate revenue recognition.
+* **Contract review:** Review your customer contracts to ensure you have clearly identified all performance obligations and understand how each should be recognized.
+* **Product catalog mapping:** Be prepared to map each product, plan, or item in your catalog to the appropriate revenue recognition rule and performance obligation type.
+
+## Key concepts
+
+* \*\*Revenue recognition: \*\*The process of recognizing revenue as it is earned, in compliance with accounting standards such as ASC 606 and IFRS 15.
+* **Performance obligations:** Each distinct good or service (or bundle) you promise to deliver is a performance obligation. Proper identification is critical for compliance and accurate financial reporting.
+* **GL accounts:** Revenue and liability accounts must be set up and mapped correctly to ensure transactions are posted accurately for accounting and reporting purposes.
+
+### Next steps
+
+Once you have gathered the necessary information and documentation, proceed with the wizard. Each step will guide you through configuration, offering explanations and context to help you make informed decisions.
+
+**Click** the "Get Started" button to open the onboarding wizard. This will appear as a side dialog, guiding you through the remaining setup tasks. You must complete every item in the task list to activate Revenue Recognition, but you can finish them in any order.
+
+**Please note**, you can safely exit the wizard at any time. Your progress will be saved, allowing you to return and continue later. Anyone on your team with the necessary permissions can view and contribute to the process.
+
+There will be several steps to be completed before we activate the Revenue Recognition. These steps can be completed in any order. The steps to be completed are as under:
+
+* Assigning business entity defaults
+* Review settings of All Products
+* Configure Default Rules
+* Set Global Currency
+* Set Auto Period Close Delay
+* Configure Credit Handling (Available **only** to Advanced Revenue Recognition merchants)
+* Configure Revenue Recognition Start
