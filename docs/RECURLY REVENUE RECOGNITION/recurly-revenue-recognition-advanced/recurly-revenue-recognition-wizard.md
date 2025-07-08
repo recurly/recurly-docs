@@ -76,7 +76,9 @@ Once you have gathered the necessary information and documentation, proceed with
 
 **Click** the "Get Started" button to open the onboarding wizard. This will appear as a side dialog, guiding you through the remaining setup tasks. You must complete every item in the task list to activate Revenue Recognition, but you can finish them in any order.
 
-**Please note**, you can safely exit the wizard at any time. Your progress will be saved, allowing you to return and continue later. Anyone on your team with the necessary permissions can view and contribute to the process.
+<Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/d0ebcabef1d04724c5f334926efaebaed1283ba396ea0e170e88a888f00be041-SS_6.png" />
+
+> **Note**: You can safely exit the wizard at any time. Your progress will be saved, allowing you to return and continue later. Anyone on your team with the necessary permissions can view and contribute to the process.
 
 There will be several steps to be completed before we activate the Revenue Recognition. These steps can be completed in any order. The steps to be completed are as under:
 
@@ -108,8 +110,14 @@ This feature ensures that both new and historical transactions are processed wit
 One of the required tasks is to assign default accounting codes for your business entities.
 
 1. Within the wizard's task list, **locate** the step for business entities.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/f49792c34a32a991ea235e176dcc92b4343a4020124d2047577a5a75c7e067b7-SS_7.png" />
+
 2. Instead of editing each business entity directly through configuration, you can enter your preferred accounting codes into the fields presented in the card and click on create.
 3. **Click** "Apply" to save your changes. The system will validate this step.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/cac21fa7148388e923b84ee58de6ba8de74fc5e63cf0fa6ee471494975c8850b-SS_8.png" />
+
 4. Once completed, **click** "Next" to move to the following step.
 
 ## Step 2: Reviewing settings of all products
@@ -185,11 +193,16 @@ Out of the box, the system provides several Revenue Performance Obligations (POB
 * If no values are selected, the system assigns default POBs from the missing Rules page  and GL accounts from the business entities.
 * For inactive plans, rules are drawn from the default section.
 
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/76ed193b7c2ac0e2b1bfd1d2887eb10deebdd4e28f7de410604efd6d9e65a773-SS_9.png" />
+
 **The steps to review plans are as under:**
 
 1. **Review** each product type listed.
 2. **Assign** the [appropriate revenue recognition rules](recurly-revenue-recognition-standard-edition-setup#step-2-applying-performance-obligations-and-accounting-codes-to-products) and accounting codes for each one.
 3. As you complete the review for each item, **check it** off to confirm.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/2a478b343d35dbe931aa27dc6bdce8b8788a0a0200849caa2dd16d1481c6f170-SS_10.png" />
+
 4. Once all types have been reviewed and configured, **click** "Apply" to save the changes.
 
 Please note, if the products are not configured with rules or accounting codes, they will pick the default ones.
