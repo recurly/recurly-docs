@@ -19,8 +19,8 @@ After the Revenue Recognition feature is enabled for your site, you’ll notice 
    1. **Auto Period Close Delay:** Specifies the number of days the system should wait after the end of a period before automatically closing it for standard merchants. The recommended minimum is 2 days, meaning the system will begin closing the completed period at the end of the second day. Merchants can choose to auto-close the period at any time after 2 days, depending on their business process.
    2. **Default Revenue Recognition Rules:** Set default rules for each type of plan, item, add-on, charge, credit, shipping method, and any other variant displayed on the screen for charges created prior to enabling the revenue recognition feature. The default value will be applied only if the system cannot find a rule at the charge line or plan/item level.
    3. **Global Reporting Currency:** Select a global currency for reporting purposes. Please note, this is separate from your site's global currency in Recurly. The global currency setup here is only for the purpose of revenue recognition.
-   4. **Credit Transaction Handling:** For merchants using Advanced Revenue Recognition, you can specify how credit transactions—including Goodwill, On Account, and Prepaid Credits—are handled. If you choose the ‘ignore credit transactions’ option, revenue recognition will exclude these credit transactions from processing. To learn more about the various types of credits supported in Revenue Recognition, please refer to the **[Recurly Revenue Recognition Credits Documentation](recurly-revenue-recognition-credits)**.\
-      You can modify all these settings any time before activation. After activation, only the **Auto Period Close Delay** will remain editable.
+   4. **Credit Transaction Handling:** For merchants using Advanced Revenue Recognition, you can specify how credit transactions—including Goodwill, On Account, and Prepaid Credits—are handled. If you choose the ‘ignore credit transactions’ option, revenue recognition will exclude these credit transactions from processing. To learn more about the various types of credits supported in Revenue Recognition, please refer to the **[Recurly Revenue Recognition Credits Documentation](recurly-revenue-recognition-credits)**.
+   You can modify all these settings any time before activation. After activation, only the **Auto Period Close Delay** will remain editable.
 
 ### General ledger accounts
 
@@ -227,3 +227,75 @@ This feature ensures that all revenue and journal entries are accurately reflect
 This setting will delay the period close for the number of days mentioned in the setting.
 
 > **Please note:** Only the auto-period close lag days can be changed after activation. No other settings can be changed.
+
+## Step 6: Handling credit transactions
+
+* This feature is available exclusively to merchants using Revenue Recognition Advanced.
+* Merchants can configure how credit transactions—such as Goodwill, On Account, and Prepaid Credits—are processed.
+* By selecting the ‘ignore credit transactions’ option, these types of credits will be excluded from revenue recognition calculations.
+* This setting allows merchants to tailor revenue recognition to their specific business requirements and credit policies.
+* For detailed information on the types of credits supported, consult the [Recurly Revenue Recognition Credits Documentation](recurly-revenue-recognition-credits).
+
+Decide how credit transactions should be managed.
+
+Please note, only the auto-period close lag days can be changed after activation. No other settings can be changed.
+
+## Step 7: Configuring Revenue Recognition start
+
+This crucial step determines the starting point for your revenue recognition.
+
+### Set the initial open period
+
+**Definition:** The Initial Open Period is the first accounting period that opens after system activation. This is the period in which the system will begin generating revenue accounting entries and journals.
+
+**Best practice:** It is recommended to set the Initial Open Period to cover at least the duration of your longest contract or subscription. This ensures that all relevant revenue is accurately recognized.
+
+**Common options:** Many organizations choose the end of the previous financial year (e.g., December 2024 or December 2023) as the starting point for the Initial Open Period.
+
+### Select the earliest transaction date
+
+1. **Purpose:** The Earliest Transaction Date determines the starting point for including invoices in revenue recognition calculations. Only invoices dated on or after this date will be considered.
+2. **Guidance:** After selecting the Initial Open Period, set the Earliest Transaction Date to match the start date of your longest contract or subscription that may still have unrecognized revenue within the open period.
+3. **Example:**
+   1. If the Initial Open Period is set to December 2024 and you require data from January 2024, configure the Initial Open Period as December 2024 and set the Earliest Transaction Date to January 1, 2024.
+   2. This configuration ensures that all invoices from January 1, 2024, onward are included in the revenue recognition process for the open period beginning December 2024. This ensures the revenue for the financial year 2025 will be reported including all the unrecognized revenue from the longest contract.
+
+Once you select Initial Financial open period and earliest transaction date, the system will show that the task is complete. You will not be able to make any changes to these fields.
+
+## Step 8: Activating Revenue Recognition
+
+Once all the tasks in the onboarding wizard are completed and validated, you are ready to activate.
+
+1. A confirmation prompt will appear, asking you to confirm enabling Revenue Recognition.
+2. **Click** "Activate".
+3. The activation process will begin.
+
+If any of the above steps are incomplete, the following error will appear:
+
+## Post-activation
+
+During and after activation, you will notice the following changes:
+
+1. **Activation in progress:** A notification will appear in the sidebar, indicating that activation is underway and that report data may be temporarily incomplete.
+2. **Activation complete:** The in-progress notification will disappear. You will receive an email confirming that Revenue Recognition is now active.
+3. **New interface elements:**
+   1. **Open revenue period indicator:** An indicator will now be visible in the top bar, showing the current open revenue period.
+   2. **Period details:** Hovering over this indicator will reveal the start and end dates of the period and show the most recently synced transaction. This helps you monitor the synchronization status between Recurly and the Revenue Recognition client.
+   3. Hovering over the period will display the period dates and the most recent synced transaction date.
+4. **Data integration and period close:** For standard merchant accounts, the system performs an automatic data integration and period close, processing all periods from the initial opening to the current one. The revenue recognition feature is activated only after the data integration for the current period has been successfully completed. As an advanced merchant, you must manually sync data and close periods sequentially to bring your account to the current date.
+
+   **Run Billing Integration**:
+   * Navigate to **Revenue Recognition → Admin Console**.
+   * Open the **Import/Export** tab and choose **Billing Integration**.
+   * Switch the integration job to **Active** and click **Save**.
+   * Click the **Run** icon—this imports all transactions for the selected period.
+   **Transfer Journal Entries:**
+   * Go to **Import/Export → Transfer JE**.
+   * Select the journal-entry card for your primary book.
+   * Review the entries, then click **Approve for Transfer**.
+   * Click **Mark as Transferred** to summarize the journal card.
+   **Close the Period**
+   * Once your journal entries are summarized, formally close the period.
+   * For full details, see the **Period Close Documentation**.
+
+After completing these steps, Revenue Recognition will be activated on your site.
