@@ -212,10 +212,8 @@ When no specific rules are defined, these defaults will be applied during revenu
 
 It is required to select a reporting currency from the available dropdown menu. This currency will be used for generating journals and revenue reports, ensuring consistency in financial reporting.
 
-**Mandatory selection:** Choosing a reporting currency is mandatory before proceeding with revenue recognition setup.
-
-**Multi-currency support:** Merchants who process subscriptions and contracts in multiple currencies can consolidate and generate reports in their chosen reporting currency. This enables unified financial reporting regardless of the transaction currencies involved.
-
-**Flexible reporting options:** Users can view journals and revenue in both the original transaction currency and the selected reporting currency, providing flexibility for operational and statutory reporting needs.
+* **Mandatory selection:** Choosing a reporting currency is mandatory before proceeding with revenue recognition setup.
+* **Multi-currency support:** Merchants who process subscriptions and contracts in multiple currencies can consolidate and generate reports in their chosen reporting currency. This enables unified financial reporting regardless of the transaction currencies involved.
+* **Flexible reporting options:** Users can view journals and revenue in both the original transaction currency and the selected reporting currency, providing flexibility for operational and statutory reporting needs.
 
 This feature ensures that all revenue and journal entries are accurately reflected in the currency required for your company’s financial statements, while still allowing access to transaction-level currency details.
