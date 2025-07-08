@@ -97,3 +97,5 @@ One of the required tasks is to assign default accounting codes for your busines
 2. Instead of editing each business entity directly through configuration, you can enter your preferred accounting codes into the fields presented in the card and click on create.
 3. **Click** "Apply" to save your changes. The system will validate this step.
 4. Once completed, **click** "Next" to move to the following step.
+
+## Step 2: Reviewing settings of all products
