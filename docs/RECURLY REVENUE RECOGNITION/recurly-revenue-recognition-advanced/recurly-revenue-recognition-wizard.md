@@ -19,8 +19,8 @@ After the Revenue Recognition feature is enabled for your site, you’ll notice 
    1. **Auto Period Close Delay:** Specifies the number of days the system should wait after the end of a period before automatically closing it for standard merchants. The recommended minimum is 2 days, meaning the system will begin closing the completed period at the end of the second day. Merchants can choose to auto-close the period at any time after 2 days, depending on their business process.
    2. **Default Revenue Recognition Rules:** Set default rules for each type of plan, item, add-on, charge, credit, shipping method, and any other variant displayed on the screen for charges created prior to enabling the revenue recognition feature. The default value will be applied only if the system cannot find a rule at the charge line or plan/item level.
    3. **Global Reporting Currency:** Select a global currency for reporting purposes. Please note, this is separate from your site's global currency in Recurly. The global currency setup here is only for the purpose of revenue recognition.
-   4. **Credit Transaction Handling:** For merchants using Advanced Revenue Recognition, you can specify how credit transactions—including Goodwill, On Account, and Prepaid Credits—are handled. If you choose the ‘ignore credit transactions’ option, revenue recognition will exclude these credit transactions from processing. To learn more about the various types of credits supported in Revenue Recognition, please refer to the **[Recurly Revenue Recognition Credits Documentation](recurly-revenue-recognition-credits)**.
-   You can modify all these settings any time before activation. After activation, only the **Auto Period Close Delay** will remain editable.
+   4. **Credit Transaction Handling:** For merchants using Advanced Revenue Recognition, you can specify how credit transactions—including Goodwill, On Account, and Prepaid Credits—are handled. If you choose the ‘ignore credit transactions’ option, revenue recognition will exclude these credit transactions from processing. To learn more about the various types of credits supported in Revenue Recognition, please refer to the **[Recurly Revenue Recognition Credits Documentation](recurly-revenue-recognition-credits)**.\
+      You can modify all these settings any time before activation. After activation, only the **Auto Period Close Delay** will remain editable.
 
 ### General ledger accounts
 
@@ -40,7 +40,7 @@ This onboarding wizard is designed to guide you through the process of self-enab
 * You will receive recommendations and best practices for selecting the appropriate values.
 * The flow is structured to ensure compliance with revenue recognition standards and to help you avoid common pitfalls.
 
-## Preparation
+### Preparation
 
 To ensure a smooth onboarding experience, please **complete** the following preparations before starting the wizard:
 
@@ -50,7 +50,7 @@ To ensure a smooth onboarding experience, please **complete** the following prep
 * **Contract review:** Review your customer contracts to ensure you have clearly identified all performance obligations and understand how each should be recognized.
 * **Product catalog mapping:** Be prepared to map each product, plan, or item in your catalog to the appropriate revenue recognition rule and performance obligation type.
 
-## Key concepts
+### Key concepts
 
 * \*\*Revenue recognition: \*\*The process of recognizing revenue as it is earned, in compliance with accounting standards such as ASC 606 and IFRS 15.
 * **Performance obligations:** Each distinct good or service (or bundle) you promise to deliver is a performance obligation. Proper identification is critical for compliance and accurate financial reporting.
@@ -73,3 +73,27 @@ There will be several steps to be completed before we activate the Revenue Recog
 * Set Auto Period Close Delay
 * Configure Credit Handling (Available **only** to Advanced Revenue Recognition merchants)
 * Configure Revenue Recognition Start
+
+## Step 1: Assigning GL accounts to business entities
+
+Assigning General Ledger (GL) Accounts to business entities enables users to set default values for GL accounts at the plan, item, and charge levels during product and charge creation.
+
+* **Default value assignment:** When merchants use one or two GL accounts across multiple charges, attaching GL accounts to business entities allows these accounts to be automatically used as default values when defining products and charges.
+* **Streamlined setup:** This approach simplifies the configuration process, especially for merchants with straightforward accounting structures, by reducing repetitive data entry and ensuring consistency.
+* Automatic application for historical Data: The system will use these default GL account values for inactive plans that still have active subscriptions requiring revenue recognition processing.
+
+#### Guidance
+
+* **For simple account structures:** If your business uses the same GL accounts for most or all charges, assign these accounts at the business entity level to streamline product and charge setup.
+* **For complex account structures:** If different products or charges require different GL accounts, you can override the default values at the plan, item, or charge level as needed.
+
+This feature ensures that both new and historical transactions are processed with the correct accounting mappings, supporting accurate revenue recognition and financial reporting.
+
+### Assigning business entity defaults
+
+One of the required tasks is to assign default accounting codes for your business entities.
+
+1. Within the wizard's task list, **locate** the step for business entities.
+2. Instead of editing each business entity directly through configuration, you can enter your preferred accounting codes into the fields presented in the card and click on create.
+3. **Click** "Apply" to save your changes. The system will validate this step.
+4. Once completed, **click** "Next" to move to the following step.
