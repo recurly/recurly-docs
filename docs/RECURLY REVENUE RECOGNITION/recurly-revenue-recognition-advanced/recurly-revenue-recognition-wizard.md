@@ -100,9 +100,9 @@ One of the required tasks is to assign default accounting codes for your busines
 
 ## Step 2: Reviewing settings of all products
 
-To ensure compliance with best accounting practices, you must review each plan  individually to apply the correct revenue recognition rules and accounting codes.
+To ensure compliance with best accounting practices, you must review each plan individually to apply the correct revenue recognition rules and accounting codes.
 
-Out of the box, the system provides several Revenue Performance Obligations (POBs) that can be attached at the Setup, Plan, and Add-On levels. Users must select the correct values for each section to ensure the system generates accurate accounting entries.
+Out of the box, the system provides several Revenue Performance Obligations (POBs) that can be attached at the Setup, Plan, and Add-On levels. You must select the correct values for each section to ensure the system generates accurate accounting entries.
 
 ### `PointInTime` recognition
 
@@ -181,3 +181,29 @@ Out of the box, the system provides several Revenue Performance Obligations (POB
 Please note, if the products are not configured with rules or accounting codes, they will pick the default ones.
 
 You can modify and revalidate these settings as needed until you activate Revenue Recognition.
+
+## Step 3: Setting up default rules and global settings
+
+Under this step we assign default revenue rules to each product defined in Recurly. Revenue recognition has the below rules that can be selected for the products.
+
+* **Point in time:** Recognizes all revenue on a single, specific date when an invoice is created.
+* **OverTime (Daily):** Spreads revenue recognition evenly across each day of the contract period.
+* **OverTime (Partial Monthly):** Recognizes revenue on a monthly basis. It automatically calculates partial amounts for the first and last months if the contract begins or ends mid-month.
+* **Manually recognize:** This rule helps in recognizing the revenue manually.
+
+### Define the default rules:
+
+Set up default revenue rules for any products that do not have specific settings assigned. Any changes made here will also be reflected on the main Revenue Settings page.  Currently default rules assigned cannot be changed.
+
+Under this step we will assign default rules to the following product types:
+
+* Plan Prices
+* Plan Setup Fees
+* Plan Add Ons
+* Items
+* Shipping Method
+* Custom Charges
+* Custom Credits
+* Gift Cards
+
+When no specific rules are defined, these defaults will be applied during revenue recognition. Users can also choose different recognition rules for each item as needed.
