@@ -217,3 +217,13 @@ It is required to select a reporting currency from the available dropdown menu. 
 * **Flexible reporting options:** Users can view journals and revenue in both the original transaction currency and the selected reporting currency, providing flexibility for operational and statutory reporting needs.
 
 This feature ensures that all revenue and journal entries are accurately reflected in the currency required for your company’s financial statements, while still allowing access to transaction-level currency details.
+
+## Step 5: Setting up auto period close delay
+
+1. **Set** the number of days the system should wait after a period ends before automatically closing the revenue period for standard merchants.
+2. The minimum recommended delay is 2 days, allowing the system to start closing the period at the end of the second day.
+3. You have the flexibility to configure auto-closure for any time after the 2-day minimum, based on your operational needs.
+
+This setting will delay the period close for the number of days mentioned in the setting.
+
+> **Please note:** Only the auto-period close lag days can be changed after activation. No other settings can be changed.
