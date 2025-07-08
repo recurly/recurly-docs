@@ -10,7 +10,14 @@ metadata:
 After the Revenue Recognition feature is enabled for your site, you’ll notice several updates to your navigation panel prior to activating the feature.
 
 1. A notification will appear, informing you that Revenue Recognition can now be enabled. This link will remain visible until you complete the enablement process.
+
+<Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/63e9eea9897d16f26f10538ec99b562bf51b62035d41b5d0ec03df1b96969d86-SS_1.png" />
+
 2. A new "Revenue Recognition" section has been added to your main navigation menu. Advanced merchants will have access to advanced console options within this section, while standard merchants will be able to view Revenue Settings and General Ledger Accounts.
+
+<Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/27828464882adf638cfbb5b9fb7fd86edb683a33cd92f320e560949c6a2ce914-SS_2.png" />
+
+<br />
 
 ### **Revenue settings page:**
 
@@ -26,8 +33,16 @@ After the Revenue Recognition feature is enabled for your site, you’ll notice 
 Recurly's Revenue Recognition feature provides flexible configuration for liability and revenue accounts at the charge, plan, or item level. This means you can designate specific liability accounts (such as Deferred Revenue) and revenue accounts for each product, plan, or charge, aligning them with the accounts you use in your General Ledger (GL) system:
 
 1. **Click** on “New Accounting Code”.
-2. **Fill in** the accounting code and select the account type as Revenue or Liability. Give the description if required.
-3. **Click on** Create. Once all the required accounts are created, the screen looks like this.
+
+<Image align="center" width="40% " src="https://files.readme.io/cc43a12849de83db550a4c3825b5390755de745b9f6f5f4e3b9277a64936b233-SS_3.png" />
+
+2. **Fill in** the accounting code and select the account type as Revenue or Liability. Give the description if required. **Click on** Create.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/d42f18624ab9857378323d8a4eaff31788be6a0d9c2c1b12c3de75ebbd233b6f-SS_4.png" />
+
+3. Once all the required accounts are created, the screen looks like this:
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/cfc619c64c7d5694433f0b5e202ae26e25e652f38eb31f3063f67920d057e76b-SS_5.png" />
 
 # Onboarding wizard
 
