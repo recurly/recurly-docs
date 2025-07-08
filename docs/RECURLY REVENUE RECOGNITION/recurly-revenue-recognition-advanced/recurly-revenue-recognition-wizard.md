@@ -30,7 +30,7 @@ Recurly's Revenue Recognition feature provides flexible configuration for liabil
 2. **Fill in** the accounting code and select the account type as Revenue or Liability. Give the description if required.
 3. **Click on** Create. Once all the required accounts are created, the screen looks like this.
 
-# Onboarding Wizard
+# Onboarding wizard
 
 This onboarding wizard is designed to guide you through the process of self-enabling and activating the Revenue Recognition feature for both the Standard and RA Manage Advanced systems. The wizard will walk you through each step, explaining the purpose of each control and providing guidance on which values to select for your specific use case.
 
