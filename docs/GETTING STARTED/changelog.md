@@ -26,18 +26,271 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## July
 
-| Release Date | **Feature**                       | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                  |
-| :----------- | :-------------------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Jul 8        | **Commerce Hub Gateway**          | Low                  | The gateway will be visible in Payment Gateway onboarding.                                                                                                                                                                                                                                                                                  |
-| Jul 8        | **Emails**                        | Low                  | Updated to avoid sending a 'refund' email when a chargeback occurs.                                                                                                                                                                                                                                                                         |
-| Jul 8        | **Stripe Gateway**                | Low                  | Updated handling of asynchronous refund status updates. If pending refunds on Stripe move to a failed state, they can be reattempted manually.                                                                                                                                                                                              |
-| Jul 8        | **FreedomPay Gateway**            | Low                  | Updated to support a 'Test Configuration' button to test credentials during testing and go-live procedures.                                                                                                                                                                                                                                 |
-| Jul 1        | **Adyen Gateway**                 | Low                  | Enabled support for sending the expected arrival date of a physically shipped item to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release. |
-| Jul 1        | **Adyen Gateway**                 | Low                  | Enabled support for customer acquisition dates (account age) to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.                       |
-| Jul 1        | **Chase Orbital Gateway**         | Low                  | Added support for an undocumented response code (9797) to the platform. This response code will be handled as a declined transaction.                                                                                                                                                                                                       |
-| Jul 1        | **Currency Support**              | Medium               | Behind-the-scenes improvements to allow more currencies to be enabled on a single gateway configuration for gateways that allow many ISO-standard currencies.                                                                                                                                                                               |
-| Jul 1        | **Commerce Hub Gateway**          | Low                  | Added support for Fiserv's newest gateway offering, Commerce Hub. See [documentation on Commerce Hub](https://docs.recurly.com/docs/commerce-hub#/) for more information on the new platform.                                                                                                                                               |
-| Jul 1        | **Direct Debit Retry Enablement** | Low                  | Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our [Direct Debit retries](https://docs.recurly.com/update/docs/sepa-retries#/) documentation for more information.                                                             |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Release Date
+      </th>
+
+      <th>
+        **Feature**
+      </th>
+
+      <th>
+        **Potential Impact**
+      </th>
+
+      <th>
+        **Description / Overview**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Jul 8
+      </td>
+
+      <td>
+        **Commerce Hub Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        The gateway will be visible in Payment Gateway onboarding.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 8
+      </td>
+
+      <td>
+        **Emails**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated to avoid sending a 'refund' email when a chargeback occurs.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 8
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated handling of asynchronous refund status updates. If pending refunds on Stripe move to a failed state, they can be reattempted manually.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 8
+      </td>
+
+      <td>
+        **FreedomPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated to support a 'Test Configuration' button to test credentials during testing and go-live procedures.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        July 8
+      </td>
+
+      <td>
+        **Revenue Recognition Standard**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Revenue Recognition Self-Service Onboarding - Introduced a streamlined process for setting up and activating the RevRec self-service experience. This allows merchants using RevRec Standard and Recurly Managed RevRec Advanced to independently configure and launch their sites.
+        This process requires the following steps to be completed before activation:
+        -Assign Business Entity Defaults
+        -Review All Product Settings
+        -Configure Default Recognition Rules
+        -Set Global Currency
+        -Set Auto Period Close Delay
+        -Configure Credit Handling (Advanced RevRec only)
+        -Set Revenue Recognition Start Date
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        July 8
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        BigQuery Refactoring & Bug Fixes - Improved BigQuery performance through query optimization and folder restructuring. Enhanced code reusability and resolved existing query issues by rewriting problematic logic.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        July 8
+      </td>
+
+      <td>
+        **Revenue Recognition Advanced**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        New Revenue Recognition Menu - Introduced a dedicated "Revenue Recognition" section in the main navigation. Advanced merchants can access the Advanced Console, Revenue Settings, and General Ledger Accounts, while Standard merchants will see Revenue Settings and General Ledger Accounts.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 1
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabled support for sending the expected arrival date of a physically shipped item to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 1
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabled support for customer acquisition dates (account age) to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 1
+      </td>
+
+      <td>
+        **Chase Orbital Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added support for an undocumented response code (9797) to the platform. This response code will be handled as a declined transaction.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 1
+      </td>
+
+      <td>
+        **Currency Support**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Behind-the-scenes improvements to allow more currencies to be enabled on a single gateway configuration for gateways that allow many ISO-standard currencies.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 1
+      </td>
+
+      <td>
+        **Commerce Hub Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added support for Fiserv's newest gateway offering, Commerce Hub. See [documentation on Commerce Hub](https://docs.recurly.com/docs/commerce-hub#/) for more information on the new platform.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 1
+      </td>
+
+      <td>
+        **Direct Debit Retry Enablement**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our [Direct Debit retries](https://docs.recurly.com/update/docs/sepa-retries#/) documentation for more information.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## June
 
