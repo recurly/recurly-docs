@@ -269,8 +269,6 @@ Decide how credit transactions should be managed.
 
 <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/71f65e68827411677aab71666816be77b6828d1b18af8aebe96ad075da528c99-SS_13.png" />
 
-<br />
-
 Please note, only the auto-period close lag days can be changed after activation. No other settings can be changed.
 
 ## Step 7: Configuring Revenue Recognition start
@@ -290,10 +288,15 @@ This crucial step determines the starting point for your revenue recognition.
 1. **Purpose:** The Earliest Transaction Date determines the starting point for including invoices in revenue recognition calculations. Only invoices dated on or after this date will be considered.
 2. **Guidance:** After selecting the Initial Open Period, set the Earliest Transaction Date to match the start date of your longest contract or subscription that may still have unrecognized revenue within the open period.
 3. **Example:**
+
    1. If the Initial Open Period is set to December 2024 and you require data from January 2024, configure the Initial Open Period as December 2024 and set the Earliest Transaction Date to January 1, 2024.
    2. This configuration ensures that all invoices from January 1, 2024, onward are included in the revenue recognition process for the open period beginning December 2024. This ensures the revenue for the financial year 2025 will be reported including all the unrecognized revenue from the longest contract.
 
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/690b0911771e4b8b66916192ccbdc1534161e5963e36f14236c60d8a0c62b672-SS_14.png" />
+
 Once you select Initial Financial open period and earliest transaction date, the system will show that the task is complete. You will not be able to make any changes to these fields.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/bd4fd35a8904142a528933626316118f1db52bb1340fb67a9b4bcb029c65d41c-SS_15.png" />
 
 ## Step 8: Activating Revenue Recognition
 
@@ -301,15 +304,23 @@ Once all the tasks in the onboarding wizard are completed and validated, you are
 
 1. A confirmation prompt will appear, asking you to confirm enabling Revenue Recognition.
 2. **Click** "Activate".
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/a06c37530f164354194c53aa394f1b27f2066714f4a1d6e489672f8b158bf245-SS_16.png" />
+
 3. The activation process will begin.
 
 If any of the above steps are incomplete, the following error will appear:
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/a1037a67a9b7f38944b69c1b799962251b15b560dc3e3d92170eec0ef6493fd0-SS_17.png" />
 
 ## Post-activation
 
 During and after activation, you will notice the following changes:
 
 1. **Activation in progress:** A notification will appear in the sidebar, indicating that activation is underway and that report data may be temporarily incomplete.
+
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/5092898755ecb65764df7168fecb0123ae50243c097b0a701aaed8af287b1eec-SS_18.png" />
+
 2. **Activation complete:** The in-progress notification will disappear. You will receive an email confirming that Revenue Recognition is now active.
 3. **New interface elements:**
    1. **Open revenue period indicator:** An indicator will now be visible in the top bar, showing the current open revenue period.
