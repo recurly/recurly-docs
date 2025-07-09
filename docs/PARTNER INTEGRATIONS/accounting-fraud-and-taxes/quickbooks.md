@@ -16,7 +16,7 @@ next:
 
 ### Video
 
-<Embed url="https://www.youtube.com/watch?v=rHQCNbOIXiI" title="QuickBooks Online Recurly Integration Tutorial" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/rHQCNbOIXiI/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=rHQCNbOIXiI" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FrHQCNbOIXiI%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DrHQCNbOIXiI%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FrHQCNbOIXiI%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+<Embed url="https://www.youtube.com/watch?v=rHQCNbOIXiI" href="https://www.youtube.com/watch?v=rHQCNbOIXiI" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FrHQCNbOIXiI%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DrHQCNbOIXiI%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FrHQCNbOIXiI%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ### Limitations
 
@@ -107,7 +107,7 @@ Recurly's integration ensures that customer data from Recurly's account record t
 
 <Image align="center" width="smart" src="https://files.readme.io/4a0ebd4-Screen_Shot_2017-01-20_at_4.23.48_PM.png" />
 
-<Image align="center" className="border" width="smart" border={true} src="https://files.readme.io/6d00ebc-Screen_Shot_2017-01-20_at_4.23.24_PM.png" />
+<Image align="center" className="border" border={true} width="smart" src="https://files.readme.io/6d00ebc-Screen_Shot_2017-01-20_at_4.23.24_PM.png" />
 
 The integration covers the following fields from Recurly to QuickBooks:
 
@@ -154,13 +154,13 @@ QuickBooks provides a feature to merge accounts, which can be useful for managin
 
 Invoices in QuickBooks will reference the associated customer accounts and items/plans. Each Recurly invoice line item will be synchronized to QuickBooks.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/b6e8b2a-Screen_Shot_2017-01-20_at_4.00.46_PM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/b6e8b2a-Screen_Shot_2017-01-20_at_4.00.46_PM.png" />
 
 The journal entry for the invoice will appear as:
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/f8310bd-Screen_Shot_2017-01-20_at_4.00.08_PM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/f8310bd-Screen_Shot_2017-01-20_at_4.00.08_PM.png" />
 
-> 📘 Recommended settings for nvoice unctionality:
+> 📘 Recommended settings for invoice functionality:
 >
 > * Disable "Automatically apply credits" by navigating to: Gear icon > Account and Settings > Advanced > Automation.
 > * Disable the "Custom Transaction Numbers" function to prevent invoice synchronization errors.\
@@ -188,9 +188,9 @@ The integration supports tax information from Recurly but not using QuickBooks' 
 
 Invoices with coupons will display the discount value separately. Both fixed-amount and percentage-based coupons are supported. However, a list of coupon redemption records will not be synchronized. More details on coupons can be found on the [Recurly Coupons documentation page](https://docs.recurly.com/docs/coupons).
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/3bb9a5a-Screen_Shot_2017-01-20_at_4.16.06_PM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/3bb9a5a-Screen_Shot_2017-01-20_at_4.16.06_PM.png" />
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/86ba741-Screen_Shot_2017-01-20_at_4.15.44_PM.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/86ba741-Screen_Shot_2017-01-20_at_4.15.44_PM.png" />
 
 ### One-time charges and credits
 
@@ -259,7 +259,7 @@ For those practicing accrual-based accounting, it's advised to set up Recurly pr
 
 Recurly provides visibility into sync errors between itself and QuickBooks Online, ensuring users are aware of any discrepancies.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/9b28539-Ignore_Error.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/9b28539-Ignore_Error.png" />
 
 However, it's not always feasible to expect flawless synchronization between the two systems due to various potential issues. Therefore, Recurly allows users to ignore sync errors for Invoice and Transaction objects. If an error arises that isn't easily resolvable, it's recommended to manually recreate the invoice or transaction in QuickBooks and then "Ignore" the error in Recurly.
 
