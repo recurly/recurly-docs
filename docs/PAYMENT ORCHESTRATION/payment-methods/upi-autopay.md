@@ -63,6 +63,16 @@ Currently, UPI AutoCollect is not supported on Recurly Checkout or Hosted Paymen
 * Subscription Plans: Simplify UPI AutoPay transactions by merging the Recurly subscription platform with Ebanx.
 * Trial Subscriptions: Allow your customer to authorize their enrollment and enjoy a free trial before their first charge.
 
+### Required Fields
+
+UPI AutoPay together require a minimum of fields to create a mandate for a recurring subscription. The minimum required fields to submit a UPI AutoPay transaction are as follows:
+
+* VPA
+* Email Address
+* Customer First and Last Name
+* Customer Billing Address (Street Address, City, Region/State, Country, Postal Code)
+* Phone Number
+
 ### Creating Subscriptions
 
 Use the **subscription** or **purchase** endpoints to create subscriptions with UPI AutoPay. Provide the VPA in Recurly’s `payment_gateway_references` object and specify `upi_vpa` as the reference type. See Recurly documentation for more details.
