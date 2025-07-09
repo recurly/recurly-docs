@@ -35,7 +35,7 @@ Recurly’s Currency Support feature provides merchants with the flexibility to 
 
 These gateways allow you to accept payments in any currency within Recurly Commerce:
 
-* **[Adyen](adyen)**: Supports most currencies, with special handling for Icelandic Króna (ISK) and Chilean Peso (CLP). **Does not support IDR and CVE.**
+* **[Adyen](adyen)**: Supports most currencies, with special handling for Icelandic Króna (ISK) and Chilean Peso (CLP). **Does not support Indonesian Rupiah (IDR) or Cape Verdean Escudo (CVE).**
 
 * **[Braintree](braintree-rd)**: Accepts every currency that PayPal supports—limited to PayPal’s own currency list.
 
@@ -47,7 +47,7 @@ These gateways allow you to accept payments in any currency within Recurly Comme
 
 * **[Stripe](stripe)**: Supports all currencies; when using Gateway Failover, ensure the currency is enabled in both Stripe and Recurly.
 
-* **[WorldPay Global E-Commerce](worldpaydlocal-latam-support)**: Seamless support for every currency. **Does not support DOP and NIO.**
+* **[WorldPay Global E-Commerce](worldpaydlocal-latam-support)**: Seamless support for every currency. **Does not support Dominican Peso (DOP) or Nicaraguan Córdoba (NIO).**
 
 # ISO standard currencies
 
