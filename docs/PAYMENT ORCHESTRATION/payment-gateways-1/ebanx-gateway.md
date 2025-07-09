@@ -132,7 +132,13 @@ Ebanx and UPI AutoPay together require a minimum of fields to create a mandate f
 * VPA
 * Email Address
 * Customer First and Last Name
-* Customer Billing Address (Street Address, City, Region/State, Country, Postal Code)
+* Customer Billing Address (Street Address, City, Region/State, Country, Postal Code / PIN Code)
+  * Regional Mapping:
+    * Street Address is the House/Street Name and Number (EX: HOUSE NO. 32, MG ROAD)
+    * City is the Locality and City in India (Ex: VILLAGE OF AMARPUR, NEW DELHI)
+    * State is the State or Union Territory in India (ex: MAHARASHTRA)
+    * Postal Code is the PIN Code (ex: 110019)
+    * Country is the Country (ex: IN)
 * Phone Number
 
 ## Mandate Preferences
