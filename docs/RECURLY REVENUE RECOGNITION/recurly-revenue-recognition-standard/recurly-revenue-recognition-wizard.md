@@ -1,9 +1,9 @@
 ---
-title: Recurly Revenue Recognition Wizard
+title: Recurly Revenue Recognition Standard Wizard
 excerpt: >-
   An interactive, step-by-step onboarding flow that guides you through
-  configuring and activating Revenue Recognition in Recurly with best-practice
-  defaults and clear explanations at every stage.
+  configuring and activating Revenue Recognition Standard in Recurly with
+  best-practice defaults and clear explanations at every stage.
 deprecated: false
 hidden: true
 metadata:
@@ -13,13 +13,13 @@ metadata:
 
 ### Prerequisites & limitations
 
-* Revenue Recognition must already be enabled for your site.
+* Revenue Recognition Standard must already be enabled for your site.
 * You must have the necessary admin permissions to configure settings and accounts.
 * After activation, only the **Auto Period Close Delay** setting remains editable; all other fields are locked.
 
 # Definition
 
-The Revenue Recognition Wizard is a self-service onboarding tool inside Recurly that walks merchants through each configuration step—explaining controls, recommending best practices, and validating completion—so you can activate Revenue Recognition in one streamlined flow.
+The Revenue Recognition Standard Wizard is a self-service onboarding tool inside Recurly that walks merchants through each configuration step—explaining controls, recommending best practices, and validating completion—so you can activate Revenue Recognition in one streamlined flow.
 
 # Key benefits
 
