@@ -33,7 +33,7 @@ Recurly’s Currency Support feature provides merchants with the flexibility to 
 
 ## Gateways with full currency support
 
-These gateways allow you to accept payments in any currency within Recurly Commerce:
+These gateways allow you to accept payments in any currency within Recurly:
 
 * **[Adyen](adyen)**: Supports most currencies, with special handling for Icelandic Króna (ISK) and Chilean Peso (CLP). **Does not support Indonesian Rupiah (IDR) or Cape Verdean Escudo (CVE).**
 
