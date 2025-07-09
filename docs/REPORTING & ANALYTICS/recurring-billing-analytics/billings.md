@@ -26,7 +26,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Understanding the Billings dashboards
 
-The Billings Dashboard is your guide to understanding payments, refunds, and net billings from all customers. It exclusively displays successful transactions, sidelining manual or credit invoices. This comprehensive tool offers a transparent snapshot of your financial activities over a chosen duration, enabling you to grasp your cash flow, make enlightened decisions, and sculpt potent revenue strategies.
+The Billings Dashboard is your guide to understanding payments, refunds, and net billings from all customers. It exclusively displays successful gateway transactions. Other invoice activities (e.g. manual & credit invoices, wire transfers) are not included. This comprehensive tool offers a transparent snapshot of your financial activities over a chosen duration, enabling you to grasp your cash flow, make enlightened decisions, and sculpt potent revenue strategies.
 
 Furthermore, the dashboard's regional breakdown equips you with the specificity needed to tailor your approach by region. Available regional views are:
 
@@ -52,13 +52,13 @@ A great widget presenting a detailed breakdown of your payment totals to date. T
 
 ### Summary
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/cd99ffa-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/cd99ffa-image.png" />
 
 A comprehensive visualization that brings together new and renewing customer payments and refunds over your chosen date range. Witness the dynamics of your billing cycle as new transactions come in and refunds go out.
 
 ## New vs renewing detail
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/e73afb2-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/e73afb2-image.png" />
 
 The Net Billings Dashboard offers a meticulous comparative analysis, differentiating between net new and net renewing payments. Here's how it works:
 
@@ -73,7 +73,7 @@ The Net Billings Dashboard offers a meticulous comparative analysis, differentia
 
 ## Billings by country
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/98e77e0-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/98e77e0-image.png" />
 
 An expanded version of the 'By state' map, taking the geographical scope to a global level. Click on an individual country to view its total payments. Transactions without an assigned country are grouped together in the 'Amount Unmapped' box below the map. Understand your international reach and uncover areas of untapped potential.
 
@@ -83,7 +83,7 @@ An expanded version of the 'By state' map, taking the geographical scope to a gl
 
 This dashboard provides a geographic representation of payment amounts, organized by state. The location is determined based on the account's billing information or, when that's unavailable, the IP address. It's a straightforward tool for understanding regional revenue distribution.
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/582ba9a-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/582ba9a-image.png" />
 
 The current version focuses on:
 
