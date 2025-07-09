@@ -169,7 +169,7 @@ With all tasks finalized, you’ll successfully close the period in Recurly RevR
 
 **Problem:** The system will not allow the period to be closed while there is still data in the staging area, even if that data is unnecessary.
 
-**Solution:** If the data in the staging area is not required, you must manually delete it. The period close process will only continue once the stage is empty.
+**Solution:** If the data in the staging area is not required, you must manually delete it (see directions [here](https://docs.recurly.com/docs/imports-exports#how-to-view-and-delete-data-in-the-stage-area)). The period close process will only continue once the stage is empty.
 
 ### What does the system check during the validation step?
 
