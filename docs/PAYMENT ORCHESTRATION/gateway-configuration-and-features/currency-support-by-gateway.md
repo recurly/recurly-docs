@@ -39,11 +39,11 @@ These gateways allow you to accept payments in any currency within Recurly:
 
 * **[Braintree](braintree-rd)**: Accepts every currency that PayPal supports—limited to PayPal’s own currency list.
 
-* **[Commerce Hub](commerce-hub)** by Fiserv: Supports all.
+* **[Commerce Hub](commerce-hub)** by Fiserv: Supports all currencies.
 
-* **[Cybersource](cybersource)**: Supports all.
+* **[Cybersource](cybersource)**: Supports all currencies.
 
-* **[FreedomPay](freedompay)**: Supports all.
+* **[FreedomPay](freedompay)**: Supports all currencies.
 
 * **[Stripe](stripe)**: Supports all currencies; when using Gateway Failover, ensure the currency is enabled in both Stripe and Recurly.
 
