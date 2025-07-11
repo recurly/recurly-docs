@@ -5,7 +5,7 @@ excerpt: >-
   configuring and activating Revenue Recognition Standard in Recurly with
   best-practice defaults and clear explanations at every stage.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
