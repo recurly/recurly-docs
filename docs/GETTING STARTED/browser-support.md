@@ -1,8 +1,8 @@
 ---
 title: Browser support
-excerpt: ''
+excerpt: Browser support for Recurly.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
