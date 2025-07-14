@@ -98,7 +98,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated handling of Mandate Expiry dates to extend 2 years past the initial renewal term.
+        Updated handling of Mandate Expiry dates for UPI AutoPay to extend 2 years past the initial renewal term.
       </td>
     </tr>
 
