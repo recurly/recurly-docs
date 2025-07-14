@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to enable and validate Recurly Revenue Recognition Standard Edition
   for accurate and error-free revenue recognition.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
