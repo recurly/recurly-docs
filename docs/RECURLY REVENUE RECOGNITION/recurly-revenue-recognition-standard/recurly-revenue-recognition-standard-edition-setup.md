@@ -5,7 +5,7 @@ excerpt: >-
   IFRS 15 standards, effortlessly set up rules, and enhance reporting accuracy
   through a seamless, integrated solution.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: >-
