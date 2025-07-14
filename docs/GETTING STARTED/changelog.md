@@ -90,6 +90,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of Mandate Expiry dates to extend 2 years past the initial renewal term.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 15
+      </td>
+
+      <td>
         **Adyen Gateway**
       </td>
 
