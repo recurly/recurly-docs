@@ -50,6 +50,78 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        Jul 15
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabled support for Payment Method Configuration IDs to Third Party Checkout.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 15
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Enabling support for Shipping Amount. This will send the line item shipping cost to transactions sent to Adyen.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 15
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enabled support for IDR currency on the Adyen platform.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 16
+      </td>
+
+      <td>
+        **General Compliance Enhancements**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Recurly is committed to compliance and general upkeep of our systems. In doing so, several features are receiving behind-the-scenes maintenance including subscription NTID management and storage. No merchant or customer-facing facing features are impacted.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Jul 8
       </td>
 
@@ -318,7 +390,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
@@ -343,7 +415,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
@@ -361,7 +433,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
@@ -379,7 +451,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
@@ -397,7 +469,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
@@ -415,7 +487,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
@@ -433,7 +505,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
@@ -451,7 +523,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        June 30
+        Jun 30
       </td>
 
       <td>
