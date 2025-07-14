@@ -49,4 +49,4 @@ When your customer finalizes their payment, Recurly.js takes charge. It securely
 
 # Dive deeper with our dedicated developer page
 
-For a comprehensive understanding and to harness the full potential of Recurly.js, we recommend visiting our dedicated [developer page](https://recurly.com/developers/reference/recurly-js/). This resource-rich platform will guide you on implementation, modifications, integrations, and much more, ensuring you make the most of Recurly.js.
+For a comprehensive understanding and to harness the full potential of Recurly.js, we recommend visiting our dedicated [section](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/overview-recurlyjs#/). This resource-rich platform will guide you on implementation, modifications, integrations, and much more, ensuring you make the most of Recurly.js.
