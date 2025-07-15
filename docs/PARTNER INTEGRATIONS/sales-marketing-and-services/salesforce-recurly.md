@@ -158,7 +158,7 @@ Recurly synchronizes your subscriptions with the following fields in the **Recur
 
 > \*\*Note:\*\*Currently, Salesforce doesn't support adding multiple subscriptions to Recurly in a single action.
 
-# Creating a Subscription from a Salesforce Opportunity
+# Creating a subscription from a Salesforce opportunity
 
 If activated, the integration can generate new subscriptions in Recurly directly from Salesforce's closed-won opportunities. Detailed steps can be found [here](https://docs.recurly.com/docs/recurly-for-salesforce#section-creating-subscriptions-from-salesforce-opportunities).
 
