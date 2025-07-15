@@ -27,7 +27,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 ### Limitations
 
 * Not applicable for hard declines unless specific conditions are met.
-* Direct debit payment methods do not undergo automatic retries.
+* Direct debit payment methods are not part of Intelligent automatic retries.
 * Retries will cease after 7 transaction declines, 20 total transaction attempts, or 60 days since the invoice creation.
 
 # Definition
