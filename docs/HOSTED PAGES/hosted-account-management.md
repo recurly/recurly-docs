@@ -1,5 +1,5 @@
 ---
-title: Account management
+title: Hosted account management
 excerpt: >-
   Simplify customer experience with Recurly's Hosted Account Management. Deliver
   white-labeled subscription pages or support your customers with pre-built
