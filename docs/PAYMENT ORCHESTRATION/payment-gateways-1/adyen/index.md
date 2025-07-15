@@ -421,6 +421,8 @@ If you are using Protect Premium or Revenue Protect with Adyen, we support sendi
 * **Shopper Data** including:
   * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
   * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
+* **Acquisition Date**
+  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired\_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
 
 Some limitations include:
 
