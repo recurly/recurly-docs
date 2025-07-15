@@ -55,3 +55,5 @@ Recurly Checkout guarantees functionality on evergreen browser versions:
 * Chrome for Android / Samsung Internet
 
 > **Note:** Older, end‐of‐life browsers (e.g., Internet Explorer 11) are not supported. Mobile WebViews inherit support from the underlying OS browser—ensure it is kept up to date.
+
+Test
