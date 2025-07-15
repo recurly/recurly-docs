@@ -160,9 +160,9 @@ Recurly synchronizes your subscriptions with the following fields in the **Recur
 
 # Creating a subscription from a Salesforce opportunity
 
-If activated, the integration can generate new subscriptions in Recurly directly from Salesforce's closed-won opportunities. Detailed steps can be found [here](https://docs.recurly.com/docs/recurly-for-salesforce#section-creating-subscriptions-from-salesforce-opportunities).
+If activated, the integration can generate new subscriptions in Recurly directly from Salesforce's closed-won opportunities.
 
-# Modifying a Subscription
+# Modifying a subscription
 
 1. To make changes to a subscription, select **Manage Subscription Plan** from the Recurly Subscription object.
 2. A variety of editable fields will be presented, including the option to adjust the start date of a Future dated Subscription.
