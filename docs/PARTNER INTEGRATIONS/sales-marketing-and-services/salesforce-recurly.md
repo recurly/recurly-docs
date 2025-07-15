@@ -152,7 +152,7 @@ Recurly synchronizes your subscriptions with the following fields in the **Recur
 2. Click on **New Recurly Subscription**.
 3. A custom Visual Force page will appear, allowing you to input plan details, amount, add-ons, and dates, similar to the Recurly UI.
 4. You have the flexibility to select any currency for the subscription.
-5. Define the number of billing cycles for both the initial and renewal terms. Even if a customer opts to cancel, the subscription will continue to bill until the end of the defined term. More on [subscription terms](https://docs.recurly.com/docs/subscription-terms-new).
+5. Define the number of billing cycles for both the initial and renewal terms. Even if a customer opts to cancel, the subscription will continue to bill until the end of the defined term.
 
 ![Subscription Creation Interface](https://files.readme.io/19120a4-Screen_Shot_2018-12-17_at_9.09.56_AM.png)
 
@@ -426,7 +426,7 @@ This section allows you to synchronize your Recurly offerings, which include pla
 
 This section allows you to synchronize custom field data from Recurly into Salesforce.
 
-![Setting up the mapping for custom fields](https://files.readme.io/7d06eac-custom_fields.png)\
+![](https://files.readme.io/7d06eac-custom_fields.png)\
 All custom fields set up on your Recurly site(s) will be displayed, categorized by Item, Account, and Subscription. From this list, you can select which Salesforce custom field you wish to map to each Recurly custom field. The dropdown will only display String type fields from the respective Recurly object. It's recommended to exclude mandatory fields to prevent sync issues if data is missing.
 
 ### Configure advanced sync settings
