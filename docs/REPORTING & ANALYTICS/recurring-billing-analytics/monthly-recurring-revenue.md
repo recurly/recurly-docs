@@ -48,7 +48,6 @@ Examples of adjustments included in the MRR calculation:
 * Manual recurring charges
 * Proration credit from a subscription downgrade/upgrade
 * Refund of a subscription amount
-* Invoiced one-time charges with start\_date and end\_date
 
 The following are **NOT** included in the MRR calculation:
 
@@ -65,13 +64,11 @@ You have the option to include or exclude the following in the MRR calculation:
 
 For sites that support multiple currencies, the default view shows total MRR across all currencies, converted to the primary currency and summed. Conversion rates are updated daily using data from [https://openexchangerates.org/](https://openexchangerates.org/). Historical MRR uses the conversion rate at the time the charge was created and does not change over time for current conversion rates.
 
-For both the Total MRR graph and the MRR Break-Out we have drills for accounts, plans or add-ons. 
+For both the Total MRR graph and the MRR Break-Out we have drills for accounts, plans or add-ons.
 
-<Image title="mrr bar chart.png" alt={2372} align="center" width="75% " border={true} src="https://files.readme.io/23085f8-mrr_bar_chart.png">
-  MRR Totals
-</Image>
+<Image align="center" alt={2372} border={true} caption="MRR Totals" title="mrr bar chart.png" src="https://files.readme.io/23085f8-mrr_bar_chart.png" width="75% " />
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/0bcc8ae-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0bcc8ae-image.png" />
 
 These drills provide a detailed view of each account contributing to the data in the bar/number, sorted by total MRR. A convenient filter at the top lets you narrow down the data by specific accounts or emails.
 
@@ -99,9 +96,9 @@ In this section, the MRR can be viewed by:
 * Discounts applied to MRR
 * Total MRR (Sum of MRR, In Dunning, Expected MRR, minus Discounts)
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/01e67fa-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/01e67fa-image.png" />
 
-As you can see with the MRR graph,  you have the ability to drill by account, plan or add-on and then can dive even further, as needed. 
+As you can see with the MRR graph,  you have the ability to drill by account, plan or add-on and then can dive even further, as needed.
 
 ## Ways to leverage the MRR dashboard
 
