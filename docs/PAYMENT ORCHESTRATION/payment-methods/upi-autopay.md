@@ -41,7 +41,8 @@ A **Virtual Payment Address (VPA)**, such as `payer@bankname`, uniquely identifi
 
 UPI AutoPay is specifically designed for subscriptions, and subscriptions only. It is not flexible like a credit card and does not support many of the functions available in Recurly where credit cards and some other payment methods are available. Some notable limitations include:
 
-* One-time transactions, including force collections and purchases, are not supported. This includes subscription item / add-ons.
+* One-time transactions, including force collections and purchases, are not supported.
+* Subscription item / add-ons are not supported at this time due to subscription-specific mandate creation requirements with UPI.
 * Adding a subscription through the UI: Since UPI requires a customer in session to confirm the subscription, this is not recommended.
 * Changing billing information: Recurly will store the consumer's VPA for future subscriptions, but the billing information is stored within the UPI App itself, not with the gateway or Recurly.
 * Changing the renewal date defined by the mandate: If a customer wants to change their renewal date, they need to resubscribe and confirm a new mandate. UPI mandates are strict about the date we can charge the consumer, and so modifications of the date after enrollment are not recommended as declines will occur. This includes using Calendar billing / aggregation features.
