@@ -1,5 +1,5 @@
 ---
-title: Business Entity
+title: Business entity
 excerpt: >-
   Configure and customize your business entity with Recurly for a professional,
   tailored customer experience. Our guide provides insights to effectively
