@@ -85,7 +85,9 @@ The display of invoices in the Recurly Admin Console, Hosted Invoice, or as a PD
 * **Credit Invoices:** If issued against a charge invoice, the relevant charge invoice number(s) will be listed.
 * **Visualization:** Invoice numbers may include prefixes or country codes as configured in Business Entities. The following visualization is an example of what invoice number sequencing looks like with multiple business entities.
 
-!\[Invoice Number Visualization]\([https://drive.google.com/file/d/1aXU1pEGRvMsccTInPFerQgT\_L5EkcuoH/view?usp=drive\_link](https://drive.google.com/file/d/1aXU1pEGRvMsccTInPFerQgT_L5EkcuoH/view?usp=drive_link) “Invoice Number Visualization”)
+![](https://files.readme.io/de8c42f72668ee9f22b1eed749ff5993d5922ceab201d0df15cd5eb926bb0c1a-image.png)
+
+<br />
 
 ### From address
 
