@@ -50,6 +50,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        Jul 18
+      </td>
+
+      <td>
+        **Invoice Number Prefix**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Ability to modify invoice number sequence to include prefix. Invoice numbers are used for invoices and transactions and are sent to gateways.  As such, changes to invoice numbers could impact reconciliation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Jul 15
       </td>
 
