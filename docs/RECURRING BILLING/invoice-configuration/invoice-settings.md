@@ -50,9 +50,9 @@ Customer Notes is another notes section available to you for any details you wou
 
 #### Invoice Notes Example
 
-![](https://files.readme.io/5a5a1f0-Screen_Shot_2022-04-04_at_5.02.30_PM.png "Screen Shot 2022-04-04 at 5.02.30 PM.png")
+<Image align="center" src="https://files.readme.io/33babb621e9159e0c2679caa4ac1c635ecd21ee3f52b2ff4675ca0f580f33209-Screenshot_2025-07-18_at_2.24.45_PM.png" />
 
-![](https://files.readme.io/76277c8-Screen_Shot_2022-04-04_at_5.03.35_PM.png "Screen Shot 2022-04-04 at 5.03.35 PM.png")
+<Image align="center" src="https://files.readme.io/47fc423f5ad32f1e921fdb379a3c12dcf3f7d7ec36bd69414e4a648cf864d07b-Screenshot_2025-07-18_at_2.27.04_PM.png" />
 
 #### VAT Reverse Charge Notes
 
