@@ -90,9 +90,9 @@ Merchants will be able to choose whether or not to enable entity-specific invoic
 
 By default, Recurly uses a single sequence for invoice numbers across your site, adhering to the European Commission's invoicing rules. However, certain EU member states mandate a unique sequence for their country. To cater to this, we offer the Country Sequencing feature. This allows merchants to establish distinct sequences for each EU member state.  Merchants can enable or disable this feature by clicking the appropriate radio button.
 
-!\[Invoice Number Settings]\([https://drive.google.com/file/d/1mG-CaupnAnOA2skrrERhzdUxwe4Fyt8u/view?usp=drive\_link](https://drive.google.com/file/d/1mG-CaupnAnOA2skrrERhzdUxwe4Fyt8u/view?usp=drive_link) “Invoice Number Settings”)
+![Invoice Number Settings](https://drive.google.com/file/d/1mG-CaupnAnOA2skrrERhzdUxwe4Fyt8u/view?usp=drive_link)
 
-See Invoice Display for examples of invoices with multiple business entities with customized invoice prefix.
+See [Invoice Display](https://docs.recurly.com/recurly-subscriptions/docs/invoice-management#display) for examples of invoices with multiple business entities with customized invoice prefix.
 
 #### Entity invoice images
 
