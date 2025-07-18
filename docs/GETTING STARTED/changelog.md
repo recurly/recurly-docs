@@ -62,7 +62,25 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Ability to modify invoice number sequence to include prefix. Invoice numbers are used for invoices and transactions and are sent to gateways.  As such, changes to invoice numbers could impact reconciliation.
+        Updated Invoicing with the ability to modify invoice number sequencing to include a prefix. Invoice numbers are used for invoices as well as transactions and are sent to gateways which can have varying formatting requirements.  As such, changes to invoice numbers could impact reconciliation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 18
+      </td>
+
+      <td>
+        **Amazon V2 Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of Amazon pre-renewal queries related to rate limiting responses. We will retry transactions that return as rate limited moving forward.
       </td>
     </tr>
 
