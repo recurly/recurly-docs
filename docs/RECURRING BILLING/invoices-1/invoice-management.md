@@ -36,19 +36,43 @@ Recurly's invoice management system provides tools for generating, tracking, and
 
 ## Numbering
 
-All invoices on your Recurly site, both charge and credit, follow the same invoice number sequence. This sequence starts at 1000 and increments by 1. Additional customization options are detailed below:
+All invoices on your Recurly site, both charge and credit, follow the same invoice number sequence. This sequence starts at 1000 and increments by 1.
+
+### Considerations
+
+Invoice numbers are often used in reconciliation of invoices and transactions.  This should be considered when adding an entity specific prefix.  Gateways handle the information sent differently, including length of these invoice numbers.
+
+Invoice numbering customization options are detailed below:
+
+### Invoice Number Settings: Entity Prefix
+
+Customize invoice numbering to reflect the appropriate entity for your business requirements.
+
+Recurly enables the addition of an invoice number prefix to be added to invoice numbers. The prefix is an alphanumeric that is prepended to the sequential number.  When adding an entity prefix, the sequence will start at 1000 and increment by 1.
+
+An entity prefix will continue to support country-specific sequencing for countries in the EU for each sequence/prefix.
+
+An invoice number prefix can be added per Business Entity, go to Business Entity > Invoice Settings: Invoice Number Settings: Entity Prefix.
+
+For more information on configuring prefixes, visit [Business Entity Invoice Settings](https://docs.recurly.com/recurly-subscriptions/docs/business-entities#invoice-settings).
+
+### Invoice Number Settings: EU Country-specific numbering
+
+For a separate invoice sequence for each European Union country, you can activate the Country Invoice Sequencing feature in Recurly. Go to Business Entity > Invoice Settings: Invoice Settings, find "Country Sequencing", and enable "Country Invoice Sequencing".
+
+For more detailed information, visit [EU Country Sequencing](https://docs.recurly.com/recurly-subscriptions/docs/eu-vat-2015#invoice-sequencing-by-country) For more information on configuration, visit [Business Entity Invoice Settings](https://docs.recurly.com/recurly-subscriptions/docs/business-entities#invoice-settings).
+
+### Order Number Prefix
+
+Recurly enables the addition of a hidden prefix to your invoice numbering. This is particularly helpful if you use the same payment gateway for multiple billing systems and need to segment your transactions. The order number prefix will not appear on invoices.  The order number prefix is not configured per business entity.
+
+To add a hidden prefix, go to Configuration > Site Settings and enter your desired prefix under "Order Number Prefix".
+
+!\[Order Number Prefix] ([https://drive.google.com/file/d/1MypjSoH13qtFnX4YExAchLZ\_yQ3oDV2f/view?usp=drive\_link](https://drive.google.com/file/d/1MypjSoH13qtFnX4YExAchLZ_yQ3oDV2f/view?usp=drive_link) "Order Number Prefix")
 
 ### Customize initial number
 
-If you prefer to start your invoice numbering at a different number, you can reach out to Recurly Support. Contact them through this link: <a href="https://support.recurly.com/" target="_blank">Recurly Support</a>.
-
-### Add prefix
-
-Recurly enables the addition of a hidden prefix to your invoice numbering. This is particularly helpful if you use the same payment gateway for multiple billing systems and need to segment your transactions. To add a hidden prefix, go to Configuration > Site Settings and enter your desired prefix under "Invoice Prefixing".
-
-### European Union numbering
-
-For a separate invoice sequence for each European Union country, you can activate the Country Invoice Sequencing feature in Recurly. Go to Configuration > Taxes > Tax Settings, find "European Union VAT Settings", and enable "Country Invoice Sequencing". For more detailed information, visit <a href="https://docs.recurly.com/docs/eu-vat-2015#section-country-specific-invoice-sequences" target="_blank">EU VAT 2015: Country-Specific Invoice Sequences</a>.
+If you prefer to start your invoice numbering at a different number other than 1000, you can reach out to Recurly Support. Contact them through this link: [Recurly Support](https://support.recurly.com/)
 
 ## Display
 
@@ -59,6 +83,9 @@ The display of invoices in the Recurly Admin Console, Hosted Invoice, or as a PD
 * **Invoice number & posting date:** Every invoice displays its number and the date it was posted.
 * **Charge Invoices:** These will additionally show a term option and due date.
 * **Credit Invoices:** If issued against a charge invoice, the relevant charge invoice number(s) will be listed.
+* **Visualization:** Invoice numbers may include prefixes or country codes as configured in Business Entities. The following visualization is an example of what invoice number sequencing looks like with multiple business entities.
+
+!\[Invoice Number Visualization]\([https://drive.google.com/file/d/1aXU1pEGRvMsccTInPFerQgT\_L5EkcuoH/view?usp=drive\_link](https://drive.google.com/file/d/1aXU1pEGRvMsccTInPFerQgT_L5EkcuoH/view?usp=drive_link) “Invoice Number Visualization”)
 
 ### From address
 
