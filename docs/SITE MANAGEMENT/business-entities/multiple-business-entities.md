@@ -93,7 +93,7 @@ Setting specific invoice treatments for each of your entities helps in ensuring 
 
 #### Invoice Number Settings: Invoice Sequencing
 
-Merchants can choose to create a unique invoice sequence or use the shared sequence for each business entity. The shared sequence will
+Merchants can choose to create a unique invoice sequence or use the shared sequence for each business entity.
 
 #### Invoice Number Settings: Entity Prefix
 
