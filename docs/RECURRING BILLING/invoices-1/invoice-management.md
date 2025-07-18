@@ -68,7 +68,9 @@ Recurly enables the addition of a hidden prefix to your invoice numbering. This 
 
 To add a hidden prefix, go to Configuration > Site Settings and enter your desired prefix under "Order Number Prefix".
 
-!\[Order Number Prefix] ([https://drive.google.com/file/d/1MypjSoH13qtFnX4YExAchLZ\_yQ3oDV2f/view?usp=drive\_link](https://drive.google.com/file/d/1MypjSoH13qtFnX4YExAchLZ_yQ3oDV2f/view?usp=drive_link) "Order Number Prefix")
+![](https://files.readme.io/17f741da4a04d35ac89eae3158e5b8e4ed1b872a4beac5e1a270f556f63d3432-image.png)
+
+<br />
 
 ### Customize initial number
 
