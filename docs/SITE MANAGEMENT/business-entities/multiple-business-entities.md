@@ -28,7 +28,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 Business Entities can be configured on Recurly to reflect what an entity means for your specific organization. An entity on Recurly can reflect a legal entity, distinct business unit, brand or subsidiary, geographic location or headquarters, or warehouse distribution center. By setting up your business entities on one Recurly site, you can guarantee that all of your customers receive the appropriate communications and subscriptions from your company and its entities at any given time. This setup not only makes scaling your business more efficient and compliant, but also simplifies maintenance. You can create as many entities on your Recurly site as needed, updating, removing, and adding entities as your business needs change.
 
-<Image align="center" width="75% " src="https://files.readme.io/e76a286-image.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/d8d3b2423aa600de8ee7d1049f936af9328c6ff7751f23dcde89eb85481b0ae4-image.png" />
 
 # Key benefits
 
@@ -53,19 +53,19 @@ The billing contact email address is used for customer-facing materials includin
 * Invoice renderings on hosted pages
 * Hosted invoice page's cancel authorization copy
 
-<Image align="center" src="https://files.readme.io/17fee0e-Screenshot_2024-03-13_at_7.45.57_PM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/335213c40126873ff4e8236c1a7621ae0d9c0fe68df8369e113492ac0c1df273-image.png" />
 
 You can preview the email address that will be used on an invoice by clicking the “Invoice Preview” button when creating/modifying a subscription or one time purchase. Another way to know which billing address will be used for an invoice or email sent to a customer when you have multiple entities configured is to check the entity a customer has assigned to their account, or subscription(s). If there is no business entity override set on a given account or assigned to a subscription, you can check the customer’s billing or account address depending on your site configurations, to see which entity they would receive on an invoice via automatic entity assignment.
 
 Billing contact email addresses are only configurable via the Recurly Admin UI.
 
-## Automatic assignment of entities by Subscriber Location
+## Automatic assignment of entities by subscriber location
 
 ### Behavior
 
 Automatic assignment is the default method of entity application to invoices for all customers at the time of their next billing event. This assignment is based on the billing address of the customer's account at the time the transaction takes place. If a customer has manual billing set up, or if your site is configured to use the account address for all invoices, then the account address will be used as the "BILL TO" address on the invoice.
 
-## Subscriber Locations
+## Subscriber locations
 
 The logic behind the automatic assignment of entities from the "BILL TO" address of a customer is based on the entity's configured subscriber locations. These locations are an optional configuration setting on alternate business entities. You can add specific countries to the entity to create rules for automatic assignment. Each unique country can only be added to a single Subscriber Location/entity at a time. You can adjust the countries within your Subscriber Locations at any time, but changes will reconfigure the entity assigned on any transaction if a customer's country location matches a country that has been moved to a new entity.
 
@@ -170,9 +170,7 @@ Once you save the changes made to the selected customer account with an overridi
 
 You can see the business entity assigned at the account level for customers with an overriding business entity applied directly on their account page, under "Account Information". You can also do an API query on the Account object to identify which entity is associated with an account, or, for accounts using automatic assignment, an API query on the Invoice object to see which entity was applied to a specific invoice.
 
-<Image align="center" width="75% " src="https://files.readme.io/74b18a2-image.png" />
-
-<br />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6b521881ddf05736095803098d1159a452fbce76855fe2eed1cd5f01c6e0b9b3-image.png" />
 
 ## Account hierarchy and entities
 
@@ -193,13 +191,13 @@ You cannot delete your Site Default Entity from your Recurly site. The Site Defa
 
 However, you can delete any alternate entity set up on your site at any time. You can delete an alternate entity from the main list page when hovering over the ellipses for the entity of choice and selecting “Delete”, or by selecting "Delete Entity" from the "Entity Actions" dropdown on the view-page of a specific alternate entity.
 
-<Image align="center" width="75% " src="https://files.readme.io/3d4668a-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/3d4668a-image.png" />
 
-<Image align="center" width="75% " src="https://files.readme.io/38af1bd-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/38af1bd-image.png" />
 
 When confirming to delete an alternate entity, you will be prompted to enter the entity code of the one you are attempting to delete. Once you enter the code successfully, that entity will be permanently deleted from your site. However, if a return is initiated, the refund invoice will still leverage the display and tax address information from the original transaction.
 
-<Image align="center" width="75% " src="https://files.readme.io/ad195f0-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/ad195f0-image.png" />
 
 Once you delete an alternate entity, all customers previously assigned to that specific entity as an overriding entity on their account will have their invoices assigned to the Site Default Entity moving forward, unless:
 
@@ -230,7 +228,7 @@ On your Avalara site, from your home page, you will see the list of companies/su
 
 If you delete an entity on Recurly, that mapping will no longer exist for the corresponding sub-company in Avalara. Maintain the mapping relationship between the two sites to ensure entity mappings are up-to-date if your entities change.
 
-<Image align="center" width="75% " src="https://files.readme.io/ce9381d-image.png" />
+<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/ce9381d-image.png" />
 
 ## Paused subscriptions
 
