@@ -36,23 +36,39 @@ Customize your invoices with default terms and notes for your customers. These s
 
 The default value for all automatic and manual invoices is "On-Receipt". This means that the invoices are due immediately upon creation. For automatic invoices, collection will be attempted immediately using the payment method on file. For manual invoices, the invoice will become past due immediately upon creation.
 
-#### Terms
+#### Note to Customer
 
-Terms configuration applies to all invoices. Learn more about terms for manual invoices [here](https://docs.recurly.com/docs/manual-payments#3-terms-options-for-invoices). For information about terms for automatic invoicing, click [here](https://docs.recurly.com/docs/automatic-invoicing-terms#collection-terms).
+Customer Notes is another notes section available to you for any details you would like to add. This section is ideal for notes on invoice details or including a special message for the customer, like "thanks for your business". This section will only show on an invoice if there is text in the field and does not display a section title. Customer Notes are displayed at the bottom of the invoice in larger font than the Terms and Conditions.
 
 #### Terms and Conditions
 
 Terms and Conditions is a notes section available to you for any details you would like to add. The section is ideal for notes about payment or contract terms. The title cannot be changed at this time. The section will only show on an invoice if there is text in the field.
 
-#### Customer Notes
+#### Terms
 
-Customer Notes is another notes section available to you for any details you would like to add. This section is ideal for notes on invoice details or including a special message for the customer, like "thanks for your business". This section will only show on an invoice if there is text in the field and does not display a section title. Customer Notes are displayed at the bottom of the invoice in larger font than the Terms and Conditions.
+Terms configuration applies to all invoices. Learn more about terms for manual invoices [here](https://docs.recurly.com/recurly-subscriptions/docs/manual-payments). For information about terms for automatic invoicing, click [here](https://docs.recurly.com/docs/automatic-invoicing-terms#collection-terms).
 
-#### Invoice Notes Example
+<Image align="center" src="https://files.readme.io/07fcb4bb45a2522d031fdf5cccb6922925a0e2274bc6a674248d5955b4fbcd4c-Screenshot_2025-07-18_at_2.33.30_PM.png" />
 
-<Image align="center" src="https://files.readme.io/33babb621e9159e0c2679caa4ac1c635ecd21ee3f52b2ff4675ca0f580f33209-Screenshot_2025-07-18_at_2.24.45_PM.png" />
+#### Upgrades, Downgrades, Subscription Edits
 
-<Image align="center" src="https://files.readme.io/47fc423f5ad32f1e921fdb379a3c12dcf3f7d7ec36bd69414e4a648cf864d07b-Screenshot_2025-07-18_at_2.27.04_PM.png" />
+Decide if you want to send out paid invoices when a subscription is either upgraded or downgraded.  You can also decide how you want to handle proration in the event that a subscription is edited.  You may choose to offer all, partial, or no proration or credits.
+
+<Image align="center" src="https://files.readme.io/186cacb8e9962582ec06cb1bfc7cc53cbbd39249e350a287095c462a3368457f-Screenshot_2025-07-18_at_2.34.35_PM.png" />
+
+#### Subscription Alignment
+
+Selecting the Subscription Alignment setting will clear the *Account Bill Date* once the last subscription on an account expires.  In the event that a new subscription is created on an existing account, if there are no other active subscriptions, the *Account Bill Date* will be updated to the new subscription's created date.
+
+**Note:**  This setting is only available if your site has the Aligning Renewals feature turned on.
+
+<Image align="center" src="https://files.readme.io/c912fc471e38e359a94b5ad993419a1050f33f79294b8d8f1fe5f63f9001bfec-Screenshot_2025-07-18_at_2.40.42_PM.png" />
+
+#### Refunds
+
+Determine how you want to handle declined refund transactions by either keeping the the default *Issue Credit* or *Block* which will either prevent a declined transaction or prevent an issue a refund credit.
+
+<Image align="center" src="https://files.readme.io/0ef34920bc3f69e20cd9d49864f3f3de51405baca1e012a24cb944b7f8bb8ad5-Screenshot_2025-07-18_at_2.44.20_PM.png" />
 
 #### VAT Reverse Charge Notes
 
