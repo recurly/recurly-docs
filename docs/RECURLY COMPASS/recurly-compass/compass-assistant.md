@@ -14,7 +14,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Permissions
 
-tbd
+All users within a site that has the Compass Assistant feature flag enabled.
 
 # Definition
 
