@@ -60,6 +60,8 @@ When a merchant is initiating a payment, such as a renewal, a force collection, 
 
 * **Pay in Full (Pay Now):** Immediate capture using Klarna as a “wallet” payment method with the instrument stored in the customer’s Klarna account.
 
+Stripe / Klarna handle refunds for partially corrected
+
 #### Customer locations and presentment currencies
 
 Stripe Elements dynamically presents Klarna options based on customer location and transaction currency, as different regions have varying rules around Pay Later and BNPL. For example, Pay Later isn’t supported in Montana, New Mexico, or Hawaii, and Pay in Installments isn’t supported in New Mexico or Hawaii. For the latest restrictions, refer to Stripe’s documentation: <a href="https://docs.stripe.com/payments/klarna#payment-options" target="_blank">Klarna payments | Stripe Documentation</a>.
