@@ -44,13 +44,21 @@ Once approved, Stripe immediately makes the full order amount (minus fees) avail
 
 # Key details
 
-#### Payment options
+## Payment options
+
+### Customer Initiated / In-Session Payment Options
 
 Depending on the subscription or transaction type, customers can be presented with three options:
 
 * **Pay in Full (Pay Now):** Immediate capture using Klarna as a “wallet” payment method with the instrument stored in the customer’s Klarna account.
 * **Pay Later:** Full payment collected within a specified timeframe (e.g., 30 days), using the Klarna payment method on file.
 * **Pay in Installments (Pay in 3 or 4):** Splits the purchase into 3 or 4 installments; merchants receive full funds upfront.
+
+### Merchant Initiated / Off-Session Payment Options
+
+When a merchant is initiating a payment, such as a renewal, a force collection, or one-time invoice where the consumer is not directly in the checkout session, Klarna / Stripe only offer one default option:
+
+* **Pay in Full (Pay Now):** Immediate capture using Klarna as a “wallet” payment method with the instrument stored in the customer’s Klarna account.
 
 #### Customer locations and presentment currencies
 
