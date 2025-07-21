@@ -83,3 +83,7 @@ Leverage Third Party Checkout with: <a href="https://docs.recurly.com/v1.1/docs/
 Before going live, test Klarna Recurring through Payment Elements on your Recurly sandbox site to confirm correct functionality.
 
 > **Tip:** BNPL and Pay Later options appear only on plans with billing intervals of at least 2–3 months; shorter cycles will display only “Pay Now.”
+
+### Subscription Recommendations
+
+* Since all customer "off-session" transactions occur as 'Pay Now', if you are using BNPL for Annual Plans, it is recommended to set the Plan End of Subscription Term behavior as 'Expire subscription' so that the consumer can come back into session and make a selection for their next term renewal (BNPL, Pay Later, etc) for their next subscription term.
