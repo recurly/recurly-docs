@@ -49,113 +49,18 @@ Once the export file is ready, you will see it listed in the "Export History" ta
 The exported CSV file provides columns under your export based on specific criteria.
 
 ●	**Email Address:** Filter users by their email addresses.\
-●	**Name:** Filter users by their first and last names.\
-●	 **User Access:**View the list of permissions assigned to each user.\
-●	**Date Added:** Filter users based on the date they accepted their invitation to the Recurly site.\
-●	 **User Role:**Filter users based on the role they are assigned to within your site.
+●	**Name:** Filter users by their first and last names.
+●	 **User Access:** View the list of permissions assigned to each user.
+●	**Date Added:** Filter users based on the date they accepted their invitation to the Recurly site.
+●	 **User Role:** Filter users based on the role they are assigned to within your site.
 
 # Exports table
 
-<Table align={["left","left","left"]}>
-  <thead>
-    <tr>
-      <th style={{ textAlign: "left" }}>
-        Id
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Example
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="email">email</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        [john.doe@email.com](mailto:john.doe@email.com)
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        The unique email address associated with each user. Used for login and communication purposes.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="first_name">first\_name</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        John
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        The first name of the user. Useful for personalized communication and record management.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="last_name">last\_name</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        Doe
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        The last name or surname of the user. Paired with the first name for complete identification.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="user_access">user\_access</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        Full Access
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        Defines the permissions and capabilities a user has within the system. Can range from "Full Access" to "Read-Only".
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="date_added">date\_added</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        2023-01-05
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        The date when the user was added to the system. This helps track user history and tenure.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="user_role">user\_role</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        Administrator
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        The role assigned to the user, dictating their responsibilities and tasks within the platform. Examples: Administrator, User, Guest.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Id                                         | Example                                         | Description                                                                                                                          |
+| :----------------------------------------- | :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| <span id="email">email</span>              | [john.doe@email.com](mailto:john.doe@email.com) | The unique email address associated with each user. Used for login and communication purposes.                                       |
+| <span id="first_name">first\_name</span>   | John                                            | The first name of the user. Useful for personalized communication and record management.                                             |
+| <span id="last_name">last\_name</span>     | Doe                                             | The last name or surname of the user. Paired with the first name for complete identification.                                        |
+| <span id="user_access">user\_access</span> | Full Access                                     | Defines the permissions and capabilities a user has within the system. Can range from "Full Access" to "Read-Only".                  |
+| <span id="date_added">date\_added</span>   | 2023-01-05                                      | The date when the user was added to the system. This helps track user history and tenure.                                            |
+| <span id="user_role">user\_role</span>     | Administrator                                   | The role assigned to the user, dictating their responsibilities and tasks within the platform. Examples: Administrator, User, Guest. |
