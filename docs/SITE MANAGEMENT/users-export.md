@@ -20,7 +20,7 @@ The user export feature in Recurly allows administrators to easily download a co
 >
 > To capture the most precise history of user access, we advise setting up regular exports. This approach is crucial because our exports include users who had and continue to have access during the selected export dates, but we do not provide past access information. Regular exports will provide a more accurate snapshot of user access at any given point.
 
-# How to access User Export?
+# Access user export
 
 1. Go to the **Admin** section of Recurly.
 2. In the left-side panel, navigate to the "**Admin Exports**" option.
