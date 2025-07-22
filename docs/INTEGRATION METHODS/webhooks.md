@@ -77,4 +77,4 @@ For all JSON payloads, Recurly signs the notification and includes this signatur
 
 # Visit our dedicated developer page
 
-For a deeper dive into Webhooks and their functionalities, please visit our dedicated [developer page](https://docs.recurly.com/recurly-subscriptions/v1.3/docs/lifecycle-events#/). Here, you'll find comprehensive guides on implementation, modifications, integrations, and more.
+For a deeper dive into Webhooks and their functionalities, please visit our dedicated [developer page](https://docs.recurly.com/recurly-subscriptions/v1.3/docs/overview-webhooks#/). Here, you'll find comprehensive guides on implementation, modifications, integrations, and more.
