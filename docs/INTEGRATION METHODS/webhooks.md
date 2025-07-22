@@ -61,7 +61,7 @@ Notifications that are paused or failed can be bulk retried by selecting the app
 
 It is possible to configure / opt-in to only the specific notifications that you would like to receive, on an endpoint by endpoint basis. For example, if you have an endpoint that only needs to receive notifications about new accounts, but is not interested in updated accounts, you can configure that endpoint accordingly.
 
-For a comprehensive list of notification types, please refer to the [Webhooks Developer Docs](https://recurly.com/developers/reference/webhooks/#lifecycle-events).
+For a comprehensive list of notification types, please refer to the [Webhooks Developer Docs](https://docs.recurly.com/recurly-subscriptions/v1.3/docs/lifecycle-events#/).
 
 ## Cross site request forgery (CSRF) for Rails applications
 
@@ -77,4 +77,4 @@ For all JSON payloads, Recurly signs the notification and includes this signatur
 
 # Visit our dedicated developer page
 
-For a deeper dive into Webhooks and their functionalities, please visit our dedicated [developer page](https://recurly.com/developers/reference/webhooks/#webhooks). Here, you'll find comprehensive guides on implementation, modifications, integrations, and more.
+For a deeper dive into Webhooks and their functionalities, please visit our dedicated [developer page](https://docs.recurly.com/recurly-subscriptions/v1.3/docs/lifecycle-events#/). Here, you'll find comprehensive guides on implementation, modifications, integrations, and more.
