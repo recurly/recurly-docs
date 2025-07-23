@@ -129,21 +129,19 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 After a plan is configured, you can create [Checkout](https://docs.recurly.com/docs/checkout) configuration to direct customers to purchase your plan(s).
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" />
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" />
 
 # Updating plans
 
-1. Navigate to Configuration > Plans.
+1. **Navigate** to Configuration > Plans.
 
-2. Either from the plan list view (right option hover) or the plan actions drop down menu on a specific plan detail page, select "Edit."
+2. Either from the plan list view (right option hover) or the plan actions drop down menu on a specific plan detail page, **select** "Edit."
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/089ae61-Screenshot_2023-12-04_at_4.07.51_PM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" />
 
-3. Make the desired changes and click "Save Changes".
+3. **Make** the desired changes and click "Save Changes".
 
 **Note**: Changes will apply to new subscribers only. Existing subscribers will continue with the plan terms present at the time of their signup.
-
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/8413e57-Screenshot_2023-12-04_at_4.09.56_PM.png" />
 
 # Duplicating plans
 
