@@ -28,7 +28,7 @@ Recurly’s Bank Account Verification Support feature provides merchants with th
 
 > **Note:** Not all gateways support pre-verification. For ACH gateways that are not supported, external verification should be done before sending bank details to Recurly for processing.
 
-NACHA Verification Regulations can be found on the [NACHA.org site](https://www.nacha.org/system/files/2023-04/Account-Validation-FAQs-Oct-19-2020.pdf).
+NACHA Verification Regulations can be found on the [NACHA.org site](https://www.nacha.org/system/files/2023-04/Account-Validation-FAQs-Oct-19-2020.pdf) and by reading their [Account Validation best practices guide](https://www.nacha.org/content/account-validation-resource-center).
 
 ## Gateways with NACHA verification support
 
