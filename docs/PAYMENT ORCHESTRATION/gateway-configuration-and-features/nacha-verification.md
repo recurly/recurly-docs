@@ -1,5 +1,5 @@
 ---
-title: NACHA Verification
+title: NACHA verification
 excerpt: >-
   Effortlessly comply with NACHA regulations with Recurly's pre-verification
   feature, ensuring seamless ACH transactions and reduced instances of bad
