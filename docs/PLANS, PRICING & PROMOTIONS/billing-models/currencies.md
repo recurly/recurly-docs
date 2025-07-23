@@ -56,7 +56,7 @@ Legacy hosted payment pages will default to the most suitable currency for your 
 
 ### Recurly.js
 
-Recurly.js forms allow a currency parameter, enabling currency specification when creating a new subscription or transaction. For additional details, refer to the [Recurly.js documentation](https://docs.recurly.com/js/).
+Recurly.js forms allow a currency parameter, enabling currency specification when creating a new subscription or transaction. For additional details, refer to the [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/overview-recurlyjs#/).
 
 ## Invoices
 
