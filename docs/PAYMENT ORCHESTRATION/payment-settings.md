@@ -34,8 +34,8 @@ To enable and activate Account Updater, your Recurly account must have the follo
 
 Please be aware of the following limitations of **AVS** and **CVV** rejection rules:
 
-* Gateways that do not return AVS or CVV results will not function with this feature
-* Only certain gateways are supported
+* Gateways that do not return AVS or CVV results will not function with this feature.
+* Only certain gateways are supported: Adyen, Authorize.net, Chase Orbital, PayPal Complete, Stripe, TSYS. Cybersources AVS rules in the gateway configuration page.
 * Only applicable to Credit Card payments
 
 Please be aware of the following limitations of **Account Updater**:
@@ -54,11 +54,11 @@ To better illustrate the functionality of AVS and CVV rules, we’ve provided a 
 <Table align={["left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Industry
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Best practices
       </th>
     </tr>
@@ -66,13 +66,13 @@ To better illustrate the functionality of AVS and CVV rules, we’ve provided a 
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         **Streaming media, eLearning & Digital publishing**
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        * \*Account Updater:\*\* For recurring transactions, cardholder data can become stale for long-running accounts. Account Updater can update billing information to ensure subscriptions continue to run over a long period of time.  
-        * \*AVS and CVV Rules:\*\* For initial sign-ups, ensure that fraudulent transactions are rejected in the event the billing or CVV code provided does not match Issuer data.
+      <td>
+        * *Account Updater:*\* For recurring transactions, cardholder data can become stale for long-running accounts. Account Updater can update billing information to ensure subscriptions continue to run over a long period of time.
+        * *AVS and CVV Rules:*\* For initial sign-ups, ensure that fraudulent transactions are rejected in the event the billing or CVV code provided does not match Issuer data.
       </td>
     </tr>
   </tbody>
@@ -104,7 +104,7 @@ To learn more about Account Updater, visit our dedicated page on the<a href="htt
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/0ed852b-image.png" />
 
-If you choose not to enter the above information, only Visa and Discover will be enabled for your account. 
+If you choose not to enter the above information, only Visa and Discover will be enabled for your account.
 
 4. Once you have filled in MasterCard and American Express information, check the box to confirm you understand the additional charges associated with Account Updater. **Click** ‘Enable’ once the checkbox is checked.
 
@@ -125,7 +125,7 @@ At this point, Account Updater will be enabled for your site, and cards that are
 ## Enabling AVS Checks
 
 **Click** on ‘Configuration’ → ‘Payment Settings’\
-**Ensure** your gateway is listed in the supported list and is active in your gateways.\
+**Ensure** your gateway is listed in the supported list and is active in your gateways.
 **Toggle** the setting to ‘Enabled’.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/4d6fe1c5919f5fcde2426a87dc4bf43f0a7e16c22d96803d27a021bc5f8b4967-image.png" />
