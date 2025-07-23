@@ -44,7 +44,7 @@ These gateways allow you to accept payments in any currency within Recurly:
 
 * **[Check Commerce](https://docs.recurly.com/docs/check-commerce)**
 
-### Suggested Flow for external verifications
+### Suggested flow for external verifications
 
 You may use an external provider for any of our ACH supported gateways (excluding Stripe) to verify bank accounts prior to adding billing information to the Recurly platform. General best practices including verifying any *new* bank account information provided to you by a consumer, so that you can verify it is usable for a WEB (online) transaction.
 
