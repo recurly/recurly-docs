@@ -51,7 +51,7 @@ In the rapidly evolving landscape of digital services taxation, a growing number
 
 Recurly's Tax Location Validation is designed to be both proactive and dynamic. While the actual location evidence is essential for invoice generation, the validation process is initiated the moment an account's taxable address is either added or updated. By the time an invoice is prepared, Recurly assesses the account's status. If the account meets the validation criteria, the invoice is posted. Conversely, if the account is deemed invalid, the invoice generation is halted.
 
-The determination of an account's taxable address hinges on the "Use Account Info Address on all Invoices" setting, which can be located under Configuration > Taxes > Tax Settings on the Tax Settings page.
+The determination of an account's taxable address hinges on the "Use Account Info Address on all Invoices" setting, which can be located under Configuration→Taxes→Tax Settings on the Tax Settings page.
 
 * If this setting is **disabled**, the Billing Address is treated as the taxable address.
 * If **enabled**, the Account Address is considered the taxable address.
@@ -99,7 +99,7 @@ For those collecting credit card details from customers, the Credit Card BIN (Ba
 
 # Enable tax location validation
 
-Activating Tax Location Validation is a straightforward process. Simply navigate to the Tax Settings page in your Admin Console, which can be found under Configuration > Taxes > Tax Settings.
+Activating Tax Location Validation is a straightforward process. Simply navigate to the Tax Settings page in your Admin Console, which can be found under Configuration→Taxes→Tax Settings.
 
 * For **Australian** customers, activate the "GST Location Validation" under the "Australia Settings" section.
 * For customers in the **European Union**, toggle on the "VAT Location Validation" under the "European Union VAT Settings".
@@ -213,7 +213,7 @@ Recurly's comprehensive Tax Location Validation can be thoroughly tested in sand
 ## Setting up tax location validation
 
 * **Step 1**: Access your Recurly dashboard.
-* **Step 2**: Navigate to Configuration > Taxes > Tax Settings.
+* **Step 2**: Navigate to Configuration→Taxes→Tax Settings.
 * **Step 3**: Choose the desired region and enable the respective Location Validation option.
 
 ## Addressing invalid accounts

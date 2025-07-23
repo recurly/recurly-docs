@@ -44,6 +44,6 @@ You can deliver one or more prompt items into a zone. When multiple items are pr
 
 ## Guide
 
-1. **Create a Zone**: Go to **Settings > Zones > New Zone**
+1. **Create a Zone**: Go to **Settings→Zones→New Zone**
 2. This zone will live on the home page in the top banner section. Use a single identifier (no spaces). You can add multiple prompts into this zone.
 3. Once your zone is created, any inline prompts assigned to it will render in the placement you’ve defined.

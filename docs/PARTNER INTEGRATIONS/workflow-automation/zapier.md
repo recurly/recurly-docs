@@ -66,7 +66,7 @@ Before beginning, you'll need to set up an [API Key](doc:api-keys)  for Zapier, 
   **Step 3**: Zapier will give you a URL which can receive webhook notifications from Recurlyw
 </Image>
 
-In order to set up webhooks, follow this path in Recurly: Integrations > Webhooks > Add New Endpoint. Add the URL given to you by Zapier as a webhooks endpoint.
+In order to set up webhooks, follow this path in Recurly: Integrations→Webhooks→Add New Endpoint. Add the URL given to you by Zapier as a webhooks endpoint.
 
 ## Which Recurly Data is available in Zapier
 

@@ -36,7 +36,7 @@ If no path is delivered, review any limits or interaction settings: make sure im
 
 > 📘 To reset any suppression, clear the user’s prompt state and re-test:
 >
-> * In Live: **Settings > Users > Test Users > Reset Goals**
+> * In Live: **Settings→Users→Test Users→Reset Goals**
 > * In Console:
 >
 > ```js

@@ -316,7 +316,7 @@ For merchants offering digital services to non-business EU customers, VAT regula
 
 ### Enable location validation
 
-1. Navigate to Configuration > Taxes. Then, click on the "Tax Settings" button located at the top right corner of the Taxes page.
+1. Navigate to Configuration→Taxes. Then, click on the "Tax Settings" button located at the top right corner of the Taxes page.
 2. Scroll to find and activate "VAT Location Validation" within the "European Union VAT Settings" section. Don't forget to "Save Changes" at the page's end.
 
 <Image align="center" width="80%" src="https://files.readme.io/72abb4a-vat-location-validation.png" />
@@ -393,7 +393,7 @@ For those utilizing Recurly's Checkout or Hosted Payment Pages for PayPal sign-u
 
 # Activating country invoice sequencing
 
-1. Navigate to Configuration > Taxes. Then, click on the "Tax Settings" button located at the top right corner of the Taxes page.
+1. Navigate to Configuration→Taxes. Then, click on the "Tax Settings" button located at the top right corner of the Taxes page.
 2. Scroll to find and activate "Country Invoice Sequencing" within the "European Union VAT Settings" section. Ensure you "Save Changes" at the page's end.
 
 <Image align="center" width="80%" src="https://files.readme.io/2c4e11d-country-invoices.png" />
@@ -403,7 +403,7 @@ For those utilizing Recurly's Checkout or Hosted Payment Pages for PayPal sign-u
 ## Using Recurly taxes
 
 1. Ensure your Business Entity address includes both a country and a postal code.
-2. In the Recurly Admin Console, navigate to Configuration > Taxes and click "Configure" adjacent to "European Union (VAT)" at the page's bottom.
+2. In the Recurly Admin Console, navigate to Configuration→Taxes and click "Configure" adjacent to "European Union (VAT)" at the page's bottom.
 
 <Image align="center" width="80%" src="https://files.readme.io/e86877c-eu-vat-enable.png" />
 
@@ -416,7 +416,7 @@ For those utilizing Recurly's Checkout or Hosted Payment Pages for PayPal sign-u
 
 <Image align="center" width="80%" src="https://files.readme.io/9d6e22d-enabled.png" />
 
-6. Now, proceed to Configuration > Plans. Here, set each plan as taxable and determine the Tax Type for every plan and add-on, choosing between "Physical Product" or "Digital Product". The default setting is "Unknown", which adheres to standard physical product tax regulations.
+6. Now, proceed to Configuration→Plans. Here, set each plan as taxable and determine the Tax Type for every plan and add-on, choosing between "Physical Product" or "Digital Product". The default setting is "Unknown", which adheres to standard physical product tax regulations.
 
 # FAQs
 

@@ -41,7 +41,7 @@ The **Cleeng** connector synchronizes offers and subscription data from Cleeng, 
 
 ## Required settings
 
-Configure your Cleeng connector under **Settings > Connectors**:
+Configure your Cleeng connector under **Settings→Connectors**:
 
 * **API Key**: Your Broadcaster Token. Instructions [here](https://publisher.support.cleeng.com/hc/en-us/articles/218389137-Obtaining-your-API-Broadcaster-Token).
 
@@ -68,7 +68,7 @@ Schedule periodic export of subscription data from Cleeng into Recurly Engage us
 3. **Select** **Schedule** from the dropdown.
 4. **Click** **New**, **name** the schedule (e.g., “Recurly Engage Sync”).
 5. **Choose** **Amazon S3** as the delivery method.
-6. **Fill in** **Bucket**, **Optional Path**, **Access Key**, and **Secret Key** from **Pulse > Settings > User Traits > AWS S3 Credentials**. **Select** **US West (Oregon) – us-west-2** for the region.
+6. **Fill in** **Bucket**, **Optional Path**, **Access Key**, and **Secret Key** from **Pulse→Settings→User Traits→AWS S3 Credentials**. **Select** **US West (Oregon) – us-west-2** for the region.
 7. **Set** format to **CSV**.
 8. For **Trigger**, **choose** **Repeating interval**.
 9. Under **Deliver this Schedule**, **select** **Daily** → **Every day** at a post-midnight time (e.g., 1:00 AM).

@@ -37,7 +37,7 @@ The **Shopify** connector enables web prompts to interact with your Shopify stor
 
 ## Required settings
 
-Under **Settings > Connectors > Shopify**, provide:
+Under **Settings→Connectors→Shopify**, provide:
 
 * **Shop URL**: Your Shopify store domain (e.g., `your-store.myshopify.com`).
 

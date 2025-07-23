@@ -225,7 +225,7 @@ When a campaign is deactivated:
 * If no additional campaigns are crafted, the default campaign will be used for all invoices.
 * If a dunning campaign is linked to a plan, that campaign will be employed for subscribers whose invoices become overdue.
 * If a dunning campaign is linked to an account, that campaign will be used for any past due invoices for that account.
-* If multiple dunning campaigns could potentially apply to a subscription, the priority is: Account > Plan > Default.
+* If multiple dunning campaigns could potentially apply to a subscription, the priority is: Account→Plan→Default.
 * For merchants bundling multiple subscriptions onto a single invoice, if a single dunning campaign is **not** linked to an account and multiple subscriptions on the invoice are set to use different dunning campaigns, the dunning campaign of the oldest subscription on the invoice will be used. This logic remains true if any of the subscriptions on the invoice failed post a free trial period.
 * For merchants using the Account Hierarchy feature, if the account being billed for the invoice (parent or child) has a specific dunning campaign linked, then that dunning campaign will be used for the invoice. Otherwise, the invoice will follow the dunning priority mentioned above. Any dunning settings on the other, unbilled account (parent or child) will **not** be considered in the dunning campaign priority logic.
 

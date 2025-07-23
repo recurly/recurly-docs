@@ -16,7 +16,7 @@ To properly support the upcoming PSD2 Mandate, there may be changes required wit
 
 #### Enable "Network Transaction Reference" Value Support
 
-In order to properly support merchant-initiated transaction (MIT) exemptions, please be sure to enable support for "Network Transaction Reference" values within your Adyen Merchant Account configuration. This can be done under the "Acquirer" heading via the following: Developers > Additional Data Settings
+In order to properly support merchant-initiated transaction (MIT) exemptions, please be sure to enable support for "Network Transaction Reference" values within your Adyen Merchant Account configuration. This can be done under the "Acquirer" heading via the following: Developers→Additional Data Settings
 
 Once enabled, a new transaction ID value will be returned by Adyen when processing transaction requests, which you may see if you have a direct integration with Adyen (this new value will not be visible within Recurly).
 

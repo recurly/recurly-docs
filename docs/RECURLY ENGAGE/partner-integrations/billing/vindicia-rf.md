@@ -37,7 +37,7 @@ The **Vindicia** connector imports subscription and account traits from Vindicia
 
 ## Required settings
 
-Under **Settings > Connectors**, enter your Vindicia API credentials:
+Under **Settings→Connectors**, enter your Vindicia API credentials:
 
 * **API Username**
 * **API Password**

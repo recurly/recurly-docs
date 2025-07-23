@@ -20,7 +20,7 @@ To help ensure a seamless transition to Shopify and Recurly, Recurly Professiona
 
 * Recurly embedded Shopify app is installed and is connected to your Recurly site
 * Your Shopify Product, variants and discounts will automatically be imported into the Recurly embedded Shopify app and synced with your Recurly site
-* Enable “Require first and last name” setting within Customer Information. Navigate to Shopify Admin > Settings > Checkout > Customer Information.
+* Enable “Require first and last name” setting within Customer Information. Navigate to Shopify Admin→Settings→Checkout→Customer Information.
 * Create 5 - 10 subscriptions within your legacy platform that can be used to pilot the migration process once live with the Recurly platform
 * Prepare a system cutover plan & customer communication strategy
 

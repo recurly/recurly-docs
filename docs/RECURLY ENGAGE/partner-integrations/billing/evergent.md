@@ -39,7 +39,7 @@ Evergent Connector for Recurly Engage synchronizes subscriber traits from Everge
 
 ## Activation
 
-To enable the Evergent connector under **Settings > Connectors**, provide:
+To enable the Evergent connector under **Settings→Connectors**, provide:
 
 * **Domain**: Your Evergent API domain.
 * **apiKey**: Your Evergent REST API key.

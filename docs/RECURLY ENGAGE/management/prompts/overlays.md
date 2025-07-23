@@ -80,7 +80,7 @@ Banner prompts spanning the bottom of the viewport, displaying text and imagery 
 
 ## Step-by-step
 
-1. **Go** to **Prompts > +New Prompt**.
+1. **Go** to **Prompts→+New Prompt**.
 2. Select **Desktop and Mobile**, then choose your overlay type (e.g., **Pop-up**).
 3. **Add** a name and optional description.
 4. **Add** one or more segments: Adding the **Test Users** segment allows you to view the prompt as if you were a targeted user.

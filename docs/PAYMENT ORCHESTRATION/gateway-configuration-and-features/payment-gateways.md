@@ -69,9 +69,9 @@ If for any reason your payment gateway is not reachable, Recurly will automatica
 Your payment gateway settings can be configured for Zero Dollar Authorizations (ZDA), bypassing the default $1.00 authorization for billing information updates. ZDA transactions can only be processed when your payment gateway supports this authorization type. Zero dollar authorizations can be configured by doing the following:
 
 1. Contact your gateway to confirm that zero dollar authorizations are supported for your account. If needed, have them enable support for this functionality.
-2. Within Recurly, visit Configuration > Payment Gateways.
+2. Within Recurly, visit Configuration→Payment Gateways.
 3. Locate the gateway(s) supporting non-USD currencies.
-4. For each gateway identified, select Options > Edit Gateway.
+4. For each gateway identified, select Options→Edit Gateway.
 5. On the edit gateway page, locate the section labeled “Zero Dollar Authorizations (Advanced)” and enable ZDAs for each card brand you want to support zero dollar authorizations on.
 6. Save changes.
 

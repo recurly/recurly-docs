@@ -38,11 +38,11 @@ ADM Connector imports your ADM credentials into Recurly Engage, allowing you to 
 
 ## Required information
 
-Provide the following in **Settings > Push Credentials**:
+Provide the following in **Settings→Push Credentials**:
 
 * **ADM Client ID**
 * **ADM Client Secret**
 
 Follow Amazon’s guidelines to obtain these credentials: [Obtain ADM Credentials](https://developer.amazon.com/docs/adm/obtain-credentials.html).
 
-Once configured, ADM push prompts become available under **Prompts > New Prompt > Push**.
+Once configured, ADM push prompts become available under **Prompts→New Prompt→Push**.

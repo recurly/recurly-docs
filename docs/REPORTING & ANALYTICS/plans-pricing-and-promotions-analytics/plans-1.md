@@ -59,7 +59,7 @@ The drill fields are:
 9. Subscription\_plan\_expiree\_at\_local\_time
 10. Subscription\_plan\_expiration\_reason
 11. Active\_invoice\_number
-12. Successful\_payment\_made (yes/no if there was a payment > $0 made on the subscription)
+12. Successful\_payment\_made (yes/no if there was a payment→$0 made on the subscription)
 13. Total\_subscriptions
 14. Total\_new\_subscriptions
 15. Total\_churned\_subscriptions

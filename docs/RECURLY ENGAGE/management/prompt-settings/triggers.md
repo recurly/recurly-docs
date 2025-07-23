@@ -153,7 +153,7 @@ Utilize custom client-side code when built-in triggers are not sufficient. Avail
 
 ### Create a new advanced trigger
 
-1. Navigate to **Settings > Triggers > Advanced Triggers**.
+1. Navigate to **Settings→Triggers→Advanced Triggers**.
 2. Click **New Advanced Trigger**, give it a name, and paste your JavaScript function that returns `true` or `false`.
 3. Save; changes deploy within minutes.
 
@@ -198,7 +198,7 @@ if (!window.lastActiveTs) {
   window.lastActiveTs = Date.now();
   document.onmousemove = document.onkeypress = () => window.lastActiveTs = Date.now();
 }
-return (Date.now() - window.lastActiveTs) > 30000;
+return (Date.now() - window.lastActiveTs)→30000;
 ```
 
 ### Using an advanced trigger

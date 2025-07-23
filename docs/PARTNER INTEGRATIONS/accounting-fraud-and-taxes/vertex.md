@@ -165,7 +165,7 @@ You can access invoice and line item tax rate, amount, type, geocode, and region
 
 # Errors and downtime
 
-Recurly, by default, blocks purchases when Vertex returns an error. You can disable this in the Recurly Admin Console under Configuration > Taxes > Tax Settings under “Tax Service Settings”.
+Recurly, by default, blocks purchases when Vertex returns an error. You can disable this in the Recurly Admin Console under Configuration→Taxes→Tax Settings under “Tax Service Settings”.
 
 # Flexible fields
 

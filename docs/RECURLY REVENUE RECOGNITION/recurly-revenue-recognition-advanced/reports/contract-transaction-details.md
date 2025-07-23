@@ -29,7 +29,7 @@ The Contract Transaction Details Report provides a comprehensive view of the sel
 To access and configure the Contract Transaction Details Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Transaction Details > Contract Transaction Details report**.
+   * Go to **Reports→Transaction Details→Contract Transaction Details report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

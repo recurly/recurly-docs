@@ -103,7 +103,7 @@ dependencies {
 
 ## Initialize Recurly Engage
 
-In your app’s main activity or Application class, initialize the SDK with your AppID and UserID (found under **Settings > Application** in Pulse):
+In your app’s main activity or Application class, initialize the SDK with your AppID and UserID (found under **Settings→Application** in Pulse):
 
 ```kotlin
 PromotionManager.initPromotion("[Your AppID]", "[Your UserID]")

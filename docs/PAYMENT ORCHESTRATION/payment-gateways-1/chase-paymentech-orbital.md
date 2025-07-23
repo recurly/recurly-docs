@@ -78,7 +78,7 @@ Recurly extends support for **China UnionPay** through the Chase Orbital gateway
 
 * Log in to your **Recurly Admin Console**.
 
-* Navigate to **Configuration > Payment Gateways**.
+* Navigate to **Configuration→Payment Gateways**.
 
 * Click **Add Gateway** and select the icon for **Chase**.
 

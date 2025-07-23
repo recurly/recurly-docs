@@ -30,7 +30,7 @@ The JavaScript SDK supports web browsers as well as HTML5-based CTV devices. To 
 
 We recommend the following when integrating the JS SDK on CTV apps:
 
-* **Create** **Custom Devices** under **Settings > Custom Devices**. **Define** entries like `SamsungTV`, `LGTV`, or `Vidaa`.
+* **Create** **Custom Devices** under **Settings→Custom Devices**. **Define** entries like `SamsungTV`, `LGTV`, or `Vidaa`.
 * **Create** prompts targeted to each Custom Device to control delivery on specific CTV platforms.
 * **Include** the `data-rf-device-type` attribute in your script tag. For example:
 

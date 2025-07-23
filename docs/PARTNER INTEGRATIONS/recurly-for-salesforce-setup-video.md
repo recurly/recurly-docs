@@ -251,7 +251,7 @@ If you need to uninstall a previous version of the package (version 1.5 is incom
 1. Click on the Sync Settings tab
 2. Click on the "Deactivate Sync" button to turn off the automatic sync from Recurly
 3. Click Setup in the upper right corner of the screen (note: if you are not an administrator in your Salesforce org, you may not have access to the below steps)
-4. Click on Build > Installed Packages
+4. Click on Build→Installed Packages
 
 ![2422](https://files.readme.io/d6f758b-Screen_Shot_2016-09-02_at_12.16.24_PM.png "Screen Shot 2016-09-02 at 12.16.24 PM.png")
 

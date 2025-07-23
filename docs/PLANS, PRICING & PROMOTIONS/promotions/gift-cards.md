@@ -42,7 +42,7 @@ Also, consider how you will account for unused card balances in relation to reve
 
 To develop your gift card product on Recurly, follow these steps:
 
-1. **Navigate** to Configuration > Gift Cards Settings
+1. **Navigate** to Configuration→Gift Cards Settings
 
 2. **Select** "Get Started"
 

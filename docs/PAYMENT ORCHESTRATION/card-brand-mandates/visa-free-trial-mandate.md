@@ -167,8 +167,8 @@ Unique to Braintree, the statement descriptor formatting may differ depending on
 
 **Steps:**
 
-1. From the Recurly dashboard, go to your gateway configuration page via Configuration > Payment Gateways.
-2. For your Braintree gateway, select Options > Edit Gateway.
+1. From the Recurly dashboard, go to your gateway configuration page via Configuration→Payment Gateways.
+2. For your Braintree gateway, select Options→Edit Gateway.
 3. Located the "Merchant Account Country" section and select the appropriate option.
 
 | Setting Description                                                                                         |

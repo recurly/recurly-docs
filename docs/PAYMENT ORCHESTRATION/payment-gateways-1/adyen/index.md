@@ -110,7 +110,7 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 # Activation of "Network Transaction Reference" Value
 
-To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Navigate to **Developers > Additional Data** in Adyen to enable this feature. Once activated, Adyen will generate a unique transaction ID for direct integrations; however, this ID will **not** be visible in Recurly.
+To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Navigate to **Developers→Additional Data** in Adyen to enable this feature. Once activated, Adyen will generate a unique transaction ID for direct integrations; however, this ID will **not** be visible in Recurly.
 
 1. **Add the Adyen gateway**: Go to **Configuration → Payment Gateways → Add New Gateway** in your Recurly Admin.
 2. **Enter your Adyen credentials**: Provide the **username**, **password**, and **merchant account** details from your Adyen configuration.
@@ -244,7 +244,7 @@ Within your Adyen platform:
 
 ## Adyen SEPA
 
-See 'Adyen Direct Debit > SEPA'.
+See 'Adyen Direct Debit→SEPA'.
 
 ## Adyen iDeal
 
@@ -343,7 +343,7 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 ### **Setting up "Report Credentials" for ACH and SEPA:**
 
-1. **Log** into Adyen, choose "Developers" > "API credentials".
+1. **Log** into Adyen, choose "Developers"→"API credentials".
 
 <Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0e9f446-Screenshot_2023-10-26_at_2.32.53_PM.png" />
 
@@ -371,7 +371,7 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 ### **Configuring Adyen notifications for Recurly**
 
-1. In Adyen, **go** to Developers > Webhooks.
+1. In Adyen, **go** to Developers→Webhooks.
 
 2. **Click** “+ Webhook” using the upper-right blue button.
 

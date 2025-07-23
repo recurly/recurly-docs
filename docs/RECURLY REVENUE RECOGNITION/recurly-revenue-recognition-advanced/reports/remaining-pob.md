@@ -29,7 +29,7 @@ The Remaining Performance Obligation (RPO) Report provides detailed information 
 To access and configure the Remaining POB Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Reports on balances > Remaining POB Report**.
+   * Go to **Reports→Reports on balances→Remaining POB Report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

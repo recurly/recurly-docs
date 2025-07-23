@@ -53,7 +53,7 @@ One of the most popular uses of Recurly Engage is intercepting the cancel button
 
 1. **Enable** [1-Click Actions](actions-1) by activating the connector to your [Billing](billing) platform.
 2. Alternatively, **specify** a redirect URL to an existing cancellation confirmation screen.
-3. **Create** a Guide (Settings > Guides) and set the type to **survey**.
+3. **Create** a Guide (Settings→Guides) and set the type to **survey**.
 4. **Define** the cancellation reasons options with corresponding CTAs:
 
 * Too expensive → CTA to a save offer
@@ -68,7 +68,7 @@ One of the most popular uses of Recurly Engage is intercepting the cancel button
 * Or have your developers specify the click event via regex or custom JavaScript.
 
 8. **Start** the **Guide**.
-9. **Add** your User ID to the Test Users segment (Settings > Users > Test Users).
+9. **Add** your User ID to the Test Users segment (Settings→Users→Test Users).
 10. **Confirm** that the **Guide** launches when you click the cancel button.
 
 ## Example

@@ -86,7 +86,7 @@ The Customers Section on the dashboard offers a deep dive into key subscriber me
 >
 > **d** = discount rate. This constant is commonly used when looking at future revenue. It takes into account market, financial and other risks as well as the time value of money. Using a discount rate helps you understand: In today’s dollars, what future dollars are worth? Recurly uses a discount rate of 1%.
 >
-> > **Note:** Recurly uses a discount rate of 1% because this is a generally accepted value for SaaS companies. (see: <a href="https://www.forentrepreneurs.com/discount-rate-for-dcf/" target="_blank">https\://www\.forentrepreneurs.com/discount-rate-for-dcf/</a>)
+>→**Note:** Recurly uses a discount rate of 1% because this is a generally accepted value for SaaS companies. (see: <a href="https://www.forentrepreneurs.com/discount-rate-for-dcf/" target="_blank">https\://www\.forentrepreneurs.com/discount-rate-for-dcf/</a>)
 >
 > **Example:**
 >
@@ -121,19 +121,19 @@ The Subscriptions section provides critical insights into the various subscripti
 * Displays the total number of subscriptions for your top five plans as of the most recent update.
   * Toggle the arrow in the first column to arrange the data in either ascending or descending order.
   * Click on the vertical ellipse in the second column for options to freeze or copy values, or to auto size or resize the columns.
-  * Utilize the vertical ellipse > clear cache and refresh action in the Subscriptions Data widget at the dashboard's bottom to view the last update timestamp.
+  * Utilize the vertical ellipse→clear cache and refresh action in the Subscriptions Data widget at the dashboard's bottom to view the last update timestamp.
 
 ### **2. Top 5 Plans by Subscriptions (Pie Chart):**
 
 * Presents a pie chart illustrating the distribution of subscriptions across the top five plans over the last six months.
   * Click on a color-coded segment to either exclude that plan from the calculation or to unveil hover text showing the total number of subscriptions for the plan.
-  * Access the vertical ellipse > clear cache and refresh action in the Plans Data widget at the dashboard's bottom to check the last update timestamp.
+  * Access the vertical ellipse→clear cache and refresh action in the Plans Data widget at the dashboard's bottom to check the last update timestamp.
 
 ### **3. Top 5 Plans by Subscriptions (Line Chart):**
 
 * Depicts the trend of subscriptions across the top five plans over the last six months through a line chart.
   * Click on any point along the lines to view total subscriptions for the selected timeframe in hover text.
-  * Employ the vertical ellipse > clear cache and refresh action in the Plans Data widget at the dashboard's bottom to verify the last update timestamp.
+  * Employ the vertical ellipse→clear cache and refresh action in the Plans Data widget at the dashboard's bottom to verify the last update timestamp.
 
 # Revenue section overview
 
@@ -158,6 +158,6 @@ The Revenue section encompasses four widgets capturing diverse revenue metrics, 
 * Compares the net billings for the ongoing month to the preceding month. 
   * Click on any point in the color-coded line to reveal details for the selected timeframe in hover text.
   * Toggle the color-coded points in the legend at the widget's bottom to hide or show lines in the widget representing net billings for the current and previous months.
-  * Use the vertical ellipse > clear cache and refresh action in the Billing Data widget at the page's bottom to check the last update timestamp.
+  * Use the vertical ellipse→clear cache and refresh action in the Billing Data widget at the page's bottom to check the last update timestamp.
 
 Each widget in the Subscriptions and Revenue sections is designed to deliver actionable insights, aiding in comprehensively understanding and augmenting your subscription and revenue streams. By leveraging the interactive features, you can work towards making informed decisions and driving substantial growth for your business.

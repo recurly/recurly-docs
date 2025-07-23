@@ -68,7 +68,7 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 > **Note:** You can only have one email address associated with each Recurly Engage instance (site/subdomain).
 
 * If you are planning to be in more than one instance (site/subdomain), you will have to use the alias process (similar to Recurly), e.g., [chad+demo@recurly.com](mailto:chad+demo@recurly.com).
-* Once you are logged into Recurly Engage, **go** to Settings > Application:
+* Once you are logged into Recurly Engage, **go** to Settings→Application:
   * **Enter** your domain.
   * You can also change/edit the name of the instance here if needed—make it descriptive so that you know what the instance usage will be.
   * **Click** save changes.
@@ -77,7 +77,7 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 
 **Inviting a co-worker to the Recurly Engage console is easy:**
 
-* Go to Settings > Users and click on 'Add User'.
+* Go to Settings→Users and click on 'Add User'.
 * Enter their email and click + Add User.
 * Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/invite-users" target="_blank">invite users</a>.
 
@@ -85,7 +85,7 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 
 ## Step 2: Configure Recurly Engage / add Recurly Engage tag
 
-* **Go** to Settings > User Tracking
+* **Go** to Settings→User Tracking
 
   * User tracking is set by either enabling the Recurly Engage tag in Google Tag Manager or copying the script displayed to each page in the customer’s storefront to enable tracking.
   * Once one of these options is enabled on the storefront, tracking will begin. You can verify this by noting the status of “Active” with a green dot.
@@ -115,7 +115,7 @@ You may need to work with your developers to determine the best method to identi
 
 #### Recurly - Automated Exports
 
-Within Recurly, **go** to Integrations > Automated Exports and enable the following automated exports:
+Within Recurly, **go** to Integrations→Automated Exports and enable the following automated exports:
 
 1. Billing Info v6
    1. Filter on "Modified Yesterday"
@@ -135,13 +135,13 @@ Follow the steps outlined in Recurly Engage: <a href="https://help.redfast.com/d
 
 1. Create a CSV file.
 2. Upload the file to AWS.
-3. This file will be validated after it is uploaded. Notify Recurly Support to complete this process. Once complete, you can view the attributes in Settings > User Traits.
+3. This file will be validated after it is uploaded. Notify Recurly Support to complete this process. Once complete, you can view the attributes in Settings→User Traits.
 
 #### Recurly Engage - customizing user traits
 
 Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/user-traits#customizing-user-traits" target="_blank">customizing user traits</a>
 
-1. Within Recurly Engage, go to Settings > User Traits to view the attributes.
+1. Within Recurly Engage, go to Settings→User Traits to view the attributes.
 2. Configure the Type field for each attribute: Boolean, String, Number, or Date.
 3. Configure the Display field for each attribute: HINT, the options are different for each type so assign accordingly.
 
@@ -151,7 +151,7 @@ Continuing in Recurly Engage and based on Use Cases, modify the specific user se
 
 #### Test Users
 
-To test your implementation, configure Test Users as outlined within Recurly Engage, (Settings > Users > Test Users) [https://help.redfast.com/docs/test-users](https://help.redfast.com/docs/test-users)
+To test your implementation, configure Test Users as outlined within Recurly Engage, (Settings→Users→Test Users) [https://help.redfast.com/docs/test-users](https://help.redfast.com/docs/test-users)
 
 #### Guides
 
@@ -178,7 +178,7 @@ To force a sync, navigate to Recurly Engage -> Settings -> Integrations -> Exter
 4. Set the trigger to activate using the cancel button click (required).
 5. The 'Live' feature can detect and add the cancel click event.
 6. Start the guide (required).
-7. Add your User ID to the Test Users segment within Settings > Users > Test Users (required for using the test users segment).
+7. Add your User ID to the Test Users segment within Settings→Users→Test Users (required for using the test users segment).
 8. Confirm that the guide launches when you click on cancel (required).
 
 ### Failed payment guide
@@ -193,7 +193,7 @@ Configuration steps: <a href="https://help.redfast.com/docs/failed-rebill" targe
 6. Set the segment to Test Users (optional - this will allow you to test the guide).
 7. Set the trigger to activate on Any Page (this may be changed later).
 8. Start the guide (required).
-9. Add your user ID to the Test Users segment from Settings > Users > Test Users (required for using the test users segment).
+9. Add your user ID to the Test Users segment from Settings→Users→Test Users (required for using the test users segment).
 10. Confirm that the guide is triggered as configured (required).
 11. Change the targeting for this prompt to be members with failed payment (required).
 

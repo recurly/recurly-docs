@@ -26,7 +26,7 @@ Dunning is the retry-and-remind workflow for failed subscription payments. When 
 
 ## Dunning configuration
 
-In the **Settings > Dunning** section of the Recurly Commerce app, choose one of three built-in dunning strategies:
+In the **Settings→Dunning** section of the Recurly Commerce app, choose one of three built-in dunning strategies:
 
 **Recurly Commerce's standard dunning setting**: Subscription contracts automatically cancel if all retries fail. By default, the system retries every 2 days up to 5 times.
 

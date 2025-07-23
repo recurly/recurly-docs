@@ -162,7 +162,7 @@ The journal entry for the invoice will appear as:
 
 > 📘 Recommended settings for invoice functionality:
 >
-> * Disable "Automatically apply credits" by navigating to: Gear icon > Account and Settings > Advanced > Automation.
+> * Disable "Automatically apply credits" by navigating to: Gear icon→Account and Settings→Advanced→Automation.
 > * Disable the "Custom Transaction Numbers" function to prevent invoice synchronization errors.\
 >   The integration covers the following invoice fields:
 

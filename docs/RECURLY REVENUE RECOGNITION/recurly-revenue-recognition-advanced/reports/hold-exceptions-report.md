@@ -29,7 +29,7 @@ The Hold Exception Report offers insights into transactions that are currently o
 To access and configure the Hold Exception Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Exception Reports > Hold Exception Report**.
+   * Go to **Reports→Exception Reports→Hold Exception Report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

@@ -29,7 +29,7 @@ The User and Role Access Report provides comprehensive information on the users 
 To access and configure the User and Role Access Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Audit Reports > User and Role access report**.
+   * Go to **Reports→Audit Reports→User and Role access report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

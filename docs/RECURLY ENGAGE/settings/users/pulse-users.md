@@ -36,7 +36,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 
 # Key details
 
-Use the **Settings > Users** page to invite new users and update existing user permissions.
+Use the **Settings→Users** page to invite new users and update existing user permissions.
 
 ## Permission levels
 
@@ -62,7 +62,7 @@ Read Only users can view the dashboard and performance metrics but cannot create
 
 To invite a new user:
 
-* Go to **Settings > Users > Add User**
+* Go to **Settings→Users→Add User**
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/8080696-image.png" />
 

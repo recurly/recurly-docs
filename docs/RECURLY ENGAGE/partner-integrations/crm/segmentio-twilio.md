@@ -76,7 +76,7 @@ Recurly Engage allows you to ingest Segment.com events and target your users acc
 
 ## Adding a new tracker
 
-1. **Go** to **Settings > Usage Tracking > Segment > Add New Tracker**.
+1. **Go** to **Settings→Usage Tracking→Segment→Add New Tracker**.
 
    <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/47e233c-Segment_configure_9.png" />
 
@@ -90,7 +90,7 @@ Recurly Engage allows you to ingest Segment.com events and target your users acc
 
    <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f74c2d1-Segment_Configure_12.png" />
 
-4. **Go** to **Segments > New Segment** and **choose** the **Usage** tab.
+4. **Go** to **Segments→New Segment** and **choose** the **Usage** tab.
 
    <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8ec2610-Segment_Configure_13.png" />
 

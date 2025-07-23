@@ -35,7 +35,7 @@ The **Braintree** connector syncs with your Braintree gateway using merchant cre
 
 ## Required settings
 
-Under **Settings > Connectors**, provide:
+Under **Settings→Connectors**, provide:
 
 * **Merchant ID**
 * **Public key**

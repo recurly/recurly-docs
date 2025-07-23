@@ -41,7 +41,7 @@ After the Revenue Recognition feature is enabled for your site, you’ll notice 
 
 ### **Revenue settings page:**
 
-1. **Navigate** to Revenue Recognition > Revenue Settings.
+1. **Navigate** to Revenue Recognition→Revenue Settings.
 2. **Adjust** the following required settings:
    1. **Auto Period Close Delay:** Specifies the number of days the system should wait after the end of a period before automatically closing it for standard merchants. The recommended minimum is 2 days, meaning the system will begin closing the completed period at the end of the second day. Merchants can choose to auto-close the period at any time after 2 days, depending on their business process.
    2. **Default Revenue Recognition Rules:** Set default rules for each type of plan, item, add-on, charge, credit, shipping method, and any other variant displayed on the screen for charges created prior to enabling the revenue recognition feature. The default value will be applied only if the system cannot find a rule at the charge line or plan/item level.

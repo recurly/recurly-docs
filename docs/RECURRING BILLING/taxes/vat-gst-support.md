@@ -159,7 +159,7 @@ Enabling tax collection in the United Kingdom will apply 20% VAT to all taxable 
 ### 3. **Configuring country-specific tax registration numbers**
 
 * Still within the Business Entities section, find and click on the Advanced Settings link.
-* Alternatively, navigate to Configuration > Taxes > Tax Settings.
+* Alternatively, navigate to Configuration→Taxes→Tax Settings.
 * Here, you can specify different VAT and Tax Registration Numbers for each country you're registered in.
 * Click Add Country, select the desired country from the dropdown, and input the respective VAT and Tax Registration Numbers.
 * Repeat for all countries as necessary.
@@ -167,7 +167,7 @@ Enabling tax collection in the United Kingdom will apply 20% VAT to all taxable 
 
 ### 4. **Enabling tax collection for specific countries**
 
-* Navigate to Configuration > Taxes.
+* Navigate to Configuration→Taxes.
 * Here, you'll see a list of countries. Click on the country you wish to enable tax collection for.
 * Toggle the Enable Tax Collection switch to the 'ON' position.
 * The system will automatically apply the default tax rate for that country. If you wish to set a custom rate, input the desired percentage in the Tax Rate field.

@@ -41,14 +41,14 @@ Churned users visiting your website can be targeted in real time with a re-activ
 ## Step-by-step
 
 1. **Create** a **Churned Users** segment. Optionally create a separate Dunning segment.
-2. **Create** a **Notification Prompt** (Settings > Prompts).
+2. **Create** a **Notification Prompt** (Settings→Prompts).
 3. **Customize** the headline, message, and dynamic variables (e.g., first name).
 4. Under **Add Action**, **select** your billing platform and specify the reactivation plan.
 5. Optionally **set** the effective date for the plan change.
 6. **Target** the prompt to the **Test Users** segment.
 7. **Set** the trigger to fire on your homepage (e.g., URL `/`).
 8. **Launch** the prompt.
-9. **Add** your User ID to **Test Users** (Settings > Users > Test Users).
+9. **Add** your User ID to **Test Users** (Settings→Users→Test Users).
 10. **Verify** the prompt appears when visiting the homepage.
 11. **Update** the targeting to include the **Churned Users** segment for production.
 

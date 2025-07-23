@@ -55,7 +55,7 @@ Depending on your use case, identify which user attributes you’ll need and gat
 
 2. **Upload traits**
 
-   * In Recurly Engage, go to **Settings > Data imports**.
+   * In Recurly Engage, go to **Settings→Data imports**.
    * Select **User traits** and upload your CSV.
    * Schedule the import frequency (daily or one-off).
 

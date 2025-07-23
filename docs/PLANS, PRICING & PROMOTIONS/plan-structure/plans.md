@@ -42,7 +42,7 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 # Creating a plan
 
-1. From your main plan page, navigate to Configuration > Plans. Click on "New Plan."
+1. From your main plan page, navigate to Configuration→Plans. Click on "New Plan."
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" />
 
@@ -133,7 +133,7 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 # Updating plans
 
-1. **Navigate** to Configuration > Plans.
+1. **Navigate** to Configuration→Plans.
 
 2. Either from the plan list view (right option hover) or the plan actions drop down menu on a specific plan detail page, **select** "Edit."
 
@@ -145,7 +145,7 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 # Duplicating plans
 
-1. **Navigate** to Configuration > Plans.
+1. **Navigate** to Configuration→Plans.
 
 2. **Hover over** any row to reveal 3 additional options, then **select** "Duplicate".
 

@@ -49,7 +49,7 @@ Users with the Configuration permission within their role have the ability to cr
 
 To create a custom field definition, follow these steps:
 
-1. Navigate to Configuration > Custom Fields > Create Custom Field.
+1. Navigate to Configuration→Custom Fields→Create Custom Field.
 2. You will be presented with a screen similar to the example below:
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/ab18b87-image.png" />
@@ -74,7 +74,7 @@ Please note that custom fields currently do not support picklist, boolean, true/
 
 ## Editing custom field definitions
 
-After creating a custom field definition, you can edit certain data elements through the Configuration > Custom Fields menu. The following fields can be edited:
+After creating a custom field definition, you can edit certain data elements through the Configuration→Custom Fields menu. The following fields can be edited:
 
 * **API Field Name:** This serves as the ID used in the API to reference the custom field. It should not contain spaces and can only consist of numbers, letters, dashes, and underscores.
 * **Recurly Object:** This determines the object on which the custom field is created, such as account, charge, item, plan, or subscription.
@@ -92,7 +92,7 @@ If you no longer wish to collect data for a specific custom field on your accoun
 
 To delete a custom field definition, follow these steps:
 
-1. Go to Configuration > Custom Fields.
+1. Go to Configuration→Custom Fields.
 2. Take note of the value in the "Field Name (API)" column for the custom field you want to eliminate.
 3. Hover over the row of the custom field you'd like to delete, and on the right side of the table, select "Delete."
 

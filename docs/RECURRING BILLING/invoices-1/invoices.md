@@ -37,7 +37,7 @@ The Invoices Dashboard in Recurly provides a centralized platform for viewing, m
 
 ## View invoices
 
-You can view all your customer invoices in the Recurly Admin Console. Navigate to Customers > Invoices to access them.
+You can view all your customer invoices in the Recurly Admin Console. Navigate to Customers→Invoices to access them.
 
 ### Search
 

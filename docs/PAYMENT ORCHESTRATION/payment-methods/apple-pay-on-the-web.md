@@ -63,7 +63,7 @@ Recurly supports Apple Pay on the Web, allowing a smooth and secure payment proc
 Once you have completed the prerequisites, contact **Recurly Support** to initiate the following actions:
 
 1. **Enable the Apple Pay Web Payments feature flag** for your site.
-   * After enabling the feature flag, a new **Apple Pay** checkbox will appear in your **Gateway Settings**. Make sure this box is checked so you can upload keys and certificates under **Configuration > Apple Pay** in your Recurly site.
+   * After enabling the feature flag, a new **Apple Pay** checkbox will appear in your **Gateway Settings**. Make sure this box is checked so you can upload keys and certificates under **Configuration→Apple Pay** in your Recurly site.
 
 2. **Generate Merchant ID and Payment Processing Keys**\
    Recurly Support will provide the keys you need for Apple Pay integration.
@@ -87,7 +87,7 @@ After receiving the necessary **keys** and **CSRs** from Recurly Support, follow
 
 ### Upload certificates and finalize setup in Recurly
 
-1. **Open the Recurly console** and select **Configuration > Apple Pay** to begin setup.
+1. **Open the Recurly console** and select **Configuration→Apple Pay** to begin setup.
 2. **Enter your verified domain** in the format `www.DOMAIN.com`.
    * **Important**: Do not use the domain listed under the `cert_UID` field. This is a common mistake. Always use your actual store domain.
 3. **Input your store name**, as it should appear to customers during checkout.

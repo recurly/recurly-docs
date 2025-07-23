@@ -37,7 +37,7 @@ The Zuora connector synchronizes subscription traits and product rate plans from
 
 ## Required settings
 
-Under **Settings > Connectors**, configure your Zuora connector by providing:
+Under **Settings→Connectors**, configure your Zuora connector by providing:
 
 * **API URL**: Your Zuora REST API endpoint.
 * **Client ID** and **Client Secret**: OAuth credentials for API authentication.

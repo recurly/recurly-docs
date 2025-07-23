@@ -62,7 +62,7 @@ Gateway Failover is a feature designed to provide a safety net for merchants by 
 **TO EXCLUDE A GATEWAY**, follow these steps:
 
 1. Go to the [Recurly gateway configuration page](https://app.recurly.com/go/configuration/payment_gateways).
-2. Select (1) Options > (2) Edit Gateway on the desired gateway entry to edit.
+2. Select (1) Options→(2) Edit Gateway on the desired gateway entry to edit.
 
 ![Exclude Step 1](https://files.readme.io/fd8975b-gwr_exclude_1.png "Exclude Step 1")
 

@@ -74,7 +74,7 @@ Available by default on every prompt:
 
 ### Connector actions
 
-Integrate with external systems—billing, CRM, support—using prebuilt connectors. Supply credentials in **Settings > Connectors** before use.
+Integrate with external systems—billing, CRM, support—using prebuilt connectors. Supply credentials in **Settings→Connectors** before use.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/87d7647-image.png" />
 

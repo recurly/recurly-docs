@@ -55,7 +55,7 @@ The **Google Tag Manager integration** leverages a custom GTM template to inject
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d98bcf3-image.png" />
 
-5. **Get your Application ID**: Log in to your Recurly Engage console and navigate to **Settings > Application** to copy the ID.
+5. **Get your Application ID**: Log in to your Recurly Engage console and navigate to **Settings→Application** to copy the ID.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f048f16-Screenshot_2024-05-22_at_18.30.09.png" />
 

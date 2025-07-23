@@ -85,7 +85,7 @@ This CSV can be used as a one‑time initial load of endpoint information. To ke
 
 After creating your CSV file you will need to upload it to your secure area on Amazon S3. In this step we will retrieve the credentials to allow you to upload the file.
 
-1. Go to **Settings > User Traits**
+1. Go to **Settings→User Traits**
 
    <Image align="center" className="border" border={true} src="https://files.readme.io/da8ce5e-image.png" />
 
@@ -125,7 +125,7 @@ After creating your CSV file you will need to upload it to your secure area on A
 
 After importing the CSV successfully you will need to configure the new user traits before you can use them in your Segments.
 
-1. Go to **Settings > User Traits**, you should now see all imported columns
+1. Go to **Settings→User Traits**, you should now see all imported columns
 
    <Image align="center" className="border" border={true} src="https://files.readme.io/1fe2677-image.png" />
 

@@ -40,7 +40,7 @@ Administrators can invite users to individual apps in Recurly Engage. To grant a
 
 To add a user:
 
-1. In the Recurly Engage console, **go** to **Settings > Users** and **click** **Add user**.
+1. In the Recurly Engage console, **go** to **Settings→Users** and **click** **Add user**.
 
 <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/8080696-image.png" />
 

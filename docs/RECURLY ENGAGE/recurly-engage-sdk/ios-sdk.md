@@ -56,9 +56,9 @@ You may add the SDK from the public GitHub [repository](https://github.com/redfa
 
 **Steps**:
 
-1. In Xcode, **select** **Target > General > Frameworks, Libraries, and Embedded Content**, then **click** `+`.
+1. In Xcode, **select** **Target→General→Frameworks, Libraries, and Embedded Content**, then **click** `+`.
 
-2. **Choose** **Add Other > Add Files**, and **select** the `RecurlyEngage.xcframework`.
+2. **Choose** **Add Other→Add Files**, and **select** the `RecurlyEngage.xcframework`.
 
 <Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/0824267-Screenshot_2024-05-23_at_3.19.28_PM.png" />
 
@@ -71,7 +71,7 @@ You may add the SDK from the public GitHub [repository](https://github.com/redfa
 
 ## Initialize Recurly Engage
 
-In `AppDelegate.swift`, add to `application(_:didFinishLaunchingWithOptions:)`—replace with your AppID and UserID (found under **Settings > Application** in Pulse):
+In `AppDelegate.swift`, add to `application(_:didFinishLaunchingWithOptions:)`—replace with your AppID and UserID (found under **Settings→Application** in Pulse):
 
 ````swift
 func application(

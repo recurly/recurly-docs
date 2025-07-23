@@ -29,7 +29,7 @@ The Defer Revenue Waterfall Report allows you to gain insights into the amount o
 To access and configure the Defer Revenue Waterfall Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Revenue > Defer revenue waterfall report**.
+   * Go to **Reports→Revenue→Defer revenue waterfall report**.
 
 2. **Apply Filters (if applicable):**
    * Select the desired contract period or apply any additional filters to tailor the report to your requirements.

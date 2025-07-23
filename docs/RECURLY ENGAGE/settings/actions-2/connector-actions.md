@@ -73,7 +73,7 @@ Connector actions require that certain user attributes (e.g., account IDs, email
 
 ## Configuring a connector
 
-1. Navigate to **Settings > Actions** in the Recurly Engage console.
+1. Navigate to **Settings→Actions** in the Recurly Engage console.
 2. Select the desired connector from the list.
 3. Enter the required API credentials and configuration fields.
 4. Toggle **Active** and click **Save**.

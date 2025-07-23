@@ -52,13 +52,13 @@ Recurly enables the addition of an invoice number prefix to be added to invoice 
 
 An entity prefix will continue to support country-specific sequencing for countries in the EU for each sequence/prefix.
 
-An invoice number prefix can be added per Business Entity, go to Business Entity > Invoice Settings: Invoice Number Settings: Entity Prefix.
+An invoice number prefix can be added per Business Entity, go to Business Entity→Invoice Settings: Invoice Number Settings: Entity Prefix.
 
 For more information on configuring prefixes, visit [Business Entity Invoice Settings](https://docs.recurly.com/recurly-subscriptions/docs/business-entities#invoice-settings).
 
 ### Invoice Number Settings: EU Country-specific numbering
 
-For a separate invoice sequence for each European Union country, you can activate the Country Invoice Sequencing feature in Recurly. Go to Business Entity > Invoice Settings: Invoice Settings, find "Country Sequencing", and enable "Country Invoice Sequencing".
+For a separate invoice sequence for each European Union country, you can activate the Country Invoice Sequencing feature in Recurly. Go to Business Entity→Invoice Settings: Invoice Settings, find "Country Sequencing", and enable "Country Invoice Sequencing".
 
 For more detailed information, visit [EU Country Sequencing](https://docs.recurly.com/recurly-subscriptions/docs/eu-vat-2015#invoice-sequencing-by-country) For more information on configuration, visit [Business Entity Invoice Settings](https://docs.recurly.com/recurly-subscriptions/docs/business-entities#invoice-settings).
 
@@ -66,7 +66,7 @@ For more detailed information, visit [EU Country Sequencing](https://docs.recurl
 
 Recurly enables the addition of a hidden prefix to your invoice numbering. This is particularly helpful if you use the same payment gateway for multiple billing systems and need to segment your transactions. The order number prefix will not appear on invoices.  The order number prefix is not configured per business entity.
 
-To add a hidden prefix, go to Configuration > Site Settings and enter your desired prefix under "Order Number Prefix".
+To add a hidden prefix, go to Configuration→Site Settings and enter your desired prefix under "Order Number Prefix".
 
 ![](https://files.readme.io/17f741da4a04d35ac89eae3158e5b8e4ed1b872a4beac5e1a270f556f63d3432-image.png)
 
@@ -111,7 +111,7 @@ Located at the top left of the invoice, this section lists your company's inform
 Every invoice includes a Bill To address for the customer:
 
 * Defaults to Billing Information for automatic collection methods or Account Information for manual methods.
-* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration > Taxes > Tax Settings.\
+* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration→Taxes→Tax Settings.\
   Fields displayed in the Bill To section:
 * First and Last Name
 * Company Name (from Account Information)

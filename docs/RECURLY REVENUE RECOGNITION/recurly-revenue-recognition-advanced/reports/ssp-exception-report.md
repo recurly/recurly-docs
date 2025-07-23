@@ -27,7 +27,7 @@ SSP Exception Report provides visibility into transactions that are not eligible
 To access and configure the SSP Exception Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Exception Reports > SSP Exception Report**.
+   * Go to **Reports→Exception Reports→SSP Exception Report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

@@ -38,7 +38,7 @@ The **Test Users** segment is an automatically provisioned group that enables yo
 
 Recurly Engage automatically creates a **Test Users** segment for each app upon creation. To configure which users belong to this segment:
 
-* **Go** to **Settings > Users > Test Users**.
+* **Go** to **Settings→Users→Test Users**.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9c4e603-Screenshot_2024-05-22_at_15.20.44.png" />
 

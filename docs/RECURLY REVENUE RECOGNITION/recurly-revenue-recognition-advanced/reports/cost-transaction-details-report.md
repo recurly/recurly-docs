@@ -25,7 +25,7 @@ The Cost Transaction Details Report provides a comprehensive view of the cost tr
 To access and configure the Cost Transaction Details Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Transaction Details > Cost Transaction Details report**.
+   * Go to **Reports→Transaction Details→Cost Transaction Details report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

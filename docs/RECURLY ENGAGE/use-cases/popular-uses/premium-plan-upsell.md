@@ -41,13 +41,13 @@ This scenario prompts users on your site who have not yet purchased the add-on o
 ## Guide
 
 1. **Modify** the **Engaged Users** segment to include users on the target subscription plan.
-2. **Create** a **Popup Prompt** (Settings > Prompts) and **customize** the headline, message, and dynamic variables (e.g., first name).
+2. **Create** a **Popup Prompt** (Settings→Prompts) and **customize** the headline, message, and dynamic variables (e.g., first name).
 3. Under **Add Action**, **select** your [Billing](billing) platform and specify the plan to which users should upgrade.
 4. Optionally **set** the effective date for the plan change.
 5. **Target** the prompt to the **Test Users** segment.
 6. **Set** the trigger to fire on the homepage (e.g., URL `/`), or other key pages.
 7. **Start** the prompt.
-8. **Add** your User ID to **Test Users** (Settings > Users > Test Users).
+8. **Add** your User ID to **Test Users** (Settings→Users→Test Users).
 9. **Verify** the prompt launches when you visit the homepage.
 10. **Update** the prompt’s targeting to include **Engaged Users** for production roll-out.
 

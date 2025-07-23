@@ -109,7 +109,7 @@ Set permissions based on roles or groups in Zendesk. Ensure that agents have the
 2. **Search for Recurly**: In the search bar, type "Recurly" to find the available integrations.
 3. **Choose the Desired Integration**: Depending on your needs, select either Recurly for Zendesk Support, Chat, or Sell.
 4. **Download and Install**: Click on the desired integration and follow the prompts to download and install.
-5. **Enter Recurly Details**: Once installed, you'll need to configure the integration. Input your Recurly subdomain and the Base64 encoded API key. This can be found under your Recurly Account > Integrations > API Credentials.
+5. **Enter Recurly Details**: Once installed, you'll need to configure the integration. Input your Recurly subdomain and the Base64 encoded API key. This can be found under your Recurly Account→Integrations→API Credentials.
 6. **Finalize Installation**: Follow any additional prompts and complete the installation process.
 
 ### 2. Using the customer lookup feature
@@ -153,7 +153,7 @@ Q: What is the Recurly for Zendesk integration?\*\*\
 **A**: Yes, if you have the necessary permissions (Edit or Admin), you can issue a refund for any amount up to the last invoice directly from the Zendesk interface.
 
 **Q**: How do I find my Base64 encoded Recurly API Key?\
-**A**: You can locate this key under your Recurly Account > Integrations > API Credentials. The Base64 encoded API key is the characters after “Authorization Basic”.
+**A**: You can locate this key under your Recurly Account→Integrations→API Credentials. The Base64 encoded API key is the characters after “Authorization Basic”.
 
 **Q**: What if I only want certain agents to have access to specific features?\
 **A**: Zendesk administrators can set permissions within the application for specific roles/groups in your Zendesk instance. You can assign 'Read', 'Edit', or 'Admin' permissions as needed.

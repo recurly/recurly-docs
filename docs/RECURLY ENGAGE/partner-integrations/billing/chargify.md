@@ -38,7 +38,7 @@ The **Chargify** connector synchronizes products, coupons, and subscription data
 
 ## Required settings
 
-Configure your Chargify connector under **Settings > Connectors**:
+Configure your Chargify connector under **Settings→Connectors**:
 
 * **API Key**: Your Chargify API key.
 * **Domain**: Your Chargify site domain (e.g., `your-site.chargify.com`).

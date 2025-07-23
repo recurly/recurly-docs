@@ -88,7 +88,7 @@ Triggered guides reinforce messages by delivering one of several prompts based o
 
 ## Guide
 
-1. **Go** to **Guides > New Guide**.
+1. **Go** to **Guides→New Guide**.
 2. **Enter** a **Name** and optional **Description**. **Select** the **Guide Type** and **Segments** (guide type cannot be changed later).
 3. **Add** at least two prompts as guide items.
 4. **Configure** **Continue** and **Exit** conditions for each item.

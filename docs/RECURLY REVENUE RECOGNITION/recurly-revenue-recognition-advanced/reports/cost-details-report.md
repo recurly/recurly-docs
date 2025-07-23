@@ -29,7 +29,7 @@ The Cost Detail Report provides a comprehensive overview of cost schedules for a
 To access and configure the Cost Detail Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Cost VC > Cost details report**.
+   * Go to **Reports→Cost VC→Cost details report**.
 
 2. **Run the Report:**
    * Click the **Run** button to generate the report.

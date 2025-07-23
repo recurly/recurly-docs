@@ -47,7 +47,7 @@ See this [article](/docs/can-i-download-prompt-interactions-data#detailed-activi
 
 Data from all user activity relating to running prompts are continuously saved to an AWS S3 bucket. This data may be imported into your BI system for offline analysis.
 
-1. **Go** to **Settings > User Traits**
+1. **Go** to **Settings→User Traits**
 2. **Select** “Show credentials”.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/60d5733d567e8ebe61eeef8a39345ccf6c7c78e00d792a40bf4f185f6db46108-aws-creds.png" />
@@ -59,7 +59,7 @@ Data from all user activity relating to running prompts are continuously saved t
 | Field                        | Description                                                | Notes                                                         |
 | ---------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------- |
 | app\_id                      | Recurly Engage app id                                      | Assigned by Recurly Engage                                    |
-| app\_name                    | Recurly Engage app name                                    | Name as saved within Settings > Application                   |
+| app\_name                    | Recurly Engage app name                                    | Name as saved within Settings→Application                   |
 | activity                     | Type of activity                                           | Values: impression, timeout, dismiss, decline, click, exclude |
 | user\_id                     | Unique ID of user                                          |                                                               |
 | anonymous\_user\_id          | Identifier for a user in the event userId is not available |                                                               |

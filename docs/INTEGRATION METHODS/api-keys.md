@@ -40,7 +40,7 @@ An API, or Application Programming Interface, acts as a communication channel be
 
 To integrate with Recurly, you'll often need an API key. Here's how to obtain or create one:
 
-1. Navigate to **Integrations > API Credentials** as a User assigned a Role that includes the Integration permission.
+1. Navigate to **Integrations→API Credentials** as a User assigned a Role that includes the Integration permission.
 
    <Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/bfd81d4-Screen_Shot_2019-11-12_at_08.32.07.png" />
 
@@ -58,7 +58,7 @@ To integrate with Recurly, you'll often need an API key. Here's how to obtain or
 
 An API key can be regenerated in 2 different ways. Either the existing API key will remain active for a 12 hour window or it will be disabled immediately. To regenerate a key, follow these steps:
 
-1. Head to **Developers > API keys**.
+1. Head to **Developers→API keys**.
 2. **Identify** the key that you wish to regenerate.
 3. **Choose** the Regenerate Key option.
 4. **Select** the behavior that you would like to apply to the existing API key.
@@ -67,7 +67,7 @@ An API key can be regenerated in 2 different ways. Either the existing API key w
 
 If you would like to revoke an API key, you can do so by following the steps below. We recommend that you revoke your API key if you have any reason to believe the security of the key may be compromised.
 
-1. As a developer or Admin user, navigate to Developers > API Keys.
+1. As a developer or Admin user, navigate to Developers→API Keys.
 
 2. Find the key you would like to revoke.
 
@@ -87,7 +87,7 @@ If you regenerate a key immediately, the old key will stop working, and Recurly 
 
 ## Base64 encoded API keys
 
-For a Base64 encoded API key, simply navigate to **Integrations > API Credentials** and expand **"Need help using the API Key?"**. The characters following "Authorization: Basic" represent your encoded key.
+For a Base64 encoded API key, simply navigate to **Integrations→API Credentials** and expand **"Need help using the API Key?"**. The characters following "Authorization: Basic" represent your encoded key.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/242d8ac-2019-11-07_0926.png" />
 

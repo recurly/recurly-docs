@@ -25,7 +25,7 @@ The Audit Details Report displays the details of configuration changes made duri
 To access and configure the Audit Details Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Audit Reports > Audit details report**.
+   * Go to **Reports→Audit Reports→Audit details report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

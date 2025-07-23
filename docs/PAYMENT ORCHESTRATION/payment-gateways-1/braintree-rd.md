@@ -88,7 +88,7 @@ You can find these details in your Braintree Control Panel.
 ## Step 2: Configure Braintree in Recurly
 
 1. Log in to your Recurly account.
-2. Navigate to **Configuration > Payment Gateways**.
+2. Navigate to **Configuration→Payment Gateways**.
 3. Click on **Add a Gateway**, and then select **Braintree** from the list of available gateways.
 4. Enter your Braintree credentials: *Merchant ID*, *Public Key*, and *Private Key*.
 5. For multi-currency support, add separate Braintree gateways for each *Merchant Account ID* (each associated with a different currency).

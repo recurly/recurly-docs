@@ -29,7 +29,7 @@ The Cost Balances Report presents the beginning, scheduled, and ending cost bala
 To access and configure the Cost Balances Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Cost/VC > Cost balances report**.
+   * Go to **Reports→Cost/VC→Cost balances report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
    * Optionally, click the **Download** button to save the report locally.

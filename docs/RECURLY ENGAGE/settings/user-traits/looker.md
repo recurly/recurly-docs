@@ -41,7 +41,7 @@ Below is a step-by-step guide to configure your Looker schedules and connect the
 
 1. **Retrieve S3 credentials in Pulse**
 
-   * **Go** to **Settings > Custom Traits** in your Recurly Engage console.
+   * **Go** to **Settings→Custom Traits** in your Recurly Engage console.
 
    <br />
 

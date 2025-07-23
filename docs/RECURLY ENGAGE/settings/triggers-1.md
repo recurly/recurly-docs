@@ -188,7 +188,7 @@ if (!window.loaded) {
   console.log("loaded");  
   window.loaded = true;  
 }  
-const minuteElapsed = +new Date() - window.lastActiveTs > 30 \* 1000; //e.g. change the 30 here to 120 for 2 seconds  
+const minuteElapsed = +new Date() - window.lastActiveTs→30 \* 1000; //e.g. change the 30 here to 120 for 2 seconds  
 console.log(  
   minuteElapsed,  
   +new Date(),  

@@ -96,7 +96,7 @@ Please note: American Express prevents Canadian merchants from accepting USD Ame
 
 Merchants wishing to use Braintree and multi-currency must configure multiple Braintree gateways - one for each currency. Please use your Merchant ID, Merchant Account ID, public key and private key. The Merchant Account ID identifies the currency that is available.
 
-Merchants can find their merchant account IDs by logging into the control panel, clicking "Account > Processing" (in the upper right-hand corner of the page), then scrolling to the bottom of the page. The merchant account IDs available will be found in the 'Merchant Account ID' column in that table.
+Merchants can find their merchant account IDs by logging into the control panel, clicking "Account→Processing" (in the upper right-hand corner of the page), then scrolling to the bottom of the page. The merchant account IDs available will be found in the 'Merchant Account ID' column in that table.
 
 #### Processing Paypal transactions through Braintree
 

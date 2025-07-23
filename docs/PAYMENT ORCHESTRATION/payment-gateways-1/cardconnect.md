@@ -79,7 +79,7 @@ Ensure that you have an active CardConnect account. If you don't have one, follo
 1. **Login to Your Recurly Account**
    * Log in to your Recurly dashboard.
 2. **Navigate to Payment Gateway Settings**
-   * Go to **Configuration > Payment Gateways**.
+   * Go to **Configuration→Payment Gateways**.
 3. **Select CardConnect Gateway**
    * Choose ‘CardConnect’ from the list of available payment gateways.
 4. **Enter CardConnect Credentials**

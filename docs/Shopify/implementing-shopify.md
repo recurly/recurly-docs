@@ -30,7 +30,7 @@ Utilize one of the two methods below to create a test Shopify store. You are als
 
 * As a Shopify partner, you can create test stores for free which is the recommended path. To become a Shopify partner, sign up via [this link](https://partners.shopify.com/signup?locale=en) . Log in as a Shopify partner [here](https://partners.shopify.com/organizations), and then follow the below steps.
   * From your Partner Dashboard, click Stores.
-  * Click Add store > Create development store.
+  * Click Add store→Create development store.
   * In the Development store use section, select Create a store to test and build.
   * In the Store details section, enter a name for your store.
   * In “Data and Configurations”, you can either select “Start with an empty store” or "Start with test data" depending on your preference.

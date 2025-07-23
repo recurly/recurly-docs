@@ -29,7 +29,7 @@ The VC Details Report provides a detailed breakdown of variable consideration, i
 To access and configure the VC Details Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Cost VC > VC details report**.
+   * Go to **Reports→Cost VC→VC details report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

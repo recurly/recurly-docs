@@ -30,10 +30,10 @@ You may download summary metrics for one or more prompts:
 
 For a full event-level export:
 
-1. On the **Prompts** screen, **select** date range, **check** your prompt(s), **click** **Export to CSV**, and **choose** **Detail**. The file will appear under **Settings > Download Data**.
+1. On the **Prompts** screen, **select** date range, **check** your prompt(s), **click** **Export to CSV**, and **choose** **Detail**. The file will appear under **Settings→Download Data**.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/2cec8af-image.png" />
 
-2. In **Settings > Download Data**, **pick** the same date range and click **Export CSV**. It may take up to 15 minutes for the download link to become available.
+2. In **Settings→Download Data**, **pick** the same date range and click **Export CSV**. It may take up to 15 minutes for the download link to become available.
 
 For field definitions and data schema, see the [Prompt Activity Data Specifications](/docs/download-data#prompt-activity-data-specifications).

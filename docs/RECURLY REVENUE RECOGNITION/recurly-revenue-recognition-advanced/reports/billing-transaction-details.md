@@ -29,7 +29,7 @@ The Billing Transaction Details Report provides a comprehensive overview of the 
 To access and configure the Billing Transaction Details Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Transaction Details > Billing Transaction Details report**.
+   * Go to **Reports→Transaction Details→Billing Transaction Details report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

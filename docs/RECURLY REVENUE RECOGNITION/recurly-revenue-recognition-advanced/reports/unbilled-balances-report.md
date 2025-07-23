@@ -29,7 +29,7 @@ The Unbilled Balances Report provides comprehensive information regarding unbill
 To access and configure the Unbilled Balances Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Reports on balances > Unbilled Balances Report**.
+   * Go to **Reports→Reports on balances→Unbilled Balances Report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

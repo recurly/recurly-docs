@@ -59,7 +59,7 @@ The customer's location is crucial for tax calculations. Without this informatio
 ## Which address to tax
 
 You have the option to calculate taxes based on the Billing address or the Account address. By default, Recurly will use the Billing address for automatic transactions and the Account address for manual invoices.\
-To change your tax address to the Account address, navigate to Configuration > Taxes > Tax Settings and enable "Use Account Information Address for all Invoices". Once enabled, all invoices will use the Account Information address as the customer address. If an Account address does not exist for a customer, the Billing address will be used by default.
+To change your tax address to the Account address, navigate to Configuration→Taxes→Tax Settings and enable "Use Account Information Address for all Invoices". Once enabled, all invoices will use the Account Information address as the customer address. If an Account address does not exist for a customer, the Billing address will be used by default.
 
 ## Which address fields to require
 
@@ -80,7 +80,7 @@ By default, our integration with Avalara AvaTax will validate all customer addre
 
 Renewals aren't blocked if an invalid address error occurs, but the resulting invoice will be rejected by Avalara and won't be considered for tax calculation. We don't block renewals to limit disruptions for your current customers. As it can be challenging to identify which accounts had invalid addresses and did not receive tax, we strongly suggest conducting an address audit and updating addresses before enabling taxes.
 
-You can disable Avalara address validation in your Tax Settings under Configuration > Taxes > Tax Settings. To do so, deselect the checkbox next to "Use Avalara's address validation" and save your settings. Disabling address validation will allow purchases with invalid addresses to go through in Recurly, but Avalara will reject the invoice and will not consider it for tax calculation. If you don't see this option, [refer to this documentation](https://docs.recurly.com/docs/tax#/disable-tax-response-requirement-for-initial-purchases).
+You can disable Avalara address validation in your Tax Settings under Configuration→Taxes→Tax Settings. To do so, deselect the checkbox next to "Use Avalara's address validation" and save your settings. Disabling address validation will allow purchases with invalid addresses to go through in Recurly, but Avalara will reject the invoice and will not consider it for tax calculation. If you don't see this option, [refer to this documentation](https://docs.recurly.com/docs/tax#/disable-tax-response-requirement-for-initial-purchases).
 
 # Tax jurisdictions in Avalara
 
@@ -239,7 +239,7 @@ If Recurly is unable to receive a response from Avalara or the internal Recurly 
 
 ### Disabling tax response requirement
 
-If you prefer to allow new sign-ups and purchases to proceed even when tax cannot be calculated, you can change the default behavior for your site. Simply go to Configuration > Taxes > Tax Settings > Tax Service Settings and disable the option "Require tax response from tax service".
+If you prefer to allow new sign-ups and purchases to proceed even when tax cannot be calculated, you can change the default behavior for your site. Simply go to Configuration→Taxes→Tax Settings→Tax Service Settings and disable the option "Require tax response from tax service".
 
 <Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/fc9cd94-image.png" />
 
@@ -273,7 +273,7 @@ The mode of your site will determine invoicing while your credentials are invali
 
 ### Production mode
 
-If your site is in production mode, Recurly will continue to send invoices to your Avalara account. By default, new sign-ups and purchases will be blocked due to the authentication error returned by Avalara. If you know your credentials are correct and you suspect that Avalara is experiencing authentication issues, you can disable the block on new sign-ups and purchases and allow those invoices to go through without tax until Recurly gets a successful response from Avalara. To disable the block, go to Configuration > Taxes > Tax Settings > deselect "Require tax response from tax service" and save the page.
+If your site is in production mode, Recurly will continue to send invoices to your Avalara account. By default, new sign-ups and purchases will be blocked due to the authentication error returned by Avalara. If you know your credentials are correct and you suspect that Avalara is experiencing authentication issues, you can disable the block on new sign-ups and purchases and allow those invoices to go through without tax until Recurly gets a successful response from Avalara. To disable the block, go to Configuration→Taxes→Tax Settings→deselect "Require tax response from tax service" and save the page.
 
 As soon as Recurly gets a successful response from Avalara on an invoice, Recurly will reset your Avalara credentials to be valid again. Note that when credentials are invalid, renewals will always go through and generate an invoice without tax. Recurly will not delay the renewal and retry. Recurly does not retry the subscription because if the Avalara account has truly expired, which is the primary scenario, it could delay subscription renewals across your site for potentially a long time.
 
@@ -318,7 +318,7 @@ To connect your Avalara AvaTax account to Recurly, follow these steps:
 
 To send Avalara line items that are taxable, configure the plans and add-ons by following these steps:
 
-1. **Go** to 'Configuration' > 'Subscription Plans' > Select a plan > Click 'Edit'.
+1. **Go** to 'Configuration'→'Subscription Plans'→Select a plan→Click 'Edit'.
 2. **Select** 'Collect Tax' under 'Plan Details'. This will make all plan items taxable: setup fee, plan fee, add-on fees.
 3. Enabling tax for the plan will expose a 'Tax Code' field where you can place your Avalara tax code for the plan level fee.
 4. If you have a setup fee, it will use the same tax code as the plan fee.

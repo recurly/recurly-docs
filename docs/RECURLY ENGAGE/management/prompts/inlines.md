@@ -90,7 +90,7 @@ A clickable text bar without images, useful for simple announcements or links. I
 
 1. **Create a zone**
 
-   * Navigate to **Settings > Zones > New Zone**.
+   * Navigate to **Settings→Zones→New Zone**.
    * Name the zone (no spaces) and select its placement (e.g., “Home Page Top Banner”).
 
    <br />
@@ -101,7 +101,7 @@ A clickable text bar without images, useful for simple announcements or links. I
 
 2. **Build an inline prompt**
 
-   * Go to **Prompts > New Prompt**.
+   * Go to **Prompts→New Prompt**.
    * Choose **Desktop and Mobile**, then select **Horizontal** (or your desired inline type).
 
    <br />
@@ -138,7 +138,7 @@ A clickable text bar without images, useful for simple announcements or links. I
 
 3. **Manage your zone**
 
-   * Under **Settings > Zones**, view all prompts assigned to a zone.
+   * Under **Settings→Zones**, view all prompts assigned to a zone.
    * Switch between **Stack**, **List**, or **Slider** display modes for multiple items.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/dcbb8c2-Screenshot_2024-04-22_175035.png" />

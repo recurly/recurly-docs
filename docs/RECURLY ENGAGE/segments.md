@@ -61,7 +61,7 @@ Combine with [Usage Tracking](usage-tracking-1) to target based on app behavior:
 
 Below is an example for creating a segment of **Engaged, US-based iOS Premium plan users who have not redeemed the iOS prompt**:
 
-1. **Navigate** to **Segments > New Segment**.
+1. **Navigate** to **Segments→New Segment**.
 2. **Enter** a **Name** (e.g., “Engaged iOS Premium – No Redemption”) and optional **Description**.
 3. **Add** trait filters in sequence:
 

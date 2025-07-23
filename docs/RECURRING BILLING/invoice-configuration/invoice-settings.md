@@ -72,7 +72,7 @@ Determine how you want to handle declined refund transactions by either keeping 
 
 #### VAT Reverse Charge Notes
 
-If you are using Recurly's EU VAT feature for tax collection in the European Union, you will see a notes section called "VAT Reverse Charge Notes" that shows when a customer provides a valid VAT number and is located in a different country than your own. The notes will be pre-filled with a general statement that no VAT was applied to the invoice and the customer may be responsible for VAT. Merchants can edit this default message with any messaging they would like, as well as edit the section for custom invoice specific messages. To edit the default message, go to the Tax Settings page under Configuration > Taxes > Tax Settings button in the top right corner.
+If you are using Recurly's EU VAT feature for tax collection in the European Union, you will see a notes section called "VAT Reverse Charge Notes" that shows when a customer provides a valid VAT number and is located in a different country than your own. The notes will be pre-filled with a general statement that no VAT was applied to the invoice and the customer may be responsible for VAT. Merchants can edit this default message with any messaging they would like, as well as edit the section for custom invoice specific messages. To edit the default message, go to the Tax Settings page under Configuration→Taxes→Tax Settings button in the top right corner.
 
 ## Email Settings
 
@@ -92,7 +92,7 @@ Email Templates that support invoice PDF attachments:
 
 ## Bill To Address
 
-Select "Use Account Info Address for all Invoices" to force all customer invoices to use the Account Info Address, regardless of their payment method. To do this, go to Configuration > Taxes > Tax Settings and enable "Use Account Information Address for all Invoices" and save the page. The invoice address is displayed on the invoice in the "Bill To" section and is the address used for any tax calculations.
+Select "Use Account Info Address for all Invoices" to force all customer invoices to use the Account Info Address, regardless of their payment method. To do this, go to Configuration→Taxes→Tax Settings and enable "Use Account Information Address for all Invoices" and save the page. The invoice address is displayed on the invoice in the "Bill To" section and is the address used for any tax calculations.
 
 ![381](https://files.readme.io/1AemwLZGSD2cK2sdH0jS_invoice-bill-to.png "invoice-bill-to.png")
 
@@ -186,7 +186,7 @@ By paying attention to these integration notes, you can ensure a smooth and effe
 ### Step 3: Configure VAT reverse charge notes (if applicable)
 
 1. If you are using Recurly’s EU VAT feature, customize the **VAT Reverse Charge Notes** as needed.
-2. To edit the default message, navigate to **Configuration > Taxes > Tax Settings** and click the **Tax Settings** button in the top right corner.
+2. To edit the default message, navigate to **Configuration→Taxes→Tax Settings** and click the **Tax Settings** button in the top right corner.
 
 ### Step 4: Set up email settings
 
@@ -195,7 +195,7 @@ By paying attention to these integration notes, you can ensure a smooth and effe
 
 ### Step 5: Configure the bill to ddress
 
-1. Navigate to **Configuration > Taxes > Tax Settings**.
+1. Navigate to **Configuration→Taxes→Tax Settings**.
 2. Enable the **Use Account Information Address for all Invoices** option and save the page.
 
 ### Step 6: Review example invoice

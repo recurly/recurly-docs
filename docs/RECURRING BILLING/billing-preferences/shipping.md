@@ -33,7 +33,7 @@ The concept is simple: you have the ability to record the cost of shipping and t
 
 # Configuring Shipping on Your Recurly Site
 
-To begin using Shipping Fees, navigate to Configuration > Shipping.
+To begin using Shipping Fees, navigate to Configuration→Shipping.
 
 <Image align="center" alt={1200} border={false} caption="This is the screen you will see when configuring shipping for the first time." title="Blank Slate.png" src="https://files.readme.io/cbd41fa-Blank_Slate.png" />
 
@@ -43,7 +43,7 @@ If you do use multiple shipping methods or would like to show your customers whi
 
 # Shipping Methods
 
-Shipping Methods can be useful to display to your customers which method you use to ship their item(s), or differentiate between methods you use in different geographies. To set up a shipping method, navigate to Configuration > Shipping. You can add as many Shipping Methods as your business requires.
+Shipping Methods can be useful to display to your customers which method you use to ship their item(s), or differentiate between methods you use in different geographies. To set up a shipping method, navigate to Configuration→Shipping. You can add as many Shipping Methods as your business requires.
 
 <Image align="center" alt={1200} border={false} caption="You can use Shipping Methods to show your customers which method is being used to ship their items." title="Create.png" src="https://files.readme.io/ecd628d-Create.png" />
 
@@ -67,7 +67,7 @@ The Shipping feature is built to make charging recurring shipping on a subscript
 
 ## Recurly Admin UI
 
-In order to create a subscription with shipping fees, navigate to the account to which you'd like to add the subscription and click Account Actions > Create Subscription. Click the "Include Shipping" checkbox and enter the fee and shipping method you'd like to use.
+In order to create a subscription with shipping fees, navigate to the account to which you'd like to add the subscription and click Account Actions→Create Subscription. Click the "Include Shipping" checkbox and enter the fee and shipping method you'd like to use.
 
 ![](https://files.readme.io/7bc0c8c-Screen_Shot_2019-02-25_at_12.36.27_PM.png "Screen Shot 2019-02-25 at 12.36.27 PM.png")
 
@@ -239,7 +239,7 @@ In most cases, if you use a common carrier, they will handle the collection and 
 
 When refunding the shipping fee from an invoice, you have two options: either refund the entire shipping amount, or do not refund the shipping fee. There is currently no ability to refund a partial shipping fee. Refunds for a shipping fee will also issue a refund for the tax amount related to the shipping fee line item.
 
-To refund shipping in the Admin UI, navigate to the invoice you would like to refund and click Invoice Actions > Refund Invoice.
+To refund shipping in the Admin UI, navigate to the invoice you would like to refund and click Invoice Actions→Refund Invoice.
 
 ## Shipping Fees on One-Time Charges
 

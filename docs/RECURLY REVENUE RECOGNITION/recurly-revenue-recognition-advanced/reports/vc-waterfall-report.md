@@ -29,7 +29,7 @@ VC Waterfall Report illustrates the waterfall of variable consideration data, in
 To access and configure the VC Waterfall Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Cost VC > VC waterfall report**.
+   * Go to **Reports→Cost VC→VC waterfall report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

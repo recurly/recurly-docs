@@ -45,7 +45,7 @@ There are two ways to receive usage data. You must provide the following values 
 
 **AWS S3 Requirements** – Pull data using Recurly Engage:
 
-* **Go** to **Settings > User Traits**.
+* **Go** to **Settings→User Traits**.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bfbf239-Event_Exports_settings.png" />
 

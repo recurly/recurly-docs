@@ -94,7 +94,7 @@ Below you will find some common issues and the solutions for them:
         There could be a number of reasons for this. Follow these steps:
 
         1. Check the Recurly Logs tab and ensure that there are no errors being experienced.
-        2. If there are no logs, navigate to Setup > Apex Jobs and ensure that there are no Apex jobs which experienced an error.
+        2. If there are no logs, navigate to Setup→Apex Jobs and ensure that there are no Apex jobs which experienced an error.
         3. Check your email to ensure that your Recurly API key has not errored. If there is an API key failure, Recurly for Salesforce will send you an email.
         4. Ensure that the user the integration is running as has the permission necessary to insert records.
       </td>

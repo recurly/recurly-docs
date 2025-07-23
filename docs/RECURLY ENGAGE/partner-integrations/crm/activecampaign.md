@@ -40,7 +40,7 @@ The **ActiveCampaign** connector synchronizes contact data and exposes actions�
 
 ## Required settings
 
-Under **Settings > Connectors > ActiveCampaign**, provide:
+Under **Settings→Connectors→ActiveCampaign**, provide:
 
 * **API Key**: Obtain from your ActiveCampaign account (see [Getting started with the API](https://help.activecampaign.com/hc/en-us/articles/207317590-Getting-started-with-the-API#getting-started-with-the-api-0-0)).
 * **Subdomain**: Your ActiveCampaign account subdomain (e.g., `myaccount` in `myaccount.api-us1.com`).

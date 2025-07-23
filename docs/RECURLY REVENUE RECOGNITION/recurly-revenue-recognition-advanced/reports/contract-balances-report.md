@@ -29,7 +29,7 @@ The Contract Balances Report provides insights into the changes to contract asse
 To access and configure the Contract Balances Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Reports on balances > Contract Balances Report**.
+   * Go to **Reports→Reports on balances→Contract Balances Report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

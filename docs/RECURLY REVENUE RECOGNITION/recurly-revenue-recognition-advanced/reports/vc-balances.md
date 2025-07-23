@@ -29,7 +29,7 @@ VC Balances Report presents a summary of variable consideration actions taken du
 To access and configure the VC Balances Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Cost VC > VC balances report**.
+   * Go to **Reports→Cost VC→VC balances report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

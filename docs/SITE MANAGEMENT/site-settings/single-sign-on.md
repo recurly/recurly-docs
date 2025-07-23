@@ -139,7 +139,7 @@ To configure Google as your identity provider with Recurly's SSO feature, you wi
 
 ### Configure Custom SAML App in Google Admin Console
 
-1. Navigate to "Apps > Web and mobile apps" in the Google Admin Console.
+1. Navigate to "Apps→Web and mobile apps" in the Google Admin Console.
 
 2. Click "Add App", then select "Add custom SAML app".
 
@@ -159,7 +159,7 @@ To configure Google as your identity provider with Recurly's SSO feature, you wi
 * Entity ID: `https://app.recurly.com`
 * Uncheck the “Signed Response” box. Google will not sign the assertion if this is checked, but Recurly requires that the assertion is signed.
 * Name ID format: select "EMAIL" from the dropdown menu.
-* Name ID: select "Basic Information > Primary email" from the dropdown menu.
+* Name ID: select "Basic Information→Primary email" from the dropdown menu.
 
 <Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/d795b1d-image.png" />
 
@@ -175,7 +175,7 @@ To configure Google as your identity provider with Recurly's SSO feature, you wi
 
 Configure who can access the SAML app within your organization.
 
-1. Navigate back to the Admin console, and go to "Apps > Web and mobile apps". Select the newly created SAML app.
+1. Navigate back to the Admin console, and go to "Apps→Web and mobile apps". Select the newly created SAML app.
 
    <Image align="center" className="border" border={true} src="https://files.readme.io/1e046ff-image.png" />
 
@@ -188,7 +188,7 @@ Configure who can access the SAML app within your organization.
 
 ### Configure Recurly App
 
-1. Log into Recurly App and navigate to "Admin > SSO Settings".
+1. Log into Recurly App and navigate to "Admin→SSO Settings".
 
 <Image align="center" className="border" border={true} width="45% " src="https://files.readme.io/4893b52-image.png" />
 
@@ -207,7 +207,7 @@ Configure who can access the SAML app within your organization.
 
 After finishing the setup process for your chosen identity provider (Okta, Entra, or Google), you can finalize your SSO settings in Recurly.
 
-1. **Go** to "Admin > SSO Settings" in the Recurly App.
+1. **Go** to "Admin→SSO Settings" in the Recurly App.
 2. **Click** on the "Enabled" radio button to enable SSO.
 
 When you enable SSO, new user invitations for your site will automatically have SSO enabled by default.
@@ -219,7 +219,7 @@ When you enable SSO, new user invitations for your site will automatically have 
 To locate the expiration date of your SSO certificate, follow the steps below:
 
 1. **Log** into your Recurly App.
-2. **Navigate** to "Admin > SSO Settings".
+2. **Navigate** to "Admin→SSO Settings".
 3. **Locate** the uploaded certificate.
 
 The expiration date of the certificate will be displayed alongside the certificate details. Make a note of this date and ensure you renew the certificate before its expiration to maintain seamless SSO login functionality for your users.

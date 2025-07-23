@@ -41,7 +41,7 @@ Follow these steps to add the Recurly Engage SDK directly:
 
 1. **Log in to Recurly Engage and select your application**: **Make sure** you’re in the correct app context before retrieving your snippet.
 
-2. **Retrieve the JavaScript snippet**: In the Engage console, **navigate** to **Settings > Usage Tracking**.
+2. **Retrieve the JavaScript snippet**: In the Engage console, **navigate** to **Settings→Usage Tracking**.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2c35d83-Screenshot_2024-05-23_at_16.23.58.png" />
 

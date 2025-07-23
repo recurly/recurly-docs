@@ -287,7 +287,7 @@ For customers with military addresses, add "General Delivery" or "GD" to an extr
 
 ### Disabling Recurly Taxes address validation for new sign-ups
 
-You can disable Recurly Taxes’ address validation for initial purchases in Configuration > Taxes > Tax Settings > Tax Service Settings. Choose to disable "Require valid address for initial purchases". With this setting off, addresses for new sign-ups are still sent to Avalara for tax jurisdiction determination, but if an address fails validation, the invoice will still be created (without tax).
+You can disable Recurly Taxes’ address validation for initial purchases in Configuration→Taxes→Tax Settings→Tax Service Settings. Choose to disable "Require valid address for initial purchases". With this setting off, addresses for new sign-ups are still sent to Avalara for tax jurisdiction determination, but if an address fails validation, the invoice will still be created (without tax).
 
 ![](https://files.readme.io/006ad47-Tax_Settings__Recurly.png "Tax_Settings_—_Recurly.png")
 
@@ -752,7 +752,7 @@ In cases where Recurly can't obtain a successful response from Avalara, or if th
 
 ### Disable tax response requirement for initial purchases
 
-If you prefer to allow new sign-ups and purchases to proceed even when tax can't be calculated, you can modify your site's default settings. Go to Configuration > Taxes > Tax Settings > Tax Service Settings and disable the option "Require successful tax response for initial purchases".
+If you prefer to allow new sign-ups and purchases to proceed even when tax can't be calculated, you can modify your site's default settings. Go to Configuration→Taxes→Tax Settings→Tax Service Settings and disable the option "Require successful tax response for initial purchases".
 
 ![](https://files.readme.io/8dac00c-Tax_Settings__Recurly.png "Tax_Settings_—_Recurly.png")
 

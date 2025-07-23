@@ -29,7 +29,7 @@ The Role Details Report gives you a full list of the roles’ permissions and ca
 To access and configure the Role Details Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Audit Reports > Role details report**.
+   * Go to **Reports→Audit Reports→Role details report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

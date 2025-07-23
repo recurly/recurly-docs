@@ -283,7 +283,7 @@ This chart outlines the new capabilities that Checkout offers, that were not ava
 ### Enablement and access
 
 **Q: How can I access this feature?**\
-\*\*A:\*\*All sites created after May of 2024 will have Checkout automatically. Please contact support to enable it on your site if not already enabled. If you have Checkout, this feature is under Configuration > Checkout in the Recurly App navigation.
+\*\*A:\*\*All sites created after May of 2024 will have Checkout automatically. Please contact support to enable it on your site if not already enabled. If you have Checkout, this feature is under Configuration→Checkout in the Recurly App navigation.
 
 ### Requirements for use
 

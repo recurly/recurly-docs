@@ -139,7 +139,7 @@ Want to keep an eye on your customer's actions like when they cancel a subscript
 4. In the **CC Email Address** field, \*\*add \*\*the email addresses you want to notify (separate multiple addresses with a comma).
 5. **Click Update Email Template** to save your settings.
 
-To use BCC instead, find the 'Send email copies as BCC' option in Advanced Settings > Email Settings and check the box.
+To use BCC instead, find the 'Send email copies as BCC' option in Advanced Settings→Email Settings and check the box.
 
 ### Changing the from address
 
@@ -295,7 +295,7 @@ Disabling a site-level email also deactivates it for all plans.
 **For Plan-Level Customization**:
 
 1. **Ensure** the email template is active on the site-level.
-2. \*\*Go \*\*to Customization > Plans.
+2. \*\*Go \*\*to Customization→Plans.
 3. \*\*Identify \*\*the plan to alter.
 4. \*\*Uncheck \*\*the email template box to disable.
 

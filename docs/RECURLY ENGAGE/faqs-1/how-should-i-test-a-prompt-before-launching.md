@@ -24,4 +24,4 @@ Activate the prompt on the internal **[Test Users](test-users)** segment so only
 >
 > **Prompt Limits:** Verify that impression limits, frequency caps, or delivery limits aren’t preventing repeated displays.
 >
-> **Reset Goals:** To simulate a fresh user state, reset goals via **Settings > Users > Test Users > Reset Goals** in the Live tool or run `RecurlyEngage.resetGoals();` in your browser console.
+> **Reset Goals:** To simulate a fresh user state, reset goals via **Settings→Users→Test Users→Reset Goals** in the Live tool or run `RecurlyEngage.resetGoals();` in your browser console.

@@ -103,7 +103,7 @@ Recurly Engage comes with the ability to track your users’ behaviors across yo
 
 This article will teach you to setup a new tracker.
 
-Start by heading over to **Settings > Usage Tracking > Add New Tracker**
+Start by heading over to **Settings→Usage Tracking→Add New Tracker**
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/4a51089-Screenshot_2024-04-25_at_15.40.54.png" />
 
@@ -172,7 +172,7 @@ if (RecurlyEngage.anonymousUserId) {
 }
 ```
 
-2. **Go** to **Settings > Actions > Website Actions > Add New Action**
+2. **Go** to **Settings→Actions→Website Actions→Add New Action**
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/28e316d-Screenshot_2024-04-25_at_15.57.56.png" />
 
@@ -184,7 +184,7 @@ if (RecurlyEngage.anonymousUserId) {
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/cda656e-image.png" />
 
-5. **Go** to the prompt that you wish to redirect from and click **Website Actions > Add Action**.
+5. **Go** to the prompt that you wish to redirect from and click **Website Actions→Add Action**.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f86eb59-Screenshot_2024-04-25_at_16.18.56.png" />
 
@@ -194,7 +194,7 @@ if (RecurlyEngage.anonymousUserId) {
 
 ### Custom tracker
 
-1. **Go** to **Settings > Usage Tracking > Add New Tracker**
+1. **Go** to **Settings→Usage Tracking→Add New Tracker**
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5ab5bc5-Screenshot_2024-04-25_at_15.40.54.png" />
 

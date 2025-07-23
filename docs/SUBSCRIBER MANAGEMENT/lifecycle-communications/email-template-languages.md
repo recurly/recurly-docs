@@ -99,7 +99,7 @@ Recurly's attention to detail shines with its feature where attached PDF invoice
 
 1. **Navigating to the Configuration:**
    * Log into your Recurly dashboard.
-   * Proceed to Configuration > Email Templates > Configure Languages.
+   * Proceed to Configuration→Email Templates→Configure Languages.
 2. **Enabling a New Language:**
    * On the "Configure Languages" page, you'll notice options to enable new languages for your site. Select the desired language.
    * With the language enabled, it's now possible to set it for individual customers, ensuring they receive emails in this specific language.

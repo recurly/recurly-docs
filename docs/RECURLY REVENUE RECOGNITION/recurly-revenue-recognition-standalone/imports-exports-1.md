@@ -209,7 +209,7 @@ Before initiating an event file upload in Standalone revenue recognition, it's e
 
 The Recurly's Revenue Recognition Event API allows users to input business events, which are individual revenue triggers on one or more sales order/contract lines (e.g. Shipping Date, Customer Acceptance, Percentage Completion).
 
-These business events must be configured in Recurly's Revenue Recognition before using this API. Business Event configuration is found under Policies > Business Events.
+These business events must be configured in Recurly's Revenue Recognition before using this API. Business Event configuration is found under Policies→Business Events.
 
 ```
 Supported POST Call:  

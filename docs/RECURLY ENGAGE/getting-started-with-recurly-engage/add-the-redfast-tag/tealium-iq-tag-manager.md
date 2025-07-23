@@ -23,7 +23,7 @@ This feature or setting is available to all customers on any Recurly Engage subs
 ### Prerequisites & limitations
 
 * You must have publish permissions in both your Recurly Engage and Tealium iQ accounts.
-* Access to **Settings > Usage Tracking** in your Recurly Engage app.
+* Access to **Settings→Usage Tracking** in your Recurly Engage app.
 
 # Definition
 
@@ -41,7 +41,7 @@ You can integrate the Recurly Engage JavaScript client into your web application
 
 1. **Log in to Recurly Engage and select your application**: Ensure you’re in the correct app context.
 
-2. **Retrieve the client URL**: Navigate to **Settings > Usage Tracking**.
+2. **Retrieve the client URL**: Navigate to **Settings→Usage Tracking**.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/539dc52-Screenshot_2024-05-22_at_21.56.18.png" />
 

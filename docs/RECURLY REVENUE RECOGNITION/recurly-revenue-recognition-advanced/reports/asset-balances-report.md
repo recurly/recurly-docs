@@ -29,7 +29,7 @@ The Asset Balances Report provides a comprehensive view of the movement of contr
 To access and configure the Asset Balances Report:
 
 1. **Navigate to the Report:**
-   * Go to **Reports > Reports on balances > Assets Balances Report**.
+   * Go to **Reports→Reports on balances→Assets Balances Report**.
 2. **Run the Report:**
    * Click the **Run** button to generate the report.
 3. **Download the Report:**

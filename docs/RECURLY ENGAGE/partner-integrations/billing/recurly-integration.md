@@ -43,7 +43,7 @@ The **Recurly** connector imports subscription traits nightly and provides actio
 ## Activation
 
 1. Generate an **API Key** in the Recurly console.
-2. In Recurly Engage, navigate to **Settings > Integrations > Recurly** and paste your API Key.
+2. In Recurly Engage, navigate to **Settings→Integrations→Recurly** and paste your API Key.
 3. Toggle **Use Account Code** to **On** if you map your own user IDs to Recurly Account Codes.
 4. Toggle **Active** to **On**.
 

@@ -48,7 +48,7 @@ Recurly Engage provides an additional tool to reduce involuntary churn by using 
 
 > 📘 Important
 >
-> Make sure you enable the **Sync events** option, if available for your billing platform under **Settings > Actions**. This ensures that dunning updates are synced with your Recurly Engage segments.
+> Make sure you enable the **Sync events** option, if available for your billing platform under **Settings→Actions**. This ensures that dunning updates are synced with your Recurly Engage segments.
 
 ## Guide
 
@@ -59,7 +59,7 @@ Recurly Engage provides an additional tool to reduce involuntary churn by using 
 5. **Target** the segment to **Test Users**.
 6. **Set** the trigger to **Any Page** (refine later as needed).
 7. **Start** the Guide.
-8. **Add** your user ID to the Test Users segment (**Settings > Users > Test Users**).
+8. **Add** your user ID to the Test Users segment (**Settings→Users→Test Users**).
 9. **Confirm** the Guide launches as configured.
 10. **Adjust** targeting to the **Failed Payment** segment once you’ve synced events.
 

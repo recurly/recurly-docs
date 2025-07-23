@@ -25,7 +25,7 @@ next:
 
 ## View Invoices
 
-All of your customer invoices can be viewed in the Recurly Admin Console under Customers > Invoices. 
+All of your customer invoices can be viewed in the Recurly Admin Console under Customers→Invoices. 
 
 ### Search
 
@@ -135,11 +135,11 @@ If you would like your invoice numbering to start at a different number, contact
 
 ### Add Prefix
 
-Recurly does not allow you to add a visible prefix to your invoice numbering, but you can add a hidden prefix to segment your Recurly transactions within your payment gateway. This is helpful if you are using your payment gateway for multiple billing systems. To add a hidden prefix, go to Configuration > Site Settings and enter the prefix value under "Invoice Prefixing".
+Recurly does not allow you to add a visible prefix to your invoice numbering, but you can add a hidden prefix to segment your Recurly transactions within your payment gateway. This is helpful if you are using your payment gateway for multiple billing systems. To add a hidden prefix, go to Configuration→Site Settings and enter the prefix value under "Invoice Prefixing".
 
 ### European Union Numbering
 
-If you would like to have a separate invoice sequence for each European Union country, you can enable our Country Invoice Sequencing feature. Go to Configuration > Taxes > Tax Settings in top right corner > enabled "Country Invoice Sequencing" under "European Union VAT Settings". <a href="https://docs.recurly.com/docs/eu-vat-2015#section-country-specific-invoice-sequences">Learn more</a>
+If you would like to have a separate invoice sequence for each European Union country, you can enable our Country Invoice Sequencing feature. Go to Configuration→Taxes→Tax Settings in top right corner→enabled "Country Invoice Sequencing" under "European Union VAT Settings". <a href="https://docs.recurly.com/docs/eu-vat-2015#section-country-specific-invoice-sequences">Learn more</a>
 
 ## Display
 
@@ -170,7 +170,7 @@ The top left of the invoice will list your company information. The following fi
 
 ### Bill To
 
-All invoices will at least have a Bill To for the customer. This defaults to the Billing Information address if the collection method is automatic, and the Account Information address if the collection method is manual. You can force the Bill To to always use the Account Information address and only fallback to the Billing Information address when one doesn't exist in the Account Information. To do this, go to Configuration > Taxes > Tax Settings and enable "Use Account Information Address for all Invoices" and save the page.
+All invoices will at least have a Bill To for the customer. This defaults to the Billing Information address if the collection method is automatic, and the Account Information address if the collection method is manual. You can force the Bill To to always use the Account Information address and only fallback to the Billing Information address when one doesn't exist in the Account Information. To do this, go to Configuration→Taxes→Tax Settings and enable "Use Account Information Address for all Invoices" and save the page.
 
 The following fields will show for the Bill To:
 
@@ -255,7 +255,7 @@ VAT Reverse Charge Notes are configured on the Tax Settings page and are used fo
 
 ## PDFs
 
-You can choose to include a PDF of the invoice in any email sent about an invoice. To enable PDF attachments for your site, go to Configuration > Invoice Settings > Emails Settings and select "Attach PDF" and save the page.
+You can choose to include a PDF of the invoice in any email sent about an invoice. To enable PDF attachments for your site, go to Configuration→Invoice Settings→Emails Settings and select "Attach PDF" and save the page.
 
 Additionally, you or your customers can download a PDF of any invoice by viewing the invoice in the Admin Console or the Hosted Pages.
 

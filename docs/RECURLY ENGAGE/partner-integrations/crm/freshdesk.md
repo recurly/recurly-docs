@@ -38,7 +38,7 @@ The **Freshdesk** connector lets you automate customer support workflows—creat
 
 ## Required settings
 
-Under **Settings > Connectors > Freshdesk**, provide:
+Under **Settings→Connectors→Freshdesk**, provide:
 
 * **Domain**: Your Freshdesk subdomain (e.g., `yourcompany.freshdesk.com`).
 * **API Key**: Your Freshdesk API token (see [How to find your API key](https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key)).

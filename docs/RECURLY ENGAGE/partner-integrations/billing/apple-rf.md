@@ -38,7 +38,7 @@ The **APNs** connector ingests your Apple Push credentials—Bundle ID, Team ID,
 
 ### Required Information
 
-Provide the following under **Settings > Push Credentials** in Recurly Engage:
+Provide the following under **Settings→Push Credentials** in Recurly Engage:
 
 * **APNs Bundle ID**: Your app’s Bundle Identifier.
 * **APNs Team ID**: Your Apple Developer Team Identifier.

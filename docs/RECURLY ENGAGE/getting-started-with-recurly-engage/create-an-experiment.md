@@ -43,7 +43,7 @@ Experiments follow these steps:
 
 Define what success looks like—e.g., a click or purchase—before creating variations.
 
-1. In Recurly Engage, **go** to **Settings > Usage Tracker** and **add** a new tracker.
+1. In Recurly Engage, **go** to **Settings→Usage Tracker** and **add** a new tracker.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/92f9bc4-image.png" />
 
