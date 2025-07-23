@@ -20,7 +20,7 @@ metadata:
 
 * Only new bank accounts will be verified. Bank accounts on file are not subject to preverification rules.
 * Adyen gateway requires use of Giact.
-* Stripe gateway requires use of Financial Connections.
+* Stripe gateway requires use of Financial Connections and cannot support externally verified bank accounts.
 
 # Definition
 
@@ -43,3 +43,13 @@ These gateways allow you to accept payments in any currency within Recurly:
 * **[GoCardless](https://docs.recurly.com/docs/gocardless)**
 
 * **[Check Commerce](https://docs.recurly.com/docs/check-commerce)**
+
+### Suggested Flow for external verifications
+
+You may use an external provider for any of our ACH supported gateways (excluding Stripe) to verify bank accounts prior to adding billing information to the Recurly platform. General best practices including verifying any *new* bank account information provided to you by a consumer, so that you can verify it is usable for a WEB (online) transaction.
+
+The direct language from the mandate, effective March 2021, is as follows:
+
+* Validate first-use consumer account information for consumer debit payments authorized or initiated over an online channel (often called WEB Debits).
+
+You may require users to authenticate via Plaid, or even via micro-transactions and verify the debits/credits, prior to adding their billing info to Recurly. If the external integration verifies that a consumer's bank account is valid for online processing, and can be debited, you may follow your existing flow with Recurly today.
