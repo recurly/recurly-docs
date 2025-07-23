@@ -33,7 +33,7 @@ Recurly plans are the blueprint for your subscription business, orchestrating th
   * **Subscription term lengths**: Designate the length of subscription commitments.
   * **Renewal options**: Opt for subscriptions that either auto-renew or expire at term end.
   * **Pricing models**: Choose from fixed, ramp, or usage-based pricing to align with your revenue strategy.
-  * **Price Segments**: Create different price points with a single currency for specific customer segments on a single plan.
+  * **Price segments**: Create different price points with a single currency for specific customer segments on a single plan.
   * **Add-on features**: Augment plans with added services or products to upsell and enhance customer value.
 
 ## Dashboard
