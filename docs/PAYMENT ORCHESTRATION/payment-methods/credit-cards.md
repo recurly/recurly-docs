@@ -86,4 +86,4 @@ In compliance with [Article 8 of EU IFR Regulation 2015/751](https://eur-lex.eur
 
 Recurly offers dual-badged compliance on the following gateways:
 
-* [Adyen](https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards) (Cartes Bancaires)
+* [Adyen](https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards) (Cartes Bancaires, Bancontact, Dankort)
