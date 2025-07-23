@@ -53,7 +53,7 @@ To enhance clarity and aid in decision-making for merchants, it's crucial to dis
 
 Within Recurly, you can define how you want to manage direct debit failures through settings available on the invoice settings page.
 
-Find this setting at “Configuration → Invoice Templates →> Invoice Settings” and scroll down to “Chargebacks”.
+Find this setting at “Configuration → Invoice Templates → Invoice Settings” and scroll down to “Chargebacks”.
 
 <Image align="center" className="border" border={true} width="90% " src="https://files.readme.io/4d7f6fd-image.png" />
 
