@@ -26,9 +26,15 @@ Recurly plans are the blueprint for your subscription business, orchestrating th
 
 # Key benefit
 
-* **Custom plan configuration**: Shape subscription plans using Recurly, tailoring to your business needs with customizable billing and term options.
-* **Trial and pricing flexibility**: Offer attractive trials and select from diverse pricing models to match your revenue goals.
-* **Enhanced offerings**: Boost value with supplemental services or products, optimizing customer upsell opportunities.
+* **Tailored plan creation**: Mold your subscription plans with Recurly to fit your business like a glove. Configure options like:
+  * **Trial periods**: Roll out enticing free or discounted trials to potential customers.
+  * **Setup fees**: Implement one-time setup fees where applicable.
+  * **Billing cycle lengths**: Specify the intervals for your billing cycles, from weekly to annually.
+  * **Subscription term lengths**: Designate the length of subscription commitments.
+  * **Renewal options**: Opt for subscriptions that either auto-renew or expire at term end.
+  * **Pricing models**: Choose from fixed, ramp, or usage-based pricing to align with your revenue strategy.
+  * **Price Segments**: Create different price points with a single currency for specific customer segments on a single plan.
+  * **Add-on features**: Augment plans with added services or products to upsell and enhance customer value.
 
 ## Dashboard
 
@@ -38,25 +44,33 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 1. From your main plan page, navigate to Configuration > Plans. Click on "New Plan."
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/a4a863f-Screenshot_2023-12-04_at_3.57.47_PM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" />
 
-2. Define the following parameters:
+2. **Define** the following parameters:
 
 **Plan Details**
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/1672628-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" />
 
-* **Plan Name**: This name describes your plan and appears on Checkout, the Hosted Payment Page and the subscriber's invoice. Limit to 255 characters. Check with your payment gateway provider before using special characters.
+* **Plan Name**: This name describes your plan and appears on the Hosted Payment Page and the subscriber's invoice. Limit to 255 characters. Check with your payment gateway provider before using special characters.
 * **Plan Code**: This is your plan's unique identifier on Recurly. It's used in Hosted Payment Page URLs and API fetch requests. Limit to 25 alphanumeric characters.
 * **Plan Description**: Describe what the plan includes. This will appear on the subscriber's email invoice, if configured in email templates.
 
 **Plan Configuration**
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/e349c91-image.png" />
+* **Currencies**: Choose which of your **enabled** currencies to include in your plan.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d8b3e60a0617e9f7bc532986e6088f5bf8d7924f676a45edbb137c914926124b-image.png" />
 
 * **Free Trial**: Define a free period for the plan in days or months. The paid subscription starts after the trial period ends. Choose whether to require billing information at sign-up, offering flexibility to reduce initial barriers for new customers.
 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png" />
+
 * **Setup Fee**: Include a one-time charge that is processed at the time of sign-up.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" />
+
+<br />
 
 **Billing Configuration**
 
