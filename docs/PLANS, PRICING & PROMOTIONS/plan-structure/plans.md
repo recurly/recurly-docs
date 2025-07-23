@@ -60,7 +60,7 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 * **Currencies**: Choose which of your **enabled** currencies to include in your plan.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d8b3e60a0617e9f7bc532986e6088f5bf8d7924f676a45edbb137c914926124b-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png" />
 
 * **Free Trial**: Define a free period for the plan in days or months. The paid subscription starts after the trial period ends. Choose whether to require billing information at sign-up, offering flexibility to reduce initial barriers for new customers.
 
@@ -70,11 +70,9 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" />
 
-<br />
-
 **Billing Configuration**
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/b5efa62-image.png" />
+<Image align="center" width="80% " src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" />
 
 * **Billing Period**: Set how often a subscriber will be billed.
 
@@ -84,50 +82,54 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 **Pricing Model**
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/893eb4b-Screenshot_2023-12-04_at_4.00.46_PM.png" />
-
 * **Pricing model**: Set the pricing model that best suits the subscription. Choose from fixed or ramp, accordingly.
 * **Price**: Set a fixed price to charge to a plan's subscribers. For Quantity-Based Pricing, use Add-Ons.
 
+<Image align="center" width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
+
+* **Price Segments**: Define different price points for your customer segments.  The Price and Price Segment Code can be used in our APIs to help you show the right price for the right subscriber.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0b6dafa93b032bc950f42ac7fd45158081101333cfb9526155d3b48a1d329fc3-priceSegments.png" />
+
 **Billing Details**
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/3a4c1ee-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b805c2b0bab72f94c5695b13beab5d86b8be821aa5d6a2d6f54362949c562613-image.png" />
 
 * **Accounting Code**: Select a unique code to identify plans in your internal invoice exports. This code should be configured based on your specific tax settings and compliance requirements. Limit to 25 lowercase alphanumeric characters.
 
 **Plan Add-ons**
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/91a70ab-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" />
 
 * **Add-ons**: Optional products that can be included in a recurring subscription's invoices. Also supports Quantity-Based Pricing Models. You can add items from the Item Catalog to a plan.
 
 **Dunning Campaign**
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/ccd4429-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" />
 
-* Dunning campaign: Select the dunning campaign for this plan.
+* **Dunning campaign:** Select the dunning campaign for this plan.
 
 **Customer Emails**
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/7cbd8bb-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" />
 
 * **Select the emails**: Check the boxes to enable email communication on specific matters. You can also modify and manage your templates on your Email Templates setting page.
 
 **Hosted Payment Pages**
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/c75ae00-image.png" />
-
 * **Plan quantity can be edited**: Determine if subscribers can choose their own quantity on the Hosted Payment Pages.
 * **Return URL after Success**: After a successful transaction via the Hosted Page, redirect the customer to a specific URL.
 * **Bypass Recurly Confirmation**: If using the Hosted Payment Pages, choose to bypass Recurly's confirmation page and use a custom return URL.
 
-3. Once all parameters are defined, click "Create Plan" to finalize.
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png" />
 
-# Checkout Configurations
+3. Once all parameters are defined, **click** "Create Plan" to finalize.
+
+# Checkout configurations
 
 After a plan is configured, you can create [Checkout](https://docs.recurly.com/docs/checkout) configuration to direct customers to purchase your plan(s).
 
-<Image align="center" width="60% " src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" />
 
 # Updating plans
 
@@ -145,20 +147,18 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 # Duplicating plans
 
-1. Navigate to Configuration > Plans.
+1. **Navigate** to Configuration > Plans.
 
-2. Either from the plan list view (right option hover) or the plan actions drop down menu on a specific plan detail page, select "Duplicate."
+2. **Hover over** any row to reveal 3 additional options, then **select** "Duplicate".
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/e04262c-Screenshot_2023-12-04_at_4.17.21_PM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" />
 
 3. All details of the original plan will be copied to the "Create a Plan" page. "-copy" will be appended to the "Plan Name" and "Plan Code" fields.
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/3d2bb6b-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png" />
 
-4. Adjust these field names and modify any other fields as required for the new plan.
-5. Click "Create Plan" once you've finished adjusting the details.
-
-   <Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/31fe761-Screenshot_2023-12-04_at_4.11.39_PM.png" />
+4. **Adjust** these field names and modify any other fields as required for the new plan.
+5. **Click** "Create Plan" once you've finished adjusting the details.
 
 > **Note:** You can also duplicate plans after creating a plan. On the success info alert once a plan is created, there is an option to duplicate it.
 
@@ -168,11 +168,11 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 2. Either from the plan list view (right-option hover) or the plan actions dropdown on a specific plan detail page, select **Delete**.
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/8d7ec73-Screenshot_2023-12-04_at_4.17.21_PM_copy.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" />
 
-3. Confirm your decision.
+3. **Confirm** your decision.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/1adb766-Screenshot_2023-12-04_at_4.14.06_PM.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png" />
 
 > **Note**:
 >
