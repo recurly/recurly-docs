@@ -4,7 +4,7 @@ excerpt: >-
   Overview of the Performance tab for monitoring prompt and guide metrics in
   Recurly Engage.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
