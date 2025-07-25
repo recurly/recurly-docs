@@ -95,7 +95,8 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 * You can configure additional tracking items here. Some examples include identifying the cancellation button ID or creating a new tracker.
 * Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/usage-tracking-1" target="_blank">usage tracking</a>
 * The Javascript SDK is automatically installed on the [Hosted Account Management](https://docs.recurly.com/recurly-subscriptions/docs/hosted-account-management#/) and [Recurly Checkout](https://docs.recurly.com/recurly-subscriptions/docs/checkout#/) pages.
-* **Note:** This step is not required for web pages where [Recurly.js ](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/overview-recurlyjs#/) is installed
+
+> **Note:** This step is not required for web pages where [Recurly.js ](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/overview-recurlyjs#/) is installed
 
 ## Step 3: Fetch ID logic
 
