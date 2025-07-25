@@ -71,14 +71,32 @@ Every invoice line item displays these columns:
 
 ### Description and naming guidelines
 
-* **Be specific.** Use clear, descriptive names rather than generic labels like “Item 1” or “Charge.”
-* **Match the product.** If you sell fruit, list “Apple,” “Orange,” and “Banana” rather than a single line called “Fruits.”
-* **Avoid business names.** Don’t repeat your company name in item names or descriptions (e.g., “Fruit Shop Items”).
-* **Skip single-character or symbol-only names.** These can confuse customers and run afoul of compliance rules.
-* **Where descriptions appear:**
+<Cards columns={4}>
+  <Card title="Be specific" icon="fa-check-circle">
+    Use clear, descriptive names rather than generic labels like “Item 1” or “Charge.”
+  </Card>
 
-  * Subscriber invoices
-  * Hosted Account Management pages
-  * Hosted Invoice PDFs
-* **Character limit:** Descriptions must be 255 characters or fewer.
-* **Tip:** Check with your payment gateway about any restrictions on special characters.
+  <Card title="Match the product" icon="fa-apple-alt">
+    If you sell fruit, list “Apple,” “Orange,” and “Banana” rather than “Fruits.”
+  </Card>
+
+  <Card title="Avoid business names" icon="fa-building">
+    Don’t repeat your company name in item names or descriptions (e.g., “Fruit Shop Items”).
+  </Card>
+
+  <Card title="Skip single-character names" icon="fa-font">
+    Avoid names that are a single character or all symbols—they confuse customers.
+  </Card>
+
+  <Card title="Where descriptions appear" icon="fa-file-invoice">
+    Subscriber invoices, Hosted Account Management pages, and Hosted Invoice PDFs.
+  </Card>
+
+  <Card title="Character limit" icon="fa-text-width">
+    Descriptions must be 255 characters or fewer.
+  </Card>
+
+  <Card title="Special character tip" icon="fa-info-circle">
+    Check with your payment gateway about any restrictions on special characters.
+  </Card>
+</Cards>
