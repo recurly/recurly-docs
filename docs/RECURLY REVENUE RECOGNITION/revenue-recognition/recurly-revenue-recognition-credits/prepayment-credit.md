@@ -6,7 +6,7 @@ excerpt: >-
   This feature allows businesses to pull balance credits information, enhancing
   their revenue recognition experience.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
