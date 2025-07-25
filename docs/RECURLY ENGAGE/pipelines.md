@@ -4,7 +4,7 @@ excerpt: >-
   Overview of Recurly Engage Pipelines for lifecycle staging and behavior-based
   user segmentation.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
