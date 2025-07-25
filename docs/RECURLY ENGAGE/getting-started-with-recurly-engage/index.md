@@ -4,7 +4,7 @@ excerpt: >-
   Short descriptions and direct links to the core Recurly Engage setup and
   management guides for quick navigationion.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
