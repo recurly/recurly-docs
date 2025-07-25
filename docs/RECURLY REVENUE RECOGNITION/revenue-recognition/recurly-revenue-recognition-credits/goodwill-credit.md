@@ -5,7 +5,7 @@ excerpt: >-
   Recognition. This feature allows businesses to bring credit information
   directly into revenue recognition.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
