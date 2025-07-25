@@ -5,7 +5,7 @@ excerpt: >-
   solution. Streamline financial operations, ensure ASC 606, IFRS 15/16, and
   more compliance, and gain real-time revenue insights.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
