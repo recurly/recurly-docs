@@ -4,7 +4,7 @@ excerpt: >-
   Overview of the Preview Tool (Live Now) in Recurly Engage for visual editing
   and validation of prompts, segments, and trackers directly on your website.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
