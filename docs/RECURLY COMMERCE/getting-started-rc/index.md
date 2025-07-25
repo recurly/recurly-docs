@@ -4,7 +4,7 @@ excerpt: >-
   A quick guide to begin your journey with Recurly Commerce, linking to setup
   and migration resources.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
