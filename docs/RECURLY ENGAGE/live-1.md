@@ -4,7 +4,7 @@ excerpt: >-
   Guide for the Live view in Recurly Engage, which provides near-real-time
   monitoring of prompt interactions and errors.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
