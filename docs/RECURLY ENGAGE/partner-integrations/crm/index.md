@@ -4,7 +4,7 @@ excerpt: >-
   High-level overview of all CRM and engagement connectors available in Recurly
   Engage.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
