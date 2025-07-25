@@ -38,7 +38,7 @@ Stripe Payment Elements lets you build a fully branded checkout UI using Stripeâ
 
 <Image align="center" className="border" border={true} width="300px" src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" />
 
-Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/third-party-checkout#/using-recurlyjs-and-stripe-elements).
+Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/third-party-checkout#/).
 
 ## Supported payment methods
 
