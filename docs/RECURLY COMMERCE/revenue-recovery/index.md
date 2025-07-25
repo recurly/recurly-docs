@@ -4,7 +4,7 @@ excerpt: >-
   A unified suite of tools to maximize involuntary revenue recovery and reduce
   churn for Shopify merchants.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
