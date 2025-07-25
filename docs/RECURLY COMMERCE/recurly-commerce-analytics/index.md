@@ -4,7 +4,7 @@ excerpt: >-
   Explore the full suite of analytics in Recurly Commerce—track performance,
   drill into cohorts, forecast growth, and export detailed data.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
