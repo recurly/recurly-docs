@@ -2,7 +2,7 @@
 title: Recurly Revenue Recognition Legacy
 excerpt: Learn about our legacy solution for revenue recognition.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
