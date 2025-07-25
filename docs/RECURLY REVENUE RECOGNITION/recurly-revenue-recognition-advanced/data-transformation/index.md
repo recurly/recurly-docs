@@ -4,7 +4,7 @@ excerpt: >-
   Recurly Revenue Recognition Advanced: Transforming data for accurate financial
   reporting.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
