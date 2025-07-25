@@ -10,7 +10,11 @@ metadata:
 ---
 # Overview
 
-#### Prerequisites & Limitations
+### Required plan
+
+This feature or setting is available to all customers on any Recurly subscription plan.
+
+### Prerequisites & Limitations
 
 * Line items can be named freely but should avoid special characters unless confirmed with your payment gateway.
 * Invoices only display the **first 500 line items** in the Admin Console, Hosted Invoice, and PDF views.
