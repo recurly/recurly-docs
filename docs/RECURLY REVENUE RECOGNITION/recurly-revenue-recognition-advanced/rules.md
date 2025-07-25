@@ -5,7 +5,7 @@ excerpt: >-
   Recognition Advanced features and rules management, ensuring accuracy and
   compliance.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
