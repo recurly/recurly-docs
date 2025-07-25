@@ -4,7 +4,7 @@ excerpt: >-
   Overview and how-to for multi-step Guides in Recurly Engage, including
   wizards, surveys, journeys, and triggered flows.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
