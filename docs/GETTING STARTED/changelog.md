@@ -50,6 +50,186 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        Aug 3
+      </td>
+
+      <td>
+        **MasterCard Account Updater**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 31
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our [SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/) and [WorldPay gateway](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview) documentation after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Adyen Gateway | Third Party Checkout**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We are adding support for Direct Debit payment methods into our Adyen Web Components solution for Third Party Checkout. New payment method availability includes: ACH, SEPA, iDeal, Bancontact (renewals require SEPA), and BACS. For more information, please read our [Third Party Checkout](https://docs.recurly.com/recurly-subscriptions/update/docs/adyen-web-components#/) and [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        We are enabling support for Giact for NACHA Verification on the Adyen platform. For more information about [NACHA compliance](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/), you can read our dedicated documentation. If you are using Giact on [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/), read through our documentation on how to enable the feature.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Recurly.js | Recurly Engage**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Introducing an automated integration between Recurly Subscription Management (RSM) and Recurly Engage! Current customers can take advantage of the Recurly Engage SDK within Recurly.js in all environments where Recurly.js is used including Checkout, and Hosted Account Management pages. See our dedicated documentation for more information about [Recurly Engage](https://docs.recurly.com/recurly-subscriptions/docs/recurly-engage-integration#/).
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Commerce Hub Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added support for Level 2 data processing. This includes purchase order number and tax details.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Added support for sending Line Items to Adyen. Review best practices when sending line items in our dedicated documentation. For more information, please see our [Adyen gateway](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) and [Line Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items#/) documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to decline handling when 3DS authentication is not completed by the consumer.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to decline handling when the Merchant ID on file is invalid at the gateway level.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Cybersource Gateway**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updates to decline handling when the processor selected is 'Barclays' or 'Barclays2' in gateway configuration.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Jul 18
       </td>
 
