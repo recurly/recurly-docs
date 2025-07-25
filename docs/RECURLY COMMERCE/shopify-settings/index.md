@@ -4,7 +4,7 @@ excerpt: >-
   A quick guide to managing your subscription orders, refunds, discounts,
   shipping, and tagging directly within Shopify.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
