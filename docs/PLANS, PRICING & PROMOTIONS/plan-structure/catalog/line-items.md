@@ -14,11 +14,29 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Prerequisites & Limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Line items can be named freely but should avoid special characters unless confirmed with your payment gateway.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Invoices only display the <strong>first 500 line items</strong> in the Admin Console, Hosted Invoice, and PDF views.
+        </p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Full line item details (beyond 500) must be accessed via the <a className="text-blue-500! dark:text-blue-300!" href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* Line items can be named freely but should avoid special characters unless confirmed with your payment gateway.
-* Invoices only display the **first 500 line items** in the Admin Console, Hosted Invoice, and PDF views.
-* Full line item details (beyond 500) must be accessed via the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 ## Definition
 
