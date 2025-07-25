@@ -67,10 +67,12 @@ Each invoice line item includes the following columns:
 
 To access line items beyond the first 500, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
 
-### Description field guidance
+### Description and Naming field guidance
 
-* Avoid generic descriptions like "Charge" or "Item 1"—these may disqualify transactions from proper reporting or customer understanding.
-* The **Description** is shown on:
+* Avoid generic item names and descriptions like "Charge" or "Item 1"—these will disqualify transactions from proper regulatory compliance or customer understanding. The recommendation is to explicitly name the item that is being purchased. Instead of a single line item named 'Fruits', offer three items named 'Apple', 'Orange', and 'Banana'.
+* Avoid item names that are similar or exactly the name of your business name. If you are a Fruit Shop, do not name items 'Fruit Items', or provide item descriptions such as 'Fruit Shop Items' or 'Fruit Products'.
+* Avoid item names or descriptions that are single characters or are all special characters.
+* The **Description** is displayed on:
 
   * Subscriber invoices
   * [Hosted Account Management Pages](https://docs.recurly.com/docs/hosted-pages)
