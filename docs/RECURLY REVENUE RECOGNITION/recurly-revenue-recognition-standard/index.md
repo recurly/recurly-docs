@@ -6,7 +6,7 @@ excerpt: >-
   compliance, and gain deep insights through comprehensive reports, all within
   Recurly's intuitive subscription management application.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
