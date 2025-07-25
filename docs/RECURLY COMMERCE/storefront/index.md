@@ -4,7 +4,7 @@ excerpt: >-
   High-level navigation for all Recurly Commerce storefront resources, including
   setup, customization, and API reference.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
