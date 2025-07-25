@@ -5,7 +5,7 @@ excerpt: >-
   Recognition credits, including goodwill, on-account, and prepayment credits.
   Keep track of credits as they impact your revenue recognition.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
