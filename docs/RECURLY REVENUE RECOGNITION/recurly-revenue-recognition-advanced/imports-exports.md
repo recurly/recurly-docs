@@ -2,7 +2,7 @@
 title: Imports & exports
 excerpt: Effortlessly Manage Your Data with Recurly's Import/Export Tool.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
