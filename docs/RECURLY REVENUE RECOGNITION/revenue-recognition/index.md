@@ -5,7 +5,7 @@ excerpt: >-
   and IFRS-15 compliance. Automate revenue processes, gain insights with
   advanced analytics, and integrate seamlessly with your existing systems.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
