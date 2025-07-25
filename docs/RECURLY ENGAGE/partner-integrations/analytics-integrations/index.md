@@ -2,7 +2,7 @@
 title: Analytics integrations
 excerpt: High-level overview of all analytics integrations available in Recurly Engage.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
