@@ -5,7 +5,7 @@ excerpt: >-
   feature allows businesses to pull reports for the "on-account credit",
   encouraging loyalty programs implementation.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
