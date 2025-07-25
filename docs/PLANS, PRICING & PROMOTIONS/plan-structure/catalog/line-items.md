@@ -50,32 +50,35 @@ Line items are individual charges or components listed on an invoice, each repre
 
 ## Key details
 
-### Invoice line item table columns
+### Invoice line items
 
-Each invoice line item includes the following columns:
+Every invoice line item displays these columns:
 
 * **Date**
 * **Description**
 * **Quantity**
 * **Price**
-* **Discount** (if applicable)
+* **Discount** (when applied)
 * **Subtotal**
-* **Tax** (if applicable, including rate)
-* **Total** (only shown if tax is applicable)
+* **Tax** (including rate, when applicable)
+* **Total** (only shown if tax is applied)
 
-> **Note:** Invoices displayed in the Admin Console, Hosted Invoice, and PDF will truncate after the first 500 line items. Subtotal, tax, and total will still reflect the **sum of all line items**, including those not displayed.
+> **Note:** Invoices in the Admin Console, the Hosted Invoice page, and PDF format will show only the first 500 line items. However, the **Subtotal**, **Tax**, and **Total** always reflect the full set of line items, even those beyond the first 500.
+>
+> To download all line items, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
 
-To access line items beyond the first 500, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
+***
 
-### Description and Naming field guidance
+### Description and naming guidelines
 
-* Avoid generic item names and descriptions like "Charge" or "Item 1"—these will disqualify transactions from proper regulatory compliance or customer understanding. The recommendation is to explicitly name the item that is being purchased. Instead of a single line item named 'Fruits', offer three items named 'Apple', 'Orange', and 'Banana'.
-* Avoid item names that are similar or exactly the name of your business name. If you are a Fruit Shop, do not name items 'Fruit Items', or provide item descriptions such as 'Fruit Shop Items' or 'Fruit Products'.
-* Avoid item names or descriptions that are single characters or are all special characters.
-* The **Description** is displayed on:
+* **Be specific.** Use clear, descriptive names rather than generic labels like “Item 1” or “Charge.”
+* **Match the product.** If you sell fruit, list “Apple,” “Orange,” and “Banana” rather than a single line called “Fruits.”
+* **Avoid business names.** Don’t repeat your company name in item names or descriptions (e.g., “Fruit Shop Items”).
+* **Skip single-character or symbol-only names.** These can confuse customers and run afoul of compliance rules.
+* **Where descriptions appear:**
 
   * Subscriber invoices
-  * [Hosted Account Management Pages](https://docs.recurly.com/docs/hosted-pages)
+  * Hosted Account Management pages
   * Hosted Invoice PDFs
-* **Limit**: 255 characters
-* **Tip**: Always validate special characters with your gateway provider, as some may impose restrictions.
+* **Character limit:** Descriptions must be 255 characters or fewer.
+* **Tip:** Check with your payment gateway about any restrictions on special characters.
