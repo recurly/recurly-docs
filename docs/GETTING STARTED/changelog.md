@@ -230,6 +230,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Sagepay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updates to query encryption logic to enhance security.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Jul 18
       </td>
 
