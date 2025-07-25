@@ -4,7 +4,7 @@ excerpt: >-
   Recurly access management: Tailored user privileges for secure financial
   operations.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
