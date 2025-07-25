@@ -4,7 +4,7 @@ excerpt: >-
   Explore Recurly's Revenue Workbench: a centralized hub for comprehensive
   contract management and insights.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
