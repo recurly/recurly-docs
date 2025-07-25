@@ -4,7 +4,7 @@ excerpt: >-
   Overview of the Prompts management section in Recurly Engage, covering prompt
   lifecycle configuration from creation through experimentation.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
