@@ -4,7 +4,7 @@ excerpt: >-
   How to create and manage user segments in Recurly Engage for targeted prompt
   delivery.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
