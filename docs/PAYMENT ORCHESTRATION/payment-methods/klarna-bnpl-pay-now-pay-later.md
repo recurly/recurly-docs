@@ -18,17 +18,18 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Prerequisites & supported gateways
 
 * Recurly currently supports Klarna BNPL, Pay Now, and Pay Later transactions through Stripe, via Payment Elements (Third Party Checkout).
+* Your business must be B2C in order to accept Klarna payments (e.g. you are selling your goods and services to a consumer).
 
 ### Limitations
 
 * The Klarna Recurring feature is available exclusively for merchants enrolled in the Stripe Klarna Recurring BETA, using Stripe via Payment Elements.
-* Klarna BNPL is not available for monthly subscriptions.
+* Klarna BNPL is not available for monthly subscriptions and is only supported for subscriptions longer than 2 months. Refer to the table below for available payment options and consumer countries.
 
 # Definition
 
-Klarna is a global payment solutions provider offering flexible payment options at checkout, popular for its buy now, pay later (BNPL) service. It allows customers to split purchases into installments, pay in 30 days, or pay in full, offering a variety of options for managing online shopping costs.
+Klarna is a global payment method popular for its buy now, pay later (BNPL) service and other flexible payment options. It allows customers to split purchases into 3 or 4 installments, pay in 30 days, or pay in full, offering a variety of interest-free options for managing online shopping costs.
 
-Presently, Klarna is only supported on Stripe.
+Klarna is liable for consumer credit risk.
 
 # Checkout flow
 
@@ -51,8 +52,11 @@ Once approved, Stripe immediately makes the full order amount (minus fees) avail
 Depending on the subscription or transaction type, customers can be presented with three options:
 
 * **Pay in Full (Pay Now):** Immediate capture using Klarna as a “wallet” payment method with the instrument stored in the customer’s Klarna account.
-* **Pay Later:** Full payment collected within a specified timeframe (e.g., 30 days), using the Klarna payment method on file.
+  * Available on all subscription lengths.
+* **Pay Later:** Deferred payment option where the customer pays the full order amount on a set day of the week or month, bundled together with any other Pay Later purchases — with no interest or fees when paid on time.
+  * Available on all subscription lengths.
 * **Pay in Installments (Pay in 3 or 4):** Splits the purchase into 3 or 4 installments; merchants receive full funds upfront.
+  * Only available for subscriptions greater than 2 months (quarterly, annual, etc.)
 
 ### Merchant Initiated / Off-Session Payment Options
 
@@ -66,11 +70,11 @@ Stripe / Klarna handle refunds for partially corrected
 
 Stripe Elements dynamically presents Klarna options based on customer location and transaction currency, as different regions have varying rules around Pay Later and BNPL. For example, Pay Later isn’t supported in Montana, New Mexico, or Hawaii, and Pay in Installments isn’t supported in New Mexico or Hawaii. For the latest restrictions, refer to Stripe’s documentation: <a href="https://docs.stripe.com/payments/klarna#payment-options" target="_blank">Klarna payments | Stripe Documentation</a>.
 
-### Klarna prohibited businesses and ethics messaging
+### Klarna prohibited businesses and Ethics messaging
 
 Klarna maintains a list of prohibited and restricted business categories: <a href="https://docs.klarna.com/resources/legal-and-compliance/policies-and-term-of-service/prohibited-and-restricted-businesses/" target="_blank">Klarna Docs – Prohibited and restricted businesses</a>.
 
-Use Stripe’s Messaging Element to surface ethical considerations and payment method details: <a href="https://docs.stripe.com/payments/payment-method-messaging" target="_blank">Payment Method Messaging Element | Stripe Documentation</a>.
+Boost conversion by using Stripe’s Messaging Element to let buyers know that Klarna is available ahead of checking out. Stripe handles displaying relevant payment options in a legally and brand compliant way: <a href="https://docs.stripe.com/payments/payment-method-messaging" target="_blank">Payment Method Messaging Element | Stripe Documentation</a>.
 
 For advertising guidelines, see: <a href="https://docs.klarna.com/resources/legal-and-compliance/more-solutions-guidelines/ad-policies-for-klarna-advertisers/" target="_blank">Ad policies for Klarna advertisers</a>.
 
