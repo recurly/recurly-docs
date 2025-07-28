@@ -154,6 +154,16 @@ This is essential as it determines how transactions are handled between Recurly,
 * Click on **Download Key** to create a new Key. If you are asked for a password, this will be your Merchant ID.
 * Copy the new key generated *before* leaving the page. You will need this key to connect CyberSource with Recurly.
 
+> 📘 P12 requirements on Cybersource
+>
+> As part of the gateway's continuous Security Enhancements, they are planning to upgrade the SOAP API Authentication to P12 Authentication. Cybersource will no longer support username and password-based authentication for integrations that use the SOAP toolkit key.
+>
+> You are required to remove username and password-based authentication from your SOAP toolkit integration, and transition to certificate-based authentication, by these dates:
+>
+> Sandbox environment: \*\* September 1, 2025\*\*
+>
+> Production environment:  **September 15, 2025**
+
 ### Step 3: Generate your P12 Certificate File and Password
 
 * Log into your business center account, and navigate to **Payment Configuration → Key Management** and select **Generate Key** and choose “REST Certificate” within your CyberSource dashboard.
