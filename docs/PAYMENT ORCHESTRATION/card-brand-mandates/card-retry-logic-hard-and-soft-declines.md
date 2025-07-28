@@ -62,7 +62,7 @@ The system will cease attempts in other scenarios as well:
 
 Mastercard Merchant Advice Codes (MACs) are alphanumeric codes used by Mastercard to provide merchants with more specific details about why a transaction was declined. They go beyond basic decline codes, offering guidance on whether to retry the transaction, when to retry, or why the card was declined in the first place.
 
-See below for Recurly's behavior when each individual code is received on supported gateways. Please note, not all gateways return this detail, and some gateways require the MAC code detail response to be enabled, such as WorldPay.
+See below for Recurly's behavior when each individual code is received on supported gateways. Please note, not all gateways return this detail, and some gateways require the MAC code detail response to be enabled at the gateway, such as WorldPay.
 
 | Advice Code | Description                                | Behavior                                                                                                         |
 | :---------- | :----------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
