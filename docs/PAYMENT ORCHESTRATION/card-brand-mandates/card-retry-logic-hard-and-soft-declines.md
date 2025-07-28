@@ -62,22 +62,23 @@ The system will cease attempts in other scenarios as well:
 
 &#x20;
 
-| Advice Code | Description                          | Behavior                                                                              |
-| :---------- | :----------------------------------- | :------------------------------------------------------------------------------------ |
-| 01          | New Account Information Available    | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
-| 02          | Try Again Later                      | Invoice queued for retry                                                              |
-| 03          | Do Not Try Again                     | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
-| 04          | Token Not Supported                  | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
-| 21          | Do Not Honor                         | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
-| 22          | Transaction Not Allowed for Merchant | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
-| 24          | Retry after 1 Hour                   | Invoice queued for retry, delayed by 1 hour                                           |
-| 25          | Retry after 1 day                    | Invoice queued for retry, delayed by 1 day                                            |
-| 26          | Retry after 2 Days                   | Invoice queued for retry, delayed by 2 days                                           |
-| 27          | Retry after 4 days                   | Invoice queued for retry, delayed by 4 days                                           |
-| 28          | Retry after 6 days                   | Invoice queued for retry, delayed by 6 days                                           |
-| 29          | Retry after 8 days                   | Invoice queued for retry, delayed by 8 days                                           |
-| 30          | Retry after 10 days                  | Invoice queued for retry, delayed by 10 days                                          |
-| 40          | Non-reloadable Prepaid Card          | Invoice will not retry unless Billing Info is updated manually.                       |
-| 41          | Non-reloadable Prepaid Card          | Invoice will not retry unless Billing Info is updated manually.                       |
-| 42          | Sanctions Related                    | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
-| 99          | Do Not Retry                         | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
+| Advice Code | Description                                | Behavior                                                                                                         |
+| :---------- | :----------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| 01          | New Account Information Available          | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
+| 02          | Try Again Later                            | Invoice queued for retry                                                                                         |
+| 03          | Do Not Try Again                           | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
+| 04          | Token Not Supported                        | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
+| 21          | Do Not Honor                               | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
+| 22          | Transaction Not Allowed for Merchant       | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
+| 24          | Retry after 1 Hour                         | Invoice queued for retry, delayed by 1 hour                                                                      |
+| 25          | Retry after 1 day                          | Invoice queued for retry, delayed by 1 day                                                                       |
+| 26          | Retry after 2 Days                         | Invoice queued for retry, delayed by 2 days                                                                      |
+| 27          | Retry after 4 days                         | Invoice queued for retry, delayed by 4 days                                                                      |
+| 28          | Retry after 6 days                         | Invoice queued for retry, delayed by 6 days                                                                      |
+| 29          | Retry after 8 days                         | Invoice queued for retry, delayed by 8 days                                                                      |
+| 30          | Retry after 10 days                        | Invoice queued for retry, delayed by 10 days                                                                     |
+| 40          | Non-reloadable Prepaid Card                | Can occur on approvals or declines. Invoice will not retry unless Billing Info is updated manually.              |
+| 41          | Non-reloadable Prepaid Card                | Can occur on approvals or declines. Invoice will not retry unless Billing Info is updated manually.              |
+| 42          | Sanctions Related                          | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
+| 43          | Sanctions related. Multi-use virtual card. | Can occur on approvals or declines. If declined, Invoice will not retry unless Billing Info is updated manually. |
+| 99          | Do Not Retry                               | Invoice will not retry unless Billing Info is updated manually or via Account Updater                            |
