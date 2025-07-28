@@ -14,21 +14,21 @@ next:
 ---
 # What is a Decline and why is it hard or soft?
 
-Credit Card payment declines can occur for a variety of reasons, and include anything from insufficient funds to stolen card fraud. The card networks, like Visa and MasterCard, have rules and reasons behind each type of decline, and some of these reasons are listed as 'soft' and 'hard'. 
+Credit Card payment declines can occur for a variety of reasons, and include anything from insufficient funds to stolen card fraud. The card networks, like Visa and MasterCard, have rules and reasons behind each type of decline, and some of these reasons are listed as 'soft' and 'hard'.
 
 # What is a "soft" decline
 
-A "soft" decline means that the decline reason is "fixable", and that the payment can be reattempted at a later time. For example, Insufficient Funds is a fixable problem when it comes to a credit or debit card payment. The consumer would need to make funds available in order to complete the payment. 
+A "soft" decline means that the decline reason is "fixable", and that the payment can be reattempted at a later time. For example, Insufficient Funds is a fixable problem when it comes to a credit or debit card payment. The consumer would need to make funds available in order to complete the payment.
 
 Once funds are available, the payment can be reattempted without causing compliance issues with the credit card networks. However, there are limits to retrying a payment in the recurring space. See below for more information on retry limitations.
 
 # What is a "hard" decline
 
-A "hard" decline means that the decline reason is *not* "fixable", and that the payment should *never* be retried. These reasons can include fraud, account closures, or even the consumer blocking a merchant from re-authorizing their card. 
+A "hard" decline means that the decline reason is not generally "fixable", and that the payment should *never* be retried. These reasons can include fraud, account closures, or even the consumer blocking a merchant from re-authorizing their card.
 
 Visa has a list of decline reasons and categorizes them in levels. For example, a Category 1 Visa Decline Code is always going to be a hard decline and should not be retried.
 
-MasterCard uses a different method: Merchant Advice Codes. Merchant Advice Codes, or MAC for short, are also a list of MasterCard specific codes that should not be retried for recurring or one-time transactions. 
+MasterCard uses a different method: Merchant Advice Codes. Merchant Advice Codes, or MAC for short, are also a list of MasterCard specific codes that should not be retried for recurring or one-time transactions.
 
 Recurly works hard to maintain compliance for our customers to avoid fines associated with retry abuse and card network retry limitations.
 
@@ -38,20 +38,46 @@ Only "soft" declines (Insufficient Funds, as an example) can be retried *and* on
 
 ## Visa Retry Limitations
 
-Visa allows re-attempts against *soft* declined transactions up to **15 times within a 30 day period**. In other words, after an initial decline, Recurly can and will retry the transaction up to 15 times before ceasing attempts. 
+Visa allows re-attempts against *soft* declined transactions up to **15 times within a 30 day period**. In other words, after an initial decline, Recurly can and will retry the transaction up to 15 times before ceasing attempts.
 
 ## MasterCard Retry Limitations
 
-MasterCard is a bit more complicated. MasterCard instructs merchants not to retry a transaction for 24 hours when the payment has resulted in 10 declines. After that 24 hour period, retries can resume *but* must abide by these restrictions: 
+MasterCard is a bit more complicated. MasterCard instructs merchants not to retry a transaction for 24 hours when the payment has resulted in 10 declines. After that 24 hour period, retries can resume *but* must abide by these restrictions:
 
-* No more than 35 failed attempts on the same card / same merchant in a 30 day period 
+* No more than 35 failed attempts on the same card / same merchant in a 30 day period
 * No more than 7 retries in a single day
 
 ## General Retry Limitations
 
-The system will cease attempts in other scenarios as well: 
+The system will cease attempts in other scenarios as well:
 
 * A retry results in an approval. No further retries will be attempted after an approval.
 * A hard decline is returned by the gateway. If the response from the gateway *changes* from a soft to a hard decline (for example, if the customer closed their account within the retry period), then Recurly will no longer attempt a payment against this card.
 * The Invoice is manually closed or the subscription expired. In this case, Recurly will no longer attempt to recover payments.
 * The billing information is updated. If the card being retried is updated, we will no longer attempt to recover funds from the previous payment method.
+
+## Network Advice Codes
+
+### MasterCard Merchant Advice Codes
+
+&#x20;
+
+| Advice Code | Description                          | Behavior                                                                              |
+| :---------- | :----------------------------------- | :------------------------------------------------------------------------------------ |
+| 01          | New Account Information Available    | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
+| 02          | Try Again Later                      | Invoice queued for retry                                                              |
+| 03          | Do Not Try Again                     | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
+| 04          | Token Not Supported                  | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
+| 21          | Do Not Honor                         | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
+| 22          | Transaction Not Allowed for Merchant | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
+| 24          | Retry after 1 Hour                   | Invoice queued for retry, delayed by 1 hour                                           |
+| 25          | Retry after 1 day                    | Invoice queued for retry, delayed by 1 day                                            |
+| 26          | Retry after 2 Days                   | Invoice queued for retry, delayed by 2 days                                           |
+| 27          | Retry after 4 days                   | Invoice queued for retry, delayed by 4 days                                           |
+| 28          | Retry after 6 days                   | Invoice queued for retry, delayed by 6 days                                           |
+| 29          | Retry after 8 days                   | Invoice queued for retry, delayed by 8 days                                           |
+| 30          | Retry after 10 days                  | Invoice queued for retry, delayed by 10 days                                          |
+| 40          | Non-reloadable Prepaid Card          | Invoice will not retry unless Billing Info is updated manually.                       |
+| 41          | Non-reloadable Prepaid Card          | Invoice will not retry unless Billing Info is updated manually.                       |
+| 42          | Sanctions Related                    | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
+| 99          | Do Not Retry                         | Invoice will not retry unless Billing Info is updated manually or via Account Updater |
