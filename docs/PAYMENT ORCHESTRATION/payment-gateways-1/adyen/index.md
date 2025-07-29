@@ -140,7 +140,7 @@ If one or more of these fields is absent, Recurly will omit the entire shipping 
 
 ### Adyen ACH
 
-Recurly provides an integrated solution for ACH transactions through Adyen. Delve into the nuances of ACH payments by visiting our dedicated ACH Bank Payments <a href="https://docs.recurly.com/docs/check-gateway-ach" target="_blank">documentation</a>.
+Recurly provides an integrated solution for ACH transactions through Adyen. Delve into the nuances of ACH payments by visiting our dedicated ACH Bank Payments <a href="https://docs.recurly.com/recurly-subscriptions/docs/ach-bank-payments#" target="_blank">documentation</a>.
 
 #### Adyen configuration
 
