@@ -151,6 +151,9 @@ Moreover, ensure these specific configurations are correctly set to effectively 
 1. **Set up** the "report credentials". A step-by-step guide is available [here](https://docs.recurly.com/docs/adyen#setting-up-report-credentials-for-ach-and-sepa).
 2. Actively **subscribe** to the Payment Accounting Report. A detailed process can be found [here](https://docs.recurly.com/docs/adyen#subscribing-to-the-payment-accounting-report-for-ach).
 3. Within Adyen, **adjust** settings to "immediate capture" for transactions.
+4. Within Adyen, ensure you have **enabled** **GIACT** for NACHA Verification, and then **enable** within your Adyen configuration on Recurly.
+
+<Image align="center" src="https://files.readme.io/f49c57dc1b942f81b5044b7538580f260cb01da28a09a610e597a359ddfef0c7-Screenshot_2025-07-29_at_4.11.19_PM.png" />
 
 > **Note**: First/Last name on Checks should not be sent as dashes ( - - ) as this will cause immediate declines.
 
