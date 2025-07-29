@@ -38,7 +38,9 @@ The ACH (Automated Clearing House) payment method is designed for merchants in t
 
 #### Payment authorization
 
-ACH is regulated by an organization called <a href="https://www.nacha.org/" target="_blank" rel="noopener noreferrer">NACHA</a>. Customers must provide authorization to Merchants for all payments and any future recurring collections. The type of information a Merchant must collect must include:
+ACH is regulated by an organization called <a href="https://www.nacha.org/" target="_blank" rel="noopener noreferrer">NACHA</a>. They govern the type of authorization Merchants must obtain from customers alongside ACH regulations around bank account verification. For more information on Bank Account verification features, please see our dedicated documentation on [NACHA bank verifications](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/).
+
+Customers must provide authorization to Merchants for all payments and any future recurring collections. The type of information a Merchant must collect must include:
 
 * Date of purchase
 * Amount of purchase
