@@ -5,7 +5,7 @@ excerpt: >-
   feature, ensuring seamless ACH transactions and reduced instances of bad
   accounts or fraudulent transactions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
