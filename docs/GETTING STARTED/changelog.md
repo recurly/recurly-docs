@@ -610,7 +610,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our [Direct Debit retries](https://docs.recurly.com/update/docs/sepa-retries#/) documentation for more information.
+        Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our [Direct Debit retries](https://docs.recurly.com/docs/sepa-retries#/) documentation for more information.
       </td>
     </tr>
   </tbody>
