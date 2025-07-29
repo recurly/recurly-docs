@@ -4,6 +4,7 @@
 - custom-gateway-routing-configuration
 - gateway-failover
 - fraud-management
+- nacha-verification
 - payment-descriptors
 - currency-support-by-gateway
 - test-re
@@ -11,4 +12,3 @@
 - chargeback-management-for-cards
 - how-to-test-your-gateway
 - gateway-token-support
-- nacha-verification
