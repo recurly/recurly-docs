@@ -50,7 +50,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
-        Aug 3
+        Aug 1
       </td>
 
       <td>
@@ -81,6 +81,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our [SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/) and [WorldPay gateway](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview) documentation after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jul 29
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of gateway-level events so that we will cancel a subscriptions when a mandate is revoked after a successful transaction. Additionally, paused subscriptions events will also pause the subscription on the Recurly platform until a consumer-driven change (cancellation or resume) is received.
       </td>
     </tr>
 
