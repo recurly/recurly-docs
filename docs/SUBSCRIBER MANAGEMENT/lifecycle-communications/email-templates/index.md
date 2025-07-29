@@ -101,7 +101,7 @@ This new option resides on the [Site Settings page](https://docs.recurly.com/doc
 * **Mastercard Reminder**: Sent before the billing date to Mastercard users, including necessary subscription cancellation instructions in line with Mastercard policies.
 * **SEPA Renewal Reminder**: Tailored for users utilizing the SEPA payment method.
 * **BACS Renewal Reminder**: Tailored for users utilizing the BACS payment method.
-* **Credit Card Expired**: Alerts users with an expired credit card before the next bill date.
+* **Credit Card Expired**: Sends a single reminder before a card’s expiration date ahead of the next billing cycle.
 * **Ramp Price Change**: Notifies users of an upcoming price change in their ramp pricing model subscription.
 
 > **Note:** These templates can be configured the days prior.
