@@ -4,7 +4,7 @@ excerpt: >-
   Learn how line items are displayed on invoices and how they impact totals,
   taxes, and hosted page displays.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
