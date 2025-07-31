@@ -218,6 +218,8 @@ Leveraging the WorldPay global gateway for your business involves a streamlined 
 3. **Enable Tarjeta Naranja if applicable**
    * Within your WorldPay gateway settings in Recurly, find and toggle on the option to accept payments through Tarjeta Naranja.
 4. **Enable SEPA if applicable**
+   1. Ensure you are adding your **Worldpay Mandate Prefix** and **Worldpay Merchant ID** as provided by WorldPay. These two fields are necessary for making sure your SEPA mandates are generated properly.
+   2. Ensure you have EUR currency enabled on your site, at WorldPay, and in the gateway configuration.
 5. **Establish commercial relationships**
    * Set up commercial relationships with both WorldPay and either Ebanx or dLocal. If necessary, contact [partnerships@recurly.com](mailto:partnerships@recurly.com) for introductions.
 
