@@ -58,7 +58,7 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 | Supported card brands           | Visa, Mastercard, American Express, Discover, JCB, Diner Club                                 |
 | Gateway specific 3DS2 supported | N/A                                                                                           |
 | Card on File Supported          | N/A                                                                                           |
-| Regions                         | United States, Australia, Canada, United Kingdom                                              |
+| Regions                         | United States, EMEA, Canada, United Kingdom/EU, APAC                                          |
 | Currencies                      | USD, AUD, CAD, CHF, CZK, DKK, EUR, MYR, GBP, HUF, JPY, NOK, NZD, PLN, SEK, SGD, TWD, and PHP. |
 
 ## Required PayPal Setup
