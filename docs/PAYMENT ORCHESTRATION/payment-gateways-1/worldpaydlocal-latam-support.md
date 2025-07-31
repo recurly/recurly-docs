@@ -199,11 +199,12 @@ Find additional guidance in the [technical documentation](https://developers.rec
 
 1. Navigate to the “Payment Gateways” section within your Recurly application. Select “Add Payment Gateway” and choose WorldPay as your gateway.
 2. Input your WorldPay *Merchant Code*, **XML** *Username*, and **XML** *Password*. Note: The Username and Password for this setup differ from your WorldPay account login credentials.
-3. If you are utilizing 3D Secure, input your Issuer ID, Unit ID, HMAC Key, and Challenge URL.
-4. Specify the currencies and card types you plan to accept.
-5. Optional: Designate which card types should undergo Zero Dollar Authorizations.
-6. Finalize your setup by clicking "Add Payment Gateway".
-7. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
+3. If you are accepting SEPA payments, input your WorldPay Mandate Prefix and Merchant ID. Ensure EUR is enabled.
+4. If you are utilizing 3D Secure, input your Issuer ID, Unit ID, HMAC Key, and Challenge URL.
+5. Specify the currencies and card types you plan to accept.
+6. Optional: Designate which card types should undergo Zero Dollar Authorizations.
+7. Finalize your setup by clicking "Add Payment Gateway".
+8. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
 
 # Enable gateway for global support
 
