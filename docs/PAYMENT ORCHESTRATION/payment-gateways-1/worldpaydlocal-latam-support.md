@@ -29,6 +29,9 @@ This payment gateway or setting is available to all customers on any Recurly sub
   * An active Recurly account with Argentine Peso (ARS) currency support
   * WorldPay payment gateway configured for ARS transactions.
   * A WorldPay merchant account optimized for handling ARS and capable of performing Zero Dollar Authorizations (ZDA).
+* For **SEPA** processing:
+  * An active Recurly account with Euros (EUR) currency support
+  * WorldPay payment gateway configured for SEPA / EUR and mandate tokenization support.
 
 ### Limitations
 
@@ -36,6 +39,8 @@ This payment gateway or setting is available to all customers on any Recurly sub
 * Transactions require the submission of a CUIT (tax ID) with each transaction in Argentina.
 * If you are using CUIT, CPF, or CNPJ tax types, you must specify the type via API, else send the tax ID without a`tax_identifier_type`.
 * Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
+* WorldPay SEPA does not support free-trial subscriptions or verification transactions.
+* WorldPay SEPA billing info updates must occur within the process of processing a transaction.
 * Check if your business is on Worldpay's list of [Prohibited Business types](http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm).
 
 > 🚧 Warning
@@ -50,7 +55,11 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 # Definition
 
-Expand your business globally and in the dynamic global e-commerce sector with Recurly's integration with WorldPay and Ebanx/dLocal. This solution offers a seamless way to navigate complex payment ecosystems, supporting local currencies, card brands, and distinct regional payment preferences. WorldPay facilitates international transactions with configurable merchant accounts, while WorldPay, via partnerships with Ebanx/dLocal, caters specifically to global markets, optimizing payment processes by accommodating local currencies like the Argentine Peso (ARS) and the widely recognized card brand, Tarjeta Naranja.
+Expand your business globally and in the dynamic global e-commerce sector with Recurly's integration with WorldPay. WorldPay x Recurly support Global payments processing including specialization in LATAM via Ebanx/dLocal. This solution offers a seamless way to navigate complex payment ecosystems, supporting local currencies, card brands, and distinct regional payment preferences.
+
+WorldPay facilitates international transactions with configurable merchant accounts, while WorldPay, via partnerships with Ebanx/dLocal, caters specifically to global markets, optimizing payment processes by accommodating local currencies like the Argentine Peso (ARS) and the widely recognized card brand, Tarjeta Naranja.
+
+Additionally, WorldPay x Recurly now support SEPA processing for direct debit subscriptions and transaction processing.
 
 For a global reach, WorldPay allows merchants to configure their accounts for international processing, including IP allowlisting, capture delay settings, and callback configurations for seamless transaction synchronization. Recurly's integration ensures merchants can support a broad range of currencies and card types, including the application of Zero Dollar Authorizations if needed. With WorldPay's asynchronous processing for voids and refunds, and Recurly's commitment to submitting comprehensive transaction information, businesses are equipped to offer a robust and adaptable payment processing experience worldwide and specifically in the global market.
 
@@ -100,7 +109,7 @@ Supported Regions:
       </td>
 
       <td>
-        Credit cards, local card brands including Tarjeta Naranja, Apple Pay and Google Pay
+        Credit cards, local card brands including Tarjeta Naranja, Apple Pay and Google Pay, SEPA
       </td>
     </tr>
 
@@ -140,7 +149,7 @@ Supported Regions:
       </td>
 
       <td>
-        Global with a focus on global, including Argentina, Brazil, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Mexico, Ecuador, Panama, Paraguay, Uruguay, Honduras, and Peru.
+        Global with a focus on global, including the UK/EU, Argentina, Brazil, Chile, Colombia, Costa Rica, El Salvador, Guatemala, Mexico, Ecuador, Panama, Paraguay, Uruguay, Honduras, and Peru.
       </td>
     </tr>
 
@@ -152,6 +161,7 @@ Supported Regions:
       <td>
         * *ARS*\* (Visa, MC, Amex, Discover, JCB, Diner's Club, *Tarjeta Naranja*)
         * *Else*\*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
+        * *EUR*\* for SEPA processing.
       </td>
     </tr>
   </tbody>
@@ -159,7 +169,7 @@ Supported Regions:
 
 # Credentials
 
-Worldpay Payment Gateway (WPG) requires you to enter XML credentials obtained from Worldpay.
+Worldpay Payment Gateway (WPG) requires you to enter XML credentials obtained from Worldpay. For SEPA, you will also need to provide additional information for SEPA mandate creation.
 
 **Billing address**
 
@@ -207,7 +217,8 @@ Leveraging the WorldPay global gateway for your business involves a streamlined 
    * Select and configure WorldPay as your payment gateway, ensuring it's set up to accept your supported currencies.
 3. **Enable Tarjeta Naranja if applicable**
    * Within your WorldPay gateway settings in Recurly, find and toggle on the option to accept payments through Tarjeta Naranja.
-4. **Establish commercial relationships**
+4. **Enable SEPA if applicable**
+5. **Establish commercial relationships**
    * Set up commercial relationships with both WorldPay and either Ebanx or dLocal. If necessary, contact [partnerships@recurly.com](mailto:partnerships@recurly.com) for introductions.
 
 ### Settings on the Gateway Side
