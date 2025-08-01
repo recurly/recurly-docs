@@ -85,6 +85,7 @@ SEPA and ACH are currently available through various Recurly integration points,
 ### Required information
 
 * Please note that GoCardless mandates the provision of both the first and last names of the account holder when processing transactions.
+* Mandate creation on GoCardless requires sending the consumer IP address in your payload or mandate creation will fail.
 
 This API documentation is designed to provide clear and concise information about the capabilities of different API versions and the requirements set by GoCardless. Always ensure compliance with GoCardless requirements and stay updated with the latest API documentation for smooth and secure operations.
 
