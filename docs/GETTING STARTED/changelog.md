@@ -24,6 +24,14 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## 2025
 
+## August
+
+<br />
+
+| Release Date | **Feature**                    | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                     |
+| :----------- | :----------------------------- | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aug 1        | **MasterCard Account Updater** | Medium               | Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information. |
+
 ## July
 
 <Table align={["left","left","left","left"]}>
@@ -48,24 +56,6 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   </thead>
 
   <tbody>
-    <tr>
-      <td>
-        Aug 1
-      </td>
-
-      <td>
-        **MasterCard Account Updater**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information.
-      </td>
-    </tr>
-
     <tr>
       <td>
         Jul 31
