@@ -26,11 +26,10 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## August
 
-<br />
-
 | Release Date | **Feature**                    | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                     |
 | :----------- | :----------------------------- | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Aug 1        | **MasterCard Account Updater** | Medium               | Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information. |
+| Aug 1        | **Ebanx Gateway**              | Medium               | Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 10% tolerance for amount updates.                                                                                                                                                                                                              |
 
 ## July
 
