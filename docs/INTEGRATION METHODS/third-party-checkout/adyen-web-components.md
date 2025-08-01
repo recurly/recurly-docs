@@ -42,5 +42,5 @@ Read more in our [Developer Hub guide](https://docs.recurly.com/recurly-subscrip
 
 ## Supported payment methods
 
-* **Cards**, **Apple Pay**, **Google Pay**, **Cash App Pay** (via Adyen Web Components).
+* **Cards**, **Apple Pay**, **Google Pay**, **Cash App Pay**, **ACH**, **SEPA**, **BACS**, **iDeal**, and **Bancontact** transactions (via Adyen Web Components). Please note Bancontact requires usage of SEPA for renewals.
 * Note: Not all Adyen methods are supported—contact Recurly support for availability.
