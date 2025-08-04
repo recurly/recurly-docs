@@ -70,7 +70,7 @@ Furthermore, custom fields and related objects will be added to native Salesforc
 
 The data model below illustrates the synchronization of Recurly data with Salesforce. Detailed setup instructions will be provided once the feature is activated on your Recurly account.
 
-<Image align="center" border={true} caption="Recurly for Salesforce data model" src="https://files.readme.io/22248f2-_img-2021-04-salesforce-opportunity-chart-1995__2260.png" width="60% " />
+<Image align="center" border={true} caption="Recurly for Salesforce data model" src="https://files.readme.io/f1785e30b47d302ea16736b00f3d73ff288463bb58f6dc29f01117eb7b82df08-image.png" width="50% " />
 
 ## Synchronization insights
 
