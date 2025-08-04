@@ -109,7 +109,7 @@ Supported Regions:
       </td>
 
       <td>
-        Credit cards, local card brands including Tarjeta Naranja, Apple Pay and Google Pay, SEPA
+        Credit cards, local card brands including Tarjeta Naranja, Apple Pay, Google Pay, and SEPA
       </td>
     </tr>
 
