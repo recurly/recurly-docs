@@ -64,6 +64,16 @@ Currently, UPI AutoCollect is not supported on Recurly Checkout or Hosted Paymen
 * Subscription Plans: Simplify UPI AutoPay transactions by merging the Recurly subscription platform with Ebanx.
 * Trial Subscriptions: Allow your customer to authorize their enrollment and enjoy a free trial before their first charge.
 
+### How are mandates set up?
+
+Since all UPI AutoPay transactions requires an associated mandate, the mandate data has information in it that should be known. Mandates include information such as the expiration date of the mandate, maximum amounts, and other important details.
+
+* **Mandate amounts** are dynamically generated based on three factors.
+  * Base Plan Amount (fixed plan amount or highest ramp price)
+  * Taxes, if any
+  * 10% tolerance in addition to the base plan + taxes
+* **Mandate expiration dates** will be generated based off the plan billing term end date + 2 years. If you have a rolling monthly billing term (such as: billing periods of **1** and auto-renew), then the mandate expiry will be your billing term plus 2 years to allow for pay as you go monthly plans. In the example, the mandate would last for 2 years and 1 month.
+
 ### Required Fields
 
 UPI AutoPay together require a minimum of fields to create a mandate for a recurring subscription. The minimum required fields to submit a UPI AutoPay transaction are as follows:
