@@ -29,7 +29,7 @@ Integrating Recurly with Ebanx enables merchants to leverage UPI payment methods
 
 **UPI (Unified Payments Interface)** is a real-time payment system in India that consolidates multiple bank accounts into a single mobile app. Users can pay using a **VPA (Virtual Payment Address)**—for example, `payer@bankname`—which masks their bank details for increased security.
 
-There are several apps that end-users / consumers to use that involves 'UPI' such as Google Pay, Amazon, Paytm, WhatsApp. They will all have their own specific 'handle' (the @bankname in a given VPA). You can read more about t[hird party UPI applications on the NPCI website](https://www.npci.org.in/what-we-do/upi/3rd-party-apps).
+There are several apps that end-users / consumers to use that involves 'UPI' such as Google Pay, Amazon, Paytm, WhatsApp. They will all have their own specific 'handle' (the @bankname in a given VPA). You can read more about [third party UPI applications on the NPCI website](https://www.npci.org.in/what-we-do/upi/3rd-party-apps).
 
 ### What is UPI AutoPay?
 
