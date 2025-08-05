@@ -44,7 +44,7 @@ Find exactly what you need, fast. The in-app conversational search feature puts 
 
 <Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/d6dc5be6516a837c3b27c8830bd9f14d21e0aac84d7ec9ea90b5f15a56d1de5c-api2.png" />
 
-Compass Assistant will also detect when you want to help from our Support team or you can always click *Chat with Support*.
+Compass Assistant will also detect when you want to help from our Support team or you can always click ***Chat with Support***.
 
 <Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" />
 
