@@ -8,13 +8,15 @@ hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Permissions
+### Prerequisites and limitations
 
-All users within a site that has the Compass Assistant feature flag enabled.
+All users must have permissions within a site that has the Compass Assistant feature flag enabled.
 
 # Definition
 
