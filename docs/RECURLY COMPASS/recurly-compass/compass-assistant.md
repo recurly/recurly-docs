@@ -20,7 +20,7 @@ All users within a site that has the Compass Assistant feature flag enabled.
 
 Find exactly what you need, fast. The in-app conversational search feature puts key Recurly resources at your fingertips.
 
-**🔎 Search across:**
+**Search across:**
 
 * Product Docs
 * Knowledge base articles
@@ -36,19 +36,17 @@ Find exactly what you need, fast. The in-app conversational search feature puts 
   * Items
   * Users
 
-<Image align="center" width="0% " src="https://files.readme.io/163118110f8fc273960531a202ddb272658dd60e33a0dbb75b83a9528e0a8d52-zeroState.png" />
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/ec5c613f3321ee803a665ac59bf4d0894e15cdd92cbbf28872bd1bb52a58e512-zeroState.png" />
 
-<Image align="center" width="50% " src="https://files.readme.io/ec5c613f3321ee803a665ac59bf4d0894e15cdd92cbbf28872bd1bb52a58e512-zeroState.png" />
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/c597ca729e37c5e28bb636e3e5bb7ab4b6c3859b5f496dd7fcdb68782ad565e8-example1.png" />
 
-<Image align="center" width="50% " src="https://files.readme.io/c597ca729e37c5e28bb636e3e5bb7ab4b6c3859b5f496dd7fcdb68782ad565e8-example1.png" />
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/c808731cbe8a6bee46429730ee41b90a359bbcb8aef86c850befa38b6ef3f048-api1.png" />
 
-<Image align="center" width="50% " src="https://files.readme.io/c808731cbe8a6bee46429730ee41b90a359bbcb8aef86c850befa38b6ef3f048-api1.png" />
-
-<Image align="center" width="50% " src="https://files.readme.io/d6dc5be6516a837c3b27c8830bd9f14d21e0aac84d7ec9ea90b5f15a56d1de5c-api2.png" />
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/d6dc5be6516a837c3b27c8830bd9f14d21e0aac84d7ec9ea90b5f15a56d1de5c-api2.png" />
 
 Compass Assistant will also detect when you want to help from our Support team or you can always click *Chat with Support*.
 
-<Image align="center" width="50% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" />
+<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" />
 
 # FAQs
 
