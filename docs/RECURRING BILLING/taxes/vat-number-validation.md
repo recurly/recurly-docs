@@ -121,9 +121,14 @@ To turn on tax ID validation for this location on your Recurly site, please cont
 
 ## Australia ABN validation
 
-Recurly maintains an [integration](https://abr.business.gov.au/) with the Australian Business Register (ABR) for tax ID number lookups with their government's business register for Australian Business Numbers (ABNs).
+Recurly maintains an [integration](https://abr.business.gov.au/) with the Australian Business Register (ABR) to look up Australian Business Numbers (ABNs). Our validation process checks two things:
 
-To turn on tax ID validation for this location on your Recurly site, please contact <a href="https://support.recurly.com/">Recurly support</a>.
+1. **ABN validity** – the number must be correctly formatted and active.
+2. **GST registration** – the business must be registered for GST.
+
+If either check fails, the ABN will be rejected and GST will **not** be applied on the invoice.
+
+To enable tax ID validation for Australia on your Recurly site, please contact <a href="https://support.recurly.com/">Recurly support</a>.
 
 ## Belarus UNP validation
 
