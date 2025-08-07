@@ -16,7 +16,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites and limitations
 
-All users must have permissions within a site that has the Compass Assistant feature flag enabled.
+All users must have permissions within a site that has the Compass Assistant Chat feature flag enabled.
 
 # Definition
 
