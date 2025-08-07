@@ -63,13 +63,13 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 
 ## Required PayPal Setup
 
-## Differences between eCheck and other PayPal transactions
+### Differences between eCheck and other PayPal transactions
 
 * Transactions funded by bank accounts function similarly to direct debits (such as ACH in the United States), requiring 3-6 days for funds to clear in a customer’s PayPal account. Similarly, if you process a refund directly from your bank account—especially when there's no balance in your PayPal account—it may also take 3-6 days (or longer) for the customer to see a credit.
 * During this waiting period, PayPal labels the transaction as "pending" until the involved banks finalize the transaction.
 * You must enable PayPal status update webhooks in your site developer settings to allow status updates to occur.
 
-## Bank account funded transactions in Recurly
+### Bank account funded transactions in Recurly
 
 * **Processing Status**:
   * Upon receiving and initiating a transaction request from Recurly, PayPal communicates a "pending" status back to Recurly. This status, visible in the Recurly App, exports, and API, simultaneously updates both the transaction and the related invoice to "processing."
@@ -260,3 +260,12 @@ Here's a sample scenario of status updates:
 * Be attentive to various status messages such as email confirmation requirements, application reviews, and any account restrictions.
 * If you encounter multiple alerts, address each one as the application progresses.
 * Existing PayPal Business account holders that support credit and debit cards might bypass these alerts.
+
+## Billing and Shipping Data
+
+If you are not passing billing information or shipping data to us directly, you can have Recurly consume data received from PayPal by enabling one or both of two feature flags:
+
+* Save PayPal billing address
+* Save PayPal shipping address
+
+Please work with support to enable these feature flags for your site.
