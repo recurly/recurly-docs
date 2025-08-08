@@ -55,6 +55,10 @@ Renowned for its payment processing services, [Authorize.net](https://docs.recur
 
 Check Commerce specializes in ACH payment processing to offer alternative payment solutions.
 
+### Commerce Hub
+
+Commerce Hub replaces Payeezy and First Data gateways and specializes in ecommerce and recurring transactions.
+
 ### Cybersource
 
 [Cybersource ](https://docs.recurly.com/docs/cybersource)is a complete payment management solutions provider ensuring safe and seamless transactions.
