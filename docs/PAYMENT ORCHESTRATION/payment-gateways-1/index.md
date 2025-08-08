@@ -57,7 +57,7 @@ Check Commerce specializes in ACH payment processing to offer alternative paymen
 
 ### Commerce Hub
 
-Commerce Hub replaces Payeezy and First Data gateways and specializes in ecommerce and recurring transactions.
+Commerce Hub replaces Payeezy and First Data gateways and specializes in ecommerce and recurring transactions for card and wallet payments (Apple / Google Pay).
 
 ### Cybersource
 
