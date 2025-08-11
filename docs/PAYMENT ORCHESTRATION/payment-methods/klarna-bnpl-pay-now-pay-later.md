@@ -60,9 +60,9 @@ Depending on the subscription or transaction type, customers can be presented wi
 
 ### Merchant Initiated / Off-Session Payment Options
 
-When a merchant is initiating a payment, such as a renewal, a force collection, or one-time invoice where the consumer is not directly in the checkout session, Klarna / Stripe only offer one default option:
+When a merchant is initiating a payment, such as a renewal, a force collection, or one-time invoice where the consumer is not directly in the checkout session, Klarna / Stripe's offerings are regional specific. Check their website for additional details:
 
-* **Pay in Full (Pay Now):** Immediate capture using Klarna as a “wallet” payment method with the instrument stored in the customer’s Klarna account.
+* [Stripe / Klarna Recurring Payment support](https://docs.stripe.com/payments/klarna#recurring-payment-support)
 
 Stripe / Klarna handle refunds for partially corrected
 
