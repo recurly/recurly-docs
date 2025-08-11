@@ -70,6 +70,26 @@ Account Updater runs on a publish/subscribe model for Mastercard®, Visa®, Amer
 
 Each of these events fires the **Update Billing Info** webhook.
 
+## Lifecycle Behavior
+
+### Pre-renewal for Subscriptions
+
+Account Updater runs pre-renewal on subscriptions with outdated information roughly 1 week before renewal date. In certain cases, we look ahead farther than 1 week in the case of cards that have long-running subscriptions, such as quarterly, bi-annual, or annual subscriptions. *Note:* This fetch capability is only supported on file-based Account Updater services, and does not apply to event-based services such as Amex CardRefresher and MasterCard ABU.
+
+### Dunning Behaviors
+
+**Post initial-decline**
+
+After a card declines, we will send cards, or query services (as available) for card updates to check for any missed updates pre-renewal. This is effective in the event of a timing issue pre-renewal or if the card was updated/changed after the initial data request. This is especially effective for MasterCard, who will return information in advice codes on when new information is available that could save a subscription from churning.
+
+**No Change Requeuing**
+
+In the event that a request for new card details is returned as 'No Change', 'No Response', 'Contact Cardholder', or 'No Match', we requeue data to see if there is any change in the status of a card during the dunning timeframes for a given invoice, especially if it is past due.
+
+We will keep requesting updates until dunning is completed and the invoice is failed/closed. If the consumer has other active subscriptions that are up for renewal, or past due, we will continue to query for updates.
+
+For certain cards, event-based Account Updater services will accept new billing info updates outside of these specific scenarios since Recurly does not control the timing on events received from third parties.
+
 # American Express® integration with Recurly
 
 Recurly’s American Express® Cardrefresher integration provides an automated solution to keep Amex card details up-to-date. By connecting to the Amex Account Updater (Card Refresher), Recurly ensures stored card details remain current, reducing payment failures. However, to use this service, you must have a direct American Express® merchant account and SE number. **OptBlue (gateway) SE numbers are not supported**—Recurly cannot process them.
