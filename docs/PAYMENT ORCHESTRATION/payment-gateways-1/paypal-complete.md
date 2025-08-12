@@ -65,7 +65,7 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 
 ### Features on PayPal
 
-* To receive billing and shipping address information from PayPal responses, you must have PayPal enable this for your PayPal business account. You can read more about this feature on their knowledgebase: [PayPal Knowledgebase](https://www.paypal.com/tc/cshelp/article/why-did-i-get-api-error-code-11601-ts2035).
+* To receive billing and shipping address information from PayPal responses, you must have PayPal enable this for your PayPal business account. You can read more about this feature on their knowledgebase: [PayPal Knowledgebase](https://www.paypal.com/tc/cshelp/article/why-did-i-get-api-error-code-11601-ts2035). Reach out to Recurly support to enable Shipping and Billing Address feature flags once this is complete.
 
 ### Differences between eCheck and other PayPal transactions
 
