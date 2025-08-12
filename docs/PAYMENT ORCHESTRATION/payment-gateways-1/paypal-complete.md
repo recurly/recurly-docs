@@ -30,7 +30,7 @@ Please be aware of the following limitations of PayPal Complete:
 * Existing Billing Agreement IDs will still function if migrating subscriptions from PayPal Business Account to a PayPal Complete gateway.
 * PayPal Complete is only supported in certain regions.
 * JCB is only available to Canadian Merchants.\*
-* PayPal only returns Address details to pre-vetted Merchants. If you need this information, please escalate with PayPal to enable this for your account.
+* PayPal only returns Address details to pre-vetted Merchants. If you need this information, please escalate with PayPal to enable this for your account. See **Address Features on PayPal** below for more information.
 * Check [PayPal's list of prohibited activities/businesses ](https://www.paypal.com/us/legalhub/acceptableuse-full?locale.x=en_US)to see if you qualify for a PayPal complete account.
 
 # Definition
