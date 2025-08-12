@@ -26,17 +26,252 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## August
 
-| Release Date | **Feature**                    | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| :----------- | :----------------------------- | :------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Aug 12       | **Adyen gateway**              | Medium               | Minor updates to [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal) to avoid an error for return customer signups.                                                                                                                                                                                                                                                                                                                       |
-| Aug 12       | **Ebanx gateway**              | Low                  | Minor updates to Pause events on UPI AutoPay mandates. Consumer-driven mandate pauses will be automatically paused for 1 year. Subscription pause lengths can be updated by a merchant after confirming length of pause with the consumer.                                                                                                                                                                                                                            |
-| Aug 12       | **Ebanx gateway**              | Low                  | Minor updates to trial handling to avoid a 1 INR charge.                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Aug 12       | **Adyen gateway**              | Medium               | Updated handling of [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach) Reporting queries to avoid improper invoice status updates.                                                                                                                                                                                                                                                                                                           |
-| Aug 12       | **V3 Client Libraries**        | Medium               | Updated to support returning enhanced Google Pay indicators when a DPAN is in use.                                                                                                                                                                                                                                                                                                                                                                                    |
-| Aug 11       | **Ebanx gateway**              | High                 | Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.                                                                                                                    |
-| Aug 5        | **Compass Assistant**          | Low                  | We're excited to announce the launch of Compass Assistant, now available across all active subdomains! This new conversational chatbot provides instant access to information from our product documentation and knowledge base, and can even furnish helpful code snippets for our APIs. You'll also notice that AI Answers will now direct you to Compass Assistant for a more comprehensive experience; should a merchant wish to opt-out, please contact Support. |
-| Aug 1        | **MasterCard Account Updater** | Medium               | Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information.                                                                                                                        |
-| Aug 1        | **Ebanx Gateway**              | Medium               | Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 10% tolerance for amount updates.                                                                                                                                                                                                                                                                                                                                     |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Release Date
+      </th>
+
+      <th>
+        **Feature**
+      </th>
+
+      <th>
+        **Potential Impact**
+      </th>
+
+      <th>
+        **Description / Overview**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Adyen gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Minor updates to [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal) to avoid an error for return customer signups.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to Pause events on UPI AutoPay mandates. Consumer-driven mandate pauses will be automatically paused for 1 year. Subscription pause lengths can be updated by a merchant after confirming length of pause with the consumer.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to trial handling to avoid a 1 INR charge.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Adyen gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach) Reporting queries to avoid improper invoice status updates.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **V3 Client Libraries**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated to support returning enhanced Google Pay indicators when a DPAN is in use.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Added scroll-to-top behavior when opening the Configuration of Default Rules section.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 11
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 5
+      </td>
+
+      <td>
+        **Compass Assistant**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        We're excited to announce the launch of Compass Assistant, now available across all active subdomains! This new conversational chatbot provides instant access to information from our product documentation and knowledge base, and can even furnish helpful code snippets for our APIs. You'll also notice that AI Answers will now direct you to Compass Assistant for a more comprehensive experience; should a merchant wish to opt-out, please contact Support.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 5
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Revrec Enhancements in Recurly and RevRec-
+        Removed Auto Period Close Delay for Advanced Merchants in Revenue Settings.
+        Removed Auto Period Close Delay option from the Self-Service Onboarding Wizard for RA-enabled merchants.
+        Fixed datepicker in the RevRec enablement dialog to display correctly in front of the dialog (CSS update only).
+        Updated RevRec Enablement Alert to display the correct text and buttons based on user permissions and site configurations.
+        Updated Data Sync Finished alert logic to only display after `enabled_at` is set in the group memberships table, ensuring it appears only when the site is activated.
+        Added validation for VC Rules to ensure "From Date" is less than or equal to "To Date."
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 1
+      </td>
+
+      <td>
+        **MasterCard Account Updater**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 1
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updates - removed open period logic from infra/revrecStart to prevent the period from reverting to the initial period.
+        Fixed bundle rule addition issue when only one bundle rule exists under a parent item by grouping the count by bundle ID.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 1
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 10% tolerance for amount updates.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## July
 
