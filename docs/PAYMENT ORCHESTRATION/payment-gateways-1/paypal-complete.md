@@ -30,6 +30,7 @@ Please be aware of the following limitations of PayPal Complete:
 * Existing Billing Agreement IDs will still function if migrating subscriptions from PayPal Business Account to a PayPal Complete gateway.
 * PayPal Complete is only supported in certain regions.
 * JCB is only available to Canadian Merchants.\*
+* PayPal only returns Address details to pre-vetted Merchants. If you need this information, please escalate with PayPal to enable this for your account.
 * Check [PayPal's list of prohibited activities/businesses ](https://www.paypal.com/us/legalhub/acceptableuse-full?locale.x=en_US)to see if you qualify for a PayPal complete account.
 
 # Definition
@@ -63,7 +64,7 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 
 ## Required PayPal Setup
 
-### Features on PayPal
+### Address Features on PayPal
 
 * To receive billing and shipping address information from PayPal responses, you must have PayPal enable this for your PayPal business account. You can read more about this feature on their knowledgebase: [PayPal Knowledgebase](https://www.paypal.com/tc/cshelp/article/why-did-i-get-api-error-code-11601-ts2035). Reach out to Recurly support to enable Shipping and Billing Address feature flags once this is complete.
 
