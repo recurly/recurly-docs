@@ -63,6 +63,10 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 
 ## Required PayPal Setup
 
+### Features on PayPal
+
+* To receive billing and shipping address information from PayPal responses, you must have PayPal enable this for your PayPal business account. You can read more about this feature on their knowledgebase: [PayPal Knowledgebase](https://www.paypal.com/tc/cshelp/article/why-did-i-get-api-error-code-11601-ts2035).
+
 ### Differences between eCheck and other PayPal transactions
 
 * Transactions funded by bank accounts function similarly to direct debits (such as ACH in the United States), requiring 3-6 days for funds to clear in a customer’s PayPal account. Similarly, if you process a refund directly from your bank account—especially when there's no balance in your PayPal account—it may also take 3-6 days (or longer) for the customer to see a credit.
