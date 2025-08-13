@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to fulfill subscription orders directly in Shopify when using
   Recurly Commerce—no extra setup required.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
