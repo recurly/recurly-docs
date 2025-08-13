@@ -5,7 +5,7 @@ excerpt: >-
   in Recurly Commerce, including products, purchase modes, discounts, add-ons,
   gifting, shipping, and plan archiving.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
