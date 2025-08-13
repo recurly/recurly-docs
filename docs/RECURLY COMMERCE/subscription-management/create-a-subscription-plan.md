@@ -5,7 +5,7 @@ excerpt: >-
   product selection and purchasing options to discounts, gifting, and shipping
   rules—so you can launch offers in minutes.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
