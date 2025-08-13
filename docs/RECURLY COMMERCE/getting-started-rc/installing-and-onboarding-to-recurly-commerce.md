@@ -5,7 +5,7 @@ excerpt: >-
   Shopify store—covering app installation, plan selection, subscription
   creation, storefront setup, and communications configuration.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
