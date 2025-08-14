@@ -4,7 +4,7 @@ excerpt: >-
   Learn how to create and apply Shopify discount codes to your Recurly Commerce
   subscriptions—no extra setup in Recurly needed.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
