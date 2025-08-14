@@ -2,7 +2,7 @@
 title: Customer portal management
 excerpt: Configure subscriber permissions and styling in the Customer Portal.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
