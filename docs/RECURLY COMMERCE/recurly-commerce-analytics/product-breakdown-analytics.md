@@ -4,7 +4,7 @@ excerpt: >-
   Drill into your subscription performance by product variant, viewing order
   counts, units, and revenue at a glance.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
