@@ -4,7 +4,7 @@ excerpt: >-
   Configure your retry schedules, notifications, and recovery actions to turn
   payment failures into successful renewals.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
