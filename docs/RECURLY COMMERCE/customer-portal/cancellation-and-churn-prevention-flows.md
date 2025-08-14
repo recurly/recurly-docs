@@ -2,7 +2,7 @@
 title: Cancellation and churn prevention flows
 excerpt: Configure cancellation & churn prevention flows.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
