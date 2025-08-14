@@ -50,6 +50,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        Aug 19
+      </td>
+
+      <td>
+        **Kount Fraud Management**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated to account code handling to avoid errors in rare cases. To learn more about [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/), visit our dedicated documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Aug 12
       </td>
 
