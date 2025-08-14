@@ -4,7 +4,7 @@ excerpt: >-
   Enable Postscript to use Recurly Commerce subscriber events and tags for
   powerful SMS automations—no code required.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
