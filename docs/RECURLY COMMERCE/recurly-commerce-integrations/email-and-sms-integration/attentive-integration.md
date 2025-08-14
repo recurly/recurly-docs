@@ -1,7 +1,7 @@
 ---
 title: Attentive integration
 deprecated: false
-hidden: false
+hidden: true
 link:
   new_tab: true
   url: https://docs.attentive.com/pages/authentication/
