@@ -4,7 +4,7 @@ excerpt: >-
   Anticipate your subscription business’s future with 12-month forecasts for
   revenue, orders, and SKU sales—powered by your live subscription data.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
