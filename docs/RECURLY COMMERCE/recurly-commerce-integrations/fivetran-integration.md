@@ -4,7 +4,7 @@ excerpt: >-
   Automate the flow of your Recurly Commerce subscription data into your data
   warehouse with Fivetran’s turnkey ELT pipelines—no custom scripts required.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
