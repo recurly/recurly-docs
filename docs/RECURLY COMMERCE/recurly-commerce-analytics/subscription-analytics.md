@@ -4,7 +4,7 @@ excerpt: >-
   Track your subscription volume over time and benchmark current trends against
   past performance with intuitive period-over-period comparisons.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
