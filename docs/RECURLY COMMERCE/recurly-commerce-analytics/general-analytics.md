@@ -5,7 +5,7 @@ excerpt: >-
   subscription business performance, with flexible date ranges, comparison
   periods, and detailed executive reports.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
