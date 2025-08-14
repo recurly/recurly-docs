@@ -4,7 +4,7 @@ excerpt: >-
   With Recurly Commerce Automations, unlock unbounded configurability to set up
   automated flows to surprise and delight your subscribers.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
