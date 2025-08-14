@@ -4,7 +4,7 @@ excerpt: >-
   Automatically label and filter subscription orders in Shopify using Recurly
   Commerce’s built-in tagging system.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
