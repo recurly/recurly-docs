@@ -68,6 +68,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        Aug 19
+      </td>
+
+      <td>
+        **Paypal**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        If PayPal is the primary payment method for a subscription and the PayPal billing agreement is cancelled by the subscriber, Recurly will now cancel that related subscription.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Aug 12
       </td>
 
