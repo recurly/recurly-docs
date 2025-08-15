@@ -176,6 +176,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Anomaly Insights**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise. [Anomaly Insights](https://docs.recurly.com/recurly-subscriptionsdocs/recurly-compass#anomaly-insights) documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Aug 11
       </td>
 
