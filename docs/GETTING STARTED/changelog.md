@@ -1360,7 +1360,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable R.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. You can view more information in [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete) after release.
+        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable Recurly.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. See our [Recurly.js PayPal documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete) for more information about our PayPal Complete integration, and the [Recurly.js browser support documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support#/) for more information about the environments we support with Recurly.js.
       </td>
     </tr>
 
@@ -1378,7 +1378,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated the V3 [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info) and [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv) endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/). This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
+        Updated the V3 [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info) and [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv) endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/). This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
       </td>
     </tr>
 
