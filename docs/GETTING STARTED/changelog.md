@@ -1360,7 +1360,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable R.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. You can view more information in [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support) after release.
+        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable R.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. You can view more information in [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete) after release.
       </td>
     </tr>
 
