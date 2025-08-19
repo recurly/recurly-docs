@@ -50,7 +50,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
-        Aug 19
+        Aug 20
       </td>
 
       <td>
@@ -68,7 +68,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
-        Aug 19
+        Aug 20
       </td>
 
       <td>
