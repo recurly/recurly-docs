@@ -86,6 +86,29 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        Aug 19
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        \*Added display of the Initial Financial Open Period to the Revenue Settings page.\\
+        \*Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status.
+        \*Fixed overlap issue where the Recurly Resources button on the Home page covered the wizard when opened.
+        \*Auto Period Close and Period Close Checklist job refactoring
+        \*Fix auto period lag days to count complete N days
+        \*Api to purge client and client data
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Aug 12
       </td>
 
