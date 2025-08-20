@@ -80,7 +80,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        If PayPal is the primary payment method for a subscription and the PayPal billing agreement is cancelled by the subscriber, Recurly will now cancel that related subscription.
+        If PayPal (the digital wallet) is the primary payment method for a subscription and the PayPal subscription agreement is cancelled by the subscriber within their PayPal app or otherwise outside of Recurly, Recurly will now cancel that related subscription.
       </td>
     </tr>
 
