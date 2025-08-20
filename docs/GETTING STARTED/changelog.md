@@ -72,7 +72,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        **PayPal Complete**
+        **PayPal Complete gateway**
       </td>
 
       <td>
