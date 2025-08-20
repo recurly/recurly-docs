@@ -26,7 +26,9 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * Modifying descriptors is not possible via the API outside of sending in a unique invoice description.
 
-* Modifying your descriptor Prefix is not available.
+* Modifying your descriptor Prefix is not available on **Stripe**. This must be done at the Gateway.
+
+* **Braintree** prefixes must be 3, 7, or 12 characters, and may be modified from your set DBA.
 
 * If utilizing **Stripe**, your merchant prefix is configured directly within Stripe and cannot be modified via descriptors within Recurly. Only the suffix (Plan Name or Invoice Description) is sent to Stripe.
 
@@ -47,7 +49,7 @@ Descriptors are typically limited to 22 characters, and often look like the belo
 On Recurly, we handle descriptors in the following manner:
 
 * For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: AcmeInc\*Gold Plan
-* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc*Charge or AcmeInc*One-Time Payment
+* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc\_Charge or AcmeInc\_One-Time Payment
 
 ### Supported payment methods & transactions
 
@@ -76,7 +78,7 @@ This section outlines how dynamic descriptors are created for your site(s) using
 ### Best practices for descriptors
 
 * Ensure you have your known Business Name either in Site Settings (Company Name) or a DBA filled in. We will use this information to create descriptors for your supported gateways. Ensure this company name and/or DBA is kept up to date as your business evolves.
-* When naming plans in Recurly, ensure the plan names are something a customer will recognize when viewing their bank statement.
-* When creating one-time Invoices, ensure you add an Invoice Description that a customer will recognize, whether for the purchase or service you are providing to them. Order numbers are great for transparency.
+* When naming plans in Recurly, ensure the plan names are something a customer will recognize, especially within 22 characters, when viewing their bank statement. In other words, ensure the first few words of your Plan Name is recognizable to a consumer.
+* When creating one-time Invoices, ensure you add an Invoice Description that a customer will recognize, whether for the purchase or service you are providing to them. Order numbers are great for transparency. In other words, ensure the first few words of your Invoice Description is recognizable to a consumer within a Bank's typical 22 character limitation.
 * If you do not supply an Invoice Description on a one-time charge, we will supply the word 'Charge' to fill out the necessary information for a descriptor where supported.
 * Ensure you have dynamic descriptors enabled at your given gateway. Some gateways require a setting or flag to be enabled to pass along the data Recurly provides.
