@@ -104,6 +104,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
         \*Auto Period Close and Period Close Checklist job refactoring
         \*Fix auto period lag days to count complete N days
         \*Api to purge client and client data
+        \*Hide RevRec settings for Setup Fees when no setup fee exists
       </td>
     </tr>
 
