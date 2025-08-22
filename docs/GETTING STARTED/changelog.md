@@ -50,6 +50,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        Aug 26
+      </td>
+
+      <td>
+        **PayPal Complete gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/), visit our dedicated documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Aug 20
       </td>
 
