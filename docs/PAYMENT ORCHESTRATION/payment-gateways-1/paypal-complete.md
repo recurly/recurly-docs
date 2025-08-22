@@ -29,7 +29,7 @@ Please be aware of the following limitations of PayPal Complete:
 * Subscriptions initiated on PayPal Complete cannot migrate to PayPal Business due to the PPC’s vaulting features differing from the PP Business’s Billing Agreement IDs.
 * Existing Billing Agreement IDs will still function if migrating subscriptions from PayPal Business Account to a PayPal Complete gateway.
 * PayPal Complete is only supported in certain regions.
-* JCB is only available to Canadian Merchants.\*
+* JCB is only available to Canadian Merchants.*
 * PayPal only returns Address details to pre-vetted Merchants. If you need this information, please escalate with PayPal to enable this for your account. See **Address Features on PayPal** below for more information.
 * Check [PayPal's list of prohibited activities/businesses ](https://www.paypal.com/us/legalhub/acceptableuse-full?locale.x=en_US)to see if you qualify for a PayPal complete account.
 
@@ -80,7 +80,7 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
   * Upon receiving and initiating a transaction request from Recurly, PayPal communicates a "pending" status back to Recurly. This status, visible in the Recurly App, exports, and API, simultaneously updates both the transaction and the related invoice to "processing."
   * Concurrently, Recurly dispatches a "processing payment" webhook to any designated endpoints and, if enabled, sends a "payment processing" email to the customer.
 * **Status Updates**:
-  * As PayPal updates transaction statuses—like successful payment reception—it informs Recurly. Depending on the update, Recurly then adjusts the transaction and invoice statuses, marking them as "successful" and "paid" respectively.
+  * As PayPal updates transaction statuses—like successful payment reception—it informs Recurly. Depending on the update, Recurly then adjusts the transaction and invoice statuses, marking them as "successful" and "paid" respectively. Ensure you have proper PayPal webhooks enabled to ensure proper status updates.
   * Simultaneously, Recurly sends out relevant webhooks, like a successful payment or an overdue invoice, and if activated, emails the customer with either a payment confirmation or a decline notice.
 
 ### PayPal eChecks with Recurly's dunning and retries
@@ -274,3 +274,17 @@ If you are not passing billing information or shipping data to us directly, you 
 * Save PayPal shipping address
 
 Please work with support to enable these feature flags for your site.
+
+## Webhook Configuration
+
+Recurly listens to several webhook events including the below list. Ensure they are enabled in your account. It is advised to enable all webhooks in the event we add new functionality in the future.
+
+* `VAULT.PAYMENT-TOKEN.DELETED` -- this will ensure billing information is disabled and subscriptions are cancelled appropriately if a consumer cancels their billing agreement from within the PayPal app.
+* During Onboarding, PayPal will send us several notices depending on the state of your Business Account with PayPal: 
+  * `CUSTOMER.MERCHANT-INTEGRATION.PRODUCT-SUBSCRIPTION-UPDATED`-- Occurs when products available to a merchant within their PayPal account have been updated by PayPal.
+  * `CUSTOMER.MERCHANT-INTEGRATION.SELLER-EMAIL-CONFIRMED`-- Occurs when you verify your seller email with PayPay directly.
+  * `CUSTOMER.MERCHANT-INTEGRATION.CAPABILITY-UPDATE`-- Occurs when a capability on your PayPal account changes, such as the ability to process.
+* During the regular cycle of processing transactions, several webhooks may update transaction and invoice status appropriately: 
+  * `PAYMENT.CAPTURE.REFUNDED`- Occurs when a scheduled Refund is updated to approved.
+  * `PAYMENT.CAPTURE.COMPLETED`- Occurs when a scheduled payment is updated to approved.
+  * `PAYMENT.CAPTURE.DECLINED`- Occurs when a scheduled payment is updated to declined.
