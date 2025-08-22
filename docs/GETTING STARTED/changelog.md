@@ -62,7 +62,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/), visit our dedicated documentation.
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
+
+        [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
+
+        , visit our dedicated documentation.
       </td>
     </tr>
 
@@ -80,7 +84,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/), please see our dedicated documentation. Our [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/) will be updated after release with new support details.
+        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on 
+
+        [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
+
+        , please see our dedicated documentation. Our 
+
+        [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/)
+
+         will be updated after release with new support details.
       </td>
     </tr>
 
@@ -98,7 +110,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Minor update to segment data CSV exports to better handle special characters in titles. <Anchor label="Learn more about converting subscriber engagement to revenue with Recurly Engage." target="_blank" href="https://docs.recurly.com/recurly-engage/">Learn more about converting subscriber engagement to revenue with Recurly Engage.</Anchor>
+        Minor update to segment data CSV exports to better handle special characters in titles. Learn more about converting subscriber engagement to revenue with 
+
+        [Recurly Engage](https://docs.recurly.com/recurly-engage/)
+
+        .
       </td>
     </tr>
 
@@ -134,7 +150,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated to account code handling to avoid errors in rare cases. To learn more about [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/), visit our dedicated documentation.
+        Updated to account code handling to avoid errors in rare cases. To learn more about 
+
+        [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/)
+
+        , visit our dedicated documentation.
       </td>
     </tr>
 
@@ -170,13 +190,13 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        \*Added display of the Initial Financial Open Period to the Revenue Settings page.\\
-        \*Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status.
-        \*Fixed overlap issue where the Recurly Resources button on the Home page covered the wizard when opened.
-        \*Auto Period Close and Period Close Checklist job refactoring
-        \*Fix auto period lag days to count complete N days
-        \*Api to purge client and client data
-        \*Hide RevRec settings for Setup Fees when no setup fee exists
+        *Added display of the Initial Financial Open Period to the Revenue Settings page.\
+        *Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status.
+        *Fixed overlap issue where the Recurly Resources button on the Home page covered the wizard when opened.
+        *Auto Period Close and Period Close Checklist job refactoring
+        *Fix auto period lag days to count complete N days
+        *Api to purge client and client data
+        *Hide RevRec settings for Setup Fees when no setup fee exists
       </td>
     </tr>
 
@@ -194,7 +214,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Minor updates to [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal) to avoid an error for return customer signups.
+        Minor updates to 
+
+        [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal)
+
+         to avoid an error for return customer signups.
       </td>
     </tr>
 
@@ -248,7 +272,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated handling of [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach) Reporting queries to avoid improper invoice status updates.
+        Updated handling of 
+
+        [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach)
+
+         Reporting queries to avoid improper invoice status updates.
       </td>
     </tr>
 
@@ -302,7 +330,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise. [Anomaly Insights](https://docs.recurly.com/recurly-subscriptionsdocs/recurly-compass#anomaly-insights) documentation.
+        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise. 
+
+        [Anomaly Insights](https://docs.recurly.com/recurly-subscriptionsdocs/recurly-compass#anomaly-insights)
+
+         documentation.
       </td>
     </tr>
 
@@ -320,7 +352,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
+        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our 
+
+        [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/)
+
+         documentation.
       </td>
     </tr>
 
@@ -380,7 +416,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information.
+        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated 
+
+        [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/)
+
+         for more information.
       </td>
     </tr>
 
@@ -461,7 +501,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our [SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/) and [WorldPay gateway](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview) documentation after release.
+        WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our 
+
+        [SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/)
+
+         and 
+
+        [WorldPay gateway](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview)
+
+         documentation after release.
       </td>
     </tr>
 
@@ -497,7 +545,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are adding support for Direct Debit payment methods into our Adyen Web Components solution for Third Party Checkout. New payment method availability includes: ACH, SEPA, iDeal, Bancontact (renewals require SEPA), and BACS. For more information, please read our [Third Party Checkout](https://docs.recurly.com/recurly-subscriptions/update/docs/adyen-web-components#/) and [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) documentation.
+        We are adding support for Direct Debit payment methods into our Adyen Web Components solution for Third Party Checkout. New payment method availability includes: ACH, SEPA, iDeal, Bancontact (renewals require SEPA), and BACS. For more information, please read our 
+
+        [Third Party Checkout](https://docs.recurly.com/recurly-subscriptions/update/docs/adyen-web-components#/)
+
+         and 
+
+        [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
+
+         documentation.
       </td>
     </tr>
 
@@ -515,7 +571,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are enabling support for Giact for NACHA Verification on the Adyen platform. For more information about [NACHA compliance](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/), you can read our dedicated documentation. If you are using Giact on [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/), read through our documentation on how to enable the feature.
+        We are enabling support for Giact for NACHA Verification on the Adyen platform. For more information about 
+
+        [NACHA compliance](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/)
+
+        , you can read our dedicated documentation. If you are using Giact on 
+
+        [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
+
+        , read through our documentation on how to enable the feature.
       </td>
     </tr>
 
@@ -533,7 +597,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introducing an automated integration between Recurly Subscription Management (RSM) and Recurly Engage! Current customers can take advantage of the Recurly Engage SDK within Recurly.js in all environments where Recurly.js is used including Checkout, and Hosted Account Management pages. See our dedicated documentation for more information about [Recurly Engage](https://docs.recurly.com/recurly-subscriptions/docs/recurly-engage-integration#/).
+        Introducing an automated integration between Recurly Subscription Management (RSM) and Recurly Engage! Current customers can take advantage of the Recurly Engage SDK within Recurly.js in all environments where Recurly.js is used including Checkout, and Hosted Account Management pages. See our dedicated documentation for more information about 
+
+        [Recurly Engage](https://docs.recurly.com/recurly-subscriptions/docs/recurly-engage-integration#/)
+
+        .
       </td>
     </tr>
 
@@ -569,7 +637,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added support for sending Line Items to Adyen. Review best practices when sending line items in our dedicated documentation. For more information, please see our [Adyen gateway](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) and [Line Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items#/) documentation.
+        Added support for sending Line Items to Adyen. Review best practices when sending line items in our dedicated documentation. For more information, please see our 
+
+        [Adyen gateway](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
+
+         and 
+
+        [Line Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items#/)
+
+         documentation.
       </td>
     </tr>
 
@@ -919,7 +995,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support for sending the expected arrival date of a physically shipped item to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
+        Enabled support for sending the expected arrival date of a physically shipped item to Adyen in API transactions. This is also in relation to Revenue Protect availability on 
+
+        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
+
+        . See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
@@ -937,7 +1017,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support for customer acquisition dates (account age) to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
+        Enabled support for customer acquisition dates (account age) to Adyen in API transactions. This is also in relation to Revenue Protect availability on 
+
+        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
+
+        . See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
@@ -991,7 +1075,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added support for Fiserv's newest gateway offering, Commerce Hub. See [documentation on Commerce Hub](https://docs.recurly.com/docs/commerce-hub#/) for more information on the new platform.
+        Added support for Fiserv's newest gateway offering, Commerce Hub. See 
+
+        [documentation on Commerce Hub](https://docs.recurly.com/docs/commerce-hub#/)
+
+         for more information on the new platform.
       </td>
     </tr>
 
@@ -1009,7 +1097,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our [Direct Debit retries](https://docs.recurly.com/docs/sepa-retries#/) documentation for more information.
+        Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our 
+
+        [Direct Debit retries](https://docs.recurly.com/docs/sepa-retries#/)
+
+         documentation for more information.
       </td>
     </tr>
   </tbody>
@@ -1204,7 +1296,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support for sending the Shipping Method "name" to Adyen in API transactions. This is also in relation to [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
+        Enabled support for sending the Shipping Method "name" to Adyen in API transactions. This is also in relation to 
+
+        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
+
+        . See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
@@ -1222,7 +1318,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support via V3 API to pass in Adyen's Revenue Protect Risk Profile IDs on API driven transactions. Documentation will be added to the V3 API upon release. Read more about [Recurly's Revenue Protect support ](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)in our Adyen documentation.
+        Enabled support via V3 API to pass in Adyen's Revenue Protect Risk Profile IDs on API driven transactions. Documentation will be added to the V3 API upon release. Read more about 
+
+        [Recurly's Revenue Protect support ](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
+
+        in our Adyen documentation.
       </td>
     </tr>
 
@@ -1330,7 +1430,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled Late failure / Chargeback Invoice behavior for Adyen ACH transactions and invoices. In the event an ACH transaction returns after initial processing and the status is *not* "Insufficient Funds", a chargeback Invoice will be created and recorded. You can read more about this feature and how to enable it in our [Chargebacks / late failures for Direct Debit](https://docs.recurly.com/docs/chargebacks-for-direct-debit#/) documentation.
+        Enabled Late failure / Chargeback Invoice behavior for Adyen ACH transactions and invoices. In the event an ACH transaction returns after initial processing and the status is _not_ "Insufficient Funds", a chargeback Invoice will be created and recorded. You can read more about this feature and how to enable it in our 
+
+        [Chargebacks / late failures for Direct Debit](https://docs.recurly.com/docs/chargebacks-for-direct-debit#/)
+
+         documentation.
       </td>
     </tr>
 
@@ -1384,7 +1488,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added "cc\_payment\_id" field which is the unique identifier for a credit card.
+        Added "cc_payment_id" field which is the unique identifier for a credit card.
       </td>
     </tr>
 
@@ -1402,7 +1506,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added "cc\_payment\_id" field which is the unique identifier for a credit card.
+        Added "cc_payment_id" field which is the unique identifier for a credit card.
       </td>
     </tr>
 
@@ -1456,7 +1560,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable Recurly.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. See our [Recurly.js PayPal documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete) for more information about our PayPal Complete integration, and the [Recurly.js browser support documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support#/) for more information about the environments we support with Recurly.js.
+        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable Recurly.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. See our 
+
+        [Recurly.js PayPal documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete)
+
+         for more information about our PayPal Complete integration, and the 
+
+        [Recurly.js browser support documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support#/)
+
+         for more information about the environments we support with Recurly.js.
       </td>
     </tr>
 
@@ -1474,7 +1586,19 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated the V3 [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info) and [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv) endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/). This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
+        Updated the V3 
+
+        [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
+
+         and 
+
+        [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
+
+         endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on 
+
+        [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/)
+
+        . This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
       </td>
     </tr>
 
@@ -1644,7 +1768,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Considered a *breaking change* -- updated the validation messaging so that it matches the public API documentation.
+        Considered a _breaking change_ -- updated the validation messaging so that it matches the public API documentation.
       </td>
     </tr>
 
@@ -1824,7 +1948,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introducing a new Checkout configuration option that, if enabled, will display a recurring charge consent message and checkbox in Checkout *if* there are recurring billable items in the cart.
+        Introducing a new Checkout configuration option that, if enabled, will display a recurring charge consent message and checkbox in Checkout _if_ there are recurring billable items in the cart.
       </td>
     </tr>
 
@@ -1950,7 +2074,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html) for more details.
+        Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the 
+
+        [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html)
+
+         for more details.
       </td>
     </tr>
 
@@ -1968,7 +2096,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see [the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring).
+        Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see 
+
+        [the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring)
+
+        .
       </td>
     </tr>
 
@@ -2026,7 +2158,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated handling of gateway tokens to that gateway tokens referenced in billing information updates that cause a *decline* do not override existing data.
+        Updated handling of gateway tokens to that gateway tokens referenced in billing information updates that cause a _decline_ do not override existing data.
       </td>
     </tr>
 
@@ -2062,7 +2194,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated Recurly.js to support passing the gateway\_code value for PayPal Complete.
+        Updated Recurly.js to support passing the gateway_code value for PayPal Complete.
       </td>
     </tr>
 
@@ -2093,14 +2225,14 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 | April 29     |                  **Braze**                 | Low                  | Adding two new Braze data centers, US-10 and IN-01.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | April 29     |           **Plan Configuration**           | Low                  | Introducing a new currency picker to the Create and Edit Plan pages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | April 29     |             **Stripe Gateway**             | Low                  | Adding support for Late Failures/Chargebacks to Direct Debit payment methods. Additionally, mandate status display will accompany this release.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| April 29     |  **Stripe Gateway** \| **Gateway Routing** | Medium               | Updated behavior in gateway routing to ensure bank details that are not Stripe Payment Tokens are routed to the Stripe Gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| April 29     |  **Stripe Gateway** | **Gateway Routing**  | Medium               | Updated behavior in gateway routing to ensure bank details that are not Stripe Payment Tokens are routed to the Stripe Gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | April 29     |              **Ebanx Gateway**             | Low                  | Updated available regions when onboarding the gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | April 29     |            **WorldPay Gateway**            | Low                  | Updated available regions when onboarding the gateway.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | April 29     |     **General + Security Enhancements**    | High                 | Recurly is committed to compliance and general upkeep of our systems. In doing so, several features are receiving behind-the-scenes updates that may affect front-end features including [Recurly.js](https://recurly.com/developers/reference/recurly-js/), [Checkout](https://docs.recurly.com/docs/checkout#/) and [HPP](https://docs.recurly.com/docs/hosted-payment-pages#/) (Hosted Pages), Data Collectors for 3DS and Kount, and Redirect Payment Methods. Specific payment methods or redirect features include, but are not limited to: PayPal, PayPal Complete, 3DS Challenge windows, iDeal and Klarna Debit Risk (Sofort), and Amazon Pay (v1 and v2). Learn more about our [security](https://docs.recurly.com/docs/security#/) and [compliance](https://docs.recurly.com/docs/compliance#/) practices in our documentation. |
 | April 22     |           **Order Number Prefix**          | Low                  | Updated title and text to be more clear and consistent and updated the hint for valid characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | April 22     |            **Braintree Gateway**           | Medium               | Updated behind-the-scenes query behavior to ensure "in-flight" transactions' status are not inaccurately updated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | April 18     |            **WorldPay Gateway**            | Medium               | Updated handling of MOTO transactions to correct intermittent payment failures.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| April 18     |       **Recurly.js \| Checkout/HPP**       | HIgh                 | Updated handling of Recurly.js tokens to address an error in processing related to 3DS handling. This updated addresses direct Recurly.js integrations and usage of Checkout and Hosted Pages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| April 18     |        **Recurly.js | Checkout/HPP**       | HIgh                 | Updated handling of Recurly.js tokens to address an error in processing related to 3DS handling. This updated addresses direct Recurly.js integrations and usage of Checkout and Hosted Pages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | April 17     |              **Ebanx Gateway**             | Low                  | Updated to send additional customer data to the platform including address, phone and email information.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | April 15     |            **Explore Assistant**           | Low                  | A new natural language chat interface that returns site data in the form of charts and graphs.  It can be found within Analytics.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | April 15     |           **Revenue Recognition**          | High                 | Period Close Automation to ensure accurate and consistent monthly closures. The process starts with four system-defined tasks, and users can add custom, site-specific tasks to meet their unique requirements. This feature ensures a consistent and error-free period close by preventing missed steps, reducing manual and reconciliation errors, and detecting unresolved issues before closure. It also standardizes the process across all monthly cycles for greater reliability.                                                                                                                                                                                                                                                                                                                                                   |
@@ -2168,7 +2300,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 12/17/2024: **Recurly.js** -  Added support for displaying the card issuing country, PCI-compliant masked card data (first-six/last four), expiry info, and funding source.
 * 12/17/2024: **AmazonPay V2**-  Added support for EU/UK 3DS and Multi-currency support.
 * 12/11/2024:**Cybersource gateway** - Added support for Auth and Capture transactions to the platform. Read more about [Auth and Capture](https://docs.recurly.com/docs/auth-and-capture) in our helpful guide.
-* 12/12/2024: **Access Invoice through RevRec** -  Users can now access invoice through RevRec by clicking on the hyperlink.\
+* 12/12/2024: **Access Invoice through RevRec** -  Users can now access invoice through RevRec by clicking on the hyperlink.
   12/12/2024: **View Profile Page from RevRec** -  Users can now navigate to the user profile page by clicking on View Profile on top-right dropdown in Revrec.
 * 12/11/2024: **Vantiv gateway**: Added some helpful text at the top of the gateway configuration page to assist with proper Merchant ID configuration.
 * 12/10/2024: **Alternate Email Templates**: Merchants on Recurly's Elite plans can now create up to 20 total email variations for each email template, including custom headers and footers to reflect accurate brand logos and information within emails. This allows organizations to tailor customer communications towards the appropriate subscriber segments, such as by the entity(ies) they subscribe to, or their geographic location. [Learn more](https://docs.recurly.com/docs/alternate-email-templates).
@@ -2211,8 +2343,8 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## August
 
-* 8/20/2024: **Exposing Geocode field for Vertex customers** - In every tax response call from Vertex, there is a "geocode" identifier passed that serves as a specific way to pinpoint the location/address that was used for tax calculation on the invoice. This field provides accurate reporting for tax to state and local tax authorities. This field is queryable in both API versions, and will also show the corresponding values populated in the "geo\_code" field within the Adjustments-Taxes export when a merchant has Vertex enabled on their site. [Learn more](https://docs.recurly.com/docs/adjustments-taxes-export#version-7---may-15-2023)
-* 8/20/2024: **Line-Item Refunds** - Merchants can now apply specific dollar and cent refund amounts, or percentage amounts, to individual line items on an invoice. This allows merchants to make specific amount refunds to one or many items on an invoice and *not* others, ensuring they are only applying refund amounts to the desired individual invoice items. This is also supported in both API V2 and V3, and is only available for merchants with Only Bill What Changed and Credit Memos feature flags enabled on their sites. Learn more about Recurly's flexible refund options [here](https://docs.recurly.com/docs/invoice-management#refunds).
+* 8/20/2024: **Exposing Geocode field for Vertex customers** - In every tax response call from Vertex, there is a "geocode" identifier passed that serves as a specific way to pinpoint the location/address that was used for tax calculation on the invoice. This field provides accurate reporting for tax to state and local tax authorities. This field is queryable in both API versions, and will also show the corresponding values populated in the "geo_code" field within the Adjustments-Taxes export when a merchant has Vertex enabled on their site. [Learn more](https://docs.recurly.com/docs/adjustments-taxes-export#version-7---may-15-2023)
+* 8/20/2024: **Line-Item Refunds** - Merchants can now apply specific dollar and cent refund amounts, or percentage amounts, to individual line items on an invoice. This allows merchants to make specific amount refunds to one or many items on an invoice and _not_ others, ensuring they are only applying refund amounts to the desired individual invoice items. This is also supported in both API V2 and V3, and is only available for merchants with Only Bill What Changed and Credit Memos feature flags enabled on their sites. Learn more about Recurly's flexible refund options [here](https://docs.recurly.com/docs/invoice-management#refunds).
 * 8/14/2024: **NetSuite Integration** - Enhancements to Error Reports have been made! [Learn more](https://docs.recurly.com/docs/recurly-for-oracle-netsuite) about our NetSuite integration.
   * Updated the data included in error reports for more efficient review.
   * Error reports will now be provided through Google Drive.
@@ -2223,7 +2355,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 7/31/2024: **Adyen Cash App updates**: Added support for passing in billing address details when using Cash App via Recurly.js. Please see our [developer hub](https://recurly.com/developers/reference/recurly-js/#cashapp) for more information.
 * 7/31/2024: **Opayo/Sagepay gateway updates**: Added a merchant-facing 3DS enablement option within payment gateway settings to allow 3D Secure enablement or disablement via the Recurly Admin UI. Please see our [product documentation](https://docs.recurly.com/docs/opayo#step-7-enable-3d-secure) for more information.
-* 7/23/2024: **Invoice PDF attachments for emails**: Moved the ability to apply invoice PDF attachments to invoice-related emails *from* the "Invoice Settings" page to [each individual email template](https://docs.recurly.com/docs/invoice-settings#email-settings) that supports an invoice PDF. Merchants can now pick and choose which impacted emails to send an invoice PDF with, versus only having this setting apply site-wide.
+* 7/23/2024: **Invoice PDF attachments for emails**: Moved the ability to apply invoice PDF attachments to invoice-related emails _from_ the "Invoice Settings" page to [each individual email template](https://docs.recurly.com/docs/invoice-settings#email-settings) that supports an invoice PDF. Merchants can now pick and choose which impacted emails to send an invoice PDF with, versus only having this setting apply site-wide.
 * 7/10/2024: **Analytics updates:** Added a new view on the Signup Declines and the Renewal Declines dashboards with more granular filtering. On the Dunning Invoice Details dashboard, the graph for the dunning buckets was removed and replaced with a table.
 * 7/9/2024: **Specific tax codes for in-the-box taxes:** Merchants using Recurly's in-the-box tax solution can now add a specific tax code to their plans, add-ons, and items. This enhancement provides merchants with the ability to apply more precise tax amounts to products based on merchant's location and type of goods sold. Please see our [product documentation](https://docs.recurly.com/docs/tax#tax-product-type) for more information.
 * 7/2/2024: **Taxable address overrides for charges:** Support for merchants on Recurly's Elite plan to set distinct taxable address configurations for one-time-charges via UI and API. These settings would override the taxable address settings from the Business Entity that would otherwise be applied to the invoice. Please see our [product documentation](https://docs.recurly.com/docs/tax#taxable-addresses-for-one-time-charges) for more information.
@@ -2275,7 +2407,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 3/26/2024: Updated Sagepay endpoints ahead of March 31st URL deprecation deadline. No impact to transactions will occur.
 * 3/19/2024: Added support for Adyen Co-Badged cards to Client Libraries. Learn more by viewing our [Developer Guides](https://recurly.com/developers/api/#api-versions).
-* 3/19/2024: Added support to include the **\{\{invoice\_subtotal}}** [email parameter](https://docs.recurly.com/docs/email-templates#invoice-details) to the following email templates: Bill Date Reminder, Term Renewal Reminder, Annual Reminder, SEPA Renewal Reminder, Credit Card Expired, Ramp Price change, and Subscription Trial Expiring. This allows merchants to include an estimation within these emails sent to customers that reflects what their next invoice will amount to, taking into consideration any coupons and discounts that would apply to that next invoice, at the point in time that the email is sent.
+* 3/19/2024: Added support to include the **\{\{invoice_subtotal}}** [email parameter](https://docs.recurly.com/docs/email-templates#invoice-details) to the following email templates: Bill Date Reminder, Term Renewal Reminder, Annual Reminder, SEPA Renewal Reminder, Credit Card Expired, Ramp Price change, and Subscription Trial Expiring. This allows merchants to include an estimation within these emails sent to customers that reflects what their next invoice will amount to, taking into consideration any coupons and discounts that would apply to that next invoice, at the point in time that the email is sent.
 * 3/19/2024: Merchants can now apply a credit to any open invoice. Previously we had a limitation where a credit could not be applied to the past-due open invoice that the credit was originally generated from, but with that limitation removed, they can use credits to put towards or close out any invoice of their choosing.
 * 3/13/2024: Merchants on Recurly's Elite plan can now set entity-specific billing contact email addresses for each of their alternate business entities, ensuring the desired merchant email address is displayed on invoices sent to customers, and is being used as the "from" address on emails sent to customers. [Learn more](https://docs.recurly.com/docs/multiple-business-entities#entity-specific-merchant-email-addresses).
 
@@ -2284,7 +2416,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 2/28/2024: Adyen now supports Cartes Bancaires cards with customer choice through Recurly.js. [Learn more](https://docs.recurly.com/docs/adyen#adyen-codual-badged-cards) about Adyen and Co-Badge cards and view [Developer guides](https://recurly.com/developers/guides/co-badge.html).
 * 2/27/2024: Braze integration now supports Custom Attributes being set from Recurly for subscription and account level data. The subscription and account data can now be used in segmentation within Braze and apply to Canvases to communicate with your subscribers across their subscription journey. [Learn more](https://docs.recurly.com/docs/braze-integration) about the Recurly integration with Braze.
 * 2/21/2024: Added additional fields to Transactions Explore.
-  * voided\_at in utc time, voided\_at in the merchants local time, collected\_at in utc time, collected\_at in local time, is\_test, avs\_result, avs\_result\_postal, avs\_result\_street, approval\_code, description, po\_number, collection\_method, backup\_payment\_used, vat\_number, fraud\_decision, fraud\_score, fraud\_message
+  * voided_at in utc time, voided_at in the merchants local time, collected_at in utc time, collected_at in local time, is_test, avs_result, avs_result_postal, avs_result_street, approval_code, description, po_number, collection_method, backup_payment_used, vat_number, fraud_decision, fraud_score, fraud_message
 * 2/13/2024: **Automatic Invoices Terms** is now available for additional invoice flexibility. Collect your automatic invoices on a date after the invoice creation. This allows the invoice to be shared, including the final billable amount and any usage based billing charges, prior to payment collection. This invoice would collect after the predetermined time using the payment method on file. Automatic Invoice Terms are available for both invoices generated from subscriptions and standalone invoices. [Learn more](https://docs.recurly.com/docs/automatic-invoicing-terms).
 
 ## January
@@ -2331,18 +2463,18 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   * Credit Reconciliation (Feature Flag) must be enabled by Professional Services
     * Added new functionality to move an applied credit(s) from one invoice to another in the event the original invoice fails. Example: End Customer received a $100 credit refund to be applied to their next charge invoice. The charge invoice is created in Recurly and the credit refund is applied to the invoice. The end customer does not pay the remaining balance on the charge invoice and the invoice is failed. The credit refund is voided and a write-off credit memo is applied to the invoice. In NetSuite, the credit refund is created as a credit memo and then the charge invoice is created. The credit memo is applied to the charge invoice. Once the invoice is failed in Recurly, the integration will send a request to NetSuite and the original credit will be unapplied from the invoice. The write off credit will be created as a credit memo in NetSuite and applied to the invoice. The original credit will now be open to be applied to the next charge invoice.
     * Modification to the Credit Flow. The credit flow will only create the credit memo in NetSuite. The applyList will now be triggered from the invoice record once the credit is applied.
-    * Modification to the Invoice Flow. When a credit payment is applied to an invoice in Recurly, this will trigger the NetSuite integration to send the applyList for the credit(s) to apply to the invoice. Invoices will now use the updated\_at date field to sync to NetSuite
+    * Modification to the Invoice Flow. When a credit payment is applied to an invoice in Recurly, this will trigger the NetSuite integration to send the applyList for the credit(s) to apply to the invoice. Invoices will now use the updated_at date field to sync to NetSuite
 
 ## August
 
 * 8/23/2023: Updated account naming on customer invoices that are in an Account Hierarchy. Display now reads Primary Account and Linked Account.
 * 8/22/2023: Increased number of child accounts that can be added to each parent account in Recurly App from 500 to 10,000
-* 8/22/2023: Released API V3 support for obtaining Brazilian CPF/CNPJ number via the "tax\_identifier" field, more information available in [developer documentation ](https://recurly.com/developers/api/v2021-02-25/index.html#operation/update_billing_info)
-* 8/16/2023: Updated Braintree integration to expose PayPal PayerID in the account\_reference field nested in the gateway\_attributes section.
+* 8/22/2023: Released API V3 support for obtaining Brazilian CPF/CNPJ number via the "tax_identifier" field, more information available in [developer documentation ](https://recurly.com/developers/api/v2021-02-25/index.html#operation/update_billing_info)
+* 8/16/2023: Updated Braintree integration to expose PayPal PayerID in the account_reference field nested in the gateway_attributes section.
 * 8/16/2023: NetSuite integration enhancement: Added additional retry logic to properly sync failed payment transactions.
 * 8/9/2023: Updated [iDeal](https://docs.recurly.com/docs/adyen#adyen-ideal) and [Sofort](https://docs.recurly.com/docs/adyen#adyen-sofort) payment methods on the Adyen gateway. With a new integration Recurly uses Adyen Components API for iDeal and Sofort payment methods.
 * 8/4/2023: Updated Recurly.js for the Venmo payment method on Braintree integration to start including device data in payment requests.
-* 8/1/2023: Update to the Transaction export, newest version is Version 6. This update includes an added column for "vat\_number" to allow merchants who require obtaining a customer's VAT or Tax ID Number via export to easily access that information.
+* 8/1/2023: Update to the Transaction export, newest version is Version 6. This update includes an added column for "vat_number" to allow merchants who require obtaining a customer's VAT or Tax ID Number via export to easily access that information.
 
 ## July
 
@@ -2375,7 +2507,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ## April
 
 * 4/25/23 Launched Recurly's new app management solution designed to make Recurly your single source of truth for subscriptions across web, Apple, and Google platforms.  Learn more [here](https://docs.recurly.com/docs/app-management).
-* 4/25/23 Added a new field to the API, a column in exports, and a note in the UI if tax service was used or not. The field in the API and Exports is a boolean field called used\_tax\_service. In the UI, the invoice will display a note if tax service was used or not.
+* 4/25/23 Added a new field to the API, a column in exports, and a note in the UI if tax service was used or not. The field in the API and Exports is a boolean field called used_tax_service. In the UI, the invoice will display a note if tax service was used or not.
 * 4/19/23 Added [Apple Pay ](https://docs.recurly.com/docs/apple-pay-on-the-web#payment-gateways)and [Google Pay](https://docs.recurly.com/docs/google-pay) support to Recurly's Adyen integration.
 * 4/19/23 Added new parameters to the [Apple Pay](https://recurly.com/developers/reference/recurly-js/#apple-pay) and [Google Pay](https://recurly.com/developers/reference/recurly-js/#google-pay-) integrations to streamline Recurly.js purchase flows.
 * 4/17/23 Added new "Subscriber Reports" to Recurly Analytics. These new dashboards include an additional filter to “Combine Subscriptions” which combine back-to-back subscriptions to provide a more accurate count for activations and churn. [Learn more](https://docs.recurly.com/docs/subscribers#new-reports-for-monitoring-subscriber-counts-in-beta).
@@ -2432,7 +2564,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## September
 
-* 9/27/22 With Ramp Pricing, merchants can attract new subscribers through a discounted point of entry that ramps up over time to the full subscription cost. Conversely, merchants can reward subscriber loyalty by scheduling pricing discounts to valuable, long-term customers.\
+* 9/27/22 With Ramp Pricing, merchants can attract new subscribers through a discounted point of entry that ramps up over time to the full subscription cost. Conversely, merchants can reward subscriber loyalty by scheduling pricing discounts to valuable, long-term customers.
   Learn more about [Ramp Pricing.](https://docs.recurly.com/docs/ramp-pricing)
 * 09/27/22 Released [revenue recognition for Enterprise](https://docs.recurly.com/docs/revenue-recognition#enterprise--solution) in beta access
 * Added the ability to apply account balances to past due invoices via the UI.
@@ -2445,7 +2577,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 08/23/22 Restricted the ability to change the email address on an existing account via Recurly HPP (Hosted Payment Page).
 * 08/16/22 Released Mastercard mandate addition to the Payment Confirmation Template. Allows you to send payment confirmation emails to only customers using a Mastercard.
 * 08/10/22 Released updates to Analytics experience with the following: Persistent (i.e. saved) dashboard filters, Dashboard sharing, Refunds on the Subscriber Retention Dashboard, Expanded Monthly Recurring Revenue dashboard
-* 08/09/22 Released Account Activities Explore & Download feature. Gain critical insight into *who* within your Recurly site does *what*, *when*. Available for Professional and Elite plans, only accessible for users with Admin access.
+* 08/09/22 Released Account Activities Explore & Download feature. Gain critical insight into _who_ within your Recurly site does _what_, _when_. Available for Professional and Elite plans, only accessible for users with Admin access.
 * 08/09/22 Relocated Users Export from the dropdown on the Users page to the new Admin Exports tab under the "Admin" section on the left-side navigation panel.
 
 ## July
@@ -2454,7 +2586,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 07/19/2022 China UnionPay payment method is now available on Adyen, Cybersource, and Stripe gateways in addition to Chase Orbital and Braintree.
 * 07/19/2022 New ability to set a unique time zone specifically for sending emails to each of your customer accounts. This will help ensure your varying customer geographical locations receive emails sent via the Recurly App in their corresponding time zones, alleviating confusion of time/date stamp discrepancies between the email itself and dates reflected within the email content.
 * 07/18/2022 Released updated version of our Recurly for Salesforce integration which enables merchants to be able to automatically capture customer payments by empowering the customer to input their own billing information from the Recurly's billing info update page. Also, enabled the ability to automatically create a subscription once an opportunity is set to "closed won" without the need to click the "Create Subscription in Recurly" button. See more details [here](https://docs.recurly.com/docs/salesforcereleasenotes)
-* 07/12/2022 Google Pay payment method is now available! Today we support Google Pay with Stripe gateway.\
+* 07/12/2022 Google Pay payment method is now available! Today we support Google Pay with Stripe gateway.
   We will add more gateways support in the future.
 * 07/05/2022 Added support for ZDA for Vantiv and FirstData gateways
 * 07/05/2022 Updated the max length of custom fields to 255 characters. [Learn about Custom Fields](https://docs.recurly.com/docs/custom-fields).
@@ -2470,7 +2602,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ## May
 
 * 05/17/2022: Kount custom fields support. Now it is possible to send data for Kount custom fields from [Recurly JS](https://developers.recurly.com/reference/recurly-js/index.html#recurly-fraud-management--kount-integration).
-* 05/03/2022: Tax inclusive pricing using API V3, V2, and the UI available when using Vertex. Adds "Includes tax" or "does not include tax" in the UI when creating subscription or purchase and a tax\_inclusive field in the subscriptions and purchases endpoints of the API. To learn more, visit the [Tax Inclusive Pricing](doc:tax-inclusive-pricing) page.
+* 05/03/2022: Tax inclusive pricing using API V3, V2, and the UI available when using Vertex. Adds "Includes tax" or "does not include tax" in the UI when creating subscription or purchase and a tax_inclusive field in the subscriptions and purchases endpoints of the API. To learn more, visit the [Tax Inclusive Pricing](doc:tax-inclusive-pricing) page.
 * 05/03/2022: Updated UI under Admin Section on Recurly App. On "User Access" page under "Admin" section, admin user must click on individual site user within main table to navigate to their unique user page in order to remove a specific user.
 * 05/03/2022: "SSO Settings" is no longer a button present on the "User Access" page. Merchants can now access SSO Settings on its own page accessible under the "Admin Section".
 
@@ -2514,7 +2646,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 10/29/2021: Recurly releases Account Hierarchy: Invoice Rollup, providing new capabilities for billing and invoicing customers with complex hierarchical business structures. You can now rollup charges from multiple child accounts that bill to a common parent account into a single invoice. This provides you with the the ability to greatly simply the billing process for your customers, while reducing your transaction costs. Learn more [here](https://docs.recurly.com/docs/ah-invoice-rollup)
 * 10/21/2021: Support added for Worldpay/dlocal accounts in Argentina, which include a new payment method, Tarjeta Naranja. Learn more about this account configuration [here](https://docs.recurly.com/docs/worldpaydlocal-latam-support).
-* 10/14/2021: Added new capabilities to Recurly's Dunning Management functionality.\
+* 10/14/2021: Added new capabilities to Recurly's Dunning Management functionality.
   You can now create multiple dunning campaigns and assign specific plans and accounts to different campaigns (available for Pro and Enterprise only), create trial specific dunning cycles, and stop dunning emails for a past due invoice without having to fail the invoice.  Details [here](https://docs.recurly.com/docs/dunning-management).  To enable these features, please reach out to Recurly Support and request to have the Dunning Campaigns feature enabled on your site.
 
 ## September
@@ -2549,7 +2681,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### April
 
 * 4/29/21: Released enhancements to out out of the box Avalara tax integrations to always send AccountID and no longer send AccountCode.
-* 4/22/21: Recurly releases Wallet to let you offer more convenience and improve customer satisfaction by giving your customers the ability to have [multiple payment methods](https://docs.recurly.com/docs/wallet) on one account. Wallet also allows you to simplify renewals and reduce payment failures by enabling [backup payment method](https://docs.recurly.com/docs/backup-payment-method). Read the [press release](https://www.recurly.com/press/recurly-launches-wallet-in-a-strategic-expansion-of-its-subscription-platform?utm_source=twitter\&utm_medium=social\&utm_campaign=2021-02-high-impact-subscription-tips\&utm_content=infographic/) to learn more.
+* 4/22/21: Recurly releases Wallet to let you offer more convenience and improve customer satisfaction by giving your customers the ability to have [multiple payment methods](https://docs.recurly.com/docs/wallet) on one account. Wallet also allows you to simplify renewals and reduce payment failures by enabling [backup payment method](https://docs.recurly.com/docs/backup-payment-method). Read the [press release](https://www.recurly.com/press/recurly-launches-wallet-in-a-strategic-expansion-of-its-subscription-platform?utm_source=twitter&utm_medium=social&utm_campaign=2021-02-high-impact-subscription-tips&utm_content=infographic/) to learn more.
 * 4/22/21: Updated Avalara integration to break out Canadian taxes for country and state rates on customers final invoices.
 * 4/15/21: Released enhancements to Recurly's in-the-box tax solution to support taxation in Indonesia.  [Learn more.](https://docs.recurly.com/docs/tax#section-supported-countries)
 * 4/8/21: Released enhancements to tax integrations for AvaTax and AFC to select which account identifier is sent to Avalara. To prevent sending PII to Avalara, you can now send Account ID instead of Account Code.
@@ -2598,7 +2730,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### August
 
 * 8/31/20: Recurly for Salesforce v2.38 released
-* 8/27/20: 100+ currencies added to Recurly. [Learn more](https://docs.recurly.com/docs/currencies#section-supported-currencies).\
+* 8/27/20: 100+ currencies added to Recurly. [Learn more](https://docs.recurly.com/docs/currencies#section-supported-currencies).
   American Express Card Refresher: Merchants can now input their own SE number to register for American Express Card Refresher.
 * 8/21/20: Clarified documentation for Russian VAT rate and the fact that reverse charge is no longer applicable. Functionality already reflected this.
 * 8/14/20: [FlexibleField mapping support for Vertex Integration](https://docs.recurly.com/docs/vertex#section-flexible-fields)
@@ -2636,15 +2768,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 4/23/20: Released GoCardless ACH support. This is supported on API V2 and V3 as well as RJS and Recurly HPP.
 * 4/16/20: Released new [Item Add-Ons](doc:catalog) functionality enabling catalog items to be sold as add-ons on plans and subscriptions. This release also includes two new item-related exports.
 * 4/9/20: Released functionality to choose between accrual-basis and cash-basis sales tax reporting for users connecting Recurly to their own Avalara AvaTax account.
-* 4/2/20: Added external\_sku field for saved item add-ons to the v2 Subscription Add-Ons and Subscriptions Add-Ons History exports.
+* 4/2/20: Added external_sku field for saved item add-ons to the v2 Subscription Add-Ons and Subscriptions Add-Ons History exports.
 * 4/2/20: Added Add-On Tier Type and Add-On Total Amount to the v2 Subscription Add-Ons and Subscriptions Add-Ons History exports to support the Quantity-Based Pricing Models.
 
 ### March
 
 * 3/26/20: Released support for Croatian Kuna (HRK) across the following gateways: Adyen, Bambora, Braintree, CardConnect, Chase Orbital, Cybersource, First Data, Payeezy, Stripe, Vantiv, Wirecard, and Worldpay.
 * 3/26/20: Released updates to Merchant e-Solutions integration to support new COF indicators.
-* 3/12/20: Released new Item Add-Ons feature for Early Access testing! This allows catalog items to be sold as recurring add-ons on plans and subscriptions. This release also included two new item-related exports, the display of external\_sku for saved item add-ons in the Subscription Add-Ons array in the Subscriptions webhooks, and an optional external\_sku e-mail parameter for item add-ons and one-time item charges in customized e-mail templates. For early access to this feature, please contact Recurly Support.
-* 3/5/20: Added revenue\_schedule\_type field to all v3 API requests and responses for the Plans, Plan Add-Ons, Subscriptions, and Purchases endpoints. This change spans all versions of the v3 API. The field will display in API responses for all sites, but will only be populated or accept values for sites using our Revenue Recognition feature.
+* 3/12/20: Released new Item Add-Ons feature for Early Access testing! This allows catalog items to be sold as recurring add-ons on plans and subscriptions. This release also included two new item-related exports, the display of external_sku for saved item add-ons in the Subscription Add-Ons array in the Subscriptions webhooks, and an optional external_sku e-mail parameter for item add-ons and one-time item charges in customized e-mail templates. For early access to this feature, please contact Recurly Support.
+* 3/5/20: Added revenue_schedule_type field to all v3 API requests and responses for the Plans, Plan Add-Ons, Subscriptions, and Purchases endpoints. This change spans all versions of the v3 API. The field will display in API responses for all sites, but will only be populated or accept values for sites using our Revenue Recognition feature.
 
 ### February
 
@@ -2652,10 +2784,10 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 2/20/20: Released new [Item Catalog](doc:catalog) functionality enabling a catalog of offerings to be built in Recurly and sold via one-time charges. This release also included updated wording around add-on type and billing model on the Create/Edit Plan pages, and an update to the Billable Add-Ons table on the Plan Details pages to show Add-On Code instead of Accounting Code.
 * 2/3/20: Released Convert Trial feature enabling a subscription to immediately move from a trial to a paid subscription when a customer requests to end their trial early. Current available in the Admin UI and V2 API.
 * 2/13/20: Recurly launches a new integration with GoCardless! [Learn more](https://docs.recurly.com/docs/gocardless). The initial launch supports SEPA payments via Recurly's Hosted Pages, with API support coming soon, as well as additional payment methods.
-* 2/13/20: Added new external\_sku field for one-time item charges to the [Adjustments](doc:adjustments-exports) (v4), [Adjustments - Taxes](doc:adjustments-taxes-export) (v4), and [Adjustments - Coupons](doc:adjustments-exports) (v3) exports.
+* 2/13/20: Added new external_sku field for one-time item charges to the [Adjustments](doc:adjustments-exports) (v4), [Adjustments - Taxes](doc:adjustments-taxes-export) (v4), and [Adjustments - Coupons](doc:adjustments-exports) (v3) exports.
 * 2/6/20: Added support for Discover Stored Credentials for the Payeezy Gateway.
-* 2/6/20: Added new external\_sku field for one-time item charges to all Adjustments (v2.24) and Line Items (v2019-10-10) API endpoints.
-* 2/3/20: For one-time item charges, the attribute populated in the product\_code field in our Adjustments and Line Items API endpoints was switched from the item's external\_sku to the item's item\_code, to better align with upcoming item add-ons. All historic one-time item charges were updated so the data is consistent over time. Upcoming releases will pass this change on to our Adjustments exports, and add an additional field for displaying external\_sku.
+* 2/6/20: Added new external_sku field for one-time item charges to all Adjustments (v2.24) and Line Items (v2019-10-10) API endpoints.
+* 2/3/20: For one-time item charges, the attribute populated in the product_code field in our Adjustments and Line Items API endpoints was switched from the item's external_sku to the item's item_code, to better align with upcoming item add-ons. All historic one-time item charges were updated so the data is consistent over time. Upcoming releases will pass this change on to our Adjustments exports, and add an additional field for displaying external_sku.
 
 ### January
 
@@ -2673,7 +2805,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 11/27/19: Recurly introduces the newest version of our integration with Zendesk. The first release enabled support agents to find details on a customer’s account and subscription information directly within their Zendesk interface. The second release adds the ability to Pause, Cancel, and Refund subscriptions; also within the Zendesk interface. Check out the full details  [here](https://docs.recurly.com/docs/recurly-for-zendesk).
 * 11/22/19: Added Stored Credential support for Bambora.
 * 11/22/19: Recurly introduces our new [Item Catalog](doc:catalog) functionality for early access testing. To get access to this feature on your site, please contact [Recurly Support](support.recurly.com).
-* 11/14/19: Pause and Postpone requests will now update the current\_period\_ends\_at to be reflective of when the current period will end. Historically these dates were not updated and were not accurate when a subscription was paused or postponed.
+* 11/14/19: Pause and Postpone requests will now update the current_period_ends_at to be reflective of when the current period will end. Historically these dates were not updated and were not accurate when a subscription was paused or postponed.
 * 11/1/19: Recurly introduces Gateway Failover. To safeguard your payments against gateway downtime, [learn more](https://docs.recurly.com/docs/gateway-failover) about this feature.
 
 ### October
@@ -2707,7 +2839,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### May
 
 * 5/23/19: [Shipping Fees](https://docs.recurly.com/docs/shipping) are now generally available in Recurly! This feature allows merchants to easily and accurately bill for shipping fees for physical goods.
-* 5/23/19: Added 'cc\_first\_6' column to the end of both the <a href="https://docs.recurly.com/docs/billing-info-export">Billing Info</a> and <a href="https://docs.recurly.com/docs/transaction-export">Transaction</a> exports as a new version 4.
+* 5/23/19: Added 'cc_first_6' column to the end of both the <a href="https://docs.recurly.com/docs/billing-info-export">Billing Info</a> and <a href="https://docs.recurly.com/docs/transaction-export">Transaction</a> exports as a new version 4.
 * 5/23/19: Exports will use the site timezone (under Site Settings) rather than the users timezone when determining what data will be exported. Additionally, the days that are requested will be exported in their entirety rather than potentially having missing data for current day.
 * 5/2/19: Added compression (zip) to all Data Exports accessible thru Recurly App. For more information see [Exports](doc:export-overview).
 * 5/2/19: Released the ability to configure [Shipping Methods and Shipping Fees](https://docs.recurly.com/docs/shipping). Contact us to enable this feature.
@@ -2716,7 +2848,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### April
 
-* 4/25/19: Added 'cc\_first\_6' column to the <a href="https://docs.recurly.com/docs/billing-info-export">Billing Info</a> and <a href="https://docs.recurly.com/docs/transaction-export">Transaction</a> exports
+* 4/25/19: Added 'cc_first_6' column to the <a href="https://docs.recurly.com/docs/billing-info-export">Billing Info</a> and <a href="https://docs.recurly.com/docs/transaction-export">Transaction</a> exports
 * 4/23/19: Released [new version](https://docs.recurly.com/docs/salesforcereleasenotes) of the Salesforce integration.
 
 ### March
@@ -2756,22 +2888,22 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 9/27/18: All sites are now able to export [custom fields](https://docs.recurly.com/docs/custom-fields) in their Accounts and Subscriptions export.
 * 9/27/18: Added support for Thai Baht (THB) currency within Recurly, and to the Adyen gateway.
 * 9/20/18: Recurly Taxes powered by Avalara now supports <a href="https://docs.recurly.com/docs/tax#section-europe-non-eu-">Liechtenstein</a>.
-* 9/20/18: adjustment\_tax\_code column added to the <a href="https://docs.recurly.com/docs/adjustments-taxes-export">Adjustments - Taxes export</a> for Vertex in Version 2.
+* 9/20/18: adjustment_tax_code column added to the <a href="https://docs.recurly.com/docs/adjustments-taxes-export">Adjustments - Taxes export</a> for Vertex in Version 2.
 * 9/20/18: Only Bill What Changed now <a href="https://docs.recurly.com/docs/change-subscription#section-credit-discounts">smooths discounts on credits</a> instead of favoring the customer and only reversing a discount once necessary.
-* 9/20/18: Transaction Export: added 'gateway\_code', which notes which gateway was used for each transaction.
+* 9/20/18: Transaction Export: added 'gateway_code', which notes which gateway was used for each transaction.
 
 ### August
 
 * 8/16/18: If you have access to Manual Invoicing, you can now set a PO Number on automatic invoices from your Admin Console.
 * 8/9/18: If the Credit Invoices feature is enabled, manual invoices can no longer be reopened from the Invoice Details page. You must void the manual transaction directly in order to reopen the invoice.
-* 8/7/18: New email parameter subscription\_customer\_notes to show the subscription's customer notes.
+* 8/7/18: New email parameter subscription_customer_notes to show the subscription's customer notes.
 
 ### July
 
 * 7/19/18: Requiring successful transaction on subscription upgrade now also requires successful collection on all automatic collection past due invoices on the account. <a href="https://docs.recurly.com/docs/invoice-settings#section-require-paid-invoice-and-successful-transaction-on-upgrades">Learn more</a>
 * 7/12/18: Recurly is now integrated with Vertex for global tax collection on the Elite plan. <a href="https://docs.recurly.com/docs/vertex">Learn more</a>
-* 7/12/18: Fixed a typo in the credit\_payment webhooks in the original\_invoice\_number attribute.
-* 7/12/18: Removed the symbol data type from the invoice "origin" attribute in the charge\_invoice, credit\_invoice, and new\_dunning\_event webhooks due to a vulnerability.
+* 7/12/18: Fixed a typo in the credit_payment webhooks in the original_invoice_number attribute.
+* 7/12/18: Removed the symbol data type from the invoice "origin" attribute in the charge_invoice, credit_invoice, and new_dunning_event webhooks due to a vulnerability.
 * 7/12/18: Automated Exports can now be configured via the admin console. This process was previously a custom set up. For sites on professional, Elite, and Enterprise plans, this allows you to add new exports to your configurations and bump versions of existing exports on your own.  More [HERE](https://docs.recurly.com/v1.0/docs/export-overview#section-automated-exports)
 
 ### June
@@ -2781,7 +2913,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### May
 
-* 5/14/18: NEW [Subscription history export ](https://docs.recurly.com/docs/subscription-history-export) available to all sites.  Track upgrades, downgrades, add\_on changes, etc.
+* 5/14/18: NEW [Subscription history export ](https://docs.recurly.com/docs/subscription-history-export) available to all sites.  Track upgrades, downgrades, add_on changes, etc.
 * 5/11/18: Added additional payment methods to Adyen HPP, including: ACH, Qiwi, and iDEAL.
 * 5/7/18: The new <a href="https://docs.recurly.com/docs/invoices">Credit Invoices</a> feature is now automatically on new Recurly sites.
 * 5/4/18: New <a href="https://docs.recurly.com/docs/invoices">Credit Invoices</a> feature available to enable on existing Recurly sites.
@@ -2794,7 +2926,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### March
 
-* 3/22/18: One new column added to the [Gift Cards](https://docs.recurly.com/docs/gift-cards-export) export (redemption\_invoice\_number)
+* 3/22/18: One new column added to the [Gift Cards](https://docs.recurly.com/docs/gift-cards-export) export (redemption_invoice_number)
 * 3/14/18: Added shipping address to Kount fraud check request.
 * 3/8/18: Canada is now supported on the Vantiv / Litle gateway. Recurly.JS mobile tabbing enhancement to tab into and out of RJS hosted fields.
 * 3/1/18: Added support for Czech Koruna (CZK) in Stripe. Updated Danish translations.
@@ -2816,11 +2948,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### January
 
 * 1/18/18: Added a webhooks link to the Account page (just above the activity log) to make it easy to see webhooks sent for that specific account. Note: this link is visible only if you have access to view webhooks.
-* 1/11/18: [Invoices - Line Items - Coupons](https://docs.recurly.com/v1.0/docs/adjustments-exports#section-adjustments-coupons) export renamed to "Adjustments - Coupons" and four new columns added (invoice\_due\_on, adjustment\_subtotal, adjustment\_credit\_reason\_code, adjustment\_refundable\_amount)
-* 1/11/18: [Invoices - Line Items](https://docs.recurly.com/v1.0/docs/adjustments-exports#section-adjustments) export renamed to "Adjustments" and four new columns added (invoice\_due\_on, adjustment\_subtotal, adjustment\_credit\_reason\_code, adjustment\_refundable\_amount)
-* 1/11/18: Six new columns added to the [Invoices - Summary](https://docs.recurly.com/v1.0/docs/invoices-exports#section-invoices-summary) export (invoice\_doc\_type, invoice\_balance, invoice\_balance\_modified\_at, invoice\_discount, invoice\_subtotal\_before\_discounts, invoice\_refundable\_amount)
-* 1/11/18: One new column added to the [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export) export (invoice\_origin)
-* 1/11/18: Two new columns added to the [Accounts Receivable](https://docs.recurly.com/docs/accounts-receivable-export) export (invoice\_balance and invoice\_balance\_modified\_at)
+* 1/11/18: [Invoices - Line Items - Coupons](https://docs.recurly.com/v1.0/docs/adjustments-exports#section-adjustments-coupons) export renamed to "Adjustments - Coupons" and four new columns added (invoice_due_on, adjustment_subtotal, adjustment_credit_reason_code, adjustment_refundable_amount)
+* 1/11/18: [Invoices - Line Items](https://docs.recurly.com/v1.0/docs/adjustments-exports#section-adjustments) export renamed to "Adjustments" and four new columns added (invoice_due_on, adjustment_subtotal, adjustment_credit_reason_code, adjustment_refundable_amount)
+* 1/11/18: Six new columns added to the [Invoices - Summary](https://docs.recurly.com/v1.0/docs/invoices-exports#section-invoices-summary) export (invoice_doc_type, invoice_balance, invoice_balance_modified_at, invoice_discount, invoice_subtotal_before_discounts, invoice_refundable_amount)
+* 1/11/18: One new column added to the [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export) export (invoice_origin)
+* 1/11/18: Two new columns added to the [Accounts Receivable](https://docs.recurly.com/docs/accounts-receivable-export) export (invoice_balance and invoice_balance_modified_at)
 * 1/11/18: Recurly.js has launched Card Hosted Fields support for a single iFrame to collect all required credit card information. [Learn more.](https://developers.recurly.com/pages/recurly-js.html)
 * 1/8/18: Recurly now supports additional currencies via the Adyen Gateway for Russian Ruble (RUB) and Chinese Yuan (CNY).
 
@@ -2852,7 +2984,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### August
 
 * 8/31/17: An activity is now created when a manual invoice is reopened
-* 8/17/17: Added new column to the end of the Transactions Export for failure\_type. New [email parameters](https://docs.recurly.com/docs/email-templates#section-parameters) for billing info: payment method as well as transaction specific payment method, credit card type, and credit card last 4 digits.
+* 8/17/17: Added new column to the end of the Transactions Export for failure_type. New [email parameters](https://docs.recurly.com/docs/email-templates#section-parameters) for billing info: payment method as well as transaction specific payment method, credit card type, and credit card last 4 digits.
 * 8/10/17: Added new column and date range option to the [Subscriptions Export](https://docs.recurly.com/docs/subscriptions-exports). This enables sites to export subscriptions that have been created but not yet activated.
 
 ### July
@@ -2869,7 +3001,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### May
 
 * 5/25/17: In the Admin Console you can now retry payment on a past due invoice after dunning is complete. Update handling of "soft decline" for Amazon Payments.
-* 5/18/17: New updated\_account\_notification webhook when account information is changed
+* 5/18/17: New updated_account_notification webhook when account information is changed
 * 5/12/17: Changed "Active Subscriptions" and "% Churned" calculations to better align with Subscriber Churn rate (on Dashboard)  calculation. See [Churn Analysis](https://docs.recurly.com/docs/recurly-analytics#section-churn-analysis)
 * 5/11/17: Extended the site default options for net-terms to include a custom length.
 * 5/4/17: Recurly is now in beta with an integration with Adyen for credit / debit card processing. [Learn more.](https://docs.recurly.com/v1.0/docs/adyen). Redesigned Email Index Page: we have completely re-imagined the look and feel of our email template page UI to make it easier to navigate and understand. Past due invoices will now automatically attempt collection after a new subscription is added to the account. Recurly now supports PayPal Express Checkout and One Touch when using Recurly.js v4. [Learn more](https://docs.recurly.com/docs/paypal-payments).
@@ -2921,7 +3053,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### October
 
 * 10/20/16:
-  * New and improved support for **gift subscriptions and gift cards** is now available to customers on the Professional and Elite plan! [Learn more](https://recurly.com/gift-subscriptions/) and then [read the detailed documentation](https://docs.recurly.com/docs/gift-subscriptions). The feature includes updates to the Subscriptions and Subscriptions - Churned exports ... which now include two new columns for the Gift Cards feature: started\_with\_gift and converted\_at. Plus we have added a new Gift Cards export with gift card purchase and redemption information.
+  * New and improved support for **gift subscriptions and gift cards** is now available to customers on the Professional and Elite plan! [Learn more](https://recurly.com/gift-subscriptions/) and then [read the detailed documentation](https://docs.recurly.com/docs/gift-subscriptions). The feature includes updates to the Subscriptions and Subscriptions - Churned exports ... which now include two new columns for the Gift Cards feature: started_with_gift and converted_at. Plus we have added a new Gift Cards export with gift card purchase and redemption information.
   * Updated Recurly.js to add automatic spacing into credit card numbers entered on checkout forms to make them easier for end-customers to read and validate that they are entering the number correctly.
   * Added shipping address support to Recurly.js pricing module.
 
@@ -2931,9 +3063,9 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * Support added for the October 1, 2016 changes to NZ GST on digital services.
 
-* The Subscriptions - Churned export now shows "Tax Location Invalid" instead of "VAT Invalid Location" as an expiration\_reason for EU VAT Location Validation.
+* The Subscriptions - Churned export now shows "Tax Location Invalid" instead of "VAT Invalid Location" as an expiration_reason for EU VAT Location Validation.
 
-* The Accounts export column "vat\_location\_invalid" is now called "tax\_location\_invalid" and is supported by a new column called "location\_validation\_tax\_type".
+* The Accounts export column "vat_location_invalid" is now called "tax_location_invalid" and is supported by a new column called "location_validation_tax_type".
 
 * Send dunning email immediately when Recurly won't schedule retry attempts (hard declines and billing info not found).
 
@@ -2977,9 +3109,9 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 6/29/16: We've made 2 big updates to the Recurly V2 API. First, we've added date filtering & pagination which allows merchants to query records from the V2 API based on a date range based on when the records were created or updated. Second, we've added Account Balance which allows merchants to query the balance on an account record. We also updated the Hosted Account Management page to ensure that merchant logos display correctly.
 
-* 6/16/16: Added ability to configure color of placeholder text in Recurly.js v4. Added gateway, gateway\_error\_code and failure\_type to failed payment webhook notification.
+* 6/16/16: Added ability to configure color of placeholder text in Recurly.js v4. Added gateway, gateway_error_code and failure_type to failed payment webhook notification.
 
-* 6/8/16: Improvements to the Worldpay integration. Added payment\_method, billing\_phone, billing\_postal, billing\_country to payment related webhooks.
+* 6/8/16: Improvements to the Worldpay integration. Added payment_method, billing_phone, billing_postal, billing_country to payment related webhooks.
 
 * 6/7/16: Under certain circumstances, we will display reCAPTCHA on the [Hosted Payment Pages](https://docs.recurly.com/docs/hosted-payment-pages) to help ensure the validity of attempted purchases.
 
@@ -3019,7 +3151,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### January
 
-* 1/26/16: New column in Transactions export called "collected\_at". New column in Coupon Redemptions export called "Coupon ID". Ability to configure AVS Checks on First Data.
+* 1/26/16: New column in Transactions export called "collected_at". New column in Coupon Redemptions export called "Coupon ID". Ability to configure AVS Checks on First Data.
 
 * 1/13/16: New version of <a href="https://recurly.com/recurlyjs/">Recurly.js</a> to help you reduce your PCI scope. Check out the <a href="https://docs.recurly.com/js/">updated documentation</a>!
 
@@ -3049,21 +3181,21 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   * We're very exited to announce that many new coupon features are now available, like bulk unique coupons, multiple coupons per account, <a href="https://docs.recurly.com/coupons">and more</a>!
   * Also new this week: Improved error message displayed when the transaction amount is too small for the gateway. EU VAT numbers are now validated only at sign-up and every 6 months to reduce VIES validation downtime issues. Merchants can now test invalid EU VAT numbers in sandbox mode with 000000000. Fixed issue where subscription terminate and refund was blocked for zero amount invoices.
 
-* 10/01/2015: Added payment\_method to the <a href="https://docs.recurly.com/export-overview#transactions">transactions export</a>, and launched First Data support for new countries (Please see <a href="https://recurly.com/gateways/">Recurly Gateways</a>) for gateways supported in your country).
+* 10/01/2015: Added payment_method to the <a href="https://docs.recurly.com/export-overview#transactions">transactions export</a>, and launched First Data support for new countries (Please see <a href="https://recurly.com/gateways/">Recurly Gateways</a>) for gateways supported in your country).
 
 ### September
 
-* 09/24/2015: Calls to our API v2 Account end point now returns 'cc\_emails'.
+* 09/24/2015: Calls to our API v2 Account end point now returns 'cc_emails'.
 
 * 09/17/2015: First Data gateway integration maintenance.
 
-* 09/10/2015: Added a bunch of new columns to the Invoice - Line Items export, and added original\_invoice\_number to all 3 Invoices exports to help associate refund invoices to original purchase invoices.
+* 09/10/2015: Added a bunch of new columns to the Invoice - Line Items export, and added original_invoice_number to all 3 Invoices exports to help associate refund invoices to original purchase invoices.
 
 ### August
 
 * 08/27/2015: Ability to set "setup fee accounting code" for one-time setup fee in the App UI. Ability to set Date Range for one-time charges.
 
-* 08/20/2015: Ability to set setup\_fee\_accounting\_code for one-time setup fee via the API. Coupon Redemptions export now includes 'uuid' and 'currency'.
+* 08/20/2015: Ability to set setup_fee_accounting_code for one-time setup fee via the API. Coupon Redemptions export now includes 'uuid' and 'currency'.
 
 * 08/13/2015: First Data Payeezy gateway integration. Integration with Check Commerce online application portal. Fixed email formatting issue with credit card type parameter.
 
@@ -3073,15 +3205,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 07/31/2015: Tax previews now exist in the Preview Subscription API call for AvaTax Pro customers.
 
-* 07/30/2015: Coupons can now be made with a duration of days, weeks, months or years. The Invoices - Line Items export now includes coupon codes. Invoices in the Admin UI now links to related invoices. Added character restrictions to account\_code. Future subscriptions with invalid addresses will now activate when taxes are turned on.
+* 07/30/2015: Coupons can now be made with a duration of days, weeks, months or years. The Invoices - Line Items export now includes coupon codes. Invoices in the Admin UI now links to related invoices. Added character restrictions to account_code. Future subscriptions with invalid addresses will now activate when taxes are turned on.
 
 * 07/24/2015: Account Information Phone Number field no longer blocks fallback to Billing Information address on invoice. Handle retry attempts from Check Commerce.
 
 * 07/16/2015: Invoices on sandbox sites now have "TEST INVOICE" as a watermark. Stripe now supported in Nordic countries.
 
-* 07/09/2015: ACH payment gateway provider Check Gateway is now called Check Commerce. Add "account\_closed\_at" to the "Get Accounts" API.
+* 07/09/2015: ACH payment gateway provider Check Gateway is now called Check Commerce. Add "account_closed_at" to the "Get Accounts" API.
 
-* 07/01/2015: Account coupon management improvements in the new UI. Create Transaction API endpoint now supports tax\_exempt and tax\_code parameters. ACH now supports voiding transactions.
+* 07/01/2015: Account coupon management improvements in the new UI. Create Transaction API endpoint now supports tax_exempt and tax_code parameters. ACH now supports voiding transactions.
 
 ### June
 
@@ -3101,7 +3233,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 05/28/2015: Added "account closed at" date to Accounts Export. Fixed issue where Hosted Page logo uploads would fail when editing settings for the first time.
 
-* 05/21/2015: Added gateway error\_code to Transactions Export. Hosted edit billing info page now defaults to most recent gateway added.
+* 05/21/2015: Added gateway error_code to Transactions Export. Hosted edit billing info page now defaults to most recent gateway added.
 
 * 05/14/2015: Manual transactions can now be voided. Added IP address to Lookup Transaction API.
 
@@ -3113,47 +3245,47 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 04/14/2015: Clearing your site data will now delete any uncommitted tax docs in AvaTax.
 
-* 04/09/2015: Invoices and Invoice Summary exports now include an invoice\_type column that has either 'purchase' or 'refund'.
+* 04/09/2015: Invoices and Invoice Summary exports now include an invoice_type column that has either 'purchase' or 'refund'.
 
-* 04/07/2015: AvaTax Pro tax documents cannot be committed when Recurly site is in sandbox mode in order to allow document deletion when moving to production mode. Recurly's estimated tax previews now round down for digits under five, and\
+* 04/07/2015: AvaTax Pro tax documents cannot be committed when Recurly site is in sandbox mode in order to allow document deletion when moving to production mode. Recurly's estimated tax previews now round down for digits under five, and
   up for five and higher.
 
 * 04/02/2015: Fixed "count of accounts" on Reporting Dashboard.
 
 ### March
 
-* 03/19/2015: Bugfix for stripe refunds that were, in some cases, showing as Voided in Recurly but were actually Refunded in Stripe. The Invoices and Invoices Summary exports now include a "modified\_at" column at the end that shows the date the record was last edited. Sandbox and Production webhooks may now send on different schedules to prioritize production delivery. Recurly Merchants whose subscriptions are cancelled for non-payment will now have their sites closed after 30 days of nonuse.
+* 03/19/2015: Bugfix for stripe refunds that were, in some cases, showing as Voided in Recurly but were actually Refunded in Stripe. The Invoices and Invoices Summary exports now include a "modified_at" column at the end that shows the date the record was last edited. Sandbox and Production webhooks may now send on different schedules to prioritize production delivery. Recurly Merchants whose subscriptions are cancelled for non-payment will now have their sites closed after 30 days of nonuse.
 
 * 03/05/2015: Wirecard Error Code 34 is now classified as a generic fraud response.
 
-* 03/03/2015: Refund adjustments in the API now have quantity\_remaining to show the remaining amount of the original charge that has yet to be refunded. For non credit card billing info, you are no longer required to store first and last name.
+* 03/03/2015: Refund adjustments in the API now have quantity_remaining to show the remaining amount of the original charge that has yet to be refunded. For non credit card billing info, you are no longer required to store first and last name.
 
 ### February
 
-* 02/26/2015: New PayPal Error codes for: paypal\_cannot\_pay\_self, reference\_transactions\_not\_enabled, billing\_agreement\_not\_accepted, and billing\_agreement\_already\_accepted. Drop down links on Hosted Account Management pages are now fully clickable.
+* 02/26/2015: New PayPal Error codes for: paypal_cannot_pay_self, reference_transactions_not_enabled, billing_agreement_not_accepted, and billing_agreement_already_accepted. Drop down links on Hosted Account Management pages are now fully clickable.
 
 * 02/19/2015: Recurly will send notifications if your Public API key or Payment Gateway are modified.
 
 * 02/18/2015: Recurly will now notify you by email if your password has changed.
 
-* 02/11/2015: Added a new column to the Invoices export called "original\_adjustment\_uuid" to link credits to the previous credit they were created from.
+* 02/11/2015: Added a new column to the Invoices export called "original_adjustment_uuid" to link credits to the previous credit they were created from.
 
-* 02/10/2015: Added a new column to the Invoices export called "original\_adjustment\_uuid" to link credits to the previous credit they were created from.
+* 02/10/2015: Added a new column to the Invoices export called "original_adjustment_uuid" to link credits to the previous credit they were created from.
 
 * 02/05/2015: A bug has been fixed that will prevent certain duplicate push notifications from being sent. Legacy VAT feature for the European Union has been deprecated.
 
-* 02/03/2015: Adjustments API now includes original\_adjustment\_uuid for connecting a credit to the previous credit it was created from. Improved support for Amazon errors and messages. For customers using Vantiv, a new option in Payment Gateway Settings allows you to retry all hard declines to better use Vantiv's AAU.
+* 02/03/2015: Adjustments API now includes original_adjustment_uuid for connecting a credit to the previous credit it was created from. Improved support for Amazon errors and messages. For customers using Vantiv, a new option in Payment Gateway Settings allows you to retry all hard declines to better use Vantiv's AAU.
 
 ### January
 
-* 01/29/2015: We've improved our integration with Wirecard to better support the Recurly Account Updater. The Adjustment API now includes tax\_type, tax\_region, and tax\_rate.
+* 01/29/2015: We've improved our integration with Wirecard to better support the Recurly Account Updater. The Adjustment API now includes tax_type, tax_region, and tax_rate.
 
-* 01/27/2015: Added support for tracking of deleted accounts in our Salesforce\
+* 01/27/2015: Added support for tracking of deleted accounts in our Salesforce
   integration. Contact support to learn more!
 
 * 01/20/2015: Tax invoices now include line item tax amounts and in the case of more than one rate, tax rate information is displayed in the line item description. Invoices API now includes the customer's address for the specific invoice.
 
-* 01/19/2015: Webhooks that mention an invoice number now have a new field called invoice\_number\_prefix that is only populated with a value for EU VAT country specific invoice sequencing. This fixed a previous bug where the country code prefix was not displaying correctly in the webhooks.
+* 01/19/2015: Webhooks that mention an invoice number now have a new field called invoice_number_prefix that is only populated with a value for EU VAT country specific invoice sequencing. This fixed a previous bug where the country code prefix was not displaying correctly in the webhooks.
 
 * 01/06/2015: API responses for a subscription will now include the Update Subscription Notes endpoints. Recurly now supports amazon payments. Please contact our support team to learn more.
 
@@ -3161,7 +3293,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### December
 
-* 12/18/2014: VAT Location Validation account status has been added to the Accounts export as vat\_location\_valid. Recurly.js v3 tax previews now support digital rates with the tax\_code parameter. Update Subscription API now supports invoice notes editing when "/notes" is added to the call. Trailing and leading whitespaces will now be removed from all hosted page submissions in all form fields.
+* 12/18/2014: VAT Location Validation account status has been added to the Accounts export as vat_location_valid. Recurly.js v3 tax previews now support digital rates with the tax_code parameter. Update Subscription API now supports invoice notes editing when "/notes" is added to the call. Trailing and leading whitespaces will now be removed from all hosted page submissions in all form fields.
 
 * 12/16/2014: Fixed short-term bug where site invoice prefix numbers were showing in the invoice number for 3D secure transactions with SagePay and Wirecard.
 
@@ -3175,7 +3307,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 10/29/2014: Hosted Account Management pages have been updated to a new style and include new invoice management features. Sites that switch to Invoice Refunds will now be blocked from making Transaction Refunds via the API. A customer's hosted pages login token can now be reset by merchants through the Admin. New Invoice Settings option to use account address for the Bill To address and for tax calculations on all invoices. Refund invoices for European Union VAT transactions now use the original invoice's customer VAT number for tax calculations.
 
-* 10/07/2014: We removed three deprecated pages: coupons\_v1, accounts\_v1, transactions\_v1.
+* 10/07/2014: We removed three deprecated pages: coupons_v1, accounts_v1, transactions_v1.
 
 * 10/02/2014: API v2 now supports invoice previews for taxes on adjustments. Merchants can now configure Canada tax collection to GST only.
 
@@ -3191,7 +3323,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### August
 
-* 08/27/2014: Improved results returned on /subscriptions\_v2 page. Added filtering of trial or paid on /subscriptions\_v2 page. Added more search parameters to /subscriptions\_v2 page.
+* 08/27/2014: Improved results returned on /subscriptions_v2 page. Added filtering of trial or paid on /subscriptions_v2 page. Added more search parameters to /subscriptions_v2 page.
 
 * 08/26/2014: Charges with tax codes are now denoted on invoices. Avalara integration is now available on Sandbox sites. "Use Invoice Date" is now an option on Adjustments export. Added VAT number to the billing info in the Admin Panel (already support in the API). Polish Zloty is now an option for Braintree gateway.
 
@@ -3213,7 +3345,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 07/09/2014: PayPal transactions limitations have been updated to reflect changes by PayPal. The Show VAT button in the Hosted Payment Page Settings will now always show the VAT number, regardless of country.
 
-* 07/08/2014: An issue was fixed where the MailChimp sync time was not being correctly displayed. An issue was fixed where verification\_value would sometimes lose its value before being stored.
+* 07/08/2014: An issue was fixed where the MailChimp sync time was not being correctly displayed. An issue was fixed where verification_value would sometimes lose its value before being stored.
 
 * 07/02/2014: An issue was fixed where canceled subscription URLs would sometimes result in a 404.
 
@@ -3233,11 +3365,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 06/10/2014: The PayPal checkout flow for Recurly.js V3 was improved.
 
-* 06/09/2014: A new parameter was added to the email templates: current\_period\_end. This shows the time a subscription will end.
+* 06/09/2014: A new parameter was added to the email templates: current_period_end. This shows the time a subscription will end.
 
 * 06/05/2014: Authorization transactions have been renamed verifications.
 
-* 06/04/2014: A new parameter was added to the email templates: current\_period\_end. This shows the time a subscription will end. The settings for Hosted Payment Pages were reorganized. New subtotal logic for the invoice email was added.
+* 06/04/2014: A new parameter was added to the email templates: current_period_end. This shows the time a subscription will end. The settings for Hosted Payment Pages were reorganized. New subtotal logic for the invoice email was added.
 
 * 06/02/2014: Cancel button can now be removed from the Hosted Payment Pages. New Zealand Tax added.
 
@@ -3257,10 +3389,10 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 05/12/2014: New Zealand is now a supported country for Cybersource.
 
-* 05/07/2014: Subscriptions can no longer be activated on a closed account.\
+* 05/07/2014: Subscriptions can no longer be activated on a closed account.
   Various improvements were made to the Coupons page, such as sorting, formatting, and expiration behavior. An issue was fixed where a deleted coupon could occasionally be redeemed.
 
-* 05/05/2014: The /js/v1/token endpoint now uses the :postal\_code param in addition to :zip. An issue was corrected that would cause the fix six numbers of a credit cad to not appear correctly.
+* 05/05/2014: The /js/v1/token endpoint now uses the :postal_code param in addition to :zip. An issue was corrected that would cause the fix six numbers of a credit cad to not appear correctly.
 
 ### April
 
@@ -3290,7 +3422,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 03/28/2014: The subscriptions API now includes a Subscription Change Preview. Max logo height on Hosted Payment Pages is now unrestricted. Max width is 555px. Validation is now performed on IP addresses on the Allowlist.
 
-* 03/26/2014: A bug related to correctly setting approval\_code has been fixed. Text that displays when changing billing cycle of a plan has been updated to specify that the change will happen at renewal.
+* 03/26/2014: A bug related to correctly setting approval_code has been fixed. Text that displays when changing billing cycle of a plan has been updated to specify that the change will happen at renewal.
 
 * 03/25/2014: Invoice - Line Items export added. Subscription churn export added.
 
@@ -3306,7 +3438,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### February
 
-* 02/28/2014: Updated links to gateway error code explanation pages. Authorized\_currencies is no longer reset during billing info update.
+* 02/28/2014: Updated links to gateway error code explanation pages. Authorized_currencies is no longer reset during billing info update.
 
 * 02/24/2014: Update to transparent post error messaging for null responses.
 
@@ -3340,14 +3472,14 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 12/09/2013: Bug fixes around VAT and Phone Number displays on invoices.
 * 12/05/2013: Fix for updating billing information on manually invoiced accounts.
 * 12/05/2013: Added support for NZD to Braintree
-* 12/05/2013: Updated activity log to link account\_code rather than UUID.
+* 12/05/2013: Updated activity log to link account_code rather than UUID.
 * 12/04/2013: Updated error messaging around passed expiration years.
 * 12/04/2013: Added boolean logic to display VAT on email templates
 * 12/04/2013: Auto update and backwards compatibility for VAT on email templates.
 
 ### November
 
-* 11/26/2013: Added line\_accounting\_code parameter to email templates
+* 11/26/2013: Added line_accounting_code parameter to email templates
 * 11/15/2013: Added link to coupon from admin view
 * 11/12/2013: Updated invoice style
 * 11/05/2013: Updated user invite/welcome emails
@@ -3359,7 +3491,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ### October
 
-* 10/28/2013: Clear net\_terms when switching from manual to automatic invoicing
+* 10/28/2013: Clear net_terms when switching from manual to automatic invoicing
 * 10/28/2013: Fix for SagePay and 3D Secure invoice numbers
 * 10/28/2013: Added breadcrumbs to the transaction details page
 * 10/24/2013: Removed extra fields from CSV exports to optimize export speed
@@ -3381,7 +3513,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 09/27/2013: Added a Void/Refund email
 * 09/26/2013: Updated icons on admin console
 * 09/26/2013: Moved renewal reminder and trial ending emails out of beta
-* 09/19/2013: Added line\_item\_uuid to the invoice export.
+* 09/19/2013: Added line_item_uuid to the invoice export.
 * 09/16/2013: Fixed bug with subscription renewal reminder emails and limited lifespan subscriptions
 * 09/03/2013: Update to VAT validation process on Hosted Payment Page billing information updates
 
@@ -3421,7 +3553,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 06/10/2013: Added new subscription view
 * 06/10/2013: Added subscription reactivations to activity logs
 * 06/10/2013: Updates to Danish transactions
-* 06/10/2013: Added product\_code to adjustments XML response
+* 06/10/2013: Added product_code to adjustments XML response
 * 06/03/2013: Added support for more card types to Beanstream
 * 06/03/2013: Added support for subscription add-on details in push notifications
 * 06/03/2013: Updated Recurly.js v2.2.2 Merchants on V2.2.x should update for PayPal bug fix
@@ -3490,7 +3622,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 11/25/2012: Added coupon redemptions export
 * 11/12/2012: Added validation for unique add-on codes at creation
-* 11/12/2012: first\_renewal\_date will now update when a future subscription is postponed before it's first renewal
+* 11/12/2012: first_renewal_date will now update when a future subscription is postponed before it's first renewal
 * 11/12/2012: Added validation for postpone dates when being set through the API
 
 ### October
@@ -3500,7 +3632,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 10/14/2012: Removed European Union from countries list
 * 10/14/2012: Added ability to postpone canceled subscriptions
 * 10/14/2012: Removed future subscriptions from Subscriber Retention Report
-* 10/14/2012: Updated current\_period\_ends\_at\_ date to return "nil" for canceled subscriptions
+* 10/14/2012: Updated current_period_ends_at_ date to return "nil" for canceled subscriptions
 * 10/07/2012: Updated list of countries supported for PayPal purchases
 
 ### September
