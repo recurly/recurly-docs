@@ -68,6 +68,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        Aug 26
+      </td>
+
+      <td>
+        **Stripe gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/), please see our dedicated documentation. Our [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/) will be updated after release with new support details.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Aug 20
       </td>
 
