@@ -102,6 +102,14 @@ Payment details can only be added or updated via the **Add Payment Information b
 
 > 🚧 Note: For PCI compliance, use the method above. Editing payment information using the **Edit button** won't sync changes back to Recurly.
 
+### Accessing Recurly Account Information
+
+To access Recurly account, users can click the Hosted Recurly Account Page from the link at the bottom right of the Billing Information section. This allows the Salesforce user to redirect to Recurly Admin/Account Page.
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/9ed0e0c98704f870db197582c6b1802a66cdec516794a33c9ab203e1e2eef27b-image.png" />
+
+<br />
+
 ### Deleted accounts
 
 Deleted Recurly Accounts in Salesforce are captured in a custom object labeled Deleted Accounts. If an account is deleted in Recurly, its status in Salesforce changes to "Inactive."
@@ -190,6 +198,12 @@ If activated, the integration can generate new subscriptions in Recurly directly
 # Recurly invoices
 
 Recurly syncs invoices with fields like Invoice Number, Type, Status, Currency, and more in the **Recurly Invoices** object in Salesforce. On the Recurly Invoice page, associated Transactions and Line Items can be viewed.
+
+For customers that do not have a card on file, Recurly will generate an outstanding invoice.  Inside of Salesforce, we have added a URL link to the hosted invoice payment to allow the customer to complete payment. This URL is accessible in the Recurly Invoice panel - details section
+
+<Image align="center" className="border" border={true} src="https://files.readme.io/c8a9cc299386276cbf736c041fcc09e3e32fdb0c66d84ed194f37f0a41aee8d9-image.png" />
+
+<br />
 
 ## Editing an invoice
 
