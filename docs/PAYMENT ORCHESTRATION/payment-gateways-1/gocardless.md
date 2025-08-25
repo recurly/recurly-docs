@@ -22,7 +22,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
   * Minimum ACH transaction value of $2.
 * **Address requirements:** Specific payment methods demand minimum address details; ensure to gather these during the checkout process.
 * Hosted Gift Card pages do not support GoCardless.
-* Direct debit transactions can move from past\_due to processing status under certain conditions.
+* Direct debit transactions can move from past_due to processing status under certain conditions.
 * See GoCardless' website for their list of restricted activities and business models: [https://gocardless.com/legal/restrictions/](https://gocardless.com/legal/restrictions/)
 * No ability to import existing direct debit billing info via the API. However, this is possible with a professional services engagement.
 
@@ -51,7 +51,7 @@ Recurly’s integration with GoCardless allows merchants to harness the robust c
 
 SEPA and ACH are currently available through various Recurly integration points, while BACS and BECS are supported on Recurly.js, API V2, and V3. For BACS, BECS, and ACH, please contact support to enable this feature.
 
-> \*\*Note on credentials:\*\*Merchants are encouraged to use distinct sets of GoCardless credentials across Recurly sites to avoid transaction processing issues.
+> **Note on credentials:**Merchants are encouraged to use distinct sets of GoCardless credentials across Recurly sites to avoid transaction processing issues.
 
 ## API documentation
 
@@ -100,7 +100,7 @@ Managing refunds effectively is crucial for maintaining customer satisfaction an
 ### 1. Safer Refund Period
 
 * GoCardless offers a feature known as the **Safer Refund Period**. This feature prevents refunds from being initiated within 7 days of the original payment request. This function is designed to enhance security and is **OFF by default**.
-* [Learn more](https://developer.gocardless.com/api-reference/#refunds-create-a-refund) about the Safer Refund Period and how to create a refund with GoCardless.\
+* [Learn more](https://developer.gocardless.com/api-reference/#refunds-create-a-refund) about the Safer Refund Period and how to create a refund with GoCardless.
   **To Enable the Safer Refund Period:**
 * If you wish to activate this feature, contact your GoCardless account manager or support team.
 * It is important to adjust your billing flows to account for this delay in payment confirmations when issuing refunds.
@@ -118,7 +118,7 @@ Managing refunds effectively is crucial for maintaining customer satisfaction an
 
 ### Recommendations
 
-* If the 7-day Safer Refund feature is enabled, it is highly recommended to integrate this waiting period into your refund process. This proactive step helps to avoid conflicts and ensures a smoother refund experience for both your team and your customers.\
+* If the 7-day Safer Refund feature is enabled, it is highly recommended to integrate this waiting period into your refund process. This proactive step helps to avoid conflicts and ensures a smoother refund experience for both your team and your customers.
   By understanding and effectively utilizing GoCardless' refund features and limitations, you can create a more secure and customer-friendly refund process.
 
 # GoCardless integration with Recurly
@@ -150,7 +150,7 @@ Managing refunds effectively is crucial for maintaining customer satisfaction an
 
 1. Go to Recurly dashboard - Configuration - Currency.
 2. Enable the relevant currencies for your site (SEPA - EUR, ACH - USD, BACS - GBP, BECS - AUD). If you don’t see your desired currency or payment method, please contact [support@recurly.com](mailto:support@recurly.com) to enable it for you.
-3. .3. Enable GoCardless Late Failure and Chargeback notification webhooks. Recurly has automated Late Failure handling for SEPA payments, so that your gateway and GoCardless accounts are in sync. If you do not enable these webhooks, Recurly will be unaware of transaction failures within your reporting.
+3. Enable GoCardless Late Failure and Chargeback notification webhooks. Recurly has automated Late Failure handling for SEPA and ACH payments, so that your gateway and GoCardless accounts are in sync. If you do not enable these webhooks, Recurly will be unaware of transaction failures within your reporting.
 
 ### Step 4: Set up Recurly plans
 
@@ -189,7 +189,7 @@ When SEPA payments experience a failure (typically when a customer disputes a ch
 
 ## Step 10: Test the integration (development mode)
 
-10.1. Contact [support@recurly.com](mailto:support@recurly.com) and ask them to put your site in dev mode.\
+10.1. Contact [support@recurly.com](mailto:support@recurly.com) and ask them to put your site in dev mode.
 10.2. Connect your Recurly Sandbox to GoCardless Sandbox and test your transaction flows.
 
 ### Step 11: Go Live
