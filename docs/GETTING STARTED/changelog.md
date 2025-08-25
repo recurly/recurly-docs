@@ -98,11 +98,29 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about
 
         [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
 
         , visit our dedicated documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 26
+      </td>
+
+      <td>
+        **v3 API**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adding a new optional proration setting to several v3 endpoints.
       </td>
     </tr>
 
@@ -120,7 +138,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on[Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/), please see our dedicated documentation. Our[RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/) will be updated after release with new support details.
+        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on
+
+        [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
+
+        , please see our dedicated documentation. Our
+
+        [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/)
+
+         will be updated after release with new support details.
       </td>
     </tr>
 
@@ -138,7 +164,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated to account code handling to avoid errors in rare cases. To learn more about [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/), visit our dedicated documentation.
+        Updated to account code handling to avoid errors in rare cases. To learn more about 
+
+        [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/)
+
+        , visit our dedicated documentation.
       </td>
     </tr>
 
