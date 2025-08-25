@@ -279,7 +279,7 @@ Please work with support to enable these feature flags for your site.
 
 Recurly listens to several webhook events including the below list. Ensure they are enabled in your account. It is advised to enable all webhooks in the event we add new functionality in the future.
 
-When asked for a callback URL, you will format it as follows: `https://callbacks.recurly.com/adyen/<MERCHANT_SUBDOMAIN>`
+When asked for a callback URL, you will format it as follows: `https://callbacks.recurly.com/paypal_complete/<MERCHANT_SUBDOMAIN>`
 
 * `VAULT.PAYMENT-TOKEN.DELETED` -- this will ensure billing information is disabled and subscriptions are cancelled appropriately if a consumer cancels their billing agreement from within the PayPal app.
 * During Onboarding, PayPal will send us several notices depending on the state of your Business Account with PayPal:
