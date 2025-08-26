@@ -15,17 +15,17 @@ next:
 ---
 ## Transaction Flow
 
-When a customer subscribes to your service, the credit card number is sent from Recurly through a **payment gateway** to your **merchant bank account**. Once the transaction has been approved, the merchant bank account ultimately settles the transaction and transfers funds to your business bank account. If declined, a detailed error message is sent back through the system to Recurly.
+When a customer subscribes to your service, the credit card number or other payment instrument is sent from Recurly through a **payment gateway** to your **merchant account** and on to the **card issuer**, or other institution authorizing the transaction. Once the transaction has been approved, the transaction settles, and the merchant bank (Acquirer) ultimately funds you, the merchant, by transferring funds, minus fees, to your business bank account. If a transaction is declined, an error message is sent back through the system to Recurly with information on why and/or how to proceed. **Please note**, the granularity of the decline message is directly tied to a gateway's decline message availability. Some declines can be generic, and no further information is available to Recurly or the Gateway.
 
 ![601](https://files.readme.io/3XhVM9NSCyhUigQ54EtO_transactionflow.png "transactionflow.png")
 
 ## Payment Gateways
 
-Credit card payments must be submitted through a payment gateway. Payment gateways typically serve specific geographies and currency types. While most merchants require only one payment gateway, companies operating in multiple geographies may require multiple gateways.
+Credit card and other payments must be submitted through a payment gateway. Payment gateways traditionally serve specific geographies and merchant types, or have specialization in specific payment methods. While most merchants require only one payment gateway, companies operating in multiple geographies may require multiple gateways. It is also important to maintain redundancy by having multiple relationships.
 
 ## Merchant Banks
 
-The purpose of your merchant bank account is to serve as a ‘buffer’ in the event that transactions are contested via chargebacks. The merchant bank underwrites this risk by assessing fees to each merchant based on the characteristics of their business.
+The purpose of your merchant bank is to serve as a ‘buffer’ in the event that transactions are contested via chargebacks. The merchant bank underwrites this risk by assessing fees to each merchant based on the characteristics and risk level of their business.
 
 ## How can Recurly help?
 
