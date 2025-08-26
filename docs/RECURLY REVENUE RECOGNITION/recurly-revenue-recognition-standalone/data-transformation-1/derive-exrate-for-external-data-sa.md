@@ -4,7 +4,7 @@ excerpt: >-
   Automatically fetch and apply historical exchange rates for imported
   multi-currency subscriptions and invoices—no manual rates needed.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
