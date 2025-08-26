@@ -21,34 +21,75 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-PSD2 (Revised Payment Services Directive) is a European Union directive that came into effect on December 31, 2020, and requires financial institutions to provide more secure authentication procedures for online transactions within the European Economic Area (EEA). Its main objective is to enhance the security of online payments, reduce fraud and ensure user data protection, by mandating additional authentication steps during the checkout process.
+PSD2 (Revised Payment Services Directive) is a European Union directive that came into effect on December 31, 2020, requiring financial institutions to provide stronger authentication for online transactions within the European Economic Area (EEA). Its main objectives are to enhance payment security, reduce fraud, and ensure customer data protection by mandating additional authentication steps during checkout.
 
 # Embracing PSD2 compliance
 
-As of December 31, 2020, the Revised Payment Services Directive (PSD2) came into force across Europe, setting a new standard for the online transactions industry. With a later deadline of March 14, 2022 for the UK, this directive covers all online transactions within the European Economic Area (EEA), extending from Austria to the UK.
+As of December 31, 2020, the Revised Payment Services Directive (PSD2) came into force across Europe, with a later enforcement date of March 14, 2022, for the UK. This directive applies to all online transactions within the European Economic Area (EEA), from Austria to the UK.
 
 ## PSD2 preparedness with Recurly
 
-Recurly is committed to helping you smoothly transition into the era of PSD2. With our assistance, businesses can comply with SCA and implement 3DS for initial and one-time purchases. For subsequent renewal transactions, Recurly aims to exempt these transactions from SCA by marking them as Merchant Initiated Transactions (MITs), even for subscriptions that started prior to December 31, 2020. Be aware that in certain circumstances, subsequent MIT purchases may still require SCA, with card issuers having the ultimate say on any transaction. In such cases, Recurly is preparing to provide backup options to help recover MIT transactions that fail due to SCA.
+Recurly helps you remain compliant by supporting Strong Customer Authentication (SCA) through **3D Secure (3DS)** for initial and one-time purchases. For subscription renewals, Recurly flags subsequent charges as **Merchant-Initiated Transactions (MITs)** whenever possible to minimize the need for repeated authentication — even for subscriptions started before December 31, 2020.
 
-To fully embrace the changes brought by PSD2, we've prepared a step-by-step readiness checklist, detailing what needs to be done to support SCA through Recurly. From contacting your gateway to ensuring you're ready for 3D Secure 2.0 transactions, to configuring your dunning flow and performing comprehensive testing, our guide will lead you through the process.
+However, in some situations, SCA may still be required, and card issuers always have the final say on whether to challenge a transaction. In these cases, Recurly provides fallback options to help recover failed MIT charges.
+
+For comprehensive guidance, we also offer a step-by-step readiness checklist to ensure your business is fully aligned with PSD2 requirements.
+
+***
+
+# Subscription reactivation and SCA
+
+Under PSD2/SCA regulations, **resuming or reactivating a subscription** is a non-invoiced action, however the consumer should have their card re-verified to avoid compliance and fraudulent activity. These scenarios typically require **customer re-authentication** to comply with PSD2:
+
+* **Resuming a paused subscription** → If a customer paused their subscription and later resumes it, SCA is required and the consumer should reverify their card on file prior to resuming the subscription.
+* **Reactivating a canceled subscription** → If a customer cancels and later restarts their subscription, SCA is also required under PSD2.
+* **Automatic retries after failed payments** → If a payment fails and is automatically retried without customer involvement, Recurly treats these as MITs. However, in some rare cases, issuers may still enforce SCA if they flag the transaction. In this case, utilize [3D Secure Dunning emails](https://docs.recurly.com/recurly-subscriptions/docs/dunning-configuration-for-3ds-2-declines#/) to help resolve these reauthentication requests from consumer banks.
+
+> **Tip:** If you support subscription pauses or reactivation, make sure your integration supports 3D Secure challenges where needed to stay compliant.
+
+You can find our implementation guide for verifying stored cards in our [API Guide for 3DS on Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/).
+
+***
+
+# “One Leg Out” scenarios
+
+PSD2 applies only when **both** the merchant’s acquiring bank **and** the customer’s issuing bank are located in the European Economic Area (EEA) and the UK. If either party is outside the EEA or the UK, the transaction falls under a **“One Leg Out”** exemption:
+
+* If the merchant is outside the EEA but the customer’s card issuer is within the EEA → PSD2 technically **does not apply**, but issuers **may still request SCA** at their discretion.
+* If the merchant is inside the EEA but the customer’s card issuer is outside → The transaction is **out of PSD2 scope**, though issuers may still choose to enforce SCA.
+
+Because card issuers have control over enforcement, and the industry is moving towards consumer driven authentication to reduce fraud and scams, Recurly recommends **supporting 3D Secure wherever possible** to avoid unnecessary declines and keep up with  wider industry trends.
+
+***
 
 # Steps towards PSD2 compliance with Recurly
 
-This checklist provides a step-by-step guide on how to ensure your SCA support through Recurly:
+Use this checklist to ensure full SCA support through Recurly:
 
-1. **Engage with your gateway provider:** Make sure your setup supports 3D Secure 2.0 transactions along with any other required modifications. Find out the necessary changes in our <a href="https://docs.recurly.com/docs/gateway-specific-updates" target="_blank">Gateway-specific Updates</a>.
-2. **Revise your Recurly setup:** Enable SCA challenge flows during checkout. <a href="https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide" target="_blank">Our Implementation Guide</a> provides detailed instructions. *Note: If you use our hosted checkout pages, this step is not required.*
-3. **Adjust your dunning flow:** Set up your dunning flow and associated emails. You can learn more about this hosted flow in <a href="https://docs.recurly.com/docs/dunning-configuration-for-3ds-2-declines" target="_blank">our Documentation</a>. For those preferring a custom solution, refer to the implementation guide mentioned in Step 2.
-4. **Practice makes perfect – Test!:** Review our testing notes in our <a href="https://developers.recurly.com/guides/3ds2.html" target="_blank">PSD2 Integration Guide</a>. You can also find test cards for use with the hosted pages <a href="https://docs.recurly.com/docs/test" target="_blank">here</a>.
+1. **Engage with your gateway provider**
+   Confirm your gateway supports 3D Secure 2.0 transactions and make any required updates. See our [Gateway-specific updates](https://docs.recurly.com/docs/gateway-specific-updates).
+
+2. **Revise your Recurly setup**
+   Enable SCA challenge flows during checkout. Use our [3DS2 implementation guide](https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide).
+   _Note: Hosted checkout pages automatically handle this step._
+
+3. **Adjust your dunning flow**
+   Configure your dunning settings and emails to manage SCA declines effectively. Learn more in our [dunning configuration guide](https://docs.recurly.com/docs/dunning-configuration-for-3ds-2-declines).
+
+4. **Test your integration**
+   Review our [testing guide](https://developers.recurly.com/guides/3ds2.html) and use our [test cards](https://docs.recurly.com/docs/test) to simulate 3DS2 flows.
+
+***
 
 # More resources
 
-* <a href="https://www.adyen.com/blog/psd2-understanding-strong-customer-authentication" target="_blank">Adyen</a>: Dive deeper into understanding PSD2 and its implications with Adyen.
-* <a href="https://www.braintreepayments.com/blog/understanding-and-preparing-for-psd2-strong-customer-authentication/" target="_blank">Braintree</a>: Navigate your preparations for PSD2 with this comprehensive guide from Braintree.
-* <a href="https://stripe.com/guides/strong-customer-authentication" target="_blank">Stripe</a>: Explore Stripe's detailed guide on Strong Customer Authentication under PSD2.
-* <a href="https://www.worldpay.com/global/psd2" target="_blank">WorldPay</a>: WorldPay's resource on PSD2 provides a global perspective on this regulation.
-* <a href="https://www.cybersource.com/en-us/solutions/fraud-and-risk-management/3d-secure-and-psd2.html" target="_blank">Cybersource</a>: Learn about the intersection of 3D Secure and PSD2 with Cybersource.
+* [Adyen: PSD2 and SCA](https://www.adyen.com/blog/psd2-understanding-strong-customer-authentication)
+* [Braintree: Preparing for PSD2](https://www.braintreepayments.com/blog/understanding-and-preparing-for-psd2-strong-customer-authentication/)
+* [Stripe: SCA Guide](https://stripe.com/guides/strong-customer-authentication)
+* [WorldPay: PSD2 Overview](https://www.worldpay.com/global/psd2)
+* [Cybersource: 3D Secure and PSD2](https://www.cybersource.com/en-us/solutions/fraud-and-risk-management/3d-secure-and-psd2.html)
+
+***
 
 # FAQs
 
@@ -60,7 +101,7 @@ This checklist provides a step-by-step guide on how to ensure your SCA support t
 
 A: You can find all the technical details you need in our integration guide <a href="https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide" target="_blank">here</a>.
 
-**Q: Will my checkout conversions change because of 3DS?\*\***
+**Q: Will my checkout conversions change because of 3DS?****
 
 **A:** The first version of 3DS could lead to a drop in checkout conversions between 3-15%. But don't worry, the second version aims to limit this to a maximum of 5%. Remember, these numbers can change depending on your country. (Statistics provided by WorldPay)
 
