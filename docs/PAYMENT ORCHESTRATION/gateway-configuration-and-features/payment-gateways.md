@@ -24,9 +24,11 @@ If you don't yet have a gateway, please start [here][4] to explore gateway optio
 
 4. Set your accepted card types. Note, you'll also need to ensure that the card types are supported and enabled on your gateway account.
 
-5. Configure your Zero Dollar Authorization (ZDA) settings. Please test updating billing information with every card type you accept after enabling Zero Dollar Authorizations.
+5. Configure your Zero Dollar Authorization (ZDA) settings. Please test updating billing information with every card type you accept after enabling Zero Dollar Authorizations. Please note, not all gateways require or have this setting, and Zero Dollar Authorization support is implied, not requiring configuration.
 
 6. If your payment gateway requires Recurly's IPs to be on an allowlist, see our [IP Allowlist documentation][5] for the full list of IPs to supply to your gateway.
+
+7. If your payment gateway requires webhooks to be set up, see your individual gateway configuration instructions to ensure your transactions are updated appropriately.
 
 [1]: https://app.recurly.com/go/configuration/payment_gateways
 
@@ -52,7 +54,7 @@ A payment gateway can be enabled or disabled at any time to allow transactions t
 
 ## Payment Routing
 
-For accounts with multiple gateways configured, Recurly will route transactions based on accepted card type and currency. Beyond that, Recurly will send the transaction to the gateway first added to the account. You are able to specify which gateway will be used per transaction by utilizing Recurly's [Custom Gateway Routing][6] functionality. 
+For accounts with multiple gateways configured, Recurly will route transactions based on accepted card type and currency. Beyond that, Recurly will send the transaction to the gateway first added to the account. You are able to specify which gateway will be used per transaction by utilizing Recurly's [Custom Gateway Routing][6] functionality.
 
 ## Switching Gateways
 
@@ -80,7 +82,7 @@ Your payment gateway settings can be configured for Zero Dollar Authorizations (
 Recurly works to save you money by passing some basic validations before passing the transaction to your payment gateway. This includes:
 
 1. Validating that the credit card number is a valid number (ie; passes Luhn check)
-2. Validating that the CVV format matches the card type selected 
+2. Validating that the CVV format matches the card type selected
 3. Validating a future expiration date format
 4. Validating the zip code format (when country code is supplied, for limited countries)
 5. Validating the entry of address information based on site-level address requirements.
