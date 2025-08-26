@@ -123,7 +123,13 @@ For subscriptions bought on the last day of the month, and the bill date on the 
 
 #### Editing a bill date
 
-The Bill Date on an account is read-only and cannot be changed. However, if you wish to modify the bill date of a specific subscription or group of subscriptions, bill dates on subscriptions can be adjusted only via API. Once all subscriptions share the same bill date, they will bill on the same invoice. However, once you adjust a subscription's bill date, it won't re-align to the account's Bill Date and will renew separately.
+The **Bill Date** on an account is **read-only** and cannot be changed directly. However, you can adjust the bill date of a **specific subscription** or a **group of subscriptions** via the **API**.
+
+Once all subscriptions on an account share the same bill date, they will bill on a **single invoice**. If you adjust a subscription’s bill date, it will **not automatically re-align** to the account’s original Bill Date and will renew **separately** unless the **Subscription Alignment** setting is enabled.
+
+When **Subscription Alignment** is turned on, the **Account Bill Date** is cleared once the **last active subscription** on an account expires. If a **new subscription** is later created and **no other active subscriptions exist**, the **Account Bill Date** will be updated to match the **new subscription’s created date**.
+
+> **Note:** The **Subscription Alignment** setting is only available if your site has the **Aligning Renewals** feature enabled.
 
 #### Clearing a bill date
 
@@ -246,12 +252,12 @@ Before you can use Calendar Billing, you need to have it enabled for your Recurl
 
 * **Step 1**: Contact Recurly Support at [support@recurly.com](mailto:support@recurly.com) to request the activation of the Calendar Billing feature.
 * **Calendar Billing options:** You have a few options for how to enable Calendar Billing across your site.
-  * Request to have Calendar Billing provide *both* aggregate invoices as well as renewal alignment
+  * Request to have Calendar Billing provide _both_ aggregate invoices as well as renewal alignment
     * Once enabled, all customers' subscriptions with equal billing period intervals (months) created moving forward will be adopt the same bill date and invoice cadence of the very first subscription created on a given customer's account. All subscriptions will appear on a single invoice
       > 👍 Choosing to enable Calendar Billing with both renewal alignment and aggregate invoices will ensure all monthly subscriptions across your site moving forward will assume the new behavior
-  * Request to have Calendar Billing provide either aggregate invoices *or* renewal alignment
-    * Once *only* renewal alignment is enabled, all customer's subscriptions with equal billing period intervals (months) will be billed on the same date of the very first subscription created on a given customer's account but will not aggregated on a single invoice
-    * Once *only* aggregate invoices is enabled, all customer's subscriptions that have the exact same period end date down to the second will be displayed on a single invoice.
+  * Request to have Calendar Billing provide either aggregate invoices _or_ renewal alignment
+    * Once _only_ renewal alignment is enabled, all customer's subscriptions with equal billing period intervals (months) will be billed on the same date of the very first subscription created on a given customer's account but will not aggregated on a single invoice
+    * Once _only_ aggregate invoices is enabled, all customer's subscriptions that have the exact same period end date down to the second will be displayed on a single invoice.
       > 👍 Choosing to only enable "aggregate invoices" allows you as the merchant to own which subscriptions you would like to align for customer accounts
 
 ## Aligning Renewals
