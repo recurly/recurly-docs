@@ -4,7 +4,7 @@ excerpt: >-
   Create and manage complex product bundles with precise pricing and cost
   allocation using Recurly Revenue Recognition Advanced.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
