@@ -35,13 +35,15 @@ To enable and activate Account Updater, your Recurly account must have the follo
 Please be aware of the following limitations of **AVS** and **CVV** rejection rules:
 
 * Gateways that do not return AVS or CVV results will not function with this feature.
-* Only certain gateways are supported: Adyen, Authorize.net, Chase Orbital, PayPal Complete, Stripe, TSYS. Cybersources AVS rules in the gateway configuration page.
+* Only certain gateways are supported: Adyen, Authorize.net, Chase Orbital, PayPal Complete, Stripe, TSYS.
+  * Cybersource's AVS rules are located in the gateway configuration page.
 * Only applicable to Credit Card payments
 
 Please be aware of the following limitations of **Account Updater**:
 
 * Only applicable to Credit Card payments
 * OptBlue Amex MIDs are not supported
+* Merchants outside of the US using Amex will not be able to utilize Card Refresher
 
 # Definition
 
@@ -71,8 +73,8 @@ To better illustrate the functionality of AVS and CVV rules, we’ve provided a 
       </td>
 
       <td>
-        * *Account Updater:*\* For recurring transactions, cardholder data can become stale for long-running accounts. Account Updater can update billing information to ensure subscriptions continue to run over a long period of time.
-        * *AVS and CVV Rules:*\* For initial sign-ups, ensure that fraudulent transactions are rejected in the event the billing or CVV code provided does not match Issuer data.
+        * _Account Updater:_* For recurring transactions, cardholder data can become stale for long-running accounts. Account Updater can update billing information to ensure subscriptions continue to run over a long period of time.
+        * _AVS and CVV Rules:_* For initial sign-ups, ensure that fraudulent transactions are rejected in the event the billing or CVV code provided does not match Issuer data.
       </td>
     </tr>
   </tbody>
@@ -124,7 +126,7 @@ At this point, Account Updater will be enabled for your site, and cards that are
 
 ## Enabling AVS Checks
 
-**Click** on ‘Configuration’ → ‘Payment Settings’\
+**Click** on ‘Configuration’ → ‘Payment Settings’
 **Ensure** your gateway is listed in the supported list and is active in your gateways.
 **Toggle** the setting to ‘Enabled’.
 
