@@ -4,7 +4,7 @@ excerpt: >-
   Automatically generate invoice lines from imported sales orders—no separate
   billing imports needed.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
