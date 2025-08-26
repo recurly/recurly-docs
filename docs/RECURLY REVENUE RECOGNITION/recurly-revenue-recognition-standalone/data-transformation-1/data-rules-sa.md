@@ -4,7 +4,7 @@ excerpt: >-
   Apply custom logic and formulas to your sales orders during import for precise
   revenue recognition, contract handling, and cost allocation.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
