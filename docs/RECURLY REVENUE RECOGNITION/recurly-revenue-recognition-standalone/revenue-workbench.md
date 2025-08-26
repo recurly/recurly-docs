@@ -4,7 +4,7 @@ excerpt: >-
   Discover how to explore the data processed in Recurly's Revenue Recognition
   Standalone with the workbench capabilities.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
