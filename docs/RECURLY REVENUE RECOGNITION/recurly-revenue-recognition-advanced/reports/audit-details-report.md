@@ -4,7 +4,7 @@ excerpt: >-
   Explore the detailed guide on Audit Details Report in Recurly's Revenue
   Recognition user guide.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
