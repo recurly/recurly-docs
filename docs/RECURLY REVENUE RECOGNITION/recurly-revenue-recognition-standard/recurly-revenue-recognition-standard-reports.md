@@ -6,7 +6,7 @@ excerpt: >-
   compliance into your subscription management process and gain invaluable
   insights with comprehensive reports.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: >-
