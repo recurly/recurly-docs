@@ -41,7 +41,7 @@ For comprehensive guidance, we also offer a step-by-step readiness checklist to 
 
 Under PSD2/SCA regulations, **resuming or reactivating a subscription** is a non-invoiced action, however the consumer should have their card re-verified to avoid compliance and fraudulent activity. These scenarios typically require **customer re-authentication** to comply with PSD2:
 
-* **Resuming a paused subscription** → If a customer paused their subscription and later resumes it, SCA is required and the consumer should reverify their card on file prior to resuming the subscription. 
+* **Resuming a paused subscription** → If a customer paused their subscription and later resumes it, SCA is required and the consumer should reverify their card on file prior to resuming the subscription.
 * **Reactivating a canceled subscription** → If a customer cancels and later restarts their subscription, SCA is also required under PSD2.
 * **Automatic retries after failed payments** → If a payment fails and is automatically retried without customer involvement, Recurly treats these as MITs. However, in some rare cases, issuers may still enforce SCA if they flag the transaction. In this case, utilize [3D Secure Dunning emails](https://docs.recurly.com/recurly-subscriptions/docs/dunning-configuration-for-3ds-2-declines#/) to help resolve these reauthentication requests from consumer banks.
 
