@@ -4,7 +4,7 @@ excerpt: >-
   A detailed guide to the structured implementation process of Recurly's Revenue
   Recognition Standalone solution.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
