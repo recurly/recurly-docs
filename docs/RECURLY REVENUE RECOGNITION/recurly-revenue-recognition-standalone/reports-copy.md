@@ -4,7 +4,7 @@ excerpt: >-
   Recurly Revenue Recognition Standalone reports: Comprehensive insights for
   informed financial decisions.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
