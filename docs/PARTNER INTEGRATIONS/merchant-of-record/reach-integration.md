@@ -16,12 +16,12 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ### Prerequisites & limitations
 
-* **Minimum annual volume:** Reach is best suited for merchants processing at least $10 million+ in annual revenue. This threshold allows Reach to negotiate and provision localized acquiring relationships with tier-1 processors on your behalf (<a href="https://www.chargebee.com/docs/payments/2.0/others/reach" target="_blank">chargebee.com</a>, <a href="https://www.withreach.com/who-we-help/digital-saas" target="_blank">withreach.com</a>).
+* **Minimum annual volume:** Reach is best suited for merchants processing at least $10 million+ in annual revenue. This threshold allows Reach to negotiate and provision localized acquiring relationships with tier-1 processors on your behalf.
 * **Reach contract:** You must sign a master agreement directly with Reach to establish your merchant-of-record relationship. Once executed, Reach will generate the necessary credentials for:
 
   * One or more payment gateways (commonly Adyen, PayPal Complete, or Stripe)
   * Avalara for tax calculation and remittance
-  * Kount for fraud screening (<a href="https://www.chargebee.com/docs/payments/2.0/others/reach" target="_blank">chargebee.com</a>, <a href="https://docs.recurly.com/docs/gateway-merchant-account-overview" target="_blank">docs.recurly.com</a>).
+  * Kount for fraud screening.
 
 # Definition
 
@@ -37,11 +37,11 @@ Reach is a merchant-of-record (MoR) and payment orchestration platform designed 
 
 ## Obtaining Reach-issued credentials
 
-1. **Payment gateway credentials**: After contract execution, Reach will provision and provide API keys (or equivalent credentials) for one or more local payment processors—typically Adyen or PayPal Complete (sometimes Stripe)—depending on your target markets and preferred payment rails. These credentials ensure that Recurly routes authorizations through Reach’s acquiring relationships in each region (<a href="https://www.chargebee.com/docs/payments/2.0/others/reach" target="_blank">chargebee.com</a>, <a href="https://recurly.com/partner/expand-globally-with-recurly-reach" target="_blank">recurly.com</a>).
+1. **Payment gateway credentials**: After contract execution, Reach will provision and provide API keys (or equivalent credentials) for one or more local payment processors—typically Adyen or PayPal Complete (sometimes Stripe)—depending on your target markets and preferred payment rails. These credentials ensure that Recurly routes authorizations through Reach’s acquiring relationships in each region.
 
-2. **Tax engine credentials (Avalara)**: Reach will issue a set of Avalara API credentials (Account Number and License Key) scoped to your Reach account. These credentials enable Recurly to invoke Avalara’s rates-and-rules engine for accurate, real-time tax calculation and automated remittance across multiple jurisdictions (<a href="https://www.chargebee.com/docs/payments/2.0/others/reach" target="_blank">chargebee.com</a>, <a href="https://www.withreach.com/who-we-help/digital-saas" target="_blank">withreach.com</a>).
+2. **Tax engine credentials (Avalara)**: Reach will issue a set of Avalara API credentials (Account Number and License Key) scoped to your Reach account. These credentials enable Recurly to invoke Avalara’s rates-and-rules engine for accurate, real-time tax calculation and automated remittance across multiple jurisdictions.
 
-3. **Fraud management credentials (Kount)**: Reach configures a Kount profile on your behalf, providing API credentials that allow Recurly to send transaction data for risk screening. Kount’s device fingerprinting and behavior analytics help minimize declines and fraudulent transactions while preserving legitimate orders (<a href="https://recurly.com/partner/expand-globally-with-recurly-reach/" target="_blank">recurly.com</a>, <a href="https://www.withreach.com/who-we-help/digital-saas" target="_blank">withreach.com</a>).
+3. **Fraud management credentials (Kount)**: Reach configures a Kount profile on your behalf, providing API credentials that allow Recurly to send transaction data for risk screening. Kount’s device fingerprinting and behavior analytics help minimize declines and fraudulent transactions while preserving legitimate orders.
 
 ## Configuring Recurly
 
