@@ -98,7 +98,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about
 
         [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
 
@@ -278,11 +278,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated handling of
-
-        [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach)
-
-        Reporting queries to avoid improper invoice status updates.
+        Updated handling of [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach) Reporting queries to avoid improper invoice status updates.
       </td>
     </tr>
 
