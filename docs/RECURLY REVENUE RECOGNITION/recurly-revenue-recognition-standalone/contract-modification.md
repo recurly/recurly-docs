@@ -4,7 +4,7 @@ excerpt: >-
   Discover the intricacies of modifying contracts within Recurly's platform,
   providing seamless adjustments to price, term, and more.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
