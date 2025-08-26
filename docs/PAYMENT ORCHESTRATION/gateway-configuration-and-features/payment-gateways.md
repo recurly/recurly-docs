@@ -60,6 +60,8 @@ For accounts with multiple gateways configured, Recurly will route transactions 
 
 Because Recurly stores your customers' credit card data, you can easily switch payment gateways at any time. Simply disable/delete the old payment gateway and enable the new one---Recurly will automatically funnel transactions to the new payment gateway as long as it supports the same card types and currencies as your previous gateway account.
 
+Keep in mind, not all payment data can easily migrate to another gateway, especially if the payment instrument is tokenized. Please reach out to Support for your specific use case if you plan on switching gateways.
+
 **Note: Refunds will always process through the gateway account that processed the original charge. Because of this, we recommend keeping your old gateway account active and added to Recurly, but disabled for new transactions, until you no longer need to process refunds for transactions processed through your old gateway or the maximum refund window for your transactions has elapsed.**
 
 ## Gateway Downtime
