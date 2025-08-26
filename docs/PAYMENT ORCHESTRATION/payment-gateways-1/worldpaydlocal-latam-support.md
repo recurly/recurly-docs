@@ -49,7 +49,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 > 📘 Online refunds
 >
-> WorldPay will be enabling Online Refunds for merchants in mid-late April to comply with Online refund compliance. Since refunds can now be 'authorized', banks can now decline refund attempts. You may see declined refunds, which will need to be resubmitted, or resolved outside of Recurly directly with your consumer if their bank will not accept the refund attempt.
+> WorldPay enabled Online Refunds for merchants to comply with Online refund compliance. Since refunds can now be 'authorized', banks can now decline refund attempts. You may see declined refunds, which will need to be resubmitted, or resolved outside of Recurly directly with your consumer if their bank will not accept the refund attempt.
 >
 > You may wish to check your Refund Invoice settings to avoid unintended behavior related to declined refunds. Read more about how Recurly handles failed refunds by default in our [dedicated documentation](https://docs.recurly.com/docs/credit-invoices#/4-handling-failed-refunds).
 
@@ -159,9 +159,9 @@ Supported Regions:
       </td>
 
       <td>
-        * *ARS*\* (Visa, MC, Amex, Discover, JCB, Diner's Club, *Tarjeta Naranja*)
-        * *Else*\*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
-        * *EUR*\* for SEPA processing.
+        * _ARS_* (Visa, MC, Amex, Discover, JCB, Diner's Club, _Tarjeta Naranja_)
+        * _Else_*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
+        * _EUR_* for SEPA processing.
       </td>
     </tr>
   </tbody>
@@ -173,7 +173,7 @@ Worldpay Payment Gateway (WPG) requires you to enter XML credentials obtained fr
 
 **Billing address**
 
-At Recurly, we want to submit as much information (including the billing address) to WorldPay as possible. WorldPay, however, requires four mandatory fields - *Address line1, City, Postal code* and *Country*. If not provided, Recurly may use default values for these fields.
+At Recurly, we want to submit as much information (including the billing address) to WorldPay as possible. WorldPay, however, requires four mandatory fields - _Address line1, City, Postal code_ and _Country_. If not provided, Recurly may use default values for these fields.
 
 **Voids and refunds**
 
@@ -191,14 +191,14 @@ Find additional guidance in the [technical documentation](https://developers.rec
 
 1. Initiate the setup by contacting WorldPay to adjust your merchant account for international transactions.
 2. Access the WorldPay portal to authorize Recurly's IP addresses. Refer to our [IP Allowlist documentation](https://docs.recurly.com/docs/ip-allowlist) for a comprehensive list of IPs to include.
-3. While in the WorldPay platform, adjust the Capture delay setting to **1-Day**.\
+3. While in the WorldPay platform, adjust the Capture delay setting to **1-Day**.
    a. Implement callback configurations using the URLs [https://callbacks.recurly.com/worldpay](https://callbacks.recurly.com/worldpay) for notifications you wish to receive. For those with data in European Union (EU) data centers, utilize [https://callbacks.eu.recurly.com/worldpay](https://callbacks.eu.recurly.com/worldpay) instead.
 4. It's advisable to set up WorldPay to forward notifications to Recurly, ensuring alignment between Recurly's transaction records and WorldPay's.
 
 ### Configuration in Recurly
 
 1. Navigate to the “Payment Gateways” section within your Recurly application. Select “Add Payment Gateway” and choose WorldPay as your gateway.
-2. Input your WorldPay *Merchant Code*, **XML** *Username*, and **XML** *Password*. Note: The Username and Password for this setup differ from your WorldPay account login credentials.
+2. Input your WorldPay _Merchant Code_, **XML** _Username_, and **XML** _Password_. Note: The Username and Password for this setup differ from your WorldPay account login credentials.
 3. If you are accepting SEPA payments, input your WorldPay Mandate Prefix and Merchant ID. Ensure EUR is enabled.
 4. If you are utilizing 3D Secure, input your Issuer ID, Unit ID, HMAC Key, and Challenge URL.
 5. Specify the currencies and card types you plan to accept.
@@ -234,7 +234,7 @@ Setting up your WorldPay account correctly is crucial in ensuring smooth transac
    * Ensure that your WorldPay account is configured to support local currencies, including enabling zero-dollar authorizations (ZDA).
    * Understand the specifics about ZDA, especially in relation to Tarjeta Naranja, which does not support ZDA and processes verifications with a one-dollar charge.
 3. **Integration with Ebanx or dLocal**
-   * Establish a functioning relationship with Ebanx or dLocal, integrating them appropriately with your WorldPay account. You do not need to integrate *directly* to Ebanx or dLocal.
+   * Establish a functioning relationship with Ebanx or dLocal, integrating them appropriately with your WorldPay account. You do not need to integrate _directly_ to Ebanx or dLocal.
 4. **Setting up transaction details**
    * Be prepared to collect tax ID information, such as the CUIT (tax ID) from your global customers during the initial transactions. If you are not using one of CUIT, CPF, or CNPJ, you can send the Tax ID field without a type definition.
    * Configure your system to include fields for the tax identifier and its type during the payment process, aligning it to send this information correctly with each transaction to comply with the Argentine regulations.
