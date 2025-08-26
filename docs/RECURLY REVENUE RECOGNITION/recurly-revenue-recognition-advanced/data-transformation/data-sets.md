@@ -4,7 +4,7 @@ excerpt: >-
   Unlock powerful analytics by defining and updating custom data tables that
   feed all reports and dashboards automatically.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
