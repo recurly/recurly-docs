@@ -5,7 +5,7 @@ excerpt: >-
   rules, auto-generate invoices, derive exchange rates, and build analysis
   datasets.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
