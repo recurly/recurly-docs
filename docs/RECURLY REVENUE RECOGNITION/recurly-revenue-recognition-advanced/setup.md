@@ -4,7 +4,7 @@ excerpt: >-
   Recurly Revenue Recognition Advanced: Streamlining Revenue Recognition and
   Financial Reporting.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
