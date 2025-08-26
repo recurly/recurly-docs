@@ -98,7 +98,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/), visit our dedicated documentation.
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
+
+        [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
+
+        , visit our dedicated documentation.
       </td>
     </tr>
 
@@ -134,7 +138,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/), please see our dedicated documentation. Our [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/) will be updated after release with new support details.
+        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on 
+
+        [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
+
+        , please see our dedicated documentation. Our 
+
+        [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/)
+
+         will be updated after release with new support details.
       </td>
     </tr>
 
@@ -152,7 +164,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated to account code handling to avoid errors in rare cases. To learn more about [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/), visit our dedicated documentation.
+        Updated to account code handling to avoid errors in rare cases. To learn more about 
+
+        [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/)
+
+        , visit our dedicated documentation.
       </td>
     </tr>
 
@@ -212,11 +228,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Minor updates to
-
-        [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal)
-
-        to avoid an error for return customer signups.
+        Minor updates to [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal) to avoid an error for return customer signups.
       </td>
     </tr>
 
@@ -270,11 +282,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated handling of
-
-        [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach)
-
-        Reporting queries to avoid improper invoice status updates.
+        Updated handling of [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach) Reporting queries to avoid improper invoice status updates.
       </td>
     </tr>
 
@@ -328,11 +336,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise.
-
-        [Anomaly Insights](https://docs.recurly.com/recurly-subscriptionsdocs/recurly-compass#anomaly-insights)
-
-        documentation.
+        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise. [Anomaly Insights](https://docs.recurly.com/recurly-subscriptionsdocs/recurly-compass#anomaly-insights) documentation.
       </td>
     </tr>
 
@@ -350,11 +354,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our
-
-        [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/)
-
-        documentation.
+        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
       </td>
     </tr>
 
@@ -419,11 +419,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated
-
-        [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/)
-
-        for more information.
+        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/) for more information.
       </td>
     </tr>
 
@@ -504,15 +500,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our
-
-        [SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/)
-
-        and
-
-        [WorldPay gateway](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview)
-
-        documentation after release.
+        WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our [SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/) and [WorldPay gateway](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview) documentation after release.
       </td>
     </tr>
 
@@ -548,15 +536,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are adding support for Direct Debit payment methods into our Adyen Web Components solution for Third Party Checkout. New payment method availability includes: ACH, SEPA, iDeal, Bancontact (renewals require SEPA), and BACS. For more information, please read our
-
-        [Third Party Checkout](https://docs.recurly.com/recurly-subscriptions/update/docs/adyen-web-components#/)
-
-        and
-
-        [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
-
-        documentation.
+        We are adding support for Direct Debit payment methods into our Adyen Web Components solution for Third Party Checkout. New payment method availability includes: ACH, SEPA, iDeal, Bancontact (renewals require SEPA), and BACS. For more information, please read our [Third Party Checkout](https://docs.recurly.com/recurly-subscriptions/update/docs/adyen-web-components#/) and [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) documentation.
       </td>
     </tr>
 
@@ -574,15 +554,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are enabling support for Giact for NACHA Verification on the Adyen platform. For more information about
-
-        [NACHA compliance](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/)
-
-        , you can read our dedicated documentation. If you are using Giact on
-
-        [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
-
-        , read through our documentation on how to enable the feature.
+        We are enabling support for Giact for NACHA Verification on the Adyen platform. For more information about [NACHA compliance](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/), you can read our dedicated documentation. If you are using Giact on [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/), read through our documentation on how to enable the feature.
       </td>
     </tr>
 
@@ -600,11 +572,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introducing an automated integration between Recurly Subscription Management (RSM) and Recurly Engage! Current customers can take advantage of the Recurly Engage SDK within Recurly.js in all environments where Recurly.js is used including Checkout, and Hosted Account Management pages. See our dedicated documentation for more information about
-
-        [Recurly Engage](https://docs.recurly.com/recurly-subscriptions/docs/recurly-engage-integration#/)
-
-        .
+        Introducing an automated integration between Recurly Subscription Management (RSM) and Recurly Engage! Current customers can take advantage of the Recurly Engage SDK within Recurly.js in all environments where Recurly.js is used including Checkout, and Hosted Account Management pages. See our dedicated documentation for more information about [Recurly Engage](https://docs.recurly.com/recurly-subscriptions/docs/recurly-engage-integration#/).
       </td>
     </tr>
 
@@ -640,15 +608,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added support for sending Line Items to Adyen. Review best practices when sending line items in our dedicated documentation. For more information, please see our
-
-        [Adyen gateway](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
-
-        and
-
-        [Line Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items#/)
-
-        documentation.
+        Added support for sending Line Items to Adyen. Review best practices when sending line items in our dedicated documentation. For more information, please see our [Adyen gateway](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) and [Line Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items#/) documentation.
       </td>
     </tr>
 
@@ -739,8 +699,6 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         Added new functionality Send Payment Capture Link which sends an email to the Recurly Account email. In the Recurly Admin page, a new template is available  Payment Invoice Link Email Template. [learn more](https://docs.recurly.com/recurly-subscriptions/docs/salesforce-recurly#utilizing-automatic-payment-link-in-salesforce-opportunities).
-
-        <br />
 
         Updates to more easily link to Recurly account information from Salesforce. For more information, please see our [Salesforce integration](tps://docs.recurly.com/recurly-subscriptions/docs/adyen#/https://docs.recurly.com/recurly-subscriptions/docs/salesforce-recurly) documentation.
       </td>
@@ -1020,11 +978,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support for sending the expected arrival date of a physically shipped item to Adyen in API transactions. This is also in relation to Revenue Protect availability on 
-
-        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
-        . See documentation in our Adyen Gateway page for details after release.
+        Enabled support for sending the expected arrival date of a physically shipped item to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
@@ -1042,11 +996,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support for customer acquisition dates (account age) to Adyen in API transactions. This is also in relation to Revenue Protect availability on
-
-        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
-        . See documentation in our Adyen Gateway page for details after release.
+        Enabled support for customer acquisition dates (account age) to Adyen in API transactions. This is also in relation to Revenue Protect availability on [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium) . See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
@@ -1100,11 +1050,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added support for Fiserv's newest gateway offering, Commerce Hub. See 
-
-        [documentation on Commerce Hub](https://docs.recurly.com/docs/commerce-hub#/)
-
-         for more information on the new platform.
+        Added support for Fiserv's newest gateway offering, Commerce Hub. See [documentation on Commerce Hub](https://docs.recurly.com/docs/commerce-hub#/) for more information on the new platform.
       </td>
     </tr>
 
@@ -1122,11 +1068,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our 
-
-        [Direct Debit retries](https://docs.recurly.com/docs/sepa-retries#/)
-
-         documentation for more information.
+        Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our [Direct Debit retries](https://docs.recurly.com/docs/sepa-retries#/) documentation for more information.
       </td>
     </tr>
   </tbody>
@@ -1170,13 +1112,20 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Bug Fixes
+        **Bug Fixes**
+
         Resolved issue causing duplicate POB rule entries.
+
         Fixed Issue with Saving Multi-Element POB Rules.
+
         Fixed UI total display when all data fits on the screen.
+
         Addressed unauthorized error appearing on UI after login.
+
         Corrected redirection link to Recurly App on authentication click.
+
         Updated default user role to "No Access".
+
         Resolved a race condition issue that occurred when users updated multiple contract modifications simultaneously.
       </td>
     </tr>
@@ -1321,11 +1270,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support for sending the Shipping Method "name" to Adyen in API transactions. This is also in relation to 
-
-        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
-        . See documentation in our Adyen Gateway page for details after release.
+        Enabled support for sending the Shipping Method "name" to Adyen in API transactions. This is also in relation to [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium). See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
@@ -1343,11 +1288,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled support via V3 API to pass in Adyen's Revenue Protect Risk Profile IDs on API driven transactions. Documentation will be added to the V3 API upon release. Read more about 
-
-        [Recurly's Revenue Protect support ](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
-         in our Adyen documentation.
+        Enabled support via V3 API to pass in Adyen's Revenue Protect Risk Profile IDs on API driven transactions. Documentation will be added to the V3 API upon release. Read more about [Recurly's Revenue Protect support ](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium) in our Adyen documentation.
       </td>
     </tr>
 
@@ -1455,11 +1396,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabled Late failure / Chargeback Invoice behavior for Adyen ACH transactions and invoices. In the event an ACH transaction returns after initial processing and the status is _not_ "Insufficient Funds", a chargeback Invoice will be created and recorded. You can read more about this feature and how to enable it in our 
-
-        [Chargebacks / late failures for Direct Debit](https://docs.recurly.com/docs/chargebacks-for-direct-debit#/)
-
-         documentation.
+        Enabled Late failure / Chargeback Invoice behavior for Adyen ACH transactions and invoices. In the event an ACH transaction returns after initial processing and the status is _not_ "Insufficient Funds", a chargeback Invoice will be created and recorded. You can read more about this feature and how to enable it in our [Chargebacks / late failures for Direct Debit](https://docs.recurly.com/docs/chargebacks-for-direct-debit#/) documentation.
       </td>
     </tr>
 
@@ -1585,15 +1522,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable Recurly.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. See our 
-
-        [Recurly.js PayPal documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete)
-
-         for more information about our PayPal Complete integration, and the 
-
-        [Recurly.js browser support documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support#/)
-
-         for more information about the environments we support with Recurly.js.
+        Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable Recurly.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. See our [Recurly.js PayPal documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete) for more information about our PayPal Complete integration, and the [Recurly.js browser support documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support#/) for more information about the environments we support with Recurly.js.
       </td>
     </tr>
 
@@ -1611,19 +1540,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated the V3 
-
-        [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
-
-         and 
-
-        [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
-
-         endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on 
-
-        [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/)
-
-        . This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
+        Updated the V3 [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info) and [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv) endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/). This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
       </td>
     </tr>
 
@@ -2099,11 +2016,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the 
-
-        [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html)
-
-         for more details.
+        Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html) for more details.
       </td>
     </tr>
 
@@ -2121,11 +2034,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see 
-
-        [the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring)
-
-        .
+        Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see[the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring).
       </td>
     </tr>
 
