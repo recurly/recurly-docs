@@ -5,7 +5,7 @@ excerpt: >-
   Recognition Standalone features and rules management, ensuring accuracy of
   your rules.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
