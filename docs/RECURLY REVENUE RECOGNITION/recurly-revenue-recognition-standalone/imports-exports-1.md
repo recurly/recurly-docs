@@ -6,7 +6,7 @@ excerpt: >-
   enhance efficiency, drive accurate revenue recognition, and optimize your
   financial operations.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
