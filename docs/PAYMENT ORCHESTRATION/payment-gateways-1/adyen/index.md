@@ -94,7 +94,7 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 1. **Navigate** to “Developer” >> “Webhooks”.
 2. **Click** “+ Webhook” and find "Standard webhook" and click "Add".
-3. Under "Server configuration," **locate** and **click** on the pencil icon. In the field provided, enter the URL `https://callbacks.recurly.com/adyen/<MERCHANT_SUBDOMAIN>`, replacing "\<MERCHANT\_SUBDOMAIN>" with your Recurly site's actual subdomain. Once done, **click** on the "Apply" button.
+3. Under "Server configuration," **locate** and **click** on the pencil icon. In the field provided, enter the URL `https://callbacks.recurly.com/adyen/<MERCHANT_SUBDOMAIN>`, replacing "\<MERCHANT_SUBDOMAIN>" with your Recurly site's actual subdomain. Once done, **click** on the "Apply" button.
 
 <Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/fc70703-image.png" />
 
@@ -108,9 +108,13 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 5. **Click** “Save changes” at the bottom of the page.
 
-# Activation of "Network Transaction Reference" Value
+### Activation of "Network Transaction Reference" and Recurring Details
 
-To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Navigate to **Developers→Additional Data** in Adyen to enable this feature. Once activated, Adyen will generate a unique transaction ID for direct integrations; however, this ID will **not** be visible in Recurly.
+To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Additionally, for payment methods that require tokenization, enabling **Recurring Details** is also essential. This can be done in the same settings area in Adyen.
+
+Navigate to **Developers→Additional Data** in Adyen to enable these features. Once activated, Adyen will generate a unique NTID and reusable token (if applicable) for direct integrations as related to subscriptions; however, this ID will **not** be visible in Recurly.
+
+# Adding Adyen to your Recurly Site
 
 1. **Add the Adyen gateway**: Go to **Configuration → Payment Gateways → Add New Gateway** in your Recurly Admin.
 2. **Enter your Adyen credentials**: Provide the **username**, **password**, and **merchant account** details from your Adyen configuration.
@@ -120,7 +124,9 @@ To successfully process **MIT (Merchant-Initiated Transactions)** across all pay
 
 > **Note:** Enabling **Network Transaction Reference** in Adyen is required for successful MIT exemptions and payment processing across all methods—including (but not limited to) Google Pay, Apple Pay, and cards. If this setting isn’t enabled, transactions may fail even if your other Adyen settings are correct.
 
-# Special Currency Considerations
+# Special Considerations
+
+## Currencies
 
 While **ISK** and **CLP** are technically zero decimal currencies (meaning they cannot have partial amounts in cents), Adyen does not have plans to update their logic around these currencies. In order to support these currencies, Recurly will be taking the amount sent in the V3 API and adding the necessary '00' decimal places when sending these transactions to Adyen. It is important to not do this in your own integration to avoid overcharging your customers.
 
@@ -128,7 +134,7 @@ While **ISK** and **CLP** are technically zero decimal currencies (meaning they 
 
 If the Amount value is sent in as '23', Recurly will send '2300' to Adyen. Ensure your intent is to charge 23 ISK. If a Plan amount is set to 23.00, we will also send the amount to Adyen as 2300 instead of just '23'.
 
-# Special Address Considerations
+## Special Address Considerations
 
 Though Recurly supports sending shipping addresses to Adyen, the gateway requires the full and complete address in order to avoid errors. Recurly will not send partial addresses to Adyen as a result. If you are attempting to utilize reporting or fraud services with Adyen and want to use shipping address information in those settings, you must ensure that the full and complete address is set within a customer's shipping address information. This includes the street address, city, state, country, and postal code.
 
@@ -167,7 +173,7 @@ BACS on Adyen runs specifically on Adyen gateway tokens, so Recurly does not hav
 
 When using Recurly.js, you are responsible for obtaining consent and displaying appropriate regulatory information to the consumer on your website. The consumer should be aware of the amount, due date of future charges, frequency, and your Merchant business name when signing up for subscriptions.
 
-Additionally, it would be a good idea to note that Adyen's name will appear on bank statements as "ADYEN RE \[Merchant Name]'.
+Additionally, it would be a good idea to note that Adyen's name will appear on bank statements as "ADYEN RE [Merchant Name]'.
 
 ### SEPA
 
@@ -192,18 +198,18 @@ Within your Adyen platform:
 * Activate SEPA and/or BACS, depending on your needs.
   * Ensure the EUR currency is available for SEPA transactions.
   * Ensure the GPB currency is available for BACS transactions.
-* Enable RECURRING\_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
+* Enable RECURRING_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
 
 ## Dual Badge Card Support
 
 On the Adyen platform, Recurly supports the card types of **Cartes Bancaires**, a card brand offered to French customers, **Dankort** which is available only to Danish customers (DKK currency), and **Bancontact**, a brand offered in Belgium. These types of cards are known as "dual-badged" meaning the customer has a preference of which network they process their transactions and subscriptions with. Customers can select the major network (Visa or MasterCard), or the regional network (Cartes Bancaires, Dankort, or Bancontact) when processing a transaction.
 
-Dual Badge Compliance has two factors: *choice* and a *non-distinction policy* between credit and debit. Customers must be given a choice between Visa or the dual-badged option,  *and* be given the option to enter their card into a single field labeled 'Card', whether the card is debit or credit. If you are using Recurly.js elements, this is available and built into elements for you. If you are building your own UI, keep these regulations in mind.
+Dual Badge Compliance has two factors: _choice_ and a _non-distinction policy_ between credit and debit. Customers must be given a choice between Visa or the dual-badged option,  _and_ be given the option to enter their card into a single field labeled 'Card', whether the card is debit or credit. If you are using Recurly.js elements, this is available and built into elements for you. If you are building your own UI, keep these regulations in mind.
 
 To enable Cartes Bancaires, Dankort, or Bancontact support on your Adyen gateway, ensure you follow the below steps:
 
 1. Within the Adyen gateway settings, ensure **Cartes Bancaires**, **Dankort**, and/or **Bancontact** are checked as a card payment method(s) you wish to accept.
-2. Integrate to Recurly.js using either the *cardElement* or *cardNumberElement* parameters. See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#elements) and our [Dual/CoBadged guide](https://recurly.com/developers/guides/co-badge.html) for instructions on enabling card brand network preference within your implementation.
+2. Integrate to Recurly.js using either the _cardElement_ or _cardNumberElement_ parameters. See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#elements) and our [Dual/CoBadged guide](https://recurly.com/developers/guides/co-badge.html) for instructions on enabling card brand network preference within your implementation.
 3. In the case of Bancontact, ensure that SEPA is also enabled as Bancontact transactions will be converted to SEPA payments for recurring purposes.
    1. Fun facts:
       1. Bancontact cards do not have or require CVV codes.
@@ -211,7 +217,7 @@ To enable Cartes Bancaires, Dankort, or Bancontact support on your Adyen gateway
       3. Bancontact does not support separate auth and capture.
 4. In the case of Dankort, ensure the DKK currency is enabled on your Adyen and Recurly sites as Dankort is only accepted with this currency.
 
-The *customer* experience will be: A consumer will enter their card into the card field and if their card offers a choice, they should be presented with the options available to them as applicable to their card. They can select their network preference, and continue with their purchase or subscription sign up.
+The _customer_ experience will be: A consumer will enter their card into the card field and if their card offers a choice, they should be presented with the options available to them as applicable to their card. They can select their network preference, and continue with their purchase or subscription sign up.
 
 The same choice will be available when updating a billing info or changing billing information to a different dual-badged card. Cards stored in Recurly will retain that choice for subscription processing.
 
@@ -227,7 +233,7 @@ Cash App Pay is a digital wallet in the U.S. that allows users to make purchases
 
 Cash App through Adyen is only supportive of US / USD transactions.
 
-Cash App requires Adyen's RECURRING\_CONTRACT webhooks. Please refer to [configuration setup steps](https://docs.recurly.com/docs/adyen#additional-configuration) below or [Adyen's documentation](https://docs.adyen.com/development-resources/webhooks/webhook-types/#webhooks-settings-page) for more details on webhook setup.
+Cash App requires Adyen's RECURRING_CONTRACT webhooks. Please refer to [configuration setup steps](https://docs.recurly.com/docs/adyen#additional-configuration) below or [Adyen's documentation](https://docs.adyen.com/development-resources/webhooks/webhook-types/#webhooks-settings-page) for more details on webhook setup.
 
 ### **Recurly Configuration**
 
@@ -243,7 +249,7 @@ Within your Adyen platform:
 
 * Activate Cash App Pay.
 * Ensure the USD currency is available.
-* Enable RECURRING\_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
+* Enable RECURRING_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
 
 ## Adyen SEPA
 
@@ -266,7 +272,7 @@ It's important to note that the inaugural payment for a subscription employs iDE
 
 * Activate SEPA for subsequent payments.
 * Ensure the EUR currency is functional.
-* Enable RECURRING\_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
+* Enable RECURRING_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
 * Incorporate “Ideal details” webhooks. Steps can be found <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/#other-webhooks" target="_blank">here</a>.
 
 ### **Restrictions and guidelines**
@@ -303,13 +309,13 @@ For recurring transactions, Sofort (Klarna Debit Risk) isn't viable, and SEPA is
 
 ### **Restrictions and guidelines**
 
-* *Sofort is being phased out by Klarna and no new merchant accounts can be acquired at this time. Sofort will be replaced by Klarna Debit Risk behind the scenes at Adyen on September 30th. Merchants will see branding and UI changes after that time period. Adyen has stated no major technical changes are necessary, but that it is important to pass along the Country Code for proper routing. Please update your Recurly.js implementations if you are not passing this field.*
+* _Sofort is being phased out by Klarna and no new merchant accounts can be acquired at this time. Sofort will be replaced by Klarna Debit Risk behind the scenes at Adyen on September 30th. Merchants will see branding and UI changes after that time period. Adyen has stated no major technical changes are necessary, but that it is important to pass along the Country Code for proper routing. Please update your Recurly.js implementations if you are not passing this field._
 * Inherent limitations in Sofort (Klarna Debit Risk) restrict its use for free trials. For such offers, Recurly suggests SEPA Direct Debit.
 * Sofort (Klarna Debit Risk)  isn't compatible with subscriptions that have a deferred start.
 * Sofort (Klarna Debit Risk)  transactions cannot be chargeback managed.
 * Recurly’s Hosted Payment Pages don't support Sofort (Klarna Debit Risk).
 * For a holistic understanding of the limitations, refer [here](https://docs.recurly.com/docs/adyen#limitations).
-* SOFORT is also known as Klarna Debit Risk. This payment method is *not* the BNPL/Buy Now Pay Later flavor of Klarna.
+* SOFORT is also known as Klarna Debit Risk. This payment method is _not_ the BNPL/Buy Now Pay Later flavor of Klarna.
 
 ## Adyen Boleto
 
@@ -417,7 +423,7 @@ For questions on when a network token was or was not used, please reach out to y
 
 If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect.
 
-* **Protect Premium Support**: If you have a paid subscription to Adyen's Protect Premium service, you can create custom risk rules and pass the IDs to Recurly via API for subscription signups and one-time charges using our V3 API field: `billing_info.adyen_risk_profile_reference_id`. For more information on creation risk profiles at Adyen, please visit their documentation: <Anchor label="Create Risk Profiles" target="_blank" href="https://docs.adyen.com/risk-management/create-and-use-risk-profiles/">Create Risk Profiles</Anchor>
+* **Protect Premium Support**: If you have a paid subscription to Adyen's Protect Premium service, you can create custom risk rules and pass the IDs to Recurly via API for subscription signups and one-time charges using our V3 API field: `billing_info.adyen_risk_profile_reference_id`. For more information on creation risk profiles at Adyen, please visit their documentation: [Create Risk Profiles](https://docs.adyen.com/risk-management/create-and-use-risk-profiles/)
 * **Billing and Shipping Address Data**. See considerations for [Shipping Data on Adyen](https://docs.recurly.com/docs/adyen#/special-address-considerations) for more details on handling, and our own Shipping Address documentation for how to [add multiple customer shipping addresses to Recurly](https://docs.recurly.com/docs/shipping-addresses#/).
 * **Shipping Method and Amount**: We'll send the shipping amount on the invoice and the shipping method you set to Adyen when using Shipping on Recurly. Specifically, we will send the Shipping Method "Name" to Adyen, if you would like to configure Revenue Protect for your Recurly shipping methods. Read more about [Shipping Methods](https://docs.recurly.com/docs/shipping#/shipping-methods) in dedicated documentation.
 * **Browser Info**: Recurly sends this data when the shopper is routed through 3DS. Revenue Protect allows you to create and configure rules around browser data at the Adyen gateway.
@@ -425,7 +431,7 @@ If you are using Protect Premium or Revenue Protect with Adyen, we support sendi
   * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
   * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
 * **Acquisition Date**
-  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired\_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
+  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
 
 Some limitations include:
 
@@ -459,8 +465,8 @@ Typically, purchases using Recurly.js involve Recurly handling payments natively
 
 # Troubleshooting
 
-**Q:** An Tokenized Payment Method I am using (all non-Card payments) is not allowing conversions or subscriptions are failing. What can I do?\
+**Q:** An Tokenized Payment Method I am using (all non-Card payments) is not allowing conversions or subscriptions are failing. What can I do?
 **A:** Ensure you have enabled the proper Webhooks -- `RECURRING_CONTRACT` webhooks are critical to ensuring these payment methods function properly. Please see our configuration documentation for these webhooks above.
 
-**Q:** My customer tried to check out but received a decline from Adyen, what happened?\
+**Q:** My customer tried to check out but received a decline from Adyen, what happened?
 **A:** It will depend on the decline code you see in your Recurly Admin page for this transaction. If the rejection is due to 3DS requirements, please ensure you have 3DS enabled and configured both in Adyen and in your Recurly.js integration. If you already have 3DS enabled, the customer may not have completed the 3DS challenge successfully and the decline is expected.
