@@ -5,7 +5,7 @@ excerpt: >-
   transactions.  Invoice numbers are often sent but can be used differently per
   gateway.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
