@@ -8,9 +8,9 @@
 - payment-descriptors
 - currency-support-by-gateway
 - test-re
+- how-to-test-your-gateway
 - test
 - chargeback-management-for-cards
-- how-to-test-your-gateway
 - gateway-token-support
 - gateway-specific-information-for-invoice-numbers
 - deprecated-gateway-specific-information-for-invoice-numbers
