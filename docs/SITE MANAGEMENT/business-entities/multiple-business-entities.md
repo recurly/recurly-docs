@@ -71,7 +71,7 @@ The logic behind the automatic assignment of entities from the "BILL TO" address
 
 If you choose not to add any regions to any or all of your alternate entities' Subscriber Locations, all customers will be "automatically" assigned to the Site Default Entity, which serves as the site's fallback entity for assignment.
 
-After subscriber locations are set, customers meeting location criteria will begin to receive invoices from the corresponding business entity at the start of their next billing period. This applies to new *and* existing subscribers, unless their subscription(s) are assigned to a specific business entity, or their account has an overriding business entity assigned.
+After subscriber locations are set, customers meeting location criteria will begin to receive invoices from the corresponding business entity at the start of their next billing period. This applies to new _and_ existing subscribers, unless their subscription(s) are assigned to a specific business entity, or their account has an overriding business entity assigned.
 
 ### How does it work?
 
@@ -97,7 +97,12 @@ Merchants can choose to create a unique invoice sequence or use the shared seque
 
 #### Invoice Number Settings: Entity Prefix
 
-Merchants will be able to choose whether or not to enable entity-specific invoice sequencing directly on each of their business entities.  An entity prefix is an alphanumeric of 4 characters or less that is prepended to the sequential number. When adding an entity prefix, the sequence will start at 1000 and increment by 1. Changes to invoice numbering can potentially disrupt reconciliation and gateway processing.
+Merchants will be able to choose whether or not to enable entity-specific invoice sequencing directly on each of their business entities.  
+
+* An entity prefix is an alphanumeric of 4 characters or less that is prepended to the sequential number.
+* When adding an entity prefix, the sequence will start at 1000 and increment by 1.
+
+Note: Changes to invoice numbering can potentially disrupt reconciliation and gateway processing. For more detailed information, visit [gateway specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers).
 
 #### Invoice Number Settings: Country Sequencing
 
@@ -127,7 +132,7 @@ Terms and Conditions is a notes section available to you for any details you wou
 
 On your site’s [Invoice Templates](https://docs.recurly.com/docs/invoice-customization#instructions-for-use), any custom invoice display addresses, and header/footer images applied to a given template will still be applied to invoices sent to accounts with a customized invoice template assigned. If you decide you would like to use the invoice treatments applied at the entity level instead, you can select the first radio button option in the invoice template “edit” page, where you can choose to use the address/images applied on the entity level, rather than apply the custom invoice settings on the invoice template object. You can change this behavior whenever you want and as frequently as you want. Any updated settings will only be applied to forward-moving invoices.
 
-New invoice templates created on your site will have the options for using the entity-level invoice addresses, and header and footer images selected automatically. Again, you can change these settings at any point in time.\
+New invoice templates created on your site will have the options for using the entity-level invoice addresses, and header and footer images selected automatically. Again, you can change these settings at any point in time.
 Note: At this point in time, we do not support version history for images at the entity level. This means that if an invoice is posted, and you decide at a later time to edit that invoice for any reason, the newly-generated invoice will be re-sent to the customer with the image that is currently applied on the entity level. This also applies to refund/credit invoices.
 
 #### How do Entity-specific Notes to Customers and Terms and Conditions work with Recurly's existing invoice notes set on the Invoice Settings page?
@@ -150,7 +155,7 @@ If you have multiple brands, or customers that subscribe to more than one of you
 
 Currently, Recurly supports assigning entities on the subscription object within Recurly's Admin UI, and via Recurly’s API [V3](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription). Assignment for the initial purchase call on a subscription is only supported via API. Subscription level entity assignment is not available for purchase calls made on Recurly Checkout.
 
-To assign a business entity to a subscription upon creation in the Recurly Admin UI, select your desired "Override Business Entity" on the subscription itself, and press save. If you wish to change a business entity on an existing subscription, you may do so, however changes to Business Entities on the Subscription object can only take place on "Next\_Bill\_Date" or "Subscription\_term". To assign a subscription upon [creation via API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription), set the subscription's business\_entity\_id. To [change a subscription's assigned entity via API,](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change) change the subscription's business\_entity\_id, and the new entity will be applied upon the next billing renewal event.
+To assign a business entity to a subscription upon creation in the Recurly Admin UI, select your desired "Override Business Entity" on the subscription itself, and press save. If you wish to change a business entity on an existing subscription, you may do so, however changes to Business Entities on the Subscription object can only take place on "Next_Bill_Date" or "Subscription_term". To assign a subscription upon [creation via API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription), set the subscription's business_entity_id. To [change a subscription's assigned entity via API,](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change) change the subscription's business_entity_id, and the new entity will be applied upon the next billing renewal event.
 
 **Changing the Business Entity on the subscription is not available for immediate subscription changes.**
 
