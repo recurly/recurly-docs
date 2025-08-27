@@ -84,7 +84,12 @@ Merchants can set invoice treatments specific to their Site Default Business Ent
 
 #### Invoice Number Settings: Entity Prefix
 
-Merchants will be able to choose whether or not to enable entity-specific invoice sequencing directly on each of their business entities.  An entity prefix is an alphanumeric of 4 characters or less that is prepended to the sequential number. When adding an entity prefix, the sequence will start at 1000 and increment by 1. Changes to invoice numbering can potentially disrupt reconciliation and gateway processing.
+Merchants will be able to choose whether or not to enable entity-specific invoice sequencing directly on each of their business entities.  
+
+* An entity prefix is an alphanumeric of 4 characters or less that is prepended to the sequential number. 
+* When adding an entity prefix, the sequence will start at 1000 and increment by 1. 
+
+Note: Changes to invoice numbering can potentially disrupt reconciliation and gateway processing. For more detailed information, visit [gateway specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers).
 
 #### Invoice Number Settings: Country Sequencing
 
@@ -108,5 +113,5 @@ On your site’s Invoice Templates, any custom invoice display addresses, and he
 
 <Image align="center" src="https://files.readme.io/7e35d9a-Screenshot_2023-10-25_at_1.46.35_PM.png" />
 
-New invoice templates created on your site will have the options for using the entity-level invoice addresses, and header and footer images selected automatically. Again, you can change these settings at any point in time.\
+New invoice templates created on your site will have the options for using the entity-level invoice addresses, and header and footer images selected automatically. Again, you can change these settings at any point in time.
 Note: At this point in time, we do not support version history for images at the entity level. This means that if an invoice is posted, and you decide at a later time to edit that invoice for any reason, the newly-generated invoice will be re-sent to the customer with the image that is currently applied on the entity level. This also applies to refund/credit invoices.
