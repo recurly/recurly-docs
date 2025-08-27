@@ -40,7 +40,7 @@ All invoices on your Recurly site, both charge and credit, follow the same invoi
 
 ### Considerations
 
-Invoice numbers are often used in reconciliation of invoices and transactions.  This should be considered when adding an entity specific prefix.  Gateways handle the information sent differently, including length of these invoice numbers.
+Invoice numbers are often used in reconciliation of invoices and transactions.  This should be considered when adding an entity specific prefix.  Gateways handle the information sent differently, including length of these invoice numbers. For more detailed information, visit [gateway specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers).
 
 Invoice numbering customization options are detailed below:
 
@@ -111,7 +111,7 @@ Located at the top left of the invoice, this section lists your company's inform
 Every invoice includes a Bill To address for the customer:
 
 * Defaults to Billing Information for automatic collection methods or Account Information for manual methods.
-* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration→Taxes→Tax Settings.\
+* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration→Taxes→Tax Settings.
   Fields displayed in the Bill To section:
 * First and Last Name
 * Company Name (from Account Information)
@@ -132,7 +132,7 @@ An invoice includes a Ship To address if a shipping address is associated with t
 * State/Province
 * Zip/Postal Code
 * Country
-* VAT Number\
+* VAT Number
   Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses)
 
 ### Line items
@@ -159,7 +159,7 @@ At the bottom right of the invoice, the following invoice-level values are displ
 * **Subtotal:** The total before taxes and additional charges.
 * **Tax:** Shown only if tax is applicable to the invoice.
 * **Total:** The invoice total, inclusive of all charges and taxes.
-* **Balance:** The remaining amount due on the invoice.\
+* **Balance:** The remaining amount due on the invoice.
   Between the Total and Balance, the following balance-changing entries are listed:
 * **Paid:** Represents the total of all payment transactions.
 * **Credit Applied/Redeemed:** The total value of all credit payments applied to the invoice.
@@ -214,7 +214,7 @@ Invoices feature three types of notes sections, which are visible only if they c
 #### VAT reverse charge notes
 
 * **Description:** Used for European Union reverse charge tax scenarios.
-* **Configuration:** Set up on the Tax Settings page.\
+* **Configuration:** Set up on the Tax Settings page.
   Learn more about [VAT Reverse Charge Notes](https://docs.recurly.com/docs/eu-vat-2015#section-eu-vat-registered-customers)
 
 ## PDFs
@@ -295,7 +295,7 @@ Once you are on the Issue Refund page, you have a few options to choose how to h
 
 > 🚧 Important Callout:
 >
-> Merchants ***without*** the "Only Bill What Changed" and "Credit Memos" feature flags enabled on their site only have the option the to refund by "Quantity" for line items, and by "Specific Amounts" for entire invoices. Refunding by percentages and specific amounts on line items, and percentages on entire invoices, is *not available* for merchants without the "Credit Memos" and "OBWC" features enabled.
+> Merchants _**without**_ the "Only Bill What Changed" and "Credit Memos" feature flags enabled on their site only have the option the to refund by "Quantity" for line items, and by "Specific Amounts" for entire invoices. Refunding by percentages and specific amounts on line items, and percentages on entire invoices, is _not available_ for merchants without the "Credit Memos" and "OBWC" features enabled.
 
 **Select to refund by line item**:
 
