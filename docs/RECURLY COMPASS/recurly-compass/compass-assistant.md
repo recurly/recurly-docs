@@ -24,19 +24,11 @@ Find exactly what you need, fast. The in-app conversational search feature puts 
 
 **Search across:**
 
-* Product Docs
+* Product docs
 * Knowledge base articles
-* Developer Docs
+* Developer docs
 * Code snippets
-* Records including:
-  * Subscriptions
-  * Plans
-  * Accounts
-  * Transactions
-  * Invoices
-  * Gift cards
-  * Items
-  * Users
+* Records including: subscriptions, plans, accounts, transactions, invoices, gift cards, items, and users.
 
 <Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/ec5c613f3321ee803a665ac59bf4d0894e15cdd92cbbf28872bd1bb52a58e512-zeroState.png" />
 
@@ -46,7 +38,7 @@ Find exactly what you need, fast. The in-app conversational search feature puts 
 
 <Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/d6dc5be6516a837c3b27c8830bd9f14d21e0aac84d7ec9ea90b5f15a56d1de5c-api2.png" />
 
-Compass Assistant will also detect when you want to help from our Support team or you can always click ***Chat with Support***.
+Compass Assistant will also detect when you want to help from our Support team or you can always click _**Chat with Support**_.
 
 <Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" />
 
