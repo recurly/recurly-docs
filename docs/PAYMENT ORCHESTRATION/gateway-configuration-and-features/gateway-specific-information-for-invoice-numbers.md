@@ -13,11 +13,11 @@ metadata:
 
 ### Prerequisites
 
-* Access to one or more supported payment gateways or;
+* Access to one or more supported payment gateways.
 
 ### Limitations
 
-* Gateways each have their own character limit for gateway attributes
+* Gateways each have their own character limit for gateway attributes.
 
 # Invoice numbers character limits
 
