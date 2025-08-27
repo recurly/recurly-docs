@@ -1,5 +1,5 @@
 ---
-title: Deprecated gateway specific information for Invoice Numbers
+title: Deprecated gateway specific information for invoice numbers
 excerpt: >-
   Gateways each have their own specific attributes that are used for
   transactions.  Invoice numbers are often sent but can be used differently per
