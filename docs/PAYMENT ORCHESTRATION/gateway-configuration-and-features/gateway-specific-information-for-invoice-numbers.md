@@ -1,5 +1,5 @@
 ---
-title: Gateway specific information for Invoice Numbers
+title: Gateway specific information for invoice numbers
 excerpt: >-
   Gateways each have their own specific attributes that are used for
   transactions.  Invoice numbers are often sent but can be used differently per
@@ -9,8 +9,6 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
-
 # Overview
 
 ### Prerequisites
@@ -35,13 +33,11 @@ The following table displays the gateway and the maximum character requirement f
 | Check Commerce | 40                       |
 | WorldPay       | 100                      |
 
-<br />
-
 Invoice numbers that exceed the character limit for a gateway will be left truncated to meet the maximum character requirement for that gateway.  Some gateways have additional attributes that are set that may use invoice numbers.
 
 The following table displays the gateway and the maximum character requirement for that gateway and the special considerations for gateway attributes:
 
-<Table>
+<Table align={["left","left","left"]}>
   <thead>
     <tr>
       <th>
