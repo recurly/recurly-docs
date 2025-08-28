@@ -1,5 +1,5 @@
 ---
-title: Integration Best Practices
+title: Integration best practices
 excerpt: >-
   Recurly Professional Services has put together the following guide to help
   ensure you are successful integrating Recurly with Apple and Google. It is
