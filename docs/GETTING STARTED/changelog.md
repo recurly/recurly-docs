@@ -29,7 +29,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 | Release Date | **Feature**                     | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                |
 | :----------- | :------------------------------ | :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Sept 2       | **FreedomPay Gateway**          | Low                  | Minor updates to enable AVS and CVV checks on customer initiated transactions within Payment Settings.                                                                                                                                    |
-| Sept 2       | **Ebanx Gateway | UPI AutoPay** | Low                  | Updated subscription update validations to allow subscription PUT requests via the V3 API. This will allow updates to custom fields, among other behaviors.                                                                               |
+| Sept 2       | **Ebanx Gateway + UPI AutoPay** | Low                  | Updated subscription PUT validations via the V3 API to allow updates to subscriptions when using the UPI AutoPay payment method on Ebanx. This update will allow behaviors such as editing custom fields, among other things.             |
 | Sept 2       | **WorldPay Gateway**            | Low                  | WorldPay is now an allowable gateway within the Direct Debit retries UI within Payment Settings. If you are using WorldPay with SEPA Direct Debit, you can make use of automatic retries for payments rejected due to Insufficient Funds. |
 
 ## August
@@ -106,11 +106,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about
 
         [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
 
-         ,visit our dedicated documentation.
+        ,visit our dedicated documentation.
       </td>
     </tr>
 
@@ -146,15 +146,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on 
+        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on
 
         [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
 
-        , please see our dedicated documentation. Our 
+        , please see our dedicated documentation. Our
 
         [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/)
 
-         will be updated after release with new support details.
+        will be updated after release with new support details.
       </td>
     </tr>
 
@@ -172,7 +172,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated to account code handling to avoid errors in rare cases. To learn more about 
+        Updated to account code handling to avoid errors in rare cases. To learn more about
 
         [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/)
 
@@ -236,11 +236,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Minor updates to 
+        Minor updates to
 
         [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal)
 
-         to avoid an error for return customer signups.
+        to avoid an error for return customer signups.
       </td>
     </tr>
 
