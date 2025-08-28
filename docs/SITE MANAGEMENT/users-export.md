@@ -54,11 +54,11 @@ The exported CSV file provides columns under your export based on specific crite
 
 # Exports table
 
-| Id                                         | Example                                         | Description                                                                                                                          |
-| :----------------------------------------- | :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| <span id="email">email</span>              | [john.doe@email.com](mailto:john.doe@email.com) | The unique email address associated with each user. Used for login and communication purposes.                                       |
-| <span id="first_name">first\_name</span>   | John                                            | The first name of the user. Useful for personalized communication and record management.                                             |
-| <span id="last_name">last\_name</span>     | Doe                                             | The last name or surname of the user. Paired with the first name for complete identification.                                        |
-| <span id="user_access">user\_access</span> | Full Access                                     | Defines the permissions and capabilities a user has within the system. Can range from "Full Access" to "Read-Only".                  |
-| <span id="date_added">date\_added</span>   | 2023-01-05                                      | The date when the user was added to the system. This helps track user history and tenure.                                            |
-| <span id="user_role">user\_role</span>     | Administrator                                   | The role assigned to the user, dictating their responsibilities and tasks within the platform. Examples: Administrator, User, Guest. |
+| Id                                        | Example                                         | Description                                                                                                                          |
+| :---------------------------------------- | :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| <span id="email">email</span>             | [john.doe@email.com](mailto:john.doe@email.com) | The unique email address associated with each user. Used for login and communication purposes.                                       |
+| <span id="first_name">first_name</span>   | John                                            | The first name of the user. Useful for personalized communication and record management.                                             |
+| <span id="last_name">last_name</span>     | Doe                                             | The last name or surname of the user. Paired with the first name for complete identification.                                        |
+| <span id="user_access">user_access</span> | Full Access                                     | Defines the permissions and capabilities a user has within the system. Can range from "Full Access" to "Read-Only".                  |
+| <span id="date_added">date_added</span>   | 2023-01-05                                      | The date when the user was added to the system. This helps track user history and tenure.                                            |
+| <span id="user_role">user_role</span>     | Administrator                                   | The role assigned to the user, dictating their responsibilities and tasks within the platform. Examples: Administrator, User, Guest. |
