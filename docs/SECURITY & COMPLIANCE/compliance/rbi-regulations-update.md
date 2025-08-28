@@ -36,7 +36,7 @@ As of October 1, 2021, all issuing banks in India are required to adhere to the 
 
 **Key mandates under the RBI framework include:**
 
-1. Issuing banks are required to send a notification of the upcoming recurring charge to their credit card holders 24 hours prior to the charge. These alerts, delivered via SMS or email at the customer's preference, need to inform the cardholder about the merchant's name, transaction amount, date and time of the charge, among other details.
+1. Issuing banks are required to send a notification of the upcoming recurring charge to their credit card holders 24-48 hours prior to the charge. These alerts, delivered via SMS or email at the customer's preference, need to inform the cardholder about the merchant's name, transaction amount, date and time of the charge, among other details.
 2. E-mandate transactions are now capped at INR 15,000 (approximately 180 USD at the time of this writing). Transactions exceeding this amount will necessitate additional factors of authentication (AFA).
 3. Customers now have the ability to cancel a subscription directly through their bank account, eliminating the need to contact the merchant.
 
@@ -48,5 +48,20 @@ Recurly is actively working with its gateway partners to align with these mandat
 
 ## Recurly's response to the RBI's new guidelines
 
-To minimize the impact of these changes on your business, we recommend **ceasing** standard recurring payments for customers in India due to the high risk of declines, and instead, utilize Recurly’s new dunning campaigns. These automated messages will inform your Indian customers about expected payment declines and guide them on how to activate customer-initiated transactions (CIT). Offering multi-month or annual subscriptions can also be an effective strategy to reduce monthly confirmations by customers. With Recurly’s prepaid account balance functionality, you can allow subscribers to add to their prepaid account balance, and then decrement subscribers’ account balances monthly.\
-For any additional questions, feel free to contact us. Your success in navigating these new RBI regulations is our priority.
+We have two options for RBI compliant payments in India including cards via Stripe, and UPI AutoPay via Ebanx. You can use both solutions in tandem to give your customers a selection of options at checkout for subscriptions, and for Stripe if you wish to offer one-time payments as well.
+
+### Stripe Credit Card E-Mandate Support
+
+We have introduced support for credit card processing and e-mandate creation in India on the Stripe gateway platform. You can read more about our specific support in this region in our [Stripe documentation](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/special-payment-method-handling).
+
+### Ebanx UPI AutoPay E-Mandate Support
+
+We have also introduced support for UPI AutoPay and associated e-mandate support on the Ebanx gateway. You can read more about [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) and our [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) integration in our dedicated documentation.
+
+### All Other gateways and payment methods
+
+If you are not using Stripe with Cards, or Ebanx with UPI AutoPay, to minimize the impact of these changes on your business, we recommend **ceasing** standard recurring payments for customers in India. This is due to the high risk of declines, and instead, we recommend utilizing Recurly’s dunning campaigns. 
+
+These automated messages will inform your Indian customers about expected payment declines and guide them on how to activate customer-initiated transactions (CIT). Offering multi-month or annual subscriptions can also be an effective strategy to reduce monthly confirmations by customers. With Recurly’s prepaid account balance functionality, you can allow subscribers to add to their prepaid account balance, and then decrement subscribers’ account balances monthly.
+
+For any additional questions, feel free to contact us. Your success in navigating RBI regulations is our priority.
