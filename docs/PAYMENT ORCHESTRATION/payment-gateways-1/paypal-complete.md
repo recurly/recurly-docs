@@ -51,16 +51,16 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 
 # Key details
 
-| Services                        | Description                                                                                   |
-| :------------------------------ | :-------------------------------------------------------------------------------------------- |
-| Supported Recurly services      | PayPal Complete                                                                               |
-| Supported operations            | Payment, Refund                                                                               |
-| Supported payment types         | Credit and Debit Cards, PayPal                                                                |
-| Supported card brands           | Visa, Mastercard, American Express, Discover, JCB, Diner Club                                 |
-| Gateway specific 3DS2 supported | N/A                                                                                           |
-| Card on File Supported          | N/A                                                                                           |
-| Regions                         | United States, EMEA, Canada, United Kingdom/EU, APAC                                          |
-| Currencies                      | USD, AUD, CAD, CHF, CZK, DKK, EUR, MYR, GBP, HUF, JPY, NOK, NZD, PLN, SEK, SGD, TWD, and PHP. |
+| Services                        | Description                                                                                                                 |
+| :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------- |
+| Supported Recurly services      | PayPal Complete                                                                                                             |
+| Supported operations            | Payment, Refund                                                                                                             |
+| Supported payment types         | Credit and Debit Cards, PayPal                                                                                              |
+| Supported card brands           | Visa, Mastercard, American Express, Discover, JCB, Diner Club                                                               |
+| Gateway specific 3DS2 supported | N/A                                                                                                                         |
+| Card on File Supported          | N/A                                                                                                                         |
+| Regions                         | United States, EMEA, Canada, United Kingdom/EU, APAC                                                                        |
+| Currencies                      | USD, AUD, BRL, CAD, CHF, CNY, CZK, DKK, EUR, GBP, HDK, HUF, ILS, JPY, MXN, MYR, NOK, NZD, PHP, PLN, SEK, SGD, THB, and TWD. |
 
 ## Required PayPal Setup
 
