@@ -35,6 +35,8 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## August
 
+Added deleted order lines to Order Stage History as archived data.
+
 <Table align={["left","left","left","left"]}>
   <thead>
     <tr>
@@ -57,6 +59,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   </thead>
 
   <tbody>
+    <tr>
+      <td>
+        Aug 29
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
     <tr>
       <td>
         Aug 26
@@ -111,7 +131,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
         [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
 
-        ,visit our dedicated documentation.
+        , visit our dedicated documentation.
       </td>
     </tr>
 
