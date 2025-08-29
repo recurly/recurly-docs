@@ -71,7 +71,8 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        * Added deleted order lines to Order Stage History as archived data.Introduced Bundle Rule ID field in order lines for mapping.
+        * Added deleted order lines to Order Stage History as archived data.
+        * Introduced Bundle Rule ID field in order lines for mapping.
         * Extended Account Type table with 10 additional segment columns to support new segments.Added a data sync API check to update client indicators only when a job is set; revalidates before saving to prevent duplicate job updates.Implemented validation for VC date.
         * Built the Workbench object and added a helper for tab switching.Added "Select All" button for Stage Area.
         * Enabled book retention from the search page.
