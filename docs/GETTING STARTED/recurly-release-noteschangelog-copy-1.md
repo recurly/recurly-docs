@@ -34,228 +34,6 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 <Table align={["left","left","left","left"]}>
   <thead>
     <tr>
-      <th>Release Date</th>
-      <th>**Feature**</th>
-      <th>**Potential Impact**</th>
-      <th>**Description / Overview**</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>Aug 29</td>
-      <td>**Revenue Recognition**</td>
-      <td>Low</td>
-      <td>
-        * Added deleted order lines to Order Stage History as archived data.
-        * Introduced Bundle Rule ID field in order lines for mapping.
-        * Extended Account Type table with 10 additional segment columns to support new segments.Added a data sync API check to update client indicators only when a job is set; revalidates before saving to prevent duplicate job updates.Implemented validation for VC date.
-        * Built the Workbench object and added a helper for tab switching.Added "Select All" button for Stage Area.
-        * Enabled book retention from the search page.
-        * Enhanced account type functionality by adding 10 new segments to `account_type_c`.
-        * Enhanced Standalone Selling Price (SSP) with multiple fixes, including criteria handling for "Approved" status, Compliance Pct corrections, SSP group item download and contract link, support for BundleRuleID/BundleParentID in criteria, editable Parent Identifier in new lines, and a fix for the Format ID unit test.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 26</td>
-      <td>**Recurly Engage**</td>
-      <td>Low</td>
-      <td>Minor updates to segment data CSV exports to better handle special characters in titles.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 26</td>
-      <td>**Recurly Engage**</td>
-      <td>Low</td>
-      <td>Enhance experiment window user experience by preventing auto-close on save.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 26</td>
-      <td>**PayPal Complete gateway**</td>
-      <td>Medium</td>
-      <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/" target="_blank" rel="noopener noreferrer">PayPal Complete</a>, visit our dedicated documentation.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 26</td>
-      <td>**v3 API**</td>
-      <td>Low</td>
-      <td>Adding a new optional proration setting to several v3 endpoints.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 26</td>
-      <td>**Stripe gateway**</td>
-      <td>Medium</td>
-      <td>
-        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/" target="_blank" rel="noopener noreferrer">Stripe</a>, please see our dedicated documentation. Our
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/" target="_blank" rel="noopener noreferrer">RBI mandate documentation</a> will be updated after release with new support details.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 20</td>
-      <td>**Kount Fraud Management**</td>
-      <td>Low</td>
-      <td>
-        Updated to account code handling to avoid errors in rare cases. To learn more about
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount#/" target="_blank" rel="noopener noreferrer">Kount Fraud management</a>, visit our dedicated documentation.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 20</td>
-      <td>**PayPal Complete gateway**</td>
-      <td>Medium</td>
-      <td>If PayPal (the digital wallet) is the primary payment method for a subscription and the PayPal subscription agreement is cancelled by the subscriber within their PayPal app or otherwise outside of Recurly, Recurly will now cancel that related subscription.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 19</td>
-      <td>**Revenue Recognition**</td>
-      <td>Medium</td>
-      <td>
-        *Added display of the Initial Financial Open Period to the Revenue Settings page.
-        *Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status.
-        *Fixed overlap issue where the Recurly Resources button on the Home page covered the wizard when opened.
-        *Auto Period Close and Period Close Checklist job refactoring
-        *Fix auto period lag days to count complete N days
-        *Api to purge client and client data
-        *Hide RevRec settings for Setup Fees when no setup fee exists
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 12</td>
-      <td>**Adyen gateway**</td>
-      <td>Medium</td>
-      <td>
-        Minor updates to
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal" target="_blank" rel="noopener noreferrer">iDeal</a> to avoid an error for return customer signups.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 12</td>
-      <td>**Ebanx gateway**</td>
-      <td>Low</td>
-      <td>Minor updates to Pause events on UPI AutoPay mandates. Consumer-driven mandate pauses will be automatically paused for 1 year. Subscription pause lengths can be updated by a merchant after confirming length of pause with the consumer.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 12</td>
-      <td>**Ebanx gateway**</td>
-      <td>Low</td>
-      <td>Minor updates to trial handling to avoid a 1 INR charge.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 12</td>
-      <td>**Adyen gateway**</td>
-      <td>Medium</td>
-      <td>
-        Updated handling of
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach" target="_blank" rel="noopener noreferrer">ACH</a> Reporting queries to avoid improper invoice status updates.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 12</td>
-      <td>**V3 Client Libraries**</td>
-      <td>Medium</td>
-      <td>Updated to support returning enhanced Google Pay indicators when a DPAN is in use.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 12</td>
-      <td>**Revenue Recognition**</td>
-      <td>High</td>
-      <td>Added scroll-to-top behavior when opening the Configuration of Default Rules section.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 12</td>
-      <td>**Anomaly Insights**</td>
-      <td>Low</td>
-      <td>
-        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise.
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-compass#/anomaly-insights" target="_blank" rel="noopener noreferrer">Anomaly Insights</a> documentation.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 11</td>
-      <td>**Ebanx gateway**</td>
-      <td>High</td>
-      <td>
-        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank" rel="noopener noreferrer">UPI AutoPay payment method</a> documentation.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 5</td>
-      <td>**Compass Assistant**</td>
-      <td>Low</td>
-      <td>We're excited to announce the launch of Compass Assistant, now available across all active subdomains! This new conversational chatbot provides instant access to information from our product documentation and knowledge base, and can even furnish helpful code snippets for our APIs. You'll also notice that AI Answers will now direct you to Compass Assistant for a more comprehensive experience; should a merchant wish to opt-out, please contact Support.</td>
-    </tr>
-
-    <tr>
-      <td>Aug 5</td>
-      <td>**Revenue Recognition**</td>
-      <td>Medium</td>
-      <td>
-        Revrec Enhancements in Recurly and RevRec-
-        Removed Auto Period Close Delay for Advanced Merchants in Revenue Settings.
-        Removed Auto Period Close Delay option from the Self-Service Onboarding Wizard for RA-enabled merchants.
-        Fixed datepicker in the RevRec enablement dialog to display correctly in front of the dialog (CSS update only).
-        Updated RevRec Enablement Alert to display the correct text and buttons based on user permissions and site configurations.
-        Updated Data Sync Finished alert logic to only display after `enabled_at` is set in the group memberships table, ensuring it appears only when the site is activated.
-        Added validation for VC Rules to ensure "From Date" is less than or equal to "To Date."
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 1</td>
-      <td>**MasterCard Account Updater**</td>
-      <td>Medium</td>
-      <td>
-        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/" target="_blank" rel="noopener noreferrer">Account Updater documentation</a> for more information.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 1</td>
-      <td>**Revenue Recognition**</td>
-      <td>High</td>
-      <td>
-        Updates - removed open period logic from infra/revrecStart to prevent the period from reverting to the initial period.
-        Fixed bundle rule addition issue when only one bundle rule exists under a parent item by grouping the count by bundle ID.
-      </td>
-    </tr>
-
-    <tr>
-      <td>Aug 1</td>
-      <td>**Ebanx Gateway**</td>
-      <td>Medium</td>
-      <td>Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 10% tolerance for amount updates.</td>
-    </tr>
-  </tbody>
-</Table>
-
-
-## July
-
-<Table align={["left","left","left","left"]}>
-  <thead>
-    <tr>
       <th>
         Release Date
       </th>
@@ -277,11 +55,71 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
-        Jul 31
+        Aug 29
       </td>
 
       <td>
-        **WorldPay Gateway**
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        * Added deleted order lines to Order Stage History as archived data.
+        * Introduced Bundle Rule ID field in order lines for mapping.
+        * Extended Account Type table with 10 additional segment columns to support new segments.Added a data sync API check to update client indicators only when a job is set; revalidates before saving to prevent duplicate job updates.Implemented validation for VC date.
+        * Built the Workbench object and added a helper for tab switching.Added "Select All" button for Stage Area.
+        * Enabled book retention from the search page.
+        * Enhanced account type functionality by adding 10 new segments to `account_type_c`.
+        * Enhanced Standalone Selling Price (SSP) with multiple fixes, including criteria handling for "Approved" status, Compliance Pct corrections, SSP group item download and contract link, support for BundleRuleID/BundleParentID in criteria, editable Parent Identifier in new lines, and a fix for the Format ID unit test.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 26
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to segment data CSV exports to better handle special characters in titles.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 26
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enhance experiment window user experience by preventing auto-close on save.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 26
+      </td>
+
+      <td>
+        **PayPal Complete gateway**
       </td>
 
       <td>
@@ -289,21 +127,341 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our
-
-        [SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/)
-
-        and
-
-        [WorldPay gateway](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview)
-
-        documentation after release.
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/" target="_blank" rel="noopener noreferrer">PayPal Complete</a>, visit our dedicated documentation.
       </td>
     </tr>
 
     <tr>
       <td>
-        Jul 29
+        Aug 26
+      </td>
+
+      <td>
+        **v3 API**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adding a new optional proration setting to several v3 endpoints.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 26
+      </td>
+
+      <td>
+        **Stripe gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/" target="_blank" rel="noopener noreferrer">Stripe</a>, please see our dedicated documentation. Our
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/" target="_blank" rel="noopener noreferrer">RBI mandate documentation</a> will be updated after release with new support details.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 20
+      </td>
+
+      <td>
+        **Kount Fraud Management**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated to account code handling to avoid errors in rare cases. To learn more about
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount#/" target="_blank" rel="noopener noreferrer">Kount Fraud management</a>, visit our dedicated documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 20
+      </td>
+
+      <td>
+        **PayPal Complete gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        If PayPal (the digital wallet) is the primary payment method for a subscription and the PayPal subscription agreement is cancelled by the subscriber within their PayPal app or otherwise outside of Recurly, Recurly will now cancel that related subscription.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 19
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        *Added display of the Initial Financial Open Period to the Revenue Settings page.
+        *Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status.
+        *Fixed overlap issue where the Recurly Resources button on the Home page covered the wizard when opened.
+        *Auto Period Close and Period Close Checklist job refactoring
+        *Fix auto period lag days to count complete N days
+        *Api to purge client and client data
+        *Hide RevRec settings for Setup Fees when no setup fee exists
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Adyen gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Minor updates to
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal" target="_blank" rel="noopener noreferrer">iDeal</a> to avoid an error for return customer signups.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to Pause events on UPI AutoPay mandates. Consumer-driven mandate pauses will be automatically paused for 1 year. Subscription pause lengths can be updated by a merchant after confirming length of pause with the consumer.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to trial handling to avoid a 1 INR charge.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Adyen gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach" target="_blank" rel="noopener noreferrer">ACH</a> Reporting queries to avoid improper invoice status updates.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **V3 Client Libraries**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated to support returning enhanced Google Pay indicators when a DPAN is in use.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Added scroll-to-top behavior when opening the Configuration of Default Rules section.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 12
+      </td>
+
+      <td>
+        **Anomaly Insights**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-compass#/anomaly-insights" target="_blank" rel="noopener noreferrer">Anomaly Insights</a> documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 11
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank" rel="noopener noreferrer">UPI AutoPay payment method</a> documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 5
+      </td>
+
+      <td>
+        **Compass Assistant**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        We're excited to announce the launch of Compass Assistant, now available across all active subdomains! This new conversational chatbot provides instant access to information from our product documentation and knowledge base, and can even furnish helpful code snippets for our APIs. You'll also notice that AI Answers will now direct you to Compass Assistant for a more comprehensive experience; should a merchant wish to opt-out, please contact Support.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 5
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Revrec Enhancements in Recurly and RevRec-
+        Removed Auto Period Close Delay for Advanced Merchants in Revenue Settings.
+        Removed Auto Period Close Delay option from the Self-Service Onboarding Wizard for RA-enabled merchants.
+        Fixed datepicker in the RevRec enablement dialog to display correctly in front of the dialog (CSS update only).
+        Updated RevRec Enablement Alert to display the correct text and buttons based on user permissions and site configurations.
+        Updated Data Sync Finished alert logic to only display after `enabled_at` is set in the group memberships table, ensuring it appears only when the site is activated.
+        Added validation for VC Rules to ensure "From Date" is less than or equal to "To Date."
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 1
+      </td>
+
+      <td>
+        **MasterCard Account Updater**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/" target="_blank" rel="noopener noreferrer">Account Updater documentation</a> for more information.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 1
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updates - removed open period logic from infra/revrecStart to prevent the period from reverting to the initial period.
+        Fixed bundle rule addition issue when only one bundle rule exists under a parent item by grouping the count by bundle ID.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Aug 1
       </td>
 
       <td>
@@ -314,432 +472,220 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
         Medium
       </td>
 
+      <td>
+        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 10% tolerance for amount updates.
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+## July
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>Release Date</th>
+      <th>**Feature**</th>
+      <th>**Potential Impact**</th>
+      <th>**Description / Overview**</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Jul 31</td>
+      <td>**WorldPay Gateway**</td>
+      <td>Medium</td>
+      <td>
+        WorldPay gateway will be enabled with SEPA processing capabilities. For more information, please see our
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/" target="_blank" rel="noopener noreferrer">SEPA</a>
+        and
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview" target="_blank" rel="noopener noreferrer">WorldPay gateway</a>
+        documentation after release.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Jul 29</td>
+      <td>**Ebanx Gateway**</td>
+      <td>Medium</td>
       <td>
         Updated handling of gateway-level events so that we will cancel a subscriptions when a mandate is revoked after a successful transaction. Additionally, paused subscriptions events will also pause the subscription on the Recurly platform until a consumer-driven change (cancellation or resume) is received.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **Adyen Gateway | Third Party Checkout**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Jul 29</td>
+      <td>**Adyen Gateway | Third Party Checkout**</td>
+      <td>Medium</td>
       <td>
         We are adding support for Direct Debit payment methods into our Adyen Web Components solution for Third Party Checkout. New payment method availability includes: ACH, SEPA, iDeal, Bancontact (renewals require SEPA), and BACS. For more information, please read our
-
-        [Third Party Checkout](https://docs.recurly.com/recurly-subscriptions/update/docs/adyen-web-components#/)
-
+        <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/adyen-web-components#/" target="_blank" rel="noopener noreferrer">Third Party Checkout</a>
         and
-
-        [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
-
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/" target="_blank" rel="noopener noreferrer">Adyen</a>
         documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Jul 29</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
       <td>
         We are enabling support for Giact for NACHA Verification on the Adyen platform. For more information about
-
-        [NACHA compliance](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/)
-
-        , you can read our dedicated documentation. If you are using Giact on
-
-        [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
-
-        , read through our documentation on how to enable the feature.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/" target="_blank" rel="noopener noreferrer">NACHA compliance</a>, you can read our dedicated documentation. If you are using Giact on
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/" target="_blank" rel="noopener noreferrer">Adyen</a>, read through our documentation on how to enable the feature.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **Recurly.js | Recurly Engage**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Jul 29</td>
+      <td>**Recurly.js | Recurly Engage**</td>
+      <td>Medium</td>
       <td>
         Introducing an automated integration between Recurly Subscription Management (RSM) and Recurly Engage! Current customers can take advantage of the Recurly Engage SDK within Recurly.js in all environments where Recurly.js is used including Checkout, and Hosted Account Management pages. See our dedicated documentation for more information about
-
-        [Recurly Engage](https://docs.recurly.com/recurly-subscriptions/docs/recurly-engage-integration#/)
-
-        .
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-engage-integration#/" target="_blank" rel="noopener noreferrer">Recurly Engage</a>.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **Commerce Hub Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Added support for Level 2 data processing. This includes purchase order number and tax details.
-      </td>
+      <td>Jul 29</td>
+      <td>**Commerce Hub Gateway**</td>
+      <td>Low</td>
+      <td>Added support for Level 2 data processing. This includes purchase order number and tax details.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Jul 29</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
       <td>
         Added support for sending Line Items to Adyen. Review best practices when sending line items in our dedicated documentation. For more information, please see our
-
-        [Adyen gateway](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/)
-
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/" target="_blank" rel="noopener noreferrer">Adyen gateway</a>
         and
-
-        [Line Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items#/)
-
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/line-items#/" target="_blank" rel="noopener noreferrer">Line Item</a>
         documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
+      <td>Jul 29</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
+      <td>Minor updates to decline handling when 3DS authentication is not completed by the consumer.</td>
+    </tr>
 
-      <td>
-        **Adyen Gateway**
-      </td>
+    <tr>
+      <td>Jul 29</td>
+      <td>**WorldPay Gateway**</td>
+      <td>Low</td>
+      <td>Minor updates to decline handling when the Merchant ID on file is invalid at the gateway level.</td>
+    </tr>
 
-      <td>
-        Low
-      </td>
+    <tr>
+      <td>Jul 29</td>
+      <td>**Cybersource Gateway**</td>
+      <td>High</td>
+      <td>Updates to decline handling when the processor selected is 'Barclays' or 'Barclays2' in gateway configuration.</td>
+    </tr>
 
+    <tr>
+      <td>Jul 29</td>
+      <td>**Sagepay Gateway**</td>
+      <td>Low</td>
+      <td>Updates to query encryption logic to enhance security.</td>
+    </tr>
+
+    <tr>
+      <td>Jul 21</td>
+      <td>**Salesforce Integration**</td>
+      <td>Low</td>
       <td>
-        Minor updates to decline handling when 3DS authentication is not completed by the consumer.
+        Added new functionality Send Payment Capture Link which sends an email to the Recurly Account email. In the Recurly Admin page, a new template is available Payment Invoice Link Email Template. <a href="https://docs.recurly.com/recurly-subscriptions/docs/salesforce-recurly#utilizing-automatic-payment-link-in-salesforce-opportunities" target="_blank" rel="noopener noreferrer">learn more</a>.
+        Updates to more easily link to Recurly account information from Salesforce. For more information, please see our <a href="https://docs.recurly.com/recurly-subscriptions/docs/salesforce-recurly" target="_blank" rel="noopener noreferrer">Salesforce integration</a> documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **WorldPay Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Minor updates to decline handling when the Merchant ID on file is invalid at the gateway level.
-      </td>
+      <td>Jul 18</td>
+      <td>**Invoice Number Prefix**</td>
+      <td>High</td>
+      <td>Updated Invoicing with the ability to modify invoice number sequencing to include a prefix. Invoice numbers are used for invoices as well as transactions and are sent to gateways which can have varying formatting requirements. As such, changes to invoice numbers could impact reconciliation.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **Cybersource Gateway**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        Updates to decline handling when the processor selected is 'Barclays' or 'Barclays2' in gateway configuration.
-      </td>
+      <td>Jul 18</td>
+      <td>**Amazon V2 Gateway**</td>
+      <td>Medium</td>
+      <td>Updated handling of Amazon pre-renewal queries related to rate limiting responses. We will retry transactions that return as rate limited moving forward.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 29
-      </td>
-
-      <td>
-        **Sagepay Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updates to query encryption logic to enhance security.
-      </td>
+      <td>Jul 15</td>
+      <td>**Stripe Gateway**</td>
+      <td>Low</td>
+      <td>Enabled support for Payment Method Configuration IDs to Third Party Checkout.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 21
-      </td>
-
-      <td>
-        **Salesforce Integration**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Added new functionality Send Payment Capture Link which sends an email to the Recurly Account email. In the Recurly Admin page, a new template is available  Payment Invoice Link Email Template. [learn more](https://docs.recurly.com/recurly-subscriptions/docs/salesforce-recurly#utilizing-automatic-payment-link-in-salesforce-opportunities).
-
-        Updates to more easily link to Recurly account information from Salesforce. For more information, please see our [Salesforce integration](tps://docs.recurly.com/recurly-subscriptions/docs/adyen#/https://docs.recurly.com/recurly-subscriptions/docs/salesforce-recurly) documentation.
-      </td>
+      <td>Jul 15</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
+      <td>Enabling support for Shipping Amount. This will send the line item shipping cost to transactions sent to Adyen.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 18
-      </td>
-
-      <td>
-        **Invoice Number Prefix**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        Updated Invoicing with the ability to modify invoice number sequencing to include a prefix. Invoice numbers are used for invoices as well as transactions and are sent to gateways which can have varying formatting requirements.  As such, changes to invoice numbers could impact reconciliation.
-      </td>
+      <td>Jul 15</td>
+      <td>**Ebanx Gateway**</td>
+      <td>Medium</td>
+      <td>Updated handling of Mandate Expiry dates for UPI AutoPay to extend 2 years past the initial renewal term.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 18
-      </td>
-
-      <td>
-        **Amazon V2 Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated handling of Amazon pre-renewal queries related to rate limiting responses. We will retry transactions that return as rate limited moving forward.
-      </td>
+      <td>Jul 15</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
+      <td>Enabled support for IDR currency on the Adyen platform.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 15
-      </td>
-
-      <td>
-        **Stripe Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Enabled support for Payment Method Configuration IDs to Third Party Checkout.
-      </td>
+      <td>Jul 16</td>
+      <td>**General Compliance Enhancements**</td>
+      <td>Medium</td>
+      <td>Recurly is committed to compliance and general upkeep of our systems. In doing so, several features are receiving behind-the-scenes maintenance including subscription NTID management and storage. No merchant or customer-facing facing features are impacted.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 15
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Enabling support for Shipping Amount. This will send the line item shipping cost to transactions sent to Adyen.
-      </td>
+      <td>Jul 8</td>
+      <td>**Commerce Hub Gateway**</td>
+      <td>Low</td>
+      <td>The gateway will be visible in Payment Gateway onboarding.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 15
-      </td>
-
-      <td>
-        **Ebanx Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated handling of Mandate Expiry dates for UPI AutoPay to extend 2 years past the initial renewal term.
-      </td>
+      <td>Jul 8</td>
+      <td>**Emails**</td>
+      <td>Low</td>
+      <td>Updated to avoid sending a 'refund' email when a chargeback occurs.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 15
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Enabled support for IDR currency on the Adyen platform.
-      </td>
+      <td>Jul 8</td>
+      <td>**Stripe Gateway**</td>
+      <td>Low</td>
+      <td>Updated handling of asynchronous refund status updates. If pending refunds on Stripe move to a failed state, they can be reattempted manually.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 16
-      </td>
-
-      <td>
-        **General Compliance Enhancements**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Recurly is committed to compliance and general upkeep of our systems. In doing so, several features are receiving behind-the-scenes maintenance including subscription NTID management and storage. No merchant or customer-facing facing features are impacted.
-      </td>
+      <td>Jul 8</td>
+      <td>**FreedomPay Gateway**</td>
+      <td>Low</td>
+      <td>Updated to support a 'Test Configuration' button to test credentials during testing and go-live procedures.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 8
-      </td>
-
-      <td>
-        **Commerce Hub Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        The gateway will be visible in Payment Gateway onboarding.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Jul 8
-      </td>
-
-      <td>
-        **Emails**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated to avoid sending a 'refund' email when a chargeback occurs.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Jul 8
-      </td>
-
-      <td>
-        **Stripe Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated handling of asynchronous refund status updates. If pending refunds on Stripe move to a failed state, they can be reattempted manually.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Jul 8
-      </td>
-
-      <td>
-        **FreedomPay Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated to support a 'Test Configuration' button to test credentials during testing and go-live procedures.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        July 8
-      </td>
-
-      <td>
-        **Revenue Recognition Standard**
-      </td>
-
-      <td>
-        High
-      </td>
-
+      <td>Jul 8</td>
+      <td>**Revenue Recognition Standard**</td>
+      <td>High</td>
       <td>
         Revenue Recognition Self-Service Onboarding - Introduced a streamlined process for setting up and activating the RevRec self-service experience. This allows merchants using RevRec Standard and Recurly Managed RevRec Advanced to independently configure and launch their sites.
         This process requires the following steps to be completed before activation:
@@ -754,1284 +700,549 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
     </tr>
 
     <tr>
-      <td>
-        July 8
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        BigQuery Refactoring & Bug Fixes - Improved BigQuery performance through query optimization and folder restructuring. Enhanced code reusability and resolved existing query issues by rewriting problematic logic.
-      </td>
+      <td>Jul 8</td>
+      <td>**Revenue Recognition**</td>
+      <td>Low</td>
+      <td>BigQuery Refactoring & Bug Fixes - Improved BigQuery performance through query optimization and folder restructuring. Enhanced code reusability and resolved existing query issues by rewriting problematic logic.</td>
     </tr>
 
     <tr>
-      <td>
-        July 8
-      </td>
-
-      <td>
-        **Revenue Recognition Advanced**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        New Revenue Recognition Menu - Introduced a dedicated "Revenue Recognition" section in the main navigation. Advanced merchants can access the Advanced Console, Revenue Settings, and General Ledger Accounts, while Standard merchants will see Revenue Settings and General Ledger Accounts.
-      </td>
+      <td>Jul 8</td>
+      <td>**Revenue Recognition Advanced**</td>
+      <td>High</td>
+      <td>New Revenue Recognition Menu - Introduced a dedicated "Revenue Recognition" section in the main navigation. Advanced merchants can access the Advanced Console, Revenue Settings, and General Ledger Accounts, while Standard merchants will see Revenue Settings and General Ledger Accounts.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 1
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Jul 1</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
       <td>
         Enabled support for sending the expected arrival date of a physically shipped item to Adyen in API transactions. This is also in relation to Revenue Protect availability on
-
-        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
-        . See documentation in our Adyen Gateway page for details after release.
+        <a href="https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium" target="_blank" rel="noopener noreferrer">Adyen Gateway</a>. See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 1
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Jul 1</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
       <td>
         Enabled support for customer acquisition dates (account age) to Adyen in API transactions. This is also in relation to Revenue Protect availability on
-
-        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
-        . See documentation in our Adyen Gateway page for details after release.
+        <a href="https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium" target="_blank" rel="noopener noreferrer">Adyen Gateway</a>. See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 1
-      </td>
-
-      <td>
-        **Chase Orbital Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Added support for an undocumented response code (9797) to the platform. This response code will be handled as a declined transaction.
-      </td>
+      <td>Jul 1</td>
+      <td>**Chase Orbital Gateway**</td>
+      <td>Low</td>
+      <td>Added support for an undocumented response code (9797) to the platform. This response code will be handled as a declined transaction.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 1
-      </td>
-
-      <td>
-        **Currency Support**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Behind-the-scenes improvements to allow more currencies to be enabled on a single gateway configuration for gateways that allow many ISO-standard currencies.
-      </td>
+      <td>Jul 1</td>
+      <td>**Currency Support**</td>
+      <td>Medium</td>
+      <td>Behind-the-scenes improvements to allow more currencies to be enabled on a single gateway configuration for gateways that allow many ISO-standard currencies.</td>
     </tr>
 
     <tr>
-      <td>
-        Jul 1
-      </td>
-
-      <td>
-        **Commerce Hub Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Jul 1</td>
+      <td>**Commerce Hub Gateway**</td>
+      <td>Low</td>
       <td>
         Added support for Fiserv's newest gateway offering, Commerce Hub. See
-
-        [documentation on Commerce Hub](https://docs.recurly.com/docs/commerce-hub#/)
-
-        for more information on the new platform.
+        <a href="https://docs.recurly.com/docs/commerce-hub#/" target="_blank" rel="noopener noreferrer">documentation on Commerce Hub</a> for more information on the new platform.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jul 1
-      </td>
-
-      <td>
-        **Direct Debit Retry Enablement**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Jul 1</td>
+      <td>**Direct Debit Retry Enablement**</td>
+      <td>Low</td>
       <td>
         Added broader support for Direct Debit retries for Adyen, Stripe, and GoCardless gateways for the following payment methods: BACS, BECS, SEPA, and ACH. See our
-
-        [Direct Debit retries](https://docs.recurly.com/docs/sepa-retries#/)
-
-        documentation for more information.
+        <a href="https://docs.recurly.com/docs/sepa-retries#/" target="_blank" rel="noopener noreferrer">Direct Debit retries</a> documentation for more information.
       </td>
     </tr>
   </tbody>
 </Table>
 
-## June
 
+## June
 <Table align={["left","left","left","left"]}>
   <thead>
     <tr>
-      <th>
-        Release Date
-      </th>
-
-      <th>
-        **Feature**
-      </th>
-
-      <th>
-        **Potential Impact**
-      </th>
-
-      <th>
-        **Description / Overview**
-      </th>
+      <th>Release Date</th>
+      <th>**Feature**</th>
+      <th>**Potential Impact**</th>
+      <th>**Description / Overview**</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>High</td>
       <td>
-        Jun 30
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        **Bug Fixes**
-
-        Resolved issue causing duplicate POB rule entries.
-
-        Fixed Issue with Saving Multi-Element POB Rules.
-
-        Fixed UI total display when all data fits on the screen.
-
-        Addressed unauthorized error appearing on UI after login.
-
-        Corrected redirection link to Recurly App on authentication click.
-
-        Updated default user role to "No Access".
-
+        **Bug Fixes**<br /><br />
+        Resolved issue causing duplicate POB rule entries.<br /><br />
+        Fixed Issue with Saving Multi-Element POB Rules.<br /><br />
+        Fixed UI total display when all data fits on the screen.<br /><br />
+        Addressed unauthorized error appearing on UI after login.<br /><br />
+        Corrected redirection link to Recurly App on authentication click.<br /><br />
+        Updated default user role to "No Access".<br /><br />
         Resolved a race condition issue that occurred when users updated multiple contract modifications simultaneously.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jun 30
-      </td>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>Low</td>
+      <td>Config Audit for Scheduled Jobs - Config audit reports now include changes made to scheduled jobs.</td>
+    </tr>
 
+    <tr>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>High</td>
       <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Config Audit for Scheduled Jobs -  Config audit reports now include changes made to scheduled jobs.
+        Align Credit Journal Accounting with Invoice Accounting - The journal entries for credits are now aligned with the invoice accounting. The ledger accounts used in invoice accounting would be considered for CM/CMR accounting entries, when the CM/CMR does not have accounts present then the system reads from the associated invoices or Subscriptions
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jun 30
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        Align Credit Journal Accounting with Invoice Accounting -  The journal entries for credits are now aligned with the invoice accounting. The ledger accounts used in invoice accounting would be considered for CM/CMR accounting entries, when the CM/CMR does not have accounts present then the system reads from the associated invoices or Subscriptions
-      </td>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>Low</td>
+      <td>Activate Multi-Element Revenue Rule for RA-Enabled Merchants - The multi element POB rule support is extended to Recurly Managed merchants too.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 30
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Activate Multi-Element Revenue Rule for RA-Enabled Merchants -  The multi element POB rule support is extended to Recurly Managed merchants too.
-      </td>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>High</td>
+      <td>Import only Subs/Orders and auto create the billing records for Non Recurly data - This feature allows businesses to import just their subscription or order data into Recurly Revenue Recognition. The system will automatically create the related billing records, saving time for companies that use external systems to manage subscriptions.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 30
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        Import only Subs/Orders and auto create the billing records for Non Recurly data -  This feature allows businesses to import just their subscription or order data into Recurly Revenue Recognition. The system will automatically create the related billing records, saving time for companies that use external systems to manage subscriptions.
-      </td>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>High</td>
+      <td>Auto-fetch exchange rates for non-Recurly data - This feature automatically retrieves and applies the correct exchange rates for contracts/subscriptions and invoices associated with subscriptions that are created outside the Recurly platform.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 30
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        Auto-fetch exchange rates for non-Recurly data -  This feature automatically retrieves and applies the correct exchange rates for contracts/subscriptions and invoices associated with subscriptions that are created outside the Recurly platform.
-      </td>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>High</td>
+      <td>Referenced Credit Standalone Treatment Credit Memos for which the invoice is not present in Revenue Recognition will now be collected and processed as a standalone invoice with a negative amount.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 30
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        Referenced Credit Standalone Treatment Credit Memos for which the invoice is not present in Revenue Recognition will now be collected and processed as a standalone invoice with a negative amount.
-      </td>
+      <td>Jun 30</td>
+      <td>**Revenue Recognition**</td>
+      <td>Low</td>
+      <td>Invoice Sync Check in Auto Period Close Job - Added a check in the auto period close job to ensure invoice counts are synced before closing the period for standard merchants.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 30
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Invoice Sync Check in Auto Period Close Job -  Added a check in the auto period close job to ensure invoice counts are synced before closing the period for standard merchants.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Jun 24
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Jun 24</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
       <td>
         Enabled support for sending the Shipping Method "name" to Adyen in API transactions. This is also in relation to
-
-        [Adyen Gateway](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
-        . See documentation in our Adyen Gateway page for details after release.
+        <a href="https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium" target="_blank" rel="noopener noreferrer">Adyen Gateway</a>.
+        See documentation in our Adyen Gateway page for details after release.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jun 24
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Jun 24</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
       <td>
         Enabled support via V3 API to pass in Adyen's Revenue Protect Risk Profile IDs on API driven transactions. Documentation will be added to the V3 API upon release. Read more about
-
-        [Recurly's Revenue Protect support ](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)
-
+        <a href="https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium" target="_blank" rel="noopener noreferrer">Recurly's Revenue Protect support</a>
         in our Adyen documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jun 24
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Enabled support for Adyen's token update lifecycle webhooks for credit cards. If you are using Adyen tokens for card processing and updates occur at the Gateway level, Recurly will receive those updates to ensure the card number and/or expiration date shown in billing information is up to date. This will require enabling this event in your Adyen settings to take advantage of the new behavior.
-      </td>
+      <td>Jun 24</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
+      <td>Enabled support for Adyen's token update lifecycle webhooks for credit cards. If you are using Adyen tokens for card processing and updates occur at the Gateway level, Recurly will receive those updates to ensure the card number and/or expiration date shown in billing information is up to date. This will require enabling this event in your Adyen settings to take advantage of the new behavior.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 24
-      </td>
-
-      <td>
-        **Checkout**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Fixed an issue where country is required when the Address Requirement is set to 'No Address'.
-      </td>
+      <td>Jun 24</td>
+      <td>**Checkout**</td>
+      <td>Low</td>
+      <td>Fixed an issue where country is required when the Address Requirement is set to 'No Address'.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 18
-      </td>
-
-      <td>
-        **Ebanx Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated handling of failed UPI AutoPay signups to avoid errors when re-subscribing.
-      </td>
+      <td>Jun 18</td>
+      <td>**Ebanx Gateway**</td>
+      <td>Low</td>
+      <td>Updated handling of failed UPI AutoPay signups to avoid errors when re-subscribing.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 17
-      </td>
-
-      <td>
-        **Cybersource Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated to support Google Pay transactions.
-      </td>
+      <td>Jun 17</td>
+      <td>**Cybersource Gateway**</td>
+      <td>Medium</td>
+      <td>Updated to support Google Pay transactions.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 17
-      </td>
-
-      <td>
-        **Cybersource Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated handling of phone numbers to avoid errors in rare cases where a partial phone number is present.
-      </td>
+      <td>Jun 17</td>
+      <td>**Cybersource Gateway**</td>
+      <td>Low</td>
+      <td>Updated handling of phone numbers to avoid errors in rare cases where a partial phone number is present.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 17
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Jun 17</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
       <td>
         Enabled Late failure / Chargeback Invoice behavior for Adyen ACH transactions and invoices. In the event an ACH transaction returns after initial processing and the status is _not_ "Insufficient Funds", a chargeback Invoice will be created and recorded. You can read more about this feature and how to enable it in our
-
-        [Chargebacks / late failures for Direct Debit](https://docs.recurly.com/docs/chargebacks-for-direct-debit#/)
-
+        <a href="https://docs.recurly.com/docs/chargebacks-for-direct-debit#/" target="_blank" rel="noopener noreferrer">Chargebacks / late failures for Direct Debit</a>
         documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jun 16
-      </td>
-
-      <td>
-        **App Management MRR Dashboard**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated the App Management net MRR chart from a bar to a line chart to be in parity with the Recurly App MRR Dashboard.
-      </td>
+      <td>Jun 16</td>
+      <td>**App Management MRR Dashboard**</td>
+      <td>Low</td>
+      <td>Updated the App Management net MRR chart from a bar to a line chart to be in parity with the Recurly App MRR Dashboard.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 16
-      </td>
-
-      <td>
-        **Business Entities Dashboard**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated descriptions for New & Renewing Billings.
-      </td>
+      <td>Jun 16</td>
+      <td>**Business Entities Dashboard**</td>
+      <td>Low</td>
+      <td>Updated descriptions for New & Renewing Billings.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 16
-      </td>
-
-      <td>
-        **Transactions Explore**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Added "cc_payment_id" field which is the unique identifier for a credit card.
-      </td>
+      <td>Jun 16</td>
+      <td>**Transactions Explore**</td>
+      <td>Low</td>
+      <td>Added "cc_payment_id" field which is the unique identifier for a credit card.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 16
-      </td>
-
-      <td>
-        **Invoice Explore**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Added "cc_payment_id" field which is the unique identifier for a credit card.
-      </td>
+      <td>Jun 16</td>
+      <td>**Invoice Explore**</td>
+      <td>Low</td>
+      <td>Added "cc_payment_id" field which is the unique identifier for a credit card.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 10
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Enabled support for the `CAPTURE_FAILED` event. Capture failures will mark Purchase transactions as declined. If you are using separate Auth and Capture, and the Capture fails, you can re-try the capture. This will require enabling this event in your Adyen settings to take advantage of the new behavior.
-      </td>
+      <td>Jun 10</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
+      <td>Enabled support for the `CAPTURE_FAILED` event. Capture failures will mark Purchase transactions as declined. If you are using separate Auth and Capture, and the Capture fails, you can re-try the capture. This will require enabling this event in your Adyen settings to take advantage of the new behavior.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 10
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Enabled support for sending shipping addresses to Adyen. If you are providing a shipping / delivery address in your transactions, or a consumer has one on file, the information will be sent to Adyen.
-      </td>
+      <td>Jun 10</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
+      <td>Enabled support for sending shipping addresses to Adyen. If you are providing a shipping / delivery address in your transactions, or a consumer has one on file, the information will be sent to Adyen.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 10
-      </td>
-
-      <td>
-        **PayPal Complete Gateway**
-      </td>
-
-      <td>
-        High
-      </td>
-
+      <td>Jun 10</td>
+      <td>**PayPal Complete Gateway**</td>
+      <td>High</td>
       <td>
         Updated our integration to support WebView browsers when using PayPal Complete with Recurly.js. This will enable Recurly.js functionality for PayPal when viewing web pages within the container of a social media application such as Facebook or Instagram. See our
-
-        [Recurly.js PayPal documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete)
-
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete" target="_blank" rel="noopener noreferrer">Recurly.js PayPal documentation</a>
         for more information about our PayPal Complete integration, and the
-
-        [Recurly.js browser support documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support#/)
-
+        <a href="https://docs.recurly.com/recurly-subscriptions/v1.2/docs/support#/" target="_blank" rel="noopener noreferrer">Recurly.js browser support documentation</a>
         for more information about the environments we support with Recurly.js.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jun 10
-      </td>
-
-      <td>
-        **V3 API | Verify Routes**
-      </td>
-
-      <td>
-        High
-      </td>
-
+      <td>Jun 10</td>
+      <td>**V3 API | Verify Routes**</td>
+      <td>High</td>
       <td>
         Updated the V3
-
-        [Verify Billing Info](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
-
+        <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info" target="_blank" rel="noopener noreferrer">Verify Billing Info</a>
         and
-
-        [Verify CVV](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
-
+        <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv" target="_blank" rel="noopener noreferrer">Verify CVV</a>
         endpoints to support 3DS and Recurly.js tokens. For SCA-regulated Merchants, you can use these new endpoints to verify consumer SCA prior to unpausing or reactivating subscriptions. These paths are also useful for other 3DS, or verification related activities such as account takeover mitigation, and other KYC / security reasons. Read more in our dedicated guide on
-
-        [using Stored Billing Information in Recurly.js.](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/)
-
-        . This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
+        <a href="https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/" target="_blank" rel="noopener noreferrer">using Stored Billing Information in Recurly.js</a>. This update also includes a Recurly.js client update. More information will be available in Recurly.js docs after release.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Jun 9
-      </td>
-
-      <td>
-        **General Security Enhancement**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        We will be making scheduled maintenance updates for security purposes that will include a Recurly.js client update. No functional changes are expected. Recurly.js can be used natively but is also used in HPP and Recurly Checkout products, which are included in this update.
-      </td>
+      <td>Jun 9</td>
+      <td>**General Security Enhancement**</td>
+      <td>High</td>
+      <td>We will be making scheduled maintenance updates for security purposes that will include a Recurly.js client update. No functional changes are expected. Recurly.js can be used natively but is also used in HPP and Recurly Checkout products, which are included in this update.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 3
-      </td>
-
-      <td>
-        **PayPal Complete Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated handling of status updates for PayPal transactions using a bank account as a funding source to avoid transactions suck in pending state.
-      </td>
+      <td>Jun 3</td>
+      <td>**PayPal Complete Gateway**</td>
+      <td>Low</td>
+      <td>Updated handling of status updates for PayPal transactions using a bank account as a funding source to avoid transactions suck in pending state.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 3
-      </td>
-
-      <td>
-        **Webhooks**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Added webhook support for `payment.succeeded` event to enable events firing when UPI AutoPay transactions are updated asynchronously.
-      </td>
+      <td>Jun 3</td>
+      <td>**Webhooks**</td>
+      <td>Medium</td>
+      <td>Added webhook support for `payment.succeeded` event to enable events firing when UPI AutoPay transactions are updated asynchronously.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 3
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated handling of Late Failure (Chargeback) invoices for ACH Bank payments to ensure transactions that fail asynchronously are invoiced or marked failed appropriately. Transactions that experience a return due to insufficient funds (R01) will be marked as declined and have the associated invoice marked Past due so the invoice collection can be reattempted.
-      </td>
+      <td>Jun 3</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
+      <td>Updated handling of Late Failure (Chargeback) invoices for ACH Bank payments to ensure transactions that fail asynchronously are invoiced or marked failed appropriately. Transactions that experience a return due to insufficient funds (R01) will be marked as declined and have the associated invoice marked Past due so the invoice collection can be reattempted.</td>
     </tr>
 
     <tr>
-      <td>
-        Jun 3
-      </td>
-
-      <td>
-        **Vantiv Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Remapped a response code (218) to a soft decline due to remapping by WorldPay.
-      </td>
+      <td>Jun 3</td>
+      <td>**Vantiv Gateway**</td>
+      <td>Low</td>
+      <td>Remapped a response code (218) to a soft decline due to remapping by WorldPay.</td>
     </tr>
   </tbody>
 </Table>
 
 ## May
-
 <Table align={["left","center","left","left"]}>
   <thead>
     <tr>
-      <th>
-        Release Date
-      </th>
-
-      <th>
-        **Feature**
-      </th>
-
-      <th>
-        **Potential Impact**
-      </th>
-
-      <th>
-        **Description / Overview**
-      </th>
+      <th>Release Date</th>
+      <th>**Feature**</th>
+      <th>**Potential Impact**</th>
+      <th>**Description / Overview**</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
-      <td>
-        May 27
-      </td>
-
-      <td>
-        **PayPal Complete Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>May 27</td>
+      <td>**PayPal Complete Gateway**</td>
+      <td>Low</td>
       <td>
         Updated support for webhooks to disable deleted tokens when a consumer cancels their agreement via PayPal directly. When Recurly wallet is in use, if the token is the primary billing info, deactivation is not possible.
       </td>
     </tr>
 
     <tr>
-      <td>
-        May 27
-      </td>
-
-      <td>
-        **Amazon Pay V2 Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>May 27</td>
+      <td>**Amazon Pay V2 Gateway**</td>
+      <td>Medium</td>
       <td>
         Updated handling of Charge Permission IDs to query status prior to transaction processing. This will gather the chargeable 'status' of a buyer's Amazon payment methods and reduce declines. We will also be updating transaction params to include the Charge Permission ID status in the event of a decline, and closing Charge Permission IDs when subscriptions expire.
       </td>
     </tr>
 
     <tr>
-      <td>
-        May 27
-      </td>
-
-      <td>
-        **V3 API Subscription Change**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Considered a _breaking change_ -- updated the validation messaging so that it matches the public API documentation.
-      </td>
+      <td>May 27</td>
+      <td>**V3 API Subscription Change**</td>
+      <td>Medium</td>
+      <td>Considered a _breaking change_ -- updated the validation messaging so that it matches the public API documentation.</td>
     </tr>
 
     <tr>
-      <td>
-        May 27
-      </td>
-
-      <td>
-        **Plan Configuration UI Updates**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Replacing the toggles for Free Trial and Setup Fee with checkboxes.
-      </td>
+      <td>May 27</td>
+      <td>**Plan Configuration UI Updates**</td>
+      <td>Low</td>
+      <td>Replacing the toggles for Free Trial and Setup Fee with checkboxes.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **Ebanx Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Several invalid actions will be blocked based on the UPI payment method usage and presence on a given account. Please see list of invalid actions on the UPI AutoPay and Ebanx gateway pages respectively. Examples include multiple subscriptions on a single customer account, and one-time transactions.
-      </td>
+      <td>May 20</td>
+      <td>**Ebanx Gateway**</td>
+      <td>Medium</td>
+      <td>Several invalid actions will be blocked based on the UPI payment method usage and presence on a given account. Please see list of invalid actions on the UPI AutoPay and Ebanx gateway pages respectively. Examples include multiple subscriptions on a single customer account, and one-time transactions.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **Adyen Gateway | 3DS**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated handling of 'origin' field to avoid errors. Origin is sent when a referring URL for **3DS** (such as with R.js and Checkout) is present.
-      </td>
+      <td>May 20</td>
+      <td>**Adyen Gateway | 3DS**</td>
+      <td>Medium</td>
+      <td>Updated handling of 'origin' field to avoid errors. Origin is sent when a referring URL for **3DS** (such as with R.js and Checkout) is present.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **V3 Client Libraries**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Several origin enums will be added to the V3 client libraries.
-      </td>
+      <td>May 20</td>
+      <td>**V3 Client Libraries**</td>
+      <td>Medium</td>
+      <td>Several origin enums will be added to the V3 client libraries.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **Stripe Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated handling of mandate reference data for applicable payment methods (Direct Debit). Mandate references will appear in UIs and API response payloads where applicable, and if available from the gateway.
-      </td>
+      <td>May 20</td>
+      <td>**Stripe Gateway**</td>
+      <td>Low</td>
+      <td>Updated handling of mandate reference data for applicable payment methods (Direct Debit). Mandate references will appear in UIs and API response payloads where applicable, and if available from the gateway.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **Adyen Gateway | iDeal in Recurly.js**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        When using iDeal via Recurly.js, if the consumer cancels out of their consumer authorization flow modal, the subscription associated with the customer will be expired automatically.
-      </td>
+      <td>May 20</td>
+      <td>**Adyen Gateway | iDeal in Recurly.js**</td>
+      <td>Low</td>
+      <td>When using iDeal via Recurly.js, if the consumer cancels out of their consumer authorization flow modal, the subscription associated with the customer will be expired automatically.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        When enabled in your Adyen Gateway Webhook configuration, the Expired Authorization webhook will now mark uncaptured, expired authorization transactions as voided. You can enable this webhook in your Adyen Gateway settings (at the gateway), with no configuration on the Recurly site. See Adyen gateway setup instructions for additional details on webhook configuration.
-      </td>
+      <td>May 20</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
+      <td>When enabled in your Adyen Gateway Webhook configuration, the Expired Authorization webhook will now mark uncaptured, expired authorization transactions as voided. You can enable this webhook in your Adyen Gateway settings (at the gateway), with no configuration on the Recurly site. See Adyen gateway setup instructions for additional details on webhook configuration.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **V3 API Invoice Preview**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Update v3 api invoice response to include subtotal after discount.
-      </td>
+      <td>May 20</td>
+      <td>**V3 API Invoice Preview**</td>
+      <td>Low</td>
+      <td>Update v3 api invoice response to include subtotal after discount.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **Compass Insights**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Adding feedback options (thumbs up or down) to each insight which will be visible with mouse hover-over.
-      </td>
+      <td>May 20</td>
+      <td>**Compass Insights**</td>
+      <td>Low</td>
+      <td>Adding feedback options (thumbs up or down) to each insight which will be visible with mouse hover-over.</td>
     </tr>
 
     <tr>
-      <td>
-        May 20
-      </td>
-
-      <td>
-        **Checkout**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Introducing a new Checkout configuration option that, if enabled, will display a recurring charge consent message and checkbox in Checkout _if_ there are recurring billable items in the cart.
-      </td>
+      <td>May 20</td>
+      <td>**Checkout**</td>
+      <td>Low</td>
+      <td>Introducing a new Checkout configuration option that, if enabled, will display a recurring charge consent message and checkbox in Checkout _if_ there are recurring billable items in the cart.</td>
     </tr>
 
     <tr>
-      <td>
-        May 19
-      </td>
-
-      <td>
-        **Recurly.js, HPP, Checkout**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        We will be making scheduled maintenance updates for security purposes that will include a Recurly.js client update. No functional changes are expected.
-      </td>
+      <td>May 19</td>
+      <td>**Recurly.js, HPP, Checkout**</td>
+      <td>High</td>
+      <td>We will be making scheduled maintenance updates for security purposes that will include a Recurly.js client update. No functional changes are expected.</td>
     </tr>
 
     <tr>
-      <td>
-        May 14
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Adyen (Third Party) Network Token usage on a per transaction basis will be reported in UIs and gateway params via API when applicable. If you have Network Tokens enabled at the Adyen level, you will be able to see when they are used on a transaction moving forward.
-      </td>
+      <td>May 14</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
+      <td>Adyen (Third Party) Network Token usage on a per transaction basis will be reported in UIs and gateway params via API when applicable. If you have Network Tokens enabled at the Adyen level, you will be able to see when they are used on a transaction moving forward.</td>
     </tr>
 
     <tr>
-      <td>
-        May 14
-      </td>
-
-      <td>
-        **Braintree Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        We will be updating the Braintree SDK version to 3.118.2 in Recurly.js. This will enable MPAN creation for Apple Pay transactions.
-      </td>
+      <td>May 14</td>
+      <td>**Braintree Gateway**</td>
+      <td>Medium</td>
+      <td>We will be updating the Braintree SDK version to 3.118.2 in Recurly.js. This will enable MPAN creation for Apple Pay transactions.</td>
     </tr>
 
     <tr>
-      <td>
-        May 13
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated Adyen Drop-in Components to ensure proper iDeal bank redirect handling in Recurly.js
-      </td>
+      <td>May 13</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
+      <td>Updated Adyen Drop-in Components to ensure proper iDeal bank redirect handling in Recurly.js</td>
     </tr>
 
     <tr>
-      <td>
-        May 13
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Recurly transaction detail UIs will now show the Chargeback reason code associated with a chargeback invoice.
-      </td>
+      <td>May 13</td>
+      <td>**Adyen Gateway**</td>
+      <td>Low</td>
+      <td>Recurly transaction detail UIs will now show the Chargeback reason code associated with a chargeback invoice.</td>
     </tr>
 
     <tr>
-      <td>
-        May 13
-      </td>
-
-      <td>
-        **Plan Configuration**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Redesigned the Create Billable Add-on UI component when choosing a Tiered, Volume, or Stairstep pricing model; impacting both the Create and Edit plan pages.
-      </td>
+      <td>May 13</td>
+      <td>**Plan Configuration**</td>
+      <td>Low</td>
+      <td>Redesigned the Create Billable Add-on UI component when choosing a Tiered, Volume, or Stairstep pricing model; impacting both the Create and Edit plan pages.</td>
     </tr>
 
     <tr>
-      <td>
-        May 6
-      </td>
-
-      <td>
-        **Stripe Gateway** | **Third Party Checkout**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>May 6</td>
+      <td>**Stripe Gateway** | **Third Party Checkout**</td>
+      <td>Low</td>
       <td>
         Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the
-
-        [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html)
-
+        <a href="https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html" target="_blank" rel="noopener noreferrer">Third Party Checkout developer guide</a>
         for more details.
       </td>
     </tr>
 
     <tr>
-      <td>
-        May 6
-      </td>
-
-      <td>
-        **Hosted Page settings**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>May 6</td>
+      <td>**Hosted Page settings**</td>
+      <td>Low</td>
       <td>
         Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see
-
-        [the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring)
-
-        .
+        <a href="https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring" target="_blank" rel="noopener noreferrer">the press release on the FTC website</a>.
       </td>
     </tr>
 
     <tr>
+      <td>May 6</td>
+      <td>**Compass Insights**</td>
+      <td>Low</td>
       <td>
-        May 6
-      </td>
-
-      <td>
-        **Compass Insights**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Added 3 new insights to the Welcome page:
-
-        1. Daily Subscriber Churn Trends
-        2. Daily Billings Trends
+        Added 3 new insights to the Welcome page:<br /><br />
+        1. Daily Subscriber Churn Trends<br />
+        2. Daily Billings Trends<br />
         3. Monthly Recovered Revenue Trends (Recurly Value)
       </td>
     </tr>
 
     <tr>
-      <td>
-        May 6
-      </td>
-
-      <td>
-        **Email Templates**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Introduced a fourth option for Audience Criteria when creating alternative email templates
-      </td>
+      <td>May 6</td>
+      <td>**Email Templates**</td>
+      <td>Low</td>
+      <td>Introduced a fourth option for Audience Criteria when creating alternative email templates</td>
     </tr>
 
     <tr>
-      <td>
-        May 6
-      </td>
-
-      <td>
-        **Gateway Token Handling**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated handling of gateway tokens to that gateway tokens referenced in billing information updates that cause a _decline_ do not override existing data.
-      </td>
+      <td>May 6</td>
+      <td>**Gateway Token Handling**</td>
+      <td>Medium</td>
+      <td>Updated handling of gateway tokens to that gateway tokens referenced in billing information updates that cause a _decline_ do not override existing data.</td>
     </tr>
 
     <tr>
-      <td>
-        May 6
-      </td>
-
-      <td>
-        **WorldPay Gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Updated handling of refund failures on the gateway.
-      </td>
+      <td>May 6</td>
+      <td>**WorldPay Gateway**</td>
+      <td>Low</td>
+      <td>Updated handling of refund failures on the gateway.</td>
     </tr>
 
     <tr>
-      <td>
-        May 6
-      </td>
-
-      <td>
-        **PayPal Complete Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated Recurly.js to support passing the gateway_code value for PayPal Complete.
-      </td>
+      <td>May 6</td>
+      <td>**PayPal Complete Gateway**</td>
+      <td>Medium</td>
+      <td>Updated Recurly.js to support passing the gateway_code value for PayPal Complete.</td>
     </tr>
 
     <tr>
-      <td>
-        May 5
-      </td>
-
-      <td>
-        **Adyen Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Minor updates to improve authorization rates for card billing information updates.
-      </td>
+      <td>May 5</td>
+      <td>**Adyen Gateway**</td>
+      <td>Medium</td>
+      <td>Minor updates to improve authorization rates for card billing information updates.</td>
     </tr>
   </tbody>
 </Table>
+
+
 
 ## April
 
