@@ -1,12 +1,12 @@
 ---
-title: Recurly release notes/Changelog (COPY)
+title: ' (COPY)- Recurly release notes/Changelog'
 excerpt: >-
   Stay updated with the latest minor tweaks and enhancements in Recurly’s
   functionality through the Release Notes section. Explore a curated digest of
   UI upgrades, API extensions, and more that continually refine your user
   experience.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
