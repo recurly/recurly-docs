@@ -22,7 +22,7 @@ A concise digest of Recurly's ongoing changes and minor updates that continually
 
 The Release Notes section is your go-to place to catch up on the minor yet meaningful changes we have rolled out. From UI tweaks to API and Recurly.js extensions, stay in the loop with the incremental improvements making your Recurly experience smoother. For major updates, our [blog](https://blog.recurly.com) and newsletter are still your best companions. Questions? [Contact support](mailto:support@recurly.com).
 
-## 2025
+## 2025 
 
 ## September
 
@@ -131,7 +131,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/), visit our dedicated documentation.
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
+
+        [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
+
+        , visit our dedicated documentation.
       </td>
     </tr>
 
