@@ -10,4 +10,4 @@ hidden: true
 metadata:
   robots: index
 ---
-test
+test 
