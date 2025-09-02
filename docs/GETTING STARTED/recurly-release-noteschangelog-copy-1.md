@@ -18,7 +18,7 @@ A concise digest of Recurly's ongoing changes and minor updates that continually
 
 The Release Notes section is your go-to place to catch up on the minor yet meaningful changes we have rolled out. From UI tweaks to API and Recurly.js extensions, stay in the loop with the incremental improvements making your Recurly experience smoother. For major updates, our [blog](https://blog.recurly.com) and newsletter are still your best companions. Questions? [Contact support](mailto:support@recurly.com).
 
-## 2025 
+## 2025
 
 ## September
 
@@ -34,38 +34,18 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 <Table align={["left","left","left","left"]}>
   <thead>
     <tr>
-      <th>
-        Release Date
-      </th>
-
-      <th>
-        **Feature**
-      </th>
-
-      <th>
-        **Potential Impact**
-      </th>
-
-      <th>
-        **Description / Overview**
-      </th>
+      <th>Release Date</th>
+      <th>**Feature**</th>
+      <th>**Potential Impact**</th>
+      <th>**Description / Overview**</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
-      <td>
-        Aug 29
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Aug 29</td>
+      <td>**Revenue Recognition**</td>
+      <td>Low</td>
       <td>
         * Added deleted order lines to Order Stage History as archived data.
         * Introduced Bundle Rule ID field in order lines for mapping.
@@ -78,160 +58,68 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
     </tr>
 
     <tr>
-      <td>
-        Aug 26
-      </td>
+      <td>Aug 26</td>
+      <td>**Recurly Engage**</td>
+      <td>Low</td>
+      <td>Minor updates to segment data CSV exports to better handle special characters in titles.</td>
+    </tr>
 
-      <td>
-        **Recurly Engage**
-      </td>
+    <tr>
+      <td>Aug 26</td>
+      <td>**Recurly Engage**</td>
+      <td>Low</td>
+      <td>Enhance experiment window user experience by preventing auto-close on save.</td>
+    </tr>
 
+    <tr>
+      <td>Aug 26</td>
+      <td>**PayPal Complete gateway**</td>
+      <td>Medium</td>
       <td>
-        Low
-      </td>
-
-      <td>
-        Minor updates to segment data CSV exports to better handle special characters in titles.
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/" target="_blank" rel="noopener noreferrer">PayPal Complete</a>, visit our dedicated documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 26
-      </td>
-
-      <td>
-        **Recurly Engage**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Enhance experiment window user experience by preventing auto-close on save.
-      </td>
+      <td>Aug 26</td>
+      <td>**v3 API**</td>
+      <td>Low</td>
+      <td>Adding a new optional proration setting to several v3 endpoints.</td>
     </tr>
 
     <tr>
-      <td>
-        Aug 26
-      </td>
-
-      <td>
-        **PayPal Complete gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
-
-        [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
-
-        , visit our dedicated documentation.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Aug 26
-      </td>
-
-      <td>
-        **v3 API**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Adding a new optional proration setting to several v3 endpoints.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Aug 26
-      </td>
-
-      <td>
-        **Stripe gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Aug 26</td>
+      <td>**Stripe gateway**</td>
+      <td>Medium</td>
       <td>
         We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on
-
-        [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
-
-        , please see our dedicated documentation. Our
-
-        [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/)
-
-        will be updated after release with new support details.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe#/" target="_blank" rel="noopener noreferrer">Stripe</a>, please see our dedicated documentation. Our
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/" target="_blank" rel="noopener noreferrer">RBI mandate documentation</a> will be updated after release with new support details.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 20
-      </td>
-
-      <td>
-        **Kount Fraud Management**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Aug 20</td>
+      <td>**Kount Fraud Management**</td>
+      <td>Low</td>
       <td>
         Updated to account code handling to avoid errors in rare cases. To learn more about
-
-        [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/)
-
-        , visit our dedicated documentation.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount#/" target="_blank" rel="noopener noreferrer">Kount Fraud management</a>, visit our dedicated documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 20
-      </td>
-
-      <td>
-        **PayPal Complete gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        If PayPal (the digital wallet) is the primary payment method for a subscription and the PayPal subscription agreement is cancelled by the subscriber within their PayPal app or otherwise outside of Recurly, Recurly will now cancel that related subscription.
-      </td>
+      <td>Aug 20</td>
+      <td>**PayPal Complete gateway**</td>
+      <td>Medium</td>
+      <td>If PayPal (the digital wallet) is the primary payment method for a subscription and the PayPal subscription agreement is cancelled by the subscriber within their PayPal app or otherwise outside of Recurly, Recurly will now cancel that related subscription.</td>
     </tr>
 
     <tr>
-      <td>
-        Aug 19
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Aug 19</td>
+      <td>**Revenue Recognition**</td>
+      <td>Medium</td>
       <td>
         *Added display of the Initial Financial Open Period to the Revenue Settings page.
         *Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status.
@@ -244,243 +132,109 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
     </tr>
 
     <tr>
-      <td>
-        Aug 12
-      </td>
-
-      <td>
-        **Adyen gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Aug 12</td>
+      <td>**Adyen gateway**</td>
+      <td>Medium</td>
       <td>
         Minor updates to
-
-        [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal)
-
-        to avoid an error for return customer signups.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal" target="_blank" rel="noopener noreferrer">iDeal</a> to avoid an error for return customer signups.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 12
-      </td>
-
-      <td>
-        **Ebanx gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Minor updates to Pause events on UPI AutoPay mandates. Consumer-driven mandate pauses will be automatically paused for 1 year. Subscription pause lengths can be updated by a merchant after confirming length of pause with the consumer.
-      </td>
+      <td>Aug 12</td>
+      <td>**Ebanx gateway**</td>
+      <td>Low</td>
+      <td>Minor updates to Pause events on UPI AutoPay mandates. Consumer-driven mandate pauses will be automatically paused for 1 year. Subscription pause lengths can be updated by a merchant after confirming length of pause with the consumer.</td>
     </tr>
 
     <tr>
-      <td>
-        Aug 12
-      </td>
-
-      <td>
-        **Ebanx gateway**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Minor updates to trial handling to avoid a 1 INR charge.
-      </td>
+      <td>Aug 12</td>
+      <td>**Ebanx gateway**</td>
+      <td>Low</td>
+      <td>Minor updates to trial handling to avoid a 1 INR charge.</td>
     </tr>
 
     <tr>
-      <td>
-        Aug 12
-      </td>
-
-      <td>
-        **Adyen gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Aug 12</td>
+      <td>**Adyen gateway**</td>
+      <td>Medium</td>
       <td>
         Updated handling of
-
-        [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach)
-
-        Reporting queries to avoid improper invoice status updates.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach" target="_blank" rel="noopener noreferrer">ACH</a> Reporting queries to avoid improper invoice status updates.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 12
-      </td>
-
-      <td>
-        **V3 Client Libraries**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updated to support returning enhanced Google Pay indicators when a DPAN is in use.
-      </td>
+      <td>Aug 12</td>
+      <td>**V3 Client Libraries**</td>
+      <td>Medium</td>
+      <td>Updated to support returning enhanced Google Pay indicators when a DPAN is in use.</td>
     </tr>
 
     <tr>
-      <td>
-        Aug 12
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        High
-      </td>
-
-      <td>
-        Added scroll-to-top behavior when opening the Configuration of Default Rules section.
-      </td>
+      <td>Aug 12</td>
+      <td>**Revenue Recognition**</td>
+      <td>High</td>
+      <td>Added scroll-to-top behavior when opening the Configuration of Default Rules section.</td>
     </tr>
 
     <tr>
-      <td>
-        Aug 12
-      </td>
-
-      <td>
-        **Anomaly Insights**
-      </td>
-
-      <td>
-        Low
-      </td>
-
+      <td>Aug 12</td>
+      <td>**Anomaly Insights**</td>
+      <td>Low</td>
       <td>
         Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise.
-
-        [Anomaly Insights](https://docs.recurly.com/recurly-subscriptions/docs/recurly-compass#/anomaly-insights) documentation.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-compass#/anomaly-insights" target="_blank" rel="noopener noreferrer">Anomaly Insights</a> documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 11
-      </td>
-
-      <td>
-        **Ebanx gateway**
-      </td>
-
-      <td>
-        High
-      </td>
-
+      <td>Aug 11</td>
+      <td>**Ebanx gateway**</td>
+      <td>High</td>
       <td>
         Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our
-
-        [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank" rel="noopener noreferrer">UPI AutoPay payment method</a> documentation.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 5
-      </td>
-
-      <td>
-        **Compass Assistant**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        We're excited to announce the launch of Compass Assistant, now available across all active subdomains! This new conversational chatbot provides instant access to information from our product documentation and knowledge base, and can even furnish helpful code snippets for our APIs. You'll also notice that AI Answers will now direct you to Compass Assistant for a more comprehensive experience; should a merchant wish to opt-out, please contact Support.
-      </td>
+      <td>Aug 5</td>
+      <td>**Compass Assistant**</td>
+      <td>Low</td>
+      <td>We're excited to announce the launch of Compass Assistant, now available across all active subdomains! This new conversational chatbot provides instant access to information from our product documentation and knowledge base, and can even furnish helpful code snippets for our APIs. You'll also notice that AI Answers will now direct you to Compass Assistant for a more comprehensive experience; should a merchant wish to opt-out, please contact Support.</td>
     </tr>
 
     <tr>
-      <td>
-        Aug 5
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Aug 5</td>
+      <td>**Revenue Recognition**</td>
+      <td>Medium</td>
       <td>
         Revrec Enhancements in Recurly and RevRec-
         Removed Auto Period Close Delay for Advanced Merchants in Revenue Settings.
-
         Removed Auto Period Close Delay option from the Self-Service Onboarding Wizard for RA-enabled merchants.
-
         Fixed datepicker in the RevRec enablement dialog to display correctly in front of the dialog (CSS update only).
-
         Updated RevRec Enablement Alert to display the correct text and buttons based on user permissions and site configurations.
-
         Updated Data Sync Finished alert logic to only display after `enabled_at` is set in the group memberships table, ensuring it appears only when the site is activated.
-
         Added validation for VC Rules to ensure "From Date" is less than or equal to "To Date."
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 1
-      </td>
-
-      <td>
-        **MasterCard Account Updater**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
+      <td>Aug 1</td>
+      <td>**MasterCard Account Updater**</td>
+      <td>Medium</td>
       <td>
         Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated
-
-        [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/)
-
-        for more information.
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/" target="_blank" rel="noopener noreferrer">Account Updater documentation</a> for more information.
       </td>
     </tr>
 
     <tr>
-      <td>
-        Aug 1
-      </td>
-
-      <td>
-        **Revenue Recognition**
-      </td>
-
-      <td>
-        High
-      </td>
-
+      <td>Aug 1</td>
+      <td>**Revenue Recognition**</td>
+      <td>High</td>
       <td>
         Updates - removed open period logic from infra/revrecStart to prevent the period from reverting to the initial period.
         Fixed bundle rule addition issue when only one bundle rule exists under a parent item by grouping the count by bundle ID.
@@ -488,24 +242,14 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
     </tr>
 
     <tr>
-      <td>
-        Aug 1
-      </td>
-
-      <td>
-        **Ebanx Gateway**
-      </td>
-
-      <td>
-        Medium
-      </td>
-
-      <td>
-        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 10% tolerance for amount updates.
-      </td>
+      <td>Aug 1</td>
+      <td>**Ebanx Gateway**</td>
+      <td>Medium</td>
+      <td>Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 10% tolerance for amount updates.</td>
     </tr>
   </tbody>
 </Table>
+
 
 ## July
 
