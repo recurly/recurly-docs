@@ -1,5 +1,5 @@
 ---
-title: ' (COPY)- Recurly release notes/Changelog'
+title: RELEASE NOTE (with Markdown Tables)
 excerpt: >-
   Stay updated with the latest minor tweaks and enhancements in Recurly’s
   functionality through the Release Notes section. Explore a curated digest of
