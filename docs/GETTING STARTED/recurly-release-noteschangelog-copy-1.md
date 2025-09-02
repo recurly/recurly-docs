@@ -1,5 +1,5 @@
 ---
-title: RELEASE NOTES (with JSX)
+title: RELEASE NOTES (with JSX tables)
 excerpt: >-
   Stay updated with the latest minor tweaks and enhancements in Recurly’s
   functionality through the Release Notes section. Explore a curated digest of
