@@ -6,7 +6,7 @@ excerpt: >-
   UI upgrades, API extensions, and more that continually refine your user
   experience.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
