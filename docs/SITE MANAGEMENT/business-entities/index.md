@@ -84,12 +84,16 @@ Merchants can set invoice treatments specific to their Site Default Business Ent
 
 #### Invoice Number Settings: Entity Prefix
 
-Merchants will be able to choose whether or not to enable entity-specific invoice sequencing directly on each of their business entities.  
+Merchants will be able to choose whether or not to enable entity-specific invoice sequencing directly on each of their business entities.
 
-* An entity prefix is an alphanumeric of 4 characters or less that is prepended to the sequential number. 
-* When adding an entity prefix, the sequence will start at 1000 and increment by 1. 
+* An entity prefix is an alphanumeric of 4 characters or less that is prepended to the sequential number.
+* When adding an entity prefix, the sequence will start at 1000 and increment by 1.
 
 Note: Changes to invoice numbering can potentially disrupt reconciliation and gateway processing. For more detailed information, visit [gateway specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers).
+
+Contact [support](mailto:support@recurly.com) to have entity invoice prefix added to your account.
+
+<br />
 
 #### Invoice Number Settings: Country Sequencing
 
