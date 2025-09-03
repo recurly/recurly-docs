@@ -48,7 +48,7 @@ The WorldPay eCommerce (formerly known as Vantiv or the Litle platform) facilita
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | Services that work with Recurly | Credit Cards                                                                                               |
 | Supported operations            | Transaction Processing (Verify, Purchase, Separate Authorize and Capture, Void, Refund)                    |
-| Supported payment types         | Credit Card, Apple Pay, SEPA, ACH                                                                          |
+| Supported payment types         | Credit Card, Apple Pay                                                                                     |
 | Supported card brands           | Visa, MasterCard, Amex, Discover, UnionPay, JCB, Diners Club                                               |
 | Gateway Specific 3DS2 Supported | No                                                                                                         |
 | Card on File Supported          | Yes                                                                                                        |
