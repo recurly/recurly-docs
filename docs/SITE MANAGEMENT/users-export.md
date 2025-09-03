@@ -16,9 +16,9 @@ next:
 
 The user export feature in Recurly allows administrators to easily download a comprehensive report containing information about every site user who has access to their Recurly site. This report includes the user's name, email address, their access permissions within Recurly, and the date each user was created.
 
-> 👍 About users exports
+> ❗️ Please Note
 >
-> To capture the most precise history of user access, we advise setting up regular exports. This approach is crucial because our exports include users who had and continue to have access during the selected export dates, but we do not provide past access information. Regular exports will provide a more accurate snapshot of user access at any given point.
+> The Users report will only include users who had and continue to have access during the selected dates. Deleted users will be excluded from the users report. To capture the most precise history of user access, we recommend running this report regularly to provide a more accurate snapshot of user access at any given point in time.
 
 # Accessing user exports
 
@@ -26,27 +26,35 @@ The user export feature in Recurly allows administrators to easily download a co
 2. In the left-side panel, navigate to the "**Admin Exports**" option.
 3. Select "**Users**" from the list of available exports.
 
-![](https://files.readme.io/bfc90de5f39f60baedca5b749ceb675ec5d6f30e59f1d57a52b50153cca2026d-image.png)
+![](https://files.readme.io/fa3bc3195b34c40e443a2c33482828c3d569f06da27210af84c37f28e41cc52b-image.png)
 
-# Obtaining an user export
+# Obtaining a list of users
 
-To obtain an Users Export, visit the Admin Exports page and select the List of users report. This comprehensive report offers a detailed overview of all users within your Recurly site including first and last name, email, user role, user access and date added.
+To obtain an Users Export, visit the Admin Exports page and select the List of Users report. There are two pre-built List of Users report. Version 1 (v1) is a comprehensive report of all users within your Recurly site including first name,  last name, email, user access and date added time. Version 1 (v2) is the same report as v1 but also includes the user role field.
 
-<Image align="center" className="border" border={true} width="300% " src="https://files.readme.io/72a3dcb735d4b2da29b969959b869b0121d4f79d6fe52584508c868c74e144ac-image.png" />
+![](https://files.readme.io/6b0cf2d8e4c4642275227bb47e50955c39e8f3a7010312facdf02bcc1cfab8bd-image.png)
 
 ## Filtering options in the users report
 
-<br />
+The Users report provides various filtering options to refine and narrow down your search criteria. You can filter users based on user role, last name and date/time added. Customizing the fields displayed in your report is made easy with the ability to select or exclude specific fields on the Explore screen.
+
+![](https://files.readme.io/aae6c220158a448087127ca8f8d82259a29338458af1e1635372e7e0860932cd-image.png)
+
+* **Email:** Filter users by their email addresses.
+* **Name:** Filter users by their first and last names.
+* **User Access:** View the list of permissions assigned to each user.
+* **Date Added Time:** Filter users based on the date they accepted their invitation to the Recurly site.
+* **User Role:** Filter users based on the role they are assigned to within your site.
 
 ## Select additional filters
 
-> <br />
+To further refine your search, the Users report offers additional filters such as "Search Entire Dataset," "User Role" , "Users Date Added Date" and "Users Last Name". These filters allow you to search users based on their role, by last name and define a specific date range for when users were added to the site.
 
-<br />
+![](https://files.readme.io/63b51aea8d78b98d9b24edbaa5dd52dece69efe5dfbfdfd1275a0b1e6ef4093f-image.png)
 
 ## Choose a visualization
 
-Tailor your data presentation to suit your preferences by selecting a visualization option that best represents your dataset. Whether it's a table, column chart, bar graph, scatterplot, line graph, pie chart, map, or single value visualization, Recurly provides a range of visualization options to enhance your understanding of the account activities data.
+Tailor your data presentation to suit your preferences by selecting a visualization option that best represents your dataset. Whether it's a table, column chart, bar graph, scatterplot, line graph, pie chart, map, or single value visualization, Recurly provides a range of visualization options to enhance your understanding of the user data.
 
 <Image align="left" className="border" border={true} width="500% " src="https://files.readme.io/c181fbd418869615b74310fccbbc6320e82eff3ad4cec6aeaccca85953147351-image.png" />
 
@@ -54,41 +62,19 @@ Tailor your data presentation to suit your preferences by selecting a visualizat
 
 <br />
 
-Table (Default)
-Column Chart
-Bar Graph
-Scatterplot
-Line Graph
-Pie Chart
-Map
-Single Value
-
+* Table (Default)
+* Column Chart
+* Bar Graph
+* Scatterplot
+* Line Graph
+* Pie Chart
+* Map
+* Single Value
 
 Additional options are available by clicking the ellipses button at the end of the options list where a dropdown list of several more visualization options are presented.
 
 ## Download and save your data
 
-Once the export file is ready, you will see it listed in the "Export History" table. To download the file, hover over the ellipses next to the export entry and click on the "Download" option. The exported data will be in CSV format, which can be easily opened and analyzed using spreadsheet software.
+Once you have explored and customized your dataset, you can easily download it for further analysis or record-keeping. Simply click the gear icon on the top-right side of the Explore screen and select "Download" to choose from a variety of file format options. For larger datasets exceeding the table visualization limit of 5,000 rows, downloading the file ensures that you can access the complete dataset and analyze all results.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aa36af42bece0d160f15ed8b11ce82b7715d3026c8d98f6cc4ef2f102d86139b-image.png" />
-
-# Available filters
-
-The exported CSV file provides columns under your export based on specific criteria.
-
-* **Email Address:** Filter users by their email addresses.
-* **Name:** Filter users by their first and last names.
-* **User Access:** View the list of permissions assigned to each user.
-* **Date Added:** Filter users based on the date they accepted their invitation to the Recurly site.
-* **User Role:** Filter users based on the role they are assigned to within your site.
-
-# Exports table
-
-| Id                                        | Example                                         | Description                                                                                                                          |
-| :---------------------------------------- | :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| <span id="email">email</span>             | [john.doe@email.com](mailto:john.doe@email.com) | The unique email address associated with each user. Used for login and communication purposes.                                       |
-| <span id="first_name">first_name</span>   | John                                            | The first name of the user. Useful for personalized communication and record management.                                             |
-| <span id="last_name">last_name</span>     | Doe                                             | The last name or surname of the user. Paired with the first name for complete identification.                                        |
-| <span id="user_access">user_access</span> | Full Access                                     | Defines the permissions and capabilities a user has within the system. Can range from "Full Access" to "Read-Only".                  |
-| <span id="date_added">date_added</span>   | 2023-01-05                                      | The date when the user was added to the system. This helps track user history and tenure.                                            |
-| <span id="user_role">user_role</span>     | Administrator                                   | The role assigned to the user, dictating their responsibilities and tasks within the platform. Examples: Administrator, User, Guest. |
+![](https://files.readme.io/4cd82ab6cf633e58de3a4ea8b55fe9de78ba9813d4725fe6f746e3b804d44c7e-image.png)
