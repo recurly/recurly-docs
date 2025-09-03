@@ -26,17 +26,47 @@ The user export feature in Recurly allows administrators to easily download a co
 2. In the left-side panel, navigate to the "**Admin Exports**" option.
 3. Select "**Users**" from the list of available exports.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a34b606e8e7fee3a7e096da889df3353b73f3c293e77f94016eafa3c32a4f2f0-image.png" />
+![](https://files.readme.io/bfc90de5f39f60baedca5b749ceb675ec5d6f30e59f1d57a52b50153cca2026d-image.png)
 
-# Requesting user exports
+# Obtaining an user export
 
-After selecting the "Users" option, you can set the desired time range for the report. This allows you to specify the period from which you want to obtain information about your active site users. Once you have set the time range, click on the "Request Export" button.
+To obtain an Users Export, visit the Admin Exports page and select the List of users report. This comprehensive report offers a detailed overview of all users within your Recurly site including first and last name, email, user role, user access and date added.
 
-> **Recommendation:** To capture the most precise history of user access, we advise setting up regular, automated exports with shorter time frame intervals. This approach is crucial because our exports include users who had and continue to have access during the selected export dates, but we do not provide past access information. Regular, shorter interval exports will provide a more accurate snapshot of user access at any given point.
+<Image align="center" className="border" border={true} width="300% " src="https://files.readme.io/72a3dcb735d4b2da29b969959b869b0121d4f79d6fe52584508c868c74e144ac-image.png" />
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1f0c6c463960480b7fa8d375fc33c0f2b51aacc4fcc95f8839c6c2a2f98a5f4d-image.png" />
+## Filtering options in the users report
 
-## Downloading the User export
+<br />
+
+## Select additional filters
+
+> <br />
+
+<br />
+
+## Choose a visualization
+
+Tailor your data presentation to suit your preferences by selecting a visualization option that best represents your dataset. Whether it's a table, column chart, bar graph, scatterplot, line graph, pie chart, map, or single value visualization, Recurly provides a range of visualization options to enhance your understanding of the account activities data.
+
+<Image align="left" className="border" border={true} width="500% " src="https://files.readme.io/c181fbd418869615b74310fccbbc6320e82eff3ad4cec6aeaccca85953147351-image.png" />
+
+<br />
+
+<br />
+
+Table (Default)
+Column Chart
+Bar Graph
+Scatterplot
+Line Graph
+Pie Chart
+Map
+Single Value
+
+
+Additional options are available by clicking the ellipses button at the end of the options list where a dropdown list of several more visualization options are presented.
+
+## Download and save your data
 
 Once the export file is ready, you will see it listed in the "Export History" table. To download the file, hover over the ellipses next to the export entry and click on the "Download" option. The exported data will be in CSV format, which can be easily opened and analyzed using spreadsheet software.
 
