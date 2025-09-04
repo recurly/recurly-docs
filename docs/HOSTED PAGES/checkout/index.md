@@ -185,7 +185,7 @@ For the selected configuration, you are able to choose the style you wish to app
 * **Accept coupons** - Enabling this will add an optional field in the Order Summary of your checkout where a user can enter a gift card code or promo code.  Any specific coupon used for checkout will need to be set up in Recurly’s coupon configurations.
 * **Accept shipping address** - Enabling this will add required form fields for the user's shipping address.
 * **Treat multiple subscriptions as choices** - If your checkout configuration has more than one subscription, you may want to enable this setting so that a user can choose which subscription they would like to purchase.
-* **Display subscription details and require acceptance of recurring charges before entering billing information** - This setting will generate and display greater details about the recurring charges in the checkout.  The user must click "Agree & Continue" before they can enter their information and complete the purchase. 
+* **Display subscription details and require acceptance of recurring charges before entering billing information** - This setting will generate and display greater details about the recurring charges in the checkout.  The user must click "Agree & Continue" before they can enter their information and complete the purchase.
 * The additional fields **Company name**, **Phone number**, and **VAT number / Tax identifier** will display as optional fields if enabled.
 
 ### Agreements
@@ -194,7 +194,7 @@ These additional URL fields give you the flexibility to offer your subscribers t
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/76381dd290b6315e5bb35de3519a754a4ddcfef6ae8a47bd03428068bca7813b-agreements.png" />
 
-If you choose to use your own account management site, you will need to provide the URL.  Otherwise, you can use Recurly's Hosted Account Management page where an unique URL is generated for each account automatically.  
+If you choose to use your own account management site, you will need to provide the URL.  Otherwise, you can use Recurly's Hosted Account Management page where an unique URL is generated for each account automatically.
 
 * **Account Management URL** - If account management URL is set, a link will be provided in checkout confirmation emails that allow your customers to view and manage their account.
 * **Support URL** - If a support URL is set, the Checkout page displays a link to a page where customers can contact support.
@@ -209,7 +209,7 @@ If you choose to use your own account management site, you will need to provide 
 
 Choose the currencies that you want to make available in this particular checkout.  Note that only your site's enabled currencies will be available to choose from.
 
-* Only plans that match the selected currencies will be available to choose from when selecting a plan from the _Add Subscription_ dropdown. 
+* Only plans that match the selected currencies will be available to choose from when selecting a plan from the _Add Subscription_ dropdown.
 * By default, your default site currency is added. Or, if all currencies are removed, it will default to the default site currency.
 * Create a configuration with only one currency to lock that currency as what is displayed to the user. This prevents users from searching for the best price across currencies.
 
