@@ -105,9 +105,9 @@ Checkout provides the recommended payment method and currency based on the user 
 
 # Configuration landing page
 
-To begin, navigate to Configuration → Checkout. test
+To begin, navigate to Configuration → Checkout. 
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e536530-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/48e3c6088219a15700b9943ea518f755c87844784511d3996c4ff992dd1b0eb7-checkoutHome.png" />
 
 The configuration page offers flexibility with 3 main areas to modify the Checkout configurations. Here you can create different sets of hostnames, modify configurations and styles to create different experiences for customers based on where they are coming from, different promotions, different products or brands.
 
@@ -133,7 +133,7 @@ Note: there is no limit to the number of hostnames that can be configured for pr
 
 To create a new hostname, select **Create new Hostname**.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b173f28-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/71b0fb5650a90df387b74e8d90eac8a55c5c9d80621520a87121ddb10bb420df-hostname.png" />
 
 **Location details** - URL is where you specify the hostname location (domain and optional subdomain) where your customers will access your Checkouts..In order to use a custom domain:
 
@@ -160,11 +160,11 @@ Recurly will provision an SSL certificate for your custom domain. The provisioni
 
 **Configuration - default checkout configuration:** initially, this will be set to the default checkout configuration, but can be configured to include any checkout configuration.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/fc3f956-Screen_Shot_2024-06-03_at_5.12.51_PM.png" />
-
 ## Configurations
 
 Configuration is where you set up the products to sell and configure additional Checkout capabilities.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/215cf0c29ad49d10876d11887c91cf67cd28f64d4ac169b2ece4f1c90d7f790c-aboutThisConfig.png" />
 
 **About this configuration**
 
@@ -177,23 +177,23 @@ Note: there is no limit to the number of configurations that can be created.
 
 For the selected configuration, you are able to choose the style you wish to apply to this configuration To modify styles, see Styles section below.
 
-1. **Add** a Confirmation URL
-   1. Upon purchase, the user will be taken to this URL.
-   2. Without a URL, the customer will receive the standard confirmation page upon purchase.
-2. **Configure** a Cancellation URL
-   1. A **Back** button will become visible and the user will be sent to the specified URL when a customer uses that **Back** button.
-3. **Utilize** a Finish URL
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e6debf576d86113b5772285cf3a0d74eea19d41ab137150f509ea4f974c4070e-appearanceBehaviors.png" />
+
+1. **Cancellation URL** - If a cancellation URL is set, a back button will be added to your Checkout which will redirect users to this URL.
+2. **Finish URL** - If a Finish URL is set, a link will be added to the bottom of the order confirmation page allowing your customers to proceed to this URL.
+3. **Confirmation URL** - When a user has completed their purchase, we will redirect them to this URL. If this is left blank, a confirmation page will be displayed.Upon purchase, the user will be taken to this URL.  Without a URL, the customer will receive the standard confirmation page upon purchase.
+4. **Utilize** a Finish URL
    1. The URL will appear at the bottom of the standard confirmation page with the words "Return to [site name]."
-4. Privacy Policy URL
+5. Privacy Policy URL
    1. A checkbox to accept the Privacy Policy and/or Terms of Service will appear on the Checkout page with a link to the URL provided.
-5. Terms of Service URL
+6. Terms of Service URL
    1. A checkbox to accept the Privacy Policy and/or Terms of Service will appear on the Checkout page with a link to the URL provided.
-6. Additional address fields
+7. Additional address fields
    1. Company name
    2. Phone Number
    3. Vat Number: Value-added tax identification number
-7. Phone number
-8. More behaviors
+8. Phone number
+9. More behaviors
    1. **Accept Coupons -** Check this box to enable a coupon field where a customer can enter a valid coupon code to apply a discount. Any specific coupon used for checkout will need to be set up in Recurly’s coupon configurations.
    2. **Require shipping address -** Check this box to enable a field where a customer will need to provide their shipping address to complete the purchase based on the plan configuration.
    3. **Use tax-inclusive pricing -** Check this box to apply a tax-inclusive pricing model to all subscription and items in the cart configuration.
