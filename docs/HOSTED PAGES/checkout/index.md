@@ -49,7 +49,7 @@ A Checkout Session's framework is composed of three core components: Checkout St
 
 ### Checkout styles
 
-Checkout Styles define your Checkout's visual theme. You have the flexibility to craft various styles that resonate with your brand identity, including incorporating your logo and brand colors.\
+Checkout Styles define your Checkout's visual theme. You have the flexibility to craft various styles that resonate with your brand identity, including incorporating your logo and brand colors.
 A standard default style is available for immediate use.
 
 ### Checkout hostnames
@@ -105,7 +105,7 @@ Checkout provides the recommended payment method and currency based on the user 
 
 # Configuration landing page
 
-To begin, navigate to Configuration → Checkout.
+To begin, navigate to Configuration → Checkout. test
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e536530-image.png" />
 
@@ -183,7 +183,7 @@ For the selected configuration, you are able to choose the style you wish to app
 2. **Configure** a Cancellation URL
    1. A **Back** button will become visible and the user will be sent to the specified URL when a customer uses that **Back** button.
 3. **Utilize** a Finish URL
-   1. The URL will appear at the bottom of the standard confirmation page with the words "Return to \[site name]."
+   1. The URL will appear at the bottom of the standard confirmation page with the words "Return to [site name]."
 4. Privacy Policy URL
    1. A checkbox to accept the Privacy Policy and/or Terms of Service will appear on the Checkout page with a link to the URL provided.
 5. Terms of Service URL
@@ -282,17 +282,17 @@ This chart outlines the new capabilities that Checkout offers, that were not ava
 
 ### Enablement and access
 
-**Q: How can I access this feature?**\
-\*\*A:\*\*All sites created after May of 2024 will have Checkout automatically. Please contact support to enable it on your site if not already enabled. If you have Checkout, this feature is under Configuration→Checkout in the Recurly App navigation.
+**Q: How can I access this feature?**
+**A:**All sites created after May of 2024 will have Checkout automatically. Please contact support to enable it on your site if not already enabled. If you have Checkout, this feature is under Configuration→Checkout in the Recurly App navigation.
 
 ### Requirements for use
 
-**Q: What are the minimum requirements for using this feature?**\
+**Q: What are the minimum requirements for using this feature?**
 **A:** At least one plan must be set up, with required or optional add-ons, a default currency, and coupons configured if you plan to accept coupons.
 
 ### Minimum checkout configuration
 
-**Q: What is the minimum Checkout configuration needed?**\
+**Q: What is the minimum Checkout configuration needed?**
 **A**:
 
 * At least one Hostname - can use the default.
@@ -301,7 +301,7 @@ This chart outlines the new capabilities that Checkout offers, that were not ava
 
 ### Testing
 
-**Q: How do I test checkout using payment methods?**\
+**Q: How do I test checkout using payment methods?**
 **A:** Refer to the Recurly test gateway [documentation](https://docs.recurly.com/docs/test) for testing your checkout experience in Sandbox. Use gateway test cards for Dev Mode or Production.
 
 ### Limitations
