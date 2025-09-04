@@ -22,12 +22,14 @@ A concise digest of Recurly's ongoing changes and minor updates that continually
 
 The Release Notes section is your go-to place to catch up on the minor yet meaningful changes we have rolled out. From UI tweaks to API and Recurly.js extensions, stay in the loop with the incremental improvements making your Recurly experience smoother. For major updates, our [blog](https://blog.recurly.com) and newsletter are still your best companions. Questions? [Contact support](mailto:support@recurly.com).
 
-## 2025 
+## 2025
 
 ## September
 
 | Release Date | **Feature**                     | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                |
 | :----------- | :------------------------------ | :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sept 9       | **Recurly Engage**              | Low                  | You can now extend the reset period days within your Prompt Guide Limits, giving you more flexibility in how you manage your campaigns.                                                                                                   |
+| Sept 9       | **Recurly Engage**              | Low                  | A new feature is available that enables live editing of Recurly Engage experiments. You can now directly edit various elements including variants, triggers and actions.                                                                  |
 | Sept 2       | **FreedomPay gateway**          | Low                  | Minor updates to enable AVS and CVV checks on customer initiated transactions within Payment Settings.                                                                                                                                    |
 | Sept 2       | **Ebanx gateway + UPI AutoPay** | Low                  | Updated subscription PUT validations via the V3 API to allow updates to subscriptions when using the UPI AutoPay payment method on Ebanx. This update will allow behaviors such as editing custom fields, among other things.             |
 | Sept 2       | **Stripe gateway**              | High                 | Updated the supported Stripe Client library underpinning calls to the gateway in preparation for version upgrades. No impact is expected.                                                                                                 |
@@ -131,7 +133,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about 
+        We are updating our currency support to include BRL, CNY, HDK, ILS, MXN, and THB to enable more processing opportunities for merchants. We will also be making minor tweaks to onboarding in Recurly Admin to allow merchants in several other countries to view PayPal Complete and onboarding without regional warnings. To learn more about
 
         [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
 
