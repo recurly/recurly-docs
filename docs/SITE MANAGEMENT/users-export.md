@@ -14,13 +14,14 @@ next:
 ---
 # Overview
 
-The user export feature in Recurly allows administrators to easily download a comprehensive report containing information about every site user who has access to their Recurly site. This report includes the user's name, email address, their access permissions within Recurly, and the date each user was created.
+### Prerequisites & limitations
 
-> 🚧 Important
->
-> The **Users report** will only include users who had and continue to have access during the selected dates. Deleted users will be excluded from the users report.
->
-> To capture the most precise history of user access, we recommend running this report regularly to provide a more accurate snapshot of user access at any given point in time.
+* The **Users report** will only include users who had and continue to have access during the selected dates. Deleted users will be excluded from the users report.
+* To capture the most precise history of user access, we recommend running this report regularly to provide a more accurate snapshot of user access at any given point in time.
+
+# Definition
+
+The user export feature in Recurly allows administrators to easily download a comprehensive report containing information about every site user who has access to their Recurly site. This report includes the user's name, email address, their access permissions within Recurly, and the date each user was created.
 
 # Accessing user exports
 
