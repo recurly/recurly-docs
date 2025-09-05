@@ -47,6 +47,7 @@ Line items are individual charges or components listed on an invoice, each repre
 * **Clear billing breakdown**: Provides transparency to subscribers by itemizing all charges.
 * **Supports stand-alone items**: Line items don't need to be tied to a subscription to be invoiced.
 * **Displayed across channels**: Visible in Admin Console, PDFs, Hosted Invoice, and Hosted Account Management.
+* **Payments compliance**: Sent to gateways in various cases, such as Klarna usage, and lower interchange rates in certain cases. Ensure what you are creating for line items is descriptive and accurate.
 
 ## Key details
 
@@ -71,7 +72,7 @@ Every invoice line item displays these columns:
 
 ### Description and naming guidelines
 
-Make use of the best practices below for proper tracking of line items as well as CEPD compliance for L2 and L3 data. CEDP is a program from Visa that validates transaction data under a new (as of 2025) set of standards and rewards compliant transactions with a reduction in interchange rates. 
+Make use of the best practices below for proper tracking of line items as well as CEPD compliance for L2 and L3 data. CEDP is a program from Visa that validates transaction data under a new (as of 2025) set of standards and rewards compliant transactions with a reduction in interchange rates.
 
 Ensure your line items and other descriptive elements included in your invoices are compliant, as line items are sent to gateways in certain cases. This can also be applied to HIPAA compliance -- do not include PHI data for your customers in Invoice descriptions, product codes, plan names, or line item product data if the gateway you use is not also HIPAA compliant.
 
