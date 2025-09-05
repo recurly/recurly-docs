@@ -24,25 +24,25 @@ Once funds are available, the payment can be reattempted without causing complia
 
 # What is a "hard" decline
 
-A "hard" decline means that the decline reason is not generally "fixable", and that the payment should *never* be retried. These reasons can include fraud, account closures, or even the consumer blocking a merchant from re-authorizing their card.
+A "hard" decline means that the decline reason is not generally "fixable", and that the payment should not be retried. These reasons can include fraud, account closures, or even the consumer blocking a merchant from re-authorizing their card.
 
 Visa has a list of decline reasons and categorizes them in levels. For example, a Category 1 Visa Decline Code is always going to be a hard decline and should not be retried.
 
-MasterCard uses a different method: Merchant Advice Codes. Merchant Advice Codes, or MAC for short, are also a list of MasterCard specific codes that should not be retried for recurring or one-time transactions.
+MasterCard uses a different method: Merchant Advice Codes. Merchant Advice Codes, or MAC for short, are also a list of MasterCard specific codes that should not be retried for recurring or one-time transactions. Certain codes can infer retry-friendly transactions if new card data is provided via Account Updater or the customer updating their billing information.
 
 Recurly works hard to maintain compliance for our customers to avoid fines associated with retry abuse and card network retry limitations.
 
 # What kind of declines can be retried and how often?
 
-Only "soft" declines (Insufficient Funds, as an example) can be retried *and* only under strict guidelines from the card networks. Visa and Mastercard have different guidelines on the frequency of retries.
+Only "soft" declines (Insufficient Funds, as an example) can be retried (without Network fee risk). Visa and Mastercard have different guidelines on the frequency of retries, please see below.
 
 ## Visa Retry Limitations
 
-Visa allows re-attempts against *soft* declined transactions up to **15 times within a 30 day period**. In other words, after an initial decline, Recurly can and will retry the transaction up to 15 times before ceasing attempts.
+Visa allows re-attempts against _soft_ declined transactions up to **15 times within a 30 day period**. In other words, after an initial decline, Recurly can and will retry the transaction up to 15 times before ceasing attempts.
 
 ## MasterCard Retry Limitations
 
-MasterCard is a bit more complicated. MasterCard instructs merchants not to retry a transaction for 24 hours when the payment has resulted in 10 declines. After that 24 hour period, retries can resume *but* must abide by these restrictions:
+MasterCard is a bit more complicated. MasterCard instructs merchants not to retry a transaction for 24 hours when the payment has resulted in 10 declines. After that 24 hour period, retries can resume _but_ must abide by these restrictions:
 
 * No more than 35 failed attempts on the same card / same merchant in a 30 day period
 * No more than 7 retries in a single day
@@ -52,7 +52,7 @@ MasterCard is a bit more complicated. MasterCard instructs merchants not to retr
 The system will cease attempts in other scenarios as well:
 
 * A retry results in an approval. No further retries will be attempted after an approval.
-* A hard decline is returned by the gateway. If the response from the gateway *changes* from a soft to a hard decline (for example, if the customer closed their account within the retry period), then Recurly will no longer attempt a payment against this card.
+* A hard decline is returned by the gateway. If the response from the gateway _changes_ from a soft to a hard decline (for example, if the customer closed their account within the retry period), then Recurly will no longer attempt a payment against this card.
 * The Invoice is manually closed or the subscription expired. In this case, Recurly will no longer attempt to recover payments.
 * The billing information is updated. If the card being retried is updated, we will no longer attempt to recover funds from the previous payment method.
 
