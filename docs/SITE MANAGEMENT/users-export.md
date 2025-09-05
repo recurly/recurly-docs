@@ -25,13 +25,12 @@ The user export feature in Recurly allows administrators to easily download a co
 
 # Accessing user exports
 
-1. Go to the **Admin** section of Recurly.
-2. In the left-side panel, navigate to the "**Admin Exports**" option.
-3. Select "**Users**" from the list of available exports.
+1. **Go** to the **Admin** section of Recurly.
+2. In the left-side panel, **navigate** to the "**Admin Exports**" option.
 
-<Image align="center" width="120% " src="https://files.readme.io/38844a1907050a1209bffd4b5e17d04942c4c0ae7010dd22b160626d9a454f90-image.png" />
+<Image align="center" className="border" border={true} width="120% " src="https://files.readme.io/38844a1907050a1209bffd4b5e17d04942c4c0ae7010dd22b160626d9a454f90-image.png" />
 
-<br />
+3. **Select** "**Users**" from the list of available exports.
 
 # List of users
 
