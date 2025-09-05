@@ -71,6 +71,8 @@ Every invoice line item displays these columns:
 
 ### Description and naming guidelines
 
+Make use of the best practices below for proper tracking of line items as well as CEPD compliance for L2 and L3 data.
+
 <Cards columns={4}>
   <Card title="Be specific" icon="fa-check-circle">
     Use clear, descriptive names rather than generic labels like “Item 1” or “Charge.”
