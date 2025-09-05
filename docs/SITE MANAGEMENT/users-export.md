@@ -32,7 +32,7 @@ The user export feature in Recurly allows administrators to easily download a co
 
 3. **Select** "**Users**" from the list of available exports.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/18af1aa02557bcf76b88ec817e3a6725956f695a77215291059e02d6af550ee2-image.png" />
+<Image align="center" className="border" border={true} width="100% " src="https://files.readme.io/18af1aa02557bcf76b88ec817e3a6725956f695a77215291059e02d6af550ee2-image.png" />
 
 # List of users
 
