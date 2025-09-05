@@ -53,7 +53,7 @@ The Users report provides various filtering options to refine and narrow down yo
 
 To further refine your search, the Users report offers additional filters such as "Search Entire Dataset," "User Role" , "Users Date Added Date" and "Users Last Name". These filters allow you to search users based on their role, by last name and define a specific date range for when users were added to the site.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/63b51aea8d78b98d9b24edbaa5dd52dece69efe5dfbfdfd1275a0b1e6ef4093f-image.png" />
+<Image align="center" className="border" border={true} width="100% " src="https://files.readme.io/63b51aea8d78b98d9b24edbaa5dd52dece69efe5dfbfdfd1275a0b1e6ef4093f-image.png" />
 
 ## Choose a visualization
 
@@ -76,6 +76,6 @@ Additional options are available by clicking the ellipses button at the end of t
 
 Once you have explored and customized your dataset, you can easily download it for further analysis or record-keeping. Simply click the gear icon on the top-right side of the Explore screen and select "Download" to choose from a variety of file format options. For larger datasets exceeding the table visualization limit of 5,000 rows, downloading the file ensures that you can access the complete dataset and analyze all results.
 
-<Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/4cd82ab6cf633e58de3a4ea8b55fe9de78ba9813d4725fe6f746e3b804d44c7e-image.png" />
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/4cd82ab6cf633e58de3a4ea8b55fe9de78ba9813d4725fe6f746e3b804d44c7e-image.png" />
 
 <br />
