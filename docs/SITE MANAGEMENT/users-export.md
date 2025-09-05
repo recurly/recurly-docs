@@ -17,7 +17,7 @@ next:
 ### Prerequisites & limitations
 
 * The **Users report** will only include users who had and continue to have access during the selected dates. Deleted users will be excluded from the users report.
-* To capture the most precise history of user access, we recommend running this report regularly to provide a more accurate snapshot of user access at any given point in time.
+* To capture the most precise history of user access, it's recommended to running this report regularly to provide a more accurate snapshot of user access at any given point in time.
 
 # Definition
 
