@@ -58,11 +58,7 @@ To further refine your search, the Users report offers additional filters such a
 
 Tailor your data presentation to suit your preferences by selecting a visualization option that best represents your dataset. Whether it's a table, column chart, bar graph, scatterplot, line graph, pie chart, map, or single value visualization, Recurly provides a range of visualization options to enhance your understanding of the user data.
 
-<Image align="left" className="border" border={true} width="80% " src="https://files.readme.io/c181fbd418869615b74310fccbbc6320e82eff3ad4cec6aeaccca85953147351-image.png" />
-
-<br />
-
-<br />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c181fbd418869615b74310fccbbc6320e82eff3ad4cec6aeaccca85953147351-image.png" />
 
 * Table (Default)
 * Column Chart
@@ -79,4 +75,6 @@ Additional options are available by clicking the ellipses button at the end of t
 
 Once you have explored and customized your dataset, you can easily download it for further analysis or record-keeping. Simply click the gear icon on the top-right side of the Explore screen and select "Download" to choose from a variety of file format options. For larger datasets exceeding the table visualization limit of 5,000 rows, downloading the file ensures that you can access the complete dataset and analyze all results.
 
-![](https://files.readme.io/4cd82ab6cf633e58de3a4ea8b55fe9de78ba9813d4725fe6f746e3b804d44c7e-image.png)
+<Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/4cd82ab6cf633e58de3a4ea8b55fe9de78ba9813d4725fe6f746e3b804d44c7e-image.png" />
+
+<br />
