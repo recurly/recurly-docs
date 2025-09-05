@@ -35,13 +35,13 @@ The user export feature in Recurly allows administrators to easily download a co
 
 To obtain an Users Export, visit the Admin Exports page and select the List of Users report. There are two pre-built List of Users report. Version 1 (v1) is a comprehensive report of all users within your Recurly site including first name,  last name, email, user access and date added time. Version 1 (v2) is the same report as v1 but also includes the user role field.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6b0cf2d8e4c4642275227bb47e50955c39e8f3a7010312facdf02bcc1cfab8bd-image.png" />
+<Image align="center" className="border" border={true} width="120% " src="https://files.readme.io/6b0cf2d8e4c4642275227bb47e50955c39e8f3a7010312facdf02bcc1cfab8bd-image.png" />
 
 ## Filter options
 
 The Users report provides various filtering options to refine and narrow down your search criteria. You can filter users based on user role, last name and date/time added. Customizing the fields displayed in your report is made easy with the ability to select or exclude specific fields on the Explore screen.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aae6c220158a448087127ca8f8d82259a29338458af1e1635372e7e0860932cd-image.png" />
+<Image align="center" className="border" border={true} width="120% " src="https://files.readme.io/aae6c220158a448087127ca8f8d82259a29338458af1e1635372e7e0860932cd-image.png" />
 
 * **Email:** Filter users by their email addresses.
 * **Name:** Filter users by their first and last names.
