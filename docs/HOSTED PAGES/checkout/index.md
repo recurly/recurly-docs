@@ -24,7 +24,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & limitations
 
-Recurly's out of the box tax previews are supported on Checkout. Tax previews are not available for Avalara or Vertex.
+* Recurly's out of the box tax previews are supported on Checkout. Tax previews are not available for Avalara or Vertex.
 
 # Definition
 
@@ -72,7 +72,7 @@ Checkout Configurations act as blueprints for determining the structure of your 
 * **Use Custom Hostname**: For a more branded experience, direct customers to your custom hostname (`https://<your-checkout-hostname>`). This method initiates a checkout session that matches the Checkout Configuration for your custom domain, enhancing brand consistency and customer trust.
 * **Specific Checkout Configuration**: When aiming for a targeted shopping experience, such as for specific promotions or customer segments, use a direct link (`https://<your-checkout-hostname>/c/<checkout-configuration-id>`) that specifies a particular checkout configuration. This approach ensures that the session is precisely tailored to the intended promotion or segment.
 
-### Targeted Personalization
+### Targeted personalization
 
 #### **Localization**
 
@@ -107,9 +107,9 @@ Checkout provides the recommended payment method and currency based on the user 
 
 **Device responsive**:  Checkout detects the device type and resizes to the optimized layout.
 
-# Configuration landing page
+# Landing page configuration
 
-To begin, navigate to Configuration → Checkout.
+1. To begin, **navigate** to Configuration → Checkout.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/48e3c6088219a15700b9943ea518f755c87844784511d3996c4ff992dd1b0eb7-checkoutHome.png" />
 
@@ -121,7 +121,7 @@ The configuration page offers flexibility with 3 main areas to modify the Checko
 
 Use the Hostname to specify the locations where your customers will complete their purchases.
 
-### Hostnames come in two forms:
+### Hostnames come in two forms
 
 #### Recurly-hosted domain
 
@@ -251,7 +251,7 @@ Checkout Pages configuration allows you to mix and match different host names an
 
 # Analytics
 
-Checkout includes a robust analytics dashboard where you can dive deep into Recurly Checkout data to analyze performance at driving cart conversion to acquire subscribers and sell products. [Learn more](https://docs.recurly.com/edit/checkout-dashboard) abut the Checkout analytics dashboard.
+Checkout includes a robust analytics dashboard where you can dive deep into Recurly Checkout data to analyze performance at driving cart conversion to acquire subscribers and sell products. [Learn more](https://docs.recurly.com/docs/checkout-dashboard) abut the Checkout analytics dashboard.
 
 # Checkout capabilities compared to Hosted Payment Page
 
