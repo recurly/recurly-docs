@@ -32,6 +32,8 @@ The user export feature in Recurly allows administrators to easily download a co
 
 3. **Select** "**Users**" from the list of available exports.
 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/18af1aa02557bcf76b88ec817e3a6725956f695a77215291059e02d6af550ee2-image.png" />
+
 # List of users
 
 To obtain an Users Export, visit the Admin Exports page and select the List of Users report. There are two pre-built List of Users report. Version 1 (v1) is a comprehensive report of all users within your Recurly site including first name,  last name, email, user access and date added time. Version 1 (v2) is the same report as v1 but also includes the user role field.
