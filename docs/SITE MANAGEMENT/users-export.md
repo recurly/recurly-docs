@@ -12,7 +12,7 @@ metadata:
 next:
   description: ''
 ---
-# Definition
+# Overview
 
 The user export feature in Recurly allows administrators to easily download a comprehensive report containing information about every site user who has access to their Recurly site. This report includes the user's name, email address, their access permissions within Recurly, and the date each user was created.
 
