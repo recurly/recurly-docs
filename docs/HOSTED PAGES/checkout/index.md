@@ -22,6 +22,10 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Prerequisites & limitations
+
+Recurly's out of the box tax previews are supported on Checkout. Tax previews are not available for Avalara or Vertex.
+
 # Definition
 
 Recurly Checkout offers a seamless consumer checkout experience that adapts to your customers needs. This experience provides additional flexibility in how merchants can manage the customer and developer experience, providing an additional option between a full API/RJS integration, and a standard Hosted Payment page.
@@ -249,7 +253,7 @@ Checkout Pages configuration allows you to mix and match different host names an
 
 Checkout includes a robust analytics dashboard where you can dive deep into Recurly Checkout data to analyze performance at driving cart conversion to acquire subscribers and sell products. [Learn more](https://docs.recurly.com/edit/checkout-dashboard) abut the Checkout analytics dashboard.
 
-# Checkout Capabilities compared to Hosted Payment Page
+# Checkout capabilities compared to Hosted Payment Page
 
 This chart outlines the new capabilities that Checkout offers, that were not available on HPP.
 
@@ -281,6 +285,4 @@ This chart outlines the new capabilities that Checkout offers, that were not ava
 **Q: How do I test checkout using payment methods?**
 **A:** Refer to the Recurly test gateway [documentation](https://docs.recurly.com/docs/test) for testing your checkout experience in Sandbox. Use gateway test cards for Dev Mode or Production.
 
-### Limitations
-
-Recurly's out of the box tax previews are supported on Checkout. Tax previews are not available for Avalara or Vertex.
+<br />
