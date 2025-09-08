@@ -115,9 +115,9 @@ Listen for the following webhooks:
 
 Once the consumer authenticates in-app (UPI App), listen for the following webhooks:
 
-* payment.transaction\_status\_updated
+* payment.transaction_status_updated
 * payment.success
-* charge\_invoice.paid
+* charge_invoice.paid
 
 You can Fetch a transaction, invoice, or subscription status to update your records. When the invoice moves into a paid state, this indicates a successful consumer authentication from the UPI Application.
 
@@ -126,13 +126,15 @@ You can Fetch a transaction, invoice, or subscription status to update your reco
 If, when signing up, the consumer rejects the enrollment or fails to respond to the in-app push notification, the subscription will move into an expired state, and the invoice/transaction will fail. Listen for the following events.
 
 * subscription.expired
-* charge\_invoice.failed
+* charge_invoice.failed
 
 These indicate the enrollment or charge was rejected upon signup.
 
 ### Cancellations
 
-If a customer cancels via the UPI app, Recurly webhooks will notify you. Subscriptions are automatically canceled in Recurly. Listen for the following webhook:
+If a customer cancels via the UPI app, Recurly webhooks will notify you. Subscriptions are automatically canceled in Recurly. You can read more on [automatic subscription cancellations ](https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription)in our Subscription management documentation.
+
+Listen for the following webhook:
 
 * subscription.canceled
 
@@ -163,7 +165,7 @@ Refer to the **Ebanx gateway documentation** for testing procedures.
 
 ### Retries
 
-UPI AutoPay payments retries will not be allowed through typical retry logic (Basic or Intelligent Retries) as declined UPI transactions must be retried the *same day.* Retries are not yet supported, but are planned.
+UPI AutoPay payments retries will not be allowed through typical retry logic (Basic or Intelligent Retries) as declined UPI transactions must be retried the _same day._ Retries are not yet supported, but are planned.
 
 # Checkout flow
 
@@ -181,11 +183,11 @@ Since UPI - Recurring customer actions are outside of Recurly's view, our Ebanx 
 
 Other good webhooks to listen for are:
 
-* charge\_invoice.created: Will be sent when a customer initially signs up for a subscription with no trial.
-* charge\_invoice.processing: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has not been confirmed.
-* charge\_invoice.paid: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been confirmed.
-* charge\_invoice.failed: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been rejected by the customer.
-* payment.transaction\_status\_updated: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been confirmed.
+* charge_invoice.created: Will be sent when a customer initially signs up for a subscription with no trial.
+* charge_invoice.processing: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has not been confirmed.
+* charge_invoice.paid: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been confirmed.
+* charge_invoice.failed: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been rejected by the customer.
+* payment.transaction_status_updated: Will be sent when a customer signs up for a subscription with no trial, and the enrollment has been confirmed.
 * payment.scheduled:  Will be sent when a customer signs up for a subscription with no trial, and the enrollment has not been confirmed.
 * subscription.created:  Will be sent when a customer signs up for a subscription with or without a trial.
 * subscription.expired: Will be sent when a customer signs up for a subscription with or without a trial and does not confirm the enrollment.
