@@ -59,6 +59,14 @@ When a subscription is **cancelled**, it remains active for the duration of the 
 * Enable the **Cancel subscriptions** option under Customer Options.
 * The customer, upon accessing their Hosted Account, will have the option to cancel.
 
+# Auto cancellation of a subscription
+
+In certain cases, Recurly can receive an indicator from a gateway indicating a payment method is no longer valid, which will result in the cancellation of the related subscription where the tokens or mandates are in use.
+
+**Supported Gatways:**
+
+* [Paypal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete)
+
 # Reactivate a subscription
 
 > **Note**: The subscription can only be reactivated if it isn't expired or permanently canceled. If you are subject to SCA / PSD2 Compliance mandates, your customer must reauthenticate their stored billing information prior to reactivation. See [3D secure with stored Billing Information](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/) for more details.
