@@ -35,16 +35,16 @@ Ebanx is a full-service payment management platform focused on upcoming markets 
 
 # Key details
 
-| Feature                         | Description                                                      |
-| ------------------------------- | ---------------------------------------------------------------- |
-| Services that work with Recurly | Payment Processing, Subscriptions                                |
-| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions, Refunds |
-| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/)     |
-| Supported Card Brands           | N/A                                                              |
-| Gateway Specific 3DS2 Supported | No                                                               |
-| Card On File Supported          | No                                                               |
-| Regions                         | India                                                            |
-| Currencies                      | INR                                                              |
+| Feature                         | Description                                                                                                                                                                            |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Payment Processing, Subscriptions, [Automatic Subscription Cancellation](https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription) |
+| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions, Refunds                                                                                                                       |
+| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/)                                                                                                                           |
+| Supported Card Brands           | N/A                                                                                                                                                                                    |
+| Gateway Specific 3DS2 Supported | No                                                                                                                                                                                     |
+| Card On File Supported          | No                                                                                                                                                                                     |
+| Regions                         | India                                                                                                                                                                                  |
+| Currencies                      | INR                                                                                                                                                                                    |
 
 # Configuring Ebanx in Recurly
 
@@ -98,7 +98,7 @@ Recurly only supports INR, so no selection is necessary.
 2. Make sure your **Production Credentials** are entered in Recurly and your Ebanx account is in **Production mode**.
 3. Make sure you have Ebanx production webhooks enabled prior to launch. See configuration steps below.
 
-> **Pro Tip:** Keep your Ebanx credentials secure. Only authorized personnel should have access.\
+> **Pro Tip:** Keep your Ebanx credentials secure. Only authorized personnel should have access.
 > **Note:** Always consult with your Ebanx representative or Ebanx support to ensure your account is in good standing and you’re meeting all relevant regulations.
 
 <br />
@@ -160,14 +160,14 @@ See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/
 When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to follow these instructions:
 
 * Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
-  * *Confirming* the payment will create a Approval in Recurly.
-  * *Cancelling* will cause the payment to decline and the invoice to enter dunning.
+  * _Confirming_ the payment will create a Approval in Recurly.
+  * _Cancelling_ will cause the payment to decline and the invoice to enter dunning.
 
 # Additional Information
 
 ## Subscriptions and Transactions that work with UPI AutoPay
 
-* Trial Subscriptions *with payment data* -- trials without a prior UPI enrollment will not function.
+* Trial Subscriptions _with payment data_ -- trials without a prior UPI enrollment will not function.
 * Non-Trial Subscriptions
 * Renewals / Purchase
 
