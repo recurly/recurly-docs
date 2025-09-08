@@ -19,8 +19,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * We support trial descriptors on all gateways that support cards. Visa Trial descriptors function by adding the word 'Trial' to any Visa transaction that is converting after a trial period ends.
 * We support descriptors beyond Visa trial descriptors on the following gateways with the enablement of a feature flag. Reach out to Recurly Support or your account manager to have the related feature flag enabled:
-  * Stripe
-  * Braintree
+  * [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
+  * [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/)
 
 ### Limitations
 
@@ -44,12 +44,12 @@ Dynamic descriptors assist customers in recognizing their purchases with your bu
 
 Descriptors are typically limited to 22 characters, and often look like the below. They may or may not include a domain (acme.com) or a phone number. Visibility is dependent on the consumer's bank support for descriptors and the gateway support for data within a given descriptor.
 
-* **DBA\*Description of Charge**
+* **DBA*Description of Charge**
 
 On Recurly, we handle descriptors in the following manner:
 
-* For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: AcmeInc\*Gold Plan
-* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc\_Charge or AcmeInc\_One-Time Payment
+* For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: AcmeInc*Gold Plan
+* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc_Charge or AcmeInc_One-Time Payment
 
 ### Supported payment methods & transactions
 
