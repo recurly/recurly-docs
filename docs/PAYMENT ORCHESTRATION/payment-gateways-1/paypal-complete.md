@@ -61,7 +61,7 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 | Card on File Supported          | N/A                                                                                                                                                                                                     |
 | Regions                         | United States, EMEA, Canada, United Kingdom/EU, APAC                                                                                                                                                    |
 | Currencies                      | USD, AUD, BRL, CAD, CHF, CNY, CZK, DKK, EUR, GBP, HDK, HUF, ILS, JPY, MXN, MYR, NOK, NZD, PHP, PLN, SEK, SGD, THB, and TWD.                                                                             |
-| Other Gateway Feature Support   | PayPal Tokens, Token Lifecycle Webhooks (Subscription Cancellation)                                                                                                                                     |
+| Other Gateway Feature Support   | PayPal Tokens, Token Lifecycle and Transaction Status Webhooks                                                                                                                                          |
 
 ## Required PayPal Setup
 
