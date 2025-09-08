@@ -61,11 +61,12 @@ When a subscription is **cancelled**, it remains active for the duration of the 
 
 # Auto cancellation of a subscription
 
-In certain cases, Recurly can receive an indicator from a gateway indicating a payment method is no longer valid, which will result in the cancellation of the related subscription where the tokens or mandates are in use.
+In certain cases, Recurly can receive an indicator (usually via webhook) from a gateway indicating a payment method  or mandate is no longer valid, which will result in the cancellation of the related subscription where the tokens or mandates are in use.
 
 **Supported Gatways:**
 
 * [Paypal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete)
+* [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) (using [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/))
 
 # Reactivate a subscription
 
