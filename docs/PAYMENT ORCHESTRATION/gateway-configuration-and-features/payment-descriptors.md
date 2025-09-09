@@ -48,8 +48,8 @@ Descriptors are typically limited to 22 characters, and often look like the belo
 
 On Recurly, we handle descriptors in the following manner:
 
-* For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: AcmeInc*Gold Plan
-* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: AcmeInc* Charge or AcmeInc* One-Time Payment
+* For **Subscriptions**, we utilize your business company name or DBA, if present, and the Plan Name for a given subscription to create the descriptor text. If a Trial is converting, we add the word 'Trial' to the descriptor suffix for Visa transactions. **Example**: `AcmeInc*Trial Gold Plan`
+* For **One-Time** transactions, we utilize your business company name or DBA, if present, and the Invoice Description for a given invoice to create the descriptor text. **Examples**: `AcmeInc*Charge` or `AcmeInc*One-Time Payment`
 
 ### Supported payment methods & transactions
 
