@@ -1,5 +1,5 @@
 ---
-title: Checkout
+title: 'Checkout '
 excerpt: >-
   Explore Checkout: Streamline your customers' payment experience with
   customizable styles, hostnames, and configurations. Get started easily and
