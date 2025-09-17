@@ -17,8 +17,8 @@ next:
 ---
 # Welcome to Recurly
 
-Dive into the world of subscription management with Recurly and discover a range of benefits tailored to enhance your business growth. Whether it's developing a powerful subscription growth strategy, reducing churn, or maximizing revenue recovery, Recurly is your go-to partner. With expertise in plan management, recurring billing, payments, and smart retention tactics, Recurly remains unmatched in the subscription landscape. Prepare for a transformative journey with Recurly at your side.
+Dive into the world of subscription management with Recurly and discover a range of benefits tailored to enhance your business growth. Whether it's developing a powerful subscription growth strategy, reducing churn, or maximizing revenue recovery, Recurly is your go-to partner. With expertise in plan management, recurring billing, payments, and smart retention tactics, Recurly remains unmatched in the subscription landscape. Prepare for a transformative journey with Recurly at your side. 
 
 # Product tour video
 
-<Embed url="https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true" title="iframe" provider="fast.wistia.net" href="https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800%" iframe="true" />
+<Embed url="https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true" href="https://fast.wistia.net/embed/iframe/7pxncbd7vd?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800%" iframe="true" />
