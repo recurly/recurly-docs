@@ -450,15 +450,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on
-
-        [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
-
-        , please see our dedicated documentation. Our
-
-        [RBI mandate documentation](https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/)
-
-        will be updated after release with new support details.
+        We will be adding support for Indian e-mandates to support recurring processing for credit cards. This will enable Merchants who wish to expand into India with subscriptions the ability to stay compliant with RBI mandates. For more information on <a href="https://docs.recurly.com/recurly-subscriptions/docs/stripe" target="_blank" rel="noopener noreferrer">Stripe</a>, please see our dedicated documentation. Our  <a href="https://docs.recurly.com/recurly-subscriptions/docs/rbi-regulations-update#/" target="_blank" rel="noopener noreferrer">RBI mandate documentation</a> will be updated after release with new support details.
       </td>
     </tr>
 
@@ -476,11 +468,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated to account code handling to avoid errors in rare cases. To learn more about
-
-        [Kount Fraud management](https://docs.recurly.com/recurly-subscriptions/docs/kount#/)
-
-        , visit our dedicated documentation.
+        Updated to account code handling to avoid errors in rare cases. To learn more about <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount#/" target="_blank" rel="noopener noreferrer">Kount Fraud Management</a>, visit our dedicated documentation.
       </td>
     </tr>
 
@@ -540,11 +528,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Minor updates to
-
-        [iDeal](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal)
-
-        to avoid an error for return customer signups.
+        Minor updates to <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ideal" target="_blank" rel="noopener noreferrer">iDeal payments</a> to avoid an error for return customer signups.
       </td>
     </tr>
 
@@ -598,11 +582,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updated handling of
-
-        [ACH](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach)
-
-        Reporting queries to avoid improper invoice status updates.
+        Updated handling of <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-ach" target="_blank" rel="noopener noreferrer">ACH</a> Reporting queries to avoid improper invoice status updates.
       </td>
     </tr>
 
@@ -656,7 +636,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise.
+        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise. 
 
         [Anomaly Insights](https://docs.recurly.com/recurly-subscriptions/docs/recurly-compass#/anomaly-insights) documentation.
       </td>
@@ -676,9 +656,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our
-
-        [UPI AutoPay payment method](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
+        Updates to mandate handling related to plan amount. Mandates will be sent with a dynamic plan + 18% tolerance for amount updates. This will support add-ons and trials where taxation is necessary. Read more about mandates in our <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/" target="_blank" rel="noopener noreferrer">UPI AutoPay payment method</a> documentation.
       </td>
     </tr>
 
@@ -743,11 +721,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated
-
-        [Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/)
-
-        for more information.
+        Updates to flow involving querying the network for updates. This modification will be in addition to the current behavior where Recurly receives push notifications on registered cards. Please see our dedicated <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater#/" target="_blank" rel="noopener noreferrer">Account Updater documentation</a> for more information.
       </td>
     </tr>
 
@@ -765,7 +739,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates - removed open period logic from infra/revrecStart to prevent the period from reverting to the initial period.
+        Updates - removed open period logic from `infra/revrecStart` to prevent the period from reverting to the initial period.
         Fixed bundle rule addition issue when only one bundle rule exists under a parent item by grouping the count by bundle ID.
       </td>
     </tr>
