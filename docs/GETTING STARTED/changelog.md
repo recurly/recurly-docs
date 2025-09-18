@@ -145,6 +145,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
         *Fixed issue where Range displayed “Range is not valid” even before selection in SSP configuration.
 
         *Fixed Revenue Workbench issues:
+
         *Audit tab now displays data when Primary book is selected.
         *Switching from Primary book to All no longer reverts back to Primary.
         *Applying VC through Workbench functions no longer results in an error after switching books.
