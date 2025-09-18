@@ -44,7 +44,7 @@ Braintree, a full-stack payment platform known for its robust support for mobile
 
 ## Braintree and multi-currency
 
-For merchants wishing to accept multiple currencies through Braintree, it is necessary to configure individual Braintree gateway instances for each currency. To do this, you will need your *Merchant ID*, *Merchant Account ID*, *Public Key*, and *Private Key*. Notably, the *Merchant Account ID* specifies the currency that is enabled.
+For merchants wishing to accept multiple currencies through Braintree, it is necessary to configure individual Braintree gateway instances for each currency. To do this, you will need your _Merchant ID_, _Merchant Account ID_, _Public Key_, and _Private Key_. Notably, the _Merchant Account ID_ specifies the currency that is enabled.
 
 ## Processing PayPal transactions through Braintree
 
@@ -66,12 +66,12 @@ Additionally, there are two mutually-exclusive settings that need enabling, one 
 
 1. If you are not Vaulting with Braintree, and want to use Proactive 3DS, you must have a special setting enabled.  **Enable Verifications without Vaulting**: This setting requires the holder of information to be PCI compliant. PayPal has advised us to instruct merchants to request this feature be enabled and to indicate that Recurly is storing the card data.
    1. When that is complete, please ask Support to enable the following feature flag on the Recurly side that will give you access to this route: **Enable Braintree ZDA**
-   2. Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should\_not\_ be enabled prior to the setting at Braintree** to avoid payment failures.
+   2. Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should_not_ be enabled prior to the setting at Braintree** to avoid payment failures.
 2. **Card Verification**: this setting can be enabled in your Braintree control panel to ensure all vaulted cards are being verified prior to entering into the Braintree Vault. See an image of this setting below.
 
 <Image align="center" src="https://files.readme.io/681d369645a07ae29f6a77ea7353288b5417a3641d99540622a318784d53c8af-Screenshot_2024-11-12_at_3.52.41_PM.png" />
 
-Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should\_not\_ be enabled prior to the setting at Braintree** to avoid payment failures.
+Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should_not_ be enabled prior to the setting at Braintree** to avoid payment failures.
 
 # Integrating Braintree with Recurly
 
@@ -91,10 +91,11 @@ You can find these details in your Braintree Control Panel.
 1. Log in to your Recurly account.
 2. Navigate to **Configuration→Payment Gateways**.
 3. Click on **Add a Gateway**, and then select **Braintree** from the list of available gateways.
-4. Enter your Braintree credentials: *Merchant ID*, *Public Key*, and *Private Key*.
-5. For multi-currency support, add separate Braintree gateways for each *Merchant Account ID* (each associated with a different currency).
+4. Enter your Braintree credentials: _Merchant ID_, _Public Key_, and _Private Key_.
+5. For multi-currency support, add separate Braintree gateways for each _Merchant Account ID_ (each associated with a different currency).
 6. To enable Zero Dollar Authorizations, select the card types you wish to utilize. Visa and Mastercard are supported.
-7. To comply with Visa’s free trial mandate, if your Braintree merchant account is associated with Australia or Canada specifically, choose one of those countries from the dropdown options. For all other countries, choose ‘Other’.
+7. If you wish to Vault with Braintree, check the 'Store in Braintree Vault' checkbox.
+8. To comply with Visa’s free trial mandate, if your Braintree merchant account is associated with Australia or Canada specifically, choose one of those countries from the dropdown options. For all other countries, choose ‘Other’.
 
 If you are not running free trials, choose ‘None’. See [https://docs.recurly.com/docs/visa-free-trial-mandate#updates-for-braintree](https://docs.recurly.com/docs/visa-free-trial-mandate#updates-for-braintree) for more information.
 
