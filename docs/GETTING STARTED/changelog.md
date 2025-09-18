@@ -135,14 +135,19 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         *Reports now display descriptive names instead of technical codes for field values, consistent with the UI.
+
         *Resolved issue where the order of segments changed after refresh; added order sequence to maintain original order.
+
         *Dynamic UI totals will now be shown based on filters only when the entire dataset is fetched; previous behavior is retained otherwise.
+
         *Fixed issue where creating an SSP configuration for the first time did not save properly; workaround via Copy is no longer required.
+
         *Fixed issue where Range displayed “Range is not valid” even before selection in SSP configuration.
+
         *Fixed Revenue Workbench issues:
-             *Audit tab now displays data when Primary book is selected.
-             *Switching from Primary book to All no longer reverts back to Primary.
-             *Applying VC through Workbench functions no longer results in an error after switching books.
+        *Audit tab now displays data when Primary book is selected.
+        *Switching from Primary book to All no longer reverts back to Primary.
+        *Applying VC through Workbench functions no longer results in an error after switching books.
       </td>
     </tr>
 
