@@ -177,6 +177,8 @@ Managing refunds effectively is crucial for maintaining customer satisfaction an
 1. Set up Recurly’s webhooks to stay updated with the status of your transactions.
 2. [Learn more](https://docs.recurly.com/docs/webhooks) about setting up webhooks with Recurly.
 
+**Note**: There is no need for merchant-configured webhooks inside the GoCardless dashboard.
+
 ### Step 9: Chargeback and late failure invoice setup
 
 When SEPA payments experience a failure (typically when a customer disputes a charge) after merchant funding has occurred, Recurly can automate the chargeback process within your invoices and create a Refund Invoice marked as a chargeback. **Important**: Ensure you have ‘Webhook Options’ set to ‘Enabled’ for this feature to work.
