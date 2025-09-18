@@ -26,21 +26,289 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## September
 
-| Release Date | **Feature**                     | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                               |
-| :----------- | :------------------------------ | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Sept 23      | **Recurly Engage**              | Low                  | New feature to allow export and download of experiment data.                                                                                                                                                                                                             |
-| Sept 23      | **Recurly Engage**              | Low                  | Minor update to scheduling logic and general UI enhancement for scheduling modal.                                                                                                                                                                                        |
-| Sept 16      | **PayPal Complete**             | Low                  | Minor behind-the-scenes optimizations for PayPal Complete's Recurly.js implementation. No merchant or consumer-facing changes are expected.                                                                                                                              |
-| Sept 16      | **Recurly Engage**              | Low                  | Minor visual update to traffic allocation for experimental prompts.                                                                                                                                                                                                      |
-| Sept 9       | **Admin Users Export**          | Low                  | Updated from export to an explore style report with enhanced capabilities which allow for ad-hoc analysis, visualization of the data and downloadable into multiple file format types such as csv, txt, excel, etc.                                                      |
-| Sept 9       | **Recurly Engage**              | Low                  | You can now extend the reset period days within your Prompt Guide Limits, giving you more flexibility in how you manage your campaigns.                                                                                                                                  |
-| Sept 9       | **Recurly Engage**              | Low                  | A new feature is available that enables live editing of Recurly Engage experiments. You can now directly edit various elements including variants, triggers and actions.                                                                                                 |
-| Sept 9       | **Stripe gateway**              | Medium               | We are updating our API version to support Klarna Recurring Line Items for subscriptions. Klarna and Elements will run through the preview endpoint `2025-04-30.preview` , while the rest of the ecosystem will run through the non-preview endpoint `2025-04-30.basil`. |
-| Sept 9       | **WorldPay gateway**            | Low                  | Minor updates to mandates and one time transactions for SEPA support.                                                                                                                                                                                                    |
-| Sept 2       | **FreedomPay gateway**          | Low                  | Minor updates to enable AVS and CVV checks on customer initiated transactions within Payment Settings.                                                                                                                                                                   |
-| Sept 2       | **Ebanx gateway + UPI AutoPay** | Low                  | Updated subscription PUT validations via the V3 API to allow updates to subscriptions when using the UPI AutoPay payment method on Ebanx. This update will allow behaviors such as editing custom fields, among other things.                                            |
-| Sept 2       | **Stripe gateway**              | High                 | Updated the supported Stripe Client library underpinning calls to the gateway in preparation for version upgrades. No impact is expected.                                                                                                                                |
-| Sept 2       | **WorldPay gateway**            | Low                  | WorldPay is now an allowable gateway within the Direct Debit retries UI within Payment Settings. If you are using WorldPay with SEPA Direct Debit, you can make use of automatic retries for payments rejected due to Insufficient Funds.                                |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Release Date
+      </th>
+
+      <th>
+        **Feature**
+      </th>
+
+      <th>
+        **Potential Impact**
+      </th>
+
+      <th>
+        **Description / Overview**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Sept 23
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        New feature to allow export and download of experiment data.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 23
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor update to scheduling logic and general UI enhancement for scheduling modal.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 16
+      </td>
+
+      <td>
+        **PayPal Complete**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor behind-the-scenes optimizations for PayPal Complete's Recurly.js implementation. No merchant or consumer-facing changes are expected.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 16
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor visual update to traffic allocation for experimental prompts.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 16
+      </td>
+
+      <td>
+        **Revenue Recognition**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        *Reports now display descriptive names instead of technical codes for field values, consistent with the UI.
+        *Resolved issue where the order of segments changed after refresh; added order sequence to maintain original order.
+        *Dynamic UI totals will now be shown based on filters only when the entire dataset is fetched; previous behavior is retained otherwise.
+        *Fixed issue where creating an SSP configuration for the first time did not save properly; workaround via Copy is no longer required.
+        *Fixed issue where Range displayed “Range is not valid” even before selection in SSP configuration.
+        *Fixed Revenue Workbench issues:
+             *Audit tab now displays data when Primary book is selected.
+             *Switching from Primary book to All no longer reverts back to Primary.
+             *Applying VC through Workbench functions no longer results in an error after switching books.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 9
+      </td>
+
+      <td>
+        **Admin Users Export**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated from export to an explore style report with enhanced capabilities which allow for ad-hoc analysis, visualization of the data and downloadable into multiple file format types such as csv, txt, excel, etc.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 9
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        You can now extend the reset period days within your Prompt Guide Limits, giving you more flexibility in how you manage your campaigns.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 9
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        A new feature is available that enables live editing of Recurly Engage experiments. You can now directly edit various elements including variants, triggers and actions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 9
+      </td>
+
+      <td>
+        **Stripe gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We are updating our API version to support Klarna Recurring Line Items for subscriptions. Klarna and Elements will run through the preview endpoint `2025-04-30.preview` , while the rest of the ecosystem will run through the non-preview endpoint `2025-04-30.basil`.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 9
+      </td>
+
+      <td>
+        **WorldPay gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to mandates and one time transactions for SEPA support.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 2
+      </td>
+
+      <td>
+        **FreedomPay gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to enable AVS and CVV checks on customer initiated transactions within Payment Settings.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 2
+      </td>
+
+      <td>
+        **Ebanx gateway + UPI AutoPay**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated subscription PUT validations via the V3 API to allow updates to subscriptions when using the UPI AutoPay payment method on Ebanx. This update will allow behaviors such as editing custom fields, among other things.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 2
+      </td>
+
+      <td>
+        **Stripe gateway**
+      </td>
+
+      <td>
+        High
+      </td>
+
+      <td>
+        Updated the supported Stripe Client library underpinning calls to the gateway in preparation for version upgrades. No impact is expected.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 2
+      </td>
+
+      <td>
+        **WorldPay gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        WorldPay is now an allowable gateway within the Direct Debit retries UI within Payment Settings. If you are using WorldPay with SEPA Direct Debit, you can make use of automatic retries for payments rejected due to Insufficient Funds.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## August
 
