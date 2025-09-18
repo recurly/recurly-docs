@@ -12,7 +12,7 @@ metadata:
 next:
   description: ''
 ---
-## Gateway Configuration
+## Gateway configuration
 
 If you don't yet have a gateway, please start [here][4] to explore gateway options that Recurly supports. When choosing a gateway, some factors to consider include: region your company is based, region(s) where your customers are based, your customers' payment preferences. If you already have a gateway, follow these steps:
 
