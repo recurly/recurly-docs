@@ -107,6 +107,10 @@ If your site was live in production prior to migrating to the roles-based user m
 
 ## User permissions
 
+<br />
+
+### Customers
+
 There are two options for providing access to the Customers section of the application: Read Only and Can Edit.
 
 <Image align="center" border={true} width="50% " src="https://files.readme.io/ea6bf4e-image.png" className="border" />
