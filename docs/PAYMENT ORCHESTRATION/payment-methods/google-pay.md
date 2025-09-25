@@ -30,6 +30,9 @@ Google Pay is a payment method that allows customers to pay with preferred payme
 
 * **FPAN**: An acronym for "Funding Primary Account Number". This is referencing the actual credit card number that is physically printed on the card itself. This is also referred to as just 'PAN' as well.
 * **DPAN**: The acronym for "Device Primary Account Number". Some may also use 'Digital' in place of 'Device'. A DPAN is referring to the tokenized credit card number created by adding a consumer credit card to a Phone or Device "Wallet" system (such as Google Wallet) and is sent to gateways and processors in place of an actual FPAN. It is usually only functional when sent from that specific device, for example, the specific iPhone or iPad and typically is accompanied by a Cryptogram when a customer is in session.
+  * The DPAN is tied to that specific device, for example, the specific Android Phone or Tablet and is accompanied by a Cryptogram when a customer is in session.
+  * DPANs are full card numbers that have different set of numbers from the FPAN which can be exposed on receipts and other UI elements.
+  * DPANs are invalidated when a consumer removes the card from their device, and a new DPAN is created if they re-add the same card, or add a new card to their device. Subscriptions using a DPAN can fail due to this consumer-driven behavior and are non-recoverable. 
 * **Cryptogram**: A one-time use authentication value that is created in the processing of using Google Pay to authorize a transaction. Cryptograms are not stored and must be sent on all customer-initiated transactions.
 
 ### Limitations
