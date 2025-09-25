@@ -41,6 +41,7 @@ To integrate Apple Pay on the Web, ensure you have:
   * DPANs are full card numbers that have different set of numbers from the FPAN which can be exposed on receipts and other UI elements.
   * DPANs are invalidated when a consumer removes the card from their device, and a new DPAN is created if they re-add the same card, or add a new card to their device. Subscriptions using a DPAN can fail due to this consumer-driven behavior and are non-recoverable. Apple has deployed a solution to improve subscription behavior using an MPAN (see below) which is not tied to the consumer device in this way.
 * **MPAN**: Merchant-level Token used for Apple Pay. This type of token is not tied to the specific device like a DPAN, and is not invalidated if a consumer removes the card from their mobile device. MPANs are full card numbers that have different set of numbers from the FPAN which can be exposed on receipts and other UI elements.
+  * MPANs are not invalidated if a consumer removes their card from a specific phone, iPad, or other Apple device, thus making them "subscription-friendly". MPANs can also receive expiry date updates, though card number changes are not received from Apple through any Account Updater feature today.
 * **Cryptogram**: A one-time use authentication value that is created in the processing of using Apple Pay to authorize a transaction. Cryptograms are not stored and must be sent on all customer-initiated transactions.
 
 ### Best Practices and Compliance
