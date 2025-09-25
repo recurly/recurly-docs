@@ -26,6 +26,12 @@ Google Pay is a payment method that allows customers to pay with preferred payme
 * Before integrating Google Pay™ into your Recurly account, ensure you have a Google Merchant ID. Recurly currently supports Google Pay™ transactions through [Stripe](https://docs.recurly.com/docs/stripe), [Adyen](https://docs.recurly.com/docs/adyen), [Braintree](https://docs.recurly.com/docs/braintree),  [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), [Cybersource](https://docs.recurly.com/docs/cybersource#/), and [Chase Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital) gateways.
 * This payment method allows using [Zero Dollar Authorizations](https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda).
 
+### Definitions
+
+* **FPAN**: An acronym for "Funding Primary Account Number". This is referencing the actual credit card number that is physically printed on the card itself. This is also referred to as just 'PAN' as well.
+* **DPAN**: The acronym for "Device Primary Account Number". Some may also use 'Digital' in place of 'Device'. A DPAN is referring to the tokenized credit card number created by adding a consumer credit card to a Phone or Device "Wallet" system (such as Google Wallet) and is sent to gateways and processors in place of an actual FPAN. It is usually only functional when sent from that specific device, for example, the specific iPhone or iPad and typically is accompanied by a Cryptogram when a customer is in session.
+* **Cryptogram**: A one-time use authentication value that is created in the processing of using Google Pay to authorize a transaction. Cryptograms are not stored and must be sent on all customer-initiated transactions.
+
 ### Limitations
 
 * **This feature works only in Google Chrome**. Other search engines/browsers are not supported.
@@ -33,7 +39,6 @@ Google Pay is a payment method that allows customers to pay with preferred payme
 ### Best Practices and Compliance
 
 * For return customers, please use Recurly.js even if an existing account code or billing info exists, as Recurly.js handles collecting device-related data necessary for customer-initiated transactions through Google Pay.
-* Always request Merchant-level tokens (**MPANS**) for Google Pay, to comply with upcoming Visa MPAN requirement regulations. After July, 2025, Merchants should request MPANs in their Google Pay implementations to avoid declines. DPANs are grandfathered in, but are not guaranteed to continue functioning forever.
 
 ### Limitations
 
