@@ -50,6 +50,60 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        Sept 30
+      </td>
+
+      <td>
+        **Adyen gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Cash App Pay is now generally available to any Adyen merchant. You can learn about accepting Cash App in our dedicated documentation for <a href="https://docs.recurly.com/recurly-subscriptions/docs/cash-app-pay#/" target="_blank" rel="noopener noreferrer">Cash App</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-cash-app-pay" target="_blank" rel="noopener noreferrer">Adyen</a>, respectively. Reach out to your Adyen contact to enable the method in your gateway prior to enabling at Recurly.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 30
+      </td>
+
+      <td>
+        **WorldPay gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We're enabling ACH Direct Debit processing through our WorldPay connection. Learn more about <a href="https://docs.recurly.com/recurly-subscriptions/docs/ach-bank-payments#/" target="_blank" rel="noopener noreferrer">ACH</a> on <a href="https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/" target="_blank" rel="noopener noreferrer">WorldPay</a> in our dedicated documentation for the gateway.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 30
+      </td>
+
+      <td>
+        **Kount Fraud Management**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates to avoid duplicate requests to Kount in rare cases involving 3DS rejections on Adyen.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Sept 23
       </td>
 
@@ -636,7 +690,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise. 
+        Introducing Anomaly Insights available on all subdomains. Anomaly insights to help merchants act instantly when transactional issues arise.
 
         [Anomaly Insights](https://docs.recurly.com/recurly-subscriptions/docs/recurly-compass#/anomaly-insights) documentation.
       </td>
