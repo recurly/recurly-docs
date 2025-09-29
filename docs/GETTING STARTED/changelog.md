@@ -104,6 +104,44 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
     <tr>
       <td>
+        Sept 30
+      </td>
+
+      <td>
+        **Recurly Revenue Recognition Advanced (RR managed) and Standalone**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Addition of ‘delete functionality” in the Data Rule menu so that certain transactions (i.e.: free trials) are not included in reporting. This data will be soft deleted - meaning it will be recorded in Cost / Doc stage history tables as archived data but the transactions will not appear in the reporting. In addition there were configuration audit report fixes - enhanced endpoint to filter by entity names. Also Period ID column, Target ID column, and All periods filter were added to audit reports.
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sept 30
+      </td>
+
+      <td>
+        **Recurly Revenue Recognition Standard and Advanced (RA managed)**
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Improvements to the date picker in the self onboarding dialog so that it opens to the correct period. Additionally, fixed the inverted mapping for credit event transactions (selecting Track saved as Yes, but loaded as Ignore). For users that do not have a RevRec role, the ‘Get Started’ button is no longer visible.
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Sept 23
       </td>
 
