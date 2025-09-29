@@ -30,9 +30,7 @@ User Roles and Permissions in Recurly define the access rights and functionaliti
 * **Streamlined management**: Easily manage and modify roles from a centralized dashboard.
 * **Flexibility**: Adapt roles as your organization grows or changes, ensuring continued alignment with business needs.
 
-# Key details
-
-## Role management
+# Role management
 
 A role in Recurly refers to a defined set of permissions and access rights that determine what actions and features a user can perform or obtain access to within the Recurly App. You have the ability to tailor your customized roles  to match your organization's unique requirements and team structure. This allows you to grant appropriate access to specific sections and functionalities based on each user's role and responsibilities.
 
@@ -144,3 +142,16 @@ Users with Integrations access can view and edit Webhooks, API keys, and Recurly
 ### Admin
 
 Users with Admin access have full control over their company's billing information, account settings, and Users/Roles/Admin Exports/SSO Settings. They have the highest level of access and authority within the Recurly system.
+
+## Inviting a new user
+
+To create a new user and provide them with access to Recurly, follow these steps:
+
+1. From the Recurly main menu, navigate to Admin → Users → User Actions → Invite Users.
+
+2. Fill in the user's email address and select their access level/role. Then, click "Send Invite."
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/c9a0734852ba90a8d925406e6b2d6973da9f5d68a58915201c135a26fb82705d-image.png" className="border" />
+
+3. The user will receive an invitation to join the platform and must accept it to participate as part of your team.
+4. Once the user has accepted the invitation, you will be able to see and manage their privileges in the Users section under the Admin menu.
