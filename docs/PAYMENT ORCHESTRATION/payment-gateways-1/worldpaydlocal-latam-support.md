@@ -206,6 +206,7 @@ Find additional guidance in the [technical documentation](https://developers.rec
 6. Optional: Designate which card types should undergo Zero Dollar Authorizations.
 7. Finalize your setup by clicking "Add Payment Gateway".
 8. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
+9. On the Payment Settings page, ensure you enable [Direct Debit retries](https://docs.recurly.com/recurly-subscriptions/docs/sepa-retries#/) for SEPA and ACH so payments that fail for insufficient funds can be retried automatically.
 
 # Enable gateway for Global support
 
