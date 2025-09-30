@@ -1,6 +1,7 @@
 - gateway-merchant-account-overview
 - payment-gateways
 - gateway-configuration
+- sepa-retries
 - custom-gateway-routing-configuration
 - gateway-failover
 - fraud-management
