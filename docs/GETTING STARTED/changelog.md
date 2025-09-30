@@ -24,6 +24,14 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## 2025
 
+## October
+
+<br />
+
+| Release Date | **Feature**            | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                               |
+| :----------- | :--------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Oct 1        | **Price Segmentation** | Low                  | Plans can now have different price points for a single currency; allowing merchants to target different subscriber segments and to conduct A/B testing.  This new feature is available on create/edit plan pages, add/edit subscription pages, v3 API's, and Recurly.js. |
+
 ## September
 
 <Table align={["left","left","left","left"]}>
@@ -117,7 +125,6 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         Addition of ‘delete functionality” in the Data Rule menu so that certain transactions (i.e.: free trials) are not included in reporting. This data will be soft deleted - meaning it will be recorded in Cost / Doc stage history tables as archived data but the transactions will not appear in the reporting. In addition there were configuration audit report fixes - enhanced endpoint to filter by entity names. Also Period ID column, Target ID column, and All periods filter were added to audit reports.
-
       </td>
     </tr>
 
@@ -136,7 +143,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         Improvements to the date picker in the self onboarding dialog so that it opens to the correct period. Additionally, fixed the inverted mapping for credit event transactions (selecting Track saved as Yes, but loaded as Ignore). For users that do not have a RevRec role, the ‘Get Started’ button is no longer visible.
+      </td>
+    </tr>
 
+    <tr>
+      <td>
+        Sept 30
+      </td>
+
+      <td>
+        **Email Templates**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing 4 new email templates centered around Recurly's Pause functionality.
       </td>
     </tr>
 
