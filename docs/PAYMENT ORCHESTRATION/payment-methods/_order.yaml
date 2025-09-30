@@ -3,6 +3,7 @@
 - apple-pay-on-the-web
 - google-pay
 - stripe-link-pay
+- klarna-bnpl-pay-now-pay-later
 - ach-bank-payments
 - sepa-direct-debit
 - bacs
@@ -13,6 +14,5 @@
 - pay-with-venmo
 - cash-app-pay
 - boleto
-- klarna-bnpl-pay-now-pay-later
 - sofort
 - upi-autopay
