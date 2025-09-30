@@ -29,6 +29,7 @@ Recurly currently supports ACH transactions through [Adyen](https://docs.recurly
 * The ACH feature is available exclusively for merchants based in the US, thereby limiting its global outreach.
 * ACH has a varying processing time and a series of invoice states, ranging from pending to scheduled to processed, with each stage holding its implications and possible actions.
 * ACH transactions cannot be voided via API. This action is only supported in the UI.
+* Automatic [NACHA Verification for bank accounts](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/) is not available on all gateways. Please visit our dedicated page for options for your gateway to maintain compliance.
 
 # Definition
 
