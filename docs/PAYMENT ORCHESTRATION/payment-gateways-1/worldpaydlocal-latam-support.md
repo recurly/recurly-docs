@@ -29,9 +29,10 @@ This payment gateway or setting is available to all customers on any Recurly sub
   * An active Recurly account with Argentine Peso (ARS) currency support
   * WorldPay payment gateway configured for ARS transactions.
   * A WorldPay merchant account optimized for handling ARS and capable of performing Zero Dollar Authorizations (ZDA).
-* For **SEPA** processing:
-  * An active Recurly account with Euros (EUR) currency support
+* For **Direct Debit** processing:
+  * An active Recurly account with Euros (EUR) currency support for SEPA, and/or USD for ACH support.
   * WorldPay payment gateway configured for SEPA / EUR and mandate tokenization support.
+  * WorldPay NACHA pre-verification check enabled for ACH / USD compliance. 
 
 ### Limitations
 
@@ -109,7 +110,7 @@ Supported Regions:
       </td>
 
       <td>
-        Credit cards, local card brands including Tarjeta Naranja, Apple Pay, Google Pay, and SEPA
+        Credit cards, local card brands including Tarjeta Naranja, Apple Pay, Google Pay, and Direct Debit: ACH and SEPA
       </td>
     </tr>
 
@@ -206,7 +207,7 @@ Find additional guidance in the [technical documentation](https://developers.rec
 7. Finalize your setup by clicking "Add Payment Gateway".
 8. Validate your configuration by selecting the “Test Configuration” feature for the gateway to ensure proper setup.
 
-# Enable gateway for global support
+# Enable gateway for Global support
 
 Leveraging the WorldPay global gateway for your business involves a streamlined process. Follow the detailed steps below to enable this gateway seamlessly:
 
@@ -216,11 +217,10 @@ Leveraging the WorldPay global gateway for your business involves a streamlined 
 2. **Configure WorldPay as your payment Gateway**
    * Still in your Recurly dashboard, go to payment gateways.
    * Select and configure WorldPay as your payment gateway, ensuring it's set up to accept your supported currencies.
-3. **Enable Tarjeta Naranja if applicable**
+3. **Enable Tarjeta Naranja if applicable** for LATAM processing
    * Within your WorldPay gateway settings in Recurly, find and toggle on the option to accept payments through Tarjeta Naranja.
 4. **Enable SEPA if applicable**
-   1. Ensure you are adding your **Worldpay Mandate Prefix** and **Worldpay Merchant ID** as provided by WorldPay. These two fields are necessary for making sure your SEPA mandates are generated properly.
-   2. Ensure you have EUR currency enabled on your site, at WorldPay, and in the gateway configuration.
+   1. Ensure you have EUR currency enabled on your site, at WorldPay, and in the gateway configuration.
 5. **Establish commercial relationships**
    * Set up commercial relationships with both WorldPay and either Ebanx or dLocal. If necessary, contact [partnerships@recurly.com](mailto:partnerships@recurly.com) for introductions.
 
@@ -249,3 +249,9 @@ By carefully following this step-by-step process, you will have the WorldPay glo
 **Q: Why is my WorldPay refund failing?**
 
 **A**: Refunds can fail due to Online Refund Authorization behavior that WorldPay supports. In May 2025, this will become standard across all WorldPay accounts. Banks will 'authorize' refunds in realtime, which can cause errors if the account is closed, or the bank does not wish to authorize the refund for some reason. If this happens, you must coordinate with your customer to return funds in another manner.
+
+**Q: Why is my ACH transaction failing?**
+
+**A**: ACH bank accounts are checked for fraud and accuracy before being added to Recurly's systems. We make a proactive check, required by NACHA, to ensure you're adding valid bank accounts for future and current subscription needs. If your customer is updating their on file payment instrument to a bank account or signing up for a subscription when the transaction fails, it is likely due to a fraud check at WorldPay that did not pass. You will want to reach out to WorldPay for more information and have the customer provide a different form of payment.
+
+ACH transactions that are scheduled, or have been updated to an approved state can also fail "late" due to bank processing times. Depending on the reason for the failure, such as insufficient funds, or a closed bank account, Recurly can retry the payment automatically when you enable [Direct Debit retries in Payment settings](https://docs.recurly.com/recurly-subscriptions/docs/sepa-retries#/). Recurly will only retry ACH or SEPA payments if the failure is due to insufficient funds.
