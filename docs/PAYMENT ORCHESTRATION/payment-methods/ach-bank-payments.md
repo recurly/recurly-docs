@@ -22,7 +22,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ### Prerequisites & supported gateways
 
-Recurly currently supports ACH transactions through [Adyen](https://docs.recurly.com/docs/adyen), [GoCardless](https://docs.recurly.com/docs/gocardless), [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)), and [Check Commerce](https://docs.recurly.com/docs/check-commerce).
+Recurly currently supports ACH transactions through [Adyen](https://docs.recurly.com/docs/adyen), [GoCardless](https://docs.recurly.com/docs/gocardless), [Stripe](https://docs.recurly.com/docs/stripe#/) (via [Third Party Checkout](https://recurly.com/developers/guides/3rd-party-checkout.html)),  [WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/overview), and [Check Commerce](https://docs.recurly.com/docs/check-commerce) gateways.
 
 ### Limitations
 
