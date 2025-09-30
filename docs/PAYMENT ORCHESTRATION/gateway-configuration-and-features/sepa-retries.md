@@ -2,10 +2,10 @@
 title: Direct debit retries
 excerpt: >-
   Streamline your Direct Debit payments with Recurly's Automatic retries! Our
-  new feature supports automated retries for failed SEPA payments due to
-  Insufficient Funds, exclusively on Adyen, Stripe, and GoCardless gateways. Say
-  goodbye to manual retries and involuntary churn; let Recurly do the heavy
-  lifting and help keep your customers on board.
+  new feature supports automated retries for failed SEPA, ACH, BACS, and BECS
+  payments due to Insufficient Funds, exclusively on Adyen, Stripe, WorldPay,
+  and GoCardless gateways. Say goodbye to manual retries and involuntary churn;
+  let Recurly do the heavy lifting and help keep your customers on board.
 deprecated: false
 hidden: false
 metadata:
@@ -28,7 +28,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
   * BACS is supported on Adyen, Stripe, and GoCardless.
   * ACH is supported on Adyen, Stripe, and GoCardless.
   * BECS is supported on Stripe and GoCardless.
-* Integration with [Adyen](https://docs.recurly.com/docs/adyen#/), [Stripe](https://docs.recurly.com/docs/stripe#/) (using [Third Party Checkout: Payment Elements](https://docs.recurly.com/docs/stripe-payment-elements#/)), [GoCardless](https://docs.recurly.com/docs/gocardless#/) gateways.
+  * SEPA is supported on WorldPay.
+* Integration with [Adyen](https://docs.recurly.com/docs/adyen#/), [Stripe](https://docs.recurly.com/docs/stripe#/) (using [Third Party Checkout: Payment Elements](https://docs.recurly.com/docs/stripe-payment-elements#/)), [GoCardless](https://docs.recurly.com/docs/gocardless#/), and [WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/) gateways.
 
 ### Limitations
 
@@ -38,6 +39,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Retry time frame is fixed to 24 hours after a late failure notification from the gateway; customization is not available.
 * Direct Debit retries will not occur if your Dunning settings are set to immediately expire subscriptions upon failed payments.
 * Check Commerce is not supported.
+* ACH support is limited on WorldPay as the gateway does not return proper RX ACH Return codes.
 
 # Definition
 
@@ -90,7 +92,7 @@ Here, the Direct Debit Retries feature can be enabled by checking the appropriat
 
 You will only see options for the gateway if the payment method / gateway combination is available.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/75288e00f3469a1dd81db2cd3fd7565b260bd63ef94ba9c7385b26c04e1805bf-Screenshot_2025-06-26_at_1.55.21_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/75288e00f3469a1dd81db2cd3fd7565b260bd63ef94ba9c7385b26c04e1805bf-Screenshot_2025-06-26_at_1.55.21_PM.png" className="border" />
 
 ## Understanding invoice details with Direct Debit Retries
 
@@ -104,7 +106,7 @@ With Direct Debit retries activated, invoices will present additional informatio
 
 Before a payment fails due to insufficient funds, these specific details (next scheduled attempt and attempt collection option) won't be visible. However, the remaining attempts will still be shown.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f4bccb6-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/f4bccb6-image.png" className="border" />
 
 After a failure, the next attempt's timing will be visible, scheduled 24 hours post-failure, to potentially allow customers to address their insufficient funds issue. The "Attempt Collection" option also becomes available post-failure, allowing for manual initiation of a retry.
 
@@ -112,17 +114,17 @@ After a failure, the next attempt's timing will be visible, scheduled 24 hours p
 
 Using the 'Attempt Collection' function manually will cancel any queued collection if there's already a scheduled attempt. If it's the last attempt (out of the two retries allowed), no further automated retries will be scheduled, marking the end of the retry process for that invoice.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ef6ee5a-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/ef6ee5a-image.png" className="border" />
 
 ### Retry completion
 
 After exhausting the retry attempts (the initial attempt plus two retries), the invoice will indicate "Retry schedule completed," signaling that no further attempts will be made against that bank account for the payment.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f98f733-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/f98f733-image.png" className="border" />
 
 ## Behavior when Direct Debit Retries are disabled
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/83ffed4-Collection_Disabled.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/83ffed4-Collection_Disabled.png" className="border" />
 
 If the Direct Debit Automatic Retries feature is turned off:
 
