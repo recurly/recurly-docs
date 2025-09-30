@@ -2,6 +2,7 @@
 - paypal-payments
 - apple-pay-on-the-web
 - google-pay
+- stripe-link-pay
 - ach-bank-payments
 - sepa-direct-debit
 - bacs
@@ -14,5 +15,4 @@
 - boleto
 - klarna-bnpl-pay-now-pay-later
 - sofort
-- stripe-link-pay
 - upi-autopay
