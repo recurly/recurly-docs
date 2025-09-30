@@ -21,8 +21,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-* A connection with the Braintree gateway.
-* Integration via Recurly.JS. 
+* A connection with the [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/) gateway.
+* Integration via Recurly.JS.
 * Your site must support USD transactions, as it is the only currency supported.
 
 ### Limitations
@@ -57,7 +57,7 @@ To facilitate the Venmo™ payment method on your platform, integrate it using R
 
 There are two authentication methods for Venmo using R.js: QR Code Authentication, which was initially rolled out with R.js, and the Desktop Web Authentication method, which launches a web modal to allow users to log in.
 
-Per Braintree’s own documentation, they highly recommend using the Desktop Web Authentication, which requires an additional argument passed in the R.js instantiation for Venmo. 
+Per Braintree’s own documentation, they highly recommend using the Desktop Web Authentication, which requires an additional argument passed in the R.js instantiation for Venmo.
 
 ## Recurly settings
 
@@ -67,13 +67,13 @@ Ensure that your site is set up to handle USD transactions, as it is the only su
 
 #### Feature Flag Enablement
 
-In order to take advantage of addresses provided directly from the Venmo SDK when using R.js, talk to Support about enabling two feature flags on your site: Save Braintree Venmo Shipping and Billing Address. With this setting enabled, you will not be required to provide an Address via V2 or V3 APIs, however, if an address *is* provided via API, that data will override any Venmo SDK-sourced information.
+In order to take advantage of addresses provided directly from the Venmo SDK when using R.js, talk to Support about enabling two feature flags on your site: Save Braintree Venmo Shipping and Billing Address. With this setting enabled, you will not be required to provide an Address via V2 or V3 APIs, however, if an address _is_ provided via API, that data will override any Venmo SDK-sourced information.
 
 ## Gateway settings
 
 #### Configuring Venmo™ on Braintree
 
-Before initiating Venmo™ payments, you must set the method up through your Braintree account. 
+Before initiating Venmo™ payments, you must set the method up through your Braintree account.
 
 Additionally, for Venmo payments, In order to take advantage of User Billing and Shipping Addresses access through R.js, you will need a setting enabled in your Braintree account to supply Enriched Data to Recurly.
 
