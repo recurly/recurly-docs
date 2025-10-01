@@ -30,6 +30,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 | Release Date | **Feature**            | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                               |
 | :----------- | :--------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Oct 2        | **Recurly.js**         | Low                  | Updated handling of Elo BINs in Recurly.js.                                                                                                                                                                                                                              |
 | Oct 1        | **Price Segmentation** | Low                  | Plans can now have different price points for a single currency; allowing merchants to target different subscriber segments and to conduct A/B testing.  This new feature is available on create/edit plan pages, add/edit subscription pages, v3 API's, and Recurly.js. |
 
 ## September
