@@ -32,7 +32,7 @@ Recurly’s Account Updater is a proactive service that automatically monitors a
 
 # Credit card support
 
-Stay ahead of subscriber churn with [Recurly’s Account Updater](https://recurly.com/blog/how-automated-credit-card-account-updaters-fight-subscriber-churn/). This feature integrates with Account Updater programs from Mastercard®, Visa®, American Express®, and Discover®. The cardholder’s bank—not Recurly—determines participation, sending account‐change events to each network. Additionally, Recurly now supports card updates in Europe.
+Stay ahead of subscriber churn with [Recurly’s Account Updater](https://recurly.com/blog/how-automated-credit-card-account-updaters-fight-subscriber-churn/). This feature integrates with Account Updater programs from Mastercard®, Visa®, American Express®, and Discover®. The cardholder’s bank —not Recurly—determines participation, sending account‐change events to each network. Additionally, Recurly now supports card updates in Europe in certain cases.
 
 # Configuration & availability
 
@@ -47,16 +47,16 @@ Account Updater is available on all Recurly plans. As of October 26, enabling Ac
 5. **Enter MCC and SE Number:** In the prompt, provide:
 
    * **Mastercard® Merchant Category Code (MCC)** (required to enable Mastercard® updates)
-   * **10-digit American Express® SE number** (required to enable Cardrefresher)\
+   * **10-digit American Express® SE number** (required to enable Cardrefresher)
      Enter these accurately.
 
    <br />
 
-   <Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/79af8f5-image.png" />
+   <Image align="center" border={true} width="75% " src="https://files.readme.io/79af8f5-image.png" className="border" />
 6. **Confirm Charges:** Check the box to authorize the monthly Account Updater fee. If you lack MCC or SE number, you can still enable Visa® and Discover® only.
 7. **Completion:** Click **Enable**. Your status will update to show you’re enabled for Visa®, Mastercard®, Discover®, and American Express®.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/17be4e7-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/17be4e7-image.png" className="border" />
 
 > **Note:** Ensure the SE number is correct. Gateway‐provided (OptBlue) SE numbers will not work—only direct Amex SE numbers are supported.
 
@@ -65,7 +65,8 @@ Account Updater is available on all Recurly plans. As of October 26, enabling Ac
 Account Updater runs on a publish/subscribe model for Mastercard®, Visa®, American Express®, and Discover®:
 
 * **Updated Expiration Date:** Automatically updates expiration in billing info.
-* **Updated Credit Card Number:** Replaces the first six and last four digits in the customer’s account.
+* **Updated Credit Card Number:** Replaces the the entire card number. 
+  * In rare cases, this can mean a brand change. In these instances, customers must come back into session to ensure continued recurring transaction processing as the card networks do not generally share Network Transaction ID formatting.
 * **Credit Card Account Closed:** Flags billing info as invalid to prevent further charges.
 
 Each of these events fires the **Update Billing Info** webhook.
@@ -74,7 +75,7 @@ Each of these events fires the **Update Billing Info** webhook.
 
 ### Pre-renewal for Subscriptions
 
-Account Updater runs pre-renewal on subscriptions with outdated information roughly 1 week before renewal date. In certain cases, we look ahead farther than 1 week in the case of cards that have long-running subscriptions, such as quarterly, bi-annual, or annual subscriptions. *Note:* This fetch capability is only supported on file-based Account Updater services, and does not apply to event-based services such as Amex CardRefresher and MasterCard ABU.
+Account Updater runs pre-renewal on subscriptions with outdated information roughly 1 week before renewal date. In certain cases, we look ahead farther than 1 week in the case of cards that have long-running subscriptions, such as quarterly, bi-annual, or annual subscriptions. _Note:_ This fetch capability is only supported on file-based Account Updater services, and does not apply to event-based services such as Amex CardRefresher and MasterCard ABU.
 
 ### Dunning Behaviors
 
@@ -113,7 +114,7 @@ If you prefer not to update billing info for certain customers, you can opt them
 1. **Navigate** to Payments Settings and click **Disable** in the Account Updater box’s upper right.
 2. A pop-up will appear—confirm you want to disable.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/133d86c-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/133d86c-image.png" className="border" />
 
 3. **Check** all three boxes and click **Disable**.
 
