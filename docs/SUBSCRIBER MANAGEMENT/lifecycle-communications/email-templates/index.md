@@ -38,7 +38,7 @@ Email templates in Recurly refer to predefined layouts and formats which busines
 
 Recurly provides a robust suite of email templates for various account and subscription actions. These templates not only maintain communication with your subscribers but can also be tailored to mirror your brand's image. Furthermore, the granularity in our settings ensures you have the utmost control over which notifications are relayed to your subscribers throughout their subscription journey.
 
-<Image align="center" border="true" src="https://files.readme.io/1c4ff3a-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/51b738ac9318251a7b96502b8da589d573ed105e5c0f96fd48eee958684aa412-Screenshot_2025-10-01_at_8.58.03_AM.png" className="border" />
 
 # Email notification templates
 
@@ -108,9 +108,9 @@ This new option resides on the [Site Settings page](https://docs.recurly.com/doc
 * **Credit Card Expired**: Sends a one-time reminder **before** a card’s expiration date, ahead of the next billing cycle. Triggered only for **expiring** cards; it does **not** send if the card is already expired (e.g., from an import or other reason).
 * **Ramp Price Change**: Notifies users of an upcoming price change in their ramp pricing model subscription.
 
-> **Note:** These templates can be configured the days prior.
-
-<Image align="center" border="true" src="https://files.readme.io/e3b9d56-image.png" className="border" />
+> **Note:** The number of days can be configured within these templates.
+>
+> <Image align="center" border={true} width="80% " src="https://files.readme.io/926ff959b27d50be073c5e2839fe1c582685316f1e649391758efc4c45879b40-Screenshot_2025-10-01_at_9.00.02_AM.png" className="border" />
 
 ## Gift card templates
 
@@ -309,8 +309,6 @@ Disabling a site-level email also deactivates it for all plans.
 
 While modifying an email template, the **Preview** button becomes accessible. By clicking on it, you can get a real-time view of the changes you've applied to the template.
 
-<Image align="center" border="true" src="https://files.readme.io/eae8fdd-Screen_Shot_2017-06-16_at_11.48.24_AM.png" className="border" />
-
 #### **2. Sending test emails**
 
 To get a comprehensive understanding of how Recurly emails appear to your clients, there's an option to send a test version to your email account.
@@ -319,7 +317,7 @@ To do this:
 1. **Access** the email template editing page.
 2. **Locate **and **click **on the **Send Test Email** button, adjacent to the **Preview** button.
 
-<Image align="center" border="true" src="https://files.readme.io/e0961d6-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/0894ff2fab671614c1286921899ad30bcb49c709f75fee4e80576081e3d59dbb-Screenshot_2025-10-01_at_9.05.33_AM.png" className="border" />
 
 After initiating the test email send, wait for its arrival in your inbox. If it doesn't appear shortly, check your spam or junk folders.
 
