@@ -90,6 +90,9 @@ This new option resides on the [Site Settings page](https://docs.recurly.com/doc
 * **New Subscription**: Sends a notice to the customer after successful sign up or a subscription with a future start date is activated. .
 * **Subscription Change**: Informs subscribers of any changes made to their existing subscription.
 * **Subscription Pause Scheduled**: Sent to the customer when their subscription is scheduled to be paused.
+* **Pause Reminder**: Sent to a customer [n] days prior to remind them of their upcoming subscription pause.  The default number of days is 7 and this can be configured in the email template settings.
+* **Pause Cancellation Confirmation**: Sent to the customer when their scheduled subscription pause is canceled.
+* **Subscription Resume Reminder**: Sent to the customer [n] days before their subscription resumes from pause.  The default number of days is 7 and this can be configured in the email template settings.
 * **Subscription Canceled**: Sends a notification upon subscription cancellation.
 * **Subscription Expired**: Communicates the termination of a subscription, either immediate or at the end of a post-cancellation billing cycle.
 * **Trial Ending**: Sent prior to the trial period ending, advising of the impending transition to a paid subscription as required by law in many regions. This template can only be enabled if a plan’s trial length is greater than 3 days.
