@@ -317,7 +317,7 @@ To do this:
 1. **Access** the email template editing page.
 2. **Locate **and **click **on the **Send Test Email** button, adjacent to the **Preview** button.
 
-<Image align="center" border={true} src="https://files.readme.io/0894ff2fab671614c1286921899ad30bcb49c709f75fee4e80576081e3d59dbb-Screenshot_2025-10-01_at_9.05.33_AM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/0894ff2fab671614c1286921899ad30bcb49c709f75fee4e80576081e3d59dbb-Screenshot_2025-10-01_at_9.05.33_AM.png" className="border" />
 
 After initiating the test email send, wait for its arrival in your inbox. If it doesn't appear shortly, check your spam or junk folders.
 
