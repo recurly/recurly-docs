@@ -65,8 +65,9 @@ Account Updater is available on all Recurly plans. As of October 26, enabling Ac
 Account Updater runs on a publish/subscribe model for Mastercard®, Visa®, American Express®, and Discover®:
 
 * **Updated Expiration Date:** Automatically updates expiration in billing info.
-* **Updated Credit Card Number:** Replaces the the entire card number. 
-  * In rare cases, this can mean a brand change. In these instances, customers must come back into session to ensure continued recurring transaction processing as the card networks do not generally share Network Transaction ID formatting.
+* **Updated Credit Card Number:** Replaces the the entire card number.
+  * In rare cases, this can mean a brand change. In these instances, customers must come back into session to ensure continued recurring transaction processing as the card networks do not generally share Network Transaction ID formatting. In this event, we recommend doing outreach to your customer and having them reauthenticate their card, which will do a verification and update the NTID on file.
+  * Read our guide on reauthentication flows using the API: [Verify Stored Card Information](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/) 
 * **Credit Card Account Closed:** Flags billing info as invalid to prevent further charges.
 
 Each of these events fires the **Update Billing Info** webhook.
