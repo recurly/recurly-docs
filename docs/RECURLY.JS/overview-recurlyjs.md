@@ -7,11 +7,29 @@ metadata:
   description: Learn about our Recurly.js solution
   robots: index
 ---
-![](https://recurly.com/developers/images/recurly-js-logo.png)
+<Image border={false} src="https://recurly.com/developers/images/recurly-js-logo.png" />
+
+***
+
+## Old versions
+
+<Cards columns={2}>
+  <Card title="Recurly.js v4.10.3" icon="fa-code">
+    <a href="https://docs.recurly.com/recurly-subscriptions/v1.2.1/docs/overview-recurlyjs-4103#/" target="_blank" rel="noopener noreferrer">
+      Open v4.10.3 docs in a new tab
+    </a>
+  </Card>
+
+  <Card title="Recurly.js v4.35.0" icon="fa-code-branch">
+    <a href="https://docs.recurly.com/recurly-subscriptions/v1.2.2/docs/overview-recurlyjs-4350#/" target="_blank" rel="noopener noreferrer">
+      Open v4.35.0 docs in a new tab
+    </a>
+  </Card>
+</Cards>
 
 ### Customize Your Checkout Process and Accept Payments Securely
 
-Securely accept sensitive payment details within your checkout process with a fully customizable user experience.\
+Securely accept sensitive payment details within your checkout process with a fully customizable user experience.
 The Recurly.js JavaScript library secures your checkout forms, allowing you to create subscriptions, process one-time transactions, and update customer billing information worry-free.
 
 ### PCI Compliance with Recurly.js Elements
@@ -20,7 +38,7 @@ Recurly.js provides Elements that inject transparent iframes, enabling you to de
 
 ### How it works
 
-When a customer submits your payment form, Recurly.js immediately encrypts and securely stores their payment information on our servers. It then returns an authorization key—commonly known as a *token*—that you use to complete the subscription process through our API.
+When a customer submits your payment form, Recurly.js immediately encrypts and securely stores their payment information on our servers. It then returns an authorization key—commonly known as a _token_—that you use to complete the subscription process through our API.
 
 With this token, you can perform any API operation that requires payment details. Because you never directly handle sensitive payment information, your PCI compliance scope is significantly reduced.
 
