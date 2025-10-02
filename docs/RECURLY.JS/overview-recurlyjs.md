@@ -36,7 +36,7 @@ Recurly.js is open source, and we welcome you to view and contribute to the code
   <span> View code on GitHub</span>
 </a>
 
-##### Previous versions
+### Previous versions
 
 <Cards columns={2}>
   <Card title="Recurly.js v4.10.3" icon="fa-code">
