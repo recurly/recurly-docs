@@ -128,7 +128,7 @@ Update the Recurly.js V4 checkout page to incorporate Apple Pay with Braintree c
 1. Contact Recurly to activate the **Feature Flag for Enable Apple Pay Web Payments**.
 2. Select the **Enable Apple Pay** option on the Gateway Configuration page for Braintree within Recurly.
 
-Note: When using Apple Pay with Braintree, there is no need for additional configurations in Recurly under **Configuration → Apple Pay**.
+Note: When using Apple Pay with Braintree, there is no need for additional certificate configurations in Recurly under **Configuration → Apple Pay**.
 
 # FAQs
 
