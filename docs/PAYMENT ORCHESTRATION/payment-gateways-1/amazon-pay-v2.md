@@ -192,31 +192,31 @@ Amazon Pay V1 will remain operational until 2024, and updates to this guide will
 
 # FAQs
 
-**Q: Are Amazon Pay Charge Permission IDs usable everywhere on Amazon?**\
+**Q: Are Amazon Pay Charge Permission IDs usable everywhere on Amazon?**
 **A:** Amazon Pay charge permission IDs are specific to the region where they were created. To switch regions for a user, a new charge permission ID must be generated in the respective region.
 
-**Q: Can I pull shipping addresses from Amazon Pay V2?**\
+**Q: Can I pull shipping addresses from Amazon Pay V2?**
 **A:** Shipping addresses from Amazon Pay V2 need to be passed via API parameters. Updates will be provided if this feature is added in the future.
 
-**Q: Will Amazon Widgets be available in V2?**\
+**Q: Will Amazon Widgets be available in V2?**
 **A:** Amazon Widgets are not supported in Amazon Pay V2.
 
-**Q: Do I need to use the Amazon library for Amazon V2?**\
+**Q: Do I need to use the Amazon library for Amazon V2?**
 **A:** No, Amazon Pay V2 is integrated into Recurly.js, so the separate Amazon library is not needed. Amazon Pay V2 is not supported by the Amazon library.
 
-**Q: I don't see a consent widget in Amazon Pay V2. Is this unavailable?**\
+**Q: I don't see a consent widget in Amazon Pay V2. Is this unavailable?**
 **A:** In Amazon Pay V2, consent is obtained on the Amazon Pay hosted page, eliminating the need for a separate consent widget.
 
-**Q: Do I need to use any other gateway to access Amazon Pay V2?**\
+**Q: Do I need to use any other gateway to access Amazon Pay V2?**
 **A:** No, Amazon Pay V2 is a standalone service and does not require any additional gateways or merchant accounts outside of Amazon.
 
-**Q: What happens if I cannot authorize or authenticate via hosted onboarding?**\
+**Q: What happens if I cannot authorize or authenticate via hosted onboarding?**
 **A:** Check the accuracy of your Amazon Seller Central credentials. For US accounts, ensure the business entity is located in the United States; for UK or EU accounts, the entity should be in the UK or an EU country.
 
-**Q: Which currencies are available for Amazon Pay in the US?**\
+**Q: Which currencies are available for Amazon Pay in the US?**
 **A:** In the United States, USD is the available currency for Amazon Sellers.
 
-**Q: Which currencies are available on Amazon Pay in the UK or EU?**\
+**Q: Which currencies are available on Amazon Pay in the UK or EU?**
 **A:** For sellers in the UK, GBP is available, and for those in the EU, EUR is available.
 
 # Version history
