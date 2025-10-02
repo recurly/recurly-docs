@@ -11,7 +11,7 @@ metadata:
 
 ***
 
-## Old versions
+##### Old versions
 
 <Cards columns={2}>
   <Card title="Recurly.js v4.10.3" icon="fa-code">
