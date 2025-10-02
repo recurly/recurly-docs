@@ -16,13 +16,13 @@ metadata:
 <Cards columns={2}>
   <Card title="Recurly.js v4.10.3" icon="fa-code">
     <a href="https://docs.recurly.com/recurly-subscriptions/v1.2.1/docs/overview-recurlyjs-4103#/" target="_blank" rel="noopener noreferrer">
-      Open v4.10.3 docs in a new tab
+      Open v4.10.3 docs
     </a>
   </Card>
 
   <Card title="Recurly.js v4.35.0" icon="fa-code-branch">
     <a href="https://docs.recurly.com/recurly-subscriptions/v1.2.2/docs/overview-recurlyjs-4350#/" target="_blank" rel="noopener noreferrer">
-      Open v4.35.0 docs in a new tab
+      Open v4.35.0 docs
     </a>
   </Card>
 </Cards>
