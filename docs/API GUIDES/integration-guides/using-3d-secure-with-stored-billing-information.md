@@ -70,8 +70,6 @@ Use [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating
 * For Cybersource and WorldPay, you'll need to configure your risk options to include a `billingInfoId`.
 * If passing the CVV, tokenizing the cvv element will also be required.
 
-**Note:** If you plan on only reverifying card data, and not signing up for a subscription, the below documentation is sufficient
-
 See more detailed information for supporting known billing infos in Recurly.js  in our development hub.
 
 * [CVV Element Tokenization](https://docs.recurly.com/v1.2/docs/elements)
@@ -85,7 +83,7 @@ If you only needed to authentication a consumer for a new subscription, or verif
 
 ### Use Case: Resume or Reactivate a Subscription
 
-Once you have successfully re-authenticated a consumer's card, you can unpause or reactivate subscriptions using the below documented endpoints.
+Once you have successfully reauthenticated a consumer's card, you can unpause or reactivate subscriptions using the below documented endpoints.
 
 **Resuming a Paused Subscription**: If successful, you can [resume the paused subscription](https://recurly.com/developers/api/v2021-02-25/index.html#operation/resume_subscription) by implementing the Resume Subscription endpoint and reference the subscription ID in your path.
 
