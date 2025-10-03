@@ -36,7 +36,7 @@ Ordinarily, the export utilizes the adjustment's creation date rather than the i
 
 ### **Time Range Filter**
 
-Utilize this feature to visualize charge and credit adjustments initiated in a specified timeframe. The "adjustment\_created\_at" date in the export is the default parameter used to filter results. In case you wish to filter adjustments based on the invoice creation date, simply opt for the "Use invoice date" option.
+Utilize this feature to visualize charge and credit adjustments initiated in a specified timeframe. The "adjustment_created_at" date in the export is the default parameter used to filter results. In case you wish to filter adjustments based on the invoice creation date, simply opt for the "Use invoice date" option.
 
 **Note**:  Adjustments are immutable; hence, a 'modified' time range option is non-existent.
 
@@ -100,7 +100,7 @@ To help you identify and organize information effectively, the export provides a
       </th>
 
       <th>
-        Data type (max size)
+        Data type
       </th>
     </tr>
   </thead>
@@ -116,17 +116,17 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Unique internal identifier for the adjustment. Equivalent to line\_item\_uuid in the deprecated Invoices export.
+        Unique internal identifier for the adjustment. Equivalent to line_item_uuid in the deprecated Invoices export.
       </td>
 
       <td>
-        varchar(32)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="account_code">account\_code</span>
+        <span id="account_code">account_code</span>
       </td>
 
       <td>
@@ -138,13 +138,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="subscription_id">subscription\_id</span>
+        <span id="subscription_id">subscription_id</span>
       </td>
 
       <td>
@@ -156,13 +156,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(32)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="invoice_id">invoice\_id</span>
+        <span id="invoice_id">invoice_id</span>
       </td>
 
       <td>
@@ -174,13 +174,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(32)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_status">adjustment\_status</span>
+        <span id="adjustment_status">adjustment_status</span>
       </td>
 
       <td>
@@ -198,7 +198,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_type">adjustment\_type</span>
+        <span id="adjustment_type">adjustment_type</span>
       </td>
 
       <td>
@@ -210,13 +210,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(10)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_created_at">adjustment\_created\_at</span>
+        <span id="adjustment_created_at">adjustment_created_at</span>
       </td>
 
       <td>
@@ -224,7 +224,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Creation date of the adjustment. This date will equal the billed\_date of the invoice in most cases, but will be older than the billed\_date if the adjustment was created on the account a period of time before it was invoiced. The adjustment\_created\_at date will never be after the invoice's billed\_date.
+        Creation date of the adjustment. This date will equal the billed_date of the invoice in most cases, but will be older than the billed_date if the adjustment was created on the account a period of time before it was invoiced. The adjustment_created_at date will never be after the invoice's billed_date.
       </td>
 
       <td>
@@ -234,7 +234,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_start_at">adjustment\_start\_at</span>
+        <span id="adjustment_start_at">adjustment_start_at</span>
       </td>
 
       <td>
@@ -242,7 +242,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Bill cycle start date for a specific adjustment. Equivalent to line\_item\_start\_date in the deprecated Invoices export.
+        Bill cycle start date for a specific adjustment. Equivalent to line_item_start_date in the deprecated Invoices export.
       </td>
 
       <td>
@@ -252,7 +252,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_end_at">adjustment\_end\_at</span>
+        <span id="adjustment_end_at">adjustment_end_at</span>
       </td>
 
       <td>
@@ -260,7 +260,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Bill cycle end date for a specific adjustment. Equivalent to line\_item\_end\_date in the deprecated Invoices.
+        Bill cycle end date for a specific adjustment. Equivalent to line_item_end_date in the deprecated Invoices.
       </td>
 
       <td>
@@ -270,7 +270,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_description">adjustment\_description</span>
+        <span id="adjustment_description">adjustment_description</span>
       </td>
 
       <td>
@@ -278,17 +278,17 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Description for a specific adjustment. This is automatically generated for all plan adjustments. This is custom for one-time custom charges and credits. Equivalent to line\_item\_description in the deprecated Invoices export
+        Description for a specific adjustment. This is automatically generated for all plan adjustments. This is custom for one-time custom charges and credits. Equivalent to line_item_description in the deprecated Invoices export
       </td>
 
       <td>
-        varchar(255)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_quantity">adjustment\_quantity</span>
+        <span id="adjustment_quantity">adjustment_quantity</span>
       </td>
 
       <td>
@@ -306,7 +306,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_currency">adjustment\_currency</span>
+        <span id="adjustment_currency">adjustment_currency</span>
       </td>
 
       <td>
@@ -318,13 +318,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(3)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_amount">adjustment\_amount</span>
+        <span id="adjustment_amount">adjustment_amount</span>
       </td>
 
       <td>
@@ -342,7 +342,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_total">adjustment\_total</span>
+        <span id="adjustment_total">adjustment_total</span>
       </td>
 
       <td>
@@ -350,7 +350,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        The total amount of the adjustment after discounts and taxes \[(quantity x price) + discount + tax]. Equivalent to line\_item\_total in the deprecated Invoices.
+        The total amount of the adjustment after discounts and taxes [(quantity x price) + discount + tax]. Equivalent to line_item_total in the deprecated Invoices.
       </td>
 
       <td>
@@ -360,7 +360,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_taxable">adjustment\_taxable</span>
+        <span id="adjustment_taxable">adjustment_taxable</span>
       </td>
 
       <td>
@@ -378,7 +378,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_discount">adjustment\_discount</span>
+        <span id="adjustment_discount">adjustment_discount</span>
       </td>
 
       <td>
@@ -396,7 +396,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_tax">adjustment\_tax</span>
+        <span id="adjustment_tax">adjustment_tax</span>
       </td>
 
       <td>
@@ -414,7 +414,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_accounting_code">adjustment\_accounting\_code</span>
+        <span id="adjustment_accounting_code">adjustment_accounting_code</span>
       </td>
 
       <td>
@@ -422,17 +422,17 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Internal accounting code for a specific adjustment. This value will only populate if you define an accounting code for the adjustment. Accounting codes can be defined for all adjustments except free trials, which will inherit the plan's accounting code. Equivalent to line\_item\_accounting\_code in the deprecated Invoices export.
+        Internal accounting code for a specific adjustment. This value will only populate if you define an accounting code for the adjustment. Accounting codes can be defined for all adjustments except free trials, which will inherit the plan's accounting code. Equivalent to line_item_accounting_code in the deprecated Invoices export.
       </td>
 
       <td>
-        varchar(25)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_product_code">adjustment\_product\_code</span>
+        <span id="adjustment_product_code">adjustment_product_code</span>
       </td>
 
       <td>
@@ -440,17 +440,17 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Product code for a specific adjustment. This will populate automatically with the plan code or add-on code if the adjustment is for a subscription. This will populate for custom charges and credits (origin = debit or one\_time) if a value was set when the adjustment was created. Equivalent to line\_item\_product\_code in the deprecated Invoices export.
+        Product code for a specific adjustment. This will populate automatically with the plan code or add-on code if the adjustment is for a subscription. This will populate for custom charges and credits (origin = debit or one_time) if a value was set when the adjustment was created. Equivalent to line_item_product_code in the deprecated Invoices export.
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_tax_code">adjustment\_tax\_code</span>
+        <span id="adjustment_tax_code">adjustment_tax_code</span>
       </td>
 
       <td>
@@ -462,31 +462,31 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_origin">adjustment\_origin</span>
+        <span id="adjustment_origin">adjustment_origin</span>
       </td>
 
       <td>
-        plan, plan\_trial, setup\_fee, add\_on, add\_on\_trial, usage\_add\_on, usage\_add\_on\_trial, one\_time, debit, credit, coupon, carryforward, gift\_card, external\_gift\_card
+        plan, plan_trial, setup_fee, add_on, add_on_trial, usage_add_on, usage_add_on_trial, one_time, debit, credit, coupon, carryforward, gift_card, external_gift_card
       </td>
 
       <td>
-        The original source for an adjustment. A credit created from an original charge will have the value of the charge's origin. Equivalent to line\_item\_origin in the deprecated Invoices export. (plan = subscription fee, plan\_trial = trial period 0 amount charge, setup\_fee = subscription setup fee, add\_on = subscription add-on fee, debit = custom charge through the UI or Adjustments API, one\_time = custom charge through the Transactions API, credit = custom credit, carryforward = the charge that zeros out a negative invoice and should be ignored)
+        The original source for an adjustment. A credit created from an original charge will have the value of the charge's origin. Equivalent to line_item_origin in the deprecated Invoices export. (plan = subscription fee, plan_trial = trial period 0 amount charge, setup_fee = subscription setup fee, add_on = subscription add-on fee, debit = custom charge through the UI or Adjustments API, one_time = custom charge through the Transactions API, credit = custom credit, carryforward = the charge that zeros out a negative invoice and should be ignored)
       </td>
 
       <td>
-        varchar(20)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="tax_type">tax\_type</span>
+        <span id="tax_type">tax_type</span>
       </td>
 
       <td>
@@ -498,13 +498,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(6)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="tax_region">tax\_region</span>
+        <span id="tax_region">tax_region</span>
       </td>
 
       <td>
@@ -516,13 +516,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(15)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="tax_rate">tax\_rate</span>
+        <span id="tax_rate">tax_rate</span>
       </td>
 
       <td>
@@ -540,7 +540,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="tax_amount">tax\_amount</span>
+        <span id="tax_amount">tax_amount</span>
       </td>
 
       <td>
@@ -548,7 +548,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        The tax amount for the adjustment. This column is the same as the adjustment\_tax column, but tax\_amount may be missing a few values for merchants who have used Recurly's older VAT feature (pre-2015). Merchants who used the old VAT feature should use the adjustment\_tax column for older reports.
+        The tax amount for the adjustment. This column is the same as the adjustment_tax column, but tax_amount may be missing a few values for merchants who have used Recurly's older VAT feature (pre-2015). Merchants who used the old VAT feature should use the adjustment_tax column for older reports.
       </td>
 
       <td>
@@ -558,7 +558,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="country_juris">country\_juris</span>\*
+        <span id="country_juris">country_juris</span>*
       </td>
 
       <td>
@@ -576,7 +576,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="country_rate">country\_rate</span>\*
+        <span id="country_rate">country_rate</span>*
       </td>
 
       <td>
@@ -584,7 +584,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Country tax rate of the adjustment. This is the tax rate that corresponds to the country\_juris and country\_amount.
+        Country tax rate of the adjustment. This is the tax rate that corresponds to the country_juris and country_amount.
       </td>
 
       <td>
@@ -594,7 +594,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="country_amount">country\_amount</span>\*
+        <span id="country_amount">country_amount</span>*
       </td>
 
       <td>
@@ -602,7 +602,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Country tax amount of the adjustment. This is the tax amount that corresponds to country\_rate and country\_juris.
+        Country tax amount of the adjustment. This is the tax amount that corresponds to country_rate and country_juris.
       </td>
 
       <td>
@@ -612,7 +612,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="state_juris">state\_juris</span>\*
+        <span id="state_juris">state_juris</span>*
       </td>
 
       <td>
@@ -630,7 +630,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="state_rate">state\_rate</span>\*
+        <span id="state_rate">state_rate</span>*
       </td>
 
       <td>
@@ -638,7 +638,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        State or province tax rate of the adjustment. This is the tax rate that corresponds to the state\_juris and state\_amount.
+        State or province tax rate of the adjustment. This is the tax rate that corresponds to the state_juris and state_amount.
       </td>
 
       <td>
@@ -648,7 +648,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="state_amount">state\_amount</span>\*
+        <span id="state_amount">state_amount</span>*
       </td>
 
       <td>
@@ -656,7 +656,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        State or province tax amount of the adjustment. This is the tax amount that corresponds to state\_rate and state\_juris.
+        State or province tax amount of the adjustment. This is the tax amount that corresponds to state_rate and state_juris.
       </td>
 
       <td>
@@ -666,7 +666,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="county_juris">county\_juris</span>\*
+        <span id="county_juris">county_juris</span>*
       </td>
 
       <td>
@@ -684,7 +684,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="county_rate">county\_rate</span>\*
+        <span id="county_rate">county_rate</span>*
       </td>
 
       <td>
@@ -692,7 +692,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        County tax rate of the adjustment. This is the tax rate that corresponds to the county\_juris and county\_amount.
+        County tax rate of the adjustment. This is the tax rate that corresponds to the county_juris and county_amount.
       </td>
 
       <td>
@@ -702,7 +702,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="county_amount">county\_amount</span>\*
+        <span id="county_amount">county_amount</span>*
       </td>
 
       <td>
@@ -710,7 +710,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        County tax amount of the adjustment. This is the tax amount that corresponds to county\_rate and county\_juris.
+        County tax amount of the adjustment. This is the tax amount that corresponds to county_rate and county_juris.
       </td>
 
       <td>
@@ -720,7 +720,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="city_juris">city\_juris</span>\*
+        <span id="city_juris">city_juris</span>*
       </td>
 
       <td>
@@ -738,7 +738,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="city_rate">city\_rate</span>\*
+        <span id="city_rate">city_rate</span>*
       </td>
 
       <td>
@@ -746,7 +746,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        City tax rate of the adjustment. This is the tax rate that corresponds to the city\_juris and city\_amount.
+        City tax rate of the adjustment. This is the tax rate that corresponds to the city_juris and city_amount.
       </td>
 
       <td>
@@ -756,7 +756,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="city_amount">city\_amount</span>\*
+        <span id="city_amount">city_amount</span>*
       </td>
 
       <td>
@@ -764,7 +764,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        City tax amount of the adjustment. This is the tax amount that corresponds to city\_rate and city\_juris.
+        City tax amount of the adjustment. This is the tax amount that corresponds to city_rate and city_juris.
       </td>
 
       <td>
@@ -774,7 +774,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="special_juris">special\_juris</span>\*
+        <span id="special_juris">special_juris</span>*
       </td>
 
       <td>
@@ -792,7 +792,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="special_rate">special\_rate</span>\*
+        <span id="special_rate">special_rate</span>*
       </td>
 
       <td>
@@ -800,7 +800,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Special jurisdiction tax rate of the adjustment. This is the tax rate that corresponds to the special\_juris and special\_amount.
+        Special jurisdiction tax rate of the adjustment. This is the tax rate that corresponds to the special_juris and special_amount.
       </td>
 
       <td>
@@ -810,7 +810,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="special_amount">special\_amount</span>\*
+        <span id="special_amount">special_amount</span>*
       </td>
 
       <td>
@@ -818,7 +818,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Special jurisdiction tax amount of the adjustment. This is the tax amount that corresponds to special\_rate and special\_juris.
+        Special jurisdiction tax amount of the adjustment. This is the tax amount that corresponds to special_rate and special_juris.
       </td>
 
       <td>
@@ -828,7 +828,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_refund">adjustment\_refund</span>
+        <span id="adjustment_refund">adjustment_refund</span>
       </td>
 
       <td>
@@ -846,7 +846,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="original_adjustment_uuid">original\_adjustment\_uuid</span>
+        <span id="original_adjustment_uuid">original_adjustment_uuid</span>
       </td>
 
       <td>
@@ -858,13 +858,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(32)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="invoice_number">invoice\_number</span>
+        <span id="invoice_number">invoice_number</span>
       </td>
 
       <td>
@@ -882,7 +882,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="invoice_state">invoice\_state</span>
+        <span id="invoice_state">invoice_state</span>
       </td>
 
       <td>
@@ -890,25 +890,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Current state of the invoice the adjustment was on. Equivalent to invoice\_status in the Invoices - Summary export.
-      </td>
-
-      <td>
-        varchar(20)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="adjustment_coupon_code">adjustment\_coupon\_code</span>
-      </td>
-
-      <td>
-        1monthfree-K09SC9R8
-      </td>
-
-      <td>
-        The coupon code that discounted the specific adjustment\_discount amount on the adjustment.
+        Current state of the invoice the adjustment was on. Equivalent to invoice_status in the Invoices - Summary export.
       </td>
 
       <td>
@@ -918,7 +900,25 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="invoice_billed_date">invoice\_billed\_date</span>
+        <span id="adjustment_coupon_code">adjustment_coupon_code</span>
+      </td>
+
+      <td>
+        1monthfree-K09SC9R8
+      </td>
+
+      <td>
+        The coupon code that discounted the specific adjustment_discount amount on the adjustment.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="invoice_billed_date">invoice_billed_date</span>
       </td>
 
       <td>
@@ -936,7 +936,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="invoice_closed_at">invoice\_closed\_at</span>
+        <span id="invoice_closed_at">invoice_closed_at</span>
       </td>
 
       <td>
@@ -954,7 +954,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="invoice_net_terms">invoice\_net\_terms</span>
+        <span id="invoice_net_terms">invoice_net_terms</span>
       </td>
 
       <td>
@@ -962,7 +962,7 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Identifies the net\_terms agreement associated with the invoice. All automatic collection invoices are due 'on-receipt'. Manual collection invoices can have terms of net-10, net-30, net-60, or a custom net day amount.
+        Identifies the net_terms agreement associated with the invoice. All automatic collection invoices are due 'on-receipt'. Manual collection invoices can have terms of net-10, net-30, net-60, or a custom net day amount.
       </td>
 
       <td>
@@ -972,7 +972,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="invoice_po_number">invoice\_po\_number</span>
+        <span id="invoice_po_number">invoice_po_number</span>
       </td>
 
       <td>
@@ -984,13 +984,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="invoice_collection_method">invoice\_collection\_method</span>
+        <span id="invoice_collection_method">invoice_collection_method</span>
       </td>
 
       <td>
@@ -1008,7 +1008,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="invoice_type">invoice\_type</span>
+        <span id="invoice_type">invoice_type</span>
       </td>
 
       <td>
@@ -1026,7 +1026,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="account_name">account\_name</span>
+        <span id="account_name">account_name</span>
       </td>
 
       <td>
@@ -1044,7 +1044,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="account_country">account\_country</span>
+        <span id="account_country">account_country</span>
       </td>
 
       <td>
@@ -1056,13 +1056,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(2)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="account_vat_number">account\_vat\_number</span>
+        <span id="account_vat_number">account_vat_number</span>
       </td>
 
       <td>
@@ -1074,13 +1074,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(20)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_plan_code">adjustment\_plan\_code</span>
+        <span id="adjustment_plan_code">adjustment_plan_code</span>
       </td>
 
       <td>
@@ -1092,13 +1092,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="original_invoice_number">original\_invoice\_number</span>
+        <span id="original_invoice_number">original_invoice_number</span>
       </td>
 
       <td>
@@ -1116,7 +1116,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="invoice_due_on">invoice\_due\_on</span>
+        <span id="invoice_due_on">invoice_due_on</span>
       </td>
 
       <td>
@@ -1134,7 +1134,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_subtotal">adjustment\_subtotal</span>
+        <span id="adjustment_subtotal">adjustment_subtotal</span>
       </td>
 
       <td>
@@ -1152,11 +1152,11 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_credit_reason_code">adjustment\_credit\_reason\_code</span>
+        <span id="adjustment_credit_reason_code">adjustment_credit_reason_code</span>
       </td>
 
       <td>
-        general, service, promotional, refund, write\_off, gift\_card
+        general, service, promotional, refund, write_off, gift_card
       </td>
 
       <td>
@@ -1171,7 +1171,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="adjustment_refundable_amount">adjustment\_refundable\_amount</span>
+        <span id="adjustment_refundable_amount">adjustment_refundable_amount</span>
       </td>
 
       <td>
@@ -1190,7 +1190,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_name">ship\_address\_name</span>
+        <span id="ship_address_name">ship_address_name</span>
       </td>
 
       <td>
@@ -1208,7 +1208,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_line1">ship\_address\_line1</span>
+        <span id="ship_address_line1">ship_address_line1</span>
       </td>
 
       <td>
@@ -1226,7 +1226,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_line2">ship\_address\_line2</span>
+        <span id="ship_address_line2">ship_address_line2</span>
       </td>
 
       <td>
@@ -1244,7 +1244,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_city">ship\_address\_city</span>
+        <span id="ship_address_city">ship_address_city</span>
       </td>
 
       <td>
@@ -1262,7 +1262,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_state">ship\_address\_state</span>
+        <span id="ship_address_state">ship_address_state</span>
       </td>
 
       <td>
@@ -1280,7 +1280,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_zip">ship\_address\_zip</span>
+        <span id="ship_address_zip">ship_address_zip</span>
       </td>
 
       <td>
@@ -1298,7 +1298,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_country">ship\_address\_country</span>
+        <span id="ship_address_country">ship_address_country</span>
       </td>
 
       <td>
@@ -1316,7 +1316,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="ship_address_phone">ship\_address\_phone</span>
+        <span id="ship_address_phone">ship_address_phone</span>
       </td>
 
       <td>
@@ -1334,7 +1334,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="shipping_method_code">shipping\_method\_code</span>
+        <span id="shipping_method_code">shipping_method_code</span>
       </td>
 
       <td>
@@ -1346,13 +1346,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="item_code">item\_code</span>
+        <span id="item_code">item_code</span>
       </td>
 
       <td>
@@ -1366,13 +1366,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="item_id">item\_id</span>
+        <span id="item_id">item_id</span>
       </td>
 
       <td>
@@ -1390,7 +1390,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="external_sku">external\_sku</span>
+        <span id="external_sku">external_sku</span>
       </td>
 
       <td>
@@ -1402,13 +1402,13 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        varchar(50)
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="tax_inclusive">tax\_inclusive</span>
+        <span id="tax_inclusive">tax_inclusive</span>
       </td>
 
       <td>
@@ -1426,7 +1426,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        <span id="business_entity_code">business\_entity\_code</span>
+        <span id="business_entity_code">business_entity_code</span>
       </td>
 
       <td>
@@ -1444,7 +1444,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        adjustment\_api\_id
+        adjustment_api_id
       </td>
 
       <td>
@@ -1462,7 +1462,7 @@ To help you identify and organize information effectively, the export provides a
   </tbody>
 </Table>
 
-**\*Is not populated when using Vertex tax service**
+***Is not populated when using Vertex tax service**
 
 # Version changelog
 
@@ -1480,16 +1480,16 @@ To help you identify and organize information effectively, the export provides a
 
 ### **Version 5** - 3/30/2022
 
-* Integrated an additional column to indicate tax\_inclusive.
+* Integrated an additional column to indicate tax_inclusive.
 
 ### **Version 4** - 2/13/2020
 
-* A new column for external\_sku added to facilitate Item Charges.
+* A new column for external_sku added to facilitate Item Charges.
 
 ### **Version 3** - 11/21/2019
 
-* Added columns specifying item\_code and item\_id for Item Charges.
+* Added columns specifying item_code and item_id for Item Charges.
 
 ### **Version 2** - 5/2/2019
 
-* Introduced a column to denote shipping\_method\_code.
+* Introduced a column to denote shipping_method_code.
