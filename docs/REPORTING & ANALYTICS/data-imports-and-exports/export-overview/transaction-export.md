@@ -24,19 +24,19 @@ The Transactions export section provides a detailed report of all interactions c
 
 # Filters
 
-Recurly transactions can be categorized into three types and four statuses, providing detailed insights into payment flows.  
+Recurly transactions can be categorized into three types and four statuses, providing detailed insights into payment flows.
 
 #### Transaction types
 
-* **Authorization**: A $1 or $0 transaction created to validate payment information usability after billing updates.  
-* **Purchase**: A positive charge sent to the processor for fund collection and transfer to your merchant bank.  
-* **Refund**: A negative charge sent to the processor to reimburse and transfer funds back to the customer’s bank.  
+* **Authorization**: A $1 or $0 transaction created to validate payment information usability after billing updates.
+* **Purchase**: A positive charge sent to the processor for fund collection and transfer to your merchant bank.
+* **Refund**: A negative charge sent to the processor to reimburse and transfer funds back to the customer’s bank.
 
 #### Transaction Statuses
 
-* **Success**: The transaction was accepted by the gateway for processing.  
-* **Declined**: The transaction was rejected by the gateway and will not be processed.  
-* **Void**: Processing was stopped before settlement (e.g., when issuing full refunds before a purchase is fully settled).  
+* **Success**: The transaction was accepted by the gateway for processing.
+* **Declined**: The transaction was rejected by the gateway and will not be processed.
+* **Void**: Processing was stopped before settlement (e.g., when issuing full refunds before a purchase is fully settled).
 * **Processing**: The payment is in progress with the gateway, commonly seen with direct debit transactions.
 
 # Exports table
@@ -83,723 +83,94 @@ Recurly transactions can be categorized into three types and four statuses, prov
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Column Name
-      </th>
-
-      <th>
-        Example
-      </th>
-
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        <span id="account_code">account\_code</span>
-      </td>
-
-      <td>
-        123sd341
-      </td>
-
-      <td>
-        The specific account code charged during the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="name">name</span>
-      </td>
-
-      <td>
-        JJ Smith
-      </td>
-
-      <td>
-        Customer name as stated in their billing data.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="transaction_id">transaction\_id</span>
-      </td>
-
-      <td>
-        6c17ba39e8734ebaa5bf98fff6d91bb9
-      </td>
-
-      <td>
-        Unique identifier for the transaction within Recurly.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="type">type</span>
-      </td>
-
-      <td>
-        authorization, purchase, refund
-      </td>
-
-      <td>
-        Specifies the type of transaction reported to the gateway.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="amount">amount</span>
-      </td>
-
-      <td>
-        9.95
-      </td>
-
-      <td>
-        The total amount of the transaction sent to the payment gateway.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="tax_amount">tax\_amount</span>
-      </td>
-
-      <td>
-        15.00
-      </td>
-
-      <td>
-        The tax charges associated with the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="currency">currency</span>
-      </td>
-
-      <td>
-        USD
-      </td>
-
-      <td>
-        The currency reported to the payment gateway for transaction processing.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="date">date</span>
-      </td>
-
-      <td>
-        2012-01-19 11:16:41 PST
-      </td>
-
-      <td>
-        The date and time the transaction took place. Used for "created" date range filter.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="status">status</span>
-      </td>
-
-      <td>
-        declined, void, success, processing
-      </td>
-
-      <td>
-        The response received from the payment gateway concerning the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="message">message</span>
-      </td>
-
-      <td>
-        This transaction has been approved
-      </td>
-
-      <td>
-        Message received from the payment gateway regarding the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="test">test</span>
-      </td>
-
-      <td>
-        TRUE, FALSE
-      </td>
-
-      <td>
-        Indicates if the transaction was carried out on a production gateway.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="cc_type">cc\_type</span>
-      </td>
-
-      <td>
-        visa, master, discover, amex, jcb, diners
-      </td>
-
-      <td>
-        The type of credit card utilized for the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="cvv_result">cvv\_result</span>
-      </td>
-
-      <td>
-        M, N
-      </td>
-
-      <td>
-        The result from checking the CVV/CVC value on the transaction when it was processed.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="avs_result">avs\_result</span>
-      </td>
-
-      <td>
-        N, P, D
-      </td>
-
-      <td>
-        The overall AVS result from checking the transaction when it was processed.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="avs_result_postal">avs\_result\_postal</span>
-      </td>
-
-      <td>
-        N, Y
-      </td>
-
-      <td>
-        The result from verifying the zip code on the transaction when it was processed.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="avs_result_street">avs\_result\_street</span>
-      </td>
-
-      <td>
-        N, Y
-      </td>
-
-      <td>
-        The result from verifying the address 1 value on the transaction when it was processed.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="reference">reference</span>
-      </td>
-
-      <td>
-        4119385445
-      </td>
-
-      <td>
-        The identifier for the transaction from the payment gateway.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="approval_code">approval\_code</span>
-      </td>
-
-      <td>
-        varies by gateway
-      </td>
-
-      <td>
-        The approval code for the transaction from the payment gateway.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="description">description</span>
-      </td>
-
-      <td>
-        varies by gateway
-      </td>
-
-      <td>
-        The description sent to the payment gateway for the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="state">state</span>
-      </td>
-
-      <td>
-        CA
-      </td>
-
-      <td>
-        The state value from the customer's billing information on the account.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="country">country</span>
-      </td>
-
-      <td>
-        US
-      </td>
-
-      <td>
-        The country value from the customer's billing information on the account.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ip_address_country">ip\_address\_country</span>
-      </td>
-
-      <td>
-        US
-      </td>
-
-      <td>
-        The country associated with the IP address of the customer's location when the transaction was processed.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="original_transaction_id">original\_transaction\_id</span>
-      </td>
-
-      <td>
-        6b9fc18e2497498b9e3700cd55e2ea84
-      </td>
-
-      <td>
-        For refunds, this field identifies the payment being refunded.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_id">invoice\_id</span>
-      </td>
-
-      <td>
-        4bdb2171cebe4ecfb0cb129bd1a65746
-      </td>
-
-      <td>
-        References the invoice that generated this transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_id">subscription\_id</span>
-      </td>
-
-      <td>
-        3252sdasdbe4ecfb0cb129bd1a65746
-      </td>
-
-      <td>
-        References the subscription or list of subscriptions that instigated this transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="po_number">po\_number</span>
-      </td>
-
-      <td>
-        AE12523
-      </td>
-
-      <td>
-        The purchase order number for the invoice.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="collection_method">collection\_method</span>
-      </td>
-
-      <td>
-        automatic, manual
-      </td>
-
-      <td>
-        The type of collection method used for the invoice.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="transaction_gateway_type">transaction\_gateway\_type</span>
-      </td>
-
-      <td>
-        test, wirecard, authorize, etc
-      </td>
-
-      <td>
-        The payment gateway utilized to process the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="modified_at">modified\_at</span>
-      </td>
-
-      <td>
-        2014-01-01 10:00:00 PST
-      </td>
-
-      <td>
-        The date/time the transaction was last updated. Used for the "modified" date range filter.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="origin">origin</span>
-      </td>
-
-      <td>
-        recurring, API, hpp
-      </td>
-
-      <td>
-        Identifies what initiated the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="gateway_error_codes">gateway\_error\_codes</span>
-      </td>
-
-      <td>
-        500
-      </td>
-
-      <td>
-        Lists the gateway error code for declined transactions, if applicable.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="payment_method">payment\_method</span>
-      </td>
-
-      <td>
-        PayPal, Amazon Payment, Credit Card, etc
-      </td>
-
-      <td>
-        Specifies the method used for payment.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="collected_at">collected\_at</span>
-      </td>
-
-      <td>
-        2014-01-01 10:00:00 PST
-      </td>
-
-      <td>
-        For manually recorded payments, this reflects the specified date when recording the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="fraud_decision">fraud\_decision</span>
-      </td>
-
-      <td>
-        DECLINE, REVIEW, APPROVE
-      </td>
-
-      <td>
-        Contains the decision returned by the Kount risk check service for this transaction.  This data mirrors the fraud info api object.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="fraud_score">fraud\_score</span>
-      </td>
-
-      <td>
-        36 (between 1 and 99)
-      </td>
-
-      <td>
-        The risk score assigned by Kount's risk check service for this transaction. This data mirrors the fraud info api object.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="fraud_message">fraud\_message</span>
-      </td>
-
-      <td>
-        "848742"=>"BIN \<> Billing Country"
-      </td>
-
-      <td>
-        Contains all the rules triggered during the Kount's risk check service. Each number is the fraud\_risk\_rule code and the text that follows is the fraud\_risk\_rule message. This data mirrors the fraud info api object.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="failure_type">failure\_type</span>
-      </td>
-
-      <td>
-        invalid\_payment\_method\_hard
-      </td>
-
-      <td>
-        Provides additional information regarding the failure type of a transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="gateway_code">gateway\_code</span>
-      </td>
-
-      <td>
-        ih06u98jfoto
-      </td>
-
-      <td>
-        The gateway used for each transaction is denoted here.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="cc_first_6">cc\_first\_6</span>
-      </td>
-
-      <td>
-        111111
-      </td>
-
-      <td>
-        The first six digits of the credit card used for processing the transaction.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="vat_number">vat\_number</span>
-      </td>
-
-      <td>
-        EU12345678
-      </td>
-
-      <td>
-        The VAT or Tax ID number of the customer during the transaction in the export.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="backup_payment_method_used">backup\_payment\_method\_used</span>
-      </td>
-
-      <td>
-        TRUE, FALSE
-      </td>
-
-      <td>
-        Indicates whether a backup payment method was used in the transaction attempt.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="vat_number">vat\_number</span>
-      </td>
-
-      <td>
-        123456
-      </td>
-
-      <td>
-        Indicates vat number.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="card_brand">card\_brand</span>
-      </td>
-
-      <td>
-        Mastercard
-      </td>
-
-      <td>
-        Card brand
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="card_type">card\_type</span>
-      </td>
-
-      <td>
-        credit
-      </td>
-
-      <td>
-        Card type
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="card_level">card\_level</span>
-      </td>
-
-      <td>
-        prepaid
-      </td>
-
-      <td>
-        Card level
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="card_issuer">card\_issuer</span>
-      </td>
-
-      <td>
-        JP Morgan Chase Bank NA
-      </td>
-
-      <td>
-        Card issuer
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="card_issuing_country">card\_issuing\_country</span>
-      </td>
-
-      <td>
-        US
-      </td>
-
-      <td>
-        Card issuing country
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="transaction_api_id">transaction\_api\_id</span>
-      </td>
-
-      <td>
-        gyqgg0d3v9n1
-      </td>
-
-      <td>
-        v3 API identifier for the transaction within Recurly.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Column Name                                                             | Example                                   | Description                                                                                                                                                                                                            |
+| :---------------------------------------------------------------------- | :---------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span id="account_code">account_code</span>                             | 123sd341                                  | The specific account code charged during the transaction.                                                                                                                                                              |
+| <span id="name">name</span>                                             | JJ Smith                                  | Customer name as stated in their billing data.                                                                                                                                                                         |
+| <span id="transaction_id">transaction_id</span>                         | 6c17ba39e8734ebaa5bf98fff6d91bb9          | Unique identifier for the transaction within Recurly.                                                                                                                                                                  |
+| <span id="type">type</span>                                             | authorization, purchase, refund           | Specifies the type of transaction reported to the gateway.                                                                                                                                                             |
+| <span id="amount">amount</span>                                         | 9.95                                      | The total amount of the transaction sent to the payment gateway.                                                                                                                                                       |
+| <span id="tax_amount">tax_amount</span>                                 | 15.00                                     | The tax charges associated with the transaction.                                                                                                                                                                       |
+| <span id="currency">currency</span>                                     | USD                                       | The currency reported to the payment gateway for transaction processing.                                                                                                                                               |
+| <span id="date">date</span>                                             | 2012-01-19 11:16:41 PST                   | The date and time the transaction took place. Used for "created" date range filter.                                                                                                                                    |
+| <span id="status">status</span>                                         | declined, void, success, processing       | The response received from the payment gateway concerning the transaction.                                                                                                                                             |
+| <span id="message">message</span>                                       | This transaction has been approved        | Message received from the payment gateway regarding the transaction.                                                                                                                                                   |
+| <span id="test">test</span>                                             | TRUE, FALSE                               | Indicates if the transaction was carried out on a production gateway.                                                                                                                                                  |
+| <span id="cc_type">cc_type</span>                                       | visa, master, discover, amex, jcb, diners | The type of credit card utilized for the transaction.                                                                                                                                                                  |
+| <span id="cvv_result">cvv_result</span>                                 | M, N                                      | The result from checking the CVV/CVC value on the transaction when it was processed.                                                                                                                                   |
+| <span id="avs_result">avs_result</span>                                 | N, P, D                                   | The overall AVS result from checking the transaction when it was processed.                                                                                                                                            |
+| <span id="avs_result_postal">avs_result_postal</span>                   | N, Y                                      | The result from verifying the zip code on the transaction when it was processed.                                                                                                                                       |
+| <span id="avs_result_street">avs_result_street</span>                   | N, Y                                      | The result from verifying the address 1 value on the transaction when it was processed.                                                                                                                                |
+| <span id="reference">reference</span>                                   | 4119385445                                | The identifier for the transaction from the payment gateway.                                                                                                                                                           |
+| <span id="approval_code">approval_code</span>                           | varies by gateway                         | The approval code for the transaction from the payment gateway.                                                                                                                                                        |
+| <span id="description">description</span>                               | varies by gateway                         | The description sent to the payment gateway for the transaction.                                                                                                                                                       |
+| <span id="state">state</span>                                           | CA                                        | The state value from the customer's billing information on the account.                                                                                                                                                |
+| <span id="country">country</span>                                       | US                                        | The country value from the customer's billing information on the account.                                                                                                                                              |
+| <span id="ip_address_country">ip_address_country</span>                 | US                                        | The country associated with the IP address of the customer's location when the transaction was processed.                                                                                                              |
+| <span id="original_transaction_id">original_transaction_id</span>       | 6b9fc18e2497498b9e3700cd55e2ea84          | For refunds, this field identifies the payment being refunded.                                                                                                                                                         |
+| <span id="invoice_id">invoice_id</span>                                 | 4bdb2171cebe4ecfb0cb129bd1a65746          | References the invoice that generated this transaction.                                                                                                                                                                |
+| <span id="subscription_id">subscription_id</span>                       | 3252sdasdbe4ecfb0cb129bd1a65746           | References the subscription or list of subscriptions that instigated this transaction.                                                                                                                                 |
+| <span id="po_number">po_number</span>                                   | AE12523                                   | The purchase order number for the invoice.                                                                                                                                                                             |
+| <span id="collection_method">collection_method</span>                   | automatic, manual                         | The type of collection method used for the invoice.                                                                                                                                                                    |
+| <span id="transaction_gateway_type">transaction_gateway_type</span>     | test, wirecard, authorize, etc            | The payment gateway utilized to process the transaction.                                                                                                                                                               |
+| <span id="modified_at">modified_at</span>                               | 2014-01-01 10:00:00 PST                   | The date/time the transaction was last updated. Used for the "modified" date range filter.                                                                                                                             |
+| <span id="origin">origin</span>                                         | recurring, API, hpp                       | Identifies what initiated the transaction.                                                                                                                                                                             |
+| <span id="gateway_error_codes">gateway_error_codes</span>               | 500                                       | Lists the gateway error code for declined transactions, if applicable.                                                                                                                                                 |
+| <span id="payment_method">payment_method</span>                         | PayPal, Amazon Payment, Credit Card, etc  | Specifies the method used for payment.                                                                                                                                                                                 |
+| <span id="collected_at">collected_at</span>                             | 2014-01-01 10:00:00 PST                   | For manually recorded payments, this reflects the specified date when recording the transaction.                                                                                                                       |
+| <span id="fraud_decision">fraud_decision</span>                         | DECLINE, REVIEW, APPROVE                  | Contains the decision returned by the Kount risk check service for this transaction.  This data mirrors the fraud info api object.                                                                                     |
+| <span id="fraud_score">fraud_score</span>                               | 36 (between 1 and 99)                     | The risk score assigned by Kount's risk check service for this transaction. This data mirrors the fraud info api object.                                                                                               |
+| <span id="fraud_message">fraud_message</span>                           | "848742"=>"BIN \<> Billing Country"       | Contains all the rules triggered during the Kount's risk check service. Each number is the fraud_risk_rule code and the text that follows is the fraud_risk_rule message. This data mirrors the fraud info api object. |
+| <span id="failure_type">failure_type</span>                             | invalid_payment_method_hard               | Provides additional information regarding the failure type of a transaction.                                                                                                                                           |
+| <span id="gateway_code">gateway_code</span>                             | ih06u98jfoto                              | The gateway used for each transaction is denoted here.                                                                                                                                                                 |
+| <span id="cc_first_6">cc_first_6</span>                                 | 111111                                    | The first six digits of the credit card used for processing the transaction.                                                                                                                                           |
+| <span id="vat_number">vat_number</span>                                 | EU12345678                                | The VAT or Tax ID number of the customer during the transaction in the export.                                                                                                                                         |
+| <span id="backup_payment_method_used">backup_payment_method_used</span> | TRUE, FALSE                               | Indicates whether a backup payment method was used in the transaction attempt.                                                                                                                                         |
+| <span id="vat_number">vat_number</span>                                 | 123456                                    | Indicates vat number.                                                                                                                                                                                                  |
+| <span id="card_brand">card_brand</span>                                 | Mastercard                                | Card brand                                                                                                                                                                                                             |
+| <span id="card_type">card_type</span>                                   | credit                                    | Card type                                                                                                                                                                                                              |
+| <span id="card_level">card_level</span>                                 | prepaid                                   | Card level                                                                                                                                                                                                             |
+| <span id="card_issuer">card_issuer</span>                               | JP Morgan Chase Bank NA                   | Card issuer                                                                                                                                                                                                            |
+| <span id="card_issuing_country">card_issuing_country</span>             | US                                        | Card issuing country                                                                                                                                                                                                   |
+| <span id="transaction_api_id">transaction_api_id</span>                 | gyqgg0d3v9n1                              | v3 API identifier for the transaction within Recurly.                                                                                                                                                                  |
+| <span id="payment_method_identifier">payment_method_identifier</span>   |                                           | Payment method identifier                                                                                                                                                                                              |
+| <span id="cc_last_4">cc_last_4</span>                                   | 1234                                      | Card last 4 digits                                                                                                                                                                                                     |
+| <span id="expire_month">expire_month</span>                             | 12                                        | Card expiration month                                                                                                                                                                                                  |
+| <span id="expire_year">expire_year</span>                               |                                           | Card expiration year                                                                                                                                                                                                   |
+| <span id="processor_response_code">processor_response_code</span>       |                                           | transaction processor response code                                                                                                                                                                                    |
+| <span id="processor_response_text">processor_response_text</span>       |                                           | transaction processor response text                                                                                                                                                                                    |
+| <span id="issuer_response_code">issuer_response_code</span>             |                                           | Issuer response code                                                                                                                                                                                                   |
+| <span id="billing_info_id">billing_info_id</span>                       |                                           | Billing Info ID                                                                                                                                                                                                        |
 
 # Version changelog
 
+### Version 9 - 10/14/2025
+
+* **Column Additions**: Addition of payment_method_identifier, cc_last_4, expire_month, expire_year, processor_response_code, processor_response_text, issuer_response_code and billing_info_id.
+
 ### Version 8 - 10/5/2024
 
-* **Column Additions**: Addition of transaction\_api\_id.
+* **Column Additions**: Addition of transaction_api_id.
 
 ### Version 7 - 9/24/2024
 
-* **Column Additions**: Addition of card\_brand, card\_type, card\_level, card\_issuer, card\_issuing\_country columns.
+* **Column Additions**: Addition of card_brand, card_type, card_level, card_issuer, card_issuing_country columns.
 
 ### Version 6 - 8/1/2023
 
-* **Column Changes**: Introduced "vat\_number" column for merchants to capture customer's VAT or Tax ID number during a transaction in the export.
+* **Column Changes**: Introduced "vat_number" column for merchants to capture customer's VAT or Tax ID number during a transaction in the export.
 
 ### Version 5 - 4/20/21
 
-* **Column Changes**: The 'backup\_payment\_method\_used' column was added at the end of the export to identify transactions initiated through a backup payment method attempt.
+* **Column Changes**: The 'backup_payment_method_used' column was added at the end of the export to identify transactions initiated through a backup payment method attempt.
 
 ### Version 4 - 5/23/2019
 
-* **Column Changes**: 'cc\_first\_6' column incorporated at the end of the export.
+* **Column Changes**: 'cc_first_6' column incorporated at the end of the export.
 
 ### Version 3 - 4/25/2019
 
-* **Column Additions**: Addition of "cc\_first\_6" column.
+* **Column Additions**: Addition of "cc_first_6" column.
 
 ### Version 2 - 1/15/2019
 
