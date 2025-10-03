@@ -2,7 +2,7 @@
 title: Chargeback management for cards
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
