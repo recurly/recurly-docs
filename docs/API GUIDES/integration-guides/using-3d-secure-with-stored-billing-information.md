@@ -63,7 +63,7 @@ Once you've done this, if 3DS challenge is required, you will receive a `three_d
 
 Use [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) to submit the 3DS action token and resubmit the verification using the action result token. Please note, that not all gateways support API only 3DS redirection. See below for special cases.
 
-### Use Case: Re-authentication of Cardholder Data via Recurly.js 
+### Use Case: Re-authentication of Cardholder Data via Recurly.js
 
 **Note:** If you are using [Cybersource](https://docs.recurly.com/docs/cybersource#/) or [WorldPay](https://docs.recurly.com/docs/worldpaydlocal-latam-support#/), you will want to _start_ this process with Recurly.js and pass in the billing info ID or account code to Recurly.js and pass in a `token_id` to one of the above two endpoints. This is because Cybersource and WorldPay require a data collector to capture consumer information for 3DS to function properly on those platforms.
 
@@ -85,7 +85,7 @@ If you only needed to authentication a consumer for a new subscription, or verif
 
 ### Use Case: Resume or Reactivate a Subscription
 
-Once you have successfully reauthenticated a consumer's card, you can unpause or reactivate subscriptions using the below documented endpoints. 
+Once you have successfully reauthenticated a consumer's card, you can unpause or reactivate subscriptions using the below documented endpoints.
 
 **Resuming a Paused Subscription**: If successful, you can [resume the paused subscription](https://recurly.com/developers/api/v2021-02-25/index.html#operation/resume_subscription) by implementing the Resume Subscription endpoint and reference the subscription ID in your path.
 
@@ -97,11 +97,11 @@ Read more about subscription lifecycles in our dedicated [Subscription lifecycle
 
 ### Use Case: Signing up for a new subscription with On-File Data
 
-Depending on the action you wish to take, signing up for a new subscription with stored card details, or letting consumers make one time purchases using their stored data, you may do so using the above logic, though you will use different endpoints in our API. 
+Depending on the action you wish to take, signing up for a new subscription with stored card details, or letting consumers make one time purchases using their stored data, you may do so using the above logic, though you will use different endpoints in our API.
 
 For subscription signups, you can use the `/subscription` endpoint, or you may use the `/purchase` endpoint in our APIs, however it is best practice to use Recurly.js if you have a gateway that requires data collection / browser data to trigger 3D Secure Challenges for SCA or fraud-reduction purposes.
 
-Gateways that require Recurly.js to tokenize billing infos are: 
+Gateways that require Recurly.js to tokenize billing infos are:
 
 * Cybersource
 * WorldPay
