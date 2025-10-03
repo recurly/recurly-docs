@@ -1459,12 +1459,54 @@ To help you identify and organize information effectively, the export provides a
         string
       </td>
     </tr>
+
+    <tr>
+      <td>
+        <span id="price_segment_id">price_segment_id</span>
+      </td>
+
+      <td>
+        e30zov45fw0v2
+      </td>
+
+      <td>
+        Price segment id
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="price_segment_code">price_segment_code</span>
+      </td>
+
+      <td>
+        gold
+      </td>
+
+      <td>
+        Price segment code
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
   </tbody>
 </Table>
 
 ***Is not populated when using Vertex tax service**
 
 # Version changelog
+
+<br />
+
+### Version 9 - 10/14/2025
+
+* Addition of `price_segment_id and price_segment_code`.
 
 ### Version 8 - 2/5/2025
 
