@@ -1444,7 +1444,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-        adjustment_api_id
+        <span id="adjustment_api_id">adjustment_api_id</span>
       </td>
 
       <td>
@@ -1501,8 +1501,6 @@ To help you identify and organize information effectively, the export provides a
 ***Is not populated when using Vertex tax service**
 
 # Version changelog
-
-<br />
 
 ### Version 9 - 10/14/2025
 
