@@ -4,6 +4,7 @@
 - custom-gateway-routing-configuration
 - gateway-failover
 - fraud-management
+- chargeback-management-for-cards
 - nacha-verification
 - payment-descriptors
 - sepa-retries
@@ -12,6 +13,5 @@
 - how-to-test-your-gateway
 - gateway-specific-information-for-invoice-numbers
 - test
-- chargeback-management-for-cards
 - gateway-token-support
 - deprecated-gateway-specific-information-for-invoice-numbers
