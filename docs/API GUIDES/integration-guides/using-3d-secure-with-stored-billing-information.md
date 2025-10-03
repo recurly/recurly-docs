@@ -75,6 +75,8 @@ See more detailed information for supporting known billing infos in Recurly.js  
 * [CVV Element Tokenization](https://docs.recurly.com/v1.2/docs/elements)
 * [Billing Info ID Tokenization](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/3d-secure#/)
 
+Once tokenized, you may pass the Recurly.js token into any API that supports it in order to process new transactions, verify billing info, or let consumer sign up for new subscriptions with their stored data.
+
 #### Handling Re-verification and 3DS Authentication Failures
 
 Consumers can fail SCA for a multitude of reasons including cancelling out of the challenge window, browsers blocking pop-up modals, account takeover / fraudulent attempts, and more. You may offer consumers multiple chances to resume their subscription as per your own business needs. It is recommended to request new billing information after a few attempts to reverify existing billing information.
