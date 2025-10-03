@@ -48,27 +48,29 @@ There are several reasons to use customer authentication or reverification flows
 
 ***
 
-# 3DS Processing for Stored Card Details
+# Re-Authenticate Stored Card Details
 
-## Authenticating the customer for subscription changes or new transactions
+## Submit a Verification Request via API (No Recurly.js)
 
-### Step 1: Submit a Verification Request via API
+### Use Case: Re-authentication of Cardholder Data via API Only (No Recurly.js)
 
-When a customer who has a paused subscription requests that subscription is resumed, prior to resuming that subscription, use the API to request billing info verification using an account code, or a billing info ID if using Recurly Wallet, that is attached to that subscription.
-
-You can do this in one of two ways depending on your preference:
+You can pre-verify card data in advance of in one of two ways depending on your preference:
 
 * With CVV: [Verify an account's credit card billing cvv](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
 * Without CVV: [Verify an account's credit card billing information](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
 
 Once you've done this, if 3DS challenge is required, you will receive a `three_d_secure_action_token_id` as documented in the [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions). From here, follow the flows outlined in the [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions) to complete 3DS for re-verification.
 
-Use [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) to submit the 3DS action token and resubmit the verification using the action result token. Once you have a successful re-verification transaction response from the gateway, you may move on to Step 2.
+Use [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) to submit the 3DS action token and resubmit the verification using the action result token. Please note, that not all gateways support API only 3DS redirection. See below for special cases.
+
+### Use Case: Re-authentication of Cardholder Data via Recurly.js 
 
 **Note:** If you are using [Cybersource](https://docs.recurly.com/docs/cybersource#/) or [WorldPay](https://docs.recurly.com/docs/worldpaydlocal-latam-support#/), you will want to _start_ this process with Recurly.js and pass in the billing info ID or account code to Recurly.js and pass in a `token_id` to one of the above two endpoints. This is because Cybersource and WorldPay require a data collector to capture consumer information for 3DS to function properly on those platforms.
 
 * For Cybersource and WorldPay, you'll need to configure your risk options to include a `billingInfoId`.
 * If passing the CVV, tokenizing the cvv element will also be required.
+
+**Note:** If you plan on only reverifying card data, and not signing up for a subscription, the below documentation is sufficient
 
 See more detailed information for supporting known billing infos in Recurly.js  in our development hub.
 
@@ -81,7 +83,9 @@ Consumers can fail SCA for a multitude of reasons including cancelling out of th
 
 If you only needed to authentication a consumer for a new subscription, or verification for non-subscription changes, you're done! If you need to resume or reactivate a subscription, see the next steps.
 
-### Step 2: Resume or Reactivate the Subscription
+### Use Case: Resume or Reactivate a Subscription
+
+Once you have successfully reauthenticated a consumer's card, you can unpause or reactivate subscriptions using the below documented endpoints. 
 
 **Resuming a Paused Subscription**: If successful, you can [resume the paused subscription](https://recurly.com/developers/api/v2021-02-25/index.html#operation/resume_subscription) by implementing the Resume Subscription endpoint and reference the subscription ID in your path.
 
@@ -91,9 +95,18 @@ Read more about subscription lifecycles in our dedicated [Subscription lifecycle
 
 Read more about subscription lifecycles in our dedicated [Subscription lifecycle documentation](https://docs.recurly.com/docs/subscription-lifecycle#/).
 
-### Step 3: Verify and finish
+### Use Case: Signing up for a new subscription with On-File Data
 
-After a successful verification and resume/reactivation, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list your new account, subscription, or invoice.
+Depending on the action you wish to take, signing up for a new subscription with stored card details, or letting consumers make one time purchases using their stored data, you may do so using the above logic, though you will use different endpoints in our API. 
+
+For subscription signups, you can use the `/subscription` endpoint, or you may use the `/purchase` endpoint in our APIs, however it is best practice to use Recurly.js if you have a gateway that requires data collection / browser data to trigger 3D Secure Challenges for SCA or fraud-reduction purposes.
+
+Gateways that require Recurly.js to tokenize billing infos are: 
+
+* Cybersource
+* WorldPay
+
+<br />
 
 ***
 
