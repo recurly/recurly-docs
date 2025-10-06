@@ -142,6 +142,8 @@ To help you identify and organize information effectively, the export provides a
 | <span id="issuer_response_code">issuer_response_code</span>             |                                           | Issuer response code                                                                                                                                                                                                   |
 | <span id="billing_info_id">billing_info_id</span>                       |                                           | Billing Info ID                                                                                                                                                                                                        |
 
+<br />
+
 # Version changelog
 
 ### Version 9 - 10/14/2025
