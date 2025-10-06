@@ -39,10 +39,12 @@ The invoices Explore includes **all** invoices and their corresponding line item
 
 With the Recurly invoices Explore feature, you can easily create custom reports and visualize the data that matters most to your business.
 
-1. **Dimensions and measures:** These are the fundamental elements used to assemble custom reports. Dimensions, displayed in black text, are qualitative variables such as names, geographical data, and dates—they define the categories you want to analyze. Measures, displayed in orange text, are quantitative variables like counts, totals, or averages—they provide the numerical metrics you're interested in for each category. By offering a wide range of dimensions and measures, Recurly Explore enables you to mix and match variables to tailor reports to your unique needs.
+1. **Dimensions and measures:** These are the fundamental elements used to assemble custom reports.
+   1. Dimensions, displayed in black text, are qualitative variables such as names, geographical data, and dates—they define the categories you want to analyze. 
+   2. Measures, displayed in orange text, are quantitative variables like counts, totals, or averages—they provide the numerical metrics you're interested in for each category.
 2. **Data views:** Recurly Explore provides a range of predefined data views to jumpstart your data exploration. These views cover various aspects of your Recurly data.
 
-<Image border={false} src="https://files.readme.io/9807347932dc95731cc4a6921d0003f84d215e780b12fd0c9467033eded02ace-image.png" />
+<Image align="center" border={true} width="45% " src="https://files.readme.io/9807347932dc95731cc4a6921d0003f84d215e780b12fd0c9467033eded02ace-image.png" className="border" />
 
 * **Custom Fields (Add)**: Use custom fields to create formulaic calculations based on existing fields. Creating custom fields allows for more personalized reporting. [Learn more](https://docs.recurly.com/docs/recurly-builder#creating-a-custom-field).
 * **Account Primary Billing Info**: Explore billing details to enhance your billing strategies.
