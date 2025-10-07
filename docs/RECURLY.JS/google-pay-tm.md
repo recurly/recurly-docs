@@ -1,7 +1,7 @@
 ---
-title: Google Pay ™
+title: Google Pay
 excerpt: >-
-  Add Google Pay™ to your Recurly.js checkout: render the button, launch the
+  Add Google Pay to your Recurly.js checkout: render the button, launch the
   native payment sheet, and receive a Recurly token—optionally routing through
   Braintree.
 deprecated: false
