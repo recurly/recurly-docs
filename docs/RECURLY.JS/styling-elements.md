@@ -1,5 +1,5 @@
 ---
-title: Styling elements
+title: Styling Elements
 excerpt: >-
   Learn how to customize and style Recurly.js Elements to seamlessly integrate
   with your checkout design. This guide covers configuration options, style
