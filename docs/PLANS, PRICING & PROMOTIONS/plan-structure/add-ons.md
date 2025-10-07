@@ -38,13 +38,16 @@ Add-ons are additional charges billed each billing period alongside a subscripti
 
 2. Choose to create an add-on that is unique to the plan, or create an add-on from a saved item in your catalog.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" className="border" />
 
-3. Define the add-on’s properties. This includes type, name, code, accounting code, pricing model, price, tiers, taxes, and options for opting out or editable quantity. Some properties will auto-populate if you're creating an item-based add-on.
+3. Define the add-on’s properties. This includes type, name, code, accounting code, HS Code, pricing model, price, tiers, taxes, and options for opting out or editable quantity. Some properties will auto-populate if you're creating an item-based add-on.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/a986346-image.png" />
+* **Accounting Code**: Select a unique code to identify plans in your internal invoice exports. This code should be configured based on your specific tax settings and compliance requirements. Limit to 25 lowercase alphanumeric characters.
+* **HS code/Commodity code**:  Enter a Harmonized System (HS) code or Commodity Code to meet invoice compliance requirements for traded products. Generally, HS Code consists of at least six digits, with countries adding more digits for further national or regional classification. Recurly limits to 25 lowercase alphanumeric characters.
 
-4. Save your changes. 
+<Image align="center" border={false} width="75% " src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png" />
+
+4. Save your changes.
 
 # Configuring item add-ons directly on subscriptions
 
