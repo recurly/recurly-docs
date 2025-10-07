@@ -44,13 +44,13 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 1. From your main plan page, navigate to Configuration→Plans. Click on "New Plan."
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" className="border" />
 
 2. **Define** the following parameters:
 
 **Plan Details**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" className="border" />
 
 * **Plan Name**: This name describes your plan and appears on the Hosted Payment Page and the subscriber's invoice. Limit to 255 characters. Check with your payment gateway provider before using special characters.
 * **Plan Code**: This is your plan's unique identifier on Recurly. It's used in Hosted Payment Page URLs and API fetch requests. Limit to 25 alphanumeric characters.
@@ -60,58 +60,59 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 * **Currencies**: Choose which of your **enabled** currencies to include in your plan.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png" className="border" />
 
 * **Free Trial**: Define a free period for the plan in days or months. The paid subscription starts after the trial period ends. Choose whether to require billing information at sign-up, offering flexibility to reduce initial barriers for new customers.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png" className="border" />
 
 * **Setup Fee**: Include a one-time charge that is processed at the time of sign-up.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" className="border" />
 
 **Billing Configuration**
 
-<Image align="center" width="80% " src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" />
+<Image align="center" border={false} width="80% " src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" />
 
-* **Billing Period**: Set how often a subscriber will be billed.
+* **Billing period**: Set how often a subscriber will be billed.
 
-* **Subscription Term Length** : Set the default length of time that customers are committed to a subscription. A subscription to this plan will always renew with this term unless the account’s individual subscription term is modified.
+* **Subscription term length** : Set the default length of time that customers are committed to a subscription. A subscription to this plan will always renew with this term unless the account’s individual subscription term is modified.
 
-* **Billing Cycles**: Decide to automatically renew or expire the subscription after a set number of billing periods in the “At end of subscription term” section.
+* **Billing cycles**: Decide to automatically renew or expire the subscription after a set number of billing periods in the “At end of subscription term” section.
 
 **Pricing Model**
 
 * **Pricing model**: Set the pricing model that best suits the subscription. Choose from fixed or ramp, accordingly.
 * **Price**: Set a fixed price to charge to a plan's subscribers. For Quantity-Based Pricing, use Add-Ons.
 
-<Image align="center" width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
+<Image align="center" border={false} width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
 
-* **Price Segments**: Define different price points for your customer segments.  The Price and Price Segment Code can be used in our APIs to help you show the right price for the right subscriber.
+* **Price segments**: Define different price points for your customer segments.  The Price and Price Segment Code can be used in our APIs to help you show the right price for the right subscriber.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0b6dafa93b032bc950f42ac7fd45158081101333cfb9526155d3b48a1d329fc3-priceSegments.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/0b6dafa93b032bc950f42ac7fd45158081101333cfb9526155d3b48a1d329fc3-priceSegments.png" className="border" />
 
-**Billing Details**
+**Billing details**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b805c2b0bab72f94c5695b13beab5d86b8be821aa5d6a2d6f54362949c562613-image.png" />
+<Image align="center" border={false} width="80% " src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" />
 
-* **Accounting Code**: Select a unique code to identify plans in your internal invoice exports. This code should be configured based on your specific tax settings and compliance requirements. Limit to 25 lowercase alphanumeric characters.
+* **Accounting code**: Select a unique code to identify plans in your internal invoice exports. This code should be configured based on your specific tax settings and compliance requirements. Limit to 25 lowercase alphanumeric characters.
+* **HS code/Commodity code**:  Enter a Harmonized System (HS) code or Commodity Code to meet invoice compliance requirements for traded products. Generally, HS Code consists of at least six digits, with countries adding more digits for further national or regional classification. Recurly limits to 25 lowercase alphanumeric characters.
 
 **Plan Add-ons**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" className="border" />
 
 * **Add-ons**: Optional products that can be included in a recurring subscription's invoices. Also supports Quantity-Based Pricing Models. You can add items from the Item Catalog to a plan.
 
 **Dunning Campaign**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" className="border" />
 
 * **Dunning campaign:** Select the dunning campaign for this plan.
 
 **Customer Emails**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" className="border" />
 
 * **Select the emails**: Check the boxes to enable email communication on specific matters. You can also modify and manage your templates on your Email Templates setting page.
 
@@ -121,7 +122,7 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 * **Return URL after Success**: After a successful transaction via the Hosted Page, redirect the customer to a specific URL.
 * **Bypass Recurly Confirmation**: If using the Hosted Payment Pages, choose to bypass Recurly's confirmation page and use a custom return URL.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png" className="border" />
 
 3. Once all parameters are defined, **click** "Create Plan" to finalize.
 
@@ -129,7 +130,7 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 After a plan is configured, you can create [Checkout](https://docs.recurly.com/docs/checkout) configuration to direct customers to purchase your plan(s).
 
-<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" />
+<Image align="center" border={true} width="30% " src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" className="border" />
 
 # Updating plans
 
@@ -137,7 +138,7 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 2. Either from the plan list view (right option hover) or the plan actions drop down menu on a specific plan detail page, **select** "Edit."
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" className="border" />
 
 3. **Make** the desired changes and click "Save Changes".
 
@@ -149,11 +150,11 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 2. **Hover over** any row to reveal 3 additional options, then **select** "Duplicate".
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" className="border" />
 
 3. All details of the original plan will be copied to the "Create a Plan" page. "-copy" will be appended to the "Plan Name" and "Plan Code" fields.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png" className="border" />
 
 4. **Adjust** these field names and modify any other fields as required for the new plan.
 5. **Click** "Create Plan" once you've finished adjusting the details.
@@ -166,13 +167,13 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 2. Either from the plan list view (right-option hover) or the plan actions dropdown on a specific plan detail page, select **Delete**.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" className="border" />
 
 3. **Confirm** your decision.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png" className="border" />
 
-> **Note**:
+> **Notes**:
 >
 > * Deleting a plan is permanent and will prevent new customers from subscribing to it.
 > * Existing subscriptions to this plan will continue to renew, but once a plan is deleted, it cannot be reactivated.
