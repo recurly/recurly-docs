@@ -36,7 +36,7 @@ A business entity is a critical part of defining your business's identity to you
 
 Your business entity allows you to define your business's identity to your customers. By setting up your business entity, you can control the company name, address, contact phone number, and VAT/Tax ID information that is displayed on customer invoices. You are also able to set a unique entity tax address for your business within the business entity setup, that can either be the same address as the invoice display or entirely different.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/4b5f1fc-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/61591e394b1cb9ef924b6cfe668e16bd4a3a9e47e077eb1b390cf4304c9bf3b0-image.png" className="border" />
 
 For businesses with global locations, Recurly offers the flexibility to set different addresses for invoice display and tax calculations. This means you could have a US address used for tax calculation on a purchase,  and a European address for invoice display.
 
@@ -64,7 +64,7 @@ This revised section provides clarity on which components are essential and whic
 
 This section captures the name of the company, entity code (which acts as a unique identifier used in URLs and API references - the default entity code is "default" and cannot be modified), and the phone number that will appear on invoices (often a customer support number).
 
-<Image align="center" src="https://files.readme.io/5c92ad1-Screenshot_2024-03-13_at_8.13.33_PM.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/5c92ad1-Screenshot_2024-03-13_at_8.13.33_PM.png" className="border" />
 
 ### Invoice display address
 
@@ -72,17 +72,17 @@ The address you enter is the company information that appears on each customer i
 
 If you choose to use different addresses for invoice display and tax calculation, you can enter a unique address for each. Note that only the tax calculation address will be sent to Avalara or Vertex; the invoice display address will not be used for tax calculations.
 
-![](https://files.readme.io/2619d64-image.png)
+<Image align="center" border={true} width="80% " src="https://files.readme.io/2619d64-image.png" className="border" />
 
 Even if you don't have taxes enabled on your Recurly site, setting up your business entity is beneficial. The invoice display address will appear on all customer invoices, which can contribute to your brand image and identity.
 
-![](https://files.readme.io/527e93e-image.png)
+<Image align="center" border={true} width="80% " src="https://files.readme.io/527e93e-image.png" className="border" />
 
 ### Invoice settings
 
 Merchants can set invoice treatments specific to their Site Default Business Entity by configuring custom settings for entity prefix, EU country sequencing, header images and footer images. By doing this, any invoice generated will receive the invoice treatments applied to the corresponding entity, unless custom settings are set to override business entity logic from the Invoice Templates page.
 
-#### Invoice Number Settings: Entity Prefix
+#### Invoice mumber settings: Entity prefix
 
 Merchants will be able to choose whether or not to enable entity-specific invoice sequencing directly on each of their business entities.
 
@@ -93,15 +93,11 @@ Note: Changes to invoice numbering can potentially disrupt reconciliation and ga
 
 Contact [support](mailto:support@recurly.com) to have entity invoice prefix added to your account.
 
-<br />
-
-#### Invoice Number Settings: Country Sequencing
+#### Invoice number settings: Country sequencing
 
 By default, Recurly uses a single sequence for invoice numbers across your site, adhering to the European Commission's invoicing rules. However, certain EU member states mandate a unique sequence for their country. To cater to this, we offer the Country Sequencing feature. This allows merchants to establish distinct sequences for each EU member state.  Merchants can enable or disable this feature by clicking the appropriate radio button.
 
-![](https://files.readme.io/1bfe327798857becdd2e9a28c5986362600477d66dcfc75dbc6bbdf95c6a9aaa-image.png)
-
-<br />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/1bfe327798857becdd2e9a28c5986362600477d66dcfc75dbc6bbdf95c6a9aaa-image.png" className="border" />
 
 See [Invoice Display](https://docs.recurly.com/recurly-subscriptions/docs/invoice-management#display) for examples of invoices with multiple business entities with customized invoice prefix.
 
@@ -109,13 +105,36 @@ See [Invoice Display](https://docs.recurly.com/recurly-subscriptions/docs/invoic
 
 Images for the invoice’s header and footer allows merchants to determine what logos are displayed on an invoice sent to their customers. Footer images are often used to display other custom communications to customers, or secondary logos. **Entity-level invoice images are available for merchants on any Recurly plan.**
 
-<Image align="center" src="https://files.readme.io/cbed6f9-Screenshot_2023-10-25_at_11.27.33_AM.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/cbed6f9-Screenshot_2023-10-25_at_11.27.33_AM.png" className="border" />
+
+#### Entity charge invoice notes
+
+You can use the Invoice Settings notes or you may select to override those notes and have invoice notes specific to the Business Entity.
+
+**Note to customer**
+
+Customer Notes is another notes section available to you for any details you would like to add. This section is ideal for notes on invoice details or including a special message for the customer, like "thanks for your business".
+
+Invoice notes provide flexibility to allow you to add relevant information to the invoice that may be specific to local compliance needs. Notes such as Authorized Dealer, delivery note number, type of supply, intra-community supply, goods status, Israel invoice model, and Israel special note.
+
+This section will only show on an invoice if there is text in the field and does not display a section title. Customer Notes are displayed at the bottom of the invoice in larger font than the Terms and Conditions.
+
+**Terms and Conditions**
+
+Terms and Conditions is a notes section available to you for any details you would like to add. The section is ideal for notes about payment or contract terms. The section will only show on an invoice if there is text in the field. While Recurly provides the ability to set notes for invoices at the entity level, you can opt to leverage general notes to be displayed on invoices sent to customers by choosing to use the "Invoice Settings" page notes.
+
+<Image align="center" border={false} width="75% " src="https://files.readme.io/32bd225c3ce20073e39a47ab9fc736164f921985698eef26a9aaeb2badaea037-image.png" />
 
 #### How do entity-specific invoice treatments work with Recurly’s existing Invoice Customization feature?
 
-On your site’s Invoice Templates, any custom invoice display addresses, and header/footer images applied to a given template will still be applied to invoices sent to accounts with a customized invoice template assigned. If you decide you would like to use the invoice treatments applied at the entity level instead, you can select the first radio button option in the invoice template “edit” page, where you can choose to use the address/images applied on the entity level, rather than apply the custom invoice settings on the invoice template object. You can change this behavior whenever you want and as frequently as you want. Any updated settings will only be applied to forward-moving invoices.
+On your site’s Invoice Templates, any custom invoice display addresses, and header/footer images applied to a given template will still be applied to invoices sent to accounts with a customized invoice template assigned.
 
-<Image align="center" src="https://files.readme.io/7e35d9a-Screenshot_2023-10-25_at_1.46.35_PM.png" />
+If you decide you would like to use the invoice treatments applied at the entity level instead, you can select the first radio button option in the invoice template “edit” page, where you can choose to use the address/images applied on the entity level, rather than apply the custom invoice settings on the invoice template object.
 
-New invoice templates created on your site will have the options for using the entity-level invoice addresses, and header and footer images selected automatically. Again, you can change these settings at any point in time.
-Note: At this point in time, we do not support version history for images at the entity level. This means that if an invoice is posted, and you decide at a later time to edit that invoice for any reason, the newly-generated invoice will be re-sent to the customer with the image that is currently applied on the entity level. This also applies to refund/credit invoices.
+You can change this behavior whenever you want and as frequently as you want. Any updated settings will only be applied to forward-moving invoices.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/7e35d9a-Screenshot_2023-10-25_at_1.46.35_PM.png" className="border" />
+
+New invoice templates created on your site will include options to automatically use the entity-level invoice addresses, as well as the selected header and footer images. These settings can be modified at any time as needed.
+
+> **Note:** Currently, version history for images at the entity level is not supported. Consequently, if an invoice is posted and subsequently edited for any reason, the newly generated invoice will be re-sent to the customer with the image that is presently applied at the entity level. This policy also applies to refund and credit invoices.
