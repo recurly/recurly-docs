@@ -1,5 +1,5 @@
 ---
-title: Amazon Pay V2 - Recurly.js
+title: Amazon Pay
 excerpt: >-
   Quickly add Amazon Pay v2 to your checkout: render Amazon’s button, start the
   pop-up payment flow, and receive a short-lived Recurly token you can pass to
