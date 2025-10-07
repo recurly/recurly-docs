@@ -75,7 +75,7 @@ A business entity is a critical part of defining your business's identity to you
 
 Your business entity allows you to define your business's identity to your customers. By setting up your business entity, you can control the company name, address, contact phone number, and VAT/Tax ID information that is displayed on customer invoices. You are also able to set a unique entity tax address for your business within the business entity setup, that can either be the same address as the invoice display or entirely different.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/4b5f1fc-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/4b5f1fc-image.png" className="border" />
 
 For businesses with global locations, Recurly offers the flexibility to set different addresses for invoice display and tax calculations. This means you could have a US address used for tax calculation on a purchase,  and a European address for invoice display.
 
@@ -103,7 +103,7 @@ This revised section provides clarity on which components are essential and whic
 
 This section captures the name of the company, entity code (which acts as a unique identifier used in URLs and API references - the default entity code is "default" and cannot be modified), and the phone number that will appear on invoices (often a customer support number).
 
-<Image align="center" src="https://files.readme.io/5c92ad1-Screenshot_2024-03-13_at_8.13.33_PM.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/5c92ad1-Screenshot_2024-03-13_at_8.13.33_PM.png" className="border" />
 
 ### Invoice display address
 
@@ -111,11 +111,11 @@ The address you enter is the company information that appears on each customer i
 
 If you choose to use different addresses for invoice display and tax calculation, you can enter a unique address for each. Note that only the tax calculation address will be sent to Avalara or Vertex; the invoice display address will not be used for tax calculations.
 
-![](https://files.readme.io/2619d64-image.png)
+<Image align="center" border={true} width="80% " src="https://files.readme.io/2619d64-image.png" className="border" />
 
 Even if you don't have taxes enabled on your Recurly site, setting up your business entity is beneficial. The invoice display address will appear on all customer invoices, which can contribute to your brand image and identity.
 
-![](https://files.readme.io/527e93e-image.png)
+<Image align="center" border={true} width="80% " src="https://files.readme.io/527e93e-image.png" className="border" />
 
 ### Invoice settings
 
@@ -144,9 +144,7 @@ Recurly enables the addition of a hidden prefix to your invoice numbering. This 
 
 To add a hidden prefix, go to Configuration→Site Settings and enter your desired prefix under "Order Number Prefix".
 
-![](https://files.readme.io/17f741da4a04d35ac89eae3158e5b8e4ed1b872a4beac5e1a270f556f63d3432-image.png)
-
-<br />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/17f741da4a04d35ac89eae3158e5b8e4ed1b872a4beac5e1a270f556f63d3432-image.png" className="border" />
 
 ### Customize initial number
 
@@ -163,9 +161,7 @@ The display of invoices in the Recurly Admin Console, Hosted Invoice, or as a PD
 * **Credit Invoices:** If issued against a charge invoice, the relevant charge invoice number(s) will be listed.
 * **Visualization:** Invoice numbers may include prefixes or country codes as configured in Business Entities. The following visualization is an example of what invoice number sequencing looks like with multiple business entities.
 
-![](https://files.readme.io/de8c42f72668ee9f22b1eed749ff5993d5922ceab201d0df15cd5eb926bb0c1a-image.png)
-
-<br />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/de8c42f72668ee9f22b1eed749ff5993d5922ceab201d0df15cd5eb926bb0c1a-image.png" className="border" />
 
 ### From address
 
@@ -216,15 +212,16 @@ An invoice includes a Ship To address if a shipping address is associated with t
 Invoices contain a table of line items with these columns:
 
 * Date
-* Description
+* Description (if provided, HS Code will be displayed following the description)
 * Quantity
 * Price
 * Discount (shown only if applicable)
 * Subtotal
 * Tax (shown only if applicable, displaying the rate)
+* Tax Net (shown only if applicable, displaying the tax calculated by subtotal and tax rate)
 * Total (shown only if tax is applicable)
 
-<br />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/c27cff05d0ca709657c394bf8c2c937512dedbe3ab946c673d77a2a06af92c41-image.png" className="border" />
 
 > **Note:** Invoices displayed via the Admin Console, Hosted Invoice, and PDF will truncate line items after the first 500. The subtotal, tax, and total will reflect the sum of all line items. To access line items beyond the first 500, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports)
 
@@ -253,21 +250,21 @@ Recurly's invoice line items are structured differently based on the pricing mod
 * **Naming:** The Add-On name includes the range of units. Example: "Seats: 1-10".
 * **Visualization:**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/3dc4f14-Image_2020-03-20_at_8.53.19_AM.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/3dc4f14-Image_2020-03-20_at_8.53.19_AM.png" className="border" />
 
 #### Volume pricing
 
 * **Description:** Line items for Volume pricing are similar to those for fixed-price products, using the per-unit price from the relevant subscription tier.
 * **Visualization:**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/576c291-volume.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/576c291-volume.png" className="border" />
 
 #### Stairstep pricing
 
 * **Description:** A single line item is created, displaying the Add-On name and purchased quantity. The charge quantity is set to 1, with the price reflecting the fixed price for the applicable tier.
 * **Visualization:**
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a983819-Image_2020-03-20_at_8.59.44_AM.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/a983819-Image_2020-03-20_at_8.59.44_AM.png" className="border" />
 
 ### Payment history
 
@@ -279,8 +276,8 @@ Invoices feature three types of notes sections, which are visible only if they c
 
 #### Customer notes
 
-* **Description:** A section for any customer-specific notes, such as special invoice details or a thank-you message.
-* **Title Visibility:** The title of this section does not appear on the invoice.
+* **Notes:** A section for any customer-specific notes, such as special invoice details or a thank-you message.
+* **Title Visibility:** The title of this section is always visible and cannot be altered.
 
 #### Terms and conditions
 
@@ -291,7 +288,18 @@ Invoices feature three types of notes sections, which are visible only if they c
 
 * **Description:** Used for European Union reverse charge tax scenarios.
 * **Configuration:** Set up on the Tax Settings page.
-  Learn more about [VAT Reverse Charge Notes](https://docs.recurly.com/docs/eu-vat-2015#section-eu-vat-registered-customers)
+
+Learn more about [VAT Reverse Charge Notes](https://docs.recurly.com/docs/eu-vat-2015#section-eu-vat-registered-customers)
+
+<Callout icon="👍" theme="okay">
+  Customer Notes section is ideal for notes on invoice details or including a special message for the customer, like "thanks for your business".  Invoice notes provide flexibility to allow you to add relevant information to the invoice that may be specific to local invoice compliance needs. Notes such as Authorized Dealer, delivery note number, type of supply, intra-community supply, goods status, Israel invoice model, and Israel special note.
+</Callout>
+
+### Invoice currency notes
+
+In the Notes section of the invoice following any customer-specific notes, Recurly will display any relevant invoice currency information. Information such as the displayed currency, the converted currency rate, date and source used for currency conversion are provided.
+
+<Image align="center" border={true} src="https://files.readme.io/6b0b5a50696c86ec60a37243c47758a48cdd01bb3c6aac8ae55fb3d62e812f5c-image.png" className="border" />
 
 ## PDFs
 
@@ -307,7 +315,7 @@ Email Templates that support invoice PDF attachments:
 * Payment Refunded
 * Payment Voided
 
-<Image align="center" width="75% " src="https://files.readme.io/142bd85-Screenshot_2024-08-05_at_9.21.28_AM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/142bd85-Screenshot_2024-08-05_at_9.21.28_AM.png" className="border" />
 
 ## Emails
 
@@ -369,17 +377,17 @@ To refund an invoice, select "Refund Invoice" in the Invoice Actions dropdown in
 
 Once you are on the Issue Refund page, you have a few options to choose how to handle your refund. You can issue your refund either by the line item level, or for the entire invoice.
 
-> 🚧 Important Callout:
+> 🚧 Important
 >
 > Merchants _**without**_ the "Only Bill What Changed" and "Credit Memos" feature flags enabled on their site only have the option the to refund by "Quantity" for line items, and by "Specific Amounts" for entire invoices. Refunding by percentages and specific amounts on line items, and percentages on entire invoices, is _not available_ for merchants without the "Credit Memos" and "OBWC" features enabled.
 
 **Select to refund by line item**:
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/1d7bd0ff3a3c0d40d7baa51e77984d63c2a1b382e0913f5ea12724339d7e7566-Screenshot_2024-08-20_at_1.18.46_PM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/1d7bd0ff3a3c0d40d7baa51e77984d63c2a1b382e0913f5ea12724339d7e7566-Screenshot_2024-08-20_at_1.18.46_PM.png" className="border" />
 
 **Select to refund by entire invoice:**
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/155cce782e09c877c4053f44bd9913362ac7a89b8a9794883765198888a69af3-Screenshot_2024-08-20_at_1.27.12_PM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/155cce782e09c877c4053f44bd9913362ac7a89b8a9794883765198888a69af3-Screenshot_2024-08-20_at_1.27.12_PM.png" className="border" />
 
 Refund options for issuing refunds by individual line items include refunding a line item by quantity, specific amount, or percentage. Refund options for issuing refunds for whole invoices include refunding by a specific amount, or percentage amount.
 
@@ -387,7 +395,7 @@ Refund options for issuing refunds by individual line items include refunding a 
 * Specific amount refunds allow you to refund specific dollar/cent amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
 * Percentage refunds allow you to refund percentage amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
 
-> 👍 Good to know:
+> 👍 Good to know
 >
 > If you choose to issue a line item by a specific dollar amount or percentage, the “quantity” item for the line item(s) will show up as “1” on the invoice. Only quantity-based refunds will show specific quantity amounts for items on the invoice.
 
