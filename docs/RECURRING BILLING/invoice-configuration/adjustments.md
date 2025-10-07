@@ -38,7 +38,7 @@ Adjustments in Recurly are created during various subscription billing events. T
 ### Subscription Billing Events that Trigger Adjustments
 
 * **Sign-up:** When a customer signs up, adjustments are created for setup fees, plan fees, and add-on fees associated with the subscription.
-* **Immediate downgrade/upgrade:** Changing a subscription can result in a prorated credit and/or charge, depending on whether the change is an upgrade or a downgrade. More information on this can be found \[https\://docs.recurly.com/docs/change-subscription].
+* **Immediate downgrade/upgrade:** Changing a subscription can result in a prorated credit and/or charge, depending on whether the change is an upgrade or a downgrade. More information on this can be found [[https://docs.recurly.com/docs/change-subscription](https://docs.recurly.com/docs/change-subscription)].
 * **Start of new billing period:** When a new billing period starts, adjustments are created for the plan and any add-ons.
 * **Refund:** When a refund is issued, a credit adjustment is created to reflect the amount returned to the customer.
 * **Final invoice (usage-based billing):** For usage-based billing plans, adjustments are created when the final invoice is issued.
@@ -73,9 +73,9 @@ All charges created via this method are combined into a single total transaction
 
 For more straightforward scenarios, or when you need to create a charge without immediately invoicing it, you might use the [Adjustments](https://dev.recurly.com/docs/create-a-charge) (for v2 API) or [Line Items](https://developers.recurly.com/api/v2019-10-10/index.html#tag/line_item) (for v3 API) endpoint, or create the charge directly in the Recurly Admin UI.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/5b70c24-Item_Catalog_-_Final_Designs_Preview_Mode_-_InVision.png" />
-
 This method is particularly useful when you want to create a charge on a customer's account but do not want the customer to be charged until their next invoice. For example, if you add a charge in the middle of a billing cycle, you might want that charge to be included on the next regularly scheduled invoice rather than generating a new invoice immediately.
+
+<Image align="center" border={false} width="75% " src="https://files.readme.io/4fcbd1a7339135f2c54e08cab1d117c8e00d2668c38b7d759147f7485a5fc190-image.png" />
 
 ### Create credits using Admin UI
 
@@ -86,7 +86,7 @@ This is useful for scenarios such as:
 * Issuing a refund for a returned product.
 * Providing a credit as a gesture of goodwill or as compensation for a service issue.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/0e4b164-Screenshot_2018-03-02_15.47.03.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/0e4b164-Screenshot_2018-03-02_15.47.03.png" className="border" />
 
 When issuing a credit, you have full control over the amount of the credit, the currency it is issued in, and how it is described on the customer’s invoice. This allows you to use credits in a flexible way that matches your business needs.
 
@@ -103,7 +103,7 @@ When issuing a credit, you have full control over the amount of the credit, the 
    * Select the currency of the charge.
    * Select the invoice option from “Invoice Now” or “Invoice at Next Bill Date”
    * Configure the Charge Details by selecting the “Charge Type”  and filling in the description, quantity, and amount.
-   * Optionally, enter product code, accounting code, and timeframe.
+   * Optionally, enter product code, accounting code, [HS code](https://docs.recurly.com/recurly-subscriptions/docs/catalog#creating-items), and timeframe.
 
 4. **Tax Collection (if applicable):**
    * Check the Tax Collection box if you would like to collect tax on this charge according to your tax configuration.
