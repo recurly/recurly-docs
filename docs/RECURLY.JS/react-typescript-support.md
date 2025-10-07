@@ -1,5 +1,5 @@
 ---
-title: React & TypeScript support
+title: React & TypeScript
 excerpt: >-
   Official React wrappers and community-maintained TypeScript types make it
   painless to use Recurly.js in modern front-end stacks.
