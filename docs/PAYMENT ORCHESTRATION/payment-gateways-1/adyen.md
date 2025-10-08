@@ -70,22 +70,22 @@ Ensure a webservice user is set up on Adyen to permit Recurly to dispatch transa
 
 5. **Enter** your user name and include a description if you wish. For example: Recurly Adyen Credentials
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0958525-Screenshot_2023-10-26_at_1.45.41_PM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/0958525-Screenshot_2023-10-26_at_1.45.41_PM.png" className="border" />
 
 6. Ensure your API credentials have the 'Merchant Recurring Role' checked, or you will not be able to process recurring transactions using stored data within Recurly.
 
-   <Image align="center" src="https://files.readme.io/47ce985afb27f46153651193d5dd02935a1c3a28c3fd4b64c724d175cc8a33a8-Screenshot_2025-02-07_at_9.45.08_AM.png" />
+   <Image align="center" border={false} src="https://files.readme.io/47ce985afb27f46153651193d5dd02935a1c3a28c3fd4b64c724d175cc8a33a8-Screenshot_2025-02-07_at_9.45.08_AM.png" />
 7. Your new credential will be created, and your password will be available under “Server settings” → “Authentication” → “Basic auth” on the subsequent page. You will not be able to access this password after leaving this page, so make note of it immediately. Otherwise, you will need to regenerate the password from this page.
 8. **Record** the auto-generated username and password for later use in Recurly.
 9. **Click** ‘Save changes’.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/748ce08-Screenshot_2023-10-26_at_1.46.10_PM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/748ce08-Screenshot_2023-10-26_at_1.46.10_PM.png" className="border" />
 
 9. In the "Risk" section under "Dynamic 3D Secure", **update** the Dynamic 3DS setting to "prefer no" unless you specifically wish to always require 3DS on your Adyen instance. You should not do this on a gateway instance where recurring billing is running
 10. For those adhering to the <a href="https://docs.recurly.com/docs/revised-payment-services-directive-psd2" target="_blank">PSD2 Mandate</a>, **follow** our <a href="https://docs.recurly.com/docs/gateway-specific-updates#section-adyen" target="_blank">Adyen-specific guidelines</a>.
 11. **Request**
     1. Adyen support to activate the “**API PCI Payments role**” for your web services user, as it isn't active by default. Without this enabled, payments using a raw card number will fail.
-    2. Adyen support to **disable the CVC requirement** on your Merchant Account if you do not collect CVC (CVV codes) from returning or known customers. If you do wish to collect CVC (CVV codes) on all Customer Initiated transactions, ensure your integration supports collecting and passing the code to Recurly via API.
+    2. Adyen support to **disable the CVC requirement** on your Merchant Account if you do not collect CVC (CVV codes) from returning or known customers. If you do wish to collect CVC (CVV codes) on all Customer Initiated transactions, ensure your integration supports collecting and passing the code to Recurly via API if on v71.
 12. Additionally, **ensure** that “Acquirer Result” and “Raw Acquirer Result” are enabled in the API responses.
 
 # Webhooks configuration
@@ -96,7 +96,7 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 2. **Click** “+ Webhook” and find "Standard webhook" and click "Add".
 3. Under "Server configuration," **locate** and **click** on the pencil icon. In the field provided, enter the URL `https://callbacks.recurly.com/adyen/<MERCHANT_SUBDOMAIN>`, replacing "\<MERCHANT_SUBDOMAIN>" with your Recurly site's actual subdomain. Once done, **click** on the "Apply" button.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/fc70703-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/fc70703-image.png" className="border" />
 
 **No other settings changes should be made in this section.**
 
@@ -104,7 +104,7 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 4. **Ensure** the "Enabled" toggle is set as shown:
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/1a31b55-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/1a31b55-image.png" className="border" />
 
 5. **Click** “Save changes” at the bottom of the page.
 
@@ -159,7 +159,7 @@ Moreover, ensure these specific configurations are correctly set to effectively 
 3. Within Adyen, **adjust** settings to "immediate capture" for transactions.
 4. Within Adyen, ensure you have **enabled** **GIACT** for NACHA Verification, and then **enable** within your Adyen configuration on Recurly.
 
-<Image align="center" src="https://files.readme.io/f49c57dc1b942f81b5044b7538580f260cb01da28a09a610e597a359ddfef0c7-Screenshot_2025-07-29_at_4.11.19_PM.png" />
+<Image align="center" border={false} src="https://files.readme.io/f49c57dc1b942f81b5044b7538580f260cb01da28a09a610e597a359ddfef0c7-Screenshot_2025-07-29_at_4.11.19_PM.png" />
 
 > **Note**: First/Last name on Checks should not be sent as dashes ( - - ) as this will cause immediate declines.
 
@@ -354,29 +354,29 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 1. **Log** into Adyen, choose "Developers"→"API credentials".
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0e9f446-Screenshot_2023-10-26_at_2.32.53_PM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/0e9f446-Screenshot_2023-10-26_at_2.32.53_PM.png" className="border" />
 
 2. If there's no "reporting user", **create** one. **Designate** it as "Report service user".
 3. **Save** the password generated under “Server Settings” >> “Authentication” >> “Basic auth” prior to saving changes, or you will need to regenerate the password.
 4. Enter the credentials in Recurly under "REPORTS USERNAME" and "REPORTS PASSWORD".
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0ad6c72-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/0ad6c72-image.png" className="border" />
 
 ### **Subscribing to the payment accounting report for ACH**
 
 1. In Adyen, **go** to Reports. In the "Finance" section, click on “Payment Accounting" and then “Manage report”. You will see “Automatic (generate on a schedule)” set to Off if you have never enabled it.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/d471c36-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/d471c36-image.png" className="border" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f40b511-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/f40b511-image.png" className="border" />
 
 2. **Select** "Automatic" and toggle automatic generation to “On” and set the file type as CSV. Click the ‘X’ to close the dialogue box.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/cbce972-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/cbce972-image.png" className="border" />
 
 3. If you **click** “Manage report” again, you can **confirm** that the report is now automatically generated.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/667dc93-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/667dc93-image.png" className="border" />
 
 ### **Configuring Adyen notifications for Recurly**
 
@@ -384,7 +384,7 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 2. **Click** “+ Webhook” using the upper-right blue button.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/99e16dc-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/99e16dc-image.png" className="border" />
 
 3. **Add** these 4 webhook types: Direct-Debit Pending, Generic Pending, Recurring Token Lifecycle events, and Standard webhook.
    1. Double-check that you have enabled the following event codes:
@@ -431,7 +431,7 @@ If you are using Protect Premium or Revenue Protect with Adyen, we support sendi
   * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
   * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
 * **Acquisition Date**
-  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
+  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired\_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
 
 Some limitations include:
 
