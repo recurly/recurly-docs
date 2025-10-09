@@ -39,7 +39,7 @@ These gateways allow you to accept payments in any currency within Recurly:
 <Image align="center" border={false} src="https://files.readme.io/6fb1bfb995b6d992d1869d03bc8d0de195bf3b3e64418cc208a097abb5b0fafb-Screenshot_2025-07-29_at_4.11.19_PM.png" />
 
 * **[Stripe](stripe)**: You must specifically be using **Stripe Elements**, and make use of Stripe's Financial Connections platform to pre-verify bank account details using Plaid.
-* **[WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/)**: You can use Recurly.js, our APIs, or other ACH supported mechanism. WorldPay's integration automatically supports pre-verification when a bank account is provided to Recurly. Bank accounts that are already stored will not be subject to verification again.
+* **[WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/)**: You can use Recurly.js, our APIs, or other ACH supported mechanism. WorldPay's integration automatically supports pre-verification when a bank account is provided to Recurly. Bank accounts that are already stored will not be subject to verification again on the same Recurly site.
 
 ## Gateways requiring pre-verification externally
 
