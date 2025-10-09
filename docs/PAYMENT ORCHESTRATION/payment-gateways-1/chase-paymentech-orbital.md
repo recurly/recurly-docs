@@ -21,6 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Limitations
 
 * Only supported via the Stratus/Salem platform. Tampa merchant accounts are not supported.
+* Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, or are making transaction actions at the gateway, there is risk that Recurly and the gateway could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
 
 # Definition
 
@@ -82,9 +83,9 @@ Recurly extends support for **China UnionPay** through the Chase Orbital gateway
 
 * Click **Add Gateway** and select the icon for **Chase**.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/bc89bf8-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/bc89bf8-image.png" className="border" />
 
-* In the 'Credentials' section, enter your **Username**, and **Password** obtained from Chase in Step 3. You may optionally also provide: 
+* In the 'Credentials' section, enter your **Username**, and **Password** obtained from Chase in Step 3. You may optionally also provide:
   * JPMPP Merchant ID
   * JPMPP Username
   * JPMPP Password
@@ -94,7 +95,7 @@ Recurly extends support for **China UnionPay** through the Chase Orbital gateway
 * Within the Chase Paymentech Orbital gateway configuration in Recurly, enable the specific **currencies** and **card brands** you would like to support. If you would like to support Google Pay, it can be selected under Alternative Payment Methods.
 * For each additional currency provided, you must enter your Merchant ID associated with that currency. You can enter your Merchant ID under the header ‘Merchant IDs for Selected Currencies’ in the Accepted Currencies section.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/280b6d8-image.png" />
+<Image align="center" border={true} width="50% " src="https://files.readme.io/280b6d8-image.png" className="border" />
 
 ### Step 6: Mark gateway as enabled
 
@@ -115,7 +116,7 @@ Recurly extends support for **China UnionPay** through the Chase Orbital gateway
 
 ### Step 10: Partial AVS validations
 
-* On one-time transactions and subscription sign ups, Customers should enter their full and correct Billing Address. However, sometimes customers make mistakes and in other scenarios, the transaction may be fraudulent. In these cases, to fully protect your business against potential fraud, Recurly has introduced a setting to enable automatically rejecting (voiding) transactions where the Address Verification code received from Chase is not a **full** match. 
+* On one-time transactions and subscription sign ups, Customers should enter their full and correct Billing Address. However, sometimes customers make mistakes and in other scenarios, the transaction may be fraudulent. In these cases, to fully protect your business against potential fraud, Recurly has introduced a setting to enable automatically rejecting (voiding) transactions where the Address Verification code received from Chase is not a **full** match.
 * Enabling this setting will only take effect if you have also enabled the Address Verification Check in Payment Settings. Address Verification Check by itself will also protect you but will only reject (void) transactions if the AVS code indicated a full mismatch (both Address and Zip Code did not match).
 * Transactions rejected by AVS Checks will appear as declines in reporting.
 
