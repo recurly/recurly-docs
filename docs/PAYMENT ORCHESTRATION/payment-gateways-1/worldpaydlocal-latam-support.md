@@ -32,7 +32,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 * For **Direct Debit** processing:
   * An active Recurly account with Euros (EUR) currency support for SEPA, and/or USD for ACH support.
   * WorldPay payment gateway configured for SEPA / EUR and mandate tokenization support.
-  * WorldPay NACHA pre-verification check enabled for ACH / USD compliance. 
+  * WorldPay NACHA pre-verification check enabled for ACH / USD compliance.
 
 ### Limitations
 
@@ -222,7 +222,9 @@ Leveraging the WorldPay global gateway for your business involves a streamlined 
    * Within your WorldPay gateway settings in Recurly, find and toggle on the option to accept payments through Tarjeta Naranja.
 4. **Enable SEPA if applicable**
    1. Ensure you have EUR currency enabled on your site, at WorldPay, and in the gateway configuration.
-5. **Establish commercial relationships**
+5. **Enable ACH if applicable**
+   1. Ensure you have USD currency enabled on your site, at WorldPay, and in the gateway configuration. You also need to ensure you have NACHA verification and fraud flows enabled at WorldPay.
+6. **Establish commercial relationships**
    * Set up commercial relationships with both WorldPay and either Ebanx or dLocal. If necessary, contact [partnerships@recurly.com](mailto:partnerships@recurly.com) for introductions.
 
 ### Settings on the Gateway Side
