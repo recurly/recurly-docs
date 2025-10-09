@@ -47,7 +47,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 | Card on File Supported          | Yes                                                                                                                                                                                                                                                                                                                           |
 | Regions                         | Global                                                                                                                                                                                                                                                                                                                        |
 | Currencies                      | <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available.</a> with special behavior for **ISK** and **CLP**. We do not support **IDR** and **CVE**.                                                                                                                                  |
-| Gateway Features                | [Network Token usage](https://docs.recurly.com/docs/adyen#/adyen-network-tokens) awareness (see notes), [Revenue Protect / Protect Premium](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)                                                                                                            |
+| Gateway Features                | [Network Token usage](https://docs.recurly.com/docs/adyen#/adyen-network-tokens) usage awareness (see notes), [Revenue Protect / Protect Premium](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium)                                                                                                      |
 
 # Setting up Adyen with Recurly
 
@@ -417,7 +417,7 @@ This indicator will appear as a boolean value in the new 'Third Party Network To
 
 If you do not have Adyen Network tokens enabled with the gateway, you will always see 'False' for the value. If you have Adyen Network Tokens enabled in your gateway, you will see 'True' when a network token was used on a given transaction, and 'false' when the raw PAN / Card Data was used for the transaction.
 
-For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems.
+For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems. Keep in mind, Adyen only use Network Tokenization on tokenized payment methods. Recurly only supports tokenizing cards when using Adyen Web Components via Recurly.js.
 
 ### Revenue Protect + Protect Premium
 
@@ -431,7 +431,7 @@ If you are using Protect Premium or Revenue Protect with Adyen, we support sendi
   * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
   * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
 * **Acquisition Date**
-  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired\_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
+  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
 
 Some limitations include:
 
