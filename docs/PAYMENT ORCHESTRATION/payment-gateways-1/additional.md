@@ -1,7 +1,7 @@
 ---
-title: Supported credit card gateways
+title: Supported credit card gateways (DEPRECATED)
 excerpt: ''
-deprecated: false
+deprecated: true
 hidden: true
 metadata:
   title: ''
