@@ -22,6 +22,11 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 CyberSource is a full-service payment management platform. When configured with Recurly, it allows you to securely manage your transactions. You will need a CyberSource Merchant ID and a Transaction Security Key for the SOAP Toolkit API to enable this integration.
 
+## Limitations
+
+* Recurly does not support gateway level fraud services.
+* Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, or are making transaction actions at the gateway, there is risk that Recurly and the gateway could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
+
 # Key details
 
 <Table>
@@ -152,7 +157,7 @@ This is essential as it determines how transactions are handled between Recurly,
 
 * Log into your business center account, and navigate to **Payment Configuration → Key Management** and select **Generate Key** and choose “SOAP Toolkit API” within your CyberSource dashboard.
 * Click on **Download Key** to create a new Key. If you are asked for a password, this will be your Merchant ID.
-* Copy the new key generated *before* leaving the page. You will need this key to connect CyberSource with Recurly.
+* Copy the new key generated _before_ leaving the page. You will need this key to connect CyberSource with Recurly.
 
 > 📘 P12 requirements on Cybersource
 >
@@ -160,7 +165,7 @@ This is essential as it determines how transactions are handled between Recurly,
 >
 > You are required to remove username and password-based authentication from your SOAP toolkit integration, and transition to certificate-based authentication, by these dates:
 >
-> Sandbox environment: \*\* September 1, 2025\*\*
+> Sandbox environment: ** September 1, 2025**
 >
 > Production environment:  **September 15, 2025**
 
@@ -217,6 +222,6 @@ This is essential as it determines how transactions are handled between Recurly,
 
 ### Step 12: Go live
 
-* After testing, if everything is working as expected, you are ready to accept live payments through the CyberSource gateway via Recurly.\
+* After testing, if everything is working as expected, you are ready to accept live payments through the CyberSource gateway via Recurly.
   **Pro Tip:** Keep your CyberSource credentials secure and ensure only authorized personnel have access to this information. Regularly review and regenerate your SOAP Toolkit Keys for added security.
-  *Please note:* Always consult with your CyberSource account representative or support resources to ensure that your account is in good standing and that you are compliant with all relevant regulations and requirements.
+  _Please note:_ Always consult with your CyberSource account representative or support resources to ensure that your account is in good standing and that you are compliant with all relevant regulations and requirements.
