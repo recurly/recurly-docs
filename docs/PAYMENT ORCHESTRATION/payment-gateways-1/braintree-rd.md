@@ -20,7 +20,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-Braintree restricts usage of its gateway to certain business types. If your business is on the list of restricted business models described on Braintree’s <a href="https://www.braintreepayments.com/legal/acceptable-use-policy" target="_blank">Acceptance Use Policy</a>, you will not be able to use the Braintree gateway.
+* Braintree restricts usage of its gateway to certain business types. If your business is on the list of restricted business models described on Braintree’s <a href="https://www.braintreepayments.com/legal/acceptable-use-policy" target="_blank">Acceptance Use Policy</a>, you will not be able to use the Braintree gateway.
+* Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, gateway tokens, or are making transaction actions at the gateway, there is risk that Recurly and Braintree could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
 
 # Definition
 
@@ -69,7 +70,7 @@ Additionally, there are two mutually-exclusive settings that need enabling, one 
    2. Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should_not_ be enabled prior to the setting at Braintree** to avoid payment failures.
 2. **Card Verification**: this setting can be enabled in your Braintree control panel to ensure all vaulted cards are being verified prior to entering into the Braintree Vault. See an image of this setting below.
 
-<Image align="center" src="https://files.readme.io/681d369645a07ae29f6a77ea7353288b5417a3641d99540622a318784d53c8af-Screenshot_2024-11-12_at_3.52.41_PM.png" />
+<Image align="center" border={false} src="https://files.readme.io/681d369645a07ae29f6a77ea7353288b5417a3641d99540622a318784d53c8af-Screenshot_2024-11-12_at_3.52.41_PM.png" />
 
 Enabling this feature flag does not disable 3DS through purchase routes, it only enables it through verification flows. However, this flag **should_not_ be enabled prior to the setting at Braintree** to avoid payment failures.
 
