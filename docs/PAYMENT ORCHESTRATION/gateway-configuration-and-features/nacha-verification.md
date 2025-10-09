@@ -36,9 +36,10 @@ These gateways allow you to accept payments in any currency within Recurly:
 
 * **[Adyen](adyen)**: You must enable **Giact** with your Adyen account and ensure you have enabled the feature within your gateway configuration on Recurly.
 
-<Image align="center" src="https://files.readme.io/6fb1bfb995b6d992d1869d03bc8d0de195bf3b3e64418cc208a097abb5b0fafb-Screenshot_2025-07-29_at_4.11.19_PM.png" />
+<Image align="center" border={false} src="https://files.readme.io/6fb1bfb995b6d992d1869d03bc8d0de195bf3b3e64418cc208a097abb5b0fafb-Screenshot_2025-07-29_at_4.11.19_PM.png" />
 
 * **[Stripe](stripe)**: You must specifically be using **Stripe Elements**, and make use of Stripe's Financial Connections platform to pre-verify bank account details using Plaid.
+* **[WorldPay](https://docs.recurly.com/recurly-subscriptions/docs/worldpaydlocal-latam-support#/)**: You can use Recurly.js, our APIs, or other ACH supported mechanism. WorldPay's integration automatically supports pre-verification when a bank account is provided to Recurly. Bank accounts that are already stored will not be subject to verification again.
 
 ## Gateways requiring pre-verification externally
 
@@ -48,7 +49,7 @@ These gateways allow you to accept payments in any currency within Recurly:
 
 ### Suggested flow for external verifications
 
-You may use an external provider for any of our ACH supported gateways (excluding Stripe) to verify bank accounts prior to adding billing information to the Recurly platform. General best practices including verifying any *new* bank account information provided to you by a consumer, so that you can verify it is usable for a WEB (online) transaction.
+You may use an external provider for any of our ACH supported gateways (excluding Stripe) to verify bank accounts prior to adding billing information to the Recurly platform. General best practices including verifying any _new_ bank account information provided to you by a consumer, so that you can verify it is usable for a WEB (online) transaction.
 
 The direct language from the mandate, effective March 2021, is as follows:
 
