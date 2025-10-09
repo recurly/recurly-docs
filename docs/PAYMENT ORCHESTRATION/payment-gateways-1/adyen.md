@@ -51,7 +51,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 
 # Setting up Adyen with Recurly
 
-> 📘 Ensure Adyen Settings are set properly:
+> 📘 Ensure Adyen Settings are set properly
 >
 > Two features are necessary to ask Adyen Support to set properly:
 >
