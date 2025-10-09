@@ -24,7 +24,7 @@ CyberSource is a full-service payment management platform. When configured with 
 
 ## Limitations
 
-* Recurly does not support gateway level fraud services.
+* Recurly does not support gateway level Fraud Management behaviors.
 * Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, or are making transaction actions at the gateway, there is risk that Recurly and the gateway could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
 
 # Key details
