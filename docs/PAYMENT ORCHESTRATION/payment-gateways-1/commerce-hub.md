@@ -24,6 +24,10 @@ Commerce Hub is a full-service payment management platform, developed by Fiserv 
 
 * Ensure your Commerce Hub Merchant Account is set up to support "Multi-Use Public Key Encryption (MUPK)", and that it's set to recycle every 10 days at least. This is not enabled by default.
 
+## Limitations
+
+* Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, or are making transaction actions at the gateway, there is risk that Recurly and the gateway could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
+
 # Key details
 
 | Feature                         | Description                                                                                                                                                                                         |
@@ -84,14 +88,14 @@ You may already have a Fiserv Corporate Merchant account where Merchant ID acces
 
 Click on Credentials, and ensure your existing Merchant IDs are present if you are migrating from First Data or Payeezy. If you do not see your Merchant IDs, add them using the ‘Add Merchant ID’ button.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6beec713ce23e2045a422037bdd9856d1bc00fba79580dbcdd9263db26ee6f7e-Add_Merchant_ID_Step_1.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/6beec713ce23e2045a422037bdd9856d1bc00fba79580dbcdd9263db26ee6f7e-Add_Merchant_ID_Step_1.png" className="border" />
 
 You will need an **Access code** from Fiserv to add Production Merchant IDs.
 
 * To add a Production MID, **ensure you select** the ‘Production’ Environment when adding a Merchant ID. You will not need a ‘Certification’ MID.
 * To add a Sandbox Merchant ID, **simply click** ‘Add Merchant ID’ and **select** ‘Create new Sandbox Merchant Id’ and follow the prompts.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d55d2e81ab2674a345d10ab92633880734f72cc124bbdd030f8fab0502d8a936-Add_Merchant_ID_Step_2_-_Access_Code.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/d55d2e81ab2674a345d10ab92633880734f72cc124bbdd030f8fab0502d8a936-Add_Merchant_ID_Step_2_-_Access_Code.png" className="border" />
 
 #### Create API Key(s)
 
@@ -100,11 +104,11 @@ API Keys for Commerce Hub are per Merchant ID. You may have API keys for a sandb
 1. **Click** ‘Add API Key’.
 2. **Select** the Merchant ID from the available dropdown.
 3. **Name** the API Key – example: Recurly-Sandbox, or Recurly-Production
-4. API key names must include letters, numbers, "\_", and "-" only.
+4. API key names must include letters, numbers, "_", and "-" only.
 5. **Check** All Features.
 6. **Click** ‘Add Key’.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5851e1561b0333b8968e438191d8d25249230646e28fdc1ef57557ce20073984-Add_API_Key.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/5851e1561b0333b8968e438191d8d25249230646e28fdc1ef57557ce20073984-Add_API_Key.png" className="border" />
 
 Once your API Key is successfully added, a pop up modal will appear on the page. Do NOT navigate away. You must collect certain details from this pop up modal including:
 
