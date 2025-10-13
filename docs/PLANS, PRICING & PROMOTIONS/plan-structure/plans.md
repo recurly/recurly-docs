@@ -87,7 +87,7 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 <Image align="center" border={false} width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
 
-* **Price segments**: Define different price points for your customer segments.  The Price and Price Segment Code can be used in our APIs and [Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/) to help you show the right price for the right subscriber.  Note that there is no limit to the number of price segments per currency or per plan!
+* **Price segments**: Define different price points for your customer segments.  The Price and Price Segment Code can be used in our [APIs](https://recurly.com/developers/api/v2021-02-25/index.html) and [Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/) to help you show the right price for the right subscriber.  Note that there is no limit to the number of price segments per currency or per plan!
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/0b6dafa93b032bc950f42ac7fd45158081101333cfb9526155d3b48a1d329fc3-priceSegments.png" className="border" />
 
