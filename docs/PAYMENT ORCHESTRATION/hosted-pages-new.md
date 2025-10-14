@@ -1,7 +1,7 @@
 ---
 title: 'Hosted Pages New '
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
