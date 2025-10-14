@@ -8,10 +8,6 @@ deprecated: false
 hidden: false
 metadata:
   title: Checkout
-  description: >-
-    Explore Recurly Checkout: Streamline your customers' payment experience with
-    customizable styles, hostnames, and configurations. Get started easily and
-    engage effectively.
   robots: index
 ---
 # Overview
