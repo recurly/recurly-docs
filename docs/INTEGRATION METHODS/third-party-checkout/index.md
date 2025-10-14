@@ -1,8 +1,8 @@
 ---
-title: 'Third Party Checkout: Stripe and Adyen'
+title: 'Third Party Checkout: Stripe Payment Elements'
 excerpt: >-
-  Enable a broad array of payment methods from Stripe and Adyen without leaving
-  your Recurly-powered storefront.
+  Enable a broad array of payment methods from Stripe without leaving your
+  Recurly-powered storefront.
 deprecated: false
 hidden: false
 metadata:
