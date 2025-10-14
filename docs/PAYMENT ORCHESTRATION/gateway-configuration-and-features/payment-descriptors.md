@@ -30,6 +30,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * **Braintree** prefixes must be 3, 7, or 12 characters, and may be modified from your set DBA.
 
+* **Braintree** support is limited to cards.
+
 * If utilizing **Stripe**, your merchant prefix is configured directly within Stripe and cannot be modified via descriptors within Recurly. Only the suffix (Plan Name or Invoice Description) is sent to Stripe.
 
 * While Recurly can send dynamic descriptors to a given gateway, Gateways may not pass descriptors on to the network as well as Issuers have final say on descriptor support. Reach out to your gateway to inquire about their descriptor support for your merchant account specifically.
