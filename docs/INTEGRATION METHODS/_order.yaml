@@ -1,6 +1,7 @@
 - integration-paths
 - api-keys
 - recurlyjs
+- stripe-payment-elements
 - third-party-checkout-int
 - webhooks
 - native-mobile-sdks
