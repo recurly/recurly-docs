@@ -18,7 +18,7 @@ metadata:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly subscription plan. Test.
+This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Prerequisites & limitations
 
