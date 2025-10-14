@@ -28,8 +28,9 @@ To get started with Compass Assistant, click the sparkles on the bottom right of
 
 You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
 
-<iframe src="https://fast.wistia.net/embed/iframe/w9q7umxwhk?web_component=true&seo=false&videoFoam=false" title="CompassAssistantIntro Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="360px"></iframe>
-<script src="https://fast.wistia.net/player.js" async></script>
+<iframe src="https://fast.wistia.net/embed/iframe/w9q7umxwhk?web_component=true&seo=false&videoFoam=false" title="CompassAssistantIntro Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="360px" />
+
+<script src="https://fast.wistia.net/player.js" async />
 
 Compass assistant can help you find your way to find the Recurly products you need or the information you need with record search and conversational navigation.
 
@@ -45,13 +46,13 @@ Compass assistant can help you find your way to find the Recurly products you ne
 
 Compass Assistant now has agentic AI to steamline you Recurly experience by providing the resources and information you need to create or modify plans, add-ons, and items.
 
-<iframe src="https://recurly-3.wistia.com/medias/i793ouxzm1" title="Compass Assistant Intro" />
+<iframe src="https://fast.wistia.net/embed/iframe/i793ouxzm1?web_component=true&seo=false&videoFoam=false" title="CompassAssistantIntro Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="360px" />
 
 # Code
 
 Compass Assistant is ready to code and knows Recurly's APIs. Code examples, available code libraries, parameters, and more are provided by Compass Assistant to get code running.
 
-<iframe src="https://recurly-3.wistia.com/medias/21c7i52czs" title="Compass Assistant Intro" />
+<iframe src="https://fast.wistia.net/embed/iframe/21c7i52czs?web_component=true&seo=false&videoFoam=false" title="CompassAssistantIntro Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="360px" />
 
 # Get support
 
