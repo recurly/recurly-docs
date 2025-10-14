@@ -14,7 +14,7 @@ metadata:
 next:
   description: ''
 ---
-# Definition
+# Definition 
 
 Recurly's Hosted Pages offer a set of out-of-the-box solutions, designed for quick deployment with minimal development intervention. With tools like [Checkout ](https://docs.recurly.com/docs/checkout)(**new**), Hosted Payment Pages and Hosted Account Management, businesses can provide their customers with seamless subscription sign-up experiences, purchase capabilities, and account management portals.
 
