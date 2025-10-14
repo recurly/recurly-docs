@@ -24,9 +24,9 @@ Compass Assistant is a network of agents, sub agents and tools that can be reach
 
 # Get answers
 
-To get started with Compass Assistant, click the sparkles on the bottom right of your Recurly site.
+<Image align="left" border={false} src="https://files.readme.io/f06509a783ea3a05f9755df8e32b6266ecc36d9ed0d54530834b908b65aa87df-image.png" />
 
-<Image align="center" border={false} src="https://files.readme.io/f06509a783ea3a05f9755df8e32b6266ecc36d9ed0d54530834b908b65aa87df-image.png" />
+To get started with Compass Assistant, click the sparkles on the bottom right of your Recurly site.
 
 You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
 
