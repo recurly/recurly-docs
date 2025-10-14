@@ -20,7 +20,19 @@ All users must have permissions within a site that has the Compass Assistant Cha
 
 # Definition
 
-Find exactly what you need, fast. The in-app conversational search feature puts key Recurly resources at your fingertips.
+Compass Assistant is a network of agents, sub agents and tools that can be reached through a unified chat interface within Recurly. Find exactly what you need, fast. The in-app conversational search feature puts key Recurly resources at your fingertips.
+
+# Get answers
+
+<Image align="left" border={false} src="https://files.readme.io/f06509a783ea3a05f9755df8e32b6266ecc36d9ed0d54530834b908b65aa87df-image.png" />
+
+To get started with Compass Assistant, click the sparkles on the bottom right of your Recurly site.
+
+You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
+
+<iframe src="https://recurly-3.wistia.com/medias/w9q7umxwhk" title="Compass Assistant Intro" />
+
+Compass assistant can help you find your way to find the Recurly products you need or the information you need with record search and conversational navigation.
 
 **Search across:**
 
@@ -30,17 +42,23 @@ Find exactly what you need, fast. The in-app conversational search feature puts 
 * Code snippets
 * Records including: subscriptions, plans, accounts, transactions, invoices, gift cards, items, and users.
 
-<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/ec5c613f3321ee803a665ac59bf4d0894e15cdd92cbbf28872bd1bb52a58e512-zeroState.png" />
+# Take action
 
-<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/c597ca729e37c5e28bb636e3e5bb7ab4b6c3859b5f496dd7fcdb68782ad565e8-example1.png" />
+Compass Assistant now has agentic AI to steamline you Recurly experience by providing the resources and information you need to create or modify plans, add-ons, and items.
 
-<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/c808731cbe8a6bee46429730ee41b90a359bbcb8aef86c850befa38b6ef3f048-api1.png" />
+<iframe src="https://recurly-3.wistia.com/medias/i793ouxzm1" title="Compass Assistant Intro" />
 
-<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/d6dc5be6516a837c3b27c8830bd9f14d21e0aac84d7ec9ea90b5f15a56d1de5c-api2.png" />
+# Code
+
+Compass Assistant is ready to code and knows Recurly's APIs. Code examples, available code libraries, parameters, and more are provided by Compass Assistant to get code running.
+
+<iframe src="https://recurly-3.wistia.com/medias/21c7i52czs" title="Compass Assistant Intro" />
+
+# Get support
 
 Compass Assistant will also detect when you want to help from our Support team or you can always click _**Chat with Support**_.
 
-<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" />
+<Image align="center" border={true} width="30% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" className="border" />
 
 # FAQs
 
