@@ -209,7 +209,7 @@ If you choose to use your own account management site, you will need to provide 
 
 ### Currencies
 
-Choose the currencies that you want to make available in this particular checkout.  Note that only your site's enabled currencies will be available to choose from.
+Choose the currencies that you want to make available in this particular checkout.  **Note:** While all of your site's enabled currencies will be available, price segments are not.
 
 * Only plans that match the selected currencies will be available to choose from when selecting a plan from the _Add Subscription_ dropdown.
 * By default, your default site currency is added. Or, if all currencies are removed, it will default to the default site currency.
