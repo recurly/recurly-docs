@@ -32,18 +32,7 @@ You can get started with example prompts for common use cases or ask something e
 
 <div className="wistia_responsive_padding" style={{padding: '170.0% 0 0 0', position: 'relative'}}>
   <div className="wistia_responsive_wrapper" style={{height: '100%', left: 0, position: 'absolute', top: 0, width: '100%'}}>
-    <iframe 
-      src="https://fast.wistia.net/embed/iframe/w9q7umxwhk?seo=true&videoFoam=true" 
-      title="CompassAssistantIntro Video" 
-      allow="autoplay; fullscreen" 
-      allowTransparency="true" 
-      frameBorder="0" 
-      scrolling="no" 
-      className="wistia_embed" 
-      name="wistia_embed" 
-      width="100%" 
-      height="100%"
-    />
+    <iframe src="https://fast.wistia.net/embed/iframe/w9q7umxwhk?seo=true&videoFoam=true" title="CompassAssistantIntro Video" allow="autoplay; fullscreen" allowTransparency="true" frameBorder="0" scrolling="no" className="wistia_embed" name="wistia_embed" width="100%" height="100%" />
   </div>
 </div>
 
@@ -73,7 +62,7 @@ Compass Assistant is ready to code and knows Recurly's APIs. Code examples, avai
 
 Compass Assistant will also detect when you want to help from our Support team or you can always click _**Chat with Support**_.
 
-<Image align="center" border={true} width="30% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" className="border" />
+<Image align="center" border={true} width="50% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" className="border" />
 
 # FAQs
 
