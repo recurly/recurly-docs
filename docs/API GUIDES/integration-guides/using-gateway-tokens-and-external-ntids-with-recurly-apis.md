@@ -27,10 +27,10 @@ You may be reading this guide due to a recent migration from a different payment
 
 External payment implementations can capture customer data through a physical payment terminal and then integration to Recurly to send the resulting gateway token and Network Transaction ID via API for future renewals.
 
-Before continuing with this guide, it’s recommended that you have completed the Quickstart Guide first.\
+Before continuing with this guide, it’s recommended that you have completed the Quickstart Guide first.
 In this guide, we’ll be using the Accounts and Subscription endpoints of Recurly API, powerful endpoints designed to back signup and onboarding experiences. With these endpoints, you have the flexibility to create accounts and subscriptions with an external NTID for a future dated renewal.
 
-A subscription request can contain several different resources, but we’ll focus on the account references, gateway\_token, gateway\_code and network\_transaction\_id  parameters in this guide.
+A subscription request can contain several different resources, but we’ll focus on the account references, gateway_token (legacy), gateway_code and network_transaction_id  parameters in this guide. Since `gateway_code` may be deprecated in the future, using `payment_gateway_references.token` is preferred.
 
 ## Limitations
 
@@ -59,15 +59,15 @@ For customers who are integrated with a Point of Sale system with a supported ga
 
 | Parameter                    | Description                                                                                                                                                                                                                       |
 | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `billing_info.gateway_token` | **String**. Child of billing\_info. An identifier for the given gateway’s payment method token. Must be used in conjunction with gateway\_code and in some cases account\_reference and network\_transaction\_id.                 |
-| `billing_info.gateway_code`  | **String**. Child of billing\_info. An identifier for a specific payment gateway. Must be used in conjunction with `gateway_token`.                                                                                               |
+| `billing_info.gateway_token` | **String**. Child of billing_info. An identifier for the given gateway’s payment method token. Must be used in conjunction with gateway_code and in some cases account_reference and network_transaction_id.                      |
+| `billing_info.gateway_code`  | **String**. Child of billing_info. An identifier for a specific payment gateway. Must be used in conjunction with `gateway_token`.                                                                                                |
 | `billing_info_id`            | **String**. Billing Info ID for the account.                                                                                                                                                                                      |
 | `network_transaction_id`     | **String**. The network transaction ID associated with the subscription or billing information (token) where required. Must be passed in when using a gateway that does not handle NTIDs on their own when using a gateway token. |
 | `starts_at`                  | **String**. Date/time of the future renewal. This field is incredibly important. If omitted, a transaction will be attempted.                                                                                                     |
 
 ## Step 2: Create an Account and Store Billing Info ID
 
-Next, we’ll make a request to the accounts endpoint, passing in the customer account and billing information (using the gateway token from above). Learn more about accounts in our dedicated documentation.\
+Next, we’ll make a request to the accounts endpoint, passing in the customer account and billing information (using the gateway token from above). Learn more about accounts in our dedicated documentation.
 It’s recommended, at this point, to store the billing info ID for the next step.
 
 ```json
