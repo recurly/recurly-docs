@@ -30,7 +30,10 @@ To get started with Compass Assistant, click the sparkles on the bottom right of
 
 You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
 
-https://recurly-3.wistia.com/medias/w9q7umxwhk?embedType=iframe&seo=false&videoFoam=true&videoWidth=640
+<iframe src="https://fast.wistia.net/embed/iframe/w9q7umxwhk?seo=false&videoFoam=false" title="CompassAssistantIntro Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="640" height="360"></iframe>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+
+
 
 <Embed url="https://fast.wistia.net/embed/iframe/w9q7umxwhk?videoFoam=true" href="https://fast.wistia.net/embed/iframe/0s2pmreg12?videoFoam=true" typeOfEmbed="iframe" height="640px" width="360px" iframe="true" />
 
