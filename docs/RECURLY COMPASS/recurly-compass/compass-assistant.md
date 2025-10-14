@@ -30,7 +30,7 @@ To get started with Compass Assistant, click the sparkles on the bottom right of
 
 You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
 
-<Embed url="https://fast.wistia.net/embed/iframe/w9q7umxwhk?videoFoam=true" href="https://fast.wistia.net/embed/iframe/0s2pmreg12?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800px" iframe="true" />
+<Embed url="https://fast.wistia.net/embed/iframe/w9q7umxwhk?videoFoam=true" href="https://fast.wistia.net/embed/iframe/0s2pmreg12?videoFoam=true" typeOfEmbed="iframe" height="640px" width="360px" iframe="true" />
 
 Compass assistant can help you find your way to find the Recurly products you need or the information you need with record search and conversational navigation.
 
