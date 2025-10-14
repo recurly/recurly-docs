@@ -2,6 +2,7 @@
 - api-keys
 - recurlyjs
 - stripe-payment-elements
+- adyen-web-components
 - third-party-checkout-int
 - webhooks
 - native-mobile-sdks
