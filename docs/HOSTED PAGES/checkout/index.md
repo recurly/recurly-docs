@@ -109,13 +109,13 @@ Checkout provides the recommended payment method and currency based on the user 
 
 1. To begin, **navigate** to Configuration → Checkout.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/48e3c6088219a15700b9943ea518f755c87844784511d3996c4ff992dd1b0eb7-checkoutHome.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/48e3c6088219a15700b9943ea518f755c87844784511d3996c4ff992dd1b0eb7-checkoutHome.png" className="border" />
 
 The configuration page offers flexibility with 3 main areas to modify the Checkout configurations. Here you can create different sets of hostnames, modify configurations and styles to create different experiences for customers based on where they are coming from, different promotions, different products or brands.
 
 ## Hostname
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/abfd9979ab0f87762e21aa66a811d721ab9899ec019be8d06ba5894e46d4e956-hostname2.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/abfd9979ab0f87762e21aa66a811d721ab9899ec019be8d06ba5894e46d4e956-hostname2.png" className="border" />
 
 Use the Hostname to specify the locations where your customers will complete their purchases.
 
@@ -123,9 +123,9 @@ Use the Hostname to specify the locations where your customers will complete the
 
 #### Recurly-hosted domain
 
-The default hostname which is set up for you out of the box. Your checkout will be available at \<your-subdomain>.recurlycheckout.com.
+The default hostname which is set up for you out of the box. Your checkout will be available at `<your-subdomain>.recurlycheckout.com`.
 
-**Please note:** if your subdomain is changed, the Checkout URLs will still be set to the original subdomain that was configured and will not be updated. To update your Checkout pages, please contact [Support]().
+**Please note:** if your subdomain is changed, the Checkout URLs will still be set to the original subdomain that was configured and will not be updated. To update your Checkout pages, please contact [Support](support).
 
 #### Custom Checkout domain(s)
 
@@ -135,7 +135,7 @@ Note: there is no limit to the number of hostnames that can be configured for pr
 
 To create a new hostname, select **Create new Hostname**.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/71b0fb5650a90df387b74e8d90eac8a55c5c9d80621520a87121ddb10bb420df-hostname.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/71b0fb5650a90df387b74e8d90eac8a55c5c9d80621520a87121ddb10bb420df-hostname.png" className="border" />
 
 **Location details** - URL is where you specify the hostname location (domain and optional subdomain) where your customers will access your Checkouts..In order to use a custom domain:
 
@@ -166,7 +166,7 @@ Recurly will provision an SSL certificate for your custom domain. The provisioni
 
 Configuration is where you set up the products to sell and configure additional Checkout capabilities.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/215cf0c29ad49d10876d11887c91cf67cd28f64d4ac169b2ece4f1c90d7f790c-aboutThisConfig.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/215cf0c29ad49d10876d11887c91cf67cd28f64d4ac169b2ece4f1c90d7f790c-aboutThisConfig.png" className="border" />
 
 **About this configuration**
 
@@ -179,7 +179,7 @@ Note: there is no limit to the number of configurations that can be created.
 
 For the selected configuration, you are able to choose the style you wish to apply to this configuration To modify styles, see Styles section below.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e6debf576d86113b5772285cf3a0d74eea19d41ab137150f509ea4f974c4070e-appearanceBehaviors.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/e6debf576d86113b5772285cf3a0d74eea19d41ab137150f509ea4f974c4070e-appearanceBehaviors.png" className="border" />
 
 * **Cancellation URL** - If a cancellation URL is set, a back button will be added to your Checkout which will redirect users to this URL.
 * **Finish URL** - If a Finish URL is set, a link will be added to the bottom of the order confirmation page allowing your customers to proceed to this URL.
@@ -194,7 +194,7 @@ For the selected configuration, you are able to choose the style you wish to app
 
 These additional URL fields give you the flexibility to offer your subscribers the resources they may need to self-serve their subscription.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/76381dd290b6315e5bb35de3519a754a4ddcfef6ae8a47bd03428068bca7813b-agreements.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/76381dd290b6315e5bb35de3519a754a4ddcfef6ae8a47bd03428068bca7813b-agreements.png" className="border" />
 
 If you choose to use your own account management site, you will need to provide the URL.  Otherwise, you can use Recurly's Hosted Account Management page where an unique URL is generated for each account automatically.
 
@@ -205,7 +205,7 @@ If you choose to use your own account management site, you will need to provide 
 
 ## Cart
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d0f83848bb668fead95b017fa08cd867a818b144aed5b25a38e7fc813d74f677-cart.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/d0f83848bb668fead95b017fa08cd867a818b144aed5b25a38e7fc813d74f677-cart.png" className="border" />
 
 ### Currencies
 
@@ -229,7 +229,7 @@ The products your customer can purchase using this Checkout Configuration.
 
 ## Styles
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/f8ab4b4661c1f7e545519641681867e827b7b2095c763d9f6406cb21d4bbdfe8-style.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/f8ab4b4661c1f7e545519641681867e827b7b2095c763d9f6406cb21d4bbdfe8-style.png" className="border" />
 
 Customize the appearance of your checkout pages to match your brand identity. To begin, click edit on the starter style or click new style to create your own.
 
@@ -243,7 +243,7 @@ Customize the appearance of your checkout pages to match your brand identity. To
 
 Checkout Pages configuration allows you to mix and match different host names and configurations on the fly.
 
-<Image align="center" className="border" border={true} width="30% " src="https://files.readme.io/20ed25317da24f07409a5f7bc92887726bf511d3c5f59ce39671ae2cdf3a816b-checkoutPreview.png" />
+<Image align="center" border={true} width="30% " src="https://files.readme.io/20ed25317da24f07409a5f7bc92887726bf511d3c5f59ce39671ae2cdf3a816b-checkoutPreview.png" className="border" />
 
 **Select** a host name and a configuration, then click **View Checkout** to view your checkout page in real time.
 
@@ -255,7 +255,7 @@ Checkout includes a robust analytics dashboard where you can dive deep into Recu
 
 This chart outlines the new capabilities that Checkout offers, that were not available on HPP.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/46165ffb350940c995d866e523e27fd69a6c239c3b1774cd658ca9b97040e0f8-Screenshot_2024-10-30_at_8.24.29_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/46165ffb350940c995d866e523e27fd69a6c239c3b1774cd658ca9b97040e0f8-Screenshot_2024-10-30_at_8.24.29_PM.png" className="border" />
 
 # FAQs
 
