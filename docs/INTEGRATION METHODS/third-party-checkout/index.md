@@ -59,11 +59,11 @@ If you decide to use the Card Element instead of the Payment Element, you will b
 
 * **Payment Element**: As noted above, the Payment Element option is best for simplicity and flexibility, but you can choose the Card Element option if you wish. Read more about the comparison at Stripe’s documentation below:
 
-  * [Compare the Payment Element and Card Element | Stripe Documentation](https://stripe.com/docs/payments/payment-element#compare)
+  * <Anchor label="Compare the Payment Element and Card Element | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#compare">Compare the Payment Element and Card Element | Stripe Documentation</Anchor>
 
 * **Best Practices**: Follow Stripe’s Best Practices guide, as well as Recurly-specific configuration requirements.
 
-  * [Payment Element integration best practices | Stripe Documentation](https://stripe.com/docs/payments/payment-element#best-practices)
+  * <Anchor label="Payment Element integration best practices | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#best-practices">Payment Element integration best practices | Stripe Documentation</Anchor>
 
   * When using a payment method that requires mandates and legal terms, ensure you are choosing `auto` for payment options terms.
 
@@ -120,17 +120,17 @@ You can read more about Return URLs on Stripe’s Website on various pages. Recu
 
 Recurly will confirm payment and setup intent on your behalf. You do not need to do this on your own.
 
-* [Design an integration | Stripe Documentation](https://stripe.com/docs/payments/payment-element#design)
+* <Anchor label="Design an integration | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#design">Design an integration | Stripe Documentation</Anchor>
 
 ### External payment methods
 
 Recurly does not support Stripe’s External Payment Methods option – if you choose to support these methods in your Elements integration, these transactions and payment methods will not be accepted for payments or subscriptions on the Recurly platform.
 
-* [External payment methods | Stripe Documentation](https://stripe.com/docs/payments/payment-element#external-payment-methods)
+* <Anchor label="External payment methods | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#external-payment-methods">External payment methods | Stripe Documentation</Anchor>
 
 If you would like to add external invoices from a self-hosted integration to Recurly, you may do so using the External Invoices feature.
 
-* [Recurly Docs | External Invoices](https://docs.recurly.com/docs/using-app-management#/exports)
+* <Anchor label="Recurly Docs | External Invoices" target="_blank" href="https://docs.recurly.com/docs/using-app-management#/exports">Recurly Docs | External Invoices</Anchor>
 
 If you would like Recurly to support one of these External Payment Methods, please reach out to your Recurly Account manager and submit a feature request.
 
@@ -138,7 +138,7 @@ If you would like Recurly to support one of these External Payment Methods, plea
 
 Recurly suggests allowing Stripe to determine billing information collection dynamically, but you can modify this by customizing which billing information details you collect. See documentation below:
 
-* [Control billing details collection | Stripe Documentation](https://stripe.com/docs/payments/payment-element#billing-details)
+* <Anchor label="Control billing details collection | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#billing-details">Control billing details collection | Stripe Documentation</Anchor>
 
 By default, all fields are set to `auto`. This balances minimizing customer friction and maintaining optimal authorization rates. If you choose to set your Elements integration to `never`, you will need to collect and pass those details via the Recurly API fields instead.
 
@@ -148,8 +148,8 @@ Since your checkout will be handling much of the buyer consent and recollection 
 
 When building your Payment Element, ensure you have also set `setup_future_usage` to `off_session` to ensure the payment method created can be used for future transactions.
 
-* [Save and retrieve customer payment methods | Stripe Documentation](https://stripe.com/docs/payments/payment-element#save-payment-methods)
-* Setup Future Usage: [Create an Elements object without an Intent](https://stripe.com/docs/payments/payment-element#setup-future-usage)
+* <Anchor label="Save and retrieve customer payment methods | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#save-payment-methods">Save and retrieve customer payment methods | Stripe Documentation</Anchor>
+* Setup Future Usage: <Anchor label="Create an Elements object without an Intent" target="_blank" href="https://stripe.com/docs/payments/payment-element#setup-future-usage">Create an Elements object without an Intent</Anchor>
 
 Key information from this guide includes:
 
@@ -163,11 +163,11 @@ If this happens, `allow_redisplay` will appear in Confirmation Token retrievals 
 
 If your current integration with Stripe uses Payment Methods, see Stripe’s documentation for migrating to Confirmation Tokens here:
 
-* [Migrate to Confirmation Tokens | Stripe Documentation](https://stripe.com/docs/payments/payment-element#migrate)
+* <Anchor label="Migrate to Confirmation Tokens | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#migrate">Migrate to Confirmation Tokens | Stripe Documentation</Anchor>
 
 ### Stripe Messaging
 
-* [Payment Method Messaging Element | Stripe Documentation](https://stripe.com/docs/payments/payment-element#messaging)
+* <Anchor label="Payment Method Messaging Element | Stripe Documentation" target="_blank" href="https://stripe.com/docs/payments/payment-element#messaging">Payment Method Messaging Element | Stripe Documentation</Anchor>
 
 A consolidated list of parameters and our recommendations are below. We have not covered all Stripe documented Element options configuration available as, in those cases, they can be set based on your preferences.
 
@@ -188,8 +188,8 @@ If you need to calculate taxes or perform other pre-transaction activities, and 
 
 The confirmation Token contains information about the payment method selected during the checkout process, any billing and shipping information collected among other important details such as the `setup_future_usage` parameter. If this transaction is meant to offer recurring capabilities or if you need to reattempt a declined transaction, it should be set to `off_session`.
 
-* [Confirmation Token Documentation: The Confirmation Token object | Stripe API Reference](https://stripe.com/docs/api/confirmation_tokens/object)
-* [Retrieve a ConfirmationToken | Stripe API Reference](https://stripe.com/docs/api/confirmation_tokens/retrieve)
+* <Anchor label="Confirmation Token Documentation: The Confirmation Token object | Stripe API Reference" target="_blank" href="https://stripe.com/docs/api/confirmation_tokens/object">Confirmation Token Documentation: The Confirmation Token object | Stripe API Reference</Anchor>
+* <Anchor label="Retrieve a ConfirmationToken | Stripe API Reference" target="_blank" href="https://stripe.com/docs/api/confirmation_tokens/retrieve">Retrieve a ConfirmationToken | Stripe API Reference</Anchor>
 
 For tax calculation purposes, relevant information will be provided in this object:
 
@@ -232,7 +232,7 @@ Shipping details, if collected, are also in this response as below:
 
 ### Step 3: Create a Purchase Request
 
-To make a purchase using the Stripe Confirmation Token, you will provide it in a Recurly V3 API purchase request. In the example below, one subscription is generated using the plan code created in our [Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/).
+To make a purchase using the Stripe Confirmation Token, you will provide it in a Recurly V3 API purchase request. In the example below, one subscription is generated using the plan code created in our <Anchor label="Quickstart Guide" target="_blank" href="https://docs.recurly.com/v1.1/docs/quick-start-guide#/">Quickstart Guide</Anchor>.
 
 The following parameters are used specifically for this use-case.
 
@@ -277,7 +277,7 @@ This token can be provided to Recurly.js to unpack and direct your consumer to c
 
 After your consumer processes their payment with Cash App, Recurly.js will produce a `three_d_secure_action_result_token` which you may provide in a retry of your initial purchase call. See `Step 4` for more details on parsing the purchase response.
 
-See [Recurly.js Action Token documentation](https://docs.recurly.com/v1.2/docs/3d-secure#/) at our Developer Hub.
+See <Anchor label="Recurly.js Action Token documentation" target="_blank" href="https://docs.recurly.com/v1.2/docs/3d-secure#/">Recurly.js Action Token documentation</Anchor> at our Developer Hub.
 
 > 📘 Important:
 >
@@ -315,7 +315,7 @@ If the purchase was successful, you should now be able to access all associated 
 
 ### Next steps
 
-Now that you know how to create new [accounts](https://app.recurly.com/go/accounts), [subscriptions](https://app.recurly.com/go/subscriptions) and one-time payments, take a look at the [Subscription Management](https://recurly.com/developers/guides/manage-subscription.html) guide to learn more about how to manage the subscription changes after the initial purchase.
+Now that you know how to create new <Anchor label="accounts" target="_blank" href="https://app.recurly.com/go/accounts">accounts</Anchor>, <Anchor label="subscriptions" target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor> and one-time payments, take a look at the <Anchor label="Subscription Management" target="_blank" href="https://recurly.com/developers/guides/manage-subscription.html">Subscription Management</Anchor> guide to learn more about how to manage the subscription changes after the initial purchase.
 
 ### Using Recurly.js and Stripe Elements
 
@@ -331,8 +331,8 @@ Alongside these Recurly.js capabilities, Stripe Elements may be used solely to i
 
 To use Recurly.js and Elements on the same checkout, it is strongly recommended for you to use non-default Payment Method Configuration IDs (PMC ID) built within your Stripe Dashboard. You can create a non-default Payment Method Configuration ID in your dashboard with access to a subset of payment methods your Stripe Account already supports, and then add in the `pmc_id` to your Elements instance. This will restrict the payment method options that Stripe Elements displays to your customers, allowing Recurly.js to handle card flows, while Stripe handles APM flows, such as Cash App or Klarna.
 
-You can learn about how to set up a PMC in Stripe's documentation [here](https://docs.stripe.com/payments/payment-method-configurations).
+You can learn about how to set up a PMC in Stripe's documentation <Anchor label="here" target="_blank" href="https://docs.stripe.com/payments/payment-method-configurations">here</Anchor>.
 
-You can learn how to use a PMC ID in your Elements configuration [here](https://docs.stripe.com/js/elements_object/create_without_intent#stripe_elements_no_intent-options-paymentMethodConfiguration). You will use the `paymentMethodConfiguration`options parameter to specify your PMC ID within your Elements configuration.
+You can learn how to use a PMC ID in your Elements configuration <Anchor label="here" target="_blank" href="https://docs.stripe.com/js/elements_object/create_without_intent#stripe_elements_no_intent-options-paymentMethodConfiguration">here</Anchor>. You will use the `paymentMethodConfiguration`options parameter to specify your PMC ID within your Elements configuration.
 
 Please note, some APMs require the 'card' payment method enabled, which will require unique display modifications to Elements in order to avoid duplicate payment method display. Stripe Support is best suited to comment on how to avoid displaying the 'Card' element when using payment methods such as Apple Pay, Google Pay, and Link.
