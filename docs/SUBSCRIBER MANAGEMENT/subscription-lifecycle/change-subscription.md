@@ -78,6 +78,8 @@ Product modifications can be executed immediately, at the next billing date, or 
 ## Can be changed at bill date and term renewal
 
 * Plan
+* Price
+* Price Segment
 * Plan/Add-on Price
 * Plan/Add-on Quantity
 * Add or Remove Add-on
