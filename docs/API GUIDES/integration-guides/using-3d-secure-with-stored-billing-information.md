@@ -59,7 +59,7 @@ You can pre-verify card data in advance of in one of two ways depending on your 
 * With CVV: [Verify an account's credit card billing cvv](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info_cvv)
 * Without CVV: [Verify an account's credit card billing information](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_info)
 
-Once you've done this, if 3DS challenge is required, you will receive a `three_d_secure_action_token_id` as documented in the [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions). From here, follow the flows outlined in the [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions) to complete 3DS for re-verification.
+Once you've done this, if 3DS challenge is required, you will receive a `three_d_secure_action_token_id` as documented in the [3DS integration guide](https://docs.recurly.com/v1.1/docs/3d-secure-20-integration-guide#/versions). From here, follow the flows outlined in the [3DS integration guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure#/) to complete 3DS for re-verification.
 
 Use [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) to submit the 3DS action token and resubmit the verification using the action result token. Please note, that not all gateways support API only 3DS redirection. See below for special cases.
 
