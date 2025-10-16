@@ -51,6 +51,12 @@ Recurly also works with other token types in order to support complex payments s
 * Reduce PCI scope by ensuring sensitive data never touches your servers.
 * **Caveat:** these tokens are short‑lived and cannot be reused. Pass them to Recurly promptly to avoid expirations or failures.
 
+## Gateway Token Interoperability 
+
+* Gateway tokens are only useful on the gateway they originate from, for example: Stripe tokens can only be used on Stripe gateways, and will not function on Adyen.
+* Additionally, gateway tokens are typically limited to the specific gateway account they were created with, and generally cannot be used on other gateway accounts, even in the same family unless the gateway has a 'sharing' feature, such as Braintree. For example: The same Adyen token cannot be used on a different Adyen gateway account despite being from the same provider. **When using gateway tokens across different gateway_code values on Recurly, please ensure your tokens can be used on that gateway account.**
+* Gateway tokens sent without a gateway_code on an existing Account or Billing ID will default to the gateway_code they were added or first created with. For example, if you create a Stripe token on gateway_code '123456', and then use the Account ID to process a follow up payment, we will use that gateway code. If you want to use the token on a different gateway_code, please include it in your payload.
+
 ## When does Recurly tokenize?
 
 In some integrations Recurly will create and/or use tokens; in others, Recurly securely stores the payment instrument. Behavior varies by gateway and flow:
