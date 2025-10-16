@@ -52,7 +52,7 @@ Follow these steps to integrate Ebanx with Recurly. Ensure you use the correct s
 
 ## Step 1: Obtain Ebanx Credentials
 
-1. **Log in to your Ebanx Account**.
+1. **Log in to your Ebanx Account**. This will require you to engage with Ebanx and address any appropriate contracts/applicable fees separate from Recurly.
 
 * Switch your Ebanx Dashboard to **Production mode** for production keys.
 * Switch to **Sandbox mode** for sandbox keys.
@@ -70,7 +70,7 @@ Follow these steps to integrate Ebanx with Recurly. Ensure you use the correct s
 3. From the list, choose **Ebanx**.
 4. Paste your **Integration Key** into the “Integration Key” field.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/36f169d074f9f16c9524fb217cb56bac7150d1a642e731905cbf254b1bcdcc62-Ebanx-Credentials.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/36f169d074f9f16c9524fb217cb56bac7150d1a642e731905cbf254b1bcdcc62-Ebanx-Credentials.png" className="border" />
 
 ## Step 3: Set Your Payment Methods
 
@@ -81,7 +81,7 @@ Follow these steps to integrate Ebanx with Recurly. Ensure you use the correct s
 
 Recurly only supports INR, so no selection is necessary.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/1c0bc5faff0d392f4bb496f251bca479cdca5d1f461e9a5bf49865c97799879c-Ebanx-PaymentMethod-Currency.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/1c0bc5faff0d392f4bb496f251bca479cdca5d1f461e9a5bf49865c97799879c-Ebanx-PaymentMethod-Currency.png" className="border" />
 
 ## Step 5: Save and Enable the Gateway
 
