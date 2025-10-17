@@ -61,7 +61,7 @@ If you decide to use the Card Element instead of the Payment Element, you will b
 
   * When using a payment method that requires mandates and legal terms, ensure you are choosing `auto` for payment options terms.
 
-* **Credentials**: When using Elements with your Recurly Account, you must use your Stripe Account ID (acct\_xxxx) when configuring Elements and Recurly’s top-level PK key. If you use your own publishable key, the integration will not work properly. This is due to Recurly using Stripe Connect.
+* **Credentials**: When using Elements with your Recurly Account, you must use your Stripe Account ID (acct_xxxx) when configuring Elements and Recurly’s top-level PK key. If you use your own publishable key, the integration will not work properly. This is due to Recurly using Stripe Connect.
 
   * To retrieve your Stripe Account ID, you have two options:
 
@@ -73,7 +73,7 @@ If you decide to use the Card Element instead of the Payment Element, you will b
 
 Use the ‘development mode’ key while your Recurly site is in ‘development mode’. Use the ‘production mode’ key for production transactions.
 
-* **Recurly Development Mode Publishable Key**:\
+* **Recurly Development Mode Publishable Key**:
   `pk_test_40DpPkZhqK69boNdC3ygyBgsCMGIzMq9rbRmeqBbD7ELUduU6gW4NcmKhvinbztWdiNVFfUfknl2OsCRDkFfVe7s7003wu2I6Mq`
 
 * **Recurly Production Mode Publishable Key**: `pk_live_40DpPkZhqK69boNdC3ygyqOhhvwU83GPZTzPmQfuOe3LRwtHJaMYLH9ID5s7DvAi2bNpOASqoZSX1OfQhILfHb5Wu00aHgiDD2z`
@@ -95,6 +95,8 @@ Mode `setup` should be used when a customer wishes to sign up for a free trial s
 ### Klarna Enablement in Elements
 
 To use Klarna Recurring with Stripe, you will need to include a header parameter with your Elements integration. Please reach out to Recurly Support for this parameter and ensure you are part of the Klarna BETA at Stripe. You must also enable Klarna on your Stripe Dashboard.
+
+For Klarna Compliance, please see documentation at Stripe: [Stripe x Klarna Compliance](https://docs.stripe.com/payments/klarna/compliance)
 
 ### Configuring capture method
 
@@ -165,16 +167,16 @@ If your current integration with Stripe uses Payment Methods, see Stripe’s doc
 
 A consolidated list of parameters and our recommendations are below. We have not covered all Stripe documented Element options configuration available as, in those cases, they can be set based on your preferences.
 
-| Elements Option                                      | Value                  | Description                                                                                                                                                                                                                                                                                                                                                   |
-| ---------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| mode                                                 | payment or setup       | payment when the transaction includes an initial dollar amount, such as when signing up for a subscription with no free trial, or a one-time purchase. setup when the transaction does not include a dollar amount, such as a free trial. **Note:** BACS does not support setup mode in the Stripe Payment element. Subscription is not supported by Recurly. |
-| currency                                             | ISO-standard, 3 Letter | Ensure your transaction payload to Recurly matches the currency configured for the given c\_token value.                                                                                                                                                                                                                                                      |
-| amount                                               | Up to eight digits     | Only sent when the mode is payment                                                                                                                                                                                                                                                                                                                            |
-| setupFutureUsage                                     | off\_session           | Ensure this is set to off\_session so that Stripe payment methods resulting from the given confirmation token can be used for recurring purposes. Setting this param to on\_session will cause recurring transactions to fail.                                                                                                                                |
-| captureMethod                                        | manual or automatic    | manual when you wish to run an /authorize (separate auth and capture) flow. automatic when you wish to run an /purchase or /subscription (sale, all in one transaction) flow.                                                                                                                                                                                 |
-| paymentMethodTypes                                   | none                   | Omit this value. Recurly handles payment methods using Stripe’s automatic payment methods. Ensure you have only those payment methods you wish to enable set up in your Stripe dashboard.                                                                                                                                                                     |
-| paymentMethodConfiguration                           | optional               | Omit this value if you wish to use the full suite of payment methods available on your account. You may include this option if you wish to restrict Stripe Elements to a subset of your supported payment methods.                                                                                                                                            |
-| paymentMethodOptions.card.require\_cvc\_recollection | boolean                | Set this to true if you wish to require CVV collection from known customers. Recurly supports passing cvv in these cases.                                                                                                                                                                                                                                     |
+| Elements Option                                    | Value                  | Description                                                                                                                                                                                                                                                                                                                                                   |
+| -------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| mode                                               | payment or setup       | payment when the transaction includes an initial dollar amount, such as when signing up for a subscription with no free trial, or a one-time purchase. setup when the transaction does not include a dollar amount, such as a free trial. **Note:** BACS does not support setup mode in the Stripe Payment element. Subscription is not supported by Recurly. |
+| currency                                           | ISO-standard, 3 Letter | Ensure your transaction payload to Recurly matches the currency configured for the given c_token value.                                                                                                                                                                                                                                                       |
+| amount                                             | Up to eight digits     | Only sent when the mode is payment                                                                                                                                                                                                                                                                                                                            |
+| setupFutureUsage                                   | off_session            | Ensure this is set to off_session so that Stripe payment methods resulting from the given confirmation token can be used for recurring purposes. Setting this param to on_session will cause recurring transactions to fail.                                                                                                                                  |
+| captureMethod                                      | manual or automatic    | manual when you wish to run an /authorize (separate auth and capture) flow. automatic when you wish to run an /purchase or /subscription (sale, all in one transaction) flow.                                                                                                                                                                                 |
+| paymentMethodTypes                                 | none                   | Omit this value. Recurly handles payment methods using Stripe’s automatic payment methods. Ensure you have only those payment methods you wish to enable set up in your Stripe dashboard.                                                                                                                                                                     |
+| paymentMethodConfiguration                         | optional               | Omit this value if you wish to use the full suite of payment methods available on your account. You may include this option if you wish to restrict Stripe Elements to a subset of your supported payment methods.                                                                                                                                            |
+| paymentMethodOptions.card.require_cvc_recollection | boolean                | Set this to true if you wish to require CVV collection from known customers. Recurly supports passing cvv in these cases.                                                                                                                                                                                                                                     |
 
 ### Step 2: Retrieve the Confirmation Token Details (Optional)
 
@@ -230,12 +232,12 @@ To make a purchase using the Stripe Confirmation Token, you will provide it in a
 
 The following parameters are used specifically for this use-case.
 
-| Parameter                    | Description                                                                                                                                             |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| payment\_gateway\_references | Array of Payment Gateway References, each a reference to a third-party gateway object of varying types. Child of billing\_info.                         |
-| token                        | An identifier of the reference. Property of a Payment Gateway Reference.                                                                                |
-| reference\_type              | The reference type of the token. May be one of: stripe\_confirmation\_token, stripe\_customer, stripe\_payment\_method                                  |
-|                              | **Note:** confirmation\_token cannot be sent with customer or payment\_method tokens. Stripe customer and payment\_method tokens must be sent together. |
+| Parameter                  | Description                                                                                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| payment_gateway_references | Array of Payment Gateway References, each a reference to a third-party gateway object of varying types. Child of billing_info.                       |
+| token                      | An identifier of the reference. Property of a Payment Gateway Reference.                                                                             |
+| reference_type             | The reference type of the token. May be one of: stripe_confirmation_token, stripe_customer, stripe_payment_method                                    |
+|                            | **Note:** confirmation_token cannot be sent with customer or payment_method tokens. Stripe customer and payment_method tokens must be sent together. |
 
 An example request body to POST /purchases:
 
@@ -295,7 +297,7 @@ If the purchase is successful, an `InvoiceCollection` will be returned as the re
 
 #### Klarna Usage
 
-When using Klarna, Stripe will respond with the category of Klarna used for the subscription request. These three options will appear in API responses in the gateway\_params object.
+When using Klarna, Stripe will respond with the category of Klarna used for the subscription request. These three options will appear in API responses in the gateway_params object.
 
 * Pay in Installments (`pay_in_installments`), meaning BNPL
 * Pay Now (`pay_now`), where customers choose to pay immediately.
