@@ -3,8 +3,8 @@
 - apple-pay-on-the-web
 - google-pay
 - stripe-link-pay
-- klarna-bnpl-pay-now-pay-later
 - ach-bank-payments
+- klarna-bnpl-pay-now-pay-later
 - sepa-direct-debit
 - bacs
 - becs
