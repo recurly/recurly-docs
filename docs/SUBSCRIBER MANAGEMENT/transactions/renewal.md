@@ -1,5 +1,6 @@
 ---
 title: Renewal
+excerpt: How subscription renewals and prerenewal notifications work in Recurly.
 deprecated: false
 hidden: false
 metadata:
