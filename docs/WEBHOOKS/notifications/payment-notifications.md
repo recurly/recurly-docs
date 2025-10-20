@@ -461,7 +461,7 @@ Transactions will occasionally receive status updates from the payment gateway d
 
 ## Transaction authorized
 
-Sent when you successfully authorize (when performing separate authorize and capture payments) a payment. Payments that are successfully authorized must be captured upon to receive the settlement.
+Sent when you successfully authorize (when performing separate authorize and capture payments) a payment. Payments that are successfully authorized must be captured in order to settle at the gateway. Uncaptured authorizations will expire within 7-30 days depending on the brand and cannot be captured.
 
 ```json
 {
