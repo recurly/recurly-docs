@@ -5,6 +5,7 @@
 - google-pay
 - stripe-link-pay
 - amazon-pay
+- cash-app-pay
 - ach-bank-payments
 - sepa-direct-debit
 - bacs
@@ -14,6 +15,5 @@
 - ideal
 - sofort
 - pay-with-venmo
-- cash-app-pay
 - boleto
 - upi-autopay
