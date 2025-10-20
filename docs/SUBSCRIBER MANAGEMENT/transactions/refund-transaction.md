@@ -61,7 +61,7 @@ A refund reverses all or part of a previously collected charge. In Recurly, refu
 | Full             | Returns the entire original charge.                            | Billing error or immediate cancellation.                |
 | Amount           | Returns an exact currency amount.                              | Goodwill or partial service issue.                      |
 | Line items       | Returns selected lines with optional proration and quantities. | Plan swaps, partial periods, or item-level adjustments. |
-| Void (unsettled) | Cancels an **unsettled** transaction before settlement.        | Same-day mistakes or duplicates.                        |
+| Void (unsettled) | Cancels an **unsettled** transaction before settlement.        | Same-day mistakes or customer cancellations.            |
 
 ## Credit handling options
 
