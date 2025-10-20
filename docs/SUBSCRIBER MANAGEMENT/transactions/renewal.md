@@ -39,12 +39,14 @@ A renewal represents the automatic continuation of a subscription term. When a r
 ## Renewal process
 
 1. **Detect** an active subscription approaching its renewal date.
+   1. If **Account Updater** is active, a pre-renewal update will occur if applicable to avoid renewal failures. 
 2. **Generate** a new recurring invoice based on the subscription plan, billing cycle, and add-ons.
-3. **Communicate** with the configured payment gateway to **process payment** automatically.
+3. **Communicate** with the configured payment gateway to **process the payment** automatically.
 4. **Update** the invoice and subscription status accordingly:
-   1. **Paid:** The renewal succeeded and payment was confirmed.
-   2. **Past Due:** Payment failed or is pending (e.g., Boleto).
-   3. **Canceled/Expired:** The subscription was not renewed due to failed payments or cancellation.
+   1. **Paid:** The renewal succeeded and payment was confirmed. The subscription remains **active**.
+   2. **Past Due:** Payment failed or has a payment-method-specific caveat (e.g., Boleto). The Invoice will enter dunning to collect on the past due amount. Subscription remains **active**.
+   3. **Pending**: Payment is asynchronous and has not received a status update yet (e.g. ACH, SEPA, UPI). Subscription remains **active.**
+   4. **Failed:** Retries have failed to collect on the invoice and the invoice has moved into a Failed state. Dunning settings will determine the subscription's final state.
 
 ### Renewals with Boleto
 
