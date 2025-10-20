@@ -22,7 +22,7 @@ These features are available to all customers on any Recurly subscription plan.
 * **Limitations:**
   * Refunds are always issued back to the **original payment method** (e.g., the same card or bank account for ACH). They are also tied to the original gateway used for the authorization or payment and cannot presently be routed to a different payment method or gateway.
   * **Unsettled** transactions can be **voided** instead of **refunded**. Some gateways also allow refunds against unsettled transactions, but this is not recommended.
-  * **Voided** transactions cannot be refunded.
+  * **Voided** and **Uncaptured Authorization**transactions cannot be refunded.
   * Percentage refunds on invoices require the **Credit Memos** feature flag to be enabled.
 
 # Definition
