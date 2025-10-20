@@ -54,6 +54,12 @@ Because **Boleto** does not support direct recurring transactions:
 * The email contains a **download link** for the Boleto invoice.
 * Once the customer completes payment, the invoice status in Recurly **updates to Paid** automatically.
 
+| Step | Status                | Description                                                         |
+| ---- | --------------------- | ------------------------------------------------------------------- |
+| 1    | **Invoice generated** | Recurly creates a new renewal invoice for the next billing period.  |
+| 2    | **Past Due**          | Awaiting payment while the customer processes Boleto.               |
+| 3    | **Paid**              | Recurly receives confirmation from the gateway once payment clears. |
+
 ## External subscription notifications
 
 External Subscription Notifications (ESNs) inform your system about **subscription lifecycle changes**, including:
