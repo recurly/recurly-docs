@@ -1,7 +1,7 @@
 - transactions-dashboard
 - purchase-transaction
+- void-transaction
 - auth-and-capture
 - moto-transactions
 - refund-transaction
-- void-transaction
 - renewal
