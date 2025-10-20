@@ -96,3 +96,9 @@ Each ESN includes full subscription details in **JSON or XML** format and can be
 * **Invoice stuck as Past Due:** For Boleto, wait for the customer to pay; for card or ACH payments, check gateway or bank response.
 * **Payment declined:** Ensure the payment method is valid and retry the charge manually if needed.
 * **No renewal triggered:** Confirm subscription status is active and next renewal date is set.
+
+## For specific gateways
+
+### UPI
+
+They also receive a pre-renewal push notification 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription.
