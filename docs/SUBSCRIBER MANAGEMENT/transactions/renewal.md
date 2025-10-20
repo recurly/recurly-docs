@@ -45,7 +45,7 @@ A renewal represents the automatic continuation of a subscription term. When a r
    2. **Past Due:** Payment failed or is pending (e.g., Boleto).
    3. **Canceled/Expired:** The subscription was not renewed due to failed payments or cancellation.
 
-## Renewals with Boleto
+### Renewals with Boleto
 
 Because **Boleto** does not support direct recurring transactions:
 
@@ -60,6 +60,10 @@ Because **Boleto** does not support direct recurring transactions:
 | 1    | **Invoice generated** | Recurly creates a new renewal invoice for the next billing period.  |
 | 2    | **Past Due**          | Awaiting payment while the customer processes Boleto.               |
 | 3    | **Paid**              | Recurly receives confirmation from the gateway once payment clears. |
+
+### Renewals with UPI Autopay
+
+Customers receive a pre-renewal push notification 24–48 hours before their upcoming billing date, providing an additional opportunity to pause or cancel the subscription prior to the charge. This push notification is sent for every billing cycle throughout the duration of the subscription.
 
 ## External subscription notifications
 
@@ -97,8 +101,4 @@ Each ESN includes full subscription details in **JSON or XML** format and can be
 * **Payment declined:** Ensure the payment method is valid and retry the charge manually if needed.
 * **No renewal triggered:** Confirm subscription status is active and next renewal date is set.
 
-## For specific gateways
-
-### UPI
-
-They also receive a pre-renewal push notification 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription.
+<br />
