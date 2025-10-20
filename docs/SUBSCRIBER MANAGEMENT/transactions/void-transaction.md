@@ -19,3 +19,7 @@ status: This column indicates which transactions were voided.
 You can download the Transactions export from Analytics > Exports in the Recurly Admin Console.
 
 Please note that to void a credit invoice via the API, the invoice must be a credit invoice (type=credit) and cannot be closed (state=closed), processing (state=processing), or already voided.
+
+<br />
+
+<br />
