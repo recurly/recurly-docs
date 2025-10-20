@@ -4,6 +4,7 @@
 - apple-pay-on-the-web
 - google-pay
 - stripe-link-pay
+- amazon-pay
 - ach-bank-payments
 - sepa-direct-debit
 - bacs
@@ -12,7 +13,6 @@
 - klarna-bnpl-pay-now-pay-later
 - ideal
 - sofort
-- amazon-pay
 - pay-with-venmo
 - cash-app-pay
 - boleto
