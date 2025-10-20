@@ -19,8 +19,9 @@ These features are available to all customers on any Recurly subscription plan.
 * **Prerequisites:** Active subscription, valid payment method, and a configured payment gateway.
 * **Limitations:**
   * **Boleto payments** do not support direct recurring transactions.
-  * **Gateway delays** or **network timeouts** may temporarily mark an invoice as **Past Due** until confirmation.
-  * Prerenewal notifications are only sent if **External Subscription Notifications** are enabled on your site.
+  * **Gateway delays** or **network timeouts** may temporarily mark an transaction as **Pending** until confirmation. Communication Errors between Recurly and Gateways can occur. When this happens, we will continuously retry the payment behind-the-scenes and update the transaction/invoice upon receipt of a final decision.
+  * Prerenewal email notifications are only sent if **External Subscription Notifications** are enabled on your site.
+  * Card and certain gateway token renewals require an NTID to be successful.
 
 # Definition
 
