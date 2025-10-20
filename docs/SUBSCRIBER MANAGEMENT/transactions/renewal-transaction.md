@@ -6,10 +6,7 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
-
 # Overview
-
 
 Subscription renewals in Recurly automatically generate new recurring invoices and trigger payment attempts through the configured payment gateway. Each renewal maintains billing continuity for ongoing subscriptions and ensures customers are charged based on their active plan or billing cycle.
 
@@ -58,21 +55,13 @@ Because **Boleto** does not support direct recurring transactions:
 * The email contains a **download link** for the Boleto invoice.
 * Once the customer completes payment, the invoice status in Recurly **updates to Paid** automatically.
 
-<br />
-
-* * * * | Step | Status                | Description                                                         |
-        | ---- | --------------------- | ------------------------------------------------------------------- |
-        | 1    | **Invoice generated** | Recurly creates a new renewal invoice for the next billing period.  |
-        | 2    | **Past Due**          | Awaiting payment while the customer processes Boleto.               |
-        | 3    | **Paid**              | Recurly receives confirmation from the gateway once payment clears. |
-
+**Table**
 
 | Step | Status                | Description                                                         |
         | ---- | --------------------- | ------------------------------------------------------------------- |
         | 1    | **Invoice generated** | Recurly creates a new renewal invoice for the next billing period.  |
         | 2    | **Past Due**          | Awaiting payment while the customer processes Boleto.               |
         | 3    | **Paid**              | Recurly receives confirmation from the gateway once payment clears. |
-
 
 ## External subscription notifications
 
