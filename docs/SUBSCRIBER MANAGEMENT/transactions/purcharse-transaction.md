@@ -137,17 +137,14 @@ You can **filter or sort** by:
 
 ### Create a subscription
 
-Create subscriptions directly on the customer’s account.
-A customer can have multiple subscriptions—either to different plans or the same plan.
-[Learn more](https://docs.recurly.com/docs/create-subscription)
+Create subscriptions directly on the customer’s account. A customer can have multiple subscriptions—either to different plans or the same plan. [Learn more](https://docs.recurly.com/docs/create-subscription)
 
 ### Change a subscription
 
 A change (upgrade, downgrade, or billing adjustment) can be applied:
 
 * **Immediately** during the current billing cycle, or
-* **At the next renewal** date.
-  [Learn more](https://docs.recurly.com/docs/change-subscription)
+* **At the next renewal** date. [Learn more](https://docs.recurly.com/docs/change-subscription)
 
 ### Postpone a subscription’s renewal date
 
@@ -157,17 +154,5 @@ Postpone renewals to **adjust billing periods**—useful for backdating, pausing
 ### Expire a subscription
 
 * **Canceling** ends the subscription at the next bill date.
-* **Terminating** ends it immediately mid-cycle.
-  Both result in the subscription becoming **expired**.
-  Once expired, it cannot be reactivated. Only a **canceled** subscription can be reactivated before expiration.
+* **Terminating** ends it immediately mid-cycle. Both result in the subscription becoming **expired**. Once expired, it cannot be reactivated. Only a **canceled** subscription can be reactivated before expiration.
   [Learn more](https://docs.recurly.com/docs/expire-subscription)
-
-***
-
-## See also
-
-* Refunds
-* Renewals
-* Voids
-* Payment notifications
-* Recurly API: Purchase endpoint
