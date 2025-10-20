@@ -30,7 +30,7 @@ To integrate Apple Pay on the Web, ensure you have:
 
 * An Apple Developer's Account and a verified domain.
 * Recurly.js v4 or <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a>.
-* Recurly currently supports Apple Pay transactions through [Adyen](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe), [Braintree](https://docs.recurly.com/docs/braintree), [Vantiv](https://docs.recurly.com/docs/vantiv), [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), Chase [Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital), and [Cybersource](https://docs.recurly.com/docs/cybersource) as gateways.
+* Recurly currently supports Apple Pay transactions through [Adyen](https://docs.recurly.com/docs/adyen), [Stripe](https://docs.recurly.com/docs/stripe), [Braintree](https://docs.recurly.com/docs/braintree), [Vantiv](https://docs.recurly.com/docs/vantiv), [Worldpay](https://docs.recurly.com/docs/worldpaydlocal-latam-support), CommerceHub, Chase [Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital), and [Cybersource](https://docs.recurly.com/docs/cybersource) as gateways.
 * This payment method allows using [Zero Dollar Authorizations](https://docs.recurly.com/docs/payment-gateways#/zero-dollar-authorizations-zda).
 
 ### Definitions
@@ -41,7 +41,7 @@ To integrate Apple Pay on the Web, ensure you have:
   * DPANs are full card numbers that have different set of numbers from the FPAN which can be exposed on receipts and other UI elements.
   * DPANs are invalidated when a consumer removes the card from their device, and a new DPAN is created if they re-add the same card, or add a new card to their device. Subscriptions using a DPAN can fail due to this consumer-driven behavior and are non-recoverable. Apple has deployed a solution to improve subscription behavior using an MPAN (see below) which is not tied to the consumer device in this way.
 * **MPAN**: Merchant-level Token used for Apple Pay. This type of token is not tied to the specific device like a DPAN, and is associated with the Merchant instead. MPANs are not transferrable between Merchants and thus are not suitable for M&A-related data migrations. MPANs are full card numbers that have different set of numbers from the FPAN which can be exposed on receipts and other UI elements.
-  * MPANs are not invalidated if a consumer removes their card from a specific phone, iPad, or other Apple device, thus making them "subscription-friendly". 
+  * MPANs are not invalidated if a consumer removes their card from a specific phone, iPad, or other Apple device, thus making them "subscription-friendly".
   * MPANs benefit from expiry date forwarding features, though card number changes are not received from Apple through any Account Updater feature today. Apple may receive new FPAN details themselves, but the MPAN on file will be unchanged in Recurly's system.
 * **Cryptogram**: A one-time use authentication value that is created in the processing of using Apple Pay to authorize a transaction. Cryptograms are not stored and must be sent on all customer-initiated transactions.
 
