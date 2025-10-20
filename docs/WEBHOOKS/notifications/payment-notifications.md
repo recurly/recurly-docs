@@ -413,7 +413,7 @@ If you are using Kount Direct and manually reviewing transactions for fraud, a `
 
 ## Transaction status updated
 
-Transactions will occasionally receive status updates from the payment gateway due to reasons such as gateway timeouts or asynchronous behaviors. For these cases, this notification will be sent to provide the updated transaction status.
+Transactions will occasionally receive status updates from the payment gateway due to reasons such as gateway timeouts or asynchronous status updates. For these cases, this notification will be sent to provide the updated transaction status.
 
 ```json
 {
