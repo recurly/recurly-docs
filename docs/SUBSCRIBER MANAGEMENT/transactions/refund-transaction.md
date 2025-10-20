@@ -32,7 +32,7 @@ A refund reverses all or part of a previously collected charge. In Recurly, refu
 # Key benefits
 
 * **Work from one place:** Refund from the invoice, the transaction, or via API.
-* **Fine-grained control:** Refund by **full amount**, **specific amount**, or **selected line items**.
+* **Fine-grained control:** Refund by **full amount**, **specific amount** (dollar or percentage of an invoice), or **selected line items**.
 * **Accurate billing math:** Respect proration, taxes, discounts, and quantities on the refund preview.
 * **Consistent accounting:** Recurly generates refund documents for audit and reconciliation.
 
