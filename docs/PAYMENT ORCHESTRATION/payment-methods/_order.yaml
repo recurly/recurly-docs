@@ -8,6 +8,7 @@
 - sepa-direct-debit
 - bacs
 - becs
+- revolut
 - ideal
 - sofort
 - prepaid-and-gift-cards
@@ -16,4 +17,3 @@
 - cash-app-pay
 - boleto
 - upi-autopay
-- revolut
