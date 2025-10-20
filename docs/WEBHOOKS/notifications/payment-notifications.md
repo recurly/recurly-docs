@@ -22,7 +22,7 @@ Payment notifications inform you of transaction lifecycle events—ACH schedules
 
 ## Scheduled payment (For Asynchronous Payment Methods)
 
-Sent when Recurly initiates an ACH payment from a customer entering payment or the renewal process.
+Sent when Recurly initiates an Asynchronous payment (ACH, SEPA, etc.) from a customer entering payment or the renewal process.
 
 ```json
 {
