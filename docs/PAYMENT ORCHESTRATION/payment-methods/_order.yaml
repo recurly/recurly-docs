@@ -4,8 +4,8 @@
 - google-pay
 - stripe-link-pay
 - ach-bank-payments
-- klarna-bnpl-pay-now-pay-later
 - sepa-direct-debit
+- klarna-bnpl-pay-now-pay-later
 - bacs
 - becs
 - revolut
