@@ -27,7 +27,7 @@ Payment Methods refer to the various ways customers can execute payments for the
 
 # Key details
 
-Visit our <Anchor label="Currency support" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/currency-support-by-gateway#/">Currency support</Anchor> page or our [Payment gateways pag](https://docs.recurly.com/recurly-subscriptions/docs/payment-gateways-1#/)e for more detailed information.
+Visit our <Anchor label="Currency support" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/currency-support-by-gateway#/">Currency support</Anchor> page or our [Payment gateways page](https://docs.recurly.com/recurly-subscriptions/docs/payment-gateways-1#/) for more detailed information.
 
 | Payment Method                                                                                                         | Payment Gateways Supported                                                                                                                            | Currencies Supported                              | Countries or Regions                         |
 | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------- |
