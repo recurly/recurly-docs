@@ -59,6 +59,8 @@ They also receive a **pre-renewal push notification** 24–48 hours prior to the
 
 They can also receive 2FA requests for amounts higher than 15k INR, which will appear as a push notification for confirmation and authorization per the specific UPI App's design.
 
+Since each bank maintains it's own consumer-facing UPI flow, this is not customizable. For example, Amazon maintains a UPI interface for consumers, and individual integrators cannot modify the Amazon app.
+
 # Recommended integration
 
 Currently, UPI AutoCollect is not supported on Recurly Checkout or Hosted Payment Pages.
