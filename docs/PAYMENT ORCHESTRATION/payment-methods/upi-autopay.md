@@ -74,6 +74,7 @@ Since all UPI AutoPay transactions requires an associated mandate, the mandate d
   * Base Plan Amount (fixed plan amount or highest ramp price)
   * Taxes, if any. For free trials, we will use the effective tax rate for the consumer, since the trial has no amount associated with it.
   * 18% tolerance in addition to the base plan + taxes.
+  * Mandate amounts exclude any discounts used to ensure future payments go through, even if the first payment is discounted.
 * **Mandate expiration dates** will be generated based off the plan billing term end date + 2 years. If you have a rolling monthly billing term (such as: billing periods of **1** and auto-renew), then the mandate expiry will be your billing term plus 2 years to allow for pay as you go monthly plans. In the example, the mandate would last for 2 years and 1 month.
 
 ### Required Fields
