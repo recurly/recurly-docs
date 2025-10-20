@@ -25,7 +25,7 @@ Recurly currently supports Boleto  transactions through [Adyen](https://docs.rec
 ### Limitations
 
 * Every Boleto generation via Recurly results in the creation of a new invoice.
-* Boleto is not a recurring payment method. Customers must return to session for every payment.
+* Boleto is not a recurring payment method. Customers must return to session for every payment. In this case, the subscription will remain active while the Invoice is in a Past Due state until the consumer pays against the invoice.
 * Boleto lacks refund capabilities; external refunds are suggested.
 
 # Description
@@ -42,7 +42,8 @@ Boleto Bancário, commonly known as Boleto, a popular payment method in Brazil, 
 
 When shoppers select Boleto as their desired payment method during checkout:
 
-1. A Boleto invoice, complete with a barcode, is generated for the shopper.
+1. A Boleto invoice, complete with a barcode, is generated for the shopper. It will go into a past due state immediately, and remain in that state up to 10 business days.
 2. The shopper can either view the barcode directly on the checkout page or opt to download the Boleto invoice.
 3. Payment for the Boleto invoice can be carried out online or in-store.
-4. Upon successful payment of the Boleto invoice, Recurly is alerted through an event, leading to the marking of the invoice as "Paid".
+4. Upon successful payment of the Boleto invoice, Recurly is alerted through a gateway webhook event, leading to the marking of the invoice as "Paid".
+5. If the invoice is not paid within the specified amount of time, the transaction and invoice will move to a failed state.
