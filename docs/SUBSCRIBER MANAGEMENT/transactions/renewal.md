@@ -8,7 +8,7 @@ metadata:
 ---
 # Overview
 
-Subscription renewals in Recurly automatically generate new recurring invoices and trigger payment attempts through the configured payment gateway. Each renewal maintains billing continuity for ongoing subscriptions and ensures customers are charged based on their active plan or billing cycle.
+Subscription renewals in Recurly automatically generate new invoices and trigger recurring payment attempts through the configured payment gateway. Each renewal maintains billing continuity for ongoing subscriptions and ensures customers are charged based on their active plan or billing cycle with the known payment method or gateway token on file.
 
 ### Required plan
 
