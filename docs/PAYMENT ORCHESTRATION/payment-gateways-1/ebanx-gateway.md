@@ -22,9 +22,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Limitations
 
 * Customer mandates cannot be migrated to Recurly if they exist on another platform. Customers must cancel those mandates and resubscribe per RBI and NPCI rules. Why? Enrollments are tightly coupled with the acquiring partner, merchant, and the consumer. During a migration, typically the acquiring partner will change, thus requiring re-enrollment.
-* RBI mandates limit individual transactions to 15000 INR without going through a consumer two-factor flow. 
-  * This flow is on the Bank's specific UPI application and is not customizable in any way. 2FA will be handled in the manner that app has deemed compliant with RBI regulations. 
+* RBI mandates limit individual transactions to 15000 INR without going through a consumer two-factor flow.
+  * This flow is on the Bank's specific UPI application and is not customizable in any way. 2FA will be handled in the manner that app has deemed compliant with RBI regulations.
   * Plans or the combined amount of plans, if sent in the same purchase signup request, should be at or below this amount to avoid rejections on renewals.
+  * Read more about the UPI App in [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
 * Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported with UPI AutoPay.
 * Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
 * Recurly.js is not supported with UPI AutoPay. Use our API to facilitate requests.
