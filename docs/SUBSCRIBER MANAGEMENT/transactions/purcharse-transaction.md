@@ -1,5 +1,8 @@
 ---
 title: Purchase
+excerpt: >-
+  Combine one-time charges and subscriptions into a single invoice using the
+  Purchase API.
 deprecated: false
 hidden: true
 link:
@@ -7,92 +10,164 @@ link:
 metadata:
   robots: index
 ---
-# Purchase API Integration
+# Overview
 
-If you're integrating with the Purchase API, you can combine one-time charges, subscriptions, and other purchase-related components into a single invoice. This makes it easier for businesses with complex sales cycles to generate one invoice for a customer. See [Purchase API](https://docs.recurly.com/recurly-subscriptions/docs/create-subscription#subscription-options-considerations) for further details.
+### Required plan
 
-## Payment Notifications
+These features are available to all customers on any Recurly subscription plan.
 
-Payment notifications inform you of transaction lifecycle events—ACH schedules, captures, failures, voids, refunds, and status updates. XML payloads include the full `<transaction>` element; JSON payloads focus on event metadata. Most integrations can ignore these legacy webhooks and rely on subscription- and invoice-level notifications or query transactions via the API.
+### Prerequisites & limitations
 
-For more information, see [Payment Notifications](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/payment-notifications).
+* **Prerequisites:** Active Recurly account with API credentials enabled.
+* **Limitations:**
+  * Each purchase request must include a valid account reference.
+  * Not all payment gateways support combining one-time charges and subscriptions.
+  * Legacy notification formats (XML) may not include complete purchase details.
 
-ADditional context for subscriptions:
+# Definition
 
-## Subscription Lifecycle
+A purchase in Recurly represents the combined creation of one or more subscriptions, one-time charges, and related adjustments within a single API request. The resulting invoice can be processed immediately or delayed based on configuration.
 
-#### Future
+# Key benefits
 
-Future subscriptions have a start date in the future. The most common use case for a future subscription is a B2B contract where the subscription is agreed to start on a specific date. The customer is not invoiced until the start date.
+* **Unified billing:** Combine multiple items or services into one invoice.
+* **Simplified integration:** Create subscriptions and charges simultaneously.
+* **Reduced errors:** Avoid multiple invoice generations for the same account.
+* **Streamlined accounting:** One invoice for reconciliation across systems.
 
-#### Active
+# Key details
 
-Active subscriptions are both regular paying subscriptions and subscriptions currently in a trial.
+## Purchase API integration
 
-#### Canceled
+If you’re integrating with the **Purchase API**, you can bundle:
 
-Canceled subscriptions will automatically expire at the term renewal date. A subscription could be in a canceled state because the customer chose to cancel their auto-renewing subscription or the subscription is set to expire at the end of their current term.
+* One-time charges
+* Subscriptions
+* Coupons and discounts
+* Shipping fees
+* Tax information
 
-#### Expired
+into a single invoice.
 
-Expired subscriptions are churned subscriptions that cannot be reactivated. A subscription can be expired due to involuntary churn by the dunning cycle or voluntary churn by canceling.
+This is especially useful for businesses with multi-product offerings or complex sales cycles.
+See the [Purchase API documentation](https://docs.recurly.com/recurly-subscriptions/docs/create-subscription#subscription-options-considerations) for details on payload structure and parameters.
 
-## View Your Subscriptions
+***
 
-[Your subscriptions dashboard][1] provides an overview of all [accounts][2] with subscriptions managed by Recurly. From this view, you can sort your subscriptions by account, plan code, subscription status, subscription creation date, or next subscription invoice date. The filters on this view allow you to bucket accounts by subscription status for easy sorting. Categories overlap and are not necessarily distinct, _e.g._ the **Live** filter will return both **Renewing** and **Canceled** subscriptions.
+## Payment notifications
 
-[1]: https://app.recurly.com/go/subscriptions
+Payment notifications inform you of transaction lifecycle events such as:
 
-[2]: /docs/accounts
+* ACH schedules
+* Captures
+* Failures
+* Voids
+* Refunds
+* Status updates
 
-#### All
+XML payloads contain the full `<transaction>` element, while JSON payloads focus on **event metadata**.
+Most modern integrations can safely **ignore legacy payment notifications** and instead use **subscription- or invoice-level notifications**, or **query transactions via the API**.
 
-All subscriptions.
+For details, see [Payment Notifications](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/payment-notifications).
 
-#### Renewing
+***
 
-Active subscriptions that will renew. Paused subscriptions are also considered as renewing.
+# Subscription lifecycle
 
-#### Future Start
+### Future
 
-Subscriptions that will become active when the start date arrives.
+Subscriptions with a **start date in the future**. Commonly used for B2B contracts that begin on an agreed date.
 
-#### Last Billing Period
+> No invoice is issued until the start date.
 
-Subscriptions that are in their last remaining billing period in their current term and set to expire at the end of the term.
+### Active
 
-#### Paused
+Includes:
 
-Active subscriptions that are currently paused and will not be invoiced.
+* Regular paying subscriptions
+* Subscriptions currently in a trial period
 
-#### Canceled
+### Canceled
 
-Subscriptions that will expire at the end of their subscription term.
+Subscriptions set to **expire at the next renewal date**. This state can occur when:
 
-#### Expired
+* The customer cancels their auto-renewing subscription
+* The subscription is manually set to expire at the end of its current term
 
-Subscriptions that are no longer active.
+### Expired
 
-#### Trial
+Subscriptions that have **fully ended** and **cannot be reactivated**. This may result from:
 
-Active subscriptions that are in a trial period.
+* **Involuntary churn** (e.g., dunning cycle completion)
+* **Voluntary churn** (e.g., customer canceled before renewal)
 
-#### Paying
+***
 
-Active subscriptions that are no longer in trial.
+# View your subscriptions
 
-## Create a Subscription
+Your [subscriptions dashboard](https://app.recurly.com/go/subscriptions) provides an overview of all [accounts](/docs/accounts) with active or past subscriptions managed in Recurly.
 
-To subscribe your customers to one of your plans, you can create a subscription on the customer's account. A customer can have multiple subscriptions to different plans or the same plan. <a href="https://docs.recurly.com/docs/create-subscription">Learn more</a>
+You can **filter or sort** by:
 
-## Change a Subscription
+* Account name
+* Plan code
+* Subscription status
+* Creation date
+* Next invoice date
 
-A change to the customer's subscription is most often an upgrade or downgrade, but can also include changes to how the subscription is invoiced. Changes can be made immediately in the current billing cycle or at the next term renewal. <a href="https://docs.recurly.com/docs/change-subscription">Learn more</a>
+> Categories overlap — for example, the **Live** filter includes both **Renewing** and **Canceled** subscriptions.
 
-## Postpone a Subscription's Renewal Date
+### Subscription filters
 
-Postpone a subscription to shorten or lengthen a customer's current billing period. Postpone is useful for backdating or pausing subscriptions. <a href="https://docs.recurly.com/docs/postpone-subscription">Learn more</a>
+| Filter                  | Description                                                    |
+| ----------------------- | -------------------------------------------------------------- |
+| **All**                 | Displays all subscriptions.                                    |
+| **Renewing**            | Active subscriptions that will renew; includes paused ones.    |
+| **Future Start**        | Subscriptions that will become active on a future start date.  |
+| **Last Billing Period** | Subscriptions in their final billing period before expiration. |
+| **Paused**              | Active but paused; not currently invoiced.                     |
+| **Canceled**            | Will expire at the end of the term.                            |
+| **Expired**             | No longer active or billable.                                  |
+| **Trial**               | Active subscriptions in a trial period.                        |
+| **Paying**              | Active, non-trial subscriptions.                               |
 
-## Expire a Subscription
+***
 
-When a customer elects to end their subscription at the next bill date, this is called **canceling** the subscription. If you decide to end the subscription early, mid-cycle, this is called **terminating** the subscription. Both result in the subscription **expiring**. Once a subscription is expired, it cannot be reactivated. Only a canceled subscription can be **reactivated**, which just means the customer changed their mind and decided to continue the subscription before the renewal date where the subscription was set to expire.  <a href="https://docs.recurly.com/docs/expire-subscription">Learn more</a>
+# Manage subscriptions
+
+### Create a subscription
+
+Create subscriptions directly on the customer’s account.
+A customer can have multiple subscriptions—either to different plans or the same plan.
+[Learn more](https://docs.recurly.com/docs/create-subscription)
+
+### Change a subscription
+
+A change (upgrade, downgrade, or billing adjustment) can be applied:
+
+* **Immediately** during the current billing cycle, or
+* **At the next renewal** date.
+  [Learn more](https://docs.recurly.com/docs/change-subscription)
+
+### Postpone a subscription’s renewal date
+
+Postpone renewals to **adjust billing periods**—useful for backdating, pausing, or aligning billing schedules.
+[Learn more](https://docs.recurly.com/docs/postpone-subscription)
+
+### Expire a subscription
+
+* **Canceling** ends the subscription at the next bill date.
+* **Terminating** ends it immediately mid-cycle.
+  Both result in the subscription becoming **expired**.
+  Once expired, it cannot be reactivated. Only a **canceled** subscription can be reactivated before expiration.
+  [Learn more](https://docs.recurly.com/docs/expire-subscription)
+
+***
+
+## See also
+
+* Refunds
+* Renewals
+* Voids
+* Payment notifications
+* Recurly API: Purchase endpoint
