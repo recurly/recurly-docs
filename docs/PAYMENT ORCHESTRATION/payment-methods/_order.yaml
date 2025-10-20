@@ -5,8 +5,8 @@
 - stripe-link-pay
 - ach-bank-payments
 - sepa-direct-debit
-- klarna-bnpl-pay-now-pay-later
 - bacs
+- klarna-bnpl-pay-now-pay-later
 - becs
 - revolut
 - ideal
