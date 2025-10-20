@@ -5,7 +5,7 @@ excerpt: >-
   ensuring your business caters to a global audience with diversified payment
   preferences
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
