@@ -20,7 +20,7 @@ These features are available to all customers on any Recurly subscription plan.
 * **Limitations:**
   * Once a payment has been **voided**, its **value becomes zero**, and it **cannot be refunded** in Recurly.
   * To return funds after a void, issue a **refund externally** (e.g., through your **payment gateway**, **wire transfer**, or **ACH**).
-  * You can only void a **credit invoice** if it is not in the states `closed`, `processing`, or `voided`. 
+  * You can only void a **credit invoice** if it is not in the states `closed`, `processing`, or `voided`.
 
 # Definition
 
@@ -29,23 +29,22 @@ A void cancels a transaction or credit invoice before settlement. It ensures tha
 # Key benefits
 
 * **Immediate cancellation:** Stop unsettled payments before they post.
-* **Error correction:** Correct duplicate or mistaken charges on the same day.  
-* **Accurate reporting:** Track voids easily through Recurly exports.  
+* **Error correction:** Correct duplicate or mistaken charges on the same day.
+* **Accurate reporting:** Track voids easily through Recurly exports.
 
 # Key details
 
 ## How to void a transaction
 
-1. **Open** the customer’s account in the Recurly Admin UI.  
+1. **Open** the customer’s account in the Recurly Admin UI.
 2. **Go** to the **Transactions** section and **select** the transaction to void.
 3. **Review** the transaction details to ensure it is **unsettled**.
-4. **Click** **Void transaction** to cancel it.  
+4. **Click** **Void transaction** to cancel it.
 
 Once the transaction is voided:
 
-* Its **monetary value is zeroed out**.  
-* It **cannot be refunded** in Recurly.  
-* **Any necessary refund must be processed externally. **"HOW???????"**
+* The transaction's **monetary value is zeroed out** and any pending funds are reversed off the customer's bank statement. This is not always instant -- each bank will have their own timeframe associated with this process.
+* The transaction**cannot be refunded** in Recurly or the Gateway.
 
 ## Find voided transactions
 
@@ -60,14 +59,14 @@ You can locate voided transactions through the **Transactions export**:
 To export:
 
 1. **Go to** **Analytics → Exports** in the Recurly Admin Console.
-2. **Download** the **Transactions export** file.  
-3. **Filter** by `status = Voided` to review all voided transactions.  
+2. **Download** the **Transactions export** file.
+3. **Filter** by `status = Voided` to review all voided transactions.
 
 ## Voiding credit invoices via API
 
 To void a credit invoice using the API:
 
-* The invoice must be a **credit invoice** (`type=credit`). 
-* It cannot be **closed**, **processing**, or **already voided**.  
+* The invoice must be a **credit invoice** (`type=credit`).
+* It cannot be **closed**, **processing**, or **already voided**.
 
 <br />
