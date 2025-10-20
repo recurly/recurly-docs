@@ -119,17 +119,17 @@ You can **filter or sort** by:
 
 ### Subscription filters
 
-| Filter                  | Description                                                    |
-| ----------------------- | -------------------------------------------------------------- |
-| **All**                 | Displays all subscriptions.                                    |
-| **Renewing**            | Active subscriptions that will renew; includes paused ones.    |
-| **Future Start**        | Subscriptions that will become active on a future start date.  |
-| **Last Billing Period** | Subscriptions in their final billing period before expiration. |
-| **Paused**              | Active but paused; not currently invoiced.                     |
-| **Canceled**            | Will expire at the end of the term.                            |
-| **Expired**             | No longer active or billable.                                  |
-| **Trial**               | Active subscriptions in a trial period.                        |
-| **Paying**              | Active, non-trial subscriptions.                               |
+| Filter                  | Description                                                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **All**                 | Displays all subscriptions.                                                                                                  |
+| **Renewing**            | Active subscriptions that will [renew](https://docs.recurly.com/recurly-subscriptions/docs/renewal#/); includes paused ones. |
+| **Future Start**        | Subscriptions that will become active on a future start date.                                                                |
+| **Last Billing Period** | Subscriptions in their final billing period before expiration.                                                               |
+| **Paused**              | Active but paused; not currently invoiced.                                                                                   |
+| **Canceled**            | Will expire at the end of the term.                                                                                          |
+| **Expired**             | No longer active or billable.                                                                                                |
+| **Trial**               | Active subscriptions in a trial period.                                                                                      |
+| **Paying**              | Active, non-trial subscriptions.                                                                                             |
 
 ***
 
