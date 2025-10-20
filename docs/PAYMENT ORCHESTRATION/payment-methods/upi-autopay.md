@@ -57,6 +57,8 @@ Consumers can **pause** or **cancel** subscriptions directly from their UPI app 
 
 They also receive a **pre-renewal push notification** 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription.
 
+They can also receive 2FA requests for amounts higher than 15k INR, which will appear as a push notification for confirmation and authorization per the specific UPI App's design.
+
 # Recommended integration
 
 Currently, UPI AutoCollect is not supported on Recurly Checkout or Hosted Payment Pages.
