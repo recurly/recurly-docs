@@ -1,7 +1,7 @@
 ---
 title: Payments Use Case Guides
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
