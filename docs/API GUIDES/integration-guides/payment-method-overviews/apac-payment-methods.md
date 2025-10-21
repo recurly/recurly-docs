@@ -1,7 +1,7 @@
 ---
 title: APAC Payment Methods
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
