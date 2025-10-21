@@ -16,7 +16,7 @@ There are several gateways and payment methods that support the LATAM region inc
 **Payment Methods and Gateways:**
 
 * **[Cards](https://docs.recurly.com/recurly-subscriptions/docs/credit-cards#/)**: PSD2 Compliant support on Stripe, Adyen, Braintree, WorldPay, and Cybersource.
-  * For co-badged regions, we also support customer preference via [CoBadge](https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide#/) solutions.
+  * For co-badged regions, such as France, Belgium and Denmark, we also support customer preference via [CoBadge](https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide#/) solutions.
 * **[iDeal](https://docs.recurly.com/recurly-subscriptions/docs/ideal#/)**: Supported on Stripe and Adyen.
 * **[SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/) and [BACS](https://docs.recurly.com/recurly-subscriptions/docs/bacs#/)**: Supported on Stripe, Adyen, and GoCardless.
 * **[Revolut](https://docs.recurly.com/recurly-subscriptions/docs/revolut#/)**: Supported on Stripe.
