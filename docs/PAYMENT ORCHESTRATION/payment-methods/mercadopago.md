@@ -31,7 +31,7 @@ Recurly currently supports Mercado Pago transactions on Ebanx gateway.
 
 # Description
 
-Mercado Pago is a leading digital payment platform and fintech ecosystem in Latin America, owned by the e-commerce giant Mercado Libre. It provides a wide range of services for both consumers and businesses, including online and in-person payments, money transfers, a digital wallet, and access to credit and investment options. The platform supports various payment methods such as credit cards, debit cards, bank transfers, and cash vouchers, and has a large user base across countries like Argentina, Brazil, and Mexico
+Mercado Pago is a leading digital payment platform and fintech ecosystem in Latin America, owned by the e-commerce giant Mercado Libre. It provides a wide range of services for both consumers and businesses, including online and in-person payments, money transfers, a digital wallet, and access to credit and investment options. The platform supports various payment methods such as credit cards, debit cards, bank transfers, and cash vouchers, and has a large user base across countries like Argentina, Brazil, and Mexico.
 
 Mercado Pago revolutionizes how consumers sign up for subscriptions on your site and beyond.
 Available for use with Recurly.js for subscription signups for Recurly Merchants, this secure payment method is fast, easy, and simple.
