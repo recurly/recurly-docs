@@ -5,3 +5,44 @@ hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
+This document provides detailed API instructions for processing payments via Cards, SEPA, BACS, iDeal, and Klarna Debit Risk (formerly Sofort), with a critical focus on navigating the region's mandatory PSD2 / SCA requirements. You'll find links to our existing guides for 3DS for new customers, existing customers, Recurly.js requirements, and explanations for payment methods ensuring your integration is fully compliant, reduces transaction declines, and provides a seamless checkout experience for your customers across LATAM.
+
+# Key Details
+
+There are several gateways and payment methods that support the LATAM region including Adyen, Ebanx, WorldPay, and Braintree.
+
+**Payment Methods and Gateways:**
+
+* **Cards**: PSD2 Compliant support on Stripe, Adyen, Braintree, WorldPay, Cybersource, 
+* **iDeal**: Supported on Stripe and Adyen.
+* **SEPA and BACS**: Supported on Stripe, Adyen, and GoCardless.
+* **Revolut**: Supported on Stripe.
+* **Klarna Debit Risk (formerly Sofort)**: Supported on Adyen 
+
+Additionally, integrations supporting credit cards will require 3DS to comply with SCA/PSD2 regulations in the EU and UK regions. 
+
+# Payment Methods
+
+## Credit Cards
+
+Generally speaking, when processing cards in the EMEA region, you can follow standard guides (see below), however these countries require authenticating the consumer via 3DS. We offer 3DS on our most popular gateways for both new customers and stored billing information for return customers.
+
+You can find this information separately in our [3DS Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/). For verifying or using Stored Billing Information with 3DS, see our [Stored billing information guide](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/).
+
+## Direct Debit
+
+Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and Pix Automatico.
+
+### Mercado Pago
+
+### Pix Automatico
+
+## Boleto
+
+Boleto, supported on Adyen only presently, uses a special Email Template to deliver the Boleto Voucher QR code to customers via email. Due to the emailed communications, ensure you have your customer's real email on file.
+
+You can follow specific instructions available in our Adyen documentation below:
+
+* [Adyen | Boleto on Recurly](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-boleto)
