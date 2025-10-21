@@ -43,16 +43,26 @@ Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and 
 
 <br />
 
-## Realtime Bank Payments 
+## Realtime Bank Payments
 
-### iDeal 
-
-<br />
-
-### Sofort / Klarna Debit Risk 
+### iDeal
 
 <br />
 
-## Wallets 
+### Sofort / Klarna Debit Risk
+
+<br />
+
+## Wallets
 
 ### Revolut
+
+<br />
+
+# Recommended Webhooks
+
+In the EMEA region, some payment methods are synchronous and some are Asynchronous. You can find our dedicated webhooks recommendations using the Best Practices guide below:
+
+It is recommended to listen for all webhooks given that some payment methods are asynchronous (they update hours or days later with an official status), and some are synchronous (the payment status is known immediately).
+
+* [Webhooks Best Practices](https://docs.recurly.com/recurly-subscriptions/docs/best-practices#/)
