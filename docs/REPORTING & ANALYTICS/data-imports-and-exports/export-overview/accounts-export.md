@@ -52,7 +52,7 @@ The "Accounts Export" section in the Recurly user guide helps users grasp compre
 
 ### Time range filters
 
-* <br />
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
