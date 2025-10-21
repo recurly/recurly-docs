@@ -63,4 +63,9 @@ You can follow specific instructions available in our Adyen documentation below:
 * [Adyen | Boleto on Recurly](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-boleto)
 * [Boleto via Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp#/boleto) 
 
-<br />
+# Recommended Webhooks 
+
+In the LATAM region, some payment methods are synchronous and some are Asynchronous. You can find our dedicated webhooks recommendations using the payment method / type guide below:  
+
+* Asynchronous Webhooks guide: for supporting Wallet and Boleto payment methods 
+* Synchronous Webhooks guide: for supporting Card payment methods
