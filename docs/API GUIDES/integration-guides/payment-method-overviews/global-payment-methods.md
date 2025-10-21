@@ -5,9 +5,21 @@ hidden: true
 metadata:
   robots: index
 ---
-# Overview 
+# Overview
 
-blah
+<br />
+
+# Key Details
+
+There are several gateways and payment methods that support the LATAM region including Adyen, Ebanx, WorldPay, and Braintree.
+
+**Payment Methods and Gateways:**
+
+* **[Cards](https://docs.recurly.com/recurly-subscriptions/docs/credit-cards#/)**: PSD2 Compliant support on Stripe, Adyen, Braintree, WorldPay, and Cybersource.
+* Apple Pay
+* Google Pay
+* Amazon Pay
+* PayPal 
 
 # Payment Methods
 
@@ -27,7 +39,7 @@ You can find this information separately in our [3DS Integration Guide](https://
 
 ### Amazon Pay
 
-### PayPal 
+### PayPal
 
 # Recommended Webhooks
 
