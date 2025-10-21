@@ -39,7 +39,7 @@ Recurly currently supports Pix Automático transactions on Ebanx gateway.
 PIX Automático is a recurring payment feature within Brazil's PIX instant payment system, allowing users to set up and authorize automatic, scheduled payments directly from their bank accounts for services like subscriptions, utility bills, and memberships. It functions similarly to a traditional direct debit but is processed through the instant, automated PIX network, eliminating the need for credit cards or manual actions for every payment. This system provides users with control over their recurring payments and helps businesses manage subscriptions more efficiently.
 
 Pix Automático revolutionizes how consumers sign up for subscriptions on your site and beyond.
-Available for use with Recurly.js for subscription signups for Recurly Merchants, this secure payment method is fast, easy, and simple.
+Available for use with Recurly.js for subscription signups for Recurly merchants, this secure payment method is fast, easy, and simple.
 
 # Key details
 
