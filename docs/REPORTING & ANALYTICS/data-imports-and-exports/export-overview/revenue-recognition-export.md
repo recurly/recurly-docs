@@ -24,6 +24,12 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 
 # Filters
 
+### Versions
+
+### **Version 2 - 11/1/2018**
+
+* Modification to the arrear and deferred revenue calculations.
+
 ### Invoice Status Filter
 
 #### All
@@ -114,6 +120,4 @@ To help you identify and organize information effectively, the export provides a
 | <span id="future_revenue">future_revenue</span>                     | 90                               | Revenue to be recognized in the future past 12 months from the current month.                                                                                                                                                                                             |
 | <span id="invoice_origin">invoice_origin</span>                     | purchase, refund                 | The event that created the invoice. Invoices issued before the Credit Invoices feature was enabled on your site will have either purchase or refund as the value. Once Credit Invoices is enabled, new origins like renewal, immediate_change, and write_off will appear. |
 
-### **Version 2 - 11/1/2018**
-
-* Modification to the arrear and deferred revenue calculations.
+<br />
