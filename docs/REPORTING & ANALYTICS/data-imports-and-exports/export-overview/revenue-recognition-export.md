@@ -26,9 +26,9 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 
 ### Versions
 
-### **Version 2 - 11/1/2018**
+* **Version 2** - updated on 11/1/2018. Modification to the arrear and deferred revenue calculations.
 
-* Modification to the arrear and deferred revenue calculations.
+<br />
 
 ### Invoice Status Filter
 
