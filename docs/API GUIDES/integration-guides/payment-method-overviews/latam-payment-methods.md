@@ -37,6 +37,11 @@ You can find API documentation for sending Tax IDs and Tax ID Types in our V3 AP
 * `tax_identifier`: This is the Tax ID Number for the consumer. It is required when servicing LATAM customers.
 * `tax_identifier_type`: This is the Tax ID Type for the specific tax ID being sent in the payload. You only need to send this when the value is `cpf` or `cnpj`. Otherwise, only send the Tax ID.
 
+Certain LATAM regions also require 3D Secure when processing with cards. Ensure you are following new customer and stored billing info 3DS guides appropriately given your situation: 
+
+* [3DS for New Customers](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/)
+* [3DS for Returning Customers (Stored billing info)](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/)
+
 ## Wallets
 
 Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and Pix Automatico.
