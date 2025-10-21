@@ -37,7 +37,7 @@ You can find API documentation for sending Tax IDs and Tax ID Types in our V3 AP
 * `tax_identifier`: This is the Tax ID Number for the consumer. It is required when servicing LATAM customers.
 * `tax_identifier_type`: This is the Tax ID Type for the specific tax ID being sent in the payload. You only need to send this when the value is `cpf` or `cnpj`. Otherwise, only send the Tax ID.
 
-Certain LATAM regions also require 3D Secure when processing with cards. Ensure you are following new customer and stored billing info 3DS guides appropriately given your situation: 
+Certain LATAM regions also require 3D Secure when processing with cards. Ensure you are following new customer and stored billing info 3DS guides appropriately given your situation:
 
 * [3DS for New Customers](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/)
 * [3DS for Returning Customers (Stored billing info)](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/)
@@ -61,11 +61,14 @@ Boleto, supported on Adyen only presently, uses a special Email Template to deli
 You can follow specific instructions available in our Adyen documentation below:
 
 * [Adyen | Boleto on Recurly](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-boleto)
-* [Boleto via Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp#/boleto) 
+* [Boleto via Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp#/boleto)
 
-# Recommended Webhooks 
+# Recommended Webhooks
 
-In the LATAM region, some payment methods are synchronous and some are Asynchronous. You can find our dedicated webhooks recommendations using the payment method / type guide below:  
+In the LATAM region, some payment methods are synchronous and some are Asynchronous. You can find our dedicated webhooks recommendations using the Best Practices guide below:
 
-* Asynchronous Webhooks guide: for supporting Wallet and Boleto payment methods 
-* Synchronous Webhooks guide: for supporting Card payment methods
+It is recommended to listen for all webhooks given that some payment methods are asynchronous (they update hours or days later with an official status), and some are synchronous (the payment status is known immediately).
+
+* [Webhooks Best Practices](https://docs.recurly.com/recurly-subscriptions/docs/best-practices#/)
+
+<br />
