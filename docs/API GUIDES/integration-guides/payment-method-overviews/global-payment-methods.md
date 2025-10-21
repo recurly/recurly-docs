@@ -21,6 +21,8 @@ You can find this information separately in our [3DS Integration Guide](https://
 
 ### Apple Pay
 
+<br />
+
 ### Google Pay
 
 ### Amazon Pay
