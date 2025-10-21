@@ -39,7 +39,7 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 * **Minimal dev lift and easy to implement**: Growth and product teams can drive engagement and subscriber journey prompts without waiting for engineering resources.
 * **Real-time and cross-platform**: Don’t wait for that scheduled email to go out, deliver real-time prompts based on actions and segments across desktop and mobile web, iOS, Android, Apple TV, Roku, Fire TV, and Samsung TV. No other platform offers TV device support.
 * **Predict and prevent churn**: Predict users likely to cancel and create personalized cancellation flows to save them.
-* **Subscription changes with 1-click**: With only 1-click from your subscribers, automatically make changes to their subscription in Recurly (ie. add-ons, pause, change plans, apply coupons).\
+* **Subscription changes with 1-click**: With only 1-click from your subscribers, automatically make changes to their subscription in Recurly (ie. add-ons, pause, change plans, apply coupons).
   A/B test and analyze what’s working: Easily A/B test unlimited variations to drive conversions and optimize revenue.
 * **Drive engagement across your subscriber’s lifecycle**: Prompt your customers at every phase of their journey, from acquisition to renewals, upgrading, and cancellation.
 
@@ -53,15 +53,15 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 * Fill out the form to create a Recurly Engage instance.
 * This will automatically generate your Recurly Engage instance, provision the Recurly API key, and complete the creation process.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/56557a4-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/56557a4-image.png" className="border" />
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/aa285a2-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/aa285a2-image.png" className="border" />
 
 2. **Configure** Recurly Engage.
 
 * You will receive an invitation to create your account/password in Recurly Engage.
 
-![](https://files.readme.io/376835ea973bd71fdf1416dbc6e4dc135c11d35327a0740e6d3513e9584ca821-image.png)
+<Image border={false} src="https://files.readme.io/376835ea973bd71fdf1416dbc6e4dc135c11d35327a0740e6d3513e9584ca821-image.png" />
 
 * **Log** into Recurly Engage using your new Recurly Engage account from the step above.
 
@@ -81,7 +81,7 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
 * Enter their email and click + Add User.
 * Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/invite-users" target="_blank">invite users</a>.
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/1ede92b-image.png" />
+<Image align="center" border={true} width="60% " src="https://files.readme.io/1ede92b-image.png" className="border" />
 
 ## Step 2: Configure Recurly Engage / add Recurly Engage tag
 
@@ -90,10 +90,10 @@ Recurly Engage is a platform that delivers real-time, personalized messages acro
   * User tracking is set by either enabling the Recurly Engage tag in Google Tag Manager or copying the script displayed to each page in the customer’s storefront to enable tracking.
   * Once one of these options is enabled on the storefront, tracking will begin. You can verify this by noting the status of “Active” with a green dot.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a4444bf-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/a4444bf-image.png" className="border" />
 
 * You can configure additional tracking items here. Some examples include identifying the cancellation button ID or creating a new tracker.
-* Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/usage-tracking-1" target="_blank">usage tracking</a>
+* Learn more in [Recurly Engage](https://docs.recurly.com/recurly-engage/docs/usage-tracking-1#/).
 * The Javascript SDK is automatically installed on the [Hosted Account Management](https://docs.recurly.com/recurly-subscriptions/docs/hosted-account-management#/) and [Recurly Checkout](https://docs.recurly.com/recurly-subscriptions/docs/checkout#/) pages.
 
 > **Note:** This step is not required on pages where [Recurly.js ](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/overview-recurlyjs#/) is installed.
@@ -104,7 +104,7 @@ In order for Recurly Engage to populate prompts to users, the Recurly Engage tag
 
 **Example:** A webpage that authenticates a user, and pulls in information from Recurly including the account code, plan information, and other customer attributes, needs to be live to allow the Recurly Engage JS tag to access this data to identify the user. Device applications (mobile & TV SDKs) will also need to authenticate a user in order to provide targeted prompts to the users.
 
-* Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/custom-js-snippet" target="_blank">custom JS snippet</a>.
+* Learn more in [Recurly Engage.](https://docs.recurly.com/recurly-engage/docs/custom-js-snippet#/)
 
 Admin users may override certain behaviors of the Recurly Engage Javascript SDK. Upon deploying Recurly Engage for the first time, it is important to configure the following to ensure that users are recognized using your unique identifiers. These identifiers will be utilized for 1-click actions as well as downstream reporting, so it is important that these are correctly configured.
 
@@ -130,11 +130,13 @@ Within Recurly, **go** to Integrations→Automated Exports and enable the follow
    1. Filter on "Modified Yesterday"
    2. Note: this is only available if utilizing App Management
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/aaa214d-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/aaa214d-image.png" className="border" />
 
 #### Recurly Engage - Importing Traits
 
-Follow the steps outlined in Recurly Engage: <a href="https://help.redfast.com/docs/user-traits" target="_blank">user traits</a> - After completing these steps in Recurly Engage, you can:
+Follow the steps outlined in [Recurly Engage.](https://docs.recurly.com/recurly-engage/docs/user-traits#/)
+
+After completing these steps in Recurly Engage, you can:
 
 1. Create a CSV file.
 2. Upload the file to AWS.
@@ -142,7 +144,7 @@ Follow the steps outlined in Recurly Engage: <a href="https://help.redfast.com/d
 
 #### Recurly Engage - customizing user traits
 
-Learn more in Recurly Engage: <a href="https://help.redfast.com/docs/user-traits#customizing-user-traits" target="_blank">customizing user traits</a>
+Learn more in [Recurly Engage](https://docs.recurly.com/recurly-engage/docs/user-traits#/customizing-user-traits).
 
 1. Within Recurly Engage, go to Settings→User Traits to view the attributes.
 2. Configure the Type field for each attribute: Boolean, String, Number, or Date.
@@ -154,13 +156,15 @@ Continuing in Recurly Engage and based on Use Cases, modify the specific user se
 
 #### Test Users
 
-To test your implementation, configure Test Users as outlined within Recurly Engage, (Settings→Users→Test Users) [https://help.redfast.com/docs/test-users](https://help.redfast.com/docs/test-users)
+To test your implementation, configure [Test Users](https://docs.recurly.com/recurly-engage/docs/test-users#/) as outlined within Recurly Engage.
+
+* Settings → Users → Test Users.
 
 #### Guides
 
 Within Recurly Engage, you still see the two pre-built guides for Cancel Save and Failed Payment. Follow the steps below to customize these guides.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/e52e66e-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/e52e66e-image.png" className="border" />
 
 ### Syncing Recurly data
 
@@ -168,7 +172,7 @@ Recurly data will be synced to Recurly Engage for use in building out offers. Th
 
 To force a sync, navigate to Recurly Engage -> Settings -> Integrations -> External -> Recurly. Uncheck the active checkbox, save, then recheck it, which forces a refresh
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png" />
+<Image align="center" border={true} width="60% " src="https://files.readme.io/d8a9d83-Screen_Shot_2024-06-13_at_9.38.26_AM.png" className="border" />
 
 ### Cancel save guide
 
@@ -226,23 +230,23 @@ Already interested? <a href="https://recurly.com/demo/subscriber-engagement-demo
 
 # FAQs
 
-**Q: What is Recurly Engage and how does Recurly Engage work?**\
+**Q: What is Recurly Engage and how does Recurly Engage work?**
 **A:** Recurly Engage is a no-code platform that presents prompts to customers when using the merchant application. It utilizes Google Tag Manager (GTM) and a Recurly Engage JS token on the merchant web page, or SKDs or mobile apps.
 
-**Q: What is a prompt?\
+**Q: What is a prompt?
 A:** A prompt refers to content or behavior that is presented to users within one or more segments.
 
-**Q: What is a guide?\
+**Q: What is a guide?
 A:** A guide is a collection of prompts that appear one after another.
 
-**Q: What segmentation is available in Recurly Engage?\
+**Q: What segmentation is available in Recurly Engage?
 A:** Recurly subscriber data can be used for driving segmentation across prompts and guides to target the message to your unique subscribers.
 
-**Q: How do I monitor the success of the prompts displayed to customers?\
+**Q: How do I monitor the success of the prompts displayed to customers?
 A:** Recurly Engage offers robust analytics to measure prompt performance. Recurly analytics can provide insight into the effectiveness of the overall strategy using Recurly Built-In Benchmarks. We are evaluating pulling data from Recurly Engage into Recurly Analytics.
 
-**Q: What if a merchant does not use Google Tag Manager?\
+**Q: What if a merchant does not use Google Tag Manager?
 A:** Adobe, Tealium or GTM are the tag options out of the box. Other tag managers can be used, and need to have tag script added to each page
 
-**Q: Does my Recurly Engage API key count towards my API key limit?\
+**Q: Does my Recurly Engage API key count towards my API key limit?
 A:** Yes, the Recurly Engage API key that is generated via the Recurly provisioning flow will utilize one of your API keys. If you need additional API keys, contact sales to increase your limit.
