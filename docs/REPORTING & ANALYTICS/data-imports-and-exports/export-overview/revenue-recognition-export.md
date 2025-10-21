@@ -24,11 +24,9 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 
 # Filters
 
-### Versions
+### Versions Filter
 
 * **Version 2** - updated on 11/1/2018. Modification to the arrear and deferred revenue calculations.
-
-<br />
 
 ### Invoice Status Filter
 
@@ -45,8 +43,6 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 * **Overview**: Denotes credit invoices.
 
 e line items persist in the account history, with the owed balance cleared from the account.
-
-<br />
 
 ### Time Range Filter
 
