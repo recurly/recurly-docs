@@ -18,9 +18,9 @@ This feature is no longer available for activation.
 
 # Definition
 
-Recurly’s Revenue Recognition Schedules export is your gateway to detailed revenue amortization data. This legacy solution, although no longer available for new purchases, continues to aid a small subset of users in listing all schedules from each charge or credit alongside vital revenue amortization details. Visit our [Legacy Solution](https://docs.recurly.com/docs/recurly-revenue-recognition-legacy) page for more insight and consider exploring the new [Recurly Revenue Recognition](https://docs.recurly.com/docs/revenue-recognition) for a more robust experience.
+Recurly’s Revenue Recognition Schedules export is your gateway to detailed revenue amortization data. This legacy solution, although no longer available for new purchases, continues to aid a small subset of users in listing all schedules from each charge or credit alongside vital revenue amortization details. Visit our [Legacy Solution](https://docs.recurly.com/recurly-revrec/docs/recurly-revenue-recognition-legacy) page for more insight and consider exploring the new [Recurly Revenue Recognition](https://docs.recurly.com/recurly-revrec/docs/overview-revenue-recognition)   for a more robust experience.
 
-Ensure to configure the [Revenue Recognition](https://docs.recurly.com/docs/revenue-recognition) feature properly to find this export in your admin console, exclusive to sites with this feature enabled.
+Ensure to configure the Revenue Recognition feature properly to find this export in your admin console, exclusive to sites with this feature enabled.
 
 # Filters
 
