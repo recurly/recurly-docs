@@ -46,6 +46,8 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 
 e line items persist in the account history, with the owed balance cleared from the account.
 
+<br />
+
 ### Time Range Filter
 
 **Detail**: Harness the invoice_created_at date column in the export to display all schedules stemming from invoices conceived within the chosen timeframe.
