@@ -1,5 +1,10 @@
 ---
 title: Pix Automatico
+excerpt: >-
+  Integrate Pix Automatico, the favored payment platform of the next-gen
+  Brazilian subscriber base, into your Recurly payment gateway and offer a
+  frictionless subscription payment experience leveraging a platform with over
+  168 million registered users.
 deprecated: false
 hidden: true
 metadata:
