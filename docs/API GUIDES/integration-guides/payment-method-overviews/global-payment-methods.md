@@ -37,9 +37,15 @@ You can find this information separately in our [3DS Integration Guide](https://
 
 ### Google Pay
 
+<br />
+
 ### Amazon Pay
 
+<br />
+
 ### PayPal
+
+<br />
 
 # Recommended Webhooks
 
