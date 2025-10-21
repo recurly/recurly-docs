@@ -5,3 +5,44 @@ hidden: true
 metadata:
   robots: index
 ---
+# Overview
+
+This document provides detailed API instructions for processing payments via Cards, ACH, Venmo, and Cash App with a critical focus on navigating the region's options for payments. You'll find links to our existing guides for subscription management for new and existing customers, Recurly.js requirements, and explanations for payment methods ensuring your integration is fully compliant, reduces transaction declines, and provides a seamless checkout experience for your customers across North America.
+
+# Key Details
+
+There are several gateways and payment methods that support the North American region including **GATEWAYS**.
+
+**Payment Methods and Gateways:**
+
+* **[Cards](https://docs.recurly.com/recurly-subscriptions/docs/credit-cards#/)**: Compliant support on all modern gateways with the exception of Ebanx.
+* Cash App Pay
+* Venmo
+
+Additionally, integrations supporting credit cards will require 3DS to comply with SCA/PSD2 regulations in the EU and UK regions. For co-badged regions, such as France, Belgium and Denmark, we also support customer preference via [CoBadge](https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide#/) solutions.
+
+# Payment Methods
+
+## Credit Cards
+
+Generally speaking, when processing cards in the EMEA region, you can follow standard guides (see below), however these countries require authenticating the consumer via 3DS. We offer 3DS on our most popular gateways for both new customers and stored billing information for return customers.
+
+You can find this information separately in our [3DS Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/). For verifying or using Stored Billing Information with 3DS, see our [Stored billing information guide](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/).
+
+## Direct Debit
+
+Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and Pix Automatico.
+
+### SEPA
+
+### BACS
+
+## Realtime Bank Payments
+
+### iDeal
+
+### Sofort / Klarna Debit Risk
+
+## Wallets
+
+### Revolut
