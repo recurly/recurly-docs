@@ -19,7 +19,7 @@ There are several gateways and payment methods that support the LATAM region inc
 * **[iDeal](https://docs.recurly.com/recurly-subscriptions/docs/ideal#/)**: Supported on Stripe and Adyen.
 * **[SEPA](https://docs.recurly.com/recurly-subscriptions/docs/sepa-direct-debit#/) and [BACS](https://docs.recurly.com/recurly-subscriptions/docs/bacs#/)**: Supported on Stripe, Adyen, and GoCardless.
 * **[Revolut](https://docs.recurly.com/recurly-subscriptions/docs/revolut#/)**: Supported on Stripe.
-* **[Klarna Debit Risk (formerly Sofort)](https://docs.recurly.com/recurly-subscriptions/docs/sofort#/)**: Supported on Adyen 
+* **[Klarna Debit Risk (formerly Sofort)](https://docs.recurly.com/recurly-subscriptions/docs/sofort#/)**: Supported on Adyen
 
 Additionally, integrations supporting credit cards will require 3DS to comply with SCA/PSD2 regulations in the EU and UK regions. For co-badged regions, such as France, Belgium and Denmark, we also support customer preference via [CoBadge](https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide#/) solutions.
 
@@ -35,18 +35,24 @@ You can find this information separately in our [3DS Integration Guide](https://
 
 Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and Pix Automatico.
 
-### Mercado Pago
+### SEPA
 
 <br />
 
-### Pix Automatico
+### BACS
 
 <br />
 
-## Boleto
+## Realtime Bank Payments 
 
-Boleto, supported on Adyen only presently, uses a special Email Template to deliver the Boleto Voucher QR code to customers via email. Due to the emailed communications, ensure you have your customer's real email on file.
+### iDeal 
 
-You can follow specific instructions available in our Adyen documentation below:
+<br />
 
-* [Adyen | Boleto on Recurly](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-boleto)
+### Sofort / Klarna Debit Risk 
+
+<br />
+
+## Wallets 
+
+### Revolut
