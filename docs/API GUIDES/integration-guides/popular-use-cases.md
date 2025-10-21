@@ -1,5 +1,5 @@
 ---
-title: Popular Use Cases
+title: Payments Use Case Guides
 deprecated: false
 hidden: true
 metadata:
