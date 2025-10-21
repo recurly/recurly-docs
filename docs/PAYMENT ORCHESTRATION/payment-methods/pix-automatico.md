@@ -40,9 +40,7 @@ Available for use with Recurly.js for subscription signups for Recurly Merchants
 
 * **Subscriptions** Customers can use their Pix wallet to sign up for subscriptions. If one-time transactions are necessary, Pix is not supported.
 
-* **R.js Token utilization:** Use Cash App Pay Recurly.js tokens to carry out transactions via V2 or V3 Recurly endpoints.
-
-* **Stripe Elements ctoken utilization:** Use Stripe Payment Element, and V3 API to support this payment method.
+* **R.js Token utilization:** Use Pix Automatico Recurly.js tokens to carry out transactions via V3 Recurly endpoints.
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
@@ -52,13 +50,13 @@ Available for use with Recurly.js for subscription signups for Recurly Merchants
 
 **A**: Pix Automatico is directly supported through the below gateway offering. Refer to the associated documentation for setup and troubleshooting guidance:
 
-* Ebanx 
+* Ebanx
 
 #### **Q: How can I integrate my checkout solution to use Pix Automatico?**
 
 **A**: Pix Automatico is supported through Recurly.js and our V3 APIs. You can find links to our API guide and Recurly.js guides below:
 
-* API Guide: 
-* REcurly.js guide
+* API Guide:
+* Recurly.js guide
 
 <br />
