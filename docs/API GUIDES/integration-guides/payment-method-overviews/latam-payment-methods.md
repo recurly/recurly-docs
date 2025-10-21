@@ -13,11 +13,13 @@ This document provides detailed API instructions for processing payments via Bol
 
 There are several gateways and payment methods that support the LATAM region including Adyen, Ebanx, WorldPay, and Braintree. 
 
-Payment Methods:
+**Payment Methods and Gateways:**
 
-* Boleto
-* Mercado Pago
-* Pix Automatico
-* Cards with Tax ID requirements
+* **Boleto**: Supported on Adyen
+* **Mercado Pago**: Supported on Ebanx
+* **Pix Automatico**: Supported on Ebanx
+* **Cards with Tax ID requirements**: Supported on WorldPay and Braintree 
+
+Additionally, some LATAM card integrations will require 3DS in certain cases. Both WorldPay and Braintree support 3DS. You can find this information separately in our 3DS Integration Guide.
 
 <br />
