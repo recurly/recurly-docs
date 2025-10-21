@@ -13,7 +13,7 @@ These guides will provide a comprehensive walkthrough for leveraging Recurly's p
 
 Regional Guides: 
 
-* EMEA: For the United Kingdom and European markets.
-* NA/North America: For the North American markets including the United States and Canada.
-* LATAM: For the Latin American market including Mexico, Brazil, Argentina, and more. 
-* APAC: For the Asian markets including Australia, India, and more.
+* [EMEA: For the United Kingdom and European markets.](https://docs.recurly.com/recurly-subscriptions/docs/emea-payment-methods#/)
+* [NA/North America: For the North American markets including the United States and Canada.](https://docs.recurly.com/recurly-subscriptions/docs/eu-uk-payment-methods#/)
+* [LATAM: For the Latin American market including Mexico, Brazil, Argentina, and more. ](https://docs.recurly.com/recurly-subscriptions/docs/latam-payment-methods#/)
+* [APAC: For the Asian markets including Australia, India, and more.](https://docs.recurly.com/recurly-subscriptions/docs/apac-payment-methods#/)
