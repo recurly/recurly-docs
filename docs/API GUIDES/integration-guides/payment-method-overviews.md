@@ -1,7 +1,7 @@
 ---
 title: Payment Method Overviews
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
