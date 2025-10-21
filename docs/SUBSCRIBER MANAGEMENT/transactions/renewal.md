@@ -39,7 +39,7 @@ A renewal represents the automatic continuation of a subscription term. When a r
 ## Renewal process
 
 1. **Detect** an active subscription approaching its renewal date.
-   1. If **Account Updater** is active, a pre-renewal update will occur if applicable to avoid renewal failures. 
+   1. If **Account Updater** is active, a pre-renewal update will occur if applicable to avoid renewal failures.
 2. **Generate** a new recurring invoice based on the subscription plan, billing cycle, and add-ons.
 3. **Communicate** with the configured payment gateway to **process the payment** automatically.
 4. **Update** the invoice and subscription status accordingly:
@@ -47,26 +47,6 @@ A renewal represents the automatic continuation of a subscription term. When a r
    2. **Past Due:** Payment failed or has a payment-method-specific caveat (e.g., Boleto). The Invoice will enter dunning to collect on the past due amount. Subscription remains **active**.
    3. **Pending**: Payment is asynchronous and has not received a status update yet (e.g. ACH, SEPA, UPI). Subscription remains **active.**
    4. **Failed:** Retries have failed to collect on the invoice and the invoice has moved into a Failed state. Dunning settings will determine the subscription's final state.
-
-### Renewals with Boleto
-
-Because **Boleto** does not support direct recurring transactions:
-
-* Recurly **automatically generates** a new recurring invoice at renewal.
-* This invoice initially appears as **Past Due** to account for processing time.
-* Recurly **issues a new Boleto invoice** for the renewal amount and **sends** a notification email using your **Boleto email template**.
-* The email contains a **download link** for the Boleto invoice.
-* Once the customer completes payment, the invoice status in Recurly **updates to Paid** automatically.
-
-| Step | Status                | Description                                                         |
-| ---- | --------------------- | ------------------------------------------------------------------- |
-| 1    | **Invoice generated** | Recurly creates a new renewal invoice for the next billing period.  |
-| 2    | **Past Due**          | Awaiting payment while the customer processes Boleto.               |
-| 3    | **Paid**              | Recurly receives confirmation from the gateway once payment clears. |
-
-### Renewals with UPI Autopay
-
-Customers receive a pre-renewal push notification 24–48 hours before their upcoming billing date, providing an additional opportunity to pause or cancel the subscription prior to the charge. This push notification is sent for every billing cycle throughout the duration of the subscription.
 
 ## External subscription notifications
 
