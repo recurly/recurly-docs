@@ -11,7 +11,7 @@ This document provides detailed API instructions for processing payments via Bol
 
 ## Key Details 
 
-There are several gateways and payment methods that support the LATAM region including Ebanx, WorldPay, and Braintree. 
+There are several gateways and payment methods that support the LATAM region including Adyen, Ebanx, WorldPay, and Braintree. 
 
 Payment Methods:
 
