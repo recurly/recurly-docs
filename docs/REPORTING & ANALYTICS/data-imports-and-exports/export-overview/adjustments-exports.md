@@ -34,9 +34,15 @@ Ordinarily, the export utilizes the adjustment's creation date rather than the i
 
 # Filters
 
+### Versions Filter
+
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
+
 ### **Time Range Filter**
 
 Utilize this feature to visualize charge and credit adjustments initiated in a specified timeframe. The "adjustment_created_at" date in the export is the default parameter used to filter results. In case you wish to filter adjustments based on the invoice creation date, simply opt for the "Use invoice date" option.
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 **Note**:  Adjustments are immutable; hence, a 'modified' time range option is non-existent.
 
