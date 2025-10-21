@@ -56,6 +56,6 @@ Boleto, supported on Adyen only presently, uses a special Email Template to deli
 You can follow specific instructions available in our Adyen documentation below:
 
 * [Adyen | Boleto on Recurly](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-boleto)
-* [Boleto via Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp#/) 
+* [Boleto via Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/boleto-ideal-sofort-and-cashapp#/boleto) 
 
 <br />
