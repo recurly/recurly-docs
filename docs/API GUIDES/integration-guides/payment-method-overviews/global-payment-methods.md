@@ -33,7 +33,13 @@ You can find this information separately in our [3DS Integration Guide](https://
 
 ### Apple Pay
 
-<br />
+Integration with Apple Pay on Recurly is mostly agnostic, with the exception of Braintree. Due to Braintree's unique ephemeral nonce requirement, if you are using the Braintree gateway, there is a separate integration method. Apple Pay, like Google Pay, requires a cryptogram derived from the consumer's device to be present on all customer initiated payments. This requires the use of Recurly.js, even for return customers. You'll want to use stored billing information guides to ensure billing info ID presence in Recurly.js for return Apple Pay customers.
+
+Please see our documentation for Apple Pay in the following two documentation guides: 
+
+* [Apple Pay on the Web](https://docs.recurly.com/recurly-subscriptions/docs/apple-pay-on-the-web#/)
+* [Apple Pay via Recurly.js ](https://docs.recurly.com/recurly-subscriptions/docs/apple-pay#/)
+* [Return Customers via Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/)
 
 ### Google Pay
 
