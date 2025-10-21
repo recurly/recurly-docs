@@ -190,7 +190,7 @@ To force a sync, navigate to Recurly Engage -> Settings -> Integrations -> Exter
 
 ### Failed payment guide
 
-Configuration steps: <a href="https://help.redfast.com/docs/failed-rebill" target="_blank">failed rebill</a>.
+Configuration steps for [Payment Failure](https://docs.recurly.com/recurly-engage/docs/failed-rebill#/).
 
 1. The failed payment guide will be set to “Journey” (required).
 2. The first prompt is set to a Notification prompt type that is shown when the first subscription renewal attempt has failed (required).
@@ -213,7 +213,7 @@ Based on use cases, set up the specific prompts triggered by actions.
 3. Complete testing of all additional prompts and guides.
 4. Activate all prompts and guides.
 
-Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Recurly Engage. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. Learn more about Test Users in theRecurly Engage docs portal [here](https://help.redfast.com/docs/test-users).
+Testing on your production account is favorable and has many benefits. By using Test Users, you can test your prompts on your production instance of Recurly and/or Recurly Engage. This will reduce effort to change site alias, rebuilt prompts, and or change API keys. When testing against Test Users, these test accounts can be added to a segment that will apply to the prompts you are testing. 
 
 ### Post go-live
 
