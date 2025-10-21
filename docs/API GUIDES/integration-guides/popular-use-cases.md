@@ -5,7 +5,7 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
+# Overview
 
 Harnessing the full power of Recurly's subscription management platform means going beyond the user interface and leveraging our robust API. For developers and product teams, the Recurly API is the key to unlocking unparalleled flexibility and deep integration, allowing you to embed sophisticated billing logic directly into your applications and internal systems. This direct access enables a wide array of powerful payment and subscription management use cases that cater to your unique business needs, transforming Recurly from a billing tool into a core component of your entire tech stack.
 
