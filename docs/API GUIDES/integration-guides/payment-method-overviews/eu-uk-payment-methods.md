@@ -26,7 +26,7 @@ Additionally, integrations supporting credit cards will require 3DS to comply wi
 
 ## Credit Cards
 
-Generally speaking, when processing cards in the North American region, you can follow standard guides (see below). While 3DS is not strictly required in the US and Canada, the industry is moving in that direction, so it is recommended to discuss options with your gateway and merchant account provider before deciding to implement 3DS behaviors on Recurly. 
+Generally speaking, when processing cards in the North American region, you can follow standard guides (see below). While 3DS is not strictly required in the US and Canada, the industry is moving in that direction, so it is recommended to discuss options with your gateway and merchant account provider before deciding to implement 3DS behaviors on Recurly.
 
 We offer 3DS on our most popular gateways for both new customers and stored billing information for return customers.
 
@@ -34,7 +34,7 @@ You can find this information separately in our [3DS Integration Guide](https://
 
 ## Direct Debit
 
-Recurly supports Direct Debit processing in the US via ACH. ACH is a US only payment method. 
+Recurly supports Direct Debit processing in the US via ACH. ACH is a US only payment method.
 
 ### ACH
 
@@ -49,3 +49,11 @@ Recurly supports Direct Debit processing in the US via ACH. ACH is a US only pay
 ## Wallets
 
 ### Revolut
+
+# Recommended Webhooks
+
+In the North American region, some payment methods are synchronous and some are Asynchronous. You can find our dedicated webhooks recommendations using the Best Practices guide below:
+
+It is recommended to listen for all webhooks given that some payment methods are asynchronous (they update hours or days later with an official status), and some are synchronous (the payment status is known immediately).
+
+* [Webhooks Best Practices](https://docs.recurly.com/recurly-subscriptions/docs/best-practices#/)
