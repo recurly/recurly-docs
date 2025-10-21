@@ -19,6 +19,7 @@ There are several gateways and payment methods that support the North American r
 * [ACH](https://docs.recurly.com/recurly-subscriptions/docs/ach-bank-payments#/): Supported on Stripe, Adyen, WorldPay, GoCardless, and Check Commerce. Compliant with NACHA regulations and pre-debit checks on Adyen, WorldPay, and Stripe. If you are using GoCardless or Check Commerce, you must satisfy this requirement via an external solution such as Plaid.
 * [Cash App Pay](https://docs.recurly.com/recurly-subscriptions/docs/cash-app-pay#/): Supported on Stripe, Adyen, and Braintree.
 * [Venmo](https://docs.recurly.com/recurly-subscriptions/docs/pay-with-venmo#/): Supported on Braintree.
+* AmazonPay US: Supported via AmazonPay V1 and V2.
 
 Additionally, integrations supporting credit cards will require 3DS to comply with SCA/PSD2 regulations in the EU and UK regions. For co-badged regions, such as France, Belgium and Denmark, we also support customer preference via [CoBadge](https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide#/) solutions.
 
