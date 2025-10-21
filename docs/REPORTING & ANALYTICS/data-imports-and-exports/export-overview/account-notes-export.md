@@ -28,7 +28,9 @@ The "Account Notes" section is dedicated to helping Recurly users manage and exp
 
 ### Time Range Filter
 
-You can filter the account notes that you wish to view based on a specific time range in the dropdown. The Start Date and End Date will update based on the time range selected. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range. By selecting a time range, the export will only display account notes that were created during that period, allowing for targeted retrieval of information.
+By selecting a time range, the export will only display account notes that were created during that period, allowing for targeted retrieval of information.
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
