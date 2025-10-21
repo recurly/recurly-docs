@@ -1,5 +1,5 @@
 ---
-title: Payment Method Overviews
+title: Regional Payment Method Guides
 deprecated: false
 hidden: true
 metadata:
