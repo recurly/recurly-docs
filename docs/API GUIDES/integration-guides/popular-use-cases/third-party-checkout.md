@@ -269,7 +269,7 @@ Many additional options are available to you. See the [Create Purchase](https://
 
 Certain APMs require displaying a QR code or other redirect to the consumer so they can authenticate in the Cash App application on their mobile device. Recurly utilizes our 3-D Secure exo-system to process Cash App transactions. When you provide a Stripe `ctoken` value in your API request, Recurly will respond with a `three_d_secure_action_token`
 
-This token can be provided to Recurly.js to unpack and direct your consumer to complete their Cash App payment.
+This token can be provided to Recurly.js to unpack and direct your consumer to complete their authentication or payment authorization.
 
 After your consumer processes their payment with Cash App, Recurly.js will produce a `three_d_secure_action_result_token` which you may provide in a retry of your initial purchase call. See `Step 4` for more details on parsing the purchase response.
 
