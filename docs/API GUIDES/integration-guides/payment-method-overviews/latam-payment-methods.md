@@ -32,15 +32,29 @@ You can find API documentation for sending Tax IDs and Tax ID Types in our V3 AP
 
 * Documentation 
 
-Fields to look for: 
+**Fields to look for: **
 
 * `tax_identifier`: This is the Tax ID Number for the consumer. It is required when servicing LATAM customers. 
 * `tax_identifier_type`: This is the Tax ID Type for the specific tax ID being sent in the payload. You only need to send this when the value is `cpf` or `cnpj`. Otherwise, only send the Tax ID.
 
 ## Wallets  
 
-## Boleto
+Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and Pix Automatico. 
 
-# Boleto 
+### Mercado Pago 
+
+<br />
+
+### Pix Automatico 
+
+<br />
+
+## Boleto 
+
+Boleto, supported on Adyen only presently, uses a special Email Template to deliver the Boleto Voucher QR code to customers via email. Due to the emailed communications, ensure you have your customer's real email on file. 
+
+You can follow specific instructions available in our Adyen documentation below: 
+
+* [Adyen | Boleto on Recurly](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/adyen-boleto)
 
 <br />
