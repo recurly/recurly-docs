@@ -37,7 +37,11 @@ Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and 
 
 ### Mercado Pago
 
+<br />
+
 ### Pix Automatico
+
+<br />
 
 ## Boleto
 
