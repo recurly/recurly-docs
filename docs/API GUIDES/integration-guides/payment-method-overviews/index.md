@@ -5,3 +5,15 @@ hidden: true
 metadata:
   robots: index
 ---
+# Overview 
+
+Accepting payments across different regions introduces significant complexity due to diverse consumer preferences, local banking regulations, and varying currency requirements. Customers in Europe might prefer SEPA Direct Debit or iDEAL, while those in Asia may favor options like UPI or Cards. Navigating this fragmented landscape of payment gateways, compliance standards like PSD2 in Europe, and data security laws can be a daunting task for any business aiming to scale internationally. Failing to offer familiar, trusted payment methods can lead to abandoned carts and lost revenue, making a strategic approach to global payments essential for growth.
+
+These guides will provide a comprehensive walkthrough for leveraging Recurly's powerful platform to seamlessly implement a variety of regional payment methods. By using a combination of Recurly.js for front-end tokenization and Recurly's robust APIs for invoice creation, and transaction processing, you can securely accept payments from around the globe without the headache of managing multiple integrations. We will cover how to ensure your subscriptions and payloads are submitting the right data, how to handle the transaction lifecycle, empowering you to build a truly global subscription business.
+
+Regional Guides: 
+
+* EMEA: For the United Kingdom and European markets.
+* NA/North America: For the North American markets including the United States and Canada.
+* LATAM: For the Latin American market including Mexico, Brazil, Argentina, and more. 
+* APAC: For the Asian markets including Australia, India, and more.
