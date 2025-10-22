@@ -8,7 +8,9 @@ metadata:
 ---
 # Overview
 
-Voiding a transaction in Recurly cancels a payment before settlement. A voided transaction is treated as if it never occurred, effectively reversing the pending payment and setting its monetary value to zero. This option is typically available only for **unsettled** transactions.
+Voiding a transaction in Recurly cancels a payment before settlement with your gateway. A voided transaction will request an authorization reversal to the customer's bank, effectively reversing the pending payment. Depending on your gateway, this process may be instant or take a day or two to reflect on the customer's bank statement.
+
+This option is available only for **unsettled** transactions. Make sure you check your gateway's batch settlement time to avoid requiring a refund. Since settlement usually happens every day, you will only be able to void transactions on the same day they occurred **prior** to your gateway's settlement cutoff time. 
 
 ### Required plan
 
@@ -18,8 +20,8 @@ These features are available to all customers on any Recurly subscription plan.
 
 * **Prerequisites:** Access to **Transactions** or **Invoices** in the Recurly Admin UI.
 * **Limitations:**
-  * Once a payment has been **voided**, its **value becomes zero**, and it **cannot be refunded** in Recurly.
-  * To return funds after a void, issue a **refund externally** (e.g., through your **payment gateway**, **wire transfer**, or **ACH**).
+  * Once a payment has been **voided** and it **cannot be refunded** in Recurly.
+  * To return funds **after** a void, issue a **refund** instead. You can use the Refund button in the UI or use our APIs.
   * You can only void a **credit invoice** if it is not in the states `closed`, `processing`, or `voided`.
 
 # Definition
@@ -28,9 +30,9 @@ A void cancels a transaction or credit invoice before settlement. It ensures tha
 
 # Key benefits
 
-* **Immediate cancellation:** Stop unsettled payments before they post.
+* **Purchase cancellation:** Stop payments from settling to avoid unnecessary refunds or delays in returning funds to your customer.
 * **Error correction:** Correct duplicate or mistaken charges on the same day.
-* **Accurate reporting:** Track voids easily through Recurly exports.
+* **Accurate reporting:** Track voided transactions easily through Recurly reporting and exports.
 
 # Key details
 
@@ -38,13 +40,14 @@ A void cancels a transaction or credit invoice before settlement. It ensures tha
 
 1. **Open** the customer’s account in the Recurly Admin UI.
 2. **Go** to the **Transactions** section and **select** the transaction to void.
-3. **Review** the transaction details to ensure it is **unsettled**.
-4. **Click** **Void transaction** to cancel it.
+3. **Review** the transaction details at your Gateway to ensure it is **unsettled**.
+4. **Click** **Refund** button to cancel it. If your gateway has not yet settled the transaction,  a void will be performed. If your settlement time has passed, Recurly will automatically attempt to **refund** the transaction.
 
 Once the transaction is voided:
 
-* The transaction's **monetary value is zeroed out** and any pending funds are reversed off the customer's bank statement. This is not always instant -- each bank will have their own timeframe associated with this process.
+* The transaction's **is marked as voided** and any pending funds are reversed off the customer's bank statement. This is not always instant -- each bank will have their own timeframe associated with this process.
 * The transaction**cannot be refunded** in Recurly or the Gateway.
+* The invoice may be in a past due state if the transaction is voided. 
 
 ## Find voided transactions
 
