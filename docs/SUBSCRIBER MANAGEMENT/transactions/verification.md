@@ -31,7 +31,7 @@ A verification represents the beginning of a consumer's relationship with your b
 
 * **Automatic verification:** Recurly manages verification logic based on your interactions with our API. Account creations, Billing Info Updates, and Trials will generate a verification where supported, and if a payment method is provided.
 * **Gateway integration:** Payments are processed seamlessly using the customer’s payment details provided in the transaction request. Verifications can also use stored payment details. See our [CVV and Billing Info verification endpoints via API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/verify_billing_infos_cvv).
-* **Lifecycle visibility:** Notifications track every step—renewal, upgrade, downgrade, and expiration.
+* **Address and CVV Verifications:** If you collect Address and CVV info from your customers, verifications can return details results from their bank to confirm they've entered the correct information. Certain gateways support rejecting transactions if the address and CVV details do not fully match.
 
 # Key details
 
