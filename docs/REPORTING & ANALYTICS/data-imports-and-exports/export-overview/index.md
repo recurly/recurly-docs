@@ -22,11 +22,11 @@ next:
 
 # Exports overview
 
-* All of the exports listed in the below table  are available through the [admin console](https://app.recurly.com/go/async_exports) and the Recurly API. 
+* All of the exports listed in the below table  are available through the [admin console](https://app.recurly.com/go/async_exports) and the Recurly API.
 
 * Exports will use the site timezone (under Site Settings) rather than the users timezone when determining what data will be exported. Additionally, the days that are requested will be exported in their entirety rather than potentially having missing data for current day.
 
-* See [New Versions](https://docs.recurly.com/v1.0/docs/export-overview#section-export-versions) for information about how changes to individual exports will create new versions of that export. 
+* See [New Versions](https://docs.recurly.com/v1.0/docs/export-overview#section-export-versions) for information about how changes to individual exports will create new versions of that export.
 
 * See [Automated Exports](https://docs.recurly.com/v1.0/docs/export-overview#section-automated-exports) for more information about access via the Recurly API.
 
@@ -124,11 +124,11 @@ next:
 <Table align={["left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Export Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Export Description
       </th>
     </tr>
@@ -136,301 +136,301 @@ next:
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Accounts](https://docs.recurly.com/docs/accounts-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Account-level information.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Account Notes](https://docs.recurly.com/docs/account-notes-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Account notes that have been created on accounts.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        [Accounts Receivable](https://docs.recurly.com/docs/accounts-receivable-export)
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        All unpaid invoices and associated aging of receivables.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Adjustments](https://docs.recurly.com/docs/adjustments-exports#section-adjustments)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Each charge and credit adjustment, including tax information broken down by jurisdiction (country, state/province, county, city, special).
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Adjustments - Coupons](https://docs.recurly.com/docs/adjustments-exports#section-adjustments-coupons)
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Each charge and credit adjustment broken out by discount per coupon redemption.  
+      <td>
+        Each charge and credit adjustment broken out by discount per coupon redemption.
 
-        *This export will only show on the Exports page if you have Multiple Coupons Per Account enabled under Coupon Settings.*
+        _This export will only show on the Exports page if you have Multiple Coupons Per Account enabled under Coupon Settings._
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Adjustments - Taxes](https://docs.recurly.com/docs/adjustments-taxes-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The Adjustments - Taxes export is for reporting on taxes calculated through Vertex and Avalara for Communications (AFC).
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Billing Info](https://docs.recurly.com/docs/billing-info-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Billing information associated with accounts.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Coupons](https://docs.recurly.com/docs/coupons-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All coupons that are set-up on the site.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Coupons - Bulk Unique Codes](https://docs.recurly.com/docs/coupons-export#section-coupons-bulk-unique-codes)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All unique codes for a bulk coupon.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Coupon Redemptions](https://docs.recurly.com/docs/coupons-export#section-coupon-redemptions)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All redemptions of coupons.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Credit Payments](https://docs.recurly.com/docs/credit-payments-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All credit payments, encompassing the use of outstanding credit balances to pay invoices.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        [Invoices — Accounts Receivable](https://docs.recurly.com/docs/accounts-receivable-export)
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        All customers who have yet to settle their invoices and gives a detailed report on the aging of all unsettled receivables.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        [Invoices — External](https://docs.recurly.com/docs/invoices-external)
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        All external invoices that are generated for accounts with subscriptions created on third-party platforms such as the Apple App Store or Google Play Store.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        [Invoices — Summary](https://docs.recurly.com/docs/invoices-summary)
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        Invoice header information and summary totals.
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Gift Cards](https://docs.recurly.com/docs/gift-cards-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All purchased gift cards.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
+        [Invoices — Accounts Receivable](https://docs.recurly.com/docs/accounts-receivable-export)
+      </td>
+
+      <td>
+        All customers who have yet to settle their invoices and gives a detailed report on the aging of all unsettled receivables.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Invoices — External](https://docs.recurly.com/docs/invoices-external)
+      </td>
+
+      <td>
+        All external invoices that are generated for accounts with subscriptions created on third-party platforms such as the Apple App Store or Google Play Store.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Invoices — Summary](https://docs.recurly.com/docs/invoices-summary)
+      </td>
+
+      <td>
+        Invoice header information and summary totals.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         [Invoices - Unused Numbers](https://docs.recurly.com/docs/invoices-exports#section-invoices-unused-numbers)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All invoice numbers not used for generated invoices.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Items — Associated Plans](doc:items-associated-plans)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All plan add-ons created from a saved item in your Item Catalog.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Items — Associated Subscriptions](doc:items-associated-subscriptions)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All subscription add-ons created from a saved item in your Item Catalog.-
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        A Revenue waterfall for your charges on a monthly basis.  
+      <td>
+        A Revenue waterfall for your charges on a monthly basis.
 
-        *This export will only show on the Exports page if the site has the[Revenue Recognition feature](https://docs.recurly.com/v1.0/docs/revenue-recognition) enabled.*
+        _This export will only show on the Exports page if the site has the[Revenue Recognition feature](https://docs.recurly.com/v1.0/docs/revenue-recognition) enabled._
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscriptions](https://docs.recurly.com/docs/subscriptions-exports)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Your customers' subscriptions to your plans.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscriptions Add-Ons](https://docs.recurly.com/docs/subscription-add-ons-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All the detailed information about all the subscription add-ons created within a specific timeframe.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscriptions Add-Ons — History](https://docs.recurly.com/docs/subscriptions-add-ons-history-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All the changes made to a subscription add-on over time.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscriptions — Churned](https://docs.recurly.com/docs/subscriptions-exports#section-subscriptions-churned)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Subscriptions that have expired and are no longer active.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscriptions — External](https://docs.recurly.com/docs/subscriptions-external)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All the detailed information on external subscriptions stored on third-party platforms like the Apple App Store or Google Play Store.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The history of each subscription including all versions created following any change to a subscription.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscription — Usage Records](https://docs.recurly.com/docs/usages-records-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Usage records logged for your customer's usage-based subscription add-ons.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Subscriptions — Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         All data on each subscription operating under a ramp priced billing model.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Transactions](https://docs.recurly.com/docs/transaction-export)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Data sent to the payment gateway when processing a transaction.
       </td>
     </tr>
   </tbody>
 </Table>
 
-**Deprecated Exports** 
+**Deprecated Exports**
 
 <Table align={["left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Export Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Export Description
       </th>
     </tr>
@@ -438,12 +438,12 @@ next:
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         [Invoices](https://docs.recurly.com/docs/invoices-exports#section-invoices-deprecated-) (Deprecated)
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        * \*Note:\*\* this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments  
+      <td>
+        * *Note:** this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments
 
         Once your site has the Credit Invoices feature enabled, this export will no longer be available.
       </td>
@@ -461,7 +461,7 @@ All exports default to using ZIP compression.
 
 1. Navigate to **Analytics-> Exports.**
 2. Change the date range to be **May 1 - May 31st.**
-3. Select **Accounts** and leave *All* chosen.
+3. Select **Accounts** and leave _All_ chosen.
 4. Click **Request Export**
 
 ### Example: All subscriptions that have expired
