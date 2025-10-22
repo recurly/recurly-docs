@@ -41,7 +41,7 @@ A renewal represents the automatic continuation of a subscription term. When a r
 
 1. **Detect** an active subscription approaching its renewal date.
    1. If **Account Updater** is active, a pre-renewal update will occur if applicable to avoid renewal failures.
-   2. Depending on the payment method, a pre-renewal push notification (UPI), or renewal reminder email will be sent to the customer's email on file. Ensure you have a valid customer email on file at all times.
+   2. Depending on the payment method, a pre-renewal push notification (UPI), or renewal reminder email will be sent to the customer's email on file. Ensure you have a valid customer email on file at all times. 
 2. **Generate** a new recurring invoice based on the subscription plan, billing cycle, and add-ons.
 3. **Communicate** with the configured payment gateway to **process the payment** automatically on the bill date or appropriate date per Net-Terms settings.
 4. **Update** the invoice and subscription status accordingly:
@@ -49,21 +49,6 @@ A renewal represents the automatic continuation of a subscription term. When a r
    2. **Past Due:** Payment failed or has a payment-method-specific caveat (e.g., Boleto). The Invoice will enter dunning to collect on the past due amount. Subscription remains **active**.
    3. **Pending**: Payment is asynchronous and has not received a status update yet (e.g. ACH, SEPA, UPI). Subscription remains **active.**
    4. **Failed:** Retries have failed to collect on the invoice and the invoice has moved into a Failed state. Dunning settings will determine the subscription's final state.
-
-## External subscription notifications
-
-External Subscription Notifications (ESNs) inform your system about **subscription lifecycle changes**, including:
-
-* **Creation**
-* **Renewal**
-* **Cancellation**
-* **Upgrades**
-* **Downgrades**
-* **Expirations**
-
-Each ESN includes full subscription details in **JSON or XML** format and can be integrated into your system for downstream processing or CRM synchronization.
-
-> See the full list of prerenewal and renewal notifications in [Prerenewal notifications](https://docs.recurly.com/recurly-subscriptions/docs/prerenewal-notifications#/)  .
 
 ## Example: Prerenewal workflow
 
