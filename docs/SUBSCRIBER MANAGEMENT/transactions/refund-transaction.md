@@ -4,7 +4,7 @@ excerpt: >-
   Refund invoices or transactions from the UI or API—full, partial, or by line
   item.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
