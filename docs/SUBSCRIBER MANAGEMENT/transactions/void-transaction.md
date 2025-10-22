@@ -65,11 +65,11 @@ To export:
 2. **Download** the **Transactions export** file.
 3. **Filter** by `status = Voided` to review all voided transactions.
 
-## Voiding credit invoices via API
+## Voiding Transactions via API
 
-To void a credit invoice using the API:
+Follow our integration guides for Payments, and look at API documentation at the links below:
 
-* The invoice must be a **credit invoice** (`type=credit`).
-* It cannot be **closed**, **processing**, or **already voided**.
+* If you are voiding an **Authorization**, use the `cancel` endpoint.
+* If you are voiding a **Purchase**, use the `refund_invoice` endpoint: [Refund Invoice](https://recurly.com/developers/api/v2021-02-25/#operation/refund_invoice) -- remember, pre-settlement transactions will attempt a void. If you are attempting to void, **do not send a partial amount.**
 
 <br />
