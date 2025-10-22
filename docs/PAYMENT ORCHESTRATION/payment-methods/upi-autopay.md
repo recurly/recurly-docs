@@ -55,7 +55,7 @@ Consumers will be required to **confirm their signup enrollment** via the UPI ap
 
 Consumers can **pause** or **cancel** subscriptions directly from their UPI app and must **confirm** transactions of **15000 INR or higher** within one hour of receiving a push notification.
 
-They also receive a **pre-renewal push notification** 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription.
+They also receive a **pre-renewal push notification** within their UPI application 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription. Please note, this is not a Recurly pre-renewal **email**, it is a push notification to the UPI App controlled by Recurly's integration to the gateway, and is not customizable.
 
 They can also receive 2FA requests for amounts higher than 15k INR, which will appear as a push notification for confirmation and authorization per the specific UPI App's design.
 
@@ -176,12 +176,12 @@ UPI AutoPay payments retries will not be allowed through typical retry logic (Ba
 
 ## Initial Signup
 
-1. During the checkout, allow your consumer to provide their VPA (Virtual Payment Address) and pass it to Recurly using documented gateway token parameters. 
+1. During the checkout, allow your consumer to provide their VPA (Virtual Payment Address) and pass it to Recurly using documented gateway token parameters.
 2. This will create an enrollment request to the gateway, and if accepted by the customer within their UPI app, will set up a subscription and, if the plan is not set up for a trial, charge the first amount according to the plan currency/amount settings. **Ensure you have INR currency and applicable pricing set up properly.**
 
 ## Renewals
 
-Renewals will occur according to plan settings, unless the customer interrupts the subscription from the UPI Application on their phone by cancelling or pausing the subscription. 
+Renewals will occur according to plan settings, unless the customer interrupts the subscription from the UPI Application on their phone by cancelling or pausing the subscription.
 
 1. 24-48 hours pre-renewal, a notification is set to the gateway to initiate the pre-renewal / pre-debit notification.
 2. As long as the customer does not pause or cancel their subscription via the UPI App, Recurly will make a payment attempt after the prenotification period has ended. This will align with the subscription due date.
