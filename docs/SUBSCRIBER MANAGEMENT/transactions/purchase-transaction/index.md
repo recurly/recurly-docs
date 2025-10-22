@@ -1,5 +1,5 @@
 ---
-title: Purchase
+title: Combined Subscription + One Time charge
 excerpt: >-
   Combine one-time charges and subscriptions into a single invoice using the
   Purchase API.
