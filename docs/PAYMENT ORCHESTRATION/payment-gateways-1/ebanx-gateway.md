@@ -205,4 +205,4 @@ When processing with UPI, any amount over 15K INR, a push notification would go 
 
 ### **Q: A subscription renewal failed, and I cannot attempt collection. Why?**
 
-* **Merchant-initiated one-time transactions** aren’t supported with UPI AutoPay. Reach out to your customer about payment options.
+* **Merchant-initiated one-time transactions** such as one-time invoices and force collections aren’t supported with UPI AutoPay. Reach out to your customer about payment options.
