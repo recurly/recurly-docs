@@ -172,7 +172,7 @@ When processing with UPI, any amount over 15K INR, a push notification would go 
 
 * Trial Subscriptions _with payment data_ -- trials without a prior UPI enrollment will not function.
 * Non-Trial Subscriptions
-* Renewals / Purchase
+* Renewals 
 
 ## Features that will not work with UPI AutoPay
 
