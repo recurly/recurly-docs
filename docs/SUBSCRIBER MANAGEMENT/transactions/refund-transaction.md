@@ -75,44 +75,6 @@ A refund reverses all or part of a previously collected charge. In Recurly, refu
 * **Line-item refunds** respect original taxability and discount allocation.
 * **Proration** applies to subscription charges when you select it on the refund screen.
 
-## Refund via API
-
-### Python example (refund by amount)
-
-```python
-import recurly
-
-client = recurly.Client(api_key="YOUR_API_KEY")
-invoice_id = "YOUR_INVOICE_ID"  # e.g., "e28zov4fw0v2" or "number-1000" or "number-TEST-FR1001"
-
-try:
-    refund_body = {
-        "type": "amount",   # "amount" | "percentage" | "line_items"
-        "amount": 10.00
-    }
-    invoice = client.refund_invoice(invoice_id, body=refund_body)
-    print(f"Invoice {invoice_id} refunded successfully.")
-except recurly.errors.NotFoundError as e:
-    print(f"Error: Invoice not found: {e}")
-except recurly.errors.ValidationError as e:
-    print(f"Error: Validation error: {e}")
-except recurly.errors.ApiError as e:
-    print(f"Error: API error: {e}")
-```
-
-### Request fields
-
-| Field        | Type    |                 Required | Description                                                                |
-| ------------ | ------- | -----------------------: | -------------------------------------------------------------------------- |
-| `type`       | string  |                        ✓ | Refund mode: `"amount"`, `"percentage"`, or `"line_items"`.                |
-| `amount`     | number  |     when `type="amount"` | Currency amount to refund.                                                 |
-| `percentage` | number  | when `type="percentage"` | Percent of the invoice total to refund. Requires **Credit Memos** enabled. |
-| `line_items` | array   | when `type="line_items"` | Specific lines to refund (IDs/quantities as applicable).                   |
-| `prorate`    | boolean |                 optional | Apply proration to subscription lines when refunding line items.           |
-| `quantity`   | integer |                 optional | Quantity to refund for a given line item (when supported).                 |
-
-> **Invoice identifiers:** You may pass the invoice UUID (e.g., `e28zov4fw0v2`) or the invoice **number** using `number-` (e.g., `number-1000`, `number-TEST-FR1001`).
-
 ## What gets created
 
 * A **refund invoice** reflecting the reversal (with taxes/discounts allocation).
@@ -120,6 +82,12 @@ except recurly.errors.ApiError as e:
 
 ## Troubleshooting
 
-* **Can’t refund—transaction unsettled:** The only option is a **void** (full refund) until the gateway settles the charge.
+* **Can’t refund—transaction unsettled:** The only option is a **void** (full reversal) until the gateway settles the charge.
 * **Gateway/bank blocked refund:** You may be **outside the gateway’s window** (often 30–60 days) or the payment method is no longer able to receive the refund. Consider issuing an **offline credit** outside the processor and record adjustments in Recurly.
 * **Validation errors (API):** Confirm `type` and required fields. For line-item refunds, ensure line IDs and quantities are valid for the original invoice.
+
+## Refund via API
+
+Follow our standard documentation in our API Documentation, linked below: 
+
+* [Refund an Invoice](https://recurly.com/developers/api/v2021-02-25/index.html#operation/refund_invoice)
