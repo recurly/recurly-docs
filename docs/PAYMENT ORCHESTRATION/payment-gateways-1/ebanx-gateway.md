@@ -180,7 +180,7 @@ When processing with UPI, any amount over 15K INR, a push notification would go 
 * Subscription upgrades: Mandates stored on the UPI app control the amount and frequency. Changing this on the recurly side could cause declines.
 * Trials without Payment data (payment data on file)
 * Non-Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so terms above Net-0 can cause payment failures.
-* One-time transactions: VPAs cannot be used for one-time transactions.
+* One-time transactions: VPAs cannot be used for one-time transactions, merchant or customer driven.
 * Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
 * Standard Retries: UPI can only be retried on the same day. UPI-specific retries are coming soon.
 * Account hierarchy: VPAs associated with a parent or child account will not be used in a recurring subscription – changing the hierarchy won’t affect existing subscriptions as a result.
