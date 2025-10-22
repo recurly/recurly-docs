@@ -47,7 +47,7 @@ purchase = {
     code: "bdumonde",
     first_name: "Benjamin",
     last_name: "Du Monde",
-		email: "bdumonde@example.com",
+email: "bdumonde@example.com",
     billing_info: {
       street1: "Avenida Nipo-brasileira 1007",
       city: "Braganca Paulista",
