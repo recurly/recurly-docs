@@ -8,7 +8,7 @@ metadata:
 ---
 # Overview
 
-Subscription renewals in Recurly automatically generate new invoices and trigger recurring payment attempts through the configured payment gateway. Each renewal maintains billing continuity for ongoing subscriptions and ensures customers are charged based on their active plan or billing cycle with the known payment method or gateway token on file.
+Subscription renewals in Recurly automatically generate new invoices and trigger recurring **purchase** attempts through the configured payment gateway. Each renewal maintains billing continuity for ongoing subscriptions and ensures customers are charged based on their active plan or billing cycle with the known payment method or gateway token on file.
 
 ### Required plan
 
@@ -22,6 +22,7 @@ These features are available to all customers on any Recurly subscription plan.
   * **Gateway delays** or **network timeouts** may temporarily mark an transaction as **Pending** until confirmation. Communication Errors between Recurly and Gateways can occur. When this happens, we will continuously retry the payment behind-the-scenes and update the transaction/invoice upon receipt of a final decision.
   * Prerenewal email notifications are only sent if **External Subscription Notifications** are enabled on your site.
   * Card and certain gateway token renewals require an NTID to be successful.
+  * Renewals will only use a "**Purchase**" transaction type and do not support separate Auth and Capture.
 
 # Definition
 
@@ -40,6 +41,7 @@ A renewal represents the automatic continuation of a subscription term. When a r
 
 1. **Detect** an active subscription approaching its renewal date.
    1. If **Account Updater** is active, a pre-renewal update will occur if applicable to avoid renewal failures.
+   2. Depending on the payment method, a pre-renewal push notification (UPI), or renewal reminder email will be sent to the customer's email on file. Ensure you have a valid customer email on file at all times.
 2. **Generate** a new recurring invoice based on the subscription plan, billing cycle, and add-ons.
 3. **Communicate** with the configured payment gateway to **process the payment** automatically.
 4. **Update** the invoice and subscription status accordingly:
