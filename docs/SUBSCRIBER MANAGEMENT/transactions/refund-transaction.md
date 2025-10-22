@@ -21,8 +21,8 @@ These features are available to all customers on any Recurly subscription plan.
 * **Prerequisites:** Staff access to **Invoices** and **Transactions** in the Recurly Admin UI, or API credentials with scope to refund invoices.
 * **Limitations:**
   * Refunds are always issued back to the **original payment method** (e.g., the same card or bank account for ACH). They are also tied to the original gateway used for the authorization or payment and cannot presently be routed to a different payment method or gateway.
-  * **Unsettled** transactions can be **voided** instead of **refunded**. Some gateways also allow refunds against unsettled transactions, but this is not recommended.
-  * **Voided** and **Uncaptured Authorization**transactions cannot be refunded.
+  * **Unsettled** transactions can be **[voided](https://docs.recurly.com/recurly-subscriptions/docs/void-transaction#/)** instead of **refunded**. Some gateways also allow refunds against unsettled transactions, but this is not recommended.
+  * **[Voided](https://docs.recurly.com/recurly-subscriptions/docs/void-transaction#/)** and **Uncaptured Authorization**transactions cannot be refunded.
   * Percentage refunds on invoices require the **Credit Memos** feature flag to be enabled.
 
 # Definition
