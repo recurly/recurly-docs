@@ -69,7 +69,7 @@ To export:
 
 Follow our integration guides for Payments, and look at API documentation at the links below:
 
-* If you are voiding an **Authorization**, use the `cancel` endpoint.
+* If you are voiding an **Authorization**, use the `cancel` endpoint: [Cancel Authorization](https://recurly.com/developers/api/v2021-02-25/index.html#operation/cancelPurchase)
 * If you are voiding a **Purchase**, use the `refund_invoice` endpoint: [Refund Invoice](https://recurly.com/developers/api/v2021-02-25/#operation/refund_invoice) -- remember, pre-settlement transactions will attempt a void. If you are attempting to void, **do not send a partial amount.**
 
 <br />
