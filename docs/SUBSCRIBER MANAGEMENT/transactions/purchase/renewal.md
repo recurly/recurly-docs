@@ -43,7 +43,7 @@ A renewal represents the automatic continuation of a subscription term. When a r
    1. If **Account Updater** is active, a pre-renewal update will occur if applicable to avoid renewal failures.
    2. Depending on the payment method, a pre-renewal push notification (UPI), or renewal reminder email will be sent to the customer's email on file. Ensure you have a valid customer email on file at all times.
 2. **Generate** a new recurring invoice based on the subscription plan, billing cycle, and add-ons.
-3. **Communicate** with the configured payment gateway to **process the payment** automatically.
+3. **Communicate** with the configured payment gateway to **process the payment** automatically on the bill date or appropriate date per Net-Terms settings.
 4. **Update** the invoice and subscription status accordingly:
    1. **Paid:** The renewal succeeded and payment was confirmed. The subscription remains **active**.
    2. **Past Due:** Payment failed or has a payment-method-specific caveat (e.g., Boleto). The Invoice will enter dunning to collect on the past due amount. Subscription remains **active**.
