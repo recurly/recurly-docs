@@ -51,7 +51,7 @@ Once the transaction is voided:
 
 ## Find voided transactions
 
-You can locate voided transactions through the **Transactions export**:
+You can locate voided transactions through the **Transactions export** or **Reporting**:
 
 | Column          | Description                                                |
 | --------------- | ---------------------------------------------------------- |
