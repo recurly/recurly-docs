@@ -32,7 +32,7 @@ You can find API documentation for sending Tax IDs and Tax ID Types in our V3 AP
 
 * Documentation
 
-**Fields to look for: **
+**Fields to look for:**
 
 * `tax_identifier`: This is the Tax ID Number for the consumer. It is required when servicing LATAM customers.
 * `tax_identifier_type`: This is the Tax ID Type for the specific tax ID being sent in the payload. You only need to send this when the value is `cpf` or `cnpj`. Otherwise, only send the Tax ID.
@@ -52,7 +52,9 @@ Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and 
 
 ### Pix Automatico
 
-<br />
+Pix Automatico is supported on Ebanx, and requires the integrator to render the returned QR code in their checkout flow for a customer to scan. You may do this in any fashion you like, such as an on-page view. However, sandbox behavior differs from production. 
+
+Pix Automatico requires usage of our V3 APIs, and specifying the `type` field with an enum of `pix_automatico`. The initial response to a subscription integration 
 
 ## Boleto
 
