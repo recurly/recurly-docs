@@ -229,8 +229,24 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment, and disabling access should a consumer decide to cancel their subscription from within their mobile banking applicaiton. 
 
+## Sandbox Behavior 
+
+In Step 2, Sandbox return_url behavior is outlined, but requires a bit more explanation. You may render this URL in whatever way you wish (modal, full redirect, etc.) however it is not recommended to put an immense amount of effort into it as this is not a production workflow. 
+
+To help with simulating a consumer's bank app, the gateway has provided a simulation site which can "pretend" to ferry along an enrollment signup and transaction authorization.
+
+**Step 1:** Upon visiting the return URL, immediately navigate to **Go to enrollment simulator.**
+
+**Step 2:** Approve the enrollment (for a success use case) by choosing 'Accept Agreement'. You may also deny the use case to test a consumer declining the enrollment request. This will result in a 404 page.
+
+**Step 3:** Return to the original simulator URL and click **Authorized = YES** on page, to simulate a successful initial authorization for payment. This will result in a mostly blank page with a confusing response. Unfortunately, this is the limitation of the third party simulator.
+
+**Step 4:** You're done!
+
 ***
 
 ## Next steps
 
-Now that you can create new [accounts](https://app.recurly.com/go/accounts), [subscriptions](https://app.recurly.com/go/subscriptions), and one-time payments, explore the [Subscription Management](https://docs.recurly.com/v1.1/docs/managing-subscription-methods-guides#/) guide to learn how to modify subscriptions after the initial purchase.
+Now that you can create new  [subscriptions](https://app.recurly.com/go/subscriptions), explore payment method guide to explore other use cases and limitations related to the [Pix Automatico payment method](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/).
+
+<br />
