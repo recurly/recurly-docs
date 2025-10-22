@@ -30,6 +30,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
 * Recurly.js is not supported with UPI AutoPay. Use our API to facilitate requests.
 * Refunds through Ebanx must be the **full** amount.
+* Chargebacks are not supported.
 * See the [UPI AutoPay payment method](https://docs.recurly.com/docs/upi-autopay#/) for additional restrictions and information.
 
 # Definition
@@ -172,7 +173,7 @@ When processing with UPI, any amount over 15K INR, a push notification would go 
 
 * Trial Subscriptions _with payment data_ -- trials without a prior UPI enrollment will not function.
 * Non-Trial Subscriptions
-* Renewals 
+* Renewals
 
 ## Features that will not work with UPI AutoPay
 
