@@ -56,12 +56,11 @@ A refund reverses all or part of a previously collected charge. In Recurly, refu
 
 ## Refund types at a glance
 
-| Type             | What it does                                                   | Typical use                                             |
-| ---------------- | -------------------------------------------------------------- | ------------------------------------------------------- |
-| Full             | Returns the entire original charge.                            | Billing error or immediate cancellation.                |
-| Amount           | Returns an exact currency amount.                              | Goodwill or partial service issue.                      |
-| Line items       | Returns selected lines with optional proration and quantities. | Plan swaps, partial periods, or item-level adjustments. |
-| Void (unsettled) | Cancels an **unsettled** transaction before settlement.        | Same-day mistakes or customer cancellations.            |
+| Type       | What it does                                                   | Typical use                                             |
+| ---------- | -------------------------------------------------------------- | ------------------------------------------------------- |
+| Full       | Returns the entire original charge.                            | Billing error or immediate cancellation.                |
+| Amount     | Returns an exact currency amount.                              | Goodwill or partial service issue.                      |
+| Line items | Returns selected lines with optional proration and quantities. | Plan swaps, partial periods, or item-level adjustments. |
 
 ## Credit handling options
 
