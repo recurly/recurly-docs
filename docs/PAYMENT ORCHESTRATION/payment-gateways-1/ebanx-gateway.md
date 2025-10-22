@@ -178,7 +178,7 @@ When processing with UPI, any amount over 15K INR, a push notification would go 
 
 * Transaction type of Authorize and Capture, and Void. UPI AutoPay transactions must be refunded.
 * Subscription upgrades: Mandates stored on the UPI app control the amount and frequency. Changing this on the recurly side could cause declines.
-* Trials without Enrollment (payment data on file)
+* Trials without Payment data (payment data on file)
 * Non-Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so terms above Net-0 can cause payment failures.
 * One-time transactions: VPAs cannot be used for one-time transactions.
 * Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
