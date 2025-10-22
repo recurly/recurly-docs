@@ -47,35 +47,7 @@ A verification represents the beginning of a consumer's relationship with your b
    3. **Pending**: Payment is asynchronous and has not received a status update yet (e.g. ACH, SEPA, UPI). Subscription remains **active.**
    4. **Failed:** Retries have failed to collect on the invoice and the invoice has moved into a Failed state. Dunning settings will determine the subscription's final state.
 
-## External subscription notifications
-
-External Subscription Notifications (ESNs) inform your system about **subscription lifecycle changes**, including:
-
-* **Creation**
-* **Renewal**
-* **Cancellation**
-* **Upgrades**
-* **Downgrades**
-* **Expirations**
-
-Each ESN includes full subscription details in **JSON or XML** format and can be integrated into your system for downstream processing or CRM synchronization.
-
-> See the full list of prerenewal and renewal notifications in [Prerenewal notifications](https://docs.recurly.com/recurly-subscriptions/docs/prerenewal-notifications#/)  .
-
-## Example: Prerenewal workflow
-
-| Step | Action                           | Description                                                                            |
-| ---- | -------------------------------- | -------------------------------------------------------------------------------------- |
-| 1    | **Prerenewal notification sent** | Alerts your system or customer of an upcoming renewal.                                 |
-| 2    | **Invoice generated**            | Recurly creates a new invoice and attempts to charge the saved payment method.         |
-| 3    | **Transaction created**          | Payment gateway processes the transaction.                                             |
-| 4    | **Invoice updated**              | Recurly updates the invoice to **Paid** or **Past Due** depending on gateway response. |
-
-## Monitoring renewals
-
-* Use the **Invoices** section to **track renewal invoices** and statuses.
-* Use the **Subscriptions** section to **view renewal history** and upcoming renewal dates.
-* Enable **Webhooks** or **External Subscription Notifications** to integrate renewals into your own system.
+<br />
 
 ## Troubleshooting
 
