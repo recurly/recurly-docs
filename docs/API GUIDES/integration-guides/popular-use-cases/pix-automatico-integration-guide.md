@@ -47,24 +47,23 @@ purchase = {
     code: "bdumonde",
     first_name: "Benjamin",
     last_name: "Du Monde",
-	email: "bdumonde@example.com",
+    email: "bdumonde@example.com",
     billing_info: {
       street1: "Avenida Nipo-brasileira 1007",
       city: "Braganca Paulista",
       region: "BR",
-			postal_code: "123456",
+      postal_code: "123456",
       country: "BR",
-			phone: "1234679099"
+      phone: "1234679099"
     },
     type: "pix_automatico",
     tax_identifier: "brazilian-cpf-value",
-		tax_identifier_type: "cpf"
+    tax_identifier_type: "cpf"
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
   ]
 }
-
 invoice_collection = @client.create_purchase(body: purchase)
 ```
 ```javascript
