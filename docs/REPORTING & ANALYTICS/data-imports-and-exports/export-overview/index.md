@@ -129,21 +129,21 @@ next:
   <tbody>
     <tr>
       <td>
-        [Accounts](https://docs.recurly.com/docs/accounts-export)
-      </td>
-
-      <td>
-        Account-level information.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         [Account Notes](https://docs.recurly.com/docs/account-notes-export)
       </td>
 
       <td>
         Account notes that have been created on accounts.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Accounts](https://docs.recurly.com/docs/accounts-export)
+      </td>
+
+      <td>
+        Account-level information.
       </td>
     </tr>
 
@@ -191,6 +191,16 @@ next:
 
     <tr>
       <td>
+        [Coupon Redemptions](https://docs.recurly.com/docs/coupons-export#section-coupon-redemptions)
+      </td>
+
+      <td>
+        All redemptions of coupons.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         [Coupons](https://docs.recurly.com/docs/coupons-export)
       </td>
 
@@ -211,21 +221,21 @@ next:
 
     <tr>
       <td>
-        [Coupon Redemptions](https://docs.recurly.com/docs/coupons-export#section-coupon-redemptions)
-      </td>
-
-      <td>
-        All redemptions of coupons.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         [Credit Payments](https://docs.recurly.com/docs/credit-payments-export)
       </td>
 
       <td>
         All credit payments, encompassing the use of outstanding credit balances to pay invoices.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Gift Cards](https://docs.recurly.com/docs/gift-cards-export)
+      </td>
+
+      <td>
+        All purchased gift cards.
       </td>
     </tr>
 
@@ -256,16 +266,6 @@ next:
 
       <td>
         Invoice header information and summary totals.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Gift Cards](https://docs.recurly.com/docs/gift-cards-export)
-      </td>
-
-      <td>
-        All purchased gift cards.
       </td>
     </tr>
 
@@ -323,6 +323,16 @@ next:
 
     <tr>
       <td>
+        [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
+      </td>
+
+      <td>
+        The history of each subscription including all versions created following any change to a subscription.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         [Subscriptions Add-Ons](https://docs.recurly.com/docs/subscription-add-ons-export)
       </td>
 
@@ -363,31 +373,21 @@ next:
 
     <tr>
       <td>
-        [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
-      </td>
-
-      <td>
-        The history of each subscription including all versions created following any change to a subscription.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscription — Usage Records](https://docs.recurly.com/docs/usages-records-export)
-      </td>
-
-      <td>
-        Usage records logged for your customer's usage-based subscription add-ons.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         [Subscriptions — Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
       </td>
 
       <td>
         All data on each subscription operating under a ramp priced billing model.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Subscriptions — Usage Records](https://docs.recurly.com/docs/usages-records-export)
+      </td>
+
+      <td>
+        Usage records logged for your customer's usage-based subscription add-ons.
       </td>
     </tr>
 
@@ -443,23 +443,25 @@ All exports default to using ZIP compression.
 
 1. Navigate to **Analytics-> Exports.**
 2. Select **Accounts**
-3. Select the version, account status and export on filters
-4. Select **time range** to  **Between** and **start date** to May 1 and **end date** to May 31
+3. Select the **Versions**, **Account status** and **Export on** filters
+4. Select **Time range** to  **Between** and **Start date** to May 1 and **End date** to May 31
 5. Click **Generate Export**
 
 ### Example: All subscriptions that have expired
 
 1. Navigate to **Analytics -> Exports.**
-2. Leave the date range as **All Time.**
-3. Select **Subscriptions - Churned.**
-4. Click **Request Export**
+2. Select **Subscriptions - Churned.**
+3. Select the **Versions** filter
+4. Select **Time range** to  **All Time** 
+5. Click **Generate Export**
 
 ### Example: All coupons redeemed in July
 
 1. Navigate to **Analytics -> Exports.**
-2. Change the date range to be **July 1 - July 31st**
-3. Select **Coupon Redemptions.**
-4. Click **Request Export.**
+2. Select **Coupon Redemptions.**
+3. Select the **Versions** filter
+4. Select **Time range** to  **Between** and **Start date** to July 1 and **End date** to July 31
+5. Click **Generate Export.**
 
 ## Helpful tips: combining exports
 
