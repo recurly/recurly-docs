@@ -20,6 +20,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Accounts Export" section in the Recurly user guide helps users grasp comprehensive insights about individual accounts. This data-rich section assists in efficiently managing and understanding account specifics with a myriad of filters and detailed export content.
 
+<Image align="center" border={false} width="800px" src="https://files.readme.io/243ba4e6341301742d3d2072043a425daa7750908f66e375b56b68781b60e0f9-image.png" />
+
+<br />
+
 # Filters
 
 ### Versions Filter
