@@ -32,12 +32,6 @@ next:
 
 * See our **Recurly Exports ERD**:
 
-<HTMLBlock>{`
-<div class="image-zoomer-container">
-  <img src="https://files.readme.io/1ad2b7e0c37b5d737bf6bd38c8740318f482cf2ced06df506d105f32233ebc6e-recurly_exports_erd_20241120.svg" alt="Zoomable Image" id="zoom-image">
-</div>
-`}</HTMLBlock>
-
 <br />
 
 * <HTMLBlock>{`
@@ -75,7 +69,7 @@ next:
         </style>
   </head>
   <body>
-      <a href="https://files.readme.io/1ad2b7e0c37b5d737bf6bd38c8740318f482cf2ced06df506d105f32233ebc6e-recurly_exports_erd_20241120.svg" class="download-button">Download the image</a>
+      <a href="https://files.readme.io/1ad2b7e0c37b5d737bf6bd38c8740318f482cf2ced06df506d105f32233ebc6e-recurly_exports_erd_20241120.svg" class="download-button">Download the Recurly Exports ERD</a>
   </body>
   </html>
   `}</HTMLBlock>
@@ -433,7 +427,7 @@ next:
       </td>
 
       <td>
-        * *Note:** this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments
+        * _Note:_* this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments
 
         Once your site has the Credit Invoices feature enabled, this export will no longer be available.
       </td>
@@ -450,7 +444,7 @@ All exports default to using ZIP compression.
 ### Examples: All accounts created in May
 
 1. Navigate to **Analytics-> Exports.**
-2. Select **Accounts** 
+2. Select **Accounts**
 3. Select the version, account status and export on filters
 4. Select **time range** to  **Between** and **start date** to May 1 and **end date** to May 31
 5. Click **Generate Export**
