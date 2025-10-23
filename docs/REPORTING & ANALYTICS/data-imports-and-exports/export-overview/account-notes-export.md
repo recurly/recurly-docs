@@ -20,17 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Account Notes" section is dedicated to helping Recurly users manage and export internal notes associated with various accounts effectively. The export function in this section will help users identify any internal notes published on their accounts with ease, thus aiding in seamless operations and record-keeping.
 
-<Image align="right" border={false} width="8000px" src="https://files.readme.io/e5078ffeee8416597931a98d6a22bf1bf15b41588a8a1f794cd48d52fd4a68dd-image.png" />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
+<Image border={false} src="https://files.readme.io/7ea101390a61bd2d8d46b7452e08b1a8e97960e69c8fe6a2175b46ce39ac6a3b-image.png" />
 
 <br />
 
