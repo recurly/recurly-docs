@@ -30,8 +30,6 @@ next:
 
 * See [Automated Exports](https://docs.recurly.com/v1.0/docs/export-overview#section-automated-exports) for more information about access via the Recurly API.
 
-* See our **Recurly Exports ERD**:
-
 <br />
 
 * <HTMLBlock>{`
@@ -109,7 +107,7 @@ next:
         </style>
   </head>
   <body>
-      <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download our complete export schema</a>
+      <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download the complete Exports schema</a>
   </body>
   </html>
   `}</HTMLBlock>
