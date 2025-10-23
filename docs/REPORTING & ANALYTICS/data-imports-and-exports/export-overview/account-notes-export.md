@@ -22,7 +22,7 @@ The "Account Notes" section is dedicated to helping Recurly users manage and exp
 
 <br />
 
-<Image align="right" border={true} width="8000px" src="https://files.readme.io/e5078ffeee8416597931a98d6a22bf1bf15b41588a8a1f794cd48d52fd4a68dd-image.png" className="border" />
+<Image align="right" border={false} width="8000px" src="https://files.readme.io/e5078ffeee8416597931a98d6a22bf1bf15b41588a8a1f794cd48d52fd4a68dd-image.png" />
 
 <br />
 
