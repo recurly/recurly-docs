@@ -25,14 +25,24 @@ Recurly currently supports Pix Automático transactions on Ebanx gateway.
 
 ### Prerequisites & supported gateways
 
-* A connection with Ebanx gateway if your Integration is via Recurly.JS.
-* Your site must support transactions in one of **CURRENCIES**.
+* A connection with [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) gateway.
+* The ability to work with APIs and QR Code rendering. This integration will demand technical proficiency with Base64 encoded values.
+* Your site must support transactions in  **BRL**.
 
 ### Limitations
 
-* Supports transactions in **CURRENCIES** currency only as specified by Pix Automático.
-* The integration process requires setting up with Ebanx  and Recurly.js and demands technical proficiency.
+* Supports transactions in *BRL* currency only as specified by Pix Automático.
+* The integration process requires setting up with Ebanx  and Recurly's APIs and demands technical proficiency.
 * One-time customer or merchant initiated Pix transactions are not supported. Only subscription signup and automatic renewals are supported.
+* Flexible Schedules and Net Terms / Modifying the Renewal Date are not supported by this payment method. PIX demands date of renewal remain consistent with the original signup. If renewal dates are changed without signing up again, the renewals will fail. 
+* PIX requires subscription frequencies be one of: 
+  * Weekly, Monthly, Quarterly, Half-yearly, or Yearly. This can translate into other customizable Billing frequencies such as 7 Days, 30 Days, every 4 Weeks, Every 3 Months, Every 180 Days, and so on. Schedules that fall out of this pattern will be met with a validation error and the subscription signup will be unsuccessful. 
+* Other limitations include:
+  * Invoice / Calendar Aggregation
+  * Parent/Child Accounts
+  * Multiple Subscriptions per Account is not supported
+  * Proration during a Subscription Upgrade or change is not supported
+  * Funds verification and Wallet payment instrument visibility are not supported
 
 # Description
 
@@ -47,8 +57,6 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 * **Subscriptions** Customers can use their Pix wallet to sign up for subscriptions. If one-time transactions are necessary, Pix is not supported.
 
-* **R.js Token utilization:** Use Pix Automático Recurly.js tokens to carry out transactions via V3 Recurly endpoints.
-
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
 # FAQs
@@ -57,13 +65,16 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 **A**: Pix Automático is directly supported through the below gateway offering. Refer to the associated documentation for setup and troubleshooting guidance:
 
-* Ebanx
+* [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/)
+
+#### **Q: Does Pix Automático use Recurly.js?**
+
+**A**: Pix Automático requires rendering of an on-page QR code during signup. You will receive a Base64 QR code in the initial payload response. See our Integration guide for more details.
 
 #### **Q: How can I integrate my checkout solution to use Pix Automático?**
 
 **A**: Pix Automático is supported through Recurly.js and our V3 APIs. You can find links to our API guide and Recurly.js guides below:
 
-* API Guide:
-* Recurly.js guide
+* [Pix Automatico API Guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/)
 
 <br />
