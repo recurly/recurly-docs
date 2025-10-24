@@ -57,6 +57,12 @@ Available for use with Recurly.js for subscription signups for Recurly Merchants
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
+## Customer Bank interactions
+
+**What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements)  from within their banking application.
+
+* Users can cancel the entire subscription by revoking their enrollment for that subscription. This will cause a complete cancellation of the active subscription within Recurly.
+
 ## Required Fields
 
 Mercado Pago will require you always send certain data:
