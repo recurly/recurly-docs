@@ -31,12 +31,13 @@ Recurly currently supports Pix Automático transactions on Ebanx gateway.
 
 ### Limitations
 
-* Supports transactions in *BRL* currency only as specified by Pix Automático.
+* Supports transactions in _BRL_ currency only as specified by Pix Automático.
 * The integration process requires setting up with Ebanx  and Recurly's APIs and demands technical proficiency.
 * One-time customer or merchant initiated Pix transactions are not supported. Only subscription signup and automatic renewals are supported.
-* Flexible Schedules and Net Terms / Modifying the Renewal Date are not supported by this payment method. PIX demands date of renewal remain consistent with the original signup. If renewal dates are changed without signing up again, the renewals will fail. 
-* PIX requires subscription frequencies be one of: 
-  * Weekly, Monthly, Quarterly, Half-yearly, or Yearly. This can translate into other customizable Billing frequencies such as 7 Days, 30 Days, every 4 Weeks, Every 3 Months, Every 180 Days, and so on. Schedules that fall out of this pattern will be met with a validation error and the subscription signup will be unsuccessful. 
+* Flexible Schedules and Net Terms / Modifying the Renewal Date are not supported by this payment method. PIX demands date of renewal remain consistent with the original signup and that there are no more than one (1) successful transaction attempt within the billing period. If renewal dates are changed without signing up again, the renewals will fail.
+* Manual or forced conversion of trials is not supported by this payment method as Pix demands a static start date for the first renewal which is decided based on plan data associated with the subscription. Conversion attempts prior to this date are not supported and will fail.
+* PIX requires subscription frequencies be one of:
+  * Weekly, Monthly, Quarterly, Half-yearly, or Yearly. This can translate into other customizable Billing frequencies such as 7 Days, 30 Days, every 4 Weeks, Every 3 Months, Every 180 Days, and so on. Schedules that fall out of this pattern will be met with a validation error and the subscription signup will be unsuccessful.
 * Other limitations include:
   * Invoice / Calendar Aggregation
   * Parent/Child Accounts
