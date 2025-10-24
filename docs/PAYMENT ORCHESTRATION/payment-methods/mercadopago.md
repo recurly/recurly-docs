@@ -29,9 +29,9 @@ Recurly currently supports Mercado Pago transactions on Ebanx gateway.
 * Supports transactions in BRL, ARS, CPL, MXN, or UYU currencies only as specified by Mercado Pago.
 * The integration process requires setting up with Ebanx  and Recurly.js and demands technical proficiency.
 * One-time customer or merchant initiated MercadoPago transactions (including force collections) are not supported. Only subscription signup and automatic renewals are supported.
-* Other limitations include: 
-  * Invoice / Calendar Aggregation 
-  * Parent/Child Accounts 
+* Other limitations include:
+  * Invoice / Calendar Aggregation
+  * Parent/Child Accounts
   * Multiple Subscriptions per Account is not supported
   * Proration during a Subscription Upgrade or change is not supported
   * Funds verification and Wallet payment instrument visibility are not supported
@@ -52,6 +52,15 @@ Available for use with Recurly.js for subscription signups for Recurly Merchants
 * **R.js Token utilization:** Use Mercado Pago Recurly.js tokens to carry out transactions via V3 Recurly endpoints.
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
+
+## Required Fields
+
+Mercado Pago will require you always send certain data:
+
+* Customer Billing Address
+* Customer Email Address
+* Customer Phone Number
+* Tax ID / Tax ID Type when the Region requires it (Brazil)
 
 # FAQs
 
