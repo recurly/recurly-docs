@@ -1,5 +1,5 @@
 ---
-title: Ebanx (APAC and LATAM)
+title: Ebanx (APAC)
 excerpt: >-
   Ebanx Gateway: A secure and innovative payment platform enabling seamless
   transactions, advanced data analytics, and enhanced customer experiences for
