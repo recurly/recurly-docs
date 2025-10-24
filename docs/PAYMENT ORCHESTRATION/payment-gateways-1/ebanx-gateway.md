@@ -5,7 +5,7 @@ excerpt: >-
   transactions, advanced data analytics, and enhanced customer experiences for
   businesses wanting to expand internationally.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
