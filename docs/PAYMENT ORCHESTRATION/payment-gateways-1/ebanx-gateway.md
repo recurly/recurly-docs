@@ -30,13 +30,17 @@ This feature or setting is available to all customers on any Recurly subscriptio
   * Read more about the UPI App in [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
 * Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
 
+### PIX and MercadoPago limitations 
+
+* Pix requires restrictive date and frequency adherence. Changing the renewal date, force converting trials, and odd frequencies are not supported by the payment method.
+
 ### General Limitations
 
-* Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported with UPI AutoPay.
-* Recurly.js is not supported with UPI AutoPay. Use our API to facilitate requests.
+* Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported.
+* Recurly.js is not supported with UPI AutoPay or Pix Automatico. Use our API to facilitate requests.
 * Refunds through Ebanx must be the **full** amount.
 * Chargebacks are not reflected / supported at this time.
-* See the [UPI AutoPay payment method](https://docs.recurly.com/docs/upi-autopay#/) for additional restrictions and information.
+* See individual Payment Method pages for additional limitations.
 
 ### LATAM Limitations 
 
