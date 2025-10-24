@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ## Limitations
 
-### UPI / India 
+### UPI / India
 
 * Customer mandates cannot be migrated to Recurly if they exist on another platform. Customers must cancel those mandates and resubscribe per RBI and NPCI rules. Why? Enrollments are tightly coupled with the acquiring partner, merchant, and the consumer. During a migration, typically the acquiring partner will change, thus requiring re-enrollment.
 * RBI mandates limit individual transactions to 15000 INR without going through a consumer two-factor flow.
@@ -30,19 +30,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
   * Read more about the UPI App in [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) documentation.
 * Billing Info updates are not supported with UPI AutoPay. If customers need to update their VPA (see definitions below) or bank accounts, they must cancel their existing mandate/subscription and re-subscribe.
 
-### PIX and MercadoPago limitations 
-
-* Pix requires restrictive date and frequency adherence. Changing the renewal date, force converting trials, and odd frequencies are not supported by the payment method.
-
 ### General Limitations
 
 * Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported.
-* Recurly.js is not supported with UPI AutoPay or Pix Automatico. Use our API to facilitate requests.
+* Recurly.js is not supported with UPI AutoPay. Use our API to facilitate requests.
 * Refunds through Ebanx must be the **full** amount.
 * Chargebacks are not reflected / supported at this time.
 * See individual Payment Method pages for additional limitations.
-
-### LATAM Limitations 
 
 # Definition
 
