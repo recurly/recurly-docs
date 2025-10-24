@@ -60,14 +60,23 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
-## Customer Bank interactions 
+## Customer Bank interactions
 
-**What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements) and individual renewal transactions from within their banking application. 
+**What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements) and individual renewal transactions from within their banking application.
 
 * When a Pix automatic transaction is submitted, consumers have a 2 full days before the official processing date to cancel the pending request. When this happens, Recurly will consume a webhook and mark the scheduled transaction as declined. You will need to reach out to your customer to discuss payment options, or you have the option to cancel the subscription, or expire the subscription through dunning if you wish.
-* Users can cancel the entire subscription by revoking their enrollment for that subscription. This will cause a complete cancellation of the active subscription within Recurly. 
+* Users can cancel the entire subscription by revoking their enrollment for that subscription. This will cause a complete cancellation of the active subscription within Recurly.
 
 **What can you do with Pix Subscriptions in Recurly:** When expiring a subscription, either manually or through dunning, Recurly will send a revocation request to the gateway to expire the mandate within the customer's bank app.
+
+## Required Fields
+
+Pix Automático will require you always send certain data: 
+
+* Customer Billing Address
+* Customer Email Address
+* Customer Phone Number
+* Tax ID / Tax ID Type when the Region requires it (Brazil)
 
 # FAQs
 
