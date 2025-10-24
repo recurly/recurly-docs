@@ -1,5 +1,9 @@
 ---
-title: MercadoPago
+title: Mercado Pago
+excerpt: >-
+  Mercado Pago is Latin America's largest digital payment platform and wallet,
+  valued for offering secure, versatile payment methods such as subscriptions,
+  which promotes financial inclusion for millions.
 deprecated: false
 hidden: true
 metadata:
