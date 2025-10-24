@@ -160,7 +160,7 @@ When in sandbox ONLY, the response will contain a response URL for simulating in
 
 ## Transaction, Invoice, and Subscription Status
 
-When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/), as with any asynchronous payment method in Recurly, subscriptions are immediately active, but transactions and invoices will be in a scheduled/processing state respectively. If customers do not authorize a subscription enrollment or payment via the UPI App, transactions will fail and subscriptions will be expired upon consumer rejection.
+When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/), as with any asynchronous payment method in Recurly, subscriptions are immediately active, but transactions and invoices will be in a scheduled/processing state respectively until the pre-renewal notification receives an update and the payment is triggered. If customers do not authorize a subscription enrollment or payment via the UPI App, transactions will fail and subscriptions will be expired upon consumer rejection.
 
 See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) for more information.
 
