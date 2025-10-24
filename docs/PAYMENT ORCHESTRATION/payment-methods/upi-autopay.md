@@ -55,7 +55,13 @@ Consumers will be required to **confirm their signup enrollment** via the UPI ap
 
 Consumers can **pause** or **cancel** subscriptions directly from their UPI app and must **confirm** transactions of **15000 INR or higher** within one hour of receiving a push notification.
 
-They also receive a **pre-renewal push notification** within their UPI application 24–48 hours prior to their next billing date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription. Please note, this is not a Recurly pre-renewal **email**, it is a push notification to the UPI App controlled by Recurly's integration to the gateway, and is not customizable.
+They also receive a **pre-debit push notification** within their UPI application 48 hours prior to their next charge date, giving them another opportunity to pause or cancel the subscription prior to charging. This push notification occurs for every charge for the lifetime of their subscription. Please note, this is not a Recurly pre-renewal **email**, it is a push notification to the UPI App controlled by Recurly's integration to the gateway, and is not customizable.
+
+<Callout icon="📘" theme="info">
+  **Pre-Debit Push Notification and Transaction Timing**
+
+  The pre-debit notification will be sent on invoice creation, so the transaction will remain in a scheduled state for several days before the payment is sent to allow for RBI mandate timeframes to pass. 
+</Callout>
 
 They can also receive 2FA requests for amounts higher than 15k INR, which will appear as a push notification for confirmation and authorization per the specific UPI App's design.
 
