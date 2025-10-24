@@ -1,11 +1,11 @@
 ---
-title: Ebanx (APAC and LATAM)
+title: Ebanx (APAC)
 excerpt: >-
   Ebanx Gateway: A secure and innovative payment platform enabling seamless
   transactions, advanced data analytics, and enhanced customer experiences for
   businesses wanting to expand internationally.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ## Limitations
 
-### UPI / India 
+### UPI / India
 
 * Customer mandates cannot be migrated to Recurly if they exist on another platform. Customers must cancel those mandates and resubscribe per RBI and NPCI rules. Why? Enrollments are tightly coupled with the acquiring partner, merchant, and the consumer. During a migration, typically the acquiring partner will change, thus requiring re-enrollment.
 * RBI mandates limit individual transactions to 15000 INR without going through a consumer two-factor flow.
@@ -32,13 +32,11 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### General Limitations
 
-* Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported with UPI AutoPay.
+* Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported.
 * Recurly.js is not supported with UPI AutoPay. Use our API to facilitate requests.
 * Refunds through Ebanx must be the **full** amount.
 * Chargebacks are not reflected / supported at this time.
-* See the [UPI AutoPay payment method](https://docs.recurly.com/docs/upi-autopay#/) for additional restrictions and information.
-
-### LATAM Limitations 
+* See individual Payment Method pages for additional limitations.
 
 # Definition
 
