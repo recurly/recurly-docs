@@ -54,11 +54,20 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 # Key details
 
-### Supported features
+## Supported features
 
 * **Subscriptions** Customers can use their Pix wallet to sign up for subscriptions. If one-time transactions are necessary, Pix is not supported.
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
+
+## Customer Bank interactions 
+
+**What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements) and individual renewal transactions from within their banking application. 
+
+* When a Pix automatic transaction is submitted, consumers have a 2 full days before the official processing date to cancel the pending request. When this happens, Recurly will consume a webhook and mark the scheduled transaction as declined. You will need to reach out to your customer to discuss payment options, or you have the option to cancel the subscription, or expire the subscription through dunning if you wish.
+* Users can cancel the entire subscription by revoking their enrollment for that subscription. This will cause a complete cancellation of the active subscription within Recurly. 
+
+**What can you do with Pix Subscriptions in Recurly:** When expiring a subscription, either manually or through dunning, Recurly will send a revocation request to the gateway to expire the mandate within the customer's bank app.
 
 # FAQs
 
@@ -70,11 +79,11 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 #### **Q: Does Pix Automático use Recurly.js?**
 
-**A**: Pix Automático requires rendering of an on-page QR code during signup. You will receive a Base64 QR code in the initial payload response. See our Integration guide for more details.
+**A**: Pix Automático requires rendering of an **on-page QR code** during signup. You will receive a Base64 QR code in the initial payload response. See our Integration guide for more details.
 
 #### **Q: How can I integrate my checkout solution to use Pix Automático?**
 
-**A**: Pix Automático is supported through Recurly.js and our V3 APIs. You can find links to our API guide and Recurly.js guides below:
+**A**: Pix Automático is supported our V3 APIs. You can find links to our API guide below:
 
 * [Pix Automatico API Guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/)
 
