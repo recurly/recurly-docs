@@ -26,23 +26,26 @@ To access this export feature, ensure that the "Multiple Coupons Per Account" op
 
 This feature becomes available if you have enabled the Multiple Coupons Per Account option in the Coupon Settings.Through this export, you can view details such as how much discount is attributed to each coupon redemption applied, especially useful when you have multiple active coupons on an account. The data will show a row for each charge or credit's discount, showcasing how much of the discount was derived from each coupon redemption.
 
-### Options
+<Image border={false} src="https://files.readme.io/3d385c7fd6f9729dc2db3f2228ace010ec394f0a9b9fcad4adeadba06e16641c-image.png" />
 
-You are granted two distinct options for exporting data:
+<br />
 
-#### **Include uninvoiced adjustments**
-
-By default, the export primarily includes invoiced adjustments. However, upon selecting this option, you can view both charges and credits that haven't been invoiced as of yet, within a specified date range. These adjustments bear a 'pending' status and are placed at the commencement of the export document.
-
-#### **Use invoice posted date**
-
-Ordinarily, the export utilizes the adjustment's creation date rather than the invoice date. Consequently, an older uninvoiced charge or credit that was created within a set date range but invoiced later will not be reflected in the export. To counter this, choose this option to instead use the invoice posted date for a comprehensive view. Note that the creation date determines the presence of uninvoiced adjustments in the export as they lack an associated invoice date.
+<br />
 
 # Filters
 
 ### Versions Filter
 
 * The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
+
+### Options Filter
+
+You are granted two distinct options for exporting data:
+
+* **Include uninvoiced adjustments**
+  * By default, the export primarily includes invoiced adjustments. However, upon selecting this option, you can view both charges and credits that haven't been invoiced as of yet, within a specified date range. These adjustments bear a 'pending' status and are placed at the commencement of the export document.
+*  **Use invoice posted date**
+  * Ordinarily, the export utilizes the adjustment's creation date rather than the invoice date. Consequently, an older uninvoiced charge or credit that was created within a set date range but invoiced later will not be reflected in the export. To counter this, choose this option to instead use the invoice posted date for a comprehensive view. Note that the creation date determines the presence of uninvoiced adjustments in the export as they lack an associated invoice date.
 
 ### Time Range Filter
 
