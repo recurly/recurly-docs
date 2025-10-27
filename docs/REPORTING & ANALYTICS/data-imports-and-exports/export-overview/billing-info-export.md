@@ -44,8 +44,8 @@ You can filter the billing information export data based on the account status. 
 
 ### Export on filters
 
-* **Created**: Filter accounts based on their creation date within a selected range.
-* **Modified**: Filter accounts based on the modification date within the specified range.
+* **Created**: Filter billing info based on their creation date within a selected range.
+* **Modified**: Filter billing info based on the modification date within the specified range.
 
 ### Time Range Filter
 
