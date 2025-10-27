@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Account Notes" section is dedicated to helping Recurly users manage and export internal notes associated with various accounts effectively. The export function in this section will help users identify any internal notes published on their accounts with ease, thus aiding in seamless operations and record-keeping.
 
-<Image align="center" border={false} src="https://files.readme.io/7ea101390a61bd2d8d46b7452e08b1a8e97960e69c8fe6a2175b46ce39ac6a3b-image.png" />
+<Image border={false} src="https://files.readme.io/7ea101390a61bd2d8d46b7452e08b1a8e97960e69c8fe6a2175b46ce39ac6a3b-image.png" />
 
 <br />
 
@@ -34,7 +34,7 @@ The "Account Notes" section is dedicated to helping Recurly users manage and exp
 
 By selecting a time range, the export will only display account notes that were created during that period, allowing for targeted retrieval of information.
 
-* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The **Start Date** and **End Date** will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
