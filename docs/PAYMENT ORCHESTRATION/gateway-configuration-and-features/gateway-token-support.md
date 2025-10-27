@@ -84,6 +84,8 @@ With Recurly.js or hosted pages (e.g., Checkout), Recurly creates a **nonce** (o
 
 If you wish to automatically vault tokens in Braintree with Recurly, see [Configuration Steps for Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/step-2-configure-braintree-in-recurly).
 
+Braintree does not support PayPal Billing Agreement IDs and will not process them.
+
 ### Adyen
 
 With native Recurly checkout flows, only **non‑card** methods are tokenized by default. However, with **Adyen Components** + Recurly.js, **all** supported methods are tokenized. If you are looking to use an Adyen feature that requires tokenization, such as Network Tokens, using our [Third Party Checkout for Web Components](https://docs.recurly.com/recurly-subscriptions/docs/third-party-checkout-guide-adyen-components#/) support is recommended.
@@ -98,35 +100,24 @@ By design, payment instruments are stored with Amazon. Recurly stores a **Billin
 
 ### PayPal
 
-By design, instruments are stored with PayPal. Recurly stores a token or billing agreement for renewals and one‑time payments.
+By design, payment instruments are stored with PayPal and are not accessible by Recurly systems. Recurly stores a token or billing agreement for renewals and one‑time payments.
 
-**PayPal Complete** is a special case: Recurly retains raw card details (PAN) **and** creates a PayPal token for renewals. Legacy PayPal gateways use **Billing Agreement IDs**.
-
-## Supported gateway tokens
-
-* **Stripe**: Creation and use of **Payment Method IDs**. (Stripe single‑use “Tokens” are not supported.)
-* **Adyen**: Creation and use where required (varies by method).
-* **Braintree**: Creation and use based on merchant settings.
-* **PayPal Complete**: Creation and use of PayPal tokens.
-* **Legacy PayPal gateways**: Creation and use of Billing Agreement IDs.
-* **Amazon**: Creation and use of Billing Agreement / Charge Permission IDs.
-* **Vantiv**: Use after import (no token creation by Recurly).
-* **Payeezy**: Use after import of **TransArmor** tokens (no token creation by Recurly).
+**PayPal Complete** is a special case: Recurly retains raw card details (PAN) **and** creates a PayPal token for renewals. Legacy PayPal and PayPal Complete gateways can use **Billing Agreement IDs**. Only PayPal Complete can use the newer PayPal "token".
 
 ## Where is the payment data stored?
 
 Use this matrix to understand which system stores the payment instrument, based on gateway and checkout flow.
 
-| Checkout solution / use case                      | Payment method                                  | Gateway                          | Where the payment instrument is stored |
-| ------------------------------------------------- | ----------------------------------------------- | -------------------------------- | -------------------------------------- |
-| Recurly.js or API                                 | Cards                                           | Any, except Stripe, Braintree    | Recurly                                |
-| Recurly.js or API                                 | Cards                                           | Stripe, Braintree                | Recurly and Stripe or Braintree        |
-| Recurly.js or API                                 | Bank accounts (ACH, SEPA, BACS, BECS)           | GoCardless                       | Recurly and GoCardless                 |
-| Recurly.js                                        | APMs (wallets such as Cash App, PayPal, Amazon) | Adyen, PayPal, Braintree, Amazon | Adyen, PayPal, Braintree, Amazon       |
-| Stripe Payment / Express Elements                 | Any supported                                   | Stripe                           | Stripe                                 |
-| Adyen Web Components                              | Any supported                                   | Adyen                            | Adyen                                  |
-| Imported gateway tokens                           | Any supported                                   | Token‑supporting gateways        | The gateway                            |
-| Imported cards or bank accounts (where supported) | Cards, bank details                             | Any                              | Recurly                                |
-| Network tokens                                    | Cards                                           | Any                              | Recurly and Visa                       |
+| Checkout solution / use case                      | Payment method                                  | Gateway                           | Where the payment instrument is stored |
+| ------------------------------------------------- | ----------------------------------------------- | --------------------------------- | -------------------------------------- |
+| Recurly.js or API                                 | Cards                                           | Any, **except** Stripe, Braintree | Recurly                                |
+| Recurly.js or API                                 | Cards                                           | Stripe, Braintree                 | Recurly and Stripe or Braintree        |
+| Recurly.js or API                                 | Bank accounts (ACH, SEPA, BACS, BECS)           | GoCardless                        | Recurly and GoCardless                 |
+| Recurly.js                                        | APMs (wallets such as Cash App, PayPal, Amazon) | Adyen, PayPal, Braintree, Amazon  | Adyen, PayPal, Braintree, Amazon       |
+| Stripe Payment / Express Elements                 | Any supported                                   | Stripe                            | Stripe                                 |
+| Adyen Web Components                              | Any supported                                   | Adyen                             | Adyen                                  |
+| Imported gateway tokens                           | Any supported                                   | Token‑supporting gateways         | The gateway                            |
+| Imported cards or bank accounts (where supported) | Cards, bank details                             | Any                               | Recurly                                |
+| Network tokens                                    | Cards                                           | Any                               | Recurly and Visa                       |
 
 > **Note:** “APMs” refers to alternative payment methods.
