@@ -1,5 +1,8 @@
 ---
 title: Mercado Pago Integration guide
+excerpt: >-
+  Create subscriptions via Purchase API with Mercado Pago, 3DS (Recurly.js), and
+  Ebanx sandbox flow.
 deprecated: false
 hidden: true
 metadata:
@@ -24,7 +27,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 ***
 
-# Creating Purchases
+# Creating purchases
 
 ## Step 1: Generate a Mercado Pago Payment Request
 
@@ -32,7 +35,7 @@ Use a supported client library or our  `type`  payment field in your front-end c
 
 See our <Anchor label="Mercado Pago documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/">Mercado Pago documentation</Anchor> for details on all required fields.
 
-Send a request to the `create_purchase` method on Recurly’s API, including:
+**Send** a request to the `create_purchase` method on Recurly’s API, including:
 
 * **Customer account data** (e.g., code, name, billing info, phone number, email address)
 * **Subscriptions** (with plan codes)
@@ -175,7 +178,7 @@ InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 
 ## Step 2: Obtain the token from the response
 
-Upon submitting your API request you will receive a response that looks like this: 
+Upon submitting your API request you will receive a response that looks like this:
 
 ```json
 {
@@ -197,7 +200,7 @@ Upon submitting your API request you will receive a response that looks like thi
 }
 ```
 
-Mercado Pago requires consumer authentication, and so interacting with Recurly.js is necessary s to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to use the   `three_d_secure_action_token_id`value to render the modal for this process. 
+Mercado Pago requires consumer authentication, and so interacting with Recurly.js is necessary s to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to use the   `three_d_secure_action_token_id`value to render the modal for this process.
 
 This initial call will return different behavior in production than in sandbox.
 
@@ -205,17 +208,17 @@ This initial call will return different behavior in production than in sandbox.
 
 ## Step 3: Interact with Recurly.js
 
-You can follow along in our 3DS Redirect Guide, starting at **Step 3**: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-response). 
+You can follow along in our 3DS Redirect Guide, starting at **Step 3**: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-response).
 
 ***
 
 ## Step 4: Submit a new Purchase request
 
-Once the user has interacted with the modal, and you have a `three_d_secure_action_result_token_id`from Recurly.js, you must resubmit your original request with the results token ID. 
+Once the user has interacted with the modal, and you have a `three_d_secure_action_result_token_id`from Recurly.js, you must resubmit your original request with the results token ID.
 
 Use the `three_d_secure_action_result_token_id` from **Step 3** in a new API call (e.g., Create Purchase) to finalize authentication. The account/billing info must match the original request. Changing these details may cause a token mismatch error.
 
-You JSON payload may look like this: 
+You JSON payload may look like this:
 
 ```json
 {
@@ -259,7 +262,7 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment, and disabling access should a consumer decide to cancel their subscription from within their mobile banking applicaiton.
 
-## Sandbox Behavior
+## Sandbox behavior
 
 In Sandbox, the modal will display the Ebanx specific sandbox UI, and manually pressing buttons to simulate proper enrollments is required. You can submit accepted enrollments as well as deny or decline enrollments in sandbox.
 
