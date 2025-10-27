@@ -78,9 +78,11 @@ Recurly supports Stripe **confirmation tokens (c_tokens)** and exchanges them fo
 
 ### Braintree
 
-Depending on your gateway configuration, Recurly can create Braintree tokens for future use.
+Depending on your gateway configuration, Recurly can create Braintree tokens for future use, but does not do so by default unless required by the payment method (PayPal, Venmo).
 
-With Recurly.js or hosted pages (e.g., Checkout), Recurly creates a **nonce** (one‑time token) that can be exchanged for a reusable Braintree token for renewals.
+With Recurly.js or hosted pages (e.g., Checkout), Recurly creates a **nonce** (one‑time token) that can be exchanged for a reusable Braintree token for renewals where desired or required. 
+
+If you wish to automatically vault tokens in Braintree with Recurly, see [Configuration Steps for Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/step-2-configure-braintree-in-recurly).
 
 ### Adyen
 
