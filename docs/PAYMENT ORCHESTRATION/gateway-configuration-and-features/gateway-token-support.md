@@ -90,11 +90,11 @@ With native Recurly checkout flows, only **non‑card** methods are tokenized by
 
 ### Vantiv
 
-Imported **card tokens** are supported; Recurly does **not** tokenize cards with Vantiv. For imported tokens, Recurly does not have raw PAN, so failover/orchestration to other gateways is unavailable.
+Imported **card tokens** are supported; Recurly does **not** tokenize cards with Vantiv. For imported tokens, Recurly does not have raw PAN, so failover/orchestration to other gateways is unavailable. In these cases, the definition and limitations for **imported tokens** applies here.
 
 ### Amazon
 
-By design, instruments are stored with Amazon. Recurly stores a **Billing Agreement** or **Charge Permission ID** for both renewals and one‑time payments (Amazon V1 and V2).
+By design, payment instruments are stored with Amazon. Recurly stores a **Billing Agreement** or **Charge Permission ID** for both renewals and one‑time payments (Amazon V1 and V2). These can be imported if you are using AmazonPay V1 or V2. Keep in mind that Charge Permission IDs are only supported on Amazon Pay V2.
 
 ### PayPal
 
