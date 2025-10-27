@@ -135,7 +135,7 @@ By configuring these settings, you can seamlessly integrate Recurly with Vertex 
 
 Once you enable Vertex, all customer invoices go to your Vertex account, regardless of their location. Invoices with tax included will show an additional Tax column in the line item table displaying the rate for each line item. Below the line item table, a tax section displays the total tax amount for the invoice. It appears below the Subtotal and above the Total, showing the location, tax type, and rate (e.g., “FR VAT 20%” for French VAT).
 
-In addition, Recurly's integration with Vertex comes with the ability to breakdown taxes based on the jurisdiction type.  This setting, **Communication Tax Breakdown**, can be found when creating or editing an invoice, is only visible when Vertex is turned on for your site, and works internationally.
+In addition, Recurly's integration with Vertex comes with the ability to breakdown taxes in greater details based on the jurisdiction type.  This setting, **Communication Tax Breakdown**, can be found when creating or editing an invoice, is only visible when Vertex is turned on for your site, and works internationally.  Once turned on, the tax breakdown will be displayed on invoices, invoice previews, and PDF invoices.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/a3d8f32f92e5bb6757a3430c2ec1c74f2ba1b5b675a5136f8d1312a159af4fba-Screenshot_2025-10-23_at_3.36.43_PM.png" className="border" />
 
