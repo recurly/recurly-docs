@@ -31,11 +31,11 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 ## Step 1: Generate a Pix Payment Request
 
-Use a supported client library or our  `type`  payment field in your front-end code. Our client libraries help you build out our APIs easily and process transactions faster. To specify Pix Automático, set your `type` enum to `pix_automatico`and ensure you are passing a `tax_identifier` and `tax_identifier_type` for Brazil.
+**Use** a supported client library or our  `type`  payment field in your front-end code. Our client libraries help you build out our APIs easily and process transactions faster. To specify Pix Automático, set your `type` enum to `pix_automatico`and ensure you are passing a `tax_identifier` and `tax_identifier_type` for Brazil.
 
 See our [Pix Automático documentation](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/) for details on all required fields.
 
-Send a request to the `create_purchase` method on Recurly’s API, including:
+**Send** a request to the `create_purchase` method on Recurly’s API, including:
 
 * **Customer account data** (e.g., code, name, billing info, phone number, email address, tax ID/tax type)
 * **Subscriptions** (with plan codes)
@@ -227,11 +227,11 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 ***
 
-## Step 4: Listen for Webhooks
+## Step 4: Listen for webhooks
 
 After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment, and disabling access should a consumer decide to cancel their subscription from within their mobile banking applicaiton.
 
-## Sandbox Behavior
+## Sandbox behavior
 
 In Step 2, Sandbox return_url behavior is outlined, but requires a bit more explanation. You may render this URL in whatever way you wish (modal, full redirect, etc.) however it is not recommended to put an immense amount of effort into it as this is not a production workflow.
 
