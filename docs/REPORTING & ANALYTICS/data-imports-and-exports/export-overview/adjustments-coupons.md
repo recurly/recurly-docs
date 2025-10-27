@@ -30,8 +30,6 @@ This feature becomes available if you have enabled the Multiple Coupons Per Acco
 
 <br />
 
-<br />
-
 # Filters
 
 ### Versions Filter
@@ -44,7 +42,7 @@ You are granted two distinct options for exporting data:
 
 * **Include uninvoiced adjustments**
   * By default, the export primarily includes invoiced adjustments. However, upon selecting this option, you can view both charges and credits that haven't been invoiced as of yet, within a specified date range. These adjustments bear a 'pending' status and are placed at the commencement of the export document.
-*  **Use invoice posted date**
+* **Use invoice posted date**
   * Ordinarily, the export utilizes the adjustment's creation date rather than the invoice date. Consequently, an older uninvoiced charge or credit that was created within a set date range but invoiced later will not be reflected in the export. To counter this, choose this option to instead use the invoice posted date for a comprehensive view. Note that the creation date determines the presence of uninvoiced adjustments in the export as they lack an associated invoice date.
 
 ### Time Range Filter
@@ -52,8 +50,6 @@ You are granted two distinct options for exporting data:
 Utilize this feature to visualize charge and credit adjustments initiated in a specified timeframe. The "adjustment_created_at" date in the export is the default parameter used to filter results. In case you wish to filter adjustments based on the invoice creation date, simply opt for the "Use invoice date" option.
 
 * The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
-
-**Note**: Adjustments are immutable; hence, a 'modified' time range option is non-existent.
 
 # Exports table
 
