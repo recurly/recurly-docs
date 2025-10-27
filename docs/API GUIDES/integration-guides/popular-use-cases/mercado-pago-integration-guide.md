@@ -1,5 +1,5 @@
 ---
-title: Mercado Pago Integration guide
+title: Mercado Pago integration guide
 excerpt: >-
   Create subscriptions via Purchase API with Mercado Pago, 3DS (Recurly.js), and
   Ebanx sandbox flow.
@@ -10,12 +10,12 @@ metadata:
 ---
 # Overview
 
-This guide shows you how to use the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase) to create new subscriptions using the Mercado Pago payment method. We’ll also illustrate how to work with the Ebanx sandbox simulator.
+This guide shows you how to use the <Anchor label="Purchase endpoint" target="_blank" href="https://developers.recurly.com/api/latest/#tag/purchase">Purchase endpoint</Anchor> to create new subscriptions using the Mercado Pago payment method. We’ll also illustrate how to work with the Ebanx sandbox simulator.
 
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s API, Webhooks, and basic REST concepts
-* [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/)
+* <Anchor label="Completed the Quickstart Guide" target="_blank" href="https://docs.recurly.com/v1.1/docs/quick-start-guide#/">Completed the Quickstart Guide</Anchor>
 * Familiarity with Recurly.js value rendering
 * An Ebanx gateway account with Pix Automático is enabled
 
@@ -172,7 +172,7 @@ var purchaseReq = new PurchaseCreate()
 InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 ```
 
-> **Tip:** Many more parameters are available. See the [Create Purchase](https://developers.recurly.com/api/latest/#operation/create_purchase) reference to learn more.
+> **Tip:** Many more parameters are available. See the <Anchor label="Create Purchase" target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
 
 ***
 
@@ -208,7 +208,7 @@ This initial call will return different behavior in production than in sandbox.
 
 ## Step 3: Interact with Recurly.js
 
-You can follow along in our 3DS Redirect Guide, starting at **Step 3**: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-response).
+You can follow along in our 3DS Redirect Guide, starting at **Step 3**: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew.
 
 ***
 
@@ -258,7 +258,7 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 ***
 
-## Step 5: Listen for Webhooks
+## Step 5: Listen for webhooks
 
 After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment, and disabling access should a consumer decide to cancel their subscription from within their mobile banking applicaiton.
 
