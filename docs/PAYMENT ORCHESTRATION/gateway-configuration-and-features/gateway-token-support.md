@@ -38,30 +38,33 @@ Recurly also works with other token types in order to support complex payments s
 
 * **Network tokens**: Card tokens issued by a card network (e.g., Visa) that can be used across multiple gateways. They are not bound to a single gateway.
 * **Gateway tokens**: Tokens issued by a specific gateway. They can represent many payment instruments (cards, bank details, wallets) but are usable only with the issuing provider. **Example:** Adyen gateway tokens can only be used via Adyen—not Stripe or Braintree.
-* **One‑time tokens**: Ephemeral tokens used once, typically to move sensitive data from your site to Recurly via API during checkout flows. They cannot be stored for renewals. **Examples:** Recurly.js tokens, Stripe c_tokens (Payment Elements), Braintree nonces.
+* **One‑time tokens**: Ephemeral tokens used once, typically to move sensitive data from your site to Recurly via API during checkout flows. They cannot be stored for renewals. **Examples:** Recurly.js tokens, Stripe confirmation tokens (Payment Elements), Braintree nonces, Adyen State Data (from Web Components), etc. 
 
 ## Key benefits
 
 **Network tokens**
 
 * Enable failover across gateways when you use more than one provider.
-* Allow moving existing subscriptions to a different gateway that supports network tokens.
+* Allow failover and migrating existing subscriptions to a different gateway that supports network tokens.
 
 **Gateway tokens**
 
-* Keep the payment instrument under your gateway’s control; if you use the gateway’s Account Updater, details remain current.
-* Trade‑off: portability is limited. Some Recurly features that require the full instrument may be unavailable. See **Limitations** above.
+* Keep the actual payment instrument under your gateway’s control; if you use the gateway’s Account Updater, details remain current.
+* Trade‑off: portability is very limited. Some Recurly features that require the full instrument may be unavailable. See **Limitations** above.
+* Certain payment methods must be tokenized, thus enabling greater payment method acceptance. 
+* Certain gateways tie behind-the-scenes behavior to the use of gateway tokens, encouraging usage.
 
 **One‑time tokens**
 
 * Reduce PCI scope by ensuring sensitive data never touches your servers.
-* **Caveat:** these tokens are short‑lived and cannot be reused. Pass them to Recurly promptly to avoid expirations or failures.
+* **Caveat:** these tokens are short‑lived and cannot be reused. Pass them to Recurly promptly to avoid token expirations and payment failures.
 
 ## Gateway Token Interoperability
 
-* Gateway tokens are only useful on the gateway they originate from, for example: Stripe tokens can only be used on Stripe gateways, and will not function on Adyen.
-* Additionally, gateway tokens are typically limited to the specific gateway account they were created with, and generally cannot be used on other gateway accounts, even in the same family unless the gateway has a 'sharing' feature, such as Braintree. For example: The same Adyen token cannot be used on a different Adyen gateway account despite being from the same provider. **When using gateway tokens across different gateway_code values on Recurly, please ensure your tokens can be used on that gateway account.**
-* Gateway tokens sent without a gateway_code on an existing Account or Billing ID will default to the gateway_code they were added or first created with. For example, if you create a Stripe token on gateway_code '123456', and then use the Account ID to process a follow up payment, we will use that gateway code. If you want to use the token on a different gateway_code, please include it in your payload.
+* Gateway tokens are only useful on the gateway they originate from, for example: Stripe tokens can only be used on Stripe gateways, and will not function on Adyen. Even platforms that share ownership, such as Braintree and PayPal are not always compatible. Prior to using a token with a given gateway, reach out to Recurly Support for assistance.
+* Additionally, gateway tokens are typically limited to the specific gateway account they were created with, and generally cannot be used on other gateway accounts, even in the same family unless the gateway has a 'sharing' feature, such as Braintree. For example: The same Adyen token cannot be used on a different Adyen gateway account despite being from the same provider. **When using gateway tokens across different `gateway_code` values on Recurly, please ensure your tokens can be used on that gateway account.**
+* If you have multiples of the same gateway onboarded, as long as your gateway tokens can be referenced by that gateway you can use a gateway token across "gateway_code" instances. For example, if you have the same Stripe Gateway account added to your Recurly site **twice**, you can use Stripe tokens across both instances with Recurly. However, if you have two **different** Stripe accounts boarded, their gateway tokens are not transferrable and your payments may encounter errors.
+* Gateway tokens sent without a gateway_code on an existing Account or Billing ID will default to the `gateway_code` they were added or first created with. For example, if you create a Stripe token on `gateway_code` '123456', and then use the Account ID to process a follow up payment, we will use that gateway code. If you want to use the token on a different `gateway_code`, please include it in your payload.
 
 ## When does Recurly tokenize?
 
