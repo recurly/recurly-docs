@@ -40,10 +40,10 @@ The Coupons - Bulk Unique Codes export section allows users to export and analyz
 
 * To utilize this filter, select all or the desired bulk coupon from a dropdown menu that enumerates the internal name of the coupon and the prefix of the codes, enclosed in parentheses. This list is alphabetically arranged according to the internal names of the coupons.
 
-### **Export On Filters**
+### **Export On Filter**
 
-*  **Created** - defines the date range according to the 'created_at' column in the export. Leveraging the "All Time" option with "Created" will showcase the entire compilation of your unique codes. To zero in on a subset of codes crafted during a specific span of the campaign, simply filter the dates accordingly.
-*  **Modified**- establishes the date range based on the most recent modification date, aligned with the 'modified_at' column in the export. A unique code experiences modification upon its redemption (tracked in 'applied_at') or premature expiration (noted in 'deactivated_at'). The expiration date ('expired_at') does not constitute a modification event.
+* **Created** - defines the date range according to the 'created_at' column in the export. Leveraging the "All Time" option with "Created" will showcase the entire compilation of your unique codes. To zero in on a subset of codes crafted during a specific span of the campaign, simply filter the dates accordingly.
+* **Modified**- establishes the date range based on the most recent modification date, aligned with the 'modified_at' column in the export. A unique code experiences modification upon its redemption (tracked in 'applied_at') or premature expiration (noted in 'deactivated_at'). The expiration date ('expired_at') does not constitute a modification event.
 
 ### Time Range Filter
 
