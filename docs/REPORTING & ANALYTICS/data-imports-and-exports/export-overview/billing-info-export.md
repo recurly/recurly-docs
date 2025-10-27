@@ -20,7 +20,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The “Billing Info” export section in Recurly's user guide helps you identify and understand the billing information and payment methods associated with various accounts. It offers data that aids in distinguishing primary from backup payment methods, along with comprehensive billing details to keep track of each account’s status and payment preferences.
 
+<Image border={false} src="https://files.readme.io/c8e0fd286ff1c47ef44cba851cd146c649874be2979ae370284701d60f93be3d-image.png" />
+
+<br />
+
 # Filters
+
+### Versions Filter
+
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
 
 ### Account Status Filter
 
@@ -34,9 +42,16 @@ You can filter the billing information export data based on the account status. 
 * **Non-Renewing**: Accounts with subscriptions that will not renew post the current billing cycle; recently canceled.
 * **Future**: Accounts with a subscription that hasn't yet begun.
 
+### Export on filters
+
+* **Created**: Filter accounts based on their creation date within a selected range.
+* **Modified**: Filter accounts based on the modification date within the specified range.
+
 ### Time Range Filter
 
-Utilize the "created\_at" field to filter data showcasing the accounts that had billing information added within a selected timeframe.
+Utilize the "created_at" field to filter data showcasing the accounts that had billing information added within a selected timeframe.
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The **Start Date** and **End Date** will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -97,7 +112,7 @@ To help you identify and organize information effectively, the export provides a
         Description
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Data type (max size)
       </th>
     </tr>
@@ -106,7 +121,7 @@ To help you identify and organize information effectively, the export provides a
   <tbody>
     <tr>
       <td>
-        <span id="account_code">account\_code</span>
+        <span id="account_code">account_code</span>
       </td>
 
       <td>
@@ -117,14 +132,14 @@ To help you identify and organize information effectively, the export provides a
         Uniquely identifies your customers in Recurly, mainly using the email address.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(50)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_first_name">billing\_first\_name</span>
+        <span id="billing_first_name">billing_first_name</span>
       </td>
 
       <td>
@@ -135,14 +150,14 @@ To help you identify and organize information effectively, the export provides a
         The first name provided in the customer's billing details.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(255)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_last_name">billing\_last\_name</span>
+        <span id="billing_last_name">billing_last_name</span>
       </td>
 
       <td>
@@ -153,14 +168,14 @@ To help you identify and organize information effectively, the export provides a
         The last name provided in the customer's billing details.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varhcar(255)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="account_company_name">account\_company\_name</span>
+        <span id="account_company_name">account_company_name</span>
       </td>
 
       <td>
@@ -171,14 +186,14 @@ To help you identify and organize information effectively, the export provides a
         Company name as per the billing details.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(255)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_address1">billing\_address1</span>
+        <span id="billing_address1">billing_address1</span>
       </td>
 
       <td>
@@ -189,14 +204,14 @@ To help you identify and organize information effectively, the export provides a
         The first line of the customer's billing address.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(60)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_address2">billing\_address2</span>
+        <span id="billing_address2">billing_address2</span>
       </td>
 
       <td>
@@ -207,14 +222,14 @@ To help you identify and organize information effectively, the export provides a
         The second line of the customer's billing address.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(60)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_city">billing\_city</span>
+        <span id="billing_city">billing_city</span>
       </td>
 
       <td>
@@ -225,14 +240,14 @@ To help you identify and organize information effectively, the export provides a
         The city component of the customer's billing address.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(60)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_state">billing\_state</span>
+        <span id="billing_state">billing_state</span>
       </td>
 
       <td>
@@ -243,14 +258,14 @@ To help you identify and organize information effectively, the export provides a
         The state component of the customer's billing address.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(60)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_postal_code">billing\_postal\_code</span>
+        <span id="billing_postal_code">billing_postal_code</span>
       </td>
 
       <td>
@@ -261,14 +276,14 @@ To help you identify and organize information effectively, the export provides a
         The postal code component of the customer's billing address.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(20)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_country">billing\_country</span>
+        <span id="billing_country">billing_country</span>
       </td>
 
       <td>
@@ -279,14 +294,14 @@ To help you identify and organize information effectively, the export provides a
         The country component of the customer's billing address.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(30)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_phone">billing\_phone</span>
+        <span id="billing_phone">billing_phone</span>
       </td>
 
       <td>
@@ -297,14 +312,14 @@ To help you identify and organize information effectively, the export provides a
         The phone number provided in the customer's billing details.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(30)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="account_email">account\_email</span>
+        <span id="account_email">account_email</span>
       </td>
 
       <td>
@@ -315,14 +330,14 @@ To help you identify and organize information effectively, the export provides a
         The email address associated with the customer's account.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(255)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="cc_type">cc\_type</span>
+        <span id="cc_type">cc_type</span>
       </td>
 
       <td>
@@ -333,14 +348,14 @@ To help you identify and organize information effectively, the export provides a
         Indicates the type of credit card associated with the customer's account.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(20)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="cc_last_four">cc\_last\_four</span>
+        <span id="cc_last_four">cc_last_four</span>
       </td>
 
       <td>
@@ -351,14 +366,14 @@ To help you identify and organize information effectively, the export provides a
         The last four digits of the customer's credit card number.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(4)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="expire_month">expire\_month</span>
+        <span id="expire_month">expire_month</span>
       </td>
 
       <td>
@@ -369,14 +384,14 @@ To help you identify and organize information effectively, the export provides a
         The month when the customer's credit card expires.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="expire_year">expire\_year</span>
+        <span id="expire_year">expire_year</span>
       </td>
 
       <td>
@@ -387,14 +402,14 @@ To help you identify and organize information effectively, the export provides a
         The year when the customer's credit card expires.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_vat_number">billing\_vat\_number</span>
+        <span id="billing_vat_number">billing_vat_number</span>
       </td>
 
       <td>
@@ -405,14 +420,14 @@ To help you identify and organize information effectively, the export provides a
         VAT number provided by EU customers.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="created_at">created\_at</span>
+        <span id="created_at">created_at</span>
       </td>
 
       <td>
@@ -423,14 +438,14 @@ To help you identify and organize information effectively, the export provides a
         The date when the billing information was added to the account.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="updated_at">updated\_at</span>
+        <span id="updated_at">updated_at</span>
       </td>
 
       <td>
@@ -441,32 +456,32 @@ To help you identify and organize information effectively, the export provides a
         The last date when the billing information was updated on the account.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="Payment_method">Payment\_method</span>
+        <span id="Payment_method">Payment_method</span>
       </td>
 
       <td>
-        CreditCard / PayPal/ Roku/ Amazon / Bank Account / paypal\_braintree, jcb, qiwiwallet, etc.
+        CreditCard / PayPal/ Roku/ Amazon / Bank Account / paypal_braintree, jcb, qiwiwallet, etc.
       </td>
 
       <td>
         The payment method chosen by the customer for transactions.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="maintenance_url">maintenance\_url</span>
+        <span id="maintenance_url">maintenance_url</span>
       </td>
 
       <td>
@@ -477,32 +492,32 @@ To help you identify and organize information effectively, the export provides a
         The URL directing to the customer's hosted account maintenance.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="geo_code">geo\_code</span>
+        <span id="geo_code">geo_code</span>
       </td>
 
       <td>
-        *
+        * <br />
       </td>
 
       <td>
-        *
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="ip_address">ip\_address</span>
+        <span id="ip_address">ip_address</span>
       </td>
 
       <td>
@@ -513,14 +528,14 @@ To help you identify and organize information effectively, the export provides a
         The IP address noted at the time of entering the billing information.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(20)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="ip_address_country">ip\_address\_country</span>
+        <span id="ip_address_country">ip_address_country</span>
       </td>
 
       <td>
@@ -531,14 +546,14 @@ To help you identify and organize information effectively, the export provides a
         The country associated with the IP address noted during billing information entry.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Varchar(2)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="cc_first_6">cc\_first\_6</span>
+        <span id="cc_first_6">cc_first_6</span>
       </td>
 
       <td>
@@ -549,14 +564,14 @@ To help you identify and organize information effectively, the export provides a
         The initial six digits of the credit card used for the transaction.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(6)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="primary_payment_method">primary\_payment\_method</span>
+        <span id="primary_payment_method">primary_payment_method</span>
       </td>
 
       <td>
@@ -567,14 +582,14 @@ To help you identify and organize information effectively, the export provides a
         Indicates whether the billing info should be used as a primary payment method.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         boolean
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="billing_info_id">billing\_info\_id</span>
+        <span id="billing_info_id">billing_info_id</span>
       </td>
 
       <td>
@@ -585,14 +600,14 @@ To help you identify and organize information effectively, the export provides a
         Unique identifier for billing info.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="backup_payment_method">backup\_payment\_method</span>
+        <span id="backup_payment_method">backup_payment_method</span>
       </td>
 
       <td>
@@ -603,14 +618,14 @@ To help you identify and organize information effectively, the export provides a
         Indicates whether the billing info should be used as a backup for invoice failures.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         boolean
       </td>
     </tr>
 
     <tr>
       <td>
-        billing\_info\_api\_id
+        billing_info_api_id
       </td>
 
       <td>
@@ -621,7 +636,7 @@ To help you identify and organize information effectively, the export provides a
         Billing Info API ID
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
@@ -636,23 +651,23 @@ To help you identify and organize information effectively, the export provides a
 
 ### Version 6 - 03/29/21
 
-* Introduction of the backup\_payment\_method column to highlight if the billing info is the backup payment method (TRUE/FALSE).
+* Introduction of the backup_payment_method column to highlight if the billing info is the backup payment method (TRUE/FALSE).
 
 ### Version 5 - 12/3/20
 
-* Introduction of the “primary\_payment\_method” column to indicate if the billing info is the main payment method (TRUE/FALSE).
-* Addition of billing\_info\_id displaying the ID of the billing info.
+* Introduction of the “primary_payment_method” column to indicate if the billing info is the main payment method (TRUE/FALSE).
+* Addition of billing_info_id displaying the ID of the billing info.
 
 ### Version 4 - 5/23/2019
 
-* 'cc\_first\_6' column was moved to the end of the export.
+* 'cc_first_6' column was moved to the end of the export.
 
 ### Version 3 - 4/25/2019
 
-* Addition of "cc\_first\_6" to the export.
+* Addition of "cc_first_6" to the export.
 
 ### Version 2 - 5/24/2018
 
 * Column names were refined to differentiate clearly between billing and account info.
-* Addition of "ip\_address" and "ip\_address\_country" columns to the export.
-* Addition of “geo\_code” column. (Applicable only if Vertex tax integration is enabled)
+* Addition of "ip_address" and "ip_address_country" columns to the export.
+* Addition of “geo_code” column. (Applicable only if Vertex tax integration is enabled)
