@@ -33,7 +33,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 **Use** a supported client library or our  `type`  payment field in your front-end code. Our client libraries help you build out our APIs easily and process transactions faster. To specify Pix Automático, set your `type` enum to `pix_automatico`and ensure you are passing a `tax_identifier` and `tax_identifier_type` for Brazil.
 
-See our [Pix Automático documentation](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/) for details on all required fields.
+See our <Anchor label="Pix Automático documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/">Pix Automático documentation</Anchor> for details on all required fields.
 
 **Send** a request to the `create_purchase` method on Recurly’s API, including:
 
@@ -182,7 +182,7 @@ var purchaseReq = new PurchaseCreate()
 InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 ```
 
-> **Tip:** Many more parameters are available. See the [Create Purchase](https://developers.recurly.com/api/latest/#operation/create_purchase) reference to learn more.
+> **Tip:** Many more parameters are available. See the <Anchor label="Create Purchase" target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
 
 ***
 
@@ -249,6 +249,6 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 
 ## Next steps
 
-Now that you can create new  [subscriptions](https://app.recurly.com/go/subscriptions), explore payment method guide to explore other use cases and limitations related to the [Pix Automatico payment method](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/).
+Now that you can create new  <Anchor label="subscriptions" target="_blank" href="https://app.recurly.com/go/subscriptions">subscriptions</Anchor>, explore payment method guide to explore other use cases and limitations related to the <Anchor label="Pix Automatico payment method" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/">Pix Automatico payment method</Anchor>.
 
 <br />
