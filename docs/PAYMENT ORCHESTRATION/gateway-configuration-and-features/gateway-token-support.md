@@ -86,9 +86,7 @@ If you wish to automatically vault tokens in Braintree with Recurly, see [Config
 
 ### Adyen
 
-With native Recurly checkout flows, only **non‑card** methods are tokenized.
-
-With **Adyen Components** + Recurly.js, **all** supported methods are tokenized.
+With native Recurly checkout flows, only **non‑card** methods are tokenized by default. However, with **Adyen Components** + Recurly.js, **all** supported methods are tokenized. If you are looking to use an Adyen feature that requires tokenization, such as Network Tokens, using our [Third Party Checkout for Web Components](https://docs.recurly.com/recurly-subscriptions/docs/third-party-checkout-guide-adyen-components#/) support is recommended.
 
 ### Vantiv
 
