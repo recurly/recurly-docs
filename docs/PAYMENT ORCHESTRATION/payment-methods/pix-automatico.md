@@ -25,13 +25,13 @@ Recurly currently supports Pix Automático transactions on Ebanx gateway.
 
 ### Prerequisites & supported gateways
 
-* A connection with [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) gateway.
+* A connection with <Anchor label="Ebanx" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/">Ebanx</Anchor> gateway.
 * The ability to work with APIs and QR Code rendering. This integration will demand technical proficiency with Base64 encoded values.
 * Your site must support transactions in  **BRL**.
 
 ### Limitations
 
-* Supports transactions in _BRL_ currency only as specified by Pix Automático.
+* Supports transactions in **BRL** currency only as specified by Pix Automático.
 * The integration process requires setting up with Ebanx  and Recurly's APIs and demands technical proficiency.
 * One-time customer or merchant initiated Pix transactions are not supported. Only subscription signup and automatic renewals are supported.
 * Flexible Schedules and Net Terms / Modifying the Renewal Date are not supported by this payment method. PIX demands date of renewal remain consistent with the original signup and that there are no more than one (1) successful transaction attempt within the billing period. If renewal dates are changed without signing up again, the renewals will fail.
@@ -49,7 +49,6 @@ Recurly currently supports Pix Automático transactions on Ebanx gateway.
 
 PIX Automático is a recurring payment feature within Brazil's PIX instant payment system, allowing users to set up and authorize automatic, scheduled payments directly from their bank accounts for services like subscriptions, utility bills, and memberships. It functions similarly to a traditional direct debit but is processed through the instant, automated PIX network, eliminating the need for credit cards or manual actions for every payment. This system provides users with control over their recurring payments and helps businesses manage subscriptions more efficiently.
 
-Pix Automático revolutionizes how consumers sign up for subscriptions on your site and beyond.
 Available for use with Recurly.js for subscription signups for Recurly merchants, this secure payment method is fast, easy, and simple.
 
 # Key details
@@ -71,7 +70,7 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 ## Required Fields
 
-Pix Automático will require you always send certain data: 
+Pix Automático will require you always send certain data:
 
 * Customer Billing Address
 * Customer Email Address
@@ -84,7 +83,7 @@ Pix Automático will require you always send certain data:
 
 **A**: Pix Automático is directly supported through the below gateway offering. Refer to the associated documentation for setup and troubleshooting guidance:
 
-* [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/)
+* <Anchor label="Ebanx" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/">Ebanx</Anchor>
 
 #### **Q: Does Pix Automático use Recurly.js?**
 
@@ -94,6 +93,6 @@ Pix Automático will require you always send certain data:
 
 **A**: Pix Automático is supported our V3 APIs. You can find links to our API guide below:
 
-* [Pix Automatico API Guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/)
+* <Anchor label="Pix Automatico API Guide" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#/">Pix Automatico API Guide</Anchor>
 
 <br />
