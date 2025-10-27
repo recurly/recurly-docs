@@ -22,6 +22,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Adjustments - Taxes export is designed for reporting on taxes calculated through Vertex. It is pertinent to note that for reporting on taxes calculated through Avalara, you should utilize the Adjustments export. This CSV file contains a row for each tax jurisdiction that is returned for a line item. Even line items without taxes will be included but as a single row in the export.
 
+<Image border={false} src="https://files.readme.io/ca45e9d315dccb3986571f8782841a29b8bd566e1dd02375cfb2bb973708ac47-image.png" />
+
+<br />
+
 # Filters
 
 ### Versions Filter
@@ -32,9 +36,9 @@ The Adjustments - Taxes export is designed for reporting on taxes calculated thr
 
 This export showcases adjustments alongside their respective taxes created during a predefined time range. It is important to note that the creation date of an adjustment coincides with the invoice issuance date unless the adjustment was initiated on the account uninvoiced, awaiting processing in the upcoming billing event.
 
-* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The **Start Date** and **End Date** will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
-**Note**: Adjustments are immutable; hence, a 'modified' time range option is non-existent.
+<br />
 
 # Exports table
 
@@ -687,9 +691,9 @@ To help you identify and organize information effectively, the export provides a
 
 ### Version 3 - November 21, 2019
 
-* Addeditem_code and item_id columns for Item Charges.
+* Added item_code and item_id columns for Item Charges.
 
 ### Version 2 - September 20, 2018
 
-* Addedadjustment_tax_code column.
+* Added adjustment_tax_code column.
 * Added classification column. (Conditional on Vertex tax integration)
