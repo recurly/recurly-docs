@@ -1,5 +1,5 @@
 ---
-title: Pix Automático Integration guide
+title: Pix Automático integration guide
 excerpt: >-
   Create subscriptions via Purchase API using Pix Automático with QR code
   rendering and Ebanx sandbox simulation.
