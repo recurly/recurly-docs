@@ -18,19 +18,28 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The "Coupons" export section is designed to offer comprehensive details on all the coupons created on your site, facilitating a streamlined analysis and management of your promotional strategies. Coupons with a fixed amount discount that support multiple currencies will be displayed in separate rows for each currency. 
+The "Coupons" export section is designed to offer comprehensive details on all the coupons created on your site, facilitating a streamlined analysis and management of your promotional strategies. Coupons with a fixed amount discount that support multiple currencies will be displayed in separate rows for each currency.
+
+<Image border={false} src="https://files.readme.io/74f4a59cbb32d0abfa786d02c995a3ab7772cd9f067ae5dc74f8e221b0bb3782-image.png" />
+
+<br />
 
 # Filters
 
-### **Date Range Filters**
+### Versions Filter
 
-#### **Created**
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
 
-Filter the data to only include the coupons that were created within a selected time frame.
+### Export on filters
 
-#### **Modified**
+* **Created**: Filter the data to only include the coupons that were created within a selected time frame.
+* **Modified**: This filter allows you to zero in on the coupons modified within a chosen time range. A modification occurs due to an increment in redemption_count, when a coupon hits its max_redemptions limit, or is deactivated prematurely, which is reflected in the "deactivated_at" column.
 
-This filter allows you to zero in on the coupons modified within a chosen time range. A modification occurs due to an increment in redemption\_count, when a coupon hits its max\_redemptions limit, or is deactivated prematurely, which is reflected in the "deactivated\_at" column.
+### Time Range Filter
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The **Start Date** and **End Date** will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
+
+<br />
 
 # Exports table
 
@@ -81,9 +90,7 @@ To help you identify and organize information effectively, the export provides a
     <tr>
       <th>
         <span id="id">
-
-        Id
-
+          Id
         </span>
       </th>
 
@@ -95,7 +102,7 @@ To help you identify and organize information effectively, the export provides a
         Description
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Data type (max size)
       </th>
     </tr>
@@ -104,7 +111,7 @@ To help you identify and organize information effectively, the export provides a
   <tbody>
     <tr>
       <td>
-        <span id="coupon_code">coupon\_code</span>
+        <span id="coupon_code">coupon_code</span>
       </td>
 
       <td>
@@ -115,7 +122,7 @@ To help you identify and organize information effectively, the export provides a
         The code to be inputted by customers to avail the discount.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(50)
       </td>
     </tr>
@@ -133,7 +140,7 @@ To help you identify and organize information effectively, the export provides a
         Internal nomenclature for the coupon.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(255)
       </td>
     </tr>
@@ -151,7 +158,7 @@ To help you identify and organize information effectively, the export provides a
         Value of the fixed amount discount, depicted in the currency column; 0 for percentage discounts.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
@@ -169,14 +176,14 @@ To help you identify and organize information effectively, the export provides a
         Denotes the currency for the fixed discount amount; blank for percentage discounts.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(3)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="discount_percent">discount\_percent</span>
+        <span id="discount_percent">discount_percent</span>
       </td>
 
       <td>
@@ -187,14 +194,14 @@ To help you identify and organize information effectively, the export provides a
         Indicates the percentage discount; blank for fixed amount discounts.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="redeem_by_date">redeem\_by\_date</span>
+        <span id="redeem_by_date">redeem_by_date</span>
       </td>
 
       <td>
@@ -205,14 +212,14 @@ To help you identify and organize information effectively, the export provides a
         The expiration date and time post which the coupon cannot be redeemed.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="redemptions_count">redemptions\_count</span>
+        <span id="redemptions_count">redemptions_count</span>
       </td>
 
       <td>
@@ -223,14 +230,14 @@ To help you identify and organize information effectively, the export provides a
         The total number of redemptions to date.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="max_redemptions">max\_redemptions</span>
+        <span id="max_redemptions">max_redemptions</span>
       </td>
 
       <td>
@@ -241,14 +248,14 @@ To help you identify and organize information effectively, the export provides a
         The upper limit on the allowable number of redemptions.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="applies_to_plans">applies\_to\_plans</span>
+        <span id="applies_to_plans">applies_to_plans</span>
       </td>
 
       <td>
@@ -259,7 +266,7 @@ To help you identify and organize information effectively, the export provides a
         Specifies the plans that can be discounted through the coupon redemptions.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
@@ -277,14 +284,14 @@ To help you identify and organize information effectively, the export provides a
         The lifespan of the coupon.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="created_at">created\_at</span>
+        <span id="created_at">created_at</span>
       </td>
 
       <td>
@@ -295,14 +302,14 @@ To help you identify and organize information effectively, the export provides a
         Date and time of coupon creation; employed in created date range filter.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="deactivated_at">deactivated\_at</span>
+        <span id="deactivated_at">deactivated_at</span>
       </td>
 
       <td>
@@ -310,10 +317,10 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Marks the date and time when the coupon was either expired early or when the max\_redemptions were achieved.
+        Marks the date and time when the coupon was either expired early or when the max_redemptions were achieved.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
@@ -331,14 +338,14 @@ To help you identify and organize information effectively, the export provides a
         Records the most recent modification time, relevant for the modified date range filter.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="applies_to_non_plan_charges">applies\_to\_non\_plan\_charges</span>
+        <span id="applies_to_non_plan_charges">applies_to_non_plan_charges</span>
       </td>
 
       <td>
@@ -349,14 +356,14 @@ To help you identify and organize information effectively, the export provides a
         Dictates whether the coupon redemptions can offer discounts on one-time charges on customer invoices.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         boolean
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="redemptions_per_account">redemptions\_per\_account</span>
+        <span id="redemptions_per_account">redemptions_per_account</span>
       </td>
 
       <td>
@@ -367,14 +374,14 @@ To help you identify and organize information effectively, the export provides a
         The maximum redemption limit per account; "unlimited" if left blank.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="redemption_resource">redemption\_resource</span>
+        <span id="redemption_resource">redemption_resource</span>
       </td>
 
       <td>
@@ -385,14 +392,14 @@ To help you identify and organize information effectively, the export provides a
         The scope of the discount, whether at the account or subscription level.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="coupon_type">coupon\_type</span>
+        <span id="coupon_type">coupon_type</span>
       </td>
 
       <td>
@@ -403,32 +410,32 @@ To help you identify and organize information effectively, the export provides a
         Categorizes the coupon as a single code or a bulk code with several unique codes.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="discount_type">discount\_type</span>
+        <span id="discount_type">discount_type</span>
       </td>
 
       <td>
-        percent, fixed\_amount, free\_trial
+        percent, fixed_amount, free_trial
       </td>
 
       <td>
         Specifies the nature of the discount — percentage, fixed amount, or free trial.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="free_trial_coupon_amount">free\_trial\_coupon\_amount</span>
+        <span id="free_trial_coupon_amount">free_trial_coupon_amount</span>
       </td>
 
       <td>
@@ -436,17 +443,17 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        For "free\_trial" discount types, it signifies the number associated with the trial period unit.
+        For "free_trial" discount types, it signifies the number associated with the trial period unit.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="free_trial_coupon_unit">free\_trial\_coupon\_unit</span>
+        <span id="free_trial_coupon_unit">free_trial_coupon_unit</span>
       </td>
 
       <td>
@@ -454,17 +461,17 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        Relates to the "free\_trial" discount type, indicating the period of the trial.
+        Relates to the "free_trial" discount type, indicating the period of the trial.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="applies_to_items">applies\_to\_items</span>
+        <span id="applies_to_items">applies_to_items</span>
       </td>
 
       <td>
@@ -475,14 +482,14 @@ To help you identify and organize information effectively, the export provides a
         Identifies whether a coupon is applicable to all items or specific items.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        coupon\_api\_id
+        coupon_api_id
       </td>
 
       <td>
@@ -493,7 +500,7 @@ To help you identify and organize information effectively, the export provides a
         Coupon API ID
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         String
       </td>
     </tr>
@@ -508,6 +515,6 @@ To help you identify and organize information effectively, the export provides a
 
 ### Version 2 - 10/15/20
 
-* Introduction of the applies\_to\_items column to highlight if a coupon is applicable to all items or select items. In case a given coupon is only applicable to select items, the item code will be aggregated with a comma as delimiter.
+* Introduction of the applies_to_items column to highlight if a coupon is applicable to all items or select items. In case a given coupon is only applicable to select items, the item code will be aggregated with a comma as delimiter.
 
 Recurly offers 3 exports relevant to coupons: Coupons, Coupon Redemptions, and Coupons- Bulk Unique Coupons
