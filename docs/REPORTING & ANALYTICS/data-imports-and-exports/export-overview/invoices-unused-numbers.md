@@ -20,15 +20,21 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The unused invoice number export showcases the fundamental details of all the invoice numbers that have not been utilized in successfully generated invoices. Situations such as failed sign-ups could result in an unused invoice number. 
+The unused invoice number export showcases the fundamental details of all the invoice numbers that have not been utilized in successfully generated invoices. Situations such as failed sign-ups could result in an unused invoice number.
 
 This log aids significantly in audit procedures, supplementing the numbers provided in the Invoices - Summary export to furnish a detailed account for every number in your sequence.
 
+<Image border={false} src="https://files.readme.io/9938ab519bfe268f32c3976f52caa75a2fa2446e156aa593b2e99a0aafe2a45f-image.png" />
+
 # Filters
 
-### Date Range Filters
+### Versions Filter
 
-List all unused invoice numbers that could have been created within the selected timeframe.
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
+
+### Time range filters
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -74,119 +80,13 @@ List all unused invoice numbers that could have been created within the selected
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-<Table align={["left","left","left","left"]}>
-  <thead>
-    <tr>
-      <th style={{ textAlign: "left" }}>
-        Column Name
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Example
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Description
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Data type (max size)
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="invoice_number">invoice\_number</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        1291
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        External invoice identifier.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="invoice_type">invoice\_type</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        purchase, refund, renewal, immediate\_change, termination, credit, gift\_card, write\_off, external\_refund, carryforward\_credit, carryforward\_gift\_credit, usage\_correction, import
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        This refers to the origin of the invoice. The primary invoice possesses a 'purchase' type. Negative invoices generated due to refunds or voids to offset the initial one have a 'refund' type. Other invoice types become accessible when the Credit Invoices feature is activated. Detailed descriptions can be found in the [invoice origins section](/docs/invoices#section-origins).
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="invoice_doc_type">invoice\_doc\_type</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        legacy, charge, credit
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        This column indicates the document type of the invoice. Before activating the Credit Invoices feature, all invoices bear the 'legacy' type. Post activation, the invoices are categorized as either 'charge' or 'credit'.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="invoice_date">invoice\_date</span>
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        2019-07-19 12:01:33 PST
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        The date and time the invoice creation was attempted. The inception date for this export is July 1, 2019.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td style={{ textAlign: "left" }}>
-        invoice\_api\_id
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        e28zov4fw0v2
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        Invoice API ID
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Column Name                                         | Example                                                                                                                                                                          | Description                                                                                                                                                                                                                                                                                                                                                                              | Data type (max size) |
+| :-------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------- |
+| <span id="invoice_number">invoice_number</span>     | 1291                                                                                                                                                                             | External invoice identifier.                                                                                                                                                                                                                                                                                                                                                             | string               |
+| <span id="invoice_type">invoice_type</span>         | purchase, refund, renewal, immediate_change, termination, credit, gift_card, write_off, external_refund, carryforward_credit, carryforward_gift_credit, usage_correction, import | This refers to the origin of the invoice. The primary invoice possesses a 'purchase' type. Negative invoices generated due to refunds or voids to offset the initial one have a 'refund' type. Other invoice types become accessible when the Credit Invoices feature is activated. Detailed descriptions can be found in the [invoice origins section](/docs/invoices#section-origins). | string               |
+| <span id="invoice_doc_type">invoice_doc_type</span> | legacy, charge, credit                                                                                                                                                           | This column indicates the document type of the invoice. Before activating the Credit Invoices feature, all invoices bear the 'legacy' type. Post activation, the invoices are categorized as either 'charge' or 'credit'.                                                                                                                                                                | string               |
+| <span id="invoice_date">invoice_date</span>         | 2019-07-19 12:01:33 PST                                                                                                                                                          | The date and time the invoice creation was attempted. The inception date for this export is July 1, 2019.                                                                                                                                                                                                                                                                                | timestamp            |
+| invoice_api_id                                      | e28zov4fw0v2                                                                                                                                                                     | Invoice API ID                                                                                                                                                                                                                                                                                                                                                                           | string               |
 
 # Version changelog
 
