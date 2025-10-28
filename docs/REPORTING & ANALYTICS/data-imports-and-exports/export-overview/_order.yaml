@@ -19,6 +19,7 @@
 - invoices-unused-numbers
 - items-associated-plans
 - items-associated-subscriptions
+- copy-of-items-associated-subscriptions-export
 - revenue-recognition-export
 - subscriptions-exports
 - subscription-add-ons-export
@@ -29,4 +30,3 @@
 - subscription-ramp-pricing-export
 - usages-records-export
 - transaction-export
-- copy-of-items-associated-subscriptions-export
