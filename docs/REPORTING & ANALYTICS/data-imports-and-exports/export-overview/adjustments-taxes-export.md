@@ -22,23 +22,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Adjustments - Taxes export is designed for reporting on taxes calculated through Vertex. It is pertinent to note that for reporting on taxes calculated through Avalara, you should utilize the Adjustments export. This CSV file contains a row for each tax jurisdiction that is returned for a line item. Even line items without taxes will be included but as a single row in the export.
 
-<Image border={false} src="https://files.readme.io/ca45e9d315dccb3986571f8782841a29b8bd566e1dd02375cfb2bb973708ac47-image.png" />
-
-<br />
-
 # Filters
-
-### Versions Filter
-
-* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
 
 ### Time Range Filter
 
 This export showcases adjustments alongside their respective taxes created during a predefined time range. It is important to note that the creation date of an adjustment coincides with the invoice issuance date unless the adjustment was initiated on the account uninvoiced, awaiting processing in the upcoming billing event.
 
-* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The **Start Date** and **End Date** will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
-
-<br />
+**Note**: Adjustments are immutable; hence, a 'modified' time range option is non-existent.
 
 # Exports table
 
@@ -99,7 +89,7 @@ To help you identify and organize information effectively, the export provides a
         Description
       </th>
 
-      <th>
+      <th style={{ textAlign: "left" }}>
         Data type (max size)
       </th>
     </tr>
@@ -108,7 +98,7 @@ To help you identify and organize information effectively, the export provides a
   <tbody>
     <tr>
       <td>
-        <span id="adjustment_uuid">adjustment_uuid</span>
+        <span id="adjustment_uuid">adjustment\_uuid</span>
       </td>
 
       <td>
@@ -119,14 +109,14 @@ To help you identify and organize information effectively, the export provides a
         The unique id for the line item.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="account_code">account_code</span>
+        <span id="account_code">account\_code</span>
       </td>
 
       <td>
@@ -137,14 +127,14 @@ To help you identify and organize information effectively, the export provides a
         The unique code for the account.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="subscription_id">subscription_id</span>
+        <span id="subscription_id">subscription\_id</span>
       </td>
 
       <td>
@@ -155,14 +145,14 @@ To help you identify and organize information effectively, the export provides a
         The unique id for the subscription associated with the line item.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="invoice_id">invoice_id</span>
+        <span id="invoice_id">invoice\_id</span>
       </td>
 
       <td>
@@ -173,14 +163,14 @@ To help you identify and organize information effectively, the export provides a
         The unique id for the invoice.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="invoice_number">invoice_number</span>
+        <span id="invoice_number">invoice\_number</span>
       </td>
 
       <td>
@@ -191,14 +181,14 @@ To help you identify and organize information effectively, the export provides a
         The invoice number displayed on the invoice.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="invoice_billed_date">invoice_billed_date</span>
+        <span id="invoice_billed_date">invoice\_billed\_date</span>
       </td>
 
       <td>
@@ -209,32 +199,32 @@ To help you identify and organize information effectively, the export provides a
         The date the invoice was posted.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         timestamp
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="invoice_state">invoice_state</span>
+        <span id="invoice_state">invoice\_state</span>
       </td>
 
       <td>
-        pending, past_due, paid, failed, open, closed, voided, processing
+        pending, past\_due, paid, failed, open, closed, voided, processing
       </td>
 
       <td>
         The current state of the invoice.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="refund_tax_date">refund_tax_date</span>
+        <span id="refund_tax_date">refund\_tax\_date</span>
       </td>
 
       <td>
@@ -245,14 +235,14 @@ To help you identify and organize information effectively, the export provides a
         Date of the original purchase invoice if the invoice is a refund or subscription change.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         timestamp
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="refund_geo_code">refund_geo_code</span>
+        <span id="refund_geo_code">refund\_geo\_code</span>
       </td>
 
       <td>
@@ -263,14 +253,14 @@ To help you identify and organize information effectively, the export provides a
         Not applicable for Vertex O Series or Vertex Cloud integrations.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_description">adjustment_description</span>
+        <span id="adjustment_description">adjustment\_description</span>
       </td>
 
       <td>
@@ -281,32 +271,32 @@ To help you identify and organize information effectively, the export provides a
         The line item description on the invoice.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(255)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_product_code">adjustment_product_code</span>
+        <span id="adjustment_product_code">adjustment\_product\_code</span>
       </td>
 
       <td>
-        gold_plan
+        gold\_plan
       </td>
 
       <td>
         The plan code, add-on code, or one-off charge product code for the line item’s product.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_currency">adjustment_currency</span>
+        <span id="adjustment_currency">adjustment\_currency</span>
       </td>
 
       <td>
@@ -317,14 +307,14 @@ To help you identify and organize information effectively, the export provides a
         The currency of the line item.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(3)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_amount">adjustment_amount</span>
+        <span id="adjustment_amount">adjustment\_amount</span>
       </td>
 
       <td>
@@ -335,14 +325,14 @@ To help you identify and organize information effectively, the export provides a
         Pre-discount, pre-tax amount of the line item. If negative, it reflects a credit from a downgrade or refund.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_discount">adjustment_discount</span>
+        <span id="adjustment_discount">adjustment\_discount</span>
       </td>
 
       <td>
@@ -353,32 +343,32 @@ To help you identify and organize information effectively, the export provides a
         The discount amount on the line item.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_coupon_code">adjustment_coupon_code</span>
+        <span id="adjustment_coupon_code">adjustment\_coupon\_code</span>
       </td>
 
       <td>
-        5dollars_off
+        5dollars\_off
       </td>
 
       <td>
         The coupon code applied to the line item for the discount.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="tax_type">tax_type</span>
+        <span id="tax_type">tax\_type</span>
       </td>
 
       <td>
@@ -389,7 +379,7 @@ To help you identify and organize information effectively, the export provides a
         The tax type represented in the row for the line item.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(6)
       </td>
     </tr>
@@ -407,14 +397,14 @@ To help you identify and organize information effectively, the export provides a
         The tax jurisdiction represented in the row for the line item.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="jurisdiction_amount">jurisdiction_amount</span>
+        <span id="jurisdiction_amount">jurisdiction\_amount</span>
       </td>
 
       <td>
@@ -425,14 +415,14 @@ To help you identify and organize information effectively, the export provides a
         The tax amount for the jurisdiction.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="jurisdiction_rate">jurisdiction_rate</span>
+        <span id="jurisdiction_rate">jurisdiction\_rate</span>
       </td>
 
       <td>
@@ -443,14 +433,14 @@ To help you identify and organize information effectively, the export provides a
         The tax rate for the jurisdiction.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="jurisdiction_description">jurisdiction_description</span>
+        <span id="jurisdiction_description">jurisdiction\_description</span>
       </td>
 
       <td>
@@ -461,14 +451,14 @@ To help you identify and organize information effectively, the export provides a
         The name of the imposition in the jurisdiction.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="jurisdiction_name">jurisdiction_name</span>
+        <span id="jurisdiction_name">jurisdiction\_name</span>
       </td>
 
       <td>
@@ -479,14 +469,14 @@ To help you identify and organize information effectively, the export provides a
         The identifying name for the jurisdiction.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="geo_code">geo_code</span>
+        <span id="geo_code">geo\_code</span>
       </td>
 
       <td>
@@ -497,25 +487,25 @@ To help you identify and organize information effectively, the export provides a
         Not applicable for Vertex O Series or Vertex Cloud integrations.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="adjustment_tax_code">adjustment_tax_code</span>
+        <span id="adjustment_tax_code">adjustment\_tax\_code</span>
       </td>
 
       <td>
-        digital_product
+        digital\_product
       </td>
 
       <td>
         The tax code of the product represented by the line item. Available from version 2.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
@@ -526,21 +516,21 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-        product_1
+        product\_1
       </td>
 
       <td>
-        * <br />
+        *
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="item_code">item_code</span>
+        <span id="item_code">item\_code</span>
       </td>
 
       <td>
@@ -551,14 +541,14 @@ To help you identify and organize information effectively, the export provides a
         The user-specified unique ID of the sold item on this adjustment. More details on [this page](https://docs.recurly.com/docs/catalog).
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="item_id">item_id</span>
+        <span id="item_id">item\_id</span>
       </td>
 
       <td>
@@ -569,14 +559,14 @@ To help you identify and organize information effectively, the export provides a
         The system-generated unique ID of the sold item on this adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="external_sku">external_sku</span>
+        <span id="external_sku">external\_sku</span>
       </td>
 
       <td>
@@ -587,14 +577,14 @@ To help you identify and organize information effectively, the export provides a
         The user-specified SKU of the sold item on this adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="tax_region">tax_region</span>
+        <span id="tax_region">tax\_region</span>
       </td>
 
       <td>
@@ -605,14 +595,14 @@ To help you identify and organize information effectively, the export provides a
         Indicates the tax region.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="tax_inclusive">tax_inclusive</span>
+        <span id="tax_inclusive">tax\_inclusive</span>
       </td>
 
       <td>
@@ -623,14 +613,14 @@ To help you identify and organize information effectively, the export provides a
         Indicates whether the price includes tax.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         boolean
       </td>
     </tr>
 
     <tr>
       <td>
-        <span id="business_entity_code">business_entity_code</span>
+        <span id="business_entity_code">business\_entity\_code</span>
       </td>
 
       <td>
@@ -641,14 +631,14 @@ To help you identify and organize information effectively, the export provides a
         Indicates business entity code.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
       <td>
-        adjustment_api_id
+        adjustment\_api\_id
       </td>
 
       <td>
@@ -659,7 +649,7 @@ To help you identify and organize information effectively, the export provides a
         Adjustment API ID
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
@@ -674,26 +664,26 @@ To help you identify and organize information effectively, the export provides a
 
 ### Version 7 - May 15, 2023
 
-* **Update to export made 8/20/2024:** Merchants integrated directly with Vertex will now see the corresponding geocode values passed from Vertex populated in the "geo_code" field within this export.  The "geocode" identifier passed serves as a specific way to pinpoint the location/address that was used for tax calculation on the invoice. This field provides accurate reporting for tax to state and local tax authorities. This field is also queryable via V2/V3 API.
-* Added business_entity_code column.
+* **Update to export made 8/20/2024:** Merchants integrated directly with Vertex will now see the corresponding geocode values passed from Vertex populated in the "geo\_code" field within this export.  The "geocode" identifier passed serves as a specific way to pinpoint the location/address that was used for tax calculation on the invoice. This field provides accurate reporting for tax to state and local tax authorities. This field is also queryable via V2/V3 API.
+* Added business\_entity\_code column.
 
 ### Version 6 - March 3, 2022
 
-* Added tax_inclusive column.
+* Added tax\_inclusive column.
 
 ### Version 5 - August 11, 2021
 
-* Added tax_region column.
+* Added tax\_region column.
 
 ### Version 4 - February 13, 2020
 
-* Added a column for external_sku pertaining to Item Charges.
+* Added a column for external\_sku pertaining to Item Charges.
 
 ### Version 3 - November 21, 2019
 
-* Added item_code and item_id columns for Item Charges.
+* Addeditem\_code and item\_id columns for Item Charges.
 
 ### Version 2 - September 20, 2018
 
-* Added adjustment_tax_code column.
+* Addedadjustment\_tax\_code column.
 * Added classification column. (Conditional on Vertex tax integration)
