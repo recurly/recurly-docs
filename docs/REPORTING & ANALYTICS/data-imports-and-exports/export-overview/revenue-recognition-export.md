@@ -22,31 +22,27 @@ Recurly’s Revenue Recognition Schedules export is your gateway to detailed rev
 
 Ensure to configure the Revenue Recognition feature properly to find this export in your admin console, exclusive to sites with this feature enabled.
 
+<Image border={false} src="https://files.readme.io/b36c7d6c24073e3e25e1c58217201ceaf5cda85802a55b1c244976b39c2f2080-image.png" />
+
+<br />
+
 # Filters
 
 ### Versions Filter
 
-* **Version 2** - updated on 11/1/2018. Modification to the arrear and deferred revenue calculations.
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
-### Invoice Status Filter
+### Invoice Type Filter
 
-#### All
-
-* **Overview**: Accommodates every invoice generated on your Recurly site, regardless of the status.
-
-#### Charge
-
-* **Overview**: Encompasses charge invoices awaiting a payment attempt.-
-
-#### Credit
-
-* **Overview**: Denotes credit invoices.
+* **All **-  accommodates every invoice generated on your Recurly site, regardless of the status.
+* **Charge** - encompasses charge invoices awaiting a payment attempt.
+* **Credit** - denotes credit invoices.
 
 e line items persist in the account history, with the owed balance cleared from the account.
 
 ### Time Range Filter
 
-**Detail**: Harness the invoice_created_at date column in the export to display all schedules stemming from invoices conceived within the chosen timeframe. Depending on a specific time range selected in the dropdown, the Start Date and End Date will automatically update. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range. 
+**Detail**: Harness the invoice_created_at date column in the export to display all schedules stemming from invoices conceived within the chosen timeframe. Depending on a specific time range selected in the dropdown, the Start Date and End Date will automatically update. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
