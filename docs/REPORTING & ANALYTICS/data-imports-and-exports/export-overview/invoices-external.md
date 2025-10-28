@@ -24,12 +24,22 @@ You must have external invoices to view this export.
 
 The "Invoices - External" export function allows Recurly users to identify and manage details pertaining to external invoices that are generated for accounts with subscriptions created on third-party platforms such as the Apple App Store or Google Play Store. By utilizing this export function, you can seamlessly organize and maintain a record of all external invoices, thereby enhancing your revenue tracking and customer service capabilities.
 
+<Image border={false} src="https://files.readme.io/a3f3a3ec7861bd5d279d8cba5a3bf2d08f2014c2479f68081cb2fd89e28c961b-image.png" />
+
 # Filters
 
-### **Date Range Filters**
+### Versions Filter
+
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
+
+### **Export On Filters**
 
 * **Created**: External Invoices created within the chosen timeframe.
 * **Modified**: External Invoices modified within the chosen timeframe.
+
+### Time range filters
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -75,245 +85,20 @@ The "Invoices - External" export function allows Recurly users to identify and m
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-<Table align={[null,null,null,"left"]}>
-  <thead>
-    <tr>
-      <th>
-        Id
-      </th>
-
-      <th>
-        Example
-      </th>
-
-      <th>
-        Description
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Data type (max size)
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        <span id="id">id</span>
-      </td>
-
-      <td>
-        101
-      </td>
-
-      <td>
-        Unique code or identifier.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_code">account\_code</span>
-      </td>
-
-      <td>
-        123456789, [janedoe@gmail.com](mailto:janedoe@gmail.com)
-      </td>
-
-      <td>
-        Unique identifier for Recurly customers, defaulting to email if not specified. Links multiple exports as a primary, unchangeable ID.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="external_subscription_id">external\_subscription\_id</span>
-      </td>
-
-      <td>
-        ext001s
-      </td>
-
-      <td>
-        Identifier for the subscription on the external platform.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="external_id">external\_id</span>
-      </td>
-
-      <td>
-        ex001id
-      </td>
-
-      <td>
-        Unique ID representing the invoice on the external platform.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(255)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="state">state</span>
-      </td>
-
-      <td>
-        pending, active, canceled, expired
-      </td>
-
-      <td>
-        Current subscription state.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="total">total</span>
-      </td>
-
-      <td>
-        60
-      </td>
-
-      <td>
-        The total amount charged in the invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="currency">currency</span>
-      </td>
-
-      <td>
-        USD
-      </td>
-
-      <td>
-        Currency used to denote amount and balance in the invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(3)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="source">source</span>
-      </td>
-
-      <td>
-        Apple
-      </td>
-
-      <td>
-        The source or platform where the subscription was initiated.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="purchased_at">purchased\_at</span>
-      </td>
-
-      <td>
-        2014-01-01 10:00:00 PST
-      </td>
-
-      <td>
-        Where the purchase associated with the invoice was made.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="created_at">created\_at</span>
-      </td>
-
-      <td>
-        2014-01-01 10:00:00 PST
-      </td>
-
-      <td>
-        The creation date and time of the invoice, used in the time range filter for sorting based on creation dates.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="modified_at">modified\_at</span>
-      </td>
-
-      <td>
-        2014-01-01 10:00:00 PST
-      </td>
-
-      <td>
-        The last modification date and time of the invoice, useful for tracking recent updates.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        external\_invoice\_api\_id
-      </td>
-
-      <td>
-        e28zov4fw0v2
-      </td>
-
-      <td>
-        External Invoice API ID
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Id                                                                  | Example                                                  | Description                                                                                                                          | Data type (max size) |
+| ------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | :------------------- |
+| <span id="id">id</span>                                             | 101                                                      | Unique code or identifier.                                                                                                           | string               |
+| <span id="account_code">account_code</span>                         | 123456789, [janedoe@gmail.com](mailto:janedoe@gmail.com) | Unique identifier for Recurly customers, defaulting to email if not specified. Links multiple exports as a primary, unchangeable ID. | varchar(50)          |
+| <span id="external_subscription_id">external_subscription_id</span> | ext001s                                                  | Identifier for the subscription on the external platform.                                                                            | string               |
+| <span id="external_id">external_id</span>                           | ex001id                                                  | Unique ID representing the invoice on the external platform.                                                                         | varchar(255)         |
+| <span id="state">state</span>                                       | pending, active, canceled, expired                       | Current subscription state.                                                                                                          | string               |
+| <span id="total">total</span>                                       | 60                                                       | The total amount charged in the invoice.                                                                                             | numeric              |
+| <span id="currency">currency</span>                                 | USD                                                      | Currency used to denote amount and balance in the invoice.                                                                           | varchar(3)           |
+| <span id="source">source</span>                                     | Apple                                                    | The source or platform where the subscription was initiated.                                                                         | string               |
+| <span id="purchased_at">purchased_at</span>                         | 2014-01-01 10:00:00 PST                                  | Where the purchase associated with the invoice was made.                                                                             | timestamp            |
+| <span id="created_at">created_at</span>                             | 2014-01-01 10:00:00 PST                                  | The creation date and time of the invoice, used in the time range filter for sorting based on creation dates.                        | timestamp            |
+| <span id="modified_at">modified_at</span>                           | 2014-01-01 10:00:00 PST                                  | The last modification date and time of the invoice, useful for tracking recent updates.                                              | timestamp            |
+| external_invoice_api_id                                             | e28zov4fw0v2                                             | External Invoice API ID                                                                                                              | string               |
 
 # Version changelog
 
