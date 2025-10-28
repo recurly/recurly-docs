@@ -22,11 +22,23 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Items - Associated Subscriptions" export provides comprehensive details of all subscription add-ons generated from a saved item in your catalog over a certain period. It focuses on add-ons linked to renewing, future start, last billing period, and paused subscriptions, omitting details from canceled or expired subscriptions.
 
+<Image border={false} src="https://files.readme.io/4ea2d491595760bcea37c0e445b53549a10fee9aab3bdd6fbba3a0f1c06822f0-image.png" />
+
 # Filters
 
-### **Date Range Filter**
+### **Versions Filter**
 
-Customize your export to focus on renewing, future start, last billing period, and paused subscriptions formed during a selected period, leveraging the "subscription\_add\_on\_created\_at" date in the export to narrow down your data.
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
+
+### **Item Name Filter**
+
+The Item name filter allows you to select existing item by name, code or SKU
+
+### **Time Range Filter**
+
+Customize your export to focus on renewing, future start, last billing period, and paused subscriptions formed during a selected period, leveraging the "subscription_add_on_created_at" date in the export to narrow down your data.
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -72,353 +84,26 @@ Customize your export to focus on renewing, future start, last billing period, a
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-<Table align={[null,null,null,"left"]}>
-  <thead>
-    <tr>
-      <th>
-        Column Name
-      </th>
-
-      <th>
-        Example
-      </th>
-
-      <th>
-        Description
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Data type (max size)
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        <span id="item_id">item\_id</span>
-      </td>
-
-      <td>
-        l20fl6bek3mp
-      </td>
-
-      <td>
-        The system-generated unique identifier of the saved item utilized in creating this add-on.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="item_name">item\_name</span>
-      </td>
-
-      <td>
-        Pink Sweater
-      </td>
-
-      <td>
-        The name of the saved item, mirrored in the add-on name on the customer's invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(255)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="item_code">item\_code</span>
-      </td>
-
-      <td>
-        pink\_sweater
-      </td>
-
-      <td>
-        The Recurly unique identifier for the saved item, also denoting the add-on code.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="external_sku">external\_sku</span>
-      </td>
-
-      <td>
-        PS1234
-      </td>
-
-      <td>
-        Optional external SKU of the saved item used in creating this add-on.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="item_status">item\_status</span>
-      </td>
-
-      <td>
-        enabled
-      </td>
-
-      <td>
-        The status of the item in your Recurly catalog, being either "enabled" or "disabled".
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="plan_code">plan\_code</span>
-      </td>
-
-      <td>
-        platinum
-      </td>
-
-      <td>
-        The Recurly unique identifier for the plan affiliated with this subscription.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="plan_name">plan\_name</span>
-      </td>
-
-      <td>
-        Platinum Plan
-      </td>
-
-      <td>
-        The contemporary name of the plan corresponding to this subscription.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(255)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_id">subscription\_id</span>
-      </td>
-
-      <td>
-        3c42a34d1442f840
-      </td>
-
-      <td>
-        Unique system-generated identifier for the subscription housing this item as an add-on.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(32)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_quantity">subscription\_add\_on\_quantity</span>
-      </td>
-
-      <td>
-        1
-      </td>
-
-      <td>
-        The count of add-ons integrated into the subscription for this item.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_unit_amount_in_cents">subscription\_add\_on\_unit\_amount\_in\_cents</span>
-      </td>
-
-      <td>
-        600
-      </td>
-
-      <td>
-        The unit cost of the add-on in the subscription, denominated in cents; it may differ from the plan's or item's default pricing.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_currency">subscription\_add\_on\_currency</span>
-      </td>
-
-      <td>
-        USD
-      </td>
-
-      <td>
-        The currency utilized for billing in this subscription.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(3)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_created_at">subscription\_add\_on\_created\_at</span>
-      </td>
-
-      <td>
-        2020-02-07 10:18:34 MST
-      </td>
-
-      <td>
-        The date and time when the add-on was created, a critical filter for defining the date range.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_modified_at">subscription\_add\_on\_modified\_at</span>
-      </td>
-
-      <td>
-        2020-02-07 10:18:34 MST
-      </td>
-
-      <td>
-        The latest modification date and time for the add-on.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_tier_type">subscription\_add\_on\_tier\_type</span>
-      </td>
-
-      <td>
-        flat
-      </td>
-
-      <td>
-        The subscription add-on tier type.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_total_amount_in_cents">subscription\_add\_on\_total\_amount\_in\_cents</span>
-      </td>
-
-      <td>
-        12345
-      </td>
-
-      <td>
-        Subscription add-on total amount in cents.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_source">subscription\_add\_on\_modified\_at</span>
-      </td>
-
-      <td>
-        source1
-      </td>
-
-      <td>
-        Subscription add-on source.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="subscription_add_on_tax_inclusive">subscription\_add\_on\_tax\_inclusive</span>
-      </td>
-
-      <td>
-        false
-      </td>
-
-      <td>
-        Boolean flag to indicate whether the subscription add-on is tax inclusive.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        boolean
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        item\_api\_id
-      </td>
-
-      <td>
-        e28zov4fw0v2
-      </td>
-
-      <td>
-        Item API ID
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Column Name                                                                                           | Example                 | Description                                                                                                                     | Data type (max size) |
+| ----------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- | :------------------- |
+| <span id="item_id">item_id</span>                                                                     | l20fl6bek3mp            | The system-generated unique identifier of the saved item utilized in creating this add-on.                                      | string               |
+| <span id="item_name">item_name</span>                                                                 | Pink Sweater            | The name of the saved item, mirrored in the add-on name on the customer's invoice.                                              | varchar(255)         |
+| <span id="item_code">item_code</span>                                                                 | pink_sweater            | The Recurly unique identifier for the saved item, also denoting the add-on code.                                                | varchar(50)          |
+| <span id="external_sku">external_sku</span>                                                           | PS1234                  | Optional external SKU of the saved item used in creating this add-on.                                                           | varchar(50)          |
+| <span id="item_status">item_status</span>                                                             | enabled                 | The status of the item in your Recurly catalog, being either "enabled" or "disabled".                                           | string               |
+| <span id="plan_code">plan_code</span>                                                                 | platinum                | The Recurly unique identifier for the plan affiliated with this subscription.                                                   | varchar(50)          |
+| <span id="plan_name">plan_name</span>                                                                 | Platinum Plan           | The contemporary name of the plan corresponding to this subscription.                                                           | varchar(255)         |
+| <span id="subscription_id">subscription_id</span>                                                     | 3c42a34d1442f840        | Unique system-generated identifier for the subscription housing this item as an add-on.                                         | varchar(32)          |
+| <span id="subscription_add_on_quantity">subscription_add_on_quantity</span>                           | 1                       | The count of add-ons integrated into the subscription for this item.                                                            | numeric              |
+| <span id="subscription_add_on_unit_amount_in_cents">subscription_add_on_unit_amount_in_cents</span>   | 600                     | The unit cost of the add-on in the subscription, denominated in cents; it may differ from the plan's or item's default pricing. | numeric              |
+| <span id="subscription_add_on_currency">subscription_add_on_currency</span>                           | USD                     | The currency utilized for billing in this subscription.                                                                         | varchar(3)           |
+| <span id="subscription_add_on_created_at">subscription_add_on_created_at</span>                       | 2020-02-07 10:18:34 MST | The date and time when the add-on was created, a critical filter for defining the date range.                                   | timestamp            |
+| <span id="subscription_add_on_modified_at">subscription_add_on_modified_at</span>                     | 2020-02-07 10:18:34 MST | The latest modification date and time for the add-on.                                                                           | timestamp            |
+| <span id="subscription_add_on_tier_type">subscription_add_on_tier_type</span>                         | flat                    | The subscription add-on tier type.                                                                                              | string               |
+| <span id="subscription_add_on_total_amount_in_cents">subscription_add_on_total_amount_in_cents</span> | 12345                   | Subscription add-on total amount in cents.                                                                                      | numeric              |
+| <span id="subscription_add_on_source">subscription_add_on_modified_at</span>                          | source1                 | Subscription add-on source.                                                                                                     | string               |
+| <span id="subscription_add_on_tax_inclusive">subscription_add_on_tax_inclusive</span>                 | false                   | Boolean flag to indicate whether the subscription add-on is tax inclusive.                                                      | boolean              |
+| item_api_id                                                                                           | e28zov4fw0v2            | Item API ID                                                                                                                     | string               |
 
 # Version changelog
 
@@ -428,12 +113,12 @@ Addition of `item_api_id`.
 
 ### Version 4 - 1/13/2022
 
-Addition of subscription\_add\_on\_tax\_inclusive column.
+Addition of subscription_add_on_tax_inclusive column.
 
 ### Version 3 - 7/23/2020
 
-Addition of subscription\_add\_on\_source column.
+Addition of subscription_add_on_source column.
 
 ### Version 2 - 4/29/2020
 
-Addition of subscription\_add\_on\_tier\_type, subscription\_add\_on\_total\_amount\_in\_cents columns.
+Addition of subscription_add_on_tier_type, subscription_add_on_total_amount_in_cents columns.
