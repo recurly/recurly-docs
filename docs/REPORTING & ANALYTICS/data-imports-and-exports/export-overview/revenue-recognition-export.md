@@ -22,9 +22,9 @@ Recurly’s Revenue Recognition Schedules export is your gateway to detailed rev
 
 Ensure to configure the Revenue Recognition feature properly to find this export in your admin console, exclusive to sites with this feature enabled.
 
-<Image border={false} src="https://files.readme.io/b36c7d6c24073e3e25e1c58217201ceaf5cda85802a55b1c244976b39c2f2080-image.png" />
-
 # Filters
+
+<Image border={false} src="https://files.readme.io/3f78de8efaab5a79150b5ee0ac0a75dc6f38c7dcc1e8aeb82cced6ab9e9a0d0f-image.png" />
 
 ### Versions Filter
 
@@ -37,6 +37,15 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 * **Credit** - denotes credit invoices.
 
 e line items persist in the account history, with the owed balance cleared from the account.
+
+### Invoice Status Filter
+
+* **All**: Includes all invoices that remain unpaid.
+* **Pending**: Consists of invoices not yet due and only encompasses manual invoices.
+* **Processing**: Concerns ACH transactions presently undergoing processing.
+* **Past Due**: Involves all invoices that have surpassed their due date without being settled.
+* **Paid** : Includes all invoices that have been paid
+* **Failed**: Pertains to invoices labeled as failed or not collected within the Dunning period.
 
 ### Time Range Filter
 
