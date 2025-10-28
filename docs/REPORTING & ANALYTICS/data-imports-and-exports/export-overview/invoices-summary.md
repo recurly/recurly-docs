@@ -22,7 +22,9 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Invoices Summary export provides a detailed report for every invoice. This data gives you a deeper understanding of every invoice to help you manage your invoices better.
 
-<Image border={false} src="https://files.readme.io/ecb29713883cb63c15e72ad9205015b28250a6d9153ff19e5f653fdb8a200e1f-image.png" />
+<Image border={false} src="https://files.readme.io/1b65aa5d744964663cfad423756b27a4e4463600d057675defca303b4f101cac-image.png" />
+
+<br />
 
 # Filters
 
@@ -32,11 +34,20 @@ The Invoices Summary export provides a detailed report for every invoice. This d
 
 ### Invoice Type Filter
 
-This filter allows you to select invoices based on their current statuses which include:  
+This filter allows you to select invoices based on their current statuses which include:
 
-* **All**: All invoices including credit and charge.  
-* **Charge**: Only charge invoices.  
+* **All**: All invoices including credit and charge.
+* **Charge**: Only charge invoices.
 * **Credit**: Only credit invoices.
+
+### Invoice Status Filter
+
+* **All**: Includes all invoices that remain unpaid.
+* **Pending**: Consists of invoices not yet due and only encompasses manual invoices.
+* **Processing**: Concerns ACH transactions presently undergoing processing.
+* **Past Due**: Involves all invoices that have surpassed their due date without being settled.
+* **Paid** : Includes all invoices that have been paid
+* **Failed**: Pertains to invoices labeled as failed or not collected within the Dunning period.
 
 ### Export On Filters
 
