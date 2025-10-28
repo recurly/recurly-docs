@@ -20,21 +20,11 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Account Notes" section is dedicated to helping Recurly users manage and export internal notes associated with various accounts effectively. The export function in this section will help users identify any internal notes published on their accounts with ease, thus aiding in seamless operations and record-keeping.
 
-<Image border={false} src="https://files.readme.io/7ea101390a61bd2d8d46b7452e08b1a8e97960e69c8fe6a2175b46ce39ac6a3b-image.png" />
-
-<br />
-
 # Filters
-
-### Versions Filter
-
-* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
 ### Time Range Filter
 
-By selecting a time range, the export will only display account notes that were created during that period, allowing for targeted retrieval of information.
-
-* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The **Start Date** and **End Date** will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
+You can filter the account notes that you wish to view based on a specific date range. By selecting a date range, the export will only display account notes that were created during that period, allowing for targeted retrieval of information.
 
 # Exports table
 
@@ -80,14 +70,137 @@ By selecting a time range, the export will only display account notes that were 
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-| Id                                          | Example                                                     | Description                                                                                                                                                                                                                     | Data type (max size) |
-| :------------------------------------------ | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------- |
-| <span id="account_code">account_code</span> | 123456789, [janedoe@gmail.com](mailto:janedoe@gmail.com)    | Account_code is a unique identifier for your customers within Recurly. It defaults to the email address if no specific value is provided. This unmodifiable code is Recurly's primary identifier used to link multiple exports. | varchar(50)          |
-| <span id="author_email">author_email</span> | [test@example.com](mailto:test@example.com)                 | The email address of the company user who is the author of the note.                                                                                                                                                            | varchar(100)         |
-| <span id="message">message</span>           | Customer answered survey in exchange for $5 account credit. | Describes the content of the account note.                                                                                                                                                                                      | string               |
-| <span id="created_at">created_at</span>     | 2014-01-01 10:00:00 PST                                     | The date and time when the account note was created. This field is utilized in the time range filter to sort notes based on their creation dates.                                                                               | timestamp            |
-| <span id="modified_at">modified_at</span>   | 2014-01-01 10:00:00 PST                                     | Indicates the last date and time the account note was updated, helping in tracking the recent modifications.                                                                                                                    | timestamp            |
-| account_note_api_id                         | e28zov4fw0v2                                                | Account note API ID                                                                                                                                                                                                             | string               |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Id
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Example
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Description
+      </th>
+
+      <th style={{ textAlign: "left" }}>
+        Data type (max size)
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        <span id="account_code">account\_code</span>
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        123456789, [janedoe@gmail.com](mailto:janedoe@gmail.com)
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Account\_code is a unique identifier for your customers within Recurly. It defaults to the email address if no specific value is provided. This unmodifiable code is Recurly's primary identifier used to link multiple exports.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        varchar(50)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        <span id="author_email">author\_email</span>
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        [test@example.com](mailto:test@example.com)
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        The email address of the company user who is the author of the note.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        varchar(100)
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        <span id="message">message</span>
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Customer answered survey in exchange for $5 account credit.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Describes the content of the account note.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        <span id="created_at">created\_at</span>
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        2014-01-01 10:00:00 PST
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        The date and time when the account note was created. This field is utilized in the time range filter to sort notes based on their creation dates.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        timestamp
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        <span id="modified_at">modified\_at</span>
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        2014-01-01 10:00:00 PST
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Indicates the last date and time the account note was updated, helping in tracking the recent modifications.
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        timestamp
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        account\_note\_api\_id
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        e28zov4fw0v2
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Account note API ID
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        string
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Version Changelog
 

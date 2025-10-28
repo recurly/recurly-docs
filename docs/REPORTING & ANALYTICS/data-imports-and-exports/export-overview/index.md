@@ -30,6 +30,14 @@ next:
 
 * See [Automated Exports](https://docs.recurly.com/v1.0/docs/export-overview#section-automated-exports) for more information about access via the Recurly API.
 
+* See our **Recurly Exports ERD**:
+
+<HTMLBlock>{`
+<div class="image-zoomer-container">
+  <img src="https://files.readme.io/1ad2b7e0c37b5d737bf6bd38c8740318f482cf2ced06df506d105f32233ebc6e-recurly_exports_erd_20241120.svg" alt="Zoomable Image" id="zoom-image">
+</div>
+`}</HTMLBlock>
+
 <br />
 
 * <HTMLBlock>{`
@@ -67,7 +75,7 @@ next:
         </style>
   </head>
   <body>
-      <a href="https://files.readme.io/1ad2b7e0c37b5d737bf6bd38c8740318f482cf2ced06df506d105f32233ebc6e-recurly_exports_erd_20241120.svg" class="download-button">Download the Recurly Exports ERD</a>
+      <a href="https://files.readme.io/1ad2b7e0c37b5d737bf6bd38c8740318f482cf2ced06df506d105f32233ebc6e-recurly_exports_erd_20241120.svg" class="download-button">Download the image</a>
   </body>
   </html>
   `}</HTMLBlock>
@@ -107,7 +115,7 @@ next:
         </style>
   </head>
   <body>
-      <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download the complete Exports schema</a>
+      <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download our complete export schema</a>
   </body>
   </html>
   `}</HTMLBlock>
@@ -129,21 +137,21 @@ next:
   <tbody>
     <tr>
       <td>
-        [Account Notes](https://docs.recurly.com/docs/account-notes-export)
-      </td>
-
-      <td>
-        Account notes that have been created on accounts.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         [Accounts](https://docs.recurly.com/docs/accounts-export)
       </td>
 
       <td>
         Account-level information.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Account Notes](https://docs.recurly.com/docs/account-notes-export)
+      </td>
+
+      <td>
+        Account notes that have been created on accounts.
       </td>
     </tr>
 
@@ -191,16 +199,6 @@ next:
 
     <tr>
       <td>
-        [Coupon Redemptions](https://docs.recurly.com/docs/coupons-export#section-coupon-redemptions)
-      </td>
-
-      <td>
-        All redemptions of coupons.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         [Coupons](https://docs.recurly.com/docs/coupons-export)
       </td>
 
@@ -216,6 +214,16 @@ next:
 
       <td>
         All unique codes for a bulk coupon.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Coupon Redemptions](https://docs.recurly.com/docs/coupons-export#section-coupon-redemptions)
+      </td>
+
+      <td>
+        All redemptions of coupons.
       </td>
     </tr>
 
@@ -266,6 +274,16 @@ next:
 
       <td>
         Invoice header information and summary totals.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
       </td>
     </tr>
 
@@ -323,16 +341,6 @@ next:
 
     <tr>
       <td>
-        [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
-      </td>
-
-      <td>
-        The history of each subscription including all versions created following any change to a subscription.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         [Subscriptions Add-Ons](https://docs.recurly.com/docs/subscription-add-ons-export)
       </td>
 
@@ -373,21 +381,31 @@ next:
 
     <tr>
       <td>
-        [Subscriptions — Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
+        [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
       </td>
 
       <td>
-        All data on each subscription operating under a ramp priced billing model.
+        The history of each subscription including all versions created following any change to a subscription.
       </td>
     </tr>
 
     <tr>
       <td>
-        [Subscriptions — Usage Records](https://docs.recurly.com/docs/usages-records-export)
+        [Subscription — Usage Records](https://docs.recurly.com/docs/usages-records-export)
       </td>
 
       <td>
         Usage records logged for your customer's usage-based subscription add-ons.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Subscriptions — Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
+      </td>
+
+      <td>
+        All data on each subscription operating under a ramp priced billing model.
       </td>
     </tr>
 
@@ -425,7 +443,7 @@ next:
       </td>
 
       <td>
-        * _Note:_* this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments
+        * *Note:** this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments
 
         Once your site has the Credit Invoices feature enabled, this export will no longer be available.
       </td>
@@ -433,35 +451,32 @@ next:
   </tbody>
 </Table>
 
-## Exporting data
+## Exporting data via the admin console
 
-When you generate an export, you can also select a time range along with other filters for the information you want to receive. Once you request the export, the request will begin processing. You can view the status of your request on the export page. Once your request is completed you'll see a "Download" link that you can then click to get the export. These generated exports will be available for download for 7 days.
+Exports can be generated [through the admin console](https://app.recurly.com/go/exports). When you generate an export, you can also select a date range for the information you want to receive. Once you request the export, the request will begin processing. You can view the status of your request on the export page. Once your request is completed you'll see a "Download" link that you can then click to get the export.
 
 All exports default to using ZIP compression.
 
 ### Examples: All accounts created in May
 
 1. Navigate to **Analytics-> Exports.**
-2. Select **Accounts**
-3. Select the **Versions**, **Account status** and **Export on** filters
-4. Select **Time range** to  **Between** and **Start date** to May 1 and **End date** to May 31
-5. Click **Generate Export**
+2. Change the date range to be **May 1 - May 31st.**
+3. Select **Accounts** and leave _All_ chosen.
+4. Click **Request Export**
 
 ### Example: All subscriptions that have expired
 
 1. Navigate to **Analytics -> Exports.**
-2. Select **Subscriptions - Churned.**
-3. Select the **Versions** filter
-4. Select **Time range** to  **All Time**
-5. Click **Generate Export**
+2. Leave the date range as **All Time.**
+3. Select **Subscriptions - Churned.**
+4. Click **Request Export**
 
 ### Example: All coupons redeemed in July
 
 1. Navigate to **Analytics -> Exports.**
-2. Select **Coupon Redemptions.**
-3. Select the **Versions** filter
-4. Select **Time range** to  **Between** and **Start date** to July 1 and **End date** to July 31
-5. Click **Generate Export.**
+2. Change the date range to be **July 1 - July 31st**
+3. Select **Coupon Redemptions.**
+4. Click **Request Export.**
 
 ## Helpful tips: combining exports
 

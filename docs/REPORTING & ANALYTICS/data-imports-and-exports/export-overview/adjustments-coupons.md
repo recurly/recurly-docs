@@ -26,30 +26,25 @@ To access this export feature, ensure that the "Multiple Coupons Per Account" op
 
 This feature becomes available if you have enabled the Multiple Coupons Per Account option in the Coupon Settings.Through this export, you can view details such as how much discount is attributed to each coupon redemption applied, especially useful when you have multiple active coupons on an account. The data will show a row for each charge or credit's discount, showcasing how much of the discount was derived from each coupon redemption.
 
-<Image border={false} src="https://files.readme.io/3d385c7fd6f9729dc2db3f2228ace010ec394f0a9b9fcad4adeadba06e16641c-image.png" />
-
-<br />
-
-# Filters
-
-### Versions Filter
-
-* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
-
-### Options Filter
+### Options
 
 You are granted two distinct options for exporting data:
 
-* **Include uninvoiced adjustments**
-  * By default, the export primarily includes invoiced adjustments. However, upon selecting this option, you can view both charges and credits that haven't been invoiced as of yet, within a specified date range. These adjustments bear a 'pending' status and are placed at the commencement of the export document.
-* **Use invoice posted date**
-  * Ordinarily, the export utilizes the adjustment's creation date rather than the invoice date. Consequently, an older uninvoiced charge or credit that was created within a set date range but invoiced later will not be reflected in the export. To counter this, choose this option to instead use the invoice posted date for a comprehensive view. Note that the creation date determines the presence of uninvoiced adjustments in the export as they lack an associated invoice date.
+#### **Include uninvoiced adjustments**
+
+By default, the export primarily includes invoiced adjustments. However, upon selecting this option, you can view both charges and credits that haven't been invoiced as of yet, within a specified date range. These adjustments bear a 'pending' status and are placed at the commencement of the export document.
+
+#### **Use invoice posted date**
+
+Ordinarily, the export utilizes the adjustment's creation date rather than the invoice date. Consequently, an older uninvoiced charge or credit that was created within a set date range but invoiced later will not be reflected in the export. To counter this, choose this option to instead use the invoice posted date for a comprehensive view. Note that the creation date determines the presence of uninvoiced adjustments in the export as they lack an associated invoice date.
+
+# Filters
 
 ### Time Range Filter
 
-Utilize this feature to visualize charge and credit adjustments initiated in a specified timeframe. The "adjustment_created_at" date in the export is the default parameter used to filter results. In case you wish to filter adjustments based on the invoice creation date, simply opt for the "Use invoice date" option.
+Utilize this feature to visualize charge and credit adjustments initiated in a specified timeframe. The "adjustment\_created\_at" date in the export is the default parameter used to filter results. In case you wish to filter adjustments based on the invoice creation date, simply opt for the "Use invoice date" option.
 
-* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
+**Note**: Adjustments are immutable; hence, a 'modified' time range option is non-existent.
 
 # Exports table
 
@@ -98,19 +93,19 @@ To help you identify and organize information effectively, the export provides a
 <Table align={["left","left","left","left"]}>
   <thead>
     <tr>
-      <th>
+      <th style={{ textAlign: "left" }}>
         Column Name
       </th>
 
-      <th>
+      <th style={{ textAlign: "left" }}>
         Example
       </th>
 
-      <th>
+      <th style={{ textAlign: "left" }}>
         Description
       </th>
 
-      <th>
+      <th style={{ textAlign: "left" }}>
         Data type (max size)
       </th>
     </tr>
@@ -118,1175 +113,1175 @@ To help you identify and organize information effectively, the export provides a
 
   <tbody>
     <tr>
-      <td>
+      <td style={{ textAlign: "left" }}>
         <span id="uuid">uuid</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         b964b5439c2548a489b3a136e75aee9f
       </td>
 
-      <td>
-        Unique internal identifier for the adjustment. Equivalent to line_item_uuid in the deprecated Invoices export.
+      <td style={{ textAlign: "left" }}>
+        Unique internal identifier for the adjustment. Equivalent to line\_item\_uuid in the deprecated Invoices export.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="account_code">account_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="account_code">account\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         123122E
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Account code being charged for this invoice.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="subscription_id">subscription_id</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="subscription_id">subscription\_id</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         1fed8d153fcf4ea2a1d55ff2eebd51b7
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Subscription UUID associated with this adjustment on the invoice.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_id">invoice_id</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_id">invoice\_id</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         4bdb2171cebe4ecfb0cb129bd1a65746
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Unique internal identifier for the invoice. This is called the 'id' in the Invoices - Summary export or 'uuid' for the invoice in the API.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_status">adjustment_status</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_status">adjustment\_status</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         invoiced or pending
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Current status of the adjustment. Pending adjustments are charges or credits on an account that have not been applied to an invoice yet. Invoiced adjustments will always have an invoice associated with them.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_type">adjustment_type</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_type">adjustment\_type</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         charge or credit
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Charges are positive adjustments that debit the account. Credits are negative adjustments that credit the account.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(10)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_created_at">adjustment_created_at</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_created_at">adjustment\_created\_at</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         2012-02-19 12:01:33 PST
       </td>
 
-      <td>
-        Creation date of the adjustment. This date will equal the billed_date of the invoice in most cases, but will be older than the billed_date if the adjustment was created on the account a period of time before it was invoiced. The adjustment_created_at date will never be after the invoice's billed_date.
+      <td style={{ textAlign: "left" }}>
+        Creation date of the adjustment. This date will equal the billed\_date of the invoice in most cases, but will be older than the billed\_date if the adjustment was created on the account a period of time before it was invoiced. The adjustment\_created\_at date will never be after the invoice's billed\_date.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_start_at">adjustment_start_at</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_start_at">adjustment\_start\_at</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         2012-02-19 12:01:33 PST
       </td>
 
-      <td>
-        Bill cycle start date for a specific adjustment. Equivalent to line_item_start_date in the deprecated Invoices export.
+      <td style={{ textAlign: "left" }}>
+        Bill cycle start date for a specific adjustment. Equivalent to line\_item\_start\_date in the deprecated Invoices export.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         ´timestamp
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_end_at">adjustment_end_at</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_end_at">adjustment\_end\_at</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         2012-02-19 12:01:33 PST
       </td>
 
-      <td>
-        Bill cycle end date for a specific adjustment. Equivalent to line_item_end_date in the deprecated Invoices.
+      <td style={{ textAlign: "left" }}>
+        Bill cycle end date for a specific adjustment. Equivalent to line\_item\_end\_date in the deprecated Invoices.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_description">adjustment_description</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_description">adjustment\_description</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Gold Plan
       </td>
 
-      <td>
-        Description for a specific adjustment. This is automatically generated for all plan adjustments. This is custom for one-time custom charges and credits. Equivalent to line_item_description in the deprecated Invoices export
+      <td style={{ textAlign: "left" }}>
+        Description for a specific adjustment. This is automatically generated for all plan adjustments. This is custom for one-time custom charges and credits. Equivalent to line\_item\_description in the deprecated Invoices export
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(255)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_quantity">adjustment_quantity</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_quantity">adjustment\_quantity</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         1
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Quantity of the adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_currency">adjustment_currency</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_currency">adjustment\_currency</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         USD
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Currency of the adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(3)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_amount">adjustment_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_amount">adjustment\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         100
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Adjustment amount, before discounts or taxes.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_total">adjustment_total</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_total">adjustment\_total</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         50
       </td>
 
-      <td>
-        The total amount of the adjustment after discounts and taxes [(quantity x price) + discount + tax]. Equivalent to line_item_total in the deprecated Invoices.
+      <td style={{ textAlign: "left" }}>
+        The total amount of the adjustment after discounts and taxes [(quantity x price) + discount + tax]. Equivalent to line\_item\_total in the deprecated Invoices.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_taxable">adjustment_taxable</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_taxable">adjustment\_taxable</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0 or 1
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0 indicates adjustment is not taxable, 1 indicates adjustment is taxable.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         boolean
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_discount">adjustment_discount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_discount">adjustment\_discount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         5
       </td>
 
-      <td>
-        The discount applied to the adjustment that comes from the specific coupon redemption in adjustment_coupon_code.
+      <td style={{ textAlign: "left" }}>
+        The discount applied to the adjustment that comes from the specific coupon redemption in adjustment\_coupon\_code.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_tax">adjustment_tax</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_tax">adjustment\_tax</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         5
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The tax amount for the adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_accounting_code">adjustment_accounting_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_accounting_code">adjustment\_accounting\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         X100
       </td>
 
-      <td>
-        Internal accounting code for a specific adjustment. This value will only populate if you define an accounting code for the adjustment. Accounting codes can be defined for all adjustments. Plan set-up fees and plan free trial charges will inherit the plan's accounting code. Equivalent to line_item_accounting_code in the deprecated Invoices export.
+      <td style={{ textAlign: "left" }}>
+        Internal accounting code for a specific adjustment. This value will only populate if you define an accounting code for the adjustment. Accounting codes can be defined for all adjustments. Plan set-up fees and plan free trial charges will inherit the plan's accounting code. Equivalent to line\_item\_accounting\_code in the deprecated Invoices export.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(25)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_product_code">adjustment_product_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_product_code">adjustment\_product\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         gold
       </td>
 
-      <td>
-        Product code for a specific adjustment. This will populate automatically with the plan code or add-on code if the adjustment is for a subscription. This will populate for custom charges and credits (origin = debit or one_time) if a value was set when the adjustment was created. Equivalent to line_item_product_code in the deprecated Invoices export.
+      <td style={{ textAlign: "left" }}>
+        Product code for a specific adjustment. This will populate automatically with the plan code or add-on code if the adjustment is for a subscription. This will populate for custom charges and credits (origin = debit or one\_time) if a value was set when the adjustment was created. Equivalent to line\_item\_product\_code in the deprecated Invoices export.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_tax_code">adjustment_tax_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_tax_code">adjustment\_tax\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         P0000000, physical
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Tax code is a field associated with the adjustment that we send to Avalara for tax calculations. If you are using Recurly's EU VAT feature, you can use values of 'unknown', 'physical', or 'digital'. If you have your own Avalara AvaTax account configured, you can use Avalara tax codes to assign custom tax rules.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_origin">adjustment_origin</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_origin">adjustment\_origin</span>
       </td>
 
-      <td>
-        plan, plan_trial, setup_fee, add_on, debit, one_time, credit, carryforward
+      <td style={{ textAlign: "left" }}>
+        plan, plan\_trial, setup\_fee, add\_on, debit, one\_time, credit, carryforward
       </td>
 
-      <td>
-        The original source for an adjustment. A credit created from an original charge will have the value of the charge's origin. Equivalent to line_item_origin in the deprecated Invoices export. (plan = subscription fee, plan_trial = trial period 0 amount charge, setup_fee = subscription setup fee, add_on = subscription add-on fee, debit = custom charge through the UI or Adjustments API, one_time = custom charge through the Transactions API, credit = custom credit, carryforward = the charge that zeros out a negative invoice and should be ignored)
+      <td style={{ textAlign: "left" }}>
+        The original source for an adjustment. A credit created from an original charge will have the value of the charge's origin. Equivalent to line\_item\_origin in the deprecated Invoices export. (plan = subscription fee, plan\_trial = trial period 0 amount charge, setup\_fee = subscription setup fee, add\_on = subscription add-on fee, debit = custom charge through the UI or Adjustments API, one\_time = custom charge through the Transactions API, credit = custom credit, carryforward = the charge that zeros out a negative invoice and should be ignored)
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(20)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="tax_type">tax_type</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="tax_type">tax\_type</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         usst, vat, ca, au, nz
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Tax type for the adjustment. Will be "vat" for EU VAT, "usst" for U.S. Sales Tax, or the 2 letter country code for country level tax types like Canada, Australia, New Zealand, Israel, and all non-EU European countries.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(6)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="tax_region">tax_region</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="tax_region">tax\_region</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         NY, FR, GST, VAT
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The tax region for the adjustment. For U.S. Sales Tax, this will be the 2 letter state code. For EU VAT this will be the 2 letter country code. For all country level tax types, this will display the regional tax, like VAT, GST, or PST.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(15)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="tax_rate">tax_rate</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="tax_rate">tax\_rate</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.09
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Tax rate applied to the adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="tax_amount">tax_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="tax_amount">tax\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         5
       </td>
 
-      <td>
-        The tax amount for the adjustment. This column is the same as the adjustment_tax column, but tax_amount may be missing a few values for merchants who have used Recurly's older VAT feature (pre-2015). Merchants who used the old VAT feature should use the adjustment_tax column for older reports.
+      <td style={{ textAlign: "left" }}>
+        The tax amount for the adjustment. This column is the same as the adjustment\_tax column, but tax\_amount may be missing a few values for merchants who have used Recurly's older VAT feature (pre-2015). Merchants who used the old VAT feature should use the adjustment\_tax column for older reports.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="country_juris">country_juris</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="country_juris">country\_juris</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         united states, germany, australia
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Country tax jurisdiction of the adjustment. This will be the full name of the country in lowercase.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="country_rate">country_rate</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="country_rate">country\_rate</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0
       </td>
 
-      <td>
-        Country tax rate of the adjustment. This is the tax rate that corresponds to the country_juris and country_amount.
+      <td style={{ textAlign: "left" }}>
+        Country tax rate of the adjustment. This is the tax rate that corresponds to the country\_juris and country\_amount.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="country_amount">country_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="country_amount">country\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0
       </td>
 
-      <td>
-        Country tax amount of the adjustment. This is the tax amount that corresponds to country_rate and country_juris.
+      <td style={{ textAlign: "left" }}>
+        Country tax amount of the adjustment. This is the tax amount that corresponds to country\_rate and country\_juris.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="state_juris">state_juris</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="state_juris">state\_juris</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         california, ontario
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         State or province tax jurisdiction of the adjustment. This will be the full name of the state or province in lowercase.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="state_rate">state_rate</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="state_rate">state\_rate</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.065
       </td>
 
-      <td>
-        State or province tax rate of the adjustment. This is the tax rate that corresponds to the state_juris and state_amount.
+      <td style={{ textAlign: "left" }}>
+        State or province tax rate of the adjustment. This is the tax rate that corresponds to the state\_juris and state\_amount.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="state_amount">state_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="state_amount">state\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.33
       </td>
 
-      <td>
-        State or province tax amount of the adjustment. This is the tax amount that corresponds to state_rate and state_juris.
+      <td style={{ textAlign: "left" }}>
+        State or province tax amount of the adjustment. This is the tax amount that corresponds to state\_rate and state\_juris.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="county_juris">county_juris</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="county_juris">county\_juris</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         san mateo
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         County tax jurisdiction of the adjustment. This will be the full name of the county in lowercase.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="county_rate">county_rate</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="county_rate">county\_rate</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.01
       </td>
 
-      <td>
-        County tax rate of the adjustment. This is the tax rate that corresponds to the county_juris and county_amount.
+      <td style={{ textAlign: "left" }}>
+        County tax rate of the adjustment. This is the tax rate that corresponds to the county\_juris and county\_amount.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="county_amount">county_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="county_amount">county\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.05
       </td>
 
-      <td>
-        County tax amount of the adjustment. This is the tax amount that corresponds to county_rate and county_juris.
+      <td style={{ textAlign: "left" }}>
+        County tax amount of the adjustment. This is the tax amount that corresponds to county\_rate and county\_juris.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="city_juris">city_juris</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="city_juris">city\_juris</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         san francisco
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         City tax jurisdiction of the adjustment. This will be the full name of the city in lowercase.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="city_rate">city_rate</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="city_rate">city\_rate</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.1
       </td>
 
-      <td>
-        City tax rate of the adjustment. This is the tax rate that corresponds to the city_juris and city_amount.
+      <td style={{ textAlign: "left" }}>
+        City tax rate of the adjustment. This is the tax rate that corresponds to the city\_juris and city\_amount.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="city_amount">city_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="city_amount">city\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.05
       </td>
 
-      <td>
-        City tax amount of the adjustment. This is the tax amount that corresponds to city_rate and city_juris.
+      <td style={{ textAlign: "left" }}>
+        City tax amount of the adjustment. This is the tax amount that corresponds to city\_rate and city\_juris.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="special_juris">special_juris</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="special_juris">special\_juris</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         san francisco
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Special tax jurisdiction of the adjustment. This will be the full name of the jurisdiction in lowercase.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="special_rate">special_rate</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="special_rate">special\_rate</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.1
       </td>
 
-      <td>
-        Special jurisdiction tax rate of the adjustment. This is the tax rate that corresponds to the special_juris and special_amount.
+      <td style={{ textAlign: "left" }}>
+        Special jurisdiction tax rate of the adjustment. This is the tax rate that corresponds to the special\_juris and special\_amount.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="special_amount">special_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="special_amount">special\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         0.05
       </td>
 
-      <td>
-        Special jurisdiction tax amount of the adjustment. This is the tax amount that corresponds to special_rate and special_juris.
+      <td style={{ textAlign: "left" }}>
+        Special jurisdiction tax amount of the adjustment. This is the tax amount that corresponds to special\_rate and special\_juris.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_refund">adjustment_refund</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_refund">adjustment\_refund</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         TRUE, FALSE
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         TRUE indicates that the adjustment is a refund of a charge. FALSE indicates that the adjustment was a standard charge.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         boolean
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="original_adjustment_uuid">original_adjustment_uuid</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="original_adjustment_uuid">original\_adjustment\_uuid</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         b964b5439c2548a489b3a136e75aee9f
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Value is the uuid of the previous related adjustment. Will only have a value if the adjustment is a credit created from a previous credit, or if the credit was created from a charge refund.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(32)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_number">invoice_number</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_number">invoice\_number</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         1291
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Invoice number of the invoice the adjustment was on.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_state">invoice_state</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_state">invoice\_state</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         paid
       </td>
 
-      <td>
-        Current state of the invoice the adjustment was on. State can be: pending, processing, past_due, paid, or failed. Equivalent to invoice_status in the Invoices - Summary export.
+      <td style={{ textAlign: "left" }}>
+        Current state of the invoice the adjustment was on. State can be: pending, processing, past\_due, paid, or failed. Equivalent to invoice\_status in the Invoices - Summary export.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(20)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_coupon_code">adjustment_coupon_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_coupon_code">adjustment\_coupon\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         1monthfree-K09SC9R8
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The coupon code that discounted the adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_billed_date">invoice_billed_date</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_billed_date">invoice\_billed\_date</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         2012-02-19 12:01:33 PST
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Creation date of the invoice. Equivalent to date in the deprecated Invoices export.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_closed_at">invoice_closed_at</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_closed_at">invoice\_closed\_at</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         2012-02-19 12:01:33 PST
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Date invoice was paid or failed.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_net_terms">invoice_net_terms</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_net_terms">invoice\_net\_terms</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         on-receipt, net-10, net-30, net-60
       </td>
 
-      <td>
-        Identifies the net_terms agreement associated with the invoice. All automatic collection invoices are due 'on-receipt'. Manual collection invoices can have terms of net-10, net-30, net-60, or a custom net day amount.
+      <td style={{ textAlign: "left" }}>
+        Identifies the net\_terms agreement associated with the invoice. All automatic collection invoices are due 'on-receipt'. Manual collection invoices can have terms of net-10, net-30, net-60, or a custom net day amount.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_po_number">invoice_po_number</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_po_number">invoice\_po\_number</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         AE12523
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         For manual invoicing, this identifies the Purchase Order number associated with the invoice. This value must be entered by the merchant at the time the invoice is created or it will not exist.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_collection_method">invoice_collection_method</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_collection_method">invoice\_collection\_method</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         automatic or manual
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Identifies whether the invoice fees are collected via manual or automatic invoicing. An automatic invoice means a corresponding transaction is run using the account's billing information at the same time the invoice is created. Manual invoices are created without a corresponding transaction. The merchant must enter a manual payment transaction or have the customer pay the invoice with an automatic method, like credit card, PayPal, Amazon, or ACH bank payment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_type">invoice_type</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_type">invoice\_type</span>
       </td>
 
-      <td>
-        invoice_type
+      <td style={{ textAlign: "left" }}>
+        invoice\_type
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The original invoice will have a type of 'purchase'. Any refunds or voids will create a negative invoice to cancel out the original. This negative invoice will have a type of 'refund'.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="account_name">account_name</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="account_name">account\_name</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         JJ Smith
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         First and last name from account.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         text
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="account_country">account_country</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="account_country">account\_country</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         US
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The 2 letter country code for the country of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(2)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="account_vat_number">account_vat_number</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="account_vat_number">account\_vat\_number</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         IE124211145
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         VAT registration number for the customer on the invoice. This will come from the VAT Number field in the Billing Info or the Account Info depending on your tax settings and the invoice collection method.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(20)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_plan_code">adjustment_plan_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_plan_code">adjustment\_plan\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         basic
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The plan code for the plan associated with the subscription. This value will exist for plan fee, setup fee, add-on fee and free trial adjustments. This value will not exist for custom charges, custom credits, or open amount refund credits.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="original_invoice_number">original_invoice_number</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="original_invoice_number">original\_invoice\_number</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         1002
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         If the row is an adjustment on a refund invoice, this value will exist and show the invoice number of the purchase invoice the refund was created from.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="invoice_due_on">invoice_due_on</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="invoice_due_on">invoice\_due\_on</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         2012-02-19 12:01:33 PST
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The due date of the invoice.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_subtotal">adjustment_subtotal</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_subtotal">adjustment\_subtotal</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         50.25
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The adjustment amount after discounts, but before taxes.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_credit_reason_code">adjustment_credit_reason_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_credit_reason_code">adjustment\_credit\_reason\_code</span>
       </td>
 
-      <td>
-        general, service, promotional, refund, write_off, gift_card
+      <td style={{ textAlign: "left" }}>
+        general, service, promotional, refund, write\_off, gift\_card
       </td>
 
-      <td>
-        The credit reason code of the adjustment. This is a new attribute with Recurly defined values the merchant can choose from when creating custom credits, or Recurly will set when issuing credits.  
+      <td style={{ textAlign: "left" }}>
+        The credit reason code of the adjustment. This is a new attribute with Recurly defined values the merchant can choose from when creating custom credits, or Recurly will set when issuing credits.\
         **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="adjustment_refundable_amount">adjustment_refundable_amount</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="adjustment_refundable_amount">adjustment\_refundable\_amount</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         50.25
       </td>
 
-      <td>
-        The refundable amount of the charge adjustment, which is the adjustment total, including discounts and tax, minus all credit adjustments issued against it.  
+      <td style={{ textAlign: "left" }}>
+        The refundable amount of the charge adjustment, which is the adjustment total, including discounts and tax, minus all credit adjustments issued against it.\
         **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="shipping_method_code">shipping_method_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="shipping_method_code">shipping\_method\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         usps-overnight
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The Shipping Method code used when the Shipping Method was created.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="item_code">item_code</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="item_code">item\_code</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         item123
       </td>
 
-      <td>
-        The Item Code maps to the user-specified unique ID of the item that was sold on this adjustment.
+      <td style={{ textAlign: "left" }}>
+        The Item Code maps to the user-specified unique ID of the item that was sold on this adjustment.  
 
         Reference [this page](https://docs.recurly.com/docs/catalog) for more on items.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="item_id">item_id</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="item_id">item\_id</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         1234567899876543210
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The Item ID maps to the system-generated unique ID of the item that was sold on this adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
 
     <tr>
-      <td>
-        <span id="external_sku">external_sku</span>
+      <td style={{ textAlign: "left" }}>
+        <span id="external_sku">external\_sku</span>
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         abc123
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         The External SKU mapps to the user-specified SKU of the item that was sold on this adjustment.
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td>
-        adjustment_api_id
+      <td style={{ textAlign: "left" }}>
+        adjustment\_api\_id
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         e28zov4fw0v2
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         Adjustment API ID
       </td>
 
-      <td>
+      <td style={{ textAlign: "left" }}>
         string
       </td>
     </tr>
