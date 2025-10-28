@@ -1,5 +1,5 @@
 ---
-title: Copy of Items — associated subscriptions - export
+title: Products - export
 excerpt: >-
   Unlock detailed insights into your subscription add-ons with the Items -
   Associated Subscriptions export.
