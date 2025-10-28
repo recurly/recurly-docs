@@ -34,7 +34,7 @@ The "Items - Associated Plans" export function in Recurly permits users to gener
 
 ### **Item Name Filter**
 
-The Item name filter allows you to select existing name by name, code or SKU
+The Item name filter allows you to select existing item by name, code or SKU
 
 ### **Time Range Filter**
 
