@@ -28,15 +28,7 @@ The "Accounts Export" section in the Recurly user guide helps users grasp compre
 
 ### Versions Filter
 
-* **Version 8** - updated on 08/05/2025. Addition of cc_emails.
-* **Version 7** - updated on 02/05/2025. Addition of account_api_id.
-* **Version 6** - updated on 06/14/2023. Addition of account’s preferred_locale.
-* **Version 5** - updated on 07/23/2021. Addition of dunning_campaign_code dunning_campaign_id.
-* **Version 4** - updated on 12/10/2020. The tax_location_valid column now relates to the specific billing info in each row.
-  Addition of primary_payment_method column displaying TRUE or FALSE based on the primary payment method status of the billing info.
-  Addition of billing_info_id column showcasing the ID of the particular billing info.
-* **Version 3** - updated on 90/13/2018. Addition parent_account_code column for the Account Hierarchy feature, helping in identifying an account's parent if applicable, though it will only hold a value if the feature is active.
-* **Version 2** - updated on 09/06/2018. Addition of custom fields.
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
 ### Account status filter
 
@@ -141,4 +133,37 @@ To help you identify and organize information effectively, the export provides a
 | account_api_id                                                                    | e28zov4fw0v2                                                                                                 | Account API ID                                                                                                                                         | string               |
 | cc_emails                                                                         | [cc_email1@recurly.com](mailto:cc_email1@recurly.com) ,[cc_email2@recurly.com](mailto:cc_email2@recurly.com) | Additional email address that should receive account correspondence. These should be separated only by commas.                                         | string               |
 
-<br />
+# Version Changelog
+
+#### Version 8 - 08/05/2025
+
+Addition of cc_emails
+
+#### Version 7 - 2/5/2025
+
+Addition of `account_api_id`
+
+#### Version 6 - 06/14/23
+
+Added account’s preferred locale column  
+`preferred_locale`
+
+#### Version 5 - 07/23/21
+
+Added Dunning campaign columns  
+`dunning_campaign_code`
+`dunning_campaign_id`
+
+#### Version 4 - 12/10/20
+
+* The `tax_location_valid` column now relates to the specific billing info in each row.
+* Introduced `primary_payment_method` column displaying TRUE or FALSE based on the primary payment method status of the billing info.
+* New `billing_info_id` column showcasing the ID of the particular billing info.
+
+#### Version 3 - 9/13/18
+
+* Added `parent_account_code` column for the Account Hierarchy feature, helping in identifying an account's parent if applicable, though it will only hold a value if the feature is active.
+
+#### Version 2 - 9/6/18
+
+* Introduction of columns for custom fields, placed at the end of the export.
