@@ -1,16 +1,10 @@
 ---
-title: Items — associated subscriptions - export
-excerpt: >-
-  Unlock detailed insights into your subscription add-ons with the Items -
-  Associated Subscriptions export.
+title: Products - export
+excerpt: Unlock detailed insights into your product catalog with the products export.
 deprecated: false
 hidden: false
 metadata:
-  title: ''
-  description: ''
   robots: index
-next:
-  description: ''
 ---
 # Overview
 
@@ -20,23 +14,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The "Items - Associated Subscriptions" export provides comprehensive details of all subscription add-ons generated from a saved item in your catalog over a certain period. It focuses on add-ons linked to renewing, future start, last billing period, and paused subscriptions, omitting details from canceled or expired subscriptions.
-
-<Image border={false} src="https://files.readme.io/4ea2d491595760bcea37c0e445b53549a10fee9aab3bdd6fbba3a0f1c06822f0-image.png" />
+The "Products" export provides comprehensive details of all product offerings, add-ons and items, whether active or inactive.
 
 # Filters
 
-### **Versions Filter**
+### Versions Filter
 
 * The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
-### **Item Name Filter**
-
-The Item name filter allows you to select existing item by name, code or SKU
-
-### **Time Range Filter**
-
-Customize your export to focus on renewing, future start, last billing period, and paused subscriptions formed during a selected period, leveraging the "subscription_add_on_created_at" date in the export to narrow down your data.
+### Time range filters
 
 * The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
@@ -107,18 +93,4 @@ To help you identify and organize information effectively, the export provides a
 
 # Version changelog
 
-### Version 5 - 2/5/2025
-
-Addition of `item_api_id`.
-
-### Version 4 - 1/13/2022
-
-Addition of subscription_add_on_tax_inclusive column.
-
-### Version 3 - 7/23/2020
-
-Addition of subscription_add_on_source column.
-
-### Version 2 - 4/29/2020
-
-Addition of subscription_add_on_tier_type, subscription_add_on_total_amount_in_cents columns.
+<br />

@@ -22,24 +22,41 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Invoices Summary export provides a detailed report for every invoice. This data gives you a deeper understanding of every invoice to help you manage your invoices better.
 
+<Image border={false} src="https://files.readme.io/1b65aa5d744964663cfad423756b27a4e4463600d057675defca303b4f101cac-image.png" />
+
+<br />
+
 # Filters
 
-#### Invoice Status Filter
+### Versions Filter
 
-This filter allows you to select invoices based on their current statuses which include:\
--**All**: All invoices including credit and charge.\
--**Charge**: Only charge invoices.\
--**Credit**: Only credit invoices.
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the Version changelog at the bottom of this page.
 
-#### Date Range Filters
+### Invoice Type Filter
 
-##### Created
+This filter allows you to select invoices based on their current statuses which include:
 
-Involves invoices created within a chosen time span.
+* **All**: All invoices including credit and charge.
+* **Charge**: Only charge invoices.
+* **Credit**: Only credit invoices.
 
-##### Modified
+### Invoice Status Filter
 
-Entails invoices modified in a selected time range.
+* **All**: Includes all invoices that remain unpaid.
+* **Pending**: Consists of invoices not yet due and only encompasses manual invoices.
+* **Processing**: Concerns ACH transactions presently undergoing processing.
+* **Past Due**: Involves all invoices that have surpassed their due date without being settled.
+* **Paid** : Includes all invoices that have been paid
+* **Failed**: Pertains to invoices labeled as failed or not collected within the Dunning period.
+
+### Export On Filters
+
+* **Created** - involves invoices created within a chosen time span.
+* **Modified**- entails invoices modified in a selected time range.
+
+### Time Range Filter
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The **Start Date** and **End Date** will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -85,1037 +102,64 @@ Entails invoices modified in a selected time range.
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-<Table align={[null,null,null,"left"]}>
-  <thead>
-    <tr>
-      <th>
-        Column Name
-      </th>
-
-      <th>
-        Example
-      </th>
-
-      <th>
-        Description
-      </th>
-
-      <th style={{ textAlign: "left" }}>
-        Data type (max size)
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        <span id="id">id</span>
-      </td>
-
-      <td>
-        b964b5439c2548a489b3a136e75aee9f
-      </td>
-
-      <td>
-        Unique internal identifier for the invoice. This is also called the 'invoice\_id' or 'uuid' for the invoice in the API.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(32)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_number">invoice\_number</span>
-      </td>
-
-      <td>
-        1291
-      </td>
-
-      <td>
-        External invoice identifier.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="billed_date">billed\_date</span>
-      </td>
-
-      <td>
-        2012-02-19 12:01:33 PST
-      </td>
-
-      <td>
-        Creation date of the invoice. Equivalent to date in the deprecated Invoices export. Used for Created date range filter.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="due_on">due\_on</span>
-      </td>
-
-      <td>
-        2012-02-19 12:01:33 PST
-      </td>
-
-      <td>
-        Date invoice is due. This is the date the net terms is reached.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="closed_at">closed\_at</span>
-      </td>
-
-      <td>
-        2012-02-19 12:01:33 PST
-      </td>
-
-      <td>
-        Date invoice was closed (paid) or failed.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="status">status</span>
-      </td>
-
-      <td>
-        pending, processing, past\_due, paid, failed, voided
-      </td>
-
-      <td>
-        Current status of the invoice. Equivalent to invoice\_state in the Adjustments export. See filter notes above for details on what each status means.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(20)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="net_terms">net\_terms</span>
-      </td>
-
-      <td>
-        on-receipt, net-10, net-30, net-60
-      </td>
-
-      <td>
-        Identifies the net\_terms agreement associated with the invoice. All automatic collection invoices are due 'on-receipt'. Manual collection invoices can have terms of net-10, net-30, net-60, or a custom net day amount.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="collection_method">collection\_method</span>
-      </td>
-
-      <td>
-        automatic or manual
-      </td>
-
-      <td>
-        Identifies whether the invoice fees are collected via manual or automatic invoicing. An automatic invoice means a corresponding transaction is run using the account's billing information at the same time the invoice is created. Manual invoices are created without a corresponding transaction.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_code">account\_code</span>
-      </td>
-
-      <td>
-        123122E
-      </td>
-
-      <td>
-        Account code being charged for this invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_name">account\_name</span>
-      </td>
-
-      <td>
-        JJ Smith
-      </td>
-
-      <td>
-        First and last name from account associated with that invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_company">account\_company</span>
-      </td>
-
-      <td>
-        Company, Inc.
-      </td>
-
-      <td>
-        Company name from account. This field is from the Account Info and is displayed on the invoice if it exists.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(225)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_line1">account\_line1</span>
-      </td>
-
-      <td>
-        1 Main Street
-      </td>
-
-      <td>
-        Address line 1 of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_line2">account\_line2</span>
-      </td>
-
-      <td>
-        Suite 100
-      </td>
-
-      <td>
-        Address line 2 of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_city">account\_city</span>
-      </td>
-
-      <td>
-        San Francisco
-      </td>
-
-      <td>
-        City of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_state">account\_state</span>
-      </td>
-
-      <td>
-        CA
-      </td>
-
-      <td>
-        State or province of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_zip">account\_zip</span>
-      </td>
-
-      <td>
-        94107
-      </td>
-
-      <td>
-        ZIP/postal code of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="account_country">account\_country</span>
-      </td>
-
-      <td>
-        US
-      </td>
-
-      <td>
-        The 2 letter country code for the country of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="vat_number">vat\_number</span>
-      </td>
-
-      <td>
-        IE124211145
-      </td>
-
-      <td>
-        VAT registration number for the customer on the invoice. This will come from the VAT Number field in the Billing Info or the Account Info depending on your tax settings and the invoice collection method.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(20)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="po_number">po\_number</span>
-      </td>
-
-      <td>
-        AE12523
-      </td>
-
-      <td>
-        For manual invoicing, this identifies the Purchase Order number associated with the invoice. This value must be entered by the merchant at the time the invoice is created or it will not exist.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="coupon_code">coupon\_code</span>
-      </td>
-
-      <td>
-        50off
-      </td>
-
-      <td>
-        The code for the coupon associated with any discounts on the invoice. This value will only exist if a coupon was applied to the invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="currency">currency</span>
-      </td>
-
-      <td>
-        USD
-      </td>
-
-      <td>
-        The currency of the amounts on the invoice. We do not allow mixed currency invoices.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(3)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_total">invoice\_total</span>
-      </td>
-
-      <td>
-        100
-      </td>
-
-      <td>
-        The final total on the invoice. The summation of invoice charges, discounts, credits, and tax. Equivalent to the total in the deprecated Invoices export.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_subtotal">invoice\_subtotal</span>
-      </td>
-
-      <td>
-        50
-      </td>
-
-      <td>
-        The Subtotal on the invoice. The summation of charges, discounts, and credits, before tax.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="tax_amount">tax\_amount</span>
-      </td>
-
-      <td>
-        15.00
-      </td>
-
-      <td>
-        The total tax amount on the invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="tax_type">tax\_type</span>
-      </td>
-
-      <td>
-        usst, vat, ca, au, nz
-      </td>
-
-      <td>
-        Provides the tax type as "vat" for EU VAT, "usst" for U.S. Sales Tax, or the 2 letter country code for country level tax types like Canada, Australia, New Zealand, Israel, and all non-EU European countries.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(6)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="tax_region">tax\_region</span>
-      </td>
-
-      <td>
-        NY, FR, GST, VAT
-      </td>
-
-      <td>
-        Provides the tax region applied on an invoice. For U.S. Sales Tax, this will be the 2 letter state code. For EU VAT this will be the 2 letter country code. For all country level tax types, this will display the regional tax, like VAT, GST, or PST.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(15)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="tax_rate">tax\_rate</span>
-      </td>
-
-      <td>
-        0.1
-      </td>
-
-      <td>
-        Tax rate applied on the invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="credit_to_account">credit\_to\_account</span>
-      </td>
-
-      <td>
-        0
-      </td>
-
-      <td>
-        Amount of credit applied back to the account. This amount is a charge with adjustment\_origin of 'carryforward' on the invoice. This charge is what zeros out the invoice and should be filtered out of your reports. Credit to Account also maps to the uninvoiced credit that is created for the same amount and left on the account for payment of a future invoice. That credit will have an adjustment\_origin that matches the original charge's origin.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="recovery_reason">recovery\_reason</span>
-      </td>
-
-      <td>
-        exp\_date, retry, account\_updater, prior\_recovery, customer\_updates
-      </td>
-
-      <td>
-        If the initial transaction failed but a subsequent one succeeded, this field indicates why. See the details of what each reason means in our blog "[Revenue Recovery: What Has Recurly Recovered for Me Lately?](https://blog.recurly.com/what-has-recurly-recovered-revenue)".
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_country">invoice\_country</span>
-      </td>
-
-      <td>
-        FR
-      </td>
-
-      <td>
-        This column is only visible if your site has European Union VAT or New Zealand GST Location Validation enabled. Column shows the EU or NZ country code of the customer's address on the invoice. The country refers to the evidence\_matched.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(2)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="evidence_matched">evidence\_matched</span>
-      </td>
-
-      <td>
-        Account Info Country, Billing Info Country, IP Address Country, Credit Card BIN Country
-      </td>
-
-      <td>
-        This column is only visible if your site has European Union VAT or New Zealand GST Location Validation enabled. Column shows the two pieces of evidence that matched when the invoice was created. The corresponding country is the invoice\_country.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="modified_at">modified\_at</span>
-      </td>
-
-      <td>
-        2014-12-26 08:23:34 PST
-      </td>
-
-      <td>
-        The date the invoice was last modified. An invoice is only modified if the status changes. Used for Modified date range filter.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_type">invoice\_type</span>
-      </td>
-
-      <td>
-        purchase, refund, renewal, immediate\_change, termination, credit, gift\_card, write\_off, external\_refund, carryforward\_credit, carryforward\_gift\_credit, usage\_correction, import
-      </td>
-
-      <td>
-        This is the invoice origin. The original invoice will have a type of 'purchase'. Any refunds or voids will create a negative invoice to cancel out the original. This negative invoice will have a type of 'refund'. All other invoice types are unlocked only when the Credit Invoices feature is enabled. See the full table of [invoice origins](/docs/invoices#section-origins) for descriptions.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="original_invoice_number">original\_invoice\_number</span>
-      </td>
-
-      <td>
-        1002
-      </td>
-
-      <td>
-        If the row is a refund invoice, this value will exist and show the invoice number of the purchase invoice the refund was created from.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_name">ship\_address\_name</span>
-      </td>
-
-      <td>
-        Julie Smith
-      </td>
-
-      <td>
-        The first and last name associated with the shipping address
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_line1">ship\_address\_line1</span>
-      </td>
-
-      <td>
-        ship\_address\_line1
-      </td>
-
-      <td>
-        ship\_address\_line1
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_line2">ship\_address\_line2</span>
-      </td>
-
-      <td>
-        Apt 1
-      </td>
-
-      <td>
-        The second line of the street address for the shipping address
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_city">ship\_address\_city</span>
-      </td>
-
-      <td>
-        West Bloomfield
-      </td>
-
-      <td>
-        The city for the shipping address
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_state">ship\_address\_state</span>
-      </td>
-
-      <td>
-        MI
-      </td>
-
-      <td>
-        The state for the shipping address
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_zip">ship\_address\_zip</span>
-      </td>
-
-      <td>
-        48322
-      </td>
-
-      <td>
-        The zip or postal code for the shipping address
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_country">ship\_address\_country</span>
-      </td>
-
-      <td>
-        US
-      </td>
-
-      <td>
-        The country for the shipping address
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="ship_address_phone">ship\_address\_phone</span>
-      </td>
-
-      <td>
-        248-555-1212
-      </td>
-
-      <td>
-        The phone number associated with the shipping address
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_doc_type">invoice\_doc\_type</span>
-      </td>
-
-      <td>
-        legacy, charge, credit
-      </td>
-
-      <td>
-        This is the invoice document type. All invoices created before the Credit Invoices feature is enabled will have a type of ‘legacy’. Once Credit Invoices is enabled, new invoices will be either ‘charge’ or ‘credit’.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_balance">invoice\_balance</span>
-      </td>
-
-      <td>
-        50.25
-      </td>
-
-      <td>
-        The balance of the invoice. **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_balance_modified_at">invoice\_balance\_modified\_at</span>
-      </td>
-
-      <td>
-        2016-01-01 10:17:02 UTC
-      </td>
-
-      <td>
-        The datetime the invoice\_balance last changed due to a transaction or credit payment. **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        timestamp
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_discount">invoice\_discount</span>
-      </td>
-
-      <td>
-        50.25
-      </td>
-
-      <td>
-        Total of all discounts on the invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_subtotal_before_discounts">invoice\_subtotal\_before\_discounts</span>
-      </td>
-
-      <td>
-        50.25
-      </td>
-
-      <td>
-        The total of all adjustments on the invoice, before discounts and taxes.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="invoice_refundable_amount">invoice\_refundable\_amount</span>
-      </td>
-
-      <td>
-        50.25
-      </td>
-
-      <td>
-        The refundable amount of the invoice, which is the invoice total, including discounts and tax, minus all credit invoices issued against it. **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="shipping_address_count">shipping\_address\_count</span>
-      </td>
-
-      <td>
-        1
-      </td>
-
-      <td>
-        Number of shipping addresses if multiple shipping addresses per invoice is enabled.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        numeric
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="dunning_campaign_code">dunning\_campaign\_code</span>
-      </td>
-
-      <td>
-        12345678
-      </td>
-
-      <td>
-        Dunning Campaign Code.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="dunning_campaign_id">dunning\_campaign\_id</span>
-      </td>
-
-      <td>
-        23456789
-      </td>
-
-      <td>
-        Dunning Campaign ID.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="dunning_campaign_version">dunning\_campaign\_version</span>
-      </td>
-
-      <td>
-        1234
-      </td>
-
-      <td>
-        Dunning Campaign Version.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="used_tax_service">used\_tax\_service</span>
-      </td>
-
-      <td>
-        TRUE
-      </td>
-
-      <td>
-        TRUE/FALSE boolean column indicating whether the invoice has used Recurly tax services.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        boolean
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="business_entity_code">business\_entity\_code</span>
-      </td>
-
-      <td>
-        123456789
-      </td>
-
-      <td>
-        Business Entity Code.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <span id="parent_account_code">parent\_account\_code</span>
-      </td>
-
-      <td>
-        123122E
-      </td>
-
-      <td>
-        Parent account code being charged for this invoice.
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        varchar(50)
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        invoice\_api\_id
-      </td>
-
-      <td>
-        e28zov4fw0v2
-      </td>
-
-      <td>
-        Invoice API ID
-      </td>
-
-      <td style={{ textAlign: "left" }}>
-        string
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Column Name                                                                           | Example                                                                                                                                                                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Data type (max size) |
+| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------- |
+| <span id="id">id</span>                                                               | b964b5439c2548a489b3a136e75aee9f                                                                                                                                                 | Unique internal identifier for the invoice. This is also called the 'invoice_id' or 'uuid' for the invoice in the API.                                                                                                                                                                                                                                                                                                                                       | varchar(32)          |
+| <span id="invoice_number">invoice_number</span>                                       | 1291                                                                                                                                                                             | External invoice identifier.                                                                                                                                                                                                                                                                                                                                                                                                                                 | string               |
+| <span id="billed_date">billed_date</span>                                             | 2012-02-19 12:01:33 PST                                                                                                                                                          | Creation date of the invoice. Equivalent to date in the deprecated Invoices export. Used for Created date range filter.                                                                                                                                                                                                                                                                                                                                      | timestamp            |
+| <span id="due_on">due_on</span>                                                       | 2012-02-19 12:01:33 PST                                                                                                                                                          | Date invoice is due. This is the date the net terms is reached.                                                                                                                                                                                                                                                                                                                                                                                              | timestamp            |
+| <span id="closed_at">closed_at</span>                                                 | 2012-02-19 12:01:33 PST                                                                                                                                                          | Date invoice was closed (paid) or failed.                                                                                                                                                                                                                                                                                                                                                                                                                    | timestamp            |
+| <span id="status">status</span>                                                       | pending, processing, past_due, paid, failed, voided                                                                                                                              | Current status of the invoice. Equivalent to invoice_state in the Adjustments export. See filter notes above for details on what each status means.                                                                                                                                                                                                                                                                                                          | varchar(20)          |
+| <span id="net_terms">net_terms</span>                                                 | on-receipt, net-10, net-30, net-60                                                                                                                                               | Identifies the net_terms agreement associated with the invoice. All automatic collection invoices are due 'on-receipt'. Manual collection invoices can have terms of net-10, net-30, net-60, or a custom net day amount.                                                                                                                                                                                                                                     | string               |
+| <span id="collection_method">collection_method</span>                                 | automatic or manual                                                                                                                                                              | Identifies whether the invoice fees are collected via manual or automatic invoicing. An automatic invoice means a corresponding transaction is run using the account's billing information at the same time the invoice is created. Manual invoices are created without a corresponding transaction.                                                                                                                                                         | string               |
+| <span id="account_code">account_code</span>                                           | 123122E                                                                                                                                                                          | Account code being charged for this invoice.                                                                                                                                                                                                                                                                                                                                                                                                                 | varchar(50)          |
+| <span id="account_name">account_name</span>                                           | JJ Smith                                                                                                                                                                         | First and last name from account associated with that invoice.                                                                                                                                                                                                                                                                                                                                                                                               | string               |
+| <span id="account_company">account_company</span>                                     | Company, Inc.                                                                                                                                                                    | Company name from account. This field is from the Account Info and is displayed on the invoice if it exists.                                                                                                                                                                                                                                                                                                                                                 | varchar(225)         |
+| <span id="account_line1">account_line1</span>                                         | 1 Main Street                                                                                                                                                                    | Address line 1 of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.                                                                                                                                                                                                                                                                    | string               |
+| <span id="account_line2">account_line2</span>                                         | Suite 100                                                                                                                                                                        | Address line 2 of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.                                                                                                                                                                                                                                                                    | string               |
+| <span id="account_city">account_city</span>                                           | San Francisco                                                                                                                                                                    | City of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.                                                                                                                                                                                                                                                                              | string               |
+| <span id="account_state">account_state</span>                                         | CA                                                                                                                                                                               | State or province of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.                                                                                                                                                                                                                                                                 | string               |
+| <span id="account_zip">account_zip</span>                                             | 94107                                                                                                                                                                            | ZIP/postal code of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.                                                                                                                                                                                                                                                                   | string               |
+| <span id="account_country">account_country</span>                                     | US                                                                                                                                                                               | The 2 letter country code for the country of the customer's address on the invoice. This will come from the Billing Address or the Account Address depending on your tax settings and the invoice collection method.                                                                                                                                                                                                                                         | string               |
+| <span id="vat_number">vat_number</span>                                               | IE124211145                                                                                                                                                                      | VAT registration number for the customer on the invoice. This will come from the VAT Number field in the Billing Info or the Account Info depending on your tax settings and the invoice collection method.                                                                                                                                                                                                                                                  | varchar(20)          |
+| <span id="po_number">po_number</span>                                                 | AE12523                                                                                                                                                                          | For manual invoicing, this identifies the Purchase Order number associated with the invoice. This value must be entered by the merchant at the time the invoice is created or it will not exist.                                                                                                                                                                                                                                                             | varchar(50)          |
+| <span id="coupon_code">coupon_code</span>                                             | 50off                                                                                                                                                                            | The code for the coupon associated with any discounts on the invoice. This value will only exist if a coupon was applied to the invoice.                                                                                                                                                                                                                                                                                                                     | string               |
+| <span id="currency">currency</span>                                                   | USD                                                                                                                                                                              | The currency of the amounts on the invoice. We do not allow mixed currency invoices.                                                                                                                                                                                                                                                                                                                                                                         | varchar(3)           |
+| <span id="invoice_total">invoice_total</span>                                         | 100                                                                                                                                                                              | The final total on the invoice. The summation of invoice charges, discounts, credits, and tax. Equivalent to the total in the deprecated Invoices export.                                                                                                                                                                                                                                                                                                    | numeric              |
+| <span id="invoice_subtotal">invoice_subtotal</span>                                   | 50                                                                                                                                                                               | The Subtotal on the invoice. The summation of charges, discounts, and credits, before tax.                                                                                                                                                                                                                                                                                                                                                                   | numeric              |
+| <span id="tax_amount">tax_amount</span>                                               | 15.00                                                                                                                                                                            | The total tax amount on the invoice.                                                                                                                                                                                                                                                                                                                                                                                                                         | numeric              |
+| <span id="tax_type">tax_type</span>                                                   | usst, vat, ca, au, nz                                                                                                                                                            | Provides the tax type as "vat" for EU VAT, "usst" for U.S. Sales Tax, or the 2 letter country code for country level tax types like Canada, Australia, New Zealand, Israel, and all non-EU European countries.                                                                                                                                                                                                                                               | varchar(6)           |
+| <span id="tax_region">tax_region</span>                                               | NY, FR, GST, VAT                                                                                                                                                                 | Provides the tax region applied on an invoice. For U.S. Sales Tax, this will be the 2 letter state code. For EU VAT this will be the 2 letter country code. For all country level tax types, this will display the regional tax, like VAT, GST, or PST.                                                                                                                                                                                                      | varchar(15)          |
+| <span id="tax_rate">tax_rate</span>                                                   | 0.1                                                                                                                                                                              | Tax rate applied on the invoice.                                                                                                                                                                                                                                                                                                                                                                                                                             | numeric              |
+| <span id="credit_to_account">credit_to_account</span>                                 | 0                                                                                                                                                                                | Amount of credit applied back to the account. This amount is a charge with adjustment_origin of 'carryforward' on the invoice. This charge is what zeros out the invoice and should be filtered out of your reports. Credit to Account also maps to the uninvoiced credit that is created for the same amount and left on the account for payment of a future invoice. That credit will have an adjustment_origin that matches the original charge's origin. | numeric              |
+| <span id="recovery_reason">recovery_reason</span>                                     | exp_date, retry, account_updater, prior_recovery, customer_updates                                                                                                               | If the initial transaction failed but a subsequent one succeeded, this field indicates why. See the details of what each reason means in our blog "[Revenue Recovery: What Has Recurly Recovered for Me Lately?](https://blog.recurly.com/what-has-recurly-recovered-revenue)".                                                                                                                                                                              | varchar              |
+| <span id="invoice_country">invoice_country</span>                                     | FR                                                                                                                                                                               | This column is only visible if your site has European Union VAT or New Zealand GST Location Validation enabled. Column shows the EU or NZ country code of the customer's address on the invoice. The country refers to the evidence_matched.                                                                                                                                                                                                                 | varchar(2)           |
+| <span id="evidence_matched">evidence_matched</span>                                   | Account Info Country, Billing Info Country, IP Address Country, Credit Card BIN Country                                                                                          | This column is only visible if your site has European Union VAT or New Zealand GST Location Validation enabled. Column shows the two pieces of evidence that matched when the invoice was created. The corresponding country is the invoice_country.                                                                                                                                                                                                         | string               |
+| <span id="modified_at">modified_at</span>                                             | 2014-12-26 08:23:34 PST                                                                                                                                                          | The date the invoice was last modified. An invoice is only modified if the status changes. Used for Modified date range filter.                                                                                                                                                                                                                                                                                                                              | timestamp            |
+| <span id="invoice_type">invoice_type</span>                                           | purchase, refund, renewal, immediate_change, termination, credit, gift_card, write_off, external_refund, carryforward_credit, carryforward_gift_credit, usage_correction, import | This is the invoice origin. The original invoice will have a type of 'purchase'. Any refunds or voids will create a negative invoice to cancel out the original. This negative invoice will have a type of 'refund'. All other invoice types are unlocked only when the Credit Invoices feature is enabled. See the full table of [invoice origins](/docs/invoices#section-origins) for descriptions.                                                        | string               |
+| <span id="original_invoice_number">original_invoice_number</span>                     | 1002                                                                                                                                                                             | If the row is a refund invoice, this value will exist and show the invoice number of the purchase invoice the refund was created from.                                                                                                                                                                                                                                                                                                                       | string               |
+| <span id="ship_address_name">ship_address_name</span>                                 | Julie Smith                                                                                                                                                                      | The first and last name associated with the shipping address                                                                                                                                                                                                                                                                                                                                                                                                 | string               |
+| <span id="ship_address_line1">ship_address_line1</span>                               | ship_address_line1                                                                                                                                                               | ship_address_line1                                                                                                                                                                                                                                                                                                                                                                                                                                           | string               |
+| <span id="ship_address_line2">ship_address_line2</span>                               | Apt 1                                                                                                                                                                            | The second line of the street address for the shipping address                                                                                                                                                                                                                                                                                                                                                                                               | string               |
+| <span id="ship_address_city">ship_address_city</span>                                 | West Bloomfield                                                                                                                                                                  | The city for the shipping address                                                                                                                                                                                                                                                                                                                                                                                                                            | string               |
+| <span id="ship_address_state">ship_address_state</span>                               | MI                                                                                                                                                                               | The state for the shipping address                                                                                                                                                                                                                                                                                                                                                                                                                           | string               |
+| <span id="ship_address_zip">ship_address_zip</span>                                   | 48322                                                                                                                                                                            | The zip or postal code for the shipping address                                                                                                                                                                                                                                                                                                                                                                                                              | string               |
+| <span id="ship_address_country">ship_address_country</span>                           | US                                                                                                                                                                               | The country for the shipping address                                                                                                                                                                                                                                                                                                                                                                                                                         | string               |
+| <span id="ship_address_phone">ship_address_phone</span>                               | 248-555-1212                                                                                                                                                                     | The phone number associated with the shipping address                                                                                                                                                                                                                                                                                                                                                                                                        | string               |
+| <span id="invoice_doc_type">invoice_doc_type</span>                                   | legacy, charge, credit                                                                                                                                                           | This is the invoice document type. All invoices created before the Credit Invoices feature is enabled will have a type of ‘legacy’. Once Credit Invoices is enabled, new invoices will be either ‘charge’ or ‘credit’.                                                                                                                                                                                                                                       | string               |
+| <span id="invoice_balance">invoice_balance</span>                                     | 50.25                                                                                                                                                                            | The balance of the invoice. **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**                                                                                                                                                                                                                                                                                                                            | numeric              |
+| <span id="invoice_balance_modified_at">invoice_balance_modified_at</span>             | 2016-01-01 10:17:02 UTC                                                                                                                                                          | The datetime the invoice_balance last changed due to a transaction or credit payment. **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**                                                                                                                                                                                                                                                                  | timestamp            |
+| <span id="invoice_discount">invoice_discount</span>                                   | 50.25                                                                                                                                                                            | Total of all discounts on the invoice.                                                                                                                                                                                                                                                                                                                                                                                                                       | numeric              |
+| <span id="invoice_subtotal_before_discounts">invoice_subtotal_before_discounts</span> | 50.25                                                                                                                                                                            | The total of all adjustments on the invoice, before discounts and taxes.                                                                                                                                                                                                                                                                                                                                                                                     | numeric              |
+| <span id="invoice_refundable_amount">invoice_refundable_amount</span>                 | 50.25                                                                                                                                                                            | The refundable amount of the invoice, which is the invoice total, including discounts and tax, minus all credit invoices issued against it. **This column will be null until Recurly's Credit Invoices feature is enabled on your Recurly site.**                                                                                                                                                                                                            | numeric              |
+| <span id="shipping_address_count">shipping_address_count</span>                       | 1                                                                                                                                                                                | Number of shipping addresses if multiple shipping addresses per invoice is enabled.                                                                                                                                                                                                                                                                                                                                                                          | numeric              |
+| <span id="dunning_campaign_code">dunning_campaign_code</span>                         | 12345678                                                                                                                                                                         | Dunning Campaign Code.                                                                                                                                                                                                                                                                                                                                                                                                                                       | varchar(50)          |
+| <span id="dunning_campaign_id">dunning_campaign_id</span>                             | 23456789                                                                                                                                                                         | Dunning Campaign ID.                                                                                                                                                                                                                                                                                                                                                                                                                                         | string               |
+| <span id="dunning_campaign_version">dunning_campaign_version</span>                   | 1234                                                                                                                                                                             | Dunning Campaign Version.                                                                                                                                                                                                                                                                                                                                                                                                                                    | string               |
+| <span id="used_tax_service">used_tax_service</span>                                   | TRUE                                                                                                                                                                             | TRUE/FALSE boolean column indicating whether the invoice has used Recurly tax services.                                                                                                                                                                                                                                                                                                                                                                      | boolean              |
+| <span id="business_entity_code">business_entity_code</span>                           | 123456789                                                                                                                                                                        | Business Entity Code.                                                                                                                                                                                                                                                                                                                                                                                                                                        | string               |
+| <span id="parent_account_code">parent_account_code</span>                             | 123122E                                                                                                                                                                          | Parent account code being charged for this invoice.                                                                                                                                                                                                                                                                                                                                                                                                          | varchar(50)          |
+| invoice_api_id                                                                        | e28zov4fw0v2                                                                                                                                                                     | Invoice API ID                                                                                                                                                                                                                                                                                                                                                                                                                                               | string               |
 
 # Version changelog
 
@@ -1125,16 +169,16 @@ To help you identify and organize information effectively, the export provides a
 
 ### Version 5 - 12/12/23
 
-* Addition of parent\_account\_code column.
+* Addition of parent_account_code column.
 
 ### Version 4 - 5/15/23
 
-* Addition of business\_entity\_code column.
+* Addition of business_entity_code column.
 
 ### Version 3 - 3/21/23
 
-* Addition of used\_tax\_service column.
+* Addition of used_tax_service column.
 
 ### Version 2 - 6/23/21
 
-* Addition of dunning\_campaign\_code, dunning\_campain\_id and dunning\_campaign version columns.
+* Addition of dunning_campaign_code, dunning_campain_id and dunning_campaign version columns.

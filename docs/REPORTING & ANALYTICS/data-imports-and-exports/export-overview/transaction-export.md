@@ -22,22 +22,22 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Transactions export section provides a detailed report of all interactions communicated to and received from the payment gateway while processing a transaction. This data gives you a deeper understanding of every payment interaction to help you manage your financial transactions better.
 
+<Image border={false} src="https://files.readme.io/4ce84800f4dd8c61fb58d053ee88190c6fab4f252215f25b32b0f4ee000fb7fb-image.png" />
+
 # Filters
 
-Recurly transactions can be categorized into three types and four statuses, providing detailed insights into payment flows.
+### Versions Filter
 
-#### Transaction types
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
-* **Authorization**: A $1 or $0 transaction created to validate payment information usability after billing updates.
-* **Purchase**: A positive charge sent to the processor for fund collection and transfer to your merchant bank.
-* **Refund**: A negative charge sent to the processor to reimburse and transfer funds back to the customer’s bank.
+### &#x20;Export On Filters
 
-#### Transaction Statuses
+* **Created**: Transactions created within the chosen timeframe.
+* **Modified**: Transactions altered in the specified period.
 
-* **Success**: The transaction was accepted by the gateway for processing.
-* **Declined**: The transaction was rejected by the gateway and will not be processed.
-* **Void**: Processing was stopped before settlement (e.g., when issuing full refunds before a purchase is fully settled).
-* **Processing**: The payment is in progress with the gateway, commonly seen with direct debit transactions.
+### Time range filters
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -141,8 +141,6 @@ To help you identify and organize information effectively, the export provides a
 | <span id="processor_response_text">processor_response_text</span>       | Insufficient funds/over credit limit      | Transaction processor response text                                                                                                                                                                                    |
 | <span id="issuer_response_code">issuer_response_code</span>             | 51                                        | Issuer response code                                                                                                                                                                                                   |
 | <span id="billing_info_id">billing_info_id</span>                       | igpvyfx08knw                              | Billing Info API ID                                                                                                                                                                                                    |
-
-<br />
 
 # Version changelog
 

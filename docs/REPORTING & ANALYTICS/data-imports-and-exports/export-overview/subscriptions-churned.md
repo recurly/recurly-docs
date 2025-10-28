@@ -20,11 +20,19 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 In the Recurly platform, a "Churned Subscription" refers to subscriptions that have churned and are no longer active. This information is vital in understanding subscription lifecycles and trends in user retention.
 
+<Image border={false} src="https://files.readme.io/e109c1baf3810a7af7931ca078abdc42ca0da2f13a7cd26f919d17baf5ccb0e8-image.png" />
+
 # Filters
+
+### **Versions Filter**
+
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
 ### Time Range Filter
 
-To get specific data, use the Time Range Filter which exports all the subscriptions that expired during a selected time frame. This filter uses the "expired\_at" column in the export. Note that a subscription does not churn until it has expired, and the "canceled\_at" and "expired\_at" dates are not the same.
+To get specific data, use the Time Range Filter which exports all the subscriptions that expired during a selected time frame. This filter uses the "expired_at" column in the export. Note that a subscription does not churn until it has expired, and the "canceled_at" and "expired_at" dates are not the same.
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -73,15 +81,15 @@ To help you identify and organize information effectively, the export provides a
 <Table align={["left","left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Column Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Example
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Description
       </th>
     </tr>
@@ -89,731 +97,731 @@ To help you identify and organize information effectively, the export provides a
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         <span id="uuid">uuid</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         5eg5bcc7ef8211e0a908005056b00005
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Unique identifier for a specific subscription plan.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="account_code">account\_code</span>
+      <td>
+        <span id="account_code">account_code</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         123456789, [test@example.com](mailto:test@example.com)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Account associated with a given subscription UUID.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         <span id="email">email</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         [test@example.com](mailto:test@example.com)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Email address associated with a given subscription UUID.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="plan_code">plan\_code</span>
+      <td>
+        <span id="plan_code">plan_code</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         basic
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Plan that the customer is subscribed to with this UUID.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         <span id="state">state</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         pending, modified, converted, active, canceled, expired
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Current state of the subscription. Modified and converted are depreciated states
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="auto_renew">auto\_renew</span>
+      <td>
+        <span id="auto_renew">auto_renew</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         TRUE
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Defaults to TRUE for auto-renewing subscriptions. FALSE if subscription set to expire at end of current term.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         <span id="currency">currency</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         USD
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies the currency being charged with this subscription.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         <span id="quantity">quantity</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         1
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies the quantity of the subscription purchase.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="unit_amount">unit\_amount</span>
+      <td>
+        <span id="unit_amount">unit_amount</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         99
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies the base price of 1 quantity of the subscription.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="add_on_amount">add\_on\_amount</span>
+      <td>
+        <span id="add_on_amount">add_on_amount</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         15
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Identifies any additional charges to the subscription base fee from add\_ons.
+      <td>
+        Identifies any additional charges to the subscription base fee from add_ons.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="total_recurring_amount">total\_recurring\_amount</span>
+      <td>
+        <span id="total_recurring_amount">total_recurring_amount</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         114
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Identifies total recurring charges - unit\_amount x quantity + add\_on\_amount.
+      <td>
+        Identifies total recurring charges - unit_amount x quantity + add_on_amount.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="current_period_started_at">current\_period\_started\_at</span>
+      <td>
+        <span id="current_period_started_at">current_period_started_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2009-12-04 00:46:59 PST
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Date and time that the current billing period started. \*
+      <td>
+        Date and time that the current billing period started. *
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="current_period_ends_at">current\_period\_ends\_at</span>
+      <td>
+        <span id="current_period_ends_at">current_period_ends_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2009-12-04 00:46:59 PST
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Date and time that the current billing period ends at.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="trial_started_at">trial\_started\_at</span>
+      <td>
+        <span id="trial_started_at">trial_started_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2010-03-24 17:18:46 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Date and time that a trial period began on the subscription.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="trial_ends_at">trial\_ends\_at</span>
+      <td>
+        <span id="trial_ends_at">trial_ends_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2010-04-23 17:18:46 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Date and time that a trial period ends on the subscription.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="total_billing_cycles">total\_billing\_cycles</span>
+      <td>
+        <span id="total_billing_cycles">total_billing_cycles</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         1
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         This is the total number billing periods in the subscription term.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="remaining_billing_cycles">remaining\_billing\_cycles</span>
+      <td>
+        <span id="remaining_billing_cycles">remaining_billing_cycles</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         0
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Number of remaining billing periods in the subscription’s current term. Will always be 0 if subscription term has 1 billing period
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="renewal_billing_cycles">renewal\_billing\_cycles</span>
+      <td>
+        <span id="renewal_billing_cycles">renewal_billing_cycles</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         1
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Number of billing periods in the subscription’s next term. Will default to plan’s total\_billing\_cycles unless customized. Nil if auto\_renew = false
+      <td>
+        Number of billing periods in the subscription’s next term. Will default to plan’s total_billing_cycles unless customized. Nil if auto_renew = false
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="current_term_started_at">current\_term\_started\_at</span>
+      <td>
+        <span id="current_term_started_at">current_term_started_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2018-09-02 15:53:18 UTC
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Start date of the subscription’s current term
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="current_term_ends_at">current\_term\_ends\_at</span>
+      <td>
+        <span id="current_term_ends_at">current_term_ends_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2018-10-02 15:53:18 UTC
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         End date of the subscription’s current term.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="activated_at">activated\_at</span>
+      <td>
+        <span id="activated_at">activated_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2010-03-24 17:18:46 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Date and time the subscription was added to the account.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="modified_at">modified\_at</span>
+      <td>
+        <span id="modified_at">modified_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2010-03-24 17:18:44 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Date and time the subscription was last updated.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="canceled_at">canceled\_at</span>
+      <td>
+        <span id="canceled_at">canceled_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2010-03-28 22:54:46 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Date and time the subscription was canceled.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="expires_at">expires\_at</span>
+      <td>
+        <span id="expires_at">expires_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2010-04-23 22:51:53 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Date and time the subscription was terminated. **Used for date range filter** 
+      <td>
+        Date and time the subscription was terminated. **Used for date range filter**
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="maintenance_url">maintenance\_url</span>
+      <td>
+        <span id="maintenance_url">maintenance_url</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         app.recurly.com/account/sdasdasdad213525asdad
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Link to the customer's hosted account maintenance URL.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="net_terms">net\_terms</span>
+      <td>
+        <span id="net_terms">net_terms</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         on-receipt
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Identifies the net\_terms agreement associated with the subscription.
+      <td>
+        Identifies the net_terms agreement associated with the subscription.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="po_number">po\_number</span>
+      <td>
+        <span id="po_number">po_number</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         213123
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         For manual invoicing, this identifies the PO number associated with the subscription.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="collection_method">collection\_method</span>
+      <td>
+        <span id="collection_method">collection_method</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         automatic/manual
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies whether the subscription fees are collected via manual or automatic invoicing
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="plan_name">plan\_name</span>
+      <td>
+        <span id="plan_name">plan_name</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Basic Plan
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The plan name of the subscription at the time the subscription expired
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="expiration_reason">expiration\_reason</span>
+      <td>
+        <span id="expiration_reason">expiration_reason</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Canceled, Non-payment, Fixed billing cycles, Tax Location Invalid, Nonpayment\_gift, Nonpayment\_trial
+      <td>
+        Canceled, Non-payment, Fixed billing cycles, Tax Location Invalid, Nonpayment_gift, Nonpayment_trial
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        The reason that the subscription expired. Note that nonpayment\_Trial only relates to cardless subscriptions trials
+      <td>
+        The reason that the subscription expired. Note that nonpayment_Trial only relates to cardless subscriptions trials
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_id">ship\_address\_id</span>
+      <td>
+        <span id="ship_address_id">ship_address_id</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2019760433389770000
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The unique ID assigned to the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_nickname">ship\_address\_nickname</span>
+      <td>
+        <span id="ship_address_nickname">ship_address_nickname</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Julie
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The nickname given to the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_firstname">ship\_address\_firstname</span>
+      <td>
+        <span id="ship_address_firstname">ship_address_firstname</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Julie
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The first name associated with the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_lastname">ship\_address\_lastname</span>
+      <td>
+        <span id="ship_address_lastname">ship_address_lastname</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Smith
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The last name associated with the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_company_name">ship\_address\_company\_name</span>
+      <td>
+        <span id="ship_address_company_name">ship_address_company_name</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Big Company
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The company name associated with the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_street1">ship\_address\_street1</span>
+      <td>
+        <span id="ship_address_street1">ship_address_street1</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         321 Michigan Street
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The first line of the street address for the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_street2">ship\_address\_street2</span>
+      <td>
+        <span id="ship_address_street2">ship_address_street2</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Apt 1
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The second line of the street address for the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_city">ship\_address\_city</span>
+      <td>
+        <span id="ship_address_city">ship_address_city</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         West Bloomfield
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The city for the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_state">ship\_address\_state</span>
+      <td>
+        <span id="ship_address_state">ship_address_state</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         MI
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The state for the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_zip">ship\_address\_zip</span>
+      <td>
+        <span id="ship_address_zip">ship_address_zip</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         48322
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The zip or postal code for the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_country">ship\_address\_country</span>
+      <td>
+        <span id="ship_address_country">ship_address_country</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         US
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The country for the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_vat">ship\_address\_vat</span>
+      <td>
+        <span id="ship_address_vat">ship_address_vat</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         123456789
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The VAT number associated with the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_email">ship\_address\_email</span>
+      <td>
+        <span id="ship_address_email">ship_address_email</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         [jsmith@example.com](mailto:jsmith@example.com)
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The email address associated with the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="ship_address_phone">ship\_address\_phone</span>
+      <td>
+        <span id="ship_address_phone">ship_address_phone</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         248-555-1212
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The phone number associated with the shipping address
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="started_with_gift">started\_with\_gift</span>
+      <td>
+        <span id="started_with_gift">started_with_gift</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         TRUE, FALSE
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         `TRUE` if the subscription was started with a gift card, whether or not billing information was collected.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="converted_at">converted\_at</span>
+      <td>
+        <span id="converted_at">converted_at</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2016-09-02 15:53:18 UTC
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Date of the first successful transaction for the subscription.\
-        This field is only used for gifts cards and cardless free trial conversions.\
-        In other words, it will only have a value if started\_with\_gift is `TRUE` OR no\_billing\_info\_reason is "plan\_free"trial." Converted\_at compared to the subscription's activated\_at will give you the time to conversion.
+      <td>
+        Date of the first successful transaction for the subscription.  
+        This field is only used for gifts cards and cardless free trial conversions.  
+        In other words, it will only have a value if started_with_gift is `TRUE` OR no_billing_info_reason is "plan_free"trial." Converted_at compared to the subscription's activated_at will give you the time to conversion.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="no_billing_info_reason">no\_billing\_info\_reason</span>
+      <td>
+        <span id="no_billing_info_reason">no_billing_info_reason</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        plan\_free\_trial
+      <td>
+        plan_free_trial
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies the reason why a subscription did not have billing information at time of renewal/activation.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="shipping_amount_in_cents">shipping\_amount\_in\_cents</span>
+      <td>
+        <span id="shipping_amount_in_cents">shipping_amount_in_cents</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         500
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The amount of the shipping fee on the subscription, in cents.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="shipping_method_code">shipping\_method\_code</span>
+      <td>
+        <span id="shipping_method_code">shipping_method_code</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        usps\_overnight
+      <td>
+        usps_overnight
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The code of the Shipping Method from configuration.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="pricing_model">pricing\_model</span>
+      <td>
+        <span id="pricing_model">pricing_model</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         ramp
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Pricing model of the subscription. Will be either fixed or ramp.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        <span id="current_ramp_id">current\_ramp\_id</span>
+      <td>
+        <span id="current_ramp_id">current_ramp_id</span>
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         pz82514rbd3s
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The id of the current ramp interval.
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_api\_id
+      <td>
+        subscription_api_id
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         e28zov4fw0v2
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Subscription API ID
       </td>
     </tr>
@@ -828,8 +836,8 @@ To help you identify and organize information effectively, the export provides a
 
 ### Version 3 - 12/7/2021
 
-* Column added for pricing\_model 
-* Column added for current\_ramp\_id
+* Column added for pricing_model
+* Column added for current_ramp_id
 
 ### Version 2 - 5/2/2019
 
