@@ -1,8 +1,6 @@
 ---
 title: Products - export
-excerpt: >-
-  Unlock detailed insights into your subscription add-ons with the Items -
-  Associated Subscriptions export.
+excerpt: Unlock detailed insights into your product catalog with the products export.
 deprecated: false
 hidden: false
 metadata:
@@ -16,7 +14,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The "Products" export provides comprehensive details of all subscription add-ons generated from a saved item in your catalog over a certain period. It focuses on add-ons linked to renewing, future start, last billing period, and paused subscriptions, omitting details from canceled or expired subscriptions.
+The "Products" export provides comprehensive details of all product offerings, add-ons and items, whether active or inactive.
 
 # Filters
 
