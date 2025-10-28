@@ -27,7 +27,13 @@ Please reach out to your Recurly account manager or [support@recurly.com](mailto
 
 Explore the subscription add-on history feature that allows tracking all the changes made to a subscription add-on over time. Every time a change or multiple changes are made simultaneously, a new version of the subscription add-on history is created. This feature is vital for keeping historical versions of add-ons that change on subscriptions.
 
+<Image border={false} src="https://files.readme.io/a8af2a1c6dce65ec6d6ce49fa08ebe63610dd52973be9e54b4387f369503744a-image.png" />
+
 # Filters
+
+### **Versions Filter**
+
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
 ### Subscription Status Filter
 
@@ -37,19 +43,15 @@ Explore the subscription add-on history feature that allows tracking all the cha
 * **Canceled**: Displays all subscription history respective to canceled status.
 * **Expired**: Displays all subscription history respective to expired status.
 
-### Date Range Filters
+### Export On Filters
 
-#### **Activated**
+*  **Activated** - showcases the past versions of subscription add-ons that were activated or reactivated within the chosen time frame. It utilizes the `subscription_activated_at` column for data representation.
+* **Version Created** - depicts the past versions of subscription add-ons generated during a specified time range, utilizing data from the `version_started_at` column.
+*  **Version Modified** - view recent alterations to all subscriptions within a chosen time range, referring to a combination of _version_state_ and version_started_at columns.
 
-Showcases the past versions of subscription add-ons that were activated or reactivated within the chosen time frame. It utilizes the `subscription_activated_at` column for data representation.
+### **Time Range Filter**
 
-#### **Created**
-
-Depicts the past versions of subscription add-ons generated during a specified time range, utilizing data from the `version_started_at` column.
-
-#### **Modified**
-
-View recent alterations to all subscriptions within a chosen time range, referring to a combination of *version\_state* and version\_started\_at columns.
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
@@ -98,19 +100,19 @@ To help you identify and organize information effectively, the export provides a
 <Table align={["left","left","left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Column Name
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Example
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Description
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         Data type (max size)
       </th>
     </tr>
@@ -118,625 +120,625 @@ To help you identify and organize information effectively, the export provides a
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_uuid
+      <td>
+        subscription_uuid
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         434f11do8b297982eb
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Unique internal identifier for the subscription. Even if a subscription is modified, this identifier is maintained.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(32)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_uuid
+      <td>
+        version_uuid
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         43509049eb30fb
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Unique internal identifier for the version of a subscription\_uuid.\
+      <td>
+        Unique internal identifier for the version of a subscription_uuid.  
         A new version if created when a change is made to a subscription. If multiple different changes are made at the same time,  all will be captured in the same new version.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        account\_code
+      <td>
+        account_code
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        123456789,\
+      <td>
+        123456789,  
         [test@example.com](mailto:test@example.com)
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Account associated with a given subscription\_uuid.
+      <td>
+        Account associated with a given subscription_uuid.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_activated\_at
+      <td>
+        subscription_activated_at
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2018-03-24 17:18:46 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Date and time the subscription became active (or reactivated) on an account. Note that this might not always match exactly with the subscription\_created\_At date if a subscription is created with a future start date.
+      <td>
+        Date and time the subscription became active (or reactivated) on an account. Note that this might not always match exactly with the subscription_created_At date if a subscription is created with a future start date.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_expires\_at
+      <td>
+        subscription_expires_at
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2018-09-24 17:18:46 PDT
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Date and time the subscription was/ will churn.  
+      <td>
+        Date and time the subscription was/ will churn.
 
         This field is populated when a subscription cancels with the expected expiration date.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_state
+      <td>
+        subscription_state
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        active, canceled, paused,\
+      <td>
+        active, canceled, paused,  
         expired
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         State of the subscription at the time the version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_started\_at
+      <td>
+        version_started_at
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2018-03-20 03:22:25 EST
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The date a change was made to the subscription and thus the new version was created.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_ended\_at
+      <td>
+        version_ended_at
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         2018-07-20 03:22:25 EST
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        The date a version is no longer active because another change to the subscription is a made and a newer version is created.\
-        All versions with the version\_state of "inactive" will have a version\_expired\_at date.
+      <td>
+        The date a version is no longer active because another change to the subscription is a made and a newer version is created.  
+        All versions with the version_state of "inactive" will have a version_expired_at date.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         timestamp
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_state
+      <td>
+        version_state
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         inactive or active
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         the versions of a subscription that reflect the current attributes of that subscription (i.e are currently in use) are "active." All expired versions are "inactive"
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        plan\_code
+      <td>
+        plan_code
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        bronze\_1
+      <td>
+        bronze_1
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         the plan that the subscription was actively on while that version was active. Codes are used internally only.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        plan\_name
+      <td>
+        plan_name
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Bronze Plan # 1
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The name of the plan the subscriber was actively on while that version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(25)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_currency
+      <td>
+        subscription_currency
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         USD, GBP, CAD
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The currency associated with that subscription at the time that version was active
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(3)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_plan\_interval\_unit
+      <td>
+        version_plan_interval_unit
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         months, weeks, days, years
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        The interval type at which that subscription is billed while that version was active.  Combined with the version\_plan\_internval\_length, you can understand how often your customer is billed\
+      <td>
+        The interval type at which that subscription is billed while that version was active.  Combined with the version_plan_internval_length, you can understand how often your customer is billed  
         example: 1 month, 2 months, 1 year, etc.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(10)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_plan\_interval\_length
+      <td>
+        version_plan_interval_length
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         any number
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        The length of the interval type at which the subscription is billed at while the version was active.\
+      <td>
+        The length of the interval type at which the subscription is billed at while the version was active.  
         Example: 1 month, 2 months, 1 year ,etc
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric(10)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_collection\_method
+      <td>
+        version_collection_method
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         automatic, manual
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies whether the subscription fees are collected via manual or automatic invoicing.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_total\_billing\_cycles
+      <td>
+        version_total_billing_cycles
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         1
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        If configured on the plan, the total number of bill cycles that the subscription will bill at the time the version was active.\
-         If not specifically configured, the subscription will auto renew and this field will be blank.
+      <td>
+        If configured on the plan, the total number of bill cycles that the subscription will bill at the time the version was active.  
+        If not specifically configured, the subscription will auto renew and this field will be blank.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_subscription\_quantity
+      <td>
+        version_subscription_quantity
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         1, 2
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies the quantity of the subscription purchase at the time the version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_subscription\_unit\_amount
+      <td>
+        version_subscription_unit_amount
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         100
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies the base price of 1 quantity of the subscription at the time the version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_code
+      <td>
+        version_add_on_code
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        add\_on1, add\_on1,  add\_on2
+      <td>
+        add_on1, add_on1,  add_on2
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        A list of add ons that were active on the subscription at the time the version was active.\
-        If there is more than one of the same add\_on, it will be listed the same number of times as the quantity.
+      <td>
+        A list of add ons that were active on the subscription at the time the version was active.  
+        If there is more than one of the same add_on, it will be listed the same number of times as the quantity.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_quantity
+      <td>
+        version_add_on_quantity
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         1
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Identifies the quantity of the add-on at the time the version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_type
+      <td>
+        version_add_on_type
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         fixed, fixed, usage
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Lists the type of add\_on in corresponding order to the listed add\_on\_codes on the subscription at the time the version was active.
+      <td>
+        Lists the type of add_on in corresponding order to the listed add_on_codes on the subscription at the time the version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_unit\_amount
+      <td>
+        version_add_on_unit_amount
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         10, 10, 5%
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Lists the unit amount of the add\_on in corresponding order to the listed add\_on\_codes and listed add\_on\_types.\
-        If the add\_on\_type is "usage" the "%" will be listed
+      <td>
+        Lists the unit amount of the add_on in corresponding order to the listed add_on_codes and listed add_on_types.  
+        If the add_on_type is "usage" the "%" will be listed
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_ons\_total
+      <td>
+        version_add_ons_total
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         20
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Sums the add\_on\_unit\_amounts on the subscription at the time the version was active.\
+      <td>
+        Sums the add_on_unit_amounts on the subscription at the time the version was active.  
         Does not include usage based add ons.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_total\_recurring\_amount
+      <td>
+        version_total_recurring_amount
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         120
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        (version\_unit\_amount) \* (version\_subscription\_quantity) + version\_add\_on\_total
+      <td>
+        (version_unit_amount) * (version_subscription_quantity) + version_add_on_total
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_in\_trial
+      <td>
+        version_in_trial
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Y, N
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Indicates whether or not the subscription was in trial while the version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         boolean
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_auto\_renew
+      <td>
+        version_auto_renew
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Y, N
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Indicates whether or not the subscription was set to auto renew while the version was active.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         boolean
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_renewal\_billing\_cycles
+      <td>
+        version_renewal_billing_cycles
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         1
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Indicated the number of billing cycles a subscription will have after the end of the subscription term.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        external\_sku
+      <td>
+        external_sku
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         093094f0420
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         varchar(50)
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_tier\_type
+      <td>
+        version_add_on_tier_type
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         flat, tiered, volume, stairstep
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         The pricing model used to calculate the costs for the subscriptions based on the quantity purchased.
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_source
+      <td>
+        version_add_on_source
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_unit\_amount\_decimal
+      <td>
+        version_add_on_unit_amount_decimal
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         numeric
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        version\_add\_on\_billing\_model
+      <td>
+        version_add_on_billing_model
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        *
+      <td>
+        * <br />
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_api\_id
+      <td>
+        subscription_api_id
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         e28zov4fw0v2
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Subscription API ID
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
 
     <tr>
-      <td style={{ textAlign: "left" }}>
-        subscription\_add\_on\_api\_id
+      <td>
+        subscription_add_on_api_id
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         e28zov4fw0v2
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         Add on API ID
       </td>
 
-      <td style={{ textAlign: "left" }}>
+      <td>
         string
       </td>
     </tr>
@@ -751,17 +753,17 @@ To help you identify and organize information effectively, the export provides a
 
 ### **Version 5 - 3/9/2022**
 
-* Introduced a new column version\_add\_on\_billing\_model.
+* Introduced a new column version_add_on_billing_model.
 
 ### **Version 4 - 1/22/2021**
 
-* Introduced a new column version\_add\_on\_unit\_amount\_decimal.
+* Introduced a new column version_add_on_unit_amount_decimal.
 
 ### **Version 3 - 6/23/2020**
 
-* Introduced a new column version\_add\_on\_source.
+* Introduced a new column version_add_on_source.
 
 ### **Version 2 - 4/2/2020**
 
 * Introduced a new column for external SKU concerning saved item add-ons.
-* Introduced a new column version\_add\_on\_tier\_type.
+* Introduced a new column version_add_on_tier_type.
