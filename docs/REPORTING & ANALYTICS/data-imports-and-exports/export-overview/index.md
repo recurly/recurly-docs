@@ -433,9 +433,9 @@ next:
   </tbody>
 </Table>
 
-## Exporting data via the admin console
+## Exporting data
 
-Exports can be generated [through the admin console](https://recurly.recurly.com/async_exports/new). When you generate an export, you can also select a time range along with other filters for the information you want to receive. Once you request the export, the request will begin processing. You can view the status of your request on the export page. Once your request is completed you'll see a "Download" link that you can then click to get the export.
+When you generate an export, you can also select a time range along with other filters for the information you want to receive. Once you request the export, the request will begin processing. You can view the status of your request on the export page. Once your request is completed you'll see a "Download" link that you can then click to get the export.
 
 All exports default to using ZIP compression.
 
@@ -452,7 +452,7 @@ All exports default to using ZIP compression.
 1. Navigate to **Analytics -> Exports.**
 2. Select **Subscriptions - Churned.**
 3. Select the **Versions** filter
-4. Select **Time range** to  **All Time** 
+4. Select **Time range** to  **All Time**
 5. Click **Generate Export**
 
 ### Example: All coupons redeemed in July
