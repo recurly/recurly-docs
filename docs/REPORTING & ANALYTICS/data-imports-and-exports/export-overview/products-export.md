@@ -2,7 +2,7 @@
 title: Products - export
 excerpt: Unlock detailed insights into your product catalog with the products export.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
