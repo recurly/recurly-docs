@@ -435,7 +435,7 @@ next:
 
 ## Exporting data
 
-When you generate an export, you can also select a time range along with other filters for the information you want to receive. Once you request the export, the request will begin processing. You can view the status of your request on the export page. Once your request is completed you'll see a "Download" link that you can then click to get the export.
+When you generate an export, you can also select a time range along with other filters for the information you want to receive. Once you request the export, the request will begin processing. You can view the status of your request on the export page. Once your request is completed you'll see a "Download" link that you can then click to get the export. These generated exports will be available for download for 7 days.
 
 All exports default to using ZIP compression.
 
