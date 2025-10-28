@@ -2,7 +2,7 @@
 title: Subscriptions  - export
 excerpt: >-
   Discover the ins and outs of your subscriptions with the detailed
-  Subscriptions export section in Recurly's user guide.
+  Subscriptions export.
 deprecated: false
 hidden: false
 metadata:
@@ -22,27 +22,40 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Subscriptions export helps you identify accounts that have stored subscriptions along with all the pertinent details of those subscriptions.
 
+<Image border={false} src="https://files.readme.io/c91818fee8695b63b36a0bbe4975ca04361b03419d60f466b0b87289c639b819-image.png" />
+
 # Filters
+
+### **Versions Filter**
+
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
+
+### **Subscription Status Filter**
 
 Distinguish between different subscription statuses using these filters:
 
+* **All**: All active and inactive subscriptions
 * **Live**: All active subscriptions
 * **Renewing**: Live subscriptions set to renew post the present term
 * **Trial**: Subscriptions currently in a trial phase
-* **Paused**: Subscriptions that are presently on a pause
 * **Canceled**: Subscriptions that will not renew after the present term concludes
 * **Past Due**: Live subscriptions associated with a past-due invoice
 * **Future**: Subscriptions that will activate on reaching the start date
 * **Expired**: Inactive subscriptions
-* **Last Billing**: Refers to subscription is in its last billing period within the selected timeframe.
+* **Paused**: Subscriptions that are presently on a pause
+* **Last Billing Period**: Refers to subscription is in its last billing period within the selected timeframe.
 
-### Date Range Filters
+### Export On Filters
 
 Understand your subscriptions' timelines with the following filters:
 
 * **Activated**: Focuses on subscriptions activated in a chosen time range
 * **Modified**: Shows subscriptions altered in the chosen time frame, excluding the original subscription
 * **Created**: Displays subscriptions created within a selected time frame, including those with future activation dates.
+
+### **Time Range Filter**
+
+* The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
 
 # Exports table
 
