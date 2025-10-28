@@ -28,7 +28,7 @@ The "Account Notes" section is dedicated to helping Recurly users manage and exp
 
 ### Versions Filter
 
-* **Version 2** - updated on 02/05/25. Addition of `account_note_api_id`.
+* The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
 ### Time Range Filter
 
@@ -89,4 +89,8 @@ To help you identify and organize information effectively, the export provides a
 | <span id="modified_at">modified_at</span>   | 2014-01-01 10:00:00 PST                                     | Indicates the last date and time the account note was updated, helping in tracking the recent modifications.                                                                                                                    | timestamp            |
 | account_note_api_id                         | e28zov4fw0v2                                                | Account note API ID                                                                                                                                                                                                             | string               |
 
-<br />
+# Version Changelog
+
+### Version 2 - 02/05/25
+
+* Addition of `account_note_api_id`.
