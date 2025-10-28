@@ -24,8 +24,6 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 
 <Image border={false} src="https://files.readme.io/b36c7d6c24073e3e25e1c58217201ceaf5cda85802a55b1c244976b39c2f2080-image.png" />
 
-<br />
-
 # Filters
 
 ### Versions Filter
@@ -34,7 +32,7 @@ Ensure to configure the Revenue Recognition feature properly to find this export
 
 ### Invoice Type Filter
 
-* **All **-  accommodates every invoice generated on your Recurly site, regardless of the status.
+* **All** -  accommodates every invoice generated on your Recurly site, regardless of the status.
 * **Charge** - encompasses charge invoices awaiting a payment attempt.
 * **Credit** - denotes credit invoices.
 
@@ -114,4 +112,6 @@ To help you identify and organize information effectively, the export provides a
 | <span id="future_revenue">future_revenue</span>                     | 90                               | Revenue to be recognized in the future past 12 months from the current month.                                                                                                                                                                                             |
 | <span id="invoice_origin">invoice_origin</span>                     | purchase, refund                 | The event that created the invoice. Invoices issued before the Credit Invoices feature was enabled on your site will have either purchase or refund as the value. Once Credit Invoices is enabled, new origins like renewal, immediate_change, and write_off will appear. |
 
-<br />
+### **Version 2 - 11/1/2018**
+
+* Modification to the arrear and deferred revenue calculations.
