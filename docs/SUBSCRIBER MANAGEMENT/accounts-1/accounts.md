@@ -16,7 +16,7 @@ next:
 ---
 ## Dashboard
 
-[Your accounts dashboard]\(<a href="https://app.recurly.com/go/accounts" target="_blank">Your accounts dashboard</a>) provides an overview of all customer accounts managed by Recurly. From this view, you can search by first name, last name, email address, account code, and more. The filters on this view allow you to drill into accounts by different categories. Categories overlap and are not necessarily distinct, *e.g.* the **Open** filter will return both **Non-subscribers** and **Subscribers**.
+<a href="https://app.recurly.com/go/accounts" target="_blank">Your accounts dashboard</a> provides an overview of all customer accounts managed by Recurly. From this view, you can search by first name, last name, email address, account code, and more. The filters on this view allow you to drill into accounts by different categories. Categories overlap and are not necessarily distinct, _e.g._ the **Open** filter will return both **Non-subscribers** and **Subscribers**.
 
 #### Open
 
@@ -40,7 +40,7 @@ Subscribers with an invoice in the past-due state.
 
 #### Non-renewing
 
-Subscribers that won't renew after the current term 
+Subscribers that won't renew after the current term
 
 #### Future
 
@@ -72,7 +72,7 @@ Uniquely identifies your customers in Recurly. No two customers can share the sa
 
 #### Username
 
-A secondary identifier that can be searched against on the dashboard.  
+A secondary identifier that can be searched against on the dashboard.
 
 #### Email
 
@@ -112,7 +112,7 @@ On an account, there is a **Billing Info** section that shows stored payment inf
 
 ## Account notes
 
-Your team can leave notes on an account to add context, *e.g.* the reason for a refund, customer requests, and/or complaints. These notes are internal and not exposed to your customers.
+Your team can leave notes on an account to add context, _e.g._ the reason for a refund, customer requests, and/or complaints. These notes are internal and not exposed to your customers.
 
 ## Updating accounts
 
@@ -120,7 +120,7 @@ Once an account is created, all values (with the exception of the account code) 
 
 ## Closing accounts
 
-Closing an account permanently deletes its billing information, cancels any active subscriptions (canceled subscriptions will remain active until the end of the current billing period before expiring), and fails any open invoices. We recommend closing accounts only when all business is concluded\
+Closing an account permanently deletes its billing information, cancels any active subscriptions (canceled subscriptions will remain active until the end of the current billing period before expiring), and fails any open invoices. We recommend closing accounts only when all business is concluded  
 with a customer.
 
 You will see the option to close an account when viewing an account in the admin console.
