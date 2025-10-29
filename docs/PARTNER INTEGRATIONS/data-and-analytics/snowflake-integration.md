@@ -52,7 +52,7 @@ Recurly integrates with Snowflake to share merchant data directly. If you're a R
 
 **Q: Which tables are included in the exports?**
 
-**A:** All <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> are included, except for <a href="https://docs.recurly.com/docs/adjustments-taxes-export" target="_blank">adjustments taxes</a> and the deprecated exports: <a href="https://docs.recurly.com/docs/invoices-exports#invoices-deprecated" target="_blank">invoices</a> and <a href="https://docs.recurly.com/docs/revenue-recognition-export" target="_blank">revenue recognition schedules</a>.
+**A:** All <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> are included, except for <a href="https://docs.recurly.com/docs/adjustments-taxes-export" target="_blank">adjustments taxes</a> **invoices** and **revenue recognition schedules**.
 
 **Q: What is the schema for each table?**
 
