@@ -24,9 +24,16 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## 2025
 
-## October
+## November
+
+| Release Date | **Feature**                    | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                              |
+| :----------- | :----------------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Nov 4        | **Data Exports**               | Low                  | A more modern, streamlined and easier to use UI will be available for all adhoc data exports. Along with the new UI, the Exports Page has been updated to provide a more dynamic “time range” filter so users can customize their exports for download. |
+| Nov 1        | **Legacy Revenue Recognition** | Low                  | The legacy Revenue Recognition feature will sunset as of 11/1/2025. Merchants are encouraged to explore the enhanced Recurly Revenue Recognition Advanced or Standalone editions.                                                                       |
 
 <br />
+
+## October
 
 | Release Date | **Feature**                        | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | :----------- | :--------------------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
