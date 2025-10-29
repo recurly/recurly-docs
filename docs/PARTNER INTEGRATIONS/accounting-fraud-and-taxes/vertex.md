@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-<Image align="center" width="auto" src="https://files.readme.io/cdd6b9f-Vertex-Logo-Image_150.png" />
+<Image align="center" border={false} width="auto" src="https://files.readme.io/cdd6b9f-Vertex-Logo-Image_150.png" />
 
 # Overview
 
@@ -63,7 +63,7 @@ We recommend connecting your Vertex account to Recurly before you enable your ta
 
 If you meet the prerequisites and have a Vertex O Series, 9 Series, or Vertex Cloud account, follow these steps to enable Vertex for your Recurly site:
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/e2e2fba-Screenshot_2024-06-05_at_5.32.57_PM.png" />
+<Image align="center" border={true} width="60% " src="https://files.readme.io/000408a4e57dd691bdcb61d9db12edb50fba03b989e5a2a502a579a88dea43c8-Screenshot_2025-10-23_at_2.24.10_PM.png" className="border" />
 
 1. **Contact** Recurly Support to request the Vertex option for your site.
 2. After Recurly Support has enabled Vertex for your site, **navigate** to the Taxes section in the left-hand panel.
@@ -72,7 +72,7 @@ If you meet the prerequisites and have a Vertex O Series, 9 Series, or Vertex Cl
    1. **Endpoint**: Enter the URL where your WSDL is hosted, up to the ".com" part. You must provide a secure HTTPS URL. For example, if your URL is [https://vertex-prod.yourcompany.com/vertex-ws/services/CalculateTax90?wsdl](https://vertex-prod.yourcompany.com/vertex-ws/services/CalculateTax90?wsdl), then enter [https://vertex-prod.yourcompany.com.](https://vertex-prod.yourcompany.com.) Recurly will append the /vertex-ws/services/CalculateTax90?wsdl to the end of your URL and replace 9.0 with 8.0 or 7.0 depending on the version you select. Check our IP Allowlist documentation for IP addresses to allow through.
    2. **Trusted Id**: Every Vertex instance has a trusted ID, which is your API password. Recurly doesn't use a username and password to ensure your tax collection isn't shut off due to a user lockout or accidental password reset or deletion. If you're unsure about your Trusted Id, contact Vertex.
    3. **Company**: This represents the taxpayer in your Vertex instance with jurisdiction rules that apply to your invoices. If you have a division, this is the parent taxpayer.
-   4. **Division**: This is the child taxpayer in your Vertex instance. If you have a Division(s), it's likely that this taxpayer has jurisdiction rules that apply to your invoices. You can have multiple Divisions configured on your Vertex site that map to Recurly Business Entities, however, the Divisions must roll up to the same singular Company code within Vertex. If you do *not* add Division codes to Business Entities within your Recurly tax configuration, all invoices assigned to unmapped entities will fall back to and be filed under the main Vertex Company code configured in your tax integration.
+   4. **Division**: This is the child taxpayer in your Vertex instance. If you have a Division(s), it's likely that this taxpayer has jurisdiction rules that apply to your invoices. You can have multiple Divisions configured on your Vertex site that map to Recurly Business Entities, however, the Divisions must roll up to the same singular Company code within Vertex. If you do _not_ add Division codes to Business Entities within your Recurly tax configuration, all invoices assigned to unmapped entities will fall back to and be filed under the main Vertex Company code configured in your tax integration.
    5. **Version**: The Recurly Vertex integration currently supports O Series or Cloud 7.0, 8.0, or 9.0. Select your version.
 5. **Click** Save Changes.
 6. **Test** the connection by clicking the Test Configuration button to ensure successful integration.
@@ -90,8 +90,6 @@ In the Recurly Admin Console, under Configuration → Business Entities, you can
 In the Recurly Admin Console, configure invoice data mappings between your Recurly Business Entities and your Vertex Company and/or Divisions. All Divisions in Vertex must be configured under the same Company for a successful invoice mapping. This will help ensure that an invoice with a given Business Entity applied will be sent to the correct Vertex Company or Company's Division for tax filing purposes within Vertex.
 
 Recurly only support mappings of Divisions within 1 single Vertex Company. However, you can add as many Divisions within that single Company as you need within Vertex to reflect each unique Business Entity you have configured within Recurly. Always double check that you enter Company and Division codes into Recurly exactly as they present within Vertex, as this field is case-sensitive in Recurly App. If you do not map the Company and Division codes exactly as they are entered into Vertex in the corresponding Company/Division fields in Recurly, the mapping will be unsuccessful.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/ce25fd9-Screenshot_2024-06-05_at_5.32.57_PM.png" />
 
 ### Customer address collection
 
@@ -123,11 +121,11 @@ The Vertex Transaction Type field is a field only available for merchants with V
 
 The Vertex Transaction Type field is currently only configurable on the Plan object, via UI and both API versions. This field is essentially a secondary tax code to help further classify the type of transaction you are taxing via Vertex. Merchants can use this to classify if their products/services should be taxed as a standard sale, or as a rental, or lease. Distinguishing transaction types can lead to transactions in certain subscriber locations being tax-exempt or otherwise, which ensures your subscribers pay the most accurate tax amount on your goods. By default, each plan is assigned the standard "Sale" Vertex Transaction Type. All one-time-charges (non plan-based subscription invoices) are set to use the "Sale" type, and cannot be overridden at this time.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0b5c45719f70810951d4589f8b845ec48f58f28096dde8d608946d33c284cb8b-Screenshot_2024-12-02_at_11.27.57_AM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/0b5c45719f70810951d4589f8b845ec48f58f28096dde8d608946d33c284cb8b-Screenshot_2024-12-02_at_11.27.57_AM.png" className="border" />
 
 Open the dropdown to select the desired transaction type you would like to apply to the given plan. The Vertex-provided options are **Sale, Lease, and Rental**. Once you select your Vertex Transaction Type of choice, make sure to **Save** your changes. After saving, all renewals and forward-moving invoices and subscriptions created under that plan will have the corresponding transaction type applied when calculating tax.
 
-<Image align="center" className="border" border={true} width="50% " src="https://files.readme.io/5c84729324ad81e4d56a012bd153c517ef6c0c1118632fd5545f9628ab66a808-Screenshot_2024-12-02_at_11.30.11_AM.png" />
+<Image align="center" border={true} width="50% " src="https://files.readme.io/5c84729324ad81e4d56a012bd153c517ef6c0c1118632fd5545f9628ab66a808-Screenshot_2024-12-02_at_11.30.11_AM.png" className="border" />
 
 If you are transitioning from your own Avalara account to Vertex, you need to configure your current tax codes as product classes in Vertex, mapping them to the appropriate taxability rules. Only after configuring your Avalara codes in Vertex should you add your Vertex credentials in Recurly. This ensures proper refund support for invoices processed through Avalara.
 
@@ -137,9 +135,13 @@ By configuring these settings, you can seamlessly integrate Recurly with Vertex 
 
 Once you enable Vertex, all customer invoices go to your Vertex account, regardless of their location. Invoices with tax included will show an additional Tax column in the line item table displaying the rate for each line item. Below the line item table, a tax section displays the total tax amount for the invoice. It appears below the Subtotal and above the Total, showing the location, tax type, and rate (e.g., “FR VAT 20%” for French VAT).
 
+In addition, Recurly's integration with Vertex comes with the ability to breakdown taxes in greater detail based on the jurisdiction type.  This setting, **Communication Tax Breakdown**, can be found when creating or editing an invoice, is only visible when Vertex is turned on for your site, and works internationally.  Once turned on, the tax breakdown will be displayed on invoices, invoice previews, and PDF invoices.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/a3d8f32f92e5bb6757a3430c2ec1c74f2ba1b5b675a5136f8d1312a159af4fba-Screenshot_2025-10-23_at_3.36.43_PM.png" className="border" />
+
 ## Tax previews
 
-Recurly offers tax previews for Vertex customers via the API in the Preview Subscription, Preview Subscription Change, Preview Purchase, and Preview Invoice endpoints. These calls allow Recurly to query Vertex directly for tax information and return it in the preview. Currently, tax previews for Vertex are not supported by Recurly.js, the Recurly Admin Console, Checkout or the Hosted Payment Pages.\
+Recurly offers tax previews for Vertex customers via the API in the Preview Subscription, Preview Subscription Change, Preview Purchase, and Preview Invoice endpoints. These calls allow Recurly to query Vertex directly for tax information and return it in the preview. Currently, tax previews for Vertex are not supported by Recurly.js, the Recurly Admin Console, Checkout or the Hosted Payment Pages.  
 The previews are sent to Vertex as a Quotation Request and do not create entries in the Tax Journal.
 
 ## Tax inclusive pricing
@@ -211,7 +213,7 @@ This section details the fields that Recurly sends to Vertex with each invoice t
 
     <tr>
       <td>
-        *N/A*
+        _N/A_
       </td>
 
       <td>
@@ -267,7 +269,7 @@ This section details the fields that Recurly sends to Vertex with each invoice t
 
       <td>
         Request/Customer/CustomerCode
-        *Must be 40 characters or less.*
+        _Must be 40 characters or less._
       </td>
     </tr>
 
