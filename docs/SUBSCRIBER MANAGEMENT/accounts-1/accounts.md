@@ -14,45 +14,24 @@ metadata:
 next:
   description: ''
 ---
-## Dashboard
+# Overview
 
-<a href="https://app.recurly.com/go/accounts" target="_blank">Your accounts dashboard</a> provides an overview of all customer accounts managed by Recurly. From this view, you can search by first name, last name, email address, account code, and more. The filters on this view allow you to drill into accounts by different categories. Categories overlap and are not necessarily distinct, _e.g._ the **Open** filter will return both **Non-subscribers** and **Subscribers**.
+Use the [accounts dashboard](https://app.recurly.com/go/accounts) to view and manage customer accounts. You can search by first name, last name, email address, account code, and more. Filters let you drill in by category. Categories can overlap — for example, the **Open** filter can include both **Non-subscribers** and **Subscribers**.
 
-#### Open
+## Filters
 
-Accounts that aren't Closed.
-
-#### Non-subscribers
-
-Open accounts with no active, canceled, or future subscriptions.
-
-#### Subscribers
-
-Open accounts with at least one active or canceled subscription.
-
-#### In trial
-
-Subscribers with at least one active or canceled subscription in trial mode.
-
-#### Past due
-
-Subscribers with an invoice in the past-due state.
-
-#### Non-renewing
-
-Subscribers that won't renew after the current term
-
-#### Future
-
-Subscribers with a subscription that hasn't yet started.
-
-#### Closed
-
-Accounts that aren't Open.
+* **Open** — Accounts that aren’t closed.
+* **Non-subscribers** — Open accounts with no active, canceled, or future subscriptions.
+* **Subscribers** — Open accounts with at least one active or canceled subscription.
+* **In trial** — Subscribers with at least one active or canceled subscription in trial.
+* **Past due** — Subscribers with an invoice in a past-due state.
+* **Non-renewing** — Subscribers that won’t renew after the current term.
+* **Future** — Subscribers with a subscription that hasn’t started yet.
+* **Closed** — Accounts that aren’t open.
 
 ## Account search
 
-You may search for an account on any of the following fields:
+You can search by:
 
 * Account code
 * Company name
@@ -62,73 +41,85 @@ You may search for an account on any of the following fields:
 * Username
 * Coupon code
 
-## Account creation
+## Create an account
 
-From the accounts overview page, click New Account to <a href="https://app.recurly.com/go/accounts/new" target="_blank">create a new customer account</a>. You will be asked to provide the following details:
+From the accounts overview page, select **New account** to [create a customer account](https://app.recurly.com/go/accounts/new). Provide:
 
-#### Account code
+### Account code
 
-Uniquely identifies your customers in Recurly. No two customers can share the same account code. Merchants typically align account codes with the same identifiers they use to track users in their own system. Using the customer's email address as their account code is another popular convention among Recurly merchants. Once set, the account code cannot be modified. Account codes will be considered invalid if they start with a periods ( . ) or  contain slashes ( / ), or semicolons ( ; ).
+Uniquely identifies a customer in Recurly. No two customers can share the same account code. Many merchants align this value with their own user identifier; using the customer’s email address is also common. Once set, the account code can’t be modified.
+**Invalid account codes:** values that start with a period (`.`) or contain slashes (`/`) or semicolons (`;`).
 
-#### Username
+### Username
 
-A secondary identifier that can be searched against on the dashboard.
+A secondary identifier you can search for in the dashboard.
 
-#### Email
+### Email
 
-Your customer's email address. When provided, all Recurly communication is sent to this address. The customer will also use this email address to log into your hosted account management pages. This value does not need to be unique.
+The customer’s email address. Recurly communications are sent here, and customers use this email to sign in to hosted account management pages. This value doesn’t need to be unique.
 
-#### CC Emails
+### CC emails
 
-Additional email address that should receive account correspondence. These should be separated only by commas and should be formed as [name@domain.com](mailto:name@domain.com) only. These CC emails will receive all emails that the "Email" field also receives.
+Additional addresses that should receive account emails. Separate with commas (for example, `name@domain.com,name2@domain.com`). CC recipients receive the same messages sent to **Email**.
 
-#### First name
+### First name / Last name / Company / VAT number / Phone number
 
-Customer's first name
+Basic profile and tax details.
 
-#### Last name
+### Address
 
-Your customer's last name
-
-#### Company
-
-Your customer's company name (if applicable)
-
-#### VAT number (if applicable)
-
-VAT information
-
-#### Phone number
-
-Your customer's Phone number
-
-#### Address
-
-The account address is used in manual invoices and must contain at least a postal code and country for taxes to be calculated on any of the account's purchases.
+Used on manual invoices. Include at least postal code and country so taxes can be calculated for the account’s purchases.
 
 ## Billing info
 
-On an account, there is a **Billing Info** section that shows stored payment information. Billing Info is usually filled out by the customer upon purchase or when they update their information. The merchant determines how much of the billing address is required in the Admin under Site Settings. Billing Info can be different from the account email and address.
+The **Billing info** section shows stored payment details. Customers usually add or update this during purchase or when they manage their payment method. You can choose how much of the billing address is required in **Admin → Site settings**. Billing info can differ from the account email and address.
 
 ## Account notes
 
-Your team can leave notes on an account to add context, _e.g._ the reason for a refund, customer requests, and/or complaints. These notes are internal and not exposed to your customers.
+Leave internal notes to add context — for example, refund reasons or customer requests. Notes are not visible to customers.
 
-## Updating accounts
+## Update accounts
 
-Once an account is created, all values (with the exception of the account code) may be updated.
+After creation, you can update all fields except the account code.
 
-## Closing accounts
+## Close accounts
 
-Closing an account permanently deletes its billing information, cancels any active subscriptions (canceled subscriptions will remain active until the end of the current billing period before expiring), and fails any open invoices. We recommend closing accounts only when all business is concluded  
-with a customer.
+Closing an account:
 
-You will see the option to close an account when viewing an account in the admin console.
+* Permanently deletes stored billing information.
+* Cancels any active subscriptions (they remain active until the current billing period ends).
+* Fails any open invoices.
 
-## Reopening closed accounts
+Close accounts only when all business with the customer is complete. You’ll see **Close account** in the admin when viewing an account.
 
-A closed account can be reopened by accessing the Account Options menu in the admin console and choosing 'Reopen Account', or by creating a new account with the same account code. Reopening an account will restore its history but billing information will need to be provided by the customer to continue billing.
+## Reopen closed accounts
 
-## Deleting accounts
+Reopen an account from **Account options → Reopen account**, or create a new account using the same account code. History is restored, but customers must provide billing info again to resume billing.
 
-Accounts can only be deleted from your site while in sandbox mode (look for the Clear Test Data button in your site settings). Once your account is in production mode all data is kept for historical accounting and cannot be removed from your site.
+## Delete accounts
+
+Accounts can only be deleted in **sandbox** (see **Clear test data** in site settings). In production, data is retained for historical accounting and can’t be removed.
+
+***
+
+## Per-account rate limiting
+
+Recurly enforces built-in, per-account rate limits to protect end-customer accounts from excessive activity. These limits are part of the core Recurly platform and are **not** tied to deprecated Kount/Fraud Management features.
+
+### What’s limited
+
+Counters increment based on the **`account_code`** used in an API request for:
+
+* New subscriptions
+* Transactions
+* Billing info updates
+
+### Where to see limits (sandbox)
+
+In sandbox, open any **test customer account**. On the right side of the page, under **Billing info** and **Hosted page links**, you’ll see the current per-account limits and their counters for **New subscriptions**, **Transactions**, and **Billing info updates**.
+
+### Management
+
+These limits can’t be changed. You can manually **reset** the counters from the Recurly UI if needed.
+
+> **Note:** This capability is proprietary to Recurly and commonly misattributed to legacy Kount/Fraud Management. The limits apply regardless of any external fraud or payment integrations.
