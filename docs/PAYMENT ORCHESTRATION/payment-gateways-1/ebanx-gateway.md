@@ -134,6 +134,12 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 # Other Notes
 
+## Integrating with Ebanx 
+
+Below you will find helpful Integration Guides for payment methods supported on Ebanx. As of today, only UPI AutoPay is available. 
+
+* [UPI AutoPay Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/) 
+
 ## Required Fields
 
 Ebanx and UPI AutoPay together require a minimum of fields to create a mandate for a recurring subscription. The minimum required fields to submit a UPI AutoPay transaction are as follows:
