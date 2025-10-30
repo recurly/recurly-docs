@@ -42,6 +42,10 @@ A subscription request can contain several different resources, but we’ll focu
 * Commerce Hub
 * Braintree
 
+### Supported Endpoints 
+
+Currently we only support this in the `/subscriptions` endpoint when adding subscriptions. Future iterations will support the `/purchases` endpoint as well. 
+
 ### Required Feature Flags
 
 This step is incredibly important, as the network transaction ID field cannot be passed without this feature flag enabled.
