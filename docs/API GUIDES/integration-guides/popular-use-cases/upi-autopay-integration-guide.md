@@ -41,7 +41,7 @@ See our <Anchor label="UPI AutoPay documentation" target="_blank" href="https://
 * **Subscriptions** (with plan codes)
 * **Customer VPA** (example: customerid@bankname)
 
-Example payload: 
+Example payload:
 
 ```json
 “billing_info“: {
@@ -235,9 +235,9 @@ This initial call will return different behavior in production than in sandbox.
 
 In **Production**: You will receive confirmation of a pending transaction, or an error message if a required field was missing.
 
-In **Sandbox**: You will need to load the `return_url` value that represent the gateway's simulated UPI Enrollment process with the consumer's App. You may render this in a modal for testing purposes or redirect to your liking. 
+In **Sandbox**: You will need to load the `return_url` value that represent the gateway's simulated UPI Enrollment process with the consumer's App. You may render this in a modal for testing purposes or redirect to your liking.
 
-* Once within the simulator, you can simulate approvals, cancellations, and declines of the enrollment itself. 
+* Once within the simulator, you can simulate approvals, cancellations, and declines of the enrollment itself.
 * If you choose to simulate an enrollment, ensure you have all proper webhooks set up at Ebanx. See the [Ebanx Gateway](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) setup page for more information.
 
 ***
@@ -254,11 +254,11 @@ After a successful signup, there will be several webhooks you should listen to i
 
 It is recommended that you listen for at least the three webhooks below, and additional context is available on the [Ebanx gateway](https://docs.recurly.com/docs/ebanx-gateway#/) and [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) pages respectively. Since consumers can cancel, pause, and resume subscriptions within the UPI App, it is extremely important to listen for these events.
 
-* [Subscription Cancellation Event](https://recurly.com/developers/reference/webhooks/#canceled-subscription) 
+* [Subscription Cancellation Event](https://recurly.com/developers/reference/webhooks/#canceled-subscription)
 * [Subscription Pause Event](https://recurly.com/developers/reference/webhooks/#paused-subscription)
 * [Subscription Resume Event](https://recurly.com/developers/reference/webhooks/#resumed-subscription)
 
-## Sandbox behavior
+# Sandbox behavior
 
 In Step 2, Sandbox `return_url` behavior is outlined, but requires a bit more explanation. You may render this URL in whatever way you wish (modal, full redirect, etc.) however it is not recommended to put an immense amount of effort into it as this is not a production workflow.
 
@@ -267,6 +267,14 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 **Step 1:** Upon visiting the return URL, you can click **Accept Agreement** or choose another option.
 
 **Step 2:** You're done!
+
+## Confirming High Amount Renewals in Sandbox
+
+When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to follow these instructions:
+
+* Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
+  * _Confirming_ the payment will create a Approval in Recurly.
+  * _Cancelling_ will cause the payment to decline and the invoice to enter dunning.
 
 ***
 
