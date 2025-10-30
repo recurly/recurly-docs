@@ -252,7 +252,7 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment, and disabling access should a consumer decide to cancel their subscription from within their mobile banking application.
 
-It is recommended that you listen for at least the three webhooks below, and additional context is available on the gateway and UPI pages respectively. Since consumers can cancel, pause, and resume subscriptions within the UPI App, it is extremely important to listen for these events.
+It is recommended that you listen for at least the three webhooks below, and additional context is available on the [Ebanx gateway](https://docs.recurly.com/docs/ebanx-gateway#/) and [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) pages respectively. Since consumers can cancel, pause, and resume subscriptions within the UPI App, it is extremely important to listen for these events.
 
 * [Subscription Cancellation Event](https://recurly.com/developers/reference/webhooks/#canceled-subscription) 
 * [Subscription Pause Event](https://recurly.com/developers/reference/webhooks/#paused-subscription)
