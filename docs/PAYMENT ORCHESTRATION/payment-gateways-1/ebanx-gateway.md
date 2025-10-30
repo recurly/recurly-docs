@@ -142,9 +142,11 @@ Below you will find helpful Integration Guides for payment methods supported on 
 
 ## Required Fields
 
-Ebanx and UPI AutoPay together require a minimum of fields to create a mandate for a recurring subscription. The minimum required fields to submit a UPI AutoPay transaction are as follows:
+Ebanx will require a minimum of fields to create a mandate for a recurring subscription. The minimum required fields to submit a transaction are as follows:
 
-* VPA
+### UPI AutoPay
+
+* VPA (UPI AutoPay
 * Email Address
 * Customer First and Last Name
 * Customer Billing Address (Street Address, City, Region/State, Country, Postal Code / PIN Code)
