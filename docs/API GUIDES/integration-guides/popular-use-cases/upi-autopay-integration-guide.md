@@ -31,7 +31,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 ## Step 1: Generate a UPI AutoPay Payment Request
 
-**Use** a supported client library or our  `payment_gateway_references`  payment object in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `reference_type` enum to `upi_vpa`and ensure you are passing the cusotmer's VPA as the `token` value.
+**Use** a supported client library or our  `payment_gateway_references`  payment object in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `reference_type` enum to `upi_vpa`and ensure you are passing the customer's VPA as the `token` value.
 
 See our <Anchor label="UPI AutoPay documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay documentation</Anchor> for details on all required fields.
 
