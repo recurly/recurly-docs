@@ -21,6 +21,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
+You must have a relationship with FreedomPay to use this gateway.
+
 To use a Point of Sale system with FreedomPay and provide POS-derived NTIDs via API, your Recurly account must have the following prerequisites:
 
 * **Feature flag**: Allow NTIDs to be sent via API. Reach out to support to have this enabled.
@@ -67,7 +69,7 @@ Log into your FreedomPay Gateway account. If you do not have an account, sign up
 
 1. Navigate to **Administration** → **Enhanced Security Keys**.
 2. Click **Create new** under the **All enhanced security keys** section.
-3. Enter a description for the key (e.g., *Recurly Configuration Key*).
+3. Enter a description for the key (e.g., _Recurly Configuration Key_).
 4. Ensure **Freeway Payments** is checked.
 5. **Do not click "Create" yet.** Instead, click the **Freeway Payments** tab and verify the correct Tiers and Stores are associated with the key.
 6. Click **Create** at the bottom of the page.
@@ -93,7 +95,7 @@ Log into your FreedomPay Gateway account. If you do not have an account, sign up
 6. Enter the **Enterprise Code** given to you by your FreedomPay representative.
 7. Enter your **RSA Key ID** generated in Step 3.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/33fdca18f84fb22cd0419e959e33f43dd03df30040d0d1bf9aff296b02c05983-Screenshot_2025-02-11_at_2.38.45_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/33fdca18f84fb22cd0419e959e33f43dd03df30040d0d1bf9aff296b02c05983-Screenshot_2025-02-11_at_2.38.45_PM.png" className="border" />
 
 ### Step 5: Configure your gateway settings
 
@@ -137,11 +139,11 @@ If you need to reach out to FreedomPay directly, ensure you have all appropriate
 
 **Gateway error codes** will be available at the top of a given transaction that was declined or produced an error. In the example below, the code in question is “431”.
 
-<Image align="center" src="https://files.readme.io/92f850e81aa3275cd791b2ecb986d23418f6a37e7d3b6cf641f3706edd2ba14d-Screenshot_2024-12-12_at_11.44.34_AM.png" />
+<Image align="center" border={false} src="https://files.readme.io/92f850e81aa3275cd791b2ecb986d23418f6a37e7d3b6cf641f3706edd2ba14d-Screenshot_2024-12-12_at_11.44.34_AM.png" />
 
 The **Reference** below will map to the FreedomPay **Request ID**.
 
-<Image align="center" src="https://files.readme.io/9d127b4c8086b0dc6deb14cab328a7f14dee6e7d03946dbde4f7df80cea13252-Screenshot_2024-12-12_at_11.44.43_AM.png" />
+<Image align="center" border={false} src="https://files.readme.io/9d127b4c8086b0dc6deb14cab328a7f14dee6e7d03946dbde4f7df80cea13252-Screenshot_2024-12-12_at_11.44.43_AM.png" />
 
 ### Payload examples and error documentation
 
@@ -151,7 +153,7 @@ Per FreedomPay request, we are providing examples of a proper request and respon
 
 If you cannot access this PDF, please reach out to FreedomPay directly. Recurly support does not have authority to grant access.
 
-**Request Example**
+**Token Request Example**
 
 ```Text xml
 <SOAP-ENV:Body>  
@@ -308,12 +310,12 @@ Check the following:
 * Ensure your ES (Enhanced Security) Key has the correct mappings to your Terminal and Store IDs in the FreedomPay gateway. This action must be taken in your FreedomPay gateway account, not within Recurly.
 * Verify which Tiers the ES Key is mapped to in your Enterprise FreedomPay login. If you have set up special mappings, check the **Enterprise Management** tab in FreedomPay to ensure it has the correct access.
 * Ensure you are not using a UAT Store ID, Terminal ID, or ES Key in Production Mode (and vice versa).
-* Verify that the correct card types are selected in Recurly. If a card brand is selected in Recurly but not enabled at FreedomPay, contact your FreedomPay representative to add this card type or remove it from your Recurly gateway configuration.\
+* Verify that the correct card types are selected in Recurly. If a card brand is selected in Recurly but not enabled at FreedomPay, contact your FreedomPay representative to add this card type or remove it from your Recurly gateway configuration.  
   If you continue to experience issues, please reach out directly to FreedomPay support.
 
 ### I am using a Point of Sale card terminal. How can I connect this to Recurly?
 
-Recurly does not directly support EMV or Card Present transactions. To set up a Card Present → Recurring Subscription flow, first integrate and build out your card present solution with FreedomPay. Your card present integration should result in a gateway token and your subscription Network Transaction ID (NTID).\
+Recurly does not directly support EMV or Card Present transactions. To set up a Card Present → Recurring Subscription flow, first integrate and build out your card present solution with FreedomPay. Your card present integration should result in a gateway token and your subscription Network Transaction ID (NTID).  
 Once that is complete, follow this [guide](https://docs.recurly.com/docs/recurlyjs) to create subscriptions in Recurly and provide the external NTID correctly. Learn more about [Card on File](https://docs.recurly.com/docs/card-on-file) in our compliance documentation.
 
 ### How does information get from my customer to FreedomPay?
@@ -322,11 +324,11 @@ In general, all data gets to our gateway partners in the same way. Data flows fr
 
 There are two types of transactions Recurly supports: CIT (Customer Initiated) and MIT (Merchant Initiated).  Learn more about [Card on File](https://docs.recurly.com/docs/card-on-file) in our compliance documentation.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/23b1a5df529958cb91e9302a1af5673b7c5a426628e395b3702fea8316322395-Screenshot_2024-12-12_at_11.49.56_AM.png" />
+<Image align="center" border={true} src="https://files.readme.io/23b1a5df529958cb91e9302a1af5673b7c5a426628e395b3702fea8316322395-Screenshot_2024-12-12_at_11.49.56_AM.png" className="border" />
 
 For Merchant Initiated Transactions, the customer is no longer in session, but their bank is still approving or declining these transactions.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f101629887765a924175984e6e7c1d7407b72e5d0ef2cdbbc4cd41e3d7b72306-Screenshot_2024-12-12_at_11.49.49_AM.png" />
+<Image align="center" border={true} src="https://files.readme.io/f101629887765a924175984e6e7c1d7407b72e5d0ef2cdbbc4cd41e3d7b72306-Screenshot_2024-12-12_at_11.49.49_AM.png" className="border" />
 
 Recurly does not approve or decline transactions. If you would like more information on a decline, we suggest having the customer reach out directly to their bank.
 
