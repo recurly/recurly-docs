@@ -44,7 +44,9 @@ A subscription request can contain several different resources, but we’ll focu
 
 ### Supported Endpoints
 
-Currently we only support this in the `/subscriptions` endpoint when adding subscriptions. Future iterations will support the `/purchases` endpoint as well.
+Currently we only support this in the `/subscriptions` endpoint when adding subscriptions. 
+
+Future iterations will support the `/purchases` endpoint as well.
 
 ### Required Feature Flags
 
