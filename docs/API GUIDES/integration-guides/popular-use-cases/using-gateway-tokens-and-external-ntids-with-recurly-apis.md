@@ -40,6 +40,7 @@ A subscription request can contain several different resources, but we’ll focu
 * Adyen
 * Stripe
 * Commerce Hub
+* Braintree
 
 ### Required Feature Flags
 
