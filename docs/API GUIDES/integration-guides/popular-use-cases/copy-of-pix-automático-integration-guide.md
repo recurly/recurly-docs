@@ -1,23 +1,23 @@
 ---
-title: Copy of Pix Automático integration guide
+title: UPI AutoPay integration guide
 excerpt: >-
-  Create subscriptions via Purchase API using Pix Automático with QR code
-  rendering and Ebanx sandbox simulation.
+  Create subscriptions via Purchase API using UPI AutoPay with a VPA and Ebanx
+  sandbox simulation.
 deprecated: false
 hidden: true
 metadata:
+  title: Recurly | UPI AutoPay Integration Guide
   robots: index
 ---
 # Overview
 
-This guide shows you how to use the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase) to create new subscriptions using the PIX Automático payment method. We’ll also illustrate how to work with the Ebanx sandbox simulator.
+This guide shows you how to use the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase) to create new subscriptions using the UPI AutoPay payment method. We’ll also illustrate how to work with the Ebanx sandbox simulator.
 
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s API, Webhooks, and basic REST concepts
 * [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/)
-* Familiarity with Base64 value rendering
-* An Ebanx gateway account with Pix Automático is enabled
+* An Ebanx gateway account with [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) is enabled
 
 ***
 
@@ -29,39 +29,45 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 # Creating Purchases
 
-## Step 1: Generate a Pix Payment Request
+## Step 1: Generate a UPI AutoPay Payment Request
 
-**Use** a supported client library or our  `type`  payment field in your front-end code. Our client libraries help you build out our APIs easily and process transactions faster. To specify Pix Automático, set your `type` enum to `pix_automatico`and ensure you are passing a `tax_identifier` and `tax_identifier_type` for Brazil.
+**Use** a supported client library or our  `payment_gateway_references`  payment object in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `reference_type` enum to `upi_vpa`and ensure you are passing the cusotmer's VPA as the `token` value. 
 
-See our <Anchor label="Pix Automático documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/">Pix Automático documentation</Anchor> for details on all required fields.
+See our <Anchor label="UPI AutoPay documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay documentation</Anchor> for details on all required fields.
 
-**Send** a request to the `create_purchase` method on Recurly’s API, including:
+**Send** a request to the create `purchase` endpoint on Recurly’s API, including:
 
-* **Customer account data** (e.g., code, name, billing info, phone number, email address, tax ID/tax type)
+* **Customer account data** (e.g., code, name, billing info, phone number, email address, VPA)
 * **Subscriptions** (with plan codes)
-* **Type** of payment method. In this case, `pix_automatico`.
+* **Customer VPA** (example: customerid@bankname)
 
 Below are example calls in different languages:
 
 ```ruby
 purchase = {
-  currency: "BRL",
+  currency: "INR",
   account: {
     code: "bdumonde",
     first_name: "Benjamin",
     last_name: "Du Monde",
     email: "bdumonde@example.com",
     billing_info: {
-      street1: "Avenida Nipo-brasileira 1007",
-      city: "Braganca Paulista",
-      region: "BR",
-      postal_code: "123456",
-      country: "BR",
-      phone: "1234679099"
-    },
-    type: "pix_automatico",
-    tax_identifier: "brazilian-cpf-value",
-    tax_identifier_type: "cpf"
+			first_name: "Benjamin",
+      last_name: "Du Monde",
+			address: {
+        street1: "44/1 Bharat Apartment 4C 5th Main Road",
+        city: "Bengaluru",
+        region: "KA",
+        postal_code: "560041",
+        country: "IN",
+        phone: "1234679099"
+      },
+			gateway_code: "gateway-code",
+      payment_gateway_references: [{
+				token: "vpa-value",
+				reference_type: "upi_vpa"
+				}]
+    }
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
@@ -78,16 +84,19 @@ let purchaseReq = {
     last_name: "Du Monde",
     email: "bdumonde@example.com",
     billing_info: {
-      street1: "Avenida Nipo-brasileira 1007",
-      city: "Braganca Paulista",
-      region: "BR",
-      postal_code: "123456",
-      country: "BR",
+      street1: "44/1 Bharat Apartment 4C 5th Main Road",
+      city: "Bengaluru",
+      region: "KA",
+      postal_code: "560041",
+      country: "IN",
       phone: "1234679099"
     },
-    type: "pix_automatico",
-    tax_identifier: "brazilian-cpf-value",
-    tax_identifier_type: "cpf"
+    gateway_code: "gateway-code",
+    payment_gateway_references: [{
+      token: "vpa-value",
+			reference_type: "upi_vpa"
+			}
+		]
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
@@ -190,7 +199,7 @@ InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 
 A successful purchase returns an **InvoiceCollection**, which contains any charge or credit invoices generated by the request. If the purchase fails, you’ll receive an error response indicating what went wrong. **Pix Automatico** transactions will be in a **Scheduled** state, and the Invoice will be **Pending**.
 
-Pix Automático uses QR Codes to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to render the Base64 QR code value in your checkout page. 
+Pix Automático uses QR Codes to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to render the Base64 QR code value in your checkout page.
 
 * Once you have the Base64 string, you can embed it directly into your HTML using the `<img>` tag. The `src` attribute will contain the Base64 data, prefixed with `data:image/png;base64`.
 
