@@ -4,7 +4,7 @@ excerpt: >-
   Create subscriptions via Purchase API using UPI AutoPay with a VPA and Ebanx
   sandbox simulation.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Recurly | UPI AutoPay Integration Guide
   robots: index
