@@ -164,9 +164,7 @@ Payment methods on Ebanx use subscription-level **mandate IDs** assigned to a co
 
 * Note: Pausing and Resuming Subscriptions in a banking app is only supported with UPI at this time.
 
-# Testing in Sandbox
-
-When in sandbox ONLY, the response will contain a response URL for simulating interactions with the UPI Application. This interaction would typically take place with the customer directly via push notifications on their phone. For testing purposes, use the URL to accept or reject the mandate enrollment request.
+# Subscription Behavior
 
 ## Transaction, Invoice, and Subscription Status
 
@@ -174,23 +172,17 @@ When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/)
 
 See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) for more information.
 
-## Confirming High Amount Renewals in Sandbox
+## Subscriptions and Transactions Limitations
 
-When processing with UPI, any amount over 15K INR, a push notification would go to the consumer in a Production environment. In Sandbox, you will need to follow these instructions:
+There are certain behaviors that Ebanx APAC payment methods support -- they are listed below.
 
-* Search for the Pending Payment in the Ebanx dashboard (Navigate to 'Payments' and choose the Pending Payment), click on the associated payment (or search via the Reference/ Hash), and choose the action you wish to take (Cancel or Confirm).
-  * _Confirming_ the payment will create a Approval in Recurly.
-  * _Cancelling_ will cause the payment to decline and the invoice to enter dunning.
-
-# Additional Information
-
-## Subscriptions and Transactions that work with UPI AutoPay
-
-* Trial Subscriptions _with payment data_ -- trials without a prior UPI enrollment will not function.
+* Trial Subscriptions _with payment data_ -- trials without a prior UPI enrollment will not function. Force-converting is not supported.
 * Non-Trial Subscriptions
 * Renewals
 
-## Features that will not work with UPI AutoPay
+## Features that will not work with Ebanx
+
+### UPI AutoPay
 
 * Transaction type of Authorize and Capture, and Void. UPI AutoPay transactions must be refunded.
 * Subscription upgrades: Mandates stored on the UPI app control the amount and frequency. Changing this on the recurly side could cause declines.
