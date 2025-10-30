@@ -17,7 +17,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 * Familiarity with Recurly’s API, Webhooks, and basic REST concepts
 * [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/)
-* An Ebanx gateway account with [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) is enabled
+* An [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/) gateway account with [UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/) is enabled
 
 ***
 
