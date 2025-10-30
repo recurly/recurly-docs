@@ -134,11 +134,11 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 
 # Other Notes
 
-## Integrating with Ebanx 
+## Integrating with Ebanx
 
-Below you will find helpful Integration Guides for payment methods supported on Ebanx. As of today, only UPI AutoPay is available. 
+Below you will find helpful Integration Guides for payment methods supported on Ebanx. As of today, only UPI AutoPay is available.
 
-* [UPI AutoPay Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/) 
+* [UPI AutoPay Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/)
 
 ## Required Fields
 
@@ -160,7 +160,9 @@ Ebanx will require a minimum of fields to create a mandate for a recurring subsc
 
 ## Mandate Preferences
 
-**UPI – AutoPay** uses a **mandate ID** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause this mandate from their UPI app, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in the UPI app will be automatically handled.
+Payment methods on Ebanx use subscription-level **mandate IDs** assigned to a consumer’s subscription upon signup. Consumers can revoke or pause (in UPI's case) this mandate from their bank apps, which can affect the subscription in Recurly. This will be configurable in the future. Presently, consumers cancelling or pausing their mandates in their banking app will be automatically handled.
+
+* Note: Pausing and Resuming Subscriptions in a banking app is only supported with UPI at this time.
 
 # Testing in Sandbox
 
