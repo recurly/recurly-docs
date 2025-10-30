@@ -107,13 +107,15 @@ purchase = {
         "first_name": "Benjamin",
         "last_name": "Du Monde",
         "email": "bdumonde@example.com",
-        "billing_info": {
-            "street1": "Avenida Nipo-brasileira 1007",
-            "city": "Braganca Paulista",
-            "region": "BR",
-            "postal_code": "123456",
-            "country": "BR",
-            "phone": "1234679099"
+      	"billing_info": {
+						"address":{
+              "street1": "Avenida Nipo-brasileira 1007",
+              "city": "Braganca Paulista",
+              "region": "BR",
+              "postal_code": "123456",
+              "country": "BR",
+              "phone": "1234679099"
+						}
         },
         "type": "pix-automatico",
         "tax_identifier": "brazilian-cpf-value",
