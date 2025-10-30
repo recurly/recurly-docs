@@ -1,8 +1,8 @@
 ---
 title: Mercado Pago integration guide
 excerpt: >-
-  Create subscriptions via Purchase API with Mercado Pago, 3DS (Recurly.js), and
-  Ebanx sandbox flow.
+  Create subscriptions via Purchase API with Mercado Pago, Recurly.js, and Ebanx
+  sandbox flow.
 deprecated: false
 hidden: true
 metadata:
