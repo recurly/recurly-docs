@@ -31,7 +31,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 ## Step 1: Generate a UPI AutoPay Payment Request
 
-**Use** a supported client library or our  `payment_gateway_references`  payment object in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `reference_type` enum to `upi_vpa`and ensure you are passing the cusotmer's VPA as the `token` value. 
+**Use** a supported client library or our  `payment_gateway_references`  payment object in your API implementation. Our client libraries help you build out our APIs easily and process transactions faster. To specify UPI AutoPay, you will send  set your `reference_type` enum to `upi_vpa`and ensure you are passing the cusotmer's VPA as the `token` value.
 
 See our <Anchor label="UPI AutoPay documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay documentation</Anchor> for details on all required fields.
 
@@ -84,19 +84,22 @@ let purchaseReq = {
     last_name: "Du Monde",
     email: "bdumonde@example.com",
     billing_info: {
-      street1: "44/1 Bharat Apartment 4C 5th Main Road",
-      city: "Bengaluru",
-      region: "KA",
-      postal_code: "560041",
-      country: "IN",
-      phone: "1234679099"
-    },
-    gateway_code: "gateway-code",
-    payment_gateway_references: [{
-      token: "vpa-value",
-			reference_type: "upi_vpa"
-			}
-		]
+			first_name: "Benjamin",
+      last_name: "Du Monde",
+			address: {
+        street1: "44/1 Bharat Apartment 4C 5th Main Road",
+        city: "Bengaluru",
+        region: "KA",
+        postal_code: "560041",
+        country: "IN",
+        phone: "1234679099"
+      },
+			gateway_code: "gateway-code",
+      payment_gateway_references: [{
+				token: "vpa-value",
+				reference_type: "upi_vpa"
+				}]
+    }
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
@@ -113,16 +116,19 @@ purchase = {
         "last_name": "Du Monde",
         "email": "bdumonde@example.com",
         "billing_info": {
-            "street1": "Avenida Nipo-brasileira 1007",
+            "address":{
+						"street1": "Avenida Nipo-brasileira 1007",
             "city": "Braganca Paulista",
             "region": "BR",
             "postal_code": "123456",
             "country": "BR",
             "phone": "1234679099"
-        },
-        "type": "pix_automatico",
-        "tax_identifier": "brazilian-cpf-value",
-        "tax_identifier_type": "cpf"
+           },
+          "gateway_code":"gateway-code-value",
+          "payment_gateway_references": [{
+            "token":"customer-vpa-value",
+						"reference_type":"upi_vpa"
+				}]
     },
     "subscriptions": [
         {"plan_code": "coffee-monthly"}
@@ -148,7 +154,7 @@ billing.setStreet1("Avenida Nipo-brasileira 1007");
 billing.setCity("Braganca Paulista");
 billing.setRegion("BR");
 billing.setPostalCode("123456");
-billing.setCountry("BR");
+billing.setCountry("IN");
 billing.setPhone("1234679099");
 
 List<SubscriptionPurchase> subs = new ArrayList<>();
