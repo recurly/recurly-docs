@@ -52,12 +52,14 @@ purchase = {
     last_name: "Du Monde",
     email: "bdumonde@example.com",
     billing_info: {
+      address: {
       street1: "Avenida Nipo-brasileira 1007",
       city: "Braganca Paulista",
       region: "BR",
       postal_code: "123456",
       country: "BR",
       phone: "1234679099"
+			}
     },
     type: "mercadopago"
   },
@@ -208,7 +210,7 @@ This initial call will return different behavior in production than in sandbox.
 
 ## Step 3: Interact with Recurly.js
 
-You can follow along in our 3DS Redirect Guide, starting at **Step 3**: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew.
+You can follow along in our 3DS Redirect Guide, starting at **Step 3**: [Recurly.js Token-ID Redirect Guide]([https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew).
 
 ***
 
