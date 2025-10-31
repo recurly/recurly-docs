@@ -1,5 +1,5 @@
 ---
-title: Synchronous payments guides
+title: Synchronous payments webhook guide
 deprecated: false
 hidden: true
 metadata:
