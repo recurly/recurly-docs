@@ -124,4 +124,6 @@ Updating an existing subscription is not supported at this time.
 
 ## Step 4: Verify and Finish
 
-If the subscription addition was successful, you should now be able to access all associated objects that were created as a result. You can verify through the API or the admin console that no purchase occurred, and that a subscription exists for this customer.
+If the subscription addition was successful, you should now be able to access all associated objects that were created as a result. Since this is a future-dated subscription, you will not find a transaction attempt for this subscription. 
+
+You can verify through the API or the admin console that no purchase occurred, and that a subscription exists for this customer.
