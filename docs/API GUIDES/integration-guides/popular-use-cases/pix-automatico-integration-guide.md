@@ -200,6 +200,17 @@ Pix Automático uses QR Codes to allow consumers to authenticate their identity 
 
 * Once you have the Base64 string, you can embed it directly into your HTML using the `<img>` tag. The `src` attribute will contain the Base64 data, prefixed with `data:image/png;base64`.
 
+**Example**:
+
+```json
+"next_action": {
+	"type": "qr_code",
+	"value": "0004569821226780014br.gov.bcb.pix2556fake-pix.com.br/qr/v2/ACA4311F88661BC0D48200487EF1BCD95204000053039865802BR5910FAKEPIX Ltda6008CURITIBA62070503***12345"
+                },
+```
+
+<br />
+
 This initial call will return different behavior in production than in sandbox.
 
 In **Production**: (`next_action.type`and `next_action.value`) represent the QR code value that you will need to render on your checkout page for the consumer to scan and continue authorizing the payment.
@@ -231,7 +242,7 @@ Console.WriteLine($"Created Invoice with Number: {invoice.Number}");
 
 ## Step 3: Verify and finish
 
-After a successful purchase, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list your new account, subscription, or invoice. 
+After a successful purchase, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list your new account, subscription, or invoice.
 
 Please note, there will be some buffer time as the Invoice will initially be in a Processing state for a period of time.
 
