@@ -206,7 +206,7 @@ Upon submitting your API request you will receive a response that looks like thi
 }
 ```
 
-Mercado Pago requires consumer authentication, and so interacting with Recurly.js is necessary s to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to use the   `three_d_secure_action_token_id`value to render the modal for this process.
+Mercado Pago requires consumer authentication, and so interacting with Recurly.js is necessary to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to use the   `three_d_secure_action_token_id`value to render the modal for this process.
 
 This initial call will return different behavior in production than in sandbox.
 
