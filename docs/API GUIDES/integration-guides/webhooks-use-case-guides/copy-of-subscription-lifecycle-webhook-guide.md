@@ -1,5 +1,5 @@
 ---
-title: Copy of Subscription lifecycle webhook guide
+title: Transaction lifecycle webhook guide
 deprecated: false
 hidden: true
 metadata:
