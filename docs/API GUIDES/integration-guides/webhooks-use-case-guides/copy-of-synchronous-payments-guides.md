@@ -1,5 +1,5 @@
 ---
-title: Copy of Synchronous payments guides
+title: Aynchronous payments guides
 deprecated: false
 hidden: true
 metadata:
