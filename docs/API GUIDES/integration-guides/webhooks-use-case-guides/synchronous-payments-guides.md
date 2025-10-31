@@ -49,6 +49,8 @@ Specific to [Payments notifications](https://docs.recurly.com/recurly-subscripti
 
 ### Invoice Notifications
 
-Invoices for synchronous payment methods will immediately move to a Paid or Past Due state in most cases. They are also automatically created 
+Invoices for synchronous payment methods will immediately move to a Paid or Past Due state in most cases. They are also automatically created on all transactions except for verifications.
+
+<br />
 
 <br />
