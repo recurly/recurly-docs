@@ -1,5 +1,5 @@
 ---
-title: Post-authorization webhook guide
+title: Lifecycle webhook guide
 deprecated: false
 hidden: true
 metadata:
