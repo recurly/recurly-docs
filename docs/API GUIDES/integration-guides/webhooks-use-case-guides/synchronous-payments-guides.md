@@ -23,17 +23,8 @@ In the context of webhooks, a **synchronous payment method** is one where the fi
 
 **Supported Payment Methods**
 
-* Credit Cards
-* Cash App
-* PayPal (when the instrument is a card or PayPal balance)
-* Apple Pay
-* Google Pay
-* Amazon Pay (when the instrument is a card or balance)
-* Klarna 
-* iDeal 
-* Sofort / Klarna Debit Risk 
-* Venmo
-* Link Pay by Stripe (when the instrument is a card)
+* Credit Cards and Wallets using Credit Cards including: Apple Pay, Google Pay, Amazon Pay, Link Pay, Venmo, PayPal, and Klarna
+* Instant Payment Methods: iDeal, Sofort / Klarna Debit Risk
 
 ***
 
