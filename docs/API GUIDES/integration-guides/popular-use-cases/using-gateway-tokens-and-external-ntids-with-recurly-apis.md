@@ -44,7 +44,7 @@ A subscription request can contain several different resources, but we’ll focu
 
 ### Supported Endpoints
 
-Currently we only support this in the `/subscriptions` endpoint when adding subscriptions. 
+Currently we only support this in the `/subscriptions` endpoint when adding subscriptions.
 
 Future iterations will support the `/purchases` endpoint as well.
 
@@ -115,9 +115,9 @@ Updating an existing subscription is not supported at this time.
       "account": {
  	    "code": "account-code",
       },
-    "billing_info_id":"123456789",
+    "billing_info_id":"123456789", // Required Field
     "plan_code": "monthly",
-    "starts_at": "2025-12-30T14:15:22Z",
+    "starts_at": "2025-12-30T14:15:22Z", // Must be a future date
     "network_transaction_id": "320036244781105"
 }
 ```
