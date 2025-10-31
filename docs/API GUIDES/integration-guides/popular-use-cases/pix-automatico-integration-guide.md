@@ -209,8 +209,6 @@ Pix Automático uses QR Codes to allow consumers to authenticate their identity 
                 },
 ```
 
-<br />
-
 This initial call will return different behavior in production than in sandbox.
 
 In **Production**: (`next_action.type`and `next_action.value`) represent the QR code value that you will need to render on your checkout page for the consumer to scan and continue authorizing the payment.
