@@ -206,7 +206,7 @@ Pix Automático uses QR Codes to allow consumers to authenticate their identity 
 "next_action": {
 	"type": "qr_code",
 	"value": "0004569821226780014br.gov.bcb.pix2556fake-pix.com.br/qr/v2/ACA4311F88661BC0D48200487EF1BCD95204000053039865802BR5910FAKEPIX Ltda6008CURITIBA62070503***12345"
-                },
+},
 ```
 
 This initial call will return different behavior in production than in sandbox.
