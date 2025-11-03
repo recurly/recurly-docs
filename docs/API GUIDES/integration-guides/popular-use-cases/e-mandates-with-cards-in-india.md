@@ -4,7 +4,7 @@ excerpt: >-
   Create subscriptions via Purchase API using Cards where your customers are
   located in India.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
