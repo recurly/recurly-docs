@@ -70,7 +70,7 @@ Card transactions in India use consumer-approved enrollment with the consumer's 
 
 Stripe handles the pre-renewal notification for initial transactions and renewals internally, and does not expose that process to us. We will receive webhooks from Stripe when status updates are received.
 
-In this step, you will handle the 3DS flow as documented in the below two guides: 
+In this step, you will handle the 3DS flow using Recurly.js as documented in the below two guides: 
 
 * [3D Secure for new cards](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/)
 * [3D Secure for Stored billing IDs](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/)
