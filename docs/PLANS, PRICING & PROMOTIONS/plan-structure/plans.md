@@ -87,9 +87,21 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 <Image align="center" border={false} width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
 
-* **Price segments**: Define different price points for your customer segments.  The Price and Price Segment Code can be used in our [APIs](https://recurly.com/developers/api/v2021-02-25/index.html) and [Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/) to help you show the right price for the right subscriber.  Note that there is no limit to the number of price segments per currency or per plan!
+* **Price segments**: Define different price points for your customer segments.  This is a great feature if you want to manage different price points for a currency; offering the ability to A/B test and reducing plan bloat.  A default price is always required and will be used when a price segment code is not provided.  Here is a sample scenario based on location:   
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/0b6dafa93b032bc950f42ac7fd45158081101333cfb9526155d3b48a1d329fc3-priceSegments.png" className="border" />
+  * You own a gym and the operating cost is higher in some locations than others.  You might need to increase the cost of the monthly membership, and instead of having multiple identical plans for a few locations, you could create one plan that has multiple price segments. 
+
+  <Image align="center" border={true} width="80% " src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png" className="border" />
+
+  * Once the price segments are created, it will be up to you on how and when to display the prices to your customers; Recurly only provides the ability to manage, and has no logic to determine when or how to display a particular segment.  The price segments (price and code) are returned in our v3 [APIs](https://recurly.com/developers/api/v2021-02-25/index.html) and in [Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/).  This will allow you to display these specific price points on your platform and in your checkout flow. 
+  * **Other Notes:**
+    * There is no limit to the number of price segments for a currency.
+    * Price Segments are only available on Plans; both Fixed and Ramp.
+    * The Price Segment Code is not shown on invoices or in email templates.
+    * Price Segments can added to existing plans.
+    * Only the price can be edited once a segment is created. 
+    * Price Segments are _not_ available on setup fees, add-ons, or items.
+    * Price Segments are _not_ available in Recurly Checkout.
 
 **Billing details**
 
