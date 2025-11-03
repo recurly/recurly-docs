@@ -29,7 +29,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 
 This is necessary for Stripes India e-mandates due to the 3DS requirement on all customer-initiated requests. All Subscription Signup requests from Recurly's APIs are customer initiated.
 
-# India Requirements 
+# India Requirements
 
 When processing cards in India, we will request an e-mandate from the gateway which is tied to the specific subscription. **You may only have one e-mandate per Account at this time.**
 
@@ -70,6 +70,13 @@ Card transactions in India use consumer-approved enrollment with the consumer's 
 
 Stripe handles the pre-renewal notification for initial transactions and renewals internally, and does not expose that process to us. We will receive webhooks from Stripe when status updates are received.
 
+In this step, you will handle the 3DS flow as documented in the below two guides: 
+
+* [3D Secure for new cards](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/)
+* [3D Secure for Stored billing IDs](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information#/)
+
+Please reference 3DS flows for Recurly.js and return to this page.
+
 ***
 
 ## Step 3: Verify and finish
@@ -85,7 +92,7 @@ After a successful signup, there will be several webhooks you should listen to i
 It is recommended that you listen for at least the webhooks below. Since consumers can cancel, pause, and resume subscriptions within their Banking App, it is extremely important to listen for these events throughout the lifecycle of a subscription.
 
 * [Subscription Cancellation Event](https://recurly.com/developers/reference/webhooks/#canceled-subscription)
-* [Processing](https://docs.recurly.com/recurly-subscriptions/docs/invoice-notifications#/processing-invoice-automatic--achpaypal-echeck) / [Pending](https://docs.recurly.com/recurly-subscriptions/docs/invoice-notifications#/pending-invoice-automatic) Invoices 
+* [Processing](https://docs.recurly.com/recurly-subscriptions/docs/invoice-notifications#/processing-invoice-automatic--achpaypal-echeck) / [Pending](https://docs.recurly.com/recurly-subscriptions/docs/invoice-notifications#/pending-invoice-automatic) Invoices
 * [Scheduled](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/scheduled-payment-for-asynchronous-payment-methods) Payments
 * [Transaction Status Updates](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/transaction-status-updated)
 * [Failed](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/failed-payment) and [Successful](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/successful-payment) Payments
