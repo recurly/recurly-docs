@@ -219,7 +219,7 @@ In **Sandbox**: (`next_action.type`and `next_action.value`) will be present, but
 invoice = invoice_collection.charge_invoice
 puts "Created Invoice #{invoice}"
 ```
-```js
+```javascript
 let invoice = invoiceCollection.chargeInvoice
 console.log('Created Invoice:', invoice)
 ```
