@@ -280,7 +280,7 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 
 ## Alternative Simulator Option
 
-If you do not want to use the redirect url for Pix Enrollment and Transaction Authorization automation, you can use specific endpoints and send payloads to simulate specific behaviors. 
+If you do not want to use the redirect url for Pix Enrollment and Transaction Authorization automation, you can use specific endpoints and send payloads to simulate specific behaviors.
 
 **Enrollments**
 
@@ -292,8 +292,7 @@ Endpoint: `https://sandbox.ebanx.com/ws/simulator/userenrollment`
 {
 	"integration_key": "your-test-key-here",
     "merchant_enrollment_code": "7ba7dce07d3548b0a32cfc4a18846b8b", // FETCH the subscription ID to obtain the Subscription UUID to obtain this value
-    // mpconnect, pix-automatico
-	"payment_type_code": "pix-automatico", // Must be set to identify the payment method properly
+	"payment_type_code": "pix-automatico", // Set to pix-automatico
     // possible actions: confirm, expire, revoke 
 	"simulate_action": "confirm"
 }
