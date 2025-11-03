@@ -278,6 +278,43 @@ To help with simulating a consumer's bank app, the gateway has provided a simula
 
 **Step 4:** You're done!
 
+## Alternative Simulator Option
+
+If you do not want to use the redirect url for Pix Enrollment and Transaction Authorization automation, you can use specific endpoints and send payloads to simulate specific behaviors. 
+
+**Enrollments**
+
+Pix Recurring subscriptions require an enrollment. You can simulate enrollment confirmations, expirations, or revocations.
+
+Endpoint: `https://sandbox.ebanx.com/ws/simulator/userenrollment`
+
+```json
+{
+	"integration_key": "your-test-key-here",
+    "merchant_enrollment_code": "7ba7dce07d3548b0a32cfc4a18846b8b", // FETCH the subscription ID to obtain the Subscription UUID to obtain this value
+    // mpconnect, pix-automatico
+	"payment_type_code": "pix-automatico", // Must be set to identify the payment method properly
+    // possible actions: confirm, expire, revoke 
+	"simulate_action": "confirm"
+}
+```
+
+**Transactions**
+
+Pix Recurring subscriptions require the transactions to be authorized. You can simulate transaction confirmations, cancellations, expirations, or failures.
+
+Endpoint: `https://sandbox.ebanx.com/ws/simulator/payment`
+
+```json
+{
+	"integration_key": "your-test-key-here",
+    "hash": "69045d239844fc4...397ddedf84bd", // Obtain via transaction.gateway_reference value on the Recurly API response.
+    "simulate_action": "confirm" // possible actions: confirm, cancel, expire, fail
+}
+```
+
+You may automate these in your code via postman or other internal means.
+
 ***
 
 ## Next steps
