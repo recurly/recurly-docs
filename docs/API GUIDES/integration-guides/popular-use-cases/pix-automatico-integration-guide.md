@@ -228,10 +228,22 @@ invoice = invoice_collection.charge_invoice.transactions.next_action
 print("Created Invoice %s" % invoice)
 ```
 ```java
-NextAction nextAction = invoiceCollection.chargeInvoice()
-                                         .getTransactions()
-                                         .getNextAction();
-System.out.println("Created Charge Invoice with Id: " + invoice.getId());
+// Create a purchase and get the transaction from the invoice
+PurchaseCreate purchaseCreate = new PurchaseCreate();
+// ... configure purchase ...
+
+InvoiceCollection invoiceCollection = client.createPurchase(purchaseCreate);
+Invoice invoice = invoiceCollection.getChargeInvoice();
+
+// Access the transactions
+List<Transaction> transactions = invoice.getTransactions();
+Transaction transaction = transactions.get(0);
+
+// Access transaction properties
+String transactionId = transaction.getId();
+String status = transaction.getStatus();
+BigDecimal amount = transaction.getAmount();
+String currency = transaction.getCurrency();
 ```
 ```csharp
 Invoice invoice = collection.ChargeInvoice;
