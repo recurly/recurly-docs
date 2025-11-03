@@ -1,5 +1,5 @@
 ---
-title: Using E-mandates with Cards in India
+title: E-mandates with Cards in India
 excerpt: >-
   Create subscriptions via Purchase API using Cards where your customers are
   located in India.
