@@ -216,19 +216,21 @@ In **Production**: (`next_action.type`and `next_action.value`) represent the QR 
 In **Sandbox**: (`next_action.type`and `next_action.value`) will be present, but you will need to load the `return_url` value that represent the gateway's simulated Pix QR Code interaction with the consumer's App. You may render this in a modal for testing purposes.
 
 ```ruby
-invoice = invoice_collection.charge_invoice
+invoice = invoice_collection.charge_invoice.transactions.next_action
 puts "Created Invoice #{invoice}"
 ```
 ```javascript
-let invoice = invoiceCollection.chargeInvoice
+let invoice = invoiceCollection.chargeInvoice.Transactions.nextAction
 console.log('Created Invoice:', invoice)
 ```
 ```python
-invoice = invoice_collection.charge_invoice
+invoice = invoice_collection.charge_invoice.transactions.next_action
 print("Created Invoice %s" % invoice)
 ```
 ```java
-Invoice invoice = collection.getChargeInvoice();
+NextAction nextAction = invoiceCollection.chargeInvoice()
+                                         .getTransactions()
+                                         .getNextAction();
 System.out.println("Created Charge Invoice with Id: " + invoice.getId());
 ```
 ```csharp
