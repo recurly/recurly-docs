@@ -256,7 +256,7 @@ Console.WriteLine($"Created Invoice with Number: {invoice.Number}");
 
 After a successful purchase, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list your new account, subscription, or invoice.
 
-Please note, there will be some buffer time as the Invoice will initially be in a Processing state for a period of time.
+Please note, there will be some buffer time as the Invoice will initially be in a Processing state for a period of time. The transaction will be in a scheduled state. You will need to listen for webhooks to update your system.
 
 ***
 
