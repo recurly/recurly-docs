@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The unused invoice number export showcases the fundamental details of all the invoice numbers that have not been utilized in successfully generated invoices. Situations such as failed sign-ups could result in an unused invoice number.
 
-This log aids significantly in audit procedures, supplementing the numbers provided in the Invoices - Summary export to furnish a detailed account for every number in your sequence.
+This log aids significantly in audit procedures, supplementing the numbers provided in the Invoices - Summary export to furnish a detailed account for every number in your sequence. he oldest historical data available for this export is July 2019.
 
 <Image border={false} src="https://files.readme.io/9938ab519bfe268f32c3976f52caa75a2fa2446e156aa593b2e99a0aafe2a45f-image.png" />
 
