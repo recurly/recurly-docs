@@ -12,6 +12,12 @@ metadata:
 next:
   description: ''
 ---
+# Overview
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly subscription plan.
+
 ### Prerequisite
 
 You must enable the credit invoices feature to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
