@@ -117,7 +117,7 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 
 > Tip: For A/B tests, name segments clearly (for example, `exp-a`, `exp-b`) and log the chosen segment code with your analytics event.
 
-#### Notes and limits
+#### Notes and limits for price segmentation
 
 * No limit to the number of price segments per currency.
 * Available **only on plans** (fixed and ramp).
@@ -128,9 +128,10 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 
 #### Developer references
 
-* **v3 APIs:** Use the plan pricing returned by **[APIs](https://recurly.com/developers/api/v2021-02-25/index.html)** to select and apply the correct segment.
-* **Recurly.js:** Surface the right price in your front end with **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)**.
-* **Billing details**
+* **v3 APIs:** Use the plan pricing returned by **[APIs](https://recurly.com/developers/api/v2021-02-25/index.html)** to select and apply the correct price segment.
+* **Recurly.js:** Surface the right price segment in your front end with **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)**.
+
+### **Billing details**
 
 <Image align="center" border={false} width="80% " src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" />
 
