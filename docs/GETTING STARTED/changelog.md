@@ -2583,11 +2583,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see
-
-        [the press release on the FTC website](https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring)
-
-        .
+        Introduced a warning banner to warn users of FTC regulations when disabling the 'Cancel subscription' setting. For more information on FTC rulings around subscription cancellation, see <a href="https://www.ftc.gov/news-events/news/press-releases/2024/10/federal-trade-commission-announces-final-click-cancel-rule-making-it-easier-consumers-end-recurring">the press release on the FTC website</a>.
       </td>
     </tr>
 
