@@ -16,6 +16,10 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Prerequisite
+
+You must have enabled connections to app stores to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
+
 # Definition
 
 The "Subscriptions - External" export function allows you to identify and gather detailed information on external subscriptions stored on third-party platforms like the Apple App Store or Google Play Store. It aims to provide Recurly users with comprehensive data regarding the statuses and details of external subscriptions tied to different accounts.
