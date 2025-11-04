@@ -5,7 +5,7 @@ excerpt: >-
   valued for offering secure, versatile payment methods such as subscriptions,
   which promotes financial inclusion for millions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
