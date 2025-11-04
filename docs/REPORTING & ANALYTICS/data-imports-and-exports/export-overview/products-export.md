@@ -1,5 +1,5 @@
 ---
-title: Products - export
+title: Products Catalog - export
 excerpt: Unlock detailed insights into your product catalog with the products export.
 deprecated: false
 hidden: true
@@ -84,26 +84,480 @@ The Product type filter allows you to select existing plan, add on, setup fee, o
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-| Column Name                                                                                           | Example                 | Description                                                                                                                     | Data type (max size) |
-| ----------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- | :------------------- |
-| <span id="item_id">item_id</span>                                                                     | l20fl6bek3mp            | The system-generated unique identifier of the saved item utilized in creating this add-on.                                      | string               |
-| <span id="item_name">item_name</span>                                                                 | Pink Sweater            | The name of the saved item, mirrored in the add-on name on the customer's invoice.                                              | varchar(255)         |
-| <span id="item_code">item_code</span>                                                                 | pink_sweater            | The Recurly unique identifier for the saved item, also denoting the add-on code.                                                | varchar(50)          |
-| <span id="external_sku">external_sku</span>                                                           | PS1234                  | Optional external SKU of the saved item used in creating this add-on.                                                           | varchar(50)          |
-| <span id="item_status">item_status</span>                                                             | enabled                 | The status of the item in your Recurly catalog, being either "enabled" or "disabled".                                           | string               |
-| <span id="plan_code">plan_code</span>                                                                 | platinum                | The Recurly unique identifier for the plan affiliated with this subscription.                                                   | varchar(50)          |
-| <span id="plan_name">plan_name</span>                                                                 | Platinum Plan           | The contemporary name of the plan corresponding to this subscription.                                                           | varchar(255)         |
-| <span id="subscription_id">subscription_id</span>                                                     | 3c42a34d1442f840        | Unique system-generated identifier for the subscription housing this item as an add-on.                                         | varchar(32)          |
-| <span id="subscription_add_on_quantity">subscription_add_on_quantity</span>                           | 1                       | The count of add-ons integrated into the subscription for this item.                                                            | numeric              |
-| <span id="subscription_add_on_unit_amount_in_cents">subscription_add_on_unit_amount_in_cents</span>   | 600                     | The unit cost of the add-on in the subscription, denominated in cents; it may differ from the plan's or item's default pricing. | numeric              |
-| <span id="subscription_add_on_currency">subscription_add_on_currency</span>                           | USD                     | The currency utilized for billing in this subscription.                                                                         | varchar(3)           |
-| <span id="subscription_add_on_created_at">subscription_add_on_created_at</span>                       | 2020-02-07 10:18:34 MST | The date and time when the add-on was created, a critical filter for defining the date range.                                   | timestamp            |
-| <span id="subscription_add_on_modified_at">subscription_add_on_modified_at</span>                     | 2020-02-07 10:18:34 MST | The latest modification date and time for the add-on.                                                                           | timestamp            |
-| <span id="subscription_add_on_tier_type">subscription_add_on_tier_type</span>                         | flat                    | The subscription add-on tier type.                                                                                              | string               |
-| <span id="subscription_add_on_total_amount_in_cents">subscription_add_on_total_amount_in_cents</span> | 12345                   | Subscription add-on total amount in cents.                                                                                      | numeric              |
-| <span id="subscription_add_on_source">subscription_add_on_modified_at</span>                          | source1                 | Subscription add-on source.                                                                                                     | string               |
-| <span id="subscription_add_on_tax_inclusive">subscription_add_on_tax_inclusive</span>                 | false                   | Boolean flag to indicate whether the subscription add-on is tax inclusive.                                                      | boolean              |
-| item_api_id                                                                                           | e28zov4fw0v2            | Item API ID                                                                                                                     | string               |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Column Name
+      </th>
+
+      <th>
+        Example
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Data type (max size)
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <span id="product_id:">product_id:</span>
+      </td>
+
+      <td>
+        e28zov4fw0v2
+      </td>
+
+      <td>
+        The api_id of the product (this matches item_api_id)
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_id">plan_id</span>
+      </td>
+
+      <td>
+        p47mx1taq9b5
+      </td>
+
+      <td>
+        The api_id of the plan
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="add_on_id">add_on_id</span>
+      </td>
+
+      <td>
+        pink_sweater
+      </td>
+
+      <td>
+        The Recurly unique identifier for the saved item, also denoting the add-on code.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="item_code">item_code</span>
+      </td>
+
+      <td>
+        PS1234
+      </td>
+
+      <td>
+        Optional external SKU of the saved item used in creating this add-on.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="product_type">product_type</span>
+      </td>
+
+      <td>
+        enabled
+      </td>
+
+      <td>
+        The status of the item in your Recurly catalog, being either "enabled" or "disabled".
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="product_code">product_code</span>
+      </td>
+
+      <td>
+        platinum
+      </td>
+
+      <td>
+        The Recurly unique identifier for the plan affiliated with this subscription.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="external_sku">external_sku</span>
+      </td>
+
+      <td>
+        Platinum Plan
+      </td>
+
+      <td>
+        The contemporary name of the plan corresponding to this subscription.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="product_name">product_name</span>
+      </td>
+
+      <td>
+        3c42a34d1442f840
+      </td>
+
+      <td>
+        Unique system-generated identifier for the subscription housing this item as an add-on.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="product_description">product_description</span>
+      </td>
+
+      <td>
+        1
+      </td>
+
+      <td>
+        The count of add-ons integrated into the subscription for this item.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_code">plan_code</span>
+      </td>
+
+      <td>
+        600
+      </td>
+
+      <td>
+        The unit cost of the add-on in the subscription, denominated in cents; it may differ from the plan's or item's default pricing.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_name">plan_name</span>
+      </td>
+
+      <td>
+        USD
+      </td>
+
+      <td>
+        The currency utilized for billing in this subscription.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_interval_unit">plan_interval_unit</span>
+      </td>
+
+      <td>
+        2020-02-07 10:18:34 MST
+      </td>
+
+      <td>
+        The date and time when the add-on was created, a critical filter for defining the date range.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_interval_length">plan_interval_length</span>
+      </td>
+
+      <td>
+        2020-02-07 10:18:34 MST
+      </td>
+
+      <td>
+        The latest modification date and time for the add-on.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_total_billing_cycles">plan_total_billing_cycles</span>
+      </td>
+
+      <td>
+        flat
+      </td>
+
+      <td>
+        The subscription add-on tier type.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_trial_interval_unit">plan_trial_interval_unit</span>
+      </td>
+
+      <td>
+        12345
+      </td>
+
+      <td>
+        Subscription add-on total amount in cents.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="plan_trial_interval_length">plan_trial_interval_length</span>
+      </td>
+
+      <td>
+        source1
+      </td>
+
+      <td>
+        Subscription add-on source.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="trial_requires_billing_info">trial_requires_billing_info</span>
+      </td>
+
+      <td>
+        false
+      </td>
+
+      <td>
+        Boolean flag to indicate whether the subscription add-on is tax inclusive.
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="recurring">recurring</span>
+      </td>
+
+      <td>
+        true/false
+      </td>
+
+      <td>
+        Indicates if this charge will be recurring
+      </td>
+
+      <td>
+        boolean
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="optional">optional</span>
+      </td>
+
+      <td>
+        true/false
+      </td>
+
+      <td>
+        Indicates if this charge will be recurring
+      </td>
+
+      <td>
+        boolean
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="tax_exempt">tax_exempt</span>
+      </td>
+
+      <td>
+        true/false
+      </td>
+
+      <td>
+        Indicates if this charge will be recurring
+      </td>
+
+      <td>
+        boolean
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="tax_code">tax_code</span>
+      </td>
+
+      <td>
+        P0000000, physical
+
+      </td>
+
+      <td>
+        Indicates if this charge will be recurring
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="general_ledger_liability_code">general_ledger_liability_code</span>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Revenue Recognition general ledger liability code
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # Version changelog
 
