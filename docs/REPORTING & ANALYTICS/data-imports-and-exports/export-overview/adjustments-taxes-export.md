@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisite
 
-One of our tax options must be enabled to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
+You must enable one of our tax integrations (Vertex, Avalara) to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
 
 # Definition
 
