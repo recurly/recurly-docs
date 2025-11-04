@@ -2561,6 +2561,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        We are adding support for Chargebacks to the gateway. Chargebacks are delivered via webhooks, but no additional configuration is necessary. Reach out to Recurly Support to enable them via a special feature flag.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        May 6
+      </td>
+
+      <td>
         **Hosted Page settings**
       </td>
 
