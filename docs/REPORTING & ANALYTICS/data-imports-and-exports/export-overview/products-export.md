@@ -22,6 +22,15 @@ The "Products" export provides comprehensive details of all product offerings, a
 
 * The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
+### **Product Type Filter**
+
+The Product type filter allows you to select existing plan, add on, setup fee, or item
+
+* **Plan**: Recurring billing products that define the billing frequency and the product's base price, allowing businesses to create a revenue model that provides consistent income.
+* **Add-on**: Additional features, services, or products that customers can purchase alongside their subscription plan.
+* **Setup fee**: One time initial fee.
+* **Item**: Collection of the sellable units of a business. This can include standalone products, services, or even add-ons
+
 ### &#x20;Export On Filters
 
 * **Created**: Product created within the chosen timeframe.
