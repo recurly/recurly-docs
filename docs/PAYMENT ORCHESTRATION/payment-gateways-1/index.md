@@ -65,7 +65,7 @@ Check Commerce specializes in ACH payment processing to offer alternative paymen
 
 ### Ebanx
 
-[Ebanx](https://docs.recurly.com/docs/ebanx-gateway#/) is a solutions provider specializing in expansion into international payment methods and regions. Expansion into India with UPI AutoPay for subscriptions is currently supported.
+[Ebanx](https://docs.recurly.com/docs/ebanx-gateway#/) is a solutions provider specializing in expansion into international payment methods and regions. Expansion into India with UPI AutoPay and LATAM with Pix Automatico and Mercado Pago for subscriptions is currently supported.
 
 ### GoCardless
 
