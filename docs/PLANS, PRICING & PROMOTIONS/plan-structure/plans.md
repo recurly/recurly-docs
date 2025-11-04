@@ -42,13 +42,15 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 # Creating a plan
 
-1. From your main plan page, navigate to Configuration→Plans. Click on "New Plan."
+## Step 1: Create a new plan
+
+From your main plan page, navigate to Configuration→Plans. Click on "New Plan."
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" className="border" />
 
-2. **Define** the following parameters:
+## Step 2:**Define** parameters
 
-**Plan Details**
+### **Plan Details**
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" className="border" />
 
@@ -56,7 +58,7 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 * **Plan Code**: This is your plan's unique identifier on Recurly. It's used in Hosted Payment Page URLs and API fetch requests. Limit to 25 alphanumeric characters.
 * **Plan Description**: Describe what the plan includes. This will appear on the subscriber's email invoice, if configured in email templates.
 
-**Plan Configuration**
+### **Plan Configuration**
 
 * **Currencies**: Choose which of your **enabled** currencies to include in your plan.
 
@@ -70,7 +72,7 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" className="border" />
 
-**Billing Configuration**
+### **Billing Configuration**
 
 <Image align="center" border={false} width="80% " src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" />
 
@@ -80,43 +82,81 @@ Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard<
 
 * **Billing cycles**: Decide to automatically renew or expire the subscription after a set number of billing periods in the “At end of subscription term” section.
 
-**Pricing Model**
+### **Pricing Model**
 
 * **Pricing model**: Set the pricing model that best suits the subscription. Choose from fixed or ramp, accordingly.
 * **Price**: Set a fixed price to charge to a plan's subscribers. For Quantity-Based Pricing, use Add-Ons.
 
 <Image align="center" border={false} width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
 
-* **Price segments**: Define different price points for your customer segments.  The Price and Price Segment Code can be used in our [APIs](https://recurly.com/developers/api/v2021-02-25/index.html) and [Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/) to help you show the right price for the right subscriber.  Note that there is no limit to the number of price segments per currency or per plan!
+### **Price segments**
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/0b6dafa93b032bc950f42ac7fd45158081101333cfb9526155d3b48a1d329fc3-priceSegments.png" className="border" />
+Use price segments to define different price points for a single plan within the same currency. This helps you A/B test pricing and avoid plan sprawl. A **default price** is always required and will be used whenever no segment code is provided.
 
-**Billing details**
+**Example (by location):**
+You own a gym and operating costs are higher in certain cities. Instead of cloning identical plans, create one plan with multiple price segments—e.g., `default`, `nyc`, `la`.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png" className="border" />
+
+#### How it works
+
+* Recurly **stores** all segment prices and the default price on the plan.
+* **You decide** which price to show or apply (geography, campaign, experiment bucket, etc.). Recurly does not choose the segment for you.
+* Segment price data (segment **code** and **price**) is returned in our v3 **[APIs](https://recurly.com/developers/api/v2021-02-25/index.html)** and **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** so your app or checkout can pick and display the intended price.
+
+#### Implement it (quick path)
+
+1. **Add segments on the plan.**
+   In the plan’s Pricing section, create one or more segments and set a default.
+2. **Decide your selection rule.**
+   For example: if `city=NYC` use segment `nyc`; if user is in test group `B`, use segment `exp-b`.
+3. **Expose the right price in your UI.**
+   **Fetch** the plan’s price segments via **[API](https://recurly.com/developers/api/v2021-02-25/index.html)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
+4. **Use the matching price at checkout.**
+   When creating the purchase/subscription, **apply the chosen segment’s price**. If you don’t provide a segment, the **default** price is used.
+
+> Tip: For A/B tests, name segments clearly (for example, `exp-a`, `exp-b`) and log the chosen segment code with your analytics event.
+
+#### Notes and limits for price segmentation
+
+* No limit to the number of price segments per currency.
+* Available **only on plans** (fixed and ramp).
+* **Not available** on setup fees, add-ons, items, or **Recurly Checkout**.
+* You can **add** segments to existing plans at any time.
+* After creation, **only the price** within a segment can be edited; the segment code stays the same.
+* The **segment code** is **not** shown on invoices or in email templates (it’s for your internal selection logic).
+
+#### Developer references
+
+* **v3 APIs:** Use the plan pricing returned by **[APIs](https://recurly.com/developers/api/v2021-02-25/index.html)** to select and apply the correct price segment.
+* **Recurly.js:** Surface the right price segment in your front end with **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)**.
+
+### **Billing details**
 
 <Image align="center" border={false} width="80% " src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" />
 
 * **Accounting code**: Select a unique code to identify plans in your internal invoice exports. This code should be configured based on your specific tax settings and compliance requirements. Limit to 25 lowercase alphanumeric characters.
 * **HS code/Commodity code**:  Enter a Harmonized System (HS) code or Commodity Code to meet invoice compliance requirements for traded products. Generally, HS Code consists of at least six digits, with countries adding more digits for further national or regional classification. Recurly limits to 25 lowercase alphanumeric characters.
 
-**Plan Add-ons**
+### **Plan Add-ons**
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" className="border" />
 
 * **Add-ons**: Optional products that can be included in a recurring subscription's invoices. Also supports Quantity-Based Pricing Models. You can add items from the Item Catalog to a plan.
 
-**Dunning Campaign**
+### **Dunning Campaign**
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" className="border" />
 
 * **Dunning campaign:** Select the dunning campaign for this plan.
 
-**Customer Emails**
+### **Customer Emails**
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" className="border" />
 
 * **Select the emails**: Check the boxes to enable email communication on specific matters. You can also modify and manage your templates on your Email Templates setting page.
 
-**Hosted Payment Pages**
+### **Hosted Payment Pages**
 
 * **Plan quantity can be edited**: Determine if subscribers can choose their own quantity on the Hosted Payment Pages.
 * **Return URL after Success**: After a successful transaction via the Hosted Page, redirect the customer to a specific URL.
