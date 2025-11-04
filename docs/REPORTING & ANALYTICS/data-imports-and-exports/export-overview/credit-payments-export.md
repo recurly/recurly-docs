@@ -12,6 +12,10 @@ metadata:
 next:
   description: ''
 ---
+### Prerequisite
+
+You must enable the credit invoices feature to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
+
 # Definition
 
 The Credit Payments Export section provides insights into credit payments, encompassing the use of outstanding credit balances to pay invoices. This export not only covers standard credit payments but also records write-offs, credit balance removals, and credit payments subsequently refunded as cash transactions. It becomes visible and populated if you have enabled the [Credit Invoices](https://docs.recurly.com/docs/credit-invoices-release) feature on your Recurly site.
@@ -41,7 +45,7 @@ The Credit Payments export can be pre-filtered based on the **Action** taken. Th
 
 ### Export on filters
 
-*  **Created** - lists all credit payments created within the selected timeframe.
+* **Created** - lists all credit payments created within the selected timeframe.
 * **Modified**- lists all credit payments modified during the selected timeframe. A credit payment's modified_at value is set upon creation and only updates when the credit payment is voided (voided_at value set) due to the invoice it was applied to being failed.
 
 ### Time range filters
