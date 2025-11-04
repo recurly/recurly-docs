@@ -16,7 +16,7 @@ This guide shows you how to use the <Anchor label="Purchase endpoint" target="_b
 
 * Familiarity with Recurly’s API, Webhooks, and basic REST concepts
 * <Anchor label="Completed the Quickstart Guide" target="_blank" href="https://docs.recurly.com/v1.1/docs/quick-start-guide#/">Completed the Quickstart Guide</Anchor>
-* Familiarity with Recurly.js value rendering
+* Familiarity with Recurly.js  
 * An Ebanx gateway account with Pix Automático is enabled
 
 ***
