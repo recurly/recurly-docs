@@ -4,7 +4,7 @@ excerpt: >-
   Create subscriptions via Purchase API using Pix Automático with QR code
   rendering and Ebanx sandbox simulation.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
