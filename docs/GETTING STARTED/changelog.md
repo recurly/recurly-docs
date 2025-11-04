@@ -2547,11 +2547,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the
-
-        [Third Party Checkout developer guide](https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html)
-
-        for more details.
+        Enabling Third Party Checkout: Stripe Elements with Klarna BNPL, Pay Now, and Pay Later, as well as iDeal payment methods. See the <a href="https://recurly.com/developers/guides/third-party-checkout-stripe-elements.html">Third Party Checkout developer guide</a> for more details.
       </td>
     </tr>
 
