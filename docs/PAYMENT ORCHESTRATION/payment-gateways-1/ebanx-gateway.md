@@ -1,5 +1,5 @@
 ---
-title: Ebanx (APAC)
+title: Ebanx (APAC and LATAM)
 excerpt: >-
   Ebanx Gateway: A secure and innovative payment platform enabling seamless
   transactions, advanced data analytics, and enhanced customer experiences for
@@ -33,27 +33,27 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### General Limitations
 
 * Ad-hoc or One-Time customer-initiated purchases and merchant-initiated Force Collections are not supported.
-* Recurly.js is not supported with UPI AutoPay. Use our API to facilitate requests.
+* Recurly.js is not supported with UPI AutoPay or Pix Automatico. Use our API to facilitate requests.
 * Refunds through Ebanx must be the **full** amount.
 * Chargebacks are not reflected / supported at this time.
 * See individual Payment Method pages for additional limitations.
 
 # Definition
 
-Ebanx is a full-service payment management platform focused on upcoming markets such as India. When configured with Recurly, it allows you to securely manage your transactions. You will need a relationship with Ebanx to enable this integration.
+Ebanx is a full-service payment management platform focused on upcoming markets such as India and Latin America. When configured with Recurly, it allows you to securely manage your transactions. You will need a relationship with Ebanx to enable this integration.
 
 # Key details
 
-| Feature                         | Description                                                                                                                                                                            |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Payment Processing, Subscriptions, [Automatic Subscription Cancellation](https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription) |
-| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions, Refunds                                                                                                                       |
-| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/)                                                                                                                           |
-| Supported Card Brands           | N/A                                                                                                                                                                                    |
-| Gateway Specific 3DS2 Supported | No                                                                                                                                                                                     |
-| Card On File Supported          | No                                                                                                                                                                                     |
-| Regions                         | India                                                                                                                                                                                  |
-| Currencies                      | INR                                                                                                                                                                                    |
+| Feature                         | Description                                                                                                                                                                                                                             |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Payment Processing, Subscriptions, [Automatic Subscription Cancellation](https://docs.recurly.com/recurly-subscriptions/docs/expire-subscription#/auto-cancellation-of-a-subscription)                                                  |
+| Supported Operations            | Subscription Mandate Enrollment, Recurring Transactions, Refunds                                                                                                                                                                        |
+| Supported Payment Types         | [UPI - AutoPay](https://docs.recurly.com/docs/upi-autopay#/), [Pix Automatico](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/), [Mercado Pago](https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/) |
+| Supported Card Brands           | N/A                                                                                                                                                                                                                                     |
+| Gateway Specific 3DS2 Supported | No                                                                                                                                                                                                                                      |
+| Card On File Supported          | No                                                                                                                                                                                                                                      |
+| Regions                         | UPI AutoCollect for India, Pix Automatico and Mercado Pago in Brazil, and Mercado Pago in Mexico, Chile, Uruguay, and Argentina.                                                                                                        |
+| Currencies                      | INR, BRL, ARS, CPL, MXN, or UYU                                                                                                                                                                                                         |
 
 # Configuring Ebanx in Recurly
 
@@ -83,12 +83,16 @@ Follow these steps to integrate Ebanx with Recurly. Ensure you use the correct s
 
 ## Step 3: Set Your Payment Methods
 
-* Under **Accepted Card Types**, you won’t see any card options since this gateway currently supports **UPI AutoPay** only.
-* Enable **UPI AutoPay** under **Alternative Payment Methods**.
+* Under **Accepted Card Types**, you won’t see any card options since this gateway currently supports regional APMs.
+* Enable **UPI AutoPay**, **Pix Automatico**, and/or **Mercado Pago**under **Alternative Payment Methods**.
 
 ## Step 4: Enable Currencies
 
-Recurly only supports INR, so no selection is necessary.
+Ensure you are enabling the correct currencies per payment method. 
+
+* UPI: INR Only
+* Pix Automatico: BRL Only
+* Mercado Pago: BRL, ARS, CPL, MXN, or UYU.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/1c0bc5faff0d392f4bb496f251bca479cdca5d1f461e9a5bf49865c97799879c-Ebanx-PaymentMethod-Currency.png" className="border" />
 
@@ -139,6 +143,8 @@ Ebanx sandbox URLs should point at Recurly sandbox sites, and the same goes for 
 Below you will find helpful Integration Guides for payment methods supported on Ebanx. As of today, only UPI AutoPay is available.
 
 * [UPI AutoPay Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/)
+* [Pix Automatico Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#)
+* [Mercado Pago Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide#/)
 
 ## Required Fields
 
@@ -147,7 +153,7 @@ Ebanx will require a minimum of fields to create a mandate for a recurring subsc
 ### UPI AutoPay
 
 * VPA (UPI AutoPay
-* Email Address
+* Customer Email Address
 * Customer First and Last Name
 * Customer Billing Address (Street Address, City, Region/State, Country, Postal Code / PIN Code)
   * Regional Mapping:
@@ -156,7 +162,17 @@ Ebanx will require a minimum of fields to create a mandate for a recurring subsc
     * State is the State or Union Territory in India (ex: MAHARASHTRA)
     * Postal Code is the PIN Code (ex: 110019)
     * Country is the Country (ex: IN)
-* Phone Number
+* Customer Phone Number
+
+## Pix Automatico and Mercado Pago
+
+These payment methods will require you always send certain data:
+
+* Customer Name 
+* Customer Billing Address
+* Customer Email Address
+* Customer Phone Number
+* Tax ID / Tax ID Type when the Region requires it (Brazil)
 
 ## Mandate Preferences
 
@@ -168,34 +184,36 @@ Payment methods on Ebanx use subscription-level **mandate IDs** assigned to a co
 
 ## Transaction, Invoice, and Subscription Status
 
-When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/), as with any asynchronous payment method in Recurly, subscriptions are immediately active, but transactions and invoices will be in a scheduled/processing state respectively until the pre-renewal notification receives an update and the payment is triggered. If customers do not authorize a subscription enrollment or payment via the UPI App, transactions will fail and subscriptions will be expired upon consumer rejection.
+When processing with  [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) and [Pix Automatico](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico#/), as with any asynchronous payment method in Recurly, subscriptions are immediately active, but transactions and invoices will be in a scheduled/processing state respectively until the pre-renewal notification receives an update and the payment is triggered. If customers do not authorize a subscription enrollment or payment via their respective Banking App, transactions will fail and subscriptions will be expired upon consumer rejection.
 
-See documentation for the payment method [UPI AutoPay](https://docs.recurly.com/docs/upi-autopay#/) for more information.
+See documentation for each payment method for more information.
 
 ## Subscriptions and Transactions Limitations
 
-There are certain behaviors that Ebanx APAC payment methods support -- they are listed below.
+There are certain behaviors that Ebanx payment methods support -- they are listed below.
 
 * Trial Subscriptions _with payment data_ -- trials without a prior UPI enrollment will not function. Force-converting is not supported.
 * Non-Trial Subscriptions
 * Renewals
 
-## Features that will not work with Ebanx
+## Features that will not work with Ebanx APMs
 
-### UPI AutoPay
+### General Limitations
 
-* Transaction type of Authorize and Capture, and Void. UPI AutoPay transactions must be refunded.
-* Subscription upgrades: Mandates stored on the UPI app control the amount and frequency. Changing this on the recurly side could cause declines.
+* Transaction type of Authorize and Capture, and Void. Ebanx transactions must be refunded.
+* Subscription upgrades: Mandates stored on a consumer's Bank app control the amount and frequency. Changing this on the recurly side could cause declines.
 * Trials without Payment data (payment data on file)
-* Non-Net-0 Terms: UPI must be charged on the specific day noted in the mandate, so terms above Net-0 can cause payment failures.
-* One-time transactions: VPAs cannot be used for one-time transactions, merchant or customer driven.
-* Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
-* Standard Retries: UPI can only be retried on the same day. UPI-specific retries are coming soon.
-* Account hierarchy: VPAs associated with a parent or child account will not be used in a recurring subscription – changing the hierarchy won’t affect existing subscriptions as a result.
+* Non-Net-0 Terms: Certain Ebanx APMs must be charged on the specific day noted in the mandate, so terms above Net-0 can cause payment failures.
+* One-time transactions are not supported at this time as these payment methods support renewals only, and cannot be used for one-time transactions, merchant or customer driven.
+* Account hierarchy: Mandates associated with a parent or child account will not be used in a recurring subscription – changing the hierarchy won’t affect existing subscriptions as a result.
 * Aggregated / Calendar Invoicing: Taking existing subscriptions and combining them is against mandate-regulations in India, and therefore cannot be allowed.
 * Bundling Subscriptions: See calendar aggregation.
 * Multiple Subscriptions on a Single Account: Each individual subscription uses a mandate ID, and only one mandate ID is allowed per account.
-* Merchant Admin-created Subscriptions: due to pre-debit notification and enrollment verification/consumer authentication that occurs in the UPI app, MIT subscription enrollments are not allowed per NPCI regulations in India.
+* Merchant Admin-created Subscriptions: due to pre-debit notification and enrollment verification/consumer authentication that occurs in the consumer's app, MIT subscription enrollments are not allowed per NPCI regulations in India and Brazilian / LATAM Banking institutions.
+
+### UPI / APAC Specific
+
+* Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
 * Retries: While planned, our standard issue retries on failed renewals are not supported due to NPCI regulations around retry rules. As these rules do not follow card-brand retry rules, UPI AutoPay transactions will not retry using basic or intelligent retry logic.
 
 # Troubleshooting FAQs
@@ -214,3 +232,7 @@ There are certain behaviors that Ebanx APAC payment methods support -- they are 
 ### **Q: A subscription renewal failed, and I cannot attempt collection. Why?**
 
 * **Merchant-initiated one-time transactions** such as one-time invoices and force collections aren’t supported with UPI AutoPay. Reach out to your customer about payment options.
+
+### Q: I converted a Pix Trial early and it declined. Why?
+
+* **Pix Automatico** transactions have a waiting period between consumer authentication and the start date you can charge the first renewal transaction. This is sent initially in the signup request and cannot be modified. It is best to avoid forced or early conversions for Trial subscriptions on Pix.
