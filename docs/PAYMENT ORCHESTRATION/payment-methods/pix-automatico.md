@@ -72,7 +72,7 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 Pix Automático will require you always send certain data:
 
-* Customer Billing Address
+* Customer Name Billing Address
 * Customer Email Address
 * Customer Phone Number
 * Tax ID / Tax ID Type when the Region requires it (Brazil)
