@@ -22,6 +22,11 @@ The "Products" export provides comprehensive details of all product offerings, a
 
 * The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
+### &#x20;Export On Filters
+
+* **Created**: Product created within the chosen timeframe.
+* **Modified**: Product altered in the specified period.
+
 ### Time range filters
 
 * The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
