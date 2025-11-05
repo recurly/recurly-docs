@@ -56,6 +56,7 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 ## Supported features
 
 * **Subscriptions** Customers can use their Pix wallet to sign up for subscriptions. If one-time transactions are necessary, Pix is not supported.
+  * We support **Journey 2** for Trial Subscriptions and **Journey 3** for Subscriptions with an immediate payment amount due.
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
