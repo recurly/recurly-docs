@@ -14,7 +14,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The "Products" export provides comprehensive details of all product offerings, add-ons and items, whether active or inactive.
+The "Products Catalog" export provides comprehensive details of all product offerings, add-ons and items, whether active or inactive.
 
 # Filters
 
@@ -83,6 +83,8 @@ The Product type filter allows you to select existing plan, add on, setup fee, o
 `}</HTMLBlock>
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
+
+Note: The unique identifier for each record is the combination of product_id, plan_id, and add_on_id. If an item type is configured as an add-on, it can be associated with multiple plans; in such cases, the same product_id is reused across those plans.
 
 <Table align={["left","left","left","left"]}>
   <thead>
@@ -473,7 +475,6 @@ To help you identify and organize information effectively, the export provides a
 
       <td>
         P0000000, physical
-
       </td>
 
       <td>
@@ -505,7 +506,7 @@ To help you identify and organize information effectively, the export provides a
 
     <tr>
       <td>
-
+        <span id="general_ledger_revenue_code">general_ledger_revenue_code</span>
       </td>
 
       <td>
@@ -513,35 +514,17 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
-
+        Revenue Recognition general ledger liability code
       </td>
 
       <td>
-
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-
-      </td>
-
-      <td>
-
-      </td>
-
-      <td>
-
-      </td>
-
-      <td>
-
+        string
       </td>
     </tr>
 
     <tr>
       <td>
-
+        <span id="performance_obligation_name">performance_obligation_name</span>
       </td>
 
       <td>
@@ -549,11 +532,175 @@ To help you identify and organize information effectively, the export provides a
       </td>
 
       <td>
+        Revenue Recognition general ledger liability code
+      </td>
 
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="accounting_code">accounting_code</span>
       </td>
 
       <td>
 
+      </td>
+
+      <td>
+        Revenue Recognition general ledger liability code
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="default_quantity">default_quantity</span>
+      </td>
+
+      <td>
+        1
+      </td>
+
+      <td>
+        Default quantity assigned to the product (default is 1)
+      </td>
+
+      <td>
+        int64
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="pricing_model">pricing_model</span>
+      </td>
+
+      <td>
+        fixed
+      </td>
+
+      <td>
+        This is the method the product is billed. Values include fixed, usage, tiered, ramp, volume, stairstep, percentage
+
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="currencies">currencies</span>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Json object of the currencies and associated prices
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="custom_fields">custom_fields</span>
+      </td>
+
+      <td>
+
+      </td>
+
+      <td>
+        Json object of any custom fields that are assigned to the product
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="state">state</span>
+      </td>
+
+      <td>
+        active, inactive
+      </td>
+
+      <td>
+        If the product is available in Recurly the state will be “active”, if the product has been deleted and is no longer available in Recurly then the state will be “inactive”.  It is possible for subscribers to have “inactive” products on their subscription 
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="created_at">created_at</span>
+      </td>
+
+      <td>
+        2025-11-12 08:23:34 UTC
+      </td>
+
+      <td>
+        Timestamp when the product was created
+      </td>
+
+      <td>
+        timestamp
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="modified_at">modified_at</span>
+      </td>
+
+      <td>
+        2025-11-12 08:23:34 UTC
+      </td>
+
+      <td>
+        Timestamp when the product was last modified
+      </td>
+
+      <td>
+        timestamp
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span id="deleted_at">deleted_at</span>
+      </td>
+
+      <td>
+        2025-11-12 08:23:34 UTC
+      </td>
+
+      <td>
+        Timestamp when the product was deleted
+
+      </td>
+
+      <td>
+        timestamp
       </td>
     </tr>
   </tbody>
