@@ -16,7 +16,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s API and basic REST concepts
-* [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/)
+* [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
 * Optional usage of [Recurly.js](https://developers.recurly.com/reference/recurly-js) to reduce PCI compliance scope
 
 ***
