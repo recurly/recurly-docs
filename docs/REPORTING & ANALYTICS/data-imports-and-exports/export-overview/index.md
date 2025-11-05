@@ -301,7 +301,7 @@ next:
 
     <tr>
       <td>
-        [Product Catalog](doc:items-associated-subscriptions)
+        [Product Catalog](doc:products-catalog-export)
       </td>
 
       <td>
