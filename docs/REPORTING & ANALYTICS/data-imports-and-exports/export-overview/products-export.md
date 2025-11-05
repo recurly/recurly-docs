@@ -1,6 +1,8 @@
 ---
 title: Products Catalog - export
-excerpt: Unlock detailed insights into your product catalog with the products export.
+excerpt: >-
+  Unlock detailed insights into your product catalog with the products catalog
+  export.
 deprecated: false
 hidden: true
 metadata:
@@ -222,7 +224,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        Platinum Plan
+        PS1234
       </td>
 
       <td>
@@ -240,7 +242,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        3c42a34d1442f840
+        Pink Sweater
       </td>
 
       <td>
@@ -258,7 +260,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        1
+        Sweater, color pink
       </td>
 
       <td>
@@ -276,11 +278,11 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        600
+        Gold
       </td>
 
       <td>
-        The unit cost of the add-on in the subscription, denominated in cents; it may differ from the plan's or item's default pricing.
+        If the product is associated with a plan or is a plan this is the code of the plan.
       </td>
 
       <td>
@@ -294,11 +296,11 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        USD
+        Gold Plan
       </td>
 
       <td>
-        The currency utilized for billing in this subscription.
+        If the product is associated with a plan or is a plan this is the name of the plan.
       </td>
 
       <td>
@@ -312,11 +314,12 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        2020-02-07 10:18:34 MST
+        months, weeks, days, years
+
       </td>
 
       <td>
-        The date and time when the add-on was created, a critical filter for defining the date range.
+        The interval type at which that plan is billed.
       </td>
 
       <td>
@@ -330,15 +333,16 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        2020-02-07 10:18:34 MST
+        30
+
       </td>
 
       <td>
-        The latest modification date and time for the add-on.
+        The length of the interval type at which the plan is billed at.
       </td>
 
       <td>
-        string
+        int64
       </td>
     </tr>
 
@@ -348,15 +352,15 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        flat
+        12
       </td>
 
       <td>
-        The subscription add-on tier type.
+        The total number of bill cycles that the plan will bill for 1 term.
       </td>
 
       <td>
-        string
+        int64
       </td>
     </tr>
 
@@ -366,11 +370,11 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        12345
+        months, weeks, days, years
       </td>
 
       <td>
-        Subscription add-on total amount in cents.
+        The interval type that indicates the duration of the trial.
       </td>
 
       <td>
@@ -384,11 +388,11 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        source1
+        12
       </td>
 
       <td>
-        Subscription add-on source.
+        The length of the interval type that sets the duration of the trial.
       </td>
 
       <td>
@@ -406,11 +410,11 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        Boolean flag to indicate whether the subscription add-on is tax inclusive.
+        Indicates if the trial requires billing info.
       </td>
 
       <td>
-        string
+        boolean
       </td>
     </tr>
 
@@ -442,7 +446,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        Indicates if this charge will be recurring
+        Indicates if this is required as part of a plan.
       </td>
 
       <td>
@@ -460,7 +464,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        Indicates if this charge will be recurring
+        Indicates if the product is tax exempt.
       </td>
 
       <td>
@@ -478,7 +482,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        Indicates if this charge will be recurring
+        Tax code is a field associated with the product that we send to Avalara for tax calculations. If you are using Recurly's EU VAT feature, you can use values of 'unknown', 'physical', or 'digital'. If you have your own Avalara AvaTax account configured, you can use Avalara tax codes to assign custom tax rules.
       </td>
 
       <td>
@@ -492,6 +496,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
+        default_liability
 
       </td>
 
@@ -510,11 +515,12 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
+        default_revenue
 
       </td>
 
       <td>
-        Revenue Recognition general ledger liability code
+        Revenue Recognition general ledger revenue code
       </td>
 
       <td>
@@ -528,11 +534,11 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-
+        Over Time (Daily)
       </td>
 
       <td>
-        Revenue Recognition general ledger liability code
+        Revenue Recognition performance obligation assigned to the product.
       </td>
 
       <td>
@@ -546,11 +552,12 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
+        jr_accounting_code
 
       </td>
 
       <td>
-        Revenue Recognition general ledger liability code
+        Optional accounting_code assigned to the product.
       </td>
 
       <td>
@@ -587,7 +594,6 @@ Note: The unique identifier for each record is the combination of product_id, pl
 
       <td>
         This is the method the product is billed. Values include fixed, usage, tiered, ramp, volume, stairstep, percentage
-
       </td>
 
       <td>
@@ -641,7 +647,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        If the product is available in Recurly the state will be “active”, if the product has been deleted and is no longer available in Recurly then the state will be “inactive”.  It is possible for subscribers to have “inactive” products on their subscription 
+        If the product is available in Recurly the state will be “active”, if the product has been deleted and is no longer available in Recurly then the state will be “inactive”.  It is possible for subscribers to have “inactive” products on their subscription
       </td>
 
       <td>
@@ -696,7 +702,6 @@ Note: The unique identifier for each record is the combination of product_id, pl
 
       <td>
         Timestamp when the product was deleted
-
       </td>
 
       <td>
