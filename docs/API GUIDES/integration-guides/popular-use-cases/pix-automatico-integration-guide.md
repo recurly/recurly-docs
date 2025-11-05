@@ -15,7 +15,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s API, Webhooks, and basic REST concepts
-* [Completed the Quickstart Guide](https://docs.recurly.com/v1.1/docs/quick-start-guide#/)
+* [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
 * Familiarity with Base64 value rendering
 * An Ebanx gateway account with Pix Automático is enabled
 
