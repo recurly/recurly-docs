@@ -301,6 +301,16 @@ next:
 
     <tr>
       <td>
+        [Product Catalog](doc:items-associated-subscriptions) 
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export)
       </td>
 
@@ -446,6 +456,7 @@ All exports default to using ZIP compression.
 3. Select the **Versions**, **Account status** and **Export on** filters
 4. Select **Time range** to  **Between** and **Start date** to May 1 and **End date** to May 31
 5. Click **Generate Export**
+6. Click **Download** in the Generated Exports List
 
 ### Example: All subscriptions that have expired
 
@@ -454,6 +465,7 @@ All exports default to using ZIP compression.
 3. Select the **Versions** filter
 4. Select **Time range** to  **All Time**
 5. Click **Generate Export**
+6. Click **Download** in the Generated Exports List
 
 ### Example: All coupons redeemed in July
 
@@ -461,7 +473,8 @@ All exports default to using ZIP compression.
 2. Select **Coupon Redemptions.**
 3. Select the **Versions** filter
 4. Select **Time range** to  **Between** and **Start date** to July 1 and **End date** to July 31
-5. Click **Generate Export.**
+5. Click **Generate Export**
+6. Click **Download** in the Generated Exports List
 
 ## Helpful tips: combining exports
 
