@@ -2,8 +2,8 @@
 title: Using Gateway Tokens and External NTIDs with Recurly APIs
 excerpt: >-
   Merchants who are self-importing or running CIT transactions through a point
-  of sale system can provide Recurly with the original NTID for use with future
-  renewals.
+  of sale system or other external means can provide Recurly with the original
+  NTID for use with future renewals.
 deprecated: false
 hidden: false
 metadata:
