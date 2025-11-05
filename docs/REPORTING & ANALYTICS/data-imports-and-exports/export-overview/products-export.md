@@ -154,7 +154,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        The Recurly unique identifier for the saved item, also denoting the add-on code.
+        The api_id of the add_on
       </td>
 
       <td>
@@ -172,7 +172,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        Optional external SKU of the saved item used in creating this add-on.
+        The Item Code maps to the user-specified unique ID of the item that was sold on this adjustment.
       </td>
 
       <td>
@@ -190,7 +190,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        The status of the item in your Recurly catalog, being either "enabled" or "disabled".
+        The type of product
       </td>
 
       <td>
@@ -208,7 +208,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        The Recurly unique identifier for the plan affiliated with this subscription.
+        The unique Recurly identifier of the saved product used to create the product.
       </td>
 
       <td>
@@ -226,7 +226,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        The contemporary name of the plan corresponding to this subscription.
+        The optional external SKU of the saved item used to create this add-on.
       </td>
 
       <td>
@@ -244,7 +244,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        Unique system-generated identifier for the subscription housing this item as an add-on.
+        The name of the saved product. This is also the name displayed on the invoice.
       </td>
 
       <td>
@@ -262,7 +262,7 @@ Note: The unique identifier for each record is the combination of product_id, pl
       </td>
 
       <td>
-        The count of add-ons integrated into the subscription for this item.
+        The description of the product.
       </td>
 
       <td>
