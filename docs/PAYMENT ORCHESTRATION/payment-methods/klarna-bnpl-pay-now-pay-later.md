@@ -19,6 +19,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * Recurly currently supports Klarna BNPL, Pay Now, and Pay Later transactions through Stripe, via Payment Elements (Third Party Checkout).
 * Your business must be B2C in order to accept Klarna payments (e.g. you are selling your goods and services to a consumer).
+* Leverage Third Party Checkout with: <a href="https://docs.recurly.com/docs/third-party-checkout/" target="_blank">Third Party Checkout: Stripe Elements</a> and <a href="https://docs.recurly.com/docs/overview-recurlyjs/" target="_blank">Recurly.js Overview</a> via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html" target="_blank">V3 API</a>.
 
 ### Limitations
 
@@ -78,10 +79,6 @@ Klarna maintains a list of prohibited and restricted business categories: <a hre
 Boost conversion by using Stripe’s Messaging Element to let buyers know that Klarna is available ahead of checking out. Stripe handles displaying relevant payment options in a legally and brand compliant way: <a href="https://docs.stripe.com/payments/payment-method-messaging" target="_blank">Payment Method Messaging Element | Stripe Documentation</a>.
 
 For advertising guidelines, see: <a href="https://docs.klarna.com/resources/legal-and-compliance/more-solutions-guidelines/ad-policies-for-klarna-advertisers/" target="_blank">Ad policies for Klarna advertisers</a>.
-
-#### API, Stripe Elements, and Recurly.js
-
-Leverage Third Party Checkout with: <a href="https://docs.recurly.com/docs/third-party-checkout/" target="_blank">Third Party Checkout: Stripe Elements</a> and <a href="https://docs.recurly.com/docs/overview-recurlyjs/" target="_blank">Recurly.js Overview</a> via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html" target="_blank">V3 API</a>.
 
 #### Sandbox testing
 
