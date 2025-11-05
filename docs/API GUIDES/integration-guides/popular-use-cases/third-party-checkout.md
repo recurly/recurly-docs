@@ -22,7 +22,7 @@ metadata:
 >
 > The integrator must have a functioning implementation of Stripe Elements in place in order to effectively use this guide. See Stripe Elements documentation and Recurly Recommendations below to get started.
 >
-> Additionally, you do not need to integrate to Stripe's APIs for Payment or Setup Intents. You must send the ctoken to Recurly once you have it.
+> Additionally, you do not need to integrate to Stripe's APIs for Payment or Setup Intents. You must send the ctoken to Recurly once you have it. Confirmation tokens (ctokens) can only be used once.
 
 For more information on the V3 API, see our [API Reference Hub](https://recurly.com/developers/api/).
 
