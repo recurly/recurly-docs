@@ -295,17 +295,17 @@ next:
       </td>
 
       <td>
-        All subscription add-ons created from a saved item in your Item Catalog.-
+        All subscription add-ons created from a saved item in your Item Catalog.
       </td>
     </tr>
 
     <tr>
       <td>
-        [Product Catalog](doc:items-associated-subscriptions) 
+        [Product Catalog](doc:items-associated-subscriptions)
       </td>
 
       <td>
-
+        Comprehensive details of all product offerings, add-ons and items, whether active or inactive.
       </td>
     </tr>
 
