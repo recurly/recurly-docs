@@ -14,7 +14,11 @@ next:
 
 ### Required plan
 
-This feature is no longer available for activation.
+> ⚠️ Revenue recognition schedules — export sunset — October 31, 2025.
+>
+> **Revenue recognition schedules — export was sunset on <strong>October 31, 2025</strong>.** Access remains read-only.
+>
+> Explore <a href="https://docs.recurly.com/recurly-revrec/docs/recurly-revenue-recognition-standalone#/" target="_blank" rel="noopener noreferrer">Recurly Revenue Recognition Standalone</a>.
 
 # Definition
 
