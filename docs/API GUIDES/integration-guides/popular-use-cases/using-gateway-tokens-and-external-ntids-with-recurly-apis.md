@@ -30,7 +30,7 @@ External payment implementations can capture customer data through a physical pa
 Before continuing with this guide, it’s recommended that you have completed the Quickstart Guide first.
 In this guide, we’ll be using the Accounts and Subscription endpoints of Recurly API, powerful endpoints designed to back signup and onboarding experiences. With these endpoints, you have the flexibility to create accounts and subscriptions with an external NTID for a future dated renewal.
 
-A subscription request can contain several different resources, but we’ll focus on the account references, gateway_token (legacy), gateway_code and network_transaction_id  parameters in this guide. 
+A subscription request can contain several different resources, but we’ll focus on the account references, gateway_token (legacy), gateway_code and network_transaction_id  parameters in this guide.
 
 Since `gateway_code` may be deprecated in the future, using `payment_gateway_references.token` is preferred.
 
@@ -46,7 +46,7 @@ Since `gateway_code` may be deprecated in the future, using `payment_gateway_ref
 
 ### Supported Endpoints
 
-Currently we only support this in the `/subscriptions` and `/purchases` endpoint when adding future-dated subscriptions. 
+Currently we only support this in the `/subscriptions` and `/purchases` endpoint when adding future-dated subscriptions.
 
 ### Required Feature Flags
 
@@ -95,13 +95,21 @@ It’s recommended, at this point, to store the billing info ID for the next ste
             "postal_code": "60601",
             "country": "US"
         },
-        "gateway_token":"token-here"
+        "gateway_token":"token-here" // Deprecated Parameter
     }
 }
 
 ```
 
-## Step 3: Create a Subscription Request 
+**Note:** In place of the gateway_token parameter you may pass the payment_gateway_references.token value instead.
+
+```json
+"payment_gateway_references": [{
+	"token": "gateway-token-here",
+}]
+```
+
+## Step 3: Create a Subscription Request
 
 Next, we’ll make a request to the subscription endpoint, passing in the customer account and billing information (using the gateway token from above), along with one or more subscription plan codes. In the example below, one subscription is generated using the plan code created in the Quickstart Guide.
 
@@ -124,7 +132,7 @@ Updating an existing subscription is not supported at this time.
 }
 ```
 
-If you are using the `/purchases` endpoint, the logic is much the same, though the payload is slightly different. 
+If you are using the `/purchases` endpoint, the logic is much the same, though the payload is slightly different.
 
 **Endpoint**: `/purchases`
 
