@@ -35,6 +35,7 @@ By integrating GoCardless with your Recurly account, you can enhance your busine
 
 * International Transactions: Easily conduct transactions across borders leveraging various global direct debit schemes supported by GoCardless.
 * Recurly Subscriptions: Seamlessly integrate Recurly’s subscription platform with GoCardless for straightforward BACS transactions.
+* Coupons are supported however, **100% coupons during signup cannot be supported** as billing agreement creation is a requirement for this payment method. Please use a free trial option instead where supported.
 
 # Checkout flow
 
