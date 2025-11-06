@@ -33,6 +33,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * Supports transactions in multiple currencies as specified by Amazon Pay.
 * The integration process requires setting up with Amazon Pay and Recurly.js and demands technical proficiency.
+* Coupons are supported however, **100% coupons during signup cannot be supported** as billing agreement creation is a requirement for this payment method. Please use a free trial option instead.
 
 # Description
 
