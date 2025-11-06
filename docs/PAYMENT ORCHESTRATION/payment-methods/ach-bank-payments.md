@@ -30,6 +30,7 @@ Recurly currently supports ACH transactions through [Adyen](https://docs.recurly
 * ACH has a varying processing time and a series of invoice states, ranging from pending to scheduled to processed, with each stage holding its implications and possible actions.
 * ACH transactions cannot be voided via API. This action is only supported in the UI.
 * Automatic [NACHA Verification for bank accounts](https://docs.recurly.com/recurly-subscriptions/docs/nacha-verification#/) is not available on all gateways. Please visit our dedicated page for options for your gateway to maintain compliance.
+* Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead where supported.
 
 # Definition
 
