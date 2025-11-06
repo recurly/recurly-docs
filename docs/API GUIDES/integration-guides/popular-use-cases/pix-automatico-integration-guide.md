@@ -284,7 +284,13 @@ If you do not want to use the redirect url for Pix Enrollment and Transaction Au
 
 **Enrollments**
 
-Pix Recurring subscriptions require an enrollment. You can simulate enrollment confirmations, expirations, or revocations.
+Pix Recurring subscriptions require an enrollment. You can simulate enrollment confirmations, expirations, or revocations. 
+
+**Note**: To obtain the `merchant_enrollment_code` value, use the [Fetch a Subscription](https://recurly.com/developers/api/v2021-02-25/#operation/get_subscription) endpoint to obtain the subscription UUID using the `subscription_id` value returned in the initial purchase call.
+
+Example: `GET: https://v3.recurly.com/subscriptions/subscription-id-here`
+
+**Enrollment Endpoint**
 
 Endpoint: `https://sandbox.ebanx.com/ws/simulator/userenrollment`
 
