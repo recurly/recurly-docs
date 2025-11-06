@@ -27,6 +27,10 @@ Through the effective integration of GoCardless, Stripe, and Recurly, enhance yo
 * Global transactions: Facilitate cross-border transactions effortlessly through the diverse range of global direct debit schemes supported by GoCardless  and Stripe.
 * Recurly Subscription Plans: Simplify BECS transactions by using the Recurly subscription platform with GoCardless and Stripe.
 
+### Limitations 
+
+* Coupons are supported however, **100% coupons during signup cannot be supported** as billing agreement creation is a requirement for this payment method. Please use a free trial option instead where supported.
+
 # Checkout flow
 
 During the checkout, ensure the capture of requisite customer information including a comprehensive address for certain payment options like ACH.
