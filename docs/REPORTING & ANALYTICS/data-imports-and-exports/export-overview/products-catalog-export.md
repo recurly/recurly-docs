@@ -4,7 +4,7 @@ excerpt: >-
   Unlock detailed insights into your product catalog with the products catalog
   export.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
