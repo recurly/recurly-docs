@@ -67,7 +67,7 @@ When a merchant is initiating a payment, such as a renewal, a force collection, 
 
 * [Stripe / Klarna Recurring Payment support](https://docs.stripe.com/payments/klarna#recurring-payment-support)
 
-Stripe / Klarna handle refunds for partially corrected
+Stripe / Klarna handle refunds for partially collected BNPL payments.
 
 #### Customer locations and presentment currencies
 
