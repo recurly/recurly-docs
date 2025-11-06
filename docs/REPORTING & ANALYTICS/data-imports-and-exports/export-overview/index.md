@@ -299,16 +299,6 @@ next:
 
     <tr>
       <td>
-        [Product Catalog](doc:products-catalog-export)
-      </td>
-
-      <td>
-        Comprehensive details of all product offerings, add-ons and items, whether active or inactive.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
         [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export)
       </td>
 
