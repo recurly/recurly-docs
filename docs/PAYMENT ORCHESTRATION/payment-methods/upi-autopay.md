@@ -48,6 +48,7 @@ UPI AutoPay is specifically designed for subscriptions, and subscriptions only. 
 * Adding a subscription through the UI: Since UPI requires a customer in session to confirm the subscription, this is not recommended.
 * Changing billing information: Recurly will store the consumer's VPA for future subscriptions, but the billing information is stored within the UPI App itself, not with the gateway or Recurly.
 * Changing the renewal date defined by the mandate: If a customer wants to change their renewal date, they need to resubscribe and confirm a new mandate. UPI mandates are strict about the date we can charge the consumer, and so modifications of the date after enrollment are not recommended as declines will occur. This includes using Calendar billing / aggregation features.
+* Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead.
 
 ## What can users do within the UPI App?
 
@@ -60,7 +61,7 @@ They also receive a **pre-debit push notification** within their UPI application
 <Callout icon="📘" theme="info">
   **Pre-Debit Push Notification and Transaction Timing**
 
-  The pre-debit notification will be sent on invoice creation, so the transaction will remain in a scheduled state for several days before the payment is sent to allow for RBI mandate timeframes to pass. 
+  The pre-debit notification will be sent on invoice creation, so the transaction will remain in a scheduled state for several days before the payment is sent to allow for RBI mandate timeframes to pass.
 </Callout>
 
 They can also receive 2FA requests for amounts higher than 15k INR, which will appear as a push notification for confirmation and authorization per the specific UPI App's design.
