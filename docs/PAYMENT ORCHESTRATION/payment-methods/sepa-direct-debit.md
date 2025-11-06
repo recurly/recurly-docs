@@ -27,6 +27,7 @@ Recurly currently supports SEPA transactions through [Adyen ](https://docs.recur
 
 * **Currency:** SEPA exclusively processes transactions denominated in EUR.
 * **Customer notification:** Every time a debit occurs, merchants are required to notify their customers — a function automatically handled by Recurly through email notifications.
+* Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead where supported (WorldPay).
 
 # Description
 
@@ -45,4 +46,4 @@ Consistent with the SEPA Direct Debit rulebook, merchants are mandated to notify
 
 Collect essential customer details, including their name and bank account number in IBAN format, during the checkout process to facilitate SEPA Direct Debit transactions.
 
-Recurring SEPA payments can be leveraged even when the first transaction is handled through a different payment method that *does not* support recurring billing, such as iDeal and Sofort.
+Recurring SEPA payments can be leveraged even when the first transaction is handled through a different payment method that _does not_ support recurring billing, such as iDeal and Sofort.
