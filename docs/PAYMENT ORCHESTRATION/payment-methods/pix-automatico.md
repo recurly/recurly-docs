@@ -44,6 +44,7 @@ Recurly currently supports Pix Automático transactions on Ebanx gateway.
   * Multiple Subscriptions per Account is not supported
   * Proration during a Subscription Upgrade or change is not supported
   * Funds verification and Wallet payment instrument visibility are not supported
+  * Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead.
 
 # Description
 
