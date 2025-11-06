@@ -36,10 +36,11 @@ Recurly currently supports Cash App transactions on [Adyen](https://docs.recurly
 
 * Supports transactions in USD currency only as specified by Cash App.
 * The integration process requires setting up with Adyen  and Recurly.js or Stripe and Stripe Payment Elements and demands technical proficiency.
+* Coupons are supported however, **100% coupons during signup cannot be supported** as token creation is a requirement for this payment method. Please use a free trial option instead.
 
 # Description
 
-Cash App Pay simplifies how consumers pay for goods and services on your site and beyond.\
+Cash App Pay simplifies how consumers pay for goods and services on your site and beyond.  
 Available for use with Recurly.js for subscription signups for ecommerce Merchants, this contactless payment method is fast, easy, and simple.
 
 # Key details
