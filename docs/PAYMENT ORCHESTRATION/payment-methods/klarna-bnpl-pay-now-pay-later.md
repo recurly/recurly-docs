@@ -32,7 +32,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 Klarna is a global payment method popular for its buy now, pay later (BNPL) service and other flexible payment options. It allows customers to split purchases into 3 or 4 installments, pay in 30 days, or pay in full, offering a variety of interest-free options for managing online shopping costs.
 
-Klarna is liable for consumer credit risk.
+Klarna is liable for consumer credit risk and has the authority to request additional credit checks for new subscriptions.
 
 # Checkout flow
 
