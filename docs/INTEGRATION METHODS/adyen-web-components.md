@@ -16,6 +16,7 @@ Adyen offers powerful tools to support quick and dynamic consumer checkout solut
 
 * Requires a working Recurly.js integration and V3 API integration.
 * Does **not** support Adyen’s app (iOS/Android) components or React/Native SDKs—only the Web Components for the listed payment methods are supported.
+* 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures.
 
 # Definition
 
@@ -36,7 +37,7 @@ Adyen Web Components are customizable UI elements for various payment methods. W
 * Customers may update billing info through Adyen Components or via Recurly’s other payment solutions (Checkout, HPP, Recurly.js).
 * Explore Adyen’s live demo: [Adyen Web Components Demo](https://www.mystoredemo.io/#/checkout)
 
-<Image align="center" className="border" border={true} width="300px" src="https://files.readme.io/2e5c1d8c261f4d9d718ee6da88a975fdb279a0b8d951aa48112cbc179c42c1ba-Screenshot_2025-05-13_at_3.55.51_PM.png" />
+<Image align="center" border={true} width="300px" src="https://files.readme.io/2e5c1d8c261f4d9d718ee6da88a975fdb279a0b8d951aa48112cbc179c42c1ba-Screenshot_2025-05-13_at_3.55.51_PM.png" className="border" />
 
 Read more in our [Developer Hub guide](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/third-party-checkout-guide-adyen-components#/).
 
