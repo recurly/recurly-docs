@@ -18,6 +18,7 @@ This guide walks you through how to connect your Adyen Web Components integratio
 * A working Adyen Components integration using the **Advanced Flow** (Cards, Cash App Pay, Google Pay, Apple Pay, ACH, SEPA, BACS, iDeal, and Bancontact).
 * Recurly.js loaded on your page and initialized per our [Recurly.js documentation](/developers/reference/recurly-js).
 * Access to your Recurly V3 API credentials and a Recurly site configured to accept vault‑enabled payments.
+* 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures.
 * **Not supported**: Adyen Sessions flow or non‑Web Components.
 * **Supported payment methods**:
 
@@ -149,7 +150,7 @@ Authorization: Bearer YOUR_API_KEY
 
 ## Step 5: Handle the purchase response
 
-– On success, Recurly returns an `InvoiceCollection` containing any charge or credit invoices created.\
+– On success, Recurly returns an `InvoiceCollection` containing any charge or credit invoices created.  
 – On error, inspect the response code and message for validation or gateway issues, and surface them to the user.
 
 ***
