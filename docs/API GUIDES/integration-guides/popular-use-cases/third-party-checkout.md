@@ -13,6 +13,7 @@ metadata:
 * An existing Stripe account with Stripe Elements enabled.
 * A functional implementation of Stripe Payment Element (or Card Element) is required prior to following this guide.
 * This guide focuses on Recurly’s V3 API. Refer to the [API Rerefence Hub](https://recurly.com/developers/api/) for more details.
+* 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures.
 
 ***
 
@@ -90,7 +91,7 @@ Mode `setup` should be used when a customer wishes to sign up for a free trial s
 
 ### Klarna Enablement in Elements
 
-For Klarna Compliance, please see documentation at Stripe: [Stripe x Klarna Compliance](https://docs.stripe.com/payments/klarna/compliance) . There are specific flows, including handling declines related to a Klarna credit check, that you will want to build into your integration. This would manifest as a decline from Stripe where you would want to redirect the customer back to Elements if the decline was using a stored Klarna token. 
+For Klarna Compliance, please see documentation at Stripe: [Stripe x Klarna Compliance](https://docs.stripe.com/payments/klarna/compliance) . There are specific flows, including handling declines related to a Klarna credit check, that you will want to build into your integration. This would manifest as a decline from Stripe where you would want to redirect the customer back to Elements if the decline was using a stored Klarna token.
 
 ### Configuring capture method
 
