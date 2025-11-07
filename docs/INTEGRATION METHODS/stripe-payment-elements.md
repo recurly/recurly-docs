@@ -17,6 +17,7 @@ Stripe offers powerful tools to support quick and dynamic consumer checkout solu
 * Requires a working Recurly V3 API integration and Recurly.js setup.
 * Some Stripe payment methods and APMs are restricted by merchant country—if you don’t see a method in your Stripe Dashboard, your account’s country may not qualify to enable it (e.g. Revolut is available only in the UK/EU).
 * Stripe Payment Links, Stripe Checkout, and Radar are not supported through this integration.
+* 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures.
 
 # Definition
 
@@ -36,7 +37,7 @@ Stripe Payment Elements lets you build a fully branded checkout UI using Stripe�
 * Allow customers to update their billing information through Stripe Elements or existing Recurly solutions (Checkout, HPP, Recurly.js).
 * Preview Stripe Elements capabilities on Stripe’s demo site: [https://checkout.stripe.dev/elements](https://checkout.stripe.dev/elements)
 
-<Image align="center" className="border" border={true} width="300px" src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" />
+<Image align="center" border={true} width="300px" src="https://files.readme.io/bd6ee4314c74650eada8d5e8a62c0318b14857d22b69644925b570645a5a4e61-Stripe_Payment_element.png" className="border" />
 
 Read more about enabling Stripe Payment Elements in the [Developer Hub guide](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/third-party-checkout#/).
 
