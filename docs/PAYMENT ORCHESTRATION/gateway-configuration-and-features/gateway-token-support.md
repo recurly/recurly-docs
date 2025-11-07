@@ -27,7 +27,7 @@ To use gateway tokens from a supported provider—or to import existing tokens�
 </Callout>
 
 * If only a **gateway token** is present, **gateway failover** to other providers is not possible.
-* **Imported tokens** typically do **not** display full payment‑method details and are treated as generic tokens. Imported tokens are defined as tokens imported via our Professional Services team, or if you are providing gateway tokens via API and are not. utilizing our built in Recurly.js or API features. This may preclude generic and imported tokens from certain behaviors that non-imported tokens enjoy. 
+* **Imported tokens** typically do **not** display full payment‑method details and are treated as generic tokens. Imported tokens are defined as tokens imported via our Professional Services team, or if you are providing gateway tokens via API and are not. utilizing our built in Recurly.js or API features. This may preclude generic and imported tokens from certain behaviors that non-imported tokens enjoy.
 * If _only_ a **gateway token** is present for cards, typical with imports, **Account Updater** facilitated by Recurly cannot used. You will want to speak to your gateway provider about Account Updater availability.
 
 ## Definitions
@@ -38,7 +38,7 @@ Recurly also works with other token types in order to support complex payments s
 
 * **Network tokens**: Card tokens issued by a card network (e.g., Visa) that can be used across multiple gateways. They are not bound to a single gateway.
 * **Gateway tokens**: Tokens issued by a specific gateway. They can represent many payment instruments (cards, bank details, wallets) but are usable only with the issuing provider. **Example:** Adyen gateway tokens can only be used via Adyen—not Stripe or Braintree.
-* **One‑time tokens**: Ephemeral tokens used once, typically to move sensitive data from your site to Recurly via API during checkout flows. They cannot be stored for renewals. **Examples:** Recurly.js tokens, Stripe confirmation tokens (Payment Elements), Braintree nonces, Adyen State Data (from Web Components), etc. 
+* **One‑time tokens**: Ephemeral tokens used once, typically to move sensitive data from your site to Recurly via API during checkout flows. They cannot be stored for renewals. **Examples:** Recurly.js tokens, Stripe confirmation tokens (Payment Elements), Braintree nonces, Adyen State Data (from Web Components), etc.
 
 ## Key benefits
 
@@ -51,7 +51,7 @@ Recurly also works with other token types in order to support complex payments s
 
 * Keep the actual payment instrument under your gateway’s control; if you use the gateway’s Account Updater, details remain current.
 * Trade‑off: portability is very limited. Some Recurly features that require the full instrument may be unavailable. See **Limitations** above.
-* Certain payment methods must be tokenized, thus enabling greater payment method acceptance. 
+* Certain payment methods must be tokenized, thus enabling greater payment method acceptance.
 * Certain gateways tie behind-the-scenes behavior to the use of gateway tokens, encouraging usage.
 
 **One‑time tokens**
@@ -80,7 +80,7 @@ Recurly supports Stripe **confirmation tokens (c_tokens)** and exchanges them fo
 
 Depending on your gateway configuration, Recurly can create Braintree tokens for future use, but does not do so by default unless required by the payment method (PayPal, Venmo).
 
-With Recurly.js or hosted pages (e.g., Checkout), Recurly creates a **nonce** (one‑time token) that can be exchanged for a reusable Braintree token for renewals where desired or required. 
+With Recurly.js or hosted pages (e.g., Checkout), Recurly creates a **nonce** (one‑time token) that can be exchanged for a reusable Braintree token for renewals where desired or required.
 
 If you wish to automatically vault tokens in Braintree with Recurly, see [Configuration Steps for Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/step-2-configure-braintree-in-recurly).
 
@@ -92,7 +92,11 @@ With native Recurly checkout flows, only **non‑card** methods are tokenized by
 
 ### Vantiv
 
-Imported **card tokens** are supported; Recurly does **not** tokenize cards with Vantiv. For imported tokens, Recurly does not have raw PAN, so failover/orchestration to other gateways is unavailable. In these cases, the definition and limitations for **imported tokens** applies here.
+Imported **card tokens** can be used, but can experience a degraded performance as they remain generic in our system; Recurly does **not** tokenize cards with Vantiv automatically. For imported tokens, Recurly does not have raw PAN, so failover/orchestration to other gateways is unavailable. In these cases, the definition and limitations for **imported tokens** applies here. If you are running renewals with Vantiv tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
+
+### CommerceHub / Fiserv 
+
+Imported Fiserv Transarmour tokens can be used, but can also experience a degraded performance. If you are running renewals with CommerceHub tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
 
 ### Amazon
 
