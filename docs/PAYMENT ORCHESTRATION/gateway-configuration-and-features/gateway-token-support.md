@@ -76,6 +76,8 @@ All payment methods are tokenized; Recurly also retains card data. With **Paymen
 
 Recurly supports Stripe **confirmation tokens (c_tokens)** and exchanges them for reusable **Payment Method IDs** (Stripe gateway tokens). Recurly receives gateway tokens from Stripe only on approved payments.
 
+If you are importing Stripe tokens, these methods are generic and may experience a degraded performance. If you are running card renewals with Stripe tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
+
 ### Braintree
 
 Depending on your gateway configuration, Recurly can create Braintree tokens for future use, but does not do so by default unless required by the payment method (PayPal, Venmo).
@@ -86,9 +88,13 @@ If you wish to automatically vault tokens in Braintree with Recurly, see [Config
 
 Braintree does not support PayPal Billing Agreement IDs and will not process them.
 
+If you are importing Braintree tokens, these methods are generic and may experience a degraded performance. If you are running card renewals with Braintree tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
+
 ### Adyen
 
-With native Recurly checkout flows, only **non‑card** methods are tokenized by default. However, with **Adyen Components** + Recurly.js, **all** supported methods are tokenized. If you are looking to use an Adyen feature that requires tokenization, such as Network Tokens, using our [Third Party Checkout for Web Components](https://docs.recurly.com/recurly-subscriptions/docs/third-party-checkout-guide-adyen-components#/) support is recommended.
+With native Recurly checkout flows (API with raw data, Recurly.js, Hosted pages), only **non‑card** methods are tokenized by default. However, with **Adyen Components** + Recurly.js, **all** supported methods are tokenized. If you are looking to use an Adyen feature that requires tokenization, such as Network Tokens, using our [Third Party Checkout for Web Components](https://docs.recurly.com/recurly-subscriptions/docs/third-party-checkout-guide-adyen-components#/) support is recommended.
+
+If you are importing Adyen tokens, these methods are generic and may experience a degraded performance. If you are running card renewals with Adyen tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
 
 ### Vantiv
 
