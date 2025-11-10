@@ -1,4 +1,5 @@
 - third-party-checkout
+- third-party-checkout-guide-adyen-components
 - pix-automatico-integration-guide
 - upi-autopay-integration-guide
 - mercado-pago-integration-guide
@@ -7,7 +8,6 @@
 - using-3d-secure-with-stored-billing-information
 - e-mandates-with-cards-in-india
 - purchase-transaction
-- third-party-checkout-guide-adyen-components
 - moto-mail-order-telephone-order-guide
 - using-gateway-tokens-and-external-ntids-with-recurly-apis
 - co-badged-cards-guide
