@@ -27,15 +27,15 @@ First Data is a comprehensive payment gateway solution. Recurly supports integra
 
 # Key details
 
-| Features                        | Description / Availability                                |
-| ------------------------------- | --------------------------------------------------------- |
-| Services that work with Recurly | Payment processing                                        |
-| Supported operations            | Payment, Auth and Capture, Void, Refund                   |
-| Supported payment types         | Credit Card, Debit Card                                   |
-| Supported card brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club        |
-| Gateway Specific 3DS2 Supported | No                                                        |
-| Regions                         | United States                                             |
-| Currencies                      | Multiple, including AUD, CAD, EUR, GBP, NZD, PLN, and USD |
+| Features                        | Description / Availability                                                                                                      |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Payment processing, Subscriptions, [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)   Processing |
+| Supported operations            | Payment, Auth and Capture, Void, Refund                                                                                         |
+| Supported payment types         | Credit Card, Debit Card                                                                                                         |
+| Supported card brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club                                                                              |
+| Gateway Specific 3DS2 Supported | No                                                                                                                              |
+| Regions                         | United States                                                                                                                   |
+| Currencies                      | Multiple, including AUD, CAD, EUR, GBP, NZD, PLN, and USD                                                                       |
 
 ## Setting Up First Data GGe4 Gateway with Recurly
 
@@ -55,8 +55,8 @@ For detailed steps, refer to the First Data [docs on Results API](https://suppor
 ### Important Notes:
 
 * **'Results API' credentials expire every 60 days.** It is critical to update these credentials before they expire to maintain uninterrupted service.
-* **Failure to update the 'Results API' credentials will result in requests returning an 'invalid\_credentials' error.** If 12 of these erroneous requests are made in 15 minutes, the entire integration may be suspended due to an "IP-Lockout" scenario.\
-  For further details, refer to First Data’s [documentation on creating an account](https://support.payeezy.com/hc/en-us/articles/203731249-Real-time-Payment-Manager-RPM-User-Guide#3). 
+* **Failure to update the 'Results API' credentials will result in requests returning an 'invalid_credentials' error.** If 12 of these erroneous requests are made in 15 minutes, the entire integration may be suspended due to an "IP-Lockout" scenario.  
+  For further details, refer to First Data’s [documentation on creating an account](https://support.payeezy.com/hc/en-us/articles/203731249-Real-time-Payment-Manager-RPM-User-Guide#3).
 
 ## AVS Settings
 
@@ -89,7 +89,7 @@ When adding a new credit card in Recurly, a transaction is created, and the give
 
 ### Step 3: Configure AVS Settings (Optional but Recommended)
 
-* Under the AVS settings section, select your desired AVS matching level: 
+* Under the AVS settings section, select your desired AVS matching level:
   * **Full Match Required**
   * **Partial Match Allowed**
   * **No AVS Match Required**
@@ -102,7 +102,7 @@ When adding a new credit card in Recurly, a transaction is created, and the give
 ### Step 5: Test and Verify
 
 * Perform a test transaction to ensure the integration is functioning as expected.
-* Monitor and review the transaction status and logs in Recurly.\
+* Monitor and review the transaction status and logs in Recurly.  
   **Please Note:** Be vigilant about updating the 'Results API' credentials, which expire every 60 days. Set a recurring calendar reminder to ensure continuity.
 
 # How to Set Up a Read-Only User for the Results API in First Data GGe4 Gateway
