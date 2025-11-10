@@ -66,9 +66,8 @@ Compass Assistant will also detect when you want to help from our Support team o
 
 # Manage conversations
 
-**Select** New chat to start a new conversation with its own context.
-
-Open **Chat history** to view your previous conversations. Select any conversation to reload it and continue the thread. Your follow-up questions will use that conversation’s context.
+1. **New chat:** **Select** **New chat** to start a new conversation with its own context.
+2. **Chat history:** **Open** **Chat history** to view your previous conversations. **Select** any conversation to reload it and continue the thread. Your follow-up questions will use that conversation’s context.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/122898367f3220ee968348c7e06f0778c3bfeb3fe919f7a2a87354ba9d895b81-image.png" className="border" />
 
