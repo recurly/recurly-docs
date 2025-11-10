@@ -39,24 +39,26 @@ Many gateways support MOTO transactions including Adyen, Braintree, Chase Orbita
 
 In cases with gateways like Adyen, while MOTO transactions are supported, they often require the completion of additional documentation. As a precaution, it's always wise to speak with your gateway to clarify any concerns.
 
-# Gateway configuration
+# How to process MOTO Transactions
+
+## Gateway configuration
 
 To begin, follow these steps:
 
 1. **Contact your Gateway:** Ensure you have MOTO transactions enabled.
 2. **Documentation (if necessary):** Complete any paperwork your gateway requires. Certain gateways require additional documentation – please complete this step to avoid errors in processing.
 
-# Recurly Configuration:
+## Recurly Configuration
 
 Optional enablement of MOTO can be completed on _certain_ gateways via the following steps:
 
-1. From the Recurly Admin UI, select Configuration→Payment Gateways from the menu on the left.
-2. Select Options→Edit for the appropriate gateway instance.
-3. Select the MOTO configuration button and save changes.
+1. From the Recurly Admin UI, **select** Configuration → Payment Gateways from the menu on the left.
+2. **Select** Options → **Edit** for the appropriate gateway instance.
+3. **Select** the MOTO configuration button and save changes.
 
 If you are using Gateway Routing, ensure you are routing to the proper gateways to avoid errors in processing.
 
-<Image border={false} src="https://files.readme.io/462fcc3-MOTO_enable.gif" title="MOTO enable.gif" />
+<Image align="center" border={true} src="https://files.readme.io/462fcc3-MOTO_enable.gif" title="MOTO enable.gif" className="border" />
 
 ### Can I use MOTO transactions if my customer is in session on my website?
 
