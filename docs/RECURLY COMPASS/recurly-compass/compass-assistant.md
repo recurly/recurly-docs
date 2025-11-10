@@ -66,19 +66,17 @@ Compass Assistant will also detect when you want to help from our Support team o
 
 # Manage conversations
 
-1. **New chat:** **Select** **New chat** to start a new conversation with its own context. 
+1. **New chat:** **Select** **New chat** to start a new conversation with its own context.
 
-   <Image border={false} src="https://files.readme.io/1b1773bc0b56daf683f2c8e5b0500a1e2d6a44569db5e49cee1467d2de5c2d3e-image.png" />
-2. **Chat history:** **Open** **Chat history** to view your previous conversations. 
+<Image align="center" border={true} src="https://files.readme.io/1b1773bc0b56daf683f2c8e5b0500a1e2d6a44569db5e49cee1467d2de5c2d3e-image.png" className="border" />
 
-   <Image border={false} src="https://files.readme.io/a0ed09369bb2235544b76993590d3bbe2b5db8e03bcf7883deb74625a5edfa60-image.png" />
+2. **Chat history:** **Open** **Chat history** to view your previous conversations.
+
+<Image align="center" border={true} src="https://files.readme.io/a0ed09369bb2235544b76993590d3bbe2b5db8e03bcf7883deb74625a5edfa60-image.png" className="border" />
+
 3. **Select** any conversation to reload it and continue the thread. Your follow-up questions will use that conversation’s context.
 
-<Image border={false} src="https://files.readme.io/94fe0d2584148dd627991c38730a966435ccd0d21c694f4e5bec568043edc690-image.png" />
-
-<br />
-
-<br />
+<Image align="center" border={true} src="https://files.readme.io/94fe0d2584148dd627991c38730a966435ccd0d21c694f4e5bec568043edc690-image.png" className="border" />
 
 Results respect existing permissions, so people only see content they already have access to. Your chats are private and visible only to you.
 
