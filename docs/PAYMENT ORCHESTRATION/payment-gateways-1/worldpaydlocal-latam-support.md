@@ -162,6 +162,7 @@ Supported Regions:
       <td>
         * _ARS_* (Visa, MC, Amex, Discover, JCB, Diner's Club, _Tarjeta Naranja_)
         * _Else_*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
+        * _USD_* for ACH processing.
         * _EUR_* for SEPA processing.
       </td>
     </tr>
