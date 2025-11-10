@@ -38,16 +38,16 @@ TSYS Gateway is a crucial intermediary that fosters connections between merchant
 
 # Key details
 
-| Feature                         | Description                                                    |
-| ------------------------------- | -------------------------------------------------------------- |
-| Services that work with Recurly | Purchases, Recurring Billing                                   |
-| Supported operations            | Purchase, Refund, Void                                         |
-| Supported payment types         | Credit Card transactions                                       |
-| Supported card brands           | Visa, MasterCard, American Express, Discover, JCB, Diners Club |
-| Gateway Specific 3DS2 Supported | No                                                             |
-| Card on File Supported          | Yes                                                            |
-| Regions                         | United States                                                  |
-| Currencies                      | USD                                                            |
+| Feature                         | Description                                                                                                               |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Purchases, Recurring Billing, [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing |
+| Supported operations            | Purchase, Refund, Void                                                                                                    |
+| Supported payment types         | Credit Card transactions                                                                                                  |
+| Supported card brands           | Visa, MasterCard, American Express, Discover, JCB, Diners Club                                                            |
+| Gateway Specific 3DS2 Supported | No                                                                                                                        |
+| Card on File Supported          | Yes                                                                                                                       |
+| Regions                         | United States                                                                                                             |
+| Currencies                      | USD                                                                                                                       |
 
 ## Getting started
 
@@ -57,7 +57,7 @@ To initialize the connection between your TSYS Gateway and Recurly, begin with t
 
 Because TSYS requires at least five (5) characters sent in certain fields, if your site subdomain (subdomain.recurly.com) is less than five characters (example: abc.recurly.com), then you will need to add a site DBA name that is at least five characters.
 
-You may consider adding a legal business type at the end of your DBA for example: Acme, Inc versus just Acme.\
+You may consider adding a legal business type at the end of your DBA for example: Acme, Inc versus just Acme.  
 The absence of this provision will default the system to the site name, triggering a failure in all transactions.
 
 #### New Merchant Accounts
@@ -66,7 +66,7 @@ We’ve made it easy for those setting up new merchant accounts. After logging i
 
 #### Existing Merchant Accounts
 
-Merchants with existing accounts should seek the creation of a TSYS Merchant Profile via the merchant bank using the Host Capture on the Summit platform.\
+Merchants with existing accounts should seek the creation of a TSYS Merchant Profile via the merchant bank using the Host Capture on the Summit platform.  
 Post creation, you may enable TSYS directly within your Recurly Payment Gateway settings.
 
 > **Note**: In the event of modifications in address or contact details, reach out to the merchant account provider to avoid any disruptions in service due to outdated merchant profiles.
@@ -88,11 +88,11 @@ Follow this step-by-step process to enable the TSYS Gateway within your Recurly 
    * **Existing Merchant Accounts**: For existing merchant accounts, collaborate with your merchant bank to initiate a TSYS Merchant Profile using the Host Capture on the Summit platform and continue to Step 2.
 2. **Gather necessary details**: Accumulate vital details including your POS ID, Authentication Code, and zip code following the creation of the merchant profile. If you have a V#, please also provide it in your setup.
 3. **DBA name**: Navigate to the site settings on your Recurly account and designate a DBA (Doing Business As) name with a minimum length of 5 characters IF your site subdomain is less than five (5) characters (example: abc.recurly.com is a 3 character subdomain, so would require this step). This step is pivotal to avoid transaction failures.
-4. **Gateway configuration**: 
+4. **Gateway configuration**:
 
-* Access your Recurly site and navigate to **Payment Gateways → Add a Payment Gateway** and choose TSYS. 
+* Access your Recurly site and navigate to **Payment Gateways → Add a Payment Gateway** and choose TSYS.
 * Enter your TSYS credentials including the following: POS ID, Authentication Code, and Zip Code. Enter your V# (can start with a ‘7’) if you have it.
-* If you do not want to use TSYS as a failover option, check the box labeled ‘Exclude from Gateway Failover’. 
+* If you do not want to use TSYS as a failover option, check the box labeled ‘Exclude from Gateway Failover’.
 * Select the card types you have set up at TSYS under ‘Accepted Credit Card Types’.
 * Save your Payment Gateway Settings.
 
