@@ -66,14 +66,13 @@ Compass Assistant will also detect when you want to help from our Support team o
 
 # Manage conversations
 
-Click the new chat button to start a new conversation with a new context.
+**Select** New chat to start a new conversation with its own context.
 
-Click the chat history button to view a list of previous conversations. Clicking on a previous conversation will load that conversation and you can ask follow-up questions. Pick up where you left off!
+Open **Chat history** to view your previous conversations. Select any conversation to reload it and continue the thread. Your follow-up questions will use that conversation’s context.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/122898367f3220ee968348c7e06f0778c3bfeb3fe919f7a2a87354ba9d895b81-image.png" className="border" />
 
-Results respect user permissions, so people can only see what they already have access to.
-Your chats are private and only visible to you.
+Results respect existing permissions, so people only see content they already have access to. Your chats are private and visible only to you.
 
 ### Permission changes
 
