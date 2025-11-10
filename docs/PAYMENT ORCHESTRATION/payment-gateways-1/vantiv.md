@@ -44,16 +44,16 @@ The WorldPay eCommerce (formerly known as Vantiv or the Litle platform) facilita
 
 # Key details
 
-| Feature                         | Description                                                                                                |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Credit Cards                                                                                               |
-| Supported operations            | Transaction Processing (Verify, Purchase, Separate Authorize and Capture, Void, Refund)                    |
-| Supported payment types         | Credit Card, Apple Pay                                                                                     |
-| Supported card brands           | Visa, MasterCard, Amex, Discover, UnionPay, JCB, Diners Club                                               |
-| Gateway Specific 3DS2 Supported | No                                                                                                         |
-| Card on File Supported          | Yes                                                                                                        |
-| Regions                         | US and Canada                                                                                              |
-| Currencies                      | See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a> |
+| Feature                         | Description                                                                                                                              |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Payment Processing, Recurring Subscriptions, [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing |
+| Supported operations            | Transaction Processing (Verify, Purchase, Separate Authorize and Capture, Void, Refund)                                                  |
+| Supported payment types         | Credit Card, Apple Pay                                                                                                                   |
+| Supported card brands           | Visa, MasterCard, Amex, Discover, UnionPay, JCB, Diners Club                                                                             |
+| Gateway Specific 3DS2 Supported | No                                                                                                                                       |
+| Card on File Supported          | Yes                                                                                                                                      |
+| Regions                         | US and Canada                                                                                                                            |
+| Currencies                      | See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>                               |
 
 Recurly is compatible with **WorldPay eCommerce**, previously known as the Vantiv or Litle platform. Before initializing the connection between your Recurly account and WorldPay eCommerce, it is mandatory to procure authorization from WorldPay to facilitate Recurly's connectivity.
 
@@ -61,7 +61,7 @@ Recurly is compatible with **WorldPay eCommerce**, previously known as the Vanti
 
 Recurly extends support to the Account Updater across all gateways. Optionally, you can leverage WorldPay's specialized Automatic Account Updater by enabling it in your gateway settings. This functionality grants Recurly the ability to undertake an additional transaction attempt post a hard decline, enhancing the chances of obtaining any prospective updates available through WorldPay.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/faa14a7-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/faa14a7-image.png" className="border" />
 
 #### Fraud filtering
 
