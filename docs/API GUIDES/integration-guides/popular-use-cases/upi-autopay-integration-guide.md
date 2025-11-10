@@ -67,8 +67,8 @@ purchase = {
     last_name: "Du Monde",
     email: "bdumonde@example.com",
     billing_info: {
-			first_name: "Benjamin",
-      last_name: "Du Monde",
+      first_name: "Benjamin",
+			last_name: "Du Monde",
 			address: {
         street1: "44/1 Bharat Apartment 4C 5th Main Road",
         city: "Bengaluru",
