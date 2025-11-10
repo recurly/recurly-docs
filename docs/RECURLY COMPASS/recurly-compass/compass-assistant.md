@@ -64,24 +64,20 @@ Compass Assistant will also detect when you want to help from our Support team o
 
 <Image align="center" border={true} width="50% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" className="border" />
 
-# Manage Conversations
+# Manage conversations
 
-Click the new chat button to start a new conversation with a new context.  
+Click the new chat button to start a new conversation with a new context.
 
 Click the chat history button to view a list of previous conversations. Clicking on a previous conversation will load that conversation and you can ask follow-up questions. Pick up where you left off!
 
-<Image align="center" border={false} width="70% " src="https://files.readme.io/122898367f3220ee968348c7e06f0778c3bfeb3fe919f7a2a87354ba9d895b81-image.png" />
-
-<br />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/122898367f3220ee968348c7e06f0778c3bfeb3fe919f7a2a87354ba9d895b81-image.png" className="border" />
 
 Results respect user permissions, so people can only see what they already have access to.
 Your chats are private and only visible to you.
 
-<br />
+### Permission changes
 
-> 🚧 Permission changes
->
-> If a user's permissions change to be more restrictive, it is possible their history may contain information they are no longer permitted to view.  If this is a concern, contact support.  
+If a user's permissions change to be more restrictive, it is possible their history may contain information they are no longer permitted to view.  If this is a concern, contact support.
 
 # FAQs
 
