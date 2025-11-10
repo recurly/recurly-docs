@@ -74,15 +74,15 @@ Your Recurly site supports various gateways based on your business location. For
 
 ### Accepted Payment Types
 
-Understand the importance of [offering alternative payment methods](https://recurly.com/blog/why-offering-alternative-payment-methods-is-important-for-subscription-businesses/) for your subscription business. Recurly backs most card types approved by your merchant bank account and payment gateway, except Maestro cards due to their non-support for recurring transactions.
+Understand the importance of [offering alternative payment methods](https://recurly.com/blog/why-offering-alternative-payment-methods-is-important-for-subscription-businesses/) for your subscription business. Recurly backs most card types approved by your merchant bank account and payment gateway, except Maestro cards due to their lack of support for recurring transactions.
 
 ### Level II Card Data Support
 
 All transactions process at level I rates by default. However, Recurly facilitates level II card data support for most gateways, granting lower interchange rates for qualified transactions for US merchants. To benefit from this, ensure your sales tax is calculated through Recurly. The necessary data fields included are:
 
-* Sales tax amount
-* Customer code / PO number
-* Merchant zip code
+* Sales tax amount (Enable taxes in your Recurly site!)
+* Customer code / PO number (`po_number` via API)
+* Merchant zip code (ensure your Business Entity and Site settings are up to date)
 
 ### Dual / Co-Badged Card Support
 
