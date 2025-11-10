@@ -90,7 +90,7 @@ Supported Regions:
       </td>
 
       <td>
-        WorldPay, Ebanx, dlocal (existing merchants only)
+        Payment Processing, Recurring Subscriptions, [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing. WorldPay supports LATAM via Ebanx and dlocal (existing merchants only).
       </td>
     </tr>
 
@@ -100,7 +100,7 @@ Supported Regions:
       </td>
 
       <td>
-        Transactions, Voids, Refunds (Online and Offline)
+        Verify, Purchase, Voids, Refunds (Online and Offline)
       </td>
     </tr>
 
