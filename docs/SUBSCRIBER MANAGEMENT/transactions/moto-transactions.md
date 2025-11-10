@@ -48,7 +48,7 @@ To begin, follow these steps:
 
 # Recurly Configuration:
 
-Enablement of MOTO can be completed on certain gateways via the following steps:
+Optional enablement of MOTO can be completed on _certain_ gateways via the following steps:
 
 1. From the Recurly Admin UI, select Configuration→Payment Gateways from the menu on the left.
 2. Select Options→Edit for the appropriate gateway instance.
@@ -56,17 +56,17 @@ Enablement of MOTO can be completed on certain gateways via the following steps:
 
 If you are using Gateway Routing, ensure you are routing to the proper gateways to avoid errors in processing.
 
-![](https://files.readme.io/462fcc3-MOTO_enable.gif "MOTO enable.gif")
+<Image border={false} src="https://files.readme.io/462fcc3-MOTO_enable.gif" title="MOTO enable.gif" />
 
 ### Can I use MOTO transactions if my customer is in session on my website?
 
-No. When a customer is in session on your website, this is considered a Customer Initiated transaction and is subject to PSD2 and SCA compliance mandates where applicable. To avoid regulatory fines from the card brands, do not classify these transactions as MOTO.
+**No**. When a customer is in session on your website, this is considered a Customer Initiated transaction and is subject to PSD2 and SCA compliance mandates where applicable. To avoid regulatory fines from the card brands, do not classify these transactions as MOTO.
 
 ### How can I process a MOTO transaction through Recurly?
 
-If you are integrating to Recurly via API from your back office, ensure you are classifying your transactions through the /purchase endpoint as MOTO and have your gateway settings set to MOTO specifically.
+If you are integrating to Recurly via API from your back office, ensure you are classifying your transactions through the `/purchase` endpoint as MOTO (`transaction_type` parameter).
 
-You may also add Billing Information and create Invoices directly within your Recurly control panel.
+You may also add Billing Information and create Invoices directly within your Recurly control panel. Ensure when you do this, you are creating an Invoice and charging immediately and are not creating Subscriptions or Invoices that are collected later on. Immediate Invoice charge is what you're after.
 
 Transactions processed from your website directly by customers, and your recurring subscriptions will not (and should not) be classified as MOTO.
 
