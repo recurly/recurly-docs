@@ -60,7 +60,11 @@ When a customer reaches the checkout stage, they will be prompted to enter their
 
 # Use cases
 
-Whether you are a subscription service looking to streamline billing processes, or a retailer seeking to secure and facilitate your payment processes, Recurly's credit card solutions are designed to fit a myriad of business needs with ease and precision.
+**Subscriptions**: Whether you are a subscription service looking to streamline billing processes, or a retailer seeking to secure and facilitate your payment processes, Recurly's credit card solutions are designed to fit a myriad of business needs with ease and precision.
+
+**One Time Payments**: If you're looking for a way to provide goods and services on a one-time payments basis, credit cards are a perfect avenue. 
+
+**MOTO / Back office**: If you have a call center and would like to offer payments to customers calling in, you can do so with Recurly's MOTO support. See [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing for more details and check your gateway for specific support of this use case.
 
 ## Supported Credit Card
 
