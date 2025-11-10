@@ -20,12 +20,12 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-* Authorize.net's API response detail is limited as far as in-depth responses on declines. Recurly uses decline reasons and merchant-advice-code logic to inform retries, and other processor, issuer, and network responses to help us decide when and how to retry. Due to the generic nature of this gateway's response information, we have employed best practices as instructed by the gateway. 
+* Authorize.net's API response detail is limited as far as in-depth responses on declines. Recurly uses decline reasons and merchant-advice-code logic to inform retries, and other processor, issuer, and network responses to help us decide when and how to retry. Due to the generic nature of this gateway's response information, we have employed best practices as instructed by the gateway.
   * In general, Recurly does not retry renewal declines in cases where Auth.net recommends treating a decline as a 'hard' decline. These include instances of:
     * Expired Cards
     * Lost or Stolen cards
   * You can read more about Auth.net's gateway responses in their [knowledgebase article](https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111).
-* We do not support Auth.net's fraud review flow -- if you are using Authorize.net's fraud monitoring, please be aware the gateway can void or invalidate transactions that were initially approved. It is advised to keep an eye on these external systems to avoid transactions that were initially approved and then cancelled by the gateway outside of Recurly's visibility. 
+* We do not support Auth.net's fraud review flow -- if you are using Authorize.net's fraud monitoring, please be aware the gateway can void or invalidate transactions that were initially approved. It is advised to keep an eye on these external systems to avoid transactions that were initially approved and then cancelled by the gateway outside of Recurly's visibility.
 
 # Definition
 
@@ -33,16 +33,16 @@ Authorize.net is a well-established payment gateway that facilitates the seamles
 
 For pricing and signup information for a new production Authorize.net account, please visit [Authorize.net](https://www.authorize.net/).
 
-| Features & Specifications       | Description / Availability                                        |
-| ------------------------------- | ----------------------------------------------------------------- |
-| Services that work with Recurly | Yes                                                               |
-| Supported Operations            | Anti-Fraud, Authorize and Capture, Purchase, Refund, Verify, Void |
-| Supported Payment Types         | Credit Card                                                       |
-| Supported Card Brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club, Union Pay     |
-| Gateway Specific 3DS2 Supported | No. Authorize.net does not support 3DS.                           |
-| Card on File Supported          | Yes                                                               |
-| Regions                         | Worldwide                                                         |
-| Currencies                      | AUD, CAD, EUR, GBP, NZD, PLN, and USD.                            |
+| Features & Specifications       | Description / Availability                                                                                                        |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Recurring Subscriptions, Payments (eCommerce and [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)) |
+| Supported Operations            | Anti-Fraud, Authorize and Capture, Purchase, Refund, Verify, Void                                                                 |
+| Supported Payment Types         | Credit Card                                                                                                                       |
+| Supported Card Brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club, Union Pay                                                                     |
+| Gateway Specific 3DS2 Supported | No. Authorize.net does not support 3DS.                                                                                           |
+| Card on File Supported          | Yes                                                                                                                               |
+| Regions                         | Worldwide                                                                                                                         |
+| Currencies                      | AUD, CAD, EUR, GBP, NZD, PLN, and USD.                                                                                            |
 
 # Address verification service (AVS)
 
