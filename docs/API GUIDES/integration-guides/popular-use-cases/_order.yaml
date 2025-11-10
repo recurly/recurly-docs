@@ -1,3 +1,4 @@
+- purchases-guide
 - 3d-secure-20-integration-guide
 - using-3d-secure-with-stored-billing-information
 - third-party-checkout
@@ -5,7 +6,6 @@
 - pix-automatico-integration-guide
 - upi-autopay-integration-guide
 - mercado-pago-integration-guide
-- purchases-guide
 - e-mandates-with-cards-in-india
 - using-gateway-tokens-and-external-ntids-with-recurly-apis
 - purchase-transaction
