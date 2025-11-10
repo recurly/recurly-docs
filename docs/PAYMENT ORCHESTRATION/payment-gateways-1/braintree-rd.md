@@ -31,17 +31,17 @@ Braintree, a full-stack payment platform known for its robust support for mobile
 
 # Key details
 
-| Features                        | Description/Availability                                                                                                                                                                                          |
-| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Services that work with Recurly | Subscription Billing, One-time Payments, [Dynamic Descriptors](https://docs.recurly.com/docs/payment-descriptors#/)                                                                                               |
-| Supported Operations            | Authorize & Capture, Purchase, Refund, Void                                                                                                                                                                       |
-| Supported Payment Types         | Credit/Debit Cards, PayPal, Venmo, Apple Pay, Google Pay                                                                                                                                                          |
-| Supported Card Brands           | Visa, Mastercard, Amex, Discover, JCB, Diners, Union Pay                                                                                                                                                          |
-| Gateway Specific 3DS2 Supported | Yes                                                                                                                                                                                                               |
-| Card on File Supported          | Yes                                                                                                                                                                                                               |
-| Regions                         | Global                                                                                                                                                                                                            |
-| Currencies                      | Multiple (per merchant account ID). See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>. PayPal currencies will be limited to PayPal supported currencies. |
-| Additional Feature Support      | Billing and Shipping Information, Level 2 Data, Visa Trial Descriptors, Braintree Gateway Tokens, Vaulting in Braintree                                                                                           |
+| Features                        | Description/Availability                                                                                                                                                                                              |
+| :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Services that work with Recurly | Subscription Billing, One-time Payments, [Card Dynamic Descriptors](https://docs.recurly.com/docs/payment-descriptors#/), [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing |
+| Supported Operations            | Authorize & Capture, Purchase, Refund, Void                                                                                                                                                                           |
+| Supported Payment Types         | Credit/Debit Cards, PayPal, Venmo, Apple Pay, Google Pay                                                                                                                                                              |
+| Supported Card Brands           | Visa, Mastercard, Amex, Discover, JCB, Diners, Union Pay                                                                                                                                                              |
+| Gateway Specific 3DS2 Supported | Yes                                                                                                                                                                                                                   |
+| Card on File Supported          | Yes                                                                                                                                                                                                                   |
+| Regions                         | Global                                                                                                                                                                                                                |
+| Currencies                      | Multiple (per merchant account ID). See <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">all available.</a>. PayPal currencies will be limited to PayPal supported currencies.     |
+| Additional Feature Support      | Billing and Shipping Information, Level 2 Data, Visa Trial Descriptors, Braintree Gateway Tokens, Vaulting in Braintree                                                                                               |
 
 ## Braintree and multi-currency
 
