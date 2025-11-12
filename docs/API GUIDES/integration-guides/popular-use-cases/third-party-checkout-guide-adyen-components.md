@@ -15,11 +15,13 @@ This guide walks you through how to connect your Adyen Web Components integratio
 
 ### Prerequisites & limitations
 
-* A working Adyen Components integration using the **Advanced Flow** (Cards, Cash App Pay, Google Pay, Apple Pay, ACH, SEPA, BACS, iDeal, and Bancontact).
+* A working **Adyen** Web Components implementation using the **Advanced Flow** (Cards, Cash App Pay, Google Pay, Apple Pay, ACH, SEPA, BACS, iDeal, and Bancontact). You do not need to send the State Data to Adyen.
+* You have followed the [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) setup guide including applicable Webhooks configuration at Adyen. Without proper webhooks configuration, certain behaviors such as Recurring Token usage and Async Status updates will not function properly.
 * Recurly.js loaded on your page and initialized per our [Recurly.js documentation](/developers/reference/recurly-js).
 * Access to your Recurly V3 API credentials and a Recurly site configured to accept vault‑enabled payments.
-* 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures.
-* **Not supported**: Adyen Sessions flow or non‑Web Components.
+* **Not supported**: 
+  * 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures. 100% Coupons/Credits are not supported.
+  * Adyen Sessions flow.
 * **Supported payment methods**:
 
   * **Cards**: Visa, MasterCard, Discover, Diners, JCB/I, Union Pay, American Express, Cartes Bancaires, Bancontact (requires SEPA for renewals)
@@ -71,7 +73,7 @@ Before rendering, fetch your supported methods via Adyen’s API and pass the `p
 
 ## Step 2: Tokenize Adyen components with Recurly.js
 
-Use an `onSubmit` handler in your Adyen checkout to generate a Recurly token from the component state. Send this token to your server to complete the purchase via Recurly’s API.
+Use an `onSubmit` handler in your Checkout to generate a Recurly.js token from the component state. Send this token to your server to complete the purchase via Recurly’s API.
 
 ```javascript
 const onSubmit = async (state, component, actions) => {
@@ -103,7 +105,7 @@ const adyenCheckout = await AdyenWeb.AdyenCheckout({
 
 ## Step 3: Configure Adyen component best practices
 
-Ensure the following options are set for reliable vaulting and renewals:
+Ensure the following options are set for reliable tokenization with Adyen and renewals:
 
 | Option                    | Recommended Setting | Notes                                                                                                     |
 | :------------------------ | :------------------ | :-------------------------------------------------------------------------------------------------------- |
