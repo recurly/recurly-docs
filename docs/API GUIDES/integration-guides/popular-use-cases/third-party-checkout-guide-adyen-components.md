@@ -133,16 +133,21 @@ Content-Type: application/json
 Authorization: Bearer YOUR_API_KEY
 
 {
-  "currency": "USD",
-  "subscriptions": [
-    { "plan_code": "gold-monthly" }
-  ],
-  "account": { "account_code": "user123" },
-  "gateway": "adyen",
-  "payment": {
-    "token_id": "TOKEN_FROM_RECURLY_JS",
-    "return_url": "https://your.site/confirmation"
-  }
+	"currency": "USD",
+	"account": {
+		"code": "GoldCard",
+        "email":"brianadams@example.com",
+        "billing_info": {
+            "token_id":"kejCaCCHNIH5bDZx47f7Xw" // Adyen Component State Token 
+            //,"three_d_secure_action_result_token_id":"kA5awm2RgZbEq803bLXCAw" // 3DS Challenge Result Token
+            }
+	},
+    "gateway_code":"1234567890", // Adyen Gateway Account code
+	"subscriptions": [
+		{
+			"plan_code": "goldplan", // Plan ID for Subscription
+        }
+	]
 }
 ```
 
