@@ -125,7 +125,7 @@ For full Adyen advanced flow guidance, see:
 
 ## Step 4: Create a purchase via the Recurly V3 API
 
-Once you have a valid component token, invoke the V3 API’s purchase endpoint. For example, to subscribe a plan:
+Once you have a valid R.js token using components data, invoke the V3 API’s purchase endpoint. For example, to subscribe a plan:
 
 ```http
 POST https://v3.recurly.com/purchases
@@ -138,8 +138,7 @@ Authorization: Bearer YOUR_API_KEY
 		"code": "GoldCard",
         "email":"brianadams@example.com",
         "billing_info": {
-            "token_id":"kejCaCCHNIH5bDZx47f7Xw" // Adyen Component State Token 
-            //,"three_d_secure_action_result_token_id":"kA5awm2RgZbEq803bLXCAw" // 3DS Challenge Result Token
+            "token_id":"kejCaCCHNIH5bDZx47f7Xw" // Adyen Component State Recurly.js Token
             }
 	},
     "gateway_code":"1234567890", // Adyen Gateway Account code
