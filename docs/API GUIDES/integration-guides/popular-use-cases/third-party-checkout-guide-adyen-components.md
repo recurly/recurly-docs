@@ -139,8 +139,8 @@ Authorization: Bearer YOUR_API_KEY
   "account": {
 	"code": "GoldCard",
 	"email":"brianadams@example.com",
-	"billing_info": {
-		"token_id":"kejCaCCHNIH5bDZx47f7Xw" // Adyen Component State Recurly.js Token
+  "billing_info": {
+  "token_id":"kejCaCCHNIH5bDZx47f7Xw" // Adyen Component State Recurly.js Token
 		}
 	},
 	"gateway_code":"1234567890", // Adyen Gateway Account code
