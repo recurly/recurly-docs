@@ -19,7 +19,7 @@ This guide walks you through how to connect your Adyen Web Components integratio
 * You have followed the [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) setup guide including applicable Webhooks configuration at Adyen. Without proper webhooks configuration, certain behaviors such as Recurring Token usage and Async Status updates will not function properly.
 * Recurly.js loaded on your page and initialized per our [Recurly.js documentation](/developers/reference/recurly-js).
 * Access to your Recurly V3 API credentials and a Recurly site configured to accept payments.
-* **Not supported**: 
+* **Not supported**:
   * 100% Coupons and Account Credits: Since communication with the gateway is required during initial setup, it is recommended to offer free trials in these instances to avoid future payment failures. 100% Coupons/Credits are not supported.
   * Adyen Sessions flow.
 * **Supported payment methods**:
@@ -136,19 +136,17 @@ Authorization: Bearer YOUR_API_KEY
 
 {
 	"currency": "USD",
-	"account": {
-		"code": "GoldCard",
-        "email":"brianadams@example.com",
-        "billing_info": {
-            "token_id":"kejCaCCHNIH5bDZx47f7Xw" // Adyen Component State Recurly.js Token
-            }
+  "account": {
+	"code": "GoldCard",
+	"email":"brianadams@example.com",
+	"billing_info": {
+		"token_id":"kejCaCCHNIH5bDZx47f7Xw" // Adyen Component State Recurly.js Token
+		}
 	},
-    "gateway_code":"1234567890", // Adyen Gateway Account code
-	"subscriptions": [
-		{
-			"plan_code": "goldplan", // Plan ID for Subscription
-        }
-	]
+	"gateway_code":"1234567890", // Adyen Gateway Account code
+	"subscriptions": [{
+		"plan_code": "goldplan", // Plan ID for Subscription
+	}]
 }
 ```
 
