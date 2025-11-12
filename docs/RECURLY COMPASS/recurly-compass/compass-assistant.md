@@ -28,7 +28,7 @@ Compass Assistant is a network of agents, sub agents and tools that can be reach
 
 To get started with Compass Assistant, click the sparkles on the bottom right of your Recurly site.
 
-<br/>
+<br />
 
 You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
 
@@ -63,6 +63,26 @@ Compass Assistant is ready to code and knows Recurly's APIs. Code examples, avai
 Compass Assistant will also detect when you want to help from our Support team or you can always click _**Chat with Support**_.
 
 <Image align="center" border={true} width="50% " src="https://files.readme.io/644cdb8042d0893b0f7c8bc859270e09c8f97bfaa5edf8165ae11f6f8e781fc9-support.png" className="border" />
+
+# Manage conversations
+
+1. **New chat:** **Select** **New chat** to start a new conversation with its own context.
+
+<Image align="center" border={true} src="https://files.readme.io/1b1773bc0b56daf683f2c8e5b0500a1e2d6a44569db5e49cee1467d2de5c2d3e-image.png" className="border" />
+
+2. **Chat history:** **Open** **Chat history** to view your previous conversations.
+
+<Image align="center" border={true} src="https://files.readme.io/a0ed09369bb2235544b76993590d3bbe2b5db8e03bcf7883deb74625a5edfa60-image.png" className="border" />
+
+3. **Select** any conversation to reload it and continue the thread. Your follow-up questions will use that conversation’s context.
+
+<Image align="center" border={true} src="https://files.readme.io/94fe0d2584148dd627991c38730a966435ccd0d21c694f4e5bec568043edc690-image.png" className="border" />
+
+Results respect existing permissions, so people only see content they already have access to. Your chats are private and visible only to you.
+
+### Permission changes
+
+If a user's permissions change to be more restrictive, it is possible their history may contain information they are no longer permitted to view.  If this is a concern, contact support.
 
 # FAQs
 
