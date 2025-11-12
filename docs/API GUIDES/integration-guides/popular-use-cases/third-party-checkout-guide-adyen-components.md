@@ -107,17 +107,17 @@ const adyenCheckout = await AdyenWeb.AdyenCheckout({
 
 Ensure the following options are set for reliable tokenization with Adyen and renewals:
 
-| Option                    | Recommended Setting | Notes                                                                                                     |
-| :------------------------ | :------------------ | :-------------------------------------------------------------------------------------------------------- |
-| `storePaymentMethod`      | `true`              | Required for tokenization; if omitted or set to `false`, no vault token is issued and renewals will fail. |
-| `enableStoreDetails`      | omit                | Avoid using; allows user opt‑out and can break renewals if declined.                                      |
-| `hideCVC`                 | conditional boolean | Set to `true` unless your Adyen setup explicitly supports CVC bypass on return customers.                 |
-| `maskSecurityCode`        | `true`              | Masking the CVV field enhances security and user trust.                                                   |
-| `hasHolderName`           | omit                | Not supported—use Recurly.js name elements.                                                               |
-| `billingAddressRequired`  | omit                | Not supported—use Recurly.js address elements if you need AVS.                                            |
-| `addressSearchDebounceMs` | omit                | Not supported—Recurly does not process Adyen address search elements.                                     |
-| `installmentOptions`      | omit                | Recurly does not support Adyen installment features.                                                      |
-| `showInstallmentAmounts`  | omit                | Recurly does not display installment breakdowns; handle in your own UI if needed.                         |
+| Option                    | Recommended Setting | Notes                                                                                                                                          |
+| :------------------------ | :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| `storePaymentMethod`      | `true`              | Required for tokenization; if omitted or set to `false`, no vault token is issued and renewals will fail with `no_billing_information` errors. |
+| `enableStoreDetails`      | omit                | Avoid using; allows user opt‑out of vaulting tokens and can break renewals with`no_billing_information` errors.                                |
+| `hideCVC`                 | conditional boolean | Set to `true` unless your Adyen setup explicitly supports CVC bypass on return customers.                                                      |
+| `maskSecurityCode`        | `true`              | Masking the CVV field enhances security and user trust.                                                                                        |
+| `hasHolderName`           | omit                | Not supported—use Recurly.js name elements.                                                                                                    |
+| `billingAddressRequired`  | omit                | Not supported—use Recurly.js address elements if you need AVS.                                                                                 |
+| `addressSearchDebounceMs` | omit                | Not supported—Recurly does not process Adyen address search elements.                                                                          |
+| `installmentOptions`      | omit                | Recurly does not support Adyen installment features.                                                                                           |
+| `showInstallmentAmounts`  | omit                | Recurly does not display installment breakdowns; handle in your own UI if needed.                                                              |
 
 For full Adyen advanced flow guidance, see:
 
