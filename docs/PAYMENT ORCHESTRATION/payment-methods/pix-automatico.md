@@ -21,7 +21,7 @@ Recurly currently supports Pix Automático transactions on Ebanx gateway.
 ### Use cases
 
 * **Seamless subscriptions:** Pix Automatic (Automático) enables effortless sign-ups for subscriptions, by allowing customers to pay merchants by scanning a QR code through the checkout flow.
-* **Efficient checkout:** Pix Automático ensures a quick and secure checkout process, catering to both mobile and desktop users.
+* **Efficient checkout:** Pix Automático ensures a quick and secure checkout process, catering to both mobile and desktop users. g
 
 ### Prerequisites & supported gateways
 
@@ -78,6 +78,10 @@ Pix Automático will require you always send certain data:
 * Customer Email Address
 * Customer Phone Number
 * Tax ID / Tax ID Type when the Region requires it (Brazil)
+
+## Retries and Dunning Settings
+
+Due to Pix Automatico's requirement that all retries occur within the current billing period (example: if you have a weekly subscription, the initial renewal attempt and retries must occur within 7 days), if will be especially important to set up your dunning window to match the payment method to avoid extended dunning periods where retries cannot occur.
 
 # FAQs
 
