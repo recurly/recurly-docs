@@ -83,6 +83,13 @@ Pix Automático will require you always send certain data:
 
 Due to Pix Automatico's requirement that all retries occur within the current billing period (example: if you have a weekly subscription, the initial renewal attempt and retries must occur within 7 days), if will be especially important to set up your dunning window to match the payment method to avoid extended dunning periods where retries cannot occur.
 
+Pix Automatico retries are, like all Pix payments, asynchronous and will remain in scheduled until we receive an update. 
+
+**Other details:**
+
+* There are 3 retries available for a given billing period on Pix Automatico subscriptions. 
+* If 3 failures occur after the initial renewal, your dunning settings for the invoice/subscription will be applied.
+
 # FAQs
 
 #### **Q: Which gateways support Pix Automático?**
