@@ -88,7 +88,7 @@ Ensure a webservice user is set up on Adyen to permit Recurly to dispatch transa
     2. Adyen support to **disable the CVC requirement** on your Merchant Account if you do not collect CVC (CVV codes) from returning or known customers. If you do wish to collect CVC (CVV codes) on all Customer Initiated transactions, ensure your integration supports collecting and passing the code to Recurly via API if on v71.
 12. Additionally, **ensure** that “Acquirer Result” and “Raw Acquirer Result” are enabled in the API responses.
 
-# Webhooks configuration
+# Adyen Webhooks configuration
 
 Accurate configuration of the callbacks URL is pivotal for Recurly to receive apt status updates for transaction records.
 
@@ -98,17 +98,40 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 <Image align="center" border={true} width="75% " src="https://files.readme.io/fc70703-image.png" className="border" />
 
-**No other settings changes should be made in this section.**
+4. Add these 4 webhook types: **Direct-Debit Pending, Generic Pending, Recurring Token Lifecycle events, and Standard webhook.**
+   1. Double-check that you have enabled the following event codes:
+      1. **RECURRING_CONTRACT**- Required for tokenized payment methods to function properly.
+      2. **REPORT_AVAILABLE**- Required for notifying when Adyen reports for various details are available such as settlement reports for Revenue Recognition.
+      3. **EXPIRE** - Required for proper Auth and Capture behavior. Ensures proper report syncing from Adyen when pending authorizations expire prior to capture.
+      4. **CAPTURE_FAILED** - Required to ensure proper transaction handling in general, especially when Auth and Capture are in use.
+      5.  **OFFER_CLOSED** -- Required when using the iDeal payment method. 
+      6. **Ideal details** -- Webhook information required when using the iDeal payment method. You can learn more on Adyen's website [here](https://docs.adyen.com/development-resources/webhooks/webhook-types/#other-webhooks).
+      7. **recurring.token.updated** - Required when using Adyen gateway tokens to ensure Recurly receives timely meta-data updates on Adyen tokens when an update occurs outside of Recurly.
+   2. Adyen Documentation lists two places -- please ensure both are handled, or the webhook may not be sent.
+      1. [Standard Webhooks Page](https://docs.adyen.com/development-resources/webhooks/webhook-types/#standard-webhook-page)
+      2. [Webhooks Settings Page](https://docs.adyen.com/development-resources/webhooks/webhook-types/#webhooks-settings-page)
 
 > **Note:** If your site is hosted in Recurly's European Union (EU) data centers, use callbacks.eu.recurly.com in place of callbacks.recurly.com.
 
-4. **Ensure** the "Enabled" toggle is set as shown:
+5. **Ensure** the "Enabled" toggle is set as shown:
 
 <Image align="center" border={true} width="75% " src="https://files.readme.io/1a31b55-image.png" className="border" />
 
-5. **Click** “Save changes” at the bottom of the page.
+6. **Click** “Save changes” at the bottom of the page.
 
-### Activation of "Network Transaction Reference" and Recurring Details
+# Adyen Additional Data Configuration
+
+## Activation of Response Fields via API
+
+To enable card data showing up when a token is received via webhook, you'll want to enable response fields from Adyen. 
+
+Navigate to **Developers→Additional Data** in Adyen to enable these features. Once a token is received, we'll receive extra data from Adyen to populate card brand meta-data like the BIN, Last 4 of the Card, and other details. See below for relevant fields: 
+
+* Card bin
+* Card Summary
+* Expiry date
+
+## Activation of "Network Transaction Reference" and Recurring Details
 
 To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Additionally, for payment methods that require tokenization, enabling **Recurring Details** is also essential. This can be done in the same settings area in Adyen.
 
@@ -249,7 +272,7 @@ Within your Adyen platform:
 
 * Activate Cash App Pay.
 * Ensure the USD currency is available.
-* Enable RECURRING_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
+* Ensure you have enabled all applicable webhooks. See required Adyen Webhooks Configuration on this page.
 
 ## Adyen SEPA
 
@@ -272,7 +295,7 @@ It's important to note that the inaugural payment for a subscription employs iDE
 
 * Activate SEPA for subsequent payments.
 * Ensure the EUR currency is functional.
-* Enable RECURRING_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
+* Ensure you have enabled all applicable webhooks. See required Adyen Webhooks Configuration on this page.
 * Incorporate “Ideal details” webhooks. Steps can be found <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/#other-webhooks" target="_blank">here</a>.
 
 ### **Restrictions and guidelines**
