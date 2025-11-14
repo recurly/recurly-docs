@@ -98,7 +98,7 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 <Image align="center" border={true} width="75% " src="https://files.readme.io/fc70703-image.png" className="border" />
 
-4. Add these 4 webhook types: **Direct-Debit Pending, Generic Pending, Recurring Token Lifecycle events, and Standard webhook.**
+4. Add these 4 webhook types: in addition to any payment method specific events noted below **Direct-Debit Pending, Generic Pending, Recurring Token Lifecycle events, and Standard webhook.**
    1. Double-check that you have enabled the following event codes:
       1. **RECURRING_CONTRACT**- Required for tokenized payment methods to function properly.
       2. **REPORT_AVAILABLE**- Required for notifying when Adyen reports for various details are available such as settlement reports for Revenue Recognition.
