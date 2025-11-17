@@ -35,7 +35,9 @@ The accordion menu below will guide you through the steps needed to optimize you
 <Accordion title="Week 1: Know where to go">
   # Week 1: Know where to go
 
-  Below you'll find a quick run through of the Recurly user interface, which will guide you through key areas of configuration and management. Additionally, the Navigate Resource Guide will give you an easy-access map of where to find support, helpful tools, and more.
+**Description:** A review of the Recurly user interface and available resources.
+  
+Below you'll find a quick run through of the Recurly user interface, which will guide you through key areas of configuration and management. Additionally, the Navigate Resource Guide will give you an easy-access map of where to find support, helpful tools, and more.
 
   ## Week 1 Resources
 
@@ -56,26 +58,11 @@ Save this guide for an easy reference of where to find support, helpful tools, a
 
 </Accordion>
 
-# Week 1: Know where to go
-
-During this phase, you'll learn to prepare your Recurly configurations to drive results.
-
-**Here's what to expect:**
-
-* A quick Trail Guide video review of the Recurly user interface and the Navigate Resource Guide to help you find answers and support fast.
-* Launchpad Trail Guides to help optimize setup and strengthen the foundation.
-* Helpful downloads, documentation, and how-to resources.
-* Invites to Navigate Lunch & Learns, live Office Hours, and Product Roadmap sessions.
-
-Below you'll find a quick run through of the Recurly user interface, which will guide you through key areas of configuration and management. Additionally, the Navigate Resource Guide will give you an easy-access map of where to find support, helpful tools, and more.
-
-Video: Recurly User Interface Overview
-
-Recurly Navigate Resource Guide
-
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
+<Accordion title="Week 2: Final Production Testing">
+  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
+  occaecat cupidatat non proident!
+</Accordion>
 
 <br />
 
