@@ -19,6 +19,10 @@ metadata:
 
 # Third party checkout
 
+> ❗️ Integration Flow 
+>
+> Do not write code to create, update, or confirm Payment Intents with Stripe directly. To use this feature, you will only create the confirmation token, and then pass it to Recurly using the guide below.
+
 > 📘 Important:
 >
 > The integrator must have a functioning implementation of Stripe Elements in place in order to effectively use this guide. See Stripe Elements documentation and Recurly Recommendations below to get started.
