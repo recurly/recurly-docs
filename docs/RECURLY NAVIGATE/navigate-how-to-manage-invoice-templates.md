@@ -1,5 +1,5 @@
 ---
-title: 'Navigate: How to manage invoice templates'
+title: 'Recurly Navigate: Launchpad'
 deprecated: false
 hidden: true
 metadata:
