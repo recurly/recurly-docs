@@ -30,6 +30,10 @@ This guide walks you through how to connect your Adyen Web Components integratio
 
 ***
 
+> ❗️ Integration Flow
+>
+> Do not write code to create, update, or otherwise process transactions or tokens with Adyen directly. To use this feature, you will only create the state data, and then pass it to Recurly using the guide below.
+
 ## Step 1: Build your Adyen components + Recurly.js integration
 
 Follow Adyen’s **Advanced Flow** docs to render Web Components for each method:
