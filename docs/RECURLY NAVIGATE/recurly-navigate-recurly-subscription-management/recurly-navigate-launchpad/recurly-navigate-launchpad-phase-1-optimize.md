@@ -23,27 +23,33 @@ Use this interactive checklist to keep track of your Recurly Launchpad: Phase 1,
 * [ ] **Week 6: Gateway Failover:** Enabling this feature to automatically reroute transactions to a secondary gateway in case of an outage or technical glitch with the primary one.
 * [ ] **Week 7: Phase 1 Rewind & Review:** A summary of all covered topics and an introduction to Subscription Sessions.`
 
-<Accordion title="My Accordion Title" icon="fa-info-circle">
-# Week 1: Know where to go
+<Accordion title="Week 1: Know where to go" icon="fa-info-circle">
+  # Week 1: Know where to go
 
-During this phase, you'll learn to prepare your Recurly configurations to drive results.
+  During this phase, you'll learn to prepare your Recurly configurations to drive results.
 
-**Here's what to expect:**
+  **Here's what to expect:**
 
-* A quick Trail Guide video review of the Recurly user interface and the Navigate Resource Guide to help you find answers and support fast.
-* Launchpad Trail Guides to help optimize setup and strengthen the foundation.
-* Helpful downloads, documentation, and how-to resources.
-* Invites to Navigate Lunch & Learns, live Office Hours, and Product Roadmap sessions.
+  * A quick Trail Guide video review of the Recurly user interface and the Navigate Resource Guide to help you find answers and support fast.
+  * Launchpad Trail Guides to help optimize setup and strengthen the foundation.
+  * Helpful downloads, documentation, and how-to resources.
+  * Invites to Navigate Lunch & Learns, live Office Hours, and Product Roadmap sessions.
 
-Below you'll find a quick run through of the Recurly user interface, which will guide you through key areas of configuration and management. Additionally, the Navigate Resource Guide will give you an easy-access map of where to find support, helpful tools, and more.
+  Below you'll find a quick run through of the Recurly user interface, which will guide you through key areas of configuration and management. Additionally, the Navigate Resource Guide will give you an easy-access map of where to find support, helpful tools, and more.
 
-Video: Recurly User Interface Overview
+  ## Week 1 Resources
 
-Recurly Navigate Resource Guide
+  ### Trail Guide: Recurly User Interface Walkthrough
+Join Julia for a quick walkthrough of the Recurly user interface.
 
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
+You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
+
+
+  <HTMLBlock>{`
+  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+  `}</HTMLBlock>
+
+###
 
 </Accordion>
 
