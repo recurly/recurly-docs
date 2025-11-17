@@ -1,5 +1,5 @@
 ---
-title: 'Recurly Navigate: Launch Phase 2, Metrics'
+title: 'Recurly Navigate: Launchpad Phase 2, Mastering Metrics'
 deprecated: false
 hidden: true
 metadata:
