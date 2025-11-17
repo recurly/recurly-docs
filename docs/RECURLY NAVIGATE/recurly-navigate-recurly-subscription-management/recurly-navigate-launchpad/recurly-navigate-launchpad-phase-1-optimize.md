@@ -23,20 +23,4 @@ Use this interactive checklist to keep track of your Recurly Launchpad: Phase 1,
 * [ ] **Week 6: Gateway Failover:** Enabling this feature to automatically reroute transactions to a secondary gateway in case of an outage or technical glitch with the primary one.
 * [ ] **Week 7: Phase 1 Rewind & Review:** A summary of all covered topics and an introduction to Subscription Sessions.`
 
-<Cards columns={4}>
-  <Card title="First Card" href="https://readme.com" icon="fa-home" target="_blank">
-    Neque porro quisquam est qui dolorem ipsum quia
-  </Card>
-
-  <Card title="Second Card" icon="fa-user">
-    *Lorem ipsum dolor sit amet, consectetur adipiscing elit*
-  </Card>
-
-  <Card title="Third Card" icon="fa-star">
-    > Ut enim ad minim veniam, quis nostrud ullamco
-  </Card>
-
-  <Card title="Fourth Card" icon="fa-question">
-    **Excepteur sint occaecat cupidatat non proident**
-  </Card>
-</Cards>
+<br />
