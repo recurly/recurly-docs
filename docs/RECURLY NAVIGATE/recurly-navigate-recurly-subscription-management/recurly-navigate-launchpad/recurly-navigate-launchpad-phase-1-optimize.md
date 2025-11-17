@@ -49,7 +49,14 @@ You'll learn where to find key tools, features, and settings across a few short 
   <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
-###
+  ### Download: Navigate Resource Guide
+
+
+<Embed typeOfEmbed="pdf" url="https://go.recurly.com/recurly_navigate_resource_guide.html" href="https://go.recurly.com/recurly_navigate_resource_guide.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
+
+<br />
+
+<br />
 
 </Accordion>
 
