@@ -9,11 +9,20 @@ metadata:
 
 # Phase One: Optimization
 
-This phase is focused on preparing and configuring impactful Recurly settings to immediately drive results. Follow the path below for the full Launchpad experience!
+Use this phase of Navigate Launchpad to help you prepare and configure essential Recurly settings to immediately drive results. 
+
+Here's what to expect during phase one of this learning path. 
+
+* A quick review of the Recurly user interface and a guide to help find answers fast.
+* Launchpad Trail Guides to help optimize setup and strengthen the foundation.
+* Helpful downloads, documentation, and how-to resources.
+* Invites to Navigate Lunch & Learns, live Office Hours, and Product Roadmap sessions.
 
 ## Phase 1 Learning Path Agenda
 
-Use this interactive checklist to keep track of your Recurly Launchpad: Phase 1, Optimization progress.
+## Getting started
+
+Use this interactive list to progress through the first phase of Navigate Launchpad at your own pace. Each item expands, containing Trail Guide video, helpful tips, downloads, links to relevant documentation, and more. 
 
 * [ ] **Week 1: Welcome & Know where to go:** A review of the Recurly user interface and available resources.
 * [ ] **Week 2: Final Production Testing:** Testing the subscription payment flow end-to-end to catch potential payment issues before launch.
@@ -23,10 +32,10 @@ Use this interactive checklist to keep track of your Recurly Launchpad: Phase 1,
 * [ ] **Week 6: Gateway Failover:** Enabling this feature to automatically reroute transactions to a secondary gateway in case of an outage or technical glitch with the primary one.
 * [ ] **Week 7: Phase 1 Rewind & Review:** A summary of all covered topics and an introduction to Subscription Sessions.`
 
-<Accordion title="Week 1: Know where to go" icon="fa-info-circle">
+<Accordion title="1. Know where to go">
   # Week 1: Know where to go
 
-  During this phase, you'll learn to prepare your Recurly configurations to drive results.
+Before we move forward in the Navigate Launchpad journey, 
 
   **Here's what to expect:**
 
@@ -40,24 +49,22 @@ Use this interactive checklist to keep track of your Recurly Launchpad: Phase 1,
   ## Week 1 Resources
 
   ### Trail Guide: Recurly User Interface Walkthrough
-Join Julia for a quick walkthrough of the Recurly user interface.
 
-You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
+  Join Julia for a quick walkthrough of the Recurly user interface.
 
+  You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
 
   <HTMLBlock>{`
-  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+    <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### Download: Navigate Resource Guide
 
+  <Embed typeOfEmbed="pdf" url="https://go.recurly.com/recurly_navigate_resource_guide.html" href="https://go.recurly.com/recurly_navigate_resource_guide.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
 
-<Embed typeOfEmbed="pdf" url="https://go.recurly.com/recurly_navigate_resource_guide.html" href="https://go.recurly.com/recurly_navigate_resource_guide.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
+  <br />
 
-<br />
-
-<br />
-
+  <br />
 </Accordion>
 
 # Week 1: Know where to go
