@@ -13,7 +13,7 @@ next:
       title: 'Recurly Navigate: Launchpad Phase 1, Optimize'
       type: basic
     - slug: recurly-navigate-launch-phase-2-metrics
-      title: 'Recurly Navigate: Launch Phase 2, Metrics'
+      title: 'Recurly Navigate: Launchpad Phase 2, Mastering Metrics'
       type: basic
 ---
 <Image align="left" alt="Recurly Navigate Launchpad Logo" border={false} width="150px" src="https://files.readme.io/81e7fa03d1db38cc555f08bb797ab108b2995ffa601fb08843dd778c50148ce0-Navigate_Launchpad_Logo_90_Days.png" />
