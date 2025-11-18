@@ -24,14 +24,6 @@ Here's what to expect during phase one of this learning path.
 
 The accordion menu below will guide you through the steps needed to optimize your Recurly app. Each item expands, containing Trail Guide videos, helpful tips, downloads, links to relevant documentation, and more.
 
-* [ ] **Week 1: Welcome & Know where to go:** A review of the Recurly user interface and available resources.
-* [ ] **Week 2: Final Production Testing:** Testing the subscription payment flow end-to-end to catch potential payment issues before launch.
-* [ ] **Week 3: Dunning Optimization:** Developing and fine-tuning a Dunning strategy to recover failed payments and prevent subscriber churn.
-* [ ] **Week 4: Account Updater:** Setting up Account Updater to automatically refresh billing information, preventing involuntary churn due to expired or new cards.
-* [ ] **Week 5: Branding Emails and Invoices:** Customizing Recurly-hosted messaging and invoices to ensure a seamless and consistent brand experience for subscribers.
-* [ ] **Week 6: Gateway Failover:** Enabling this feature to automatically reroute transactions to a secondary gateway in case of an outage or technical glitch with the primary one.
-* [ ] **Week 7: Phase 1 Rewind & Review:** A summary of all covered topics and an introduction to Subscription Sessions.`
-
 <Accordion title="Week 1: Know where to go">
   # Week 1: Know where to go
 
@@ -48,7 +40,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
 
   <HTMLBlock>{`
-            <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+              <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Download: Navigate Resource Guide
@@ -72,7 +64,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   ### 1. Trail Guide: Final production testing
 
   <HTMLBlock>{`
-    <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+      <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Additional documentation
@@ -93,97 +85,97 @@ The accordion menu below will guide you through the steps needed to optimize you
 </Accordion>
 
 <Accordion title="Week 3: Dunning Optimization">
-# Week 3: Dunning Optimization
+  # Week 3: Dunning Optimization
 
-This section focuses on Dunning, a topic that can have a huge impact on revenue.
+  This section focuses on Dunning, a topic that can have a huge impact on revenue.
 
-Dunning refers to the process of recovering failed payments and preventing subscriber churn, and is one of the easiest ways to recover revenue, retain customers, and resolve payment issues. Even small improvements to your Dunning flow can drive meaningful results. Start simple, test often, and revisit this as your business grows.
+  Dunning refers to the process of recovering failed payments and preventing subscriber churn, and is one of the easiest ways to recover revenue, retain customers, and resolve payment issues. Even small improvements to your Dunning flow can drive meaningful results. Start simple, test often, and revisit this as your business grows.
 
-## Week 3 Resources
+  ## Week 3 Resources
 
-To help build and fine-tune a Dunning strategy, three quick resources are provided below. You'll find a Navigate Trail Guide that will help you understand how Dunning works, an on-demand webinar to help you optimize your setup, and  a downloadable checklist for an easy-to-follow Dunning optimization reference.
+  To help build and fine-tune a Dunning strategy, three quick resources are provided below. You'll find a Navigate Trail Guide that will help you understand how Dunning works, an on-demand webinar to help you optimize your setup, and  a downloadable checklist for an easy-to-follow Dunning optimization reference.
 
-### 1. Trail Guide: Dunning done right
+  ### 1. Trail Guide: Dunning done right
 
-Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
+  Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
 
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
+  <HTMLBlock>{`
+  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+  `}</HTMLBlock>
 
+  ### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
 
+  Discover proven strategies to reduce involuntary churn and recover lost revenue in this lunch and learn led by Hannah Wheeldon, Strategic CSM at Recurly. Gain actionable insights tailored for DTC businesses, with valuable takeaways for B2B, and learn how to optimize your dunning process for long-term growth.
 
-### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
+  <Image align="center" border={true} src="https://files.readme.io/5909cd01ef0dbb50d8aecd11abab104ecbd19f500da5eb2c4727e6f83ea21021-Screenshot_2025-11-17_at_6.28.54_PM.png" />
 
-Discover proven strategies to reduce involuntary churn and recover lost revenue in this lunch and learn led by Hannah Wheeldon, Strategic CSM at Recurly. Gain actionable insights tailored for DTC businesses, with valuable takeaways for B2B, and learn how to optimize your dunning process for long-term growth.
+  <Callout icon="⏯️" theme="default">
+    **<Anchor label="Watch On-Demand Here" target="_blank" href="https://recurly.registration.goldcast.io/webinar/a65f472f-9876-4736-9209-5b7b669de773">Watch On-Demand Here</Anchor>**
+  </Callout>
 
-<Image align="center" border={true} src="https://files.readme.io/5909cd01ef0dbb50d8aecd11abab104ecbd19f500da5eb2c4727e6f83ea21021-Screenshot_2025-11-17_at_6.28.54_PM.png" className="border" />
+  ### 3. Dunning optimization checklist
 
-<Callout icon="⏯️" theme="default">
-  **<Anchor label="Watch On-Demand Here" target="_blank" href="https://recurly.registration.goldcast.io/webinar/a65f472f-9876-4736-9209-5b7b669de773">Watch On-Demand Here</Anchor>**
-</Callout>
+  A quick reference of best practices and configurations to keep your Dunning strategy and setup polished.
 
-
-
-### 3. Dunning optimization checklist
-
-A quick reference of best practices and configurations to keep your Dunning strategy and setup polished.
-
-<Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
-
+  <Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
 </Accordion>
 
-
-# Week 3: Dunning Optimization
-
-This section focuses on Dunning, a topic that can have a huge impact on revenue.
-
-Dunning refers to the process of recovering failed payments and preventing subscriber churn, and is one of the easiest ways to recover revenue, retain customers, and resolve payment issues. Even small improvements to your Dunning flow can drive meaningful results. Start simple, test often, and revisit this as your business grows.
-
-## Week 3 Resources
-
-To help build and fine-tune a Dunning strategy, three quick resources are provided below. You'll find a Navigate Trail Guide that will help you understand how Dunning works, an on-demand webinar to help you optimize your setup, and  a downloadable checklist for an easy-to-follow Dunning optimization reference.
-
-### 1. Trail Guide: Dunning done right
-
-Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
-
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
-
 <br />
-
-### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
-
-Discover proven strategies to reduce involuntary churn and recover lost revenue in this lunch and learn led by Hannah Wheeldon, Strategic CSM at Recurly. Gain actionable insights tailored for DTC businesses, with valuable takeaways for B2B, and learn how to optimize your dunning process for long-term growth.
-
-<Image align="center" border={true} src="https://files.readme.io/5909cd01ef0dbb50d8aecd11abab104ecbd19f500da5eb2c4727e6f83ea21021-Screenshot_2025-11-17_at_6.28.54_PM.png" className="border" />
-
-<Callout icon="⏯️" theme="default">
-  **<Anchor label="Watch On-Demand Here" target="_blank" href="https://recurly.registration.goldcast.io/webinar/a65f472f-9876-4736-9209-5b7b669de773">Watch On-Demand Here</Anchor>**
-</Callout>
-
-<br />
-
-### 3. Dunning optimization checklist
-
-A quick reference of best practices and configurations to keep your Dunning strategy and setup polished.
 
 <Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
 
-<br />
+<Accordion title="Week 4: Account Updater">
+# Week 4: Account Updater
 
-Week 4: Account Updater
+This section is about protecting revenue with Account Updater, a tool that automatically refreshes billing information before payments fail. Account Updater helps prevent losing subscribers due to expired cards or new card numbers. This ensures subscriptions renew smoothly and reduces involuntary churn.
 
-This section is about protecting revenue with Account Updater, a tool that automatically refreshes billing information before payments fail.Week 4: Secure your launch with Account Updater
+## Week 4 Resources
 
-Account Updater helps prevent losing subscribers due to expired cards or new card numbers. This ensures subscriptions renew smoothly and reduces involuntary churn.
+Below, you'll find everything needed to enable Account Updater.
 
-Below, you'll find everything needed to set it up.
-Video: Account Updater Setup
-Recurly Docs: Account Updater: An in-depth view of how to configure Recurly’s Account Updater service, including direct integration with American Express® Cardrefresher.
-Account Updater is an invaluable asset. If you have any questions about setup, reach out to your Account Manager or visit the Support Center.
+### 1. Trail Guide: Account updater
+
+Learn how Recurly’s Account Updater helps prevent failed payments by automatically updating expired or replaced credit cards.
+
+Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
+
+<HTMLBlock>{`
+<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+`}</HTMLBlock>
+
+### 2. Recurly Docs: Account updater
+
+An in-depth view of how to configure Recurly’s Account Updater service, including direct integration with American Express® Cardrefresher. Account Updater is an invaluable asset. If you have any questions about setup, reach out to your Account Manager or visit the Support Center.
+
+**<Anchor label="Learn More About Account Updater" target="_blank" href="https://docs.recurly.com/docs/account-updater">Learn More About Account Updater</Anchor>**
+</Accordion>
+
+# Week 4: Account Updater
+
+This section is about protecting revenue with Account Updater, a tool that automatically refreshes billing information before payments fail. Account Updater helps prevent losing subscribers due to expired cards or new card numbers. This ensures subscriptions renew smoothly and reduces involuntary churn.
+
+## Week 4 Resources
+
+Below, you'll find everything needed to enable Account Updater.
+
+### 1. Trail Guide: Account updater
+
+Learn how Recurly’s Account Updater helps prevent failed payments by automatically updating expired or replaced credit cards.
+
+Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
+
+<HTMLBlock>{`
+<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+`}</HTMLBlock>
+
+### 2. Recurly Docs: Account updater
+
+An in-depth view of how to configure Recurly’s Account Updater service, including direct integration with American Express® Cardrefresher. Account Updater is an invaluable asset. If you have any questions about setup, reach out to your Account Manager or visit the Support Center.
+
+**<Anchor label="Learn More About Account Updater" target="_blank" href="https://docs.recurly.com/docs/account-updater">Learn More About Account Updater</Anchor>**
+
+
+Recurly Docs: Account Updater: 
 
 Week 5: Branding Emails and Invoices
 
