@@ -14,7 +14,6 @@ This quick Trail Guide shares actionable tips to reduce churn and boost your bot
 `}</HTMLBlock>
 
 <HTMLBlock>{`
-\`\`\`html
 <style>
   .hidden-content {
     display: none;
