@@ -40,7 +40,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
 
   <HTMLBlock>{`
-              <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+                <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Download: Navigate Resource Guide
@@ -64,7 +64,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   ### 1. Trail Guide: Final production testing
 
   <HTMLBlock>{`
-      <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Additional documentation
@@ -100,7 +100,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
 
   <HTMLBlock>{`
-  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+    <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
@@ -120,77 +120,96 @@ The accordion menu below will guide you through the steps needed to optimize you
   <Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
 </Accordion>
 
-<br />
-
-<Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
-
 <Accordion title="Week 4: Account Updater">
-# Week 4: Account Updater
+  # Week 4: Account Updater
 
-This section is about protecting revenue with Account Updater, a tool that automatically refreshes billing information before payments fail. Account Updater helps prevent losing subscribers due to expired cards or new card numbers. This ensures subscriptions renew smoothly and reduces involuntary churn.
+  This section is about protecting revenue with Account Updater, a tool that automatically refreshes billing information before payments fail. Account Updater helps prevent losing subscribers due to expired cards or new card numbers. This ensures subscriptions renew smoothly and reduces involuntary churn.
 
-## Week 4 Resources
+  ## Week 4 Resources
 
-Below, you'll find everything needed to enable Account Updater.
+  Below, you'll find everything needed to enable Account Updater.
 
-### 1. Trail Guide: Account updater
+  ### 1. Trail Guide: Account updater
 
-Learn how Recurly’s Account Updater helps prevent failed payments by automatically updating expired or replaced credit cards.
+  Learn how Recurly’s Account Updater helps prevent failed payments by automatically updating expired or replaced credit cards.
 
-Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
+  Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
 
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
+  <HTMLBlock>{`
+  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+  `}</HTMLBlock>
 
-### 2. Recurly Docs: Account updater
+  ### 2. Recurly Docs: Account updater
 
-An in-depth view of how to configure Recurly’s Account Updater service, including direct integration with American Express® Cardrefresher. Account Updater is an invaluable asset. If you have any questions about setup, reach out to your Account Manager or visit the Support Center.
+  An in-depth view of how to configure Recurly’s Account Updater service, including direct integration with American Express® Cardrefresher. Account Updater is an invaluable asset. If you have any questions about setup, reach out to your Account Manager or visit the Support Center.
 
-**<Anchor label="Learn More About Account Updater" target="_blank" href="https://docs.recurly.com/docs/account-updater">Learn More About Account Updater</Anchor>**
+  **<Anchor label="Learn More About Account Updater" target="_blank" href="https://docs.recurly.com/docs/account-updater">Learn More About Account Updater</Anchor>**
 </Accordion>
 
-# Week 4: Account Updater
-
-This section is about protecting revenue with Account Updater, a tool that automatically refreshes billing information before payments fail. Account Updater helps prevent losing subscribers due to expired cards or new card numbers. This ensures subscriptions renew smoothly and reduces involuntary churn.
-
-## Week 4 Resources
-
-Below, you'll find everything needed to enable Account Updater.
-
-### 1. Trail Guide: Account updater
-
-Learn how Recurly’s Account Updater helps prevent failed payments by automatically updating expired or replaced credit cards.
-
-Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
-
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
-
-### 2. Recurly Docs: Account updater
-
-An in-depth view of how to configure Recurly’s Account Updater service, including direct integration with American Express® Cardrefresher. Account Updater is an invaluable asset. If you have any questions about setup, reach out to your Account Manager or visit the Support Center.
-
-**<Anchor label="Learn More About Account Updater" target="_blank" href="https://docs.recurly.com/docs/account-updater">Learn More About Account Updater</Anchor>**
 
 
-Recurly Docs: Account Updater: 
 
-Week 5: Branding Emails and Invoices
+<Accordion title="Week 5: Branding Emails & Invoices">
+# Week 5: Branding Emails and Invoices
 
-This section focuses on a high-impact part of the subscriber experience: branding. Recurly-hosted messaging should feel like a seamless extension of your company.Week 5: Build trust, consistency, and personality with branding
+This section focuses on a high-impact part of the subscriber experience: branding. Recurly-hosted messaging should feel like a seamless extension of your company, building trust, consistency, and personality with branding
 
-The messages sent impact customer experience and perception. Every touch point should reflect your company's personality and values.
-
-Consistent branding reduces friction, drives conversion, and helps to create trust and strengthen relationships with subscribers.
+The messages sent impact customer experience and perception. Every touch point should reflect your company's personality and values. Consistent branding reduces friction, drives conversion, and helps to create trust and strengthen relationships with subscribers.
 
 Recurly offers a wide array of branding opportunities within messaging and configuration; this section focuses on emails and invoices. These are communications customers will always see, making them the most impactful place to begin.
 
+## Week 5 Resources
+
 Below, you'll find a quick Trail Guide to get started, and for more in-depth instructions on how to customize invoices, access RecurlyDocs.
-Video: Branding Emails & Invoices
-Recurly Docs: Invoice Customization
+
+### 1. Trail Guide: Branding emails & invoices
+
+Join Julia for a quick overview of how to apply your brand to emails and invoices in Recurly. You’ll learn where to find template settings, what’s customizable, and how to manage branding across multiple business entities.
+
+<HTMLBlock>{`
+<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+`}</HTMLBlock>
+
+### 2. Recurly Docs: Invoice customization
+
+Easily customize your invoices with professional templates for professional consistency. 
+
+**<Anchor label="Learn More About Invoice Template Customization" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization">Learn More About Invoice Template Customization</Anchor>**
+
 This is just the beginning of building an all-encompassing customer experience. Tackling the basics sets you up for success down the road.
+</Accordion>
+
+# Week 5: Branding Emails and Invoices
+
+This section focuses on a high-impact part of the subscriber experience: branding. Recurly-hosted messaging should feel like a seamless extension of your company, building trust, consistency, and personality with branding
+
+The messages sent impact customer experience and perception. Every touch point should reflect your company's personality and values. Consistent branding reduces friction, drives conversion, and helps to create trust and strengthen relationships with subscribers.
+
+Recurly offers a wide array of branding opportunities within messaging and configuration; this section focuses on emails and invoices. These are communications customers will always see, making them the most impactful place to begin.
+
+## Week 5 Resources
+
+Below, you'll find a quick Trail Guide to get started, and for more in-depth instructions on how to customize invoices, access RecurlyDocs.
+
+### 1. Trail Guide: Branding emails & invoices
+
+Join Julia for a quick overview of how to apply your brand to emails and invoices in Recurly. You’ll learn where to find template settings, what’s customizable, and how to manage branding across multiple business entities.
+
+<HTMLBlock>{`
+<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+`}</HTMLBlock>
+
+### 2. Recurly Docs: Invoice customization
+
+Easily customize your invoices with professional templates for professional consistency. 
+
+**<Anchor label="Learn More About Invoice Template Customization" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization">Learn More About Invoice Template Customization</Anchor>**
+
+This is just the beginning of building an all-encompassing customer experience. Tackling the basics sets you up for success down the road.
+
+<br />
+
+<br />
 
 Week 6: Gateway Failover
 
