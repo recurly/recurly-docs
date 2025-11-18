@@ -26,37 +26,33 @@ You'll walk step-by-step through the following resources for a comprehensive Dun
 * **Navigate On-Demand Webinar: Stop the Leak: How to Optimize Dunning for Growth:** Discover proven, actionable optimization strategies tailored for subscription businesses to maximize revenue recovery and support long-term growth.
 * **Dunning Optimization Checklist:** Access a quick reference guide of key configurations and best practices to keep your Dunning strategy fully optimized.
 
-## Measurable outcomes
+## How to measure impact
 
 The purpose of this Dunning path is to drive measurable results. Use the following critical metrics to track the positive impact on your revenue recovery and overall subscription health after completing this learning path and taking the recommended steps to improve your Dunning strategy.
 
 ### Dunning Recovery Rate (or Payment Recovery Rate)
 
-**What it is: **The percentage of failed payments/invoices that are successfully recovered through your Dunning efforts (retries and customer communication).
-
-**The Improvement: **This rate will increase, showing that your system is more effective at capturing lost revenue.
+* **What it is**: The percentage of failed payments/invoices that are successfully recovered through your Dunning efforts (retries and customer communication).
+* **The Improvement**: This rate will increase, showing that your system is more effective at capturing lost revenue.
 
 ### Involuntary Churn Rate
 
-**What it is: **The percentage of customers who unintentionally cancel their subscription due to a payment failure (expired card, insufficient funds, etc.).
-
-**The Improvement: **This rate will decrease, as you are successfully recovering more failed payments and keeping those customers active.
+* **What it is**: The percentage of customers who unintentionally cancel their subscription due to a payment failure (expired card, insufficient funds, etc.).
+* **The Improvement**: This rate will decrease, as you are successfully recovering more failed payments and keeping those customers active.
 
 ### Monthly Recurring Revenue (MRR) Churn
 
-**What it is:** The total revenue lost from customers who cancel or downgrade, including revenue lost from involuntary churn.
-
-**The Improvement: **This will decrease, protecting your predictable monthly revenue stream.
+* **What it is:** The total revenue lost from customers who cancel or downgrade, including revenue lost from involuntary churn.
+* **The Improvement**: This will decrease, protecting your predictable monthly revenue stream.
 
 ### Customer Lifetime Value (CLTV):
 
-**What it is: **The total revenue a single customer is expected to generate throughout their entire relationship with your business.
-
-**The Improvement: **This will increase because reducing involuntary churn means customers stay subscribed for a longer period of time.
+* **What it is**: The total revenue a single customer is expected to generate throughout their entire relationship with your business.
+* **The Improvement**: This will increase because reducing involuntary churn means customers stay subscribed for a longer period of time.
 
 <br />
 
-# Get started
+# Getting started
 
 Follow "What's Next" steps below to continue your learning.
 
