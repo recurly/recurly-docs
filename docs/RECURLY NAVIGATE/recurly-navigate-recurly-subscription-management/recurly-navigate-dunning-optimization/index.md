@@ -6,6 +6,9 @@ hidden: true
 metadata:
   robots: index
 next:
+  description: >-
+    Watch this 5-minute Trail Guide to learn actionable tips that help you
+    reduce churn and boost your bottom line.
   pages:
     - slug: recurly-navigate-trail-guide-easy-wins-dunning-done-right
       title: 'Recurly Navigate Trail Guide: Easy Wins, Dunning Done Right'
