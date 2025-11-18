@@ -13,8 +13,16 @@ This quick Trail Guide shares actionable tips to reduce churn and boost your bot
 <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/7f58d816-a65c-42f4-950d-59b11953d1aa" loading="lazy" title="Synthesia video player - Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
 `}</HTMLBlock>
 
-```
-<p class="hidden" Launchpad Trail Guide: Easy Wins: Dunning Done RightIntroduction
+````
+```html
+<style>
+  .hidden-content {
+    display: none;
+  }
+</style>
+
+<div class="hidden-content">
+Launchpad Trail Guide: Easy Wins: Dunning Done RightIntroduction
 
 
 Welcome to Launchpad, part of the Recurly Navigate program! This collection of actionable guides is designed to ignite your Recurly liftoff. This guide will help you optimize your Dunning strategy, reducing churn and recovering revenue without adding complexity to your workflow.
@@ -65,7 +73,9 @@ After running the playbook, you can then go into your Dunning settings and revam
 
 
 Recurly is here to help. For a deep dive into Dunning strategy, check out the on-demand webinar: "Stop the Leak: How to Optimize Dunning for Growth." Also, make sure to grab the handy checklist to keep tabs on your setup. You can find help and access documentation directly inside your Recurly app, or you can search Compass with any questions you have about Dunning.
-</p>
+</div>
 ```
+
+````
 
 <br />
