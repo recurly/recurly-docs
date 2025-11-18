@@ -92,21 +92,50 @@ The accordion menu below will guide you through the steps needed to optimize you
   </Cards>
 </Accordion>
 
+
+
+
 <br />
 
-Week 3: Dunning Optimization
+# Week 3: Dunning Optimization
 
 This section focuses on Dunning, a topic that can have a huge impact on revenue.
 
-Dunning refers to the process of recovering failed payments and preventing subscriber churn.Week 3: Dunning done right
+Dunning refers to the process of recovering failed payments and preventing subscriber churn, and is one of the easiest ways to recover revenue, retain customers, and resolve payment issues. Even small improvements to your Dunning flow can drive meaningful results. Start simple, test often, and revisit this as your business grows.
 
-Dunning is one of the easiest ways to recover revenue, retain customers, and resolve payment issues.
+## Week 3 Resources
 
-To help build and fine-tune a Dunning strategy, three quick resources are provided:
-Video: Dunning Strategy
-On-demand webinar: Dunning Optimization
-Navigate Dunning Optimization Checklist
-Even small improvements to your Dunning flow can drive meaningful results. Start simple, test often, and revisit this as your business grows.
+To help build and fine-tune a Dunning strategy, three quick resources are provided below. You'll find a Navigate Trail Guide that will help you understand how Dunning works, an on-demand webinar to help you optimize your setup, and  a downloadable checklist for an easy-to-follow Dunning optimization reference. 
+
+### Trail Guide: Dunning done right
+
+Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes. 
+
+<HTMLBlock>{`
+<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+`}</HTMLBlock>
+
+<br />
+
+### On-demand webinar: Stop the Leak: How to optimize Dunning for growth
+
+Discover proven strategies to reduce involuntary churn and recover lost revenue in this lunch and learn led by Hannah Wheeldon, Strategic CSM at Recurly. Gain actionable insights tailored for DTC businesses, with valuable takeaways for B2B, and learn how to optimize your dunning process for long-term growth. 
+
+<Image align="center" border={true} src="https://files.readme.io/5909cd01ef0dbb50d8aecd11abab104ecbd19f500da5eb2c4727e6f83ea21021-Screenshot_2025-11-17_at_6.28.54_PM.png" className="border" />
+
+<Callout icon="⏯️">
+  **<Anchor label="Watch On-Demand Here" target="_blank" href="https://recurly.registration.goldcast.io/webinar/a65f472f-9876-4736-9209-5b7b669de773">Watch On-Demand Here</Anchor>**
+</Callout>
+
+### Dunning optimization checklist
+
+A quick reference of best practices and configurations to keep your Dunning strategy and setup polished. 
+
+<br />
+
+<Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
+
+<br />
 
 Week 4: Account Updater
 
