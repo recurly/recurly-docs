@@ -20,12 +20,10 @@ This learning path provides the essential knowledge and tools to master your Rec
 
 ## What to expect
 
-You'll walk step-by-step through the following resources for a comprehensive Dunning overview. 
+You'll walk step-by-step through the following resources for a comprehensive Dunning overview.
 
 * **Recurly Navigate Trail Guide: Easy Wins: Dunning Done Right:** Learn the fundamentals of Dunning setup, how it works, and strategic quick tips to start reducing churn immediately.
 * **Navigate On-Demand Webinar: Stop the Leak: How to Optimize Dunning for Growth:** Discover proven, actionable optimization strategies tailored for subscription businesses to maximize revenue recovery and support long-term growth.
 * **Dunning Optimization Checklist:** Access a quick reference guide of key configurations and best practices to keep your Dunning strategy fully optimized.
 
-Follow "What's Next" steps below to continue your learning. 
-
-<br />
+Follow "What's Next" steps below to continue your learning.
