@@ -4,6 +4,19 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  description: >-
+    **Phase 2 of the Launchpad program** will explore how to use Recurly data to
+    uncover insights, make confident decisions, and grow smarter. From
+    benchmarks to subscriber metrics to a personalized Health Scorecard — the
+    focus will be on valuable data.
+
+
+    Click below to continue to Phase 2. 
+  pages:
+    - slug: recurly-navigate-launch-phase-2-metrics
+      title: 'Recurly Navigate: Launchpad Phase 2, Mastering Metrics'
+      type: basic
 ---
 <br />
 
@@ -40,7 +53,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
 
   <HTMLBlock>{`
-                <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+                  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Download: Navigate Resource Guide
@@ -64,7 +77,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   ### 1. Trail Guide: Final production testing
 
   <HTMLBlock>{`
-        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+          <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Additional documentation
@@ -100,7 +113,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
 
   <HTMLBlock>{`
-    <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+      <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
@@ -136,7 +149,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
 
   <HTMLBlock>{`
-  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+    <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Recurly Docs: Account updater
@@ -146,93 +159,89 @@ The accordion menu below will guide you through the steps needed to optimize you
   **<Anchor label="Learn More About Account Updater" target="_blank" href="https://docs.recurly.com/docs/account-updater">Learn More About Account Updater</Anchor>**
 </Accordion>
 
-
-
-
 <Accordion title="Week 5: Branding Emails & Invoices">
-# Week 5: Branding Emails and Invoices
+  # Week 5: Branding Emails and Invoices
 
-This section focuses on a high-impact part of the subscriber experience: branding. Recurly-hosted messaging should feel like a seamless extension of your company, building trust, consistency, and personality with branding
+  This section focuses on a high-impact part of the subscriber experience: branding. Recurly-hosted messaging should feel like a seamless extension of your company, building trust, consistency, and personality with branding
 
-The messages sent impact customer experience and perception. Every touch point should reflect your company's personality and values. Consistent branding reduces friction, drives conversion, and helps to create trust and strengthen relationships with subscribers.
+  The messages sent impact customer experience and perception. Every touch point should reflect your company's personality and values. Consistent branding reduces friction, drives conversion, and helps to create trust and strengthen relationships with subscribers.
 
-Recurly offers a wide array of branding opportunities within messaging and configuration; this section focuses on emails and invoices. These are communications customers will always see, making them the most impactful place to begin.
+  Recurly offers a wide array of branding opportunities within messaging and configuration; this section focuses on emails and invoices. These are communications customers will always see, making them the most impactful place to begin.
 
-## Week 5 Resources
+  ## Week 5 Resources
 
-Below, you'll find a quick Trail Guide to get started, and for more in-depth instructions on how to customize invoices, access RecurlyDocs.
+  Below, you'll find a quick Trail Guide to get started, and for more in-depth instructions on how to customize invoices, access RecurlyDocs.
 
-### 1. Trail Guide: Branding emails & invoices
+  ### 1. Trail Guide: Branding emails & invoices
 
-Join Julia for a quick overview of how to apply your brand to emails and invoices in Recurly. You’ll learn where to find template settings, what’s customizable, and how to manage branding across multiple business entities.
+  Join Julia for a quick overview of how to apply your brand to emails and invoices in Recurly. You’ll learn where to find template settings, what’s customizable, and how to manage branding across multiple business entities.
 
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
+  <HTMLBlock>{`
+  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+  `}</HTMLBlock>
 
-### 2. Recurly Docs: Invoice customization
+  ### 2. Recurly Docs: Invoice customization
 
-Easily customize your invoices with professional templates for professional consistency. 
+  Easily customize your invoices with professional templates for professional consistency.
 
-**<Anchor label="Learn More About Invoice Template Customization" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization">Learn More About Invoice Template Customization</Anchor>**
+  **<Anchor label="Learn More About Invoice Template Customization" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization">Learn More About Invoice Template Customization</Anchor>**
 
-This is just the beginning of building an all-encompassing customer experience. Tackling the basics sets you up for success down the road.
+  This is just the beginning of building an all-encompassing customer experience. Tackling the basics sets you up for success down the road.
 </Accordion>
 
-# Week 5: Branding Emails and Invoices
+<Accordion title="Week 6: Gateway Failover">
+# Week 6: Gateway Failover
 
-This section focuses on a high-impact part of the subscriber experience: branding. Recurly-hosted messaging should feel like a seamless extension of your company, building trust, consistency, and personality with branding
+This section covers Gateway Failover, a feature that keeps payments flowing, even when the primary gateway has a technical glitch.
 
-The messages sent impact customer experience and perception. Every touch point should reflect your company's personality and values. Consistent branding reduces friction, drives conversion, and helps to create trust and strengthen relationships with subscribers.
-
-Recurly offers a wide array of branding opportunities within messaging and configuration; this section focuses on emails and invoices. These are communications customers will always see, making them the most impactful place to begin.
-
-## Week 5 Resources
-
-Below, you'll find a quick Trail Guide to get started, and for more in-depth instructions on how to customize invoices, access RecurlyDocs.
-
-### 1. Trail Guide: Branding emails & invoices
-
-Join Julia for a quick overview of how to apply your brand to emails and invoices in Recurly. You’ll learn where to find template settings, what’s customizable, and how to manage branding across multiple business entities.
-
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
-
-### 2. Recurly Docs: Invoice customization
-
-Easily customize your invoices with professional templates for professional consistency. 
-
-**<Anchor label="Learn More About Invoice Template Customization" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization">Learn More About Invoice Template Customization</Anchor>**
-
-This is just the beginning of building an all-encompassing customer experience. Tackling the basics sets you up for success down the road.
-
-<br />
-
-<br />
-
-Week 6: Gateway Failover
-
-This section covers Gateway Failover, a feature that keeps payments flowing, even when the primary gateway has a technical glitch.Week 6: Protect your revenue, reputation, and peace of mind
-
-Outages are rare, but when they occur, they can be costly.
-
-Whether it’s a system-wide disruption, or a gateway unexpectedly fails due to fraud, chargebacks, or an error, installing this safety net keeps revenue safe.
+Outages are rare, but when they occur, they can be costly. Whether it’s a system-wide disruption, or a gateway unexpectedly fails due to fraud, chargebacks, or an error, installing this safety net keeps revenue safe.
 
 Recurly’s Gateway Failover feature automatically reroutes transactions to a secondary gateway. New subscribers can still sign up, and payments keep flowing without interruption.
 
+## Week 6 Resources
+
 Watch this Trail Guide and check out Recurly Docs (below) for a quick overview of what a secondary gateway means for your business and how to enable it.
-Video: Gateway Failover
-Recurly Docs: Gateway Failover: A closer look at Recurly’s logic for gateway selection, supported gateways, and failover limitations.
+
+### 1. Trail Guide: Gateway failover
+
+Join Julia to learn how Gateway Failover helps protect your revenue by rerouting transactions during gateway outages. She’ll walk you through what it covers, how it works, and how to get started.
+
+<HTMLBlock>{`
+<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/12149951-6016-4a63-86fb-bab20b93da0b" loading="lazy" title="Synthesia video player - Launchpad: Build your safety net: Gateway Failover" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+`}</HTMLBlock>
+
+### 2. Recurly Docs: Gateway failover
+
+A closer look at Recurly’s logic for gateway selection, supported gateways, and failover limitations.
 Enabling failover is a smart move for risk reduction. Safeguarding revenue is crucial.
 
-You have now completed the first phase of Launchpad, Optimization. You are optimized, primed, and ready to start the second phase of the program — mastering your metrics.
+**<Anchor label="Learn More About Gateway Failover" target="_blank" href="https://docs.recurly.com/docs/gateway-failover">Learn More About Gateway Failover</Anchor>**
 
-Week 7: Phase 1 Rewind & Review
+</Accordion>
 
-This section will review everything covered so far and introduce Subscription Sessions.Week 7: Rewind and review
 
-Below, you'll find a quick reference to everything covered during the first six weeks, including the resources shared along the way.
-Navigate Launchpad Phase One Cheatsheet
-Subscription Sessions On-Demand
-Phase 2 of the Launchpad program will explore how to use Recurly data to uncover insights, make confident decisions, and grow smarter. From benchmarks to subscriber metrics to a personalized Health Scorecard — the focus will be on valuable data.
+<Accordion title="Week 7: Phase 1 Rewind & Review">
+  # Week 7: Phase 1 Rewind & Review
+
+This section will review everything covered so far and introduce Subscription Sessions.
+
+Below, you'll find a quick reference to everything we covered (and why) during the first six weeks, including the resources we shared along the way.
+
+In addition to your Recurly Navigate customer success program, make sure to keep our year-round virtual and in-person events on your radar! They're a great way to learn about Recurly's newest features and hear inspiring customer stories.
+
+You can explore our latest Subscription Sessions series using the card linked below.
+
+<Cards columns={2}>
+  <Card title="Navigate Launchpad: Phase One Cheatsheet" href="https://go.recurly.com/Navigate-Launchpad-Phase-One-Cheatsheet.html">
+   Keep this download handy as a quick reference to the first six weeks of essential tips and resources. 
+  </Card>
+
+  <Card title="Recurly's 2025 Subscriptions Sessions: Going Global" href="https://recurly.com/events/subscriptionsessions-on-demand/?utm_medium=email&utm_source=marketi">
+    **On-Demand**: Learn strategies to reduce churn, drive growth, and expand globally with your brand new subscription solution. 
+  </Card>
+</Cards>
+
+  
+</Accordion>
+
+<br />
