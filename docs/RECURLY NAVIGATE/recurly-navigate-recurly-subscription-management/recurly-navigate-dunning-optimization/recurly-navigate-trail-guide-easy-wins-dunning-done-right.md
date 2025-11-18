@@ -73,7 +73,6 @@ After running the playbook, you can then go into your Dunning settings and revam
 
 Recurly is here to help. For a deep dive into Dunning strategy, check out the on-demand webinar: "Stop the Leak: How to Optimize Dunning for Growth." Also, make sure to grab the handy checklist to keep tabs on your setup. You can find help and access documentation directly inside your Recurly app, or you can search Compass with any questions you have about Dunning.
 </div>
-\`\`\`
 `}</HTMLBlock>
 
 <br />
