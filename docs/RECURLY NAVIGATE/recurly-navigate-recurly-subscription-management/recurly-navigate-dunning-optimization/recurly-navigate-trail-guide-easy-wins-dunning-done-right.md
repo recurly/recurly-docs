@@ -7,6 +7,20 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  description: >-
+    **Navigate on-demand webinar [30 minutes]**
+
+
+    Discover proven strategies to reduce involuntary churn and recover lost
+    revenue in this lunch and learn led by Hannah Wheeldon, Strategic CSM at
+    Recurly. Gain actionable insights tailored for DTC businesses, with valuable
+    takeaways for B2B, and learn how to optimize your dunning process for
+    long-term growth.
+  pages:
+    - slug: stop-the-leak-how-to-optimize-dunning-for-growth
+      title: 'Stop the Leak: How to optimize Dunning for growth'
+      type: basic
 ---
 Struggling with failed payments and lost revenue? Join Julia to learn how smart Dunning strategies can turn declines into recoveries.
 
