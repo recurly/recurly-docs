@@ -14,9 +14,8 @@ next:
 
     Discover proven strategies to reduce involuntary churn and recover lost
     revenue in this lunch and learn led by Hannah Wheeldon, Strategic CSM at
-    Recurly. Gain actionable insights tailored for DTC businesses, with valuable
-    takeaways for B2B, and learn how to optimize your dunning process for
-    long-term growth.
+    Recurly. Gain actionable insights with valuable takeaways, and learn how to
+    optimize your dunning process for long-term growth.
   pages:
     - slug: stop-the-leak-how-to-optimize-dunning-for-growth
       title: 'Stop the Leak: How to optimize Dunning for growth'
