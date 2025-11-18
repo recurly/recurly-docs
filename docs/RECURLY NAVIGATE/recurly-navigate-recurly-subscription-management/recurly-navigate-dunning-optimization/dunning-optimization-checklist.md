@@ -8,7 +8,11 @@ hidden: true
 metadata:
   robots: index
 ---
-<Image align="center" border={false} src="https://files.readme.io/e607fd7619cfaa1b7817f67b2aab4bf3a8386bed1784c7d5cbefa015f3720c0a-Dunning_for_growth_optimization_checklist_2.png" />
+<Image align="center" border={true} src="https://files.readme.io/e607fd7619cfaa1b7817f67b2aab4bf3a8386bed1784c7d5cbefa015f3720c0a-Dunning_for_growth_optimization_checklist_2.png" className="border" />
+
+<br />
+
+## Download it here:
 
 <Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
 
