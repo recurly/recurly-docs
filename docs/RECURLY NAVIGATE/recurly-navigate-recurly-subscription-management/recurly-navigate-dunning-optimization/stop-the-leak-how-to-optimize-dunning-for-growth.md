@@ -132,10 +132,6 @@ Implementing these dunning optimization tips can lead to significant improvement
 </div>
 `}</HTMLBlock>
 
-<HTMLBlock>{`
-
-`}</HTMLBlock>
-
 <br />
 
 <HTMLBlock>{`
