@@ -48,7 +48,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
 
   <HTMLBlock>{`
-        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+          <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### Download: Navigate Resource Guide
@@ -59,38 +59,37 @@ The accordion menu below will guide you through the steps needed to optimize you
 </Accordion>
 
 <Accordion title="Week 2: Final Production Testing">
-# Week 2: Final Production Testing
+  # Week 2: Final Production Testing
 
-This section will cover production testing, a quick final check of your subscription payment flow.
+  This section will cover production testing, a quick final check of your subscription payment flow.
 
-It's vital to experience the customer's checkout journey from start to finish before going live — and it gives a chance to catch potential payment issues along the way.
+  It's vital to experience the customer's checkout journey from start to finish before going live — and it gives a chance to catch potential payment issues along the way.
 
-## Week 2 Resources
+  ## Week 2 Resources
 
-This two-minute Trail Guide that will guide you through your final production testing steps. Just follow along! If assistance is needed with 3DS compliance or troubleshooting gateway or checkout configurations, links to documentation are provided below
+  This two-minute Trail Guide that will guide you through your final production testing steps. Just follow along! If assistance is needed with 3DS compliance or troubleshooting gateway or checkout configurations, links to documentation are provided below
 
-### Trail Guide: Final production testing
+  ### Trail Guide: Final production testing
 
-<HTMLBlock>{`
-<div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-`}</HTMLBlock>
+  <HTMLBlock>{`
+  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+  `}</HTMLBlock>
+  
+### Additional documentation
 
-.### Additional documentation
+  <Cards columns={4}>
+    <Card title="3DS Compliance" href="https://docs.recurly.com/docs/revised-payment-services-directive-psd2">
+      **European Merchants**: This comprehensive documentation will help you prepare for 3DS compliance to finalize your production testing.
+    </Card>
 
-<Cards columns={4}>
-  <Card title="3DS Compliance" href="https://docs.recurly.com/docs/revised-payment-services-directive-psd2">
-    **European Merchants**: This comprehensive documentation will help you prepare for 3DS compliance to finalize your production testing.
-  </Card>
+    <Card title="Test gateway" href="https://docs.recurly.com/recurly-subscriptions/docs/test#/">
+      **Effortlessly test your transaction configurations** with Recurly's Test Gateway, ensuring seamless live operations.
+    </Card>
 
-  <Card title="Test gateway" href="https://docs.recurly.com/recurly-subscriptions/docs/test#/">
-    **Effortlessly test your transaction configurations** with Recurly's Test Gateway, ensuring seamless live operations.
-  </Card>
-
-  <Card title="Explore checkout" href="https://docs.recurly.com/recurly-subscriptions/docs/checkout#configuration-landing-page">
-    Streamline your customers' payment experience with customizable styles, hostnames, and configurations. Get started easily and engage effectively.
-  </Card>
-</Cards>
-
+    <Card title="Explore checkout" href="https://docs.recurly.com/recurly-subscriptions/docs/checkout#configuration-landing-page">
+      Streamline your customers' payment experience with customizable styles, hostnames, and configurations. Get started easily and engage effectively.
+    </Card>
+  </Cards>
 </Accordion>
 
 <br />
