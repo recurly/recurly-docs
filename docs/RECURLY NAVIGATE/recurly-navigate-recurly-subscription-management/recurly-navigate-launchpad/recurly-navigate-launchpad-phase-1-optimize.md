@@ -40,7 +40,7 @@ The accordion menu below will guide you through the steps needed to optimize you
 <Accordion title="Week 1: Know where to go">
   # Week 1: Know where to go
 
-  You're officially in production and ready to launch. This section will walk emsure you are comfortable within the Recurly App User Interface and know where to find essential support and resources.
+  You're officially in production and ready to launch. This section will ensure you are comfortable within the Recurly App User Interface and know where to find essential support and resources.
 
   ## Week 1 Resources
 
@@ -53,7 +53,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
 
   <HTMLBlock>{`
-                      <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+                        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Download: Navigate Resource Guide
@@ -77,7 +77,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   ### 1. Trail Guide: Final production testing
 
   <HTMLBlock>{`
-              <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+                <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Additional documentation
@@ -113,7 +113,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
 
   <HTMLBlock>{`
-          <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+            <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
@@ -149,7 +149,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
 
   <HTMLBlock>{`
-        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+          <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Recurly Docs: Account updater
@@ -177,7 +177,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Join Julia for a quick overview of how to apply your brand to emails and invoices in Recurly. You’ll learn where to find template settings, what’s customizable, and how to manage branding across multiple business entities.
 
   <HTMLBlock>{`
-      <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Recurly Docs: Invoice customization
@@ -207,7 +207,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Join Julia to learn how Gateway Failover helps protect your revenue by rerouting transactions during gateway outages. She’ll walk you through what it covers, how it works, and how to get started.
 
   <HTMLBlock>{`
-    <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/12149951-6016-4a63-86fb-bab20b93da0b" loading="lazy" title="Synthesia video player - Launchpad: Build your safety net: Gateway Failover" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+      <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/12149951-6016-4a63-86fb-bab20b93da0b" loading="lazy" title="Synthesia video player - Launchpad: Build your safety net: Gateway Failover" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Recurly Docs: Gateway failover
