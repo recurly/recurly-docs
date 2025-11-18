@@ -5,6 +5,15 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  description: >-
+    Download the Dunning Optimization Checklist: A quick reference of best
+    practices and configurations to keep your Dunning setup and strategy
+    polished. 
+  pages:
+    - slug: dunning-optimization-checklist
+      title: Dunning Optimization Checklist
+      type: basic
 ---
 Discover proven strategies to reduce involuntary churn and recover lost revenue in this lunch and learn led by Hannah Wheeldon, Strategic CSM at Recurly. Gain actionable insights tailored for DTC businesses, with valuable takeaways for B2B, and learn how to optimize your dunning process for long-term growth.
 
