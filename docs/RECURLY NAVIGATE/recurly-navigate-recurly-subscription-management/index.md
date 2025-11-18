@@ -5,6 +5,7 @@ hidden: true
 metadata:
   robots: index
 next:
+  description: Choose your learning path.
   pages:
     - slug: recurly-navigate-launchpad
       title: 'Recurly Navigate: Launchpad'
