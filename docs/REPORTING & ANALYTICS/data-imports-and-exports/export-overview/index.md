@@ -22,13 +22,11 @@ next:
 
 # Exports overview
 
-* All of the exports listed in the below table  are available through the [admin console](https://app.recurly.com/go/async_exports) and the Recurly API.
+* All of the exports listed in the below table are available through the [admin console](https://app.recurly.com/go/async_exports) and the Recurly API.
 
 * Exports will use the site timezone (under Site Settings) rather than the users timezone when determining what data will be exported. Additionally, the days that are requested will be exported in their entirety rather than potentially having missing data for current day.
 
-* See [New Versions](https://docs.recurly.com/v1.0/docs/export-overview#section-export-versions) for information about how changes to individual exports will create new versions of that export.
-
-* See [Automated Exports](https://docs.recurly.com/v1.0/docs/export-overview#section-automated-exports) for more information about access via the Recurly API.
+* See [Automated Exports](https://docs.recurly.com/recurly-subscriptions/docs/automated-exports)  for more information about access via the Recurly API.
 
 <br />
 
@@ -295,7 +293,7 @@ next:
       </td>
 
       <td>
-        All subscription add-ons created from a saved item in your Item Catalog.-
+        All subscription add-ons created from a saved item in your Item Catalog.
       </td>
     </tr>
 
@@ -446,6 +444,7 @@ All exports default to using ZIP compression.
 3. Select the **Versions**, **Account status** and **Export on** filters
 4. Select **Time range** to  **Between** and **Start date** to May 1 and **End date** to May 31
 5. Click **Generate Export**
+6. Click **Download** in the Generated Exports List
 
 ### Example: All subscriptions that have expired
 
@@ -454,6 +453,7 @@ All exports default to using ZIP compression.
 3. Select the **Versions** filter
 4. Select **Time range** to  **All Time**
 5. Click **Generate Export**
+6. Click **Download** in the Generated Exports List
 
 ### Example: All coupons redeemed in July
 
@@ -461,7 +461,8 @@ All exports default to using ZIP compression.
 2. Select **Coupon Redemptions.**
 3. Select the **Versions** filter
 4. Select **Time range** to  **Between** and **Start date** to July 1 and **End date** to July 31
-5. Click **Generate Export.**
+5. Click **Generate Export**
+6. Click **Download** in the Generated Exports List
 
 ## Helpful tips: combining exports
 

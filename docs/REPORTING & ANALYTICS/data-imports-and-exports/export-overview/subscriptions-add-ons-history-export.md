@@ -25,7 +25,7 @@ Please reach out to your Recurly account manager or [support@recurly.com](mailto
 
 # Definition
 
-Explore the subscription add-on history feature that allows tracking all the changes made to a subscription add-on over time. Every time a change or multiple changes are made simultaneously, a new version of the subscription add-on history is created. This feature is vital for keeping historical versions of add-ons that change on subscriptions.
+Explore the subscription add-on history feature that allows tracking all the changes made to a subscription add-on over time. Every time a change or multiple changes are made simultaneously, a new version of the subscription add-on history is created. This feature is vital for keeping historical versions of add-ons that change on subscriptions. The oldest historical data available for this export is April 2019.
 
 <Image border={false} src="https://files.readme.io/a8af2a1c6dce65ec6d6ce49fa08ebe63610dd52973be9e54b4387f369503744a-image.png" />
 
@@ -45,9 +45,9 @@ Explore the subscription add-on history feature that allows tracking all the cha
 
 ### Export On Filters
 
-*  **Activated** - showcases the past versions of subscription add-ons that were activated or reactivated within the chosen time frame. It utilizes the `subscription_activated_at` column for data representation.
+* **Activated** - showcases the past versions of subscription add-ons that were activated or reactivated within the chosen time frame. It utilizes the `subscription_activated_at` column for data representation.
 * **Version Created** - depicts the past versions of subscription add-ons generated during a specified time range, utilizing data from the `version_started_at` column.
-*  **Version Modified** - view recent alterations to all subscriptions within a chosen time range, referring to a combination of _version_state_ and version_started_at columns.
+* **Version Modified** - view recent alterations to all subscriptions within a chosen time range, referring to a combination of _version_state_ and version_started_at columns.
 
 ### **Time Range Filter**
 

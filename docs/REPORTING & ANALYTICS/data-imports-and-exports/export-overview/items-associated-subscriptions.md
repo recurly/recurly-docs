@@ -18,6 +18,10 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Prerequisite
+
+You must enable the credit invoices feature to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
+
 # Definition
 
 The "Items - Associated Subscriptions" export provides comprehensive details of all subscription add-ons generated from a saved item in your catalog over a certain period. It focuses on add-ons linked to renewing, future start, last billing period, and paused subscriptions, omitting details from canceled or expired subscriptions.

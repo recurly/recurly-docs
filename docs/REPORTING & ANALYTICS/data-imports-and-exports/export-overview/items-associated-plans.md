@@ -18,6 +18,10 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Prerequisites
+
+You must enable the credit invoices feature to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
+
 # Definition
 
 The "Items - Associated Plans" export function in Recurly permits users to generate a report containing detailed information on all plan add-ons created from a saved item in your catalog during a specified period. It focuses exclusively on add-ons that are presently linked to active plans, ensuring that your report only contains the most pertinent and up-to-date data.

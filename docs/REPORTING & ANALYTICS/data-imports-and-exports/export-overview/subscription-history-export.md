@@ -24,7 +24,7 @@ Please reach out to your Recurly account manager or [support@recurly.com](mailto
 
 # Definition
 
-The “Subscriptions - History” section enables users to view the history of each subscription including all versions created following any change to a subscription. This includes monitoring various movements such as upgrades, downgrades, cancellations, trial conversions, and more, facilitating in-depth tracking of a subscriber's lifecycle. It is essential to note that the subscription history export only tracks the changes post the activation of a subscription.
+The “Subscriptions - History” section enables users to view the history of each subscription including all versions created following any change to a subscription. This includes monitoring various movements such as upgrades, downgrades, cancellations, trial conversions, and more, facilitating in-depth tracking of a subscriber's lifecycle. It is essential to note that the subscription history export only tracks the changes post the activation of a subscription. The oldest historical data available for this export is April 2019.
 
 <Image border={false} src="https://files.readme.io/b393490192b8f18f4eb66a0e75f9c8b14c25304cbfedcc735c505c5849082866-image.png" />
 
@@ -44,9 +44,9 @@ The “Subscriptions - History” section enables users to view the history of e
 
 ### Export On Filters
 
-*  **Activated**: Use this filter to view past versions of activated or reactivated subscriptions within a specified timeframe, utilizing the _subscription_activated_at_ column.
-*  **Version Created**: View recent creations to all subscriptions within a chosen time range, referring to the _version_created_at_ column.
-*  **Version Modified**: View recent alterations to all subscriptions within a chosen time range, referring to a combination of _version_state_ and _version_created_at_ columns.
+* **Activated**: Use this filter to view past versions of activated or reactivated subscriptions within a specified timeframe, utilizing the _subscription_activated_at_ column.
+* **Version Created**: View recent creations to all subscriptions within a chosen time range, referring to the _version_created_at_ column.
+* **Version Modified**: View recent alterations to all subscriptions within a chosen time range, referring to a combination of _version_state_ and _version_created_at_ columns.
 
 ### **Time Range Filter**
 

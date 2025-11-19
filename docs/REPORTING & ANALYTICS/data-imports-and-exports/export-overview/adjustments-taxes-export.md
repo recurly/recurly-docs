@@ -18,6 +18,10 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Prerequisite
+
+You must enable one of our tax integrations (Vertex, Avalara) to view this export. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
+
 # Definition
 
 The Adjustments - Taxes export is designed for reporting on taxes calculated through Vertex. It is pertinent to note that for reporting on taxes calculated through Avalara, you should utilize the Adjustments export. This CSV file contains a row for each tax jurisdiction that is returned for a line item. Even line items without taxes will be included but as a single row in the export.
