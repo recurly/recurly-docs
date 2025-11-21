@@ -90,6 +90,14 @@ This is useful for scenarios such as:
 
 When issuing a credit, you have full control over the amount of the credit, the currency it is issued in, and how it is described on the customer’s invoice. This allows you to use credits in a flexible way that matches your business needs.
 
+### Credit Application Control
+
+Recurly provides the ability to apply credits on any purchase, subscription creation, or when editing a subscription through the V3 API.  When creating a subscription through the <Anchor label="API" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription">API</Anchor>, if the API request contains `credit_application_policy` set to `all`, any available credit on the account will be applied to the subscription's invoice(s).  This will remain true until either the credits are depleted or if an update to this value is made with a subsequent API call.  If the value is set to `none`, credit will not be applied on any invoice even if the account has a credit balance.  
+
+Alternatively, the <Anchor label="purchases API" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_purchase">purchases API</Anchor> can apply the same credit control on a purchase's immediate invoice using the `credit_application_policy_override`.  The key difference between these two attributes is that `credit_application_policy` persists onto the subscription and can be changed at any time, while the `override` is specific to that immediate purchase and will not impact the recurring subscription.  
+
+If neither of these attributes are used, Recurly will default to using any available credits.
+
 ### Creating a custom charge in the UI:
 
 1. **Navigate to Customer Account:**
