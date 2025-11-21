@@ -77,20 +77,20 @@ This method is particularly useful when you want to create a charge on a custome
 
 <Image align="center" border={false} width="75% " src="https://files.readme.io/4fcbd1a7339135f2c54e08cab1d117c8e00d2668c38b7d759147f7485a5fc190-image.png" />
 
-### Create credits using Admin UI
+### Create credits using the Admin UI
 
-To issue a credit, you navigate to the customer's account in the Recurly Admin UI and use the **Add Credit** button.
+To issue a credit, navigate to the customer's account in the Recurly Admin UI and click the **Add Credit** button within the **Account Actions** dropdown.
 
 This is useful for scenarios such as:
 
 * Issuing a refund for a returned product.
 * Providing a credit as a gesture of goodwill or as compensation for a service issue.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/0e4b164-Screenshot_2018-03-02_15.47.03.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/a5ad6216705ddc0d431efbd8773731e07b3898ad14402632b63b48a767d97f61-Screenshot_2025-11-21_at_3.36.24_PM.png" className="border" />
 
 When issuing a credit, you have full control over the amount of the credit, the currency it is issued in, and how it is described on the customer’s invoice. This allows you to use credits in a flexible way that matches your business needs.
 
-## Creating a custom charge in the UI:
+### Creating a custom charge in the UI:
 
 1. **Navigate to Customer Account:**
    * Log in to your Recurly Admin UI.
@@ -111,7 +111,7 @@ When issuing a credit, you have full control over the amount of the credit, the 
 5. **Save and Review:**
    * Click **Add to account** and review the charge that you have just created.
 
-## Issuing a credit in the UI
+### Issuing a credit in the UI
 
 1. **Navigate to Customer Account:**
    * Log in to your Recurly Admin UI.
