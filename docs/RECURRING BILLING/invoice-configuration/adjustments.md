@@ -92,7 +92,7 @@ When issuing a credit, you have full control over the amount of the credit, the 
 
 ### Credit Application Control
 
-Recurly provides the ability to dictate when available credit is used when creating a purchase or creating/editing a subscription through the V3 API.  This option can be set using the `credit_application_policy` when creating or editing a [subscription](https://recurly.com/developers/api/v2021-02-25/index.html#tag/subscription) or using the `credit_application_policy_override` in the [purchases API](https://recurly.com/developers/api/v2021-02-25/index.html#tag/purchase).  If neither of these are used, the default behavior to automatically use credits will be invoked.
+Recurly provides the ability to dictate when available credit is used.  This can be set when creating or editing a subscription through the [subscription V3 API](https://recurly.com/developers/api/v2021-02-25/index.html#tag/subscription) using the `credit_application_policy` field.  Optionally, you may choose to override this on specific purchases through the [purchase V3 API](https://recurly.com/developers/api/v2021-02-25/index.html#tag/purchase) using the `credit_application_policy_override` field.  If neither of these are used, the default behavior to automatically use credits will be invoked.
 
 ### Creating a custom charge in the UI:
 
