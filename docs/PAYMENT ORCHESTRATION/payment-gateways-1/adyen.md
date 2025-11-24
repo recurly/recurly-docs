@@ -41,7 +41,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Services that work with Recurly | Credit/Debit cards, Recurring, Adyen Web Components, [Adyen-derived Network Tokens](https://docs.recurly.com/docs/adyen#/adyen-network-tokens), [Revenue Protect / Protect Premium](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium), [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/) Processing |
 | Supported operations            | Authorize & Capture, Purchase, Refund, Verify, Void                                                                                                                                                                                                                                                                                                    |
-| Supported payment types         | Credit/Debit cards, ACH, Boleto, iDeal, Klarna Debit Risk (only existing merchants), SEPA, Google Pay and Apple Pay, Cash App. **Note:** Only a subset of payment methods are supported in the new Adyen Components Recurly.js support. Excluded payment methods are: All Direct Debit, Klarna Debit Risk, iDeal, and Boleto.                          |
+| Supported payment types         | Credit/Debit cards, ACH, Boleto, iDeal, Klarna Debit Risk (only existing merchants), SEPA, Google Pay and Apple Pay, Cash App. **Note:** Only a subset of payment methods are supported in the new Adyen Components Recurly.js support. Excluded payment methods are:  Klarna Debit Risk and Boleto.                                                   |
 | Supported card brands           | Visa, MasterCard, American Express, Discover, JCB, Diners Club, China Union Pay, ELO (BRL only), Hipercard (BRL only), Cartes Bancaires, Dankort, Bancontact                                                                                                                                                                                           |
 | Gateway Specific 3DS2 Supported | Yes                                                                                                                                                                                                                                                                                                                                                    |
 | Card on File Supported          | Yes                                                                                                                                                                                                                                                                                                                                                    |
@@ -104,7 +104,7 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
       2. **REPORT_AVAILABLE**- Required for notifying when Adyen reports for various details are available such as settlement reports for Revenue Recognition.
       3. **EXPIRE** - Required for proper Auth and Capture behavior. Ensures proper report syncing from Adyen when pending authorizations expire prior to capture.
       4. **CAPTURE_FAILED** - Required to ensure proper transaction handling in general, especially when Auth and Capture are in use.
-      5.  **OFFER_CLOSED** -- Required when using the iDeal payment method. 
+      5. **OFFER_CLOSED** -- Required when using the iDeal payment method.
       6. **Ideal details** -- Webhook information required when using the iDeal payment method. You can learn more on Adyen's website [here](https://docs.adyen.com/development-resources/webhooks/webhook-types/#other-webhooks).
       7. **recurring.token.updated** - Required when using Adyen gateway tokens to ensure Recurly receives timely meta-data updates on Adyen tokens when an update occurs outside of Recurly.
    2. Adyen Documentation lists two places -- please ensure both are handled, or the webhook may not be sent.
@@ -123,9 +123,9 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 ## Activation of Response Fields via API
 
-To enable card data showing up when a token is received via webhook, you'll want to enable response fields from Adyen. 
+To enable card data showing up when a token is received via webhook, you'll want to enable response fields from Adyen.
 
-Navigate to **Developers→Additional Data** in Adyen to enable these features. Once a token is received, we'll receive extra data from Adyen to populate card brand meta-data like the BIN, Last 4 of the Card, and other details. See below for relevant fields: 
+Navigate to **Developers→Additional Data** in Adyen to enable these features. Once a token is received, we'll receive extra data from Adyen to populate card brand meta-data like the BIN, Last 4 of the Card, and other details. See below for relevant fields:
 
 * Card bin
 * Card Summary
