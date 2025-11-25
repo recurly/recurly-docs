@@ -299,7 +299,7 @@ next:
 
     <tr>
       <td>
-        [Product Catalog](doc:products-catalog-export)
+        [Product Catalog](https://docs.recurly.com/recurly-subscriptions/docs/products-catalog-export)
       </td>
 
       <td>
@@ -381,7 +381,7 @@ next:
 
     <tr>
       <td>
-        [Subscriptions — Pending Changes](https://docs.recurly.com/docs/subscriptions-external)
+        [Subscriptions — Pending Changes](https://docs.recurly.com/docs/subscriptions-pending-changes-export)
       </td>
 
       <td>
