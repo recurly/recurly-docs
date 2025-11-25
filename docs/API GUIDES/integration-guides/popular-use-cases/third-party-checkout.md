@@ -65,7 +65,7 @@ If you decide to use the Card Element instead of the Payment Element, you will b
 * **Credentials**: When using Elements with your Recurly Account, you must use your Stripe Account ID (acct_xxxx) when configuring Elements and Recurly’s top-level PK key. If you use your own publishable key, the integration will not work properly. This is due to Recurly using Stripe Connect.
 
 ```
-// Initialize Stripe.js with your test key
+// Initialize Stripe.js with Recurly's PK Key and your own Stripe Account ID
    const stripe = Stripe('pk_test_40DpPkZhqK69boNdC3y...CRDkFfVe7s7003wu2I6Mq', {
    stripeAccount: 'your-account-id'
    });
