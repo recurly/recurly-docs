@@ -45,16 +45,16 @@ There are other fields available in our documentation. Below is a hyper-specific
 
 ```json
 {
-  "currency":"USD",
-  "plan_code":"example_plan_1", // Plan Code referencing a Free Trial
-	"account":{
-    "code":"new_account_1",
-		"billing_info":{
-			"token_id":"rjs-token", // Only send if using Recurly.js
-			"gateway_code":"your-gateway-code" // Controls the current purchase / verification
-			}
-		},
-	"gateway_code":"your-gateway-code" // Controls Renewals
+    "currency": "USD",
+    "plan_code": "example_plan_1", // Plan Code referencing a Free Trial
+    "account": {
+        "code": "new_account_1",
+        "billing_info": {
+            "token_id": "rjs-token", // Only send if using Recurly.js
+            "gateway_code": "your-gateway-code" // Controls the current purchase / verification
+        }
+    },
+    "gateway_code": "your-gateway-code" // Controls Renewals
 }
 ```
 
