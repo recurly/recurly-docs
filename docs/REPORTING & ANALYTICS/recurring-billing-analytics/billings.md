@@ -46,24 +46,24 @@ Furthermore, the dashboard's regional breakdown equips you with the specificity 
 
 ## Billing key performance indicators (KPIs)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/fb1eba6-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/fb1eba6-image.png" className="border" />
 
 A great widget presenting a detailed breakdown of your payment totals to date. Track how current totals compare to last month, the previous month, three months ago, and even one year ago. Arrowheads under each total provide visual representation of how current figures vary from the 'to-date' total.
 
 ### Summary
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/cd99ffa-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/cd99ffa-image.png" className="border" />
 
 A comprehensive visualization that brings together new and renewing customer payments and refunds over your chosen date range. Witness the dynamics of your billing cycle as new transactions come in and refunds go out.
 
 ## New vs renewing detail
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/e73afb2-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/e73afb2-image.png" className="border" />
 
 The Net Billings Dashboard offers a meticulous comparative analysis, differentiating between net new and net renewing payments. Here's how it works:
 
 * **Net New**: Derived by taking the new payments and subtracting any new refunds.
-* **Net Renewing**: Calculated by deducting renewing refunds from renewing payments.\
+* **Net Renewing**: Calculated by deducting renewing refunds from renewing payments.  
   The culmination of these two values presents the Total Net Billings.
 
 **For clarity**, within this dashboard:
@@ -71,9 +71,16 @@ The Net Billings Dashboard offers a meticulous comparative analysis, differentia
 * “New” refers to the inaugural payment made by a subscriber.
 * “Renewing” encompasses any subsequent payments made after the initial one.
 
+## Billing Drills
+
+In the Summary and New vs Renewing detail you can click any bar or number and there are 2 drills  
+
+* “Product Details” provides a summarized view of the invoice line items, including a breakdown of the products that contribute to the total for the selected billing record. Please note that minor differences may occur between this total and the value displayed on the dashboard due to currency conversion and tax-related rounding.  If more details are required there is an additional drill to view the Transaction and Invoice Details on each product total.
+* “Transaction and Invoice Details” displays all transactions and their associated invoices that contribute to the total for the selected billing record. All totals are presented in the transaction currency.
+
 ## Billings by country
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/98e77e0-image.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/98e77e0-image.png" className="border" />
 
 An expanded version of the 'By state' map, taking the geographical scope to a global level. Click on an individual country to view its total payments. Transactions without an assigned country are grouped together in the 'Amount Unmapped' box below the map. Understand your international reach and uncover areas of untapped potential.
 
@@ -83,12 +90,12 @@ An expanded version of the 'By state' map, taking the geographical scope to a gl
 
 This dashboard provides a geographic representation of payment amounts, organized by state. The location is determined based on the account's billing information or, when that's unavailable, the IP address. It's a straightforward tool for understanding regional revenue distribution.
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/582ba9a-image.png" />
+<Image align="center" border={true} width="60% " src="https://files.readme.io/582ba9a-image.png" className="border" />
 
 The current version focuses on:
 
 * **Billings by State**: Displaying revenue distribution across different states.
-* **Billings by Country in Europe**: Showing revenue distribution across European countries.\
+* **Billings by Country in Europe**: Showing revenue distribution across European countries.  
   Adjacent widgets display the percentage of Global Billings for each region. Additionally, a tabular breakdown is provided below, listing each country or state within its respective region.
 
 # Use the geographic charts
