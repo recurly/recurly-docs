@@ -259,6 +259,64 @@ Thanks for joining for this Navigate Launchpad video! The Navigate program helps
   <HTMLBlock>{`
                     <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
+{/*
+Launchpad Trail Guide: Easy Wins — Dunning Done Right
+
+Introduction
+
+Welcome to Launchpad, part of the Recurly Navigate program! This collection of actionable guides is designed to ignite your Recurly liftoff. This guide will help you optimize your dunning strategy, reducing churn and recovering revenue without adding complexity to your workflow.
+
+Dunning may not sound exciting, but when done right, it's one of the simplest ways to recover revenue that might otherwise slip through the cracks. Just a few small changes can boost your recovery rates by up to 5%.
+
+What is Dunning?
+
+Dunning is the process of automatically retrying failed payments and nudging subscribers to update their billing information. Payment failures happen as a part of running a subscription business. What truly matters is the subsequent action taken. With a smart dunning setup, failed payments can be turned into recovered revenue without manually chasing down customers. These improvements are quick to make and easy to manage.
+
+How Dunning Works in Recurly
+
+Dunning in Recurly is powered by two key components:
+• Intelligent Retries: These use machine learning to choose the best time to retry failed payments.
+• Dunning Emails: These reach out to subscribers with helpful reminders.
+
+Once set up correctly, these components work together to recover revenue and help reduce churn.
+
+Tips to Improve Recovery Rates
+
+Here are a few key tips to improve your recovery rates:
+
+Extend your dunning window.
+By default, the dunning cycle is 10 days. It is recommended to adjust it to 27 days for monthly plans or 60 days for plans longer than 2 months. This allows intelligent retries ample time to work behind the scenes, hand-in-hand with dunning emails.
+
+Give messages a bit of room to breathe.
+Leaving four or five days between each email gives customers time to take action without overwhelming them.
+
+Switch up your messaging.
+Don't be afraid to get creative. Each email should have a different tone and focus. Be sure to include helpful information, like the subscription price, and always keep it fresh and friendly.
+
+Highlight the value of your service.
+Remind subscribers what they will lose if they do not update their payment method.
+• Will they lose access?
+• Will special offers or perks no longer be available?
+• Will legacy pricing no longer apply?
+Be specific and straightforward.
+
+Using Recurly Compass for Dunning Optimization
+
+Recurly has a helpful native AI application called Compass. Compass provides a playbook that will instantly update your dunning window if it isn't already optimized.
+
+To use Compass:
+• Open your Recurly app.
+• Find "Compass" in your left-hand navigation window.
+• Click on "Playbooks."
+• If dunning isn't already up to scratch, you will see the Dunning playbook available to open.
+• Select "Run Play."
+
+After running the playbook, you can then go into your dunning settings and revamp your messaging.
+
+Additional Resources
+
+Recurly is here to help. For a deep dive into dunning strategy, check out the on-demand webinar: "Stop the Leak: How to Optimize Dunning for Growth." Also, make sure to grab the handy checklist to keep tabs on your setup. You can find help and access documentation directly inside your Recurly app, or you can search Compass with any questions you have about dunning.
+*/}
 
   ### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
 
@@ -269,6 +327,100 @@ Thanks for joining for this Navigate Launchpad video! The Navigate program helps
   <Callout icon="⏯️" theme="default">
     **<Anchor label="Watch On-Demand Here" target="_blank" href="https://recurly.registration.goldcast.io/webinar/a65f472f-9876-4736-9209-5b7b669de773">Watch On-Demand Here</Anchor>**
   </Callout>
+{/*
+Stop the Leak: How to Optimize Dunning for Growth
+
+Dunning Overview
+
+Dunning is the process of collecting on past-due invoices. This is primarily managed through Recurly's retry model and email communications. Subscribers enter the dunning process when a renewal payment fails.
+
+Soft Declines: If a soft decline is received (e.g., insufficient funds), Recurly will send email communications and retry the transaction.
+
+Hard Declines: If a hard decline is received (e.g., invalid account number), email communications will still be sent, but the transaction will generally not be retried.
+
+How Dunning Works in Recurly
+
+Recurly utilizes two main tools for dunning:
+• Retries: When an invoice fails, it moves into a dunning campaign with a set window length. Recurly's algorithm determines the optimal times to retry the transaction within this window to successfully collect payment.
+• Email Communications: Businesses have control over when dunning emails are sent to customers. These emails can be customized to align with specific communication strategies.
+
+Configuring Dunning in Recurly
+
+To review and adjust dunning settings within the Recurly app:
+• Email Templates: Access the Dunning Management templates to view, edit, and customize email content.
+• Dunning Management Area: This section allows you to control campaign actions, including:
+  – Setting the timing for email sends.
+  – Defining the overall dunning window length.
+  – Choosing whether to expire the subscription or keep the invoice open for manual collection.
+  – Setting up separate dunning campaigns for trials or manual payments if applicable.
+  – Selecting specific email templates to be sent at different points in the dunning window.
+
+Analyzing Dunning Performance
+
+The dunning campaign section within Recurly's analytics provides insights into:
+• Overall recovery rate for dunning.
+• Performance at the invoice and revenue levels.
+• Comparison of different dunning campaign versions.
+• Performance of monthly versus annual campaigns.
+
+10 Top Tips for Optimizing Dunning
+
+1. Match Emails to Your Branding
+It is crucial to build trust with customers when sending payment-related emails. Ensure that emails sent from Recurly match your website branding and other communications. You can set a header and footer style in the email template area of the Recurly app, which will apply to all emails, including dunning, renewal reminders, and subscription change emails.
+
+2. Clear Call-to-Action
+Emails should have a clear call-to-action, such as "Update your billing information." The action button should be consistent with your website's styling. Including personalized information like the customer's name and the amount due can further enhance trust and clarity.
+
+3. Effective Communication Timing
+While Recurly's retry model handles transaction retries, you control when emails are sent. Sending regular emails throughout the dunning window is important, as there is a direct correlation between email sends and customers updating their payment information. For monthly subscriptions, a 27-day dunning window is recommended, allowing Recurly's retry model maximum time to work. For yearly, six-monthly, or quarterly plans, a 60-day dunning window is recommended. Avoid a 60-day window for monthly subscriptions to prevent multiple past-due invoices.
+
+4. Vary Email Content and Tone
+Avoid sending the same email multiple times. Each email should contain different information and leverage Recurly's email parameters to personalize content (e.g., customer name, last four digits of the card, amount due). The tone of emails can also change throughout the dunning window, starting friendly and becoming more urgent towards the end of the campaign.
+
+5. Include a Countdown
+Clearly show customers how much time they have left before their account closes or subscription expires. This creates urgency and prompts action. Consider including this countdown in email subject lines.
+
+6. Remind Customers of Value
+In later stages of dunning, remind customers of the value your business provides to prevent voluntary churn. Highlight what they stand to lose, such as:
+• Unlimited access or downgrades.
+• Loss of ranking among other members.
+• Loss of access for group plan members.
+• Loss of rewards or points.
+• Loss of access to old pricing models if applicable.
+
+7. Offer Alternative Calls to Action
+Beyond updating billing information, consider offering alternative assistance:
+• Links to support (phone number, live chat).
+• Coupons for discounts.
+• Options to pause the service.
+
+8. Optimize Subject Lines
+Since customers may only see the subject line, ensure it conveys critical information:
+• Card declined status.
+• What they are losing access to.
+• Call to action (e.g., "Update your payment information").
+• Countdown to account closure.
+
+9. Multiple Dunning Campaigns
+Create different dunning campaigns to target various user groups. For example, separate campaigns for monthly and annual plans, or for different customer segments (e.g., students vs. enterprise clients) to tailor messaging and window lengths.
+
+10. Utilize the Right Communication Service
+Recurly offers several options for sending dunning emails:
+• Recurly (out of the box): Emails are sent on your behalf.
+• DMARC Setup: Removes "via Recurly" language for improved email validity.
+• SendGrid Integration: Send emails via your SendGrid account by dropping in your API key.
+• Mailchimp Integration: Send emails via your Mailchimp account using an API key.
+• Braze Integration: Create emails in Braze, and Recurly will send the correct events to Braze to trigger email sends, allowing for sophisticated experimentation and tracking.
+
+Sneaky Tip: Payment Overdue Banner in Product
+Displaying a payment overdue banner within your product or app can significantly increase engagement. Customers logged into your product have higher trust in the information, and linking directly to the payment method update page can lead to high click-through rates.
+
+Sneaky Tip: Recurly Wallet
+If your business utilizes Recurly Wallet for backup payment methods, include a mention of this feature in your dunning sequence. Encourage customers to add a backup payment method, potentially with an incentive like a discount on their next bill.
+
+Value to Your Business
+Implementing these dunning optimization tips can lead to significant improvements in revenue recovery. Many businesses observe a 3% to 5% uplift in recovered revenue by making these changes. Even simple adjustments, such as extending the dunning window, can have a powerful impact. While some businesses worry about providing "free access" during an extended dunning period, webhooks can be used to stop product access while dunning continues.
+*/}
 
   ### 3. Dunning optimization checklist
 
@@ -276,6 +428,32 @@ Thanks for joining for this Navigate Launchpad video! The Navigate program helps
 
   <Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
 </Accordion>
+
+{/*
+Dunning Optimization Checklist
+
+Ensure your dunning campaigns are designed for growth.
+
+Match your branding across all dunning emails to build trust and credibility. Ensure your email design, colors, fonts, and tone align with the rest of your brand communications.
+
+Space out messages: Leave four to five days between emails. Aim for a 27-day window for monthly plans, or up to 60 days for longer subscriptions, to allow for retries and customer action.
+
+Use different email templates and tones: Customize each dunning email with a unique message and tone to keep customers engaged and avoid sounding repetitive.
+
+Let customers know when their account will close: Be transparent about how many days are left before their account is suspended or canceled.
+
+Remind customers why your product is valuable: Reiterate the benefits they'll lose, such as access, pricing, features, or user perks, to create urgency and a sense of FOMO.
+
+Offer helpful Calls to Action (CTAs) beyond "update billing": Include links to FAQs, support, live chat, community, or even offer a pause option to make it easy for them to get help.
+
+Build urgency into subject lines and copy: Gradually increase urgency in your messaging as the dunning cycle progresses. For example, use phrases like "Last Chance" or "Don't Lose Access."
+
+Set up multiple campaigns for different user groups: Tailor your dunning strategy by plan type or audience (e.g., monthly vs. annual, enterprise vs. individual).
+
+Use the right email delivery method: Choose the best option for your business, whether that's Recurly's default service or a custom setup using platforms like SendGrid, Mailchimp, or Braze, for more control and visibility.
+
+Add an in-app or onsite "Payment Overdue" banner: Catch users who don't open emails by showing a prominent message in your product or app with a link to update billing.
+*/}
 
 <Accordion title="Week 4: Account Updater">
   # Week 4: Account Updater
@@ -293,8 +471,55 @@ Thanks for joining for this Navigate Launchpad video! The Navigate program helps
   Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
 
   <HTMLBlock>{`
-                  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-  `}</HTMLBlock>
+                  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>`}</HTMLBlock>
+
+  {/*
+Secure Your Launch: Account Updater
+
+Welcome to Launchpad, part of the Recurly Navigate program! This collection of actionable guides is designed to ignite your Recurly liftoff. During your first 90 days, this program will help you optimize and prepare for continued success, boosting your subscription business from production into transaction and beyond.
+
+This guide introduces you to a behind-the-scenes hero that helps keep your recurring payments on track: Account Updater.What is Account Updater?
+
+Account Updater automatically refreshes customers' billing information to help prevent failed payments and reduce involuntary churn. It also creates a more seamless customer experience by avoiding unnecessary service interruptions.
+
+This guide will cover how Account Updater works, what you'll need to activate it, and why enabling it early can save you time and revenue.How Account Updater Works
+
+Before a scheduled renewal, Recurly checks with supported card brands for updated billing information. If there's something new, like a card number or expiration date, Recurly fetches it. This helps you avoid declined payments without manual intervention. This is especially helpful for long-term subscriptions where card information can become outdated over time.Benefits of Enabling Account Updater
+
+Enabling Account Updater offers several benefits:
+Reduced Payment Failures: It helps avoid unnecessary churn due to expired or changed cards.
+Improved Customer Experience: Subscriptions can run without interruption.
+Increased Efficiency: You'll do less manual work, as there's no need to chase down updated billing information.
+Proactive Protection: Once enabled, it works automatically as a proactive payment protector, requiring no ongoing management.
+Prerequisites for Enabling Account Updater
+
+Before enabling Account Updater, ensure the following:
+You have an active Recurly subscription. Account Updater cannot be enabled in a sandbox environment or developer mode.
+You are using a payment gateway that supports bank card payments. Account Updater supports major credit and debit card brands, including Discover, but does not support alternative payment methods like Venmo or PayPal.
+While not required, it is recommended to activate Account Updater before going live to maximize recurring revenue protection from day one.
+How to Enable Account Updater
+
+Account Updater can be turned on in just a few steps:
+Open your home page.
+Navigate to Configuration in the menu.
+Click on Payment Settings.
+At the top of the page, you'll see Account Updater. Click Enable.
+Enter the required fields:
+For MasterCard, find or enter your Merchant Category Code (MCC), which can be provided by your gateway.
+If you have an American Express account and would like to use Account Updater, enter your Service Establishment Number.
+If you don't have this information readily available, Visa and Discover can still be enabled while you find the necessary details for MasterCard and American Express.
+Once you accept the terms, Account Updater will begin working automatically to refresh billing information before upcoming subscription renewals.
+Pricing Plan Update
+
+Recurly's new pricing plan fully discounts all fees associated with Account Updater, and the company is in the process of eliminating those fees entirely. If you are unsure which plan you are on or how this impacts your business, reach out to support for assistance.Additional Resources
+
+Recurly is always here to help. If you need extra information, you can find resources directly within your Recurly app:
+Click the Recurly Resources button.
+Ask the AI Answers app (at the top of your left menu) any questions.
+Open a quick conversation with the Recurly Chatbot at the bottom right corner of your screen.
+Documentation and support tickets are available at support.recurly.com.
+  This guide is part of the Navigate Launchpad program, designed to help you optimize your Recurly experience.
+*/}
 
   ### 2. Recurly Docs: Account updater
 
