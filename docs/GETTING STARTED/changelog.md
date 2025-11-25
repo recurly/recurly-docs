@@ -24,6 +24,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## 2025
 
+## December
+
+| Release Date | **Feature**        | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                             |
+| :----------- | :----------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dec 2        | **Ebanx gateway**  | Medium               | Added **UPI Retries** for <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay</a> renewals/subscriptions. UPI AutoPay retries will run the same day as the initial decline. Read more about the payment method and <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/">Ebanx gateway</a> in our dedicated documentation. |
+| Dec 2        | **Ebanx gateway**  | Medium               | Updated UPI AutoPay transaction requests to occur within regulation time frames per RBI requirements. UPI AutoPay transactions will run between 12 AM and 7 AM IST.                                                                                                                                                                                                                    |
+| Dec 2        | **Ebanx gateway**  | Low                  | Optimized handling of PIX Automatico and Mercado Pago retry scheduling and next charge dates.                                                                                                                                                                                                                                                                                          |
+| Dec 2        | **Stripe gateway** | Medium               | Updated return customer requests (CIT, customer initiated) to the gateway in order to optimize 3DS requests from Stripe.                                                                                                                                                                                                                                                               |
+
 ## November
 
 | Release Date | **Feature**                    | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                           |
