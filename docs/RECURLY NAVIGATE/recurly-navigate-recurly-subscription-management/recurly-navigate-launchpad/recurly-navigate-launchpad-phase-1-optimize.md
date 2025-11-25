@@ -53,8 +53,80 @@ The accordion menu below will guide you through the steps needed to optimize you
   You'll learn where to find key tools, features, and settings across a few short scenes. Learn how to navigate your dashboard, find support, and manage your site setup — all in 6 minutes.
 
   <HTMLBlock>{`
-                          <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
-  `}</HTMLBlock>
+                            <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Synthesia video player - Navigate Trail Guide: Recurly UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+                            `}</HTMLBlock>
+{/*
+Trail Guide: UI Walkthrough
+
+This collection of actionable video guides is designed to help you grow, scale, and unlock the full potential of your subscription business with Recurly. This guide will walk you through the Recurly User Interface.
+
+Getting Started with Your UI
+
+Begin by opening your UI. You will see the dashboard, learn how to identify your site environment, and explore what you will see according to your user access permissions.
+
+Your dashboard may look different depending on whether you are in a Sandbox, Development, or Production site. In a Sandbox environment, you will see a "Go Live" checklist. If you are in Production, you will see business insights and performance metrics.
+
+At the top of the dashboard, you will find the Recurly Resources button. This is your shortcut to resources like developer documentation, Recurly Connect, and changelogs.
+
+User Permissions
+
+Check your user permissions. If you do not see all the items in the left-hand navigation, your permissions may be limited. Site Admins can add users and assign different roles, such as access to Analytics or Configuration. Check with your admin if something is missing. If you are the site admin and do not see a feature you need, reach out to support.
+
+Site Environments
+
+Many businesses use more than one site environment: Production, Development, and Sandbox. To avoid confusion, go to Configuration, then Site Settings, and assign each one a different color theme. This provides an easy visual reminder of where you are.
+
+Tools for Subscriber Support and Quick Answers
+
+Explore the tools that help you support your subscribers and find answers fast: Recurly's "AI Answers" and the "Customers" section of your UI Navigation Menu.
+
+AI Answers
+
+AI Answers is Recurly's native AI tool. You can ask it just about anything. For example, if you are curious about tax-inclusive vs. tax-exclusive pricing, or wondering how to retry payments or handle failed transactions, just type in your question. If it cannot find what you need, the Support team is available to help.
+
+Customers Section
+
+The "Customers section" is a go-to for your support team. If a subscriber has questions about billing, their subscription, or account details, you will use this section. You can search for their account, view transactions, or even manage subscription activity from here.
+
+Tools for Performance Improvement and Strategy Optimization
+
+Next, explore the tools that help you improve performance and optimize your subscription strategy: Recurly Compass and Analytics (specifically, Benchmarks and Explore).
+
+Recurly Compass
+
+In your navigation menu, you will see the "Compass" section. Compass offers strategic playbooks to help reduce churn, launch promotions, grow your business with confidence, and much more. These step-by-step guides are based on best practices gathered from many successful subscription businesses.
+
+Analytics
+
+In Analytics, you will find a wide array of prebuilt dashboards curated for your success, such as how your plans are performing, churn metrics, and much more.
+
+Two key tools worth highlighting are:
+Benchmarks Overview: This gives you a quick snapshot of how your business compares to industry peers.
+Explore Tool: This is ideal for your internal data team to build and save custom dashboards. If you do not see Explore in your account, the Support team can help you enable it.
+
+Account Configuration and Management
+
+Finally, let's look at where to configure your account, connect integrations, and manage users.
+
+Configuration
+
+The "Configuration" section is where you will manage nearly everything in your setup. From pricing plans and coupons to invoice templates, taxes, currencies, shipping, dunning campaigns, payment gateways, and much more. If you are adjusting or expanding your subscription setup, this is your go-to spot.
+
+Integrations
+
+Beneath Configurations, you will see "Integrations." This is where you will find the third-party tools that Recurly supports. Some are self-installed, but others may require additional setup via documentation or assistance from the Recurly team. Make sure to reach out to support if you need any help.
+
+Admin Section
+
+The Admin section is where you manage users, roles, SSO settings, and upgrade your Recurly plan when needed.
+
+Recurly Support
+
+Recurly is always here to help. If you have any questions about your Recurly UI, you can find assistance right inside your Recurly app. Click on Recurly Resources in the top right corner of your user interface for fast access to documentation, or ask our AI Answers tool anything about Recurly. You can also open a quick conversation with the Recurly Chatbot, at the bottom right corner of your screen. As always, documentation and support tickets are available at support.recurly.com.
+
+A handy Navigate Resource Guide is available for you to bookmark or download. This is your one-stop document for everything you need to know about Recurly support tools and status updates.
+*/}
+
 
   ### 2. Download: Navigate Resource Guide
 
@@ -77,7 +149,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   ### 1. Trail Guide: Final production testing
 
   <HTMLBlock>{`
-                  <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+                    <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/ea84740d-7ca0-4aed-a790-07dd95464993" loading="lazy" title="Synthesia video player - Launchpad: Check the boxes: final production test" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Additional documentation
@@ -113,7 +185,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
 
   <HTMLBlock>{`
-              <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+                <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/6c8cf12d-c792-4e62-96fe-618d57e1316a" loading="lazy" title="Synthesia video player - Launchpad: Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. On-demand webinar: Stop the Leak: How to optimize Dunning for growth
@@ -149,7 +221,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Julia will walk you through how the feature works, which payment methods are support, and how to enable it once your site is live in production — so you can reduce involuntary churn and keep revenue flowing smoothly.
 
   <HTMLBlock>{`
-            <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+              <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" loading="lazy" title="Synthesia video player - Launchpad: Secure your launch: Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Recurly Docs: Account updater
@@ -177,7 +249,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Join Julia for a quick overview of how to apply your brand to emails and invoices in Recurly. You’ll learn where to find template settings, what’s customizable, and how to manage branding across multiple business entities.
 
   <HTMLBlock>{`
-          <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+            <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Recurly Docs: Invoice customization
@@ -207,7 +279,7 @@ The accordion menu below will guide you through the steps needed to optimize you
   Join Julia to learn how Gateway Failover helps protect your revenue by rerouting transactions during gateway outages. She’ll walk you through what it covers, how it works, and how to get started.
 
   <HTMLBlock>{`
-        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/12149951-6016-4a63-86fb-bab20b93da0b" loading="lazy" title="Synthesia video player - Launchpad: Build your safety net: Gateway Failover" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
+          <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/12149951-6016-4a63-86fb-bab20b93da0b" loading="lazy" title="Synthesia video player - Launchpad: Build your safety net: Gateway Failover" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
 
   ### 2. Recurly Docs: Gateway failover
@@ -241,7 +313,75 @@ The accordion menu below will guide you through the steps needed to optimize you
 </Accordion>
 
 <HTMLBlock>{`
+<style>
+  .hidden-content {
+    display: none;
+  }
+</style>
 
+<div class="hidden-content"> 
+Trail Guide: UI Walkthrough
+
+This collection of actionable video guides is designed to help you grow, scale, and unlock the full potential of your subscription business with Recurly. This guide will walk you through the Recurly User Interface.Getting Started with Your UI
+
+
+Begin by opening your UI. You will see the dashboard, learn how to identify your site environment, and explore what you will see according to your user access permissions.
+
+
+Your dashboard may look different depending on whether you are in a Sandbox, Development, or Production site. In a Sandbox environment, you will see a "Go Live" checklist. If you are in Production, you will see business insights and performance metrics.
+
+
+At the top of the dashboard, you will find the Recurly Resources button. This is your shortcut to resources like developer documentation, Recurly Connect, and changelogs.User Permissions
+
+
+Check your user permissions. If you do not see all the items in the left-hand navigation, your permissions may be limited. Site Admins can add users and assign different roles, such as access to Analytics or Configuration. Check with your admin if something is missing. If you are the site admin and do not see a feature you need, reach out to support.Site Environments
+
+
+Many businesses use more than one site environment: Production, Development, and Sandbox. To avoid confusion, go to Configuration, then Site Settings, and assign each one a different color theme. This provides an easy visual reminder of where you are.Tools for Subscriber Support and Quick Answers
+
+
+Explore the tools that help you support your subscribers and find answers fast: Recurly's "AI Answers" and the "Customers" section of your UI Navigation Menu.AI Answers
+
+
+AI Answers is Recurly's native AI tool. You can ask it just about anything. For example, if you are curious about tax-inclusive vs. tax-exclusive pricing, or wondering how to retry payments or handle failed transactions, just type in your question. If it cannot find what you need, the Support team is available to help.Customers Section
+
+
+The "Customers section" is a go-to for your support team. If a subscriber has questions about billing, their subscription, or account details, you will use this section. You can search for their account, view transactions, or even manage subscription activity from here.Tools for Performance Improvement and Strategy Optimization
+
+
+Next, explore the tools that help you improve performance and optimize your subscription strategy: Recurly Compass and Analytics (specifically, Benchmarks and Explore).Recurly Compass
+
+
+In your navigation menu, you will see the "Compass" section. Compass offers strategic playbooks to help reduce churn, launch promotions, grow your business with confidence, and much more. These step-by-step guides are based on best practices gathered from many successful subscription businesses.Analytics
+
+
+In Analytics, you will find a wide array of prebuilt dashboards curated for your success, such as how your plans are performing, churn metrics, and much more.
+
+
+Two key tools worth highlighting are:
+Benchmarks Overview: This gives you a quick snapshot of how your business compares to industry peers.
+Explore Tool: This is ideal for your internal data team to build and save custom dashboards. If you do not see Explore in your account, the Support team can help you enable it.
+Account Configuration and Management
+
+
+Finally, let's look at where to configure your account, connect integrations, and manage users.Configuration
+
+
+The "Configuration" section is where you will manage nearly everything in your setup. From pricing plans and coupons to invoice templates, taxes, currencies, shipping, dunning campaigns, payment gateways, and much more. If you are adjusting or expanding your subscription setup, this is your go-to spot.Integrations
+
+
+Beneath Configurations, you will see "Integrations." This is where you will find the third-party tools that Recurly supports. Some are self-installed, but others may require additional setup via documentation or assistance from the Recurly team. Make sure to reach out to support if you need any help.Admin Section
+
+
+The Admin section is where you manage users, roles, SSO settings, and upgrade your Recurly plan when needed.Recurly Support
+
+
+Recurly is always here to help. If you have any questions about your Recurly UI, you can find assistance right inside your Recurly app. Click on Recurly Resources in the top right corner of your user interface for fast access to documentation, or ask our AI Answers tool anything about Recurly. You can also open a quick conversation with the Recurly Chatbot, at the bottom right corner of your screen. As always, documentation and support tickets are available at support.recurly.com.
+
+
+A handy Navigate Resource Guide is available for you to bookmark or download. This is your one-stop document for everything you need to know about Recurly support tools and status updates.
+
+  </div>
 `}</HTMLBlock>
 
 <br />
