@@ -27,7 +27,7 @@
 - subscriptions-churned
 - subscriptions-external
 - subscription-history-export
-- copy-of-subscriptions-history-export
+- subscriptions-pending-changes
 - subscription-ramp-pricing-export
 - usages-records-export
 - transaction-export
