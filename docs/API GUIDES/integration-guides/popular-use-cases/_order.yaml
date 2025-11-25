@@ -1,6 +1,7 @@
 - purchases-guide
 - 3d-secure-20-integration-guide
 - using-3d-secure-with-stored-billing-information
+- free-trial-gateway-routing-continuity
 - third-party-checkout
 - third-party-checkout-guide-adyen-components
 - using-gateway-tokens-and-external-ntids-with-recurly-apis
@@ -11,4 +12,3 @@
 - upi-autopay-integration-guide
 - e-mandates-with-cards-in-india
 - purchase-transaction
-- free-trial-gateway-routing-continuity
