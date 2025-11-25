@@ -385,7 +385,7 @@ next:
       </td>
 
       <td>
-
+        All active subscriptions with a pending change that will be applied at the next renewal. This includes changes to the plan, price, or quantity.
       </td>
     </tr>
 
