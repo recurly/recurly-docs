@@ -1,11 +1,15 @@
 ---
-title: Copy of Subscriptions — history - export
+title: Subscriptions — pending changes
 excerpt: >-
   Unlock a detailed record of subscription alterations with the Subscriptions -
   History export.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
+  title: Subscriptions - pending changes
+  description: >-
+    All active subscriptions with a pending change that will be applied at the
+    next renewal. This includes changes to the plan, price, or quantity.
   robots: index
 ---
 # Overview
