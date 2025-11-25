@@ -5,12 +5,6 @@ hidden: true
 metadata:
   robots: index
 ---
-In order for the routing to occur as the merchant is expecting for both the verification on the free trial and continuously on the subscription using the v3/subscriptions endpoint they will need to place gateway_code in the subscriptions call body twice.
-
-<br />
-
-<br />
-
 # Overview
 
 This guide shows you how to use the V3 [Subscriptions endpoint](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription) to create new subscriptions using the free trial and ensuring continuity between the gateway running the verification for the free trial, and the eventual gateway that will handle the renewal. This is not a necessary step unless you absolutely want the same `gateway_code` for both transactions.
