@@ -548,6 +548,74 @@ Documentation and support tickets are available at support.recurly.com.
   <HTMLBlock>{`
                 <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/039f6173-002f-47cf-9431-ee9c83780e05" loading="lazy" title="Synthesia video player - Launchpad: Branded for liftoff: emails & invoices" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
+{/*
+Launchpad Trail Guide: Branded for Liftoff — Emails and Invoices
+
+Welcome to Launchpad, part of the Recurly Navigate program! This collection of actionable guides is designed to ignite your Recurly liftoff. This guide will help you optimize and prepare for continued success, boosting your subscription business from production into transaction and beyond!
+
+Today, we will explore customizing your emails and invoices in Recurly so every message you send reflects your business and builds trust from the start.
+
+In this guide, you will find:
+• A high-level overview of why branding is essential in your messaging.
+• Where to find the settings you need.
+• Before launch basics: headers, footers, and invoices.
+• Optional tools available for even more powerful invoice customization.
+• Documentation and resources about branding in Recurly.
+
+Let's make your company's personality front and center for your customers.
+
+The Importance of Branding in Customer Communications
+
+Every email and invoice you send is a touchpoint with your customer. A consistent logo, color scheme, and headers reinforce your brand and build trust from liftoff to long after launch. Our customizable templates allow you to represent your brand and build a strong customer experience. It's a small change, but it is mighty! Your subscribers will see the impact.
+
+Applying Your Company's Brand in Recurly
+
+To apply your company's brand:
+• In your Recurly menu, find "Configuration."
+• Click on "Email Templates."
+• Here, you'll find a list of available options to customize. Header and Footer Templates can be applied to any of your emails, while the body templates, such as Account, Invoice, and Subscription, can be customized to send communications based on why, when, or who you're emailing.
+
+Depending on your plan, Recurly allows up to 20 variants of each template. This is useful if you're tailoring emails to different customer types or regions.
+
+Customizing Templates
+
+Each template includes a built-in HTML editor, as well as rich text editing. This allows you to easily apply brand colors, fonts, and formatting. You can even add inline images or links.
+
+Make sure to use the preview button and send yourself a test email to see what it will look like to customers.
+
+Message customization is endless in Recurly, but as a best practice, it is recommended to start with a few key templates:
+• Your header
+• Your footer
+• Your invoices
+
+Header and Footer Customization
+
+In the Header and Footer, you can add your company's logo and adjust layout, fonts, and colors with a little bit of HTML. Recurly provides helpful, pre-written HTML blocks. Just click on the documentation link (in the "Add Your Logo" box to the right of your template). Then copy the block you need and paste the code into your builder. From there, you can add your own links, colors, and fonts to make them unique to your brand.
+
+Invoice Template Customization
+
+For invoice templates, the same applies. Use our pre-written HTML blocks (or your own builder), then tailor your messaging, tone, and visual style.
+
+You can also make use of the pre-created email parameters, found in a list on the right of your screen. This will allow you to pre-fill information that is unique to your business and customers. Choose from tokens like first name, address, and more.
+
+Make sure to preview your template and send yourself a test email to QA your design before customers receive it. These updates will now apply to every future email that is created from this template.
+
+More Versatile Invoice Customization
+
+For more versatile invoice customization, check out "Invoice Templates" under "Configuration." This feature allows you to customize multiple invoice templates, catering to variable scenarios. For example, if you have several business entities and need separate logos for different accounts, you can add them here.
+
+Note: This feature may not be available on your plan. If so, you'll only see the "Invoice Settings" button in your top bar. If you need more powerful customization, reach out to support for assistance.
+
+With these few tweaks to your templates, you'll deliver emails and invoices that elevate your customer experience, reinforcing trust in your brand at every stage.
+
+Additional Resources
+
+If you'd like to dig deeper into branding your Recurly invoices, check out our comprehensive Recurly Documentation, "Invoice template customization."
+
+You can also find resources right inside your Recurly app. Click the Recurly Resources button for helpful documentation, or ask AI Answers or Recurly Chatbot tools anything about Recurly, and you'll get an answer. You'll find this in the bottom right corner of your UI.
+
+Documentation and support tickets are available at support.recurly.com.
+*/}
 
   ### 2. Recurly Docs: Invoice customization
 
@@ -578,6 +646,85 @@ Documentation and support tickets are available at support.recurly.com.
   <HTMLBlock>{`
               <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/12149951-6016-4a63-86fb-bab20b93da0b" loading="lazy" title="Synthesia video player - Launchpad: Build your safety net: Gateway Failover" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
   `}</HTMLBlock>
+{/*
+Launchpad Trail Guide: Build Your Safety Net — Gateway Failover
+
+Introduction
+
+Welcome back to Launchpad, part of the Recurly Navigate program. This collection of actionable guides is designed to ignite your Recurly liftoff! This guide will help you optimize and prepare for continued success, boosting your subscription business from production into transaction, and beyond! Today we'll talk about "Gateway Failover" — a powerful way to keep subscriptions flowing if your primary gateway ever goes down.
+
+Understanding Gateway Failover
+
+What it Does and Its Value
+
+If your payment gateway goes offline, even temporarily, it can stop new revenue. While true gateway outages are rare, gateway access can also be interrupted due to fraud issues, excessive chargebacks, or even if your gateway suspects a policy violation. It's always best practice to have a backup solution.
+
+Gateway Failover protects revenue by automatically rerouting eligible transactions to a backup gateway. This ensures that payments are not missed while the primary processor is down. Multiple gateways not only offer protection but also unlock advantages as a business grows, such as:
+• Geo-based routing
+• Retry optimization
+• Improved acceptance rates
+
+How Recurly Uses Gateway Failover
+
+Recurly monitors for communication failures from your primary gateway. When error rates spike beyond a certain threshold, transactions are routed to a backup gateway. Once the issue is resolved, Recurly automatically returns to the primary gateway. This ensures continuous transaction processing, minimizes financial disruptions, and helps create a more seamless customer experience by avoiding unnecessary payment failures.
+
+Where Gateway Failover Applies and Where It Doesn't
+
+The feature will activate when your primary gateway fails during:
+• New subscription sign-ups
+• One-time purchases
+
+It does not apply to:
+• Renewing subscriptions — these are paused and held, then resume once your gateway recovers
+• Authorization-and-capture flows
+• Refunds
+• Transactions assigned a gateway code — these bypass failover logic
+
+Configuring Gateways for Failover
+
+Gateway Preference
+
+Recurly will handle failover for you if you have no gateway preference. If you assign a specific gateway code to transactions during enablement, Recurly can only route payment through that specific gateway. If you don't have a preference, do not add a gateway code through the API. This is much simpler for anyone without a strict gateway preference and ensures that failover will function. Just enable gateway failover in the UI, and Recurly will take care of rerouting behind the scenes.
+
+Requirements to Enable
+
+If Gateway Failover sounds beneficial for your business, here's what you'll need in place to activate it:
+• You must be on Recurly's Professional plan or higher, or you will need to open or renew your Recurly subscription on our updated pricing plan. If you have any questions about your plan, you can always reach out to support.
+• You'll also need at least two gateways configured for each card type and currency you support.
+
+Enabling Gateway Failover in the UI
+
+Enabling Gateway Failover is easy:
+• Find "Configuration" in your left navigation menu and expand it.
+• Click on "Payment Gateways."
+• Click "Enable" in the Gateway Failover box.
+• In the pop-up modal, click "Enable."
+• A green success banner will appear at the top of your screen, indicating that you are set up.
+
+How it Works After Enabling
+
+Once enabled, Recurly uses the first-compatible gateway as your primary. If a failure occurs, secondary gateways will be used as backups, prioritized in the order they were added. If multiple are eligible, Recurly will distribute failover transactions using a round-robin pattern.
+
+Excluding a Gateway from Failover
+
+You may want to exclude a gateway from the failover rotation. For example, if you use a specific gateway for one region or product line, you'll want to keep it isolated.
+
+To configure this in your UI:
+• Navigate back to your "Payment Gateways" page.
+• Find the "Options" menu in the top-right corner of the gateway's card.
+• Click "Edit Gateway." This will open your settings.
+• In the Gateway "Status" area, change "Enabled" to "Exclude from Gateway Failover." It will now be removed from the failover rotation.
+
+Additional Resources
+
+Recurly is always here to help. You can find support within the Recurly app:
+• Click the Recurly Resources button in the top right corner of your user interface for helpful links, events, and updates.
+• The AI Answers tool (at the bottom right corner of your UI) can answer questions about Recurly.
+• You can also open a quick conversation with the Recurly Chatbot.
+• Documentation and support tickets are available at support.recurly.com.
+
+Gateway Failover is one of the simplest ways to increase operational resilience and protect your revenue.
+*/}
 
   ### 2. Recurly Docs: Gateway failover
 
@@ -601,6 +748,53 @@ Documentation and support tickets are available at support.recurly.com.
   <Cards columns={2}>
     <Card title="Navigate Launchpad: Phase One Cheatsheet" href="https://go.recurly.com/Navigate-Launchpad-Phase-One-Cheatsheet.html">
       Keep this download handy as a quick reference to the first six weeks of essential tips and resources.
+Navigate Launchpad Phase One: OptimizationResource 
+Cheatsheet for Weeks 1-6
+
+Below, you'll find a summary and resources for each week of Navigate Launchpad, Phase One: Optimization.Week 1: Welcome to Navigate
+
+Why it matters: Get oriented with Recurly's UI, information, and help resources so you know where to find configuration tools, support, documentation, and more.
+
+Resources:
+Trail Guide: UI Walkthrough
+Download: Navigate resource guide
+Week 2: Final Production Testing
+
+Why it matters: Walking through checkout from your customer's perspective ensures a smooth launch, while uncovering potential payment or compliance issues before going live.
+
+Resources:
+Trail Guide: Final production testing
+Recurly Docs: PSD2 compliance
+Week 3: Optimize Your Dunning Strategy
+
+Why it matters: Recover failed payments and reduce churn by creating a smart, revenue-saving dunning process.
+
+Resources:
+Trail Guide: Dunning done right
+On-Demand: Stop the leak
+Download: Dunning optimization checklist
+Week 4: Enable Account Updater
+
+Why it matters: Keep billing information current automatically so subscribers aren't lost over expired or replaced cards, protecting renewals and revenue.
+
+Resources:
+Trail Guide: Secure your launch: Account Updater
+Recurly Docs: Account Updater
+Week 5: Branding Invoices & Emails
+
+Why it matters: Branded communications build trust, strengthen relationships, and make your customer experience feel seamless from the very first touch.
+
+Resources:
+Trail Guide: Branded for liftoff
+Recurly Docs: Invoice template customization
+Week 6: Gateway Failover
+
+Why it matters: Outages happen. Gateway Failover reroutes transactions automatically, ensuring payments continue and your revenue stays protected.
+
+Resources:
+Trail Guide: Build your safety net
+Recurly Docs: Gateway failover
+
     </Card>
 
     <Card title="Recurly's 2025 Subscriptions Sessions: Going Global" href="https://recurly.com/events/subscriptionsessions-on-demand/?utm_medium=email&utm_source=marketi">
@@ -608,77 +802,5 @@ Documentation and support tickets are available at support.recurly.com.
     </Card>
   </Cards>
 </Accordion>
-
-<HTMLBlock>{`
-<style>
-  .hidden-content {
-    display: none;
-  }
-</style>
-
-<div class="hidden-content"> 
-Trail Guide: UI Walkthrough
-
-This collection of actionable video guides is designed to help you grow, scale, and unlock the full potential of your subscription business with Recurly. This guide will walk you through the Recurly User Interface.Getting Started with Your UI
-
-
-Begin by opening your UI. You will see the dashboard, learn how to identify your site environment, and explore what you will see according to your user access permissions.
-
-
-Your dashboard may look different depending on whether you are in a Sandbox, Development, or Production site. In a Sandbox environment, you will see a "Go Live" checklist. If you are in Production, you will see business insights and performance metrics.
-
-
-At the top of the dashboard, you will find the Recurly Resources button. This is your shortcut to resources like developer documentation, Recurly Connect, and changelogs.User Permissions
-
-
-Check your user permissions. If you do not see all the items in the left-hand navigation, your permissions may be limited. Site Admins can add users and assign different roles, such as access to Analytics or Configuration. Check with your admin if something is missing. If you are the site admin and do not see a feature you need, reach out to support.Site Environments
-
-
-Many businesses use more than one site environment: Production, Development, and Sandbox. To avoid confusion, go to Configuration, then Site Settings, and assign each one a different color theme. This provides an easy visual reminder of where you are.Tools for Subscriber Support and Quick Answers
-
-
-Explore the tools that help you support your subscribers and find answers fast: Recurly's "AI Answers" and the "Customers" section of your UI Navigation Menu.AI Answers
-
-
-AI Answers is Recurly's native AI tool. You can ask it just about anything. For example, if you are curious about tax-inclusive vs. tax-exclusive pricing, or wondering how to retry payments or handle failed transactions, just type in your question. If it cannot find what you need, the Support team is available to help.Customers Section
-
-
-The "Customers section" is a go-to for your support team. If a subscriber has questions about billing, their subscription, or account details, you will use this section. You can search for their account, view transactions, or even manage subscription activity from here.Tools for Performance Improvement and Strategy Optimization
-
-
-Next, explore the tools that help you improve performance and optimize your subscription strategy: Recurly Compass and Analytics (specifically, Benchmarks and Explore).Recurly Compass
-
-
-In your navigation menu, you will see the "Compass" section. Compass offers strategic playbooks to help reduce churn, launch promotions, grow your business with confidence, and much more. These step-by-step guides are based on best practices gathered from many successful subscription businesses.Analytics
-
-
-In Analytics, you will find a wide array of prebuilt dashboards curated for your success, such as how your plans are performing, churn metrics, and much more.
-
-
-Two key tools worth highlighting are:
-Benchmarks Overview: This gives you a quick snapshot of how your business compares to industry peers.
-Explore Tool: This is ideal for your internal data team to build and save custom dashboards. If you do not see Explore in your account, the Support team can help you enable it.
-Account Configuration and Management
-
-
-Finally, let's look at where to configure your account, connect integrations, and manage users.Configuration
-
-
-The "Configuration" section is where you will manage nearly everything in your setup. From pricing plans and coupons to invoice templates, taxes, currencies, shipping, dunning campaigns, payment gateways, and much more. If you are adjusting or expanding your subscription setup, this is your go-to spot.Integrations
-
-
-Beneath Configurations, you will see "Integrations." This is where you will find the third-party tools that Recurly supports. Some are self-installed, but others may require additional setup via documentation or assistance from the Recurly team. Make sure to reach out to support if you need any help.Admin Section
-
-
-The Admin section is where you manage users, roles, SSO settings, and upgrade your Recurly plan when needed.Recurly Support
-
-
-Recurly is always here to help. If you have any questions about your Recurly UI, you can find assistance right inside your Recurly app. Click on Recurly Resources in the top right corner of your user interface for fast access to documentation, or ask our AI Answers tool anything about Recurly. You can also open a quick conversation with the Recurly Chatbot, at the bottom right corner of your screen. As always, documentation and support tickets are available at support.recurly.com.
-
-
-A handy Navigate Resource Guide is available for you to bookmark or download. This is your one-stop document for everything you need to know about Recurly support tools and status updates.
-
-  </div>
-`}</HTMLBlock>
 
 <br />
