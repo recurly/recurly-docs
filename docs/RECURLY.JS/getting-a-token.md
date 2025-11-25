@@ -22,13 +22,13 @@ This guide explains how to intercept your payment form submission, send billing 
 
 ## How it works
 
-When a customer submits your billing form, Recurly.js intercepts the submission and sends the payment information to Recurly. The payment data is encrypted and stored securely on our servers, and an authorization key (or *token*) is returned. You then include this token in your API request to complete the subscription process. Since your server never handles sensitive payment details directly, your PCI scope is significantly reduced.
+When a customer submits your billing form, Recurly.js intercepts the submission and sends the payment information to Recurly. The payment data is encrypted and stored securely on our servers, and an authorization key (or _token_) is returned. You then include this token in your API request to complete the subscription process. Since your server never handles sensitive payment details directly, your PCI scope is significantly reduced.
 
 ***
 
-## Intercepting the form and retrieving a token
+## Retrieving a token
 
-Below is an example in JavaScript showing how to listen for a form submission, request a token, and then submit the form to your server:
+Below is an example illustrating how to listen for a form submission, request a token, and then submit the form to your server:
 
 ```javascript
 const elements = recurly.Elements();
@@ -50,15 +50,13 @@ document.querySelector('#my-form').addEventListener('submit', function (event) {
 });
 ```
 
-## Token overview
-
-Recurly.js works with tokens that represent secure, temporary storage of your customer's sensitive billing information. When a customer submits the form, Recurly.js creates a token from the billing data and automatically populates a hidden `token` field. This token is then used for any API operations requiring payment information.
+<br />
 
 ***
 
 ## Reference: `recurly.token`
 
-You must call `recurly.token` with your `Elements` instance and a reference to your `<form>`. For example:
+You must call`recurly.token`with your`Elements`instance and a reference to your`<form>`. For example:
 
 ```javascript
 recurly.token(elements, document.querySelector('form'), tokenHandler);
@@ -78,7 +76,7 @@ function tokenHandler(err, token) {
 
 This function sends the billing information to Recurly, which returns a token id.
 
-## Token callback arguments
+### Token callback arguments
 
 | **Param**                    | **Type**                 | **Description**                                                   |
 | ---------------------------- | ------------------------ | ----------------------------------------------------------------- |
@@ -94,6 +92,6 @@ This function sends the billing information to Recurly, which returns a token id
 | `token.card.issuing_country` | `String`                 | The issuing country (or `ZZ` if unknown).                         |
 | `token.card.funding_source`  | `String`                 | The funding source: e.g., `credit`, `debit`, `prepaid`, etc.      |
 
-## Returns
+### Returns
 
 The `recurly.token` function does not return a value directly. Instead, it uses the provided callback to return either an error or a token object.
