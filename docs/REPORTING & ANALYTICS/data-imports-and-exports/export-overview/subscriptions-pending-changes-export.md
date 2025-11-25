@@ -30,20 +30,6 @@ The “Subscriptions - Pending Changes” export enables users to view all activ
 
 * The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
-### Subscription Status Filter
-
-* **All**: Displays all subscription history status.
-* **Trial**: Displays all subscription history respective to trial status.
-* **Open**: Displays all subscription history respective to open status.
-* **Canceled**: Displays all subscription history respective to canceled status.
-* **Expired**: Displays all subscription history respective to expired status.
-
-### Export On Filters
-
-* **Activated**: Use this filter to view past versions of activated or reactivated subscriptions within a specified timeframe, utilizing the _subscription_activated_at_ column.
-* **Version Created**: View recent creations to all subscriptions within a chosen time range, referring to the _version_created_at_ column.
-* **Version Modified**: View recent alterations to all subscriptions within a chosen time range, referring to a combination of _version_state_ and _version_created_at_ columns.
-
 ### **Time Range Filter**
 
 * The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
@@ -92,63 +78,30 @@ The “Subscriptions - Pending Changes” export enables users to view all activ
 
 To help you identify and organize information effectively, the export provides a structured table that contains the following columns:
 
-| Column Name                                                                         | Example                                                | Description                                                                                                                                    |        |
-| ----------------------------------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | :----- |
-| <span id="subscription_uuid">subscription_uuid</span>                               | 434f11do8b297982eb                                     | Unique internal identifier for the subscription. Even if a subscription is modified, this identifier is maintained.                            |        |
-| <span id="version_uuid">version_uuid</span>                                         | 43509049eb30fb                                         | Unique internal identifier for the version of a subscription_uuid. A new version is created when a change is made to a subscription.           |        |
-| <span id="account_code">account_code</span>                                         | 123456789, [test@example.com](mailto:test@example.com) | Account associated with a given subscription_uuid.                                                                                             |        |
-| <span id="subscription_activated_at">subscription_activated_at</span>               | 2018-03-24 17:18:46 PDT                                | Date and time the subscription became active (or reactivated) on an account.                                                                   |        |
-| <span id="subscription_expires_at">subscription_expires_at</span>                   | 2018-09-24 17:18:46 PDT                                | Date and time the subscription was/will churn. This field is populated when a subscription cancels with the expected expiration date.          |        |
-| <span id="subscription_state">subscription_state</span>                             | active, canceled, paused, expired                      | State of the subscription at the time the version was active.                                                                                  |        |
-| <span id="version_started_at">version_started_at</span>                             | 2018-03-20 03:22:25 EST                                | The date a change was made to the subscription and thus the new version was created.                                                           |        |
-| <span id="version_ended_at">version_ended_at</span>                                 | 2018-07-20 03:22:25 EST                                | The date a version is no longer active because another change to the subscription is made and a newer version is created.                      |        |
-| <span id="version_state">version_state</span>                                       | inactive or active                                     | Versions reflecting the current attributes of the subscription (i.e., are currently in use) are "active." All expired versions are "inactive". |        |
-| <span id="plan_code">plan_code</span>                                               | bronze_1                                               | The plan that the subscription was actively on while that version was active. Codes are used internally only.                                  |        |
-| <span id="plan_name">plan_name</span>                                               | Bronze Plan # 1                                        | The name of the plan the subscriber was actively on while that version was active.                                                             |        |
-| <span id="subscription_currency">subscription_currency</span>                       | USD, GBP, CAD                                          | The currency associated with that subscription at the time that version was active.                                                            |        |
-| <span id="version_plan_interval_unit">version_plan_interval_unit</span>             | months, weeks, days, years                             | The interval type at which that subscription is billed while that version was active.                                                          |        |
-| <span id="version_plan_interval_length">version_plan_interval_length</span>         | any number                                             | The length of the interval type at which the subscription is billed at while the version was active.                                           |        |
-| <span id="version_collection_method">version_collection_method</span>               | automatic, manual                                      | Identifies whether the subscription fees are collected via manual or automatic invoicing.                                                      |        |
-| <span id="version_total_billing_cycles">version_total_billing_cycles</span>         | 1                                                      | The total number of bill cycles that the subscription will bill at the time the version was active.                                            |        |
-| <span id="version_subscription_quantity">version_subscription_quantity</span>       | 1, 2                                                   | Identifies the quantity of the subscription purchase at the time the version was active.                                                       |        |
-| <span id="version_subscription_unit_amount">version_subscription_unit_amount</span> | 100                                                    | Identifies the base price of 1 quantity of the subscription at the time the version was active.                                                |        |
-| <span id="version_add_on_codes">version_add_on_codes</span>                         | add_on1, add_on1, add_on2                              | A list of add-ons that were active on the subscription at the time the version was active.                                                     |        |
-| <span id="version_add_on_types">version_add_on_types</span>                         | fixed, fixed, usage                                    | Lists the type of add-on in corresponding order to the listed add_on_codes on the subscription at the time the version was active.             |        |
-| <span id="version_add_on_unit_amounts">version_add_on_unit_amounts</span>           | 10, 10, 5%                                             | Lists the unit amount of the add-on in corresponding order to the listed add_on_codes and listed add_on_types.                                 |        |
-| <span id="version_add_ons_total">version_add_ons_total</span>                       | 20                                                     | Sums the add_on_unit_amounts on the subscription at the time the version was active. Does not include usage-based add-ons.                     |        |
-| <span id="version_total_recurring_amount">version_total_recurring_amount</span>     | 120                                                    | (version_unit_amount) * (version_subscription_quantity) + version_add_on_total                                                                 |        |
-| <span id="version_in_trial">version_in_trial</span>                                 | Y, N                                                   | Indicates whether or not the subscription was in trial while the version was active.                                                           |        |
-| <span id="version_auto_renew">version_auto_renew</span>                             | Y, N                                                   | Indicates whether or not the subscription was set to auto renew while the version was active.                                                  |        |
-| <span id="version_renewal_billing_cycles">version_renewal_billing_cycles</span>     | 1                                                      |                                                                                                                                                |        |
-| <span id="version_shipping_method_name">version_shipping_method_name</span>         | USPS Overnight                                         | The shipping method name used at the time when the version was active.                                                                         |        |
-| <span id="version_shipping_amount">version_shipping_amount</span>                   | 5                                                      | Identifies the shipping price on the subscription at the time the version was active.                                                          |        |
-| <span id="pricing_model">pricing_model</span>                                       | ramp                                                   | Pricing model of the subscription. Will be either fixed or ramp.                                                                               |        |
-| <span id="current_ramp_id">current_ramp_id</span>                                   | pz82514rbd3s                                           | The id of the current ramp interval.                                                                                                           |        |
-| <span id="tax_inclusive">tax_inclusive</span>                                       | false                                                  | Boolean (TRUE/FALSE) flag to indicate whether subscription is tax inclusive.                                                                   |        |
-| subscription_api_id                                                                 | e28zov4fw0v2                                           | Subscription API ID                                                                                                                            | string |
+| Column Name                                                             | Example                 | Description                                                                                         | Data type |
+| ----------------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------- | :-------- |
+| <span id="subscription_change_api_id">subscription_change_api_id</span> | 434f11do8b297982eb      | Unique internal identifier for the pending change subscription.                                     | string    |
+| <span id="account_api_id">account_api_id</span>                         | 43509049eb30fb          | Unique internal identifier for the account.                                                         | string    |
+| <span id="subscription_api_id">subscription_api_id</span>               | 143509049eb30fb         | Unique internal identifier for the current subscription.                                            | string    |
+| <span id="account_code">account_code</span>                             | a1b2c3d4                | Unique identifier for the customer's account.                                                       | string    |
+| <span id="subscription_uuid">subscription_uuid</span>                   | 1234-abcd-5678-efgh     | Unique identifier for the subscription.                                                             | string    |
+| <span id="change_type">change_type</span>                               | downgrade               | The nature of the change (e.g., Upgrade, Downgrade, Price Change).                                  | string    |
+| <span id="change_initiator">change_initiator</span>                     | John Smith              | Person or API that initiated the change (e.g., Customer, Merchant, API).                            | string    |
+| <span id="change_created_at">change_created_at</span>                   | 2025-07-20 03:22:25 EST | The date and time when the pending change was created.                                              | timestamp |
+| <span id="change_scheduled_at">change_scheduled_at</span>               | 2025-07-31 11:59:59 EST | The date and time when the pending change is scheduled to be applied (e.g., the next renewal date). | timestamp |
+| <span id="current_plan_api_id">current_plan_api_id</span>               | 143509049eb30fb         | The unique id of the current plan.                                                                  | string    |
+| <span id="pending_plan_api_id">pending_plan_api_id</span>               | 143509049eb30fb         | The unique id of the pending plan.                                                                  | string    |
+| <span id="current_add_on_api_id">current_add_on_api_id</span>           | 143509049eb30fb         | The unique id of the current add on.                                                                | string    |
+| <span id="pending_add_on_api_id">pending_add_on_api_id</span>           | 143509049eb30fb         | The unique id of the pending add on if changed.                                                     | string    |
+| <span id="current_product_code">current_product_code</span>             | product12345            | The current product code.                                                                           | string    |
+| <span id="pending_product_code">pending_product_code</span>             | product67890            | The pending product code if changed.                                                                | string    |
+| <span id="current_quantity">current_quantity</span>                     | 10                      | The current quantity                                                                                | int64     |
+| <span id="pending_quantity">pending_quantity</span>                     | 12                      | The pending quantity if changed.                                                                    | int64     |
+| <span id="current_currency">current_currency</span>                     | USD                     | The currency of the current subscription period.                                                    | string    |
+| <span id="pending_currency">pending_currency</span>                     | USD                     | The currency after the change takes effect.                                                         | string    |
+| <span id="current_recurring_amount">current_recurring_amount</span>     | 1200.00                 | The total recurring amount of the current subscription period.                                      | numeric   |
+| <span id="pending_recurring_amount">pending_recurring_amount</span>     | 125                     | The new total recurring amount after the change takes effect.                                       | numeric   |
 
 # Version changelog
 
-### Version 7 - 2/5/2025
-
-* Addition of `subscription_api_id`.
-
-### Version 6 - 1/28/2022
-
-* Added columns for tax_inclusive.
-
-### Version 5 - 12/7/2021
-
-* Added columns for pricing_model and current_ramp_id.
-
-### Version 4 - 5/12/2021
-
-* Removed concatenation in columns: version_add_on_codes, version_add_on_types, version_add_on_unit_amounts.
-
-### Version 3 - 3/25/2020
-
-* Introduced a new column: version_add_on_tier_types.
-
-### Version 2 - 1/9/2020
-
-* Incorporated columns for shipping method and amount.
+<br />
