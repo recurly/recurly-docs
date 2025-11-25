@@ -1,8 +1,8 @@
 ---
 title: Subscriptions — pending changes
 excerpt: >-
-  Unlock a detailed record of subscription alterations with the Subscriptions -
-  History export.
+  All active subscriptions with All active subscriptions with a pending change
+  that will be applied at the next renewal.
 deprecated: false
 hidden: true
 metadata:
@@ -18,13 +18,9 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Prerequisites
-
-Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) to have this feature activated in your account.
-
 # Definition
 
-The “Subscriptions - History” section enables users to view the history of each subscription including all versions created following any change to a subscription. This includes monitoring various movements such as upgrades, downgrades, cancellations, trial conversions, and more, facilitating in-depth tracking of a subscriber's lifecycle. It is essential to note that the subscription history export only tracks the changes post the activation of a subscription. The oldest historical data available for this export is April 2019.
+The “Subscriptions - Pending Changes” export enables users to view all active subscriptions with a pending change that will be applied at the next renewal. This includes changes to the plan, price, or quantity.
 
 <Image border={false} src="https://files.readme.io/b393490192b8f18f4eb66a0e75f9c8b14c25304cbfedcc735c505c5849082866-image.png" />
 
