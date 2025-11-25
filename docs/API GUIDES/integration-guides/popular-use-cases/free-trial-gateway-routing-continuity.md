@@ -28,7 +28,7 @@ In order for continuous routing to occur for both the verification on the free t
 
 ***
 
-# Creating Purchases
+# Creating Subscriptions
 
 ## Step 1: Generate a Subscription Request
 
