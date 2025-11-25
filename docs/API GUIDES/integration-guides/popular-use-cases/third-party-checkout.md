@@ -66,9 +66,9 @@ If you decide to use the Card Element instead of the Payment Element, you will b
 
 ```
 // Initialize Stripe.js with your test key
-      const stripe = Stripe('pk_test_40DpPkZhqK69boNdC3y...CRDkFfVe7s7003wu2I6Mq', {
-        stripeAccount: 'your-account-id'
-      });
+   const stripe = Stripe('pk_test_40DpPkZhqK69boNdC3y...CRDkFfVe7s7003wu2I6Mq', {
+   stripeAccount: 'your-account-id'
+   });
 ```
 
 * To retrieve your Stripe Account ID, you have two options:
