@@ -299,11 +299,11 @@ next:
 
     <tr>
       <td>
-        [Product Catalog](doc:items-associated-subscriptions)
+        [Product Catalog](doc:products-catalog-export)
       </td>
 
       <td>
-
+        Comprehensive details of all product offerings, add-ons and items, whether active or inactive.
       </td>
     </tr>
 
@@ -376,6 +376,16 @@ next:
 
       <td>
         All the detailed information on external subscriptions stored on third-party platforms like the Apple App Store or Google Play Store.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Subscriptions — Pending Changes](https://docs.recurly.com/docs/subscriptions-external)
+      </td>
+
+      <td>
+
       </td>
     </tr>
 
