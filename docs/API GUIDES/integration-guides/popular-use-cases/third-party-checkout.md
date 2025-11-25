@@ -19,7 +19,7 @@ metadata:
 
 # Third party checkout
 
-> ❗️ Integration Flow 
+> ❗️ Integration Flow
 >
 > Do not write code to create, update, or confirm Payment Intents with Stripe directly. To use this feature, you will only create the confirmation token, and then pass it to Recurly using the guide below.
 
@@ -64,13 +64,20 @@ If you decide to use the Card Element instead of the Payment Element, you will b
 
 * **Credentials**: When using Elements with your Recurly Account, you must use your Stripe Account ID (acct_xxxx) when configuring Elements and Recurly’s top-level PK key. If you use your own publishable key, the integration will not work properly. This is due to Recurly using Stripe Connect.
 
-  * To retrieve your Stripe Account ID, you have two options:
+```
+// Initialize Stripe.js with your test key
+      const stripe = Stripe('pk_test_40DpPkZhqK69boNdC3ygyBgsCMGIzMq9rbRmeqBbD7ELUduU6gW4NcmKhvinbztWdiNVFfUfknl2OsCRDkFfVe7s7003wu2I6Mq', {
+        stripeAccount: 'acct_1QX80yEViMrYb4Gr'
+      });
+```
 
-    * **Option 1:** Log into your Stripe Gateway account directly, click on the ‘Settings’ gear icon, choose ‘Settings’ > ‘Business’. The account ID will be present in the UI for copying.
+* To retrieve your Stripe Account ID, you have two options:
 
-    * **Option 2:** Log into your Recurly account and navigate to ‘Configuration’ > ‘Payment Gateways’ and run a ‘Test Configuration’ against a Stripe Gateway instance. The associated account ID will be visible in the UI.
+  * **Option 1:** Log into your Stripe Gateway account directly, click on the ‘Settings’ gear icon, choose ‘Settings’ > ‘Business’. The account ID will be present in the UI for copying.
 
-    * **Format:** `acct_xxxxxxxxxxxxx`
+  * **Option 2:** Log into your Recurly account and navigate to ‘Configuration’ > ‘Payment Gateways’ and run a ‘Test Configuration’ against a Stripe Gateway instance. The associated account ID will be visible in the UI.
+
+  * **Format:** `acct_xxxxxxxxxxxxx`
 
 Use the ‘development mode’ key while your Recurly site is in ‘development mode’. Use the ‘production mode’ key for production transactions.
 
