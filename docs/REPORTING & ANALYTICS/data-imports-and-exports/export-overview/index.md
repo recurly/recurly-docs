@@ -299,6 +299,16 @@ next:
 
     <tr>
       <td>
+        [Product Catalog](doc:items-associated-subscriptions)
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export)
       </td>
 
