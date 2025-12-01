@@ -101,7 +101,7 @@ This section provides a list of product offerings, add-ons and items, whether ac
 
 ##### - Sub-categories (Products)
 
-* [Product Catalog](https://docs.recurly.com/docs/product-catalog-exports)— Product catalog
+* [Product Catalog](https://docs.recurly.com/docs/product-catalog-export)— Product catalog
 
 #### Revenue Recognition schedules
 
