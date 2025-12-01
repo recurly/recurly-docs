@@ -287,6 +287,42 @@ See [Recurly.js Action Token documentation](https://docs.recurly.com/recurly-sub
 >
 > **Please Note:** For these methods, you may need to submit the action token to Recurly.js twice, to receive a result token.
 
+Resubmission with the final token looks like so, using the Purchase (`/purchases`) endpoint. You will submit the entire payload again, including the Stripe Ctoken and `three_d_secure_action_result_token_id`.
+
+```json
+{
+    "subscriptions": [
+		{
+			"plan_code": "goldplan" 
+		}
+	],
+    "account": {
+        "code": "account-code-2025",
+        "billing_info": {
+            "first_name":"Jane",
+            "last_name":"Doe",
+            "address":{
+            "street1":"123",
+            "city":"London",
+            "region":"London",
+            "postal_code":"SW33DJ",
+            "country":"GB"
+            },
+            "gateway_code": "gateway-code",
+            "three_d_secure_action_result_token_id":"Recurlyjs-action-result-token-id",
+            "payment_gateway_references": 
+                [
+                    {
+                        "token": "ctoken_xxxxxxxxxxxxx",
+                        "reference_type": "stripe_confirmation_token"
+                    }
+                ]
+        }
+    },
+    "currency": "EUR"
+}
+```
+
 #### Direct Debit and country restricted payment methods
 
 Certain payment methods require the Stripe business account holder to be located in the respective country of support. For example, you will not be able to enable BACS or Revolut without a UK domiciled business, and BECS cannot be enabled outside of Australia.
