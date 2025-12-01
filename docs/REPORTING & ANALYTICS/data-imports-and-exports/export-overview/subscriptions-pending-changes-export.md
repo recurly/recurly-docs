@@ -2,7 +2,7 @@
 title: Subscriptions — pending changes
 excerpt: >-
   All active subscriptions with a pending change that will be applied at the
-  next renewal.
+  next renewal or a future date.
 deprecated: false
 hidden: false
 metadata:
@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The “Subscriptions - Pending Changes” export enables users to view all active subscriptions with a pending change that will be applied at the next renewal. This includes changes to the plan, price, or quantity.
+The “Subscriptions - Pending Changes” export enables users to view all active subscriptions with a pending change that will be applied at the next renewal or a future date. This includes changes to the plan, price, or quantity.
 
 <Image border={false} src="https://files.readme.io/b393490192b8f18f4eb66a0e75f9c8b14c25304cbfedcc735c505c5849082866-image.png" />
 
