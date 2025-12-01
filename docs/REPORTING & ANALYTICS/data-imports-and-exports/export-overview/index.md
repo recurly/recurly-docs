@@ -299,7 +299,7 @@ next:
 
     <tr>
       <td>
-        [Product Catalog](https://docs.recurly.com/docs/recurly-subscriptions/docs/products-catalog-export)
+        [Product Catalog](https://docs.recurly.com/docs/products-catalog-export)
       </td>
 
       <td>
