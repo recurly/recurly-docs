@@ -30,6 +30,13 @@ The “Subscriptions - Pending Changes” export enables users to view all activ
 
 * The Versions filter allows you to select the version that is most appropriate for your needs. This is based on the version changelog at the bottom of this page.
 
+### Export On Filters
+
+Understand your subscriptions included in the export with the following filters:
+
+* **Created**: Displays subscriptions created within a selected time frame, including those with future activation dates.
+* **Modified**: Shows subscriptions altered in the chosen time frame.
+
 ### **Time Range Filter**
 
 * The Time range filter (dropdown) allows you to view data within a specific period such as last month, year to date or a custom date range. The Start Date and End Date will automatically update based on the value selected in the Time range filter. You can also choose "Between..." in the dropdown, which will allow you to enter a customized date range.
