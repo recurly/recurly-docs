@@ -1,8 +1,8 @@
 ---
 title: Subscriptions — pending changes
 excerpt: >-
-  All active subscriptions with All active subscriptions with a pending change
-  that will be applied at the next renewal.
+  All active subscriptions with a pending change that will be applied at the
+  next renewal.
 deprecated: false
 hidden: true
 metadata:
