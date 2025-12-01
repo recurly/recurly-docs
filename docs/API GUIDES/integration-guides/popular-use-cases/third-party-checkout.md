@@ -285,7 +285,7 @@ See [Recurly.js Action Token documentation](https://docs.recurly.com/recurly-sub
 >
 > **Related APMs:** Cash App, Revolut, Klarna, iDeal
 >
-> **Please Note:** For Klarna and Revolut, you must submit the action token to Recurly.js twice, to receive a result token.
+> **Please Note:** For Klarna, iDeal, and Revolut, you must submit the action token to Recurly.js twice, to receive a result token.
 
 #### Direct Debit and country restricted payment methods
 
