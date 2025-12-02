@@ -1,5 +1,5 @@
 ---
-title: Subscriptions — pending changes
+title: Subscriptions — pending changes - export
 excerpt: >-
   All active subscriptions with a pending change that will be applied at the
   next renewal or a future date.
