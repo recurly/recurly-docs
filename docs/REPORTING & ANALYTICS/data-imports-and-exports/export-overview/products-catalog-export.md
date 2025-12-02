@@ -18,6 +18,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Products Catalog" export provides comprehensive details of all product offerings, add-ons and items, whether active or inactive.
 
+<Image border={false} src="https://files.readme.io/e8967cc406e075014f934dd166ddece8b4303f8c68d855750943c31f5ff41fde-image.png" />
+
+<br />
+
 # Filters
 
 ### Versions Filter
@@ -26,12 +30,12 @@ The "Products Catalog" export provides comprehensive details of all product offe
 
 ### **Product Type Filter**
 
-The Product type filter allows you to select existing plan, add on, setup fee, or item
+The Product type filter allows you to select existing plan, add on, item or setup fee.
 
-* **Plan**: Recurring billing products that define the billing frequency and the product's base price, allowing businesses to create a revenue model that provides consistent income.
 * **Add-on**: Additional features, services, or products that customers can purchase alongside their subscription plan.
-* **Setup fee**: One time initial fee.
-* **Item**: Collection of the sellable units of a business. This can include standalone products, services, or even add-ons
+* **Item**: Collection of the sellable units of a business. This can include standalone products, services, or even add-ons.
+* **Plan**: Recurring billing products that define the billing frequency and the product's base price, allowing businesses to create a revenue model that provides consistent income.
+* **Setup-fee**: One time initial fee.
 
 ### &#x20;Export On Filters
 
