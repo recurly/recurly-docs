@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The “Subscriptions - Pending Changes” export enables users to view all active subscriptions with a pending change that will be applied at the next renewal or a future date. This includes changes to the plan, price, or quantity.
 
-<Image border={false} src="https://files.readme.io/b393490192b8f18f4eb66a0e75f9c8b14c25304cbfedcc735c505c5849082866-image.png" />
+<Image border={false} src="https://files.readme.io/c1ad1d96ad50d479e893d51e50ae6558616075a064c85c7171c98668f128f052-image.png" />
 
 # Filters
 
