@@ -17,131 +17,132 @@ next:
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+This feature is available to all customers on any Recurly subscription plan.
 
 # Definition
 
-Hosted Account Management, an offering by Recurly, facilitates businesses in offering a seamless subscription experience on their websites. You can either host the entire process with Recurly’s API or choose Recurly’s pre-configured hosted pages for customers to manage their subscriptions.
+Hosted Account Management helps you give subscribers a consistent subscription experience on your website. You can either build the experience with Recurly’s API or use Recurly’s preconfigured hosted pages for customers to manage their subscriptions.
 
 > 👍 New Recurly Checkout!
 >
-> The new Checkout capability is now available to all Recurly customers. With quick setup and deployment, rich customizable features, and flexible payment options, Checkout is the new standard for fast and frictionless consumer checkout, powering subscription purchases for your business. [Learn more](https://docs.recurly.com/docs/checkout).
+> The new Checkout capability is now available to all Recurly customers. With quick setup and deployment, rich customizable features, and flexible payment options, Checkout is the new standard for fast and low-friction consumer checkout, powering subscription purchases for your business. [Learn more](https://docs.recurly.com/docs/checkout).
 
 # Key benefits
 
-* **Seamless customer experience:** Offer your subscribers an uninterrupted experience by letting them manage, update, or cancel their subscriptions on your website.
-* **Flexibility:** Choose between custom built  pages using the Recurly APIor use Recurly’s hosted pages.
-* **Enhanced security:** Unique and secret tokens ensure only authorized access to each customer’s account information.
+* **Streamlined customer experience:** Let subscribers manage, update, or cancel their subscriptions without leaving your website.
+* **Flexibility:** Choose between custom-built pages using the Recurly API or Recurly’s hosted pages.
+* **Enhanced security:** Unique secret tokens ensure only authorized access to each customer’s account information.
 
 # Key details
 
-Recurly's Hosted Account Management provides businesses the flexibility to tailor the subscription experience to their preference. You can let your customers view their account status, modify their billing details, retrieve past invoices, or make choices regarding their subscription.
+Recurly's Hosted Account Management gives you the flexibility to tailor the subscription experience to your needs. Customers can view their account status, modify billing details, retrieve past invoices, or make changes to their subscriptions.
 
 ## Access
 
-Customers use pre-defined URLs to access their account management tools. To be able to provide those URLs:
+Customers use pre-defined URLs to access their account management tools. To provide those URLs:
 
-1. **Navigate** to **Customers** -> **Accounts**.
+1. **Navigate** to **Customers** → **Accounts**.
 2. **Select** an account.
 
 <Image align="center" border={true} src="https://files.readme.io/162e97316690eaf43d395e6b3525620a1d8c90911d985ec61b54bf19f9518a06-image.png" className="border" />
 
-3. **Navigate** to the right side of the screen where it says "Hosted Pages". You will find two options: **Account Management URL** and **Edit Billing Information URL**.
+3. On the right side of the screen, under **Hosted Pages**, you’ll find two options: **Account Management URL** and **Edit Billing Information URL**.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/c6e9fd55c77f2e7f0198bc1a199dfee3ae282e1590334649796df8fbd3a2af2b-image.png" className="border" />
 
 4. Share either one or both URLs with your customer.
 
-> **Note:** Bare in mind that doable actions by the customers depend on their access level. You can configure the access level to account login and guest view only types of accesses. Continue reading to learn how to configure it.
+> **Note:** Bear in mind that what customers can do depends on their access level. You can configure access as either **Account Login** or **Guest View Only**. Continue reading to learn how to configure it.
 
-> ❗️ **Security Alert:**
+> ❗️ **Security alert**
 >
-> Safeguard this URL and token. Unauthorized access means they can log in as the actual customer!
+> Safeguard this URL and token. Anyone with the link can access the account as the actual customer.
 
-### Account Management URL
+### Account management URL
 
-The customer will automatically authenticate, and they will be able to see all invoices and subscriptions. Furthermore, they can also change their payment method, cancel subscriptions, edit their billing information and redeem gift cards.
+The customer is automatically authenticated and can see all invoices and subscriptions. They can also:
+
+* Change their payment method
+* Cancel subscriptions
+* Edit their billing information
+* Redeem gift cards
 
 <Image align="center" border={true} src="https://files.readme.io/f7ac0d55789a6315f80bb5344b81ef612b61775cb088805e049d7b1cbb081329-image.png" className="border" />
 
-They can also change their email and password by clicking on their name and selection an option from the drop down menu.
+They can also change their email and password by clicking their name and selecting an option from the drop-down menu.
 
 <Image align="center" border={true} src="https://files.readme.io/db99fa9a3dbb472288b2e164c09f82d6017e007e0a0ed6fd9aa5e499fee89439-image.png" className="border" />
 
-### Edit Billing Information URL
+### Edit billing information URL
 
-With this URL, the customer will be able to change their billing information more easily.
+With this URL, the customer can quickly update their billing information.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/066cb8da6a7e2b7308d16d5546db252dd7f31900f727488f0506be43040f847b-image.png" className="border" />
 
 ## Customer access
 
-Two primary settings dictate how your customers access the Hosted Account Management: "Account Login" and "Guest View Only". You can either let your customers register and gain full access to the portal or provide them with specific hosted invoices. The default setting is "Guest View Only".
+Two primary settings control how your customers access Hosted Account Management: **Account Login** and **Guest View Only**. You can let customers register and gain full access to the portal, or give them links to specific hosted invoices. The default setting is **Guest View Only**.
 
-### **Account Login**
+### Account Login
 
-The full spectrum of the Hosted Account Management portal becomes available with this setting. Once authenticated:
+This setting unlocks the full Hosted Account Management portal. Once authenticated:
 
-* Customers land on a login page which also contains a sign-up segment, facilitated by your unique Vanity URL.
-* Customers can create an account and login using the email address that is their Account Info email address in your Recurly admin.
-* Each customer gets a distinct and confidential Hosted Account Management Login Token URL under the Edit Account in Recurly admin. Handle with care: this link offers direct access!
+* Customers land on a login page that also includes a sign-up section, accessible through your unique vanity URL.
+* Customers can create an account and log in using the email address that appears as their Account Info email address in your Recurly admin.
+* Each customer gets a distinct Hosted Account Management Login Token URL under **Edit Account** in the Recurly admin. Handle this link with care—it provides direct access.
 
-You can incorporate the **account_hosted_maintenance_url** parameter in your Recurly emails, directing users straight to their accounts. For a deeper dive into editing email templates, check our [Email Templates documentation](/docs/email-templates).
+You can include the **account_hosted_maintenance_url** parameter in your Recurly emails to send users straight to their account. For more details on editing email templates, see the [Email templates documentation](/docs/email-templates).
 
-### **Guest view only**
+### Guest view only
 
-This setting leverages Hosted Account Management to display limited customer details without needing an account. It caters primarily to hosted invoice pages and the billing info page.
+This setting uses Hosted Account Management to display limited customer details without requiring an account. It’s primarily used for hosted invoice pages and the billing info page.
 
 ### Configuration
 
-1. **Login to your Recurly admin account.**
-2. **Navigate** to **Configuration** and select **Hosted Pages Settings** and scroll to **Account Management Pages**.
-3. **Click** enabled to activate.
-4. **Choose** between **Account Login** and **Guest View Only** based on your preference.
-5. Below are options for what a customer can view on their account management page. **Select** only those options you wish your customers to view/modify on their account management page
+1. **Log in** to your Recurly admin account.
+2. **Navigate** to **Configuration** → **Hosted Pages Settings**, then scroll to **Account Management Pages**.
+3. **Select** Enabled to activate Hosted Account Management.
+4. **Choose** between **Account Login** and **Guest View Only**.
+5. Under **Account Management Pages**, select what customers can view or edit on their account management page.
 
 <Image align="center" border={true} src="https://files.readme.io/916a6727a581f61f59ccc2790f816dcff9e2b068275a72f84d089ca5ea696594-image.png" className="border" />
 
-## **Online payments**
+## Online payments
 
-Recurly's Professional or Elite plan users can harness "Online Payments". It empowers customers to settle manual invoices via credit card, PayPal, Amazon account, or ACH. Incorporated within Hosted Account Management, Online Payments introduce a "Make a Payment" option on the hosted invoice page.
+If you’re on the Professional or Elite plan, you can use **Online Payments**. This lets customers pay manual invoices via credit card, PayPal, Amazon account, or ACH. When Online Payments is enabled in Hosted Account Management, a **Make a Payment** option appears on the hosted invoice page.
 
 <Image alt="319" border={false} src="https://files.readme.io/q0n6EYxvRFSPllhMBsYT_online-pay-button.png" title="online-pay-button.png" />
 
 <Image alt="328" border={false} src="https://files.readme.io/7FWLL1DTD2vK3eWSYfjO_online-pay-history.png" title="online-pay-history.png" />
 
-If the invoice contains a recurring subscription, an opt-in checkbox appears for customers to allow the chosen payment method for automatic renewal payments. If this option is not chosen, the next invoice will continue to be manual.
+If the invoice includes a recurring subscription, an opt-in checkbox appears so customers can use the selected payment method for automatic renewal payments. If they don’t select it, the next invoice will remain manual.
 
 ### Enable online payments
 
-Visit the Hosted Page Settings in your Recurly site, and under Customer Options, activate the "Pay invoices online" checkbox. If the "Make a Payment" button doesn't appear, ensure the gateways are set up correctly.
+In your Recurly admin, go to **Hosted Pages Settings** and, under **Customer Options**, select the **Pay invoices online** checkbox. If the **Make a Payment** button doesn’t appear, confirm that your gateways are configured correctly.
 
-### Experience the customer's perspective
+### Test the customer experience
 
-To test  the hosted invoice experience with Online Payments, issue a manual invoice. In your Recurly Admin, on the specific invoice's page, there's a "Hosted Invoice" button. Clicking this unique link showcases the Guest View version of the client's hosted invoice.
+To test the hosted invoice experience with Online Payments:
 
-## **Display settings**
+1. Issue a manual invoice.
+2. In your Recurly admin, open the invoice.
+3. Select the **Hosted Invoice** button.
 
-Both Hosted Account Management and Hosted Payment Pages derive branding options from the same source.
+This unique link shows the Guest View version of the customer’s hosted invoice.
 
-## Setting up hosted account management
+## Display settings
 
-1. **Login to your Recurly admin account.**
-2. **Navigate** to **Configuration** and select **Hosted Pages Settings** and scroll to **Account Management Pages**.
-3. **Click** enabled to activate.
-4. **Choose** between **Account Login** and **Guest View Only** based on your preference.
-5. Below are options for what a customer can view on their account management page. **Select** only those options you wish your customers to view/modify on their account management page.
-
-<Image align="center" border={true} width="50% " src="https://files.readme.io/3e445f6-image.png" className="border" />
+Both Hosted Account Management and Hosted Payment Pages use the same branding configuration.
 
 ## Customization
 
-The customization settings are for both the hosted payment pages and the account management pages so adjust accordingly.
+The customization settings apply to both hosted payment pages and account management pages, so adjust them with both in mind.
 
-1. Under display options, **adjust** your branding preferences.
-2. Under Google Analytics, **enter** your code to have the hosted payment pages report back to your Google Analytics.
+1. Under **Display Options**, **adjust** your branding preferences.
+2. Under **Google Analytics**, **enter** your code so hosted payment pages report to your Google Analytics property.
 3. **Save** your settings.
 
 <Image align="center" border={true} src="https://files.readme.io/83f7bfe9a947a7d30eb2e888f1fc8ae57007a47e72219ae128845de425b14132-image.png" className="border" />
 
-Remember always to ensure the security of unique token links and consistently review your settings to ensure optimal customer experience.
+Remember to protect unique token links and review your settings regularly to ensure a secure, clear experience for your customers.
