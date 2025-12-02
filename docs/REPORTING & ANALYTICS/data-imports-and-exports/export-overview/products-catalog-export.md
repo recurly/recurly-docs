@@ -18,7 +18,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Products Catalog" export provides comprehensive details of all product offerings, add-ons and items, whether active or inactive.
 
-<Image border={false} src="https://files.readme.io/e8967cc406e075014f934dd166ddece8b4303f8c68d855750943c31f5ff41fde-image.png" />
+<Image align="center" border={false} width="85% " src="https://files.readme.io/e8967cc406e075014f934dd166ddece8b4303f8c68d855750943c31f5ff41fde-image.png" />
 
 <br />
 
