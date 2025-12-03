@@ -21,7 +21,7 @@ Discover proven strategies to reduce involuntary churn and recover lost revenue 
 
 > **Note**: Watch it <Anchor label="on-demand here" target="_blank" href="https://recurly.ondemand.goldcast.io/on-demand/a65f472f-9876-4736-9209-5b7b669de773">on-demand here</Anchor>.
 
-## Download the handout here.
+### Download
 
 <Embed typeOfEmbed="pdf" url="https://go.recurly.com/Recurly-Navigate-Presentation-Deck-How-to-Optimize-Dunning-for-Growth.html" href="https://go.recurly.com/Recurly-Navigate-Presentation-Deck-How-to-Optimize-Dunning-for-Growth.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
 
