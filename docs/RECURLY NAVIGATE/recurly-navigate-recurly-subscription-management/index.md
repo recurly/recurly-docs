@@ -17,7 +17,7 @@ next:
 ---
 Recurly Navigate is Recurly's digitally-delivered customer success program designed to provide all the strategic guidance and resources you need to grow your business on the Recurly platform.
 
-## Key benefits and features:
+## Key benefits and features
 
 * **Strategic Guidance:** Access to expert CSM-backed best practices and strategy to optimize your subscription model from acquisition to retention.
 * **Scaled Resources:** Receive tailored content and resources (videos, guides, webinars) delivered digitally to you when you need them most, ensuring you're always using the platform efficiently.
