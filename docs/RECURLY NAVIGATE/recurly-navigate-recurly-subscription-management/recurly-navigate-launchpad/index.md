@@ -1,5 +1,8 @@
 ---
 title: 'Recurly Navigate: Launchpad'
+excerpt: >-
+  90-day success plan/customer learning path designed to help you build a strong
+  foundation in Recurly, after reaching the production phase.
 deprecated: false
 hidden: true
 metadata:
