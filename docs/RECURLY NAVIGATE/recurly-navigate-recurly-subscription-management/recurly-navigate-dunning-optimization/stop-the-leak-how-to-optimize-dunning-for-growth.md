@@ -1,6 +1,6 @@
 ---
 title: 'Stop the Leak: How to optimize Dunning for growth'
-excerpt: On-Demand Recurly Navigate Webinar
+excerpt: On-Demand Recurly Navigate Webinar.
 deprecated: false
 hidden: true
 metadata:
