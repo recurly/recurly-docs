@@ -1,5 +1,6 @@
 ---
-title: 'Recurly Navigate: Digital Customer Success Program'
+title: Recurly Navigate
+excerpt: Digital Customer Success Program
 deprecated: false
 hidden: true
 metadata:
