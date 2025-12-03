@@ -72,6 +72,8 @@ Since each bank maintains it's own consumer-facing UPI flow, this is not customi
 
 Currently, UPI AutoCollect is not supported on Recurly Checkout or Hosted Payment Pages.
 
+Integration Guide: [UPI AutoPay Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/) 
+
 ### Use cases
 
 * Subscription Plans: Simplify UPI AutoPay transactions by merging the Recurly subscription platform with Ebanx.
