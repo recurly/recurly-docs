@@ -1,5 +1,5 @@
 ---
-title: 'Recurly Navigate Trail Guide: Easy Wins, Dunning Done Right'
+title: 'Recurly Navigate trail guide: Easy wins, dunning done right'
 excerpt: >-
   This quick Trail Guide shares actionable tips to reduce churn and boost your
   bottom line.
@@ -21,9 +21,11 @@ next:
       title: 'Stop the Leak: How to optimize Dunning for growth'
       type: basic
 ---
-Struggling with failed payments and lost revenue? Join Julia to learn how smart Dunning strategies can turn declines into recoveries.
+# **Struggling with failed payments and lost revenue?** 
 
-Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes. 
+Join Julia to learn how smart Dunning strategies can turn declines into recoveries.
+
+Navigate your Dunning setup, understand how it works, and learn strategic best practices in 5 minutes.
 
 <HTMLBlock>{`
 <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/7f58d816-a65c-42f4-950d-59b11953d1aa" loading="lazy" title="Synthesia video player - Easy Wins: Dunning Done Right" allowfullscreen allow="encrypted-media; fullscreen; microphone;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;"></iframe></div>
