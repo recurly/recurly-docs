@@ -48,8 +48,6 @@ The purpose of this Dunning path is to drive measurable results. Use the followi
 * **What it is**: The total revenue a single customer is expected to generate throughout their entire relationship with your business.
 * **The Improvement**: This will increase because reducing involuntary churn means customers stay subscribed for a longer period of time.
 
-<br />
-
 # Getting started
 
 Follow "What's Next" steps below to continue your learning.
