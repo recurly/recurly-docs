@@ -1,5 +1,5 @@
 ---
-title: 'Recurly Navigate: Dunning Optimization'
+title: 'Recurly Navigate: Dunning optimization'
 excerpt: Master Recurly Dunning to reduce churn and maximize payment recovery.
 deprecated: false
 hidden: true
@@ -14,8 +14,6 @@ next:
       title: 'Recurly Navigate Trail Guide: Easy Wins, Dunning Done Right'
       type: basic
 ---
-# 💡 Dunning Learning Path Summary
-
 This learning path provides the essential knowledge and tools to master your Recurly Dunning strategy, focusing on turning failed payments into recovered revenue. You will learn to configure and optimize their Dunning setup using proven best practices, significantly reducing involuntary churn for sustained subscription growth.
 
 ## What to expect
