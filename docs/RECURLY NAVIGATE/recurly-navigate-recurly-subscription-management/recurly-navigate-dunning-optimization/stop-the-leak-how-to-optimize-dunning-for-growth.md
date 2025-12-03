@@ -19,9 +19,7 @@ Discover proven strategies to reduce involuntary churn and recover lost revenue 
 
 <Image align="center" alt="Stop the Leak: How to optimize Dunning for growth" border={false} src="https://files.readme.io/bcf004b875a18b027f27ab41a8fc1f14360b33f42a3f1e479929d0cc43a32000-Screenshot_2025-11-17_at_6.28.54_PM.png" />
 
-## Watch it <Anchor label="on-demand here" target="_blank" href="https://recurly.ondemand.goldcast.io/on-demand/a65f472f-9876-4736-9209-5b7b669de773">on-demand here</Anchor>.
-
-<br />
+> **Note**: Watch it <Anchor label="on-demand here" target="_blank" href="https://recurly.ondemand.goldcast.io/on-demand/a65f472f-9876-4736-9209-5b7b669de773">on-demand here</Anchor>.
 
 ## Download the handout here.
 
