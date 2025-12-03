@@ -16,17 +16,17 @@ next:
       title: 'Recurly Navigate: Launchpad Phase 2, Mastering Metrics'
       type: basic
 ---
-<Image align="left" alt="Recurly Navigate Launchpad Logo" border={false} width="150px" src="https://files.readme.io/81e7fa03d1db38cc555f08bb797ab108b2995ffa601fb08843dd778c50148ce0-Navigate_Launchpad_Logo_90_Days.png" />
-
 <br />
+
+<Image align="center" alt="Recurly Navigate Launchpad Logo" border={false} width="150px" src="https://files.readme.io/81e7fa03d1db38cc555f08bb797ab108b2995ffa601fb08843dd778c50148ce0-Navigate_Launchpad_Logo_90_Days.png" />
 
 <br />
 
 # Welcome to Navigate Launchpad
 
-Launchpad is a 90-day success plan/customer learning path designed to help you build a strong foundation in Recurly, after reaching the production phase. 
+Launchpad is a 90-day success plan/customer learning path designed to help you build a strong foundation in Recurly, after reaching the production phase.
 
-## It is structured into two strategic phases: 
+## It is structured into two strategic phases:
 
 ### Phase 1: Optimization
 
@@ -35,3 +35,5 @@ Navigate Launchpad, Phase 1: Optimization is a strategic phase of the Recurly cu
 ### Phase 2: Mastering Metrics
 
 Following the optimization phase, the program shifts focus to using Recurly data to uncover insights, make confident decisions, and grow smarter. (To be updated soon)
+
+<br />
