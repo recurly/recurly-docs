@@ -25,8 +25,6 @@ next:
 
 <br />
 
-# Welcome to Navigate Launchpad
-
 Launchpad is a 90-day success plan/customer learning path designed to help you build a strong foundation in Recurly, after reaching the production phase.
 
 ## It is structured into two strategic phases:
@@ -37,6 +35,4 @@ Navigate Launchpad, Phase 1: Optimization is a strategic phase of the Recurly cu
 
 ### Phase 2: Mastering Metrics
 
-Following the optimization phase, the program shifts focus to using Recurly data to uncover insights, make confident decisions, and grow smarter. (To be updated soon)
-
-<br />
+Following the optimization phase, the program shifts focus to using Recurly data to uncover insights, make confident decisions, and grow smarter.
