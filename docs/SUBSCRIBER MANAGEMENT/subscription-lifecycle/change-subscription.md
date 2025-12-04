@@ -68,6 +68,7 @@ Product modifications can be executed immediately, at the next billing date, or 
 * Quantity
 * Plan/Add-on Price
 * Plan/Add-on Quantity
+* Bill Date with Proration
 * Add or Remove Add-on
 * Collection Method
 * Net-Terms
