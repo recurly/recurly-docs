@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites & supported gateways
 
-To use Recurly's credit card solutions, you'll need a merchant bank account and a payment gateway supported in your business location. Make sure to check the detailed gateway support section below.
+* To use Recurly's credit card solutions, you'll need a merchant bank account and a payment gateway supported in your business location. Make sure to check the detailed gateway support section below.
 
 ### Supported credit card gateways
 
@@ -34,11 +34,8 @@ Explore detailed documentation for each gateway to ensure seamless integration w
 * [CardConnect](https://docs.recurly.com/docs/cardconnect)
 * [Chase Paymentech Orbital](https://docs.recurly.com/docs/chase-paymentech-orbital)
 * [CyberSource](https://docs.recurly.com/docs/cybersource)
-* [First Data GGe4](https://docs.recurly.com/docs/additional)
+* [FreedomPay](https://docs.recurly.com/recurly-subscriptions/docs/freedompay#/)
 * [Merchant eSolutions](https://docs.recurly.com/docs/additional)
-* [Payeezy](https://docs.recurly.com/docs/additional)
-* [PayPal Payflow Pro](https://docs.recurly.com/docs/additional)
-* [PayPal Payments Pro](https://docs.recurly.com/docs/additional)
 * [Stripe](https://docs.recurly.com/docs/additional)
 * [TSYS](https://docs.recurly.com/docs/tsys)
 * [Vantiv](https://docs.recurly.com/docs/additional)
@@ -62,7 +59,7 @@ When a customer reaches the checkout stage, they will be prompted to enter their
 
 **Subscriptions**: Whether you are a subscription service looking to streamline billing processes, or a retailer seeking to secure and facilitate your payment processes, Recurly's credit card solutions are designed to fit a myriad of business needs with ease and precision.
 
-**One Time Payments**: If you're looking for a way to provide goods and services on a one-time payments basis, credit cards are a perfect avenue. 
+**One Time Payments**: If you're looking for a way to provide goods and services on a one-time payments basis, credit cards are a perfect avenue.
 
 **MOTO / Back office**: If you have a call center and would like to offer payments to customers calling in, you can do so with Recurly's MOTO support. See [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)  Processing for more details and check your gateway for specific support of this use case.
 
