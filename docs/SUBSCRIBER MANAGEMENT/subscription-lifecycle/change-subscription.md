@@ -150,6 +150,7 @@ Both a **credit and a charge** (a rebill) result when:
 * Change in _both price and quantity_ on the subscription or an add-on
 * Changing the _plan_ on the subscription regardless of upgrading or downgrading
 * Any immediate subscription change is made when the _OBWC (only bill what changed) feature is not enabled on a site_
+* The subscription's _bill date_ changes and _proration_ is applied
 
 ### Either charge or credit is created (no rebill)
 
