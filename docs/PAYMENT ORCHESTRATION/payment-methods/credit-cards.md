@@ -47,7 +47,10 @@ Refer to the above guides to ensure a successful setup and leverage the full pot
 
 ### Limitations
 
-Recurly does not support Maestro cards for recurring transactions. Also, note that the availability of certain features may depend on your gateway and merchant account configurations.
+There are very few limitations when processing on Recurly with a credit card. The only restrictions for card processing are listed below.
+
+* Recurly does not support Maestro cards for recurring transactions. Also, note that the availability of certain features may depend on your gateway and merchant account configurations.
+* Recurly does not support one-time transactions where the card in use is not stored for future usage.
 
 # Definition
 
