@@ -63,8 +63,9 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         Two new data exports will be available for both adhoc and automated reporting.
+
         **Products Catalog export** - provides a detailed list of all product offerings, add-ons and items, whether active or inactive.
-        **Subscriptions - Pending changes export** - reports on all active subscriptions with a pending change that will be applied at the next renewal or future date. This includes changes to the plan, price, or quantity.
+          **Subscriptions - Pending changes export** - reports on all active subscriptions with a pending change that will be applied at the next renewal or future date. This includes changes to the plan, price, or quantity.
       </td>
     </tr>
 
