@@ -131,6 +131,20 @@ If the plan remains unchanged, Recurly will evaluate each product in the change,
 
 Merchants without OBWC on their site still have the same flexibility to handle credits and charges that result from an immediate subscription change. The differences in behavior will be called out where necessary in the scenarios and examples below.
 
+### Subscription Bill Date Proration
+
+"Rebilling" will also be triggered when a subscription's bill date is changed and is prorated.  In this scenario, a credit will be generated for the remaining portion of the current billing period that has already been paid, and a charge will generated for the time between the current date and the newly selected bill date.  Both of these events happen immediately, and the credit will be used on the immediate charge.
+
+**Example:** If David's subscription's current bill date is the 10th of every month and he changes it to the 16th of every month, and today is the 7th of the month then…
+
+* David will get a prorated credit for 3 days (the 8th, 9th, and 10th)
+* He will be charged for the current date through the 15th
+* And finally, his new bill period will kick in on the 16th
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/68a6a24e12041c04f17985c8bc38772da6b38f95240387fc627136de4129b789-Screenshot_2025-12-04_at_1.56.50_PM.png" className="border" />
+
+<br />
+
 Both a **credit and a charge** (a rebill) result when:
 
 * Change in _both price and quantity_ on the subscription or an add-on
