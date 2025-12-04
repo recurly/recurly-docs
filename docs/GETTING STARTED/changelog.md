@@ -26,18 +26,229 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## December
 
-| Release Date | **Feature**                          | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                             |
-| :----------- | :----------------------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dec 9        | **Recurly Engage**                   | Medium               | Enhanced Security & Access. Recurly Engage now supports HIPAA compliance and Okta sign-in, providing superior data protection and simplified access.                                                                                                                                                                                                                                   |
-| Dec 9        | **Recurly Engage**                   | Low                  | Recurly webhook optimizations have been implemented for increased reliability and speed.                                                                                                                                                                                                                                                                                               |
-| Dec 9        | **Recurly Engage**                   | Low                  | Recurly Engage now offers One-Click actions with Recurly Commerce.                                                                                                                                                                                                                                                                                                                     |
-| Dec 9        | **Recurly Engage & Recurly Compass** | Low                  | 30-day Sandbox provisioning for Recurly Engage is now available through the Recurly Compass assistant or the Recurly Engage Integrations page.                                                                                                                                                                                                                                         |
-| Dec 2        | **Ebanx gateway**                    | Medium               | Added **UPI Retries** for <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay</a> renewals/subscriptions. UPI AutoPay retries will run the same day as the initial decline. Read more about the payment method and <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/">Ebanx gateway</a> in our dedicated documentation. |
-| Dec 2        | **Recurly Engage**                   | Low                  | Enhanced Security & Access. Recurly Engage now supports HIPAA compliance and Okta sign-in, providing superior data protection and simplified access.                                                                                                                                                                                                                                   |
-| Dec          | **Recurly Engage**                   | Low                  | Recurly webhook optimizations have been implemented for increased reliability and speed.                                                                                                                                                                                                                                                                                               |
-| Dec 2        | **Ebanx gateway**                    | Medium               | Updated UPI AutoPay transaction requests (for renewals only) to occur within regulation time frames per RBI requirements. UPI AutoPay renewals will run between 12 AM and 7 AM IST. This does not apply to signup transactions.                                                                                                                                                        |
-| Dec 2        | **Ebanx gateway**                    | Low                  | Optimized handling of PIX Automatico and Mercado Pago retry scheduling and next charge dates.                                                                                                                                                                                                                                                                                          |
-| Dec 2        | **Stripe gateway**                   | Medium               | Updated return customer requests (CIT, customer initiated) to the gateway in order to optimize 3DS requests from Stripe.                                                                                                                                                                                                                                                               |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Release Date
+      </th>
+
+      <th>
+        **Feature**
+      </th>
+
+      <th>
+        **Potential Impact**
+      </th>
+
+      <th>
+        **Description / Overview**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
+        **Data Exports**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Two new data exports will be available for both adhoc and automated reporting.
+        **Products Catalog export** - provides a detailed list of all product offerings, add-ons and items, whether active or inactive.
+        **Subscriptions - Pending changes export** - reports on all active subscriptions with a pending change that will be applied at the next renewal or future date. This includes changes to the plan, price, or quantity.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Enhanced Security & Access. Recurly Engage now supports HIPAA compliance and Okta sign-in, providing superior data protection and simplified access.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Recurly webhook optimizations have been implemented for increased reliability and speed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Recurly Engage now offers One-Click actions with Recurly Commerce.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
+        **Recurly Engage & Recurly Compass**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        30-day Sandbox provisioning for Recurly Engage is now available through the Recurly Compass assistant or the Recurly Engage Integrations page.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 2
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Added **UPI Retries** for <a href="https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay#/">UPI AutoPay</a> renewals/subscriptions. UPI AutoPay retries will run the same day as the initial decline. Read more about the payment method and <a href="https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/">Ebanx gateway</a> in our dedicated documentation.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 2
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Enhanced Security & Access. Recurly Engage now supports HIPAA compliance and Okta sign-in, providing superior data protection and simplified access.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Recurly webhook optimizations have been implemented for increased reliability and speed.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 2
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated UPI AutoPay transaction requests (for renewals only) to occur within regulation time frames per RBI requirements. UPI AutoPay renewals will run between 12 AM and 7 AM IST. This does not apply to signup transactions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 2
+      </td>
+
+      <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Optimized handling of PIX Automatico and Mercado Pago retry scheduling and next charge dates.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 2
+      </td>
+
+      <td>
+        **Stripe gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated return customer requests (CIT, customer initiated) to the gateway in order to optimize 3DS requests from Stripe.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## November
 
