@@ -37,6 +37,7 @@ Explore detailed documentation for each gateway to ensure seamless integration w
 * [CyberSource](https://docs.recurly.com/docs/cybersource)
 * [FreedomPay](https://docs.recurly.com/recurly-subscriptions/docs/freedompay#/)
 * [Merchant eSolutions](https://docs.recurly.com/docs/additional)
+* [PayPal Complete](https://docs.recurly.com/recurly-subscriptions/docs/paypal-complete#/)
 * [Stripe](https://docs.recurly.com/docs/additional)
 * [TSYS](https://docs.recurly.com/docs/tsys)
 * [Vantiv](https://docs.recurly.com/docs/additional)
