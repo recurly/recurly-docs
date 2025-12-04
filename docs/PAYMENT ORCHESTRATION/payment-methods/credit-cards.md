@@ -62,7 +62,7 @@ When a customer reaches the checkout stage, they will be prompted to enter their
 
 # Use cases
 
-**Subscriptions**: Whether you are a subscription service looking to streamline billing processes, or a retailer seeking to secure and facilitate your payment processes, Recurly's credit card solutions are designed to fit a myriad of business needs with ease and precision.
+**Subscriptions**: Whether you are a subscription service looking to streamline billing processes, or a retailer seeking to secure and facilitate your payment processes, Recurly's credit card solutions are designed to fit a myriad of business needs with ease and precision. This includes subscription upgrades.
 
 **One Time Payments**: If you're looking for a way to provide goods and services on a one-time payments basis, credit cards are a perfect avenue.
 
