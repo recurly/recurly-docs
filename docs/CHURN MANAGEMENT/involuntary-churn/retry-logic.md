@@ -76,13 +76,13 @@ Different gateway errors have specific retry schedules:
 
 For more control, you can initiate a forced collection attempt by clicking the **Attempt Collection Now** button on a pending or past due invoice's details page. However, excessive manual retries might exhaust the allowed transaction count for automated retries. This function is also available via API.
 
-![Force Collection](https://files.readme.io/50e0c55-9c0e247-forcecollect.png "9c0e247-forcecollect.png")
+<Image alt="Force Collection" border={false} src="https://files.readme.io/50e0c55-9c0e247-forcecollect.png" title="9c0e247-forcecollect.png" />
 
 # Direct debit payments
 
-Recurly currently does not implement automatic payment retries for most direct debit methods such as ACH and iDEAL, except in cases where there is an update to billing information. For situations that may require a retry, such as an invoice correction or update, manual retries are possible and can be executed through the Admin Console or via Recurly’s APIs.
+Recurly currently does not implement intelligent payment retries for direct debit methods such as ACH and SEPA. For situations that may require a retry, such as an invoice correction or update, static (see link below) and manual retries are possible and can be executed through the Admin Console or via Recurly’s APIs.
 
-Recurly has implemented a new feature to automatically retry SEPA payments. Read more on the [SEPA Direct Debit Retries](https://docs.recurly.com/docs/sepa-retries) page.
+Recurly has implemented a static retry feature to automatically retry Direct Debit payments. Read more on the [Direct Debit Retries](https://docs.recurly.com/docs/sepa-retries) page.
 
 # Complementary revenue recovery strategies
 
