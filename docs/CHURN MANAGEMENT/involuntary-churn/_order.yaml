@@ -1,6 +1,6 @@
 - account-updater
+- static-retries
 - retry-logic
 - dunning-management
 - expired-card-management
 - backup-payment-method
-- static-retries
