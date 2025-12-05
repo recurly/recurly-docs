@@ -65,7 +65,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
         Two new data exports will be available for both adhoc and automated reporting.
 
         **Products Catalog export** - provides a detailed list of all product offerings, add-ons and items, whether active or inactive.
-          **Subscriptions - Pending changes export** - reports on all active subscriptions with a pending change that will be applied at the next renewal or future date. This includes changes to the plan, price, or quantity.
+        **Subscriptions - Pending changes export** - reports on all active subscriptions with a pending change that will be applied at the next renewal or future date. This includes changes to the plan, price, or quantity.
       </td>
     </tr>
 
@@ -138,6 +138,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         30-day Sandbox provisioning for Recurly Engage is now available through the Recurly Compass assistant or the Recurly Engage Integrations page.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
+        **Subscriptions**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Proration can now be enabled when changing a subscription's bill date.  An immediate credit and charge will be created.  This can be accomplished in both the UI and v3 API.
       </td>
     </tr>
 
