@@ -9,7 +9,7 @@ metadata:
 
 ### Required plan
 
-<br />
+This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Prerequisites
 
@@ -24,7 +24,7 @@ metadata:
 
 # Definition
 
-Recurly's Static Retries does not use machine learning, but rather a specific set of criteria given signals from our gateway partners. 
+Recurly's Static Retries does not use machine learning, but rather a specific set of criteria given signals from our gateway partners.
 
 # Key benefits
 
@@ -42,7 +42,7 @@ Rather than a one-size-fits-all retry attempt, Recurly applies a customized appr
 
 # General retry guidelines
 
-## Soft declines 
+## Soft declines
 
 Soft declines, which occur for reasons like insufficient funds or temporary holds, are not final. Recurly's machine learning technology plays a crucial role here, as it determines the most effective timing for retries using the same payment method. By analyzing patterns in transaction data, the system adapts the retry schedule to enhance the likelihood of a successful charge, tailoring the process to suit various scenarios and maximize efficiency for your business.
 
