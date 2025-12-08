@@ -75,6 +75,42 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
+        **Ebanx gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Additional improvements to retries including a small UI tweak and error code handling.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
+        **Stripe gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Fixes to stored payment method handling when the consumer is in India, as well as avoiding a rare return url for stored cards. 
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Dec 9
+      </td>
+
+      <td>
         **Recurly Engage**
       </td>
 
