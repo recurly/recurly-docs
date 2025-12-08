@@ -57,6 +57,8 @@ Available for use with Recurly.js for subscription signups for Recurly Merchants
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
+* **Automatic Retries**: Supports up to 4 reattempts after a renewal failure automatically, when the payment method response indicates an insufficient funds or a payment cancellation. Read more about retries in our [Ebanx documentation](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway#/).
+
 ## Customer bank interactions
 
 **What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements)  from within their banking application.
