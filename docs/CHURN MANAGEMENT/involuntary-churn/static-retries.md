@@ -34,11 +34,7 @@ Recurly's Static Retries does not use machine learning, but rather a specific se
 
 # Recurly's static retry logic
 
-Recurly's intelligent retry logic uses data from billions of transactions to increase the chances of successful payments. This helps keep your customers' subscriptions active and reduces the chance of losing them due to payment issues. By upgrading your Recurly plan, you have access to an optimized retry schedule designed by machine learning for each of your declined transactions, increasing the likelihood of successful transactions.
-
-# Simplified retry strategy
-
-Rather than a one-size-fits-all retry attempt, Recurly applies a customized approach for each failed payment, informed by ongoing analysis and machine learning. This method adapts over time, aiming to find the best moment to re-attempt a transaction. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+Recurly's static retry logic uses gateway signals and regulatory compliance signals from the transaction to increase the chances of successful payments. This helps keep your customers' subscriptions active and reduces the chance of losing them due to payment issues. Our status retry logic does not use machine learning while also increasing the likelihood of successful transactions. If you are interested in further optimizations, see our documentation on [Intelligent Retries](https://docs.recurly.com/recurly-subscriptions/docs/retry-logic#/).
 
 # General retry guidelines
 
@@ -73,3 +69,21 @@ For more control, you can initiate a forced collection attempt by clicking the *
 Recurly currently supports automatic payment retries for most direct debit methods such as ACH and SEPA, when the response from the bank is due to insufficient funds, or an applicable response code. For situations that may require a retry, such as an invoice correction or update, manual retries are possible and can be executed through the Admin Console or via Recurly’s APIs.
 
 Recurly has implemented a feature to automatically retry Direct Debit payments. Read more on the [Direct Debit Retries](https://docs.recurly.com/docs/sepa-retries) page.
+
+# Specialized Retry strategies
+
+Recurly supports specialized payment retries for certain APMs where necessary, including UPI AutoPay, Pix Automatico, and Mercado Pago. There is no configuration for these payment methods to initiate retries, and are available automatically.
+
+## UPI AutoPay 
+
+UPI AutoPay retries must be completed on the same day as the initial failure, and will reattempt up to **2 times** in the hours after the initial failure. After 2 attempts, the invoice will be marked failed and the subscription will be handled based on the dunning settings in your configuration.
+
+## Pix Automatico 
+
+Pix Automatico retries must be completed within the same billing period as the initial failure, and will reattempt up to **1-3 times** in the days after the initial failure. Since Pix Automatico retries must complete within the same billing period as the initial renewal transaction, for **shorter billing periods** such as weekly, only one retry may attempt. For billing periods longer than one week, the full retry schedule should complete properly.
+
+## Mercado Pago 
+
+Mercado Pago retries will reattempt up to **3 times**after the initial failure. 
+
+##
