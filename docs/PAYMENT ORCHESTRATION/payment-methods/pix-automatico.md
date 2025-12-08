@@ -61,6 +61,8 @@ Available for use with Recurly.js for subscription signups for Recurly merchants
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
+* **Compliant Retries:** Supports retrying automatically within the confines of the current billing period. Read more on our [static retries documentation](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/specialized-retry-strategies). There is no additional configuration required.
+
 ## Customer Bank interactions
 
 **What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements) and individual renewal transactions from within their banking application.
