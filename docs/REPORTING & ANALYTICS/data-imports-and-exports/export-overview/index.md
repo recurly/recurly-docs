@@ -299,6 +299,16 @@ next:
 
     <tr>
       <td>
+        [Product Catalog](https://docs.recurly.com/docs/products-catalog-export)
+      </td>
+
+      <td>
+        Comprehensive details of all product offerings, add-ons and items, whether active or inactive.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export)
       </td>
 
@@ -366,6 +376,16 @@ next:
 
       <td>
         All the detailed information on external subscriptions stored on third-party platforms like the Apple App Store or Google Play Store.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        [Subscriptions — Pending Changes](https://docs.recurly.com/docs/subscriptions-pending-changes-export)
+      </td>
+
+      <td>
+        All active subscriptions with a pending change that will be applied at the next renewal. This includes changes to the plan, price, or quantity.
       </td>
     </tr>
 

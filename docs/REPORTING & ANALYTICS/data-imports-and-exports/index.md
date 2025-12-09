@@ -95,6 +95,14 @@ This section provides detailed guidelines on managing and reporting various item
 * [Items ](https://docs.recurly.com/docs/items-associated-plans)— Associated Plans
 * [Items ](https://docs.recurly.com/docs/items-associated-subscriptions)— Associated Subscriptions
 
+#### Products
+
+This section provides a list of product offerings, add-ons and items, whether active or inactive.
+
+##### - Sub-categories (Products)
+
+* [Product Catalog](https://docs.recurly.com/docs/products-catalog-export)— Product catalog
+
 #### Revenue Recognition schedules
 
 Explore the functionalities that assist in creating and managing [revenue recognition schedules](https://docs.recurly.com/docs/revenue-recognition-export), vital in financial reporting and compliance.
@@ -111,6 +119,7 @@ A comprehensive guide to managing and reporting [subscription ](https://docs.rec
 * [Subscriptions — External](https://docs.recurly.com/docs/subscriptions-external)
 * [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
 * [Subscription Add-ons — History](https://docs.recurly.com/docs/subscriptions-add-ons-history-export)
+* [Subscription  — Pending changes](https://docs.recurly.com/docs/subscriptions-pending-changes-export)
 * [Subscriptions - Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
 * Subscriptions History Export
 
