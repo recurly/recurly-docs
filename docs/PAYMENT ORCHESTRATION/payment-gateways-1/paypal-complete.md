@@ -248,7 +248,7 @@ Here's a sample scenario of status updates:
 
 3. **Gateway Status Updates:** Occasionally, your application might not gain instant approval, marking it as 'Incomplete Configuration'. The Payment Gateways page will provide real-time status updates. Statuses can range from email confirmation requisites to application reviews or denials. In case of any alert, it’s advisable to connect directly with PayPal through the seller portal, as Recurly support might not possess detailed insights about your account.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/5ba78d3-PPC.Seller.AccountStatus-ConfirmEmail.png" />
+<Image align="center" border={true} src="https://files.readme.io/5ba78d3-PPC.Seller.AccountStatus-ConfirmEmail.png" className="border" />
 
 4. **Post-Integration Setup:** Post successful integration, define specific settings on Recurly:
 
@@ -278,7 +278,7 @@ Please work with support to enable these feature flags for your site.
 
 ## Webhook Configuration
 
-Recurly listens to several webhook events including the below list. Ensure they are enabled in your account. It is advised to enable all webhooks in the event we add new functionality in the future.
+Recurly listens to several webhook events including the below list. Ensure they are enabled in your PayPal account. It is advised to enable all webhooks in the event we add new functionality in the future.
 
 When asked for a callback URL, you will format it as follows: `https://callbacks.recurly.com/paypal_complete/<MERCHANT_SUBDOMAIN>`
 
