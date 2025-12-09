@@ -119,7 +119,7 @@ A comprehensive guide to managing and reporting [subscription ](https://docs.rec
 * [Subscriptions — External](https://docs.recurly.com/docs/subscriptions-external)
 * [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
 * [Subscription Add-ons — History](https://docs.recurly.com/docs/subscriptions-add-ons-history-export)
-* [Subscription  — pending changes](https://docs.recurly.com/docs/subscriptions-pending-changes-export)
+* [Subscription  — Pending changes](https://docs.recurly.com/docs/subscriptions-pending-changes-export)
 * [Subscriptions - Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
 * Subscriptions History Export
 
