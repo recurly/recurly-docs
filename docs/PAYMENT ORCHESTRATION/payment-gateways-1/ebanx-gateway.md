@@ -88,7 +88,7 @@ Follow these steps to integrate Ebanx with Recurly. Ensure you use the correct s
 
 ## Step 4: Enable Currencies
 
-Ensure you are enabling the correct currencies per payment method. 
+Ensure you are enabling the correct currencies per payment method.
 
 * UPI: INR Only
 * Pix Automatico: BRL Only
@@ -105,7 +105,11 @@ Ensure you are enabling the correct currencies per payment method.
 
 * Perform a test transaction to confirm the integration works. It’s best to test in **development mode** on your Recurly sandbox site before going live.
 
-## Step 7: Go Live
+## Step 7: Modify your Dunning Settings (Recommended)
+
+* Ensure your Dunning settings do not immediately expire invoices in order to allow Retries to function properly. If the invoices are set to immediately expire a subscription, retries will not occur.
+
+## Step 8: Go Live
 
 1. Once testing is successful, you’re ready to accept live payments through Ebanx.
 2. Make sure your **Production Credentials** are entered in Recurly and your Ebanx account is in **Production mode**.
@@ -168,7 +172,7 @@ Ebanx will require a minimum of fields to create a mandate for a recurring subsc
 
 These payment methods will require you always send certain data:
 
-* Customer Name 
+* Customer Name
 * Customer Billing Address
 * Customer Email Address
 * Customer Phone Number
@@ -181,6 +185,12 @@ Payment methods on Ebanx use subscription-level **mandate IDs** assigned to a co
 * Note: Pausing and Resuming Subscriptions in a banking app is only supported with UPI at this time.
 
 # Subscription Behavior
+
+## Retries and Dunning 
+
+Retries are supported on UPI AutoPay, Pix Automatico, and Mercado Pago when your Dunning Settings are **not** set to Expire Subscriptions immediately. Ensure you have your Dunning Settings loosened to avoid immediately expiring subs, so that retries can function properly.
+
+Read more about retries on each individual methods page, and our [Static Retries](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/) documentation.
 
 ## Transaction, Invoice, and Subscription Status
 
@@ -214,7 +224,6 @@ There are certain behaviors that Ebanx payment methods support -- they are liste
 ### UPI / APAC Specific
 
 * Billing Info Updates: Billing Info updates must be done by customers in the UPI App.
-* Retries: While planned, our standard issue retries on failed renewals are not supported due to NPCI regulations around retry rules. As these rules do not follow card-brand retry rules, UPI AutoPay transactions will not retry using basic or intelligent retry logic.
 
 # Troubleshooting FAQs
 
