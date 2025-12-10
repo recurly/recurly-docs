@@ -8,7 +8,7 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+## Prerequisites & limitations
 
 * An existing Stripe account with Stripe Elements enabled.
 * A functional implementation of Stripe Payment Element (or Card Element) is required prior to following this guide.
@@ -31,7 +31,7 @@ metadata:
 
 For more information on the V3 API, see our [API Reference Hub](https://recurly.com/developers/api/).
 
-### Supported payment methods
+## Supported payment methods
 
 Recurly will be supporting Dynamic Payment Methods. To add payment methods to your integration and have them show up dynamically, request these payment methods in your Stripe Dashboard individually.
 
@@ -40,6 +40,8 @@ Recurly will be supporting Dynamic Payment Methods. To add payment methods to yo
 * **Wallets**: Link Pay, Apple Pay, Google Pay, Cash App Pay, Revolut, Klarna (Pay Now / Later, BNPL)
 
 * **Direct Debit**: SEPA, ACH, BACS, BECS, iDeal
+
+## Building Your Integration
 
 ### Step 1: Build your Stripe Elements integration
 
