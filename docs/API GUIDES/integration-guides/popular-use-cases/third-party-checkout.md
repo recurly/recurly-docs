@@ -361,7 +361,7 @@ If the purchase was successful, you should now be able to access all associated 
 
 Now that you know how to create new [accounts](https://app.recurly.com/go/accounts), [subscriptions](https://app.recurly.com/go/subscriptions) and one-time payments, take a look at the [Subscription Management](https://recurly.com/developers/guides/manage-subscription.html) guide to learn more about how to manage the subscription changes after the initial purchase.
 
-### Using Recurly.js and Stripe Elements
+## Using Recurly.js and Stripe Elements
 
 In many cases, you may wish to retain your existing Recurly.js integration and supplement with Stripe Elements to allow users access to more alternative payment options. This is possible, though will be specific to your business needs and design of your unique checkout experience.
 
