@@ -169,7 +169,11 @@ If your current integration with Stripe uses Payment Methods, see Stripe’s doc
 
 ### Stripe Messaging
 
+Use this element when displaying messaging for required methods, such as Klarna or other methods. Review Stripe's documentation for further details.
+
 * [Payment Method Messaging Element | Stripe Documentation](https://stripe.com/docs/payments/payment-element#messaging)
+
+## Payment Element Parameters
 
 A consolidated list of parameters and our recommendations are below. We have not covered all Stripe documented Element options configuration available as, in those cases, they can be set based on your preferences.
 
