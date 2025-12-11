@@ -34,7 +34,7 @@ The gift card feature in Recurly allows your business to offer virtual or physic
 
 # Creating a gift card
 
-Before setting up your gift card program, we recommend you consult with a legal and financial advisor. Compliance with federal and state gift card regulations, which include rules around expiration dates, dormant account fees, cash payouts, and escheatment, Recurly Gift Cards can aid in setting up a gift card program, however, it doesn't manage your compliance requirements. 
+Before setting up your gift card program, we recommend you consult with a legal and financial advisor. Compliance with federal and state gift card regulations, which include rules around expiration dates, dormant account fees, cash payouts, and escheatment, Recurly Gift Cards can aid in setting up a gift card program, however, it doesn't manage your compliance requirements.
 
 Also, consider how you will account for unused card balances in relation to revenue recognition. Additionally, be aware that the introduction of gift card sales may heighten your fraud risk, as these cards are often bought with stolen credit cards and then resold. To mitigate this risk, we recommend that you review your fraud management tools and processes.
 
@@ -46,12 +46,12 @@ To develop your gift card product on Recurly, follow these steps:
 
 2. **Select** "Get Started"
 
-3. **Enter** the desired Amount and click "Add".\
+3. **Enter** the desired Amount and click "Add".  
    ![](https://files.readme.io/2c1c783-image.png)
 
 4. **Align** your gift card amounts with your subscription plans/tiers. **Use** a higher amount to cover potential taxes and incentivize customers to purchase more of your products or services.
 
-5. **You can enter** additional amounts if desired. To **remove** an amount, hover over the dots at the end of the row and click "Remove". Merchants with multiple currency support will have the option to select the currency of the Amount.\
+5. **You can enter** additional amounts if desired. To **remove** an amount, hover over the dots at the end of the row and click "Remove". Merchants with multiple currency support will have the option to select the currency of the Amount.  
    ![](https://files.readme.io/858978a-image.png)
 
 6. **Specify** a Display Name for the gift card; this will appear on the purchase charge and redemption credit line items.
@@ -60,11 +60,11 @@ To develop your gift card product on Recurly, follow these steps:
 
 8. **Enter** an Accounting Code (this will serve as the general ledger for your gift card purchase charge and redemption credit accounting).
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/3b5021a-image.png" />
+   <Image align="center" border={true} src="https://files.readme.io/3b5021a-image.png" className="border" />
 
 9. **Upload** a design image for your gift card by clicking "Choose File" and selecting the image from your computer. This image will be displayed in the Gift Card Delivery email template.
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/bd0a7c4-image.png" />
+   <Image align="center" border={true} src="https://files.readme.io/bd0a7c4-image.png" className="border" />
 
 10. **Click** "Create Gift Card" or "Save Changes". Once the gift card product is created, you can access the details anytime from the Gift Cards page.
 
@@ -124,7 +124,7 @@ Recurly provides two message fields for the gift card delivery information: a pe
 
 ### Taxes and discounts
 
-Gift card purchases are not taxed as they are considered payment for future purchases. Currently, discounts on gift card purchases are not supported.
+Gift card purchases are not taxed as they are considered payment for future purchases, however, the purchase of a gift card is still sent to your tax partner.  You may choose to bypass this using either version of the API. Currently, discounts on gift card purchases are not supported.
 
 ### Fighting fraudulent purchases
 
@@ -237,16 +237,16 @@ Recurly identifies a gift-initiated subscription if the initial subscription inv
 
 # Hosted pages
 
-**Gift Card Hosted Payment Page Configurations**\
+**Gift Card Hosted Payment Page Configurations**  
 Hosted page settings allow you to control the settings for your hosted gift card purchase page. There are three optional payment form fields that do not apply to the gift card purchase page: Editable Quantities, Coupon Codes, and Gift Card Code. The absence of these options on the gift card purchase page is because customers can only purchase one gift card at a time, and coupons or gift card redemption aren't allowed for gift card purchases.
 
-**Gift Card Hosted Payment Page**\
+**Gift Card Hosted Payment Page**  
 Customers can buy a gift card through Recurly's Hosted Payment Pages, which offers a specific hosted page for gift card purchases. The gift card can be delivered using an email address as the delivery method. It's important to note that coupon and gift card redemption is not permitted when buying a gift card.
 
-**Gift Card Redemption on Plan Checkout and Hosted Payment Page**\
-You can allow gift card redemption on the Plan Checkout and Hosted Payment Pages. Even if you do not require billing information for gift card redemption, billing information fields will still be displayed on the gift card purchase page. Enhancements to this user experience are underway. 
+**Gift Card Redemption on Plan Checkout and Hosted Payment Page**  
+You can allow gift card redemption on the Plan Checkout and Hosted Payment Pages. Even if you do not require billing information for gift card redemption, billing information fields will still be displayed on the gift card purchase page. Enhancements to this user experience are underway.
 
-**Hosted Account Management**\
+**Hosted Account Management**  
 Customers can redeem a gift card through Hosted Account Management. Gift card purchase history can be found by examining invoice history.
 
 ## Multicurrency support
@@ -269,7 +269,7 @@ The purchase event occurs outside of Recurly when using a third party like InCom
 
 Once a third-party gift card is validated and redeemed in the third-party system, you can create a corresponding credit in Recurly for the same amount. This should be marked with an origin of `external_gift_card`, which allows bypassing the billing information requirement for gift subscription purchases when nothing is due at sign-up. This can currently only be done via the Adjustments API.
 
-To apply the gift card credit to the subscription sign-up, you must create the credit before creating the subscription. This involves making separate API calls to create the account, the credit, and then the subscription. 
+To apply the gift card credit to the subscription sign-up, you must create the credit before creating the subscription. This involves making separate API calls to create the account, the credit, and then the subscription.
 
 If you don't want to require billing information from customers redeeming a third-party gift card when nothing is due at sign-up, you can change the "Require Billing Information?" setting on the Gift Card Settings page under Configuration.
 
@@ -281,7 +281,7 @@ To change your Recurly gift card redemption code length, contact Recurly Support
 
 # Gift card balance
 
-To display a customer's gift card balance, you can use the API to check their account for uninvoiced external\_gift\_card credits and sum the amount. You can do this by using the List Account's Adjustments API call, filtering for `external_gift_card` origin and `pending` status, and then summing the `unit_amount_in_cents` to get the balance total.
+To display a customer's gift card balance, you can use the API to check their account for uninvoiced external_gift_card credits and sum the amount. You can do this by using the List Account's Adjustments API call, filtering for `external_gift_card` origin and `pending` status, and then summing the `unit_amount_in_cents` to get the balance total.
 
 Your finance team can track unused balances by identifying all adjustments with a status of "pending" and `external_gift_card` origin in the Invoices - Line Items export.
 
