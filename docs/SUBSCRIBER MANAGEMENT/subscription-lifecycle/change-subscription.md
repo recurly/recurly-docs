@@ -68,6 +68,7 @@ Product modifications can be executed immediately, at the next billing date, or 
 * Quantity
 * Plan/Add-on Price
 * Plan/Add-on Quantity
+* Bill Date with Proration
 * Add or Remove Add-on
 * Collection Method
 * Net-Terms
@@ -130,11 +131,24 @@ If the plan remains unchanged, Recurly will evaluate each product in the change,
 
 Merchants without OBWC on their site still have the same flexibility to handle credits and charges that result from an immediate subscription change. The differences in behavior will be called out where necessary in the scenarios and examples below.
 
+### Subscription bill date proration
+
+"Rebilling" will also be triggered when a subscription's bill date is changed and is prorated.  In this scenario, a credit will be generated for the remaining portion of the current billing period that has already been paid, and a charge will generated for the time between the current date and the newly selected bill date.  Both of these events happen immediately, and the credit will be used on the immediate charge.  If you do not want to use the credit immediately, you may do so by setting the subscription's [credit application policy](https://docs.recurly.com/recurly-subscriptions/docs/adjustments#/credit-application-control) prior to changing the subscription's bill date.
+
+**Example:** If David's subscription's current bill date is the 10th of every month and he changes it to the 16th of every month, and today is the 7th of the month then…
+
+* David will get a prorated credit for 3 days
+* He will be charged for the current date through the 15th
+* And finally, his new bill period will kick in on the 16th
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/68a6a24e12041c04f17985c8bc38772da6b38f95240387fc627136de4129b789-Screenshot_2025-12-04_at_1.56.50_PM.png" className="border" />
+
 Both a **credit and a charge** (a rebill) result when:
 
 * Change in _both price and quantity_ on the subscription or an add-on
 * Changing the _plan_ on the subscription regardless of upgrading or downgrading
 * Any immediate subscription change is made when the _OBWC (only bill what changed) feature is not enabled on a site_
+* The subscription's _bill date_ changes and _proration_ is applied
 
 ### Either charge or credit is created (no rebill)
 
