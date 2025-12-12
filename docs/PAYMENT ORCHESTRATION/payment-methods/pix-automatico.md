@@ -16,7 +16,7 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-Recurly currently supports Pix Automático transactions on Ebanx gateway.
+Recurly currently supports Pix Automático transactions on [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway) gateway.
 
 ### Use cases
 
