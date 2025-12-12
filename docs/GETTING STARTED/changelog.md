@@ -50,6 +50,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   <tbody>
     <tr>
       <td>
+        Dec 16
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Optimization of real-time webhooks, ensuring that custom goals are recorded without timing discrepancies.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
         Dec 9
       </td>
 
@@ -101,7 +119,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Fixes to stored payment method handling when the consumer is in India, as well as avoiding a rare return url for stored cards. 
+        Fixes to stored payment method handling when the consumer is in India, as well as avoiding a rare return url for stored cards.
       </td>
     </tr>
 
