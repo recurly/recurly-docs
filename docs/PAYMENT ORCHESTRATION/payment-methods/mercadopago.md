@@ -57,7 +57,7 @@ Available for use with Recurly.js for subscription signups for Recurly Merchants
 
 * **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
-* **Automatic Retries**: Supports up to 4 reattempts after a renewal failure automatically, when the payment method response indicates an insufficient funds or a payment cancellation. Read more about retries in our [Static Retry documentation.](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/specialized-retry-strategies)
+* **Automatic Retries**: Supports up to 3 reattempts after a renewal failure automatically, when the payment method response indicates an insufficient funds or a payment cancellation. Read more about retries in our [Static Retry documentation.](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/specialized-retry-strategies)
 
 ## Customer bank interactions
 
