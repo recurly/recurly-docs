@@ -93,7 +93,7 @@ For a full list of available exports, see [here](https://docs.recurly.com/docs/e
 
 Initiate the configuration of automated exports through the "Integrations" section, accessible only to users holding the "Integrations" role. Although the configurations can be set up and deleted via the admin console, the daily retrieval of exports necessitates usage of the Recurly API, securing a broader and detailed data set.
 
-**Note:** Altering to a new version of an export requires the deletion of the existing configuration and re-adding it using the newest version.
+**Note:** Multiple versions of the same export are allowed.
 
 ## New versions
 
