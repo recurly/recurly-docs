@@ -179,7 +179,7 @@ Refer to the **Ebanx gateway documentation** for testing procedures.
 
 ### Retries
 
-UPI AutoPay payments retries are enabled within UPI timeframes (12am - 7am IST) on the same day as the initial failure. Read more about our retry strategy for UPI on our Static Retries documentation.
+UPI AutoPay payments retries are enabled within UPI timeframes (12am - 7am IST) on the same day as the initial failure. Read more about our retry strategy for UPI on our [Static Retries documentation.](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#upi-autopay)
 
 # Checkout flow
 
