@@ -107,7 +107,7 @@ Ensure you are enabling the correct currencies per payment method.
 
 ## Step 7: Modify your Dunning Settings (Recommended)
 
-* Ensure your Dunning settings do not immediately expire invoices in order to allow Retries to function properly. If the invoices are set to immediately expire a subscription, retries will not occur.
+* Ensure your Dunning settings do not immediately expire invoices in order to allow Retries to function properly. If the invoices are set to immediately expire a subscription, retries will not occur. Learn more about Retries on Ebanx payment methods in our [Static Retries documentation](https://docs.recurly.com/recurly-subscriptions/docs/static-retries).
 
 ## Step 8: Go Live
 
@@ -186,7 +186,7 @@ Payment methods on Ebanx use subscription-level **mandate IDs** assigned to a co
 
 # Subscription Behavior
 
-## Retries and Dunning 
+## Retries and Dunning
 
 Retries are supported on UPI AutoPay, Pix Automatico, and Mercado Pago when your Dunning Settings are **not** set to Expire Subscriptions immediately. Ensure you have your Dunning Settings loosened to avoid immediately expiring subs, so that retries can function properly.
 
