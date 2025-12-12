@@ -86,4 +86,4 @@ Recurly supports specialized payment retries for certain APMs where necessary, i
 
 ## Mercado Pago
 
-Mercado Pago retries will reattempt up to **3 times**after the initial failure with 24 hour waiting period between each failure, resulting in a single attempt per day after initial failure. Mercado Pago does not support manual force collections.
+[Mercado Pago](https://docs.recurly.com/recurly-subscriptions/docs/mercadopago) retries will reattempt up to **3 times**after the initial failure with 24 hour waiting period between each failure, resulting in a single attempt per day after initial failure. Mercado Pago does not support manual force collections.
