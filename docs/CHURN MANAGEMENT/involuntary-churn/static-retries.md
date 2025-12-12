@@ -34,7 +34,7 @@ Recurly's Static Retries does not use machine learning, but rather a specific se
 
 # Recurly's static retry logic
 
-Recurly's static retry logic uses gateway signals and regulatory compliance signals from the transaction to increase the chances of successful payments. This helps keep your customers' subscriptions active and reduces the chance of losing them due to payment issues. 
+Recurly's static retry logic uses gateway signals and regulatory compliance signals from the transaction to increase the chances of successful payments. This helps keep your customers' subscriptions active and reduces the chance of losing them due to payment issues.
 
 Our status retry logic does not use machine learning while also increasing the likelihood of successful transactions. If you are interested in further optimizations, see our documentation on [Intelligent Retries](https://docs.recurly.com/recurly-subscriptions/docs/retry-logic#/).
 
@@ -50,7 +50,7 @@ While hard declines typically aren't retried for compliance and regulatory reaso
 
 * **Exception A:** Immediate retry if Account Updater or the customer updates billing information.
 * **Exception B:** Change from hard to soft decline during dunning after billing information update.
-* **Exception C:** Manual forced collection outside the typical recurring schedule. 
+* **Exception C:** Manual forced collection outside the typical recurring schedule.
 
 ## Handling gateway payment errors
 
@@ -78,7 +78,7 @@ Recurly supports specialized payment retries for certain APMs where necessary, i
 
 ## UPI AutoPay
 
-UPI AutoPay retries must be completed on the same day as the initial failure, and will reattempt up to **2 times** in the hours after the initial failure. After 2 attempts, the invoice will be marked failed and the subscription will be handled based on the dunning settings in your configuration. UPI AutoPay does not support manual force collections.
+[UPI AutoPay](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay) retries must be completed on the same day as the initial failure, and will reattempt up to **2 times** in the hours after the initial failure. After 2 attempts, the invoice will be marked failed and the subscription will be handled based on the dunning settings in your configuration. UPI AutoPay does not support manual force collections.
 
 ## Pix Automatico
 
