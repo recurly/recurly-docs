@@ -72,7 +72,7 @@ Since each bank maintains it's own consumer-facing UPI flow, this is not customi
 
 Currently, UPI AutoCollect is not supported on Recurly Checkout or Hosted Payment Pages.
 
-Integration Guide: [UPI AutoPay Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/) 
+Integration Guide: [UPI AutoPay Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/)
 
 ### Use cases
 
@@ -179,7 +179,7 @@ Refer to the **Ebanx gateway documentation** for testing procedures.
 
 ### Retries
 
-UPI AutoPay payments retries will not be allowed through typical retry logic (Basic or Intelligent Retries) as declined UPI transactions must be retried the _same day._ Retries are not yet supported, but are planned.
+UPI AutoPay payments retries are enabled within UPI timeframes (12am - 7am IST) on the same day as the initial failure. Read more about our retry strategy for UPI on our Static Retries documentation.
 
 # Checkout flow
 
