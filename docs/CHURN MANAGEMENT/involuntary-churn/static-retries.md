@@ -82,7 +82,7 @@ Recurly supports specialized payment retries for certain APMs where necessary, i
 
 ## Pix Automatico
 
-Pix Automatico retries must be completed within the same billing period as the initial failure, and will reattempt up to **1-3 times** in the days after the initial failure. Since Pix Automatico retries must complete within the same billing period as the initial renewal transaction, for **shorter billing periods** such as weekly, only one retry may attempt. For billing periods longer than one week, the full retry schedule should complete properly. Pix Automatico does not support manual force collections.
+[Pix Automatico](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico) retries must be completed within the same billing period as the initial failure, and will reattempt up to **1-3 times** in the days after the initial failure. Since Pix Automatico retries must complete within the same billing period as the initial renewal transaction, for **shorter billing periods** such as weekly, only one retry may attempt. For billing periods longer than one week, the full retry schedule should complete properly. Pix Automatico does not support manual force collections.
 
 ## Mercado Pago
 
