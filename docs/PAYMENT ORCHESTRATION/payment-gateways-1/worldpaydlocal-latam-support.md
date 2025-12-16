@@ -195,7 +195,7 @@ Find additional guidance in the [technical documentation](https://developers.rec
 2. Access the WorldPay portal to authorize Recurly's IP addresses. Refer to our [IP Allowlist documentation](https://docs.recurly.com/docs/ip-allowlist) for a comprehensive list of IPs to include.
 3. While in the WorldPay platform, adjust the Capture delay setting to **1-Day**.
    1. Implement callback configurations using the URLs [https://callbacks.recurly.com/worldpay](https://callbacks.recurly.com/worldpay) for notifications you wish to receive. For those with data in European Union (EU) data centers, utilize [https://callbacks.eu.recurly.com/worldpay](https://callbacks.eu.recurly.com/worldpay) instead.
-4. Ensure you have event notifications enabled such as Refunds, Chargebacks (for SEPA / ACH), and other notifications. To take advantage of future improvements, enable everything. We will ignore or use what we need to accomplish asynchronous actions such as invoice updates. 
+4. Ensure you have event notifications enabled such as Refunds, Chargebacks (for SEPA / ACH), and other notifications. To take advantage of future improvements, enable everything. We will ignore or use what we need to accomplish asynchronous actions such as invoice updates and Direct Debit status updates. 
    1. Implement callback configurations using the URLs [https://callbacks.recurly.com/worldpay](https://callbacks.recurly.com/worldpay) for notifications you wish to receive. For those with data in European Union (EU) data centers, utilize [https://callbacks.eu.recurly.com/worldpay](https://callbacks.eu.recurly.com/worldpay) instead.
 5. It's advisable to set up WorldPay to forward notifications to Recurly, ensuring alignment between Recurly's transaction records and WorldPay's.
 
