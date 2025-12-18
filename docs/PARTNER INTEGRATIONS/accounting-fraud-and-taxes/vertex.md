@@ -119,13 +119,17 @@ If you are not using Recurly Taxes powered by Avalara and have the Vertex featur
 
 The Vertex Transaction Type field is a field only available for merchants with Vertex integrations, and requires a Recurly Support ticket to enable.
 
-The Vertex Transaction Type field is currently only configurable on the Plan object, via UI and both API versions. This field is essentially a secondary tax code to help further classify the type of transaction you are taxing via Vertex. Merchants can use this to classify if their products/services should be taxed as a standard sale, or as a rental, or lease. Distinguishing transaction types can lead to transactions in certain subscriber locations being tax-exempt or otherwise, which ensures your subscribers pay the most accurate tax amount on your goods. By default, each plan is assigned the standard "Sale" Vertex Transaction Type. All one-time-charges (non plan-based subscription invoices) are set to use the "Sale" type, and cannot be overridden at this time.
+The Vertex Transaction Type field is currently only configurable on the Plan object and on one-time charges, via UI and both API versions. This field is essentially a secondary tax code to help further classify the type of transaction you are taxing via Vertex. Merchants can use this to classify if their products/services should be taxed as a standard sale, or as a rental, or lease. Distinguishing transaction types can lead to transactions in certain subscriber locations being tax-exempt or otherwise, which ensures your subscribers pay the most accurate tax amount on your goods. By default, each plan and one-time charge is assigned the standard "Sale" Vertex Transaction Type.
 
 <Image align="center" border={true} width="75% " src="https://files.readme.io/0b5c45719f70810951d4589f8b845ec48f58f28096dde8d608946d33c284cb8b-Screenshot_2024-12-02_at_11.27.57_AM.png" className="border" />
 
-Open the dropdown to select the desired transaction type you would like to apply to the given plan. The Vertex-provided options are **Sale, Lease, and Rental**. Once you select your Vertex Transaction Type of choice, make sure to **Save** your changes. After saving, all renewals and forward-moving invoices and subscriptions created under that plan will have the corresponding transaction type applied when calculating tax.
+Within the Plan configuration page, open the dropdown to select the desired transaction type you would like to apply to the given plan. The Vertex-provided options are **Sale, Lease, and Rental**. Once you select your Vertex Transaction Type of choice, make sure to **Save** your changes. After saving, all renewals and forward-moving invoices and subscriptions created under that plan will have the corresponding transaction type applied when calculating tax.
 
 <Image align="center" border={true} width="50% " src="https://files.readme.io/5c84729324ad81e4d56a012bd153c517ef6c0c1118632fd5545f9628ab66a808-Screenshot_2024-12-02_at_11.30.11_AM.png" className="border" />
+
+On the Add Charge page, you will see the same dropdown within the _Charge Details_.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/9fe0e610a86c0355db6fede4a10a4ad12a70b642ae57899fd2b97d9346501896-Screenshot_2025-12-11_at_2.44.13_PM.png" className="border" />
 
 If you are transitioning from your own Avalara account to Vertex, you need to configure your current tax codes as product classes in Vertex, mapping them to the appropriate taxability rules. Only after configuring your Avalara codes in Vertex should you add your Vertex credentials in Recurly. This ensures proper refund support for invoices processed through Avalara.
 
