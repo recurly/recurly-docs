@@ -124,7 +124,7 @@ Recurly provides two message fields for the gift card delivery information: a pe
 
 ### Taxes and discounts
 
-Gift card purchases are not taxed as they are considered payment for future purchases, however, the purchase of a gift card is still sent to your tax partner.  You may choose to bypass this using either version of the API. Currently, discounts on gift card purchases are not supported.
+Gift card purchases are not taxed as they are considered payment for future purchases, however, the purchase of a gift card is still sent to your tax partner.  You may choose to bypass your tax service provider entirely by setting the _tax_service_opt_out_ field in either version of the [API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_gift_card). Currently, discounts on gift card purchases are not supported.
 
 ### Fighting fraudulent purchases
 
