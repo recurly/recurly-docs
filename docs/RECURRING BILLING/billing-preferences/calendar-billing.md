@@ -32,7 +32,7 @@ Calendar Billing is a feature in Recurly that allows businesses to consolidate m
 >
 > When active coupon redemptions are applied to new charges, Recurly will prorate any fixed amount discounts following the same proration rate of the charge. Recurly prorates fixed amount discounts in an immediate subscription change because the discount represents the time of the cycle. If the customer is 50% through their cycle and only going to be charged 50% of the plan price, we want to ensure that they only get 50% of the discount amount. Percentage discounts automatically represent a prorated portion because they are a percentage of an already prorated amount.
 >
-> <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/736422361c55f851bdda94ecfb515c19003bad390b37346e06c97ee3bb63316c-image.png" />
+> <Image align="center" border={true} width="80% " src="https://files.readme.io/736422361c55f851bdda94ecfb515c19003bad390b37346e06c97ee3bb63316c-image.png" className="border" />
 >
 > It is not possible to have a fixed amount coupon redemption not prorate when applied in an immediate change. If you require this use case, please look at custom credits as an alternative and write in to <a href="https://support.recurly.com/" target="_blank">Recurly Support</a> to express your interest in this feature.
 
@@ -96,7 +96,7 @@ Once an account has a bill date, future subscription purchases, upgrades, or dow
 
 The Bill Date can be viewed on the Accounts page, showing the subscription timestamp information down to the second.
 
-![Account Bill Date](https://files.readme.io/2ab1b11-Account_Bill_Date.png "Account Bill Date.png")
+<Image alt="Account Bill Date" border={false} src="https://files.readme.io/2ab1b11-Account_Bill_Date.png" title="Account Bill Date.png" />
 
 #### Assigning a bill date
 
@@ -133,7 +133,7 @@ When **Subscription Alignment** is turned on, the **Account Bill Date** is clear
 
 #### Clearing a bill date
 
-An account will always have a permanent bill date. Neither the API nor Admin UI permits changing or clearing the account's bill date.
+An account will always have a bill date.  You may choose to clear the bill date when there are no active subscriptions using the [Subscription Alignment](https://docs.recurly.com/recurly-subscriptions/docs/invoice-settings#subscription-alignment) feature.
 
 #### Aligning logic
 
