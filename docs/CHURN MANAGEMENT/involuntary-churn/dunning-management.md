@@ -71,7 +71,7 @@ For sites with multiple dunning campaigns, the default campaign can be determine
 
 Access Dunning Management via your account's Configuration menu. Here, users with access can modify failed payment email intervals, the number of email attempts, the specific email to send, and the desired outcome for a subscription and invoice if payment remains uncollected.
 
-<Image align="center" width="50% " src="https://files.readme.io/e1ccbbc-5f1bc75-Dunning_Management__Recurly_2021-06-17_at_10.43.25_AM.jpg" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/6b6d8fb1be05d3823ae962899ddf1a8d59e2db2ff6043c3841d116a6bdcb5aaa-Screenshot_2025-12-23_at_10.48.21_AM.png" className="border" />
 
 ## Modifying the default dunning campaign
 
@@ -101,7 +101,7 @@ Each dunning campaign can encompass an automatic invoice dunning cycle, a manual
 
 For automatic invoice payment failures, Recurly will send a **Payment Declined** email, notifying the customer of the failure and urging them to refresh their billing details. Consecutive emails are sent based on the schedule you set in the relevant dunning campaign.
 
-<Image align="center" width="50% " src="https://files.readme.io/9eb5bda-033141c-Edit_Campaign__Recurly_2021-06-17_at_10.43.46_AM.jpg" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/f5b1c8a9e01993a1b6e799a08c31612d00cd084969f8e14eec8c32212a2c6b70-Screenshot_2025-12-23_at_10.49.30_AM.png" className="border" />
 
 Here, you can add, delete, or modify steps in the dunning cycle. Each dunning step can be linked to a specific email template. You can conveniently preview or modify an email using the links beneath the Email Template dropdown. Emails can also be configured in the **Email Templates** section of the Configuration panel. All dunning-associated emails are located at the bottom of the Email Templates page.
 
@@ -109,7 +109,7 @@ Here, you can add, delete, or modify steps in the dunning cycle. Each dunning st
 
 Manual invoice dunning cycles are set up similarly to the automatic invoice dunning cycle, but they utilize the **Invoice Past Due** email templates.
 
-<Image align="center" width="50% " src="https://files.readme.io/bd259e6-01e0031-Edit_Campaign__Recurly_2021-06-15_at_11.54.55_AM.jpg" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/49337dad91cc78a1f6731f766ed6779adf34e691ed967810079b4a1a2d474516-Screenshot_2025-12-23_at_10.50.37_AM.png" className="border" />
 
 It's essential to note that users with the authority to modify the Customer section in Recurly can opt to reopen failed manual invoices. If a failed manual invoice is reopened, dunning **will not** resume (meaning no dunning emails will be sent), and the linked subscription remains unaffected. When a manual invoice is reopened, it stays in an Open state indefinitely until it's closed and marked as paid/failed.
 
@@ -117,7 +117,7 @@ It's essential to note that users with the authority to modify the Customer sect
 
 For invoices that remain unpaid after transitioning from a free trial to a paid subscription, Recurly can send a **Post-Trial Payment Declined** email to attempt customer recovery. If incorporated into your dunning campaign, this cycle can be limited to automatic invoices only or extended to both automatic and manual invoices. Otherwise, the setup of trial dunning cycles mirrors the steps of the automatic invoice dunning cycle.
 
-<Image align="center" width="50% " src="https://files.readme.io/c3ad07a-7b325c4-Post-Trial_Dunning_Cycle.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/98f1098cbfc37b489506545065fabce21d20eac4c81f081bef9052189b5125db-Screenshot_2025-12-23_at_10.51.55_AM.png" className="border" />
 
 It's crucial to understand that the trial dunning cycle only activates for unpaid subscriptions that had a free trial period integrated into the subscription plan or applied via a coupon. "Free trial" alternatives that don't use Recurly's trial feature, like creating a $0 subscription and then raising the price post the initial billing cycle, won't activate the trial dunning cycle when unpaid.
 
@@ -125,7 +125,7 @@ It's crucial to understand that the trial dunning cycle only activates for unpai
 
 For every dunning cycle, you can set the behavior of the invoice and the subscription if the customer does **not** pay by the cycle's end. The final email sent to the customer if the subscription expires can also be customized.
 
-<Image align="center" width="50% " src="https://files.readme.io/b082fe6-da6c473-Edit_Campaign__Recurly.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/320af569973b7a0cb7611e1537766536b5f067a49d553af1730af81dd57d94ad-Screenshot_2025-12-23_at_10.52.58_AM.png" className="border" />
 
 By default, dunning settings will automatically mark an invoice as failed at the cycle's end if it remains unpaid. A failed invoice in Recurly signifies it's written off as bad debt, removing the owed balance from the customer's account. You can adjust your dunning settings to never auto-fail the invoice, leaving it overdue.
 
@@ -144,13 +144,13 @@ For more details on editing email templates, [check the dedicated documentation]
 
 ## Creating a new dunning email template
 
-To create a new email template, head to the Dunning Management section of Email Templates. Here you will find email template configuration for the following emails: Payment Declined Templates (for automatic invoices), Invoice Past Due Templates (for manual invoices), or Subscription Expired for Non-Payment Templates (for subscriptions that remain unpaid at the end of any dunning cycle) and click *New Email Template. The Dunning Management email configuration section also includes the email for Payment Declined Due to 3D Secure 2.*
+To create a new email template, head to the Dunning Management section of Email Templates. Here you will find email template configuration for the following emails: Payment Declined Templates (for automatic invoices), Invoice Past Due Templates (for manual invoices), or Subscription Expired for Non-Payment Templates (for subscriptions that remain unpaid at the end of any dunning cycle) and click _New Email Template. The Dunning Management email configuration section also includes the email for Payment Declined Due to 3D Secure 2._
 
-<Image align="center" width="50% " src="https://files.readme.io/f5f646b-903fe6e-Email_Templates__Recurly.png" />
+<Image align="center" border={false} width="50% " src="https://files.readme.io/f5f646b-903fe6e-Email_Templates__Recurly.png" />
 
 You'll have the option to select a base template, so you don't have to craft the email from scratch. The template requires a name, which will be referenced when linking the email with dunning steps on a dunning campaign.
 
-<Image align="center" width="50% " src="https://files.readme.io/276a9f6-98375c0-Screen_Shot_2018-02-06_at_3.01.10_PM.png" />
+<Image align="center" border={false} width="50% " src="https://files.readme.io/276a9f6-98375c0-Screen_Shot_2018-02-06_at_3.01.10_PM.png" />
 
 Each dunning email will maintain the same aesthetics as our other email templates. However, you can customize the emails in the dunning process and have distinct email content at each step. Modifying the messaging in each email can effectively instill a sense of urgency in your subscribers.
 
@@ -164,11 +164,11 @@ Then, head to the Email Templates page and locate the email. If there's a note s
 
 ## Updating billing info
 
-[3]: https\://dev.recurly.com/docs/list-accounts
+[3]: https://dev.recurly.com/docs/list-accounts
 
 When your customers receive a failed payment email, they should know how to refresh their billing details. The default payment declined email template provides your customers a direct link to their hosted account management page, where they can submit updated billing details.
 
-You can incorporate a direct link to a customer's account management page from your website using the `hosted_login_token` parameter available on the \[Accounts API]\[3]. API users can also modify the email template to direct to a billing update form on their own site.
+You can incorporate a direct link to a customer's account management page from your website using the `hosted_login_token` parameter available on the [Accounts API][3]. API users can also modify the email template to direct to a billing update form on their own site.
 
 When billing details are successfully updated, Recurly will retry collection on all overdue invoices on the account (note: automated updates executed by Recurly's <a href="https://docs.recurly.com/docs/account-updater">Account Updater</a> also initiate a collection attempt).
 
@@ -180,7 +180,7 @@ For subscribers in dunning who simply require a few more days to pay, you can ha
 
 The entire collection process can be halted for a past due invoice by opening the invoice and clicking either **Stop Collection** in the Invoice Actions, which will mark the invoice as failed, or **Mark Paid**, which will indicate that the invoice was successfully paid. (The latter option is typically employed when funds are received outside of Recurly.) Either option will transition the invoice to a **Closed** state, halt Intelligent Retry attempts on the invoice, stop dunning emails, and bypass the End of Dunning Cycle actions set for the given dunning campaign.
 
-Note that halting collection on an invoice *will not* automatically cancel the related subscription. The subscription must be canceled separately to prevent the subscription from renewing again. A subscription will only be automatically canceled if an invoice fails dunning (assuming your dunning settings are set to expire a subscription at the end of the dunning process).
+Note that halting collection on an invoice _will not_ automatically cancel the related subscription. The subscription must be canceled separately to prevent the subscription from renewing again. A subscription will only be automatically canceled if an invoice fails dunning (assuming your dunning settings are set to expire a subscription at the end of the dunning process).
 
 # Multiple dunning campaigns
 
@@ -218,7 +218,7 @@ When a campaign is deactivated:
 * The campaign won't appear in the dropdown on the Plans or Accounts pages in the Recurly Admin console.
 * Any plans or accounts using that campaign will employ the default campaign in the future.
 
-<Image align="center" width="50% " src="https://files.readme.io/71c62c3-aca5887-Dunning_Management__Recurly.png" />
+<Image align="center" border={false} width="50% " src="https://files.readme.io/71c62c3-aca5887-Dunning_Management__Recurly.png" />
 
 ## Dunning campaign priority
 
@@ -250,7 +250,7 @@ Here are some best practices to consider:
 
 Every invoice adheres to the dunning configuration that was in place when the invoice entered the dunning process. To review previous dunning configurations, simply click on the **Settings History** button within each dunning campaign.
 
-<Image align="center" width="50% " src="https://files.readme.io/c7f6f37-0b5407f-Settings_History__Recurly_1.png" />
+<Image align="center" border={false} width="50% " src="https://files.readme.io/c7f6f37-0b5407f-Settings_History__Recurly_1.png" />
 
 This feature provides a comprehensive view of your dunning settings' evolution, ensuring you always have a point of reference. It's an invaluable tool for experimenting with various dunning schedules and evaluating their effectiveness over time.
 
