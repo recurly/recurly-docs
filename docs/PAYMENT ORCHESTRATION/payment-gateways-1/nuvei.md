@@ -112,7 +112,7 @@ If you haven't already, you can block mismatched Address and CVV code results on
 
 > **Note:** Ensure that you comply with PCI regulations when handling sensitive credit card information.
 
-This guide is designed to walk you through the process of integrating  Checkout.com with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Authorize.net representative or Recurly support for any specific questions or issues related to your integration.
+This guide is designed to walk you through the process of integrating  Nuvei with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Nuvei representative or Recurly support for any specific questions or issues related to your integration.
 
 ## Production and Sandbox Behavior 
 
