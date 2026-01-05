@@ -15,6 +15,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * When enabling 3D Secure, the service is not immediately active after adding the gateway account. There is a behind-the-scenes enrollment process that must be completed. Please allow 3 business days for this process to be completed. 
 * Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
+* Chargebacks are not supported at this time.
 
 # Definition
 
