@@ -13,13 +13,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-* When enabling 3D Secure, the service is not immediately active after adding the gateway account. There is a behind-the-scenes enrollment process that must be completed. Please allow 3 business days for this process to be completed. 
+* When enabling 3D Secure, the service is not immediately active after adding the gateway account. There is a behind-the-scenes enrollment process that must be completed. Please allow 3 business days for this process to be completed.
 * Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
-* Chargebacks are not supported at this time.
+* Gateway Tokens and Chargeback Notifications are not supported at this time.
 
 # Definition
 
-**Definition**
+The integration of Nuvei with Recurly facilitates a smooth pathway for managing your financial transactions. Whether you are a new merchant working with Nuvei or you're an existing merchant migrating to the gateway, the process is designed to be straightforward and efficient. 
 
 For pricing and signup information for a new production Nuvei account, please check with your gateway provider point of contact.
 
@@ -38,13 +38,13 @@ For pricing and signup information for a new production Nuvei account, please ch
 
 To enable seamless communication between Recurly and your Nuvei account, it is essential to configure your API credentials within Recurly.
 
-### Step 1: Obtain your Nuvei Credentials 
+### Step 1: Obtain your Nuvei Credentials
 
-* You'll need to obtain your credentials from your Nuvei account directly, and ensure you have them available for entry in Step 2. 
+* You'll need to obtain your credentials from your Nuvei account directly, and ensure you have them available for entry in Step 2.
   * From the REST API **Configuration** tab, click **Generate New API Key**.
   * You will also need your Site ID, Merchant ID, Secret, and Source verification key.
 * You can find distinct documentation on Nuvei's website: [Access and/or Create API Credentials](https://docs-apm.nuvei.com/generate-api-key/)
-* **Note:** If you intend to use 3DS, you will also need the following information: 
+* **Note:** If you intend to use 3DS, you will also need the following information:
   * Your Acquirer BIN (6 digits)
   * Your Acquirer Merchant ID
   * Your Acquirer Country
@@ -52,15 +52,15 @@ To enable seamless communication between Recurly and your Nuvei account, it is e
 ### Step 2: Enter your Nuvei Credentials in your Recurly site
 
 * Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
-* Enter the details you've obtained from your Nuvei configuration into the following fields: 
+* Enter the details you've obtained from your Nuvei configuration into the following fields:
   * Your Merchant ID
   * Your Site ID
   * Your Secret Key
   * Your Source Verification Key
 
-### Step 3: Enable 3D Secure 
+### Step 3: Enable 3D Secure
 
-If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well as enter the following details. 
+If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well as enter the following details.
 
 **Note:** You will also want to ensure the consumer-facing website domain (url) **and** your business' main MCC value are both present in your Default Business Entity before enabling 3DS.
 
@@ -77,7 +77,7 @@ You can add as well as **change** which currencies your Nuvei gateway can accept
 
 Once your configuration is set up the way you would prefer, **click** ‘Add Payment Gateway’. If you are editing your implementation, the button will state ‘Update Payment Gateway’.
 
-## Additional Configuration 
+## Additional Configuration
 
 ### Address and Card Code Verification Enablement
 
@@ -115,8 +115,8 @@ If you haven't already, you can block mismatched Address and CVV code results on
 
 This guide is designed to walk you through the process of integrating  Nuvei with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Nuvei representative or Recurly support for any specific questions or issues related to your integration.
 
-## Production and Sandbox Behavior 
+## Production and Sandbox Behavior
 
-Production and Sandbox environments are entirely different endpoints and systems. If you create a Nuvei gateway account while your site is in Production or Sandbox mode, you can control whether or not these transactions are using the sandbox / production endpoints easily. 
+Production and Sandbox environments are entirely different endpoints and systems. If you create a Nuvei gateway account while your site is in Production or Sandbox mode, you can control whether or not these transactions are using the sandbox / production endpoints easily.
 
-If you have support move your site from Production/Sandbox **to** Development mode, or visa versa, you will need to create new gateway tiles, and disable the old ones as they will not be functional post site-mode migration. To that end, it is best practice to have your site remain in the same 'mode', and if you have a specific development site that you use for integration testing and other testing scenarios, ensure your site is set to and stays in Development mode for the duration and prior to adding accounts to avoid issues. 
+If you have support move your site from Production/Sandbox **to** Development mode, or visa versa, you will need to create new gateway tiles, and disable the old ones as they will not be functional post site-mode migration. To that end, it is best practice to have your site remain in the same 'mode', and if you have a specific development site that you use for integration testing and other testing scenarios, ensure your site is set to and stays in Development mode for the duration and prior to adding accounts to avoid issues.
