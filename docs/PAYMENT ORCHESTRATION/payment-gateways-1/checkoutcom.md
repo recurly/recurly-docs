@@ -41,9 +41,10 @@ To enable seamless communication between Recurly and your Checkout.com account, 
 ### Step 1: Obtain your Checkout.com Credentials
 
 * You'll need to obtain your credentials from your Checkout.com account directly, and ensure you have them available for entry in Step 2.
-  * From the REST API **Configuration** tab, click **Generate New API Key**.
-  * You will also need your Site ID, Merchant ID, Secret, and Source verification key.
-* You can find distinct documentation on Checkout.com website: [Access and/or Create API Credentials](https://docs-apm.nuvei.com/generate-api-key/)
+  * Sign in to your Checkout.com dashboard and click **Developers** from the top navigation and click **Keys**.
+  * Select **Create a new key**. When creating keys, it is not advised to _Customize_ your key permissions unless you are certain no functionality is blocked by the scopes chosen. 
+    * **Note**: If you must limit scopes, ensure you have at least payments, gateway, disputes, search, and risk enabled. While we do not support all of these options presently, we want to ensure no limitations or issues arise from required key changes for future iterations of this gateway.
+* You can find distinct documentation on Checkout.com website: [Access and/or Create API Credentials](https://support.checkout.com/hc/en-us/articles/14327309405842-Create-new-API-keys) and in [Dashboard documentation](https://www.checkout.com/docs/business-operations/use-the-dashboard/developers#Manage_API_authentication) for Checkout.
 * **Note:** If you intend to use 3DS, you will also need the following information:
   * Your Acquirer BIN (6 digits)
   * Your Acquirer Merchant ID
@@ -53,9 +54,9 @@ To enable seamless communication between Recurly and your Checkout.com account, 
 
 * Navigate to **Configuration > Payment Gateways**and **Select** Checkout.com from the options available.
 * Enter the details you've obtained from your Checkout.com configuration into the following fields:
-  * Your Merchant ID
-  * Your Site ID
-  * Your Secret Key
+  * Your API Public Key
+  * Your Channel ID
+  * Your API Secret Key
   * Your Source Verification Key
 
 ### Step 3: Enable 3D Secure
