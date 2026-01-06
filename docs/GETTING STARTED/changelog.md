@@ -22,6 +22,16 @@ A concise digest of Recurly's ongoing changes and minor updates that continually
 
 The Release Notes section is your go-to place to catch up on the minor yet meaningful changes we have rolled out. From UI tweaks to API and Recurly.js extensions, stay in the loop with the incremental improvements making your Recurly experience smoother. For major updates, our [blog](https://blog.recurly.com) and newsletter are still your best companions. Questions? [Contact support](mailto:support@recurly.com).
 
+## 2026
+
+## January
+
+| Release Date | **Feature**        | **Potential Impact** | **Description / Overview**                                                                                                                                                                              |
+| :----------- | :----------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Jan 6        | **Recurly Engage** | Low                  | Added user traits to the "User Look Up" profile view, allowing administrators to easily verify imported user data and confirm values for dynamic variables directly within the UI.                      |
+| Jan 6        | **Recurly Engage** | Low                  | Introduced a bulk editing feature that enables users to apply or modify tags across multiple prompts simultaneously, streamlining the management of large-scale campaigns.                              |
+| Jan 6        | **Recurly Engage** | Low                  | Upgraded prompt reporting to support detailed performance breakdowns by segment, locale, and device category, providing deeper visibility into how localized content performs across different markets. |
+
 ## 2025
 
 ## December
