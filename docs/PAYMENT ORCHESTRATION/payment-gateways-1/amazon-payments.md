@@ -5,7 +5,7 @@ excerpt: >-
   customers to subscribe to your plans, using information already stored in
   their Amazon accounts. Now available in the US, Europe, and the UK!
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
