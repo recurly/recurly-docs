@@ -16,10 +16,11 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * When enabling 3D Secure, the service is not immediately active after adding the gateway account. There is a behind-the-scenes enrollment process that must be completed. Please allow 3 business days for this process to be completed.
 * Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
 * Gateway Tokens and Chargeback Notifications are not supported at this time.
+* Processing via the Admin UI may not be supported due to Nuvei's CVV and Customer IP address requirements. As these may be configurable with your gateway, please speak to your Nuvei representative if you need to run Admin transactions.
 
 # Definition
 
-The integration of Nuvei with Recurly facilitates a smooth pathway for managing your financial transactions. Whether you are a new merchant working with Nuvei or you're an existing merchant migrating to the gateway, the process is designed to be straightforward and efficient. 
+The integration of Nuvei with Recurly facilitates a smooth pathway for managing your financial transactions. Whether you are a new merchant working with Nuvei or you're an existing merchant migrating to the gateway, the process is designed to be straightforward and efficient.
 
 For pricing and signup information for a new production Nuvei account, please check with your gateway provider point of contact.
 
