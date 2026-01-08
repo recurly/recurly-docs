@@ -13,6 +13,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
+<Callout icon="📘" theme="info">
+  **Important Note**
+
+  Nuvei gateway requires Browser Information in all transactions, so using Recurly.js for all customer initiated transactions is important, not only for signups, regardless of 3DS usage, but also for known billing IDs. You may use Recurly.js for either by following our standard guides, as well as our guide for known billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
+</Callout>
+
+* Using the API to send in raw card details, or billing info IDs without using Recurly.js will not be supported due to the gateway's strict browser information requirement. Browser details are collected automatically when using Recurly.js.
 * When enabling 3D Secure, the service is not immediately active after adding the gateway account. There is a behind-the-scenes enrollment process that must be completed. Please allow 3 business days for this process to be completed.
 * Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
 * Gateway Tokens and Chargeback Notifications are not supported at this time.
