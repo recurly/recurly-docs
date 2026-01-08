@@ -7,7 +7,7 @@ metadata:
 ---
 # Overview
 
-This guide shows you how to use the Verification Endpoints to reverify card details already stored in Recurly for new subscriptions using cards stored on file, such as prior to resuming or reactivating a subscription. We’ll also illustrate how to integrate [Recurly.js](https://docs.recurly.com/v1.2/docs/3d-secure#/re-authenticating-existing-billing-information) for secure tokenization where required.
+This guide shows you how to use the Verification Endpoints to reverify card details already stored in Recurly for new subscriptions using cards stored on file, such as prior to resuming or reactivating a subscription. We’ll also illustrate how to integrate [Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure#re-authenticating-existing-billing-information) for secure tokenization where required.
 
 There are several reasons to use customer authentication or reverification flows outside of subscription lifecycle management. You may use this guide as a way to accomplish reverification of consumer card details for items such as:
 
