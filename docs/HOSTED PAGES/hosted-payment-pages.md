@@ -17,7 +17,7 @@ next:
 
 ### Video
 
-<Embed url="https://www.youtube.com/embed/FEfoB7miNVk" title="Hosted Pages Overview" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/FEfoB7miNVk/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/FEfoB7miNVk" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FFEfoB7miNVk%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DFEfoB7miNVk%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FFEfoB7miNVk%252Fhqdefault.jpg%26key%3D02466f963b9b4bb8845a05b53d3235d7%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22800%22%20height%3D%22580%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+<Embed url="https://www.youtube.com/embed/FEfoB7miNVk" href="https://www.youtube.com/embed/FEfoB7miNVk" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FFEfoB7miNVk%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DFEfoB7miNVk%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FFEfoB7miNVk%252Fhqdefault.jpg%26key%3D02466f963b9b4bb8845a05b53d3235d7%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22800%22%20height%3D%22580%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ### Required plan
 
@@ -83,7 +83,8 @@ In today's global market, a multilingual approach is essential. Recurly's Hosted
 
 ## ReCAPTCHA
 
-ReCAPTCHA is a free service that safeguards your site against spam, malicious activities, and other forms of bot attacks. By determining whether a user is human or not, it acts as a filter to ensure only legitimate activities pass through.\
+ReCAPTCHA is a free service that safeguards your site against spam, malicious activities, and other forms of bot attacks. By determining whether a user is human or not, it acts as a filter to ensure only legitimate activities pass through.
+
 The reCAPTCHA service presents users with images of distorted text, typically hard for OCR software to interpret. When users enter the text they see, this input is validated against the expected result, ensuring the user is indeed human.
 
 ### **How reCAPTCHA Works on Hosted Payment Pages**
@@ -176,7 +177,7 @@ https://:your_subdomain.recurly.com/subscribe/:plan_code/:account_code/:username
 
 The account code should be a URL-encoded version of the unique ID you use to identify an account. This might be an auto-incrementing ID, a GUID, their email address, etc. The username optionally identifies the user. The username might be their online handle or email address. Usually the username is the username or email address required for the user to log into your application.
 
-***Account codes are unique within your Recurly account*; usernames are not.**
+**_Account codes are unique within your Recurly account_; usernames are not.**
 
 If you do not specify an account code, the user's email address will be used as the account code. If you do not specify a username, it will be left blank.
 
@@ -204,7 +205,7 @@ f you would like to display your payment methods in a specific order, you may do
 https://example.recurly.com/subscribe/:plan_code?payment_methods[]=ach&payment_methods[]=credit_card
 ```
 
-Your payment page will display available payment methods in this order first. If there are more payment methods available that aren't specified in this parameter, then the remaining payment methods will proceed in their default order.\
+Your payment page will display available payment methods in this order first. If there are more payment methods available that aren't specified in this parameter, then the remaining payment methods will proceed in their default order.  
 Possible values, in their default order, are `credit_card`, `ach`, `sepa`, `paypal`, and `amazon`.
 
 ### Coupon code
