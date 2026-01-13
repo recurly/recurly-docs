@@ -25,9 +25,9 @@ Recurly's email time zone feature is designed to help businesses cater to the di
 
 # Key benefits
 
-* **Personalization:** Tailor email delivery times to the local timezones of your global customer base.  
-* **Clarity:** Eliminate timezone-related confusions by ensuring the timestamps in your emails accurately mirror the recipient's local time.  
-* **Flexibility:** Choose a default email timezone or customize it for individual customer accounts.  
+* **Personalization:** Tailor email delivery times to the local timezones of your global customer base.
+* **Clarity:** Eliminate timezone-related confusions by ensuring the timestamps in your emails accurately mirror the recipient's local time.
+* **Flexibility:** Choose a default email timezone or customize it for individual customer accounts.
 * **API integration:** Easily configure account-specific email timezones through the API for seamless system integrations.
 
 # Key details
@@ -54,7 +54,7 @@ By effectively leveraging the email timezone feature, you can ensure precise and
 4. Use the dropdown menu to select your preferred time zone. This will be applied to all emails sent to all customers site-wide.
 5. If desired, you can also set a specific email time zone for individual customers at the “Account” level. If a unique email timezone is selected for a specific account, that will take precedence over the site-wide setting.
 
-![Site Settings Screenshot](https://files.readme.io/838b688-Screen_Shot_2022-06-21_at_12.58.48_PM.png)
+<Image alt="Site Settings Screenshot" border={false} src="https://files.readme.io/838b688-Screen_Shot_2022-06-21_at_12.58.48_PM.png" />
 
 **Account-level email timezone configuration:**
 
@@ -62,18 +62,21 @@ By effectively leveraging the email timezone feature, you can ensure precise and
 2. Choose the appropriate time zone from the dropdown menu.
 3. If you wish to utilize the site-wide setting, simply select the "Site Settings (Default)" option and save the changes.
 
-![Account Settings Screenshot](https://files.readme.io/b3705f0-Screen_Shot_2022-06-21_at_2.33.52_PM.png)
+<Image alt="Account Settings Screenshot" border={false} src="https://files.readme.io/b3705f0-Screen_Shot_2022-06-21_at_2.33.52_PM.png" />
 
 ### Additional email parameters
 
 Integrate the following parameters into your email templates via the Recurly App's Email Templates page:
 
-* `transaction_date_and_time`: Reflects the transaction date and time adjusted for timezone.
-* `transaction_declined?`: Indicates if the transaction was declined.
-* `transaction_success?`: Indicates if the transaction was successful.
-* `transaction_voided?`: Indicates if the transaction was voided.
-* `subscription_expires_at_with_time`: Shows the adjusted date and time when a canceled subscription will expire.
-* `subscription_trial_ends_at_with_time`: Denotes the adjusted end date and time for the current subscription trial.
+| Parameter                                       | What it does                                                                |
+| ----------------------------------------------- | --------------------------------------------------------------------------- |
+| `subscription_current_period_ends_at_with_time` | Shows the adjusted date and time when the current subscription period ends. |
+| `transaction_date_and_time`                     | Reflects the transaction date and time adjusted for timezone.               |
+| `transaction_declined?`                         | Indicates if the transaction was declined.                                  |
+| `transaction_success?`                          | Indicates if the transaction was successful.                                |
+| `transaction_voided?`                           | Indicates if the transaction was voided.                                    |
+| `subscription_expires_at_with_time`             | Shows the adjusted date and time when a canceled subscription will expire.  |
+| `subscription_trial_ends_at_with_time`          | Denotes the adjusted end date and time for the current subscription trial.  |
 
 # Setting account-specific email time zones via API
 
@@ -86,11 +89,11 @@ For `preferred_time_zone` in the Account API, refer to the following IANA time z
 <Table align={["left","left"]}>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>
+      <th>
         Admin UI Option
       </th>
 
-      <th style={{ textAlign: "left" }}>
+      <th>
         API IANA Value
       </th>
     </tr>
@@ -98,7 +101,7 @@ For `preferred_time_zone` in the Account API, refer to the following IANA time z
 
   <tbody>
     <tr>
-      <td style={{ textAlign: "left" }}>
+      <td>
         (GMT-12:00) International Date Line West
         (GMT-11:00) American Samoa
         (GMT-11:00) Midway Island
@@ -252,157 +255,157 @@ For `preferred_time_zone` in the Account API, refer to the following IANA time z
         (GMT+13:00) Tokelau Is.
       </td>
 
-      <td style={{ textAlign: "left" }}>
-        Etc/GMT+12\
-        Pacific/Pago\_Pago\
-        Pacific/Midway\
-        Pacific/Honolulu\
-        America/Juneau\
-        America/Los\_Angeles\
-        America/Tijuana\
-        America/Phoenix\
-        America/Mazatlan\
-        America/Denver\
-        America/Guatemala\
-        America/Chicago\
-        America/Chihuahua\
-        America/Mexico\_City\
-        America/Mexico\_City\
-        America/Monterrey\
-        America/Regina\
-        America/Bogota\
-        America/New\_York\
-        America/Indiana/Indianapolis\
-        America/Lima\
-        America/Lima\
-        America/Halifax\
-        America/Caracas\
-        America/Guyana\
-        America/La\_Paz\
-        America/Puerto\_Rico\
-        America/Santiago\
-        America/St\_Johns\
-        America/Sao\_Paulo\
-        America/Argentina/Buenos\_Aires\
-        America/Godthab\
-        America/Montevideo\
-        Atlantic/South\_Georgia\
-        Atlantic/Azores\
-        Atlantic/Cape\_Verde\
-        Africa/Casablanca\
-        Europe/Dublin\
-        Europe/London\
-        Europe/Lisbon\
-        Europe/London\
-        Africa/Monrovia\
-        Etc/UTC\
-        Europe/Amsterdam\
-        Europe/Belgrade\
-        Europe/Berlin\
-        Europe/Zurich\
-        Europe/Bratislava\
-        Europe/Brussels\
-        Europe/Budapest\
-        Europe/Copenhagen\
-        Europe/Ljubljana\
-        Europe/Madrid\
-        Europe/Paris\
-        Europe/Prague\
-        Europe/Rome\
-        Europe/Sarajevo\
-        Europe/Skopje\
-        Europe/Stockholm\
-        Europe/Vienna\
-        Europe/Warsaw\
-        Africa/Algiers\
-        Europe/Zagreb\
-        Europe/Zurich\
-        Europe/Athens\
-        Europe/Bucharest\
-        Africa/Cairo\
-        Africa/Harare\
-        Europe/Helsinki\
-        Asia/Jerusalem\
-        Europe/Kaliningrad\
-        Europe/Kiev\
-        Africa/Johannesburg\
-        Europe/Riga\
-        Europe/Sofia\
-        Europe/Tallinn\
-        Europe/Vilnius\
-        Asia/Baghdad\
-        Europe/Istanbul\
-        Asia/Kuwait\
-        Europe/Minsk\
-        Europe/Moscow\
-        Africa/Nairobi\
-        Asia/Riyadh\
-        Europe/Moscow\
-        Europe/Volgograd\
-        Asia/Tehran\
-        Asia/Muscat\
-        Asia/Baku\
-        Asia/Muscat\
-        Europe/Samara\
-        Asia/Tbilisi\
-        Asia/Yerevan\
-        Asia/Kabul\
-        Asia/Yekaterinburg\
-        Asia/Karachi\
-        Asia/Karachi\
-        Asia/Tashkent\
-        Asia/Kolkata\
-        Asia/Kolkata\
-        Asia/Kolkata\
-        Asia/Kolkata\
-        Asia/Colombo\
-        Asia/Kathmandu\
-        Asia/Almaty\
-        Asia/Dhaka\
-        Asia/Dhaka\
-        Asia/Urumqi\
-        Asia/Rangoon\
-        Asia/Bangkok\
-        Asia/Bangkok\
-        Asia/Jakarta\
-        Asia/Krasnoyarsk\
-        Asia/Novosibirsk\
-        Asia/Shanghai\
-        Asia/Chongqing\
-        Asia/Hong\_Kong\
-        Asia/Irkutsk\
-        Asia/Kuala\_Lumpur\
-        Australia/Perth\
-        Asia/Singapore\
-        Asia/Taipei\
-        Asia/Ulaanbaatar\
-        Asia/Tokyo\
-        Asia/Tokyo\
-        Asia/Seoul\
-        Asia/Tokyo\
-        Asia/Yakutsk\
-        Australia/Adelaide\
-        Australia/Darwin\
-        Australia/Brisbane\
-        Australia/Melbourne\
-        Pacific/Guam\
-        Australia/Hobart\
-        Australia/Melbourne\
-        Pacific/Port\_Moresby\
-        Australia/Sydney\
-        Asia/Vladivostok\
-        Asia/Magadan\
-        Pacific/Noumea\
-        Pacific/Guadalcanal\
-        Asia/Srednekolymsk\
-        Pacific/Auckland\
-        Pacific/Fiji\
-        Asia/Kamchatka\
-        Pacific/Majuro\
-        Pacific/Auckland\
-        Pacific/Chatham\
-        Pacific/Tongatapu\
-        Pacific/Apia\
+      <td>
+        Etc/GMT+12  
+        Pacific/Pago_Pago  
+        Pacific/Midway  
+        Pacific/Honolulu  
+        America/Juneau  
+        America/Los_Angeles  
+        America/Tijuana  
+        America/Phoenix  
+        America/Mazatlan  
+        America/Denver  
+        America/Guatemala  
+        America/Chicago  
+        America/Chihuahua  
+        America/Mexico_City  
+        America/Mexico_City  
+        America/Monterrey  
+        America/Regina  
+        America/Bogota  
+        America/New_York  
+        America/Indiana/Indianapolis  
+        America/Lima  
+        America/Lima  
+        America/Halifax  
+        America/Caracas  
+        America/Guyana  
+        America/La_Paz  
+        America/Puerto_Rico  
+        America/Santiago  
+        America/St_Johns  
+        America/Sao_Paulo  
+        America/Argentina/Buenos_Aires  
+        America/Godthab  
+        America/Montevideo  
+        Atlantic/South_Georgia  
+        Atlantic/Azores  
+        Atlantic/Cape_Verde  
+        Africa/Casablanca  
+        Europe/Dublin  
+        Europe/London  
+        Europe/Lisbon  
+        Europe/London  
+        Africa/Monrovia  
+        Etc/UTC  
+        Europe/Amsterdam  
+        Europe/Belgrade  
+        Europe/Berlin  
+        Europe/Zurich  
+        Europe/Bratislava  
+        Europe/Brussels  
+        Europe/Budapest  
+        Europe/Copenhagen  
+        Europe/Ljubljana  
+        Europe/Madrid  
+        Europe/Paris  
+        Europe/Prague  
+        Europe/Rome  
+        Europe/Sarajevo  
+        Europe/Skopje  
+        Europe/Stockholm  
+        Europe/Vienna  
+        Europe/Warsaw  
+        Africa/Algiers  
+        Europe/Zagreb  
+        Europe/Zurich  
+        Europe/Athens  
+        Europe/Bucharest  
+        Africa/Cairo  
+        Africa/Harare  
+        Europe/Helsinki  
+        Asia/Jerusalem  
+        Europe/Kaliningrad  
+        Europe/Kiev  
+        Africa/Johannesburg  
+        Europe/Riga  
+        Europe/Sofia  
+        Europe/Tallinn  
+        Europe/Vilnius  
+        Asia/Baghdad  
+        Europe/Istanbul  
+        Asia/Kuwait  
+        Europe/Minsk  
+        Europe/Moscow  
+        Africa/Nairobi  
+        Asia/Riyadh  
+        Europe/Moscow  
+        Europe/Volgograd  
+        Asia/Tehran  
+        Asia/Muscat  
+        Asia/Baku  
+        Asia/Muscat  
+        Europe/Samara  
+        Asia/Tbilisi  
+        Asia/Yerevan  
+        Asia/Kabul  
+        Asia/Yekaterinburg  
+        Asia/Karachi  
+        Asia/Karachi  
+        Asia/Tashkent  
+        Asia/Kolkata  
+        Asia/Kolkata  
+        Asia/Kolkata  
+        Asia/Kolkata  
+        Asia/Colombo  
+        Asia/Kathmandu  
+        Asia/Almaty  
+        Asia/Dhaka  
+        Asia/Dhaka  
+        Asia/Urumqi  
+        Asia/Rangoon  
+        Asia/Bangkok  
+        Asia/Bangkok  
+        Asia/Jakarta  
+        Asia/Krasnoyarsk  
+        Asia/Novosibirsk  
+        Asia/Shanghai  
+        Asia/Chongqing  
+        Asia/Hong_Kong  
+        Asia/Irkutsk  
+        Asia/Kuala_Lumpur  
+        Australia/Perth  
+        Asia/Singapore  
+        Asia/Taipei  
+        Asia/Ulaanbaatar  
+        Asia/Tokyo  
+        Asia/Tokyo  
+        Asia/Seoul  
+        Asia/Tokyo  
+        Asia/Yakutsk  
+        Australia/Adelaide  
+        Australia/Darwin  
+        Australia/Brisbane  
+        Australia/Melbourne  
+        Pacific/Guam  
+        Australia/Hobart  
+        Australia/Melbourne  
+        Pacific/Port_Moresby  
+        Australia/Sydney  
+        Asia/Vladivostok  
+        Asia/Magadan  
+        Pacific/Noumea  
+        Pacific/Guadalcanal  
+        Asia/Srednekolymsk  
+        Pacific/Auckland  
+        Pacific/Fiji  
+        Asia/Kamchatka  
+        Pacific/Majuro  
+        Pacific/Auckland  
+        Pacific/Chatham  
+        Pacific/Tongatapu  
+        Pacific/Apia  
         Pacific/Fakaofo
       </td>
     </tr>
