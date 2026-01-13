@@ -22,7 +22,7 @@ A concise digest of Recurly's ongoing changes and minor updates that continually
 
 The Release Notes section is your go-to place to catch up on the minor yet meaningful changes we have rolled out. From UI tweaks to API and Recurly.js extensions, stay in the loop with the incremental improvements making your Recurly experience smoother. For major updates, our [blog](https://blog.recurly.com) and newsletter are still your best companions. Questions? [Contact support](mailto:support@recurly.com).
 
-## 2026
+# 2026
 
 ## January
 
@@ -38,7 +38,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 | Jan 6        | **Recurly Engage**          | Low                  | Introduced a bulk editing feature that enables users to apply or modify tags across multiple prompts simultaneously, streamlining the management of large-scale campaigns.                                                                                                                                                                                       |
 | Jan 6        | **Recurly Engage**          | Low                  | Upgraded prompt reporting to support detailed performance breakdowns by segment, locale, and device category, providing deeper visibility into how localized content performs across different markets.                                                                                                                                                          |
 
-## 2025
+# 2025
 
 ## December
 
@@ -3103,7 +3103,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 1/21/2025:  **Password criteria**- Upon the next user password expiration, there will be a new password length requirement where length must be at minimum 12 characters long with at least one numeric character.
 * 1/14/2025: **Adyen gateway**- We've added support for ISK and CLP zero-decimal currencies. Please see [Adyen documentation for special considerations](https://docs.recurly.com/docs/adyen#special-currency-considerations) when using these currencies.
 
-## 2024
+# 2024
 
 ## December
 
@@ -3238,7 +3238,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   * This feature is a part of our ongoing commitment to provide you with the most comprehensive tools for managing your subscription business. To learn more about how you can leverage this new functionality, check out our latest [blog post](https://recurly.com/blog/built-in-subscription-benchmarks/).
   * These new benchmarks can be found in the Renewal Invoices and Renewal Declines dashboards, under Churn Management in Recurly Analytics.
 
-## 2023
+# 2023
 
 ## December
 
@@ -3342,7 +3342,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 1/10/23 Email parameters for custom fields are now available to support merchants in merging a custom field value into their email templates. [Learn more.](https://docs.recurly.com/docs/email-templates)
 * 1/10/23 Recurly's email timezone functionality is now available through both API versions to support account-level email timezone assignment. [Learn more](https://docs.recurly.com/docs/email-time-zones-and-time-stamps).
 
-## 2022
+# 2022
 
 ## December
 
