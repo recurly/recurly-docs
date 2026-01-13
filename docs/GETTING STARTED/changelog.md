@@ -3438,7 +3438,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 01/28/2022: Released updated version of the Recurly for Salesforce integration that enabled editing subscriptions from opportunities and easier correlation to subscriptions. Added a sidebar highlighting subscription details and updated to invoice rollup data sync.  See more details [here](https://docs.recurly.com/docs/salesforcereleasenotes)
 
-## 2021
+# 2021
 
 ## December
 
@@ -3508,7 +3508,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 2/25/21: Released additional support for usage add-ons with a tiered pricing model to allow for [usage corrections](https://docs.recurly.com/docs/usage-based-billing#section-usage-corrections). Usage logged for a previous billing period will be charged on top of the usage already billed in that billing period
 * 2/18/21: Released decimal pricing for usage add-ons. Recurly can now support up to 9 decimal places for usage-based billing.  [Learn more.](https://docs.recurly.com/docs/decimal-pricing)
 
-## 2020
+# 2020
 
 ### December
 
@@ -3604,7 +3604,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 1/30/20: Released update to Adyen to support Visa Free Trial Mandate.
 * 1/2/20: Released updated export for Subscriptions - History (V2)
 
-## 2019
+# 2019
 
 ### December
 
