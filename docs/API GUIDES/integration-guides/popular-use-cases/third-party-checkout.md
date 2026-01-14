@@ -110,9 +110,15 @@ For Klarna Compliance, please see documentation at Stripe: [Stripe x Klarna Comp
 
 Stripe’s `captureMethod` Elements configuration parameter allows you to create a confirmation token that allows separate Authorization and Capture, or an all-in-one Purchase whether or not the intent is a subscription signup or a one-time transaction.
 
+#### Separate Auth and Capture behavior
+
 If you choose to set your Elements configuration to `captureMethod` of `manual`, you must use the /authorize endpoint when sending your customer initiated transaction with a confirmation token.
 
-If your `captureMethod` configuration is set to `automatic`, you must use the purchase endpoint.
+#### AVS and CVV Checks
+
+Alternatively, if you choose to enable AVS / CVV Checks on Recurly, set your capture method to 'manual' as we will perform a separate auth and capture behind the scenes.
+
+If your `captureMethod` configuration is set to `automatic`, you must use the purchase endpoint and/or disable AVS/CVV checks.
 
 ### Return URLs
 
