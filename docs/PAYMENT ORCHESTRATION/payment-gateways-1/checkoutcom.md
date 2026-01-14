@@ -13,6 +13,12 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
+<Callout icon="📘" theme="info">
+  **Important Note**
+
+  Checkout.com gateway requires Browser Information in all transactions, so using Recurly.js for new signups and new billing information entry, such as billing info updates, regardless of 3DS usage, is important. You may use Recurly.js for either by following our standard guides for 3DS with Recurly.js. If you need 3DS on known billing information, you may also find our guide for known billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
+</Callout>
+
 * When enabling 3D Secure, the service is not immediately active after adding the gateway account. There is a behind-the-scenes enrollment process that must be completed. Please allow 3 business days for this process to be completed.
 * Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
 * Gateway Tokens and Chargeback Notifications are not supported at this time.
@@ -42,7 +48,7 @@ To enable seamless communication between Recurly and your Checkout.com account, 
 
 * You'll need to obtain your credentials from your Checkout.com account directly, and ensure you have them available for entry in Step 2.
   * Sign in to your Checkout.com dashboard and click **Developers** from the top navigation and click **Keys**.
-  * Select **Create a new key**. When creating keys, it is not advised to _Customize_ your key permissions unless you are certain no functionality is blocked by the scopes chosen. 
+  * Select **Create a new key**. When creating keys, it is not advised to _Customize_ your key permissions unless you are certain no functionality is blocked by the scopes chosen.
     * **Note**: If you must limit scopes, ensure you have at least payments, gateway, disputes, search, and risk enabled. While we do not support all of these options presently, we want to ensure no limitations or issues arise from required key changes for future iterations of this gateway.
 * You can find distinct documentation on Checkout.com website: [Access and/or Create API Credentials](https://support.checkout.com/hc/en-us/articles/14327309405842-Create-new-API-keys) and in [Dashboard documentation](https://www.checkout.com/docs/business-operations/use-the-dashboard/developers#Manage_API_authentication) for Checkout.
 * **Note:** If you intend to use 3DS, you will also need the following information:
