@@ -21,7 +21,6 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
   * One or more payment gateways (commonly Adyen, PayPal Complete, or Stripe)
   * Avalara for tax calculation and remittance
-* Merchants can leverage the fraud prevention Reach provides through its PSP integrations.
 
 # Definition
 
@@ -77,3 +76,11 @@ Once you have your Reach-provided credentials, follow these steps within the Rec
 3. **Monitor chargebacks and disputes**
 
    * Confirm that any test chargeback flows (e.g., a disputed payment) route through Reach’s dispute process. Reach assumes liability for chargebacks and will handle retrieval requests; these should not flow directly to your legal team unless escalated.
+
+<Callout icon="💡">
+  **Fraud Management**
+
+  Merchants can leverage the fraud prevention Reach provides through its PSP integrations.
+</Callout>
+
+<br />
