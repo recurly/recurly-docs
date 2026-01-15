@@ -2,7 +2,7 @@
 title: Revenue recognition schedules - export
 excerpt: Unlock revenue insights with the Revenue Recognition Schedules export feature.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
