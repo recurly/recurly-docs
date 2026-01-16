@@ -127,7 +127,7 @@ Updating an existing subscription is not supported at this time.
       },
     "billing_info_id":"123456789", // Required Field
     "plan_code": "monthly",
-    "starts_at": "2025-12-30T14:15:22Z", // Must be a future date
+    "starts_at": "2026-12-30T14:15:22Z", // Must be a future date
     "network_transaction_id": "320036244781105" // NTID from a Customer Initiated Transaction
 }
 ```
@@ -146,7 +146,7 @@ If you are using the `/purchases` endpoint, the logic is much the same, though t
 	  "subscriptions": [
 		{
 			"plan_code": "monthly",
-            "starts_at":"2025-12-15T14:15:22Z" // Must be a future date
+            "starts_at":"2026-12-15T14:15:22Z" // Must be a future date
 		}
 	],
     "gateway_code":"gateway-code",
