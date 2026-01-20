@@ -59,11 +59,11 @@ purchase = {
       postal_code: "123456",
       country: "BR",
       phone: "1234679099"
-			}
-    },
-    type: "pix-automatico",
+      },
     tax_identifier: "brazilian-cpf-value",
     tax_identifier_type: "cpf"
+    },
+  type: "pix-automatico",
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
@@ -80,18 +80,18 @@ let purchaseReq = {
     last_name: "Du Monde",
     email: "bdumonde@example.com",
     billing_info: {
-			address: {
+      address: {
         street1: "Avenida Nipo-brasileira 1007",
         city: "Braganca Paulista",
         region: "BR",
         postal_code: "123456",
         country: "BR",
         phone: "1234679099"
-			}
+      },
+      tax_identifier: "brazilian-cpf-value",
+      tax_identifier_type: "cpf"
     },
-    type: "pix-automatico",
-    tax_identifier: "brazilian-cpf-value",
-    tax_identifier_type: "cpf"
+    type: "pix-automatico"
   },
   subscriptions: [
     { plan_code: "coffee-monthly" }
@@ -107,19 +107,19 @@ purchase = {
         "first_name": "Benjamin",
         "last_name": "Du Monde",
         "email": "bdumonde@example.com",
-      	"billing_info": {
-						"address":{
-              "street1": "Avenida Nipo-brasileira 1007",
-              "city": "Braganca Paulista",
-              "region": "BR",
-              "postal_code": "123456",
-              "country": "BR",
-              "phone": "1234679099"
-						}
+        "billing_info": {
+            "address": {
+                "street1": "Avenida Nipo-brasileira 1007",
+                "city": "Braganca Paulista",
+                "region": "BR",
+                "postal_code": "123456",
+                "country": "BR",
+                "phone": "1234679099"
+            },
+            "tax_identifier": "brazilian-cpf-value",
+            "tax_identifier_type": "cpf"
         },
         "type": "pix-automatico",
-        "tax_identifier": "brazilian-cpf-value",
-        "tax_identifier_type": "cpf"
     },
     "subscriptions": [
         {"plan_code": "coffee-monthly"}
@@ -128,31 +128,32 @@ purchase = {
 invoice_collection = client.create_purchase(purchase)
 ```
 ```java
-PurchaseCreate purchase = new PurchaseCreate();
-purchase.setCurrency("BRL");
+purchase = PurchaseCreate.new
+purchase.currency = "BRL"
 
-AccountPurchase account = new AccountPurchase();
-account.setCode("bdumonde");
-account.setFirstName("Benjamin");
-account.setLastName("Du Monde");
-account.setEmail("bdumonde@example.com");
-account.setType("pix-automatico");
-account.setTaxIdentifier("brazilian-cpf-value");
-account.setTaxIdentifierType("cpf");
+account = AccountPurchase.new
+account.code = "bdumonde"
+account.first_name = "Benjamin"
+account.last_name = "Du Monde"
+account.email = "bdumonde@example.com"
+account.type = "pix-automatico"
 
-BillingInfoCreate billing = new BillingInfoCreate();
-billing.setStreet1("Avenida Nipo-brasileira 1007");
-billing.setCity("Braganca Paulista");
-billing.setRegion("BR");
-billing.setPostalCode("123456");
-billing.setCountry("BR");
-billing.setPhone("1234679099");
+billing = BillingInfoCreate.new
+billing.street1 = "Avenida Nipo-brasileira 1007"
+billing.city = "Braganca Paulista"
+billing.region = "BR"
+billing.postal_code = "123456"
+billing.country = "BR"
+billing.phone = "1234679099"
+billing.tax_identifier = "brazilian-cpf-value"
+billing.tax_identifier_type = "cpf"
 
-List<SubscriptionPurchase> subs = new ArrayList<>();
-SubscriptionPurchase sub = new SubscriptionPurchase();
-sub.setPlanCode("coffee-monthly");
-subs.add(sub);
-purchase.setSubscriptions(subs);
+account.billing_info = billing
+purchase.account = account
+
+sub = SubscriptionPurchase.new
+sub.plan_code = "coffee-monthly"
+purchase.subscriptions = [sub]
 
 InvoiceCollection collection = client.createPurchase(purchase);
 ```
@@ -166,6 +167,7 @@ var purchaseReq = new PurchaseCreate()
         FirstName = "Benjamin",
         LastName = "Du Monde",
         Email = "bdumonde@example.com",
+        Type = "pix-automatico",
         BillingInfo = new BillingInfoCreate()
         {
             Street1 = "Avenida Nipo-brasileira 1007",
@@ -173,18 +175,17 @@ var purchaseReq = new PurchaseCreate()
             Region = "BR",
             PostalCode = "123456",
             Country = "BR",
-            Phone = "1234679099"
-        },
-        Type = "pix-automatico",
-        TaxIdentifier = "brazilian-cpf-value",
-        TaxIdentifierType = "cpf"
+            Phone = "1234679099",
+            TaxIdentifier = "brazilian-cpf-value",
+            TaxIdentifierType = "cpf"
+        }
     },
+    
     Subscriptions = new List<SubscriptionPurchase>()
     {
-        new SubscriptionPurchase() { PlanCode = "coffee-monthly" }
+        new SubscriptionPurchase { PlanCode = "coffee-monthly" }
     }
 };
-
 InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 ```
 
