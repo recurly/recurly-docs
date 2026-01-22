@@ -198,7 +198,7 @@ Find additional guidance in the [technical documentation](https://developers.rec
 4. Ensure you have event notifications enabled such as Refunds, Chargebacks (for SEPA / ACH), and other notifications. To take advantage of future improvements, enable everything. We will ignore or use what we need to accomplish asynchronous actions such as invoice updates and Direct Debit status updates.
    1. Implement callback configurations using the URLs [https://callbacks.recurly.com/worldpay/your-subdomain](https://callbacks.recurly.com/worldpay) for notifications you wish to receive. For those with data in European Union (EU) data centers, utilize [https://callbacks.eu.recurly.com/worldpay/your-subdomain](https://callbacks.eu.recurly.com/worldpay) instead.
 5. It's advisable to set up WorldPay to forward notifications to Recurly, ensuring alignment between Recurly's transaction records and WorldPay's.
-6. Ensure, if you are processing MOTO transactions, that your WorldPay gateway is set up to allow the `dynamicInteractionType` parameter to be sent via API to WorldPay, otherwise transactions will fail.
+6. Ensure, if you are processing MOTO transactions, that your WorldPay gateway is set up to allow the `dynamicInteractionType` parameter to be sent via API to WorldPay, otherwise transactions will fail. You will need to speak to your WorldPay representative to enable permissions for this field at WorldPay.
 
 ### Configuration in Recurly
 
