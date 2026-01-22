@@ -11,6 +11,11 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+<Callout icon="🚀">
+  **Early Access**
+  Checkout.com is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
+</Callout>
+
 ### Limitations
 
 <Callout icon="📘" theme="info">
