@@ -26,21 +26,339 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## January
 
-| Release Date | **Feature**                 | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                       |
-| :----------- | :-------------------------- | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Jan 21       | **WorldPay Gateway**        | Low                  | Sandbox accounts only will be updated to take advantage of behind-the-scenes improvements. if any issues arise, they will corrected prior to production updates.                                                                                                                                                                                                 |
-| Jan 20       | **Subscriptions**           | Low                  | Introducing new functionality that will apply proration when changing a subscription's bill date.  This is available in the UI and V3 API.                                                                                                                                                                                                                       |
-| Jan 20       | **Adyen Gateway**           | Medium               | Updated handling of refunds when using separate Auth and Capture to avoid settlement issues.                                                                                                                                                                                                                                                                     |
-| Jan 20       | **Data Exports**            | Low                  | The Revenue recognition schedules export will be deprecated as this export is related to the legacy Revenue Recognition feature which has also been sunsetted.                                                                                                                                                                                                   |
-| Jan 13       | **WorldPay Gateway**        | Low                  | Minor updates behind-the-scenes are being released to improve the gateway performance overall. No impact is expected with these upgrades.                                                                                                                                                                                                                        |
-| Jan 13       | **Business Entity Updates** | Low                  | The Business Entity UI in Recurly App will now support adding your MCC (Merchant Category Code) to your entities. Please ensure you have this data set accurately as it will be used for nuanced payment processing in the future.                                                                                                                               |
-| Jan 13       | **Card Brand Updates**      | Medium               | We will be updating handling of certain ELO Bins to avoid Discover classification to certain gateways.                                                                                                                                                                                                                                                           |
-| Jan 13       | **Ebanx Gateway**           | Medium               | We will be enabling the ability to set Account Credits on an account when a UPI, Pix, or Mercado Pago billing mandate is present on the account. Keep in mind, it is not supported to sign up for a mandate-reliant subscription with Account Credits or coupons that cover the entire initial amount, but partial credits and coupons are supported.            |
-| Jan 13       | **Check Commerce Gateway**  | Low                  | We'll be exposing a field in gateway configuration for this gateway so that Merchants can set their highest transaction amount per their gateway contract. This should be set, else the maximum is 5000.00 per invoice. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/check-commerce">Check Commerce</a>  documentation for more information. |
-| Jan 12       | **Analytics**               | Low                  | In the Analytics Billings dashboards, if the transaction billing country is not available, then the issuer country will be used in the underlying data.                                                                                                                                                                                                          |
-| Jan 6        | **Recurly Engage**          | Low                  | Added user traits to the "User Look Up" profile view, allowing administrators to easily verify imported user data and confirm values for dynamic variables directly within the UI.                                                                                                                                                                               |
-| Jan 6        | **Recurly Engage**          | Low                  | Introduced a bulk editing feature that enables users to apply or modify tags across multiple prompts simultaneously, streamlining the management of large-scale campaigns.                                                                                                                                                                                       |
-| Jan 6        | **Recurly Engage**          | Low                  | Upgraded prompt reporting to support detailed performance breakdowns by segment, locale, and device category, providing deeper visibility into how localized content performs across different markets.                                                                                                                                                          |
+<Table align={["left","left","left","left"]}>
+  <thead>
+    <tr>
+      <th>
+        Release Date
+      </th>
+
+      <th>
+        **Feature**
+      </th>
+
+      <th>
+        **Potential Impact**
+      </th>
+
+      <th>
+        **Description / Overview**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        Jan 27
+      </td>
+
+      <td>
+        **Stripe Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Updated handling of line items on Stripe to avoid a rare collision when using Stripe Elements.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 27
+      </td>
+
+      <td>
+        **Checkout.com Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        A brand new integration will be launched including support for Cards, Apple Pay and Google Pay. **Checkout.com** is a high performance gateway known for enterprise level support, and works as a modular and robust option for merchants looking for high volume and global reach.  Read more about our solution in our <a href="https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom">Checkout.com documentation</a>.
+
+        This gateway is part of Recurly's new Early Access Program. If you'd like to be part of this EA program, please reach out to our Support team. 
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 27
+      </td>
+
+      <td>
+        **Nuvei Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        A brand new integration will be launched including support for Cards, Apple Pay and Google Pay. Nuvei is a flexible, global platform offering comprehensive payment options at scale for physical and digital goods.  Nuvei is particularly good for businesses wanting to scale rapidly or handle complex, cross-border payments through a single vendor. Read more about our solution in our <a href="https://docs.recurly.com/recurly-subscriptions/docs/nuvei">Nuvei documentation</a>.
+
+        This gateway is part of Recurly's new Early Access Program. If you'd like to be part of this EA program, please reach out to our Support team.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 27
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Adjustments will be made to MOTO handling to avoid errors caused by a lack of merchant permissions at the gateway level. Merchants who wish to use MOTO should speak with WorldPay specifically to enable `Allow Dynamic Interaction` permissions for their gateway account to avoid errors.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 21
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Sandbox accounts only will be updated to take advantage of behind-the-scenes improvements. if any issues arise, they will corrected prior to production updates.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 20
+      </td>
+
+      <td>
+        **Subscriptions**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introducing new functionality that will apply proration when changing a subscription's bill date.  This is available in the UI and V3 API.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 20
+      </td>
+
+      <td>
+        **Adyen Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        Updated handling of refunds when using separate Auth and Capture to avoid settlement issues.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 20
+      </td>
+
+      <td>
+        **Data Exports**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        The Revenue recognition schedules export will be deprecated as this export is related to the legacy Revenue Recognition feature which has also been sunsetted.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 13
+      </td>
+
+      <td>
+        **WorldPay Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Minor updates behind-the-scenes are being released to improve the gateway performance overall. No impact is expected with these upgrades.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 13
+      </td>
+
+      <td>
+        **Business Entity Updates**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        The Business Entity UI in Recurly App will now support adding your MCC (Merchant Category Code) to your entities. Please ensure you have this data set accurately as it will be used for nuanced payment processing in the future.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 13
+      </td>
+
+      <td>
+        **Card Brand Updates**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We will be updating handling of certain ELO Bins to avoid Discover classification to certain gateways.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 13
+      </td>
+
+      <td>
+        **Ebanx Gateway**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        We will be enabling the ability to set Account Credits on an account when a UPI, Pix, or Mercado Pago billing mandate is present on the account. Keep in mind, it is not supported to sign up for a mandate-reliant subscription with Account Credits or coupons that cover the entire initial amount, but partial credits and coupons are supported.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 13
+      </td>
+
+      <td>
+        **Check Commerce Gateway**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        We'll be exposing a field in gateway configuration for this gateway so that Merchants can set their highest transaction amount per their gateway contract. This should be set, else the maximum is 5000.00 per invoice. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/check-commerce">Check Commerce</a>  documentation for more information.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 12
+      </td>
+
+      <td>
+        **Analytics**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        In the Analytics Billings dashboards, if the transaction billing country is not available, then the issuer country will be used in the underlying data.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 6
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Added user traits to the "User Look Up" profile view, allowing administrators to easily verify imported user data and confirm values for dynamic variables directly within the UI.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 6
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Introduced a bulk editing feature that enables users to apply or modify tags across multiple prompts simultaneously, streamlining the management of large-scale campaigns.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 6
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Upgraded prompt reporting to support detailed performance breakdowns by segment, locale, and device category, providing deeper visibility into how localized content performs across different markets.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 # 2025
 
