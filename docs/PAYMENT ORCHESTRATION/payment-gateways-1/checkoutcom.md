@@ -7,14 +7,14 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
-
-<Callout icon="🚀">
+<Callout icon="🚀" theme="default">
   **Early Access**
   Checkout.com is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
 </Callout>
+
+### Required plan
+
+This feature or setting is available to all customers on any Recurly subscription plan.
 
 ### Limitations
 
