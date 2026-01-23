@@ -61,8 +61,16 @@ To enable seamless communication between Recurly and your Checkout.com account, 
   * Your Acquirer BIN (6 digits)
   * Your Acquirer Merchant ID
   * Your Acquirer Country
+* To create your Source Verification Key, you must set up Webhooks within Checkout. Proceed to Step 2.
 
-### Step 2: Enter your Checkout.com Credentials in your Recurly site
+### Step 2: Configure Webhooks in Checkout.com
+
+* Navigate to **Developers > Webhooks** and select 'Create configuration'. 
+* Enter a descriptive name, and the webhook destination URL as follows: https://callbacks.recurly.com/checkout/{{your-subdomain}}
+* You will select specific event types -- to avoid having to make changes in the future, simply select all events. At minimum ensure you have payment events and dispute events. 
+* Keep your Signature key (Source Verification Key) for setup inside Recurly.
+
+### Step 3: Enter your Checkout.com Credentials in your Recurly site
 
 * Navigate to **Configuration > Payment Gateways**and **Select** Checkout.com from the options available.
 * Enter the details you've obtained from your Checkout.com configuration into the following fields:
@@ -71,7 +79,7 @@ To enable seamless communication between Recurly and your Checkout.com account, 
   * Your API Secret Key
   * Your Source Verification Key
 
-### Step 3: Enable 3D Secure
+### Step 4: Enable 3D Secure
 
 If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well as enter the following details.
 
@@ -80,13 +88,13 @@ If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well 
 * Your Acquirer BIN, Acquirer Merchant ID, and Acquirer Country.
 * You can obtain these by speaking to Checkout.com directly.
 
-### Step 4: Enable Currencies
+### Step 5: Enable Currencies
 
 You can add as well as **change** which currencies your Checkout.com gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
 <Image align="center" border={true} width="50% " src="https://files.readme.io/c4a227a-image.png" className="border" />
 
-### Step 5: Add or Update your gateway
+### Step 6: Add or Update your gateway
 
 Once your configuration is set up the way you would prefer, **click** ‘Add Payment Gateway’. If you are editing your implementation, the button will state ‘Update Payment Gateway’.
 
