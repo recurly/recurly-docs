@@ -38,7 +38,7 @@ For pricing and signup information for a new production Checkout.com account, pl
 | Features & Specifications       | Description / Availability                                                                                                                   |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Services that work with Recurly | Recurring Subscriptions, Payments (eCommerce and [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)), 3D Secure |
-| Supported Operations            | Authorize and Capture, Purchase, Refund, Verify, Void                                                                                        |
+| Supported Operations            | Authorize and Capture, Purchase, Refund, Verify, Void, Recurring, Unscheduled MIT                                                            |
 | Supported Payment Types         | Credit Card, Apple Pay, Google Pay                                                                                                           |
 | Supported Card Brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club, Union Pay                                                                                |
 | Gateway Specific 3DS2 Supported | Yes                                                                                                                                          |
