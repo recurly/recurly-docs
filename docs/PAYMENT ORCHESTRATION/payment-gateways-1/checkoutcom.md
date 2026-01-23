@@ -1,7 +1,7 @@
 ---
 title: Checkout.com
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
