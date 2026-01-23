@@ -62,7 +62,14 @@ To enable seamless communication between Recurly and your Nuvei account, it is e
   * Your Acquirer Merchant ID
   * Your Acquirer Country
 
-### Step 2: Enter your Nuvei Credentials in your Recurly site
+### Step 2: Setup Nuvei Webhooks 
+
+* Log into the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
+* Locate the specific events and enter the webhook endpoint as follows: https://callbacks.recurly.com/nuvei/{{your-subdomain}}. You may need to repeat this step multiple times. 
+* Ensure the status is toggled to ON.
+* Specific events: Chargeback, Chargeback/Dispute
+
+### Step 3: Enter your Nuvei Credentials in your Recurly site
 
 * Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
 * Enter the details you've obtained from your Nuvei configuration into the following fields:
@@ -71,7 +78,7 @@ To enable seamless communication between Recurly and your Nuvei account, it is e
   * Your Secret Key
   * Your Source Verification Key
 
-### Step 3: Enable 3D Secure
+### Step 4: Enable 3D Secure
 
 If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well as enter the following details.
 
@@ -80,13 +87,13 @@ If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well 
 * Your Acquirer BIN, Acquirer Merchant ID, and Acquirer Country.
 * You can obtain these by speaking to Nuvei directly.
 
-### Step 4: Enable Currencies
+### Step 5: Enable Currencies
 
 You can add as well as **change** which currencies your Nuvei gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
 <Image align="center" border={true} width="50% " src="https://files.readme.io/c4a227a-image.png" className="border" />
 
-### Step 5: Add or Update your gateway
+### Step 6: Add or Update your gateway
 
 Once your configuration is set up the way you would prefer, **click** ‘Add Payment Gateway’. If you are editing your implementation, the button will state ‘Update Payment Gateway’.
 
