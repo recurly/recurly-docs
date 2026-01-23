@@ -41,7 +41,7 @@ For pricing and signup information for a new production Checkout.com account, pl
 | Supported Operations            | Authorize and Capture, Purchase, Refund, Verify, Void, Recurring, Unscheduled MIT                                                            |
 | Supported Payment Types         | Credit Card, Apple Pay, Google Pay                                                                                                           |
 | Supported Card Brands           | Visa, MasterCard, Amex, Discover, JCB, Diners Club, Union Pay                                                                                |
-| Gateway Specific 3DS2 Supported | Yes                                                                                                                                          |
+| Unified 3DS2 Supported          | Yes                                                                                                                                          |
 | Card on File Supported          | Yes                                                                                                                                          |
 | Regions                         | Worldwide                                                                                                                                    |
 | Currencies                      | All supported currencies.                                                                                                                    |
