@@ -54,6 +54,60 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        You can now filter your prompts using the new Engagement Category filter on the All Prompts page. This allows you to quickly sort content by categories such as Acquisition, Retention, or Upsell, including a "None" option for uncategorized prompts.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 27
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        We have introduced the ability to update Engagement Categories for multiple prompts simultaneously. By selecting a group of prompts, you can now assign a single category to all of them in one action, significantly reducing manual configuration time.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 27
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        Survey prompts now support "If selected option is" logic for Connector Actions. This enables you to trigger specific events, such as 1-click offers, directly based on a user’s unique survey response without needing complex workarounds.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 27
+      </td>
+
+      <td>
         **Stripe Gateway**
       </td>
 
