@@ -82,7 +82,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       <td>
         A brand new integration will be launched including support for Cards, Apple Pay and Google Pay. **Checkout.com** is a high performance gateway known for enterprise level support, and works as a modular and robust option for merchants looking for high volume and global reach.  Read more about our solution in our <a href="https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom">Checkout.com documentation</a>.
 
-        This gateway is part of Recurly's new Early Access Program. If you'd like to be part of this EA program, please reach out to our Support team. 
+        This gateway is part of Recurly's new Early Access Program. If you'd like to be part of this EA program, please reach out to our Support team.
       </td>
     </tr>
 
@@ -193,6 +193,42 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
       <td>
         The Revenue recognition schedules export will be deprecated as this export is related to the legacy Revenue Recognition feature which has also been sunsetted.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 20
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Medium
+      </td>
+
+      <td>
+        You can now assign specific categories (such as Acquisition, Retention, Upgrade, Winback & Engagement) to your prompts and guides during configuration. This classification provides clearer insights into your "Prompt Success Rate" by use case, helping you better measure the impact of your engagement strategies on revenue
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Jan 20
+      </td>
+
+      <td>
+        **Recurly Engage**
+      </td>
+
+      <td>
+        Low
+      </td>
+
+      <td>
+        For users with multiple subscriptions, you can now target specific attributes and create more granular segments based on subscription type. This allows for more personalized outreach, such as applying targeted coupons to one specific product while defaulting to a user's latest subscription.
       </td>
     </tr>
 
