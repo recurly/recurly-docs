@@ -1,5 +1,8 @@
 ---
 title: Nuvei
+excerpt: >-
+  Set up Nuvei in Recurly to process cards and wallets, enable 3D Secure, and
+  meet browser data requirements.
 deprecated: false
 hidden: false
 metadata:
