@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-<Callout icon="👍">
+<Callout icon="👍" theme="okay">
   **Early Access**
   Checkout.com is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
 </Callout>
@@ -95,7 +95,7 @@ If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well 
 
 You can add as well as **change** which currencies your Checkout.com gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/c4a227a-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/c4a227a-image.png" className="border" />
 
 ### Step 6: Add or Update your gateway
 
