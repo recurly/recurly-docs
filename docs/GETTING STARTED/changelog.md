@@ -174,7 +174,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Adjustments will be made to MOTO handling to avoid errors caused by a lack of merchant permissions at the gateway level. Merchants who wish to use MOTO should speak with WorldPay specifically to enable `Allow Dynamic Interaction` permissions for their gateway account to avoid errors.
+        Adjustments will be made to transaction handling to avoid errors caused by a lack of merchant permissions at the gateway level. Merchants who wish to use MOTO should speak with WorldPay specifically to enable `Allow Dynamic Interaction` permissions for their gateway account to avoid errors.
       </td>
     </tr>
 
