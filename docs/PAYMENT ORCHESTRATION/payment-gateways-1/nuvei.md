@@ -7,7 +7,7 @@ metadata:
 ---
 # Overview
 
-<Callout icon="🚀" theme="default">
+<Callout icon="👍">
   **Early Access**
   Nuvei is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
 </Callout>
@@ -19,7 +19,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Limitations
 
 <Callout icon="📘" theme="info">
-  **Important Note**
+  ## **Important note**:
 
   Nuvei gateway requires Browser Information in all transactions, so using Recurly.js for new signups and new billing information entry, such as billing info updates, regardless of 3DS usage, is important. You may use Recurly.js for either by following our standard guides for 3DS with Recurly.js. If you need 3DS on known billing information, you may also find our guide for known billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
 </Callout>
@@ -51,7 +51,7 @@ For pricing and signup information for a new production Nuvei account, please ch
 
 To enable seamless communication between Recurly and your Nuvei account, it is essential to configure your API credentials within Recurly.
 
-### Step 1: Obtain your Nuvei Credentials
+### Step 1: Obtain your Nuvei credentials
 
 * You'll need to obtain your credentials from your Nuvei account directly, and ensure you have them available for entry in Step 2.
   * From the REST API **Configuration** tab, click **Generate New API Key**.
@@ -62,14 +62,14 @@ To enable seamless communication between Recurly and your Nuvei account, it is e
   * Your Acquirer Merchant ID
   * Your Acquirer Country
 
-### Step 2: Setup Nuvei Webhooks 
+### Step 2: Setup Nuvei webhooks
 
 * Log into the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
-* Locate the specific events and enter the webhook endpoint as follows: https://callbacks.recurly.com/nuvei/{{your-subdomain}}. You may need to repeat this step multiple times. 
+* Locate the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}](https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}). You may need to repeat this step multiple times.
 * Ensure the status is toggled to ON.
 * Specific events: Chargeback, Chargeback/Dispute
 
-### Step 3: Enter your Nuvei Credentials in your Recurly site
+### Step 3: Enter your Nuvei credentials in your Recurly site
 
 * Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
 * Enter the details you've obtained from your Nuvei configuration into the following fields:
@@ -87,11 +87,11 @@ If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well 
 * Your Acquirer BIN, Acquirer Merchant ID, and Acquirer Country.
 * You can obtain these by speaking to Nuvei directly.
 
-### Step 5: Enable Currencies
+### Step 5: Enable currencies
 
 You can add as well as **change** which currencies your Nuvei gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/c4a227a-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/c4a227a-image.png" className="border" />
 
 ### Step 6: Add or Update your gateway
 
