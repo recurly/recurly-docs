@@ -121,7 +121,7 @@ If you haven't already, you can block mismatched Address and CVV code results on
 3. **Set** the Radio Button option to ‘Enabled’. When Enabled, invalid or mismatched CVV code submissions will be rejected based on feedback from the card Issuer.
 4. **Click** `Save Changes`.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/9306094-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/9306094-image.png" className="border" />
 
 ### Test your integration
 
