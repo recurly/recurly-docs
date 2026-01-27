@@ -12,7 +12,10 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s V3 API, and basic REST concepts
+* Familiarity with Recurly's taxation offerings: 
+  * <br />
 * [Completed the Quickstart Guide](https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/)
+* [Completed the Coupons and discounts guide](https://docs.recurly.com/recurly-subscriptions/docs/coupons-and-discounts-guide)
 * A supported gateway account. Check your individual gateway for L2/3 Support.
 
 <br />
