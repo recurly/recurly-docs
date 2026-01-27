@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-<Callout icon="👍">
+<Callout icon="👍" theme="okay">
   **Early Access**
   Nuvei is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
 </Callout>
@@ -67,14 +67,14 @@ To enable seamless communication between Recurly and your Nuvei account, it is e
 
 ### Step 2: Setup Nuvei webhooks
 
-* Log into the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
-* Locate the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}](https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}). You may need to repeat this step multiple times.
-* Ensure the status is toggled to ON.
+* **Log into** the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
+* **Locate** the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}](https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}). You may need to repeat this step multiple times.
+* **Ensure** the status is toggled to ON.
 * Specific events: Chargeback, Chargeback/Dispute
 
 ### Step 3: Enter your Nuvei credentials in your Recurly site
 
-* Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
+* **Navigate** to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
 * Enter the details you've obtained from your Nuvei configuration into the following fields:
   * Your Merchant ID
   * Your Site ID
@@ -138,7 +138,7 @@ If you haven't already, you can block mismatched Address and CVV code results on
 
 This guide is designed to walk you through the process of integrating  Nuvei with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Nuvei representative or Recurly support for any specific questions or issues related to your integration.
 
-## Production and Sandbox Behavior
+## Production and Sandbox behavior
 
 Production and Sandbox environments are entirely different endpoints and systems. If you create a Nuvei gateway account while your site is in Production or Sandbox mode, you can control whether or not these transactions are using the sandbox / production endpoints easily.
 
