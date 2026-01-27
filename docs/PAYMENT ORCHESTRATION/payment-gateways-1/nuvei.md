@@ -49,7 +49,7 @@ For pricing and signup information for a new production Nuvei account, please ch
 | Card on File Supported          | Yes                                                                                                                                          |
 | Regions                         | Worldwide                                                                                                                                    |
 | Currencies                      | All supported currencies.                                                                                                                    |
-| Additional Feature Support      | Billing and Shipping Information, Level 2 Data, Visa Trial Descriptors,  AVS / CVV Checks, and Line Item Passthrough                         |
+| Additional Feature Support      | Billing and Shipping Information, Level 2 Data, Dynamic Descriptors,  AVS / CVV Checks, and Line Item Passthrough                            |
 
 # Setup Nuvei with Recurly
 
