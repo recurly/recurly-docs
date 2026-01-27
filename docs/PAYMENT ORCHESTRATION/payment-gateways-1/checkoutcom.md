@@ -19,7 +19,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Limitations
 
 <Callout icon="📘" theme="info">
-  **Important Note**
+  ## **Important note:**
 
   Checkout.com gateway requires Browser Information in all transactions, so using Recurly.js for new signups and new billing information entry, such as billing info updates, regardless of 3DS usage, is important. You may use Recurly.js for either by following our standard guides for 3DS with Recurly.js. If you need 3DS on known billing information, you may also find our guide for known billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
 </Callout>
@@ -50,11 +50,11 @@ For pricing and signup information for a new production Checkout.com account, pl
 
 To enable seamless communication between Recurly and your Checkout.com account, it is essential to configure your API credentials within Recurly.
 
-### Step 1: Obtain your Checkout.com Credentials
+### Step 1: Obtain your Checkout.com credentials
 
 * You'll need to obtain your credentials from your Checkout.com account directly, and ensure you have them available for entry in Step 2.
-  * Sign in to your Checkout.com dashboard and click **Developers** from the top navigation and click **Keys**.
-  * Select **Create a new key**. When creating keys, it is not advised to _Customize_ your key permissions unless you are certain no functionality is blocked by the scopes chosen.
+  * **Sign in** to your Checkout.com dashboard and click **Developers** from the top navigation and click **Keys**.
+  * **Select** **Create a new key**. When creating keys, it is not advised to _Customize_ your key permissions unless you are certain no functionality is blocked by the scopes chosen.
     * **Note**: If you must limit scopes, ensure you have at least payments, gateway, disputes, search, and risk enabled. While we do not support all of these options presently, we want to ensure no limitations or issues arise from required key changes for future iterations of this gateway.
 * You can find distinct documentation on Checkout.com website: [Access and/or Create API Credentials](https://support.checkout.com/hc/en-us/articles/14327309405842-Create-new-API-keys) and in [Dashboard documentation](https://www.checkout.com/docs/business-operations/use-the-dashboard/developers#Manage_API_authentication) for Checkout.
 * **Note:** If you intend to use 3DS, you will also need the following information:
@@ -63,17 +63,17 @@ To enable seamless communication between Recurly and your Checkout.com account, 
   * Your Acquirer Country
 * To create your Source Verification Key, you must set up Webhooks within Checkout. Proceed to Step 2.
 
-### Step 2: Configure Webhooks in Checkout.com
+### Step 2: Configure webhooks in Checkout.com
 
-* Navigate to **Developers > Webhooks** and select 'Create configuration'. 
-* Enter a descriptive name, and the webhook destination URL as follows: https://callbacks.recurly.com/checkout/{{your-subdomain}}
-* You will select specific event types -- to avoid having to make changes in the future, simply select all events. At minimum ensure you have payment events and dispute events. 
-* Keep your Signature key (Source Verification Key) for setup inside Recurly.
+* **Navigate** to **Developers > Webhooks** and select 'Create configuration'.
+* **Enter** a descriptive name, and the webhook destination URL as follows: [https://callbacks.recurly.com/checkout/\{\{your-subdomain}}](https://callbacks.recurly.com/checkout/\{\{your-subdomain}})
+* You will select specific event types. To avoid having to make changes in the future, simply select all events. At minimum ensure you have payment events and dispute events.
+* **Keep** your Signature key (Source Verification Key) for setup inside Recurly.
 
-### Step 3: Enter your Checkout.com Credentials in your Recurly site
+### Step 3: Enter your Checkout.com credentials in your Recurly site
 
-* Navigate to **Configuration > Payment Gateways**and **Select** Checkout.com from the options available.
-* Enter the details you've obtained from your Checkout.com configuration into the following fields:
+* **Navigate** to **Configuration > Payment Gateways**and **Select** Checkout.com from the options available.
+* **Enter** the details you've obtained from your Checkout.com configuration into the following fields:
   * Your API Public Key
   * Your Channel ID
   * Your API Secret Key
@@ -136,7 +136,7 @@ If you haven't already, you can block mismatched Address and CVV code results on
 
 This guide is designed to walk you through the process of integrating  Checkout.com with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Checkout.com representative or Recurly support for any specific questions or issues related to your integration.
 
-## Production and Sandbox Behavior
+## Production and Sandbox behavior
 
 Production and Sandbox environments are entirely different endpoints and systems. If you create a Checkout.com gateway account while your site is in Production or Sandbox mode, you can control whether or not these transactions are using the sandbox / production endpoints easily.
 
