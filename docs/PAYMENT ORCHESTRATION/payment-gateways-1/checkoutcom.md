@@ -1,5 +1,8 @@
 ---
 title: Checkout.com
+excerpt: >-
+  Connect Checkout.com to Recurly for card and wallet payments, 3D Secure, and
+  webhook-based verification.
 deprecated: false
 hidden: false
 metadata:
@@ -7,7 +10,7 @@ metadata:
 ---
 # Overview
 
-<Callout icon="🚀" theme="default">
+<Callout icon="👍">
   **Early Access**
   Checkout.com is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
 </Callout>
