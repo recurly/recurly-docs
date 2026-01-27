@@ -67,14 +67,14 @@ To enable seamless communication between Recurly and your Nuvei account, it is e
 
 ### Step 2: Setup Nuvei webhooks
 
-* **Log into** the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
-* **Locate** the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}](https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}). You may need to repeat this step multiple times.
-* **Ensure** the status is toggled to ON.
+* Log into the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
+* Locate the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}](https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}). You may need to repeat this step multiple times.
+* Ensure the status is toggled to ON.
 * Specific events: Chargeback, Chargeback/Dispute
 
 ### Step 3: Enter your Nuvei credentials in your Recurly site
 
-* **Navigate** to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
+* Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
 * Enter the details you've obtained from your Nuvei configuration into the following fields:
   * Your Merchant ID
   * Your Site ID
