@@ -46,6 +46,9 @@ Level 3 Data consists of Level 1 + 2 data, plus a lot more, including line items
 
 * **Line Items**: you will want to ensure you are sending quality line item data, and not generic information. Visa will be looking for quality of data, not just quantity of data. Read more about CEDP specifics in our [LIne Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items) documentation. You may pass line items by setting up your catalog within your Recurly site, or passing in the data dynamically via API.
   * You will need to specify the product code, description, quantity, and if necessary, the HS/Commodity Code value. **You may not pass all zeroes**, and it is recommended to use the HS/Commodity Code values from one of our Tax Integrations such as Avalara or Vertex, or use the HS/Commodity Code lists available online.
+  * HS Codes are supported on line item add-ons, and Plans: 
+    * [Add-Ons](https://docs.recurly.com/recurly-subscriptions/docs/add-ons)
+    * [Plans](https://docs.recurly.com/recurly-subscriptions/docs/plans)
 * **Shipping Costs**: See our documentation on how to pass shipping costs in our dedicated [Shipping Fees ](https://docs.recurly.com/recurly-subscriptions/docs/shipping)documentation.
 * **Shipping Address** for the Consumer: See our documentation on how to pass shipping addresses in our dedicated [Shipping Addresses ](<* https://docs.recurly.com/recurly-subscriptions/docs/shipping-addresses>)documentation.
 * All other required data is derived from your Recurly account or line item catalog setup.
