@@ -39,7 +39,7 @@ The integration of Checkout.com with Recurly facilitates a smooth pathway for ma
 For pricing and signup information for a new production Checkout.com account, please check with your gateway provider point of contact.
 
 | Features & Specifications       | Description / Availability                                                                                                                   |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
 | Services that work with Recurly | Recurring Subscriptions, Payments (eCommerce and [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/)), 3D Secure |
 | Supported Operations            | Authorize and Capture, Purchase, Refund, Verify, Void, Recurring, Unscheduled MIT                                                            |
 | Supported Payment Types         | Credit Card, Apple Pay, Google Pay                                                                                                           |
@@ -48,6 +48,7 @@ For pricing and signup information for a new production Checkout.com account, pl
 | Card on File Supported          | Yes                                                                                                                                          |
 | Regions                         | Worldwide                                                                                                                                    |
 | Currencies                      | All supported currencies.                                                                                                                    |
+| Additional Feature Support      | Billing and Shipping Information, Level 2 Data, Dynamic Descriptors,  AVS / CVV Checks, and Line Item Passthrough                            |
 
 # Setup Checkout.com with Recurly
 
