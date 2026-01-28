@@ -40,7 +40,7 @@ Since `gateway_code` may be deprecated in the future, using `payment_gateway_ref
 
 * FreedomPay
 * Adyen
-* Stripe
+* Stripe*
 * Commerce Hub
 * Braintree
 
@@ -101,7 +101,7 @@ It’s recommended, at this point, to store the billing info ID for the next ste
 
 ```
 
-**Note:** In place of the gateway_token parameter you may pass the payment_gateway_references.token value instead.
+**Note:** In place of the gateway_token parameter you may pass the `payment_gateway_references.token` value instead.
 
 ```json
 "payment_gateway_references": [{
