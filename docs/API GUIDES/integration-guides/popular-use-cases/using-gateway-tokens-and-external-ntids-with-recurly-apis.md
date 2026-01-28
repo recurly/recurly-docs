@@ -40,7 +40,6 @@ Since `gateway_code` may be deprecated in the future, using `payment_gateway_ref
 
 * FreedomPay
 * Adyen
-* Stripe*
 * Commerce Hub
 * Braintree
 
