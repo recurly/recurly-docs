@@ -55,7 +55,7 @@ Renowned for its payment processing services, [Authorize.net](https://docs.recur
 
 Check Commerce specializes in ACH payment processing to offer alternative payment solutions.
 
-### Checkout.com 
+### Checkout.com
 
 [Checkout.com](https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom) specializes in global processing for Enterprise merchants.
 
@@ -80,6 +80,8 @@ Check Commerce specializes in ACH payment processing to offer alternative paymen
 [FreedomPay](https://docs.recurly.com/docs/freedompay#/) is a gateway specializing in Omnichannel transaction processing. Your customers can sign up for subscriptions on a card-present terminal and their renewal will process within Recurly.
 
 ### Nuvei
+
+[Nuvei](https://docs.recurly.com/recurly-subscriptions/docs/nuvei) offers seamless global processing and streamlines renewals at a global scale.
 
 ### PayPal Complete
 
