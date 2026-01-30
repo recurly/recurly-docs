@@ -38,6 +38,7 @@ Please be aware of the following limitations of **AVS** and **CVV** rejection ru
 * Only certain gateways are supported: Adyen, Authorize.net, Chase Orbital, PayPal Complete, Stripe, TSYS.
   * Cybersource's AVS rules are located in the gateway configuration page.
 * Only applicable to Credit Card payments
+* Approved transactions that receive a mismatched CVV or AVS rule will be voided if enabled.
 
 Please be aware of the following limitations of **Account Updater**:
 
@@ -93,18 +94,18 @@ To learn more about Account Updater, visit our dedicated page on the<a href="htt
 
 1. If you have not yet signed up for a Recurly Plan, you will see this message.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f4acf3a-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/f4acf3a-image.png" className="border" />
 
 2. Once you have signed up for a Recurly subscription and have a credit card supported gateway enabled, you will see an Enable button in order to start the enrollment process.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/e84bb21-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/e84bb21-image.png" className="border" />
 
 3. **Click** ‘Enable’ and a modal will appear, and you will be required to provide additional information for certain Card Brands.
 
 * MasterCard Account Updater requires your merchant MCC (Merchant Category Code) to enroll. Your MCC will be a 4 digit code that describes what your business does and provides. For example, 5942 relates to Book Stores.
 * If you have a direct American Express account, and want to enable Account Updater for this card type, you must provide your SE (Service Establishment) Number. OptBlue accounts are not supported at this time.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/0ed852b-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/0ed852b-image.png" className="border" />
 
 If you choose not to enter the above information, only Visa and Discover will be enabled for your account.
 
@@ -112,7 +113,7 @@ If you choose not to enter the above information, only Visa and Discover will be
 
 At this point, Account Updater will be enabled for your site, and cards that are expiring soon will be sent for updates.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/0f44fa3-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/0f44fa3-image.png" className="border" />
 
 ## Enabling CVV checks
 
@@ -120,7 +121,7 @@ At this point, Account Updater will be enabled for your site, and cards that are
 2. **Ensure** your gateway is listed in the supported list and is active in your gateways.
 3. **Toggle** the setting to ‘Enabled’.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/c8ea553-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/c8ea553-image.png" className="border" />
 
 > **Note:** This is ‘Enabled’ by default on most accounts.
 
@@ -130,7 +131,7 @@ At this point, Account Updater will be enabled for your site, and cards that are
 **Ensure** your gateway is listed in the supported list and is active in your gateways.
 **Toggle** the setting to ‘Enabled’.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/4d6fe1c5919f5fcde2426a87dc4bf43f0a7e16c22d96803d27a021bc5f8b4967-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/4d6fe1c5919f5fcde2426a87dc4bf43f0a7e16c22d96803d27a021bc5f8b4967-image.png" className="border" />
 
 # FAQs
 
