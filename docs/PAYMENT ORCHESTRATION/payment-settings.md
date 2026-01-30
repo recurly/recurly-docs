@@ -38,7 +38,6 @@ Please be aware of the following limitations of **AVS** and **CVV** rejection ru
 * Only certain gateways are supported: Adyen, Authorize.net, Chase Orbital, PayPal Complete, Stripe, TSYS.
   * Cybersource's AVS rules are located in the gateway configuration page.
 * Only applicable to Credit Card payments
-* Approved transactions that receive a mismatched CVV or AVS rule will be voided if enabled.
 
 Please be aware of the following limitations of **Account Updater**:
 
@@ -124,6 +123,8 @@ At this point, Account Updater will be enabled for your site, and cards that are
 <Image align="center" border={true} src="https://files.readme.io/c8ea553-image.png" className="border" />
 
 > **Note:** This is ‘Enabled’ by default on most accounts.
+>
+> Approved transactions that receive a mismatched CVV or AVS rule will be voided if enabled.
 
 ## Enabling AVS Checks
 
