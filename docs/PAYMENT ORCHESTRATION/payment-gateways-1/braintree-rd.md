@@ -22,6 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * Braintree restricts usage of its gateway to certain business types. If your business is on the list of restricted business models described on Braintree’s <a href="https://www.braintreepayments.com/legal/acceptable-use-policy" target="_blank">Acceptance Use Policy</a>, you will not be able to use the Braintree gateway.
 * Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, gateway tokens, or are making transaction actions at the gateway, there is risk that Recurly and Braintree could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
+* While we support dynamic descriptors for Braintree, they are only supported for card payments at this time.
 
 # Definition
 
