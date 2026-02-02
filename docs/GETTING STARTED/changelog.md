@@ -24,6 +24,12 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 # 2026
 
+## February 
+
+| Release Date | **Feature**           | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                       |
+| :----------- | :-------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Feb 3        | **Braintree Gateway** | Low                  | You can now enable Zero Dollar Authentication (ZDA / verifications) on Braintree when using Discover and American Express. This allows you to run trials and billing info updates without a 1.00 Authorization. Per Braintree's guidance, American Express will process 1 penny. |
+
 ## January
 
 <Table align={["left","left","left","left"]}>
