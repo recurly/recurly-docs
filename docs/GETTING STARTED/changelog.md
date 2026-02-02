@@ -24,7 +24,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 # 2026
 
-## February 
+## February
 
 | Release Date | **Feature**           | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | :----------- | :-------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -4095,24 +4095,24 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 1/31/19: Added option to change the sidebar color of your Recurly site. (The sidebar is the section on the left with site navigation links.) Currently, your Recurly sidebar is purple. Now, Recurly provides three new color options: teal, blue, and steel grey. More information [here](https://docs.recurly.com/v1.0/docs/site-settings)
 * 1/31/19: Increased the number of [custom fields](https://docs.recurly.com/v1.0/docs/custom-fields) available by plan.
 
-## 2018
+# 2018
 
-### December
+## December
 
 * 12/13/18: Recurly announces support for our Custom Gateway Routing feature, which allows allow merchants to route transactions to a specific payment gateway. [Learn more](https://docs.recurly.com/docs/custom-gateway-routing-configuration).
 
-### November
+## November
 
 * 11/29/18: Added support for the Icelandic Krona (ISK) on the Wirecard gateway.
 * 11/09/18: [Recurly for Salesforce](https://docs.recurly.com/docs/salesforce) V2.24 has been released
 
-### October
+## October
 
 * 10/11/18: Support for SOFORT (Klarna Instant bank transfer) via the Adyen HPP integration.
 * 10/11/18: Recurly now supports the exporting of billing info from Adyen into Recurly for recurring subscription renewals for the SEPA payment method (includes SEPA, iDEAL, and SOFORT).
 * 10/11/18: Visa Stored Credentials Mandate: Added Ecommerce Indicators to Vantiv (Litle) Gateway.
 
-### September
+## September
 
 * 9/27/18: All sites are now able to export [custom fields](https://docs.recurly.com/docs/custom-fields) in their Accounts and Subscriptions export.
 * 9/27/18: Added support for Thai Baht (THB) currency within Recurly, and to the Adyen gateway.
@@ -4121,13 +4121,13 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 9/20/18: Only Bill What Changed now <a href="https://docs.recurly.com/docs/change-subscription#section-credit-discounts">smooths discounts on credits</a> instead of favoring the customer and only reversing a discount once necessary.
 * 9/20/18: Transaction Export: added 'gateway_code', which notes which gateway was used for each transaction.
 
-### August
+## August
 
 * 8/16/18: If you have access to Manual Invoicing, you can now set a PO Number on automatic invoices from your Admin Console.
 * 8/9/18: If the Credit Invoices feature is enabled, manual invoices can no longer be reopened from the Invoice Details page. You must void the manual transaction directly in order to reopen the invoice.
 * 8/7/18: New email parameter subscription_customer_notes to show the subscription's customer notes.
 
-### July
+## July
 
 * 7/19/18: Requiring successful transaction on subscription upgrade now also requires successful collection on all automatic collection past due invoices on the account. <a href="https://docs.recurly.com/docs/invoice-settings#section-require-paid-invoice-and-successful-transaction-on-upgrades">Learn more</a>
 * 7/12/18: Recurly is now integrated with Vertex for global tax collection on the Elite plan. <a href="https://docs.recurly.com/docs/vertex">Learn more</a>
@@ -4135,32 +4135,32 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 7/12/18: Removed the symbol data type from the invoice "origin" attribute in the charge_invoice, credit_invoice, and new_dunning_event webhooks due to a vulnerability.
 * 7/12/18: Automated Exports can now be configured via the admin console. This process was previously a custom set up. For sites on professional, Elite, and Enterprise plans, this allows you to add new exports to your configurations and bump versions of existing exports on your own.  More [HERE](https://docs.recurly.com/v1.0/docs/export-overview#section-automated-exports)
 
-### June
+## June
 
 * 6/25/18: Updates for Visa Stored Credential mandate for MIT and CIT transactions were applied to the First Data gateway.
 * 6/14/18: Add ILS Currency to WorldPay and Braintree
 
-### May
+## May
 
 * 5/14/18: NEW [Subscription history export ](https://docs.recurly.com/docs/subscription-history-export) available to all sites.  Track upgrades, downgrades, add_on changes, etc.
 * 5/11/18: Added additional payment methods to Adyen HPP, including: ACH, Qiwi, and iDEAL.
 * 5/7/18: The new <a href="https://docs.recurly.com/docs/invoices">Credit Invoices</a> feature is now automatically on new Recurly sites.
 * 5/4/18: New <a href="https://docs.recurly.com/docs/invoices">Credit Invoices</a> feature available to enable on existing Recurly sites.
 
-### April
+## April
 
 * 4/12/18: Updates for Visa Stored Credential mandate for MIT and CIT transactions were applied to Braintree, Adyen and TSYS gateways.
 * 4/12/18: Invalid Avalara credentials will no longer disable Recurly's connection with our Avalara account. <a href="https://docs.recurly.com/docs/avalara#section-invalid-avalara-credentials">Learn more</a>
 * 4/5/18: MRR on multi-currency sites now shows total across all currencies, converted into site's primary currency
 
-### March
+## March
 
 * 3/22/18: One new column added to the [Gift Cards](https://docs.recurly.com/docs/gift-cards-export) export (redemption_invoice_number)
 * 3/14/18: Added shipping address to Kount fraud check request.
 * 3/8/18: Canada is now supported on the Vantiv / Litle gateway. Recurly.JS mobile tabbing enhancement to tab into and out of RJS hosted fields.
 * 3/1/18: Added support for Czech Koruna (CZK) in Stripe. Updated Danish translations.
 
-### February
+## February
 
 * 2/22/18: Added the functionality to specify a shipping address per invoice line item when creating purchases via the /purchases API. I.e. you can specify different shipping addresses for every subscription and each one time product even if those items are all purchased at the same time. [Learn more](https://docs.recurly.com/v1.0/docs/shipping-address-per-line-item#section-shipping-addresses-per-line-item).
 * 2/22/18: Enhanced Xero integration to add the ability to sync different income accounts by plan (applies to new invoices only)
