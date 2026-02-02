@@ -30,6 +30,9 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 | :----------- | :-------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Feb 3        | **Braintree Gateway** | Low                  | You can now enable Zero Dollar Authentication (ZDA / verifications) on Braintree when using Discover and American Express. This allows you to run trials and billing info updates without a 1.00 Authorization. Per Braintree's guidance, American Express will process 1 penny. You will be able to read more about this and any additional configuration requirements in our <a href="https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd">Braintree</a> documentation post-release.                                                                                                    |
 | Feb 3        | **Adyen Gateway**     | Low                  | We will be offering Adyen's direct Realtime Account Updater feature for Adyen merchants. You will need to be using Adyen with raw credit card data (no tokens or APMs) to utilize the service. Since Adyen's service does not offer full card brand coverage, it is recommended to keep Recurly's Account Updater enabled in tandem. You will be able to read more about the service in our <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater">Account Updater</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/adyen">Adyen</a> gateway documentation. |
+| Jan 27       | **Recurly Engage**    | Low                  | You can now filter your prompts using the new Engagement Category filter on the All Prompts page. This allows you to quickly sort content by categories such as Acquisition, Retention, or Upsell, including a "None" option for uncategorized prompts.                                                                                                                                                                                                                                                                                                                                                |
+| Jan 27       | **Recurly Engage**    | Low                  | We have introduced the ability to update Engagement Categories for multiple prompts simultaneously. By selecting a group of prompts, you can now assign a single category to all of them in one action, significantly reducing manual configuration time.                                                                                                                                                                                                                                                                                                                                              |
+| Jan 27       | **Recurly Engage**    | Low                  | Survey prompts now support "If selected option is" logic for Connector Actions. This enables you to trigger specific events, such as 1-click offers, directly based on a user’s unique survey response without needing complex workarounds.                                                                                                                                                                                                                                                                                                                                                            |
 
 ## January
 
@@ -55,60 +58,6 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
   </thead>
 
   <tbody>
-    <tr>
-      <td>
-        Jan 27
-      </td>
-
-      <td>
-        **Recurly Engage**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        You can now filter your prompts using the new Engagement Category filter on the All Prompts page. This allows you to quickly sort content by categories such as Acquisition, Retention, or Upsell, including a "None" option for uncategorized prompts.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Jan 27
-      </td>
-
-      <td>
-        **Recurly Engage**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        We have introduced the ability to update Engagement Categories for multiple prompts simultaneously. By selecting a group of prompts, you can now assign a single category to all of them in one action, significantly reducing manual configuration time.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Jan 27
-      </td>
-
-      <td>
-        **Recurly Engage**
-      </td>
-
-      <td>
-        Low
-      </td>
-
-      <td>
-        Survey prompts now support "If selected option is" logic for Connector Actions. This enables you to trigger specific events, such as 1-click offers, directly based on a user’s unique survey response without needing complex workarounds.
-      </td>
-    </tr>
-
     <tr>
       <td>
         Jan 27
