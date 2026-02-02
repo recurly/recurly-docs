@@ -3897,17 +3897,17 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 7/13/21: Added dunning campaign name, code, and ID to the [Dunning Event webhook](https://developers.recurly.com/reference/webhooks/index.html#dunning-event-notifications).
 * 7/9/21: Released updated version of the Recurly for Salesforce integration that fixed a bug related to manual invoicing.  See more details [here](https://docs.recurly.com/docs/salesforcereleasenotes).
 
-### June
+## June
 
 * 6/24/21: Re-organized the elements on the Plan page in a chronological order to enhance our merchant’s experience when building, viewing, or editing Plans.
 * 6/17/21: Updated Vertex integration to break out Canadian taxes for country and state rates on customers final invoices. Invoice responses via API also support a breakout of Canadian tax rates.
 * 6/3/21: Released updated version of the Recurly for Salesforce integration. This version allows users to sync Recurly plans, add-ons, and items with Salesforce products and standard price book entries, as well as creating subscriptions and accounts in Recurly from closed opportunities in Salesforce. See more details [here](https://docs.recurly.com/docs/salesforcereleasenotes).
 
-### May
+## May
 
 * 5/17/21: Released updated version of the Recurly for Salesforce integration, fixing a few bugs. See more details [here](https://docs.recurly.com/docs/salesforcereleasenotes).
 
-### April
+## April
 
 * 4/29/21: Released enhancements to out out of the box Avalara tax integrations to always send AccountID and no longer send AccountCode.
 * 4/22/21: Recurly releases Wallet to let you offer more convenience and improve customer satisfaction by giving your customers the ability to have [multiple payment methods](https://docs.recurly.com/docs/wallet) on one account. Wallet also allows you to simplify renewals and reduce payment failures by enabling [backup payment method](https://docs.recurly.com/docs/backup-payment-method). Read the [press release](https://www.recurly.com/press/recurly-launches-wallet-in-a-strategic-expansion-of-its-subscription-platform?utm_source=twitter\&utm_medium=social\&utm_campaign=2021-02-high-impact-subscription-tips\&utm_content=infographic/) to learn more.
@@ -3916,11 +3916,11 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 4/8/21: Released enhancements to tax integrations for AvaTax and AFC to select which account identifier is sent to Avalara. To prevent sending PII to Avalara, you can now send Account ID instead of Account Code.
 * 4/8/21: Released enhancements to AvaTax integration to make it optional to send $0 invoices. Invoices created at the start of a trial are $0 and will have not have any taxes applied. To avoid Avalara charging for these invoices, don't send $0 invoices.
 
-### March
+## March
 
 * 3/25/21: Released enhancements to Recurly's in-the-box tax solution to support taxation in Chile.  [Learn more.](https://docs.recurly.com/docs/tax#section-supported-countries)
 
-### February
+## February
 
 * 2/25/21: Release Pay with Venmo as a new payment method available via our partnership with Braintree.
 * 2/25/21: Released a [prerenewal webhook](https://developers.recurly.com/reference/webhooks/index.html#subscription-prerenewal) which is sent 1 day before each subscriptions renewal. This can be used as a notification to log additional usage, one time charges, or make updates to the subscription that can be included for the renewal invoice.
