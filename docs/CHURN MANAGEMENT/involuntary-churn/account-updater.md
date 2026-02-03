@@ -25,6 +25,7 @@ This guide explains how to configure Recurly’s Account Updater service, includ
 * For American Express® Cardrefresher, an American Express® merchant account is required, and your business must be located in the United States. OptBlue merchant accounts (gateway‐provided SE numbers) are not supported.
 * One-time transactions are not submitted to the Account Updater service.
 * Account Updater will not work for merchants using exclusively gateway tokens where Recurly does not have access to actual card data. Work with your gateway partner to enable Account Updater if needed.
+* If you are using Adyen Realtime Account Updater, you must be using Adyen as your primary gateway. Please note that Adyen's RTAU does not have full card brand support, so it's advised to keep both Adyen and Recurly account updater products enabled to cover all cases. Adyen's support is limited to Visa, MasterCard, and Amex in certain regions, with regional Amex and all Discover as gaps.
 
 # Definition
 
@@ -67,7 +68,7 @@ Account Updater runs on a publish/subscribe model for Mastercard®, Visa®, Amer
 * **Updated Expiration Date:** Automatically updates expiration in billing info.
 * **Updated Credit Card Number:** Replaces the the entire card number.
   * In rare cases, this can mean a brand change. In these instances, customers must come back into session to ensure continued recurring transaction processing as the card networks do not generally share Network Transaction ID formatting. In this event, we recommend doing outreach to your customer and having them reauthenticate their card, which will do a verification and update the NTID on file.
-  * Read our guide on reauthentication flows using the API: [Verify Stored Card Information](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/) 
+  * Read our guide on reauthentication flows using the API: [Verify Stored Card Information](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/)
 * **Credit Card Account Closed:** Flags billing info as invalid to prevent further charges.
 
 Each of these events fires the **Update Billing Info** webhook.
