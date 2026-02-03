@@ -423,16 +423,13 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 These payment methods are pivotal for merchants aiming to expand in Europe and other relevant regions. With Recurly’s integration with Adyen, businesses can offer their customers a plethora of payment options, facilitating smoother transactions and increasing conversion rates. For any queries, connect with our <a href="https://www.recurly.com/contact-us/" target="_blank">support</a> or explore our expansive <a href="https://docs.recurly.com/docs/" target="_blank">knowledge base</a>.
 
-# Important notes
+# Gateway Feature Support
 
-* Adhere to regulations around customer notifications, like SEPA's renewal notice requirements.
-* Recurly can export billing info from Adyen for SEPA subscription renewals.
-* Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings.
-* Currently, Recurly's Adyen integration doesn't support Level 3 card data.
+## Adyen Realtime Account Updater 
 
-## Gateway Feature Support
+<br />
 
-### Adyen Network Tokens
+## Adyen Network Tokens
 
 If you have enabled Adyen to create Network Tokens for your merchant account (cards only), whether or not they are used on a given transaction will be visible in transaction detail and gateway param responses via API.
 
@@ -442,7 +439,7 @@ If you do not have Adyen Network tokens enabled with the gateway, you will alway
 
 For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems. Keep in mind, Adyen only use Network Tokenization on tokenized payment methods. Recurly only supports tokenizing cards when using Adyen Web Components via Recurly.js.
 
-### Revenue Protect + Protect Premium
+## Revenue Protect + Protect Premium
 
 If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect.
 
@@ -460,6 +457,13 @@ Some limitations include:
 
 * Review Rules are not supported at this time for 'Protect' (new risk engine at Adyen) when using Purchase transactions. You may use 'Review' if you are already handling the capture through your system by using Authorize and Capture behavior.
   * Options generally include: Allow, Block, Review, and Check for 3DS. Please ensure you are using only Allow, Block, or Check for 3DS if sending purchases instead of authorizations.
+
+# Important notes
+
+* Adhere to regulations around customer notifications, like SEPA's renewal notice requirements.
+* Recurly can export billing info from Adyen for SEPA subscription renewals.
+* Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings.
+* Currently, Recurly's Adyen integration doesn't support Level 3 card data.
 
 ## How asynchronous payments work
 
