@@ -95,7 +95,7 @@ You can find these details in your Braintree Control Panel.
 3. Click on **Add a Gateway**, and then select **Braintree** from the list of available gateways.
 4. Enter your Braintree credentials: _Merchant ID_, _Public Key_, and _Private Key_.
 5. For multi-currency support, add separate Braintree gateways for each _Merchant Account ID_ (each associated with a different currency).
-6. To enable Zero Dollar Authorizations, select the card types you wish to utilize. Visa and Mastercard are supported.
+6. To enable Zero Dollar Authorizations, select the card types you wish to utilize. Visa, Mastercard, Discover, and American Express are supported. When checking American Express, please be aware this will send a penny authorization, per Braintree guidance.
 7. If you wish to Vault with Braintree, check the 'Store in Braintree Vault' checkbox.
 8. To comply with Visa’s free trial mandate, if your Braintree merchant account is associated with Australia or Canada specifically, choose one of those countries from the dropdown options. For all other countries, choose ‘Other’.
 
