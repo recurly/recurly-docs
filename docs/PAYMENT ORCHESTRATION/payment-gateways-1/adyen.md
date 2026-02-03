@@ -425,9 +425,43 @@ These payment methods are pivotal for merchants aiming to expand in Europe and o
 
 # Gateway Feature Support
 
-## Adyen Realtime Account Updater 
+## Adyen Realtime Account Updater
 
-<br />
+Adyen Realtime Account Updater (RTAU) is a service that will update credit card data, and expiry dates in **realtime** in the flow of a transaction to improve auth rates and keep renewals up to date. We can receive updated expiration dates, and even raw card data from Adyen if a customer's card is out of date. Adyen will return PCI data (card data) encrypted to Recurly, which requires the creation of an RSA key, and passing that key to Adyen for configuration.
+
+If you would like to enable Realtime Account Updater through Adyen, you will need to first speak to Adyen and ensure you can use it, and come to whatever agreements are necessary with the gateway for that feature. 
+
+When you are ready to enable the feature, follow the below steps: 
+
+### Ensure Eligibility
+
+1. You _are_ using raw cards with Adyen as your primary gateway partner via a supported Recurly API or via Recurly.js (not Adyen Web Components)
+2. You are _not_ using Adyen gateway tokens or Network Tokens
+3. You are _not_ using Adyen Third Party Checkout / Components via Recurly.js 
+
+### Configure an RSA Key in Recurly
+
+1. **Set up** and RSA key by navigating to Payment Gateways.
+2. **Click on 'Options** on your Adyen gateway and choose **Manage Keys**.
+3. If you have not set up an RSA key yet, click **Add a Real Time Account Updater Key**. If you have multiple instances of Adyen added to Recurly and they are the same Adyen gateway account, you can "share" an RSA key instead of creating a new one. 
+4. Choose **Generate New Key** if necessary, or **Use Existing Key** in the event you wish to share the same key across multiple Adyen instances on Recurly. 
+5. Click **Add Key**. 
+
+### Configure the RSA Key in Adyen 
+
+There is no current method to configure an RSA Key in your Adyen account on your own. You will need to copy the public key from Recurly and provide it as your Adyen username to Adyen directly via a support ticket. Please send this request directly to Adyen's support team. 
+
+Once Adyen has configured your public RSA key, RTAU will start working automatically. 
+
+### How will Adyen RTAU work with Recurly AU? 
+
+If you have both enabled, which is recommended, cards updating through Adyen RTAU will not be sent through to Recurly's Account Updater services. Adyen supports Visa, MasterCard, and regional American Express only. If you wish to continue receiving Discover and all Amex updates, it is recommended to keep Recurly's AU services enabled alongside Adyen RTAU. 
+
+### Disabling RSA Keys for Adyen's RTAU 
+
+If you no longer wish to use Adyen's RTAU, you must disable the RSA key in each Adyen gateway you have enabled it on. You will navigate into **Manage Keys**, and **revoke** each key as necessary to disable the service. You will want to contact Adyen and have RTAU disabled on their side as well. 
+
+When this occurs, if you have Recurly's Account Updater services enabled, they will start functioning on all applicable card brands once more. 
 
 ## Adyen Network Tokens
 
