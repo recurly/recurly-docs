@@ -37,17 +37,17 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 
 # Key details
 
-| Feature                         | Description                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Services that work with Recurly | Credit/Debit cards, Recurring, Adyen Web Components, [Adyen-derived Network Tokens](https://docs.recurly.com/docs/adyen#/adyen-network-tokens), [Revenue Protect / Protect Premium](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium), [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/) Processing |
-| Supported operations            | Authorize & Capture, Purchase, Refund, Verify, Void                                                                                                                                                                                                                                                                                                    |
-| Supported payment types         | Credit/Debit cards, ACH, Boleto, iDeal, Klarna Debit Risk (only existing merchants), SEPA, Google Pay and Apple Pay, Cash App. **Note:** Only a subset of payment methods are supported in the new Adyen Components Recurly.js support. Excluded payment methods are:  Klarna Debit Risk and Boleto.                                                   |
-| Supported card brands           | Visa, MasterCard, American Express, Discover, JCB, Diners Club, China Union Pay, ELO (BRL only), Hipercard (BRL only), Cartes Bancaires, Dankort, Bancontact                                                                                                                                                                                           |
-| Gateway Specific 3DS2 Supported | Yes                                                                                                                                                                                                                                                                                                                                                    |
-| Card on File Supported          | Yes                                                                                                                                                                                                                                                                                                                                                    |
-| Regions                         | Global                                                                                                                                                                                                                                                                                                                                                 |
-| Currencies                      | <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available.</a> with special behavior for **ISK** and **CLP**. We do not support **IDR** and **CVE**.                                                                                                                                                           |
-| Gateway Features                | [Network Token usage](https://docs.recurly.com/docs/adyen#/adyen-network-tokens) usage awareness (see notes), [Revenue Protect / Protect Premium](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium), [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/) Processing                                   |
+| Feature                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Services that work with Recurly | Credit/Debit cards, Recurring, Adyen Web Components, [Adyen-derived Network Tokens](https://docs.recurly.com/docs/adyen#/adyen-network-tokens), [Revenue Protect / Protect Premium](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium), [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/) Processing                                                                                     |
+| Supported operations            | Authorize & Capture, Purchase, Refund, Verify, Void                                                                                                                                                                                                                                                                                                                                                                                        |
+| Supported payment types         | Credit/Debit cards, ACH, Boleto, iDeal, Klarna Debit Risk (only existing merchants), SEPA, Google Pay and Apple Pay, Cash App. **Note:** Only a subset of payment methods are supported in the new Adyen Components Recurly.js support. Excluded payment methods are:  Klarna Debit Risk and Boleto.                                                                                                                                       |
+| Supported card brands           | Visa, MasterCard, American Express, Discover, JCB, Diners Club, China Union Pay, ELO (BRL only), Hipercard (BRL only), Cartes Bancaires, Dankort, Bancontact                                                                                                                                                                                                                                                                               |
+| Gateway Specific 3DS2 Supported | Yes                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Card on File Supported          | Yes                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Regions                         | Global                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Currencies                      | <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank">All available.</a> with special behavior for **ISK** and **CLP**. We do not support **IDR** and **CVE**.                                                                                                                                                                                                                                               |
+| Gateway Features                | [Network Token usage](https://docs.recurly.com/docs/adyen#/adyen-network-tokens) usage awareness (see notes), [Revenue Protect / Protect Premium](https://docs.recurly.com/docs/adyen#/revenue-protect--protect-premium), [MOTO](https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/) Processing, [Realtime Account Updater](https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater) |
 
 # Setting up Adyen with Recurly
 
@@ -429,39 +429,39 @@ These payment methods are pivotal for merchants aiming to expand in Europe and o
 
 Adyen Realtime Account Updater (RTAU) is a service that will update credit card data, and expiry dates in **realtime** in the flow of a transaction to improve auth rates and keep renewals up to date. We can receive updated expiration dates, and even raw card data from Adyen if a customer's card is out of date. Adyen will return PCI data (card data) encrypted to Recurly, which requires the creation of an RSA key, and passing that key to Adyen for configuration.
 
-If you would like to enable Realtime Account Updater through Adyen, you will need to first speak to Adyen and ensure you can use it, and come to whatever agreements are necessary with the gateway for that feature. 
+If you would like to enable Realtime Account Updater through Adyen, you will need to first speak to Adyen and ensure you can use it, and come to whatever agreements are necessary with the gateway for that feature.
 
-When you are ready to enable the feature, follow the below steps: 
+When you are ready to enable the feature, follow the below steps:
 
 ### Ensure Eligibility
 
 1. You _are_ using raw cards with Adyen as your primary gateway partner via a supported Recurly API or via Recurly.js (not Adyen Web Components)
 2. You are _not_ using Adyen gateway tokens or Network Tokens
-3. You are _not_ using Adyen Third Party Checkout / Components via Recurly.js 
+3. You are _not_ using Adyen Third Party Checkout / Components via Recurly.js
 
 ### Configure an RSA Key in Recurly
 
 1. **Set up** and RSA key by navigating to Payment Gateways.
 2. **Click on 'Options** on your Adyen gateway and choose **Manage Keys**.
-3. If you have not set up an RSA key yet, click **Add a Real Time Account Updater Key**. If you have multiple instances of Adyen added to Recurly and they are the same Adyen gateway account, you can "share" an RSA key instead of creating a new one. 
-4. Choose **Generate New Key** if necessary, or **Use Existing Key** in the event you wish to share the same key across multiple Adyen instances on Recurly. 
-5. Click **Add Key**. 
+3. If you have not set up an RSA key yet, click **Add a Real Time Account Updater Key**. If you have multiple instances of Adyen added to Recurly and they are the same Adyen gateway account, you can "share" an RSA key instead of creating a new one.
+4. Choose **Generate New Key** if necessary, or **Use Existing Key** in the event you wish to share the same key across multiple Adyen instances on Recurly.
+5. Click **Add Key**.
 
-### Configure the RSA Key in Adyen 
+### Configure the RSA Key in Adyen
 
-There is no current method to configure an RSA Key in your Adyen account on your own. You will need to copy the public key from Recurly and provide it as your Adyen username to Adyen directly via a support ticket. Please send this request directly to Adyen's support team. 
+There is no current method to configure an RSA Key in your Adyen account on your own. You will need to copy the public key from Recurly and provide it as your Adyen username to Adyen directly via a support ticket. Please send this request directly to Adyen's support team.
 
-Once Adyen has configured your public RSA key, RTAU will start working automatically. 
+Once Adyen has configured your public RSA key, RTAU will start working automatically.
 
-### How will Adyen RTAU work with Recurly AU? 
+### How will Adyen RTAU work with Recurly AU?
 
-If you have both enabled, which is recommended, cards updating through Adyen RTAU will not be sent through to Recurly's Account Updater services. Adyen supports Visa, MasterCard, and regional American Express only. If you wish to continue receiving Discover and all Amex updates, it is recommended to keep Recurly's AU services enabled alongside Adyen RTAU. 
+If you have both enabled, which is recommended, cards updating through Adyen RTAU will not be sent through to Recurly's Account Updater services. Adyen supports Visa, MasterCard, and regional American Express only. If you wish to continue receiving Discover and all Amex updates, it is recommended to keep Recurly's AU services enabled alongside Adyen RTAU.
 
-### Disabling RSA Keys for Adyen's RTAU 
+### Disabling RSA Keys for Adyen's RTAU
 
-If you no longer wish to use Adyen's RTAU, you must disable the RSA key in each Adyen gateway you have enabled it on. You will navigate into **Manage Keys**, and **revoke** each key as necessary to disable the service. You will want to contact Adyen and have RTAU disabled on their side as well. 
+If you no longer wish to use Adyen's RTAU, you must disable the RSA key in each Adyen gateway you have enabled it on. You will navigate into **Manage Keys**, and **revoke** each key as necessary to disable the service. You will want to contact Adyen and have RTAU disabled on their side as well.
 
-When this occurs, if you have Recurly's Account Updater services enabled, they will start functioning on all applicable card brands once more. 
+When this occurs, if you have Recurly's Account Updater services enabled, they will start functioning on all applicable card brands once more.
 
 ## Adyen Network Tokens
 
