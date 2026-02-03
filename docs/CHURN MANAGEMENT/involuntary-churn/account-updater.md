@@ -97,6 +97,12 @@ For certain cards, event-based Account Updater services will accept new billing 
 
 Recurly’s American Express® Cardrefresher integration provides an automated solution to keep Amex card details up-to-date. By connecting to the Amex Account Updater (Card Refresher), Recurly ensures stored card details remain current, reducing payment failures. However, to use this service, you must have a direct American Express® merchant account and SE number. **OptBlue (gateway) SE numbers are not supported**—Recurly cannot process them.
 
+# Adyen Realtime Account Updater integration with Recurly 
+
+[Adyen's Realtime Account Updater](https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater), or RTAU, integration provides realtime Account Updater responses in-line with transactions. To enable Adyen's RTAU, you will need to be using Adyen as your primary gateway partner and be using raw card data. RTAU will not function with gateway tokens or Network tokens, or non-card payment methods. It will also not function if you are using another gateway partner as your processing gateway. 
+
+To learn more about Adyen's Realtime Account updater, please see our setup and walkthrough in [Adyen documentation](https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater).
+
 # Account activity
 
 Monitor credit‐card billing info updates by Account Updater under an Account’s **Activity** section.
