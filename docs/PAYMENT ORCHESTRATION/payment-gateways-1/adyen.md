@@ -439,7 +439,7 @@ When you are ready to enable the feature, follow the below steps:
 2. You are _not_ using Adyen gateway tokens or Network Tokens
 3. You are _not_ using Adyen Third Party Checkout / Components via Recurly.js
 
-### Configure an RSA Key in Recurly
+### Recurly Configuration (RSA Key)
 
 1. **Set up** and RSA key by navigating to Payment Gateways.
 2. **Click on 'Options** on your Adyen gateway and choose **Manage Keys**.
@@ -447,7 +447,7 @@ When you are ready to enable the feature, follow the below steps:
 4. Choose **Generate New Key** if necessary, or **Use Existing Key** in the event you wish to share the same key across multiple Adyen instances on Recurly.
 5. Click **Add Key**.
 
-### Configure the RSA Key in Adyen
+### Adyen Configuration (RSA Key / RTAU Enablement)
 
 There is no current method to configure an RSA Key in your Adyen account on your own. You will need to copy the public key from Recurly and provide it as your Adyen username to Adyen directly via a support ticket. Please send this request directly to Adyen's support team.
 
@@ -455,7 +455,19 @@ Once Adyen has configured your public RSA key, RTAU will start working automatic
 
 ### How will Adyen RTAU work with Recurly AU?
 
-If you have both enabled, which is recommended, cards updating through Adyen RTAU will not be sent through to Recurly's Account Updater services. Adyen supports Visa, MasterCard, and regional American Express only. If you wish to continue receiving Discover and all Amex updates, it is recommended to keep Recurly's AU services enabled alongside Adyen RTAU.
+If you have both enabled, which is recommended, cards updating through Adyen RTAU will not be sent through to Recurly's Account Updater services. Adyen supports Visa, MasterCard, and regional American Express only. If you wish to continue receiving Discover and all Amex updates, it is recommended to keep Recurly's AU services enabled alongside Adyen RTAU. We will receive the following update types for Adyen's RTAU: 
+
+* **Card PAN changes**: In this case, we will decrypt the PAN data (as long as an RSA key is set up), and update the billing info on the account. 
+  * **Note:** Since Adyen's RTAU works in real time, if a full brand / card update is returned, the incoming card number on the transaction and billing information will be updated to match the new card number that was updated, as Adyen is also **using** the new card to get an approved transaction. 
+  * **Example:** 
+    1. Visa ending in 1234 is sent in for authorization
+    2. Adyen attempts to use Visa 1234 but it declines
+    3. Adyen requests an update to the card in realtime, receives Visa 4567. 
+    4. Adyen attempts to use Visa 4567 and it approves.
+    5. Adyen returns an approval, and the encrypted Visa 4567 for future usage.
+* **Card Expiration Date changes**: In this case, we will update the expiration date on file.
+* **Closed Account notices**: In this case, we will invalidate the billing information associated with the account.
+* **Contact customer notices:** In this case, we will not make an update, but Account Activities will have this response noted in the event of a decline.
 
 ### Disabling RSA Keys for Adyen's RTAU
 
