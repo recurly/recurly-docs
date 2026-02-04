@@ -39,7 +39,29 @@ Recurly supports passing tax information and a PO Number on all of our supported
 
 Since Level 2 requires a minimum percentage of taxation, and as such, tax exempt businesses generally do not qualify for Level 2 Interchange programs. Minimum / Maximum taxation require to qualify falls between 0.1 percent and 31 percent of the total amount.
 
-**Example Here**
+<br />
+
+```json
+{
+  "currency": "USD",
+  "account": {
+    "code": "{{customer-account-code}}" // Account with Billing Information + Card on File
+  },
+  "line_items": [ // You may also supply Recurly item codes
+    {
+      "unit_amount": "10.00",
+      "quantity": 2,
+      "description": "Custom 4x4 Art Print",
+      "type": "charge",
+      "tax_code": "physical",
+      "product_code": "100B",
+      "tax_exempt": false,
+    }
+  ],
+  "po_number": "123456", // Purchase Order Number 
+  "gateway_code": "{{gateway-code}}"
+}
+```
 
 # Level 3 Requirements
 
