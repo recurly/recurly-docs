@@ -283,6 +283,10 @@ If your requirements dictate the use of “p=quarantine” or “p=reject” pol
 * Learn how to integrate with SendGrid through our [documentation](https://docs.recurly.com/docs/sendgrid).
 * Reach out to our Support team for detailed guidance and to explore our professional services.
 
+Additionally, Recurly offers the ability to verify your DNS records through our **Sender Authentication** feature which can be found on the **Email Templates** page.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/06ee781cea31e72f9b3f2e710244db67eabff177449432463f16994855de3376-Screenshot_2026-02-04_at_10.17.06_AM.png" className="border" />
+
 ## Customizing email preferences
 
 Recurly offers two customization levels: for your entire site or for individual plans.
