@@ -74,4 +74,48 @@ Level 3 Data consists of Level 1 + 2 data, plus a lot more, including line items
 * **Shipping Address** for the Consumer: See our documentation on how to pass shipping addresses in our dedicated [Shipping Addresses ](<* https://docs.recurly.com/recurly-subscriptions/docs/shipping-addresses>)documentation.
 * All other required data is derived from your Recurly account or line item catalog setup.
 
-**Example Here**
+<br />
+
+```json
+{
+  "currency": "USD",
+  "account": {
+    "code": "{{customer-account-code}}" // Account with Billing Information + Card on File
+  },
+  "line_items": [ // You may also supply Recurly item codes
+    {
+      "unit_amount": "10.00",
+      "quantity": 2,
+      "description": "Custom 4x4 Art Print",
+      "type": "charge",
+      "tax_code": "physical",
+      "product_code": "100B",
+      "tax_exempt": false,
+      "harmonized_system_code": "456789" // HS Code, Commodity Code
+    }
+  ],
+  "shipping": {
+    "address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "phone": "1234567890",
+      "street1": "201 main St",
+      "city": "Los Angeles",
+      "region": "CA",
+      "postal_code": "12345",
+      "country": "US"
+    },
+    "fees": {
+      "method_code": "{{method-code}}",
+      "amount": "5.00" // Shipping Freight Amount
+    }
+  },
+  "po_number": "123456", // Purchase Order Number 
+  "coupon_codes": [
+    "15percent"
+  ],
+  "gateway_code": "{{gateway-code}}"
+}
+```
+
+<br />
