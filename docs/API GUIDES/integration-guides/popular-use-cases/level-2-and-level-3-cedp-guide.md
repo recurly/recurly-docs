@@ -12,7 +12,7 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s V3 API, and basic REST concepts
-* Familiarity with Recurly's line item catalog, shipping addresses, and shipping fees behavior.
+* Familiarity with Recurly's line item catalog, shipping addresses, and shipping methods and fees behavior.
 * Familiarity with Recurly's taxation offerings:
   * [Avalara](https://docs.recurly.com/recurly-subscriptions/docs/avalara)
   * [Vertex](https://docs.recurly.com/recurly-subscriptions/docs/vertex)
