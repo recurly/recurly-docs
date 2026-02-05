@@ -270,7 +270,7 @@ Recurly helps you reach your subscribers through emails. It's a priority for bot
 Recurly uses SPF and DKIM mechanisms to secure the emails you send. Here’s what happens when you set up your email templates and sending address:
 
 * Emails will automatically be signed using DKIM, ensuring their authenticity.
-* Depending on your environment, the emails will be signed as recurly.com (in production) or recurlysandbox.com (in sandbox sites).
+* Depending on your environment, the emails will be signed as recurly.com (in production) or recurlysandbox.com (in sandbox sites).  Note that you do not need to validate these two domains with the **Sender Authentication**feature.
 
 **Good news: You no longer need to create an SPF record for Recurly emails, simplifying the setup process!**
 
@@ -282,6 +282,12 @@ If your requirements dictate the use of “p=quarantine” or “p=reject” pol
 
 * Learn how to integrate with SendGrid through our [documentation](https://docs.recurly.com/docs/sendgrid).
 * Reach out to our Support team for detailed guidance and to explore our professional services.
+
+Additionally, Recurly offers the ability to verify your DNS records through our **Sender Authentication** feature which can be found on the **Email Templates** page.  Verification is easy:  Simply copy the values into your DNS provider, save, and then click _Verify DNS_ in Recurly.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/f9ae7908b31c93c5d9b93bbc5da5b9238f175ff39395c7108c41aa74e1a56773-Screenshot_2026-02-04_at_1.52.21_PM.png" className="border" />
+
+If an email has a specific "from" email address in an email template, that template name will be listed in the domain.  Otherwise, **Default Sender** will be shown.  Note that this feature is only available to sites that do _not_ have their own paid SendGrid account.
 
 ## Customizing email preferences
 
