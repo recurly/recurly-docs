@@ -270,7 +270,7 @@ Recurly helps you reach your subscribers through emails. It's a priority for bot
 Recurly uses SPF and DKIM mechanisms to secure the emails you send. Here’s what happens when you set up your email templates and sending address:
 
 * Emails will automatically be signed using DKIM, ensuring their authenticity.
-* Depending on your environment, the emails will be signed as recurly.com (in production) or recurlysandbox.com (in sandbox sites).  Note that you do not need to validate these two domains with the **Sender Authentication**feature.
+* Depending on your environment, the emails will be signed as recurly.com (in production) or recurlysandbox.com (in sandbox sites).  Note that you do not need to validate these two domains with the **Sender Authentication** feature.
 
 **Good news: You no longer need to create an SPF record for Recurly emails, simplifying the setup process!**
 
