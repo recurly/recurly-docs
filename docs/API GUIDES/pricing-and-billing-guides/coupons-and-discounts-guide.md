@@ -30,7 +30,7 @@ Coupons and discounts are powerful tools to attract new subscribers, nurture loy
 
 ### Create a single coupon for mass distribution
 
-Use the [Create Coupon](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_coupon_redemption) endpoint to create a single coupon code for mass distribution to many customers. This endpoint allows you to specify various properties, such as:
+Use the <Anchor label="Create Coupon" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_coupon">Create Coupon</Anchor> endpoint to create a single coupon code for mass distribution to many customers. This endpoint allows you to specify various properties, such as:
 
 * **Name:** For internal tracking.
 * **Maximum Redemptions:** Limits the number of redemptions overall or per customer account.
