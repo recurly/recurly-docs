@@ -4,7 +4,7 @@ excerpt: >-
   Unlock your business's full potential with Recurly's Customer Success and TAM
   services.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
