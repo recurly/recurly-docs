@@ -112,7 +112,25 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
    For example: if `city=NYC` use segment `nyc`; if user is in test group `B`, use segment `exp-b`.
 3. **Expose the right price in your UI.**
    **Fetch** the plan’s price segments via **[https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment](API)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
-4. **Use the matching price at checkout.**
+
+```json
+{
+  "object": "string",
+  "has_more": true,
+  "next": "string",
+  "data": [
+    {
+      "object": "string",
+      "id": "string",
+      "code": "string"
+    }
+  ]
+}
+```
+
+<br />
+
+1. **Use the matching price at checkout.**
    When creating the purchase/subscription, **apply the chosen segment’s price**. If you don’t provide a segment, the **default** price is used.
 
 > Tip: For A/B tests, name segments clearly (for example, `exp-a`, `exp-b`) and log the chosen segment code with your analytics event.
