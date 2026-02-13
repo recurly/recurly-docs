@@ -74,7 +74,7 @@ From your main plan page, navigate to Configuration→Plans. Click on "New Plan.
 
 ### **Billing Configuration**
 
-<Image align="center" border={false} width="80% " src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" />
+<Image align="center" width="80% " src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" />
 
 * **Billing period**: Set how often a subscriber will be billed.
 
@@ -87,7 +87,7 @@ From your main plan page, navigate to Configuration→Plans. Click on "New Plan.
 * **Pricing model**: Set the pricing model that best suits the subscription. Choose from fixed or ramp, accordingly.
 * **Price**: Set a fixed price to charge to a plan's subscribers. For Quantity-Based Pricing, use Add-Ons.
 
-<Image align="center" border={false} width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
+<Image align="center" width="80% " src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" />
 
 ### **Price segments**
 
@@ -111,7 +111,7 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 2. **Decide your selection rule.**
    For example: if `city=NYC` use segment `nyc`; if user is in test group `B`, use segment `exp-b`.
 3. **Expose the right price in your UI.**
-   **Fetch** the plan’s price segments via **[API](https://recurly.com/developers/api/v2021-02-25/index.html)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
+   **Fetch** the plan’s price segments via **[https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment](API)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
 4. **Use the matching price at checkout.**
    When creating the purchase/subscription, **apply the chosen segment’s price**. If you don’t provide a segment, the **default** price is used.
 
@@ -133,7 +133,7 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 
 ### **Billing details**
 
-<Image align="center" border={false} width="80% " src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" />
+<Image align="center" width="80% " src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" />
 
 * **Accounting code**: Select a unique code to identify plans in your internal invoice exports. This code should be configured based on your specific tax settings and compliance requirements. Limit to 25 lowercase alphanumeric characters.
 * **HS code/Commodity code**:  Enter a Harmonized System (HS) code or Commodity Code to meet invoice compliance requirements for traded products. Generally, HS Code consists of at least six digits, with countries adding more digits for further national or regional classification. Recurly limits to 25 lowercase alphanumeric characters.
