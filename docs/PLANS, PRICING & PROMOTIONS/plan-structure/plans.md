@@ -128,7 +128,11 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 
 #### Developer references
 
-* **v3 APIs:** Use the plan pricing returned by **[APIs](https://recurly.com/developers/api/v2021-02-25/index.html)** to select and apply the correct price segment.
+* **v3 APIs:** You may choose to use one of several V3 APIs to return or set a price segment:
+  * **[/price_segment](https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment)**
+  * **[/plans](https://recurly.com/developers/api/v2021-02-25/index.html#tag/plan)**
+  * **[/subscriptions](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription)**
+  * **[/create_subscription_change](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change)**
 * **Recurly.js:** Surface the right price segment in your front end with **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)**.
 
 ### **Billing details**
