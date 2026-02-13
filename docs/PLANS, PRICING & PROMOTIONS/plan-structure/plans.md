@@ -102,7 +102,7 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 
 * Recurly **stores** all segment prices and the default price on the plan.
 * **You decide** which price to show or apply (geography, campaign, experiment bucket, etc.). Recurly does not choose the segment for you.
-* Segment price data (segment **code** and **price**) is returned in our v3 **[APIs](https://recurly.com/developers/api/v2021-02-25/index.html)** and **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** so your app or checkout can pick and display the intended price.
+* Segment price data (segment **code** and **price**) is returned in our v3 **[APIs](https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment)** and **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** so your app or checkout can pick and display the intended price.
 
 #### Implement it (quick path)
 
@@ -111,26 +111,8 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 2. **Decide your selection rule.**
    For example: if `city=NYC` use segment `nyc`; if user is in test group `B`, use segment `exp-b`.
 3. **Expose the right price in your UI.**
-   **Fetch** the plan’s price segments via the **[API](https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
-
-```json
-{
-  "object": "string",
-  "has_more": true,
-  "next": "string",
-  "data": [
-    {
-      "object": "string",
-      "id": "string",
-      "code": "string"
-    }
-  ]
-}
-```
-
-<br />
-
-1. **Use the matching price at checkout.**
+   **Fetch** the plan’s price segments via the **[API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_plan)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
+4. **Use the matching price at checkout.**
    When creating the purchase/subscription, **apply the chosen segment’s price**. If you don’t provide a segment, the **default** price is used.
 
 > Tip: For A/B tests, name segments clearly (for example, `exp-a`, `exp-b`) and log the chosen segment code with your analytics event.
