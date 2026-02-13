@@ -111,7 +111,7 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 2. **Decide your selection rule.**
    For example: if `city=NYC` use segment `nyc`; if user is in test group `B`, use segment `exp-b`.
 3. **Expose the right price in your UI.**
-   **Fetch** the plan’s price segments via **[https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment](API)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
+   **Fetch** the plan’s price segments via the **[API](https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment)** or **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)** and **render** the price that matches your rule.
 
 ```json
 {
