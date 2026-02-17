@@ -28,7 +28,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 * Not applicable for hard declines unless specific conditions are met.
 * Direct debit payment methods are not part of Intelligent automatic retries.
-* Retries will cease after 7 transaction declines, 20 total transaction attempts, or 60 days since the invoice creation.
+* Retries will not exceed 20 total transaction attempts, or 60 days since the invoice creation.
 
 # Definition
 
@@ -76,7 +76,7 @@ Different gateway errors have specific retry schedules:
 
 For more control, you can initiate a forced collection attempt by clicking the **Attempt Collection Now** button on a pending or past due invoice's details page. However, excessive manual retries might exhaust the allowed transaction count for automated retries. This function is also available via API.
 
-<Image alt="Force Collection" border={false} src="https://files.readme.io/50e0c55-9c0e247-forcecollect.png" title="9c0e247-forcecollect.png" />
+![Force Collection](https://files.readme.io/50e0c55-9c0e247-forcecollect.png "9c0e247-forcecollect.png")
 
 # Direct debit payments
 
