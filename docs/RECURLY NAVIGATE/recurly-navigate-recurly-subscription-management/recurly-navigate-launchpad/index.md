@@ -21,7 +21,7 @@ next:
 ---
 <br />
 
-<Image align="center" alt="Recurly Navigate Launchpad Logo" border={false} width="150px" src="https://files.readme.io/81e7fa03d1db38cc555f08bb797ab108b2995ffa601fb08843dd778c50148ce0-Navigate_Launchpad_Logo_90_Days.png" />
+<Image align="center" alt="Recurly Navigate Launchpad Logo" width="150px" src="https://files.readme.io/81e7fa03d1db38cc555f08bb797ab108b2995ffa601fb08843dd778c50148ce0-Navigate_Launchpad_Logo_90_Days.png" />
 
 <br />
 
@@ -36,3 +36,8 @@ Navigate Launchpad, Phase 1: Optimization is a strategic phase of the Recurly cu
 ### Phase 2: Mastering Metrics
 
 Following the optimization phase, the program shifts focus to using Recurly data to uncover insights, make confident decisions, and grow smarter.
+
+* [ ] is this interactive
+* [ ] I don't know
+* [ ] lalalala
+* [ ] ghgh
