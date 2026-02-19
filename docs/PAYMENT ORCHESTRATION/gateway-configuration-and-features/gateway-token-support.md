@@ -78,6 +78,11 @@ Recurly supports Stripe **confirmation tokens (c_tokens)** and exchanges them fo
 
 If you are importing Stripe tokens, these methods are generic and may experience a degraded performance. If you are running card renewals with Stripe tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
 
+**Support Note**: 
+
+* **Reusable Tokens:** We only support Stripe Customer and Payment Method reusable tokens. Example: cus_xxxxx and pm_xxxxx values. We do not support Stripe Cards (card_xxxx).
+* **One Time Use Tokens**: We only support Stripe Confirmation Tokens, obtained via Elements (ctoken_xxxxx). We do not support Stripe "Tokens" (tok_xxxx) on our platform.
+
 ### Braintree
 
 Depending on your gateway configuration, Recurly can create Braintree tokens for future use, but does not do so by default unless required by the payment method (PayPal, Venmo).
@@ -90,19 +95,25 @@ Braintree does not support PayPal Billing Agreement IDs and will not process the
 
 If you are importing Braintree tokens, these methods are generic and may experience a degraded performance. If you are running card renewals with Braintree tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
 
+**Note**: When passing in Braintree Tokens via API, or Importing Braintree Tokens if you are migrating from another platform, our platform will query the gateway to retrieve token meta-data to backfill payment method information and ensure our platform operates at its best performance. There is a required feature flag for this feature presently. Please reach out to Recurly Support to discuss enabling this prior to GA release.
+
 ### Adyen
 
 With native Recurly checkout flows (API with raw data, Recurly.js, Hosted pages), only **non‑card** methods are tokenized by default. However, with **Adyen Components** + Recurly.js, **all** supported methods are tokenized. If you are looking to use an Adyen feature that requires tokenization, such as Network Tokens, using our [Third Party Checkout for Web Components](https://docs.recurly.com/recurly-subscriptions/docs/third-party-checkout-guide-adyen-components#/) support is recommended.
 
 If you are importing Adyen tokens, these methods are generic and may experience a degraded performance. If you are running card renewals with Adyen tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
 
+**Note**: We support Adyen ShopperReference IDs and Recurring Detail References in our platform. No other Adyen tokens are supported.
+
 ### Vantiv
 
 Imported **card tokens** can be used, but can experience a degraded performance as they remain generic in our system; Recurly does **not** tokenize cards with Vantiv automatically. For imported tokens, Recurly does not have raw PAN, so failover/orchestration to other gateways is unavailable. In these cases, the definition and limitations for **imported tokens** applies here. If you are running renewals with Vantiv tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
 
-### CommerceHub / Fiserv 
+### CommerceHub / Fiserv
 
 Imported Fiserv Transarmour tokens can be used, but can also experience a degraded performance. If you are running renewals with CommerceHub tokens, you will need to ensure you are passing us the [CIT NTID using our APIs when creating future dated subscriptions](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/).
+
+**Notes**: We only support TransArmor tokens in our platform. We do not create these tokens, but can be sent to us via API if you are migrating or using a POS card-present system.
 
 ### Amazon
 
