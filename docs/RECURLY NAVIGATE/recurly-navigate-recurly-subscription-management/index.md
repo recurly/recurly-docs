@@ -25,4 +25,16 @@ Recurly Navigate is Recurly's digitally-delivered customer success program desig
 * **Interactive Support:** Engage in scaled interactive sessions with our Customer Success Managers and support teams for targeted Q&A and community learning.
 * **Self-Service Empowerment:** Get the structure and knowledge you need to be self-sufficient and strategic, driving big changes without needing a dedicated, one-on-one CSM.
 
-<br />
+<Cards>
+  <Card title="Getting Started" href="#" icon="fa-rocket">
+    New to our platform? Follow this guide to get started.
+  </Card>
+
+  <Card title="API Reference" href="#" icon="fa-code">
+    Explore our interactive API reference.
+  </Card>
+
+  <Card title="Support & Community" href="#" icon="fa-comments" target="_blank">
+    Join our community or checkout our FAQ.
+  </Card>
+</Cards>
