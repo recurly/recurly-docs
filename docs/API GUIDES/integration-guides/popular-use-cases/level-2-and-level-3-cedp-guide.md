@@ -8,7 +8,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# Level 2 and Level 3 / CEDP guide
+# Overview
 
 This guide shows you how to send Level 2 and Level 3 card data using the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase), and covers best practices for qualifying for the Visa CEDP program.
 
