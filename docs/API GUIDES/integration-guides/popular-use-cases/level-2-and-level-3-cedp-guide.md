@@ -1,5 +1,5 @@
 ---
-title: Level 2 and Level 3 / CEDP guide
+title: Level 2 and Level 3 / CEDP
 excerpt: >-
   Send Level 2 and Level 3 data with the Purchase API, and prep for Visa CEDP
   best practices.
