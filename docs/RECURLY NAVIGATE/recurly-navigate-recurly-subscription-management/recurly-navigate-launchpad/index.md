@@ -37,7 +37,4 @@ Navigate Launchpad, Phase 1: Optimization is a strategic phase of the Recurly cu
 
 Following the optimization phase, the program shifts focus to using Recurly data to uncover insights, make confident decisions, and grow smarter.
 
-* [ ] is this interactive
-* [ ] I don't know
-* [ ] lalalala
-* [ ] ghgh
+<br />
