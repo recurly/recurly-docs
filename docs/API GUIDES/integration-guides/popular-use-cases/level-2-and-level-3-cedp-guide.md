@@ -8,11 +8,11 @@ hidden: false
 metadata:
   robots: index
 ---
-# Overview
+# Level 2 and Level 3 / CEDP guide
 
-This guide shows you how to use the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase) to create new subscriptions or purchases using Cards that includes Level 2 data, or Level 3 data, and some best practices for qualifying for the Visa CEDP program.
+This guide shows you how to send Level 2 and Level 3 card data using the [Purchase endpoint](https://developers.recurly.com/api/latest/#tag/purchase), and covers best practices for qualifying for the Visa CEDP program.
 
-### Prerequisites & limitations
+### Prerequisites and limitations
 
 * Familiarity with Recurly’s V3 API, and basic REST concepts
 * Familiarity with Recurly's line item catalog, shipping addresses, and shipping methods and fees behavior.
@@ -25,11 +25,11 @@ This guide shows you how to use the [Purchase endpoint](https://developers.recur
 * A supported gateway account. Check your individual gateway for L2/3 Support.
   * Currently, only [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen) has support for Level 3 data.
 
-# &#x20;Definition
+## Definition
 
 **Creating purchases** refers to the process of generating new customer accounts alongside subscriptions in a single, consolidated call to the Recurly Purchase endpoint. This streamlines checkout experiences by bundling all required resources into one request.
 
-**Creating subscriptions** refers to the process of generating new customer accounts and subscriptions using the `subscriptions` endpoint in Recurly's V3 API. This endpoint cannot be used for one-time transactions, but also supports the relevant fields.
+**Creating subscriptions** refers to the process of generating new customer accounts and subscriptions using the `subscriptions` endpoint in Recurly's V3 API. This endpoint can't be used for one-time transactions, but also supports the relevant fields.
 
 ## Level 2 requirements
 
@@ -69,15 +69,15 @@ Because Level 2 requires a minimum tax percentage, tax-exempt businesses general
 
 Level 3 data consists of Level 1 and Level 2 data, plus additional details such as line items and shipping information. Ensure you're passing Level 1 data (name and address information) and Level 2 data (taxes or tax exempt status, plus a PO number), in addition to the following:
 
-* **Line Items**: Ensure you're sending high-quality line item data, not generic values. Visa evaluates data quality, not just quantity. For CEDP considerations, see our [LIne Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items) documentation. You can pass line items by setting up your catalog in Recurly or passing the data dynamically via API.
+* **Line Items**: Ensure you're sending high-quality line item data, not generic values. Visa evaluates data quality, not just quantity. For CEDP considerations, see our [Line Item](https://docs.recurly.com/recurly-subscriptions/docs/line-items) documentation. You can pass line items by setting up your catalog in Recurly or passing the data dynamically via API.
+  * Include product code, description, quantity, and, if needed, the HS/Commodity Code value. **You can't pass all zeroes**, and it's recommended to use HS/Commodity Code values from a tax integration like Avalara or Vertex, or reference an authoritative HS/Commodity Code list.
 
-  * Include product code, description, quantity, and, if needed, the HS/Commodity Code value. **You may not pass all zeroes**, and it’s recommended to use HS/Commodity Code values from a tax integration like Avalara or Vertex, or reference an authoritative HS/Commodity Code list.
   * HS Codes are supported on line item add-ons and plans:
 
     * [Add-Ons](https://docs.recurly.com/recurly-subscriptions/docs/add-ons)
     * [Plans](https://docs.recurly.com/recurly-subscriptions/docs/plans)
 * **Shipping Costs**: See [Shipping Fees](https://docs.recurly.com/recurly-subscriptions/docs/shipping) documentation for how to pass shipping costs.
-* **Shipping Address** for the consumer: See [Shipping Addresses ](* [https://docs.recurly.com/recurly-subscriptions/docs/shipping-addresses](https://docs.recurly.com/recurly-subscriptions/docs/shipping-addresses)) documentation for how to pass shipping addresses.
+* **Shipping Address** for the consumer: See [Shipping Addresses](https://docs.recurly.com/recurly-subscriptions/docs/shipping-addresses) documentation for how to pass shipping addresses.
 * All other required data is derived from your Recurly account or line item catalog setup.
 
 ```json
