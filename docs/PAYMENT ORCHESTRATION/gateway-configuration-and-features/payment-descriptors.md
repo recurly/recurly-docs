@@ -21,10 +21,10 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * We support descriptors beyond Visa trial descriptors on the following gateways with the enablement of a feature flag. Reach out to Recurly Support or your account manager to have the related feature flag enabled:
   * [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe#/)
   * [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/)
-  * Commerce Hub
-  * Freedom Pay
-  * Checkout.com 
-  * Nuvei
+  * [Commerce Hub](https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub)
+  * [Freedom Pay](https://docs.recurly.com/recurly-subscriptions/docs/freedompay)
+  * [Checkout.com ](https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom)
+  * [Nuvei](https://docs.recurly.com/recurly-subscriptions/docs/nuvei)
 
 ### Limitations
 
