@@ -47,27 +47,6 @@ Managed Services is a prepaid, hourly retainer that provides access to Recurly e
 
 ## What managed services can cover
 
-Managed Services focuses on hands-on execution and configuration. Examples of eligible activities include:
-
-* Onboarding new teams or new business units across Recurly products
-* Ad hoc training
-* Data and reporting work, such as:
-
-  * Building custom reports or exports
-  * Running bulk API scripts
-  * Supporting data migrations
-  * Configuring data feeds
-* Configuration and optimisation, such as:
-
-  * Adjusting settings, plans, or gateways as your business changes
-  * Creating new prompts or tuning existing ones
-  * Assisting with period close activities
-* Solution extension work, such as:
-
-  * Implementing new features
-  * Running “tune-up” audits of your current implementation
-  * Implementing a custom retry model
-
 <Cards>
   <Card title="Onboarding support" href="#" icon="fa-users">
     Onboarding new teams or new business units across Recurly products.
