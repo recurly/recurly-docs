@@ -181,14 +181,15 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 <br />
 
 1. **Navigate** to **Configuration** → **Plans**.
-   2. From the plan list view (hover over the plan row), or from the plan actions menu on the plan details page, **select** "Edit".
-      3. **Make** your changes, then **select** "Save Changes".
+2. From the plan list view (hover over the plan row), or from the plan actions menu on the plan details page, **select** "Edit".
+3. **Make** your changes, then **select** "Save Changes".
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" className="border"/>
+<Image align="center" border={true} width="80% " src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" className="border" />
 
 <Callout icon="⚠️" theme="warning">
-**Plan name changes apply to existing subscriptions**
-Updating a plan's name updates it site-wide. Existing subscriptions will show the new plan name in the Admin UI, and future invoice line items will use the updated name.
+  ### **Plan name changes apply to existing subscriptions**
+
+  Updating a plan's name updates it site-wide. Existing subscriptions will show the new plan name in the Admin UI, and future invoice line items will use the updated name.
 </Callout>
 
 **Note:** Versioned plan terms (like price, billing interval, and setup fees) apply to new subscribers only. Existing subscribers keep the plan terms that were in effect when they signed up.
