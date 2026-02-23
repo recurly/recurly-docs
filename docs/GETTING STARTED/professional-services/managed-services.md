@@ -1,8 +1,9 @@
 ---
 title: Managed services
 excerpt: >-
-  Use Managed Services for on-demand Recurly configuration, reporting, and
-  implementation support.
+  Use Managed Services for on-demand access to Recurly Professional Services
+  support for onboarding, configuration, reporting, and technical implementation
+  support.
 deprecated: false
 hidden: true
 metadata:
@@ -25,7 +26,7 @@ This feature or setting requires an additional cost. Please reach out to your Re
 ### Prerequisites
 
 * You’ve purchased Managed Services and have an active Order Form
-* You can submit requests through the Online Service Portal (Wrike form)
+* You can submit requests through the Online Service Portal
 
 ### Limitations
 
@@ -45,7 +46,9 @@ Managed Services is a prepaid, hourly retainer that provides access to Recurly e
 
 # Key details
 
-## What managed services can cover
+## What Managed Services can cover
+
+Managed Services focuses on hands-on execution and configuration. Examples of eligible activities include:
 
 <Cards>
   <Card title="Onboarding support" href="#" icon="fa-users">
@@ -73,17 +76,18 @@ Managed Services is a prepaid, hourly retainer that provides access to Recurly e
 
 Your entitlements depend on the service tier selected in your Order Form.
 
-| Feature                        | Basic tier                         | Enhanced tier                      |
-| ------------------------------ | ---------------------------------- | ---------------------------------- |
-| **Request method**             | Online Service Portal (Wrike form) | Online Service Portal (Wrike form) |
-| **Response time**              | Within three business days         | Within one business day            |
-| **Resource allocation target** | Within two weeks                   | Within one week                    |
-| **Baseline monthly hours**     | 5                                  | 25                                 |
-| **Additional monthly hours**   | As defined in Order Form           | As defined in Order Form           |
-| **Governance meetings**        | Quarterly (30 minutes)             | Monthly (30 minutes)               |
-| **Standard hourly rate**       | $275/hour                          | $250/hour                          |
-| **Billing period choices**     | Monthly, quarterly, or yearly      | Monthly, quarterly, or yearly      |
-| **Minimum term**               | One year                           | One year                           |
+| Feature                    | Basic tier                    | Enhanced tier                 |
+| -------------------------- | ----------------------------- | ----------------------------- |
+| Request method             | Online Service Portal         | Online Service Portal         |
+| Response time              | Within three business days    | Within one business day       |
+| Resource allocation target | Within two weeks              | Within one week               |
+| Baseline monthly hours     | Five                          | 25                            |
+| Additional monthly hours   | As defined in Order Form      | As defined in Order Form      |
+| Governance meetings        | Quarterly (30 minutes)        | Monthly (30 minutes)          |
+| Billing period choices     | Monthly, quarterly, or yearly | Monthly, quarterly, or yearly |
+| Minimum term               | One year                      | One year                      |
+
+Your Order Form includes your pricing, tier, billing period, and any additional hours purchased.
 
 **Note:** Support hours for all tiers are 9:00 AM – 5:00 PM ET, Monday through Friday, excluding US public holidays.
 
@@ -160,7 +164,7 @@ Recurly provides a monthly usage report that summarises the hours consumed durin
 
 ## Request process
 
-All requests must be submitted through the Online Service Portal (Wrike form).
+All requests must be submitted through the Online Service Portal.
 
 ## Exclusions
 
@@ -173,14 +177,14 @@ Managed Services is focused on technical execution and configuration. The follow
 
 # FAQs
 
-**Q**: **Can I roll over unused hours to the next billing period?**
-**A**: No. Unused hours expire at the end of the billing period and don’t roll over.
+**Can I roll over unused hours to the next billing period?**
+No. Unused hours expire at the end of the billing period and don’t roll over.
 
-**Q**: **What happens if we use all our hours before the billing period ends?**
+**What happens if we use all our hours before the billing period ends?**
 Work pauses when you reach your prepaid limit. Active work resumes at the start of the next billing period (or based on additional hours, if your Order Form allows it).
 
-**Q**: **How should I plan a large initiative?**
+**How should I plan a large initiative?**
 If your request is more than 20 hours, or you’re close to the end of a billing period, plan at least four weeks ahead so Recurly can schedule resources.
 
-**Q**: **How do we submit a request?**
-Submit all requests through the Online Service Portal (Wrike form).
+**How do we submit a request?**
+Submit your requests through the Online Service Portal.
