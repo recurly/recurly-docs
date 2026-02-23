@@ -119,9 +119,9 @@ Accurate configuration of the callbacks URL is pivotal for Recurly to receive ap
 
 6. **Click** “Save changes” at the bottom of the page.
 
-# Adyen Additional Data Configuration
+# Adyen additional data configuration
 
-## Activation of Response Fields via API
+## Activation of response fields via API
 
 To enable card data showing up when a token is received via webhook, you'll want to enable response fields from Adyen.
 
@@ -131,13 +131,13 @@ Navigate to **Developers→Additional Data** in Adyen to enable these features. 
 * Card Summary
 * Expiry date
 
-## Activation of "Network Transaction Reference" and Recurring Details
+## Activation of "Network Transaction Reference" and recurring details
 
 To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Additionally, for payment methods that require tokenization, enabling **Recurring Details** is also essential. This can be done in the same settings area in Adyen.
 
 Navigate to **Developers→Additional Data** in Adyen to enable these features. Once activated, Adyen will generate a unique NTID and reusable token (if applicable) for direct integrations as related to subscriptions; however, this ID will **not** be visible in Recurly.
 
-# Adding Adyen to your Recurly Site
+# Adding Adyen to your Recurly site
 
 1. **Add the Adyen gateway**: Go to **Configuration → Payment Gateways → Add New Gateway** in your Recurly Admin.
 2. **Enter your Adyen credentials**: Provide the **username**, **password**, and **merchant account** details from your Adyen configuration.
@@ -147,7 +147,7 @@ Navigate to **Developers→Additional Data** in Adyen to enable these features. 
 
 > **Note:** Enabling **Network Transaction Reference** in Adyen is required for successful MIT exemptions and payment processing across all methods—including (but not limited to) Google Pay, Apple Pay, and cards. If this setting isn’t enabled, transactions may fail even if your other Adyen settings are correct.
 
-# Special Considerations
+# Special considerations
 
 ## Currencies
 
@@ -223,7 +223,7 @@ Within your Adyen platform:
   * Ensure the GPB currency is available for BACS transactions.
 * Enable RECURRING_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
 
-## Dual Badge Card Support
+## Dual badge card support
 
 On the Adyen platform, Recurly supports the card types of **Cartes Bancaires**, a card brand offered to French customers, **Dankort** which is available only to Danish customers (DKK currency), and **Bancontact**, a brand offered in Belgium. These types of cards are known as "dual-badged" meaning the customer has a preference of which network they process their transactions and subscriptions with. Customers can select the major network (Visa or MasterCard), or the regional network (Cartes Bancaires, Dankort, or Bancontact) when processing a transaction.
 
@@ -423,123 +423,168 @@ For Adyen to send essential details to Recurly, set up specific features based o
 
 These payment methods are pivotal for merchants aiming to expand in Europe and other relevant regions. With Recurly’s integration with Adyen, businesses can offer their customers a plethora of payment options, facilitating smoother transactions and increasing conversion rates. For any queries, connect with our <a href="https://www.recurly.com/contact-us/" target="_blank">support</a> or explore our expansive <a href="https://docs.recurly.com/docs/" target="_blank">knowledge base</a>.
 
-# Gateway Feature Support
+# Gateway feature support
 
-## Adyen Realtime Account Updater
+## Adyen real time account updater
 
-Adyen Realtime Account Updater (RTAU) is a service that will update credit card data, and expiry dates in **realtime** in the flow of a transaction to improve auth rates and keep renewals up to date. We can receive updated expiration dates, and even raw card data from Adyen if a customer's card is out of date. Adyen will return PCI data (card data) encrypted to Recurly, which requires the creation of an RSA key, and passing that key to Adyen for configuration.
+Adyen Real Time Account Updater (RTAU) updates card details and expiration dates in real time during a transaction. This can improve authorisation rates and help keep renewals up to date when a customer’s card details change.
 
-If you would like to enable Realtime Account Updater through Adyen, you will need to first speak to Adyen and ensure you can use it, and come to whatever agreements are necessary with the gateway for that feature.
+Adyen returns Payment Card Industry (PCI) card data encrypted to Recurly. To process those encrypted updates, you must generate an RSA key in Recurly and provide the public key to Adyen for configuration.
 
-When you are ready to enable the feature, follow the below steps:
+Before you start, confirm with Adyen that RTAU is enabled for your account and that you’ve completed any required agreements.
 
-### Ensure Eligibility
+### Ensure eligibility
 
-1. You _are_ using raw cards with Adyen as your primary gateway partner via a supported Recurly API or via Recurly.js (not Adyen Web Components)
-2. You are _not_ using Adyen gateway tokens or Network Tokens
-3. You are _not_ using Adyen Third Party Checkout / Components via Recurly.js
+1. You’re using raw cards with Adyen as your primary gateway through a supported Recurly API or Recurly.js (not Adyen Web Components)
+2. You’re not using Adyen gateway tokens or network tokens
+3. You’re not using Adyen third-party checkout or components through Recurly.js
 
-### Recurly Configuration (RSA Key)
+### Recurly configuration (RSA key)
 
-1. **Set up** and RSA key by navigating to Payment Gateways.
-2. **Click on 'Options** on your Adyen gateway and choose **Manage Keys**.
-3. If you have not set up an RSA key yet, click **Add a Real Time Account Updater Key**. If you have multiple instances of Adyen added to Recurly and they are the same Adyen gateway account, you can "share" an RSA key instead of creating a new one.
-4. Choose **Generate New Key** if necessary, or **Use Existing Key** in the event you wish to share the same key across multiple Adyen instances on Recurly.
-5. Click **Add Key**.
+1. **Navigate** to **Configuration** → **Payment Gateways**
+2. On your Adyen gateway, **select** **Options**, then **select** **Manage Keys**
+3. If you haven’t created a key yet, **select** **Add a Real Time Account Updater Key**
 
-### Adyen Configuration (RSA Key / RTAU Enablement)
+   * If you have multiple Adyen gateway instances that point to the same Adyen account, you can share an RSA key instead of creating a new one
+4. **Select** **Generate New Key**, or **select** **Use Existing Key** to reuse a key across multiple Adyen instances
+5. **Select** **Add Key**
 
-There is no current method to configure an RSA Key in your Adyen account on your own. You will need to copy the public key from Recurly and provide it as your Adyen username to Adyen directly via a support ticket. Please send this request directly to Adyen's support team.
+### Adyen configuration (RSA key and RTAU enablement)
 
-Once Adyen has configured your public RSA key, RTAU will start working automatically.
+You can’t configure the RSA key in the Adyen dashboard directly. Copy the public key from Recurly and provide it to Adyen through a support ticket. Send the request to Adyen support, and include the public key exactly as shown in Recurly.
 
-### How will Adyen RTAU work with Recurly AU?
+Once Adyen applies the public RSA key, RTAU starts working automatically.
 
-If you have both enabled, which is recommended, cards updating through Adyen RTAU will not be sent through to Recurly's Account Updater services. Adyen supports Visa, MasterCard, and regional American Express only. If you wish to continue receiving Discover and all Amex updates, it is recommended to keep Recurly's AU services enabled alongside Adyen RTAU. We will receive the following update types for Adyen's RTAU:
+### How Adyen RTAU works with Recurly Account Updater
 
-* **Card PAN changes**: In this case, we will decrypt the PAN data (as long as an RSA key is set up), and update the billing info on the account.
-  * **Note:** Since Adyen's RTAU works in real time, if a full brand / card update is returned, the incoming card number on the transaction and billing information will be updated to match the new card number that was updated, as Adyen is also **using** the new card to get an approved transaction.
+If you enable both services, card updates that come through Adyen RTAU won’t be sent to Recurly Account Updater. Adyen supports Visa, Mastercard, and regional American Express only. If you want to keep receiving Discover and additional American Express updates, keep Recurly Account Updater enabled alongside Adyen RTAU.
+
+Adyen RTAU updates may include:
+
+* **Card PAN changes**: Recurly decrypts the PAN (when an RSA key is set up) and updates the billing information on the account
+
+  * **Note:** Because RTAU runs in real time, if Adyen returns a full card update, Adyen uses the updated card to complete the transaction, and Recurly saves the updated card for future use
   * **Example:**
-    1. Visa ending in 1234 is sent in for authorization
-    2. Adyen attempts to use Visa 1234 but it declines
-    3. Adyen requests an update to the card in realtime, receives Visa 4567.
-    4. Adyen attempts to use Visa 4567 and it approves.
-    5. Adyen returns an approval, and the encrypted Visa 4567 for future usage.
-* **Card Expiration Date changes**: In this case, we will update the expiration date on file.
-* **Closed Account notices**: In this case, we will invalidate the billing information associated with the account.
-* **Contact customer notices:** In this case, we will not make an update, but Account Activities will have this response noted in the event of a decline.
 
-### Disabling RSA Keys for Adyen's RTAU
+    1. Visa ending in 1234 is sent for authorisation
+    2. Adyen attempts Visa 1234, and it declines
+    3. Adyen requests an update in real time and receives Visa 4567
+    4. Adyen attempts Visa 4567, and it approves
+    5. Adyen returns the approval and encrypted Visa 4567 for future use
+* **Card expiration date changes**: Recurly updates the expiration date on file
+* **Closed account notices**: Recurly invalidates the billing information for the account
+* **Contact customer notices**: Recurly doesn’t update billing information, but logs the response in Account Activities when a transaction declines
 
-If you no longer wish to use Adyen's RTAU, you must disable the RSA key in each Adyen gateway you have enabled it on. You will navigate into **Manage Keys**, and **revoke** each key as necessary to disable the service. You will want to contact Adyen and have RTAU disabled on their side as well.
+### Disable RSA keys for Adyen RTAU
 
-When this occurs, if you have Recurly's Account Updater services enabled, they will start functioning on all applicable card brands once more.
+To stop using Adyen RTAU, revoke the RSA key for each Adyen gateway where it’s enabled:
 
-## Adyen Network Tokens
+1. **Navigate** to **Configuration** → **Payment Gateways**
+2. On the Adyen gateway, **select** **Options** → **Manage Keys**
+3. **Revoke** the RSA key
 
-If you have enabled Adyen to create Network Tokens for your merchant account (cards only), whether or not they are used on a given transaction will be visible in transaction detail and gateway param responses via API.
+You should also contact Adyen to disable RTAU on their side. If Recurly Account Updater is enabled, it resumes processing updates for supported card brands after RTAU is disabled.
 
-This indicator will appear as a boolean value in the new 'Third Party Network Token Used'.
+## Adyen network tokens
 
-If you do not have Adyen Network tokens enabled with the gateway, you will always see 'False' for the value. If you have Adyen Network Tokens enabled in your gateway, you will see 'True' when a network token was used on a given transaction, and 'false' when the raw PAN / Card Data was used for the transaction.
+If Adyen is enabled to create network tokens for your merchant account (cards only), Recurly surfaces whether a network token was used on each transaction.
 
-For questions on when a network token was or was not used, please reach out to your Adyen representative or Adyen support, as this is not controlled by Recurly's systems. Keep in mind, Adyen only use Network Tokenization on tokenized payment methods. Recurly only supports tokenizing cards when using Adyen Web Components via Recurly.js.
+You can find this in:
 
-## Revenue Protect + Protect Premium
+* Transaction details in the Recurly Admin UI
+* Gateway parameter responses through the API
 
-If you are using Protect Premium or Revenue Protect with Adyen, we support sending a multitude of fields and data to the gateway to ensure these features work properly and as you expect.
+Recurly displays this as a boolean field called **Third Party Network Token Used**:
 
-* **Protect Premium Support**: If you have a paid subscription to Adyen's Protect Premium service, you can create custom risk rules and pass the IDs to Recurly via API for subscription signups and one-time charges using our V3 API field: `billing_info.adyen_risk_profile_reference_id`. For more information on creation risk profiles at Adyen, please visit their documentation: [Create Risk Profiles](https://docs.adyen.com/risk-management/create-and-use-risk-profiles/)
-* **Billing and Shipping Address Data**. See considerations for [Shipping Data on Adyen](https://docs.recurly.com/docs/adyen#/special-address-considerations) for more details on handling, and our own Shipping Address documentation for how to [add multiple customer shipping addresses to Recurly](https://docs.recurly.com/docs/shipping-addresses#/).
-* **Shipping Method and Amount**: We'll send the shipping amount on the invoice and the shipping method you set to Adyen when using Shipping on Recurly. Specifically, we will send the Shipping Method "Name" to Adyen, if you would like to configure Revenue Protect for your Recurly shipping methods. Read more about [Shipping Methods](https://docs.recurly.com/docs/shipping#/shipping-methods) in dedicated documentation.
-* **Browser Info**: Recurly sends this data when the shopper is routed through 3DS. Revenue Protect allows you to create and configure rules around browser data at the Adyen gateway.
-* **Shopper Data** including:
-  * Email Address, Phone Number, Name, IP (when the shopper is in session), and shopper reference.
-  * Ensure you have the consumers full and complete data on file, or it will not be sent to the gateway. Shopper IP addresses are not sent to Adyen on renewals.
-* **Acquisition Date**
-  * You can start sending the acquisition date for your accounts using the new `acquisition.acquired_at`field in the V3 API. This will allow Revenue Protect / Protect Premium to make risk decisions based on account age. You can backfill your account acquisition dates by updating existing accounts. Follow our [V3 documentation for using Account acquired_at fields](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase).
+* `False` means a raw primary account number (PAN) or card data was used
+* `True` means a network token was used
 
-Some limitations include:
+If network tokens aren’t enabled in your Adyen account, this value will always be `False`.
 
-* Review Rules are not supported at this time for 'Protect' (new risk engine at Adyen) when using Purchase transactions. You may use 'Review' if you are already handling the capture through your system by using Authorize and Capture behavior.
-  * Options generally include: Allow, Block, Review, and Check for 3DS. Please ensure you are using only Allow, Block, or Check for 3DS if sending purchases instead of authorizations.
+If you have questions about why a network token was or wasn’t used, contact Adyen support or your Adyen representative. Token usage is determined by Adyen, not by Recurly.
+
+**Important:** Adyen uses network tokenisation only for tokenised payment methods. Recurly supports tokenising cards only when you use Adyen Web Components through Recurly.js.
+
+## Revenue Protect and Protect Premium
+
+If you use Revenue Protect or Protect Premium with Adyen, Recurly supports sending the data Adyen needs to evaluate risk and apply your rules.
+
+### Protect Premium support
+
+If you have a paid subscription to Adyen Protect Premium, you can create custom risk profiles in Adyen and pass the profile ID to Recurly when you create subscriptions or one-time charges through the V3 API.
+
+* V3 field: `billing_info.adyen_risk_profile_reference_id`
+* Adyen reference: [Create Risk Profiles](https://docs.adyen.com/risk-management/create-and-use-risk-profiles/)
+
+### Data Recurly sends to support risk decisions
+
+* **Billing and shipping address data**
+
+  * Review [Shipping Data on Adyen](https://docs.recurly.com/docs/adyen#/special-address-considerations)
+  * For setup guidance, see [Shipping addresses](https://docs.recurly.com/docs/shipping-addresses#/)
+* **Shipping method and amount**
+
+  * Recurly sends the invoice shipping amount and the shipping method you set in Recurly
+  * Recurly sends the shipping method **Name** value to Adyen
+  * See [Shipping methods](https://docs.recurly.com/docs/shipping#/shipping-methods)
+* **Browser information**
+
+  * Sent when the shopper is routed through 3D Secure (3DS)
+  * Revenue Protect can evaluate browser-based rules at the gateway
+* **Shopper data**
+
+  * Email address, phone number, name, IP address (when the shopper is in session), and shopper reference
+  * If shopper details aren’t present on the account, they won’t be sent
+  * Shopper IP addresses aren’t sent to Adyen on renewals
+* **Acquisition date**
+
+  * Send account acquisition dates using `acquisition.acquired_at` in the V3 API
+  * You can backfill acquisition dates by updating existing accounts
+  * See the [V3 acquired_at field documentation](https://recurly.com/developers/api/v2021-02-25/#operation/create_purchase)
+
+### Limitations
+
+* **Review rules** aren’t supported for Adyen Protect (new risk engine) when you use Purchase transactions
+
+  * If you need Review, use an Authorise and Capture flow where your system controls capture
+  * When using purchases, use only **Allow**, **Block**, or **Check for 3DS** actions
 
 # Important notes
 
-* Adhere to regulations around customer notifications, like SEPA's renewal notice requirements.
-* Recurly can export billing info from Adyen for SEPA subscription renewals.
-* Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings.
-* Currently, Recurly's Adyen integration doesn't support Level 3 card data.
+* Follow customer notification requirements (for example, SEPA renewal notices)
+* Recurly can export billing information from Adyen for SEPA subscription renewals
+* Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings
+* Recurly’s Adyen integration doesn’t support Level 3 card data at this time
 
 ## How asynchronous payments work
 
-* Upon a successful purchase, the subscription is marked "active", but the invoice and transaction remain "processing" until Adyen confirms payment approval.
-* Recurly sends a "processing payment" webhook to configured endpoints and a "payment processing" email to customers (if enabled).
-* Adyen's initial return token post-billing is "unverified", awaiting bank payment approval.
-* Within 48 hours, the token is "verified" after bank confirmation, enabling further transactions.
-* The status of the transaction and invoice is updated in Recurly based on Adyen's feedback. Appropriate webhooks and emails are issued to businesses and customers respectively.
-* **Dunning and Retries:** Asynchronous payments require special handling in dunning. Refer to the [PayPal eChecks section](https://docs.recurly.com/docs/paypal-payments#paypal-echecks) for detailed insights.
+* After a successful purchase, the subscription is marked as "active", but the invoice and transaction remain "processing" until Adyen confirms payment approval
+* Recurly sends a "processing payment" webhook to configured endpoints and a "payment processing" email to customers (if enabled)
+* Adyen’s initial return token after billing is "unverified" while the bank confirms the payment
+* Within 48 hours, the token becomes "verified", and additional transactions can proceed
+* Recurly updates the transaction and invoice status based on Adyen feedback, and sends the relevant webhooks and emails
+* **Dunning and retries:** Asynchronous payments need special handling in dunning. See the PayPal eChecks guidance in [PayPal payments](https://docs.recurly.com/docs/paypal-payments#paypal-echecks)
 
 ## Asynchronous payment methods
 
-Adyen offers various asynchronous payment methods like SEPA and Boleto, which take several days for settlement. Due to this, the payment processing for such methods deviates slightly in Recurly.
+Adyen supports asynchronous payment methods such as SEPA and Boleto. Because these methods can take several days to settle, payment processing behaves differently in Recurly.
 
 ## For customer billing information updates
 
-For billing information changes, direct customers to Recurly's hosted pages. Recurly charges the new billing info a minimal amount. Once Adyen validates the new info (i.e., approves the purchase), Recurly automatically issues a refund.
+For billing information updates, direct customers to Recurly hosted pages. Recurly charges the new billing information a small amount. After Adyen approves the purchase, Recurly automatically issues a refund.
 
 ## IP address allowlist
 
-For certain scenarios, Adyen may employ additional IP addresses. These must be whitelisted in Recurly. Before transitioning to Production, contact Recurly Support for assistance.
+In some scenarios, Adyen may use additional IP addresses. These must be allowlisted in Recurly. Before you move to production, contact Recurly Support for help.
 
-## API Integration with Recurly
+## API integration with Recurly
 
-Typically, purchases using Recurly.js involve Recurly handling payments natively. The customer first provides their billing details. Once authorized, you create the subscription and process the charge.
+In a standard Recurly.js flow, Recurly handles payment authorisation. The customer enters billing details first. After authorisation, you create the subscription and process the charge.
 
 # Troubleshooting
 
-**Q:** An Tokenized Payment Method I am using (all non-Card payments) is not allowing conversions or subscriptions are failing. What can I do?
-**A:** Ensure you have enabled the proper Webhooks -- `RECURRING_CONTRACT` webhooks are critical to ensuring these payment methods function properly. Please see our configuration documentation for these webhooks above.
+**Q: A tokenised payment method I’m using (all non-card payments) isn’t allowing conversions, or subscriptions are failing. What can I do?**
+**A:** Confirm you’ve enabled the required webhooks. `RECURRING_CONTRACT` webhooks are critical for these payment methods. See the webhook configuration section above.
 
-**Q:** My customer tried to check out but received a decline from Adyen, what happened?
-**A:** It will depend on the decline code you see in your Recurly Admin page for this transaction. If the rejection is due to 3DS requirements, please ensure you have 3DS enabled and configured both in Adyen and in your Recurly.js integration. If you already have 3DS enabled, the customer may not have completed the 3DS challenge successfully and the decline is expected.
+**Q: My customer tried to check out and got a decline from Adyen. What happened?**
+**A:** Start with the decline code shown in the Recurly Admin UI for the transaction. If the decline is related to 3DS, confirm 3DS is enabled and configured in both Adyen and your Recurly.js implementation. If 3DS is already enabled, the customer may not have completed the 3DS challenge successfully, and the decline is expected.
