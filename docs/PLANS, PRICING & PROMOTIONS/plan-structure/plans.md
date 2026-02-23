@@ -178,8 +178,6 @@ After a plan is configured, you can create [Checkout](https://docs.recurly.com/d
 
 # Updating plans
 
-<br />
-
 1. **Navigate** to **Configuration** → **Plans**.
 2. From the plan list view (hover over the plan row), or from the plan actions menu on the plan details page, **select** "Edit".
 3. **Make** your changes, then **select** "Save Changes".
