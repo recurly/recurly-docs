@@ -177,14 +177,14 @@ Managed Services is focused on technical execution and configuration. The follow
 
 # FAQs
 
-**Can I roll over unused hours to the next billing period?**
-No. Unused hours expire at the end of the billing period and don’t roll over.
+**Q**: **Can I roll over unused hours to the next billing period?**
+**A**: No. Unused hours expire at the end of the billing period and don’t roll over.
 
-**What happens if we use all our hours before the billing period ends?**
-Work pauses when you reach your prepaid limit. Active work resumes at the start of the next billing period (or based on additional hours, if your Order Form allows it).
+**Q**: **What happens if we use all our hours before the billing period ends?**
+**A**: Work pauses when you reach your prepaid limit. Active work resumes at the start of the next billing period (or based on additional hours, if your Order Form allows it).
 
-**How should I plan a large initiative?**
-If your request is more than 20 hours, or you’re close to the end of a billing period, plan at least four weeks ahead so Recurly can schedule resources.
+**Q:** **How should I plan a large initiative?**
+**A**: If your request is more than 20 hours, or you’re close to the end of a billing period, plan at least four weeks ahead so Recurly can schedule resources.
 
-**How do we submit a request?**
-Submit your requests through the Online Service Portal.
+**Q**: **How do we submit a request?**
+**A**: Submit your requests through the Online Service Portal.
