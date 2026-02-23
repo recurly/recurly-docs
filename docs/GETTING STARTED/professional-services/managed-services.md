@@ -72,17 +72,17 @@ Managed Services focuses on hands-on execution and configuration. Examples of el
 
 Your entitlements depend on the service tier selected in your Order Form.
 
-| Feature                    | Basic tier                         | Enhanced tier                      |
-| -------------------------- | ---------------------------------- | ---------------------------------- |
-| Request method             | Online Service Portal (Wrike form) | Online Service Portal (Wrike form) |
-| Response time              | Within three business days         | Within one business day            |
-| Resource allocation target | Within two weeks                   | Within one week                    |
-| Baseline monthly hours     | Five                               | 25                                 |
-| Additional monthly hours   | As defined in Order Form           | As defined in Order Form           |
-| Governance meetings        | Quarterly (30 minutes)             | Monthly (30 minutes)               |
-| Standard hourly rate       | $275/hour                          | $250/hour                          |
-| Billing period choices     | Monthly, quarterly, or yearly      | Monthly, quarterly, or yearly      |
-| Minimum term               | One year                           | One year                           |
+| Feature                        | Basic tier                         | Enhanced tier                      |
+| ------------------------------ | ---------------------------------- | ---------------------------------- |
+| **Request method**             | Online Service Portal (Wrike form) | Online Service Portal (Wrike form) |
+| **Response time**              | Within three business days         | Within one business day            |
+| **Resource allocation target** | Within two weeks                   | Within one week                    |
+| **Baseline monthly hours**     | 5                                  | 25                                 |
+| **Additional monthly hours**   | As defined in Order Form           | As defined in Order Form           |
+| **Governance meetings**        | Quarterly (30 minutes)             | Monthly (30 minutes)               |
+| **Standard hourly rate**       | $275/hour                          | $250/hour                          |
+| **Billing period choices**     | Monthly, quarterly, or yearly      | Monthly, quarterly, or yearly      |
+| **Minimum term**               | One year                           | One year                           |
 
 **Note:** Support hours for all tiers are 9:00 AM – 5:00 PM ET, Monday through Friday, excluding US public holidays.
 
