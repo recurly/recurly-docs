@@ -68,6 +68,28 @@ Managed Services focuses on hands-on execution and configuration. Examples of el
   * Running “tune-up” audits of your current implementation
   * Implementing a custom retry model
 
+<Cards>
+  <Card title="Onboarding support" href="#" icon="fa-users">
+    Onboarding new teams or new business units across Recurly products.
+  </Card>
+
+  <Card title="Ad hoc training" href="#" icon="fa-chalkboard-teacher">
+    Ad hoc training.
+  </Card>
+
+  <Card title="Data and reporting" href="#" icon="fa-chart-line">
+    Data and reporting work, such as building custom reports and/or exports; executing bulk API scripts; supporting data migrations; and configuring data feeds.
+  </Card>
+
+  <Card title="Configuration and optimisation" href="#" icon="fa-sliders-h">
+    Configuration and optimisation work, such as adjusting settings, plans, or gateways as your business needs evolve; creating new prompts and/or tuning existing ones; and period close assistance.
+  </Card>
+
+  <Card title="Solution extension" href="#" icon="fa-puzzle-piece">
+    Solution extension work, such as implementing new features or “tune-up” audits of the current implementation, and custom retry model implementation.
+  </Card>
+</Cards>
+
 ## Service packages and service levels
 
 Your entitlements depend on the service tier selected in your Order Form.
