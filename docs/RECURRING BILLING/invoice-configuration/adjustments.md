@@ -75,7 +75,7 @@ For more straightforward scenarios, or when you need to create a charge without 
 
 This method is particularly useful when you want to create a charge on a customer's account but do not want the customer to be charged until their next invoice. For example, if you add a charge in the middle of a billing cycle, you might want that charge to be included on the next regularly scheduled invoice rather than generating a new invoice immediately.
 
-<Image align="center" border={false} width="75% " src="https://files.readme.io/4fcbd1a7339135f2c54e08cab1d117c8e00d2668c38b7d759147f7485a5fc190-image.png" />
+<Image align="center" width="75% " src="https://files.readme.io/4fcbd1a7339135f2c54e08cab1d117c8e00d2668c38b7d759147f7485a5fc190-image.png" />
 
 ### Create credits using the Admin UI
 
@@ -92,7 +92,24 @@ When issuing a credit, you have full control over the amount of the credit, the 
 
 ### Credit Application Control
 
-Recurly provides the ability to dictate when available credit is used.  This can be set when creating or editing a subscription through the [subscription V3 API](https://recurly.com/developers/api/v2021-02-25/index.html#tag/subscription) using the `credit_application_policy` field.  Optionally, you may choose to override this on specific purchases through the [purchase V3 API](https://recurly.com/developers/api/v2021-02-25/index.html#tag/purchase) using the `credit_application_policy_override` field.  If neither of these are used, the default behavior to automatically use credits will be invoked.
+Recurly provides the ability to dictate when available credit is used by setting the `credit_application_policy` field while creating or editing a subscription, creating a purchase, or creating an invoice through the V3 API.  Furthermore, when `credit_application_policy` is set to `all`, you may choose which credit invoice origin types (credit, gift card, prepayment, etc) can be used.  Optionally, you may choose to override a subscription's credit application policy on a specific purchase using the `credit_application_policy_override` field.  If neither of these are used, the default behavior to automatically use credits will be invoked.
+
+**Example:**
+
+```json
+"credit_application_policy": {
+	"mode": "all",
+	"allowed_origins": [
+		"line_item_refund"
+	]
+}
+```
+
+**Impacted APIs:**
+
+1. [Purchases](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_purchase)
+2. [Invoices](https://recurly.com/developers/api/v2021-02-25/index.html#tag/invoice)
+3. [Subscriptions](https://recurly.com/developers/api/v2021-02-25/index.html#tag/subscription)
 
 ### Creating a custom charge in the UI:
 
