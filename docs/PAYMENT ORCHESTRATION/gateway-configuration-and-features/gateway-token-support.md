@@ -22,9 +22,9 @@ To use gateway tokens from a supported provider — or to import existing tokens
 
 ### Limitations
 
-**Imported token behaviour**
-
-If you have a specific payment or functionality requirement and intend to bypass Recurly.js or otherwise not provide raw payment details by sending gateway tokens, contact Recurly Support or your Customer Success Manager to discuss your options.
+> 📘 **Imported token behaviour**
+>
+> If you have a specific payment or functionality requirement and intend to bypass Recurly.js or otherwise not provide raw payment details by sending gateway tokens, contact Recurly Support or your Customer Success Manager to discuss your options.
 
 * If only a **gateway token** is present, **gateway failover** to other providers isn’t possible
 * **Imported tokens** typically don’t display full payment method details and are treated as generic tokens
