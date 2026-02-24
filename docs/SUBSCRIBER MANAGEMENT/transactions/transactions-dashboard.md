@@ -121,9 +121,9 @@ For a detailed explanation of each error code, please visit our developers' docu
 
 This section provides information about the address and CVV verification checks, as well as 3DS Authentication status where performed by the payment gateway.  For Fraud Velocity Checks and additional fraud prevention measures, we recommend partnering with our third-party fraud providers. Please contact your Account Executive or Account Manager for more information.
 
-AVS / CVV Codes are normalized in Recurly's systems to display not only the code, but a short sentence to explain the Issuer's response. Example, a gateway may return the letter 'A', which means 'Address matches, but the postal code does not match.'. This means that the consumer provided the proper street address, but their zip code is wrong, based on information their Bank has on file. This is not a code Recurly derives.
+**AVS / CVV Codes** are normalized in Recurly's systems to display not only the code, but a short sentence to explain the Issuer's response. Example, a gateway may return the letter 'A', which means 'Address matches, but the postal code does not match.'. This means that the consumer provided the proper street address, but their zip code is wrong, based on information their Bank has on file. This is not a code Recurly derives.
 
-3DS Status messages are also normalized in Recurly to display the final authentication result, and applicable meta-data related to the authentication event. We may receive all or partial data from a given gateway provider, but will always show the final results: 
+**3DS Status** messages are also normalized in Recurly to display the final authentication result, and applicable meta-data related to the authentication event. We may receive all or partial data from a given gateway provider, but will always show the final results: 
 
 * **Authenticated**: the customer successfully authenticated their identity through 3DS.
 * **Attempted**: the customer attempted authentication but the upstream 3DS provider was unavailable, or otherwise is not supported for this card. The authentication attempt did not fail or succeed.
