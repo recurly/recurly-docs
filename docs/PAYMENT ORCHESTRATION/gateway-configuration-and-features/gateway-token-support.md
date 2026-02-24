@@ -130,6 +130,12 @@ Imported Fiserv TransArmor tokens can be used, but may have degraded performance
 
 > **Note:** Only TransArmor tokens are supported. Recurly doesn’t create these tokens, but you can send them through the API for migrations or point-of-sale (card-present) use cases.
 
+## FreedomPay
+
+Imported FreedomPay tokens can be imported or sent in via API. If you run renewals with FreedomPay tokens, make sure you pass the CIT NTID when creating future-dated subscriptions. See [Using gateway tokens and external NTIDs with Recurly APIs](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/) .
+
+> **Note:** Only certain type of FreedomPay tokens are supported. Recurly doesn’t create these tokens, but you can send them through the API for migrations or point-of-sale (card-present) use cases.
+
 ## Amazon Pay
 
 Payment instruments are stored with Amazon Pay. Recurly stores a Billing Agreement or Charge Permission ID for renewals and one-time payments (Amazon Pay V1 and V2). These can be imported if you use Amazon Pay V1 or V2. Charge Permission IDs are supported only on Amazon Pay V2.
