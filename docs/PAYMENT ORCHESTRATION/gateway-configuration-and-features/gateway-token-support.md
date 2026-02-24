@@ -144,7 +144,7 @@ Payment instruments are stored with PayPal and aren’t accessible to Recurly. R
 
 PayPal Complete is a special case: Recurly retains raw card details (PAN) and creates a PayPal token for renewals. Legacy PayPal and PayPal Complete gateways can use Billing Agreement IDs. Only PayPal Complete supports the newer PayPal token.
 
-## Where is the payment data stored?
+# Where is the payment data stored?
 
 Use this matrix to understand which system stores the payment instrument based on gateway and checkout flow.
 
