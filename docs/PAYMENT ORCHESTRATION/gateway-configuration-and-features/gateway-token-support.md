@@ -88,7 +88,7 @@ Recurly may tokenise payment methods in some flows, and securely store payment i
 
 All payment methods are tokenised. Recurly also retains card data. With Stripe Payment Elements, Stripe retains the raw card data and Recurly doesn’t have access to the primary account number (PAN).
 
-Recurly supports Stripe confirmation tokens (`c_tokens`) and exchanges them for reusable Payment Method IDs (Stripe gateway tokens). Recurly receives gateway tokens from Stripe only on approved payments.
+Recurly supports Stripe confirmation tokens (`ctoken_xxxxx`) and exchanges them for reusable Payment Method IDs (Stripe gateway tokens). Recurly receives gateway tokens from Stripe only on approved payments.
 
 If you import Stripe tokens, the payment methods are generic and may have degraded performance. For card renewals with imported Stripe tokens, make sure you pass the cardholder-initiated transaction (CIT) network transaction ID (NTID) when creating future-dated subscriptions. See [Using gateway tokens and external NTIDs with Recurly APIs](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/) .
 
@@ -97,6 +97,8 @@ If you import Stripe tokens, the payment methods are generic and may have degrad
 > **Reusable tokens:** Stripe Customer and Payment Method tokens are supported (for example, `cus_xxxxx` and `pm_xxxxx`). Stripe card tokens (`card_xxxx`) aren’t supported.
 >
 > **One-time tokens:** Stripe confirmation tokens from Elements are supported (`ctoken_xxxxx`). Stripe Tokens (`tok_xxxx`) aren’t supported
+>
+> **Stripe Token types**: Stripe has other token types such as Token (`tok_xxxxx`) and Card (`card_xxxxx`), which we do not support.
 
 ## Braintree
 
