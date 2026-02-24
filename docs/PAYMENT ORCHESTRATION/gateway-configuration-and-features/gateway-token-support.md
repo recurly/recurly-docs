@@ -4,7 +4,7 @@ excerpt: >-
   Understand how Recurly supports gateway tokens, network tokens, and where
   payment data is stored.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
