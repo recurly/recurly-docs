@@ -32,7 +32,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/1e75403-image.png" />
+<Image align="center" border={true} width="70% " src="https://files.readme.io/1e75403-image.png" className="border" />
 
 The Transactions Dashboard in Recurly provides a comprehensive overview of all financial transactions processed through the platform. It includes features for searching transactions, understanding various transaction types, managing refunds and voids, and performing fraud checks, all designed to streamline the financial management of customer accounts.
 
@@ -52,27 +52,29 @@ You also have the option to narrow down your search based on the payment gateway
 
 Below is a table describing the various types of transactions you may encounter:
 
-| Transaction   | Description                                                                                                                                           |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Payments      | Any purchase made through Recurly.                                                                                                                    |
-| Refunds       | Transactions where funds were returned following a successful Recurly transaction.                                                                    |
-| Verifications | Transactions, usually of $0 or $1, used to verify billing information. These are immediately voided after verification.                               |
-| MOTO          | Stands for Mail Order Telephone Order. These are transactions initiated through Recurly's Admin UI or via API, requiring the feature to be activated. |
+| Transaction   | Description                                                                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Verification  | Transactions, usually of $0 or $1, used to verify billing information. These are immediately voided after verification.                         |
+| Payment       | Most purchases made through Recurly.                                                                                                            |
+| Authorization | An Auth-Only Purchase made through Recurly using the `/purchases/authorize` endpoint.                                                           |
+| Capture       | A referenced Transaction to complete an Authorization. Only Authorizations may be captured.                                                     |
+| Refund        | Transactions where funds were returned following a successful Recurly transaction. Refunds typically occur post-settlement with your gateway.   |
+| Void          | Transactions were funds were returned follow a successful Payment or Authorization prior to settlement (same day). Else, a Refund is submitted. |
 
 ## Transaction statuses
 
 This table outlines possible statuses a transaction can have, offering insights into its processing stage or outcome:
 
-| Status     | Description                                                                        |
-| ---------- | ---------------------------------------------------------------------------------- |
-| Successful | Transactions that have been approved by the payment gateway.                       |
-| Declined   | Transactions that were not approved by the payment gateway.                        |
-| Voided     | Transactions that have been cancelled before any exchange of funds.                |
-| Fraudulent | Transactions identified as fraudulent.                                             |
-| Pending    | Transactions that are awaiting completion or further action.                       |
-| Scheduled  | Transactions that are set to be processed at a future date.                        |
-| Processing | Transactions that are currently being processed by the payment gateway.            |
-| Chargeback | Represents a chargeback on an ACH payment, currently in beta for ACH transactions. |
+| Status     | Description                                                             |
+| ---------- | ----------------------------------------------------------------------- |
+| Successful | Transactions that have been approved by the payment gateway.            |
+| Declined   | Transactions that were not approved by the payment gateway.             |
+| Voided     | Transactions that have been cancelled before any exchange of funds.     |
+| Fraudulent | Transactions identified as fraudulent.                                  |
+| Pending    | Transactions that are awaiting completion or further action.            |
+| Scheduled  | Transactions that are set to be processed at a future date.             |
+| Processing | Transactions that are currently being processed by the payment gateway. |
+| Chargeback | Represents a chargeback on a Card or Bank / Direct Debit payment.       |
 
 ## Transaction search
 
@@ -117,8 +119,17 @@ For a detailed explanation of each error code, please visit our developers' docu
 
 ### Fraud details
 
-This section provides information about the address verification checks performed by the payment gateway.\
-For Fraud Velocity Checks and additional fraud prevention measures, we recommend partnering with our third-party fraud providers. Please contact your Account Executive or Account Manager for more information.
+This section provides information about the address and CVV verification checks, as well as 3DS Authentication status where performed by the payment gateway.  For Fraud Velocity Checks and additional fraud prevention measures, we recommend partnering with our third-party fraud providers. Please contact your Account Executive or Account Manager for more information.
+
+AVS / CVV Codes are normalized in Recurly's systems to display not only the code, but a short sentence to explain the Issuer's response. Example, a gateway may return the letter 'A', which means 'Address matches, but the postal code does not match.'. This means that the consumer provided the proper street address, but their zip code is wrong, based on information their Bank has on file. This is not a code Recurly derives.
+
+3DS Status messages are also normalized in Recurly to display the final authentication result, and applicable meta-data related to the authentication event. We may receive all or partial data from a given gateway provider, but will always show the final results: 
+
+* **Authenticated**: the customer successfully authenticated their identity through 3DS.
+* **Attempted**: the customer attempted authentication but the upstream 3DS provider was unavailable, or otherwise is not supported for this card. The authentication attempt did not fail or succeed.
+* **Failed**: the customer finished authentication, but their input was rejected. This typically means the person attempting to process is not the cardholder. 
+* **Exempted**: the customer was exempted from 3DS authentication, meaning the transaction and consumer qualified for Frictionless flow (no challenge), or a number of other exemption options such as a low value exemption, merchants who have low fraud rates (TRA), or merchants who are listed in the consumer's bank app as 'trusted'.
+* **Error**: the 3DS server or provider experienced a hard error, and 3DS could not continue.
 
 ## Settling transactions
 
@@ -134,7 +145,7 @@ When billing information is added or updated on an account, Recurly issues a $1.
 >
 > It is recommended to only refund Direct Debit transactions after at least 1 week from the original authorization date to avoid financial losses. Bank transactions are not immediately authorized and can take several days to return from the consumer's bank as insufficient funds or otherwise not successful.
 >
-> Direct Debit chargebacks are also typically non-defensible and can occur quite a while after the initial payment takes place. Ensure you are offering refunds to KYC'd customers and ensure consumers are aware of bank refund timeframes so they do not *also* initiate a chargeback which could result in financial losses.
+> Direct Debit chargebacks are also typically non-defensible and can occur quite a while after the initial payment takes place. Ensure you are offering refunds to KYC'd customers and ensure consumers are aware of bank refund timeframes so they do not _also_ initiate a chargeback which could result in financial losses.
 
 An unsettled transaction can be voided, which stops the transaction from settling and removes it from the customer's bank statement (timing is up to the consumer's individual bank). Once a transaction has settled, it can only be refunded. Since payment gateways have varying processing times for settling transactions, Recurly automatically attempts a void before processing a refund. Note that partial refunds can only be issued on a settled transaction, so it's advisable to wait 24 hours after an initial transaction before attempting a partial refund.
 
@@ -149,5 +160,5 @@ To refund or void a transaction or invoice:
 3. **Choose** the specific charge line items for refund, with options to prorate subscription charges or select specific quantities. For custom refund amounts, **click** "Refund a partial item or specific amount?" ensuring the amount does not exceed the original transaction value. Unsettled transactions can only be fully refunded (voided).
 4. If the invoice includes credit line items and you're doing a partial refund, **choose** to return credit to the account first and then create a transaction for any remaining amount, or **opt** for "Transaction first" to issue money back to the customer before returning any credit. By default, refunds return credit to the account first. Change this preference using the radio buttons at the top of the page.
 5. **Click Preview Refund** to review the refund details, including discounts, taxes, and credit being returned.
-6. To complete the refund, **click Refund Charges**. This action will generate a refund invoice and transaction.\
+6. To complete the refund, **click Refund Charges**. This action will generate a refund invoice and transaction.  
    Learn more about invoices for voided and refunded transactions in our [Invoices](/docs/invoices) section.
