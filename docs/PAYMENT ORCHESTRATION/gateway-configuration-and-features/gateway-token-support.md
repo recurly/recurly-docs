@@ -108,7 +108,7 @@ With Recurly.js or hosted pages (for example, Checkout), Recurly creates a Brain
 
 If you want to vault tokens in Braintree automatically, see [Configuration steps for Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd#/step-2-configure-braintree-in-recurly) .
 
-Braintree doesn’t support PayPal Billing Agreement IDs and won’t process them.
+Braintree doesn’t support PayPal Billing Agreement IDs and won’t process them. If you are importing tokens or migrating from a PayPal direct integration, you must first vault these Billing Agreements with Braintree. You can speak to our Professional Services team about this process.
 
 If you import Braintree tokens, the payment methods are generic and may have degraded performance. For card renewals with imported Braintree tokens, make sure you pass the CIT NTID when creating future-dated subscriptions. See [Using gateway tokens and external NTIDs with Recurly APIs](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/) .
 
