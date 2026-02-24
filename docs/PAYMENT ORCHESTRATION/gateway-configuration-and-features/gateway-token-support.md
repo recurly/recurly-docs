@@ -124,12 +124,6 @@ If you import Adyen tokens, payment methods are generic and may have degraded pe
 
 > **Note:** Recurly supports Adyen ShopperReference IDs and Recurring Detail References. No other Adyen tokens are supported.
 
-## Vantiv
-
-Imported card tokens can be used, but may have degraded performance because they remain generic in Recurly. Recurly doesn’t tokenise cards with Vantiv automatically.
-
-For imported tokens, Recurly doesn’t have raw PAN, so failover and orchestration to other gateways isn’t available. If you run renewals with Vantiv tokens, make sure you pass the CIT NTID when creating future-dated subscriptions. See [Using gateway tokens and external NTIDs with Recurly APIs](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/) .
-
 ## CommerceHub / Fiserv
 
 Imported Fiserv TransArmor tokens can be used, but may have degraded performance. If you run renewals with CommerceHub tokens, make sure you pass the CIT NTID when creating future-dated subscriptions. See [Using gateway tokens and external NTIDs with Recurly APIs](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/) .
