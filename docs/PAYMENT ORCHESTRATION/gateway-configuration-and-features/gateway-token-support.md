@@ -1,5 +1,5 @@
 ---
-title: Gateways and Token support
+title: Gateways and token support
 excerpt: >-
   Understand how Recurly supports gateway tokens, network tokens, and where
   payment data is stored.
