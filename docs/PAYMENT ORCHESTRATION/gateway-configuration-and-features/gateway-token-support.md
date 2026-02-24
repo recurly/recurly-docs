@@ -1,8 +1,8 @@
 ---
 title: Gateways and Token support
 excerpt: >-
-  What network tokens, gateway tokens, and one‑time tokens are; how Recurly uses
-  them; where payment data is stored; and feature considerations.
+  Understand how Recurly supports gateway tokens, network tokens, and where
+  payment data is stored.
 deprecated: false
 hidden: true
 metadata:
