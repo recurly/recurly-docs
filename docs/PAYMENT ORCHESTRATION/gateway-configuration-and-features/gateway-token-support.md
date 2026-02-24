@@ -24,7 +24,7 @@ To use gateway tokens from a supported provider — or to import existing tokens
 
 > 📘 **Imported token behaviour**
 >
-> If you have a specific payment or functionality requirement and intend to bypass Recurly.js or otherwise not provide raw payment details by sending gateway tokens, contact Recurly Support or your Customer Success Manager to discuss your options.
+> If you have a specific payment or functionality requirement and intend to bypass Recurly.js or otherwise not provide raw payment details by sending gateway tokens, **contact Recurly Support** or your **Customer Success Manager** to discuss your options.
 
 * If only a **gateway token** is present, **gateway failover** to other providers isn’t possible
 * **Imported tokens** typically don’t display full payment method details and are treated as generic tokens
@@ -68,14 +68,14 @@ Recurly supports other token types to cover more payment scenarios:
 ## Gateway token interoperability
 
 * Gateway tokens can be used only on the gateway they originate from
-  * Example: Stripe tokens work only on Stripe, and won’t work on Adyen
+  * **Example:** Stripe tokens work only on Stripe, and won’t work on Adyen
   * Even related platforms (for example, Braintree and PayPal) aren’t always compatible
   * If you’re unsure, contact Recurly Support before you attempt to use a token on a gateway
 * Gateway tokens are usually limited to the specific gateway account that created them
-  * Example: An Adyen token created on one Adyen account typically can’t be used on a different Adyen account, even if it’s the same provider
+  * **Example:** An Adyen token created on one Adyen account typically can’t be used on a different Adyen account, even if it’s the same provider
   * When using gateway tokens across different `gateway_code` values in Recurly, confirm your tokens can be used on that gateway account
 * If you have multiple instances of the same gateway in Recurly, and they map to the same gateway account, tokens can typically be used across those instances
-  * Example: If you add the same Stripe account twice in Recurly, Stripe tokens can be used across both gateway instances
+  * **Example:** If you add the same Stripe account twice in Recurly, Stripe tokens can be used across both gateway instances
   * If you have two different Stripe accounts, their tokens aren’t transferable and payments may fail
 * If you send a gateway token without a `gateway_code` on an existing Account or Billing Info ID, Recurly uses the `gateway_code` the token was first created or added with
   * If you need to use a different `gateway_code`, include it in your API payload
