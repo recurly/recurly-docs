@@ -80,7 +80,7 @@ Recurly supports other token types to cover more payment scenarios:
 * If you send a gateway token without a `gateway_code` on an existing Account or Billing Info ID, Recurly uses the `gateway_code` the token was first created or added with
   * If you need to use a different `gateway_code`, include it in your API payload
 
-## When does Recurly tokenise?
+# When does Recurly tokenise?
 
 Recurly may tokenise payment methods in some flows, and securely store payment instruments in others. The behaviour depends on the gateway and the checkout flow.
 
