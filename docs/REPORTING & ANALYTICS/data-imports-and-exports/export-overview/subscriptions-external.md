@@ -24,7 +24,7 @@ You must have enabled connections to app stores to view this export. Please reac
 
 The "Subscriptions - External" export function allows you to identify and gather detailed information on external subscriptions stored on third-party platforms like the Apple App Store or Google Play Store. It aims to provide Recurly users with comprehensive data regarding the statuses and details of external subscriptions tied to different accounts.
 
-<Image border={false} src="https://files.readme.io/d5b09af0527f2f611eb8a9f53fa3dfbddb716818f33f2da7725d96cd2b526f79-image.png" />
+![](https://files.readme.io/d5b09af0527f2f611eb8a9f53fa3dfbddb716818f33f2da7725d96cd2b526f79-image.png)
 
 # Filters
 
@@ -127,7 +127,7 @@ Addition of uuid.
 
 * Addition of `external_subscription_api_id`.
 
-#### Version 3 - 7/6/2023
+#### Version 4 - 7/6/2023
 
 * Column added for state
 * Column added for trial_started_at
