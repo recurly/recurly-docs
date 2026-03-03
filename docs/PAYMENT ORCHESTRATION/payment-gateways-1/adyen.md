@@ -18,6 +18,12 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Requirements 
+
+* Ensure you have your Business Entity Merchant Category Code filled in properly.
+* Ensure you have set up your Adyen webhooks, user permissions, and Response settings properly within your gateway account or critical updates and response information will cause renewals and/or asynchronous payment methods to fail. Please follow all instructions in this document to avoid issues. 
+* Certain features require Adyen's V71 Checkout version, which is feature flagged in our system today. This will require you to capture CVV from return customers via API or Recurly.js. Please speak to Support for more information.
+
 ### Limitations
 
 > ❗️ Minimum processing requirements
