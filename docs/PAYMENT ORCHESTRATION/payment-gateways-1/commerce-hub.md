@@ -119,7 +119,7 @@ You will also need the following details to onboard to Recurly successfully:
 
 * Fiserv Merchant ID
 * Terminal ID
-* Service Entitlement Number (former Payeezy Merchants only)
+* Service Entitlement Number (former Payeezy Merchants only) for Descriptors
 
 Optional credentials include the below fields. These are optional and aren’t necessary unless you have more than one site ID/store ID and wish to route.
 
