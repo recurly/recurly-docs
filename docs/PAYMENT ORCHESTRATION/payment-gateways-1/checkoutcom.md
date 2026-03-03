@@ -19,6 +19,10 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
+### Requirements 
+
+* Ensure you have your Business Entity Merchant Category Code filled in properly.
+
 ### Limitations
 
 <Callout icon="📘" theme="info">
