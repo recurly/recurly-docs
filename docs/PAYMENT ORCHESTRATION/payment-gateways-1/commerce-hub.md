@@ -23,6 +23,7 @@ Commerce Hub is a full-service payment management platform, developed by Fiserv 
 ## Requirements
 
 * Ensure your Commerce Hub Merchant Account is set up to support "Multi-Use Public Key Encryption (MUPK)", and that it's set to recycle every 10 days at least. This is not enabled by default.
+* Ensure you have your Business Entity Merchant Category Code filled in properly.
 
 ## Limitations
 
@@ -161,8 +162,6 @@ USD will be enabled by default. If you want to add additional currencies, or rem
 After entering all the required information, click on the "Add Payment Gateway" button at the bottom of the page.
 
 You will see that Commerce Hub has been added to your list of Production Gateways in Recurly with a status of "Enabled".
-
-<br />
 
 ### Step 7: Test the configuration (recommended)
 
