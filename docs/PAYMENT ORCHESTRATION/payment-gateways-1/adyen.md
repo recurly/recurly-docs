@@ -18,10 +18,10 @@ next:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Requirements 
+### Requirements
 
 * Ensure you have your Business Entity Merchant Category Code filled in properly.
-* Ensure you have set up your Adyen webhooks, user permissions, and Response settings properly within your gateway account or critical updates and response information will cause renewals and/or asynchronous payment methods to fail. Please follow all instructions in this document to avoid issues. 
+* Ensure you have set up your Adyen webhooks, user permissions, and Response settings properly within your gateway account or critical updates and response information will cause renewals and/or asynchronous payment methods to fail. Please follow all instructions in this document to avoid issues.
 * Certain features require Adyen's V71 Checkout version, which is feature flagged in our system today. This will require you to capture CVV from return customers via API or Recurly.js. Please speak to Support for more information.
 
 ### Limitations
@@ -560,7 +560,6 @@ If you have a paid subscription to Adyen Protect Premium, you can create custom 
 * Follow customer notification requirements (for example, SEPA renewal notices)
 * Recurly can export billing information from Adyen for SEPA subscription renewals
 * Recurly sends purchase transactions to Adyen with a capture flag, overriding your Adyen settings
-* Recurly’s Adyen integration doesn’t support Level 3 card data at this time
 
 ## How asynchronous payments work
 
