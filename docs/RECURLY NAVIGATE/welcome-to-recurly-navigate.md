@@ -1,7 +1,7 @@
 ---
 title: 'Recurly Navigate: Site Index'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
