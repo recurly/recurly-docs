@@ -14,7 +14,7 @@ next:
       title: Course Overview
       type: basic
 ---
-<Image align="center" border={true} src="https://files.readme.io/0187c240adc9c712a962c5961290858f52edb40e23c386a600162b32aee2ff78-Liftoff_with_Launchpad.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/0187c240adc9c712a962c5961290858f52edb40e23c386a600162b32aee2ff78-Liftoff_with_Launchpad.png" />
 
 # Phase 1: Optimization
 
