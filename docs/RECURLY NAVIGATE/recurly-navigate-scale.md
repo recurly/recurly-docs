@@ -1,7 +1,7 @@
 ---
 title: 'Recurly Navigate: Scale'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
