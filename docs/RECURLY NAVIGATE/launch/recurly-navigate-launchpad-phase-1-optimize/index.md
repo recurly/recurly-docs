@@ -8,17 +8,10 @@ hidden: true
 metadata:
   robots: index
 next:
-  description: >-
-    **Phase 2 of the Launchpad program** will explore how to use Recurly data to
-    uncover insights, make confident decisions, and grow smarter. From
-    benchmarks to subscriber metrics to a personalized Health Scorecard — the
-    focus will be on valuable data.
-
-
-    Click below to continue to Phase 2. 
+  description: 'Click below to continue to Launchpad Phase 1: Optimization, Course Overview'
   pages:
-    - slug: recurly-navigate-launch-phase-2-metrics
-      title: 'Recurly Navigate: Launchpad Phase 2, Mastering Metrics'
+    - slug: course-overview
+      title: Course Overview
       type: basic
 ---
 <Image align="center" border={true} src="https://files.readme.io/0187c240adc9c712a962c5961290858f52edb40e23c386a600162b32aee2ff78-Liftoff_with_Launchpad.png" className="border" />
@@ -31,4 +24,4 @@ Welcome to the first course in Launchpad, a self-paced, comprehensive success pl
 
 During the first phase of Launchpad, we'll make sure your most impactful Recurly configurations are primed and ready to drive results. After that, you'll be prompted to move to Phase Two, where you'll become an expert at navigating and analyzing your Recurly Data and Dashboards.
 
-**We recommend finishing both Launchpad courses within 90 days of your production date** to prepare you for your first Monthly Metrics Scorecard (you'll learn more about that in Phase Two).
+**We recommend finishing both Launchpad courses within 90 days of your production date** to prepare you for your first **Monthly Metrics Scorecard** (you'll learn more about that in Phase Two).
