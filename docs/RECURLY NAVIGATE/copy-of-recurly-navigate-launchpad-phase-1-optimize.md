@@ -4,7 +4,7 @@ excerpt: >-
   Follow Navigate Launchpad Phase One to optimize your Recurly setup with weekly
   Trail Guides, downloads, and live learning sessions.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 next:
