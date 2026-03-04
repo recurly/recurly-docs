@@ -1,7 +1,7 @@
 ---
 title: 'Recurly Navigate: Retain'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
