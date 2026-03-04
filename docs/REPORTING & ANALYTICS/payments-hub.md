@@ -1,9 +1,6 @@
 ---
 title: Payments Hub
-excerpt: >-
-  Subscriber churn benchmarks allow merchants to see their key performance
-  metrics, related to subscribers, how they stack against similar companies
-  within their industry, and how they’re trending.
+excerpt: Payments Hub ...
 deprecated: false
 hidden: true
 metadata:
@@ -22,24 +19,17 @@ Users must have analytics user role permission.
 
 # Definition
 
-The subscriber churn benchmarks dashboard will provide insights on your churn rates, including overall churn, as well as both involuntary and voluntary , comparing yourself to others in your industry with Recurly’s built-in benchmarks.
+The payments hub dashboards will provide insights on ....
 
 # Key benefits
 
-* **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses. 
+* **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
 
 * **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
 
 * **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
 
 * **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
-
-> 👍 Subscription churn (legacy) dashboard
->
-> The Subscription Churn (Legacy) dashboard is still available via a link at the bottom of this dashboard. This dashboard provides an insight to churn at the subscription level, rather than the subscriber level. It is recommended to primarily measure churn at the subscriber level for the following reasons: 
->
-> 1. Recurly uses subscriber level churn to benchmark merchant performance.
-> 2. Subscription level churn can sometimes be inflated if subscriptions are automatically expired and automatically rolled into new subscriptions.
 
 # Key Details
 
@@ -75,15 +65,15 @@ There are three key churn benchmarks to consider:
 
 1. **Overall Churn:** This metric aggregates both involuntary and voluntary churn, providing a comprehensive view of total subscriber loss.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/b472759-Churn_rate.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b472759-Churn_rate.png" className="border" />
 
 2. **Involuntary Churn:** This benchmark focuses on subscribers lost due to payment issues, helping you understand the effectiveness of your payment recovery efforts.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/4c49979-Involuntary_Churn_Rate.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/4c49979-Involuntary_Churn_Rate.png" className="border" />
 
 3. **Voluntary Churn:** This measures the rate at which subscribers choose to leave of their own accord, offering insights into subscriber satisfaction and the value they perceive from your service.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/d3b3b49-Voluntary_Churn_Rate.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/d3b3b49-Voluntary_Churn_Rate.png" className="border" />
 
 ## About benchmarks
 
@@ -91,10 +81,10 @@ Recurly's benchmark reports offer insights into your performance metrics compare
 
 ### FAQs
 
-**What is a "Paid Subscriber"?**  
+**What is a "Paid Subscriber"?**
 
 A "Paid Subscriber" refers to someone who has at least one paid invoice associated with their subscription. This excludes subscribers who are currently in a trial period or in a dunning process following a trial.
 
-**Why is the timeframe preset to "Monthly"?** 
+**Why is the timeframe preset to "Monthly"?**
 
 The benchmarks are compiled and analyzed on a monthly basis to ensure consistency and accuracy in the data. This approach allows for a standardized comparison of performance metrics across different periods and companies.
