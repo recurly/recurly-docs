@@ -1,12 +1,13 @@
 ---
-title: Copy of Subscriber churn benchmarks
+title: Payments Hub
 excerpt: >-
   Subscriber churn benchmarks allow merchants to see their key performance
   metrics, related to subscribers, how they stack against similar companies
   within their industry, and how they’re trending.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
+  title: Payments Hub
   robots: index
 ---
 # Overview
