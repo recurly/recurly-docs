@@ -1,5 +1,5 @@
 ---
-title: Course Overview
+title: What to Expect
 deprecated: false
 hidden: false
 metadata:
