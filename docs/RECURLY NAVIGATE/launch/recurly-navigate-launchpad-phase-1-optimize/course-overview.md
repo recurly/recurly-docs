@@ -1,7 +1,7 @@
 ---
 title: What to Expect
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
