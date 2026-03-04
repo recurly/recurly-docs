@@ -23,6 +23,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * E-commerce platforms looking to enhance user experience with a swift and secure payment method.
 * Subscription services aiming to streamline the payment process for their customers.
+* If you need multi-domain support, please talk with Support about enabling the Merchant Registration API capability.
 
 ### Prerequisites & supported gateways
 
@@ -67,7 +68,7 @@ To integrate Apple Pay on the Web, ensure you have:
 
 Recurly supports Apple Pay on the Web, allowing a smooth and secure payment process on your web pages. Before initiating the integration, familiarize yourself with Apple's [getting started guide](https://developer.apple.com/apple-pay/get-started/) .
 
-<Image alt="Apple Pay on the Web" border={false} src="https://files.readme.io/3a0f547-ApplePay-Docs2x.png" />
+![Apple Pay on the Web](https://files.readme.io/3a0f547-ApplePay-Docs2x.png)
 
 <br />
 
