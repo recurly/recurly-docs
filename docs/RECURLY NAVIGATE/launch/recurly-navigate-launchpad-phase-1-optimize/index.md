@@ -37,27 +37,27 @@ Launchpad Phase One: Optimization is designed to prime your Recurly instance for
 /###Launchpad Phase One: Optimization (Syllabus)
 
 <Accordion title="Section 1: Final Production Testing" icon=" fa-check">
-  Walk through production testing, a quick final check of your subscription payment flow that ensures your site is customer-ready. Jump to "Section 1: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/final-production-testing">Final Production Testing Course</a>"
+  Walk through production testing, a quick final check of your subscription payment flow that ensures your site is customer-ready. Jump to "Section 1: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/final-production-testing">Final Production Testing</a>."
 </Accordion>
 
 <Accordion title="Section 2: Dunning Optimization" icon="fa-envelope">
-  Navigate your Dunning setup, understand how Dunning works in Recurly, and learn strategic best practices designed to increase retention, reduce churn, and save your recurring revenue. Jump to "Section 2: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization">Final Production Testing Course</a> 
+  Navigate your Dunning setup, understand how Dunning works in Recurly, and learn strategic best practices designed to increase retention, reduce churn, and save your recurring revenue. Jump to "Section 2: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization">Dunning Optimization</a>." 
 </Accordion>
 
 <Accordion title="Section 3: Account Updater" icon="fa-credit-card">
-  Learn why and how to enable Account updater, a invaluable tool that protects your revenue by automatically updating customer payment information. Jump to "Section 3:
+  Learn why and how to enable Account updater, a invaluable tool that protects your revenue by automatically updating customer payment information. Jump to "Section 3:<a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization"> Account Updater</a>."
 </Accordion>
 
 <Accordion title="Section 4: Branding Emails & Invoices" icon="fa-paint-brush">
-  Understand why branding is important and how to update your emails and invoices for immediate impact on customer loyalty, retention, and engagement.
+  Understand why branding is important and how to update your emails and invoices for immediate impact on customer loyalty, retention, and engagement. Jump to "Section 4:<a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization"> Branding Emails & Invoices</a>."
 </Accordion>
 
 <Accordion title="Section 5: Gateway Failover" icon="fa-shield">
-  See how to enable an essential safety net that keeps your payments flowing, even when your primary gateway has a technical glitch.
+  See how to enable an essential safety net that keeps your payments flowing, even when your primary gateway has a technical glitch. Jump to "Section 5:<a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization"> Gateway Failover</a>."
 </Accordion>
 
 <Accordion title="Section 6: Resources & Review" icon="fa-graduation-cap">
-  Review what you've learned, check your knowledge, and access handy resources for continued learning and support.
+  Review what you've learned, check your knowledge, and access handy resources for continued learning and support. Jump to "Section 6:<a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization"> Resources & Review</a>."
 </Accordion>
 
 <br />
