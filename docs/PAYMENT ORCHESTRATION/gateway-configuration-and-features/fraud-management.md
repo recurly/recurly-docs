@@ -52,35 +52,15 @@ We also utilize AVS and CVV responses from our gateway partners as part of our f
 
 To configure the fraud management settings, navigate to Configuration → Fraud Management in your Recurly account. This area allows you to customize your fraud detection and prevention measures to fit your business needs, ensuring you're equipped to handle the challenges of online payment fraud.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/b55faf3-Screen_Shot_2024-06-21_at_12.41.28_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/b55faf3-Screen_Shot_2024-06-21_at_12.41.28_PM.png" className="border" />
 
 On this initial page, you can find an overview of the fraud management settings, providing a snapshot of whether this critical feature is active and how it is configured. To view any fraudulent transactions, click on ‘View All’. To tailor these settings to your needs, click on the ‘Configure Settings’ button located in the upper right corner.
-
-## User defined fields
-
-Set business and merchant type it’s essential to specify your business and merchant type to tailor fraud prevention strategies effectively to your operational model.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/b793178-Screen_Shot_2024-06-21_at_12.16.35_PM.png" />
-
-**Merchant Business Types:**
-
-* **B2C means Business to Consumer:** If you are primarily selling subscriptions and products to an end consumer, choose this option.
-* **B2B means Business to Business:** If your customers are primarily other businesses / organizations, choose this option.
-* **Both:** If you have a mixture of both business customers and end-consumers, choose B2C and B2B.
-* **Unknown:** We do not recommend this option – it is best to find out your mix and choose accordingly.
-
-**Merchant Category Types:**
-
-* **Digital:** If you primarily provide services or digital products (online-only, classes, streaming services, software, etc.) choose this option.
-* **Physical:** If you primarily sell physical products that require shipment to the customer, choose this option.
-* **Digital and Physical (Both):** If you have a mixture of both types, choose this option.
-* **Unknown:** We do not recommend this option – it is best to find out your mix and choose accordingly.
 
 ## Enabling fraud management
 
 Set the status to ‘Enable’ to activate real-time fraud management monitoring, ensuring your transactions are scanned for suspicious activities.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/199fcaa-Screen_Shot_2024-06-21_at_12.42.32_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/199fcaa-Screen_Shot_2024-06-21_at_12.42.32_PM.png" className="border" />
 
 ## Decline threshold rules
 
@@ -88,7 +68,7 @@ Set the status to ‘Enable’ to activate real-time fraud management monitoring
 
 Utilizing Kount's extensive data and logic, this feature gives a detailed analysis of transactions, checking for connections to fraudulent activities outside of Recurly's network. Any transaction identified as High Risk by Kount will be automatically declined.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/69df826-Screen_Shot_2024-06-21_at_12.42.52_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/69df826-Screen_Shot_2024-06-21_at_12.42.52_PM.png" className="border" />
 
 > **Note:** This setting is overridden if a risk score decline level of 75+ is chosen.
 
@@ -98,13 +78,13 @@ This setting allows you to define the risk score threshold that, if exceeded by 
 
 Adjust this threshold by selecting an option from the dropdown menu to align with your organization's risk tolerance.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/d647cf4-Screen_Shot_2024-06-21_at_12.43.10_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/d647cf4-Screen_Shot_2024-06-21_at_12.43.10_PM.png" className="border" />
 
 ## Fraud velocity rules
 
 These rules restrict the frequency of attempts made using the same credit/debit card, IP address, email, or device for entering or updating billing information.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/3458bd2-vel_rules_edited.png" />
+<Image align="center" border={true} src="https://files.readme.io/3458bd2-vel_rules_edited.png" className="border" />
 
 > **Note:** There is a default for all velocity rules which can be found in your Recurly fraud management settings. This number provides a balanced approach to fraud prevention, but you may change it at your discretion. Setting this value to 0 turns off the velocity rule entirely, removing the restriction on attempt frequency. While possible, this is not recommended.
 
@@ -126,6 +106,6 @@ This regulation controls the frequency of billing updates initiated from the sam
 
 ## Blocked countries
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/4fce49a-Screen_Shot_2024-06-21_at_12.45.05_PM.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/4fce49a-Screen_Shot_2024-06-21_at_12.45.05_PM.png" className="border" />
 
 You have the option to automatically reject transactions originating from countries you designate as high risk. This automatic decline activates when the customer's transaction BIN (Bank Identification Number) Country is a match with any selected on your deny list. This rule is specifically applied to credit card transactions, enhancing your fraud prevention measures by geography.
