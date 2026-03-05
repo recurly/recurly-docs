@@ -112,7 +112,7 @@ Dunning is one of the easiest ways to win back revenue, keep your customers arou
 
 You're halfway to Dunning mastery, but this is a topic worth going the full mile for. The impact on your recovered revenue is priceless (pun intended). Check out this Dunning Best Practices webinar to learn all 10 optimization tips. The presentation handout is included below the video so you can follow along with Hannah Wheeldon, Manager, Customer Success @ Recurly. 
 
-<Embed typeOfEmbed="iframe" url="https://navigate.recurly.com/on-demand/Dunning-Optimization/" html="false" iframe="true" href="https://navigate.recurly.com/on-demand/Dunning-Optimization/" />
+<Embed typeOfEmbed="iframe" url="https://navigate.recurly.com/on-demand/Dunning-Optimization/" html="false" iframe="true" href="https://navigate.recurly.com/on-demand/Dunning-Optimization/" height="100%" width="100%" />
 
 <br />
 
