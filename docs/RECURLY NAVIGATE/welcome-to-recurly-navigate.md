@@ -7,29 +7,28 @@ metadata:
 ---
 <Cards>
   <Card title="Setup" href="#" icon="fa-tool" target="_blank">
-    Join our community or checkout our FAQ.
+    Navigate to our Recurly Academy for Product Training and Onboarding.
   </Card>
 
   <Card title="Launch" href="#" icon="fa-rocket">
-    New to our platform? Follow this guide to get started.
+    Setup and ready to liftoff? Learn how to optimize your Recurly instance for long-term success.
   </Card>
 
   <Card title="Acquire" href="#" icon="fa-code">
-    Explore our interactive API reference.
+    Courses focused on acquisition.
   </Card>
 
   <Card title="Retain" href="#" icon="fa-comments" target="_blank">
-    Join our community or checkout our FAQ.
+    Courses focused on retention.
   </Card>
 
   <Card title="Scale" href="#" icon="fa-comments" target="_blank">
-    Join our community or checkout our FAQ.
+    Courses focused on scale.
   </Card>
 
   <Card title="Events & Office Hours" href="#" icon="fa-comments" target="_blank">
-    Join our community or checkout our FAQ.
+    Recurly Navigate quarterly events and weekly open support & Q&A Office Hours.
   </Card>
-
 </Cards>
 
 <br />
