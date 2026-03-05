@@ -25,3 +25,14 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
 </Callout>
 
 <br />
+
+# Resource Guide: 3DS Compliance
+
+**European Merchants**: The comprehensive documentation below will help you prepare for 3DS compliance and finalize your production testing. 
+
+<Anchor label="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank">https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2</Anchor>
+
+
+
+
+<br />
