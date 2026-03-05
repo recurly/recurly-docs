@@ -98,6 +98,8 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
 
 ## What a way to start!
 
-Your site is now tested and customer ready. Now let's move on to one of the most practical and effective ways to protect your recurring revenue.
+Nice work! Final production testing helps ensure everything functions as expected before real customers interact with your setup. Your site is now tested and ready for subscriptions. 
+
+Up next, we’ll focus on Dunning optimization to help you recover failed payments and reduce involuntary churn.
 
 <br />
