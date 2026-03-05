@@ -8,10 +8,11 @@ hidden: true
 metadata:
   robots: index
 next:
-  description: 'Click below to continue to Launchpad Phase 1: Optimization, Course Overview'
+  description: |
+    Click "Section 1: Final Production Testing" to continue the course. 
   pages:
-    - slug: course-overview
-      title: Course Overview
+    - slug: final-production-testing
+      title: 'Section 1: Final Production Testing'
       type: basic
 ---
 <Image align="center" border={true} src="https://files.readme.io/0187c240adc9c712a962c5961290858f52edb40e23c386a600162b32aee2ff78-Liftoff_with_Launchpad.png" className="border" />
@@ -59,3 +60,7 @@ Launchpad Phase One: Optimization is designed to prime your Recurly instance for
 <Accordion title="Section 6: Resources & Review" icon="fa-graduation-cap">
   Review what you've learned, check your knowledge, and access handy resources for continued learning and support. Jump to "Section 6:<a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization"> Resources & Review</a>."
 </Accordion>
+
+<br />
+
+Your first lesson is a fast-paced walk through Final Production Testing, where we'll show you how to make sure your site is customer-ready. 
