@@ -27,7 +27,7 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
 `}</HTMLBlock>
 
 <HTMLBlock>{`
-{/*
+<p style="display: none;"
               Navigate Trail Guide
               Launchpad: Check the boxes — Final test in production
 
@@ -65,7 +65,7 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
               Your site is now tested and customer-ready!
 
               Thanks for joining for this Navigate Launchpad video! The Navigate program helps optimize dunning setup and strategy for maximum revenue recovery.
-              */}
+              /p>
 `}</HTMLBlock>
 
 <br />
