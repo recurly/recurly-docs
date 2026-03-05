@@ -1,7 +1,7 @@
 ---
 title: Metrics & Reporting
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
