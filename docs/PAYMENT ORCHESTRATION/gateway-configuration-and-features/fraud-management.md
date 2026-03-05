@@ -52,8 +52,6 @@ We also utilize AVS and CVV responses from our gateway partners as part of our f
 
 To configure the fraud management settings, navigate to Configuration → Fraud Management in your Recurly account. This area allows you to customize your fraud detection and prevention measures to fit your business needs, ensuring you're equipped to handle the challenges of online payment fraud.
 
-<Image align="center" border={true} src="https://files.readme.io/b55faf3-Screen_Shot_2024-06-21_at_12.41.28_PM.png" className="border" />
-
 On this initial page, you can find an overview of the fraud management settings, providing a snapshot of whether this critical feature is active and how it is configured. To view any fraudulent transactions, click on ‘View All’. To tailor these settings to your needs, click on the ‘Configure Settings’ button located in the upper right corner.
 
 ## Enabling fraud management
