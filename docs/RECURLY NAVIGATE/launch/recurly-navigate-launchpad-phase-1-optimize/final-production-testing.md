@@ -94,7 +94,7 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
 
   Choose a live checkout page and purchase a product or subscription using a real card, then confirm the checkout completes successfully.
 
-   
+
 * [ ] **Verify the Payment in Recurly:**
 
   Log in to your Recurly App and confirm the test transaction shows a successful payment.
