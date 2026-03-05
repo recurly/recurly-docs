@@ -38,6 +38,26 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
 
 # Final Production Testing: Step-by-Step
 
-**Use this checklist** to ensure you've taken all of the necessary steps to complete Final Production Testing. If you have any trouble finding what you need, refer back to "[Trail Guide: Final Production Testing](#trailguide)" for guidance. 
+**Use this checklist** to ensure you've taken all of the necessary steps to complete Final Production Testing. If you have any trouble finding what you need, refer back to "**[Trail Guide: Final Production Testing](#trailguide)**" for guidance.
+
+* [ ] **Complete a Live Checkout Test:** 
+
+  Choose a live checkout page and purchase a product or subscription using a real card, then confirm the checkout completes successfully.
+
+   
+* [ ] **Verify the Payment in Recurly:** 
+
+  Log in to your Recurly App and confirm the test transaction shows a successful payment.
+* [ ] **Issue and Confirm a Refund:** 
+
+  Refund the test transaction in Recurly and confirm the refund processes successfully.
+* [ ] **(EU Only) Test 3D Secure / SCA Compliance:** 
+
+  Complete a test payment using 3D Secure to confirm your checkout meets SCA requirements.
+* [ ] **Troubleshoot if a Step Fails:** 
+
+  Review your payment gateway and checkout configuration using the provided documentation, and contact support if issues persist.
+
+<br />
 
 <br />
