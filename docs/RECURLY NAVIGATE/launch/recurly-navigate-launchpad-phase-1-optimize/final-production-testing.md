@@ -20,8 +20,8 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
 
 <br />
 
-<Callout icon="🖐️">
-  **Find a hiccup? **Double check your** <Anchor label="gateway" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/test">gateway</Anchor> **and **<Anchor label="checkout" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/checkout#configuration-landing-page">checkout</Anchor>** configurations. If manual troubleshooting doesn't do the trick, Support is your best next step: **<Anchor label="contact support" target="_blank" href="mailto:support@recurly.com">contact support</Anchor>.** 
+<Callout icon="🖐️" theme="default">
+  **Find a hiccup?** Double check your **[gateway](https://docs.recurly.com/recurly-subscriptions/docs/test)** and **<Anchor label="checkout" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/checkout#configuration-landing-page">checkout</Anchor>** configurations. If manual troubleshooting doesn't do the trick, Support is your best next step: **<Anchor label="contact support" target="_blank" href="mailto:support@recurly.com">contact support</Anchor>.** 
 </Callout>
 
 <br />
