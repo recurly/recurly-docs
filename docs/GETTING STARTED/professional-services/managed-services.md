@@ -4,7 +4,7 @@ excerpt: >-
   Use Managed Services for on-demand access to Recurly Professional Services for
   onboarding, configuration, reporting, and technical implementation support.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
