@@ -1,5 +1,5 @@
 ---
-title: 'Recurly Navigate: Site Index'
+title: Welcome to Navigate
 deprecated: false
 hidden: true
 metadata:
