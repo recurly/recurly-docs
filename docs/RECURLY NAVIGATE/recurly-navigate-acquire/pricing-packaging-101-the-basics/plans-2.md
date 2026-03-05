@@ -1,7 +1,7 @@
 ---
 title: Plans
 deprecated: false
-hidden: false
+hidden: true
 link:
   url: https://www.recurly.com
 metadata:
