@@ -44,4 +44,18 @@ Launchpad Phase One: Optimization is designed to prime your Recurly instance for
   Navigate your Dunning setup, understand how Dunning works in Recurly, and learn strategic best practices designed to increase retention, reduce churn, and save your recurring revenue. Jump to "Section 2: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/dunning-optimization">Final Production Testing Course</a> 
 </Accordion>
 
-<br />
+<Accordion title="Section 3: Account Updater" icon="fa-credit-card">
+ Learn why and how to enable Account updater, a invaluable tool that protects your revenue by automatically updating customer payment information. Jump to "Section 3: 
+</Accordion>
+
+<Accordion title="Section 4: Branding Emails & Invoices" icon="fa-info-circle">
+  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
+  occaecat cupidatat non proident!
+</Accordion>
+
+<Accordion title="Gateway Failover" icon="fa-info-circle">
+  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
+  occaecat cupidatat non proident!
+</Accordion>
