@@ -1,7 +1,7 @@
 ---
 title: 'Pricing & Packaging 201: Overview'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
