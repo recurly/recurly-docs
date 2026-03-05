@@ -1,7 +1,7 @@
 ---
 title: Currency
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
