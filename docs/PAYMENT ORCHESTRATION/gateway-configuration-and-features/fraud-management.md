@@ -13,6 +13,12 @@ metadata:
 next:
   description: ''
 ---
+<Callout icon="❗️">
+  **Kount Command will be deprecated in favor of Kount 360**
+
+  In April 2026, Recurly will be migrating all Kount merchants to Kount 360. There are no integration changes necessary, and no settings changes required for your account. Some settings are no longer supported in Kount 360, and will be marked as such below.
+</Callout>
+
 # Overview
 
 ### Required plan
@@ -52,7 +58,7 @@ We also utilize AVS and CVV responses from our gateway partners as part of our f
 
 To configure the fraud management settings, navigate to Configuration → Fraud Management in your Recurly account. This area allows you to customize your fraud detection and prevention measures to fit your business needs, ensuring you're equipped to handle the challenges of online payment fraud.
 
-On this initial page, you can find an overview of the fraud management settings, providing a snapshot of whether this critical feature is active and how it is configured. To view any fraudulent transactions, click on ‘View All’. To tailor these settings to your needs, click on the ‘Configure Settings’ button located in the upper right corner.
+On this initial page, you can find an overview of the fraud management settings, providing a snapshot of whether this critical feature is active and how it is configured. To view any fraudulent transactions, click on ‘View All’ if you have access to a dashboard (Enterprise only merchants). To tailor these settings to your needs, click on the ‘Configure Settings’ button located in the upper right corner.
 
 ## Enabling fraud management
 
@@ -63,6 +69,10 @@ Set the status to ‘Enable’ to activate real-time fraud management monitoring
 ## Decline threshold rules
 
 ### High risk decline
+
+<Callout icon="📘" theme="info">
+  This configuration will be unavailable in Kount 360.
+</Callout>
 
 Utilizing Kount's extensive data and logic, this feature gives a detailed analysis of transactions, checking for connections to fraudulent activities outside of Recurly's network. Any transaction identified as High Risk by Kount will be automatically declined.
 
@@ -79,6 +89,10 @@ Adjust this threshold by selecting an option from the dropdown menu to align wit
 <Image align="center" border={true} src="https://files.readme.io/d647cf4-Screen_Shot_2024-06-21_at_12.43.10_PM.png" className="border" />
 
 ## Fraud velocity rules
+
+<Callout icon="📘" theme="info">
+  This configuration will be unavailable in Kount 360.
+</Callout>
 
 These rules restrict the frequency of attempts made using the same credit/debit card, IP address, email, or device for entering or updating billing information.
 
@@ -104,6 +118,12 @@ This regulation controls the frequency of billing updates initiated from the sam
 
 ## Blocked countries
 
+<Callout icon="📘" theme="info">
+  This configuration will be unavailable in Kount 360.
+</Callout>
+
 <Image align="center" border={true} width="80% " src="https://files.readme.io/4fce49a-Screen_Shot_2024-06-21_at_12.45.05_PM.png" className="border" />
 
 You have the option to automatically reject transactions originating from countries you designate as high risk. This automatic decline activates when the customer's transaction BIN (Bank Identification Number) Country is a match with any selected on your deny list. This rule is specifically applied to credit card transactions, enhancing your fraud prevention measures by geography.
+
+<br />
