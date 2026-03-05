@@ -20,7 +20,7 @@ next:
 
 It's vital to experience your customer's checkout journey from start to finish before going live — and it gives you a chance to catch potential payment issues along the way.
 
-Watch this quick Navigate Trail Guide to learn how to run a real transaction, issue a refund, and be sure payments are working (so your customers don't find them first). For written reference, you'll find a step-by-step checklist at the bottom of this page. 
+Watch this quick Navigate Trail Guide to learn how to run a real transaction, issue a refund, and be sure payments are working (so your customers don't find them first). For written reference, you'll find a step-by-step checklist at the bottom of this page.
 
 <HTMLBlock>{`
 <div id="trailguide"style="position:relative;overflow:hidden;aspect-ratio:1920/1080"><iframe src="https://share.synthesia.io/embeds/videos/f3384551-b4b2-4ab3-83fa-c8fe6e88c62f" title="Synthesia video player - Navigate Trail Guide: Check the boxes: final production test" allowfullscreen="" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;padding:0;margin:0;overflow:hidden"></iframe></div>
@@ -439,6 +439,6 @@ Watch this quick Navigate Trail Guide to learn how to run a real transaction, is
 
 ## What a way to start!
 
-Your site is now tested and customer ready. Now let's move on to one of the most practical and effective ways to protect your recurring revenue. 
+Your site is now tested and customer ready. Now let's move on to one of the most practical and effective ways to protect your recurring revenue.
 
 <br />
