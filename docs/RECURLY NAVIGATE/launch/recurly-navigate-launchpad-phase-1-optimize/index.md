@@ -18,7 +18,7 @@ next:
 
 # Phase 1: Optimization
 
-## What to expect 
+## What to expect
 
 ### Congratulations on going live in production! 🎉
 
@@ -37,5 +37,5 @@ Launchpad Phase One: Optimization is designed to prime your Recurly instance for
 /###Launchpad Phase One: Optimization (Syllabus)
 
 <Accordion title="Section 1: Final Production Testing" icon=" fa-check">
-  Walk through production testing, a quick final check of your subscription payment flow that ensures your site is customer-ready. <a href="https://www.example.com">Clickable Link Text</a>
+  Walk through production testing, a quick final check of your subscription payment flow that ensures your site is customer-ready. Jump to <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/final-production-testing">Final Production Testing Course</a>
 </Accordion>
