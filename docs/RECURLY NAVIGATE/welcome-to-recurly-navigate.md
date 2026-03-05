@@ -6,6 +6,10 @@ metadata:
   robots: index
 ---
 <Cards>
+  <Card title="Setup" href="#" icon="fa-tool" target="_blank">
+    Join our community or checkout our FAQ.
+  </Card>
+
   <Card title="Launch" href="#" icon="fa-rocket">
     New to our platform? Follow this guide to get started.
   </Card>
@@ -18,15 +22,11 @@ metadata:
     Join our community or checkout our FAQ.
   </Card>
 
- <Card title="Scale" href="#" icon="fa-comments" target="_blank">
+  <Card title="Scale" href="#" icon="fa-comments" target="_blank">
     Join our community or checkout our FAQ.
   </Card>
 
- <Card title="Events & Office Hours" href="#" icon="fa-comments" target="_blank">
-    Join our community or checkout our FAQ.
-  </Card>
-
- <Card title="Recurly Navigate Index" href="#" icon="fa-comments" target="_blank">
+  <Card title="Events & Office Hours" href="#" icon="fa-comments" target="_blank">
     Join our community or checkout our FAQ.
   </Card>
 
