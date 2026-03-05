@@ -40,8 +40,8 @@ Launchpad Phase One: Optimization is designed to prime your Recurly instance for
   Walk through production testing, a quick final check of your subscription payment flow that ensures your site is customer-ready. Jump to "Section 1: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/final-production-testing">Final Production Testing Course</a>"
 </Accordion>
 
-<Accordion title="Section 2: Dunning Optimization" icon="fa-envelope-o">
-Navigate your Dunning setup, understand how Dunning works in Recurly, and learn strategic best practices designed to increase retention, reduce churn, and save your recurring revenue. Jump to "Section 2: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/final-production-testing">Final Production Testing Course</a> 
+<Accordion title="Section 2: Dunning Optimization" icon="fa-envelope">
+  Navigate your Dunning setup, understand how Dunning works in Recurly, and learn strategic best practices designed to increase retention, reduce churn, and save your recurring revenue. Jump to "Section 2: <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/final-production-testing">Final Production Testing Course</a> 
 </Accordion>
 
 <br />
