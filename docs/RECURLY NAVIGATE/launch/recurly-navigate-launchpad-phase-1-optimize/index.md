@@ -45,19 +45,19 @@ Launchpad Phase One: Optimization is designed to prime your Recurly instance for
 </Accordion>
 
 <Accordion title="Section 3: Account Updater" icon="fa-credit-card">
- Learn why and how to enable Account updater, a invaluable tool that protects your revenue by automatically updating customer payment information. Jump to "Section 3: 
+  Learn why and how to enable Account updater, a invaluable tool that protects your revenue by automatically updating customer payment information. Jump to "Section 3:
 </Accordion>
 
 <Accordion title="Section 4: Branding Emails & Invoices" icon="fa-paint-brush">
-Understand why branding is important and how to update your emails and invoices for immediate impact on customer loyalty, retention, and engagement.
+  Understand why branding is important and how to update your emails and invoices for immediate impact on customer loyalty, retention, and engagement.
 </Accordion>
 
-<Accordion title="Gateway Failover" icon="fa-shield">
-See how to enable an essential safety net that keeps your payments flowing, even when your primary gateway has a technical glitch.
+<Accordion title="Section 5: Gateway Failover" icon="fa-shield">
+  See how to enable an essential safety net that keeps your payments flowing, even when your primary gateway has a technical glitch.
 </Accordion>
 
-<Accordion title="Resources & Review" icon="fa-graduation-cap">
-Review what you've learned, check your knowledge, and access handy resources for continued learning and support.
+<Accordion title="Section 6: Resources & Review" icon="fa-graduation-cap">
+  Review what you've learned, check your knowledge, and access handy resources for continued learning and support.
 </Accordion>
 
 <br />
