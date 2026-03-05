@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to Navigate: Home Page'
+title: 'Welcome to Recurly Navigate: Home Page'
 deprecated: false
 hidden: true
 metadata:
