@@ -1,7 +1,7 @@
 ---
 title: 'Section 2: Dunning Optimization'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
