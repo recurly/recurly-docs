@@ -1,7 +1,8 @@
 ---
-title: 'Commerce Experiment #5 with nested pages'
+title: Intro to Commerce
 deprecated: false
 hidden: false
 metadata:
+  title: Navigate Intro to Commerce
   robots: index
 ---
