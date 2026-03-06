@@ -6,6 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<HTMLBlock>{\`
 <style>
   :root {
     --yellow: #FFD706;
@@ -25,6 +26,10 @@ metadata:
   .rc-guide {
     font-family: 'Segoe UI', system-ui, sans-serif;
     color: var(--darkgray);
+  }
+
+  .rc-tabs input[type="radio"] {
+    display: none;
   }
 
   .rc-hero {
@@ -90,14 +95,9 @@ metadata:
     flex-wrap: wrap;
     gap: 10px;
     margin: 24px 0 28px;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    background: white;
-    padding: 8px 0;
   }
 
-  .rc-nav a {
+  .rc-tab-label {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -106,17 +106,16 @@ metadata:
     border: 1px solid var(--lightgray);
     background: white;
     color: var(--darkgray);
-    text-decoration: none;
     font-size: 0.88rem;
     font-weight: 700;
-    transition: border-color 0.2s, box-shadow 0.2s, opacity 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s, opacity 0.2s, background 0.2s, color 0.2s;
+    cursor: pointer;
   }
 
-  .rc-nav a:hover {
+  .rc-tab-label:hover {
     border-color: var(--yellow);
     box-shadow: 0 2px 8px rgba(255, 215, 6, 0.2);
     color: var(--offblack);
-    text-decoration: none;
   }
 
   .rc-snum {
@@ -133,10 +132,36 @@ metadata:
     flex-shrink: 0;
   }
 
+  #tab-intro:checked ~ .rc-nav label[for="tab-intro"],
+  #tab-plans:checked ~ .rc-nav label[for="tab-plans"],
+  #tab-storefront:checked ~ .rc-nav label[for="tab-storefront"],
+  #tab-portal:checked ~ .rc-nav label[for="tab-portal"],
+  #tab-notifications:checked ~ .rc-nav label[for="tab-notifications"],
+  #tab-integrations:checked ~ .rc-nav label[for="tab-integrations"],
+  #tab-launch:checked ~ .rc-nav label[for="tab-launch"] {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--offblack);
+    box-shadow: 0 2px 10px rgba(255, 215, 6, 0.25);
+  }
+
+  .rc-panels .rc-panel {
+    display: none;
+  }
+
+  #tab-intro:checked ~ .rc-panels .rc-panel-intro,
+  #tab-plans:checked ~ .rc-panels .rc-panel-plans,
+  #tab-storefront:checked ~ .rc-panels .rc-panel-storefront,
+  #tab-portal:checked ~ .rc-panels .rc-panel-portal,
+  #tab-notifications:checked ~ .rc-panels .rc-panel-notifications,
+  #tab-integrations:checked ~ .rc-panels .rc-panel-integrations,
+  #tab-launch:checked ~ .rc-panels .rc-panel-launch {
+    display: block;
+  }
+
   .rc-sec {
     display: block;
     margin-bottom: 56px;
-    scroll-margin-top: 90px;
   }
 
   .rc-sec-header {
@@ -211,9 +236,7 @@ metadata:
     color: white;
   }
 
-  .rc-vmeta {
-    color: white;
-  }
+  .rc-vmeta { color: white; }
 
   .rc-vtag {
     font-size: 11px;
@@ -616,12 +639,14 @@ metadata:
   .rc-btn-prev {
     background: white;
     color: var(--darkgray);
+    cursor: pointer;
   }
 
   .rc-btn-next {
     background: var(--yellow);
     color: var(--offblack);
     border-color: var(--yellow);
+    cursor: pointer;
   }
 
   .rc-btn-disabled {
@@ -637,12 +662,20 @@ metadata:
     .rc-sec-header { flex-direction: column; gap: 12px; }
     .rc-hero { padding: 36px 20px 32px; }
     .rc-video-card { flex-direction: column; padding: 24px; }
-    .rc-nav { flex-direction: column; position: static; }
+    .rc-nav { flex-direction: column; }
     .rc-sec-nav { flex-direction: column; align-items: stretch; }
   }
 </style>
 
-<div class="rc-guide">
+<div class="rc-guide rc-tabs">
+  <input type="radio" name="rc-tabs" id="tab-intro" checked>
+  <input type="radio" name="rc-tabs" id="tab-plans">
+  <input type="radio" name="rc-tabs" id="tab-storefront">
+  <input type="radio" name="rc-tabs" id="tab-portal">
+  <input type="radio" name="rc-tabs" id="tab-notifications">
+  <input type="radio" name="rc-tabs" id="tab-integrations">
+  <input type="radio" name="rc-tabs" id="tab-launch">
+
   <div class="rc-hero">
     <div class="rc-badge">🚀 Getting Started</div>
     <h1>Welcome to Recurly Commerce</h1>
@@ -655,156 +688,135 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="#rcSec0"><span class="rc-snum">1</span>Intro</a>
-    <a href="#rcSec1"><span class="rc-snum">2</span>Subscription Plans</a>
-    <a href="#rcSec2"><span class="rc-snum">3</span>Storefront Setup</a>
-    <a href="#rcSec3"><span class="rc-snum">4</span>Customer Portals</a>
-    <a href="#rcSec4"><span class="rc-snum">5</span>Notifications</a>
-    <a href="#rcSec5"><span class="rc-snum">6</span>Integrations</a>
-    <a href="#rcSec6"><span class="rc-snum">✓</span>Launch!</a>
+    <label class="rc-tab-label" for="tab-intro"><span class="rc-snum">1</span>Intro</label>
+    <label class="rc-tab-label" for="tab-plans"><span class="rc-snum">2</span>Subscription Plans</label>
+    <label class="rc-tab-label" for="tab-storefront"><span class="rc-snum">3</span>Storefront Setup</label>
+    <label class="rc-tab-label" for="tab-portal"><span class="rc-snum">4</span>Customer Portals</label>
+    <label class="rc-tab-label" for="tab-notifications"><span class="rc-snum">5</span>Notifications</label>
+    <label class="rc-tab-label" for="tab-integrations"><span class="rc-snum">6</span>Integrations</label>
+    <label class="rc-tab-label" for="tab-launch"><span class="rc-snum">✓</span>Launch!</label>
   </nav>
 
-  <div class="rc-sec" id="rcSec0">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">🧭</div>
-      <div>
-        <h2>What is Recurly Commerce?</h2>
-        <p>A quick orientation before you dive in — understand what you just installed and what it can do for your Shopify store.</p>
+  <div class="rc-panels">
+
+    <div class="rc-panel rc-panel-intro">
+      <div class="rc-sec">
+        <div class="rc-sec-header">
+          <div class="rc-sec-icon">🧭</div>
+          <div>
+            <h2>What is Recurly Commerce?</h2>
+            <p>A quick orientation before you dive in — understand what you just installed and what it can do for your Shopify store.</p>
+          </div>
+        </div>
+
+        <div class="rc-sec-nav">
+          <span class="rc-btn-disabled">← Back</span>
+          <label class="rc-btn-next" for="tab-plans">Next: Subscription Plans →</label>
+        </div>
       </div>
     </div>
 
-    <a href="https://navigate.recurly.com/commerce/launch-smarter/" target="_blank" rel="noopener noreferrer" class="rc-video-card">
-      <div class="rc-play">▶</div>
-      <div class="rc-vmeta">
-        <div class="rc-vtag">📹 Watch First · Full Overview</div>
-        <h3>Launch Smarter: Optimize your Recurly Commerce Setup</h3>
-        <p>Start here for a full walkthrough of the platform before diving into setup.</p>
-      </div>
-    </a>
+    <div class="rc-panel rc-panel-plans">
+      <div class="rc-sec">
+        <div class="rc-sec-header">
+          <div class="rc-sec-icon">🏷️</div>
+          <div>
+            <h2>Step 1: Create Your Subscription Plans</h2>
+            <p>Your subscription plan defines <em>what</em> customers subscribe to, <em>how often</em> they're billed, and <em>what discounts</em> apply. This is the foundation everything else is built on.</p>
+          </div>
+        </div>
 
-    <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">📦</div><h4>Subscription Management</h4><p>Create recurring product offers with flexible billing frequencies and discounts — all without touching code.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🛍️</div><h4>Native Shopify Integration</h4><p>Everything lives inside your Shopify admin. No separate dashboard to juggle — it's all connected.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">💳</div><h4>Revenue Recovery</h4><p>Automatically retries failed payments and notifies customers so you lose less revenue to billing hiccups.</p></div>
-    </div>
-
-    <div class="rc-card">
-      <h3 class="rc-subhead">🗺️ Your Onboarding Journey</h3>
-      <div class="rc-journey">
-        <div class="rc-jstep"><div class="rc-jdot">📋</div><div class="rc-jlbl">Choose Plan</div></div>
-        <div class="rc-jstep"><div class="rc-jdot">🏷️</div><div class="rc-jlbl">Create Sub Plans</div></div>
-        <div class="rc-jstep"><div class="rc-jdot">🛒</div><div class="rc-jlbl">Set Up Storefront</div></div>
-        <div class="rc-jstep"><div class="rc-jdot">👤</div><div class="rc-jlbl">Customer Portal</div></div>
-        <div class="rc-jstep"><div class="rc-jdot">🔔</div><div class="rc-jlbl">Notifications</div></div>
-        <div class="rc-jstep"><div class="rc-jdot">🔗</div><div class="rc-jlbl">Integrations</div></div>
+        <div class="rc-sec-nav">
+          <label class="rc-btn-prev" for="tab-intro">← Intro</label>
+          <label class="rc-btn-next" for="tab-storefront">Next: Storefront Setup →</label>
+        </div>
       </div>
     </div>
 
-    <div class="rc-warning">
-      <span class="rc-wicon">⚠️</span>
-      <p><strong>Before you begin:</strong> Make sure the Shopify user setting up Recurly Commerce has <strong>"Approve app charges"</strong> permission enabled. Without this, you won't be able to activate a plan. Check this under Shopify Admin → Settings → Users &amp; Permissions.</p>
-    </div>
+    <div class="rc-panel rc-panel-storefront">
+      <div class="rc-sec">
+        <div class="rc-sec-header">
+          <div class="rc-sec-icon">🛍️</div>
+          <div>
+            <h2>Step 2: Set Up Your Storefront</h2>
+            <p>Your subscription widget is what shoppers see on your product pages. Getting this right is essential — it's the moment a customer decides to subscribe.</p>
+          </div>
+        </div>
 
-    <div class="rc-tip">
-      <span class="rc-tipicon">💡</span>
-      <div>
-        <h4>Pro Tip · Set Your Goal First</h4>
-        <p>Before configuring anything, ask yourself: <em>What products do I want to offer as subscriptions? How often should customers receive them?</em> Having a clear picture of your offer structure will make every step below feel fast and intuitive.</p>
+        <div class="rc-sec-nav">
+          <label class="rc-btn-prev" for="tab-plans">← Subscription Plans</label>
+          <label class="rc-btn-next" for="tab-portal">Next: Customer Portals →</label>
+        </div>
       </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <span class="rc-btn-disabled">← Back</span>
-      <a class="rc-btn-next" href="#rcSec1">Next: Subscription Plans →</a>
-    </div>
-  </div>
+    <div class="rc-panel rc-panel-portal">
+      <div class="rc-sec">
+        <div class="rc-sec-header">
+          <div class="rc-sec-icon">👤</div>
+          <div>
+            <h2>Step 3: Configure the Customer Portal</h2>
+            <p>The Customer Portal is where your subscribers manage everything about their subscription.</p>
+          </div>
+        </div>
 
-  <div class="rc-sec" id="rcSec1">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">🏷️</div>
-      <div>
-        <h2>Step 1: Create Your Subscription Plans</h2>
-        <p>Your subscription plan defines <em>what</em> customers subscribe to, <em>how often</em> they're billed, and <em>what discounts</em> apply. This is the foundation everything else is built on.</p>
+        <div class="rc-sec-nav">
+          <label class="rc-btn-prev" for="tab-storefront">← Storefront Setup</label>
+          <label class="rc-btn-next" for="tab-notifications">Next: Notifications →</label>
+        </div>
       </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#rcSec0">← Intro</a>
-      <a class="rc-btn-next" href="#rcSec2">Next: Storefront Setup →</a>
-    </div>
-  </div>
+    <div class="rc-panel rc-panel-notifications">
+      <div class="rc-sec">
+        <div class="rc-sec-header">
+          <div class="rc-sec-icon">🔔</div>
+          <div>
+            <h2>Step 4: Configure Notifications</h2>
+            <p>Subscribers who feel informed stay longer.</p>
+          </div>
+        </div>
 
-  <div class="rc-sec" id="rcSec2">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">🛍️</div>
-      <div>
-        <h2>Step 2: Set Up Your Storefront</h2>
-        <p>Your subscription widget is what shoppers see on your product pages. Getting this right is essential — it's the moment a customer decides to subscribe.</p>
+        <div class="rc-sec-nav">
+          <label class="rc-btn-prev" for="tab-portal">← Customer Portals</label>
+          <label class="rc-btn-next" for="tab-integrations">Next: Integrations →</label>
+        </div>
       </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#rcSec1">← Subscription Plans</a>
-      <a class="rc-btn-next" href="#rcSec3">Next: Customer Portals →</a>
-    </div>
-  </div>
+    <div class="rc-panel rc-panel-integrations">
+      <div class="rc-sec">
+        <div class="rc-sec-header">
+          <div class="rc-sec-icon">🔗</div>
+          <div>
+            <h2>Step 5: Connect Your Integrations</h2>
+            <p>Link the platforms you already use to supercharge your subscriber experience.</p>
+          </div>
+        </div>
 
-  <div class="rc-sec" id="rcSec3">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">👤</div>
-      <div>
-        <h2>Step 3: Configure the Customer Portal</h2>
-        <p>The Customer Portal is where your subscribers manage everything about their subscription.</p>
+        <div class="rc-sec-nav">
+          <label class="rc-btn-prev" for="tab-notifications">← Notifications</label>
+          <label class="rc-btn-next" for="tab-launch">Next: Launch! →</label>
+        </div>
       </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#rcSec2">← Storefront Setup</a>
-      <a class="rc-btn-next" href="#rcSec4">Next: Notifications →</a>
-    </div>
-  </div>
+    <div class="rc-panel rc-panel-launch">
+      <div class="rc-sec">
+        <div class="rc-complete">
+          <div style="font-size:48px;">🚀</div>
+          <h2>You're Ready to Launch!</h2>
+          <p>You've completed all the essential setup steps. Here's your final checklist before you go live.</p>
+        </div>
 
-  <div class="rc-sec" id="rcSec4">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">🔔</div>
-      <div>
-        <h2>Step 4: Configure Notifications</h2>
-        <p>Subscribers who feel informed stay longer.</p>
+        <div class="rc-sec-nav">
+          <label class="rc-btn-prev" for="tab-integrations">← Integrations</label>
+          <span class="rc-btn-disabled">🎉 You're Done!</span>
+        </div>
       </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#rcSec3">← Customer Portals</a>
-      <a class="rc-btn-next" href="#rcSec5">Next: Integrations →</a>
-    </div>
-  </div>
-
-  <div class="rc-sec" id="rcSec5">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">🔗</div>
-      <div>
-        <h2>Step 5: Connect Your Integrations</h2>
-        <p>Link the platforms you already use to supercharge your subscriber experience.</p>
-      </div>
-    </div>
-
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#rcSec4">← Notifications</a>
-      <a class="rc-btn-next" href="#rcSec6">Next: Launch! →</a>
-    </div>
-  </div>
-
-  <div class="rc-sec" id="rcSec6">
-    <div class="rc-complete">
-      <div style="font-size:48px;">🚀</div>
-      <h2>You're Ready to Launch!</h2>
-      <p>You've completed all the essential setup steps. Here's your final checklist before you go live.</p>
-    </div>
-
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#rcSec5">← Integrations</a>
-      <span class="rc-btn-disabled">🎉 You're Done!</span>
-    </div>
   </div>
 </div>
+\`}</HTMLBlock>
 `}</HTMLBlock>
