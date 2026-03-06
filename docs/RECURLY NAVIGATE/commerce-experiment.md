@@ -695,7 +695,6 @@ metadata:
         }
       </style>
 
-      ------
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8">
 <style>
@@ -729,4 +728,134 @@ metadata:
 </body></html>
 `}</HTMLBlock>
 
-<br />
+<Tabs>
+  <Tab title="Intro: What is Recurly Commerce">
+<HTMLBlock>{`
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+  :root { --yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',system-ui,sans-serif;}
+  .rc-sec{display:block;margin-bottom:56px;}
+  .rc-sec-header{display:flex;align-items:flex-start;gap:20px;margin-bottom:32px;}
+  .rc-sec-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;background:var(--yellow);}
+  .rc-sec-header h2{font-size:1.7rem;font-weight:800;margin-bottom:6px;color:var(--offblack);}
+  .rc-sec-header>div>p{color:var(--gray);font-size:0.95rem;line-height:1.5;}
+  .rc-video-card{display:flex;align-items:center;gap:24px;background:var(--darkgray);border-radius:16px;padding:32px;margin-bottom:24px;text-decoration:none;transition:opacity 0.2s;}
+  .rc-video-card:hover{opacity:0.88;}
+  .rc-play{width:60px;height:60px;border-radius:50%;background:var(--yellow);color:var(--offblack);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+  .rc-vmeta{color:white;}
+  .rc-vtag{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--lightgray);margin-bottom:6px;}
+  .rc-vmeta h3{font-size:1.05rem;font-weight:700;margin-bottom:4px;color:#FFFDF2;}
+  .rc-vmeta p{font-size:0.85rem;color:var(--lightgray);margin:0;}
+  .rc-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px;}
+  .rc-wi{background:var(--offwhite);border-radius:14px;padding:20px;border:1px solid var(--lightgray);text-align:center;}
+  .rc-wi-icon{font-size:30px;margin-bottom:10px;}
+  .rc-wi h4{font-size:0.88rem;font-weight:700;margin-bottom:5px;color:var(--offblack);}
+  .rc-wi p{font-size:0.80rem;color:var(--gray);line-height:1.5;margin:0;}
+  .rc-card{background:var(--offwhite);border-radius:16px;padding:28px;border:1px solid var(--lightgray);margin-bottom:24px;}
+  .rc-subhead{font-size:1rem;font-weight:700;margin-bottom:16px;color:var(--offblack);}
+  .rc-journey{display:flex;overflow-x:auto;padding-bottom:8px;}
+  .rc-jstep{flex:1;min-width:100px;text-align:center;position:relative;}
+  .rc-jstep::after{content:'→';position:absolute;right:-12px;top:10px;font-size:18px;color:var(--lightgray);}
+  .rc-jstep:last-child::after{display:none;}
+  .rc-jdot{width:38px;height:38px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;}
+  .rc-jlbl{font-size:0.72rem;font-weight:700;color:var(--darkgray);}
+  .rc-warning{background:#FFF8E6;border:1px solid var(--orange);border-radius:14px;padding:16px 20px;margin-bottom:24px;display:flex;gap:14px;align-items:flex-start;}
+  .rc-wicon{font-size:20px;flex-shrink:0;}
+  .rc-warning p{font-size:0.87rem;color:var(--darkgray);line-height:1.55;margin:0;}
+  .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;margin-bottom:24px;display:flex;gap:16px;align-items:flex-start;}
+  .rc-tipicon{font-size:24px;flex-shrink:0;}
+  .rc-tip h4{font-size:0.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;}
+  .rc-tip p{font-size:0.87rem;color:var(--darkgray);line-height:1.55;margin:0;}
+  .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap;}
+  .rc-btn-prev,.rc-btn-next,.rc-btn-disabled{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:0.88rem;text-decoration:none;border:1px solid var(--lightgray);}
+  .rc-btn-prev{background:white;color:var(--darkgray);}
+  .rc-btn-next{background:var(--yellow);color:var(--offblack);border-color:var(--yellow);}
+  .rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default;}
+  @media(max-width:640px){.rc-3col{grid-template-columns:1fr;}.rc-sec-header{flex-direction:column;gap:12px;}.rc-video-card{flex-direction:column;padding:24px;}.rc-sec-nav{flex-direction:column;align-items:stretch;}}
+</style>
+</head><body>
+<div class="rc-sec" id="rcSec0">
+  <div class="rc-sec-header">
+    <div class="rc-sec-icon">🧭</div>
+    <div>
+      <h2>What is Recurly Commerce?</h2>
+      <p>A quick orientation before you dive in — understand what you just installed and what it can do for your Shopify store.</p>
+    </div>
+  </div>
+
+  <a href="https://navigate.recurly.com/commerce/launch-smarter/" target="_blank" rel="noopener noreferrer" class="rc-video-card">
+    <div class="rc-play">▶</div>
+    <div class="rc-vmeta">
+      <div class="rc-vtag">📹 Watch First · Full Overview</div>
+      <h3>Launch Smarter: Optimize your Recurly Commerce Setup</h3>
+      <p>Start here for a full walkthrough of the platform before diving into setup.</p>
+    </div>
+  </a>
+
+  <div class="rc-3col">
+    <div class="rc-wi"><div class="rc-wi-icon">📦</div><h4>Subscription Management</h4><p>Create recurring product offers with flexible billing frequencies and discounts — all without touching code.</p></div>
+    <div class="rc-wi"><div class="rc-wi-icon">🛍️</div><h4>Native Shopify Integration</h4><p>Everything lives inside your Shopify admin. No separate dashboard to juggle — it's all connected.</p></div>
+    <div class="rc-wi"><div class="rc-wi-icon">💳</div><h4>Revenue Recovery</h4><p>Automatically retries failed payments and notifies customers so you lose less revenue to billing hiccups.</p></div>
+  </div>
+
+  <div class="rc-card">
+    <h3 class="rc-subhead">🗺️ Your Onboarding Journey</h3>
+    <div class="rc-journey">
+      <div class="rc-jstep"><div class="rc-jdot">📋</div><div class="rc-jlbl">Choose Plan</div></div>
+      <div class="rc-jstep"><div class="rc-jdot">🏷️</div><div class="rc-jlbl">Create Sub Plans</div></div>
+      <div class="rc-jstep"><div class="rc-jdot">🛒</div><div class="rc-jlbl">Set Up Storefront</div></div>
+      <div class="rc-jstep"><div class="rc-jdot">👤</div><div class="rc-jlbl">Customer Portal</div></div>
+      <div class="rc-jstep"><div class="rc-jdot">🔔</div><div class="rc-jlbl">Notifications</div></div>
+      <div class="rc-jstep"><div class="rc-jdot">🔗</div><div class="rc-jlbl">Integrations</div></div>
+    </div>
+  </div>
+
+  <div class="rc-warning">
+    <span class="rc-wicon">⚠️</span>
+    <p><strong>Before you begin:</strong> Make sure the Shopify user setting up Recurly Commerce has <strong>"Approve app charges"</strong> permission enabled. Without this, you won't be able to activate a plan. Check this under Shopify Admin → Settings → Users &amp; Permissions.</p>
+  </div>
+
+  <div class="rc-tip">
+    <span class="rc-tipicon">💡</span>
+    <div>
+      <h4>Pro Tip · Set Your Goal First</h4>
+      <p>Before configuring anything, ask yourself: <em>What products do I want to offer as subscriptions? How often should customers receive them?</em> Having a clear picture of your offer structure will make every step below feel fast and intuitive.</p>
+    </div>
+  </div>
+
+  <div class="rc-sec-nav">
+    <span class="rc-btn-disabled">← Back</span>
+    <a class="rc-btn-next" href="#rcSec1">Next: Subscription Plans →</a>
+  </div>
+</div>
+</body></html>
+`}</HTMLBlock>
+  </Tab>
+
+  <Tab title="Second Tab">
+    Here's content that's only inside the second Tab.
+  </Tab>
+
+  <Tab title="Third Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+
+ <Tab title="Fourth Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+
+ <Tab title="Fifth Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+
+ <Tab title="Sixth Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+
+ <Tab title="Seventh Tab">
+    Here's content that's only inside the third Tab.
+  </Tab>
+</Tabs>
