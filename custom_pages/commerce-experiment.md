@@ -1,5 +1,5 @@
 ---
 title: Commerce Experiment
 fullscreen: false
-hidden: false
+hidden: true
 ---
