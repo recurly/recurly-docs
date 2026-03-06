@@ -1,7 +1,7 @@
 ---
 title: Commerce Experiment 3
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
