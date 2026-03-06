@@ -10,11 +10,7 @@ name: DunningOptimizationWebinar
   allowfullscreen
   style="border:0;">
 </iframe>
-`}</HTMLBlock>
 
-<br />
-
-<HTMLBlock>{`
 <p style="display: none;">
 Stop the Leak: How to Optimize Dunning for Growth
 
@@ -109,6 +105,27 @@ If your business utilizes Recurly Wallet for backup payment methods, include a m
 Value to Your Business
   Implementing these dunning optimization tips can lead to significant improvements in revenue recovery. Many businesses observe a 3% to 5% uplift in recovered revenue by making these changes. Even simple adjustments, such as extending the dunning window, can have a powerful impact. While some businesses worry about providing "free access" during an extended dunning period, webhooks can be used to stop product access while dunning continues. 
 </p>
+`}</HTMLBlock>
+
+<br />
+
+## Webinar Handout Assets
+
+### 1. Presentation Deck 
+
+<Embed typeOfEmbed="pdf" url="https://go.recurly.com/Recurly-Navigate-Presentation-Deck-How-to-Optimize-Dunning-for-Growth.html" href="https://go.recurly.com/Recurly-Navigate-Presentation-Deck-How-to-Optimize-Dunning-for-Growth.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
+
+### 2. Dunning optimization checklist
+
+Download this quick-reference of best practices and configurations to keep your dunning strategy and setup polished. 
+
+
+
+<HTMLBlock>{`
+<Embed typeOfEmbed="pdf" url="https://go.recurly.com/navigate_dunning_optimization_checklist.html" href="https://go.recurly.com/navigate_dunning_optimization_checklist.html" providerUrl="https://go.recurly.com" providerName="Recurly" />
+</Accordion>
+
+<p style="display: none;">This text is hidden and takes up no space.</p>
 `}</HTMLBlock>
 
 <br />
