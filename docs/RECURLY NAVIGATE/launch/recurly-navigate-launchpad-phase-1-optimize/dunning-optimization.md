@@ -110,14 +110,12 @@ Dunning is one of the easiest ways to win back revenue, keep your customers arou
 
 # Stop the Leak: How to optimize Dunning for growth
 
-You're halfway to Dunning mastery, but this is a topic worth going the full mile for. The impact on your recovered revenue is priceless (pun intended). Check out this Dunning Best Practices webinar to learn all 10 optimization tips. The presentation handout is included below the video so you can follow along with Hannah Wheeldon, Manager, Customer Success @ Recurly. 
+You're halfway to Dunning mastery, but this is a topic worth going the full mile for. The impact on your recovered revenue is priceless (pun intended). Check out this Dunning Best Practices webinar to learn all 10 optimization tips. **The presentation handout is included below the video** so you can follow along with Hannah Wheeldon, Manager, Customer Success @ Recurly. 
+
+<Callout icon="📣" theme="default">
+  #### **We can prove the results!** My Music Workshop implemented the 10 tips shared in this Navigate Lunch + Learn and saw **279% increase** in recovered revenue in just 30 days. Read their story here.
+</Callout>
 
 <DunningOptimizationWebinar />
 
 <br />
-
-<Callout icon="📣" theme="default">
-  ### **We can prove the results!** My Music Workshop implemented the 10 tips shared in this Navigate Lunch + Learn and saw **279% increase** in recovered revenue in just 30 days. Read their story here.
-</Callout>
-
-k;alksjdlkfja;lksdklfasd
