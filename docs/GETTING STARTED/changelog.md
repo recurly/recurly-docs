@@ -24,6 +24,15 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 # 2026
 
+## March
+
+| Release Date | **Feature**                                  | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                      |
+| :----------- | :------------------------------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Mar 3        | **Adyen Gateway**                            | Low                  | Updated handling of CashApp response codes to avoid, or make more clear, errors related to this payment method.                                                                                                                                                                 |
+| Mar 3        | **AmazonPay V2 Gateway**                     | Low                  | Updated handling of certain gateway responses to ensure Charge IDs that can't be used **yet** are classified as try_again.                                                                                                                                                      |
+| Mar 3        | **Recurly Reporting \| Transaction Details** | Low                  | We are exposing 3DS Authentication information in our UI when a transaction goes through SCA. You will see some new fields around the final state of the authentication (results), and if available on that gateway, the final ECI and Code related to the 3DS authentication.  |
+| Mar 3        | **Braintree Gateway**                        | Low                  | We've updated the handling of the UAH currency to avoid errors when using gateway tokens instead of Recurly.js.                                                                                                                                                                 |
+
 ## February
 
 | Release Date | **Feature**                         | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
