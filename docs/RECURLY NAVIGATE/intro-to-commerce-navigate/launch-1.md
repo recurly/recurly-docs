@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<HTMLBlock>{\`
+<HTMLBlock>
 <style>
   .rc-guide{
     --yellow:#FFD706;
