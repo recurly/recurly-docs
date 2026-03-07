@@ -468,7 +468,7 @@ metadata:
     </div>
   </div>
 </div>
-\`}</HTMLBlock>
+</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
