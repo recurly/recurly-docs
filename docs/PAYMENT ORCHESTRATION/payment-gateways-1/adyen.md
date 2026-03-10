@@ -137,6 +137,10 @@ Navigate to **Developers→Additional Data** in Adyen to enable these features. 
 * Card Summary
 * Expiry date
 
+## Activation of 3DS results Data 
+
+To populate 3DS results data in our platform, please enable 3DS response details in **Developers→Additional Data** (there are two separate settings, enable them both) to ensure your transaction detail page populates properly.
+
 ## Activation of "Network Transaction Reference" and recurring details
 
 To successfully process **MIT (Merchant-Initiated Transactions)** across all payment methods, including and not limited to **Google Pay, Apple Pay, and cards**, you must activate **"Network transaction reference"** in your Adyen Merchant Account settings. Additionally, for payment methods that require tokenization, enabling **Recurring Details** is also essential. This can be done in the same settings area in Adyen.
