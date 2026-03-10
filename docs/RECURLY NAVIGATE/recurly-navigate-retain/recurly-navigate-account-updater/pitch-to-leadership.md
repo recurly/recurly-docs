@@ -1,7 +1,7 @@
 ---
 title: Pitch to leadership
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
