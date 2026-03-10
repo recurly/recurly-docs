@@ -19,7 +19,7 @@ Users must have analytics user role permission.
 
 # Definition
 
-The payments hub dashboards will help merchants understand their payment performance, identify trends and make data-driven decisions to proactively manage and optimize payments, maintain payments reliability and drive improved authorization rates and recurring revenue.
+The Payments Hub dashboards help merchants understand their payment performance, identify trends, and make data-driven decisions. With these insights, merchants can proactively optimize payments, maintain reliability, improve authorization rates, and drive recurring revenue.
 
 # Payments Hub
 
