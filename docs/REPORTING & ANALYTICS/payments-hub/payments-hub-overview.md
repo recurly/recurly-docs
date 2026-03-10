@@ -87,12 +87,12 @@ This card displays the total dollar amount of revenue retained through Account U
 
 ## Payment Retry
 
-text 
+This card displays the total dollar amount recovered through Payment Retries — representing renewal revenue that would have otherwise been lost to failed transactions — alongside a month-over-month percentage change to show how retry performance is trending over time. 
 
 [ image] 
 
 ## Fraud Prevention
 
-text 
+This card displays the total count of blocked fraudulent transactions alongside a month-over-month percentage change to show how your fraud protection is performing over time. The accompanying dollar amount reflects the value of those blocked transactions, giving you a tangible measure of how much potential fraud exposure Kount is protecting your business from. 
 
 [ image ] 
