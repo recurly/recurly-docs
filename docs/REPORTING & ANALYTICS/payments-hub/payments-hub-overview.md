@@ -27,7 +27,9 @@ If you are using Account Updater or Kount, you will also see a high level view o
 
 # Key benefits
 
-<br />
+* **Spot issues fast** — quickly identify underperforming regions, methods, or transaction types before they impact revenue.
+* **Make smarter decisions** — understand what's driving performance so you can prioritize where to act.
+* **Track what matters** — keep a pulse on overall payment health without getting lost in the details.
 
 # Key Details
 
