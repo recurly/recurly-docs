@@ -73,7 +73,7 @@ This card displays your Customer Initiated Transaction (CIT) success rate as a s
 
 [ image ] 
 
-## MITSuccess Rate
+## MIT Success Rate
 
 This card displays your Merchant Initiated Transaction (MIT) success rate — typically reflecting the health of your subscription renewals — as a single at-a-glance percentage, paired with a month-over-month trend indicator to show whether auth rates are improving or declining. The accompanying dollar volume connects that rate to real recurring revenue impact, helping you understand the direct relationship between renewal success and bottom-line performance.
 
