@@ -19,7 +19,7 @@ Users must have analytics user role permission.
 
 # Definition
 
-The Payments Hub dashboards help merchants understand their payment performance, identify trends, and make data-driven decisions. With these insights, merchants can proactively optimize payments, maintain reliability, improve authorization rates, and drive recurring revenue.
+The Payments Hub dashboards help you understand your site-level payment performance, identify trends, and make data-driven decisions. With these insights, you can proactively optimize payments, maintain reliability, improve authorization rates, and drive recurring revenue.
 
 # Payments Hub
 
@@ -33,11 +33,11 @@ This section is a comprehensive view of payment success rates across all transac
 
 ## Account Updater
 
-The Account Updater dashboard tracks retained revenue through automated card updates, giving merchants visibility into how the service is preventing payment failures by keeping card expiration dates and card data current.
+The Account Updater dashboard tracks retained revenue through automated card updates, giving you visibility into how the service is preventing payment failures by keeping card expiration dates and card data current.
 
 ## Payment Retry Recovery
 
-Get insights into retained revenue through intelligent retry strategies. Track how optimized retry logic helps recover initially failed payments.
+The Retry Logic dashboard surfaces insights into retained revenue through intelligent retry strategies, showing you how optimized logic helps recover initially failed payments.
 
 ## Fraud Prevention
 
