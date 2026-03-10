@@ -49,7 +49,7 @@ If you are using Account Updater or Kount, you will also see a high level view o
 
 ## Global Payments Volume Distribution
 
-This map shows which countries or regions are generating the highest Total Processing Volume (TPV) and therefore revenue.
+This map visualizes Payment distribution by Volume by region — darker shades indicate higher volume, making it easy to spot your strongest markets and revenue concentration at a glance as well as where you need to focus your expansion efforts.
 
 ![](https://files.readme.io/b429a9c3b4232db7715e08b63c8ed47b5cfc2da277d60bc6a36bf4580a4aa761-image.png)
 
@@ -59,6 +59,8 @@ This map shows which countries or regions are generating the highest Total Proce
 
 ## Payment Method Distribution
 
+This pie chart breaks down your transactions by payment method, showing both the count and associated volume for each — giving you a clear picture of how revenue is distributed across payment types. Understanding your payment method mix helps you identify where customers prefer to pay, so you can prioritize optimization efforts and negotiate better rates where it matters most.
+
 <Image align="center" width="70% " src="https://files.readme.io/f3ebd0fc0fdad212462a8b7e52c996bf59440eded9503a78599e40c002c3da48-image.png" />
 
 <Image align="center" width="60% " src="https://files.readme.io/a6a2c532bae7eb213f403356bf9d6db2d6adc2909cd87f1d6360b3d5bc7b6499-image.png" />
@@ -67,9 +69,19 @@ This map shows which countries or regions are generating the highest Total Proce
 
 ## CIT Success Rate
 
+This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. The accompanying dollar volume ties that rate to real revenue impact, helping you understand not just how often payments succeed, but what that success is worth.
+
+[ image ] 
+
 ## MITSuccess Rate
 
+This card displays your Merchant Initiated Transaction (MIT) success rate — typically reflecting the health of your subscription renewals — as a single at-a-glance percentage, paired with a month-over-month trend indicator to show whether auth rates are improving or declining. The accompanying dollar volume connects that rate to real recurring revenue impact, helping you understand the direct relationship between renewal success and bottom-line performance.
+
+[ image ]
+
 ## Account Updater
+
+<br />
 
 ## Payment Retry
 
