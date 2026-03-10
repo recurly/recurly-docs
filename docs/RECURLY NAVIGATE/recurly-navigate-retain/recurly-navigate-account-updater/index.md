@@ -468,6 +468,101 @@ metadata:
     .rc-video-card { flex-direction: column; padding: 24px; }
     .rc-nav { flex-direction: column; }
     .rc-sec-nav { flex-direction: column; align-items: stretch; }
+.rc-video-embed {
+  margin-bottom: 0;
+}
+
+.rc-video-embed summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.rc-video-embed summary::-webkit-details-marker {
+  display: none;
+}
+
+.rc-video-summary {
+  display: block;
+}
+
+.rc-video-thumb {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 280px;
+  background:
+    linear-gradient(rgba(13,13,11,0.45), rgba(13,13,11,0.65)),
+    var(--darkgray);
+  border: 1px solid var(--lightgray);
+}
+
+.rc-video-thumb-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.rc-video-thumb-play {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--offblack);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.rc-video-thumb-text strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.rc-video-thumb-text span {
+  display: block;
+  max-width: 640px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--lightgray);
+}
+
+.rc-video-frame-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1920 / 1080;
+  border-radius: 14px;
+  margin-top: 14px;
+}
+
+@media (max-width: 640px) {
+  .rc-video-thumb {
+    min-height: 220px;
+  }
+
+  .rc-video-thumb-inner {
+    padding: 24px 18px;
+  }
+
+  .rc-video-thumb-text strong {
+    font-size: 0.98rem;
+  }
+
+  .rc-video-thumb-text span {
+    font-size: 0.86rem;
+  }
+}
   }
 </style>
 
@@ -829,14 +924,34 @@ metadata:
           </div>
         </div>
 
-        <a href="https://share.synthesia.io/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" target="_blank" rel="noopener noreferrer" class="rc-video-card">
-          <div class="rc-play">▶</div>
-          <div class="rc-vmeta">
-            <div class="rc-vtag">📹 Watch · Trail Guide Video</div>
-            <h3>Secure Your Revenue: Account Updater</h3>
-            <p>Watch our Navigate CSM walk through enabling Account Updater step by step in your Recurly site.</p>
+        <div class="rc-card">
+  <h3 class="rc-subhead">📹 Trail Guide Walkthrough</h3>
+
+  <details class="rc-video-embed">
+    <summary class="rc-video-summary">
+      <div class="rc-video-thumb">
+        <div class="rc-video-thumb-inner">
+          <div class="rc-video-thumb-play">▶</div>
+          <div class="rc-video-thumb-text">
+            <strong>Watch the walkthrough</strong>
+            <span>Watch our Navigate CSM walk through enabling Account Updater step-by-step in your Recurly site.</span>
           </div>
-        </a>
+        </div>
+      </div>
+    </summary>
+
+    <div class="rc-video-frame-wrap">
+      <iframe
+        src="https://share.synthesia.io/embeds/videos/b86fe7bd-1f74-491f-8632-acebd4794615"
+        loading="lazy"
+        title="Navigate: Secure Your Revenue — Account Updater"
+        allowfullscreen
+        allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"
+        style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0;">
+      </iframe>
+    </div>
+  </details>
+</div>
 
         <h3 class="rc-subhead">🔧 Core Setup: Enable Account Updater</h3>
         <div class="rc-steps">
