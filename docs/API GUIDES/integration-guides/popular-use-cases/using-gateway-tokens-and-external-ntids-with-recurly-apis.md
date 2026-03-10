@@ -95,6 +95,10 @@ It’s recommended, at this point, to store the billing info ID for the next ste
             "postal_code": "60601",
             "country": "US"
         },
+      "gateway_attributes":{
+					"account_reference":"adyen-shopper-reference" // Only send for Adyen
+      },
+
         "gateway_token":"token-here" // Deprecated Parameter
     }
 }
