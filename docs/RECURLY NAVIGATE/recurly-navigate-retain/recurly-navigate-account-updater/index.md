@@ -22,9 +22,7 @@ metadata:
     font-family: 'Segoe UI', system-ui, sans-serif;
   }
 
-  .rc-tabs input[type="radio"] {
-    display: none;
-  }
+  .rc-tabs input[type="radio"] { display: none; }
 
   .rc-hero {
     background: var(--offblack);
@@ -126,74 +124,29 @@ metadata:
     flex-shrink: 0;
   }
 
-  .rc-anchor {
-    display: block;
-    position: relative;
-    top: -12px;
-    visibility: hidden;
-    height: 0;
-  }
-
-  .rc-panels .rc-panel {
-    display: none;
-  }
-
-  /* Default tab states */
   #tab-what:checked ~ .rc-nav label[for="tab-what"],
-  #tab-why:checked ~ .rc-nav label[for="tab-why"] {
+  #tab-why:checked ~ .rc-nav label[for="tab-why"],
+  #tab-consider:checked ~ .rc-nav label[for="tab-consider"],
+  #tab-when-not:checked ~ .rc-nav label[for="tab-when-not"],
+  #tab-how:checked ~ .rc-nav label[for="tab-how"],
+  #tab-track:checked ~ .rc-nav label[for="tab-track"],
+  #tab-pitch:checked ~ .rc-nav label[for="tab-pitch"] {
     background: var(--yellow);
     border-color: var(--yellow);
     color: var(--offblack);
     box-shadow: 0 2px 10px rgba(255,215,6,0.25);
   }
+
+  .rc-panels .rc-panel { display: none; }
 
   #tab-what:checked ~ .rc-panels .rc-panel-what,
-  #tab-why:checked ~ .rc-panels .rc-panel-why {
+  #tab-why:checked ~ .rc-panels .rc-panel-why,
+  #tab-consider:checked ~ .rc-panels .rc-panel-consider,
+  #tab-when-not:checked ~ .rc-panels .rc-panel-when-not,
+  #tab-how:checked ~ .rc-panels .rc-panel-how,
+  #tab-track:checked ~ .rc-panels .rc-panel-track,
+  #tab-pitch:checked ~ .rc-panels .rc-panel-pitch {
     display: block;
-  }
-
-  /* Anchor-link overrides */
-  #what:target ~ .rc-panel-what,
-  #why:target ~ .rc-panel-why {
-    display: block;
-  }
-
-  /* When a hash target is present, suppress the default checked panel */
-  .rc-panels:has(#what:target) .rc-panel,
-  .rc-panels:has(#why:target) .rc-panel {
-    display: none;
-  }
-
-  .rc-panels:has(#what:target) .rc-panel-what,
-  .rc-panels:has(#why:target) .rc-panel-why {
-    display: block;
-  }
-
-  /* Anchor-link active nav highlight */
-  .rc-nav a {
-    text-decoration: none;
-  }
-
-  .rc-panels:has(#what:target) ~ * {
-  }
-
-  .rc-guide:has(#what:target) .rc-nav .rc-link-what,
-  .rc-guide:has(#why:target) .rc-nav .rc-link-why {
-    background: var(--yellow);
-    border-color: var(--yellow);
-    color: var(--offblack);
-    box-shadow: 0 2px 10px rgba(255,215,6,0.25);
-  }
-
-  /* If using anchor links, don't also show radio-active style on wrong tab */
-  .rc-guide:has(#what:target) #tab-what:checked ~ .rc-nav label[for="tab-what"],
-  .rc-guide:has(#why:target) #tab-what:checked ~ .rc-nav label[for="tab-what"],
-  .rc-guide:has(#what:target) #tab-why:checked ~ .rc-nav label[for="tab-why"],
-  .rc-guide:has(#why:target) #tab-why:checked ~ .rc-nav label[for="tab-why"] {
-    background: white;
-    border-color: var(--lightgray);
-    color: var(--darkgray);
-    box-shadow: none;
   }
 
   .rc-sec {
@@ -233,52 +186,56 @@ metadata:
     line-height: 1.5;
   }
 
-  .rc-card {
-    background: var(--offwhite);
+  .rc-video-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: var(--darkgray);
     border-radius: 16px;
-    padding: 28px;
-    border: 1px solid var(--lightgray);
+    padding: 32px;
     margin-bottom: 24px;
+    text-decoration: none;
+    transition: opacity 0.2s;
   }
 
-  .rc-subhead {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 16px;
+  .rc-video-card:hover {
+    opacity: 0.88;
+    text-decoration: none;
+  }
+
+  .rc-play {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--yellow);
     color: var(--offblack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
   }
 
-  .rc-3col {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 14px;
-    margin-bottom: 24px;
+  .rc-vmeta { color: white; }
+
+  .rc-vtag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lightgray);
+    margin-bottom: 6px;
   }
 
-  .rc-wi {
-    background: var(--offwhite);
-    border-radius: 14px;
-    padding: 20px;
-    border: 1px solid var(--lightgray);
-    text-align: center;
-  }
-
-  .rc-wi-icon {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  .rc-wi h4 {
-    font-size: 0.88rem;
+  .rc-vmeta h3 {
+    font-size: 1.05rem;
     font-weight: 700;
-    margin-bottom: 5px;
-    color: var(--offblack);
+    margin-bottom: 4px;
+    color: var(--offwhite);
   }
 
-  .rc-wi p {
-    font-size: 0.80rem;
-    color: var(--gray);
-    line-height: 1.5;
+  .rc-vmeta p {
+    font-size: 0.85rem;
+    color: var(--lightgray);
     margin: 0;
   }
 
@@ -387,11 +344,82 @@ metadata:
     margin: 0;
   }
 
+  .rc-checklist {
+    background: var(--offwhite);
+    border-radius: 16px;
+    border: 1px solid var(--lightgray);
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  .rc-cl-header {
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--brightgray);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--offblack);
+  }
+
+  .rc-cl-header h3 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--yellow);
+    margin: 0;
+  }
+
+  .rc-cli {
+    padding: 13px 22px;
+    border-bottom: 1px solid var(--brightgray);
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .rc-cli:last-child { border-bottom: none; }
+
+  .rc-cb {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--lightgray);
+    flex-shrink: 0;
+    margin-top: 1px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--gray);
+  }
+
+  .rc-clab {
+    font-size: 0.88rem;
+    color: var(--darkgray);
+    line-height: 1.4;
+  }
+
+  .rc-clab span {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--gray);
+    margin-top: 2px;
+  }
+
   .rc-2col {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
     margin-bottom: 26px;
+  }
+
+  .rc-3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
   }
 
   .rc-opt {
@@ -437,6 +465,48 @@ metadata:
     color: var(--yellow);
   }
 
+  .rc-wi {
+    background: var(--offwhite);
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid var(--lightgray);
+    text-align: center;
+  }
+
+  .rc-wi-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .rc-wi h4 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--offblack);
+  }
+
+  .rc-wi p {
+    font-size: 0.80rem;
+    color: var(--gray);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .rc-card {
+    background: var(--offwhite);
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid var(--lightgray);
+    margin-bottom: 24px;
+  }
+
+  .rc-subhead {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--offblack);
+  }
+
   .rc-stat-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -473,13 +543,8 @@ metadata:
     background: var(--offwhite);
   }
 
-  .pricing-card.free {
-    border-left: 4px solid #2E7D32;
-  }
-
-  .pricing-card.paid {
-    border-left: 4px solid var(--orange);
-  }
+  .pricing-card.free { border-left: 4px solid #2E7D32; }
+  .pricing-card.paid { border-left: 4px solid var(--orange); }
 
   .pricing-card h4 {
     font-size: 0.95rem;
@@ -570,8 +635,8 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a class="rc-tab-label rc-link-what" href="#what"><span class="rc-snum">1</span>What Is It?</a>
-    <a class="rc-tab-label rc-link-why" href="#why"><span class="rc-snum">2</span>Why Use It?</a>
+    <label class="rc-tab-label" for="tab-what"><span class="rc-snum">1</span>What Is It?</label>
+    <label class="rc-tab-label" for="tab-why"><span class="rc-snum">2</span>Why Use It?</label>
     <label class="rc-tab-label" for="tab-consider"><span class="rc-snum">3</span>Things to Consider</label>
     <label class="rc-tab-label" for="tab-when-not"><span class="rc-snum">4</span>When Not to Use It</label>
     <label class="rc-tab-label" for="tab-how"><span class="rc-snum">5</span>How to Enable It</label>
@@ -581,8 +646,7 @@ metadata:
 
   <div class="rc-panels">
 
-    <span id="what" class="rc-anchor"></span>
-    <div class="rc-panel rc-panel-what">
+    <div class="rc-panel rc-panel-what" id="panel-what">
       <div class="rc-sec">
         <div class="rc-sec-header">
           <div class="rc-sec-icon">💳</div>
@@ -631,13 +695,12 @@ metadata:
 
         <div class="rc-sec-nav">
           <span class="rc-btn-disabled">← Back</span>
-          <a class="rc-btn-next" href="#why">Next: Why Use It? →</a>
+          <label class="rc-btn-next" for="tab-why">Next: Why Use It? →</label>
         </div>
       </div>
     </div>
 
-    <span id="why" class="rc-anchor"></span>
-    <div class="rc-panel rc-panel-why">
+    <div class="rc-panel rc-panel-why" id="panel-why">
       <div class="rc-sec">
         <div class="rc-sec-header">
           <div class="rc-sec-icon">📈</div>
@@ -724,7 +787,7 @@ metadata:
         </div>
 
         <div class="rc-sec-nav">
-          <a class="rc-btn-prev" href="#what">← What Is It?</a>
+          <label class="rc-btn-prev" for="tab-what">← What Is It?</label>
           <label class="rc-btn-next" for="tab-consider">Next: Things to Consider →</label>
         </div>
       </div>
@@ -732,7 +795,7 @@ metadata:
 
   </div>
 </div>
-\`}</HTMLBlock>
+  \`}</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
