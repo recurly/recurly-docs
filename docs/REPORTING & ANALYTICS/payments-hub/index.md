@@ -33,7 +33,7 @@ This section is a comprehensive view of payment success rates across all transac
 
 ## Account Updater
 
-The Account Updater dashboard tracks retained revenue through automated card updates. Monitor how the Account Updater service prevents payment failures by keeping payment methods current.
+The Account Updater dashboard tracks retained revenue through automated card updates, giving merchants visibility into how the service is preventing payment failures by keeping card expiration dates and card data current.
 
 ## Payment Retry Recovery
 
