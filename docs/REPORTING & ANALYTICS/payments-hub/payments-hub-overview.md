@@ -21,7 +21,9 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The Overview provides a high-level summary of payment performance, geographic distribution, payment method mix, and the health of payment recovery services.
+The Overview gives you a high-level summary of payment performance across geographic distribution, payment method mix, and the health of success rates — spanning both customer and merchant initiated transactions as well as recovery services.
+
+If you are using Account Updater or Kount, you will also see a high level view of your vault and fraud health metrics.
 
 # Key benefits
 
