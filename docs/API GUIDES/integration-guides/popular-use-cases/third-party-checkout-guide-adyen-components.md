@@ -16,7 +16,7 @@ This guide walks you through how to connect your Adyen Web Components integratio
 ### Prerequisites & limitations
 
 <Callout icon="📘" theme="info">
-  You **must** follow the [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) setup guide including applicable Webhooks configuration at Adyen. Without proper webhooks configuration, certain behaviors such as Recurring Token usage and Async Status updates will not function properly.
+  You **must** follow the [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen#/) setup guide including applicable **Webhooks** configuration at Adyen. Without proper webhooks configuration, certain behaviors such as Recurring Token usage and Async Status updates _will not function properly._
 </Callout>
 
 * A working **Adyen** Web Components implementation using the **Advanced Flow** (Cards, Cash App Pay, Google Pay, Apple Pay, ACH, SEPA, BACS, iDeal, and Bancontact). You do not need to send the State Data to Adyen.
