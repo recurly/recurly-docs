@@ -29,7 +29,7 @@ The Overview provides a high-level summary of payment performance, geographic di
 
 ## Payment Processing
 
-Comprehensive view of payment success rates across all transaction types, payment methods, and gateways. Monitor success rates and decline patterns to optimize payment processing.
+This section is a comprehensive view of payment success rates across all transaction types, payment methods, and gateways — enabling you to monitor decline patterns and optimize payment processing.
 
 ## Account Updater
 
