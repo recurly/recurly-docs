@@ -1,7 +1,7 @@
 ---
 title: Things to consider
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
