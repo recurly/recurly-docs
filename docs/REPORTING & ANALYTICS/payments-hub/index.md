@@ -41,6 +41,6 @@ The Retry Logic dashboard surfaces insights into retained revenue through intell
 
 ## Fraud Prevention
 
-Monitor blocked transaction count, blocked volume, and risk scores. Track fraud protection effectiveness while balancing security with customer experience.
+The Fraud dashboard monitors blocked transaction counts, blocked volume, and risk scores when using Kount Fraud Management — giving you a clear view of fraud protection effectiveness and helping you balance security with customer experience.
 
 <br />
