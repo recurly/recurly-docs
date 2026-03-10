@@ -81,8 +81,18 @@ This card displays your Merchant Initiated Transaction (MIT) success rate — ty
 
 ## Account Updater
 
-<br />
+This card displays the total dollar amount of revenue retained through Account Updater — reflecting payments that were saved as a result of an automated card update — alongside a month-over-month percentage change so you can track the service's growing impact over time. A retention lift percentage ties it all together, showing you the direct effect Account Updater is having on keeping customers active and payments flowing. 
+
+[ image ] 
 
 ## Payment Retry
 
+text 
+
+[ image] 
+
 ## Fraud Prevention
+
+text 
+
+[ image ] 
