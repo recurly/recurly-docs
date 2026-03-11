@@ -83,8 +83,8 @@ metadata:
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-plans"><span class="rc-snum">2</span>Subscription Plans</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/storefront-setup"><span class="rc-snum">3</span>Storefront Setup</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
-    <a class="rc-active" href="https://docs.recurly.com/recurly-subscriptions/update/docs/notifications-1"><span class="rc-snum">5</span>Notifications</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce"><span class="rc-snum">6</span>Integrations</a>
+    <a class="rc-active" href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce"><span class="rc-snum">5</span>Notifications</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/integrations-commerce"><span class="rc-snum">6</span>Integrations</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/launch-1"><span class="rc-snum">✓</span>Launch!</a>
   </nav>
 
@@ -144,7 +144,7 @@ metadata:
 
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/customer-portal">← Customer Portal</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/update/docs/integrations-1">Next: Integrations →</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/integrations-commerce">Next: Integrations →</a>
     </div>
 
     <div style="margin-top:24px;">
