@@ -476,7 +476,7 @@ metadata:
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce"><span class="rc-snum">5</span>Notifications</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/integrations-commerce"><span class="rc-snum">6</span>Integrations</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/launch"><span class="rc-snum">✓</span>Launch!</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/launch-commerce"><span class="rc-snum">✓</span>Launch!</a>
   </nav>
 
   <div class="rc-container">
