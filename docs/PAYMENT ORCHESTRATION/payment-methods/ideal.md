@@ -16,6 +16,14 @@ next:
 ---
 # Overview
 
+<Callout icon="📘" theme="info">
+  i**Deal | Wero Logo Update**
+
+  Prior to March 31st, 2026, Recurly will be updating all visible logos in our platform to display iDeal's new branding combination of "iDeal | Wero". You will see your integrations automatically update depending on which platform you are using (Adyen or Stripe), as well as logos inside the Recurly admin portal for billing infos, Recurly Wallet, and transaction details and reporting.
+
+  There are no integration changes necessary on your end.
+</Callout>
+
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly subscription plan.
