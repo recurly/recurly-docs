@@ -530,7 +530,7 @@ metadata:
       </div>
 
       <div class="rc-sec-nav">
-        <span class="rc-btn-disabled">← Back</span>
+        <span class="rc-btn-disabled">🎯 Start here</span>
         <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-plans">Next: Subscription Plans →</a>
       </div>
 
