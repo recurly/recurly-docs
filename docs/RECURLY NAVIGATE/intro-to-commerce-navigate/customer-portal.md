@@ -135,7 +135,7 @@ metadata:
 
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/storefront-setup">← Storefront Setup</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/update/docs/notifications-1">Next: Notifications →</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce">Next: Notifications →</a>
     </div>
 
     <div style="margin-top:24px;">
