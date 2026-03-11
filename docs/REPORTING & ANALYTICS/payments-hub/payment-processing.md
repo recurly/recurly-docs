@@ -26,7 +26,9 @@ The Payment Analytics dashboard gives you a deep dive into the performance of yo
 
 # Key benefits
 
-<br />
+* **Pinpoint underperformance quickly** — by breaking success rates down across gateways, payment methods, and BINs, you can isolate exactly where failures are occurring rather than chasing broad trends.
+* **Turn declines into recoverable revenue** — understanding your top decline reasons gives you a clear, actionable starting point for reducing preventable payment failures.
+* **Optimize with confidence** — combining trend data with granular breakdowns means you can make informed decisions about your payment stack, whether that's switching gateways, prioritizing certain payment methods, or flagging underperforming BINs.
 
 ## Payment Success Rate
 
