@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<HTMLBlock>{\`
+<HTMLBlock>
 <style>
   .rc-guide {
     --yellow: #FFD706;
@@ -1060,7 +1060,7 @@ metadata:
 
   </div>
 </div>
-\`}</HTMLBlock>
+</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
