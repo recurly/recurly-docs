@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<HTMLBlock>{\`
+<HTMLBlock>
 <style>
   .rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif}
   .rc-hero{background:var(--offblack);color:#fff;padding:56px 40px 48px;text-align:center;border-radius:16px;margin-bottom:0}
@@ -86,8 +86,8 @@ metadata:
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/storefront-setup"><span class="rc-snum">3</span>Storefront Setup</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce"><span class="rc-snum">5</span>Notifications</a>
-    <a class="rc-active" href="https://docs.recurly.com/recurly-subscriptions/update/docs/integrations-1"><span class="rc-snum">6</span>Integrations</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/launch-1"><span class="rc-snum">✓</span>Launch!</a>
+    <a class="rc-active" href="https://docs.recurly.com/recurly-subscriptions/docs/integrations-commerce"><span class="rc-snum">6</span>Integrations</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/launch-commerce"><span class="rc-snum">✓</span>Launch!</a>
   </nav>
 
   <div class="rc-sec">
@@ -135,8 +135,8 @@ metadata:
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/update/docs/notifications-1">← Notifications</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/update/docs/launch-1">Next: Launch! →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce">← Notifications</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/launch-commerce">Next: Launch! →</a>
     </div>
 
     <div style="margin-top:24px;">
@@ -148,7 +148,7 @@ metadata:
     </div>
   </div>
 </div>
-\`}</HTMLBlock>
+</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
