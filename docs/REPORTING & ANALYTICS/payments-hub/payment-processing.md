@@ -32,22 +32,38 @@ The Payment Analytics dashboard gives you a deep dive into the performance of yo
 
 ## Payment Success Rate
 
-<br />
+This card displays your overall Payment Success Rate as a single at-a-glance percentage — encompassing both customer and merchant initiated transactions for a fully holistic view of payment health — paired with a month-over-month trend indicator so you can immediately see whether performance is moving in the right direction. 
+
+[ image ] 
 
 ## Payment Success Rate Over Time
 
-<br />
+Payment Success Rates over Time tracks your overall Payment Success Rate over an extended timeframe, giving you a broader view of how performance has trended across the month rather than a point-in-time snapshot.
+
+[ image ]
 
 ## Payment Method Distribution
 
-<br />
+The Payment method distribution chart breaks down every payment method accepted on your site, showing the relative distribution of transactions across each — giving you an instant read on how your customers prefer to pay.
+
+[ image ]
+
+## Gateway Success Rates
+
+The Gateway Success Rates graph breaks down payment success rates by gateway, giving you a side-by-side comparison of how each PSP is performing within your selected timeframe. Seeing performance isolated by gateway makes it easy to identify underperforming routing paths and validate the impact of gateway changes.
+
+[ image ] 
 
 ## Payment Method Success Rates
 
-<br />
+The Payment Method Success Rates card breaks down payment success rates by payment method, giving you a side-by-side comparison of how each performs independent of the gateway processing it. Isolating success rates at the payment method level helps you identify which methods are underperforming and understand whether declines are method-specific.
+
+[ image ]
 
 ## Card BIN Success Rates
 
-<br />
+The Card BIN Success Rates card breaks down payment success rates by card BIN, surfacing the top performing and most common BINs transacting on your site within a given timeframe. Visibility at the BIN level allows you to identify whether specific card issuers or card types are experiencing higher decline rates, giving you the granularity needed to take targeted action — whether that's working with your gateway, or flagging patterns.
 
 ## Payment Decline Reasons
+
+This table surfaces your top payment decline reasons, categorized by hard or soft decline type, and ranked by count, percentage, and associated dollar volume — giving you a comprehensive view of where and why payments are failing. Distinguishing between hard and soft declines is critical, as soft declines often represent recoverable revenue through retries or account updates, while hard declines signal issues that require a more targeted intervention such as routing changes or issuer outreach.
