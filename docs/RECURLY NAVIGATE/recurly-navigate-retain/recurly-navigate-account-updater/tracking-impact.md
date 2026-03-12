@@ -347,16 +347,6 @@ metadata:
       </div>
     </div>
 
-    <div class="rc-card">
-      <h3 class="rc-subhead">📈 For Your Navigate Program (Internal Tracking)</h3>
-      <p style="font-size:0.88rem;color:var(--darkgray);line-height:1.6;margin-bottom:12px;">If you are tracking the Navigate program's impact, consider monitoring these signals to attribute AU-driven outcomes to the program:</p>
-      <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge">→</div><div><h3>AU Activation Rate</h3><p>What percentage of customers who accessed the Navigate AU learning path went on to enable AU?</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">→</div><div><h3>Pre/Post Revenue Recovery Comparison</h3><p>For accounts that enabled AU after the learning path, compare recovered revenue 90 days before vs. 90 days after enablement.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">→</div><div><h3>Involuntary Churn Delta</h3><p>Track whether accounts that enabled AU after Navigate engagement show measurable improvement in involuntary churn rate relative to a control group.</p></div></div>
-      </div>
-    </div>
-
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-enable-it">← How to Enable It</a>
       <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/pitch-to-leadership">Next: Pitch to Leadership →</a>
