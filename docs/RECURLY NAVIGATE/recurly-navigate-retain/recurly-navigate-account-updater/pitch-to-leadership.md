@@ -339,19 +339,18 @@ metadata:
         <h4>Your Next Step</h4>
         <p>Ready to enable Account Updater? Head to <strong>Settings → Payment Settings</strong> in your Recurly admin and toggle it on. If you have questions about pricing or your specific configuration, reach out to your Recurly Account Manager or contact <a href="mailto:customersuccess@recurly.com" style="color:var(--orange);">customersuccess@recurly.com</a>.</p>
       </div>
-    </div>
-
-    <h3 class="rc-subhead">📚 Additional Resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
-    <a class="rc-link-btn rc-link-sec" href="https://share.synthesia.io/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" target="_blank" rel="noopener noreferrer">▶ Setup Walkthrough Video</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater" target="_blank" rel="noopener noreferrer">🔗 Adyen RTAU Integration</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">🎧 Contact Customer Success</a>
+    </div
 
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/tracking-impact">← Tracking Impact</a>
       <span class="rc-btn-disabled">🎉 You're Ready to Go!</span>
     </div>
   </div>
+    <h3 class="rc-subhead">📚 Additional Resources</h3>
+    <a class="rc-link-btn" href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
+    <a class="rc-link-btn rc-link-sec" href="https://share.synthesia.io/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" target="_blank" rel="noopener noreferrer">▶ Setup Walkthrough Video</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater" target="_blank" rel="noopener noreferrer">🔗 Adyen RTAU Integration</a>
+    <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">🎧 Contact Customer Success</a>
 </div>
 </HTMLBlock>
 `}</HTMLBlock>
