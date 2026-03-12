@@ -32,8 +32,6 @@ The Movement by Plan dashboard provides insights on subscriber movement by track
 
 ## Plan Movement
 
-<br />
-
 ### Plan Movement Trend
 
 Monthly net subscriber movement per plan (inbound minus outbound). Positive values indicate a plan gained more subscribers than it lost from plan changes; negative values indicate more subscribers moved away than arrived.
