@@ -37,7 +37,7 @@ metadata:
   .rc-sec-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;background:var(--yellow)}
   .rc-sec-header h2{font-size:1.7rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
   .rc-sec-header>div>p{color:var(--gray);font-size:.95rem;line-height:1.5;margin:0}
-  .rc-card,.rc-wi,.rc-checklist,.rc-tip,.rc-warning{margin-bottom:24px}
+  .rc-card,.rc-wi,.rc-tip,.rc-warning{margin-bottom:24px}
   .rc-card{background:var(--offwhite);border-radius:16px;padding:28px;border:1px solid var(--lightgray)}
   .rc-subhead{font-size:1rem;font-weight:700;margin:0 0 16px;color:var(--offblack)}
   .rc-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px}
@@ -78,81 +78,77 @@ metadata:
 <body>
 <div class="rc-guide">
 
-  <div class="rc-hero">
-    <div class="rc-badge">⏸️ Retention Strategy</div>
-    <h1>Pause, Not Cancel</h1>
-    <p>Give subscribers a flexible alternative to cancellation by temporarily pausing service instead of ending the relationship.</p>
-    <div class="rc-hero-stats">
-      <div><div class="rc-num">38%</div><div class="rc-lbl">Prefer pause to cancel</div></div>
-      <div><div class="rc-num">337%</div><div class="rc-lbl">Increase in pause usage</div></div>
-      <div><div class="rc-num">3 in 4</div><div class="rc-lbl">Paused subscribers return</div></div>
-    </div>
-  </div>
+<div class="rc-hero">
+<div class="rc-badge">⏸️ Retention Strategy</div>
+<h1>Pause, Not Cancel</h1>
+<p>Give subscribers a flexible alternative to cancellation by temporarily pausing service instead of ending the relationship.</p>
+<div class="rc-hero-stats">
+<div><div class="rc-num">38%</div><div class="rc-lbl">Prefer pause over cancel</div></div>
+<div><div class="rc-num">337%</div><div class="rc-lbl">Increase in pause usage</div></div>
+<div><div class="rc-num">3 in 4</div><div class="rc-lbl">Paused subscribers return</div></div>
+</div>
+</div>
 
-  <nav class="rc-nav">
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/pause-not-cancel"><span class="rc-snum">1</span>What Is It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/why-offer-pause"><span class="rc-snum">2</span>Why Offer It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/pause-best-practices"><span class="rc-snum">3</span>Best Practices</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/pause-metrics"><span class="rc-snum">4</span>Metrics to Track</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/building-the-case-for-pause"><span class="rc-snum">5</span>Building the Case</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/implementing-pause"><span class="rc-snum">6</span>How to Implement</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/pause-resources"><span class="rc-snum">✓</span>Resources</a>
-  </nav>
+<nav class="rc-nav">
+<a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/update/docs/pause-subscriptions-1"><span class="rc-snum">1</span>What Is It?</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/why-offer-it"><span class="rc-snum">2</span>Why Offer It?</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/best-practices-1"><span class="rc-snum">3</span>Best Practices</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/metrics-to-track"><span class="rc-snum">4</span>Metrics to Track</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/building-the-case"><span class="rc-snum">5</span>Building the Case</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-implement"><span class="rc-snum">6</span>How to Implement</a>
+<a href="https://docs.recurly.com/recurly-subscriptions/docs/resources"><span class="rc-snum">✓</span>Resources</a>
+</nav>
 
-  <div class="rc-sec">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">⏸️</div>
-      <div>
-        <h2>What is Pause?</h2>
-        <p>A plain-language explanation of how subscription pause works and why it is one of the most effective alternatives to voluntary churn.</p>
-      </div>
-    </div>
+<div class="rc-sec">
 
-    <div class="rc-card">
-      <h3 class="rc-subhead">🧩 The Simple Version</h3>
-      <p style="font-size:0.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Sometimes a subscriber wants a break, not a breakup. They may be traveling, managing a tighter budget, working through extra inventory, or simply not using the service as often for a period of time. In those moments, canceling is a permanent action that ends the relationship entirely — even when the reason for leaving is temporary.</p>
-      <p style="font-size:0.95rem;color:var(--darkgray);line-height:1.6;margin:0;"><strong>Pause gives you a smarter option.</strong> Instead of canceling, a subscriber can temporarily stop billing and service delivery while keeping their subscription, account history, and often even their pricing intact. That gives customers the flexibility they want while helping you preserve future revenue and reduce voluntary churn.</p>
-    </div>
+<div class="rc-sec-header">
+<div class="rc-sec-icon">⏸️</div>
+<div>
+<h2>What is Pause?</h2>
+<p>A plain-language explanation of how subscription pause works and why it is an effective alternative to voluntary churn.</p>
+</div>
+</div>
 
-    <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">💳</div><h4>Billing Temporarily Stops</h4><p>Pause lets you suspend recurring charges for a defined period instead of ending the subscription outright.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🔒</div><h4>The Relationship Stays Intact</h4><p>The subscriber keeps their account, history, and connection to your brand rather than leaving your lifecycle completely.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Reactivation Becomes Easier</h4><p>Because the subscription was paused rather than canceled, returning is often much simpler than reacquiring a churned customer.</p></div>
-    </div>
+<div class="rc-card">
+<h3 class="rc-subhead">🧩 The Simple Version</h3>
+<p style="font-size:0.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">
+Sometimes a subscriber wants a break, not a breakup. Temporary situations like travel, budget changes, or shifts in usage can cause customers to cancel even when they still value the product.
+</p>
+<p style="font-size:0.95rem;color:var(--darkgray);line-height:1.6;margin:0;">
+<strong>Pause offers a flexible alternative.</strong> Instead of canceling entirely, a subscription can be temporarily paused so billing and service delivery stop for a defined period while the customer relationship remains intact.
+</p>
+</div>
 
-    <div class="rc-card">
-      <h3 class="rc-subhead">🗺️ How Pause Works — Step by Step</h3>
-      <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>A subscriber signals cancellation intent</h3><p>This often happens because of temporary circumstances like budget changes, travel, seasonality, or product backlog — not because they are done with your brand forever.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>You offer pause as an alternative</h3><p>Instead of forcing an all-or-nothing decision, you give the subscriber a lower-friction option that acknowledges their current needs.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Billing and fulfillment are suspended</h3><p>During the pause period, invoices and service delivery stop temporarily, helping the subscriber step away without canceling.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>The subscription remains active in principle</h3><p>The customer relationship, account data, and future opportunity to resume are preserved, which keeps the subscriber in your retention pipeline.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>The subscriber resumes later</h3><p>When circumstances improve, the customer can unpause and continue their subscription journey — often without the friction of signing up all over again.</p></div></div>
-      </div>
-    </div>
+<div class="rc-3col">
+<div class="rc-wi"><div class="rc-wi-icon">💳</div><h4>Billing Temporarily Stops</h4><p>Recurring charges are suspended during the pause period instead of canceling the subscription.</p></div>
+<div class="rc-wi"><div class="rc-wi-icon">🔒</div><h4>The Subscription Stays Intact</h4><p>The account and relationship remain in place while the subscriber takes a break.</p></div>
+<div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Subscribers Can Resume Later</h4><p>Customers can return without needing to create a brand new subscription.</p></div>
+</div>
 
-    <div class="rc-warning">
-      <span class="rc-wicon">⚠️</span>
-      <p><strong>Important to know:</strong> Pause is most effective when it is treated as a retention strategy, not just a billing setting. The goal is not to delay churn blindly — it is to give the right subscribers a flexible path back into active engagement.</p>
-    </div>
+<div class="rc-warning">
+<span class="rc-wicon">⚠️</span>
+<p><strong>Important:</strong> Pause works best when used intentionally as part of a retention strategy rather than simply delaying cancellations.</p>
+</div>
 
-    <div class="rc-tip">
-      <span class="rc-tipicon">💡</span>
-      <div><h4>The Bottom Line</h4><p>Pause helps you retain subscribers who would otherwise cancel for temporary reasons. It preserves the customer relationship, reduces voluntary churn, and creates a smoother path to reactivation than starting over after a cancellation.</p></div>
-    </div>
+<div class="rc-tip">
+<span class="rc-tipicon">💡</span>
+<div>
+<h4>The Bottom Line</h4>
+<p>Pause gives subscribers flexibility while helping merchants protect customer relationships and reduce voluntary churn.</p>
+</div>
+</div>
 
-    <div class="rc-sec-nav">
-      <span class="rc-btn-disabled">← Back</span>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/why-offer-pause">Next: Why Offer It? →</a>
-    </div>
+<div class="rc-sec-nav">
+<span class="rc-btn-disabled">← Back</span>
+<a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/why-offer-it">Next: Why Offer It? →</a>
+</div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/pause-subscription" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Pause Subscription</a>
-    <a class="rc-link-btn" href="https://recurly.com/blog/why-pausing-a-subscription-can-be-a-powerful-retention-tactic/" target="_blank" rel="noopener noreferrer">📝 Blog: Why Pause Is Powerful</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/why-offer-pause">📈 Next: Why Offer It?</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">🎧 Contact Customer Success</a>
-  </div>
+<h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
+<a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/pause-subscription" target="_blank">📖 Recurly Docs: Pause Subscription</a>
+<a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/why-offer-it">📈 Next: Why Offer It?</a>
+<a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">🎧 Contact Customer Success</a>
 
+</div>
 </div>
 </body>
 </html>
