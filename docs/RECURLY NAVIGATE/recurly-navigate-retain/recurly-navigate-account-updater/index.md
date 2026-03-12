@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<HTMLBlock>{\`
+<HTMLBlock>
 <!DOCTYPE html>
 <html>
 <head>
@@ -155,7 +155,7 @@ metadata:
 </div>
 </body>
 </html>
-\`}</HTMLBlock>
+</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
