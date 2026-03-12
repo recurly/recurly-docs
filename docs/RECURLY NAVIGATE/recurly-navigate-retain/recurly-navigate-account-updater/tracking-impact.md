@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<HTMLBlock>{\`
+<HTMLBlock>
 <style>
   .rc-guide {
     --yellow: #FFD706;
@@ -358,7 +358,7 @@ metadata:
     <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">🎧 Contact Customer Success</a>
   </div>
 </div>
-\`}</HTMLBlock>
+</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
