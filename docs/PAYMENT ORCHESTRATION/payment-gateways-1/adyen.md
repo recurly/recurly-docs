@@ -137,9 +137,9 @@ Navigate to **Developers→Additional Data** in Adyen to enable these features. 
 * Card Summary
 * Expiry date
 
-## Activation of 3DS results Data 
+## Activation of 3DS results Data
 
-To populate 3DS results data in our platform, please enable 3DS response details in **Developers→Additional Data** (there are two separate settings, enable them both) to ensure your transaction detail page populates properly.
+To populate 3DS results data in our platform, please enable 3DS response details in **Developers→Additional Data** (there are four separate settings, enable them all) to ensure your transaction detail page populates properly.
 
 ## Activation of "Network Transaction Reference" and recurring details
 
