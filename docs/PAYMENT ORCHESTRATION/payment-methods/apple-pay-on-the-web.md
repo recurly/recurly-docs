@@ -24,6 +24,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * E-commerce platforms looking to enhance user experience with a swift and secure payment method.
 * Subscription services aiming to streamline the payment process for their customers.
 * If you need multi-domain support, please talk with Support about enabling the Merchant Registration API capability.
+* While not natively supported in Recurly.js, if you want ApplePay to function outside of Safari, you may load the [latest version of Apple in your environment](https://developer.apple.com/documentation/applepayontheweb/loading-the-latest-version-of-apple-pay-js#Load-the-auto-updating-version-of-the-SDK). 
 
 ### Prerequisites & supported gateways
 
