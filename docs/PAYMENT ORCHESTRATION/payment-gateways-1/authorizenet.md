@@ -44,15 +44,9 @@ For pricing and signup information for a new production Authorize.net account, p
 | Regions                         | Worldwide                                                                                                                         |
 | Currencies                      | AUD, CAD, EUR, GBP, NZD, PLN, and USD.                                                                                            |
 
-# Address verification service (AVS)
+# Gateway Setup Guide
 
-If your company accepts payments from international customers, it is crucial to be aware of certain limitations associated with the Address Verification Service (AVS). Currently, AVS fails to match zip codes if the zip code contains letters. While US Zip Codes are exclusively numeric, numerous international postal codes contain letters, resulting in failed matches when verifying zip codes. To effectively leverage AVS with international credit cards, Recurly recommends allowing the transaction to proceed if either the street address _or_ zip code aligns accurately.
-
-# Card code verification (CVV)
-
-Upon the creation of a new subscription or the update of a credit card number, Recurly submits both the card number and the CVV (Card Code Verification) to Authorize.net. In compliance with PCI regulations, storing CVV values is strictly prohibited, regardless of encryption measures. As such, the CVV can only be utilized for the initial request. Submitting the CVV along with the first request enhances the likelihood of transaction approval and serves as a robust deterrent against fraudulent activities. Banks generally permit subsequent transactions to process smoothly if previous transactions by the same merchant have been conducted without issues.
-
-# API Login ID and Transaction Key
+## API Login ID and Transaction Key
 
 To enable seamless communication between Recurly and your Authorize.net account, it is essential to configure your API Login ID and Transaction Key within Recurly.
 
@@ -62,7 +56,7 @@ To find these credentials within your Authorize.net account, navigate to:
 
 Once you have obtained your API Login ID and Transaction Key, input these credentials into Recurly’s Payment Gateway configuration settings, thereby establishing a secure link between Recurly and Authorize.net. This step is vital for processing transactions and managing subscriptions effectively. Step by step instructions with images are below.
 
-# Authorize.net integration guide
+## Authorize.net setup
 
 This step-by-step guide will help you integrate your Authorize.net account with Recurly, enabling you to securely and efficiently process payments.
 
@@ -157,5 +151,17 @@ If ‘Enabled’, if Recurly receives information in the transaction response th
 2. Monitor your transactions in Recurly and Authorize.net to ensure everything is working smoothly.
 
 > **Note:** Ensure that you comply with PCI regulations when handling sensitive credit card information.
+
+# Fraud Settings
+
+## Address verification service (AVS)
+
+If your company accepts payments from international customers, it is crucial to be aware of certain limitations associated with the Address Verification Service (AVS). Currently, AVS fails to match zip codes if the zip code contains letters. While US Zip Codes are exclusively numeric, numerous international postal codes contain letters, resulting in failed matches when verifying zip codes. To effectively leverage AVS with international credit cards, Recurly recommends allowing the transaction to proceed if either the street address _or_ zip code aligns accurately.
+
+## Card code verification (CVV)
+
+Upon the creation of a new subscription or the update of a credit card number, Recurly submits both the card number and the CVV (Card Code Verification) to Authorize.net. In compliance with PCI regulations, storing CVV values is strictly prohibited, regardless of encryption measures. As such, the CVV can only be utilized for the initial request. Submitting the CVV along with the first request enhances the likelihood of transaction approval and serves as a robust deterrent against fraudulent activities. Banks generally permit subsequent transactions to process smoothly if previous transactions by the same merchant have been conducted without issues.
+
+# Final Thoughts
 
 This guide is designed to walk you through the process of integrating Authorize.net with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Authorize.net representative or Recurly support for any specific questions or issues related to your integration.
