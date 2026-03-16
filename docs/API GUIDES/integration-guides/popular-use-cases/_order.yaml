@@ -2,6 +2,7 @@
 - 3d-secure-20-integration-guide
 - using-3d-secure-with-stored-billing-information
 - purchase-transaction
+- kount-360-review-webhook-guide
 - free-trial-gateway-routing-continuity
 - third-party-checkout
 - third-party-checkout-guide-adyen-components
@@ -13,4 +14,3 @@
 - level-2-and-level-3-cedp-guide
 - upi-autopay-integration-guide
 - e-mandates-with-cards-in-india
-- kount-360-review-webhook-guide
