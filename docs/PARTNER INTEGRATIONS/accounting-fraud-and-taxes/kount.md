@@ -18,10 +18,17 @@ next:
 
 This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
+### Prerequisites
+
+* You must have a Kount 360 account. Please reach out to Recurly Support or your CSM/TAM if you are not already using this service. 
+* You must be able to utilize Recurly.js and invoke the risk related features of that integration method.
+
 ### Limitations
 
-* Risk inquiries are only performed on new card verifications (sign-ups and billing info updates).
-* Existing accounts with a credit or debit card on file will not undergo risk inquiries unless they update their billing information.
+* Risk inquiries are only performed on new billing info verifications (sign-ups and billing info updates) for the following payment methods: 
+  * Cards 
+  * All APMs available on the Recurly Platform. If you are not using Recurly.js for APMs (some do not offer this support) then Kount DDC / Session Information will be excluded.
+* Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information.
 
 # Definition
 
