@@ -85,8 +85,6 @@ Kount only supports a single endpoint at this time, so if you are sharing your K
 
 You can configure your Kount site settings in your Fraud Management settings within Recurly. Simply enter a value for the 'Website ID' in configuration, and set up your Review rules to look at that value in Kount.
 
-For a quick guide on best practices when ingesting Review webhooks, see our integration guide on Ingesting Kount Status Webhooks and next steps.
+For a quick guide on best practices when ingesting Review webhooks, see our i[ntegration guide on Ingesting Kount Status Webhooks](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) and next steps.
 
-### High Risk Decline Settings
-
-When using fraud settings related to Kount inside Recurly Admin, within Decline Thresholds Rules, there is an option to reject / decline High Risk transactions when Kount does not explicitly state to decline the transaction. If this checkbox is not checked, Recurly will not reject low score transactions _unless_ Kount return instruction to Decline the transaction.
+<br />
