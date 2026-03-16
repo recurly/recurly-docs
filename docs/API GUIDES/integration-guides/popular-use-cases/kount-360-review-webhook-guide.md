@@ -35,7 +35,7 @@ You may choose one or several options in this list:
 
 * _Refund or void the Transaction_: If the transaction was approved, use Recurly's API to refund or void the transaction. You may void a pending authorization, and if your purchase has not settled yet, the purchase may be voided. If settlement has already occurred, a refund will be processed.
 * _Cancel or Expire the Subscription_: If you do not wish to keep the customer's subscription, cancel or expire the subscription itself.
-* _Close the Account_: If you have determined you do not wish to keep the customer at all, if -- for example -- they are fraudulent, you may close down the account entirely.
+* _Close the Account_: If you have determined you do not wish to keep the customer at all, if -- for example -- they are fraudulent, you may close down the account entirely. Since account closure only cancels active subscriptions, it is recommended to expire these subscriptions first if they are found to be fraudulent.
 
 # Integration Guide
 
