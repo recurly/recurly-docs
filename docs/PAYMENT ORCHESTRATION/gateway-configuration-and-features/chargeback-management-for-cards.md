@@ -46,16 +46,16 @@ NOTE: Recurly does not process chargeback reversals
 
 #### Adyen
 
-1. Enable Adyen webhooks\
+1. Enable Adyen webhooks  
    [https://docs.recurly.com/docs/adyen#configuring-adyen-notifications-for-recurly](https://docs.recurly.com/docs/adyen#configuring-adyen-notifications-for-recurly)
-   1. (CHARGEBACK, SECOND\_CHARGEBACK, DISPUTE\_DEFENSE\_PERIOD\_ENDED)
-2. Enable chargeback Adyen event: originalReference for CHARGEBACK\_REVERSED\
+   1. (CHARGEBACK, SECOND_CHARGEBACK, DISPUTE_DEFENSE_PERIOD_ENDED)
+2. Enable chargeback Adyen event: originalReference for CHARGEBACK_REVERSED  
    [https://docs.adyen.com/risk-management/disputes-api/dispute-notifications#enable-webhooks](https://docs.adyen.com/risk-management/disputes-api/dispute-notifications#enable-webhooks)
 3. Read more about [managing Adyen Disputes in their documentation](https://docs.adyen.com/risk-management/manage-disputes/). Certain webhook status options will not be triggered without gateway management. For example: In order to ever receive a webhook with disputeStatus: "Accepted", you must go to your Adyen Dashboard and accept the chargeback.
 
 #### Chase Orbital
 
-To enable chargeback management with Chase Orbital gateway you need to provide Recurly access to Chase chargeback file reports. Please reach out to your Recurly contact for more information.
+To enable chargeback management with Chase Orbital gateway you need to provide Recurly access to Chase chargeback file reports. Please reach out to your Chase contact for more information. They will need to setup access to Recurly's Partner ID so that we can download these files. There is no setup for this process within Recurly.
 
 ## Service and Fraud Chargeback Code
 
