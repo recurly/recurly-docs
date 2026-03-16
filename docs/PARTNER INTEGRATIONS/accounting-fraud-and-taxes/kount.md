@@ -37,7 +37,7 @@ Recurly recognizes the importance of safeguarding businesses from potential thre
 * **Cost efficiency**: Curtail operational expenses tied to fraud detection and management, promoting a healthier bottom line.
 * **Retention boost**: Foster a secure transaction milieu, aiding in reducing customer churn and enhancing loyalty.
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/82814e8-d063eb2-image_7.png" />
+<Image align="center" border={true} width="60% " src="https://files.readme.io/82814e8-d063eb2-image_7.png" className="border" />
 
 Once Kount’s Fraud Service is activated, Recurly initiates risk assessments for new card verifications, including sign-ups and billing info updates. Accounts with existing credit or debit cards will only be assessed if their billing information is updated.
 
@@ -58,6 +58,26 @@ Kount processes this data using its proprietary AI, applies your custom rules, a
 
 Kount has additional layers of fraud protection in Kount Enterprise. Contact Kount to learn more about this offering and then, to integrate Kount Enterprise with Recurly, reach out to Recurly's [onboarding team](mailto:onboarding-team@recurly.com).
 
+### Using Custom Fields 
+
+When using Custom Fields (formerly referred to as UDFs or 'User Defined Fields'), the label was not case-sensitive. In Kount 360, the label you send to Recurly will need to match the label you set in Kount. Example: 
+
+* If your Kount Rule is set up with a custom field label of '**Velocity**', then you must send '**Velocity**' to Recurly, and not '**velocity**', '**VeLoCiTy**' or '**VELOCITY**' as the rule will not trigger. 
+
+### Enabling Kount Review Webhooks 
+
+If you are utilizing the 'Review' flows in Kount, you will need to configure an endpoint in your Kount 360 Dashboard so that Recurly receives updates on your orders when Review states move to Approved or Declined. 
+
+While you should have had your webhooks configured when you set up your account, merchants who have migrated from Kount Command to Kount 360 may not have this enabled. 
+
+**Kount Webhook Endpoint**: `https://callbacks.recurly.com/kount/your-subdomain` where `your-subdomain` will be your Recurly site subdomain.
+
+Kount only supports a single endpoint at this time, so if you are sharing your Kount credentials across multiple Recurly sites, you will not be able to use Review flows on all of them, and you must choose. For this, it is recommended to have a specific website ID (Kount site) that has Review flows. 
+
+You can configure your Kount site settings in your Fraud Management settings within Recurly. Simply enter a value for the 'Website ID' in configuration, and set up your Review rules to look at that value in Kount.
+
+For a quick guide on best practices when ingesting Review webhooks, see our integration guide on Ingesting Kount Status Webhooks and next steps.
+
 ### High Risk Decline Settings
 
-When using fraud settings related to Kount inside Recurly Admin, within Decline Thresholds Rules, there is an option to reject / decline High Risk transactions when Kount does not explicitly state to decline the transaction. If this checkbox is not checked, Recurly will not reject low score transactions *unless* Kount return instruction to Decline the transaction.
+When using fraud settings related to Kount inside Recurly Admin, within Decline Thresholds Rules, there is an option to reject / decline High Risk transactions when Kount does not explicitly state to decline the transaction. If this checkbox is not checked, Recurly will not reject low score transactions _unless_ Kount return instruction to Decline the transaction.
