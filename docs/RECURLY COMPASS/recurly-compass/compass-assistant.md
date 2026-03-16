@@ -52,10 +52,9 @@ Compass assistant can help you find your way to find the Recurly products you ne
 
 <Image align="left" alt="Ask AI Button" src="https://files.readme.io/25a6c030e6333fee3d795577619a6d3f25e4163790258a7300e7a4a793aa63ee-image.png" />
 
-is an AI-powered assistant built into Recurly. It helps you understand and get more value from your content by answering questions about the product and analyzing or summarizing information — all without leaving your current workflow.
+is an AI-powered assistant built into Recurly. It helps you understand and get more value by answering questions about the product and analyzing or summarizing information — all without leaving your current workflow.
 
 ### Accessing Ask AI
-
 
 1. Navigate to the relevant page* or content within the web app.
 2. Click the Ask AI button.
@@ -65,9 +64,7 @@ is an AI-powered assistant built into Recurly. It helps you understand and get m
 
 ### Ask Questions About the Product
 
-
 Not sure how a feature works? Ask AI can answer questions about the product's functionality, helping you get up to speed quickly.
-
 
 **Example prompts:**
 
