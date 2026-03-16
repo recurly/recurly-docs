@@ -29,6 +29,8 @@ Kount is a leading fraud management platform that specializes in ensuring secure
 
 Recurly recognizes the importance of safeguarding businesses from potential threats. In our commitment to support and protect our customers, we've partnered with [Kount](http://www.kount.com/), a frontrunner in fraud management. This collaboration equips you with top-tier fraud prevention capabilities right within your Recurly platform.
 
+Recurly's integration uses Kount's updated **Kount 360** platform.
+
 # Key benefits
 
 * **Reduced fraudulent orders**: Minimize the risk of accepting deceptive orders to safeguard your business.
@@ -58,21 +60,21 @@ Kount processes this data using its proprietary AI, applies your custom rules, a
 
 Kount has additional layers of fraud protection in Kount Enterprise. Contact Kount to learn more about this offering and then, to integrate Kount Enterprise with Recurly, reach out to Recurly's [onboarding team](mailto:onboarding-team@recurly.com).
 
-### Using Custom Fields 
+### Using Custom Fields
 
-When using Custom Fields (formerly referred to as UDFs or 'User Defined Fields'), the label was not case-sensitive. In Kount 360, the label you send to Recurly will need to match the label you set in Kount. Example: 
+When using Custom Fields (formerly referred to as UDFs or 'User Defined Fields'), the label was not case-sensitive. In Kount 360, the label you send to Recurly will need to match the label you set in Kount. Example:
 
-* If your Kount Rule is set up with a custom field label of '**Velocity**', then you must send '**Velocity**' to Recurly, and not '**velocity**', '**VeLoCiTy**' or '**VELOCITY**' as the rule will not trigger. 
+* If your Kount Rule is set up with a custom field label of '**Velocity**', then you must send '**Velocity**' to Recurly, and not '**velocity**', '**VeLoCiTy**' or '**VELOCITY**' as the rule will not trigger.
 
-### Enabling Kount Review Webhooks 
+### Enabling Kount Review Webhooks
 
-If you are utilizing the 'Review' flows in Kount, you will need to configure an endpoint in your Kount 360 Dashboard so that Recurly receives updates on your orders when Review states move to Approved or Declined. 
+If you are utilizing the 'Review' flows in Kount, you will need to configure an endpoint in your Kount 360 Dashboard so that Recurly receives updates on your orders when Review states move to Approved or Declined.
 
-While you should have had your webhooks configured when you set up your account, merchants who have migrated from Kount Command to Kount 360 may not have this enabled. 
+While you should have had your webhooks configured when you set up your account, merchants who have migrated from Kount Command to Kount 360 may not have this enabled.
 
 **Kount Webhook Endpoint**: `https://callbacks.recurly.com/kount/your-subdomain` where `your-subdomain` will be your Recurly site subdomain.
 
-Kount only supports a single endpoint at this time, so if you are sharing your Kount credentials across multiple Recurly sites, you will not be able to use Review flows on all of them, and you must choose. For this, it is recommended to have a specific website ID (Kount site) that has Review flows. 
+Kount only supports a single endpoint at this time, so if you are sharing your Kount credentials across multiple Recurly sites, you will not be able to use Review flows on all of them, and you must choose. For this, it is recommended to have a specific website ID (Kount site) that has Review flows.
 
 You can configure your Kount site settings in your Fraud Management settings within Recurly. Simply enter a value for the 'Website ID' in configuration, and set up your Review rules to look at that value in Kount.
 
