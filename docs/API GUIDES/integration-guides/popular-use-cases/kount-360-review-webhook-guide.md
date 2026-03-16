@@ -11,9 +11,10 @@ This guide will provide guidance on what actions you can and should take after r
 
 ### Prerequisites & limitations 
 
-* Familiarity with Recurly’s API, Webhooks, and basic REST concepts
+* A Kount 360 Account in sandbox or production mode.
+* Familiarity with Recurly’s API, Webhooks, and basic REST concepts.
+* Reviewed [Kount 360 Documentation](https://docs.recurly.com/recurly-subscriptions/docs/kount) on Recurly and have configured your webhook endpoint in your Kount account settings.
 * Reviewed [Webhooks Overview](https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks) and are listening to the [Fraud Info Updated](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#fraud-info-updated) event.
-* A Kount 360 Account in sandbox or production mode 
 * Ability to use the 'Review' functions in your Kount account dashboard as well as setup 'Review' flows and rules for your Kount transactions.
 
 # Definitions 
@@ -32,8 +33,8 @@ If you choose to 'Decline' the transaction in Kount, if the transaction in Recur
 
 You may choose one or several options in this list: 
 
-* Refund or void the Transaction: If the transaction was approved
-* Cancel or Expire the Subscription: 
-* Close the Account: 
+* _Refund or void the Transaction_: If the transaction was approved, use Recurly's API to refund or void the transaction. You may void a pending authorization, and if your purchase has not settled yet, the purchase may be voided. If settlement has already occurred, a refund will be processed.
+* Cancel or Expire the Subscription: If you do not wish to keep the customer's subscription, cancel or expire the subscription itself.
+* Close the Account: If you have determined you do not wish to keep the customer at all, if -- for example -- they are fraudulent, you may close down the account entirely. 
 
 <br />
