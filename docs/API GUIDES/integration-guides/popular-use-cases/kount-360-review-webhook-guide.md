@@ -29,7 +29,7 @@ When you have made this decision in Kount (Approve or Decline), Recurly will rec
 
 If you choose to 'Approve' the transaction in Kount, there is nothing you need to do in Recurly as the transaction has likely already been approved.
 
-If you choose to 'Decline' the transaction in Kount, if the transaction in Recurly has already been approved, there are key decisions to make:
+If you choose to 'Decline' the transaction in Kount, if the transaction in Recurly has already been approved, there are key decisions to make, as Recurly will _not_ take these actions automatically on your behalf:
 
 You may choose one or several options in this list:
 
