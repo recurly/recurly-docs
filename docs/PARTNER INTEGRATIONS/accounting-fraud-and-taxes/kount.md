@@ -67,7 +67,7 @@ Kount processes this data using its proprietary AI, applies your custom rules, a
 
 Kount has additional layers of fraud protection in Kount Enterprise. Contact Kount to learn more about this offering and then, to integrate Kount Enterprise with Recurly, reach out to Recurly's [onboarding team](mailto:onboarding-team@recurly.com).
 
-### Using Custom Fields
+### Using custom fields
 
 When using Custom Fields (formerly referred to as UDFs or 'User Defined Fields'), the label was not case-sensitive. In Kount 360, the label you send to Recurly will need to match the label you set in Kount. Example:
 
