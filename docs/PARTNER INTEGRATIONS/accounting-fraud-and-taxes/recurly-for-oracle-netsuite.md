@@ -128,9 +128,9 @@ The onboarding process is divided into five stages:
 2. **Transition to Recurly Support:** Transition to Recurly's Support for ongoing support of the integration.  
    By following these step-by-step processes, merchants can ensure a smooth and efficient integration of Recurly with Oracle NetSuite, enabling them to manage their subscription billing and financial data seamlessly.
 
-## Troubleshooting
+# Troubleshooting
 
-Should any issues arise post-implementation, merchants can contact Recurly Support for issues related to synchronization, data mismatches, or other integration-specific problems. For issues related to the Oracle NetSuite sandbox or other Oracle NetSuite-specific problems, contacting Oracle NetSuite directly is recommended.
+Should any issues arise post-implementation, merchants can contact Recurly Support for issues related to data mismatches or other integration-specific problems. For data synchronization issues, the Recurly Netsuite Integration portal will provide a view of most of these sync errors as well as ways to remediate (see Synchronization Management). For issues related to the Oracle NetSuite sandbox or other Oracle NetSuite-specific problems, contacting Oracle NetSuite directly is recommended.
 
 ## Synchronization Management
 
@@ -143,7 +143,7 @@ In Recurly's Netsuite Integration section, you can identify, investigate, and re
 <Image align="center" border={true} width="76% " src="https://files.readme.io/1881cf059ecbdb89ad506571d610d6402ee5114208d9af0b36a0d4ddc0b136e5-image.png" className="border" />
 
 * The dashboard provides a high-level overview of failed sync errors. Use the **Netsuite Type** filters on the left side to narrow down issues by specific Netsuite object types,  e.g. customer account, invoices, customer payments or transactions, non inventory sales items (plan, add-on, item), The list can be sorted by the Last Updated timestamp.
-* Sync error details will include: 
+* Sync error details will include:
   * **Object ID** - depending on the object type, this may be either an account code, invoice number, transaction uuid, plan name, or add-on/item name
   * **Object type** - Netsuite type such as the customer account, invoice, transaction, plan, add-on, item or credit memo
   * **Last updated** - timestamp of the last attempted sync
@@ -162,7 +162,6 @@ In the **Netsuite Sync Errors - Sync Attempts** dashboard, all sync attempts for
 ### Resolving Errors
 
 Once the underlying issue is fixed (either in the Recurly platform or within your NetSuite instance), you can re-attempt the synchronization.
-
 
 **Selective Resync or Ignore Error**
 
