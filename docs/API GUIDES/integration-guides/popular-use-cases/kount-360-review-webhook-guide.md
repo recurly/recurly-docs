@@ -8,24 +8,23 @@ hidden: true
 metadata:
   robots: index
 ---
-
 # Overview
 
 Use this guide to understand what to do after Recurly sends a Kount fraud status update to your integration. It explains the review flow, the business decisions you may need to make, and the Recurly API actions you can take after a transaction is approved or declined in Kount.
 
 ### Prerequisites
 
-- A Kount 360 account in sandbox or production.
-- Familiarity with Recurly’s API, webhooks, and basic REST concepts.
-- A completed review of [Kount 360 documentation](https://docs.recurly.com/recurly-subscriptions/docs/kount), including webhook endpoint setup in your Kount account settings.
-- A completed review of [Webhooks overview](https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks), and an active listener for the [Fraud Info Updated](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#fraud-info-updated) event.
-- Access to the review functions in your Kount dashboard, including any rules or flows you use for Kount review decisions.
+* A Kount 360 account in sandbox or production.
+* Familiarity with Recurly’s API, webhooks, and basic REST concepts.
+* A completed review of [Kount 360 documentation](https://docs.recurly.com/recurly-subscriptions/docs/kount), including webhook endpoint setup in your Kount account settings.
+* A completed review of [Webhooks overview](https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks), and an active listener for the [Fraud Info Updated](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#fraud-info-updated) event.
+* Access to the review functions in your Kount dashboard, including any rules or flows you use for Kount review decisions.
 
 ### Limitations
 
-- Recurly does not automatically refund, void, cancel, expire, or deactivate records after a Kount review decision.
-- You must decide what business action to take after a Kount review result is returned.
-- The fraud status update webhook is currently available in XML only.
+* Recurly does not automatically refund, void, cancel, expire, or deactivate records after a Kount review decision.
+* You must decide what business action to take after a Kount review result is returned.
+* The fraud status update webhook is currently available in XML only.
 
 ## Definition
 
@@ -33,9 +32,9 @@ A **Kount review** is the manual decision process you complete in the Kount 360 
 
 ## Key benefits
 
-- Receive a webhook when a Kount review decision updates a transaction’s fraud status.
-- Use Recurly data from the webhook to take follow-up actions in your integration.
-- Support business workflows for refunding transactions, ending subscriptions, or deactivating accounts when needed.
+* Receive a webhook when a Kount review decision updates a transaction’s fraud status.
+* Use Recurly data from the webhook to take follow-up actions in your integration.
+* Support business workflows for refunding transactions, ending subscriptions, or deactivating accounts when needed.
 
 ## Key details
 
@@ -47,14 +46,14 @@ After you make a decision in Kount, Recurly receives that update and then sends 
 
 Your next steps depend on the outcome of the Kount review:
 
-- If you **approve** the transaction in Kount, no additional Recurly action is usually required because the transaction has likely already been approved.
-- If you **decline** the transaction in Kount, and the related Recurly transaction has already been approved, Recurly does not take any further action automatically. You must decide what to do next.
+* If you **approve** the transaction in Kount, no additional Recurly action is usually required because the transaction has likely already been approved.
+* If you **decline** the transaction in Kount, and the related Recurly transaction has already been approved, Recurly does not take any further action automatically. You must decide what to do next.
 
 Depending on your fraud workflow, you may choose one or more of these actions:
 
-- *Refund or void the transaction*: If the transaction was approved, use Recurly’s API to refund or void it. You may be able to void a pending authorization if settlement has not occurred yet. If the purchase has already settled, process a refund instead.
-- *Cancel or expire the subscription*: If you do not want the customer to remain subscribed, cancel or expire the related subscription.
-- *Close the account*: If you have decided not to keep the customer account, you can close it. Because account closure only cancels active subscriptions, expire subscriptions first if you want them fully terminated due to fraud.
+* _Refund or void the transaction_: If the transaction was approved, use Recurly’s API to refund or void it. You may be able to void a pending authorization if settlement has not occurred yet. If the purchase has already settled, process a refund instead.
+* _Cancel or expire the subscription_: If you do not want the customer to remain subscribed, cancel or expire the related subscription.
+* _Close the account_: If you have decided not to keep the customer account, you can close it. Because account closure only cancels active subscriptions, expire subscriptions first if you want them fully terminated due to fraud.
 
 ## Integration guide
 
@@ -168,6 +167,3 @@ DELETE https://v3.recurly.com/accounts/e28zov4fw0v2
 
 **Q: What format does the fraud status update webhook use?**
 **A:** The webhook payload is currently available in XML only.
-
-```
-```
