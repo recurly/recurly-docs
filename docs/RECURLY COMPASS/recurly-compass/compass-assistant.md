@@ -28,8 +28,6 @@ Compass Assistant is a network of agents, sub agents and tools that can be reach
 
 To get started with Compass Assistant, click the sparkles on the bottom right of your Recurly site.
 
-<br />
-
 You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
 
 <iframe src="https://fast.wistia.net/embed/iframe/w9q7umxwhk?web_component=true&seo=false&videoFoam=false" title="CompassAssistantIntro Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="360px" />
@@ -62,7 +60,7 @@ is an AI-powered assistant built into Recurly. It helps you understand and get m
 
 *Currently Ask AI is available on the Accounts, Subscriptions, Invoices, Transactions and Gift Card Settings Pages.
 
-### Ask Questions About the Product
+### Ask questions about the product
 
 Not sure how a feature works? Ask AI can answer questions about the product's functionality, helping you get up to speed quickly.
 
@@ -71,9 +69,7 @@ Not sure how a feature works? Ask AI can answer questions about the product's fu
 * "How do I export my data?"
 * "Where can I manage my account settings?"
 
-# Tips for Best Results
-
-<br />
+# Tips for best results
 
 * **Be specific.** The more context you provide, the more accurate and useful the response will be.
 * **Iterate.** If the first response isn't quite right, refine your question or ask a follow-up.
