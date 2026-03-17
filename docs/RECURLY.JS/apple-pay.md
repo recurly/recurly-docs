@@ -18,7 +18,7 @@ Setting up your Apple Pay integration in Recurly.js involves two parts:
 ### Prerequisites and limitations
 
 * **Site configuration** – Apple Pay must already be enabled and verified in your Recurly admin settings. Follow the [Apple Pay on the Web setup guide](https://docs.recurly.com/recurly-subscriptions/docs/apple-pay-on-the-web#/) before adding client-side code.
-* **Browser / device support** – Customers using Recurly.js out of the box can use Safari (macOS 10.14.4+, iOS 12.2+) or another Apple Pay–capable browser/device. To use non-Safari browsers, please follow the documentation in 
+* **Browser / device support** – Customers using Recurly.js out of the box can use Safari (macOS 10.14.4+, iOS 12.2+) or another Apple Pay–capable browser/device. To use non-Safari browsers, please follow the documentation in
 * **Token lifetime** – Tokens returned from the Apple Pay flow follow standard Recurly.js rules: reusable for up to **20 minutes**, then permanently expire.
 * **Braintree processing** – If you route Apple Pay through Braintree you must supply a valid **client authorization** string when instantiating `recurly.ApplePay`.
 
@@ -37,8 +37,6 @@ To support non-Safari browsers, add this code snippet to load the [Apple Pay SDK
 ```javascript
 <script crossorigin src="https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-sdk.js" crossorigin="anonymous"></script>
 ```
-
-<br />
 
 ### Invoking the purchase flow
 
