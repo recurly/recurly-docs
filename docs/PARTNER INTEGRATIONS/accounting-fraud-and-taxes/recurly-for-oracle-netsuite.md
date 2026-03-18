@@ -130,11 +130,11 @@ The onboarding process is divided into five stages:
 
 # Troubleshooting
 
-Should any issues arise post-implementation, merchants can contact Recurly Support for issues related to data mismatches or other integration-specific problems. For data synchronization issues, the Recurly Netsuite Integration portal will provide a view of most of these sync errors as well as ways to remediate (see Synchronization Management). For issues related to the Oracle NetSuite sandbox or other Oracle NetSuite-specific problems, contacting Oracle NetSuite directly is recommended.
+Should any issues arise post-implementation, merchants can contact Recurly Support for issues related to data mismatches or other integration-specific problems. For data synchronization issues, the Recurly Netsuite Integration portal will provide a view of these sync errors as well as ways to remediate (see Synchronization Management). For issues related to the Oracle NetSuite sandbox or other Oracle NetSuite-specific problems, contacting Oracle NetSuite directly is recommended.
 
 ## Synchronization Management
 
-In Recurly's Netsuite Integration section, you can identify, investigate, and resolve synchronization errors to ensure financial data remains consistent across systems.
+In Recurly's Netsuite Integration, you can identify, investigate, and resolve synchronization errors to ensure financial data remains consistent across systems.
 
 ### View and Investigate Sync Errors
 
