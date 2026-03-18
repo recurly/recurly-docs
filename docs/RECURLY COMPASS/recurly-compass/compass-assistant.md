@@ -24,11 +24,9 @@ Compass Assistant is a network of agents, sub agents and tools that can be reach
 
 # Get answers
 
-<Image align="left" border={false} src="https://files.readme.io/f06509a783ea3a05f9755df8e32b6266ecc36d9ed0d54530834b908b65aa87df-image.png" />
+<Image align="left" src="https://files.readme.io/f06509a783ea3a05f9755df8e32b6266ecc36d9ed0d54530834b908b65aa87df-image.png" />
 
 To get started with Compass Assistant, click the sparkles on the bottom right of your Recurly site.
-
-<br />
 
 You can get started with example prompts for common use cases or ask something else. Ask follow-up questions to keep the conversation going and refine results. Provide feedback with a thumbs up or thumbs down.
 
@@ -45,6 +43,37 @@ Compass assistant can help you find your way to find the Recurly products you ne
 * Developer docs
 * Code snippets
 * Records including: subscriptions, plans, accounts, transactions, invoices, gift cards, items, and users.
+
+# Ask AI
+
+<Image align="center" width="0px" src="https://files.readme.io/4e2f142b8bae82ac6fb69aae5e7a29044451f24486dcb757a5e27ef64914abe1-image.png" />
+
+<Image align="left" alt="Ask AI Button" src="https://files.readme.io/25a6c030e6333fee3d795577619a6d3f25e4163790258a7300e7a4a793aa63ee-image.png" />
+
+is an AI-powered assistant built into Recurly. It helps you understand and get more value by answering questions about the product and analyzing or summarizing information — all without leaving your current workflow.
+
+### Accessing Ask AI
+
+1. Navigate to the relevant page* or content within the web app.
+2. Click the Ask AI button.
+3. Compass Assistant will appear where you can type your question or request or choose one of the suggested prompts.
+
+*Currently Ask AI is available on the Accounts, Subscriptions, Invoices, Transactions and Gift Card Settings Pages.
+
+### Ask questions about the product
+
+Not sure how a feature works? Ask AI can answer questions about the product's functionality, helping you get up to speed quickly.
+
+**Example prompts:**
+
+* "How do I export my data?"
+* "Where can I manage my account settings?"
+
+# Tips for best results
+
+* **Be specific.** The more context you provide, the more accurate and useful the response will be.
+* **Iterate.** If the first response isn't quite right, refine your question or ask a follow-up.
+* **Use natural language.** You don't need special commands — just ask as you would a colleague.
 
 # Take action
 
@@ -80,7 +109,7 @@ Compass Assistant will also detect when you want to help from our Support team o
 
 Results respect existing permissions, so people only see content they already have access to. Your chats are private and visible only to you.
 
-### Permission changes
+# Permission changes
 
 If a user's permissions change to be more restrictive, it is possible their history may contain information they are no longer permitted to view.  If this is a concern, contact support.
 
