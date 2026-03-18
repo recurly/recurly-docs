@@ -84,8 +84,6 @@ The onboarding process is divided into five stages:
 4. **Production:** After successful testing, the integration is moved to the production environment.
 5. **Project completion:** Final steps include deploying the integration to the merchant's Oracle NetSuite production environment and backfilling data.
 
-#
-
 # Oracle NetSuite integration with Recurly
 
 ### Step 1: Preparation
@@ -176,12 +174,13 @@ Once the underlying issue is fixed (either in the Recurly platform or within you
 
 ### Q: How does the sync process work? Please go into detail.
 
-**A:** The integration follows a structured 3-step approach: Accounts, Plans, & Transactions.  
-Initially, we synchronize the Accounts to ensure that your customer data is prepared and ready for the upcoming transactions.
+**A:** The integration follows a structured 3-step approach: Plans, Accounts, & Transactions.
+Initially, we synchronize the plans. This step is crucial because it inserts the necessary details into the relevant transactions. It is also within these records that we persist the essential revenue recognition data.
 
-Subsequently, we sync the plans. This step is crucial as it inserts the necessary details into the relevant transactions. Moreover, it's within these records that we persist the essential revenue recognition data.  
-Lastly, we synchronize the transactions to ensure that your financial data aligns accurately with your billing system.  
-For a deeper dive or more specific queries, please contact your CSM/AM to obtain our data sheet.
+Next, we synchronize the accounts to ensure that your customer data is prepared and ready for the upcoming transactions.
+
+Lastly, we synchronize the transactions to ensure that your financial data aligns accurately with your billing system.
+For a deeper dive or more specific questions, please contact your CSM/AM to obtain our data sheet.
 
 ### Q: What is the cadence of the syncs?
 
