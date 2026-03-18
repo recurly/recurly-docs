@@ -132,26 +132,33 @@ Should any issues arise post-implementation, merchants can contact Recurly Suppo
 
 ## Synchronization Management
 
-In Recurly's Netsuite Integration, you can identify, investigate, and resolve synchronization errors to ensure financial data remains consistent across systems.
+In Recurly **Integrations - NetSuite**, you can identify, investigate and resolve synchronization errors to ensure financial data remains consistent across systems.
+
+<Image align="center" border={true} width="-1px" src="https://files.readme.io/bdc52078546492c9448ce296fea15e50431da2c37223055a701a2bd6ac20c286-image.png" className="border" />
+
+<br />
 
 ### View and Investigate Sync Errors
 
-* Click on "View All" to see a complete list of current sync errors
+* **Current Errors** will show the total number of sync errors for your integration. Click on "View All" to see a complete list of current sync errors
 
 <Image align="center" border={true} width="76% " src="https://files.readme.io/1881cf059ecbdb89ad506571d610d6402ee5114208d9af0b36a0d4ddc0b136e5-image.png" className="border" />
 
-* The dashboard provides a high-level overview of failed sync errors. Use the **Netsuite Type** filters on the left side to narrow down issues by specific Netsuite object types,  e.g. customer account, invoices, customer payments or transactions, non inventory sales items (plan, add-on, item), The list can be sorted by the Last Updated timestamp.
+<br />
+
+* The dashboard below provides a high-level overview of failed sync errors. 
+  * **NetSuite Type** - filters on the left side to narrow down issues by specific NetSuite object types,  e.g. customer account, invoices, customer payments or transactions, non inventory sales items (plan, add-on, item), and customer refunds. 
 * Sync error details will include:
   * **Object ID** - depending on the object type, this may be either an account code, invoice number, transaction uuid, plan name, or add-on/item name
-  * **Object type** - Netsuite type such as the customer account, invoice, transaction, plan, add-on, item or credit memo
+  * **Object type** - NetSuite type such as the customer account, invoice, transaction, plan, add-on, item or credit memo
   * **Last updated** - timestamp of the last attempted sync
-  * **Error message**  - Netsuite specific error message or explanation of the sync error
-  * **External ID** - reference ID for the Netsuite internal ID
-* **Drill down into the sync attempts of the error** - drill down to view the sync attempts by click on the error line, any field except for the Object ID. Clicking on the Object ID will navigate back to the original Netsuite object type, e.g. customer account, invoice, plan, etc.
+  * **Error message**  - NetSuite specific error message or explanation of the sync error
+  * **External ID** - reference ID for the NetSuite internal ID
+* **Drill down into the sync attempts of the error** - drill down to view the sync attempts by click on the error line, any field except for the Object ID. Clicking on the Object ID will navigate back to the original NetSuite object type, e.g. customer account, invoice, plan, etc.
 
 <Image align="center" border={true} width="120% " src="https://files.readme.io/2ccf437d64af1d0fb2a018bdcc54b691695da3fcd1108ef239cca88543688e95-image.png" className="border" />
 
-In the **Netsuite Sync Errors - Sync Attempts** dashboard, all sync attempts for the particular sync error will be listed in chronological order from the most recent attempt to the earliest attempt to sync.
+In the **NetSuite Sync Errors - Sync Attempts** dashboard, all sync attempts for the particular sync error will be listed in chronological order from the most recent attempt to the earliest attempt to sync.
 
 <Image align="center" border={true} src="https://files.readme.io/3f259a3fd52c9e925f7287112e12912b9957246f7dbbcb33622b3fb869fa6327-image.png" className="border" />
 
@@ -164,7 +171,7 @@ Once the underlying issue is fixed (either in the Recurly platform or within you
 **Selective Resync or Ignore Error**
 
 * **Re-Sync** - within the specific sync error record, click the Re-sync button in the upper right corner to attempt to push the updated data to NetSuite and the record will be queued for the next sync.
-* **Ignore** - if an failed sync does not need to be pushed to Netsuite, you can choose to ignore and the sync error will be removed from the sync error list.
+* **Ignore** - if an failed sync does not need to be pushed to NetSuite, you can choose to ignore and the sync error will be removed from the sync error list.
 
 <Image align="center" border={true} src="https://files.readme.io/7133507d661150a6b991ece2270466712db6be5e7eb7125e82fb8b2a3768ca3b-image.png" className="border" />
 
