@@ -146,9 +146,10 @@ In Recurly **Integrations - NetSuite**, you can identify, investigate and resolv
 
 <br />
 
-* The dashboard below provides a high-level overview of failed sync errors. 
+* The dashboard below provides a high-level overview of failed sync errors.
 
   **NetSuite Type** - filter on the left menu to narrow down issues by specific NetSuite object types:
+
   * **Customers** - customer accounts that are synced into NetSuite
   * **Invoices** - invoices that are synced into NetSuite
   * **Credit memos** - credit invoices that are synced into NetSuite
@@ -170,7 +171,7 @@ In Recurly **Integrations - NetSuite**, you can identify, investigate and resolv
 
 In the **NetSuite Sync Errors - Sync Attempts** dashboard, all sync attempts for the particular sync error will be listed in chronological order from the most recent attempt to the earliest attempt to sync.
 
-<Image align="center" border={true} src="https://files.readme.io/9736825ce47b765c856b08ac15ad59e72a90947c7619c1c75d8322aa7a67f331-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/5d9285c2042cfc88262fa8a964b0915526fa2b9ea858a24a08d27cb6352dc55c-image.png" className="border" />
 
 <br />
 
@@ -183,7 +184,7 @@ Once the underlying issue is fixed (either in the Recurly platform or within you
 * **Re-Sync** - within the specific sync error record, click the Re-sync button in the upper right corner to attempt to push the updated data to NetSuite and the record will be queued for the next sync.
 * **Ignore** - if an failed sync does not need to be pushed to NetSuite, you can choose to ignore and the sync error will be removed from the sync error list.
 
-<Image align="center" border={true} src="https://files.readme.io/fdbfc086428680cd8b066f0b485cbb8ca2701e69a23b07f2622c9b78e4e6c2a5-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/6ddb2059f31cbc3ceef49ddddea4ed81fdf2c9013ad26e5439df8703b43fc5eb-image.png" className="border" />
 
 <br />
 
