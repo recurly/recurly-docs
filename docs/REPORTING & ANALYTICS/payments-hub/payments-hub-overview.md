@@ -45,54 +45,46 @@ If you are using Account Updater or Kount, you will also see a high level view o
 
 * **Currency:** This filter allows filtering by the various currencies for your site's geo-location
 
-<br />
-
 ## Global Payments Volume Distribution
 
 This map visualizes Payment distribution by Volume by region — darker shades indicate higher volume, making it easy to spot your strongest markets and revenue concentration at a glance as well as where you need to focus your expansion efforts.
 
-![](https://files.readme.io/b429a9c3b4232db7715e08b63c8ed47b5cfc2da277d60bc6a36bf4580a4aa761-image.png)
-
-![](https://files.readme.io/f7ce7f1d25cf9b27f5b3c38ec61920e3fba808a6895ef0410adce0b768e774fa-image.png)
-
-<br />
+<Image align="center" border={true} src="https://files.readme.io/abcaecb1cd37a3fc26d57327c630281d4c9c6e5c8e68d6b86e2187706059effb-image.png" className="border" />
 
 ## Payment Method Distribution
 
 This pie chart breaks down your transactions by payment method, showing both the count and associated volume for each — giving you a clear picture of how revenue is distributed across payment types. Understanding your payment method mix helps you identify where customers prefer to pay, so you can prioritize optimization efforts and negotiate better rates where it matters most.
 
-<Image align="center" width="70% " src="https://files.readme.io/f3ebd0fc0fdad212462a8b7e52c996bf59440eded9503a78599e40c002c3da48-image.png" />
-
-<Image align="center" width="60% " src="https://files.readme.io/a6a2c532bae7eb213f403356bf9d6db2d6adc2909cd87f1d6360b3d5bc7b6499-image.png" />
-
-<br />
+<Image align="center" border={true} src="https://files.readme.io/f4fc23849d6d7ace0f1b444353c650cb332fb4d6b21fb56ce12e908aca533366-image.png" className="border" />
 
 ## CIT Success Rate
 
 This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. The accompanying dollar volume ties that rate to real revenue impact, helping you understand not just how often payments succeed, but what that success is worth.
 
-[ image ] 
+<Image align="center" border={true} src="https://files.readme.io/71bd7867f737cd211dde48a5a7765df6cc29aeb2876c1b25bd7f2891266270d4-image.png" className="border" />
 
 ## MIT Success Rate
 
 This card displays your Merchant Initiated Transaction (MIT) success rate — typically reflecting the health of your subscription renewals — as a single at-a-glance percentage, paired with a month-over-month trend indicator to show whether auth rates are improving or declining. The accompanying dollar volume connects that rate to real recurring revenue impact, helping you understand the direct relationship between renewal success and bottom-line performance.
 
-[ image ]
-
 ## Account Updater
 
-This card displays the total dollar amount of revenue retained through Account Updater — reflecting payments that were saved as a result of an automated card update — alongside a month-over-month percentage change so you can track the service's growing impact over time. A retention lift percentage ties it all together, showing you the direct effect Account Updater is having on keeping customers active and payments flowing. 
+<Image align="center" border={true} src="https://files.readme.io/3191a83edb3347b5ccb03fb868f6b8d66ba758002dfd1b0be59bdff7f5c71717-image.png" className="border" />
 
-[ image ] 
+This card displays the total dollar amount of revenue retained through Account Updater — reflecting payments that were saved as a result of an automated card update — alongside a month-over-month percentage change so you can track the service's growing impact over time. A retention lift percentage ties it all together, showing you the direct effect Account Updater is having on keeping customers active and payments flowing.
 
-## Payment Retry
+<Image align="center" border={true} src="https://files.readme.io/78063be561d57fbd8e42fb20ca88aab44b79782870c5f2845a6346abd954680f-image.png" className="border" />
 
-This card displays the total dollar amount recovered through Payment Retries — representing renewal revenue that would have otherwise been lost to failed transactions — alongside a month-over-month percentage change to show how retry performance is trending over time. 
+## Recovered Revenue
 
-[ image] 
+This card displays the total dollar amount recovered through Payment Retries — representing renewal revenue that would have otherwise been lost to failed transactions — alongside a month-over-month percentage change to show how retry performance is trending over time.
+
+<Image align="center" border={true} src="https://files.readme.io/c8fa98ca9488b5e323e9c5a000de671a43b35bc4133584d44473a6d9b0f3b5bc-image.png" className="border" />
 
 ## Fraud Prevention
 
-This card displays the total count of blocked fraudulent transactions alongside a month-over-month percentage change to show how your fraud protection is performing over time. The accompanying dollar amount reflects the value of those blocked transactions, giving you a tangible measure of how much potential fraud exposure Kount is protecting your business from. 
+This card displays the total count of blocked fraudulent transactions alongside a month-over-month percentage change to show how your fraud protection is performing over time. The accompanying dollar amount reflects the value of those blocked transactions, giving you a tangible measure of how much potential fraud exposure Kount is protecting your business from.
 
-[ image ] 
+<Image align="center" border={true} src="https://files.readme.io/2d22d2dbc779d4af684bf2d962eb8d02203829244f1bb54cc7033e863c606cde-image.png" className="border" />
+
+<br />
