@@ -22,6 +22,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * Only supported via the Stratus/Salem platform. Tampa merchant accounts are not supported.
 * Recurly does not support lifecycle webhooks or post-auth webhooks from the Gateway. If you are using gateway-level fraud review systems, or are making transaction actions at the gateway, there is risk that Recurly and the gateway could be out of sync. It is advised to keep an eye on gateway-level fraud services, and ensure you are capturing, voiding, and processing refunds from Recurly instead of at the gateway.
+* Chase returns certain response codes that mean two-separate things, though the code is mapped to one code in our system. The list is below: 
+  * C5 / Over Frequency Limit -- this can mean two different things, but looking at the gateway message is important. It may mean Over Frequency Limit unless the card brand is MasterCard, in which case it may mean that 3DS / SCA is required.
 
 # Definition
 
