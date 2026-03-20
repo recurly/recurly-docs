@@ -32,37 +32,39 @@ The Payment Analytics dashboard gives you a deep dive into the performance of yo
 
 ## Payment Success Rate
 
-This card displays your overall Payment Success Rate as a single at-a-glance percentage — encompassing both customer and merchant initiated transactions for a fully holistic view of payment health — paired with a month-over-month trend indicator so you can immediately see whether performance is moving in the right direction. 
+This card displays your overall Payment Success Rate as a single at-a-glance percentage — encompassing both customer and merchant initiated transactions for a fully holistic view of payment health — paired with a month-over-month trend indicator so you can immediately see whether performance is moving in the right direction.
 
-[ image ] 
+<Image align="center" border={true} width="150px" src="https://files.readme.io/d9c7938f2534059104b0aa2ec1cca554c2890e363832f8d9d47a87a0549f8b1e-image.png" className="border" />
 
 ## Payment Success Rate Over Time
 
 Payment Success Rates over Time tracks your overall Payment Success Rate over an extended timeframe, giving you a broader view of how performance has trended across the month rather than a point-in-time snapshot.
 
-[ image ]
+<Image align="center" border={true} src="https://files.readme.io/232e867e39d74b82bebfadcd608588f0414bdd273874923b1c8851f9e98ab7fa-image.png" className="border" />
 
 ## Payment Method Distribution
 
 The Payment method distribution chart breaks down every payment method accepted on your site, showing the relative distribution of transactions across each — giving you an instant read on how your customers prefer to pay.
 
-[ image ]
+<Image align="center" border={true} width="600px" src="https://files.readme.io/94818c703ad263f07d13d84d5882e7a9e24e4aa002849ce070de100360e67f64-image.png" className="border" />
 
 ## Gateway Success Rates
 
 The Gateway Success Rates graph breaks down payment success rates by gateway, giving you a side-by-side comparison of how each PSP is performing within your selected timeframe. Seeing performance isolated by gateway makes it easy to identify underperforming routing paths and validate the impact of gateway changes.
 
-[ image ] 
+<Image align="center" border={true} width="600px" src="https://files.readme.io/48ebddecf5835a2db4a12d9177557e6dfde9a82d018feed42d9a77020a0ea414-image.png" className="border" />
 
 ## Payment Method Success Rates
 
 The Payment Method Success Rates card breaks down payment success rates by payment method, giving you a side-by-side comparison of how each performs independent of the gateway processing it. Isolating success rates at the payment method level helps you identify which methods are underperforming and understand whether declines are method-specific.
 
-[ image ]
+<Image align="center" border={true} src="https://files.readme.io/742e4942149f57fbfd3c5ec355942d441475048d818af5221204893820564198-image.png" className="border" />
 
 ## Card BIN Success Rates
 
 The Card BIN Success Rates card breaks down payment success rates by card BIN, surfacing the top performing and most common BINs transacting on your site within a given timeframe. Visibility at the BIN level allows you to identify whether specific card issuers or card types are experiencing higher decline rates, giving you the granularity needed to take targeted action — whether that's working with your gateway, or flagging patterns.
+
+<Image align="center" border={true} src="https://files.readme.io/58c87d627ab4f1e51d14876e4d40d9bb57345bbad3134fc2b66f0c3d1f6c4d14-image.png" className="border" />
 
 ## Payment Decline Reasons
 
