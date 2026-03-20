@@ -21,14 +21,20 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 ### Prerequisites
 
 * You must have a Kount 360 account. Please reach out to Recurly Support or your CSM/TAM if you are not already using this service.
-* You must be able to utilize Recurly.js and invoke the risk related features of that integration method.
+* You must be able to utilize Recurly.js and invoke the risk related data-collector of that integration method.
 
 ### Limitations
 
 * Risk inquiries are only performed on new billing info verifications (sign-ups and billing info updates) for the following payment methods:
   * Cards (including ApplePay and GooglePay)
   * All APMs available on the Recurly Platform. If you are not using Recurly.js for APMs (some do not offer this support) then Kount DDC / Session Information will be excluded.
-* Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information.
+* Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information. 
+
+### Recommendations 
+
+* Use Recurly.js for all supported payment methods if you are not already doing so. This will ensure that the data collector creates a session ID which supports proper fraud detection with Kount and reduces false positives.
+* For APMs that are not supported with Recurly.js, we will support a session ID bypass option. There are no integration changes you need to make for APMs not supported with Recurly.js -- continue to use them as documented. 
+* Properly set up your webhooks if your Kount Account has rules for 'Review' flows, and ensure your integration is properly listening for Kount Fraud Update webhooks from Recurly. See **Enabling Kount Review Webhooks** on this page for more information.
 
 # Definition
 
@@ -85,6 +91,6 @@ Kount only supports a single endpoint at this time, so if you are sharing your K
 
 You can configure your Kount site settings in your Fraud Management settings within Recurly. Simply enter a value for the 'Website ID' in configuration, and set up your Review rules to look at that value in Kount.
 
-For a quick guide on best practices when ingesting Review webhooks, see our i[ntegration guide on Ingesting Kount Status Webhooks](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) and next steps.
+For a quick guide on best practices when ingesting Review webhooks, see our <Anchor label="integration guide on Ingesting Kount Status Webhooks" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide">integration guide on Ingesting Kount Status Webhooks</Anchor> and next steps.
 
 <br />
