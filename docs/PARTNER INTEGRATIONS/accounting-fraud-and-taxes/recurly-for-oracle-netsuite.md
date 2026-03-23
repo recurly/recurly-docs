@@ -182,7 +182,7 @@ Once the underlying issue is fixed (either in the Recurly platform or within you
 **Selective Re-sync or Ignore Error**
 
 * **Re-Sync** - within the specific sync error record, click the Re-sync button in the upper right corner to attempt to push the updated data to NetSuite and the record will be queued for the next sync.
-* **Ignore** - if an failed sync does not need to be pushed to NetSuite, you can choose to ignore and the sync error will be removed from the sync error list.
+* **Ignore** - if a failed sync does not need to be pushed to NetSuite, you can choose to ignore and the sync error.
 
 <Image align="center" border={true} src="https://files.readme.io/6ddb2059f31cbc3ceef49ddddea4ed81fdf2c9013ad26e5439df8703b43fc5eb-image.png" className="border" />
 
