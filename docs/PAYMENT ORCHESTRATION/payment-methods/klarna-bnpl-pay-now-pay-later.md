@@ -23,7 +23,6 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-* The Klarna Recurring feature is available exclusively for merchants enrolled in the Stripe Klarna Recurring BETA, using Stripe via Payment Elements.
 * Klarna BNPL is not available for monthly subscriptions and is only supported for subscriptions longer than 2 months. Refer to the table below for available payment options and consumer countries.
 * Presently, tokenized Klarna payment details cannot be used when paired with a Trial Plan and a separate add-on line item that is not associated with the Plan itself.
 * Coupons are supported however, **100% coupons during signup cannot be supported** as credit checks are requirement for this payment method. Please use a free trial option instead.
