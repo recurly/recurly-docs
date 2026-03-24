@@ -42,7 +42,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 <Image align="center" border={true} src="https://files.readme.io/fa245ce7fda681233578742b6870751c33ebd9d2ac09f5a33f5feb1cdaa20bc2-image.png" className="border" />
 
-## Cards Sent to Updater
+## Payments Authorized on Updated Cards
 
 [Description]
 
@@ -50,21 +50,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 <br />
 
-## Revenue at Risk
+## Successful Payments Over Time
 
 [Description]
-
-## Revenue Recovered
-
-[Description]
-
-![](https://files.readme.io/2cb267bc927ab22ae454d3953f31c524614c0abef46c90f97ab5defc0c7e41f4-image.png)
 
 <br />
 
-## Recovery Rate
-
-[Description]
+<Image align="center" src="https://files.readme.io/2cb267bc927ab22ae454d3953f31c524614c0abef46c90f97ab5defc0c7e41f4-image.png" />
 
 ## Update Type
 
