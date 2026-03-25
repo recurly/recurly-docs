@@ -19,6 +19,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Prerequisites
 
 * Users must have analytics user role permission.
+* Site must have Account Updater enabled.
 
 # Definition
 
