@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-...
+The Fraud Prevention dashboard gives a real-time view of fraudulent activity being blocked across your payment ecosystem, combining volume, risk scoring, and trend data into a single unified view. This enables fraud and operations teams to quickly detect emerging threats, understand where fraud is most concentrated, and take proactive action before it impacts revenue or customers.
 
 # Key benefits
 
