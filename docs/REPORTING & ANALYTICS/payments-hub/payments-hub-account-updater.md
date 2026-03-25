@@ -67,7 +67,7 @@ This bar chart shows the daily transaction value (in currency totals) of success
 
 ## Update Type
 
-This pie chart breaks down successful card updates by the type of change applied. The majority — 61% — were card number updates, where the account number itself changed (typically due to card reissuance). The remaining 39% were expiration date updates only. This split helps you understand how often your customers are receiving entirely new card numbers versus simple renewals.
+This pie chart breaks down successful card updates by the type of change applied. The majority — 61% — were card number updates, where the account number itself changed (typically due to card reissuance). The remaining 39% were expiration date updates only. This split helps you understand how often your customers are receiving entirely new card numbers versus simple expiry date extensions.
 
 <Image align="center" border={true} width="500px" src="https://files.readme.io/f1c86c68b2acdeff9e4aa5faafb82d05a8e405765c158eeca18c5cd4a3dbd167-image.png" className="border" />
 
