@@ -26,7 +26,23 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Key benefits
 
-<br />
+# Key details
+
+...
+
+## General Filters (Top Left Corner)
+
+* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is typically 30 days.
+
+* **Country:** See data specific to your country, offering relevant insights and comparisons.
+
+* **Gateway:** This filter allows you to segment and analyze data based on available payment processors. You can look at all payment gateways together or examine one at a time to understand where issues are happening.
+
+* **Payment method:** If you want to see the breakdown of failed payments by the method your customers use, this filter lets you select specific payment options to analyze.
+
+* **Initiated by:** This filter allows you to select between CIT (customer initiated) or MIT (merchant initiated) transactions. CIT transactions typically requires more payment authentication.
+
+* **Currency:** This filter allows filtering by the various currencies for your site's geo-location
 
 ## Transactions Blocked (Fraud)
 
