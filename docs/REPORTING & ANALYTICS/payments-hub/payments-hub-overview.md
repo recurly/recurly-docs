@@ -35,13 +35,15 @@ If you are using Account Updater or Kount, you will also see a high level view o
 
 ## General Filters (Top Left Corner)
 
-* **Date Range:** Adjust the monthly period for benchmark comparisons, with a default setting of 14 months, to track and analyze long-term trends.
+* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is typically 30 days.
 
-* **Country:** See benchmark data specific to your country, offering relevant insights and comparisons.
+* **Country:** See data specific to your country, offering relevant insights and comparisons.
 
-* **Gateway:** This filter allows you to see which payments didn't go through. You can look at all payment gateways together or examine one at a time to understand where issues are happening.
+* **Gateway:** This filter allows you to segment and analyze data based on available payment processors. You can look at all payment gateways together or examine one at a time to understand where issues are happening.
 
 * **Payment method:** If you want to see the breakdown of failed payments by the method your customers use, this filter lets you select specific payment options to analyze.
+
+* **Initiated by:** This filter allows you to select between CIT (customer initiated) or MIT (merchant initiated) transactions. CIT transactions typically requires more payment authentication.
 
 * **Currency:** This filter allows filtering by the various currencies for your site's geo-location
 
@@ -61,7 +63,7 @@ This pie chart breaks down your transactions by payment method, showing both the
 
 This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. The accompanying dollar volume ties that rate to real revenue impact, helping you understand not just how often payments succeed, but what that success is worth.
 
-<Image align="center" border={true} src="https://files.readme.io/71bd7867f737cd211dde48a5a7765df6cc29aeb2876c1b25bd7f2891266270d4-image.png" className="border" />
+<Image align="center" border={true} width="150px" src="https://files.readme.io/71bd7867f737cd211dde48a5a7765df6cc29aeb2876c1b25bd7f2891266270d4-image.png" className="border" />
 
 ## MIT Success Rate
 
@@ -69,22 +71,20 @@ This card displays your Merchant Initiated Transaction (MIT) success rate — ty
 
 ## Account Updater
 
-<Image align="center" border={true} src="https://files.readme.io/3191a83edb3347b5ccb03fb868f6b8d66ba758002dfd1b0be59bdff7f5c71717-image.png" className="border" />
+<Image align="center" border={true} width="150px" src="https://files.readme.io/3191a83edb3347b5ccb03fb868f6b8d66ba758002dfd1b0be59bdff7f5c71717-image.png" className="border" />
 
 This card displays the total dollar amount of revenue retained through Account Updater — reflecting payments that were saved as a result of an automated card update — alongside a month-over-month percentage change so you can track the service's growing impact over time. A retention lift percentage ties it all together, showing you the direct effect Account Updater is having on keeping customers active and payments flowing.
 
-<Image align="center" border={true} src="https://files.readme.io/78063be561d57fbd8e42fb20ca88aab44b79782870c5f2845a6346abd954680f-image.png" className="border" />
+<Image align="center" border={true} width="150px" src="https://files.readme.io/78063be561d57fbd8e42fb20ca88aab44b79782870c5f2845a6346abd954680f-image.png" className="border" />
 
 ## Recovered Revenue
 
 This card displays the total dollar amount recovered through Payment Retries — representing renewal revenue that would have otherwise been lost to failed transactions — alongside a month-over-month percentage change to show how retry performance is trending over time.
 
-<Image align="center" border={true} src="https://files.readme.io/c8fa98ca9488b5e323e9c5a000de671a43b35bc4133584d44473a6d9b0f3b5bc-image.png" className="border" />
+<Image align="center" border={true} width="150px" src="https://files.readme.io/c8fa98ca9488b5e323e9c5a000de671a43b35bc4133584d44473a6d9b0f3b5bc-image.png" className="border" />
 
 ## Fraud Prevention
 
 This card displays the total count of blocked fraudulent transactions alongside a month-over-month percentage change to show how your fraud protection is performing over time. The accompanying dollar amount reflects the value of those blocked transactions, giving you a tangible measure of how much potential fraud exposure Kount is protecting your business from.
 
-<Image align="center" border={true} src="https://files.readme.io/2d22d2dbc779d4af684bf2d962eb8d02203829244f1bb54cc7033e863c606cde-image.png" className="border" />
-
-<br />
+<Image align="center" border={true} width="150px" src="https://files.readme.io/2d22d2dbc779d4af684bf2d962eb8d02203829244f1bb54cc7033e863c606cde-image.png" className="border" />
