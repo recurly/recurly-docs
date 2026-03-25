@@ -12,8 +12,6 @@ metadata:
 ---
 # Overview
 
-The Fraud Prevention dashboard provides a comprehensive view of your Kount integration's performance, tracking key metrics such as blocked transactions, risk scores, and fraud patterns across payment methods and gateways. Together, these charts enable fraud and operations teams to monitor threats in real time, identify emerging risk trends early, and focus prevention efforts where they will have the greatest impact.
-
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly subscription plan.
@@ -23,6 +21,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 * Users must have analytics user role permission.
 
 # Definition
+
+The Fraud Prevention dashboard provides a comprehensive view of your Kount integration's performance, tracking key metrics such as blocked transactions, risk scores, and fraud patterns across payment methods and gateways. Together, these charts enable fraud and operations teams to monitor threats in real time, identify emerging risk trends early, and focus prevention efforts where they will have the greatest impact.
 
 # Key benefits
 
