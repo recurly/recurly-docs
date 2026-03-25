@@ -30,7 +30,7 @@ metadata:
   .rc-sec-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;background:var(--yellow)}
   .rc-sec-header h2{font-size:1.7rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
   .rc-sec-header>div>p{color:var(--gray);font-size:.95rem;line-height:1.5;margin:0}
-  .rc-card{background:var(--offwhite);border-radius:16px;padding:28px;border:1px solid var(--lightgray);margin-bottom:24px}
+  .rc-card{background:var(--offwhite);border-radius:16px;padding:28px;border:1px solid var(--brightgray);margin-bottom:24px}
   .rc-subhead{font-size:1rem;font-weight:700;margin:0 0 16px;color:var(--offblack)}
   .rc-video-wrap{position:relative;overflow:hidden;aspect-ratio:16/9;border-radius:14px;margin-bottom:14px}
   .rc-video-wrap iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:none}
