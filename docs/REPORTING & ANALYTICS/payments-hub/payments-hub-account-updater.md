@@ -10,8 +10,6 @@ metadata:
   title: Account Updater
   robots: index
 ---
-<br />
-
 # Overview
 
 ### Required plan
@@ -28,7 +26,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Key benefits
 
-<br />
+...
+
+# Key details
+
+## General Filters (Top Left Corner)
+
+* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is typically 30 days.
+
+* **Card type:** This filter allows filtering by credit card type.
 
 ## Successful Card Updates
 
@@ -47,8 +53,6 @@ This feature or setting is available to all customers on any Recurly subscriptio
 [Description]
 
 <Image align="center" border={true} src="https://files.readme.io/87d8de2d2b81c54a13d0b39ccb0cfe29e6eaa87f1cb7606aaa5b4a9267fbb883-image.png" className="border" />
-
-<br />
 
 ## Successful Payments Over Time
 
@@ -69,5 +73,3 @@ This feature or setting is available to all customers on any Recurly subscriptio
 [Description]
 
 <Image align="center" border={true} width="500px" src="https://files.readme.io/4b15e4dd5639b40728f7cf6584391bd945ec4f9c9402ee36772edf0bed5cd87a-image.png" className="border" />
-
-<br />
