@@ -12,6 +12,8 @@ metadata:
 ---
 # Overview
 
+The Fraud Prevention dashboard provides a comprehensive view of your Kount integration's performance, tracking key metrics such as blocked transactions, risk scores, and fraud patterns across payment methods and gateways. Together, these charts enable fraud and operations teams to monitor threats in real time, identify emerging risk trends early, and focus prevention efforts where they will have the greatest impact.
+
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly subscription plan.
@@ -22,13 +24,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-...
-
 # Key benefits
 
-# Key details
+* **Quantify Fraud Prevention at a Glance** - The Transactions Blocked KPI immediately communicates how actively the system is protecting the business. The period-over-period comparison lets stakeholders quickly assess whether fraud pressure is increasing or decreasing without needing a deep data dive.
+* **Detect and Respond to Fraud Attacks in Real Time** - The Blocked Transactions Over Time chart makes sudden fraud spikes immediately visible. This allows fraud and ops teams to investigate and respond quickly, rather than discovering an attack after significant damage has already occurred.
+* **Understand Escalating Risk Before It Becomes a Problem** - The Average Risk Score and its Over Time chart work together to provide an early warning system. A rising risk score trend often precedes a spike in blocked transactions, giving teams a window to tighten rules or thresholds proactively rather than reactively.
+* **Target Fraud Prevention Efforts Where They Matter Most** -The Fraud by Payment Method breakdown shows that card-based payments (credit and debit combined) account for nearly 80% of fraud attempts. This helps teams prioritize where to add friction, strengthen authentication, or adjust risk rules for maximum impact.
 
-...
+# Key details
 
 ## General Filters (Top Left Corner)
 
