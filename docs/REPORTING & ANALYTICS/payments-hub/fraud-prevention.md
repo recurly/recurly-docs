@@ -51,7 +51,7 @@ The Fraud Prevention dashboard provides a comprehensive view of your Kount integ
 
 The total number of transactions flagged and blocked as fraudulent in the selected period. The current value of 4,381 represents a 7% decrease compared to the previous period (4,691), suggesting either a reduction in fraud attempts or a shift in risk threshold settings. Monitor this alongside your Average Risk Score to distinguish between the two.
 
-If this number is higher than you think it should be, or has spiked, there are a few options to consider: 
+If this number is higher than you think it should be, or has spiked, there are a few options to consider:
 
 * Your site may be under attack from a fraudster and Kount is working properly. Takes steps to protect your site if necessary. You may also set up a Kount rule, or a rule within your own infrastructure to block the fraudster directly.
 * You have updated a fraud rule in Kount recently that may be misbehaving. Speak to your Kount representative to review rules on blocked transactions that you believe to be false positives.
@@ -66,7 +66,7 @@ This line chart tracks the daily count of fraud-blocked transactions. Volume rem
 
 ## Average Risk Score
 
-The mean Kount risk score assigned to transactions in the selected period. The current score of 73.395 represents a 24% increase compared to the previous period (59.215), signaling that transactions are being evaluated as meaningfully less risky on average. A dropping risk score — especially paired with the spike seen in the blocked transactions chart — may indicate an ongoing or escalating fraud pattern that warrants closer review of your risk thresholds and blocking rules.
+The mean Kount risk score assigned to transactions in the selected period. The current score of 73.395 represents a 24% increase compared to the previous period (59.215), signaling that transactions are being evaluated as meaningfully riskier on average. A climbing risk score — especially paired with the spike seen in the blocked transactions chart — may indicate an ongoing or escalating fraud pattern that warrants closer review of your risk thresholds and blocking rules.
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/ce38e193b698996c3abb9501d90b465ebcf63d5747dbb3ac4bb1ecd816eb4195-image.png" className="border" />
 
