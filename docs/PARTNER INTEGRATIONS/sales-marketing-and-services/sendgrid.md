@@ -49,23 +49,23 @@ Recurly’s SendGrid integration lets you manage customer emails through SendGri
 3. Connect Recurly to your SendGrid account by utilizing an  existing SendGrid API key or easily [create a new one](https://docs.sendgrid.com/ui/account-and-settings/api-keys#creating-an-api-key). The API Key will require “Mail Send” permissions.
 4. Assign your SendGrid API key to your Recurly Site within the [Site Settings](https://app.recurly.com/go/configuration/edit) section. This step establishes the connection between Recurly and SendGrid, enabling seamless integration.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/d3730ed-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/d3730ed-image.png" className="border" />
 
 Please **note** that any emails queued for dispatch prior to setting your SendGrid API Key will be sent as originally scheduled. However, once you have successfully set your SendGrid API Key, all subsequent queued emails will be sent using your SendGrid account. Allow some time for the system to process the active queue and ensure a smooth transition to the SendGrid integration.
 
 # FAQs
 
-**Q: Am I required to make this change?**\
+**Q: Am I required to make this change?**  
 **A:** No, the SendGrid integration is optional and available for those who want to leverage their own SendGrid account to gain visibility into email statistics and have more control over email deliverability.
 
-**Q: Will Recurly continue to send emails for me if I don't use this SendGrid integration?**\
+**Q: Will Recurly continue to send emails for me if I don't use this SendGrid integration?**  
 **A:** Yes, absolutely. The SendGrid integration is not mandatory, and Recurly will continue sending emails on your behalf if you choose not to set up a SendGrid account.
 
-**Q: How soon after adding my API key will emails be sent from my SendGrid account?**\
+**Q: How soon after adding my API key will emails be sent from my SendGrid account?**  
 **A:** Please allow some time for the system to process the active email queue. Once you've added your SendGrid API key, the transition to sending emails from your SendGrid account may take a short period before you start seeing them being sent.
 
-**Q: Is there a charge for setting this up?**\
+**Q: Is there a charge for setting this up?**  
 **A:** Recurly does not impose any additional charges to utilize this integration. However, please note that any applicable charges from SendGrid will be determined by their pricing and policies.
 
-**Q: I logged into my site, but I don't see the SendGrid API field. Do I need to enable something else?**\
-**A:** To update your SendGrid API key, a site admin needs to log in to your Recurly account. Once the API key is set, its value will always be masked for security purposes.
+**Q: I logged into my site, but I don't see the SendGrid API field. Do I need to enable something else?**  
+**A:** To update your SendGrid API key, a user with the Configuration permission needs to log in to your Recurly account. Once the API key is set, its value will always be masked for security purposes.
