@@ -26,7 +26,11 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Key benefits
 
-...
+* **Measure Revenue Protection** - The "Payments Authorized on Updated Cards" metric directly quantifies how much revenue was saved from potential failed transactions. At $632,368 in the example, it makes the ROI of Account Updater immediately visible to stakeholders.
+* **Catch Problems Early** - The two time-series charts (Updates Over Time and Payments Over Time) let you spot sudden drops in activity before they compound into significant revenue loss. A dip in updates that isn't addressed quickly can cascade into failed payments days or weeks later.
+* **Benchmark Performance Period-Over-Period** - The KPI tiles for both Successful Card Updates and Payments Authorized include comparison values and percentage changes against the prior period, making it easy to assess whether the service is trending in the right direction without digging into raw data.
+* **Prioritize Outreach and Card Management** - The Update Type breakdown tells you whether customers are primarily getting new card numbers or just new expiration dates — useful for anticipating how disruptive card changes will be to your payment flows, since full number changes carry more risk of payment failure.
+* **Optimize Network Relationships** - The Updates by Card Type chart reveals which card networks are driving the most update activity. If a network like Discover shows near-zero updates, it may signal a gap in your Account Updater enrollment or coverage worth investigating with your payment processor.
 
 # Key details
 
