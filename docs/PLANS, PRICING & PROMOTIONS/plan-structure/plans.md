@@ -130,7 +130,7 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 
 * **v3 APIs:**
   * <Anchor label="/price_segment" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments">/price_segment</Anchor>
-  * [/plans](https://recurly.com/developers/api/v2021-02-25/index.html#tag/plan)
+  * <Anchor label="/plans" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_plans">/plans</Anchor>
   * [/subscriptions](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription)
   * [/create_subscription_change](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change)
 * **Recurly.js:** Surface the right price segment in your front end with **[Recurly.js](https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/)**.
