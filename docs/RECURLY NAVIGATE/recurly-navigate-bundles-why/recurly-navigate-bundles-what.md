@@ -1,7 +1,7 @@
 ---
 title: 'What are Bundles? '
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
