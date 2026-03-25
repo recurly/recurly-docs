@@ -54,9 +54,9 @@ The Recurly for Oracle NetSuite implementation captures your customer-centric da
 
 Using this integration, Recurly can seamlessly integrate your Recurly billing and subscription data to your accounting and financial data within Oracle NetSuite, a leading cloud-based business software for accounting and Enterprise Resource Planning (ERP). Through this integration, you can effectively and accurately manage recurring revenue data using Oracle NetSuite’s automatic, Generally Accepted Accounting Principles (GAAP)-compliant revenue recognition and standard financial reporting.
 
-<Image align="center" alt={1600} caption="Recurly to Oracle NetSuite Integration Flow" title="oracle netsuite.png" src="https://files.readme.io/35dfd85-oracle_netsuite.png" />
-
 The integration process is divided into five stages, ensuring a comprehensive and thorough approach to onboarding. Each stage involves close collaboration between the merchant and Recurly to ensure a seamless integration experience.
+
+![](https://files.readme.io/720a3dbdd359e1a1b2176ebf1b1c7c020f93c402e3fcf5064ca7eb1ee3b833f1-Oracle_Netsuite-01.png)
 
 ## Rules of integration
 
