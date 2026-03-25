@@ -19,6 +19,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Prerequisites
 
 * Users must have analytics user role permission.
+* To see splits in pie chart cards, your site must be processing more than one payment method, such as cards and checks, or cards and apple pay.
 
 # Definition
 
