@@ -80,7 +80,7 @@ Your entitlements depend on the service tier selected in your Order Form.
 | Request method             | Online Service Portal         | Online Service Portal         |
 | Response time              | Within three business days    | Within one business day       |
 | Resource allocation target | Within two weeks              | Within one week               |
-| Baseline monthly hours     | Five                          | 25                            |
+| Baseline monthly hours     | 5                             | 25                            |
 | Additional monthly hours   | As defined in Order Form      | As defined in Order Form      |
 | Governance meetings        | Quarterly (30 minutes)        | Monthly (30 minutes)          |
 | Billing period choices     | Monthly, quarterly, or yearly | Monthly, quarterly, or yearly |
