@@ -23,7 +23,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The Fraud Prevention dashboard gives a real-time view of fraudulent activity being blocked across your payment ecosystem, combining volume, risk scoring, and trend data into a single unified view. This enables fraud and operations teams to quickly detect emerging threats, understand where fraud is most concentrated, and take proactive action before it impacts revenue or customers.
+The Account Updater dashboard gives a real-time view of card update activity across your payment ecosystem, combining pending, at risk, and rescued cards into a single unified view. This enables payments teams to quickly detect emerging risks to subscriptions, understand where card updates and lack-there-of are most concentrated, and take proactive action before it impacts revenue or customers.
 
 # Key benefits
 
