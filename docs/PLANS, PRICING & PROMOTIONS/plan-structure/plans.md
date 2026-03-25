@@ -129,7 +129,7 @@ You own a gym and operating costs are higher in certain cities. Instead of cloni
 #### Developer references
 
 * **v3 APIs:**
-  * [/price_segment](https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment)
+  * <Anchor label="/price_segment" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments">/price_segment</Anchor>
   * [/plans](https://recurly.com/developers/api/v2021-02-25/index.html#tag/plan)
   * [/subscriptions](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription)
   * [/create_subscription_change](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change)
