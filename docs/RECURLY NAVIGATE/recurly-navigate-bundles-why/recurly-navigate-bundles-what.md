@@ -88,11 +88,11 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-bundles-why"><span class="rc-snum">1</span>Why Bundles?</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-bundles-what"><span class="rc-snum">2</span>What Are Bundles?</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-bundles-see-it"><span class="rc-snum">3</span>See It In Action</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-bundles-set-it-up"><span class="rc-snum">4</span>Set It Up</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-bundles-go-live"><span class="rc-snum">✓</span>Go Live</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-bundles-why"><span class="rc-snum">1</span>Why Bundles?</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-bundles-what"><span class="rc-snum">2</span>What Are Bundles?</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-bundles-see-it"><span class="rc-snum">3</span>See It In Action</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-bundles-set-it-up"><span class="rc-snum">4</span>Set It Up</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-bundles-go-live"><span class="rc-snum">✓</span>Go Live</a>
   </nav>
 
   <div class="rc-sec">
@@ -175,8 +175,8 @@ metadata:
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-bundles-why">← Why Bundles?</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-bundles-see-it">Next: See It In Action →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-bundles-why">← Why Bundles?</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-bundles-see-it">Next: See It In Action →</a>
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
