@@ -52,7 +52,7 @@ metadata:
   .rc-detail-row strong{color:var(--offblack)}
   .rc-table{width:100%;border-collapse:collapse;margin-bottom:28px;font-size:.87rem;border-radius:12px;overflow:hidden}
   .rc-table th{background:var(--offblack);color:var(--yellow);padding:13px 16px;text-align:left;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.5px}
-  .rc-table td{padding:12px 16px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);line-height:1.5;background:#fff}
+  .rc-table td{padding:12px 16px;border-bottom:1px solid var(--offwhite);color:var(--darkgray);line-height:1.5;background:#fff}
   .rc-table tr:last-child td{border-bottom:none}
   .rc-table td:first-child{font-weight:600;color:var(--offblack);background:var(--offwhite)}
   .rc-steps{display:flex;flex-direction:column;gap:14px;margin-bottom:24px}
