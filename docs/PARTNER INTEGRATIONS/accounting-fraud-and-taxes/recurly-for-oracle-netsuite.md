@@ -56,7 +56,7 @@ Using this integration, Recurly can seamlessly integrate your Recurly billing an
 
 The integration process is divided into five stages, ensuring a comprehensive and thorough approach to onboarding. Each stage involves close collaboration between the merchant and Recurly to ensure a seamless integration experience.
 
-![](https://files.readme.io/720a3dbdd359e1a1b2176ebf1b1c7c020f93c402e3fcf5064ca7eb1ee3b833f1-Oracle_Netsuite-01.png)
+![](https://files.readme.io/45b8717288958837b4fd87f1006cc4bcef33424e0f7f8592ebd102a38fb08341-Oracle_Netsuite-01_2.png)
 
 ## Rules of integration
 
