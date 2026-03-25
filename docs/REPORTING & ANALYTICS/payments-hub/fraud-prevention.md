@@ -84,7 +84,7 @@ This pie chart breaks down blocked fraud transactions by payment method. Credit 
 
 ## Blocked Transactions by Gateway
 
-This bar chart shows the volume of fraud-blocked transactions by payment gateway. Ayym accounts for the overwhelming majority with approximately 5,000 blocked transactions, dwarfing the other gateways. Unknown Gateway and First Data each account for a small fraction at roughly 260–280 blocks apiece. This concentration suggests that either the bulk of transaction volume flows through Ayym, or that it may warrant a closer review of its fraud exposure relative to the other gateways.
+This bar chart shows the volume of fraud-blocked transactions by payment gateway. Adyen accounts for the overwhelming majority with approximately 5,000 blocked transactions, dwarfing the other gateways. Unknown Gateway and First Data each account for a small fraction at roughly 260–280 blocks apiece. This concentration suggests that either the bulk of transaction volume flows through Adyen, or that it may warrant a closer review of its fraud exposure relative to the other gateways.
 
 <Image align="center" border={true} width="00px" src="https://files.readme.io/e3edc529acadd48b9440084b0a9be5bc6b6167c4b89428766ba3c7e4766cbbbd-image.png" className="border" />
 
