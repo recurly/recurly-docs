@@ -54,7 +54,7 @@ metadata:
   .rc-table th{background:var(--offblack);color:var(--yellow);padding:13px 16px;text-align:left;font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.5px}
   .rc-table td{padding:12px 16px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);line-height:1.5;background:#fff}
   .rc-table tr:last-child td{border-bottom:none}
-  .rc-table td:first-child{font-weight:600;color:var(--brightgray);background:var(--offwhite)}
+  .rc-table td:first-child{font-weight:600;color:var(--offblack);background:var(--offwhite)}
   .rc-steps{display:flex;flex-direction:column;gap:14px;margin-bottom:24px}
   .rc-step{background:var(--offwhite);border-radius:14px;padding:20px 24px;border:1px solid var(--lightgray);display:flex;gap:18px;align-items:flex-start}
   .rc-sbadge{width:36px;height:36px;border-radius:10px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
