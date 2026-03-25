@@ -21,11 +21,14 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-...
+This dashboard provides a comprehensive view of the payment retry engine's performance over the current period, tracking at-risk revenue across all retry attempts and measuring how effectively failed transactions are being recovered. While overall volume is down compared to the prior period, the retry engine continues to recover the majority of failed transactions — most within the first two attempts — though a notable drop in recovery rate signals an opportunity to fine-tune retry logic and recapture prior period performance.
 
 # Key benefits
 
-<br />
+* **Protect Revenue** — Automatically identifies and recovers failed payments before they result in permanent revenue loss or customer churn.
+* **Optimize Retry Strategy** — Pinpoints exactly where in the retry cycle recoveries are succeeding or falling off, enabling smarter scheduling and reduced unnecessary attempts.
+* **Monitor Performance Trends** — Tracks period-over-period changes in recovery rates and transaction volumes, giving teams early warning signals when retry effectiveness declines.
+* **Prioritize High-Impact Failures** — Surfaces the volume and value of at-risk revenue in one place, helping teams focus attention on the failures that matter most to the bottom line.
 
 # Key details
 
@@ -57,9 +60,9 @@ This chart tracks the daily volume of successfully recovered payment transaction
 
 ## Revenue Recovered
 
-* **Retry Attempts** - total number of failed payment transactions that entered the retry queue in the current period. 
+* **Retry Attempts** - total number of failed payment transactions that entered the retry queue in the current period.
 * **Revenue at Risk** - total dollar value of transactions that failed and required a retry attempt. The significant drop aligns with the reduction in retry attempts and may indicate fewer high-value transactions are failing.
-* **Recovered Revenue** - total revenue successfully recaptured through the retry engine. 
+* **Recovered Revenue** - total revenue successfully recaptured through the retry engine.
 * **Recovery Rate** - percentage of at-risk revenue that was successfully recovered. This is the most critical metric to monitor, as the dip indicates the retry strategy is recovering a smaller share of at-risk revenue and may warrant a review of retry logic, timing, or payment method fallback rules.
 
 <br />
@@ -77,5 +80,3 @@ Beyond attempt 7, recoveries become minimal (8 or fewer per attempt), with the r
 The steep drop-off after attempt 2 suggests that most failed payments are due to transient issues (e.g., temporary insufficient funds or network errors) that resolve quickly. The long tail of attempts 8–14 recovers very few transactions and may warrant a cost-benefit review — the marginal revenue recovered in later attempts should be weighed against customer experience impact and processing costs.
 
 <Image align="center" border={true} src="https://files.readme.io/112efee63ab4631db531883741571cac48da8c81e3374b0d8629f45985580c3a-image.png" className="border" />
-
-<br />
