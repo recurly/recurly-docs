@@ -72,7 +72,7 @@ The mean Kount risk score assigned to transactions in the selected period. The c
 
 ## Average Risk Score Over Time
 
-This line chart tracks the daily average Kount risk score from March 2 through March 25. Scores fluctuate in a generally stable range early in the period, with a notable dip around March 6–7, before trending steadily upward through March 20–25. The consistent climb toward the end of the period aligns with the decrease in blocked transactions seen in the previous chart, reinforcing that fraud pressure was intensifying during that window. Use this chart to identify when risk levels begin rising so action can be taken before blocked transaction volume surges.
+This line chart tracks the daily average Kount risk score from March 2 through March 25. Scores fluctuate in a generally stable range early in the period, with a notable dip around March 6–7, before trending steadily downward through March 20–25. The consistent decrease toward the end of the period aligns with the increase in blocked transactions seen in the previous chart, reinforcing that fraud pressure was intensifying during that window. Use this chart to identify when risk levels begin dropping so action can be taken before blocked transaction volume surges.
 
 <Image align="center" border={true} src="https://files.readme.io/b36b5bd58d7c5e53689b3e4498d4669e9f07a77db679195bd12ae6916fedaa39-image.png" className="border" />
 
