@@ -24,11 +24,13 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 # 2026
 
-## April 
+## April
 
 | Release Date | **Feature**         | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                  |
 | :----------- | :------------------ | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Apr 1        | **PayPal Complete** | Medium               | No joking around, we've added the ability to use PayPal Credit when using the PayPal Complete gateway with the PayPal wallet. No code changes are required to make use of this feature, and customers may see PayPal Credit offered to them when signing up for subscriptions using PayPal. |
+| Apr 1        | **Recurly Engage**  | Low                  | Integration with Hightouch to allow for data syncing.                                                                                                                                                                                                                                       |
+| Apr 1        | **Recurly Engage**  | Low                  | Chargebee integration allowing merchants to sync their subscription data and execute billing actions directly from prompts in Recurly Engage, leveraging their existing Chargebee account.                                                                                                  |
 
 ## March
 
