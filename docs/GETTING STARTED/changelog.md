@@ -24,6 +24,12 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 # 2026
 
+## April 
+
+| Release Date | **Feature**         | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                  |
+| :----------- | :------------------ | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Apr 1        | **PayPal Complete** | Medium               | No joking around, we've added the ability to use PayPal Credit when using the PayPal Complete gateway with the PayPal wallet. No code changes are required to make use of this feature, and customers may see PayPal Credit offered to them when signing up for subscriptions using PayPal. |
+
 ## March
 
 | Release Date | **Feature**                                  | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
