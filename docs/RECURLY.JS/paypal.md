@@ -8,7 +8,7 @@ hidden: false
 metadata:
   robots: index
 ---
-PayPal manages the consumer payment authorization flow directly. Your customers will authorize a transaction within PayPal. Recurly will then record the authorization and return a token for you to use with our APIs, as we\
+PayPal manages the consumer payment authorization flow directly. Your customers will authorize a transaction within PayPal. Recurly will then record the authorization and return a token for you to use with our APIs, as we  
 do for other payment methods.
 
 ### PayPal Complete
@@ -43,7 +43,7 @@ paypal.on('error', (err) => {
 });
 ```
 
-Finally, add a listener to receive the token once your customer completes the checkout flow. At this point you will\
+Finally, add a listener to receive the token once your customer completes the checkout flow. At this point you will  
 send the token id to your server to be used in the Recurly API to create a billing info for an account.
 
 ```javascript
@@ -51,6 +51,58 @@ paypal.on('token', function (token) {
   // token.id
 });
 ```
+
+Note: If you want to use PayPal Complete's Recurring Module, you have two options: 
+
+* Use [Recurly.js Pricing configuration](https://docs.recurly.com/recurly-subscriptions/docs/pricing) (Recommended)
+* Send in custom configuration using PayPal's specific documentation. It is recommended to only use this for extremely rare instances where Pricing configuration is not enough. PayPal errors will be surfaced in Recurly.js responses where possible so you have verbose instructions to resolve any issues that arise.
+
+**PayPal Complete with Pricing Example**
+
+```javascript PayPal Complete with Pricing
+const paypal = recurly.PayPal({
+  payPalComplete: {
+    target: '#paypal-button',
+    pricing: checkoutPricing,
+    buttonoptions: {}
+  }
+});
+```
+
+**PayPal Complete with PayPal Configuration**
+
+```json PayPal Complete Recurring Module
+{
+  "gatewayCode": "gateway-code",
+  "usagePattern": {"RECURRING_PREPAID"},
+  "billingPlan": {
+  "name": "Plan Name",
+  "billing_cycles": [
+    [
+      {
+        "tenure_type": "REGULAR",
+        "pricing_scheme": {
+          "pricing_model": "VARIABLE",
+          "price": {
+            "value": "12.99",
+            "currency_code": "USD"
+          }
+        },
+        "frequency": {
+          "interval_unit": "MONTH",
+          "interval_count": 1
+        },
+        "total_cycles": 12,
+        "sequence": 1,
+        "start_date": "2026-04-16"
+      }
+    ]
+  ]
+}
+
+```
+
+**Note:** PayPal's recurring module will not accept 0.00 price in the pricing scheme.
 
 ### PayPal on Braintree
 
@@ -74,7 +126,7 @@ paypal.on('error', (err) => {
 });
 ```
 
-Next we must bind a listener to a user action on the button and have it trigger the `start` function on your\
+Next we must bind a listener to a user action on the button and have it trigger the `start` function on your  
 `recurly.PayPal` instance. This will open the PayPal Express Checkout flow.
 
 ```javascript
@@ -83,7 +135,7 @@ document.querySelector('#paypal-button').addEventListener('click', function () {
 });
 ```
 
-Finally, add a function to receive the token once your customer completes the checkout flow. At this point you will\
+Finally, add a function to receive the token once your customer completes the checkout flow. At this point you will  
 send the token id to your server to be used in the Recurly API to create a billing info for an account.
 
 ```javascript
@@ -96,7 +148,7 @@ paypal.on('token', function (token) {
 
 ### PayPal Business
 
-If you are using PayPal Business, please see the documentation for Recurly.js [v4.35.0](https://docs.recurly.com/v1.2.2/docs/overview-recurlyjs-4350). Recurly will maintain\
+If you are using PayPal Business, please see the documentation for Recurly.js [v4.35.0](https://docs.recurly.com/v1.2.2/docs/overview-recurlyjs-4350). Recurly will maintain  
 backward compatibility with this integration through its major version.
 
 ### Reference
@@ -165,10 +217,10 @@ This event is emitted when the customer has completed the PayPal checkout flow. 
 
 ##### Payload
 
-| Param           | Type     | Description                                                           |
-| :-------------- | :------- | :-------------------------------------------------------------------- |
-| token           | `Object` |                                                                       |
-| token.type      | `String` | 'paypal'                                                              |
-| token.id        | `String` | Token identifier to be sent to the API                                |
-| token.email     | `String` | The email of the customer.                                            |
-| token.payer\_id | `String` | The unique identifier of the customer PayPal account. Braintree only. |
+| Param          | Type     | Description                                                           |
+| :------------- | :------- | :-------------------------------------------------------------------- |
+| token          | `Object` |                                                                       |
+| token.type     | `String` | 'paypal'                                                              |
+| token.id       | `String` | Token identifier to be sent to the API                                |
+| token.email    | `String` | The email of the customer.                                            |
+| token.payer_id | `String` | The unique identifier of the customer PayPal account. Braintree only. |
