@@ -52,12 +52,9 @@ paypal.on('token', function (token) {
 });
 ```
 
-Note: If you want to use PayPal Complete's Recurring Module, you have two options:
+PayPal Complete can display rich product and price information in the PayPal Checkout flow. To provide this information, you can provide a[Recurly.js Pricing instance](https://docs.recurly.com/recurly-subscriptions/docs/pricing) (Recommended), or you can provide PayPal UsagePattern and BillingPlan structures directly. We only recommended the latter for rare instances where Pricing does not cover your catalog needs.
 
-* Use [Recurly.js Pricing configuration](https://docs.recurly.com/recurly-subscriptions/docs/pricing) (Recommended)
-* Send in custom configuration using PayPal's specific documentation. It is recommended to only use this for extremely rare instances where Pricing configuration is not enough. PayPal errors will be surfaced in Recurly.js responses where possible so you have verbose instructions to resolve any issues that arise.
-
-**PayPal Complete with Pricing Example**
+**PayPal Complete with Pricing**
 
 ```javascript PayPal Complete with Pricing
 const checkoutPricing = recurly.Pricing.Checkout();
@@ -71,7 +68,7 @@ const paypal = recurly.PayPal({
 });
 ```
 
-**PayPal Complete with PayPal Configuration**
+**PayPal Complete with PayPal UsagePattern and BillingPlan Configuration**
 
 ```json PayPal Complete with Recurring Module directives
 const paypal = recurly.PayPal({
@@ -104,7 +101,7 @@ const paypal = recurly.PayPal({
 
 ```
 
-**Note:** PayPal's recurring module will not accept 0.00 price in the pricing scheme.
+**Note:** PayPal's recurring module will not accept 0.00 price in their pricing scheme.
 
 ### PayPal on Braintree
 
