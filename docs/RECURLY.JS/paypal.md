@@ -73,34 +73,34 @@ const paypal = recurly.PayPal({
 
 **PayPal Complete with PayPal Configuration**
 
-```json PayPal Complete Recurring Module
-{
-  "gatewayCode": "gateway-code",
-  "usagePattern": {"RECURRING_PREPAID"},
-  "billingPlan": {
-  "name": "Plan Name",
-  "billing_cycles": [
-    [
-      {
-        "tenure_type": "REGULAR",
-        "pricing_scheme": {
-          "pricing_model": "VARIABLE",
-          "price": {
-            "value": "12.99",
-            "currency_code": "USD"
-          }
-        },
-        "frequency": {
-          "interval_unit": "MONTH",
-          "interval_count": 1
-        },
-        "total_cycles": 12,
-        "sequence": 1,
-        "start_date": "2026-04-16"
-      }
-    ]
-  ]
-}
+```json PayPal Complete with Recurring Module directives
+const paypal = recurly.PayPal({
+  payPalComplete: {
+    usagePattern: 'RECURRING_PREPAID',  
+    billingPlan: {
+      name: 'Plan Name',
+      billing_cycles: [
+        {
+          tenure_type: 'REGULAR',
+          pricing_scheme: {
+            pricing_model: 'VARIABLE',
+            price: {
+              value: '12.99',
+              currency_code: 'USD'
+            }
+          },
+          frequency: {
+            interval_unit: 'MONTH',
+            interval_count: 1
+          },
+          total_cycles: 12,
+          sequence: 1,
+          start_date: '2026-04-16'
+        }
+      ]
+    }
+  }
+});
 
 ```
 
