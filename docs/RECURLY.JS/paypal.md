@@ -13,7 +13,7 @@ do for other payment methods.
 
 ### PayPal Complete
 
-A PayPal Complete integration utilizes the [PayPal JavaScript SDK](https://developer.paypal.com/sdk/js/). Using Recurly.js, you'll place a PayPal button on your page.
+Recurly's PayPal Complete integration utilizes the [PayPal JavaScript SDK](https://developer.paypal.com/sdk/js/). Using Recurly.js, you'll place a PayPal button on your page.
 
 First, we'll need a target on your page to which the PayPal button will be added:
 
@@ -52,7 +52,7 @@ paypal.on('token', function (token) {
 });
 ```
 
-Note: If you want to use PayPal Complete's Recurring Module, you have two options: 
+Note: If you want to use PayPal Complete's Recurring Module, you have two options:
 
 * Use [Recurly.js Pricing configuration](https://docs.recurly.com/recurly-subscriptions/docs/pricing) (Recommended)
 * Send in custom configuration using PayPal's specific documentation. It is recommended to only use this for extremely rare instances where Pricing configuration is not enough. PayPal errors will be surfaced in Recurly.js responses where possible so you have verbose instructions to resolve any issues that arise.
@@ -60,6 +60,8 @@ Note: If you want to use PayPal Complete's Recurring Module, you have two option
 **PayPal Complete with Pricing Example**
 
 ```javascript PayPal Complete with Pricing
+const checkoutPricing = recurly.Pricing.Checkout();
+
 const paypal = recurly.PayPal({
   payPalComplete: {
     target: '#paypal-button',
