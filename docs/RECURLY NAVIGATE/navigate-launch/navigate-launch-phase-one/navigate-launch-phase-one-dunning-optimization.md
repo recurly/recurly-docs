@@ -186,7 +186,7 @@ metadata:
     </div>
     <p class="rc-subhead" style="margin-bottom:12px">✅ Dunning Optimization Checklist</p>
     <div class="rc-checklist">
-      <div class="rc-cl-header"><h3>Complete Before Moving to Account Updater</h3></div>
+      <div class="rc-cl-header"><h3>RECOMMENDED: Watch Dunning Optimization Webinar & Complete This Checklist Before Moving to Account Updater</h3></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Match your branding across all dunning emails.<span>Ensure your email design, colors, fonts, and tone align with the rest of your brand communications to build trust and credibility.</span></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Adjust your Dunning window length, and space out messages.<span>Aim for a 27-day window for monthly plans or up to 60 days for subscriptions two months or longer to allow for retries and customer action. Additionally leave at least 3-4 days between emails.</span></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Use different email templates and tones.<span>Customize each dunning email with a unique message and tone to keep customers engaged and avoid sounding repetitive.</span></div></div>
