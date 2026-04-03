@@ -106,7 +106,7 @@ metadata:
     <div class="rc-card">
       <p class="rc-subhead">▶ Trail Guide: Business Continuity — Gateway Failover</p>
       <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/9698d251-5121-4f10-9993-9c88288330e7" loading="lazy" title="Navigate Launchpad — Gateway Failover" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+        <iframe src="https://share.synthesia.io/f05bd8df-772f-4b7c-a561-848420075bb1" loading="lazy" title="Navigate Launchpad — Gateway Failover" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
       <p class="rc-video-cap">See how Recurly detects gateway outages and how transactions are seamlessly rerouted to maintain your uptime.</p>
     </div>
