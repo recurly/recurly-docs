@@ -53,6 +53,11 @@ metadata:
 .rc-btn-prev:hover{background:var(--brightgray);text-decoration:none}
 .rc-btn-next{background:var(--yellow);color:var(--offblack);border-color:var(--yellow)}
 .rc-btn-next:hover{opacity:.92;text-decoration:none}
+.rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default;pointer-events:none}
+.rc-link-btn{background:var(--yellow);color:var(--offblack);border-color:var(--yellow);margin:0 8px 8px 0}
+.rc-link-btn:hover{opacity:.9;text-decoration:none}
+.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
+.rc-link-sec:hover{background:var(--brightgray);text-decoration:none}
 .rc-resources{margin-top:32px}
 .rc-resources h3{font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);margin:0 0 12px}
 @media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-2col{grid-template-columns:1fr}.rc-hero-stats{gap:14px}.rc-sec-header{flex-direction:column}.rc-sec-nav{flex-direction:column;align-items:stretch}}
@@ -62,12 +67,12 @@ metadata:
 
   <div class="rc-hero">
     <div class="rc-badge">🚀 Navigate · Launchpad Phase 1</div>
-    <h1>Branding & Customer Experience</h1>
-    <p>Ensure every customer touchpoint — from checkout to monthly invoices — looks and feels like your brand, fostering trust and professional consistency.</p>
+    <h1>Brand Your Emails &amp; Invoices</h1>
+    <p>Branded communications build trust, strengthen subscriber relationships, and make every touchpoint — from signup confirmation to payment receipts — feel like it came from you.</p>
     <div class="rc-hero-stats">
       <div><div class="rc-num">Step 4</div><div class="rc-lbl">Phase 1</div></div>
-      <div><div class="rc-num">Visual</div><div class="rc-lbl">Consistency</div></div>
-      <div><div class="rc-num">Trust</div><div class="rc-lbl">Building</div></div>
+      <div><div class="rc-num">First</div><div class="rc-lbl">Impression Matters</div></div>
+      <div><div class="rc-num">Trust</div><div class="rc-lbl">Through Consistency</div></div>
     </div>
   </div>
 
@@ -85,95 +90,113 @@ metadata:
     <div class="rc-sec-header">
       <div class="rc-sec-icon">🎨</div>
       <div>
-        <h2>Make Recurly Yours</h2>
-        <p>A cohesive brand experience reduces "subscription anxiety." When checkout pages and emails match your website, customers are more likely to complete purchases and less likely to flag renewals as suspicious.</p>
+        <h2>Your Brand, On Every Communication</h2>
+        <p>Recurly sends emails and invoices on your behalf — but without customization, they arrive looking generic. Branded templates increase open rates, reduce "is this spam?" confusion, and reinforce your product's identity at every subscriber touchpoint.</p>
       </div>
     </div>
 
     <div class="rc-card">
-      <p class="rc-subhead">▶ Trail Guide: Designing the Experience — Branding</p>
+      <p class="rc-subhead">▶ Trail Guide: Branded for Liftoff</p>
       <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/694b8e6f-5798-4663-8a35-081862590216" loading="lazy" title="Navigate Launchpad — Branding" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+        <iframe src="https://share.synthesia.io/embeds/videos/aa762aae-0ab6-44f9-9b57-a711992871fc" loading="lazy" title="Navigate Launchpad — Branding Your Emails &amp; Invoices" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
-      <p class="rc-video-cap">Learn where to upload your logos, how to set your brand colors for checkout, and how to customize automated email templates.</p>
+      <p class="rc-video-cap">A walkthrough of Recurly's email and invoice template editor — how to add your logo, brand colors, custom messaging, and subscriber portal links.</p>
     </div>
 
     <div class="rc-card">
-      <p class="rc-subhead">🖼️ Core Branding Assets</p>
+      <p class="rc-subhead">📧 What You Can Brand in Recurly</p>
       <div class="rc-2col">
         <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Logo & Favicon</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Upload your logo (max 256KB) for use on hosted pages and invoices. Don't forget your <strong>Icon</strong> for the browser favicon.</p>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Transactional Emails</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Subscription confirmation, payment receipt, renewal reminder, and more — customized with your logo, colors, and messaging.</p>
         </div>
         <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Brand Colors</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Apply your primary brand hex code to buttons and links in <strong>Checkout Styles</strong> to ensure a seamless transition from your site.</p>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Invoice Templates</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Invoices sent to subscribers can include your company logo, business address, and custom footer text—critical for B2B professionalism.</p>
         </div>
         <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Billing Contact Email</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Set your <strong>Billing Contact Email</strong> in Site Settings. This ensures customers see your brand's support email as the "Sender" of all receipts.</p>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Dunning Emails</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Your failed payment recovery emails should feel like they came from you. Branded dunning emails significantly improve subscriber response rates.</p>
         </div>
         <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Email Customization</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Add your logo to the Header template. Recurly automatically sends HTML and plain-text versions of every lifecycle email.</p>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Subscriber Portal</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">The hosted billing portal where subscribers manage accounts can also be customized to match your product's look and feel.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-tip">
-      <strong>💡 Deliverability Tip:</strong> Configure your <strong>SPF and DKIM</strong> records in your Domain settings. This proves to inbox providers that Recurly has permission to send emails as your domain, significantly improving open rates.
+      <strong>💡 Don't overlook dunning emails:</strong> The payment failure email is often the most important subscriber touchpoint you'll send. A branded dunning email with a prominent "Update Payment Method" button dramatically outperforms a generic billing alert.
     </div>
 
-    <p class="rc-subhead" style="margin-bottom:12px">🪜 Step-by-Step: Branding Setup</p>
+    <p class="rc-subhead" style="margin-bottom:12px">🪜 Step-by-Step: Brand Your Templates</p>
     <div class="rc-steps">
       <div class="rc-step">
         <div class="rc-sbadge">1</div>
         <div>
-          <h3>Configure Site Settings</h3>
-          <p>Go to <strong>Configuration → Site Settings</strong>. Set your Company Name and Billing Contact Email. This information populates your default invoice and email footers.</p>
+          <h3>Access Email Templates</h3>
+          <p>In your Recurly admin, navigate to <strong>Configuration → Email Templates</strong>. You'll see a list of all transactional emails Recurly can send on your behalf.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">2</div>
         <div>
-          <h3>Style Your Checkout</h3>
-          <p>Navigate to <strong>Configuration → Checkout</strong>. Edit your "Starter Style" to upload your logo and set your brand color. Preview the experience to ensure it's mobile-responsive.</p>
+          <h3>Upload your logo and set brand colors</h3>
+          <p>Add your company logo (PNG or JPG, max 256KB) and set your primary brand color. This applies across all templates via the Header/Footer snippets.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">3</div>
         <div>
-          <h3>Update Email Templates</h3>
-          <p>Go to <strong>Configuration → Email Templates</strong>. Use the "Header" and "Footer" templates to add branding once; it will then apply across all 20+ lifecycle emails automatically.</p>
+          <h3>Configure "From" Identity</h3>
+          <p>Go to <strong>Configuration → Site Settings</strong> to set your "Billing Contact Email." This acts as the "From" address for your branded communications.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">4</div>
         <div>
-          <h3>Customize Invoices</h3>
-          <p>In <strong>Configuration → Invoice Templates</strong>, upload a high-resolution logo for your PDF receipts. You can also add custom notes or legal disclaimers to the footer here.</p>
+          <h3>Customize dunning email copy</h3>
+          <p>Edit failed payment templates to use your brand voice. Ensure the call to action links directly to the subscriber's billing portal page.</p>
+        </div>
+      </div>
+      <div class="rc-step">
+        <div class="rc-sbadge">5</div>
+        <div>
+          <h3>Customize the Invoice Template</h3>
+          <p>Go to <strong>Configuration → Invoice Templates</strong>. Add your logo (max 256KB), business name, address, and any required compliance footer text.</p>
+        </div>
+      </div>
+      <div class="rc-step">
+        <div class="rc-sbadge">6</div>
+        <div>
+          <h3>Send a test email for each template</h3>
+          <p>Use Recurly's "Send Test Email" function to preview how each template looks in a real inbox — both on desktop and on mobile.</p>
         </div>
       </div>
     </div>
 
     <p class="rc-subhead" style="margin-bottom:12px">✅ Branding Checklist</p>
     <div class="rc-checklist">
-      <div class="rc-cl-header"><h3>Verify Visuals Before Launch</h3></div>
+      <div class="rc-cl-header"><h3>Complete Before Moving to Gateway Failover</h3></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Logo uploaded to Recurly email and invoice templates (PNG/JPG, &lt; 256KB)</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Brand colors set and applied across all templates</div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Billing Contact Email updated in Site Settings</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Logo and Brand Color applied to Checkout Styles</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Header/Footer images added to Email Templates</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Sent a "Test Email" to yourself to verify logo appearance in an inbox</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Subscription confirmation email customized and tested</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Dunning / payment failure emails customized with clear update CTA</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Invoice template customized with logo, address, and footer</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Test emails sent and reviewed on both desktop and mobile</div></div>
     </div>
 
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater">← Account Updater</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover">Step 5: Failover →</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover">Step 5: Gateway Failover →</a>
     </div>
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com/docs/branding-your-recurly-site" target="_blank">📖 Branding Guide</a>
-      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/email-templates">📧 Email Templates Docs</a>
+      <a class="rc-link-btn" href="https://docs.recurly.com/docs/invoice-template-customization" target="_blank" rel="noopener noreferrer">📖 Invoice Template Customization Docs</a>
+      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/email-customization" target="_blank" rel="noopener noreferrer">📧 Email Template Customization Docs</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
     </div>
   </div>
 
