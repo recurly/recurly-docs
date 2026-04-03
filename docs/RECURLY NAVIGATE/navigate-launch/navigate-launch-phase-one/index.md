@@ -155,7 +155,8 @@ next:
       </div>
     </div>
 
-    <div class="rc-sec-nav">
+     <div class="rc-sec-nav">
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing">🎯 Start Course</a>
       <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing">Step 1: Production Testing →</a>
     </div>
 
