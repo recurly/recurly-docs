@@ -121,7 +121,7 @@ metadata:
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Window length matters</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">For monthly subscriptions, Recurly recommends a dunning window of no longer than 27 days. This maximizes the number of Intelligent Retry attempts while preventing subscribers from receiving a second invoice.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Recurly recommends a dunning window of 27 days for monthly subscriptions and 60 days for plans two months or longer. This maximizes the number of Intelligent Retry attempts while preventing subscribers from receiving a second invoice.</p>
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Emails keep subscribers engaged</p>
@@ -181,7 +181,7 @@ metadata:
       <div>
         <h4>Recommended Deep Dive: Dunning Optimization Webinar</h4>
         <p>Want to go further? Watch the Navigate Dunning Optimization webinar for a complete walkthrough of recovery strategy best practices — including how to benchmark your Dunning Recovery Rate against industry peers and identify opportunities to improve. Use the <strong>Dunning Optimization Checklist</strong> below to follow along and ensure you've optimized your setup.</p>
-        <a class="rc-webinar-btn" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch the Dunning Optimization Webinar</a>
+        <a class="rc-webinar-btn" href="https://recurly.ondemand.goldcast.io/on-demand/a65f472f-9876-4736-9209-5b7b669de773" target="_blank" rel="noopener noreferrer">▶ Watch the Dunning Optimization Webinar</a>
       </div>
     </div>
     <p class="rc-subhead" style="margin-bottom:12px">✅ Dunning Optimization Checklist</p>
@@ -207,7 +207,7 @@ metadata:
       <h3>Additional Resources</h3>
       <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-management" target="_blank" rel="noopener noreferrer">📖 Dunning Management Docs</a>
       <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/retry-logic" target="_blank" rel="noopener noreferrer">🔁 Intelligent Retries Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
 
