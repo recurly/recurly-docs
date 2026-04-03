@@ -32,7 +32,7 @@ Please be aware of the following limitations of PayPal Complete:
 * JCB is only available to Canadian Merchants.*
 * PayPal only returns Address details to pre-vetted Merchants. If you need this information, please escalate with PayPal to enable this for your account. See **Address Features on PayPal** below for more information.
 * Check [PayPal's list of prohibited activities/businesses ](https://www.paypal.com/us/legalhub/acceptableuse-full?locale.x=en_US)to see if you qualify for a PayPal complete account.
-* PayPal Complete's "Recurring Module" implementation does not support zero-dollar amounts if a trial is not specified.
+* PayPal Complete's "[Recurring Module](https://docs.recurly.com/recurly-subscriptions/docs/paypal)" implementation does not support zero-dollar amounts if a trial is not specified.
 
 # Definition
 
@@ -305,4 +305,4 @@ Without the Recurring Module visible, the PayPal modal customers see only has th
 
 <Image align="center" width="350px" src="https://files.readme.io/411a4993e08a568cfbbc40acb9bb197eb711b394cce2bc462601c328327dd318-Screenshot_2026-03-30_at_10.12.45_AM.png" />
 
-To enable this in your PayPal Complete implementation, visit our [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/v1.2.2/docs/paypal) for details.
+To enable this in your PayPal Complete implementation, visit our [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal) for details.
