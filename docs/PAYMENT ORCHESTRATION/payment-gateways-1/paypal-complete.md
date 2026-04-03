@@ -38,7 +38,7 @@ Please be aware of the following limitations of PayPal Complete:
 
 [PayPal Complete](https://recurly.com/partner/paypal-recurly/) is the latest and greatest payment gateway solution by PayPal that simplifies the payment process by accommodating a variety of PayPal payment methods within one single integration. Incorporating PayPal Complete into Recurly is swift and hassle-free, eliminating the need to acquire a separate merchant account.
 
-PayPal can be used in a META (Facebook / Instagram) environment when limited by WebView browsers. See our [PayPal Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/paypal) for more information.
+PayPal can be used in a META (Facebook / Instagram) environment when limited by WebView browsers. See our [PayPal Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal) for more information.
 
 ***
 
@@ -293,7 +293,7 @@ When asked for a callback URL, you will format it as follows: `https://callbacks
   * `PAYMENT.CAPTURE.COMPLETED`- Occurs when a scheduled payment is updated to approved.
   * `PAYMENT.CAPTURE.DECLINED`- Occurs when a scheduled payment is updated to declined.
 
-# PayPal Complete's Recurring Module 
+# PayPal Complete's Recurring Module
 
 Maximize conversion with the redesigned PayPal recurring payments experience.
 
