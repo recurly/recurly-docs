@@ -144,9 +144,9 @@ next:
 
     <div class="rc-2col">
       <div class="rc-card">
-        <p class="rc-subhead">📞 Your Customer Success Team</p>
-        <p style="font-size:.87rem;color:var(--gray);line-height:1.6;margin:0 0 10px">Have questions as you work through Launchpad? Your CSM is here to help.</p>
-        <a class="rc-link-btn" style="font-size:.82rem;padding:9px 14px" href="mailto:customersuccess@recurly.com">✉ customersuccess@recurly.com</a>
+        <p class="rc-subhead">📞 Your Customer Support Team</p>
+        <p style="font-size:.87rem;color:var(--gray);line-height:1.6;margin:0 0 10px">Have questions as you work through Launchpad? Recurly Support is here to help.</p>
+        <a class="rc-link-btn" style="font-size:.82rem;padding:9px 14px" href="mailto:support@recurly.com">✉ customersuccess@recurly.com</a>
       </div>
       <div class="rc-card">
         <p class="rc-subhead">📥 Download Your Resource Guide</p>
@@ -170,3 +170,5 @@ next:
 
 </div>
 `}</HTMLBlock>
+
+<br />
