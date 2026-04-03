@@ -177,8 +177,8 @@ metadata:
     <p class="rc-subhead" style="margin-bottom:12px">✅ Production Testing Checklist</p>
     <div class="rc-checklist">
       <div class="rc-cl-header"><h3>Complete Before Moving to Dunning</h3></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Completed a live test transaction using a real payment method.<span>Use the cheapest plan — refund immediately after</span></div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Confirmed a successful test transation.<span>Log in to your Recurly App and confirm the test transaction shows a successful payment</span>.</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Completed a live test transaction using a real payment method.<span>Use the cheapest plan — refund immediately after.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Confirmed a successful test transation.<span>Log in to your Recurly App and confirm the test transaction shows a successful payment.</span></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Refunded the test transaction.<span>In Recurly, confirm the refund processed successfully.</span></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Verified PSD2 / 3DS authentication.<span>(EU merchants only). Resources are linked below.</span></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Reviewed your payment gateway and checkout configuration.<span>Use the provided documentation below for assistance, and contact support or use Compass AI Assistant if issues persist.</span></div></div>
