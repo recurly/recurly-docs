@@ -11,7 +11,7 @@ metadata:
 PayPal manages the consumer payment authorization flow directly. Your customers will authorize a transaction within PayPal. Recurly will then record the authorization and return a token for you to use with our APIs, as we  
 do for other payment methods.
 
-### PayPal Complete
+## PayPal Complete
 
 Recurly's PayPal Complete integration utilizes the [PayPal JavaScript SDK](https://developer.paypal.com/sdk/js/). Using Recurly.js, you'll place a PayPal button on your page.
 
@@ -51,6 +51,8 @@ paypal.on('token', function (token) {
   // token.id
 });
 ```
+
+### PayPal Recurring Module Enablement
 
 PayPal Complete can display rich product and price information in the PayPal Checkout flow. To provide this information, you can provide a[Recurly.js Pricing instance](https://docs.recurly.com/recurly-subscriptions/docs/pricing) (Recommended), or you can provide PayPal UsagePattern and BillingPlan structures directly. We only recommended the latter for rare instances where Pricing does not cover your catalog needs.
 
@@ -103,7 +105,7 @@ const paypal = recurly.PayPal({
 
 **Note:** PayPal's recurring module will not accept 0.00 price in their pricing scheme.
 
-### PayPal on Braintree
+## PayPal on Braintree
 
 First, place a button on your page specifically for checking out with PayPal.
 
@@ -145,7 +147,7 @@ paypal.on('token', function (token) {
 });
 ```
 
-### PayPal Business
+## PayPal Business
 
 If you are using PayPal Business, please see the documentation for Recurly.js [v4.35.0](https://docs.recurly.com/v1.2.2/docs/overview-recurlyjs-4350). Recurly will maintain  
 backward compatibility with this integration through its major version.
