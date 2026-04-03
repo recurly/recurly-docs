@@ -116,19 +116,19 @@ metadata:
       <div class="rc-2col">
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Card networks maintain update files</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Visa, Mastercard, Discover, and Amex maintain files of updated card numbers when banks reissue cards. Account Updater queries these files before each renewal.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Visa, Mastercard, Discover, and Amex maintain files of updated card numbers. Recurly queries these files to catch changes in card numbers or expiry dates.</p>
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Updates happen before billing</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Recurly sends subscriber card data to the card network before the renewal date. If a new number or expiry exists, Recurly updates the record automatically.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">For most gateways, checks occur days before renewal. However, Stripe and Adyen support <strong>Real-Time</strong> updates during the transaction attempt.</p>
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">No subscriber action required</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Subscribers never know this happened — their subscription just keeps renewing. This directly reduces involuntary churn without any friction to the subscriber experience.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Subscribers never know this happened — their subscription just keeps renewing. This directly reduces involuntary churn without any friction.</p>
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Works alongside dunning</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Account Updater and dunning are complementary. AU reduces the volume of payments that fail in the first place; dunning recovers the ones that still do.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Account Updater and dunning are complementary. AU reduces the volume of payments that fail; dunning recovers the ones that still do (like NSF or lost cards).</p>
         </div>
       </div>
     </div>
@@ -140,13 +140,13 @@ metadata:
       <p>Visa and Discover card network updates are enabled directly in Payment Settings. These can be turned on without any additional plan changes.</p>
     </div>
     <div class="rc-pricing-card usage" style="margin-bottom:16px">
-      <div class="rc-pricing-label">Enabled Separately — Mastercard &amp; Amex</div>
+      <div class="rc-pricing-label">Configuration Required — Mastercard &amp; Amex</div>
       <h4>Mastercard &amp; American Express Coverage</h4>
-      <p>Mastercard and Amex must be enabled separately from the Payment Settings page. Contact your CSM for guidance on enabling these networks for your account.</p>
+      <p>Mastercard requires your 4-digit <strong>MCC code</strong>. Amex requires a 10-digit <strong>SE Number</strong> (direct accounts only; OptBlue not supported).</p>
     </div>
 
     <div class="rc-tip">
-      <strong>💡 Think about your subscriber base:</strong> If a significant portion of your subscribers use Amex or Mastercard, enabling those networks in Account Updater can meaningfully reduce involuntary churn. Your CSM can help you understand which card types are most common in your subscriber mix.
+      <strong>💡 Pro Tip:</strong> You can find your <strong>MCC (Merchant Category Code)</strong> on your bank processing statement. For <strong>Amex</strong>, the SE number is found on your direct American Express merchant statement.
     </div>
 
     <p class="rc-subhead" style="margin-bottom:12px">🪜 Step-by-Step: Enable Account Updater</p>
@@ -162,21 +162,21 @@ metadata:
         <div class="rc-sbadge">2</div>
         <div>
           <h3>Enable Visa and Discover</h3>
-          <p>Toggle on Account Updater for Visa and Discover — these can be enabled directly from the Payment Settings page. These two networks cover a large share of most subscriber bases.</p>
+          <p>Toggle on Account Updater for Visa and Discover — these can be enabled directly. These two networks cover a large share of most subscriber bases.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">3</div>
         <div>
-          <h3>Enable Mastercard and Amex (if applicable)</h3>
-          <p>Mastercard and American Express must be enabled separately. Contact your CSM or Recurly support to enable these networks for your account if they are relevant to your subscriber mix.</p>
+          <h3>Enter Mastercard &amp; Amex Codes</h3>
+          <p>Provide your 4-digit <strong>MCC</strong> for Mastercard and 10-digit <strong>SE Number</strong> for Amex. If you are using <strong>Amex OptBlue</strong> via your gateway, you cannot enable Amex here.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">4</div>
         <div>
           <h3>Monitor impact in Phase 2</h3>
-          <p>In Phase 2 of Launchpad, you'll track your Involuntary Churn Rate and Decline Rate at Renewal on the Benchmarks Dashboard. After enabling Account Updater, watch for a decline in both metrics over the following billing cycles.</p>
+          <p>In Phase 2 of Launchpad, you'll track your Involuntary Churn Rate and Decline Rate at Renewal on the Benchmarks Dashboard. Watch for a decline in both metrics over time.</p>
         </div>
       </div>
     </div>
@@ -184,9 +184,9 @@ metadata:
     <p class="rc-subhead" style="margin-bottom:12px">✅ Account Updater Checklist</p>
     <div class="rc-checklist">
       <div class="rc-cl-header"><h3>Complete Before Moving to Branding</h3></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Located Account Updater in Configuration → Payment Settings (top of the page)</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Located Account Updater in Configuration → Payment Settings</div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Enabled Account Updater for Visa and Discover</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Contacted CSM to enable Mastercard and Amex if relevant to your subscriber mix</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Entered MCC (Mastercard) and SE Number (Amex) if you have a direct Amex account</div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Noted your current Involuntary Churn Rate as a baseline for Phase 2 benchmarking</div></div>
     </div>
 
