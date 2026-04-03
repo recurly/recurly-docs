@@ -151,7 +151,7 @@ next:
       <div class="rc-card">
         <p class="rc-subhead">📥 Download Your Resource Guide</p>
         <p style="font-size:.87rem;color:var(--gray);line-height:1.6;margin:0 0 10px">A quick-reference guide to all Recurly support links, documentation, and program resources.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.82rem;padding:9px 14px" href="https://go.recurly.com/Navigate-Resource-Guide.html" target="_blank" rel="noopener noreferrer">⬇ Navigate Resource Guide</a>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.82rem;padding:9px 14px" href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer">⬇ Navigate Resource Guide</a>
       </div>
     </div>
 
