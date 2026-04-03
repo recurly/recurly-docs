@@ -192,9 +192,10 @@ metadata:
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com/docs/psd2-compliance" target="_blank" rel="noopener noreferrer">📖 PSD2 Compliance Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/testing" target="_blank" rel="noopener noreferrer">🧪 Testing in Recurly</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+      <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2" target="_blank" rel="noopener noreferrer">📖 PSD2 Compliance Docs</a>
+      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/test" target="_blank" rel="noopener noreferrer">🧪 Test Gateway</a>
+			<a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/checkout#configuration-landing-page" target="_blank" rel="noopener noreferrer">Review Checkout Configuration</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
 
