@@ -115,7 +115,7 @@ metadata:
       <p class="rc-subhead">🔁 How Account Updater Works</p>
       <div class="rc-2col">
         <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Card networks maintain update files</p>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Card networks maintain updated files</p>
           <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Visa, Mastercard, Discover, and Amex maintain files of updated card numbers. Recurly queries these files to catch changes in card numbers or expiry dates.</p>
         </div>
         <div>
@@ -198,7 +198,7 @@ metadata:
     <div class="rc-resources">
       <h3>Additional Resources</h3>
       <a class="rc-link-btn" href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Account Updater Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
 
