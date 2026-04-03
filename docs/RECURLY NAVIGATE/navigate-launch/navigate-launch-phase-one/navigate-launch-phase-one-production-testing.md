@@ -178,8 +178,8 @@ metadata:
     <div class="rc-checklist">
       <div class="rc-cl-header"><h3>Complete Before Moving to Dunning</h3></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Completed a live test transaction using a real payment method<span>Use the cheapest plan — refund immediately after</span></div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab"> Log in to your Recurly App and confirm the test transaction shows a <span>successful payment</span>.</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Refund the test transaction in Recurly and <span>confirm the refund processes successfully</span>.</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Confirmed a successful test transation.<span>Log in to your Recurly App and confirm the test transaction shows a successful payment</span>.</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Refund the test transaction<span>In Recurly, confirm the refund processed successfully</span>.</div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Verified PSD2 / 3DS authentication (EU merchants only)</div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Review your payment gateway and checkout configuration using the provided documentation, and contact support if issues persist (resource docs linked below)</div></div>
     </div>
