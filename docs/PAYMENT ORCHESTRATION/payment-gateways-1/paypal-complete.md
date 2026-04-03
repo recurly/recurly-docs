@@ -32,12 +32,13 @@ Please be aware of the following limitations of PayPal Complete:
 * JCB is only available to Canadian Merchants.*
 * PayPal only returns Address details to pre-vetted Merchants. If you need this information, please escalate with PayPal to enable this for your account. See **Address Features on PayPal** below for more information.
 * Check [PayPal's list of prohibited activities/businesses ](https://www.paypal.com/us/legalhub/acceptableuse-full?locale.x=en_US)to see if you qualify for a PayPal complete account.
+* PayPal Complete's "Recurring Module" implementation does not support zero-dollar amounts if a trial is not specified.
 
 # Definition
 
 [PayPal Complete](https://recurly.com/partner/paypal-recurly/) is the latest and greatest payment gateway solution by PayPal that simplifies the payment process by accommodating a variety of PayPal payment methods within one single integration. Incorporating PayPal Complete into Recurly is swift and hassle-free, eliminating the need to acquire a separate merchant account.
 
-PayPal can be used in a META (Facebook / Instagram) environment when limited by WebView browsers. See our [PayPal Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/v1.2/docs/paypal) for more information.
+PayPal can be used in a META (Facebook / Instagram) environment when limited by WebView browsers. See our [PayPal Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal) for more information.
 
 ***
 
@@ -61,7 +62,7 @@ PayPal can be used in a META (Facebook / Instagram) environment when limited by 
 | Card on File Supported          | N/A                                                                                                                                                                                                     |
 | Regions                         | United States, EMEA, Canada, United Kingdom/EU, APAC                                                                                                                                                    |
 | Currencies                      | USD, AUD, BRL, CAD, CHF, CNY, CZK, DKK, EUR, GBP, HDK, HUF, ILS, JPY, MXN, MYR, NOK, NZD, PHP, PLN, SEK, SGD, THB, and TWD.                                                                             |
-| Other Gateway Feature Support   | PayPal Tokens, Token Lifecycle and Transaction Status Webhooks                                                                                                                                          |
+| Other Gateway Feature Support   | PayPal Tokens, Token Lifecycle and Transaction Status Webhooks, PayPal Recurring Module                                                                                                                 |
 
 ## Required PayPal Setup
 
@@ -291,3 +292,17 @@ When asked for a callback URL, you will format it as follows: `https://callbacks
   * `PAYMENT.CAPTURE.REFUNDED`- Occurs when a scheduled Refund is updated to approved.
   * `PAYMENT.CAPTURE.COMPLETED`- Occurs when a scheduled payment is updated to approved.
   * `PAYMENT.CAPTURE.DECLINED`- Occurs when a scheduled payment is updated to declined.
+
+# PayPal Complete's Recurring Module
+
+Maximize conversion with the redesigned PayPal recurring payments experience.
+
+* Accelerate recurring billing agreement set up by reducing login friction via early recognition and low friction authentication methods.
+* Reduce churn by providing full transparency of the recurring billing amount on PayPal’s pay sheet.
+* Customizable and supports multiple subscription models, the new recurring billing module is designed to help your customers subscribe seamlessly with confidence.
+
+Without the Recurring Module visible, the PayPal modal customers see only has the amount and their payment methods visible. With the Recurring Module behavior enabled, customers see who they are signing up for, the terms, cadence, and plan name. They'll even see when the subscription starts, and if there is a trial.
+
+<Image align="center" width="350px" src="https://files.readme.io/411a4993e08a568cfbbc40acb9bb197eb711b394cce2bc462601c328327dd318-Screenshot_2026-03-30_at_10.12.45_AM.png" />
+
+To enable this in your PayPal Complete implementation, visit our [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/v1.2.2/docs/paypal) for details.
