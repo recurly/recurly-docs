@@ -147,7 +147,7 @@ metadata:
         <div class="rc-sbadge">2</div>
         <div>
           <h3>Set your dunning window length</h3>
-          <p>Configure the total length of your dunning cycle. For monthly subscriptions, Recurly recommends a maximum of <strong>27 days</strong> — this gives Intelligent Retries the maximum number of attempts while preventing a second invoice from generating before the subscription expires.</p>
+          <p>Configure the total length of your dunning cycle. For monthly subscriptions, Recurly recommends a maximum of <strong>27 days</strong> and <strong>60 days</strong> for plans that are two months or longer. This gives Intelligent Retries the maximum number of attempts while preventing a second invoice from generating before the subscription expires.</p>
         </div>
       </div>
       <div class="rc-step">
@@ -176,25 +176,27 @@ metadata:
     <div class="rc-tip">
       <strong>💡 Best Practice:</strong> Pair dunning with Account Updater (Step 3) for maximum recovery. Account Updater proactively updates expired or replaced card details before the invoice even fails — reducing how many payments enter dunning in the first place.
     </div>
-
-    <p class="rc-subhead" style="margin-bottom:12px">✅ Dunning Optimization Checklist</p>
-    <div class="rc-checklist">
-      <div class="rc-cl-header"><h3>Complete Before Moving to Account Updater</h3></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Accessed dunning configuration in Recurly admin (Configuration → Dunning Management)</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Set your dunning window length<span>Recommended: up to 27 days for monthly subscriptions</span></div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Created at least 2–4 dunning emails with clear payment update CTAs<span>Intelligent Retries run automatically — your emails provide the human recovery layer</span></div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Configured expiration behavior (immediate cancel vs. past-due grace period)</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Confirmed whether multiple campaigns make sense for your plan structure</div></div>
-    </div>
-
     <div class="rc-deep-dive">
       <div style="font-size:26px;flex-shrink:0;margin-top:2px">🎧</div>
       <div>
         <h4>Recommended Deep Dive: Dunning Optimization Webinar</h4>
-        <p>Want to go further? Watch the Navigate Dunning Optimization webinar for a complete walkthrough of recovery strategy best practices — including how to benchmark your Dunning Recovery Rate against industry peers and identify opportunities to improve.</p>
+        <p>Want to go further? Watch the Navigate Dunning Optimization webinar for a complete walkthrough of recovery strategy best practices — including how to benchmark your Dunning Recovery Rate against industry peers and identify opportunities to improve. Use the <strong>Dunning Optimization Checklist</strong> below to follow along and ensure you've optimized your setup.</p>
         <a class="rc-webinar-btn" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch the Dunning Optimization Webinar</a>
       </div>
     </div>
+    <p class="rc-subhead" style="margin-bottom:12px">✅ Dunning Optimization Checklist</p>
+    <div class="rc-checklist">
+      <div class="rc-cl-header"><h3>Complete Before Moving to Account Updater</h3></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Match your branding across all dunning emails.<span>Ensure your email design, colors, fonts, and tone align with the rest of your brand communications to build trust and credibility.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Adjust your Dunning window length, and space out messages.<span>Aim for a 27-day window for monthly plans or up to 60 days for subscriptions two months or longer to allow for retries and customer action. Additionally leave at least 3-4 days between emails.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Use different email templates and tones.<span>Customize each dunning email with a unique message and tone to keep customers engaged and avoid sounding repetitive.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Let customers know when their account will close.<span>Be transparent about how many days are left before their account is suspended or canceled.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Remind customers why your product is valuable.<span>Reiterate the benefits they’ll lose, like access, pricing, features, or user perks, to create urgency and FOMO.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Offer helpful CTAs beyond just “update billing."<span>Include links to FAQs, support, live chat, community, or even offer a pause option — make it easy for them to get help.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Build urgency into subject lines and copy.<span>Gradually increase urgency in your messaging as the dunning cycle progresses. For example, “Last Chance,” “Don’t Lose Access.”.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Set up multiple campaigns for different user groups.<span>Tailor your dunning strategy by plan type or audience — monthly vs. annual, enterprise vs. individual, etc.</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Use the right email delivery method.<span>Choose the best option for your business, whether that’s Recurly’s default service or a custom setup using Sendgrid, Mailchimp, or Braze, for more control and visibility.</span></div></div>			<div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Add an in-app or onsite ‘Payment Overdue’ banner.<span>Catch users who don’t open emails by showing a prominent message in your product or app with a link to update billing.</span></div></div>
+	</div>
 
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing">← Production Testing</a>
