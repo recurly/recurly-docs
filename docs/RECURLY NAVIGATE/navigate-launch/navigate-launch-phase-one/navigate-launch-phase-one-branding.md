@@ -195,7 +195,7 @@ metadata:
     <div class="rc-resources">
       <h3>Additional Resources</h3>
       <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization" target="_blank" rel="noopener noreferrer">📖 Invoice Template Customization Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/email-customization" target="_blank" rel="noopener noreferrer">📧 Email Template Customization Docs</a>
+      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer">📧 Email Template Customization Docs</a>
       <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
