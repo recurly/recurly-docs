@@ -85,13 +85,13 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="#"><span class="rc-snum">🏠</span>Welcome</a>
-    <a href="#"><span class="rc-snum">1</span>Production Testing</a>
-    <a href="#"><span class="rc-snum">2</span>Dunning</a>
-    <a href="#"><span class="rc-snum">3</span>Account Updater</a>
-    <a href="#"><span class="rc-snum">4</span>Branding</a>
-    <a href="#" class="rc-active"><span class="rc-snum">5</span>Gateway Failover</a>
-    <a href="#"><span class="rc-snum">✓</span>Review &amp; Resources</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one"><span class="rc-snum">🏠</span>Welcome</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing"><span class="rc-snum">1</span>Production Testing</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-dunning-optimization"><span class="rc-snum">2</span>Dunning</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater"><span class="rc-snum">3</span>Account Updater</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding"><span class="rc-snum">4</span>Branding</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover" class="rc-active"><span class="rc-snum">5</span>Gateway Failover</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review"><span class="rc-snum">✓</span>Review &amp; Resources</a>
   </nav>
 
   <div class="rc-sec">
@@ -106,9 +106,9 @@ metadata:
     <div class="rc-card">
       <p class="rc-subhead">▶ Trail Guide: Business Continuity — Gateway Failover</p>
       <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/f05bd8df-772f-4b7c-a561-848420075bb1" loading="lazy" title="Navigate Launchpad — Gateway Failover" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+        <iframe src="https://share.synthesia.io/embeds/videos/f05bd8df-772f-4b7c-a561-848420075bb1" loading="lazy" title="Navigate Launchpad — Gateway Failover" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
-      <p class="rc-video-cap">See how Recurly detects gateway outages and how transactions are seamlessly rerouted to maintain your uptime.</p>
+      <p class="rc-video-cap">See how Recurly detects gateway outages and how transactions are seamlessly rerouted to maintain your revenue uptime.</p>
     </div>
 
     <div class="rc-card">
@@ -124,17 +124,17 @@ metadata:
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Vaulted Cards Only</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Failover works best for cards stored in Recurly's vault. Gateway-only tokens (like Stripe-only tokens) cannot be failed over to other providers.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Failover works for cards stored in Recurly's vault. Gateway-only tokens (e.g. Stripe-only tokens) cannot be failed over to other providers.</p>
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Smart Rerouting</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">If you exclude a gateway from failover, Recurly will ignore it as a backup option—ideal for specialty or high-cost gateways.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">If you exclude a gateway from failover, Recurly will ignore it as a backup option—ideal for specialty or currency-specific gateways.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-tip">
-      <strong>⚠️ Plan Note:</strong> Gateway Failover is available on <strong>Professional and Elite plans</strong>. If you are on a Starter plan, you will need to upgrade to enable this feature.
+      <strong>⚠️ Plan Requirement:</strong> Gateway Failover is available on <strong>Professional and Elite plans</strong>. If you are currently on a Starter plan, you will need to upgrade to access this feature.
     </div>
 
     <p class="rc-subhead" style="margin-bottom:12px">🪜 Step-by-Step: Configuration</p>
@@ -149,7 +149,7 @@ metadata:
       <div class="rc-step">
         <div class="rc-sbadge">2</div>
         <div>
-          <h3>Enable Failover</h3>
+          <h3>Enable Failover Monitoring</h3>
           <p>On the Payment Gateways page, find the <strong>Gateway Failover</strong> modal on the right-hand sidebar. Click "Enable" to activate the monitoring logic.</p>
         </div>
       </div>
@@ -172,8 +172,8 @@ metadata:
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#">← Branding</a>
-      <a class="rc-btn-next" href="#">Final Step: Review →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding">← Branding</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review">Final Step: Review →</a>
     </div>
 
     <div class="rc-resources">
