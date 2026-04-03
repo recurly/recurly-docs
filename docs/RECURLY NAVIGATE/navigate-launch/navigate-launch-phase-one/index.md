@@ -146,7 +146,7 @@ next:
       <div class="rc-card">
         <p class="rc-subhead">📞 Your Customer Support Team</p>
         <p style="font-size:.87rem;color:var(--gray);line-height:1.6;margin:0 0 10px">Have questions as you work through Launchpad? Recurly Support is here to help.</p>
-        <a class="rc-link-btn" style="font-size:.82rem;padding:9px 14px" href="mailto:support@recurly.com">✉ customersuccess@recurly.com</a>
+        <a class="rc-link-btn" style="font-size:.82rem;padding:9px 14px" href="mailto:support@recurly.com">✉ support@recurly.com</a>
       </div>
       <div class="rc-card">
         <p class="rc-subhead">📥 Download Your Resource Guide</p>
@@ -162,9 +162,9 @@ next:
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer">📖 Recurly Documentation</a>
-      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Navigate Events &amp; Webinars</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+      <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/" target="_blank" rel="noopener noreferrer">📖 Recurly Documentation</a>
+      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Navigate Events &amp; Webinars</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Support</a>
     </div>
   </div>
 
