@@ -1,5 +1,5 @@
 ---
-title: 'Section 6: Metrics'
+title: 'Section 6: Phase 1 Review'
 deprecated: false
 hidden: true
 metadata:
