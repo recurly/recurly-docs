@@ -43,9 +43,9 @@ The creation of custom fields is done through the Recurly Admin Console (UI), wh
 
 By utilizing custom fields, you can tailor your Recurly experience to match your unique business needs, ensuring that you have access to the relevant data and insights that drive your operations forward. Whether you want to track specific customer information, add extra details to your item catalog, or enable targeted plan offerings, custom fields provide the flexibility to accommodate your requirements.
 
-# Creating custom field definitions
+# Creating and editing custom field definitions
 
-Users with the Configuration permission within their role have the ability to create custom field definitions on their Recurly site. These definitions allow you to collect custom field values for accounts, items, plans, or subscriptions.
+Users with the Configuration permission within their role have the ability to create and edit custom field definitions on their Recurly site. These definitions allow you to collect custom field values for accounts, charges, items, plans, or subscriptions.
 
 To create a custom field definition, follow these steps:
 
@@ -74,20 +74,6 @@ All custom fields are limited to 255 characters and are available as text fields
 
 Please note that custom fields currently do not support picklist, boolean, true/false, or radio button data types.
 
-## Editing custom field definitions
-
-After creating a custom field definition, you can edit certain data elements through the Configuration→Custom Fields menu. The following fields can be edited:
-
-* **API Field Name:** This serves as the ID used in the API to reference the custom field. It should not contain spaces and can only consist of numbers, letters, dashes, and underscores.
-* **Recurly Object:** This determines the object on which the custom field is created, such as account, charge, item, plan, or subscription.
-* **Admin Console Access:** This option controls the behavior of the field in the Recurly UI.
-  * **Hidden in the admin console:** The field is only editable or viewable via the API.
-  * **Read-only in the admin console:** The field is viewable in the UI but only editable through the API.
-  * **Editable in the admin console:** The field can be viewed and edited in both the UI and API.
-  * **Able to set in the admin console (applicable only to Charge):** Enables the field to be set but not viewed in the Admin console.
-* **Admin Console Field Name:** If you enable the field to be set, edited, or viewed in the Admin Console, this field is required, and its value becomes the field name in the Admin Console.
-* **Tooltip Description:** If populated, a question mark icon will appear next to the Admin Console Field Name, providing additional context for users to understand the purpose of the field.
-
 ## Deleting custom field definitions
 
 If you no longer wish to collect data for a specific custom field on your accounts, charges, items, plans, or subscriptions, you have the option to delete the custom field definition from your Recurly site. Please note that deleting a custom field definition will permanently remove all associated custom field data.
@@ -97,16 +83,8 @@ To delete a custom field definition, follow these steps:
 1. Go to Configuration→Custom Fields.
 2. Take note of the value in the "Field Name (API)" column for the custom field you want to eliminate.
 3. Hover over the row of the custom field you'd like to delete, and on the right side of the table, select "Delete."
-
-![](https://files.readme.io/e168804-image.png)
-
 4. Enter the value you noted in the previous step.
 5. Once entered, the "Confirm" button will become enabled.
-
-![](https://files.readme.io/2ca2e34-image.png)
-
-![](https://files.readme.io/dd60dba-image.png)
-
 6. Review the consequences of deleting the custom field definition:
 
 > ❗️ Warning:
