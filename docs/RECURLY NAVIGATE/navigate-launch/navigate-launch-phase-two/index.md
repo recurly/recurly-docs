@@ -40,7 +40,6 @@ metadata:
 .rc-metric-desc{font-size:.78rem;color:var(--gray);line-height:1.4}
 .rc-scorecard{background:var(--offblack);border-radius:14px;padding:22px 24px;margin-bottom:16px}
 .rc-scorecard h3{font-size:.96rem;font-weight:800;color:var(--orange);margin:0 0 14px}
-.rc-scorecard p{font-size:.87rem;color:#CCC9B8;line-height:1.5;margin-bottom:16px}
 .rc-score-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .rc-score-row:last-child{border-bottom:none}
 .rc-score-icon{font-size:16px;flex-shrink:0}
@@ -87,12 +86,12 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two" class="rc-active"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-acquisition-metrics"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
+    <a href="#" class="rc-active"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
+    <a href="#"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
+    <a href="#"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
+    <a href="#"><span class="rc-snum">3</span>Churn Metrics</a>
+    <a href="#"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
+    <a href="#"><span class="rc-snum">✓</span>Full Course Review</a>
   </nav>
 
   <div class="rc-sec">
@@ -106,7 +105,7 @@ metadata:
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Account Updater enabled</div>
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Branded emails &amp; invoices</div>
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Gateway Failover in place</div>
-        <p style="margin-top:10px">Phase 2 builds on that foundation — now you'll measure performance via <strong>Recurly Analytics</strong> and spot growth opportunities.</p>
+        <p style="margin-top:10px">Phase 2 builds on that foundation — now you'll measure performance via Recurly Insights and spot growth opportunities.</p>
       </div>
     </div>
 
@@ -114,7 +113,7 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Your 6 Core Benchmark Metrics</h2>
-        <p>These are the KPIs Recurly tracks for every subscription business. Each one reveals a different aspect of your health — from how well you're acquiring subscribers to how effectively you're recovering revenue.</p>
+        <p>Each metric reveals a different aspect of your health — from how well you're acquiring subscribers to how effectively you're recovering revenue via dunning.</p>
       </div>
     </div>
 
@@ -153,33 +152,32 @@ metadata:
 
     <div class="rc-scorecard">
       <h3>📋 Your Monthly Metrics Scorecard</h3>
-      <p>Your Monthly Metrics Scorecard is a clear snapshot of your business health. It utilizes a two-month lookback (e.g., July data delivered in September) to ensure every dunning cycle and retry attempt has finalized, providing a true measure of your recovery and revenue. Each scorecard includes Year-over-Year comparisons and industry benchmarks to show exactly how you stack up.</p>
-      <div class="rc-score-row"><span class="rc-score-icon">📈</span><span class="rc-score-label">Acquisition Rate</span><span class="rc-score-freq">Monthly</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">⚡</span><span class="rc-score-label">Sign-Up Decline Rate</span><span class="rc-score-freq">Monthly</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">👋</span><span class="rc-score-label">Voluntary Churn Rate</span><span class="rc-score-freq">Monthly</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">💳</span><span class="rc-score-label">Involuntary Churn Rate</span><span class="rc-score-freq">Monthly</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">✅</span><span class="rc-score-label">Renewal Paid Rate</span><span class="rc-score-freq">Monthly</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">💰</span><span class="rc-score-label">Dunning Recovery Rate</span><span class="rc-score-freq">Monthly</span></div>
-    </div>
-
-    <div class="rc-tip">
-      <strong>📅 Delivery Schedule:</strong> You will begin receiving your scorecard on the first Tuesday of each month once you are 90 days post-production (live in Recurly). You’ll learn much more about how to use this scorecard at the end of this learning path.
+      <div class="rc-score-row"><span class="rc-score-icon">📈</span><span class="rc-score-label">Acquisition Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
+      <div class="rc-score-row"><span class="rc-score-icon">⚡</span><span class="rc-score-label">Sign-Up Decline Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
+      <div class="rc-score-row"><span class="rc-score-icon">👋</span><span class="rc-score-label">Voluntary Churn Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
+      <div class="rc-score-row"><span class="rc-score-icon">💳</span><span class="rc-score-label">Involuntary Churn Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
+      <div class="rc-score-row"><span class="rc-score-icon">✅</span><span class="rc-score-label">Renewal Paid Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
+      <div class="rc-score-row"><span class="rc-score-icon">💰</span><span class="rc-score-label">Dunning Recovery Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
     </div>
 
     <div class="rc-clip">
-      <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
-      <p class="rc-clip-title">Get a Headstart: Advanced Reporting Secrets</p>
-      <p>Watch Director of Data Matthew Cryer demonstrate how to master the <strong>Trendalyzer</strong>, monitor <strong>hourly activations</strong>, and navigate the four layers of Recurly reporting to unlock non-obvious growth insights.</p>
-      <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch "Beyond the Dashboard" On-Demand →</a>
+      <div class="rc-clip-label">🎬 MONTHLY SCORECARD</div>
+      <p class="rc-clip-title">Your Monthly Metrics Scorecard</p>
+      <p>Designed to give you a complete snapshot of your last complete fiscal month's performance in Recurly at a glance, this scorecard is delivered on the first Tuesday of each month, starting 90 days after going live. It provides key metrics across growth, churn, and revenue recovery for a true measure of your business's health.</p>
+      <p style="font-size:0.9rem; font-weight:700; color:var(--offblack);">A Glimpse of Your Scorecard:</p>
+      <div style="width:100%; overflow:hidden;">
+        <img src="image_1.png" alt="Scorecard Panels Sneak Peek" style="width:100%; max-width:600px; display:block; object-fit: cover; object-position: 0 0; aspect-ratio: 16 / 9; clip-path: inset(0 60% 30% 0); margin: 0 auto;"/>
+      </div>
+      <p style="font-size:0.87rem; line-height:1.5; color:var(--gray); margin-top:8px;">You’ll learn much more about how to use this scorecard at the end of this learning path.</p>
     </div>
 
     <div class="rc-tip">
-      <strong>💡 Download the Metrics Cheatsheet:</strong> Before diving into the individual metrics, grab the Launchpad Metrics Cheatsheet. It lists every KPI definition, calculation formula, and what direction you want each metric to move.
+      <strong>📅 Download the Metrics Cheatsheet:</strong> Before diving into the individual metrics, grab the Launchpad Metrics Cheatsheet. It lists every KPI definition, calculation formula, and what direction you want each metric to move — a quick reference for any time you're reviewing your Benchmarks Dashboard.
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-one-review">← Phase 1 Review</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard">Step 1: Benchmarks &amp; Reporting →</a>
+      <a class="rc-btn-prev" href="#">← Phase 1 Review</a>
+      <a class="rc-btn-next" href="#">Step 1: Benchmarks &amp; Reporting →</a>
     </div>
 
     <div class="rc-resources">
