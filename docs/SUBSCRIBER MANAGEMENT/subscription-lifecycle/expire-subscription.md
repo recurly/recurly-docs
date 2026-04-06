@@ -14,8 +14,6 @@ next:
 ---
 # Overview
 
-<Embed url="https://www.youtube.com/watch?v=jJsmG-2a95Y" href="https://www.youtube.com/watch?v=jJsmG-2a95Y" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FjJsmG-2a95Y%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DjJsmG-2a95Y%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FjJsmG-2a95Y%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
-
 ### Required plan
 
 This feature or setting is available to all customers on any Recurly subscription plan.
@@ -42,7 +40,7 @@ Subscriptions often run through various states during their lifecycle. They can 
 
 When a subscription is **cancelled**, it remains active for the duration of the subscription period in a 'pre-expiry' state, which means the customer still has the liberty to reactivate it before it moves to the **expired** state and access to the service is terminated. Once a subscription is in the expired state, it cannot be reactivated; a new subscription has to be initiated. Here, the differentiation between 'canceling' and 'terminating' becomes crucial. While cancellation leads to an eventual expiration at a pre-set future date, termination results in an immediate expiration.
 
-<Image align="center" alt={866} border={false} caption="Subscriptions can be cancelled at three different timeframes: immediately, next bill date, or term renewal." title="2019-09-04_0922.png" src="https://files.readme.io/9ebba7b-2019-09-04_0922.png" />
+<Image align="center" alt={866} caption="Subscriptions can be cancelled at three different timeframes: immediately, next bill date, or term renewal." title="2019-09-04_0922.png" src="https://files.readme.io/9ebba7b-2019-09-04_0922.png" />
 
 # Cancel a Subscription
 
