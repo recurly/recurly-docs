@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-<Image align="center" border={false} width="auto" src="https://files.readme.io/cdd6b9f-Vertex-Logo-Image_150.png" />
+<Image align="center" width="auto" src="https://files.readme.io/cdd6b9f-Vertex-Logo-Image_150.png" />
 
 # Overview
 
@@ -115,7 +115,7 @@ If you are not using Recurly Taxes powered by Avalara and have the Vertex featur
 * **Existing Subscribers, No Taxes Enabled:** If you have existing subscribers being invoiced through Recurly without taxes, you can connect your Vertex credentials without enabling tax jurisdictions. When you're ready to start taxing, enable the jurisdictions in Vertex, and invoices will automatically return tax.
 * **Existing Subscribers, Taxes Enabled:** If you're transitioning from Recurly Taxes powered by Avalara to Vertex, Vertex will default to taxing your customers based on the physical tax rate. Enable the jurisdictions in Vertex that match your current tax setup in Recurly and add your Vertex credentials. Invoices will start flowing to your Vertex account immediately. After the transition, you can configure advanced taxability rules and add new jurisdictions using the tax code field.
 
-### Vertex Transaction Type field
+### Vertex Transaction Type
 
 The Vertex Transaction Type field is a field only available for merchants with Vertex integrations, and requires a Recurly Support ticket to enable.
 
