@@ -40,6 +40,7 @@ metadata:
 .rc-metric-desc{font-size:.78rem;color:var(--gray);line-height:1.4}
 .rc-scorecard{background:var(--offblack);border-radius:14px;padding:22px 24px;margin-bottom:16px}
 .rc-scorecard h3{font-size:.96rem;font-weight:800;color:var(--orange);margin:0 0 14px}
+.rc-scorecard p{font-size:.87rem;color:#CCC9B8;line-height:1.5;margin-bottom:16px}
 .rc-score-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .rc-score-row:last-child{border-bottom:none}
 .rc-score-icon{font-size:16px;flex-shrink:0}
@@ -151,7 +152,8 @@ metadata:
     </div>
 
     <div class="rc-scorecard">
-      <h3>📋 Your Monthly Merchant Scorecard</h3>
+      <h3>📋 Your Monthly Metrics Scorecard</h3>
+      <p>Your Monthly Metrics Scorecard is a clear snapshot of your business health. It utilizes a two-month lookback (e.g., July data delivered in September) to ensure every dunning cycle and retry attempt has finalized, providing a true measure of your recovery and revenue. Each scorecard includes Year-over-Year comparisons and industry benchmarks to show exactly how you stack up.</p>
       <div class="rc-score-row"><span class="rc-score-icon">📈</span><span class="rc-score-label">Acquisition Rate</span><span class="rc-score-freq">Monthly</span></div>
       <div class="rc-score-row"><span class="rc-score-icon">⚡</span><span class="rc-score-label">Sign-Up Decline Rate</span><span class="rc-score-freq">Monthly</span></div>
       <div class="rc-score-row"><span class="rc-score-icon">👋</span><span class="rc-score-label">Voluntary Churn Rate</span><span class="rc-score-freq">Monthly</span></div>
@@ -160,11 +162,15 @@ metadata:
       <div class="rc-score-row"><span class="rc-score-icon">💰</span><span class="rc-score-label">Dunning Recovery Rate</span><span class="rc-score-freq">Monthly</span></div>
     </div>
 
+    <div class="rc-tip">
+      <strong>📅 Delivery Schedule:</strong> You will begin receiving your scorecard on the first Tuesday of each month once you are 90 days post-production (live in Recurly). You’ll learn much more about how to use this scorecard at the end of this learning path.
+    </div>
+
     <div class="rc-clip">
       <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
       <p class="rc-clip-title">Get a Headstart: Advanced Reporting Secrets</p>
       <p>Watch Director of Data Matthew Cryer demonstrate how to master the <strong>Trendalyzer</strong>, monitor <strong>hourly activations</strong>, and navigate the four layers of Recurly reporting to unlock non-obvious growth insights.</p>
-      <a class="rc-webinar-link" href="https://recurly.registration.goldcast.io/webinar/d07fd40b-4609-415e-ae84-cccc66998039" target="_blank" rel="noopener noreferrer">▶ Watch "Beyond the Dashboard" On-Demand →</a>
+      <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch "Beyond the Dashboard" On-Demand →</a>
     </div>
 
     <div class="rc-tip">
@@ -172,15 +178,15 @@ metadata:
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review">← Phase 1 Review</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-one-review">← Phase 1 Review</a>
       <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard">Step 1: Benchmarks &amp; Reporting →</a>
     </div>
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Metrics Cheatsheet</a>
-      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Chat with a Customer Support Manager</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
+      <a class="rc-link-btn" href="https://go.recurly.com/Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Metrics Cheatsheet</a>
+      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
     </div>
   </div>
 
