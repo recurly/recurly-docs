@@ -58,8 +58,8 @@ The following fields are available when creating a custom field definition:
 
 * **API Field Name:** This serves as the ID used in the API to reference the custom field. It should not contain spaces and can only consist of numbers, letters, dashes, and underscores.
 * **Recurly Object:** This determines the object on which the custom field is created, such as account, charge, item, plan, or subscription.
-* **Allow this field to show up on Invoices:** This determines if the custom field will be available to choose from when creating or editing an invoice template.
-* **Allow this field to show up in Exports:** This determines if the custom field will pulled onto an export related to the custom field's Recurly object.
+* **Allow this field to show up on Invoices:** When enabled, the custom field will appear in a variable picker inside of the invoice template editor.  If chosen, the custom field name and its value will appear on invoices.
+* **Allow this field to show up in Exports:** When enabled, the custom field will be pulled into exports associated with the Recurly object it belongs to.
 * **Admin Console Access:** This option controls the behavior of the field in the Recurly UI.
   * **Hidden in the admin console:** The field is only editable or viewable via the API.
   * **Read-only in the admin console:** The field is viewable in the UI but only editable through the API.
