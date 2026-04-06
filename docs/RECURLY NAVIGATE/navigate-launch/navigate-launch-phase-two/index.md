@@ -45,6 +45,12 @@ metadata:
 .rc-score-icon{font-size:16px;flex-shrink:0}
 .rc-score-label{font-size:.85rem;color:#CCC9B8;flex:1}
 .rc-score-freq{font-size:.78rem;color:#807D73}
+.rc-scorecard-summary{font-size:.87rem;color:#CCC9B8;line-height:1.6;margin-bottom:20px}
+.rc-sneak-peek{margin-top:20px;background:rgba(255,255,255,0.03);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,0.1)}
+.rc-crop-container{width:100%;height:180px;overflow:hidden;border-radius:6px;margin-top:10px;border:1px solid rgba(255,215,6,0.2)}
+.rc-crop-container img{width:160%;margin-left:-5%;margin-top:-5%;filter:contrast(1.1)}
+.rc-sneak-label{font-size:0.75rem;font-weight:800;color:var(--yellow);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:5px}
+
 .rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
 .rc-tip strong{color:var(--offblack)}
 .rc-clip{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:14px;padding:16px 18px;margin-bottom:16px}
@@ -105,7 +111,7 @@ metadata:
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Account Updater enabled</div>
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Branded emails &amp; invoices</div>
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Gateway Failover in place</div>
-        <p style="margin-top:10px">Phase 2 builds on that foundation — now you'll measure performance via Recurly Insights and spot growth opportunities.</p>
+        <p style="margin-top:10px">Phase 2 builds on that foundation — now you'll measure performance via <strong>Recurly Analytics</strong> and spot growth opportunities.</p>
       </div>
     </div>
 
@@ -113,7 +119,7 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Your 6 Core Benchmark Metrics</h2>
-        <p>Each metric reveals a different aspect of your health — from how well you're acquiring subscribers to how effectively you're recovering revenue via dunning.</p>
+        <p>These metrics reveal your business health — from how well you're acquiring subscribers to how effectively you're recovering revenue.</p>
       </div>
     </div>
 
@@ -141,7 +147,7 @@ metadata:
       <div class="rc-metric-card">
         <div class="rc-metric-num">✅</div>
         <div class="rc-metric-name">Renewal Paid Rate</div>
-        <div class="rc-metric-desc">% of renewal invoices collected successfully</div>
+        <div class="rc-metric-desc">% collected successfully at renewal</div>
       </div>
       <div class="rc-metric-card">
         <div class="rc-metric-num">💰</div>
@@ -152,27 +158,30 @@ metadata:
 
     <div class="rc-scorecard">
       <h3>📋 Your Monthly Metrics Scorecard</h3>
-      <div class="rc-score-row"><span class="rc-score-icon">📈</span><span class="rc-score-label">Acquisition Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">⚡</span><span class="rc-score-label">Sign-Up Decline Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">👋</span><span class="rc-score-label">Voluntary Churn Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">💳</span><span class="rc-score-label">Involuntary Churn Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">✅</span><span class="rc-score-label">Renewal Paid Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">💰</span><span class="rc-score-label">Dunning Recovery Rate</span><span class="rc-score-freq">Two-month lookback</span></div>
+      <p class="rc-scorecard-summary">The scorecard provides a complete snapshot of your last full fiscal month in Recurly so you can see your performance at a glance. You will begin receiving yours via email on the first Tuesday of each month once you are 90 days post-production (90 days after going live).</p>
+      
+      <div class="rc-score-row"><span class="rc-score-icon">📈</span><span class="rc-score-label">Acquisition & Decline</span><span class="rc-score-freq">Monthly</span></div>
+      <div class="rc-score-row"><span class="rc-score-icon">👋</span><span class="rc-score-label">Retention & Churn</span><span class="rc-score-freq">Monthly</span></div>
+      <div class="rc-score-row"><span class="rc-score-icon">💰</span><span class="rc-score-label">Revenue & Recovery</span><span class="rc-score-freq">Monthly</span></div>
+
+      <div class="rc-sneak-peek">
+        <span class="rc-sneak-label">✨ Sneak Peek</span>
+        <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers. You'll learn more about using this at the end of this learning path!</p>
+        <div class="rc-crop-container">
+          <img src="Monthly Merchant Score Card Sample.png" alt="Scorecard Preview">
+        </div>
+      </div>
     </div>
 
     <div class="rc-clip">
-      <div class="rc-clip-label">🎬 MONTHLY SCORECARD</div>
-      <p class="rc-clip-title">Your Monthly Metrics Scorecard</p>
-      <p>Designed to give you a complete snapshot of your last complete fiscal month's performance in Recurly at a glance, this scorecard is delivered on the first Tuesday of each month, starting 90 days after going live. It provides key metrics across growth, churn, and revenue recovery for a true measure of your business's health.</p>
-      <p style="font-size:0.9rem; font-weight:700; color:var(--offblack);">A Glimpse of Your Scorecard:</p>
-      <div style="width:100%; overflow:hidden;">
-        <img src="image_1.png" alt="Scorecard Panels Sneak Peek" style="width:100%; max-width:600px; display:block; object-fit: cover; object-position: 0 0; aspect-ratio: 16 / 9; clip-path: inset(0 60% 30% 0); margin: 0 auto;"/>
-      </div>
-      <p style="font-size:0.87rem; line-height:1.5; color:var(--gray); margin-top:8px;">You’ll learn much more about how to use this scorecard at the end of this learning path.</p>
+      <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
+      <p class="rc-clip-title">Get a Headstart: Advanced Reporting Secrets</p>
+      <p>Watch Director of Data Matthew Cryer demonstrate how to master the <strong>Trendalyzer</strong>, monitor <strong>hourly activations</strong>, and navigate the four layers of Recurly reporting to unlock non-obvious growth insights.</p>
+      <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank">▶ Watch "Beyond the Dashboard" On-Demand →</a>
     </div>
 
     <div class="rc-tip">
-      <strong>📅 Download the Metrics Cheatsheet:</strong> Before diving into the individual metrics, grab the Launchpad Metrics Cheatsheet. It lists every KPI definition, calculation formula, and what direction you want each metric to move — a quick reference for any time you're reviewing your Benchmarks Dashboard.
+      <strong>💡 Download the Metrics Cheatsheet:</strong> Before diving into the individual metrics, grab the Launchpad Metrics Cheatsheet. It lists every KPI definition, calculation formula, and what direction you want each metric to move.
     </div>
 
     <div class="rc-sec-nav">
@@ -182,8 +191,8 @@ metadata:
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://go.recurly.com/Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Metrics Cheatsheet</a>
-      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
+      <a class="rc-link-btn" href="https://go.recurly.com/Navigate-Metrics-Cheatsheet.html" target="_blank">⬇ Metrics Cheatsheet</a>
+      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank">🎧 Webinars On-Demand</a>
       <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
     </div>
   </div>
