@@ -161,14 +161,14 @@ metadata:
     </div>
 
     <div class="rc-clip">
-      <div class="rc-clip-label">🎬 Webinar Clip</div>
-      <p class="rc-clip-title">Beyond the Dashboard: Reporting That Drives Growth</p>
-      <p>Explore Recurly's reporting layers — from Analytics Dashboards and CSV Exports to Advanced Analytics and the AI Assistant.</p>
+      <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
+      <p class="rc-clip-title">Get a Headstart: Advanced Reporting Secrets</p>
+      <p>Watch Director of Data Matthew Cryer demonstrate how to master the <strong>Trendalyzer</strong>, monitor <strong>hourly activations</strong>, and navigate the four layers of Recurly reporting to unlock non-obvious growth insights.</p>
       <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch "Beyond the Dashboard" On-Demand →</a>
     </div>
 
     <div class="rc-tip">
-      <strong>💡 Download the Metrics Cheatsheet:</strong> Before diving into the individual metrics, grab the Launchpad Metrics Cheatsheet. It lists every KPI definition, calculation formula, and what direction you want each metric to move — a quick reference for any time you're reviewing your Benchmarks Dashboard.
+      <strong>💡 Download the Metrics Cheatsheet:</strong> Before diving into the individual metrics, grab the Launchpad Metrics Cheatsheet. It lists every KPI definition, calculation formula, and what direction you want each metric to move.
     </div>
 
     <div class="rc-sec-nav">
