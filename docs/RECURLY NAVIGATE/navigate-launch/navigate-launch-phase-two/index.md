@@ -40,16 +40,11 @@ metadata:
 .rc-metric-desc{font-size:.78rem;color:var(--gray);line-height:1.4}
 .rc-scorecard{background:var(--offblack);border-radius:14px;padding:22px 24px;margin-bottom:16px}
 .rc-scorecard h3{font-size:.96rem;font-weight:800;color:var(--orange);margin:0 0 14px}
-.rc-score-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.rc-score-row:last-child{border-bottom:none}
-.rc-score-icon{font-size:16px;flex-shrink:0}
-.rc-score-label{font-size:.85rem;color:#CCC9B8;flex:1}
-.rc-score-freq{font-size:.78rem;color:#807D73}
-.rc-scorecard-summary{font-size:.87rem;color:#CCC9B8;line-height:1.6;margin-bottom:20px}
-.rc-sneak-peek{margin-top:20px;background:rgba(255,255,255,0.03);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,0.1)}
-.rc-crop-container{width:100%;height:180px;overflow:hidden;border-radius:6px;margin-top:10px;border:1px solid rgba(255,215,6,0.2)}
-.rc-crop-container img{width:160%;margin-left:-5%;margin-top:-5%;filter:contrast(1.1)}
-.rc-sneak-label{font-size:0.75rem;font-weight:800;color:var(--yellow);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:5px}
+.rc-scorecard p{font-size:.87rem;color:#CCC9B8;line-height:1.6;margin-bottom:18px}
+.rc-sneak-peek{margin-top:24px;background:rgba(255,255,255,0.03);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,0.1)}
+.rc-crop-container{width:100%;height:180px;overflow:hidden;border-radius:6px;margin-top:12px;border:1px solid rgba(255,215,6,0.25);position:relative}
+.rc-crop-container img{position:absolute;width:150%;left:-5%;top:-10%;filter:contrast(1.05)}
+.rc-sneak-label{font-size:0.75rem;font-weight:800;color:var(--yellow);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:6px}
 
 .rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
 .rc-tip strong{color:var(--offblack)}
@@ -59,20 +54,12 @@ metadata:
 .rc-clip-title{font-size:.93rem;font-weight:700;color:var(--offblack);margin:0 0 6px}
 .rc-webinar-link{display:inline-flex;align-items:center;gap:6px;font-size:.83rem;font-weight:700;color:var(--orange);text-decoration:none}
 .rc-webinar-link:hover{text-decoration:underline}
-.rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
-.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
 .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
 .rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
 .rc-btn-prev{background:#fff;color:var(--darkgray)}
 .rc-btn-prev:hover{background:var(--brightgray);text-decoration:none}
 .rc-btn-next{background:var(--orange);color:#fff;border-color:var(--orange)}
 .rc-btn-next:hover{opacity:.92;text-decoration:none}
-.rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default;pointer-events:none}
-.rc-link-btn{background:var(--orange);color:#fff;border-color:var(--orange);margin:0 8px 8px 0}
-.rc-link-btn:hover{opacity:.9;text-decoration:none}
-.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
-.rc-link-sec:hover{background:var(--brightgray);text-decoration:none}
 .rc-resources{margin-top:32px}
 .rc-resources h3{font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);margin:0 0 12px}
 @media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-metric-row{grid-template-columns:1fr 1fr}.rc-hero-stats{gap:14px}.rc-sec-header{flex-direction:column}.rc-sec-nav{flex-direction:column;align-items:stretch}.rc-handoff-from{flex-direction:column}}
@@ -92,12 +79,12 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="#" class="rc-active"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
-    <a href="#"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
-    <a href="#"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
-    <a href="#"><span class="rc-snum">3</span>Churn Metrics</a>
-    <a href="#"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
-    <a href="#"><span class="rc-snum">✓</span>Full Course Review</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two" class="rc-active"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-acquisition-metrics"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
   </nav>
 
   <div class="rc-sec">
@@ -158,12 +145,8 @@ metadata:
 
     <div class="rc-scorecard">
       <h3>📋 Your Monthly Metrics Scorecard</h3>
-      <p class="rc-scorecard-summary">The scorecard provides a complete snapshot of your last full fiscal month in Recurly so you can see your performance at a glance. You will begin receiving yours via email on the first Tuesday of each month once you are 90 days post-production (90 days after going live).</p>
+      <p class="rc-scorecard-summary">The scorecard provides a complete snapshot of your last full fiscal month in Recurly so you can see your performance at a glance. You will begin receiving yours via email on the first Tuesday of each month, starting 90 days after going live.</p>
       
-      <div class="rc-score-row"><span class="rc-score-icon">📈</span><span class="rc-score-label">Acquisition & Decline</span><span class="rc-score-freq">Monthly</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">👋</span><span class="rc-score-label">Retention & Churn</span><span class="rc-score-freq">Monthly</span></div>
-      <div class="rc-score-row"><span class="rc-score-icon">💰</span><span class="rc-score-label">Revenue & Recovery</span><span class="rc-score-freq">Monthly</span></div>
-
       <div class="rc-sneak-peek">
         <span class="rc-sneak-label">✨ Sneak Peek</span>
         <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers. You'll learn more about using this at the end of this learning path!</p>
@@ -185,14 +168,14 @@ metadata:
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="#">← Phase 1 Review</a>
-      <a class="rc-btn-next" href="#">Step 1: Benchmarks &amp; Reporting →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-one-review">← Phase 1 Review</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard">Step 1: Benchmarks &amp; Reporting →</a>
     </div>
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://go.recurly.com/Navigate-Metrics-Cheatsheet.html" target="_blank">⬇ Metrics Cheatsheet</a>
-      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank">🎧 Webinars On-Demand</a>
+      <a class="rc-link-btn" href="https://go.recurly.com/Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Metrics Cheatsheet</a>
+      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
       <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
     </div>
   </div>
