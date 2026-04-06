@@ -52,12 +52,14 @@ To create a custom field definition, follow these steps:
 1. Navigate to Configuration→Custom Fields→Create Custom Field.
 2. You will be presented with a screen similar to the example below:
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/ab18b87-image.png" />
+<Image align="center" src="https://files.readme.io/c6597a7785a4c50599e49efdcd8c7d0913b628cc5450dae8a8d17d7c05ec2b0e-Screenshot_2026-04-06_at_12.48.11_PM.png" />
 
 The following fields are available when creating a custom field definition:
 
 * **API Field Name:** This serves as the ID used in the API to reference the custom field. It should not contain spaces and can only consist of numbers, letters, dashes, and underscores.
 * **Recurly Object:** This determines the object on which the custom field is created, such as account, charge, item, plan, or subscription.
+* **Allow this field ot show up on Invoices:**
+* **Allow this field to show up in Exports:**
 * **Admin Console Access:** This option controls the behavior of the field in the Recurly UI.
   * **Hidden in the admin console:** The field is only editable or viewable via the API.
   * **Read-only in the admin console:** The field is viewable in the UI but only editable through the API.
@@ -121,9 +123,9 @@ Custom Fields on an Account allow you to collect customer-specific information a
 
 When defining the custom field object, if you selected the option to make it editable in the UI, you can set the custom field values through the Recurly Account UI. You can create or edit an account and fill in the custom field values in the right-hand sidebar.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/34cac3a-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/34cac3a-image.png" className="border" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/183ba71-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/183ba71-image.png" className="border" />
 
 The custom field data will be displayed on the account record in the UI.
 
@@ -147,9 +149,9 @@ When defining the custom field object, if you selected the option to make it edi
 
 You can input the relevant data in the custom fields associated with the subscription.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a6866bc-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/a6866bc-image.png" className="border" />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/c91fe16-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/c91fe16-image.png" className="border" />
 
 # Custom fields on a plan
 
@@ -159,4 +161,4 @@ Recurly also enables the creation of custom field values for the Plan object. Th
 
 When defining the custom field object for a plan, you can choose to make it editable in the UI. This enables you to easily set the custom field values through the Admin UI when creating or editing a plan. Similarly, if the custom field is set as read-only in the UI, the field values can be viewed when viewing the plan but will not be editable on the edit plan screen.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/03df7c2-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/03df7c2-image.png" className="border" />
