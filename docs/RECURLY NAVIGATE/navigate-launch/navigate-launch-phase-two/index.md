@@ -151,7 +151,7 @@ metadata:
         <span class="rc-sneak-label">✨ Sneak Peek</span>
         <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers. You'll learn more about using this at the end of this learning path!</p>
         <div class="rc-crop-container">
-          <img src="Monthly Merchant Score Card Sample.png" alt="Scorecard Preview">
+          <img src="https://drive.google.com/file/d/1Ul0IRe6r-yrH7686My2aaLUjiOQjjqdg/view?usp=drive_linkg" alt="Scorecard Preview">
         </div>
       </div>
     </div>
