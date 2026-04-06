@@ -98,7 +98,7 @@ metadata:
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Account Updater enabled</div>
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Branded emails &amp; invoices</div>
         <div class="rc-check-row"><div class="rc-check-dot">✓</div>Gateway Failover in place</div>
-        <p style="margin-top:10px">Phase 2 builds on that foundation — now you'll measure performance via <strong>Recurly Analytics</strong> and spot growth opportunities.</p>
+        <p style="margin-top:10px">Phase 2 builds on that foundation — now you'll measure performance via <strong>Recurly Analytics</strong> and learn to spot growth opportunities.</p>
       </div>
     </div>
 
@@ -106,7 +106,7 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Your 6 Core Benchmark Metrics</h2>
-        <p>These metrics reveal your business health — from how well you're acquiring subscribers to how effectively you're recovering revenue.</p>
+        <p>During this course, we'll focus on the 6 key metrics that drive growth. These metrics reveal your business health — from how well you're acquiring subscribers to how effectively you're recovering revenue.</p>
       </div>
     </div>
 
@@ -145,7 +145,7 @@ metadata:
 
     <div class="rc-scorecard">
       <h3>📋 Your Monthly Metrics Scorecard</h3>
-      <p class="rc-scorecard-summary">The scorecard provides a complete snapshot of your last full fiscal month in Recurly so you can see your performance at a glance. You will begin receiving yours via email on the first Tuesday of each month, starting 90 days after going live.</p>
+      <p class="rc-scorecard-summary"><strong>What we're working towards:</strong> After you've completed Navigate Launchpad, you'll begin receiving your Monthly Metrics Scorecard, where you'll put everything you've learned in this phase to the task! The scorecard provides a complete snapshot of your last full fiscal month in Recurly so you can see your performance at a glance. You will begin receiving yours via email on the first Tuesday of each month, starting 90 days after going live.</p>
       
       <div class="rc-sneak-peek">
         <span class="rc-sneak-label">✨ Sneak Peek</span>
