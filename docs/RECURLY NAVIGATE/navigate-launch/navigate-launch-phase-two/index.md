@@ -147,11 +147,13 @@ metadata:
       <h3>📋 Your Monthly Metrics Scorecard</h3>
       <p class="rc-scorecard-summary"><strong>What we're working towards:</strong> After you've completed Navigate Launchpad, you'll begin receiving your Monthly Metrics Scorecard, where you'll put everything you've learned in this phase to the task! The scorecard provides a complete snapshot of your last full fiscal month in Recurly so you can see your performance at a glance. You will begin receiving yours via email on the first Tuesday of each month, starting 90 days after going live.</p>
       
-      <div class="rc-sneak-peek">
-        <span class="rc-sneak-label">✨ Sneak Peek</span>
-        <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers. You'll learn more about using this at the end of this learning path!</p>
+   <div class="rc-sneak-peek">
+        <div class="rc-sneak-text">
+          <span class="rc-sneak-label">✨ Sneak Peek</span>
+          <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers[cite: 29]. You'll learn more about using this at the end of this learning path!</p>
+        </div>
         <div class="rc-crop-container">
-          <img src="https://drive.google.com/file/d/1Ul0IRe6r-yrH7686My2aaLUjiOQjjqdg/view?usp=drive_linkg" alt="Scorecard Preview">
+          <img src="https://drive.google.com/uc?export=view&id=1Ul0IRe6r-yrH7686My2aaLUjiOQjjqdg" alt="Scorecard Preview">
         </div>
       </div>
     </div>
