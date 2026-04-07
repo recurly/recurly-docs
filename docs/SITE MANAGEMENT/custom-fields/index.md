@@ -99,8 +99,6 @@ Custom Fields on an Account allow you to collect customer-specific information a
 
 When defining an account custom field object, if you selected the **Editable in the admin console** option, you can set the custom field value when creating or editing an account.  Once the account is created or updated, the custom field and its value will appear within Account Information. 
 
-<Image align="center" width="40% " src="https://files.readme.io/3ae4b1ca2d6322703e5626aa97b058a6bbe5f4aae0b81f2e4e07426dddba68ed-Screenshot_2026-04-07_at_12.54.26_PM.png" />
-
 # Custom fields on charges
 
 Custom Fields on Charges allow you to set custom values on non-subscription line item charges or credits. This feature enables you to add additional context for charges and even allows you to conditionally tailor your email communications based on these custom field values.
@@ -118,3 +116,15 @@ When defining the custom field object, if you selected the **Editable in the adm
 Plan custom fields offer a versatile means to customize your plans according to precise requirements. For instance, a custom field on a plan could be used to highlight available upgrade or downgrade options. It can also be used to dictate rules for integrations with external systems like NetSuite. Additionally, a custom field can serve as an attribute to link a plan to a specific group of plans, or to showcase exclusive offers for that plan, such as professional support. This adds an extra layer of personalization and flexibility to your offerings.
 
 When defining the custom field object, if you selected the **Editable in the admin console** option, you can set the custom field value when creating or editing a plan.
+
+# Custom fields on invoices
+
+Each type of custom field and its value can be made available to invoices by selecting the **Allow this field to show up on Invoices** option.  This will allow the custom field to be selected when creating or editing an invoice template.    Once saved to an invoice template, any time that custom field is invoked, it will be displayed on invoices.  
+
+Account custom fields will display at the bottom of the "Bill to" section while all other custom fields types (plan, subscription, item, and charge) will be displayed within the invoice line item that it's associated to.
+
+If a custom field is removed from an invoice template, any future invoice will no longer show that custom field and its value.
+
+<Image align="center" src="https://files.readme.io/180aec66e4c19a4c0e1757216be9838198ddfb244b0f45f7e392d835c97c0b91-Screenshot_2026-04-07_at_1.32.48_PM.png" />
+
+**need screenshot of invoice w/ CFs**
