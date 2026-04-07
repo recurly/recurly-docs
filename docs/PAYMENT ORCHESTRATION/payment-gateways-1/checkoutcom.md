@@ -58,7 +58,7 @@ For pricing and signup information for a new production Checkout.com account, pl
 
 To enable seamless communication between Recurly and your Checkout.com account, it is essential to configure your API credentials within Recurly.
 
-### Step 1: Obtain your Checkout.com credentials
+## Step 1: Obtain your Checkout.com credentials
 
 * You'll need to obtain your credentials from your Checkout.com account directly, and ensure you have them available for entry in Step 2.
   * **Sign in** to your Checkout.com dashboard and click **Developers** from the top navigation and click **Keys**.
@@ -71,14 +71,14 @@ To enable seamless communication between Recurly and your Checkout.com account, 
   * Your Acquirer Country
 * To create your Source Verification Key, you must set up Webhooks within Checkout. Proceed to Step 2.
 
-### Step 2: Configure webhooks in Checkout.com
+## Step 2: Configure webhooks in Checkout.com
 
 * **Navigate** to **Developers > Webhooks** and select 'Create configuration'.
-* **Enter** a descriptive name, and the webhook destination URL as follows: https://callbacks.recurly.com/checkout/merchant-subdomain,  replacing  "merchant-subdomain" with your Recurly site's actual subdomain. Example: If your Recurly subdomain is '**mywebsite**', you would enter `https://callbacks.recurly.com/checkout/mywebsite in this configuration.
+* **Enter** a descriptive name, and the webhook destination URL as follows: [https://callbacks.recurly.com/checkout/merchant-subdomain](https://callbacks.recurly.com/checkout/merchant-subdomain),  replacing  "merchant-subdomain" with your Recurly site's actual subdomain. Example: If your Recurly subdomain is '**mywebsite**', you would enter `[https://callbacks.recurly.com/checkout/mywebsite](https://callbacks.recurly.com/checkout/mywebsite) in this configuration.
 * You will select specific event types. To avoid having to make changes in the future, simply select all events. At minimum ensure you have payment events and dispute events.
 * **Keep** your Signature key (Source Verification Key) for setup inside Recurly.
 
-### Step 3: Enter your Checkout.com credentials in your Recurly site
+## Step 3: Enter your Checkout.com credentials in your Recurly site
 
 * **Navigate** to **Configuration > Payment Gateways**and **Select** Checkout.com from the options available.
 * **Enter** the details you've obtained from your Checkout.com configuration into the following fields:
@@ -87,7 +87,7 @@ To enable seamless communication between Recurly and your Checkout.com account, 
   * Your API Secret Key
   * Your Source Verification Key
 
-### Step 4: Enable 3D Secure
+## Step 4: Enable 3D Secure
 
 If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well as enter the following details.
 
@@ -96,19 +96,19 @@ If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well 
 * Your Acquirer BIN, Acquirer Merchant ID, and Acquirer Country.
 * You can obtain these by speaking to Checkout.com directly.
 
-### Step 5: Enable Currencies
+## Step 5: Enable Currencies
 
 You can add as well as **change** which currencies your Checkout.com gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/c4a227a-image.png" className="border" />
 
-### Step 6: Add or Update your gateway
+## Step 6: Add or Update your gateway
 
 Once your configuration is set up the way you would prefer, **click** ‘Add Payment Gateway’. If you are editing your implementation, the button will state ‘Update Payment Gateway’.
 
-## Additional Configuration
+# Additional Configuration
 
-### Address and Card Code Verification Enablement
+## Address and Card Code Verification Enablement
 
 If you haven't already, you can block mismatched Address and CVV code results on approved transactions, by configuring rules in **Configuration → Payment Settings**. If ‘Enabled’, if Recurly receives information in the transaction response that the Address or CVV provided does not match what the Issuer has on file, the transaction will be rejected. **Please note**, these settings apply to all supported gateways and will not be Checkout.com specific.
 
@@ -128,14 +128,14 @@ If you haven't already, you can block mismatched Address and CVV code results on
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/9306094-image.png" className="border" />
 
-### Test your integration
+## Test your integration
 
 1. In your Recurly account, **navigate** to `Configuration → Payment Gateways`.
 2. Choose your new Checkout.com integration and click **Click** on `Options > Test Configuration` to ensure that Recurly can successfully communicate with your Checkout.com account.
 
    If you have provided your credentials correctly, you will see a confirmation message.
 
-### Go Live!
+## Go Live!
 
 1. Once you’ve successfully tested the integration, you are ready to accept real transactions.
 2. Monitor your transactions in Recurly and  Checkout.com to ensure everything is working smoothly.
@@ -144,7 +144,7 @@ If you haven't already, you can block mismatched Address and CVV code results on
 
 This guide is designed to walk you through the process of integrating  Checkout.com with Recurly, configuring key features, and ensuring that everything is set up to start processing payments securely and efficiently. Always consult with your Checkout.com representative or Recurly support for any specific questions or issues related to your integration.
 
-## Production and Sandbox behavior
+# Production and Sandbox behavior
 
 Production and Sandbox environments are entirely different endpoints and systems. If you create a Checkout.com gateway account while your site is in Production or Sandbox mode, you can control whether or not these transactions are using the sandbox / production endpoints easily.
 
