@@ -59,32 +59,46 @@ This pie chart breaks down your transactions by payment method, showing both the
 
 <Image align="center" border={true} src="https://files.readme.io/f4fc23849d6d7ace0f1b444353c650cb332fb4d6b21fb56ce12e908aca533366-image.png" className="border" />
 
+## Overall Success Rate
+
+This card displays total success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. The accompanying dollar volume ties that rate to real revenue impact, helping you understand not just how often payments succeed, but what that success is worth.
+
+<Image align="center" border={true} width="125px" src="https://files.readme.io/458923687c55700f219d8ea185f5dc487ee614102c1a44fd378d0c21d19dd8af-image.png" className="border" />
+
+<br />
+
 ## CIT Success Rate
 
-This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. The accompanying dollar volume ties that rate to real revenue impact, helping you understand not just how often payments succeed, but what that success is worth.
+This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. 
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/71bd7867f737cd211dde48a5a7765df6cc29aeb2876c1b25bd7f2891266270d4-image.png" className="border" />
 
 ## MIT Success Rate
 
-This card displays your Merchant Initiated Transaction (MIT) success rate — typically reflecting the health of your subscription renewals — as a single at-a-glance percentage, paired with a month-over-month trend indicator to show whether auth rates are improving or declining. The accompanying dollar volume connects that rate to real recurring revenue impact, helping you understand the direct relationship between renewal success and bottom-line performance.
+This card displays your Merchant Initiated Transaction (MIT) success rate — typically reflecting the health of your subscription renewals — as a single at-a-glance percentage, paired with a month-over-month trend indicator to show whether auth rates are improving or declining. 
 
-## Account Updater
+<Image align="center" border={true} width="125px" src="https://files.readme.io/6e05af1f178f3119d3bc13ef56cebda36281f2b73750922e8313cda76af2e53f-image.png" className="border" />
 
-<Image align="center" border={true} width="150px" src="https://files.readme.io/3191a83edb3347b5ccb03fb868f6b8d66ba758002dfd1b0be59bdff7f5c71717-image.png" className="border" />
+<br />
+
+## Payments Authorized on Updated Cards
 
 This card displays the total dollar amount of revenue retained through Account Updater — reflecting payments that were saved as a result of an automated card update — alongside a month-over-month percentage change so you can track the service's growing impact over time. A retention lift percentage ties it all together, showing you the direct effect Account Updater is having on keeping customers active and payments flowing.
 
-<Image align="center" border={true} width="150px" src="https://files.readme.io/78063be561d57fbd8e42fb20ca88aab44b79782870c5f2845a6346abd954680f-image.png" className="border" />
+<br />
 
-## Recovered Revenue
+<Image align="center" border={true} width="200px" src="https://files.readme.io/d54f5d75b7e31d94973fa32c0ebb3821704996866ee2e60087edd4a0f42f16df-image.png" className="border" />
+
+# Payment Retry Recovered Revenue
 
 This card displays the total dollar amount recovered through Payment Retries — representing renewal revenue that would have otherwise been lost to failed transactions — alongside a month-over-month percentage change to show how retry performance is trending over time.
 
-<Image align="center" border={true} width="150px" src="https://files.readme.io/c8fa98ca9488b5e323e9c5a000de671a43b35bc4133584d44473a6d9b0f3b5bc-image.png" className="border" />
+<Image align="center" border={true} width="200px" src="https://files.readme.io/c25bedac148aa9ad8957a19cedbd4390a4619d3f1339ff90111b96d8a33186d3-image.png" className="border" />
 
-## Fraud Prevention
+## Transactions Blocked (Fraud)
 
 This card displays the total count of blocked fraudulent transactions alongside a month-over-month percentage change to show how your fraud protection is performing over time. The accompanying dollar amount reflects the value of those blocked transactions, giving you a tangible measure of how much potential fraud exposure Kount is protecting your business from.
 
-<Image align="center" border={true} width="150px" src="https://files.readme.io/2d22d2dbc779d4af684bf2d962eb8d02203829244f1bb54cc7033e863c606cde-image.png" className="border" />
+<Image align="center" border={true} width="150px" src="https://files.readme.io/e2ec937efbb82bd0f40e3a13fc9dd7302e26b9bea0c872b429f8e19ac9f74feb-image.png" className="border" />
+
+<br />
