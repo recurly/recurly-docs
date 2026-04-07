@@ -61,11 +61,9 @@ This pie chart breaks down your transactions by payment method, showing both the
 
 ## Overall Success Rate
 
-This card displays total success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. The accompanying dollar volume ties that rate to real revenue impact, helping you understand not just how often payments succeed, but what that success is worth.
+This card displays total success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. 
 
 <Image align="center" border={true} width="125px" src="https://files.readme.io/458923687c55700f219d8ea185f5dc487ee614102c1a44fd378d0c21d19dd8af-image.png" className="border" />
-
-<br />
 
 ## CIT Success Rate
 
