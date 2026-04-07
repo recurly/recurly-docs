@@ -97,8 +97,6 @@ To delete a custom field definition, follow these steps:
 
 Custom Fields on an Account allow you to collect customer-specific information and add context to the Account object. You can create custom field values to track data such as subscriber ID from other business systems, sales representative name, channel partner name, subscriber segment, or subscriber region. These custom fields provide valuable insights and help you better understand and categorize your customer accounts.
 
-## Recurly account
-
 When defining an account custom field object, if you selected the **Editable in the admin console** option, you can set the custom field value when creating or editing an account.  Once the account is created or updated, the custom field and its value will appear within Account Information. 
 
 <Image align="center" width="40% " src="https://files.readme.io/3ae4b1ca2d6322703e5626aa97b058a6bbe5f4aae0b81f2e4e07426dddba68ed-Screenshot_2026-04-07_at_12.54.26_PM.png" />
