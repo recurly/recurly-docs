@@ -63,13 +63,13 @@ Payment Success Rates over Time tracks your overall Payment Success Rate over an
 
 The Payment method distribution chart breaks down every payment method accepted on your site, showing the relative distribution of transactions across each — giving you an instant read on how your customers prefer to pay.
 
-<Image align="center" border={true} width="600px" src="https://files.readme.io/94818c703ad263f07d13d84d5882e7a9e24e4aa002849ce070de100360e67f64-image.png" className="border" />
+<Image align="center" border={true} width="500px" src="https://files.readme.io/94818c703ad263f07d13d84d5882e7a9e24e4aa002849ce070de100360e67f64-image.png" className="border" />
 
 ## Gateway Success Rates
 
 The Gateway Success Rates graph breaks down payment success rates by gateway, giving you a side-by-side comparison of how each PSP is performing within your selected timeframe. Seeing performance isolated by gateway makes it easy to identify underperforming routing paths and validate the impact of gateway changes.
 
-<Image align="center" border={true} width="600px" src="https://files.readme.io/48ebddecf5835a2db4a12d9177557e6dfde9a82d018feed42d9a77020a0ea414-image.png" className="border" />
+<Image align="center" border={true} width="500px" src="https://files.readme.io/48ebddecf5835a2db4a12d9177557e6dfde9a82d018feed42d9a77020a0ea414-image.png" className="border" />
 
 ## Payment Method Success Rates
 
@@ -86,3 +86,5 @@ The Card BIN Success Rates card breaks down payment success rates by card BIN, s
 ## Payment Decline Reasons
 
 This table surfaces your top payment decline reasons, categorized by hard or soft decline type, and ranked by count, percentage, and associated dollar volume — giving you a comprehensive view of where and why payments are failing. Distinguishing between hard and soft declines is critical, as soft declines often represent recoverable revenue through retries or account updates, while hard declines signal issues that require a more targeted intervention such as routing changes or issuer outreach.
+
+![](https://files.readme.io/302a66680267fc9b881d268cd253f510d114bd025429077b0060fea18773f7d5-image.png)
