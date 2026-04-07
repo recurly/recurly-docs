@@ -35,7 +35,7 @@ Free trials can be defined within Recurly's system in terms of days or months, w
 
 ## Free trials
 
-<Image align="center" border={true} src="https://files.readme.io/75c3fc8f55da02d98408fbf6e88a53d1e15f84d7f265ea4303d4d2166e88c9d2-Screenshot_2025-01-16_at_11.46.09_AM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b3456541efd2938c0607bb440d3b5176b6884337f18b628a7f6ff86037ae4833-image.png" className="border" />
 
 Recurly's plans offer the flexibility to include an optional trial period, which can be defined in either days or months. This allows potential customers to try out your service before committing to a paid subscription. At the end of the trial period, the subscription will automatically convert to a paid one, facilitating a smooth transition for your subscribers.
 
@@ -57,7 +57,7 @@ If a subscription is created with a start date in the past and it has a free tri
 
 Recurly provides the option to either require or bypass billing information for free trials at the plan level. This setting is accessible when creating a plan with a trial period. Please note that when a plan has a set up fee, the fee is charged immediately. If you don't want to require billing information for your free trial, a coupon, gift card, or other credits can be used to cover the cost of the setup fee, allowing you to bypass the billing information step.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/bc00048702aa2e00372aedce44a3db3fc7be465806884452bd728790045ab736-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b8694653d92f04020cd46c0f62647a3f4ba7ac55375c4cb00628dd00ba5ac2ab-image.png" className="border" />
 
 Free trial coupons can be used on any plan. However, the plan's billing requirement setting determines if the billing information needs to be presented.
 
