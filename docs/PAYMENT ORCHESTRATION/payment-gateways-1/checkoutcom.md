@@ -19,7 +19,7 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Requirements 
+### Requirements
 
 * Ensure you have your Business Entity Merchant Category Code filled in properly.
 
@@ -74,7 +74,7 @@ To enable seamless communication between Recurly and your Checkout.com account, 
 ### Step 2: Configure webhooks in Checkout.com
 
 * **Navigate** to **Developers > Webhooks** and select 'Create configuration'.
-* **Enter** a descriptive name, and the webhook destination URL as follows: [https://callbacks.recurly.com/checkout/\{\{your-subdomain}}](https://callbacks.recurly.com/checkout/\{\{your-subdomain}})
+* **Enter** a descriptive name, and the webhook destination URL as follows: https://callbacks.recurly.com/checkout/merchant-subdomain,  replacing  "merchant-subdomain" with your Recurly site's actual subdomain. Example: If your Recurly subdomain is '**mywebsite**', you would enter `https://callbacks.recurly.com/checkout/mywebsite in this configuration.
 * You will select specific event types. To avoid having to make changes in the future, simply select all events. At minimum ensure you have payment events and dispute events.
 * **Keep** your Signature key (Source Verification Key) for setup inside Recurly.
 
