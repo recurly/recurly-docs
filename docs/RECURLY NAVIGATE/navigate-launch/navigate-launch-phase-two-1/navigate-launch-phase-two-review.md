@@ -21,11 +21,14 @@ metadata:
 .rc-nav a.rc-active{background:var(--orange);border-color:var(--orange);color:#fff}
 .rc-snum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--offblack);color:var(--orange);font-size:11px;font-weight:800;flex-shrink:0}
 .rc-nav a.rc-active .rc-snum{background:rgba(255,255,255,.2);color:#fff}
+
 .rc-sec{margin-bottom:48px}
-.rc-sec-header{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px}
+/* Reverted title size and added spacing for the section transition */
+.rc-sec-header-next{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px;margin-top:60px;padding-top:40px;border-top:1px solid var(--brightgray)}
 .rc-sec-icon{width:52px;height:52px;border-radius:14px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
-.rc-sec-header h2{font-size:1.45rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
-.rc-sec-header p{font-size:.9rem;color:var(--gray);margin:0;line-height:1.6}
+.rc-sec-header-next h2{font-size:1.45rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
+.rc-sec-header-next p{font-size:.9rem;color:var(--gray);margin:0;line-height:1.6}
+
 .rc-card{background:#fff;border:1px solid var(--lightgray);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 6px rgba(13,13,11,.04)}
 .rc-subhead{font-size:.98rem;font-weight:800;color:var(--offblack);margin:0 0 10px}
 .rc-celebration{background:linear-gradient(135deg,var(--offblack) 0%,#1a0f00 100%);border-radius:16px;padding:44px 36px;text-align:center;margin-bottom:28px;border:2px solid rgba(255,130,0,.3)}
@@ -56,11 +59,14 @@ metadata:
 .rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
 .rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
 .rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
-.rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:48px;font-size:.85rem}
-.rc-kpi-table th{background:var(--offblack);color:#FFFFFF !important;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;padding:12px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)}
+
+/* Table Visibility & Spacing Fix */
+.rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:.85rem}
+.rc-kpi-table th{background:var(--offblack);color:#FFFFFF !important;font-size:.75rem;font-weight: 800;text-transform:uppercase;letter-spacing:.5px;padding:12px 14px;text-align:left;border-bottom: 2px solid rgba(255,255,255,0.1);}
 .rc-kpi-table td{padding:10px 14px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);vertical-align:top}
 .rc-kpi-table tr:last-child td{border-bottom:none}
 .rc-kpi-table tr:nth-child(even) td{background:var(--offwhite)}
+
 .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
 .rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
 .rc-btn-prev{background:#fff;color:var(--darkgray)}
@@ -76,7 +82,7 @@ metadata:
 .rc-link-yellow:hover{opacity:.9;text-decoration:none}
 .rc-resources{margin-top:32px}
 .rc-resources h3{font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);margin:0 0 12px}
-@media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-two-phase,.rc-next-grid{grid-template-columns:1fr}.rc-hero-stats{gap:14px}.rc-sec-header{flex-direction:column}.rc-sec-nav{flex-direction:column;align-items:stretch}}
+@media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-two-phase,.rc-next-grid{grid-template-columns:1fr}.rc-hero-stats{gap:14px}.rc-sec-header-next{flex-direction:column; margin-top:40px; padding-top:20px}.rc-sec-nav{flex-direction:column;align-items:stretch}}
 </style>
 
 <div class="rc-guide">
@@ -178,7 +184,7 @@ metadata:
       </tbody>
     </table>
 
-    <div class="rc-sec-header">
+    <div class="rc-sec-header-next">
       <div class="rc-sec-icon" style="background:var(--orange)">🚀</div>
       <div>
         <h2>What Comes Next</h2>
@@ -210,7 +216,7 @@ metadata:
       <div class="rc-next-card">
         <h4>🎓 Proactive Learning Paths</h4>
         <p>Keep an eye on your inbox! We will proactively provide additional <strong>Navigate Learning Paths</strong> tailored to your individual progress and performance in Recurly.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="mailto:RecurlyNavigate@Recurly.com?subject=Add%20to%20Contacts">Whitelist Our Email</a>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="mailto:RecurlyNavigate@Recurly.com?subject=Whitelist%20Recurly%20Navigate">Whitelist Our Email</a>
       </div>
     </div>
 
