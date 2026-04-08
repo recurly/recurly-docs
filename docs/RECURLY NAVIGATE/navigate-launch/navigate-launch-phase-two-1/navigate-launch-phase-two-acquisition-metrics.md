@@ -133,9 +133,9 @@ metadata:
     </div>
 
     <div class="rc-clip">
-      <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
-      <p class="rc-clip-title">Get a Headstart: Optimizing Checkout Approval</p>
-      <p>Watch Strategic CSM Dan Shipley explain how to use the <strong>Sign-Up Decline Benchmark</strong> as an early indicator of fraud attacks (like card testing) or gateway friction. Learn why lower decline rates lead to higher acquisition and how to compare gateway performance to find the best route for your transactions.</p>
+      <div class="rc-clip-label">🎬 Where in the Webinar?</div>
+      <p class="rc-clip-title">Deep Dive: Spotting Fraud & Early Friction Indicators</p>
+      <p>Fast-forward to the <strong>Sign-Up Decline Benchmarks</strong> section of this session. Strategic CSM Dan Shipley demonstrates how to use this report to spot card-testing fraud attacks (look for the sudden 500% spikes) and explains how to side-by-side compare gateway performance to optimize your checkout approval rates.</p>
       <a class="rc-webinar-link" href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer">▶ Watch "Stack Up Against the Competition" On-Demand →</a>
     </div>
 
