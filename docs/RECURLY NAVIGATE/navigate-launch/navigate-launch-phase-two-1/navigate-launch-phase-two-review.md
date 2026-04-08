@@ -56,11 +56,14 @@ metadata:
 .rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
 .rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
 .rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
+
+/* Table Visibility Fix */
 .rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:.85rem}
-.rc-kpi-table th{background:var(--offblack);color:var(--brightgray);font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left}
+.rc-kpi-table th{background:var(--offblack);color:#FFFFFF !important;font-size:.75rem;font-weight: 800;text-transform:uppercase;letter-spacing:.5px;padding:12px 14px;text-align:left;border-bottom: 2px solid rgba(255,255,255,0.1);}
 .rc-kpi-table td{padding:10px 14px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);vertical-align:top}
 .rc-kpi-table tr:last-child td{border-bottom:none}
 .rc-kpi-table tr:nth-child(even) td{background:var(--offwhite)}
+
 .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
 .rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
 .rc-btn-prev{background:#fff;color:var(--darkgray)}
@@ -209,8 +212,8 @@ metadata:
     </div>
 
     <div class="rc-card" style="margin-top:24px;">
-      <p class="rc-subhead">📋 Revisiting Your Monthly Metrics Scorecard</p>
-      <p style="font-size:.87rem; color:var(--gray); line-height:1.6; margin-bottom:16px;">Watch this trail guide as it walks you step-by-step through your Monthly Metrics Scorecard. You will begin receiving your personalized snapshot via email on the <strong>second Tuesday of the month</strong> after you have been in production for <strong>90 days</strong>.</p>
+      <p class="rc-subhead">📋 Understanding Your Monthly Metrics Scorecard</p>
+      <p style="font-size:.87rem; color:var(--gray); line-height:1.6; margin-bottom:16px;"><strong>Watch this trail guide</strong> as it walks you step-by-step through your Monthly Metrics Scorecard. You will begin receiving your personalized snapshot via email on the <strong>second Tuesday of the month</strong> after you have been in production for <strong>90 days</strong>.</p>
       <div class="rc-video-wrap">
         <iframe src="https://share.synthesia.io/embeds/videos/a9ab0aa1-ef60-4b08-aaa8-95c0275e245f" loading="lazy" title="Understanding Your Monthly Metrics Scorecard" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
