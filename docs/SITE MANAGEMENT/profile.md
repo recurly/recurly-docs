@@ -38,7 +38,11 @@ To manage your personal information and security settings, click on your name in
 
 This section displays your personal information. At any time, you may update your full name, email, job function, and time zone. Simply **click** on “Edit Personal Info”, and you will be prompted to enter the necessary changes.
 
-<br />
+<Image align="center" border={true} src="https://files.readme.io/130ca17bc8b119f1342f3a35c8a201f16b2958eb366767545061e1489ae551b7-Screenshot_2026-04-08_at_8.57.47_AM.png" className="border" />
+
+You may also choose from three appearance settings on this page: Auto (default), Light, or Dark. The Auto setting will automatically match the your operating system theme preference.
+
+<Image align="center" border={true} src="https://files.readme.io/f2fbb79f20e236dee34d8b62efc8f5148a1a99dfd444ff0c8fce836c8134ba78-Screenshot_2026-04-08_at_9.08.03_AM.png" className="border" />
 
 # Account security settings
 
