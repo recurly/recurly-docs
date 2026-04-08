@@ -40,10 +40,8 @@ metadata:
 .rc-pill.down{background:rgba(220,38,38,.1);color:#dc2626;border-color:#fca5a5}
 .rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
 .rc-tip strong{color:var(--offblack)}
-.rc-warning{background:#fff5f0;border:1px solid #ffb894;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
-.rc-warning strong{color:#cc4400}
 .rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
-.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
 .rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
 .rc-clip{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:14px;padding:16px 18px;margin-bottom:16px}
 .rc-clip-label{display:inline-flex;align-items:center;gap:5px;background:var(--offblack);color:var(--orange);border-radius:6px;padding:3px 10px;font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
@@ -58,7 +56,6 @@ metadata:
 .rc-btn-prev:hover{background:var(--brightgray);text-decoration:none}
 .rc-btn-next{background:var(--orange);color:#fff;border-color:var(--orange)}
 .rc-btn-next:hover{opacity:.92;text-decoration:none}
-.rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default;pointer-events:none}
 .rc-link-btn{background:var(--orange);color:#fff;border-color:var(--orange);margin:0 8px 8px 0}
 .rc-link-btn:hover{opacity:.9;text-decoration:none}
 .rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
@@ -82,29 +79,29 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-acquisition-metrics" class="rc-active"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-active"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
   </nav>
 
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📈</div>
       <div>
-        <h2>Growth Starts at the Top of the Funnel</h2>
-        <p>Acquisition Rate and Sign-Up Decline Rate are your two growth-layer metrics. Together they tell you how fast your subscriber base is expanding — and how many potential subscribers are being lost before they ever complete their first payment.</p>
+        <h2>Growth Starts at the Funnel Top</h2>
+        <p>Acquisition Rate and Sign-Up Decline Rate are your growth-layer metrics. Together they reveal how fast your base is expanding — and how many potential subscribers are lost before completing their first payment.</p>
       </div>
     </div>
 
     <div class="rc-card">
       <p class="rc-subhead">▶ Trail Guide: Subscriber Acquisition &amp; Sign-Up Decline Rate</p>
       <div class="rc-video-wrap">
-        <iframe src="https://drive.google.com/file/d/[ACQUISITION-VIDEO-ID]/preview" allow="autoplay" allowfullscreen></iframe>
+        <iframe src="https://share.synthesia.io/embeds/videos/e30354c7-9177-452e-a306-450a0471fd50" loading="lazy" title="Navigate Launchpad — Acquisition & Decline" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
-      <p class="rc-video-cap">A deep dive into Acquisition Rate and Sign-Up Decline Rate — where to find them in the Benchmarks Dashboard, how they're calculated, and how to act on what you see.</p>
+      <p class="rc-video-cap">A deep dive into Acquisition and Sign-Up Decline — where to find them in the Benchmarks Dashboard and how to calculate and act on them.</p>
     </div>
 
     <div class="rc-metric">
@@ -112,12 +109,12 @@ metadata:
         <div class="rc-metric-icon">📈</div>
         <h3>Acquisition Rate</h3>
       </div>
-      <p>Measures how effectively you're bringing in new paid subscribers each month. A rising acquisition rate means your growth strategy is working. A flat or declining rate signals a need to investigate marketing, pricing, or checkout conversion.</p>
-      <div class="rc-formula">New paid subscribers ÷ Total paid subscribers = Acquisition Rate %</div>
+      <p>Measures how effectively you're bringing in new paid subscribers each month. A rising acquisition rate means your growth strategy is working. A declining rate signals a need to investigate marketing, pricing, or checkout conversion.</p>
+      <div class="rc-formula">New paid subscribers ÷ Active subscribers (start of period) = Acquisition Rate %</div>
       <div class="rc-pills">
         <span class="rc-pill up">↑ Higher is better</span>
         <span class="rc-pill">Check monthly</span>
-        <span class="rc-pill">Analytics → Benchmarks</span>
+        <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
       </div>
     </div>
 
@@ -126,20 +123,20 @@ metadata:
         <div class="rc-metric-icon">⚡</div>
         <h3>Sign-Up Decline Rate</h3>
       </div>
-      <p>The percentage of first transaction attempts during sign-up that are declined. A high sign-up decline rate means real customers are trying to sign up and failing — these aren't rejections, they're missed conversions. Even a 1% improvement can meaningfully impact growth.</p>
-      <div class="rc-formula">Failed first-attempt sign-ups ÷ Total sign-up attempts = Sign-Up Decline Rate %</div>
+      <p>The percentage of transaction attempts during sign-up that are declined. A high rate means real customers are trying to sign up and failing — these are missed conversions. Recurly ignores retries in this metric to give you a clear approval signal.</p>
+      <div class="rc-formula">Failed transaction attempts ÷ Total sign-up attempts = Sign-Up Decline Rate %</div>
       <div class="rc-pills">
         <span class="rc-pill down">↓ Lower is better</span>
         <span class="rc-pill">Check monthly</span>
-        <span class="rc-pill">Analytics → Benchmarks</span>
+        <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
       </div>
     </div>
 
     <div class="rc-clip">
-      <div class="rc-clip-label">🎬 Webinar Clip</div>
-      <p class="rc-clip-title">Sign-Up Decline Rate: What a Spike Tells You About Your Checkout</p>
-      <p>Suggested clip: The Sign-Up Decline Benchmarks section from this webinar — covering how to spot fraud via checkout (a 500% spike in fraud responses), how to compare gateway performance for sign-ups, and how to identify card-type-specific issues. Presenter: Daniel Shipley.</p>
-      <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch "Stack Up Against the Competition" On-Demand →</a>
+      <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
+      <p class="rc-clip-title">Get a Headstart: Optimizing Checkout Approval</p>
+      <p>Watch Strategic CSM Dan Shipley explain how to use the <strong>Sign-Up Decline Benchmark</strong> as an early indicator of fraud attacks (like card testing) or gateway friction. Learn why lower decline rates lead to higher acquisition and how to compare gateway performance to find the best route for your transactions.</p>
+      <a class="rc-webinar-link" href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer">▶ Watch "Stack Up Against the Competition" On-Demand →</a>
     </div>
 
     <div class="rc-card">
@@ -147,37 +144,37 @@ metadata:
       <div class="rc-2col">
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Check for fraud patterns</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">A sudden spike in sign-up declines — especially with fraud response codes — may indicate card testing activity on your checkout. Review with your CSM and gateway team immediately.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Sudden spikes — especially with specific fraud codes — may indicate card testing activity. Review with your CSM and gateway team to consider fraud tools or CAPTCHA implementation.</p>
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Compare gateway performance</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Different gateways approve different card types at different rates. If your decline rate is high, compare approval rates by gateway to identify whether a routing change might help.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Different gateways approve card types at different rates. If your decline rate is high, compare approval rates by gateway to see if a routing change or multi-gateway strategy might help.</p>
         </div>
         <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Check payment method coverage</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Are you accepting the payment methods your customers prefer? Offering PayPal, Apple Pay, or local payment methods in key markets can dramatically reduce friction for international subscribers.</p>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Check payment coverage</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Are you accepting the methods your customers prefer? Offering PayPal, Apple Pay, or localized methods can dramatically reduce checkout friction for international subscribers.</p>
         </div>
         <div>
           <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Review 3DS / checkout UX</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">If the 3DS authentication flow is confusing or non-obvious, subscribers may abandon mid-authentication — registering as a failed attempt. Review your checkout flow from a subscriber's perspective.</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0"> Confusing 3DS authentication flows often lead to abandonment, which registers as a failed attempt. Always review your checkout UX from a subscriber's mobile perspective.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-tip">
-      <strong>💡 A note on timing:</strong> Sign-up decline numbers for the current month are always lower than prior months because the month isn't over yet — more sign-up attempts will happen as the month continues. Always compare full prior months for accurate trend analysis.
+      <strong>💡 A note on data interpretation:</strong> When reviewing rates mid-month, numbers may fluctuate significantly before traffic dilutes them. Always prioritize full prior-month data in the Benchmarks Dashboard for the most accurate trend analysis.
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard">← Benchmarks &amp; Reporting</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics">Step 3: Churn Metrics →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard">← Benchmarks &amp; Reporting</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics">Step 3: Churn Metrics →</a>
     </div>
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com/docs/subscriber-benchmarks" target="_blank" rel="noopener noreferrer">📖 Subscriber Benchmarks Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+      <a class="rc-link-btn" href="https://docs.recurly.com/docs/subscriber-benchmarks" target="_blank" rel="noopener noreferrer">📖 Subscriber Benchmarks Guide</a>
+      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
 
