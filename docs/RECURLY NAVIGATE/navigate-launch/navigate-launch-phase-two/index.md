@@ -42,10 +42,12 @@ metadata:
 .rc-scorecard h3{font-size:.96rem;font-weight:800;color:var(--orange);margin:0 0 14px}
 .rc-scorecard p{font-size:.87rem;color:#CCC9B8;line-height:1.6;margin-bottom:18px}
 .rc-sneak-peek{margin-top:24px;background:rgba(255,255,255,0.03);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,0.1)}
-.rc-crop-container{width:100%;height:180px;overflow:hidden;border-radius:6px;margin-top:12px;border:1px solid rgba(255,215,6,0.25);position:relative}
-.rc-crop-container img{position:absolute;width:150%;left:-5%;top:-10%;filter:contrast(1.05)}
-.rc-sneak-label{font-size:0.75rem;font-weight:800;color:var(--yellow);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:6px}
 
+/* Fixed Image Container to show full image without cropping */
+.rc-crop-container{width:100%;border-radius:6px;margin-top:12px;border:1px solid rgba(255,215,6,0.25);overflow:hidden;background:#fff;}
+.rc-crop-container img{width:100%;height:auto;display:block;filter:contrast(1.05);}
+
+.rc-sneak-label{font-size:0.75rem;font-weight:800;color:var(--yellow);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:6px}
 .rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
 .rc-tip strong{color:var(--offblack)}
 .rc-clip{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:14px;padding:16px 18px;margin-bottom:16px}
@@ -147,10 +149,10 @@ metadata:
       <h3>📋 Your Monthly Metrics Scorecard</h3>
       <p class="rc-scorecard-summary"><strong>What we're working towards:</strong> After you've completed Navigate Launchpad, you'll begin receiving your Monthly Metrics Scorecard, where you'll put everything you've learned in this phase to the task! The scorecard provides a complete snapshot of your last full fiscal month in Recurly so you can see your performance at a glance. You will begin receiving yours via email on the first Tuesday of each month, starting 90 days after going live.</p>
       
-   <div class="rc-sneak-peek">
+      <div class="rc-sneak-peek">
         <div class="rc-sneak-text">
           <span class="rc-sneak-label">✨ Sneak Peek</span>
-          <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers[cite: 29]. You'll learn more about using this at the end of this learning path!</p>
+          <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers. You'll learn more about using this at the end of this learning path!</p>
         </div>
         <div class="rc-crop-container">
           <img src="https://go.recurly.com/rs/439-LSC-903/images/Monthly%20scorecard%20sample.png" alt="Scorecard Preview">
