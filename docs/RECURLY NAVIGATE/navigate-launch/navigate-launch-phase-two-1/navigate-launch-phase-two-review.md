@@ -1,5 +1,5 @@
 ---
-title: 'Section 5: Review & Resources'
+title: 'Section 5: Phase 2 Review'
 deprecated: false
 hidden: true
 metadata:
