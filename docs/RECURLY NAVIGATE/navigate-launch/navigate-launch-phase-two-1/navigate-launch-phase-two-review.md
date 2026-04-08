@@ -212,7 +212,7 @@ metadata:
     </div>
 
     <div class="rc-card" style="margin-top:24px;">
-      <p class="rc-subhead">📋 Understanding Your Monthly Metrics Scorecard</p>
+      <p class="rc-subhead">📋 Prepare for Your Monthly Metrics Scorecard</p>
       <p style="font-size:.87rem; color:var(--gray); line-height:1.6; margin-bottom:16px;"><strong>Watch this trail guide</strong> as it walks you step-by-step through your Monthly Metrics Scorecard. You will begin receiving your personalized snapshot via email on the <strong>second Tuesday of the month</strong> after you have been in production for <strong>90 days</strong>.</p>
       <div class="rc-video-wrap">
         <iframe src="https://share.synthesia.io/embeds/videos/a9ab0aa1-ef60-4b08-aaa8-95c0275e245f" loading="lazy" title="Understanding Your Monthly Metrics Scorecard" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
