@@ -153,7 +153,7 @@ metadata:
           <p style="font-size:0.83rem; color:#CCC9B8; margin:0;">See how you stack up against yourself and your peers[cite: 29]. You'll learn more about using this at the end of this learning path!</p>
         </div>
         <div class="rc-crop-container">
-          <img src="https://drive.google.com/uc?export=view&id=1Ul0IRe6r-yrH7686My2aaLUjiOQjjqdg" alt="Scorecard Preview">
+          <img src="https://go.recurly.com/rs/439-LSC-903/images/Monthly%20scorecard%20sample.png" alt="Scorecard Preview">
         </div>
       </div>
     </div>
