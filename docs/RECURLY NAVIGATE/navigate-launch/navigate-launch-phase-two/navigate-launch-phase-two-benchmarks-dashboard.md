@@ -142,10 +142,10 @@ metadata:
     </div>
 
     <div class="rc-clip">
-      <div class="rc-clip-label">🎬 Webinar Clip</div>
-      <p class="rc-clip-title">KPI Definitions &amp; What Each Metric Means for Your Business</p>
-      <p>Suggested clip: The "Review &amp; Define" segment from this webinar — covering each of the 9 Benchmark KPIs, how they're calculated, and why they matter for subscription health.</p>
-      <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch "Stack Up Against the Competition" On-Demand →</a>
+      <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
+      <p class="rc-clip-title">Stack Up Against the Competition: Mastering Benchmarks</p>
+      <p>Get a headstart on your metrics with Senior CSM Dan Shipley. Watch him define the <strong>9 core Benchmarks</strong>, demonstrate how to interpret industry quartiles, and share high-impact strategies—like prepaid card blocking and gateway failover—to optimize your performance against your peers.</p>
+      <a class="rc-webinar-link" href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer">▶ Watch "Stack Up Against the Competition" On-Demand →</a>
     </div>
 
     <p class="rc-subhead" style="margin-bottom:12px">🪜 Step-by-Step: Navigate Your Benchmarks Dashboard</p>
@@ -168,7 +168,7 @@ metadata:
         <div class="rc-sbadge">3</div>
         <div>
           <h3>Read each metric card</h3>
-          <p>Each card shows your current rate, the benchmark range, and an arrow indicating your performance trend. Note which of the 9 KPIs need attention.</p>
+          <p>Each card shows your current rate, the benchmark range (represented by quartiles), and your trend line. Note which of the 9 KPIs need attention.</p>
         </div>
       </div>
       <div class="rc-step">
@@ -188,7 +188,7 @@ metadata:
     </div>
 
     <div class="rc-tip">
-      <strong>💡 Benchmark context matters:</strong> A sign-up decline rate that looks high in isolation might be typical for your pricing model. Always evaluate your 9 KPIs against your industry vertical for the most accurate health check.
+      <strong>💡 Benchmark context matters:</strong> Always evaluate your 9 KPIs against your industry vertical for the most accurate health check. A sign-up decline rate that looks high in isolation might actually be typical for your pricing model.
     </div>
 
     <p class="rc-subhead" style="margin-bottom:12px">✅ Benchmarks &amp; Reporting Checklist</p>
