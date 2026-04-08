@@ -56,14 +56,11 @@ metadata:
 .rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
 .rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
 .rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
-
-/* Table Visibility Fix */
-.rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:.85rem}
-.rc-kpi-table th{background:var(--offblack);color:#FFFFFF !important;font-size:.75rem;font-weight: 800;text-transform:uppercase;letter-spacing:.5px;padding:12px 14px;text-align:left;border-bottom: 2px solid rgba(255,255,255,0.1);}
+.rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:48px;font-size:.85rem}
+.rc-kpi-table th{background:var(--offblack);color:#FFFFFF !important;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;padding:12px 14px;text-align:left;border-bottom:2px solid rgba(255,255,255,0.1)}
 .rc-kpi-table td{padding:10px 14px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);vertical-align:top}
 .rc-kpi-table tr:last-child td{border-bottom:none}
 .rc-kpi-table tr:nth-child(even) td{background:var(--offwhite)}
-
 .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
 .rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
 .rc-btn-prev{background:#fff;color:var(--darkgray)}
@@ -109,7 +106,7 @@ metadata:
     <div class="rc-celebration">
       <span class="rc-cel-emoji">🎉</span>
       <h2>You've Completed Launchpad!</h2>
-      <p>From production testing and dunning configuration to benchmarking your KPIs and understanding your revenue recovery funnel — you've done the work that sets high-performing subscription businesses apart. Recurly is now fully optimized and fully understood.</p>
+      <p>From production testing and dunning configuration to benchmarking your KPIs and understanding your revenue recovery funnel — you've done the work that sets high-performing subscription businesses apart.</p>
     </div>
 
     <p class="rc-subhead" style="margin-bottom:14px">🗂 Everything You've Accomplished</p>
@@ -146,42 +143,48 @@ metadata:
           <td><strong>Acquisition Rate</strong></td>
           <td>New paid subs / Active subs (start of period)</td>
           <td>↑ Higher</td>
-          <td>No — driven by marketing &amp; pricing</td>
+          <td>No</td>
         </tr>
         <tr>
           <td><strong>Sign-Up Decline Rate</strong></td>
           <td>Failed unique transaction attempts / total attempts</td>
           <td>↓ Lower</td>
-          <td>Partially — Gateway Failover, 3DS setup</td>
+          <td>Partially</td>
         </tr>
         <tr>
           <td><strong>Voluntary Churn Rate</strong></td>
           <td>Subscribers who canceled / Active subs (start of period)</td>
           <td>↓ Lower</td>
-          <td>No — product &amp; experience driven</td>
+          <td>No</td>
         </tr>
         <tr>
           <td><strong>Involuntary Churn Rate</strong></td>
           <td>Subs lost to dunning expiration / Active subs (start of period)</td>
           <td>↓ Lower</td>
-          <td>Yes — Account Updater, Dunning</td>
+          <td>Yes</td>
         </tr>
         <tr>
           <td><strong>Renewal Invoice Paid Rate</strong></td>
           <td>Successfully paid renewals / all renewals issued</td>
           <td>↑ Higher</td>
-          <td>Yes — all Phase 1 tools contribute</td>
+          <td>Yes</td>
         </tr>
         <tr>
           <td><strong>Dunning Recovery Rate</strong></td>
           <td>Invoices recovered / invoices entering dunning</td>
           <td>↑ Higher</td>
-          <td>Yes — directly tied to dunning config</td>
+          <td>Yes</td>
         </tr>
       </tbody>
     </table>
 
-    <p class="rc-subhead" style="margin-bottom:14px">🚀 What Comes Next</p>
+    <div class="rc-sec-header">
+      <div class="rc-sec-icon" style="background:var(--orange)">🚀</div>
+      <div>
+        <h2>What Comes Next</h2>
+        <p>Your optimization journey doesn't end here. Stay connected with the Recurly community and watch for tailored learning to support your specific growth goals.</p>
+      </div>
+    </div>
     
     <div class="rc-safe-sender">
       <div style="font-size: 24px;">📧</div>
@@ -191,23 +194,23 @@ metadata:
     <div class="rc-next-grid">
       <div class="rc-next-card">
         <h4>✉ Your Customer Success Team</h4>
-        <p>Your CSM is your strategic partner. Join a live <strong>Global Office Hours</strong> session to ask questions around strategy, share learnings with other merchants, and stay current with new features.</p>
-        <a class="rc-link-btn" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Join Office Hours</a>
+        <p>Your CSM is your strategic partner. Join a live <strong>Global Office Hours</strong> session to ask questions around strategy, share learnings, and stay current with new features.</p>
+        <a class="rc-link-btn" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank">Join Office Hours</a>
       </div>
       <div class="rc-next-card">
         <h4>🎧 Spotlight &amp; On-Demand</h4>
-        <p>Watch our <strong>Customer Spotlight Series</strong> for peer-led leadership sessions, or revisit the Navigate webinar library anytime your team needs a technical refresher.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Watch Sessions</a>
+        <p>Watch our <strong>Customer Spotlight Series</strong> for peer-led leadership sessions, or revisit the Navigate library anytime your team needs a technical refresher.</p>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank">Watch Sessions</a>
       </div>
       <div class="rc-next-card">
         <h4>🤖 Compass AI</h4>
-        <p>Recurly's AI-powered assistant inside the admin. Ask it questions about your account, interpret your metrics, or get configuration recommendations — available 24/7.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer">Explore Compass AI</a>
+        <p>Recurly's AI-powered assistant inside the admin. Ask it questions about your account, interpret metrics, or get configuration recommendations — available 24/7.</p>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://docs.recurly.com" target="_blank">Explore Compass AI</a>
       </div>
       <div class="rc-next-card">
         <h4>🎓 Proactive Learning Paths</h4>
         <p>Keep an eye on your inbox! We will proactively provide additional <strong>Navigate Learning Paths</strong> tailored to your individual progress and performance in Recurly.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="mailto:RecurlyNavigate@Recurly.com?subject=Whitelisting%20Recurly%20Navigate">Whitelist Our Email</a>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="mailto:RecurlyNavigate@Recurly.com?subject=Add%20to%20Contacts">Whitelist Our Email</a>
       </div>
     </div>
 
@@ -226,15 +229,15 @@ metadata:
 
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics">← Revenue &amp; Recovery</a>
-      <span class="rc-btn-disabled">🎉 You've Completed Launchpad!</span>
+      <span class="rc-btn-disabled">🎉 Launchpad Complete</span>
     </div>
 
     <div class="rc-resources">
       <h3>All Your Launchpad Resources</h3>
-      <a class="rc-link-btn rc-link-yellow" href="https://go.recurly.com/Recurly_Navigate-Launchpad-Complete-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Full Launchpad Cheatsheet</a>
-      <a class="rc-link-btn" href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Metrics Cheatsheet</a>
-      <a class="rc-link-btn rc-link-sec" href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer">📖 Navigate Resource Guide</a>
-      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Events &amp; Webinars</a>
+      <a class="rc-link-btn rc-link-yellow" href="https://go.recurly.com/Recurly_Navigate-Launchpad-Complete-Cheatsheet.html" target="_blank">⬇ Full Launchpad Cheatsheet</a>
+      <a class="rc-link-btn" href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank">⬇ Metrics Cheatsheet</a>
+      <a class="rc-link-btn rc-link-sec" href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank">📖 Navigate Resource Guide</a>
+      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank">🎧 Events &amp; Webinars</a>
       <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
