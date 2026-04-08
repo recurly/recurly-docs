@@ -6,212 +6,182 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!DOCTYPE html>
-
-<html>
-<head>
-<meta charset="UTF-8" />
 <style>
-  .rc-guide{
-    --yellow:#FFD706;--orange:#FF8200;--vermillion:#FF5810;--salmon:#FF9D88;
-    --offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;
-    --brightgray:#F1EFE3;--offwhite:#FFFDF2;
-    font-family:'Segoe UI',system-ui,sans-serif;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray)}
-  .rc-hero{background:var(--offblack);color:#fff;padding:56px 40px 48px;text-align:center;border-radius:16px}
-  .rc-badge{display:inline-block;background:var(--yellow);color:var(--offblack);border-radius:20px;padding:6px 18px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
-  .rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
-  .rc-hero>p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 32px;color:var(--lightgray)}
-  .rc-hero-stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
-  .rc-num{font-size:1.8rem;font-weight:800;color:var(--yellow)}
-  .rc-lbl{font-size:.8rem;color:var(--lightgray);text-transform:uppercase;letter-spacing:.5px}
-  .rc-nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 28px}
-  .rc-nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.88rem;font-weight:700;transition:border-color .2s,box-shadow .2s,background .2s,color .2s}
-  .rc-nav a:hover{border-color:var(--yellow);box-shadow:0 2px 8px rgba(255,215,6,.2);color:var(--offblack);text-decoration:none}
-  .rc-nav a.rc-active{background:var(--yellow);border-color:var(--yellow);color:var(--offblack);box-shadow:0 2px 10px rgba(255,215,6,.25)}
-  .rc-snum{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:12px;font-weight:700;flex-shrink:0}
-  .rc-sec{margin-bottom:56px}
-  .rc-sec-header{display:flex;align-items:flex-start;gap:20px;margin-bottom:32px}
-  .rc-sec-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;background:var(--yellow)}
-  .rc-sec-header h2{font-size:1.7rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
-  .rc-sec-header>div>p{color:var(--gray);font-size:.95rem;line-height:1.5;margin:0}
-  .rc-card{background:var(--offwhite);border-radius:16px;padding:28px;border:1px solid var(--lightgray);margin-bottom:24px}
-  .rc-subhead{font-size:1rem;font-weight:700;margin:0 0 16px;color:var(--offblack)}
-  .rc-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px}
-  .rc-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:26px}
-  .rc-wi{background:var(--offwhite);border-radius:14px;padding:20px;border:1px solid var(--lightgray);text-align:center}
-  .rc-wi-icon{font-size:30px;margin-bottom:10px}
-  .rc-wi h4{font-size:.88rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}
-  .rc-wi p{font-size:.8rem;color:var(--gray);line-height:1.5;margin:0}
-  .rc-steps{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
-  .rc-step{background:var(--offwhite);border-radius:14px;padding:22px 26px;border:1px solid var(--lightgray);display:flex;gap:18px;align-items:flex-start;transition:box-shadow .2s}
-  .rc-step:hover{box-shadow:0 4px 16px rgba(13,13,11,.08)}
-  .rc-sbadge{width:38px;height:38px;border-radius:10px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .rc-sbadge-dark{width:38px;height:38px;border-radius:10px;background:var(--darkgray);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .rc-step h3{font-size:.98rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}
-  .rc-step p{font-size:.87rem;color:var(--gray);line-height:1.6;margin:0}
-  .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}
-  .rc-tipicon{font-size:24px;flex-shrink:0}
-  .rc-tip h4{font-size:.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:.5px;margin:0 0 4px}
-  .rc-tip p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
-  .rc-warning{background:#FFF8E6;border:1px solid var(--orange);border-radius:14px;padding:16px 20px;display:flex;gap:14px;align-items:flex-start;margin-bottom:24px}
-  .rc-wicon{font-size:20px;flex-shrink:0}
-  .rc-warning p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
-  .rc-opt{background:var(--offwhite);border-radius:14px;border:1px solid var(--lightgray);padding:18px;transition:border-color .2s,box-shadow .2s}
-  .rc-opt:hover{border-color:var(--yellow);box-shadow:0 2px 12px rgba(255,215,6,.2)}
-  .rc-oicon{font-size:22px;margin-bottom:8px}
-  .rc-opt h4{font-size:.92rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}
-  .rc-opt p{font-size:.82rem;color:var(--gray);line-height:1.5;margin:0}
-  .rc-tag{display:inline-block;margin-top:10px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:var(--offblack);color:var(--yellow)}
-  .rc-tag-green{background:#2E7D32;color:#fff}
-  .rc-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
-  .rc-stat{background:var(--offblack);border-radius:14px;padding:24px 16px;text-align:center}
-  .rc-stat-num{font-size:1.5rem;font-weight:800;color:var(--yellow)}
-  .rc-stat-label{font-size:.78rem;color:var(--lightgray);text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
-  .rc-phase-tag{display:inline-flex;align-items:center;gap:6px;background:var(--offblack);color:var(--yellow);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:20px}
-  .rc-handoff{background:var(--darkgray);border:2px solid var(--yellow);border-radius:16px;padding:28px 32px;margin-bottom:28px;display:flex;align-items:flex-start;gap:20px}
-  .rc-handoff-icon{font-size:36px;flex-shrink:0}
-  .rc-handoff h3{font-size:1.05rem;font-weight:800;color:var(--yellow);margin:0 0 6px;text-transform:uppercase;letter-spacing:.5px}
-  .rc-handoff p{font-size:.88rem;color:var(--lightgray);margin:0;line-height:1.55}
-  .rc-handoff a{color:var(--yellow);font-weight:700}
-  .rc-complete{background:var(--offblack);border-radius:16px;padding:40px;text-align:center;margin-bottom:28px;color:#fff}
-  .rc-complete h2{font-size:1.8rem;font-weight:800;margin:12px 0 10px;color:var(--yellow)}
-  .rc-complete p{color:var(--lightgray);font-size:.95rem;margin:0}
-  .rc-checklist{background:var(--offwhite);border-radius:16px;border:1px solid var(--lightgray);overflow:hidden;margin-bottom:28px}
-  .rc-cl-header{padding:16px 22px;border-bottom:1px solid var(--brightgray);display:flex;align-items:center;gap:10px;background:var(--offblack)}
-  .rc-cl-header h3{font-size:.88rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--yellow);margin:0}
-  .rc-cli{padding:13px 22px;border-bottom:1px solid var(--brightgray);display:flex;gap:14px;align-items:flex-start}
-  .rc-cli:last-child{border-bottom:none}
-  .rc-cb{width:22px;height:22px;border-radius:6px;border:2px solid var(--lightgray);flex-shrink:0;margin-top:1px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--gray)}
-  .rc-clab{font-size:.88rem;color:var(--darkgray);line-height:1.4}
-  .rc-clab span{display:block;font-size:.78rem;color:var(--gray);margin-top:2px}
-  .video-wrap{position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:14px}
-  .video-wrap iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0}
-  .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
-  .rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none;border:1px solid var(--lightgray)}
-  .rc-btn-prev{background:#fff;color:var(--darkgray)}
-  .rc-btn-next{background:var(--yellow);color:var(--offblack);border-color:var(--yellow)}
-  .rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default}
-  .rc-link-btn{gap:8px;background:var(--yellow);color:var(--offblack);margin:0 8px 8px 0;transition:opacity .2s}
-  .rc-link-btn:hover{opacity:.85;text-decoration:none}
-  .rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
-  .rc-link-sec:hover{background:var(--brightgray)}
-  @media(max-width:640px){
-    .rc-hero h1{font-size:1.7rem}
-    .rc-3col,.rc-2col,.rc-stat-grid{grid-template-columns:1fr}
-    .rc-hero{padding:36px 20px 32px}
-    .rc-hero-stats{gap:20px}
-    .rc-nav,.rc-sec-nav,.rc-sec-header,.rc-handoff{flex-direction:column}
-    .rc-sec-nav{align-items:stretch}
-  }
+.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif;max-width:960px;margin:0 auto;padding:0 20px 60px}
+.rc-hero{background:var(--offblack);border-radius:16px;padding:52px 40px 44px;text-align:center;margin-bottom:0}
+.rc-badge{display:inline-block;background:var(--orange);color:#fff;border-radius:20px;padding:6px 20px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+.rc-hero h1{font-size:2.3rem;font-weight:800;line-height:1.15;margin:0 0 12px;color:#fff}
+.rc-hero>p{font-size:1rem;max-width:680px;margin:0 auto 28px;color:#CCC9B8;line-height:1.6}
+.rc-hero-stats{display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
+.rc-num{font-size:1.7rem;font-weight:800;color:var(--orange)}
+.rc-lbl{font-size:.76rem;color:#CCC9B8;text-transform:uppercase;letter-spacing:.5px}
+.rc-nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 32px;padding:16px;background:var(--offwhite);border-radius:14px;border:1px solid var(--lightgray)}
+.rc-nav a{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:10px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.83rem;font-weight:700;transition:all .2s}
+.rc-nav a:hover{border-color:var(--orange);box-shadow:0 2px 8px rgba(255,130,0,.2);color:var(--offblack);text-decoration:none}
+.rc-nav a.rc-active{background:var(--orange);border-color:var(--orange);color:#fff}
+.rc-snum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--offblack);color:var(--orange);font-size:11px;font-weight:800;flex-shrink:0}
+.rc-nav a.rc-active .rc-snum{background:rgba(255,255,255,.2);color:#fff}
+.rc-sec{margin-bottom:48px}
+.rc-sec-header{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px}
+.rc-sec-icon{width:52px;height:52px;border-radius:14px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.rc-sec-header h2{font-size:1.45rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
+.rc-sec-header p{font-size:.9rem;color:var(--gray);margin:0;line-height:1.6}
+.rc-card{background:#fff;border:1px solid var(--lightgray);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 6px rgba(13,13,11,.04)}
+.rc-subhead{font-size:.98rem;font-weight:800;color:var(--offblack);margin:0 0 10px}
+.rc-metric{background:#fff;border:1px solid var(--lightgray);border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.rc-metric-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.rc-metric-icon{width:40px;height:40px;border-radius:10px;background:var(--offblack);color:var(--orange);font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rc-metric h3{font-size:.96rem;font-weight:800;margin:0;color:var(--offblack)}
+.rc-metric p{font-size:.85rem;color:var(--gray);margin:0 0 10px;line-height:1.6}
+.rc-formula{background:var(--brightgray);border-radius:8px;padding:10px 14px;font-size:.83rem;font-family:monospace;color:var(--darkgray);margin-bottom:10px}
+.rc-pills{display:flex;gap:8px;flex-wrap:wrap}
+.rc-pill{padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:700;background:var(--offwhite);border:1px solid var(--lightgray);color:var(--darkgray)}
+.rc-pill.up{background:rgba(22,163,74,.1);color:#15803d;border-color:#86efac}
+.rc-pill.down{background:rgba(220,38,38,.1);color:#dc2626;border-color:#fca5a5}
+.rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
+.rc-tip strong{color:var(--offblack)}
+.rc-warning{background:#fff5f0;border:1px solid #ffb894;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
+.rc-warning strong{color:#cc4400}
+.rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
+.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
+.rc-clip{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:14px;padding:16px 18px;margin-bottom:16px}
+.rc-clip-label{display:inline-flex;align-items:center;gap:5px;background:var(--offblack);color:var(--orange);border-radius:6px;padding:3px 10px;font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.rc-clip p{font-size:.87rem;color:var(--gray);margin:0 0 10px;line-height:1.5}
+.rc-clip-title{font-size:.93rem;font-weight:700;color:var(--offblack);margin:0 0 6px}
+.rc-webinar-link{display:inline-flex;align-items:center;gap:6px;font-size:.83rem;font-weight:700;color:var(--orange);text-decoration:none}
+.rc-webinar-link:hover{text-decoration:underline}
+.rc-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+.rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
+.rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
+.rc-btn-prev{background:#fff;color:var(--darkgray)}
+.rc-btn-prev:hover{background:var(--brightgray);text-decoration:none}
+.rc-btn-next{background:var(--orange);color:#fff;border-color:var(--orange)}
+.rc-btn-next:hover{opacity:.92;text-decoration:none}
+.rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default;pointer-events:none}
+.rc-link-btn{background:var(--orange);color:#fff;border-color:var(--orange);margin:0 8px 8px 0}
+.rc-link-btn:hover{opacity:.9;text-decoration:none}
+.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
+.rc-link-sec:hover{background:var(--brightgray);text-decoration:none}
+.rc-resources{margin-top:32px}
+.rc-resources h3{font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);margin:0 0 12px}
+@media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-2col{grid-template-columns:1fr}.rc-hero-stats{gap:14px}.rc-sec-header{flex-direction:column}.rc-sec-nav{flex-direction:column;align-items:stretch}}
 </style>
-</head>
-<body>
+
 <div class="rc-guide">
 
   <div class="rc-hero">
-    <div class="rc-badge">📊 Launchpad Phase 2</div>
-    <h1>Mastering Metrics</h1>
-    <p>Turn your Recurly data into decisions. Learn the 8 benchmark KPIs, 4 reporting tools, and the strategies that power subscription growth.</p>
+    <div class="rc-badge">📊 Navigate · Launchpad Phase 2</div>
+    <h1>Subscriber Acquisition &amp; Sign-Up Decline Rate</h1>
+    <p>These two metrics tell you how effectively you're growing — and how much friction is getting in the way of subscribers who want to sign up but can't.</p>
     <div class="rc-hero-stats">
-      <div><div class="rc-num">8</div><div class="rc-lbl">Benchmark KPIs</div></div>
-      <div><div class="rc-num">4</div><div class="rc-lbl">Reporting Tools</div></div>
-      <div><div class="rc-num">6 wks</div><div class="rc-lbl">Weeks 7–12</div></div>
+      <div><div class="rc-num">Step 2</div><div class="rc-lbl">Phase 2</div></div>
+      <div><div class="rc-num">↑</div><div class="rc-lbl">Acquisition Rate Goal</div></div>
+      <div><div class="rc-num">↓</div><div class="rc-lbl">Decline Rate Goal</div></div>
     </div>
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-welcome"><span class="rc-snum">1</span>Welcome</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-reporting-tools"><span class="rc-snum">2</span>Reporting Tools</a>
-    <a class="rc-active" href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-acquisition"><span class="rc-snum">3</span>Acquisition & Growth</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-churn"><span class="rc-snum">4</span>Churn & Retention</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-revenue-recovery"><span class="rc-snum">5</span>Revenue Recovery</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-rewind-review"><span class="rc-snum">✓</span>Rewind & Review</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-acquisition-metrics" class="rc-active"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
   </nav>
 
   <div class="rc-sec">
-    <div class="rc-phase-tag">📊 Phase 2 · Week 9</div>
-
     <div class="rc-sec-header">
-      <div class="rc-sec-icon">🎯</div>
+      <div class="rc-sec-icon">📈</div>
       <div>
-        <h2>Acquisition &amp; Growth: Subscribers In, Friction Out</h2>
-        <p>Two metrics reveal how effectively you attract new subscribers and how smooth your checkout really is.</p>
+        <h2>Growth Starts at the Top of the Funnel</h2>
+        <p>Acquisition Rate and Sign-Up Decline Rate are your two growth-layer metrics. Together they tell you how fast your subscriber base is expanding — and how many potential subscribers are being lost before they ever complete their first payment.</p>
       </div>
     </div>
 
-    <div class="rc-stat-grid">
-      <div class="rc-stat"><div class="rc-stat-num">↑ Good</div><div class="rc-stat-label">Acquisition Rate — higher = stronger growth</div></div>
-      <div class="rc-stat"><div class="rc-stat-num">↓ Good</div><div class="rc-stat-label">Sign-Up Decline Rate — lower = less friction</div></div>
+    <div class="rc-card">
+      <p class="rc-subhead">▶ Trail Guide: Subscriber Acquisition &amp; Sign-Up Decline Rate</p>
+      <div class="rc-video-wrap">
+        <iframe src="https://drive.google.com/file/d/[ACQUISITION-VIDEO-ID]/preview" allow="autoplay" allowfullscreen></iframe>
+      </div>
+      <p class="rc-video-cap">A deep dive into Acquisition Rate and Sign-Up Decline Rate — where to find them in the Benchmarks Dashboard, how they're calculated, and how to act on what you see.</p>
+    </div>
+
+    <div class="rc-metric">
+      <div class="rc-metric-head">
+        <div class="rc-metric-icon">📈</div>
+        <h3>Acquisition Rate</h3>
+      </div>
+      <p>Measures how effectively you're bringing in new paid subscribers each month. A rising acquisition rate means your growth strategy is working. A flat or declining rate signals a need to investigate marketing, pricing, or checkout conversion.</p>
+      <div class="rc-formula">New paid subscribers ÷ Total paid subscribers = Acquisition Rate %</div>
+      <div class="rc-pills">
+        <span class="rc-pill up">↑ Higher is better</span>
+        <span class="rc-pill">Check monthly</span>
+        <span class="rc-pill">Analytics → Benchmarks</span>
+      </div>
+    </div>
+
+    <div class="rc-metric">
+      <div class="rc-metric-head">
+        <div class="rc-metric-icon">⚡</div>
+        <h3>Sign-Up Decline Rate</h3>
+      </div>
+      <p>The percentage of first transaction attempts during sign-up that are declined. A high sign-up decline rate means real customers are trying to sign up and failing — these aren't rejections, they're missed conversions. Even a 1% improvement can meaningfully impact growth.</p>
+      <div class="rc-formula">Failed first-attempt sign-ups ÷ Total sign-up attempts = Sign-Up Decline Rate %</div>
+      <div class="rc-pills">
+        <span class="rc-pill down">↓ Lower is better</span>
+        <span class="rc-pill">Check monthly</span>
+        <span class="rc-pill">Analytics → Benchmarks</span>
+      </div>
+    </div>
+
+    <div class="rc-clip">
+      <div class="rc-clip-label">🎬 Webinar Clip</div>
+      <p class="rc-clip-title">Sign-Up Decline Rate: What a Spike Tells You About Your Checkout</p>
+      <p>Suggested clip: The Sign-Up Decline Benchmarks section from this webinar — covering how to spot fraud via checkout (a 500% spike in fraud responses), how to compare gateway performance for sign-ups, and how to identify card-type-specific issues. Presenter: Daniel Shipley.</p>
+      <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch "Stack Up Against the Competition" On-Demand →</a>
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">📈 Metric 1: Subscriber Acquisition Rate</h3>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 12px;"><strong>Subscriber Acquisition Rate</strong> shows how many new paying subscribers you gain each month — a direct reflection of your marketing, ads, discounts, and trial offers. It's shaped by everything that happens before a customer first subscribes. Tracking it tells you what's working and where to adjust to attract more customers.</p>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Includes only <em>paying</em> subscribers — those in trial or trial dunning are excluded. A subscriber who churns and re-subscribes in the same month where they were active on day 1 is not counted (no "ghost acquisitions").</p>
-      <p style="font-family:monospace;font-size:.88rem;background:var(--brightgray);padding:10px 14px;border-radius:8px;margin:0;">New subscribers ÷ total subscribers = % &nbsp;↑ Higher = Better</p>
-    </div>
-
-    <div class="rc-card">
-      <h3 class="rc-subhead">⚠️ Metric 2: Sign-Up Decline Rate</h3>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 12px;"><strong>Sign-Up Decline Rate</strong> tracks the very first transaction attempt Recurly sends to your gateway during checkout. While user error (typos, expired cards) plays a role, checkout friction is often the real culprit — a confusing experience leads to lost conversions. Reducing friction here boosts acquisition and helps more subscribers complete sign-up.</p>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">A high rate is also your earliest fraud detection signal — a 500%+ spike in fraud responses is a card-testing red flag worth investigating immediately.</p>
-      <p style="font-family:monospace;font-size:.88rem;background:var(--brightgray);padding:10px 14px;border-radius:8px;margin:0;">Failed attempts ÷ total sign-ups = % &nbsp;↓ Lower = Better</p>
+      <p class="rc-subhead">🎯 What to Do If Sign-Up Declines Are High</p>
+      <div class="rc-2col">
+        <div>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Check for fraud patterns</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">A sudden spike in sign-up declines — especially with fraud response codes — may indicate card testing activity on your checkout. Review with your CSM and gateway team immediately.</p>
+        </div>
+        <div>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Compare gateway performance</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Different gateways approve different card types at different rates. If your decline rate is high, compare approval rates by gateway to identify whether a routing change might help.</p>
+        </div>
+        <div>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Check payment method coverage</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Are you accepting the payment methods your customers prefer? Offering PayPal, Apple Pay, or local payment methods in key markets can dramatically reduce friction for international subscribers.</p>
+        </div>
+        <div>
+          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Review 3DS / checkout UX</p>
+          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">If the 3DS authentication flow is confusing or non-obvious, subscribers may abandon mid-authentication — registering as a failed attempt. Review your checkout flow from a subscriber's perspective.</p>
+        </div>
+      </div>
     </div>
 
     <div class="rc-tip">
-      <span class="rc-tipicon">💡</span>
-      <div><h4>Current Month Nuance</h4><p>The current month always shows a lower transaction count than prior months — sign-ups are still being generated throughout the month. Focus on the <strong>rate (percentage)</strong>, not the raw count, when comparing periods. Don't panic at a lower number; check the percentage.</p></div>
-    </div>
-
-    <h3 class="rc-subhead">📍 Where to Find These Metrics</h3>
-    <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>Benchmarks Overview — for peer comparison</h3><p><strong>Analytics → Benchmarks Overview</strong><br>See your Acquisition Rate and Sign-Up Decline Rate benchmarked against similar businesses in your industry. Use this to know whether your numbers represent a real issue or normal variation for your segment.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Sign-Up Declines Dashboard — for root cause</h3><p><strong>Analytics → Subscriber Management → Sign-Up Declines</strong><br>Decline rate trend over time · Decline reasons (gateway, AVS/CVV, fraud, customer error) by count and percentage · Gateway and payment method summary by brand. This is where you find out <em>why</em> checkouts are failing.</p></div></div>
-    </div>
-
-    <div class="rc-card">
-      <h3 class="rc-subhead">📹 Trail Guide: Acquisition Rate &amp; Sign-Up Decline Rate</h3>
-      <p style="font-size:.88rem;color:var(--gray);margin:0 0 16px;">A guided walkthrough of your dashboards with tips on recognizing growth signals, diagnosing decline reasons by gateway and payment method, and using data to inform strategy.</p>
-      <div class="video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/e30354c7-9177-452e-a306-450a0471fd50"
-          title="Navigate Trail Guide: Subscriber Acquisition & Sign-Up Decline Rate"
-          allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
-      </div>
-    </div>
-
-    <h3 class="rc-subhead">🧠 When Numbers Move: What to Do</h3>
-    <div class="rc-2col">
-      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Acquisition Rate falling, Decline Rate stable</h4><p>Marketing or conversion issue — not a payment problem. Review campaigns, pricing, trial offer, or landing page conversion rate.</p><span class="rc-tag">Action: Marketing</span></div>
-      <div class="rc-opt"><div class="rc-oicon">🚨</div><h4>Sign-Up Decline Rate spiking suddenly</h4><p>Checkout friction or potential fraud. Check decline reasons for fraud response patterns. Review checkout UX and test specific payment methods.</p><span class="rc-tag">Action: Investigate</span></div>
-      <div class="rc-opt"><div class="rc-oicon">⬇️</div><h4>Both metrics declining together</h4><p>Likely a checkout or payment experience issue. Prioritize checkout testing — try a different gateway config or payment method layout.</p><span class="rc-tag">Action: Checkout</span></div>
-      <div class="rc-opt"><div class="rc-oicon">📊</div><h4>Both healthy but below industry benchmark</h4><p>Room to optimize vs. peers. A/B test checkout flows, add backup payment methods, review trial-to-paid conversion.</p><span class="rc-tag">Action: Optimize</span></div>
-    </div>
-
-    <div class="rc-checklist">
-      <div class="rc-cl-header"><span>✅</span><h3>Week 9 Completion Checklist</h3></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Found my Acquisition Rate in Benchmarks Overview and compared to industry<span>Analytics → Benchmarks Overview</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Found my Sign-Up Decline Rate and identified my top decline reason<span>Analytics → Subscriber Management → Sign-Up Declines</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Noted action items based on my benchmark comparison<span>Spikes above benchmark warrant checkout review</span></div></div>
+      <strong>💡 A note on timing:</strong> Sign-up decline numbers for the current month are always lower than prior months because the month isn't over yet — more sign-up attempts will happen as the month continues. Always compare full prior months for accurate trend analysis.
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-reporting-tools">← Reporting Tools</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-commerce/docs/recurly-navigate-launchpad-phase2-churn">Next: Churn &amp; Retention →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard">← Benchmarks &amp; Reporting</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics">Step 3: Churn Metrics →</a>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/docs/acquisition-benchmarks" target="_blank" rel="noopener noreferrer">📖 Acquisition Benchmarks</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/sign-up-decline-benchmarks" target="_blank" rel="noopener noreferrer">📉 Sign-Up Decline Benchmarks</a>
-    <a class="rc-link-btn rc-link-sec" href="https://go.recurly.com/rs/439-LSC-903/images/Recurly%20Navigate%20Metrics%20Cheatsheet.pdf" target="_blank" rel="noopener noreferrer">📥 Metrics Cheatsheet</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">🎧 Contact Customer Success</a>
+    <div class="rc-resources">
+      <h3>Additional Resources</h3>
+      <a class="rc-link-btn" href="https://docs.recurly.com/docs/subscriber-benchmarks" target="_blank" rel="noopener noreferrer">📖 Subscriber Benchmarks Docs</a>
+      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+    </div>
   </div>
 
 </div>
-</body>
-</html>
 `}</HTMLBlock>
 
 <br />
