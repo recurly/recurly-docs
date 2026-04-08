@@ -140,6 +140,16 @@ metadata:
       </div>
       <p class="rc-video-cap">A guided tour of the Benchmarks Dashboard — how to read your KPIs, apply filters, and compare your performance against industry peers.</p>
     </div>
+    
+    
+    <div class="rc-card">
+      <p class="rc-subhead">▶ Trail Guide: Final Production Testing</p>
+      <div class="rc-video-wrap">
+        <iframe src="https://share.synthesia.io/embeds/videos/f3384551-b4b2-4ab3-83fa-c8fe6e88c62f" loading="lazy" title="Navigate Launchpad — Final Production Testing" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+      </div>
+      <p class="rc-video-cap">A walkthrough of Recurly's production testing best practices — what to test, how to test it, and what to look for.</p>
+    </div>
+
 
     <div class="rc-clip">
       <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
