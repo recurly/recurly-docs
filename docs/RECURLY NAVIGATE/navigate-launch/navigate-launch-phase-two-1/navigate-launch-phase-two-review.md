@@ -23,7 +23,6 @@ metadata:
 .rc-nav a.rc-active .rc-snum{background:rgba(255,255,255,.2);color:#fff}
 
 .rc-sec{margin-bottom:48px}
-/* Reverted title size and added spacing for the section transition */
 .rc-sec-header-next{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px;margin-top:60px;padding-top:40px;border-top:1px solid var(--brightgray)}
 .rc-sec-icon{width:52px;height:52px;border-radius:14px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
 .rc-sec-header-next h2{font-size:1.45rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
@@ -60,9 +59,8 @@ metadata:
 .rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
 .rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
 
-/* Table Visibility & Spacing Fix */
 .rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:.85rem}
-.rc-kpi-table th{background:var(--offblack);color:#FFFFFF !important;font-size:.75rem;font-weight: 800;text-transform:uppercase;letter-spacing:.5px;padding:12px 14px;text-align:left;border-bottom: 2px solid rgba(255,255,255,0.1);}
+.rc-kpi-table th{background:var(--offblack);color:#FFFFFF !important;font-size:.75rem;font-weight: 800;text-transform:uppercase;letter-spacing:.5px;padding:12px 14px;text-align:left;border-bottom: 2px solid rgba(255,255,255,0.1)}
 .rc-kpi-table td{padding:10px 14px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);vertical-align:top}
 .rc-kpi-table tr:last-child td{border-bottom:none}
 .rc-kpi-table tr:nth-child(even) td{background:var(--offwhite)}
@@ -141,7 +139,6 @@ metadata:
           <th>Metric</th>
           <th>What It Measures</th>
           <th>Direction</th>
-          <th>Linked to Phase 1?</th>
         </tr>
       </thead>
       <tbody>
@@ -149,37 +146,31 @@ metadata:
           <td><strong>Acquisition Rate</strong></td>
           <td>New paid subs / Active subs (start of period)</td>
           <td>↑ Higher</td>
-          <td>No</td>
         </tr>
         <tr>
           <td><strong>Sign-Up Decline Rate</strong></td>
           <td>Failed unique transaction attempts / total attempts</td>
           <td>↓ Lower</td>
-          <td>Partially</td>
         </tr>
         <tr>
           <td><strong>Voluntary Churn Rate</strong></td>
           <td>Subscribers who canceled / Active subs (start of period)</td>
           <td>↓ Lower</td>
-          <td>No</td>
         </tr>
         <tr>
           <td><strong>Involuntary Churn Rate</strong></td>
           <td>Subs lost to dunning expiration / Active subs (start of period)</td>
           <td>↓ Lower</td>
-          <td>Yes</td>
         </tr>
         <tr>
           <td><strong>Renewal Invoice Paid Rate</strong></td>
           <td>Successfully paid renewals / all renewals issued</td>
           <td>↑ Higher</td>
-          <td>Yes</td>
         </tr>
         <tr>
           <td><strong>Dunning Recovery Rate</strong></td>
           <td>Invoices recovered / invoices entering dunning</td>
           <td>↑ Higher</td>
-          <td>Yes</td>
         </tr>
       </tbody>
     </table>
