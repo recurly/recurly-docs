@@ -39,19 +39,18 @@ metadata:
 .rc-metric-name{font-size:.82rem;font-weight:700;color:var(--offblack);margin-bottom:4px}
 .rc-metric-desc{font-size:.78rem;color:var(--gray);line-height:1.4}
 
-/* Scorecard Box Styling */
 .rc-scorecard{background:var(--offblack);border-radius:14px;padding:26px 28px;margin-bottom:16px;border:1px solid rgba(255,255,255,0.05)}
 .rc-scorecard h3{font-size:.96rem;font-weight:800;color:var(--orange);margin:0 0 16px;display:flex;align-items:center;gap:8px}
 .rc-scorecard p{font-size:.9rem;color:#CCC9B8;line-height:1.6;margin-bottom:18px}
 .rc-scorecard strong{color:#fff;font-weight:700}
 
-/* Sneak Peek Container */
 .rc-sneak-peek-box{margin-top:24px;background:rgba(255,255,255,0.03);border-radius:12px;padding:20px;border:1px solid rgba(255,255,255,0.1)}
 .rc-sneak-peek-box h4{font-size:0.75rem;font-weight:800;color:var(--yellow);text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;display:flex;align-items:center;gap:6px}
 .rc-sneak-peek-box p{font-size:0.84rem;color:#CCC9B8;margin-bottom:16px}
 
-/* Image Container - Using Recurly Off-Black background to remove white startness */
-.rc-image-fit{width:100%;height:280px;border-radius:8px;background-image:url('https://go.recurly.com/rs/439-LSC-903/images/Monthly%20scorecard%20sample.png');background-size:210%;background-position:5% 20%;background-repeat:no-repeat;border:1px solid rgba(255,215,6,0.15);background-color:var(--offblack)}
+/* Updated Image Container to prevent "chopped" alignment */
+.rc-image-frame {width: 100%; height: 280px; overflow: hidden; border-radius: 8px; background: var(--offblack); border: 1px solid rgba(255, 215, 6, 0.15); display: flex; align-items: flex-start; justify-content: flex-start;}
+.rc-image-frame img {height: 100%; width: auto; object-fit: contain; margin-left: -5%; /* Pulls the content left to hide some edge whitespace */}
 
 .rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
 .rc-tip strong{color:var(--offblack)}
@@ -157,7 +156,9 @@ metadata:
       <div class="rc-sneak-peek-box">
         <h4>✨ Sneak Peek</h4>
         <p>See how you stack up against yourself and your peers. You'll learn more about using this at the end of this learning path!</p>
-        <div class="rc-image-fit"></div>
+        <div class="rc-image-frame">
+          <img src="https://go.recurly.com/rs/439-LSC-903/images/Monthly%20scorecard%20sample.png" alt="Scorecard Preview">
+        </div>
       </div>
     </div>
 
