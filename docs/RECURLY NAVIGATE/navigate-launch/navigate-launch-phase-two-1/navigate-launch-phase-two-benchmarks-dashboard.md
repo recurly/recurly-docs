@@ -210,7 +210,7 @@ metadata:
     <div class="rc-resources">
       <h3>Additional Resources</h3>
       <a class="rc-link-btn" href="https://docs.recurly.com/docs/built-in-benchmarks" target="_blank" rel="noopener noreferrer">📖 Benchmarks Guide</a>
-      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/analytics-dashboards" target="_blank" rel="noopener noreferrer">🔍 Analytics Dashboards Docs</a>
+      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/dashboard" target="_blank" rel="noopener noreferrer">🔍 Analytics Dashboards Docs</a>
       <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Webinars on Demand</a>
       <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
