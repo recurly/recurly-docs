@@ -168,7 +168,7 @@ metadata:
       <div class="rc-clip-label">🎬 Bonus Learning: Webinar</div>
       <p class="rc-clip-title">Get a Headstart: Advanced Reporting Secrets</p>
       <p>Watch Director of Data Matthew Cryer demonstrate how to master the <strong>Trendalyzer</strong>, monitor <strong>hourly activations</strong>, and navigate the four layers of Recurly reporting to unlock non-obvious growth insights.</p>
-      <a class="rc-webinar-link" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">▶ Watch "Beyond the Dashboard" On-Demand →</a>
+      <a class="rc-webinar-link" href="https://navigate.recurly.com/lunch-and-learn/reporting-drives-growth/" target="_blank" rel="noopener noreferrer">▶ Watch "Beyond the Dashboard" On-Demand →</a>
     </div>
 
     <div class="rc-tip">
