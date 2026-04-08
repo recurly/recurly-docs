@@ -185,19 +185,19 @@ metadata:
     
     <div class="rc-safe-sender">
       <div style="font-size: 24px;">📧</div>
-      <p><strong>Never miss an update:</strong> Please add <strong>RecurlyNavigate@Recurly.com</strong> to your contact list. This ensures you always receive Navigate updates, exclusive invites, and your personalized learning paths.</p>
+      <p><strong>Never miss an update:</strong> Please add <strong>RecurlyNavigate@Recurly.com</strong> to your contact list. This ensures you always receive Navigate & Recurly updates and announcements, exclusive invites, and your curated Learning Paths.</p>
     </div>
 
     <div class="rc-next-grid">
       <div class="rc-next-card">
         <h4>✉ Your Customer Success Team</h4>
-        <p>Your CSM is your strategic partner. Join a live <strong>Global Office Hours</strong> session to ask questions around strategy, share learnings, and stay current with new features.</p>
-        <a class="rc-link-btn" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank">Join Office Hours</a>
+        <p>Your CSM is your strategic partner. Join a live <strong>Weekly Global Office Hours</strong> session to ask questions around strategy, share learnings, and stay current with new features.</p>
+        <a class="rc-link-btn" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank">Book Global Office Hours</a>
       </div>
       <div class="rc-next-card">
-        <h4>🎧 Spotlight &amp; On-Demand</h4>
-        <p>Watch our <strong>Customer Spotlight Series</strong> for peer-led leadership sessions, or revisit the Navigate library anytime your team needs a technical refresher.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank">Watch Sessions</a>
+        <h4>🎧 Spotlight &amp; On-Demand Webinars</h4>
+        <p>Watch our <strong>Customer Spotlight Series</strong> for peer-led workshops and leadership sessions, or browse Navigate On-Demand Events for the topics you need.</p>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank">Visit Events</a>
       </div>
       <div class="rc-next-card">
         <h4>🤖 Compass AI</h4>
@@ -206,7 +206,7 @@ metadata:
       </div>
       <div class="rc-next-card">
         <h4>🎓 Proactive Learning Paths</h4>
-        <p>Keep an eye on your inbox! We will proactively provide additional <strong>Navigate Learning Paths</strong> tailored to your individual progress and performance in Recurly.</p>
+        <p>Keep an eye on your inbox! We will provide <strong>Navigate Learning Paths</strong> curated to your individual progress and performance in Recurly to help you keep your momentum strong.</p>
         <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="mailto:RecurlyNavigate@Recurly.com?subject=Whitelist%20Recurly%20Navigate">Whitelist Our Email</a>
       </div>
     </div>
@@ -221,7 +221,7 @@ metadata:
     </div>
 
     <div class="rc-tip" style="margin-top:28px;">
-      <strong>💡 Keep the cadence going:</strong> Treat your Benchmarks Dashboard like a monthly scorecard — review it at the start of each month, compare to the prior period, and flag any metric that moved more than expected.
+      <strong>💡 Keep the cadence going:</strong> Treat your Benchmarks Dashboard like a monthly scorecard — review it at the start of each month, compare to the prior period, and flag any metric that moved more than expected. 
     </div>
 
     <div class="rc-sec-nav">
