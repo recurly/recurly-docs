@@ -1,5 +1,5 @@
 ---
-title: How to Measure Impact
+title: Tracking Impact
 deprecated: false
 hidden: true
 metadata:
