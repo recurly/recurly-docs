@@ -19,5 +19,3 @@ A notification counts as **delivered** only when Recurly gets a timely, successf
 * The endpoint must listen on port **80 (HTTP)** or **443 (HTTPS)**—other ports are not supported.
 * The endpoint must reply within **5 seconds**.
 * The response must be an HTTP **2XX** status (200, 201, 204, etc.). Recurly does not follow redirects, and non-2XX responses are treated as failures.
-
-Need a quick test endpoint? Try <a href="https://requestbin.com/">RequestBin</a> or <a href="https://mockbin.org/">Mockbin</a>.
