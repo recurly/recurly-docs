@@ -32,37 +32,27 @@ This interface facilitates the management of your security and contact settings.
 
 To manage your personal information and security settings, click on your name in the right-upper section of the Recurly app.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/0449030-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/603dfb8111eb04f99eaae81f470d820208532d8cf8c9ae9c4c9fe0c3d4bcc840-Screenshot_2026-04-08_at_8.48.26_AM.png" className="border" />
 
 # Personal information settings
 
 This section displays your personal information. At any time, you may update your full name, email, job function, and time zone. Simply **click** on “Edit Personal Info”, and you will be prompted to enter the necessary changes.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/20cea2a-image.png" />
+<br />
 
 # Account security settings
 
-## Logging in and password management
+## Password management
 
 Here, you can manage your login credentials and familiarize yourself with the security protocols designed to safeguard your account.
 
-To modify your password, click the “Change Password” button and provide the required details.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/812d76c-image.png" />
-
-### Password criteria
-
-Passwords must be at least 12 characters long and incorporate at least one numeric character.
-
-### Password expiration
-
-The system will force a password change during login if the password is older than 90 days.
+To modify your password, click the “Change Password” button and provide the required details.  Passwords must be at least 12 characters long and must include at least one numeric character.  The system will force a password change during login if the password is older than 90 days.
 
 ## Two-factor authentication
 
 > **Deprecation notice**
 >
-> SMS 2FA is disabled for users on new sandbox sites. Current users using an Authenticator App for 2FA will need to upgrade to Recurly’s new TOTP service by March 5th, 2025. 
+> SMS 2FA is disabled for users on new sandbox sites. Current users using an Authenticator App for 2FA will need to upgrade to Recurly’s new TOTP service by March 5th, 2025.
 >
 > **Please** follow the instructions on how to upgrade to the new TOTP service [here](https://docs.recurly.com/docs/profile#upgrading-authenticator-app-to-new-totp-service).
 
@@ -70,7 +60,7 @@ Two-Factor Authentication (2FA) is a feature provided by Recurly that adds an ex
 
 #### Limitations
 
-* While 2FA provides a strong additional layer of security to protect your Recurly account, it’s important to note:\
+* While 2FA provides a strong additional layer of security to protect your Recurly account, it’s important to note:  
   2FA does not replace the need for strong, unique passwords and secure account practices.
 * Users are responsible for maintaining access to their chosen method of receiving verification codes (Authenticator app, Text Message, Email).
 * If a user loses access to their chosen method(s) of verification, they may be unable to access their account until they can receive verification codes again.
@@ -81,18 +71,16 @@ Two-Factor Authentication (2FA) is a feature provided by Recurly that adds an ex
 1. **Navigate** to your user profile in your Recurly account.
 2. **Click** the Enable link that corresponds to the 2FA method to be enabled (Authenticator app, Text message, Email). Multiple 2FA methods can be configured for your account.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/e57d4e4200dcb0b2f493d74ebbee38466c58347e58668a922f660312fe708fc4-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/f61d06dd20926dce6b575d10ef55673f41dca07489497fa36921ea4c06dbf865-Screenshot_2026-04-08_at_9.00.33_AM.png" className="border" />
 
-3. **Enter** your password for verification.
-4. For the first 2FA configuration, ‘Set as default’ is selected automatically. For additional 2FA methods, selecting ‘Set as default’ will change the default 2FA method upon successful configuration. This selection just sets with 2FA method, when multiple are configured, is selected by default when a 2FA token is required to be entered during login.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/395a0fafe76811a54dbd4a0ef695d3b80cc067b5b1aedc1df04c66c5bd876222-image.png" />
+1. **Enter** your password for verification.
+2. For the first 2FA configuration, ‘Set as default’ is selected automatically. For additional 2FA methods, selecting ‘Set as default’ will change the default 2FA method upon successful configuration. This selection just sets with 2FA method, when multiple are configured, is selected by default when a 2FA token is required to be entered during login.
 
 #### Authenticator App verification
 
 Recurly supports various authenticator apps such as Twilio Authy, Okta Verify, Google Authenticator, Microsoft Authenticator, LastPass Authenticator, and more.
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/ef006ee81e9ad3112d8ba94826bbd9883a3ee369f6574f6169d2895926fd619e-image.png" />
+<Image align="center" border={true} width="50% " src="https://files.readme.io/ef006ee81e9ad3112d8ba94826bbd9883a3ee369f6574f6169d2895926fd619e-image.png" className="border" />
 
 You will be presented with a QR code to scan using your chosen authenticator app. Alternatively, you can enter a provided human-readable code manually into the app.
 
@@ -106,7 +94,7 @@ The app will generate a code that you will enter into Recurly to enable two-fact
 
 #### Email Verification
 
-An Email message with a verification code will be sent to the email address for your Recurly account.\
+An Email message with a verification code will be sent to the email address for your Recurly account.  
 Input the received code into the verification field.
 
 ### Changing Default Two-Factor Authentication method
@@ -156,14 +144,6 @@ Setting up multiple 2FA configurations provides a choice of 2FA method to use du
 
 **Click** Enable next to the 2FA configuration you want to set up and follow the instructions on the configuration modals to set up the requested 2FA method.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/3aa443c6d138f06a7064f6672a626db896484e36c9193b8667fc211e4db9d1a9-image.png" />
-
-<br />
-
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/0a9f1dc53af174ee325592bb54e0e02948f49fa2c1cceb929431858daa4f49aa-image.png" />
-
-<br />
-
 ### Troubleshooting
 
 #### Lost mobile device
@@ -187,9 +167,6 @@ Please follow the steps below to upgrade your Authenticator App to the new TOTP 
 
 1. **Log** into Recurly and navigate to your profile.
 2. **Click** on the ellipses to the right side of the Authenticator App in the Two-Factor Authentication configuration section to access the drop down menu and select Disable.
-
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/d860967377bc22596b2fa766b9cfea82cc16d6b3f0608d870afdbad8297a5b95-image.png" />
-
 3. **Follow** the prompts to disable the 2FA Authenticator App configuration.
 4. **Open** your Authenticator App on your mobile phone and delete the configured Recurly account.
 5. **Follow** the directions above to enable 2FA for your Authenticator app.
