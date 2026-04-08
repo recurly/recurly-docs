@@ -44,12 +44,18 @@ metadata:
 .rc-ri-dot{width:22px;height:22px;border-radius:50%;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .rc-ri-dot.y{background:var(--yellow);color:var(--offblack)}
 .rc-ri-dot.o{background:var(--orange);color:#fff}
+.rc-safe-sender{background:var(--offblack);border:1px solid var(--yellow);border-radius:12px;padding:16px 20px;margin-bottom:20px;display:flex;align-items:center;gap:15px}
+.rc-safe-sender p{font-size:.86rem;color:#fff;margin:0;line-height:1.5}
+.rc-safe-sender strong{color:var(--yellow)}
 .rc-next-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
-.rc-next-card{background:#fff;border:1px solid var(--lightgray);border-radius:12px;padding:17px 19px}
+.rc-next-card{background:#fff;border:1px solid var(--lightgray);border-radius:12px;padding:17px 19px;display:flex;flex-direction:column}
 .rc-next-card h4{font-size:.9rem;font-weight:800;color:var(--offblack);margin:0 0 6px}
-.rc-next-card p{font-size:.83rem;color:var(--gray);line-height:1.5;margin:0 0 10px}
+.rc-next-card p{font-size:.83rem;color:var(--gray);line-height:1.5;margin:0 0 14px;flex-grow:1}
 .rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
 .rc-tip strong{color:var(--offblack)}
+.rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
+.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
+.rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
 .rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:.85rem}
 .rc-kpi-table th{background:var(--offblack);color:var(--orange);font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left}
 .rc-kpi-table td{padding:10px 14px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);vertical-align:top}
@@ -87,12 +93,12 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-acquisition-metrics"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-review" class="rc-active"><span class="rc-snum">✓</span>Full Course Review</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-active"><span class="rc-snum">✓</span>Full Course Review</a>
   </nav>
 
   <div class="rc-sec">
@@ -115,10 +121,10 @@ metadata:
       </div>
       <div class="rc-phase-summary p2">
         <h3>📊 Phase 2 · Mastering Metrics</h3>
-        <div class="rc-recap-item"><div class="rc-ri-dot o">1</div>Benchmarks Dashboard — found your KPIs, applied vertical filters, explored reporting tools</div>
+        <div class="rc-recap-item"><div class="rc-ri-dot o">1</div>Benchmarks Dashboard — found KPIs in Analytics → Dashboards → Benchmarks</div>
         <div class="rc-recap-item"><div class="rc-ri-dot o">2</div>Acquisition &amp; Sign-Up Decline Rate — growth metrics, checkout friction</div>
         <div class="rc-recap-item"><div class="rc-ri-dot o">3</div>Voluntary &amp; Involuntary Churn — why subscribers leave and how to act on it</div>
-        <div class="rc-recap-item"><div class="rc-ri-dot o">4</div>Renewal Invoice Paid Rate, Dunning Recovery Rate, Decline at Renewal</div>
+        <div class="rc-recap-item"><div class="rc-ri-dot o">4</div>Renewal &amp; Recovery — Paid rate, Dunning recovery, and Renewal decline</div>
       </div>
     </div>
 
@@ -135,25 +141,25 @@ metadata:
       <tbody>
         <tr>
           <td><strong>Acquisition Rate</strong></td>
-          <td>New paid subscribers / total subscribers</td>
+          <td>New paid subs / Active subs (start of period)</td>
           <td>↑ Higher</td>
           <td>No — driven by marketing &amp; pricing</td>
         </tr>
         <tr>
           <td><strong>Sign-Up Decline Rate</strong></td>
-          <td>Failed first sign-up attempts / total sign-up attempts</td>
+          <td>Failed transaction attempts / total sign-up attempts</td>
           <td>↓ Lower</td>
           <td>Partially — Gateway Failover, 3DS setup</td>
         </tr>
         <tr>
           <td><strong>Voluntary Churn Rate</strong></td>
-          <td>Subscribers who actively canceled</td>
+          <td>Subscribers who canceled / Active subs (start of period)</td>
           <td>↓ Lower</td>
           <td>No — product &amp; experience driven</td>
         </tr>
         <tr>
           <td><strong>Involuntary Churn Rate</strong></td>
-          <td>Subscribers lost to payment failures</td>
+          <td>Subs lost to dunning expiration / Active subs (start of period)</td>
           <td>↓ Lower</td>
           <td>Yes — Account Updater, Dunning</td>
         </tr>
@@ -169,26 +175,26 @@ metadata:
           <td>↑ Higher</td>
           <td>Yes — directly tied to dunning config</td>
         </tr>
-        <tr>
-          <td><strong>Decline Rate at Renewal</strong></td>
-          <td>First-attempt renewal declines / total renewals</td>
-          <td>↓ Lower</td>
-          <td>Yes — directly tied to Account Updater</td>
-        </tr>
       </tbody>
     </table>
 
     <p class="rc-subhead" style="margin-bottom:14px">🚀 What Comes Next</p>
+    
+    <div class="rc-safe-sender">
+      <div style="font-size: 24px;">📧</div>
+      <p><strong>Never miss an update:</strong> Please add <strong>RecurlyNavigate@Recurly.com</strong> to your contact list. This ensures you always receive Navigate updates, exclusive invites, and your personalized learning paths.</p>
+    </div>
+
     <div class="rc-next-grid">
       <div class="rc-next-card">
-        <h4>📅 Office Hours</h4>
-        <p>Join a live Navigate Office Hours session to ask your CSM team questions, share learnings with other merchants, and stay current with new Recurly features.</p>
-        <a class="rc-link-btn" style="font-size:.81rem;padding:8px 14px" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">View Upcoming Sessions</a>
+        <h4>✉ Your Customer Success Team</h4>
+        <p>Your CSM is your strategic partner at Recurly. Join a live <strong>Global Office Hours</strong> session to ask questions around strategy, share learnings with other merchants, and stay current with new features.</p>
+        <a class="rc-link-btn" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Join Office Hours</a>
       </div>
       <div class="rc-next-card">
-        <h4>🎧 On-Demand Webinars</h4>
-        <p>Revisit the Navigate webinar library — "Stack Up Against the Competition" and "Beyond the Dashboard" are both available on-demand anytime your team needs a refresher.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">Watch On-Demand</a>
+        <h4>🎧 Spotlight &amp; On-Demand</h4>
+        <p>Watch our <strong>Customer Spotlight Series</strong> for peer-led strategy and leadership sessions, or revisit the Navigate webinar library anytime your team needs a technical refresher.</p>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Watch Sessions</a>
       </div>
       <div class="rc-next-card">
         <h4>🤖 Compass AI</h4>
@@ -196,28 +202,37 @@ metadata:
         <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://docs.recurly.com" target="_blank" rel="noopener noreferrer">Explore Compass AI</a>
       </div>
       <div class="rc-next-card">
-        <h4>✉ Your Customer Success Team</h4>
-        <p>Questions about your metrics, optimization opportunities, or what to tackle next? Your CSM is your strategic partner at Recurly — they're here to help you grow.</p>
-        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="mailto:customersuccess@recurly.com">Email Your CSM</a>
+        <h4>🎓 Proactive Learning Paths</h4>
+        <p>Keep an eye on your inbox! We will proactively provide additional <strong>Navigate Learning Paths</strong> tailored to your individual progress and performance in Recurly.</p>
+        <span style="font-size:.78rem; color:var(--gray); font-style:italic;">Powered by Navigate →</span>
       </div>
     </div>
 
-    <div class="rc-tip">
-      <strong>💡 Keep the cadence going:</strong> The most successful merchants treat their Benchmarks Dashboard like a monthly scorecard — reviewing it at the start of each month, comparing to the prior period, and flagging any metric that moved more than expected. Set a recurring reminder now while Launchpad is fresh.
+    <div class="rc-card" style="margin-top:24px;">
+      <p class="rc-subhead">📋 Revisiting Your Monthly Metrics Scorecard</p>
+      <p style="font-size:.87rem; color:var(--gray); line-height:1.6; margin-bottom:16px;">As a reminder, you will begin receiving your personalized Scorecard via email on the <strong>second Tuesday of the month</strong> after you have been in production for <strong>90 days</strong>.</p>
+      <div class="rc-video-wrap">
+        <iframe src="https://share.synthesia.io/embeds/videos/a9ab0aa1-ef60-4b08-aaa8-95c0275e245f" loading="lazy" title="Understanding Your Monthly Metrics Scorecard" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+      </div>
+      <p class="rc-video-cap">A deep dive into reading and acting on your monthly performance snapshot.</p>
+    </div>
+
+    <div class="rc-tip" style="margin-top:28px;">
+      <strong>💡 Keep the cadence going:</strong> Treat your Benchmarks Dashboard like a monthly scorecard — review it at the start of each month, compare to the prior period, and flag any metric that moved more than expected.
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-retention-metrics">← Revenue &amp; Recovery</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics">← Revenue &amp; Recovery</a>
       <span class="rc-btn-disabled">🎉 You've Completed Launchpad!</span>
     </div>
 
     <div class="rc-resources">
       <h3>All Your Launchpad Resources</h3>
-      <a class="rc-link-btn rc-link-yellow" href="https://go.recurly.com/Navigate-Launchpad-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Launchpad Cheatsheet</a>
-      <a class="rc-link-btn" href="https://go.recurly.com/Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Metrics Cheatsheet</a>
-      <a class="rc-link-btn rc-link-sec" href="https://go.recurly.com/Navigate-Resource-Guide.html" target="_blank" rel="noopener noreferrer">📖 Navigate Resource Guide</a>
-      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Events &amp; Webinars</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+      <a class="rc-link-btn rc-link-yellow" href="https://go.recurly.com/Recurly_Navigate-Launchpad-Complete-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Full Launchpad Cheatsheet</a>
+      <a class="rc-link-btn" href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer">⬇ Metrics Cheatsheet</a>
+      <a class="rc-link-btn rc-link-sec" href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer">📖 Navigate Resource Guide</a>
+      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Events &amp; Webinars</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
 
