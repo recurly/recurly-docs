@@ -271,7 +271,7 @@ metadata:
     <a href="https://share.synthesia.io/2c1e1470-aa37-4474-a9d2-e6e1ef1e33e7" class="rc-link-btn">🎬 Account Updater Video Walkthrough</a>
     <a href="https://navigate.recurly.com/event-hub/" class="rc-link-btn">📅 Navigate Weekly Global Office Hours</a>
     <a href="mailto:support@recurly.com" class="rc-link-btn">💬 Contact Support</a>
-  </div>
+  </div></div></div>
 `}</HTMLBlock>
 
 <br />
