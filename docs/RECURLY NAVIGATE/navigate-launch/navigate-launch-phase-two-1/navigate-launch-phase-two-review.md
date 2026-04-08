@@ -1,5 +1,5 @@
 ---
-title: 'Section 5: Rewind & Review'
+title: 'Section 5: Review & Resources'
 deprecated: false
 hidden: true
 metadata:
