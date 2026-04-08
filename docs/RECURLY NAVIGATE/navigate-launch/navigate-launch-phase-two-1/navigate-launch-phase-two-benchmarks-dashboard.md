@@ -143,9 +143,9 @@ metadata:
     
     
     <div class="rc-card">
-      <p class="rc-subhead">▶ Trail Guide: Final Production Testing</p>
+      <p class="rc-subhead">▶ Trail Guide: Exploring Your Benchmarks Dashboard</p>
       <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/f3384551-b4b2-4ab3-83fa-c8fe6e88c62f" loading="lazy" title="Navigate Launchpad — Final Production Testing" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+        <iframe src="https://share.synthesia.io/5079f299-d1fa-47f9-aaf2-9cc14a556c67" loading="lazy" title="Navigate Launchpad — Final Production Testing" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
       <p class="rc-video-cap">A walkthrough of Recurly's production testing best practices — what to test, how to test it, and what to look for.</p>
     </div>
