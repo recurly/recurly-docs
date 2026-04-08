@@ -19,7 +19,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Prerequisites
 
 * Users must have analytics user role permission.
-* To see splits in pie chart cards, your site must be processing more than one payment method, such as cards and checks, or cards and apple pay.
+* To see splits in pie chart cards, your site must be processing more than one payment method, such as cards and ACH, or cards and Apple Pay.
 
 # Definition
 
@@ -27,9 +27,9 @@ The Payment Analytics dashboard gives you a deep dive into the performance of yo
 
 # Key benefits
 
-* **Pinpoint underperformance quickly** — by breaking success rates down across gateways, payment methods, and BINs, you can isolate exactly where failures are occurring rather than chasing broad trends.
+* **Pinpoint underperformance quickly** — by breaking success rates down across gateways, payment methods, and card BINs, you can isolate exactly where failures are occurring rather than chasing broad trends.
 * **Turn declines into recoverable revenue** — understanding your top decline reasons gives you a clear, actionable starting point for reducing preventable payment failures.
-* **Optimize with confidence** — combining trend data with granular breakdowns means you can make informed decisions about your payment stack, whether that's switching gateways, prioritizing certain payment methods, or flagging underperforming BINs.
+* **Optimize with confidence** — combining trend data with granular breakdowns means you can make informed decisions about your payment stack, whether that's switching gateways, prioritizing certain payment methods, or flagging underperforming card BINs.
 
 # Key details
 
@@ -43,13 +43,13 @@ The Payment Analytics dashboard gives you a deep dive into the performance of yo
 
 * **Payment method:** If you want to see the breakdown of failed payments by the method your customers use, this filter lets you select specific payment options to analyze.
 
-* **Initiated by:** This filter allows you to select between CIT (customer initiated) or MIT (merchant initiated) transactions. CIT transactions typically requires more payment authentication.
+* **Initiated by:** This filter allows you to select between CIT (customer initiated) or MIT (merchant initiated) transactions.
 
-* **Currency:** This filter allows filtering by the various currencies for your site's geo-location
+* **Currency:** This filter allows you narrow your view to specific currency or currencies.
 
 ## Payment Success Rate
 
-This card displays your overall Payment Success Rate as a single at-a-glance percentage — encompassing both customer and merchant initiated transactions for a fully holistic view of payment health — paired with a month-over-month trend indicator so you can immediately see whether performance is moving in the right direction.
+This card displays your overall Payment Success Rate as a single at-a-glance percentage — encompassing both customer- and merchant-initiated transactions for a fully holistic view of payment health — paired with a month-over-month trend indicator so you can immediately see whether performance is moving in the right direction.
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/d9c7938f2534059104b0aa2ec1cca554c2890e363832f8d9d47a87a0549f8b1e-image.png" className="border" />
 
