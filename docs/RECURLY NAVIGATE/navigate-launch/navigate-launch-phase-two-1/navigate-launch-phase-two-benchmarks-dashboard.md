@@ -89,12 +89,12 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-benchmarks-dashboard" class="rc-active"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-acquisition-metrics"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-active"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics"><span class="rc-snum">3</span>Churn Metrics</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
   </nav>
 
   <div class="rc-sec">
@@ -203,16 +203,16 @@ metadata:
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two">← Phase 2 Overview</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/navigate-launch-phase-two-acquisition-metrics">Step 2: Acquisition &amp; Decline →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two">← Phase 2 Overview</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics">Step 2: Acquisition &amp; Decline →</a>
     </div>
 
     <div class="rc-resources">
       <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com/docs/built-in-benchmarks" target="_blank" rel="noopener noreferrer">📖 Benchmarks Guide</a>
-      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/analytics-dashboards" target="_blank" rel="noopener noreferrer">🔍 Analytics Dashboards Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="https://recurly.com/events/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:customersuccess@recurly.com">✉ Contact Customer Success</a>
+      <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/built-in-benchmarks" target="_blank" rel="noopener noreferrer">📖 Benchmarks Guide</a>
+      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/dashboard" target="_blank" rel="noopener noreferrer">🔍 Analytics Dashboards Docs</a>
+      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
+      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
     </div>
   </div>
 
