@@ -57,7 +57,7 @@ metadata:
 .rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
 .rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
 .rc-kpi-table{width:100%;border-collapse:collapse;margin-bottom:18px;font-size:.85rem}
-.rc-kpi-table th{background:var(--offblack);color:var(--orange);font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left}
+.rc-kpi-table th{background:var(--offblack);color:var(--brightgray);font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left}
 .rc-kpi-table td{padding:10px 14px;border-bottom:1px solid var(--brightgray);color:var(--darkgray);vertical-align:top}
 .rc-kpi-table tr:last-child td{border-bottom:none}
 .rc-kpi-table tr:nth-child(even) td{background:var(--offwhite)}
@@ -147,7 +147,7 @@ metadata:
         </tr>
         <tr>
           <td><strong>Sign-Up Decline Rate</strong></td>
-          <td>Failed transaction attempts / total sign-up attempts</td>
+          <td>Failed unique transaction attempts / total attempts</td>
           <td>↓ Lower</td>
           <td>Partially — Gateway Failover, 3DS setup</td>
         </tr>
@@ -188,12 +188,12 @@ metadata:
     <div class="rc-next-grid">
       <div class="rc-next-card">
         <h4>✉ Your Customer Success Team</h4>
-        <p>Your CSM is your strategic partner at Recurly. Join a live <strong>Global Office Hours</strong> session to ask questions around strategy, share learnings with other merchants, and stay current with new features.</p>
+        <p>Your CSM is your strategic partner. Join a live <strong>Global Office Hours</strong> session to ask questions around strategy, share learnings with other merchants, and stay current with new features.</p>
         <a class="rc-link-btn" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Join Office Hours</a>
       </div>
       <div class="rc-next-card">
         <h4>🎧 Spotlight &amp; On-Demand</h4>
-        <p>Watch our <strong>Customer Spotlight Series</strong> for peer-led strategy and leadership sessions, or revisit the Navigate webinar library anytime your team needs a technical refresher.</p>
+        <p>Watch our <strong>Customer Spotlight Series</strong> for peer-led leadership sessions, or revisit the Navigate webinar library anytime your team needs a technical refresher.</p>
         <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">Watch Sessions</a>
       </div>
       <div class="rc-next-card">
@@ -204,17 +204,17 @@ metadata:
       <div class="rc-next-card">
         <h4>🎓 Proactive Learning Paths</h4>
         <p>Keep an eye on your inbox! We will proactively provide additional <strong>Navigate Learning Paths</strong> tailored to your individual progress and performance in Recurly.</p>
-        <span style="font-size:.78rem; color:var(--gray); font-style:italic;">Powered by Navigate →</span>
+        <a class="rc-link-btn rc-link-sec" style="font-size:.81rem;padding:8px 14px" href="mailto:RecurlyNavigate@Recurly.com?subject=Whitelisting%20Recurly%20Navigate">Whitelist Our Email</a>
       </div>
     </div>
 
     <div class="rc-card" style="margin-top:24px;">
       <p class="rc-subhead">📋 Revisiting Your Monthly Metrics Scorecard</p>
-      <p style="font-size:.87rem; color:var(--gray); line-height:1.6; margin-bottom:16px;">As a reminder, you will begin receiving your personalized Scorecard via email on the <strong>second Tuesday of the month</strong> after you have been in production for <strong>90 days</strong>.</p>
+      <p style="font-size:.87rem; color:var(--gray); line-height:1.6; margin-bottom:16px;">Watch this trail guide as it walks you step-by-step through your Monthly Metrics Scorecard. You will begin receiving your personalized snapshot via email on the <strong>second Tuesday of the month</strong> after you have been in production for <strong>90 days</strong>.</p>
       <div class="rc-video-wrap">
         <iframe src="https://share.synthesia.io/embeds/videos/a9ab0aa1-ef60-4b08-aaa8-95c0275e245f" loading="lazy" title="Understanding Your Monthly Metrics Scorecard" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
-      <p class="rc-video-cap">A deep dive into reading and acting on your monthly performance snapshot.</p>
+      <p class="rc-video-cap">A guided walkthrough on how to read and act on your monthly performance data.</p>
     </div>
 
     <div class="rc-tip" style="margin-top:28px;">
