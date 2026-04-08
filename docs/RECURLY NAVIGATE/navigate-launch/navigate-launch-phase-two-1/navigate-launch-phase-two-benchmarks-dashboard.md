@@ -136,7 +136,7 @@ metadata:
     <div class="rc-card">
       <p class="rc-subhead">▶ Trail Guide: Exploring Your Benchmarks Dashboard</p>
       <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/YOUR-VIDEO-ID-HERE" loading="lazy" title="Navigate Launchpad — Benchmarks Dashboard" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+        <iframe src="https://share.synthesia.io/5079f299-d1fa-47f9-aaf2-9cc14a556c67" loading="lazy" title="Navigate Launchpad — Benchmarks Dashboard" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
       </div>
       <p class="rc-video-cap">A guided tour of the Benchmarks Dashboard — how to read your KPIs, apply filters, and compare your performance against industry peers.</p>
     </div>
