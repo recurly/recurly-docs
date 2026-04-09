@@ -49,7 +49,7 @@ The Payment Analytics dashboard gives you a deep dive into the performance of yo
 
 ## Payment Success Rate
 
-This card displays your overall Payment Success Rate as a single at-a-glance percentage — encompassing both customer- and merchant-initiated transactions for a fully holistic view of payment health — paired with a month-over-month trend indicator so you can immediately see whether performance is moving in the right direction.
+This card displays your overall Payment Success Rate as a single at-a-glance percentage — encompassing both customer- and merchant-initiated transactions for a fully holistic view of payment health — paired with a comparison to the previous time period, so you can immediately see whether performance is moving in the right direction.
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/d9c7938f2534059104b0aa2ec1cca554c2890e363832f8d9d47a87a0549f8b1e-image.png" className="border" />
 
