@@ -221,7 +221,7 @@ Invoices contain a table of line items with these columns:
 * Tax Net (shown only if applicable, displaying the tax calculated by subtotal and tax rate)
 * Total (shown only if tax is applicable)
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/c27cff05d0ca709657c394bf8c2c937512dedbe3ab946c673d77a2a06af92c41-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/a92bac25e71813afc14bc6a42def2339e755646c47c23ba4756f9bc8209d8652-image.png" className="border" />
 
 > **Note:** Invoices displayed via the Admin Console, Hosted Invoice, and PDF will truncate line items after the first 500. The subtotal, tax, and total will reflect the sum of all line items. To access line items beyond the first 500, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports)
 
