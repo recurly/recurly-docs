@@ -75,7 +75,7 @@ A business entity is a critical part of defining your business's identity to you
 
 Your business entity allows you to define your business's identity to your customers. By setting up your business entity, you can control the company name, address, contact phone number, and VAT/Tax ID information that is displayed on customer invoices. You are also able to set a unique entity tax address for your business within the business entity setup, that can either be the same address as the invoice display or entirely different.
 
-<Image align="center" border={true} src="https://files.readme.io/4b5f1fc-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/39d19465f4103b6cf482c18cd54f4d0382c305833ada260b4f3a4e30ce2dde98-image.png" className="border" />
 
 For businesses with global locations, Recurly offers the flexibility to set different addresses for invoice display and tax calculations. This means you could have a US address used for tax calculation on a purchase,  and a European address for invoice display.
 
@@ -103,7 +103,7 @@ This revised section provides clarity on which components are essential and whic
 
 This section captures the name of the company, entity code (which acts as a unique identifier used in URLs and API references - the default entity code is "default" and cannot be modified), and the phone number that will appear on invoices (often a customer support number).
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/5c92ad1-Screenshot_2024-03-13_at_8.13.33_PM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/432de9b65c0a0c7302f7952394c1156dde527859eeec979331f02d333a417bca-image.png" className="border" />
 
 ### Invoice display address
 
@@ -111,11 +111,11 @@ The address you enter is the company information that appears on each customer i
 
 If you choose to use different addresses for invoice display and tax calculation, you can enter a unique address for each. Note that only the tax calculation address will be sent to Avalara or Vertex; the invoice display address will not be used for tax calculations.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/2619d64-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/d74c7110316318650028b5d55e617bf68d0c9eea87bd1ae0623a5563b535358b-image.png" className="border" />
 
 Even if you don't have taxes enabled on your Recurly site, setting up your business entity is beneficial. The invoice display address will appear on all customer invoices, which can contribute to your brand image and identity.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/527e93e-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/acbfd75b522d3cc6b586948ade4b0bd2285952f48de71e898552c578fcb0b346-image.png" className="border" />
 
 ### Invoice settings
 
