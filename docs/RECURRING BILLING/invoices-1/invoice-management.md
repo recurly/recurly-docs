@@ -303,7 +303,9 @@ In the Notes section of the invoice following any customer-specific notes, Recur
 
 ## PDFs
 
-Enable PDF invoice attachments in email notifications by navigating to the Email Templates page in the Configuration section of Recurly App. From here, you can go into the "edit" view of any of the 7 email templates with invoices associated, select "Attach PDF" under "Attachments" and save your changes. PDFs of invoices can also be downloaded from the Admin Console or Hosted Pages.
+Enable PDF invoice attachments in email notifications by navigating to the Email Templates page in the Configuration section of Recurly App. 
+
+From here, you can go into the "edit" view of any of the 7 email templates with invoices associated, select "Attach PDF" under "Attachments" and save your changes.
 
 Email Templates that support invoice PDF attachments:
 
@@ -315,7 +317,7 @@ Email Templates that support invoice PDF attachments:
 * Payment Refunded
 * Payment Voided
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/142bd85-Screenshot_2024-08-05_at_9.21.28_AM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/7991f5e1662aac7700799c06d51013d81571f449a5957f284458d36a833b94cf-image.png" className="border" />
 
 ## Emails
 
