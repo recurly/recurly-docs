@@ -62,11 +62,13 @@ Gateway Failover is a feature designed to provide a safety net for merchants by 
 1. Go to the [Recurly gateway configuration page](https://app.recurly.com/go/configuration/payment_gateways).
 2. Select (1) Options→(2) Edit Gateway on the desired gateway entry to edit.
 
-![Exclude Step 1](https://files.readme.io/fd8975b-gwr_exclude_1.png "Exclude Step 1")
+![](https://files.readme.io/aba15e1d67cf5cecadafdb82a32e00eb6d64b3af2961cd05c0c99ae0a29e3624-image.png)
+
+<Image align="center" border={true} width="30% " src="https://files.readme.io/f523d1bef3731ffa53da799c3af2184be022733bf04966576e418b4e3a989d2e-image.png" className="border" />
 
 3. Check the box for: "**Exclude from Gateway Failover**."
 
-![Exclude Step 2](https://files.readme.io/d66aa88-gwr_exclude_2.png "Exclude Step 2")
+![](https://files.readme.io/a2aed17cfbeecf9a486970c79a8e8fd784bf0e0ab64c747b3b12863cc31f2f08-image.png)
 
 This exclusion is crucial for merchants utilizing [Custom Gateway Routing](https://docs.recurly.com/docs/custom-gateway-routing-configuration) who wish to prevent failover transactions from being routed to a gateway designated for specific purposes.
 
