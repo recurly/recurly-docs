@@ -1,7 +1,7 @@
 ---
 title: Pause API Test - Considerations
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
