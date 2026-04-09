@@ -375,7 +375,11 @@ Once failed, an invoice cannot be reopened. This applies to manual collection in
 
 Refunds are processed at the invoice level. Options include changing a subscription, refunding a specific invoice, or refunding the last invoice while terminating a subscription. These actions generate a refund credit invoice with credit line items against previously paid charge line items. Directly refunding an invoice allows you to distribute the credit as a payment refund or retain it as a credit balance for future invoices.
 
-To refund an invoice, select "Refund Invoice" in the Invoice Actions dropdown in the Admin Console. Invoice refunds are also supported in both versions of Recurly's API.
+To refund an invoice, select "Issue Refund" in the **Invoice Actions** dropdown in the Admin Console. 
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b9244b94fbf72c85c2e397d4a58498e523050b7e1ad3b46ea3e495798ec04007-image.png" className="border" />
+
+Invoice refunds are also supported in both versions of Recurly's API.
 
 Once you are on the Issue Refund page, you have a few options to choose how to handle your refund. You can issue your refund either by the line item level, or for the entire invoice.
 
@@ -385,11 +389,11 @@ Once you are on the Issue Refund page, you have a few options to choose how to h
 
 **Select to refund by line item**:
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/1d7bd0ff3a3c0d40d7baa51e77984d63c2a1b382e0913f5ea12724339d7e7566-Screenshot_2024-08-20_at_1.18.46_PM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/56d53f7e6e5a4c528ea0f3aed6dcc7909686fb6bc00d62e10621ffa26bd5d24d-image.png" className="border" />
 
 **Select to refund by entire invoice:**
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/155cce782e09c877c4053f44bd9913362ac7a89b8a9794883765198888a69af3-Screenshot_2024-08-20_at_1.27.12_PM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/f6a52be7f550e7850161b6873323e0c528f18232a9b9deca7059461e6c16696f-image.png" className="border" />
 
 Refund options for issuing refunds by individual line items include refunding a line item by quantity, specific amount, or percentage. Refund options for issuing refunds for whole invoices include refunding by a specific amount, or percentage amount.
 
