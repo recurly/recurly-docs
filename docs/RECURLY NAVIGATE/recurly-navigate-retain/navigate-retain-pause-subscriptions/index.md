@@ -65,10 +65,8 @@ metadata:
     <div class="rc-card">
       <h3 style="margin-top:0;">The Pause Concept in a Nutshell</h3>
       <p>Recurly's Pause Subscriptions feature lets you temporarily halt a subscriber's billing cycle without canceling their subscription. Instead of losing a subscriber entirely when they need a break—whether due to travel, seasonal usage patterns, budget constraints, or simply wanting time away—you give them a middle option. The subscription enters a paused state: no invoices are generated, no charges occur, and the subscriber's account remains intact.</p>
-      <p>When the pause period ends, billing resumes automatically on the next renewal date. Think of it this way: cancellation is a door that's hard to reopen. A pause is a bookmark—the subscriber's place is held, their payment method stays on file, and their return path is frictionless.</p>
+      <p>When the pause period ends, billing resumes automatically on the next renewal date. Think of it this way: cancellation is a door that's hard to reopen. A pause is a bookmark—the subscriber's place is held, their payment method stays on file, and their return path is frictionless. This distinction has a profound impact on your retention metrics and lifetime revenue per subscriber.</p>
     </div>
-
-    
 
     <div class="rc-subhead">How the Pause Lifecycle Works</div>
 
@@ -76,34 +74,37 @@ metadata:
       <div class="rc-sbadge">1</div>
       <div>
         <h4 style="margin:0 0 8px;">Pause Is Initiated</h4>
-        <p style="margin:0;">A pause can be triggered by the subscriber via self-service, by your team in the Admin Console, or via the Recurly API. You specify a <strong>remaining billing cycles</strong> value, which tells Recurly how many renewal periods to skip.</p>
+        <p style="margin:0;">A pause can be triggered in multiple ways: by the subscriber through a self-service hosted page, by your team through the Recurly Admin Console, or programmatically via the Recurly API. You specify a <strong>remaining billing cycles</strong> value, which tells Recurly how many renewal periods to skip before automatically resuming.</p>
       </div>
     </div>
+
     <div class="rc-step">
       <div class="rc-sbadge">2</div>
       <div>
         <h4 style="margin:0 0 8px;">Current Period Completes</h4>
-        <p style="margin:0;">The pause does not take effect immediately mid-cycle. The subscriber continues to have access through the end of their current billing period. Once that expires, the subscription transitions into the <strong>paused</strong> state.</p>
+        <p style="margin:0;">Importantly, the pause does not take effect immediately mid-cycle. The subscriber continues to have access through the end of their current billing period. Once that period expires, the subscription transitions into the <strong>paused</strong> state.</p>
       </div>
     </div>
+
     <div class="rc-step">
       <div class="rc-sbadge">3</div>
       <div>
         <h4 style="margin:0 0 8px;">Subscription Enters Paused State</h4>
-        <p style="margin:0;">While paused, Recurly will not generate any invoices. The subscriber's account, plan details, add-ons, and coupons all remain intact. No dunning cycles are triggered.</p>
+        <p style="margin:0;">While paused, Recurly will not generate any invoices for that subscription. The subscriber's account, plan details, add-ons, and stored payment methods all remain intact. No dunning cycles are triggered.</p>
       </div>
     </div>
+
     <div class="rc-step">
       <div class="rc-sbadge">4</div>
       <div>
         <h4 style="margin:0 0 8px;">Automatic Resumption</h4>
-        <p style="margin:0;">When the specified paused cycles elapse, Recurly automatically resumes the subscription. A new invoice is generated, the stored payment method is charged, and the billing cycle continues automatically.</p>
+        <p style="margin:0;">When the specified number of paused cycles have elapsed, Recurly automatically resumes the subscription. A new invoice is generated, the stored payment method is charged, and the subscriber's billing cycle continues as if they'd never left.</p>
       </div>
     </div>
 
     <div class="rc-tip">
       <strong>💡 Pro Tip: Pair Pause with Cancel-Save Flows</strong>
-      <p style="margin:8px 0 0;">When a subscriber clicks "Cancel," present pause as an alternative before they finalize. This intercept can convert would-be cancellations into temporary pauses—keeping subscribers without additional acquisition spend.</p>
+      <p style="margin:8px 0 0;">Recurly's Pause feature is most powerful when integrated into your cancel-save flows. When a subscriber clicks "Cancel," present pause as an alternative before they finalize. This intercept can convert a significant percentage of would-be cancellations into temporary pauses.</p>
     </div>
   </div>
 
