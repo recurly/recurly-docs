@@ -49,42 +49,42 @@ The Fraud Prevention dashboard provides a comprehensive view of your Kount integ
 
 ## Transactions Blocked (Fraud)
 
-The total number of transactions flagged and blocked as fraudulent in the selected period. The current value of 4,381 represents a 7% decrease compared to the previous period (4,691), suggesting either a reduction in fraud attempts or a shift in risk threshold settings. Monitor this alongside your Average Risk Score to distinguish between the two.
+The total number of transactions flagged and blocked as fraudulent in the selected period.
 
 If this number is higher than you think it should be, or has spiked, there are a few options to consider:
 
-* Your site may be under attack from a fraudster and Kount is working properly. Takes steps to protect your site if necessary. You may also set up a Kount rule, or a rule within your own infrastructure to block the fraudster directly.
+* Your site may be under attack from a fraudster and Kount is working properly.
 * You have updated a fraud rule in Kount recently that may be misbehaving. Speak to your Kount representative to review rules on blocked transactions that you believe to be false positives.
 
 <Image align="center" border={true} width="200px" src="https://files.readme.io/12e171c5ea1c29c58340c9a23068168a81c46867ccad9b130e4cc29eedd91199-image.png" className="border" />
 
 ## Blocked Transactions Over Time
 
-This line chart tracks the daily count of fraud-blocked transactions. Volume remains relatively steady between 100–250 blocks per day for most of the period, before a dramatic spike around March 19–20, peaking near 750 blocked transactions in a single day. This sharp surge likely indicates a coordinated fraud attack or bot activity, followed by a quick return toward normal levels. Use this chart to detect and investigate fraud events in real time.
+This line chart tracks the daily count of fraud-blocked transactions in the time period.
 
 <Image align="center" border={true} width="-100% " src="https://files.readme.io/4b022444681539b49aad0fb8e5e256344bb5f7988b47cab7398ee68d8d5b981c-image.png" className="border" />
 
 ## Average Risk Score
 
-The mean Kount risk score assigned to transactions in the selected period. The current score of 73.395 represents a 24% increase compared to the previous period (59.215), signaling that transactions are being evaluated as meaningfully riskier on average. A climbing risk score — especially paired with the spike seen in the blocked transactions chart — may indicate an ongoing or escalating fraud pattern that warrants closer review of your risk thresholds and blocking rules.
+The mean Kount risk score assigned to transactions in the selected period.
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/ce38e193b698996c3abb9501d90b465ebcf63d5747dbb3ac4bb1ecd816eb4195-image.png" className="border" />
 
 ## Average Risk Score Over Time
 
-This line chart tracks the daily average Kount risk score from March 2 through March 25. Scores fluctuate in a generally stable range early in the period, with a notable dip around March 6–7, before trending steadily upward through March 20–25. The consistent climb toward the end of the period aligns with the increase in blocked transactions seen in the previous chart, reinforcing that fraud pressure was intensifying during that window. Use this chart to identify when risk levels begin rising so action can be taken before blocked transaction volume surges.
+This line chart tracks the daily average Kount risk score in the time period. Use this chart to identify when risk levels begin rising so action can be taken before blocked transaction volume surges.
 
 <Image align="center" border={true} src="https://files.readme.io/b36b5bd58d7c5e53689b3e4498d4669e9f07a77db679195bd12ae6916fedaa39-image.png" className="border" />
 
 ## Fraud by Payment Method
 
-This pie chart breaks down blocked fraud transactions by payment method. Credit Card dominates at 40.4%, followed by Debit Card at 38.8%, making card-based payments responsible for nearly 80% of all fraud attempts. Apple Pay accounts for 13.5%, with Prepaid Card and Google Pay making up the remaining small shares at roughly 1–2% each. This distribution highlights where fraud prevention efforts and friction controls should be most heavily focused.
+This pie chart breaks down blocked fraud transactions by payment method.
 
 <Image align="center" border={true} width="500px" src="https://files.readme.io/7eb8447753999a4abb5246b966990ff9bb34ef70e0588d29b340a867fcafa20e-image.png" className="border" />
 
 ## Blocked Transactions by Gateway
 
-This bar chart shows the volume of fraud-blocked transactions by payment gateway. Adyen accounts for the overwhelming majority with approximately 5,000 blocked transactions, dwarfing the other gateways. Unknown Gateway and First Data each account for a small fraction at roughly 260–280 blocks apiece. This concentration suggests that either the bulk of transaction volume flows through Adyen, or that it may warrant a closer review of its fraud exposure relative to the other gateways.
+This bar chart shows the volume of fraud-blocked transactions by payment gateway.
 
 <Image align="center" border={true} width="00px" src="https://files.readme.io/e3edc529acadd48b9440084b0a9be5bc6b6167c4b89428766ba3c7e4766cbbbd-image.png" className="border" />
 
