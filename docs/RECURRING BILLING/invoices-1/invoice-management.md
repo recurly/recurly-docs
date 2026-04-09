@@ -144,7 +144,7 @@ Recurly enables the addition of a hidden prefix to your invoice numbering. This 
 
 To add a hidden prefix, go to Configuration→Site Settings and enter your desired prefix under "Order Number Prefix".
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/17f741da4a04d35ac89eae3158e5b8e4ed1b872a4beac5e1a270f556f63d3432-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b85d93e470e2b710adb1c1c440ffdf3a9a19d0aa11027b6a08f05e5d3aab3ed9-image.png" className="border" />
 
 ### Customize initial number
 
