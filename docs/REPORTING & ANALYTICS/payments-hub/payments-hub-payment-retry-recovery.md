@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-This dashboard provides a comprehensive view of the payment retry engine's performance over the current period, tracking at-risk revenue across all retry attempts and measuring how effectively failed transactions are being recovered. While overall volume is down compared to the prior period, the retry engine continues to recover the majority of failed transactions — most within the first two attempts — though a notable drop in recovery rate signals an opportunity to fine-tune retry logic and recapture prior period performance.
+This dashboard provides a comprehensive view of Recurly's performance for automatic and intelligent retries over the current period, tracking at-risk revenue across all retry attempts and measuring how effectively initially-failed transactions are being recovered.
 
 # Key benefits
 
@@ -48,22 +48,22 @@ This dashboard provides a comprehensive view of the payment retry engine's perfo
 
 ## Recovered Transactions
 
-The total number of failed payment transactions successfully recovered through the retry engine in the current period, standing at 2,380 — down 18% from 2,913 in the prior period. While the decline indicates fewer transactions are being recovered overall, this should be read in context alongside Retry Attempts, which fell by the same 18%, suggesting the drop is volume-driven rather than a deterioration in retry effectiveness.
+The total number of failed payment transactions successfully recovered through the retry engine in the current period.
 
 <Image align="center" border={true} src="https://files.readme.io/f8215ad29a6f6208acbc2701aebaf6ba85d31887d9e031996ab172b9d21e452f-image.png" className="border" />
 
 ## Payment Recovery Over Time
 
-This chart tracks the daily volume of successfully recovered payment transactions over the past month. The high volatility may reflect batch retry cycles, dunning schedule patterns, or underlying payment processor behavior worth investigating.
+This chart tracks the daily volume of successfully recovered payment transactions in the time period.
 
 <Image align="center" border={true} src="https://files.readme.io/8df9d7fb386a90744cff3db199099ea75660e0194a7bb7692e6442799630d3a2-image.png" className="border" />
 
 ## Revenue Recovered
 
 * **Retry Attempts** - total number of failed payment transactions that entered the retry queue in the current period.
-* **Revenue at Risk** - total dollar value of transactions that failed and required a retry attempt. The significant drop aligns with the reduction in retry attempts and may indicate fewer high-value transactions are failing.
+* **Revenue at Risk** - total dollar value of transactions that failed and required a retry attempt.
 * **Recovered Revenue** - total revenue successfully recaptured through the retry engine.
-* **Recovery Rate** - percentage of at-risk revenue that was successfully recovered. This is the most critical metric to monitor, as the dip indicates the retry strategy is recovering a smaller share of at-risk revenue and may warrant a review of retry logic, timing, or payment method fallback rules.
+* **Recovery Rate** - percentage of at-risk revenue that was successfully recovered.
 
 <br />
 
@@ -71,12 +71,6 @@ This chart tracks the daily volume of successfully recovered payment transaction
 
 ## Success Rate by Retry Attempt
 
-This chart shows the distribution of successful payment recoveries broken down by which retry attempt closed the transaction. The pattern follows a steep power-law curve, with the vast majority of recoveries happening early in the retry cycle:
-
-Attempt 2 dominates overwhelmingly at 2,100 successful transactions, accounting for the lion's share of all recovered payments — confirming that a single retry resolves most failures.
-Recovery success drops sharply from there, with 127 successes on attempt 3, 49 on attempt 4, and quickly tapering to double and single digits by attempts 5 through 7.
-Beyond attempt 7, recoveries become minimal (8 or fewer per attempt), with the retry engine continuing out to 14 attempts but yielding diminishing returns.
-
-The steep drop-off after attempt 2 suggests that most failed payments are due to transient issues (e.g., temporary insufficient funds or network errors) that resolve quickly. The long tail of attempts 8–14 recovers very few transactions and may warrant a cost-benefit review — the marginal revenue recovered in later attempts should be weighed against customer experience impact and processing costs.
+This chart shows the distribution of successful payment recoveries broken down by which retry attempt successfully processed the payment.
 
 <Image align="center" border={true} src="https://files.readme.io/112efee63ab4631db531883741571cac48da8c81e3374b0d8629f45985580c3a-image.png" className="border" />
