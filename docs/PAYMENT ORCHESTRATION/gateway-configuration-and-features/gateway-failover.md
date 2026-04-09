@@ -43,34 +43,36 @@ Gateway Failover is a feature designed to provide a safety net for merchants by 
 * **Minimized financial impact**: By rerouting transactions, financial losses due to gateway outages are substantially reduced.
 * **Operational resilience**: Enhances operational resilience by providing a backup plan for payment processing, thereby maintaining a good customer experience.
 
+<br />
+
 # Enable gateway failover
 
 1. Navigate to the [Recurly gateway configuration page](https://app.recurly.com/go/configuration/payment_gateways).
 
-<Image align="center" border={true} width="30% " src="https://files.readme.io/c2627568961fe4b5ed3117049d7e24811e9e4a6a9da228aaeb2ae41fbb7d11e2-image.png" className="border" />
+<Image align="center" border={true} width="30%" src="https://files.readme.io/c2627568961fe4b5ed3117049d7e24811e9e4a6a9da228aaeb2ae41fbb7d11e2-image.png" className="border" />
 
-2. Select "Enable" from the Gateway Failover modal on the right.
+2. Select **Enable** from the Gateway Failover panel on the right.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/28bba94d64a5532330afc8ee668481eb7a5275dfb331b78f6148ec3c3351cbdb-image.png" className="border" />
+<Image align="center" border={true} width="50%" src="https://files.readme.io/28bba94d64a5532330afc8ee668481eb7a5275dfb331b78f6148ec3c3351cbdb-image.png" className="border" />
 
-2. Confirm feature enablement on the modal that appears.
+3. Confirm the enablement on the modal that appears.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/7cddbd21bd2cd87e83b4ac8cf59331e087a762162ec5ad9f1973dda69102e782-image.png" className="border" />
+<Image align="center" border={true} width="80%" src="https://files.readme.io/7cddbd21bd2cd87e83b4ac8cf59331e087a762162ec5ad9f1973dda69102e782-image.png" className="border" />
 
-### Exclude a Gateway from Failover
+## Exclude a gateway from failover
 
-1. Go to the [Recurly gateway configuration page](https://app.recurly.com/go/configuration/payment_gateways).
-2. Select (1) Options→(2) Edit Gateway on the desired gateway entry to edit.
+1. Navigate to the [Recurly gateway configuration page](https://app.recurly.com/go/configuration/payment_gateways).
+2. Select **Options** → **Edit gateway** on the gateway you want to update.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/aba15e1d67cf5cecadafdb82a32e00eb6d64b3af2961cd05c0c99ae0a29e3624-image.png" className="border" />
+<Image align="center" border={true} width="80%" src="https://files.readme.io/aba15e1d67cf5cecadafdb82a32e00eb6d64b3af2961cd05c0c99ae0a29e3624-image.png" className="border" />
 
-<Image align="center" border={true} width="30% " src="https://files.readme.io/f523d1bef3731ffa53da799c3af2184be022733bf04966576e418b4e3a989d2e-image.png" className="border" />
+<Image align="center" border={true} width="30%" src="https://files.readme.io/f523d1bef3731ffa53da799c3af2184be022733bf04966576e418b4e3a989d2e-image.png" className="border" />
 
-3. Check the box for: "**Exclude from Gateway Failover**."
+3. Check the **Exclude from gateway failover** box.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/a2aed17cfbeecf9a486970c79a8e8fd784bf0e0ab64c747b3b12863cc31f2f08-image.png" className="border" />
+<Image align="center" border={true} width="80%" src="https://files.readme.io/a2aed17cfbeecf9a486970c79a8e8fd784bf0e0ab64c747b3b12863cc31f2f08-image.png" className="border" />
 
-This exclusion is crucial for merchants utilizing [Custom Gateway Routing](https://docs.recurly.com/docs/custom-gateway-routing-configuration) who wish to prevent failover transactions from being routed to a gateway designated for specific purposes.
+This setting is especially useful for merchants using [Custom Gateway Routing](https://docs.recurly.com/docs/custom-gateway-routing-configuration) who want to prevent failed transactions from being rerouted to a gateway that's reserved for a specific purpose.
 
 ## Gateway Failover implementation details
 
