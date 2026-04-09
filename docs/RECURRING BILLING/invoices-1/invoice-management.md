@@ -40,7 +40,7 @@ All invoices on your Recurly site, both charge and credit, follow the same invoi
 
 ### Considerations
 
-Invoice numbers are often used in reconciliation of invoices and transactions.  This should be considered when adding an entity specific prefix.  Gateways handle the information sent differently, including length of these invoice numbers. For more detailed information, visit [gateway specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers).
+Invoice numbers are often used to reconcile invoices and transactions, so consider this before adding an entity-specific prefix. Gateways also handle this information differently, including invoice number length. For more detailed information, visit [gateway specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers).
 
 Invoice numbering customization options are detailed below:
 
@@ -48,28 +48,30 @@ Invoice numbering customization options are detailed below:
 
 Customize invoice numbering to reflect the appropriate entity for your business requirements.
 
-Recurly enables the addition of an invoice number prefix to be added to invoice numbers. The prefix is an alphanumeric that is prepended to the sequential number.  When adding an entity prefix, the sequence will start at 1000 and increment by 1.
+Recurly enables you to add an invoice number prefix. The prefix is an alphanumeric value prepended to the sequential number. When you add an entity prefix, the sequence starts at 1000 and increments by 1.
 
 An entity prefix will continue to support country-specific sequencing for countries in the EU for each sequence/prefix.
 
-An invoice number prefix can be added per Business Entity, go to Business Entity→Invoice Settings: Invoice Number Settings: Entity Prefix.
+You can add an invoice number prefix per business entity. Go to Business Entity→Invoice Settings: Invoice Number Settings: Entity Prefix.
 
 For more information on configuring prefixes, visit [Business Entity Invoice Settings](https://docs.recurly.com/recurly-subscriptions/docs/business-entities#invoice-settings).
 
 Contact [support](mailto:support@recurly.com) to have entity invoice prefix added to your account.
 
-# Definition
+## Business entities
+
+### Definition
 
 A business entity is a critical part of defining your business's identity to your customers. By carefully setting up your business entity, you can control how your business is represented on invoices, which can have a significant impact on how your customers perceive your brand.
 
-# Key benefits
+### Key benefits
 
 * **Customized customer experience:** By defining your business entity, you can tailor the information displayed on your customer invoices and emails, enhancing brand recognition and professionalism.
 * **Global flexibility:** With the ability to set different addresses for invoice display and tax calculation, you can effectively manage your operations if your business has multiple locations around the globe.
 * **Enhanced tax compliance:** Set up unique VAT/Tax ID information for each entity to comply with regional tax regulations and ensure correct tax calculations for each transaction.
 * **Scalability:** The option to configure multiple business entities provides scalability for growing businesses with complex organizational structures or multiple distinct brands.
 
-# Key details
+### Key details
 
 ## What is a business entity?
 
@@ -77,9 +79,9 @@ Your business entity allows you to define your business's identity to your custo
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/39d19465f4103b6cf482c18cd54f4d0382c305833ada260b4f3a4e30ce2dde98-image.png" className="border" />
 
-For businesses with global locations, Recurly offers the flexibility to set different addresses for invoice display and tax calculations. This means you could have a US address used for tax calculation on a purchase,  and a European address for invoice display.
+For businesses with global locations, Recurly offers the flexibility to set different addresses for invoice display and tax calculations. This means you could have a US address used for tax calculation on a purchase and a European address for invoice display.
 
-# Setting up your business entity
+### Setting up your business entity
 
 Setting up your business entity in Recurly involves defining three essential components: company details, invoice display address, and tax address. Additionally, you have the option to enter Tax ID Numbers (TINs) or TIN/VAT information based on your organization's needs, as well as header and footer logo images for invoice display.
 
@@ -88,13 +90,11 @@ Setting up your business entity in Recurly involves defining three essential com
 * **Tax address**: This is the address used by Recurly to calculate tax obligations. It’s essential to enter this information accurately, as it affects the calculation of sales and other taxes for your transactions.
 * **Tax ID numbers (TINs) / TIN/VAT information (optional)**: If your company is required to collect VAT or has a Tax Identification Number (TIN), you can enter this information here. This section is optional, and you should consult with your tax advisor or authority to determine if it is necessary for your business.
 * **Billing Contact Email**: This is the email address used for display on all Recurly invoices/receipts and acts as the 'from' address for all transaction-related customer communications. Your Site Default Entity will always use the billing contact email address set on your Site Settings page. If you are on Recurly's Elite plan, you can set [unique email addresses for each alternate business entity](https://docs.recurly.com/docs/multiple-business-entities#entity-specific-merchant-email-addresses). If you do not set an entity-specific billing contact email address on an alternate entity, the email address on your Site Settings page will be used as a fallback.
-* **Logo/images for header and footer** : Images to add to the invoice’s header and footer. These are optional configurations.
+* **Logo/images for header and footer**: Images to add to the invoice header and footer. These are optional configurations.
 
 Please ensure that the company details, invoice display address, and tax address are filled out accurately based on your organization’s requirements, as they are critical to your operation within Recurly.
 
-This revised section provides clarity on which components are essential and which are optional when setting up a business entity in Recurly. It also adopts the consistent terminology "Tax ID Numbers (TINs) / TIN/VAT Information" as per the feedback.
-
-**For merchants on Recurly's Elite plans only:** [Learn more. ](https://docs.recurly.com/docs/multiple-business-entities#entity-level-invoice-treatments)
+**For merchants on Recurly's Elite plans only:** [Learn more.](https://docs.recurly.com/docs/multiple-business-entities#entity-level-invoice-treatments)
 
 * **Customer notes**: Customer Notes is another notes section available to you for any details you would like to add. This section is ideal for notes on invoice details or including a special message for the customer, like "thanks for your business".
 * **Terms and conditions**: Terms and Conditions is a notes section available to you for any details you would like to add. The section is ideal for notes about payment or contract terms.
@@ -136,11 +136,11 @@ Contact [support](mailto:support@recurly.com) to have entity invoice prefix adde
 
 For a separate invoice sequence for each European Union country, you can activate the Country Invoice Sequencing feature in Recurly. Go to Business Entity→Invoice Settings: Invoice Settings, find "Country Sequencing", and enable "Country Invoice Sequencing".
 
-For more detailed information, visit [EU Country Sequencing](https://docs.recurly.com/recurly-subscriptions/docs/eu-vat-2015#invoice-sequencing-by-country) For more information on configuration, visit [Business Entity Invoice Settings](https://docs.recurly.com/recurly-subscriptions/docs/business-entities#invoice-settings).
+For more detailed information, visit [EU Country Sequencing](https://docs.recurly.com/recurly-subscriptions/docs/eu-vat-2015#invoice-sequencing-by-country). For configuration details, visit [Business Entity Invoice Settings](https://docs.recurly.com/recurly-subscriptions/docs/business-entities#invoice-settings).
 
 ### Order Number Prefix
 
-Recurly enables the addition of a hidden prefix to your invoice numbering. This is particularly helpful if you use the same payment gateway for multiple billing systems and need to segment your transactions. The order number prefix will not appear on invoices.  The order number prefix is not configured per business entity.
+Recurly enables the addition of a hidden prefix to your invoice numbering. This is particularly helpful if you use the same payment gateway for multiple billing systems and need to segment your transactions. The order number prefix will not appear on invoices. The order number prefix is not configured per business entity.
 
 To add a hidden prefix, go to Configuration→Site Settings and enter your desired prefix under "Order Number Prefix".
 
@@ -184,7 +184,9 @@ Every invoice includes a Bill To address for the customer:
 
 * Defaults to Billing Information for automatic collection methods or Account Information for manual methods.
 * Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration→Taxes→Tax Settings.
-  Fields displayed in the Bill To section:
+
+Fields displayed in the Bill To section:
+
 * First and Last Name
 * Company Name (from Account Information)
 * Address (Address 1 and Address 2)
@@ -205,7 +207,8 @@ An invoice includes a Ship To address if a shipping address is associated with t
 * Zip/Postal Code
 * Country
 * VAT Number
-  Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses)
+
+Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses)
 
 ### Line items
 
@@ -233,7 +236,9 @@ At the bottom right of the invoice, the following invoice-level values are displ
 * **Tax:** Shown only if tax is applicable to the invoice.
 * **Total:** The invoice total, inclusive of all charges and taxes.
 * **Balance:** The remaining amount due on the invoice.
-  Between the Total and Balance, the following balance-changing entries are listed:
+
+Between the Total and Balance, the following balance-changing entries are listed:
+
 * **Paid:** Represents the total of all payment transactions.
 * **Credit Applied/Redeemed:** The total value of all credit payments applied to the invoice.
 * **Payment Refund:** The total of all refund transactions made against the invoice.
@@ -289,10 +294,10 @@ Invoices feature three types of notes sections, which are visible only if they c
 * **Description:** Used for European Union reverse charge tax scenarios.
 * **Configuration:** Set up on the Tax Settings page.
 
-Learn more about [VAT Reverse Charge Notes](https://docs.recurly.com/docs/eu-vat-2015#section-eu-vat-registered-customers)
+Learn more about [VAT Reverse Charge Notes](https://docs.recurly.com/docs/eu-vat-2015#section-eu-vat-registered-customers).
 
 <Callout icon="👍" theme="okay">
-  Customer Notes section is ideal for notes on invoice details or including a special message for the customer, like "thanks for your business".  Invoice notes provide flexibility to allow you to add relevant information to the invoice that may be specific to local invoice compliance needs. Notes such as Authorized Dealer, delivery note number, type of supply, intra-community supply, goods status, Israel invoice model, and Israel special note.
+  The Customer Notes section is ideal for invoice details or a message such as "thanks for your business." Invoice notes also let you add information that may be required for local invoice compliance, such as Authorized Dealer, delivery note number, type of supply, intra-community supply, goods status, Israel invoice model, and Israel special note.
 </Callout>
 
 ### Invoice currency notes
@@ -303,9 +308,9 @@ In the Notes section of the invoice following any customer-specific notes, Recur
 
 ## PDFs
 
-Enable PDF invoice attachments in email notifications by navigating to the Email Templates page in the Configuration section of Recurly App. 
+Enable PDF invoice attachments in email notifications by navigating to the Email Templates page in the Configuration section of the Recurly App.
 
-From here, you can go into the "edit" view of any of the 7 email templates with invoices associated, select "Attach PDF" under "Attachments" and save your changes.
+From there, open the edit view of any of the 7 email templates associated with invoices, select "Attach PDF" under "Attachments," and save your changes.
 
 Email Templates that support invoice PDF attachments:
 
@@ -355,8 +360,6 @@ Changing the subscription's collection method affects the collection method of t
 
 To change the collection method of a subscription, view the specific subscription in the Admin Console and select "Edit Subscription" from the Subscription Actions dropdown at the top right. Scroll down to the "Invoicing" section on the Edit Subscription page and select the new value in the Collection Method dropdown. Save your changes. Note that changing the collection method applies immediately, regardless of whether "On next renewal" is selected under Plan Effective Date.
 
-The "Dunning," "Stop Collection," "Refunds," "Testing," and "Account Hierarchy Invoice Display" sections are clear and well-structured. Here’s a review focusing on grammar and tone:
-
 ### Dunning
 
 When an invoice enters a Past Due state, it initiates the dunning cycle. For automatic collection invoices, this occurs after the first transaction decline. For manual collection invoices, it starts 24 hours after the invoice's due date. Automatic and manual collection invoices each have distinct dunning cycles and associated email templates: "Payment Declined" for automatic and "Invoice Past Due" for manual collection. Within your dunning settings, you can choose to either fail the invoice at the end of the cycle or leave it past due. Note: With [Account Updater](https://docs.recurly.com/docs/account-updater) enabled, Recurly will continually run Account Updater on the associated account and attempt to collect payment indefinitely.
@@ -381,11 +384,11 @@ To refund an invoice, select "Issue Refund" in the **Invoice Actions** dropdown 
 
 Invoice refunds are also supported in both versions of Recurly's API.
 
-Once you are on the Issue Refund page, you have a few options to choose how to handle your refund. You can issue your refund either by the line item level, or for the entire invoice.
+On the Issue Refund page, you can refund by line item or for the entire invoice.
 
 > 🚧 Important
 >
-> Merchants _**without**_ the "Only Bill What Changed" and "Credit Memos" feature flags enabled on their site only have the option the to refund by "Quantity" for line items, and by "Specific Amounts" for entire invoices. Refunding by percentages and specific amounts on line items, and percentages on entire invoices, is _not available_ for merchants without the "Credit Memos" and "OBWC" features enabled.
+> Merchants _**without**_ the "Only Bill What Changed" and "Credit Memos" feature flags enabled on their site only have the option to refund by "Quantity" for line items and by "Specific Amounts" for entire invoices. Refunding by percentages and specific amounts on line items, and by percentages on entire invoices, is _not available_ for merchants without the "Credit Memos" and "OBWC" features enabled.
 
 **Select to refund by line item**:
 
@@ -395,11 +398,11 @@ Once you are on the Issue Refund page, you have a few options to choose how to h
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/f6a52be7f550e7850161b6873323e0c528f18232a9b9deca7059461e6c16696f-image.png" className="border" />
 
-Refund options for issuing refunds by individual line items include refunding a line item by quantity, specific amount, or percentage. Refund options for issuing refunds for whole invoices include refunding by a specific amount, or percentage amount.
+Refund options for individual line items include refunding by quantity, specific amount, or percentage. Refund options for whole invoices include refunding by a specific amount or percentage.
 
-* Quantity refunds allow you to refund quantity amounts on each/any line item on an invoice.
-* Specific amount refunds allow you to refund specific dollar/cent amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
-* Percentage refunds allow you to refund percentage amounts on each/any line item on an invoice, or refund off of the total amount of an invoice.
+* Quantity refunds allow you to refund quantities on any line item on an invoice.
+* Specific amount refunds allow you to refund specific dollar or cent amounts on any line item on an invoice or from the total amount of an invoice.
+* Percentage refunds allow you to refund percentage amounts on any line item on an invoice or from the total amount of an invoice.
 
 > 👍 Good to know
 >
