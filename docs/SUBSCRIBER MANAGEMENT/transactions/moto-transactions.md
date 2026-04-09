@@ -53,12 +53,20 @@ To begin, follow these steps:
 Optional enablement of MOTO can be completed on _certain_ gateways via the following steps:
 
 1. From the Recurly Admin UI, **select** Configuration → Payment Gateways from the menu on the left.
+
+<Image align="center" border={true} width="30% " src="https://files.readme.io/0b6cbe34ac7aaaee3048d867c74456c6c6162a4bd6efdb00fd1347efb553b623-image.png" className="border" />
+
 2. **Select** Options → **Edit** for the appropriate gateway instance.
-3. **Select** the MOTO configuration button and save changes.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/33858d709dd0f82c536ee5b337a748c89cc1c4ba647cafcea836af4cb25798f9-image.png" className="border" />
+
+<Image align="center" border={true} width="30% " src="https://files.readme.io/497c95fbf3ced74891ad0f4f1f93ba5266278d0b530fb8e5d6e8fa8bba4dca2e-image.png" className="border" />
+
+3. **Select** the **Enable MOTO transaction** button and save changes.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/0f1d08f410b8731accd11f5d9e7b7e324674fdf6be2d4518c59cc1cfad8b5999-image.png" className="border" />
 
 If you are using Gateway Routing, ensure you are routing to the proper gateways to avoid errors in processing.
-
-<Image align="center" border={true} src="https://files.readme.io/462fcc3-MOTO_enable.gif" title="MOTO enable.gif" className="border" />
 
 ### Can I use MOTO transactions if my customer is in session on my website?
 
