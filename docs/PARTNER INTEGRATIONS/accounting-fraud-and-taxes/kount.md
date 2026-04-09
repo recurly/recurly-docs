@@ -28,12 +28,13 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 * Risk inquiries are only performed on new billing info verifications (sign-ups and billing info updates) for the following payment methods:
   * Cards (including ApplePay and GooglePay)
   * All APMs available on the Recurly Platform. If you are not using Recurly.js for APMs (some do not offer this support) then Kount DDC / Session Information will be excluded.
-* Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information. 
+* Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information.
+* Integrators using Third Party Checkout (Stripe and Adyen) will need to use fraud tools made available by the gateway. There is not enough information available to Recurly at time of transaction when using these tools to utilize Kount.
 
-### Recommendations 
+### Recommendations
 
 * Use Recurly.js for all supported payment methods if you are not already doing so. This will ensure that the data collector creates a session ID which supports proper fraud detection with Kount and reduces false positives.
-* For APMs that are not supported with Recurly.js, we will support a session ID bypass option. There are no integration changes you need to make for APMs not supported with Recurly.js -- continue to use them as documented. 
+* For APMs that are not supported with Recurly.js, we will support a session ID bypass option. There are no integration changes you need to make for APMs not supported with Recurly.js -- continue to use them as documented.
 * Properly set up your webhooks if your Kount Account has rules for 'Review' flows, and ensure your integration is properly listening for Kount Fraud Update webhooks from Recurly. See **Enabling Kount Review Webhooks** on this page for more information.
 
 # Definition
