@@ -23,7 +23,7 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 ### Prerequisites 
 
-* You must verify your PayPal merchant account email, or you will experience repeated 'Configuration' errors when trying to process transactions. If you are struggling to verify your PayPal account email, you must create a ticket with PayPal's support directly.
+* You must verify your PayPal merchant account email, or you will experience repeated 'Configuration' errors when trying to process transactions. If you are struggling to verify your PayPal account email, you must create a ticket with PayPal's support directly. If you are not receiving a verification email (common in Sandbox accounts), you can do this in your PayPal account by locating the verification email sent and clicking the link in the PayPal UI. To find this email, log into your PayPal Business account, and go to Settings > Email.
 
 ### Limitations
 
