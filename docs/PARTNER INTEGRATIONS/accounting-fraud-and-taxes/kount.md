@@ -66,6 +66,63 @@ For businesses seeking a robust and customizable fraud management solution, Koun
 * Conduct manual reviews for transactions.
 * Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
 
+# Kount Configuration 
+
+## API Key Configuration and Setup
+
+## Step 1: Obtain your Kount 360 API Key 
+
+You may follow these same steps for your Sandbox or Production Kount credentials. Please be aware that Sandbox Kount credentials will only work when your Recurly site is in 'Development' mode. Please reach out to Recurly support for assistance.
+
+1. Log into your Kount 360 Dashboard -- you must have Owner and/or Admin permissions to access API Keys, ensure you are logging in to the correct account credentials. 
+2. If you have multiple Organizations, select the correct organization for your business. 
+3. Navigate to "Product Configuration" → "System Settings" → "API Keys"
+4. Click 'Generate API Key'
+5. A modal will appear (see below) where you can copy your Kount 360 API Key. This will be the only opportunity you have to copy the actual key. 
+6. Add a Description for your Key. Our suggestion is to use the Recurly subdomain that this key will be for, so it is obvious in Kount's dashboard which key goes to which site, if you are using multiples. 
+7. Please note again that this is your last chance to copy the actual API Key as the UI will not display it again. So make sure you copy it now (click the 'Copy' button) and click 'Save' after adding a description. 
+
+   <Image align="center" src="https://files.readme.io/b1081558529e93b3c2f5890d8a5c219aac99caf915eed6cad7197618a62116bb-Kount-API-Key-Creation.png" />
+8. Your copied key will look something like this: `MG9hMX...lmNjRSMVItTl8zbU1LVXlkNFFKWg==`(the key will be longer, this has been shortened/obfuscated for example purposes). Note the `==` at the end of the key. That is part of the key and should not be deleted.
+9. Head over to Step 2.
+
+## Step 2: Enter your Kount API Key in Fraud Management configuration
+
+1. Log into your Recurly Site.
+2. Navigate to "Configuration" → "Fraud Management" 
+3. Click 'Options' and choose 'Edit Configuration'
+4. Website ID: If you have multiple sites using the same Kount MID/API Key, and you have rules based on 'channels' in Kount 360', you will want to enter your website ID exactly as it is entered into Kount. Otherwise, leave this field blank.
+5. API Key: Enter your Kount 360 that you obtained in Step 1 in this field. 
+6. Set your Fraud Monitoring Status to 'Enabled'.
+7. Click 'Save Changes'.
+
+## Step 3: Webhook Configuration (Optional)
+
+You will only need to set up webhooks if you plan on using the 'Review' option. Otherwise, you can skip this step. 
+
+<Callout icon="📘" theme="info">
+  For merchants who are not ingesting Recurly webhooks or are not integrated using the Review flow (see documentation below), do not use or set up 'Review' rules in Kount 360.
+</Callout>
+
+1. Log into your Kount 360 Dashboard -- you must have Owner and/or Admin permissions to access API Keys, ensure you are logging in to the correct account credentials.
+2. If you have multiple Organizations, select the correct organization for your business.
+3. Navigate to "Product Configuration" → "System Settings" → "Webhooks'
+4. Click 'New Webhooks'
+5. Choose 'Order Status Change' and 'Order Update' under 'Payments Fraud' options.
+6. In 'Channel', ensure that this value and the 'Website ID' you entered in Recurly match (if applicable). 
+   1. If you did not enter anything as your website ID in Recurly, enter 'Default' here.
+7. Enter your Recurly callback endpoint: `https://callbacks.recurly.com/kount/your-subdomain` where `your-subdomain` will be your Recurly site subdomain. 
+   1. **Example**: If your Recurly subdomain is 'mysite.recurly.com', then your URL will look like this: `https://callbacks.recurly.com/kount/mysite`
+8. Click 'Enter' button.
+9. A modal to confirm your settings will appear. Click 'Confirm'.
+10. Unlike the API Key, you will be able to edit this configuration after saving.
+
+**Example Setup:** 
+
+<Image align="center" src="https://files.readme.io/4bf865c71e1172b9b3fbba08374a5005f55f1458bfbf8b478170bbd2367fc1df-Kount-Webhook-Setup.png" />
+
+# Kount Fraud Checks and Special Behavior
+
 ## How does it work?
 
 Upon activation, for every new card transaction, Recurly communicates with Kount’s Fraud Service, sharing essential transaction details like IP address, email address, shipping address, card details or apple pay tokens, billing info, and more.
