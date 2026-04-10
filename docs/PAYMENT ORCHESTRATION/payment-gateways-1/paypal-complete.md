@@ -21,6 +21,10 @@ next:
 
 This payment gateway or setting is available to all customers on any Recurly subscription plan.
 
+### Prerequisites 
+
+* You must verify your PayPal merchant account email, or you will experience repeated 'Configuration' errors when trying to process transactions. If you are struggling to verify your PayPal account email, you must create a ticket with PayPal's support directly.
+
 ### Limitations
 
 Please be aware of the following limitations of PayPal Complete:
