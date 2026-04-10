@@ -28,7 +28,6 @@ This feature or setting is available to all customers on any Recurly subscriptio
 </Callout>
 
 * Using the API to send in raw card details, or billing info IDs without using Recurly.js will not be supported due to the gateway's strict browser information requirement. Browser details are collected automatically when using Recurly.js.
-* When enabling 3D Secure, the service is not immediately active after adding the gateway account. There is a behind-the-scenes enrollment process that must be completed. Please allow 3 business days for this process to be completed.
 * Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
 * Gateway Tokens and Chargeback Notifications are not supported at this time.
 * Processing via the Admin UI may not be supported due to Nuvei's CVV and Customer IP address requirements. As these may be configurable with your gateway, please speak to your Nuvei representative if you need to run Admin transactions.
@@ -88,7 +87,7 @@ If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well 
 
 **Note:** You will also want to ensure the consumer-facing website domain (url) **and** your business' main MCC value are both present in your Default Business Entity before enabling 3DS.
 
-* Your Acquirer BIN, Acquirer Merchant ID, and Acquirer Country.
+* Your Acquirer BIN, Acquirer Merchant ID (CAID), and Acquirer Country.
 * You can obtain these by speaking to Nuvei directly.
 
 ### Step 5: Enable currencies
