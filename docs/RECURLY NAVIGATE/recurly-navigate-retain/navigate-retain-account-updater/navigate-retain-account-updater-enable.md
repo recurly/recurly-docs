@@ -125,6 +125,7 @@ metadata:
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
+  <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🛠️ Have a question? Book with a CSM here.</a>
   </div>
 </div>
 </body>
