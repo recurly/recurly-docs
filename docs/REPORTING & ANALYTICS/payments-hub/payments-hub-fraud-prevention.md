@@ -1,9 +1,8 @@
 ---
 title: Fraud Prevention
 excerpt: >-
-  Monitor blocked transaction count, blocked volume, and risk scores. Track
-  fraud protection effectiveness while balancing security with customer
-  experience.
+  Monitor transaction blocking and fraud risk score trends. Track fraud
+  protection effectiveness while balancing security with customer experience.
 deprecated: false
 hidden: true
 metadata:
@@ -19,6 +18,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 ### Prerequisites
 
 * Users must have analytics user role permission.
+* Users must have Kount enabled on their Recurly site.
 
 # Definition
 
@@ -26,7 +26,7 @@ The Fraud Prevention dashboard provides a comprehensive view of your Kount integ
 
 # Key benefits
 
-* **Quantify Fraud Prevention at a Glance** - The Transactions Blocked KPI immediately communicates how actively the system is protecting the business. The period-over-period comparison lets stakeholders quickly assess whether fraud pressure is increasing or decreasing without needing a deep data dive.
+* **Quantify Fraud Prevention at a Glance** - The Transactions Blocked KPI immediately communicates how actively the system is protecting your Recurly site. The period-over-period comparison lets stakeholders quickly assess whether fraud pressure is increasing or decreasing without needing a deep data dive.
 * **Detect and Respond to Fraud Attacks in Real Time** - The Blocked Transactions Over Time chart makes sudden fraud spikes immediately visible. This allows fraud and ops teams to investigate and respond quickly, rather than discovering an attack after significant damage has already occurred.
 * **Understand Escalating Risk Before It Becomes a Problem** - The Average Risk Score and its Over Time chart work together to provide an early warning system. A rising risk score trend often precedes a spike in blocked transactions, giving teams a window to tighten rules or thresholds proactively rather than reactively.
 * **Target Fraud Prevention Efforts Where They Matter Most** -The Fraud by Payment Method breakdown shows that card-based payments (credit and debit combined) account for nearly 80% of fraud attempts. This helps teams prioritize where to add friction, strengthen authentication, or adjust risk rules for maximum impact.
@@ -35,15 +35,13 @@ The Fraud Prevention dashboard provides a comprehensive view of your Kount integ
 
 ## General Filters (Top Left Corner)
 
-* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is typically 30 days.
+* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is  30 days.
 
-* **Country:** See data specific to your country, offering relevant insights and comparisons.
+* **Country:** Filter data to one or more countries.
 
-* **Gateway:** This filter allows you to segment and analyze data based on available payment processors. You can look at all payment gateways together or examine one at a time to understand where issues are happening.
+* **Gateway:** This filter allows you to isolate individual payment gateways.
 
-* **Payment method:** If you want to see the breakdown of failed payments by the method your customers use, this filter lets you select specific payment options to analyze.
-
-* **Initiated by:** This filter allows you to select between CIT (customer initiated) or MIT (merchant initiated) transactions. CIT transactions typically requires more payment authentication.
+* **Payment method:** This filter lets you drill down into fraud for a specific payment method.
 
 * **Currency:** This filter allows filtering by the various currencies for your site's geo-location
 
@@ -66,7 +64,7 @@ This line chart tracks the daily count of fraud-blocked transactions in the time
 
 ## Average Risk Score
 
-The mean Kount risk score assigned to transactions in the selected period.
+The mean Kount risk score assigned to transactions in the selected period, along with comparison to the previous time period.
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/ce38e193b698996c3abb9501d90b465ebcf63d5747dbb3ac4bb1ecd816eb4195-image.png" className="border" />
 
