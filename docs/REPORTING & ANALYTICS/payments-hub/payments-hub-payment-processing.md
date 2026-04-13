@@ -35,7 +35,7 @@ The Payment Analytics dashboard gives you a deep dive into the performance of yo
 
 ## General Filters (Top Left Corner)
 
-* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is typically 30 days.
+* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is  30 days.
 
 * **Country:** See data specific to your country, offering relevant insights and comparisons.
 
@@ -55,13 +55,13 @@ This card displays your overall Payment Success Rate as a single at-a-glance per
 
 ## Payment Success Rate Over Time
 
-Payment Success Rates over Time tracks your overall Payment Success Rate over an extended timeframe, giving you a broader view of how performance has trended across the month rather than a point-in-time snapshot.
+Payment Success Rates over Time tracks your overall Payment Success Rate over the timeframe in view, giving you a more detailed view of how performance is trending.
 
 <Image align="center" border={true} src="https://files.readme.io/232e867e39d74b82bebfadcd608588f0414bdd273874923b1c8851f9e98ab7fa-image.png" className="border" />
 
 ## Payment Method Distribution
 
-The Payment method distribution chart breaks down every payment method accepted on your site, showing the relative distribution of transactions across each — giving you an instant read on how your customers prefer to pay.
+The Payment method distribution chart breaks down every payment method accepted on your site, showing the relative distribution of transactions across each, giving you an instant read on how your customers prefer to pay.
 
 <Image align="center" border={true} width="500px" src="https://files.readme.io/94818c703ad263f07d13d84d5882e7a9e24e4aa002849ce070de100360e67f64-image.png" className="border" />
 
