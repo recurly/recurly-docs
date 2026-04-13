@@ -26,12 +26,12 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
 /* 3. NAVIGATION - Tan bar with numbered tabs */
 .rc-nav { display: flex; background: #F1EFE3; padding: 0; overflow-x: auto; border-bottom: 2px solid #CCC9B8; }
 .rc-nav a { display: flex; align-items: center; gap: 8px; padding: 14px 20px; text-decoration: none; color: #807D73; font-size: 14px; font-weight: 500; white-space: nowrap; border-bottom: 3px solid transparent; transition: all 0.2s; }
-.rc-nav a:hover { color: #0D0D0B; background: #F5F5F0; }
+.rc-nav a:hover { color: #0D0D0B; background: #FFFDF2; }
 .rc-nav a.is-active { color: #0D0D0B; font-weight: 600; border-bottom-color: #FFD706; background: #F5F5F0; }
 .rc-snum { width: 24px; height: 24px; border-radius: 50%; background: #CCC9B8; color: #807D73; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
 .rc-nav a.is-active .rc-snum { background: #FFD706; color: #0D0D0B; }
 
-/* 4. CONTENT CARDS - Tan cards on gray background */
+/* 4. CONTENT AREA */
 .rc-sec { padding: 40px; background: #F5F5F0; }
 .rc-sec-header { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 32px; }
 .rc-sec-icon { width: 48px; height: 48px; background: #FFD706; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -43,6 +43,7 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
 .rc-step { display: flex; gap: 16px; align-items: flex-start; background: #F1EFE3; border-radius: 12px; padding: 20px; margin-bottom: 16px; border: 1px solid #CCC9B8; }
 .rc-sbadge { width: 32px; height: 32px; border-radius: 50%; background: #FFD706; color: #0D0D0B; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
 
+.rc-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
 .rc-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
 .rc-wi { background: #F1EFE3; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #CCC9B8; }
 .rc-wi h4 { font-size: 16px; margin: 12px 0 8px; font-weight: 600; }
@@ -53,8 +54,9 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
 .rc-cb { width: 18px; height: 18px; border-radius: 4px; border: 2px solid #CCC9B8; flex-shrink: 0; margin-top: 3px; background: white; }
 
 .rc-tip { border-left: 4px solid #FFD706; background: #F1EFE3; padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 24px 0; border: 1px solid #CCC9B8; border-left-width: 4px; border-left-color: #FFD706; }
+.rc-warning { border-left: 4px solid #FF8200; background: #FFF8F0; padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 24px 0; border: 1px solid #CCC9B8; border-left-width: 4px; border-left-color: #FF8200; }
 
-.rc-sec-nav { display: flex; justify-content: space-between; padding: 0 40px 40px; align-items: center; background: #F5F5F0; }
+.rc-sec-nav { display: flex; justify-content: space-between; padding: 24px 40px 40px; align-items: center; background: #F5F5F0; }
 .rc-btn-next { background: #FFD706; color: #0D0D0B; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; border: 1px solid #FFD706; }
 
 .rc-link-sec { padding: 32px 40px; background: #F1EFE3; border-top: 1px solid #CCC9B8; border-radius: 0 0 16px 16px; }
@@ -64,7 +66,7 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
 <div class="rc-guide">
   <div class="rc-hero">
     <div class="rc-hero-topo"></div>
-    <img src="https://drive.google.com/thumbnail?sz=w200&id=1MSOWNl7V9UgaV9oQHU-mMirnV02uQpjp" alt="Retain stage" style="width:36px;height:36px;margin-bottom:8px;display:block;margin-left:auto;margin-right:auto;position:relative;z-index:1;" />
+    <img src="https://drive.google.com/thumbnail?sz=w200&id=1rpQ40zAs49C7xuFkSau7-UimkPNxwMa2" alt="Retain stage" style="width:36px;height:36px;margin-bottom:8px;display:block;margin-left:auto;margin-right:auto;position:relative;z-index:1;" />
     <span class="rc-badge">Subscriptions</span>
     <h1>Pause, Not Cancel</h1>
     <p class="rc-subtitle">Decrease voluntary churn by offering subscribers a pause option instead of forcing a binary stay-or-cancel decision.</p>
@@ -87,7 +89,7 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
 
   <div class="rc-sec">
     <div class="rc-sec-header">
-      <div class="rc-sec-icon"><img src="https://drive.google.com/thumbnail?sz=w200&id=1UJTHa-pq_K0ParoEOE7Mh5gzSKX73xzR" alt="package-check" width="28" height="28" /></div>
+      <div class="rc-sec-icon"><img src="https://drive.google.com/thumbnail?sz=w200&id=14XOgUOyBDzpi-vHu0sBtN12cv23Z4Ds7" alt="package-check" width="28" height="28" /></div>
       <div>
         <h2 style="margin:0; font-size:24px;">What Is Pause Subscriptions?</h2>
         <p style="margin:4px 0 0; color:#807D73;">Understand how Recurly's Pause feature works and why it's a powerful tool in your retention toolkit.</p>
@@ -101,62 +103,58 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
     </div>
 
     <div class="rc-subhead">How the Pause Lifecycle Works</div>
-
     <div class="rc-step">
       <div class="rc-sbadge">1</div>
-      <div style="flex:1;">
-        <h4 style="margin:0 0 4px; font-size:16px;">Pause Is Initiated</h4>
-        <p style="margin:0; font-size:14px; color:#32312D;">A pause can be triggered by the subscriber via self-service, by your team in the Admin Console, or via the Recurly API. You specify a <strong>remaining billing cycles</strong> value to skip.</p>
-      </div>
+      <div style="flex:1;"><h4 style="margin:0 0 4px;">Pause Is Initiated</h4><p style="margin:0; font-size:14px; color:#32312D;">A pause can be triggered by the subscriber via self-service, by your team, or via API. You specify the number of <strong>remaining billing cycles</strong> to skip.</p></div>
     </div>
-
     <div class="rc-step">
       <div class="rc-sbadge">2</div>
-      <div style="flex:1;">
-        <h4 style="margin:0 0 4px; font-size:16px;">Current Period Completes</h4>
-        <p style="margin:0; font-size:14px; color:#32312D;">The pause starts at the end of the current billing period—ensuring the subscriber gets the full value of what they've paid for without needing refunds.</p>
-      </div>
+      <div style="flex:1;"><h4 style="margin:0 0 4px;">Current Period Completes</h4><p style="margin:0; font-size:14px; color:#32312D;">The pause starts at the end of the current billing period. The subscriber gets the full value of what they've paid for, with no messy prorations.</p></div>
     </div>
-
     <div class="rc-step">
       <div class="rc-sbadge">3</div>
-      <div style="flex:1;">
-        <h4 style="margin:0 0 4px; font-size:16px;">Subscription Enters Paused State</h4>
-        <p style="margin:0; font-size:14px; color:#32312D;">While paused, Recurly will not generate any invoices. The subscriber's account, plan details, coupons, and payment methods all remain intact.</p>
-      </div>
+      <div style="flex:1;"><h4 style="margin:0 0 4px;">Subscription Enters Paused State</h4><p style="margin:0; font-size:14px; color:#32312D;">While paused, no invoices are generated. Account details, plan settings, and coupons remain intact. No dunning cycles are triggered.</p></div>
     </div>
-
     <div class="rc-step">
       <div class="rc-sbadge">4</div>
-      <div style="flex:1;">
-        <h4 style="margin:0 0 4px; font-size:16px;">Automatic Resumption</h4>
-        <p style="margin:0; font-size:14px; color:#32312D;">When the specified cycles elapse, Recurly automatically resumes the subscription and generates a new invoice. No manual action is required.</p>
-      </div>
+      <div style="flex:1;"><h4 style="margin:0 0 4px;">Automatic Resumption</h4><p style="margin:0; font-size:14px; color:#32312D;">When cycles elapse, Recurly automatically resumes the subscription and generates a new invoice. No manual action is required from you or the subscriber.</p></div>
     </div>
 
     <div class="rc-subhead">Pause vs. Cancel: A Critical Distinction</div>
-
     <div class="rc-2col">
-      <div class="rc-wi">
-        <h4 style="font-size:16px; margin:0 0 8px;">⏸️ Pause</h4>
-        <p style="font-size:13px; color:#807D73; margin:0;">Billing stops temporarily. Account stays active. Payment method retained. Automatic resumption. Frictionless return.</p>
-      </div>
-      <div class="rc-wi">
-        <h4 style="font-size:16px; margin:0 0 8px;">❌ Cancel</h4>
-        <p style="font-size:13px; color:#807D73; margin:0;">Subscription terminates. Subscriber must re-signup. Reacquisition cost is high. Stored data may be lost.</p>
-      </div>
+      <div class="rc-wi"><h4>⏸️ Pause</h4><p>Billing stops temporarily. Account stays active. Payment method retained. Automatic resumption. Frictionless return.</p></div>
+      <div class="rc-wi"><h4>❌ Cancel</h4><p>Subscription terminates. Subscriber must re-signup. Payment method lost. Reacquisition cost is high. Stored data lost.</p></div>
+    </div>
+
+    <div class="rc-card">
+      <p>The business impact is significant. Industry data shows reactivating a cancelled subscriber costs 5–7x more than retaining one who paused. When a subscriber cancels, they enter your win-back funnel. When they pause, they've made a decision to <em>come back</em>.</p>
     </div>
 
     <div class="rc-tip">
       <strong>💡 Pro Tip: Pair Pause with Cancel-Save Flows</strong>
-      <p>When a subscriber clicks "Cancel," present pause as an alternative before they finalize. This intercept can convert would-be cancellations into temporary pauses.</p>
+      <p style="margin:8px 0 0;">When a subscriber clicks "Cancel," present pause as an alternative before they finalize. This intercept can convert a significant percentage of cancellations into automatic saves.</p>
+    </div>
+
+    <div class="rc-subhead">Key Technical Details</div>
+    <div class="rc-3col">
+      <div class="rc-wi"><h4>API & Console</h4><p>Manage via PUT request with <code>remaining_pause_cycles</code> or directly in the UI.</p></div>
+      <div class="rc-wi"><h4>Webhooks</h4><p>Recurly fires webhooks when a subscription is paused and when it resumes.</p></div>
+      <div class="rc-wi"><h4>Hosted Pages</h4><p>Subscribers can self-service pause through Recurly account management pages.</p></div>
+    </div>
+
+    <div class="rc-warning">
+      <strong>⚠️ Important: Pause Is Not the Same as a Trial Extension</strong>
+      <p style="margin:8px 0 0;">If initiated during a trial, the trial will end as scheduled and the pause will apply to future paid cycles. Make sure your team understands this distinction.</p>
     </div>
 
     <div class="rc-checklist">
       <h3 style="font-size:18px; margin:0 0 16px;">Quick Concepts to Remember</h3>
       <div class="rc-cli"><div class="rc-cb"></div><label style="font-size:14px;">Pause halts billing but keeps the subscription record fully intact</label></div>
       <div class="rc-cli"><div class="rc-cb"></div><label style="font-size:14px;">The current billing period completes before the pause takes effect</label></div>
-      <div class="rc-cli"><div class="rc-cb"></div><label style="font-size:14px;">Resumption is automatic—no action needed from the subscriber</label></div>
+      <div class="rc-cli"><div class="rc-cb"></div><label style="font-size:14px;">You set the number of billing cycles to skip (remaining_pause_cycles)</label></div>
+      <div class="rc-cli"><div class="rc-cb"></div><label style="font-size:14px;">Resumption is automatic—no action needed from subscriber or your team</label></div>
+      <div class="rc-cli"><div class="rc-cb"></div><label style="font-size:14px;">Subscribers (or your team) can resume early at any time</label></div>
+      <div class="rc-cli"><div class="rc-cb"></div><label style="font-size:14px;">Add-ons, coupons, and payment methods are all preserved during pause</label></div>
     </div>
   </div>
 
@@ -167,7 +165,7 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
 
   <div class="rc-link-sec">
     <h3 style="font-size:18px; margin:0 0 16px;">Additional Resources</h3>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/pause-subscription" class="rc-link-btn">📄 Pause Documentation</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/pause-subscription" class="rc-link-btn">📄 Documentation</a>
     <a href="https://docs.google.com/videos/d/1pq5dvNPwOEp7mksTP7XSmPjGaebdujtXluiHpebjTKQ/edit?usp=sharing" class="rc-link-btn">🎥 Video Walkthrough</a>
   </div>
 </div>
