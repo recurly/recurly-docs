@@ -117,7 +117,7 @@ metadata:
     </div>
 
     <div class="rc-sec-nav">
-      <span class="rc-btn-disabled">← Back</span>
+      <span class="rc-btn-disabled">🎯 Start</span>
       <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits">Next: Why Use It? →</a>
     </div>
 
