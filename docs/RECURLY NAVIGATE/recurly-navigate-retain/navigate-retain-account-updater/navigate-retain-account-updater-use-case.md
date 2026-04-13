@@ -128,6 +128,7 @@ metadata:
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater" target="_blank" rel="noopener noreferrer">🔗 Adyen RTAU Integration</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">❓ Book Office Hours with a CSM</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">🎯 Return to Start</a>
   </div>
 </div>
 </body>
