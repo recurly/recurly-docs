@@ -22,6 +22,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 * You must have a Kount 360 account. Please reach out to Recurly Support or your CSM/TAM if you are not already using this service.
 * You must be able to utilize Recurly.js and invoke the risk related data-collector of that integration method.
+* If you plan on setting up 'Review' rules in Kount, you must be able to [ingest Recurly webhooks and use the API](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) to take action against invoices (refund / void).
 
 ### Limitations
 
@@ -66,22 +67,23 @@ For businesses seeking a robust and customizable fraud management solution, Koun
 * Conduct manual reviews for transactions.
 * Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
 
-## Standard Flows and Behavior 
+## Standard Flows and Behavior
 
-For new billing information (Cards) and APMs, Recurly will send relevant payment method and customer data to Kount for review. Any time card information is provided to Recurly, we will treat this as a 'new' billing info. Using the Account Code or Billing Info ID will not typically be sent to Kount for re-review. 
+For new billing information (Cards) and APMs, Recurly will send relevant payment method and customer data to Kount for review. Any time card information is provided to Recurly, we will treat this as a 'new' billing info. Using the Account Code or Billing Info ID will not typically be sent to Kount for re-review.
 
 ### Scenarios
 
-* **Subscription Signups**: Subscription signups with a new payment method will be sent to Kount for review as usual. 
-* **One Time Transactions/BI Updates**:  One Time / CIT transactions, including Billing Info updates, will be sent to Kount if those updates include new payment information. 
-  * If a customer provides the same card number as is already on file, that transaction will be re-reviewed by Kount and can be marked as fraudulent. This may have impact on renewals using that billing info. 
+* **Subscription Signups**: Subscription signups with a new payment method will be sent to Kount for review as usual.
+* **One Time Transactions/BI Updates**:  One Time / CIT transactions, including Billing Info updates, will be sent to Kount if those updates include new payment information.
+  * If a customer provides the same card number as is already on file, that transaction will be re-reviewed by Kount and can be marked as fraudulent. This may have impact on renewals using that billing info.
 * **MOTO transactions**: Transactions marked as 'MOTO' (either via API or in Recurly Admin) will be sent to Kount without data-collector information by design as the customer is not in session during a MOTO transaction.
-* **Renewals**: Recurring and merchant-initiated transactions are not sent to Kount for review. If an existing Billing Info has been marked as 'fraudulent' due to a CIT transaction being declined by Kount, renewals using that billing information will start to fail. 
+* **Renewals**: Recurring and merchant-initiated transactions are not sent to Kount for review. If an existing Billing Info has been marked as 'fraudulent' due to a CIT transaction being declined by Kount, renewals using that billing information will start to fail.
 
-### Approval, Review, and Decline Behavior: 
+### Approval, Review, and Decline Behavior:
 
 * **On Approval** -- if Kount "approves" a transaction, Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway.
 * **On Review** -- if Kount marks a transaction to be "reviewed", Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway. If you mark a 'Review' transaction in Kount as declined, expect a webhook from Recurly. You will need to take action (void or refund) on your own when this happens.
+  * See [Webhook Setup](https://docs.recurly.com/recurly-subscriptions/docs/kount#step-3-webhook-configuration-optional) and our [Kount Webhook Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) for more details.
 * **On Decline** -- if Kount marks a transaction as "declined", Recurly will not send the transaction to the gateway, and the transaction will be marked declined.
 
 # Kount Configuration
