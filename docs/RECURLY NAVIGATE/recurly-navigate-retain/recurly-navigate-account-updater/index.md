@@ -55,14 +55,13 @@ metadata:
 <body>
 <div class="rc-guide">
   <div class="rc-hero">
-    <img src="https://drive.google.com/thumbnail?sz=w200&id=1rpQ40zAs49C7xuFkSau7-UimkPNxwMa2" alt="Retain stage" style="width:36px;height:36px;margin-bottom:8px;display:block;margin-left:auto;margin-right:auto;">
-    <span class="rc-badge">Recurly Subscriptions</span>
-    <h1>Save Your Revenue: Account Updater</h1>
-    <p class="rc-subtitle">Learn how Account Updater automatically keeps payment credentials current, reducing involuntary churn and protecting your recurring revenue.</p>
-    <div class="rc-flywheel-badge rc-flywheel-retain">RETAIN</div>
-    <div class="rc-stats">
-      <div class="rc-stat"><span class="rc-stat-num">7</span> sections</div>
-      <div class="rc-stat"><span class="rc-stat-num">25</span> min read</div>
+    <div class="rc-badge">💳 Revenue Recovery</div>
+    <h1>Account Updater</h1>
+    <p>Protect your recurring revenue by automatically keeping card details up to date — before payments ever fail.</p>
+    <div class="rc-hero-stats">
+      <div><div class="rc-num">77x</div><div class="rc-lbl">Average ROI</div></div>
+      <div><div class="rc-num">18%</div><div class="rc-lbl">Of recovered revenue</div></div>
+      <div><div class="rc-num">96M+</div><div class="rc-lbl">Card updates in 2025</div></div>
     </div>
   </div>
 
