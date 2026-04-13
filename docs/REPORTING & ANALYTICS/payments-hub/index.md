@@ -1,6 +1,8 @@
 ---
 title: Payments Hub
-excerpt: Payments Hub will help merchants understand their payment performance
+excerpt: >-
+  Payments Hub provides a unified view of payments performance for your Recurly
+  site
 deprecated: false
 hidden: true
 metadata:
@@ -33,7 +35,7 @@ The [Payment Processing](https://docs.recurly.com/docs/payments-hub-payment-proc
 
 ## Account Updater
 
-The [Account Updater](https://docs.recurly.com/docs/payments-hub-account-updater) dashboard tracks retained revenue through automated card updates, giving you visibility into how the service is preventing payment failures by keeping card expiration dates and card data current.
+The [Account Updater](https://docs.recurly.com/docs/payments-hub-account-updater) dashboard tracks retained revenue through automated card updates, giving you visibility into how the service is preventing payment failures by keeping card expiration dates and card numbers current.
 
 ## Payment Retry Recovery
 
