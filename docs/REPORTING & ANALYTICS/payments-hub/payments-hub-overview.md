@@ -21,9 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The Overview gives you a high-level summary of payment performance across geographic distribution, payment method mix, and the health of success rates — spanning both customer and merchant initiated transactions as well as recovery services.
-
-If you are using Account Updater or Kount, you will also see a high level view of your vault and fraud health metrics.
+The Overview dashboard provides a high-level summary of payment performance, geographic distribution, payment method mix, and the health of payment recovery services. If you are using Account Updater or Kount, you will also see a high level view of your vault and fraud health metrics.
 
 # Key benefits
 
@@ -61,19 +59,19 @@ This pie chart breaks down your transactions by payment method, showing both the
 
 ## Overall Success Rate
 
-This card displays total success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. 
+This card displays total success rate as a single, at-a-glance percentage — paired with a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
 
 <Image align="center" border={true} width="125px" src="https://files.readme.io/458923687c55700f219d8ea185f5dc487ee614102c1a44fd378d0c21d19dd8af-image.png" className="border" />
 
 ## CIT Success Rate
 
-This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage — paired with a month-over-month trend indicator so you can immediately see whether performance is improving or declining. 
+This card displays your Customer Initiated Transaction (CIT) success rate as a single, at-a-glance percentage — paired with a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/71bd7867f737cd211dde48a5a7765df6cc29aeb2876c1b25bd7f2891266270d4-image.png" className="border" />
 
 ## MIT Success Rate
 
-This card displays your Merchant Initiated Transaction (MIT) success rate — typically reflecting the health of your subscription renewals — as a single at-a-glance percentage, paired with a month-over-month trend indicator to show whether auth rates are improving or declining. 
+This card displays your Merchant Initiated Transaction (MIT) success rate — typically reflecting the health of your subscription renewals — as a single at-a-glance percentage, paired with a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
 
 <Image align="center" border={true} width="125px" src="https://files.readme.io/6e05af1f178f3119d3bc13ef56cebda36281f2b73750922e8313cda76af2e53f-image.png" className="border" />
 
@@ -81,7 +79,7 @@ This card displays your Merchant Initiated Transaction (MIT) success rate — ty
 
 ## Payments Authorized on Updated Cards
 
-This card displays the total dollar amount of revenue retained through Account Updater — reflecting payments that were saved as a result of an automated card update — alongside a month-over-month percentage change so you can track the service's growing impact over time. A retention lift percentage ties it all together, showing you the direct effect Account Updater is having on keeping customers active and payments flowing.
+This card displays the total dollar amount of revenue retained through Account Updater — reflecting payments that were saved as a result of an automated card update — alongside a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
 
 <br />
 
@@ -89,13 +87,13 @@ This card displays the total dollar amount of revenue retained through Account U
 
 # Payment Retry Recovered Revenue
 
-This card displays the total dollar amount recovered through Payment Retries — representing renewal revenue that would have otherwise been lost to failed transactions — alongside a month-over-month percentage change to show how retry performance is trending over time.
+This card displays the total dollar amount recovered through Payment Retries, representing renewal revenue that would have otherwise been lost to failed transactions — paired with a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
 
 <Image align="center" border={true} width="200px" src="https://files.readme.io/c25bedac148aa9ad8957a19cedbd4390a4619d3f1339ff90111b96d8a33186d3-image.png" className="border" />
 
 ## Transactions Blocked (Fraud)
 
-This card displays the total count of blocked fraudulent transactions alongside a month-over-month percentage change to show how your fraud protection is performing over time. The accompanying dollar amount reflects the value of those blocked transactions, giving you a tangible measure of how much potential fraud exposure Kount is protecting your business from.
+This card displays the total count of blocked fraudulent transactions — paired with a comparison to the previous time period, so you can immediately see whether performance is improving or declining.
 
 <Image align="center" border={true} width="150px" src="https://files.readme.io/e2ec937efbb82bd0f40e3a13fc9dd7302e26b9bea0c872b429f8e19ac9f74feb-image.png" className="border" />
 
