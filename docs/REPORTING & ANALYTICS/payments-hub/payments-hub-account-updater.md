@@ -23,13 +23,13 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-The Account Updater dashboard gives a real-time view of card update activity across your payment ecosystem, combining pending, at risk, and rescued cards into a single unified view. This enables payments teams to quickly detect emerging risks to subscriptions, understand where card updates and lack-there-of are most concentrated, and take proactive action before it impacts revenue or customers.
+The Account Updater dashboard gives a real-time view of card update activity across your payment ecosystem, along with the lift provided through successful payments processed on updated cards.
 
 # Key benefits
 
 * **Measure Revenue Protection** - The "Payments Authorized on Updated Cards" metric directly quantifies how much revenue was saved by processing successfully on updated cards.
-* **Catch Problems Early** - The two time-series charts (Updates Over Time and Payments Over Time) let you spot sudden drops in activity before they compound into significant revenue loss. A dip in updates that isn't addressed quickly can cascade into failed payments days or weeks later.
-* **Benchmark Performance Period-Over-Period** - The KPI tiles for both Successful Card Updates and Payments Authorized include comparison values and percentage changes against the prior period, making it easy to assess whether the service is trending in the right direction without digging into raw data.
+* **Catch Problems Early** - The two time-series charts (Updates Over Time and Successful Payments Over Time) let you spot sudden drops in activity before they compound into significant revenue loss. A dip in updates that isn't addressed quickly can cascade into failed payments days, weeks, or even months later.
+* **Benchmark Performance Period-Over-Period** - The KPI tiles for both Successful Card Updates and Payments Authorized include comparison values and percentage changes against the prior period, making it easy to assess whether the service is trending in the right direction.
 * **Prioritize Outreach and Card Management** - The Update Type breakdown tells you whether customers are primarily getting new card numbers or just new expiration dates — useful for anticipating how disruptive card changes will be to your payment flows, since full number changes carry more risk of payment failure.
 * **Optimize Network Relationships** - The Updates by Card Type chart reveals which card networks are driving the most update activity. If a particular card scheme like Discover shows near-zero updates, it may signal a gap in your Account Updater enrollment or coverage worth investigating with your payment processor.
 
@@ -43,7 +43,7 @@ The Account Updater dashboard gives a real-time view of card update activity acr
 
 ## Successful Card Updates
 
-The total number of cards successfully updated in the selected period. The current value of 254 represents a 21% decrease compared to the previous period (322), indicating a decline in update volume that may warrant investigation.
+The total number of cards successfully updated in the selected period, along with a comparison to the previous time period.
 
 <Image align="center" border={true} src="https://files.readme.io/72e147d58271c121c8f9397658dd1a5bd68aa1ab6e74c33ab88bad002d5c8103-image.png" className="border" />
 
