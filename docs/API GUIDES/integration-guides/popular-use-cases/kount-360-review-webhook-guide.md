@@ -4,7 +4,7 @@ excerpt: >-
   Decide what to do after a Kount 360 review webhook updates a transaction’s
   fraud status.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
