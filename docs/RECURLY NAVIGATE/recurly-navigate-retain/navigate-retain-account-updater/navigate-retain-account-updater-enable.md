@@ -36,9 +36,7 @@ metadata:
   .rc-step h3{font-size:.98rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}.rc-step p{font-size:.87rem;color:var(--gray);line-height:1.6;margin:0}
   .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;margin-bottom:24px;display:flex;gap:16px;align-items:flex-start}
   .rc-tipicon{font-size:24px;flex-shrink:0}.rc-tip h4{font-size:.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:.5px;margin:0 0 4px}.rc-tip p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
-  .rc-tip p a{color:var(--orange)}
   .rc-warning{background:#FFF8E6;border:1px solid var(--orange);border-radius:14px;padding:16px 20px;display:flex;gap:14px;align-items:flex-start;margin-bottom:24px}
-  .rc-wicon{font-size:20px;flex-shrink:0}.rc-warning p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
   .rc-checklist{background:var(--offwhite);border-radius:16px;border:1px solid var(--lightgray);overflow:hidden;margin-bottom:28px}
   .rc-cl-header{padding:16px 22px;border-bottom:1px solid var(--brightgray);display:flex;align-items:center;gap:10px;background:var(--offblack)}
   .rc-cl-header h3{font-size:.88rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--yellow);margin:0}
@@ -79,7 +77,7 @@ metadata:
       <div class="rc-sec-icon">⚙️</div>
       <div>
         <h2>How to Enable Account Updater</h2>
-        <p>Enabling Account Updater in Recurly is self-serve and typically takes less than five minutes. Here is the direct path for your settings.</p>
+        <p>Enabling Account Updater in Recurly is self-serve and typically takes less than five minutes. Here is the accurate path for your settings.</p>
       </div>
     </div>
 
@@ -93,38 +91,30 @@ metadata:
 
     <h3 class="rc-subhead">🔧 Core Setup: Enable Account Updater</h3>
     <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Navigate to Payment Settings</h3><p>Log in to your Recurly admin and go to <strong>Configuration → Payment Settings</strong>. Scroll to the Account Updater section near the top.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Click the Enable Toggle</h3><p>Locate the primary Account Updater toggle. Enabling this activates Visa, Mastercard, and Discover updates across both Real-Time and Batch engines.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Automated Network Updates</h3><p>For modern gateways (including OptBlue), American Express and other network updates occur automatically via RTAU. No complex network codes are required for standard setup.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept the Pricing Disclaimer</h3><p>A window will appear confirming the pricing terms for your contract. Review the information and click confirm to move forward.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>Save and Confirm</h3><p>Once saved, your status will update to "Enabled." Recurly immediately begins scanning for card updates within your existing vault.</p></div></div>
-    </div>
-
-    <div class="rc-card">
-      <h3 class="rc-subhead">🇺🇸 Legacy: Direct Amex Cardrefresher</h3>
-      <p style="font-size:.88rem;color:var(--gray);margin-bottom:16px;">Only required for direct American Express merchant accounts (non-OptBlue) requiring specific batch-file processing.</p>
-      <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Enter your Amex SE Number</h3><p>Your 10-digit Service Establishment (SE) number is found on your direct Amex merchant statement.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Verify US Business Presence</h3><p>Note: Legacy Cardrefresher is specifically for US-based direct accounts. Global updates are handled via the RTAU toggle.</p></div></div>
-      </div>
+      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Navigate to Payment Settings</h3><p>Log in to your Recurly admin and go to <strong>Configuration → Payment Settings</strong>. Scroll to the Account Updater section and click the toggle to open the configuration modal.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Select MasterCard MCC</h3><p>In the "Card brand configuration" box, use the search field under MasterCard to select your <strong>Merchant Category Code (MCC)</strong>. This is required for MasterCard updates.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Enter American Express SE</h3><p>Input your 10-digit <strong>Service Establishment (SE)</strong> number in the American Express field. This enables direct communication with the Amex network.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept Pricing and Confirm</h3><p>Check the box to agree to the pricing terms. For usage-based accounts, this is typically <strong>$0.15 USD per matched transaction</strong>, charged monthly in arrears.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>Save and Confirm</h3><p>Once you click "Enable," your status will update. Recurly immediately begins scanning for card updates within your stored payment methods.</p></div></div>
     </div>
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
-      <p><strong>Activation Window:</strong> While the toggle is instant, card networks typically take 24–48 hours to complete the initial batch sync. Real-Time AU will be active for your very next transaction attempt.</p>
+      <p><strong>Activation Window:</strong> While the toggle is instant, card networks typically take 24–48 hours to complete the initial batch sync. Real-Time AU (RTAU) will be active for your very next transaction attempt.</p>
     </div>
 
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Setup Checklist</h3></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Toggled on under <strong>Configuration → Payment Settings</strong><span>The standard path for Recurly administrators</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Pricing terms reviewed and accepted<span>Check if your plan includes the "Revenue Recovery Bundle"</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Verified RTAU is active for your gateway<span>Ensures just-in-time updates for Amex/Discover/Visa/MC</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Settings saved and status is "Enabled"<span>Proactive revenue protection is now live</span></div></div>
+      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Toggled on under <strong>Configuration → Payment Settings</strong></div></div>
+      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">MasterCard MCC selected from the configuration dropdown</div></div>
+      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">American Express 10-digit SE number entered</div></div>
+      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Pricing box checked (e.g., $0.15 per match confirmed)</div></div>
+      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Settings saved and status is "Enabled"</div></div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Tip</h4><p>Account Updater works for all cards in your vault, regardless of the gateway used to add them. For more details, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
+      <div><h4>Expert Tip</h4><p>If you don't have your SE number handy, you can find it on your direct Amex merchant statement. Without this and the MCC, updates for those specific brands will not process. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
     </div>
 
     <div class="rc-sec-nav">
