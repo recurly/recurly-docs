@@ -1,5 +1,5 @@
 ---
-title: 'Recurly Navigate: Account Updater'
+title: Understanding Account Updater
 deprecated: false
 hidden: true
 metadata:
