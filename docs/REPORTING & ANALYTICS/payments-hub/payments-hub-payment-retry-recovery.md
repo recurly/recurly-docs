@@ -1,5 +1,5 @@
 ---
-title: Payment Retry Recovery
+title: Payment retry recovery
 excerpt: >-
   Monitor retained revenue through intelligent retry strategies. Track how
   optimized retry logic helps recover initially failed payments.
