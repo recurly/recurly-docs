@@ -185,7 +185,7 @@ You can apply an overriding entity at the ACCOUNT level either via the admin con
 
 To apply an overriding entity via the Recurly user interface, navigate to a specific customer account, go to the Edit Account Information page, and select an "Overriding Business Entity" from the dropdown menu provided in the field.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/e74cd0e-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/79e5bff42114b440784fb3bc2e8e12979d1c3beab81a4fce056f852859e72d75-image.png" className="border" />
 
 Once you save the changes made to the selected customer account with an overriding business entity, all future transactions of that account will be assigned to the corresponding business entity. This assignment persists until you either change the overriding entity or revert that account back to automatic assignment logic applied at the invoice level. Remember, the assigned overriding business entity will be applied at the start of the next billing cycle once your changes have been applied to the account. You cannot switch a customer’s business entity mid-billing period.
 
