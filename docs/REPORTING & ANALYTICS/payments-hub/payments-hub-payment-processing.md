@@ -87,4 +87,4 @@ The Card BIN Success Rates card breaks down payment success rates by card BIN, s
 
 This table surfaces your top payment decline reasons, categorized by hard or soft decline type, and ranked by count, percentage, and associated dollar volume — giving you a comprehensive view of where and why payments are failing. Distinguishing between hard and soft declines is critical, as soft declines often represent recoverable revenue through retries or account updates, while hard declines signal issues that require a more targeted intervention such as routing changes or issuer outreach.
 
-![](https://files.readme.io/302a66680267fc9b881d268cd253f510d114bd025429077b0060fea18773f7d5-image.png)
+<Image align="center" border={true} width="80% " src="https://files.readme.io/302a66680267fc9b881d268cd253f510d114bd025429077b0060fea18773f7d5-image.png" className="border" />
