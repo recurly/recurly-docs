@@ -1,5 +1,5 @@
 ---
-title: Things to consider
+title: 'Section 2: Things to consider'
 deprecated: false
 hidden: true
 metadata:
