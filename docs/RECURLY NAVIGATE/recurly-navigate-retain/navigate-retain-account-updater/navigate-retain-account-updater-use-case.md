@@ -1,5 +1,5 @@
 ---
-title: Pitch to leadership
+title: 'Section 5: Pitch to leadership'
 deprecated: false
 hidden: true
 metadata:
