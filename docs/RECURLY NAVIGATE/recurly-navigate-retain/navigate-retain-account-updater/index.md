@@ -1,5 +1,5 @@
 ---
-title: Understanding Account Updater
+title: Account Updater
 deprecated: false
 hidden: true
 metadata:
