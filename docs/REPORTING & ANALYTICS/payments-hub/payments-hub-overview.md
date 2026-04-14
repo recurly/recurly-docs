@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Overview dashboard
 excerpt: >-
   The Overview provides a high-level summary of payment performance, geographic
   distribution, payment method mix, and the health of payment recovery services.
