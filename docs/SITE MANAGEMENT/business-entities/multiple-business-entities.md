@@ -110,7 +110,7 @@ Contact [support](mailto:support@recurly.com) to have entity invoice prefix adde
 
 By default, Recurly uses a single sequence for invoice numbers across your site, adhering to the European Commission's invoicing rules. However, certain EU member states mandate a unique sequence for their country. To cater to this, we offer the Country Sequencing feature. This allows merchants to establish distinct sequences for each EU member state.  Merchants can enable or disable this feature by clicking the appropriate radio button.
 
-<Image align="center" border={true} src="https://files.readme.io/a95b40221baa014f79f0dcd3c382557331e6cbae1c3643c0b7495d4d42a9e321-AltBizEntityMessage.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/284ef27c97ca20a094f8d08fad6567c05d6bbecc95399afc7196dad3a314c322-image.png" className="border" />
 
 #### Entity invoice images
 
@@ -163,13 +163,15 @@ To assign a business entity to a subscription upon creation in the Recurly Admin
 
 **Changing the Business Entity on the subscription is not available for immediate subscription changes.**
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/4593bad65b6abacdccc639965ddd11ceae5fc996b58fb0474afb8afbe2199820-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/74aaa9417dfe9867d358e0561b462816435a71241c2a245a1912d562af8505e3-image.png" className="border" />
 
-**When scheduling subscription changes for the next bill date, or the next term renewal, however, you are able to change the Business Entity on the subscription.**
+**When scheduling subscription changes for the next bill date, or the next term renewal:**
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/bd3a9f1e3793369725930fd3f4c05a283806f930fd83dbee6cd94fa48af46e27-Screenshot_2025-03-12_at_4.45.15_PM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/51bbc96db492cbc66e85afdc376967c8ea4bd24682429c08fb394642ba7fad53-image.png" className="border" />
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/d06d479f1fd7879eb4a38b65321d5d9efa98e94f9a2c6400d2926bb5391dd833-Screenshot_2025-03-12_at_4.45.34_PM.png" className="border" />
+**you are able to change the Business Entity on the subscription.**
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/3be9814f06915afe9e0a5cebd70a8a527d080cbfdcac1c1d2cde7bf609649d31-image.png" className="border" />
 
 Entities assigned to subscriptions takes precedence over location-based subscription assignment and business entity overrides applied to a customer's Account.
 
