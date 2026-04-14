@@ -270,16 +270,16 @@ Once the necessary changes for Single Sign-On (SSO) setup are made and saved, ce
 3. The user can then log back into Recurly by:
    * Clicking on the link provided in the email notification they received,
    * Navigating to [http://app.recurly.com/login/sso](http://app.recurly.com/login/sso) directly, or
-   * Logging into their identity provider and clicking on the Recurly tile.  
-     Subsequently, on the users' page of your site, a "Security" column will be visible in the table of users. This will help you determine whether a user is employing SSO or Two-Factor Authentication (2FA) for security. A user whose security method displays as "SSO" uses Single Sign-On, one with "2FA" uses Two-Factor Authentication, and if the column is empty, the user is simply using their email and password to login.
+   * Logging into their identity provider and clicking on the Recurly tile. Subsequently, on the users' page of your site, a "Security" column will be visible in the table of users. This will help you determine whether a user is employing SSO or Two-Factor Authentication (2FA) for security. A user whose security method displays as "SSO" uses Single Sign-On, one with "2FA" uses Two-Factor Authentication, and if the column is empty, the user is simply using their email and password to login.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/7bf0361-image.png" className="border" />
+<Image align="center" border={true} width="20% " src="https://files.readme.io/6d293db1a0fb1d44a5ab5c427a66167c7c694000b09ea09f1dba128a4f7a4fad-image.png" className="border" />
 
 Remember: Users will only be able to access Recurly with the email address that matches the one they use for their SSO identity provider. Make sure these emails match to prevent any login issues.
 
 ## Inviting a user to join a site and requiring them to use SSO
 
-With Single Sign-On (SSO) enabled for your site, any new user invitations will default to requiring the use of SSO for Recurly login. This requirement can be disabled for individual invitations if desired.  
+With Single Sign-On (SSO) enabled for your site, any new user invitations will default to requiring the use of SSO for Recurly login. This requirement can be disabled for individual invitations if desired.
+
 Assuming you send an invitation with the SSO option selected:
 
 1. Ensure that the user also has access to Recurly through your identity provider.
@@ -289,7 +289,7 @@ Assuming you send an invitation with the SSO option selected:
 * Please note, if the user already had a Recurly account and was using SSO to access it, they will continue to do so using the same SSO identity provider as before.
 * You can check a user's SSO requirements by visiting their user profile on your site. If a different site is requiring them to use SSO, the details will be visible on their profile.
 
-<Image align="center" border={true} src="https://files.readme.io/2748851-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/29d0f633a990369b5fead8e37dcc7a923800a940ed51dc937e76fbf980b20620-image.png" className="border" />
 
 ## Updating an existing user to no longer require them to use SSO
 
