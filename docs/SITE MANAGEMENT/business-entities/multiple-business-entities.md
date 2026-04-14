@@ -149,7 +149,7 @@ On your site’s [Invoice Settings](https://docs.recurly.com/docs/invoice-settin
 
 If you decide to create a new alternate entity (a non-Site Default Entity) and there are no notes to the customer or terms and conditions added on your Invoice Settings page, the option to use the entity-level notes and terms and conditions will be selected automatically. You can choose to use the notes from Invoice Settings instead at any given point in time.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/2b954e8-Screenshot_2023-10-25_at_11.37.24_AM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/8f3ae52660374f16a2e30c3159dd0ae99c3554a09d7db48ed36e5c38c9eb66d6-image.png" className="border" />
 
 Merchants on Recurly’s Starter and Professional plans will continue to have notes to the customer and terms and conditions supported on the Invoice Settings page, and not at the entity level, as multiple entities are not supported on these plans.
 
@@ -163,7 +163,7 @@ To assign a business entity to a subscription upon creation in the Recurly Admin
 
 **Changing the Business Entity on the subscription is not available for immediate subscription changes.**
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/055d80c92324ec381d8c0f07e9e7118bc7357d6b86aa69583e6e05ca077a5dad-Screenshot_2025-03-12_at_4.44.52_PM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/4593bad65b6abacdccc639965ddd11ceae5fc996b58fb0474afb8afbe2199820-image.png" className="border" />
 
 **When scheduling subscription changes for the next bill date, or the next term renewal, however, you are able to change the Business Entity on the subscription.**
 
