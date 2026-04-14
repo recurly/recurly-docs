@@ -1,5 +1,5 @@
 ---
-title: Fraud Prevention
+title: Fraud prevention
 excerpt: >-
   Monitor transaction blocking and fraud risk score trends. Track fraud
   protection effectiveness while balancing security with customer experience.
