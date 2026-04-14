@@ -23,7 +23,7 @@ Users must have analytics user role permission.
 
 The Payments Hub dashboards help you understand your site-level payment performance, identify trends, and make data-driven decisions. With these insights, you can proactively optimize payments, maintain reliability, improve authorization rates, and drive recurring revenue.
 
-# Payments Hub
+# Payments hub
 
 ## Overview
 
