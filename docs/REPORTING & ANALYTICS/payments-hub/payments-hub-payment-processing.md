@@ -1,5 +1,5 @@
 ---
-title: Payment Processing
+title: Payment processing
 excerpt: >-
   Comprehensive view of payment success rates across all transaction types,
   payment methods, and gateways. Monitor success rates and decline patterns to
