@@ -27,9 +27,13 @@ metadata:
   </Card>
 
   <Card title="Events & Office Hours" href="#" icon="fa-comments" target="_blank">
-    Recurly Navigate quarterly events and weekly open support & Q&A Office Hours.
+    Recurly Navigate quarterly events and weekly open support & Q\&A Office Hours.
   </Card>
 </Cards>
+
+<HTMLBlock>{`
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNdEDi_UfLaZForbmoj2sv7lqQdIBOSzdwY0j5PVKBmIy0Zw/viewform?embedded=true" width="640" height="1245" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+`}</HTMLBlock>
 
 <br />
 
