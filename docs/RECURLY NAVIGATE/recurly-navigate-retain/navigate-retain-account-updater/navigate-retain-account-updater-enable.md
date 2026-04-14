@@ -1,5 +1,5 @@
 ---
-title: 'Section 4: How to enable it'
+title: 'Section 3: How to enable it'
 deprecated: false
 hidden: true
 metadata:
