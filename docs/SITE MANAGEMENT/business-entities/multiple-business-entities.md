@@ -193,7 +193,7 @@ Once you save the changes made to the selected customer account with an overridi
 
 You can see the business entity assigned at the account level for customers with an overriding business entity applied directly on their account page, under "Account Information". You can also do an API query on the Account object to identify which entity is associated with an account, or, for accounts using automatic assignment, an API query on the Invoice object to see which entity was applied to a specific invoice.
 
-<Image align="center" width="75% " src="https://files.readme.io/74b18a2-image.png" />
+<Image align="center" width="30% " src="https://files.readme.io/82155ea952e61d3c4390d86ca48b6cb2a1b1f1201ece6abb81f20d6a6c3b567d-image.png" />
 
 ## Account hierarchy and entities
 
@@ -214,13 +214,11 @@ You cannot delete your Site Default Entity from your Recurly site. The Site Defa
 
 However, you can delete any alternate entity set up on your site at any time. You can delete an alternate entity from the main list page when hovering over the ellipses for the entity of choice and selecting “Delete”, or by selecting "Delete Entity" from the "Entity Actions" dropdown on the view-page of a specific alternate entity.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/3d4668a-image.png" className="border" />
-
-<Image align="center" border={true} width="75% " src="https://files.readme.io/38af1bd-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/ad0103bc5853f6b97c915e6442b1a095701f9aeba65f35cc6cb180c06c606799-image.png" className="border" />
 
 When confirming to delete an alternate entity, you will be prompted to enter the entity code of the one you are attempting to delete. Once you enter the code successfully, that entity will be permanently deleted from your site. However, if a return is initiated, the refund invoice will still leverage the display and tax address information from the original transaction.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/ad195f0-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/a4a7e7dcadebe8753aaa09317abae29226a21d4efc7cdb4253ad6c1dd3ecd989-image.png" className="border" />
 
 Once you delete an alternate entity, all customers previously assigned to that specific entity as an overriding entity on their account will have their invoices assigned to the Site Default Entity moving forward, unless:
 
@@ -233,13 +231,13 @@ Once you delete an alternate entity, all customers previously assigned to that s
 
 Tax ID Numbers (TINs) are entity-specific and used to display a business's tax registration number on invoices sent to customers. When a Default TIN/VAT number is entered on an entity, that number will appear as the last line in the merchant information shown on the invoice.
 
-<Image align="center" width="75% " src="https://files.readme.io/258a8e1-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b531d19695ab3ab54e4c5d6e63645e54b45f76fc8ad9b1c6f4ffdf98e2315b28-image.png" className="border" />
 
 Country-specific TINs replace the Default TIN/VAT number on the invoice when a customer's BILL TO address is located within a country that has a country-specific TIN configured on the given entity.
 
 For example, if a merchant has a Default VAT number set on an entity and also has a country-specific VAT number configured for Portugal on that entity, then all customers with BILL TO addresses in Portugal will see the French merchant VAT number on their invoices instead of the merchant’s Default VAT number. Alternatively, if there are no other country-specific VAT numbers added to that entity, all customers leveraging that entity with BILL TO addresses in any country OTHER than Portugal will see the merchant’s Default VAT number on their invoices.
 
-<Image align="center" width="75% " src="https://files.readme.io/29a94f5-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/93fb6eb5b4cad4a3a221de8a367f2df5b5206bef6c6f8f424dee933ed006af13-image.png" className="border" />
 
 TIN/VAT numbers will not automatically be applied across entities on Recurly. If you use the same TIN/VAT numbers across multiple entities, you need to ensure that you fill out those fields with the appropriate tax registration numbers for each entity.
 
@@ -251,7 +249,9 @@ On your Avalara site, from your home page, you will see the list of companies/su
 
 If you delete an entity on Recurly, that mapping will no longer exist for the corresponding sub-company in Avalara. Maintain the mapping relationship between the two sites to ensure entity mappings are up-to-date if your entities change.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/ce9381d-image.png" className="border" />
+<Image align="center" width="80% " src="https://files.readme.io/cec7285c7f46551ba140881ea32401ff88b034cabb313ddc525ee405912f0095-image.png" />
+
+You can **initiate** the integration from Configuration -> Taxes.
 
 ## Paused subscriptions
 
