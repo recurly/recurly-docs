@@ -49,7 +49,7 @@ The Overview dashboard provides a high-level summary of payment performance, geo
 
 This map visualizes Payment distribution by Volume by region — darker shades indicate higher volume, making it easy to spot your strongest markets and revenue concentration at a glance as well as where you need to focus your expansion efforts.
 
-<Image align="center" border={true} src="https://files.readme.io/abcaecb1cd37a3fc26d57327c630281d4c9c6e5c8e68d6b86e2187706059effb-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/abcaecb1cd37a3fc26d57327c630281d4c9c6e5c8e68d6b86e2187706059effb-image.png" className="border" />
 
 ## Payment Method Distribution
 
