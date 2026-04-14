@@ -1,5 +1,5 @@
 ---
-title: Account Updater
+title: Account updater
 excerpt: >-
   Tracks retained revenue through automated card updates. Monitor how the
   Account Updater service prevents payment failures by keeping payment methods
