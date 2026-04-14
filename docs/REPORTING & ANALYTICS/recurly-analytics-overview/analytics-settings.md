@@ -29,11 +29,11 @@ The "analytics settings" page is designed to empower you with control over vario
 
 Recurly records all transactions in UTC as the underlying billing timezone. The analytics system then aligns its displayed calculations with the time zone specified in your site settings. This approach ensures that while billing events are consistently tracked in UTC, your analytics, reports, and metrics are presented in the local time most relevant to your business operations.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/68f8f91-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/68f8f91-image.png" className="border" />
 
 ## MRR calculations
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/df2c11a-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/df2c11a-image.png" className="border" />
 
 Configure how Recurly Analytics processes various factors affecting Monthly Recurring Revenue, such as coupon discounts and failed charges. These settings are crucial for accurate revenue tracking and forecasting.
 
@@ -55,11 +55,11 @@ Determine how to treat failed recurring charges in MRR calculations:
 
 ## Benchmarking
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/de57084-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/de57084-image.png" className="border" />
 
 Select the industry category that most accurately represents your business to enable benchmarking. This feature compares your performance metrics against standards within your industry, offering insights into your competitive stance and identifying opportunities for growth and improvement.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/e077bd2-image.png" />
+<Image align="center" border={true} width="400px" src="https://files.readme.io/e077bd2-image.png" className="border" />
 
 > **Note**: Benchmark percentiles will take effect one day after the request. Benchmark quartiles will take effect immediately.
 
