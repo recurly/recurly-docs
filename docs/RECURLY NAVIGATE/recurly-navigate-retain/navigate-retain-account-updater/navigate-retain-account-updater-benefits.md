@@ -1,5 +1,5 @@
 ---
-title: 'Why use it? '
+title: 'Section 1: Why use it? '
 deprecated: false
 hidden: true
 metadata:
