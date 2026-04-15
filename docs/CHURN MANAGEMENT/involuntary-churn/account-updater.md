@@ -16,147 +16,174 @@ next:
 ---
 # Overview
 
-This guide explains how to configure Recurly’s Account Updater service, including direct integration with American Express® Cardrefresher. Merchants with OptBlue or gateway‐generated SE numbers cannot use AMEX Cardrefresher through Recurly; a direct Amex merchant account and SE number are required.
+### Required plan
 
-### Prerequisites & limitations
+This feature may not be included in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
-* Integration with Recurly’s platform.
-* Activation of the Account Updater feature in the Recurly payment settings page.
-* For American Express® Cardrefresher, an American Express® merchant account is required, and your business must be located in the United States. OptBlue merchant accounts (gateway‐provided SE numbers) are not supported.
-* One-time transactions are not submitted to the Account Updater service.
-* Account Updater will not work for merchants using exclusively gateway tokens where Recurly does not have access to actual card data. Work with your gateway partner to enable Account Updater if needed.
-* If you are using Adyen Realtime Account Updater, you must be using Adyen as your primary gateway. Please note that Adyen's RTAU does not have full card brand support, so it's advised to keep both Adyen and Recurly account updater products enabled to cover all cases. Adyen's support is limited to Visa, MasterCard, and Amex in certain regions, with regional Amex and all Discover as gaps.
+### Additional cost
+
+This feature requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
+
+### Prerequisites
+
+* Account Updater must be activated on the [Payments Settings](https://recurly.recurly.com/configuration/payments_settings) page in Recurly
+* To enable Mastercard® updates, a Mastercard® Merchant Category Code (MCC) is required
+* To enable American Express® Cardrefresher, a direct American Express® merchant account and SE number are required. Your business must be located in the United States
+* For Adyen Real Time Account Updater (RTAU), Adyen must be your primary gateway and you must be processing raw card data through Recurly (not gateway tokens or network tokens)
+
+### Limitations
+
+* Account Updater only applies to stored credit cards — it's not available for non-card payment methods
+* One-time transactions are not submitted to the Account Updater service
+* Account Updater does not work for merchants using exclusively gateway tokens where Recurly doesn't have access to actual card data
+* OptBlue merchant accounts (gateway-provided SE numbers) are not supported for American Express® Cardrefresher
+* Updates only occur when your Recurly site is in production mode
+* If you disable Account Updater, it cannot be re-enabled for 10 business days
+* Only users with billing info editing rights can access Account Updater settings
+* Adyen's RTAU has limited card brand support — it covers Visa, Mastercard, and Amex in certain regions only. Recurly recommends keeping both Adyen RTAU and Recurly Account Updater enabled to cover all cases
+
+***
 
 # Definition
 
-Recurly’s Account Updater is a proactive service that automatically monitors and updates stored credit card details through integrations with Mastercard®, Visa®, American Express®, and Discover®. By keeping billing info fresh, it reduces failed payments and subscriber churn.
+Recurly's Account Updater is a proactive service that automatically monitors and refreshes stored credit card details through integrations with Mastercard®, Visa®, American Express®, and Discover®. By keeping billing information current, it reduces failed payments and subscriber churn — without any manual effort on your end.
 
-# Credit card support
+***
 
-Stay ahead of subscriber churn with [Recurly’s Account Updater](https://recurly.com/blog/how-automated-credit-card-account-updaters-fight-subscriber-churn/). This feature integrates with Account Updater programs from Mastercard®, Visa®, American Express®, and Discover®. The cardholder’s bank —not Recurly—determines participation, sending account‐change events to each network. Additionally, Recurly now supports card updates in Europe in certain cases.
+# Key details
 
-# Configuration & availability
+## Credit card support
 
-Account Updater is available on all Recurly plans. As of October 26, enabling Account Updater is even simpler via its dedicated page under [Payments Settings](https://recurly.recurly.com/configuration/payments_settings). Remember: although you can enable Account Updater in any environment, updates only occur when your site is in production mode.
+Account Updater integrates with card update programs from Mastercard®, Visa®, American Express®, and Discover®. The cardholder's issuing bank — not Recurly — determines participation and sends account-change events to each network. Recurly also supports card updates in Europe in certain cases.
 
-# Enabling Account Updater in Recurly
+***
 
-1. **Login to Recurly:** Sign in to your Recurly account.
-2. **Access Payments Settings:** Navigate to the Payments Settings page from the configuration section.
-3. **Locate Account Updater:** Find the Account Updater box at the top.
-4. **Enable the Feature:** Click **Enable**.
-5. **Enter MCC and SE Number:** In the prompt, provide:
+## Enabling Account Updater
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/58055d35475f35584a90ade8832f4e02c9109ed87d86372edc742e62bbdf268d-image.png" className="border" />
+1. Log in to your Recurly account
+2. Navigate to **Configuration → Payments Settings**
+3. Locate the **Account Updater** box at the top of the page
+4. Click **Enable**
 
-* **Mastercard® Merchant Category Code (MCC)** (required to enable Mastercard® updates)
-* **10-digit American Express® SE number** (required to enable Cardrefresher)
-  Enter these accurately.
+<Image align="center" border={true} width="75%" src="https://files.readme.io/58055d35475f35584a90ade8832f4e02c9109ed87d86372edc742e62bbdf268d-image.png" className="border" />
 
-1. **Confirm Charges:** Check the box to authorize the monthly Account Updater fee. If you lack MCC or SE number, you can still enable Visa® and Discover® only.
-2. **Completion:** Click **Enable**. Your status will update to show you’re enabled for Visa®, Mastercard®, Discover®, and American Express®.
+5. In the prompt, enter the following as applicable:
+   * **Mastercard® Merchant Category Code (MCC)** — required to enable Mastercard® updates
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/5bf7f2b5b2ab5b22bd9431fbad6cf72ff6123582cd8ec096c7f3c22a04397a32-image.png" className="border" />
+   * **10-digit American Express® SE number** — required to enable Cardrefresher
+   > **Note:** If you don't have an MCC or SE number, you can still enable Visa® and Discover® updates only. Gateway-provided (OptBlue) SE numbers will not work — only direct Amex SE numbers are supported.
 
-> **Note:** Ensure the SE number is correct. Gateway‐provided (OptBlue) SE numbers will not work—only direct Amex SE numbers are supported.
+6. Check the box to authorize the monthly Account Updater fee
 
-# Triggers
+7. Click **Enable**
 
-Account Updater runs on a publish/subscribe model for Mastercard®, Visa®, American Express®, and Discover®:
+Once enabled, your status will update to reflect which card networks are active for your account.
 
-* **Updated Expiration Date:** Automatically updates expiration in billing info.
-* **Updated Credit Card Number:** Replaces the the entire card number.
-  * In rare cases, this can mean a brand change. In these instances, customers must come back into session to ensure continued recurring transaction processing as the card networks do not generally share Network Transaction ID formatting. In this event, we recommend doing outreach to your customer and having them reauthenticate their card, which will do a verification and update the NTID on file.
-  * Read our guide on reauthentication flows using the API: [Verify Stored Card Information](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/)
-* **Credit Card Account Closed:** Flags billing info as invalid to prevent further charges.
+<Image align="center" border={true} width="75%" src="https://files.readme.io/5bf7f2b5b2ab5b22bd9431fbad6cf72ff6123582cd8ec096c7f3c22a04397a32-image.png" className="border" />
 
-Each of these events fires the **Update Billing Info** webhook.
+***
 
-## Lifecycle Behavior
+## How Account Updater works
 
-### Pre-renewal for Subscriptions
+Account Updater runs on a publish/subscribe model across all four supported card networks. There are three types of update events:
 
-Account Updater runs pre-renewal on subscriptions with outdated information roughly 1 week before renewal date. In certain cases, we look ahead farther than 1 week in the case of cards that have long-running subscriptions, such as quarterly, bi-annual, or annual subscriptions. _Note:_ This fetch capability is only supported on file-based Account Updater services, and does not apply to event-based services such as Amex CardRefresher and MasterCard ABU.
+* **Updated expiration date** — automatically updates the expiration date stored in billing info
+* **Updated card number** — replaces the full card number with the new one. In rare cases, this can include a card brand change. When that happens, customers must return to session to re-authenticate their card, since card networks don't share Network Transaction ID (NTID) formatting across brands. Recurly recommends proactively reaching out to affected customers and having them reauthenticate, which will run a verification and update the NTID on file. See [Verify stored card information](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/) for details
+* **Credit card account closed** — flags the billing info as invalid to prevent further charges
 
-### Dunning Behaviors
+Each of these events triggers the **Update Billing Info** webhook.
 
-**Post initial-decline**
+### Pre-renewal behavior
 
-After a card declines, we will send cards, or query services (as available) for card updates to check for any missed updates pre-renewal. This is effective in the event of a timing issue pre-renewal or if the card was updated/changed after the initial data request. This is especially effective for MasterCard, who will return information in advice codes on when new information is available that could save a subscription from churning.
+Account Updater runs pre-renewal for subscriptions with outdated billing information approximately one week before the renewal date. For subscriptions with longer billing cycles — quarterly, bi-annual, or annual — Recurly looks ahead further than one week.
 
-**No Change Requeuing**
+> **Note:** Pre-renewal fetch is only supported on file-based Account Updater services. It does not apply to event-based services such as Amex Cardrefresher and Mastercard ABU.
 
-In the event that a request for new card details is returned as 'No Change', 'No Response', 'Contact Cardholder', or 'No Match', we requeue data to see if there is any change in the status of a card during the dunning timeframes for a given invoice, especially if it is past due.
+### Dunning behavior
 
-We will keep requesting updates until dunning is completed and the invoice is failed/closed. If the consumer has other active subscriptions that are up for renewal, or past due, we will continue to query for updates.
+**Post initial decline**
 
-For certain cards, event-based Account Updater services will accept new billing info updates outside of these specific scenarios since Recurly does not control the timing on events received from third parties.
+After a card declines, Recurly queries available card update services to check for any missed updates before renewal. This is especially useful if the card was updated after the initial data request. Mastercard in particular returns advice codes that indicate when new card information is available — helping prevent a subscription from churning.
 
-# American Express® integration with Recurly
+**No-change requeuing**
 
-Recurly’s American Express® Cardrefresher integration provides an automated solution to keep Amex card details up-to-date. By connecting to the Amex Account Updater (Card Refresher), Recurly ensures stored card details remain current, reducing payment failures. However, to use this service, you must have a direct American Express® merchant account and SE number. **OptBlue (gateway) SE numbers are not supported**—Recurly cannot process them.
+If a card update request returns as "No Change," "No Response," "Contact Cardholder," or "No Match," Recurly requeues the card to check for status changes throughout the dunning period — continuing until the invoice is failed or closed.
 
-# Adyen Real Time Account Updater integration with Recurly
+If the customer has other active or past-due subscriptions, Recurly continues querying for updates across those as well. For event-based Account Updater services, Recurly may also receive updates outside of these specific scenarios, since the timing of third-party events is outside of Recurly's control.
 
-[Adyen Real Time Account Updater](https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater) (RTAU) returns account updater responses in real time, inline with transaction processing. This helps keep card details current during authorisation and can reduce renewal declines caused by outdated card information.
+***
 
-To use Adyen RTAU with Recurly, you must meet these requirements:
+## American Express® Cardrefresher integration
 
-* Adyen is your primary gateway for processing
-* You’re using raw card data through Recurly (not gateway tokens or network tokens)
-* You’re processing card payments (RTAU doesn’t apply to non-card payment methods)
+Recurly's Cardrefresher integration keeps Amex card details up to date automatically by connecting directly to the American Express® Account Updater service. This reduces payment failures caused by outdated card details.
 
-For setup steps and a full walkthrough, see the [Adyen Real Time Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater).
+To use this service, you must have a direct American Express® merchant account and SE number. OptBlue (gateway-provided) SE numbers are not supported.
 
-# Account activity
+***
 
-Monitor credit‐card billing info updates by Account Updater under an Account’s **Activity** section.
+## Adyen Real Time Account Updater integration
 
-# Excluding an account’s billing information
+[Adyen Real Time Account Updater](https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater) (RTAU) returns card update responses in real time, inline with transaction processing. This helps keep card details current during authorization and can reduce renewal declines caused by outdated information.
 
-If you prefer not to update billing info for certain customers, you can opt them out:
+To use Adyen RTAU with Recurly, you must meet all of the following:
 
-1. **Navigate** to the specific customer account in Recurly.
-2. **Scroll** to the **Billing Info** section on the right.
-3. **Toggle** the Account Updater setting as needed.
+* Adyen is your primary gateway
+* You're processing raw card data through Recurly (not gateway tokens or network tokens)
+* You're processing card payments (RTAU doesn't apply to non-card payment methods)
 
-# Disabling Account Updater in Recurly
+For full setup instructions, see the [Adyen Real Time Account Updater documentation](https://docs.recurly.com/recurly-subscriptions/docs/adyen#adyen-realtime-account-updater).
 
-> 🚧 If you disable Account Updater, you cannot re-enable it for 10 business days.
+***
 
-1. **Navigate** to Payments Settings and click **Disable** in the Account Updater box’s upper right.
-2. A pop-up will appear—confirm you want to disable.
+## Monitoring account activity
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/4363213dc7065784de3edcfb27b0d5dd9c0de96b604a8e5d9600b51b78b5fd30-image.png" className="border" />
+You can monitor credit card billing info updates made by Account Updater in the **Activity** section of any customer account.
 
-3. **Check** all three boxes and click **Disable**.
+***
 
-# Notes
+## Excluding a customer from Account Updater
 
-1. Account Updater applies only to stored credit cards; it’s not visible for non-card payment methods.
-2. Only users with billing-info editing rights can access these settings.
-3. Once enabled, all billing info is submitted to the Account Updater service by default.
+To opt a specific customer out of Account Updater:
+
+1. Navigate to the customer's account in Recurly
+2. Scroll to the **Billing Info** section on the right
+3. Toggle the Account Updater setting off
+
+***
+
+## Disabling Account Updater
+
+> **Warning:** If you disable Account Updater, you cannot re-enable it for 10 business days.
+
+1. Navigate to **Payments Settings** and click **Disable** in the upper right of the Account Updater box
+2. Confirm the action in the pop-up that appears
+
+<Image align="center" border={true} width="75%" src="https://files.readme.io/4363213dc7065784de3edcfb27b0d5dd9c0de96b604a8e5d9600b51b78b5fd30-image.png" className="border" />
+
+3. Check all three confirmation boxes and click **Disable**
+
+***
 
 # FAQs
 
-### **Q: How does Recurly’s Account Updater work?**
+**How does Recurly's Account Updater work?**
 
-A: When enabled, Recurly periodically checks with participating card networks to refresh stored payment details, helping avoid declined transactions due to outdated card information.
+When enabled, Recurly periodically checks with participating card networks to refresh stored payment details, helping avoid declined transactions caused by outdated card information.
 
-### **Q: Which card brands participate in Recurly’s Account Updater?**
+**Which card networks does Account Updater support?**
 
-A: Participation varies, but major brands like Visa, Mastercard, and American Express are supported. Discover® is also included.
+Recurly's Account Updater integrates with Visa®, Mastercard®, American Express®, and Discover®. Participation is determined by the cardholder's issuing bank, not Recurly.
 
-### **Q: Do I need to do anything after enabling Account Updater?**
+**Do I need to do anything after enabling Account Updater?**
 
-A: No. Once enabled, Recurly handles all checks and updates automatically. You’ll see improved authorization rates as stale card details are replaced.
+No. Once enabled, Recurly handles all checks and updates automatically. You should see improved authorization rates as stale card details are refreshed.
 
-### **Q: What if I have Account Updater enabled at both Recurly and another gateway?**
+**What if I have Account Updater enabled at both Recurly and another gateway?**
 
-A: There’s no guarantee which system updates first. Maintaining both can lead to temporary data mismatches and extra costs, since Recurly can’t see updates made by another gateway.
+There's no guarantee which system updates first. Running both simultaneously can lead to temporary data mismatches and additional costs, since Recurly can't see updates made by another gateway.
 
-### **Q: When is it better to enable Account Updater at another gateway instead of Recurly?**
+**When should I enable Account Updater at a gateway instead of through Recurly?**
 
-A: If you store only gateway tokens (not full card data) in Recurly, updating card info at the gateway level may be necessary. However, this won’t refresh data within Recurly itself—so customer billing info in Recurly may remain outdated.
+If you store only gateway tokens — not full card data — in Recurly, updating card info at the gateway level may be necessary. Keep in mind this won't refresh billing data within Recurly itself, so customer records in Recurly may remain outdated.
 
 <br />
