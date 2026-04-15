@@ -99,7 +99,7 @@ The preview will show you a sample generated unique code reflecting your templat
 Once a bulk coupon template has been created, there are two options to create the bulk coupons codes.
 
 1. **Asynchronous process:**  [Generate the bulk codes](https://recurly.com/developers/api/v2021-02-25/index.html#operation/generate_unique_coupon_codes) through one endpoint and then [retrieve those codes](https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_unique_coupon_codes) through a second endpoint.  This process is great if you do not need the codes in real-time and want all codes generated with a single call.
-2. **Synchronous process:** Generate bulk codes and receive those codes immediately in the response.  The number of codes that can be returned is limited to 200.  This is great if you do not want to create all of the codes in a single call and need just a few codes in real-time as you manage your coupon campaign.
+2. **Synchronous process:** [Generate bulk codes](https://recurly.com/developers/api/v2021-02-25/index.html#operation/generate_unique_coupon_codes_sync) and receive those codes immediately in the response.  The number of codes that can be returned is limited to 200.  This is great if you do not want to create all of the codes in a single call and need just a few codes in real-time as you manage your coupon campaign.
 
 **Path:** `/coupons/code-20off/generate_sync`
 
