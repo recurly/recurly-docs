@@ -74,7 +74,7 @@ metadata:
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📈</div>
-      <div><h2>Why Should You Use Account Updater?</h2><p>Learn how Account Updater (AU) secures your revenue, reduces operational overhead, and improves the subscriber experience.</p></div>
+      <div><h2>Why Should You Use Account Updater?</h2><p>Maximize your recovery ROI by stopping involuntary churn at the source. Account Updater (AU) secures future Lifetime Value (LTV) by bypassing the friction of dunning and avoiding unnecessary gateway transaction fees.</p></div>
     </div>
 
     <div class="rc-stat-grid">
