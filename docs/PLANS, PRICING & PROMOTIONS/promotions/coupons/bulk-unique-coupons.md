@@ -94,26 +94,26 @@ The preview will show you a sample generated unique code reflecting your templat
 
 > **Note:**To extend the redeem-by date for your bulk unique coupon codes, you'll need to add more codes through the user interface. This is necessary even if you've generated a large number of codes already. It's important to note that there's a maximum limit of 100,000 unique codes. If you reach this limit, you won't be able to extend the redeem-by date further. It's advisable to plan ahead to manage your coupon codes within these constraints. If you need to extend the redeem-by date, it's better to do so before nearing the maximum code limit.
 
-**Generate bulk coupons through the API**
+### Generate bulk coupons through the API
 
-Once a bulk coupon template has been created, there are two options to create the bulk coupons codes.  
+Once a bulk coupon template has been created, there are two options to create the bulk coupons codes.
 
 1. **Asynchronous process:**  [Generate the bulk codes](https://recurly.com/developers/api/v2021-02-25/index.html#operation/generate_unique_coupon_codes) through one endpoint and then [retrieve those codes](https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_unique_coupon_codes) through a second endpoint.  This process is great if you do not need the codes in real-time and want all codes generated with a single call.
 2. **Synchronous process:** Generate bulk codes and receive those codes immediately in the response.  The number of codes that can be returned is limited to 200.  This is great if you do not want to create all of the codes in a single call and need just a few codes in real-time as you manage your coupon campaign.
 
-Path: /coupons/code-20off/generate_sync
+**Path:** `/coupons/code-20off/generate_sync`
 
-Request:   
+**Request:**
 
-```
+```json
 {
   "number_of_unique_codes": 1
 }
 ```
 
-Response:  
+**Response:**
 
-```
+```json
 {
     "object": "unique_coupon_code_generation",
     "unique_coupon_codes": [
@@ -132,6 +132,8 @@ Response:
 		]
 }
 ```
+
+### Generate bulk coupons through the Recurly UI
 
 **Step 1: Start your campaign creation**
 
