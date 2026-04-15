@@ -74,7 +74,7 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Tracking the Impact of Account Updater (AU)</h2>
-        <p>Quantify your retention success by isolating revenue recovered through card updates. Measure the specific renewal volume driven by Account Updater (AU) to prove ROI and identify downward trends in involuntary churn.</p>
+        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize the Churn Management dashboards to track renewal counts and identify the specific 'Other Issues' resolved by Account Updater (AU) before they could impact your bottom line.</p>
       </div>
     </div>
 
@@ -86,35 +86,31 @@ metadata:
       <div class="rc-opt"><div class="rc-oicon">🔄</div><h4>AU as % of Recovery</h4><p>A strategic benchmark showing how much of your revenue safety net is proactive (AU) versus reactive (Dunning).</p></div>
     </div>
 
-    <div class="rc-card">
-      <h3 class="rc-subhead">📹 Trail Guide: Dashboard Walkthrough</h3>
-      <div style="position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:14px;">
-        <iframe src="https://share.synthesia.io/embeds/videos/57b979ea-216b-4e3f-8215-cd6060e32107" loading="lazy" title="Navigate: Secure Your Revenue — Tracking Impact" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0;"></iframe>
-      </div>
-      <p style="margin-top:14px;font-size:.85rem;color:var(--gray);">Watch our Navigate CSM show you exactly where to find AU metrics within your Recurly admin.</p>
-    </div>
-
     <h3 class="rc-subhead">📍 Navigating Your Dashboards</h3>
     <div class="rc-steps">
       <div class="rc-step">
         <div class="rc-sbadge-dark">1</div>
         <div>
           <h3>Recovered Revenue Dashboard</h3>
-          <p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. In the <strong>Recovered Revenue by Method</strong> chart, you can toggle between dollar value and percentage to see AU's specific contribution to your total recovery efforts.</p>
+          <p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. Use the <strong>Recovered Revenue by Method</strong> chart to see the month-over-month contribution of card updates compared to dunning.</p>
+          
+          <div style="position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:12px;margin-top:16px;border:1px solid var(--lightgray);">
+            <iframe src="https://share.synthesia.io/embeds/videos/57b979ea-216b-4e3f-8215-cd6060e32107" loading="lazy" title="Trail Guide: Recovered Revenue Dashboard" allowfullscreen allow="encrypted-media; fullscreen;" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0;"></iframe>
+          </div>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge-dark">2</div>
         <div>
           <h3>Renewal Invoices Report</h3>
-          <p>Navigate to <strong>Analytics → Churn Management → Renewal Invoices</strong>. This report allows you to monitor how many subscribers stayed active because of an Account Updater (AU) event.</p>
+          <p>Navigate to <strong>Analytics → Churn Management → Renewal Invoices</strong>. This report allows you to monitor how many subscribers stayed active specifically because of an Account Updater (AU) event.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge-dark">3</div>
         <div>
           <h3>Review the "Other Issues" Chart</h3>
-          <p>Within the Renewal Invoices report, locate the <strong>Other Issues</strong> chart. This captures invoices that would have required manual intervention but were automatically resolved by a proactive card update.</p>
+          <p>Within the Renewal Invoices report, locate the <strong>Other Issues</strong> chart. This captures invoices that would have otherwise required manual intervention but were automatically resolved by a proactive card update.</p>
         </div>
       </div>
     </div>
