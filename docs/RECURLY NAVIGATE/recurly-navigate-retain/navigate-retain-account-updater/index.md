@@ -79,27 +79,27 @@ metadata:
       <div class="rc-sec-icon">💳</div>
       <div>
         <h2>What is Account Updater?</h2>
-        <p>A plain-language explanation of what Account Updater does and how it works — no prior knowledge required.</p>
+        <p>A high-level look at how Recurly works with global card networks to proactively keep your customers' payment data current.</p>
       </div>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">🧩 The Simple Version</h3>
       <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">When a customer's credit or debit card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis — like a subscription renewal — that charge will simply fail. The customer hasn't cancelled. They still want your product. Their card just changed.</p>
-      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0;"><strong>Account Updater (AU) is the solution.</strong> It's a service run by the major card networks — Visa, Mastercard, American Express, and Discover — that automatically pushes updated card details to Recurly whenever a card on file changes. Recurly then stores that fresh information so that your next billing attempt uses the correct card data, without the customer needing to do anything.</p>
+      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0;"><strong>Account Updater (AU) is the solution.</strong> It's a service run by the major card networks — Visa, Mastercard, American Express (AMEX), and Discover — that automatically pushes updated card details to Recurly whenever a card on file changes. Recurly then stores that fresh information so that your next billing attempt uses the correct card data, without the customer needing to do anything.</p>
     </div>
 
     <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Standard Account Updater</h4><p>Supported for Visa, Mastercard, American Express, and Discover. Updates are fetched via secure batch files before renewal attempts.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">⚡</div><h4>Real-Time Account Updater (RTAU)</h4><p>Available for Visa, Mastercard, Amex, and Discover. Recurly checks for updates during the transaction attempt to prevent declines before they happen.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🏦</div><h4>Cardrefresher</h4><p>Amex's specialized AU service. While many Amex updates now happen via RTAU, Cardrefresher provides a robust fallback for legacy or direct Amex merchant integrations.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Standard Account Updater</h4><p>Supported for Visa, Mastercard, American Express (AMEX), and Discover. Updates are fetched via secure batch files before renewal attempts.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">⚡</div><h4>Real-Time Account Updater (RTAU)</h4><p>Available for Visa, Mastercard, American Express (AMEX), and Discover. Recurly checks for updates during the transaction attempt to prevent declines before they happen.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🏦</div><h4>Cardrefresher</h4><p>American Express (AMEX)'s specialized AU service. While many updates now happen via RTAU, Cardrefresher provides a robust fallback for legacy or direct merchant integrations.</p></div>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">🗺️ How It Works — Step by Step</h3>
       <div class="rc-steps" style="margin-bottom:0;">
         <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>A cardholder's bank issues a card change</h3><p>This could be a new card number, updated expiration date, or a card that's been closed or replaced. Common events: annual renewals, fraud replacements, or bank-issued card migrations.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>The card network is notified</h3><p>Visa, Mastercard, Amex, or Discover updates their internal records with the new card details associated with that account.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>The card network is notified</h3><p>Visa, Mastercard, American Express (AMEX), or Discover updates their internal records with the new card details associated with that account.</p></div></div>
         <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Recurly is alerted</h3><p>For standard AU, Recurly checks for updates on a scheduled basis. For Real-Time AU, Recurly requests the update at the exact moment a transaction is attempted.</p></div></div>
         <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Recurly updates the stored payment method</h3><p>The new card details replace the old ones in Recurly's payment vault — silently, automatically, and without any action required from your customer or your team.</p></div></div>
         <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>The next renewal charges successfully</h3><p>Because the billing info is already up to date, the subscription renews without interruption. No failed payment. No dunning. No involuntary churn.</p></div></div>
