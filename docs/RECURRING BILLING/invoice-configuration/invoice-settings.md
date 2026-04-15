@@ -58,7 +58,7 @@ Decide if you want to send out paid invoices when a subscription is either upgra
 
 #### Subscription Alignment
 
-Selecting the Subscription Alignment setting will clear the *Account Bill Date* once the last subscription on an account expires.  In the event that a new subscription is created on an existing account, if there are no other active subscriptions, the *Account Bill Date* will be updated to the new subscription's created date.
+Selecting the Subscription Alignment setting will clear the _Account Bill Date_ once the last subscription on an account expires.  In the event that a new subscription is created on an existing account, if there are no other active subscriptions, the _Account Bill Date_ will be updated to the new subscription's created date.
 
 **Note:**  This setting is only available if your site has the Aligning Renewals feature turned on.
 
@@ -66,7 +66,7 @@ Selecting the Subscription Alignment setting will clear the *Account Bill Date* 
 
 #### Refunds
 
-Determine how you want to handle declined refund transactions by either keeping the the default *Issue Credit* or *Block* which will either prevent a declined transaction or prevent an issue a refund credit.
+Determine how you want to handle declined refund transactions by either keeping the the default _Issue Credit_ or _Block_ which will either prevent a declined transaction or prevent an issue a refund credit.
 
 <Image align="center" src="https://files.readme.io/0ef34920bc3f69e20cd9d49864f3f3de51405baca1e012a24cb944b7f8bb8ad5-Screenshot_2025-07-18_at_2.44.20_PM.png" />
 
@@ -88,17 +88,17 @@ Email Templates that support invoice PDF attachments:
 * Payment Refunded
 * Payment Voided
 
-<Image align="center" width="75% " src="https://files.readme.io/2c2422e-Screenshot_2024-08-05_at_9.21.28_AM.png" />
+<Image align="center" border={true} width="75% " src="https://files.readme.io/2c2422e-Screenshot_2024-08-05_at_9.21.28_AM.png" className="border" />
 
 ## Bill To Address
 
-Select "Use Account Info Address for all Invoices" to force all customer invoices to use the Account Info Address, regardless of their payment method. To do this, go to Configuration→Taxes→Tax Settings and enable "Use Account Information Address for all Invoices" and save the page. The invoice address is displayed on the invoice in the "Bill To" section and is the address used for any tax calculations.
+Select "Use Account Info Address for all Invoices" to force all customer invoices to use the Account Info Address, regardless of their payment method. To do this, go to Configuration→Taxes→Tax Settings and enable "Use Account Information Address for all Invoices" and save the page. The invoice address is displayed on the invoice in the "Bill To" section and is the address used for any tax calculations.x
 
-![381](https://files.readme.io/1AemwLZGSD2cK2sdH0jS_invoice-bill-to.png "invoice-bill-to.png")
+<Image align="center" alt="381" border={true} src="https://files.readme.io/1AemwLZGSD2cK2sdH0jS_invoice-bill-to.png" title="invoice-bill-to.png" className="border" />
 
 ## Example invoice using Invoice Settings configurations
 
-![](https://files.readme.io/c76b922-Screen_Shot_2022-04-04_at_5.37.43_PM.png "Screen Shot 2022-04-04 at 5.37.43 PM.png")
+<Image align="center" border={true} src="https://files.readme.io/c76b922-Screen_Shot_2022-04-04_at_5.37.43_PM.png" title="Screen Shot 2022-04-04 at 5.37.43 PM.png" className="border" />
 
 This feature is useful for merchants who:
 
