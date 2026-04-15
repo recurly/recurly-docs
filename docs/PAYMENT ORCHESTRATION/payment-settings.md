@@ -134,6 +134,12 @@ At this point, Account Updater will be enabled for your site, and cards that are
 
 <Image align="center" border={true} src="https://files.readme.io/4d6fe1c5919f5fcde2426a87dc4bf43f0a7e16c22d96803d27a021bc5f8b4967-image.png" className="border" />
 
+## Duplicate billing infos prevention
+
+When the **[Wallet](https://docs.recurly.com/recurly-subscriptions/docs/wallet)** feature is enabled, an additional payments setting becomes available to prevent duplicate billing information from being saved. This control applies to credit cards (with PANs) and RJS tokens. By default, the setting is configured to allow duplicates. When set to block duplicates and a duplicate entry is made, an error will be returned in the Recurly UI or via the [billing infos](https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_billing_infos) API.
+
+<Image align="center" border={true} src="https://files.readme.io/d5fb633232ff5ac8ccc03566f54a76df4e1caa9caab01a8c96d5e7c1862da351-Screenshot_2026-04-15_at_12.42.35_PM.png" className="border" />
+
 # FAQs
 
 **Q: What if my customer does not provide an address on the initial transaction?**
