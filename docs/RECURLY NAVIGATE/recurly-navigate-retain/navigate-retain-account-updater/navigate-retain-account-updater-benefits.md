@@ -74,7 +74,7 @@ metadata:
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📈</div>
-      <div><h2>Why Should You Use Account Updater?</h2><p>The business case for enabling Account Updater — including what it protects, what it recovers, and what it costs.</p></div>
+      <div><h2>Why Should You Use Account Updater?</h2><p>Learn how Account Updater (AU) secures your revenue, reduces operational overhead, and improves the subscriber experience.</p></div>
     </div>
 
     <div class="rc-stat-grid">
@@ -85,28 +85,29 @@ metadata:
 
     <div class="rc-card">
       <h3 class="rc-subhead">🎯 The Core Problem It Solves</h3>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Involuntary churn — customers who leave not because they wanted to, but because a payment failed — is one of the largest and most preventable sources of subscriber loss for recurring businesses. Beyond simple expirations, AU also flags <strong>Account Closed</strong> statuses, allowing you to stop charging invalid cards immediately.</p>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0;">When a card is reissued, the subscriber rarely thinks to update it until their service is cut off. Account Updater catches those changes before the charge ever fails, preserving both the revenue and the customer relationship.</p>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Involuntary churn — customers who leave not because they wanted to, but because a payment failed — is one of the largest and most preventable sources of subscriber loss for recurring businesses. Beyond simple expirations, Account Updater (AU) also flags <strong>Account Closed</strong> statuses, allowing you to stop charging invalid cards immediately.</p>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0;">When a card is reissued, the subscriber rarely thinks to update it until their service is cut off. Account Updater (AU) catches those changes before the charge ever fails, preserving both the revenue and the customer relationship.</p>
     </div>
 
     <h3 class="rc-subhead">💼 Key Business Benefits</h3>
     <div class="rc-2col">
-      <div class="rc-opt"><div class="rc-oicon">🛡️</div><h4>Prevent Involuntary Churn Upstream</h4><p>Unlike dunning, which reacts after a failure, AU acts before the charge occurs. It is your first line of defense in protecting the customer lifecycle.</p><span class="rc-tag">Proactive Recovery</span></div>
-      <div class="rc-opt"><div class="rc-oicon">💸</div><h4>Significant Cost Avoidance</h4><p>By identifying "Closed" or "Invalid" accounts before a transaction attempt, AU helps you avoid gateway transaction fees for charges that were guaranteed to fail.</p><span class="rc-tag">Lower OpEx</span></div>
+      <div class="rc-opt"><div class="rc-oicon">🛡️</div><h4>Prevent Involuntary Churn Upstream</h4><p>Unlike dunning, which reacts after a failure, Account Updater (AU) acts before the charge occurs. It is your first line of defense in protecting the customer lifecycle.</p><span class="rc-tag">Proactive Recovery</span></div>
+      <div class="rc-opt"><div class="rc-oicon">💸</div><h4>Significant Cost Avoidance</h4><p>By identifying "Closed" or "Invalid" accounts before a transaction attempt, Account Updater (AU) helps you avoid gateway transaction fees for charges that were guaranteed to fail.</p><span class="rc-tag">Lower OpEx</span></div>
       <div class="rc-opt"><div class="rc-oicon">🤝</div><h4>Seamless Subscriber Experience</h4><p>No intrusive "Update your payment" emails or service interruptions. The transition to a new card happens silently in the vault, maintaining total friction-less billing.</p><span class="rc-tag">CX Improvement</span></div>
       <div class="rc-opt"><div class="rc-oicon">🔁</div><h4>Accelerate Active Dunning</h4><p>If a card is updated while an invoice is in dunning, Recurly uses the new info for the next automatic retry. This drastically increases the success rate of dunning cycles.</p><span class="rc-tag">Integrated Logic</span></div>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">💰 Pricing Considerations</h3>
-      <p style="font-size:.88rem;color:var(--gray);margin:0 0 16px;">How Account Updater is priced depends on your Recurly contract and the specific update method (Batch vs. Real-Time).</p>
-      <div class="pricing-card free"><h4>✅ Included in Your Contract</h4><p>Many plans bundle standard Batch AU at no additional per-update cost. In these cases, it is a high-value feature that costs nothing extra to activate.</p></div>
-      <div class="pricing-card paid"><h4>💳 Usage-Based Updates</h4><p>Some configurations apply fees for successful card updates. Because AU recovers an average of 18% of revenue, the cost per update is typically a fraction of the recovered Lifetime Value (LTV).</p></div>
+      <p style="font-size:.88rem;color:var(--gray);margin:0 0 16px;">How Account Updater (AU) is priced depends on your Recurly contract and the specific update method (Batch vs. Real-Time Account Updater (RTAU)).</p>
+      <div class="pricing-card free"><h4>✅ Included in Your Contract</h4><p>Many plans bundle standard Batch Account Updater (AU) at no additional per-update cost. In these cases, it is a high-value feature that costs nothing extra to activate.</p></div>
+      <div class="pricing-card paid"><h4>💳 Usage-Based Updates</h4><p>Some configurations apply fees for successful card updates. Because Account Updater (AU) recovers an average of 18% of revenue, the cost per update is typically a fraction of the recovered Lifetime Value (LTV).</p></div>
+      <p style="font-size:.88rem;color:var(--gray);margin-top:16px;text-align:center;"><strong>Not sure which pricing model applies to you?</strong> <a href="mailto:support@recurly.com" style="color:var(--orange);font-weight:700;text-decoration:none;">Contact Recurly Support</a> to discuss your specific contract and the differences between Standard and Real-Time Account Updater (RTAU).</p>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Think About the Lifetime Value</h4><p>When a card updates successfully, you aren't just saving one invoice; you are securing the entire future stream of revenue for that subscriber. A single update today can protect hundreds or thousands of dollars in future LTV.</p></div>
+      <div><h4>Think About the Lifetime Value</h4><p>When a card updates successfully, you aren't just saving one invoice; you are securing the entire future stream of revenue for that subscriber. A single update today can protect hundreds or thousands of dollars in future Lifetime Value (LTV).</p></div>
     </div>
 
     <div class="rc-sec-nav">
