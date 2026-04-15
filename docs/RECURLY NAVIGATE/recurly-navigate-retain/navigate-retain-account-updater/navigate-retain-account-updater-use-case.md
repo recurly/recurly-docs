@@ -95,7 +95,7 @@ metadata:
 
     <h3 class="rc-subhead">❓ Anticipated Questions & Answers</h3>
     <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"What's the cost?"</h3><p>Depending on our contract, Account Updater (AU) is either included in our subscription or usage-based. The average return is 77x. Speak with your Account Manager or contact Recurly Support to confirm our specific model.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"What's the cost?"</h3><p>Depending on our contract, Account Updater (AU) is either included in our subscription or usage-based. The average return is 77x. Speak with your Account Manager or <a href="mailto:support@recurly.com" style="color:var(--orange); font-weight:700; text-decoration:none;">Contact Recurly Support</a> to confirm our specific model.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Do we need engineering resources?"</h3><p>No. Account Updater (AU) is enabled through a self-serve toggle in the admin. There is no code change or development work required for setup.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Are there any risks?"</h3><p>The primary check is ensuring we don't have a gateway-level updater running for the exact same card pool to avoid redundancy. Recurly is PCI-compliant and all updates are handled securely.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"How quickly will we see results?"</h3><p>Impact builds over 60–90 days as card cycles renew. We can monitor this directly in the Churn Management analytics dashboard.</p></div></div>
