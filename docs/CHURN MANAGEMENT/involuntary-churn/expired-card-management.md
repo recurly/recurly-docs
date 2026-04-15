@@ -66,17 +66,21 @@ The tool also offers dashboards that allow you to delve deep into the revenue pr
 ### Monitoring Revenue Recovery
 
 1. Access the **Analytics** section in the Admin Console.
-2. Navigate to **Payment Orchestration**. 
+2. Navigate to **Churn Management**. 
 
-asdas
+   ![](https://files.readme.io/75bfd4d532dd694490e9bc45774f7ea862b6b8e7dbf364370f2a09168f5b3fe5-image.png)
 
-asasf
+   ![](https://files.readme.io/ebe2cadbebc65ade6e4ba521545f8119c439cc721fe72a8f2e9617fd6adbbb3c-image.png)
+
+   ![](https://files.readme.io/69c857bc15eb82701f094a01502bcbe0658dcd4516cdc9f4b9603466a95206ed-image.png)
+
+![](https://files.readme.io/923e69675ea298398d1a5765cfa10f7a6ee9978880fea7320649833e1952a036-image.png)
 
 <br />
 
 1. View the **Recovered Revenue** dashboard to analyze the effectiveness of the Expired Card Management feature.
 
-![](https://files.readme.io/6c66e46-image.png)
+<Image align="center" border={true} src="https://files.readme.io/6c66e46-image.png" className="border" />
 
 By following these processes, businesses can ensure that their subscribers enjoy uninterrupted services, thereby solidifying their relationship and trust.
 
