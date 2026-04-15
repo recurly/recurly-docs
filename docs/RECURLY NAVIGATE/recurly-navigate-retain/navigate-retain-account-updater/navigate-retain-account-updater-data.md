@@ -42,6 +42,7 @@ metadata:
   .rc-oh-content h4{color:var(--yellow);margin:0 0 8px;font-size:1.1rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
   .rc-oh-content p{color:var(--lightgray);font-size:.95rem;line-height:1.6;margin:0 0 20px}
   .rc-oh-btn{background:var(--yellow);color:var(--offblack);padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:10px}
+  .rc-oh-btn:hover{background:#eec805}
   .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;margin-bottom:24px;display:flex;gap:16px;align-items:flex-start}
   .rc-tipicon{font-size:24px;flex-shrink:0}.rc-tip h4{font-size:.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:.5px;margin:0 0 4px}.rc-tip p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
   .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
