@@ -68,19 +68,13 @@ The tool also offers dashboards that allow you to delve deep into the revenue pr
 1. Access the **Analytics** section in the Admin Console.
 2. Navigate to **Churn Management**. 
 
-   ![](https://files.readme.io/75bfd4d532dd694490e9bc45774f7ea862b6b8e7dbf364370f2a09168f5b3fe5-image.png)
+<Image align="center" border={true} width="30% " src="https://files.readme.io/923e69675ea298398d1a5765cfa10f7a6ee9978880fea7320649833e1952a036-image.png" className="border" />
 
-   ![](https://files.readme.io/ebe2cadbebc65ade6e4ba521545f8119c439cc721fe72a8f2e9617fd6adbbb3c-image.png)
+3. View the **Recovered Revenue** dashboard to analyze the effectiveness of the Expired Card Management feature.
 
-   ![](https://files.readme.io/69c857bc15eb82701f094a01502bcbe0658dcd4516cdc9f4b9603466a95206ed-image.png)
+   ![](https://files.readme.io/eb73ef566e7905ac18a5ce2ef6e5a03bb5944571723cddaad3ccc07deaadf46a-image.png)
 
-![](https://files.readme.io/923e69675ea298398d1a5765cfa10f7a6ee9978880fea7320649833e1952a036-image.png)
-
-<br />
-
-1. View the **Recovered Revenue** dashboard to analyze the effectiveness of the Expired Card Management feature.
-
-<Image align="center" border={true} src="https://files.readme.io/6c66e46-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b42da2c011c01b0cb7cead9274f8c0cad6a47f7bd0b066123402fc0252967248-image.png" className="border" />
 
 By following these processes, businesses can ensure that their subscribers enjoy uninterrupted services, thereby solidifying their relationship and trust.
 
