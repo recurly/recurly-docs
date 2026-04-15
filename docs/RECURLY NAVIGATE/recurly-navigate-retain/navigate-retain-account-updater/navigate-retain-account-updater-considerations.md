@@ -86,33 +86,33 @@ metadata:
       <div class="rc-sec-icon">🔍</div>
       <div>
         <h2>Is Account Updater Right for You?</h2>
-        <p>A review of common scenarios to ensure your configuration maximizes recovery across all card networks.</p>
+        <p>Confirm your technical readiness by reviewing gateway tokenization compatibility, optimizing card network coverage (including Discover and American Express (AMEX) nuances), and verifying your vault storage model.</p>
       </div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Good News: Most Merchants Are Already Set Up</h4><p>For the majority of Recurly customers, enabling AU is a simple configuration toggle. Recurly's Real-Time AU (RTAU) now covers major networks globally—including Amex and Discover—on supported gateways, reducing the need for legacy direct Amex setups.</p></div>
+      <div><h4>Good News: Most Merchants Are Already Set Up</h4><p>For the majority of Recurly customers, enabling Account Updater (AU) is a simple configuration toggle. Recurly's Real-Time Account Updater (RTAU) now covers major networks globally—including American Express (AMEX) and Discover—on supported gateways, reducing the need for legacy direct setups.</p></div>
     </div>
 
     <h3 class="rc-subhead">🔑 Key Questions to Ask Before You Enable</h3>
     <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>How are you tokenizing payment data?</h3><p>Recurly AU works seamlessly with Recurly.js and Recurly-hosted checkouts. If you use <strong>Gateway Tokenization</strong> (e.g., Stripe, Braintree, Adyen), Recurly can still run AU as long as the token is managed within the Recurly vault.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Is your gateway already running AU?</h3><p>Running AU in both Recurly and your gateway can be redundant. However, many merchants choose to run <strong>Recurly AU alongside gateway RTAU</strong> to ensure 100% coverage across all card networks and regions that the gateway alone might miss.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>What is the mix of your payment methods?</h3><p>AU applies to credit and debit cards. While it won't affect ACH or PayPal, any subscriber with a <strong>Credit Card on File</strong> will benefit—even if they primarily pay via manual invoices or one-time add-ons.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Are you an American Express merchant?</h3><p>Modern RTAU now handles Amex globally for many gateways (including OptBlue). Legacy "Cardrefresher" is only required for specific direct-Amex configurations or older batch-processing needs.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>How are you tokenizing payment data?</h3><p>Recurly Account Updater (AU) works seamlessly with Recurly.js and Recurly-hosted checkouts. If you use <strong>Gateway Tokenization</strong> (e.g., Stripe, Braintree, Adyen), Recurly can still run AU as long as the token is managed within the Recurly vault.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Is your gateway already running AU?</h3><p>Running Account Updater (AU) in both Recurly and your gateway can be redundant. However, many merchants choose to run <strong>Recurly AU alongside gateway RTAU</strong> to ensure 100% coverage across all card networks and regions that the gateway alone might miss.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>What is the mix of your payment methods?</h3><p>Account Updater (AU) applies to credit and debit cards. While it won't affect ACH or PayPal, any subscriber with a <strong>Credit Card on File</strong> will benefit—even if they primarily pay via manual invoices or one-time add-ons.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Are you an American Express merchant?</h3><p>Modern Real-Time Account Updater (RTAU) now handles American Express (AMEX) globally for many gateways (including OptBlue). Legacy "Cardrefresher" is only required for specific direct-AMEX configurations or older batch-processing needs.</p></div></div>
     </div>
 
     <hr class="rc-divider">
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
-      <p><strong>Stored Billing Info Required:</strong> Account Updater requires a <strong>Billing Info</strong> object to exist in the Recurly vault. It will not run on "guest checkouts" where card details are not saved for future use, as there is no record to update.</p>
+      <p><strong>Stored Billing Info Required:</strong> Account Updater (AU) requires a <strong>Billing Info</strong> object to exist in the Recurly vault. It will not run on "guest checkouts" where card details are not saved for future use, as there is no record to update.</p>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">📋 A Note on Adyen Users</h3>
-      <p style="font-size:.88rem;color:var(--darkgray);line-height:1.6;margin:0;">Recurly supports a dedicated Adyen Real-Time Account Updater integration. For maximum efficiency, we recommend enabling both Adyen RTAU and Recurly AU to ensure comprehensive coverage across Visa, Mastercard, Amex, and Discover networks globally.</p>
+      <p style="font-size:.88rem;color:var(--darkgray);line-height:1.6;margin:0;">Recurly supports a dedicated Adyen Real-Time Account Updater (RTAU) integration. For maximum efficiency, we recommend enabling both Adyen RTAU and Recurly Account Updater (AU) to ensure comprehensive coverage across Visa, Mastercard, American Express (AMEX), and Discover networks globally.</p>
     </div>
 
     <h3 class="rc-subhead">⚡ Quick Diagnostic</h3>
@@ -126,10 +126,10 @@ metadata:
     <h3 class="rc-subhead" style="margin-top:4px;">✅ Pre-Enablement Checklist</h3>
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Before You Enable</h3></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">You have stored Billing Info (Credit/Debit) in the Recurly vault<span>Tokens and raw cards are both eligible</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">You have identified if you need legacy Amex Cardrefresher or modern RTAU<span>RTAU is preferred for global Amex/OptBlue support</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">You've coordinated with payment ops to avoid overlapping gateway AU fees<span>Verify if your gateway's AU is "Always On"</span></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">You have a meaningful volume of cardholders relative to ACH/PayPal users<span>Focus ROI on your card-paying subscriber segment</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">You have stored Billing Info (Credit/Debit) in the Recurly vault<span>Tokens and raw cards are both eligible</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">You have identified if you need legacy AMEX Cardrefresher or modern RTAU<span>Real-Time Account Updater (RTAU) is preferred for global AMEX support</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">You've coordinated with payment ops to avoid overlapping gateway fees<span>Verify if your gateway's Account Updater (AU) is "Always On"</span></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">You have a meaningful volume of cardholders relative to ACH/PayPal users<span>Focus ROI on your card-paying subscriber segment</span></div></div>
     </div>
 
     <div class="rc-sec-nav">
