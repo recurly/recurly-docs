@@ -74,37 +74,54 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Tracking the Impact of Account Updater (AU)</h2>
-        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize the Churn Management dashboards to track renewal counts and identify the specific 'Other Issues' resolved by Account Updater (AU) before they could impact your bottom line.</p>
-      </div>
-    </div>
-
-    <div class="rc-card">
-      <h3 class="rc-subhead">📍 Navigating Your Dashboard</h3>
-      <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>Recovered Revenue Dashboard</h3><p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. Use the <strong>Recovered Revenue by Method</strong> chart to see the month-over-month contribution of card updates compared to dunning.</p></div></div>
-        
-        <div class="rc-card" style="padding:0; border:none; margin: 10px 0;">
-          <div style="position:relative;overflow:hidden;aspect-ratio:16/9;border-radius:10px;">
-            <iframe src="https://share.synthesia.io/embeds/videos/YOUR_RECOVERED_REVENUE_VIDEO_ID" loading="lazy" title="Trail Guide: Recovered Revenue" allowfullscreen style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;"></iframe>
-          </div>
-        </div>
-
-        <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Renewal Invoices Report</h3><p>Navigate to <strong>Analytics → Churn Management → Renewal Invoices</strong>. This report provides a granular view of how many subscription renewals were processed successfully specifically because of an Account Updater (AU) event.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">3</div><div><h3>Check the "Other Issues" Chart</h3><p>Within the Renewal Invoices report, review the <strong>Other Issues</strong> chart. This specifically captures invoices that would have otherwise required manual intervention but were automatically resolved by a card update.</p></div></div>
+        <p>Quantify your retention success by isolating revenue recovered through card updates. Measure the specific renewal volume driven by Account Updater (AU) to prove ROI and identify downward trends in involuntary churn.</p>
       </div>
     </div>
 
     <h3 class="rc-subhead">📏 Key Performance Indicators (KPIs)</h3>
     <div class="rc-2col">
-      <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Revenue Recovered via AU</h4><p>The total currency value successfully processed on cards that were updated by Account Updater (AU) prior to the billing attempt.</p><span class="rc-tag">Primary Metric</span></div>
-      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw number of renewal attempts that succeeded following a card update, found in the Churn Management analytics suite.</p><span class="rc-tag">Volume Metric</span></div>
-      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This should trend downward as Account Updater (AU) proactively handles lifecycle events.</p><span class="rc-tag">Retention Goal</span></div>
-      <div class="rc-opt"><div class="rc-oicon">🔄</div><h4>AU as % of Total Recovery</h4><p>A strategic benchmark showing how much of your revenue safety net is proactive (AU) versus reactive (Dunning).</p><span class="rc-tag">Strategic</span></div>
+      <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Recovered Revenue (AU)</h4><p>The total currency value successfully processed on cards updated by Account Updater (AU) prior to the billing attempt. This is your primary ROI signal.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Successful Renewal Count</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. This tracks the total "saves" for your business.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should decrease as Account Updater (AU) proactively handles card lifecycle events.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">🔄</div><h4>AU as % of Recovery</h4><p>A strategic benchmark showing how much of your revenue safety net is proactive (AU) versus reactive (Dunning).</p></div>
+    </div>
+
+    <div class="rc-card">
+      <h3 class="rc-subhead">📹 Trail Guide: Dashboard Walkthrough</h3>
+      <div style="position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:14px;">
+        <iframe src="https://share.synthesia.io/embeds/videos/57b979ea-216b-4e3f-8215-cd6060e32107" loading="lazy" title="Navigate: Secure Your Revenue — Tracking Impact" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0;"></iframe>
+      </div>
+      <p style="margin-top:14px;font-size:.85rem;color:var(--gray);">Watch our Navigate CSM show you exactly where to find AU metrics within your Recurly admin.</p>
+    </div>
+
+    <h3 class="rc-subhead">📍 Navigating Your Dashboards</h3>
+    <div class="rc-steps">
+      <div class="rc-step">
+        <div class="rc-sbadge-dark">1</div>
+        <div>
+          <h3>Recovered Revenue Dashboard</h3>
+          <p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. In the <strong>Recovered Revenue by Method</strong> chart, you can toggle between dollar value and percentage to see AU's specific contribution to your total recovery efforts.</p>
+        </div>
+      </div>
+      <div class="rc-step">
+        <div class="rc-sbadge-dark">2</div>
+        <div>
+          <h3>Renewal Invoices Report</h3>
+          <p>Navigate to <strong>Analytics → Churn Management → Renewal Invoices</strong>. This report allows you to monitor how many subscribers stayed active because of an Account Updater (AU) event.</p>
+        </div>
+      </div>
+      <div class="rc-step">
+        <div class="rc-sbadge-dark">3</div>
+        <div>
+          <h3>Review the "Other Issues" Chart</h3>
+          <p>Within the Renewal Invoices report, locate the <strong>Other Issues</strong> chart. This captures invoices that would have required manual intervention but were automatically resolved by a proactive card update.</p>
+        </div>
+      </div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Insight: The 90-Day Rule</h4><p>Account Updater (AU) impact is cumulative. Because cards age and expire at different times, it takes roughly 90 days to see the full "stabilized" impact on your recovery metrics.</p></div>
+      <div><h4>Expert Insight: The 90-Day Rule</h4><p>Account Updater (AU) impact is cumulative. Because cards age and expire at different times, it takes roughly 90 days to see the full "stabilized" impact on your recovery metrics. Use the first three months to establish a new baseline for your involuntary churn rate.</p></div>
     </div>
 
     <div class="rc-sec-nav">
