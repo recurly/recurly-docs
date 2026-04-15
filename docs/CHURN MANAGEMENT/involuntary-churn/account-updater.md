@@ -42,22 +42,21 @@ Account Updater is available on all Recurly plans. As of October 26, enabling Ac
 # Enabling Account Updater in Recurly
 
 1. **Login to Recurly:** Sign in to your Recurly account.
-2. **Access Payments Settings:** Navigate to the Payments Settings page from the dashboard.
+2. **Access Payments Settings:** Navigate to the Payments Settings page from the configuration section.
 3. **Locate Account Updater:** Find the Account Updater box at the top.
 4. **Enable the Feature:** Click **Enable**.
 5. **Enter MCC and SE Number:** In the prompt, provide:
 
-   * **Mastercard® Merchant Category Code (MCC)** (required to enable Mastercard® updates)
-   * **10-digit American Express® SE number** (required to enable Cardrefresher)
-     Enter these accurately.
+<Image align="center" border={true} width="80% " src="https://files.readme.io/58055d35475f35584a90ade8832f4e02c9109ed87d86372edc742e62bbdf268d-image.png" className="border" />
 
-   <br />
+* **Mastercard® Merchant Category Code (MCC)** (required to enable Mastercard® updates)
+* **10-digit American Express® SE number** (required to enable Cardrefresher)
+  Enter these accurately.
 
-   <Image align="center" border={true} width="75% " src="https://files.readme.io/79af8f5-image.png" className="border" />
-6. **Confirm Charges:** Check the box to authorize the monthly Account Updater fee. If you lack MCC or SE number, you can still enable Visa® and Discover® only.
-7. **Completion:** Click **Enable**. Your status will update to show you’re enabled for Visa®, Mastercard®, Discover®, and American Express®.
+1. **Confirm Charges:** Check the box to authorize the monthly Account Updater fee. If you lack MCC or SE number, you can still enable Visa® and Discover® only.
+2. **Completion:** Click **Enable**. Your status will update to show you’re enabled for Visa®, Mastercard®, Discover®, and American Express®.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/17be4e7-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/5bf7f2b5b2ab5b22bd9431fbad6cf72ff6123582cd8ec096c7f3c22a04397a32-image.png" className="border" />
 
 > **Note:** Ensure the SE number is correct. Gateway‐provided (OptBlue) SE numbers will not work—only direct Amex SE numbers are supported.
 
@@ -128,7 +127,7 @@ If you prefer not to update billing info for certain customers, you can opt them
 1. **Navigate** to Payments Settings and click **Disable** in the Account Updater box’s upper right.
 2. A pop-up will appear—confirm you want to disable.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/133d86c-image.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/4363213dc7065784de3edcfb27b0d5dd9c0de96b604a8e5d9600b51b78b5fd30-image.png" className="border" />
 
 3. **Check** all three boxes and click **Disable**.
 
@@ -159,3 +158,5 @@ A: There’s no guarantee which system updates first. Maintaining both can lead 
 ### **Q: When is it better to enable Account Updater at another gateway instead of Recurly?**
 
 A: If you store only gateway tokens (not full card data) in Recurly, updating card info at the gateway level may be necessary. However, this won’t refresh data within Recurly itself—so customer billing info in Recurly may remain outdated.
+
+<br />
