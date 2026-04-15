@@ -148,6 +148,7 @@ metadata:
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-invoices" target="_blank" rel="noopener noreferrer">📋 Docs: Renewal Invoices Report</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-declines" target="_blank" rel="noopener noreferrer">📉 Docs: Renewal Declines Dashboard</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
+<a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
   </div>
 </div>
 </body>
