@@ -79,7 +79,7 @@ metadata:
       <div class="rc-sec-icon">💳</div>
       <div>
         <h2>What is Account Updater?</h2>
-        <p>A high-level look at how Recurly works with global card networks to proactively keep your customers' payment data current.</p>
+        <p>A professional overview of how Recurly monitors card networks to ensure your stored payment methods stay fresh and functional.</p>
       </div>
     </div>
 
@@ -91,7 +91,7 @@ metadata:
 
     <div class="rc-3col">
       <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Standard Account Updater</h4><p>Supported for Visa, Mastercard, American Express (AMEX), and Discover. Updates are fetched via secure batch files before renewal attempts.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">⚡</div><h4>Real-Time Account Updater (RTAU)</h4><p>Available for Visa, Mastercard, American Express (AMEX), and Discover. Recurly checks for updates during the transaction attempt to prevent declines before they happen.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">⚡</div><h4>Real-Time Account Updater (RTAU)</h4><p>Supported for Visa, Mastercard, and American Express (AMEX) globally, with Discover support available via specific gateways.</p></div>
       <div class="rc-wi"><div class="rc-wi-icon">🏦</div><h4>Cardrefresher</h4><p>American Express (AMEX)'s specialized AU service. While many updates now happen via RTAU, Cardrefresher provides a robust fallback for legacy or direct merchant integrations.</p></div>
     </div>
 
