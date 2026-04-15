@@ -20,95 +20,104 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+* Analytics user role permission is required to access this dashboard
+
+### Limitations
+
+* Data only includes plans that have had at least one subscriber
+* This dashboard counts individual subscribers, not the total number of subscriptions. A subscriber with multiple active subscriptions is counted once
+
+***
 
 # Definition
 
-'Plan Performance MRR' offers a comprehensive analysis of Monthly Recurring Revenue (MRR) through various charts. At its core, it visualizes the MRR generated from individual plans and evaluates net MRR based on new acquisitions, expansions, reactivations, and churn. The subsequent 'MRR Growth Breakout' charts meticulously dissect MRR changes, ensuring businesses can identify growth drivers or contraction factors.
+MRR by Plan is an analytics dashboard in Recurly that breaks down Monthly Recurring Revenue (MRR) by individual plan. It shows total MRR per plan, net MRR impact from subscription changes, and a detailed growth breakout — so you can see exactly what's driving revenue growth or contraction across your subscription catalog.
 
-> **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
->
-> **Note**: Data only includes plans that have had at least 1 subscriber.
->
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
+> For guidance on navigation and filter tools, see the [Recurly Analytics overview](https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features).
+
+***
 
 # Key benefits
 
-* **Detailed revenue insights:** The 'MRR Totals' line chart demystifies the revenue contributions of each plan, spotlighting top performers and areas of improvement.  
-* **Net MRR analysis:** With the 'Net MRR' bar chart, businesses can intuitively gauge the net impact of subscription alterations on their overall monthly revenue.  
-* **In-depth growth metrics:** The 'MRR Growth Breakout' charts present a granular breakdown of MRR changes, fostering informed decisions on pricing, retention, and expansion strategies.
+* **Plan-level revenue visibility:** See exactly which plans generate the most MRR and how each one contributes to your overall revenue.
+* **Net MRR tracking:** Understand the net impact of new subscriptions, expansions, reactivations, and churn on your monthly revenue at a glance.
+* **Growth breakout analysis:** Identify the specific factors driving MRR changes — whether that's new acquisition, expansion, or contraction — to inform pricing and retention decisions.
 
-# Plan performance MRR
+***
 
-In addition to the filters that are on our other dashboards, the Plan Performance MRR allows the user to view at a different grain. 
+# Key details
 
-When Plan is selected it shows the MRR total of just the plan, when add on is selected it shows the MRR from the plan + the add\_ons.
+## Dashboard overview
 
-<Image align="center" width="75% " src="https://files.readme.io/0e3b319-image.png" />
+The MRR by Plan dashboard is organized into two sections:
 
-The 'Monthly Recurring Revenue (MRR)' view includes one totals line chart and a net MRR bar chart in the 'Monthly Recurring Revenue' section, and five bar charts in the 'MRR Growth Breakout' section.
+* **Monthly Recurring Revenue** — contains the MRR Totals line chart and the Net MRR bar chart
+* **MRR Growth Breakout** — contains five bar charts tracking individual MRR change categories
 
-* The 'MRR Totals' line chart shows the MRR contributed by subscriptions for each plan, providing a clear understanding of which plans generate the most revenue.
+At the top of the dashboard, you can adjust the view grain to show MRR at the plan level or include add-on revenue:
 
-<Image align="center" width="75% " src="https://files.readme.io/3631d50-image.png" />
+* **Plan** — shows MRR for the plan only
+* **Add-on** — shows MRR for the plan plus its add-ons
 
-There are also 2 drills on this chart.
+<Image align="center" border={true} width="75%" src="https://files.readme.io/0e3b319-image.png" className="border" />
 
-1. By Account and Plan
-2. By Account, Plan and Add-on
+***
 
-<Image align="center" width="75% " src="https://files.readme.io/1478f9a-image.png" />
+## Monthly recurring revenue charts
+
+### MRR totals
+
+The **MRR Totals** line chart shows the MRR contributed by subscriptions for each plan over time, making it easy to compare plan performance and spot top earners.
+
+<Image align="center" border={true} width="75%" src="https://files.readme.io/12e39b3bb9d7870c76526a843d2e9769f1fed96f98618c13de6d82f8b96d6ebe-image.png" className="border" />
+
+This chart includes two drills for deeper analysis:
+
+1. **By account and plan**
+2. **By account, plan, and add-on**
 
 **Plans drill:**
 
-<Image align="center" width="75% " src="https://files.readme.io/015e22b-image.png" />
+<Image align="center" border={true} width="75%" src="https://files.readme.io/2e6e65788a68cdcb8862c47ed843ffd25e845e3b8475b3e1782d56cdf347ded1-image.png" className="border" />
 
-**Plans and Add-ons drill:**
+**Plans and add-ons drill:**
 
-<Image align="center" width="75% " src="https://files.readme.io/b5ef5b1-image.png" />
+<Image align="center" border={true} width="75%" src="https://files.readme.io/ce75702cd179f12fb237a2c97060bc838e8a4ca8ea28c49e99bbcde569766467-image.png" className="border" />
 
-* The 'Net MRR' bar chart calculates net MRR as follows: (New MRR + Expansion MRR + Reactivation MRR) - (Churn MRR + Declined MRR). It can provide insights into how changes in subscriptions affect overall MRR.
+### Net MRR
 
-<Image align="center" width="75% " src="https://files.readme.io/cb6355e-image.png" />
+The **Net MRR** bar chart shows the net impact of subscription changes on overall MRR, calculated as:
 
-* The bar charts in the 'MRR Growth Breakout' section track changes to MRR, including New MRR, Expansion MRR, Reactivation MRR, Churn MRR, and Contraction MRR. These charts can be helpful in identifying trends in MRR growth or contraction and determining the factors influencing these trends.
+**(New MRR + Expansion MRR + Reactivation MRR) − (Churn MRR + Declined MRR)**
 
-<Image alt="New MRR" align="center" width="75% " src="https://files.readme.io/e635783-image.png">
-  New MRR
-</Image>
+<Image align="center" width="75%" src="https://files.readme.io/cb6355e-image.png" />
 
-<Image alt="Expansion MRR" align="center" width="75% " src="https://files.readme.io/ef82e9b-image.png">
-  Expansion MRR
-</Image>
+***
 
-<Image alt="Reactivation MRR" align="center" width="75% " src="https://files.readme.io/a2c88c3-image.png">
-  Reactivation MRR
-</Image>
+## MRR growth breakout charts
 
-<Image alt="Churn MRR" align="center" width="75% " src="https://files.readme.io/9758740-image.png">
-  Churn MRR
-</Image>
+The five charts in this section each track a distinct MRR change category. Together, they help you pinpoint what's driving growth or contraction in any given period.
 
-<Image alt="Contraction MRR" align="center" width="75% " src="https://files.readme.io/a7189aa-image.png">
-  Contraction MRR
-</Image>
+**New MRR** — MRR from newly acquired subscribers
 
-**There are also drills on all of these charts whichchange based on the MRR level selection.**
+<Image align="center" alt="New MRR" caption="New MRR" src="https://files.readme.io/e635783-image.png" width="75%" />
 
-<Image align="center" width="75% " src="https://files.readme.io/1455127-image.png" />
+**Expansion MRR** — MRR gained from existing subscribers upgrading or adding to their plans
 
-**Account and Plans drill:**
+<Image align="center" alt="Expansion MRR" caption="Expansion MRR" src="https://files.readme.io/ef82e9b-image.png" width="75%" />
 
-<Image align="center" width="75% " src="https://files.readme.io/bda23a6-image.png" />
+**Reactivation MRR** — MRR recovered from previously churned subscribers who reactivated
 
-**Account, Plans and Add-ons Drill:**
+<Image align="center" alt="Reactivation MRR" caption="Reactivation MRR" src="https://files.readme.io/a2c88c3-image.png" width="75%" />
 
-<Image align="center" width="75% " src="https://files.readme.io/ba65ecb-image.png" />
+**Churn MRR** — MRR lost from subscribers who canceled or did not renew
 
-### How to use the Plan Performance MRR feature
+<Image align="center" alt="Churn MRR" caption="Churn MRR" src="https://files.readme.io/9758740-image.png" width="75%" />
 
-1. Go to the 'Monthly Recurring Revenue (MRR)' view.
-2. Analyze the 'MRR Totals' line chart. It will show you the MRR contributed by subscriptions for each plan.
-3. Study the 'Net MRR' bar chart. It can provide insights into how changes in subscriptions are affecting your overall MRR.
-4. Examine the five bar charts in the 'MRR Growth Breakout' section. They will help you track changes in MRR.
-5. Based on these insights, adjust your pricing strategies to optimize MRR.
+**Contraction MRR** — MRR lost from existing subscribers who downgraded their plans
+
+<Image align="center" alt="Contraction MRR" caption="Contraction MRR" src="https://files.readme.io/a7189aa-image.png" width="75%" />
+
+All five charts support drills that adjust based on the selected MRR level.
+
+<Image align="center" border={true} width="30%" src="https://files.readme.io/09084b4e9ad9c0e0a18ef6373a524386dda3dbe9f5bfb0cec9d9576fc7b7adea-image.png" className="border" />
