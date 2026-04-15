@@ -72,8 +72,6 @@ The tool also offers dashboards that allow you to delve deep into the revenue pr
 
 3. View the **Recovered Revenue** dashboard to analyze the effectiveness of the Expired Card Management feature.
 
-   ![](https://files.readme.io/eb73ef566e7905ac18a5ce2ef6e5a03bb5944571723cddaad3ccc07deaadf46a-image.png)
-
 <Image align="center" border={true} width="80% " src="https://files.readme.io/b42da2c011c01b0cb7cead9274f8c0cad6a47f7bd0b066123402fc0252967248-image.png" className="border" />
 
 By following these processes, businesses can ensure that their subscribers enjoy uninterrupted services, thereby solidifying their relationship and trust.
