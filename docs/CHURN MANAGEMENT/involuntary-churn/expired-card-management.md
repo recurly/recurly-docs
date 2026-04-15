@@ -66,9 +66,15 @@ The tool also offers dashboards that allow you to delve deep into the revenue pr
 ### Monitoring Revenue Recovery
 
 1. Access the **Analytics** section in the Admin Console.
-2. Navigate to **Payment Orchestration**.\
-   ![](https://files.readme.io/619c1e9-image.png)
-3. View the **Recovered Revenue** dashboard to analyze the effectiveness of the Expired Card Management feature.
+2. Navigate to **Payment Orchestration**. 
+
+asdas
+
+asasf
+
+<br />
+
+1. View the **Recovered Revenue** dashboard to analyze the effectiveness of the Expired Card Management feature.
 
 ![](https://files.readme.io/6c66e46-image.png)
 
@@ -76,11 +82,11 @@ By following these processes, businesses can ensure that their subscribers enjoy
 
 # FAQs
 
-**Q:** How does Recurly manage expired credit cards?\
+**Q:** How does Recurly manage expired credit cards?  
 **A:** Recurly facilitates smoother transactions by selecting a future date for expired cards, rather than automatically updating them, which decreases the likelihood of payment failures and hard declines. This ensures clarity and avoids confusion with account updater services.
 
-**Q:** How does this feature curb involuntary churn?\
+**Q:** How does this feature curb involuntary churn?  
 **A:** Involuntary churn arises when outdated payment details lead to transaction failures. By perpetually updating credit card details, the likelihood of transaction failures diminishes, subsequently reducing churn.
 
-**Q:** Can we gauge the revenue salvaged using Expired Card Management?\
+**Q:** Can we gauge the revenue salvaged using Expired Card Management?  
 **A:** Absolutely! Recurly's subscription analytics provides insights into recovery rates, showcasing the effectiveness of both retry logic and subscriber updates.
