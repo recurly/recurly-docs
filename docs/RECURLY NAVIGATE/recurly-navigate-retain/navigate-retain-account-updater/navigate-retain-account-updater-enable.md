@@ -18,7 +18,7 @@ metadata:
   .rc-badge{display:inline-block;background:var(--yellow);color:var(--offblack);border-radius:20px;padding:6px 18px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
   .rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
   .rc-hero p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 32px;color:var(--lightgray)}
-  .rc-hero-stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+  .rc-hero-stats{display:flex;justify(center);gap:40px;flex-wrap:wrap}
   .rc-num{font-size:1.8rem;font-weight:800;color:var(--yellow)}.rc-lbl{font-size:.8rem;color:var(--lightgray);text-transform:uppercase;letter-spacing:.5px}
   .rc-nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 28px}
   .rc-nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.88rem;font-weight:700;transition:border-color .2s,box-shadow .2s}
@@ -77,7 +77,7 @@ metadata:
       <div class="rc-sec-icon">⚙️</div>
       <div>
         <h2>How to Enable Account Updater</h2>
-        <p>Enabling Account Updater in Recurly is self-serve and typically takes less than five minutes. Here is the accurate path for your settings.</p>
+        <p>A step-by-step implementation guide covering the navigation path to Payment Settings, the configuration of MasterCard and American Express (AMEX) codes, and final activation via the in-app disclosure.</p>
       </div>
     </div>
 
@@ -86,35 +86,35 @@ metadata:
       <div style="position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:14px;">
         <iframe src="https://share.synthesia.io/embeds/videos/b86fe7bd-1f74-491f-8632-acebd4794615" loading="lazy" title="Navigate: Secure Your Revenue — Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0;"></iframe>
       </div>
-      <p style="margin-top:14px;font-size:.85rem;color:var(--gray);">Watch our Navigate CSM walk through enabling Account Updater step-by-step in your Recurly site.</p>
+      <p style="margin-top:14px;font-size:.85rem;color:var(--gray);">Watch our Navigate CSM walk through enabling Account Updater (AU) step-by-step in your Recurly site.</p>
     </div>
 
     <h3 class="rc-subhead">🔧 Core Setup: Enable Account Updater</h3>
     <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Navigate to Payment Settings</h3><p>Log in to your Recurly admin and go to <strong>Configuration → Payment Settings</strong>. Scroll to the Account Updater section and click the toggle to open the configuration modal.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Navigate to Payment Settings</h3><p>Log in to your Recurly admin and go to <strong>Configuration → Payment Settings</strong>. Scroll to the Account Updater (AU) section and click the toggle to open the configuration modal.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Select MasterCard MCC</h3><p>In the "Card brand configuration" box, use the search field under MasterCard to select your <strong>Merchant Category Code (MCC)</strong>. This is required for MasterCard updates.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Enter American Express SE</h3><p>Input your 10-digit <strong>Service Establishment (SE)</strong> number in the American Express field. This enables direct communication with the Amex network.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept Pricing and Confirm</h3><p>Check the box to agree to the pricing terms. For usage-based accounts, this is typically <strong>$0.15 USD per matched transaction</strong>, charged monthly in arrears.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Enter American Express (AMEX) SE</h3><p>Input your 10-digit <strong>Service Establishment (SE)</strong> number in the American Express field. This enables direct communication with the American Express (AMEX) network.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept Pricing and Confirm</h3><p>Check the box to agree to the pricing terms displayed in the modal. These terms are specific to your contract; review the disclosure carefully before proceeding.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>Save and Confirm</h3><p>Once you click "Enable," your status will update. Recurly immediately begins scanning for card updates within your stored payment methods.</p></div></div>
     </div>
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
-      <p><strong>Activation Window:</strong> While the toggle is instant, card networks typically take 24–48 hours to complete the initial batch sync. Real-Time AU (RTAU) will be active for your very next transaction attempt.</p>
+      <p><strong>Activation Window:</strong> While the toggle is instant, card networks typically take 24–48 hours to complete the initial batch sync. Real-Time Account Updater (RTAU) will be active for your very next transaction attempt.</p>
     </div>
 
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Setup Checklist</h3></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Toggled on under <strong>Configuration → Payment Settings</strong></div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">MasterCard MCC selected from the configuration dropdown</div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">American Express 10-digit SE number entered</div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Pricing box checked (e.g., $0.15 per match confirmed)</div></div>
-      <div class="rc-cli"><div class="rc-cb">✓</div><div class="rc-clab">Settings saved and status is "Enabled"</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Toggled on under <strong>Configuration → Payment Settings</strong></div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">MasterCard MCC selected from the configuration dropdown</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">American Express (AMEX) 10-digit SE number entered</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Pricing disclosure box checked and reviewed</div></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Settings saved and status is "Enabled"</div></div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Tip</h4><p>If you don't have your SE number handy, you can find it on your direct Amex merchant statement. Without this and the MCC, updates for those specific brands will not process. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
+      <div><h4>Expert Tip</h4><p>If you don't have your American Express (AMEX) SE number handy, you can find it on your direct merchant statement. If you have questions regarding specific pricing tiers or update methods, please contact Recurly Support. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
     </div>
 
     <div class="rc-sec-nav">
