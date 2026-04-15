@@ -38,13 +38,17 @@ metadata:
   .rc-opt{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:14px;padding:18px}
   .rc-oicon{font-size:22px;margin-bottom:8px}.rc-opt h4{font-size:.92rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}.rc-opt p{font-size:.82rem;color:var(--gray);line-height:1.5;margin:0}
   .rc-tag{display:inline-block;margin-top:10px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:var(--offblack);color:var(--yellow)}
+  .rc-office-hours{background:linear-gradient(135deg, var(--offblack) 0%, #1a1a1a 100%);color:#fff;border-radius:16px;padding:32px;margin:32px 0;display:flex;gap:24px;align-items:center;border:1px solid var(--yellow)}
+  .rc-oh-content h4{color:var(--yellow);margin:0 0 8px;font-size:1.1rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+  .rc-oh-content p{color:var(--lightgray);font-size:.95rem;line-height:1.6;margin:0 0 20px}
+  .rc-oh-btn{background:var(--yellow);color:var(--offblack);padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:10px}
   .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;margin-bottom:24px;display:flex;gap:16px;align-items:flex-start}
   .rc-tipicon{font-size:24px;flex-shrink:0}.rc-tip h4{font-size:.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:.5px;margin:0 0 4px}.rc-tip p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
   .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
   .rc-btn-prev,.rc-btn-next,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none}
   .rc-btn-prev{background:#fff;color:var(--darkgray);border:1px solid var(--lightgray)}.rc-btn-next{background:var(--yellow);color:var(--offblack);border:1px solid var(--yellow)}
   .rc-link-btn{gap:8px;background:var(--yellow);color:var(--offblack);margin:0 8px 8px 0}.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
-  @media(max-width:640px){.rc-hero h1{font-size:1.7rem}.rc-hero{padding:36px 20px 32px}.rc-hero-stats{gap:20px}.rc-sec-header{flex-direction:column}.rc-2col{grid-template-columns:1fr}.rc-nav,.rc-sec-nav{flex-direction:column}.rc-sec-nav{align-items:stretch}}
+  @media(max-width:640px){.rc-hero h1{font-size:1.7rem}.rc-hero{padding:36px 20px 32px}.rc-hero-stats{gap:20px}.rc-sec-header{flex-direction:column}.rc-2col{grid-template-columns:1fr}.rc-nav,.rc-sec-nav{flex-direction:column}.rc-sec-nav{align-items:stretch}.rc-office-hours{flex-direction:column;text-align:center}}
 </style>
 </head>
 <body>
@@ -81,7 +85,7 @@ metadata:
     <h3 class="rc-subhead">📏 Key Performance Indicators (KPIs)</h3>
     <div class="rc-2col">
       <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Recovered Revenue (AU)</h4><p>The total currency value successfully processed on cards updated by Account Updater (AU) prior to the billing attempt. This is your primary ROI signal.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should trend downward as Account Updater (AU) proactively handles card lifecycle events.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should decrease as Account Updater (AU) proactively handles card lifecycle events.</p></div>
       <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. This tracks the total "saves" for your business.</p></div>
       <div class="rc-opt"><div class="rc-oicon">🔍</div><h4>Remaining "Expired" Declines</h4><p>Found in Renewal Declines, this identifies cards that AU could not update, helping you refine your reactive dunning or outreach strategy.</p></div>
     </div>
@@ -122,6 +126,14 @@ metadata:
       </div>
     </div>
 
+    <div class="rc-office-hours">
+      <div class="rc-oh-content">
+        <h4>🗓️ Need Strategic Support?</h4>
+        <p>Join our <strong>Customer Success Global Office Hours</strong>! Meet face-to-face with our CSMs to walk through your analytics, work through roadblocks, and get strategic advice on optimizing your revenue recovery.</p>
+        <a href="https://navigate.recurly.com/event-hub/" class="rc-oh-btn" target="_blank" rel="noopener noreferrer">Register for Office Hours →</a>
+      </div>
+    </div>
+
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
       <div><h4>Expert Insight: The 90-Day Rule</h4><p>Account Updater (AU) impact is cumulative. Because cards age and expire at different times, it takes roughly 90 days to see the full "stabilized" impact on your recovery metrics. Use the first three months to establish a new baseline for your involuntary churn rate.</p></div>
@@ -133,8 +145,9 @@ metadata:
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/recovered-revenue" target="_blank" rel="noopener noreferrer">📊 Analytics Deep Dive</a>
+    <a class="rc-link-btn" href="https://docs.recurly.com/docs/recovered-revenue" target="_blank" rel="noopener noreferrer">📈 Docs: Recovered Revenue Dashboard</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-invoices" target="_blank" rel="noopener noreferrer">📋 Docs: Renewal Invoices Report</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-declines" target="_blank" rel="noopener noreferrer">📉 Docs: Renewal Declines Dashboard</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
   </div>
 </div>
