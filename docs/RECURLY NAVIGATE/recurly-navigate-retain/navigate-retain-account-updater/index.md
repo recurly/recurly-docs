@@ -79,7 +79,7 @@ metadata:
       <div class="rc-sec-icon">💳</div>
       <div>
         <h2>What is Account Updater?</h2>
-        <p>A professional overview of how Recurly monitors card networks to ensure your stored payment methods stay fresh and functional.</p>
+        <p>Proactively secure your revenue by resolving card lifecycle events before they trigger a decline. Reduce involuntary churn and eliminate gateway fees on invalid accounts.</p>
       </div>
     </div>
 
