@@ -6,11 +6,6 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!-- ============================================================ -->
-<!-- PAGE 5: TRACKING IMPACT                                      -->
-<!-- URL: /docs/navigate-retain-account-updater-data             -->
-<!-- ============================================================ -->
-
 <HTMLBlock>
 <!DOCTYPE html>
 <html>
@@ -37,7 +32,6 @@ metadata:
   .rc-subhead{font-size:1rem;font-weight:700;margin:0 0 16px;color:var(--offblack)}
   .rc-steps{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
   .rc-step{background:var(--offwhite);border-radius:14px;padding:22px 26px;border:1px solid var(--lightgray);display:flex;gap:18px;align-items:flex-start}
-  .rc-sbadge{width:38px;height:38px;border-radius:10px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
   .rc-sbadge-dark{width:38px;height:38px;border-radius:10px;background:var(--darkgray);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
   .rc-step h3{font-size:.98rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}.rc-step p{font-size:.87rem;color:var(--gray);line-height:1.6;margin:0}
   .rc-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:26px}
@@ -79,41 +73,38 @@ metadata:
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📊</div>
       <div>
-        <h2>Tracking the Impact of Account Updater</h2>
-        <p>Once Account Updater is enabled, here's how to measure what it's doing for your revenue — and how to share those results with your team.</p>
+        <h2>Tracking the Impact of Account Updater (AU)</h2>
+        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize the Churn Management dashboards to track renewal counts and identify the specific 'Other Issues' resolved by Account Updater (AU) before they could impact your bottom line.</p>
       </div>
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">📍 Where to Find AU Data in Recurly</h3>
+      <h3 class="rc-subhead">📍 Navigating Your Dashboard</h3>
       <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>Navigate to Analytics → Churn Management → Recovered Revenue</h3><p>This is the primary dashboard for understanding how different recovery methods are performing. You'll find it under <strong>Analytics → Churn Management → Recovered Revenue</strong> in your Recurly admin.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Review the Recovered Revenue chart</h3><p>You'll see a breakdown by recovery method — including Account Updater. This shows both the percentage and absolute dollar value of revenue recovered through AU month over month.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">3</div><div><h3>Monitor trends over time</h3><p>As Account Updater works through your existing subscriber base, the impact compounds. Look for a growing share of recovered revenue attributed to AU, and a corresponding reduction in involuntary churn over 60–90 days.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>Recovered Revenue Dashboard</h3><p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. Use the <strong>Recovered Revenue by Method</strong> chart to see the month-over-month contribution of card updates compared to dunning.</p></div></div>
+        
+        <div class="rc-card" style="padding:0; border:none; margin: 10px 0;">
+          <div style="position:relative;overflow:hidden;aspect-ratio:16/9;border-radius:10px;">
+            <iframe src="https://share.synthesia.io/embeds/videos/YOUR_RECOVERED_REVENUE_VIDEO_ID" loading="lazy" title="Trail Guide: Recovered Revenue" allowfullscreen style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;"></iframe>
+          </div>
+        </div>
+
+        <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Renewal Invoices Report</h3><p>Navigate to <strong>Analytics → Churn Management → Renewal Invoices</strong>. This report provides a granular view of how many subscription renewals were processed successfully specifically because of an Account Updater (AU) event.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">3</div><div><h3>Check the "Other Issues" Chart</h3><p>Within the Renewal Invoices report, review the <strong>Other Issues</strong> chart. This specifically captures invoices that would have otherwise required manual intervention but were automatically resolved by a card update.</p></div></div>
       </div>
     </div>
 
-    <h3 class="rc-subhead">📏 Metrics Worth Tracking</h3>
+    <h3 class="rc-subhead">📏 Key Performance Indicators (KPIs)</h3>
     <div class="rc-2col">
-      <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Revenue Recovered via AU</h4><p>The direct dollar amount of subscription revenue successfully charged because Account Updater updated the card before the billing attempt.</p><span class="rc-tag">Primary metric</span></div>
-      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Failed Payment Rate (Card-based)</h4><p>Track the rate of failed payments attributable to outdated card info. You should see this decline after enabling AU.</p><span class="rc-tag">Secondary metric</span></div>
-      <div class="rc-opt"><div class="rc-oicon">🔄</div><h4>AU Update Volume</h4><p>The total number of card updates processed through Account Updater. Useful for understanding scale and managing costs if on usage-based pricing.</p><span class="rc-tag">Operational</span></div>
-      <div class="rc-opt"><div class="rc-oicon">📊</div><h4>AU as % of Total Recovery</h4><p>What share of your total recovered revenue is coming from Account Updater vs. dunning vs. other methods?</p><span class="rc-tag">Benchmark</span></div>
+      <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Revenue Recovered via AU</h4><p>The total currency value successfully processed on cards that were updated by Account Updater (AU) prior to the billing attempt.</p><span class="rc-tag">Primary Metric</span></div>
+      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw number of renewal attempts that succeeded following a card update, found in the Churn Management analytics suite.</p><span class="rc-tag">Volume Metric</span></div>
+      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This should trend downward as Account Updater (AU) proactively handles lifecycle events.</p><span class="rc-tag">Retention Goal</span></div>
+      <div class="rc-opt"><div class="rc-oicon">🔄</div><h4>AU as % of Total Recovery</h4><p>A strategic benchmark showing how much of your revenue safety net is proactive (AU) versus reactive (Dunning).</p><span class="rc-tag">Strategic</span></div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Pro Tip · Give It 60–90 Days Before Drawing Conclusions</h4><p>Account Updater works over time as the cards in your vault age and subscription renewal cycles come around. Give it at least two to three billing cycles before evaluating performance.</p></div>
-    </div>
-
-    <div class="rc-card">
-      <h3 class="rc-subhead">📈 For Your Navigate Program (Internal Tracking)</h3>
-      <p style="font-size:.88rem;color:var(--darkgray);line-height:1.6;margin-bottom:12px;">If you are tracking the Navigate program's impact, consider monitoring these signals to attribute AU-driven outcomes to the program:</p>
-      <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge">→</div><div><h3>AU Activation Rate</h3><p>What percentage of customers who accessed the Navigate AU learning path went on to enable AU?</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">→</div><div><h3>Pre/Post Revenue Recovery Comparison</h3><p>For accounts that enabled AU after the learning path, compare recovered revenue 90 days before vs. 90 days after enablement.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">→</div><div><h3>Involuntary Churn Delta</h3><p>Track whether accounts that enabled AU after Navigate engagement show measurable improvement in involuntary churn rate relative to a control group.</p></div></div>
-      </div>
+      <div><h4>Expert Insight: The 90-Day Rule</h4><p>Account Updater (AU) impact is cumulative. Because cards age and expire at different times, it takes roughly 90 days to see the full "stabilized" impact on your recovery metrics.</p></div>
     </div>
 
     <div class="rc-sec-nav">
@@ -123,8 +114,7 @@ metadata:
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/recovered-revenue" target="_blank" rel="noopener noreferrer">📊 Recovered Revenue Analytics</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">❓ Book Office Hours with a CSM</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/recovered-revenue" target="_blank" rel="noopener noreferrer">📊 Analytics Deep Dive</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
   </div>
 </div>
