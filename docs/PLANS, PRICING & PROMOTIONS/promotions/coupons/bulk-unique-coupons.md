@@ -58,17 +58,17 @@ Bulk coupons with all unique codes redeemed will be considered Expired in the UI
 
 ### Required prefix
 
-Specify a prefix that will be the same across all unique codes. 
+Specify a prefix that will be the same across all unique codes.
 
 * The prefix is the coupon code for the campaign as a whole.
 * It must be unique across all redeemable coupons on your site.
-* The prefix can be alphanumeric and may include a dash (-), underscore (\_), or a plus sign (+).
+* The prefix can be alphanumeric and may include a dash (-), underscore (_), or a plus sign (+).
 
 ### Generated code format
 
-Specify the format of the dynamically generated portion of the code. 
+Specify the format of the dynamically generated portion of the code.
 
-* This is the unique portion of the code. 
+* This is the unique portion of the code.
 * Format can be alphabetic, alphanumeric, or numeric.
 
 ### Generated code length
@@ -84,7 +84,7 @@ Specify the character length of the dynamically generated portion of the code.
 
 You can choose to include a suffix at the end of each unique code. The suffix isn't dynamic and will remain across all unique codes.
 
-* The suffix can be alphanumeric and may include a dash (-), underscore (\_), or a plus sign (+).
+* The suffix can be alphanumeric and may include a dash (-), underscore (_), or a plus sign (+).
 
 ### Unique code preview
 
@@ -93,6 +93,45 @@ The preview will show you a sample generated unique code reflecting your templat
 # Creating bulk unique codes
 
 > **Note:**To extend the redeem-by date for your bulk unique coupon codes, you'll need to add more codes through the user interface. This is necessary even if you've generated a large number of codes already. It's important to note that there's a maximum limit of 100,000 unique codes. If you reach this limit, you won't be able to extend the redeem-by date further. It's advisable to plan ahead to manage your coupon codes within these constraints. If you need to extend the redeem-by date, it's better to do so before nearing the maximum code limit.
+
+**Generate bulk coupons through the API**
+
+Once a bulk coupon template has been created, there are two options to create the bulk coupons codes.  
+
+1. **Asynchronous process:**  [Generate the bulk codes](https://recurly.com/developers/api/v2021-02-25/index.html#operation/generate_unique_coupon_codes) through one endpoint and then [retrieve those codes](https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_unique_coupon_codes) through a second endpoint.  This process is great if you do not need the codes in real-time and want all codes generated with a single call.
+2. **Synchronous process:** Generate bulk codes and receive those codes immediately in the response.  The number of codes that can be returned is limited to 200.  This is great if you do not want to create all of the codes in a single call and need just a few codes in real-time as you manage your coupon campaign.
+
+Path: /coupons/code-20off/generate_sync
+
+Request:   
+
+```
+{
+  "number_of_unique_codes": 1
+}
+```
+
+Response:  
+
+```
+{
+    "object": "unique_coupon_code_generation",
+    "unique_coupon_codes": [
+        {
+            "id": "yde3fqeku6ghm",
+            "object": "unique_coupon_code",
+            "code": "20off-kngm-def",
+            "state": "redeemable",
+            "bulk_coupon_id": "ywe3dlf0eef5",
+            "bulk_coupon_code": "20off",
+            "created_at": "2026-04-08T19:57:56Z",
+            "updated_at": "2026-04-08T19:57:56Z",
+            "redeemed_at": null,
+            "expired_at": null
+        }
+		]
+}
+```
 
 **Step 1: Start your campaign creation**
 
@@ -136,15 +175,15 @@ The preview will show you a sample generated unique code reflecting your templat
 
 **Step 5: Filter Your Results**
 
-* Open the CSV file and filter out all rows without a value in the **applied\_at** column. This cleans your data by removing irrelevant entries.
+* Open the CSV file and filter out all rows without a value in the **applied_at** column. This cleans your data by removing irrelevant entries.
 
 **Step 6: Refine Your Data**
 
-* Sort the **applied\_at** date column and remove rows with dates outside of your set time range. This ensures your report is precise and focused.
+* Sort the **applied_at** date column and remove rows with dates outside of your set time range. This ensures your report is precise and focused.
 
 With these steps, you've crafted a detailed report showcasing the redemptions of your unique codes within your chosen timeframe. This data is your key to understanding your campaign’s impact and to planning future promotional strategies that are even more successful.
 
-Now, with the knowledge on how to create and track the results of your bulk coupon campaign, you are prepared to connect with your customers in meaningful ways. 
+Now, with the knowledge on how to create and track the results of your bulk coupon campaign, you are prepared to connect with your customers in meaningful ways.
 
 # Manage and analyze your codes
 
@@ -166,11 +205,11 @@ Build trust with transparent billing. Each invoice neatly displays the redeemed 
 
 ### Coupons
 
-Identify bulk unique coupon campaigns in your Coupons export. Search for “bulk” under the "coupon\_type" column.
+Identify bulk unique coupon campaigns in your Coupons export. Search for “bulk” under the "coupon_type" column.
 
 ### Coupon redemptions
 
-Track which unique codes have been redeemed, and by whom, in your Coupon Redemptions export. 
+Track which unique codes have been redeemed, and by whom, in your Coupon Redemptions export.
 
 ### Coupons - bulk unique codes
 
