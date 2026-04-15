@@ -74,16 +74,16 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Tracking the Impact of Account Updater (AU)</h2>
-        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize the Churn Management dashboards to track renewal counts and identify the specific 'Other Issues' resolved by Account Updater (AU) before they could impact your bottom line.</p>
+        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize Churn Management dashboards to track renewal counts and analyze declines to ensure your proactive recovery strategy is capturing every possible update.</p>
       </div>
     </div>
 
     <h3 class="rc-subhead">📏 Key Performance Indicators (KPIs)</h3>
     <div class="rc-2col">
       <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Recovered Revenue (AU)</h4><p>The total currency value successfully processed on cards updated by Account Updater (AU) prior to the billing attempt. This is your primary ROI signal.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Successful Renewal Count</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. This tracks the total "saves" for your business.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should decrease as Account Updater (AU) proactively handles card lifecycle events.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">🔄</div><h4>AU as % of Recovery</h4><p>A strategic benchmark showing how much of your revenue safety net is proactive (AU) versus reactive (Dunning).</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should trend downward as Account Updater (AU) proactively handles card lifecycle events.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. This tracks the total "saves" for your business.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">🔍</div><h4>Remaining "Expired" Declines</h4><p>Found in Renewal Declines, this identifies cards that AU could not update, helping you refine your reactive dunning or outreach strategy.</p></div>
     </div>
 
     <h3 class="rc-subhead">📍 Navigating Your Dashboards</h3>
@@ -110,7 +110,14 @@ metadata:
         <div class="rc-sbadge-dark">3</div>
         <div>
           <h3>Review the "Other Issues" Chart</h3>
-          <p>Within the Renewal Invoices report, locate the <strong>Other Issues</strong> chart. This captures invoices that would have otherwise required manual intervention but were automatically resolved by a proactive card update.</p>
+          <p>Within the Renewal Invoices report, review the <strong>Other Issues</strong> chart to see the specific volume of successful renewals enabled by card lifecycle updates.</p>
+        </div>
+      </div>
+      <div class="rc-step">
+        <div class="rc-sbadge-dark">4</div>
+        <div>
+          <h3>Renewal Declines Dashboard</h3>
+          <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" or "Invalid Account" codes to see the remaining friction points that Account Updater (AU) didn't resolve.</p>
         </div>
       </div>
     </div>
