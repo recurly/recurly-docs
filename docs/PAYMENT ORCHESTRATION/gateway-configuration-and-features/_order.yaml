@@ -4,9 +4,9 @@
 - gateway-token-support
 - custom-gateway-routing-configuration
 - gateway-failover
+- nacha-verification
 - fraud-management
 - chargeback-management-for-cards
-- nacha-verification
 - payment-descriptors
 - sepa-retries
 - currency-support-by-gateway
