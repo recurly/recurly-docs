@@ -6,288 +6,231 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dunning Management 101 — What Is It?</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></head><body style="background:#f5f5f0;margin:0;"><style>
-:root {
-  --yellow: #FFD706;
-  --orange: #FF8200;
-  --vermillion: #FF5810;
-  --salmon: #FF9D88;
-  --offblack: #0D0D0B;
-  --darkgray: #32312D;
-  --gray: #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite: #FFFDF2;
-}
-.rc-guide { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--offblack); max-width: 900px; margin: 0 auto; }
-.rc-hero { background: var(--offblack); color: white; padding: 48px 40px; border-radius: 16px 16px 0 0; text-align: center; }
-.rc-hero h1 { font-size: 32px; margin: 16px 0 8px; font-weight: 700; }
-.rc-subtitle { color: var(--lightgray); font-size: 16px; }
-.rc-badge { background: var(--yellow); color: var(--offblack); padding: 4px 16px; border-radius: 100px; font-size: 13px; font-weight: 600; display: inline-block; text-transform: uppercase; letter-spacing: 0.5px; }
-.rc-flywheel-badge { padding: 4px 12px; border-radius: 100px; font-size: 11px; font-weight: 700; display: inline-block; text-transform: uppercase; letter-spacing: 1px; margin-top: 12px; }
-.rc-flywheel-launch { background: var(--lightgray); color: var(--offblack); }
-.rc-flywheel-acquire { background: var(--yellow); color: var(--offblack); }
-.rc-flywheel-retain { background: var(--salmon); color: var(--offblack); }
-.rc-flywheel-scale { background: var(--orange); color: var(--offblack); }
-.rc-stats { display: flex; justify-content: center; gap: 32px; margin-top: 24px; }
-.rc-stat { color: var(--lightgray); font-size: 14px; }
-.rc-stat-num { color: var(--yellow); font-weight: 700; font-size: 20px; display: block; }
-.rc-nav { display: flex; gap: 0; background: var(--brightgray); padding: 0; overflow-x: auto; border-bottom: 2px solid var(--lightgray); }
-.rc-nav a { display: flex; align-items: center; gap: 8px; padding: 14px 20px; text-decoration: none; color: var(--gray); font-size: 14px; font-weight: 500; white-space: nowrap; border-bottom: 3px solid transparent; transition: all 0.2s; }
-.rc-nav a:hover { color: var(--offblack); background: var(--offwhite); }
-.rc-nav a.is-active { color: var(--offblack); font-weight: 600; border-bottom-color: var(--yellow); background: var(--offwhite); }
-.rc-snum { width: 24px; height: 24px; border-radius: 50%; background: var(--lightgray); color: var(--gray); display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
-.rc-nav a.is-active .rc-snum { background: var(--yellow); color: var(--offblack); }
-.rc-sec { padding: 40px; }
-.rc-sec-header { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 32px; }
-.rc-sec-icon { width: 48px; height: 48px; background: var(--yellow); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
-.rc-sec-header h2 { font-size: 24px; margin: 0 0 4px; font-weight: 700; }
-.rc-sec-header p { color: var(--gray); margin: 0; font-size: 15px; }
-.rc-card { background: var(--offwhite); border-radius: 12px; padding: 28px; margin-bottom: 20px; }
-.rc-card h3 { font-size: 18px; margin: 0 0 12px; font-weight: 600; }
-.rc-card p { color: var(--darkgray); line-height: 1.7; margin: 0 0 12px; font-size: 15px; }
-.rc-card p:last-child { margin-bottom: 0; }
-.rc-subhead { font-size: 20px; font-weight: 700; margin: 32px 0 16px; color: var(--offblack); }
-.rc-steps { display: flex; flex-direction: column; gap: 16px; margin: 20px 0; }
-.rc-step { display: flex; gap: 16px; align-items: flex-start; background: var(--offwhite); border-radius: 12px; padding: 20px; }
-.rc-sbadge { width: 32px; height: 32px; border-radius: 50%; background: var(--yellow); color: var(--offblack); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
-.rc-step-content h4 { margin: 0 0 4px; font-size: 16px; font-weight: 600; }
-.rc-step-content p { margin: 0; color: var(--darkgray); font-size: 14px; line-height: 1.6; }
-.rc-tip { border-left: 4px solid var(--yellow); background: var(--offwhite); padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 20px 0; }
-.rc-tip strong { color: var(--offblack); }
-.rc-tip p { margin: 4px 0 0; color: var(--darkgray); font-size: 14px; line-height: 1.6; }
-.rc-warning { border-left: 4px solid var(--orange); background: #FFF8F0; padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 20px 0; }
-.rc-warning strong { color: var(--offblack); }
-.rc-warning p { margin: 4px 0 0; color: var(--darkgray); font-size: 14px; line-height: 1.6; }
-.rc-checklist { background: var(--offwhite); border-radius: 12px; padding: 24px; margin: 20px 0; }
-.rc-cl-header { font-size: 16px; font-weight: 600; margin-bottom: 16px; }
-.rc-cli { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; }
-.rc-cb { width: 20px; height: 20px; border-radius: 4px; border: 2px solid var(--lightgray); flex-shrink: 0; cursor: pointer; margin-top: 2px; }
-.rc-cli label { font-size: 14px; color: var(--darkgray); line-height: 1.5; cursor: pointer; }
-.rc-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
-.rc-2col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 20px 0; }
-.rc-wi { background: var(--offwhite); border-radius: 12px; padding: 24px; text-align: center; }
-.rc-wi h4 { font-size: 16px; margin: 12px 0 8px; font-weight: 600; }
-.rc-wi p { font-size: 13px; color: var(--gray); margin: 0; }
-.rc-sec-nav { display: flex; justify-content: space-between; padding: 0 40px 40px; }
-.rc-btn-prev, .rc-btn-next { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.2s; }
-.rc-btn-prev { background: var(--brightgray); color: var(--offblack); }
-.rc-btn-next { background: var(--yellow); color: var(--offblack); }
-.rc-btn-prev:hover { background: var(--lightgray); }
-.rc-btn-next:hover { filter: brightness(0.95); }
-.rc-btn-disabled { opacity: 0.4; pointer-events: none; }
-.rc-link-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--brightgray); border-radius: 8px; text-decoration: none; color: var(--offblack); font-size: 14px; font-weight: 500; margin: 4px; transition: all 0.2s; }
-.rc-link-btn:hover { background: var(--lightgray); }
-.rc-link-sec { padding: 32px 40px; background: var(--brightgray); border-radius: 0 0 16px 16px; }
-.rc-link-sec h3 { font-size: 18px; margin: 0 0 16px; font-weight: 600; }
+<style>
+
+.rc-guide{max-width:900px;margin:20px auto;font-family:"Inter",-apple-system,sans-serif;color:#0D0D0B;line-height:1.6;background-color:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
+.rc-hero{background-color:#0D0D0B;color:#FFFFFF;padding:56px 40px 48px;text-align:center;position:relative;overflow:hidden}
+.rc-badge{display:inline-block;background-color:#FFD706;color:#0D0D0B;border-radius:20px;padding:6px 18px;font-size:13px;font-weight:700;text-transform:uppercase;margin-bottom:20px;letter-spacing:.5px}
+.rc-hero h1{font-size:32px;margin:0 0 12px;font-weight:700}
+.rc-hero p{color:#CCC9B8;font-size:1.05rem;margin:0 auto;max-width:600px}
+.rc-hero-stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-top:32px}
+.rc-stat-num{font-size:28px;font-weight:800;color:#FFD706;display:block}
+.rc-stat-lbl{font-size:11px;font-weight:600;color:#807D73;text-transform:uppercase;letter-spacing:.5px}
+.rc-nav{display:flex;flex-wrap:wrap;gap:10px;margin:32px 0 40px;padding:0 40px}
+.rc-nav a{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid #CCC9B8;background-color:#FFFFFF;color:#32312D;text-decoration:none;font-size:.85rem;font-weight:700}
+.rc-nav a:hover{border-color:#FFD706;color:#0D0D0B}
+.rc-nav a.rc-active{border-color:#FFD706;background-color:#FFD706;color:#0D0D0B}
+.rc-snum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background-color:#0D0D0B;color:#FFD706;font-size:11px;font-weight:700}
+.rc-nav a.rc-active .rc-snum{background-color:#0D0D0B;color:#FFD706}
+.rc-body{padding:0 40px 40px}
+.rc-sec-header{display:flex;gap:20px;align-items:flex-start;margin-bottom:28px}
+.rc-sec-icon{width:52px;height:52px;background-color:#FFD706;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:26px}
+.rc-sec-header h2{font-size:22px;font-weight:700;margin:0 0 6px}
+.rc-sec-header p{margin:0;color:#807D73;font-size:.95rem}
+.rc-flow{background-color:#0D0D0B;border-radius:14px;padding:28px 20px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:24px;justify-content:center}
+.rc-flow-node{background-color:rgba(255,253,242,.07);border:1px solid rgba(255,253,242,.14);border-radius:10px;padding:14px 16px;text-align:center;min-width:110px}
+.rc-flow-node.hl{background-color:rgba(255,215,6,.14);border-color:rgba(255,215,6,.38)}
+.rc-flow-icon{font-size:20px;display:block;margin-bottom:6px}
+.rc-flow-lbl{font-size:12px;font-weight:700;color:#FFFDF2;display:block}
+.rc-flow-sub{font-size:10px;color:rgba(255,253,242,.48);display:block;margin-top:2px}
+.rc-flow-arrow{color:rgba(255,253,242,.3);font-size:20px}
+.rc-3col{display:flex;gap:14px;margin-bottom:24px}
+.rc-wi{flex:1;background-color:#FFFDF2;border-radius:12px;padding:22px;border:1px solid #CCC9B8}
+.rc-wi-icon{font-size:26px;margin-bottom:10px;display:block}
+.rc-wi h4{font-size:14px;font-weight:700;margin:0 0 7px;color:#0D0D0B}
+.rc-wi p{font-size:12.5px;color:#32312D;margin:0;line-height:1.6}
+.rc-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.rc-card{background-color:#FFFDF2;border-radius:12px;padding:22px;border:1px solid #CCC9B8}
+.rc-card h4{font-size:14px;font-weight:700;margin:0 0 8px;color:#0D0D0B}
+.rc-card p{font-size:12.5px;color:#32312D;margin:0;line-height:1.6}
+.rc-dark-card{background-color:#0D0D0B;border-radius:14px;padding:28px;margin-bottom:16px}
+.rc-dark-card h3{font-size:16px;font-weight:700;color:#FFD706;margin:0 0 8px}
+.rc-dark-card p{font-size:13.5px;color:#CCC9B8;margin:0;line-height:1.65}
+.rc-tip{border-left:4px solid #FFD706;background-color:#FFFDF2;padding:20px 24px;border-radius:0 12px 12px 0;margin:20px 0}
+.rc-tip p{margin:0;font-size:.92rem;color:#32312D;line-height:1.65}
+.rc-warning{border-left:4px solid #FF8200;background-color:#FFF8F0;padding:20px 24px;border-radius:0 12px 12px 0;margin:20px 0}
+.rc-warning p{margin:0;font-size:.92rem;color:#32312D;line-height:1.65}
+.rc-subhead{font-size:18px;font-weight:700;margin:36px 0 16px;color:#0D0D0B}
+.rc-subhead-sm{font-size:15px;font-weight:700;margin:24px 0 10px;color:#0D0D0B}
+.rc-body p{font-size:.92rem;color:#32312D;line-height:1.7;margin:0 0 14px}
+.rc-table{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:20px;border-radius:10px;overflow:hidden;border:1px solid #CCC9B8}
+.rc-table thead{background-color:#0D0D0B;color:#FFFDF2}
+.rc-table thead th{padding:12px 16px;text-align:left;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+.rc-table tbody tr:nth-child(even){background-color:#F1EFE3}
+.rc-table tbody tr:nth-child(odd){background-color:#FFFDF2}
+.rc-table tbody td{padding:12px 16px;color:#32312D;border-bottom:1px solid #CCC9B8;vertical-align:top}
+.rc-table tbody td strong{color:#0D0D0B}
+.rc-steps{display:flex;flex-direction:column;gap:0;margin-bottom:24px}
+.rc-step{display:flex;gap:20px;padding-bottom:24px;position:relative}
+.rc-step:last-child{padding-bottom:0}
+.rc-step-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.rc-step-dot{width:34px;height:34px;background-color:#0D0D0B;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#FFD706;font-size:13px;font-weight:800;flex-shrink:0}
+.rc-step-line{flex:1;width:2px;background-color:#F1EFE3;margin:6px 0;min-height:20px}
+.rc-step:last-child .rc-step-line{display:none}
+.rc-step-body{padding-top:5px}
+.rc-step-body h4{font-size:14px;font-weight:700;color:#0D0D0B;margin:0 0 6px}
+.rc-step-body p{font-size:13px;color:#32312D;line-height:1.65;margin:0}
+.rc-tip-badge{display:flex;align-items:stretch;border-radius:12px;overflow:hidden;margin-bottom:24px;border:1px solid #CCC9B8}
+.rc-tip-num{background-color:#FFD706;color:#0D0D0B;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;padding:0 18px;min-width:60px;text-align:center;line-height:1.3}
+.rc-tip-title{background-color:#F1EFE3;padding:16px 20px;font-size:15px;font-weight:700;color:#0D0D0B;display:flex;align-items:center}
+.rc-checklist{list-style:none;padding:0;margin:0 0 20px}
+.rc-checklist li{display:flex;align-items:flex-start;gap:12px;font-size:.9rem;color:#32312D;line-height:1.6;padding:8px 0;border-bottom:1px solid #F1EFE3}
+.rc-checklist li:last-child{border-bottom:none}
+.rc-check{width:20px;height:20px;border:2px solid #CCC9B8;border-radius:5px;flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#807D73}
+.rc-results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.rc-result-card{background-color:#FFFDF2;border:1px solid #CCC9B8;border-radius:12px;padding:20px}
+.rc-result-num{font-size:28px;font-weight:800;color:#0D0D0B;display:block;margin-bottom:6px}
+.rc-result-tag{display:inline-block;background-color:#FFD706;color:#0D0D0B;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px}
+.rc-result-card p{font-size:12.5px;color:#32312D;margin:0;line-height:1.6}
+.rc-resource-links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.rc-resource-link{display:inline-flex;align-items:center;gap:7px;background-color:#F1EFE3;border:1px solid #CCC9B8;color:#0D0D0B;font-size:13px;font-weight:600;padding:9px 16px;border-radius:100px;text-decoration:none}
+.rc-resource-link:hover{background-color:#FFD706;border-color:#FFD706}
+.rc-divider{border:none;border-top:1px solid #F1EFE3;margin:32px 0}
+.rc-sec-nav{display:flex;justify-content:space-between;align-items:center;margin-top:48px;padding:24px 40px;border-top:1px solid #CCC9B8;background-color:#FFFFFF}
+.rc-btn-next{background-color:#FFD706;color:#0D0D0B;padding:12px 28px;border-radius:10px;font-weight:700;text-decoration:none;font-size:.9rem}
+.rc-btn-prev{background-color:#FFFFFF;color:#32312D;padding:12px 28px;border-radius:10px;font-weight:700;text-decoration:none;font-size:.9rem;border:1px solid #CCC9B8}
+.rc-page-label{color:#807D73;font-weight:600;font-size:.88rem}
+@media(max-width:640px){.rc-hero{padding:36px 20px 32px}.rc-hero h1{font-size:24px}.rc-hero-stats{gap:24px}.rc-nav{padding:0 20px}.rc-body{padding:0 20px 28px}.rc-3col,.rc-2col,.rc-results-grid{flex-direction:column;grid-template-columns:1fr}.rc-sec-nav{padding:20px}.rc-flow{flex-direction:column}}
+
 </style>
 
 <div class="rc-guide">
 
-  <!-- 1. HERO SECTION -->
   <div class="rc-hero">
-    <img src="https://drive.google.com/thumbnail?sz=w200&id=1rpQ40zAs49C7xuFkSau7-UimkPNxwMa2" alt="Retain stage" style="width:36px;height:36px;margin-bottom:8px;display:block;margin-left:auto;margin-right:auto;">
-    <span class="rc-badge">Subscriptions</span>
-    <h1>Dunning Management 101</h1>
-    <p class="rc-subtitle">Master the art and science of recovering failed payments to reduce involuntary churn and protect your recurring revenue.</p>
-    <div class="rc-flywheel-badge rc-flywheel-retain">RETAIN</div>
-    <div class="rc-stats">
-      <div class="rc-stat"><span class="rc-stat-num">7</span> sections</div>
-      <div class="rc-stat"><span class="rc-stat-num">25</span> min read</div>
+    <div class="rc-badge">Recurly Navigate &middot; Dunning 101</div>
+    <h1>Dunning 101</h1>
+    <p>Recover more revenue, reduce passive churn, and build a dunning strategy that works quietly in the background.</p>
+    <div class="rc-hero-stats">
+      <div><span class="rc-stat-num">3&ndash;5%</span><span class="rc-stat-lbl">Avg Recovery Uplift</span></div>
+      <div><span class="rc-stat-num">10</span><span class="rc-stat-lbl">Optimization Tips</span></div>
+      <div><span class="rc-stat-num">27%</span><span class="rc-stat-lbl">Avg Recovery Rate</span></div>
     </div>
   </div>
+  <nav class="rc-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-overview" class="rc-active"><span class="rc-snum">1</span> Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-why-it-matters"><span class="rc-snum">2</span> Why It Matters</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-how-to-access"><span class="rc-snum">3</span> How to Access</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-1-branding"><span class="rc-snum">4</span> Tip 1: Branding</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-2-spacing"><span class="rc-snum">5</span> Tip 2: Spacing</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-3-email-tones"><span class="rc-snum">6</span> Tip 3: Email Tones</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-4-countdown"><span class="rc-snum">7</span> Tip 4: Countdown</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-5-value"><span class="rc-snum">8</span> Tip 5: Value</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-6-alternative-ctas"><span class="rc-snum">9</span> Tip 6: Alt CTAs</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-7-urgency"><span class="rc-snum">10</span> Tip 7: Urgency</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-8-campaigns"><span class="rc-snum">11</span> Tip 8: Campaigns</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-9-delivery"><span class="rc-snum">12</span> Tip 9: Delivery</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-tip-10-in-app-banner"><span class="rc-snum">13</span> Tip 10: In-App</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-metrics"><span class="rc-snum">14</span> Metrics</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-think-and-lead"><span class="rc-snum">15</span> Think &amp; Lead</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-resources"><span class="rc-snum">&#10003;</span> Resources</a>
+  </nav>
 
-  <!-- 2. TAB NAVIGATION -->
-  <div class="rc-nav">
-    <a href="/docs/dunning-management-101-1" class="is-active">
-      <span class="rc-snum">1</span> What Is It?
-    </a>
-    <a href="/docs/dunning-management-101-2">
-      <span class="rc-snum">2</span> Why Use It?
-    </a>
-    <a href="/docs/dunning-management-101-3">
-      <span class="rc-snum">3</span> Things to Consider
-    </a>
-    <a href="/docs/dunning-management-101-4">
-      <span class="rc-snum">4</span> When Not to Use It
-    </a>
-    <a href="/docs/dunning-management-101-5">
-      <span class="rc-snum">5</span> How to Enable It
-    </a>
-    <a href="/docs/dunning-management-101-6">
-      <span class="rc-snum">6</span> Tracking Impact
-    </a>
-    <a href="/docs/dunning-management-101-7">
-      <span class="rc-snum">7</span> Pitch to Leadership
-    </a>
-  </div>
+  <div class="rc-body">
 
-  <!-- 3. SECTION HEADER & CONTENT -->
-  <div class="rc-sec">
     <div class="rc-sec-header">
-      <!-- graduation-hat-02.svg -->
-      <div class="rc-sec-icon"><img src="https://drive.google.com/thumbnail?sz=w200&id=1mpEetd7RMUJzX9FlSiPMxbwe0myetA1e" alt="graduation-hat-02" style="width:28px;height:28px;"></div>
+      <div class="rc-sec-icon">🔄</div>
       <div>
-        <h2>What Is Dunning Management?</h2>
-        <p>Understand the fundamentals of dunning, why payment failures happen, and how Recurly's dunning campaigns systematically recover revenue that would otherwise be lost.</p>
+        <h2>What Is Dunning?</h2>
+        <p>Understand how Recurly's dunning system works and the two engines driving payment recovery.</p>
       </div>
     </div>
 
-    <!-- INTRO CARD -->
-    <div class="rc-card">
-      <h3>The Silent Revenue Killer: Involuntary Churn</h3>
-      <p>Not every lost subscriber chooses to leave. In fact, a significant portion of churn — often estimated between 20% and 40% of total churn for subscription businesses — is <strong>involuntary</strong>. These are subscribers who never clicked "cancel." Instead, their payment simply failed. An expired credit card, a maxed-out spending limit, a temporary bank hold, or an incorrect billing address quietly disrupted the billing cycle, and without intervention, the subscription lapses.</p>
-      <p>This is the problem that <strong>dunning management</strong> solves. The term "dunning" comes from the 17th-century English word "dun," meaning to make persistent demands for payment. In the context of modern subscription commerce, dunning management is the automated process of detecting a failed payment, retrying the transaction at strategic intervals, notifying the subscriber, and ultimately either recovering the payment or gracefully handling the subscription's end.</p>
-      <p>Without a well-configured dunning strategy, every failed transaction is essentially a coin flip: either the subscriber happens to update their payment method on their own, or they churn silently — often without even realizing their subscription has lapsed. For businesses operating at scale, that coin flip can translate to millions of dollars in lost annual recurring revenue (ARR).</p>
-    </div>
-
-    <!-- HOW DUNNING WORKS: STEPS -->
-    <div class="rc-subhead">How Dunning Works: The Lifecycle of a Failed Payment</div>
-
-    <div class="rc-steps">
-      <div class="rc-step">
-        <div class="rc-sbadge">1</div>
-        <div class="rc-step-content">
-          <h4>Payment Failure Detected</h4>
-          <p>When a recurring billing attempt fails — whether due to insufficient funds, an expired card, a hard decline from the issuing bank, or a fraud flag — Recurly captures the decline code and categorizes the failure type. This classification is critical because different failure types require different recovery strategies. A "soft decline" (temporary issue) should be retried quickly, while a "hard decline" (card permanently invalid) may require immediate subscriber outreach.</p>
-        </div>
+    <div class="rc-flow">
+      <div class="rc-flow-node">
+        <span class="rc-flow-icon">💳</span>
+        <span class="rc-flow-lbl">Payment Fails</span>
+        <span class="rc-flow-sub">Invoice becomes past_due</span>
       </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">2</div>
-        <div class="rc-step-content">
-          <h4>Dunning Campaign Activates</h4>
-          <p>The subscription enters a <strong>dunning cycle</strong> — a pre-configured sequence of retry attempts and subscriber communications. In Recurly, this is managed through <strong>Dunning Campaigns</strong>, which define the total dunning window (how many days to keep trying), the retry schedule (which days to re-attempt the charge), and which email notifications to send at each stage. You can create multiple campaigns and assign them to specific plans, giving you granular control over how different subscriber segments are handled.</p>
-        </div>
+      <span class="rc-flow-arrow">→</span>
+      <div class="rc-flow-node hl">
+        <span class="rc-flow-icon">🤖</span>
+        <span class="rc-flow-lbl">Intelligent Retries</span>
+        <span class="rc-flow-sub">ML-powered timing</span>
       </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">3</div>
-        <div class="rc-step-content">
-          <h4>Automated Retries Execute</h4>
-          <p>Recurly's retry logic attempts the charge again on the days you've specified in your dunning campaign. For merchants leveraging Recurly's <strong>AI/ML-powered revenue recovery</strong> (sometimes called "intelligent retries" or "Revenue Optimization"), the system goes further: it uses machine learning models trained on billions of transactions to determine the <em>optimal time and day</em> to retry each individual transaction, significantly increasing the probability of success compared to a static schedule.</p>
-        </div>
+      <span class="rc-flow-arrow">→</span>
+      <div class="rc-flow-node hl">
+        <span class="rc-flow-icon">📧</span>
+        <span class="rc-flow-lbl">Dunning Emails</span>
+        <span class="rc-flow-sub">Customer outreach</span>
       </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">4</div>
-        <div class="rc-step-content">
-          <h4>Subscriber Notifications Sent</h4>
-          <p>Throughout the dunning window, the subscriber receives email communications alerting them to the payment issue. These emails serve two purposes: first, they prompt the subscriber to update their payment information if the issue is on their end (e.g., an expired card); second, they create a sense of urgency to prevent lapsed access to the product. Effective dunning emails are not generic payment reminders — they are branded, empathetic, and escalate in tone from gentle notification to urgent final warning.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">5</div>
-        <div class="rc-step-content">
-          <h4>Resolution: Recovery or Expiration</h4>
-          <p>The dunning cycle ends in one of two outcomes. <strong>Recovery:</strong> the payment succeeds on a retry attempt, or the subscriber manually updates their payment method and the charge goes through — the subscription continues seamlessly. <strong>Expiration:</strong> the dunning window closes without a successful payment, and the subscription is either canceled or paused based on your configuration. In Recurly, you control what happens at end-of-dunning: full cancellation, a move to a paused state, or a downgrade to a free tier.</p>
-        </div>
+      <span class="rc-flow-arrow">→</span>
+      <div class="rc-flow-node">
+        <span class="rc-flow-icon">✅</span>
+        <span class="rc-flow-lbl">Recovery or Expiry</span>
+        <span class="rc-flow-sub">Invoice resolved</span>
       </div>
     </div>
-
-    <!-- KEY CONCEPTS -->
-    <div class="rc-subhead">Key Concepts You Need to Know</div>
 
     <div class="rc-3col">
       <div class="rc-wi">
-        <!-- credit-card-refresh.svg -->
-        <img src="https://drive.google.com/thumbnail?sz=w200&id=12qo_Yniga9UwiJZatUOP62u7SRF9Yqno" alt="credit-card-refresh" style="width:28px;height:28px;">
+        <span class="rc-wi-icon">🤖</span>
+        <h4>Intelligent Retries</h4>
+        <p>Recurly's ML engine analyzes transaction data to determine the optimal moment to retry a declined payment. It runs fully automatically in the background — no setup required. Retries are independent from your email schedule.</p>
+      </div>
+      <div class="rc-wi">
+        <span class="rc-wi-icon">📬</span>
+        <h4>Dunning Emails</h4>
+        <p>Automated email sequences sent to subscribers prompting them to update their billing info. You control the day, template, and tone of every email in the sequence. Emails are critical for hard declines that retries can't recover.</p>
+      </div>
+      <div class="rc-wi">
+        <span class="rc-wi-icon">🪟</span>
         <h4>Dunning Window</h4>
-        <p>The total number of days Recurly will continue retrying a failed payment before taking final action. Recurly supports windows up to 49 days. Longer windows generally recover more revenue.</p>
-      </div>
-      <div class="rc-wi">
-        <!-- bell-ringing-01.svg -->
-        <img src="https://drive.google.com/thumbnail?sz=w200&id=1wcvg3Ufxub3-78NL1HaxIBh01CLx5f5W" alt="bell-ringing-01" style="width:28px;height:28px;">
-        <h4>Dunning Campaign</h4>
-        <p>A named configuration that defines your retry schedule, email cadence, and end-of-dunning behavior. You can create multiple campaigns and assign each to different subscription plans.</p>
-      </div>
-      <div class="rc-wi">
-        <!-- speedometer-04.svg -->
-        <img src="https://drive.google.com/thumbnail?sz=w200&id=1IvV473EacJuzoqsAw0D-wrs4MY-gx2SI" alt="speedometer-04" style="width:28px;height:28px;">
-        <h4>Recovery Rate</h4>
-        <p>The percentage of failed transactions that are ultimately collected during the dunning cycle. This is the primary metric for measuring dunning effectiveness and should be tracked over time.</p>
-      </div>
-    </div>
-
-    <!-- VOLUNTARY VS INVOLUNTARY CHURN -->
-    <div class="rc-subhead">Voluntary vs. Involuntary Churn</div>
-
-    <div class="rc-2col">
-      <div class="rc-card">
-        <h3>Voluntary Churn</h3>
-        <p>The subscriber <strong>actively decides</strong> to cancel. They may be dissatisfied with the product, found a competitor, or simply no longer need the service. Addressing voluntary churn requires product improvements, retention offers, and cancel-save flows.</p>
-        <p>Dunning management does <strong>not</strong> address voluntary churn directly. However, a poorly handled dunning process can <em>convert</em> an involuntary churn event into voluntary churn — if subscribers feel frustrated or confused by payment failure communications, they may choose not to re-subscribe.</p>
-      </div>
-      <div class="rc-card">
-        <h3>Involuntary Churn</h3>
-        <p>The subscriber's payment fails and the subscription lapses <strong>without the subscriber's intent</strong>. Common causes include expired cards, insufficient funds, bank-initiated declines, and outdated billing information. This is entirely preventable with the right dunning strategy.</p>
-        <p>Involuntary churn typically accounts for <strong>20–40% of total churn</strong> for subscription businesses. Because these subscribers never intended to leave, the recovery potential is enormous — and it's where dunning management delivers its highest ROI.</p>
+        <p>The time period during which Recurly retries payments and sends emails. Window length determines how long you have to recover a payment before the subscription expires. Recurly recommends 27 days for monthly plans, 60 days for annual.</p>
       </div>
     </div>
 
     <div class="rc-tip">
-      <strong>💡 Pro Tip: Dunning Is a Retention Strategy, Not Just a Billing Feature</strong>
-      <p>Think of dunning as the first line of defense in your retention toolkit. It sits alongside cancel-save flows and win-back campaigns as a core mechanism for reducing churn. The best-performing merchants treat dunning emails as branded touchpoints — not transactional system messages — and coordinate their dunning strategy with their broader customer lifecycle communications.</p>
+      <p><strong>💡 Key distinction:</strong> Retries and emails are independent systems. An email being sent does NOT trigger a retry — they run on separate schedules. This gives you full flexibility to optimize payment recovery timing and subscriber communication cadence independently.</p>
     </div>
 
-    <!-- WHAT MAKES RECURLY'S APPROACH DIFFERENT -->
-    <div class="rc-subhead">What Makes Recurly's Dunning Different?</div>
+    <hr class="rc-divider" />
 
-    <div class="rc-card">
-      <h3>Beyond Static Retries: AI/ML-Powered Revenue Recovery</h3>
-      <p>Most billing platforms offer basic dunning: set a retry schedule, send some emails, and hope for the best. Recurly goes significantly further with its <strong>machine learning-powered revenue recovery engine</strong>. Trained on data from thousands of merchants and billions of transactions, Recurly's AI models analyze patterns across decline codes, card types, issuing banks, geographic regions, time of day, and day of week to determine the <em>optimal moment</em> to retry each individual failed transaction.</p>
-      <p>This means two subscribers with the exact same plan could have their retries executed at different times — because the model identified that one subscriber's issuing bank has higher approval rates on Tuesday mornings, while the other's tends to clear holds by Friday afternoons. This level of intelligence is not something you can replicate with a manual retry schedule, no matter how carefully you craft it.</p>
-      <p>In addition to intelligent retries, Recurly's dunning system supports <strong>multiple concurrent dunning campaigns</strong>, allowing you to tailor the dunning experience by plan, subscriber segment, or revenue tier. A $9.99/month consumer subscriber might receive a friendly 14-day dunning sequence, while a $499/month enterprise account might trigger an immediate internal alert and a personalized outreach cadence managed by your Customer Success team.</p>
-    </div>
+    <div class="rc-subhead">Who enters the dunning process?</div>
+    <p>Any invoice that becomes <code>past_due</code> enters dunning. What happens next depends on the type of decline received from the payment gateway.</p>
+
+    <table class="rc-table">
+      <thead>
+        <tr><th>Failure Type</th><th>Common Example</th><th>Retries?</th><th>Emails?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Soft Decline</strong></td>
+          <td>Insufficient funds, card limit reached</td>
+          <td>✅ Yes &mdash; ML-optimized</td>
+          <td>✅ Yes &mdash; per your schedule</td>
+        </tr>
+        <tr>
+          <td><strong>Hard Decline</strong></td>
+          <td>Invalid card number, fraud block</td>
+          <td>❌ Typically no</td>
+          <td>✅ Yes &mdash; send on Day 0</td>
+        </tr>
+        <tr>
+          <td><strong>Any past_due Invoice</strong></td>
+          <td>Any failed renewal payment</td>
+          <td>If soft decline</td>
+          <td>✅ Yes &mdash; per your campaign</td>
+        </tr>
+      </tbody>
+    </table>
 
     <div class="rc-warning">
-      <strong>⚠️ Common Misconception: "Our Default Settings Are Good Enough"</strong>
-      <p>Many merchants never customize their dunning configuration beyond Recurly's defaults. While the defaults are a reasonable starting point, they are not optimized for your specific subscriber base, payment mix, or business model. Throughout this course, you'll learn how extending your dunning window, customizing your email cadence, and leveraging advanced features can materially increase your recovery rate — often by several percentage points, which at scale translates to significant recovered revenue.</p>
+      <p><strong>⚠️ Hard declines require fast action.</strong> Since Recurly typically won't retry hard declines, email is your only automated recovery tool for these subscribers. Make sure your first dunning email fires immediately on Day 0 for hard decline events &mdash; not delayed to Day 3 like soft declines.</p>
     </div>
 
-    <!-- QUICK REFERENCE CHECKLIST -->
-    <div class="rc-checklist">
-      <div class="rc-cl-header">Quick Reference: Dunning Fundamentals Checklist</div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>I understand the difference between voluntary and involuntary churn</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>I can define "dunning window" and explain why its length matters</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>I know that Recurly supports multiple dunning campaigns for different plans</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>I understand how AI/ML-powered retries differ from static retry schedules</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>I recognize that dunning emails are a retention touchpoint, not just a system notification</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>I know the five stages of the dunning lifecycle: detect, activate, retry, notify, resolve</label>
-      </div>
+    <div class="rc-tip">
+      <p><strong>🔗 Worried about giving away free access?</strong> You can decouple dunning status from login and entitlement status using Recurly Webhooks. This lets you maintain a long recovery window while restricting product access after a short grace period. See the Resources tab for the Dunning Webhooks guide.</p>
     </div>
 
   </div>
 
-  <!-- 5. BACK/NEXT NAVIGATION -->
   <div class="rc-sec-nav">
-    <a href="#" class="rc-btn-prev rc-btn-disabled">&larr; Previous</a>
-    <a href="/docs/dunning-management-101-2" class="rc-btn-next">Next &rarr;</a>
+    <span class="rc-page-label">&bull; Start of path</span>
+    <span class="rc-page-label">Page 1 of 16</span>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-why-it-matters" class="rc-btn-next">Why It Matters &rarr;</a>
   </div>
 
-  <!-- 6. ADDITIONAL RESOURCES -->
-  <div class="rc-link-sec">
-    <h3>Additional Resources</h3>
-    <a href="https://docs.google.com/document/d/126f5qxy8Ss4YfFpwZfebQgEHYBgj0f9t6NPOUbhuUBU/edit?tab=t.0" class="rc-link-btn">📄 Dunning Management Documentation</a>
-    <a href="https://recurly.com/research/churn-rate-guide/" class="rc-link-btn">📊 Recurly Churn Rate Guide</a>
-    <a href="https://docs.recurly.com/docs/dunning" class="rc-link-btn">🔧 Recurly Dunning Configuration Docs</a>
-  </div>
-
-</div></body></html>
+</div>
 `}</HTMLBlock>
 
 <br />
