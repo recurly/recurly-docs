@@ -77,7 +77,7 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Tracking the Impact of Account Updater (AU)</h2>
-        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize Churn Management dashboards for strategic trends, and use Transactions Exports for a granular audit of every card lifecycle event.</p>
+        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize Churn Management dashboards for strategic trends and leverage Transactions Exports for a granular audit of every card lifecycle event.</p>
       </div>
     </div>
 
@@ -95,7 +95,7 @@ metadata:
         <div class="rc-sbadge-dark">1</div>
         <div>
           <h3>Recovered Revenue Dashboard</h3>
-          <p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. Use the <strong>Recovered Revenue by Method</strong> chart to see the month-over-month contribution of card updates compared to dunning.</p>
+          <p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. Use the <strong>Recovered Revenue by Method</strong> chart to see the contribution of card updates compared to dunning.</p>
           
           <div style="position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:12px;margin-top:16px;border:1px solid var(--lightgray);">
             <iframe src="https://share.synthesia.io/embeds/videos/57b979ea-216b-4e3f-8215-cd6060e32107" loading="lazy" title="Trail Guide: Recovered Revenue Dashboard" allowfullscreen allow="encrypted-media; fullscreen;" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0;"></iframe>
@@ -106,18 +106,25 @@ metadata:
         <div class="rc-sbadge-dark">2</div>
         <div>
           <h3>Renewal Invoices: The "Other Issues" Chart</h3>
-          <p>Go to <strong>Analytics → Churn Management → Renewal Invoices</strong>. Filter for the <strong>Other Issues</strong> chart to see the specific count of invoices saved specifically by Account Updater (AU) logic.</p>
+          <p>Go to <strong>Analytics → Churn Management → Renewal Invoices</strong>. Review the <strong>Other Issues</strong> chart to see the specific count of invoices saved specifically by Account Updater (AU) logic.</p>
+        </div>
+      </div>
+      <div class="rc-step">
+        <div class="rc-sbadge-dark">3</div>
+        <div>
+          <h3>Renewal Declines Dashboard</h3>
+          <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" codes to see the remaining friction points that AU didn't resolve.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">📁 Advanced Audit: The Transactions Export</h3>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin-bottom:16px;">For a raw data view of Account Updater (AU) events, download the <strong>Transactions Export</strong> under <strong>Analytics → Exports</strong>. This report provides the underlying proof of card updates.</p>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin-bottom:16px;">For raw data verification, use the <strong>Transactions Export</strong> under <strong>Analytics → Exports</strong>. This report provides the underlying proof of card updates at the transaction level.</p>
       <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge-dark">A</div><div><h3>Filter by 'Origin'</h3><p>Filter the spreadsheet for <code>recurring</code> transactions. Most AU-driven updates are associated with automated subscription renewal attempts.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">B</div><div><h3>Search 'Message' for AU Tags</h3><p>Look at the <strong>Message</strong> or <strong>Gateway Response</strong> columns. Many gateways include phrases like "Updated card information" or "AU Success" when a charge succeeds on a refreshed card.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">C</div><div><h3>Identify Card Changes</h3><p>Compare <code>cc_first_6</code> and <code>cc_last_4</code> across multiple billing cycles for the same <code>account_code</code> to confirm when metadata changed without customer intervention.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">A</div><div><h3>Filter by 'Origin'</h3><p>Filter your export for <code>recurring</code> transactions to isolate standard subscription renewal attempts where AU is most active.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">B</div><div><h3>Search 'Message' for AU Notes</h3><p>Look for notes like "Updated card information" in the <strong>Message</strong> or <strong>Gateway Response</strong> columns for proof of a proactive update.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">C</div><div><h3>Identify Metadata Changes</h3><p>Track <code>cc_first_6</code> and <code>cc_last_4</code> across billing cycles for the same account to confirm when card details were updated automatically.</p></div></div>
       </div>
     </div>
 
@@ -131,7 +138,7 @@ metadata:
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Insight: The 90-Day Rule</h4><p>Account Updater (AU) impact is cumulative. Because cards age and expire at different times, it takes roughly 90 days to see the full "stabilized" impact on your recovery metrics. Use the first three months to establish a new baseline for your involuntary churn rate.</p></div>
+      <div><h4>Expert Insight: The 90-Day Rule</h4><p>Account Updater (AU) impact is cumulative. It takes roughly 90 days to see the full "stabilized" impact on your recovery metrics. Use this window to establish your new churn baseline.</p></div>
     </div>
 
     <div class="rc-sec-nav">
@@ -142,8 +149,8 @@ metadata:
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/docs/recovered-revenue" target="_blank" rel="noopener noreferrer">📈 Docs: Recovered Revenue Dashboard</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-invoices" target="_blank" rel="noopener noreferrer">📋 Docs: Renewal Invoices Report</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-declines" target="_blank" rel="noopener noreferrer">📉 Docs: Renewal Declines Dashboard</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/transaction-export" target="_blank" rel="noopener noreferrer">📂 Docs: Transactions Export Guide</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
   </div>
 </div>
 </body>
