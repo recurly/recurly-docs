@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 Recurly's Adjustments Exports allow you to closely monitor the invoiced and uninvoiced adjustments associated with your accounts. This export encompasses every invoiced charge and credit adjustment and even offers the option to include uninvoiced adjustments that are presently on the account. You can access the Adjustments export by visiting the [Exports](http://app.recurly.com/go/exports) page found under the "Analytics" tab on your Recurly site.
 
-<Image border={false} src="https://files.readme.io/0ef66874fe4eecfa3671a1d5e0a9b19418271c7c9900c9489f812068562ad76a-image.png" />
+![](https://files.readme.io/0ef66874fe4eecfa3671a1d5e0a9b19418271c7c9900c9489f812068562ad76a-image.png)
 
 <br />
 
@@ -1496,6 +1496,24 @@ To help you identify and organize information effectively, the export provides a
 
       <td>
         Price segment code
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        user-defined custom field label
+      </td>
+
+      <td>
+        charge custom field 
+      </td>
+
+      <td>
+        Appears only if a custom field is configured and enabled to be visible in the export. The column name in the export reflects the label defined in the custom field configuration.
       </td>
 
       <td>
