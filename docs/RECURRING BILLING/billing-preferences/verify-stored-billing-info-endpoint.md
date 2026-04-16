@@ -63,7 +63,7 @@ Recurly's Verify Billing Info feature is compatible with all Recurly credit card
 
 ### 2. Specify gateway (optional)
 
-* **Step 1**: In your API call, optionally include a `gateway_code` to direct the verification through a specific gateway.
+* **Step 1**: In your API call, optionally include a `gateway_code` to direct the verification through a specific gateway. If 3DS is requested, handle the response and request flows through Recurly.js as usual.
 * **Step 2**: If the gateway code doesn't support the card type, an error will be returned.
 
 ### 3. Receive verification response
