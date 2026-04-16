@@ -114,7 +114,7 @@ If you import Braintree tokens, the payment methods are generic and may have deg
 
 Recurly supports Braintree's "legacy" tokens, and do not consume or create Global IDs.
 
-> **Note:** When you send Braintree tokens through the API or import them during a migration, Recurly can query Braintree to retrieve token metadata and backfill payment method details. This feature currently requires a feature flag. Contact Recurly Support to discuss enabling it.
+> **Note:** When you send Braintree tokens through the API or import them during a migration, Recurly can query Braintree to retrieve token metadata and backfill payment method details as long as it is a legacy token. This feature currently requires a feature flag. Contact Recurly Support to discuss enabling it.
 
 ## Adyen
 
