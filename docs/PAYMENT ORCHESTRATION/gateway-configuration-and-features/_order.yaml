@@ -1,6 +1,7 @@
 - gateway-merchant-account-overview
 - payment-gateways
 - gateway-configuration
+- gateway-token-support
 - custom-gateway-routing-configuration
 - gateway-failover
 - fraud-management
@@ -13,5 +14,4 @@
 - how-to-test-your-gateway
 - gateway-specific-information-for-invoice-numbers
 - test
-- gateway-token-support
 - deprecated-gateway-specific-information-for-invoice-numbers
