@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dunning Management 101 — Why Use It?</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></head><body style="background:#f5f5f0;margin:0;"><style>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dunning Management 101 — What Is It?</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></head><body style="background:#f5f5f0;margin:0;"><style>
 :root {
   --yellow: #FFD706;
   --orange: #FF8200;
@@ -84,23 +84,25 @@ metadata:
 
 <div class="rc-guide">
 
+  <!-- 1. HERO SECTION -->
   <div class="rc-hero">
     <img src="https://drive.google.com/thumbnail?sz=w200&id=1rpQ40zAs49C7xuFkSau7-UimkPNxwMa2" alt="Retain stage" style="width:36px;height:36px;margin-bottom:8px;display:block;margin-left:auto;margin-right:auto;">
     <span class="rc-badge">Subscriptions</span>
     <h1>Dunning Management 101</h1>
-    <p class="rc-subtitle">Master dunning configuration to maximize revenue recovery and reduce involuntary churn across your subscription business.</p>
+    <p class="rc-subtitle">Master the art and science of recovering failed payments to reduce involuntary churn and protect your recurring revenue.</p>
     <div class="rc-flywheel-badge rc-flywheel-retain">RETAIN</div>
     <div class="rc-stats">
       <div class="rc-stat"><span class="rc-stat-num">7</span> sections</div>
-      <div class="rc-stat"><span class="rc-stat-num">24</span> min read</div>
+      <div class="rc-stat"><span class="rc-stat-num">25</span> min read</div>
     </div>
   </div>
 
+  <!-- 2. TAB NAVIGATION -->
   <div class="rc-nav">
-    <a href="/docs/dunning-management-101-1">
+    <a href="/docs/dunning-management-101-1" class="is-active">
       <span class="rc-snum">1</span> What Is It?
     </a>
-    <a href="/docs/dunning-management-101-2" class="is-active">
+    <a href="/docs/dunning-management-101-2">
       <span class="rc-snum">2</span> Why Use It?
     </a>
     <a href="/docs/dunning-management-101-3">
@@ -120,168 +122,169 @@ metadata:
     </a>
   </div>
 
+  <!-- 3. SECTION HEADER & CONTENT -->
   <div class="rc-sec">
     <div class="rc-sec-header">
-      <div class="rc-sec-icon">
-        <!-- lightbulb-02.svg -->
-        <img src="https://drive.google.com/thumbnail?sz=w200&id=1dQpFxnm38HN6ZNeRBSjP3R4Tt--R_wON" alt="lightbulb icon" style="width:28px;height:28px;">
-      </div>
+      <!-- graduation-hat-02.svg -->
+      <div class="rc-sec-icon"><img src="https://drive.google.com/thumbnail?sz=w200&id=1mpEetd7RMUJzX9FlSiPMxbwe0myetA1e" alt="graduation-hat-02" style="width:28px;height:28px;"></div>
       <div>
-        <h2>Why Use Dunning Management?</h2>
-        <p>Understand the business case for optimized dunning — from revenue recovery to subscriber retention and lifetime value growth.</p>
+        <h2>What Is Dunning Management?</h2>
+        <p>Understand the fundamentals of dunning, why payment failures happen, and how Recurly's dunning campaigns systematically recover revenue that would otherwise be lost.</p>
       </div>
     </div>
 
+    <!-- INTRO CARD -->
     <div class="rc-card">
-      <h3>The Silent Revenue Leak You Can't Afford to Ignore</h3>
-      <p>Involuntary churn — subscribers lost due to failed payments rather than a conscious decision to cancel — typically accounts for 8–12% of total churn for subscription businesses. Unlike voluntary churn, where a customer makes an active choice, involuntary churn is almost entirely preventable. Every subscriber who churns because of an expired credit card, an insufficient-funds decline, or a bank fraud filter is revenue that slipped through a crack in your billing infrastructure.</p>
-      <p>Without an optimized dunning strategy, Recurly's default behavior will eventually cancel subscriptions after failed payment attempts. But "default" and "optimized" are worlds apart. The difference between a 3-day dunning window and a 14-day window with intelligent retry timing can mean the difference between recovering a few percent of failed payments versus recovering the majority of them. For a business processing $10M in annual recurring revenue, even a 2–3 percentage point improvement in recovery translates directly to hundreds of thousands of dollars retained annually — with zero incremental acquisition cost.</p>
-      <p>Dunning management isn't just a billing feature. It's a core retention lever that directly protects the recurring revenue base you've already invested heavily to build.</p>
+      <h3>The Silent Revenue Killer: Involuntary Churn</h3>
+      <p>Not every lost subscriber chooses to leave. In fact, a significant portion of churn — often estimated between 20% and 40% of total churn for subscription businesses — is <strong>involuntary</strong>. These are subscribers who never clicked "cancel." Instead, their payment simply failed. An expired credit card, a maxed-out spending limit, a temporary bank hold, or an incorrect billing address quietly disrupted the billing cycle, and without intervention, the subscription lapses.</p>
+      <p>This is the problem that <strong>dunning management</strong> solves. The term "dunning" comes from the 17th-century English word "dun," meaning to make persistent demands for payment. In the context of modern subscription commerce, dunning management is the automated process of detecting a failed payment, retrying the transaction at strategic intervals, notifying the subscriber, and ultimately either recovering the payment or gracefully handling the subscription's end.</p>
+      <p>Without a well-configured dunning strategy, every failed transaction is essentially a coin flip: either the subscriber happens to update their payment method on their own, or they churn silently — often without even realizing their subscription has lapsed. For businesses operating at scale, that coin flip can translate to millions of dollars in lost annual recurring revenue (ARR).</p>
     </div>
 
-    <div class="rc-subhead">The Five Strategic Reasons to Optimize Dunning</div>
+    <!-- HOW DUNNING WORKS: STEPS -->
+    <div class="rc-subhead">How Dunning Works: The Lifecycle of a Failed Payment</div>
 
     <div class="rc-steps">
       <div class="rc-step">
         <div class="rc-sbadge">1</div>
         <div class="rc-step-content">
-          <h4>Recover Revenue That Would Otherwise Vanish</h4>
-          <p>Every failed transaction is a potential lost subscriber. Recurly's advanced dunning campaigns use machine-learning-optimized retry logic to attempt charges at the times most likely to succeed — factoring in card type, bank behavior, time zones, and historical success patterns. Merchants who extend their dunning window and enable intelligent retries consistently recover significantly more revenue than those using static, manually configured retry schedules. This recovered revenue flows directly to your bottom line with no additional customer acquisition cost.</p>
+          <h4>Payment Failure Detected</h4>
+          <p>When a recurring billing attempt fails — whether due to insufficient funds, an expired card, a hard decline from the issuing bank, or a fraud flag — Recurly captures the decline code and categorizes the failure type. This classification is critical because different failure types require different recovery strategies. A "soft decline" (temporary issue) should be retried quickly, while a "hard decline" (card permanently invalid) may require immediate subscriber outreach.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">2</div>
         <div class="rc-step-content">
-          <h4>Preserve Subscriber Relationships and Lifetime Value</h4>
-          <p>When a subscriber involuntarily churns, you don't just lose their current month's payment — you lose their entire remaining lifetime value. If your average subscriber stays for 18 months at $30/month, a single involuntary churn event costs $540 in future revenue. Dunning management preserves these relationships by giving the payment issue time to resolve (cards get renewed, bank holds get lifted, funds get deposited) while keeping the subscriber engaged through thoughtful communication. The subscriber often never realizes how close they came to losing access.</p>
+          <h4>Dunning Campaign Activates</h4>
+          <p>The subscription enters a <strong>dunning cycle</strong> — a pre-configured sequence of retry attempts and subscriber communications. In Recurly, this is managed through <strong>Dunning Campaigns</strong>, which define the total dunning window (how many days to keep trying), the retry schedule (which days to re-attempt the charge), and which email notifications to send at each stage. You can create multiple campaigns and assign them to specific plans, giving you granular control over how different subscriber segments are handled.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">3</div>
         <div class="rc-step-content">
-          <h4>Reduce the Burden on Support and Success Teams</h4>
-          <p>Without automated dunning, failed payments generate support tickets. Subscribers contact your team confused about lost access, or CSMs must manually reach out to salvage accounts. Well-configured dunning campaigns handle the communication automatically — sending branded, escalating emails that inform subscribers of the issue, provide a direct link to update their payment method, and remind them of the value they'll lose. This frees your support and customer success teams to focus on proactive retention rather than reactive firefighting.</p>
+          <h4>Automated Retries Execute</h4>
+          <p>Recurly's retry logic attempts the charge again on the days you've specified in your dunning campaign. For merchants leveraging Recurly's <strong>AI/ML-powered revenue recovery</strong> (sometimes called "intelligent retries" or "Revenue Optimization"), the system goes further: it uses machine learning models trained on billions of transactions to determine the <em>optimal time and day</em> to retry each individual transaction, significantly increasing the probability of success compared to a static schedule.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">4</div>
         <div class="rc-step-content">
-          <h4>Improve Financial Forecasting and Revenue Predictability</h4>
-          <p>High involuntary churn introduces noise into your revenue forecasts. When 8–12% of your subscriber base is at risk of uncontrolled loss each billing cycle, your finance team is forecasting with significant uncertainty. Optimized dunning brings predictability to your recovery rates. Once you've established a mature dunning configuration, you can reliably forecast what percentage of failed payments will be recovered, making MRR projections far more accurate. This helps finance, leadership, and investor relations all operate with greater confidence.</p>
+          <h4>Subscriber Notifications Sent</h4>
+          <p>Throughout the dunning window, the subscriber receives email communications alerting them to the payment issue. These emails serve two purposes: first, they prompt the subscriber to update their payment information if the issue is on their end (e.g., an expired card); second, they create a sense of urgency to prevent lapsed access to the product. Effective dunning emails are not generic payment reminders — they are branded, empathetic, and escalate in tone from gentle notification to urgent final warning.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge">5</div>
         <div class="rc-step-content">
-          <h4>Compound Retention Gains Across the Flywheel</h4>
-          <p>Dunning management doesn't operate in isolation — it amplifies every other retention initiative. Your cancel-save flows only work if subscribers make it to the cancel button voluntarily; otherwise, involuntary churn silently removes them before your retention offers ever trigger. Your Account Updater integration catches card changes proactively, and dunning handles the remaining failures. Together with Recurly's AI/ML revenue recovery engine, an optimized dunning configuration creates a multi-layered defense against passive churn that compounds over time.</p>
+          <h4>Resolution: Recovery or Expiration</h4>
+          <p>The dunning cycle ends in one of two outcomes. <strong>Recovery:</strong> the payment succeeds on a retry attempt, or the subscriber manually updates their payment method and the charge goes through — the subscription continues seamlessly. <strong>Expiration:</strong> the dunning window closes without a successful payment, and the subscription is either canceled or paused based on your configuration. In Recurly, you control what happens at end-of-dunning: full cancellation, a move to a paused state, or a downgrade to a free tier.</p>
         </div>
       </div>
     </div>
 
-    <div class="rc-subhead">The Cost of Inaction: What You Lose Without Optimization</div>
+    <!-- KEY CONCEPTS -->
+    <div class="rc-subhead">Key Concepts You Need to Know</div>
 
     <div class="rc-3col">
       <div class="rc-wi">
-        <!-- wallet-01.svg -->
-        <img src="https://drive.google.com/thumbnail?sz=w200&id=1zog70GXF8MGG0LH8XR1pClQj4Xp41PBe" alt="wallet icon" style="width:28px;height:28px;">
-        <h4>Lost Revenue</h4>
-        <p>Default dunning windows are often too short to capture payments that would succeed with a longer retry period. Short windows leave money on the table every single billing cycle.</p>
+        <!-- credit-card-refresh.svg -->
+        <img src="https://drive.google.com/thumbnail?sz=w200&id=12qo_Yniga9UwiJZatUOP62u7SRF9Yqno" alt="credit-card-refresh" style="width:28px;height:28px;">
+        <h4>Dunning Window</h4>
+        <p>The total number of days Recurly will continue retrying a failed payment before taking final action. Recurly supports windows up to 49 days. Longer windows generally recover more revenue.</p>
       </div>
       <div class="rc-wi">
-        <!-- heart-hand.svg -->
-        <img src="https://drive.google.com/thumbnail?sz=w200&id=1zK3mlZEE50CjiIH_pQo1ytqaz3gVvgjP" alt="heart hand icon" style="width:28px;height:28px;">
-        <h4>Damaged Relationships</h4>
-        <p>Subscribers who are silently canceled due to payment failure feel abandoned. When they discover they've lost access, the trust damage is difficult to repair — even if they resubscribe.</p>
+        <!-- bell-ringing-01.svg -->
+        <img src="https://drive.google.com/thumbnail?sz=w200&id=1wcvg3Ufxub3-78NL1HaxIBh01CLx5f5W" alt="bell-ringing-01" style="width:28px;height:28px;">
+        <h4>Dunning Campaign</h4>
+        <p>A named configuration that defines your retry schedule, email cadence, and end-of-dunning behavior. You can create multiple campaigns and assign each to different subscription plans.</p>
       </div>
       <div class="rc-wi">
-        <!-- bar-chart-11.svg -->
-        <img src="https://drive.google.com/thumbnail?sz=w200&id=18clYe_73mC2yDcICqfLcwtDvAXSiuAN4" alt="bar chart icon" style="width:28px;height:28px;">
-        <h4>Inflated Churn Metrics</h4>
-        <p>High involuntary churn distorts your overall churn rate, making it harder to isolate and address voluntary churn drivers. Your retention story becomes muddied.</p>
+        <!-- speedometer-04.svg -->
+        <img src="https://drive.google.com/thumbnail?sz=w200&id=1IvV473EacJuzoqsAw0D-wrs4MY-gx2SI" alt="speedometer-04" style="width:28px;height:28px;">
+        <h4>Recovery Rate</h4>
+        <p>The percentage of failed transactions that are ultimately collected during the dunning cycle. This is the primary metric for measuring dunning effectiveness and should be tracked over time.</p>
       </div>
     </div>
 
-    <div class="rc-tip">
-      <strong>💡 Pro Tip: The Dunning Window Is Your Biggest Lever</strong>
-      <p>Recurly data consistently shows that merchants who extend their dunning window beyond the default — particularly to 14 days or more — see measurably higher recovery rates. A longer window gives more time for card updates to propagate, for temporary bank holds to clear, and for subscribers to respond to email prompts. If you only change one thing about your dunning setup, extend the window. It's the single highest-impact configuration change you can make.</p>
-    </div>
-
-    <div class="rc-warning">
-      <strong>⚠️ Don't Confuse Recovery Rate with Churn Rate</strong>
-      <p>When evaluating dunning performance, keep your metrics clear. The 8–12% figure represents the typical involuntary churn rate — the percentage of subscribers who enter dunning due to payment failures. Your <em>recovery rate</em> is the percentage of those dunning subscribers you successfully recover. A strong dunning setup might recover 50–70% of failed payments, meaning the net involuntary churn impact drops significantly. Track both numbers to tell the complete story to leadership.</p>
-    </div>
-
-    <div class="rc-subhead">Who Benefits from Optimized Dunning?</div>
+    <!-- VOLUNTARY VS INVOLUNTARY CHURN -->
+    <div class="rc-subhead">Voluntary vs. Involuntary Churn</div>
 
     <div class="rc-2col">
       <div class="rc-card">
-        <h3>Revenue Operations & Billing Teams</h3>
-        <p>RevOps managers gain a measurable, high-ROI lever to plug revenue leaks without requiring engineering resources or new subscriber acquisition. Billing administrators get a clear configuration framework — dunning campaigns, retry schedules, and email templates — that they can tune and iterate on independently. Optimized dunning becomes one of the fastest ways to demonstrate operational impact on the revenue line.</p>
+        <h3>Voluntary Churn</h3>
+        <p>The subscriber <strong>actively decides</strong> to cancel. They may be dissatisfied with the product, found a competitor, or simply no longer need the service. Addressing voluntary churn requires product improvements, retention offers, and cancel-save flows.</p>
+        <p>Dunning management does <strong>not</strong> address voluntary churn directly. However, a poorly handled dunning process can <em>convert</em> an involuntary churn event into voluntary churn — if subscribers feel frustrated or confused by payment failure communications, they may choose not to re-subscribe.</p>
       </div>
       <div class="rc-card">
-        <h3>Retention Marketers & Customer Success</h3>
-        <p>Dunning emails are not just payment reminders — they are retention touchpoints. Retention marketers can use branded, value-driven dunning messages to reinforce why the subscriber signed up in the first place. CSMs gain visibility into at-risk accounts during the dunning window, allowing targeted outreach to high-value subscribers. When dunning is treated as a retention marketing channel, recovery rates climb.</p>
-      </div>
-      <div class="rc-card">
-        <h3>Product & Engineering Teams</h3>
-        <p>Product managers can architect graceful degradation experiences — showing in-app banners or limiting features for subscribers in dunning rather than cutting off access entirely. Engineers can implement Webhook listeners for dunning events, trigger custom workflows, and build integrations that keep the subscriber engaged throughout the recovery process. Dunning becomes a product experience, not just a billing process.</p>
-      </div>
-      <div class="rc-card">
-        <h3>Finance & Executive Leadership</h3>
-        <p>Executives see the direct P&L impact: recovered revenue drops straight to the bottom line with zero CAC. Finance teams get more predictable MRR forecasts when involuntary churn is managed rather than left to chance. The ROI story is straightforward — dunning optimization typically delivers returns within the first billing cycle, making it one of the fastest-payback retention investments available.</p>
-      </div>
-    </div>
-
-    <div class="rc-checklist">
-      <div class="rc-cl-header">✅ Quick Self-Assessment: Is Your Dunning Optimized?</div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>Have you extended your dunning window beyond the default setting (ideally 14+ days)?</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>Are you using Recurly's ML-optimized retry logic rather than static retry schedules?</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>Have you customized your dunning email templates with branding and value reminders?</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>Do you have separate dunning campaigns configured for different plan tiers or subscriber segments?</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>Are your dunning emails authenticated with SPF, DKIM, and DMARC for deliverability?</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>Do you track recovery rate, time-to-recovery, and net involuntary churn as distinct metrics?</label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label>Have you implemented in-app or on-site notifications for subscribers in dunning?</label>
+        <h3>Involuntary Churn</h3>
+        <p>The subscriber's payment fails and the subscription lapses <strong>without the subscriber's intent</strong>. Common causes include expired cards, insufficient funds, bank-initiated declines, and outdated billing information. This is entirely preventable with the right dunning strategy.</p>
+        <p>Involuntary churn typically accounts for <strong>20–40% of total churn</strong> for subscription businesses. Because these subscribers never intended to leave, the recovery potential is enormous — and it's where dunning management delivers its highest ROI.</p>
       </div>
     </div>
 
     <div class="rc-tip">
-      <strong>💡 Navigate Insight: The Retention Flywheel Effect</strong>
-      <p>Dunning management sits at the heart of Recurly's Retain stage in the Subscription Growth Flywheel. When combined with Account Updater (which proactively catches card changes before they cause failures), cancel-save flows (which address voluntary churn), and AI/ML revenue recovery (which optimizes retry timing), you create a compounding retention engine. Each layer reduces the load on the next, driving down overall churn and increasing subscriber lifetime value with every billing cycle.</p>
+      <strong>💡 Pro Tip: Dunning Is a Retention Strategy, Not Just a Billing Feature</strong>
+      <p>Think of dunning as the first line of defense in your retention toolkit. It sits alongside cancel-save flows and win-back campaigns as a core mechanism for reducing churn. The best-performing merchants treat dunning emails as branded touchpoints — not transactional system messages — and coordinate their dunning strategy with their broader customer lifecycle communications.</p>
+    </div>
+
+    <!-- WHAT MAKES RECURLY'S APPROACH DIFFERENT -->
+    <div class="rc-subhead">What Makes Recurly's Dunning Different?</div>
+
+    <div class="rc-card">
+      <h3>Beyond Static Retries: AI/ML-Powered Revenue Recovery</h3>
+      <p>Most billing platforms offer basic dunning: set a retry schedule, send some emails, and hope for the best. Recurly goes significantly further with its <strong>machine learning-powered revenue recovery engine</strong>. Trained on data from thousands of merchants and billions of transactions, Recurly's AI models analyze patterns across decline codes, card types, issuing banks, geographic regions, time of day, and day of week to determine the <em>optimal moment</em> to retry each individual failed transaction.</p>
+      <p>This means two subscribers with the exact same plan could have their retries executed at different times — because the model identified that one subscriber's issuing bank has higher approval rates on Tuesday mornings, while the other's tends to clear holds by Friday afternoons. This level of intelligence is not something you can replicate with a manual retry schedule, no matter how carefully you craft it.</p>
+      <p>In addition to intelligent retries, Recurly's dunning system supports <strong>multiple concurrent dunning campaigns</strong>, allowing you to tailor the dunning experience by plan, subscriber segment, or revenue tier. A $9.99/month consumer subscriber might receive a friendly 14-day dunning sequence, while a $499/month enterprise account might trigger an immediate internal alert and a personalized outreach cadence managed by your Customer Success team.</p>
+    </div>
+
+    <div class="rc-warning">
+      <strong>⚠️ Common Misconception: "Our Default Settings Are Good Enough"</strong>
+      <p>Many merchants never customize their dunning configuration beyond Recurly's defaults. While the defaults are a reasonable starting point, they are not optimized for your specific subscriber base, payment mix, or business model. Throughout this course, you'll learn how extending your dunning window, customizing your email cadence, and leveraging advanced features can materially increase your recovery rate — often by several percentage points, which at scale translates to significant recovered revenue.</p>
+    </div>
+
+    <!-- QUICK REFERENCE CHECKLIST -->
+    <div class="rc-checklist">
+      <div class="rc-cl-header">Quick Reference: Dunning Fundamentals Checklist</div>
+      <div class="rc-cli">
+        <div class="rc-cb"></div>
+        <label>I understand the difference between voluntary and involuntary churn</label>
+      </div>
+      <div class="rc-cli">
+        <div class="rc-cb"></div>
+        <label>I can define "dunning window" and explain why its length matters</label>
+      </div>
+      <div class="rc-cli">
+        <div class="rc-cb"></div>
+        <label>I know that Recurly supports multiple dunning campaigns for different plans</label>
+      </div>
+      <div class="rc-cli">
+        <div class="rc-cb"></div>
+        <label>I understand how AI/ML-powered retries differ from static retry schedules</label>
+      </div>
+      <div class="rc-cli">
+        <div class="rc-cb"></div>
+        <label>I recognize that dunning emails are a retention touchpoint, not just a system notification</label>
+      </div>
+      <div class="rc-cli">
+        <div class="rc-cb"></div>
+        <label>I know the five stages of the dunning lifecycle: detect, activate, retry, notify, resolve</label>
+      </div>
     </div>
 
   </div>
 
+  <!-- 5. BACK/NEXT NAVIGATION -->
   <div class="rc-sec-nav">
-    <a href="/docs/dunning-management-101-1" class="rc-btn-prev">← Previous</a>
-    <a href="/docs/dunning-management-101-3" class="rc-btn-next">Next →</a>
+    <a href="#" class="rc-btn-prev rc-btn-disabled">&larr; Previous</a>
+    <a href="/docs/dunning-management-101-2" class="rc-btn-next">Next &rarr;</a>
   </div>
 
+  <!-- 6. ADDITIONAL RESOURCES -->
   <div class="rc-link-sec">
     <h3>Additional Resources</h3>
     <a href="https://docs.google.com/document/d/126f5qxy8Ss4YfFpwZfebQgEHYBgj0f9t6NPOUbhuUBU/edit?tab=t.0" class="rc-link-btn">📄 Dunning Management Documentation</a>
-    <a href="https://docs.recurly.com/docs/dunning" class="rc-link-btn">📘 Recurly Dunning Docs</a>
-    <a href="https://recurly.com/research/churn-rate-benchmarks/" class="rc-link-btn">📊 Churn Rate Benchmarks</a>
+    <a href="https://recurly.com/research/churn-rate-guide/" class="rc-link-btn">📊 Recurly Churn Rate Guide</a>
+    <a href="https://docs.recurly.com/docs/dunning" class="rc-link-btn">🔧 Recurly Dunning Configuration Docs</a>
   </div>
 
 </div></body></html>
