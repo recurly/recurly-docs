@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The Subscriptions export helps you identify accounts that have stored subscriptions along with all the pertinent details of those subscriptions.
 
-<Image border={false} src="https://files.readme.io/c91818fee8695b63b36a0bbe4975ca04361b03419d60f466b0b87289c639b819-image.png" />
+![](https://files.readme.io/c91818fee8695b63b36a0bbe4975ca04361b03419d60f466b0b87289c639b819-image.png)
 
 # Filters
 
@@ -892,6 +892,24 @@ To help you identify and organize information effectively, the export provides a
 
       <td>
         Price segment code
+      </td>
+
+      <td>
+        string
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        user-defined custom field label
+      </td>
+
+      <td>
+        subscription custom field
+      </td>
+
+      <td>
+        Appears only if a custom field is configured and enabled to be visible in the export. The column name in the export reflects the label defined in the custom field configuration.
       </td>
 
       <td>
