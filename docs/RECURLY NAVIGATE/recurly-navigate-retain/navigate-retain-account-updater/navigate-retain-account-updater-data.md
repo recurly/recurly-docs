@@ -77,7 +77,7 @@ metadata:
       <div class="rc-sec-icon">📊</div>
       <div>
         <h2>Tracking the Impact of Account Updater (AU)</h2>
-        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize Churn Management dashboards to track renewal counts and analyze declines to ensure your proactive recovery strategy is capturing every possible update.</p>
+        <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize Churn Management dashboards for strategic trends, and use Transactions Exports for a granular audit of every card lifecycle event.</p>
       </div>
     </div>
 
@@ -85,7 +85,7 @@ metadata:
     <div class="rc-2col">
       <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Recovered Revenue (AU)</h4><p>The total currency value successfully processed on cards updated by Account Updater (AU) prior to the billing attempt. This is your primary ROI signal.</p></div>
       <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should decrease as Account Updater (AU) proactively handles card lifecycle events.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. This tracks the total "saves" for your business.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. Found in Renewal Invoices reporting.</p></div>
       <div class="rc-opt"><div class="rc-oicon">🔍</div><h4>Remaining "Expired" Declines</h4><p>Found in Renewal Declines, this identifies cards that AU could not update, helping you refine your reactive dunning or outreach strategy.</p></div>
     </div>
 
@@ -105,23 +105,19 @@ metadata:
       <div class="rc-step">
         <div class="rc-sbadge-dark">2</div>
         <div>
-          <h3>Renewal Invoices Report</h3>
-          <p>Navigate to <strong>Analytics → Churn Management → Renewal Invoices</strong>. This report allows you to monitor how many subscribers stayed active specifically because of an Account Updater (AU) event.</p>
+          <h3>Renewal Invoices: The "Other Issues" Chart</h3>
+          <p>Go to <strong>Analytics → Churn Management → Renewal Invoices</strong>. Filter for the <strong>Other Issues</strong> chart to see the specific count of invoices saved specifically by Account Updater (AU) logic.</p>
         </div>
       </div>
-      <div class="rc-step">
-        <div class="rc-sbadge-dark">3</div>
-        <div>
-          <h3>Review the "Other Issues" Chart</h3>
-          <p>Within the Renewal Invoices report, review the <strong>Other Issues</strong> chart to see the specific volume of successful renewals enabled by card lifecycle updates.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge-dark">4</div>
-        <div>
-          <h3>Renewal Declines Dashboard</h3>
-          <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" or "Invalid Account" codes to see the remaining friction points that Account Updater (AU) didn't resolve.</p>
-        </div>
+    </div>
+
+    <div class="rc-card">
+      <h3 class="rc-subhead">📁 Advanced Audit: The Transactions Export</h3>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin-bottom:16px;">For a raw data view of Account Updater (AU) events, download the <strong>Transactions Export</strong> under <strong>Analytics → Exports</strong>. This report provides the underlying proof of card updates.</p>
+      <div class="rc-steps" style="margin-bottom:0;">
+        <div class="rc-step"><div class="rc-sbadge-dark">A</div><div><h3>Filter by 'Origin'</h3><p>Filter the spreadsheet for <code>recurring</code> transactions. Most AU-driven updates are associated with automated subscription renewal attempts.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">B</div><div><h3>Search 'Message' for AU Tags</h3><p>Look at the <strong>Message</strong> or <strong>Gateway Response</strong> columns. Many gateways include phrases like "Updated card information" or "AU Success" when a charge succeeds on a refreshed card.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">C</div><div><h3>Identify Card Changes</h3><p>Compare <code>cc_first_6</code> and <code>cc_last_4</code> across multiple billing cycles for the same <code>account_code</code> to confirm when metadata changed without customer intervention.</p></div></div>
       </div>
     </div>
 
@@ -146,9 +142,8 @@ metadata:
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/docs/recovered-revenue" target="_blank" rel="noopener noreferrer">📈 Docs: Recovered Revenue Dashboard</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-invoices" target="_blank" rel="noopener noreferrer">📋 Docs: Renewal Invoices Report</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-declines" target="_blank" rel="noopener noreferrer">📉 Docs: Renewal Declines Dashboard</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/transaction-export" target="_blank" rel="noopener noreferrer">📂 Docs: Transactions Export Guide</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
-<a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
   </div>
 </div>
 </body>
