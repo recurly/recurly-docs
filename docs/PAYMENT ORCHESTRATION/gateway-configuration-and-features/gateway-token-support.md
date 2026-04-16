@@ -112,6 +112,8 @@ Braintree doesn’t support PayPal Billing Agreement IDs and won’t process the
 
 If you import Braintree tokens, the payment methods are generic and may have degraded performance. For card renewals with imported Braintree tokens, make sure you pass the CIT NTID when creating future-dated subscriptions. See [Using gateway tokens and external NTIDs with Recurly APIs](https://docs.recurly.com/recurly-subscriptions/docs/using-gateway-tokens-and-external-ntids-with-recurly-apis#/) .
 
+Recurly supports Braintree's "legacy" tokens, and do not consume or create Global IDs.
+
 > **Note:** When you send Braintree tokens through the API or import them during a migration, Recurly can query Braintree to retrieve token metadata and backfill payment method details. This feature currently requires a feature flag. Contact Recurly Support to discuss enabling it.
 
 ## Adyen
