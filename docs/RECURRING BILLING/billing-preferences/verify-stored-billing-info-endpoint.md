@@ -44,7 +44,7 @@ Recurly's "Verify Billing Info" feature offers merchants the capability to valid
 
 Recurly's Verify Billing Info feature is robust and versatile:
 
-* Initiate a billing info verification for the default stored billing info via API using the account code.
+* Initiate a billing info verification for the default stored billing info via API using the account code. This counts as a customer-initiated transaction and could trigger 3DS requests. It's best to have your customer in session in case consumer authentication is required.
 * Choose a gateway code to direct verifications through a specific gateway.
 * Opt for a $1 or zero-dollar authorization based on gateway configuration settings.
 * Obtain billing info verification responses via API, including both successful and declined verifications.
