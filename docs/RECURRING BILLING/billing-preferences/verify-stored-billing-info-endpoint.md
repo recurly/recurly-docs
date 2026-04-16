@@ -27,7 +27,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 * Only accessible via the API; no Admin functionality currently available.
 * Verification is based on your gateway configuration, either as a $1 authorization or ZDA.
-* CVV will not be included in the verification due to PCI compliance regulations.
+* CVV will not be included in the verification due to PCI compliance regulations. To run a verification including CVV, use the billing info verification endpoint that supports CVVs and your customer must be in session to provide the value.
 * Verifications are counted as transactions, potentially incurring transaction fees from both Recurly and gateways.
 
 # Definition
