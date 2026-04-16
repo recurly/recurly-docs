@@ -8,10 +8,10 @@
 - fraud-management
 - chargeback-management-for-cards
 - payment-descriptors
+- gateway-specific-information-for-invoice-numbers
 - sepa-retries
 - currency-support-by-gateway
 - test-re
 - how-to-test-your-gateway
-- gateway-specific-information-for-invoice-numbers
 - test
 - deprecated-gateway-specific-information-for-invoice-numbers
