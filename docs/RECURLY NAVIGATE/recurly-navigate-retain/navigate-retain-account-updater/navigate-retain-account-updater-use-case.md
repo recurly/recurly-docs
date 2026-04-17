@@ -59,12 +59,12 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater"><span class="rc-snum">1</span>What Is It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">2</span>Why Use It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">3</span>Things to Consider</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">4</span>How to Enable It</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">5</span>Tracking Impact</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">✓</span>Pitch to Leadership</a>
+    <a href="/docs/navigate-retain-account-updater"><span class="rc-snum">1</span>What Is It?</a>
+    <a href="/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">2</span>Why Use It?</a>
+    <a href="/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">3</span>Things to Consider</a>
+    <a href="/docs/navigate-retain-account-updater-enable"><span class="rc-snum">4</span>How to Enable It</a>
+    <a href="/docs/navigate-retain-account-updater-data"><span class="rc-snum">5</span>Tracking Impact</a>
+    <a class="is-active" href="/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">✓</span>Pitch to Leadership</a>
   </nav>
 
   <div class="rc-sec">
@@ -72,45 +72,45 @@ metadata:
       <div class="rc-sec-icon">🎤</div>
       <div>
         <h2>How to Pitch Account Updater to Leadership</h2>
-        <p>Build a data-backed case for proactive revenue recovery by highlighting ROI benchmarks, reduced involuntary churn, and the effortless subscriber experience.</p>
+        <p>Build a data-backed case for proactive revenue recovery by highlighting ROI benchmarks and the frictionless subscriber experience provided by this best-effort service.</p>
       </div>
     </div>
 
     <div class="rc-complete">
       <div style="font-size:40px;">🎯</div>
       <h2>The One-Line Pitch</h2>
-      <p>"Account Updater (AU) automatically keeps our subscribers' card details up to date — recovering revenue we'd otherwise lose to failed payments, with zero effort from customers or our team."</p>
+      <p>"Account Updater (AU) is a proactive **best-effort assistant** that automatically keeps our subscribers' card details up to date — recovering revenue we'd otherwise lose, with zero effort from customers."</p>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">📋 The Business Case — Key Points</h3>
       <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>Stop unnecessary revenue leakage</h3><p>A significant share of subscription failures are caused by cards expiring or being reissued, not by choice to cancel. Account Updater (AU) resolves this before it ever triggers a decline.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Proven industry benchmarks</h3><p>Recurly customers using Account Updater (AU) see an average of 18% of total recovered revenue attributed to this single feature, with a 77x average ROI.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">3</div><div><h3>Zero friction for subscribers</h3><p>Card details refresh silently in the background. Customers don't need to receive "update your card" emails or navigate billing portals just to stay active.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">4</div><div><h3>Favorable cost-to-value ratio</h3><p>Whether included in your contract or usage-based, the cost of Account Updater (AU) is consistently a small fraction of the monthly recurring revenue it secures.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">5</div><div><h3>Rapid implementation</h3><p>Enabling the service is a simple settings toggle. No engineering resources or development work are required for standard site configurations.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>Stop unnecessary revenue leakage</h3><p>Subscription failures are often caused by card expirations, not cancellations. AU resolves these lifecycle events before they trigger a decline.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Proven ROI benchmarks</h3><p>Recurly customers using AU see an average of 18% of total recovered revenue attributed to this feature, with a 77x average ROI.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">3</div><div><h3>Zero friction for subscribers</h3><p>Card details refresh silently in the background. Customers don't need to receive "update your card" emails to stay active.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">4</div><div><h3>Favorable cost-to-value ratio</h3><p>The cost of Account Updater is consistently a small fraction of the monthly recurring revenue it successfully secures.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">5</div><div><h3>Rapid implementation</h3><p>Enabling the service is a simple settings toggle. No engineering resources or development work are required for standard setup.</p></div></div>
       </div>
     </div>
 
     <h3 class="rc-subhead">❓ Anticipated Questions & Answers</h3>
     <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"What's the cost?"</h3><p>Depending on our contract, Account Updater (AU) is either included in our subscription or usage-based. The average return is 77x. Speak with your Account Manager or <a href="mailto:support@recurly.com" style="color:var(--orange); font-weight:700; text-decoration:none;">Contact Recurly Support</a> to confirm our specific model.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Do we need engineering resources?"</h3><p>No. Account Updater (AU) is enabled through a self-serve toggle in the admin. There is no code change or development work required for setup.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Are there any risks?"</h3><p>The primary check is ensuring we don't have a gateway-level updater running for the exact same card pool to avoid redundancy. Recurly is PCI-compliant and all updates are handled securely.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"How quickly will we see results?"</h3><p>Impact builds over 60–90 days as card cycles renew. We can monitor this directly in the Churn Management analytics dashboard.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"What's the cost?"</h3><p>Depending on our contract, AU is either included in our subscription or usage-based. The average return is 77x. Speak with your Account Manager or <a href="mailto:support@recurly.com" style="color:var(--orange); font-weight:700; text-decoration:none;">Contact Recurly Support</a> to confirm our specific model.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Do we need engineering resources?"</h3><p>No. Account Updater is enabled through a self-serve toggle in the admin. There is no code change or development work required for setup.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Are there any risks?"</h3><p>AU is a secure, PCI-compliant **best-effort service**. It is subject to card network participation rules, so it should be used as a primary layer alongside our existing dunning strategy.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"How quickly will we see results?"</h3><p>Impact builds over 60–90 days as card cycles renew. We can monitor this directly in the Recurly Churn Management analytics dashboard.</p></div></div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">🎯</span>
       <div>
         <h4>Your Next Step</h4>
-        <p>Ready to secure your revenue? Head to <strong>Configuration → Payment Settings</strong> in your Recurly admin and click Enable. For strategic advice on your recovery mix, book a session with our CSMs below.</p>
+        <p>Ready to secure your revenue? Head to <strong>Configuration → Payment Settings</strong> in your Recurly admin and click Enable. Remember: Account Updater is a **best-effort proactive measure**; for strategic advice on your recovery mix, book a session with our CSMs below.</p>
       </div>
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data">← Tracking Impact</a>
+      <a class="rc-btn-prev" href="/docs/navigate-retain-account-updater-data">← Tracking Impact</a>
       <span class="rc-btn-disabled">🎉 You're Ready to Go!</span>
     </div>
 
@@ -118,7 +118,7 @@ metadata:
     <a class="rc-link-btn" href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">🧭 Return to Learning Start</a>
+    <a class="rc-link-btn rc-link-sec" href="/docs/navigate-retain-account-updater">🧭 Return to Start</a>
   </div>
 </div>
 </body>
