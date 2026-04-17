@@ -53,7 +53,7 @@ Note: First login to Recurly to get Auth Token.
 
 **Using Claude**
 
-`claude mcp add --transport http Recurly [https://mcp.recurly.com/mcp](https://mcp.recurly.com/mcp)`
+`claude mcp add --transport http Recurly [https://mcp.recurly.com/mcp]`
 
 **Using Cursor**
 
@@ -63,7 +63,10 @@ To add to Cursor IDE:
 2. Click New MCP Server
 3. Add the following to the configuration file
 
-`{
+ 
+
+```
+{
 	“mcpServers”: {
 		“Recurly Compass MCP”:  {
 			“url”: “https://mcp.recurly.com/mcp”,
@@ -72,7 +75,10 @@ To add to Cursor IDE:
 			]
 		}
 	}
-}`
+} 
+```
+
+<br />
 
 ### Integrating Coding Agent
 
@@ -88,7 +94,8 @@ To add to Cursor IDE:
 2. Click New MCP Server
 3. Add the following to the configuration file
 
-`{
+```
+{
 	“mcpServers”: {
 		“Recurly Compass MCP”:  {
 			“url”: “https://mcp.recurly.com/mcp”,
@@ -97,11 +104,15 @@ To add to Cursor IDE:
 			]
 		}
 	}
-}`
+}
+```
+
+<br />
 
 Note: you can add both agents
 
-`{
+```
+{
 	“mcpServers”: {
 		“Recurly Compass MCP”:  {
 			“url”: “https://mcp.recurly.com/mcp”,
@@ -111,4 +122,5 @@ Note: you can add both agents
 			]
 		}
 	}
-}`
+}
+```
