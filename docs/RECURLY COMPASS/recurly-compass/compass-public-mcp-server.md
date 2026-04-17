@@ -33,7 +33,7 @@ Recurly Compass MCP Agent Server utilizes streamable HTTP connections to provide
 
 Recurly Compass Agents functions as dedicated MCP endpoints exposing tools and skills specific to a particular use case (e.g., documentation lookup or api code examples)
 
-URL: [https://mcp.recurly.com/mcp](https://mcp.recurly.com/mcp)
+URL: `https://mcp.recurly.com/mcp`
 
 Note: First login to Recurly to get Auth Token.
 
@@ -41,11 +41,14 @@ Note: First login to Recurly to get Auth Token.
 
 ## Recurly Agents
 
-|Agent|Description|Access|
+<br />
 
-| --- | --- | --- |
-| Knowledge Agent | Provides detailed information by searching the comprehensive documentation knowledge base. | Public |
-| Coding Agent | Provides code examples, parameters, code libraries and explanations to get code running. | Public |
+| Agent           | Description                                                                               | Access |
+| :-------------- | :---------------------------------------------------------------------------------------- | :----- |
+| Knowledge Agent | Provides detailed information by searching the comprehensive documentation knowledge base | Public |
+| Coding Agent    | Provides code examples, parameters, code libraries and explanations to get code running.  | Public |
+
+<br />
 
 ## Examples
 
@@ -60,10 +63,10 @@ Note: First login to Recurly to get Auth Token.
 To add to Cursor IDE:
 
 1. Navigate to Settings
-2. Click New MCP Server
-3. Add the following to the configuration file
 
- 
+2. Click New MCP Server
+
+3. Add the following to the configuration file
 
 ```
 {
