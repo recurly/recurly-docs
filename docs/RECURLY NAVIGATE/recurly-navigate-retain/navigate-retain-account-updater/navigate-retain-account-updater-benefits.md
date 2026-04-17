@@ -74,7 +74,7 @@ metadata:
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📈</div>
-      <div><h2>Why Should You Use Account Updater?</h2><p>Maximize your recovery ROI by stopping involuntary churn at the source. Account Updater (AU) secures future Lifetime Value (LTV) by bypassing the friction of dunning and avoiding unnecessary gateway transaction fees.</p></div>
+      <div><h2>Why Should You Use Account Updater?</h2><p>Maximize your recovery ROI by significantly reducing involuntary churn at the source. Account Updater (AU) secures future Lifetime Value (LTV) by bypassing the friction of dunning and avoiding unnecessary gateway transaction fees.</p></div>
     </div>
 
     <div class="rc-stat-grid">
@@ -85,16 +85,16 @@ metadata:
 
     <div class="rc-card">
       <h3 class="rc-subhead">🎯 The Core Problem It Solves</h3>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Involuntary churn — customers who leave not because they wanted to, but because a payment failed — is one of the largest and most preventable sources of subscriber loss for recurring businesses. Beyond simple expirations, Account Updater (AU) also flags <strong>Account Closed</strong> statuses, allowing you to stop charging invalid cards immediately.</p>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0;">When a card is reissued, the subscriber rarely thinks to update it until their service is cut off. Account Updater (AU) catches those changes before the charge ever fails, preserving both the revenue and the customer relationship.</p>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Involuntary churn — customers who leave not because they wanted to, but because a payment failed — is one of the largest and most preventable sources of subscriber loss. While Account Updater (AU) cannot fix every card event, it significantly reduces failures caused by expirations and reissued cards.</p>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0;">When a card is reissued, the subscriber rarely thinks to update it until their service is cut off. Account Updater (AU) catches participating changes before the charge fails, preserving both revenue and the customer relationship.</p>
     </div>
 
     <h3 class="rc-subhead">💼 Key Business Benefits</h3>
     <div class="rc-2col">
-      <div class="rc-opt"><div class="rc-oicon">🛡️</div><h4>Prevent Involuntary Churn Upstream</h4><p>Unlike dunning, which reacts after a failure, Account Updater (AU) acts before the charge occurs. It is your first line of defense in protecting the customer lifecycle.</p><span class="rc-tag">Proactive Recovery</span></div>
-      <div class="rc-opt"><div class="rc-oicon">💸</div><h4>Significant Cost Avoidance</h4><p>By identifying "Closed" or "Invalid" accounts before a transaction attempt, Account Updater (AU) helps you avoid gateway transaction fees for charges that were guaranteed to fail.</p><span class="rc-tag">Lower OpEx</span></div>
-      <div class="rc-opt"><div class="rc-oicon">🤝</div><h4>Seamless Subscriber Experience</h4><p>No intrusive "Update your payment" emails or service interruptions. The transition to a new card happens silently in the vault, maintaining total friction-less billing.</p><span class="rc-tag">CX Improvement</span></div>
-      <div class="rc-opt"><div class="rc-oicon">🔁</div><h4>Accelerate Active Dunning</h4><p>If a card is updated while an invoice is in dunning, Recurly uses the new info for the next automatic retry. This drastically increases the success rate of dunning cycles.</p><span class="rc-tag">Integrated Logic</span></div>
+      <div class="rc-opt"><div class="rc-oicon">🛡️</div><h4>Prevent Involuntary Churn Upstream</h4><p>Unlike dunning, which reacts after a failure, Account Updater (AU) acts before the charge occurs. It is your first line of defense for eligible card types.</p><span class="rc-tag">Proactive Recovery</span></div>
+      <div class="rc-opt"><div class="rc-oicon">💸</div><h4>Significant Cost Avoidance</h4><p>By identifying "Closed" or "Invalid" accounts before a transaction attempt, Account Updater (AU) helps you avoid gateway transaction fees for charges guaranteed to fail.</p><span class="rc-tag">Lower OpEx</span></div>
+      <div class="rc-opt"><div class="rc-oicon">🤝</div><h4>Seamless Subscriber Experience</h4><p>No intrusive "Update your payment" emails or service interruptions for participating cardholders. The transition happens silently in the vault.</p><span class="rc-tag">CX Improvement</span></div>
+      <div class="rc-opt"><div class="rc-oicon">🔁</div><h4>Accelerate Active Dunning</h4><p>If a card is updated while an invoice is in dunning, Recurly uses the new info for the next retry. This drastically increases dunning success rates.</p><span class="rc-tag">Integrated Logic</span></div>
     </div>
 
     <div class="rc-card">
@@ -102,7 +102,7 @@ metadata:
       <p style="font-size:.88rem;color:var(--gray);margin:0 0 16px;">How Account Updater (AU) is priced depends on your Recurly contract and the specific update method (Batch vs. Real-Time Account Updater (RTAU)).</p>
       <div class="pricing-card free"><h4>✅ Included in Your Contract</h4><p>Many plans bundle standard Batch Account Updater (AU) at no additional per-update cost. In these cases, it is a high-value feature that costs nothing extra to activate.</p></div>
       <div class="pricing-card paid"><h4>💳 Usage-Based Updates</h4><p>Some configurations apply fees for successful card updates. Because Account Updater (AU) recovers an average of 18% of revenue, the cost per update is typically a fraction of the recovered Lifetime Value (LTV).</p></div>
-      <p style="font-size:.88rem;color:var(--gray);margin-top:16px;text-align:center;"><strong>Not sure which pricing model applies to you?</strong> <a href="mailto:support@recurly.com" style="color:var(--orange);font-weight:700;text-decoration:none;">Contact Recurly Support</a> to discuss your specific contract and the differences between Standard and Real-Time Account Updater (RTAU).</p>
+      <p style="font-size:.88rem;color:var(--gray);margin-top:16px;text-align:center;"><strong>Not sure which pricing model applies to you?</strong> <a href="mailto:support@recurly.com" style="color:var(--orange);font-weight:700;text-decoration:none;">Contact Recurly Support</a> to discuss your specific contract and update methods.</p>
     </div>
 
     <div class="rc-tip">
@@ -118,7 +118,7 @@ metadata:
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
-<a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
   </div>
 </div>
 </body>
