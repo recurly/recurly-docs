@@ -83,7 +83,7 @@ metadata:
       <div class="rc-sec-icon">🔍</div>
       <div>
         <h2>Is Account Updater Right for You?</h2>
-        <p>Confirm technical readiness by reviewing tokenization compatibility, optimizing card network coverage (including Discover and American Express (AMEX) nuances), and understanding bank-level participation rules.</p>
+        <p>Confirm technical readiness by reviewing tokenization compatibility and understanding bank-level participation rules. Remember: Account Updater (AU) is a **proactive best-effort measure**, not a guarantee for every card event.</p>
       </div>
     </div>
 
@@ -122,7 +122,7 @@ metadata:
 
     <h3 class="rc-subhead">⚡ Quick Diagnostic</h3>
     <div class="rc-2col">
-      <div class="rc-opt"><div class="rc-oicon">✅</div><h4>Enable AU in Recurly if…</h4><p>You have credit/debit cards stored in the Recurly vault and want to ensure they remain valid regardless of gateway-level update services.</p><span class="rc-tag">Recommended</span></div>
+      <div class="rc-opt"><div class="rc-oicon">✅</div><h4>Enable AU in Recurly if…</h4><p>You have credit/debit cards stored in the Recurly vault and want to ensure they remain valid via this **best-effort assistant** regardless of gateway-level services.</p><span class="rc-tag">Recommended</span></div>
       <div class="rc-opt"><div class="rc-oicon">🔀</div><h4>Check Gateway Config if…</h4><p>You are using a third-party hosted checkout that does not pass card metadata or tokens back to Recurly for storage.</p><span class="rc-tag">Gateway Focus</span></div>
     </div>
 
