@@ -9,17 +9,17 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
-
 # Overview
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+Currently, this is limited to early access users.
+
+This feature will be available to all customers on any Recurly subscription plan.
 
 ### Prerequisites and limitations
 
-Alpha users must have permissions within a site that has the MCP  feature flag enabled.
+Alpha users must have permissions within a site that has the MCP feature flag enabled.
 
 # Definition
 
