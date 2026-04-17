@@ -37,6 +37,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 * **Braintree** support is limited to cards and PayPal.
 
+* **Stripe** support is limited to cards, apple/google pay, and network tokens.
+
 * If utilizing **Stripe**, your merchant prefix is configured directly within Stripe and cannot be modified via descriptors within Recurly. Only the suffix (Plan Name or Invoice Description) is sent to Stripe.
 
 * While Recurly can send dynamic descriptors to a given gateway, Gateways may not pass descriptors on to the network as well as Issuers have final say on descriptor support. Reach out to your gateway to inquire about their descriptor support for your merchant account specifically.
