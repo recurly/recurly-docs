@@ -86,7 +86,7 @@ metadata:
       <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Recovered Revenue (AU)</h4><p>The total currency value successfully processed on cards updated by Account Updater (AU) prior to the billing attempt. This is your primary ROI signal.</p></div>
       <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should decrease as Account Updater (AU) proactively handles card lifecycle events.</p></div>
       <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. Found in Renewal Invoices reporting.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">🔍</div><h4>Remaining "Expired" Declines</h4><p>Found in Renewal Declines, this identifies cards that AU could not update, helping you refine your reactive dunning or outreach strategy.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">🔍</div><h4>Remaining "Expired" Declines</h4><p>Found in Renewal Declines, this identifies cards that AU could not update (subject to network participation), helping you refine your dunning strategy.</p></div>
     </div>
 
     <h3 class="rc-subhead">📍 Navigating Your Dashboards</h3>
@@ -113,7 +113,7 @@ metadata:
         <div class="rc-sbadge-dark">3</div>
         <div>
           <h3>Renewal Declines Dashboard</h3>
-          <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" codes to see the remaining friction points that AU didn't resolve.</p>
+          <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" codes to see remaining friction points. Note: Account Updater is a **best-effort assistant**; remaining declines often reflect non-participating banks or cardholder opt-outs.</p>
         </div>
       </div>
     </div>
