@@ -6,6 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<HTMLBlock>{\`
 <style>
 
 .rc-guide{max-width:900px;margin:20px auto;font-family:"Inter",-apple-system,sans-serif;color:#0D0D0B;line-height:1.6;background-color:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
@@ -221,16 +222,6 @@ metadata:
     <div class="rc-tip">
       <p><strong>🔗 Worried about giving away free access?</strong> You can decouple dunning status from login and entitlement status using Recurly Webhooks. This lets you maintain a long recovery window while restricting product access after a short grace period. See the Resources tab for the Dunning Webhooks guide.</p>
     </div>
-
-  </div>
-
-  <div class="rc-sec-nav">
-    <span class="rc-page-label">&bull; Start of path</span>
-    <span class="rc-page-label">Page 1 of 16</span>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/dunning-101-why-it-matters" class="rc-btn-next">Why It Matters &rarr;</a>
-  </div>
-
-</div>
 `}</HTMLBlock>
 
 <br />
