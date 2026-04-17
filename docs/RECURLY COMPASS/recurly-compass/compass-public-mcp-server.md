@@ -21,17 +21,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 Alpha users must have permissions within a site that has the MCP  feature flag enabled.
 
-Recurly Compass MCP Server
+# Definition
 
-
+**Recurly Compass MCP Server**
 
 Using a public Model Context Protocol (MCP) server enables AI agents, such as Claude Desktop or Cursor, to interact with external tools and APIs, enhancing functionality without complex setup.
 
 Recurly Compass MCP Agent Server utilizes streamable HTTP connections to provide interactions with Recurly Agents and AI agents such as Claude or Cursor or other compatible orchestrations.
 
-Architecture and Design
-
-
+## Architecture and Design
 
 Recurly Compass Agents functions as dedicated MCP endpoints exposing tools and skills specific to a particular use case (e.g., documentation lookup or api code examples)
 
@@ -52,7 +50,6 @@ Note: First login to Recurly to get Auth Token.
 ## Examples
 
 ### Integrating Knowledge Agent
-
 
 **Using Claude**
 
@@ -102,7 +99,7 @@ To add to Cursor IDE:
 	}
 }`
 
-Note: you can add both agents 
+Note: you can add both agents
 
 `{
 	“mcpServers”: {
