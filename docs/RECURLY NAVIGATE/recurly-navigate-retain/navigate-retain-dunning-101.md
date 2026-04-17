@@ -1,5 +1,5 @@
 ---
-title: Dunningn 101
+title: Dunning 101
 deprecated: false
 hidden: true
 metadata:
