@@ -25,7 +25,6 @@ metadata:
   .rc-nav a:hover{border-color:var(--yellow);box-shadow:0 2px 8px rgba(255,215,6,.2);color:var(--offblack)}
   .rc-nav a.is-active{background:var(--yellow);border-color:var(--yellow);color:var(--offblack);box-shadow:0 2px 10px rgba(255,215,6,.25)}
   .rc-snum{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:12px;font-weight:700;flex-shrink:0}
-  .rc-nav a.is-active .rc-snum{background:var(--offblack);color:var(--yellow)}
   .rc-sec{margin-bottom:56px}.rc-sec-header{display:flex;align-items:flex-start;gap:20px;margin-bottom:32px}
   .rc-sec-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;background:var(--yellow)}
   .rc-sec-header h2{font-size:1.7rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}.rc-sec-header>div>p{color:var(--gray);font-size:.95rem;line-height:1.5;margin:0}
@@ -41,7 +40,6 @@ metadata:
   .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}
   .rc-tipicon{font-size:24px;flex-shrink:0}.rc-tip h4{font-size:.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:.5px;margin:0 0 4px}.rc-tip p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
   .rc-warning{background:#FFF8E6;border:1px solid var(--orange);border-radius:14px;padding:16px 20px;display:flex;gap:14px;align-items:flex-start;margin-bottom:24px}
-  .rc-wicon{font-size:20px;flex-shrink:0}.rc-warning p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
   .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
   .rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none}
   .rc-btn-prev,.rc-btn-disabled{border:1px solid var(--lightgray)}
@@ -79,41 +77,41 @@ metadata:
       <div class="rc-sec-icon">💳</div>
       <div>
         <h2>What is Account Updater?</h2>
-        <p>Proactively secure your revenue by resolving card lifecycle events before they trigger a decline. Reduce involuntary churn and eliminate gateway fees on invalid accounts.</p>
+        <p>A proactive **best-effort assistant** designed to resolve card lifecycle events before they trigger a decline. Reduce involuntary churn and eliminate gateway fees on invalid accounts.</p>
       </div>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">🧩 The Simple Version</h3>
-      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">When a customer's credit or debit card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis — like a subscription renewal — that charge will simply fail. The customer hasn't cancelled. They still want your product. Their card just changed.</p>
-      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0;"><strong>Account Updater (AU) is the solution.</strong> It's a service run by the major card networks — Visa, Mastercard, American Express (AMEX), and Discover — that automatically pushes updated card details to Recurly whenever a card on file changes. Recurly then stores that fresh information so that your next billing attempt uses the correct card data, without the customer needing to do anything.</p>
+      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">When a customer's credit or debit card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis — like a subscription renewal — that charge will simply fail. The customer hasn't cancelled; their card just changed.</p>
+      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0;"><strong>Account Updater (AU) is the solution.</strong> It's a service run by the major card networks — Visa, Mastercard, American Express (AMEX), and Discover — that automatically pushes updated card details to Recurly. Recurly stores that fresh information so that your next billing attempt uses the correct data, without the customer needing to do anything.</p>
     </div>
 
     <div class="rc-3col">
       <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Standard Account Updater</h4><p>Supported for Visa, Mastercard, American Express (AMEX), and Discover. Updates are fetched via secure batch files before renewal attempts.</p></div>
       <div class="rc-wi"><div class="rc-wi-icon">⚡</div><h4>Real-Time Account Updater (RTAU)</h4><p>Supported for Visa, Mastercard, and American Express (AMEX) globally, with Discover support available via specific gateways.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🏦</div><h4>Cardrefresher</h4><p>American Express (AMEX)'s specialized AU service. While many updates now happen via RTAU, Cardrefresher provides a robust fallback for legacy or direct merchant integrations.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🏦</div><h4>Cardrefresher</h4><p>American Express (AMEX)'s specialized AU service. While many updates now happen via RTAU, Cardrefresher provides a robust fallback for legacy integrations.</p></div>
     </div>
 
     <div class="rc-card">
       <h3 class="rc-subhead">🗺️ How It Works — Step by Step</h3>
       <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>A cardholder's bank issues a card change</h3><p>This could be a new card number, updated expiration date, or a card that's been closed or replaced. Common events: annual renewals, fraud replacements, or bank-issued card migrations.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>The card network is notified</h3><p>Visa, Mastercard, American Express (AMEX), or Discover updates their internal records with the new card details associated with that account.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Recurly is alerted</h3><p>For standard AU, Recurly checks for updates on a scheduled basis. For Real-Time AU, Recurly requests the update at the exact moment a transaction is attempted.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Recurly updates the stored payment method</h3><p>For all participating banks and eligible card types, the new card details replace the old ones in Recurly's payment vault — silently, automatically, and without any action required from your customer.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>A cardholder's bank issues a card change</h3><p>This could be a new card number or updated expiration date. Common events: annual renewals, fraud replacements, or bank migrations.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>The card network is notified</h3><p>Visa, Mastercard, American Express (AMEX), or Discover updates their internal records with the new card details.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Recurly is alerted</h3><p>For standard AU, Recurly checks for updates on a scheduled basis. For RTAU, Recurly requests the update at the exact moment a transaction is attempted.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Recurly updates the stored payment method</h3><p>For all participating banks and eligible card types, new card details replace the old ones in the vault—silently, automatically, and without action required from your customer.</p></div></div>
         <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>The next renewal charges successfully</h3><p>Because the billing info is already up to date, the subscription renews without interruption. No failed payment. No dunning. No involuntary churn.</p></div></div>
       </div>
     </div>
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
-      <p><strong>Note on Digital Wallets:</strong> Account Updater works with cards stored in Recurly's vault. Apple Pay and Google Pay use token-based systems that handle card lifecycle updates natively within the wallet provider's ecosystem rather than via standard AU files.</p>
+      <p><strong>Note on Digital Wallets:</strong> Account Updater works with cards stored in Recurly's vault. Apple Pay and Google Pay handle card lifecycle updates natively within their own ecosystem.</p>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>The Bottom Line</h4><p>Account Updater quietly fixes outdated card details behind the scenes — reducing failed payments and churn before they ever happen. It's one of the few revenue recovery tools that is entirely proactive rather than reactive. No dunning, no customer action, no friction.</p></div>
+      <div><h4>The Bottom Line</h4><p>Account Updater is a powerful **best-effort assistant** that fixes outdated card details behind the scenes. It's one of the few revenue recovery tools that is entirely proactive rather than reactive.</p></div>
     </div>
 
     <div class="rc-sec-nav">
