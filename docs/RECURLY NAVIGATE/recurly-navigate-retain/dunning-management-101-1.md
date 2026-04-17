@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<HTMLBlock>{\`
+<HTMLBlock>
 <style>
 .rc-guide{max-width:900px;margin:20px auto;font-family:"Inter",-apple-system,sans-serif;color:#0D0D0B;line-height:1.6;background-color:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
 .rc-hero{background-color:#0D0D0B;color:#FFFFFF;padding:56px 40px 48px;text-align:center}
@@ -262,7 +262,7 @@ metadata:
     <a href="[https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-configuration](https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-configuration)" class="rc-btn-next">Setup &amp; Configuration &rarr;</a>
   </div>
 </div>
-\`}</HTMLBlock>
+</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
