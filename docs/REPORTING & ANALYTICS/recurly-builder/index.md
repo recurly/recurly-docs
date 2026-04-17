@@ -33,7 +33,6 @@ The Explore feature is a dynamic, versatile, and powerful tool that provides a c
 * **Dimensions and measures**: These are the building blocks used to assemble custom reports. Dimensions (in black text) are qualitative variables such as names, geographical data, and dates. They represent the categories you want to analyze. Measures (in orange text) are quantitative variables like counts, totals, or averages. These provide the numerical metrics you're interested in for each category identified by dimensions. With a range of dimensions and measures, Recurly Explore allows you to create custom reports tailored to your specific needs.
 * **Data views**: Recurly Explore offers a variety of predefined data views to help jumpstart your exploration of data.
 
-> **Note:** A complete guide to using the Explore feature can be found [here](https://cloud.google.com/looker/docs/creating-and-editing-explores).
 
 # Key details
 
@@ -73,7 +72,7 @@ You can create filters based on attributes specific to individual users or user 
 
 ### Creating a custom field
 
-Creating custom fields allows for more personalized reporting. Use custom fields to create formulaic calculations based on existing fields. Click the custom field option in the left navigation bar, input the fields you want to use in the formula, and generate targeted reports. To learn more about custom fields, refer to the [Google Looker Explore documentation](https://cloud.google.com/looker/docs/custom-fields).
+Creating custom fields allows for more personalized reporting. Use custom fields to create formulaic calculations based on existing fields. Click the custom field option in the left navigation bar, input the fields you want to use in the formula, and generate targeted reports.
 
 ### Creating a report
 

@@ -148,7 +148,7 @@ body, .theme-doc, .main-content { background-color: #F5F5F0 !important; }
 
     <div class="rc-tip">
       <strong>💡 Pro Tip: Use Webhooks for Real-Time Tracking</strong>
-      <p style="margin:8px 0 0;">Pipe <code>subscription_resumed</code> events into your analytics (Amplitude, Looker) to monitor rates in real time rather than waiting for end-of-month exports.</p>
+      <p style="margin:8px 0 0;">Pipe <code>subscription_resumed</code> events into your analytics (Amplitude) to monitor rates in real time rather than waiting for end-of-month exports.</p>
     </div>
 
     <div class="rc-subhead">Optimization Feedback Loop</div>

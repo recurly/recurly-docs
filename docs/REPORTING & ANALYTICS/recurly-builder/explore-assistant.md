@@ -52,7 +52,7 @@ Explore Assistant is part of the greater Explore feature and is available to use
 
 ### How is my data secured with AI?
 
-Merchant data is anonymized in accordance with Recurly’s Privacy Policy. AI models run on Google Vertex AI, Looker, and Elasticsearch, ensuring data security and compliance.
+Merchant data is anonymized in accordance with Recurly’s Privacy Policy. AI models run on Google Vertex AI and Elasticsearch, ensuring data security and compliance.
 
 ### Is my data shared with competitors?
 

@@ -15,7 +15,7 @@ This document includes the following two sections:
 
 # Dashboard UI Features At-A-Glance
 
-The rows in the following table briefly identify the new UI features available in the Modern Looker-enhanced versions of the Recurly Analytics dashboards. This table gives you a quick "look at-a-glance" at the features. These features greatly improve on those offered in the Classic versions and allow you to filter, organize, and access reliable details, pertinent to your business’s performance, faster and more efficiently.  An individual section that covers each of these UI features,  follows this table. Each topic provides details and screenshots that describe how to use each feature.
+The rows in the following table briefly identify the new UI features available in the modern enhanced versions of the Recurly Analytics dashboards. This table gives you a quick "look at-a-glance" at the features. These features greatly improve on those offered in the Classic versions and allow you to filter, organize, and access reliable details, pertinent to your business’s performance, faster and more efficiently.  An individual section that covers each of these UI features,  follows this table. Each topic provides details and screenshots that describe how to use each feature.
 
 ## Modern Analytics Dashboard UI/UX Changes
 
@@ -280,11 +280,11 @@ The rows in the following table briefly identify the new UI features available i
 
 # Dashboard UI Feature in Detail
 
-The following topics describe in detail, the new and enhanced UI features available in the Modern Looker-enhanced versions of the Recurly Analytics dashboards. Each topic tell you exactly how to use the new features and  includes instructions and screenshots to help you located new areas on the dashboards.
+The following topics describe in detail, the new and enhanced UI features available in the modern enhanced versions of the Recurly Analytics dashboards. Each topic tell you exactly how to use the new features and  includes instructions and screenshots to help you located new areas on the dashboards.
 
 ## Actions
 
-The Recurly Looker-enhanced dashboards provide you with a set of actions at the top right corner of the dashboards:
+The Recurly enhanced dashboards provide you with a set of actions at the top right corner of the dashboards:
 
 <Image title="analytics hide filters  option.png" alt={540} src="https://files.readme.io/5357e17-analytics_hide_filters_option.png">
   Actions Options Area
@@ -324,7 +324,7 @@ This action updates the widget with the most current information available from 
 
 ## Date Range
 
-The Recurly Looker-enhanced dashboards provide a more sophisticated option for selecting your date range settings. You still have the option to set your date range within an 18-month timeframe. However, there are two new dropdown menus that include more granular options that will make it easier for you to refine the date range that you select.
+The Recurly enhanced dashboards provide a more sophisticated option for selecting your date range settings. You still have the option to set your date range within an 18-month timeframe. However, there are two new dropdown menus that include more granular options that will make it easier for you to refine the date range that you select.
 
 From the Filters area, select Date Range -> “Is in the last 18 months” and choose an option from the "Is in the last” dropdown. Then choose an option from the “months” dropdown. The default is: **In the last 18 months**. Modify the default to meet your needs and set another date range.  
 
@@ -334,7 +334,7 @@ From the Filters area, select Date Range -> “Is in the last 18 months” and c
 
 ## Download Data
 
-You can download data from the Modern (Looker-enhanced) versions of the Analytics dashboards in multiple formats:
+You can download data from the modern versions of the Analytics dashboards in multiple formats:
 
 <Image title="analytics dashboard download formats.png" alt={1660} src="https://files.readme.io/43fbcd1-analytics_dashboard_download_formats.png">
   Modern Dashboard Download Formats
@@ -346,7 +346,7 @@ Note: Download data from the Classic (previous) versions of the Analytics dashbo
 
 ## Dunning Campaigns
 
-The modern Looker-enhanced version of the Dunning Effectiveness dashboard allows you to view a summary of invoice, revenue, or subscriptions data for either all dunning campaigns/plans by selecting from the widget on the left or for any individual dunning campaigns or a version of a campaign by selecting from the widget on the right as shown in the following screenshot. 
+The modern enhanced version of the Dunning Effectiveness dashboard allows you to view a summary of invoice, revenue, or subscriptions data for either all dunning campaigns/plans by selecting from the widget on the left or for any individual dunning campaigns or a version of a campaign by selecting from the widget on the right as shown in the following screenshot. 
 
 <Image title="analytics comparison of all and individual campaigns.png" alt={1724} src="https://files.readme.io/ef32113-analytics_comparison_of_all_and_individual_campaigns.png">
   Dunning Campaign Views
@@ -368,7 +368,7 @@ The **Horizontal Ellipse** is shown in columns on the Monthly Recurring Revenue 
 
 ## Filters
 
-In the modern version of the Looker-enabled dashboards, filters have moved from embedded within individual widgets to a unique Filter area in the top left corner of the dashboards. 
+In the modern version of the dashboards, filters have moved from embedded within individual widgets to a unique Filter area in the top left corner of the dashboards. 
 
 ### Use Filters
 
@@ -410,7 +410,7 @@ Use the Reset Filter option to return your filter choices to their default setti
 
 ## Hover Text
 
-The Recurly Looker-enhanced Hover text shows details for individual segments or points on charts that you hover over with your mouse. This includes bar, line, and pie charts. For example, if you hover over a specific segment on a bar chart as shown in the following screenshot, the hover text will display details for that selected plan in that specific date range. 
+The Recurly Hover text shows details for individual segments or points on charts that you hover over with your mouse. This includes bar, line, and pie charts. For example, if you hover over a specific segment on a bar chart as shown in the following screenshot, the hover text will display details for that selected plan in that specific date range. 
 
 <Image title="analytics comparison sorted bar chart.png" alt={2538} src="https://files.readme.io/1a2895b-analytics_comparison_sorted_bar_chart.png">
   Segment of a Bar Chart with Hover Text
@@ -472,7 +472,7 @@ You can then check the box next to the desired plans and Recurly will calculate 
 
 ## Sort/Hide Data
 
-The Recurly Looker-enhanced version of the Analytics dashboards provides two different ways for you to sort your data from within the dashboards. 
+The Recurly enhanced version of the Analytics dashboards provides two different ways for you to sort your data from within the dashboards. 
 
 ### Sort Data in Charts
 
