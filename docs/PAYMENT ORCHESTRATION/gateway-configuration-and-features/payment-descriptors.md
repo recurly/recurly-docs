@@ -84,7 +84,7 @@ This section outlines how dynamic descriptors are created for your site(s) using
 
 ### Best practices for descriptors
 
-* Ensure you have your known Business Name either in Site Settings (Company Name) or a DBA filled in. We will use this information to create descriptors for your supported gateways. Ensure this company name and/or DBA is kept up to date as your business evolves.
+* Ensure you have your known Business Name either in Site Settings (Company Name) **and** a DBA filled in. We will use this information to create descriptors for your supported gateways. Ensure this company name and/or DBA is kept up to date as your business evolves. DBA will be used over your Company name if you wish to further customize descriptor prefixes.
 * When naming plans in Recurly, ensure the plan names are something a customer will recognize when viewing their bank statement, especially within the first 22 characters. In other words, ensure the first few words of your Plan Name is recognizable to a consumer.
 * When creating one-time Invoices, ensure you add an Invoice Description that a customer will recognize, whether for the purchase or service you are providing to them. Order numbers are great for transparency. In other words, ensure the first few words of your Invoice Description is recognizable to a consumer within a Bank's typical 22 character limitation.
 * If you do not supply an Invoice Description on a one-time charge, we will supply the word 'Charge' to fill out the necessary information for a descriptor where supported.
