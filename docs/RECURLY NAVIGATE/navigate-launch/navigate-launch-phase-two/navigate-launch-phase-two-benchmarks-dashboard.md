@@ -122,7 +122,7 @@ metadata:
       <div class="rc-tool-card">
         <div class="rc-tool-icon">🔍</div>
         <h4>Analytics Dashboards</h4>
-        <p>Recurly's Looker-powered self-service tool. Access advanced, interactive reports and custom filtering to drill into specific subscriber segments.</p>
+        <p>Recurly's self-service tool. Access advanced, interactive reports and custom filtering to drill into specific subscriber segments.</p>
         <span class="rc-tool-tag">Advanced</span>
       </div>
       <div class="rc-tool-card">
