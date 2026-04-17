@@ -77,7 +77,7 @@ metadata:
       <div class="rc-sec-icon">⚙️</div>
       <div>
         <h2>How to Enable Account Updater</h2>
-        <p>Follow the direct implementation path to activate proactive card management. This guide covers navigation, inputting required network codes for MasterCard and American Express (AMEX), and final configuration through the secure in-app disclosure.</p>
+        <p>Follow the direct implementation path to activate proactive card management. This guide covers navigation, required network codes, and final configuration through the secure in-app disclosure.</p>
       </div>
     </div>
 
@@ -94,7 +94,7 @@ metadata:
       <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Navigate to Payment Settings</h3><p>Log in to your Recurly admin and go to <strong>Configuration → Payment Settings</strong>. Scroll to the Account Updater (AU) section and click the toggle to open the configuration modal.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Select MasterCard MCC</h3><p>In the "Card brand configuration" box, use the search field under MasterCard to select your <strong>Merchant Category Code (MCC)</strong>. This is required for MasterCard updates.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Enter American Express (AMEX) SE</h3><p>Input your 10-digit <strong>Service Establishment (SE)</strong> number in the American Express field. This enables direct communication with the American Express (AMEX) network.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept Disclosure and Confirm</h3><p>Check the box to agree to the terms displayed in the modal. These terms are specific to your contract; review the disclosure carefully before proceeding. If you have any questions on pricing, please contact Recurly Support.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept Disclosure and Confirm</h3><p>Check the box to agree to the terms in the modal. <strong>Note: Account Updater (AU) is a best-effort proactive measure; it does not guarantee an update for every card event.</strong> If you have questions on pricing, please contact Recurly Support.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>Save and Confirm</h3><p>Once you click "Enable," your status will update. Recurly immediately begins scanning for card updates within your stored payment methods.</p></div></div>
     </div>
 
@@ -114,7 +114,7 @@ metadata:
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Tip</h4><p>If you don't have your American Express (AMEX) SE number handy, you can find it on your direct merchant statement. If you have questions regarding specific pricing tiers or update methods, please contact Recurly Support. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
+      <div><h4>Expert Tip</h4><p>Account Updater (AU) is a powerful **best-effort assistant**, but not a 100% guarantee. Always monitor your "Expired" decline codes in analytics to ensure your dunning strategy is correctly picking up cards that AU cannot resolve. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
     </div>
 
     <div class="rc-sec-nav">
@@ -125,7 +125,7 @@ metadata:
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
-<a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
   </div>
 </div>
 </body>
