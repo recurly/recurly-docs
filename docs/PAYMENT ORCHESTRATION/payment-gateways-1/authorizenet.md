@@ -26,6 +26,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
     * Lost or Stolen cards
   * You can read more about Auth.net's gateway responses in their [knowledgebase article](https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111).
 * We do not support Auth.net's fraud review flow -- if you are using Authorize.net's fraud monitoring, please be aware the gateway can void or invalidate transactions that were initially approved. It is advised to keep an eye on these external systems to avoid transactions that were initially approved and then cancelled by the gateway outside of Recurly's visibility.
+* Authorize.net does not return raw NTIDs. If you need to migrate away from Authorize.net to another platform, you must engage with Tech Support to start an NTID migration conversation with one of our team members and Auth.net directly.
 
 # Definition
 
