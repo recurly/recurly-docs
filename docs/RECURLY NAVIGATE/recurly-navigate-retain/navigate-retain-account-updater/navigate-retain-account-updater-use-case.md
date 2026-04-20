@@ -112,7 +112,7 @@ metadata:
       <div class="rc-oh-content">
         <h2 class="rc-subhead" style="margin-top:40px;">🗓️ Book time with an expert first</h2>
         <p>If you're not quite sure, join a <strong>Customer Success Global Office Hours</strong> to talk strategy with our CSMs. They'll walk you through all considerations, details, benefits, and implications of Account Updater (AU) for your subscription business.</p>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#ffd706; color:#0d0d0b; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:900; font-size:.12rem; display:inline-flex; align-items:center; gap:10px;">Register for Office Hours →</a>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#ffd706; color:#0d0d0b; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:900; font-size:.7rem; display:inline-flex; align-items:center; gap:10px;">Register for Office Hours →</a>
       </div>
     </div>
 
