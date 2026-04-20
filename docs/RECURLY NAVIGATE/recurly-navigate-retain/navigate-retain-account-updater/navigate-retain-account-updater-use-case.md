@@ -1,5 +1,9 @@
 ---
 title: 'Account Updater: Pitch to leadership'
+excerpt: >-
+  Build a data-backed business case for Account Updater. Get key talking points,
+  ROI benchmarks, and answers to common leadership questions — including cost,
+  implementation effort, and expected timeline to results.
 deprecated: false
 hidden: true
 metadata:
