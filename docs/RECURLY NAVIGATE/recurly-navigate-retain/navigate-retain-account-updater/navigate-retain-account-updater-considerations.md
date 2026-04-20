@@ -5,7 +5,7 @@ excerpt: >-
   tokenization setup, gateway overlap, bank participation limits, and prepaid
   card exclusions. Confirm readiness with a pre-enablement checklist.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
