@@ -79,7 +79,7 @@ metadata:
     <div class="rc-complete">
       <div style="font-size:40px;">🎯</div>
       <h2>The One-Line Pitch</h2>
-      <p>"Account Updater (AU) is a proactive **best-effort assistant** that automatically keeps our subscribers' card details up to date — recovering revenue we'd otherwise lose, with zero effort from customers."</p>
+      <p>"Account Updater (AU) is a proactive tool that automatically keeps our subscribers' card details up to date — recovering revenue we'd otherwise lose, with zero effort from customers."</p>
     </div>
 
     <div class="rc-card">
