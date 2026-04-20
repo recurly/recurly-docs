@@ -101,7 +101,7 @@ metadata:
     <div class="rc-steps">
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"What's the cost?"</h3><p>Depending on our contract, AU is either included in our subscription or usage-based. The average return is 77x. Speak with your Account Manager or <a href="mailto:support@recurly.com" style="color:var(--orange); font-weight:700; text-decoration:none;">Contact Recurly Support</a> to confirm our specific model.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Do we need engineering resources?"</h3><p>No. Account Updater is enabled through a self-serve toggle in the admin. There is no code change or development work required for setup.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Are there any risks?"</h3><p>AU is a secure, PCI-compliant **best-effort service**. It is subject to card network participation rules, so it should be used as a primary layer alongside our existing dunning strategy.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Are there any risks?"</h3><p>AU is a secure, PCI-compliant best-effort service. It is subject to card network participation rules, so it should be used as a primary layer alongside our existing dunning strategy.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"How quickly will we see results?"</h3><p>Impact builds over 60–90 days as card cycles renew. We can monitor this directly in the Recurly Churn Management analytics dashboard.</p></div></div>
     </div>
 
