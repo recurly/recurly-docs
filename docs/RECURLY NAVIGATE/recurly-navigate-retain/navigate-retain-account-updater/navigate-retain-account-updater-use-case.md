@@ -5,7 +5,7 @@ excerpt: >-
   ROI benchmarks, and answers to common leadership questions — including cost,
   implementation effort, and expected timeline to results.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
