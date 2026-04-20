@@ -5,7 +5,7 @@ excerpt: >-
   revenue, renewal counts, and involuntary churn rate using Churn Management
   dashboards and the Invoices Summary Export.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
