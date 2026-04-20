@@ -1,5 +1,9 @@
 ---
 title: 'Section 2: Things to consider'
+excerpt: >-
+  Before enabling Account Updater, review key compatibility factors:
+  tokenization setup, gateway overlap, bank participation limits, and prepaid
+  card exclusions. Confirm readiness with a pre-enablement checklist.
 deprecated: false
 hidden: true
 metadata:
