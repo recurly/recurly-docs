@@ -1,5 +1,9 @@
 ---
 title: 'Section 1: Why use it? '
+excerpt: >-
+  Discover why Recurly's Account Updater delivers 77x average ROI. Prevent
+  involuntary churn, avoid gateway fees on invalid cards, and protect subscriber
+  lifetime value — all before a single payment fails.
 deprecated: false
 hidden: true
 metadata:
