@@ -1,5 +1,5 @@
 ---
-title: Secure your revenue with Account Updater
+title: Account Updater
 deprecated: false
 hidden: true
 metadata:
