@@ -77,7 +77,7 @@ metadata:
       <div class="rc-sec-icon">💳</div>
       <div>
         <h2>What is Account Updater?</h2>
-        <p>A proactive **best-effort assistant** designed to resolve card lifecycle events before they trigger a decline. Reduce involuntary churn and eliminate gateway fees on invalid accounts.</p>
+        <p>A proactive assistant designed to resolve card lifecycle events before they trigger a decline. Reduce involuntary churn and eliminate gateway fees on invalid accounts.</p>
       </div>
     </div>
 
@@ -111,7 +111,7 @@ metadata:
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>The Bottom Line</h4><p>Account Updater is a powerful **best-effort assistant** that fixes outdated card details behind the scenes. It's one of the few revenue recovery tools that is entirely proactive rather than reactive.</p></div>
+      <div><h4>The Bottom Line</h4><p>Account Updater fixes outdated card details behind the scenes. It's one of the few revenue recovery tools that is entirely proactive rather than reactive.</p></div>
     </div>
 
     <div class="rc-sec-nav">
