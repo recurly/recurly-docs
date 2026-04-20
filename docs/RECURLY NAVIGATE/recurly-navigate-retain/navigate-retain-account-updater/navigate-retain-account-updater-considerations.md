@@ -83,7 +83,7 @@ metadata:
       <div class="rc-sec-icon">🔍</div>
       <div>
         <h2>Is Account Updater Right for You?</h2>
-        <p>Confirm technical readiness by reviewing tokenization compatibility and understanding bank-level participation rules. Remember: Account Updater (AU) is a **proactive best-effort measure**, not a guarantee for every card event.</p>
+        <p>Confirm technical readiness by reviewing tokenization compatibility and understanding bank-level participation rules.</p>
       </div>
     </div>
 
@@ -95,7 +95,7 @@ metadata:
     <h3 class="rc-subhead">🔑 Key Questions to Ask Before You Enable</h3>
     <div class="rc-steps">
       <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>How are you tokenizing payment data?</h3><p>Recurly Account Updater (AU) works seamlessly with Recurly.js and Recurly-hosted checkouts. If you use external gateway tokenization, Recurly can still run AU as long as the token is managed within the Recurly vault.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Is your gateway already running AU?</h3><p>Running Account Updater (AU) in both Recurly and your gateway can be redundant. However, many merchants choose to run <strong>Recurly AU alongside gateway RTAU</strong> to ensure 100% coverage across all regions.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Is your gateway already running AU?</h3><p>Running Account Updater (AU) in both Recurly and your gateway can be redundant. However, many merchants choose to run <strong>Recurly AU alongside gateway RTAU</strong> to ensure coverage across all regions.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">3</div><div><h3>Are you an American Express merchant?</h3><p>Modern Real-Time Account Updater (RTAU) now handles American Express (AMEX) globally for many gateways. Legacy "Cardrefresher" is only required for specific direct-AMEX configurations.</p></div></div>
     </div>
 
