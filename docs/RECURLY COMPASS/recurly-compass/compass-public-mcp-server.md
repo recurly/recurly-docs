@@ -35,7 +35,7 @@ Recurly Compass Agents functions as dedicated MCP endpoints exposing tools and s
 
 URL: `https://mcp.recurly.com/mcp`
 
-Note: First login to Recurly to get Auth Token.
+Tip: First login to Recurly. When the OAuth flow authenticates it will automatically authenticate with Recurly. Note: the tokens expire in 30 days.
 
 <br />
 
@@ -53,6 +53,8 @@ Note: First login to Recurly to get Auth Token.
 ## Examples
 
 ### Integrating Knowledge Agent
+
+Tip: First login to Recurly. When the OAuth flow authenticates it will automatically authenticate with Recurly. Note: the tokens expire in 30 days.
 
 **Using Claude**
 
