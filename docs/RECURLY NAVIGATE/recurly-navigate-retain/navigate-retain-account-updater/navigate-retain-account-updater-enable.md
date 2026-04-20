@@ -5,7 +5,7 @@ excerpt: >-
   MasterCard MCC, enter your AMEX SE number, and activate proactive card
   management in minutes via Payment Settings.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
