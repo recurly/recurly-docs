@@ -60,30 +60,30 @@ metadata:
 
   <nav class="rc-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">Account Updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why Use It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to Consider</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to Enable It</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking Impact</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to Leadership</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why use it?</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to consider</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to enable it</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking impact</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to leadership</a>
   </nav>
 
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">🎤</div>
       <div>
-        <h2>How to Pitch Account Updater to Leadership</h2>
+        <h2>How to pitch account updater to leadership</h2>
         <p>Build a data-backed case for proactive revenue recovery by highlighting ROI benchmarks and the frictionless subscriber experience provided by this best-effort service.</p>
       </div>
     </div>
 
     <div class="rc-complete">
       <div style="font-size:40px;">🎯</div>
-      <h2>The One-Line Pitch</h2>
+      <h2>The one-line pitch</h2>
       <p>"Account Updater (AU) is a proactive **best-effort assistant** that automatically keeps our subscribers' card details up to date — recovering revenue we'd otherwise lose, with zero effort from customers."</p>
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">📋 The Business Case — Key Points</h3>
+      <h3 class="rc-subhead">📋 The business case — key points</h3>
       <div class="rc-steps" style="margin-bottom:0;">
         <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>Stop unnecessary revenue leakage</h3><p>Subscription failures are often caused by card expirations, not cancellations. AU resolves these lifecycle events before they trigger a decline.</p></div></div>
         <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Proven ROI benchmarks</h3><p>Recurly customers using AU see an average of 18% of total recovered revenue attributed to this feature, with a 77x average ROI.</p></div></div>
@@ -93,7 +93,7 @@ metadata:
       </div>
     </div>
 
-    <h3 class="rc-subhead">❓ Anticipated Questions & Answers</h3>
+    <h3 class="rc-subhead">❓ Anticipated questions and answers</h3>
     <div class="rc-steps">
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"What's the cost?"</h3><p>Depending on our contract, AU is either included in our subscription or usage-based. The average return is 77x. Speak with your Account Manager or <a href="mailto:support@recurly.com" style="color:var(--orange); font-weight:700; text-decoration:none;">Contact Recurly Support</a> to confirm our specific model.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">Q</div><div><h3>"Do we need engineering resources?"</h3><p>No. Account Updater is enabled through a self-serve toggle in the admin. There is no code change or development work required for setup.</p></div></div>
@@ -113,19 +113,19 @@ metadata:
       <div class="rc-oh-content">
         <h4 style="color:#FFD706; margin:0 0 12px; font-size:1.1rem; font-weight:800; text-transform:uppercase; letter-spacing:1px;">🗓️ Book time with an expert first</h4>
         <p style="color:#CCC9B8; font-size:.95rem; line-height:1.6; margin:0 0 20px;">If you're not quite sure, join a <strong>Customer Success Global Office Hours</strong> to talk strategy with our CSMs. They'll walk you through all considerations, details, benefits, and implications of Account Updater (AU) for your subscription business.</p>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#FFD706; color:#0D0D0B; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:900; font-size:.9rem; display:inline-flex; align-items:center; gap:10px;">Register for Office Hours →</a>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#FFD706; color:#0D0D0B; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:900; font-size:.9rem; display:inline-flex; align-items:center; gap:10px;">Register for office hours →</a>
       </div>
     </div>
 
     <div class="rc-sec-nav" style="margin-top:40px;">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data">← Section 4: Tracking Impact</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data">← Section 4: Tracking impact</a>
       <span class="rc-btn-disabled">🎉 You're Ready to Go!</span>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:40px;">📚 Additional Resources</h3>
+    <h3 class="rc-subhead" style="margin-top:40px;">📚 Additional resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
+    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">🧭 Return to Start</a>
   </div>
 </div>
