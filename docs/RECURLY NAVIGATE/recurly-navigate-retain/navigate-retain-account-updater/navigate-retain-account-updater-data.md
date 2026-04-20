@@ -1,5 +1,9 @@
 ---
 title: 'Account Updater: Tracking impact'
+excerpt: >-
+  Learn how to measure Account Updater's ROI in Recurly. Track recovered
+  revenue, renewal counts, and involuntary churn rate using Churn Management
+  dashboards and the Invoices Summary Export.
 deprecated: false
 hidden: true
 metadata:
