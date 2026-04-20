@@ -58,7 +58,7 @@ Tip: First login to Recurly. When the OAuth flow authenticates it will automatic
 
 **Using Claude**
 
-`claude mcp add --transport http Recurly [https://mcp.recurly.com/mcp]`
+`claude mcp add --transport http Recurly https://mcp.recurly.com/mcp`
 
 **Using Cursor**
 
@@ -89,7 +89,7 @@ To add to Cursor IDE:
 
 **Using Claude**
 
-`claude mcp add --transport http Recurly [https://mcp.recurly.com/mcp]`
+`claude mcp add --transport http Recurly https://mcp.recurly.com/mcp`
 
 **Using Cursor**
 
