@@ -105,8 +105,8 @@ metadata:
       <div class="rc-step">
         <div class="rc-sbadge-dark">2</div>
         <div>
-          <h3>Renewal Invoices: The "Other Issues" Chart</h3>
-          <p>Go to <strong>Analytics → Churn Management → Renewal Invoices</strong>. Review the <strong>Other Issues</strong> chart to see the specific count of invoices saved specifically by Account Updater (AU) logic.</p>
+          <h3>Renewal Invoices: The "Other Outcomes" Chart</h3>
+          <p>Go to <strong>Analytics → Churn Management → Renewal Invoices</strong>. Review the <strong>Invoices with Other Outcomes</strong> chart to see the specific count of invoices saved specifically by Account Updater (AU) logic.</p>
         </div>
       </div>
       <div class="rc-step">
