@@ -88,8 +88,8 @@ metadata:
     </div>
 
     <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Standard Account Updater</h4><p>Supported for Visa, Mastercard, American Express (AMEX), and Discover. Updates are fetched via secure batch files before renewal attempts.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">⚡</div><h4>Real-Time Account Updater (RTAU)</h4><p>Supported for Visa, Mastercard, and American Express (AMEX) globally, with Discover support available via specific gateways.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Standard account updater</h4><p>Supported for Visa, Mastercard, American Express (AMEX), and Discover. Updates are fetched via secure batch files before renewal attempts.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">⚡</div><h4>Real-time account updater (RTAU)</h4><p>Supported for Visa, Mastercard, and American Express (AMEX) globally, with Discover support available via specific gateways.</p></div>
       <div class="rc-wi"><div class="rc-wi-icon">🏦</div><h4>Cardrefresher</h4><p>American Express (AMEX)'s specialized AU service. While many updates now happen via RTAU, Cardrefresher provides a robust fallback for legacy integrations.</p></div>
     </div>
 
@@ -116,7 +116,7 @@ metadata:
 
     <div class="rc-sec-nav">
       <span class="rc-btn-disabled">🎯 Start</span>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits">Next: Why Use It? →</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits">Next: Why use it? →</a>
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
