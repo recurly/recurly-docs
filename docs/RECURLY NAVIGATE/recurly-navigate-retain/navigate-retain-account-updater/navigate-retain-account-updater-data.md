@@ -65,36 +65,36 @@ metadata:
 
   <nav class="rc-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">Account Updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why Use It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to Consider</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to Enable It</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking Impact</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to Leadership</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why use it?</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to consider</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to enable it</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking impact</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to leadership</a>
   </nav>
 
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📊</div>
       <div>
-        <h2>Tracking the Impact of Account Updater (AU)</h2>
+        <h2>Tracking the impact of account updater (AU)</h2>
         <p>Quantify your retention success by isolating revenue recovered through card updates. Utilize Churn Management dashboards for strategic trends and leverage Transactions Exports for a granular audit of every card lifecycle event.</p>
       </div>
     </div>
 
-    <h3 class="rc-subhead">📏 Key Performance Indicators (KPIs)</h3>
+    <h3 class="rc-subhead">📏 Key performance indicators (KPIs)</h3>
     <div class="rc-2col">
-      <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Recovered Revenue (AU)</h4><p>The total currency value successfully processed on cards updated by Account Updater (AU) prior to the billing attempt. This is your primary ROI signal.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary Churn Rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should decrease as Account Updater (AU) proactively handles card lifecycle events.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal Count by AU</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. Found in Renewal Invoices reporting.</p></div>
-      <div class="rc-opt"><div class="rc-oicon">🔍</div><h4>Remaining "Expired" Declines</h4><p>Found in Renewal Declines, this identifies cards that AU could not update (subject to network participation), helping you refine your dunning strategy.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">💰</div><h4>Recovered revenue (AU)</h4><p>The total currency value successfully processed on cards updated by Account Updater (AU) prior to the billing attempt. This is your primary ROI signal.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📉</div><h4>Involuntary churn rate</h4><p>The percentage of subscribers lost due to payment failure. This metric should decrease as Account Updater (AU) proactively handles card lifecycle events.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">📋</div><h4>Renewal count by AU</h4><p>The raw volume of subscription invoices that renewed successfully because of a card update. Found in Renewal Invoices reporting.</p></div>
+      <div class="rc-opt"><div class="rc-oicon">🔍</div><h4>Remaining "expired" declines</h4><p>Found in Renewal Declines, this identifies cards that AU could not update (subject to network participation), helping you refine your dunning strategy.</p></div>
     </div>
 
-    <h3 class="rc-subhead">📍 Navigating Your Dashboards</h3>
+    <h3 class="rc-subhead">📍 Navigating your dashboards</h3>
     <div class="rc-steps">
       <div class="rc-step">
         <div class="rc-sbadge-dark">1</div>
         <div>
-          <h3>Recovered Revenue Dashboard</h3>
+          <h3>Recovered revenue dashboard</h3>
           <p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. Use the <strong>Recovered Revenue by Method</strong> chart to see the contribution of card updates compared to dunning.</p>
           
           <div style="position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:12px;margin-top:16px;border:1px solid var(--lightgray);">
@@ -105,21 +105,21 @@ metadata:
       <div class="rc-step">
         <div class="rc-sbadge-dark">2</div>
         <div>
-          <h3>Renewal Invoices: The "Other Outcomes" Chart</h3>
+          <h3>Renewal invoices: The "other outcomes" chart</h3>
           <p>Go to <strong>Analytics → Churn Management → Renewal Invoices</strong>. Review the <strong>Invoices with Other Outcomes</strong> chart to see the specific count of invoices saved specifically by Account Updater (AU) logic.</p>
         </div>
       </div>
       <div class="rc-step">
         <div class="rc-sbadge-dark">3</div>
         <div>
-          <h3>Renewal Declines Dashboard</h3>
+          <h3>Renewal eclines dashboard</h3>
           <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" codes to see remaining friction points.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">📁 Advanced Audit: The Invoices Summary Export</h3>
+      <h3 class="rc-subhead">📁 Advanced audit: The invoices summary export</h3>
       <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin-bottom:16px;">For raw data verification, use the <strong>Invoices Summary Export</strong> under <strong>Analytics → Exports</strong>. This report provides the underlying proof of card updates at the transaction level.</p>
       <div class="rc-step" style="border:none; padding:0;">
         <div class="rc-sbadge-dark" style="width:28px; height:28px; font-size:12px;">A</div>
@@ -129,27 +129,27 @@ metadata:
 
     <div class="rc-office-hours">
       <div class="rc-oh-content">
-        <h4>🗓️ Need Strategic Support?</h4>
+        <h4>🗓️ Need strategic support?</h4>
         <p>Join our <strong>Customer Success Global Office Hours</strong>! Meet face-to-face with our CSMs to walk through your analytics, work through roadblocks, and get strategic advice on optimizing your revenue recovery.</p>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#ffd706; color:#0d0d0b; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:700; font-size:.9rem; display:inline-flex; align-items:center; gap:10px;">Register for Office Hours →</a>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#ffd706; color:#0d0d0b; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:700; font-size:.9rem; display:inline-flex; align-items:center; gap:10px;">Register for office hours →</a>
       </div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Insight: The 90-Day Rule</h4><p>Account Updater (AU) impact is cumulative. It takes roughly 90 days to see the full "stabilized" impact on your recovery metrics. Use this window to establish your new churn baseline.</p></div>
+      <div><h4>Expert insight: The 90-day rule</h4><p>Account Updater (AU) impact is cumulative. It takes roughly 90 days to see the full "stabilized" impact on your recovery metrics. Use this window to establish your new churn baseline.</p></div>
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable">← Section 3: How to Enable It</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case">Next: Section 5: Pitch to Leadership →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable">← Section 3: How to enable It</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case">Next: Section 5: Pitch to leadership →</a>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
+    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/docs/recovered-revenue" target="_blank" rel="noopener noreferrer">📈 Docs: Recovered Revenue Dashboard</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-invoices" target="_blank" rel="noopener noreferrer">📋 Docs: Renewal Invoices Report</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-declines" target="_blank" rel="noopener noreferrer">📉 Docs: Renewal Declines Dashboard</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/transaction-export" target="_blank" rel="noopener noreferrer">📂 Docs: Transactions Export Guide</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-invoices" target="_blank" rel="noopener noreferrer">📋 Docs: Renewal invoices report</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/renewal-declines" target="_blank" rel="noopener noreferrer">📉 Docs: Renewal declines dashboard</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/docs/transaction-export" target="_blank" rel="noopener noreferrer">📂 Docs: Transactions export guide</a>
   </div>
 </div>
 </body>
