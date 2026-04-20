@@ -104,8 +104,15 @@ metadata:
     <div class="rc-tip">
       <span class="rc-tipicon">🎯</span>
       <div>
-        <h4>Your Next Step</h4>
-        <p>Ready to secure your revenue? Head to <strong>Configuration → Payment Settings</strong> in your Recurly admin and click Enable. Remember: Account Updater is a **best-effort proactive measure**; for strategic advice on your recovery mix, book a session with our CSMs below.</p>
+        <h4>Ready to enable Account Updater?</h4>
+        <p>Head to <strong>Configuration → Payment Settings</strong> in your Recurly admin and click Enable. </p>
+      </div>
+    </div>
+   <div class="rc-office-hours">
+      <div class="rc-oh-content">
+        <h4>🗓️ Speak to a Customer Success Manager first</h4>
+        <p>If you're not quite sure, join a <strong>Customer Success Global Office Hours</strong> to talk strategy with our CSMs. They'll walk you through all considerations, details, benefits, and implications for your subscription business.</p>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#ffd706; color:#0d0d0b; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:700; font-size:.9rem; display:inline-flex; align-items:center; gap:10px;">Register for Office Hours →</a>
       </div>
     </div>
 
