@@ -1,5 +1,5 @@
 ---
-title: 'Section 2: Things to consider'
+title: 'Account Updater: Things to consider'
 excerpt: >-
   Before enabling Account Updater, review key compatibility factors:
   tokenization setup, gateway overlap, bank participation limits, and prepaid
