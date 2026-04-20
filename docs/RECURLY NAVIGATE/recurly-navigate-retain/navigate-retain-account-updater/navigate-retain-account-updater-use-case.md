@@ -1,5 +1,5 @@
 ---
-title: 'Section 5: Pitch to leadership'
+title: 'Account Updater: Pitch to leadership'
 deprecated: false
 hidden: true
 metadata:
