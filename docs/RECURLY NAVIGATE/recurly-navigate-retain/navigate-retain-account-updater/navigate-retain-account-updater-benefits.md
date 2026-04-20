@@ -74,7 +74,7 @@ metadata:
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📈</div>
-      <div><h2>Why Should You Use Account Updater?</h2><p>Maximize recovery ROI by significantly reducing involuntary churn. Account Updater (AU) helps secure future Lifetime Value (LTV) by bypassing the friction of dunning.</p></div>
+      <div><h2>Why should you use account updater?</h2><p>Maximize recovery ROI by significantly reducing involuntary churn. Account Updater (AU) helps secure future Lifetime Value (LTV) by bypassing the friction of dunning.</p></div>
     </div>
 
     <div class="rc-stat-grid">
@@ -84,12 +84,12 @@ metadata:
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">🎯 The Core Problem It Solves</h3>
+      <h3 class="rc-subhead">🎯 The core problem it solves</h3>
       <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Involuntary churn is a preventable source of subscriber loss. While Account Updater (AU) cannot fix every card event, it significantly reduces failures caused by expirations and reissued cards.</p>
       <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0;">When a card is reissued, the subscriber rarely thinks to update it. Account Updater (AU) catches participating changes before the charge fails, preserving both revenue and the relationship.</p>
     </div>
 
-    <h3 class="rc-subhead">💼 Key Business Benefits</h3>
+    <h3 class="rc-subhead">💼 Key business benefits</h3>
     <div class="rc-2col">
       <div class="rc-opt"><div class="rc-oicon">🛡️</div><h4>Prevent Involuntary Churn Upstream</h4><p>AU acts before the charge occurs, serving as your first line of defense for eligible card types.</p><span class="rc-tag">Proactive Recovery</span></div>
       <div class="rc-opt"><div class="rc-oicon">💸</div><h4>Significant Cost Avoidance</h4><p>By identifying "Closed" or "Invalid" accounts before an attempt, AU helps you avoid gateway transaction fees.</p><span class="rc-tag">Lower OpEx</span></div>
@@ -98,16 +98,16 @@ metadata:
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">💰 Pricing Considerations</h3>
+      <h3 class="rc-subhead">💰 Pricing considerations</h3>
       <p style="font-size:.88rem;color:var(--gray);margin:0 0 16px;">How AU is priced depends on your Recurly contract and the specific update method (Batch vs. RTAU).</p>
-      <div class="pricing-card free"><h4>✅ Included in Your Contract</h4><p>Many plans bundle standard Batch AU at no additional per-update cost.</p></div>
-      <div class="pricing-card paid"><h4>💳 Usage-Based Updates</h4><p>Some configurations apply fees for successful updates. The cost is typically a fraction of the recovered LTV.</p></div>
+      <div class="pricing-card free"><h4>✅ Included in your contract</h4><p>Many plans bundle standard Batch AU at no additional per-update cost.</p></div>
+      <div class="pricing-card paid"><h4>💳 Usage-based updates</h4><p>Some configurations apply fees for successful updates. The cost is typically a fraction of the recovered LTV.</p></div>
       <p style="font-size:.88rem;color:var(--gray);margin-top:16px;text-align:center;"><strong>Not sure which model applies?</strong> <a href="mailto:support@recurly.com" style="color:var(--orange);font-weight:700;text-decoration:none;">Contact Recurly Support</a> to discuss your specific contract.</p>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Think About the Lifetime Value</h4><p>When a card updates successfully, you aren't just saving one invoice; you are securing the entire future stream of revenue for that subscriber.</p></div>
+      <div><h4>Think about the lifetime value</h4><p>When a card updates successfully, you aren't just saving one invoice; you are securing the entire future stream of revenue for that subscriber.</p></div>
     </div>
 
     <div class="rc-sec-nav">
@@ -115,8 +115,8 @@ metadata:
       <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations">Next: Things to Consider →</a>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
+    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
+    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly docs: Account Updater</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
   </div>
