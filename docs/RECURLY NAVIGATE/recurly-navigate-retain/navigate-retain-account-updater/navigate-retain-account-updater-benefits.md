@@ -74,7 +74,7 @@ metadata:
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">📈</div>
-      <div><h2>Why Should You Use Account Updater?</h2><p>Maximize recovery ROI by significantly reducing involuntary churn. Account Updater (AU) is a **proactive best-effort measure** that secures future Lifetime Value (LTV) by bypassing the friction of dunning.</p></div>
+      <div><h2>Why Should You Use Account Updater?</h2><p>Maximize recovery ROI by significantly reducing involuntary churn. Account Updater (AU) helps secure future Lifetime Value (LTV) by bypassing the friction of dunning.</p></div>
     </div>
 
     <div class="rc-stat-grid">
