@@ -1,5 +1,9 @@
 ---
 title: 'Account Updater: How to enable it'
+excerpt: >-
+  Step-by-step guide to enabling Account Updater in Recurly. Configure your
+  MasterCard MCC, enter your AMEX SE number, and activate proactive card
+  management in minutes via Payment Settings.
 deprecated: false
 hidden: true
 metadata:
