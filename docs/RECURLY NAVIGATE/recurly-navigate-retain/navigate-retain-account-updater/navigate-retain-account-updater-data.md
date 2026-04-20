@@ -113,18 +113,16 @@ metadata:
         <div class="rc-sbadge-dark">3</div>
         <div>
           <h3>Renewal Declines Dashboard</h3>
-          <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" codes to see remaining friction points. Note: Account Updater is a **best-effort assistant**; remaining declines often reflect non-participating banks or cardholder opt-outs.</p>
+          <p>Navigate to <strong>Analytics → Churn Management → Renewal Declines</strong>. Filter for "Expired Card" codes to see remaining friction points.s.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">📁 Advanced Audit: The Transactions Export</h3>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin-bottom:16px;">For raw data verification, use the <strong>Transactions Export</strong> under <strong>Analytics → Exports</strong>. This report provides the underlying proof of card updates at the transaction level.</p>
+      <h3 class="rc-subhead">📁 Advanced Audit: The Invoices Summary Export</h3>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin-bottom:16px;">For raw data verification, use the <strong>Invoices Summary Export</strong> under <strong>Analytics → Exports</strong>. This report provides the underlying proof of card updates at the transaction level.</p>
       <div class="rc-steps" style="margin-bottom:0;">
-        <div class="rc-step"><div class="rc-sbadge-dark">A</div><div><h3>Filter by 'Origin'</h3><p>Filter your export for <code>recurring</code> transactions to isolate standard subscription renewal attempts where AU is most active.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">B</div><div><h3>Search 'Message' for AU Notes</h3><p>Look for notes like "Updated card information" in the <strong>Message</strong> or <strong>Gateway Response</strong> columns for proof of a proactive update.</p></div></div>
-        <div class="rc-step"><div class="rc-sbadge-dark">C</div><div><h3>Identify Metadata Changes</h3><p>Track <code>cc_first_6</code> and <code>cc_last_4</code> across billing cycles for the same account to confirm when card details were updated automatically.</p></div></div>
+        <div class="rc-step"><div class="rc-sbadge-dark">A</div><div><h3>Filter by 'recovery_reason'</h3><p>Filter your export for <code>recovery_reason</code> and choose <code>account_updater</code> transactions to isolate Account Updater (AU) collections.</p></div></div>
       </div>
     </div>
 
