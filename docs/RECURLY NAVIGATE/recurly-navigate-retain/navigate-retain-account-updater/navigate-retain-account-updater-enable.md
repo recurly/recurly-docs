@@ -114,7 +114,7 @@ metadata:
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Tip</h4><p>Account Updater (AU) is a powerful **best-effort assistant**, but not a 100% guarantee. Always monitor your "Expired" decline codes in analytics to ensure your dunning strategy is correctly picking up cards that AU cannot resolve. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
+      <div><h4>Expert Tip</h4><p>Account Updater (AU) is a powerful assistant that works most effectively alongside a strong dunning strategy. Always monitor your "Expired" decline codes in analytics to ensure dunning is correctly picking up cards that AU cannot resolve. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
     </div>
 
     <div class="rc-sec-nav">
