@@ -106,7 +106,7 @@ metadata:
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
-      <p><strong>Note on Digital Wallets:</strong> Account Updater works with cards stored in Recurly's vault. Apple Pay and Google Pay handle card lifecycle updates natively within their own ecosystem.</p>
+      <p><strong>Note on digital wallets:</strong> Account Updater works with cards stored in Recurly's vault. Apple Pay and Google Pay handle card lifecycle updates natively within their own ecosystem.</p>
     </div>
 
     <div class="rc-tip">
