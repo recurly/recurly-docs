@@ -5,7 +5,7 @@ excerpt: >-
   involuntary churn, avoid gateway fees on invalid cards, and protect subscriber
   lifetime value — all before a single payment fails.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
