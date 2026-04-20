@@ -116,7 +116,7 @@ metadata:
       </div>
     </div>
 
-    <div class="rc-sec-nav">
+    <div class="rc-sec-nav" style="margin-top:28px;">
       <a class="rc-btn-prev" href="/docs/navigate-retain-account-updater-data">← Tracking Impact</a>
       <span class="rc-btn-disabled">🎉 You're Ready to Go!</span>
     </div>
