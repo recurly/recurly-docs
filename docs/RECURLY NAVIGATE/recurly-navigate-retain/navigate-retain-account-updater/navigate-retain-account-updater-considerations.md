@@ -71,28 +71,28 @@ metadata:
 
   <nav class="rc-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">Account Updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why Use It?</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to Consider</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to Enable It</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking Impact</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to Leadership</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why use it?</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to consider</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to enable it</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking impact</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to leadership</a>
   </nav>
 
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">🔍</div>
       <div>
-        <h2>Is Account Updater Right for You?</h2>
+        <h2>Is Account Updater right for you?</h2>
         <p>Confirm technical readiness by reviewing tokenization compatibility and understanding bank-level participation rules.</p>
       </div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Good News: Most Merchants Are Already Set Up</h4><p>For the majority of Recurly customers, enabling Account Updater (AU) is a simple configuration toggle. Recurly's Real-Time Account Updater (RTAU) now covers major networks globally—including American Express (AMEX) and Discover—on supported gateways.</p></div>
+      <div><h4>Good news: Most merchants are already set up</h4><p>For the majority of Recurly customers, enabling Account Updater (AU) is a simple configuration toggle. Recurly's Real-Time Account Updater (RTAU) now covers major networks globally—including American Express (AMEX) and Discover—on supported gateways.</p></div>
     </div>
 
-    <h3 class="rc-subhead">🔑 Key Questions to Ask Before You Enable</h3>
+    <h3 class="rc-subhead">🔑 Key questions to ask before you enable</h3>
     <div class="rc-steps">
       <div class="rc-step"><div class="rc-sbadge-dark">1</div><div><h3>How are you tokenizing payment data?</h3><p>Recurly Account Updater (AU) works seamlessly with Recurly.js and Recurly-hosted checkouts. If you use external gateway tokenization, Recurly can still run AU as long as the token is managed within the Recurly vault.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge-dark">2</div><div><h3>Is your gateway already running AU?</h3><p>Running Account Updater (AU) in both Recurly and your gateway can be redundant. However, many merchants choose to run <strong>Recurly AU alongside gateway RTAU</strong> to ensure coverage across all regions.</p></div></div>
@@ -100,50 +100,50 @@ metadata:
     </div>
 
     <div class="rc-card" style="border-left: 4px solid var(--orange);">
-      <h3 class="rc-subhead">⚠️ Understanding Network & Issuer Limitations</h3>
+      <h3 class="rc-subhead">⚠️ Understanding network & issuer limitations</h3>
       <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin-bottom:12px;">While Account Updater (AU) is highly effective, success is subject to card network participation and rules. A card may not update due to the following:</p>
       <ul style="font-size:.88rem;color:var(--gray);line-height:1.7;padding-left:20px;margin:0;">
-        <li><strong>Bank Participation:</strong> Not all global issuing banks participate in the automated update network.</li>
-        <li><strong>Card Type Exclusions:</strong> Prepaid cards and certain specialized debit cards are typically ineligible for automated updates.</li>
-        <li><strong>Closed Accounts:</strong> Updates are only available for <em>replacement</em> cards. If a customer closes an account entirely, no new data is generated.</li>
-        <li><strong>Visa Opt-Out:</strong> Specifically for Visa, some issuers allow cardholders to manually "opt-out" of sharing updated details with merchants.</li>
+        <li><strong>Bank participation:</strong> Not all global issuing banks participate in the automated update network.</li>
+        <li><strong>Card type exclusions:</strong> Prepaid cards and certain specialized debit cards are typically ineligible for automated updates.</li>
+        <li><strong>Closed accounts:</strong> Updates are only available for <em>replacement</em> cards. If a customer closes an account entirely, no new data is generated.</li>
+        <li><strong>Visa opt-out:</strong> Specifically for Visa, some issuers allow cardholders to manually "opt-out" of sharing updated details with merchants.</li>
       </ul>
     </div>
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
-      <p><strong>Stored Billing Info Required:</strong> Account Updater (AU) requires a <strong>Billing Info</strong> object to exist in the Recurly vault. It will not run on "guest checkouts" where card details are not saved for future use.</p>
+      <p><strong>Stored billing info required:</strong> Account Updater (AU) requires a <strong>Billing Info</strong> object to exist in the Recurly vault. It will not run on "guest checkouts" where card details are not saved for future use.</p>
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">📋 A Note on Adyen Users</h3>
+      <h3 class="rc-subhead">📋 A note on Adyen Users</h3>
       <p style="font-size:.88rem;color:var(--darkgray);line-height:1.6;margin:0;">Recurly supports a dedicated Adyen Real-Time Account Updater (RTAU) integration. For maximum efficiency, we recommend enabling both Adyen RTAU and Recurly Account Updater (AU) to ensure comprehensive global coverage.</p>
     </div>
 
-    <h3 class="rc-subhead">⚡ Quick Diagnostic</h3>
+    <h3 class="rc-subhead">⚡ Quick diagnostic</h3>
     <div class="rc-2col">
       <div class="rc-opt"><div class="rc-oicon">✅</div><h4>Enable AU in Recurly if…</h4><p>You have credit/debit cards stored in the Recurly vault and want to proactively ensure they remain valid, regardless of gateway-level services.</p><span class="rc-tag">Recommended</span></div>
-      <div class="rc-opt"><div class="rc-oicon">🔀</div><h4>Check Gateway Config if…</h4><p>You are using a third-party hosted checkout that does not pass card metadata or tokens back to Recurly for storage.</p><span class="rc-tag">Gateway Focus</span></div>
+      <div class="rc-opt"><div class="rc-oicon">🔀</div><h4>Check gateway config if…</h4><p>You are using a third-party hosted checkout that does not pass card metadata or tokens back to Recurly for storage.</p><span class="rc-tag">Gateway Focus</span></div>
     </div>
 
     <hr class="rc-divider">
 
-    <h3 class="rc-subhead" style="margin-top:4px;">✅ Pre-Enablement Checklist</h3>
+    <h3 class="rc-subhead" style="margin-top:4px;">✅ Pre-enablement checklist</h3>
     <div class="rc-checklist">
-      <div class="rc-cl-header"><span>✅</span><h3>Before You Enable</h3></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Stored Billing Info (Credit/Debit) exists in the Recurly vault<span>Tokens and raw cards are both eligible</span></div></div>
+      <div class="rc-cl-header"><span>✅</span><h3>Before you enable</h3></div>
+      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Stored billing info (Credit/Debit) exists in the Recurly vault<span>Tokens and raw cards are both eligible</span></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Identified if you need legacy AMEX Cardrefresher or modern RTAU<span>RTAU is preferred for global AMEX support</span></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Coordinated with payment ops to avoid overlapping gateway fees<span>Verify if your gateway's AU is "Always On"</span></div></div>
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits">← Section 1: Why Use It?</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable">Next: Section 3: How to Enable It →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits">← Section 1: Why use it?</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable">Next: Section 3: How to enable it →</a>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
+    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
+    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
   </div>
 </div>
