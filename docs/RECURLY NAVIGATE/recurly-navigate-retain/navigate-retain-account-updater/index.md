@@ -4,7 +4,7 @@ excerpt: >-
   Learn how Recurly's Account Updater automatically keeps credit and debit card
   details current before payments fail.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
