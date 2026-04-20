@@ -68,46 +68,46 @@ metadata:
 
   <nav class="rc-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">Account Updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why Use It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to Consider</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to Enable It</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking Impact</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to Leadership</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits"><span class="rc-snum">1</span>Why use it?</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations"><span class="rc-snum">2</span>Things to consider</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable"><span class="rc-snum">3</span>How to enable it</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data"><span class="rc-snum">4</span>Tracking impact</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case"><span class="rc-snum">5</span>Pitch to leadership</a>
   </nav>
 
   <div class="rc-sec">
     <div class="rc-sec-header">
       <div class="rc-sec-icon">⚙️</div>
       <div>
-        <h2>How to Enable Account Updater</h2>
+        <h2>How to enable Account Updater</h2>
         <p>Follow the direct implementation path to activate proactive card management. This guide covers navigation, required network codes, and final configuration through the secure in-app disclosure.</p>
       </div>
     </div>
 
     <div class="rc-card">
-      <h3 class="rc-subhead">📹 Trail Guide Walkthrough</h3>
+      <h3 class="rc-subhead">📹 Trail guide walkthrough</h3>
       <div style="position:relative;overflow:hidden;aspect-ratio:1920/1080;border-radius:14px;">
         <iframe src="https://share.synthesia.io/embeds/videos/b86fe7bd-1f74-491f-8632-acebd4794615" loading="lazy" title="Navigate: Secure Your Revenue — Account Updater" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" style="position:absolute;width:100%;height:100%;top:0;left:0;border:none;margin:0;"></iframe>
       </div>
       <p style="margin-top:14px;font-size:.85rem;color:var(--gray);">Watch our Navigate CSM walk through enabling Account Updater (AU) step-by-step in your Recurly site.</p>
     </div>
 
-    <h3 class="rc-subhead">🔧 Core Setup: Enable Account Updater</h3>
+    <h3 class="rc-subhead">🔧 Core setup: Enable Account Updater</h3>
     <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Navigate to Payment Settings</h3><p>Log in to your Recurly admin and go to <strong>Configuration → Payment Settings</strong>. Scroll to the Account Updater (AU) section and click the toggle to open the configuration modal.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Navigate to payment settings</h3><p>Log in to your Recurly admin and go to <strong>Configuration → Payment Settings</strong>. Scroll to the Account Updater (AU) section and click the toggle to open the configuration modal.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Select MasterCard MCC</h3><p>In the "Card brand configuration" box, use the search field under MasterCard to select your <strong>Merchant Category Code (MCC)</strong>. This is required for MasterCard updates.</p></div></div>
       <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Enter American Express (AMEX) SE</h3><p>Input your 10-digit <strong>Service Establishment (SE)</strong> number in the American Express field. This enables direct communication with the American Express (AMEX) network.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept Disclosure and Confirm</h3><p>Check the box to agree to the terms in the modal. <strong>Note: Account Updater (AU) is a best-effort proactive measure; it does not guarantee an update for every card event.</strong> If you have questions on pricing, please contact Recurly Support.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>Save and Confirm</h3><p>Once you click "Enable," your status will update. Recurly immediately begins scanning for card updates within your stored payment methods.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Accept disclosure and confirm</h3><p>Check the box to agree to the terms in the modal. <strong>Note: Account Updater (AU) is a best-effort proactive measure; it does not guarantee an update for every card event.</strong> If you have questions on pricing, please contact Recurly Support.</p></div></div>
+      <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>Save and confirm</h3><p>Once you click "Enable," your status will update. Recurly immediately begins scanning for card updates within your stored payment methods.</p></div></div>
     </div>
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
-      <p><strong>Activation Window:</strong> While the toggle is instant, card networks typically take 24–48 hours to complete the initial batch sync. Real-Time Account Updater (RTAU) will be active for your very next transaction attempt.</p>
+      <p><strong>Activation window:</strong> While the toggle is instant, card networks typically take 24–48 hours to complete the initial batch sync. Real-Time Account Updater (RTAU) will be active for your very next transaction attempt.</p>
     </div>
 
     <div class="rc-checklist">
-      <div class="rc-cl-header"><span>✅</span><h3>Setup Checklist</h3></div>
+      <div class="rc-cl-header"><span>✅</span><h3>Setup checklist</h3></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Toggled on under <strong>Configuration → Payment Settings</strong></div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">MasterCard MCC selected from the configuration dropdown</div></div>
       <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">American Express (AMEX) 10-digit SE number entered</div></div>
@@ -117,17 +117,17 @@ metadata:
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Expert Tip</h4><p>Account Updater (AU) is a powerful assistant that works most effectively alongside a strong dunning strategy. Always monitor your "Expired" decline codes in analytics to ensure dunning is correctly picking up cards that AU cannot resolve. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
+      <div><h4>Expert tip</h4><p>Account Updater (AU) is a powerful assistant that works most effectively alongside a strong dunning strategy. Always monitor your "Expired" decline codes in analytics to ensure dunning is correctly picking up cards that AU cannot resolve. For more help, see the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">Recurly Docs</a>.</p></div>
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations">← Section 2: Things to Consider</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data">Next: Section 4: Tracking Impact →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations">← Section 2: Things to consider</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data">Next: Section 4: tracking Impact →</a>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
+    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
+    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
   </div>
 </div>
