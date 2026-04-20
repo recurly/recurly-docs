@@ -121,7 +121,7 @@ metadata:
       <span class="rc-btn-disabled">🎉 You're Ready to Go!</span>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional Resources</h3>
+    <h3 class="rc-subhead" style="margin-top:40px;">📚 Additional Resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Recurly Docs: Account Updater</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Customer Support</a>
