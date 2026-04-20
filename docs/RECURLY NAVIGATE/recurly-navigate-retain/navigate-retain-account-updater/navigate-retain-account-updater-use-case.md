@@ -108,11 +108,12 @@ metadata:
         <p>Head to <strong>Configuration → Payment Settings</strong> in your Recurly admin and click Enable. </p>
       </div>
     </div>
-   <div class="rc-office-hours">
+
+    <div style="background-color:#0D0D0B; color:#FFFFFF; border-radius:16px; padding:32px; margin:32px 0; border:1px solid #FFD706;">
       <div class="rc-oh-content">
-        <h2 class="rc-subhead" style="margin-top:40px;">🗓️ Book time with an expert first</h2>
-        <p>If you're not quite sure, join a <strong>Customer Success Global Office Hours</strong> to talk strategy with our CSMs. They'll walk you through all considerations, details, benefits, and implications of Account Updater (AU) for your subscription business.</p>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#ffd706; color:#0d0d0b; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:900; font-size:.9rem; display:inline-flex; align-items:center; gap:10px;">Register for Office Hours →</a>
+        <h4 style="color:#FFD706; margin:0 0 12px; font-size:1.1rem; font-weight:800; text-transform:uppercase; letter-spacing:1px;">🗓️ Book time with an expert first</h4>
+        <p style="color:#CCC9B8; font-size:.95rem; line-height:1.6; margin:0 0 20px;">If you're not quite sure, join a <strong>Customer Success Global Office Hours</strong> to talk strategy with our CSMs. They'll walk you through all considerations, details, benefits, and implications of Account Updater (AU) for your subscription business.</p>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" style="background-color:#FFD706; color:#0D0D0B; text-decoration:none; padding:12px 24px; border-radius:10px; font-weight:900; font-size:.9rem; display:inline-flex; align-items:center; gap:10px;">Register for Office Hours →</a>
       </div>
     </div>
 
