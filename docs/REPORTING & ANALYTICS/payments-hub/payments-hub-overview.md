@@ -4,7 +4,7 @@ excerpt: >-
   The Overview provides a high-level summary of payment performance, geographic
   distribution, payment method mix, and the health of payment recovery services.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Overview
   robots: index
