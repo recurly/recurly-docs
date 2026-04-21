@@ -4,7 +4,7 @@ excerpt: >-
   Monitor retained revenue through intelligent retry strategies. Track how
   optimized retry logic helps recover initially failed payments.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Payment Retry Recovery
   robots: index
