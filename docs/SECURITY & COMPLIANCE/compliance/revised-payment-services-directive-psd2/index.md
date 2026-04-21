@@ -67,17 +67,17 @@ Because card issuers have control over enforcement, and the industry is moving t
 Use this checklist to ensure full SCA support through Recurly:
 
 1. **Engage with your gateway provider**
-   Confirm your gateway supports 3D Secure 2.0 transactions and make any required updates. See our [Gateway-specific updates](https://docs.recurly.com/docs/gateway-specific-updates).
+   Confirm your gateway supports 3D Secure 2.0 transactions and make any required updates. See our <Anchor label="Gateway-specific updates" target="_blank" href="https://docs.recurly.com/docs/gateway-specific-updates">Gateway-specific updates</Anchor>.
 
 2. **Revise your Recurly setup**
-   Enable SCA challenge flows during checkout. Use our [3DS2 implementation guide](https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide).
+   Enable SCA challenge flows during checkout. Use our <Anchor label="3DS2 implementation guide" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide">3DS2 implementation guide</Anchor>.
    _Note: Hosted checkout pages automatically handle this step._
 
 3. **Adjust your dunning flow**
-   Configure your dunning settings and emails to manage SCA declines effectively. Learn more in our [dunning configuration guide](https://docs.recurly.com/docs/dunning-configuration-for-3ds-2-declines).
+   Configure your dunning settings and emails to manage SCA declines effectively. Learn more in our <Anchor label="dunning configuration guide" target="_blank" href="https://docs.recurly.com/docs/dunning-configuration-for-3ds-2-declines">dunning configuration guide</Anchor>.
 
 4. **Test your integration**
-   Review our [testing guide](https://developers.recurly.com/guides/3ds2.html) and use our [test cards](https://docs.recurly.com/docs/test) to simulate 3DS2 flows.
+   Review our <Anchor label="testing guide" target="_blank" href="https://developers.recurly.com/guides/3ds2.html">testing guide</Anchor> and use our <Anchor label="test cards" target="_blank" href="https://docs.recurly.com/docs/test">test cards</Anchor> to simulate 3DS2 flows.
 
 ***
 
