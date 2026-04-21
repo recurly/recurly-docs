@@ -5,7 +5,7 @@ excerpt: >-
   payment methods, and gateways. Monitor success rates and decline patterns to
   optimize payment processing.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Payment Processing
   robots: index
