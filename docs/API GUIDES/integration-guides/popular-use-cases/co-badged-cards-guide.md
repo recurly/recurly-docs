@@ -12,6 +12,7 @@ metadata:
 
 ### Prerequisites & limitations
 
+* Supported on Adyen
 * You must have a working **Recurly.js** card integration to use this guide effectively.
 * See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#getting-started) for setup details.
 * For more information on co-badged card compliance, refer to our [Recurly Docs](https://docs.recurly.com/docs/credit-cards#dual--co-badged-card-support).
@@ -78,7 +79,7 @@ Include the `data-recurly="card_network_preference"` attribute so Recurly.js can
 </div>
 ```
 
-> **Warning**\
+> **Warning**  
 > Ensure the customer **chooses a brand** before you proceed to tokenize or submit the form.
 
 ***
