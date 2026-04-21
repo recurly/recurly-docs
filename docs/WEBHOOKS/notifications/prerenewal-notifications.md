@@ -92,7 +92,7 @@ Sent to a customer 7 (or the configured number of days prior) days before every 
   "id": "qlm81nq1drd0",
   "object_type": "subscription",
   "site_id": "qc326l1hl8k9",
-  "event_type": "renewal.annual_subscription_reminder",
+  "event_type": "renewal.6month_subscription_reminder",
   "event_time": "2022-07-27T15:43:04Z",
   "uuid": "612bcf671a227b272b753a487fb6576a"
 }
