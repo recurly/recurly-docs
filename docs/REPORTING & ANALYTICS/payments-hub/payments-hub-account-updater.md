@@ -5,7 +5,7 @@ excerpt: >-
   Account Updater service prevents payment failures by keeping payment methods
   current.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Account Updater
   robots: index
