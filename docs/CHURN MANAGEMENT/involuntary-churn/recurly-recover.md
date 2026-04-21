@@ -11,7 +11,7 @@ Recurly Recover lets you collect on failed invoices without using Recurly as you
 
 ## Definition
 
-Recurly Recover provides the ability to submit past due invoices via an API and automatically retry collection — without shifting your billing or subscription platform onto Recurly. When a past due invoice is submitted, Recurly creates a shell account, a past due invoice with a corresponding transaction, and saves the payment methods.  From there, Recurly calculates a retry schedule, and handles the full collection lifecycle until the invoice is paid or the provided dunning campaign is exhausted.
+Recurly Recover provides the ability to submit past due invoices via an API (**need api doc link here**) and automatically retry collection — without shifting your billing or subscription platform onto Recurly. When a past due invoice is submitted, Recurly creates a shell account, a past due invoice with a corresponding transaction, and saves the payment methods.  From there, Recurly calculates a retry schedule, and handles the full collection lifecycle until the invoice is paid or the provided dunning campaign is exhausted.
 
 ## Key benefits
 
@@ -21,9 +21,18 @@ Recurly Recover provides the ability to submit past due invoices via an API and 
 
 # Key details
 
-How it works
+### Set up
 
-Once you've gained access to Recurly and generated your API key, you're ready to start submitting failed invoices. Review the API documentation to understand what a successful call requires.
+Outside of integrating with the recovery API, there are handful of tasks to complete within the Recurly admin UI.
+
+* Generate an API key
+* Integrate your payment gateways.  Currently, only [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe) and [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd) are supported.
+* Set up dunning campaigns and configure dunning emails
+
+Once these tasks are complete, you're ready to start submitting past due invoices. **Review the API documentation** to understand what a successful call requires.
+
+<br />
+
 When a call returns a successful response, Recurly creates the following objects on the account:
 
 A charge
