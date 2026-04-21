@@ -66,7 +66,7 @@ Recurly's integration with Adyen allows businesses to leverage a robust, enterpr
 > * **API PCI Payments role** for your web services user (Step 11.i below)
 > * **Skip CVC** for your Merchant Account (Step 11.ii below)
 
-> ❗️ Ensure Adyen Version is enabled at Recurly 
+> ❗️ Ensure Adyen Version is enabled at Recurly
 >
 > **One flag must be enabled for certain features and future improvements:**
 >
@@ -104,7 +104,7 @@ Ensure a `webservice` user is set up on Adyen to permit Recurly to dispatch tran
 
 ## Step 2: Configure Adyen webhooks
 
-Accurate webhook configuration is required for Recurly to receive transaction status updates, meta-data updates, recurring tokens, and other required information. 
+Accurate webhook configuration is required for Recurly to receive transaction status updates, meta-data updates, recurring tokens, and other required information.
 
 Incorrect setup **will** cause renewals and asynchronous payment methods to fail.
 
@@ -180,9 +180,9 @@ Navigate to **Developers→Additional Data** in Adyen to enable these features. 
   For non-Standard Gateway Setup, please see specific payment method callouts in Special Considerations and Payment methods below.
 </Callout>
 
-# Special Considerations 
+# Special Considerations
 
-## Payment Methods 
+## Payment Methods
 
 | Payment method             | Currency      | Recurrence       | Key notes                                                                                                                                                                                                                                       |
 | -------------------------- | ------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -225,7 +225,7 @@ To integrate the ACH gateway, initiate the 'Adyen ACH' gateway on the "Add Payme
 
 Moreover, ensure these specific configurations are correctly set to effectively process ACH transactions:
 
-1. **Set up** the "report credentials". 
+1. **Set up** the "report credentials".
 
 ### **Setting up "Report Credentials" for ACH and SEPA:**
 
@@ -255,9 +255,9 @@ Moreover, ensure these specific configurations are correctly set to effectively 
 4. Actively **subscribe** to the Payment Accounting Report. A detailed process can be found [here](https://docs.recurly.com/docs/adyen#subscribing-to-the-payment-accounting-report-for-ach).
 5. Within Adyen, **adjust** settings to "immediate capture" for transactions.
 
-### Enabling NACHA Verification 
+### Enabling NACHA Verification
 
-1. Within Adyen, ensure you have **enabled** **GIACT** for NACHA Verification. 
+1. Within Adyen, ensure you have **enabled** **GIACT** for NACHA Verification.
 2. In Recurly Adyen configuration, **enable** within your Adyen configuration on Recurly by checking the box at the bottom of the page, and saving your configuration.
 
 <Image align="center" src="https://files.readme.io/f49c57dc1b942f81b5044b7538580f260cb01da28a09a610e597a359ddfef0c7-Screenshot_2025-07-29_at_4.11.19_PM.png" />
@@ -301,7 +301,7 @@ Within your Adyen platform:
   * Ensure the GPB currency is available for BACS transactions.
 * Enable RECURRING_CONTRACT webhooks. A guide is available <a href="https://docs.adyen.com/development-resources/webhooks/webhook-types/" target="_blank">here</a>.
 
-## Regional Card Considerations 
+## Regional Card Considerations
 
 ### Dual badge card support (France, Belgium, Denmark)
 
@@ -312,7 +312,7 @@ Dual Badge Compliance has two factors: _choice_ and a _non-distinction policy_ b
 To enable Cartes Bancaires, Dankort, or Bancontact support on your Adyen gateway, ensure you follow the below steps:
 
 1. Within the Adyen gateway settings, ensure **Cartes Bancaires**, **Dankort**, and/or **Bancontact** are checked as a card payment method(s) you wish to accept.
-2. Integrate to Recurly.js using either the _cardElement_ or _cardNumberElement_ parameters. See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#elements) and our [Dual/CoBadged guide](https://recurly.com/developers/guides/co-badge.html) for instructions on enabling card brand network preference within your implementation.
+2. Integrate to Recurly.js using either the _cardElement_ or _cardNumberElement_ parameters. See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#elements) and our [Dual/CoBadged guide](https://docs.recurly.com/recurly-subscriptions/docs/co-badged-cards-guide) for instructions on enabling card brand network preference within your implementation.
 3. In the case of Bancontact, ensure that SEPA is also enabled as Bancontact transactions will be converted to SEPA payments for recurring purposes.
    1. Fun facts:
       1. Bancontact cards do not have or require CVV codes.
@@ -451,7 +451,7 @@ Due to Boleto's nature, which does not support direct recurring transactions, a 
 
 ## Final Thoughts
 
-These payment methods are pivotal for merchants aiming to expand in Europe and other relevant regions. With Recurly’s integration with Adyen, businesses can offer their customers a plethora of payment options, facilitating smoother transactions and increasing conversion rates. 
+These payment methods are pivotal for merchants aiming to expand in Europe and other relevant regions. With Recurly’s integration with Adyen, businesses can offer their customers a plethora of payment options, facilitating smoother transactions and increasing conversion rates.
 
 For any queries, connect with our <a href="https://www.recurly.com/contact-us/" target="_blank">support</a> or explore our expansive <a href="https://docs.recurly.com/docs/" target="_blank">knowledge base</a>.
 
@@ -604,7 +604,7 @@ Adyen supports asynchronous payment methods such as SEPA and Boleto. Because the
 
 ## For customer billing information updates
 
-For billing information updates, direct customers to Recurly hosted pages or build your own API connection. 
+For billing information updates, direct customers to Recurly hosted pages or build your own API connection.
 
 Recurly charges the new billing information a small amount or a zero dollar verification if you have set up your gateway properly. After Adyen approves the auth or verification request, Recurly automatically issues a refund.
 
