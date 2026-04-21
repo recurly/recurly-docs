@@ -4,7 +4,7 @@ excerpt: >-
   Payments Hub provides a unified view of payments performance for your Recurly
   site.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Payments Hub
   robots: index
