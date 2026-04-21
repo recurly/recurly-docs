@@ -29,11 +29,13 @@ Outside of integrating with the recovery API, there are handful of tasks to comp
 * Integrate your payment gateways.  Currently, only [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe) and [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd) are supported.
 * Set up dunning campaigns and configure dunning emails
 
+**Note:** There is no need to create or configure plans, items, currencies, taxes, etc.!
+
 Once these tasks are complete, you're ready to start submitting past due invoices. **Review the API documentation** to understand what a successful call requires.
 
 ### How it works
 
-When a successful request is made, Recurly will create an account with a past due invoice, a corresponding failed transaction, and other account level objects. 
+When a successful request is made, Recurly will create an account with a past due invoice, a corresponding failed transaction, and other account level objects.  **Note:** The entry point into Recurly Recover is only through the API.  The ability to create this type of account is not available through the UI. 
 
 **Path:** `/invoices/recovery`
 
@@ -120,16 +122,18 @@ When a successful request is made, Recurly will create an account with a past du
 
 ```
 
-<br />
+### Retry and collection flow
 
-If the Wallet feature flag is enabled, payment methods are marked as primary and backup based on your specifications in the API request. If the BIN backfill feature flag is enabled, Recurly will backfill the token and display the associated credit card details — including card type, last four digits, and expiration date.
-Retry and collection flow
 Recurly calculates the next collection attempt date based on the data in the API request. From there, the retry process follows this logic:
 
-If collection succeeds at any point, the invoice is marked as Paid and a webhook event fires
-If the first attempt fails, Recurly continues retrying for the length of the specified dunning campaign
-If no dunning campaign is provided, Recurly uses your default campaign
-If the campaign is exhausted without a successful collection, the invoice is marked as Failed and a webhook event fires
+* If collection succeeds at any point, the invoice is marked as **Paid** and a webhook event will be sent
+* If the first attempt fails, Recurly continues retrying for the length of the specified dunning campaign
+* If no dunning campaign is provided, Recurly uses your default campaign
+* If the campaign is exhausted without a successful collection, the invoice is marked as **Failed** and a webhook event will be sent
+
+### Wallet
+
+If the Wallet feature flag is enabled, payment methods are marked as primary and backup based on your specifications in the API request. If the BIN backfill feature flag is enabled, Recurly will backfill the token and display the associated credit card details — including card type, last four digits, and expiration date.
 
 While an invoice is in a Past Due state, you can cancel all future collection attempts at any time by marking the invoice as Failed or Paid using the Recurly Invoice API.
 Dunning campaigns and emails
