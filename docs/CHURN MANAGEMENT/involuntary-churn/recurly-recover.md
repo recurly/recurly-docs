@@ -35,7 +35,7 @@ Once these tasks are complete, you're ready to start submitting past due invoice
 
 ### How it works
 
-When a successful request is made, Recurly will create an account with a past due invoice, a corresponding failed transaction, and other account level objects.  **Note:** The entry point into Recurly Recover is only through the API.  The ability to create this type of account is not available through the UI. 
+When a successful request is made, Recurly will create an account with a past due invoice, a corresponding failed transaction, and other account level objects.  Each successful call creates one account with one invoice, and calling the API with an existing account will result in an error.  **Note:** The entry point into Recurly Recover is only through the API.  The ability to create this type of account is not available through the UI. 
 
 **Path:** `/invoices/recovery`
 
