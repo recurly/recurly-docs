@@ -7,35 +7,21 @@ metadata:
 ---
 # Overview
 
-Recurly Standalone Retry lets you collect on failed invoices without using Recurly as your primary subscription management or billing platform. It's purpose-built for merchants who need a dedicated, flexible retry engine — independent of the rest of Recurly's subscription infrastructure.
-
-## Prerequisites
-
-* Active Recurly account with a generated API key
-* Standalone Retry feature flag enabled
-* Vindicia credentials configured in Recurly (required for Vindicia integration only)
-
-## Limitations
-
-Subscriptions are not created as part of the Standalone Retry workflow — accounts exist without subscription objects
-Hard declines are accepted and retried; the platform does not currently reject them at intake
-Applying credits or discounts via the UI after account creation may cause unexpected behavior
+Recurly Recover lets you collect on failed invoices without using Recurly as your primary subscription management or billing platform. It's purpose-built for merchants who need a dedicated, flexible retry engine — independent of the rest of Recurly's subscription infrastructure.
 
 ## Definition
 
-Standalone Retry is a Recurly feature that enables merchants to submit failed invoices via API and automatically retry collection — regardless of whether Recurly manages their subscriptions. When a failed invoice is submitted, Recurly creates the necessary account objects, calculates a retry schedule based on your dunning campaign, and handles the full collection lifecycle until the invoice is paid or the campaign is exhausted.
+Recurly Recover provides the ability to submit past due invoices via an API and automatically retry collection — without shifting your billing or subscription platform onto Recurly. When a past due invoice is submitted, Recurly creates a shell account, a past due invoice with a corresponding transaction, and saves the payment methods.  From there, Recurly calculates a retry schedule, and handles the full collection lifecycle until the invoice is paid or the provided dunning campaign is exhausted.
 
 ## Key benefits
 
-Works independently of your billing stack: You don't need to use Recurly for subscription management to take advantage of its retry engine. Standalone Retry integrates with your existing infrastructure.
-Flexible dunning campaign control: Assign specific dunning campaigns per API request, giving you the ability to run A/B tests across different retry windows and strategies.
-Vindicia integration support: If you're integrated with Vindicia, Recurly can hand off retry attempts at a configurable point in the dunning campaign, maximizing your chances of recovery.
+* Works independently of your billing stack: You don't need to use Recurly for subscription management to take advantage of its retry engine. Recurly Recover seamlessly integrates with your existing infrastructure and is completely self-serve.
+* Flexible dunning campaign control: Assign specific dunning campaigns per API request, giving you the ability to run A/B tests across different retry windows and strategies.
+* Vindicia integration support: If you're integrated with Vindicia, Recurly can hand off retry attempts at a configurable point in the dunning campaign, maximizing your chances of recovery.
 
 # Key details
 
 How it works
-
-
 
 Once you've gained access to Recurly and generated your API key, you're ready to start submitting failed invoices. Review the API documentation to understand what a successful call requires.
 When a call returns a successful response, Recurly creates the following objects on the account:
