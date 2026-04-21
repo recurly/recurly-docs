@@ -4,7 +4,7 @@ excerpt: >-
   Monitor transaction blocking and fraud risk score trends. Track fraud
   protection effectiveness while balancing security with customer experience.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: Fraud Prevention
   robots: index
