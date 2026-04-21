@@ -170,15 +170,25 @@ The **collection window in days** setting in your Vindicia Retry Dunning Setting
 
 In all cases, the account and its associated objects are still created.
 Each dunning campaign can have a unique retry window value. Combined with the ability to send dunning campaign IDs in the API, this gives you the flexibility to run A/B testing across different retry strategies.
-Webhooks
-Recurly fires webhook events at key points in the collection lifecycle — including when an invoice is marked as Paid or Failed. Review the webhooks documentation for a full list of available events.
 
-FAQs
-Do I need to use Recurly as my subscription management platform to use Standalone Retry?
-No. Standalone Retry is designed to work independently, so you can retry failed invoice collection even if Recurly isn't your primary subscription management or billing platform. We don't recommend combining Standalone Retry with Recurly's full subscription management product at this time.
-What happens when a failed invoice is submitted via the API?
+### Webhooks
+
+Recurly will fire webhook events at key points in the collection lifecycle — including when an invoice is marked as Paid or Failed. Review the [webhooks documentation](https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks) for further information.
+
+# FAQs
+
+**Do I need to use Recurly as my subscription management platform to use Recurly Recover?**
+
+No. Recurly Recover is designed to work independently, so you can retry failed invoice collection even if Recurly isn't your subscription management or billing platform. We don't recommend combining Standalone Retry with Recurly's full subscription management product at this time.
+
+**What happens when a failed invoice is submitted via the API?**
+
 Recurly creates an account (without a subscription), along with a charge, a past due invoice, and one or more failed transactions. Billing information is stored on the account, and Recurly automatically calculates the next collection attempt date based on the data in your API request.
-How does the retry process work if I'm also integrated with Vindicia?
+
+**How does the retry process work if I'm also integrated with Vindicia?**
+
 The dunning campaign length is split between Recurly and Vindicia based on the "collection window in days" setting in your Vindicia Retry Dunning Settings. For example, if your campaign is 27 days and the Vindicia window is set to 10, Recurly retries for 17 days, then hands off to Vindicia for the remaining 10. Setting the window to 0 means only Recurly retries; setting it equal to the full campaign length means Vindicia handles all retries immediately.
-Can I stop retry attempts on a past due invoice?
+
+**Can I stop retry attempts on a past due invoice?**
+
 Yes. While an invoice is in a Past Due state, you can cancel all future collection attempts at any time by marking the invoice as Failed or Paid using the Recurly Invoice API.
