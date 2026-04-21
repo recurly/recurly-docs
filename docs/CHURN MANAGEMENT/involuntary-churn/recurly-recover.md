@@ -131,14 +131,16 @@ Recurly calculates the next collection attempt date based on the data in the API
 * If no dunning campaign is provided, Recurly uses your default campaign
 * If the campaign is exhausted without a successful collection, the invoice is marked as **Failed** and a webhook event will be sent
 
-### Wallet
-
-If the Wallet feature flag is enabled, payment methods are marked as primary and backup based on your specifications in the API request. If the BIN backfill feature flag is enabled, Recurly will backfill the token and display the associated credit card details — including card type, last four digits, and expiration date.
-
 While an invoice is in a Past Due state, you can cancel all future collection attempts at any time by marking the invoice as Failed or Paid using the Recurly Invoice API.
 Dunning campaigns and emails
 Each dunning campaign automatically includes dunning emails. If you're managing dunning-related communications through your own system, you can remove or disable these emails in Email Templates within each dunning campaign.
-Vindicia integration
+
+### Wallet
+
+If the Wallet feature is enabled, payment methods are marked as primary and backup based on your specifications in the API request.
+
+### Vindicia integration
+
 If you're integrated with Vindicia, additional configuration is required. You'll need to:
 
 Enter your Vindicia credentials on the Vindicia Retain page in Recurly
