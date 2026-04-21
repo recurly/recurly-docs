@@ -132,8 +132,12 @@ Recurly calculates the next collection attempt date based on the data in the API
 * If the campaign is exhausted without a successful collection, the invoice is marked as **Failed** and a webhook event will be sent
 
 While an invoice is in a Past Due state, you can cancel all future collection attempts at any time by marking the invoice as Failed or Paid using the Recurly Invoice API.
-Dunning campaigns and emails
-Each dunning campaign automatically includes dunning emails. If you're managing dunning-related communications through your own system, you can remove or disable these emails in Email Templates within each dunning campaign.
+
+### Dunning campaigns and emails
+
+Dunning campaigns can be created and configured with different lengths.  Passing in the dunning campaign ID on the API request will determine the retry period based on the dunning length.  This also provides a great tool to conduct A/B testing with different dunning lengths. 
+
+Each dunning campaign automatically includes dunning emails. If you're managing dunning-related communications through your own system, you can remove these emails in each dunning campaign or disable them in Email Templates.
 
 ### Wallet
 
@@ -143,14 +147,27 @@ If the Wallet feature is enabled, payment methods are marked as primary and back
 
 If you're integrated with Vindicia, additional configuration is required. You'll need to:
 
-Enter your Vindicia credentials on the Vindicia Retain page in Recurly
-Select your token option on that same page
+* Enter your Vindicia credentials on the Vindicia Retain page in Recurly
+* Select your token option on that same page
+* Update your dunning campaign's Vindicia retry window
 
-These steps allow Recurly to call Vindicia for additional collection attempts using payment tokens.
-Splitting the dunning window between Recurly and Vindicia
-The collection window in days setting in your Vindicia Retry Dunning Settings determines how the dunning campaign is divided between Recurly and Vindicia.
-Example: If your dunning campaign is 27 days and the Vindicia retry window is set to 10, Recurly retries for 17 days and then hands off to Vindicia for the remaining 10.
-Vindicia window settingBehaviorSet to 0Only Recurly retries; Vindicia is not notifiedSet to a value less than the campaign lengthRecurly retries first, then Vindicia handles the remainderSet equal to the full campaign lengthRecurly does not retry; the past due invoice is sent to Vindicia immediately
+These steps allow Recurly to call Vindicia for additional collection attempts.  Vindicia will be notified of the past due invoice based on the Vindicia retry window within the associated dunning campaign.
+
+<Image align="center" border={true} src="https://files.readme.io/4f74266ccee53a04e7c6be4fff2a4da6237e6d7b41ff7ca3f0c356f2fcf3c6a5-Screenshot_2026-04-21_at_11.56.39_AM.png" className="border" />
+
+### Splitting the dunning window between Recurly and Vindicia
+
+
+The **collection window in days** setting in your Vindicia Retry Dunning Settings determines how the dunning campaign is divided between Recurly and Vindicia.
+
+**Example:** If your dunning campaign is 27 days and the Vindicia retry window is set to 10, Recurly retries for 17 days and then hands off to Vindicia for the remaining 10.
+
+| Vindicia window setting                      | Behavior                                                                     |
+| -------------------------------------------- | ---------------------------------------------------------------------------- |
+| Set to `0`                                   | Only Recurly retries; Vindicia is not notified                               |
+| Set to a value less than the campaign length | Recurly retries first, then Vindicia handles the remainder                   |
+| Set equal to the full campaign length        | Recurly does not retry; the past due invoice is sent to Vindicia immediately |
+
 In all cases, the account and its associated objects are still created.
 Each dunning campaign can have a unique retry window value. Combined with the ability to send dunning campaign IDs in the API, this gives you the flexibility to run A/B testing across different retry strategies.
 Webhooks
