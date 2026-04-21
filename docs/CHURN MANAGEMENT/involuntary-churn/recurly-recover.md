@@ -1,7 +1,7 @@
 ---
 title: Recurly Recover
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
