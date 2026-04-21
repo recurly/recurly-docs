@@ -137,7 +137,7 @@ Each dunning campaign automatically includes dunning emails. If you're managing 
 
 ### Wallet
 
-If the Wallet feature is enabled, payment methods are marked as primary and backup based on your specifications in the API request.
+If the Wallet feature is enabled, payment methods are marked as primary and backup based on your specifications in the API request.  Multiple payment methods can be sent but only one can be designated as primary and only one can be backup.
 
 ### Vindicia integration
 
