@@ -92,15 +92,15 @@ Sent to a customer 7 (or the configured number of days prior) days before every 
   "id": "qlm81nq1drd0",
   "object_type": "subscription",
   "site_id": "qc326l1hl8k9",
-  "event_type": "renewal.6month_subscription_reminder",
-  "event_time": "2022-07-27T15:43:04Z",
+  "event_type": "renewal.six_month_subscription_reminder",
+  "event_time": "2026-04-21T15:43:04Z",
   "uuid": "612bcf671a227b272b753a487fb6576a"
 }
 ```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <prerenewal_notification>
-  <notification_type>annual_subscription_reminder</notification_type>
+  <notification_type>six_month_subscription_reminder</notification_type>
   <account>
     <account_code>account-asdf</account_code>
     <username>Buddha</username>
@@ -132,11 +132,11 @@ Sent to a customer 7 (or the configured number of days prior) days before every 
         <measured_unit_id type="integer">2991694770025207104</measured_unit_id>
       </subscription_add_on>
     </subscription_add_ons>
-    <activated_at type="datetime">2021-02-18T18:08:23Z</activated_at>
+    <activated_at type="datetime">2026-04-21T18:08:23Z</activated_at>
     <canceled_at type="datetime" nil="true"></canceled_at>
     <expires_at type="datetime" nil="true"></expires_at>
-    <current_period_started_at type="datetime">2021-02-18T18:08:23Z</current_period_started_at>
-    <current_period_ends_at type="datetime">2021-02-19T18:08:23Z</current_period_ends_at>
+    <current_period_started_at type="datetime">2025-11-21T18:08:23Z</current_period_started_at>
+    <current_period_ends_at type="datetime">2026-08-21T18:08:23Z</current_period_ends_at>
     <trial_started_at type="datetime" nil="true"></trial_started_at>
     <trial_ends_at type="datetime" nil="true"></trial_ends_at>
     <paused_at type="datetime" nil="true"></paused_at>
