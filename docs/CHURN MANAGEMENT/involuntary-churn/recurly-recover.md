@@ -21,7 +21,7 @@ Recurly Recover provides the ability to submit past due invoices via an API (**n
 
 # Key details
 
-### Set up
+### Setup
 
 Outside of integrating with the recovery API, there are handful of tasks to complete within the Recurly admin UI.
 
@@ -31,14 +31,96 @@ Outside of integrating with the recovery API, there are handful of tasks to comp
 
 Once these tasks are complete, you're ready to start submitting past due invoices. **Review the API documentation** to understand what a successful call requires.
 
+### How it works
+
+When a successful request is made, Recurly will create an account with a past due invoice, a corresponding failed transaction, and other account level objects. 
+
+**Path:** `/invoices/recovery`
+
+**Request:**
+
+```json
+{
+  "currency": "str",
+  "due_at": "2019-08-24T14:15:22Z",
+  "po_number": "string",
+  "external_recovery_eligible": true,
+  "account": {
+    "address": {
+      "phone": "string",
+      "street1": "string",
+      "street2": "string",
+      "city": "string",
+      "region": "string",
+      "postal_code": "string",
+      "country": "string"
+    },
+    "billing_infos": [
+      {
+        "first_name": "string",
+        "last_name": "string",
+        "company": "string",
+        "address": {
+          "phone": "string",
+          "street1": "string",
+          "street2": "string",
+          "city": "string",
+          "region": "string",
+          "postal_code": "string",
+          "country": "string"
+        },
+        "ip_address": "string",
+        "gateway_code": "string",
+        "primary_payment_method": true,
+        "backup_payment_method": true,
+        "payment_gateway_references": [
+          {
+            "token": "string",
+            "reference_type": "stripe_confirmation_token"
+          }
+        ],
+        "network_transaction_id": "string",
+        "transactions": [
+          {
+            "gateway_error_code": "string",
+            "merchant_advice_code": "st",
+            "attempted_collection_date": "2019-08-24T14:15:22Z"
+          }
+        ]
+      }
+    ],
+    "code": "string",
+    "email": "user@example.com",
+    "custom_fields": [
+      {
+        "name": "string",
+        "value": "string"
+      }
+    ],
+    "dunning_campaign_id": "string"
+  },
+  "line_items": [
+    {
+      "tax": 0,
+      "custom_fields": [
+        {
+          "name": "string",
+          "value": "string"
+        }
+      ],
+      "harmonized_system_code": "string",
+      "product_code": "string",
+      "quantity": 1,
+      "description": "string",
+      "unit_amount": 0
+    }
+  ]
+}
+
+
+```
+
 <br />
-
-When a call returns a successful response, Recurly creates the following objects on the account:
-
-A charge
-A past due invoice
-One or more failed transactions
-Billing information (payment token) stored on the account
 
 If the Wallet feature flag is enabled, payment methods are marked as primary and backup based on your specifications in the API request. If the BIN backfill feature flag is enabled, Recurly will backfill the token and display the associated credit card details — including card type, last four digits, and expiration date.
 Retry and collection flow
