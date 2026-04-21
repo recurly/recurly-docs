@@ -83,6 +83,71 @@ Sent one day in advance of when a subscription is set to either begin a new bill
 </prerenewal_notification>
 ```
 
+# 6 Month subscription reminder
+
+Sent to a customer 7 (or the configured number of days prior) days before every 6 months their subscription is active.
+
+```json
+{
+  "id": "qlm81nq1drd0",
+  "object_type": "subscription",
+  "site_id": "qc326l1hl8k9",
+  "event_type": "renewal.annual_subscription_reminder",
+  "event_time": "2022-07-27T15:43:04Z",
+  "uuid": "612bcf671a227b272b753a487fb6576a"
+}
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<prerenewal_notification>
+  <notification_type>annual_subscription_reminder</notification_type>
+  <account>
+    <account_code>account-asdf</account_code>
+    <username>Buddha</username>
+    <email>buddha@buddha.com</email>
+    <first_name>Buddha</first_name>
+    <last_name>Buddha</last_name>
+    <company_name nil="true"/>
+    <phone nil="true"/>
+  </account>
+  <subscription>
+    <plan>
+      <plan_code>dueygolf-daily</plan_code>
+      <name>dueygolf-daily</name>
+    </plan>
+    <uuid>59251f6479964de0f563ee4db383f73b</uuid>
+    <state>active</state>
+    <quantity type="integer">1</quantity>
+    <total_amount_in_cents type="integer">0</total_amount_in_cents>
+    <subscription_add_ons type="array">
+      <subscription_add_on>
+        <add_on_code>daily-usage</add_on_code>
+        <name>daily-usage</name>
+        <quantity type="integer">1</quantity>
+        <add_on_source>plan_add_on</add_on_source>
+        <unit_amount_in_cents nil="true"/>
+        <unit_amount_in_decimal_cents type="float">0.25</unit_amount_in_decimal_cents>
+        <add_on_type>usage</add_on_type>
+        <usage_percentage nil="true"/>
+        <measured_unit_id type="integer">2991694770025207104</measured_unit_id>
+      </subscription_add_on>
+    </subscription_add_ons>
+    <activated_at type="datetime">2021-02-18T18:08:23Z</activated_at>
+    <canceled_at type="datetime" nil="true"></canceled_at>
+    <expires_at type="datetime" nil="true"></expires_at>
+    <current_period_started_at type="datetime">2021-02-18T18:08:23Z</current_period_started_at>
+    <current_period_ends_at type="datetime">2021-02-19T18:08:23Z</current_period_ends_at>
+    <trial_started_at type="datetime" nil="true"></trial_started_at>
+    <trial_ends_at type="datetime" nil="true"></trial_ends_at>
+    <paused_at type="datetime" nil="true"></paused_at>
+    <resume_at type="datetime" nil="true"></resume_at>
+    <remaining_pause_cycles nil="true"/>
+  </subscription>
+</prerenewal_notification>
+```
+
+<br />
+
 ## Annual subscription reminder
 
 Sent to a customer 30 (or the configured number of days prior) days before every 12 months their subscription is active.
