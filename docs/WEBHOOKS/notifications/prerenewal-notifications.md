@@ -146,8 +146,6 @@ Sent to a customer 7 (or the configured number of days prior) days before every 
 </prerenewal_notification>
 ```
 
-<br />
-
 ## Annual subscription reminder
 
 Sent to a customer 30 (or the configured number of days prior) days before every 12 months their subscription is active.
