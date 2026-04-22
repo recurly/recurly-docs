@@ -101,7 +101,7 @@ This new option resides on the [Site Settings page](https://docs.recurly.com/doc
 
 * **Bill Date Reminder**: Dispatched before the upcoming billing date.
 * **Term Renewal Reminder**: Reminders sent before the renewal or billing date, helping subscribers stay informed.
-* **6 Month Reminder**: Sent every 6 months that a subscription is active; in compliance with specific regional regulations.
+* **6 month Reminder**: Sent every 6 months that a subscription is active; in compliance with specific regional regulations.
 * **Annual Reminder**: Sent yearly from the subscription start date; in compliance with specific regional regulations.
 * **Mastercard Reminder**: Sent before the billing date to Mastercard users, including necessary subscription cancellation instructions in line with Mastercard policies.
 * **SEPA Renewal Reminder**: Tailored for users utilizing the SEPA payment method.
