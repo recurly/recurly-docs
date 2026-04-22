@@ -83,7 +83,7 @@ Sent one day in advance of when a subscription is set to either begin a new bill
 </prerenewal_notification>
 ```
 
-# 6 Month subscription reminder
+# Six month subscription reminder
 
 Sent to a customer 7 (or the configured number of days prior) days before every 6 months their subscription is active.
 
