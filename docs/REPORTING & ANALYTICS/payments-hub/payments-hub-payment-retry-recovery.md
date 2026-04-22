@@ -60,10 +60,10 @@ This chart tracks the daily volume of successfully recovered payment transaction
 
 ## Revenue Recovered
 
-* **Retry Attempts** - total number of failed payment transactions that entered the retry queue in the current period, with a comparison to the previous time period.
-* **Revenue at Risk** - total dollar value of transactions that failed were sent into dunning and retries, with a comparison to the previous time period.
-* **Recovered Revenue** - total revenue successfully recaptured through the retry engine, with a comparison to the previous time period. NOTE: Recovered Revenue shown in this report only reflects successful payments as a result of retries, it does not include successful payments that result from dunning prompting customers to manually update their payment methods.
-* **Recovery Rate** - percentage of at-risk revenue that was successfully recovered, along with a comparison to the previous time period. See note above about the exclusion of dunning recovery in this report.
+* **Retry Attempts** - total number of payments that were retried in the time period, compared to the previous time period.
+* **Revenue at Risk** - total dollar value of all invoices whose first payment failed during the time period, with a comparison to the previous time period.
+* **Recovered Revenue** - total revenue recovered through successful retries — this includes intelligent retries, account updater, payment method updates, and third parties reporting recovery back to Recurly. A comparison to the previous time period is also provided.
+* **Recovery Rate** - percentage of at-risk revenue that was successfully recovered in the time period. Note: failures and recoveries are tracked as independent trends and are not matched on a per-invoice basis, so this rate reflects overall recovery health rather than a precise cohort recovery rate.
 
 <br />
 
