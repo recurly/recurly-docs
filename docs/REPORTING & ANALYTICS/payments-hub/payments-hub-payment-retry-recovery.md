@@ -71,6 +71,6 @@ This chart tracks the daily volume of successfully recovered payment transaction
 
 ## Success Rate by Retry Attempt
 
-This chart shows the distribution of successful payment recoveries broken down by which retry attempt successfully processed the payment.
+This chart shows the distribution of successful payment recoveries broken down by which retry attempt successfully processed the payment..
 
 <Image align="center" border={true} src="https://files.readme.io/112efee63ab4631db531883741571cac48da8c81e3374b0d8629f45985580c3a-image.png" className="border" />
