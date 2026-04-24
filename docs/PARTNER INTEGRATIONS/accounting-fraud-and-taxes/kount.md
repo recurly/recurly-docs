@@ -104,9 +104,10 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 
    <Image align="center" src="https://files.readme.io/b1081558529e93b3c2f5890d8a5c219aac99caf915eed6cad7197618a62116bb-Kount-API-Key-Creation.png" />
 8. Your copied key will look something like this: `MG9hMX...lmNjRSMVItTl8zbU1LVXlkNFFKWg==`(the key will be longer, this has been shortened/obfuscated for example purposes). Note the `==` at the end of the key. That is part of the key and should not be deleted.
-9. Head over to Step 2.
+9. Obtain your Account MID from your Kount CSM.
+10. Head over to Step 2.
 
-## Step 2: Enter your Kount API Key in Fraud Management configuration
+## Step 2: Enter your Kount Credentials in Fraud Management configuration
 
 1. Log into your Recurly Site.
 2. Navigate to "Configuration" → "Fraud Management"
