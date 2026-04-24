@@ -90,7 +90,7 @@ For new billing information (Cards) and APMs, Recurly will send relevant payment
 
 ## API Key Configuration and Setup
 
-## Step 1: Obtain your Kount 360 API Key
+## Step 1: Obtain your Kount 360 API Key and MID
 
 You may follow these same steps for your Sandbox or Production Kount credentials. Please be aware that Sandbox Kount credentials will only work when your Recurly site is in 'Development' mode. Please reach out to Recurly support for assistance.
 
@@ -112,9 +112,10 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 2. Navigate to "Configuration" → "Fraud Management"
 3. Click 'Options' and choose 'Edit Configuration'
 4. Website ID: If you have multiple sites using the same Kount MID/API Key, and you have rules based on 'channels' in Kount 360', you will want to enter your website ID exactly as it is entered into Kount. Otherwise, leave this field blank.
-5. API Key: Enter your Kount 360 that you obtained in Step 1 in this field.
-6. Set your Fraud Monitoring Status to 'Enabled'.
-7. Click 'Save Changes'.
+5. Merchant ID: This will be a 6 digit number provided to you by Kount.
+6. API Key: Enter your Kount 360 that you obtained in Step 1 in this field.
+7. Set your Fraud Monitoring Status to 'Enabled'.
+8. Click 'Save Changes'.
 
 ## Step 3: Webhook Configuration (Optional)
 
