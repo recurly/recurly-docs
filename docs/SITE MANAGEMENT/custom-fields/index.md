@@ -117,11 +117,15 @@ When defining the custom field object, if you selected the **Editable in the adm
 
 Each type of custom field and its value can be made available to invoices by selecting the **Allow this field to show up on Invoices** option.  This will allow the custom field to be selected when creating or editing an invoice template.    Once saved to an invoice template, any time that custom field is invoked, it will be displayed on an invoice.
 
+<Image align="center" border={true} src="https://files.readme.io/64ccacfcded34a3016dff483661510043cfe6c12df124ada9561176ef8978687-Screenshot_2026-04-28_at_1.30.42_PM.png" className="border" />
+
 Account custom fields will display at the bottom of the "Bill to" section while all other custom fields types (plan, subscription, item, and charge) will be displayed within the invoice line item that it's associated to.
 
-When you remove a custom field from an invoice template, it won't appear on any new invoices going forward — but your existing invoices will continue to display it.
+<Image align="center" border={true} src="https://files.readme.io/590d88b26f7efc292f35b3b9c2e4c1da8ea7de7747bacccf78b367eb6797dc87-Screenshot_2026-04-28_at_2.49.36_PM.png" className="border" />
 
-<Image align="center" border={true} src="https://files.readme.io/64ccacfcded34a3016dff483661510043cfe6c12df124ada9561176ef8978687-Screenshot_2026-04-28_at_1.30.42_PM.png" className="border" />
+When a custom field is removed from an invoice template, it won't appear on any new invoices going forward — but your existing invoices will continue to display it.
+
+When [account hierarchy](https://docs.recurly.com/recurly-subscriptions/docs/account-hierarchy-1) is enabled and both the parent and child accounts have custom fields, the child account's custom fields will display.
 
 When added to an invoice template, custom fields will also be returned through the [invoices API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_invoice).
 
