@@ -47,10 +47,7 @@ By utilizing custom fields, you can tailor your Recurly experience to match your
 
 Users with the Configuration permission within their role have the ability to create and edit custom field definitions on their Recurly site. These definitions allow you to collect custom field values for accounts, charges, items, plans, or subscriptions.
 
-To create a custom field definition, follow these steps:
-
-1. Navigate to Configuration→Custom Fields→Create Custom Field.
-2. You will be presented with a screen similar to the example below:
+To create a custom field definition, navigate to Configuration → Custom Fields → Create Custom Field.
 
 <Image align="center" src="https://files.readme.io/c6597a7785a4c50599e49efdcd8c7d0913b628cc5450dae8a8d17d7c05ec2b0e-Screenshot_2026-04-06_at_12.48.11_PM.png" />
 
@@ -64,8 +61,7 @@ The following fields are available when creating a custom field definition:
   * **Hidden in the admin console:** The field is only editable or viewable via the API.
   * **Read-only in the admin console:** The field is viewable in the UI but only editable through the API.
   * **Editable in the admin console:** The field can be viewed and edited in both the UI and API.
-  * **Able to set in the admin console (applicable only to Charge):** Enables the field to be set but not viewed in the Admin console.
-* **Admin Console Field Name:** If you enable the field to be set, edited, or viewed in the Admin Console, this field is required, and its value becomes the field name in the Admin Console.
+* **Admin Console Field Name:** If you enable the field to be set, edited, or viewed in the Admin Console, this field is required, and its value becomes the field name in the Admin Console.  If _Allow this field to show up on Invoices_ is selected, this console name also because the name that appears on invoices.
 * **Tooltip Description:** If populated, a question mark icon will appear next to the Admin Console Field Name, providing additional context for users to understand the purpose of the field.
 
 ## Custom field data types
@@ -97,7 +93,7 @@ To delete a custom field definition, follow these steps:
 
 Custom Fields on an Account allow you to collect customer-specific information and add context to the Account object. You can create custom field values to track data such as subscriber ID from other business systems, sales representative name, channel partner name, subscriber segment, or subscriber region. These custom fields provide valuable insights and help you better understand and categorize your customer accounts.
 
-When defining an account custom field object, if you selected the **Editable in the admin console** option, you can set the custom field value when creating or editing an account.  Once the account is created or updated, the custom field and its value will appear within Account Information. 
+When defining an account custom field object, if you selected the **Editable in the admin console** option, you can set the custom field value when creating or editing an account.  Once the account is created or updated, the custom field and its value will appear within Account Information.
 
 # Custom fields on charges
 
@@ -119,7 +115,7 @@ When defining the custom field object, if you selected the **Editable in the adm
 
 # Custom fields on invoices
 
-Each type of custom field and its value can be made available to invoices by selecting the **Allow this field to show up on Invoices** option.  This will allow the custom field to be selected when creating or editing an invoice template.    Once saved to an invoice template, any time that custom field is invoked, it will be displayed on invoices.  
+Each type of custom field and its value can be made available to invoices by selecting the **Allow this field to show up on Invoices** option.  This will allow the custom field to be selected when creating or editing an invoice template.    Once saved to an invoice template, any time that custom field is invoked, it will be displayed on invoices.
 
 Account custom fields will display at the bottom of the "Bill to" section while all other custom fields types (plan, subscription, item, and charge) will be displayed within the invoice line item that it's associated to.
 
