@@ -18,7 +18,7 @@ metadata:
 
 This feature or setting is available to all customers on any Recurly subscription plan.
 
-### Requirements
+### Best Practices
 
 * Checkout.com's robust fraud detection behavior requires the usage of Recurly.js to inform a consumer's browser data, IP address, etc. If you are using 3D-Secure, you will also need to utilize Recurly.js. You will not be able to pass in a card number via our API.
   * You can also use Recurly.js for stored billing information as well by following our guide: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
