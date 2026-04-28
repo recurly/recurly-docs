@@ -115,12 +115,31 @@ When defining the custom field object, if you selected the **Editable in the adm
 
 # Custom fields on invoices
 
-Each type of custom field and its value can be made available to invoices by selecting the **Allow this field to show up on Invoices** option.  This will allow the custom field to be selected when creating or editing an invoice template.    Once saved to an invoice template, any time that custom field is invoked, it will be displayed on invoices.
+Each type of custom field and its value can be made available to invoices by selecting the **Allow this field to show up on Invoices** option.  This will allow the custom field to be selected when creating or editing an invoice template.    Once saved to an invoice template, any time that custom field is invoked, it will be displayed on an invoice.
 
 Account custom fields will display at the bottom of the "Bill to" section while all other custom fields types (plan, subscription, item, and charge) will be displayed within the invoice line item that it's associated to.
 
-If a custom field is removed from an invoice template, any future invoice will no longer show that custom field and its value.
+When you remove a custom field from an invoice template, it won't appear on any new invoices going forward — but your existing invoices will continue to display it.
 
-<Image align="center" src="https://files.readme.io/180aec66e4c19a4c0e1757216be9838198ddfb244b0f45f7e392d835c97c0b91-Screenshot_2026-04-07_at_1.32.48_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/64ccacfcded34a3016dff483661510043cfe6c12df124ada9561176ef8978687-Screenshot_2026-04-28_at_1.30.42_PM.png" className="border" />
 
-**need screenshot of invoice w/ CFs**
+When added to an invoice template, custom fields will also be returned through the [invoices API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_invoice).
+
+**Request:** `/invoices/{1000}`
+
+**Response Snippet:**
+
+```json
+    "custom_fields": [
+        {
+            "name": "csRep",
+            "value": "James Hawthorne",
+            "source_record_type": "account",
+            "source_record_id": "yogj7zapi5y6"
+        }
+    ]
+```
+
+<br />
+
+<br />
