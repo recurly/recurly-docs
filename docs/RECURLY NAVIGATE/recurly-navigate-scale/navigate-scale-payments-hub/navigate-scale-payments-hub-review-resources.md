@@ -64,8 +64,8 @@ metadata:
       <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
       Scale
     </div>
-    <h1>Fraud Prevention Dashboard</h1>
-    <p>The Fraud Prevention dashboard gives Kount-enabled merchants a real-time view of blocked transactions and risk score trends — so you can spot and respond to fraud pressure early.</p>
+    <h1>Payments Hub Review & Resources</h1>
+    <p>Sentence here describing the purpose of this page.</p>
   </div>
 
   <nav class="rc-nav">
@@ -74,8 +74,8 @@ metadata:
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retries</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
   </nav>
 
     <div class="rc-complete">
@@ -83,7 +83,7 @@ metadata:
       <h2>You've explored all 5 dashboards!</h2>
       <p>You now have a working understanding of what's inside Payments Hub and what to look for in each section. Join us on May 7 to go deeper — we'll walk through everything live, answer your questions, and show you how to act on what you're seeing.</p>
       <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">Register for the May 7 walkthrough →</a>
-    </div>
+  </div>
 `}</HTMLBlock>
 
 <br />
