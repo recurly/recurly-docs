@@ -54,16 +54,14 @@ metadata:
 
 <div class="rc-guide">
   <div class="rc-hero">
-    <div class="rc-badge">📊 Payment Analytics</div>
+    <div class="rc-badge">
+      <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
+      Scale
+    </div>
     <h1>Payments Hub</h1>
     <p>Payment Processing is where you find out why payments are failing — broken down by gateway, payment method, card BIN, and decline reason.</p>
-    <div class="rc-flywheel-badge rc-flywheel-retain">RETAIN</div>
-    <div class="rc-hero-stats">
-      <div><div class="rc-num">3</div><div class="rc-lbl">Levels of breakdown</div></div>
-      <div><div class="rc-num">2</div><div class="rc-lbl">Decline types: hard &amp; soft</div></div>
-      <div><div class="rc-num">BIN</div><div class="rc-lbl">Card issuer visibility</div></div>
-    </div>
   </div>
+
 
   <nav class="rc-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub">Payments Hub</a>
