@@ -64,19 +64,18 @@ metadata:
       <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
       Scale
     </div>
-    <h1>Payments Hub</h1>
+    <h1>Payment Processing Dashboard</h1>
     <p>Payment Processing is where you find out why payments are failing — broken down by gateway, payment method, card BIN, and decline reason.</p>
   </div>
 
-
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub">Payments Hub</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-getting-started"><span class="rc-snum">1</span>Getting started</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-overview"><span class="rc-snum">2</span>Overview</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-payment-processing"><span class="rc-snum">3</span>Payment processing</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-account-updater"><span class="rc-snum">4</span>Account updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-retries"><span class="rc-snum">5</span>Payment retries</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-fraud-prevention"><span class="rc-snum">6</span>Fraud prevention</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub">Payments Hub</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview"><span class="rc-snum">1</span>Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retries</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
   </nav>
 
   <div class="rc-sec">
