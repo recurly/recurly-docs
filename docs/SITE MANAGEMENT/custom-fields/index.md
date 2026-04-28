@@ -127,7 +127,7 @@ When a custom field is removed from an invoice template, it won't appear on any 
 
 When [account hierarchy](https://docs.recurly.com/recurly-subscriptions/docs/account-hierarchy-1) is enabled and both the parent and child accounts have custom fields, the child account's custom fields will display.
 
-When added to an invoice template, custom fields will also be returned through the [invoices API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_invoice).
+Custom fields will also be returned through the [invoices API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_invoice).
 
 **Request:** `/invoices/{1000}`
 
