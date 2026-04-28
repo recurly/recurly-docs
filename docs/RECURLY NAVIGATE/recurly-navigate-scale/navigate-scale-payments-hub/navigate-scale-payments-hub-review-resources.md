@@ -84,6 +84,16 @@ metadata:
       <p>You now have a working understanding of what's inside Payments Hub and what to look for in each section. Join us on May 7 to go deeper — we'll walk through everything live, answer your questions, and show you how to act on what you're seeing.</p>
       <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">Register for the May 7 walkthrough →</a>
   </div>
+
+   <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
+    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-fraud-prevention" target="_blank">📖 Docs: Fraud prevention dashboard</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank">🔐 Docs: Kount integration</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">🎤 Register: May 7 Payments Hub walkthrough</a>
+    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub">🧭 Return to path home</a>
+  </div>
+</div>
 `}</HTMLBlock>
 
 <br />
