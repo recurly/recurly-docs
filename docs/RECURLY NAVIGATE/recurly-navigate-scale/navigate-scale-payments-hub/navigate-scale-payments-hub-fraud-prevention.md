@@ -144,7 +144,7 @@ metadata:
 
     <div class="rc-sec-nav">
       <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-retries">← Payment retries</a>
-      <span class="rc-btn-disabled">🎉 Path complete</span>
+      <span class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources">📚 Review & resources</span>
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
