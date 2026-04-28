@@ -64,10 +64,19 @@ metadata:
       <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
       Scale
     </div>
-    <h1>Account Updater</h1>
-    <p>Account Updater automatically refreshes expired or reissued card details before your next billing attempt — without the customer needing to do anything. This dashboard shows you how much revenue that protection is generating.</p>
+    <h1>Account Updater Dashboard</h1>
+    <p>The Account Updater dashboard shows you how much revenue was protected through automatic card updates — before those payments ever had a chance to fail.</p>
   </div>
 
+  <nav class="rc-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub">Payments Hub</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview"><span class="rc-snum">1</span>Overview</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retries</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
+  </nav>
 
     <!-- IMAGE PLACEHOLDER: Screenshot of Account Updater dashboard -->
     <div style="background:var(--brightgray);border-radius:14px;padding:20px;text-align:center;margin-bottom:24px;border:1px dashed var(--lightgray);">
