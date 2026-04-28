@@ -65,7 +65,7 @@ metadata:
 <div class="rc-guide">
   <div class="rc-hero">
     <div class="rc-badge">
-      <img src="https://drive.google.com/uc?export=view&id=19iENz4PHZRl4F4tJHSVenTOhVbVfsZgS" alt="Scale">
+      <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
       Scale
     </div>
     <h1>Payments Hub</h1>
