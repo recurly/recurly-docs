@@ -61,7 +61,7 @@ metadata:
 <div class="rc-guide">
   <div class="rc-hero">
     <div class="rc-badge">
-      <img src="[SCALE_ICON_URL]" alt="Scale">
+      <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
       Scale
     </div>
     <h1>Payments Hub</h1>
@@ -89,7 +89,7 @@ metadata:
     </div>
 
     <!-- Replace [OVERVIEW_SCREENSHOT_URL] with your hosted screenshot -->
-    <img src="[OVERVIEW_SCREENSHOT_URL]" alt="Payments Hub Overview dashboard" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
+    <img src="https://files.readme.io/66c349a0dec8eaad99bea0bec485d293f6fb2c882eed64f2d9a3490aa0db636c-Payments_Hub_Overview_Dashboard.png" alt="Payments Hub Overview dashboard" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
 
     <h3 class="rc-subhead">📋 What's on this dashboard</h3>
     <div class="rc-card">
