@@ -77,6 +77,13 @@ metadata:
     <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
   </nav>
+
+    <div class="rc-complete">
+      <div style="font-size:48px;">🎉</div>
+      <h2>You've explored all 5 dashboards!</h2>
+      <p>You now have a working understanding of what's inside Payments Hub and what to look for in each section. Join us on May 7 to go deeper — we'll walk through everything live, answer your questions, and show you how to act on what you're seeing.</p>
+      <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">Register for the May 7 walkthrough →</a>
+    </div>
 `}</HTMLBlock>
 
 <br />
