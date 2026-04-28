@@ -1,5 +1,5 @@
 ---
-title: 'Payments Hub: Payment Processing'
+title: 'Payments Hub: Payment processing dashboard'
 deprecated: false
 hidden: true
 metadata:
