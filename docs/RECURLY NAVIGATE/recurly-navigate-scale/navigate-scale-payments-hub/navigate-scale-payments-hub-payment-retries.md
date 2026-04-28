@@ -1,5 +1,5 @@
 ---
-title: 'Payments Hub: Payment retries'
+title: 'Payments Hub: Payment retries dashboard'
 deprecated: false
 hidden: true
 metadata:
