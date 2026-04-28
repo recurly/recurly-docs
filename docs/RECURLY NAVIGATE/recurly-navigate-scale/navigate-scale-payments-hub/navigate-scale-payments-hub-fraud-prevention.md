@@ -129,13 +129,6 @@ metadata:
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp3"><label for="fp3" class="rc-clab">Check Blocked Transactions by Gateway. Is fraud pressure concentrated on a specific gateway?<span>If one gateway shows significantly more blocks, it may indicate a routing or rule configuration worth reviewing</span></label></div>
     </div>
 
-    <div class="rc-complete">
-      <div style="font-size:48px;">🎉</div>
-      <h2>You've explored all 5 dashboards!</h2>
-      <p>You now have a working understanding of what's inside Payments Hub and what to look for in each section. Join us on May 7 to go deeper — we'll walk through everything live, answer your questions, and show you how to act on what you're seeing.</p>
-      <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">Register for the May 7 walkthrough →</a>
-    </div>
-
     <div class="rc-office">
       <h4>🗓️ Questions about Kount or fraud settings?</h4>
       <p>Join Global Office Hours to talk through your Fraud Prevention dashboard with a Recurly CSM. Whether you're new to Kount or looking to optimize your rules, we're here to help.</p>
