@@ -11,8 +11,7 @@ metadata:
 # Overview
 
 <Callout icon="👍" theme="okay">
-  **Early Access**
-  Checkout.com is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
+  **Early Access** Checkout.com is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
 </Callout>
 
 ### Required plan
@@ -21,16 +20,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Requirements
 
-<Callout icon="📘" theme="info">
-  #### **Important note:**
-
-  Checkout.com gateway requires Browser (client/customer) Information in all customer initiated transactions, so you will need to use Recurly.js for new signups and new billing information entry, such as billing info updates, regardless of 3DS usage, is important. 
-
-  You may use Recurly.js for either new or existing customers by following our standard guides for 3DS with Recurly.js. 
-
-  If you need 3DS on existing billing information, you may also find our guide for authenticating stored billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
-</Callout>
-
+* Checkout.com's robust fraud detection behavior requires the usage of Recurly.js to inform a consumer's browser data, IP address, etc. If you are using 3D-Secure, you will also need to utilize Recurly.js. You will not be able to pass in a card number via our API.
+  * You can also use Recurly.js for stored billing information as well by following our guide: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
 * Ensure you have your Business Entity Merchant Category Code filled in properly.
 
 ### Limitations
