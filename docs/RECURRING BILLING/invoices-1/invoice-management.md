@@ -75,7 +75,7 @@ A business entity is a critical part of defining your business's identity to you
 
 Your business entity allows you to define your business's identity to your customers. By setting up your business entity, you can control the company name, address, contact phone number, and VAT/Tax ID information that is displayed on customer invoices. You are also able to set a unique entity tax address for your business within the business entity setup, that can either be the same address as the invoice display or entirely different.
 
-<Image align="center" border={true} src="https://files.readme.io/4b5f1fc-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/2d854e9d97470a9a00e91944efdb6f1283cdcf0cbd4a37a39aa25773626b28e4-Screenshot_2026-04-28_at_2.25.43_PM.png" className="border" />
 
 For businesses with global locations, Recurly offers the flexibility to set different addresses for invoice display and tax calculations. This means you could have a US address used for tax calculation on a purchase,  and a European address for invoice display.
 
@@ -183,8 +183,7 @@ Located at the top left of the invoice, this section lists your company's inform
 Every invoice includes a Bill To address for the customer:
 
 * Defaults to Billing Information for automatic collection methods or Account Information for manual methods.
-* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration→Taxes→Tax Settings.
-  Fields displayed in the Bill To section:
+* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration→Taxes→Tax Settings. Fields displayed in the Bill To section:
 * First and Last Name
 * Company Name (from Account Information)
 * Address (Address 1 and Address 2)
@@ -204,8 +203,7 @@ An invoice includes a Ship To address if a shipping address is associated with t
 * State/Province
 * Zip/Postal Code
 * Country
-* VAT Number
-  Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses)
+* VAT Number Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses)
 
 ### Line items
 
@@ -232,8 +230,7 @@ At the bottom right of the invoice, the following invoice-level values are displ
 * **Subtotal:** The total before taxes and additional charges.
 * **Tax:** Shown only if tax is applicable to the invoice.
 * **Total:** The invoice total, inclusive of all charges and taxes.
-* **Balance:** The remaining amount due on the invoice.
-  Between the Total and Balance, the following balance-changing entries are listed:
+* **Balance:** The remaining amount due on the invoice. Between the Total and Balance, the following balance-changing entries are listed:
 * **Paid:** Represents the total of all payment transactions.
 * **Credit Applied/Redeemed:** The total value of all credit payments applied to the invoice.
 * **Payment Refund:** The total of all refund transactions made against the invoice.
