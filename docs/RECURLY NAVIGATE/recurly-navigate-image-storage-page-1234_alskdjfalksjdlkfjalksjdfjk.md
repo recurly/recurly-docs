@@ -27,13 +27,15 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" />
 
-<br />
+  <br />
 
-# page images
+  # page images
 
-<Image align="center" src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" />
+  <Image align="center" src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" />
 
-<br />
+  <br />
+
+<Image align="center" src="https://files.readme.io/66c349a0dec8eaad99bea0bec485d293f6fb2c882eed64f2d9a3490aa0db636c-Payments_Hub_Overview_Dashboard.png" />
 
 </div>
 
