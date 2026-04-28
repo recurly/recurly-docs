@@ -125,7 +125,7 @@ metadata:
     </div>
 
     <!-- Replace [NAV_IMAGE_URL] with the hosted URL of your navigation screenshot -->
-    <img src="[NAV_IMAGE_URL]" alt="Navigating to Payments Hub in Recurly Analytics" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
+    <img src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
