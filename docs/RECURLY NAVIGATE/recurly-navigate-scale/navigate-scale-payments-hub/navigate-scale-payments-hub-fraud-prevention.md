@@ -88,10 +88,7 @@ metadata:
       </div>
     </div>
 
-    <!-- IMAGE PLACEHOLDER: Screenshot of Fraud Prevention dashboard -->
-    <div style="background:var(--brightgray);border-radius:14px;padding:20px;text-align:center;margin-bottom:24px;border:1px dashed var(--lightgray);">
-      <p style="color:var(--gray);font-size:.85rem;margin:0;">📸 <em>Image: Fraud Prevention dashboard screenshot</em></p>
-    </div>
+    <img src="https://files.readme.io/44645be7caeb3412eb2d65f1627ede0c4115b23b8a52d57250bf66992fe46933-Fraud_Prevention_Dashboard.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
 
     <div class="rc-warning">
       <span class="rc-wicon">⚠️</span>
