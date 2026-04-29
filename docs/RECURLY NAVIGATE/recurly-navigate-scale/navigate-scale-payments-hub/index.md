@@ -149,7 +149,13 @@ metadata:
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Getting started checklist</h3></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="gs1"><label for="gs1" class="rc-clab">Open Payments Hub in your Recurly account<span>Analytics → Payments Hub → Overview</span></label></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="gs2"><label for="gs2" class="rc-clab">Confirm all 5 sections are visible in your left nav: Overview, Payment Processing, Account Updater, Payment Retry Recovery, and Fraud Prevention<span>If any are missing, check your user role or contact support</span></label></div>
+     <div class="rc-cli">
+  <input type="checkbox" class="rc-cb" id="gs2">
+  <label for="gs2" class="rc-clab">
+    Confirm your available dashboards are visible: Overview, Payment Processing, Account Updater, Payment Retry Recovery, and Fraud Prevention
+    <span>All Payments Hub dashboards require Analytics permissions for visibility. <strong>Note</strong>: The Fraud Prevention dashboard will only be visible if using Kount as a feature, and the Account Updater dashboard will only be available if you have Account Updater enabled.</span>
+  </label>
+</div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="gs3"><label for="gs3" class="rc-clab">Take note of the first number that catches your attention on the Overview dashboard<span>You'll dig into this in the next step</span></label></div>
     </div>
 
