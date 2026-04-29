@@ -116,7 +116,7 @@ metadata:
 
     <div class="rc-tip">
       <span class="rc-tipicon">🔗</span>
-      <div><h4>Understanding your decline codes</h4><p>Not sure what a specific decline message means? Recurly's guide to credit card decline messages explains the most common codes and how Recurly responds to each. <a href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank" style="color:var(--orange);font-weight:700;">Read the decline guide →</a></p></div>
+      <div><h4>Understanding your decline codes</h4><p>Not sure what a specific decline message means? This reference doc explains the most common codes and how Recurly responds to each. <a href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank" style="color:var(--orange);font-weight:700;">Read about decline codes →</a></p></div>
     </div>
 
     <h3 class="rc-subhead">✅ Activity: Explore Payment Processing</h3>
