@@ -87,10 +87,7 @@ metadata:
       </div>
     </div>
 
-    <!-- IMAGE PLACEHOLDER: Screenshot of Payment Retries dashboard -->
-    <div style="background:var(--brightgray);border-radius:14px;padding:20px;text-align:center;margin-bottom:24px;border:1px dashed var(--lightgray);">
-      <p style="color:var(--gray);font-size:.85rem;margin:0;">📸 <em>Image: Payment Retry Recovery dashboard screenshot</em></p>
-    </div>
+   <img src="https://files.readme.io/dd846483711337200d1b60b8f6e3d4cfc3b778110e986a4b7380e492093a5dc3-Payment_Retry_Recovery.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
 
     <h3 class="rc-subhead">📋 What's on this dashboard</h3>
     <div class="rc-card">
