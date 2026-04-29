@@ -64,8 +64,8 @@ metadata:
       <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
       Scale
     </div>
-    <h1>Payment Retries Dashboard</h1>
-    <p>The Payment Retries dashboard shows exactly how much initially failed revenue was recovered through intelligent retries — and at which retry attempt it was captured.</p>
+    <h1>Payment Retry Recovery Dashboard</h1>
+    <p>The Payment Retry Recovery dashboard shows exactly how much initially failed revenue was recovered through intelligent retries — and at which retry attempt it was captured.</p>
   </div>
 
   <nav class="rc-nav">
@@ -73,7 +73,7 @@ metadata:
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview"><span class="rc-snum">1</span>Overview</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retries</a>
+    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retry recovery</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
   </nav>
@@ -115,11 +115,11 @@ metadata:
       <div><h4>What the retry attempt chart tells you</h4><p>The "Success by Retry Attempt Number" chart is one of the most useful views in Payments Hub. It shows the distribution of which retry number is capturing the payment. For most merchants, the bulk of recoveries happen within the first 10 attempts — which validates that your dunning timeline is appropriate and that Recurly's intelligent retry logic is working as expected.</p></div>
     </div>
 
-    <h3 class="rc-subhead">✅ Activity: Explore Payment Retries</h3>
+    <h3 class="rc-subhead">✅ Activity: Explore Payment Retry Recovery</h3>
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Payment retries activity</h3></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt1"><label for="rt1" class="rc-clab">What is your current retry recovery rate?<span>Remember: this is retries only, not dunning — your total recovery rate across both will be higher</span></label></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt2"><label for="rt2" class="rc-clab">Compare your recovered revenue to your revenue at risk. What percentage is being saved?<span>Revenue at risk = all initial payment failures. Recovered revenue = what retries captured from that pool.</span></label></div>
+      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt1"><label for="rt1" class="rc-clab">What is your current recovery rate?<span>Remember: this is your <strong>retry recovery rate</strong> only, not dunning. Your total recovery rate across both will be higher.</span></label></div>
+      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt2"><label for="rt2" class="rc-clab"><strong>UNSURE IF THIS IS CORRECT - CHECKING WITH TEAM</strong>Compare your recovered revenue to your revenue at risk. What percentage is being saved?<span>Revenue at risk = all initial payment failures. Recovered revenue = what retries captured from that pool.</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt3"><label for="rt3" class="rc-clab">Look at the Success by Retry Attempt chart. At which attempt number do most of your recoveries happen?<span>If most payments are capturing very late (attempt 15+), your dunning timeline may benefit from adjustment</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt4"><label for="rt4" class="rc-clab">Open your main Analytics dunning dashboard and note the overall recovery number. How does it compare to the retries-only number here?<span>The gap between the two represents dunning-assisted recovery (customers re-entering cards)</span></label></div>
     </div>
@@ -127,19 +127,19 @@ metadata:
     <div class="rc-office">
       <h4>🗓️ Want to optimize your retry strategy?</h4>
       <p>Join Global Office Hours to talk through your retry recovery data with a CSM. We can help you understand what your numbers mean in context and identify opportunities to improve.</p>
-      <a href="https://navigate.recurly.com/event-hub/">Register for office hours →</a>
+      <a href="https://navigate.recurly.com/event-hub/"target="_blank">Register for office hours →</a>
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-account-updater">← Account updater</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-fraud-prevention">Next: Fraud prevention →</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater">← Account Updater</a>
+      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention">Next: Fraud prevention →</a>
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-retry-recovery" target="_blank">📖 Docs: Payment retry recovery</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-retry-recovery" target="_blank">📖 Docs: Payment retry recovery</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/retry-logic" target="_blank">🔁 Docs: Intelligent retries</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank">🌐 Join Global Office Hours</a>
   </div>
 </div>
 `}</HTMLBlock>
