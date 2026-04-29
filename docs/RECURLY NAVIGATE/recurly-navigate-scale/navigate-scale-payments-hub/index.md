@@ -101,7 +101,7 @@ metadata:
 
     <div class="rc-card">
       <h3 class="rc-subhead">🧩 The problem it solves</h3>
-      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Before Payments Hub, understanding your payment performance meant logging into each gateway portal separately, manually reconciling the data, and hoping it all matched what Recurly was reporting. It was time-consuming, error-prone, and incomplete.</p>
+      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">Before Payments Hub, understanding your payment performance meant logging into each gateway portal separately, and manually reconciling the data.</p>
       <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0;">Payments Hub changes that. It pulls all of your payment data — across every connected gateway, payment method, and value-add service — into one place. One view to understand what's working, what isn't, and where to focus.</p>
     </div>
 
