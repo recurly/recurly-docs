@@ -77,7 +77,7 @@ metadata:
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview"><span class="rc-snum">1</span>Overview</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retries</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retry recovery</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
   </nav>
@@ -100,13 +100,15 @@ metadata:
 
     <h3 class="rc-subhead">🗺️ What's inside</h3>
     <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">🏠</div><h4>Overview</h4><p>Top-level payment health — success rates, volume by region, and payment method mix.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">💳</div><h4>Payment processing</h4><p>Acceptance rates by gateway, payment method, card BIN, and decline reason.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Account updater</h4><p>Revenue protected through automatic card updates before payments fail.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🏠</div><h4>Overview dashboard</h4><p>Top-level payment health — success rates, volume by region, and payment method mix.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">💳</div><h4>Payment processing dashboard</h4><p>Acceptance rates by gateway, payment method, card BIN, and decline reason.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Account updater dashboard</h4><p>Revenue protected through automatic card updates before payments fail.</p></div>
     </div>
     <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">🔁</div><h4>Payment retries</h4><p>Recovered revenue through intelligent retries — and which attempt captured it.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🛡️</div><h4>Fraud prevention</h4><p>Blocked transactions and risk score trends. Available for Kount-enabled merchants.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🔁</div><h4>Payment retry recovery dashboard</h4><p>Recovered revenue through intelligent retries — and which attempt captured it.</p></div>
+      <div className="rc-wi">
+  <div className="rc-wi-icon">🛡️</div>
+  <h4>Fraud prevention</h4><p>Blocked transactions and risk score trends. Available for Kount-enabled merchants. Learn more about Kount <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a>.</p></div>
       <div class="rc-wi"><div class="rc-wi-icon">🎯</div><h4>How this path works</h4><p>Each step walks through one dashboard, what it shows, and an activity to try in your account.</p></div>
     </div>
 
