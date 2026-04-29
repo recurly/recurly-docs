@@ -99,9 +99,9 @@ metadata:
         <strong>Overall success rate</strong> — Your blended payment success rate across all methods and gateways, with a comparison to the previous time period.<br><br>
         <strong>CIT success rate</strong> — Customer Initiated Transactions: payments where the customer is actively in session (sign-ups, checkout clicks, dunning re-entries).<br><br>
         <strong>MIT success rate</strong> — Merchant Initiated Transactions: automatic recurring renewals and scheduled payments.<br><br>
-        <strong>Account Updater tile</strong> — Revenue authorized on automatically updated cards in the period.<br><br>
+        <strong>Account Updater tile</strong> — Revenue authorized on automatically updated cards in the period. Data visible to Account Updater enabled merchants only. Learn more about Account Updater <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank" rel="noopener noreferrer">here</a>.<br><br>
         <strong>Payment Retry Recovery tile</strong> — Revenue recovered through intelligent retries in the period.<br><br>
-        <strong>Fraud blocking tile</strong> — Count of transactions blocked by Kount (Kount-enabled merchants only).
+        <strong>Fraud blocking tile</strong> — Count of transactions blocked by Kount. Data visible to Kount-enabled merchants only. Learn more about Kount <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a>.
       </p>
     </div>
 
