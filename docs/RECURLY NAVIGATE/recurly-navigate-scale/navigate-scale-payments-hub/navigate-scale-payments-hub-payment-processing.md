@@ -88,8 +88,7 @@ metadata:
     </div>
 
     <!-- IMAGE PLACEHOLDER: Screenshot of Payment Processing dashboard -->
-    <div src="https://files.readme.io/8f305076d6acfa324bd422edaf949a4a4d60d596edb29ebd0d336e8179640407-Overview_Dashboard.png" style="background:var(--brightgray);border-radius:14px;padding:20px;text-align:center;margin-bottom:24px;border:1px dashed var(--lightgray);">
-      <p style="color:var(--gray);font-size:.85rem;margin:0;">📸 <em>Image: Payment Processing dashboard screenshot</em></p>
+    <img src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
     </div>
 
     <h3 class="rc-subhead">📋 What's on this dashboard</h3>
