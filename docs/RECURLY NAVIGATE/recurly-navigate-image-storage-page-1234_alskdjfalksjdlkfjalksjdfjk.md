@@ -6,6 +6,9 @@ hidden: true
 metadata:
   robots: index
 ---
+<div style={{ backgroundColor: '#ccc9b8', minHeight: '100vh' }}>
+  <h1>Welcome to my React App</h1>
+  <p>The background is now that nice sage-grey!</p>
 
 # Flywheel Logos
 
@@ -45,4 +48,4 @@ metadata:
 
 <Image align="center" src="https://files.readme.io/44645be7caeb3412eb2d65f1627ede0c4115b23b8a52d57250bf66992fe46933-Fraud_Prevention_Dashboard.png" />
 
-
+</div>
