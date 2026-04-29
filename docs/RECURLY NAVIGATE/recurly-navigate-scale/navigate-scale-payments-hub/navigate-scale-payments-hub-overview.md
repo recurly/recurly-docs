@@ -89,7 +89,7 @@ metadata:
     </div>
 
     <!-- Replace [OVERVIEW_SCREENSHOT_URL] with your hosted screenshot -->
-    <img src="https://files.readme.io/66c349a0dec8eaad99bea0bec485d293f6fb2c882eed64f2d9a3490aa0db636c-Payments_Hub_Overview_Dashboard.png" alt="Payments Hub Overview dashboard" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
+    <img src="https://files.readme.io/8f305076d6acfa324bd422edaf949a4a4d60d596edb29ebd0d336e8179640407-Overview_Dashboard.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
 
     <h3 class="rc-subhead">📋 What's on this dashboard</h3>
     <div class="rc-card">
