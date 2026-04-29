@@ -122,8 +122,7 @@ metadata:
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-account-updater" target="_blank">📖 Docs: Account updater dashboard</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank">📚 Navigate: Account Updater learning path</a>
+<a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank">📚 Navigate: Account Updater Customer Learning</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank">🌐 Join Global Office Hours</a>
   </div>
