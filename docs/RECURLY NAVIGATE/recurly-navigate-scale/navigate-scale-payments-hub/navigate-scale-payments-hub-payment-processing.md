@@ -141,9 +141,9 @@ metadata:
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-processing" target="_blank">📖 Docs: Payment processing</a>
-    <a class="rc-link-btn rc-link-sec" href="https://recurly.com/blog/credit-card-decline-messages-what-they-mean-and-how-recurly-responds/" target="_blank">📝 Decline messages guide</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank">📝 Decline messages documentation</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank">🌐 Join Global Office Hours</a>
   </div>
 </div>
 `}</HTMLBlock>
