@@ -99,10 +99,17 @@ metadata:
         <strong>Overall success rate</strong> — Your blended payment success rate across all methods and gateways, with a comparison to the previous time period.<br><br>
         <strong>CIT success rate</strong> — Customer Initiated Transactions: payments where the customer is actively in session (sign-ups, checkout clicks, dunning re-entries).<br><br>
         <strong>MIT success rate</strong> — Merchant Initiated Transactions: automatic recurring renewals and scheduled payments.<br><br>
-        <strong>Account Updater tile</strong> — Revenue authorized on automatically updated cards in the period. Data visible to Account Updater enabled merchants only. Learn more about Account Updater <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank" rel="noopener noreferrer">here</a>.<br><br>
+        <strong>Account Updater tile</strong> — Revenue authorized on automatically updated cards in the period. Data visible to Account Updater enabled merchants only. See tip below for details.<br><br>
         <strong>Payment Retry Recovery tile</strong> — Revenue recovered through intelligent retries in the period.<br><br>
-        <strong>Fraud blocking tile</strong> — Count of transactions blocked by Kount. Data visible to Kount-enabled merchants only. Learn more about Kount <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a>.
+        <strong>Fraud blocking tile</strong> — Count of transactions blocked by Kount. Data visible to Kount-enabled merchants only. See tip below for details.
       </p>
+    <div class="rc-tip">
+      <span class="rc-tipicon">💡</span>
+      <div><h4>No data on Account Updater or Fraud tiles?</h4><p>If you don't have Account Updater or Kount enabled, those tiles will display a "Learn More" prompt instead of data. This is expected — the dashboard is aware of which features you have active.<br>
+        Learn more about <strong>Kount fraud prevention <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a></strong>.<br>
+				<strong>Account Updater not enabled yet?</strong> Learn what it means and how to make it work for you <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank" rel="noopener noreferrer">here</a></strong>.
+</p></div>
+    </div>
     </div>
 
     <h3 class="rc-subhead">🔍 CIT vs. MIT — what's the difference?</h3>
@@ -128,11 +135,6 @@ metadata:
         <strong>Initiated by</strong> — Filter to CIT only or MIT only.<br>
         <strong>Currency</strong> — Filter to a specific currency.
       </p>
-    </div>
-
-    <div class="rc-tip">
-      <span class="rc-tipicon">💡</span>
-      <div><h4>No data on Account Updater or Fraud tiles?</h4><p>If you don't have Account Updater or Kount enabled, those tiles will display a "Learn More" prompt instead of data. This is expected — the dashboard is aware of which features you have active.</p></div>
     </div>
 
     <h3 class="rc-subhead">✅ Activity: Explore the Overview</h3>
