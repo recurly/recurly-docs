@@ -131,7 +131,7 @@ metadata:
     <div class="rc-office">
       <h4>🗓️ Questions about your decline data?</h4>
       <p>Bring your Payment Processing questions to Global Office Hours. Our CSMs can help you interpret your decline patterns and identify the best next steps for your specific setup.</p>
-      <a href="https://navigate.recurly.com/event-hub/">Register for office hours →</a>
+      <a href="https://navigate.recurly.com/event-hub/" target="_blank">Register for office hours →</a>
     </div>
 
     <div class="rc-sec-nav">
@@ -140,7 +140,7 @@ metadata:
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-processing" target="_blank">📖 Docs: Payment processing</a>
+    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-processing" target="_blank">📖 Docs: Payment processing</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank">📝 Decline messages documentation</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank">🌐 Join Global Office Hours</a>
