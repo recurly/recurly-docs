@@ -106,7 +106,7 @@ metadata:
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Account updater activity</h3></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="au1"><label for="au1" class="rc-clab">How much revenue was authorized on updated cards in the last 30 days?<span>This is the revenue you would have likely lost without Account Updater running in the background</span></label></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="au2"><label for="au2" class="rc-clab">Look at the Update Type chart. What percentage of your updates are card number changes vs. expiry updates?<span>A high proportion of number changes may indicate a recent fraud event at an issuer</span></label></div>
+      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="au2"><label for="au2" class="rc-clab">Look at the Update Type chart. What percentage of your updates are card number changes vs. expiry updates?<span>A high proportion of card number changes may indicate a recent fraud event at an issuer</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="au3"><label for="au3" class="rc-clab">Check Updates by Card Type. Which card network is generating the most update activity?<span>If a major network like Discover shows near-zero updates, it may be worth checking your AU enrollment coverage</span></label></div>
     </div>
 
