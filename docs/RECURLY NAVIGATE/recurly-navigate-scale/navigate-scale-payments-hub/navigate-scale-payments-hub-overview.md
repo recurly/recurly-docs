@@ -106,7 +106,7 @@ metadata:
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
       <div><h4>No data on Account Updater or Fraud tiles?</h4><p>If you don't have Account Updater or Kount enabled, those tiles will display a "Learn More" prompt instead of data. This is expected — the dashboard is aware of which features you have active.<br><br>
-        Learn more about <strong>Kount fraud prevention <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a></strong>.<br><br>
+        Learn more about <strong>Kount fraud prevention <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a></strong>.<br>
 				<strong>Account Updater not enabled yet?</strong> Learn what it means and how to make it work for you <strong><a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank" rel="noopener noreferrer">here</a></strong>.
 </p></div>
       </div></div>
