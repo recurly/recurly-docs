@@ -102,10 +102,6 @@ metadata:
       <div><h4>What to look for in Update Type</h4><p>A card number change means the subscriber received an entirely new card — often due to fraud or bank migration. These carry more risk than an expiry update because the old number is fully invalid. If you see a high proportion of card number changes, it may indicate a fraud event at a major issuer affecting your subscriber base.</p></div>
     </div>
 
-    <div class="rc-warning">
-      <span class="rc-wicon">⚠️</span>
-      <p><strong>Not seeing Account Updater data?</strong> This dashboard requires Account Updater to be enabled on your Recurly site. If you see no data or a "Learn More" prompt, Account Updater may not be active for your account. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank" style="color:var(--orange);font-weight:700;">Learn about Account Updater →</a></p>
-    </div>
 
     <h3 class="rc-subhead">✅ Activity: Explore Account Updater</h3>
     <div class="rc-checklist">
