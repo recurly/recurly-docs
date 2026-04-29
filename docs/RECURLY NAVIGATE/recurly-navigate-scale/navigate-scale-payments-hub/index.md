@@ -106,8 +106,8 @@ metadata:
     </div>
     <div class="rc-3col">
       <div class="rc-wi"><div class="rc-wi-icon">🔁</div><h4>Payment retry recovery dashboard</h4><p>Recovered revenue through intelligent retries — and which attempt captured it.</p></div>
-      <div className="rc-wi">
-  <div className="rc-wi-icon">🛡️</div>
+      <div class="rc-wi">
+  <div class="rc-wi-icon">🛡️</div>
   <h4>Fraud prevention</h4><p>Blocked transactions and risk score trends. Available for Kount-enabled merchants. Learn more about Kount <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a>.</p></div>
       <div class="rc-wi"><div class="rc-wi-icon">🎯</div><h4>How this path works</h4><p>Each step walks through one dashboard, what it shows, and an activity to try in your account.</p></div>
     </div>
