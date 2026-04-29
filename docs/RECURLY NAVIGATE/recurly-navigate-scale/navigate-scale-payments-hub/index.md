@@ -31,9 +31,16 @@ metadata:
 .rc-wi-icon{font-size:28px;margin-bottom:10px}
 .rc-wi h4{font-size:.88rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}
 .rc-wi p{font-size:.8rem;color:var(--gray);line-height:1.5;margin:0}
-.rc-steps{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
-.rc-step{background:var(--offwhite);border-radius:14px;padding:22px 26px;border:1px solid var(--lightgray);display:flex;gap:18px;align-items:flex-start}
-.rc-sbadge{width:38px;height:38px;border-radius:10px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+
+/* UPDATED SECTION: Consolidated "How to find it" card */
+.rc-steps{background:var(--offwhite);border-radius:14px;padding:28px;border:1px solid var(--lightgray);display:flex;flex-direction:column;gap:0;margin-bottom:28px}
+.rc-step{display:flex;gap:18px;align-items:flex-start;position:relative;padding-bottom:24px}
+.rc-step::after{content:"";position:absolute;left:19px;top:38px;bottom:0;width:2px;background:var(--lightgray)}
+.rc-step:last-child{padding-bottom:0}
+.rc-step:last-child::after{display:none}
+.rc-sbadge{width:38px;height:38px;border-radius:10px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;z-index:1}
+/* END UPDATED SECTION */
+
 .rc-step h3{font-size:.98rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}
 .rc-step p{font-size:.87rem;color:var(--gray);line-height:1.6;margin:0}
 .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}
@@ -126,7 +133,6 @@ metadata:
       <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Select Payments Hub</h3><p>Under Analytics, click <strong>Payments Hub</strong> to open the Overview dashboard — your starting point for all payment analytics.</p></div></div>
     </div>
 
-    <!-- Replace [NAV_IMAGE_URL] with the hosted URL of your navigation screenshot -->
     <img src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
 
     <div class="rc-warning">
