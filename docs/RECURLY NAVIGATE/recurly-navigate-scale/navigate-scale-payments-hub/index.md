@@ -156,7 +156,7 @@ metadata:
     <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub" target="_blank">📖 Recurly Docs: Payments Hub</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/user-roles-and-permissions" target="_blank">🔐 User roles and permissions</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/"target="_blank">🌐 Join Global Office Hours</a>
   </div>
 </div>
 `}</HTMLBlock>
