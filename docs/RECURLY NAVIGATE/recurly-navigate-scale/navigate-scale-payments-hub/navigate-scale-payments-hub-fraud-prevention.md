@@ -73,7 +73,7 @@ metadata:
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview"><span class="rc-snum">1</span>Overview</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retries</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retry recovery</a>
     <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
   </nav>
@@ -129,20 +129,20 @@ metadata:
     <div class="rc-office">
       <h4>🗓️ Questions about Kount or fraud settings?</h4>
       <p>Join Global Office Hours to talk through your Fraud Prevention dashboard with a Recurly CSM. Whether you're new to Kount or looking to optimize your rules, we're here to help.</p>
-      <a href="https://navigate.recurly.com/event-hub/">Register for office hours →</a>
+      <a href="https://navigate.recurly.com/event-hub/" target="_blank">Register for office hours →</a>
     </div>
 
     <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-payments-hub-retries">← Payment retries</a>
+      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries">← Payment retry recovery</a>
       <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources">📚 Review & resources</a>
     </div>
 
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-fraud-prevention" target="_blank">📖 Docs: Fraud prevention dashboard</a>
+    <a class="rc-link-btnrc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-fraud-prevention" target="_blank">📖 Docs: Fraud prevention dashboard</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank">🔐 Docs: Kount integration</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">🎤 Register: May 7 Payments Hub walkthrough</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">🎤 Payments Hub Walkthrough</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank">🌐 Join Global Office Hours</a>
   </div>
 </div>
 `}</HTMLBlock>
