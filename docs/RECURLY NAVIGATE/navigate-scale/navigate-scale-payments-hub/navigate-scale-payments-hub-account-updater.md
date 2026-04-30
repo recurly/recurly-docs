@@ -113,7 +113,7 @@ metadata:
 
     <div class="rc-office">
       <h4>🗓️ Not using Account Updater yet?</h4>
-      <p>Join Global Office Hours to talk with a CSM about whether Account Updater is right for your business and how to get it enabled. It's one of the most impactful revenue protection tools available to Recurly merchants.</p>
+      <p>Join Global Office Hours to talk with a CSM about whether Account Updater is right for your business and how to get it enabled. It's one of the most impactful, proactive revenue recovery tools available to Recurly merchants.</p>
       <a href="https://navigate.recurly.com/event-hub/" target="_blank">Register for office hours →</a>
     </div>
 
