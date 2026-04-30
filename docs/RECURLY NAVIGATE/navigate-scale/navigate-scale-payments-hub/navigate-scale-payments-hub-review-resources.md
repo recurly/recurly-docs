@@ -95,7 +95,7 @@ metadata:
       <h2>You've explored all 5 Payments Hub dashboards!</h2>
       <p>You now know what each dashboard shows, what to look for, and how to take action. Ready to go deeper? Watch the on-demand Payments Hub walkthrough or bring your questions to a live Global Office Hours session.</p>
       <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">▶ Watch: Payments Hub Walkthrough</a>
-      <a class="rc-sec-btn" href="https://navigate.recurly.com/event-hub/" target="_blank">🗓️ Need help now? Join Office Hours</a>
+      <a class="rc-sec-btn" href="https://navigate.recurly.com/event-hub/" target="_blank">🗓️ Need guidance? Join Office Hours</a>
     </div>
 
     <!-- Dashboard recap -->
