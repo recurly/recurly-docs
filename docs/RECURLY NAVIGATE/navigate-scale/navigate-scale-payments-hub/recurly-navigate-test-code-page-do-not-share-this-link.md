@@ -18,7 +18,17 @@ metadata:
 body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);background-color:#fff;}
 
 /* HERO */
-.rc-hero{background:var(--offblack);color:#fff;padding:56px 40px 40px;text-align:center;border-radius:16px;margin-bottom:24px;}
+.rc-hero{
+  /* Integrating topographic watermark over offblack background color */
+  background: var(--offblack) url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-size: cover; /* Ensures watermark covers entire hero area */
+  
+  color:#fff;
+  padding:56px 40px 40px;
+  text-align:center;
+  border-radius:16px;
+  margin-bottom:24px;
+}
 
 /* Replacing the pill/badge styles with the new logo and text lockup styles */
 .rc-brand-header {
@@ -236,8 +246,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   </div>
     <div class="rc-footer-summary">
       <h3><strong>Maximizing your subscription potential.</strong></h3>
-				<br>
-					<p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
+        <br>
+          <p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
   </div>
 
 
