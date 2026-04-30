@@ -41,7 +41,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-sec-header h2{font-size:2rem;font-weight:800;margin:0 0 10px;color:var(--offblack)}
 .rc-sec-header p{color:var(--gray);font-size:1.05rem;max-width:600px;margin:0 auto;}
 
-.rc-hub-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin-bottom:56px;}
+.rc-hub-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin-bottom:24px;}
 .rc-hub-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:16px;padding:32px 24px;text-decoration:none;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;align-items:center;text-align:center;}
 .rc-hub-card:hover{border-color:var(--yellow);box-shadow:0 8px 24px rgba(255,215,6,.15);transform:translateY(-4px);}
 .rc-hub-icon{width:64px;height:64px;border-radius:14px;background:var(--offblack);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
@@ -51,12 +51,26 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hub-card p{font-size:.9rem;color:var(--gray);line-height:1.5;margin:0;flex-grow:1;}
 .rc-hub-arrow{margin-top:20px;color:var(--orange);font-weight:700;font-size:.9rem;}
 
+/* GETTING STARTED CTA */
+.rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
+.rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
+.rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
+.rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
+.rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
+
 /* BOTTOM CONTEXT (Flywheel & Info) */
-.rc-context-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:var(--brightgray);padding:40px;border-radius:16px;margin-bottom:40px;}
+.rc-context-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:var(--offwhite);border:1px solid var(--lightgray);padding:40px;border-radius:16px;margin-bottom:40px;}
 .rc-context-info h3{font-size:1.5rem;font-weight:800;margin:0 0 16px;color:var(--offblack);}
 .rc-context-info p{font-size:1rem;color:var(--darkgray);line-height:1.7;margin:0 0 16px;}
 .rc-flywheel-img{background:var(--offblack);border-radius:16px;padding:24px;display:flex;justify-content:center;}
 .rc-flywheel-img img{max-width:100%;height:auto;max-height:300px;}
+
+/* BOTTOM NAVIGATION */
+.rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:32px;margin-top:20px;text-align:center;}
+.rc-footer-title{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gray);margin-bottom:16px;}
+.rc-footer-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.rc-footer-link{color:var(--darkgray);text-decoration:none;font-weight:700;font-size:.9rem;padding:8px 20px;background:var(--brightgray);border-radius:8px;transition:all .2s;}
+.rc-footer-link:hover{background:var(--offblack);color:var(--yellow);}
 
 /* RESPONSIVE */
 @media(max-width:900px){
@@ -68,7 +82,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   .rc-hero{padding:36px 20px 40px}
   .rc-hero-stats{grid-template-columns:1fr;gap:24px;padding-top:28px}
   .rc-hero-stat+.rc-hero-stat::before{display:none}
-  .rc-featured{flex-direction:column;align-items:flex-start;text-align:left;}
+  .rc-featured, .rc-starter-cta{flex-direction:column;align-items:flex-start;text-align:left;}
   .rc-hub-grid{grid-template-columns:1fr;}
   .rc-context-wrap{padding:24px;}
 }
@@ -164,6 +178,14 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     </a>
   </div>
 
+  <div class="rc-starter-cta">
+    <div class="rc-starter-text">
+      <h3>👋 New to Navigate?</h3>
+      <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
+    </div>
+    <a href="#" class="rc-btn-secondary">Get Started Here</a>
+  </div>
+
   <div class="rc-context-wrap">
     <div class="rc-context-info">
       <h3>The Recurly Flywheel</h3>
@@ -172,6 +194,18 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     </div>
     <div class="rc-flywheel-img">
       <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="Recurly Flywheel — Launch, Acquire, Retain, Scale" />
+    </div>
+  </div>
+
+  <div class="rc-footer-nav">
+    <div class="rc-footer-title">Jump to a section</div>
+    <div class="rc-footer-links">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-footer-link">Acquire</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-footer-link">Scale</a>
+      <a href="https://navigate.recurly.com/event-hub/" class="rc-footer-link" target="_blank">Events</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-footer-link" target="_blank">Office Hours</a>
     </div>
   </div>
 
