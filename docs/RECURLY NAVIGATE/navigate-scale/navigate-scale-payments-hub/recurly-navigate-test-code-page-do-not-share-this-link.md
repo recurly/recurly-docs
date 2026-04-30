@@ -128,7 +128,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   <div class="rc-hero">
     
     <div class="rc-brand-header">
-      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
+      <img src="https://files.readme.io/5ec397dfaa38b1e1e86b79cbd08fc6d93452ed0b735ef3c37c8e810d4230158f-Logo_for_Black_BG_V2.svg" alt="Recurly" class="rc-logo-image">
     </div>
 
     <h1>Your Subscription Success Hub</h1>
