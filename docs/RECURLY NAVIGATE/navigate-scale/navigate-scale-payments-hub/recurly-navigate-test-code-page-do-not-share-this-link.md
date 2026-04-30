@@ -26,7 +26,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 24px; /* Space from the main h1 title */
+  margin-bottom: 30px; /* Space from the main h1 title */
 }
 .rc-logo-image {
   height: 50px; /* Set a clean, balanced height for the brand header */
