@@ -202,6 +202,11 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="Recurly Flywheel — Launch, Acquire, Retain, Scale" />
     </div>
   </div>
+  
+  <div class="rc-footer-summary">
+    <p><strong>Maximizing your subscription potential.</strong> Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
+  </div>
+
 
   <div class="rc-footer-nav">
     <div class="rc-footer-title">Jump to a section</div>
