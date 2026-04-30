@@ -1,5 +1,6 @@
 - automated-exports
 - account-notes-export
+- copy-of-account-notes-export
 - accounts-export
 - adjustments-exports
 - adjustments-coupons
@@ -31,4 +32,3 @@
 - subscription-ramp-pricing-export
 - usages-records-export
 - transaction-export
-- copy-of-account-notes-export
