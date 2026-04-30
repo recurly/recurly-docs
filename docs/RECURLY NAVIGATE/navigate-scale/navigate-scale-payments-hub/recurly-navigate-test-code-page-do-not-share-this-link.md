@@ -60,11 +60,11 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hero>p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 0;color:var(--lightgray);line-height:1.6}
 
 /* Removed border-top here to eliminate the faint horizontal line */
-.rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:40px;padding-top:20px;text-align:center}
+.rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:35px;padding-top:20px;text-align:center}
 
 .rc-hero-stat{padding:0 20px;position:relative}
 .rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
-.rc-hero-stat-label{font-size:.72rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
+.rc-hero-stat-label{font-size:.72rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
 
 /* FEATURED BANNER */
 .rc-featured{background:var(--offwhite);border:2px solid var(--yellow);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:48px;}
