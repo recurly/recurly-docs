@@ -90,7 +90,7 @@ metadata:
       <p style="font-size:.92rem;color:var(--darkgray);line-height:1.75;margin:0;">
         <strong>Successful card updates</strong> — Total number of cards successfully updated in the period, with comparison to previous period.<br><br>
         <strong>Successful updates over time</strong> — A line chart showing the daily count of card updates. A sudden drop may signal an issue worth investigating.<br><br>
-        <strong>Payments authorized on updated cards</strong> — The total revenue successfully charged on cards that were updated by Account Updater. This is your primary measure of revenue protection.<br><br>
+        <strong>Payments authorized on updated cards</strong> — The total amount of revenue successfully charged on cards that were updated by Account Updater.<br><br>
         <strong>Successful payments over time</strong> — A bar chart showing the revenue volume on updated cards by day.<br><br>
         <strong>Update type</strong> — A breakdown of card number changes vs. expiration date updates. Card number changes carry more disruption risk; expiry updates are more routine.<br><br>
         <strong>Updates by card type</strong> — Which card networks (Visa, Mastercard, Amex, Discover) are driving the most update activity.
