@@ -42,14 +42,14 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-sec-header p{color:var(--gray);font-size:1.05rem;max-width:600px;margin:0 auto;}
 
 .rc-hub-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin-bottom:24px;}
-.rc-hub-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:16px;padding:32px 24px;text-decoration:none;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;align-items:center;text-align:center;}
-.rc-hub-card:hover{border-color:var(--yellow);box-shadow:0 8px 24px rgba(255,215,6,.15);transform:translateY(-4px);}
-.rc-hub-icon{width:64px;height:64px;border-radius:14px;background:var(--offblack);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.rc-hub-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:16px;padding:32px 24px;text-decoration:none !important;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;align-items:center;text-align:center;}
+.rc-hub-card:hover{border-color:var(--yellow);box-shadow:0 8px 24px rgba(255,215,6,.15);transform:translateY(-4px);text-decoration:none !important;}
+.rc-hub-icon{width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
 .rc-hub-icon img{width:32px;height:32px;object-fit:contain;}
 .rc-hub-icon.emoji{font-size:32px;background:var(--brightgray);}
-.rc-hub-card h3{font-size:1.3rem;font-weight:800;margin:0 0 10px;color:var(--offblack);}
-.rc-hub-card p{font-size:.9rem;color:var(--gray);line-height:1.5;margin:0;flex-grow:1;}
-.rc-hub-arrow{margin-top:20px;color:var(--orange);font-weight:700;font-size:.9rem;}
+.rc-hub-card h3{font-size:1.3rem;font-weight:800;margin:0 0 10px;color:var(--offblack);text-decoration:none !important;}
+.rc-hub-card p{font-size:.9rem;color:var(--gray);line-height:1.5;margin:0;flex-grow:1;text-decoration:none !important;}
+.rc-hub-arrow{margin-top:20px;color:var(--orange);font-weight:700;font-size:.9rem;text-decoration:none !important;}
 
 /* GETTING STARTED CTA */
 .rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
@@ -59,7 +59,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
 
 /* BOTTOM CONTEXT (Flywheel & Info) */
-.rc-context-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:var(--offwhite);border:1px solid var(--lightgray);padding:40px;border-radius:16px;margin-bottom:40px;}
+.rc-context-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:var(--offwhite);border:1px solid var(--lightgray);padding:40px;border-radius:16px;margin-bottom:24px;}
 .rc-context-info h3{font-size:1.5rem;font-weight:800;margin:0 0 16px;color:var(--offblack);}
 .rc-context-info p{font-size:1rem;color:var(--darkgray);line-height:1.7;margin:0 0 16px;}
 .rc-flywheel-img{background:var(--offblack);border-radius:16px;padding:24px;display:flex;justify-content:center;}
@@ -71,6 +71,12 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-footer-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
 .rc-footer-link{color:var(--darkgray);text-decoration:none;font-weight:700;font-size:.9rem;padding:8px 20px;background:var(--brightgray);border-radius:8px;transition:all .2s;}
 .rc-footer-link:hover{background:var(--offblack);color:var(--yellow);}
+
+/* FOOTER SUMMARY */
+.rc-footer-summary{margin-top:40px;padding-top:32px;border-top:1px solid var(--lightgray);text-align:center;color:var(--gray);font-size:.95rem;line-height:1.6;max-width:800px;margin-left:auto;margin-right:auto;margin-bottom:24px;}
+.rc-footer-summary strong{color:var(--darkgray);}
+.rc-footer-summary a{color:var(--orange);text-decoration:none;font-weight:700;}
+.rc-footer-summary a:hover{text-decoration:underline;}
 
 /* RESPONSIVE */
 @media(max-width:900px){
@@ -128,8 +134,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
   <div class="rc-hub-grid">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-hub-card">
-      <div class="rc-hub-icon">
-        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch" />
+      <div class="rc-hub-icon" style="background-color: #ccc9b8;">
+        <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" />
       </div>
       <h3>Launch</h3>
       <p>Get configured and live fast. Build a solid subscription foundation from day one.</p>
@@ -137,8 +143,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     </a>
 
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-hub-card">
-      <div class="rc-hub-icon">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire" />
+      <div class="rc-hub-icon" style="background-color: #ffd706;">
+        <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire" />
       </div>
       <h3>Acquire</h3>
       <p>Convert more customers, optimize sign-ups, and grow your subscriber base.</p>
@@ -146,7 +152,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     </a>
 
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-hub-card">
-      <div class="rc-hub-icon">
+      <div class="rc-hub-icon" style="background-color: #ff9d88;">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain" />
       </div>
       <h3>Retain</h3>
@@ -155,7 +161,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     </a>
 
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-hub-card">
-      <div class="rc-hub-icon">
+      <div class="rc-hub-icon" style="background-color: #ff5810;">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale" />
       </div>
       <h3>Scale</h3>
@@ -207,6 +213,10 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <a href="https://navigate.recurly.com/event-hub/" class="rc-footer-link" target="_blank">Events</a>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-footer-link" target="_blank">Office Hours</a>
     </div>
+  </div>
+
+  <div class="rc-footer-summary">
+    <p><strong>Maximizing your subscription potential.</strong> Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
   </div>
 
 </div>
