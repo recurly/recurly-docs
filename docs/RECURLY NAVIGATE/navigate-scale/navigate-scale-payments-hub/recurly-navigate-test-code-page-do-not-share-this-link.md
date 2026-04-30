@@ -60,7 +60,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hero>p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 0;color:var(--lightgray);line-height:1.6}
 
 /* Removed border-top here to eliminate the faint horizontal line */
-.rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:35px;padding-top:20px;text-align:center}
+.rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:35px;padding-top:0px;text-align:center}
 
 .rc-hero-stat{padding:0 20px;position:relative}
 .rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
