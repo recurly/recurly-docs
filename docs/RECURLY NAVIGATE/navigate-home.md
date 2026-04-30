@@ -94,7 +94,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray)}
     <p>Navigate is your home for Recurly best practices, expert guidance, and on-demand education. Everything you need to fully optimize your Recurly instance — available anytime, all in one place.</p>
     <div class="rc-hero-ctas">
       <a class="rc-btn-primary" href="https://navigate.recurly.com/event-hub/" target="_blank">🗓️ Join Office Hours</a>
-      <a class="rc-btn-ghost" href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">▶ Watch a Learning Path</a>
+      <a class="rc-btn-ghost" href="https://navigate.recurly.com/event-hub/" target="_blank">📅 Upcoming Events</a>
     </div>
   </div>
 
