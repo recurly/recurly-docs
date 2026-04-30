@@ -40,7 +40,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   margin-bottom: 30px; /* Space from the main h1 title */
 }
 .rc-logo-image {
-  height: 50px; /* Set a clean, balanced height for the brand header */
+  height: 40px; /* Set a clean, balanced height for the brand header */
   width: auto;
 }
 .rc-logo-text {
@@ -52,10 +52,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   white-space: nowrap;
   letter-spacing: 0.2px;
 }
-.rc-logo-divider {
-  color: rgba(255, 255, 255, 0.4); /* Faded white for a subtle divider, similar to example */
-  margin: 0 4px;
-}
+
 /* Note: For actual 'Plus Jakarta Sans' or 'Recurly Curly' web fonts, replace the font-family stack in .rc-logo-text above. */
 
 
