@@ -29,7 +29,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   margin-bottom: 24px; /* Space from the main h1 title */
 }
 .rc-logo-image {
-  height: 32px; /* Set a clean, balanced height for the brand header */
+  height: 50px; /* Set a clean, balanced height for the brand header */
   width: auto;
 }
 .rc-logo-text {
