@@ -102,7 +102,7 @@ metadata:
         <strong>Blocked transactions over time</strong> — A line chart tracking daily blocked transaction count. Sudden spikes are an early signal of an active fraud attack.<br><br>
         <strong>Average risk score</strong> — The mean Kount risk score assigned to transactions in the period. Higher scores indicate higher risk. A rising average score often precedes an increase in blocked transactions — giving you a window to act proactively.<br><br>
         <strong>Average risk score over time</strong> — Tracks your daily average risk score. Use this as an early warning system — a trend upward here usually comes before a spike in blocks.<br><br>
-        <strong>Fraud by payment method</strong> — A breakdown of blocked transactions by payment method. Helps you understand where fraud attempts are concentrating.<br><br>
+        <strong>Fraud by payment method</strong> — A breakdown of blocked transactions by payment method. This helps you understand where fraud attempts are concentrating.<br><br>
         <strong>Blocked transactions by gateway</strong> — A bar chart showing fraud-blocked volume per gateway.
       </p>
     </div>
