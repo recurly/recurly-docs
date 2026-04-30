@@ -1,5 +1,5 @@
 ---
-title: Dunning 101
+title: 'Dunning 101: The Basics'
 deprecated: false
 hidden: true
 metadata:
