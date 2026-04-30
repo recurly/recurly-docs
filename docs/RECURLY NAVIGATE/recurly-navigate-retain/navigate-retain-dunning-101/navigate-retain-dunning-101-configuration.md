@@ -1,5 +1,5 @@
 ---
-title: 'Dunning 101: Setup & Configurations'
+title: 'Dunning 101: Setup & configuration'
 deprecated: false
 hidden: true
 metadata:
@@ -183,4 +183,4 @@ metadata:
 </div>
 `}</HTMLBlock>
 
-<br />
+8&
