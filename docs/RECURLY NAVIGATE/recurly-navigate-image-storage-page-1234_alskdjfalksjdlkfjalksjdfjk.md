@@ -48,6 +48,10 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/44645be7caeb3412eb2d65f1627ede0c4115b23b8a52d57250bf66992fe46933-Fraud_Prevention_Dashboard.png" />
 
-<Image align="center" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" />
+  <Image align="center" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" />
+
+<Image align="center" src="https://files.readme.io/3b1dcecb0fe15a2befc3516f0ea62f247b031b9479d355c1a11a8954cb4fb7a8-Logo_for_Yellow_BG_V2.svg" />
+
+<br />
 
 </div>
