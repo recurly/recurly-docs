@@ -20,7 +20,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 /* HERO */
 .rc-hero{
   /* Integrating topographic watermark with an 80% offblack overlay */
-  background: linear-gradient(rgba(13, 13, 11, 0.8), rgba(13, 13, 11, 0.8)), 
+  background: linear-gradient(rgba(13, 13, 11, 0.8), rgba(13, 13, 11, 0.8)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
   background-color: var(--offblack);
   background-size: cover; /* Ensures watermark covers entire hero area */
@@ -40,12 +40,11 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   margin-bottom: 30px; /* Space from the main h1 title */
 }
 .rc-logo-image {
-  height: 40px; /* Set a clean, balanced height for the brand header */
+  height: 40px; /* Preserve user's updated height */
   width: auto;
 }
 .rc-logo-text {
   color: white;
-  /* Simulating 'Plus Jakarta Sans' or a geometric sans-serif stack for 'Customer Success' text as requested */
   font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -53,15 +52,16 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   letter-spacing: 0.2px;
 }
 .rc-logo-divider {
-  color: rgba(255, 255, 255, 0.4); /* Faded white for a subtle divider, similar to example */
+  color: rgba(255, 255, 255, 0.4); /* Subtle divider */
   margin: 0 4px;
 }
-/* Note: For actual 'Plus Jakarta Sans' or 'Recurly Curly' web fonts, replace the font-family stack in .rc-logo-text above. */
-
 
 .rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
 .rc-hero>p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 0;color:var(--lightgray);line-height:1.6}
-.rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:44px;padding-top:36px;border-top:1px solid rgba(255,255,255,.1);text-align:center}
+
+/* Removed border-top here to eliminate the faint horizontal line */
+.rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:44px;padding-top:36px;text-align:center}
+
 .rc-hero-stat{padding:0 20px;position:relative}
 .rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
 .rc-hero-stat-label{font-size:.72rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
