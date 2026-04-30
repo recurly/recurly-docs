@@ -19,7 +19,35 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
 /* HERO */
 .rc-hero{background:var(--offblack);color:#fff;padding:56px 40px 40px;text-align:center;border-radius:16px;margin-bottom:24px;}
-.rc-badge{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:var(--offblack);border-radius:20px;padding:6px 18px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
+
+/* Replacing the pill/badge styles with the new logo and text lockup styles */
+.rc-brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px; /* Space from the main h1 title */
+}
+.rc-logo-image {
+  height: 32px; /* Set a clean, balanced height for the brand header */
+  width: auto;
+}
+.rc-logo-text {
+  color: white;
+  /* Simulating 'Plus Jakarta Sans' or a geometric sans-serif stack for 'Customer Success' text as requested */
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+.rc-logo-divider {
+  color: rgba(255, 255, 255, 0.4); /* Faded white for a subtle divider, similar to example */
+  margin: 0 4px;
+}
+/* Note: For actual 'Plus Jakarta Sans' or 'Recurly Curly' web fonts, replace the font-family stack in .rc-logo-text above. */
+
+
 .rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
 .rc-hero>p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 0;color:var(--lightgray);line-height:1.6}
 .rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:44px;padding-top:36px;border-top:1px solid rgba(255,255,255,.1);text-align:center}
@@ -98,7 +126,12 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 <div class="rc-guide">
 
   <div class="rc-hero">
-    <div class="rc-badge">📋 Recurly Navigate</div>
+    
+    <div class="rc-brand-header">
+      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
+      <span class="rc-logo-text">Navigate <span class="rc-logo-divider">|</span> Customer Success</span>
+    </div>
+
     <h1>Your Subscription Success Hub</h1>
     <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
     
@@ -202,12 +235,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="Recurly Flywheel — Launch, Acquire, Retain, Scale" />
     </div>
   </div>
-  
-  <div class="rc-footer-summary">
-    <H3><strong>Maximizing your subscription potential.</strong></H3><br>
-<p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
-  </div>
-
 
   <div class="rc-footer-nav">
     <div class="rc-footer-title">Jump to a section</div>
@@ -219,6 +246,10 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <a href="https://navigate.recurly.com/event-hub/" class="rc-footer-link" target="_blank">Events</a>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-footer-link" target="_blank">Office Hours</a>
     </div>
+  </div>
+
+  <div class="rc-footer-summary">
+    <p><strong>Maximizing your subscription potential.</strong> Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
   </div>
 
 </div>
