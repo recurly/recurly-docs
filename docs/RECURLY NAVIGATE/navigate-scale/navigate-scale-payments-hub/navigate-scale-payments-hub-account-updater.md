@@ -65,7 +65,7 @@ metadata:
       Scale
     </div>
     <h1>Account Updater Dashboard</h1>
-    <p>The Account Updater dashboard shows you how much revenue was protected through automatic card updates — before those payments ever had a chance to fail.</p>
+    <p>The Account Updater dashboard shows you how much revenue was protected through proactive, automatic card updates — before those payments ever had a chance to fail.</p>
   </div>
 
   <nav class="rc-nav">
