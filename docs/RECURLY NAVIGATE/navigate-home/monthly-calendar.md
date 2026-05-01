@@ -6,66 +6,77 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<div style="background-color: #fca896; padding: 40px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #333; max-width: 800px; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<div style="background-color: #FDFBF4; padding: 40px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #000000; max-width: 750px; margin: 0 auto; border-radius: 8px;">
 
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 30px;">
-    <tr>
-      <td width="180" valign="top" align="center">
-        <div style="background-color: #ffe600; width: 150px; height: 150px; border-radius: 50%; overflow: hidden; display: inline-block; border: 4px solid #ffe600;">
-          <img src="YOUR_IMAGE_URL_HERE" alt="CSM" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-      </td>
-      <td valign="middle" style="padding-left: 20px;">
-        <h1 style="margin: 0 0 5px 0; font-size: 32px; color: #1a1a1a;">May</h1>
-        <h2 style="margin: 0 0 15px 0; font-size: 24px; font-weight: normal; color: #1a1a1a;">Upcoming events</h2>
-        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #1a1a1a;">
-          As your Customer Success Manager, I want to make sure it's as easy as possible for you to find all the events that will help drive success at your business. Below are this month's key webinars and office hours, and sign up links below.
-        </p>
-      </td>
-    </tr>
-  </table>
+  <h1 style="color: #E27210; font-size: 48px; font-weight: 700; line-height: 1.1; margin: 0 0 16px 0;">May<br>Upcoming events</h1>
+  <p style="font-size: 16px; margin: 0 0 32px 0; line-height: 1.5;">
+    As your Customer Success Manager, I want to make sure it's as easy as possible for you to find all the events that will help drive success at your business. Below are this month's key webinars and office hours, and sign up links below.
+  </p>
 
-  <div style="background-color: #ffffff; padding: 25px; border-radius: 8px; margin-bottom: 20px;">
-    <h3 style="margin: 0 0 5px 0; color: #666; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Recurly Payments Hub:</h3>
-    <h2 style="margin: 0 0 10px 0; color: #1a1a1a; font-size: 22px;">LUNCH & LEARN</h2>
-    <p style="font-weight: bold; margin: 0 0 10px 0; font-size: 18px;">Your new payment analytics dashboard</p>
-    <p style="margin: 0 0 15px 0; line-height: 1.5;">You asked, and we listened. A full picture of your payment performance is now available in one place. Learn what's in the hub, what each metric means, and how to put it to work for you.</p>
-    <p style="margin: 0;">
-      <strong>Thursday, May 7th | 1:00PM CT</strong> - 
-      <a href="INSERT_LINK_HERE" style="color: #0056b3; text-decoration: none; font-weight: bold;">click here to register</a>
+  <div style="background-color: #EFEFE8; border-radius: 16px; padding: 32px; margin-bottom: 24px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+      <h2 style="font-size: 26px; font-weight: 700; margin: 0; line-height: 1.3;">Recurly Payments Hub:<br>Your new payment analytics dashboard</h2>
+      <div style="background-color: #FFD400; font-weight: 700; font-size: 12px; padding: 8px 16px; border-radius: 24px; text-transform: uppercase; white-space: nowrap; margin-left: 16px;">
+        Lunch & Learn
+      </div>
+    </div>
+    <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.5;">
+      <strong style="font-weight: 700;">You asked, and we listened. A full picture of your payment performance is now available in one place.</strong><br>
+      Learn what's in the hub, what each metric means, and how to put it to work for you.
+    </p>
+    <p style="margin: 0; font-size: 16px; font-weight: 700;">
+      Thursday, May 7th | 1:00PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">click here</a> to register
     </p>
   </div>
 
-  <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
-    <p style="margin: 0 0 5px 0; font-weight: bold;">Have a reporting question? Or just want to learn more about Recurly's data dashboards?</p>
-    <p style="margin: 0 0 10px 0; color: #555;">Join Office Hours with Patrick Rizzo, Senior CSM</p>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.6;">
-      <li>Wednesday, May 6th | 3:00 PM CT - <a href="INSERT_LINK_HERE" style="color: #0056b3; text-decoration: none;">Sign up here</a></li>
-      <li>Wednesday, May 27th | 3:00 PM CT - <a href="INSERT_LINK_HERE" style="color: #0056b3; text-decoration: none;">Sign up here</a></li>
-    </ul>
-  </div>
-  
-  <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
-    <p style="margin: 0 0 5px 0; font-weight: bold;">Have a churn question? Or just want to learn more about Recurly's churn tools?</p>
-    <p style="margin: 0 0 10px 0; color: #555;">Join Office Hours with Julia Lackner, CSM</p>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.6;">
-      <li>Monday, May 11th | 12:30 PM CT - <a href="INSERT_LINK_HERE" style="color: #0056b3; text-decoration: none;">Sign up here</a></li>
-    </ul>
+  <div style="background-color: #FCA048; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
+    <div>
+      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">Have a reporting question?</h2>
+      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's data dashboards?</p>
+      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
+        Join Office Hours with Patrick Rizzo, Senior CSM<br>
+        Wednesday, May 6th | 3:00 PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a><br>
+        Wednesday, May 27th | 3:00 PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a>
+      </p>
+    </div>
+    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
+      <img src="YOUR_IMAGE_URL_PATRICK" style="width: 100%; height: 100%; object-fit: cover;" alt="Patrick Rizzo">
+    </div>
   </div>
 
-  <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-    <p style="margin: 0 0 5px 0; font-weight: bold;">Have an acquisition question? Or just want to learn more about Recurly's acquisition strategies?</p>
-    <p style="margin: 0 0 10px 0; color: #555;">Join Office Hours with Santi Gomez, CSM</p>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.6;">
-      <li>Friday, May 1st | 11:00 AM CT - <a href="INSERT_LINK_HERE" style="color: #0056b3; text-decoration: none;">Sign up here</a></li>
-      <li>Friday, May 22nd | 11:00 AM CT - <a href="INSERT_LINK_HERE" style="color: #0056b3; text-decoration: none;">Sign up here</a></li>
-    </ul>
+  <div style="background-color: #F89B8F; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
+    <div>
+      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">Have a churn question?</h2>
+      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's churn tools?</p>
+      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
+        Join Office Hours with Julia Lackner, CSM<br>
+        Monday, May 11th | 12:30 PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a>
+      </p>
+    </div>
+    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
+      <img src="YOUR_IMAGE_URL_JULIA" style="width: 100%; height: 100%; object-fit: cover;" alt="Julia Lackner">
+    </div>
   </div>
 
-  <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; text-align: center;">
-    <p style="margin: 0 0 10px 0;"><strong>Need something on an earlier timezone? Don't worry! Our EMEA based CSM team has you covered.</strong></p>
-    <p style="margin: 0;">We host weekly office hours for any topic you may need help on. <a href="INSERT_LINK_HERE" style="font-weight: bold; color: #0056b3; text-decoration: none;">Simply sign up here.</a></p>
+  <div style="background-color: #FDE152; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 32px;">
+    <div>
+      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">Have an acquisition question?</h2>
+      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's acquisition strategies?</p>
+      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
+        Join Office Hours with Santi Gomez, CSM<br>
+        Friday, May 1st| 11:00 AM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a><br>
+        Friday, May 22nd | 11:00 AM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a>
+      </p>
+    </div>
+    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
+      <img src="YOUR_IMAGE_URL_SANTI" style="width: 100%; height: 100%; object-fit: cover;" alt="Santi Gomez">
+    </div>
   </div>
+
+  <p style="margin: 0; font-size: 16px; line-height: 1.5;">
+    <strong style="font-weight: 700;">Need something on an earlier timezone?</strong> Don't worry! Our EMEA based CSM team has you covered. We host weekly office hours for any topic you may need help on.<br>
+    Simply <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline; font-weight: 700;">sign up here</a>.
+  </p>
 
 </div>
 `}</HTMLBlock>
