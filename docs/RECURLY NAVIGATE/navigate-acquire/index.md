@@ -38,7 +38,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   padding:48px 40px 56px;
   text-align:center;
   border-radius:16px;
-  margin-bottom:0; /* Removed margin to let sticky nav sit flush */
+  margin-bottom:0; /* Removed margin to let sticky nav sit flush below if needed, but we will add margin below the nav */
 }
 
 .rc-brand-header {
@@ -71,36 +71,52 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 16px;color:var(--offwhite)}
 .rc-hero>p{font-size:1.1rem;opacity:.9;max-width:700px;margin:0 auto 0;color:var(--lightgray);line-height:1.6}
 
-/* STICKY CATEGORY NAVIGATION */
-.rc-sticky-nav {
+/* STICKY CATEGORY NAVIGATION - UPDATED */
+.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  padding: 16px 0;
-  border-bottom: 1px solid var(--lightgray);
   z-index: 100;
-  margin-bottom: 48px;
+  background-color: var(--yellow);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Slight shadow to lift it off the page */
+  margin: 24px 0 48px 0;
+  border-radius: 12px;
+}
+.rc-sticky-nav {
   display: flex;
-  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Space between text links */
+  padding: 18px 24px;
   overflow-x: auto;
   white-space: nowrap;
 }
 .rc-sticky-link {
-  color: var(--darkgray);
+  color: var(--offblack);
   text-decoration: none;
-  font-weight: 700;
-  font-size: .9rem;
-  padding: 8px 16px;
-  border-radius: 20px;
-  background: var(--brightgray);
-  border: 1px solid transparent;
-  transition: all .2s;
+  font-weight: 800; /* Bold to stand out */
+  font-size: .95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  transition: opacity .2s;
+}
+/* Clean underline hover effect instead of buttons */
+.rc-sticky-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: var(--offblack);
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-50%);
+}
+.rc-sticky-link:hover::after {
+  width: 100%;
 }
 .rc-sticky-link:hover {
-  background: var(--offwhite);
-  border-color: var(--yellow);
-  color: var(--offblack);
+  opacity: 0.8;
 }
 
 /* CATEGORY SECTIONS */
@@ -138,7 +154,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   color:inherit;
   transition:all .2s ease;
   display:grid;
-  grid-template-columns: auto 1fr auto; /* Icon, Text, Arrow */
+  grid-template-columns: auto 1fr auto; 
   gap: 24px;
   align-items: center;
 }
@@ -165,7 +181,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   object-fit:contain;
 }
 .rc-path-content {
-  min-width: 0; /* Prevents text from breaking grid */
+  min-width: 0; 
 }
 .rc-path-content h3{
   font-size:1.1rem;
@@ -218,6 +234,9 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   .rc-content-wrap { padding: 0 20px; }
   .rc-starter-cta{flex-direction:column;align-items:flex-start;}
 }
+@media(max-width:640px){
+  .rc-sticky-nav { justify-content: flex-start; gap: 24px; } /* Ensures left-to-right scrolling on small mobile */
+}
 </style>
 </head>
 <body>
@@ -242,11 +261,13 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <p>Convert more customers, optimize sign-ups, and sustainably grow your subscriber base by leveraging Recurly's powerful acquisition tools.</p>
     </div>
 
-    <div class="rc-sticky-nav">
-      <a href="#plans" class="rc-sticky-link">Plans & Pricing</a>
-      <a href="#incentives" class="rc-sticky-link">Incentives</a>
-      <a href="#gifting" class="rc-sticky-link">Gifting</a>
-      <a href="#payments" class="rc-sticky-link">Payments</a>
+    <div class="rc-sticky-nav-wrap">
+      <div class="rc-sticky-nav">
+        <a href="#plans" class="rc-sticky-link">Plans & Pricing</a>
+        <a href="#incentives" class="rc-sticky-link">Incentives</a>
+        <a href="#gifting" class="rc-sticky-link">Gifting</a>
+        <a href="#payments" class="rc-sticky-link">Payments</a>
+      </div>
     </div>
 
     <div id="plans" class="rc-category">
