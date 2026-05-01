@@ -106,7 +106,7 @@ metadata:
       <span class="rc-wicon">⚠️</span>
       <div>
         <h4>Important: retries vs. dunning</h4>
-        <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters — for example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match. <strong>This dashboard is the simplest view of 'how much failed revenue did we eventually collect.</strong></p>
+        <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters. For example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match.<br> <strong>This dashboard is the simplest view of 'how much failed revenue did we eventually collect.</strong></p>
       </div>
     </div>
 
