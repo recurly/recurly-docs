@@ -166,7 +166,7 @@ metadata:
       <div class="rc-metric">
         <div class="rc-metric-icon">🔁</div>
         <h5>Retry recovery rate</h5>
-        <p>What percentage of initially failed revenue is being recovered through intelligent retries. Compare this to your overall dunning recovery for a complete picture.</p>
+        <p>What percentage of initially failed revenue is being recovered. Compare this to your overall dunning recovery for a complete picture.</p>
       </div>
       <div class="rc-metric">
         <div class="rc-metric-icon">🔄</div>
@@ -181,7 +181,7 @@ metadata:
       <div class="rc-metric">
         <div class="rc-metric-icon">🛡️</div>
         <h5>Average risk score</h5>
-        <p>For Kount users: monitor this as a leading indicator. A rising trend often precedes a spike in blocked transactions — act early.</p>
+        <p>For Kount users: monitor this as a leading indicator. A falling score often precedes a spike in blocked transactions — act early.</p>
       </div>
       <div class="rc-metric">
         <div class="rc-metric-icon">🌍</div>
