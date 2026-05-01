@@ -65,7 +65,7 @@ metadata:
       Scale
     </div>
     <h1>Payment Retry Recovery Dashboard</h1>
-    <p>The Payment Retry Recovery dashboard shows exactly how much initially failed revenue was recovered through intelligent retries — and at which retry attempt it was captured.</p>
+    <p>The Payment Retry Recovery dashboard shows how much initially failed revenue was recovered on subsequent payment attempts — and at which attempt it was captured.</p>
   </div>
 
   <nav class="rc-nav">
@@ -95,9 +95,9 @@ metadata:
         <strong>Recovered transactions</strong> — Total count of payments successfully recovered through retries in the period.<br><br>
         <strong>Payment recovery over time</strong> — A trend line showing recovered transaction volume by day.<br><br>
         <strong>Retry attempts</strong> — Total number of retry attempts made in the period (a single transaction may be retried multiple times).<br><br>
-        <strong>Revenue at risk</strong> — The total value of all transactions that failed on the first attempt and entered the retry queue. This is the pool of revenue that intelligent retries is working to recover.<br><br>
-        <strong>Payment retry recovered revenue</strong> — The dollar value successfully collected through retries.<br><br>
-        <strong>Recovery rate</strong> — The percentage of revenue at risk that was successfully recovered through retries.<br><br>
+        <strong>Revenue at risk</strong> — The total value of invoices attached to a dunning campaign whose first payment attempt failed. This is the pool of revenue eligible for recovery on subsequent attempts.<br><br>
+        <strong>Payment retry recovered revenue</strong> — The dollar value successfully collected on the second or later payment attempt.<br><br>
+        <strong>Recovery rate</strong> — The percentage of revenue at risk that was successfully recovered.<br><br>
         <strong>Success by retry attempt number</strong> — A chart showing which retry attempt (1st, 2nd, 3rd...) actually captured the payment. Most payments are recovered within the first several attempts.
       </p>
     </div>
