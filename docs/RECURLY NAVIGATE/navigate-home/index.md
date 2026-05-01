@@ -13,6 +13,9 @@ metadata:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Navigate — Recurly Customer Success Program</title>
 <style>
+/* Smooth scrolling for page anchors */
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+
 .rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);background-color:#fff;}
@@ -28,7 +31,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   padding:56px 40px 40px;
   text-align:center;
   border-radius:16px;
-  margin-bottom:24px;
+  margin-bottom:0; /* Removed margin so sticky nav can float nicely below it */
 }
 
 /* Replacing the pill/badge styles with the new logo and text lockup styles */
@@ -65,6 +68,54 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hero-stat{padding:0 20px;position:relative}
 .rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
 .rc-hero-stat-label{font-size:.72rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
+
+/* STICKY MAIN NAVIGATION (Using the brightgray/f1efe3 color) */
+.rc-sticky-nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--brightgray); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
+  margin: 24px 0 48px 0;
+  border-radius: 12px;
+  border: 1px solid var(--lightgray); /* Slight border for crisp definition */
+}
+.rc-sticky-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px; 
+  padding: 16px 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.rc-sticky-link {
+  color: var(--offblack);
+  text-decoration: none;
+  font-weight: 800; 
+  font-size: .9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  transition: opacity .2s;
+}
+.rc-sticky-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: var(--offblack);
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-50%);
+}
+.rc-sticky-link:hover::after {
+  width: 100%;
+}
+.rc-sticky-link:hover {
+  opacity: 0.7;
+}
 
 /* FEATURED BANNER */
 .rc-featured{background:var(--offwhite);border:2px solid var(--yellow);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:48px;}
@@ -103,12 +154,11 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-flywheel-img{background:var(--offblack);border-radius:16px;padding:24px;display:flex;justify-content:center;}
 .rc-flywheel-img img{max-width:100%;height:auto;max-height:300px;}
 
-/* BOTTOM NAVIGATION */
+/* BOTTOM PLAIN TEXT NAVIGATION */
 .rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:32px;margin-top:20px;text-align:center;}
-.rc-footer-title{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gray);margin-bottom:16px;}
-.rc-footer-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
-.rc-footer-link{color:var(--darkgray);text-decoration:none;font-weight:700;font-size:.9rem;padding:8px 20px;background:var(--brightgray);border-radius:8px;transition:all .2s;}
-.rc-footer-link:hover{background:var(--offblack);color:var(--yellow);}
+.rc-footer-links{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;}
+.rc-footer-link{color:var(--gray);text-decoration:none;font-weight:600;font-size:.9rem;transition:color .2s;}
+.rc-footer-link:hover{color:var(--orange);text-decoration:underline;}
 
 /* FOOTER SUMMARY */
 .rc-footer-summary{margin-top:40px;padding-top:32px;border-top:1px solid var(--lightgray);text-align:center;color:var(--gray);font-size:.95rem;line-height:1.6;max-width:800px;margin-left:auto;margin-right:auto;margin-bottom:24px;}
@@ -128,6 +178,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   .rc-featured, .rc-starter-cta{flex-direction:column;align-items:flex-start;text-align:left;}
   .rc-hub-grid{grid-template-columns:1fr;}
   .rc-context-wrap{padding:24px;}
+  .rc-sticky-nav { justify-content: flex-start; gap: 24px; }
 }
 </style>
 </head>
@@ -156,6 +207,18 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
         <div class="rc-hero-stat-num">24/7</div>
         <div class="rc-hero-stat-label">On-demand paths<br>for every stage</div>
       </div>
+    </div>
+  </div>
+
+  <div class="rc-sticky-nav-wrap">
+    <div class="rc-sticky-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">Home</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-events" class="rc-sticky-link">Events</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-office-hours" class="rc-sticky-link">Office Hours</a>
     </div>
   </div>
 
@@ -243,16 +306,16 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="Recurly Flywheel — Launch, Acquire, Retain, Scale" />
     </div>
   </div>
-    <div class="rc-footer-summary">
-      <h3><strong>Maximizing your subscription potential.</strong></h3>
-
-          <p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
+  
+  <div class="rc-footer-summary">
+    <h3><strong>Maximizing your subscription potential.</strong></h3>
+    <br>
+    <p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
   </div>
 
-
   <div class="rc-footer-nav">
-    <div class="rc-footer-title">Jump to a section</div>
     <div class="rc-footer-links">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">Home</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-footer-link">Acquire</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
