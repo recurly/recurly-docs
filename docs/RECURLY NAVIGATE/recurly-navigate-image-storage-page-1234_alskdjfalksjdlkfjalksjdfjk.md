@@ -7,7 +7,6 @@ metadata:
   robots: index
 ---
 <div style={{ backgroundColor: '#ccc9b8', minHeight: '100vh' }}>
-
   # Flywheel Logos
 
   <Image align="center" src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" />
@@ -30,8 +29,7 @@ metadata:
 
   <br />
 
-<Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
-
+  <Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
 
   # page images
 
@@ -39,9 +37,11 @@ metadata:
 
   <br />
 
-  <Image align="center" src="https://files.readme.io/8f305076d6acfa324bd422edaf949a4a4d60d596edb29ebd0d336e8179640407-Overview_Dashboard.png" />
+
+<Image align="center" src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" />
+
 
   <Image align="center" src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png" />
 
-<br />
+  <br />
 </div>
