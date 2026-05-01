@@ -112,7 +112,7 @@ metadata:
       <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Account updater dashboard</h4><p>Revenue protected through automatic card updates before payments fail.</p></div>
     </div>
     <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">🔁</div><h4>Payment retry recovery dashboard</h4><p>Recovered revenue through intelligent retries — and which attempt captured it.</p></div>
+      <div class="rc-wi"><div class="rc-wi-icon">🔁</div><h4>Payment retry recovery dashboard</h4><p>How many failed invoices were recovered — and how quickly.</p></div>
       <div class="rc-wi">
   <div class="rc-wi-icon">🛡️</div>
   <h4>Fraud prevention</h4><p>Blocked transactions and risk score trends. Available for Kount-enabled merchants. Learn more about Kount <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">here</a>.</p></div>
