@@ -100,7 +100,7 @@ metadata:
         <strong>CIT success rate</strong> — Customer Initiated Transactions: payments where the customer is actively in session (sign-ups, checkout clicks, dunning re-entries).<br><br>
         <strong>MIT success rate</strong> — Merchant Initiated Transactions: automatic recurring renewals and scheduled payments.<br><br>
         <strong>Account Updater tile</strong> — Revenue authorized on automatically updated cards in the period. Data visible to Account Updater enabled merchants only. See tip below for details.<br><br>
-        <strong>Payment Retry Recovery tile</strong> — Revenue recovered through intelligent retries in the period.<br><br>
+        <strong>Payment Retry Recovery tile</strong> — Revenue recovered in the period.<br><br>
         <strong>Fraud blocking tile</strong> — Count of transactions blocked by Kount. Data visible to Kount-enabled merchants only. See tip below for details.<br><br><br>
       </p>
     <div class="rc-tip">
