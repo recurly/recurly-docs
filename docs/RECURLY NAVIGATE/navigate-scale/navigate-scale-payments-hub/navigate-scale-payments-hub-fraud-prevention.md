@@ -100,8 +100,8 @@ metadata:
       <p style="font-size:.92rem;color:var(--darkgray);line-height:1.75;margin:0;">
         <strong>Transactions blocked (fraud)</strong> — Total count of transactions Kount flagged and blocked in the period, with comparison to the previous period.<br><br>
         <strong>Blocked transactions over time</strong> — A line chart tracking daily blocked transaction count. Sudden spikes are an early signal of an active fraud attack.<br><br>
-        <strong>Average risk score</strong> — The mean Kount risk score assigned to transactions in the period. Higher scores indicate higher risk. A rising average score often precedes an increase in blocked transactions — giving you a window to act proactively.<br><br>
-        <strong>Average risk score over time</strong> — Tracks your daily average risk score. Use this as an early warning system — a trend upward here usually comes before a spike in blocks.<br><br>
+        <strong>Average risk score</strong> — The mean Kount risk score assigned to transactions in the period. <strong>Lower scores indicate higher risk</strong>. A falling average score often precedes an increase in blocked transactions — giving you a window to act proactively.<br><br>
+        <strong>Average risk score over time</strong> — Tracks your daily average risk score. Use this as an early warning system. A trend downward here usually comes before a spike in blocks<br><br>
         <strong>Fraud by payment method</strong> — A breakdown of blocked transactions by payment method. This helps you understand where fraud attempts are concentrating.<br><br>
         <strong>Blocked transactions by gateway</strong> — A bar chart showing fraud-blocked volume per gateway.
       </p>
@@ -109,19 +109,19 @@ metadata:
 
     <h3 class="rc-subhead">🔍 Understanding the risk score</h3>
     <div class="rc-card">
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 12px;">Kount assigns every transaction a risk score between 0 and 100. <strong>Higher scores indicate higher risk.</strong> A score near 100 means Kount has flagged the transaction as very likely fraudulent. Scores near 0 indicate low risk.</p>
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0;">Your Kount rules determine the thresholds — a score above a certain level triggers a block, while scores in a middle range may require additional authentication. The exact thresholds depend on how your Kount rules are configured. Contact your Kount representative if you have questions about where your thresholds are set.</p>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0 0 12px;">Kount assigns every transaction a risk score between 0 and 99.9. <strong>Lower scores indicate higher risk.</strong> A score near 0 means Kount has flagged the transaction as very likely fraudulent. Scores near 99.9 indicate low risk.</p>
+      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.6;margin:0;">Your Kount rules determine the thresholds — a score below a certain level triggers a block, while scores in a middle range may require additional authentication. The exact thresholds depend on how your Kount rules are configured. Contact your Kount representative if you have questions about where your thresholds are set.</p>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>Use the risk score trend as an early warning</h4><p>Don't wait for blocked transactions to spike before investigating. The Average Risk Score Over Time chart is your leading indicator. If you see the average score rising over several days — even if blocked transactions haven't spiked yet — it's worth reviewing your Kount rules and reaching out to your Kount representative.</p></div>
+      <div><h4>Use the risk score trend as an early warning</h4><p>Don't wait for blocked transactions to spike before investigating. The Average Risk Score Over Time chart is your leading indicator. If you see the average score falling over several days — even if blocked transactions haven't spiked yet — it's worth reviewing your Kount rules and reaching out to your Kount representative.</p></div>
     </div>
 
     <h3 class="rc-subhead">✅ Activity: Explore Fraud Prevention</h3>
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Fraud prevention activity</h3></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp1"><label for="fp1" class="rc-clab">What is your current average risk score? Is it trending up, down, or stable over the period?<span>A rising trend is your early warning signal — act before blocked transactions spike</span></label></div>
+      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp1"><label for="fp1" class="rc-clab">What is your current average risk score? Is it trending up, down, or stable over the period?<span>A falling trend is your early warning signal — act before blocked transactions spike</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp2"><label for="fp2" class="rc-clab">Look at Fraud by Payment Method. Which payment method has the highest concentration of blocked transactions?<span>This tells you where fraud attempts are focusing — and may inform where to add friction or tighten rules</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp3"><label for="fp3" class="rc-clab">Check Blocked Transactions by Gateway. Is fraud pressure concentrated on a specific gateway?<span>If one gateway shows significantly more blocks, it may indicate a routing or rule configuration worth reviewing</span></label></div>
     </div>
