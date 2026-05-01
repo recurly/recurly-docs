@@ -7,8 +7,6 @@ metadata:
   robots: index
 ---
 <div style={{ backgroundColor: '#ccc9b8', minHeight: '100vh' }}>
-  <h1>Welcome to my React App</h1>
-  <p>The background is now that nice sage-grey!</p>
 
   # Flywheel Logos
 
@@ -32,6 +30,9 @@ metadata:
 
   <br />
 
+<Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
+
+
   # page images
 
   <Image align="center" src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" />
@@ -42,29 +43,5 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png" />
 
-  <Image align="center" src="https://files.readme.io/2e488cefdf0e0cbbac44170f4774480b23c60e9445a66061c27f83f040bccf4c-Account_Updater_Dashboard.png" />
-
-  <Image align="center" src="https://files.readme.io/dd846483711337200d1b60b8f6e3d4cfc3b778110e986a4b7380e492093a5dc3-Payment_Retry_Recovery.png" />
-
-  <Image align="center" src="https://files.readme.io/44645be7caeb3412eb2d65f1627ede0c4115b23b8a52d57250bf66992fe46933-Fraud_Prevention_Dashboard.png" />
-
-  <Image align="center" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" />
-
-  <Image align="center" src="https://files.readme.io/3b1dcecb0fe15a2befc3516f0ea62f247b031b9479d355c1a11a8954cb4fb7a8-Logo_for_Yellow_BG_V2.svg" />
-
-  <Image align="center" src="https://files.readme.io/5ec397dfaa38b1e1e86b79cbd08fc6d93452ed0b735ef3c37c8e810d4230158f-Logo_for_Black_BG_V2.svg" />
-
-  <Image align="center" src="https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png" />
-
-  # CSM Headshots
-
-  <Image align="center" src="https://files.readme.io/e431ac1dfee2a8602e2f687268fbab451030e009a7f0a459d4eef315f117f0bd-Santi.png" />
-
-  <Image align="center" src="https://files.readme.io/5e1a49513c3d043f66594df4828ece696bc096723cbcfcf6338ef772d432cb42-Patrick_Rizzo_Strategic_CSM__Recurly_1.png" />
-
-  <Image align="center" src="https://files.readme.io/076d29f534bdfb425daa1ec188ee5fef0e3d1c5f04cae94571b61f758f51f8c4-Julia-Lackner.png" />
-
-
-  <br />
+<br />
 </div>
-
