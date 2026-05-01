@@ -35,8 +35,8 @@ metadata:
       <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's data dashboards?</p>
       <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
         Join Office Hours with Patrick Rizzo, Senior CSM<br>
-        Wednesday, May 6th | 3:00 PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a><br>
-        Wednesday, May 27th | 3:00 PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a>
+        Wednesday, May 6th | 3:00 PM CT – <a href="https://recurly.registration.goldcast.io/events/04bfde1e-1317-4289-8370-7636d961fbe5?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a><br>
+        Wednesday, May 27th | 3:00 PM CT – <a href="https://recurly.registration.goldcast.io/events/2550cc06-afd3-4823-9357-5dc27c017962?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a>
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
@@ -50,7 +50,7 @@ metadata:
       <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's churn tools?</p>
       <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
         Join Office Hours with Julia Lackner, CSM<br>
-        Monday, May 11th | 12:30 PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a>
+        Monday, May 11th | 12:30 PM CT – <a href="https://recurly.registration.goldcast.io/events/4457f490-9921-4594-a4ff-8631684c12b8?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a>
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
@@ -64,8 +64,8 @@ metadata:
       <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's acquisition strategies?</p>
       <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
         Join Office Hours with Santi Gomez, CSM<br>
-        Friday, May 1st| 11:00 AM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a><br>
-        Friday, May 22nd | 11:00 AM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">Sign up here</a>
+        Friday, May 1st| 11:00 AM CT – <a href="https://recurly.registration.goldcast.io/events/5bcffcae-a856-495f-ad08-0d3974fab667?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a><br>
+        Friday, May 22nd | 11:00 AM CT – <a href="https://recurly.registration.goldcast.io/events/5ab3e35c-832b-4e17-8d84-1833f75ec747?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a>
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
@@ -75,7 +75,7 @@ metadata:
 
   <p style="margin: 0; font-size: 16px; line-height: 1.5;">
     <strong style="font-weight: 700;">Need something on an earlier timezone?</strong> Don't worry! Our EMEA based CSM team has you covered. We host weekly office hours for any topic you may need help on.<br>
-    Simply <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline; font-weight: 700;">sign up here</a>.
+    Simply <a href="https://navigate.recurly.com/global-office-hours/" target="_blank"; style="color: #000000; text-decoration: underline; font-weight: 700;">sign up here</a>.
   </p>
 
 </div>
