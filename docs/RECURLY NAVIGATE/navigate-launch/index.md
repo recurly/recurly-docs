@@ -116,7 +116,17 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 }
 .rc-sticky-link:hover {
   opacity: 0.8;
+  }.rc-sticky-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
+.rc-sticky-home img {
+  width: 14px; /* Keeps the pin scaled perfectly to the text */
+  height: 14px;
+  object-fit: contain;
+}
+
 
 /* CATEGORY SECTIONS */
 .rc-category {
@@ -262,6 +272,10 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
     <div class="rc-sticky-nav-wrap">
       <div class="rc-sticky-nav">
+				<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link rc-sticky-home">
+  <img src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" alt="Navigate Hub">
+  Hub
+</a>
         <a href="#launchpad" class="rc-sticky-link">Launchpad</a>
         <a href="#technical" class="rc-sticky-link">Technical Setup</a>
         <a href="#onboarding" class="rc-sticky-link">Onboarding</a>
