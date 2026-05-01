@@ -153,7 +153,7 @@ For an efficient, secure, and automated data export process, leverage Recurly's 
 
 * **Objective:** Learn how to access the data efficiently.
 * **Action:** Utilize your private API key to poll the endpoint on the Recurly API, generating a secure URL for data access.
-* **Tip:** Ensure timely data retrieval within the 60-minute window of URL activation to maintain data security.
+* **Tip:** Ensure timely data retrieval of the URL activation link to maintain data security. Most exports will have a **60-minute** window of URL activation except for admin exports (account activities, site activities and users exports), which will only have a **10-minute** window of URL activation.
 
 ### **Step 8: Retrieving the exported data**
 
