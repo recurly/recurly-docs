@@ -44,7 +44,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   margin-bottom: 30px; 
 }
 .rc-logo-image {
-  height: 50px; 
+  height: 40px; 
   width: auto;
 }
 .rc-logo-text {
@@ -136,7 +136,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   <div class="rc-hero">
     <div class="rc-brand-header">
       <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
-      <span class="rc-logo-text">Navigate <span class="rc-logo-divider">|</span> Customer Success</span>
+
     </div>
 
     <div class="rc-pillar-hero-icon" style="background-color: #ccc9b8;">
