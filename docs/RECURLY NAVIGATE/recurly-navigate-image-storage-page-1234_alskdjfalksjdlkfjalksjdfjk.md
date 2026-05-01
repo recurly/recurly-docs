@@ -54,7 +54,18 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/5ec397dfaa38b1e1e86b79cbd08fc6d93452ed0b735ef3c37c8e810d4230158f-Logo_for_Black_BG_V2.svg" />
 
-<Image align="center" src="https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png" />
+  <Image align="center" src="https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png" />
+  
+
+
+
+# CSM Headshots
+
+<Image align="center" src="https://files.readme.io/e431ac1dfee2a8602e2f687268fbab451030e009a7f0a459d4eef315f117f0bd-Santi.png" />
+
+<Image align="center" src="https://files.readme.io/5e1a49513c3d043f66594df4828ece696bc096723cbcfcf6338ef772d432cb42-Patrick_Rizzo_Strategic_CSM__Recurly_1.png" />
+
+<Image align="center" src="https://files.readme.io/076d29f534bdfb425daa1ec188ee5fef0e3d1c5f04cae94571b61f758f51f8c4-Julia-Lackner.png" />
 
   <br />
 </div>
