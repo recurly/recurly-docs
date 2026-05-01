@@ -8,7 +8,11 @@ metadata:
 <HTMLBlock>{`
 <div style="background-color: #FDFBF4; padding: 40px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #000000; max-width: 750px; margin: 0 auto; border-radius: 8px;">
 
-  <h1 style="color: #E27210; font-size: 48px; font-weight: 700; line-height: 1.1; margin: 0 0 16px 0;">May<br>Upcoming events</h1>
+<div style="margin: 0 0 16px 0;">
+  <div style="color: #E27210; font-size: 24px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">May 2026</div>
+  <h1 style="color: #E27210; font-size: 48px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming Events</h1>
+  </div>
+
   <p style="font-size: 16px; margin: 0 0 32px 0; line-height: 1.5;">
     As your Customer Success Manager, I want to make sure it's as easy as possible for you to find all the events that will help drive success at your business. Below are this month's key webinars and office hours, and sign up links below.
   </p>
