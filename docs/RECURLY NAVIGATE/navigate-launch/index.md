@@ -24,7 +24,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
 /* PILLAR HERO */
 .rc-hero{
-  /* Integrating topographic watermark with an 80% offblack overlay */
   background: linear-gradient(rgba(13, 13, 11, 0.8), rgba(13, 13, 11, 0.8)), 
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
   background-color: var(--offblack);
@@ -44,20 +43,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   margin-bottom: 30px; 
 }
 .rc-logo-image {
-  height: 40px; 
+  height: 40px; /* Updated to 40px */
   width: auto;
-}
-.rc-logo-text {
-  color: white;
-  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  white-space: nowrap;
-  letter-spacing: 0.2px;
-}
-.rc-logo-divider {
-  color: rgba(255, 255, 255, 0.4); 
-  margin: 0 4px;
 }
 
 /* Pillar specific hero additions */
@@ -136,7 +123,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   <div class="rc-hero">
     <div class="rc-brand-header">
       <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
-
     </div>
 
     <div class="rc-pillar-hero-icon" style="background-color: #ccc9b8;">
