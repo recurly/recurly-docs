@@ -28,7 +28,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 | Release Date | **Feature**                  | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                         |
 | :----------- | :--------------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| May 5        | **Custom fields & invoices** | Low                  | Custom fields are now available to be applied to invoices.  A new configuration controls whether or not a custom field is available in invoice templates.  Once the custom field is saved to a template, the field will be displayed once an invoice is generated. |
+| May 5        | **Custom fields & invoices** | Low                  | Custom fields are now available to be applied on invoices.  A new configuration controls whether or not a custom field is available in invoice templates.  Once the custom field is saved to a template, the field will be displayed once an invoice is generated. |
 
 ## April
 
