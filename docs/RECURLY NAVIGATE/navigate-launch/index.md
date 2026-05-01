@@ -24,15 +24,9 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
 /* LAUNCH PILLAR HERO */
 .rc-hero{
-  /* Updated Background Strategy:
-    1. Base Color is Launch color (#ccc9b8).
-    2. We layer a radial dark gradient anchored in the center (behind the text).
-    3. Then we layer the topographic map over it.
-    4. The gradient opacity is set to 80% (0.8) to push the map back but still darken the center for white text readability.
-  */
-  background: radial-gradient(circle, rgba(13, 13, 11, 0.8) 0%, rgba(13, 13, 11, 0.3) 100%),
+  background: linear-gradient(rgba(13, 13, 11, 0.8), rgba(13, 13, 11, 0.8)), 
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: #ccc9b8; /* Explicitly set base as Launch Color */
+  background-color: var(--offblack);
   background-size: cover; 
   color:#fff;
   padding:48px 40px 56px;
@@ -53,18 +47,17 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   width: auto;
 }
 
-/* Updated floating icon styles */
+/* Floating icon styles */
 .rc-pillar-hero-icon {
   width: 72px;
   height: 72px;
-  /* Removed background color box */
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 24px;
 }
 .rc-pillar-hero-icon img {
-  width: 48px; /* Slightly larger floating icon for visibility */
+  width: 48px;
   height: 48px;
   object-fit: contain;
 }
