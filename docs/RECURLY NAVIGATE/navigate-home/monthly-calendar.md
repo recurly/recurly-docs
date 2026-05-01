@@ -25,7 +25,7 @@ metadata:
       Learn what's in the hub, what each metric means, and how to put it to work for you.
     </p>
     <p style="margin: 0; font-size: 16px; font-weight: 700;">
-      Thursday, May 7th | 1:00PM CT – <a href="YOUR_LINK_HERE" style="color: #000000; text-decoration: underline;">click here</a> to register
+      Thursday, May 7th | 1:00PM CT – <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank"; style="color: #000000; text-decoration: underline;">click here</a> to register
     </p>
   </div>
 
@@ -40,7 +40,7 @@ metadata:
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="YOUR_IMAGE_URL_PATRICK" style="width: 100%; height: 100%; object-fit: cover;" alt="Patrick Rizzo">
+      <img src="https://files.readme.io/5e1a49513c3d043f66594df4828ece696bc096723cbcfcf6338ef772d432cb42-Patrick_Rizzo_Strategic_CSM__Recurly_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Patrick Rizzo">
     </div>
   </div>
 
@@ -54,7 +54,7 @@ metadata:
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="YOUR_IMAGE_URL_JULIA" style="width: 100%; height: 100%; object-fit: cover;" alt="Julia Lackner">
+      <img src="https://files.readme.io/076d29f534bdfb425daa1ec188ee5fef0e3d1c5f04cae94571b61f758f51f8c4-Julia-Lackner.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Julia Lackner">
     </div>
   </div>
 
@@ -69,7 +69,7 @@ metadata:
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
-      <img src="YOUR_IMAGE_URL_SANTI" style="width: 100%; height: 100%; object-fit: cover;" alt="Santi Gomez">
+      <img src="https://files.readme.io/e431ac1dfee2a8602e2f687268fbab451030e009a7f0a459d4eef315f117f0bd-Santi.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Santi Gomez">
     </div>
   </div>
 
