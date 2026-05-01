@@ -61,7 +61,7 @@ metadata:
 <div class="rc-guide">
   <div class="rc-hero">
     <div class="rc-badge">
-      <img src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" alt="Scale">
+      <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
       Scale
     </div>
     <h1>Overview Dashboard</h1>
@@ -89,7 +89,7 @@ metadata:
     </div>
 
     <!-- Replace [OVERVIEW_SCREENSHOT_URL] with your hosted screenshot -->
-    <img src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
+    <img src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" />
 
     <h3 class="rc-subhead">📋 What's on this dashboard</h3>
     <div class="rc-card">
