@@ -106,7 +106,7 @@ metadata:
       <span class="rc-wicon">⚠️</span>
       <div>
         <h4>Important: retries vs. dunning</h4>
-        <p>The recovery rate in this dashboard reflects <strong>retries only</strong>. It does not include dunning — the process where customers re-enter their card details after receiving a payment failure email. If you're used to seeing a higher recovery percentage in your main Analytics dashboard, that's because it blends both retries and dunning. Both numbers are accurate — they're measuring different things. Retries-only is a more precise measure of your automated recovery performance.</p>
+        <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters — for example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match. <strong>This dashboard is the simplest view of 'how much failed revenue did we eventually collect.</strong></p>
       </div>
     </div>
 
