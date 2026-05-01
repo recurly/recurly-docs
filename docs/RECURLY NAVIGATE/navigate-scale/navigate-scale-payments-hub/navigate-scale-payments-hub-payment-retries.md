@@ -106,22 +106,22 @@ metadata:
       <span class="rc-wicon">⚠️</span>
       <div>
         <h4>Important: retries vs. dunning</h4>
-        <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters. For example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match.<br> <strong>This dashboard is the simplest view of 'how much failed revenue did we eventually collect.</strong></p>
+        <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters. For example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match.<br><br> <strong>This dashboard is the simplest view of 'how much failed revenue did we eventually collect.</strong></p>
       </div>
     </div>
 
     <div class="rc-tip">
       <span class="rc-tipicon">💡</span>
-      <div><h4>What the retry attempt chart tells you</h4><p>The "Success by Retry Attempt Number" chart is one of the most useful views in Payments Hub. It shows the distribution of which retry number is capturing the payment. For most merchants, the bulk of recoveries happen within the first 10 attempts — which validates that your dunning timeline is appropriate and that Recurly's intelligent retry logic is working as expected.</p></div>
+      <div><h4>What the retry attempt chart tells you</h4><p>The "Success by Retry Attempt Number" chart is one of the most useful views in Payments Hub. It shows the distribution of which retry number is capturing the payment. For most merchants, the bulk of recoveries happen within the first 10 attempts, which validates that your dunning timeline is appropriate, and that recovery is working as expected.</p></div>
     </div>
 
     <h3 class="rc-subhead">✅ Activity: Explore Payment Retry Recovery</h3>
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Payment retries activity</h3></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt1"><label for="rt1" class="rc-clab">What is your current recovery rate?<span>Remember: this is your <strong>retry recovery rate</strong> only, not dunning. Your total recovery rate across both will be higher.</span></label></div>
+      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt1"><label for="rt1" class="rc-clab">What is your current recovery rate?<span><strong>Remember</strong>: this number may differ from the recovery figure in your main Analytics dunning dashboards because they apply different definitions of recovered revenue.</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt2"><label for="rt2" class="rc-clab">Compare your recovered revenue to your revenue at risk. What percentage is being saved?<span>Revenue at risk = all initial payment failures. Recovered revenue = what retries captured from that pool.</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt3"><label for="rt3" class="rc-clab">Look at the Success by Retry Attempt chart. At which attempt number do most of your recoveries happen?<span>If most payments are capturing very late (attempt 15+), your dunning timeline may benefit from adjustment</span></label></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt4"><label for="rt4" class="rc-clab">Open your main Analytics dunning dashboard and note the overall recovery number. How does it compare to the retries-only number here?<span>The gap between the two represents dunning-assisted recovery (customers re-entering cards)</span></label></div>
+      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="rt4"><label for="rt4" class="rc-clab">Open your main Analytics dunning dashboard and note the overall recovery number. How does it compare to the number here?<span>The two won't always match. The Analytics dashboards apply different definitions of recovered revenue, including some that count first-attempt successes.</span></label></div>
     </div>
 
     <div class="rc-office">
