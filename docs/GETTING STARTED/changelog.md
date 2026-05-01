@@ -24,6 +24,12 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 # 2026
 
+## May
+
+| Release Date | **Feature**                  | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                         |
+| :----------- | :--------------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| May 5        | **Custom fields & invoices** | Low                  | Custom fields are now available to be applied to invoices.  A new configuration controls whether or not a custom field is available in invoice templates.  Once the custom field is saved to a template, the field will be displayed once an invoice is generated. |
+
 ## April
 
 | Release Date | **Feature**                                      | **Potential Impact** | **Description / Overview**                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -530,8 +536,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       <td>
         Two new data exports will be available for both adhoc and automated reporting.
 
-        **Products Catalog export** - provides a detailed list of all product offerings, add-ons and items, whether active or inactive.
-        **Subscriptions - Pending changes export** - reports on all active subscriptions with a pending change that will be applied at the next renewal or future date. This includes changes to the plan, price, or quantity.
+        **Products Catalog export** - provides a detailed list of all product offerings, add-ons and items, whether active or inactive. **Subscriptions - Pending changes export** - reports on all active subscriptions with a pending change that will be applied at the next renewal or future date. This includes changes to the plan, price, or quantity.
       </td>
     </tr>
 
@@ -1050,9 +1055,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
         *Fixed Revenue Workbench issues:
 
-        *Audit tab now displays data when Primary book is selected.
-        *Switching from Primary book to All no longer reverts back to Primary.
-        *Applying VC through Workbench functions no longer results in an error after switching books.
+        *Audit tab now displays data when Primary book is selected. *Switching from Primary book to All no longer reverts back to Primary. *Applying VC through Workbench functions no longer results in an error after switching books.
       </td>
     </tr>
 
@@ -1408,13 +1411,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        *Added display of the Initial Financial Open Period to the Revenue Settings page.
-        *Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status.
-        *Fixed overlap issue where the Recurly Resources button on the Home page covered the wizard when opened.
-        *Auto Period Close and Period Close Checklist job refactoring
-        *Fix auto period lag days to count complete N days
-        *Api to purge client and client data
-        *Hide RevRec settings for Setup Fees when no setup fee exists
+        *Added display of the Initial Financial Open Period to the Revenue Settings page. *Synced RevRec activation email timing with site activation to prevent premature sends. Introduced `enabled_email_sent_at `to track email dispatch after data sync, updated cron to handle unsent emails, and modified the Snappy Activate Site endpoint to respect sync status. *Fixed overlap issue where the Recurly Resources button on the Home page covered the wizard when opened. *Auto Period Close and Period Close Checklist job refactoring *Fix auto period lag days to count complete N days *Api to purge client and client data *Hide RevRec settings for Setup Fees when no setup fee exists
       </td>
     </tr>
 
@@ -1596,8 +1593,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Revrec Enhancements in Recurly and RevRec-
-        Removed Auto Period Close Delay for Advanced Merchants in Revenue Settings.
+        Revrec Enhancements in Recurly and RevRec- Removed Auto Period Close Delay for Advanced Merchants in Revenue Settings.
 
         Removed Auto Period Close Delay option from the Self-Service Onboarding Wizard for RA-enabled merchants.
 
@@ -1643,8 +1639,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Updates - removed open period logic from `infra/revrecStart` to prevent the period from reverting to the initial period.
-        Fixed bundle rule addition issue when only one bundle rule exists under a parent item by grouping the count by bundle ID.
+        Updates - removed open period logic from `infra/revrecStart` to prevent the period from reverting to the initial period. Fixed bundle rule addition issue when only one bundle rule exists under a parent item by grouping the count by bundle ID.
       </td>
     </tr>
 
@@ -2158,15 +2153,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
       </td>
 
       <td>
-        Revenue Recognition Self-Service Onboarding - Introduced a streamlined process for setting up and activating the RevRec self-service experience. This allows merchants using RevRec Standard and Recurly Managed RevRec Advanced to independently configure and launch their sites.
-        This process requires the following steps to be completed before activation:
-        -Assign Business Entity Defaults
-        -Review All Product Settings
-        -Configure Default Recognition Rules
-        -Set Global Currency
-        -Set Auto Period Close Delay
-        -Configure Credit Handling (Advanced RevRec only)
-        -Set Revenue Recognition Start Date
+        Revenue Recognition Self-Service Onboarding - Introduced a streamlined process for setting up and activating the RevRec self-service experience. This allows merchants using RevRec Standard and Recurly Managed RevRec Advanced to independently configure and launch their sites. This process requires the following steps to be completed before activation: -Assign Business Entity Defaults -Review All Product Settings -Configure Default Recognition Rules -Set Global Currency -Set Auto Period Close Delay -Configure Credit Handling (Advanced RevRec only) -Set Revenue Recognition Start Date
       </td>
     </tr>
 
@@ -3542,8 +3529,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 12/17/2024: **Recurly.js** -  Added support for displaying the card issuing country, PCI-compliant masked card data (first-six/last four), expiry info, and funding source.
 * 12/17/2024: **AmazonPay V2**-  Added support for EU/UK 3DS and Multi-currency support.
 * 12/11/2024:**Cybersource gateway** - Added support for Auth and Capture transactions to the platform. Read more about [Auth and Capture](https://docs.recurly.com/docs/auth-and-capture) in our helpful guide.
-* 12/12/2024: **Access Invoice through RevRec** -  Users can now access invoice through RevRec by clicking on the hyperlink.
-  12/12/2024: **View Profile Page from RevRec** -  Users can now navigate to the user profile page by clicking on View Profile on top-right dropdown in Revrec.
+* 12/12/2024: **Access Invoice through RevRec** -  Users can now access invoice through RevRec by clicking on the hyperlink. 12/12/2024: **View Profile Page from RevRec** -  Users can now navigate to the user profile page by clicking on View Profile on top-right dropdown in Revrec.
 * 12/11/2024: **Vantiv gateway**: Added some helpful text at the top of the gateway configuration page to assist with proper Merchant ID configuration.
 * 12/10/2024: **Alternate Email Templates**: Merchants on Recurly's Elite plans can now create up to 20 total email variations for each email template, including custom headers and footers to reflect accurate brand logos and information within emails. This allows organizations to tailor customer communications towards the appropriate subscriber segments, such as by the entity(ies) they subscribe to, or their geographic location. [Learn more](https://docs.recurly.com/docs/alternate-email-templates).
 * 12/10/2024: **Subscription Entity Assignment**: Consolidate all of your brands and subsidiaries on a single Recurly Site, allowing for a customer account to subscribe to many of your business entities/brands at a single point in time. Requires a Recurly Elite plan. [Learn more](https://docs.recurly.com/docs/multiple-business-entities#apply-an-entity-to-a-customers-subscription).
@@ -3806,8 +3792,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 ## September
 
-* 9/27/22 With Ramp Pricing, merchants can attract new subscribers through a discounted point of entry that ramps up over time to the full subscription cost. Conversely, merchants can reward subscriber loyalty by scheduling pricing discounts to valuable, long-term customers.
-  Learn more about [Ramp Pricing.](https://docs.recurly.com/docs/ramp-pricing)
+* 9/27/22 With Ramp Pricing, merchants can attract new subscribers through a discounted point of entry that ramps up over time to the full subscription cost. Conversely, merchants can reward subscriber loyalty by scheduling pricing discounts to valuable, long-term customers. Learn more about [Ramp Pricing.](https://docs.recurly.com/docs/ramp-pricing)
 * 09/27/22 Released [revenue recognition for Enterprise](https://docs.recurly.com/docs/revenue-recognition#enterprise--solution) in beta access
 * Added the ability to apply account balances to past due invoices via the UI.
 * 09/13/22 Added a new Annual Reminder email template. This template will be sent to customers on an annual basis from the start date of their subscription. There are state specific mandates which require this notification to be sent annually. [Learn more](https://docs.recurly.com/docs/email-templates#annual-reminder).
@@ -3828,8 +3813,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 * 07/19/2022 China UnionPay payment method is now available on Adyen, Cybersource, and Stripe gateways in addition to Chase Orbital and Braintree.
 * 07/19/2022 New ability to set a unique time zone specifically for sending emails to each of your customer accounts. This will help ensure your varying customer geographical locations receive emails sent via the Recurly App in their corresponding time zones, alleviating confusion of time/date stamp discrepancies between the email itself and dates reflected within the email content.
 * 07/18/2022 Released updated version of our Recurly for Salesforce integration which enables merchants to be able to automatically capture customer payments by empowering the customer to input their own billing information from the Recurly's billing info update page. Also, enabled the ability to automatically create a subscription once an opportunity is set to "closed won" without the need to click the "Create Subscription in Recurly" button. See more details [here](https://docs.recurly.com/docs/salesforcereleasenotes)
-* 07/12/2022 Google Pay payment method is now available! Today we support Google Pay with Stripe gateway.
-  We will add more gateways support in the future.
+* 07/12/2022 Google Pay payment method is now available! Today we support Google Pay with Stripe gateway. We will add more gateways support in the future.
 * 07/05/2022 Added support for ZDA for Vantiv and FirstData gateways
 * 07/05/2022 Updated the max length of custom fields to 255 characters. [Learn about Custom Fields](https://docs.recurly.com/docs/custom-fields).
 
@@ -3888,8 +3872,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 10/29/2021: Recurly releases Account Hierarchy: Invoice Rollup, providing new capabilities for billing and invoicing customers with complex hierarchical business structures. You can now rollup charges from multiple child accounts that bill to a common parent account into a single invoice. This provides you with the the ability to greatly simply the billing process for your customers, while reducing your transaction costs. Learn more [here](https://docs.recurly.com/docs/ah-invoice-rollup)
 * 10/21/2021: Support added for Worldpay/dlocal accounts in Argentina, which include a new payment method, Tarjeta Naranja. Learn more about this account configuration [here](https://docs.recurly.com/docs/worldpaydlocal-latam-support).
-* 10/14/2021: Added new capabilities to Recurly's Dunning Management functionality.
-  You can now create multiple dunning campaigns and assign specific plans and accounts to different campaigns (available for Pro and Enterprise only), create trial specific dunning cycles, and stop dunning emails for a past due invoice without having to fail the invoice.  Details [here](https://docs.recurly.com/docs/dunning-management).  To enable these features, please reach out to Recurly Support and request to have the Dunning Campaigns feature enabled on your site.
+* 10/14/2021: Added new capabilities to Recurly's Dunning Management functionality. You can now create multiple dunning campaigns and assign specific plans and accounts to different campaigns (available for Pro and Enterprise only), create trial specific dunning cycles, and stop dunning emails for a past due invoice without having to fail the invoice.  Details [here](https://docs.recurly.com/docs/dunning-management).  To enable these features, please reach out to Recurly Support and request to have the Dunning Campaigns feature enabled on your site.
 
 ## September
 
@@ -3972,8 +3955,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 ### August
 
 * 8/31/20: Recurly for Salesforce v2.38 released
-* 8/27/20: 100+ currencies added to Recurly. [Learn more](https://docs.recurly.com/docs/currencies#section-supported-currencies).
-  American Express Card Refresher: Merchants can now input their own SE number to register for American Express Card Refresher.
+* 8/27/20: 100+ currencies added to Recurly. [Learn more](https://docs.recurly.com/docs/currencies#section-supported-currencies). American Express Card Refresher: Merchants can now input their own SE number to register for American Express Card Refresher.
 * 8/21/20: Clarified documentation for Russian VAT rate and the fact that reverse charge is no longer applicable. Functionality already reflected this.
 * 8/14/20: [FlexibleField mapping support for Vertex Integration](https://docs.recurly.com/docs/vertex#section-flexible-fields)
 * 8/7/20: Early Access for [Avalara for Communications Integration](https://docs.recurly.com/docs/afc)
@@ -4489,8 +4471,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 04/09/2015: Invoices and Invoice Summary exports now include an invoice_type column that has either 'purchase' or 'refund'.
 
-* 04/07/2015: AvaTax Pro tax documents cannot be committed when Recurly site is in sandbox mode in order to allow document deletion when moving to production mode. Recurly's estimated tax previews now round down for digits under five, and
-  up for five and higher.
+* 04/07/2015: AvaTax Pro tax documents cannot be committed when Recurly site is in sandbox mode in order to allow document deletion when moving to production mode. Recurly's estimated tax previews now round down for digits under five, and up for five and higher.
 
 * 04/02/2015: Fixed "count of accounts" on Reporting Dashboard.
 
@@ -4522,8 +4503,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 01/29/2015: We've improved our integration with Wirecard to better support the Recurly Account Updater. The Adjustment API now includes tax_type, tax_region, and tax_rate.
 
-* 01/27/2015: Added support for tracking of deleted accounts in our Salesforce
-  integration. Contact support to learn more!
+* 01/27/2015: Added support for tracking of deleted accounts in our Salesforce integration. Contact support to learn more!
 
 * 01/20/2015: Tax invoices now include line item tax amounts and in the case of more than one rate, tax rate information is displayed in the line item description. Invoices API now includes the customer's address for the specific invoice.
 
@@ -4631,8 +4611,7 @@ The Release Notes section is your go-to place to catch up on the minor yet meani
 
 * 05/12/2014: New Zealand is now a supported country for Cybersource.
 
-* 05/07/2014: Subscriptions can no longer be activated on a closed account.
-  Various improvements were made to the Coupons page, such as sorting, formatting, and expiration behavior. An issue was fixed where a deleted coupon could occasionally be redeemed.
+* 05/07/2014: Subscriptions can no longer be activated on a closed account. Various improvements were made to the Coupons page, such as sorting, formatting, and expiration behavior. An issue was fixed where a deleted coupon could occasionally be redeemed.
 
 * 05/05/2014: The /js/v1/token endpoint now uses the :postal_code param in addition to :zip. An issue was corrected that would cause the fix six numbers of a credit cad to not appear correctly.
 
