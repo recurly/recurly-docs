@@ -46,7 +46,7 @@ These alterations aim to help retain customers whose recurring transactions suff
 
 Recurring payments failing due to 3DS2 authentication issues will initiate a dunning cycle based on your existing dunning management settings. If these settings are not yet configured, it's crucial to activate them so the appropriate recovery email can be sent.
 
-<Image align="center" width="50% " src="https://files.readme.io/8998dac-Dunning_Example.png" />
+<Image align="center" border={true} src="https://files.readme.io/474c928b883e462b65a4b777ba3bf3e867a3ed3d147f8e5d86d561481399ec90-image.png" className="border" />
 
 Upon activation, you'll notice a separate section within your dunning management settings that highlights dunning for 3DS2 failures. This will follow the same sequence of notifications configured for your default  dunning cycle.
 
@@ -54,7 +54,7 @@ Upon activation, you'll notice a separate section within your dunning management
 
 If a recurring payment fails because it needs 3DS2 authentication, your customers will get a special email guiding them to complete the necessary payment authentication. You can personalize this email in your template settings. The email will contain a link to a secure payment page hosted by Recurly. To use this feature, you'll need to be using Recurly's hosted pages.
 
-<Image align="center" width="50% " src="https://files.readme.io/671b433-3ds2_email.png" />
+![](https://files.readme.io/e30dea19ef6d39e2f64da3fa869a4e87c5e15a25a3ee2f65f5e7763dafe84b3f-image.png)
 
 ## Configuring hosted pages
 
@@ -98,38 +98,26 @@ After the PSD2 deadline of 9/14/19, Recurly has refined the dunning process for 
 
 # FAQs
 
-**Q: Do I need to worry about PSD2?**
-A: If your business bank or payment provider is in the European Economic Area (EEA) and you have customers there too, then yes, you need to get ready for PSD2 and make sure you have Strong Customer Authentication (SCA) in place. If your customers are outside the EEA, then you don't need to worry about SCA. If either you or your customers _are_ in the EEA, you may or may not need to comply with PSD2, depending on your situation. Ultimately, the banks will be the deciding factor and may require SCA on a transaction.
+**Q: Do I need to worry about PSD2?** A: If your business bank or payment provider is in the European Economic Area (EEA) and you have customers there too, then yes, you need to get ready for PSD2 and make sure you have Strong Customer Authentication (SCA) in place. If your customers are outside the EEA, then you don't need to worry about SCA. If either you or your customers _are_ in the EEA, you may or may not need to comply with PSD2, depending on your situation. Ultimately, the banks will be the deciding factor and may require SCA on a transaction.
 
-**Q: Where can I find more technical information on preparing for PSD2?**
-A: You can find all the technical details you need in our integration guide <a href="https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide" target="_blank">here</a>.
+**Q: Where can I find more technical information on preparing for PSD2?** A: You can find all the technical details you need in our integration guide <a href="https://dev.recurly.com/page/recurly-3d-secure-2-integration-guide" target="_blank">here</a>.
 
-**Q: Will my checkout conversions change because of 3DS?**
-A: The first version of 3DS could lead to a drop in checkout conversions between 3-15%. But don't worry, the second version aims to limit this to a maximum of 5%. But remember, these numbers can change depending on your country. (Statistics provided by WorldPay)
+**Q: Will my checkout conversions change because of 3DS?** A: The first version of 3DS could lead to a drop in checkout conversions between 3-15%. But don't worry, the second version aims to limit this to a maximum of 5%. But remember, these numbers can change depending on your country. (Statistics provided by WorldPay)
 
-**Q: What's the effect of 3DS on authorization rates?**
-A: If you're new to 3DS, you can expect your authorization rates to go up from about 84% to 92% with the first version. The second version aims to push this up to 95%. (Statistics provided by WorldPay)
+**Q: What's the effect of 3DS on authorization rates?** A: If you're new to 3DS, you can expect your authorization rates to go up from about 84% to 92% with the first version. The second version aims to push this up to 95%. (Statistics provided by WorldPay)
 
-**Q: Can 3DS help me reduce fraud?**
-A: Absolutely. According to statistics from WorldPay, businesses that didn't utilize 3DS experienced fraud rates of approximately 0.29%. With the introduction of 3DS 1.0, this rate decreased to 0.12%. The second version of 3DS aims to further diminish this rate to an estimated 0.05%. However, it's essential to note that 3DS 1.0 is no longer a feasible choice for the majority of businesses.
+**Q: Can 3DS help me reduce fraud?** A: Absolutely. According to statistics from WorldPay, businesses that didn't utilize 3DS experienced fraud rates of approximately 0.29%. With the introduction of 3DS 1.0, this rate decreased to 0.12%. The second version of 3DS aims to further diminish this rate to an estimated 0.05%. However, it's essential to note that 3DS 1.0 is no longer a feasible choice for the majority of businesses.
 
-**Q: Will 3DS slow down my transactions?**
-A: Generally, using 3DS could add up to 10 seconds to your transaction time. If an exemption is rejected and SCA is enforced, this could add another 1-2 seconds. (Statistics provided by WorldPay)
+**Q: Will 3DS slow down my transactions?** A: Generally, using 3DS could add up to 10 seconds to your transaction time. If an exemption is rejected and SCA is enforced, this could add another 1-2 seconds. (Statistics provided by WorldPay)
 
-**Q: Who can I turn to if I have more questions about PSD2, SCA, or 3DS?**
-A: While we're always here to help, your payment gateway should be your go-to resource for these kinds of questions. They'll be up to speed on how PSD2 and SCA might affect you and your customers.
+**Q: Who can I turn to if I have more questions about PSD2, SCA, or 3DS?** A: While we're always here to help, your payment gateway should be your go-to resource for these kinds of questions. They'll be up to speed on how PSD2 and SCA might affect you and your customers.
 
-**Q: What about PayPal transactions?**
-A: No extra work needed here! PayPal will take care of Strong Customer Authentication in their "Pay with PayPal" process. We will also make sure our integration can handle recurring PayPal payments.
+**Q: What about PayPal transactions?** A: No extra work needed here! PayPal will take care of Strong Customer Authentication in their "Pay with PayPal" process. We will also make sure our integration can handle recurring PayPal payments.
 
-**Q: Could 3DS be triggered on recurring payments that I initiate, especially if the value changes?**
-A: Yes, it's possible. Card issuers can challenge a transaction for any reason. Because of this, we're developing a "3DS dunning flow" to help you manage transactions that fail due to SCA and need to be re-authenticated by your customer.
+**Q: Could 3DS be triggered on recurring payments that I initiate, especially if the value changes?** A: Yes, it's possible. Card issuers can challenge a transaction for any reason. Because of this, we're developing a "3DS dunning flow" to help you manage transactions that fail due to SCA and need to be re-authenticated by your customer.
 
-**Q: Will SCA be needed every time I re-bill a customer on a usage-based plan?**
-A: As long as the transaction is flagged as being started by the merchant (that's you), most re-bills shouldn't need SCA, even if the amount varies. But remember, card issuers have the final say and can ask for SCA on any transaction.
+**Q: Will SCA be needed every time I re-bill a customer on a usage-based plan?** A: As long as the transaction is flagged as being started by the merchant (that's you), most re-bills shouldn't need SCA, even if the amount varies. But remember, card issuers have the final say and can ask for SCA on any transaction.
 
-**Q: I have a fixed subscription but the first month is prorated. Will the full charge in the second month need SCA?**
-A: Ideally, you should authenticate the full subscription amount when the customer signs up, even if the first month is prorated. After that, re-bills should generally not need SCA, as long as they're flagged as merchant-initiated. We'll take care of this for you.
+**Q: I have a fixed subscription but the first month is prorated. Will the full charge in the second month need SCA?** A: Ideally, you should authenticate the full subscription amount when the customer signs up, even if the first month is prorated. After that, re-bills should generally not need SCA, as long as they're flagged as merchant-initiated. We'll take care of this for you.
 
-**Q: What if the original transaction happened before Sept 14, 2019? Will I need to authenticate all of these older transactions?**
-A: For renewals, we'll try to exempt these transactions from SCA by marking them as "merchant-initiated". This includes subscriptions that started before September 14, 2019. Our goal is to treat these as merchant-initiated so they won't need SCA when they renew on or after September 14.
+**Q: What if the original transaction happened before Sept 14, 2019? Will I need to authenticate all of these older transactions?** A: For renewals, we'll try to exempt these transactions from SCA by marking them as "merchant-initiated". This includes subscriptions that started before September 14, 2019. Our goal is to treat these as merchant-initiated so they won't need SCA when they renew on or after September 14.
