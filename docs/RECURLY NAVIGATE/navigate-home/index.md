@@ -195,7 +195,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   font-weight: 700;
   text-decoration: none;
   padding: 10px 20px;
-  background: rgba(255, 130, 0, 0.1); /* Very soft orange background */
+  background: rgba(255, 130, 0, 0.1); 
   border-radius: 8px;
   transition: all 0.2s ease;
   margin-top: 8px;
@@ -268,8 +268,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-events" class="rc-sticky-link">Events</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-office-hours" class="rc-sticky-link">Office Hours</a>
+      <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours</a>
     </div>
   </div>
 
@@ -297,7 +297,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <div class="rc-hub-arrow">View Learning Paths →</div>
     </a>
 
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-hub-card">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-hub-card">
       <div class="rc-hub-icon" style="background-color: #ffd706;">
         <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire" />
       </div>
@@ -315,7 +315,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <div class="rc-hub-arrow">View Learning Paths →</div>
     </a>
 
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-hub-card">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-hub-card">
       <div class="rc-hub-icon" style="background-color: #ff5810;">
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale" />
       </div>
@@ -348,7 +348,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <h3>👋 New to Navigate?</h3>
       <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
     </div>
-    <a href="#" class="rc-btn-secondary">Get Started Here</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
   </div>
   
   <div class="rc-footer-summary">
@@ -361,9 +361,9 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     <div class="rc-footer-links">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">Home</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-footer-link">Acquire</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-footer-link">Acquire</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-footer-link">Scale</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-footer-link">Scale</a>
       <a href="https://navigate.recurly.com/event-hub/" class="rc-footer-link" target="_blank">Events</a>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-footer-link" target="_blank">Office Hours</a>
     </div>
