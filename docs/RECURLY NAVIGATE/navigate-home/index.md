@@ -92,9 +92,9 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   display: none; 
 }
 
-.rc-sticky-link {
+.rc-sticky-link, .rc-sticky-link:hover {
   color: var(--offblack);
-  text-decoration: none !important;
+  text-decoration: none !important; /* Forces underline to stay hidden */
   font-weight: 800; 
   font-size: .9rem;
   letter-spacing: 0.5px;
@@ -151,7 +151,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hub-card:hover{border-color:var(--yellow);box-shadow:0 8px 24px rgba(255,215,6,.15);transform:translateY(-4px);text-decoration:none !important;}
 .rc-hub-icon{width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
 .rc-hub-icon img{width:32px;height:32px;object-fit:contain;}
-.rc-hub-icon.emoji{font-size:32px;background:var(--brightgray);}
 .rc-hub-card h3{font-size:1.3rem;font-weight:800;margin:0 0 10px;color:var(--offblack);text-decoration:none !important;}
 .rc-hub-card p{font-size:.9rem;color:var(--gray);line-height:1.5;margin:0;flex-grow:1;text-decoration:none !important;}
 .rc-hub-arrow{margin-top:20px;color:var(--orange);font-weight:700;font-size:.9rem;text-decoration:none !important;}
@@ -298,14 +297,18 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     </a>
 
     <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank">
-      <div class="rc-hub-icon emoji">📅</div>
+      <div class="rc-hub-icon" style="background-color: #0075ff;">
+        <img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events" />
+      </div>
       <h3>Events</h3>
       <p>Register for Merchant Spotlight Webinars and peer-led learning sessions.</p>
       <div class="rc-hub-arrow">View Schedule ↗</div>
     </a>
 
     <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank">
-      <div class="rc-hub-icon emoji">💬</div>
+      <div class="rc-hub-icon" style="background-color: #ff8200;">
+        <img src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" alt="Office Hours" />
+      </div>
       <h3>Office Hours</h3>
       <p>Connect with a Recurly CSM live. Bring your data, ask questions, or just listen.</p>
       <div class="rc-hub-arrow">Register Now ↗</div>
