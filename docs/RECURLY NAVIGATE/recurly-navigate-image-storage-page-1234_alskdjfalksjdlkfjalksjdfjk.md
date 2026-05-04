@@ -29,13 +29,16 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" />
 
-<Image align="center" src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" />
+  <Image align="center" src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" />
 
-<Image align="center" src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" />
+  <Image align="center" src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" />
 
   <br />
 
   <Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
+
+<Image align="center" src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" />
+
 
   # page images
 
