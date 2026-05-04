@@ -20,13 +20,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 *{box-sizing:border-box}
 body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);background-color:#fff;}
 
-/* --- DYNAMIC GLOBAL ALERT BANNER --- */
+/* --- THIN FEATURED EVENT BANNER (Top of page) --- */
 .rc-alert-banner {
   background-color: var(--yellow); 
   color: var(--offblack); 
-  padding: 14px 24px;
-  /* Removed sticky positioning so it scrolls away naturally */
-  position: relative; 
+  padding: 12px 24px;
+  position: relative; /* Scrolls away naturally */
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .rc-alert-banner-content {
@@ -42,15 +41,27 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   font-size: 0.95rem;
   line-height: 1.5;
   font-weight: 600; 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
-.rc-alert-text strong {
-  font-weight: 800; 
+.rc-alert-tag {
+  background: var(--offblack);
+  color: var(--yellow);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 .rc-alert-btn {
   background-color: var(--offblack); 
   color: white;
   text-decoration: none !important;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 8px;
   font-weight: 700;
   font-size: 0.85rem;
@@ -132,10 +143,10 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
 .rc-hero-stat-label{font-size:.72rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
 
-/* STICKY MAIN NAVIGATION (Pillar Nav) */
+/* STICKY MAIN NAVIGATION */
 .rc-sticky-nav-wrap {
   position: sticky;
-  top: 0; /* Reset back to absolute top */
+  top: 0; 
   z-index: 100;
   background-color: var(--brightgray); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
@@ -199,15 +210,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   opacity: 0.7;
 }
 
-/* FEATURED BANNER */
-.rc-featured{background:var(--offwhite);border:2px solid var(--yellow);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:48px;}
-.rc-featured-content h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
-.rc-featured-content p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
-.rc-featured-tag{display:inline-block;background:var(--offblack);color:var(--yellow);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:6px;margin-bottom:10px;}
-.rc-btn{background:var(--yellow);color:var(--offblack);text-decoration:none;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.9rem;white-space:nowrap;transition:transform .2s;}
-.rc-btn:hover{transform:translateY(-2px);}
-
-/* GETTING STARTED CTA (Now acting as the gateway path 0) */
+/* GETTING STARTED CTA (Gateway path 0) */
 .rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
 .rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
 .rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
@@ -281,15 +284,16 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 /* RESPONSIVE */
 @media(max-width:900px){
   .rc-alert-banner-content { grid-template-columns: 1fr; gap: 16px; text-align: center; }
+  .rc-alert-text { justify-content: center; }
   .rc-alert-close { position: absolute; top: 8px; right: 12px; }
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
 @media(max-width:640px){
-  .rc-alert-text { font-size: 0.85rem; }
+  .rc-alert-text { font-size: 0.85rem; flex-direction: column; gap: 8px; }
   .rc-hero h1{font-size:1.7rem}
   .rc-hero{padding:36px 20px 40px}
   .rc-hero-stats{grid-template-columns:1fr;gap:24px;padding-top:28px}
-  .rc-featured, .rc-starter-cta{flex-direction:column;align-items:flex-start;text-align:left;}
+  .rc-starter-cta{flex-direction:column;align-items:flex-start;text-align:left;}
   .rc-hub-grid{grid-template-columns:1fr;}
   
   .rc-sticky-nav { 
@@ -307,9 +311,10 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   <div class="rc-alert-banner">
     <div class="rc-alert-banner-content">
       <p class="rc-alert-text">
-        Our next feature dynamic update will be a special <strong>LIVE Office Hours: Product Deep Dive</strong> on <strong>May 7 at 1 pm CT / 11 am PT</strong>.
+        <span class="rc-alert-tag">Featured Event</span>
+        Join our lead CSMs this Thursday to discuss optimizing your Dunning windows and recovering failed payments.
       </p>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-office-hours" class="rc-alert-btn" target="_blank">Register Now ↗</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-alert-btn" target="_blank">Register Now ↗</a>
       <button class="rc-alert-close" onclick="this.parentElement.parentElement.style.display='none';">&times;</button>
     </div>
   </div>
@@ -349,18 +354,9 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-events" class="rc-sticky-link" target="_blank">Events</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-office-hours" class="rc-sticky-link" target="_blank">Office Hours</a>
+        <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours</a>
       </div>
-    </div>
-
-    <div class="rc-featured">
-      <div class="rc-featured-content">
-        <span class="rc-featured-tag">Featured Event</span>
-        <h3>Upcoming: Global Office Hours</h3>
-        <p>Join our lead CSMs this Thursday to discuss optimizing your Dunning windows and recovering failed payments.</p>
-      </div>
-      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn" target="_blank">Register Now ↗</a>
     </div>
 
     <div class="rc-sec-header">
@@ -450,8 +446,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       </div>
     </div>
 
-  </div>
-</div>
+  </div> </div>
 </body>
 </html>
 `}</HTMLBlock>
