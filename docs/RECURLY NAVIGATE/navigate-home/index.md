@@ -360,7 +360,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <h3>👋 New to Navigate?</h3>
       <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
     </div>
-    <a href="#" class="rc-btn-secondary">Get Started Here</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
   </div>
 
   <div class="rc-context-wrap">
