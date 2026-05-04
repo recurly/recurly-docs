@@ -6,19 +6,27 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navigate — Recurly Customer Success Program</title>
 <style>
-/* Smooth scrolling for page anchors */
+/* Scoped smooth scrolling */
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
-.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif}
-*{box-sizing:border-box}
-body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);background-color:#fff;}
+/* FIREWALL: Only apply variables and resets inside our custom code so we don't break ReadMe's native UI */
+.rc-guide {
+  --yellow: #FFD706;
+  --orange: #FF8200;
+  --offblack: #0D0D0B;
+  --darkgray: #32312D;
+  --gray: #807D73;
+  --lightgray: #CCC9B8;
+  --brightgray: #F1EFE3;
+  --offwhite: #FFFDF2;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--darkgray);
+  background-color: #fff;
+}
+.rc-guide *, .rc-guide *::before, .rc-guide *::after {
+  box-sizing: border-box;
+}
 
 /* --- THIN FEATURED EVENT BANNER (Top of page) --- */
 .rc-alert-banner {
@@ -26,7 +34,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   color: var(--offblack); 
   padding: 12px 24px;
   position: relative; 
-  z-index: 40; /* Lowered so it doesn't fight native ReadMe modals */
+  z-index: 40; 
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .rc-alert-banner-content {
@@ -149,7 +157,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-sticky-nav-wrap {
   position: sticky;
   top: 0; 
-  z-index: 40; /* Lowered so it doesn't fight ReadMe's native header */
+  z-index: 40; 
   background-color: var(--brightgray); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
   margin: 24px 0 48px 0;
@@ -212,7 +220,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   opacity: 0.7;
 }
 
-/* GETTING STARTED CTA (Gateway path 0) */
+/* GETTING STARTED CTA */
 .rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
 .rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
 .rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
@@ -291,10 +299,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
 @media(max-width:640px){
-  /* --- KEY MOBILE FIXES --- */
-  .rc-sticky-nav-wrap { 
-    top: 64px; /* Docks our nav BELOW ReadMe's mobile hamburger header */
-  }
+  /* Docks our nav BELOW ReadMe's mobile hamburger header */
+  .rc-sticky-nav-wrap { top: 64px; }
   .rc-alert-banner { padding: 12px 16px; }
   .rc-alert-text { font-size: 0.85rem; flex-direction: column; gap: 8px; }
   .rc-hero h1{font-size:1.7rem}
@@ -311,8 +317,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   .rc-footer-summary { padding: 24px; }
 }
 </style>
-</head>
-<body>
+
 <div class="rc-guide">
 
   <div class="rc-alert-banner">
@@ -454,8 +459,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     </div>
 
   </div> </div>
-</body>
-</html>
 `}</HTMLBlock>
 
 <br />
