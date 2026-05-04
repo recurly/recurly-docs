@@ -26,6 +26,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   color: var(--offblack); 
   padding: 12px 24px;
   position: relative; 
+  z-index: 40; /* Lowered so it doesn't fight native ReadMe modals */
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .rc-alert-banner-content {
@@ -59,7 +60,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 }
 .rc-alert-btn {
   background-color: var(--offblack); 
-  color: #ffffff !important; /* Added !important to override ReadMe link defaults */
+  color: #ffffff !important; 
   text-decoration: none !important;
   padding: 8px 20px;
   border-radius: 8px;
@@ -72,7 +73,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 }
 .rc-alert-btn:hover {
   background-color: var(--orange);
-  color: #ffffff !important; /* Keeps text white on hover as well */
+  color: #ffffff !important; 
   transform: translateY(-2px);
 }
 .rc-alert-close {
@@ -148,7 +149,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-sticky-nav-wrap {
   position: sticky;
   top: 0; 
-  z-index: 100;
+  z-index: 40; /* Lowered so it doesn't fight ReadMe's native header */
   background-color: var(--brightgray); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
   margin: 24px 0 48px 0;
@@ -290,6 +291,11 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
 @media(max-width:640px){
+  /* --- KEY MOBILE FIXES --- */
+  .rc-sticky-nav-wrap { 
+    top: 64px; /* Docks our nav BELOW ReadMe's mobile hamburger header */
+  }
+  .rc-alert-banner { padding: 12px 16px; }
   .rc-alert-text { font-size: 0.85rem; flex-direction: column; gap: 8px; }
   .rc-hero h1{font-size:1.7rem}
   .rc-hero{padding:36px 20px 40px}
