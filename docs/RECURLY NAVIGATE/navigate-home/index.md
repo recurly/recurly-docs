@@ -25,7 +25,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   background-color: var(--yellow); 
   color: var(--offblack); 
   padding: 12px 24px;
-  position: relative; /* Scrolls away naturally */
+  position: relative; 
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .rc-alert-banner-content {
@@ -59,7 +59,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 }
 .rc-alert-btn {
   background-color: var(--offblack); 
-  color: white;
+  color: #ffffff !important; /* Added !important to override ReadMe link defaults */
   text-decoration: none !important;
   padding: 8px 20px;
   border-radius: 8px;
@@ -72,6 +72,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 }
 .rc-alert-btn:hover {
   background-color: var(--orange);
+  color: #ffffff !important; /* Keeps text white on hover as well */
   transform: translateY(-2px);
 }
 .rc-alert-close {
