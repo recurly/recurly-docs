@@ -162,17 +162,55 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
 .rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
 
+/* REDESIGNED FOOTER SUMMARY */
+.rc-footer-summary {
+  background: var(--offwhite);
+  border: 1px solid var(--lightgray);
+  border-radius: 16px;
+  padding: 40px;
+  margin: 64px auto 32px;
+  text-align: center;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.rc-footer-summary h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--offblack);
+  margin: 0;
+}
+.rc-footer-summary p {
+  color: var(--darkgray);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 750px;
+}
+.rc-support-link {
+  display: inline-block;
+  color: var(--orange);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: rgba(255, 130, 0, 0.1); /* Very soft orange background */
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+.rc-support-link:hover {
+  background: var(--orange);
+  color: white;
+  transform: translateY(-2px);
+}
+
 /* BOTTOM PLAIN TEXT NAVIGATION */
 .rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:32px;margin-top:20px;text-align:center;}
 .rc-footer-links{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;}
 .rc-footer-link{color:var(--gray);text-decoration:none;font-weight:600;font-size:.9rem;transition:color .2s;}
 .rc-footer-link:hover{color:var(--orange);text-decoration:underline;}
-
-/* FOOTER SUMMARY */
-.rc-footer-summary{margin-top:40px;padding-top:32px;border-top:1px solid var(--lightgray);text-align:center;color:var(--gray);font-size:.95rem;line-height:1.6;max-width:800px;margin-left:auto;margin-right:auto;margin-bottom:24px;}
-.rc-footer-summary strong{color:var(--darkgray);}
-.rc-footer-summary a{color:var(--orange);text-decoration:none;font-weight:700;}
-.rc-footer-summary a:hover{text-decoration:underline;}
 
 /* RESPONSIVE */
 @media(max-width:900px){
@@ -190,6 +228,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     gap: 24px; 
     padding: 14px 20px;
   }
+  .rc-footer-summary { padding: 24px; }
 }
 </style>
 </head>
@@ -197,11 +236,9 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 <div class="rc-guide">
 
   <div class="rc-hero">
-    
     <div class="rc-brand-header">
       <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
     </div>
-
     <h1>Your Subscription Success Hub</h1>
     <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
     
@@ -289,7 +326,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
     <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank">
       <div class="rc-hub-icon" style="background-color: #0075ff;">
-        <img src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" alt="Events" />
+        <img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events" />
       </div>
       <h3>Events</h3>
       <p>Register for Merchant Spotlight Webinars and peer-led learning sessions.</p>
@@ -298,7 +335,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
     <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank">
       <div class="rc-hub-icon" style="background-color: #ff8200;">
-        <img src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" alt="Office Hours" />
+        <img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours" />
       </div>
       <h3>Office Hours</h3>
       <p>Connect with a Recurly CSM live. Bring your data, ask questions, or just listen.</p>
@@ -315,9 +352,9 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   </div>
   
   <div class="rc-footer-summary">
-    <h3><strong>Maximizing your subscription potential.</strong></h3>
-    <br>
-    <p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
+    <h3>Maximizing your subscription potential</h3>
+    <p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program?</p>
+    <a href="mailto:support@recurly.com" class="rc-support-link">Reach out to support@recurly.com →</a>
   </div>
 
   <div class="rc-footer-nav">
