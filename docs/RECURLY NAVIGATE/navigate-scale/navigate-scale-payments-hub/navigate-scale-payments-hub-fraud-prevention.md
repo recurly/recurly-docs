@@ -118,11 +118,11 @@ metadata:
       <div><h4>Use the risk score trend as an early warning</h4><p>Don't wait for blocked transactions to spike before investigating. The Average Risk Score Over Time chart is your leading indicator. If you see the average score falling over several days — even if blocked transactions haven't spiked yet — it's worth reviewing your Kount rules and reaching out to your Kount representative.</p></div>
     </div>
 
-    <h3 class="rc-subhead">✅ Activity: Explore Fraud Prevention</h3>
+    <h3 class="rc-subhead">✅ Activity: Explore fraud prevention</h3>
     <div class="rc-checklist">
       <div class="rc-cl-header"><span>✅</span><h3>Fraud prevention activity</h3></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp1"><label for="fp1" class="rc-clab">What is your current average risk score? Is it trending up, down, or stable over the period?<span>A falling trend is your early warning signal — act before blocked transactions spike</span></label></div>
-      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp2"><label for="fp2" class="rc-clab">Look at Fraud by Payment Method. Which payment method has the highest concentration of blocked transactions?<span>This tells you where fraud attempts are focusing — and may inform where to add friction or tighten rules</span></label></div>
+      <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp2"><label for="fp2" class="rc-clab">Look at fraud by payment method. Which payment method has the highest concentration of blocked transactions?<span>This tells you where fraud attempts are focusing — and may inform where to add friction or tighten rules</span></label></div>
       <div class="rc-cli"><input type="checkbox" class="rc-cb" id="fp3"><label for="fp3" class="rc-clab">Check Blocked Transactions by Gateway. Is fraud pressure concentrated on a specific gateway?<span>If one gateway shows significantly more blocks, it may indicate a routing or rule configuration worth reviewing</span></label></div>
     </div>
 
