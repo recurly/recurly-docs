@@ -134,24 +134,24 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 }
 
 /* FEATURED BANNER */
-.rc-featured{background:var(--offwhite);border:2px solid var(--yellow);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:48px;}
+.rc-featured{background:var(--offwhite);border:2px solid var(--yellow);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
 .rc-featured-content h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
 .rc-featured-content p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
 .rc-featured-tag{display:inline-block;background:var(--offblack);color:var(--yellow);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:6px;margin-bottom:10px;}
 .rc-btn{background:var(--yellow);color:var(--offblack);text-decoration:none;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.9rem;white-space:nowrap;transition:transform .2s;}
 .rc-btn:hover{transform:translateY(-2px);}
 
-/* GETTING STARTED CTA (Moved up) */
-.rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
-.rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
-.rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
-.rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
-.rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
-
 /* MAIN NAVIGATION HUB */
 .rc-sec-header{text-align:center;margin-bottom:32px;}
 .rc-sec-header h2{font-size:2rem;font-weight:800;margin:0 0 10px;color:var(--offblack)}
 .rc-sec-header p{color:var(--gray);font-size:1.05rem;max-width:600px;margin:0 auto;}
+
+/* GETTING STARTED CTA (Now acting as the featured first tile) */
+.rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px;} /* Changed margin to match grid gap */
+.rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
+.rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
+.rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
+.rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
 
 .rc-hub-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin-bottom:24px;}
 .rc-hub-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:16px;padding:32px 24px;text-decoration:none !important;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;align-items:center;text-align:center;}
@@ -282,17 +282,17 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
     <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn" target="_blank">Register Now</a>
   </div>
 
+  <div class="rc-sec-header">
+    <h2>Explore Navigate</h2>
+    <p>Choose your objective to access self-serve learning paths and resources.</p>
+  </div>
+
   <div class="rc-starter-cta">
     <div class="rc-starter-text">
       <h3>👋 New to Navigate?</h3>
       <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
     </div>
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
-  </div>
-
-  <div class="rc-sec-header">
-    <h2>Explore Navigate</h2>
-    <p>Choose your objective to access self-serve learning paths and resources.</p>
   </div>
 
   <div class="rc-hub-grid">
