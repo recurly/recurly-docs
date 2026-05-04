@@ -31,7 +31,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   padding:56px 40px 40px;
   text-align:center;
   border-radius:16px;
-  margin-bottom:0; /* Removed margin so sticky nav can float nicely below it */
+  margin-bottom:0; 
 }
 
 /* Replacing the pill/badge styles with the new logo and text lockup styles */
@@ -40,36 +40,23 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 30px; /* Space from the main h1 title */
+  margin-bottom: 30px; 
 }
 .rc-logo-image {
-  height: 40px; /* Preserve user's updated height */
+  height: 40px; 
   width: auto;
-}
-.rc-logo-text {
-  color: white;
-  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  white-space: nowrap;
-  letter-spacing: 0.2px;
-}
-.rc-logo-divider {
-  color: rgba(255, 255, 255, 0.4); /* Subtle divider */
-  margin: 0 4px;
 }
 
 .rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
 .rc-hero>p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 0;color:var(--lightgray);line-height:1.6}
 
-/* Removed border-top here to eliminate the faint horizontal line */
 .rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:35px;padding-top:0px;text-align:center}
 
 .rc-hero-stat{padding:0 20px;position:relative}
 .rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
 .rc-hero-stat-label{font-size:.72rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
 
-/* STICKY MAIN NAVIGATION (Using the brightgray/f1efe3 color) */
+/* --- STICKY NAVIGATION (DESKTOP) --- */
 .rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -78,20 +65,25 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
   margin: 24px 0 48px 0;
   border-radius: 12px;
-  border: 1px solid var(--lightgray); /* Slight border for crisp definition */
+  border: 1px solid var(--lightgray); 
+  display: flex;
+  flex-direction: column;
 }
+
+/* Hidden by default on desktop */
+.rc-menu-toggle { display: none; }
+.rc-mobile-bar { display: none; }
+
 .rc-sticky-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 36px; 
   padding: 16px 24px;
-  overflow-x: auto;
-  white-space: nowrap;
 }
 .rc-sticky-link {
   color: var(--offblack);
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: 800; 
   font-size: .9rem;
   letter-spacing: 0.5px;
@@ -166,19 +158,82 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-footer-summary a{color:var(--orange);text-decoration:none;font-weight:700;}
 .rc-footer-summary a:hover{text-decoration:underline;}
 
-/* RESPONSIVE */
+/* RESPONSIVE & MOBILE HAMBURGER MENU */
 @media(max-width:900px){
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
   .rc-context-wrap{grid-template-columns:1fr;}
 }
-@media(max-width:640px){
+@media(max-width:768px){
   .rc-hero h1{font-size:1.7rem}
   .rc-hero{padding:36px 20px 40px}
   .rc-hero-stats{grid-template-columns:1fr;gap:24px;padding-top:28px}
   .rc-featured, .rc-starter-cta{flex-direction:column;align-items:flex-start;text-align:left;}
   .rc-hub-grid{grid-template-columns:1fr;}
   .rc-context-wrap{padding:24px;}
-  .rc-sticky-nav { justify-content: flex-start; gap: 24px; }
+  
+  /* --- HAMBURGER MENU CSS --- */
+  .rc-mobile-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    width: 100%;
+  }
+  .rc-mobile-bar-title {
+    font-weight: 800;
+    font-size: .95rem;
+    color: var(--offblack);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .rc-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .rc-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--offblack);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hide the horizontal nav by default on mobile */
+  .rc-sticky-nav {
+    display: none; 
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .rc-sticky-link {
+    padding: 16px 24px;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid rgba(0,0,0,0.05); /* Adds a subtle divider line between mobile links */
+  }
+  .rc-sticky-link::after {
+    display: none; /* Removes the hover underline on mobile to prevent weird behavior */
+  }
+  
+  /* THE MAGIC: When the invisible checkbox is checked, show the nav list */
+  .rc-menu-toggle:checked ~ .rc-sticky-nav {
+    display: flex;
+  }
+  
+  /* THE MAGIC: Animate the hamburger into an "X" when open */
+  .rc-menu-toggle:checked ~ .rc-mobile-bar .rc-hamburger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .rc-menu-toggle:checked ~ .rc-mobile-bar .rc-hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .rc-menu-toggle:checked ~ .rc-mobile-bar .rc-hamburger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
 }
 </style>
 </head>
@@ -211,6 +266,18 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   </div>
 
   <div class="rc-sticky-nav-wrap">
+    
+    <input type="checkbox" id="mobile-nav-trigger" class="rc-menu-toggle">
+    
+    <div class="rc-mobile-bar">
+      <span class="rc-mobile-bar-title">Navigate Menu</span>
+      <label for="mobile-nav-trigger" class="rc-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
     <div class="rc-sticky-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">Home</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
@@ -293,7 +360,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <h3>👋 New to Navigate?</h3>
       <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
     </div>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
+    <a href="#" class="rc-btn-secondary">Get Started Here</a>
   </div>
 
   <div class="rc-context-wrap">
