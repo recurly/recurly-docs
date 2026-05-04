@@ -23,13 +23,13 @@ The Account Activities Report in Recurly provides a detailed log of user actions
 
 Account activities can be viewed at both the account level, for individual customer accounts, and at the site level within the Admin section of the Recurly App (UI). By navigating to the "Admin Exports" page, you can conveniently access and explore the account-level activity log.
 
-![](https://files.readme.io/0ac398a-Screen_Shot_2022-08-09_at_2.24.50_PM.png "Screen Shot 2022-08-09 at 2.24.50 PM.png")
+<Image align="center" border={true} width="80% " src="https://files.readme.io/2ede107c5f42b2c1f59b5cde5991d8278042fc5307e7038bf87727dc1a506f26-image.png" className="border" />
 
 # Obtaining an account activities export
 
 To obtain an Account Activities Export, visit the Admin Exports page and select the List of activities report. This comprehensive report offers a detailed overview of all account-level activities performed within your Recurly site. Whether you prefer a list of activities or a count of activities, you can choose the desired visualization option to meet your reporting needs.
 
-![](https://files.readme.io/c8862b6-image.png)
+<Image align="center" border={true} src="https://files.readme.io/09564797b2b3a7d1e6c5f282885b06d9c5e61a901cdf28a9cb5d49d0ec3de58d-image.png" className="border" />
 
 # Filtering options in the account activities report
 
@@ -44,7 +44,7 @@ The Account Activities report provides various filtering options to refine and n
 * **<span id="Actor_Name">Actor Name</span>:** Represents the entity or user on your RA site responsible for the activity. This could be the Recurly Background Bot, an API call, or a unique user.
 * **<span id="Actor_Type">Actor Type</span>:** Specifies the type of actor who performed the activity, such as a user.
 * **<span id="Created_at_Time_Date">Created at Time/Date</span>:** Records the timestamp or date when the activity occurred. You have the option to choose either the time or date representation.
-* **<span id="Verb">Verb</span>:** Describes the action performed on an object and how it was changed. For instance, it could be "<span id="sent_email">sent\_email</span>," "<span id="renewed">renewed</span>," or "<span id="marked_past_due">marked\_past\_due</span>."
+* **<span id="Verb">Verb</span>:** Describes the action performed on an object and how it was changed. For instance, it could be "<span id="sent_email">sent_email</span>," "<span id="renewed">renewed</span>," or "<span id="marked_past_due">marked_past_due</span>."
 * **<span id="Metadata">Metadata</span>:** Provides specific details about the activity, such as the name of the plan assigned to a customer or the invoice ID number sent to a customer.
 
 ## Select additional filters
@@ -68,7 +68,7 @@ Tailor your data presentation to suit your preferences by selecting a visualizat
 * Map
 * Single Value
 
-Additional options are available by clicking the ellipses button at the end of the options list where a dropdown list of several more visualization options are presented. 
+Additional options are available by clicking the ellipses button at the end of the options list where a dropdown list of several more visualization options are presented.
 
 ![](https://files.readme.io/932fc01-Screen_Shot_2022-08-16_at_4.25.15_PM.png "Screen Shot 2022-08-16 at 4.25.15 PM.png")
 
