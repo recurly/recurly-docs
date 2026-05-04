@@ -27,6 +27,8 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" />
 
+<Image align="center" src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" />
+
   <br />
 
   <Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
@@ -37,9 +39,7 @@ metadata:
 
   <br />
 
-
-<Image align="center" src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" />
-
+  <Image align="center" src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" />
 
   <Image align="center" src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png" />
 
