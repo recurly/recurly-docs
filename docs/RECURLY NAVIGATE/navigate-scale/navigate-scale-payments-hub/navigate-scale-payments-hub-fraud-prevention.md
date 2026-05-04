@@ -140,7 +140,7 @@ metadata:
     <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-fraud-prevention" target="_blank">📖 Docs: Fraud prevention dashboard</a>
     <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank">🔐 Docs: Kount integration</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">🎤 Payments Hub Walkthrough</a>
+    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank">🎤 Payments hub walkthrough</a>
     <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
     <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank">🌐 Join Global Office Hours</a>
   </div>
