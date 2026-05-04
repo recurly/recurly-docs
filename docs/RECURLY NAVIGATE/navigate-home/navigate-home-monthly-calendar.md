@@ -1,5 +1,5 @@
 ---
-title: Monthly Calendar
+title: Navigate monthly calendar
 deprecated: false
 hidden: true
 metadata:
