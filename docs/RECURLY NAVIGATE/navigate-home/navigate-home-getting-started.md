@@ -20,7 +20,9 @@ metadata:
 @media(max-width:640px){
   .rc-context-wrap{padding:24px;}
 }
+`}</HTMLBlock>
 
+<HTMLBlock>{`
 <div class="rc-context-wrap">
     <div class="rc-context-info">
       <h3>The Recurly Flywheel</h3>
@@ -31,10 +33,6 @@ metadata:
       <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="Recurly Flywheel — Launch, Acquire, Retain, Scale" />
     </div>
   </div>
-`}</HTMLBlock>
-
-<HTMLBlock>{`
-
 `}</HTMLBlock>
 
 <br />
