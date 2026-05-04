@@ -6,92 +6,25 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navigate — Recurly Customer Success Program</title>
 <style>
-/* Smooth scrolling for page anchors */
-html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-
-.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif}
-*{box-sizing:border-box}
-body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);background-color:#fff;}
-
-/* --- THIN FEATURED EVENT BANNER (Top of page) --- */
-.rc-alert-banner {
-  background-color: var(--yellow); 
-  color: var(--offblack); 
-  padding: 12px 24px;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  border-radius: 12px 12px 0 0; /* Softly rounds the top corners if ReadMe containers show them */
+/* Scoped variables to protect ReadMe's native styling */
+.rc-guide {
+  --yellow: #FFD706;
+  --orange: #FF8200;
+  --offblack: #0D0D0B;
+  --darkgray: #32312D;
+  --gray: #807D73;
+  --lightgray: #CCC9B8;
+  --brightgray: #F1EFE3;
+  --offwhite: #FFFDF2;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--darkgray);
 }
-.rc-alert-banner-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto auto; 
-  align-items: center;
-  gap: 24px;
-}
-.rc-alert-text {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  font-weight: 600; 
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.rc-alert-tag {
-  background: var(--offblack);
-  color: var(--yellow);
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-.rc-alert-btn {
-  background-color: var(--offblack); 
-  color: #ffffff !important; 
-  text-decoration: none !important;
-  padding: 8px 20px;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  transition: all 0.2s ease;
-}
-.rc-alert-btn:hover {
-  background-color: var(--orange);
-  color: #ffffff !important; 
-  transform: translateY(-2px);
-}
-.rc-alert-close {
-  color: rgba(0,0,0,0.4);
-  background: transparent;
-  border: none;
-  font-size: 1.6rem;
-  line-height: 1;
-  padding: 0;
-  cursor: pointer;
-  font-weight: 200;
-  margin-left: 8px;
-  transition: color 0.2s;
-}
-.rc-alert-close:hover {
-  color: var(--offblack);
+.rc-guide * {
+  box-sizing: border-box;
 }
 
-/* HERO */
+/* HERO (Restored to perfectly rounded corners) */
 .rc-hero{
   background: linear-gradient(rgba(13, 13, 11, 0.8), rgba(13, 13, 11, 0.8)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
@@ -100,51 +33,30 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   color:#fff;
   padding:56px 40px 40px;
   text-align:center;
-  border-radius: 0 0 16px 16px; /* Blends cleanly with the banner above it */
+  border-radius:16px;
   margin-bottom:0; 
 }
 
-.rc-brand-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 30px; 
-}
-.rc-logo-image {
-  height: 40px; 
-  width: auto;
-}
-.rc-logo-text {
-  color: white;
-  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  white-space: nowrap;
-  letter-spacing: 0.2px;
-}
-.rc-logo-divider {
-  color: rgba(255, 255, 255, 0.4); 
-  margin: 0 4px;
-}
+.rc-brand-header { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 30px; }
+.rc-logo-image { height: 40px; width: auto; }
+.rc-logo-text { color: white; font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif; font-weight: 500; font-size: 1rem; white-space: nowrap; letter-spacing: 0.2px; }
+.rc-logo-divider { color: rgba(255, 255, 255, 0.4); margin: 0 4px; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 14px; color: var(--offwhite); }
+.rc-hero > p { font-size: 1.05rem; opacity: .8; max-width: 700px; margin: 0 auto 0; color: var(--lightgray); line-height: 1.6; }
 
-.rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
-.rc-hero>p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 0;color:var(--lightgray);line-height:1.6}
+.rc-hero-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; margin-top: 35px; padding-top: 0px; text-align: center; }
+.rc-hero-stat { padding: 0 20px; position: relative; }
+.rc-hero-stat-num { font-size: 1.8rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 8px; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); line-height: 1.5; }
 
-.rc-hero-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;margin-top:35px;padding-top:0px;text-align:center}
-
-.rc-hero-stat{padding:0 20px;position:relative}
-.rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
-.rc-hero-stat-label{font-size:.72rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
-
-/* STICKY MAIN NAVIGATION (Restored to the working version) */
+/* STICKY MAIN NAVIGATION (Restored to working stable version) */
 .rc-sticky-nav-wrap {
   position: sticky;
   top: 0; 
   z-index: 100;
   background-color: var(--brightgray); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
-  margin: 24px 0 48px 0;
+  margin: 24px 0 32px 0; /* Reduced bottom margin slightly to pull thin banner up */
   border-radius: 12px;
   border: 1px solid var(--lightgray); 
 }
@@ -159,62 +71,89 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   -webkit-overflow-scrolling: touch; 
   scrollbar-width: none; 
 }
-.rc-sticky-nav::-webkit-scrollbar { 
-  display: none; 
-}
+.rc-sticky-nav::-webkit-scrollbar { display: none; }
+.rc-sticky-link, .rc-sticky-link:hover { color: var(--offblack); text-decoration: none !important; font-weight: 800; font-size: .9rem; letter-spacing: 0.5px; text-transform: uppercase; position: relative; transition: opacity .2s; }
+.rc-sticky-home { display: inline-flex; align-items: center; gap: 6px; }
+.rc-sticky-home img { width: 16px; height: 16px; object-fit: contain; }
+.rc-sticky-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 50%; background-color: var(--offblack); transition: all 0.2s ease-in-out; transform: translateX(-50%); }
+.rc-sticky-link:hover::after { width: 100%; }
+.rc-sticky-link:hover { opacity: 0.7; }
 
-.rc-sticky-link, .rc-sticky-link:hover {
-  color: var(--offblack);
-  text-decoration: none !important; 
-  font-weight: 800; 
-  font-size: .9rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  position: relative;
-  transition: opacity .2s;
-}
-
-/* Home Pin Alignment Class */
-.rc-sticky-home {
-  display: inline-flex;
+/* THIN FEATURED BANNER (Safely inside the page, below Nav) */
+.rc-thin-alert {
+  background: var(--offwhite);
+  border: 1px solid var(--yellow);
+  border-left: 6px solid var(--yellow);
+  border-radius: 10px;
+  padding: 16px 24px;
+  display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 48px;
 }
-.rc-sticky-home img {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
+.rc-thin-alert-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
+.rc-thin-alert-tag {
+  background: var(--offblack);
+  color: var(--yellow);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.rc-thin-alert-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--darkgray);
+  line-height: 1.5;
+  font-weight: 600;
+}
+.rc-thin-alert-close-wrap { display: flex; align-items: center; gap: 16px; }
+.rc-btn {
+  background: var(--offblack);
+  color: #ffffff !important; 
+  text-decoration: none !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition: transform 0.2s;
+}
+.rc-btn:hover { background: var(--orange); color: #ffffff !important; transform: translateY(-2px); }
+.rc-alert-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--gray);
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+.rc-alert-close:hover { color: var(--offblack); }
 
-.rc-sticky-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 50%;
-  background-color: var(--offblack);
-  transition: all 0.2s ease-in-out;
-  transform: translateX(-50%);
-}
-.rc-sticky-link:hover::after {
-  width: 100%;
-}
-.rc-sticky-link:hover {
-  opacity: 0.7;
-}
+/* GETTING STARTED CTA (Gateway path 0) */
+.rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
+.rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
+.rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
+.rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
+.rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
 
 /* MAIN NAVIGATION HUB */
 .rc-sec-header{text-align:center;margin-bottom:32px;}
 .rc-sec-header h2{font-size:2rem;font-weight:800;margin:0 0 10px;color:var(--offblack)}
 .rc-sec-header p{color:var(--gray);font-size:1.05rem;max-width:600px;margin:0 auto;}
-
-/* GETTING STARTED CTA (Gateway path 0) */
-.rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px;}
-.rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
-.rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
-.rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
-.rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
 
 .rc-hub-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin-bottom:24px;}
 .rc-hub-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:16px;padding:32px 24px;text-decoration:none !important;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;align-items:center;text-align:center;}
@@ -226,48 +165,11 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hub-arrow{margin-top:20px;color:var(--orange);font-weight:700;font-size:.9rem;text-decoration:none !important;}
 
 /* REDESIGNED FOOTER SUMMARY */
-.rc-footer-summary {
-  background: var(--offwhite);
-  border: 1px solid var(--lightgray);
-  border-radius: 16px;
-  padding: 40px;
-  margin: 64px auto 32px;
-  text-align: center;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-.rc-footer-summary h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--offblack);
-  margin: 0;
-}
-.rc-footer-summary p {
-  color: var(--darkgray);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin: 0;
-  max-width: 750px;
-}
-.rc-support-link {
-  display: inline-block;
-  color: var(--orange);
-  font-weight: 700;
-  text-decoration: none;
-  padding: 10px 20px;
-  background: rgba(255, 130, 0, 0.1); 
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  margin-top: 8px;
-}
-.rc-support-link:hover {
-  background: var(--orange);
-  color: white;
-  transform: translateY(-2px);
-}
+.rc-footer-summary { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 16px; padding: 40px; margin: 64px auto 32px; text-align: center; max-width: 900px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.rc-footer-summary h3 { font-size: 1.5rem; font-weight: 800; color: var(--offblack); margin: 0; }
+.rc-footer-summary p { color: var(--darkgray); font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
+.rc-support-link { display: inline-block; color: var(--orange); font-weight: 700; text-decoration: none; padding: 10px 20px; background: rgba(255, 130, 0, 0.1); border-radius: 8px; transition: all 0.2s ease; margin-top: 8px; }
+.rc-support-link:hover { background: var(--orange); color: white; transform: translateY(-2px); }
 
 /* BOTTOM PLAIN TEXT NAVIGATION */
 .rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:32px;margin-top:20px;text-align:center;}
@@ -277,42 +179,22 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
 /* RESPONSIVE */
 @media(max-width:900px){
-  .rc-alert-banner-content { grid-template-columns: 1fr; gap: 16px; text-align: center; }
-  .rc-alert-text { justify-content: center; }
-  .rc-alert-close { position: absolute; top: 8px; right: 12px; }
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
 @media(max-width:640px){
-  /* Reverted to the PERFECT working version of the mobile CSS */
-  .rc-alert-text { font-size: 0.85rem; flex-direction: column; gap: 8px; }
   .rc-hero h1{font-size:1.7rem}
   .rc-hero{padding:36px 20px 40px}
   .rc-hero-stats{grid-template-columns:1fr;gap:24px;padding-top:28px}
+  .rc-thin-alert { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .rc-thin-alert-close-wrap { width: 100%; justify-content: space-between; flex-direction: row-reverse; }
   .rc-starter-cta{flex-direction:column;align-items:flex-start;text-align:left;}
   .rc-hub-grid{grid-template-columns:1fr;}
-  
-  .rc-sticky-nav { 
-    justify-content: flex-start; 
-    gap: 24px; 
-    padding: 14px 20px;
-  }
+  .rc-sticky-nav { justify-content: flex-start; gap: 24px; padding: 14px 20px; }
   .rc-footer-summary { padding: 24px; }
 }
 </style>
-</head>
-<body>
-<div class="rc-guide">
 
-  <div class="rc-alert-banner">
-    <div class="rc-alert-banner-content">
-      <p class="rc-alert-text">
-        <span class="rc-alert-tag">Featured Event</span>
-        Join our lead CSMs this Thursday to discuss optimizing your Dunning windows and recovering failed payments.
-      </p>
-      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-alert-btn" target="_blank">Register Now ↗</a>
-      <button class="rc-alert-close" onclick="this.parentElement.parentElement.style.display='none';">&times;</button>
-    </div>
-  </div>
+<div class="rc-guide">
 
   <div class="rc-hero">
     <div class="rc-brand-header">
@@ -349,6 +231,17 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
       <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events</a>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours</a>
+    </div>
+  </div>
+
+  <div class="rc-thin-alert">
+    <div class="rc-thin-alert-content">
+      <span class="rc-thin-alert-tag">Featured Event</span>
+      <p class="rc-thin-alert-text">Join our lead CSMs this Thursday to discuss optimizing your Dunning windows and recovering failed payments.</p>
+    </div>
+    <div class="rc-thin-alert-close-wrap">
+      <button class="rc-alert-close" onclick="this.parentElement.parentElement.style.display='none';">&times;</button>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn" target="_blank">Register Now ↗</a>
     </div>
   </div>
 
@@ -440,8 +333,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   </div>
 
 </div>
-</body>
-</html>
 `}</HTMLBlock>
 
 <br />
