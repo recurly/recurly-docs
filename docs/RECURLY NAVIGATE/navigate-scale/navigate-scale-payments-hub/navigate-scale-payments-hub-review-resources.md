@@ -118,21 +118,21 @@ metadata:
       <div class="rc-dash-card">
         <div class="rc-dash-card-head">
           <span class="rc-dash-card-icon">💳</span>
-          <h4>Payment Processing</h4>
+          <h4>Payment processing</h4>
         </div>
         <p>The most actionable dashboard. Shows <strong>success rates by gateway, payment method, and card BIN</strong> — plus a ranked table of your top decline reasons, categorized as hard or soft.</p>
       </div>
       <div class="rc-dash-card">
         <div class="rc-dash-card-head">
           <span class="rc-dash-card-icon">🔄</span>
-          <h4>Account Updater</h4>
+          <h4>Account updater</h4>
         </div>
         <p>Tracks <strong>revenue protected through automatic card updates</strong> before payments fail. Shows update counts, revenue authorized on updated cards, update type breakdown, and activity by card network.</p>
       </div>
       <div class="rc-dash-card">
         <div class="rc-dash-card-head">
           <span class="rc-dash-card-icon">🔁</span>
-          <h4>Payment Retry Recovery</h4>
+          <h4>Payment retry recovery</h4>
         </div>
         <p>Shows how much <strong>initially failed revenue was recovered through intelligent retries</strong> — including total recovered, recovery rate, revenue at risk, and which retry attempt captured the payment.</p>
       </div>
@@ -142,7 +142,7 @@ metadata:
       <div class="rc-dash-card">
         <div class="rc-dash-card-head">
           <span class="rc-dash-card-icon">🛡️</span>
-          <h4>Fraud Prevention <span style="font-size:.78rem;font-weight:400;color:var(--gray);margin-left:6px;">Kount-enabled merchants only</span></h4>
+          <h4>Fraud prevention <span style="font-size:.78rem;font-weight:400;color:var(--gray);margin-left:6px;">Kount-enabled merchants only</span></h4>
         </div>
         <p>Consolidates your fraud blocking activity into one view. Shows <strong>blocked transactions, average risk score trends, fraud by payment method, and blocked volume by gateway</strong>. The risk score trend is your early warning system — a rising average often precedes a spike in blocks.</p>
       </div>
