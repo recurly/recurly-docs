@@ -14,29 +14,26 @@ metadata:
 <title>Navigate — Recurly Customer Success Program</title>
 <style>
 /* Smooth scrolling for page anchors */
-html { scroll-behavior: smooth; scroll-padding-top: 130px; } /* Slightly higher padding due to alert bar */
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
 .rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);background-color:#fff;}
 
-/* --- NEW GLOBAL ALERT BANNER STYLING --- */
-/* (Structural layout modeled after image_1.png, aesthetics match Navigate brand) */
+/* --- DYNAMIC GLOBAL ALERT BANNER --- */
 .rc-alert-banner {
-  background-color: var(--yellow); /* cite:var(--yellow) used as inspiration */
-  color: var(--offblack); /* cite:var(--offblack) used for text */
+  background-color: var(--yellow); 
+  color: var(--offblack); 
   padding: 14px 24px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  /* Removed sticky positioning so it scrolls away naturally */
+  position: relative; 
   border-bottom: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 .rc-alert-banner-content {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr auto auto; /* Text, Button, Close */
+  grid-template-columns: 1fr auto auto; 
   align-items: center;
   gap: 24px;
 }
@@ -44,13 +41,13 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
-  font-weight: 600; /* cite:established design rules require clean bolding */
+  font-weight: 600; 
 }
 .rc-alert-text strong {
-  font-weight: 800; /* Extra bold for emphasis cite: var(--established bolding) */
+  font-weight: 800; 
 }
 .rc-alert-btn {
-  background-color: var(--offblack); /* cite:established design rules */
+  background-color: var(--offblack); 
   color: white;
   text-decoration: none !important;
   padding: 10px 20px;
@@ -138,7 +135,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 /* STICKY MAIN NAVIGATION (Pillar Nav) */
 .rc-sticky-nav-wrap {
   position: sticky;
-  top: 66px; /* Offset to sit nicely below the utility alert bar when sticking */
+  top: 0; /* Reset back to absolute top */
   z-index: 100;
   background-color: var(--brightgray); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
@@ -285,7 +282,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 @media(max-width:900px){
   .rc-alert-banner-content { grid-template-columns: 1fr; gap: 16px; text-align: center; }
   .rc-alert-close { position: absolute; top: 8px; right: 12px; }
-  .rc-sticky-nav-wrap { top: 122px; } /* Offset adjustment for mobile dynamic layout */
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
 @media(max-width:640px){
@@ -353,8 +349,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
-        <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-events" class="rc-sticky-link" target="_blank">Events</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-office-hours" class="rc-sticky-link" target="_blank">Office Hours</a>
       </div>
     </div>
 
@@ -364,7 +360,12 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
         <h3>Upcoming: Global Office Hours</h3>
         <p>Join our lead CSMs this Thursday to discuss optimizing your Dunning windows and recovering failed payments.</p>
       </div>
-      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn" target="_blank">Register Now Now ↗</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn" target="_blank">Register Now ↗</a>
+    </div>
+
+    <div class="rc-sec-header">
+      <h2>Explore Navigate</h2>
+      <p>Choose your objective to access self-serve learning paths and resources.</p>
     </div>
 
     <div class="rc-starter-cta">
@@ -373,11 +374,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
         <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
       </div>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
-    </div>
-
-    <div class="rc-sec-header">
-      <h2>Explore Navigate</h2>
-      <p>Choose your objective to access self-serve learning paths and resources.</p>
     </div>
 
     <div class="rc-hub-grid">
@@ -419,7 +415,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
       <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank">
         <div class="rc-hub-icon" style="background-color: #0075ff;">
-          <img src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" alt="Events" />
+          <img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events" />
         </div>
         <h3>Events</h3>
         <p>Register for Merchant Spotlight Webinars and peer-led learning sessions.</p>
@@ -428,7 +424,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank">
         <div class="rc-hub-icon" style="background-color: #ff8200;">
-          <img src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" alt="Office Hours" />
+          <img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours" />
         </div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live. Bring your data, ask questions, or just listen.</p>
@@ -454,7 +450,8 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       </div>
     </div>
 
-  </div> </div>
+  </div>
+</div>
 </body>
 </html>
 `}</HTMLBlock>
