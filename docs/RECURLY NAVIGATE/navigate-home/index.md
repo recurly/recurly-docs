@@ -298,7 +298,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
     <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank">
       <div class="rc-hub-icon" style="background-color: #0075ff;">
-        <img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events" />
+        <img src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" alt="Events" />
       </div>
       <h3>Events</h3>
       <p>Register for Merchant Spotlight Webinars and peer-led learning sessions.</p>
