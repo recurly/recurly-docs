@@ -1,5 +1,10 @@
 ---
 title: Navigate monthly calendar
+excerpt: >-
+  Need help with analytics? View our May events for live CSM support on the new
+  Payments Hub, acquisition or retention strategy, churn, or data. Sign up for
+  customer success office hours and webinars on our calendar. This page is
+  updated each month.
 deprecated: false
 hidden: true
 metadata:
