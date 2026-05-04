@@ -14,11 +14,80 @@ metadata:
 <title>Navigate — Recurly Customer Success Program</title>
 <style>
 /* Smooth scrolling for page anchors */
-html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+html { scroll-behavior: smooth; scroll-padding-top: 130px; } /* Slightly higher padding due to alert bar */
 
 .rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);background-color:#fff;}
+
+/* --- NEW GLOBAL ALERT BANNER STYLING --- */
+/* (Structural layout modeled after image_1.png, aesthetics match Navigate brand) */
+.rc-alert-banner {
+  background-color: var(--yellow); /* cite:var(--yellow) used as inspiration */
+  color: var(--offblack); /* cite:var(--offblack) used for text */
+  padding: 14px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+.rc-alert-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* Text, Button, Close */
+  align-items: center;
+  gap: 24px;
+}
+.rc-alert-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 600; /* cite:established design rules require clean bolding */
+}
+.rc-alert-text strong {
+  font-weight: 800; /* Extra bold for emphasis cite: var(--established bolding) */
+}
+.rc-alert-btn {
+  background-color: var(--offblack); /* cite:established design rules */
+  color: white;
+  text-decoration: none !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+.rc-alert-btn:hover {
+  background-color: var(--orange);
+  transform: translateY(-2px);
+}
+.rc-alert-close {
+  color: rgba(0,0,0,0.4);
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 200;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+.rc-alert-close:hover {
+  color: var(--offblack);
+}
+
+/* MAIN BODY CONTENT WRAPPER */
+.rc-body-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
 /* HERO */
 .rc-hero{
@@ -66,10 +135,10 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-hero-stat-num{font-size:1.8rem;font-weight:800;color:var(--yellow);line-height:1;margin-bottom:8px}
 .rc-hero-stat-label{font-size:.72rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--lightgray);line-height:1.5}
 
-/* STICKY MAIN NAVIGATION */
+/* STICKY MAIN NAVIGATION (Pillar Nav) */
 .rc-sticky-nav-wrap {
   position: sticky;
-  top: 0;
+  top: 66px; /* Offset to sit nicely below the utility alert bar when sticking */
   z-index: 100;
   background-color: var(--brightgray); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
@@ -134,24 +203,24 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 }
 
 /* FEATURED BANNER */
-.rc-featured{background:var(--offwhite);border:2px solid var(--yellow);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
+.rc-featured{background:var(--offwhite);border:2px solid var(--yellow);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:48px;}
 .rc-featured-content h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
 .rc-featured-content p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
 .rc-featured-tag{display:inline-block;background:var(--offblack);color:var(--yellow);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:6px;margin-bottom:10px;}
 .rc-btn{background:var(--yellow);color:var(--offblack);text-decoration:none;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.9rem;white-space:nowrap;transition:transform .2s;}
 .rc-btn:hover{transform:translateY(-2px);}
 
-/* MAIN NAVIGATION HUB */
-.rc-sec-header{text-align:center;margin-bottom:32px;}
-.rc-sec-header h2{font-size:2rem;font-weight:800;margin:0 0 10px;color:var(--offblack)}
-.rc-sec-header p{color:var(--gray);font-size:1.05rem;max-width:600px;margin:0 auto;}
-
-/* GETTING STARTED CTA (Now acting as the featured first tile) */
-.rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px;} /* Changed margin to match grid gap */
+/* GETTING STARTED CTA (Now acting as the gateway path 0) */
+.rc-starter-cta{background:var(--brightgray);border:1px solid var(--lightgray);border-radius:16px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:56px;}
 .rc-starter-text h3{margin:0 0 6px;font-size:1.2rem;font-weight:800;color:var(--offblack);}
 .rc-starter-text p{margin:0;font-size:.95rem;color:var(--darkgray);line-height:1.5;}
 .rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
 .rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
+
+/* MAIN NAVIGATION HUB */
+.rc-sec-header{text-align:center;margin-bottom:32px;}
+.rc-sec-header h2{font-size:2rem;font-weight:800;margin:0 0 10px;color:var(--offblack)}
+.rc-sec-header p{color:var(--gray);font-size:1.05rem;max-width:600px;margin:0 auto;}
 
 .rc-hub-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin-bottom:24px;}
 .rc-hub-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:16px;padding:32px 24px;text-decoration:none !important;color:inherit;transition:all .2s ease;display:flex;flex-direction:column;align-items:center;text-align:center;}
@@ -214,9 +283,13 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
 /* RESPONSIVE */
 @media(max-width:900px){
+  .rc-alert-banner-content { grid-template-columns: 1fr; gap: 16px; text-align: center; }
+  .rc-alert-close { position: absolute; top: 8px; right: 12px; }
+  .rc-sticky-nav-wrap { top: 122px; } /* Offset adjustment for mobile dynamic layout */
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
 @media(max-width:640px){
+  .rc-alert-text { font-size: 0.85rem; }
   .rc-hero h1{font-size:1.7rem}
   .rc-hero{padding:36px 20px 40px}
   .rc-hero-stats{grid-template-columns:1fr;gap:24px;padding-top:28px}
@@ -235,141 +308,153 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 <body>
 <div class="rc-guide">
 
-  <div class="rc-hero">
-    <div class="rc-brand-header">
-      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
-    </div>
-    <h1>Your Subscription Success Hub</h1>
-    <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
-    
-    <div class="rc-hero-stats">
-      <div class="rc-hero-stat">
-        <div class="rc-hero-stat-num">Weekly</div>
-        <div class="rc-hero-stat-label">Global Office Hours<br>live expert access</div>
-      </div>
-      <div class="rc-hero-stat">
-        <div class="rc-hero-stat-num">Quarterly</div>
-        <div class="rc-hero-stat-label">Merchant Spotlight<br>peer learning sessions</div>
-      </div>
-      <div class="rc-hero-stat">
-        <div class="rc-hero-stat-num">24/7</div>
-        <div class="rc-hero-stat-label">On-demand paths<br>for every stage</div>
-      </div>
+  <div class="rc-alert-banner">
+    <div class="rc-alert-banner-content">
+      <p class="rc-alert-text">
+        Our next feature dynamic update will be a special <strong>LIVE Office Hours: Product Deep Dive</strong> on <strong>May 7 at 1 pm CT / 11 am PT</strong>.
+      </p>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-office-hours" class="rc-alert-btn" target="_blank">Register Now ↗</a>
+      <button class="rc-alert-close" onclick="this.parentElement.parentElement.style.display='none';">&times;</button>
     </div>
   </div>
 
-  <div class="rc-sticky-nav-wrap">
-    <div class="rc-sticky-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link rc-sticky-home">
-        <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt="Navigate Hub">
-        Home
+  <div class="rc-body-wrapper">
+
+    <div class="rc-hero">
+      <div class="rc-brand-header">
+        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
+      </div>
+      <h1>Your Subscription Success Hub</h1>
+      <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
+      
+      <div class="rc-hero-stats">
+        <div class="rc-hero-stat">
+          <div class="rc-hero-stat-num">Weekly</div>
+          <div class="rc-hero-stat-label">Global Office Hours<br>live expert access</div>
+        </div>
+        <div class="rc-hero-stat">
+          <div class="rc-hero-stat-num">Quarterly</div>
+          <div class="rc-hero-stat-label">Merchant Spotlight<br>peer learning sessions</div>
+        </div>
+        <div class="rc-hero-stat">
+          <div class="rc-hero-stat-num">24/7</div>
+          <div class="rc-hero-stat-label">On-demand paths<br>for every stage</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-sticky-nav-wrap">
+      <div class="rc-sticky-nav">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link rc-sticky-home">
+          <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt="Navigate Hub">
+          Home
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
+        <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours</a>
+      </div>
+    </div>
+
+    <div class="rc-featured">
+      <div class="rc-featured-content">
+        <span class="rc-featured-tag">Featured Event</span>
+        <h3>Upcoming: Global Office Hours</h3>
+        <p>Join our lead CSMs this Thursday to discuss optimizing your Dunning windows and recovering failed payments.</p>
+      </div>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn" target="_blank">Register Now Now ↗</a>
+    </div>
+
+    <div class="rc-starter-cta">
+      <div class="rc-starter-text">
+        <h3>👋 New to Navigate?</h3>
+        <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
+      </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
+    </div>
+
+    <div class="rc-sec-header">
+      <h2>Explore Navigate</h2>
+      <p>Choose your objective to access self-serve learning paths and resources.</p>
+    </div>
+
+    <div class="rc-hub-grid">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-hub-card">
+        <div class="rc-hub-icon" style="background-color: #ccc9b8;">
+          <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" />
+        </div>
+        <h3>Launch</h3>
+        <p>Get configured and live fast. Build a solid subscription foundation from day one.</p>
+        <div class="rc-hub-arrow">View Learning Paths →</div>
       </a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
-      <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events</a>
-      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours</a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-hub-card">
+        <div class="rc-hub-icon" style="background-color: #ffd706;">
+          <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire" />
+        </div>
+        <h3>Acquire</h3>
+        <p>Convert more customers, optimize sign-ups, and grow your subscriber base.</p>
+        <div class="rc-hub-arrow">View Learning Paths →</div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-hub-card">
+        <div class="rc-hub-icon" style="background-color: #ff9d88;">
+          <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain" />
+        </div>
+        <h3>Retain</h3>
+        <p>Reduce involuntary churn, recover revenue, and keep subscribers engaged.</p>
+        <div class="rc-hub-arrow">View Learning Paths →</div>
+      </a>
+
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-hub-card">
+        <div class="rc-hub-icon" style="background-color: #ff5810;">
+          <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale" />
+        </div>
+        <h3>Scale</h3>
+        <p>Expand your business, launch new products, and optimize payments and analytics.</p>
+        <div class="rc-hub-arrow">View Learning Paths →</div>
+      </a>
+
+      <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank">
+        <div class="rc-hub-icon" style="background-color: #0075ff;">
+          <img src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" alt="Events" />
+        </div>
+        <h3>Events</h3>
+        <p>Register for Merchant Spotlight Webinars and peer-led learning sessions.</p>
+        <div class="rc-hub-arrow">View Schedule ↗</div>
+      </a>
+
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank">
+        <div class="rc-hub-icon" style="background-color: #ff8200;">
+          <img src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" alt="Office Hours" />
+        </div>
+        <h3>Office Hours</h3>
+        <p>Connect with a Recurly CSM live. Bring your data, ask questions, or just listen.</p>
+        <div class="rc-hub-arrow">Register Now ↗</div>
+      </a>
     </div>
-  </div>
-
-  <div class="rc-featured">
-    <div class="rc-featured-content">
-      <span class="rc-featured-tag">Featured Event</span>
-      <h3>Upcoming: Global Office Hours</h3>
-      <p>Join our lead CSMs this Thursday to discuss optimizing your Dunning windows and recovering failed payments.</p>
+    
+    <div class="rc-footer-summary">
+      <h3>Maximizing your subscription potential</h3>
+      <p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program?</p>
+      <a href="mailto:support@recurly.com" class="rc-support-link">Reach out to support@recurly.com →</a>
     </div>
-    <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn" target="_blank">Register Now</a>
-  </div>
 
-  <div class="rc-sec-header">
-    <h2>Explore Navigate</h2>
-    <p>Choose your objective to access self-serve learning paths and resources.</p>
-  </div>
-
-  <div class="rc-starter-cta">
-    <div class="rc-starter-text">
-      <h3>👋 New to Navigate?</h3>
-      <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">Home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-footer-link">Acquire</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-footer-link">Scale</a>
+        <a href="https://navigate.recurly.com/event-hub/" class="rc-footer-link" target="_blank">Events</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" class="rc-footer-link" target="_blank">Office Hours</a>
+      </div>
     </div>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
-  </div>
 
-  <div class="rc-hub-grid">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-hub-card">
-      <div class="rc-hub-icon" style="background-color: #ccc9b8;">
-        <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" />
-      </div>
-      <h3>Launch</h3>
-      <p>Get configured and live fast. Build a solid subscription foundation from day one.</p>
-      <div class="rc-hub-arrow">View Learning Paths →</div>
-    </a>
-
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-hub-card">
-      <div class="rc-hub-icon" style="background-color: #ffd706;">
-        <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire" />
-      </div>
-      <h3>Acquire</h3>
-      <p>Convert more customers, optimize sign-ups, and grow your subscriber base.</p>
-      <div class="rc-hub-arrow">View Learning Paths →</div>
-    </a>
-
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-hub-card">
-      <div class="rc-hub-icon" style="background-color: #ff9d88;">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain" />
-      </div>
-      <h3>Retain</h3>
-      <p>Reduce involuntary churn, recover revenue, and keep subscribers engaged.</p>
-      <div class="rc-hub-arrow">View Learning Paths →</div>
-    </a>
-
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-hub-card">
-      <div class="rc-hub-icon" style="background-color: #ff5810;">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale" />
-      </div>
-      <h3>Scale</h3>
-      <p>Expand your business, launch new products, and optimize payments and analytics.</p>
-      <div class="rc-hub-arrow">View Learning Paths →</div>
-    </a>
-
-    <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank">
-      <div class="rc-hub-icon" style="background-color: #0075ff;">
-        <img src="https://files.readme.io/8d19be87b8863cc4c4deae65faf3b60af0c203b30ef82627f25f66e8798517b9-Events_Icon.png" alt="Events" />
-      </div>
-      <h3>Events</h3>
-      <p>Register for Merchant Spotlight Webinars and peer-led learning sessions.</p>
-      <div class="rc-hub-arrow">View Schedule ↗</div>
-    </a>
-
-    <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank">
-      <div class="rc-hub-icon" style="background-color: #ff8200;">
-        <img src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" alt="Office Hours" />
-      </div>
-      <h3>Office Hours</h3>
-      <p>Connect with a Recurly CSM live. Bring your data, ask questions, or just listen.</p>
-      <div class="rc-hub-arrow">Register Now ↗</div>
-    </a>
-  </div>
-  
-  <div class="rc-footer-summary">
-    <h3>Maximizing your subscription potential</h3>
-    <p>Navigate is designed to put Recurly’s strategic insights directly in your hands, ensuring you have the resources needed to drive revenue and scale efficiently. Have questions about the program?</p>
-    <a href="mailto:support@recurly.com" class="rc-support-link">Reach out to support@recurly.com →</a>
-  </div>
-
-  <div class="rc-footer-nav">
-    <div class="rc-footer-links">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">Home</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-footer-link">Acquire</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-footer-link">Scale</a>
-      <a href="https://navigate.recurly.com/event-hub/" class="rc-footer-link" target="_blank">Events</a>
-      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-footer-link" target="_blank">Office Hours</a>
-    </div>
-  </div>
-
-</div>
+  </div> </div>
 </body>
 </html>
 `}</HTMLBlock>
