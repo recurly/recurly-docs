@@ -94,7 +94,7 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 
 .rc-sticky-link, .rc-sticky-link:hover {
   color: var(--offblack);
-  text-decoration: none !important; /* Forces underline to stay hidden */
+  text-decoration: none !important; 
   font-weight: 800; 
   font-size: .9rem;
   letter-spacing: 0.5px;
@@ -162,13 +162,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 .rc-btn-secondary{background:transparent;color:var(--offblack);text-decoration:none;padding:10px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--offblack);white-space:nowrap;transition:all .2s;}
 .rc-btn-secondary:hover{background:var(--offblack);color:var(--yellow);}
 
-/* BOTTOM CONTEXT (Flywheel & Info) */
-.rc-context-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:var(--offwhite);border:1px solid var(--lightgray);padding:40px;border-radius:16px;margin-bottom:24px;}
-.rc-context-info h3{font-size:1.5rem;font-weight:800;margin:0 0 16px;color:var(--offblack);}
-.rc-context-info p{font-size:1rem;color:var(--darkgray);line-height:1.7;margin:0 0 16px;}
-.rc-flywheel-img{background:var(--offblack);border-radius:16px;padding:24px;display:flex;justify-content:center;}
-.rc-flywheel-img img{max-width:100%;height:auto;max-height:300px;}
-
 /* BOTTOM PLAIN TEXT NAVIGATION */
 .rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:32px;margin-top:20px;text-align:center;}
 .rc-footer-links{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;}
@@ -184,7 +177,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
 /* RESPONSIVE */
 @media(max-width:900px){
   .rc-hub-grid{grid-template-columns:repeat(2, 1fr);}
-  .rc-context-wrap{grid-template-columns:1fr;}
 }
 @media(max-width:640px){
   .rc-hero h1{font-size:1.7rem}
@@ -192,7 +184,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
   .rc-hero-stats{grid-template-columns:1fr;gap:24px;padding-top:28px}
   .rc-featured, .rc-starter-cta{flex-direction:column;align-items:flex-start;text-align:left;}
   .rc-hub-grid{grid-template-columns:1fr;}
-  .rc-context-wrap{padding:24px;}
   
   .rc-sticky-nav { 
     justify-content: flex-start; 
@@ -321,17 +312,6 @@ body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray);
       <p>Welcome! Start here to learn how to use this program, discover everything we offer, and find out how to get support.</p>
     </div>
     <a href="#" class="rc-btn-secondary">Get Started Here</a>
-  </div>
-
-  <div class="rc-context-wrap">
-    <div class="rc-context-info">
-      <h3>The Recurly Flywheel</h3>
-      <p>Navigate was built to act as your digital Customer Success Manager. Every resource is structured around the four pillars of a healthy subscription business.</p>
-      <p>Whether you're exploring Account Updater to fix retention issues or setting up Dunning windows for the first time, Navigate meets you where you are and helps you get to the next level.</p>
-    </div>
-    <div class="rc-flywheel-img">
-      <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="Recurly Flywheel — Launch, Acquire, Retain, Scale" />
-    </div>
   </div>
   
   <div class="rc-footer-summary">
