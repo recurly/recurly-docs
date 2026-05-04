@@ -37,12 +37,15 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
 
-<Image align="center" src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" />
-
+  <Image align="center" src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" />
 
   # page images
 
   <Image align="center" src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" />
+
+<Image align="center" src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" />
+
+<Image align="center" src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" />
 
   <br />
 
@@ -52,5 +55,6 @@ metadata:
 
   <br />
 </div>
+
 
 <br />
