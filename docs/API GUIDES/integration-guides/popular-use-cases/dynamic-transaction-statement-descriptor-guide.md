@@ -77,34 +77,63 @@ When customizing your suffix, keep these practices in mind:
 
 When you are creating a subscription and want to customize the suffix, ensure you are submitting your subscriptions with a business entity associated with the transaction so that the information from that business entity (DBA, customer service phone numbers, etc) can be referenced for the subscription specifically. You should also ensure that you are supplying a reasonable and well-thought out descriptor suffix if you plan on customizing the soft descriptor that consumers see on their bank statements.
 
+### Setting Your Business Entity ID 
+
+For all dynamic descriptor usage, you must either set a specific business entity ID in your requests or you may omit the value. If omitted, **Recurly will use the default business entity.** 
+
+Please be aware of this default when processing. If your customer does not know who your DBA is in your default business entity, please set the business entity ID they will recognize.
+
 ### Setting Descriptors on Subscriptions
 
 Endpoint: `POST /subscriptions`
 
-```Text JSON
+```json JSON
 ```
 
 ### Updating Descriptors on a given Subscription
+
+When adding a subscription, the API does not have a top level `transaction` object -- the parameter will be `transaction_descriptor_suffix`for this endpoint specifically.
+
+In the example below, the consumer would see 'Gold Plan' as part of their statement descriptor. If your Business Entity DBA was 'Acme', the full descriptor seen by a consumer would be `Acme*Gold Plan`.
 
 Endpoint: `PUT /subscriptions/{subscription_id}`
 
 Please note, these fields are not supported in the POST subscriptions change endpoint.
 
-```
+```json
+{
+  "transaction_descriptor_suffix": "Gold Plan"
+  ...
+}
 ```
 
 ### Setting Descriptors on One-time Payments
 
+When adding a custom suffix to your purchases or authorizations, use the top-level `transaction` object with a child parameter of `descriptor_suffix` with your suffix as the string. In the example below, the consumer would see 'Service Purchase' as part of their statement descriptor.
+
 Endpoint: `POST /purchases`and `POST /purchases/authorize`
 
-```Text JSON
+```json JSON
+{
+  "transaction": {
+    "descriptor_suffix": "Service Purchase"
+  }
+}
 ```
 
 ### Setting Descriptors on a Pending Invoice
 
+As with the `/subscriptions` endpoint, there is no top level `transaction` object. Use the full `transaction_descriptor_suffix` parameter and set the string as your custom descriptor.
+
+In the example below, the consumer would see 'Gold Plan' as part of their statement descriptor.
+
 Endpoint: `POST /accounts/{account_id}/invoices`and `PUT /invoices/{invoice_id}`
 
-```Text JSON
+```json JSON
+{
+  "transaction_descriptor_suffix": "Gold Plan"
+  ...
+}
 ```
 
 <br />
