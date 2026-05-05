@@ -1,8 +1,20 @@
 ---
 title: 'Payments Hub: Fraud prevention'
+excerpt: >-
+  Monitor blocked transactions and risk score trends in real-time using the
+  Kount-integrated Fraud Prevention dashboard. Learn to identify early warning
+  signals of fraud pressure and analyze attack concentrations by gateway and
+  payment method.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Kount fraud prevention
+    - transaction risk scores
+    - fraud trend monitoring
+    - blocked transactions
+    - payment security analytics
+    - proactive fraud detection.
   robots: index
 ---
 <HTMLBlock>{`
