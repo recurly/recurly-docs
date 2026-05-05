@@ -6,7 +6,7 @@ excerpt: >-
   success-by-attempt distribution to determine if your dunning timeline is
   effectively salvaging revenue at risk.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Payment retry recovery
