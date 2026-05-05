@@ -6,7 +6,7 @@ excerpt: >-
   signals of fraud pressure and analyze attack concentrations by gateway and
   payment method.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Kount fraud prevention
