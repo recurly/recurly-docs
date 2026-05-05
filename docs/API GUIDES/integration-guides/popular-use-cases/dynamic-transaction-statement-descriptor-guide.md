@@ -15,6 +15,7 @@ This guide shows you how to use the Purchase, Subscription, Subscription Update,
 ### Prerequisites
 
 * Familiarity with Recurly’s V3 API and basic REST concepts
+* You have read through our [Payment Descriptors](https://docs.recurly.com/recurly-subscriptions/docs/payment-descriptors) overview
 * You are using a Supported Gateway: Adyen, Braintree, Stripe, Commerce Hub, Cybersource, FreedomPay, Checkout.com, and Nuvei
 * You have discussed your descriptor suffix and DBA with your Acquirer and agreed upon prior to implementation. Some acquirers require notification prior to descriptor changes.
 
