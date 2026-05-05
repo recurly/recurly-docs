@@ -30,7 +30,7 @@ This guide shows you how to use the Purchase, Subscription, Subscription Update,
 
 ### Key Benefits
 
-Statement descriptors are an incredible important piece of payment processing, as it is what customers see on their bank statements when transactions are created. Visa and other networks have programs that rely on descriptors to ensure merchants comply with chargeback and risk assessment, for example the VAMP program.
+Statement descriptors are an incredibly important piece of payment processing, as it is what customers see on their bank statements when transactions are created. Visa and other networks have programs that rely on descriptors to ensure merchants comply with chargeback and risk assessment, for example the VAMP program.
 
 * **Chargeback reduction:** Having a descriptive, coherent statement descriptor can dramatically reduce chargeback behavior by ensuring customers see a recognizable business name or product on their bank statements.
 * **Card Brand Compliance**: Ensure, for subscriptions, that the statement descriptor is consistent throughout the lifetime of a consumer's subscription.
