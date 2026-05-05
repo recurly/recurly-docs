@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-This guide shows you how to use the Purchase, Subscription, Subscription Update, and certain Invoice endpoints to customize customer-facing statement descriptors using the Recurly V3 API.
+This guide shows you how to use the Purchase, Subscription, Subscription Update, Revenue Recovery, and certain Invoice endpoints to customize customer-facing statement descriptors using the Recurly V3 API.
 
 ### Prerequisites
 
@@ -127,6 +127,22 @@ Endpoint: `POST /purchases`and `POST /purchases/authorize`
 {
   "transaction": {
     "descriptor_suffix": "Service Purchase"
+  }
+}
+```
+
+### Setting Descriptors for Revenue Recovery 
+
+Endpoint: TBD
+
+**Important Note**: since Recurly is not handling the preliminary signup and renewals in this use case, you must provide Recurly with the same descriptor information (Business Entity and Suffix customization) as was used on the initial subscription signup and recurring phases to avoid brand penalties and chargebacks when using Recurly's Revenue Recovery services. 
+
+This is to ensure you do not run afoul of card brand risk and compliance programs, such as Visa's VAMP program.
+
+```json
+{
+  "transaction": {
+    "descriptor_suffix": "Gold Plan"
   }
 }
 ```
