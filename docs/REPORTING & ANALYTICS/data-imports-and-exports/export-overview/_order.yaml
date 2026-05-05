@@ -1,4 +1,5 @@
 - automated-exports
+- account-activities-export-1
 - account-notes-export
 - accounts-export
 - adjustments-exports
@@ -33,4 +34,3 @@
 - usages-records-export
 - transaction-export
 - users-export-1
-- account-activities-export-1
