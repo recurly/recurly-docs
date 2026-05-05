@@ -1,8 +1,20 @@
 ---
 title: 'Payments Hub: Payment processing dashboard'
+excerpt: >-
+  Analyze payment failure patterns and authorization rates with granular
+  insights into gateway performance, card BIN success, and decline reasons. This
+  guide helps you distinguish between hard and soft declines to optimize your
+  recovery strategy and identify underperforming routing paths.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Payment decline reasons
+    - gateway authorization rates
+    - card BIN analytics
+    - hard vs soft declines
+    - transaction failure analysis
+    - payment routing optimization.
   robots: index
 ---
 <HTMLBlock>{`
