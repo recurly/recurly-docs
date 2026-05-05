@@ -6,7 +6,7 @@ excerpt: >-
   dashboard. This guide explains how to access the hub within Recurly Analytics
   and provides a roadmap for the full learning path.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Payment performance analytics
