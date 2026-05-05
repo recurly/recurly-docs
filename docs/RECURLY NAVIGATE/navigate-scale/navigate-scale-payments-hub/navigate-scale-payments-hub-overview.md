@@ -1,8 +1,20 @@
 ---
 title: 'Payments Hub: Overview dashboard'
+excerpt: >-
+  Get a high-level summary of your payment health with the Overview dashboard,
+  featuring real-time data on success rates, global volume, and payment method
+  distribution. Learn to use interactive filters and distinguish between
+  Customer-Initiated (CIT) and Merchant-Initiated (MIT) transaction performance.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Payment health summary
+    - CIT vs MIT success rates
+    - global payment volume
+    - payment method distribution
+    - Recurly analytics filters
+    - transaction performance monitoring.
   robots: index
 ---
 <HTMLBlock>{`
