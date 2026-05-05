@@ -4,7 +4,7 @@ excerpt: >-
   Learn how the Site Activities export captures and logs changes to your Recurly
   site, including plan modifications, user management, and login activity.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
