@@ -18,7 +18,7 @@ To get started, ensure your Payment Gateway is configured to accept Google Pay t
 * **Gateway support** – Your configured payment gateway must already be enabled for Google Pay transactions.
 * **Merchant IDs** – You’ll need a valid Google Merchant ID (and, for Braintree, a client-authorization string).
 * **Browser / device support** – Customers must use Chrome v61+ (Android) or any browser that supports Google Pay on the web.
-* *Token lifetime** – Tokens returned from the Google Pay flow follow standard Recurly.js rules: usable for up to **20 minutes**, then permanently expire.
+* **Token Usage** - Recurly.js tokens returned from the Google Pay flow are usable for up to 20 minutes but can only be used once due to the single-use nature of the Google Pay cryptogram. Google Pay conditionally uses 3DS as well in place of device authentication where necessary -- ensure you have 3DS enabled on your gateway.
 * **User wallets** – If `existingPaymentMethodRequired` is set, shoppers without a stored card will see a “Google Pay not available” error.
 
 # Key details
