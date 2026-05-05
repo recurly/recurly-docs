@@ -1,8 +1,17 @@
 ---
 title: 'Payments Hub: Getting started'
+excerpt: >-
+  Discover how Payments Hub centralizes your payment performance data by
+  consolidating information from multiple gateways into a single, actionable
+  dashboard. This guide explains how to access the hub within Recurly Analytics
+  and provides a roadmap for the full learning path.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Payment performance analytics
+    - Centralized payment data
+    - Recurly Analytics dashboard
   robots: index
 ---
 <HTMLBlock>{`
