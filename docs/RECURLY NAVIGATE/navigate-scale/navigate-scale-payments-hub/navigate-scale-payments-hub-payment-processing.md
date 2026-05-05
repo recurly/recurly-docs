@@ -6,7 +6,7 @@ excerpt: >-
   guide helps you distinguish between hard and soft declines to optimize your
   recovery strategy and identify underperforming routing paths.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Payment decline reasons
