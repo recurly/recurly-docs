@@ -80,12 +80,12 @@ metadata:
   .rp-toc-pill {
     display: inline-flex; align-items: center; gap: 8px;
     padding: 8px 16px; border-radius: 20px;
-    border: 1px solid var(--lightgray); background: var(--offwhite);
-    color: var(--darkgray); text-decoration: none; font-size: 13px; font-weight: 700;
-    transition: border-color 0.15s, box-shadow 0.15s, color 0.15s;
+    border: 1px solid var(--offblack); background: var(--offblack);
+    color: var(--offwhite); text-decoration: none; font-size: 13px; font-weight: 700;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
   }
-  .rp-toc-pill:hover { border-color: var(--yellow); box-shadow: 0 2px 8px rgba(255,215,6,0.2); color: var(--offblack); }
-  .rp-toc-num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: 11px; font-weight: 800; flex-shrink: 0; }
+  .rp-toc-pill:hover { background: var(--tangerine); border-color: var(--tangerine); color: var(--offblack); }
+  .rp-toc-num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--yellow); color: var(--offblack); font-size: 11px; font-weight: 800; flex-shrink: 0; }
 
   /* Clickable heading anchors */
   .rp-anchor { color: inherit; text-decoration: none; }
@@ -106,15 +106,14 @@ metadata:
 
   <div class="rp-plan">✦ Available on all Recurly plans</div>
 
-  <!-- TOC — plain pills, parallel CRUD sections -->
   <div class="rp-toc">
-    <a class="rp-toc-pill" href="#definition">Definition</a>
-    <a class="rp-toc-pill" href="#key-benefits">Key benefits</a>
-    <a class="rp-toc-pill" href="#create-a-plan">Create a plan</a>
-    <a class="rp-toc-pill" href="#edit-a-plan">Edit a plan</a>
-    <a class="rp-toc-pill" href="#duplicate-a-plan">Duplicate a plan</a>
-    <a class="rp-toc-pill" href="#delete-a-plan">Delete a plan</a>
-    <a class="rp-toc-pill" href="#faqs">FAQs</a>
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#create-a-plan"><span class="rp-toc-num">3</span>Create a plan</a>
+    <a class="rp-toc-pill" href="#edit-a-plan"><span class="rp-toc-num">4</span>Edit a plan</a>
+    <a class="rp-toc-pill" href="#duplicate-a-plan"><span class="rp-toc-num">5</span>Duplicate a plan</a>
+    <a class="rp-toc-pill" href="#delete-a-plan"><span class="rp-toc-num">6</span>Delete a plan</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">7</span>FAQs</a>
   </div>
 
   <div class="rp-h1" id="definition"><a class="rp-anchor" href="#definition">Definition</a></div>
