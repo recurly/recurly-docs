@@ -134,7 +134,7 @@ To help you identify and organize information effectively, the export provides a
 | cc_emails                                                                         | [cc_email1@recurly.com](mailto:cc_email1@recurly.com) ,[cc_email2@recurly.com](mailto:cc_email2@recurly.com) | Additional email address that should receive account correspondence. These should be separated only by commas.                                                                    | string               |
 | user-defined custom field label                                                   | account custom field                                                                                         | Appears only if a custom field is configured and enabled to be visible in the export. The column name in the export reflects the label defined in the custom field configuration. | string               |
 
-# Version Changelog
+# Version changelog
 
 #### Version 8 - 08/05/2025
 
@@ -152,8 +152,7 @@ Added account’s preferred locale column
 #### Version 5 - 07/23/21
 
 Added Dunning campaign columns  
-`dunning_campaign_code`
-`dunning_campaign_id`
+`dunning_campaign_code` `dunning_campaign_id`
 
 #### Version 4 - 12/10/20
 
