@@ -19,6 +19,14 @@ This guide shows you how to use the Purchase, Subscription, Subscription Update,
 * You are using a Supported Gateway: [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen), [Braintree](https://docs.recurly.com/recurly-subscriptions/docs/braintree-rd), [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe), [Commerce Hub](https://docs.recurly.com/recurly-subscriptions/docs/commerce-hub), [FreedomPay](https://docs.recurly.com/recurly-subscriptions/docs/freedompay), [Checkout.com](https://docs.recurly.com/recurly-subscriptions/docs/checkoutcom), and [Nuvei](https://docs.recurly.com/recurly-subscriptions/docs/nuvei)
 * You have discussed your descriptor suffix and DBA with your Acquirer and agreed upon prior to implementation. Some acquirers require notification prior to descriptor changes.
 
+### Limitations
+
+* Each gateways has slightly different requirements for their dynamic descriptor support.
+  * Braintree requires that all DBA prefixes be 3, 5, or 7 characters only. Recurly will truncate if provided with a DBA that does not fit within those parameters. Braintree also conditionally requires a customer service phone number. Please ensure you have this filled in.
+  * Commerce Hub requires MCC, and full Business Entity details filled out.
+  * Stripe will only accept the suffix for card payments. Recurly will not be able to provide them your dynamic DBA -- check your Stripe account or ask your Stripe representative / Support member what your static DBA will display to customers.
+* Recurly supports dynamic descriptors for Cards, Apple Pay, and Google Pay payments at this time.
+
 ### Key Benefits
 
 Statement descriptors are an incredible important piece of payment processing, as it is what customers see on their bank statements when transactions are created. Visa and other networks have programs that rely on descriptors to ensure merchants comply with chargeback and risk assessment, for example the VAMP program.
