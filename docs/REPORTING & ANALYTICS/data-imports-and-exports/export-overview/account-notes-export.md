@@ -20,11 +20,9 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 The "Account Notes" section is dedicated to helping Recurly users manage and export internal notes associated with various accounts effectively. The export function in this section will help users identify any internal notes published on their accounts with ease, thus aiding in seamless operations and record-keeping.
 
-<Image border={false} src="https://files.readme.io/7ea101390a61bd2d8d46b7452e08b1a8e97960e69c8fe6a2175b46ce39ac6a3b-image.png" />
+![](https://files.readme.io/7ea101390a61bd2d8d46b7452e08b1a8e97960e69c8fe6a2175b46ce39ac6a3b-image.png)
 
-<br />
-
-# Filters
+x# Filters
 
 ### Versions Filter
 
@@ -89,7 +87,7 @@ To help you identify and organize information effectively, the export provides a
 | <span id="modified_at">modified_at</span>   | 2014-01-01 10:00:00 PST                                     | Indicates the last date and time the account note was updated, helping in tracking the recent modifications.                                                                                                                    | timestamp            |
 | account_note_api_id                         | e28zov4fw0v2                                                | Account note API ID                                                                                                                                                                                                             | string               |
 
-# Version Changelog
+# Version changelog
 
 ### Version 2 - 02/05/25
 
