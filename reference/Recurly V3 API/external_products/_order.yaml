@@ -1,0 +1,5 @@
+- list_external_products
+- create_external_product
+- get_external_product
+- update_external_product
+- deactivate_external_products

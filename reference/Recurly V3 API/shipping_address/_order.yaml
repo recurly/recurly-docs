@@ -1,0 +1,5 @@
+- list_shipping_addresses
+- create_shipping_address
+- get_shipping_address
+- update_shipping_address
+- remove_shipping_address
