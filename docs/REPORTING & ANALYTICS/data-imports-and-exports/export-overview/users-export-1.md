@@ -1,9 +1,9 @@
 ---
 title: Users - export
 excerpt: >-
-  #### Learn how the User export lets administrators download a full report of
-  every site user with access to their Recurly site, including permissions,
-  roles, and creation dates.  #
+  Learn how the User export lets administrators download a full report of every
+  site user with access to their Recurly site, including permissions, roles, and
+  creation dates.  #
 deprecated: false
 hidden: true
 metadata:
