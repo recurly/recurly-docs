@@ -47,7 +47,7 @@ Recurly's invoice management system generates, tracks, and customizes invoices t
 
 ## Invoice numbering
 
-All invoices on your Recurly site — both charge and credit — follow the same sequential numbering. The sequence starts at 1000 and increments by one.
+<Image align="center" border={true} src="https://files.readme.io/2d854e9d97470a9a00e91944efdb6f1283cdcf0cbd4a37a39aa25773626b28e4-Screenshot_2026-04-28_at_2.25.43_PM.png" className="border" />
 
 > **Note:** Invoice numbers are commonly used to reconcile invoices and transactions. Keep this in mind before adding an entity-specific prefix, as gateways handle invoice number length differently. See [gateway-specific information for invoice numbers](https://docs.recurly.com/recurly-subscriptions/update/docs/gateway-specific-information-for-invoice-numbers) for details.
 
@@ -152,7 +152,16 @@ Located at the top left of the invoice, the From address pulls from your Site Se
 
 The Bill To section defaults to the account's billing information for automatic collection, or account information for manual collection. You can configure it to always use account information (with billing information as a fallback) by enabling **Use Account Information Address for all Invoices** under **Configuration → Taxes → Tax Settings**.
 
-Fields displayed:
+* Defaults to Billing Information for automatic collection methods or Account Information for manual methods.
+* Can be configured to always use Account Information (with Billing Information as fallback) by enabling "Use Account Information Address for all Invoices" under Configuration→Taxes→Tax Settings. Fields displayed in the Bill To section:
+* First and Last Name
+* Company Name (from Account Information)
+* Address (Address 1 and Address 2)
+* City
+* State/Province
+* Zip/Postal Code
+* Country
+* VAT Number
 
 * First and last name
 * Company name (from Account Information)
@@ -162,7 +171,13 @@ Fields displayed:
 
 ### Ship to
 
-A Ship To address appears if a shipping address is associated with the subscription or a specific line item. It includes the same address fields as Bill To. Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses).
+* First and Last Name
+* Address (Address 1 and Address 2)
+* City
+* State/Province
+* Zip/Postal Code
+* Country
+* VAT Number Learn more about [Shipping Addresses](https://docs.recurly.com/docs/shipping-addresses)
 
 ### Line items
 
@@ -180,7 +195,17 @@ Invoices include a table of line items with the following columns:
 
 <Image align="center" border={true} width="75%" src="https://files.readme.io/a92bac25e71813afc14bc6a42def2339e755646c47c23ba4756f9bc8209d8652-image.png" className="border" />
 
-> **Note:** Invoices truncate after the first 500 line items. The subtotal, tax, and total always reflect the sum of all line items. To access items beyond the first 500, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
+At the bottom right of the invoice, the following invoice-level values are displayed:
+
+* **Subtotal:** The total before taxes and additional charges.
+* **Tax:** Shown only if tax is applicable to the invoice.
+* **Total:** The invoice total, inclusive of all charges and taxes.
+* **Balance:** The remaining amount due on the invoice. Between the Total and Balance, the following balance-changing entries are listed:
+* **Paid:** Represents the total of all payment transactions.
+* **Credit Applied/Redeemed:** The total value of all credit payments applied to the invoice.
+* **Payment Refund:** The total of all refund transactions made against the invoice.
+* **Credit Voided:** Any portion of the credit balance that has been removed or voided.
+* **Write-Off:** The amount of the invoice that has been written off.
 
 ### Quantity-based pricing line items
 
