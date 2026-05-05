@@ -4,7 +4,7 @@ excerpt: >-
   Learn how the Account Activities export provides a detailed log of user
   actions and modifications made within customer accounts in Recurly.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
