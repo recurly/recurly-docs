@@ -9,8 +9,6 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
-
 <HTMLBlock>{`
 <!DOCTYPE html>
 <html lang="en">
@@ -45,9 +43,6 @@ metadata:
   .rp-h2 { font-size: 1.1rem; font-weight: 700; color: var(--darknavy); margin: 28px 0 10px; }
   .rp-h3 { font-size: 0.95rem; font-weight: 700; color: var(--darkgray); margin: 20px 0 8px; }
   .rp-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 22px 26px; margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.65; }
-  .rp-card ul { margin: 8px 0 0 0; padding-left: 20px; }
-  .rp-card ul li { margin-bottom: 6px; }
-  .rp-card ul ul { margin-top: 4px; }
   .rp-steps { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
   .rp-step { display: flex; gap: 16px; align-items: flex-start; background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 18px 22px; }
   .rp-step-num { width: 34px; height: 34px; border-radius: 8px; background: var(--offblack); color: var(--yellow); font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -56,9 +51,9 @@ metadata:
   .rp-step ul { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 6px 0 0; padding-left: 18px; }
   .rp-callout { border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0; font-size: 14px; }
   .rp-callout strong { display: block; margin-bottom: 3px; }
-  .rp-callout-tip     { border-left: 4px solid var(--yellow);    background: var(--offwhite);  color: var(--darkgray); }
-  .rp-callout-warning { border-left: 4px solid var(--tangerine); background: #FFF8F2;           color: var(--darkgray); }
-  .rp-callout-note    { border-left: 4px solid var(--offblack);  background: var(--brightgray); color: var(--deepchar); }
+  .rp-callout-tip      { border-left: 4px solid var(--yellow);    background: var(--offwhite);   color: var(--darkgray); }
+  .rp-callout-warning  { border-left: 4px solid var(--tangerine); background: #FFF8F2;            color: var(--darkgray); }
+  .rp-callout-note     { border-left: 4px solid var(--offblack);  background: var(--brightgray); color: var(--deepchar); }
   .rp-btn { display: inline-block; padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; margin: 6px 8px 6px 0; font-family: var(--font); }
   .rp-btn-primary { background: var(--offblack); color: var(--yellow); }
   .rp-list { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 16px 22px 16px 38px; margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7; }
@@ -69,8 +64,10 @@ metadata:
   .rp-params tr:nth-child(even) td { background: var(--brightgray); }
   .rp-params tr:nth-child(odd) td { background: var(--offwhite); }
   .rp-params td:first-child { font-weight: 600; color: var(--offblack); width: 28%; }
-  .rp-tag { display: inline-block; background: var(--yellow); color: var(--offblack); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
-  @media (max-width: 640px) { .rp-benefits { grid-template-columns: 1fr; } .rp-h1 { font-size: 1.25rem; } }
+  .rp-img { display: block; max-width: 80%; margin: 16px auto; border-radius: 8px; }
+  .rp-img-border { border: 1px solid #CCC9B8; }
+  .rp-img-sm { max-width: 30%; }
+  @media (max-width: 640px) { .rp-benefits { grid-template-columns: 1fr; } .rp-h1 { font-size: 1.25rem; } .rp-img, .rp-img-sm { max-width: 100%; } }
 </style>
 </head>
 <body>
@@ -92,7 +89,7 @@ metadata:
     <div class="rp-benefit">
       <div class="rp-benefit-icon">✦</div>
       <strong>Unlimited plan creation</strong>
-      <span>Create as many plans as your business needs with no restrictions — each one fully configurable to a specific audience or offering.</span>
+      <span>Create as many plans as your business needs — each fully configurable to a specific audience or offering, with no restrictions.</span>
     </div>
     <div class="rp-benefit">
       <div class="rp-benefit-icon">✦</div>
@@ -115,10 +112,11 @@ metadata:
 
   <div class="rp-h2">Plans dashboard</div>
   <div class="rp-card">
-    Your <a href="https://app.recurly.com/go/plans" target="_blank" style="color: var(--tangerine);">plans dashboard</a> lists all plans defined in your Recurly account. Select any plan name to view its details, edit the plan, or access its <a href="https://docs.recurly.com/docs/checkout" target="_blank" style="color: var(--tangerine);">Checkout</a> configuration or Hosted Payment Page.
+    Your <a href="https://app.recurly.com/go/plans" target="_blank" style="color: var(--tangerine);">plans dashboard</a> lists all plans defined in your Recurly account. Select any plan name to view its details, edit it, or access its <a href="https://docs.recurly.com/docs/checkout" target="_blank" style="color: var(--tangerine);">Checkout</a> configuration or Hosted Payment Page.
   </div>
 
   <div class="rp-h2">Creating a plan</div>
+
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
@@ -127,16 +125,28 @@ metadata:
         <p>Navigate to <strong>Configuration → Plans</strong> and click <strong>New Plan</strong>.</p>
       </div>
     </div>
+  </div>
+
+  <img src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png"
+       alt="New Plan button in the plans dashboard"
+       class="rp-img rp-img-border" />
+
+  <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">2</div>
       <div>
         <h4>Define plan parameters</h4>
-        <p>Configure each section of the plan form:</p>
+        <p>Configure each section of the plan form. Start with the plan details below.</p>
       </div>
     </div>
   </div>
 
   <div class="rp-h3">Plan details</div>
+
+  <img src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png"
+       alt="Plan details fields including plan name, plan code, and plan description"
+       class="rp-img rp-img-border" />
+
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
@@ -147,16 +157,46 @@ metadata:
   </table>
 
   <div class="rp-h3">Plan configuration</div>
+
+  <img src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png"
+       alt="Currency picker in plan configuration"
+       class="rp-img rp-img-border" />
+
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
       <tr><td>Currencies</td><td>Choose which of your enabled currencies to include in this plan.</td></tr>
+    </tbody>
+  </table>
+
+  <img src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png"
+       alt="Free trial configuration options"
+       class="rp-img rp-img-border" />
+
+  <table class="rp-params">
+    <thead><tr><th>Field</th><th>Description</th></tr></thead>
+    <tbody>
       <tr><td>Free trial</td><td>Define a free period in days or months. The paid subscription starts after the trial ends. You can choose whether to require billing information at sign-up.</td></tr>
+    </tbody>
+  </table>
+
+  <img src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png"
+       alt="Setup fee configuration field"
+       class="rp-img rp-img-border" />
+
+  <table class="rp-params">
+    <thead><tr><th>Field</th><th>Description</th></tr></thead>
+    <tbody>
       <tr><td>Setup fee</td><td>A one-time charge processed at sign-up.</td></tr>
     </tbody>
   </table>
 
   <div class="rp-h3">Billing configuration</div>
+
+  <img src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png"
+       alt="Billing configuration settings including billing period and subscription term"
+       class="rp-img" />
+
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
@@ -167,6 +207,11 @@ metadata:
   </table>
 
   <div class="rp-h3">Pricing model</div>
+
+  <img src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png"
+       alt="Pricing model selector showing fixed and ramp options"
+       class="rp-img" />
+
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
@@ -182,7 +227,11 @@ metadata:
     <strong>Example:</strong> A gym with higher operating costs in certain cities can create one plan with segments — <code>default</code>, <code>nyc</code>, <code>la</code> — instead of cloning identical plans per city.
   </div>
 
-  <div class="rp-h3" style="margin-top: 4px;">How price segments work</div>
+  <img src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png"
+       alt="Price segments configuration showing multiple segment codes and prices"
+       class="rp-img rp-img-border" />
+
+  <div class="rp-h3">How price segments work</div>
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
@@ -190,7 +239,7 @@ metadata:
     </div>
     <div class="rp-step">
       <div class="rp-step-num">2</div>
-      <div><h4>Decide your selection rule</h4><p>For example: if <code>city=NYC</code> use segment <code>nyc</code>; if user is in test group B, use segment <code>exp-b</code>.</p></div>
+      <div><h4>Decide your selection rule</h4><p>For example: if <code>city=NYC</code> use segment <code>nyc</code>; if the user is in test group B, use segment <code>exp-b</code>.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">3</div>
@@ -228,38 +277,86 @@ metadata:
   </div>
 
   <div class="rp-h3">Additional plan fields</div>
+
+  <img src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png"
+       alt="Billing details fields including accounting code and HS code"
+       class="rp-img" />
+
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
-      <tr><td>Add-ons</td><td>Optional products included in recurring subscription invoices. Supports quantity-based pricing. You can add items from the Item Catalog.</td></tr>
-      <tr><td>Dunning campaign</td><td>Select the dunning campaign to associate with this plan.</td></tr>
-      <tr><td>Customer emails</td><td>Enable email communication for specific events. Manage and modify templates on the Email Templates settings page.</td></tr>
       <tr><td>Accounting code</td><td>A unique code to identify plans in internal invoice exports. Based on your tax settings and compliance requirements. Limit: 25 lowercase alphanumeric characters.</td></tr>
       <tr><td>HS code / Commodity code</td><td>A Harmonized System (HS) code for invoice compliance on traded products. Typically six or more digits. Limit: 25 lowercase alphanumeric characters.</td></tr>
     </tbody>
   </table>
 
+  <img src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png"
+       alt="Plan add-ons configuration section"
+       class="rp-img rp-img-border" />
+
+  <table class="rp-params">
+    <thead><tr><th>Field</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Add-ons</td><td>Optional products included in recurring subscription invoices. Supports quantity-based pricing. You can add items from the Item Catalog.</td></tr>
+    </tbody>
+  </table>
+
+  <img src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png"
+       alt="Dunning campaign selector on the plan form"
+       class="rp-img rp-img-border" />
+
+  <table class="rp-params">
+    <thead><tr><th>Field</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Dunning campaign</td><td>Select the dunning campaign to associate with this plan.</td></tr>
+    </tbody>
+  </table>
+
+  <img src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png"
+       alt="Customer emails settings on the plan form"
+       class="rp-img rp-img-border" />
+
+  <table class="rp-params">
+    <thead><tr><th>Field</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Customer emails</td><td>Enable email communication for specific events. Manage and modify templates on the Email Templates settings page.</td></tr>
+    </tbody>
+  </table>
+
   <div class="rp-h3">Hosted Payment Page settings</div>
+
+  <img src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png"
+       alt="Hosted Payment Page configuration settings"
+       class="rp-img rp-img-border" />
+
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
       <tr><td>Plan quantity can be edited</td><td>Determines whether subscribers can choose their own quantity on the Hosted Payment Page.</td></tr>
-      <tr><td>Return URL after success</td><td>Redirects the customer to a specific URL after a successful transaction via the Hosted Payment Page.</td></tr>
+      <tr><td>Return URL after success</td><td>Redirects the customer to a specific URL after a successful transaction.</td></tr>
       <tr><td>Bypass Recurly confirmation</td><td>Skip Recurly's confirmation page and use a custom return URL instead.</td></tr>
     </tbody>
   </table>
 
-  <div class="rp-step" style="margin-bottom: 24px;">
-    <div class="rp-step-num">3</div>
-    <div><h4>Create the plan</h4><p>Once all parameters are defined, click <strong>Create Plan</strong> to finalize.</p></div>
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">3</div>
+      <div><h4>Create the plan</h4><p>Once all parameters are defined, click <strong>Create Plan</strong> to finalize.</p></div>
+    </div>
   </div>
 
   <div class="rp-h2">Checkout configurations</div>
+
+  <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png"
+       alt="Checkout configuration option on the plan detail page"
+       class="rp-img rp-img-border rp-img-sm" />
+
   <div class="rp-card">
     After configuring a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank" style="color: var(--tangerine);">Checkout</a> configuration to direct customers to purchase it.
   </div>
 
   <div class="rp-h2">Updating plans</div>
+
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
@@ -275,6 +372,10 @@ metadata:
     </div>
   </div>
 
+  <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png"
+       alt="Edit option appearing on hover over a plan row"
+       class="rp-img rp-img-border" />
+
   <div class="rp-callout rp-callout-warning">
     <strong>Plan name changes apply to existing subscriptions</strong>Updating a plan's name updates it site-wide. Existing subscriptions will show the new plan name in the Admin UI, and future invoice line items will use the updated name.
   </div>
@@ -284,6 +385,7 @@ metadata:
   </div>
 
   <div class="rp-h2">Duplicating plans</div>
+
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
@@ -293,10 +395,24 @@ metadata:
       <div class="rp-step-num">2</div>
       <div><h4>Select Duplicate</h4><p>Hover over any plan row to reveal additional options, then select <strong>Duplicate</strong>.</p></div>
     </div>
+  </div>
+
+  <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png"
+       alt="Duplicate option appearing on hover over a plan row"
+       class="rp-img rp-img-border" />
+
+  <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">3</div>
-      <div><h4>Adjust the copied plan</h4><p>All details from the original plan are copied to the Create a Plan form. <code>-copy</code> is appended to the Plan Name and Plan Code fields. Update these and modify any other fields as needed.</p></div>
+      <div><h4>Adjust the copied plan</h4><p>All details from the original plan are copied to the Create a Plan form. <code>-copy</code> is appended to the Plan Name and Plan Code. Update these and modify any other fields as needed.</p></div>
     </div>
+  </div>
+
+  <img src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png"
+       alt="Create a Plan form pre-filled with duplicated plan details"
+       class="rp-img rp-img-border" />
+
+  <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">4</div>
       <div><h4>Create the plan</h4><p>Click <strong>Create Plan</strong> once you've finished adjusting the details.</p></div>
@@ -308,6 +424,7 @@ metadata:
   </div>
 
   <div class="rp-h2">Deleting plans</div>
+
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
@@ -315,13 +432,24 @@ metadata:
     </div>
     <div class="rp-step">
       <div class="rp-step-num">2</div>
-      <div><h4>Select Delete</h4><p>Either from the plan list view (hover over the row) or the plan actions dropdown on a plan's detail page, select <strong>Delete</strong>.</p></div>
+      <div><h4>Select Delete</h4><p>Hover over the plan row, or use the plan actions dropdown on the plan details page, and select <strong>Delete</strong>.</p></div>
     </div>
+  </div>
+
+  <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png"
+       alt="Delete option appearing on hover over a plan row"
+       class="rp-img rp-img-border" />
+
+  <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">3</div>
       <div><h4>Confirm your decision</h4><p>Confirm the deletion in the prompt.</p></div>
     </div>
   </div>
+
+  <img src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png"
+       alt="Delete confirmation dialog"
+       class="rp-img rp-img-border" />
 
   <div class="rp-callout rp-callout-warning">
     <strong>Deleting a plan is permanent</strong>New customers won't be able to subscribe to a deleted plan. Existing subscriptions will continue to renew, but the plan cannot be reactivated. Any subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.
