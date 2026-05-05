@@ -21,7 +21,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 ### Prerequisites
 
 * Necessary configurations set up in the "Integrations" section of the Recurly admin console.
-* Users possessing the "Integrations" role to access the "Automated Exports" UI.
+* Users possessing the "Integrations" role to access the "Automated Exports" UI. A few admin level exports will also require both the "Admin" and "Integrations" roles.
 * Familiarity with the Recurly API to retrieve the daily exports.
 
 ### Limitations
@@ -153,7 +153,7 @@ For an efficient, secure, and automated data export process, leverage Recurly's 
 
 * **Objective:** Learn how to access the data efficiently.
 * **Action:** Utilize your private API key to poll the endpoint on the Recurly API, generating a secure URL for data access.
-* **Tip:** Ensure timely data retrieval of the URL activation link to maintain data security. Most exports will have a **60-minute** window of URL activation except for admin exports (account activities, site activities and users exports), which will only have a **10-minute** window of URL activation.
+* **Tip:** Ensure timely data retrieval within the 60-minute window of URL activation to maintain data security.
 
 ### **Step 8: Retrieving the exported data**
 
