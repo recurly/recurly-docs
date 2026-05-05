@@ -85,14 +85,24 @@ Please be aware of this default when processing. If your customer does not know 
 
 ### Setting Descriptors on Subscriptions
 
+When adding a subscription, the API does not have a top level `transaction` object -- the parameter will be `transaction_descriptor_suffix`for this endpoint specifically.
+
+In the example below, the consumer would see 'Gold Plan' as part of their statement descriptor. If your Business Entity DBA was 'Acme', the full descriptor seen by a consumer would be `Acme*Gold Plan`.
+
 Endpoint: `POST /subscriptions`
 
 ```json JSON
+{
+  "transaction_descriptor_suffix": "Gold Plan"
+  ...
+}
 ```
 
 ### Updating Descriptors on a given Subscription
 
-When adding a subscription, the API does not have a top level `transaction` object -- the parameter will be `transaction_descriptor_suffix`for this endpoint specifically.
+When updating a subscription, the API does not have a top level `transaction` object -- the parameter will be `transaction_descriptor_suffix`for this endpoint specifically.
+
+Subscription updates will only take effect on future Invoices created, ensuring continuity in existing invoices that may be going through dunning and retries.
 
 In the example below, the consumer would see 'Gold Plan' as part of their statement descriptor. If your Business Entity DBA was 'Acme', the full descriptor seen by a consumer would be `Acme*Gold Plan`.
 
