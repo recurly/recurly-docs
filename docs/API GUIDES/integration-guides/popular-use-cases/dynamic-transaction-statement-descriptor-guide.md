@@ -23,6 +23,7 @@ This guide shows you how to use the Purchase, Subscription, Subscription Update,
 
 * Each gateways has slightly different requirements for their dynamic descriptor support.
   * Braintree requires that all DBA prefixes be 3, 5, or 7 characters only. Recurly will truncate if provided with a DBA that does not fit within those parameters. Braintree also conditionally requires a customer service phone number. Please ensure you have this filled in.
+  * Certain Braintree processors do not allow for asterisks -- ensure you have your processor selection set properly in your gateway configuration or your payments may experience errors.
   * Commerce Hub requires MCC, and full Business Entity details filled out.
   * Stripe will only accept the suffix for card payments. Recurly will not be able to provide them your dynamic DBA -- check your Stripe account or ask your Stripe representative / Support member what your static DBA will display to customers.
 * Recurly supports dynamic descriptors for Cards, Apple Pay, and Google Pay payments at this time.
@@ -66,6 +67,7 @@ When customizing your suffix, keep these practices in mind:
 * The entire string must not breach ~ 22 characters including separators and spaces.
 * Do not include the separator in your suffix - Recurly dynamically adds the asterisk separator depending on your gateway's individual requirements.
 * Do not include your DBA in your suffix -- set your DBA at the Business Entity level.
+* Do not include special characters in your DBA or Suffix. Many gateways and banks do not support these characters, and you may experience errors in processing. Choose Alphanumeric and spaces only.
 * Be "recognizable" -- use DBAs and product descriptions that your customers will know and understand.
 * Be simple -- do not write full sentences, or lengthy product names. Remember, you only have 22 characters for your DBA, the required separator, and the suffix combined. **Example**: Acme*Product Name
 * Be aware that some gateways require truncation of the DBA to 3, 5, or 7 characters. You may wish to adopt a 3-5 character version of your business name / DBA for this purpose. Check which gateway(s) you are using for specific requirements.
