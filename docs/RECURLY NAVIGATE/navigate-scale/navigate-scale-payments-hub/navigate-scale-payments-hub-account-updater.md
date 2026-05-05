@@ -1,8 +1,20 @@
 ---
 title: 'Payments Hub: Account Updater'
+excerpt: >-
+  Monitor how automatic card updates proactively protect your revenue by
+  preventing payment failures before they occur. Learn to analyze update types,
+  track authorized volume on updated cards, and identify trends across different
+  card networks.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Proactive revenue recovery
+    - automatic card updates
+    - Account Updater analytics
+    - credit card lifecycle management
+    - authorized payment volume
+    - card network trends.
   robots: index
 ---
 <HTMLBlock>{`
