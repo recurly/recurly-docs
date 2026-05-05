@@ -5,7 +5,7 @@ excerpt: >-
   site user with access to their Recurly site, including permissions, roles, and
   creation dates.  #
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
