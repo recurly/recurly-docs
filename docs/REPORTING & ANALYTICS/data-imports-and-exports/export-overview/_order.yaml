@@ -23,6 +23,7 @@
 - revenue-recognition-export
 - subscriptions-exports
 - subscription-add-ons-export
+- site-activities-export-1
 - subscriptions-add-ons-history-export
 - subscriptions-churned
 - subscriptions-external
@@ -32,4 +33,3 @@
 - usages-records-export
 - transaction-export
 - users-export-1
-- site-activities-export-1
