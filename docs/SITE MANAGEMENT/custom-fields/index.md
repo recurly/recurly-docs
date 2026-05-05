@@ -1,8 +1,8 @@
 ---
 title: Custom fields
 excerpt: >-
-  Extend Recurly objects like accounts, subscriptions, plans, and charges with
-  custom fields to capture the data that matters most to your business.
+  Dive into Recurly's Custom Fields to personalize your data, enhancing account,
+  charge, item, plan, and subscription details for a tailored experience.
 deprecated: false
 hidden: false
 metadata:
@@ -17,30 +17,31 @@ next:
 ---
 # Overview
 
-### Required plan
+### Plan availability
 
-| Plan                | Custom fields allowed                                                        |
-| :------------------ | :--------------------------------------------------------------------------- |
-| Sandbox / Developer | Up to 5 (for testing only)                                                   |
-| Starter             | Not supported — remove any sandbox custom fields before upgrading to Starter |
-| Pro                 | Up to 5                                                                      |
-| Elite               | Up to 10                                                                     |
+**Sandbox and Developer Modes**
 
-### Prerequisites
+In sandbox and developer modes, you have the ability to add up to 5 custom fields to your account. This allows you to test the custom field feature and ensure that your integrations are effectively utilizing this information.
 
-* Configuration permission within your Recurly role is required to create, edit, or delete custom field definitions
+**Starter Plan**
 
-### Limitations
+The Starter plan of Recurly does not support custom fields. If you've enabled custom fields in Sandbox mode and wish to transition to the Starter plan, you'll need to remove existing custom fields before proceeding.
 
-* Custom fields are text fields only, with a 255-character limit
-* Picklist, boolean, true/false, and radio button data types are not supported
-* Deleting a custom field definition permanently removes all associated data across every object it was applied to — this action is irreversible
+**Pro Plan**
 
-***
+Recurly's Pro plan users can incorporate up to 5 custom fields, offering added flexibility to mold your account and data to better suit your business operations.
+
+**Elite Plan**
+
+For those on the Recurly Elite plan, the allowance extends to 10 custom fields. This expanded capacity provides a broader scope for customization, ensuring your data management aligns perfectly with your business needs.
 
 # Definition
 
-Custom Fields in Recurly let you capture and store additional information on the following objects: Account, Charge, Item, Plan, and Subscription. Use them to track data that's specific to your business — such as subscriber IDs from other systems, sales rep names, acquisition channels, or partner IDs.
+In Recurly, you have the option to create custom fields for various objects such as Account, Charges, Item, Plan, and Subscription. These custom fields serve as a way to capture and store additional information related to customers, their subscription objects, item attributes, or criteria for offering plans.
+
+The creation of custom fields is done through the Recurly Admin Console (UI), where you define the specific attributes and properties of each custom field. Once defined, you can assign, edit, or view these custom fields either through the API or the Recurly Admin Console (UI).
+
+By utilizing custom fields, you can tailor your Recurly experience to match your unique business needs, ensuring that you have access to the relevant data and insights that drive your operations forward. Whether you want to track specific customer information, add extra details to your item catalog, or enable targeted plan offerings, custom fields provide the flexibility to accommodate your requirements.
 
 # Creating and editing custom field definitions
 
@@ -50,7 +51,7 @@ To create a custom field definition, navigate to Configuration → Custom Fields
 
 <Image align="center" src="https://files.readme.io/c6597a7785a4c50599e49efdcd8c7d0913b628cc5450dae8a8d17d7c05ec2b0e-Screenshot_2026-04-06_at_12.48.11_PM.png" />
 
-# Key details
+The following fields are available when creating a custom field definition:
 
 * **API Field Name:** This serves as the ID used in the API to reference the custom field. It should not contain spaces and can only consist of numbers, letters, dashes, and underscores.
 * **Recurly Object:** This determines the object on which the custom field is created, such as account, charge, item, plan, or subscription.
@@ -63,17 +64,17 @@ To create a custom field definition, navigate to Configuration → Custom Fields
 * **Admin Console Field Name:** If you enable the field to be set, edited, or viewed in the Admin Console, this field is required, and its value becomes the field name in the Admin Console.  If _Allow this field to show up on Invoices_ is selected, this console name also because the name that appears on invoices.
 * **Tooltip Description:** If populated, a question mark icon will appear next to the Admin Console Field Name, providing additional context for users to understand the purpose of the field.
 
-1. Navigate to **Configuration → Custom Fields → Create Custom Field**
+## Custom field data types
 
-<Image align="center" border={true} width="70%" src="https://files.readme.io/f221aaf77e7c1f22b9da254478a1ecb2b23aeb88f1d217d24b0987f2c4bbe22d-image.png" className="border" />
+All custom fields are limited to 255 characters and are available as text fields only. You can populate these fields with any combination of letters and numbers, such as "xyz123," "John Smith," or "こんにちは."
 
-2. Fill in the following fields:
+Please note that custom fields currently do not support picklist, boolean, true/false, or radio button data types.
 
 ## Deleting custom field definitions
 
-## Editing a custom field definition
+If you no longer wish to collect data for a specific custom field on your accounts, charges, items, plans, or subscriptions, you have the option to delete the custom field definition from your Recurly site. Please note that deleting a custom field definition will permanently remove all associated custom field data.
 
-After creation, you can edit a custom field definition at any time via **Configuration → Custom Fields**. The same fields available during creation — API Field Name, Recurly Object, Admin Console Access, Admin Console Field Name, and Tooltip Description — are all editable.
+To delete a custom field definition, follow these steps:
 
 1. Go to Configuration→Custom Fields.
 2. Take note of the value in the "Field Name (API)" column for the custom field you want to eliminate.
@@ -82,12 +83,15 @@ After creation, you can edit a custom field definition at any time via **Configu
 5. Once entered, the "Confirm" button will become enabled.
 6. Review the consequences of deleting the custom field definition:
 
-4. Enter the API field name to confirm
-5. Click **Confirm** — the button activates once the correct name is entered
+> ❗️ Warning:
+>
+> Deleting a custom field definition from your site will cause all associated custom field data to be permanently deleted. For example, if you are storing a custom field for "Sales Rep" that is populated with names on 100 accounts, deleting the "Sales Rep" custom field definition will result in the loss of sales representative data for those 100 accounts.
+>
+> > **Note:** This action is irreversible, and the deletion will occur immediately upon pressing the "Confirm" button. Ensure that you genuinely want to delete the field before proceeding.
 
-![](https://files.readme.io/b783cc09ee4ec551fa2749851dfcf5cfa4cff3b0ac0e1557b184db98b97f2e37-image.png)
+# Custom fields on an account
 
-***
+Custom Fields on an Account allow you to collect customer-specific information and add context to the Account object. You can create custom field values to track data such as subscriber ID from other business systems, sales representative name, channel partner name, subscriber segment, or subscriber region. These custom fields provide valuable insights and help you better understand and categorize your customer accounts.
 
 When defining an account custom field object, if you selected the **Editable in the admin console** option, you can set the custom field value when creating or editing an account.  Once the account is created or updated, the custom field and its value will appear within Account Information.
 
