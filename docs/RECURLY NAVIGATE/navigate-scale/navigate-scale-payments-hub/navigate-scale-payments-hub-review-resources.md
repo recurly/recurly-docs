@@ -1,8 +1,20 @@
 ---
 title: 'Payments Hub: Review & resources'
+excerpt: >-
+  Recap your progress through the Payments Hub learning path with a summary of
+  all five dashboards and key metrics to watch. Access on-demand walkthroughs,
+  register for live office hours, and explore deep-dive documentation to
+  optimize your payment strategy.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Payment analytics
+    - recurring revenue metrics
+    - Recurly support
+    - payment health monitoring
+    - revenue recovery
+    - Payments Hub.
   robots: index
 ---
 <HTMLBlock>{`
