@@ -6,7 +6,7 @@ excerpt: >-
   track authorized volume on updated cards, and identify trends across different
   card networks.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Proactive revenue recovery
