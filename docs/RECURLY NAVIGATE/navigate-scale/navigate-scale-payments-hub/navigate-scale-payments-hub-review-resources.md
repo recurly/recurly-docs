@@ -6,7 +6,7 @@ excerpt: >-
   register for live office hours, and explore deep-dive documentation to
   optimize your payment strategy.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Payment analytics
