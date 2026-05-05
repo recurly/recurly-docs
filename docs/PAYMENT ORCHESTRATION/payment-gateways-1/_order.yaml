@@ -1,4 +1,5 @@
 - adyen
+- copy-of-adyen
 - authorizenet
 - amazon-payments
 - amazon-pay-v2
@@ -26,4 +27,3 @@
 - paypal-payments-pro-credit-card
 - payeezy
 - wordline-bambora
-- copy-of-adyen
