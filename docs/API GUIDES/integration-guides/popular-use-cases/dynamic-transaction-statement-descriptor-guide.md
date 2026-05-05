@@ -133,11 +133,9 @@ Endpoint: `POST /purchases`and `POST /purchases/authorize`
 
 ### Setting Descriptors for Revenue Recovery 
 
-Endpoint: TBD
+With Revenue Recovery, Recurly is not involved in the end-to-end subscriber journey, so it will be important to ensure there is not a shift in statement descriptor information from one system to the next. You will need to provide the DBA and suffix details that you used on the customer signup and renewal transactions that are managed in your own environment to avoid card brand penalties or unexpected chargebacks. This is to ensure you do not run afoul of card brand risk and compliance programs, such as Visa's VAMP program
 
-**Important Note**: since Recurly is not handling the preliminary signup and renewals in this use case, you must provide Recurly with the same descriptor information (Business Entity and Suffix customization) as was used on the initial subscription signup and recurring phases to avoid brand penalties and chargebacks when using Recurly's Revenue Recovery services. 
-
-This is to ensure you do not run afoul of card brand risk and compliance programs, such as Visa's VAMP program.
+Endpoint: `POST TBD`
 
 ```json
 {
