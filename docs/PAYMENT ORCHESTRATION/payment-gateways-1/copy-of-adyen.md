@@ -74,6 +74,25 @@ metadata:
   .rp-pm-table tr:nth-child(odd):not(.rp-thead-row) td  { background: var(--offwhite);   }
   .rp-pm-table tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); }
   .rp-list { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 16px 22px 16px 38px; margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7; }
+
+  /* Click-to-expand image lightbox — JavaScript-free, checkbox-driven */
+  .rp-zoom { display: contents; }
+  .rp-zoom-toggle { position: absolute; opacity: 0; pointer-events: none; }
+  .rp-zoom-img { cursor: zoom-in; transition: opacity 0.15s ease; }
+  .rp-zoom-img:hover { opacity: 0.88; }
+  .rp-zoom-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(13, 13, 11, 0.92);
+    z-index: 9999;
+    cursor: zoom-out;
+    align-items: center; justify-content: center;
+    padding: 40px;
+  }
+  .rp-zoom-overlay img { max-width: 95%; max-height: 95vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+  .rp-zoom-overlay::after { content: "✕"; position: absolute; top: 20px; right: 28px; color: var(--offwhite); font-size: 28px; font-weight: 300; opacity: 0.7; }
+  .rp-zoom-toggle:checked ~ .rp-zoom-overlay { display: flex; }
+
   @media (max-width: 640px) { .rp-benefits, .rp-benefits.rp-benefits-2x2 { grid-template-columns: 1fr; } .rp-h1 { font-size: 1.25rem; } }
 </style>
 <div class="rp-page">
@@ -176,13 +195,29 @@ metadata:
     <div class="rp-step"><div class="rp-step-num">5</div><div><h4>Name your credential</h4><p>Enter a username and optional description — for example, Recurly Adyen Credentials.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/0958525-Screenshot_2023-10-26_at_1.45.41_PM.png" alt="Adyen credential creation modal showing Web service user selection" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-adyen-credential-creation-modal" class="rp-zoom-toggle" />
+    <label for="zoom-adyen-credential-creation-modal">
+      <img class="rp-zoom-img" src="https://files.readme.io/0958525-Screenshot_2023-10-26_at_1.45.41_PM.png" alt="Adyen credential creation modal showing Web service user selection" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-adyen-credential-creation-modal" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/0958525-Screenshot_2023-10-26_at_1.45.41_PM.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">6</div><div><h4>Enable Merchant Recurring Role</h4><p>Confirm Merchant Recurring Role is checked. Without this, recurring transactions using stored cards fail.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/47ce985afb27f46153651193d5dd02935a1c3a28c3fd4b64c724d175cc8a33a8-Screenshot_2025-02-07_at_9.45.08_AM.png" alt="Merchant Recurring Role checkbox in Adyen credential settings" style="display:block; width:85%; margin:16px auto; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-merchant-recurring-role" class="rp-zoom-toggle" />
+    <label for="zoom-merchant-recurring-role">
+      <img class="rp-zoom-img" src="https://files.readme.io/47ce985afb27f46153651193d5dd02935a1c3a28c3fd4b64c724d175cc8a33a8-Screenshot_2025-02-07_at_9.45.08_AM.png" alt="Merchant Recurring Role checkbox in Adyen credential settings" style="display:block; width:85%; margin:16px auto; border-radius:8px;" />
+    </label>
+    <label for="zoom-merchant-recurring-role" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/47ce985afb27f46153651193d5dd02935a1c3a28c3fd4b64c724d175cc8a33a8-Screenshot_2025-02-07_at_9.45.08_AM.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">7</div><div><h4>Save your password immediately</h4><p>Your password is available under Server settings → Authentication → Basic auth. Record it now — you won't be able to access it after leaving this page.</p></div></div>
@@ -190,7 +225,15 @@ metadata:
     <div class="rp-step"><div class="rp-step-num">9</div><div><h4>Save changes</h4><p>Click Save changes.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/748ce08-Screenshot_2023-10-26_at_1.46.10_PM.png" alt="Adyen Basic auth section showing username and password fields" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-basic-auth-credentials" class="rp-zoom-toggle" />
+    <label for="zoom-basic-auth-credentials">
+      <img class="rp-zoom-img" src="https://files.readme.io/748ce08-Screenshot_2023-10-26_at_1.46.10_PM.png" alt="Adyen Basic auth section showing username and password fields" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-basic-auth-credentials" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/748ce08-Screenshot_2023-10-26_at_1.46.10_PM.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">10</div><div><h4>Configure Dynamic 3DS</h4><p>In the Risk section under Dynamic 3D Secure, set Dynamic 3DS to "prefer no" — unless you specifically want 3DS on all transactions. Don't enable this on a gateway instance running recurring billing.</p></div></div>
@@ -210,7 +253,15 @@ metadata:
     <div class="rp-step"><div class="rp-step-num">3</div><div><h4>Set the server URL</h4><p>Under Server configuration, click the pencil icon and enter https://callbacks.recurly.com/adyen/&lt;MERCHANT_SUBDOMAIN&gt;. Replace &lt;MERCHANT_SUBDOMAIN&gt; with your Recurly site's subdomain. Click Apply. EU data centers: use callbacks.eu.recurly.com instead.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/fc70703-image.png" alt="Adyen webhook server configuration showing Recurly callback URL" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-webhook-server-url" class="rp-zoom-toggle" />
+    <label for="zoom-webhook-server-url">
+      <img class="rp-zoom-img" src="https://files.readme.io/fc70703-image.png" alt="Adyen webhook server configuration showing Recurly callback URL" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-webhook-server-url" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/fc70703-image.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">4</div><div><h4>Add the four required webhook types</h4><p>Add Direct-Debit Pending, Generic Pending, Recurring Token Lifecycle events, and Standard webhook.</p></div></div>
@@ -218,7 +269,15 @@ metadata:
     <div class="rp-step"><div class="rp-step-num">6</div><div><h4>Enable the webhook</h4><p>Confirm the Enabled toggle is active.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/1a31b55-image.png" alt="Adyen webhook Enabled toggle in active state" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-webhook-enabled-toggle" class="rp-zoom-toggle" />
+    <label for="zoom-webhook-enabled-toggle">
+      <img class="rp-zoom-img" src="https://files.readme.io/1a31b55-image.png" alt="Adyen webhook Enabled toggle in active state" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-webhook-enabled-toggle" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/1a31b55-image.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">7</div><div><h4>Save changes</h4><p>Click Save changes at the bottom of the page.</p></div></div>
@@ -285,11 +344,20 @@ metadata:
   </div>
 
   <div class="rp-h4" id="setting-up-report-credentials">Setting up report credentials</div>
+
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">1</div><div><h4>Access API credentials</h4><p>Log in to Adyen and go to Developers → API credentials.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/0e9f446-Screenshot_2023-10-26_at_2.32.53_PM.png" alt="Adyen API credentials page showing existing users" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-api-credentials-page" class="rp-zoom-toggle" />
+    <label for="zoom-api-credentials-page">
+      <img class="rp-zoom-img" src="https://files.readme.io/0e9f446-Screenshot_2023-10-26_at_2.32.53_PM.png" alt="Adyen API credentials page showing existing users" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-api-credentials-page" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/0e9f446-Screenshot_2023-10-26_at_2.32.53_PM.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">2</div><div><h4>Create a reporting user</h4><p>If no reporting user exists, create one and designate it as Report service user.</p></div></div>
@@ -297,22 +365,55 @@ metadata:
     <div class="rp-step"><div class="rp-step-num">4</div><div><h4>Enter credentials in Recurly</h4><p>Add the reporting username and password to the REPORTS USERNAME and REPORTS PASSWORD fields in your Recurly Adyen configuration.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/0ad6c72-image.png" alt="Recurly Adyen gateway configuration showing Reports Username and Password fields" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-reports-credentials-fields" class="rp-zoom-toggle" />
+    <label for="zoom-reports-credentials-fields">
+      <img class="rp-zoom-img" src="https://files.readme.io/0ad6c72-image.png" alt="Recurly Adyen gateway configuration showing Reports Username and Password fields" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-reports-credentials-fields" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/0ad6c72-image.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-h4" id="subscribing-to-the-payment-accounting-report-for-ach">Subscribing to the payment accounting report for ACH</div>
+
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">1</div><div><h4>Navigate to Reports</h4><p>In Adyen, go to Reports. Under Finance, click Payment Accounting then Manage report.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/d471c36-image.png" alt="Adyen Payment Accounting report management screen" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-payment-accounting-report" class="rp-zoom-toggle" />
+    <label for="zoom-payment-accounting-report">
+      <img class="rp-zoom-img" src="https://files.readme.io/d471c36-image.png" alt="Adyen Payment Accounting report management screen" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-payment-accounting-report" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/d471c36-image.png" alt="" />
+    </label>
+  </span>
 
-  <img src="https://files.readme.io/f40b511-image.png" alt="Adyen report settings showing automatic generation toggle" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-report-automatic-generation-toggle" class="rp-zoom-toggle" />
+    <label for="zoom-report-automatic-generation-toggle">
+      <img class="rp-zoom-img" src="https://files.readme.io/f40b511-image.png" alt="Adyen report settings showing automatic generation toggle" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-report-automatic-generation-toggle" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/f40b511-image.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">2</div><div><h4>Enable automatic generation</h4><p>Select Automatic, toggle to On, set file type to CSV, and close the dialog.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/cbce972-image.png" alt="Adyen automatic report generation enabled with CSV selected" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-report-generation-enabled" class="rp-zoom-toggle" />
+    <label for="zoom-report-generation-enabled">
+      <img class="rp-zoom-img" src="https://files.readme.io/cbce972-image.png" alt="Adyen automatic report generation enabled with CSV selected" style="display:block; width:85%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-report-generation-enabled" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/cbce972-image.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">3</div><div><h4>Confirm the report is active</h4><p>Click Manage report again to verify automatic generation is on.</p></div></div>
@@ -321,12 +422,21 @@ metadata:
   </div>
 
   <div class="rp-h4" id="enabling-nacha-verification">Enabling NACHA verification</div>
+
   <div class="rp-steps">
     <div class="rp-step"><div class="rp-step-num">1</div><div><h4>Enable GIACT in Adyen</h4><p>Confirm GIACT is enabled for NACHA verification within Adyen.</p></div></div>
     <div class="rp-step"><div class="rp-step-num">2</div><div><h4>Enable in Recurly</h4><p>In your Recurly Adyen configuration, check the NACHA verification box at the bottom of the page and save.</p></div></div>
   </div>
 
-  <img src="https://files.readme.io/f49c57dc1b942f81b5044b7538580f260cb01da28a09a610e597a359ddfef0c7-Screenshot_2025-07-29_at_4.11.19_PM.png" alt="Recurly Adyen configuration showing NACHA verification checkbox" style="display:block; width:85%; margin:16px auto; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-nacha-verification-checkbox" class="rp-zoom-toggle" />
+    <label for="zoom-nacha-verification-checkbox">
+      <img class="rp-zoom-img" src="https://files.readme.io/f49c57dc1b942f81b5044b7538580f260cb01da28a09a610e597a359ddfef0c7-Screenshot_2025-07-29_at_4.11.19_PM.png" alt="Recurly Adyen configuration showing NACHA verification checkbox" style="display:block; width:85%; margin:16px auto; border-radius:8px;" />
+    </label>
+    <label for="zoom-nacha-verification-checkbox" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/f49c57dc1b942f81b5044b7538580f260cb01da28a09a610e597a359ddfef0c7-Screenshot_2025-07-29_at_4.11.19_PM.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-h3" id="bacs-united-kingdom">BACS (United Kingdom)</div>
   <div class="rp-card">
