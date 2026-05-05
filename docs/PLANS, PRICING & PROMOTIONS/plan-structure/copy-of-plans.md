@@ -76,14 +76,23 @@ metadata:
   .rp-zoom-toggle:checked ~ .rp-zoom-overlay { display: flex; }
 
   /* Table of contents navigation pills */
-  .rp-toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 32px; }
-  .rp-toc-pill {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 8px 16px; border-radius: 20px;
-    border: 1px solid var(--offblack); background: var(--offblack);
-    color: var(--offwhite); text-decoration: none; font-size: 13px; font-weight: 700;
-    transition: background 0.15s, border-color 0.15s, color 0.15s;
-  }
+.rp-toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 32px; }
+.rp-toc-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 20px;
+  border: 1px solid var(--offblack); background: var(--offblack);
+  color: var(--offwhite) !important; text-decoration: none !important;
+  font-size: 13px; font-weight: 700;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.rp-toc-pill:hover { background: var(--tangerine); border-color: var(--tangerine); color: var(--offblack) !important; }
+.rp-toc-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--yellow); color: var(--offblack);
+  font-size: 11px; font-weight: 800; flex-shrink: 0;
+  text-decoration: none !important;
+}
   .rp-toc-pill:hover { background: var(--tangerine); border-color: var(--tangerine); color: var(--offblack); }
   .rp-toc-num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--yellow); color: var(--offblack); font-size: 11px; font-weight: 800; flex-shrink: 0; }
 
@@ -524,13 +533,13 @@ metadata:
 `}</HTMLBlock>
 
 <Accordion title="Is there a limit to how many plans I can create?">
-No. You can create as many plans as your business needs — there are no limits on plan count, currencies per plan, or price segments per currency.
+  No. You can create as many plans as your business needs — there are no limits on plan count, currencies per plan, or price segments per currency.
 </Accordion>
 
 <Accordion title="If I edit a plan's price, do existing subscribers pay the new price?">
-No. Versioned plan terms — including price, billing interval, and setup fees — apply only to new subscribers. Existing subscribers keep the terms that were in effect when they signed up. To change pricing for existing subscribers, you'll need to modify their individual subscriptions.
+  No. Versioned plan terms — including price, billing interval, and setup fees — apply only to new subscribers. Existing subscribers keep the terms that were in effect when they signed up. To change pricing for existing subscribers, you'll need to modify their individual subscriptions.
 </Accordion>
 
 <Accordion title="Can I recover a plan after deleting it?">
-No. Deletion is permanent. The plan can't be reactivated, no new customers can subscribe to it, and any subscriptions still tied to it can't be edited — including frequency, price, and add-ons. Existing subscriptions will continue to renew on their current terms until they end. If you might want the plan back later, duplicate it first or use Edit to make it inactive instead.
+  No. Deletion is permanent. The plan can't be reactivated, no new customers can subscribe to it, and any subscriptions still tied to it can't be edited — including frequency, price, and add-ons. Existing subscriptions will continue to renew on their current terms until they end. If you might want the plan back later, duplicate it first or use Edit to make it inactive instead.
 </Accordion>
