@@ -621,3 +621,13 @@ metadata:
 </body>
 </html>
 `}</HTMLBlock>
+
+<br />
+
+<Accordion title="A tokenized payment method I'm using isn't allowing conversions, or subscriptions are failing. What can I do?">
+  Confirm you've enabled the required webhooks. `RECURRING_CONTRACT` webhooks are critical for all non-card payment methods. Review the webhook configuration section above and ensure every required event code is active in both the Standard Webhooks Page and the Webhooks Settings Page in Adyen.
+</Accordion>
+
+<Accordion title="My customer got a decline from Adyen at checkout. What happened?">
+  Start with the decline code shown in the Recurly Admin UI for the transaction. If the decline is related to 3DS, confirm 3DS is enabled and configured in both Adyen and your Recurly.js implementation. If 3DS is already enabled, the customer may not have completed the 3DS challenge — in which case the decline is expected behavior.
+</Accordion>
