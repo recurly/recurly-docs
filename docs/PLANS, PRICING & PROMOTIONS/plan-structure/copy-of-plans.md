@@ -26,135 +26,75 @@ metadata:
     --darknavy:   #343F4B;
     --font:       'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   }
-
   *, *::before, *::after { box-sizing: border-box; }
-
-  .rp-page {
-    font-family: var(--font);
-    color: var(--deepchar);
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 860px;
-  }
-
-  .rp-overview {
-    border-left: 4px solid var(--yellow);
-    background: var(--offwhite);
-    padding: 16px 22px;
-    border-radius: 0 8px 8px 0;
-    margin-bottom: 20px;
-    font-size: 15px;
-    color: var(--darkgray);
-  }
-
-  .rp-plan {
-    display: inline-block;
-    background: var(--offblack);
-    color: var(--yellow);
-    font-size: 13px;
-    font-weight: 700;
-    padding: 6px 16px;
-    border-radius: 20px;
-    margin-bottom: 24px;
-    letter-spacing: 0.3px;
-  }
-
-  .rp-definition {
-    background: var(--brightgray);
-    border-radius: 10px;
-    padding: 22px 26px;
-    margin-bottom: 28px;
-    font-size: 15px;
-    color: var(--darkgray);
-    line-height: 1.7;
-  }
-
-  .rp-benefits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 14px;
-    margin-bottom: 32px;
-  }
+  .rp-page { font-family: var(--font); color: var(--deepchar); font-size: 15px; line-height: 1.6; max-width: 860px; }
+  .rp-overview { border-left: 4px solid var(--yellow); background: var(--offwhite); padding: 16px 22px; border-radius: 0 8px 8px 0; margin-bottom: 20px; font-size: 15px; color: var(--darkgray); }
+  .rp-plan { display: inline-block; background: var(--offblack); color: var(--yellow); font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 20px; margin-bottom: 24px; letter-spacing: 0.3px; }
+  .rp-definition { background: var(--brightgray); border-radius: 10px; padding: 22px 26px; margin-bottom: 28px; font-size: 15px; color: var(--darkgray); line-height: 1.7; }
+  .rp-benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-bottom: 32px; }
   .rp-benefits.rp-benefits-2x2 { grid-template-columns: repeat(2, 1fr); }
-  .rp-benefit {
-    background: var(--offblack);
-    color: var(--offwhite);
-    border-radius: 10px;
-    padding: 20px;
-  }
+  .rp-benefit { background: var(--offblack); color: var(--offwhite); border-radius: 10px; padding: 20px; }
   .rp-benefit-icon { color: var(--yellow); font-size: 20px; margin-bottom: 10px; }
-  .rp-benefit strong {
-    display: block; font-size: 14px; font-weight: 700;
-    margin-bottom: 6px; color: var(--offwhite);
-  }
+  .rp-benefit strong { display: block; font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--offwhite); }
   .rp-benefit span { font-size: 13px; color: var(--lightgray); line-height: 1.5; }
-
-  .rp-h1 {
-    font-size: 1.5rem; font-weight: 800; color: var(--offblack);
-    margin: 36px 0 14px; padding-bottom: 8px;
-    border-bottom: 2px solid var(--yellow);
-  }
+  .rp-h1 { font-size: 1.5rem; font-weight: 800; color: var(--offblack); margin: 36px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--yellow); }
   .rp-h2 { font-size: 1.1rem; font-weight: 700; color: var(--darknavy); margin: 28px 0 10px; }
   .rp-h3 { font-size: 0.95rem; font-weight: 700; color: var(--darkgray); margin: 20px 0 8px; }
   .rp-h4 { font-size: 0.9rem; font-weight: 600; color: var(--darkgray); margin: 16px 0 6px; }
-
-  .rp-card {
-    background: var(--offwhite);
-    border: 1px solid var(--lightgray);
-    border-radius: 10px;
-    padding: 22px 26px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: var(--darkgray);
-    line-height: 1.65;
-  }
-
+  .rp-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 22px 26px; margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.65; }
   .rp-steps { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
-  .rp-step {
-    display: flex; gap: 16px; align-items: flex-start;
-    background: var(--offwhite); border: 1px solid var(--lightgray);
-    border-radius: 10px; padding: 18px 22px;
-  }
-  .rp-step-num {
-    width: 34px; height: 34px; border-radius: 8px;
-    background: var(--offblack); color: var(--yellow);
-    font-weight: 800; font-size: 14px;
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-  }
+  .rp-step { display: flex; gap: 16px; align-items: flex-start; background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 18px 22px; }
+  .rp-step-num { width: 34px; height: 34px; border-radius: 8px; background: var(--offblack); color: var(--yellow); font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
-  .rp-step p  { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
-
-  .rp-callout {
-    border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0;
-    font-size: 14px;
-  }
+  .rp-step p { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
+  .rp-callout { border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0; font-size: 14px; }
   .rp-callout strong { display: block; margin-bottom: 3px; }
-  .rp-callout-note      { border-left: 4px solid var(--offblack);  background: var(--brightgray); color: var(--deepchar); }
+  .rp-callout-note      { border-left: 4px solid var(--offblack); background: var(--brightgray); color: var(--deepchar); }
   .rp-callout-tip       { border-left: 4px solid var(--yellow);    background: var(--offwhite);   color: var(--darkgray); }
   .rp-callout-warning   { border-left: 4px solid var(--tangerine); background: #FFF8F2;            color: var(--darkgray); }
-
   .rp-params { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0 24px; }
-  .rp-params tr.rp-thead-row td {
-    background: var(--offblack) !important;
-    color: var(--offwhite) !important;
-    font-weight: 700;
-    padding: 10px 14px;
-  }
+  .rp-params tr.rp-thead-row td { background: var(--offblack) !important; color: var(--offwhite) !important; font-weight: 700; padding: 10px 14px; }
   .rp-params tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-params td { padding: 10px 14px; border-bottom: 1px solid var(--lightgray); vertical-align: top; }
   .rp-params tr:nth-child(even):not(.rp-thead-row) td { background: var(--brightgray); }
   .rp-params tr:nth-child(odd):not(.rp-thead-row) td  { background: var(--offwhite); }
   .rp-params tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); width: 28%; }
+  .rp-list { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 16px 22px 16px 38px; margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7; }
 
-  .rp-list {
-    background: var(--offwhite); border: 1px solid var(--lightgray);
-    border-radius: 10px; padding: 16px 22px 16px 38px;
-    margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7;
+  /* Click-to-expand image lightbox — JavaScript-free, checkbox-driven */
+  .rp-zoom { display: contents; }
+  .rp-zoom-toggle { position: absolute; opacity: 0; pointer-events: none; }
+  .rp-zoom-img { cursor: zoom-in; transition: opacity 0.15s ease; }
+  .rp-zoom-img:hover { opacity: 0.88; }
+  .rp-zoom-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(13, 13, 11, 0.92);
+    z-index: 9999;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
   }
+  .rp-zoom-overlay img {
+    max-width: 95%;
+    max-height: 95vh;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+  .rp-zoom-overlay::after {
+    content: "✕";
+    position: absolute;
+    top: 20px; right: 28px;
+    color: var(--offwhite);
+    font-size: 28px;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+  .rp-zoom-toggle:checked ~ .rp-zoom-overlay { display: flex; }
 
   @media (max-width: 640px) {
-    .rp-benefits,
-    .rp-benefits.rp-benefits-2x2 { grid-template-columns: 1fr; }
+    .rp-benefits, .rp-benefits.rp-benefits-2x2 { grid-template-columns: 1fr; }
     .rp-h1 { font-size: 1.25rem; }
   }
 </style>
@@ -207,14 +147,23 @@ metadata:
       <div class="rp-step-num">1</div>
       <div>
         <h4>Open the new plan form</h4>
-        <p>Navigate to <strong>Configuration → Plans</strong> and click <strong>New Plan</strong>.</p>
+        <p>Navigate to Configuration → Plans and click New Plan.</p>
       </div>
     </div>
   </div>
 
-  <img src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png"
-       alt="New Plan button in the plans dashboard"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-new-plan-button" class="rp-zoom-toggle" />
+    <label for="zoom-new-plan-button">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png"
+           alt="New Plan button in the plans dashboard"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-new-plan-button" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step">
@@ -228,9 +177,18 @@ metadata:
 
   <div class="rp-h2" id="plan-details">Plan details</div>
 
-  <img src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png"
-       alt="Plan details fields including plan name, plan code, and plan description"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-plan-details-fields" class="rp-zoom-toggle" />
+    <label for="zoom-plan-details-fields">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png"
+           alt="Plan details fields including plan name, plan code, and plan description"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-plan-details-fields" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" alt="" />
+    </label>
+  </span>
 
   <table class="rp-params">
     <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
@@ -241,17 +199,44 @@ metadata:
 
   <div class="rp-h2" id="plan-configuration">Plan configuration</div>
 
-  <img src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png"
-       alt="Currency picker in plan configuration"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-currency-picker" class="rp-zoom-toggle" />
+    <label for="zoom-currency-picker">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png"
+           alt="Currency picker in plan configuration"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-currency-picker" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png" alt="" />
+    </label>
+  </span>
 
-  <img src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png"
-       alt="Free trial configuration options"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-free-trial-config" class="rp-zoom-toggle" />
+    <label for="zoom-free-trial-config">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png"
+           alt="Free trial configuration options"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-free-trial-config" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png" alt="" />
+    </label>
+  </span>
 
-  <img src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png"
-       alt="Setup fee configuration field"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-setup-fee-field" class="rp-zoom-toggle" />
+    <label for="zoom-setup-fee-field">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png"
+           alt="Setup fee configuration field"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-setup-fee-field" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" alt="" />
+    </label>
+  </span>
 
   <table class="rp-params">
     <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
@@ -262,9 +247,18 @@ metadata:
 
   <div class="rp-h2" id="billing-configuration">Billing configuration</div>
 
-  <img src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png"
-       alt="Billing configuration settings including billing period and subscription term"
-       style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-billing-configuration" class="rp-zoom-toggle" />
+    <label for="zoom-billing-configuration">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png"
+           alt="Billing configuration settings including billing period and subscription term"
+           style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
+    </label>
+    <label for="zoom-billing-configuration" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" alt="" />
+    </label>
+  </span>
 
   <table class="rp-params">
     <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
@@ -275,9 +269,18 @@ metadata:
 
   <div class="rp-h2" id="pricing-model">Pricing model</div>
 
-  <img src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png"
-       alt="Pricing model selector showing fixed and ramp options"
-       style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-pricing-model-selector" class="rp-zoom-toggle" />
+    <label for="zoom-pricing-model-selector">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png"
+           alt="Pricing model selector showing fixed and ramp options"
+           style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
+    </label>
+    <label for="zoom-pricing-model-selector" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" alt="" />
+    </label>
+  </span>
 
   <table class="rp-params">
     <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
@@ -292,9 +295,18 @@ metadata:
     <strong>Example:</strong> A gym with higher operating costs in certain cities can create one plan with segments — <code>default</code>, <code>nyc</code>, <code>la</code> — instead of cloning identical plans per city.
   </div>
 
-  <img src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png"
-       alt="Price segments configuration showing multiple segment codes and prices"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-price-segments-config" class="rp-zoom-toggle" />
+    <label for="zoom-price-segments-config">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png"
+           alt="Price segments configuration showing multiple segment codes and prices"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-price-segments-config" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-h3" id="how-price-segments-work">How price segments work</div>
   <div class="rp-steps">
@@ -304,11 +316,11 @@ metadata:
     </div>
     <div class="rp-step">
       <div class="rp-step-num">2</div>
-      <div><h4>Decide your selection rule</h4><p>For example: if <code>city=NYC</code> use segment <code>nyc</code>; if the user is in test group B, use segment <code>exp-b</code>.</p></div>
+      <div><h4>Decide your selection rule</h4><p>For example: if city=NYC use segment nyc; if the user is in test group B, use segment exp-b.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">3</div>
-      <div><h4>Expose the right price in your UI</h4><p>Fetch the plan's price segments via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_plan" target="_blank" style="color: var(--tangerine);">API</a> or <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank" style="color: var(--tangerine);">Recurly.js</a> and render the price that matches your rule.</p></div>
+      <div><h4>Expose the right price in your UI</h4><p>Fetch the plan's price segments via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_plan" target="_blank" style="color: var(--tangerine);">API</a> or <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs" target="_blank" style="color: var(--tangerine);">Recurly.js</a> and render the price that matches your rule.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">4</div>
@@ -317,7 +329,7 @@ metadata:
   </div>
 
   <div class="rp-callout rp-callout-tip">
-    <strong>Tip</strong>For A/B tests, name segments clearly (e.g., <code>exp-a</code>, <code>exp-b</code>) and log the chosen segment code with your analytics events.
+    <div><strong>Tip</strong>For A/B tests, name segments clearly (e.g., <code>exp-a</code>, <code>exp-b</code>) and log the chosen segment code with your analytics events.</div>
   </div>
 
   <div class="rp-h3" id="price-segmentation-limits-and-notes">Price segmentation limits and notes</div>
@@ -338,26 +350,62 @@ metadata:
     <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank" style="color: var(--tangerine);">/create_subscription_change</a>
     <br/><br/>
     <strong>Recurly.js</strong><br/>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank" style="color: var(--tangerine);">Surface the right price segment in your front end with Recurly.js</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs" target="_blank" style="color: var(--tangerine);">Surface the right price segment in your front end with Recurly.js</a>
   </div>
 
   <div class="rp-h2" id="additional-plan-fields">Additional plan fields</div>
 
-  <img src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png"
-       alt="Billing details fields including accounting code and HS code"
-       style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-billing-details-fields" class="rp-zoom-toggle" />
+    <label for="zoom-billing-details-fields">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png"
+           alt="Billing details fields including accounting code and HS code"
+           style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
+    </label>
+    <label for="zoom-billing-details-fields" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" alt="" />
+    </label>
+  </span>
 
-  <img src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png"
-       alt="Plan add-ons configuration section"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-plan-addons" class="rp-zoom-toggle" />
+    <label for="zoom-plan-addons">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png"
+           alt="Plan add-ons configuration section"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-plan-addons" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" alt="" />
+    </label>
+  </span>
 
-  <img src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png"
-       alt="Dunning campaign selector on the plan form"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-dunning-campaign" class="rp-zoom-toggle" />
+    <label for="zoom-dunning-campaign">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png"
+           alt="Dunning campaign selector on the plan form"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-dunning-campaign" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" alt="" />
+    </label>
+  </span>
 
-  <img src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png"
-       alt="Customer emails settings on the plan form"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-customer-emails" class="rp-zoom-toggle" />
+    <label for="zoom-customer-emails">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png"
+           alt="Customer emails settings on the plan form"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-customer-emails" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" alt="" />
+    </label>
+  </span>
 
   <table class="rp-params">
     <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
@@ -370,9 +418,18 @@ metadata:
 
   <div class="rp-h2" id="hosted-payment-page-settings">Hosted Payment Page settings</div>
 
-  <img src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png"
-       alt="Hosted Payment Page configuration settings"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-legacy-hpp" class="rp-zoom-toggle" />
+    <label for="zoom-legacy-hpp">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png"
+           alt="Hosted Payment Page configuration settings"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-legacy-hpp" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png" alt="" />
+    </label>
+  </span>
 
   <table class="rp-params">
     <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
@@ -384,18 +441,26 @@ metadata:
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">3</div>
-      <div><h4>Create the plan</h4><p>Once all parameters are defined, click <strong>Create Plan</strong> to finalize.</p></div>
+      <div><h4>Create the plan</h4><p>Once all parameters are defined, click Create Plan to finalize.</p></div>
     </div>
   </div>
 
-  <div class="rp-h2" id="checkout-configurations">Checkout configurations</div>
-
-  <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png"
-       alt="Checkout configuration option on the plan detail page"
-       style="display:block; width:280px; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-
   <div class="rp-card">
+    <div class="rp-h3" id="checkout-configurations" style="margin-top:0;">Checkout configurations</div>
     After configuring a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank" style="color: var(--tangerine);">Checkout</a> configuration to direct customers to purchase it.
+    <br/><br/>
+    <span class="rp-zoom">
+      <input type="checkbox" id="zoom-checkout-config-option" class="rp-zoom-toggle" />
+      <label for="zoom-checkout-config-option">
+        <img class="rp-zoom-img"
+             src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png"
+             alt="Checkout configuration option on the plan detail page"
+             style="display:block; width:280px; margin:8px auto 0; border:1px solid #CCC9B8; border-radius:8px;" />
+      </label>
+      <label for="zoom-checkout-config-option" class="rp-zoom-overlay">
+        <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="" />
+      </label>
+    </span>
   </div>
 
   <div class="rp-h1" id="edit-a-plan">Edit a plan</div>
@@ -403,24 +468,24 @@ metadata:
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
-      <div><h4>Navigate to plans</h4><p>Go to <strong>Configuration → Plans</strong>.</p></div>
+      <div><h4>Navigate to plans</h4><p>Go to Configuration → Plans.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">2</div>
-      <div><h4>Select Edit</h4><p>Hover over the plan row in the list view, or use the plan actions menu on the plan details page, and select <strong>Edit</strong>.</p></div>
+      <div><h4>Select Edit</h4><p>Hover over the plan row in the list view, or use the plan actions menu on the plan details page, and select Edit.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">3</div>
-      <div><h4>Save your changes</h4><p>Make your changes and select <strong>Save Changes</strong>.</p></div>
+      <div><h4>Save your changes</h4><p>Make your changes and select Save Changes.</p></div>
     </div>
   </div>
 
   <div class="rp-callout rp-callout-warning">
-    <strong>Plan name changes apply to existing subscriptions</strong>Updating a plan's name updates it site-wide. Existing subscriptions will show the new plan name in the Admin UI, and future invoice line items will use the updated name.
+    <div><strong>Plan name changes apply to existing subscriptions</strong>Updating a plan's name updates it site-wide. Existing subscriptions show the new plan name in the Admin UI, and future invoice line items use the updated name.</div>
   </div>
 
   <div class="rp-callout rp-callout-note">
-    <strong>Note</strong>Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.
+    <div><strong>Note</strong>Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
   </div>
 
   <div class="rp-h1" id="duplicate-a-plan">Duplicate a plan</div>
@@ -428,11 +493,11 @@ metadata:
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
-      <div><h4>Navigate to plans</h4><p>Go to <strong>Configuration → Plans</strong>.</p></div>
+      <div><h4>Navigate to plans</h4><p>Go to Configuration → Plans.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">2</div>
-      <div><h4>Select Duplicate</h4><p>Hover over any plan row to reveal additional options, then select <strong>Duplicate</strong>.</p></div>
+      <div><h4>Select Duplicate</h4><p>Hover over any plan row to reveal additional options, then select Duplicate.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">3</div>
@@ -440,19 +505,28 @@ metadata:
     </div>
   </div>
 
-  <img src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png"
-       alt="Create a Plan form pre-filled with duplicated plan details"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-duplicate-plan-form" class="rp-zoom-toggle" />
+    <label for="zoom-duplicate-plan-form">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png"
+           alt="Create a Plan form pre-filled with duplicated plan details"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-duplicate-plan-form" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">4</div>
-      <div><h4>Create the plan</h4><p>Click <strong>Create Plan</strong> once you've finished adjusting the details.</p></div>
+      <div><h4>Create the plan</h4><p>Click Create Plan once you've finished adjusting the details.</p></div>
     </div>
   </div>
 
   <div class="rp-callout rp-callout-tip">
-    <strong>Tip</strong>You can also duplicate a plan immediately after creating it — the success alert includes a duplicate option.
+    <div><strong>Tip</strong>You can also duplicate a plan immediately after creating it — the success alert includes a duplicate option.</div>
   </div>
 
   <div class="rp-h1" id="delete-a-plan">Delete a plan</div>
@@ -460,11 +534,11 @@ metadata:
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
-      <div><h4>Navigate to plans</h4><p>Go to <strong>Configuration → Plans</strong>.</p></div>
+      <div><h4>Navigate to plans</h4><p>Go to Configuration → Plans.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">2</div>
-      <div><h4>Select Delete</h4><p>Hover over the plan row, or use the plan actions dropdown on the plan details page, and select <strong>Delete</strong>.</p></div>
+      <div><h4>Select Delete</h4><p>Hover over the plan row, or use the plan actions dropdown on the plan details page, and select Delete.</p></div>
     </div>
     <div class="rp-step">
       <div class="rp-step-num">3</div>
@@ -472,12 +546,21 @@ metadata:
     </div>
   </div>
 
-  <img src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png"
-       alt="Delete confirmation dialog"
-       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-delete-confirmation" class="rp-zoom-toggle" />
+    <label for="zoom-delete-confirmation">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png"
+           alt="Delete confirmation dialog"
+           style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-delete-confirmation" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png" alt="" />
+    </label>
+  </span>
 
   <div class="rp-callout rp-callout-warning">
-    <strong>Deleting a plan is permanent</strong>New customers won't be able to subscribe to a deleted plan. Existing subscriptions will continue to renew, but the plan cannot be reactivated. Any subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.
+    <div><strong>Deleting a plan is permanent</strong>New customers can't subscribe to a deleted plan. Existing subscriptions will continue to renew, but the plan can't be reactivated. Any subscriptions tied to a deleted plan can't be edited — including frequency, price, and add-ons.</div>
   </div>
 
   <div class="rp-h1" id="faqs">FAQs</div>
@@ -494,5 +577,5 @@ No. Versioned plan terms — including price, billing interval, and setup fees �
 </Accordion>
 
 <Accordion title="Can I recover a plan after deleting it?">
-No. Deletion is permanent. The plan cannot be reactivated, no new customers can subscribe to it, and any subscriptions still tied to it cannot be edited — including frequency, price, and add-ons. Existing subscriptions will continue to renew on their current terms until they end. If you might want the plan back later, duplicate it first or use Edit to make it inactive instead.
+No. Deletion is permanent. The plan can't be reactivated, no new customers can subscribe to it, and any subscriptions still tied to it can't be edited — including frequency, price, and add-ons. Existing subscriptions will continue to renew on their current terms until they end. If you might want the plan back later, duplicate it first or use Edit to make it inactive instead.
 </Accordion>
