@@ -48,7 +48,6 @@ metadata:
   .rp-step-num { width: 34px; height: 34px; border-radius: 8px; background: var(--offblack); color: var(--yellow); font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
   .rp-step p { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
-  .rp-step ul { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 6px 0 0; padding-left: 18px; }
   .rp-callout { border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0; font-size: 14px; }
   .rp-callout strong { display: block; margin-bottom: 3px; }
   .rp-callout-tip      { border-left: 4px solid var(--yellow);    background: var(--offwhite);   color: var(--darkgray); }
@@ -57,17 +56,14 @@ metadata:
   .rp-btn { display: inline-block; padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; margin: 6px 8px 6px 0; font-family: var(--font); }
   .rp-btn-primary { background: var(--offblack); color: var(--yellow); }
   .rp-list { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 10px; padding: 16px 22px 16px 38px; margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7; }
-  .rp-params { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0 20px; }
+  .rp-params { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0 24px; }
   .rp-params thead tr { background: var(--offblack); color: var(--offwhite); }
   .rp-params th { padding: 10px 14px; text-align: left; font-weight: 700; }
   .rp-params td { padding: 10px 14px; border-bottom: 1px solid var(--lightgray); vertical-align: top; }
   .rp-params tr:nth-child(even) td { background: var(--brightgray); }
   .rp-params tr:nth-child(odd) td { background: var(--offwhite); }
   .rp-params td:first-child { font-weight: 600; color: var(--offblack); width: 28%; }
-  .rp-img { display: block; max-width: 80%; margin: 16px auto; border-radius: 8px; }
-  .rp-img-border { border: 1px solid #CCC9B8; }
-  .rp-img-sm { max-width: 30%; }
-  @media (max-width: 640px) { .rp-benefits { grid-template-columns: 1fr; } .rp-h1 { font-size: 1.25rem; } .rp-img, .rp-img-sm { max-width: 100%; } }
+  @media (max-width: 640px) { .rp-benefits { grid-template-columns: 1fr; } .rp-h1 { font-size: 1.25rem; } }
 </style>
 </head>
 <body>
@@ -129,14 +125,14 @@ metadata:
 
   <img src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png"
        alt="New Plan button in the plans dashboard"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">2</div>
       <div>
         <h4>Define plan parameters</h4>
-        <p>Configure each section of the plan form. Start with the plan details below.</p>
+        <p>Configure each section of the plan form using the fields described below.</p>
       </div>
     </div>
   </div>
@@ -145,7 +141,7 @@ metadata:
 
   <img src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png"
        alt="Plan details fields including plan name, plan code, and plan description"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
@@ -160,33 +156,21 @@ metadata:
 
   <img src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png"
        alt="Currency picker in plan configuration"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+
+  <img src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png"
+       alt="Free trial configuration options"
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+
+  <img src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png"
+       alt="Setup fee configuration field"
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
       <tr><td>Currencies</td><td>Choose which of your enabled currencies to include in this plan.</td></tr>
-    </tbody>
-  </table>
-
-  <img src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png"
-       alt="Free trial configuration options"
-       class="rp-img rp-img-border" />
-
-  <table class="rp-params">
-    <thead><tr><th>Field</th><th>Description</th></tr></thead>
-    <tbody>
       <tr><td>Free trial</td><td>Define a free period in days or months. The paid subscription starts after the trial ends. You can choose whether to require billing information at sign-up.</td></tr>
-    </tbody>
-  </table>
-
-  <img src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png"
-       alt="Setup fee configuration field"
-       class="rp-img rp-img-border" />
-
-  <table class="rp-params">
-    <thead><tr><th>Field</th><th>Description</th></tr></thead>
-    <tbody>
       <tr><td>Setup fee</td><td>A one-time charge processed at sign-up.</td></tr>
     </tbody>
   </table>
@@ -195,7 +179,7 @@ metadata:
 
   <img src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png"
        alt="Billing configuration settings including billing period and subscription term"
-       class="rp-img" />
+       style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
 
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
@@ -210,7 +194,7 @@ metadata:
 
   <img src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png"
        alt="Pricing model selector showing fixed and ramp options"
-       class="rp-img" />
+       style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
 
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
@@ -229,7 +213,7 @@ metadata:
 
   <img src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png"
        alt="Price segments configuration showing multiple segment codes and prices"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-h3">How price segments work</div>
   <div class="rp-steps">
@@ -280,45 +264,27 @@ metadata:
 
   <img src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png"
        alt="Billing details fields including accounting code and HS code"
-       class="rp-img" />
+       style="display:block; width:75%; margin:16px auto; border-radius:8px;" />
+
+  <img src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png"
+       alt="Plan add-ons configuration section"
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+
+  <img src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png"
+       alt="Dunning campaign selector on the plan form"
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+
+  <img src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png"
+       alt="Customer emails settings on the plan form"
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
     <tbody>
       <tr><td>Accounting code</td><td>A unique code to identify plans in internal invoice exports. Based on your tax settings and compliance requirements. Limit: 25 lowercase alphanumeric characters.</td></tr>
       <tr><td>HS code / Commodity code</td><td>A Harmonized System (HS) code for invoice compliance on traded products. Typically six or more digits. Limit: 25 lowercase alphanumeric characters.</td></tr>
-    </tbody>
-  </table>
-
-  <img src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png"
-       alt="Plan add-ons configuration section"
-       class="rp-img rp-img-border" />
-
-  <table class="rp-params">
-    <thead><tr><th>Field</th><th>Description</th></tr></thead>
-    <tbody>
       <tr><td>Add-ons</td><td>Optional products included in recurring subscription invoices. Supports quantity-based pricing. You can add items from the Item Catalog.</td></tr>
-    </tbody>
-  </table>
-
-  <img src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png"
-       alt="Dunning campaign selector on the plan form"
-       class="rp-img rp-img-border" />
-
-  <table class="rp-params">
-    <thead><tr><th>Field</th><th>Description</th></tr></thead>
-    <tbody>
       <tr><td>Dunning campaign</td><td>Select the dunning campaign to associate with this plan.</td></tr>
-    </tbody>
-  </table>
-
-  <img src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png"
-       alt="Customer emails settings on the plan form"
-       class="rp-img rp-img-border" />
-
-  <table class="rp-params">
-    <thead><tr><th>Field</th><th>Description</th></tr></thead>
-    <tbody>
       <tr><td>Customer emails</td><td>Enable email communication for specific events. Manage and modify templates on the Email Templates settings page.</td></tr>
     </tbody>
   </table>
@@ -327,7 +293,7 @@ metadata:
 
   <img src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png"
        alt="Hosted Payment Page configuration settings"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <table class="rp-params">
     <thead><tr><th>Field</th><th>Description</th></tr></thead>
@@ -349,7 +315,7 @@ metadata:
 
   <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png"
        alt="Checkout configuration option on the plan detail page"
-       class="rp-img rp-img-border rp-img-sm" />
+       style="display:block; width:280px; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-card">
     After configuring a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank" style="color: var(--tangerine);">Checkout</a> configuration to direct customers to purchase it.
@@ -374,7 +340,7 @@ metadata:
 
   <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png"
        alt="Edit option appearing on hover over a plan row"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-callout rp-callout-warning">
     <strong>Plan name changes apply to existing subscriptions</strong>Updating a plan's name updates it site-wide. Existing subscriptions will show the new plan name in the Admin UI, and future invoice line items will use the updated name.
@@ -399,7 +365,7 @@ metadata:
 
   <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png"
        alt="Duplicate option appearing on hover over a plan row"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-steps">
     <div class="rp-step">
@@ -410,7 +376,7 @@ metadata:
 
   <img src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png"
        alt="Create a Plan form pre-filled with duplicated plan details"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-steps">
     <div class="rp-step">
@@ -438,7 +404,7 @@ metadata:
 
   <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png"
        alt="Delete option appearing on hover over a plan row"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-steps">
     <div class="rp-step">
@@ -449,7 +415,7 @@ metadata:
 
   <img src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png"
        alt="Delete confirmation dialog"
-       class="rp-img rp-img-border" />
+       style="display:block; width:75%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
 
   <div class="rp-callout rp-callout-warning">
     <strong>Deleting a plan is permanent</strong>New customers won't be able to subscribe to a deleted plan. Existing subscriptions will continue to renew, but the plan cannot be reactivated. Any subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.
