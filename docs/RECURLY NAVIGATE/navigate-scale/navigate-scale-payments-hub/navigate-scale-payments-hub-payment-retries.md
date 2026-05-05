@@ -1,8 +1,20 @@
 ---
 title: 'Payments Hub: Payment retry recovery dashboard'
+excerpt: >-
+  Track how much initially failed revenue is successfully captured through
+  Recurly’s intelligent retry logic. Analyze your recovery rate and
+  success-by-attempt distribution to determine if your dunning timeline is
+  effectively salvaging revenue at risk.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Payment retry recovery
+    - revenue at risk
+    - dunning recovery rate
+    - intelligent retry logic
+    - success by attempt
+    - failed payment collection.
   robots: index
 ---
 <HTMLBlock>{`
