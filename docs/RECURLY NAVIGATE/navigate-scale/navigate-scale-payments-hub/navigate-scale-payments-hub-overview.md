@@ -6,7 +6,7 @@ excerpt: >-
   distribution. Learn to use interactive filters and distinguish between
   Customer-Initiated (CIT) and Merchant-Initiated (MIT) transaction performance.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   keywords:
     - Payment health summary
