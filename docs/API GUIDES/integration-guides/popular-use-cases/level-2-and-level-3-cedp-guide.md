@@ -24,7 +24,7 @@ This guide shows you how to send Level 2 and Level 3 card data using the [Purcha
 * [Completed the Coupons and discounts guide](https://docs.recurly.com/recurly-subscriptions/docs/coupons-and-discounts-guide)
 * Reviewed best practices for descriptions and naming in our [Line Items guide](https://docs.recurly.com/recurly-subscriptions/docs/line-items)
 * A supported gateway account. Check your individual gateway for L2/3 Support.
-  * [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen) and Stripe have support for Level 3 data.
+  * [Adyen](https://docs.recurly.com/recurly-subscriptions/docs/adyen) and [Stripe](https://docs.recurly.com/recurly-subscriptions/docs/stripe) have support for Level 3 data.
 
 ## Definition
 
