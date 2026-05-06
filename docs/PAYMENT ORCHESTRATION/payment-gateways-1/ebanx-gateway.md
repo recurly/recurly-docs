@@ -147,7 +147,7 @@ Below you will find helpful Integration Guides for payment methods supported on 
 
 * [UPI AutoPay Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/)
 * [Pix Automatico Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#)
-* [Mercado Pago Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide-2)
+* [Mercado Pago Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide)
 
 ## Required Fields
 
