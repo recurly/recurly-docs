@@ -5,8 +5,6 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
-
 # Recommended Webhooks
 
 In the APAC region, all supported payment methods are asynchronous, meaning transactions and invoices will be in a pending/scheduled state for a period of time (usually days) until the customer's bank or gateway integration sends a final status indicator. You can find our dedicated webhooks recommendations using the Best Practices guide below:
