@@ -48,15 +48,19 @@ Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and 
 
 ### Mercado Pago
 
-<br />
+Mercado Pago is supported on Ebanx, and requires the integrator to handling the Recurly.js token and 3DS Action token in their checkout flow for a customer to interact with the pop up modal. Keep in mind, sandbox behavior differs from production. 
+
+Mercado Pago requires usage of our V3 APIs and Recurly.js. See our dedicated Mercado Pago integration guide for details. 
+
+* [Mercado Pago integration guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide)
 
 ### Pix Automatico
 
 Pix Automatico is supported on Ebanx, and requires the integrator to render the returned QR code in their checkout flow for a customer to scan. You may do this in any fashion you like, such as an on-page view. However, sandbox behavior differs from production.
 
-Pix Automatico requires usage of our V3 APIs, and specifying the `type` field with an enum of `pix_automatico`. The initial response to a subscription integration will be a QR code that your system will need to render. Read more on the dedicated integration guide. 
+Pix Automatico requires usage of our V3 APIs, and specifying the `type` field with an enum of `pix_automatico`. The initial response to a subscription integration will be a QR code that your system will need to render. Read more on the dedicated integration guide.
 
-* Pix Automatico Integration guide
+* [Pix Automatico Integration guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide)
 
 ## Boleto
 
