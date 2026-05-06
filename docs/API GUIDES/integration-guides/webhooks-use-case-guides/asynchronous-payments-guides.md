@@ -5,7 +5,25 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
+# Overview
+
+This guide helps you understand which webhooks you need to consume if you are using payment methods that return delayed success and decline responses, thus ensuring a smoother, more transparent integration.
+
+### Prerequisites
+
+* Familiarity with Recurly Webhooks
+* Basic understanding of RESTful APIs and JSON
+* Access to Recurly with valid API credentials
+
+***
+
+# Definition
+
+In the context of webhooks, an**asynchronous payment method** is one where the final status of the transaction (success, declined, or error) is not returned immediately in the direct API response to the payment request. Status update timing will depend largely on the individual payment method, and the consumer's bank. Certain APMs may take hours to update, while others may take days.
+
+**Supported Payment Methods**
+
+* Credit Cards (India-region only), all Direct Debit (ACH, BACS, BECS, SEPA, Revolut) and regional APMs such as Pix Automatico, Mercado Pago, and UPI AutoPay. Depending on the financial instrument of the consumer, AmazonPay, Stripe Link, and PayPal also apply, especially when users have a bank account instead of a card in their PayPal wallet.
 
 ## Suggested Events
 
@@ -19,7 +37,7 @@ Specific to [Payments notifications](https://docs.recurly.com/recurly-subscripti
 * [payment.processing](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#processing-payment-only-for-ach-and-paypal-echeck-payments): Sent on certain gateways for ACH and PayPal eCheck payments.
 * [payment.transaction_status_updated](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#transaction-status-updated): Sent when a purchase has received a status update while previously in a pending state. Query to check the final state, or listen for `succeeded` or `failed` webhooks. It is recommended to query on the transaction.
 * [payment.succeeded ](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/successful-payment): Sent when a Purchase payment is successfully approved following a pending state. This will also apply to status updates for Asynchronous methods.
-* [payment.failed](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/failed-payment): Sent when a payment fails or is declined immediately or after a pending state. 
+* [payment.failed](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/failed-payment): Sent when a payment fails or is declined immediately or after a pending state.
 
 ### Invoice Notifications
 
@@ -29,9 +47,9 @@ Invoices for asynchronous payment methods will start out in a Pending state and 
 
 ### Subscription Notifications
 
-Subscription notifications are sent when an action is taken against a specific subscription within an account. Read more about [subscription-level notifications](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications) in our dedicated documentation. 
+Subscription notifications are sent when an action is taken against a specific subscription within an account. Read more about [subscription-level notifications](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications) in our dedicated documentation.
 
-* [subscription.created ](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#new-subscription): Sent when a new Subscription is created for a customer. 
-* [subscription.renewed](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#renewed-subscription): Sent when an active subscription's renewal invoice is paid successfully. 
+* [subscription.created ](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#new-subscription): Sent when a new Subscription is created for a customer.
+* [subscription.renewed](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#renewed-subscription): Sent when an active subscription's renewal invoice is paid successfully.
 * [subscription.canceled](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#canceled-subscription): Sent when subscription is canceled, and will not renew, but is valid until its next bill date.
-* [subscription.expired](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#expired-subscription): Sent when a subscription is expired, rendering it invalid immediately. 
+* [subscription.expired](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#expired-subscription): Sent when a subscription is expired, rendering it invalid immediately.
