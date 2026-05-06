@@ -6,10 +6,6 @@ hidden: true
 metadata:
   robots: index
 ---
-Title: Mercado Pago integration guide Metadata description: How to create new subscriptions with the Mercado Pago payment method using Recurly's Purchase endpoint.
-
----PASTE INTO EDITOR BELOW---
-
 <HTMLBlock>{`
 <style>
   :root {
@@ -27,9 +23,7 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     --darknavy:   #343F4B;
     --font:       'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   }
-
   *, *::before, *::after { box-sizing: border-box; }
-
   .rp-page {
     font-family: var(--font);
     color: var(--deepchar);
@@ -37,7 +31,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     line-height: 1.6;
     max-width: 860px;
   }
-
   .rp-overview {
     border-left: 4px solid var(--yellow);
     background: var(--offwhite);
@@ -47,7 +40,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     font-size: 15px;
     color: var(--darkgray);
   }
-
   .rp-plan {
     display: inline-block;
     background: var(--offblack);
@@ -59,7 +51,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     margin-bottom: 24px;
     letter-spacing: 0.3px;
   }
-
   .rp-cost {
     border-left: 4px solid var(--tangerine);
     background: #FFF8F2;
@@ -70,7 +61,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     color: var(--darkgray);
   }
   .rp-cost a { color: var(--tangerine); }
-
   .rp-definition {
     background: var(--brightgray);
     border-radius: 10px;
@@ -80,7 +70,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     color: var(--darkgray);
     line-height: 1.7;
   }
-
   .rp-benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -100,7 +89,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     margin-bottom: 6px; color: var(--offwhite);
   }
   .rp-benefit span { font-size: 13px; color: var(--lightgray); line-height: 1.5; }
-
   .rp-h1 {
     font-size: 1.5rem !important; font-weight: 800 !important; color: var(--offblack) !important;
     margin: 36px 0 14px; padding-bottom: 8px;
@@ -109,7 +97,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   .rp-h2 { font-size: 1.1rem !important; font-weight: 700 !important; color: var(--darknavy) !important; margin: 28px 0 10px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h3 { font-size: 0.95rem !important; font-weight: 700 !important; color: var(--darkgray) !important; margin: 20px 0 8px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h4 { font-size: 0.9rem !important; font-weight: 600 !important; color: var(--darkgray) !important; margin: 16px 0 6px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
-
   .rp-card {
     background: var(--offwhite);
     border: 1px solid var(--lightgray);
@@ -120,7 +107,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     color: var(--darkgray);
     line-height: 1.65;
   }
-
   .rp-steps { display: flex; flex-direction: column; margin-bottom: 24px; }
   .rp-step {
     display: flex; gap: 16px; align-items: flex-start;
@@ -132,13 +118,12 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   .rp-steps .rp-step + .rp-step { margin-top: 12px; }
   .rp-step-num {
     width: 34px; height: 34px; border-radius: 50%;
-    background: var(--yellow); color: var(--offblack);
+    background: var(--offblack); color: var(--yellow);
     font-weight: 800; font-size: 14px;
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
   .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
   .rp-step p  { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
-
   .rp-callout {
     border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0;
     font-size: 14px; display: flex; gap: 12px; align-items: flex-start;
@@ -148,7 +133,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   .rp-callout-tip       { border-left: 4px solid var(--yellow);    background: var(--offwhite);   color: var(--darkgray); }
   .rp-callout-warning   { border-left: 4px solid var(--tangerine); background: #FFF8F2;            color: var(--darkgray); }
   .rp-callout-important { border-left: 4px solid var(--vermillion);background: #FFF5F2;            color: var(--darkgray); }
-
   .rp-btn {
     display: inline-block; padding: 10px 22px; border-radius: 8px;
     font-weight: 700 !important; font-size: 14px;
@@ -159,7 +143,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   .rp-btn-primary   { background: var(--offblack) !important; color: var(--yellow)   !important; }
   .rp-btn-secondary { background: var(--yellow)   !important; color: var(--offblack) !important; }
   .rp-btn-ghost     { background: transparent    !important; color: var(--darkgray) !important; border: 1px solid var(--lightgray) !important; }
-
   .rp-gw-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
   .rp-gw-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -173,7 +156,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     font-weight: 600; color: var(--offblack); width: 35%;
   }
   .rp-gw-table a { color: var(--tangerine); }
-
   .rp-pm-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0 24px; }
   .rp-pm-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -184,7 +166,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   .rp-pm-table tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-pm-table td { padding: 10px 12px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-pm-table tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); }
-
   .rp-params { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0 24px; }
   .rp-params tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -195,23 +176,19 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   .rp-params tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-params td { padding: 10px 14px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-params tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); width: 28%; }
-
   .rp-dl-btn {
     display: inline-block; background: var(--yellow) !important; color: var(--offblack) !important;
     font-family: var(--font); font-size: 14px; font-weight: 700 !important;
     padding: 10px 22px; border-radius: 8px; text-decoration: none !important; margin-bottom: 20px;
   }
-
   .rp-list {
     background: var(--offwhite); border: 1px solid var(--lightgray);
     border-radius: 10px; padding: 16px 22px 16px 38px;
     margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7;
   }
-
   .rp-video { position: relative; padding-top: 56.25%; margin-bottom: 28px;
               border-radius: 10px; overflow: hidden; }
   .rp-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
   /* Click-to-expand image lightbox — JavaScript-free, checkbox-driven */
   .rp-zoom { display: contents; }
   .rp-zoom-toggle { position: absolute; opacity: 0; pointer-events: none; }
@@ -238,7 +215,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     opacity: 0.7;
   }
   .rp-zoom-toggle:checked ~ .rp-zoom-overlay { display: flex; }
-
   /* Table of contents navigation pills */
   .rp-toc {
     display: flex; flex-wrap: wrap; gap: 8px;
@@ -264,7 +240,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     font-size: 11px; font-weight: 800; flex-shrink: 0;
     text-decoration: none !important;
   }
-
   /* Clickable heading anchors — click to set URL hash, copy from address bar */
   .rp-anchor {
     color: inherit !important;
@@ -279,7 +254,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     transition: opacity 0.15s;
   }
   .rp-anchor:hover::after { opacity: 1; }
-
   /* Plain ordered/unordered lists — used for sub-steps inside rp-h2 step headings.
      Excludes rp-list which has its own styled padding. */
   .rp-page ol:not(.rp-list), .rp-page ul:not(.rp-list) {
@@ -290,7 +264,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     margin-bottom: 6px;
     line-height: 1.6;
   }
-
   @media (max-width: 640px) {
     .rp-benefits,
     .rp-benefits.rp-benefits-2x2 { grid-template-columns: 1fr; }
@@ -301,9 +274,7 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   <div class="rp-overview">
     This guide walks through creating new subscriptions with Mercado Pago using Recurly's Purchase endpoint. You'll see how to generate a payment request, handle 3DS authentication through Recurly.js, and test the integration against the Ebanx sandbox simulator before going live.
   </div>
-
   <div class="rp-plan">[TODO: Confirm plan availability]</div>
-
   <div class="rp-h3" id="prerequisites"><a class="rp-anchor" href="#prerequisites">Prerequisites</a></div>
   <ul class="rp-list">
     <li>Familiarity with Recurly's API, webhooks, and basic REST concepts</li>
@@ -311,18 +282,15 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
     <li>Familiarity with Recurly.js</li>
     <li>An Ebanx gateway account with Mercado Pago enabled</li>
   </ul>
-
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
     <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
     <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
   </div>
-
   <div class="rp-h1" id="definition"><a class="rp-anchor" href="#definition">Definition</a></div>
   <div class="rp-definition">
     A purchase creates a customer account and subscription together in a single call to Recurly's Purchase endpoint. Bundling all the required resources into one request keeps your checkout flow simple — no multi-step orchestration on your end.
   </div>
-
   <div class="rp-h1" id="key-benefits"><a class="rp-anchor" href="#key-benefits">Key benefits</a></div>
   <div class="rp-benefits">
     <div class="rp-benefit">
@@ -341,9 +309,7 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
       <span>Recurly.js manages the consumer authentication flow with a token-based redirect — no custom modal required.</span>
     </div>
   </div>
-
   <div class="rp-h1" id="key-details"><a class="rp-anchor" href="#key-details">Key details</a></div>
-
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
@@ -353,7 +319,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
       </div>
     </div>
   </div>
-
   <ul class="rp-list">
     <li>Customer account data — code, name, billing info, phone number, and email address</li>
     <li>Subscriptions — with plan codes</li>
@@ -361,7 +326,6 @@ Title: Mercado Pago integration guide Metadata description: How to create new su
   </ul>
 </div>
 `}</HTMLBlock>
-
 ```ruby Ruby
 purchase = {
   currency: "BRL",
@@ -400,7 +364,7 @@ invoice_collection = @client.create_purchase(body: purchase)
 ```csharp C#
 // TODO: Add C# example
 ```
-
+ 
 <HTMLBlock>{`
 <style>
   :root {
@@ -418,9 +382,7 @@ invoice_collection = @client.create_purchase(body: purchase)
     --darknavy:   #343F4B;
     --font:       'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   }
-
   *, *::before, *::after { box-sizing: border-box; }
-
   .rp-page {
     font-family: var(--font);
     color: var(--deepchar);
@@ -428,7 +390,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     line-height: 1.6;
     max-width: 860px;
   }
-
   .rp-overview {
     border-left: 4px solid var(--yellow);
     background: var(--offwhite);
@@ -438,7 +399,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-size: 15px;
     color: var(--darkgray);
   }
-
   .rp-plan {
     display: inline-block;
     background: var(--offblack);
@@ -450,7 +410,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 24px;
     letter-spacing: 0.3px;
   }
-
   .rp-cost {
     border-left: 4px solid var(--tangerine);
     background: #FFF8F2;
@@ -461,7 +420,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
   }
   .rp-cost a { color: var(--tangerine); }
-
   .rp-definition {
     background: var(--brightgray);
     border-radius: 10px;
@@ -471,7 +429,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
     line-height: 1.7;
   }
-
   .rp-benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -491,7 +448,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 6px; color: var(--offwhite);
   }
   .rp-benefit span { font-size: 13px; color: var(--lightgray); line-height: 1.5; }
-
   .rp-h1 {
     font-size: 1.5rem !important; font-weight: 800 !important; color: var(--offblack) !important;
     margin: 36px 0 14px; padding-bottom: 8px;
@@ -500,7 +456,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-h2 { font-size: 1.1rem !important; font-weight: 700 !important; color: var(--darknavy) !important; margin: 28px 0 10px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h3 { font-size: 0.95rem !important; font-weight: 700 !important; color: var(--darkgray) !important; margin: 20px 0 8px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h4 { font-size: 0.9rem !important; font-weight: 600 !important; color: var(--darkgray) !important; margin: 16px 0 6px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
-
   .rp-card {
     background: var(--offwhite);
     border: 1px solid var(--lightgray);
@@ -511,7 +466,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
     line-height: 1.65;
   }
-
   .rp-steps { display: flex; flex-direction: column; margin-bottom: 24px; }
   .rp-step {
     display: flex; gap: 16px; align-items: flex-start;
@@ -523,13 +477,12 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-steps .rp-step + .rp-step { margin-top: 12px; }
   .rp-step-num {
     width: 34px; height: 34px; border-radius: 50%;
-    background: var(--yellow); color: var(--offblack);
+    background: var(--offblack); color: var(--yellow);
     font-weight: 800; font-size: 14px;
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
   .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
   .rp-step p  { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
-
   .rp-callout {
     border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0;
     font-size: 14px; display: flex; gap: 12px; align-items: flex-start;
@@ -539,7 +492,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-callout-tip       { border-left: 4px solid var(--yellow);    background: var(--offwhite);   color: var(--darkgray); }
   .rp-callout-warning   { border-left: 4px solid var(--tangerine); background: #FFF8F2;            color: var(--darkgray); }
   .rp-callout-important { border-left: 4px solid var(--vermillion);background: #FFF5F2;            color: var(--darkgray); }
-
   .rp-btn {
     display: inline-block; padding: 10px 22px; border-radius: 8px;
     font-weight: 700 !important; font-size: 14px;
@@ -550,7 +502,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-btn-primary   { background: var(--offblack) !important; color: var(--yellow)   !important; }
   .rp-btn-secondary { background: var(--yellow)   !important; color: var(--offblack) !important; }
   .rp-btn-ghost     { background: transparent    !important; color: var(--darkgray) !important; border: 1px solid var(--lightgray) !important; }
-
   .rp-gw-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
   .rp-gw-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -564,7 +515,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-weight: 600; color: var(--offblack); width: 35%;
   }
   .rp-gw-table a { color: var(--tangerine); }
-
   .rp-pm-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0 24px; }
   .rp-pm-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -575,7 +525,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-pm-table tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-pm-table td { padding: 10px 12px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-pm-table tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); }
-
   .rp-params { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0 24px; }
   .rp-params tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -586,23 +535,19 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-params tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-params td { padding: 10px 14px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-params tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); width: 28%; }
-
   .rp-dl-btn {
     display: inline-block; background: var(--yellow) !important; color: var(--offblack) !important;
     font-family: var(--font); font-size: 14px; font-weight: 700 !important;
     padding: 10px 22px; border-radius: 8px; text-decoration: none !important; margin-bottom: 20px;
   }
-
   .rp-list {
     background: var(--offwhite); border: 1px solid var(--lightgray);
     border-radius: 10px; padding: 16px 22px 16px 38px;
     margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7;
   }
-
   .rp-video { position: relative; padding-top: 56.25%; margin-bottom: 28px;
               border-radius: 10px; overflow: hidden; }
   .rp-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
   /* Click-to-expand image lightbox — JavaScript-free, checkbox-driven */
   .rp-zoom { display: contents; }
   .rp-zoom-toggle { position: absolute; opacity: 0; pointer-events: none; }
@@ -629,7 +574,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     opacity: 0.7;
   }
   .rp-zoom-toggle:checked ~ .rp-zoom-overlay { display: flex; }
-
   /* Table of contents navigation pills */
   .rp-toc {
     display: flex; flex-wrap: wrap; gap: 8px;
@@ -655,7 +599,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-size: 11px; font-weight: 800; flex-shrink: 0;
     text-decoration: none !important;
   }
-
   /* Clickable heading anchors — click to set URL hash, copy from address bar */
   .rp-anchor {
     color: inherit !important;
@@ -670,7 +613,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     transition: opacity 0.15s;
   }
   .rp-anchor:hover::after { opacity: 1; }
-
   /* Plain ordered/unordered lists — used for sub-steps inside rp-h2 step headings.
      Excludes rp-list which has its own styled padding. */
   .rp-page ol:not(.rp-list), .rp-page ul:not(.rp-list) {
@@ -681,7 +623,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 6px;
     line-height: 1.6;
   }
-
   @media (max-width: 640px) {
     .rp-benefits,
     .rp-benefits.rp-benefits-2x2 { grid-template-columns: 1fr; }
@@ -692,7 +633,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   <div class="rp-callout rp-callout-tip">
     <div><strong>Tip</strong>Many more parameters are available. See the <a href="[TODO: Add Create Purchase reference URL]">Create Purchase reference</a> to learn more.</div>
   </div>
-
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">2</div>
@@ -704,7 +644,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   </div>
 </div>
 `}</HTMLBlock>
-
 ```json
 {
   "error": {
@@ -724,7 +663,7 @@ invoice_collection = @client.create_purchase(body: purchase)
   }
 }
 ```
-
+ 
 <HTMLBlock>{`
 <style>
   :root {
@@ -742,9 +681,7 @@ invoice_collection = @client.create_purchase(body: purchase)
     --darknavy:   #343F4B;
     --font:       'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   }
-
   *, *::before, *::after { box-sizing: border-box; }
-
   .rp-page {
     font-family: var(--font);
     color: var(--deepchar);
@@ -752,7 +689,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     line-height: 1.6;
     max-width: 860px;
   }
-
   .rp-overview {
     border-left: 4px solid var(--yellow);
     background: var(--offwhite);
@@ -762,7 +698,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-size: 15px;
     color: var(--darkgray);
   }
-
   .rp-plan {
     display: inline-block;
     background: var(--offblack);
@@ -774,7 +709,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 24px;
     letter-spacing: 0.3px;
   }
-
   .rp-cost {
     border-left: 4px solid var(--tangerine);
     background: #FFF8F2;
@@ -785,7 +719,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
   }
   .rp-cost a { color: var(--tangerine); }
-
   .rp-definition {
     background: var(--brightgray);
     border-radius: 10px;
@@ -795,7 +728,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
     line-height: 1.7;
   }
-
   .rp-benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -815,7 +747,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 6px; color: var(--offwhite);
   }
   .rp-benefit span { font-size: 13px; color: var(--lightgray); line-height: 1.5; }
-
   .rp-h1 {
     font-size: 1.5rem !important; font-weight: 800 !important; color: var(--offblack) !important;
     margin: 36px 0 14px; padding-bottom: 8px;
@@ -824,7 +755,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-h2 { font-size: 1.1rem !important; font-weight: 700 !important; color: var(--darknavy) !important; margin: 28px 0 10px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h3 { font-size: 0.95rem !important; font-weight: 700 !important; color: var(--darkgray) !important; margin: 20px 0 8px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h4 { font-size: 0.9rem !important; font-weight: 600 !important; color: var(--darkgray) !important; margin: 16px 0 6px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
-
   .rp-card {
     background: var(--offwhite);
     border: 1px solid var(--lightgray);
@@ -835,7 +765,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
     line-height: 1.65;
   }
-
   .rp-steps { display: flex; flex-direction: column; margin-bottom: 24px; }
   .rp-step {
     display: flex; gap: 16px; align-items: flex-start;
@@ -847,13 +776,12 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-steps .rp-step + .rp-step { margin-top: 12px; }
   .rp-step-num {
     width: 34px; height: 34px; border-radius: 50%;
-    background: var(--yellow); color: var(--offblack);
+    background: var(--offblack); color: var(--yellow);
     font-weight: 800; font-size: 14px;
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
   .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
   .rp-step p  { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
-
   .rp-callout {
     border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0;
     font-size: 14px; display: flex; gap: 12px; align-items: flex-start;
@@ -863,7 +791,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-callout-tip       { border-left: 4px solid var(--yellow);    background: var(--offwhite);   color: var(--darkgray); }
   .rp-callout-warning   { border-left: 4px solid var(--tangerine); background: #FFF8F2;            color: var(--darkgray); }
   .rp-callout-important { border-left: 4px solid var(--vermillion);background: #FFF5F2;            color: var(--darkgray); }
-
   .rp-btn {
     display: inline-block; padding: 10px 22px; border-radius: 8px;
     font-weight: 700 !important; font-size: 14px;
@@ -874,7 +801,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-btn-primary   { background: var(--offblack) !important; color: var(--yellow)   !important; }
   .rp-btn-secondary { background: var(--yellow)   !important; color: var(--offblack) !important; }
   .rp-btn-ghost     { background: transparent    !important; color: var(--darkgray) !important; border: 1px solid var(--lightgray) !important; }
-
   .rp-gw-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
   .rp-gw-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -888,7 +814,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-weight: 600; color: var(--offblack); width: 35%;
   }
   .rp-gw-table a { color: var(--tangerine); }
-
   .rp-pm-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0 24px; }
   .rp-pm-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -899,7 +824,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-pm-table tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-pm-table td { padding: 10px 12px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-pm-table tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); }
-
   .rp-params { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0 24px; }
   .rp-params tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -910,23 +834,19 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-params tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-params td { padding: 10px 14px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-params tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); width: 28%; }
-
   .rp-dl-btn {
     display: inline-block; background: var(--yellow) !important; color: var(--offblack) !important;
     font-family: var(--font); font-size: 14px; font-weight: 700 !important;
     padding: 10px 22px; border-radius: 8px; text-decoration: none !important; margin-bottom: 20px;
   }
-
   .rp-list {
     background: var(--offwhite); border: 1px solid var(--lightgray);
     border-radius: 10px; padding: 16px 22px 16px 38px;
     margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7;
   }
-
   .rp-video { position: relative; padding-top: 56.25%; margin-bottom: 28px;
               border-radius: 10px; overflow: hidden; }
   .rp-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
   /* Click-to-expand image lightbox — JavaScript-free, checkbox-driven */
   .rp-zoom { display: contents; }
   .rp-zoom-toggle { position: absolute; opacity: 0; pointer-events: none; }
@@ -953,7 +873,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     opacity: 0.7;
   }
   .rp-zoom-toggle:checked ~ .rp-zoom-overlay { display: flex; }
-
   /* Table of contents navigation pills */
   .rp-toc {
     display: flex; flex-wrap: wrap; gap: 8px;
@@ -979,7 +898,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-size: 11px; font-weight: 800; flex-shrink: 0;
     text-decoration: none !important;
   }
-
   /* Clickable heading anchors — click to set URL hash, copy from address bar */
   .rp-anchor {
     color: inherit !important;
@@ -994,7 +912,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     transition: opacity 0.15s;
   }
   .rp-anchor:hover::after { opacity: 1; }
-
   /* Plain ordered/unordered lists — used for sub-steps inside rp-h2 step headings.
      Excludes rp-list which has its own styled padding. */
   .rp-page ol:not(.rp-list), .rp-page ul:not(.rp-list) {
@@ -1005,7 +922,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 6px;
     line-height: 1.6;
   }
-
   @media (max-width: 640px) {
     .rp-benefits,
     .rp-benefits.rp-benefits-2x2 { grid-template-columns: 1fr; }
@@ -1014,11 +930,9 @@ invoice_collection = @client.create_purchase(body: purchase)
 </style>
 <div class="rp-page">
   <p>Mercado Pago requires consumer authentication, so you'll use Recurly.js to let consumers authenticate their identity and authorize payments in their mobile apps. Use the <code>three_d_secure_action_token_id</code> value to render the authentication modal.</p>
-
   <div class="rp-callout rp-callout-note">
     <div><strong>Note</strong>This initial call returns different behavior in production than in sandbox — see the sandbox callout in Step 3.</div>
   </div>
-
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">3</div>
@@ -1028,13 +942,11 @@ invoice_collection = @client.create_purchase(body: purchase)
       </div>
     </div>
   </div>
-
   <a class="rp-btn rp-btn-primary" href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew" target="_blank">Open 3DS Redirect Guide →</a>
-
+ 
   <div class="rp-callout rp-callout-note">
     <div><strong>Sandbox behavior</strong>In sandbox, the modal displays the Ebanx-specific sandbox UI. You'll need to manually press buttons to simulate enrollments — accepted, denied, or declined responses are all available.</div>
   </div>
-
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">4</div>
@@ -1044,11 +956,9 @@ invoice_collection = @client.create_purchase(body: purchase)
       </div>
     </div>
   </div>
-
   <p>Your JSON payload may look like this:</p>
 </div>
 `}</HTMLBlock>
-
 ```json
 {
   "subscriptions": [
@@ -1077,7 +987,7 @@ invoice_collection = @client.create_purchase(body: purchase)
   "currency": "BRL"
 }
 ```
-
+ 
 <HTMLBlock>{`
 <style>
   :root {
@@ -1095,9 +1005,7 @@ invoice_collection = @client.create_purchase(body: purchase)
     --darknavy:   #343F4B;
     --font:       'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   }
-
   *, *::before, *::after { box-sizing: border-box; }
-
   .rp-page {
     font-family: var(--font);
     color: var(--deepchar);
@@ -1105,7 +1013,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     line-height: 1.6;
     max-width: 860px;
   }
-
   .rp-overview {
     border-left: 4px solid var(--yellow);
     background: var(--offwhite);
@@ -1115,7 +1022,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-size: 15px;
     color: var(--darkgray);
   }
-
   .rp-plan {
     display: inline-block;
     background: var(--offblack);
@@ -1127,7 +1033,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 24px;
     letter-spacing: 0.3px;
   }
-
   .rp-cost {
     border-left: 4px solid var(--tangerine);
     background: #FFF8F2;
@@ -1138,7 +1043,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
   }
   .rp-cost a { color: var(--tangerine); }
-
   .rp-definition {
     background: var(--brightgray);
     border-radius: 10px;
@@ -1148,7 +1052,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
     line-height: 1.7;
   }
-
   .rp-benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -1168,7 +1071,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 6px; color: var(--offwhite);
   }
   .rp-benefit span { font-size: 13px; color: var(--lightgray); line-height: 1.5; }
-
   .rp-h1 {
     font-size: 1.5rem !important; font-weight: 800 !important; color: var(--offblack) !important;
     margin: 36px 0 14px; padding-bottom: 8px;
@@ -1177,7 +1079,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-h2 { font-size: 1.1rem !important; font-weight: 700 !important; color: var(--darknavy) !important; margin: 28px 0 10px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h3 { font-size: 0.95rem !important; font-weight: 700 !important; color: var(--darkgray) !important; margin: 20px 0 8px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
   .rp-h4 { font-size: 0.9rem !important; font-weight: 600 !important; color: var(--darkgray) !important; margin: 16px 0 6px; border-bottom: 0 !important; padding-bottom: 0 !important; text-decoration: none !important; }
-
   .rp-card {
     background: var(--offwhite);
     border: 1px solid var(--lightgray);
@@ -1188,7 +1089,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     color: var(--darkgray);
     line-height: 1.65;
   }
-
   .rp-steps { display: flex; flex-direction: column; margin-bottom: 24px; }
   .rp-step {
     display: flex; gap: 16px; align-items: flex-start;
@@ -1200,13 +1100,12 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-steps .rp-step + .rp-step { margin-top: 12px; }
   .rp-step-num {
     width: 34px; height: 34px; border-radius: 50%;
-    background: var(--yellow); color: var(--offblack);
+    background: var(--offblack); color: var(--yellow);
     font-weight: 800; font-size: 14px;
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
   .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
   .rp-step p  { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
-
   .rp-callout {
     border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0;
     font-size: 14px; display: flex; gap: 12px; align-items: flex-start;
@@ -1216,7 +1115,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-callout-tip       { border-left: 4px solid var(--yellow);    background: var(--offwhite);   color: var(--darkgray); }
   .rp-callout-warning   { border-left: 4px solid var(--tangerine); background: #FFF8F2;            color: var(--darkgray); }
   .rp-callout-important { border-left: 4px solid var(--vermillion);background: #FFF5F2;            color: var(--darkgray); }
-
   .rp-btn {
     display: inline-block; padding: 10px 22px; border-radius: 8px;
     font-weight: 700 !important; font-size: 14px;
@@ -1227,7 +1125,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-btn-primary   { background: var(--offblack) !important; color: var(--yellow)   !important; }
   .rp-btn-secondary { background: var(--yellow)   !important; color: var(--offblack) !important; }
   .rp-btn-ghost     { background: transparent    !important; color: var(--darkgray) !important; border: 1px solid var(--lightgray) !important; }
-
   .rp-gw-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
   .rp-gw-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -1241,7 +1138,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-weight: 600; color: var(--offblack); width: 35%;
   }
   .rp-gw-table a { color: var(--tangerine); }
-
   .rp-pm-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0 24px; }
   .rp-pm-table tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -1252,7 +1148,6 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-pm-table tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-pm-table td { padding: 10px 12px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-pm-table tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); }
-
   .rp-params { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0 24px; }
   .rp-params tr.rp-thead-row td {
     background: var(--offblack) !important;
@@ -1263,23 +1158,19 @@ invoice_collection = @client.create_purchase(body: purchase)
   .rp-params tr.rp-thead-row td:first-child { color: var(--offwhite) !important; }
   .rp-params td { padding: 10px 14px; border-bottom: 1px solid var(--lightgray); vertical-align: top; background: var(--offwhite) !important; }
   .rp-params tr:not(.rp-thead-row) td:first-child { font-weight: 600; color: var(--offblack); width: 28%; }
-
   .rp-dl-btn {
     display: inline-block; background: var(--yellow) !important; color: var(--offblack) !important;
     font-family: var(--font); font-size: 14px; font-weight: 700 !important;
     padding: 10px 22px; border-radius: 8px; text-decoration: none !important; margin-bottom: 20px;
   }
-
   .rp-list {
     background: var(--offwhite); border: 1px solid var(--lightgray);
     border-radius: 10px; padding: 16px 22px 16px 38px;
     margin-bottom: 20px; font-size: 14px; color: var(--darkgray); line-height: 1.7;
   }
-
   .rp-video { position: relative; padding-top: 56.25%; margin-bottom: 28px;
               border-radius: 10px; overflow: hidden; }
   .rp-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
   /* Click-to-expand image lightbox — JavaScript-free, checkbox-driven */
   .rp-zoom { display: contents; }
   .rp-zoom-toggle { position: absolute; opacity: 0; pointer-events: none; }
@@ -1306,7 +1197,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     opacity: 0.7;
   }
   .rp-zoom-toggle:checked ~ .rp-zoom-overlay { display: flex; }
-
   /* Table of contents navigation pills */
   .rp-toc {
     display: flex; flex-wrap: wrap; gap: 8px;
@@ -1332,7 +1222,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     font-size: 11px; font-weight: 800; flex-shrink: 0;
     text-decoration: none !important;
   }
-
   /* Clickable heading anchors — click to set URL hash, copy from address bar */
   .rp-anchor {
     color: inherit !important;
@@ -1347,7 +1236,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     transition: opacity 0.15s;
   }
   .rp-anchor:hover::after { opacity: 1; }
-
   /* Plain ordered/unordered lists — used for sub-steps inside rp-h2 step headings.
      Excludes rp-list which has its own styled padding. */
   .rp-page ol:not(.rp-list), .rp-page ul:not(.rp-list) {
@@ -1358,7 +1246,6 @@ invoice_collection = @client.create_purchase(body: purchase)
     margin-bottom: 6px;
     line-height: 1.6;
   }
-
   @media (max-width: 640px) {
     .rp-benefits,
     .rp-benefits.rp-benefits-2x2 { grid-template-columns: 1fr; }
@@ -1382,68 +1269,10 @@ invoice_collection = @client.create_purchase(body: purchase)
       </div>
     </div>
   </div>
-
   <div class="rp-card">
     <div class="rp-h3" id="next-steps"><a class="rp-anchor" href="#next-steps">Next steps</a></div>
     <p>Now that you can create new subscriptions with Mercado Pago, explore the Mercado Pago payment method guide for other use cases and limitations.</p>
     <a class="rp-btn rp-btn-primary" href="[TODO: Add Mercado Pago payment method guide URL]" target="_blank">Open payment method guide →</a>
-  </div>
-</div>
-`}</HTMLBlock>
-
-***
-
-📋 TODO before publishing:
-
-* [ ] Confirm Recurly plan availability and update the plan pill text
-* [ ] Add the Create Purchase API reference URL (used in the Step 2 tip callout)
-* [ ] Add the Mercado Pago payment method guide URL (used in the closing Next steps card)
-* [ ] Verify the 3DS Redirect Guide URL fragment — `#/step-3-process-the-responsew` may have a typo (`responsew` → `response`?)
-* [ ] Replace the JavaScript, Python, Java, and C# code in Step 1 — currently TODO placeholders inside ReadMe's auto-tabbed fence syntax
-* [ ] Confirm the renumbered steps — source had two "Step 4" headings. The second one ("Verify and finish") was renumbered to Step 5, and the original "Step 5: Listen for webhooks" became Step 6.
-* [ ] Confirm the inferred Key benefits — source had no explicit benefits list. The three drafted benefits (Single API call / Brazilian market reach / Built-in 3DS handling) were inferred from the surrounding content.
-* [ ] Confirm the metadata description copy.
-
-<br />
-
-<HTMLBlock>{`
-<style>
-  :root {
-    --yellow: #FFD706;
-    --offblack: #0D0D0B;
-    --offwhite: #FFFDF2;
-    --lightgray: #CCC9B8;
-    --gray: #807D73;
-    --deepchar: #232932;
-    --font: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
-  }
-  .rp-page { font-family: var(--font); color: var(--deepchar); font-size: 15px; line-height: 1.6; max-width: 860px; }
-  .rp-steps { display: flex; flex-direction: column; margin-bottom: 24px; }
-  .rp-step {
-    display: flex; gap: 16px; align-items: flex-start;
-    background: var(--offwhite); border: 1px solid var(--lightgray);
-    border-radius: 10px; padding: 18px 22px;
-    margin-bottom: 12px;
-  }
-  .rp-step-num {
-    width: 34px; height: 34px; border-radius: 50%;
-    background: var(--offblack); color: var(--yellow);
-    font-weight: 800; font-size: 14px;
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-  }
-  .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
-  .rp-step p  { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
-</style>
-<div class="rp-page">
-  <div class="rp-steps">
-    <div class="rp-step">
-      <div class="rp-step-num">1</div>
-      <div><h4>First dummy step</h4><p>Placeholder text so you can see how the black circle and yellow numeral read against the offwhite card.</p></div>
-    </div>
-    <div class="rp-step">
-      <div class="rp-step-num">2</div>
-      <div><h4>Second dummy step</h4><p>Another placeholder so you can compare two cards stacked together.</p></div>
-    </div>
   </div>
 </div>
 `}</HTMLBlock>
