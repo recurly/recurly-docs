@@ -345,8 +345,16 @@ Metadata description: How to create new subscriptions with the Mercado Pago paym
 
   <div class="rp-h1" id="key-details"><a class="rp-anchor" href="#key-details">Key details</a></div>
 
-  <div class="rp-h2" id="step-1-generate-a-mercado-pago-payment-request"><a class="rp-anchor" href="#step-1-generate-a-mercado-pago-payment-request">Step 1: Generate a Mercado Pago payment request</a></div>
-  <p>Use a supported client library or set the payment type field in your front-end code. To specify Mercado Pago, set the <code>type</code> enum to <code>mercadopago</code> and pass the required fields. Send the request to the <code>create_purchase</code> method on Recurly's API, including:</p>
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">1</div>
+      <div>
+        <h4>Generate a Mercado Pago payment request</h4>
+        <p>Use a supported client library or set the payment type field in your front-end code. To specify Mercado Pago, set the <code>type</code> enum to <code>mercadopago</code> and pass the required fields. Send the request to the <code>create_purchase</code> method on Recurly's API, including:</p>
+      </div>
+    </div>
+  </div>
+
   <ul class="rp-list">
     <li>Customer account data — code, name, billing info, phone number, and email address</li>
     <li>Subscriptions — with plan codes</li>
@@ -686,8 +694,15 @@ invoice_collection = @client.create_purchase(body: purchase)
     <div><strong>Tip</strong>Many more parameters are available. See the <a href="[TODO: Add Create Purchase reference URL]">Create Purchase reference</a> to learn more.</div>
   </div>
 
-  <div class="rp-h2" id="step-2-obtain-the-token-from-the-response"><a class="rp-anchor" href="#step-2-obtain-the-token-from-the-response">Step 2: Obtain the token from the response</a></div>
-  <p>Submitting your API request returns a response like this:</p>
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">2</div>
+      <div>
+        <h4>Obtain the token from the response</h4>
+        <p>Submitting your API request returns a response that includes a <code>three_d_secure_action_token_id</code> you'll use in the next step. The response looks like this:</p>
+      </div>
+    </div>
+  </div>
 </div>
 `}</HTMLBlock>
 
@@ -1005,16 +1020,32 @@ invoice_collection = @client.create_purchase(body: purchase)
     <div><strong>Note</strong>This initial call returns different behavior in production than in sandbox — see the sandbox callout in Step 3.</div>
   </div>
 
-  <div class="rp-h2" id="step-3-interact-with-recurlyjs"><a class="rp-anchor" href="#step-3-interact-with-recurlyjs">Step 3: Interact with Recurly.js</a></div>
-  <p>Follow the 3DS Redirect Guide, starting at Step 3.</p>
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">3</div>
+      <div>
+        <h4>Interact with Recurly.js</h4>
+        <p>Follow the 3DS Redirect Guide, starting at Step 3, to render the modal and capture the result token.</p>
+      </div>
+    </div>
+  </div>
+
   <a class="rp-btn rp-btn-primary" href="https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew" target="_blank">Open 3DS Redirect Guide →</a>
 
   <div class="rp-callout rp-callout-note">
     <div><strong>Sandbox behavior</strong>In sandbox, the modal displays the Ebanx-specific sandbox UI. You'll need to manually press buttons to simulate enrollments — accepted, denied, or declined responses are all available.</div>
   </div>
 
-  <div class="rp-h2" id="step-4-submit-a-new-purchase-request"><a class="rp-anchor" href="#step-4-submit-a-new-purchase-request">Step 4: Submit a new Purchase request</a></div>
-  <p>Once the user has interacted with the modal, you'll have a <code>three_d_secure_action_result_token_id</code> from Recurly.js. Resubmit your original request with this token to finalize authentication. The account and billing info must match the original request — changing these details will cause a token mismatch error.</p>
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">4</div>
+      <div>
+        <h4>Submit a new Purchase request</h4>
+        <p>Once the user has interacted with the modal, you'll have a <code>three_d_secure_action_result_token_id</code> from Recurly.js. Resubmit your original request with this token to finalize authentication. The account and billing info must match the original request — changing these details will cause a token mismatch error.</p>
+      </div>
+    </div>
+  </div>
+
   <p>Your JSON payload may look like this:</p>
 </div>
 `}</HTMLBlock>
@@ -1336,11 +1367,22 @@ invoice_collection = @client.create_purchase(body: purchase)
   }
 </style>
 <div class="rp-page">
-  <div class="rp-h2" id="step-5-verify-and-finish"><a class="rp-anchor" href="#step-5-verify-and-finish">Step 5: Verify and finish</a></div>
-  <p>After a successful purchase, confirm the details via the Recurly Admin UI or by calling Recurly's API to list the new account, subscription, or invoice.</p>
-
-  <div class="rp-h2" id="step-6-listen-for-webhooks"><a class="rp-anchor" href="#step-6-listen-for-webhooks">Step 6: Listen for webhooks</a></div>
-  <p>After a successful signup, listen to the relevant webhooks so you can grant feature access in your environment — and revoke access if a consumer cancels their subscription from within their mobile banking application.</p>
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">5</div>
+      <div>
+        <h4>Verify and finish</h4>
+        <p>After a successful purchase, confirm the details via the Recurly Admin UI or by calling Recurly's API to list the new account, subscription, or invoice.</p>
+      </div>
+    </div>
+    <div class="rp-step">
+      <div class="rp-step-num">6</div>
+      <div>
+        <h4>Listen for webhooks</h4>
+        <p>After signup, listen to the relevant webhooks so you can grant feature access in your environment — and revoke access if a consumer cancels their subscription from within their mobile banking application.</p>
+      </div>
+    </div>
+  </div>
 
   <div class="rp-card">
     <div class="rp-h3" id="next-steps"><a class="rp-anchor" href="#next-steps">Next steps</a></div>
@@ -1353,7 +1395,7 @@ invoice_collection = @client.create_purchase(body: purchase)
 ---
 📋 TODO before publishing:
 - [ ] Confirm Recurly plan availability and update the plan pill text
-- [ ] Add the Create Purchase API reference URL (used in the Step 1 tip callout)
+- [ ] Add the Create Purchase API reference URL (used in the Step 2 tip callout)
 - [ ] Add the Mercado Pago payment method guide URL (used in the closing Next steps card)
 - [ ] Verify the 3DS Redirect Guide URL fragment — `#/step-3-process-the-responsew` may have a typo (`responsew` → `response`?)
 - [ ] Replace the JavaScript, Python, Java, and C# code in Step 1 — currently TODO placeholders inside ReadMe's auto-tabbed fence syntax
