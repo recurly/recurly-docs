@@ -82,6 +82,10 @@ Mercado Pago will require you always send certain data:
 
 * [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway)
 
+#### **Q: I am trying to make a line item purchase with this payment method. Why isn't it working?**
+
+**A**: Mercado Pago is specifically built to support Recurring subscriptions via Mercado Pago Connect. This version of the payment method does not support one time transactions or force collection actions.
+
 #### **Q: How can I integrate my checkout solution to use Mercado Pago?**
 
 **A**: Mercado Pago is supported through Recurly.js and our V3 APIs. You can find links to our API guide and Recurly.js guides below:
