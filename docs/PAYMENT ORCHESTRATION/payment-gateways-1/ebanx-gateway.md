@@ -115,8 +115,7 @@ Ensure you are enabling the correct currencies per payment method.
 2. Make sure your **Production Credentials** are entered in Recurly and your Ebanx account is in **Production mode**.
 3. Make sure you have Ebanx production webhooks enabled prior to launch. See configuration steps below.
 
-> **Pro Tip:** Keep your Ebanx credentials secure. Only authorized personnel should have access.
-> **Note:** Always consult with your Ebanx representative or Ebanx support to ensure your account is in good standing and you’re meeting all relevant regulations.
+> **Pro Tip:** Keep your Ebanx credentials secure. Only authorized personnel should have access. **Note:** Always consult with your Ebanx representative or Ebanx support to ensure your account is in good standing and you’re meeting all relevant regulations.
 
 <br />
 
@@ -148,7 +147,7 @@ Below you will find helpful Integration Guides for payment methods supported on 
 
 * [UPI AutoPay Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/upi-autopay-integration-guide#/)
 * [Pix Automatico Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/pix-automatico-integration-guide#)
-* [Mercado Pago Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide#/)
+* [Mercado Pago Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide-2)
 
 ## Required Fields
 
