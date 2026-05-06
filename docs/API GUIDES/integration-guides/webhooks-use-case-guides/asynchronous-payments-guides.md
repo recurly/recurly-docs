@@ -16,21 +16,22 @@ Please note, this list is not exhaustive, please review the entire list of event
 Specific to [Payments notifications](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/), you will want to listen for the following events. See the events list for all Payments event notifications and their descriptions.
 
 * [payment.scheduled ](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#scheduled-payment-for-asynchronous-payment-methods): Sent when a Purchase payment is successfully submitted but the final status is pending a final status update.
+* [payment.processing](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#processing-payment-only-for-ach-and-paypal-echeck-payments): Sent on certain gateways for ACH and PayPal eCheck payments.
 * [payment.transaction_status_updated](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#transaction-status-updated): Sent when a purchase has received a status update while previously in a pending state. Query to check the final state, or listen for `succeeded` or `failed` webhooks. It is recommended to query on the transaction.
 * [payment.succeeded ](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/successful-payment): Sent when a Purchase payment is successfully approved following a pending state. This will also apply to status updates for Asynchronous methods.
 * [payment.failed](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/failed-payment): Sent when a payment fails or is declined immediately or after a pending state. 
 
 ### Invoice Notifications
 
-Invoices for synchronous payment methods will immediately move to a Paid or Past Due state in most cases. They are also automatically created on all transactions except for verifications. You can read about all events on the dedicated [Invoice notifications documentation](https://docs.recurly.com/recurly-subscriptions/docs/invoice-notifications).
+Invoices for asynchronous payment methods will start out in a Pending state and then move to a Paid or Past Due state in most cases. They are also automatically created on all transactions except for verifications. You can read about all events on the dedicated [Invoice notifications documentation](https://docs.recurly.com/recurly-subscriptions/docs/invoice-notifications).
 
 * [invoice.created ](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/successful-payment): Sent when a new invoice is generated. This will also apply to Asynchronous methods. As with all webhooks, you'll want to query on the relevant invoice id to see the status of the payment.
 
 ### Subscription Notifications
 
-Subscription notifications are sent when an action is taken against a specific subscription within an account. Read more about [subscription-level notifications](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications) in our dedicated documentation.
+Subscription notifications are sent when an action is taken against a specific subscription within an account. Read more about [subscription-level notifications](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications) in our dedicated documentation. 
 
-* [subscription.created ](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#new-subscription): Sent when a new Subscription is created for a customer. This will also apply to Asynchronous methods.
-* [subscription.renewed](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#renewed-subscription): Sent when an active subscription's renewal invoice is paid successfully. This will also apply to Asynchronous methods.
-* [subscription.canceled](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#canceled-subscription): Sent when subscription is canceled, and will not renew, but is valid until its next bill date. This will also apply to Asynchronous methods.
-* [subscription.expired](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#expired-subscription): Sent when a subscription is expired, rendering it invalid immediately. This state also applies to Asynchronous payment methods.
+* [subscription.created ](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#new-subscription): Sent when a new Subscription is created for a customer. 
+* [subscription.renewed](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#renewed-subscription): Sent when an active subscription's renewal invoice is paid successfully. 
+* [subscription.canceled](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#canceled-subscription): Sent when subscription is canceled, and will not renew, but is valid until its next bill date.
+* [subscription.expired](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#expired-subscription): Sent when a subscription is expired, rendering it invalid immediately. 
