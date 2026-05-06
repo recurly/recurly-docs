@@ -7,14 +7,13 @@ metadata:
   description: Learn about our Recurly.js solution
   robots: index
 ---
-<Image border={false} src="https://recurly.com/developers/images/recurly-js-logo.png" />
+![](https://recurly.com/developers/images/recurly-js-logo.png)
 
 ***
 
 ### Customize your checkout process and accept payments securely
 
-Securely accept sensitive payment details within your checkout process with a fully customizable user experience.
-The Recurly.js JavaScript library secures your checkout forms, allowing you to create subscriptions, process one-time transactions, and update customer billing information worry-free.
+Securely accept sensitive payment details within your checkout process with a fully customizable user experience. The Recurly.js JavaScript library secures your checkout forms, allowing you to create subscriptions, process one-time transactions, and update customer billing information worry-free.
 
 ### PCI Compliance with Recurly.js elements
 
@@ -25,6 +24,8 @@ Recurly.js provides Elements that inject transparent iframes, enabling you to de
 When a customer submits your payment form, Recurly.js immediately encrypts and securely stores their payment information on our servers. It then returns an authorization key—commonly known as a _token_—that you use to complete the subscription process through our API.
 
 With this token, you can perform any API operation that requires payment details. Because you never directly handle sensitive payment information, your PCI compliance scope is significantly reduced.
+
+***
 
 ### Open source
 

@@ -19,6 +19,8 @@ metadata:
 
 This feature or setting is available to all customers on Professional or Elite subscription plans. To upgrade to this plan, reach out to your Recurly Account Manager or [create a ticket](https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852).
 
+***
+
 ### Prerequisites & limitations
 
 To request access to Recurly’s Shopify App, reach out to your Recurly Account Manager or <a href="https://support.recurly.com/hc/en-us/requests/new?ticket_form_id=360000302852" target="_blank" rel="noopener noreferrer">create a ticket</a>. Our team will set up your account and guide you through the onboarding process.
