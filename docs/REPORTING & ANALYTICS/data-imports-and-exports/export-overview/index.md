@@ -28,9 +28,7 @@ next:
 
 * See [Automated Exports](https://docs.recurly.com/recurly-subscriptions/docs/automated-exports)  for more information about access via the Recurly API.
 
-<br />
-
-* <HTMLBlock>{`
+<HTMLBlock>{`
   <!DOCTYPE html>
   <html lang="en">
   <head>
