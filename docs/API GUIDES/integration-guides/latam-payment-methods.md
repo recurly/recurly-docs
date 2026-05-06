@@ -77,7 +77,7 @@ You can follow specific instructions available in our Adyen documentation below:
 
 # Recommended Webhooks
 
-In the LATAM region, some payment methods are synchronous and some are Asynchronous. You can find our dedicated webhooks recommendations using the Best Practices guide below:
+In the LATAM region, some payment methods are synchronous and some are asynchronous. You can find our dedicated webhooks recommendations using the Best Practices guide below:
 
 It is recommended to listen for all webhooks given that some payment methods are asynchronous (they update hours or days later with an official status), and some are synchronous (the payment status is known immediately).
 
