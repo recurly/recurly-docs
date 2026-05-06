@@ -1,5 +1,6 @@
 ---
 title: Mercado Pago integration guide
+excerpt: Create subscriptions via Purchase API using Mercado Pago with Ebanx.
 deprecated: false
 hidden: false
 metadata:
