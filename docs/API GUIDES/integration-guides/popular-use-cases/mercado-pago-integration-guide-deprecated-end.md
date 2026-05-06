@@ -4,7 +4,7 @@ excerpt: >-
   Create subscriptions via Purchase API with Mercado Pago, Recurly.js, and Ebanx
   sandbox flow.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
