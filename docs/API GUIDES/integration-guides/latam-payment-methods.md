@@ -54,7 +54,9 @@ Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and 
 
 Pix Automatico is supported on Ebanx, and requires the integrator to render the returned QR code in their checkout flow for a customer to scan. You may do this in any fashion you like, such as an on-page view. However, sandbox behavior differs from production.
 
-Pix Automatico requires usage of our V3 APIs, and specifying the `type` field with an enum of `pix_automatico`. The initial response to a subscription integration
+Pix Automatico requires usage of our V3 APIs, and specifying the `type` field with an enum of `pix_automatico`. The initial response to a subscription integration will be a QR code that your system will need to render. Read more on the dedicated integration guide. 
+
+* Pix Automatico Integration guide
 
 ## Boleto
 
