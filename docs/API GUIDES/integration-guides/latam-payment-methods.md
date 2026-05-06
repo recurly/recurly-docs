@@ -44,7 +44,7 @@ Certain LATAM regions also require 3D Secure when processing with cards. Ensure 
 
 ## Wallets
 
-Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and Pix Automatico.
+Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and Pix Automatico. Certain wallets also require Tax ID collection, like credit cards (see params above), in addition to customer address, name, email information.
 
 ### Mercado Pago
 
