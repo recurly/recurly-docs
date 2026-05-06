@@ -19,7 +19,6 @@ Specific to [Payments notifications](https://docs.recurly.com/recurly-subscripti
 * [payment.transaction_status_updated](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#transaction-status-updated): Sent when a purchase has received a status update while previously in a pending state. Query to check the final state, or listen for `succeeded` or `failed` webhooks. It is recommended to query on the transaction.
 * [payment.succeeded ](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/successful-payment): Sent when a Purchase payment is successfully approved following a pending state. This will also apply to status updates for Asynchronous methods.
 * [payment.failed](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/failed-payment): Sent when a payment fails or is declined immediately or after a pending state. 
-* [payment.authorized](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/transaction-authorized): Sent when using separate Auth and Capture, when the Authorization is successfully approved.
 
 ### Invoice Notifications
 
