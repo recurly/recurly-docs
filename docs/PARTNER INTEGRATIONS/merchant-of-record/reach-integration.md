@@ -24,7 +24,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 # Definition
 
-Reach is a merchant-of-record (MoR) and payment orchestration platform designed to simplify global subscription and SaaS expansion by handling the localization of payments, tax compliance, and fraud management. Through our partnership with Recurly, Reach provides merchants with a turnkey solution to plug in localized payment gateways (e.g., Adyen, PayPal Complete), and tax engines (Avalara) directly into Recurlyʼs subscription flow. By acting as the MoR, Reach assumes liability for compliance, tax remittance, and chargeback risk, while ensuring a seamless, localized checkout experience for end-customers (<a href="https://recurly.com/partner/expand-globally-with-recurly-reach/" target="_blank">recurly.com</a>, <a href="https://www.withreach.com/who-we-help/digital-saas" target="_blank">withreach.com</a>).
+Reach is a merchant-of-record (MoR) and payment orchestration platform designed to simplify global subscription and SaaS expansion by handling the localization of payments, tax compliance, and fraud management. Through our partnership with Recurly, Reach provides merchants with a turnkey solution to plug in localized payment gateways (e.g., Adyen, PayPal Complete), and tax engines (Avalara) directly into Recurlyʼs subscription flow. By acting as the MoR, Reach assumes liability for compliance, tax remittance, and chargeback risk, while ensuring a seamless, localized checkout experience for end-customers (<a href="https://recurly.com/partner/expand-globally-with-recurly-reach/" target="_blank">recurly.com</a>, <Anchor label="withreach.com" target="_blank" href="https://www.withreach.com/solutions/for-digital-saas?utm_source=partner&utm_medium=referral&utm_campaign=partnertechdocs&utm_content=recurly">withreach.com</Anchor>.
 
 # Key benefits
 
@@ -77,7 +77,7 @@ Once you have your Reach-provided credentials, follow these steps within the Rec
 
    * Confirm that any test chargeback flows (e.g., a disputed payment) route through Reach’s dispute process. Reach assumes liability for chargebacks and will handle retrieval requests; these should not flow directly to your legal team unless escalated.
 
-<Callout icon="💡">
+<Callout icon="💡" theme="default">
   **Fraud Management**
 
   Merchants can leverage the fraud prevention Reach provides through its PSP integrations.
