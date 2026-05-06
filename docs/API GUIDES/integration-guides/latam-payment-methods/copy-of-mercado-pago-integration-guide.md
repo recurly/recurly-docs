@@ -20,10 +20,11 @@ metadata:
   }
   .rp-page { font-family: var(--font); color: var(--offblack); font-size: 15px; line-height: 1.6; max-width: 860px; }
 
+  /* Container */
   .rp-code {
-    background: var(--offwhite);
-    color: var(--offblack);
-    border: 1px solid var(--lightgray);
+    background: var(--offblack);
+    color: var(--offwhite);
+    border: 1px solid var(--darkgray);
     border-radius: 10px;
     margin: 16px 0 24px;
     overflow: hidden;
@@ -32,7 +33,7 @@ metadata:
     line-height: 1.55;
   }
 
-  /* Header bar stays dark */
+  /* Header bar — sits on top of the code body */
   .rp-code-header {
     display: flex; align-items: center; justify-content: space-between;
     gap: 12px; flex-wrap: wrap;
@@ -42,12 +43,14 @@ metadata:
     font-family: var(--font);
   }
 
+  /* Language label (used on single snippets) */
   .rp-code-lang {
     color: var(--lightgray);
     font-size: 12px; font-weight: 700;
     text-transform: lowercase; letter-spacing: 0.4px;
   }
 
+  /* Tab list (used on multi-language snippets, replaces the lang label) */
   .rp-code-tablist { display: flex; gap: 4px; flex-wrap: wrap; }
   .rp-code-tab {
     background: transparent; border: 0;
@@ -61,6 +64,7 @@ metadata:
   .rp-code-tab-active,
   .rp-code-tab-active:hover { background: var(--yellow); color: var(--offblack); }
 
+  /* Copy button — ghost style, turns tangerine on hover */
   .rp-code-copy {
     background: transparent;
     border: 1px solid var(--gray);
@@ -75,13 +79,13 @@ metadata:
     color: var(--offblack);
   }
 
-  /* Code body — Recurly white background, dark text */
+  /* Code body — dark background, monospace, scrollable on overflow */
   .rp-code-body {
     margin: 0;
     padding: 16px 18px;
     overflow-x: auto;
     font-family: inherit; font-size: inherit; line-height: inherit;
-    color: var(--offblack); background: var(--offwhite);
+    color: var(--offwhite); background: var(--offblack);
     white-space: pre;
   }
   .rp-code-body code {
@@ -89,11 +93,21 @@ metadata:
     background: transparent; color: inherit; padding: 0;
   }
 
+  /* Show one body for single snippets, only the active body for tabbed snippets */
   .rp-code:not(.rp-code-tabs) .rp-code-body { display: block; }
   .rp-code-tabs .rp-code-body { display: none; }
   .rp-code-tabs .rp-code-body.rp-code-body-active { display: block; }
 </style>
 <script>
+/*
+ * NOTE: scripts don't execute inside ReadMe HTMLBlocks. These helpers are
+ * included as a reference for the intended interaction behavior — devs
+ * should wire equivalent handlers into ReadMe's theme.
+ *
+ *   rpTab(btn, idx)  — switch the active tab + body inside a tabbed snippet
+ *   rpCopy(btn)      — copy the visible code body to the clipboard,
+ *                      with a fallback for older browsers
+ */
 function rpTab(btn, idx) {
   var wrap = btn.closest('.rp-code-tabs');
   if (!wrap) return;
@@ -131,7 +145,7 @@ function rpFlashCopied(btn) {
 </script>
 <div class="rp-page">
 
-  <h3>Single snippet</h3>
+  <h3>Single snippet — language label on the left</h3>
 
   <div class="rp-code">
     <div class="rp-code-header">
@@ -150,7 +164,7 @@ function rpFlashCopied(btn) {
 }</code></pre>
   </div>
 
-  <h3>Tabbed snippet</h3>
+  <h3>Tabbed snippet — multiple languages, active tab in yellow</h3>
 
   <div class="rp-code rp-code-tabs">
     <div class="rp-code-header">
