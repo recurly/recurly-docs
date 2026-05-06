@@ -66,318 +66,50 @@ next:
       <a href="https://files.readme.io/1ad2b7e0c37b5d737bf6bd38c8740318f482cf2ced06df506d105f32233ebc6e-recurly_exports_erd_20241120.svg" class="download-button">Download the Recurly Exports ERD</a>
   </body>
   </html>
-  `}</HTMLBlock>
-  <br />
+`}</HTMLBlock>
 
-<Table align={["left","left"]}>
-  <thead>
-    <tr>
-      <th>
-        Export Name
-      </th>
+<br />
 
-      <th>
-        Export Description
-      </th>
-    </tr>
-  </thead>
+| Export Name                                                                                                   | Export Description                                                                                                                                                                                                           |
+| :------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Account Activities](https://docs.recurly.com/docs/account-activities-export-an)                              | Account activity records.                                                                                                                                                                                                    |
+| [Account Notes](https://docs.recurly.com/docs/account-notes-export)                                           | Account notes that have been created on accounts.                                                                                                                                                                            |
+| [Accounts](https://docs.recurly.com/docs/accounts-export)                                                     | Account-level information.                                                                                                                                                                                                   |
+| [Adjustments](https://docs.recurly.com/docs/adjustments-exports#section-adjustments)                          | Each charge and credit adjustment, including tax information broken down by jurisdiction (country, state/province, county, city, special).                                                                                   |
+| [Adjustments - Coupons](https://docs.recurly.com/docs/adjustments-exports#section-adjustments-coupons)        | Each charge and credit adjustment broken out by discount per coupon redemption. _This export will only show on the Exports page if you have Multiple Coupons Per Account enabled under Coupon Settings._                     |
+| [Adjustments - Taxes](https://docs.recurly.com/docs/adjustments-taxes-export)                                 | The Adjustments - Taxes export is for reporting on taxes calculated through Vertex and Avalara for Communications (AFC).                                                                                                     |
+| [Billing Info](https://docs.recurly.com/docs/billing-info-export)                                             | Billing information associated with accounts.                                                                                                                                                                                |
+| [Coupon Redemptions](https://docs.recurly.com/docs/coupons-export#section-coupon-redemptions)                 | All redemptions of coupons.                                                                                                                                                                                                  |
+| [Coupons](https://docs.recurly.com/docs/coupons-export)                                                       | All coupons that are set-up on the site.                                                                                                                                                                                     |
+| [Coupons - Bulk Unique Codes](https://docs.recurly.com/docs/coupons-export#section-coupons-bulk-unique-codes) | All unique codes for a bulk coupon.                                                                                                                                                                                          |
+| [Credit Payments](https://docs.recurly.com/docs/credit-payments-export)                                       | All credit payments, encompassing the use of outstanding credit balances to pay invoices.                                                                                                                                    |
+| [Gift Cards](https://docs.recurly.com/docs/gift-cards-export)                                                 | All purchased gift cards.                                                                                                                                                                                                    |
+| [Invoices — Accounts Receivable](https://docs.recurly.com/docs/accounts-receivable-export)                    | All customers who have yet to settle their invoices and gives a detailed report on the aging of all unsettled receivables.                                                                                                   |
+| [Invoices — External](https://docs.recurly.com/docs/invoices-external)                                        | All external invoices that are generated for accounts with subscriptions created on third-party platforms such as the Apple App Store or Google Play Store.                                                                  |
+| [Invoices — Summary](https://docs.recurly.com/docs/invoices-summary)                                          | Invoice header information and summary totals.                                                                                                                                                                               |
+| [Invoices - Unused Numbers](https://docs.recurly.com/docs/invoices-exports#section-invoices-unused-numbers)   | All invoice numbers not used for generated invoices.                                                                                                                                                                         |
+| [Items — Associated Plans](doc:items-associated-plans)                                                        | All plan add-ons created from a saved item in your Item Catalog.                                                                                                                                                             |
+| [Items — Associated Subscriptions](doc:items-associated-subscriptions)                                        | All subscription add-ons created from a saved item in your Item Catalog.                                                                                                                                                     |
+| [Product Catalog](https://docs.recurly.com/docs/products-catalog-export)                                      | Comprehensive details of all product offerings, add-ons and items, whether active or inactive.                                                                                                                               |
+| [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export)                     | A Revenue waterfall for your charges on a monthly basis. _This export will only show on the Exports page if the site has the [Revenue Recognition feature](https://docs.recurly.com/v1.0/docs/revenue-recognition) enabled._ |
+| [Site Activities](https://docs.recurly.com/docs/site-activities-export-an)                                    | Site activity records.                                                                                                                                                                                                       |
+| [Subscriptions](https://docs.recurly.com/docs/subscriptions-exports)                                          | Your customers' subscriptions to your plans.                                                                                                                                                                                 |
+| [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)                          | The history of each subscription including all versions created following any change to a subscription.                                                                                                                      |
+| [Subscriptions Add-Ons](https://docs.recurly.com/docs/subscription-add-ons-export)                            | All the detailed information about all the subscription add-ons created within a specific timeframe.                                                                                                                         |
+| [Subscriptions Add-Ons — History](https://docs.recurly.com/docs/subscriptions-add-ons-history-export)         | All the changes made to a subscription add-on over time.                                                                                                                                                                     |
+| [Subscriptions — Churned](https://docs.recurly.com/docs/subscriptions-exports#section-subscriptions-churned)  | Subscriptions that have expired and are no longer active.                                                                                                                                                                    |
+| [Subscriptions — External](https://docs.recurly.com/docs/subscriptions-external)                              | All the detailed information on external subscriptions stored on third-party platforms like the Apple App Store or Google Play Store.                                                                                        |
+| [Subscriptions — Pending Changes](https://docs.recurly.com/docs/subscriptions-pending-changes-export)         | All active subscriptions with a pending change that will be applied at the next renewal. This includes changes to the plan, price, or quantity.                                                                              |
+| [Subscriptions — Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)                | All data on each subscription operating under a ramp priced billing model.                                                                                                                                                   |
+| [Subscriptions — Usage Records](https://docs.recurly.com/docs/usages-records-export)                          | Usage records logged for your customer's usage-based subscription add-ons.                                                                                                                                                   |
+| [Transactions](https://docs.recurly.com/docs/transaction-export)                                              | Data sent to the payment gateway when processing a transaction.                                                                                                                                                              |
+| [Users](https://docs.recurly.com/docs/users-export-an)                                                        | User information for your site.                                                                                                                                                                                              |
 
-  <tbody>
-    <tr>
-      <td>
-        [Account Notes](https://docs.recurly.com/docs/account-notes-export)
-      </td>
+**Deprecated Exports**
 
-      <td>
-        Account notes that have been created on accounts.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Accounts](https://docs.recurly.com/docs/accounts-export)
-      </td>
-
-      <td>
-        Account-level information.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Adjustments](https://docs.recurly.com/docs/adjustments-exports#section-adjustments)
-      </td>
-
-      <td>
-        Each charge and credit adjustment, including tax information broken down by jurisdiction (country, state/province, county, city, special).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Adjustments - Coupons](https://docs.recurly.com/docs/adjustments-exports#section-adjustments-coupons)
-      </td>
-
-      <td>
-        Each charge and credit adjustment broken out by discount per coupon redemption.
-
-        _This export will only show on the Exports page if you have Multiple Coupons Per Account enabled under Coupon Settings._
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Adjustments - Taxes](https://docs.recurly.com/docs/adjustments-taxes-export)
-      </td>
-
-      <td>
-        The Adjustments - Taxes export is for reporting on taxes calculated through Vertex and Avalara for Communications (AFC).
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Billing Info](https://docs.recurly.com/docs/billing-info-export)
-      </td>
-
-      <td>
-        Billing information associated with accounts.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Coupon Redemptions](https://docs.recurly.com/docs/coupons-export#section-coupon-redemptions)
-      </td>
-
-      <td>
-        All redemptions of coupons.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Coupons](https://docs.recurly.com/docs/coupons-export)
-      </td>
-
-      <td>
-        All coupons that are set-up on the site.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Coupons - Bulk Unique Codes](https://docs.recurly.com/docs/coupons-export#section-coupons-bulk-unique-codes)
-      </td>
-
-      <td>
-        All unique codes for a bulk coupon.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Credit Payments](https://docs.recurly.com/docs/credit-payments-export)
-      </td>
-
-      <td>
-        All credit payments, encompassing the use of outstanding credit balances to pay invoices.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Gift Cards](https://docs.recurly.com/docs/gift-cards-export)
-      </td>
-
-      <td>
-        All purchased gift cards.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Invoices — Accounts Receivable](https://docs.recurly.com/docs/accounts-receivable-export)
-      </td>
-
-      <td>
-        All customers who have yet to settle their invoices and gives a detailed report on the aging of all unsettled receivables.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Invoices — External](https://docs.recurly.com/docs/invoices-external)
-      </td>
-
-      <td>
-        All external invoices that are generated for accounts with subscriptions created on third-party platforms such as the Apple App Store or Google Play Store.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Invoices — Summary](https://docs.recurly.com/docs/invoices-summary)
-      </td>
-
-      <td>
-        Invoice header information and summary totals.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Invoices - Unused Numbers](https://docs.recurly.com/docs/invoices-exports#section-invoices-unused-numbers)
-      </td>
-
-      <td>
-        All invoice numbers not used for generated invoices.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Items — Associated Plans](doc:items-associated-plans)
-      </td>
-
-      <td>
-        All plan add-ons created from a saved item in your Item Catalog.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Items — Associated Subscriptions](doc:items-associated-subscriptions)
-      </td>
-
-      <td>
-        All subscription add-ons created from a saved item in your Item Catalog.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Product Catalog](https://docs.recurly.com/docs/products-catalog-export)
-      </td>
-
-      <td>
-        Comprehensive details of all product offerings, add-ons and items, whether active or inactive.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Revenue Recognition Schedules](https://docs.recurly.com/docs/revenue-recognition-export)
-      </td>
-
-      <td>
-        A Revenue waterfall for your charges on a monthly basis.
-
-        _This export will only show on the Exports page if the site has the[Revenue Recognition feature](https://docs.recurly.com/v1.0/docs/revenue-recognition) enabled._
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions](https://docs.recurly.com/docs/subscriptions-exports)
-      </td>
-
-      <td>
-        Your customers' subscriptions to your plans.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions — History](https://docs.recurly.com/docs/subscription-history-export)
-      </td>
-
-      <td>
-        The history of each subscription including all versions created following any change to a subscription.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions Add-Ons](https://docs.recurly.com/docs/subscription-add-ons-export)
-      </td>
-
-      <td>
-        All the detailed information about all the subscription add-ons created within a specific timeframe.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions Add-Ons — History](https://docs.recurly.com/docs/subscriptions-add-ons-history-export)
-      </td>
-
-      <td>
-        All the changes made to a subscription add-on over time.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions — Churned](https://docs.recurly.com/docs/subscriptions-exports#section-subscriptions-churned)
-      </td>
-
-      <td>
-        Subscriptions that have expired and are no longer active.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions — External](https://docs.recurly.com/docs/subscriptions-external)
-      </td>
-
-      <td>
-        All the detailed information on external subscriptions stored on third-party platforms like the Apple App Store or Google Play Store.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions — Pending Changes](https://docs.recurly.com/docs/subscriptions-pending-changes-export)
-      </td>
-
-      <td>
-        All active subscriptions with a pending change that will be applied at the next renewal. This includes changes to the plan, price, or quantity.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions — Ramp Pricing](https://docs.recurly.com/docs/subscription-ramp-pricing-export)
-      </td>
-
-      <td>
-        All data on each subscription operating under a ramp priced billing model.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Subscriptions — Usage Records](https://docs.recurly.com/docs/usages-records-export)
-      </td>
-
-      <td>
-        Usage records logged for your customer's usage-based subscription add-ons.
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        [Transactions](https://docs.recurly.com/docs/transaction-export)
-      </td>
-
-      <td>
-        Data sent to the payment gateway when processing a transaction.
-      </td>
-    </tr>
-  </tbody>
-</Table>
+| Export Name                                                                                          | Export Description                                                                                                                                                                                                                  |
+| :--------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Invoices](https://docs.recurly.com/docs/invoices-exports#section-invoices-deprecated-) (Deprecated) | _Note:_ this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments. Once your site has the Credit Invoices feature enabled, this export will no longer be available. |
 
 **Deprecated Exports**
 
