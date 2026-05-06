@@ -1,7 +1,7 @@
 ---
 title: Synchronous payments webhook guide
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
