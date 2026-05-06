@@ -68,46 +68,6 @@ next:
   </html>
   `}</HTMLBlock>
   <br />
-* <HTMLBlock>{`
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Download Button</title>
-      <style>
-          .download-button {
-              display: inline-block;
-              padding: 5px 10px;
-              text-align: center;
-              text-decoration: none;
-              color: #1C2833FF; 
-              background-color: #F8F8F8FF; 
-              border-radius: 5px;
-              font-weight: normal;
-              transition: background-color 0.5s ease, transform 0.3s ease;
-            	transition: 0.4s !important;
-              font-family: 'Proxima-nova', Arial, sans-serif;
-              max-width: 100%; 
-          }
-
-          .download-button:hover {
-              background-color: #FFFFFFFF; 
-              transform: scale(1.02); 
-          }
-        	a:hover {
-            	color: #888888FF;
-            	text-decoration: underline !important;
-          }
-        </style>
-  </head>
-  <body>
-      <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download the complete Exports schema</a>
-  </body>
-  </html>
-  `}</HTMLBlock>
-  <br />
 
 <Table align={["left","left"]}>
   <thead>
