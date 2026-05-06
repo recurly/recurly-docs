@@ -23,7 +23,7 @@ In the context of webhooks, a **synchronous payment method** is one where the fi
 
 **Supported Payment Methods**
 
-* Credit Cards and Wallets using Credit Cards including: Apple Pay, Google Pay, Amazon Pay, Link Pay, Venmo, PayPal, and Klarna
+* Credit Cards and Wallets using Credit Cards including: Apple Pay, Google Pay, Cash App, Amazon Pay, Link Pay (Cards only), Venmo, PayPal, and Klarna.
 * Instant Payment Methods: iDeal, Klarna Debit Risk (aka Sofort)
 
 ***
@@ -46,13 +46,13 @@ Invoices for synchronous payment methods will immediately move to a Paid or Past
 
 * [invoice.created ](https://docs.recurly.com/recurly-subscriptions/docs/payment-notifications#/successful-payment): Sent when a new invoice is generated. This will also apply to Asynchronous methods. As with all webhooks, you'll want to query on the relevant invoice id to see the status of the payment.
 
-### Subscription Notifications 
+### Subscription Notifications
 
 Subscription notifications are sent when an action is taken against a specific subscription within an account. Read more about [subscription-level notifications](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications) in our dedicated documentation.
 
-* [subscription.created ](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#new-subscription): Sent when a new Subscription is created for a customer. This will also apply to Asynchronous methods. 
+* [subscription.created ](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#new-subscription): Sent when a new Subscription is created for a customer. This will also apply to Asynchronous methods.
 * [subscription.renewed](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#renewed-subscription): Sent when an active subscription's renewal invoice is paid successfully. This will also apply to Asynchronous methods.
-* [subscription.canceled](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#canceled-subscription): Sent when subscription is canceled, and will not renew, but is valid until its next bill date. This will also apply to Asynchronous methods. 
+* [subscription.canceled](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#canceled-subscription): Sent when subscription is canceled, and will not renew, but is valid until its next bill date. This will also apply to Asynchronous methods.
 * [subscription.expired](https://docs.recurly.com/recurly-subscriptions/docs/subscription-notifications#expired-subscription): Sent when a subscription is expired, rendering it invalid immediately. This state also applies to Asynchronous payment methods.
 
 <br />
