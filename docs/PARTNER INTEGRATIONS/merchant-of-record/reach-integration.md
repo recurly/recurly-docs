@@ -24,7 +24,9 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 # Definition
 
-Reach is a merchant-of-record (MoR) and payment orchestration platform designed to simplify global subscription and SaaS expansion by handling the localization of payments, tax compliance, and fraud management. Through our partnership with Recurly, Reach provides merchants with a turnkey solution to plug in localized payment gateways (e.g., Adyen, PayPal Complete), and tax engines (Avalara) directly into Recurlyʼs subscription flow. By acting as the MoR, Reach assumes liability for compliance, tax remittance, and chargeback risk, while ensuring a seamless, localized checkout experience for end-customers (<a href="https://recurly.com/partner/expand-globally-with-recurly-reach/" target="_blank">recurly.com</a>, <Anchor label="withreach.com" target="_blank" href="https://www.withreach.com/solutions/for-digital-saas?utm_source=partner&utm_medium=referral&utm_campaign=partnertechdocs&utm_content=recurly">withreach.com</Anchor>).
+Reach is a merchant of record (MoR) and payment orchestration platform that helps you sell subscriptions in global markets. As the MoR, Reach manages localized payment processing, tax compliance and remittance, fraud management, and chargeback risk.
+
+Through Recurly’s partnership with Reach, you can connect Reach-provided payment gateways, such as Adyen or PayPal Complete, and Avalara tax credentials directly to your Recurly subscription flow. This setup lets you offer a localized checkout experience while Reach handles the merchant-of-record responsibilities (<a href="https://recurly.com/partner/expand-globally-with-recurly-reach/" target="_blank">recurly.com</a>, <Anchor label="withreach.com" target="_blank" href="https://www.withreach.com/solutions/for-digital-saas?utm_source=partner&utm_medium=referral&utm_campaign=partnertechdocs&utm_content=recurly">withreach.com</Anchor>).
 
 # Key benefits
 
