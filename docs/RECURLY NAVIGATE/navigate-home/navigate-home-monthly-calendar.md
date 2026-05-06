@@ -6,7 +6,7 @@ excerpt: >-
   customer success office hours and webinars on our calendar. This page is
   updated each month.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
