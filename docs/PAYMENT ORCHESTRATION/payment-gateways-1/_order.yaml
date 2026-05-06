@@ -1,5 +1,6 @@
 - adyen
 - authorizenet
+- copy-of-authorizenet
 - amazon-payments
 - amazon-pay-v2
 - braintree-rd
@@ -26,4 +27,3 @@
 - paypal-payments-pro-credit-card
 - payeezy
 - wordline-bambora
-- copy-of-authorizenet
