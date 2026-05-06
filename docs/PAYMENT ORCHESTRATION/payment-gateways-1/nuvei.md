@@ -144,3 +144,5 @@ Production and Sandbox environments are entirely different endpoints and systems
 If you have support move your site from Production/Sandbox **to** Development mode, or visa versa, you will need to create new gateway tiles, and disable the old ones as they will not be functional post site-mode migration. To that end, it is best practice to have your site remain in the same 'mode', and if you have a specific development site that you use for integration testing and other testing scenarios, ensure your site is set to and stays in Development mode for the duration and prior to adding accounts to avoid issues.
 
 Please note, this limitation includes gateway configuration "copying" when going live -- you must re-onboard this gateway to configure it properly, as the copied gateway does not share the same site identifiers.
+
+<br />
