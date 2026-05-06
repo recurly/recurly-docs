@@ -92,4 +92,4 @@ Mercado Pago will require you always send certain data:
 
 * <Anchor label="V3 API Guide" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html">V3 API Guide</Anchor>
 * <Anchor label="Recurly.js Overview " target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/overview-recurlyjs#/">Recurly.js Overview </Anchor>
-* <Anchor label="Mercado Pago Integration Guide" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide-2">Mercado Pago Integration Guide</Anchor>
+* <Anchor label="Mercado Pago Integration Guide" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide">Mercado Pago Integration Guide</Anchor>
