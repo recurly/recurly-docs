@@ -11,10 +11,11 @@ This document provides detailed API instructions for processing payments via UPI
 
 # Key Details
 
-There are three gateways and two payment methods that support the APAC region including Stripe, GoCardless, and Ebanx.
+There are three gateways and three payment methods that support the APAC region including Stripe, GoCardless, and Ebanx.
 
 **Payment Methods and Gateways:**
 
+* **Cards**: Supported on Stripe only.
 * **BECS**: Supported on Stripe (Third PartyCheckout Only), and GoCardless
 * **UPI AutoPay**: Supported on Ebanx
 
