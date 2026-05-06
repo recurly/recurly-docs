@@ -6,8 +6,7 @@ hidden: true
 metadata:
   robots: index
 ---
-Title: Mercado Pago integration guide
-Metadata description: How to create new subscriptions with the Mercado Pago payment method using Recurly's Purchase endpoint.
+Title: Mercado Pago integration guide Metadata description: How to create new subscriptions with the Mercado Pago payment method using Recurly's Purchase endpoint.
 
 ---PASTE INTO EDITOR BELOW---
 
@@ -1392,13 +1391,59 @@ invoice_collection = @client.create_purchase(body: purchase)
 </div>
 `}</HTMLBlock>
 
----
+***
+
 📋 TODO before publishing:
-- [ ] Confirm Recurly plan availability and update the plan pill text
-- [ ] Add the Create Purchase API reference URL (used in the Step 2 tip callout)
-- [ ] Add the Mercado Pago payment method guide URL (used in the closing Next steps card)
-- [ ] Verify the 3DS Redirect Guide URL fragment — `#/step-3-process-the-responsew` may have a typo (`responsew` → `response`?)
-- [ ] Replace the JavaScript, Python, Java, and C# code in Step 1 — currently TODO placeholders inside ReadMe's auto-tabbed fence syntax
-- [ ] Confirm the renumbered steps — source had two "Step 4" headings. The second one ("Verify and finish") was renumbered to Step 5, and the original "Step 5: Listen for webhooks" became Step 6.
-- [ ] Confirm the inferred Key benefits — source had no explicit benefits list. The three drafted benefits (Single API call / Brazilian market reach / Built-in 3DS handling) were inferred from the surrounding content.
-- [ ] Confirm the metadata description copy.
+
+* [ ] Confirm Recurly plan availability and update the plan pill text
+* [ ] Add the Create Purchase API reference URL (used in the Step 2 tip callout)
+* [ ] Add the Mercado Pago payment method guide URL (used in the closing Next steps card)
+* [ ] Verify the 3DS Redirect Guide URL fragment — `#/step-3-process-the-responsew` may have a typo (`responsew` → `response`?)
+* [ ] Replace the JavaScript, Python, Java, and C# code in Step 1 — currently TODO placeholders inside ReadMe's auto-tabbed fence syntax
+* [ ] Confirm the renumbered steps — source had two "Step 4" headings. The second one ("Verify and finish") was renumbered to Step 5, and the original "Step 5: Listen for webhooks" became Step 6.
+* [ ] Confirm the inferred Key benefits — source had no explicit benefits list. The three drafted benefits (Single API call / Brazilian market reach / Built-in 3DS handling) were inferred from the surrounding content.
+* [ ] Confirm the metadata description copy.
+
+<br />
+
+<HTMLBlock>{`
+<style>
+  :root {
+    --yellow: #FFD706;
+    --offblack: #0D0D0B;
+    --offwhite: #FFFDF2;
+    --lightgray: #CCC9B8;
+    --gray: #807D73;
+    --deepchar: #232932;
+    --font: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  }
+  .rp-page { font-family: var(--font); color: var(--deepchar); font-size: 15px; line-height: 1.6; max-width: 860px; }
+  .rp-steps { display: flex; flex-direction: column; margin-bottom: 24px; }
+  .rp-step {
+    display: flex; gap: 16px; align-items: flex-start;
+    background: var(--offwhite); border: 1px solid var(--lightgray);
+    border-radius: 10px; padding: 18px 22px;
+    margin-bottom: 12px;
+  }
+  .rp-step-num {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--offblack); color: var(--yellow);
+    font-weight: 800; font-size: 14px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .rp-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--offblack); margin: 0 0 4px; }
+  .rp-step p  { font-size: 0.87rem; color: var(--gray); line-height: 1.6; margin: 0; }
+</style>
+<div class="rp-page">
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">1</div>
+      <div><h4>First dummy step</h4><p>Placeholder text so you can see how the black circle and yellow numeral read against the offwhite card.</p></div>
+    </div>
+    <div class="rp-step">
+      <div class="rp-step-num">2</div>
+      <div><h4>Second dummy step</h4><p>Another placeholder so you can compare two cards stacked together.</p></div>
+    </div>
+  </div>
+</div>
+`}</HTMLBlock>
