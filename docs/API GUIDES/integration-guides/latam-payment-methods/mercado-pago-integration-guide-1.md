@@ -58,7 +58,6 @@ purchase = {
   ]
 }
 invoice_collection = @client.create_purchase(body: purchase)
-Tip: Many more parameters are available. See the Create Purchase reference to learn more.
 ```
 ```javascript
 ```
@@ -68,6 +67,8 @@ Tip: Many more parameters are available. See the Create Purchase reference to le
 ```
 ```csharp
 ```
+
+Tip: Many more parameters are available. See the Create Purchase reference to learn more.
 
 ### Step 2: Obtain the token from the response
 
@@ -93,14 +94,13 @@ Upon submitting your API request you will receive a response that looks like thi
 }
 ```
 
-
 Mercado Pago requires consumer authentication, and so interacting with Recurly.js is necessary to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to use the three_d_secure_action_token_idvalue to render the modal for this process.
 
 This initial call will return different behavior in production than in sandbox.
 
 ### Step 3: Interact with Recurly.js
 
-You can follow along in our 3DS Redirect Guide, starting at Step 3: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew) 
+You can follow along in our 3DS Redirect Guide, starting at Step 3: [Recurly.js Token-ID Redirect Guide](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew)
 
 ### Step 4: Submit a new Purchase request
 
