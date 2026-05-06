@@ -11673,6 +11673,16 @@ components:
         remove a field send the name with a null or empty value.
       items:
         $ref: '#/components/schemas/CustomField'
+    InvoiceCustomFields:
+      type: array
+      title: Custom fields
+      description: >-
+        A list of custom fields that were on the account at the time of invoice
+        creation and were marked to be displayed on invoices. Read-only; cannot
+        be set directly on the invoice.
+      readOnly: true
+      items:
+        $ref: '#/components/schemas/CustomField'
     CustomFieldDefinition:
       type: object
       title: Custom field definition
@@ -12712,6 +12722,8 @@ components:
           description: >-
             Unique ID to identify the business entity assigned to the invoice.
             Available when the `Multiple Business Entities` feature is enabled.
+        custom_fields:
+          $ref: '#/components/schemas/InvoiceCustomFields'
     InvoiceCreate:
       type: object
       properties:
