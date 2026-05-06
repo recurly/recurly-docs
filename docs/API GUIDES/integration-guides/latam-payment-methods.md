@@ -64,7 +64,11 @@ Pix Automatico requires usage of our V3 APIs, and specifying the `type` field wi
 
 ## Boleto
 
-Boleto, supported on Adyen only presently, uses a special Email Template to deliver the Boleto Voucher QR code to customers via email. Due to the emailed communications, ensure you have your customer's real email on file.
+<Callout icon="📘" theme="info">
+  Boleto is being decomissioned on Adyen by the end of 2026. Our recommendation is to use Pix Automatico if you are looking to expand into Brazil.
+</Callout>
+
+Boleto, supported on Adyen only presently, uses a special Email Template to deliver the Boleto Voucher QR code to customers via email. Due to the emailed communications, ensure you have your customer's real email on file. Standard recurring behavior does not apply to Boleto, given the nature of the payment method. Read more about the payment method in our dedicated documentation.
 
 You can follow specific instructions available in our Adyen documentation below:
 
