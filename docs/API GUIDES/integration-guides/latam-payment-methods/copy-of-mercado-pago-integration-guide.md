@@ -15,13 +15,11 @@ metadata:
     --darkgray:   #32312D;
     --gray:       #807D73;
     --lightgray:  #CCC9B8;
-    --brightgray: #F1EFE3;
     --offwhite:   #FFFDF2;
     --font:       'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   }
   .rp-page { font-family: var(--font); color: var(--offblack); font-size: 15px; line-height: 1.6; max-width: 860px; }
 
-  /* Container — Recurly white background, soft gray border */
   .rp-code {
     background: var(--offwhite);
     color: var(--offblack);
@@ -34,42 +32,39 @@ metadata:
     line-height: 1.55;
   }
 
-  /* Header bar — slightly darker cream than body to delineate */
+  /* Header bar stays dark */
   .rp-code-header {
     display: flex; align-items: center; justify-content: space-between;
     gap: 12px; flex-wrap: wrap;
-    background: var(--brightgray);
+    background: var(--darkgray);
     padding: 8px 14px;
-    border-bottom: 1px solid var(--lightgray);
+    border-bottom: 1px solid var(--offblack);
     font-family: var(--font);
   }
 
-  /* Language label (single snippets) */
   .rp-code-lang {
-    color: var(--darkgray);
+    color: var(--lightgray);
     font-size: 12px; font-weight: 700;
     text-transform: lowercase; letter-spacing: 0.4px;
   }
 
-  /* Tab list (multi-language snippets, replaces the lang label) */
   .rp-code-tablist { display: flex; gap: 4px; flex-wrap: wrap; }
   .rp-code-tab {
     background: transparent; border: 0;
-    color: var(--darkgray);
+    color: var(--lightgray);
     font-family: inherit; font-size: 12px; font-weight: 700;
     padding: 5px 12px; border-radius: 14px;
     cursor: pointer;
     transition: background 0.12s, color 0.12s;
   }
-  .rp-code-tab:hover { background: rgba(13,13,11,0.06); color: var(--offblack); }
+  .rp-code-tab:hover { background: rgba(255,253,242,0.08); color: var(--offwhite); }
   .rp-code-tab-active,
   .rp-code-tab-active:hover { background: var(--yellow); color: var(--offblack); }
 
-  /* Copy button — ghost style, turns tangerine on hover */
   .rp-code-copy {
     background: transparent;
-    border: 1px solid var(--lightgray);
-    color: var(--darkgray);
+    border: 1px solid var(--gray);
+    color: var(--lightgray);
     font-family: inherit; font-size: 12px; font-weight: 700;
     padding: 4px 12px; border-radius: 6px;
     cursor: pointer; flex-shrink: 0;
@@ -80,7 +75,7 @@ metadata:
     color: var(--offblack);
   }
 
-  /* Code body — Recurly white background, off-black code text */
+  /* Code body — Recurly white background, dark text */
   .rp-code-body {
     margin: 0;
     padding: 16px 18px;
@@ -94,21 +89,11 @@ metadata:
     background: transparent; color: inherit; padding: 0;
   }
 
-  /* Show one body for single snippets, only the active body for tabbed snippets */
   .rp-code:not(.rp-code-tabs) .rp-code-body { display: block; }
   .rp-code-tabs .rp-code-body { display: none; }
   .rp-code-tabs .rp-code-body.rp-code-body-active { display: block; }
 </style>
 <script>
-/*
- * NOTE: scripts don't execute inside ReadMe HTMLBlocks. These helpers are
- * included as a reference for the intended interaction behavior — devs
- * should wire equivalent handlers into ReadMe's theme.
- *
- *   rpTab(btn, idx)  — switch the active tab + body inside a tabbed snippet
- *   rpCopy(btn)      — copy the visible code body to the clipboard,
- *                      with a fallback for older browsers
- */
 function rpTab(btn, idx) {
   var wrap = btn.closest('.rp-code-tabs');
   if (!wrap) return;
@@ -146,7 +131,7 @@ function rpFlashCopied(btn) {
 </script>
 <div class="rp-page">
 
-  <h3>Single snippet — language label on the left</h3>
+  <h3>Single snippet</h3>
 
   <div class="rp-code">
     <div class="rp-code-header">
@@ -165,7 +150,7 @@ function rpFlashCopied(btn) {
 }</code></pre>
   </div>
 
-  <h3>Tabbed snippet — multiple languages, active tab in yellow</h3>
+  <h3>Tabbed snippet</h3>
 
   <div class="rp-code rp-code-tabs">
     <div class="rp-code-header">
