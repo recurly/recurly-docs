@@ -15,7 +15,7 @@ There are several gateways and payment methods that support the LATAM region inc
 
 **Payment Methods and Gateways:**
 
-* **Boleto**: Supported on Adyen
+* **Boleto**: Supported on Adyen (Pending Deprecation)
 * **Mercado Pago**: Supported on Ebanx
 * **Pix Automatico**: Supported on Ebanx
 * **Cards with Tax ID requirements**: Supported on WorldPay and Braintree
@@ -52,9 +52,9 @@ Recurly supports two Wallet payment methods on Ebanx including Mercado Pago and 
 
 ### Pix Automatico
 
-Pix Automatico is supported on Ebanx, and requires the integrator to render the returned QR code in their checkout flow for a customer to scan. You may do this in any fashion you like, such as an on-page view. However, sandbox behavior differs from production. 
+Pix Automatico is supported on Ebanx, and requires the integrator to render the returned QR code in their checkout flow for a customer to scan. You may do this in any fashion you like, such as an on-page view. However, sandbox behavior differs from production.
 
-Pix Automatico requires usage of our V3 APIs, and specifying the `type` field with an enum of `pix_automatico`. The initial response to a subscription integration 
+Pix Automatico requires usage of our V3 APIs, and specifying the `type` field with an enum of `pix_automatico`. The initial response to a subscription integration
 
 ## Boleto
 
