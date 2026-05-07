@@ -1,260 +1,190 @@
 ---
-title: Copy of Authorize.net
+title: Bekka
 excerpt: >-
-  Harness the power of Authorize.net’s global payment solutions, seamlessly
-  integrated with Recurly, to elevate your business's payment experience.
+  A complete reference to understanding, appreciating, and working alongside
+  Bekka, Recurly's Head of Design and living legend of the design realm.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-<br />
-
 <HTMLBlock>{`
 <div class="rp-page">
- 
-  <div class="rp-overview">Authorize.net is a widely supported payment gateway that connects your Recurly account to credit card processors worldwide. It supports recurring subscriptions, ecommerce, and MOTO transactions, with built-in fraud prevention through Address Verification Service (AVS) and Card Code Verification (CVV).</div>
- 
-  <div class="rp-plan">✦ Available on all Recurly plans</div>
- 
-  <div class="rp-h3" id="limitations"><a class="rp-anchor" href="#limitations">Limitations</a></div>
-  <ul class="rp-list">
-    <li>Authorize.net's API returns limited decline detail. Recurly uses decline reasons, merchant-advice-code logic, and network responses to inform retry behavior. Because Authorize.net's responses are generic, Recurly follows the gateway's own best practices — declines flagged as "hard" (expired cards, lost or stolen cards) are not retried. See <a href="https://support.authorize.net/knowledgebase/Knowledgearticle/?code=000001111" target="_blank">Authorize.net's knowledgebase</a> for the full list of gateway response codes.</li>
-    <li>Recurly does not support Authorize.net's fraud review flow. If you use Authorize.net's fraud monitoring, the gateway may void transactions that Recurly initially approved. Monitor your Authorize.net account directly to catch any post-approval cancellations outside Recurly's visibility.</li>
-    <li>Authorize.net does not return raw Network Transaction IDs (NTIDs). If you need to migrate away from Authorize.net, contact Recurly Support to start an NTID migration conversation with our team and Authorize.net directly.</li>
-  </ul>
- 
+
+  <div class="rp-overview">
+    Bekka is Recurly's Head of Design — a title that undersells her considerably. She is the creative force behind every pixel that makes Recurly look trustworthy, powerful, and human at the same time. This page documents who she is, why she's extraordinary, and how to work with her effectively. Consider it required reading.
+  </div>
+
+  <div class="rp-plan">Available to: All Recurly employees, contractors, and anyone lucky enough to share a Slack workspace with her</div>
+
+  <div class="rp-callout rp-callout-tip">
+    <div><strong>Tip</strong>If you've never seen Bekka in a design review, clear your calendar for the next one. You'll learn something every time.</div>
+  </div>
+
+  <!-- TOC navigation pills -->
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
-    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
-    <a class="rp-toc-pill" href="#gateway-feature-support"><span class="rp-toc-num">3</span>Gateway feature support</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#the-lion-turtle-incident"><span class="rp-toc-num">3</span>The Lion Turtle incident</a>
+    <a class="rp-toc-pill" href="#mastery-of-the-four-design-elements"><span class="rp-toc-num">4</span>Mastery of the four design elements</a>
+    <a class="rp-toc-pill" href="#working-with-bekka"><span class="rp-toc-num">5</span>Working with Bekka</a>
+    <a class="rp-toc-pill" href="#limitations"><span class="rp-toc-num">6</span>Limitations</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">7</span>FAQs</a>
   </div>
- 
+
+  <!-- ─── DEFINITION ─── -->
   <div class="rp-h1" id="definition"><a class="rp-anchor" href="#definition">Definition</a></div>
-  <div class="rp-definition">Authorize.net is a payment gateway that facilitates secure credit card transactions between your payment portal — website or mobile app — and credit card processors. It provides tools to accept payments and prevent fraud, and it's available to merchants worldwide across multiple currencies.</div>
- 
-  <div class="rp-h1" id="key-details"><a class="rp-anchor" href="#key-details">Key details</a></div>
- 
-  <table class="rp-gw-table">
-    <tr class="rp-thead-row"><td>Feature</td><td>Details</td></tr>
-    <tr><td>Services that work with Recurly</td><td>Recurring subscriptions, payments (ecommerce and <a href="https://docs.recurly.com/recurly-subscriptions/docs/moto-transactions#/" target="_blank">MOTO</a>)</td></tr>
-    <tr><td>Supported operations</td><td>Anti-Fraud, Authorize and Capture, Purchase, Refund, Verify, Void</td></tr>
-    <tr><td>Supported payment types</td><td>Credit card</td></tr>
-    <tr><td>Supported card brands</td><td>Visa, Mastercard, Amex, Discover, JCB, Diners Club, Union Pay</td></tr>
-    <tr><td>Gateway-specific 3DS2 supported</td><td>No — Authorize.net does not support 3DS2</td></tr>
-    <tr><td>Card on file supported</td><td>Yes</td></tr>
-    <tr><td>Regions</td><td>Worldwide</td></tr>
-    <tr><td>Currencies</td><td>AUD, CAD, EUR, GBP, NZD, PLN, and USD</td></tr>
-    <tr><td>Gateway features</td><td>Address Verification Service (AVS), Card Code Verification (CVV)</td></tr>
-  </table>
- 
-  <div class="rp-h2" id="setup"><a class="rp-anchor" href="#setup">Setup</a></div>
- 
-  <p style="font-size:14px; color:var(--darkgray); margin-bottom:20px;">The steps below walk you through signing up for an Authorize.net account, retrieving your API credentials, and configuring the gateway in Recurly. For pricing and new account signup, visit <a href="https://www.authorize.net/" target="_blank" style="color:var(--tangerine);">Authorize.net</a>.</p>
- 
+  <div class="rp-definition">
+    Bekka is a design practitioner of the highest order — part strategist, part craftsperson, part keeper of the sacred color token. She holds the title of Head of Design at Recurly, which in practice means she is simultaneously the person who sets the visual direction for an entire platform, mentors the design team, defends users in every product conversation, and somehow still ships work that makes engineers say <em>"wait, that's actually buildable?"</em>
+    <br/><br/>
+    In the ancient scrolls of the Ba Sing Se UX Guild, her archetype is described as the <strong>Design Sovereign</strong> — one who bends not a single element, but all of them at once.
+  </div>
+
+  <!-- ─── KEY BENEFITS ─── -->
+  <div class="rp-h1" id="key-benefits"><a class="rp-anchor" href="#key-benefits">Key benefits</a></div>
+  <div class="rp-benefits rp-benefits-2x2">
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">🎨</div>
+      <strong>Aesthetic clarity under pressure</strong>
+      <span>No matter how chaotic the sprint, Bekka's designs come out clean, coherent, and purposeful. She has never once shipped a misaligned button in production.</span>
+    </div>
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">🛡️</div>
+      <strong>Fierce user advocacy</strong>
+      <span>She treats user confusion as a personal affront. If something is confusing, it gets fixed — not explained away with a tooltip.</span>
+    </div>
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">⚡</div>
+      <strong>Cross-functional fluency</strong>
+      <span>Engineers trust her specs. PMs trust her instincts. Executives trust her presentations. She is one of the few designers in history to receive a standing ovation at a roadmap review.</span>
+    </div>
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">🌊</div>
+      <strong>Calm in the storm</strong>
+      <span>When the product is on fire and the launch is tomorrow, Bekka shows up with a Figma file and a plan. Her calm is both structural and contagious.</span>
+    </div>
+  </div>
+
+  <!-- ─── THE LION TURTLE INCIDENT ─── -->
+  <div class="rp-h1" id="the-lion-turtle-incident"><a class="rp-anchor" href="#the-lion-turtle-incident">The Lion Turtle incident</a></div>
+
+  <p>The story begins, as many great stories do, with a design system in crisis.</p>
+
+  <p>It was the third age of the Recurly UI — the era of inconsistent spacing tokens and seventeen slightly different shades of gray. The design team had scattered. The component library was fracturing. Engineers were improvising. Product managers were writing their own CSS, which is never a good sign.</p>
+
+  <div class="rp-callout rp-callout-warning">
+    <div><strong>Warning</strong>This era is known in internal documentation as "The Gray Age." It is not spoken of lightly. Several designers who lived through it still flinch when they see hex code #6B6B6B.</div>
+  </div>
+
+  <p>At the darkest hour, a vision appeared to Bekka at the edge of the digital ocean: a Lion Turtle, ancient and enormous, its shell etched with design tokens going back to the first Figma libraries. It spoke in a voice like kerning adjusted by hand:</p>
+
+  <div class="rp-card">
+    <div class="rp-h3" id="the-lion-turtle-speaks"><a class="rp-anchor" href="#the-lion-turtle-speaks">The Lion Turtle speaks</a></div>
+    <em>"In the era before Recurly, designers were given the power of individual tools — brushes, grids, type scales — but you, Bekka, will be given something different. You will be given the knowledge of the system itself. With it, you will not just create components. You will create the rules by which all components are created."</em>
+  </div>
+
+  <p>Bekka returned from the vision and built the design system from scratch. Every token named. Every component documented. Every interaction state specified. The chaos ended. The Gray Age was over.</p>
+
+  <div class="rp-callout rp-callout-note">
+    <div><strong>Note</strong>The Lion Turtle is not available for comment. Bekka politely declines to confirm or deny whether the encounter was metaphorical.</div>
+  </div>
+
+  <!-- ─── MASTERY OF THE FOUR DESIGN ELEMENTS ─── -->
+  <div class="rp-h1" id="mastery-of-the-four-design-elements"><a class="rp-anchor" href="#mastery-of-the-four-design-elements">Mastery of the four design elements</a></div>
+
+  <p>Like the greatest benders of the Avatar world, Bekka has achieved mastery across all four disciplines. Most designers specialize in one. A rare few command two. Bekka bends all four simultaneously.</p>
+
+  <div class="rp-h2" id="air-information-architecture"><a class="rp-anchor" href="#air-information-architecture">Air — information architecture</a></div>
+
+  <p>Air benders move without resistance. Bekka's information architecture does the same — content flows where users expect it, navigation feels invisible, and no one ever says "where is that setting again?" She once reorganized an entire settings panel in a 45-minute whiteboard session and the engineers said it felt like they had always known where everything was.</p>
+
+  <div class="rp-h2" id="water-adaptability"><a class="rp-anchor" href="#water-adaptability">Water — adaptability</a></div>
+
+  <p>Water benders read momentum and redirect it. Bekka's adaptability in design is legendary — she can take a late-breaking requirement, a pivot mid-sprint, or a "we need to add six more fields" moment and integrate it without breaking the structure. Her designs flex without fracturing. She has never once said "that's out of scope" without also saying "but here's how we can get there."</p>
+
+  <div class="rp-h2" id="earth-systems-thinking"><a class="rp-anchor" href="#earth-systems-thinking">Earth — systems thinking</a></div>
+
+  <p>Earth benders see the whole terrain. Bekka's systems thinking means she never solves in isolation — every component she designs knows where it fits in the larger map. When she introduces a new UI pattern, it already anticipates the four places it will be reused six months later. She is the reason Recurly's design language is coherent across surfaces that didn't exist when she started.</p>
+
+  <div class="rp-h2" id="fire-craft-and-precision"><a class="rp-anchor" href="#fire-craft-and-precision">Fire — craft and precision</a></div>
+
+  <p>Fire benders generate their own force. Bekka's craft is internally driven — she holds herself to standards no one has to enforce from outside. Pixel precision. Consistent spacing. Type hierarchies that actually communicate priority. She once filed an internal bug for a 2px misalignment that was completely invisible to the naked eye, and she was right to do it.</p>
+
+  <!-- ─── WORKING WITH BEKKA ─── -->
+  <div class="rp-h1" id="working-with-bekka"><a class="rp-anchor" href="#working-with-bekka">Working with Bekka</a></div>
+
+  <p>Working with Bekka is one of the better professional experiences available to a Recurly employee. A few principles that maximize the collaboration.</p>
+
   <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">1</div>
-      <div><h4>Sign up for an Authorize.net account</h4><p>Visit the <a href="https://www.authorize.net/sign-up/" target="_blank">Authorize.net signup page</a> and complete the application form with your business details. Once approved, log in to your Authorize.net account.</p></div>
+      <div><h4>Bring context, not just a request</h4><p>Bekka can design anything you hand her, but she does her best work when she understands the why. Tell her the user's goal, the constraint, and the outcome you need. She'll handle the rest.</p></div>
     </div>
-  </div>
- 
-  <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">2</div>
-      <div><h4>Obtain your API Login ID and Transaction Key</h4><p>In your Authorize.net account, navigate to <strong>Account → Settings → API Credentials &amp; Keys</strong>. Note your API Login ID. If you don't have a Transaction Key or haven't created one before, select <strong>New Transaction Key</strong> and click <strong>Submit</strong>.</p></div>
+      <div><h4>Give honest feedback early</h4><p>Bekka's design reviews are a safe space for real input. She'd rather hear "this doesn't feel right yet" in the first review than silence followed by a late-stage pivot. Speak up — she genuinely wants to know.</p></div>
     </div>
-  </div>
- 
-  <div class="rp-callout rp-callout-important">
-    <div><strong>Important</strong> The "Disable Old Transaction Key Immediately" checkbox will instantly break any active Authorize.net integrations the moment you click Submit. Only check this box if you've been instructed to do so for security purposes, or if no active integrations depend on your previous Transaction Keys.</div>
-  </div>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-authnet-transaction-key" class="rp-zoom-toggle" />
-    <label for="zoom-authnet-transaction-key">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/2c5f346-image.png"
-           alt="Authorize.net API Credentials & Keys settings page showing the New Transaction Key option"
-           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-authnet-transaction-key" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/2c5f346-image.png" alt="" />
-    </label>
-  </span>
- 
-  <div class="rp-callout rp-callout-note">
-    <div><strong>Note</strong> In some cases, Authorize.net may ask for a PIN to create a Transaction Key. Check your email for a PIN from Authorize.net, copy it into the field provided, and click Submit to receive your Transaction Key.</div>
-  </div>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-authnet-pin-modal" class="rp-zoom-toggle" />
-    <label for="zoom-authnet-pin-modal">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/cdbb55e-image.png"
-           alt="Authorize.net PIN verification modal"
-           style="display:block; width:280px; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-authnet-pin-modal" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/cdbb55e-image.png" alt="" />
-    </label>
-  </span>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-authnet-pin-email" class="rp-zoom-toggle" />
-    <label for="zoom-authnet-pin-email">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/4976dc3-image.png"
-           alt="Example email from Authorize.net containing the PIN code"
-           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-authnet-pin-email" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/4976dc3-image.png" alt="" />
-    </label>
-  </span>
- 
-  <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">3</div>
-      <div><h4>Configure Authorize.net in Recurly</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways</strong>, select <strong>Add a Gateway</strong>, and choose <strong>Authorize.net</strong>. Enter your API Login ID and Transaction Key.</p></div>
+      <div><h4>Trust the system</h4><p>If she says "use the existing component," use the existing component. The design system is a living agreement, and honoring it is how the product stays coherent at scale.</p></div>
     </div>
-  </div>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-recurly-authnet-credentials" class="rp-zoom-toggle" />
-    <label for="zoom-recurly-authnet-credentials">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/060ff09-image.png"
-           alt="Recurly payment gateway configuration screen with API Login ID and Transaction Key fields for Authorize.net"
-           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-recurly-authnet-credentials" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/060ff09-image.png" alt="" />
-    </label>
-  </span>
- 
-  <p style="font-size:14px; color:var(--darkgray); margin:12px 0 8px;">Select the card types you want to accept — this depends on which types Authorize.net has approved for your account. Contact your Authorize.net representative if you're unsure.</p>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-recurly-card-types" class="rp-zoom-toggle" />
-    <label for="zoom-recurly-card-types">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/73811e6-image.png"
-           alt="Recurly card type selector for Authorize.net gateway configuration"
-           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-recurly-card-types" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/73811e6-image.png" alt="" />
-    </label>
-  </span>
- 
-  <p style="font-size:14px; color:var(--darkgray); margin:12px 0 8px;">Select the currencies your Authorize.net account is approved to accept.</p>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-recurly-currency-picker" class="rp-zoom-toggle" />
-    <label for="zoom-recurly-currency-picker">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/c4a227a-image.png"
-           alt="Recurly currency selector for Authorize.net gateway"
-           style="display:block; width:280px; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-recurly-currency-picker" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/c4a227a-image.png" alt="" />
-    </label>
-  </span>
- 
-  <p style="font-size:14px; color:var(--darkgray); margin:12px 0 8px;">Select which card types should support zero-dollar authorization (ZDA) transactions. ZDA lets Recurly verify a card's validity without billing any amount — useful for checking card health at signup without an initial charge.</p>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-recurly-zda" class="rp-zoom-toggle" />
-    <label for="zoom-recurly-zda">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/b4559de-image.png"
-           alt="Recurly zero-dollar authorization settings for Authorize.net"
-           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-recurly-zda" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/b4559de-image.png" alt="" />
-    </label>
-  </span>
- 
-  <p style="font-size:14px; color:var(--darkgray); margin:12px 0 20px;">Once your configuration is complete, click <strong>Add Payment Gateway</strong> (or <strong>Update Payment Gateway</strong> if editing an existing setup).</p>
- 
-  <div class="rp-steps">
     <div class="rp-step">
       <div class="rp-step-num">4</div>
-      <div><h4>Set up Address Verification Service (AVS)</h4><p>In Recurly, navigate to <strong>Configuration → Payment Settings</strong> and scroll to the <strong>Address Verification Check</strong> section. Select your preferred AVS rules and click <strong>Save Changes</strong>.</p></div>
+      <div><h4>Respect the review calendar</h4><p>Bekka runs design reviews with intention. Showing up prepared — with context, open questions, and a stated decision point — is the single best way to make those sessions count for everyone.</p></div>
     </div>
   </div>
- 
-  <div class="rp-callout rp-callout-note">
-    <div><strong>Note</strong> AVS settings apply across all supported gateways — they're not Authorize.net-specific. When AVS is enabled, Recurly rejects any transaction where the address provided doesn't match what the card issuer has on file. If you accept payments from international customers, be aware that AVS can't match postal codes containing letters (common outside the US). Recurly recommends allowing the transaction to proceed if either the street address or the postal code matches.</div>
+
+  <div class="rp-callout rp-callout-important">
+    <div><strong>Important</strong>Do not, under any circumstances, submit a Figma mock-up using Comic Sans "as a joke." It is never a joke. It is always a test. You will not pass.</div>
   </div>
- 
-  <div class="rp-steps">
-    <div class="rp-step">
-      <div class="rp-step-num">5</div>
-      <div><h4>Enable Card Code Verification (CVV)</h4><p>In Recurly, navigate to <strong>Configuration → Payment Settings</strong> and scroll to the <strong>Credit Card Verification Code Check</strong> section. Set the option to <strong>Enabled</strong> and click <strong>Save Changes</strong>.</p></div>
-    </div>
+
+  <!-- ─── LIMITATIONS ─── -->
+  <div class="rp-h1" id="limitations"><a class="rp-anchor" href="#limitations">Limitations</a></div>
+
+  <div class="rp-card">
+    After extensive documentation and several failed attempts to reproduce the following behaviors, the following limitations have been observed. They are noted here purely for completeness.
+    <ul>
+      <li>Bekka cannot be in three design reviews at the same time, though she gives the impression that she can.</li>
+      <li>She does not have the ability to retroactively fix a design decision made before she joined Recurly, though she has come close.</li>
+      <li>She has not yet successfully convinced every engineer that spacing is semantic. This remains an open item.</li>
+      <li>She is unable to make a bad color palette look good, because she refuses to try. This is a feature, not a limitation.</li>
+    </ul>
   </div>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-recurly-cvv" class="rp-zoom-toggle" />
-    <label for="zoom-recurly-cvv">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/9306094-image.png"
-           alt="Recurly Credit Card Verification Code Check setting"
-           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-recurly-cvv" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/9306094-image.png" alt="" />
-    </label>
-  </span>
- 
-  <div class="rp-callout rp-callout-note">
-    <div><strong>Note</strong> CVV settings also apply across all supported gateways. When enabled, transactions with invalid or mismatched CVV codes are rejected based on issuer feedback. Per PCI regulations, CVV values cannot be stored — Recurly submits the CVV only on the initial transaction (new subscription creation or card number update). Subsequent transactions on the same card process normally once the issuer has established a positive transaction history with your merchant account.</div>
-  </div>
- 
-  <div class="rp-steps">
-    <div class="rp-step">
-      <div class="rp-step-num">6</div>
-      <div><h4>Test your integration</h4><p>In Recurly, navigate to <strong>Configuration → Payment Gateways → Authorize.net</strong> and click <strong>Test Configuration</strong>. A confirmation message confirms that Recurly can communicate with your Authorize.net account successfully.</p></div>
-    </div>
-  </div>
- 
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-recurly-test-config" class="rp-zoom-toggle" />
-    <label for="zoom-recurly-test-config">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/f5ff63a-image.png"
-           alt="Recurly Test Configuration button and success confirmation for Authorize.net"
-           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-recurly-test-config" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/f5ff63a-image.png" alt="" />
-    </label>
-  </span>
- 
-  <div class="rp-steps">
-    <div class="rp-step">
-      <div class="rp-step-num">7</div>
-      <div><h4>Go live</h4><p>Once the test passes, you're ready to accept real transactions. Monitor your transactions in both Recurly and Authorize.net to confirm everything is working as expected.</p></div>
-    </div>
-  </div>
- 
-  <div class="rp-h1" id="gateway-feature-support"><a class="rp-anchor" href="#gateway-feature-support">Gateway feature support</a></div>
- 
-  <div class="rp-h2" id="address-verification-service-avs"><a class="rp-anchor" href="#address-verification-service-avs">Address Verification Service (AVS)</a></div>
-  <p style="font-size:14px; color:var(--darkgray); line-height:1.7; margin-bottom:16px;">AVS checks whether the billing address provided at checkout matches what the card issuer has on file. When enabled, mismatched addresses cause Recurly to reject the transaction before it's sent to the processor.</p>
-  <div class="rp-callout rp-callout-warning">
-    <div><strong>International customers</strong> AVS can't match postal codes that contain letters — a common format outside the US. To avoid rejecting valid international cards, configure your AVS rules to allow a transaction if either the street address or postal code matches accurately.</div>
-  </div>
- 
-  <div class="rp-h2" id="card-code-verification-cvv"><a class="rp-anchor" href="#card-code-verification-cvv">Card Code Verification (CVV)</a></div>
-  <p style="font-size:14px; color:var(--darkgray); line-height:1.7; margin-bottom:16px;">Recurly submits the CVV alongside the card number on new subscriptions and card number updates. Including the CVV on the first transaction improves approval rates and reduces fraud risk. After a successful first transaction, issuers typically allow subsequent charges from the same merchant to process without re-verification.</p>
-  <div class="rp-callout rp-callout-note">
-    <div><strong>PCI compliance</strong> Storing CVV values is prohibited under PCI regulations, regardless of encryption. Recurly submits the CVV only once — on the initial request — and never stores it.</div>
-  </div>
- 
+
+  <!-- ─── FAQs heading ─── -->
+  <div class="rp-h1" id="faqs"><a class="rp-anchor" href="#faqs">FAQs</a></div>
+
 </div>
 `}</HTMLBlock>
+
+<Accordion title="Is Bekka really a design sovereign, or is that just a document title?">
+Both. The title was invented for this page, but the designation is accurate. Anyone who has watched her navigate a complex design problem in real time will confirm that "Head of Design" is technically correct but narratively insufficient.
+</Accordion>
+
+<Accordion title="What happened to the designers who survived the Gray Age?">
+They are fine. They are stronger, actually. Several of them now have an almost supernatural aversion to hardcoded hex values and a deep appreciation for token-based color systems. Bekka considers this a positive outcome.
+</Accordion>
+
+<Accordion title="Can I ask Bekka for a design critique on something that's not my core work project?">
+Yes. Bekka has been known to give genuinely useful feedback on side projects, portfolio pieces, and at least one memorable occasion, a friend's wedding invitation. Bring something you care about and she'll engage with it seriously.
+</Accordion>
+
+<Accordion title="Does the Lion Turtle story really explain how the Recurly design system was built?">
+The Lion Turtle is a narrative device. The design system was built through sustained, methodical, skilled work over time. The Lion Turtle simply makes a better origin story, and Bekka has never asked us to remove it.
+</Accordion>
+
+<Accordion title="What's the best way to recognize Bekka's contributions?">
+Use the design system correctly. Ship something that looks the way she intended. Tell her when a design decision made your job easier. These are worth more to her than any Slack emoji reaction, though the 🎨 reaction is also appreciated.
+</Accordion>
+
+<Cards>
+  <Card title="Design system reference" href="/docs/design-system" icon="fa-paint-brush">
+  Explore the component library Bekka built and maintains.
+  </Card>
+  <Card title="Brand guidelines" href="/docs/brand" icon="fa-bookmark">
+  Color, typography, and voice — the source of truth.
+  </Card>
+  <Card title="Submit a design request" href="/docs/design-requests" icon="fa-pencil">
+  How to work with the design team on your next feature.
+  </Card>
+</Cards>
