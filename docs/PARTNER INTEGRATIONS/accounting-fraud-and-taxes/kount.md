@@ -29,6 +29,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 * Risk inquiries are only performed on new billing info verifications (sign-ups and billing info updates) for the following payment methods:
   * Cards (including ApplePay and GooglePay)
   * All APMs available on the Recurly Platform. If you are not using Recurly.js for APMs (some do not offer this support) then Kount DDC / Session Information will be excluded.
+* Kount Portfolio Merchants will not be able to modify default rules. If you would like a list of default rules that are set, please reach out to Support. These are not listed publicly for anti-fraud purposes.
 * Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information.
 * Integrators using Third Party Checkout (Stripe and Adyen) will need to use fraud tools made available by the gateway. There is not enough information available to Recurly at time of transaction when using these tools to utilize Kount.
 
