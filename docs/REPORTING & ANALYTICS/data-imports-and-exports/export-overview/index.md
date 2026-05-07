@@ -107,12 +107,6 @@ next:
 
 **Deprecated Exports**
 
-| Export Name                                                                                          | Export Description                                                                                                                                                                                                                  |
-| :--------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Invoices](https://docs.recurly.com/docs/invoices-exports#section-invoices-deprecated-) (Deprecated) | _Note:_ this export is no longer actively maintained. It has now been replaced by two exports: Invoices - Summary and Adjustments. Once your site has the Credit Invoices feature enabled, this export will no longer be available. |
-
-**Deprecated Exports**
-
 <Table align={["left","left"]}>
   <thead>
     <tr>
