@@ -14,8 +14,6 @@ metadata:
 next:
   description: ''
 ---
-# Introduction
-
 A concise digest of Recurly's ongoing changes and minor updates that continually shape and refine your user experience. Get a glimpse of the small but mighty changes in our app's look, feel, and functionality, along with additions to the API and Recurly.js.
 
 ## Learn about recent refinements
