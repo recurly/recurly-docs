@@ -9,7 +9,7 @@ hidden: true
 metadata:
   robots: index
 ---
-```html
+<HTMLBlock>{`
 <div class="rp-page">
 
   <div class="rp-plan">✦ Available on all Recurly plans</div>
@@ -23,12 +23,12 @@ metadata:
   </nav>
 
   <!-- Prerequisites & Limitations -->
-  <div class="rp-h3" id="prerequisites">Prerequisites</div>
+  <div class="rp-h3" id="prerequisites"><a class="rp-anchor" href="#prerequisites">Prerequisites</a></div>
   <ul class="rp-list">
     <li>Line item names can be chosen freely, but check with your payment gateway before using special characters.</li>
   </ul>
 
-  <div class="rp-h3" id="limitations">Limitations</div>
+  <div class="rp-h3" id="limitations"><a class="rp-anchor" href="#limitations">Limitations</a></div>
   <ul class="rp-list">
     <li>Invoices display only the first 500 line items in the Admin Console, Hosted Invoice, and PDF views. The subtotal, tax, and total always reflect all line items, including those beyond the first 500.</li>
     <li>To access line items beyond 500, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</li>
@@ -108,7 +108,7 @@ metadata:
   <div class="rp-h1" id="faqs"><a class="rp-anchor" href="#faqs">FAQs</a></div>
 
 </div>
-```
+`}</HTMLBlock>
 
 <Accordion title="What happens to line items beyond the first 500 on an invoice?">
 Invoices in the Admin Console, Hosted Invoice, and PDF views display only the first 500 line items. That said, the invoice subtotal, tax, and total always reflect every line item — including those beyond the limit. To view or download the full set, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
