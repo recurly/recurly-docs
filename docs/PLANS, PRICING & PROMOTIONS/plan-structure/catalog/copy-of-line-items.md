@@ -11,7 +11,9 @@ metadata:
 ---
 <HTMLBlock>{`
 <div class="rp-page">
-
+  <div class="rp-overview">
+  Line items are the individual charges that make up every Recurly invoice — what each one means, how it appears to your subscribers, and how to write descriptions that keep your transactions compliant.
+</div>
   <div class="rp-plan">✦ Available on all Recurly plans</div>
 
   <!-- TOC -->
@@ -111,13 +113,13 @@ metadata:
 `}</HTMLBlock>
 
 <Accordion title="What happens to line items beyond the first 500 on an invoice?">
-Invoices in the Admin Console, Hosted Invoice, and PDF views display only the first 500 line items. That said, the invoice subtotal, tax, and total always reflect every line item — including those beyond the limit. To view or download the full set, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
+  Invoices in the Admin Console, Hosted Invoice, and PDF views display only the first 500 line items. That said, the invoice subtotal, tax, and total always reflect every line item — including those beyond the limit. To view or download the full set, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
 </Accordion>
 
 <Accordion title="Do line item descriptions affect how transactions are processed by payment gateways?">
-Yes, in certain cases. Line items are sent to payment gateways for transactions like Klarna payments. Accurate, descriptive names can also help your transactions qualify for lower interchange rates under Visa's Commercial Enhanced Data Program (CEDP). Keep descriptions specific to the product or service being billed — and make sure they don't include PHI if your gateway isn't HIPAA-compliant.
+  Yes, in certain cases. Line items are sent to payment gateways for transactions like Klarna payments. Accurate, descriptive names can also help your transactions qualify for lower interchange rates under Visa's Commercial Enhanced Data Program (CEDP). Keep descriptions specific to the product or service being billed — and make sure they don't include PHI if your gateway isn't HIPAA-compliant.
 </Accordion>
 
 <Accordion title="Can I create a line item that isn't tied to a subscription?">
-Yes. Line items can be stand-alone charges — they don't need to be associated with a subscription to appear on an invoice. This makes them useful for one-off fees, adjustments, or any ad hoc charges you need to bill outside of a recurring plan.
+  Yes. Line items can be stand-alone charges — they don't need to be associated with a subscription to appear on an invoice. This makes them useful for one-off fees, adjustments, or any ad hoc charges you need to bill outside of a recurring plan.
 </Accordion>
