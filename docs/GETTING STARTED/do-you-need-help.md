@@ -12,11 +12,6 @@ metadata:
 next:
   description: ''
 ---
-Title: Do you need help?
-Metadata description: Reach Recurly's support, sales, and documentation teams through live chat, support tickets, email, and self-serve product and developer docs.
-
----PASTE INTO EDITOR BELOW---
-
 <HTMLBlock>{`
 <div class="rp-page">
 
