@@ -63,7 +63,7 @@ To integrate Apple Pay on the Web, ensure you have:
 To request MPANs for renewal purposes, you must use Simple or Advanced Labeling. Advanced Labeling will require reviewing Apple's documentation in combination with Recurly.js. Most implementations will be able to use simple labeling already documented in Recurly.js.
 
 * It is up to you, the integrator, to request merchant tokens in your configuration by [specifying the recurring payment request.](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/3955946-recurringpaymentrequest) in one of two ways:
-  * Simple Labeling: Add the recurring flag to the ApplePay constructor. See [Recurly.js documentation](https://recurly.com/developers/reference/recurly-js/#apple-pay) for more information.
+  * Simple Labeling: Add the recurring flag to the ApplePay constructor. See [Recurly.js documentation](https://docs.recurly.com/recurly-subscriptions/docs/apple-pay) for more information.
   * Advanced Labeling: Configure the RecurringPaymentRequest. See [Apple Documentation](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrecurringpaymentrequest) for more information.
 
 ### Limitations
