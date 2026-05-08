@@ -1,5 +1,5 @@
 ---
-title: Recurly release notes/Changelog
+title: Recurly Changelog
 excerpt: >-
   Stay updated with the latest minor tweaks and enhancements in Recurly’s
   functionality through the Release Notes section. Explore a curated digest of
