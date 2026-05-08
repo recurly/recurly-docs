@@ -7,6 +7,9 @@ excerpt: >-
   experience.
 deprecated: false
 hidden: false
+link:
+  new_tab: true
+  url: https://docs.recurly.com/recurly-subscriptions/changelog
 metadata:
   title: ''
   description: ''
