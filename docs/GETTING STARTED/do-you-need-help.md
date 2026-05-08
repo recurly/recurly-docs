@@ -120,13 +120,13 @@ Metadata description: Reach Recurly's support, sales, and documentation teams th
 `}</HTMLBlock>
 
 <Cards columns={3}>
-  <Card title="Product documentation" href="https://docs.recurly.com" target="_blank" icon="fa-book">
+  <Card title="Product documentation" href="https://docs.recurly.com/recurly-subscriptions" target="_blank" icon="fa-book">
   Features, settings, and how-to guides for every part of the Recurly platform.
   </Card>
-  <Card title="API guides" href="https://recurly.com/developers/" target="_blank" icon="fa-code">
+  <Card title="API guides" href="https://docs.recurly.com/recurly-subscriptions/docs/" target="_blank" icon="fa-code">
   Walkthroughs and integration patterns to help you build on Recurly.
   </Card>
-  <Card title="API reference" href="https://recurly.com/developers/api/" target="_blank" icon="fa-terminal">
+  <Card title="API reference" href="https://docs.recurly.com/recurly-subscriptions/reference" target="_blank" icon="fa-terminal">
   The complete reference for every Recurly API endpoint, parameter, and response.
   </Card>
 </Cards>
@@ -153,7 +153,3 @@ Metadata description: Reach Recurly's support, sales, and documentation teams th
 
 </div>
 `}</HTMLBlock>
-
----
-📋 TODO before publishing:
-- [ ] Confirm the URLs used for the three Documentation cards — Product documentation (`https://docs.recurly.com`), API guides (`https://recurly.com/developers/`), and API reference (`https://recurly.com/developers/api/`) are best-guess placeholders. Update if your team uses different canonical destinations.
