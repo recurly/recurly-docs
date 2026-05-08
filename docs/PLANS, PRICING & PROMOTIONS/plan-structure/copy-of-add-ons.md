@@ -1,53 +1,147 @@
 ---
 title: Copy of Add-ons
 excerpt: >-
-  Elevate your subscription model with Recurly's versatile Add-ons. Tailor
-  pricing, design unique add-ons or reuse items across plans, and enjoy flexible
-  billing options. Streamline your product setup and enhance your offerings
-  effortlessly.
+  How add-ons work in Recurly, including pricing models, billing options, and
+  how to configure them on plans or directly on subscriptions.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-# Overview
+<HTMLBlock>{`
+<div class="rp-page">
 
-### Required plan
+  <div class="rp-overview">
+    Add-ons let you charge for extras alongside a subscription's base price — flexible pricing, per-plan or shared across plans, and configurable directly on a subscription when needed.
+  </div>
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+  <div class="rp-plan">✦ Available on all Recurly plans</div>
 
-# Definition
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#creating-an-add-on"><span class="rp-toc-num">3</span>Creating an add-on</a>
+    <a class="rp-toc-pill" href="#configuring-item-add-ons-directly-on-subscriptions"><span class="rp-toc-num">4</span>Configuring item add-ons on subscriptions</a>
+  </div>
 
-Add-ons are additional charges billed each billing period alongside a subscription's base charge. With the ability to associate one or more add-ons with each plan, Recurly offers customization, versatility, and granular control over your product & packaging. Add-ons can be unique to a plan or created from an Item in your Item Catalog for re-use across multiple plans, streamlining your product set-up.
+  <div class="rp-h1" id="definition"><a class="rp-anchor" href="#definition">Definition</a></div>
 
-# Key benefits
+  <div class="rp-definition">
+    Add-ons are additional charges billed each period alongside a subscription's base charge. You can attach one or more add-ons to a plan, giving you granular control over packaging and pricing. Build them from scratch for a single plan, or derive them from an Item in your Item Catalog so you can reuse them across multiple plans.
+  </div>
 
-1. **Versatility**: Design your own add-on from scratch, or derive an add-on  from an Item in your Item Catalog to use across various plans.
-2. **Customization**: Define your add-ons with properties such as type, name, code, accounting code, pricing model, price, tiers, taxes and options for opting out or editable quantity.
-3. **Flexible billing options:** Tailor your billing approach with the option to bill up front or in arrears using usage-based billing.
-4. **Enhanced pricing models**: Select from four pricing models: Fixed Price, Tiered, Volume, and Stairstep, offering the flexibility to meet diverse business needs.
-5. **Items on subscriptions**: Configure item-based add-ons directly on customer subscriptions for even more streamlined operations.
+  <div class="rp-h1" id="key-benefits"><a class="rp-anchor" href="#key-benefits">Key benefits</a></div>
 
-# Creating an add-on
+  <div class="rp-benefits">
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">✦</div>
+      <strong>Versatility</strong>
+      <span>Design an add-on from scratch, or derive one from an Item in your catalog and reuse it across plans.</span>
+    </div>
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">✦</div>
+      <strong>Customization</strong>
+      <span>Define every detail — type, name, code, accounting code, pricing model, tiers, taxes, and opt-out or editable-quantity options.</span>
+    </div>
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">✦</div>
+      <strong>Flexible billing</strong>
+      <span>Bill up front or in arrears with usage-based billing — match how your customers actually consume the add-on.</span>
+    </div>
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">✦</div>
+      <strong>Pricing models</strong>
+      <span>Choose Fixed Price, Tiered, Volume, or Stairstep to fit any pricing strategy.</span>
+    </div>
+    <div class="rp-benefit">
+      <div class="rp-benefit-icon">✦</div>
+      <strong>Items on subscriptions</strong>
+      <span>Configure item-based add-ons directly on a subscription — no need to attach them to the plan first.</span>
+    </div>
+  </div>
 
-1. Navigate to your plan settings. This can be done either through the Recurly Admin Console or via the Plans or Add-ons API endpoints.
+  <div class="rp-h1" id="creating-an-add-on"><a class="rp-anchor" href="#creating-an-add-on">Creating an add-on</a></div>
 
-2. Choose to create an add-on that is unique to the plan, or create an add-on from a saved item in your catalog.
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">1</div>
+      <div><h4>Navigate to your plan settings</h4><p>Open the plan in the Recurly Admin Console, or use the Plans or Add-ons API endpoints.</p></div>
+    </div>
+  </div>
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" className="border" />
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">2</div>
+      <div><h4>Choose the add-on source</h4><p>Create an add-on that's unique to the plan, or build one from a saved item in your catalog.</p></div>
+    </div>
+  </div>
 
-3. Define the add-on’s properties. This includes type, name, code, accounting code, HS Code, pricing model, price, tiers, taxes, and options for opting out or editable quantity. Some properties will auto-populate if you're creating an item-based add-on.
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-add-on-source-selector" class="rp-zoom-toggle" />
+    <label for="zoom-add-on-source-selector">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png"
+           alt="Selector for creating an add-on unique to the plan or from an item in the catalog"
+           style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
+    </label>
+    <label for="zoom-add-on-source-selector" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" alt="" />
+    </label>
+  </span>
 
-* **Accounting Code**: Select a unique code to identify plans in your internal invoice exports. This code should be configured based on your specific tax settings and compliance requirements. Limit to 25 lowercase alphanumeric characters.
-* **HS code/Commodity code**:  Enter a Harmonized System (HS) code or Commodity Code to meet invoice compliance requirements for traded products. Generally, HS Code consists of at least six digits, with countries adding more digits for further national or regional classification. Recurly limits to 25 lowercase alphanumeric characters.
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">3</div>
+      <div><h4>Define the add-on's properties</h4><p>Set type, name, code, accounting code, HS code, pricing model, price, tiers, taxes, and options for opting out or editable quantity. Item-based add-ons auto-populate some of these fields.</p></div>
+    </div>
+  </div>
 
-<Image align="center" border={false} width="75% " src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png" />
+  <table class="rp-params">
+    <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
+    <tr>
+      <td>Accounting code</td>
+      <td>A unique code that identifies the plan in your internal invoice exports. Configure based on your tax settings and compliance requirements. Limited to 25 lowercase alphanumeric characters.</td>
+    </tr>
+    <tr>
+      <td>HS code / Commodity code</td>
+      <td>A Harmonized System (HS) code or Commodity Code that meets invoice compliance requirements for traded products. HS codes are typically at least six digits, with countries adding more for national or regional classification. Limited to 25 lowercase alphanumeric characters.</td>
+    </tr>
+  </table>
 
-4. Save your changes.
+  <span class="rp-zoom">
+    <input type="checkbox" id="zoom-add-on-properties" class="rp-zoom-toggle" />
+    <label for="zoom-add-on-properties">
+      <img class="rp-zoom-img"
+           src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png"
+           alt="Add-on properties form showing accounting code and HS code fields"
+           style="display:block; width:90%; margin:16px auto; border-radius:8px;" />
+    </label>
+    <label for="zoom-add-on-properties" class="rp-zoom-overlay">
+      <img src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png" alt="" />
+    </label>
+  </span>
 
-# Configuring item add-ons directly on subscriptions
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">4</div>
+      <div><h4>Save your changes</h4><p>Save the add-on to attach it to the plan.</p></div>
+    </div>
+  </div>
 
-1. Follow the instructions in our Item <a href="https://docs.recurly.com/docs/catalog" target="_blank">Catalog documentation</a>.
-2. **Note:** You don't need to configure the availability of the add-on on the plan first.
+  <div class="rp-h1" id="configuring-item-add-ons-directly-on-subscriptions"><a class="rp-anchor" href="#configuring-item-add-ons-directly-on-subscriptions">Configuring item add-ons directly on subscriptions</a></div>
 
-Understanding and utilizing the add-on feature in Recurly can significantly enhance your subscription billing operations, providing the flexibility and customization necessary for diverse business models.
+  <p>Item-based add-ons can be added straight to a customer's subscription — you don't need to configure availability on the plan first.</p>
+
+  <div class="rp-steps">
+    <div class="rp-step">
+      <div class="rp-step-num">1</div>
+      <div><h4>Follow the Item Catalog instructions</h4><p>Set up the item in your catalog using the steps in the <a href="https://docs.recurly.com/docs/catalog" target="_blank">Item Catalog documentation</a>, then add it directly to the subscription.</p></div>
+    </div>
+  </div>
+
+  <div class="rp-callout rp-callout-note">
+    <div><strong>Note</strong>You don't need to configure the add-on's availability on the plan first — item-based add-ons can be added to any subscription on demand.</div>
+  </div>
+
+</div>
+`}</HTMLBlock>
