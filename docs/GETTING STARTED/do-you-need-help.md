@@ -12,6 +12,11 @@ metadata:
 next:
   description: ''
 ---
+Title: Do you need help?
+Metadata description: Reach Recurly's support, sales, and documentation teams through live chat, support tickets, email, and self-serve product and developer docs.
+
+---PASTE INTO EDITOR BELOW---
+
 <HTMLBlock>{`
 <div class="rp-page">
 
@@ -35,13 +40,22 @@ next:
 
   <!-- Support channels -->
   <div class="rp-h1" id="support-channels"><a class="rp-anchor" href="#support-channels">Support channels</a></div>
-  <p>We're here to assist you every step of the way. Reach out to our dedicated support team through any of the channels below.</p>
+  <p>We're here to assist you every step of the way. Pick the channel that fits the kind of help you need — instant answers, tracked tickets, or a deeper conversation.</p>
 
-  <div class="rp-h2" id="live-chat-support-channel"><a class="rp-anchor" href="#live-chat-support-channel">Live chat support channel</a></div>
-  <p>For instant help, visit <a href="https://recurly.com" target="_blank">Recurly</a> or your Sandbox, log in, and select the purple Live Chat button in the bottom-right corner of your screen. A team member will be ready to chat and answer your questions.</p>
+</div>
+`}</HTMLBlock>
 
-  <div class="rp-h2" id="technical-support-channel"><a class="rp-anchor" href="#technical-support-channel">Technical support channel</a></div>
-  <p>For product issues or technical questions, open a ticket on our <a href="https://support.recurly.com/hc/en-us/requests/new" target="_blank">Support Ticket page</a>.</p>
+<Cards columns={2}>
+  <Card title="Live chat" href="https://recurly.com" target="_blank" icon="fa-comments">
+  Instant help from our team. Visit Recurly or your Sandbox, log in, and select the purple Live Chat button at the bottom-right of your screen.
+  </Card>
+  <Card title="Support ticket" href="https://support.recurly.com/hc/en-us/requests/new" target="_blank" icon="fa-ticket-alt">
+  Best for product issues or technical inquiries. Open a ticket and our technical support team will follow up.
+  </Card>
+</Cards>
+
+<HTMLBlock>{`
+<div class="rp-page">
 
   <span class="rp-zoom">
     <input type="checkbox" id="zoom-support-ticket-page" class="rp-zoom-toggle" />
@@ -56,16 +70,34 @@ next:
     </label>
   </span>
 
-  <p>Prompt, effective problem-solving is what keeps your subscribers happy and your business running. Our commitment is to provide support that's friendly, responsive, and effective — so you can focus on what you do best: managing your subscription business. We offer service options tailored to the unique needs of your business, including:</p>
-  <ul class="rp-list">
-    <li>Access to our comprehensive self-serve product documentation.</li>
-    <li>Direct channels to our technical support team via Portal, Chat, and Email.</li>
-    <li>Guaranteed response times based on our service level objectives.</li>
-  </ul>
+  <div class="rp-card">
+    <div class="rp-h3" id="our-commitment-to-you"><a class="rp-anchor" href="#our-commitment-to-you">Our commitment to you</a></div>
+    <p>Prompt, effective problem-solving is what keeps your subscribers happy and your business running. Our commitment is to provide support that's friendly, responsive, and effective — so you can focus on what you do best: managing your subscription business. Service options are tailored to the unique needs of your business, including:</p>
+    <ul>
+      <li>Access to our comprehensive self-serve product documentation.</li>
+      <li>Direct channels to our technical support team via Portal, Chat, and Email.</li>
+      <li>Guaranteed response times based on our service level objectives.</li>
+    </ul>
+  </div>
 
   <!-- Sales channel -->
   <div class="rp-h1" id="sales-channel"><a class="rp-anchor" href="#sales-channel">Sales channel</a></div>
-  <p>New to Recurly, curious about plans, or interested in a demo? Email our sales team at <a href="mailto:sales@recurly.com">sales@recurly.com</a> or start a conversation through our <a href="https://recurly.com/demo/contact-sales/" target="_blank">Contact Sales</a> page.</p>
+  <p>New to Recurly, curious about plans, or interested in a demo? Choose the path that fits.</p>
+
+</div>
+`}</HTMLBlock>
+
+<Cards columns={2}>
+  <Card title="Email sales" href="mailto:sales@recurly.com" icon="fa-envelope">
+  Drop our sales team a line at sales@recurly.com.
+  </Card>
+  <Card title="Contact sales" href="https://recurly.com/demo/contact-sales/" target="_blank" icon="fa-handshake">
+  Start a conversation or request a demo through our Contact Sales page.
+  </Card>
+</Cards>
+
+<HTMLBlock>{`
+<div class="rp-page">
 
   <span class="rp-zoom">
     <input type="checkbox" id="zoom-contact-sales-page" class="rp-zoom-toggle" />
@@ -82,9 +114,25 @@ next:
 
   <!-- Documentation -->
   <div class="rp-h1" id="documentation"><a class="rp-anchor" href="#documentation">Documentation</a></div>
+  <p>Visit any of the sections in our documentation hub to navigate through product documentation, API guides, and the API reference.</p>
 
-  <div class="rp-h2" id="product"><a class="rp-anchor" href="#product">Product</a></div>
-  <p>Explore our comprehensive documentation on Recurly's product features and capabilities. Each topic covers a specific feature, functionality, or product area in depth — dive in to understand how Recurly fits your business and how to get the most from your subscription management.</p>
+</div>
+`}</HTMLBlock>
+
+<Cards columns={3}>
+  <Card title="Product documentation" href="https://docs.recurly.com" target="_blank" icon="fa-book">
+  Features, settings, and how-to guides for every part of the Recurly platform.
+  </Card>
+  <Card title="API guides" href="https://recurly.com/developers/" target="_blank" icon="fa-code">
+  Walkthroughs and integration patterns to help you build on Recurly.
+  </Card>
+  <Card title="API reference" href="https://recurly.com/developers/api/" target="_blank" icon="fa-terminal">
+  The complete reference for every Recurly API endpoint, parameter, and response.
+  </Card>
+</Cards>
+
+<HTMLBlock>{`
+<div class="rp-page">
 
   <span class="rp-zoom">
     <input type="checkbox" id="zoom-product-documentation" class="rp-zoom-toggle" />
@@ -99,21 +147,13 @@ next:
     </label>
   </span>
 
-  <div class="rp-h2" id="technical-documentation"><a class="rp-anchor" href="#technical-documentation">Technical documentation</a></div>
-  <p>For everything related to our API, head to our Development Hub. It contains comprehensive guides and resources designed to support you from the start of your Recurly integration through ongoing operations. Whether you're new to Recurly or troubleshooting a specific challenge, the Development Hub has what you need to keep things running smoothly.</p>
-
-  <span class="rp-zoom">
-    <input type="checkbox" id="zoom-development-hub" class="rp-zoom-toggle" />
-    <label for="zoom-development-hub">
-      <img class="rp-zoom-img"
-           src="https://files.readme.io/1fda36e-image.png"
-           alt="Recurly Development Hub"
-           style="display:block; width:280px; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px;" />
-    </label>
-    <label for="zoom-development-hub" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/1fda36e-image.png" alt="" />
-    </label>
-  </span>
+  <div class="rp-callout rp-callout-tip">
+    <div><strong>Can't find what you need?</strong> Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a> and our team will help you out.</div>
+  </div>
 
 </div>
 `}</HTMLBlock>
+
+---
+📋 TODO before publishing:
+- [ ] Confirm the URLs used for the three Documentation cards — Product documentation (`https://docs.recurly.com`), API guides (`https://recurly.com/developers/`), and API reference (`https://recurly.com/developers/api/`) are best-guess placeholders. Update if your team uses different canonical destinations.
