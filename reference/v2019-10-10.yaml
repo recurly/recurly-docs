@@ -320,6 +320,12 @@ x-tagGroups:
       - purchase
       - usage
       - automated_exports
+  - name: Invoices and Payments
+    tags:
+      - invoice
+      - line_item
+      - credit_payment
+      - transaction
   - name: Products and Promotions
     tags:
       - item
@@ -329,12 +335,6 @@ x-tagGroups:
       - coupon
       - coupon_redemption
       - unique_coupon_code
-  - name: Invoices and Payments
-    tags:
-      - invoice
-      - line_item
-      - credit_payment
-      - transaction
   - name: Configuration
     tags:
       - site
