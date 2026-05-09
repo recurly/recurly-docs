@@ -323,14 +323,12 @@ x-tagGroups:
       - usage
       - automated_exports
       - gift_cards
-  - name: App Management
+  - name: Invoices and Payments
     tags:
-      - external_subscriptions
-      - external_invoices
-      - external_products
-      - external_accounts
-      - external_product_references
-      - external_payment_phases
+      - invoice
+      - line_item
+      - credit_payment
+      - transaction
   - name: Products and Promotions
     tags:
       - item
@@ -341,12 +339,6 @@ x-tagGroups:
       - coupon_redemption
       - unique_coupon_code
       - price_segment
-  - name: Invoices and Payments
-    tags:
-      - invoice
-      - line_item
-      - credit_payment
-      - transaction
   - name: Configuration
     tags:
       - site
@@ -356,6 +348,14 @@ x-tagGroups:
       - business_entities
       - general_ledger_account
       - performance_obligations
+  - name: App Management
+    tags:
+      - external_subscriptions
+      - external_invoices
+      - external_products
+      - external_accounts
+      - external_product_references
+      - external_payment_phases
 tags:
   - name: site
     x-displayName: Site
