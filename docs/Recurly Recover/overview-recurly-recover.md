@@ -8,9 +8,9 @@ metadata:
 ---
 # Overview
 
-Recurly Recover is a standalone retry engine that lets you collect on past due invoices without using Recurly as your primary subscription management or billing platform. It's purpose-built for merchants who need a dedicated, flexible retry engine that works independently of the rest of Recurly's infrastructure and independently of a merchant’s billing stack. 
+Recurly Recover is a standalone retry engine that lets you collect on past due invoices without using Recurly as your primary subscription management or billing platform. It's purpose-built for merchants who need a dedicated, flexible retry engine that works independently of the rest of Recurly's infrastructure and independently of a merchant’s billing stack.
 
-When you submit a past-due invoice via the Recovery API, Recurly automatically creates the necessary account objects, calculates an optimized retry schedule, and manages the full collection lifecycle — until the invoice is paid or the retry window is exhausted. 
+When you submit a past-due invoice via the Recovery API, Recurly automatically creates the necessary account objects, calculates an optimized retry schedule, and manages the full collection lifecycle — until the invoice is paid or the retry window is exhausted.
 
 Note: There is no need to configure plans, items, or taxes. Setup is limited to what's described in the Prerequisites section above.
 
@@ -22,16 +22,16 @@ If you are already a Recurly Subscriptions customer, payment recovery is include
 * A supported payment gateway configured — currently Stripe,  Braintree, CommerceHub only.
 * At least one retry window (dunning campaign) configured in the Recurly Admin UI.
 
-### Limitations 
+### Limitations
 
-* Recurly Recover is intended for merchants using a subscription management and billing solution **other than** Recurly's. It is not intended to be combined with Recurly's full subscription management product. 
+* Recurly Recover is intended for merchants using a subscription management and billing solution **other than** Recurly's. It is not intended to be combined with Recurly's full subscription management product.
 * Accounts can only be created via the API — not through the Admin U.
 * Each successful API call creates one account with one invoice. Calling the API with an existing account code returns an error.
 * Only Stripe, Braintree, and CommerceHub are supported as payment gateways at this time.
 
-### Key benefits 
+### Key benefits
 
-* Independent of your billing stack: You don't need Recurly for subscription management to use its retry engine. Recurly Recover integrates with your existing infrastructure and is entirely self-serve. 
+* Independent of your billing stack: You don't need Recurly for subscription management to use its retry engine. Recurly Recover integrates with your existing infrastructure and is entirely self-serve.
 * Flexible dunning campaign control: Assign specific dunning campaigns per API request, giving you the ability to run A/B tests across different retry windows and strategies.
 
 # Key details
@@ -41,7 +41,7 @@ If you are already a Recurly Subscriptions customer, payment recovery is include
 1. A payment fails on your platform.
 2. You pause your own retry attempts for that invoice.
 3. You call the Recovery API (POST /invoices/recovery) with the account details, payment method tokens, prior attempt history, and the retry window you want Recurly to use.
-4. Recurly creates an account, a past-due invoice, and the corresponding failed transaction. 
+4. Recurly creates an account, a past-due invoice, and the corresponding failed transaction.
 5. Recurly calculates the first retry date based on the attempt history you've provided and begins retrying according to the assigned retry window.
 6. When a retry succeeds or the retry window is exhausted, Recurly fires a webhook event and you can update the invoice state in your own system.
 
@@ -52,9 +52,9 @@ If you are already a Recurly Subscriptions customer, payment recovery is include
 Recurly Recover currently supports **Stripe**, **Braintree**, and **CommerceHub**. You must connect at least one gateway before submitting invoices.
 
 1. In the Recurly Admin UI, go to **Configuration → Payment Gateways**
-2. Select your gateway and follow the connection steps: 
-   1. **Stripe**: Connect via OAuth or enter a restricted API key. If a publishable key is not required for your integration, a placeholder value is accepted. 
-   2. **Braintree**: Enter your merchant ID, public key, and private key. 
+2. Select your gateway and follow the connection steps:
+   1. **Stripe**: Connect via OAuth or enter a restricted API key. If a publishable key is not required for your integration, a placeholder value is accepted.
+   2. **Braintree**: Enter your merchant ID, public key, and private key.
 3. Once connected, note the **gateway code** assigned to each connection. You will pass this value in your API requests to route transactions to the correct gateway.
 
 If you need to route different card types or merchant category codes through separate gateway accounts (for example, separate Stripe connections per MCC), you can add multiple connections for the same gateway provider. Each connection receives a unique gateway code.
@@ -75,7 +75,7 @@ Retry windows are configured using Recurly's dunning campaign feature.
 
 **Tip**: Create a distinct retry window for each retry strategy you want to test. Since each API request specifies its own `dunning_campaign_id`, you can run A/B tests across different window lengths by assigning different campaign codes at submission time.
 
-### Step 3: Generate your API key 
+### Step 3: Generate your API key
 
 1. In the Recurly Admin UI, go to **Integrations → API Credentials**
 2. Copy your **private API key** — this is the credential you'll use to authenticate Recovery API requests
@@ -1415,12 +1415,22 @@ When the Wallet feature is enabled, payment methods are designated as primary or
 
 ## FAQs
 
-Do I need to use Recurly as my subscription management platform to use Recurly Recover? No. Recurly Recover is designed to work independently — you can retry failed invoice collection even if Recurly isn't your subscription management or billing platform. We don't recommend combining Recurly Recover with Recurly's full subscription management product at this time. What happens when a past due invoice is submitted via the API? Recurly creates an account (without a subscription), along with a charge, a past due invoice, and one or more failed transactions. Billing information is stored on the account, and Recurly automatically calculates the next collection attempt date based on the data in the request. Can I stop retry attempts on a past due invoice? Yes. While an invoice is in a Past Due state, you can cancel all future collection attempts at any time by marking the invoice as Failed or Paid using the Recurly Invoice API.
+**Do I need to use Recurly as my subscription management platform to use Recurly Recover?**
 
-What happens when the retry window is exhausted without a successful payment?
+No. Recurly Recover is designed to work independently — you can retry failed invoice collection even if Recurly isn't your subscription management or billing platform. We don't recommend combining Recurly Recover with Recurly's full subscription management product at this time. 
+
+**What happens when a past due invoice is submitted via the API?**
+
+Recurly creates an account (without a subscription), along with a charge, a past due invoice, and one or more failed transactions. Billing information is stored on the account, and Recurly automatically calculates the next collection attempt date based on the data in the request.
+
+**Can I stop retry attempts on a past due invoice?** 
+
+Yes. While an invoice is in a Past Due state, you can cancel all future collection attempts at any time by marking the invoice as Failed or Paid using the Recurly Invoice API.
+
+**What happens when the retry window is exhausted without a successful payment?**
 
 The invoice is marked as failed and a webhook event fires. No further retry attempts are made. You can then handle the outcome in your own system — for example, cancelling the subscriber's access or triggering a win-back flow.
 
-What if a customer updates their payment method in my system?
+**What if a customer updates their payment method in my system?**
 
 If a customer provides a new payment method externally, mark the in-flight Recurly invoice as successful (if payment was collected) or as failed (to abandon the current attempt), then submit a new recovery request with the updated payment method token.
