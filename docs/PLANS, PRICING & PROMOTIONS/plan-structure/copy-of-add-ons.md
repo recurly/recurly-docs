@@ -8,11 +8,6 @@ hidden: true
 metadata:
   robots: index
 ---
-Title: Christian's Journey: The ReadMe Refactored Documentation System
-Metadata description: A comprehensive showcase of Recurly's branded documentation system, demonstrating every design component, MDX integration, and workflow that powers publish-ready technical pages.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
 
   <div class="rp-overview">
