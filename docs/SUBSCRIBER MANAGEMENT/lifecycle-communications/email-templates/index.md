@@ -594,6 +594,8 @@ For merchants using Multiple Business Entities, the company value merged into ea
 | `{{subscription_total_term_amount}}`                | Total cost of the subscription, excluding usage charges and setup fees                                                                                                                 |
 | `{{subscription_shipping_cost}}`                    | Amount charged to the customer for shipping                                                                                                                                            |
 | `{{subscription_shipping_method}}`                  | Shipping method used on the charge                                                                                                                                                     |
+| `{{subscription_remaining_pause_cycles}}`  | Number of pause cycles remaining on the subscription                                                                                                                                    |
+| `{{subscription_resume_at}}`               | Date when a paused subscription will resume                                                                                                                                             |
 
 #### Subscriptions
 
