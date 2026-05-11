@@ -2,7 +2,7 @@
 title: 'Overview: Recurly Recover'
 excerpt: "Retry failed invoice collection independently of your billing platform using \tRecurly Recover — a flexible and intelligent API-driven retry engine that works alongside your existing subscription infrastructure."
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
