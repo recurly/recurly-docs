@@ -125,6 +125,9 @@ Recurly supports several webhooks with Stripe including gateway token lifecycle 
   * Expired Authorization Events: If you are using Auth and Capture logic with Stripe, uncaptured authorizations may expire if not captured within 7 days. In this case, the authorization will be updated to a Void status in Recurly and can no longer be captured.
   * Hard Decline Events: In certain cases, Stripe may update a charge to reflect new retry advice. In cases where Stripe deems it necessary, Recurly will stop retries on a previously soft-declined transaction.
   * Chargeback Dispute Events: If you receive a chargeback for a card payment, and you are using the early access Chargeback management feature, you will see Refund Invoices with an origin of Chargeback shown in your Recurly dashboard -- depending on your settings, the affected subscription can be automatically expired.
+  * Radar Review Events: If you are setting up 'review' rules in Stripe Radar, we will return `approved_fraud_review` responses via API when these rules trigger in Stripe. If you have Stripe Webhooks enabled for Recurly (reach out to Recurly Support), when you close a review Recurly will take certain actions on the transaction. 
+    * If you mark a Review as Closed with reason `canceled`, Recurly will **automatically void pending Auths, or Void/Refund Purchases.**
+    * If you mark a Review as Closed with reasons of including `approved`, `redacted`, or `acknowledged`, Recurly will take no action on the transaction.
 
 ## Special Payment Method Handling
 
