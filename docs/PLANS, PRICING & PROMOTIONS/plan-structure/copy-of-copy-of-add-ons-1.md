@@ -8,11 +8,23 @@ hidden: true
 metadata:
   robots: noindex
 ---
+Title: Add-ons
+Metadata description: How add-ons work in Recurly, including pricing models, billing options, and how to configure them on plans or directly on subscriptions.
+
+---PASTE INTO EDITOR BELOW---
+
 <div className="rp-overview">
   Add-ons let you charge for extras alongside a subscription's base price — flexible pricing, per-plan or shared across plans, and configurable directly on a subscription when needed.
 </div>
 
 <div className="rp-plan">✦ Available on all Recurly plans</div>
+
+<div className="rp-toc">
+  <a className="rp-toc-pill" href="#definition"><span className="rp-toc-num">1</span>Definition</a>
+  <a className="rp-toc-pill" href="#key-benefits"><span className="rp-toc-num">2</span>Key benefits</a>
+  <a className="rp-toc-pill" href="#creating-an-add-on"><span className="rp-toc-num">3</span>Creating an add-on</a>
+  <a className="rp-toc-pill" href="#configuring-item-add-ons-directly-on-subscriptions"><span className="rp-toc-num">4</span>Configuring item add-ons on subscriptions</a>
+</div>
 
 ## Definition
 
