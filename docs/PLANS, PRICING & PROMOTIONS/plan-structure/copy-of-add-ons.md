@@ -8,6 +8,11 @@ hidden: true
 metadata:
   robots: index
 ---
+Title: Christian's Journey: The ReadMe Refactored Documentation System
+Metadata description: A comprehensive showcase of Recurly's branded documentation system, demonstrating every design component, MDX integration, and workflow that powers publish-ready technical pages.
+
+---PASTE INTO EDITOR BELOW---
+
 <div class="rp-page">
 
   <div class="rp-overview">
@@ -25,160 +30,165 @@ metadata:
     <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">6</span>FAQs</a>
   </div>
 
-  <div class="rp-h1" id="definition"><a class="rp-anchor" href="#definition">Definition</a></div>
-  <div class="rp-definition">
-    The branding-aligned-product-documentation skill transforms raw documentation drafts into publish-ready MDX page code for ReadMe Refactored. It combines a design system of reusable HTML components with native ReadMe MDX elements, letting authors build polished, on-brand pages without writing CSS. Every page inherits Recurly's brand colors, typography, and layout patterns from a central host theme — no embedded stylesheets, no style drift.
+</div>
+
+# Definition
+
+<div class="rp-definition">
+  The branding-aligned-product-documentation skill transforms raw documentation drafts into publish-ready MDX page code for ReadMe Refactored. It combines a design system of reusable HTML components with native ReadMe MDX elements, letting authors build polished, on-brand pages without writing CSS. Every page inherits Recurly's brand colors, typography, and layout patterns from a central host theme — no embedded stylesheets, no style drift.
+</div>
+
+# Key benefits
+
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Consistency at scale</strong>
+    <span>Every page shares the same design tokens, spacing, typography, and color palette. No design drift, no one-off styles, no surprises in the final render.</span>
   </div>
-
-  <div class="rp-h1" id="key-benefits"><a class="rp-anchor" href="#key-benefits">Key benefits</a></div>
-
-  <div class="rp-benefits rp-benefits-2x2">
-    <div class="rp-benefit">
-      <div class="rp-benefit-icon">✦</div>
-      <strong>Consistency at scale</strong>
-      <span>Every page shares the same design tokens, spacing, typography, and color palette. No design drift, no one-off styles, no surprises in the final render.</span>
-    </div>
-    <div class="rp-benefit">
-      <div class="rp-benefit-icon">✦</div>
-      <strong>No CSS required</strong>
-      <span>All styling lives in the host theme. Authors paste pure MDX with rp-* classes — no style blocks, no Tailwind, no environment setup.</span>
-    </div>
-    <div class="rp-benefit">
-      <div class="rp-benefit-icon">✦</div>
-      <strong>Rapid iteration</strong>
-      <span>The skill bridges content structure (delegated to base skills) and visual rendering. When a base skill updates, branding changes inherit automatically.</span>
-    </div>
-    <div class="rp-benefit">
-      <div class="rp-benefit-icon">✦</div>
-      <strong>Rich interactivity</strong>
-      <span>Combine rp-* HTML components with native ReadMe MDX: Accordions, Tabs, Cards, and Columns all render with brand styling automatically.</span>
-    </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>No CSS required</strong>
+    <span>All styling lives in the host theme. Authors paste pure MDX with rp-* classes — no style blocks, no Tailwind, no environment setup.</span>
   </div>
-
-  <div class="rp-h1" id="the-design-system"><a class="rp-anchor" href="#the-design-system">The design system</a></div>
-
-  <div class="rp-h2" id="page-wrapper-and-typography"><a class="rp-anchor" href="#page-wrapper-and-typography">Page wrapper and typography</a></div>
-
-  <p>Every page wraps its main content in <code>&lt;div class="rp-page"&gt;</code>. This single class applies Recurly's font family, line-height, max-width, and color palette automatically. No additional setup needed.</p>
-
-  <div class="rp-callout rp-callout-tip">
-    <div><strong>Tip</strong>The rp-page wrapper inherits all typography from the host theme. Your page stays in sync with Recurly's design language even when brand guidelines update.</div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Rapid iteration</strong>
+    <span>The skill bridges content structure (delegated to base skills) and visual rendering. When a base skill updates, branding changes inherit automatically.</span>
   </div>
-
-  <div class="rp-h2" id="heading-hierarchy"><a class="rp-anchor" href="#heading-hierarchy">Heading hierarchy</a></div>
-
-  <p>Four heading levels, each with distinct visual weight and anchor support:</p>
-
-  <table class="rp-params">
-    <tr class="rp-thead-row"><td>Level</td><td>Use for</td></tr>
-    <tr><td><code>rp-h1</code></td><td>Top-level sections (Definition, Key benefits, Key details, FAQs)</td></tr>
-    <tr><td><code>rp-h2</code></td><td>Subsections inside a major section or step</td></tr>
-    <tr><td><code>rp-h3</code></td><td>Labels inside cards, callouts, or grouped content</td></tr>
-    <tr><td><code>rp-h4</code></td><td>Step titles inside rp-step cards</td></tr>
-  </table>
-
-  <p>Every heading includes an anchor ID and a clickable <code>rp-anchor</code> link. Click any heading to update the URL bar — perfect for sharing direct links to sections.</p>
-
-  <div class="rp-h2" id="content-cards"><a class="rp-anchor" href="#content-cards">Content cards</a></div>
-
-  <div class="rp-card">
-    <div class="rp-h3">What is rp-card?</div>
-    <p>A general-purpose container for grouped content. Use it for callouts that don't fit the four callout types (note, tip, warning, important), explanatory boxes, or any content that benefits from visual separation without earning its own heading.</p>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Rich interactivity</strong>
+    <span>Combine rp-* HTML components with native ReadMe MDX: Accordions, Tabs, Cards, and Columns all render with brand styling automatically.</span>
   </div>
+</div>
 
-  <div class="rp-h2" id="callout-types"><a class="rp-anchor" href="#callout-types">Callout types</a></div>
+# The design system
 
-  <p>Four callout flavors handle different levels of urgency and intent:</p>
+## Page wrapper and typography
 
-  <div class="rp-callout rp-callout-note">
-    <div><strong>Note</strong>Neutral callouts for orientation, context, or general guidance. Use when you want to separate content without implying urgency.</div>
-  </div>
+Every page wraps its branded top matter — overview, plan pill, TOC — in `<div class="rp-page">`. This single class applies Recurly's font family, line-height, max-width, and color palette to its children. Major section headings sit outside the wrapper as native markdown so they register in ReadMe's built-in page TOC sidebar.
 
-  <div class="rp-callout rp-callout-tip">
-    <div><strong>Tip</strong>Helpful hints and best practices. Use when offering advice that can accelerate the reader's understanding or workflow.</div>
-  </div>
+<div class="rp-callout rp-callout-tip">
+  <div><strong>Tip</strong>The rp-page wrapper inherits all typography from the host theme. Your page stays in sync with Recurly's design language even when brand guidelines update.</div>
+</div>
 
-  <div class="rp-callout rp-callout-warning">
-    <div><strong>Warning</strong>Important cautions or non-critical restrictions. Use when the reader should proceed with awareness of a limitation or side effect.</div>
-  </div>
+## Heading hierarchy
 
-  <div class="rp-callout rp-callout-important">
-    <div><strong>Important</strong>Critical alerts that require action or carry serious consequences. Use sparingly — only when something could break or fail.</div>
-  </div>
+All headings are written as **native markdown** — `#` through `#####`. ReadMe applies its global CSS to these automatically and registers them in the built-in page TOC sidebar. No `rp-h*` classes, no `id` attributes, no `rp-anchor` wrappers needed.
 
-  <div class="rp-h2" id="numbered-steps"><a class="rp-anchor" href="#numbered-steps">Numbered steps</a></div>
+<table class="rp-params">
+  <tr class="rp-thead-row"><td>Level</td><td>Use for</td></tr>
+  <tr><td><code>#</code> h1</td><td>Top-level sections (Definition, Key benefits, Key details, FAQs)</td></tr>
+  <tr><td><code>##</code> h2</td><td>Subsections inside a major section or step body</td></tr>
+  <tr><td><code>###</code> h3</td><td>Labels inside grouped content</td></tr>
+  <tr><td><code>####</code> h4</td><td>Step titles inside rp-step cards (handled by the card itself)</td></tr>
+  <tr><td><code>#####</code> h5</td><td>Lowest-level label — rarely needed</td></tr>
+</table>
 
-  <p>Steps use the <code>rp-step</code> card: a yellow-circled number paired with an action title and a brief description. Two patterns apply depending on content density.</p>
+ReadMe slugifies heading text automatically: "Setting up Adyen" becomes `#setting-up-adyen`. The native page TOC sidebar then registers it.
 
-  <p><strong>Lightweight pattern</strong> — group brief steps in a single <code>rp-steps</code> wrapper:</p>
+## Content cards
 
-  <div class="rp-steps">
-    <div class="rp-step">
-      <div class="rp-step-num">1</div>
-      <div><h4>Stack brief steps together</h4><p>Use this pattern when each step is 1–2 sentences with no code, images, or tables. Group all steps in a single rp-steps wrapper.</p></div>
-    </div>
-    <div class="rp-step">
-      <div class="rp-step-num">2</div>
-      <div><h4>Let the wrapper handle spacing</h4><p>The wrapper stacks cards automatically with consistent spacing, creating a unified procedure block.</p></div>
-    </div>
-    <div class="rp-step">
-      <div class="rp-step-num">3</div>
-      <div><h4>Keep titles as action verbs</h4><p>No "Step N:" prefix — the yellow circle handles the number. The h4 is just the action.</p></div>
-    </div>
-  </div>
+<div class="rp-card">
 
-  <p>For heavy steps with code blocks, screenshots, or tables, place each step in its own wrapper and let supporting content flow naturally between them.</p>
+### What is rp-card?
 
-  <div class="rp-h2" id="navigation-buttons"><a class="rp-anchor" href="#navigation-buttons">Navigation buttons</a></div>
-
-  <p>Three button styles serve different roles:</p>
-
-  <div>
-    <a class="rp-btn rp-btn-primary" href="#the-design-system" target="_blank">Primary button →</a>
-    <a class="rp-btn rp-btn-secondary" href="#the-design-system" target="_blank">Secondary button →</a>
-    <a class="rp-btn rp-btn-ghost" href="#the-design-system" target="_blank">Ghost button</a>
-  </div>
-
-  <p><strong>Primary</strong> handles main navigation and "learn more" links. <strong>Secondary</strong> handles downloads and primary actions. <strong>Ghost</strong> handles supporting or tertiary links.</p>
-
-  <div class="rp-h2" id="tables"><a class="rp-anchor" href="#tables">Tables</a></div>
-
-  <p>Three table classes cover different data shapes. All use <code>&lt;tr class="rp-thead-row"&gt;</code> for headers — never <code>&lt;thead&gt;</code> or <code>&lt;th&gt;</code>, which ReadMe overrides with pale, nearly invisible styling.</p>
-
-  <table class="rp-gw-table">
-    <tr class="rp-thead-row"><td>Table class</td><td>Use for</td></tr>
-    <tr><td>rp-gw-table</td><td>Two-column feature matrices (feature → details). First column is bolded and fixed 35% width.</td></tr>
-    <tr><td>rp-params</td><td>Two-column parameter or field references (param name → description). First column is bolded and fixed 28% width.</td></tr>
-    <tr><td>rp-pm-table</td><td>Compact multi-column grids where every column is equal-weight. No special first-column treatment.</td></tr>
-  </table>
-
-  <div class="rp-h2" id="lists"><a class="rp-anchor" href="#lists">Lists</a></div>
-
-  <p>Use <code>rp-list</code> for bulleted or numbered lists that benefit from a contained background:</p>
-
-  <ul class="rp-list">
-    <li>Each item is easy to scan</li>
-    <li>The container provides visual separation</li>
-    <li>Padding and border-radius keep content organized</li>
-    <li>Pairs well with step descriptions or prerequisites</li>
-  </ul>
-
-  <div class="rp-h2" id="benefits-grid"><a class="rp-anchor" href="#benefits-grid">Benefits grid</a></div>
-
-  <p>Display 3, 4, or 5 benefit cards in a responsive grid. Use <code>rp-benefits-2x2</code> for exactly 4 cards to force a 2×2 layout — otherwise four items would wrap awkwardly.</p>
-
-  <div class="rp-callout rp-callout-note">
-    <div><strong>Note</strong>The grid in the Key benefits section above uses rp-benefits with the 2x2 variant. On mobile, all grids collapse to a single column automatically.</div>
-  </div>
-
-  <div class="rp-h1" id="mdx-components"><a class="rp-anchor" href="#mdx-components">MDX components</a></div>
-
-  <p>MDX components — Accordion, Tabs, Cards, Columns — mix freely with rp-* HTML in the same page. Fenced code blocks also live as native markdown, picking up ReadMe's dark background and syntax highlighting automatically.</p>
+A general-purpose container for grouped content. Use it for callouts that don't fit the four callout types (note, tip, warning, important), explanatory boxes, or any content that benefits from visual separation without earning its own heading.
 
 </div>
 
+## Callout types
+
+Four callout flavors handle different levels of urgency and intent:
+
+<div class="rp-callout rp-callout-note">
+  <div><strong>Note</strong>Neutral callouts for orientation, context, or general guidance. Use when you want to separate content without implying urgency.</div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong>Tip</strong>Helpful hints and best practices. Use when offering advice that can accelerate the reader's understanding or workflow.</div>
+</div>
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong>Warning</strong>Important cautions or non-critical restrictions. Use when the reader should proceed with awareness of a limitation or side effect.</div>
+</div>
+
+<div class="rp-callout rp-callout-important">
+  <div><strong>Important</strong>Critical alerts that require action or carry serious consequences. Use sparingly — only when something could break or fail.</div>
+</div>
+
+## Numbered steps
+
+Steps use the `rp-step` card: a yellow-circled number paired with an action title and a brief description. Two patterns apply depending on content density.
+
+**Lightweight pattern** — group brief steps in a single `rp-steps` wrapper:
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Stack brief steps together</h4><p>Use this pattern when each step is 1–2 sentences with no code, images, or tables. Group all steps in a single rp-steps wrapper.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Let the wrapper handle spacing</h4><p>The wrapper stacks cards automatically with consistent spacing, creating a unified procedure block.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Keep titles as action verbs</h4><p>No "Step N:" prefix — the yellow circle handles the number. The h4 is just the action.</p></div>
+  </div>
+</div>
+
+For heavy steps with code blocks, screenshots, or tables, place each step in its own wrapper and let supporting content flow naturally between them.
+
+## Navigation buttons
+
+Three button styles serve different roles:
+
+<div>
+  <a class="rp-btn rp-btn-primary" href="#the-design-system" target="_blank">Primary button →</a>
+  <a class="rp-btn rp-btn-secondary" href="#the-design-system" target="_blank">Secondary button →</a>
+  <a class="rp-btn rp-btn-ghost" href="#the-design-system" target="_blank">Ghost button</a>
+</div>
+
+**Primary** handles main navigation and "learn more" links. **Secondary** handles downloads and primary actions. **Ghost** handles supporting or tertiary links.
+
+## Tables
+
+Three table classes cover different data shapes. All use `<tr class="rp-thead-row">` for headers — never `<thead>` or `<th>`, which ReadMe overrides with pale, nearly invisible styling.
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Table class</td><td>Use for</td></tr>
+  <tr><td>rp-gw-table</td><td>Two-column feature matrices (feature → details). First column is bolded and fixed 35% width.</td></tr>
+  <tr><td>rp-params</td><td>Two-column parameter or field references (param name → description). First column is bolded and fixed 28% width.</td></tr>
+  <tr><td>rp-pm-table</td><td>Compact multi-column grids where every column is equal-weight. No special first-column treatment.</td></tr>
+</table>
+
+## Lists
+
+Use `rp-list` for bulleted or numbered lists that benefit from a contained background:
+
+<ul class="rp-list">
+  <li>Each item is easy to scan</li>
+  <li>The container provides visual separation</li>
+  <li>Padding and border-radius keep content organized</li>
+  <li>Pairs well with step descriptions or prerequisites</li>
+</ul>
+
+## Benefits grid
+
+Display 3, 4, or 5 benefit cards in a responsive grid. Use `rp-benefits-2x2` for exactly 4 cards to force a 2×2 layout — otherwise four items would wrap awkwardly.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong>Note</strong>The grid in the Key benefits section above uses rp-benefits with the 2x2 variant. On mobile, all grids collapse to a single column automatically.</div>
+</div>
+
+# MDX components
+
+MDX components — Accordion, Tabs, Cards, Columns — mix freely with rp-* HTML in the same page. Fenced code blocks also live as native markdown, picking up ReadMe's dark background and syntax highlighting automatically.
+
 ```javascript
-// Example: syntax-highlighted code block sitting between rp-* HTML
+// Example: syntax-highlighted code block sitting alongside rp-* HTML
 const example = {
   component: "lives as native markdown",
   styling: "picked up by host theme automatically",
@@ -186,13 +196,9 @@ const example = {
 };
 ```
 
-<div class="rp-page">
+## Tabs and code alternatives
 
-  <div class="rp-h2" id="tabs-and-code-alternatives"><a class="rp-anchor" href="#tabs-and-code-alternatives">Tabs and code alternatives</a></div>
-
-  <p>Use <code>&lt;Tabs&gt;</code> to show alternative views of the same task: multi-language code, by-environment instructions, or by-integration workflows. The active tab displays the yellow brand pill.</p>
-
-</div>
+Use `<Tabs>` to show alternative views of the same task: multi-language code, by-environment instructions, or by-integration workflows. The active tab displays the yellow brand pill.
 
 <Tabs>
   <Tab title="JavaScript">
@@ -229,13 +235,9 @@ const example = {
   </Tab>
 </Tabs>
 
-<div class="rp-page">
+## Cards for navigation
 
-  <div class="rp-h2" id="cards-for-navigation"><a class="rp-anchor" href="#cards-for-navigation">Cards for navigation</a></div>
-
-  <p>Use <code>&lt;Cards&gt;</code> to build small navigation grids — 3 to 6 clickable destination tiles with icons, titles, and one-sentence blurbs. Below, you'll see a Cards component linking to related resources.</p>
-
-</div>
+Use `<Cards>` to build small navigation grids — 3 to 6 clickable destination tiles with icons, titles, and one-sentence blurbs. The Cards component below links to related resources.
 
 <Cards>
   <Card title="Design system" href="#the-design-system" icon="fa-palette">
@@ -249,13 +251,9 @@ const example = {
   </Card>
 </Cards>
 
-<div class="rp-page">
+## Columns for comparison
 
-  <div class="rp-h2" id="columns-for-comparison"><a class="rp-anchor" href="#columns-for-comparison">Columns for comparison</a></div>
-
-  <p>Use <code>&lt;Columns&gt;</code> to display content side by side. Perfect for before/after pairs, request/response examples, or don't/do comparisons.</p>
-
-</div>
+Use `<Columns>` to display content side by side. Perfect for before/after pairs, request/response examples, or don't/do comparisons.
 
 <Columns columns={2}>
   <Column>
@@ -266,90 +264,97 @@ const example = {
   </Column>
 </Columns>
 
-<div class="rp-page">
+# Workflow and patterns
 
-  <div class="rp-h1" id="workflow-and-patterns"><a class="rp-anchor" href="#workflow-and-patterns">Workflow and patterns</a></div>
+## Pre-generation discovery
 
-  <div class="rp-h2" id="pre-generation-discovery"><a class="rp-anchor" href="#pre-generation-discovery">Pre-generation discovery</a></div>
+Before generating a page, scan the source and ask one consolidated question batch about items that would otherwise block publishing:
 
-  <p>Before generating a page, scan the source and ask one consolidated question batch about items that would otherwise block publishing:</p>
+<ul class="rp-list">
+  <li><strong>Plan availability</strong> — Which Recurly plans does this feature live on?</li>
+  <li><strong>Missing URLs</strong> — Are all links complete, or should some be left as TODO?</li>
+  <li><strong>Empty code blocks</strong> — Do you have examples for languages with placeholder fences?</li>
+  <li><strong>Images</strong> — Are all image URLs provided, or should they be flagged as TODO?</li>
+  <li><strong>Key benefits</strong> — If the source has no benefits, should we infer them?</li>
+</ul>
 
-  <ul class="rp-list">
-    <li><strong>Plan availability</strong> — Which Recurly plans does this feature live on?</li>
-    <li><strong>Missing URLs</strong> — Are all links complete, or should some be left as TODO?</li>
-    <li><strong>Empty code blocks</strong> — Do you have examples for languages with placeholder fences?</li>
-    <li><strong>Images</strong> — Are all image URLs provided, or should they be flagged as TODO?</li>
-    <li><strong>Key benefits</strong> — If the source has no benefits, should we infer them?</li>
-  </ul>
+<div class="rp-callout rp-callout-tip">
+  <div><strong>Tip</strong>Asking questions first keeps the user engaged and means generation produces something publish-ready in one pass — not a TODO list that surfaces after a long wait.</div>
+</div>
 
-  <div class="rp-callout rp-callout-tip">
-    <div><strong>Tip</strong>Asking questions first keeps the user engaged and means generation produces something publish-ready in one pass — not a TODO list that surfaces after a long wait.</div>
-  </div>
+## Section weight and hierarchy
 
-  <div class="rp-h2" id="section-weight-and-hierarchy"><a class="rp-anchor" href="#section-weight-and-hierarchy">Section weight and hierarchy</a></div>
+Not every source heading becomes a section. Apply judgment based on content density:
 
-  <p>Not every source heading becomes a section. Apply judgment based on content density:</p>
+<div class="rp-card">
 
-  <div class="rp-card">
-    <div class="rp-h3">Demote if:</div>
-    <p>One or two sentences, no steps, no image, no table. Fold into a neighbor or convert to an inline <code>rp-card</code>.</p>
-  </div>
+### Demote if:
 
-  <div class="rp-card">
-    <div class="rp-h3">Promote if:</div>
-    <p>Multiple sibling subsections of the same shape (CRUD actions), or content with its own steps, screenshots, and a distinct outcome from siblings.</p>
-  </div>
-
-  <div class="rp-h2" id="image-placement-and-lightbox"><a class="rp-anchor" href="#image-placement-and-lightbox">Image placement and lightbox</a></div>
-
-  <p>Every image goes inline at the exact position it appears in the source — never grouped at the end. The lightbox pattern wraps every image so readers can click to expand full-screen without leaving the page. The pattern is JavaScript-free, using just a checkbox and labels.</p>
-
-  <div class="rp-callout rp-callout-important">
-    <div><strong>Important</strong>Correct image placement is critical because non-technical authors cannot manually reintegrate images after generation. If an image should illustrate step 3, it must appear between step 2 and step 3 in the output.</div>
-  </div>
-
-  <div class="rp-h2" id="anchor-ids-and-toc"><a class="rp-anchor" href="#anchor-ids-and-toc">Anchor IDs and TOC pills</a></div>
-
-  <p>Every <code>rp-h1</code> section gets an <code>id</code> attribute and an <code>rp-anchor</code> link. The TOC pill bar at the top of the page lists all major sections and links to their anchors. Readers jump directly to any section without scrolling.</p>
-
-  <div class="rp-callout rp-callout-note">
-    <div><strong>Note</strong>The anchor ID is generated by slugifying the heading text: "Setting up Adyen" becomes <code>id="setting-up-adyen"</code>. Strip punctuation, lowercase, replace spaces with hyphens.</div>
-  </div>
-
-  <div class="rp-h2" id="mixing-html-and-mdx"><a class="rp-anchor" href="#mixing-html-and-mdx">Mixing HTML and MDX</a></div>
-
-  <p>Output is pure MDX. Write rp-* HTML divs and MDX components (<code>&lt;Accordion&gt;</code>, <code>&lt;Tabs&gt;</code>, <code>&lt;Cards&gt;</code>, <code>&lt;Columns&gt;</code>) in any order. Wrap the main content in <code>&lt;div class="rp-page"&gt;</code> so it inherits brand typography from the host theme. No <code>&lt;style&gt;</code> blocks, no HTMLBlock wrappers, no special syntax — just clean, readable content.</p>
-
-  <table class="rp-pm-table">
-    <tr class="rp-thead-row"><td>What goes where</td><td>Example</td></tr>
-    <tr><td>rp-* HTML divs</td><td>Headings, callouts, cards, tables, benefits grids</td></tr>
-    <tr><td>Native MDX components</td><td>Accordion, Tabs, Cards, Columns, Callout, Image</td></tr>
-    <tr><td>Fenced code blocks</td><td>Triple-backtick markdown with language tag</td></tr>
-    <tr><td>Always omitted</td><td>style blocks, Tailwind classes, inline CSS hacks</td></tr>
-  </table>
-
-  <div class="rp-h2" id="the-two-layers"><a class="rp-anchor" href="#the-two-layers">The two layers</a></div>
-
-  <p>The skill has two layers: content (delegated to base skills) and rendering (this skill). Base skills control section structure, tone, grammar, and word choice. This skill controls HTML components, MDX layout, and brand visuals.</p>
-
-  <div class="rp-callout rp-callout-note">
-    <div><strong>Note</strong>If there's ever a conflict between a base skill's content rule and a rendering rule, the base skill wins. This skill only has authority over how things look, not what they say.</div>
-  </div>
-
-  <div class="rp-h1" id="faqs"><a class="rp-anchor" href="#faqs">FAQs</a></div>
+One or two sentences, no steps, no image, no table. Fold into a neighbor or convert to an inline `rp-card`.
 
 </div>
+
+<div class="rp-card">
+
+### Promote if:
+
+Multiple sibling subsections of the same shape (CRUD actions), or content with its own steps, screenshots, and a distinct outcome from siblings.
+
+</div>
+
+## Image placement and lightbox
+
+Every image goes inline at the exact position it appears in the source — never grouped at the end. The lightbox pattern wraps every image so readers can click to expand full-screen without leaving the page. The pattern is JavaScript-free, using just a checkbox and labels.
+
+<div class="rp-callout rp-callout-important">
+  <div><strong>Important</strong>Correct image placement is critical because non-technical authors cannot manually reintegrate images after generation. If an image should illustrate step 3, it must appear between step 2 and step 3 in the output.</div>
+</div>
+
+## Anchor IDs and the TOC pill bar
+
+Every native `#` heading gets an anchor ID automatically — ReadMe slugifies the heading text and registers it in the built-in page TOC sidebar. No `id` attributes, no `rp-anchor` wrappers required. On top of the native sidebar, every page also includes an `rp-toc` pill bar at the top of the content, giving readers an immediate visual map of the page structure.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong>Note</strong>The rp-toc pill bar is required on every page with two or more <code>#</code> h1 sections. Omit it only when a page has a single <code>#</code> h1.</div>
+</div>
+
+## Mixing HTML and MDX
+
+Output is pure MDX. Write rp-* HTML divs and MDX components (`<Accordion>`, `<Tabs>`, `<Cards>`, `<Columns>`) in any order. The `<div class="rp-page">` wrapper holds the branded top matter (overview, plan pill, TOC); native `#` headings and the rest of the content flow outside it. No `<style>` blocks, no HTMLBlock wrappers, no special syntax — just clean, readable content.
+
+<table class="rp-pm-table">
+  <tr class="rp-thead-row"><td>What goes where</td><td>Example</td></tr>
+  <tr><td>rp-* HTML divs</td><td>Callouts, cards, tables, benefits grids, step cards</td></tr>
+  <tr><td>Native MDX components</td><td>Accordion, Tabs, Cards, Columns, Callout, Image</td></tr>
+  <tr><td>Native markdown headings</td><td>All section headings — # through #####</td></tr>
+  <tr><td>Fenced code blocks</td><td>Triple-backtick markdown with language tag</td></tr>
+  <tr><td>Always omitted</td><td>style blocks, Tailwind classes, rp-h* divs, rp-anchor wrappers</td></tr>
+</table>
+
+## The two layers
+
+The skill has two layers: content (delegated to base skills) and rendering (this skill). Base skills control section structure, tone, grammar, and word choice. This skill controls HTML components, MDX layout, and brand visuals.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong>Note</strong>If there's ever a conflict between a base skill's content rule and a rendering rule, the base skill wins. This skill only has authority over how things look, not what they say.</div>
+</div>
+
+# FAQs
 
 <Accordion title="Can I embed a style block inside my page output?">
 No — never embed CSS in the output. All styling lives in Recurly's host theme on ReadMe. The output stays clean and copy-pasteable: just MDX with rp-* classes, plus native MDX components.
 </Accordion>
 
-<Accordion title="What if my page needs a component that doesn't exist in the design system?">
-Surface it as part of the pre-gen Q&A batch and wait for approval. The "New Section Alert" format lets you propose a new component, its purpose, rendering, and rules. The user approves, and you add it to the registry.
+<Accordion title="Do I need to add id attributes or rp-anchor wrappers to my headings?">
+No. ReadMe slugifies native markdown headings automatically and registers them in the built-in page TOC sidebar. Just write `# Heading text` and the rest is handled for you.
 </Accordion>
 
-<Accordion title="Do I need to understand ReadMe's MDX parser?">
-Only enough to know that MDX components (Accordion, Tabs, Cards, Columns) and fenced code blocks can sit anywhere in the content flow. The host theme handles all brand styling automatically — no configuration needed.
+<Accordion title="Is the rp-toc pill bar required?">
+Yes — include it on every page with two or more `#` h1 sections. It gives readers an immediate visual map at the top of the content and complements ReadMe's native TOC sidebar.
+</Accordion>
+
+<Accordion title="What if my page needs a component that doesn't exist in the design system?">
+Surface it as part of the pre-gen Q&A batch and wait for approval. The "New Section Alert" format lets you propose a new component, its purpose, rendering, and rules. The user approves, and you add it to the registry.
 </Accordion>
 
 <Accordion title="How do I handle multi-language code examples?">
