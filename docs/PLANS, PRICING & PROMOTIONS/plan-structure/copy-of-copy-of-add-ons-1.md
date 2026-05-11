@@ -8,8 +8,6 @@ hidden: true
 metadata:
   robots: noindex
 ---
-<br />
-
 <div className="rp-overview">
   Add-ons let you charge for extras alongside a subscription's base price — flexible pricing, per-plan or shared across plans, and configurable directly on a subscription when needed.
 </div>
