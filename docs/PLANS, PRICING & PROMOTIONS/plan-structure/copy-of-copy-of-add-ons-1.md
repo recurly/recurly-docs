@@ -8,10 +8,7 @@ hidden: true
 metadata:
   robots: noindex
 ---
-Title: Add-ons
-Metadata description: How add-ons work in Recurly, including pricing models, billing options, and how to configure them on plans or directly on subscriptions.
-
----PASTE INTO EDITOR BELOW---
+<br />
 
 <div className="rp-overview">
   Add-ons let you charge for extras alongside a subscription's base price — flexible pricing, per-plan or shared across plans, and configurable directly on a subscription when needed.
@@ -40,21 +37,25 @@ Metadata description: How add-ons work in Recurly, including pricing models, bil
     <strong>Versatility</strong>
     <span>Design an add-on from scratch, or derive one from an Item in your catalog and reuse it across plans.</span>
   </div>
+
   <div className="rp-benefit">
     <div className="rp-benefit-icon">✦</div>
     <strong>Customization</strong>
     <span>Define every detail — type, name, code, accounting code, pricing model, tiers, taxes, and opt-out or editable-quantity options.</span>
   </div>
+
   <div className="rp-benefit">
     <div className="rp-benefit-icon">✦</div>
     <strong>Flexible billing</strong>
     <span>Bill up front or in arrears with usage-based billing — match how your customers actually consume the add-on.</span>
   </div>
+
   <div className="rp-benefit">
     <div className="rp-benefit-icon">✦</div>
     <strong>Pricing models</strong>
     <span>Choose Fixed Price, Tiered, Volume, or Stairstep to fit any pricing strategy.</span>
   </div>
+
   <div className="rp-benefit">
     <div className="rp-benefit-icon">✦</div>
     <strong>Items on subscriptions</strong>
@@ -80,9 +81,11 @@ Metadata description: How add-ons work in Recurly, including pricing models, bil
 
 <span className="rp-zoom">
   <input type="checkbox" id="zoom-add-on-source-selector" className="rp-zoom-toggle" />
+
   <label htmlFor="zoom-add-on-source-selector">
     <img className="rp-zoom-img" src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" alt="Selector for creating an add-on unique to the plan or from an item in the catalog" style={{ display: 'block', width: '90%', margin: '16px auto', border: '1px solid #CCC9B8', borderRadius: '8px' }} />
   </label>
+
   <label htmlFor="zoom-add-on-source-selector" className="rp-zoom-overlay">
     <img src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" alt="" />
   </label>
@@ -97,10 +100,12 @@ Metadata description: How add-ons work in Recurly, including pricing models, bil
 
 <table className="rp-params">
   <tr className="rp-thead-row"><td>Field</td><td>Description</td></tr>
+
   <tr>
     <td>Accounting code</td>
     <td>A unique code that identifies the plan in your internal invoice exports. Configure based on your tax settings and compliance requirements. Limited to 25 lowercase alphanumeric characters.</td>
   </tr>
+
   <tr>
     <td>HS code / Commodity code</td>
     <td>A Harmonized System (HS) code or Commodity Code that meets invoice compliance requirements for traded products. HS codes are typically at least six digits, with countries adding more for national or regional classification. Limited to 25 lowercase alphanumeric characters.</td>
@@ -109,9 +114,11 @@ Metadata description: How add-ons work in Recurly, including pricing models, bil
 
 <span className="rp-zoom">
   <input type="checkbox" id="zoom-add-on-properties" className="rp-zoom-toggle" />
+
   <label htmlFor="zoom-add-on-properties">
     <img className="rp-zoom-img" src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png" alt="Add-on properties form showing accounting code and HS code fields" style={{ display: 'block', width: '90%', margin: '16px auto', borderRadius: '8px' }} />
   </label>
+
   <label htmlFor="zoom-add-on-properties" className="rp-zoom-overlay">
     <img src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png" alt="" />
   </label>
