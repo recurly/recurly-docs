@@ -82,7 +82,7 @@ metadata:
     <input type="checkbox" id="zoom-add-on-source-selector" className="rp-zoom-toggle" />
 
     <label htmlFor="zoom-add-on-source-selector">
-      <img className="rp-zoom-img" src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" alt="Selector for creating an add-on unique to the plan or from an item in the catalog" style={{ display: 'block', width: '90%', margin: '16px auto', border: '1px solid #CCC9B8', borderRadius: '8px' }} />
+      <img className="rp-zoom-img" src="https://files.readme.io/5916c04-Screenshot_2023-12-05_at_1.58.47_PM.png" alt="Selector for creating an add-on unique to the plan or from an item in the catalog" />
     </label>
 
     <label htmlFor="zoom-add-on-source-selector" className="rp-zoom-overlay">
@@ -115,7 +115,7 @@ metadata:
     <input type="checkbox" id="zoom-add-on-properties" className="rp-zoom-toggle" />
 
     <label htmlFor="zoom-add-on-properties">
-      <img className="rp-zoom-img" src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png" alt="Add-on properties form showing accounting code and HS code fields" style={{ display: 'block', width: '90%', margin: '16px auto', borderRadius: '8px' }} />
+      <img className="rp-zoom-img" src="https://files.readme.io/8c21c4e0ebd874c93570696c830ee4b1e68664d47d108291d1fc23ff910077c1-image.png" alt="Add-on properties form showing accounting code and HS code fields" />
     </label>
 
     <label htmlFor="zoom-add-on-properties" className="rp-zoom-overlay">
