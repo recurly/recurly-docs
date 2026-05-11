@@ -8,7 +8,13 @@ hidden: true
 metadata:
   robots: index
 ---
+Title: Christian's Journey: The ReadMe Refactored Documentation System
+Metadata description: A comprehensive showcase of Recurly's branded documentation system, demonstrating every design component, MDX integration, and workflow that powers publish-ready technical pages.
+
+---PASTE INTO EDITOR BELOW---
+
 <div class="rp-page">
+
   <div class="rp-overview">
     This page documents the journey of building Recurly's branded ReadMe documentation system. It showcases every design component, MDX pattern, and workflow refinement that went into transforming raw documentation drafts into polished, on-brand pages. Read through to see the full system in action — every heading, button, callout, table, and interactive element is a working example you can adapt to your own pages.
   </div>
@@ -23,6 +29,7 @@ metadata:
     <a class="rp-toc-pill" href="#workflow-and-patterns"><span class="rp-toc-num">5</span>Workflow and patterns</a>
     <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">6</span>FAQs</a>
   </div>
+
 </div>
 
 # Definition
@@ -39,23 +46,20 @@ metadata:
     <strong>Consistency at scale</strong>
     <span>Every page shares the same design tokens, spacing, typography, and color palette. No design drift, no one-off styles, no surprises in the final render.</span>
   </div>
-
   <div class="rp-benefit">
     <div class="rp-benefit-icon">✦</div>
     <strong>No CSS required</strong>
-    <span>All styling lives in the host theme. Authors paste pure MDX with rp-\* classes — no style blocks, no Tailwind, no environment setup.</span>
+    <span>All styling lives in the host theme. Authors paste pure MDX with rp-* classes — no style blocks, no Tailwind, no environment setup.</span>
   </div>
-
   <div class="rp-benefit">
     <div class="rp-benefit-icon">✦</div>
     <strong>Rapid iteration</strong>
     <span>The skill bridges content structure (delegated to base skills) and visual rendering. When a base skill updates, branding changes inherit automatically.</span>
   </div>
-
   <div class="rp-benefit">
     <div class="rp-benefit-icon">✦</div>
     <strong>Rich interactivity</strong>
-    <span>Combine rp-\* HTML components with native ReadMe MDX: Accordions, Tabs, Cards, and Columns all render with brand styling automatically.</span>
+    <span>Combine rp-* HTML components with native ReadMe MDX: Accordions, Tabs, Cards, and Columns all render with brand styling automatically.</span>
   </div>
 </div>
 
@@ -87,9 +91,11 @@ ReadMe slugifies heading text automatically: "Setting up Adyen" becomes `#settin
 ## Content cards
 
 <div class="rp-card">
-  ### What is rp-card?
 
-  A general-purpose container for grouped content. Use it for callouts that don't fit the four callout types (note, tip, warning, important), explanatory boxes, or any content that benefits from visual separation without earning its own heading.
+### What is rp-card?
+
+A general-purpose container for grouped content. Use it for callouts that don't fit the four callout types (note, tip, warning, important), explanatory boxes, or any content that benefits from visual separation without earning its own heading.
+
 </div>
 
 ## Callout types
@@ -123,12 +129,10 @@ Steps use the `rp-step` card: a yellow-circled number paired with an action titl
     <div class="rp-step-num">1</div>
     <div><h4>Stack brief steps together</h4><p>Use this pattern when each step is 1–2 sentences with no code, images, or tables. Group all steps in a single rp-steps wrapper.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Let the wrapper handle spacing</h4><p>The wrapper stacks cards automatically with consistent spacing, creating a unified procedure block.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">3</div>
     <div><h4>Keep titles as action verbs</h4><p>No "Step N:" prefix — the yellow circle handles the number. The h4 is just the action.</p></div>
@@ -198,38 +202,36 @@ Use `<Tabs>` to show alternative views of the same task: multi-language code, by
 
 <Tabs>
   <Tab title="JavaScript">
-    ```javascript
-    // JavaScript example
-    const pageData = {
-      title: "Christian's Journey",
-      components: ["tabs", "cards", "accordions"],
-      brand: "Recurly"
-    };
+  ```javascript
+  // JavaScript example
+  const pageData = {
+    title: "Christian's Journey",
+    components: ["tabs", "cards", "accordions"],
+    brand: "Recurly"
+  };
 
-    console.log(pageData);
-    ```
+  console.log(pageData);
+  ```
   </Tab>
-
   <Tab title="Python">
-    ```python
-    # Python example
-    page_data = {
-        "title": "Christian's Journey",
-        "components": ["tabs", "cards", "accordions"],
-        "brand": "Recurly"
-    }
+  ```python
+  # Python example
+  page_data = {
+      "title": "Christian's Journey",
+      "components": ["tabs", "cards", "accordions"],
+      "brand": "Recurly"
+  }
 
-    print(page_data)
-    ```
+  print(page_data)
+  ```
   </Tab>
-
   <Tab title="cURL">
-    ```bash
-    # cURL example
-    curl -X GET https://docs.recurly.com/docs/christians-journey \
-      -H "Accept: application/json" \
-      -H "User-Agent: Documentation"
-    ```
+  ```bash
+  # cURL example
+  curl -X GET https://docs.recurly.com/docs/christians-journey \
+    -H "Accept: application/json" \
+    -H "User-Agent: Documentation"
+  ```
   </Tab>
 </Tabs>
 
@@ -239,15 +241,13 @@ Use `<Cards>` to build small navigation grids — 3 to 6 clickable destination t
 
 <Cards>
   <Card title="Design system" href="#the-design-system" icon="fa-palette">
-    Explore all rp-\* components and typography rules.
+  Explore all rp-* components and typography rules.
   </Card>
-
   <Card title="Workflow guide" href="#workflow-and-patterns" icon="fa-gears">
-    Learn the step-by-step process for creating pages.
+  Learn the step-by-step process for creating pages.
   </Card>
-
   <Card title="Recurly docs" href="https://docs.recurly.com/docs" icon="fa-book" target="_blank">
-    Browse the full Recurly documentation library.
+  Browse the full Recurly documentation library.
   </Card>
 </Cards>
 
@@ -257,11 +257,10 @@ Use `<Columns>` to display content side by side. Perfect for before/after pairs,
 
 <Columns columns={2}>
   <Column>
-    **Don't** — single monolithic code block with no alternatives.
+  **Don't** — single monolithic code block with no alternatives.
   </Column>
-
   <Column>
-    **Do** — Tabs with cURL, JavaScript, Python, and other languages the reader might need.
+  **Do** — Tabs with cURL, JavaScript, Python, and other languages the reader might need.
   </Column>
 </Columns>
 
@@ -288,15 +287,19 @@ Before generating a page, scan the source and ask one consolidated question batc
 Not every source heading becomes a section. Apply judgment based on content density:
 
 <div class="rp-card">
-  ### Demote if:
 
-  One or two sentences, no steps, no image, no table. Fold into a neighbor or convert to an inline `rp-card`.
+### Demote if:
+
+One or two sentences, no steps, no image, no table. Fold into a neighbor or convert to an inline `rp-card`.
+
 </div>
 
 <div class="rp-card">
-  ### Promote if:
 
-  Multiple sibling subsections of the same shape (CRUD actions), or content with its own steps, screenshots, and a distinct outcome from siblings.
+### Promote if:
+
+Multiple sibling subsections of the same shape (CRUD actions), or content with its own steps, screenshots, and a distinct outcome from siblings.
+
 </div>
 
 ## Image placement and lightbox
@@ -321,11 +324,11 @@ Output is pure MDX. Write rp-* HTML divs and MDX components (`<Accordion>`, `<Ta
 
 <table class="rp-pm-table">
   <tr class="rp-thead-row"><td>What goes where</td><td>Example</td></tr>
-  <tr><td>rp-\* HTML divs</td><td>Callouts, cards, tables, benefits grids, step cards</td></tr>
+  <tr><td>rp-* HTML divs</td><td>Callouts, cards, tables, benefits grids, step cards</td></tr>
   <tr><td>Native MDX components</td><td>Accordion, Tabs, Cards, Columns, Callout, Image</td></tr>
   <tr><td>Native markdown headings</td><td>All section headings — # through #####</td></tr>
   <tr><td>Fenced code blocks</td><td>Triple-backtick markdown with language tag</td></tr>
-  <tr><td>Always omitted</td><td>style blocks, Tailwind classes, rp-h\* divs, rp-anchor wrappers</td></tr>
+  <tr><td>Always omitted</td><td>style blocks, Tailwind classes, rp-h* divs, rp-anchor wrappers</td></tr>
 </table>
 
 ## The two layers
@@ -336,40 +339,85 @@ The skill has two layers: content (delegated to base skills) and rendering (this
   <div><strong>Note</strong>If there's ever a conflict between a base skill's content rule and a rendering rule, the base skill wins. This skill only has authority over how things look, not what they say.</div>
 </div>
 
+## Proposing new components with the New Section Alert
+
+When you encounter a source section that doesn't fit the standard registry — a top-level structural section with distinct purpose, visual treatment, and expected recurrence — don't skip it or fold it into Key details. Instead, propose it formally using the New Section Alert.
+
+The process happens **during pre-generation discovery (Step 1)**. When you spot a genuinely novel section, surface it as one numbered item in your consolidated Q&A batch, alongside questions about plan availability and missing URLs. Use this format:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🆕 NEW SECTION IDENTIFIED — YOUR APPROVAL REQUIRED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The source content contains a structural section not found in the
+current registry for the [DOC TYPE] base skill.
+
+Section name:   [Proposed name]
+Found in:       [Page title]
+Purpose:        [What it does and why it's structurally distinct
+                 from content inside Key details]
+Position:       [Where in the page flow it would sit]
+
+Proposed canonical instruction block:
+──────────────────────────────────────
+### SECTION: [Name]
+Doc types:  [Which types use this]
+Purpose:    [One-line purpose]
+Rendering:  [Component name from library / new component]
+Component:  [HTML template to add to the component library]
+Rules:
+- [Rule 1]
+- [Rule 2]
+──────────────────────────────────────
+
+Reply with one of:
+  "Yes, add it"              → approve, add to registry, continue generating
+  "No, skip it"              → omit this section, continue generating
+  "No, treat as Key details" → fold content into Key details, continue generating
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+**What you're proposing:** The `Component` field should contain the HTML template that would be added to the component library — the rp-* class name, structure, and CSS hooks needed for the new section to render with brand styling. Consult the design system reference section to pick a non-colliding class name and reuse existing color tokens (`--yellow`, `--tangerine`, `--offblack`, etc.) rather than inventing new hex values.
+
+**What the user decides:** They reply with one of three paths. "Yes, add it" means you'll add the section to the skill's registry and generate the page with the new section included. "No, skip it" means you omit the section and continue. "No, treat as Key details" means you fold the section's content into an existing Key details area instead.
+
+**Key distinction:** A new section is NOT just a heading under Key details — that's content organization. A new section is a standalone block with its own purpose, rendering, and rules that would appear on other pages of the same doc type in the future. Only propose when the section truly earns its weight.
+
 # FAQs
 
 <Accordion title="Can I embed a style block inside my page output?">
-  No — never embed CSS in the output. All styling lives in Recurly's host theme on ReadMe. The output stays clean and copy-pasteable: just MDX with rp-\* classes, plus native MDX components.
+No — never embed CSS in the output. All styling lives in Recurly's host theme on ReadMe. The output stays clean and copy-pasteable: just MDX with rp-* classes, plus native MDX components.
 </Accordion>
 
 <Accordion title="Do I need to add id attributes or rp-anchor wrappers to my headings?">
-  No. ReadMe slugifies native markdown headings automatically and registers them in the built-in page TOC sidebar. Just write `# Heading text` and the rest is handled for you.
+No. ReadMe slugifies native markdown headings automatically and registers them in the built-in page TOC sidebar. Just write `# Heading text` and the rest is handled for you.
 </Accordion>
 
 <Accordion title="Is the rp-toc pill bar required?">
-  Yes — include it on every page with two or more `#` h1 sections. It gives readers an immediate visual map at the top of the content and complements ReadMe's native TOC sidebar.
+Yes — include it on every page with two or more `#` h1 sections. It gives readers an immediate visual map at the top of the content and complements ReadMe's native TOC sidebar.
 </Accordion>
 
 <Accordion title="What if my page needs a component that doesn't exist in the design system?">
-  Surface it as part of the pre-gen Q\&A batch and wait for approval. The "New Section Alert" format lets you propose a new component, its purpose, rendering, and rules. The user approves, and you add it to the registry.
+Surface it as part of the pre-gen Q&A batch and wait for approval. The "New Section Alert" format lets you propose a new component, its purpose, rendering, and rules. The user approves, and you add it to the registry.
 </Accordion>
 
 <Accordion title="How do I handle multi-language code examples?">
-  Use `<Tabs>` with one `<Tab>` per language. Inside each Tab, add a fenced code block with the language tag. ReadMe applies syntax highlighting and the brand color scheme automatically. The yellow pill marks the active tab.
+Use `<Tabs>` with one `<Tab>` per language. Inside each Tab, add a fenced code block with the language tag. ReadMe applies syntax highlighting and the brand color scheme automatically. The yellow pill marks the active tab.
 </Accordion>
 
 <Accordion title="What's the difference between rp-card and the Card MDX component?">
-  rp-card is an HTML container for static grouped content. `<Card>` is a clickable navigation tile that lives inside a `<Cards>` grid. Use rp-card for explanatory boxes, callouts, or asides. Use `<Card>` for navigation grids of 3–6 destinations.
+rp-card is an HTML container for static grouped content. `<Card>` is a clickable navigation tile that lives inside a `<Cards>` grid. Use rp-card for explanatory boxes, callouts, or asides. Use `<Card>` for navigation grids of 3–6 destinations.
 </Accordion>
 
 <Accordion title="Can I use Tailwind classes in my output?">
-  No. Avoid any ad-hoc inline styles or Tailwind classes. All styling comes from the rp-\* design system or the host theme. This keeps pages consistent and future-proof.
+No. Avoid any ad-hoc inline styles or Tailwind classes. All styling comes from the rp-* design system or the host theme. This keeps pages consistent and future-proof.
 </Accordion>
 
 <Accordion title="What happens to my images if I move them around the page?">
-  Non-technical authors can't reintegrate images manually. Images must appear at their exact position in the source. If an image should illustrate a step, place it immediately after that step — never move it to the end of the page.
+Non-technical authors can't reintegrate images manually. Images must appear at their exact position in the source. If an image should illustrate a step, place it immediately after that step — never move it to the end of the page.
 </Accordion>
 
 <Accordion title="Do I need to ask the user about every missing detail?">
-  No — ask only about items that materially change what gets published. Skip routine tone tightening, stylistic choices, and metadata descriptions (just draft one). Ask about plan availability, missing URLs, empty code blocks, and new structural sections.
+No — ask only about items that materially change what gets published. Skip routine tone tightening, stylistic choices, and metadata descriptions (just draft one). Ask about plan availability, missing URLs, empty code blocks, and new structural sections.
 </Accordion>
