@@ -1,5 +1,5 @@
 ---
-title: Copy of Copy of Add-ons
+title: Add-ons
 excerpt: >-
   How add-ons work in Recurly, including pricing models, billing options, and
   how to configure them on plans or directly on subscriptions.
@@ -22,13 +22,13 @@ metadata:
     <a className="rp-toc-pill" href="#configuring-item-add-ons-directly-on-subscriptions"><span className="rp-toc-num">4</span>Configuring item add-ons on subscriptions</a>
   </div>
 
-  <div className="rp-h1" id="definition"><a className="rp-anchor" href="#definition">Definition</a></div>
+  <h2 id="definition">Definition</h2>
 
   <div className="rp-definition">
     Add-ons are additional charges billed each period alongside a subscription's base charge. You can attach one or more add-ons to a plan, giving you granular control over packaging and pricing. Build them from scratch for a single plan, or derive them from an Item in your Item Catalog so you can reuse them across multiple plans.
   </div>
 
-  <div className="rp-h1" id="key-benefits"><a className="rp-anchor" href="#key-benefits">Key benefits</a></div>
+  <h2 id="key-benefits">Key benefits</h2>
 
   <div className="rp-benefits">
     <div className="rp-benefit">
@@ -62,7 +62,7 @@ metadata:
     </div>
   </div>
 
-  <div className="rp-h1" id="creating-an-add-on"><a className="rp-anchor" href="#creating-an-add-on">Creating an add-on</a></div>
+  <h2 id="creating-an-add-on">Creating an add-on</h2>
 
   <div className="rp-steps">
     <div className="rp-step">
@@ -130,7 +130,7 @@ metadata:
     </div>
   </div>
 
-  <div className="rp-h1" id="configuring-item-add-ons-directly-on-subscriptions"><a className="rp-anchor" href="#configuring-item-add-ons-directly-on-subscriptions">Configuring item add-ons directly on subscriptions</a></div>
+  <h2 id="configuring-item-add-ons-directly-on-subscriptions">Configuring item add-ons directly on subscriptions</h2>
 
   <p>Item-based add-ons can be added straight to a customer's subscription — you don't need to configure availability on the plan first.</p>
 
@@ -142,18 +142,6 @@ metadata:
   </div>
 
   <div className="rp-callout rp-callout-note">
-    <div><strong>Note</strong>You don't need to configure the add-on's availability on the plan first — item-based add-ons can be added to any subscription on demand.</div>
+    <div><strong>Note</strong> You don't need to configure the add-on's availability on the plan first — item-based add-ons can be added to any subscription on demand.</div>
   </div>
 </div>
-
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-<br />
