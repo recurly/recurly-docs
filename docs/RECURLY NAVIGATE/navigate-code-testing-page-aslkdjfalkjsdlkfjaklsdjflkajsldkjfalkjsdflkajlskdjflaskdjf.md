@@ -90,8 +90,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero-stat-num { font-size: 1.8rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 8px; }
 .rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); }
 
-/* ── EXPANDING NAV ── */
-.rc-sticky-nav-wrap {
+/* ── EXPANDING NAV — native <details>/<summary>, zero JS ── */
+details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -102,17 +102,18 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border: 1px solid var(--lightgray);
   overflow: hidden;
 }
-.rc-nav-toggle {
+details.rc-sticky-nav-wrap > summary {
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 24px;
   cursor: pointer;
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
+  user-select: none;
 }
+details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
+details.rc-sticky-nav-wrap > summary::marker { display: none; }
+
 .rc-nav-toggle-label {
   display: flex;
   align-items: center;
@@ -135,24 +136,31 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-nav-chevron {
   font-size: .72rem;
   color: var(--gray);
-  transition: transform 0.25s ease;
   line-height: 1;
+  transition: transform 0.25s ease;
 }
-.rc-nav-chevron.rc-open { transform: rotate(180deg); }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron {
+  transform: rotate(180deg);
+}
 
+/* Smooth height expand via CSS grid trick */
 .rc-nav-drawer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
 }
-.rc-nav-drawer.rc-open { max-height: 200px; }
-
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
+  grid-template-rows: 1fr;
+}
+.rc-nav-drawer-inner {
+  overflow: hidden;
+  border-top: 1px solid var(--lightgray);
+}
 .rc-nav-links {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 4px;
   padding: 12px 20px 18px;
-  border-top: 1px solid var(--lightgray);
 }
 .rc-sticky-link {
   color: var(--offblack) !important;
@@ -172,17 +180,17 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   text-decoration: none !important;
 }
 
+/* ── SECTION HEADER ── */
+.rc-sec-header { text-align: center; margin-bottom: 24px; }
+.rc-sec-header h2 { font-size: 2rem; font-weight: 800; margin: 0 0 8px; color: var(--offblack); }
+.rc-sec-header p { font-size: .95rem; color: var(--gray); margin: 0; }
+
 /* ── GETTING STARTED CTA ── */
-.rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
+.rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
 .rc-btn-secondary { background: transparent; color: var(--offblack); text-decoration: none !important; padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--offblack); white-space: nowrap; transition: all .2s; }
 .rc-btn-secondary:hover { background: var(--offblack); color: var(--yellow) !important; }
-
-/* ── SECTION HEADER ── */
-.rc-sec-header { text-align: center; margin-bottom: 32px; }
-.rc-sec-header h2 { font-size: 2rem; font-weight: 800; margin: 0 0 8px; color: var(--offblack); }
-.rc-sec-header p { font-size: .95rem; color: var(--gray); margin: 0; }
 
 /* ── HUB GRID ── */
 .rc-hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
@@ -212,7 +220,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 @media(max-width:640px){
   .rc-hero h1 { font-size: 1.7rem; }
   .rc-hero-stats { grid-template-columns: 1fr; }
-  .rc-starter-cta { flex-direction: column; align-items: flex-start; text-align: left; }
+  .rc-starter-cta { flex-direction: column; align-items: flex-start; }
   .rc-hub-grid { grid-template-columns: 1fr; }
   .rc-announce-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
@@ -226,7 +234,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
       🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
       <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" class="rc-announce-link">Register Now →</a>
     </div>
-    <button class="rc-announce-close" onclick="document.getElementById('rcAnnounce').style.display='none'" aria-label="Dismiss">×</button>
+    <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
   </div>
 
   <!-- ── HERO ── -->
@@ -243,30 +251,38 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
     </div>
   </div>
 
-  <!-- ── EXPANDING NAV ── -->
-  <div class="rc-sticky-nav-wrap">
-    <button class="rc-nav-toggle" id="rcNavToggle" onclick="rcToggleNav()" aria-expanded="false" aria-controls="rcNavDrawer">
+  <!-- ── EXPANDING NAV — native details/summary, zero JS ── -->
+  <details class="rc-sticky-nav-wrap">
+    <summary>
       <span class="rc-nav-toggle-label">
         <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt="">
         Navigate
         <span class="rc-nav-hint">— tap to explore</span>
       </span>
-      <span class="rc-nav-chevron" id="rcNavChevron">▼</span>
-    </button>
-    <div class="rc-nav-drawer" id="rcNavDrawer" role="navigation">
-      <div class="rc-nav-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">🏠 Home</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
-        <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events ↗</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours ↗</a>
+      <span class="rc-nav-chevron">▼</span>
+    </summary>
+    <div class="rc-nav-drawer">
+      <div class="rc-nav-drawer-inner">
+        <div class="rc-nav-links">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">🏠 Home</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
+          <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank">Events ↗</a>
+          <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank">Office Hours ↗</a>
+        </div>
       </div>
     </div>
+  </details>
+
+  <!-- ── EXPLORE NAVIGATE ── -->
+  <div class="rc-sec-header">
+    <h2>Explore Navigate</h2>
+    <p>Choose your objective to access self-serve learning paths and resources.</p>
   </div>
 
-  <!-- ── GETTING STARTED ── -->
+  <!-- ── NEW TO NAVIGATE — first item under the header ── -->
   <div class="rc-starter-cta">
     <div class="rc-starter-text">
       <h3>👋 New to Navigate?</h3>
@@ -276,11 +292,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   </div>
 
   <!-- ── HUB GRID ── -->
-  <div class="rc-sec-header">
-    <h2>Explore Navigate</h2>
-    <p>Choose your objective to access self-serve learning paths and resources.</p>
-  </div>
-
   <div class="rc-hub-grid">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-hub-card">
       <div class="rc-hub-icon" style="background-color: #ccc9b8;"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png"></div>
@@ -327,17 +338,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   </div>
 
 </div>
-
-<script>
-function rcToggleNav() {
-  var drawer  = document.getElementById('rcNavDrawer');
-  var chevron = document.getElementById('rcNavChevron');
-  var toggle  = document.getElementById('rcNavToggle');
-  var isOpen  = drawer.classList.toggle('rc-open');
-  chevron.classList.toggle('rc-open');
-  toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-}
-</script>
 `}</HTMLBlock>
 
 <br />
