@@ -38,13 +38,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   gap: 12px;
   line-height: 1.4;
 }
-.rc-announce-inner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-  flex-wrap: wrap;
-}
+.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
@@ -55,18 +49,10 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-radius: 6px;
   transition: background 0.2s;
 }
-.rc-announce-link:hover { background: rgba(0,0,0,0.20); text-decoration: none !important; }
+.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
 .rc-announce-close {
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  line-height: 1;
-  cursor: pointer;
-  color: var(--offblack);
-  padding: 0 2px;
-  opacity: 0.45;
-  transition: opacity 0.2s;
-  flex-shrink: 0;
+  background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer;
+  color: var(--offblack); padding: 0 2px; opacity: 0.45; transition: opacity 0.2s; flex-shrink: 0;
 }
 .rc-announce-close:hover { opacity: 1; }
 
@@ -106,7 +92,6 @@ details.rc-sticky-nav-wrap > summary {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 15px 24px;
   cursor: pointer;
   user-select: none;
@@ -115,7 +100,7 @@ details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
 
 .rc-nav-toggle-label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   font-weight: 800;
@@ -124,7 +109,6 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
   text-transform: uppercase;
   color: var(--offblack);
 }
-.rc-nav-toggle-label img { width: 16px; height: 16px; object-fit: contain; }
 .rc-nav-hint {
   font-size: .78rem;
   font-weight: 600;
@@ -132,6 +116,7 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
   text-transform: none;
   letter-spacing: 0;
   margin-left: 4px;
+  opacity: 0.8;
 }
 .rc-nav-chevron {
   font-size: .72rem;
@@ -139,17 +124,10 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
   line-height: 1;
   transition: transform 0.25s ease;
 }
-details.rc-sticky-nav-wrap[open] .rc-nav-chevron {
-  transform: rotate(180deg);
-}
-.rc-nav-drawer {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease;
-}
-details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
-  grid-template-rows: 1fr;
-}
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
+
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner {
   overflow: hidden;
   border-top: 1px solid var(--lightgray);
@@ -175,11 +153,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
   align-items: center;
   gap: 6px;
 }
-.rc-sticky-link:hover {
-  background: var(--offblack);
-  color: var(--yellow) !important;
-  text-decoration: none !important;
-}
+.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 
 /* ── SECTION HEADER ── */
@@ -187,7 +161,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
 .rc-sec-header h2 { font-size: 2rem; font-weight: 800; margin: 0 0 8px; color: var(--offblack); }
 .rc-sec-header p { font-size: .95rem; color: var(--gray); margin: 0; }
 
-/* ── GETTING STARTED CTA — prominent ── */
+/* ── GETTING STARTED CTA ── */
 .rc-starter-cta {
   background: var(--offblack);
   border: 2px solid var(--yellow);
@@ -213,10 +187,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
   transition: all .2s;
   border: 2px solid var(--yellow);
 }
-.rc-btn-primary:hover {
-  background: transparent;
-  color: var(--yellow) !important;
-}
+.rc-btn-primary:hover { background: transparent; color: var(--yellow) !important; }
 
 /* ── HUB GRID ── */
 .rc-hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
@@ -237,9 +208,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
 
 /* ── FOOTER NAV ── */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 20px; text-align: center; }
-.rc-footer-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
-.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .9rem; transition: color .2s; }
+.rc-footer-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; }
+.rc-footer-link {
+  color: var(--gray);
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: .9rem;
+  transition: color .2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
 .rc-footer-link:hover { color: var(--offblack); }
+.rc-footer-link img { width: 13px; height: 13px; object-fit: contain; opacity: 0.55; }
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){ .rc-hub-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -282,13 +263,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
     <summary>
       <span class="rc-nav-toggle-label">
         Navigate Quick Links
-      <span class="rc-nav-chevron">▼</span>
+        <span class="rc-nav-chevron">▲</span>
+      </span>
     </summary>
     <div class="rc-nav-drawer">
       <div class="rc-nav-drawer-inner">
         <div class="rc-nav-links">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-            <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt="Home"> Home
+            <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
           </a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
@@ -307,7 +289,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
     <p>Choose your objective to access self-serve learning paths and resources.</p>
   </div>
 
-  <!-- ── NEW TO NAVIGATE — prominent CTA ── -->
+  <!-- ── NEW TO NAVIGATE ── -->
   <div class="rc-starter-cta">
     <div class="rc-starter-text">
       <h3>👋 New to Navigate?</h3>
@@ -354,11 +336,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
   <!-- ── FOOTER NAV ── -->
   <div class="rc-footer-nav">
     <div class="rc-footer-links">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">Home</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+        <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
+      </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-footer-link">Acquire</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-footer-link">Scale</a>
+      <a href="mailto:support@recurly.com" class="rc-footer-link">support@recurly.com</a>
     </div>
   </div>
 
