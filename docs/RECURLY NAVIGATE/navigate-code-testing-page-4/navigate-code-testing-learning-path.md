@@ -79,8 +79,6 @@ body { margin: 0; background: #fff; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-.rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
-.rc-logo-image { height: 36px; width: auto; }
 
 /* Pillar tag above title */
 .rc-lp-pillar-tag {
@@ -207,7 +205,57 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h3 { font-size: 1.1rem; font-weight: 700; margin: 24px 0 10px; color: var(--offblack); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* ── AU TYPE CARDS (3-col grid) ── */
+/* ── SPLIT EXPLAINER CARD ── */
+.rc-split-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 8px 0 28px;
+}
+.rc-split-panel {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rc-split-panel:first-child {
+  background: var(--brightgray);
+  border-right: 1px solid var(--lightgray);
+}
+.rc-split-panel:last-child {
+  background: rgba(255,157,136,0.10);
+}
+.rc-split-label {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.rc-split-panel:first-child .rc-split-label { color: var(--gray); }
+.rc-split-panel:last-child .rc-split-label { color: var(--retain); }
+.rc-split-icon { font-size: 1.4rem; line-height: 1; }
+.rc-split-panel h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.3;
+  color: var(--offblack);
+}
+.rc-split-panel p {
+  font-size: .9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.rc-split-panel:first-child p { color: var(--gray); }
+.rc-split-panel:last-child p { color: var(--darkgray); }
+
+@media(max-width:640px){
+  .rc-split-card { grid-template-columns: 1fr; }
+  .rc-split-panel:first-child { border-right: none; border-bottom: 1px solid var(--lightgray); }
+}
 .rc-type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0 28px; }
 .rc-type-card {
   background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px;
@@ -352,9 +400,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── HERO ── -->
     <div class="rc-hero">
-      <div class="rc-brand-header">
-        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
-      </div>
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
@@ -410,9 +455,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2>💳 What is Account Updater?</h2>
       <p>A proactive assistant designed to resolve card lifecycle events before they trigger a decline. Reduce involuntary churn and eliminate gateway fees on invalid accounts.</p>
 
-      <h3>🧩 The simple version</h3>
-      <p>When a customer's credit or debit card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis — like a subscription renewal — that charge will simply fail. The customer hasn't cancelled; their card just changed.</p>
-      <p><strong>Account Updater (AU) is the solution.</strong> It's a service run by the major card networks — Visa, Mastercard, American Express (AMEX), and Discover — that automatically pushes updated card details to Recurly. Recurly stores that fresh information so that your next billing attempt uses the correct data, without the customer needing to do anything.</p>
+      <div class="rc-split-card">
+        <div class="rc-split-panel">
+          <div class="rc-split-label">The Problem</div>
+          <div class="rc-split-icon">💳</div>
+          <h4>Cards change. Charges fail.</h4>
+          <p>When a customer's card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis, that charge will simply fail — even though the customer never cancelled.</p>
+        </div>
+        <div class="rc-split-panel">
+          <div class="rc-split-label">The Fix</div>
+          <div class="rc-split-icon">✅</div>
+          <h4>Account Updater handles it automatically.</h4>
+          <p>Visa, Mastercard, AMEX, and Discover push updated card details directly to Recurly. Recurly stores the fresh information so your next billing attempt uses the correct data — no action needed from your customer.</p>
+        </div>
+      </div>
 
       <div class="rc-type-grid">
         <div class="rc-type-card">
