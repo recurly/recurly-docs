@@ -90,7 +90,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero-stat-num { font-size: 1.8rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 8px; }
 .rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); }
 
-/* ── EXPANDING NAV — native <details>/<summary>, zero JS ── */
+/* ── EXPANDING NAV — native details/summary, zero JS ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -124,7 +124,7 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
   text-transform: uppercase;
   color: var(--offblack);
 }
-.rc-nav-toggle-label img { width: 15px; height: 15px; object-fit: contain; }
+.rc-nav-toggle-label img { width: 16px; height: 16px; object-fit: contain; }
 .rc-nav-hint {
   font-size: .78rem;
   font-weight: 600;
@@ -142,8 +142,6 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron {
   transform: rotate(180deg);
 }
-
-/* Smooth height expand via CSS grid trick */
 .rc-nav-drawer {
   display: grid;
   grid-template-rows: 0fr;
@@ -173,24 +171,52 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
   border-radius: 7px;
   transition: all .18s;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 .rc-sticky-link:hover {
   background: var(--offblack);
   color: var(--yellow) !important;
   text-decoration: none !important;
 }
+.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 
 /* ── SECTION HEADER ── */
 .rc-sec-header { text-align: center; margin-bottom: 24px; }
 .rc-sec-header h2 { font-size: 2rem; font-weight: 800; margin: 0 0 8px; color: var(--offblack); }
 .rc-sec-header p { font-size: .95rem; color: var(--gray); margin: 0; }
 
-/* ── GETTING STARTED CTA ── */
-.rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
-.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
-.rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
-.rc-btn-secondary { background: transparent; color: var(--offblack); text-decoration: none !important; padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--offblack); white-space: nowrap; transition: all .2s; }
-.rc-btn-secondary:hover { background: var(--offblack); color: var(--yellow) !important; }
+/* ── GETTING STARTED CTA — prominent ── */
+.rc-starter-cta {
+  background: var(--offblack);
+  border: 2px solid var(--yellow);
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--yellow); }
+.rc-starter-text p { margin: 0; font-size: .95rem; color: var(--lightgray); line-height: 1.5; }
+.rc-btn-primary {
+  background: var(--yellow);
+  color: var(--offblack) !important;
+  text-decoration: none !important;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: .9rem;
+  white-space: nowrap;
+  transition: all .2s;
+  border: 2px solid var(--yellow);
+}
+.rc-btn-primary:hover {
+  background: transparent;
+  color: var(--yellow) !important;
+}
 
 /* ── HUB GRID ── */
 .rc-hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
@@ -251,20 +277,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
     </div>
   </div>
 
-  <!-- ── EXPANDING NAV — native details/summary, zero JS ── -->
+  <!-- ── EXPANDING NAV ── -->
   <details class="rc-sticky-nav-wrap">
     <summary>
       <span class="rc-nav-toggle-label">
-        <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt="">
-        Navigate
-        <span class="rc-nav-hint">— tap to explore</span>
+        Menu
+        <span class="rc-nav-hint">— tap to expand</span>
       </span>
       <span class="rc-nav-chevron">▼</span>
     </summary>
     <div class="rc-nav-drawer">
       <div class="rc-nav-drawer-inner">
         <div class="rc-nav-links">
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">🏠 Home</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+            <img src="https://files.readme.io/cb336af6934849c5770a5928570a2aa093cef9ca901535657e754ce17b2e6b31-Home_Icon_1.png" alt="Home"> Home
+          </a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
@@ -282,13 +309,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
     <p>Choose your objective to access self-serve learning paths and resources.</p>
   </div>
 
-  <!-- ── NEW TO NAVIGATE — first item under the header ── -->
+  <!-- ── NEW TO NAVIGATE — prominent CTA ── -->
   <div class="rc-starter-cta">
     <div class="rc-starter-text">
       <h3>👋 New to Navigate?</h3>
       <p>Welcome! Start here to learn how to use this program and find support.</p>
     </div>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-secondary">Get Started Here</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-primary">Get Started Here</a>
   </div>
 
   <!-- ── HUB GRID ── -->
