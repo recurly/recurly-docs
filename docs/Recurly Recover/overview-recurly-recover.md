@@ -33,10 +33,10 @@ Recurly Recover is a standalone retry engine that collects on past-due invoices 
 
 # Key benefits
 
-* **Works with your stack**: Use Recurly's retry engine without adopting Recurly for subscription management. It integrates seamlessly with your existing billing system.
-* **Flexible retry strategies**: Assign a different dunning campaign per API request, making it easy to A/B test retry windows and strategies across customer segments.
-* **Fully managed collection**: Recurly handles the entire retry lifecycle — calculating optimal retry dates, managing payment attempts, and firing webhooks when the journey ends.
-* **Minimal setup**: No need to configure plans, items, or taxes. Setup is limited to payment gateway, retry window, and API integration.
+* **Works with your stack**: Use Recurly's retry engine without adopting Recurly for subscription management. It integrates with your existing billing system
+* **Flexible retry strategies**: Assign a different dunning campaign per API request, making it easy to A/B test retry windows and strategies across customer segments
+* **Fully managed collection**: Recurly handles the entire retry lifecycle — calculating optimal retry dates, managing payment attempts, and firing webhooks when the journey ends
+* **Minimal setup**: No need to configure plans, items, or taxes. Setup is limited to payment gateway, retry window, and API integration
 
 # Key details
 
