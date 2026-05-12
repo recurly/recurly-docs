@@ -82,28 +82,37 @@ body { margin: 0; background: #fff; }
 .rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
 .rc-logo-image { height: 36px; width: auto; }
 
+/* Pillar tag above title */
+.rc-lp-pillar-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,157,136,0.20);
+  border: 1px solid rgba(255,157,136,0.45);
+  color: var(--retain);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.rc-lp-pillar-tag img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
 .rc-lp-hero-title {
   text-align: center;
   margin: 0 0 14px;
 }
-.rc-lp-pillar-badge {
-  display: inline-block;
-  vertical-align: middle;
-  width: 26px;
-  height: 26px;
-  object-fit: contain;
-  opacity: 0.9;
-  margin-right: 10px;
-  margin-bottom: 4px;
-}
 .rc-lp-hero-title h1 {
-  display: inline;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 800;
   line-height: 1.15;
   color: var(--offwhite);
   margin: 0;
-  vertical-align: middle;
 }
 .rc-hero > p {
   font-size: 1rem;
@@ -346,8 +355,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-brand-header">
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
       </div>
+      <div class="rc-lp-pillar-tag">
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
+      </div>
       <div class="rc-lp-hero-title">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain" class="rc-lp-pillar-badge">
         <h1>Account Updater</h1>
       </div>
       <p>Protect your recurring revenue by automatically keeping card details up to date — before payments ever fail.</p>
