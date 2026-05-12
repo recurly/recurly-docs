@@ -40,15 +40,7 @@ metadata:
   <Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
 
   <Image align="center" src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" />
-  
-  
-  
-  
-
-
-
-
-
+  <br/>
 
 
   # page images
@@ -68,4 +60,4 @@ metadata:
   <br />
 </div>
 
-<br />
+<Image align="center" src="https://files.readme.io/cb336af6934849c5770a5928570a2aa093cef9ca901535657e754ce17b2e6b31-Home_Icon_1.png" />
