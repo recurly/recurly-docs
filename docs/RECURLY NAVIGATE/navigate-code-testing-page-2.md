@@ -45,13 +45,7 @@ body { margin: 0; background: #fff; }
   gap: 12px;
   line-height: 1.4;
 }
-.rc-announce-inner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-  flex-wrap: wrap;
-}
+.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
@@ -62,18 +56,10 @@ body { margin: 0; background: #fff; }
   border-radius: 6px;
   transition: background 0.2s;
 }
-.rc-announce-link:hover { background: rgba(0,0,0,0.20); text-decoration: none !important; }
+.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
 .rc-announce-close {
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  line-height: 1;
-  cursor: pointer;
-  color: var(--offblack);
-  padding: 0 2px;
-  opacity: 0.45;
-  transition: opacity 0.2s;
-  flex-shrink: 0;
+  background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer;
+  color: var(--offblack); padding: 0 2px; opacity: 0.45; transition: opacity 0.2s; flex-shrink: 0;
 }
 .rc-announce-close:hover { opacity: 1; }
 
@@ -104,15 +90,16 @@ body { margin: 0; background: #fff; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* ── EXPANDING NAV — native details/summary, zero JS ── */
+/* ── EXPANDING NAV — Bright Gray (#F1EFE3), native details/summary, zero JS ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--lightgray);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background-color: var(--brightgray);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   margin: 24px 0 48px 0;
   border-radius: 12px;
+  border: 1px solid var(--lightgray);
   overflow: hidden;
 }
 details.rc-sticky-nav-wrap > summary {
@@ -128,122 +115,52 @@ details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
 
 .rc-nav-toggle-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 800;
-  font-size: .88rem;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: var(--offblack);
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--offblack);
 }
-.rc-nav-hint {
-  font-size: .78rem;
-  font-weight: 600;
-  color: var(--darkgray);
-  text-transform: none;
-  letter-spacing: 0;
-  margin-left: 4px;
-  opacity: 0.7;
-}
-.rc-nav-chevron {
-  font-size: .72rem;
-  color: var(--darkgray);
-  line-height: 1;
-  transition: transform 0.25s ease;
-  opacity: 0.7;
-}
-details.rc-sticky-nav-wrap[open] .rc-nav-chevron {
-  transform: rotate(180deg);
-}
-.rc-nav-drawer {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease;
-}
-details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
-  grid-template-rows: 1fr;
-}
+.rc-nav-hint { font-size: .78rem; font-weight: 600; color: var(--gray); text-transform: none; letter-spacing: 0; margin-left: 4px; opacity: 0.8; }
+.rc-nav-chevron { font-size: .72rem; color: var(--gray); line-height: 1; transition: transform 0.25s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
+
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner {
   overflow: hidden;
-  border-top: 1px solid rgba(0,0,0,0.10);
+  border-top: 1px solid var(--lightgray);
   padding: 16px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: flex; flex-direction: column; gap: 14px;
 }
-.rc-nav-group-label {
-  font-size: .72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--darkgray);
-  opacity: 0.6;
-  margin-bottom: 4px;
-}
-.rc-nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 4px;
-}
+.rc-nav-group-label { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--gray); margin-bottom: 4px; }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 5px 4px; }
+
 .rc-sticky-link {
   color: var(--offblack) !important;
   text-decoration: none !important;
-  font-weight: 700;
-  font-size: .83rem;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  padding: 7px 14px;
-  border-radius: 7px;
-  transition: all .18s;
-  white-space: nowrap;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase;
+  padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 6px;
 }
-.rc-sticky-link:hover {
-  background: var(--offblack);
-  color: var(--yellow) !important;
-  text-decoration: none !important;
-}
+.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-sticky-link-anchor { background: rgba(0,0,0,0.07); }
+.rc-sticky-link-anchor { background: rgba(0,0,0,0.06); }
 .rc-sticky-link-anchor:hover { background: var(--offblack); color: var(--yellow) !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
 .rc-category h2 {
-  font-size: 1.6rem;
-  font-weight: 800;
-  margin: 0 0 24px;
-  color: var(--offblack);
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  font-size: 1.6rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
+  display: flex; align-items: center; gap: 12px;
 }
 .rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
 .rc-path-card {
-  background: var(--offwhite);
-  border: 1px solid var(--lightgray);
-  border-radius: 12px;
-  padding: 20px 24px;
-  text-decoration: none !important;
-  color: inherit;
-  transition: all .2s ease;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 24px;
-  align-items: center;
+  background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px;
+  padding: 20px 24px; text-decoration: none !important; color: inherit;
+  transition: all .2s ease; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
 }
-.rc-path-card:hover {
-  border-color: var(--yellow);
-  box-shadow: 0 4px 16px rgba(255,215,6,.12);
-  transform: translateY(-2px);
-  text-decoration: none !important;
-}
+.rc-path-card:hover { border-color: var(--yellow); box-shadow: 0 4px 16px rgba(255,215,6,.12); transform: translateY(-2px); text-decoration: none !important; }
 .rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
@@ -251,7 +168,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
 .rc-path-content p { font-size: .92rem; color: var(--gray); line-height: 1.5; margin: 0; text-decoration: none !important; }
 .rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; text-decoration: none !important; white-space: nowrap; }
 
-/* ── GETTING STARTED CTA ── */
+/* ── BOTTOM CTA ── */
 .rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
@@ -264,12 +181,22 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
 .rc-footer-summary a { color: var(--orange); text-decoration: none !important; font-weight: 700; }
 .rc-footer-summary a:hover { text-decoration: underline !important; }
 
-/* ── FOOTER NAV ── */
+/* ── FOOTER NAV — matches home page: plain subtle links, no buttons ── */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 20px; text-align: center; }
-.rc-footer-title { font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray); margin-bottom: 16px; }
-.rc-footer-links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-.rc-footer-link { color: var(--darkgray); text-decoration: none !important; font-weight: 700; font-size: .9rem; padding: 8px 20px; background: var(--brightgray); border-radius: 8px; transition: all .2s; }
-.rc-footer-link:hover { background: var(--offblack); color: var(--yellow) !important; }
+.rc-footer-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; }
+.rc-footer-link {
+  color: var(--gray);
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: .9rem;
+  transition: color .2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.rc-footer-link:hover { color: var(--offblack); }
+.rc-footer-link img { width: 13px; height: 13px; object-fit: contain; opacity: 0.6; }
+.rc-footer-plain { color: var(--gray); font-weight: 600; font-size: .9rem; }
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
@@ -329,7 +256,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
             <div class="rc-nav-group-label">Navigate</div>
             <div class="rc-nav-links">
               <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-                <img src="https://files.readme.io/cb336af6934849c5770a5928570a2aa093cef9ca901535657e754ce17b2e6b31-Home_Icon_1.png" alt="Home"> Home
+                <img src="https://files.readme.io/cb336af6934849c5770a5928570a2aa093cef9ca901535657e754ce17b2e6b31-Home_Icon_1.png" alt=""> Home
               </a>
               <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
               <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
@@ -434,7 +361,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
       </div>
     </div>
 
-    <!-- ── CTA ── -->
+    <!-- ── BOTTOM CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
         <h3>👋 Need live guidance on your Launch?</h3>
@@ -443,22 +370,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER SUMMARY ── */
+    <!-- ── FOOTER SUMMARY ── -->
     <div class="rc-footer-summary">
       <strong>Maximizing your subscription potential.</strong>
       <p>Navigate is designed to put Recurly's strategic insights directly in your hands. Have questions? Reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</p>
     </div>
 
-    <!-- ── FOOTER NAV ── -->
+    <!-- ── FOOTER NAV — plain subtle links matching home page style ── -->
     <div class="rc-footer-nav">
-      <div class="rc-footer-title">Jump to a section</div>
       <div class="rc-footer-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-footer-link">Launch</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-acquire" class="rc-footer-link">Acquire</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-footer-link">Retain</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-navigate-scale" class="rc-footer-link">Scale</a>
-        <a href="https://navigate.recurly.com/event-hub/" class="rc-footer-link" target="_blank">Events ↗</a>
-        <a href="https://navigate.recurly.com/global-office-hours/" class="rc-footer-link" target="_blank">Office Hours ↗</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+          <img src="https://files.readme.io/cb336af6934849c5770a5928570a2aa093cef9ca901535657e754ce17b2e6b31-Home_Icon_1.png" alt=""> Home
+        </a>
+        <span class="rc-footer-plain">Launchpad</span>
+        <span class="rc-footer-plain">Technical Setup</span>
+        <span class="rc-footer-plain">Onboarding</span>
       </div>
     </div>
 
