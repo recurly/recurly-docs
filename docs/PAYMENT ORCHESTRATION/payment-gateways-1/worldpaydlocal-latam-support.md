@@ -34,14 +34,15 @@ This payment gateway or setting is available to all customers on any Recurly sub
   * WorldPay payment gateway configured for SEPA / EUR and mandate tokenization support.
   * WorldPay NACHA pre-verification check enabled for ACH / USD compliance.
 
-### Limitations
+### Limitations and Requirements
 
-* The Tarjeta Naranja card brand does not support ZDA; verifications for this card are processed with a one-dollar charge.
-* Transactions require the submission of a CUIT (tax ID) with each transaction in Argentina.
-* If you are using CUIT, CPF, or CNPJ tax types, you must specify the type via API, else send the tax ID without a`tax_identifier_type`.
-* Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
-* WorldPay SEPA does not support free-trial subscriptions or verification transactions.
-* WorldPay SEPA billing info updates must occur within the process of processing a transaction.
+* **ZDA Limitations**
+  * The Tarjeta Naranja card brand does not support ZDA; verifications for this card are processed with a one-dollar charge.
+  * WorldPay SEPA does not support free-trial subscriptions or verification transactions. As a result, WorldPay SEPA billing info updates must occur within the process of processing a transaction.
+* **Tax ID and Sales Tax Requirements**
+  * Transactions require the submission of a tax ID (ex: CUIT) with each transaction in many LATAM countries.
+    * If you are using CUIT, CPF, or CNPJ tax types, you must specify the type via API, else send the tax ID without a`tax_identifier_type`.
+  * Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
 * Check if your business is on Worldpay's list of [Prohibited Business types](http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm).
 
 > 🚧 Warning
