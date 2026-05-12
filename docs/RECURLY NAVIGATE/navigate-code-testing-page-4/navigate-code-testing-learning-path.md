@@ -83,27 +83,27 @@ body { margin: 0; background: #fff; }
 .rc-logo-image { height: 36px; width: auto; }
 
 .rc-lp-hero-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  text-align: center;
   margin: 0 0 14px;
-  width: 100%;
 }
 .rc-lp-pillar-badge {
+  display: inline-block;
+  vertical-align: middle;
   width: 26px;
   height: 26px;
   object-fit: contain;
   opacity: 0.9;
-  flex: none;
+  margin-right: 10px;
+  margin-bottom: 4px;
 }
 .rc-lp-hero-title h1 {
+  display: inline;
   font-size: 2.2rem;
   font-weight: 800;
   line-height: 1.15;
   color: var(--offwhite);
   margin: 0;
-  flex: none;
+  vertical-align: middle;
 }
 .rc-hero > p {
   font-size: 1rem;
