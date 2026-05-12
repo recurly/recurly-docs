@@ -10,14 +10,6 @@ metadata:
 ---
 # Overview
 
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
-
-### Additional cost
-
-This feature is included with your Recurly subscription plan.
-
 ### Prerequisites
 
 * An active Recurly account with an API key generated
