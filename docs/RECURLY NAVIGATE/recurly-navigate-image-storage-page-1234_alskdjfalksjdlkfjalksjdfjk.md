@@ -33,6 +33,9 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" />
 
+<Image align="center" src="https://files.readme.io/fd20a9de9ffd5bdd2e758d7fc8bf2422fcdcd4abd506e586f35f2b64ffe15255-Home_Icon.png" />
+
+
   <br />
 
   <Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
@@ -43,9 +46,9 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" />
 
-<Image align="center" src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" />
+  <Image align="center" src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" />
 
-<Image align="center" src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" />
+  <Image align="center" src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" />
 
   <br />
 
@@ -55,6 +58,5 @@ metadata:
 
   <br />
 </div>
-
 
 <br />
