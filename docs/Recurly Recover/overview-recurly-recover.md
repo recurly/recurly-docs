@@ -4,7 +4,7 @@ excerpt: >-
   Submit past-due invoices to Recurly's retry engine for collection, independent
   of your billing platform.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
