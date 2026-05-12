@@ -19,6 +19,9 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" />
 
+<Image align="center" src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" />
+
+
   <Image align="center" src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" />
 
   <Image align="center" src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" />
@@ -33,31 +36,12 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" />
 
-  <Image align="center" src="https://files.readme.io/fd20a9de9ffd5bdd2e758d7fc8bf2422fcdcd4abd506e586f35f2b64ffe15255-Home_Icon.png" />
-
-  <br />
-
-  <Image align="center" src="https://files.readme.io/532693d4eb61149090deae2d52890bb6fc25bd87004b2c7e0d09cca1b116df0e-Yellow_Navigate_Pin.png" />
-
-  <Image align="center" src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" />
-  <br/>
-
-
-  # page images
-
-  <Image align="center" src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" />
-
-  <Image align="center" src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" />
-
-  <Image align="center" src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" />
-
-  <br />
-
-  <Image align="center" src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" />
-
-  <Image align="center" src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png" />
-
-  <br />
+<Image align="center" src="https://files.readme.io/fd20a9de9ffd5bdd2e758d7fc8bf2422fcdcd4abd506e586f35f2b64ffe15255-Home_Icon.png" />
 </div>
 
-<Image align="center" src="https://files.readme.io/cb336af6934849c5770a5928570a2aa093cef9ca901535657e754ce17b2e6b31-Home_Icon_1.png" />
+
+<br />
+
+<br />
+
+<br />
