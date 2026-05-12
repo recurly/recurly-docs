@@ -14,18 +14,22 @@ metadata:
 
 This feature is available to all customers on any Recurly subscription plan.
 
+### Additional cost
+
+This feature is included with your Recurly subscription plan.
+
 ### Prerequisites
 
-* An active Recurly account with an API key generated.
-* A supported payment gateway configured (Stripe, Braintree, or CommerceHub).
-* At least one retry window (dunning campaign) configured in your Recurly Admin UI.
+* An active Recurly account with an API key generated
+* A supported payment gateway configured (Stripe, Braintree, or CommerceHub)
+* At least one retry window (dunning campaign) configured in your Recurly Admin UI
 
 ### Limitations
 
-* Recurly Recover is designed for merchants who don't use Recurly for subscription management. It's not intended to work alongside Recurly Subscriptions.
-* Accounts can only be created via the API — not through the Admin UI.
-* Each successful API call creates one account with one invoice. Calling the API again with the same account code returns an error.
-* Only Stripe, Braintree, and CommerceHub are supported payment gateways.
+* Recurly Recover is designed for merchants who don't use Recurly for subscription management. It's not intended to work alongside Recurly Subscriptions
+* Accounts can only be created via the API — not through the Admin UI
+* Each successful API call creates one account with one invoice. Calling the API again with the same account code returns an error
+* Only Stripe, Braintree, and CommerceHub are supported payment gateways
 
 # Definition
 
@@ -1441,7 +1445,7 @@ Recurly creates an account (without a subscription), a charge invoice, and one o
 
 **Can I stop retries on a past-due invoice?**
 
-Yes. While an invoice is in a Past Due state, you can cancel all future collection attempts by marking the invoice as Failed or Paid using the Recurly Invoice API.
+Yes. While an invoice is in a past due state, you can cancel all future collection attempts by marking the invoice as failed or paid using the Recurly Invoice API.
 
 **What happens when the retry window closes without a successful payment?**
 
