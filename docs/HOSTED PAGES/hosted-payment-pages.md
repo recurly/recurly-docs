@@ -1,9 +1,8 @@
 ---
 title: Hosted payment page
 excerpt: >-
-  Elevate your subscription process with Recurly's Hosted Payment Pages,
-  ensuring a smooth, secure, and localized user experience while adhering to PCI
-  compliance standards.
+  Set up and customize Recurly's Hosted Payment Pages to collect subscriptions
+  securely with minimal technical integration.
 deprecated: false
 hidden: false
 metadata:
@@ -15,220 +14,283 @@ next:
 ---
 # Overview
 
-### Video
-
-<Embed url="https://www.youtube.com/embed/FEfoB7miNVk" href="https://www.youtube.com/embed/FEfoB7miNVk" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FFEfoB7miNVk%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DFEfoB7miNVk%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FFEfoB7miNVk%252Fhqdefault.jpg%26key%3D02466f963b9b4bb8845a05b53d3235d7%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22800%22%20height%3D%22580%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+> ⚠️ **Deprecated**
+>
+> Hosted Payment Pages are deprecated and only supported for legacy purposes. No further updates will be made to this feature. For new implementations, use [Recurly Checkout](/docs/checkout) instead.
 
 ### Required plan
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+This feature is available to all customers on any Recurly subscription plan.
+
+### Limitations
+
+* Hosted Payment Pages don't support iframes due to PCI compliance and security requirements.
+* reCAPTCHA activates after three failed transaction attempts from the same IP address within a 24-hour window.
 
 # Definition
 
-Recurly's Hosted Payment Pages are specially designed platforms where merchants can initiate user subscriptions with minimal hassle. In conjunction with Account Management Pages, these platforms provide an inclusive user experience, all within a PCI-compliant and user-friendly environment.
-
-> 👍 New Recurly Checkout!
->
-> The new Checkout capability is now available to all Recurly customers. With quick setup and deployment, rich customizable features, and flexible payment options, Checkout is the new standard for fast and frictionless consumer checkout, powering subscription purchases for your business. [Learn more.](https://docs.recurly.com/docs/checkout)
+Recurly's Hosted Payment Pages are pre-built, secure checkout experiences where your customers sign up for subscriptions without leaving your domain. Paired with Account Management Pages, they give you a PCI-compliant, customizable, and friction-free way to collect payments and subscriber data.
 
 # Key benefits
 
-* **Streamlined user experience**: A blend of aesthetics and efficiency, including customizable designs (Classic and Modern) to cater to varying user preferences.
-* **Localized interactions**: Support for multiple languages, ensuring your international customers always feel at home.
-* **Uncompromised security**: Features such as reCAPTCHA and a thorough testing environment, ensuring malicious threats stay at bay.
-* **Flexibility**: Advanced sign-up options that allow pre-population of fields and specific URL parameters for more refined user interactions.
-* **Comprehensive integration**: Compatibility with Google Analytics, multi-currency options, and other third-party services ensures a broad-reaching impact.
+* **Minimal setup**: No complex integration required — point customers to a URL and you're done.
+* **Customizable branding**: Choose between Classic or Modern designs and add your company colors and logo.
+* **Global reach**: Support for 14 languages and automatic currency detection based on customer location.
+* **Built-in security**: reCAPTCHA protection and Recurly's PCI-compliant infrastructure keep fraud at bay.
+* **Flexible data collection**: Gather basic contact info or advanced fields like company name, VAT number, and shipping address.
 
 # Key details
 
-### Look and feel
+## Look and feel
 
-Personalize your Hosted Payment Pages by integrating your company's branding elements. Choose from the Classic or Modern design, the latter optimized and responsive on mobile screens and equipped with an additional feature to capture Shipping Addresses. To alter designs or customize further, visit the [Hosted Page Settings](https://app.recurly.com/go/configuration/hosted_pages) page. For intricate configurations, refer to [Recurly.js](https://docs.recurly.com/js/).
+Personalize your Hosted Payment Pages with your brand. Choose between two design templates:
 
-### Site subdomain
+* **Classic**: A traditional, proven design that works everywhere.
+* **Modern**: A responsive, mobile-optimized design with support for shipping address collection.
 
-Your custom subdomain (`:your_subdomain.recurly.com`) and requires admins to sign in again to apply the changes. If you wish to change the subdomain, contact the Support team.
+To change your design, colors, or other styling, visit the [Hosted Page Settings](https://app.recurly.com/go/configuration/hosted_pages) in your Recurly account.
 
-### Accessing hosted payment pages
+For advanced customization beyond the UI settings, refer to the [Recurly.js documentation](https://docs.recurly.com/js/).
 
-Each subscription plan is associated with a unique Hosted Payment Page, accessible via `:your_subdomain.recurly.com/subscribe/:plan_code`.
+## Site subdomain
 
-### Security
+Your Hosted Payment Pages live at a custom subdomain: `:your_subdomain.recurly.com`
 
-Recurly prioritizes security by employing **reCAPTCHA** on all Hosted Payment Pages. This mechanism kicks in after **3 failed transactions** from a single **IP address** within a **24-hour window**, ensuring bots and malicious attempts are curbed.
+Changing your subdomain requires your admins to sign in again to apply the changes. To modify your subdomain, contact Recurly Support.
 
-### Testing
+## Accessing your pages
 
-When in Sandbox mode, utilize Recurly's test gateway alongside specific test credit card numbers to simulate the subscription process. For a detailed guide, consult the [Test Gateway](/docs/test) documentation.
-
-### Signup basics & advanced sign-up
-
-Gather essential details from your customers during the sign-up phase, ranging from basic contact and billing information to additional data like Company Name, VAT Number, coupon codes, or Shipping Address. Advanced sign-up also allows for URL customization to auto-fill certain fields or set default parameters.
-
-### Confirmation
-
-Post a successful sign-up, direct your customers to a custom URL for confirmation. This feature also allows for the inclusion of plan codes and account codes in the URL, enhancing the user's clarity.
-
-### Google analytics
-
-For those keen on tracking funnel conversions, Recurly's integration with Google Analytics will prove invaluable. Set it up from the configuration page, and it will automatically track visits and checkouts on your hosted payment pages.
-
-### Multi-currency
-
-Adaptability is key in today's global market. Recurly's Hosted Payment Pages identify and default to the most appropriate currency based on a user's geographical location, ensuring ease of transaction for international customers. Customers are able to select a different currency before order completion. If the most suitable currency isn't available, your default currency will be used. It is possible to specify a currency by appending a currency parameter.
-
-### Internationalized hosted payment pages
-
-In today's global market, a multilingual approach is essential. Recurly's Hosted Payment Pages come ready with support for fourteen languages, with a display preference based on a user's browser settings.
-
-## ReCAPTCHA
-
-ReCAPTCHA is a free service that safeguards your site against spam, malicious activities, and other forms of bot attacks. By determining whether a user is human or not, it acts as a filter to ensure only legitimate activities pass through.
-
-The reCAPTCHA service presents users with images of distorted text, typically hard for OCR software to interpret. When users enter the text they see, this input is validated against the expected result, ensuring the user is indeed human.
-
-### **How reCAPTCHA Works on Hosted Payment Pages**
-
-1. **Activation Trigger:** After 3 failed transaction attempts from the same IP address within a 24-hour rolling period, reCAPTCHA is activated.
-2. **User Prompt:** The user will see a distorted text image and will be required to input what they interpret from the image.
-3. **Validation:** Their input is then validated against the expected result. If it matches, the transaction process continues.
-4. **Continuous Protection:** For any subsequent failed transactions, the reCAPTCHA challenge will be presented again, ensuring continuous protection against malicious activity.
-
-## Interacting with reCAPTCHA
-
-Users typically see a checkbox saying "I'm not a robot". By ticking this box, most genuine users are let through. In cases where reCAPTCHA cannot determine the legitimacy of the user, the distorted text challenge is presented for further verification.
-
-# Localization
-
-With Recurly's Hosted Pages, businesses can cater to a diverse global audience. The pages support a plethora of languages, ensuring that subscribers have a native and intuitive experience. The languages offered are:
-
-1. **English** - Catering to a broad audience worldwide.
-2. **Danish** - For the businesses operating in Denmark.
-3. **German** - Making inroads into the German-speaking markets.
-4. **Spanish** - Reaching out to Spain, Latin America, and other Spanish-speaking regions.
-5. **French** - For France, Canada, and other French-speaking territories.
-6. **Hindi** - Connecting with the vast audience in India.
-7. **Japanese** - Addressing the tech-savvy Japanese market.
-8. **Dutch** - For businesses in the Netherlands and Flemish-speaking Belgians.
-9. **Portuguese** - Targeting both Portugal and Brazil.
-10. **Russian** - For companies expanding into the Russian Federation.
-11. **Turkish** - Reaching out to the dynamic market in Turkey.
-12. **Chinese** - Simplified Chinese for the vast Chinese market.
-13. **Swedish** - For the businesses in Sweden.
-14. **Polish** - Engaging with the Polish-speaking audience.
-
-Each language rendition is meticulously crafted, ensuring that nuances and specific regional dialects are considered, providing subscribers with a seamless and localized experience based on their browser's language preferences.
-
-# Implementation
-
-Implementing Recurly's Hosted Pages is straightforward. For new sign-ups, businesses can define a Plan's return URL, ensuring customers are redirected back post sign-up. However, for security reasons, it's paramount to understand that Hosted Pages **do not support iframes**. This ensures Recurly maintains its commitment to the highest security standards and PCI compliance. As a result, iframes, though convenient, aren't permissible due to their potential security vulnerabilities when integrating Recurly's secure pages.
-
-With Recurly's Hosted Pages, businesses can ensure a smooth, secure, and localized experience for their subscribers, leading to heightened satisfaction and retention.
-
-# Configuration
-
-* **Log into** your Recurly account.
-* **Navigate** to the [Hosted Page Settings](https://app.recurly.com/go/configuration/hosted_pages) to customize the look and feel.
-* **Choose** between the Classic or Modern design based on your preference.
-
-2. **Setting up the subdomain**:
-
-* In your Recurly dashboard, **find** the [Site Settings](https://app.recurly.com/go/configuration/edit) page.
-  * **Update** the subdomain if required (a re-login will be necessary to view changes).
-
-3. **Access & linking**:
-   * For each subscription plan, **generate** its respective Hosted Payment Page link.
-   * This link will follow the format: `:your_subdomain.recurly.com/subscribe/:plan_code`.
-4. **Security**:
-   * By default, reCAPTCHA will be enabled on all pages. **Ensure** you're familiar with its functioning to address any customer queries.
-5. **Testing**:
-   * **Shift** to Sandbox mode.
-   * **Use** the [Test Gateway](/docs/test) for simulating the subscription process, ensuring every step works flawlessly.
-6. **Signup customization**:
-   * **Collect** necessary data from users during sign-up.
-
-* For advanced sign-up, generate custom URLs to auto-fill certain fields, leveraging the documentation below.
-
-## Advanced sign-up examples
-
-* **Default plan quantity**
-
-If you want to set the default Plan quantity for a subscription, you may append a `quantity` parameter to the URL. For example, use the following URL to set the quantity to 5 for a plan with plan code `gold`:
+Each subscription plan has a unique Hosted Payment Page. Access it with this URL:
 
 ```
-https://:your_subdomain.recurly.com/subscribe/gold?quantity=5
+https://:your_subdomain.recurly.com/subscribe/:plan_code
 ```
 
-* **Default quantity for add-ons and items**
+Replace `:your_subdomain` with your custom subdomain and `:plan_code` with your subscription plan's code.
 
-If you want to set the default quantity for an add-on or item associated with the plan, you may append an `add_on_code` and `add_on_quantity` parameter to the URL. For example, use the following URL for the gold plan to set the quantity of "seats" to 3 and "support" to 2.
+## Security with reCAPTCHA
 
-```
-https://:your_subdomain.recurly.com/subscribe/gold?add_on_code=seats,support&add_on_quantity=3,2
-```
+Recurly uses reCAPTCHA to protect your pages from bot attacks and fraudulent activity.
 
-* **Account code & username**
+### How reCAPTCHA works on your pages
 
-If you are directing the user from your web application, you should customize the URL to submit the account code and optionally the username. The hosted payment page parameters are:
+reCAPTCHA activates after three failed transaction attempts from the same IP address within a rolling 24-hour window. When triggered, customers see a "I'm not a robot" checkbox. Most legitimate users pass through immediately. If reCAPTCHA can't confirm their legitimacy, they'll see a distorted text challenge to complete.
 
-```
-https://:your_subdomain.recurly.com/subscribe/:plan_code/:account_code/:username
-```
+The service validates that the user is human before allowing the transaction to proceed. If additional failed attempts occur, the challenge appears again.
 
-The account code should be a URL-encoded version of the unique ID you use to identify an account. This might be an auto-incrementing ID, a GUID, their email address, etc. The username optionally identifies the user. The username might be their online handle or email address. Usually the username is the username or email address required for the user to log into your application.
+## Testing in Sandbox mode
 
-**_Account codes are unique within your Recurly account_; usernames are not.**
+Before going live, test your subscription flow in Sandbox mode using Recurly's test gateway and test credit card numbers. For a complete guide with card numbers and test scenarios, see the [Test Gateway documentation](/docs/test).
 
-If you do not specify an account code, the user's email address will be used as the account code. If you do not specify a username, it will be left blank.
+## Collecting customer data
 
-If you do specify an account code for which there is already an existing account and that account has an email address defined, that existing email address will not be changed.
+### Basic sign-up
 
-> **Note:** If you include an account code and email, first, or last name, you must pass this value in the following format:
+By default, your Hosted Payment Pages collect:
 
-```
-https://:your_subdomain.recurly.com/subscribe/:plan_code?account_code=:account_code&first_name=Verena&last_name=Example&email=verena%40example.com
-```
+* First and last name
+* Email address
+* Billing address
+* Payment method
 
-* **First name, last name & email**
+### Advanced sign-up
 
-You may also pre-populate the subscription form by passing `first_name`, `last_name`, and `email` parameters in the URL. Here's an example:
+Pre-populate fields and customize data collection by adding URL parameters. See [Advanced sign-up examples](#advanced-sign-up-examples) below.
 
-```
-https://example.recurly.com/subscribe/:plan_code?first_name=Verena&last_name=Example&email=verena%40example.com
-```
+## Confirming sign-ups
 
-* **Payment method ordering**
-
-f you would like to display your payment methods in a specific order, you may do so using the `payment_methods` URL parameter. This parameter is structured as an array. For example:
-
-```
-https://example.recurly.com/subscribe/:plan_code?payment_methods[]=ach&payment_methods[]=credit_card
-```
-
-Your payment page will display available payment methods in this order first. If there are more payment methods available that aren't specified in this parameter, then the remaining payment methods will proceed in their default order.  
-Possible values, in their default order, are `credit_card`, `ach`, `sepa`, `paypal`, and `amazon`.
-
-### Coupon code
-
-* You can pre populate the field by setting it in the URL, e.g. `?subscription[coupon_code]=10off`.
-
-**Confirmation**:
-
-Optionally, Recurly can return the plan code and account code in the URL. If you rely on these parameters, be sure to use the API to verify the new plan code to prevent URL tampering. Here's an example return URL:
+After a successful subscription, redirect your customers to a confirmation page. You can pass account and plan codes in the URL to provide clear confirmation details:
 
 ```
 http://example.com/signup/success?account={{account_code}}&plan={{plan_code}}
 ```
 
-Both `{{account_code}}` and `{{plan_code}}` will be replaced with the new subscriber's account code and plan code, respectively.
+Recurly automatically replaces `{{account_code}}` and `{{plan_code}}` with the new subscriber's values.
 
-7. **Google analytics integration**:
+## Google Analytics integration
 
-* Access the [configuration page](https://app.recurly.com/go/configuration/hosted_pages) on Recurly.
-* Enter your Google Analytics tracking code in the designated section.
+Track your checkout funnel by connecting Google Analytics to your Hosted Payment Pages.
 
-8. **Currency settings**:
-   * If your business supports multiple currencies, Recurly will automatically select the most appropriate one based on the user's location.
-   * Ensure you've enabled the required currencies in your Recurly account.
-9. **Language preferences**:
-   * Hosted Payment Pages will default to the language based on user browser settings. Ensure that all necessary languages are supported in your Recurly settings.
+1. Go to [Hosted Page Settings](https://app.recurly.com/go/configuration/hosted_pages) in Recurly.
+2. Enter your Google Analytics tracking code.
+3. Recurly automatically tracks visits and checkouts.
+
+## Multi-currency
+
+Hosted Payment Pages automatically detect your customer's location and display the most appropriate currency. Customers can select a different currency before completing checkout.
+
+If you want to specify a currency manually, add a `currency` parameter to your URL:
+
+```
+https://:your_subdomain.recurly.com/subscribe/:plan_code?currency=EUR
+```
+
+If your preferred currency isn't available, your account's default currency displays instead.
+
+## Language support
+
+Your Hosted Payment Pages support 14 languages, detected automatically from your customer's browser settings:
+
+English, Danish, German, Spanish, French, Hindi, Japanese, Dutch, Portuguese, Russian, Turkish, Simplified Chinese, Swedish, and Polish.
+
+Each language is localized for regional nuances, giving your international customers a native experience.
+
+## Advanced sign-up examples
+
+### Set a default plan quantity
+
+To pre-fill the quantity field for a plan, add a `quantity` parameter:
+
+```
+https://:your_subdomain.recurly.com/subscribe/gold?quantity=5
+```
+
+### Set default quantities for add-ons or items
+
+Pre-fill quantities for add-ons or items associated with your plan. Use `add_on_code` and `add_on_quantity` parameters, separated by commas:
+
+```
+https://:your_subdomain.recurly.com/subscribe/gold?add_on_code=seats,support&add_on_quantity=3,2
+```
+
+This example sets "seats" to 3 and "support" to 2 for the gold plan.
+
+### Pass account code and username
+
+When directing users from your application, include their account code and optionally their username:
+
+```
+https://:your_subdomain.recurly.com/subscribe/:plan_code/:account_code/:username
+```
+
+* **Account code**: A URL-encoded unique identifier for the account (auto-incrementing ID, GUID, email, etc.). Required and must be unique in your Recurly account.
+* **Username**: Optional identifier like their online handle or email. Doesn't need to be unique.
+
+If you don't specify an account code, the customer's email address is used instead. If you don't specify a username, it remains blank.
+
+If the account code already exists and has an email on file, that existing email won't be changed.
+
+### Pre-populate name and email
+
+Add `first_name`, `last_name`, and `email` parameters to pre-fill the form:
+
+```
+https://example.recurly.com/subscribe/:plan_code?first_name=Verena&last_name=Example&email=verena%40example.com
+```
+
+When including account code with name and email, use this format:
+
+```
+https://:your_subdomain.recurly.com/subscribe/:plan_code?account_code=:account_code&first_name=Verena&last_name=Example&email=verena%40example.com
+```
+
+### Specify payment method order
+
+Control the order payment methods appear on your checkout page using the `payment_methods` parameter:
+
+```
+https://example.recurly.com/subscribe/:plan_code?payment_methods[]=ach&payment_methods[]=credit_card
+```
+
+The page displays methods in the order you specify first. Any additional payment methods available on your account display in their default order after your specified list.
+
+Available payment methods (in default order): `credit_card`, `ach`, `sepa`, `paypal`, `amazon`.
+
+### Pre-populate a coupon code
+
+Add a coupon code to the URL so it's already entered when customers land on your page:
+
+```
+https://example.recurly.com/subscribe/:plan_code?subscription[coupon_code]=10off
+```
+
+# Configuration guide
+
+## Step 1: Customize your design
+
+1. Log into your Recurly account.
+2. Go to [Hosted Page Settings](https://app.recurly.com/go/configuration/hosted_pages).
+3. Choose between Classic or Modern design.
+4. Add your company's branding elements (logo, colors).
+
+## Step 2: Set your subdomain
+
+1. Navigate to [Site Settings](https://app.recurly.com/go/configuration/edit).
+2. Update your subdomain if needed.
+3. Admins will need to sign in again to see the changes take effect.
+
+## Step 3: Generate your payment page URL
+
+For each subscription plan, create the Hosted Payment Page URL:
+
+```
+https://:your_subdomain.recurly.com/subscribe/:plan_code
+```
+
+Add any advanced parameters as needed (quantity, add-ons, pre-filled fields, etc.).
+
+## Step 4: Secure your pages
+
+reCAPTCHA is enabled by default. Familiarize yourself with how it works so you can answer customer questions.
+
+## Step 5: Test in Sandbox mode
+
+1. Switch to Sandbox mode in your account settings.
+2. Use the [Test Gateway](/docs/test) and test credit card numbers to simulate the complete subscription flow.
+3. Verify each step works as expected.
+
+## Step 6: Customize data collection
+
+Configure what customer data you want to collect during sign-up (basic contact info, company name, VAT number, shipping address, etc.). For advanced configuration, use URL parameters to pre-fill fields or set defaults.
+
+## Step 7: Set up confirmation
+
+Define a confirmation URL where customers land after successfully signing up. Optionally include plan and account codes for enhanced clarity.
+
+## Step 8: Connect Google Analytics (optional)
+
+1. Go to [Hosted Page Settings](https://app.recurly.com/go/configuration/hosted_pages).
+2. Enter your Google Analytics tracking code.
+3. Recurly automatically tracks visits and checkout conversions.
+
+## Step 9: Enable required currencies
+
+If your business operates in multiple currencies:
+
+1. Enable the currencies you support in your Recurly account.
+2. Recurly automatically selects the best currency for each customer based on location.
+3. Customers can manually select a different currency if needed.
+
+## Step 10: Confirm language support
+
+Hosted Payment Pages detect and display in your customer's browser language. Review the 14 supported languages and ensure they're enabled in your account settings.
+
+# FAQs
+
+**Can I use an iframe to embed Hosted Payment Pages?**
+
+No. Hosted Payment Pages don't support iframes because of PCI compliance and security requirements. Instead, direct customers to your Hosted Payment Page URL via a button or link.
+
+**What happens if a customer fails multiple checkout attempts?**
+
+After three failed transaction attempts from the same IP address in a 24-hour window, reCAPTCHA activates. The customer must complete a distorted text challenge to prove they're human before continuing.
+
+**Can I customize which data fields appear on the page?**
+
+Yes. You can collect basic information (name, email, billing address) or add advanced fields like company name, VAT number, and shipping address. Configure this in Hosted Page Settings.
+
+**How does currency selection work?**
+
+Recurly automatically detects the customer's location and displays the most appropriate currency. Customers can choose a different currency before completing checkout. You can also manually specify a currency using the `currency` URL parameter.
+
+**Which languages are supported?**
+
+Hosted Payment Pages support 14 languages: English, Danish, German, Spanish, French, Hindi, Japanese, Dutch, Portuguese, Russian, Turkish, Simplified Chinese, Swedish, and Polish. The page defaults to the customer's browser language.
+
+**Can I pre-populate form fields with customer data?**
+
+Yes. Use URL parameters to pre-fill name, email, account code, coupon codes, plan quantity, and add-on quantities. See [Advanced sign-up examples](#advanced-sign-up-examples) for full details.
+
+**What happens if I change my subdomain?**
+
+Changing your subdomain requires admins to sign in again for changes to take effect. All URLs pointing to your old subdomain will stop working. Plan this change carefully and update any links in your application.
