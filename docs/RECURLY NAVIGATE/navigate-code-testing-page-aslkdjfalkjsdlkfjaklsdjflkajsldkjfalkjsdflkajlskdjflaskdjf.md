@@ -281,7 +281,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
   <details class="rc-sticky-nav-wrap">
     <summary>
       <span class="rc-nav-toggle-label">
-        Quick Links
+        Navigate Quick Links
       <span class="rc-nav-chevron">▼</span>
     </summary>
     <div class="rc-nav-drawer">
