@@ -82,20 +82,20 @@ body { margin: 0; background: #fff; }
 .rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
 .rc-logo-image { height: 36px; width: auto; }
 
-/* Pillar badge + title inline */
 .rc-lp-hero-title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin: 0 0 14px;
+  width: 100%;
 }
 .rc-lp-pillar-badge {
   width: 26px;
   height: 26px;
   object-fit: contain;
   opacity: 0.9;
-  flex-shrink: 0;
+  flex: none;
 }
 .rc-lp-hero-title h1 {
   font-size: 2.2rem;
@@ -103,6 +103,7 @@ body { margin: 0; background: #fff; }
   line-height: 1.15;
   color: var(--offwhite);
   margin: 0;
+  flex: none;
 }
 .rc-hero > p {
   font-size: 1rem;
