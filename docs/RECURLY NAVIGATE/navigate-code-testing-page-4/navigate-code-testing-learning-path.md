@@ -167,8 +167,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-/* Active/current step */
-.rc-sticky-link-active {
+/* Step number circles in nav */
+.rc-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--offblack);
+  color: var(--yellow);
+  font-size: .65rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  line-height: 1;
+}
   background: rgba(0,0,0,0.12);
   font-weight: 800;
 }
@@ -230,9 +243,26 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body strong { color: var(--offblack); }
 
-/* ── PATH NAVIGATION BUTTON ── */
-.rc-lp-nav { display: flex; justify-content: flex-end; margin: 40px 0 16px; }
-.rc-lp-nav-start { display: flex; justify-content: center; margin: 40px 0 16px; }
+/* ── PATH NAVIGATION BUTTONS ── */
+.rc-lp-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 40px 0 16px;
+}
+/* Static "you are here" indicator — not a link */
+.rc-btn-current {
+  background: var(--brightgray);
+  color: var(--gray) !important;
+  padding: 13px 24px; border-radius: 10px;
+  font-weight: 700; font-size: .9rem;
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 2px solid var(--lightgray);
+  cursor: default;
+  user-select: none;
+}
+/* Active "next" link */
 .rc-btn-path {
   background: var(--yellow); color: var(--offblack) !important;
   text-decoration: none !important; padding: 13px 28px; border-radius: 10px;
@@ -241,20 +271,33 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-btn-path:hover { background: transparent; color: var(--offblack) !important; }
 
-/* ── ADDITIONAL RESOURCES ── */
+/* ── RESOURCES — callout style, tied to page content ── */
 .rc-resources {
-  background: var(--brightgray); border: 1px solid var(--lightgray);
-  border-radius: 14px; padding: 24px 28px; margin: 48px 0 0;
+  background: var(--brightgray);
+  border-left: 4px solid var(--retain);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 32px 0 0;
 }
-.rc-resources h3 { font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--gray); margin: 0 0 16px; }
-.rc-resource-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.rc-resources h3 {
+  font-size: .75rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .9px; color: var(--gray); margin: 0 0 12px;
+}
+.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rc-resource-link {
-  color: var(--offblack) !important; text-decoration: none !important;
-  font-weight: 600; font-size: .88rem; padding: 8px 16px;
-  background: var(--offwhite); border: 1px solid var(--lightgray);
-  border-radius: 8px; transition: all .2s; display: inline-flex; align-items: center; gap: 6px;
+  color: var(--darkgray) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--lightgray) !important;
+  font-weight: 500;
+  font-size: .88rem;
+  transition: all .18s;
+  display: inline-flex; align-items: center; gap: 6px;
 }
-.rc-resource-link:hover { background: var(--offblack); color: var(--yellow) !important; border-color: var(--offblack); }
+.rc-resource-link:hover {
+  color: var(--offblack) !important;
+  text-decoration-color: var(--retain) !important;
+}
 
 /* ── FOOTER NAV ── */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 32px; text-align: center; }
@@ -335,13 +378,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-sticky-link rc-sticky-link-active">
-              <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Account Updater
+              <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Account Updater
             </a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-sticky-link">1. Why use it?</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations" class="rc-sticky-link">2. Things to consider</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" class="rc-sticky-link">3. How to enable it</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-sticky-link">4. Tracking impact</a>
-            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case" class="rc-sticky-link">5. Pitch to leadership</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why use it?</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> Things to consider</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" class="rc-sticky-link"><span class="rc-step-badge">3</span> How to enable it</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking impact</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case" class="rc-sticky-link"><span class="rc-step-badge">5</span> Pitch to leadership</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
             </a>
@@ -436,16 +479,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── NEXT STEP BUTTON ── -->
-    <div class="rc-lp-nav-start">
+    <!-- ── PATH NAVIGATION ── -->
+    <div class="rc-lp-nav">
+      <span class="rc-btn-current">🎯 Start</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-btn-path">
-        🎯 Start — Next: Why use it? →
+        Next: Why use it? →
       </a>
     </div>
 
-    <!-- ── ADDITIONAL RESOURCES ── -->
+    <!-- ── RESOURCES ── -->
     <div class="rc-resources">
-      <h3>📚 Additional resources</h3>
+      <h3>📚 Resources</h3>
       <div class="rc-resource-links">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-updater" target="_blank" class="rc-resource-link">📖 Recurly Docs: Account Updater</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
