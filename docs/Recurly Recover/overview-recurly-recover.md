@@ -88,12 +88,12 @@ Recurly fires webhook events at key points in the retry lifecycle. Configure at 
 2. Add your endpoint URL
 3. Subscribe to the following events:
 
-| Event                   | Fires when                                              |
-| :---------------------- | :------------------------------------------------------ |
-| `payment_succeeded`     | A retry attempt successfully collects payment           |
-| `payment_failed`        | A retry attempt fails                                   |
-| `dunning_event_created` | A dunning step fires per the retry window configuration |
-| `invoice_closed`        | An invoice is marked as paid or failed                  |
+| Event                | Fires when                                              |
+| :------------------- | :------------------------------------------------------ |
+| `successful_payment` | A retry attempt successfully collects payment           |
+| `failed_payment`     | A retry attempt fails                                   |
+| `new_dunning_event`  | A dunning step fires per the retry window configuration |
+| `closed_invoice`     | An invoice is marked as paid or failed                  |
 
 **Important**: The uuid field in payment webhook events is a **transaction ID,** not an invoice ID. Use `GET /transactions/uuid-{uuid}` to retrieve the transaction, then follow the invoice relationship if you need the invoice details. Do not query `/invoices/{uuid}` with a transaction ID.
 
@@ -1417,13 +1417,13 @@ When the Wallet feature is enabled, payment methods are designated as primary or
 
 **Do I need to use Recurly as my subscription management platform to use Recurly Recover?**
 
-No. Recurly Recover is designed to work independently — you can retry failed invoice collection even if Recurly isn't your subscription management or billing platform. We don't recommend combining Recurly Recover with Recurly's full subscription management product at this time. 
+No. Recurly Recover is designed to work independently — you can retry failed invoice collection even if Recurly isn't your subscription management or billing platform. We don't recommend combining Recurly Recover with Recurly's full subscription management product at this time.
 
 **What happens when a past due invoice is submitted via the API?**
 
 Recurly creates an account (without a subscription), along with a charge, a past due invoice, and one or more failed transactions. Billing information is stored on the account, and Recurly automatically calculates the next collection attempt date based on the data in the request.
 
-**Can I stop retry attempts on a past due invoice?** 
+**Can I stop retry attempts on a past due invoice?**
 
 Yes. While an invoice is in a Past Due state, you can cancel all future collection attempts at any time by marking the invoice as Failed or Paid using the Recurly Invoice API.
 
