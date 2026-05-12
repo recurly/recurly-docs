@@ -281,7 +281,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
   <details class="rc-sticky-nav-wrap">
     <summary>
       <span class="rc-nav-toggle-label">
-        Menu
+        Page Navigation Menu
         <span class="rc-nav-hint">— tap to expand</span>
       </span>
       <span class="rc-nav-chevron">▼</span>
@@ -290,7 +290,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer {
       <div class="rc-nav-drawer-inner">
         <div class="rc-nav-links">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-            <img src="https://files.readme.io/cb336af6934849c5770a5928570a2aa093cef9ca901535657e754ce17b2e6b31-Home_Icon_1.png" alt="Home"> Home
+            <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt="Home"> Home
           </a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-sticky-link">Launch</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-sticky-link">Acquire</a>
