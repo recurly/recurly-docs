@@ -1,5 +1,5 @@
 ---
-title: Navigate Code Testing Learning Path 5
+title: Navigate Code Testing Learning Path 5-2
 deprecated: false
 hidden: true
 metadata:
