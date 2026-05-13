@@ -145,14 +145,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-oh-cta p { color: #CCC9B8 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
 .rc-oh-cta p strong { color: #FFFDF2 !important; }
 .rc-oh-btn { background: #FFD706 !important; color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; }
+.rc-guide a.rc-oh-btn { border-bottom: 2px solid #FFD706 !important; }
 .rc-guide .rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 
 /* Path nav — .rc-guide prefix on hover rules to beat armor specificity */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
 .rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray); transition: all .2s; }
+.rc-guide a.rc-btn-prev { border-bottom: 2px solid var(--lightgray) !important; }
 .rc-guide .rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
 .rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); }
+.rc-guide a.rc-btn-path { border-bottom: 2px solid var(--yellow) !important; }
 .rc-guide .rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
 @media(max-width:768px){ .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; } }
 
@@ -222,10 +225,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div></div></div>
     </details>
 
-    <!-- Section 1: Dashboard intro + demo video -->
+    <!-- Section 1: Dashboard intro + screenshot + video -->
     <div class="rc-lp-section">
       <h2>🏠 Overview dashboard</h2>
       <p>Your top-level payment health summary. This is the first thing you see when you open Payments Hub — a single view of how your payments are performing across all gateways and methods.</p>
+
+      <img class="rc-screenshot" src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" alt="Payments Hub Overview dashboard" />
+
+      <h2>🎬 Overview Dashboard Walkthrough</h2>
 
       <!-- ⚠️ Replace src with the public Goldcast embed URL for this clip -->
       <!-- Grab the embed URL from the clip's Share panel in Goldcast admin -->
@@ -236,8 +243,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
         <div class="rc-step-video-caption">A quick walkthrough of the Overview dashboard — what each tile shows and how to use the filters.</div>
       </div>
-
-      <img class="rc-screenshot" src="https://files.readme.io/ea22de0f101e14451f795623abc56a40f45d4f4a6fb18edbaf367c0b7c5650d1-Overview_Dashboard.png" alt="Payments Hub Overview dashboard" />
     </div>
 
     <!-- Section 2: What's on this dashboard -->
