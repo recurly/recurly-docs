@@ -202,7 +202,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* ── SECTION DIVIDER ── */
 .rc-divider { border: none; border-top: 1px solid var(--lightgray); margin: 36px 0; }
 
-/* ── INTERACTIVE CHECKLIST ── */
+/* ── INTERACTIVE CHECKLIST — pure CSS, no JS ── */
 .rc-checklist {
   background: var(--offwhite); border: 1px solid var(--lightgray);
   border-radius: 12px; overflow: hidden; margin: 20px 0 32px;
@@ -218,15 +218,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-checklist-item {
   padding: 14px 22px; border-bottom: 1px solid var(--brightgray);
   display: flex; align-items: flex-start; gap: 14px;
-  transition: background .15s;
-  cursor: pointer;
+  transition: background .15s; cursor: pointer;
 }
 .rc-checklist-item:last-child { border-bottom: none; }
 .rc-checklist-item:hover { background: var(--brightgray); }
-
-/* Hide the native checkbox */
+/* Hide native checkbox visually, keep it functional */
 .rc-checklist-item input[type="checkbox"] {
-  position: absolute; opacity: 0; width: 0; height: 0;
+  position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none;
 }
 /* Custom checkbox box */
 .rc-checkbox-box {
@@ -235,46 +233,32 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   background: #fff; display: flex; align-items: center;
   justify-content: center; transition: all .18s; margin-top: 1px;
 }
-/* Checked state */
-.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-body .rc-checkbox-box,
-.rc-checklist-item.rc-checked .rc-checkbox-box {
+/* Checked: fill box */
+.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box {
   background: var(--offblack); border-color: var(--offblack);
 }
-.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-body .rc-checkbox-box::after,
-.rc-checklist-item.rc-checked .rc-checkbox-box::after {
+/* Checked: show checkmark */
+.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after {
   content: '✓'; color: var(--yellow); font-size: .75rem; font-weight: 800; line-height: 1;
 }
-/* Alternative: JS-free approach using label */
-.rc-checklist-label {
-  display: flex; align-items: flex-start; gap: 14px;
-  width: 100%; cursor: pointer;
+/* Checked: strikethrough label */
+.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong {
+  text-decoration: line-through; color: var(--gray);
+}
+/* Checked: subtle row tint */
+.rc-checklist-item:has(input[type="checkbox"]:checked) {
+  background: rgba(255,157,136,0.06);
 }
 .rc-checklist-text { flex: 1; }
 .rc-checklist-text strong {
   font-size: .9rem; font-weight: 700; color: var(--offblack);
-  display: block; margin-bottom: 2px;
+  display: block; margin-bottom: 2px; transition: color .18s;
 }
-.rc-checklist-text span {
-  font-size: .8rem; color: var(--gray); line-height: 1.4; display: block;
-}
-/* Checked text styling */
-.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-label .rc-checklist-text strong {
-  color: var(--gray); text-decoration: line-through;
-}
-
-/* Progress indicator */
-.rc-checklist-progress {
+.rc-checklist-text span { font-size: .8rem; color: var(--gray); line-height: 1.4; display: block; }
+.rc-checklist-footer {
   padding: 10px 22px; background: var(--brightgray);
   border-top: 1px solid var(--lightgray);
   font-size: .78rem; color: var(--gray); font-weight: 600;
-  display: flex; align-items: center; gap: 10px;
-}
-.rc-progress-bar-wrap {
-  flex: 1; height: 5px; background: var(--lightgray); border-radius: 10px; overflow: hidden;
-}
-.rc-progress-bar {
-  height: 100%; background: var(--retain); border-radius: 10px;
-  width: 0%; transition: width .3s ease;
 }
 
 /* ── PATH NAVIGATION BUTTONS ── */
@@ -493,7 +477,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
 
         <label class="rc-checklist-item">
-          <input type="checkbox" onchange="rcUpdateProgress()">
+          <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
             <strong>Stored billing info exists in the Recurly vault</strong>
@@ -502,7 +486,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </label>
 
         <label class="rc-checklist-item">
-          <input type="checkbox" onchange="rcUpdateProgress()">
+          <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
             <strong>Identified whether you need Cardrefresher or modern RTAU</strong>
@@ -511,7 +495,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </label>
 
         <label class="rc-checklist-item">
-          <input type="checkbox" onchange="rcUpdateProgress()">
+          <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
             <strong>Coordinated with payment ops to avoid overlapping gateway fees</strong>
@@ -519,12 +503,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
         </label>
 
-        <div class="rc-checklist-progress">
-          <span id="rcProgressLabel">0 of 3 complete</span>
-          <div class="rc-progress-bar-wrap">
-            <div class="rc-progress-bar" id="rcProgressBar"></div>
-          </div>
-        </div>
+        <div class="rc-checklist-footer">✓ Tap each item to mark it complete</div>
       </div>
     </div>
 
@@ -564,36 +543,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   </div>
 </div>
 
-<script>
-function rcUpdateProgress() {
-  var checklist = document.getElementById('rcChecklist');
-  var boxes = checklist.querySelectorAll('input[type="checkbox"]');
-  var checked = 0;
-  boxes.forEach(function(box) {
-    var item = box.closest('.rc-checklist-item');
-    if (box.checked) {
-      checked++;
-      item.style.background = 'rgba(255,157,136,0.06)';
-      box.nextElementSibling.style.background = 'var(--offblack)';
-      box.nextElementSibling.style.borderColor = 'var(--offblack)';
-      box.nextElementSibling.innerHTML = '<span style="color:var(--yellow);font-size:.75rem;font-weight:800;line-height:1;">✓</span>';
-      item.querySelector('strong').style.textDecoration = 'line-through';
-      item.querySelector('strong').style.color = 'var(--gray)';
-    } else {
-      item.style.background = '';
-      box.nextElementSibling.style.background = '#fff';
-      box.nextElementSibling.style.borderColor = 'var(--lightgray)';
-      box.nextElementSibling.innerHTML = '';
-      item.querySelector('strong').style.textDecoration = '';
-      item.querySelector('strong').style.color = 'var(--offblack)';
-    }
-  });
-  var total = boxes.length;
-  var pct = Math.round((checked / total) * 100);
-  document.getElementById('rcProgressBar').style.width = pct + '%';
-  document.getElementById('rcProgressLabel').textContent = checked + ' of ' + total + ' complete';
-}
-</script>
 </body>
 </html>
 `}</HTMLBlock>
