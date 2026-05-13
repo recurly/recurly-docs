@@ -239,7 +239,46 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border: 2px solid var(--yellow); cursor: default; user-select: none;
 }
 
-/* ── RESOURCES ── */
+/* ── CONTINUE YOUR JOURNEY ── */
+.rc-next-steps { margin: 40px 0 0; }
+.rc-next-steps h3 {
+  font-size: .78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .9px; color: var(--gray); margin: 0 0 16px;
+}
+.rc-next-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+.rc-next-card {
+  background: var(--offwhite); border: 1px solid var(--lightgray);
+  border-radius: 12px; padding: 20px;
+  text-decoration: none !important; color: inherit;
+  display: flex; flex-direction: column; gap: 8px;
+  transition: all .2s ease;
+}
+.rc-next-card:hover {
+  border-color: var(--retain);
+  box-shadow: 0 4px 16px rgba(255,157,136,0.15);
+  transform: translateY(-2px);
+}
+.rc-next-card-tag {
+  font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .8px; color: var(--retain); margin-bottom: 2px;
+}
+.rc-next-card-icon { font-size: 1.3rem; line-height: 1; }
+.rc-next-card h4 {
+  font-size: .95rem; font-weight: 800; color: var(--offblack); margin: 0;
+  line-height: 1.3;
+}
+.rc-next-card p {
+  font-size: .85rem; color: var(--gray); line-height: 1.5; margin: 0; flex-grow: 1;
+}
+.rc-next-card-arrow {
+  font-size: .82rem; font-weight: 700; color: var(--orange);
+  margin-top: 4px;
+}
+@media(max-width:768px){ .rc-next-grid { grid-template-columns: 1fr; } }
 .rc-resources {
   background: var(--brightgray); border-left: 4px solid var(--retain);
   border-radius: 10px; padding: 20px 24px; margin: 32px 0 0;
@@ -445,6 +484,38 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-btn-prev">← Tracking impact</a>
       <span class="rc-lp-nav-indicator">6 of 6</span>
       <span class="rc-btn-complete">🎉 Path complete!</span>
+    </div>
+
+    <!-- ── CONTINUE YOUR JOURNEY ── -->
+    <div class="rc-next-steps">
+      <h3>🧭 Continue your journey</h3>
+      <div class="rc-next-grid">
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
+          <div class="rc-next-card-tag">Recommended next</div>
+          <div class="rc-next-card-icon">🔔</div>
+          <h4>Dunning 101</h4>
+          <p>AU handles card updates proactively. Dunning handles what happens after a charge still fails. Together they form a complete involuntary churn defense.</p>
+          <div class="rc-next-card-arrow">Start path →</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
+          <div class="rc-next-card-tag">Explore the pillar</div>
+          <div class="rc-next-card-icon">🛡️</div>
+          <h4>All Retain paths</h4>
+          <p>See every learning path in the Retain pillar — from Intelligent Retries to Pause Subscriptions and Cancel Save.</p>
+          <div class="rc-next-card-arrow">View Retain →</div>
+        </a>
+
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" class="rc-next-card">
+          <div class="rc-next-card-tag">Live session</div>
+          <div class="rc-next-card-icon">🎙️</div>
+          <h4>Global Office Hours</h4>
+          <p>Bring your retention questions to our CSMs live. Sessions run weekly — no agenda required, just show up.</p>
+          <div class="rc-next-card-arrow">Register →</div>
+        </a>
+
+      </div>
     </div>
 
     <!-- ── RESOURCES ── -->
