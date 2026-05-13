@@ -190,9 +190,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   flex-shrink: 0;
   line-height: 1;
 }
-  background: rgba(0,0,0,0.12);
-  font-weight: 800;
-}
+/* Active/current step */
+.rc-sticky-link-active { background: rgba(0,0,0,0.12); font-weight: 800; }
 .rc-sticky-link-active:hover { background: var(--offblack); color: var(--yellow) !important; }
 
 /* ── CONTENT SECTIONS ── */
@@ -205,7 +204,103 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h3 { font-size: 1.1rem; font-weight: 700; margin: 24px 0 10px; color: var(--offblack); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* ── SPLIT EXPLAINER CARD ── */
+/* ── AU TYPE CARDS (3-col grid) ── */
+.rc-type-sublabel {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .9px;
+  color: var(--lightgray);
+  margin: 0 0 12px;
+}
+.rc-type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0 0 28px; }
+.rc-type-card {
+  background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px;
+  padding: 20px; display: flex; flex-direction: column; gap: 8px;
+  transition: all .2s ease; cursor: default;
+}
+.rc-type-card:hover {
+  border-color: var(--retain);
+  box-shadow: 0 4px 16px rgba(255,157,136,0.15);
+  transform: translateY(-2px);
+}
+.rc-type-card-icon { font-size: 1.4rem; line-height: 1; }
+.rc-type-card h4 { font-size: .95rem; font-weight: 800; color: var(--offblack); margin: 0; }
+.rc-type-card p { font-size: .88rem; color: var(--gray); line-height: 1.5; margin: 0; }
+
+/* ── NUMBERED STEPS ── */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+.rc-step {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--brightgray);
+}
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--offblack); color: var(--yellow);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px;
+}
+.rc-step-content h4 {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--offblack);
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+.rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
+
+/* ── CALLOUT BOXES ── */
+.rc-callout {
+  border-radius: 10px; padding: 16px 20px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.rc-callout + .rc-callout { margin-top: 12px; }
+.rc-steps + .rc-callout { margin-top: 32px; }
+.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-body { flex: 1; }
+.rc-callout-body strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
+.rc-callout-warning .rc-callout-body strong { color: var(--darkgray); }
+.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
+.rc-callout-tip .rc-callout-body strong { color: var(--offblack); }
+
+/* ── PATH NAVIGATION BUTTONS ── */
+.rc-lp-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 40px 0 16px;
+}
+.rc-lp-nav-indicator {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--lightgray);
+  letter-spacing: .5px;
+}
+.rc-btn-current {
+  background: var(--brightgray);
+  color: var(--gray) !important;
+  padding: 13px 24px; border-radius: 10px;
+  font-weight: 700; font-size: .9rem;
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 2px solid var(--lightgray);
+  cursor: default;
+  user-select: none;
+}
+.rc-btn-path {
+  background: var(--yellow); color: var(--offblack) !important;
+  text-decoration: none !important; padding: 13px 28px; border-radius: 10px;
+  font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px;
+  transition: all .2s; border: 2px solid var(--yellow);
+}
+.rc-btn-path:hover { background: transparent; color: var(--offblack) !important; }
 .rc-split-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -452,8 +547,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── WHAT IS ACCOUNT UPDATER ── -->
     <div class="rc-lp-section">
-      <h2>💳 What is Account Updater?</h2>
-      <p>A proactive assistant designed to resolve card lifecycle events before they trigger a decline. Reduce involuntary churn and eliminate gateway fees on invalid accounts.</p>
+      <h2>💳 What is it?</h2>
+      <p>A proactive tool that resolves card lifecycle events before they trigger a decline — reducing involuntary churn and eliminating gateway fees on invalid accounts.</p>
 
       <div class="rc-split-card">
         <div class="rc-split-panel">
@@ -470,6 +565,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
 
+      <p class="rc-type-sublabel">Three ways it's delivered</p>
       <div class="rc-type-grid">
         <div class="rc-type-card">
           <div class="rc-type-card-icon">🔄</div>
@@ -491,7 +587,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── HOW IT WORKS ── -->
     <div class="rc-lp-section">
-      <h2>🗺️ How it works — step by step</h2>
+      <h2>🗺️ How it works</h2>
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
@@ -550,6 +646,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── PATH NAVIGATION ── -->
     <div class="rc-lp-nav">
       <span class="rc-btn-current">🎯 Start</span>
+      <span class="rc-lp-nav-indicator">1 of 6</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-btn-path">
         Next: Why use it? →
       </a>
