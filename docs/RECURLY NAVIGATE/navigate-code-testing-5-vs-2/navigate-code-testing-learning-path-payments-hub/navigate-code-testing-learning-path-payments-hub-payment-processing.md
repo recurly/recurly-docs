@@ -1,7 +1,7 @@
 ---
 title: Navigate Code Testing Learning Path Payments Hub Payment Processing
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
