@@ -1,7 +1,7 @@
 ---
 title: Navigate Code Testing Learning Path 2
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
