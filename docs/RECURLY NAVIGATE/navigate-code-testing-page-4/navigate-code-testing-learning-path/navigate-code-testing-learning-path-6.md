@@ -1,5 +1,5 @@
 ---
-title: Navigate Code Testing Learning Path 6
+title: Navigate Code Testing Learning Path 5
 deprecated: false
 hidden: true
 metadata:
@@ -162,14 +162,31 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   padding: 2px 7px; border-radius: 4px; font-size: .82rem; font-family: monospace;
 }
 
-/* ── VIDEO EMBED (within step) ── */
+/* ── VIDEO EMBED (within step — supporting content) ── */
 .rc-step-video {
-  position: relative; overflow: hidden; aspect-ratio: 16/9;
-  border-radius: 10px; margin-top: 14px;
-  border: 1px solid var(--lightgray); background: var(--offblack);
+  border-radius: 10px; margin-top: 16px;
+  border: 1px solid var(--lightgray); overflow: hidden;
+  background: var(--offblack);
 }
-.rc-step-video iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
-.rc-step-video-caption { font-size: .8rem; color: var(--gray); margin-top: 8px; line-height: 1.5; }
+.rc-step-video-label {
+  background: var(--offblack); padding: 9px 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+.rc-step-video-label span {
+  font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .7px; color: var(--lightgray);
+}
+.rc-step-video-label::before {
+  content: '▶'; font-size: .6rem; color: var(--retain); flex-shrink: 0;
+}
+.rc-step-video-frame {
+  position: relative; overflow: hidden; aspect-ratio: 16/9;
+}
+.rc-step-video-frame iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-step-video-caption {
+  font-size: .8rem; color: var(--gray); padding: 8px 14px 10px;
+  background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5;
+}
 
 /* ── ACCENT CARD ── */
 .rc-accent-card {
@@ -378,15 +395,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <h4>Recovered Revenue dashboard</h4>
             <p>Navigate to <strong>Analytics → Churn Management → Recovered Revenue</strong>. Use the <strong>Recovered Revenue by Method</strong> chart to see the contribution of card updates compared to dunning.</p>
             <div class="rc-step-video">
-              <iframe
-                src="https://share.synthesia.io/embeds/videos/57b979ea-216b-4e3f-8215-cd6060e32107"
-                loading="lazy"
-                title="Trail Guide: Recovered Revenue Dashboard"
-                allowfullscreen
-                allow="encrypted-media; fullscreen;">
-              </iframe>
+              <div class="rc-step-video-label"><span>Trail guide walkthrough</span></div>
+              <div class="rc-step-video-frame">
+                <iframe
+                  src="https://share.synthesia.io/embeds/videos/57b979ea-216b-4e3f-8215-cd6060e32107"
+                  loading="lazy"
+                  title="Trail Guide: Recovered Revenue Dashboard"
+                  allowfullscreen
+                  allow="encrypted-media; fullscreen;">
+                </iframe>
+              </div>
+              <div class="rc-step-video-caption">Walk through the Recovered Revenue dashboard with your Navigate CSM.</div>
             </div>
-            <p class="rc-step-video-caption">Walk through the Recovered Revenue dashboard with your Navigate CSM.</p>
           </div>
         </div>
 
