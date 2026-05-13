@@ -7,7 +7,15 @@ metadata:
 ---
 <HTMLBlock>{`
 <style>
-/* 1. Core Variables & Reset */
+/* 1. Host-theme Armor — MUST be at the top */
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
+
+/* 2. Global Variables & Base Styles */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide {
   --yellow:    #FFD706;
   --orange:    #FF8200;
@@ -19,156 +27,219 @@ metadata:
   --offwhite:  #FFFDF2;
   --scale:     #FF5810;
   font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--darkgray);
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* 2. Hero & Badge Styling */
-.rc-hero { background: var(--offblack); color: #fff; padding: 56px 40px 48px; text-align: center; border-radius: 16px; margin-bottom: 24px; }
-.rc-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--yellow); color: var(--offblack); border-radius: 20px; padding: 6px 18px; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
-.rc-badge img { width: 16px; height: 16px; display: block; object-fit: contain; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 14px; color: var(--offwhite); }
-.rc-hero p { font-size: 1.05rem; opacity: .8; max-width: 700px; margin: 0 auto; color: var(--lightgray); }
+/* 3. Layout Wrappers */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rc-back-link { color: var(--gray); font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; }
+.rc-back-link:hover { color: var(--orange); }
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px 60px; }
 
-/* 3. Top Navigation (Flex Pill Style) */
-.rc-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 28px; }
-.rc-nav a { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border-radius: 12px; border: 1px solid var(--lightgray); background: #fff; color: var(--darkgray); text-decoration: none !important; font-size: .88rem; font-weight: 700; transition: border-color .2s, box-shadow .2s; }
-.rc-nav a:hover { border-color: var(--yellow); box-shadow: 0 2px 8px rgba(255,215,6,.2); color: var(--offblack); }
-.rc-nav a.is-active { background: var(--yellow); border-color: var(--yellow); color: var(--offblack); box-shadow: 0 2px 10px rgba(255,215,6,.25); }
-.rc-snum { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: 12px; font-weight: 700; flex-shrink: 0; }
+/* 4. Hero (Topo Background) */
+.rc-hero {
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: var(--offblack); background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
+}
+.rc-lp-pillar-tag {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,88,16,0.20); border: 1px solid rgba(255,88,16,0.45);
+  color: var(--scale); font-size: .75rem; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
+}
+.rc-lp-pillar-tag img { width: 13px !important; height: 13px !important; object-fit: contain; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
 
-/* 4. Content Sections */
-.rc-sec { margin-bottom: 56px; }
-.rc-subhead { font-size: 1.1rem; font-weight: 800; margin: 32px 0 16px; color: var(--offblack); }
-.rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
+.rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px; }
+.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); }
 
-/* 5. Video Embed Styling */
-.rc-video-container { border: 1px solid var(--lightgray); border-radius: 14px; overflow: hidden; margin-bottom: 32px; background: var(--offblack); }
-.rc-video-frame { position: relative; aspect-ratio: 16/9; }
-.rc-video-frame iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+/* 5. Sticky Nav (Scale Case: White Text) */
+details.rc-sticky-nav-wrap {
+  position: sticky; top: 0; z-index: 100;
+  background-color: var(--scale);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 24px 0 48px 0; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+}
+details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #fff; }
+.rc-nav-chevron { font-size: .72rem; color: #fff; opacity: 0.8; transition: transform 0.25s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(255,255,255,0.20); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+.rc-sticky-link { color: #fff !important; font-weight: 700; font-size: .83rem; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
+.rc-sticky-link img { width: 15px !important; height: 15px !important; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; }
+.rc-sticky-link-active { background: rgba(0,0,0,0.15); font-weight: 800; }
 
-/* 6. Checklist & Callouts */
-.rc-checklist { background: var(--offwhite); border-radius: 16px; border: 1px solid var(--lightgray); overflow: hidden; margin-bottom: 28px; }
-.rc-cl-header { padding: 16px 22px; display: flex; align-items: center; gap: 10px; background: var(--offblack); }
-.rc-cl-header h3 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--yellow); margin: 0; }
-.rc-cli { padding: 13px 22px; border-bottom: 1px solid var(--brightgray); display: flex; align-items: flex-start; gap: 14px; }
-.rc-cb { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; margin-top: 2px; }
-.rc-clab { font-size: .88rem; color: var(--darkgray); line-height: 1.4; }
-.rc-clab span { display: block; font-size: .78rem; color: var(--gray); margin-top: 2px; }
+/* 6. Section Headings */
+.rc-lp-section { margin-bottom: 48px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 
-.rc-tip { background: var(--offwhite); border: 2px solid var(--yellow); border-radius: 14px; padding: 20px 24px; display: flex; gap: 16px; align-items: flex-start; margin-bottom: 24px; }
-.rc-tip h4 { font-size: .82rem; font-weight: 700; color: var(--offblack); text-transform: uppercase; margin: 0 0 4px; }
-.rc-tip p { font-size: .87rem; color: var(--darkgray); line-height: 1.55; margin: 0; }
+/* 7. Components (Cards, Grids, Videos) */
+.rc-screenshot { width: 100%; border-radius: 14px; border: 1px solid var(--lightgray); margin-bottom: 32px; display: block; }
+.rc-video-card { border: 1px solid var(--lightgray); border-radius: 14px; overflow: hidden; margin: 0 0 40px; }
+.rc-video-header { background: var(--offblack); padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
+.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--yellow); margin: 0; }
+.rc-video-embed { position: relative; aspect-ratio: 16/9; background: var(--offblack); }
+.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
 
-.rc-warning { background: #FFF8E6; border: 1px solid var(--orange); border-radius: 14px; padding: 16px 20px; display: flex; gap: 14px; align-items: flex-start; margin-bottom: 24px; }
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; transition: all .2s; }
+.rc-feature-card:hover { border-color: var(--scale); transform: translateY(-2px); }
+.rc-feature-card h4 { font-size: .95rem; font-weight: 800; margin: 0 0 8px; color: var(--offblack); }
+.rc-feature-card p { font-size: .85rem; color: var(--gray); line-height: 1.5; margin: 0; }
 
-/* 7. Footer Nav Buttons & Link Grid */
-.rc-sec-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 40px; flex-wrap: wrap; }
-.rc-btn-prev, .rc-btn-next { display: inline-flex; align-items: center; justify-content: center; padding: 11px 18px; border-radius: 10px; font-weight: 700; font-size: .88rem; text-decoration: none !important; }
-.rc-btn-prev { background: #fff; color: var(--darkgray); border: 1px solid var(--lightgray) !important; }
-.rc-btn-next { background: var(--yellow); color: var(--offblack); border: 1px solid var(--yellow); }
+/* 8. Checklist (Pure CSS) */
+.rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
+.rc-checklist-header { padding: 14px 22px; background: var(--offblack); display: flex; align-items: center; gap: 10px; }
+.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; color: var(--yellow); margin: 0; }
+.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid var(--brightgray); display: flex; align-items: flex-start; gap: 14px; cursor: pointer; }
+.rc-checklist-item input { position: absolute; opacity: 0; width: 0; height: 0; }
+.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; }
+.rc-checklist-item input:checked + .rc-checkbox-box { background: var(--offblack); border-color: var(--offblack); }
+.rc-checklist-item input:checked + .rc-checkbox-box::after { content: '✓'; color: var(--yellow); font-size: .75rem; font-weight: 800; }
+.rc-checklist-item:has(input:checked) { background: rgba(255,88,16,0.06); }
 
-.rc-link-btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 10px; font-weight: 700; font-size: .88rem; text-decoration: none !important; background: var(--offwhite); color: var(--darkgray); border: 1px solid var(--lightgray); margin: 0 8px 8px 0; }
-.rc-link-btn:hover { border-color: var(--yellow); }
+/* 9. Buttons (Fixed Specificity for Borders) */
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
+.rc-guide a.rc-btn-prev { background: #fff; color: var(--darkgray) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 1px solid var(--lightgray) !important; transition: all .2s; }
+.rc-guide a.rc-btn-prev:hover { border-color: var(--offblack) !important; }
+.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; border: 1px solid var(--yellow) !important; transition: all .2s; }
 
-.rc-full-footer { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 48px; text-align: center; }
-.rc-footer-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; }
-.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .85rem; display: flex; align-items: center; gap: 6px; }
-.rc-footer-link img { width: 14px !important; height: 14px !important; object-fit: contain; opacity: 0.6; }
-.rc-footer-link:hover { color: var(--offblack); }
+/* 10. Footer */
+.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 32px; text-align: center; }
+.rc-footer-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; }
+.rc-footer-link { color: var(--gray); font-weight: 600; font-size: .9rem; display: inline-flex; align-items: center; gap: 5px; }
+.rc-footer-link img { width: 13px !important; height: 13px !important; opacity: 0.55; }
 
-@media(max-width:640px){ .rc-nav, .rc-sec-nav { flex-direction: column; align-items: stretch; } }
+@media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } .rc-hero-stats { grid-template-columns: 1fr; } }
 </style>
 
 <div class="rc-guide">
-  <div class="rc-hero">
-    <div class="rc-badge">
-      <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
-      Scale
-    </div>
-    <h1>Account Updater Dashboard</h1>
-    <p>Monitor how much revenue was protected through proactive, automatic card updates — before those payments ever had a chance to fail.</p>
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-back-link">← Back to Scale</a>
   </div>
 
-  <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub">Payments Hub</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview"><span class="rc-snum">1</span>Overview</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retry recovery</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
-  </nav>
-
-  <div class="rc-sec">
-    <img src="https://files.readme.io/2e488cefdf0e0cbbac44170f4774480b23c60e9445a66061c27f83f040bccf4c-Account_Updater_Dashboard.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:24px;" alt="Account Updater Dashboard" />
-
-    <h3 class="rc-subhead">📹 Account Updater Dashboard Walkthrough</h3>
-    <div class="rc-video-container">
-      <div class="rc-video-frame">
-        <iframe src="https://share.synthesia.io/embeds/videos/REPLACE_WITH_ID" loading="lazy" allowfullscreen></iframe>
+  <div class="rc-content-wrap">
+    
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag">
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale
+      </div>
+      <div class="rc-lp-hero-title"><h1>Account Updater Dashboard</h1></div>
+      <p>Monitor your proactive revenue recovery and see how many cards are updated automatically behind the scenes.</p>
+      <div class="rc-hero-stats">
+        <div class="rc-hero-stat"><div class="rc-hero-stat-num">75%</div><div class="rc-hero-stat-label">Avg. Update Success</div></div>
+        <div class="rc-hero-stat"><div class="rc-hero-stat-num">24/7</div><div class="rc-hero-stat-label">Automated Monitoring</div></div>
+        <div class="rc-hero-stat"><div class="rc-hero-stat-num">100%</div><div class="rc-hero-stat-label">PCI Compliant</div></div>
       </div>
     </div>
 
-    <div class="rc-warning">
-      <span style="font-size:20px; flex-shrink:0;">⚠️</span>
-      <p style="font-size:.87rem; color:var(--darkgray); line-height:1.55; margin:0;">
-        <strong>Not seeing Account Updater data?</strong> This dashboard requires Account Updater to be enabled on your Recurly site. If you see no data, Account Updater may not be active. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank" style="color:var(--orange); font-weight:700;">Learn about Account Updater →</a>
-      </p>
-    </div>
+    <details class="rc-sticky-nav-wrap">
+      <summary>
+        <span class="rc-nav-toggle-label">Navigate Quick Links <span class="rc-nav-chevron">▲</span></span>
+      </summary>
+      <div class="rc-nav-drawer">
+        <div class="rc-nav-drawer-inner">
+          <div class="rc-nav-links">
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link">
+              <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Payments Hub
+            </a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link"><span class="rc-step-badge">1</span> Overview</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link"><span class="rc-step-badge">2</span> Payment processing</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link rc-sticky-link-active"><span class="rc-step-badge">3</span> Account updater</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link"><span class="rc-step-badge">4</span> Payment retries</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Fraud prevention</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">6</span> Resources</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+              <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </details>
 
-    <h3 class="rc-subhead">📋 What's on this dashboard</h3>
-    <div class="rc-card">
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.75;margin:0;">
-        <strong>Successful card updates</strong> — Total number of cards successfully updated in the period, with comparison to previous period.<br><br>
-        <strong>Successful updates over time</strong> — A line chart showing the daily count of card updates.<br><br>
-        <strong>Payments authorized on updated cards</strong> — The total payment volume authorized on updated cards.<br><br>
-        <strong>Update type</strong> — A breakdown of card number changes vs. expiration date updates.
-      </p>
-    </div>
-
-    <div class="rc-tip">
-      <span style="font-size:24px; flex-shrink:0;">💡</span>
-      <div>
-        <h4>What to look for in Update Type</h4>
-        <p>A card number change means the subscriber received an entirely new card. These carry more disruption risk than an expiry update. If you see a high proportion of card number changes, it may indicate a fraud event at a major issuer.</p>
+    <div class="rc-lp-section">
+      <h2>🖼️ Dashboard Overview</h2>
+      <img class="rc-screenshot" src="https://files.readme.io/2e488cefdf0e0cbbac44170f4774480b23c60e9445a66061c27f83f040bccf4c-Account_Updater_Dashboard.png" alt="Account Updater dashboard overview">
+      
+      <div class="rc-video-card">
+        <div class="rc-video-header">
+          <h4>Account Updater Dashboard Walkthrough</h4>
+        </div>
+        <div class="rc-video-embed">
+          <iframe src="https://share.synthesia.io/embeds/videos/REPLACE_WITH_ID" loading="lazy" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 
-    <h3 class="rc-subhead">✅ Activity: Explore Account Updater</h3>
-    <div class="rc-checklist">
-      <div class="rc-cl-header"><span>✅</span><h3>Account updater activity</h3></div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label class="rc-clab">How much revenue was authorized on updated cards in the last 30 days?<span>This is revenue you likely would have lost without Account Updater.</span></label>
+    <div class="rc-lp-section">
+      <h2>📋 What's on this dashboard</h2>
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <h4>Successful updates</h4>
+          <p>Total number of cards successfully updated in the period.</p>
+        </div>
+        <div class="rc-feature-card">
+          <h4>Updates over time</h4>
+          <p>A line chart showing the daily count of card updates.</p>
+        </div>
+        <div class="rc-feature-card">
+          <h4>Revenue Authorized</h4>
+          <p>The total payment volume authorized on updated cards.</p>
+        </div>
       </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label class="rc-clab">Look at the Update Type chart. What percentage of your updates are card number changes?<span>High card number changes may indicate recent fraud events.</span></label>
+    </div>
+
+    <div class="rc-lp-section">
+      <h2>✅ Activity: Explore Account Updater</h2>
+      <div class="rc-checklist">
+        <div class="rc-checklist-header">
+          <span>✅</span><h4>Review your activity</h4>
+        </div>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Check 30-day recovered revenue</strong>
+            <span>Identify how much revenue was saved by AU this month.</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Analyze Update Types</strong>
+            <span>Verify the percentage of card number changes vs. expiry updates.</span>
+          </div>
+        </label>
       </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing">← Payment processing</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries">Next: Payment retry recovery →</a>
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-prev">← Payment processing</a>
+      <span style="color:var(--gray); font-size:.8rem; font-weight:600;">3 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-btn-path">Next: Payment retries →</a>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
-    <div style="display: flex; flex-wrap: wrap;">
-      <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank">📖 Navigate: Account Updater Learning</a>
-      <a class="rc-link-btn" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
-      <a class="rc-link-btn" href="https://navigate.recurly.com/event-hub/" target="_blank">🌐 Join Global Office Hours</a>
-    </div>
-
-    <div class="rc-full-footer">
-      <div class="rc-footer-grid">
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
           <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-footer-link">1. Overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-footer-link">2. Processing</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-footer-link">3. Account Updater</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-footer-link">4. Retries</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-footer-link">5. Fraud</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-footer-link" style="color:var(--offblack)">3. Account Updater</a>
         <a href="mailto:support@recurly.com" class="rc-footer-link">support@recurly.com</a>
       </div>
     </div>
