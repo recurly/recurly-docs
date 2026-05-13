@@ -85,7 +85,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.75; margin: 0; }
 .rc-card-title { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 14px; }
 
-/* Card grid (skill default: 2-col; 3-col modifier for this page's What's Inside grid) */
+/* Card grid */
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
 .rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
 .rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
@@ -93,8 +93,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-feature-icon { font-size: 1.4rem; line-height: 1; }
 .rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
 .rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-.rc-feature-card a { color: var(--orange) !important; font-weight: 600; text-decoration: none !important; }
-.rc-feature-card a:hover { text-decoration: underline !important; }
+.rc-feature-card a { color: var(--orange) !important; font-weight: 600; }
+.rc-guide .rc-feature-card a:hover { text-decoration: underline !important; }
 .rc-feature-tag { display: inline-block; margin-top: 4px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: var(--offblack); color: var(--yellow); width: fit-content; }
 @media(max-width:768px){ .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; } }
 
@@ -106,9 +106,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
 .rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
 .rc-step-content strong { color: var(--darkgray); }
-.rc-step-content a { color: var(--orange); font-weight: 600; text-decoration: none !important; }
-.rc-step-content a:hover { text-decoration: underline !important; }
-.rc-step-content code { background: var(--brightgray); color: var(--offblack); padding: 2px 7px; border-radius: 4px; font-size: .82rem; font-family: monospace; }
+.rc-step-content a { color: var(--orange); font-weight: 600; }
+.rc-guide .rc-step-content a:hover { text-decoration: underline !important; }
 
 /* Callouts */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
@@ -117,8 +116,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-body a { color: var(--orange) !important; font-weight: 600; text-decoration: none !important; }
-.rc-callout-body a:hover { text-decoration: underline !important; }
+.rc-callout-body a { color: var(--orange) !important; font-weight: 600; }
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body strong { color: var(--offblack); }
 .rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
@@ -154,23 +153,25 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-webinar-cta-body p { font-size: .95rem; color: #FFFDF2 !important; line-height: 1.6; margin: 0 0 18px; }
 .rc-webinar-cta-body p em { font-style: normal; font-weight: 700; color: #ffffff !important; }
 .rc-webinar-btn { background: #FF5810 !important; color: #ffffff !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FF5810 !important; }
-.rc-webinar-btn:hover { background: transparent !important; color: #FF5810 !important; }
+.rc-guide .rc-webinar-btn:hover { background: transparent !important; color: #FF5810 !important; border: 2px solid #FF5810 !important; border-bottom: 2px solid #FF5810 !important; }
 @media(max-width:768px){ .rc-webinar-cta { flex-direction: column; gap: 16px; padding: 24px 22px; } }
 
 /* Path nav */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
 .rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; }
+.rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray); transition: all .2s; }
+.rc-guide .rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
 .rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); }
-.rc-btn-path:hover { background: transparent; color: var(--offblack) !important; }
+.rc-guide .rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
 @media(max-width:768px){ .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; } }
 
-/* Resources */
+/* Resources — FIX: color var(--gray) not var(--darkgray); hover needs .rc-guide prefix to beat armor */
 .rc-resources { background: var(--brightgray); border-left: 4px solid #FF5810; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
-.rc-resource-link { color: var(--darkgray) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--lightgray) !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; }
-.rc-resource-link:hover { color: var(--offblack) !important; text-decoration-color: #FF5810 !important; }
+.rc-resource-link { color: var(--gray) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--lightgray) !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; }
+.rc-guide .rc-resource-link:hover { color: var(--offblack) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF5810 !important; }
 
 /* Footer nav */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 32px; text-align: center; }
@@ -322,10 +323,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-resources">
       <h3>📚 Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub" target="_blank" class="rc-resource-link">📖 Recurly Docs: Payments Hub</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/user-roles-and-permissions" target="_blank" class="rc-resource-link">🔐 User roles and permissions</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Payments Hub</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/user-roles-and-permissions" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔐 User roles and permissions</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" class="rc-resource-link">🌐 Join Global Office Hours</a>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🌐 Join Global Office Hours</a>
       </div>
     </div>
 
