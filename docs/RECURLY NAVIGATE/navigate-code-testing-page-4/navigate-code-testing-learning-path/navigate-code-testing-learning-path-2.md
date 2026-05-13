@@ -143,21 +143,46 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* ── IMPACT STAT STRIP ── */
+/* ── IMPACT STAT STRIP — contextual, distinct from hero ── */
 .rc-stat-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  background: var(--offwhite);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  overflow: hidden;
   margin: 0 0 32px;
 }
 .rc-stat-tile {
-  background: var(--offblack);
-  border-radius: 12px;
-  padding: 20px 16px;
+  padding: 24px 20px;
   text-align: center;
+  position: relative;
 }
-.rc-stat-tile-num { font-size: 1.8rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
-.rc-stat-tile-label { font-size: .75rem; font-weight: 600; letter-spacing: .6px; text-transform: uppercase; color: var(--lightgray); line-height: 1.4; }
+.rc-stat-tile + .rc-stat-tile {
+  border-left: 1px solid var(--lightgray);
+}
+.rc-stat-tile-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--retain);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.rc-stat-tile-label {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+.rc-stat-tile-context {
+  font-size: .8rem;
+  color: var(--darkgray);
+  line-height: 1.5;
+  padding-top: 10px;
+  border-top: 1px solid var(--brightgray);
+}
 
 /* ── BENEFIT CARDS (2-col grid) ── */
 .rc-benefit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
@@ -347,15 +372,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">77x</div>
-          <div class="rc-stat-tile-label">Average ROI across Recurly customers using AU</div>
+          <div class="rc-stat-tile-label">Average ROI</div>
+          <div class="rc-stat-tile-context">For every $1 spent on AU, Recurly merchants recover an average of $77 in revenue.</div>
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">18%</div>
-          <div class="rc-stat-tile-label">Of recovered revenue attributed to AU on average</div>
+          <div class="rc-stat-tile-label">Of recovered revenue</div>
+          <div class="rc-stat-tile-context">Nearly 1 in 5 dollars recovered across Recurly's network is directly attributed to AU.</div>
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">96M+</div>
-          <div class="rc-stat-tile-label">Card updates processed by Recurly in 2025</div>
+          <div class="rc-stat-tile-label">Card updates in 2025</div>
+          <div class="rc-stat-tile-context">Recurly processed over 96 million card updates in 2025 — each one a prevented churn event.</div>
         </div>
       </div>
     </div>
