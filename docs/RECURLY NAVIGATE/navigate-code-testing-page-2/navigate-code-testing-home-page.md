@@ -73,7 +73,7 @@ body { margin: 0; background: #fff; }
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── PILLAR HERO ── */
+/* ── PILLAR HERO (2b: no stats, no pill — logo + title) ── */
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
@@ -85,15 +85,16 @@ body { margin: 0; background: #fff; }
   border-radius: 16px;
   margin-bottom: 0;
 }
+.rc-hero img { height: 32px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* ── NAVIGATE QUICK LINKS NAV — sticky, collapsed by default ── */
+/* ── NAVIGATE QUICK LINKS NAV (3b: sticky, collapsed, brightgray) ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--lightgray);
+  background-color: var(--brightgray); /* #F1EFE3 — always brightgray on Home/Pillar pages */
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0;
   border-radius: 12px;
@@ -179,7 +180,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
 .rc-guide a.rc-path-card:hover { border-color: var(--yellow) !important; border-bottom-color: var(--yellow) !important; box-shadow: 0 4px 16px rgba(255,215,6,.12); transform: translateY(-2px); }
-.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
+.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; font-size: 1.4rem; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
 .rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack); }
@@ -217,7 +218,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-path-card { grid-template-columns: 1fr; gap: 16px; }
   .rc-path-arrow { margin-top: 4px; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
-  .rc-announce-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 </style>
 
@@ -229,7 +229,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR (hidden — add rc-active class to show) ── -->
+    <!-- ── ANNOUNCEMENT BAR (hidden — add rc-active to show) ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
@@ -240,12 +240,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── HERO (2b: Pillar subpage — logo, no stats, no pill) ── -->
     <div class="rc-hero">
-      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" style="height:32px; margin-bottom:20px;">
+      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       <h1>Launch</h1>
       <p>Get configured and live fast. Build a solid subscription foundation from day one by mastering the core elements of the Recurly platform.</p>
     </div>
 
-    <!-- ── NAVIGATE QUICK LINKS NAV (3b: Pillar subpage — sticky, collapsed, Launchpad active) ── -->
+    <!-- ── NAVIGATE QUICK LINKS NAV (3b: sticky, collapsed, brightgray, all section anchors active) ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">
@@ -256,12 +256,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
+            <!-- Home: cross-page link — NOT active on this pillar subpage -->
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
             </a>
+            <!-- Section anchors: all on this page — all get rc-sticky-link-active -->
             <a href="#launchpad" class="rc-sticky-link rc-sticky-link-active">Launchpad</a>
-            <a href="#technical" class="rc-sticky-link">Technical Setup</a>
-            <a href="#onboarding" class="rc-sticky-link">Onboarding</a>
+            <a href="#technical" class="rc-sticky-link rc-sticky-link-active">Technical Setup</a>
+            <a href="#onboarding" class="rc-sticky-link rc-sticky-link-active">Onboarding</a>
           </div>
         </div>
       </div>
@@ -272,9 +274,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2>Launchpad</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch">
-          </div>
+          <div class="rc-path-icon">🚀</div>
           <div class="rc-path-content">
             <h3>Launchpad Phase One: Optimize</h3>
             <p>Ensure your Recurly instance is configured for maximum impact. Learn best practices for site settings, payment gateways, and baseline security.</p>
@@ -282,9 +282,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-arrow">Start Path →</div>
         </a>
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch">
-          </div>
+          <div class="rc-path-icon">📊</div>
           <div class="rc-path-content">
             <h3>Launchpad Phase Two: Mastering Metrics</h3>
             <p>Dive deep into Recurly Analytics. Understand your core subscription KPIs, how to read your dashboards, and track success from day one.</p>
@@ -299,9 +297,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2>Technical Setup</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch">
-          </div>
+          <div class="rc-path-icon">🔌</div>
           <div class="rc-path-content">
             <h3>API &amp; Webhook Fundamentals</h3>
             <p>Learn how to authenticate, connect your backend architecture, and listen to real-time Recurly events seamlessly.</p>
@@ -309,9 +305,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-arrow">Start Path →</div>
         </a>
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch">
-          </div>
+          <div class="rc-path-icon">📦</div>
           <div class="rc-path-content">
             <h3>Data Migration Guide</h3>
             <p>Step-by-step instructions for importing your existing customer data, billing information, and active subscriptions securely into Recurly.</p>
@@ -326,9 +320,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2>Onboarding</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch">
-          </div>
+          <div class="rc-path-icon">📋</div>
           <div class="rc-path-content">
             <h3>The First 30 Days Playbook</h3>
             <p>A structured checklist and strategic guide for your entire team to ensure a flawless, stress-free go-live experience.</p>
@@ -336,9 +328,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-arrow">Start Path →</div>
         </a>
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch">
-          </div>
+          <div class="rc-path-icon">👥</div>
           <div class="rc-path-content">
             <h3>Team Training &amp; Permissions</h3>
             <p>Learn how to invite new users, set up role-based access control, and train your staff on navigating the admin console.</p>
