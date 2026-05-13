@@ -7,7 +7,8 @@ metadata:
 ---
 <HTMLBlock>{`
 <style>
-/* 1. Global Variables & Base Styles */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
 .rc-guide {
   --yellow:    #FFD706;
   --orange:    #FF8200;
@@ -17,146 +18,338 @@ metadata:
   --lightgray: #CCC9B8;
   --brightgray:#F1EFE3;
   --offwhite:  #FFFDF2;
-  --scale:     #FF5810;
   font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--darkgray);
 }
 .rc-guide * { box-sizing: border-box; }
+body { margin: 0; background: #fff; }
 
-/* 2. Hero & Badge */
-.rc-hero { background: var(--offblack); color: #fff; padding: 56px 40px 48px; text-align: center; border-radius: 16px; margin-bottom: 24px; }
-.rc-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--scale); color: #fff; border-radius: 20px; padding: 6px 18px; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
-.rc-badge img { width: 16px; height: 16px; display: block; object-fit: contain; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 14px; color: var(--offwhite); }
-.rc-hero p { font-size: 1.05rem; opacity: .8; max-width: 700px; margin: 0 auto; color: var(--lightgray); }
+/* Layout */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rc-back-link { color: var(--gray); text-decoration: none !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; }
+.rc-back-link:hover { color: var(--orange); }
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* 3. Navigation */
-.rc-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; }
-.rc-nav a { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border-radius: 12px; border: 1px solid var(--lightgray); background: #fff; color: var(--darkgray); text-decoration: none !important; font-size: .88rem; font-weight: 700; transition: all .2s; }
-.rc-nav a:hover { border-color: var(--scale); box-shadow: 0 2px 8px rgba(255,88,16,.2); color: var(--offblack); }
-.rc-nav a.is-active { background: var(--scale); border-color: var(--scale); color: #fff; }
-.rc-snum { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: 12px; font-weight: 700; flex-shrink: 0; }
-.rc-nav a.is-active .rc-snum { background: #fff; color: var(--scale); }
+/* Host-theme armor */
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
 
-/* 4. Content Sections */
-.rc-sec { margin-bottom: 56px; }
-.rc-sec-header { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 32px; }
-.rc-sec-icon { width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; background: var(--scale); color: #fff; }
-.rc-sec-header h2 { font-size: 1.7rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack); }
-.rc-sec-header p { color: var(--gray); font-size: .95rem; line-height: 1.5; margin: 0; }
+@media(max-width:768px){ .rc-content-wrap { padding: 0 20px; } .rc-top-nav { padding: 16px 20px; } }
 
-.rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 32px; }
-.rc-subhead { font-size: 1.1rem; font-weight: 800; margin: 40px 0 16px; color: var(--offblack); display: flex; align-items: center; gap: 10px; }
+/* Announcement bar */
+.rc-announce-bar { display: none; background: var(--yellow); color: var(--offblack); align-items: center; justify-content: space-between; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
+.rc-announce-bar.rc-active { display: flex; }
+.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
+.rc-announce-link { color: var(--offblack) !important; font-weight: 800; text-decoration: none !important; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background 0.2s; }
+.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
+.rc-announce-close { background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer; color: var(--offblack); padding: 0 2px; opacity: 0.45; transition: opacity 0.2s; flex-shrink: 0; }
+.rc-announce-close:hover { opacity: 1; }
 
-/* 5. Video Embed */
-.rc-video-box { border: 1px solid var(--lightgray); border-radius: 14px; overflow: hidden; margin-bottom: 32px; background: var(--offblack); }
-.rc-video-label { background: var(--offblack); padding: 12px 20px; color: var(--yellow); font-size: .85rem; font-weight: 800; text-transform: uppercase; }
-.rc-video-frame { position: relative; aspect-ratio: 16/9; }
-.rc-video-frame iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+/* Hero */
+.rc-hero { background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: var(--offblack); background-size: cover; color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0; }
+.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,88,16,0.20); border: 1px solid rgba(255,88,16,0.45); color: #FF5810; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
+.rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
 
-/* 6. Callouts & Checklist */
-.rc-warning { background: #FFF8E6; border: 1px solid var(--orange); border-radius: 14px; padding: 16px 20px; display: flex; gap: 14px; align-items: flex-start; margin-bottom: 24px; }
-.rc-tip { background: var(--offwhite); border: 2px solid var(--scale); border-radius: 14px; padding: 20px 24px; display: flex; gap: 16px; align-items: flex-start; margin-bottom: 24px; }
-.rc-checklist { background: var(--offwhite); border-radius: 16px; border: 1px solid var(--lightgray); overflow: hidden; margin-bottom: 28px; }
-.rc-cl-header { padding: 16px 22px; display: flex; align-items: center; gap: 10px; background: var(--offblack); }
-.rc-cl-header h3 { font-size:.88rem; font-weight:700; text-transform:uppercase; color:var(--yellow); margin:0; }
-.rc-cli { padding: 13px 22px; border-bottom: 1px solid var(--brightgray); display: flex; align-items: flex-start; gap: 14px; }
-.rc-cb { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; margin-top: 2px; }
-.rc-clab { font-size: .88rem; color: var(--darkgray); line-height: 1.4; }
-.rc-clab span { display: block; font-size: .78rem; color: var(--gray); margin-top: 2px; }
+/* Sticky nav — Scale pillar */
+details.rc-sticky-nav-wrap { position: sticky; top: 0; z-index: 100; background-color: #FF5810; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
+details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
+details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
+details.rc-sticky-nav-wrap > summary::marker { display: none; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #fff; }
+.rc-nav-chevron { font-size: .72rem; color: #fff; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+.rc-sticky-link { color: #fff !important; text-decoration: none !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
+.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rc-sticky-link-active { background: rgba(0,0,0,0.12); font-weight: 800; }
+.rc-sticky-link-active:hover { background: var(--offblack); color: var(--yellow) !important; }
 
-/* 7. Footer & Buttons */
-.rc-sec-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 40px; }
-.rc-btn-prev, .rc-btn-next { display: inline-flex; align-items: center; justify-content: center; padding: 12px 20px; border-radius: 10px; font-weight: 700; font-size: .88rem; text-decoration: none !important; transition: all .2s; }
-.rc-btn-prev { background: #fff; color: var(--darkgray); border: 1px solid var(--lightgray); }
-.rc-btn-prev:hover { border-color: var(--offblack); background: var(--brightgray); }
-.rc-btn-next { background: var(--yellow); color: var(--offblack); border: 1px solid var(--yellow); }
-.rc-btn-next:hover { background: transparent; }
+/* Section headings */
+.rc-lp-section { margin-bottom: 48px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-.rc-footer-mini { border-top: 1px solid var(--lightgray); padding-top: 24px; margin-top: 40px; display: flex; justify-content: center; gap: 24px; }
-.rc-footer-link { color: var(--gray); font-size: .85rem; font-weight: 600; text-decoration: none !important; display: flex; align-items: center; gap: 6px; }
-.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.6; }
+/* Screenshot */
+.rc-screenshot { width: 100%; border-radius: 14px; border: 1px solid var(--lightgray); margin-bottom: 24px; display: block; }
 
-@media(max-width:640px){ .rc-sec-nav { flex-direction: column; align-items: stretch; } }
+/* Inline step video */
+.rc-step-video { border-radius: 10px; margin-top: 16px; border: 1px solid var(--lightgray); overflow: hidden; background: var(--offblack); }
+.rc-step-video-label { background: var(--offblack); padding: 9px 14px; display: flex; align-items: center; gap: 8px; }
+.rc-step-video-label::before { content: '▶'; font-size: .6rem; color: #FF5810; flex-shrink: 0; }
+.rc-step-video-label span { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--lightgray); }
+.rc-step-video-frame { position: relative; overflow: hidden; aspect-ratio: 16/9; }
+.rc-step-video-frame iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-step-video-caption { font-size: .8rem; color: var(--gray); padding: 8px 14px 10px; background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
+
+/* Card */
+.rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
+.rc-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.75; margin: 0; }
+
+/* Callouts */
+.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout + .rc-callout { margin-top: 12px; }
+.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-body { flex: 1; }
+.rc-callout-body strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
+.rc-callout-body a { color: var(--orange) !important; font-weight: 600; }
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; }
+.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
+.rc-callout-tip .rc-callout-body strong { color: var(--offblack); }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
+.rc-callout-warning .rc-callout-body strong { color: var(--darkgray); }
+
+/* Checklist — pure CSS, no JS */
+.rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
+.rc-checklist-header { padding: 14px 22px; background: var(--offblack); display: flex; align-items: center; gap: 10px; }
+.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow); margin: 0; }
+.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid var(--brightgray); display: flex; align-items: flex-start; gap: 14px; transition: background .15s; cursor: pointer; }
+.rc-checklist-item:last-child { border-bottom: none; }
+.rc-checklist-item:hover { background: var(--brightgray); }
+.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
+.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
+.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: var(--offblack); border-color: var(--offblack); }
+.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: var(--yellow); font-size: .75rem; font-weight: 800; line-height: 1; }
+.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: var(--gray); }
+.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(255,88,16,0.06); }
+.rc-checklist-text { flex: 1; }
+.rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: var(--offblack); display: block; margin-bottom: 2px; transition: color .18s; }
+.rc-checklist-text span { font-size: .8rem; color: var(--gray); line-height: 1.4; display: block; }
+.rc-checklist-footer { padding: 10px 22px; background: var(--brightgray); border-top: 1px solid var(--lightgray); font-size: .78rem; color: var(--gray); font-weight: 600; }
+
+/* Office Hours CTA — dark card, !important on all color properties */
+.rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
+.rc-oh-cta h4 { color: #FFD706 !important; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
+.rc-oh-cta p { color: #CCC9B8 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: #FFFDF2 !important; }
+.rc-oh-btn { background: #FFD706 !important; color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; }
+.rc-guide a.rc-oh-btn { border-bottom: 2px solid #FFD706 !important; }
+.rc-guide .rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+
+/* Path nav */
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
+.rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray); transition: all .2s; }
+.rc-guide a.rc-btn-prev { border-bottom: 2px solid var(--lightgray) !important; }
+.rc-guide .rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
+.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); }
+.rc-guide a.rc-btn-path { border-bottom: 2px solid var(--yellow) !important; }
+.rc-guide .rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+@media(max-width:768px){ .rc-lp-nav { flex-wrap: wrap; justify-content: center; } .rc-lp-nav-indicator { width: 100%; text-align: center; } }
+
+/* Resources */
+.rc-resources { background: var(--brightgray); border-left: 4px solid #FF5810; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; }
+.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.rc-resource-link { color: var(--gray) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--lightgray) !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; }
+.rc-guide .rc-resource-link:hover { color: var(--offblack) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF5810 !important; }
+
+/* Footer nav */
+.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 32px; text-align: center; }
+.rc-footer-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; }
+.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .9rem; transition: color .2s; display: inline-flex; align-items: center; gap: 5px; }
+.rc-footer-link:hover { color: var(--offblack); }
+.rc-footer-link img { width: 13px; height: 13px; object-fit: contain; opacity: 0.55; }
+
+/* Responsive */
+@media(max-width:768px){
+  .rc-hero { padding: 36px 20px 32px; }
+  .rc-lp-hero-title h1 { font-size: 1.7rem; }
+}
 </style>
 
 <div class="rc-guide">
-  <div class="rc-hero">
-    <div class="rc-badge">
-      <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale">
-      Scale
-    </div>
-    <h1>Account Updater Dashboard</h1>
-    <p>Monitor how much revenue is protected through proactive, automatic card updates—before payments ever fail.</p>
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-back-link">← Back to Payments Hub</a>
   </div>
 
-  <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub">Payments Hub</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview"><span class="rc-snum">1</span>Overview</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing"><span class="rc-snum">2</span>Payment processing</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater"><span class="rc-snum">3</span>Account updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries"><span class="rc-snum">4</span>Payment retry recovery</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rc-snum">5</span>Fraud prevention</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources"><span class="rc-snum">6</span>Review &amp; resources</a>
-  </nav>
+  <div class="rc-content-wrap">
 
-  <div class="rc-sec">
-    <img src="https://files.readme.io/2e488cefdf0e0cbbac44170f4774480b23c60e9445a66061c27f83f040bccf4c-Account_Updater_Dashboard.png" style="width:100%;border-radius:14px;border:1px solid var(--lightgray);margin-bottom:32px;" alt="Account Updater Dashboard" />
+    <!-- Announcement bar (hidden — add rc-active to show) -->
+    <div class="rc-announce-bar" id="rcAnnounce">
+      <div class="rc-announce-inner">
+        🗓️ <strong>Upcoming:</strong> Join our CSMs for a live Payments Hub walkthrough.
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
+      </div>
+      <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
+    </div>
 
-    <h3 class="rc-subhead">📹 Account Updater Dashboard Walkthrough</h3>
-    <div class="rc-video-box">
-      <div class="rc-video-label">Watch the walkthrough</div>
-      <div class="rc-video-frame">
-        <iframe src="https://share.synthesia.io/embeds/videos/REPLACE_WITH_ID" loading="lazy" allowfullscreen></iframe>
+    <!-- Hero -->
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag">
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale">
+        Scale
+      </div>
+      <div class="rc-lp-hero-title"><h1>Payment Retry Recovery Dashboard</h1></div>
+      <p>The Payment Retry Recovery dashboard shows how much initially failed revenue was recovered on subsequent payment attempts — and at which attempt it was captured.</p>
+    </div>
+
+    <!-- Sticky nav — Step 4 active -->
+    <details class="rc-sticky-nav-wrap">
+      <summary><span class="rc-nav-toggle-label">Navigate Quick Links <span class="rc-nav-chevron">▲</span></span></summary>
+      <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link">
+          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Payments Hub
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link"><span class="rc-step-badge">1</span> Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link"><span class="rc-step-badge">2</span> Payment processing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link rc-sticky-link-active"><span class="rc-step-badge">4</span> Payment retry recovery</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Fraud prevention</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+          <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
+        </a>
+      </div></div></div>
+    </details>
+
+    <!-- Section 1: Dashboard intro + screenshot + video -->
+    <div class="rc-lp-section">
+      <h2>🔁 Payment retries</h2>
+      <p>When a payment fails on the first attempt, Recurly's intelligent retry logic works to recover it. This dashboard shows you how much revenue that recovery effort is capturing — and the story behind each retry attempt.</p>
+
+      <img class="rc-screenshot"
+           src="https://files.readme.io/dd846483711337200d1b60b8f6e3d4cfc3b778110e986a4b7380e492093a5dc3-Payment_Retry_Recovery.png"
+           alt="Payment Retry Recovery dashboard" />
+
+      <h2>🎬 Payment Retry Recovery Walkthrough</h2>
+
+      <!-- ⚠️ Replace src with the public embed URL for this clip -->
+      <div class="rc-step-video">
+        <div class="rc-step-video-label"><span>Dashboard demo</span></div>
+        <div class="rc-step-video-frame">
+          <iframe src="about:blank" loading="lazy" title="Payments Hub: Payment Retry Recovery dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+        </div>
+        <div class="rc-step-video-caption">A walkthrough of the Payment Retry Recovery dashboard — recovered transactions, revenue at risk, recovery rate, and success by retry attempt.</div>
       </div>
     </div>
 
-    <div class="rc-warning">
-      <span class="rc-wicon">⚠️</span>
-      <p><strong>Not seeing data?</strong> This dashboard requires Account Updater to be enabled. If you see no activity, it may not be active for your site. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" target="_blank" style="color:var(--orange);font-weight:700;">Learn more →</a></p>
-    </div>
+    <!-- Section 2: What's on this dashboard -->
+    <div class="rc-lp-section">
+      <h2>📋 What's on this dashboard</h2>
 
-    <h3 class="rc-subhead">📋 What's on this dashboard</h3>
-    <div class="rc-card">
-      <p style="font-size:.92rem;color:var(--darkgray);line-height:1.75;margin:0;">
-        <strong>Successful card updates</strong> — Total number of cards successfully updated.<br><br>
-        <strong>Successful updates over time</strong> — Line chart showing the daily count of card updates.<br><br>
-        <strong>Payments authorized on updated cards</strong> — Total payment volume authorized on cards that were updated.<br><br>
-        <strong>Update type</strong> — Breakdown of card number changes vs. expiration date updates.
-      </p>
-    </div>
+      <div class="rc-card">
+        <p>
+          <strong>Recovered transactions</strong> — Total count of payments successfully recovered through retries in the period.<br><br>
+          <strong>Payment recovery over time</strong> — A trend line showing recovered transaction volume by day.<br><br>
+          <strong>Retry attempts</strong> — Total number of retry attempts made in the period (a single transaction may be retried multiple times).<br><br>
+          <strong>Revenue at risk</strong> — The total value of invoices attached to a dunning campaign whose first payment attempt failed. This is the pool of revenue eligible for recovery on subsequent attempts.<br><br>
+          <strong>Payment retry recovered revenue</strong> — The dollar value successfully collected on the second or later payment attempt.<br><br>
+          <strong>Recovery rate</strong> — The percentage of revenue at risk that was successfully recovered.<br><br>
+          <strong>Success by retry attempt number</strong> — A chart showing which retry attempt (1st, 2nd, 3rd...) actually captured the payment. Most payments are recovered within the first several attempts.
+        </p>
+      </div>
 
-    <div class="rc-tip">
-      <span class="rc-tipicon">💡</span>
-      <div>
-        <h4>What to look for in Update Type</h4>
-        <p>A card number change carries more disruption risk than an expiry update. High proportions of card number changes can indicate a fraud event at a major issuer affecting your base.</p>
+      <div class="rc-callout rc-callout-warning">
+        <div class="rc-callout-icon">⚠️</div>
+        <div class="rc-callout-body">
+          <strong>Important: retries vs. dunning</strong>
+          <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters. For example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match.<br><br><strong>This dashboard is the simplest view of "how much failed revenue did we eventually collect."</strong></p>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon">💡</div>
+        <div class="rc-callout-body">
+          <strong>What the retry attempt chart tells you</strong>
+          <p>The "Success by Retry Attempt Number" chart is one of the most useful views in Payments Hub. It shows the distribution of which retry number is capturing the payment. For most merchants, the bulk of recoveries happen within the first 10 attempts — which validates that your dunning timeline is appropriate and that recovery is working as expected.</p>
+        </div>
       </div>
     </div>
 
-    <h3 class="rc-subhead">✅ Activity: Explore Account Updater</h3>
-    <div class="rc-checklist">
-      <div class="rc-cl-header"><span>✅</span><h3>Account updater activity</h3></div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label class="rc-clab">How much revenue was authorized on updated cards in the last 30 days?<span>This is revenue you likely would have lost without AU.</span></label>
-      </div>
-      <div class="rc-cli">
-        <div class="rc-cb"></div>
-        <label class="rc-clab">Check the Update Type chart. What percentage are card number changes?<span>High changes may indicate external bank fraud migrations.</span></label>
+    <!-- Section 3: Activity checklist -->
+    <div class="rc-lp-section">
+      <h2>✅ Activity: Explore Payment Retry Recovery</h2>
+
+      <div class="rc-checklist">
+        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Payment retries activity</h4></div>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>What is your current recovery rate?</strong>
+            <span>This number may differ from the recovery figure in your main Analytics dunning dashboards — they apply different definitions of recovered revenue</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Compare your recovered revenue to your revenue at risk. What percentage is being saved?</strong>
+            <span>Revenue at risk = all initial payment failures. Recovered revenue = what retries captured from that pool.</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Look at the Success by Retry Attempt chart. At which attempt number do most of your recoveries happen?</strong>
+            <span>If most payments are capturing very late (attempt 15+), your dunning timeline may benefit from adjustment</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Open your main Analytics dunning dashboard and note the overall recovery number. How does it compare to the number here?</strong>
+            <span>The two won't always match — Analytics dashboards apply different definitions, including some that count first-attempt successes</span>
+          </div>
+        </label>
+        <div class="rc-checklist-footer">✓ Tap each item to mark it complete</div>
       </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing">← Payment processing</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries">Next: Payment retry recovery →</a>
+    <!-- Office Hours CTA -->
+    <div class="rc-oh-cta">
+      <h4>🗓️ Want to optimize your retry strategy?</h4>
+      <p>Join <strong>Global Office Hours</strong> to talk through your retry recovery data with a CSM. We can help you understand what your numbers mean in context and identify opportunities to improve.</p>
+      <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
-    <div class="rc-footer-mini">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-        <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
-      </a>
-      <a href="mailto:support@recurly.com" class="rc-footer-link">support@recurly.com</a>
+    <!-- Path nav -->
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-btn-prev">← Account updater</a>
+      <span class="rc-lp-nav-indicator">4 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-btn-path">Next: Fraud prevention →</a>
     </div>
+
+    <!-- Resources -->
+    <div class="rc-resources">
+      <h3>📚 Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-retry-recovery" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Payment retry recovery</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/retry-logic" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔁 Recurly Docs: Intelligent retries</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🌐 Join Global Office Hours</a>
+      </div>
+    </div>
+
+    <!-- Footer nav -->
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link"><img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-footer-link">Path Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-footer-link">Step 1: Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-footer-link">Step 2: Payment processing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-footer-link">Step 3: Account updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-footer-link">Step 4: Payment retry recovery</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-footer-link">Step 5: Fraud prevention</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-footer-link">Step 6: Review &amp; resources</a>
+        <a href="mailto:support@recurly.com" class="rc-footer-link">support@recurly.com</a>
+      </div>
+    </div>
+
   </div>
 </div>
 `}</HTMLBlock>
