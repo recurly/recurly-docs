@@ -245,7 +245,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Get configured and live fast. Build a solid subscription foundation from day one by mastering the core elements of the Recurly platform.</p>
     </div>
 
-    <!-- ── NAVIGATE QUICK LINKS NAV (3b: sticky, collapsed, brightgray, all section anchors active) ── -->
+    <!-- ── NAVIGATE QUICK LINKS NAV (3b: sticky, collapsed, brightgray, no anchors pre-highlighted) ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">
@@ -256,14 +256,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <!-- Home: cross-page link — NOT active on this pillar subpage -->
+            <!-- Home: cross-page link — never active on a pillar subpage -->
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
             </a>
-            <!-- Section anchors: all on this page — all get rc-sticky-link-active -->
-            <a href="#launchpad" class="rc-sticky-link rc-sticky-link-active">Launchpad</a>
-            <a href="#technical" class="rc-sticky-link rc-sticky-link-active">Technical Setup</a>
-            <a href="#onboarding" class="rc-sticky-link rc-sticky-link-active">Onboarding</a>
+            <!-- Section anchors: no rc-sticky-link-active — scroll position cannot be tracked without JS -->
+            <a href="#launchpad" class="rc-sticky-link">Launchpad</a>
+            <a href="#technical" class="rc-sticky-link">Technical Setup</a>
+            <a href="#onboarding" class="rc-sticky-link">Onboarding</a>
           </div>
         </div>
       </div>
