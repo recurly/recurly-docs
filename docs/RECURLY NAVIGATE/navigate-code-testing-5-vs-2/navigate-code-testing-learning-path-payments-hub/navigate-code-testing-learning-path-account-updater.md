@@ -1,7 +1,7 @@
 ---
 title: Navigate Code Testing Learning Path Account Updater
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
