@@ -218,7 +218,7 @@ For a complete list of changes and improvements in this version, see the [change
 
 * [Browse the complete API reference](/docs/api-reference)
 * [View all API versions](/docs/api-versions)
-* [Explore our client libraries](/docs/client-libraries)
+* [Explore our client libraries](https://docs.recurly.com/recurly-subscriptions/v2999-01-01/reference/client-libraries)
 
 # FAQs
 
