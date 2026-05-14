@@ -183,7 +183,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 <div class="rc-guide">
 
   <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-back-link">← Back to Pricing & Plans 101</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-back-link">← Back to Course Start</a>
   </div>
 
   <div class="rc-content-wrap">
@@ -202,7 +202,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
       </div>
-      <div class="rc-lp-hero-title"><h2>Pricing & Plans 101: The Basics</H2><h1>Plans: Overview</h1></div>
+      <div class="rc-lp-hero-title"><h3><strong>COURSE:</strong> PRICING & PLANS 101</H3><h1>Plans: Overview</h1></div>
       <p>Your plan is more than a billing configuration — it's the first value message your subscriber sees. Learn what makes a plan portfolio work and why one plan is never enough.</p>
       <div class="rc-hero-stats">
         <div class="rc-hero-stat">
