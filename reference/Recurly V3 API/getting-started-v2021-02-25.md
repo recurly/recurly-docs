@@ -12,12 +12,6 @@ metadata:
 
 This guide walks you through the essential concepts you'll need to work with the Recurly Subscriptions API. We'll cover versioning, error handling, pagination, and rate limits — everything you need to build a stable integration.
 
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
-
-# Key details
-
 ## API versioning
 
 The Recurly Subscriptions API uses date-based versioning to give you stability while we continue improving the platform. This means your code won't break when we ship new features.
