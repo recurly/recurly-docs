@@ -1,4 +1,5 @@
 - getting-started-v2022-01-01
+- client-libraries
 - site
 - custom_field_definition
 - item
@@ -37,4 +38,3 @@
 - general_ledger_account
 - performance_obligations
 - invoice_templates
-- client-libraries
