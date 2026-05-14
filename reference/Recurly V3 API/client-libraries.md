@@ -12,12 +12,6 @@ metadata:
 
 Recurly provides official client libraries for all major programming languages and mobile platforms. These libraries handle authentication, request formatting, and error handling — so you can focus on building your subscription features.
 
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
-
-# Key details
-
 ## API client libraries
 
 We maintain official client libraries for seven languages. Each library is kept in sync with the latest API version and includes comprehensive documentation.
