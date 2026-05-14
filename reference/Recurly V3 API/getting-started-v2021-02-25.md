@@ -200,7 +200,7 @@ Three response headers help you track your rate limit status:
 
 * <Anchor label="Browse the complete API reference" target="_blank" href="recurly-subscriptions/reference">Browse the complete API reference</Anchor>
 * [View the API changelog](recurly-subscriptions/changelog)
-* [Explore our client libraries](/docs/client-libraries)
+* <Anchor label="Explore our client libraries" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/client-libraries">Explore our client libraries</Anchor>
 
 # FAQs
 
