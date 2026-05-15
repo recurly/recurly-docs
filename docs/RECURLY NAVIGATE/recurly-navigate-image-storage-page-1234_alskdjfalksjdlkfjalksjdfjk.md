@@ -19,8 +19,7 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" />
 
-<Image align="center" src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" />
-
+  <Image align="center" src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" />
 
   <Image align="center" src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" />
 
@@ -36,9 +35,11 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/1919bfc36caefe3cfe32fca455a7035d35ac174a795f99f39631bd1fcd036a55-Office_Hours_Icon.png" />
 
-<Image align="center" src="https://files.readme.io/fd20a9de9ffd5bdd2e758d7fc8bf2422fcdcd4abd506e586f35f2b64ffe15255-Home_Icon.png" />
-</div>
+  <Image align="center" src="https://files.readme.io/fd20a9de9ffd5bdd2e758d7fc8bf2422fcdcd4abd506e586f35f2b64ffe15255-Home_Icon.png" />
 
+<Image align="center" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" />
+
+</div>
 
 <br />
 
