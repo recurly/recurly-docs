@@ -41,7 +41,8 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" />
 
-<Image align="center" src="https://files.readme.io/22fda95093e6659c4947b48dd92d5b21ee56068123ea0fc02670937406fe421a-White_Home_Icon.png" />
+
+<Image align="center" src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" />
 
 </div>
 
