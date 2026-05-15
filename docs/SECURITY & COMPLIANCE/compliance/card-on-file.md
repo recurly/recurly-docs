@@ -26,6 +26,7 @@ Before we dive into the specifics, let’s lay the groundwork for definitions. T
 
 * **Stored credentials** Stored Credentials refers to stored credit card data. The mandate itself sometimes refers to card data as “credentials”.
 * **NTID** The acronym for ‘Network Transaction ID’, Recurly stores these values on your behalf to optimize subscription billing successes and ensure payment compliance.
+* **TLID** The acronym for "Transaction Link ID", a Mastercard specific identifier, Recurly stores this value on your behalf to comply with 2026 Mastercard compliance updates. It is used alongside the NTID returned on subscription signups.
 * **Compliance** Yes, Credential on File is an industry mandate! Ensuring we are following proper compliance mandates associated with card/credential on file is top priority for Recurly.
 * **CIT** Short for “Customer Initiated Transaction”. See more below.
 * **MIT** Short for “Merchant Initiated Transaction”. See more below.
@@ -34,7 +35,7 @@ Before we dive into the specifics, let’s lay the groundwork for definitions. T
 
 When a customer is submitting a transaction for a one-time purchase, updating their billing information, or signing up for a subscription, this is known as a Customer-Initiated transaction, commonly called “CIT” for the acronym of "**c**ustomer **i**nitiated **t**ransaction". When a CIT action is taken by a consumer, they can provide new card information, or use previously stored billing information to make purchases and sign up for subscriptions.
 
-When customers provide new billing information when in the checkout flow, Recurly ensures that we are capturing the applicable Network Transaction ID associated with the approved transaction response from each gateway. This NTID is then stored so that future subscriptions will be authorized properly.
+When customers provide new billing information when in the checkout flow, Recurly ensures that we are capturing the applicable Network Transaction ID associated with the approved transaction response from each gateway. This NTID (and TLID on MasterCard) is then stored so that future subscriptions will be authorized properly.
 
 **Customers can initiate:**
 
@@ -59,7 +60,7 @@ A “merchant” initiated transaction, or “MIT” for short, is when a transa
 
 # How does Recurly help you with credential on file compliance?
 
-* **Card Storage** Recurly stores consumer card data securely, including the associated Network Transaction ID information for their billing information and subscriptions.
+* **Card Storage** Recurly stores consumer card data securely, including the associated Network Transaction ID (All networks) and Transaction Link ID (Mastercard only) information for their billing information and subscriptions.
 * **Customer In Session Detection** Recurly’s systems understand when a consumer is signing up for a subscription, updating their billing information, or making a purchase through a hosted system or Recurly.js. Ensuring proper handling of CIT transactions will ensure the proper SCA regulations are followed for regions that require 3D Secure verification.
 * **Gateway Integrations** Recurly works with Gateways directly to ensure our payloads are accurate for proper Credential on File handling, and in many cases has certified our solutions.
 
@@ -71,10 +72,10 @@ A “merchant” initiated transaction, or “MIT” for short, is when a transa
 
 # Common use cases
 
-* **Billing info updates:** When a consumer updates their billing info with Recurly, our systems reach out to your integrated gateway to gain authorization by verifying the data provided including billing address, and card information, as well as ensuring proper storage of the resulting NTID upon approval. Merchants in the EU region as well as merchants who use 3DS as a fraud-reduction solution will also see their consumer’s transactions subject to SCA and/or 3D Secure challenges to ensure follow up transactions function properly.
+* **Billing info updates:** When a consumer updates their billing info with Recurly, our systems reach out to your integrated gateway to gain authorization by verifying the data provided including billing address, and card information, as well as ensuring proper storage of the resulting NTID and conditionally TLID upon approval. Merchants in the EU region as well as merchants who use 3DS as a fraud-reduction solution will also see their consumer’s transactions subject to SCA and/or 3D Secure challenges to ensure follow up transactions function properly.
 * **Subscription signups:** When a consumer signs up for a subscription, whether it’s a free trial where the card number is supplied, or a sign-up where there is a non-zero amount, this is a customer-initiated transaction that can occur with a new card or a known / stored card. Like billing info updates, if the card is brand new, the consumer could be challenged by 3D Secure in SCA/fraud-reductive environments.
 * **Customer initiated purchases:** Merchants who offer one-click payments to their customers can use Recurly’s billing info IDs. Using stored information is a great way of reducing shopping cart abandonment and reducing friction at checkout. Keep in mind that if consumers update their billing info in the process of making a one-time purchase, they may be challenged by 3D-Secure in SCA-regulated regions.
-* **Recurring subscriptions - fixed price:** Automated subscriptions will use consumer-provided billing information and the associated NTIDs that were stored upon successful signups. Some card brands have special requirements depending on whether or not the subscription’s price changes or not.
+* **Recurring subscriptions - fixed price:** Automated subscriptions will use consumer-provided billing information and the associated NTIDs and TLIDs (MC Only) that were stored upon successful signups. Some card brands have special requirements depending on whether or not the subscription’s price changes or not.
 * **Unscheduled Merchant Transactions**Non-Recurring Merchant Initiated transactions are also valid use cases for card on file storage. Merchants who have specific industry uses for these types of transactions will be able to use API parameters to facilitate cases such as:
   * Top Ups
   * Cancellation Fees (No Show Fees)
