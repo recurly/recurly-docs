@@ -37,7 +37,9 @@ metadata:
 
   <Image align="center" src="https://files.readme.io/fd20a9de9ffd5bdd2e758d7fc8bf2422fcdcd4abd506e586f35f2b64ffe15255-Home_Icon.png" />
 
-<Image align="center" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" />
+  <Image align="center" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" />
+
+<Image align="center" src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" />
 
 </div>
 
