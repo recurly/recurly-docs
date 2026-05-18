@@ -205,6 +205,6 @@ After a successful purchase, you can confirm the details via the Recurly Admin U
 
 ## Next steps
 
-Now that you can create new  [subscriptions](https://app.recurly.com/go/subscriptions), explore payment method guide to explore other use cases and limitations related to the [Mercado Pago payment method](https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/).
+Now that you can create new MOTO transaction, ensure your gateway is set up to properly enable MOTO transactions. You will need to reach out to your specific gateway's support team to ensure that MOTO is enabled for your account.
 
 <br />
