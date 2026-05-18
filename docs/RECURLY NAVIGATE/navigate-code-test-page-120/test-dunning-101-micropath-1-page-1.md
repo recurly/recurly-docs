@@ -34,6 +34,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* Hero */
 .rc-hero { background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: var(--offblack); background-size: cover; color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0; }
 .rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45); color: #FF9D88; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
+.rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
@@ -80,7 +81,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; color: var(--offblack); text-transform: uppercase; letter-spacing: 0.5px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
+.rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
 .rc-callout-warning { background: #FFF8E6; border-left: 4px solid var(--orange); }
+.rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
 
 /* Table */
 .rc-table { width: 100%; border-collapse: collapse; margin-bottom: 32px; border-radius: 10px; overflow: hidden; border: 1px solid var(--lightgray); }
@@ -123,7 +126,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 <div class="rc-guide">
   <div class="rc-top-nav">
-    <a href="/docs/dunning-101-overview" class="rc-back-link">← Back to Path Start</a>
+    <a href="/docs/dunning-101-overview" class="rc-back-link">&#8592; Back to Path Start</a>
   </div>
 
   <div class="rc-content-wrap">
@@ -138,7 +141,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
-      <summary><span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span></summary>
+      <summary><span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">&#9650;</span></span></summary>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
@@ -153,32 +156,32 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <div class="rc-lp-section">
-      <h2>⚙️ How it Works</h2>
-      <p>Dunning is Recurly's automated system for recovering failed subscription payments. When a renewal charge doesn't go through, dunning kicks in — retrying the payment at the optimal time and reaching out to the subscriber so they can update their billing information before their subscription expires.</p>
+      <h2>&#9881;&#65039; How it Works</h2>
+      <p>Dunning is Recurly's automated system for recovering failed subscription payments. When a renewal charge doesn't go through, dunning kicks in &mdash; retrying the payment at the optimal time and reaching out to the subscriber so they can update their billing information before their subscription expires.</p>
       
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
-          <div class="rc-feature-icon">🤖</div>
+          <div class="rc-feature-icon">&#129302;</div>
           <h4>Intelligent Retries</h4>
-          <p>Recurly's ML engine analyzes transaction data to determine the optimal moment to retry a declined payment. It runs fully automatically — no setup required beyond configuring your dunning window.</p>
+          <p>Recurly's ML engine analyzes transaction data to determine the optimal moment to retry a declined payment. It runs fully automatically &mdash; no setup required beyond configuring your dunning window.</p>
         </div>
         <div class="rc-feature-card">
-          <div class="rc-feature-icon">📬</div>
+          <div class="rc-feature-icon">&#128235;</div>
           <h4>Dunning Emails</h4>
           <p>Automated email sequences sent to subscribers prompting them to update billing info. You control the day, template, and tone of every email in the sequence.</p>
         </div>
         <div class="rc-feature-card">
-          <div class="rc-feature-icon">🗓️</div>
+          <div class="rc-feature-icon">&#128197;</div>
           <h4>Dunning Window</h4>
           <p>The time period during which Recurly retries payments and sends emails. Recurly recommends 27 days for monthly plans and 60 days for annual plans.</p>
         </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon">💡</div>
+        <div class="rc-callout-icon">&#128161;</div>
         <div class="rc-callout-body">
           <strong>Key Distinction</strong>
-          <p>Retries and emails are independent systems. An email being sent does NOT trigger a retry — they run on separate schedules. This gives you full flexibility to optimize payment recovery timing and communication cadence independently.</p>
+          <p>Retries and emails are independent systems. An email being sent does NOT trigger a retry &mdash; they run on separate schedules. This gives you full flexibility to optimize payment recovery timing and communication cadence independently.</p>
         </div>
       </div>
 
@@ -198,29 +201,29 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <tr>
             <td><strong>Soft Decline</strong></td>
             <td>Insufficient funds, card limit</td>
-            <td>✅ Yes — ML-optimized</td>
-            <td>✅ Yes — per your schedule</td>
+            <td>&#9989; Yes &mdash; ML-optimized</td>
+            <td>&#9989; Yes &mdash; per your schedule</td>
           </tr>
           <tr>
             <td><strong>Hard Decline</strong></td>
             <td>Invalid card number, fraud block</td>
-            <td>❌ Typically no</td>
-            <td>✅ Yes — send on Day 0</td>
+            <td>&#10060; Typically no</td>
+            <td>&#9989; Yes &mdash; send on Day 0</td>
           </tr>
           <tr>
             <td><strong>Any past_due Invoice</strong></td>
             <td>Any failed renewal payment</td>
             <td>If soft decline</td>
-            <td>✅ Yes — per your campaign</td>
+            <td>&#9989; Yes &mdash; per your campaign</td>
           </tr>
         </tbody>
       </table>
 
       <div class="rc-callout rc-callout-warning">
-        <div class="rc-callout-icon">⚠️</div>
+        <div class="rc-callout-icon">&#9888;&#65039;</div>
         <div class="rc-callout-body">
           <strong>Hard Declines Require Fast Action</strong>
-          <p>Since Recurly typically won't retry hard declines, email is your only automated recovery tool. Make sure your first dunning email fires immediately on Day 0 for hard decline events — not delayed to Day 3 like soft declines.</p>
+          <p>Since Recurly typically won't retry hard declines, email is your only automated recovery tool. Make sure your first dunning email fires immediately on Day 0 for hard decline events &mdash; not delayed to Day 3 like soft declines.</p>
         </div>
       </div>
     </div>
@@ -228,7 +231,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
       <span class="rc-lp-nav-indicator">1 of 3</span>
-      <a href="/docs/understanding-dunning-2" class="rc-btn-path">Next: Why it Matters →</a>
+      <a href="/docs/understanding-dunning-2" class="rc-btn-path">Next: Why it Matters &#8594;</a>
     </div>
 
     <div class="rc-footer-nav">
