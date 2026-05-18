@@ -106,8 +106,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide .rc-callout-body a:hover { text-decoration: underline !important; }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
-.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
+.rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
 
 /* Checklist — pure CSS, no JS */
 .rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
@@ -193,8 +193,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale">
         Scale
       </div>
-      <div class="rc-lp-hero-title"><h1>Account Updater Dashboard</h1></div>
-      <p>The Account Updater dashboard shows you how much revenue was protected through proactive, automatic card updates — before those payments ever had a chance to fail.</p>
+      <div class="rc-lp-hero-title"><h1>Payment Retry Recovery Dashboard</h1></div>
+      <p>The Payment Retry Recovery dashboard shows how much initially failed revenue was recovered on subsequent payment attempts — and at which attempt it was captured.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -205,10 +205,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link"><span class="rc-step-badge">1</span> Overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link"><span class="rc-step-badge">2</span> Payment processing</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Account updater
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Payment retry recovery
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link"><span class="rc-step-badge">4</span> Payment retry recovery</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Fraud prevention</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link">
@@ -218,29 +218,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <div class="rc-lp-section">
-      <h2>🔄 Account Updater dashboard</h2>
-      <p>The Account Updater dashboard shows you how much revenue was protected through proactive, automatic card updates — before those payments ever had a chance to fail.</p>
+      <h2>🔁 Payment retries</h2>
+      <p>When a payment fails on the first attempt, Recurly's intelligent retry logic works to recover it. This dashboard shows you how much revenue that recovery effort is capturing — and the story behind each retry attempt.</p>
 
       <img class="rc-screenshot"
-           src="https://files.readme.io/2e488cefdf0e0cbbac44170f4774480b23c60e9445a66061c27f83f040bccf4c-Account_Updater_Dashboard.png"
-           alt="Account Updater dashboard overview" />
+           src="https://files.readme.io/dd846483711337200d1b60b8f6e3d4cfc3b778110e986a4b7380e492093a5dc3-Payment_Retry_Recovery.png"
+           alt="Payment Retry Recovery dashboard" />
 
-      <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon">⚠️</div>
-        <div class="rc-callout-body">
-          <strong>Not seeing Account Updater data?</strong>
-          <p>This dashboard requires Account Updater to be enabled on your Recurly site. If you see no data or a "Learn More" prompt, Account Updater may not be active for your account. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">Learn about Account Updater →</a></p>
-        </div>
-      </div>
-
-      <h2>🎬 Account Updater Walkthrough</h2>
+      <h2>🎬 Payment Retry Recovery Walkthrough</h2>
 
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Account Updater dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="about:blank" loading="lazy" title="Payments Hub: Payment Retry Recovery dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
-        <div class="rc-step-video-caption">A walkthrough of the Account Updater dashboard — card update volume, update types, and revenue protected.</div>
+        <div class="rc-step-video-caption">A walkthrough of the Payment Retry Recovery dashboard — recovered transactions, revenue at risk, recovery rate, and success by retry attempt.</div>
       </div>
     </div>
 
@@ -249,51 +241,68 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-card">
         <p>
-          <strong>Successful card updates</strong> — Total number of cards successfully updated in the period, with comparison to previous period.<br><br>
-          <strong>Successful updates over time</strong> — A line chart showing the daily count of card updates. A sudden drop may signal an issue worth investigating.<br><br>
-          <strong>Payments authorized on updated cards</strong> — The total payment volume authorized on updated cards — this includes cards that were updated prior to the time period in view.<br><br>
-          <strong>Successful payments over time</strong> — A bar chart showing the revenue volume on updated cards by day.<br><br>
-          <strong>Update type</strong> — A breakdown of card number changes vs. expiration date updates. Card number changes carry more disruption risk; expiry updates are more routine.<br><br>
-          <strong>Updates by card type</strong> — Which card networks (Visa, Mastercard, Amex, Discover) are driving the most update activity.
+          <strong>Recovered transactions</strong> — Total count of payments successfully recovered through retries in the period.<br><br>
+          <strong>Payment recovery over time</strong> — A trend line showing recovered transaction volume by day.<br><br>
+          <strong>Retry attempts</strong> — Total number of retry attempts made in the period (a single transaction may be retried multiple times).<br><br>
+          <strong>Revenue at risk</strong> — The total value of invoices attached to a dunning campaign whose first payment attempt failed. This is the pool of revenue eligible for recovery on subsequent attempts.<br><br>
+          <strong>Payment retry recovered revenue</strong> — The dollar value successfully collected on the second or later payment attempt.<br><br>
+          <strong>Recovery rate</strong> — The percentage of revenue at risk that was successfully recovered.<br><br>
+          <strong>Success by retry attempt number</strong> — A chart showing which retry attempt (1st, 2nd, 3rd...) actually captured the payment. Most payments are recovered within the first several attempts.
         </p>
+      </div>
+
+      <div class="rc-callout rc-callout-warning">
+        <div class="rc-callout-icon">⚠️</div>
+        <div class="rc-callout-body">
+          <strong>Important: retries vs. dunning</strong>
+          <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters. For example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match.<br><br><strong>This dashboard is the simplest view of "how much failed revenue did we eventually collect."</strong></p>
+        </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon">💡</div>
         <div class="rc-callout-body">
-          <strong>What to look for in Update Type</strong>
-          <p>A card number change means the subscriber received an entirely new card — often due to fraud or bank migration. These carry more risk than an expiry update because the old number is fully invalid. If you see a high proportion of card number changes, it may indicate a fraud event at a major issuer affecting your subscriber base.</p>
+          <strong>What the retry attempt chart tells you</strong>
+          <p>The "Success by Retry Attempt Number" chart is one of the most useful views in Payments Hub. It shows the distribution of which retry number is capturing the payment. For most merchants, the bulk of recoveries happen within the first 10 attempts — which validates that your dunning timeline is appropriate and that recovery is working as expected.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-section">
-      <h2>✅ Activity: Explore Account Updater</h2>
+      <h2>✅ Activity: Explore Payment Retry Recovery</h2>
 
       <div class="rc-checklist" id="rcChecklist">
-        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Account updater activity</h4></div>
+        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Payment retries activity</h4></div>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>How much revenue was authorized on updated cards in the last 30 days?</strong>
-            <span>This is the revenue you would have likely lost without Account Updater running in the background</span>
+            <strong>What is your current recovery rate?</strong>
+            <span>This number may differ from the recovery figure in your main Analytics dunning dashboards — they apply different definitions of recovered revenue</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Look at the Update Type chart. What percentage of your updates are card number changes vs. expiry updates?</strong>
-            <span>A high proportion of card number changes may indicate a recent fraud event at an issuer</span>
+            <strong>Compare your recovered revenue to your revenue at risk. What percentage is being saved?</strong>
+            <span>Revenue at risk = all initial payment failures. Recovered revenue = what retries captured from that pool.</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Check Updates by Card Type. Which card network is generating the most update activity?</strong>
-            <span>A small number of updates for a lesser-used card brand is normal — zero updates could indicate a problem</span>
+            <strong>Look at the Success by Retry Attempt chart. At which attempt number do most of your recoveries happen?</strong>
+            <span>If most payments are capturing very late (attempt 15+), your dunning timeline may benefit from adjustment</span>
+          </div>
+        </label>
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Open your main Analytics dunning dashboard and note the overall recovery number. How does it compare to the number here?</strong>
+            <span>The two won't always match — Analytics dashboards apply different definitions, including some that count first-attempt successes</span>
           </div>
         </label>
         <div class="rc-checklist-footer">✓ Tap each item to mark it complete</div>
@@ -301,21 +310,22 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <div class="rc-oh-cta">
-      <h4>🗓️ Not using Account Updater yet?</h4>
-      <p>Join <strong>Global Office Hours</strong> to talk with a CSM about whether Account Updater is right for your business and how to get it enabled. It's one of the most impactful, proactive revenue recovery tools available to Recurly merchants.</p>
+      <h4>🗓️ Want to optimize your retry strategy?</h4>
+      <p>Join <strong>Global Office Hours</strong> to talk through your retry recovery data with a CSM. We can help you understand what your numbers mean in context and identify opportunities to improve.</p>
       <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-prev">← Payment processing</a>
-      <span class="rc-lp-nav-indicator">3 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-btn-path">Next: Payment retry recovery →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-btn-prev">← Account updater</a>
+      <span class="rc-lp-nav-indicator">4 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-btn-path">Next: Fraud prevention →</a>
     </div>
 
     <div class="rc-resources">
       <h3>📚 Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-resource-link">📚 Navigate: Account Updater learning path</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-retry-recovery" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Payment retry recovery</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/retry-logic" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔁 Recurly Docs: Intelligent retries</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
         <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🌐 Join Global Office Hours</a>
       </div>
