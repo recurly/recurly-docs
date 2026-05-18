@@ -4,7 +4,7 @@ excerpt: >-
   Skills make AI capabilities visible and tangible through clickable cards that
   show exactly what Compass can do. 
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
