@@ -79,54 +79,44 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* Screenshot */
-.rc-screenshot { width: 100%; border-radius: 14px; border: 1px solid var(--lightgray); margin-bottom: 24px; display: block; }
+/* Completion banner — dark card, !important on all color properties */
+.rc-completion { background: #0D0D0B !important; border: 2px solid #FFD706 !important; border-radius: 16px; padding: 40px 36px; text-align: center; margin-bottom: 48px; }
+.rc-completion-emoji { font-size: 3rem; margin-bottom: 12px; }
+.rc-completion h2 { font-size: 1.5rem; font-weight: 800; color: #FFFDF2 !important; margin: 0 0 12px; }
+.rc-completion p { color: #CCC9B8 !important; font-size: .95rem; line-height: 1.6; max-width: 580px; margin: 0 auto 24px; }
+.rc-completion-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.rc-guide a.rc-completion-btn-primary { background: #FFD706 !important; color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; }
+.rc-guide a.rc-completion-btn-primary:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rc-guide a.rc-completion-btn-secondary { background: transparent !important; color: #CCC9B8 !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid rgba(204,201,184,0.35) !important; border-bottom: 2px solid rgba(204,201,184,0.35) !important; transition: all .2s; }
+.rc-guide a.rc-completion-btn-secondary:hover { border-color: #CCC9B8 !important; border-bottom-color: #CCC9B8 !important; color: #FFFDF2 !important; }
 
-/* Inline step video */
-.rc-step-video { border-radius: 10px; margin-top: 16px; border: 1px solid var(--lightgray); overflow: hidden; background: var(--offblack); }
-.rc-step-video-label { background: var(--offblack); padding: 9px 14px; display: flex; align-items: center; gap: 8px; }
-.rc-step-video-label::before { content: '▶'; font-size: .6rem; color: #FF5810; flex-shrink: 0; }
-.rc-step-video-label span { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: var(--lightgray); }
-.rc-step-video-frame { position: relative; overflow: hidden; aspect-ratio: 16/9; }
-.rc-step-video-frame iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
-.rc-step-video-caption { font-size: .8rem; color: var(--gray); padding: 8px 14px 10px; background: var(--brightgray); border-top: 1px solid var(--lightgray); line-height: 1.5; }
+/* Dashboard recap & Metrics grid */
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
+.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
+.rc-feature-card:hover { border-color: #FF5810; box-shadow: 0 4px 16px rgba(255,88,16,0.15); transform: translateY(-2px); }
+.rc-feature-card-head { display: flex; align-items: center; gap: 10px; }
+.rc-feature-icon { font-size: 1.4rem; line-height: 1; }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
+.rc-feature-card h5 { font-size: .8rem; font-weight: 800; color: var(--offblack); margin: 0; text-transform: uppercase; letter-spacing: .6px; }
+.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
+.rc-feature-card p strong { color: var(--darkgray); }
+.rc-feature-card .rc-kount-note { font-size: .75rem; font-weight: 400; color: var(--gray); margin-left: 6px; }
 
-/* Card */
-.rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
-.rc-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.75; margin: 0 0 12px; }
-.rc-card p:last-child { margin-bottom: 0; }
+/* Full-width card */
+.rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; transition: all .2s ease; }
+.rc-card:hover { border-color: #FF5810; box-shadow: 0 4px 16px rgba(255,88,16,0.15); }
+.rc-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; }
+.rc-card p strong { color: var(--darkgray); }
 
 /* Callouts */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout + .rc-callout { margin-top: 12px; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-body a { color: var(--orange) !important; font-weight: 600; }
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
-.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
-
-/* Checklist — pure CSS, no JS */
-.rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
-.rc-checklist-header { padding: 14px 22px; background: var(--offblack); display: flex; align-items: center; gap: 10px; }
-.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow); margin: 0; }
-.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid var(--brightgray); display: flex; align-items: flex-start; gap: 14px; transition: background .15s; cursor: pointer; }
-.rc-checklist-item:last-child { border-bottom: none; }
-.rc-checklist-item:hover { background: var(--brightgray); }
-.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
-.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
-.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: var(--offblack); border-color: var(--offblack); }
-.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: var(--yellow); font-size: .75rem; font-weight: 800; line-height: 1; }
-.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: var(--gray); }
-.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(255,88,16,0.06); }
-.rc-checklist-text { flex: 1; }
-.rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: var(--offblack); display: block; margin-bottom: 2px; transition: color .18s; }
-.rc-checklist-text span { font-size: .8rem; color: var(--gray); line-height: 1.4; display: block; }
-.rc-checklist-footer { padding: 10px 22px; background: var(--brightgray); border-top: 1px solid var(--lightgray); font-size: .78rem; color: var(--gray); font-weight: 600; }
 
 /* Office Hours CTA */
 .rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706 !important; border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
@@ -136,13 +126,25 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-oh-btn { background: #FFD706 !important; color: #0D0D0B !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 .rc-guide a.rc-oh-btn:hover { background: transparent !important; color: #FFD706 !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 
+/* Continue Your Journey */
+.rc-next-steps { margin: 40px 0 0; }
+.rc-next-steps h3 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 16px; }
+.rc-next-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+.rc-next-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 20px; text-decoration: none !important; color: inherit; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
+.rc-guide a.rc-next-card { border-bottom: 1px solid var(--lightgray) !important; }
+.rc-guide a.rc-next-card:hover { border-color: #FF5810; border-bottom: 1px solid #FF5810 !important; box-shadow: 0 4px 16px rgba(255,88,16,0.15); transform: translateY(-2px); }
+.rc-next-card-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #FF5810; margin-bottom: 2px; }
+.rc-next-card-icon { font-size: 1.3rem; line-height: 1; }
+.rc-next-card h4 { font-size: .95rem; font-weight: 800; color: var(--offblack); margin: 0; line-height: 1.3; }
+.rc-next-card p { font-size: .85rem; color: var(--gray); line-height: 1.5; margin: 0; flex-grow: 1; }
+.rc-next-card-arrow { font-size: .82rem; font-weight: 700; color: var(--orange); margin-top: 4px; }
+
 /* Path nav */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
 .rc-guide a.rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray) !important; border-bottom: 2px solid var(--lightgray) !important; transition: all .2s; }
 .rc-guide a.rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
-.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
-.rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+.rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; }
 
 /* Resources */
 .rc-resources { background: var(--brightgray); border-left: 4px solid #FF5810; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
@@ -171,6 +173,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-oh-cta { padding: 24px 20px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rc-completion { padding: 28px 20px; }
+  .rc-completion-actions { flex-direction: column; align-items: center; }
+  .rc-card-grid, .rc-card-grid-3col { grid-template-columns: 1fr; }
+  .rc-next-grid { grid-template-columns: 1fr; }
 }
 </style>
 
@@ -194,8 +200,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale">
         Scale
       </div>
-      <div class="rc-lp-hero-title"><h1>Fraud Prevention Dashboard</h1></div>
-      <p>The Fraud Prevention dashboard gives Kount-enabled merchants a real-time view of blocked transactions and risk score trends — so you can spot and respond to fraud pressure early.</p>
+      <div class="rc-lp-hero-title"><h1>Payments Hub Review &amp; Resources</h1></div>
+      <p>You've made it through all five dashboards. Here's a quick recap of what you've covered, the key metrics to keep watching, and everything you need to go deeper.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -208,128 +214,156 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link"><span class="rc-step-badge">2</span> Payment processing</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account updater</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link"><span class="rc-step-badge">4</span> Payment retry recovery</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Fraud prevention
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Fraud prevention</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Review &amp; resources
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
         </a>
       </div></div></div>
     </details>
 
-    <div class="rc-lp-section">
-      <h2>🛡️ Fraud prevention</h2>
-      <p>For merchants using Kount, this dashboard consolidates your fraud blocking activity and risk score data into a single view — making it easy to monitor trends and act before fraud pressure escalates.</p>
-
-      <img class="rc-screenshot"
-           src="https://files.readme.io/44645be7caeb3412eb2d65f1627ede0c4115b23b8a52d57250bf66992fe46933-Fraud_Prevention_Dashboard.png"
-           alt="Fraud Prevention dashboard" />
-
-      <div class="rc-callout rc-callout-caution">
-        <div class="rc-callout-icon">⚠️</div>
-        <div class="rc-callout-body">
-          <strong>Kount required</strong>
-          <p>This dashboard only shows data if Kount is enabled on your Recurly site. If you see a blank dashboard or "Learn More" prompt, Kount is not yet active for your account. <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">Learn about Kount →</a></p>
-        </div>
-      </div>
-
-      <h2>🎬 Fraud Prevention Walkthrough</h2>
-
-      <div class="rc-step-video">
-        <div class="rc-step-video-label"><span>Dashboard demo</span></div>
-        <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Fraud Prevention dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
-        </div>
-        <div class="rc-step-video-caption">A walkthrough of the Fraud Prevention dashboard — blocked transactions, risk score trends, and breakdown by payment method and gateway.</div>
+    <div class="rc-completion">
+      <div class="rc-completion-emoji">🎉</div>
+      <h2>You've explored all 5 Payments Hub dashboards!</h2>
+      <p>You now know what each dashboard shows, what to look for, and how to take action. Ready to go deeper? Watch the on-demand Payments Hub walkthrough or bring your questions to a live Global Office Hours session.</p>
+      <div class="rc-completion-actions">
+        <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank" rel="noopener noreferrer" class="rc-completion-btn-primary">▶ Watch: Payments Hub Walkthrough</a>
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-completion-btn-secondary">🗓️ Join Office Hours</a>
       </div>
     </div>
 
     <div class="rc-lp-section">
-      <h2>📋 What's on this dashboard</h2>
+      <h2>🗺️ What you've covered</h2>
+      <p>A quick summary of each dashboard and its primary purpose — use this as a reference when you return to Payments Hub.</p>
+
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <div class="rc-feature-card-head"><span class="rc-feature-icon">🏠</span><h4>Overview</h4></div>
+          <p>Your top-level payment health snapshot. Shows <strong>overall, CIT, and MIT success rates</strong>, payment method distribution, geographic volume, and summary tiles for Account Updater, Retry Recovery, and Fraud blocking.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-card-head"><span class="rc-feature-icon">💳</span><h4>Payment processing</h4></div>
+          <p>The most actionable dashboard. Shows <strong>success rates by gateway, payment method, and card BIN</strong> — plus a ranked table of your top decline reasons, categorized as hard or soft.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-card-head"><span class="rc-feature-icon">🔄</span><h4>Account updater</h4></div>
+          <p>Tracks <strong>revenue protected through automatic card updates</strong> before payments fail. Shows update counts, revenue authorized on updated cards, update type breakdown, and activity by card network.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-card-head"><span class="rc-feature-icon">🔁</span><h4>Payment retry recovery</h4></div>
+          <p>Shows how much <strong>initially failed revenue was recovered through intelligent retries</strong> — including total recovered, recovery rate, revenue at risk, and which retry attempt captured the payment.</p>
+        </div>
+      </div>
 
       <div class="rc-card">
-        <p>
-          <strong>Transactions blocked (fraud)</strong> — Total count of transactions Kount flagged and blocked in the period, with comparison to the previous period.<br><br>
-          <strong>Blocked transactions over time</strong> — A line chart tracking daily blocked transaction count. Sudden spikes are an early signal of an active fraud attack.<br><br>
-          <strong>Average risk score</strong> — The mean Kount risk score assigned to transactions in the period. <strong>Lower scores indicate higher risk.</strong> A falling average score often precedes an increase in blocked transactions — giving you a window to act proactively.<br><br>
-          <strong>Average risk score over time</strong> — Tracks your daily average risk score. Use this as an early warning system. A downward trend here usually comes before a spike in blocks.<br><br>
-          <strong>Fraud by payment method</strong> — A breakdown of blocked transactions by payment method. This helps you understand where fraud attempts are concentrating.<br><br>
-          <strong>Blocked transactions by gateway</strong> — A bar chart showing fraud-blocked volume per gateway.
-        </p>
+        <div class="rc-feature-card-head" style="margin-bottom:10px;"><span class="rc-feature-icon">🛡️</span><h4 style="font-size:.98rem;font-weight:800;color:var(--offblack);margin:0;">Fraud prevention <span class="rc-kount-note" style="font-size:.78rem;font-weight:400;color:var(--gray);margin-left:6px;">Kount-enabled merchants only</span></h4></div>
+        <p>Consolidates your fraud blocking activity into one view. Shows <strong>blocked transactions, average risk score trends, fraud by payment method, and blocked volume by gateway.</strong> The risk score trend is your early warning system — a falling average often precedes a spike in blocks.</p>
       </div>
     </div>
 
     <div class="rc-lp-section">
-      <h2>🔍 Understanding the risk score</h2>
+      <h2>📊 Metrics to watch regularly</h2>
+      <p>These are the numbers worth checking on a recurring basis — whether that's weekly, monthly, or when something looks off.</p>
 
-      <div class="rc-card">
-        <p>Kount assigns every transaction a risk score between 0 and 99.9. <strong>Lower scores indicate higher risk.</strong> A score near 0 means Kount has flagged the transaction as very likely fraudulent. Scores near 99.9 indicate low risk.</p>
-        <p>Your Kount rules determine the thresholds — a score below a certain level triggers a block, while scores in a middle range may require additional authentication. The exact thresholds depend on how your Kount rules are configured. Contact your Kount representative if you have questions about where your thresholds are set.</p>
+      <div class="rc-card-grid rc-card-grid-3col">
+        <div class="rc-feature-card" style="text-align:center; padding: 20px;">
+          <div class="rc-feature-icon" style="margin-bottom:8px;">📈</div>
+          <h5>Payment success rate</h5>
+          <p>Your blended rate across all gateways and methods. Watch the trend over time — a downward drift often signals something worth investigating in Payment Processing.</p>
+        </div>
+        <div class="rc-feature-card" style="text-align:center; padding: 20px;">
+          <div class="rc-feature-icon" style="margin-bottom:8px;">🔁</div>
+          <h5>Retry recovery rate</h5>
+          <p>What percentage of initially failed revenue is being recovered. Compare this to your overall dunning recovery for a complete picture.</p>
+        </div>
+        <div class="rc-feature-card" style="text-align:center; padding: 20px;">
+          <div class="rc-feature-icon" style="margin-bottom:8px;">🔄</div>
+          <h5>Revenue protected (AU)</h5>
+          <p>The dollar value authorized on automatically updated cards. This is revenue that would likely have failed without Account Updater running.</p>
+        </div>
+        <div class="rc-feature-card" style="text-align:center; padding: 20px;">
+          <div class="rc-feature-icon" style="margin-bottom:8px;">⚠️</div>
+          <h5>Top decline reason</h5>
+          <p>Your single most common reason for failed payments. Know whether it's a hard or soft decline — the response strategy is very different.</p>
+        </div>
+        <div class="rc-feature-card" style="text-align:center; padding: 20px;">
+          <div class="rc-feature-icon" style="margin-bottom:8px;">🛡️</div>
+          <h5>Average risk score</h5>
+          <p>For Kount users: monitor this as a leading indicator. A falling score often precedes a spike in blocked transactions — act early.</p>
+        </div>
+        <div class="rc-feature-card" style="text-align:center; padding: 20px;">
+          <div class="rc-feature-icon" style="margin-bottom:8px;">🌍</div>
+          <h5>Success rate by region</h5>
+          <p>Filter the Overview by country to check for geographic drop-offs. Regional differences may point to gateway routing or payment method gaps.</p>
+        </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon">💡</div>
         <div class="rc-callout-body">
-          <strong>Use the risk score trend as an early warning</strong>
-          <p>Don't wait for blocked transactions to spike before investigating. The Average Risk Score Over Time chart is your leading indicator. If you see the average score falling over several days — even if blocked transactions haven't spiked yet — it's worth reviewing your Kount rules and reaching out to your Kount representative.</p>
+          <strong>Keep in mind</strong>
+          <p>Payments Hub data begins from Q1 2026. Numbers in these dashboards reflect payment-level data — more granular than your standard Recurly billing analytics. Some figures may differ slightly from other dashboards in your account; both are accurate, measuring different things.</p>
         </div>
       </div>
     </div>
 
-    <div class="rc-lp-section">
-      <h2>✅ Activity: Explore Fraud Prevention</h2>
-
-      <div class="rc-checklist" id="rcChecklist">
-        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Fraud prevention activity</h4></div>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>What is your current average risk score? Is it trending up, down, or stable over the period?</strong>
-            <span>A falling trend is your early warning signal — act before blocked transactions spike</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Look at fraud by payment method. Which payment method has the highest concentration of blocked transactions?</strong>
-            <span>This tells you where fraud attempts are focusing — and may inform where to add friction or tighten rules</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Check Blocked Transactions by Gateway. Is fraud pressure concentrated on a specific gateway?</strong>
-            <span>If one gateway shows significantly more blocks, it may indicate a routing or rule configuration worth reviewing</span>
-          </div>
-        </label>
-        <div class="rc-checklist-footer">✓ Tap each item to mark it complete</div>
-      </div>
-    </div>
-
     <div class="rc-oh-cta">
-      <h4>🗓️ Questions about Kount or fraud settings?</h4>
-      <p>Join <strong>Global Office Hours</strong> to talk through your Fraud Prevention dashboard with a Recurly CSM. Whether you're new to Kount or looking to optimize your rules, we're here to help.</p>
+      <h4>🗓️ Go deeper with a CSM</h4>
+      <p><strong>Global Office Hours</strong> are the best place to walk through your own data with a Recurly Customer Success Manager. Bring your numbers, ask your questions, and leave with a clear next step. Sessions are free, open to all customers, and run regularly.</p>
       <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-btn-prev">← Payment retry recovery</a>
-      <span class="rc-lp-nav-indicator">5 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-btn-path">Next: Review &amp; resources →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-btn-prev">← Fraud prevention</a>
+      <span class="rc-lp-nav-indicator">6 of 6</span>
+      <span class="rc-btn-complete">🎉 Path complete!</span>
+    </div>
+
+    <div class="rc-next-steps">
+      <h3>🧭 Continue your journey</h3>
+      <div class="rc-next-grid">
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-next-card">
+          <div class="rc-next-card-tag">Explore the pillar</div>
+          <div class="rc-next-card-icon">⚡</div>
+          <h4>All Scale paths</h4>
+          <p>See every learning path in the Scale pillar and find your next topic.</p>
+          <div class="rc-next-card-arrow">View Scale →</div>
+        </a>
+
+        <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
+          <div class="rc-next-card-tag">On demand</div>
+          <div class="rc-next-card-icon">▶️</div>
+          <h4>Payments Hub Walkthrough</h4>
+          <p>Watch the full product walkthrough — all five dashboards in one session with a Recurly expert.</p>
+          <div class="rc-next-card-arrow">Watch now →</div>
+        </a>
+
+        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
+          <div class="rc-next-card-tag">Live session</div>
+          <div class="rc-next-card-icon">🎙️</div>
+          <h4>Global Office Hours</h4>
+          <p>Bring your questions to our CSMs live. Sessions run weekly and are free for all Recurly customers.</p>
+          <div class="rc-next-card-arrow">Register →</div>
+        </a>
+
+      </div>
     </div>
 
     <div class="rc-resources">
-      <h3>📚 Resources</h3>
+      <h3>📚 Resources &amp; documentation</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-fraud-prevention" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Fraud prevention dashboard</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔐 Recurly Docs: Kount integration</a>
-        <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🎤 Payments Hub walkthrough (on demand)</a>
-        <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
+        <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">▶ Payments Hub Walkthrough (on demand)</a>
         <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🌐 Join Global Office Hours</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Payments Hub</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📝 Decline messages reference</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/retry-logic" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔁 Intelligent retries documentation</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-resource-link">🔄 Account Updater learning path</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔐 Kount fraud prevention docs</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/user-roles-and-permissions" target="_blank" rel="noopener noreferrer" class="rc-resource-link">👤 User roles &amp; permissions</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
       </div>
     </div>
 
