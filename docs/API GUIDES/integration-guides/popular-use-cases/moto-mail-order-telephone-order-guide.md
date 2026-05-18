@@ -4,7 +4,7 @@ excerpt: >-
   If you maintain a back office of your own and want to submit transactions to
   Recurly that are MOTO classified, this is the guide for you!
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
