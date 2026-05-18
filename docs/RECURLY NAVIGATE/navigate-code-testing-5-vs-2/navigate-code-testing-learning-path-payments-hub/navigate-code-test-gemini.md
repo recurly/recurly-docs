@@ -113,7 +113,22 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* ── CARD GRIDS ── */
+/* ── CUSTOM SPLIT CARD (RESTORED) ── */
+.rc-split-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 8px 0 28px; }
+.rc-split-panel { padding: 24px 28px; display: flex; flex-direction: column; gap: 10px; }
+.rc-split-panel:first-child { background: var(--brightgray); border-right: 1px solid var(--lightgray); }
+.rc-split-panel:last-child { background: rgba(255,157,136,0.10); }
+.rc-split-label { font-size: .7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.rc-split-panel:first-child .rc-split-label { color: var(--gray); }
+.rc-split-panel:last-child .rc-split-label { color: var(--retain); }
+.rc-split-icon { font-size: 1.4rem; line-height: 1; }
+.rc-split-panel h4 { font-size: 1rem; font-weight: 800; margin: 0; line-height: 1.3; color: var(--offblack); }
+.rc-split-panel p { font-size: .9rem; line-height: 1.6; margin: 0; }
+.rc-split-panel:first-child p { color: var(--gray); }
+.rc-split-panel:last-child p { color: var(--darkgray); }
+
+/* ── TYPE SUBLABEL & CARD GRIDS ── */
+.rc-type-sublabel { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--darkgray); margin: 0 0 12px; }
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
 .rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
 .rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
@@ -121,7 +136,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-feature-icon { font-size: 1.4rem; line-height: 1; }
 .rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
 .rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-.rc-feature-tag { display: inline-block; margin-top: 4px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: var(--offblack); color: var(--yellow); width: fit-content; }
 
 /* ── NUMBERED STEPS ── */
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
@@ -182,6 +196,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; }
   .rc-stat-strip { grid-template-columns: 1fr; }
   .rc-next-grid { grid-template-columns: 1fr; }
+  
+  /* Split card specific responsive rule */
+  .rc-split-card { grid-template-columns: 1fr; } 
+  .rc-split-panel:first-child { border-right: none; border-bottom: 1px solid var(--lightgray); }
 }
 </style>
 
@@ -252,22 +270,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2>💳 What is it?</h2>
       <p>A proactive tool that resolves card lifecycle events before they trigger a decline — reducing involuntary churn and eliminating gateway fees on invalid accounts.</p>
 
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon">💳</div>
+      <div class="rc-split-card">
+        <div class="rc-split-panel">
+          <div class="rc-split-label">The Problem</div>
+          <div class="rc-split-icon">💳</div>
           <h4>Cards change. Charges fail.</h4>
           <p>When a customer's card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis, that charge will simply fail — even though the customer never cancelled.</p>
-          <span class="rc-feature-tag">The Problem</span>
         </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon">✅</div>
+        <div class="rc-split-panel">
+          <div class="rc-split-label">The Fix</div>
+          <div class="rc-split-icon">✅</div>
           <h4>Account Updater handles it automatically.</h4>
           <p>Visa, Mastercard, AMEX, and Discover push updated card details directly to Recurly. Recurly stores the fresh information so your next billing attempt uses the correct data — no action needed from your customer.</p>
-          <span class="rc-feature-tag">The Fix</span>
         </div>
       </div>
 
-      <div class="rc-card-title">Three ways it's delivered</div>
+      <p class="rc-type-sublabel">Three ways it's delivered</p>
+      
       <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
           <div class="rc-feature-icon">🔄</div>
