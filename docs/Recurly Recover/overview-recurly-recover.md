@@ -11,7 +11,7 @@ metadata:
 ### Prerequisites
 
 * An active Recurly account with an API key generated
-* A supported payment gateway configured (Stripe, Braintree, or CommerceHub)
+* One or more payment gateways configured
 * At least one retry window (dunning campaign) configured in your Recurly Admin UI
 
 ### Limitations
@@ -19,7 +19,6 @@ metadata:
 * Recurly Recover is designed for merchants who don't use Recurly for subscription management. It's not intended to work alongside Recurly Subscriptions
 * Accounts can only be created via the API — not through the Admin UI
 * Each successful API call creates one account with one invoice. Calling the API again with the same account code returns an error
-* Only Stripe, Braintree, and CommerceHub are supported payment gateways
 
 # Definition
 
@@ -47,17 +46,13 @@ Recurly Recover is a standalone retry engine that collects on past-due invoices 
 
 ## Step 1: Connect your payment gateway
 
-Recurly Recover supports Stripe, Braintree, and CommerceHub. You must connect at least one before submitting invoices.
+Recurly Recover supports multiple payment gateways. You must connect at least one before submitting invoices.
 
 1. In the Recurly Admin UI, go to **Configuration → Payment Gateways**.
-2. Select your gateway and follow the connection steps:
-   * **Stripe**: Connect via OAuth or enter a restricted API key. If a publishable key isn't required, a placeholder value is accepted.
-   * **Braintree**: Enter your merchant ID, public key, and private key.
-3. Note the **gateway code** assigned to each connection. You'll pass this value in API requests to route transactions to the correct gateway.
+2. Select your gateway in Recurly.
+   1. Note the **gateway code** assigned to each connection. You'll pass this value in API requests to route transactions to the correct gateway.
 
 If you need to route different card types or merchant category codes through separate gateway accounts (for example, multiple Stripe connections per merchant category code), you can add multiple connections for the same provider. Each connection gets a unique gateway code.
-
-For detailed setup instructions, see the [Stripe](/docs/stripe), [Braintree](/docs/braintree-rd), and [CommerceHub](/docs/commerce-hub#configuring-commerce-hub-gateway-in-recurly) documentation.
 
 ## Step 2: Configure a retry window
 
