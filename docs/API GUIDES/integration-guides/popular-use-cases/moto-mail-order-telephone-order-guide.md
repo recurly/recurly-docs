@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-This guide shows you how to use the <Anchor label="Purchase endpoint" target="_blank" href="https://developers.recurly.com/api/latest/#tag/purchase">Purchase endpoint</Anchor> to create new card transactions using the MOTO indicator via API. We’ll also illustrate how to do this via the Invoice Creation page in your Recurly Admin site.
+This guide shows you how to use the <Anchor label="Purchase endpoint" target="_blank" href="https://developers.recurly.com/api/latest/#tag/purchase">Purchase endpoint</Anchor> to create new card transactions using the MOTO indicator via API. 
 
 ### Prerequisites & limitations
 
