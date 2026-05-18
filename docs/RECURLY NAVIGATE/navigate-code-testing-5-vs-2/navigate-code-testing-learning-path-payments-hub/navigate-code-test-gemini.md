@@ -113,14 +113,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
-/* ── STAT STRIP ── */
-.rc-stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 0 0 32px; }
-.rc-stat-tile { padding: 24px 20px; text-align: center; }
-.rc-stat-tile + .rc-stat-tile { border-left: 1px solid var(--lightgray); }
-.rc-stat-tile-num { font-size: 2rem; font-weight: 800; color: var(--retain); line-height: 1; margin-bottom: 4px; }
-.rc-stat-tile-label { font-size: .7rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: var(--gray); margin-bottom: 10px; }
-.rc-stat-tile-context { font-size: .8rem; color: var(--darkgray); line-height: 1.5; padding-top: 10px; border-top: 1px solid var(--brightgray); }
-
 /* ── CARD GRIDS ── */
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
 .rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
@@ -130,15 +122,25 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
 .rc-feature-tag { display: inline-block; margin-top: 4px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: var(--offblack); color: var(--yellow); width: fit-content; }
 
-/* ── PRICING CARDS ── */
-.rc-pricing-card { border-radius: 10px; padding: 18px 22px; margin-bottom: 12px; border: 1px solid var(--lightgray); background: var(--offwhite); }
-.rc-pricing-card.rc-pricing-free { border-left: 4px solid #6ab187; }
-.rc-pricing-card.rc-pricing-paid { border-left: 4px solid var(--orange); }
-.rc-pricing-card h4 { font-size: .95rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; }
-.rc-pricing-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; }
-.rc-pricing-note { font-size: .85rem; color: var(--gray); text-align: center; margin-top: 14px; }
-.rc-pricing-note a { color: var(--orange); font-weight: 700; text-decoration: none !important; }
-.rc-pricing-note a:hover { text-decoration: underline !important; }
+/* ── NUMBERED STEPS ── */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
+
+/* ── ACCENT CARDS ── */
+.rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
+.rc-accent-card.rc-accent-orange { border-left: 4px solid var(--orange); }
+.rc-accent-card.rc-accent-retain { border-left: 4px solid var(--retain); }
+.rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 12px; }
+.rc-accent-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.65; margin: 0 0 10px; }
+.rc-accent-card p:last-child { margin: 0; }
+.rc-accent-card ul { font-size: .9rem; color: var(--gray); line-height: 1.75; padding-left: 20px; margin: 0; }
+.rc-accent-card ul li { margin-bottom: 4px; }
+.rc-accent-card ul li strong { color: var(--darkgray); }
+.rc-accent-card ul li em { color: var(--darkgray); font-style: normal; font-weight: 600; }
 
 /* ── CALLOUTS ── */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
@@ -149,6 +151,28 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
+.rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
+.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
+.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
+
+/* ── INTERACTIVE CHECKLIST ── */
+.rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
+.rc-checklist-header { padding: 14px 22px; background: var(--offblack); display: flex; align-items: center; gap: 10px; }
+.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow); margin: 0; }
+.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid var(--brightgray); display: flex; align-items: flex-start; gap: 14px; transition: background .15s; cursor: pointer; }
+.rc-checklist-item:last-child { border-bottom: none; }
+.rc-checklist-item:hover { background: var(--brightgray); }
+.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
+.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
+.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: var(--offblack); border-color: var(--offblack); }
+.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: var(--yellow); font-size: .75rem; font-weight: 800; line-height: 1; }
+.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: var(--gray); }
+.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(255,157,136,0.06); }
+.rc-checklist-text { flex: 1; }
+.rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: var(--offblack); display: block; margin-bottom: 2px; transition: color .18s; }
+.rc-checklist-text span { font-size: .8rem; color: var(--gray); line-height: 1.4; display: block; }
+.rc-checklist-footer { padding: 10px 22px; background: var(--brightgray); border-top: 1px solid var(--lightgray); font-size: .78rem; color: var(--gray); font-weight: 600; }
 
 /* ── PATH NAV BUTTONS ── */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
@@ -187,9 +211,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-oh-cta { padding: 24px 20px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; }
-  .rc-stat-strip { grid-template-columns: 1fr; }
-  .rc-next-grid { grid-template-columns: 1fr; }
+  .rc-card-grid { grid-template-columns: 1fr; }
 }
 </style>
 
@@ -214,9 +236,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Why Use It?</h1>
+        <h1>Things to Consider</h1>
       </div>
-      <p>Discover why Account Updater delivers outsized ROI — preventing involuntary churn, eliminating gateway fees, and protecting subscriber lifetime value before a single payment fails.</p>
+      <p>Confirm technical readiness by reviewing tokenization compatibility and understanding bank-level participation rules before you enable.</p>
       <div class="rc-hero-stats">
         <div class="rc-hero-stat">
           <div class="rc-hero-stat-num">77x</div>
@@ -243,10 +265,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
-            <a href="/docs/navigate-retain-account-updater-benefits" class="rc-sticky-link rc-sticky-link-active">
-              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Why use it?
+            <a href="/docs/navigate-retain-account-updater" class="rc-sticky-link">
+              <span class="rc-step-badge">1</span> Account Updater
             </a>
-            <a href="/docs/navigate-retain-account-updater-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> Things to consider</a>
+            <a href="/docs/navigate-retain-account-updater-benefits" class="rc-sticky-link">
+              <span class="rc-step-badge">2</span> Why use it?
+            </a>
+            <a href="/docs/navigate-retain-account-updater-considerations" class="rc-sticky-link rc-sticky-link-active">
+              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Things to consider
+            </a>
             <a href="/docs/navigate-retain-account-updater-enable" class="rc-sticky-link"><span class="rc-step-badge">3</span> How to enable it</a>
             <a href="/docs/navigate-retain-account-updater-data" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking impact</a>
             <a href="/docs/navigate-retain-account-updater-use-case" class="rc-sticky-link"><span class="rc-step-badge">5</span> Pitch to leadership</a>
@@ -259,85 +286,134 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <div class="rc-lp-section">
-      <h2>📈 The case for Account Updater</h2>
-      <p>Involuntary churn is a preventable source of subscriber loss. AU acts before a charge occurs — serving as your first line of defense. When a card is reissued, the subscriber rarely thinks to update it. Account Updater catches participating changes silently, preserving both revenue and the relationship.</p>
-
-      <div class="rc-stat-strip">
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">77x</div>
-          <div class="rc-stat-tile-label">Average ROI</div>
-          <div class="rc-stat-tile-context">For every $1 spent on AU, Recurly merchants recover an average of $77 in revenue.</div>
-        </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">18%</div>
-          <div class="rc-stat-tile-label">Of recovered revenue</div>
-          <div class="rc-stat-tile-context">Nearly 1 in 5 dollars recovered across Recurly's network is directly attributed to AU.</div>
-        </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">96M+</div>
-          <div class="rc-stat-tile-label">Card updates in 2025</div>
-          <div class="rc-stat-tile-context">Recurly processed over 96 million card updates in 2025 — each one a prevented churn event.</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="rc-lp-section">
-      <h2>💼 Key business benefits</h2>
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon">🛡️</div>
-          <h4>Prevent involuntary churn upstream</h4>
-          <p>AU acts before the charge occurs — your first line of defense for eligible card types. No failed payment, no dunning, no churn.</p>
-          <span class="rc-feature-tag">Proactive Recovery</span>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon">💸</div>
-          <h4>Significant cost avoidance</h4>
-          <p>By identifying closed or invalid accounts before an attempt, AU helps you avoid gateway transaction fees on charges that would never succeed.</p>
-          <span class="rc-feature-tag">Lower OpEx</span>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon">🤝</div>
-          <h4>Seamless subscriber experience</h4>
-          <p>No intrusive emails, no update prompts for participating cardholders. The card transition happens silently in the vault — invisible to your customer.</p>
-          <span class="rc-feature-tag">CX Improvement</span>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon">🔁</div>
-          <h4>Accelerates active dunning</h4>
-          <p>If a card updates during an active dunning cycle, Recurly automatically uses the new information on the next retry — increasing recovery rates mid-cycle.</p>
-          <span class="rc-feature-tag">Integrated Logic</span>
-        </div>
-      </div>
-
+      <h2>🔍 Is Account Updater right for you?</h2>
+      
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon">💡</div>
         <div class="rc-callout-body">
-          <strong>Think about the lifetime value</strong>
-          <p>When a card updates successfully, you aren't just saving one invoice — you're securing the entire future revenue stream for that subscriber.</p>
+          <strong>Good news: Most merchants are already set up</strong>
+          <p>For the majority of Recurly customers, enabling AU is a simple configuration toggle. Recurly's Real-Time Account Updater (RTAU) now covers major networks globally — including AMEX and Discover — on supported gateways.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-section">
-      <h2>💰 Pricing considerations</h2>
-      <p>How AU is priced depends on your Recurly contract and the specific update method (Batch vs. RTAU).</p>
+      <h2>🔑 Key questions to ask before you enable</h2>
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>How are you tokenizing payment data?</h4>
+            <p>Recurly AU works seamlessly with Recurly.js and Recurly-hosted checkouts. If you use external gateway tokenization, Recurly can still run AU as long as the token is managed within the Recurly vault.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Is your gateway already running AU?</h4>
+            <p>Running AU in both Recurly and your gateway can be redundant. However, many merchants choose to run Recurly AU alongside gateway RTAU to ensure coverage across all regions and card networks.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Are you an American Express merchant?</h4>
+            <p>Modern RTAU now handles AMEX globally for many gateways. Legacy "Cardrefresher" is only required for specific direct-AMEX configurations and is generally not needed for new integrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="rc-pricing-card rc-pricing-free">
-        <h4>✅ Included in your contract</h4>
-        <p>Many plans bundle standard Batch AU at no additional per-update cost.</p>
+    <div class="rc-lp-section">
+      <h2>⚠️ Network &amp; issuer limitations</h2>
+      <p>AU is highly effective, but success is subject to card network participation rules. A card may not update due to any of the following:</p>
+
+      <div class="rc-accent-card rc-accent-orange">
+        <ul>
+          <li><strong>Bank participation:</strong> Not all global issuing banks participate in the automated update network.</li>
+          <li><strong>Card type exclusions:</strong> Prepaid cards and certain specialized debit cards are typically ineligible for automated updates.</li>
+          <li><strong>Closed accounts:</strong> Updates are only available for <em>replacement</em> cards. If a customer closes an account entirely, no new data is generated.</li>
+          <li><strong>Visa opt-out:</strong> Some Visa issuers allow cardholders to manually opt out of sharing updated details with merchants.</li>
+        </ul>
       </div>
-      <div class="rc-pricing-card rc-pricing-paid">
-        <h4>💳 Usage-based updates</h4>
-        <p>Some configurations apply fees for successful updates. The cost is typically a fraction of the recovered subscriber lifetime value.</p>
+
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon">⚠️</div>
+        <div class="rc-callout-body">
+          <strong>Stored billing info required</strong>
+          <p>Account Updater requires a Billing Info object to exist in the Recurly vault. It will not run on guest checkouts where card details are not saved for future use.</p>
+        </div>
       </div>
-      <p class="rc-pricing-note"><strong>Not sure which model applies to you?</strong> <a href="mailto:support@recurly.com">Contact Recurly Support</a> to review your contract details.</p>
+
+      <div class="rc-accent-card rc-accent-retain">
+        <h4>📋 A note on Adyen users</h4>
+        <p>Recurly supports a dedicated Adyen RTAU integration. For maximum efficiency, we recommend enabling both Adyen RTAU and Recurly AU to ensure comprehensive global coverage across all regions and card networks.</p>
+      </div>
+    </div>
+
+    <div class="rc-lp-section">
+      <h2>⚡ Quick diagnostic</h2>
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon">✅</div>
+          <h4>Enable AU in Recurly if…</h4>
+          <p>You have credit/debit cards stored in the Recurly vault and want to proactively ensure they remain valid, regardless of gateway-level services.</p>
+          <span class="rc-feature-tag">Recommended</span>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon">🔀</div>
+          <h4>Check gateway config if…</h4>
+          <p>You are using a third-party hosted checkout that does not pass card metadata or tokens back to Recurly for storage in the vault.</p>
+          <span class="rc-feature-tag">Gateway Focus</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="rc-lp-section">
+      <h2>✅ Pre-enablement checklist</h2>
+      <p>Work through these before moving to the next step. Check each item off as you confirm it.</p>
+
+      <div class="rc-checklist" id="rcChecklist">
+        <div class="rc-checklist-header">
+          <span style="font-size: 1rem;">✅</span>
+          <h4>Before you enable</h4>
+        </div>
+
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Stored billing info exists in the Recurly vault</strong>
+            <span>Credit/debit tokens and raw cards are both eligible</span>
+          </div>
+        </label>
+
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Identified whether you need Cardrefresher or modern RTAU</strong>
+            <span>RTAU is preferred for global AMEX support on new integrations</span>
+          </div>
+        </label>
+
+        <label class="rc-checklist-item">
+          <input type="checkbox">
+          <div class="rc-checkbox-box"></div>
+          <div class="rc-checklist-text">
+            <strong>Coordinated with payment ops to avoid overlapping gateway fees</strong>
+            <span>Verify whether your gateway's AU is "Always On" by default</span>
+          </div>
+        </label>
+
+        <div class="rc-checklist-footer">✓ Tap each item to mark it complete</div>
+      </div>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="/docs/navigate-retain-account-updater" class="rc-btn-prev">← Account Updater</a>
-      <span class="rc-lp-nav-indicator">2 of 6</span>
-      <a href="/docs/navigate-retain-account-updater-considerations" class="rc-btn-path">Next: Things to consider →</a>
+      <a href="/docs/navigate-retain-account-updater-benefits" class="rc-btn-prev">← Why use it?</a>
+      <span class="rc-lp-nav-indicator">3 of 6</span>
+      <a href="/docs/navigate-retain-account-updater-enable" class="rc-btn-path">Next: How to enable it →</a>
     </div>
 
     <div class="rc-resources">
