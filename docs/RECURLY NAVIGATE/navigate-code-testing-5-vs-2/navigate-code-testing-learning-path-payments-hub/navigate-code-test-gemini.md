@@ -95,13 +95,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
 .rc-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.75; margin: 0; }
 
-/* Card grid — 2-col */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
-.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: #FF5810; box-shadow: 0 4px 16px rgba(255,88,16,0.15); transform: translateY(-2px); }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-
 /* Callouts */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout + .rc-callout { margin-top: 12px; }
@@ -113,6 +106,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide .rc-callout-body a:hover { text-decoration: underline !important; }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
+.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
+.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
 
 /* Checklist — pure CSS, no JS */
 .rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
@@ -175,7 +170,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-oh-cta { padding: 24px 20px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-card-grid { grid-template-columns: 1fr; }
 }
 </style>
 
@@ -199,8 +193,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale">
         Scale
       </div>
-      <div class="rc-lp-hero-title"><h1>Payment Processing Dashboard</h1></div>
-      <p>Payment Processing is where you find out why payments are failing — broken down by gateway, payment method, card BIN, and decline reason.</p>
+      <div class="rc-lp-hero-title"><h1>Account Updater Dashboard</h1></div>
+      <p>The Account Updater dashboard shows you how much revenue was protected through proactive, automatic card updates — before those payments ever had a chance to fail.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -210,10 +204,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link"><span class="rc-step-badge">1</span> Overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Payment processing
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link"><span class="rc-step-badge">2</span> Payment processing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Account updater
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account updater</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link"><span class="rc-step-badge">4</span> Payment retry recovery</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Fraud prevention</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
@@ -224,21 +218,29 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <div class="rc-lp-section">
-      <h2>💳 Payment processing</h2>
-      <p>A deep-dive into your payment success rates and decline patterns. This is the most actionable dashboard in Payments Hub — it tells you not just what is happening, but where and why.</p>
+      <h2>🔄 Account Updater dashboard</h2>
+      <p>The Account Updater dashboard shows you how much revenue was protected through proactive, automatic card updates — before those payments ever had a chance to fail.</p>
 
       <img class="rc-screenshot"
-           src="https://files.readme.io/797edff5c7b5d67b57de4d423e0e3ae316718ade98ace4da29bc28b5e6af1ed8-Payments_processing_dashboard.png"
-           alt="Payment Processing dashboard" />
+           src="https://files.readme.io/2e488cefdf0e0cbbac44170f4774480b23c60e9445a66061c27f83f040bccf4c-Account_Updater_Dashboard.png"
+           alt="Account Updater dashboard overview" />
 
-      <h2>🎬 Payment Processing Walkthrough</h2>
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon">⚠️</div>
+        <div class="rc-callout-body">
+          <strong>Not seeing Account Updater data?</strong>
+          <p>This dashboard requires Account Updater to be enabled on your Recurly site. If you see no data or a "Learn More" prompt, Account Updater may not be active for your account. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater">Learn about Account Updater →</a></p>
+        </div>
+      </div>
+
+      <h2>🎬 Account Updater Walkthrough</h2>
 
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Payment Processing dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="about:blank" loading="lazy" title="Payments Hub: Account Updater dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
-        <div class="rc-step-video-caption">A walkthrough of the Payment Processing dashboard — success rates, gateway comparison, BIN analysis, and decline reason breakdown.</div>
+        <div class="rc-step-video-caption">A walkthrough of the Account Updater dashboard — card update volume, update types, and revenue protected.</div>
       </div>
     </div>
 
@@ -247,82 +249,51 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-card">
         <p>
-          <strong>Overall success rate + trend</strong> — Your blended success rate across all transaction types, with a time-series chart showing how it has moved over the period.<br><br>
-          <strong>Payment method distribution</strong> — How transactions are split across your payment methods.<br><br>
-          <strong>Gateway success rates</strong> — Side-by-side comparison of authorization rates per connected gateway. Useful for spotting underperforming routing paths.<br><br>
-          <strong>Payment method success rates</strong> — Success rate per payment method, independent of gateway.<br><br>
-          <strong>Card BIN success rates</strong> — Success rates broken down by card BIN (the first 6 digits of a card number). Identifies specific card issuers with high decline rates.<br><br>
-          <strong>Payment decline reasons</strong> — A ranked table of your top decline reasons, categorized as hard or soft, with transaction count and volume.
+          <strong>Successful card updates</strong> — Total number of cards successfully updated in the period, with comparison to previous period.<br><br>
+          <strong>Successful updates over time</strong> — A line chart showing the daily count of card updates. A sudden drop may signal an issue worth investigating.<br><br>
+          <strong>Payments authorized on updated cards</strong> — The total payment volume authorized on updated cards — this includes cards that were updated prior to the time period in view.<br><br>
+          <strong>Successful payments over time</strong> — A bar chart showing the revenue volume on updated cards by day.<br><br>
+          <strong>Update type</strong> — A breakdown of card number changes vs. expiration date updates. Card number changes carry more disruption risk; expiry updates are more routine.<br><br>
+          <strong>Updates by card type</strong> — Which card networks (Visa, Mastercard, Amex, Discover) are driving the most update activity.
         </p>
-      </div>
-    </div>
-
-    <div class="rc-lp-section">
-      <h2>🔍 Key concepts to know</h2>
-
-      <div class="rc-card-grid">
-        <div class="rc-feature-card">
-          <h4>What is a card BIN?</h4>
-          <p>BIN stands for Bank Identification Number — the first 6 digits of a card. It identifies the issuing bank and card type. If a specific BIN has a very low success rate, it may indicate a problem with a particular bank's authorization behavior. You may be able to block that BIN via your gateway settings.</p>
-        </div>
-        <div class="rc-feature-card">
-          <h4>Hard vs. soft declines</h4>
-          <p>A <strong>soft decline</strong> is potentially recoverable — the card may succeed if retried at a different time (e.g., insufficient funds). A <strong>hard decline</strong> requires intervention — the payment won't succeed without a change like a new card (e.g., invalid card number). Knowing which type you're dealing with determines your next step.</p>
-        </div>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon">💡</div>
         <div class="rc-callout-body">
-          <strong>A note on data precision</strong>
-          <p>Payment Processing shows data at the payment level — what's happening "on the wire." This is more granular than your standard Recurly billing dashboard, which includes dunning and subscriber re-entries. Some numbers may look slightly different between dashboards. Both are correct — they're measuring different things.</p>
-        </div>
-      </div>
-
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon">🔗</div>
-        <div class="rc-callout-body">
-          <strong>Understanding your decline codes</strong>
-          <p>Not sure what a specific decline message means? This reference doc explains the most common codes and how Recurly responds to each. <a href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank" rel="noopener noreferrer">Read about decline codes →</a></p>
+          <strong>What to look for in Update Type</strong>
+          <p>A card number change means the subscriber received an entirely new card — often due to fraud or bank migration. These carry more risk than an expiry update because the old number is fully invalid. If you see a high proportion of card number changes, it may indicate a fraud event at a major issuer affecting your subscriber base.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-section">
-      <h2>✅ Activity: Explore Payment Processing</h2>
+      <h2>✅ Activity: Explore Account Updater</h2>
 
       <div class="rc-checklist" id="rcChecklist">
-        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Payment processing activity</h4></div>
+        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Account updater activity</h4></div>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>How has your payment success rate trended over the last 30 days? Is it improving or declining?</strong>
-            <span>Use the success rate trend chart at the top of the page</span>
+            <strong>How much revenue was authorized on updated cards in the last 30 days?</strong>
+            <span>This is the revenue you would have likely lost without Account Updater running in the background</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Look at gateway success rates. Is there a gateway performing significantly better or worse than the others?</strong>
-            <span>A large gap between gateways may indicate a routing opportunity</span>
+            <strong>Look at the Update Type chart. What percentage of your updates are card number changes vs. expiry updates?</strong>
+            <span>A high proportion of card number changes may indicate a recent fraud event at an issuer</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Scroll to the card BIN success rates. Is there a BIN with a shockingly low success rate?</strong>
-            <span>Consider discussing with your gateway whether that BIN can be blocked</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Check the decline reasons table. What is your top decline reason? Is it a hard or soft decline?</strong>
-            <span>Soft declines may be recoverable through retries — hard declines need a different approach</span>
+            <strong>Check Updates by Card Type. Which card network is generating the most update activity?</strong>
+            <span>A small number of updates for a lesser-used card brand is normal — zero updates could indicate a problem</span>
           </div>
         </label>
         <div class="rc-checklist-footer">✓ Tap each item to mark it complete</div>
@@ -330,22 +301,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <div class="rc-oh-cta">
-      <h4>🗓️ Questions about your decline data?</h4>
-      <p>Bring your Payment Processing questions to <strong>Global Office Hours</strong>. Our CSMs can help you interpret your decline patterns and identify the best next steps for your specific setup.</p>
+      <h4>🗓️ Not using Account Updater yet?</h4>
+      <p>Join <strong>Global Office Hours</strong> to talk with a CSM about whether Account Updater is right for your business and how to get it enabled. It's one of the most impactful, proactive revenue recovery tools available to Recurly merchants.</p>
       <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-btn-prev">← Overview</a>
-      <span class="rc-lp-nav-indicator">2 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-btn-path">Next: Account updater →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-btn-prev">← Payment processing</a>
+      <span class="rc-lp-nav-indicator">3 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-btn-path">Next: Payment retry recovery →</a>
     </div>
 
     <div class="rc-resources">
       <h3>📚 Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-processing" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Payment processing</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📝 Decline messages documentation</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-resource-link">📚 Navigate: Account Updater learning path</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
         <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🌐 Join Global Office Hours</a>
       </div>
