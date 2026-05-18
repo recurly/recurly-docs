@@ -20,6 +20,7 @@ This guide shows you how to use the <Anchor label="Purchase endpoint" target="_b
 * If running MOTO transactions via the UI:
   * [Invoice Management](https://docs.recurly.com/recurly-subscriptions/docs/invoice-management#/)
 * A MOTO supported gateway account with Cards enabled
+* Ensure you've spoken with your gateway and have enabled MOTO at that level
 
 ***
 
