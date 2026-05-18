@@ -93,7 +93,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* Card */
 .rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
-.rc-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.75; margin: 0; }
+.rc-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.75; margin: 0 0 12px; }
+.rc-card p:last-child { margin-bottom: 0; }
 
 /* Callouts */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
@@ -106,8 +107,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide .rc-callout-body a:hover { text-decoration: underline !important; }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
-.rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
+.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
+.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
 
 /* Checklist — pure CSS, no JS */
 .rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
@@ -193,8 +194,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale">
         Scale
       </div>
-      <div class="rc-lp-hero-title"><h1>Payment Retry Recovery Dashboard</h1></div>
-      <p>The Payment Retry Recovery dashboard shows how much initially failed revenue was recovered on subsequent payment attempts — and at which attempt it was captured.</p>
+      <div class="rc-lp-hero-title"><h1>Fraud Prevention Dashboard</h1></div>
+      <p>The Fraud Prevention dashboard gives Kount-enabled merchants a real-time view of blocked transactions and risk score trends — so you can spot and respond to fraud pressure early.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
@@ -206,10 +207,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-overview" class="rc-sticky-link"><span class="rc-step-badge">1</span> Overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-processing" class="rc-sticky-link"><span class="rc-step-badge">2</span> Payment processing</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account updater</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Payment retry recovery
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-sticky-link"><span class="rc-step-badge">4</span> Payment retry recovery</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Fraud prevention
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-sticky-link"><span class="rc-step-badge">5</span> Fraud prevention</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
@@ -218,21 +219,29 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <div class="rc-lp-section">
-      <h2>🔁 Payment retries</h2>
-      <p>When a payment fails on the first attempt, Recurly's intelligent retry logic works to recover it. This dashboard shows you how much revenue that recovery effort is capturing — and the story behind each retry attempt.</p>
+      <h2>🛡️ Fraud prevention</h2>
+      <p>For merchants using Kount, this dashboard consolidates your fraud blocking activity and risk score data into a single view — making it easy to monitor trends and act before fraud pressure escalates.</p>
 
       <img class="rc-screenshot"
-           src="https://files.readme.io/dd846483711337200d1b60b8f6e3d4cfc3b778110e986a4b7380e492093a5dc3-Payment_Retry_Recovery.png"
-           alt="Payment Retry Recovery dashboard" />
+           src="https://files.readme.io/44645be7caeb3412eb2d65f1627ede0c4115b23b8a52d57250bf66992fe46933-Fraud_Prevention_Dashboard.png"
+           alt="Fraud Prevention dashboard" />
 
-      <h2>🎬 Payment Retry Recovery Walkthrough</h2>
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon">⚠️</div>
+        <div class="rc-callout-body">
+          <strong>Kount required</strong>
+          <p>This dashboard only shows data if Kount is enabled on your Recurly site. If you see a blank dashboard or "Learn More" prompt, Kount is not yet active for your account. <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer">Learn about Kount →</a></p>
+        </div>
+      </div>
+
+      <h2>🎬 Fraud Prevention Walkthrough</h2>
 
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Payment Retry Recovery dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="about:blank" loading="lazy" title="Payments Hub: Fraud Prevention dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
-        <div class="rc-step-video-caption">A walkthrough of the Payment Retry Recovery dashboard — recovered transactions, revenue at risk, recovery rate, and success by retry attempt.</div>
+        <div class="rc-step-video-caption">A walkthrough of the Fraud Prevention dashboard — blocked transactions, risk score trends, and breakdown by payment method and gateway.</div>
       </div>
     </div>
 
@@ -241,68 +250,60 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-card">
         <p>
-          <strong>Recovered transactions</strong> — Total count of payments successfully recovered through retries in the period.<br><br>
-          <strong>Payment recovery over time</strong> — A trend line showing recovered transaction volume by day.<br><br>
-          <strong>Retry attempts</strong> — Total number of retry attempts made in the period (a single transaction may be retried multiple times).<br><br>
-          <strong>Revenue at risk</strong> — The total value of invoices attached to a dunning campaign whose first payment attempt failed. This is the pool of revenue eligible for recovery on subsequent attempts.<br><br>
-          <strong>Payment retry recovered revenue</strong> — The dollar value successfully collected on the second or later payment attempt.<br><br>
-          <strong>Recovery rate</strong> — The percentage of revenue at risk that was successfully recovered.<br><br>
-          <strong>Success by retry attempt number</strong> — A chart showing which retry attempt (1st, 2nd, 3rd...) actually captured the payment. Most payments are recovered within the first several attempts.
+          <strong>Transactions blocked (fraud)</strong> — Total count of transactions Kount flagged and blocked in the period, with comparison to the previous period.<br><br>
+          <strong>Blocked transactions over time</strong> — A line chart tracking daily blocked transaction count. Sudden spikes are an early signal of an active fraud attack.<br><br>
+          <strong>Average risk score</strong> — The mean Kount risk score assigned to transactions in the period. <strong>Lower scores indicate higher risk.</strong> A falling average score often precedes an increase in blocked transactions — giving you a window to act proactively.<br><br>
+          <strong>Average risk score over time</strong> — Tracks your daily average risk score. Use this as an early warning system. A downward trend here usually comes before a spike in blocks.<br><br>
+          <strong>Fraud by payment method</strong> — A breakdown of blocked transactions by payment method. This helps you understand where fraud attempts are concentrating.<br><br>
+          <strong>Blocked transactions by gateway</strong> — A bar chart showing fraud-blocked volume per gateway.
         </p>
       </div>
+    </div>
 
-      <div class="rc-callout rc-callout-warning">
-        <div class="rc-callout-icon">⚠️</div>
-        <div class="rc-callout-body">
-          <strong>Important: retries vs. dunning</strong>
-          <p>This dashboard counts <strong>all successful payments on attempt 2+ as recovered</strong>, regardless of mechanism. The main Analytics dunning dashboards break recovery into named buckets (retry, Account Updater, backup payment, customer card updates, etc.) and may apply different filters. For example, some exclude manual dunning campaigns or include first-attempt successes in their totals. The numbers will not always match.<br><br><strong>This dashboard is the simplest view of "how much failed revenue did we eventually collect."</strong></p>
-        </div>
+    <div class="rc-lp-section">
+      <h2>🔍 Understanding the risk score</h2>
+
+      <div class="rc-card">
+        <p>Kount assigns every transaction a risk score between 0 and 99.9. <strong>Lower scores indicate higher risk.</strong> A score near 0 means Kount has flagged the transaction as very likely fraudulent. Scores near 99.9 indicate low risk.</p>
+        <p>Your Kount rules determine the thresholds — a score below a certain level triggers a block, while scores in a middle range may require additional authentication. The exact thresholds depend on how your Kount rules are configured. Contact your Kount representative if you have questions about where your thresholds are set.</p>
       </div>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon">💡</div>
         <div class="rc-callout-body">
-          <strong>What the retry attempt chart tells you</strong>
-          <p>The "Success by Retry Attempt Number" chart is one of the most useful views in Payments Hub. It shows the distribution of which retry number is capturing the payment. For most merchants, the bulk of recoveries happen within the first 10 attempts — which validates that your dunning timeline is appropriate and that recovery is working as expected.</p>
+          <strong>Use the risk score trend as an early warning</strong>
+          <p>Don't wait for blocked transactions to spike before investigating. The Average Risk Score Over Time chart is your leading indicator. If you see the average score falling over several days — even if blocked transactions haven't spiked yet — it's worth reviewing your Kount rules and reaching out to your Kount representative.</p>
         </div>
       </div>
     </div>
 
     <div class="rc-lp-section">
-      <h2>✅ Activity: Explore Payment Retry Recovery</h2>
+      <h2>✅ Activity: Explore Fraud Prevention</h2>
 
       <div class="rc-checklist" id="rcChecklist">
-        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Payment retries activity</h4></div>
+        <div class="rc-checklist-header"><span style="font-size:1rem;">✅</span><h4>Fraud prevention activity</h4></div>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>What is your current recovery rate?</strong>
-            <span>This number may differ from the recovery figure in your main Analytics dunning dashboards — they apply different definitions of recovered revenue</span>
+            <strong>What is your current average risk score? Is it trending up, down, or stable over the period?</strong>
+            <span>A falling trend is your early warning signal — act before blocked transactions spike</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Compare your recovered revenue to your revenue at risk. What percentage is being saved?</strong>
-            <span>Revenue at risk = all initial payment failures. Recovered revenue = what retries captured from that pool.</span>
+            <strong>Look at fraud by payment method. Which payment method has the highest concentration of blocked transactions?</strong>
+            <span>This tells you where fraud attempts are focusing — and may inform where to add friction or tighten rules</span>
           </div>
         </label>
         <label class="rc-checklist-item">
           <input type="checkbox">
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
-            <strong>Look at the Success by Retry Attempt chart. At which attempt number do most of your recoveries happen?</strong>
-            <span>If most payments are capturing very late (attempt 15+), your dunning timeline may benefit from adjustment</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Open your main Analytics dunning dashboard and note the overall recovery number. How does it compare to the number here?</strong>
-            <span>The two won't always match — Analytics dashboards apply different definitions, including some that count first-attempt successes</span>
+            <strong>Check Blocked Transactions by Gateway. Is fraud pressure concentrated on a specific gateway?</strong>
+            <span>If one gateway shows significantly more blocks, it may indicate a routing or rule configuration worth reviewing</span>
           </div>
         </label>
         <div class="rc-checklist-footer">✓ Tap each item to mark it complete</div>
@@ -310,22 +311,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <div class="rc-oh-cta">
-      <h4>🗓️ Want to optimize your retry strategy?</h4>
-      <p>Join <strong>Global Office Hours</strong> to talk through your retry recovery data with a CSM. We can help you understand what your numbers mean in context and identify opportunities to improve.</p>
+      <h4>🗓️ Questions about Kount or fraud settings?</h4>
+      <p>Join <strong>Global Office Hours</strong> to talk through your Fraud Prevention dashboard with a Recurly CSM. Whether you're new to Kount or looking to optimize your rules, we're here to help.</p>
       <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-account-updater" class="rc-btn-prev">← Account updater</a>
-      <span class="rc-lp-nav-indicator">4 of 6</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-fraud-prevention" class="rc-btn-path">Next: Fraud prevention →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-payment-retries" class="rc-btn-prev">← Payment retry recovery</a>
+      <span class="rc-lp-nav-indicator">5 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale-payments-hub-review-resources" class="rc-btn-path">Next: Review &amp; resources →</a>
     </div>
 
     <div class="rc-resources">
       <h3>📚 Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-payment-retry-recovery" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Payment retry recovery</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/retry-logic" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔁 Recurly Docs: Intelligent retries</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/payments-hub-fraud-prevention" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Fraud prevention dashboard</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/kount" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🔐 Recurly Docs: Kount integration</a>
+        <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🎤 Payments Hub walkthrough (on demand)</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Recurly Support</a>
         <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🌐 Join Global Office Hours</a>
       </div>
