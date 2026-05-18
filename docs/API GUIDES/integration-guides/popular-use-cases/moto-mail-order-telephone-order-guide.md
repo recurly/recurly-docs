@@ -15,9 +15,9 @@ This guide shows you how to use the <Anchor label="Purchase endpoint" target="_b
 ### Prerequisites & limitations
 
 * Familiarity with Recurly’s API or Merchant UI.
-* If integrating via API: 
+* If integrating via API:
   * <Anchor label="Completed the Quickstart Guide" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide#/">Completed the Quickstart Guide</Anchor>
-* If running MOTO transactions via the UI: 
+* If running MOTO transactions via the UI:
   * [Invoice Management](https://docs.recurly.com/recurly-subscriptions/docs/invoice-management#/)
 * A MOTO supported gateway account with Cards enabled
 
@@ -27,46 +27,34 @@ This guide shows you how to use the <Anchor label="Purchase endpoint" target="_b
 
 **Creating Purchases** refers to the process of generating new customer accounts alongside subscriptions in a single, consolidated call to the Recurly Purchase endpoint. This streamlines checkout experiences by bundling all required resources into one request.
 
+**MOTO** refers to a "mail order' or "telephone' order style purchase where the customers has called into a business and the merchant employee submits a payment on the customers behalf, such as paying a bill.
+
 ***
 
 # Creating purchases
 
-## Step 1: Generate a Mercado Pago Payment Request
+## Step 1: Setup your purchase request
 
-Use a supported client library or our  `type`  payment field in your front-end code. Our client libraries help you build out our APIs easily and process transactions faster. To specify Mercado Pago, set your `type` enum to `mercadopago`and ensure you are passing the required fields.
-
-See our <Anchor label="Mercado Pago documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/">Mercado Pago documentation</Anchor> for details on all required fields.
+When attempting to use MOTO, the only thing you need to add to your payload is the `transaction_type` parameter, and send your value as `moto`. 
 
 **Send** a request to the `create_purchase` method on Recurly’s API, including:
 
 * **Customer account data** (e.g., code, name, billing info, phone number, email address)
-* **Subscriptions** (with plan codes)
-* **Type** of payment method. In this case, `mercadopago`.
+* **Line Items** (with item codes or specific information)
+* **Transaction Type** of payment method. In this case, `moto`.
+* **Omit** Subscription codes. These should not be handles as MOTO where possible.
 
 Below are example calls in different languages:
 
 ```ruby
 purchase = {
-  currency: "BRL",
+  currency: "USD",
+  transaction_type: "moto",
   account: {
-    code: "bdumonde",
-    first_name: "Benjamin",
-    last_name: "Du Monde",
-    email: "bdumonde@example.com",
-    billing_info: {
-      address: {
-      street1: "Avenida Nipo-brasileira 1007",
-      city: "Braganca Paulista",
-      region: "BR",
-      postal_code: "123456",
-      country: "BR",
-      phone: "1234679099"
-			}
-    },
-    type: "mercadopago"
+    code: "Account-Code"
   },
-  subscriptions: [
-    { plan_code: "coffee-monthly" }
+  line_items: [
+    <line item details>
   ]
 }
 invoice_collection = @client.create_purchase(body: purchase)
@@ -182,100 +170,41 @@ InvoiceCollection collection = client.CreatePurchase(purchaseReq);
 
 > **Tip:** Many more parameters are available. See the <Anchor label="Create Purchase" target="_blank" href="https://developers.recurly.com/api/latest/#operation/create_purchase">Create Purchase</Anchor> reference to learn more.
 
-***
-
-## Step 2: Obtain the token from the response
-
-Upon submitting your API request you will receive a response that looks like this:
-
-```json
-{
-    "error": {
-        "type": "transaction",
-        "message": "Your card must be authenticated with 3-D Secure before continuing.",
-        "transaction_error": {
-            "object": "transaction_error",
-            "transaction_id": "xt43lgkyc7s4",
-            "category": "three_d_secure_action_required",
-            "code": "three_d_secure_action_required",
-            "decline_code": null,
-            "message": "Your card must be authenticated with 3-D Secure before continuing.",
-            "merchant_advice": "Your payment gateway is requesting that the transaction be completed with 3-D Secure.",
-            "three_d_secure_action_token_id": "kFzyWEnvBZ82pccJwGiMag",
-            "fraud_info": null
-        }
-    }
-}
-```
-
-Mercado Pago requires consumer authentication, and so interacting with Recurly.js is necessary to allow consumers to authenticate their identity and authorize payments in their mobile apps. You will need to use the   `three_d_secure_action_token_id`value to render the modal for this process.
-
-This initial call will return different behavior in production than in sandbox.
-
-***
-
-## Step 3: Interact with Recurly.js
-
-You can follow along in our 3DS Redirect Guide, starting at **Step 3**: [Recurly.js Token-ID Redirect Guide]([https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew](https://docs.recurly.com/recurly-subscriptions/docs/3d-secure-20-integration-guide#/step-3-process-the-responsew).
-
-***
-
-## Step 4: Submit a new Purchase request
-
-Once the user has interacted with the modal, and you have a `three_d_secure_action_result_token_id`from Recurly.js, you must resubmit your original request with the results token ID.
-
-Use the `three_d_secure_action_result_token_id` from **Step 3** in a new API call (e.g., Create Purchase) to finalize authentication. The account/billing info must match the original request. Changing these details may cause a token mismatch error.
+<br />
 
 You JSON payload may look like this:
 
 ```json
 {
-    "subscriptions": [
-		{
-			"plan_code": "monthly-plan" 
-
-		}
-	],
-    "account": {
-        "code": "maddams",
-        "email":"maddams@recurly.com",
-        "billing_info": {
-            "first_name":"M",
-            "last_name":"Addams",
-            "address":{
-                "street1":"Avenida Nipo-brasileira 1007",
-                "city":"Braganca Paulista",
-                "region":"BR",
-                "postal_code":"12902-020",
-                "country":"BR",
-                "phone":"123456790"
-            },
-            "type":"mercadopago",
-            "three_d_secure_action_result_token_id":"action-result-id"
-        }
-    },
-    "currency": "BRL"
+  "currency": "USD",
+  "account": {
+    "code": "<account-code>"
+  },
+  "line_items": [
+    {
+      "unit_amount": "7.00",
+      "quantity": 1,
+      "description": "CIT Physical Charge + Tax",
+      "type": "charge",
+      "tax_code": "physical",
+      "product_code": "1001",
+      "tax_exempt": false
+    }
+  ],
+  "transaction_type": "moto"
 }
 ```
 
 ***
 
-## Step 4: Verify and finish
+## Step 2: Verify and finish
 
 After a successful purchase, you can confirm the details via the Recurly Admin UI or by calling Recurly’s API to list your new account, subscription, or invoice.
-
-***
-
-## Step 5: Listen for webhooks
-
-After a successful signup, there will be several webhooks you should listen to in order to ensure you are enabling access to features on in your environment, and disabling access should a consumer decide to cancel their subscription from within their mobile banking applicaiton.
-
-## Sandbox behavior
-
-In Sandbox, the modal will display the Ebanx specific sandbox UI, and manually pressing buttons to simulate proper enrollments is required. You can submit accepted enrollments as well as deny or decline enrollments in sandbox.
 
 ***
 
 ## Next steps
 
 Now that you can create new  [subscriptions](https://app.recurly.com/go/subscriptions), explore payment method guide to explore other use cases and limitations related to the [Mercado Pago payment method](https://docs.recurly.com/recurly-subscriptions/docs/mercadopago#/).
+
+<br />
