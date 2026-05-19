@@ -434,36 +434,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans-configure" class="rc-btn-prev">← Configure</a>
       <span class="rc-lp-nav-indicator">3 of 3 · Plans</span>
-      <span class="rc-btn-complete">🎉 Plans complete!</span>
+      <span class="rc-btn-complete">Continue to Add-Ons!</span>
     </div>
 
-    <!-- Continue your journey -->
-    <div class="rc-next-steps">
-      <h3>🧭 Continue your journey</h3>
-      <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-next-card">
-          <div class="rc-next-card-tag">Next in series</div>
-          <div class="rc-next-card-icon">🧩</div>
-          <h4>Add-Ons</h4>
-          <p>Now that your plan foundation is set, learn how to increase ARPU and create flexible packaging with optional and required add-ons.</p>
-          <div class="rc-next-card-arrow">Start Add-Ons →</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-next-card">
-          <div class="rc-next-card-tag">Series hub</div>
-          <div class="rc-next-card-icon">🎯</div>
-          <h4>P&amp;P 101 Overview</h4>
-          <p>Return to the full series overview to see all six paths and track your progress through the 101 program.</p>
-          <div class="rc-next-card-arrow">View all paths →</div>
-        </a>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon">🎙️</div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your plan design questions to our CSMs live. Ask about your specific setup — sessions run weekly.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-      </div>
-    </div>
 
     <!-- Resources -->
     <div class="rc-resources">
