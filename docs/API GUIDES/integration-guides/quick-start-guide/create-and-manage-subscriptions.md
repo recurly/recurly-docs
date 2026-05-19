@@ -10,17 +10,17 @@ metadata:
   robots: index
 ---
 <div class="rp-page">
+
   <div class="rp-overview">This guide walks you through building a complete subscription integration with Recurly's API v3 — from authenticating your first request to managing the full subscription lifecycle. By the end, you'll have working code that creates accounts, assigns plans, starts subscriptions, handles billing changes, and responds to lifecycle events via webhooks.</div>
 
   <div class="rp-plan">✦ Available on all Recurly plans</div>
 
   <div class="rp-cost">
-    <strong>Additional cost</strong><br />
-    Dunning and advanced retry logic require an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a> for pricing details.
+    <strong>Additional cost</strong><br/>
+    Dunning and advanced retry logic require an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com">support@recurly.com</a> for pricing details.
   </div>
 
   ### Prerequisites
-
   <ul class="rp-list">
     <li>A Recurly account with API access enabled</li>
     <li>A private API key from <strong>Integrations > API Keys</strong> in the Recurly Admin Dashboard</li>
@@ -29,7 +29,6 @@ metadata:
   </ul>
 
   ### Limitations
-
   <ul class="rp-list">
     <li>The Recurly API enforces a rate limit of 1,400 requests per minute per site. Requests beyond this threshold return a <code>429</code> response.</li>
     <li>Subscription quantity changes take effect at the next renewal by default. Immediate prorated changes require setting <code>timeframe: now</code> on the update request.</li>
@@ -38,15 +37,38 @@ metadata:
 
   ### Supported SDKs
 
-  <table class="rp-params">
-    <tr class="rp-thead-row"><td>Language</td><td>Package</td><td>GitHub</td></tr>
-    <tr><td>Ruby</td><td><code>recurly</code></td><td><a href="https://github.com/recurly/recurly-client-ruby" target="_blank">recurly-client-ruby</a></td></tr>
-    <tr><td>Node.js</td><td><code>recurly</code></td><td><a href="https://github.com/recurly/recurly-client-node" target="_blank">recurly-client-node</a></td></tr>
-    <tr><td>Python</td><td><code>recurly</code></td><td><a href="https://github.com/recurly/recurly-client-python" target="_blank">recurly-client-python</a></td></tr>
-    <tr><td>Java</td><td><code>com.recurly.v3:api-client</code></td><td><a href="https://github.com/recurly/recurly-client-java" target="_blank">recurly-client-java</a></td></tr>
-    <tr><td>C#</td><td><code>Recurly</code></td><td><a href="https://github.com/recurly/recurly-client-dotnet" target="_blank">recurly-client-dotnet</a></td></tr>
-    <tr><td>PHP</td><td><code>recurly/recurly-client</code></td><td><a href="https://github.com/recurly/recurly-client-php" target="_blank">recurly-client-php</a></td></tr>
-  </table>
+  <div class="rp-sdk-cards">
+    <div class="rp-sdk-card">
+      <div class="rp-sdk-card-language">Ruby</div>
+      <div class="rp-sdk-card-package"><code>recurly</code></div>
+      <a href="https://github.com/recurly/recurly-client-ruby" target="_blank" class="rp-sdk-card-link">View on GitHub →</a>
+    </div>
+    <div class="rp-sdk-card">
+      <div class="rp-sdk-card-language">Node.js</div>
+      <div class="rp-sdk-card-package"><code>recurly</code></div>
+      <a href="https://github.com/recurly/recurly-client-node" target="_blank" class="rp-sdk-card-link">View on GitHub →</a>
+    </div>
+    <div class="rp-sdk-card">
+      <div class="rp-sdk-card-language">Python</div>
+      <div class="rp-sdk-card-package"><code>recurly</code></div>
+      <a href="https://github.com/recurly/recurly-client-python" target="_blank" class="rp-sdk-card-link">View on GitHub →</a>
+    </div>
+    <div class="rp-sdk-card">
+      <div class="rp-sdk-card-language">Java</div>
+      <div class="rp-sdk-card-package"><code>com.recurly.v3:api-client</code></div>
+      <a href="https://github.com/recurly/recurly-client-java" target="_blank" class="rp-sdk-card-link">View on GitHub →</a>
+    </div>
+    <div class="rp-sdk-card">
+      <div class="rp-sdk-card-language">C#</div>
+      <div class="rp-sdk-card-package"><code>Recurly</code></div>
+      <a href="https://github.com/recurly/recurly-client-dotnet" target="_blank" class="rp-sdk-card-link">View on GitHub →</a>
+    </div>
+    <div class="rp-sdk-card">
+      <div class="rp-sdk-card-language">PHP</div>
+      <div class="rp-sdk-card-package"><code>recurly/recurly-client</code></div>
+      <a href="https://github.com/recurly/recurly-client-php" target="_blank" class="rp-sdk-card-link">View on GitHub →</a>
+    </div>
+  </div>
 
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
@@ -57,6 +79,7 @@ metadata:
     <a class="rp-toc-pill" href="#testing-your-integration"><span class="rp-toc-num">6</span>Testing your integration</a>
     <a class="rp-toc-pill" href="#whats-next"><span class="rp-toc-num">7</span>What's next</a>
   </div>
+
 </div>
 
 # Definition
@@ -66,17 +89,19 @@ metadata:
 # Key concepts
 
 <div class="rp-card">
-  **Account** — The record that represents one of your customers in Recurly. Every subscription must belong to an Account, identified by a unique `account_code` you assign. Think of it as your customer ID bridging your system to Recurly's.
 
-  **Plan** — The template that defines a subscription's billing interval, currency, and base price. Plans are created in the Recurly Admin Dashboard or via the API, then referenced by `plan_code` when creating subscriptions.
+**Account** — The record that represents one of your customers in Recurly. Every subscription must belong to an Account, identified by a unique `account_code` you assign. Think of it as your customer ID bridging your system to Recurly's.
 
-  **Subscription** — The active billing relationship between an Account and a Plan. A Subscription tracks its current state (`active`, `canceled`, `expired`, `future`, `paused`), current period dates, and any pending changes.
+**Plan** — The template that defines a subscription's billing interval, currency, and base price. Plans are created in the Recurly Admin Dashboard or via the API, then referenced by `plan_code` when creating subscriptions.
 
-  **Invoice** — The financial record generated at each billing event — trial end, renewal, plan change, or immediate charge. Invoices contain line items, applied credits, and the associated Transaction.
+**Subscription** — The active billing relationship between an Account and a Plan. A Subscription tracks its current state (`active`, `canceled`, `expired`, `future`, `paused`), current period dates, and any pending changes.
 
-  **Transaction** — The record of a single payment attempt against an Invoice. A Transaction can be `success`, `declined`, or `void`, and carries the gateway response code that explains a decline.
+**Invoice** — The financial record generated at each billing event — trial end, renewal, plan change, or immediate charge. Invoices contain line items, applied credits, and the associated Transaction.
 
-  **Add-on** — A billable item attached to a Plan that lets you charge for usage, seats, or optional features on top of the base subscription price.
+**Transaction** — The record of a single payment attempt against an Invoice. A Transaction can be `success`, `declined`, or `void`, and carries the gateway response code that explains a decline.
+
+**Add-on** — A billable item attached to a Plan that lets you charge for usage, seats, or optional features on top of the base subscription price.
+
 </div>
 
 # Integration guide
@@ -91,63 +116,57 @@ Generate your private API key in the Recurly Admin Dashboard under **Integration
 
 <Tabs>
   <Tab title="curl">
-    ```bash
-    # Replace YOUR_SITE_ID with your Recurly site ID
-    # Pass the API key as the Basic Auth username; leave the password empty
-    curl -u YOUR_PRIVATE_API_KEY: \
-      https://v3.recurly.com/sites/YOUR_SITE_ID/accounts
-    ```
+  ```bash
+  # Replace YOUR_SITE_ID with your Recurly site ID
+  # Pass the API key as the Basic Auth username; leave the password empty
+  curl -u YOUR_PRIVATE_API_KEY: \
+    https://v3.recurly.com/sites/YOUR_SITE_ID/accounts
+  ```
   </Tab>
-
   <Tab title="Ruby">
-    ```ruby
-    require 'recurly'
+  ```ruby
+  require 'recurly'
 
-    # Initialize once; reuse the client instance for every API call
-    client = Recurly::Client.new(api_key: ENV['RECURLY_PRIVATE_KEY'])
-    ```
+  # Initialize once; reuse the client instance for every API call
+  client = Recurly::Client.new(api_key: ENV['RECURLY_PRIVATE_KEY'])
+  ```
   </Tab>
-
   <Tab title="Node.js">
-    ```javascript
-    import { Client } from '@recurly/recurly-client'
+  ```javascript
+  import { Client } from '@recurly/recurly-client'
 
-    // Initialize once at application startup
-    const client = new Client(process.env.RECURLY_PRIVATE_KEY)
-    ```
+  // Initialize once at application startup
+  const client = new Client(process.env.RECURLY_PRIVATE_KEY)
+  ```
   </Tab>
-
   <Tab title="Python">
-    ```python
-    import recurly
+  ```python
+  import recurly
 
-    # Initialize once; the client is thread-safe
-    client = recurly.Client(api_key=os.environ['RECURLY_PRIVATE_KEY'])
-    ```
+  # Initialize once; the client is thread-safe
+  client = recurly.Client(api_key=os.environ['RECURLY_PRIVATE_KEY'])
+  ```
   </Tab>
-
   <Tab title="Java">
-    ```java
-    import com.recurly.v3.Client;
+  ```java
+  import com.recurly.v3.Client;
 
-    // Initialize with your private key; store as a singleton
-    Client client = new Client(System.getenv("RECURLY_PRIVATE_KEY"));
-    ```
+  // Initialize with your private key; store as a singleton
+  Client client = new Client(System.getenv("RECURLY_PRIVATE_KEY"));
+  ```
   </Tab>
-
   <Tab title="C#">
-    ```csharp
-    using Recurly;
+  ```csharp
+  using Recurly;
 
-    // Initialize once; Client is thread-safe
-    var client = new Client(Environment.GetEnvironmentVariable("RECURLY_PRIVATE_KEY"));
-    ```
+  // Initialize once; Client is thread-safe
+  var client = new Client(Environment.GetEnvironmentVariable("RECURLY_PRIVATE_KEY"));
+  ```
   </Tab>
-
   <Tab title="PHP">
-    ```php
-    $client = new \Recurly\Client(getenv('RECURLY_PRIVATE_KEY'));
-    ```
+  ```php
+  $client = new \Recurly\Client(getenv('RECURLY_PRIVATE_KEY'));
+  ```
   </Tab>
 </Tabs>
 
@@ -157,43 +176,38 @@ Install the Recurly SDK for your language using its standard package manager.
 
 <Tabs>
   <Tab title="Ruby">
-    ```bash
-    gem install recurly
-    ```
+  ```bash
+  gem install recurly
+  ```
   </Tab>
-
   <Tab title="Node.js">
-    ```bash
-    npm install @recurly/recurly-client
-    ```
+  ```bash
+  npm install @recurly/recurly-client
+  ```
   </Tab>
-
   <Tab title="Python">
-    ```bash
-    pip install recurly
-    ```
+  ```bash
+  pip install recurly
+  ```
   </Tab>
-
   <Tab title="Java">
-    ```xml
-    <dependency>
-      <groupId>com.recurly.v3</groupId>
-      <artifactId>api-client</artifactId>
-      <version>4.0.0</version>
-    </dependency>
-    ```
+  ```xml
+  <dependency>
+    <groupId>com.recurly.v3</groupId>
+    <artifactId>api-client</artifactId>
+    <version>4.0.0</version>
+  </dependency>
+  ```
   </Tab>
-
   <Tab title="C#">
-    ```bash
-    dotnet add package Recurly
-    ```
+  ```bash
+  dotnet add package Recurly
+  ```
   </Tab>
-
   <Tab title="PHP">
-    ```bash
-    composer require recurly/recurly-client
-    ```
+  ```bash
+  composer require recurly/recurly-client
+  ```
   </Tab>
 </Tabs>
 
@@ -208,99 +222,93 @@ Install the Recurly SDK for your language using its standard package manager.
 
 <Tabs>
   <Tab title="curl">
-    ```bash
-    curl -u YOUR_PRIVATE_API_KEY: \
-      -H "Content-Type: application/json" \
-      -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts \
-      -d '{
-        "code": "acct-jane-smith-001",
-        "first_name": "Jane",
-        "last_name": "Smith",
-        "email": "jane.smith@example.com"
-      }'
-    ```
+  ```bash
+  curl -u YOUR_PRIVATE_API_KEY: \
+    -H "Content-Type: application/json" \
+    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts \
+    -d '{
+      "code": "acct-jane-smith-001",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com"
+    }'
+  ```
   </Tab>
-
   <Tab title="Ruby">
-    ```ruby
-    account = client.create_account(
-      body: {
-        code: 'acct-jane-smith-001',
-        first_name: 'Jane',
-        last_name: 'Smith',
-        email: 'jane.smith@example.com'
-      }
-    )
-
-    puts account.id # => "abc123def456"
-    ```
-  </Tab>
-
-  <Tab title="Node.js">
-    ```javascript
-    const account = await client.createAccount({
+  ```ruby
+  account = client.create_account(
+    body: {
       code: 'acct-jane-smith-001',
-      firstName: 'Jane',
-      lastName: 'Smith',
+      first_name: 'Jane',
+      last_name: 'Smith',
       email: 'jane.smith@example.com'
-    })
+    }
+  )
 
-    console.log(account.id) // => "abc123def456"
-    ```
+  puts account.id # => "abc123def456"
+  ```
   </Tab>
+  <Tab title="Node.js">
+  ```javascript
+  const account = await client.createAccount({
+    code: 'acct-jane-smith-001',
+    firstName: 'Jane',
+    lastName: 'Smith',
+    email: 'jane.smith@example.com'
+  })
 
+  console.log(account.id) // => "abc123def456"
+  ```
+  </Tab>
   <Tab title="Python">
-    ```python
-    account = client.create_account(body={
-        'code': 'acct-jane-smith-001',
-        'first_name': 'Jane',
-        'last_name': 'Smith',
-        'email': 'jane.smith@example.com'
-    })
+  ```python
+  account = client.create_account(body={
+      'code': 'acct-jane-smith-001',
+      'first_name': 'Jane',
+      'last_name': 'Smith',
+      'email': 'jane.smith@example.com'
+  })
 
-    print(account.id)  # => "abc123def456"
-    ```
+  print(account.id)  # => "abc123def456"
+  ```
   </Tab>
-
   <Tab title="Java">
-    ```java
-    AccountCreate body = new AccountCreate();
-    body.setCode("acct-jane-smith-001");
-    body.setFirstName("Jane");
-    body.setLastName("Smith");
-    body.setEmail("jane.smith@example.com");
+  ```java
+  AccountCreate body = new AccountCreate();
+  body.setCode("acct-jane-smith-001");
+  body.setFirstName("Jane");
+  body.setLastName("Smith");
+  body.setEmail("jane.smith@example.com");
 
-    Account account = client.createAccount(body);
-    System.out.println(account.getId()); // => "abc123def456"
-    ```
+  Account account = client.createAccount(body);
+  System.out.println(account.getId()); // => "abc123def456"
+  ```
   </Tab>
-
   <Tab title="C#">
-    ```csharp
-    var accountCreate = new AccountCreate
-    {
-        Code = "acct-jane-smith-001",
-        FirstName = "Jane",
-        LastName = "Smith",
-        Email = "jane.smith@example.com"
-    };
+  ```csharp
+  var accountCreate = new AccountCreate
+  {
+      Code = "acct-jane-smith-001",
+      FirstName = "Jane",
+      LastName = "Smith",
+      Email = "jane.smith@example.com"
+  };
 
-    var account = client.CreateAccount(accountCreate);
-    Console.WriteLine(account.Id); // => "abc123def456"
-    ```
+  var account = client.CreateAccount(accountCreate);
+  Console.WriteLine(account.Id); // => "abc123def456"
+  ```
   </Tab>
-
   <Tab title="PHP">
-    ```php
-    $account = $client->createAccount([
-        'code' => 'acct-jane-smith-001',
-        'first_name' => 'Jane',
-        'last_name' => 'Smith',
-        'email' => 'jane.smith@example.com'
-    ]);
+  ```php
+  $account = $client->createAccount([
+      'code' => 'acct-jane-smith-001',
+      'first_name' => 'Jane',
+      'last_name' => 'Smith',
+      'email' => 'jane.smith@example.com'
+  ]);
 
-    echo $account->getId(); // => "abc123def456"
-    ```
+  echo $account->getId(); // => "abc123def456"
+  ```
   </Tab>
 </Tabs>
 
@@ -338,77 +346,71 @@ Install the Recurly SDK for your language using its standard package manager.
 
 <Tabs>
   <Tab title="curl">
-    ```bash
-    curl -u YOUR_PRIVATE_API_KEY: \
-      -H "Content-Type: application/json" \
-      -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts/YOUR_ACCOUNT_CODE/billing_info \
-      -d '{
-        "token_id": "tok_abc123xyz789"
-      }'
-    ```
+  ```bash
+  curl -u YOUR_PRIVATE_API_KEY: \
+    -H "Content-Type: application/json" \
+    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts/YOUR_ACCOUNT_CODE/billing_info \
+    -d '{
+      "token_id": "tok_abc123xyz789"
+    }'
+  ```
   </Tab>
-
   <Tab title="Ruby">
-    ```ruby
-    billing_info = client.create_billing_info(
-      account_id: 'acct-jane-smith-001',
-      body: { token_id: 'tok_abc123xyz789' }
-    )
+  ```ruby
+  billing_info = client.create_billing_info(
+    account_id: 'acct-jane-smith-001',
+    body: { token_id: 'tok_abc123xyz789' }
+  )
 
-    puts billing_info.card_type    # => "Visa"
-    puts billing_info.last_four    # => "1111"
-    ```
+  puts billing_info.card_type    # => "Visa"
+  puts billing_info.last_four    # => "1111"
+  ```
   </Tab>
-
   <Tab title="Node.js">
-    ```javascript
-    const billingInfo = await client.createBillingInfo('acct-jane-smith-001', {
-      tokenId: 'tok_abc123xyz789'
-    })
+  ```javascript
+  const billingInfo = await client.createBillingInfo('acct-jane-smith-001', {
+    tokenId: 'tok_abc123xyz789'
+  })
 
-    console.log(billingInfo.cardType) // => "Visa"
-    console.log(billingInfo.lastFour) // => "1111"
-    ```
+  console.log(billingInfo.cardType) // => "Visa"
+  console.log(billingInfo.lastFour) // => "1111"
+  ```
   </Tab>
-
   <Tab title="Python">
-    ```python
-    billing_info = client.create_billing_info(
-        account_id='acct-jane-smith-001',
-        body={'token_id': 'tok_abc123xyz789'}
-    )
+  ```python
+  billing_info = client.create_billing_info(
+      account_id='acct-jane-smith-001',
+      body={'token_id': 'tok_abc123xyz789'}
+  )
 
-    print(billing_info.card_type)  # => "Visa"
-    print(billing_info.last_four)  # => "1111"
-    ```
+  print(billing_info.card_type)  # => "Visa"
+  print(billing_info.last_four)  # => "1111"
+  ```
   </Tab>
-
   <Tab title="Java">
-    ```java
-    BillingInfoCreate body = new BillingInfoCreate();
-    body.setTokenId("tok_abc123xyz789");
+  ```java
+  BillingInfoCreate body = new BillingInfoCreate();
+  body.setTokenId("tok_abc123xyz789");
 
-    BillingInfo billingInfo = client.createBillingInfo("acct-jane-smith-001", body);
-    System.out.println(billingInfo.getCardType()); // => "Visa"
-    ```
+  BillingInfo billingInfo = client.createBillingInfo("acct-jane-smith-001", body);
+  System.out.println(billingInfo.getCardType()); // => "Visa"
+  ```
   </Tab>
-
   <Tab title="C#">
-    ```csharp
-    var billingInfoCreate = new BillingInfoCreate { TokenId = "tok_abc123xyz789" };
-    var billingInfo = client.CreateBillingInfo("acct-jane-smith-001", billingInfoCreate);
-    Console.WriteLine(billingInfo.CardType); // => "Visa"
-    ```
+  ```csharp
+  var billingInfoCreate = new BillingInfoCreate { TokenId = "tok_abc123xyz789" };
+  var billingInfo = client.CreateBillingInfo("acct-jane-smith-001", billingInfoCreate);
+  Console.WriteLine(billingInfo.CardType); // => "Visa"
+  ```
   </Tab>
-
   <Tab title="PHP">
-    ```php
-    $billingInfo = $client->createBillingInfo('acct-jane-smith-001', [
-        'token_id' => 'tok_abc123xyz789'
-    ]);
+  ```php
+  $billingInfo = $client->createBillingInfo('acct-jane-smith-001', [
+      'token_id' => 'tok_abc123xyz789'
+  ]);
 
-    echo $billingInfo->getCardType(); // => "Visa"
-    ```
+  echo $billingInfo->getCardType(); // => "Visa"
+  ```
   </Tab>
 </Tabs>
 
@@ -431,107 +433,101 @@ Install the Recurly SDK for your language using its standard package manager.
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">3</div>
-    <div><h4>Create a subscription</h4><p>With a billing-info-equipped account in place, create the subscription by pairing the account's <code>code</code> with a <code>plan\_code</code>. Recurly immediately charges the card for the first billing period and returns the active Subscription object.</p></div>
+    <div><h4>Create a subscription</h4><p>With a billing-info-equipped account in place, create the subscription by pairing the account's <code>code</code> with a <code>plan_code</code>. Recurly immediately charges the card for the first billing period and returns the active Subscription object.</p></div>
   </div>
 </div>
 
 <Tabs>
   <Tab title="curl">
-    ```bash
-    curl -u YOUR_PRIVATE_API_KEY: \
-      -H "Content-Type: application/json" \
-      -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions \
-      -d '{
-        "plan_code": "plan-pro-monthly",
-        "account": {
-          "code": "acct-jane-smith-001"
-        },
-        "currency": "USD"
-      }'
-    ```
+  ```bash
+  curl -u YOUR_PRIVATE_API_KEY: \
+    -H "Content-Type: application/json" \
+    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions \
+    -d '{
+      "plan_code": "plan-pro-monthly",
+      "account": {
+        "code": "acct-jane-smith-001"
+      },
+      "currency": "USD"
+    }'
+  ```
   </Tab>
-
   <Tab title="Ruby">
-    ```ruby
-    subscription = client.create_subscription(
-      body: {
-        plan_code: 'plan-pro-monthly',
-        account: { code: 'acct-jane-smith-001' },
-        currency: 'USD'
-      }
-    )
-
-    puts subscription.uuid  # => "sub_xyz789abc123"
-    puts subscription.state # => "active"
-    ```
-  </Tab>
-
-  <Tab title="Node.js">
-    ```javascript
-    const subscription = await client.createSubscription({
-      planCode: 'plan-pro-monthly',
+  ```ruby
+  subscription = client.create_subscription(
+    body: {
+      plan_code: 'plan-pro-monthly',
       account: { code: 'acct-jane-smith-001' },
       currency: 'USD'
-    })
+    }
+  )
 
-    console.log(subscription.uuid)  // => "sub_xyz789abc123"
-    console.log(subscription.state) // => "active"
-    ```
+  puts subscription.uuid  # => "sub_xyz789abc123"
+  puts subscription.state # => "active"
+  ```
   </Tab>
+  <Tab title="Node.js">
+  ```javascript
+  const subscription = await client.createSubscription({
+    planCode: 'plan-pro-monthly',
+    account: { code: 'acct-jane-smith-001' },
+    currency: 'USD'
+  })
 
+  console.log(subscription.uuid)  // => "sub_xyz789abc123"
+  console.log(subscription.state) // => "active"
+  ```
+  </Tab>
   <Tab title="Python">
-    ```python
-    subscription = client.create_subscription(body={
-        'plan_code': 'plan-pro-monthly',
-        'account': {'code': 'acct-jane-smith-001'},
-        'currency': 'USD'
-    })
+  ```python
+  subscription = client.create_subscription(body={
+      'plan_code': 'plan-pro-monthly',
+      'account': {'code': 'acct-jane-smith-001'},
+      'currency': 'USD'
+  })
 
-    print(subscription.uuid)   # => "sub_xyz789abc123"
-    print(subscription.state)  # => "active"
-    ```
+  print(subscription.uuid)   # => "sub_xyz789abc123"
+  print(subscription.state)  # => "active"
+  ```
   </Tab>
-
   <Tab title="Java">
-    ```java
-    SubscriptionCreate body = new SubscriptionCreate();
-    body.setPlanCode("plan-pro-monthly");
-    body.setCurrency("USD");
+  ```java
+  SubscriptionCreate body = new SubscriptionCreate();
+  body.setPlanCode("plan-pro-monthly");
+  body.setCurrency("USD");
 
-    AccountCreate account = new AccountCreate();
-    account.setCode("acct-jane-smith-001");
-    body.setAccount(account);
+  AccountCreate account = new AccountCreate();
+  account.setCode("acct-jane-smith-001");
+  body.setAccount(account);
 
-    Subscription subscription = client.createSubscription(body);
-    System.out.println(subscription.getUuid()); // => "sub_xyz789abc123"
-    ```
+  Subscription subscription = client.createSubscription(body);
+  System.out.println(subscription.getUuid()); // => "sub_xyz789abc123"
+  ```
   </Tab>
-
   <Tab title="C#">
-    ```csharp
-    var subscriptionCreate = new SubscriptionCreate
-    {
-        PlanCode = "plan-pro-monthly",
-        Currency = "USD",
-        Account = new AccountCreate { Code = "acct-jane-smith-001" }
-    };
+  ```csharp
+  var subscriptionCreate = new SubscriptionCreate
+  {
+      PlanCode = "plan-pro-monthly",
+      Currency = "USD",
+      Account = new AccountCreate { Code = "acct-jane-smith-001" }
+  };
 
-    var subscription = client.CreateSubscription(subscriptionCreate);
-    Console.WriteLine(subscription.Uuid); // => "sub_xyz789abc123"
-    ```
+  var subscription = client.CreateSubscription(subscriptionCreate);
+  Console.WriteLine(subscription.Uuid); // => "sub_xyz789abc123"
+  ```
   </Tab>
-
   <Tab title="PHP">
-    ```php
-    $subscription = $client->createSubscription([
-        'plan_code' => 'plan-pro-monthly',
-        'account' => ['code' => 'acct-jane-smith-001'],
-        'currency' => 'USD'
-    ]);
+  ```php
+  $subscription = $client->createSubscription([
+      'plan_code' => 'plan-pro-monthly',
+      'account' => ['code' => 'acct-jane-smith-001'],
+      'currency' => 'USD'
+  ]);
 
-    echo $subscription->getUuid();  // => "sub_xyz789abc123"
-    echo $subscription->getState(); // => "active"
-    ```
+  echo $subscription->getUuid();  // => "sub_xyz789abc123"
+  echo $subscription->getState(); // => "active"
+  ```
   </Tab>
 </Tabs>
 
@@ -555,7 +551,7 @@ Install the Recurly SDK for your language using its standard package manager.
 ```
 
 <div class="rp-callout rp-callout-note">
-  <div><strong>Note</strong>The <code>unit\_amount</code> field is returned in the currency's smallest unit — cents for USD. A value of <code>4900</code> means $49.00.</div>
+  <div><strong>Note</strong>The <code>unit_amount</code> field is returned in the currency's smallest unit — cents for USD. A value of <code>4900</code> means $49.00.</div>
 </div>
 
 ## Change a subscription plan
@@ -573,89 +569,83 @@ Install the Recurly SDK for your language using its standard package manager.
 
 <Tabs>
   <Tab title="curl">
-    ```bash
-    curl -u YOUR_PRIVATE_API_KEY: \
-      -H "Content-Type: application/json" \
-      -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID/change \
-      -d '{
-        "plan_code": "plan-enterprise-monthly",
-        "timeframe": "now"
-      }'
-    ```
+  ```bash
+  curl -u YOUR_PRIVATE_API_KEY: \
+    -H "Content-Type: application/json" \
+    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID/change \
+    -d '{
+      "plan_code": "plan-enterprise-monthly",
+      "timeframe": "now"
+    }'
+  ```
   </Tab>
-
   <Tab title="Ruby">
-    ```ruby
-    change = client.create_subscription_change(
-      subscription_id: 'sub_xyz789abc123',
-      body: {
-        plan_code: 'plan-enterprise-monthly',
-        timeframe: 'now'
-      }
-    )
-
-    puts change.plan.code # => "plan-enterprise-monthly"
-    ```
-  </Tab>
-
-  <Tab title="Node.js">
-    ```javascript
-    const change = await client.createSubscriptionChange('sub_xyz789abc123', {
-      planCode: 'plan-enterprise-monthly',
+  ```ruby
+  change = client.create_subscription_change(
+    subscription_id: 'sub_xyz789abc123',
+    body: {
+      plan_code: 'plan-enterprise-monthly',
       timeframe: 'now'
-    })
+    }
+  )
 
-    console.log(change.plan.code) // => "plan-enterprise-monthly"
-    ```
+  puts change.plan.code # => "plan-enterprise-monthly"
+  ```
   </Tab>
+  <Tab title="Node.js">
+  ```javascript
+  const change = await client.createSubscriptionChange('sub_xyz789abc123', {
+    planCode: 'plan-enterprise-monthly',
+    timeframe: 'now'
+  })
 
+  console.log(change.plan.code) // => "plan-enterprise-monthly"
+  ```
+  </Tab>
   <Tab title="Python">
-    ```python
-    change = client.create_subscription_change(
-        subscription_id='sub_xyz789abc123',
-        body={
-            'plan_code': 'plan-enterprise-monthly',
-            'timeframe': 'now'
-        }
-    )
+  ```python
+  change = client.create_subscription_change(
+      subscription_id='sub_xyz789abc123',
+      body={
+          'plan_code': 'plan-enterprise-monthly',
+          'timeframe': 'now'
+      }
+  )
 
-    print(change.plan.code)  # => "plan-enterprise-monthly"
-    ```
+  print(change.plan.code)  # => "plan-enterprise-monthly"
+  ```
   </Tab>
-
   <Tab title="Java">
-    ```java
-    SubscriptionChangeCreate body = new SubscriptionChangeCreate();
-    body.setPlanCode("plan-enterprise-monthly");
-    body.setTimeframe(SubscriptionChangeCreate.Timeframe.NOW);
+  ```java
+  SubscriptionChangeCreate body = new SubscriptionChangeCreate();
+  body.setPlanCode("plan-enterprise-monthly");
+  body.setTimeframe(SubscriptionChangeCreate.Timeframe.NOW);
 
-    SubscriptionChange change = client.createSubscriptionChange("sub_xyz789abc123", body);
-    System.out.println(change.getPlan().getCode());
-    ```
+  SubscriptionChange change = client.createSubscriptionChange("sub_xyz789abc123", body);
+  System.out.println(change.getPlan().getCode());
+  ```
   </Tab>
-
   <Tab title="C#">
-    ```csharp
-    var changeCreate = new SubscriptionChangeCreate
-    {
-        PlanCode = "plan-enterprise-monthly",
-        Timeframe = SubscriptionChangeCreate.TimeframeEnum.Now
-    };
+  ```csharp
+  var changeCreate = new SubscriptionChangeCreate
+  {
+      PlanCode = "plan-enterprise-monthly",
+      Timeframe = SubscriptionChangeCreate.TimeframeEnum.Now
+  };
 
-    var change = client.CreateSubscriptionChange("sub_xyz789abc123", changeCreate);
-    Console.WriteLine(change.Plan.Code);
-    ```
+  var change = client.CreateSubscriptionChange("sub_xyz789abc123", changeCreate);
+  Console.WriteLine(change.Plan.Code);
+  ```
   </Tab>
-
   <Tab title="PHP">
-    ```php
-    $change = $client->createSubscriptionChange('sub_xyz789abc123', [
-        'plan_code' => 'plan-enterprise-monthly',
-        'timeframe' => 'now'
-    ]);
+  ```php
+  $change = $client->createSubscriptionChange('sub_xyz789abc123', [
+      'plan_code' => 'plan-enterprise-monthly',
+      'timeframe' => 'now'
+  ]);
 
-    echo $change->getPlan()->getCode();
-    ```
+  echo $change->getPlan()->getCode();
+  ```
   </Tab>
 </Tabs>
 
@@ -685,55 +675,49 @@ Install the Recurly SDK for your language using its standard package manager.
 
 <Tabs>
   <Tab title="curl">
-    ```bash
-    curl -u YOUR_PRIVATE_API_KEY: \
-      -X DELETE https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID
-    ```
+  ```bash
+  curl -u YOUR_PRIVATE_API_KEY: \
+    -X DELETE https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID
+  ```
   </Tab>
-
   <Tab title="Ruby">
-    ```ruby
-    subscription = client.cancel_subscription('sub_xyz789abc123')
+  ```ruby
+  subscription = client.cancel_subscription('sub_xyz789abc123')
 
-    puts subscription.state # => "canceled"
-    ```
+  puts subscription.state # => "canceled"
+  ```
   </Tab>
-
   <Tab title="Node.js">
-    ```javascript
-    const subscription = await client.cancelSubscription('sub_xyz789abc123')
+  ```javascript
+  const subscription = await client.cancelSubscription('sub_xyz789abc123')
 
-    console.log(subscription.state) // => "canceled"
-    ```
+  console.log(subscription.state) // => "canceled"
+  ```
   </Tab>
-
   <Tab title="Python">
-    ```python
-    subscription = client.cancel_subscription('sub_xyz789abc123')
+  ```python
+  subscription = client.cancel_subscription('sub_xyz789abc123')
 
-    print(subscription.state)  # => "canceled"
-    ```
+  print(subscription.state)  # => "canceled"
+  ```
   </Tab>
-
   <Tab title="Java">
-    ```java
-    Subscription subscription = client.cancelSubscription("sub_xyz789abc123");
-    System.out.println(subscription.getState()); // => "canceled"
-    ```
+  ```java
+  Subscription subscription = client.cancelSubscription("sub_xyz789abc123");
+  System.out.println(subscription.getState()); // => "canceled"
+  ```
   </Tab>
-
   <Tab title="C#">
-    ```csharp
-    var subscription = client.CancelSubscription("sub_xyz789abc123");
-    Console.WriteLine(subscription.State); // => "canceled"
-    ```
+  ```csharp
+  var subscription = client.CancelSubscription("sub_xyz789abc123");
+  Console.WriteLine(subscription.State); // => "canceled"
+  ```
   </Tab>
-
   <Tab title="PHP">
-    ```php
-    $subscription = $client->cancelSubscription('sub_xyz789abc123');
-    echo $subscription->getState(); // => "canceled"
-    ```
+  ```php
+  $subscription = $client->cancelSubscription('sub_xyz789abc123');
+  echo $subscription->getState(); // => "canceled"
+  ```
   </Tab>
 </Tabs>
 
@@ -750,7 +734,7 @@ Install the Recurly SDK for your language using its standard package manager.
 ```
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong>Tip</strong>To reactivate a canceled subscription before its expiry date, send a <code>PUT</code> request to <code>/sites/YOUR\_SITE\_ID/subscriptions/YOUR\_SUBSCRIPTION\_ID/reactivate</code>. After the expiry date, a new subscription must be created.</div>
+  <div><strong>Tip</strong>To reactivate a canceled subscription before its expiry date, send a <code>PUT</code> request to <code>/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID/reactivate</code>. After the expiry date, a new subscription must be created.</div>
 </div>
 
 # Error handling and troubleshooting
@@ -762,28 +746,28 @@ Install the Recurly SDK for your language using its standard package manager.
   <tr><td><code>400</code></td><td><code>validation</code></td><td>One or more request parameters failed validation</td><td>Inspect the <code>params</code> array in the error body — each entry names the field and describes the failure</td></tr>
   <tr><td><code>401</code></td><td><code>unauthorized</code></td><td>API key is missing, invalid, or lacks permissions</td><td>Verify the key is correct, confirm it's not revoked, and check it has the required scopes in the Dashboard</td></tr>
   <tr><td><code>403</code></td><td><code>forbidden</code></td><td>The key doesn't have access to the requested site or resource</td><td>Confirm the site ID in the URL matches the site the key belongs to</td></tr>
-  <tr><td><code>404</code></td><td><code>not\_found</code></td><td>The resource doesn't exist</td><td>Double-check the ID or code in the URL path; resources are permanently deleted and won't be found after deletion</td></tr>
-  <tr><td><code>422</code></td><td><code>transaction\_error</code></td><td>Payment was declined or couldn't be processed</td><td>Check the <code>transaction\_error</code> object — the <code>merchant\_message</code> field contains the gateway's decline reason</td></tr>
-  <tr><td><code>422</code></td><td><code>immutable\_subscription</code></td><td>A change was attempted on a subscription in a non-modifiable state</td><td>Check the subscription's <code>state</code> — changes can't be made to <code>expired</code> or <code>failed</code> subscriptions</td></tr>
-  <tr><td><code>429</code></td><td><code>rate\_limited</code></td><td>Requests exceeded 1,400 per minute for this site</td><td>Implement exponential backoff with jitter; the <code>Retry-After</code> response header tells you when to resume</td></tr>
+  <tr><td><code>404</code></td><td><code>not_found</code></td><td>The resource doesn't exist</td><td>Double-check the ID or code in the URL path; resources are permanently deleted and won't be found after deletion</td></tr>
+  <tr><td><code>422</code></td><td><code>transaction_error</code></td><td>Payment was declined or couldn't be processed</td><td>Check the <code>transaction_error</code> object — the <code>merchant_message</code> field contains the gateway's decline reason</td></tr>
+  <tr><td><code>422</code></td><td><code>immutable_subscription</code></td><td>A change was attempted on a subscription in a non-modifiable state</td><td>Check the subscription's <code>state</code> — changes can't be made to <code>expired</code> or <code>failed</code> subscriptions</td></tr>
+  <tr><td><code>429</code></td><td><code>rate_limited</code></td><td>Requests exceeded 1,400 per minute for this site</td><td>Implement exponential backoff with jitter; the <code>Retry-After</code> response header tells you when to resume</td></tr>
 </table>
 
 ## Common issues
 
 <Accordion title="Why is the subscription state 'future' instead of 'active'?">
-  A subscription enters `future` state when its `starts_at` date is set to a future timestamp. This is used for scheduling subscriptions that begin on a future date, such as at the end of a trial you're managing externally. If you didn't intend this, check whether `starts_at` was included in your creation request — omitting it defaults to immediate activation.
+A subscription enters `future` state when its `starts_at` date is set to a future timestamp. This is used for scheduling subscriptions that begin on a future date, such as at the end of a trial you're managing externally. If you didn't intend this, check whether `starts_at` was included in your creation request — omitting it defaults to immediate activation.
 </Accordion>
 
 <Accordion title="Why did creating a subscription return a 422 transaction_error?">
-  The card was declined at the gateway. Check the `transaction_error` object in the response — specifically the `merchant_message` field, which contains the raw decline reason from the payment gateway. Common causes include an expired card, insufficient funds, or the card issuer blocking the transaction. Use Recurly's test card numbers in the sandbox to simulate specific decline scenarios before going live.
+The card was declined at the gateway. Check the `transaction_error` object in the response — specifically the `merchant_message` field, which contains the raw decline reason from the payment gateway. Common causes include an expired card, insufficient funds, or the card issuer blocking the transaction. Use Recurly's test card numbers in the sandbox to simulate specific decline scenarios before going live.
 </Accordion>
 
 <Accordion title="Can I create an account and subscription in a single API call?">
-  Yes. The `POST /subscriptions` endpoint accepts a nested `account` object. If the `code` in that object matches an existing account, Recurly links the subscription to it. If the code is new, Recurly creates the account and the subscription atomically. You can also nest `billing_info` inside the `account` object to attach a payment token in the same request.
+Yes. The `POST /subscriptions` endpoint accepts a nested `account` object. If the `code` in that object matches an existing account, Recurly links the subscription to it. If the code is new, Recurly creates the account and the subscription atomically. You can also nest `billing_info` inside the `account` object to attach a payment token in the same request.
 </Accordion>
 
 <Accordion title="Why is my plan change not reflected on the current invoice?">
-  Plan changes with `timeframe: renewal` (the default) don't affect the current billing period — they queue for the next renewal. Only `timeframe: now` applies immediately with proration. Check the subscription's `pending_change` object to confirm the change is queued and will activate on the next renewal date shown in `current_period_ends_at`.
+Plan changes with `timeframe: renewal` (the default) don't affect the current billing period — they queue for the next renewal. Only `timeframe: now` applies immediately with proration. Check the subscription's `pending_change` object to confirm the change is queued and will activate on the next renewal date shown in `current_period_ends_at`.
 </Accordion>
 
 # Webhooks
@@ -792,14 +776,14 @@ Recurly sends webhook notifications to your server whenever key subscription eve
 
 <table class="rp-params">
   <tr class="rp-thead-row"><td>Event</td><td>When it fires</td></tr>
-  <tr><td><code>new\_subscription\_notification</code></td><td>A new subscription is created and activated</td></tr>
-  <tr><td><code>updated\_subscription\_notification</code></td><td>A subscription is modified — plan change, quantity change, or reactivation</td></tr>
-  <tr><td><code>canceled\_subscription\_notification</code></td><td>A subscription is canceled (still active until period end)</td></tr>
-  <tr><td><code>expired\_subscription\_notification</code></td><td>A canceled subscription reaches its expiry date and becomes inactive</td></tr>
-  <tr><td><code>renewed\_subscription\_notification</code></td><td>A subscription successfully renews at the end of a billing period</td></tr>
-  <tr><td><code>failed\_renewal\_notification</code></td><td>A renewal charge fails — dunning begins if configured</td></tr>
-  <tr><td><code>successful\_payment\_notification</code></td><td>Any payment transaction succeeds</td></tr>
-  <tr><td><code>failed\_payment\_notification</code></td><td>Any payment transaction is declined</td></tr>
+  <tr><td><code>new_subscription_notification</code></td><td>A new subscription is created and activated</td></tr>
+  <tr><td><code>updated_subscription_notification</code></td><td>A subscription is modified — plan change, quantity change, or reactivation</td></tr>
+  <tr><td><code>canceled_subscription_notification</code></td><td>A subscription is canceled (still active until period end)</td></tr>
+  <tr><td><code>expired_subscription_notification</code></td><td>A canceled subscription reaches its expiry date and becomes inactive</td></tr>
+  <tr><td><code>renewed_subscription_notification</code></td><td>A subscription successfully renews at the end of a billing period</td></tr>
+  <tr><td><code>failed_renewal_notification</code></td><td>A renewal charge fails — dunning begins if configured</td></tr>
+  <tr><td><code>successful_payment_notification</code></td><td>Any payment transaction succeeds</td></tr>
+  <tr><td><code>failed_payment_notification</code></td><td>Any payment transaction is declined</td></tr>
 </table>
 
 <div class="rp-callout rp-callout-tip">
@@ -834,29 +818,26 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Confirm the account exists in the Dashboard</h4><p>Navigate to <strong>Accounts</strong> in the Recurly Admin Dashboard and search for the <code>account\_code</code> you used. You should see the account with the billing info card and the active subscription listed.</p></div>
+    <div><h4>Confirm the account exists in the Dashboard</h4><p>Navigate to <strong>Accounts</strong> in the Recurly Admin Dashboard and search for the <code>account_code</code> you used. You should see the account with the billing info card and the active subscription listed.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Inspect the invoice and transaction</h4><p>Open the account and check the <strong>Invoices</strong> tab. The first invoice for the subscription should show a <code>collected</code> state, with a linked Transaction showing <code>success</code>.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">3</div>
-    <div><h4>Verify webhook delivery</h4><p>In the Dashboard, go to <strong>Integrations > Webhooks > Webhook logs</strong>. Confirm that <code>new\_subscription\_notification</code> was sent to your endpoint and received a <code>2xx</code> response. If it shows failed, check your endpoint logs for the received payload.</p></div>
+    <div><h4>Verify webhook delivery</h4><p>In the Dashboard, go to <strong>Integrations > Webhooks > Webhook logs</strong>. Confirm that <code>new_subscription_notification</code> was sent to your endpoint and received a <code>2xx</code> response. If it shows failed, check your endpoint logs for the received payload.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">4</div>
-    <div><h4>Test a renewal with Time Machine</h4><p>Use Time Machine to advance the subscription past its <code>current\_period\_ends\_at</code> date. A new invoice should appear with state <code>collected</code> and a <code>renewed\_subscription\_notification</code> webhook should fire to your endpoint.</p></div>
+    <div><h4>Test a renewal with Time Machine</h4><p>Use Time Machine to advance the subscription past its <code>current_period_ends_at</code> date. A new invoice should appear with state <code>collected</code> and a <code>renewed_subscription_notification</code> webhook should fire to your endpoint.</p></div>
   </div>
 </div>
 
 # What's next
 
 <Cards>
-  <Card title="API reference" href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference#overview">Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.</Card>
+  <Card title="API reference" href="/docs/api">Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.</Card>
   <Card title="Recurly.js" href="/docs/recurly-js">Tokenize card data securely in the browser so raw card numbers never touch your server.</Card>
   <Card title="Webhooks" href="/docs/webhooks">Full reference for every webhook event type, payload schemas, signature verification, and retry behavior.</Card>
   <Card title="Dunning and payment recovery" href="/docs/dunning">Configure automated retry schedules and customer communications for failed payments.</Card>
