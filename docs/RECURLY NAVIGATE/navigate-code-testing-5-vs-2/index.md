@@ -1,5 +1,5 @@
 ---
-title: Navigate Code Testing 5 vs 2
+title: 'Navigate Code Testing: SCALE (SubPillar)'
 deprecated: false
 hidden: true
 metadata:
