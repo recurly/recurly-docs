@@ -8,10 +8,6 @@ hidden: false
 metadata:
   robots: index
 ---
-#### Metadata Description
-
-<br />
-
 # Overview
 
 This Quick Start Guide walks you through setting up your Recurly API integration in five steps:
@@ -56,10 +52,10 @@ Recurly authenticates your API requests using your private API key. You can gene
 
 ## Step 2: Choose a client library
 
-Recurly offers a number of client libraries to integrate to the API. We suggest using\
+Recurly offers a number of client libraries to integrate to the API. We suggest using  
 one of these official clients as it will make support, onboarding, and security much easier.
 
-Check out the [Ruby API docs](https://www.rubydoc.info/github/recurly/recurly-client-ruby/),\
+Check out the [Ruby API docs](https://www.rubydoc.info/github/recurly/recurly-client-ruby/),  
 or see the source on [GitHub](https://github.com/recurly/recurly-client-ruby).
 
 **Add to your`Gemfile`**:
@@ -74,7 +70,7 @@ gem 'recurly', '~> 4.0'
 gem install recurly
 ```
 
-Check out the [Js API docs](https://recurly.github.io/recurly-client-node/),\
+Check out the [Js API docs](https://recurly.github.io/recurly-client-node/),  
 or see the source on [GitHub](https://github.com/recurly/recurly-client-node).
 
 **Install via[npm](https://www.npmjs.com/package/recurly):**
@@ -91,7 +87,7 @@ npm install recurly --save
 }
 ```
 
-Check out the [Python API docs](https://recurly-client-python.readthedocs.io/en/latest/),\
+Check out the [Python API docs](https://recurly-client-python.readthedocs.io/en/latest/),  
 or see the source on [GitHub](https://github.com/recurly/recurly-client-python/tree/4_0_0).
 
 **Add to your requirements.txt**:
@@ -106,7 +102,7 @@ recurly~=4.0
 pip install --upgrade recurly
 ```
 
-See the source on [GitHub](https://github.com/recurly/recurly-client-java)\
+See the source on [GitHub](https://github.com/recurly/recurly-client-java)  
 and release details on [Maven Central](https://search.maven.org/artifact/com.recurly.v3/api-client/4.4.0/jar).
 
 **As a Maven dependency:**
@@ -163,9 +159,8 @@ composer install recurly/recurly-client
 
 ## Step 3: Create a client instance
 
-Your integration starts by creating an instance of the Client class. The client\
-represents a connection to Recurly's API. Every operation in the API exists
-as a method on this object. Creating a client only requires the private API key.
+Your integration starts by creating an instance of the Client class. The client  
+represents a connection to Recurly's API. Every operation in the API exists as a method on this object. Creating a client only requires the private API key.
 
 ```ruby
 require 'recurly'
@@ -199,14 +194,13 @@ $client = new \Recurly\Client("<your private api key>");
 
 ## Step 4: Create a plan
 
-A plan tells Recurly how often and how much to charge your customers.\
+A plan tells Recurly how often and how much to charge your customers.  
 Plans can be created with free trials, optional products (called add-ons), setup fees, and more.
 
 Plans are typically created in the [admin interface](https://app.recurly.com/go/plans/new) if you only have a few offerings, but you can also create as many plans as you need through the [API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_plan).
 
-Let's create a hypothetical plan for a monthly coffee delivery product. The customer will\
-be charged $100 a month. It will use the unique identifier "coffee-monthly" to refer to
-this plan.
+Let's create a hypothetical plan for a monthly coffee delivery product. The customer will  
+be charged $100 a month. It will use the unique identifier "coffee-monthly" to refer to this plan.
 
 ```ruby
 plan_create = {
