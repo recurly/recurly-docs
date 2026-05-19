@@ -307,4 +307,4 @@ That's it! You can now view your newly created plan in the [admin interface](htt
 
 ## Next steps
 
-With a newly created plan at your disposal, it's time to start creating customer accounts, billing info, subscriptions and / or one time payments following our  <a href="https://docs.recurly.com/v1.1/docs/purchases-guide">Purchases Guide</a>.
+With a newly created plan at your disposal, it's time to start creating customer accounts, billing info, subscriptions and / or one time payments following our  <a href="https://docs.recurly.com/recurly-subscriptions/docs/purchases-guide">Purchases Guide</a>.
