@@ -5,7 +5,7 @@ excerpt: >-
   covering authentication, SDK setup, account and plan creation, subscription
   lifecycle management, webhook configuration, and sandbox testing.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
