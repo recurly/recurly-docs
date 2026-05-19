@@ -9,11 +9,6 @@ hidden: true
 metadata:
   robots: index
 ---
-Title: Create and manage subscriptions
-Metadata description: Learn how to create and manage subscriptions using the Recurly API v3, covering authentication, SDK setup, account and plan creation, subscription lifecycle management, webhook configuration, and sandbox testing.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
 
   <div class="rp-overview">This guide walks you through building a complete subscription integration with Recurly's API v3 — from authenticating your first request to managing the full subscription lifecycle. By the end, you'll have working code that creates accounts, assigns plans, starts subscriptions, handles billing changes, and responds to lifecycle events via webhooks.</div>
@@ -46,12 +41,12 @@ Metadata description: Learn how to create and manage subscriptions using the Rec
 
 <div class="rp-sdk-grid">
 <Cards>
-  <Card title="Ruby" href="https://github.com/recurly/recurly-client-ruby">`recurly`</Card>
-  <Card title="Node.js" href="https://github.com/recurly/recurly-client-node">`recurly`</Card>
-  <Card title="Python" href="https://github.com/recurly/recurly-client-python">`recurly`</Card>
-  <Card title="Java" href="https://github.com/recurly/recurly-client-java">`com.recurly.v3:api-client`</Card>
-  <Card title="C#" href="https://github.com/recurly/recurly-client-dotnet">`Recurly`</Card>
-  <Card title="PHP" href="https://github.com/recurly/recurly-client-php">`recurly/recurly-client`</Card>
+  <Card title="Ruby" href="https://github.com/recurly/recurly-client-ruby"></Card>
+  <Card title="Node.js" href="https://github.com/recurly/recurly-client-node"></Card>
+  <Card title="Python" href="https://github.com/recurly/recurly-client-python"></Card>
+  <Card title="Java" href="https://github.com/recurly/recurly-client-java"></Card>
+  <Card title="C#" href="https://github.com/recurly/recurly-client-dotnet"></Card>
+  <Card title="PHP" href="https://github.com/recurly/recurly-client-php"></Card>
 </Cards>
 </div>
 
