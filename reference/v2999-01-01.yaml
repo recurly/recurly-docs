@@ -11210,19 +11210,23 @@ components:
           description: >-
             If `duration` is "temporal" than `temporal_amount` is an integer
             which is multiplied by `temporal_unit` to define the duration that
-            the coupon will be applied to invoices for.
+            the coupon will be applied to invoices for. When `temporal_unit` is
+            "billing_period", this is the number of complete billing cycles.
         temporal_unit:
           title: Temporal unit
           description: >-
-            If `duration` is "temporal" than `temporal_unit` is multiplied by
-            `temporal_amount` to define the duration that the coupon will be
-            applied to invoices for.
+            The temporal unit for the coupon's duration. Used with
+            temporal_amount to define how long the coupon applies. When
+            temporal_unit is billing_period, the coupon applies for
+            temporal_amount complete billing cycles rather than a fixed calendar
+            duration. billing_period requires redemption_resource=subscription.
           type: string
           enum:
             - day
             - month
             - week
             - year
+            - billing_period
         free_trial_unit:
           title: Free trial unit
           description: >-
@@ -11470,19 +11474,25 @@ components:
               description: >-
                 If `duration` is "temporal" than `temporal_amount` is an integer
                 which is multiplied by `temporal_unit` to define the duration
-                that the coupon will be applied to invoices for.
+                that the coupon will be applied to invoices for. When
+                `temporal_unit` is "billing_period", this is the number of
+                complete billing cycles.
             temporal_unit:
               title: Temporal unit
               description: >-
-                If `duration` is "temporal" than `temporal_unit` is multiplied
-                by `temporal_amount` to define the duration that the coupon will
-                be applied to invoices for.
+                The temporal unit for the coupon's duration. Used with
+                temporal_amount to define how long the coupon applies. When
+                temporal_unit is billing_period, the coupon applies for
+                temporal_amount complete billing cycles rather than a fixed
+                calendar duration. billing_period requires
+                redemption_resource=subscription.
               type: string
               enum:
                 - day
                 - month
                 - week
                 - year
+                - billing_period
             coupon_type:
               title: Coupon type
               description: >-
