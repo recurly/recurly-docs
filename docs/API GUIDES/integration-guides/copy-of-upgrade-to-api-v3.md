@@ -1,100 +1,126 @@
 ---
-title: Copy of Upgrade to API V3
+title: Migrating from API v2 to v3 (secret)
 excerpt: >-
-  A comprehensive overview of changes when migrating from Recurly API v2 to v3,
-  detailing HTTP protocol updates, authentication, JSON-based requests, and
-  client library behavior.
+  Learn the key differences between Recurly API v2 and v3 — including
+  authentication, JSON transport, site scoping, identifier formats, and client
+  library design — so you can migrate your integration confidently.
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-# Overview
+<div class="rp-page">
 
-This guide helps you transition from Recurly API version 2 to version 3. It covers crucial differences in how v3 handles authentication, data formats, and client library design, ensuring a smoother, more transparent integration.
+<div class="rp-overview">
+This guide walks you through the most important changes between Recurly API v2 and v3. By the end, you'll understand how v3 handles authentication, data formats, versioning, identifiers, and client initialization differently — and what that means for your existing integration.
+</div>
 
-### Prerequisites & limitations
+<div class="rp-toc">
+  <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+  <a class="rp-toc-pill" href="#key-concepts"><span class="rp-toc-num">2</span>Key concepts</a>
+  <a class="rp-toc-pill" href="#http-api-differences"><span class="rp-toc-num">3</span>HTTP API differences</a>
+  <a class="rp-toc-pill" href="#client-library-differences"><span class="rp-toc-num">4</span>Client library differences</a>
+  <a class="rp-toc-pill" href="#error-handling-and-troubleshooting"><span class="rp-toc-num">5</span>Error handling</a>
+  <a class="rp-toc-pill" href="#testing-your-integration"><span class="rp-toc-num">6</span>Testing</a>
+  <a class="rp-toc-pill" href="#whats-next"><span class="rp-toc-num">7</span>What's next</a>
+</div>
 
-* Familiarity with Recurly API v2 and your current integration
-* Basic understanding of RESTful APIs and JSON
-* Access to Recurly with valid API credentials
-* Awareness that v3 is fully JSON-based (no XML)
-
-***
+</div>
 
 # Definition
 
-**API v3 Upgrade** refers to the process of adapting your existing API v2 integration to Recurly’s redesigned v3, which emphasizes JSON-based requests, explicit resource management, site scoping, and explicit client initialization. This shift provides clearer, more predictable network operations and helps avoid v2’s hidden complexity.
+Recurly API v3 is a ground-up redesign of the v2 REST API. It replaces XML with JSON throughout, introduces date-based versioning, scopes all requests to a specific site, and shifts the client library model from globally initialized, stateful objects to explicitly managed, inert resources. The result is an integration that is easier to debug, test, and reason about — especially when you manage multiple sites or run concurrent requests.
 
-***
+# Key concepts
 
-## HTTP API differences
+- **Druuid**: The internal identifier for a Recurly resource — a base36-encoded integer (e.g., `3w5e11264sgsg`). Useful for debugging or short-lived references.
+- **Friendly ID**: A human-readable external identifier you supply, used to reference resources in a stable, predictable way (e.g., `subdomain-mysite`, `code-myaccountcode`). Prefer these in your integration.
+- **Site scoping**: In v3, every API URL includes the target site. This replaces the v2 subdomain configuration and allows a single TCP connection to operate across multiple sites.
+- **Inert resources**: v3 resources returned from the server carry only data — no methods, no implicit sync behavior. Mutations require an explicit new request.
+- **Explicit client**: In v3, you instantiate and manage the API client directly in code. There is no global, process-level configuration.
 
-### Authentication
+# HTTP API differences
 
-V3 Clients still authenticate using an API key with HTTP basic auth. However, there is no longer a need for a subdomain, as the site must now be specified per request. For more details, see [Scoping by Site](#scoping-by-site).
+## Authentication
 
-### JSON
+v3 still uses your API key via HTTP Basic Auth — pass it as the username with an empty password. What changes is that you no longer need to configure a subdomain. Instead, the site is specified per request in the URL path. See [Scoping by site](#scoping-by-site) below.
 
-A significant change in V3 is that the transport layer is now entirely JSON-based. XML is no longer supported, and we no longer use "links."
-
-### Versioning
-
-The API is now versioned by date, replacing the previous `major.minor` format. The version date typically corresponds to the general availability (GA) release date, using the format `vYYYY-MM-DD`, e.g., `v2018-08-09`.
-
-### Breaking changes
-
-In V2, versioning was conservative due to ecosystem constraints, and changes didn't always result in version bumps. In V3, versions will only change when breaking changes are required. Additionally, we will provide a clear policy outlining our definition of breaking changes. This approach offers more flexibility, reducing the need for forced upgrades for customers.
-
-### Identifiers
-
-In V3, "links" are no longer used in resources, so it's important to be aware of which identifiers to use when interacting with the API. There are two types of identifiers in V3:
-
-1. **Druuids**: A Druuid is a base36-encoded integer used as the internal identifier for a resource.
-
-2. **Friendly IDs**: A Friendly ID is a unique, often human-readable, external identifier for a resource. It is frequently provided by you and can also be used to identify resources.
-
-An example, consider a `Site` resource:
-
-```json
-{
-  "id": "3w5e11264sgsg",
-  "subdomain": "mysite",
-  // ...
-}
+```bash
+curl -u YOUR_PRIVATE_API_KEY: \
+  https://v3.recurly.com/sites/YOUR_SITE_ID/accounts
 ```
 
-You can use one of the two formats anywhere a site can be referenced. Consider the endpoint to fetch a Site:
+<div class="rp-callout rp-callout-warning">
+<strong>Security note</strong>Never embed your private API key in client-side code or version control. Use environment variables or a secrets manager in production.
+</div>
 
-`GET /sites/{site_id}`
+## JSON transport
 
-You can use the Druuid (id):
+v3 is entirely JSON-based. XML is no longer supported, and the "links" pattern used in v2 responses has been removed. Every request and response body is JSON.
 
-`GET /sites/3w5e11264sgsg`
+## Versioning
 
-or a friendly id (use format `{property_name}-{property_value}`)
+v3 uses date-based versioning in the format `vYYYY-MM-DD` (e.g., `v2018-08-09`), corresponding to the GA release date. This replaces the `major.minor` format from v2.
 
-`GET /sites/subdomain-mysite`
+In v2, breaking changes didn't always produce a version bump due to ecosystem constraints. In v3, **versions only increment when breaking changes are introduced**, and Recurly publishes a clear definition of what constitutes a breaking change. This means fewer forced upgrades for non-breaking improvements.
 
-All ids are interchangeable, but we recommend you use a friendly id wherever possible as it is often the identifier you\
-will store on your system. The Druuid can be useful for debugging or transient usage.
+## Identifiers
 
-### Scoping by site
+v3 removes "links" from resources. You reference resources directly by identifier. There are two identifier types:
 
-In V3, the API no longer assumes that a client will handle only one site. While the client libraries provide abstractions to maintain this approach if your system is designed that way, at the API level, all URLs must now be scoped by the site you intend to operate on. For example:
+<table class="rp-params">
+  <tr class="rp-thead-row">
+    <td>Type</td>
+    <td>Format</td>
+    <td>Example</td>
+    <td>When to use</td>
+  </tr>
+  <tr>
+    <td>Druuid</td>
+    <td>Base36-encoded integer</td>
+    <td><code>3w5e11264sgsg</code></td>
+    <td>Debugging, transient references</td>
+  </tr>
+  <tr>
+    <td>Friendly ID</td>
+    <td><code>PROPERTY_NAME-PROPERTY_VALUE</code></td>
+    <td><code>subdomain-mysite</code>, <code>code-myaccountcode</code></td>
+    <td>All normal usage — prefer this in your integration</td>
+  </tr>
+</table>
 
-`GET /sites/subdomain-mysite/accounts/code-myaccountcode`
+Both formats are interchangeable anywhere an ID is accepted. Use friendly IDs wherever possible — they're the identifiers you'll typically store on your system, and they make requests self-documenting.
 
-This approach is particularly useful if you manage multiple sites, as it allows you to reuse a single TCP connection to perform operations across different sites.
+**Example — fetching a Site by Druuid:**
 
-## Client library differences
+```bash
+GET /sites/3w5e11264sgsg
+```
 
-### Explicitly managed clients
+**Example — fetching the same Site by friendly ID:**
 
-In V2, client instances were globally and statically initialized for convenience, under the assumption that a single client would operate on a single site. Additionally, the connection and the request/response cycle were abstracted from the developer. Example with the V2 ruby client:
+```bash
+GET /sites/subdomain-mysite
+```
+
+## Scoping by site
+
+In v3, the API no longer assumes a single site per client. Every URL is scoped to the target site:
+
+```bash
+GET /sites/subdomain-mysite/accounts/code-myaccountcode
+```
+
+This approach is especially useful when managing multiple sites — a single authenticated TCP connection can perform operations across all of them without reconfiguration.
+
+# Client library differences
+
+## Explicitly managed clients
+
+v2 used a globally and statically initialized client, with the assumption that one process handled one site. Network calls were hidden inside resource objects.
 
 ```ruby
-# client initialized globally for the whole process
+# V2 — client initialized globally for the whole process
 Recurly.subdomain = "mysite"
 Recurly.api_key   = "fad7b04dc787ab7809e8d90e9df73cf7"
 
@@ -104,16 +130,16 @@ account.first_name = "Benjamin"
 account.save!
 ```
 
-This design in V2 led to a few unintended consequences:
+This design caused three concrete problems:
 
-1. **Hidden network calls**: Since network calls were abstracted, it could unintentionally lead to performance issues and make testing more difficult.
-2. **Distributed network calls**: Network requests were spread across different objects and modules, complicating debugging and tracing.
-3. **Thread safety issues**: Changing the site in V2 was not thread-safe, which could result in race conditions or inconsistent states.
+- **Hidden network calls** — Because network I/O was abstracted into resource methods, it was easy to trigger unintentional API calls and difficult to write reliable tests.
+- **Distributed network calls** — Requests originated from scattered objects and modules, making traces and debugging painful.
+- **Thread safety issues** — Changing the site configuration was not thread-safe, which could produce race conditions when handling concurrent requests.
 
-In V3, developers must explicitly initialize and manage the client, which resolves these issues. This approach provides more control over network operations, improves performance awareness, and ensures thread safety when working with multiple sites.
+v3 requires you to instantiate and manage the client explicitly:
 
 ```ruby
-# you must explicitly create and manage this connection now
+# V3 — you must explicitly create and manage this connection now
 client = Recurly::Client.new(api_key: "fad7b04dc787ab7809e8d90e9df73cf7")
 
 id = "code-myaccountcode"
@@ -122,16 +148,20 @@ account = client.get_account(account_id: id)
 account = client.update_account(account_id: id, body: { first_name: "Benjamin" })
 ```
 
-### Inert resources
+This resolves all three issues. You control when and where network calls happen, and the client is safe to use across threads.
 
-In V2, the mixing of data and behavior introduced several challenges:
+<div class="rp-callout rp-callout-tip">
+<strong>Tip</strong>Store your API key in an environment variable (<code>ENV['RECURLY_PRIVATE_KEY']</code> in Ruby, <code>process.env.RECURLY_PRIVATE_KEY</code> in Node.js) rather than hardcoding it. The examples above use a literal key for illustration only.
+</div>
 
-1. **Opaque network calls**: It was difficult to predict the contents of network requests, making it harder to debug and understand what data was being sent or received.
-2. **State tracking issues**: Internal state tracking was required to build up requests, which often led to subtle bugs and inconsistencies.
+## Inert resources
 
-In V3, the resources returned from the server are inert—they contain no behavior, only properties. Instead of mutating resources locally and "syncing" their state back to the server, you must explicitly send a request to the server and receive a fresh resource in return.
+In v2, resource objects mixed data with behavior. You'd modify a resource's properties locally and call `.save!` to sync the changes back to the server. This pattern had two downsides:
 
-Consider the account example again:
+- **Opaque network calls** — It was hard to predict what data a `.save!` would actually send.
+- **State tracking bugs** — Internally, the library had to track which fields changed, and that logic introduced subtle, hard-to-reproduce bugs.
+
+In v3, resources are inert — they hold only data, with no methods to call. To change something on the server, you send an explicit request and receive a fresh resource in return:
 
 ```ruby
 id = "code-myaccountcode"
@@ -141,4 +171,63 @@ account = client.get_account(account_id: id)
 account = client.update_account(account_id: id, body: { first_name: "Benjamin" })
 ```
 
-This new approach makes it much clearer what the underlying JSON request will look like, as each request is explicit. It also eliminates the state tracking bugs that you may have encountered with the previous method, as there is no longer any implicit synchronization of resource state between the client and the server.
+Each request maps directly to one JSON payload. There's no implicit state, no hidden sync logic, and no ambiguity about what's being sent.
+
+# Error handling and troubleshooting
+
+## API error codes
+
+| HTTP status | Error type | Meaning | What to do |
+|---|---|---|---|
+| `400` | `validation` | One or more request parameters failed validation | Check the `params` array in the error response body for specifics |
+| `401` | `unauthorized` | API key is missing or invalid | Verify your API key and confirm it has the correct permissions in the Recurly Admin Dashboard |
+| `404` | `not_found` | The requested resource does not exist | Double-check the resource ID and site ID in your request URL |
+| `422` | `transaction_error` | Payment was declined or could not be processed | Inspect the `transaction_error` object for the decline reason and customer-facing message |
+| `429` | `rate_limited` | Too many requests in a short period | Implement exponential backoff; v3 rate limits apply per site, not per API key |
+
+## Common issues
+
+**My v2 code sends a subdomain but v3 returns a 404.**
+v3 no longer accepts a subdomain configuration on the client. The site must be specified in the URL path using a friendly ID (`subdomain-mysite`) or Druuid. Update your URLs to the scoped format: `/sites/subdomain-mysite/accounts/...`.
+
+**I'm getting `site_id is not defined` errors in ReadMe.**
+ReadMe's MDX renderer evaluates anything wrapped in curly braces as a JSX expression — including inside fenced code blocks and inline code spans. Replace curly-brace placeholders like `site_id` or `account_code` in your curl examples with `ALL_CAPS` equivalents: `YOUR_SITE_ID`, `YOUR_ACCOUNT_CODE`, etc. SDK examples are unaffected — they pass IDs as function arguments, not URL strings.
+
+**My `.save!` calls don't exist in v3.**
+v3 resources are inert — they carry no methods. Replace `resource.attribute = value; resource.save!` with an explicit `client.update_[resource]` call that passes the changed fields in the `body` hash.
+
+**Changing the site mid-process causes unexpected behavior.**
+In v2, changing `Recurly.subdomain` was not thread-safe. In v3, instantiate a separate client per site or pass the site ID per request. The v3 client is designed for this pattern.
+
+# Testing your integration
+
+## Sandbox environment
+
+Use your **test site API key** during development. Test credentials are fully isolated from live data — no real charges, no live customer impact.
+
+| Test card number | Behavior |
+|---|---|
+| `4111 1111 1111 1111` | Successful charge |
+| `4000 0000 0000 0002` | Declined — generic |
+| `4000 0000 0000 0341` | Declined — expired card |
+
+For subscription lifecycle testing, use the **Time Machine** feature in the Recurly Admin Dashboard to simulate renewals, expirations, and billing cycles without waiting for real time to pass.
+
+## Verifying the migration
+
+After updating your integration to v3:
+
+1. Confirm all API calls use the scoped URL format (`/sites/YOUR_SITE_ID/...`).
+2. Confirm every client instantiation uses `Recurly::Client.new(api_key: ...)` rather than global configuration.
+3. Confirm no code calls `.save!` or mutates resource objects — all updates should go through explicit `client.update_*` calls.
+4. Run your full test suite against the sandbox before pointing any configuration at your live site credentials.
+
+# What's next
+
+<Cards>
+  <Card title="Full API reference" icon="book" href="/docs/api" target="_blank">Complete endpoint documentation for all Recurly v3 resources and parameters.</Card>
+  <Card title="Recurly.js" icon="code" href="/docs/recurly-js" target="_blank">Collect payment information securely in the browser without handling raw card data in your server.</Card>
+  <Card title="Webhooks" icon="bell" href="/docs/webhooks" target="_blank">Respond to real-time subscription lifecycle events without polling the API.</Card>
+  <Card title="Testing your integration" icon="flask" href="/docs/testing" target="_blank">Test card numbers, sandbox setup details, and the Time Machine feature.</Card>
+  <Card title="API changelog" icon="clock" href="/docs/api-changelog" target="_blank">A full record of v3 version dates and the breaking changes that triggered each one.</Card>
+</Cards>
