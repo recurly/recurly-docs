@@ -856,7 +856,7 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
 # What's next
 
 <Cards>
-  <Card title="API reference" href="reference">Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.</Card>
+  <Card title="API reference" href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference#overview">Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.</Card>
   <Card title="Recurly.js" href="/docs/recurly-js">Tokenize card data securely in the browser so raw card numbers never touch your server.</Card>
   <Card title="Webhooks" href="/docs/webhooks">Full reference for every webhook event type, payload schemas, signature verification, and retry behavior.</Card>
   <Card title="Dunning and payment recovery" href="/docs/dunning">Configure automated retry schedules and customer communications for failed payments.</Card>
