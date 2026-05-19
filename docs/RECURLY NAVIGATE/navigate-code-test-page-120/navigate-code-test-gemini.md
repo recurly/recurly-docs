@@ -40,7 +40,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* Hero */
 .rc-hero { background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)), url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color: var(--offblack); background-size: cover; color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0; }
-.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45); color: #FF9D88; font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
+.rc-lp-pillar-tag { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45); color: var(--retain); font-size: .75rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 20px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
@@ -50,11 +50,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px; }
 .rc-hero-stat { text-align: center; padding: 0 16px; }
 .rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--retain); line-height: 1; margin-bottom: 6px; }
+.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
 .rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); line-height: 1.3; }
 
 /* Non-Sticky Expanded Nav */
-details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: var(--retain); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
+details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: var(--yellow); box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker, details.rc-sticky-nav-wrap > summary::marker { display: none; }
 .rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--offblack); }
@@ -76,6 +76,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Content Headings & Text */
 .rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 .rc-lp-section h3 { font-size: 1.2rem; font-weight: 800; margin: 32px 0 16px; color: var(--offblack); }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
@@ -83,7 +84,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0 32px; }
 .rc-card-grid-3col { grid-template-columns: repeat(3, 1fr); }
 .rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: var(--retain); box-shadow: 0 4px 16px rgba(255,157,136,0.15); transform: translateY(-2px); }
+.rc-feature-card:hover { border-color: var(--yellow); box-shadow: 0 4px 16px rgba(255,215,6,0.15); transform: translateY(-2px); }
 .rc-feature-icon { font-size: 1.6rem; line-height: 1; margin-bottom: 4px; }
 .rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
 .rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; }
@@ -92,10 +93,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout-icon { font-size: 1.2rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
-.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; color: var(--offblack); text-transform: uppercase; letter-spacing: 0.5px; }
+.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; color: var(--offblack); }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
 .rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
-.rc-callout-warning { background: #FFF8E6; border-left: 4px solid var(--orange); }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
 
 /* Table */
 .rc-table { width: 100%; border-collapse: collapse; margin-bottom: 32px; border-radius: 10px; overflow: hidden; border: 1px solid var(--lightgray); }
@@ -110,17 +111,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* Path Navigation */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
-.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); }
+.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); border-bottom: 2px solid var(--yellow) !important; }
 .rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
 .rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; }
 
 /* Footer Nav */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
-.rc-footer-links { display: flex; flex-direction: column; gap: 24px; }
+.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
 .rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; }
 .rc-footer-link:hover { color: var(--orange); }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
 @media(max-width:768px){
@@ -152,7 +155,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> RETAIN
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> RETAIN &middot; DUNNING 101
       </div>
       <div class="rc-lp-hero-title">
         <h1>Understanding Dunning</h1>
@@ -180,11 +183,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <a href="/docs/navigate-home" class="rc-sticky-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home</a>
-            <a href="/docs/understanding-dunning-1" class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt="Current Page"> How it Works</a>
+            <a href="/docs/navigate-home" class="rc-sticky-link">
+              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+            </a>
+            <a href="/docs/understanding-dunning-1" class="rc-sticky-link rc-sticky-link-active">
+              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt="Current Page"> How it Works
+            </a>
             <a href="/docs/understanding-dunning-2" class="rc-sticky-link"><span class="rc-step-badge">2</span> Why it Matters</a>
             <a href="/docs/understanding-dunning-3" class="rc-sticky-link"><span class="rc-step-badge">3</span> Your Revenue Toolkit</a>
-            <a href="/docs/dunning-101-overview" class="rc-sticky-link"><img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt="Return"> Back to Path Start</a>
+            <a href="/docs/dunning-101-overview" class="rc-sticky-link">
+              <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt="Return"> Back to Path Start
+            </a>
           </div>
         </div>
       </div>
@@ -265,7 +274,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">1 of 3</span>
+      <span class="rc-lp-nav-indicator">1 of 3 &middot; Understanding Dunning</span>
       <a href="/docs/understanding-dunning-2" class="rc-btn-path">Next: Why it Matters &#8594;</a>
     </div>
 
@@ -280,37 +289,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
 
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Micro-Path: Setup &amp; Configuration:</span>
-          <a href="/docs/dunning-101-setup" class="rc-footer-link">Start Micro-Path</a>
-        </div>
-
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Micro-Path: Email Strategy:</span>
-          <a href="/docs/dunning-101-email-strategy" class="rc-footer-link">Start Micro-Path</a>
-        </div>
-
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Micro-Path: Subscriber Engagement:</span>
-          <a href="/docs/dunning-101-subscriber-engagement" class="rc-footer-link">Start Micro-Path</a>
-        </div>
-
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Micro-Path: Advanced Configuration:</span>
-          <a href="/docs/dunning-101-advanced-configuration" class="rc-footer-link">Start Micro-Path</a>
-        </div>
-
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Micro-Path: Metrics &amp; Tracking:</span>
-          <a href="/docs/dunning-101-metrics" class="rc-footer-link">Start Micro-Path</a>
-        </div>
-        
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Path Completion:</span>
-          <a href="/docs/dunning-101-strategy-and-resources" class="rc-footer-link">Review &amp; Resources</a>
+          <span class="rc-footer-label">Learning Path: Dunning 101:</span>
+          <a href="/docs/dunning-101-overview" class="rc-footer-link">Dunning 101 Overview</a>
+          <a href="/docs/dunning-101-setup" class="rc-footer-link">Setup &amp; Configuration</a>
+          <a href="/docs/dunning-101-email-strategy" class="rc-footer-link">Email Strategy</a>
+          <a href="/docs/dunning-101-subscriber-engagement" class="rc-footer-link">Subscriber Engagement</a>
+          <a href="/docs/dunning-101-advanced-configuration" class="rc-footer-link">Advanced Configuration</a>
+          <a href="/docs/dunning-101-metrics" class="rc-footer-link">Metrics &amp; Tracking</a>
+          <a href="/docs/dunning-101-strategy-and-resources" class="rc-footer-link">Strategy &amp; Resources</a>
         </div>
 
         <div class="rc-footer-utility">
-          <a href="/docs/navigate-home" class="rc-footer-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home</a>
+          <a href="/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
           <a href="mailto:support@recurly.com" target="_blank" rel="noopener noreferrer" class="rc-footer-link">Contact Support</a>
         </div>
         
