@@ -1,5 +1,5 @@
 ---
-title: Navigate Code Testing Learning Path
+title: 'Navigate Code Testing Learning Path: Account Updater'
 deprecated: false
 hidden: true
 metadata:
