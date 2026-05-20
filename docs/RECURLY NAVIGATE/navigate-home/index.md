@@ -1,8 +1,27 @@
 ---
 title: 'Welcome to Navigate: Home Page'
+excerpt: >-
+  Explore Recurly Navigate, your Subscription Success Hub. Access expert
+  learning paths to launch, acquire, retain, and scale your recurring revenue
+  business.
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Explore Recurly Navigate, your Subscription Success Hub. Access expert
+    learning paths to launch, acquire, retain, and scale your recurring revenue
+    business.
+  keywords:
+    - Recurly Navigate
+    - Subscription Success Hub
+    - Subscription Growth Strategy
+    - Recurring Revenue Management
+    - Involuntary Churn Recovery
+    - Subscriber Acquisition Strategies
+    - Subscription Business Scaling
+    - Dunning Management
+    - Churn Reduction Best Practices
+    - and Merchant Education
   robots: index
 ---
 <HTMLBlock>{`
