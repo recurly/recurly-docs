@@ -16,220 +16,354 @@ metadata:
 next:
   description: ''
 ---
-<br />
+<div class="rp-page">
 
-<HTMLBlock>{`
-<div></div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h61lgTgxoRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<style></style>
-`}</HTMLBlock>
+  <div class="rp-overview">
+    The item catalog is a centralized library of everything you sell. Define an item once and use it anywhere — as a one-time charge on an account, a recurring add-on on a plan, or directly on an individual subscription. The catalog keeps your product attributes consistent across every sales channel while giving you the flexibility to price and package items however your business needs.
+  </div>
 
-> 🚧 Pre-requisite features
->
-> In order to use this feature, your site must be configured with the [Credit Invoices](https://docs.recurly.com/docs/credit-invoices-release), [Only Bill What Changed](https://docs.recurly.com/docs/only-bill-what-changed), and [Subscription Billing Terms](https://docs.recurly.com/docs/subscription-terms-new) features. Please contact us if you would like more information about upgrading to these features.
->
-> Recurly sites created after July 26, 2018 will automatically have these features and Item Catalog enabled.
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/h61lgTgxoRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Dashboard
+  <div class="rp-plan">✦ Available on all Recurly plans</div>
 
-Your [Items dashboard][1] contains the list of items defined in your Recurly item catalog. You can select any item name to view detailed item information, edit the item, or disable / re-enable the item.
+  ### Prerequisites
+  <ul class="rp-list">
+    <li>Your site must have <a href="https://docs.recurly.com/docs/credit-invoices-release" target="_blank">Credit Invoices</a>, <a href="https://docs.recurly.com/docs/only-bill-what-changed" target="_blank">Only Bill What Changed</a>, and <a href="https://docs.recurly.com/docs/subscription-terms-new" target="_blank">Subscription Billing Terms</a> enabled. Recurly sites created after July 26, 2018 have these features and item catalog enabled automatically.</li>
+  </ul>
 
-[1]: https://app.recurly.com/go/items
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#the-items-dashboard"><span class="rp-toc-num">3</span>The items dashboard</a>
+    <a class="rp-toc-pill" href="#create-an-item"><span class="rp-toc-num">4</span>Create an item</a>
+    <a class="rp-toc-pill" href="#manage-items"><span class="rp-toc-num">5</span>Manage items</a>
+    <a class="rp-toc-pill" href="#sell-items"><span class="rp-toc-num">6</span>Sell items</a>
+    <a class="rp-toc-pill" href="#item-data-and-exports"><span class="rp-toc-num">7</span>Item data and exports</a>
+    <a class="rp-toc-pill" href="#api-and-client-libraries"><span class="rp-toc-num">8</span>API and client libraries</a>
+  </div>
 
-<Image align="center" alt={2238} border={true} caption="Item Dashboard example" title="Items_—_Recurly.png" src="https://files.readme.io/a436fec-Items__Recurly.png" width="100% " />
+</div>
 
-## Creating items
+# Definition
 
-Under the Configuration menu, select "Items" to access your main Items page. From there, select **Create New Item**. Items can also be created via our <a href="https://dev.recurly.com/docs/create-item" target="_blank">v2</a> and <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_item" target="_blank">v3</a> APIs. If you would like assistance importing a large item catalog into Recurly, our Professional Services organization is available to help or you can leverage our simple <a href="https://developers.recurly.com/guides/multi_item_upload.html" target="_blank">Multi-Item Upload Guide</a>.
+<div class="rp-definition">
+  The item catalog is a collection of reusable sellable units — products, services, and add-ons — that can be sold as one-time charges or recurring subscription charges across any plan. Items are not inherently one-time or recurring; the same item can be used in both contexts for maximum flexibility.
+</div>
 
-To add a new item to your catalog, you'll need to define the following parameters:
+# Key benefits
 
-#### Item name
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>One item, every channel</strong>
+    <span>Sell the same catalog item as a one-time charge, a plan add-on, or directly on a subscription — without duplicating your setup.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Reuse across plans</strong>
+    <span>Define an item once and attach it to as many plans as needed, keeping pricing and attributes consistent across your entire product catalog.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Built-in compliance support</strong>
+    <span>Item name and description fields are guided by card brand regulatory requirements, helping you stay compliant without extra work.</span>
+  </div>
+</div>
 
-This is the name that will appear on the <a href="https://docs.recurly.com/docs/hosted-pages" target="_blank">Hosted Account Management Page</a> and the subscriber's invoice. (255 character limit. Your payment gateway may also place limitations on charge names, avoid using special characters without checking with your gateway provider first.)
+# The items dashboard
 
-For **Card Brand regulatory compliance**, the Item Name should meet the following criteria:
+Your <a href="https://app.recurly.com/go/items" target="_blank">items dashboard</a> lists all items defined in your Recurly item catalog. Select any item name to view its details, edit it, or disable and re-enable it.
 
-* The item Name should not be the same or nearly the same as the merchant name.
-* The name should not be contained within the merchant name. Example: the merchant name is “John Book Stores” and the description is “John Book” or “Book Stores” or “John Store” or ““John Book Store”.
-* The name should not contain a single character or only special characters.
-* The name should provide details on what was purchased. For instance, it cannot be generic words like “Services”, “Purchase”, “Product”.
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-items-dashboard" class="rp-zoom-toggle" />
+  <label for="zoom-items-dashboard">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/a436fec-Items__Recurly.png"
+         alt="Item catalog dashboard showing list of items"
+         style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-items-dashboard" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/a436fec-Items__Recurly.png" alt="" />
+  </label>
+</span>
 
-#### Item code
+# Create an item
 
-This is the item's unique Recurly identifier and is used in <a href="https://docs.recurly.com/docs/hosted-pages" target="_blank">Hosted Account Management Page</a> URLs and to fetch items via the <a href="https://developers.recurly.com/api/latest.html#tag/item" target="_blank">API</a>. For merchants using the Product field in Vertex, that value should be entered here. (50 character limit. Accepts numbers, lowercase letters, dashes, pluses, and underscores only.)
+Under the **Configuration** menu, select **Items**, then click **Create New Item**. Items can also be created via the <a href="https://dev.recurly.com/docs/create-item" target="_blank">v2</a> and <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_item" target="_blank">v3</a> APIs. For large catalog imports, use the <a href="https://developers.recurly.com/guides/multi_item_upload.html" target="_blank">Multi-Item Upload Guide</a> or contact Professional Services for assistance.
 
-#### External SKU
+Define the following parameters when creating an item:
 
-This optional field can be used to associate items in Recurly with other systems/platforms. External SKU can be re-used across items if desired. (50 character limit.)
+## Item fields
 
-#### Item description
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
+  <tr>
+    <td><strong>Item name</strong></td>
+    <td>
+      Appears on the <a href="https://docs.recurly.com/docs/hosted-pages" target="_blank">Hosted Account Management Page</a> and the subscriber's invoice. Limit: 255 characters. Avoid special characters without checking with your gateway provider first.
+      <br /><br />
+      <strong>Card brand compliance requirements:</strong> The name must not match or closely resemble the merchant name, must not be contained within the merchant name, must not be a single character or only special characters, and must describe what was purchased — generic terms like "Services" or "Product" are not permitted.
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Item code</strong></td>
+    <td>The item's unique Recurly identifier, used in Hosted Account Management Page URLs and API requests. For Vertex users, enter the Product field value here. Limit: 50 characters. Accepts numbers, lowercase letters, dashes, pluses, and underscores only.</td>
+  </tr>
+  <tr>
+    <td><strong>External SKU</strong></td>
+    <td>Optional. Associates items in Recurly with other systems or platforms. Can be reused across items. Limit: 50 characters.</td>
+  </tr>
+  <tr>
+    <td><strong>Item description</strong></td>
+    <td>
+      A description of the item, displayable to customers outside Recurly if configured via the API.
+      <br /><br />
+      <strong>Card brand compliance requirements:</strong> The description must detail what was purchased, must not match or closely resemble the merchant name, must not be a single character or only special characters, and must not use generic terms like "Services" or "Product."
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Accounting code</strong></td>
+    <td>Optional. Identifies invoice line items in exports. Limit: 25 characters. Accepts numbers, lowercase letters, dashes, pluses, and underscores only.</td>
+  </tr>
+  <tr>
+    <td><strong>HS code / Commodity code</strong></td>
+    <td>A Harmonized System (HS) code for invoice compliance on traded products — a six-digit international standard developed by the <a href="https://www.wcoomd.org/en/topics/nomenclature/overview.aspx" target="_blank">World Customs Organization</a> for classifying goods. Countries may add digits for regional classification. Limit: 25 lowercase alphanumeric characters.</td>
+  </tr>
+  <tr>
+    <td><strong>Default price</strong></td>
+    <td>The default charge amount for this item. Can be overridden at the time of charge creation.</td>
+  </tr>
+  <tr>
+    <td><strong>Revenue recognition</strong></td>
+    <td>If <a href="https://docs.recurly.com/docs/revenue-recognition" target="_blank">Revenue Recognition</a> is enabled, specifies how invoiced charges from this item are realized as revenue. Can be modified during charge creation.</td>
+  </tr>
+  <tr>
+    <td><strong>Taxes</strong></td>
+    <td>If taxation is enabled, specifies whether and how sales of this item are taxed. These values carry over to all sales of the item.</td>
+  </tr>
+</table>
 
-A description of the item, this can be displayed to your customers outside Recurly if configured via the API.
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-hs-code-field" class="rp-zoom-toggle" />
+  <label for="zoom-hs-code-field">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/6f59950ffaa1c46e6b94ba73a68b535526abd3c8aea540aedf997a7b1e7204b9-image.png"
+         alt="HS code field in item creation form"
+         style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-hs-code-field" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/6f59950ffaa1c46e6b94ba73a68b535526abd3c8aea540aedf997a7b1e7204b9-image.png" alt="" />
+  </label>
+</span>
 
-For **Card Brand regulatory compliance**, the Item Description should meet the following criteria:
+## Custom fields
 
-* The description should provide detail on what was actually purchased.
-* The description should not be the same or nearly the same as the merchant name.
-* The description should not be contained within the merchant name. Example: the merchant name is “John Book Stores” and the description is “John Book” or “Book Stores” or “John Store” or ““John Book Store”.
-* The description should not contain a single character or only special characters.
-* The description should provide details on what was purchased. For instance, it cannot be generic words like “Services”, “Purchase”, “Product”.
+Custom fields let you track additional item attributes beyond the standard fields — product variants, categories, family groupings, and more.
 
-#### Accounting code
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-custom-fields" class="rp-zoom-toggle" />
+  <label for="zoom-custom-fields">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/65ddc56-Item_Details__Recurly.png"
+         alt="Custom fields on the item details page"
+         style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-custom-fields" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/65ddc56-Item_Details__Recurly.png" alt="" />
+  </label>
+</span>
 
-This optional field can be used to help identify invoice line items in exports. (25 character limit. Accepts numbers, lowercase letters, dashes, pluses, and underscores only.)
+See the <a href="https://docs.recurly.com/docs/custom-fields" target="_blank">custom fields documentation</a> for details on creating custom fields. To add one to your items, select **Item** as the Recurly Object when creating the field — it will then appear on the item form in the UI and through the API.
 
-#### HS code/Commodity code
+## Item ID
 
-HS Code refers to the Harmonized System (HS) code, a six-digit international standard developed by the [World Customs Organization (WCO)](https://www.wcoomd.org/en/topics/nomenclature/overview.aspx)  for classifying goods in international trade. This standardized nomenclature provides a legal and logical structure for classifying products, forming the basis for customs tariffs, trade statistics, rules of origin, and the monitoring of controlled goods in over 200 economies worldwide.
+When looking up an item via the API or in exports, you'll see a system-generated 19-character alphanumeric Item ID. This ID cannot be user-specified or edited.
 
-Enter a Harmonized System (HS) code or Commodity Code to meet invoice compliance requirements for traded products. Generally, HS Code consists of at least six digits, with countries adding more digits for further national or regional classification. Recurly limits to 25 lowercase alphanumeric characters.
+# Manage items
 
-<Image align="center" border={false} width="75% " src="https://files.readme.io/6f59950ffaa1c46e6b94ba73a68b535526abd3c8aea540aedf997a7b1e7204b9-image.png" />
+## Editing items
 
-#### Default price
+Editing an item's attributes updates them going forward but does not affect past sales, existing plans, or existing subscriptions containing that item. For example, updating a default price changes it for new plans and charges only — previously created plans, subscriptions, and one-time charges keep their original price. Exports reflect item attributes as they were at the time of billing.
 
-The default amount to be charged for this item if a different price isn't specified during charge creation.
-
-#### Revenue recognition
-
-If the <a href="https://docs.recurly.com/docs/revenue-recognition" target="_blank">Revenue Recognition</a> feature is enabled, this field specifies how invoiced charges from this item should be realized as revenue. The item's default revenue recognition schedule can be modified during charge creation.
-
-#### Taxes
-
-If taxation is enabled, these fields specify whether sales of this item should be taxed, and how they should be taxed. The value(s) specified will carry over to all sales of the item.
-
-### Custom fields
-
-Recurly's custom fields can be used to track additional item attributes or identifiers beyond those listed above. Use these to capture product variant details, product family/category, and more.
-
-<Image align="center" alt={1576} border={true} caption="Custom Fields example" title="Item_Details_—_Recurly.png" src="https://files.readme.io/65ddc56-Item_Details__Recurly.png" />
-
-See our <a href="https://docs.recurly.com/docs/custom-fields" target="_blank">Custom Fields</a> documentation for detailed information about creating custom fields in Recurly. To add a custom field to the items in your catalog, simply select "Item" as the Recurly Object when you create a custom field. The next time you create or edit an item in your catalog, you will see the custom field available on the UI form or through the API.
-
-### Item ID
-
-When you look up an item in the API or in exports, you will see a 19-character alphanumeric Item ID. This is a system-generated ID to reference your item and cannot be user-specified or edited.
+Items can be managed via the <a href="https://developers.recurly.com/api/latest.html#tag/item" target="_blank">Items API</a> and the Recurly Admin Console.
 
 ## Disabling items
 
-Disabling an item will prevent it from being sold going forward. Existing uninvoiced charges with this item (both one-time charges and subscription charges) will not be affected and should be removed manually, if necessary. Disabled items can still be edited, to keep them up to date with your system of record should you choose to enable them again in the future. Once an item is re-enabled, it can be actively sold again. Items can be disabled and re-enabled via the Recurly Admin Console and the API.
+Disabling an item prevents it from being sold going forward. Existing uninvoiced charges for the item are not affected and should be removed manually if needed. Disabled items can still be edited to stay in sync with your system of record. Once re-enabled, an item can be actively sold again. Disabling and re-enabling can be done via the Admin Console and the API.
 
-## Managing items
+## Webhooks for item management
 
-Editing an item via the Recurly Admin Console or API will change the item's attributes going forward, but will not impact past sales of the item or existing plans or subscriptions containing the item. For example, if an item's default price is updated, previously-created plans, subscriptions, and one-time charges for the item will remain the same, whether they have been invoiced or not, but new plans and one-time charges for the item will default to the new item price. Exports that show item sales will reflect the item attributes at the time the item was billed.
+Use item-specific webhook notifications with the Items API to keep your catalog in sync with downstream systems. Webhooks are available for item creation, updates, disables, and re-enables. See the <a href="https://developers.recurly.com/pages/webhooks.html#item-notifications" target="_blank">webhook documentation</a> for details.
 
-Here's the content with the link converted to HTML syntax to open in a new window, while retaining the rest of the markdown:
+# Sell items
 
-Items in your Catalog can be maintained via the <a href="https://developers.recurly.com/api/latest.html#tag/item" target="_blank">Items</a> API and the Recurly Admin Console. Item alerts are available via our webhook notifications.
+Items can be sold as one-time charges on accounts or as recurring charges (add-ons) on plans and subscriptions.
 
-### Item management using webhooks
+## One-time item charges
 
-You can use our item-specific webhook notifications in conjunction with the Items API endpoint to help keep your items in Recurly in sync with any downstream systems. Webhooks are available for new item creation, item updates, and item disables and re-enables. Additional information about these item notifications is available in our <a href="https://developers.recurly.com/pages/webhooks.html#item-notifications" target="_blank">webhook documentation</a>.
+When creating a one-time charge via the Admin Console, select **Item** as the charge type. Via the API, provide the appropriate item code. The charge description, product code, accounting code, tax settings, price, and revenue recognition all auto-populate from the item — though price and revenue recognition can be overridden for the individual charge.
 
-## Selling Items
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-one-time-charge" class="rp-zoom-toggle" />
+  <label for="zoom-one-time-charge">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/c9d0bfa-Add_Charge__Recurly.png"
+         alt="Creating a one-time item charge in the Admin Console"
+         style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-one-time-charge" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/c9d0bfa-Add_Charge__Recurly.png" alt="" />
+  </label>
+</span>
 
-Items in your catalog can be sold as one-time charges on Accounts and as recurring charges (called add-ons) on Plans and Subscriptions. Each item can be sold via any channel for maximum flexibility and data tracking; the item itself is not "one-time" or "recurring".
+One-time item charges can be created via the <a href="https://developers.recurly.com/api/latest.html#tag/purchase" target="_blank">Purchases</a>, <a href="https://developers.recurly.com/api/latest.html#tag/line_item" target="_blank">Line Items</a>, or <a href="https://dev.recurly.com/docs/adjustment-object" target="_blank">Adjustments</a> API endpoints.
 
-### One-Time Item Sales
+## Recurring item sales
 
-Information about creating one-time charges can be found <a href="https://docs.recurly.com/docs/adjustments#section-creating-charges" target="_blank">here</a>. Simply select "Item" as the **Charge Type** when creating a one-time charge via the Admin Console, or send the appropriate Item Code when creating a charge via the API.
+Items can be sold on a recurring basis as add-ons on plans and subscriptions. Two approaches are available.
 
-<Image align="center" alt={1696} border={true} caption="Creating a One-Time Item Charge" title="Add_Charge_—_Recurly.png" src="https://files.readme.io/c9d0bfa-Add_Charge__Recurly.png" />
+### Selling items as plan add-ons
 
-The charge Description, Product Code, Accounting Code, and Tax settings will be auto-populated from the item. The Price and Revenue Recognition for the charge will also be auto-populated from the item, but these fields can be changed to reflect the desired values for this particular charge.
+Configuring items as add-ons on a plan restricts what subscribers to that plan can select. To set this up, select the desired item(s) from the dropdown in the Plan Add-Ons section of the New Plan page, or provide the item code(s) when creating a plan via the API.
 
-These one-time item charges can be created via the <a href="https://developers.recurly.com/api/latest.html#tag/purchase" target="_blank">Purchases</a> endpoint, the <a href="https://developers.recurly.com/api/latest.html#tag/line_item" target="_blank">Line Items</a> endpoint, or the <a href="https://dev.recurly.com/docs/adjustment-object" target="_blank">Adjustments</a> endpoint in Recurly's API.
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-plan-addons-item" class="rp-zoom-toggle" />
+  <label for="zoom-plan-addons-item">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/f55b784-Plan_Add-Ons.png"
+         alt="Creating a recurring item-based add-on on a plan"
+         style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-plan-addons-item" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/f55b784-Plan_Add-Ons.png" alt="" />
+  </label>
+</span>
 
-### Recurring item sales
-
-Items can be sold on a recurring basis via add-ons on plans and subscriptions. If you prefer to have Recurly manage and enforce the specific items that can be sold on a plan, you can configure those available items as plan add-ons. If you do not limit the items that can be sold on a plan, or if you manage those restrictions on your own platform, you can bypass this configuration at the plan level, instead. Both approaches are detailed below.
-
-#### Selling items as plan add-ons
-
-Configuring items as add-ons on a plan restricts the offerings a subscriber to that plan can select. The only offerings available to the customer will be those add-ons specified on the plan. To sell items from your catalog as plan add-ons, select the desired item(s) from the dropdown in the Plan Add-Ons section of the New Plan page, or send the appropriate Item Code(s) when creating a plan via the API.
-
-<Image align="center" alt={1864} border={true} caption="Creating a Recurring Item-Based Add-On" title="Plan_Add-Ons.png" src="https://files.readme.io/f55b784-Plan_Add-Ons.png" />
-
-The Add-On Name, Add-On Code, Accounting Code, Tax settings, and Revenue Recognition for the add-on will be auto-populated from the item. The add-on Price will also be auto-populated from the item, but this value can be changed to reflect the desired price for this plan. More information about creating add-ons can be found <a href="https://docs.recurly.com/docs/plans#section-add-ons" target="_blank">here</a>.
-
-In Recurly's API, item-based plan add-ons can be configured via the <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_plan" target="_blank">Plans</a> or <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_plan_add_on" target="_blank">Plan Add-Ons</a> endpoints and charged via the <a href="https://developers.recurly.com/api/latest.html#tag/purchase" target="_blank">Purchases</a> or <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_subscription" target="_blank">Subscriptions</a> endpoints. All plan add-on and subscription add-on configuration can also be done via the Recurly Admin Console.
+Add-on name, code, accounting code, tax settings, revenue recognition, and price all auto-populate from the item. The price can be overridden at the plan level. Item-based plan add-ons can be configured via the <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_plan" target="_blank">Plans</a> or <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_plan_add_on" target="_blank">Plan Add-Ons</a> endpoints and charged via <a href="https://developers.recurly.com/api/latest.html#tag/purchase" target="_blank">Purchases</a> or <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_subscription" target="_blank">Subscriptions</a>.
 
 **Quantity-based pricing for item add-ons**
 
-Items can be sold with fixed pricing or any of the available [Quantity-Based Pricing](https://docs.recurly.com/docs/billing-models#section-quantity-based) models when added to a plan.  Once you have selected your item, choose your pricing model and configure your tiers, if applicable. You can use the calculator to validate that specific unit amounts will charge as expected.
+Items can be sold with fixed pricing or any available <a href="https://docs.recurly.com/docs/billing-models#section-quantity-based" target="_blank">quantity-based pricing</a> model when added to a plan. Select your pricing model and configure tiers as needed. Use the built-in calculator to validate that specific unit amounts charge as expected. Once saved, tiers and prices can be updated on the plan or subscription for personalized pricing. To change the pricing model itself, create a new add-on.
 
-Once the pricing model has been saved, the specific tiers and prices can be updated on the plan or subscription to provide more personalized pricing. If you need to change the pricing model, create a new add-on.
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-quantity-pricing" class="rp-zoom-toggle" />
+  <label for="zoom-quantity-pricing">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/3731327-Image_2020-05-28_at_1.36.33_PM.png"
+         alt="Creating an item-based add-on with quantity-based pricing"
+         style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-quantity-pricing" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/3731327-Image_2020-05-28_at_1.36.33_PM.png" alt="" />
+  </label>
+</span>
 
-<Image align="center" alt={1251} border={true} caption="Creating an Item-Based Add-On with Quantity-Based Pricing" title="Image 2020-05-28 at 1.36.33 PM.png" src="https://files.readme.io/3731327-Image_2020-05-28_at_1.36.33_PM.png" width="100%" />
+### Selling items directly on subscriptions
 
-#### Selling Items Directly on Subscriptions
+If all catalog items should be available as potential add-ons, or if you manage item availability in your own platform, you can skip plan-level configuration and specify items directly on each individual subscription instead.
 
-Depending on your business model, it might make sense to avoid configuring item add-ons on your plans and simply specify the actual item(s) purchased on each individual customer subscription instead. If all of the items in your catalog are available as potential add-ons on a plan, if each of your customers has the ability to configure their own unique subscription offerings, or if you already control item availability in your own platform, this approach can provide much greater efficiency.
+To enable this, check **Add all items on subscriptions to this plan** in the Plan Add-Ons section, or use the `allow_any_item_on_subscriptions` field in the <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_plan" target="_blank">API</a>.
 
-To support item sales directly on subscriptions, simply check the box in the Plan Add-Ons section of any plan to **Add all items on subscriptions to this plan** or utilize the **allow_any_item_on_subscriptions** field in our [API](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_plan).
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-items-on-subscriptions" class="rp-zoom-toggle" />
+  <label for="zoom-items-on-subscriptions">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/e43c396e7df2ea7334c33b3be6c520f42af025dfdab81b0305922019dfa27101-image.png"
+         alt="Add all items on subscriptions checkbox on the plan add-ons section"
+         style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-items-on-subscriptions" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/e43c396e7df2ea7334c33b3be6c520f42af025dfdab81b0305922019dfa27101-image.png" alt="" />
+  </label>
+</span>
 
-<Image border={false} src="https://files.readme.io/e43c396e7df2ea7334c33b3be6c520f42af025dfdab81b0305922019dfa27101-image.png" />
+This makes all active catalog items available as add-ons on subscriptions to that plan. New items added to the catalog become available automatically; disabled items are blocked from new subscriptions. When creating a subscription, select or provide the items to include as recurring charges.
 
-This will make all of the **active** items in your catalog available as possible add-ons on subscriptions to that plan. Any items you add to your catalog in the future will automatically be available to use as a subscription add-on, and any items you disable in your catalog will be blocked from purchase on new subscriptions. When each individual subscription is created, simply select (via the Recurly Admin Console) or provide (via the [API](https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_subscription)) the items that should be included in that subscription as recurring charges.
+<div class="rp-callout rp-callout-note">
+  <div><strong>Note</strong>When items are sold directly on subscriptions, only fixed pricing is supported. For quantity-based pricing, configure the item as a plan add-on and provide the quantity with the subscription. To help prioritize quantity-based pricing for direct subscription items, reach out to <a href="mailto:support@recurly.com">support@recurly.com</a>.</div>
+</div>
 
-With this functionality enabled, it is still possible to configure both item-based and non-item-based add-ons on the plan, in addition to selling item-based add-ons directly on each subscription. Upon creating a subscription, you will be able to add the same item-based add-on up to twice, with one instance tied to the plan add-on and one instance configured directly on the subscription. This can support item sales at multiple prices, if desired. While item-based add-ons configured on the plan and on the subscription will look the same in the Recurly Admin Console, the **add_on_source** in the Recurly API will distinguish one from the other, if necessary.
+It's also possible to combine plan add-ons and direct subscription items on the same plan. The same item-based add-on can be added up to twice — once tied to the plan add-on and once configured directly on the subscription — supporting sales at multiple prices if needed. The `add_on_source` field in the API distinguishes between the two instances.
 
-When using the items direction on subscriptions capability, items can only be sold at a fixed price. If you want to leverage quantity-based pricing models, configure the item on the plan, and provide the quantity with the subscription. To help our product team prioritize supporting quantity-based pricing models for items directly on subscriptions, reach out to [support@recurly.com](mailto:support@recurly.com) and ask to be added to the feature request.
+# Item data and exports
 
-## Items in our API and client libraries
+## Item usage across plans and subscriptions
 
-In our API, all functionality for the Catalog feature is on **<a href="https://developers.recurly.com/api/v2019-10-10/index.html" target="_blank">version 2019-10-10</a>** and above.
+Use the [Items — Associated Plans](doc:items-associated-plans) and [Items — Associated Subscriptions](doc:items-associated-subscriptions) exports to see which plans and subscriptions contain a specific item. These are useful for assessing the impact of disabling or editing an item, and for analyzing pricing and packaging across your sales channels.
 
-* Ruby Client version is <a href="https://github.com/recurly/recurly-client-ruby/releases/tag/3.9.0" target="_blank">3.9.0</a>
-* Node Client version is <a href="https://github.com/recurly/recurly-client-node/releases/tag/3.10.0" target="_blank">3.10.0</a>
-* Python Client version is <a href="https://github.com/recurly/recurly-client-python/releases/tag/3.8.0" target="_blank">3.8.0</a>
-* Dotnet Client version is <a href="https://github.com/recurly/recurly-client-dotnet/releases/tag/3.10.0" target="_blank">3.10.0</a>
-* Go Client version is <a href="https://github.com/recurly/recurly-client-go/releases/tag/v3.4.0" target="_blank">3.4.0</a>
-* Java Client version is <a href="https://github.com/recurly/recurly-client-java/releases/tag/3.9.0" target="_blank">3.9.0</a>
-* PHP Client version is <a href="https://github.com/recurly/recurly-client-php/releases/tag/3.4.0" target="_blank">3.4.0</a>
+## Item sales data
 
-For sites using our older v2 API, functionality for item creation and one-time item charges is on **<a href="https://dev.recurly.com/v2.24" target="_blank">version 2.24</a>** and above. Functionality for item-based plan add-ons is on **<a href="https://dev.recurly.com/v2.25" target="_blank">version 2.25</a>** and above. Flexibility around selling items directly on subscriptions is supported on **<a href="https://dev.recurly.com/v2.27" target="_blank">version 2.27</a>** and above.
+Item sales data is available in the Adjustments exports and via the <a href="https://developers.recurly.com/api/latest.html#tag/line_item" target="_blank">Line Items</a> and <a href="https://dev.recurly.com/docs/adjustment-object" target="_blank">Adjustments</a> API endpoints.
 
-* Ruby Client version is <a href="https://github.com/recurly/recurly-client-ruby/releases/tag/2.18.10" target="_blank">2.18.10</a>
-* Python Client version is <a href="https://github.com/recurly/recurly-client-python/releases/tag/2.9.17" target="_blank">2.9.17</a>
-* PHP Client version is <a href="https://github.com/recurly/recurly-client-php/releases/tag/2.12.14" target="_blank">2.12.14</a>
-* Dotnet Client version is <a href="https://github.com/recurly/recurly-client-net/releases/tag/1.17.5" target="_blank">1.17.5</a>
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Export</td><td>Minimum version</td></tr>
+  <tr><td>Adjustments</td><td><a href="https://docs.recurly.com/docs/adjustments-exports#section-adjustments" target="_blank">Version 3</a></td></tr>
+  <tr><td>Adjustments — Coupons</td><td><a href="https://docs.recurly.com/docs/adjustments-exports#section-adjustments-coupons" target="_blank">Version 2</a></td></tr>
+  <tr><td>Adjustments — Taxes</td><td><a href="https://docs.recurly.com/docs/adjustments-taxes-export" target="_blank">Version 3</a></td></tr>
+</table>
 
-However, we recommend always updating to the latest version of the API so that you have the most up-to-date functionality.
+For purchases that include a catalog item, the item code, external SKU, and Recurly item ID are included in the export. The item code is also replicated in the Product Code field to support analysis across all sales channels.
 
-## Item data
+## Limitations
 
-For easy analysis, you can pull information about items and item sales from our API and exports.
+<ul class="rp-list">
+  <li>Items are not supported for usage-based add-ons. For high-volume usage scenarios, use <a href="https://docs.recurly.com/docs/usage-based-billing" target="_blank">usage-based add-ons</a> instead.</li>
+</ul>
 
-### Item usage across plans and subscriptions
+# API and client libraries
 
-For easy visibility and analytics, you can see which plans and subscriptions contain a specific item from your catalog via the [Items — Associated Plans](doc:items-associated-plans) and [Items — Associated Subscriptions](doc:items-associated-subscriptions) exports. Use these to identify the impact of disabling or editing an item, analyze pricing & packaging of an item across your sales channels, and more!
+All item catalog functionality requires <a href="https://docs.recurly.com/recurly-subscriptions/v2019-10-10/reference/getting-started-v2019-10-10" target="_blank">API version 2019-10-10</a> or above. We recommend always using the latest API version for the most up-to-date functionality.
 
-### Item sales data
+## v3 client libraries
 
-Information about item sales can be pulled from the Adjustments exports (Adjustments, Adjustments - Coupons, and Adjustments - Taxes) and from the [Line Items][33] and [Adjustments][34] API endpoints. Version details for the exports are listed below, and version details for the API endpoints are listed [above][35].
+Minimum versions required for item catalog support. Each card links to the minimum release — click "Latest releases" for the most recent version.
 
-* Adjustments export version is [3][30]
-* Adjustments - Coupons export version is [2][31]
-* Adjustments - Taxes export version is [3][32]
+<Cards>
+  <Card title="Ruby — 3.9.0" href="https://github.com/recurly/recurly-client-ruby/releases/tag/3.9.0">
+    Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-ruby/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title="Node.js — 3.10.0" href="https://github.com/recurly/recurly-client-node/releases/tag/3.10.0">
+    Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-node/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title="Python — 3.8.0" href="https://github.com/recurly/recurly-client-python/releases/tag/3.8.0">
+    Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-python/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title=".NET — 3.10.0" href="https://github.com/recurly/recurly-client-dotnet/releases/tag/3.10.0">
+    Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-dotnet/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title="Go — 3.4.0" href="https://github.com/recurly/recurly-client-go/releases/tag/v3.4.0">
+    Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-go/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title="Java — 3.9.0" href="https://github.com/recurly/recurly-client-java/releases/tag/3.9.0">
+    Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-java/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title="PHP — 3.4.0" href="https://github.com/recurly/recurly-client-php/releases/tag/3.4.0">
+    Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-php/releases" target="_blank">Latest releases →</a>
+  </Card>
+</Cards>
 
-For any purchases that include an item from your catalog, the Item Code, External SKU, and [Recurly's Item ID][36] for that item will be displayed. The Item Code is also replicated in the Product Code field to support the analysis of item sales across all sales channels.
+## Legacy v2 API
 
-[30]: https://docs.recurly.com/docs/adjustments-exports#section-adjustments
+For sites on the older v2 API, the following minimum versions apply.
 
-[31]: https://docs.recurly.com/docs/adjustments-exports#section-adjustments-coupons
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>API version</td></tr>
+  <tr><td>Item creation and one-time charges</td><td><a href="https://dev.recurly.com/v2.24" target="_blank">v2.24</a> and above</td></tr>
+  <tr><td>Item-based plan add-ons</td><td><a href="https://dev.recurly.com/v2.25" target="_blank">v2.25</a> and above</td></tr>
+  <tr><td>Items directly on subscriptions</td><td><a href="https://dev.recurly.com/v2.27" target="_blank">v2.27</a> and above</td></tr>
+</table>
 
-[32]: https://docs.recurly.com/docs/adjustments-taxes-export
-
-[33]: https://developers.recurly.com/api/latest.html#tag/line_item
-
-[34]: https://dev.recurly.com/docs/adjustment-object
-
-[35]: https://docs.recurly.com/docs/catalog#section-managing-items-via-the-api
-
-[36]: https://docs.recurly.com/docs/catalog#section-item-id
-
-### Limitations
-
-* Items are not supported for usage-based add-ons. Charges for items can be added to the next invoice, but when you have a high-volume of usage use case, we recommend using usage based billing. If you need to log usage and have Recurly charge for that usage on the subsequent invoice, use our [usage-based add-ons](https://docs.recurly.com/docs/usage-based-billing).
+<Cards>
+  <Card title="Ruby — 2.18.10" href="https://github.com/recurly/recurly-client-ruby/releases/tag/2.18.10">
+    Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-ruby/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title="Python — 2.9.17" href="https://github.com/recurly/recurly-client-python/releases/tag/2.9.17">
+    Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-python/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title="PHP — 2.12.14" href="https://github.com/recurly/recurly-client-php/releases/tag/2.12.14">
+    Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-php/releases" target="_blank">Latest releases →</a>
+  </Card>
+  <Card title=".NET — 1.17.5" href="https://github.com/recurly/recurly-client-net/releases/tag/1.17.5">
+    Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-net/releases" target="_blank">Latest releases →</a>
+  </Card>
+</Cards>
