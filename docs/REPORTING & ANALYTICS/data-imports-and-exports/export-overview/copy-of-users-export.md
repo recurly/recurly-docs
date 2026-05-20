@@ -1,5 +1,5 @@
 ---
-title: Copy of Users - export
+title: Custom Export
 excerpt: >-
   Learn how the User export lets administrators download a full report of every
   site user with access to their Recurly site, including permissions, roles, and
@@ -7,83 +7,43 @@ excerpt: >-
 deprecated: false
 hidden: true
 metadata:
+  title: custom export
   robots: index
 ---
 # Overview
 
-The User export lets administrators download a comprehensive report of every user with access to their Recurly site. The report includes each user's name, email address, access permissions, creation date, and assigned role — everything you need to audit and manage your team's access in one place.
+The Custom Exports feature gives you direct visibility into the tailored and automated data exports configured for your merchant account. These are not standardized reports but configured with specific data fields, filters based on your business needs. From the Custom Exports page, you can see every active export at a glance — including where your data is going, how often it runs, and where to access.
 
 ### Required plan
 
-This feature is available to all merchants on an Elite Recurly plan with an Admin and Integrations role, or a role that includes Admin and Integrations permissions. To enable this feature on your Elite site, create a support request or contact your CSM. This export is also available as an optional add-on for customers on Recurly's Starter and Professional plans — reach out to Support or your CSM for more information.
+This export is available as an optional add-on for customers on all Recurly's plans. Reach out to Support or your CSM for more information.
 
-### Prerequisites and limitations
+![](https://files.readme.io/e59e3dc29896b828bf0ea350f116c1b8475b6b71d9ffb54487614f9874057c8a-image.png)
 
-The User export only includes users who had and continue to have access during the selected date range. Deleted users are excluded from the report.
+<br />
 
-## Filters
+## Accessing Your Custom Exports
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/324cd97bdefde1113752271d8329fedfee486dbdef5b62c9818068a4671665d7-image.png" className="border" />
+To view your custom exports:
 
-Use these filters to narrow down the users displayed in your export:
+1. From the Recurly Admin UI, in the left navigation panel, click Integrations.
+2. Click Custom Exports from the Integrations sub-menu.
+3. The Custom Exports list will display all exports configured for your account.
 
-* **Versions**: Select the export version that best fits your needs. Versions are based on the changelog at the bottom of this page
-* **Export on**: Defaults to the creation date and time of each user
-* **Time range**: Defaults to yesterday, capturing all users created on that day in your site's default time zone
+<br />
 
-# Exports table
+## Reading the Custom Exports Table 
 
-<HTMLBlock>{`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Button</title>
-    <style>
-        .download-button {
-            display: inline-block;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            color: #1C2833FF;
-            background-color: #F8F8F8FF;
-            border-radius: 5px;
-            font-weight: normal;
-            transition: background-color 0.5s ease, transform 0.3s ease;
-            transition: 0.4s !important;
-            font-family: 'Proxima-nova', Arial, sans-serif;
-            max-width: 100%;
-        }
+Each row in the table represents a single export configuration. The table includes the following columns:
 
-        .download-button:hover {
-            background-color: #FFFFFFFF;
-            transform: scale(1.02);
-        }
-        a:hover {
-            color: #1C2833FF;
-            text-decoration: underline !important;
-        }
-    </style>
-</head>
-<body>
-    <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download our complete export schema</a>
-</body>
-</html>
-`}</HTMLBlock>
+<br />
 
-| Id                                        | Example                                               | Description                                                                | Data type |
-| :---------------------------------------- | :---------------------------------------------------- | :------------------------------------------------------------------------- | :-------- |
-| <span id="email">email</span>             | [john_doe@recurly.com](mailto:john_doe@recurly.com)   | The email address of the user.                                             | string    |
-| <span id="first_name">first_name</span>   | John                                                  | The first name of the user.                                                | string    |
-| <span id="last_name">last_name</span>     | Doe                                                   | The last name of the user.                                                 | string    |
-| <span id="user_access">user_access</span> | customers,analytics,configurations,integrations,admin | A comma-delimited list of permissions assigned to the user.                | string    |
-| <span id="date_added">date_added</span>   | 2026-01-01 10:00:00 PST                               | The timestamp when the user accepted their invitation to the Recurly site. | timestamp |
-| <span id="user_role">user_role</span>     | Site Admin                                            | The role assigned to the user.                                             | string    |
+| Name                     | A unique identifier for the export job, typically describing the report type and destination. |
+| :----------------------- | :-------------------------------------------------------------------------------------------- |
+| Bucket / URL / Folder ID |                                                                                               |
+| Path Prefix              |                                                                                               |
+|                          |                                                                                               |
+|                          |                                                                                               |
+|                          |                                                                                               |
 
-# Version changelog
-
-### Version 2
-
-* Addition of `user_role` column
+<br />
