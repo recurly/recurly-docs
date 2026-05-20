@@ -14,27 +14,66 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">
+    A Recurly Customer Success Manager (CSM) is your dedicated partner for growth, optimization, and ongoing strategic guidance. With more than 75 years of combined payments experience across the team, CSMs are committed to understanding your business, aligning Recurly to your goals, and helping you get measurable ROI from your subscription program.
+  </div>
 
-### Required plan
+  <div class="rp-plan">✦ Not included in Starter or Pro — contact Recurly Sales to upgrade</div>
 
-To have a named CSM placed on an account, customers must either meet a specific ACV threshold OR separately purchase a CSM package.
+  <div class="rp-cost">
+    <strong>Additional cost</strong><br />
+    Access to a named CSM below the ACV threshold carries an additional cost. For pricing details or current ACV thresholds, reach out to your Recurly account manager or <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a>.
+  </div>
 
-### Additional cost
-
-Access to a CSM below a certain threshold carries an additional cost.  For more pricing details or for details on the current ACV thresholds, please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com).
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#what-to-expect-from-your-csm"><span class="rp-toc-num">2</span>What to expect from your CSM</a>
+  </div>
+</div>
 
 # Definition
 
-A Customer Success Manager champions a client by proactively engaging with customers, understanding their unique needs and goals, providing partnership and guidance throughout their journey to ensure client satisfaction, loyalty, retention and growth. Our mission is to communicate best practices, drive outcomes with data-driven insights, and to ensure clients are well adopted, continuously optimized, and are achieving ROI so they become Recurly advocates.
+<div class="rp-definition">
+  A Customer Success Manager champions your account by proactively engaging with your team, understanding your unique goals, and providing strategic guidance throughout your Recurly journey. CSMs communicate best practices, surface data-driven insights, and make sure you're well adopted, continuously optimized, and realizing ROI — with the goal of turning you into a Recurly advocate.
+</div>
 
-# Customer success
+# What to expect from your CSM
 
-Customer Success at Recurly serves to Champion our client’s success.  Our Customer Success Managers (CSMs) bring more than 75 years of combined payments experience. CSMs are committed to understanding your business and helping you achieve your goals. Here's what you can expect from our Customer Success program:
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Strategic alignment meetings</strong>
+    <span>Your CSM will build a joint success plan (JSP) to define and track your key objectives and KPIs — then run regular meetings to keep your goals aligned with Recurly best practices and benchmark data.</span>
+  </div>
 
-* **Strategic alignment meetings:** We'll create a joint success plan (JSP) to help define and track your key success objectives/KPIs. Using this JSP we will conduct regular, ongoing meetings to align your objectives to our best practices and benchmark data, driving ROI and growth of your subscription business
-* **Executive business/strategic business reviews:** Our CSMs will conduct annual executive business reviews to help drive deeper partnership, to provide insight into our shared outcomes and to set the ongoing vision for success.  Strategic Business Reviews can be scheduled quarterly to reflect upon quarterly targets, data, projects and updates.
-* **Use case, adoption and optimization expertise:** Our CSMs will analyze your subscription configuration, and metrics to compare them to industry trends, providing valuable insights to help you stay competitive.
-* **Custom benchmark reports:** We'll provide benchmark reports tailored to your specific industry, giving you a clear understanding of your performance compared to industry peers.
-* **Voice of the customer (VOC):** As your trusted partner, your CSM gathers your feedback and advocates for enhancements and features that align with your needs, influencing the future direction of our product roadmap.
-* **Thought leadership:** Our CS program includes close partnership with our Marketing partners who help us drive thought leadership, industry insights, webinars, round-tables, advocacy programs and reports all of which help our client’s drive subscription growth and success.
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Business and strategic reviews</strong>
+    <span>Annual executive business reviews drive deeper partnership and set the vision for ongoing success. Quarterly strategic business reviews reflect on targets, data, projects, and updates.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Adoption and optimization expertise</strong>
+    <span>Your CSM analyzes your subscription configuration and metrics against industry trends, surfacing actionable insights to help you stay competitive and get more from your Recurly setup.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Custom benchmark reports</strong>
+    <span>Receive benchmark reports tailored to your specific industry so you have a clear view of how your performance compares to peers — and where the biggest opportunities lie.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Voice of the customer</strong>
+    <span>Your CSM advocates for you internally, gathering your feedback and influencing Recurly's product roadmap to prioritize enhancements and features that align with your needs.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Thought leadership</strong>
+    <span>Gain access to industry insights, webinars, roundtables, advocacy programs, and reports — developed in partnership with Recurly's Marketing team to help you drive subscription growth.</span>
+  </div>
+</div>
