@@ -19,6 +19,8 @@ next:
     Recurly's professional services team is here to make sure you get the most out of the platform — from your first day of implementation through ongoing optimization. Whether you're migrating sensitive subscriber data, building custom integrations, or looking to sharpen your team's skills, our experts work alongside you every step of the way.
   </div>
 
+  <div class="rp-plan">✦ Available on all Recurly plans</div>
+
   <div class="rp-cost">
     <strong>Additional cost</strong><br/>
     Professional services require an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com">support@recurly.com</a> for pricing details.
