@@ -17,7 +17,20 @@ The Custom Exports feature gives you direct visibility into the tailored and aut
 
 This export is available as an optional add-on for customers on all Recurly's plans. Reach out to Support or your CSM for more information.
 
-![](https://files.readme.io/e59e3dc29896b828bf0ea350f116c1b8475b6b71d9ffb54487614f9874057c8a-image.png)
+<br />
+
+> 🚧 Please Note: Merchant Read-Only Access
+>
+> * Merchants can view export configurations but cannot create or edit exports.
+> * All custom export setup and scheduling is managed by the Recurly team.
+> * To request a new export, modify an existing one, or troubleshoot an error, contact Recurly Support.
+
+# Key benefits
+
+* **Data tailored to your specific needs**: Unlike standard Exports (which offer a fixed set of reports), Custom Exports are built by Recurly to match a merchant's exact reporting requirements — specific fields, combinations of data, or outputs their standard systems can't produce.
+* **Flexible scheduling**: Custom exports can run daily, monthly or on fully custom cron schedules, which is important for merchants with non-standard billing cycles or reporting windows.
+* **Fits into existing infrastructure**:  Files land directly in the merchant's own storage (S3, GDrive, SFTP), so they slot into existing data pipelines and warehouses without any API work on the merchant's side.
+* **Visibility into export health (new)**: The merchant-facing UI page is actually a new feature. Previously merchants had no visibility into their custom exports. Now they can see status, destination, and frequency at a glance — and take action when something errors (update a secret, verify, etc.).
 
 <br />
 
@@ -29,7 +42,7 @@ To view your custom exports:
 2. Click Custom Exports from the Integrations sub-menu.
 3. The Custom Exports list will display all exports configured for your account.
 4. Files are delivered to your configured destination (AWS S3, Google Drive, or SFTP). The Custom Exports page shows configuration and status only — it does not host file downloads.
-5. Depending on the export target (AWS S3, SFTP, etc.), you may need to update your secret key and/or verify in order to access your custom export from your configured destination. 
+5. Depending on the export target (AWS S3, SFTP, etc.), you may need to update your secret key and/or verify in order to access your custom export from your configured destination.
 
 <br />
 
