@@ -11,7 +11,7 @@ metadata:
 ---
 # Overview
 
-When a payment attempt is declined by your gateway, Recurly translates the gateway’s error code into a structured error response—complete with a machine‑readable `error_code`, a human‑friendly `customer_message`, and the original `gateway_error_code`. You’ll encounter these errors any time you create subscriptions, update billing info, or process one‑time transactions.
+When a payment attempt is declined by your gateway, Recurly translates the gateway’s error code into a structured error response—complete with a machine‑readable `error_code`, a human‑friendly `customer_message`, and the original `gateway_error_code`. You’ll encounter these errors any time you create subscriptions, update billing info, or process one‑time transactions. Test.
 
 Transaction errors represent failures during payment processing. Each error includes:
 
