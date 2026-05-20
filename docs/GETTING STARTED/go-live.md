@@ -1,10 +1,8 @@
 ---
 title: Go live checklist
 excerpt: >-
-  Delve into a comprehensive guide on initiating your journey with Recurly,
-  covering the essential steps from setup to going live. Gain insights into
-  creating flexible plans, ensuring secure payments, and managing subscriptions
-  efficiently.
+  A step-by-step checklist covering everything you need to set up, test, and
+  launch your Recurly integration — from sandbox to production.
 deprecated: false
 hidden: false
 metadata:
