@@ -13,33 +13,69 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
 
-### Required plan
+  <div class="rp-overview">
+    A well-structured plan is the foundation of a healthy subscription business. Recurly gives you three building blocks — plans, add-ons, and an item catalog — to define exactly what you sell, how you bill for it, and how you grow revenue over time.
+  </div>
 
-These features are available to all customers on any Recurly subscription plan.
+  <div class="rp-plan">✦ Available on all Recurly plans</div>
+
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#plans"><span class="rp-toc-num">3</span>Plans</a>
+    <a class="rp-toc-pill" href="#add-ons"><span class="rp-toc-num">4</span>Add-ons</a>
+    <a class="rp-toc-pill" href="#item-catalog"><span class="rp-toc-num">5</span>Item catalog</a>
+  </div>
+
+</div>
 
 # Definition
 
-A Plan Structure is a strategic organization of your products or services. It includes defining Plans (recurring products), Add-ons (additional services/products), and your Item Catalog (listing of sellable units). It simplifies the management of your product offerings.
+<div class="rp-definition">
+  A plan structure is a strategic organization of your products and services. It brings together plans (recurring products), add-ons (additional services or products), and an item catalog (your full list of sellable units) into a single, manageable framework — simplifying how you define, sell, and track your offerings.
+</div>
 
 # Key benefits
 
-* **Effective product management:** Easily define and manage recurring products, add-ons, and sellable units through Recurly's UI.
-* **Increased monetization:** With add-ons, provide additional services/products to customers, driving up revenue.
-* **Streamlined operations:** A well-structured plan simplifies operations and helps to track sales effectively.
-* **Customer centric:** Tailor your offerings to meet diverse customer needs with flexible plans and add-ons.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Effective product management</strong>
+    <span>Define and manage recurring products, add-ons, and sellable units all through Recurly's UI — no custom tooling required.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Increased monetization</strong>
+    <span>Add-ons give you a natural upsell path, letting customers expand their subscription with additional services or products and driving incremental revenue.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Streamlined operations</strong>
+    <span>A well-structured plan simplifies day-to-day operations and makes it easier to track sales performance across your entire product line.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Customer-centric flexibility</strong>
+    <span>Flexible plans and add-ons let you tailor your offerings to meet diverse customer needs — from entry-level subscriptions to fully customized packages.</span>
+  </div>
+</div>
 
-# Key details
+# Plans
 
-## Plans
+<div class="rp-definition">
+  <a href="https://docs.recurly.com/docs/plans" target="_blank">Plans</a> are your recurring billing products. They define billing frequency and the base price of a product, giving your business a consistent, predictable revenue model.
+</div>
 
-[Plans ](https://docs.recurly.com/docs/plans)are recurring billing products. They define the billing frequency and the product's base price, allowing businesses to create a revenue model that provides consistent income.
+# Add-ons
 
-## Add-ons
+<div class="rp-definition">
+  <a href="https://docs.recurly.com/docs/add-ons" target="_blank">Add-ons</a> are additional features, services, or products that customers can purchase alongside their base subscription. They're your primary lever for upselling and generating revenue beyond the base plan price.
+</div>
 
-[Add-ons](https://docs.recurly.com/docs/add-ons) are additional features, services, or products that customers can purchase alongside their subscription plan. They provide an opportunity to upsell and drive additional revenue.
+# Item catalog
 
-## Item catalog
-
-An [Item Catalog](https://docs.recurly.com/docs/catalog) is a collection of the sellable units of a business. This can include standalone products, services, or even add-ons. It provides a convenient way to manage all your offerings in one place.
+<div class="rp-definition">
+  The <a href="https://docs.recurly.com/docs/catalog" target="_blank">item catalog</a> is a centralized collection of all your sellable units — standalone products, services, and add-ons in one place. It makes it easy to manage your full product inventory and reuse items across multiple plans.
+</div>
