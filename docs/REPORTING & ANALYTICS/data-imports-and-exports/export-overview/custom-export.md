@@ -29,21 +29,24 @@ To view your custom exports:
 1. From the Recurly Admin UI, in the left navigation panel, click Integrations.
 2. Click Custom Exports from the Integrations sub-menu.
 3. The Custom Exports list will display all exports configured for your account.
+4. Files are delivered to your configured destination (AWS S3, Google Drive, or SFTP). The Custom Exports page shows configuration and status only — it does not host file downloads.
+5. Depending on the export target (AWS S3, SFTP, etc.), you may need to update your secret key and/or verify in order to access your custom export from your configured destination. 
 
 <br />
 
-## Reading the Custom Exports Table 
+## Reading the Custom Exports Table
 
 Each row in the table represents a single export configuration. The table includes the following columns:
 
 <br />
 
-| Name                     | A unique identifier for the export job, typically describing the report type and destination. |
-| :----------------------- | :-------------------------------------------------------------------------------------------- |
-| Bucket / URL / Folder ID |                                                                                               |
-| Path Prefix              |                                                                                               |
-|                          |                                                                                               |
-|                          |                                                                                               |
-|                          |                                                                                               |
+|                             |                                                                                                                               |   |
+| :-------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | - |
+| Name                        | A unique identifier for the export job, typically describing the report type and destination.                                 |   |
+| Bucket / URL / Folder ID    | The destination where exported files are delivered - an Amazon S3 bucket name, a Google Drive folder ID, or a SFTP host path. |   |
+| Path Prefix                 | The sub-path or folder within the destination where files are stored.                                                         |   |
+| Target                      | The type of destination system - AWS S3, Google Drive, or SFTP.                                                               |   |
+| Frequency                   | How often the export runs. Common values are Daily or Custom, e.g. 15th and 30th of each month.                               |   |
+| Update Secret/Verify/Delete |                                                                                                                               |   |
 
 <br />
