@@ -138,7 +138,3 @@ Contact [support@recurly.com](mailto:support@recurly.com) to opt-out.
 ***
 
 <br />
-
-<iframe src="https://fast.wistia.net/embed/iframe/a9fdu35qwv?web_component=true&seo=false&videoFoam=false" title="Wistia video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="360px" />
-
-<script src="https://fast.wistia.net/player.js" async />
