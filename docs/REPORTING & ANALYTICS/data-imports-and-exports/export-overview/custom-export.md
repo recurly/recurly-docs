@@ -1,9 +1,8 @@
 ---
 title: Custom Export
 excerpt: >-
-  Learn how the User export lets administrators download a full report of every
-  site user with access to their Recurly site, including permissions, roles, and
-  creation dates.  #
+  Get a tailored data extract with exactly which information you need to meet
+  your business needs
 deprecated: false
 hidden: true
 metadata:
