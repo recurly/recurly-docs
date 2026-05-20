@@ -13,8 +13,13 @@ metadata:
 next:
   description: ''
 ---
-# Plans, pricing & promotions
+<div class="rp-page">
 
-Dive into our short video showcase and unlock the potential of our Plans, Pricing & Promotions tools. Why wait? Explore now and elevate your business!
+  <div class="rp-overview">
+    Recurly's plans, pricing, and promotions tools give you the flexibility to define exactly how your customers subscribe, what they pay, and what incentives bring them through the door. Watch the short video below for a quick tour, then dig into the linked guides to start building.
+  </div>
 
-<Embed url="https://fast.wistia.net/embed/iframe/s13n8pz1pu?videoFoam=true" title="iframe" provider="fast.wistia.net" href="https://fast.wistia.net/embed/iframe/s13n8pz1pu?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800px" iframe="true" />
+</div>
+
+<iframe src="https://fast.wistia.net/embed/iframe/s13n8pz1pu?web_component=true&seo=false&videoFoam=false" title="Plans, pricing, and promotions" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="464px" />
+<script src="https://fast.wistia.net/player.js" async />
