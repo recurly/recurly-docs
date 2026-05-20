@@ -24,9 +24,7 @@ next:
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
     <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
-    <a class="rp-toc-pill" href="#plans"><span class="rp-toc-num">3</span>Plans</a>
-    <a class="rp-toc-pill" href="#add-ons"><span class="rp-toc-num">4</span>Add-ons</a>
-    <a class="rp-toc-pill" href="#item-catalog"><span class="rp-toc-num">5</span>Item catalog</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
   </div>
 
 </div>
@@ -62,20 +60,16 @@ next:
   </div>
 </div>
 
-# Plans
+# Key details
 
-<div class="rp-definition">
-  <a href="https://docs.recurly.com/docs/plans" target="_blank">Plans</a> are your recurring billing products. They define billing frequency and the base price of a product, giving your business a consistent, predictable revenue model.
-</div>
-
-# Add-ons
-
-<div class="rp-definition">
-  <a href="https://docs.recurly.com/docs/add-ons" target="_blank">Add-ons</a> are additional features, services, or products that customers can purchase alongside their base subscription. They're your primary lever for upselling and generating revenue beyond the base plan price.
-</div>
-
-# Item catalog
-
-<div class="rp-definition">
-  The <a href="https://docs.recurly.com/docs/catalog" target="_blank">item catalog</a> is a centralized collection of all your sellable units — standalone products, services, and add-ons in one place. It makes it easy to manage your full product inventory and reuse items across multiple plans.
-</div>
+<Cards>
+  <Card title="Plans" href="https://docs.recurly.com/docs/plans">
+    Recurring billing products that define billing frequency and base price — the foundation of your revenue model.
+  </Card>
+  <Card title="Add-ons" href="https://docs.recurly.com/docs/add-ons">
+    Additional features, services, or products customers can purchase alongside their base subscription. Your primary lever for upselling and generating revenue beyond the base plan price.
+  </Card>
+  <Card title="Item catalog" href="https://docs.recurly.com/docs/catalog">
+    A centralized collection of all your sellable units — standalone products, services, and add-ons in one place — making it easy to manage your full inventory and reuse items across multiple plans.
+  </Card>
+</Cards>
