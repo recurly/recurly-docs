@@ -1,6 +1,8 @@
 ---
 title: Sandbox features to discover
-excerpt: Discover our sandbox experience and leverage all of Recurly’s features.
+excerpt: >-
+  An overview of the key Recurly features and settings to explore and configure
+  in your sandbox before going live.
 deprecated: false
 hidden: false
 metadata:
@@ -10,227 +12,132 @@ metadata:
 next:
   description: ''
 ---
-# Building your sandbox
+<div class="rp-page">
 
-Your Recurly trial lets you explore the capabilities of the platform, including building flexible plans and promotions that support multiple currencies, setting up your preferred payment gateways, creating customer subscriptions and accounts, viewing transactions and invoices, and measuring success through robust reporting.
+  <div class="rp-overview">
+    Your Recurly sandbox is a full-featured environment where you can build, test, and refine your setup before a single real transaction runs. From plans and promotions to payment gateways and dunning policies, everything you configure here can travel with you to production. Dig in, experiment freely, and get comfortable — that's exactly what the sandbox is for.
+  </div>
 
-If you haven’t done so already, you can <a href="https://app.recurly.com/signup/" target="_blank">sign up for a new sandbox site</a>. We encourage you to play and explore to fully realize the power and customizability of Recurly. When you are ready to go live, you can convert this sandbox site to production.
+  <div class="rp-callout rp-callout-tip">
+    <div><strong>Tip</strong>To keep testing after you go live without affecting your production site, create a mirrored sandbox development account. As you test, apply all changes to both environments to maintain parity.</div>
+  </div>
 
-> 📘 Pro tip
->
-> To continue testing in a separate sandbox without affecting your live site, create a mirrored sandbox development account. As you test the final site, make sure to apply all changes to the sandbox as well to maintain parity.
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#core-configuration"><span class="rp-toc-num">1</span>Core configuration</a>
+    <a class="rp-toc-pill" href="#plans-pricing-and-promotions"><span class="rp-toc-num">2</span>Plans, pricing, and promotions</a>
+    <a class="rp-toc-pill" href="#payments-and-compliance"><span class="rp-toc-num">3</span>Payments and compliance</a>
+    <a class="rp-toc-pill" href="#integration-and-communication"><span class="rp-toc-num">4</span>Integration and communication</a>
+    <a class="rp-toc-pill" href="#revenue-recovery-and-access"><span class="rp-toc-num">5</span>Revenue recovery and access</a>
+  </div>
 
-Explore Recurly by learning about the features and capabilities described below.
+</div>
 
-<HTMLBlock>{`
-<style>
-  #feature-list td,
-  #feature-list th {
-    vertical-align: top;
-    text-align: left;
-  }
-</style>
-<table id="feature-list">
-  <thead>
-    <tr>
-      <th style="width: 25%; min-width: 12em">Feature</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/site-settings" target="_blank"
-          >Site Settings</a
-        >
-      </td>
-      <td>
-        <p>
-          Site Settings provide a central location to manage the core configuration of your Recurly site, including your account and billing information, timezone, key contact information, IP allowlist, and site customizations.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/business-entities" target="_blank"
-          >Business Entities</a
-        >
-      </td>
-      <td>
-        <p>
-          Business entities allow you to control how your business is represented on invoices, enhancing brand recognition, offering global flexibility, ensuring tax compliance, and enabling scalability, all while helping you manage business operations.
-        </p>
-      </td>
-    </tr>
-    <tr>
-     
-      <td>
-        <a href="https://docs.recurly.com/docs/currencies" target="_blank"
-          >Currencies</a
-        >
-      </td>
-      <td>
-        <p>
-          Most customers will use a single currency, but you can enable multiple currencies to reach a global audience. If you are doing business in the EU, be sure to review the General Data Protection Regulations (<a href="https://docs.recurly.com/docs/gdpr" target="_blank">GDPR</a>).
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/billing-models" target="_blank"
-          >Billing Models</a
-        >
-      </td>
-      <td>
-        <p>Recurly’s flexible billing models let you configure your product offerings to fit your business models and requirements.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>
-          <a href="https://docs.recurly.com/docs/plans" target="_blank"
-            >Plans & Add-ons</a
-          >
-        </p>
-      </td>
-      <td>
-        <p>
-          Your subscription plans define what your customers can subscribe to and how much and how often to bill them.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>
-          <a href="https://docs.recurly.com/docs/catalog" target="_blank"
-            >Item Catalog</a
-          >
-        </p>
-      </td>
-      <td>
-        <p>
-          Sell standard or combined offerings from an inventory and create reusable add-ons for multiple plans.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/invoice-settings" target="_blank"
-          >Invoice Settings</a
-        >
-      </td>
-      <td>
-        <p>
-          Invoice settings ensure your customers will get timely notifications,
-          as well as verify your modification settings fit your billing
-          requirements.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/coupons" target="_blank"
-          >Coupons and Discounts</a
-        >
-      </td>
-      <td>
-        <p>
-          Use Recurly’s Coupons feature to create discount codes for your customers, whether you’re running a promotion, sale, or special offer. 
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>
-          <a href="https://docs.recurly.com/docs/tax" target="_blank">Taxes</a>
-        </p>
-      </td>
-      <td>
-        <p>
-          Configure Tax Settings to comply with any
-          regulations imposed by your local tax authorities.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/email-templates" target="_blank"
-          >Email Templates</a
-        >
-      </td>
-      <td>
-        <p>
-          Email templates help you set up clear communication with your
-          customers. It is key to reducing churn and recovering revenue.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/payment-gateways" target="_blank"
-          >Payment Gateway</a
-        >
-      </td>
-      <td>
-        <p>
-          Knowledge of payment gateways is essential for success at Recurly, as they allow you to accept payments and deposit them into your merchant bank account. Please take the time to learn about payment gateways before going live.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/hosted-pages" target="_blank"
-          >Hosted Pages</a
-        >
-      </td>
-      <td>
-        <p>
-Recurly’s Hosted Pages are basic integrations targeted at companies without developer resources or those that want to go live quickly while developing a more robust and customized integration.        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>
-          <a href="https://developers.recurly.com/" target="_blank"
-            >Developer Documentation</a
-          >
-        </p>
-      </td>
-      <td>
-        <p>
-          Use our Development Documentation to guide your tech expert to connect
-          Recurly to your systems through the API, Recurly.js or webhooks.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>
-          <a
-            href="https://docs.recurly.com/docs/dunning-management"
-            target="_blank"
-            >Dunning Management</a
-          >
-        </p>
-      </td>
-      <td>
-        <p>
-          Dunning, the process of contacting customers to collect unpaid invoices, can help you recover more revenue from failed recurring payments. Set a customer-friendly dunning policy to maximize effectiveness.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://docs.recurly.com/docs/user-management" target="_blank"
-          >User Access</a
-        >
-      </td>
-      <td>
-        <p>
-          Manage user invites and settings on the Users page in the Admin section to determine the appropriate access level to Recurly.
-        </p>
-      </td>
-    </tr>
-  </tbody>
+# Core configuration
+
+<div class="rp-definition">
+  Start here. These settings form the foundation of your Recurly site — get them right in sandbox and the rest of your configuration will fall into place cleanly.
+</div>
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>What to explore</td></tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/site-settings" target="_blank">Site settings</a></td>
+    <td>Configure the core settings for your Recurly site — account and billing information, timezone, key contacts, IP allowlist, and site-level customizations, all from one central location.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/business-entities" target="_blank">Business entities</a></td>
+    <td>Control how your business appears on invoices. Business entities support brand recognition, global flexibility, tax compliance, and operational scalability across multiple business units.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/billing-models" target="_blank">Billing models</a></td>
+    <td>Recurly's flexible billing models let you configure your product offerings to fit your business requirements — from simple recurring charges to complex usage-based structures.</td>
+  </tr>
 </table>
-`}</HTMLBlock>
+
+# Plans, pricing, and promotions
+
+<div class="rp-definition">
+  This is where your product offering takes shape. Define what customers subscribe to, how much they pay, and what incentives you offer to win and retain them.
+</div>
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>What to explore</td></tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/plans" target="_blank">Plans and add-ons</a></td>
+    <td>Define the subscription plans your customers can sign up for, including billing frequency, pricing, and any optional add-ons that extend or enhance a base plan.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/catalog" target="_blank">Item catalog</a></td>
+    <td>Build a reusable catalog of standard and bundled offerings. Items can be attached to multiple plans as add-ons, making it easy to manage inventory-based or combined product offerings.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/coupons" target="_blank">Coupons and discounts</a></td>
+    <td>Create discount codes for promotions, sales, and special offers. Test different coupon types in sandbox to confirm they apply correctly before you start sharing them with real customers.</td>
+  </tr>
+</table>
+
+# Payments and compliance
+
+<div class="rp-definition">
+  Before you go live, you need to understand how money moves through Recurly. This section covers the configuration that connects your business to your customers' payment methods — and keeps you compliant along the way.
+</div>
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>What to explore</td></tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/payment-gateways" target="_blank">Payment gateway</a></td>
+    <td>Payment gateways are how Recurly accepts payments and deposits funds into your merchant bank account. Take time to understand how gateways work and how to configure yours correctly before going live.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/currencies" target="_blank">Currencies</a></td>
+    <td>Most merchants use a single currency, but Recurly supports multiple currencies if you're serving a global audience. If you operate in the EU, review the <a href="https://docs.recurly.com/docs/gdpr" target="_blank">GDPR</a> guidelines as part of your currency setup.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/tax" target="_blank">Taxes</a></td>
+    <td>Configure tax settings to comply with the regulations imposed by your local tax authorities. Getting this right in sandbox means you won't be caught off guard when real invoices start going out.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/invoice-settings" target="_blank">Invoice settings</a></td>
+    <td>Make sure your customers receive timely notifications and that your invoice modification settings match your billing requirements.</td>
+  </tr>
+</table>
+
+# Integration and communication
+
+<div class="rp-definition">
+  Connect Recurly to your systems and set up the customer-facing communications that keep subscribers informed — and less likely to churn.
+</div>
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>What to explore</td></tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/hosted-pages" target="_blank">Hosted Pages</a></td>
+    <td>Recurly's Hosted Pages are a lightweight integration option for teams without developer resources, or for anyone who wants to go live quickly while a more robust custom integration is in development.</td>
+  </tr>
+  <tr>
+    <td><a href="https://developers.recurly.com/" target="_blank">Developer documentation</a></td>
+    <td>Use the developer documentation to connect Recurly to your systems via the API, Recurly.js, or webhooks. Share this with your technical team early so they can plan the integration alongside your sandbox setup.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/email-templates" target="_blank">Email templates</a></td>
+    <td>Set up clear, on-brand communication with your subscribers. Well-crafted email templates are one of the most effective tools for reducing involuntary churn and recovering revenue before it's lost.</td>
+  </tr>
+</table>
+
+# Revenue recovery and access
+
+<div class="rp-definition">
+  Two things that are easy to overlook during sandbox setup — and costly to ignore in production: a dunning policy that recovers failed payments before subscribers churn, and user access controls that keep your team working at the right permission level.
+</div>
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>What to explore</td></tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/dunning-management" target="_blank">Dunning management</a></td>
+    <td>Dunning is the process of contacting customers to collect on unpaid invoices after a failed payment. Set a customer-friendly dunning policy in sandbox to maximize revenue recovery without damaging subscriber relationships.</td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.recurly.com/docs/user-management" target="_blank">User access</a></td>
+    <td>Manage user invites and permission levels from the Users page in the Admin section. Configure appropriate access levels before go-live so your team is set up correctly from day one.</td>
+  </tr>
+</table>
