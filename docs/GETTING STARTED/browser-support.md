@@ -1,6 +1,8 @@
 ---
 title: Browser support
-excerpt: Ensures seamless, secure access across modern desktop and mobile browsers
+excerpt: >-
+  Browser versions and platforms officially supported by the Recurly
+  application, hosted solutions, and Recurly Checkout.
 deprecated: false
 hidden: false
 metadata:
@@ -10,52 +12,65 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
 
-Recurly provides evergreen browser support across its core application, hosted solutions, and checkout flows to deliver optimal performance, security, and a consistent user experience.
+  <div class="rp-overview">
+    Recurly provides evergreen browser support across its core application, hosted solutions, and checkout flows to deliver optimal performance, security, and a consistent user experience. Use this page to verify compatibility for your users across desktop and mobile environments.
+  </div>
 
-This page details the specific browser versions and platforms officially supported by Recurly’s offerings—Recurly Application, Recurly’s hosted payment and account pages, and Recurly Checkout—so you can verify compatibility for your users.
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#recurly-application"><span class="rp-toc-num">1</span>Recurly application</a>
+    <a class="rp-toc-pill" href="#recurly-hosted-solutions"><span class="rp-toc-num">2</span>Recurly hosted solutions</a>
+    <a class="rp-toc-pill" href="#recurly-checkout"><span class="rp-toc-num">3</span>Recurly Checkout</a>
+  </div>
 
-# Key benefits
+</div>
 
-* **Optimal performance**: Leveraging the latest browser features and automatic updates for smooth operation.
-* **Enhanced security**: Relying on current, actively maintained browsers to protect user data.
-* **Consistent experience**: Guaranteeing uniform functionality across desktop and mobile environments.
+# Recurly application
 
-# Key details
+<div class="rp-definition">
+  The primary Recurly web application supports modern desktop browsers that auto-update. Browsers without a reliable auto-update mechanism are supported at the current version minus one.
+</div>
 
-## Recurly Application
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Browser</td><td>Supported versions</td></tr>
+  <tr><td>Chrome</td><td>Latest 2 versions</td></tr>
+  <tr><td>Firefox</td><td>Latest 2 versions</td></tr>
+  <tr><td>Edge</td><td>Latest 2 versions</td></tr>
+  <tr><td>Safari (macOS)</td><td>Latest 2 versions</td></tr>
+</table>
 
-The primary Recurly web application supports modern desktop browsers that auto‑update. Browsers without reliable auto‑update systems are supported at “current version − 1.”
+# Recurly hosted solutions
 
-* **Chrome**: Latest 2 versions
-* **Firefox**: Latest 2 versions
-* **Edge**: Latest 2 versions
-* **Safari (macOS)**: Latest 2 versions
+<div class="rp-definition">
+  Recurly's hosted solutions — including <a href="https://docs.recurly.com/docs/hosted-payment-pages" target="_blank">Hosted Payment Pages</a> and <a href="https://docs.recurly.com/docs/hosted-account-management" target="_blank">Hosted Account Management</a> — support both desktop and mobile browsers.
+</div>
 
-## Recurly Hosted Solutions
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Browser</td><td>Supported versions</td></tr>
+  <tr><td>Chrome</td><td>Latest 2 versions</td></tr>
+  <tr><td>Firefox</td><td>Latest 2 versions</td></tr>
+  <tr><td>Edge</td><td>Latest 2 versions</td></tr>
+  <tr><td>Safari (macOS)</td><td>Latest 2 versions</td></tr>
+  <tr><td>iOS Safari</td><td>Latest 2 versions</td></tr>
+  <tr><td>Android Browser</td><td>Android 11.0 and above</td></tr>
+</table>
 
-Recurly’s hosted solutions—including [Hosted Payment Pages](hosted-payment-pages) and [Hosted Account Management](hosted-account-management)—support both desktop and mobile browsers:
+# Recurly Checkout
 
-* **Chrome**: Latest 2 versions
-* **Firefox**: Latest 2 versions
-* **Edge**: Latest 2 versions
-* **Safari (macOS)**: Latest 2 versions
-* **iOS Safari**: Latest 2 versions
-* **Android Browser**: Android 11.0 and above
+<div class="rp-definition">
+  Recurly Checkout is tested and guaranteed on all major evergreen browsers, across both desktop and mobile platforms.
+</div>
 
-## Recurly Checkout
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Browser</td><td>Platform</td></tr>
+  <tr><td>Google Chrome</td><td>Desktop</td></tr>
+  <tr><td>Mozilla Firefox</td><td>Desktop</td></tr>
+  <tr><td>Apple Safari</td><td>macOS and iOS</td></tr>
+  <tr><td>Microsoft Edge</td><td>Desktop</td></tr>
+  <tr><td>Chrome for Android / Samsung Internet</td><td>Mobile</td></tr>
+</table>
 
-Recurly Checkout guarantees functionality on evergreen browser versions:
-
-* Google Chrome
-* Mozilla Firefox
-* Apple Safari (macOS & iOS)
-* Microsoft Edge
-* Chrome for Android / Samsung Internet
-
-> **Note:** Older, end‐of‐life browsers (e.g., Internet Explorer 11) are not supported. Mobile WebViews inherit support from the underlying OS browser—ensure it is kept up to date.
-
-***
-
-<br />
+<div class="rp-callout rp-callout-note">
+  <div><strong>Note</strong>Older, end-of-life browsers such as Internet Explorer 11 are not supported. Mobile WebViews inherit support from the underlying OS browser — keep it up to date to ensure compatibility.</div>
+</div>
