@@ -44,6 +44,20 @@ Compass assistant can help you find your way to find the Recurly products you ne
 * Code snippets
 * Records including: subscriptions, plans, accounts, transactions, invoices, gift cards, items, and users.
 
+<br />
+
+# Get data with the data agent
+
+The Data Agent is an embedded AI agent within Compass Assistant that enables users to generate async exports through natural language conversation. Users can request exports, specify filters (version, time range, variations), and receive links to download their data without navigating complex UI forms or understanding export schemas.
+
+<iframe src="https://fast.wistia.net/embed/iframe/a9fdu35qwv?web_component=true&seo=false&videoFoam=false" title="Wistia video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640px" height="360px" />
+<script src="https://fast.wistia.net/player.js" async />
+
+
+For a high-level overview of how to retrieve exports, what each export does, and some tips on how to use them, visit [https://docs.recurly.com/recurly-subscriptions/docs/export-overview](https://docs.recurly.com/recurly-subscriptions/docs/export-overview)
+
+<br />
+
 # Ask AI
 
 <Image align="center" width="0px" src="https://files.readme.io/4e2f142b8bae82ac6fb69aae5e7a29044451f24486dcb757a5e27ef64914abe1-image.png" />
@@ -134,7 +148,3 @@ Merchant- and subscriber-level data is never shared with competitors. Only aggre
 **What if I want to opt-out of Recurly Compass?**
 
 Contact [support@recurly.com](mailto:support@recurly.com) to opt-out.
-
-***
-
-<br />
