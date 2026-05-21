@@ -65,7 +65,7 @@ You are able to filter on the invoice creation date, or the invoice closed date,
 
 2. **Recovered Revenue chart:** This bar chart visualizes the revenue that Recurly has helped you recover by minimizing involuntary churn from declined automated invoices. It allows you to see at a glance the financial impact of Recurly's services, making it a powerful tool for forecasting and resource allocation. These charts are displayed as a total revenue saved, or a count of invoices recovered.
 
-![](https://files.readme.io/40dfc0fa1fe13c6e9c395906a99fab9b12cc298514d48502e78a8e6915813e60-image.png)
+<Image align="center" border={true} src="https://files.readme.io/40dfc0fa1fe13c6e9c395906a99fab9b12cc298514d48502e78a8e6915813e60-image.png" className="border" />
 
 <br />
 
