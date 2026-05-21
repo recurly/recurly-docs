@@ -85,11 +85,12 @@ Once enabled, your status will update to reflect which card networks are active 
 
 ## How Account Updater works
 
-Account Updater runs on a publish/subscribe model across all four supported card networks. There are three types of update events:
+Account Updater runs on a publish/subscribe model across all four supported card networks. There are four billable Account Updater event outcomes:
 
 * **Updated expiration date** — automatically updates the expiration date stored in billing info
 * **Updated card number** — replaces the full card number with the new one. In rare cases, this can include a card brand change. When that happens, customers must return to session to re-authenticate their card, since card networks don't share Network Transaction ID (NTID) formatting across brands. Recurly recommends proactively reaching out to affected customers and having them reauthenticate, which will run a verification and update the NTID on file. See [Verify stored card information](https://docs.recurly.com/recurly-subscriptions/v1.1/docs/using-3d-secure-with-stored-billing-information#/) for details
 * **Credit card account closed** — flags the billing info as invalid to prevent further charges
+* **Contact cardholder** — indicates that the customer should update or verify their payment information
 
 Each of these events triggers the **Update Billing Info** webhook.
 
@@ -107,7 +108,7 @@ After a card declines, Recurly queries available card update services to check f
 
 **No-change requeuing**
 
-If a card update request returns as "No Change," "No Response," "Contact Cardholder," or "No Match," Recurly requeues the card to check for status changes throughout the dunning period — continuing until the invoice is failed or closed.
+If a card update request returns as "No Change," "No Response," "Contact Cardholder," or "No Match," Recurly requeues the card to check for status changes throughout the dunning period — continuing until the invoice is failed or closed. "Contact Cardholder" is also a billable Account Updater event outcome.
 
 If the customer has other active or past-due subscriptions, Recurly continues querying for updates across those as well. For event-based Account Updater services, Recurly may also receive updates outside of these specific scenarios, since the timing of third-party events is outside of Recurly's control.
 
