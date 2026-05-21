@@ -66,7 +66,7 @@ metadata:
 Every page wraps its branded top matter — overview, plan pill, TOC — in `<div class="rp-page">`. This single class applies Recurly's font family, line-height, max-width, and color palette to its children. Section headings sit outside the wrapper as native markdown so they register in ReadMe's built-in page TOC sidebar.
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong>The rp-page wrapper inherits all typography from the host theme. Your page stays in sync with Recurly's design language even when brand guidelines update.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong>The rp-page wrapper inherits all typography from the host theme. Your page stays in sync with Recurly's design language even when brand guidelines update.</div>
 </div>
 
 ## Heading hierarchy
@@ -103,7 +103,7 @@ Four callout flavors handle different levels of urgency and intent:
 </div>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong>Helpful hints and best practices. Use when offering advice that can accelerate the reader's understanding or workflow.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong>Helpful hints and best practices. Use when offering advice that can accelerate the reader's understanding or workflow.</div>
 </div>
 
 <div class="rp-callout rp-callout-warning">
@@ -282,7 +282,7 @@ Before generating a page, scan the source and ask one consolidated question batc
 </ul>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong>Asking questions first keeps the user engaged and means generation produces something publish-ready in one pass — not a TODO list that surfaces after a long wait.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong>Asking questions first keeps the user engaged and means generation produces something publish-ready in one pass — not a TODO list that surfaces after a long wait.</div>
 </div>
 
 ## Section weight and hierarchy
