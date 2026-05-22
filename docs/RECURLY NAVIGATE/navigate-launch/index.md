@@ -164,12 +164,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 6px;
 }
-.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
+.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
 .rc-sticky-link-active { background: rgba(0,0,0,0.12); font-weight: 800; }
-.rc-sticky-link-active:hover { background: var(--offblack); color: var(--yellow) !important; }
+.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
