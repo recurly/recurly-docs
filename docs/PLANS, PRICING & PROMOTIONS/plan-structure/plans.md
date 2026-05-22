@@ -14,24 +14,17 @@ metadata:
 next:
   description: ''
 ---
-Title: Plans
-Metadata description: Plans define the billing frequency, pricing model, and base price for your subscription products — create, edit, duplicate, or delete them from the Recurly dashboard.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
   <div class="rp-overview">
     Plans are the blueprint for your subscription business — they define what your customers subscribe to, how often they're billed, and how much they pay. Whether your model includes free trials, setup fees, ramp pricing, or price segments, Recurly's plans are built to match your business exactly. There's no limit to the number of plans you can create.
   </div>
 
-  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
 
   <div class="rp-card">
-
     ### Plans dashboard
 
     Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard</a> lists all plans defined in your Recurly account. Select any plan name to view its details, edit it, or link to its <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration or <a href="/docs/hosted" target="_blank">Hosted Payment Page</a>.
-
   </div>
 
   <div class="rp-toc">
@@ -58,11 +51,13 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
     <strong>Flexible plan configuration</strong>
     <span>Set billing cycles, trial periods, setup fees, renewal behavior, and pricing models — all in one place, tailored to how your business actually works.</span>
   </div>
+
   <div class="rp-benefit">
     <div class="rp-benefit-icon">✦</div>
     <strong>Multiple pricing models</strong>
     <span>Choose from fixed, ramp, or usage-based pricing to match your revenue strategy, with price segments for A/B testing and market-specific pricing without plan sprawl.</span>
   </div>
+
   <div class="rp-benefit">
     <div class="rp-benefit-icon">✦</div>
     <strong>Built-in upsell with add-ons</strong>
@@ -81,9 +76,11 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-new-plan-button" class="rp-zoom-toggle" />
+
   <label for="zoom-new-plan-button">
     <img class="rp-zoom-img" src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" alt="New Plan button on the plans list page" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-new-plan-button" class="rp-zoom-overlay">
     <img src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" alt="" />
   </label>
@@ -100,9 +97,11 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-plan-details" class="rp-zoom-toggle" />
+
   <label for="zoom-plan-details">
     <img class="rp-zoom-img" src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" alt="Plan details form fields" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-plan-details" class="rp-zoom-overlay">
     <img src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" alt="" />
   </label>
@@ -119,9 +118,11 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-currency-picker" class="rp-zoom-toggle" />
+
   <label for="zoom-currency-picker">
     <img class="rp-zoom-img" src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png" alt="Currency picker in plan configuration" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-currency-picker" class="rp-zoom-overlay">
     <img src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png" alt="" />
   </label>
@@ -129,9 +130,11 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-free-trial" class="rp-zoom-toggle" />
+
   <label for="zoom-free-trial">
     <img class="rp-zoom-img" src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png" alt="Free trial configuration options" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-free-trial" class="rp-zoom-overlay">
     <img src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png" alt="" />
   </label>
@@ -139,9 +142,11 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-setup-fee" class="rp-zoom-toggle" />
+
   <label for="zoom-setup-fee">
     <img class="rp-zoom-img" src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" alt="Setup fee configuration" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-setup-fee" class="rp-zoom-overlay">
     <img src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" alt="" />
   </label>
@@ -158,9 +163,11 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-billing-configuration" class="rp-zoom-toggle" />
+
   <label for="zoom-billing-configuration">
     <img class="rp-zoom-img" src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" alt="Billing configuration section" style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-billing-configuration" class="rp-zoom-overlay">
     <img src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" alt="" />
   </label>
@@ -177,9 +184,11 @@ Metadata description: Plans define the billing frequency, pricing model, and bas
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-pricing-model" class="rp-zoom-toggle" />
+
   <label for="zoom-pricing-model">
     <img class="rp-zoom-img" src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" alt="Pricing model selector" style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-pricing-model" class="rp-zoom-overlay">
     <img src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" alt="" />
   </label>
@@ -197,9 +206,11 @@ Price segments let you define multiple price points for a single plan within the
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-price-segments" class="rp-zoom-toggle" />
+
   <label for="zoom-price-segments">
     <img class="rp-zoom-img" src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png" alt="Price segments configuration" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-price-segments" class="rp-zoom-overlay">
     <img src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png" alt="" />
   </label>
@@ -209,9 +220,9 @@ Price segments let you define multiple price points for a single plan within the
 
 ### How price segments work
 
-- Recurly stores all segment prices and the default price on the plan.
-- You decide which price to apply (by geography, campaign, experiment bucket, etc.) — Recurly doesn't choose the segment for you.
-- Segment data (code and price) is returned via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment" target="_blank">v3 API</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js</a> so your checkout can display the intended price.
+* Recurly stores all segment prices and the default price on the plan.
+* You decide which price to apply (by geography, campaign, experiment bucket, etc.) — Recurly doesn't choose the segment for you.
+* Segment data (code and price) is returned via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment" target="_blank">v3 API</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js</a> so your checkout can display the intended price.
 
 ### Implement price segments
 
@@ -220,14 +231,17 @@ Price segments let you define multiple price points for a single plan within the
     <div class="rp-step-num">1</div>
     <div><h4>Add segments to the plan</h4><p>In the plan's Pricing section, create one or more segments and set a default price.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Define your selection rule</h4><p>For example: if <code>city=NYC</code> use segment <code>nyc</code>; if the user is in test group B, use segment <code>exp-b</code>.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">3</div>
     <div><h4>Surface the right price in your UI</h4><p>Fetch the plan's price segments via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/get_plan" target="_blank">API</a> or <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js</a> and render the price that matches your rule.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">4</div>
     <div><h4>Apply the segment at checkout</h4><p>When creating the purchase or subscription, pass the chosen segment's price. If no segment code is provided, the default price is used.</p></div>
@@ -235,7 +249,7 @@ Price segments let you define multiple price points for a single plan within the
 </div>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong> For A/B tests, name segments clearly — for example, <code>exp-a</code> and <code>exp-b</code> — and log the chosen segment code with your analytics events.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true" /> Tip</strong> For A/B tests, name segments clearly — for example, <code>exp-a</code> and <code>exp-b</code> — and log the chosen segment code with your analytics events.</div>
 </div>
 
 ### Notes and limits
@@ -251,19 +265,21 @@ Price segments let you define multiple price points for a single plan within the
 
 ### Developer references
 
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments" target="_blank">/price_segment</a>
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_plans" target="_blank">/plans</a>
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription" target="_blank">/subscriptions</a>
-- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">/create_subscription_change</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js — surface price segments in your front end</a>
+* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments" target="_blank">/price_segment</a>
+* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_plans" target="_blank">/plans</a>
+* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription" target="_blank">/subscriptions</a>
+* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">/create_subscription_change</a>
+* <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js — surface price segments in your front end</a>
 
 ## Billing details
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-billing-details" class="rp-zoom-toggle" />
+
   <label for="zoom-billing-details">
     <img class="rp-zoom-img" src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" alt="Billing details fields" style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-billing-details" class="rp-zoom-overlay">
     <img src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" alt="" />
   </label>
@@ -279,9 +295,11 @@ Price segments let you define multiple price points for a single plan within the
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-plan-addons" class="rp-zoom-toggle" />
+
   <label for="zoom-plan-addons">
     <img class="rp-zoom-img" src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" alt="Plan add-ons section" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-plan-addons" class="rp-zoom-overlay">
     <img src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" alt="" />
   </label>
@@ -293,9 +311,11 @@ Optional products that can be included in a recurring subscription's invoices. A
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-dunning-campaign" class="rp-zoom-toggle" />
+
   <label for="zoom-dunning-campaign">
     <img class="rp-zoom-img" src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" alt="Dunning campaign selector" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-dunning-campaign" class="rp-zoom-overlay">
     <img src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" alt="" />
   </label>
@@ -307,9 +327,11 @@ Select the dunning campaign to apply to this plan.
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-customer-emails" class="rp-zoom-toggle" />
+
   <label for="zoom-customer-emails">
     <img class="rp-zoom-img" src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" alt="Customer emails configuration" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-customer-emails" class="rp-zoom-overlay">
     <img src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" alt="" />
   </label>
@@ -321,9 +343,11 @@ Check the boxes to enable email communication for specific billing events. You c
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-hosted-payment-pages" class="rp-zoom-toggle" />
+
   <label for="zoom-hosted-payment-pages">
     <img class="rp-zoom-img" src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png" alt="Hosted Payment Pages settings" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-hosted-payment-pages" class="rp-zoom-overlay">
     <img src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png" alt="" />
   </label>
@@ -344,21 +368,21 @@ Check the boxes to enable email communication for specific billing events. You c
 </div>
 
 <div class="rp-card">
-
   ### Checkout configuration
 
   After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration to direct customers to purchase it.
 
   <span class="rp-zoom">
     <input type="checkbox" id="zoom-checkout-config" class="rp-zoom-toggle" />
+
     <label for="zoom-checkout-config">
       <img class="rp-zoom-img" src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="Checkout configuration button" style={{display:"block", width:"280px", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
     </label>
+
     <label for="zoom-checkout-config" class="rp-zoom-overlay">
       <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="" />
     </label>
   </span>
-
 </div>
 
 # Edit a plan
@@ -368,6 +392,7 @@ Check the boxes to enable email communication for specific billing events. You c
     <div class="rp-step-num">1</div>
     <div><h4>Navigate to plans</h4><p>Go to <strong>Configuration → Plans</strong>.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Select Edit</h4><p>Hover over the plan row in the list view, or use the plan actions menu on the plan details page, and select <strong>Edit</strong>.</p></div>
@@ -376,9 +401,11 @@ Check the boxes to enable email communication for specific billing events. You c
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-plan-row-actions" class="rp-zoom-toggle" />
+
   <label for="zoom-plan-row-actions">
     <img class="rp-zoom-img" src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" alt="Plan row hover actions showing Edit, Duplicate, and Delete options" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-plan-row-actions" class="rp-zoom-overlay">
     <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" alt="" />
   </label>
@@ -392,11 +419,11 @@ Check the boxes to enable email communication for specific billing events. You c
 </div>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Plan name changes apply to existing subscriptions</strong> Updating a plan's name updates it site-wide. Existing subscriptions will show the new name in the Admin UI, and future invoice line items will use the updated name.</div>
+  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true" /> Plan name changes apply to existing subscriptions</strong> Updating a plan's name updates it site-wide. Existing subscriptions will show the new name in the Admin UI, and future invoice line items will use the updated name.</div>
 </div>
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true"></i> Note</strong> Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
+  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
 </div>
 
 # Duplicate a plan
@@ -406,6 +433,7 @@ Check the boxes to enable email communication for specific billing events. You c
     <div class="rp-step-num">1</div>
     <div><h4>Navigate to plans</h4><p>Go to <strong>Configuration → Plans</strong>.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Select Duplicate</h4><p>Hover over the plan row to reveal the action options, then select <strong>Duplicate</strong>. All details from the original plan are copied to the Create a Plan form, with <strong>-copy</strong> appended to the plan name and plan code.</p></div>
@@ -414,9 +442,11 @@ Check the boxes to enable email communication for specific billing events. You c
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-duplicate-plan-form" class="rp-zoom-toggle" />
+
   <label for="zoom-duplicate-plan-form">
     <img class="rp-zoom-img" src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png" alt="Duplicate plan form with -copy appended to name and code fields" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-duplicate-plan-form" class="rp-zoom-overlay">
     <img src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png" alt="" />
   </label>
@@ -427,6 +457,7 @@ Check the boxes to enable email communication for specific billing events. You c
     <div class="rp-step-num">3</div>
     <div><h4>Adjust the details</h4><p>Update the plan name, plan code, and any other fields as needed for the new plan.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">4</div>
     <div><h4>Create the plan</h4><p>Select <strong>Create Plan</strong> once you've finished adjusting the details.</p></div>
@@ -434,7 +465,7 @@ Check the boxes to enable email communication for specific billing events. You c
 </div>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong> You can also duplicate a plan immediately after creating it — the success confirmation includes a duplicate option.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true" /> Tip</strong> You can also duplicate a plan immediately after creating it — the success confirmation includes a duplicate option.</div>
 </div>
 
 # Delete a plan
@@ -444,10 +475,12 @@ Check the boxes to enable email communication for specific billing events. You c
     <div class="rp-step-num">1</div>
     <div><h4>Navigate to plans</h4><p>Go to <strong>Configuration → Plans</strong>.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Select Delete</h4><p>Hover over the plan row in the list view, or use the plan actions dropdown on the plan details page, and select <strong>Delete</strong>.</p></div>
   </div>
+
   <div class="rp-step">
     <div class="rp-step-num">3</div>
     <div><h4>Confirm deletion</h4><p>Confirm your decision in the dialog.</p></div>
@@ -456,14 +489,16 @@ Check the boxes to enable email communication for specific billing events. You c
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-delete-confirmation" class="rp-zoom-toggle" />
+
   <label for="zoom-delete-confirmation">
     <img class="rp-zoom-img" src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png" alt="Delete plan confirmation dialog" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-delete-confirmation" class="rp-zoom-overlay">
     <img src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png" alt="" />
   </label>
 </span>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
+  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true" /> Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
 </div>
