@@ -93,8 +93,10 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-.rc-pillar-hero-icon { width: 48px; height: 48px; object-fit: contain; display: block; margin: 0 auto 16px; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
+.rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
+.rc-logo-image { height: 28px; display: block; }
+.rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
 /* ── STICKY NAV — Acquire: yellow background ── */
@@ -160,14 +162,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
+.rc-sticky-link-active { background: rgba(0,0,0,0.12); font-weight: 800; }
+.rc-sticky-link-active:hover { background: var(--offblack); color: var(--yellow) !important; }
 
-/* ── CATEGORY SECTIONS ── */
-.rc-category { margin-bottom: 56px; }
-.rc-category h2 {
+/* ── CONTENT SECTIONS ── */
+.rc-lp-section { margin-bottom: 56px; }
+.rc-lp-section h2 {
   font-size: 1.6rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
   display: flex; align-items: center; gap: 12px;
 }
-.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
@@ -302,8 +308,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── HERO ── -->
     <div class="rc-hero">
-      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" style="height:32px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
-      <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire icon" class="rc-pillar-hero-icon">
+      <div class="rc-brand-header">
+        <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
+      </div>
+      <img class="rc-pillar-hero-icon" src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire icon">
       <h1>Acquire</h1>
       <p>Convert more customers, optimize sign-ups, and sustainably grow your subscriber base by leveraging Recurly's powerful acquisition tools.</p>
     </div>
@@ -329,12 +337,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <!-- ── PLANS & PRICING ── -->
-    <div id="plans" class="rc-category">
+    <div id="plans" class="rc-lp-section">
       <h2>Plans &amp; Pricing</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Plans icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Plans</h3>
@@ -344,7 +352,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Pricing Models icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Pricing Models: Tiers vs Ramp</h3>
@@ -354,7 +362,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Plan Flexibility icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Plan Flexibility</h3>
@@ -366,12 +374,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- ── INCENTIVES ── -->
-    <div id="incentives" class="rc-category">
+    <div id="incentives" class="rc-lp-section">
       <h2>Incentives</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Trials icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Trials</h3>
@@ -381,7 +389,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Coupons icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Coupons</h3>
@@ -393,12 +401,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- ── GIFTING & EXPANSION ── -->
-    <div id="gifting" class="rc-category">
+    <div id="gifting" class="rc-lp-section">
       <h2>Gifting &amp; Expansion</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Gift Cards icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Gift Cards</h3>
@@ -408,7 +416,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Gift Subscriptions icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Gift Subscriptions</h3>
@@ -420,12 +428,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- ── PAYMENTS ── -->
-    <div id="payments" class="rc-category">
+    <div id="payments" class="rc-lp-section">
       <h2>Payments</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Payments icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Payments for Acquisition</h3>
