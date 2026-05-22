@@ -41,7 +41,7 @@ We're here to assist you every step of the way. Pick the channel that fits the k
   <Card title="Live chat" href="https://recurly.com" target="_blank" icon="fa-comments">
     Instant help from our team. Visit Recurly or your Sandbox, log in, and select the purple Live Chat button at the bottom-right of your screen.
   </Card>
-  <Card title="Support ticket" href="https://support.recurly.com/hc/en-us/requests/new" target="_blank" icon="fa-ticket-alt">
+  <Card title="Support ticket" href="https://support.recurly.com/hc/en-us/requests/new" target="_blank" icon="fa-ticket">
     Best for product issues or technical inquiries. Open a ticket and our technical support team will follow up.
   </Card>
 </Cards>
