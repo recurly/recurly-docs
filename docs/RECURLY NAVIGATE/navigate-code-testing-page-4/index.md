@@ -6,36 +6,37 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retain — Recurly Navigate</title>
 <style>
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow: #FFD706;
-  --orange: #FF8200;
-  --offblack: #0D0D0B;
-  --darkgray: #32312D;
-  --gray: #807D73;
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
   --lightgray: #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite: #FFFDF2;
-  --retain: #FF9D88;
+  --brightgray:#F1EFE3;
+  --offwhite:  #FFFDF2;
+  --retain:    #FF9D88;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
 }
 .rc-guide * { box-sizing: border-box; }
 body { margin: 0; background: #fff; }
 
-/* ── ANNOUNCEMENT BAR ── */
+/* ── HOST-THEME ARMOR ── */
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
+
+/* ── ANNOUNCEMENT BAR — hidden by default ── */
 .rc-announce-bar {
   background: var(--yellow);
   color: var(--offblack);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
@@ -46,6 +47,7 @@ body { margin: 0; background: #fff; }
   gap: 12px;
   line-height: 1.4;
 }
+.rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
@@ -84,14 +86,11 @@ body { margin: 0; background: #fff; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-.rc-brand-header { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 30px; }
-.rc-logo-image { height: 40px; width: auto; }
-.rc-pillar-hero-icon { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
-.rc-pillar-hero-icon img { width: 48px; height: 48px; object-fit: contain; }
+.rc-pillar-hero-icon { width: 48px; height: 48px; object-fit: contain; display: block; margin: 0 auto 16px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* ── NAVIGATE QUICK LINKS NAV — Retain accent: Salmon (#FF9D88) ── */
+/* ── STICKY NAV — Retain salmon bg ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -113,7 +112,6 @@ details.rc-sticky-nav-wrap > summary {
 }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-
 .rc-nav-toggle-label {
   display: inline-flex;
   align-items: center;
@@ -127,24 +125,15 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
 .rc-nav-chevron {
   font-size: .72rem;
   color: var(--offblack);
-  opacity: 0.6;
+  opacity: 0.55;
   line-height: 1;
   transition: transform 0.25s ease;
 }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
-
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
-.rc-nav-drawer-inner {
-  overflow: hidden;
-  border-top: 1px solid rgba(0,0,0,0.10);
-}
-.rc-nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 4px;
-  padding: 12px 20px 18px;
-}
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 .rc-sticky-link {
   color: var(--offblack) !important;
   text-decoration: none !important;
@@ -160,13 +149,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 6px;
 }
-.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; text-decoration: none !important; }
+.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
 .rc-category h2 {
-  font-size: 1.6rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
+  font-size: 1.5rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
   display: flex; align-items: center; gap: 12px;
 }
 .rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
@@ -174,96 +163,121 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
 .rc-path-card {
-  background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px;
-  padding: 20px 24px; text-decoration: none !important; color: inherit;
-  transition: all .2s ease; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
+  background: var(--offwhite);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: all .2s ease;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: center;
 }
-.rc-path-card:hover { border-color: var(--retain); box-shadow: 0 4px 16px rgba(255,157,136,.2); transform: translateY(-2px); text-decoration: none !important; }
+/* Armor override — explicit border-bottom on base and hover states */
+.rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
+.rc-guide a.rc-path-card:hover {
+  border-color: var(--retain);
+  border-bottom: 1px solid var(--retain) !important;
+  box-shadow: 0 4px 16px rgba(255,157,136,.2);
+  transform: translateY(-2px);
+}
 .rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
-.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack); text-decoration: none !important; }
-.rc-path-content p { font-size: .92rem; color: var(--gray); line-height: 1.5; margin: 0; text-decoration: none !important; }
-.rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; text-decoration: none !important; white-space: nowrap; }
+.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack); }
+.rc-path-content p { font-size: .92rem; color: var(--gray); line-height: 1.5; margin: 0; }
+.rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
-/* ── BOTTOM CTA ── */
+/* ── OFFICE HOURS CTA ── */
 .rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
-.rc-btn-secondary { background: transparent; color: var(--offblack); text-decoration: none !important; padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--offblack); white-space: nowrap; transition: all .2s; }
-.rc-btn-secondary:hover { background: var(--offblack); color: var(--yellow) !important; }
-
-/* ── FOOTER NAV — matches home page style exactly ── */
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 20px; text-align: center; }
-.rc-footer-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; }
-.rc-footer-link {
-  color: var(--gray);
+/* Armor-safe selector pattern for secondary button */
+.rc-guide a.rc-btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: var(--offblack) !important;
   text-decoration: none !important;
-  font-weight: 600;
-  font-size: .9rem;
-  transition: color .2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  padding: 11px 22px; border-radius: 10px;
+  font-weight: 700; font-size: .9rem;
+  border: 2px solid var(--offblack);
+  border-bottom: 2px solid var(--offblack) !important;
+  white-space: nowrap; transition: all .2s;
 }
-.rc-footer-link:hover { color: var(--offblack); }
-.rc-footer-link img { width: 13px; height: 13px; object-fit: contain; opacity: 0.55; }
+.rc-guide a.rc-btn-secondary:hover {
+  background: var(--offblack);
+  color: var(--yellow) !important;
+  border: 2px solid var(--offblack) !important;
+  border-bottom: 2px solid var(--offblack) !important;
+}
+
+/* ── FOOTER NAV — grouped sections ── */
+.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
+.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; }
+.rc-footer-link:hover { color: var(--orange); }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
+  .rc-content-wrap { padding: 0 20px; }
+  .rc-top-nav { padding: 16px 20px; }
+  .rc-hero { padding: 36px 20px 36px; }
+  .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
+  .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
+  .rc-oh-cta { padding: 24px 20px; }
+  .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
+  .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; }
+  .rc-stat-strip { grid-template-columns: 1fr; }
+  .rc-next-grid { grid-template-columns: 1fr; }
   .rc-path-card { grid-template-columns: 1fr; gap: 16px; }
   .rc-path-arrow { margin-top: 4px; }
-  .rc-hero { padding: 36px 20px 40px; }
-  .rc-content-wrap { padding: 0 20px; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
-  .rc-announce-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .rc-top-nav { padding: 16px 20px; }
+  .rc-announce-bar.rc-active { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 </style>
-</head>
-<body>
+
 <div class="rc-guide">
 
   <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Navigate Hub</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Home</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR ── -->
+    <!-- ── ANNOUNCEMENT BAR — hidden by default, add rc-active to show ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" class="rc-announce-link">Register Now →</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO ── -->
+    <!-- ── HERO — pillar subpage: logo + pillar icon + h1 + subtitle, no stats ── -->
     <div class="rc-hero">
-      <div class="rc-brand-header">
-        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
-      </div>
-      <div class="rc-pillar-hero-icon">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain" />
-      </div>
+      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" style="height:32px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
+      <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain icon" class="rc-pillar-hero-icon">
       <h1>Retain</h1>
       <p>Reduce involuntary churn, recover revenue, and keep subscribers engaged with intelligent tools that protect your bottom line.</p>
     </div>
 
-    <!-- ── NAVIGATE QUICK LINKS NAV ── -->
+    <!-- ── STICKY NAV — collapsed, section anchors ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
-        <span class="rc-nav-toggle-label">
-          Navigate Quick Links
-          <span class="rc-nav-chevron">▲</span>
-        </span>
+        <span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span>
       </summary>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-              <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
+              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
             <a href="#involuntary" class="rc-sticky-link">Involuntary Churn</a>
             <a href="#voluntary" class="rc-sticky-link">Voluntary Churn</a>
@@ -384,32 +398,38 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── BOTTOM CTA ── -->
+    <!-- ── OFFICE HOURS CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
         <h3>👋 Need live guidance on your retention strategy?</h3>
         <p>Bring your churn data and configuration questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
-      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank">Register for Office Hours</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV — matches home page style, all items linked ── -->
+    <!-- ── FOOTER NAV — pillar subpage: one section with on-page anchors + utility row ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-          <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
-        </a>
-        <a href="#involuntary" class="rc-footer-link">Involuntary Churn</a>
-        <a href="#voluntary" class="rc-footer-link">Voluntary Churn</a>
-        <a href="#communication" class="rc-footer-link">Communication</a>
-        <a href="mailto:support@recurly.com" class="rc-footer-link">support@recurly.com</a>
+
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Retain</span>
+          <a href="#involuntary" class="rc-footer-link">Involuntary Churn</a>
+          <a href="#voluntary" class="rc-footer-link">Voluntary Churn</a>
+          <a href="#communication" class="rc-footer-link">Communication</a>
+        </div>
+
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+
       </div>
     </div>
 
   </div>
 </div>
-</body>
-</html>
 `}</HTMLBlock>
 
 <br />
