@@ -6,36 +6,37 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scale — Recurly Navigate</title>
 <style>
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
+/* ── HOST-THEME ARMOR — resets all anchor states site-wide ── */
+.rc-guide a,
+a:link, a:visited, a:hover, a:active {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+
 .rc-guide {
-  --yellow: #FFD706;
-  --orange: #FF8200;
-  --offblack: #0D0D0B;
-  --darkgray: #32312D;
-  --gray: #807D73;
-  --lightgray: #CCC9B8;
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #CCC9B8;
   --brightgray: #F1EFE3;
-  --offwhite: #FFFDF2;
-  --scale: #FF5810;
+  --offwhite:   #FFFDF2;
+  --scale:      #FF5810;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
 }
 .rc-guide * { box-sizing: border-box; }
 body { margin: 0; background: #fff; }
 
-/* ── ANNOUNCEMENT BAR ── */
+/* ── ANNOUNCEMENT BAR — hidden by default ── */
 .rc-announce-bar {
+  display: none; /* hidden on load — no rc-active class */
   background: var(--yellow);
   color: var(--offblack);
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
@@ -46,6 +47,7 @@ body { margin: 0; background: #fff; }
   gap: 12px;
   line-height: 1.4;
 }
+.rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
@@ -72,7 +74,7 @@ body { margin: 0; background: #fff; }
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── PILLAR HERO ── */
+/* ── PILLAR HERO — no stats on pillar subpage ── */
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.8), rgba(13,13,11,0.8)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
@@ -84,23 +86,23 @@ body { margin: 0; background: #fff; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-.rc-brand-header { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 30px; }
-.rc-logo-image { height: 40px; width: auto; }
-.rc-pillar-hero-icon { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
-.rc-pillar-hero-icon img { width: 48px; height: 48px; object-fit: contain; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
+.rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
+.rc-logo-image { height: 28px; display: block; }
+/* rc-pillar-hero-icon class sits on the <img> directly — no wrapper div */
+.rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* ── NAVIGATE QUICK LINKS NAV — Scale accent: Vermillion (#FF5810) ── */
+/* ── NAVIGATION MENU — Scale: sticky + collapsed, dark vermillion bg ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: var(--scale);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0;
   border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.10);
+  border: 1px solid rgba(0,0,0,0.08);
   overflow: hidden;
 }
 details.rc-sticky-nav-wrap > summary {
@@ -114,6 +116,7 @@ details.rc-sticky-nav-wrap > summary {
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
 
+/* Scale pillar: toggle label and chevron must be white */
 .rc-nav-toggle-label {
   display: inline-flex;
   align-items: center;
@@ -127,7 +130,7 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
 .rc-nav-chevron {
   font-size: .72rem;
   color: #fff;
-  opacity: 0.75;
+  opacity: 0.55;
   line-height: 1;
   transition: transform 0.25s ease;
 }
@@ -137,7 +140,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner {
   overflow: hidden;
-  border-top: 1px solid rgba(255,255,255,0.25);
+  border-top: 1px solid rgba(255,255,255,0.20);
 }
 .rc-nav-links {
   display: flex;
@@ -145,6 +148,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px 4px;
   padding: 12px 20px 18px;
 }
+/* Scale nav: links are white on dark vermillion bg */
 .rc-sticky-link {
   color: #fff !important;
   text-decoration: none !important;
@@ -161,7 +165,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px;
 }
 .rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #fff !important; text-decoration: none !important; }
-.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; filter: brightness(0) invert(1); }
+.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
@@ -174,11 +180,22 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
 .rc-path-card {
-  background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px;
-  padding: 20px 24px; text-decoration: none !important; color: inherit;
-  transition: all .2s ease; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
+  background: var(--offwhite);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: all .2s ease;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: center;
 }
-.rc-path-card:hover { border-color: var(--scale); box-shadow: 0 4px 16px rgba(255,88,16,.15); transform: translateY(-2px); text-decoration: none !important; }
+/* Armor overrides — border-bottom on base + hover */
+.rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
+.rc-guide a.rc-path-card:hover { border-color: var(--scale); border-bottom: 1px solid var(--scale) !important; box-shadow: 0 4px 16px rgba(255,88,16,.15); transform: translateY(-2px); text-decoration: none !important; }
+
 .rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
@@ -190,80 +207,88 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
-.rc-btn-secondary { background: transparent; color: var(--offblack); text-decoration: none !important; padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--offblack); white-space: nowrap; transition: all .2s; }
-.rc-btn-secondary:hover { background: var(--offblack); color: var(--yellow) !important; }
 
-/* ── FOOTER NAV — matches home page style exactly ── */
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 32px; margin-top: 20px; text-align: center; }
-.rc-footer-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; }
-.rc-footer-link {
-  color: var(--gray);
+/* rc-btn-secondary — armor override on base + hover */
+.rc-guide a.rc-btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: var(--offblack) !important;
   text-decoration: none !important;
-  font-weight: 600;
-  font-size: .9rem;
-  transition: color .2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  padding: 11px 22px; border-radius: 10px;
+  font-weight: 700; font-size: .9rem;
+  border: 2px solid var(--offblack);
+  border-bottom: 2px solid var(--offblack) !important;
+  white-space: nowrap; transition: all .2s;
 }
-.rc-footer-link:hover { color: var(--offblack); }
-.rc-footer-link img { width: 13px; height: 13px; object-fit: contain; opacity: 0.55; }
+.rc-guide a.rc-btn-secondary:hover {
+  background: var(--offblack) !important;
+  color: var(--yellow) !important;
+  border: 2px solid var(--offblack) !important;
+  border-bottom: 2px solid var(--offblack) !important;
+}
+
+/* ── FOOTER NAV — grouped sections, pillar subpage variant ── */
+.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
+.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; }
+.rc-footer-link:hover { color: var(--orange); }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
+  .rc-content-wrap { padding: 0 20px; }
+  .rc-top-nav { padding: 16px 20px; }
+  .rc-hero { padding: 36px 20px 36px; }
   .rc-path-card { grid-template-columns: 1fr; gap: 16px; }
   .rc-path-arrow { margin-top: 4px; }
-  .rc-hero { padding: 36px 20px 40px; }
-  .rc-content-wrap { padding: 0 20px; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
   .rc-announce-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .rc-top-nav { padding: 16px 20px; }
 }
 </style>
-</head>
-<body>
+
 <div class="rc-guide">
 
+  <!-- ── TOP BACK LINK — pillar subpage: exactly "← Back to Home" ── -->
   <div class="rc-top-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Navigate Hub</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-back-link">← Back to Home</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR ── -->
+    <!-- ── ANNOUNCEMENT BAR — hidden on load (no rc-active class) ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" class="rc-announce-link">Register Now →</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO ── -->
+    <!-- ── PILLAR HERO — no stats on pillar subpage ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
-        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
+        <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       </div>
-      <div class="rc-pillar-hero-icon">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale" />
-      </div>
+      <!-- rc-pillar-hero-icon on the <img> directly — no wrapper div -->
+      <img class="rc-pillar-hero-icon" src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale icon">
       <h1>Scale</h1>
       <p>Expand your business, launch new products, and optimize global payments and analytics with advanced insights and enterprise-grade security.</p>
     </div>
 
-    <!-- ── NAVIGATE QUICK LINKS NAV ── -->
+    <!-- ── NAVIGATION MENU — sticky + collapsed (pillar subpage) ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
-        <span class="rc-nav-toggle-label">
-          Navigate Quick Links
-          <span class="rc-nav-chevron">▲</span>
-        </span>
+        <span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span>
       </summary>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
+            <!-- Scale dark nav: white home icon -->
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
-              <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
+              <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
             </a>
             <a href="#analytics" class="rc-sticky-link">Analytics &amp; Reporting</a>
             <a href="#expansion" class="rc-sticky-link">Global Expansion</a>
@@ -279,7 +304,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Benchmarks</h3>
@@ -289,7 +314,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Churn Reporting</h3>
@@ -299,7 +324,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Payments Hub</h3>
@@ -309,7 +334,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Data Exports &amp; Acquisition Data</h3>
@@ -326,7 +351,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Currency &amp; Localization</h3>
@@ -336,7 +361,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Local Payment Methods</h3>
@@ -346,7 +371,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Tax &amp; Compliance</h3>
@@ -356,7 +381,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Account Hierarchies</h3>
@@ -373,7 +398,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Fraud &amp; Chargeback Management</h3>
@@ -383,7 +408,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>Revenue Recognition</h3>
@@ -393,7 +418,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Icon" style="opacity:.5;" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
           </div>
           <div class="rc-path-content">
             <h3>App Management &amp; Integrations</h3>
@@ -410,26 +435,34 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <h3>👋 Need live guidance on scaling your business?</h3>
         <p>Bring your expansion and data questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
-      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank">Register for Office Hours</a>
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV — matches home page style, all items linked ── -->
+    <!-- ── FOOTER NAV — pillar subpage: one section (on-page anchors) + utility row ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-          <img src="https://files.readme.io/27c852ebfd8736eb0017ee9442030e66cd19e7db48c7e791ec5d8e092162ca48-White_Navigate_Home_Pin_1.png" alt=""> Home
-        </a>
-        <a href="#analytics" class="rc-footer-link">Analytics &amp; Reporting</a>
-        <a href="#expansion" class="rc-footer-link">Global Expansion</a>
-        <a href="#optimization" class="rc-footer-link">Revenue Optimization</a>
-        <a href="mailto:support@recurly.com" class="rc-footer-link">support@recurly.com</a>
+
+        <!-- One rc-footer-section with on-page section anchors only -->
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Scale</span>
+          <a href="#analytics" class="rc-footer-link">Analytics &amp; Reporting</a>
+          <a href="#expansion" class="rc-footer-link">Global Expansion</a>
+          <a href="#optimization" class="rc-footer-link">Revenue Optimization</a>
+        </div>
+
+        <!-- Utility row: Navigate Home (black icon) + Contact Support only -->
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+
       </div>
     </div>
 
-  </div>
-</div>
-</body>
-</html>
+  </div><!-- /.rc-content-wrap -->
+</div><!-- /.rc-guide -->
 `}</HTMLBlock>
 
 <br />
