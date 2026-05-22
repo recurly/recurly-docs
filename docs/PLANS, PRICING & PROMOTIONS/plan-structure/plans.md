@@ -230,7 +230,7 @@ Price segments let you define multiple price points for a single plan within the
 </div>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong>Tip</strong> For A/B tests, name segments clearly — for example, <code>exp-a</code> and <code>exp-b</code> — and log the chosen segment code with your analytics events.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong> For A/B tests, name segments clearly — for example, <code>exp-a</code> and <code>exp-b</code> — and log the chosen segment code with your analytics events.</div>
 </div>
 
 ### Notes and limits
@@ -387,11 +387,11 @@ Check the boxes to enable email communication for specific billing events. You c
 </div>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong>Plan name changes apply to existing subscriptions</strong> Updating a plan's name updates it site-wide. Existing subscriptions will show the new name in the Admin UI, and future invoice line items will use the updated name.</div>
+  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Plan name changes apply to existing subscriptions</strong> Updating a plan's name updates it site-wide. Existing subscriptions will show the new name in the Admin UI, and future invoice line items will use the updated name.</div>
 </div>
 
 <div class="rp-callout rp-callout-note">
-  <div><strong>Note</strong> Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
+  <div><strong><i class="fa fa-info-circle" aria-hidden="true"></i> Note</strong> Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
 </div>
 
 # Duplicate a plan
@@ -429,7 +429,7 @@ Check the boxes to enable email communication for specific billing events. You c
 </div>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong>Tip</strong> You can also duplicate a plan immediately after creating it — the success confirmation includes a duplicate option.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong> You can also duplicate a plan immediately after creating it — the success confirmation includes a duplicate option.</div>
 </div>
 
 # Delete a plan
@@ -460,5 +460,5 @@ Check the boxes to enable email communication for specific billing events. You c
 </span>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong>Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
+  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
 </div>
