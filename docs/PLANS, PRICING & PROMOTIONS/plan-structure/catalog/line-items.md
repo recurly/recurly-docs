@@ -8,100 +8,115 @@ hidden: false
 metadata:
   robots: index
 ---
-# Overview
+Title: Line items
+Metadata description: How line items work on Recurly invoices — what they display, how to name them, and compliance best practices for L2/L3 data and HIPAA.
 
-### Required plan
+---PASTE INTO EDITOR BELOW---
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
 
-export const PrerequisitesLimitations = ({ header }) => {
-  return (
-    <div className="flex justify-start">
-      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
-        <p className="text-lg font-bold">{header}</p>
-        <p>
-          <i className="fa-solid fa-check mr-2" />
-          Line items can be named freely but should avoid special characters unless confirmed with your payment gateway.
-        </p>
-        <p>
-          <i className="fa-solid fa-exclamation-triangle mr-4" />
-          Invoices only display the <strong>first 500 line items</strong> in the Admin Console, Hosted Invoice, and PDF views.
-        </p>
-        <p>
-          <i className="fa-solid fa-check mr-2" />
-          Full line item details (beyond 500) must be accessed via the <a className="text-blue-500! dark:text-blue-300!" href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.
-        </p>
-      </div>
-    </div>
-  );
-};
+  <div class="rp-overview">
+    Line items are the individual charges listed on a Recurly invoice — each one representing a product, service, or adjustment applied to a transaction. Understanding how to structure and name them keeps your billing transparent, your subscribers informed, and your data compliant.
+  </div>
 
-<PrerequisitesLimitations header="Prerequisites & limitations" />
+  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
 
-## Definition
+  ### Prerequisites
 
-Line items are individual charges or components listed on an invoice, each representing a product, service, or adjustment applied to a transaction. These can be associated with subscriptions or stand-alone charges.
+  <ul class="rp-list">
+    <li>Line items can be named freely but should avoid special characters unless confirmed with your payment gateway.</li>
+  </ul>
 
-## Key benefits
+  ### Limitations
 
-* **Clear billing breakdown**: Provides transparency to subscribers by itemizing all charges.
-* **Supports stand-alone items**: Line items don't need to be tied to a subscription to be invoiced.
-* **Displayed across channels**: Visible in Admin Console, PDFs, Hosted Invoice, and Hosted Account Management.
-* **Payments compliance**: Sent to gateways in various cases, such as Klarna usage, and lower interchange rates in certain cases. Ensure what you are creating for line items is descriptive and accurate.
+  <ul class="rp-list">
+    <li>Invoices display only the first 500 line items in the Admin Console, Hosted Invoice, and PDF views. Subtotals, taxes, and totals always reflect the full set. To access all line items beyond the first 500, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</li>
+  </ul>
 
-## Key details
+  <nav class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span> Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span> Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span> Key details</a>
+  </nav>
 
-### Invoice line items
+</div>
 
-Every invoice line item displays these columns:
+# Definition
 
-* **Date**
-* **Description**
-* **Quantity**
-* **Price**
-* **Discount** (when applied)
-* **Subtotal**
-* **Tax** (including rate, when applicable)
-* **Total** (only shown if tax is applied)
+<div class="rp-definition">
+  Line items are individual charges or components listed on an invoice, each representing a product, service, or adjustment applied to a transaction. They can be associated with subscriptions or exist as stand-alone charges — and they appear across the Admin Console, PDF invoices, Hosted Invoice pages, and Hosted Account Management.
+</div>
 
-> **Note:** Invoices in the Admin Console, the Hosted Invoice page, and PDF format will show only the first 500 line items. However, the **Subtotal**, **Tax**, and **Total** always reflect the full set of line items, even those beyond the first 500.
->
-> To download all line items, use the [Adjustments Export](https://docs.recurly.com/docs/adjustments-exports).
+# Key benefits
 
-***
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Clear billing breakdown</strong>
+    <span>Itemizes every charge on an invoice so subscribers always know exactly what they're paying for.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Stand-alone charge support</strong>
+    <span>Line items don't need to be tied to a subscription — they can be invoiced independently for one-off charges.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Displayed across channels</strong>
+    <span>Visible in the Admin Console, PDF invoices, Hosted Invoice pages, and Hosted Account Management — no matter how your subscribers view their bills.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">✦</div>
+    <strong>Payments compliance</strong>
+    <span>Accurate, descriptive line items support lower interchange rates through L2/L3 data programs and are sent to gateways in cases like Klarna usage.</span>
+  </div>
+</div>
 
-### Description and naming guidelines
+# Key details
 
-Make use of the best practices below for proper tracking of line items as well as Commercial Enhanced Data Program (CEPD) compliance for L2 and L3 data. CEDP is a program from Visa that validates transaction data under a new (as of 2025) set of standards and merchants can be rewarded for compliant transactions with a reduction in interchange rates.
+## Invoice line items
 
-Ensure your line items and other descriptive elements included in your invoices are compliant, as line items are sent to gateways in certain cases. This can also be applied to HIPAA compliance -- do not include PHI data for your customers in Invoice descriptions, product codes, plan names, or line item product data if the gateway you use is not also HIPAA compliant.
+Every invoice line item displays the following columns:
+
+- **Date**
+- **Description**
+- **Quantity**
+- **Price**
+- **Discount** (when applied)
+- **Subtotal**
+- **Tax** (including rate, when applicable)
+- **Total** (only shown if tax is applied)
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa fa-info-circle" aria-hidden="true"></i> Note</strong> Invoices in the Admin Console, Hosted Invoice page, and PDF format show only the first 500 line items. However, the <strong>Subtotal</strong>, <strong>Tax</strong>, and <strong>Total</strong> always reflect all line items — including those beyond the first 500. To download the full set, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</div>
+</div>
+
+## Description and naming guidelines
+
+Well-named line items matter beyond readability. They're required for Commercial Enhanced Data Program (CEDP) compliance — a Visa program (updated in 2025) that validates L2/L3 transaction data and rewards compliant merchants with reduced interchange rates. Line items are also sent to gateways in certain cases, such as Klarna transactions.
+
+If your gateway is not HIPAA-compliant, do not include protected health information (PHI) in invoice descriptions, product codes, plan names, or line item data.
 
 <Cards columns={4}>
   <Card title="Be specific" icon="fa-check-circle">
-    Use clear, descriptive names rather than generic labels like “Item 1” or “Charge.”
+    Use clear, descriptive names rather than generic labels like "Item 1" or "Charge."
   </Card>
-
   <Card title="Match the product" icon="fa-apple-alt">
-    If you sell fruit, list “Apple,” “Orange,” and “Banana” rather than “Fruits.”
+    If you sell fruit, list "Apple," "Orange," and "Banana" rather than "Fruits."
   </Card>
-
   <Card title="Avoid business names" icon="fa-building">
-    Don’t repeat your company name in item names or descriptions (e.g., “Fruit Shop Items”).
+    Don't repeat your company name in item names or descriptions — for example, "Fruit Shop Items."
   </Card>
-
   <Card title="Skip single-character names" icon="fa-font">
-    Avoid names that are a single character or all symbols—they confuse customers.
+    Avoid names that are a single character or all symbols — they confuse customers and fail compliance checks.
   </Card>
-
   <Card title="Where descriptions appear" icon="fa-file-invoice">
     Subscriber invoices, Hosted Account Management pages, and Hosted Invoice PDFs.
   </Card>
-
   <Card title="Character limit" icon="fa-text-width">
     Descriptions must be 255 characters or fewer.
   </Card>
-
   <Card title="Special character tip" icon="fa-info-circle">
-    Check with your payment gateway about any restrictions on special characters.
+    Check with your payment gateway about any restrictions on special characters before using them in names or descriptions.
   </Card>
 </Cards>
