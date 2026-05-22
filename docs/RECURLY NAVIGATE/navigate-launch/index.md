@@ -89,7 +89,7 @@ body { margin: 0; background: #fff; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
 /* FIX #1 + #4: Brand header wrapper + logo image (was bare <img style="height:32px">) */
-.rc-brand-header { display: flex; justify-content: center; margin-bottom: 20px; }
+.rc-brand-header { display: flex; justify-content: center; margin-bottom: 36px; }
 .rc-logo-image { height: 40px; display: block; }
 
 /* FIX #2 + #3: rc-pillar-hero-icon on <img> directly, 64px (was 48px inner / 72px wrapper div) */
