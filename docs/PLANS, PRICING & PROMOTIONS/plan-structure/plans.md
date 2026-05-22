@@ -14,12 +14,17 @@ metadata:
 next:
   description: ''
 ---
+Title: Plans
+Metadata description: Plans define the billing frequency, pricing model, and base price for your subscription products — create, edit, duplicate, or delete them from the Recurly dashboard.
+
+---PASTE INTO EDITOR BELOW---
+
 <div class="rp-page">
   <div class="rp-overview">
     Plans are the blueprint for your subscription business — they define what your customers subscribe to, how often they're billed, and how much they pay. Whether your model includes free trials, setup fees, ramp pricing, or price segments, Recurly's plans are built to match your business exactly. There's no limit to the number of plans you can create.
   </div>
 
-  <div class="rp-plan">✦ Available on all Recurly plans</div>
+  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
 
   <div class="rp-card">
 
