@@ -13,20 +13,23 @@ metadata:
 next:
   description: ''
 ---
-<div class="rp-page">
+Title: Plan structure
+Metadata description: An overview of how plans, add-ons, and the item catalog work together to define what you sell, how you bill for it, and how you grow subscription revenue.
 
+---PASTE INTO EDITOR BELOW---
+
+<div class="rp-page">
   <div class="rp-overview">
     A well-structured plan is the foundation of a healthy subscription business. Recurly gives you three building blocks — plans, add-ons, and an item catalog — to define exactly what you sell, how you bill for it, and how you grow revenue over time.
   </div>
 
-  <div class="rp-plan">✦ Available on all Recurly plans</div>
+  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
 
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
     <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
     <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
   </div>
-
 </div>
 
 # Definition
@@ -62,14 +65,16 @@ next:
 
 # Key details
 
+<div class="rp-sdk-grid">
 <Cards>
-  <Card title="Plans" href="https://docs.recurly.com/docs/plans">
+  <Card title="Plans" href="https://docs.recurly.com/docs/plans" target="_blank">
     Recurring billing products that define billing frequency and base price — the foundation of your revenue model.
   </Card>
-  <Card title="Add-ons" href="https://docs.recurly.com/docs/add-ons">
+  <Card title="Add-ons" href="https://docs.recurly.com/docs/add-ons" target="_blank">
     Additional features, services, or products customers can purchase alongside their base subscription. Your primary lever for upselling and generating revenue beyond the base plan price.
   </Card>
-  <Card title="Item catalog" href="https://docs.recurly.com/docs/catalog">
+  <Card title="Item catalog" href="https://docs.recurly.com/docs/catalog" target="_blank">
     A centralized collection of all your sellable units — standalone products, services, and add-ons in one place — making it easy to manage your full inventory and reuse items across multiple plans.
   </Card>
 </Cards>
+</div>
