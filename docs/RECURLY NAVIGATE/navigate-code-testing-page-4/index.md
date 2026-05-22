@@ -86,7 +86,9 @@ body { margin: 0; background: #fff; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-.rc-pillar-hero-icon { width: 48px; height: 48px; object-fit: contain; display: block; margin: 0 auto 16px; }
+.rc-brand-header { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 28px; }
+.rc-logo-image { height: 40px; width: auto; }
+.rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 0 auto 24px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
@@ -262,7 +264,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── HERO — pillar subpage: logo + pillar icon + h1 + subtitle, no stats ── -->
     <div class="rc-hero">
-      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" style="height:32px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
+      <div class="rc-brand-header">
+        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly Navigate" class="rc-logo-image">
+      </div>
       <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain icon" class="rc-pillar-hero-icon">
       <h1>Retain</h1>
       <p>Reduce involuntary churn, recover revenue, and keep subscribers engaged with intelligent tools that protect your bottom line.</p>
