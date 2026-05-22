@@ -87,10 +87,15 @@ body { margin: 0; background: #fff; }
 }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
-.rc-pillar-hero-icon { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
-.rc-pillar-hero-icon img { width: 48px; height: 48px; object-fit: contain; }
 
-/* ── STICKY NAV — Launch (lightgray bg) ── */
+/* FIX #1 + #4: Brand header wrapper + logo image (was bare <img style="height:32px">) */
+.rc-brand-header { display: flex; justify-content: center; margin-bottom: 20px; }
+.rc-logo-image { height: 40px; display: block; }
+
+/* FIX #2 + #3: rc-pillar-hero-icon on <img> directly, 64px (was 48px inner / 72px wrapper div) */
+.rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 0 auto 24px; }
+
+/* ── STICKY NAV — Launch (brightgray bg) ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -189,9 +194,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 24px;
   align-items: center;
 }
-/* Armor override — explicit border-bottom for all states */
 .rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rc-guide a.rc-path-card:hover { border-color: var(--yellow); border-bottom: 1px solid var(--yellow) !important; box-shadow: 0 4px 16px rgba(255,215,6,.12); transform: translateY(-2px); }
+.rc-guide a.rc-path-card:hover { border-color: var(--lightgray); border-bottom: 1px solid var(--lightgray) !important; box-shadow: 0 4px 16px rgba(204,201,184,.25); transform: translateY(-2px); }
 .rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
@@ -246,12 +250,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO — Pillar subpage (2b): logo + pillar icon + h1 + p ── -->
+    <!-- ── HERO — Pillar subpage (2b): rc-brand-header + rc-pillar-hero-icon on <img> + h1 + p ── -->
     <div class="rc-hero">
-      <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" style="height:32px; margin-bottom:20px;">
-      <div class="rc-pillar-hero-icon">
-        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch" />
+      <div class="rc-brand-header">
+        <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       </div>
+      <img class="rc-pillar-hero-icon" src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch icon">
       <h1>Launch</h1>
       <p>Get configured and live fast. Build a solid subscription foundation from day one by mastering the core elements of the Recurly platform.</p>
     </div>
