@@ -13,22 +13,15 @@ next:
   description: ''
 ---
 <div class="rp-page">
-
   <div class="rp-overview">
     The item catalog is a centralized library of everything you sell. Define an item once and use it anywhere — as a one-time charge on an account, a recurring add-on on a plan, or directly on an individual subscription. The catalog keeps your product attributes consistent across every sales channel while giving you the flexibility to price and package items however your business needs.
   </div>
 
   <div class="rp-video" style={{paddingTop:"56.25%"}}>
-    <iframe
-      src="https://www.youtube.com/embed/h61lgTgxoRs"
-      title="Item catalog overview"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+    <iframe src="https://www.youtube.com/embed/h61lgTgxoRs" title="Item catalog overview" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen />
   </div>
 
-  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
 
   ### Prerequisites
 
@@ -52,7 +45,6 @@ next:
     <a class="rp-toc-pill" href="#item-data-and-exports"><span class="rp-toc-num">7</span> Item data and exports</a>
     <a class="rp-toc-pill" href="#api-and-client-libraries"><span class="rp-toc-num">8</span> API and client libraries</a>
   </nav>
-
 </div>
 
 # Definition
@@ -65,17 +57,19 @@ next:
 
 <div class="rp-benefits">
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa fa-random" aria-hidden="true"></i></div>
     <strong>One item, every channel</strong>
     <span>Sell the same catalog item as a one-time charge, a plan add-on, or directly on a subscription — without duplicating your setup.</span>
   </div>
+
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa fa-refresh" aria-hidden="true"></i></div>
     <strong>Reuse across plans</strong>
     <span>Define an item once and attach it to as many plans as needed, keeping pricing and attributes consistent across your entire product catalog.</span>
   </div>
+
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa fa-shield" aria-hidden="true"></i></div>
     <strong>Built-in compliance support</strong>
     <span>Item name and description fields are guided by card brand regulatory requirements, helping you stay compliant without extra work.</span>
   </div>
@@ -87,9 +81,11 @@ Your <a href="https://app.recurly.com/go/items" target="_blank">items dashboard<
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-items-dashboard" class="rp-zoom-toggle" />
+
   <label for="zoom-items-dashboard">
     <img class="rp-zoom-img" src="https://files.readme.io/a436fec-Items__Recurly.png" alt="Item catalog dashboard showing list of items" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-items-dashboard" class="rp-zoom-overlay">
     <img src="https://files.readme.io/a436fec-Items__Recurly.png" alt="" />
   </label>
@@ -105,44 +101,55 @@ Define the following parameters when creating an item.
 
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
+
   <tr>
     <td><strong>Item name</strong></td>
+
     <td>
       Appears on the <a href="https://docs.recurly.com/docs/hosted-pages" target="_blank">Hosted Account Management Page</a> and the subscriber's invoice. Limit: 255 characters. Avoid special characters without checking with your gateway provider first.<br /><br />
       <strong>Card brand compliance requirements:</strong> The name must not match or closely resemble the merchant name, must not be contained within the merchant name, must not be a single character or only special characters, and must describe what was purchased — generic terms like "Services" or "Product" are not permitted.
     </td>
   </tr>
+
   <tr>
     <td><strong>Item code</strong></td>
     <td>The item's unique Recurly identifier, used in Hosted Account Management Page URLs and API requests. For Vertex users, enter the Product field value here. Limit: 50 characters. Accepts numbers, lowercase letters, dashes, pluses, and underscores only.</td>
   </tr>
+
   <tr>
     <td><strong>External SKU</strong></td>
     <td>Optional. Associates items in Recurly with other systems or platforms. Can be reused across items. Limit: 50 characters.</td>
   </tr>
+
   <tr>
     <td><strong>Item description</strong></td>
+
     <td>
       A description of the item, displayable to customers outside Recurly if configured via the API.<br /><br />
       <strong>Card brand compliance requirements:</strong> The description must detail what was purchased, must not match or closely resemble the merchant name, must not be a single character or only special characters, and must not use generic terms like "Services" or "Product."
     </td>
   </tr>
+
   <tr>
     <td><strong>Accounting code</strong></td>
     <td>Optional. Identifies invoice line items in exports. Limit: 25 characters. Accepts numbers, lowercase letters, dashes, pluses, and underscores only.</td>
   </tr>
+
   <tr>
     <td><strong>HS code / Commodity code</strong></td>
     <td>A Harmonized System (HS) code for invoice compliance on traded products — a six-digit international standard developed by the <a href="https://www.wcoomd.org/en/topics/nomenclature/overview.aspx" target="_blank">World Customs Organization</a> for classifying goods. Countries may add digits for regional classification. Limit: 25 lowercase alphanumeric characters.</td>
   </tr>
+
   <tr>
     <td><strong>Default price</strong></td>
     <td>The default charge amount for this item. Can be overridden at the time of charge creation.</td>
   </tr>
+
   <tr>
     <td><strong>Revenue recognition</strong></td>
     <td>If <a href="https://docs.recurly.com/docs/revenue-recognition" target="_blank">Revenue Recognition</a> is enabled, specifies how invoiced charges from this item are realized as revenue. Can be modified during charge creation.</td>
   </tr>
+
   <tr>
     <td><strong>Taxes</strong></td>
     <td>If taxation is enabled, specifies whether and how sales of this item are taxed. These values carry over to all sales of the item.</td>
@@ -151,9 +158,11 @@ Define the following parameters when creating an item.
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-hs-code-field" class="rp-zoom-toggle" />
+
   <label for="zoom-hs-code-field">
     <img class="rp-zoom-img" src="https://files.readme.io/6f59950ffaa1c46e6b94ba73a68b535526abd3c8aea540aedf997a7b1e7204b9-image.png" alt="HS code field in item creation form" style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-hs-code-field" class="rp-zoom-overlay">
     <img src="https://files.readme.io/6f59950ffaa1c46e6b94ba73a68b535526abd3c8aea540aedf997a7b1e7204b9-image.png" alt="" />
   </label>
@@ -165,9 +174,11 @@ Custom fields let you track additional item attributes beyond the standard field
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-custom-fields" class="rp-zoom-toggle" />
+
   <label for="zoom-custom-fields">
     <img class="rp-zoom-img" src="https://files.readme.io/65ddc56-Item_Details__Recurly.png" alt="Custom fields on the item details page" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-custom-fields" class="rp-zoom-overlay">
     <img src="https://files.readme.io/65ddc56-Item_Details__Recurly.png" alt="" />
   </label>
@@ -205,9 +216,11 @@ When creating a one-time charge via the Admin Console, select **Item** as the ch
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-one-time-charge" class="rp-zoom-toggle" />
+
   <label for="zoom-one-time-charge">
     <img class="rp-zoom-img" src="https://files.readme.io/c9d0bfa-Add_Charge__Recurly.png" alt="Creating a one-time item charge in the Admin Console" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-one-time-charge" class="rp-zoom-overlay">
     <img src="https://files.readme.io/c9d0bfa-Add_Charge__Recurly.png" alt="" />
   </label>
@@ -225,9 +238,11 @@ Configuring items as add-ons on a plan restricts what subscribers to that plan c
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-plan-addons-item" class="rp-zoom-toggle" />
+
   <label for="zoom-plan-addons-item">
     <img class="rp-zoom-img" src="https://files.readme.io/f55b784-Plan_Add-Ons.png" alt="Creating a recurring item-based add-on on a plan" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-plan-addons-item" class="rp-zoom-overlay">
     <img src="https://files.readme.io/f55b784-Plan_Add-Ons.png" alt="" />
   </label>
@@ -241,9 +256,11 @@ Items can be sold with fixed pricing or any available <a href="https://docs.recu
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-quantity-pricing" class="rp-zoom-toggle" />
+
   <label for="zoom-quantity-pricing">
     <img class="rp-zoom-img" src="https://files.readme.io/3731327-Image_2020-05-28_at_1.36.33_PM.png" alt="Creating an item-based add-on with quantity-based pricing" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-quantity-pricing" class="rp-zoom-overlay">
     <img src="https://files.readme.io/3731327-Image_2020-05-28_at_1.36.33_PM.png" alt="" />
   </label>
@@ -257,9 +274,11 @@ To enable this, check **Add all items on subscriptions to this plan** in the Pla
 
 <span class="rp-zoom">
   <input type="checkbox" id="zoom-items-on-subscriptions" class="rp-zoom-toggle" />
+
   <label for="zoom-items-on-subscriptions">
     <img class="rp-zoom-img" src="https://files.readme.io/e43c396e7df2ea7334c33b3be6c520f42af025dfdab81b0305922019dfa27101-image.png" alt="Add all items on subscriptions checkbox on the plan add-ons section" style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
   </label>
+
   <label for="zoom-items-on-subscriptions" class="rp-zoom-overlay">
     <img src="https://files.readme.io/e43c396e7df2ea7334c33b3be6c520f42af025dfdab81b0305922019dfa27101-image.png" alt="" />
   </label>
@@ -268,7 +287,7 @@ To enable this, check **Add all items on subscriptions to this plan** in the Pla
 This makes all active catalog items available as add-ons on subscriptions to that plan. New items added to the catalog become available automatically; disabled items are blocked from new subscriptions. When creating a subscription, select or provide the items to include as recurring charges.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true"></i> Note</strong> When items are sold directly on subscriptions, only fixed pricing is supported. For quantity-based pricing, configure the item as a plan add-on and provide the quantity with the subscription. To help prioritize quantity-based pricing for direct subscription items, reach out to <a href="mailto:support@recurly.com" target="_blank">support@recurly.com</a>.</div>
+  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> When items are sold directly on subscriptions, only fixed pricing is supported. For quantity-based pricing, configure the item as a plan add-on and provide the quantity with the subscription. To help prioritize quantity-based pricing for direct subscription items, reach out to <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.</div>
 </div>
 
 It's also possible to combine plan add-ons and direct subscription items on the same plan. The same item-based add-on can be added up to twice — once tied to the plan add-on and once configured directly on the subscription — supporting sales at multiple prices if needed. The `add_on_source` field in the API distinguishes between the two instances.
@@ -304,21 +323,27 @@ Minimum versions required for item catalog support. Each card links to the minim
   <Card title="Ruby — 3.9.0" href="https://github.com/recurly/recurly-client-ruby/releases/tag/3.9.0" target="_blank">
     Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-ruby/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title="Node.js — 3.10.0" href="https://github.com/recurly/recurly-client-node/releases/tag/3.10.0" target="_blank">
     Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-node/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title="Python — 3.8.0" href="https://github.com/recurly/recurly-client-python/releases/tag/3.8.0" target="_blank">
     Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-python/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title=".NET — 3.10.0" href="https://github.com/recurly/recurly-client-dotnet/releases/tag/3.10.0" target="_blank">
     Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-dotnet/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title="Go — 3.4.0" href="https://github.com/recurly/recurly-client-go/releases/tag/v3.4.0" target="_blank">
     Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-go/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title="Java — 3.9.0" href="https://github.com/recurly/recurly-client-java/releases/tag/3.9.0" target="_blank">
     Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-java/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title="PHP — 3.4.0" href="https://github.com/recurly/recurly-client-php/releases/tag/3.4.0" target="_blank">
     Minimum version for item catalog. <a href="https://github.com/recurly/recurly-client-php/releases" target="_blank">Latest releases →</a>
   </Card>
@@ -339,12 +364,15 @@ For sites on the older v2 API, the following minimum versions apply.
   <Card title="Ruby — 2.18.10" href="https://github.com/recurly/recurly-client-ruby/releases/tag/2.18.10" target="_blank">
     Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-ruby/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title="Python — 2.9.17" href="https://github.com/recurly/recurly-client-python/releases/tag/2.9.17" target="_blank">
     Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-python/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title="PHP — 2.12.14" href="https://github.com/recurly/recurly-client-php/releases/tag/2.12.14" target="_blank">
     Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-php/releases" target="_blank">Latest releases →</a>
   </Card>
+
   <Card title=".NET — 1.17.5" href="https://github.com/recurly/recurly-client-net/releases/tag/1.17.5" target="_blank">
     Minimum v2 version for item catalog. <a href="https://github.com/recurly/recurly-client-net/releases" target="_blank">Latest releases →</a>
   </Card>
