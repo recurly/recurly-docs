@@ -47,19 +47,19 @@ next:
 
 <div class="rp-benefits">
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa fa-sliders" aria-hidden="true"></i></div>
     <strong>Flexible plan configuration</strong>
     <span>Set billing cycles, trial periods, setup fees, renewal behavior, and pricing models — all in one place, tailored to how your business actually works.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
     <strong>Multiple pricing models</strong>
     <span>Choose from fixed, ramp, or usage-based pricing to match your revenue strategy, with price segments for A/B testing and market-specific pricing without plan sprawl.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
     <strong>Built-in upsell with add-ons</strong>
     <span>Attach optional products and services to any plan to increase customer value and drive incremental revenue without creating separate plans.</span>
   </div>
