@@ -99,12 +99,18 @@ body { margin: 0; background: #fff; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-.rc-brand-header { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px; }
-.rc-logo-image { height: 36px; width: auto; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 14px; color: var(--offwhite); }
+
+/* FIX #1 + #2: logo height 28px, margin-bottom 0 */
+.rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 0; }
+.rc-logo-image { height: 28px; width: auto; display: block; }
+
+/* FIX #3: Home title block with 44px top margin */
+.rc-home-title-block { margin-top: 44px; }
+.rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 24px; }
+
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* Hero stats — border-top divider row + per-stat left-border dividers */
+/* Hero stats */
 .rc-hero-stats {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
   border-top: 1px solid rgba(255,255,255,0.12);
@@ -160,7 +166,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-/* Step badge + hover inversion so it stays visible on offblack hover bg */
 .rc-step-badge {
   display: inline-flex; align-items: center; justify-content: center;
   width: 20px; height: 20px; border-radius: 50%;
@@ -168,7 +173,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1;
 }
 .rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
-/* Active page item — map pin replaces badge; no number shown */
 .rc-sticky-link-active { background: rgba(0,0,0,0.12); font-weight: 800; }
 .rc-sticky-link-active:hover { background: var(--offblack); color: var(--yellow) !important; }
 
@@ -192,7 +196,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #FFD706 !important; }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: #CCC9B8 !important; line-height: 1.5; }
 
-/* Primary button — armor-safe selector, explicit border-bottom on base + hover */
+/* Primary button */
 .rc-guide a.rc-btn-primary {
   background: #FFD706 !important;
   color: #0D0D0B !important;
@@ -222,7 +226,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   text-decoration: none !important; color: inherit;
   transition: all .2s ease; display: flex; flex-direction: column; align-items: center; text-align: center;
 }
-/* Armor override — explicit border-bottom on base and hover */
 .rc-guide a.rc-hub-card { border-bottom: 1px solid var(--lightgray) !important; }
 .rc-guide a.rc-hub-card:hover {
   border-color: var(--yellow);
@@ -273,7 +276,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-hero { padding: 36px 20px 36px; }
-  .rc-lp-hero-title h1 { font-size: 1.8rem; }
+  .rc-home-title-block h1 { font-size: 1.8rem; }
   .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
   .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
@@ -289,18 +292,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
+        <!-- FIX #4: event-hub → global-office-hours -->
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
     <!-- ── HERO ── -->
     <div class="rc-hero">
+      <!-- FIX #1 + #2: logo height 28px, margin-bottom 0 -->
       <div class="rc-brand-header">
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
       </div>
-      <h1>Your Subscription Success Hub</h1>
-      <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
+      <!-- FIX #3: Home title block with 44px top margin -->
+      <div class="rc-home-title-block">
+        <h1>Your Subscription Success Hub</h1>
+        <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
+      </div>
       <div class="rc-hero-stats">
         <div class="rc-hero-stat">
           <div class="rc-hero-stat-num">Weekly</div>
@@ -334,7 +342,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
             <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank" rel="noopener noreferrer">Events ↗</a>
-            <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank" rel="noopener noreferrer">Office Hours ↗</a>
+            <!-- FIX #4: event-hub → global-office-hours -->
+            <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank" rel="noopener noreferrer">Office Hours ↗</a>
           </div>
         </div>
       </div>
@@ -387,7 +396,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <p>Register for webinars and peer learning sessions.</p>
         <div class="rc-hub-arrow">View Schedule ↗</div>
       </a>
-      <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
+      <!-- FIX #4: event-hub → global-office-hours -->
+      <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
         <div class="rc-hub-icon" style="background-color:#FF8200;"><img src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" alt="Office Hours"></div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live to ask questions.</p>
