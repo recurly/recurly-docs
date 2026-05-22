@@ -87,6 +87,8 @@ body { margin: 0; background: #fff; }
 }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 16px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
+.rc-pillar-hero-icon { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
+.rc-pillar-hero-icon img { width: 48px; height: 48px; object-fit: contain; }
 
 /* ── STICKY NAV — Launch (lightgray bg) ── */
 details.rc-sticky-nav-wrap {
@@ -244,9 +246,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO — Pillar subpage (2b): logo + h1 + p, no icon, no stats ── -->
+    <!-- ── HERO — Pillar subpage (2b): logo + pillar icon + h1 + p ── -->
     <div class="rc-hero">
       <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" style="height:32px; margin-bottom:20px;">
+      <div class="rc-pillar-hero-icon">
+        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch" />
+      </div>
       <h1>Launch</h1>
       <p>Get configured and live fast. Build a solid subscription foundation from day one by mastering the core elements of the Recurly platform.</p>
     </div>
