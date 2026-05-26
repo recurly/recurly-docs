@@ -21,7 +21,12 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+/* ── HOST-THEME BACKGROUND OVERRIDE — must win against ReadMe global theme ── */
+body { margin: 0; background: #ffffff !important; }
+
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
@@ -36,11 +41,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --retain:    #FF9D88;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
-  background: #ffffff; /* belt-and-suspenders behind body override */
+  background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
-/* FIX #1: !important required to win against ReadMe host-theme background */
-body { margin: 0; background: #ffffff !important; }
 
 /* ── HOST-THEME ARMOR ── */
 .rc-guide a,
@@ -48,6 +51,12 @@ body { margin: 0; background: #ffffff !important; }
 .rc-guide a:visited,
 .rc-guide a:hover,
 .rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
+
+/* ── FONT AWESOME ICON HELPERS ── */
+.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: var(--offblack); font-size: 1rem; }
 
 /* ── ANNOUNCEMENT BAR — hidden by default ── */
 .rc-announce-bar {
@@ -65,7 +74,7 @@ body { margin: 0; background: #ffffff !important; }
   line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
-.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
@@ -91,7 +100,7 @@ body { margin: 0; background: #ffffff !important; }
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-/* ── PILLAR HERO ── */
+/* ── HERO — pillar subpage: logo + pillar icon + h1 + subtitle, no stats ── */
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
@@ -103,8 +112,8 @@ body { margin: 0; background: #ffffff !important; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-.rc-brand-header { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 0; }
-.rc-logo-image { height: 28px; width: auto; }
+.rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
+.rc-logo-image { height: 28px; display: block; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .85; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
@@ -168,11 +177,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 6px;
 }
-/* FIX #3: semi-transparent hover overlay — text stays offblack, no badge inversion needed */
 .rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-/* FIX #4: active item — no persistent background, map pin icon identifies current page */
 .rc-sticky-link-active { font-weight: 800; }
 .rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 
@@ -214,24 +220,44 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
 /* ── OFFICE HOURS CTA ── */
-.rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
+.rc-starter-cta {
+  background: var(--brightgray);
+  border: 1px solid var(--lightgray);
+  border-radius: 16px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+.rc-starter-text { flex: 1; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
+
+/* ── SECONDARY BUTTON — canonical pattern: lightgray base → offblack hover ── */
 .rc-guide a.rc-btn-secondary {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: transparent; color: var(--offblack) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--offblack) !important;
   text-decoration: none !important;
-  padding: 11px 22px; border-radius: 10px;
-  font-weight: 700; font-size: .9rem;
-  border: 2px solid var(--offblack);
-  border-bottom: 2px solid var(--offblack) !important;
-  white-space: nowrap; transition: all .2s;
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: .9rem;
+  border: 2px solid var(--lightgray);
+  border-bottom: 2px solid var(--lightgray) !important;
+  white-space: nowrap;
+  transition: all .2s;
+  flex-shrink: 0;
+  align-self: center;
 }
 .rc-guide a.rc-btn-secondary:hover {
-  background: var(--offblack);
-  color: var(--yellow) !important;
   border: 2px solid var(--offblack) !important;
   border-bottom: 2px solid var(--offblack) !important;
+  color: var(--offblack) !important;
 }
 
 /* ── FOOTER NAV — grouped sections ── */
@@ -250,6 +276,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
+  .rc-hero h1 { font-size: 1.8rem; }
   .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
   .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
   .rc-oh-cta { padding: 24px 20px; }
@@ -273,11 +300,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR — hidden by default, add rc-active to show ── -->
+    <!-- ── ANNOUNCEMENT BAR — add rc-active class to show ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
-        🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
@@ -285,14 +313,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── HERO — pillar subpage: logo + pillar icon + h1 + subtitle, no stats ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
-        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly Navigate" class="rc-logo-image">
+        <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
       </div>
       <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain icon" class="rc-pillar-hero-icon">
       <h1>Retain</h1>
       <p>Reduce involuntary churn, recover revenue, and keep subscribers engaged with intelligent tools that protect your bottom line.</p>
     </div>
 
-    <!-- ── STICKY NAV — collapsed, section anchors ── -->
+    <!-- ── STICKY NAV — collapsed, section anchors only ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span>
@@ -303,8 +331,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
-            <a href="#involuntary" class="rc-sticky-link">Involuntary Churn</a>
-            <a href="#voluntary" class="rc-sticky-link">Voluntary Churn</a>
+            <a href="#involuntary" class="rc-sticky-link">Involuntary churn</a>
+            <a href="#voluntary" class="rc-sticky-link">Voluntary churn</a>
             <a href="#communication" class="rc-sticky-link">Communication</a>
           </div>
         </div>
@@ -313,119 +341,131 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── INVOLUNTARY CHURN ── -->
     <div id="involuntary" class="rc-category">
-      <h2>Involuntary Churn Management</h2>
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Involuntary churn management</h2>
       <div class="rc-path-list">
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
             <h3>Dunning 101</h3>
             <p>Master Recurly's core revenue recovery tool. Learn how to configure custom dunning cycles and emails to effectively capture failed payments.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Account Updater</h3>
+            <h3>Account updater</h3>
             <p>Automatically refresh expired or replaced credit cards before they fail. Discover how Account Updater drastically reduces passive churn.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Intelligent Retries</h3>
+            <h3>Intelligent retries</h3>
             <p>Go beyond basic dunning by leveraging machine learning to retry transactions at the exact moment they are most likely to succeed.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Backup Payment Methods</h3>
+            <h3>Backup payment methods</h3>
             <p>Ensure continuous service by capturing and falling back on secondary payment methods when a primary transaction fails.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
       </div>
     </div>
 
     <!-- ── VOLUNTARY CHURN ── -->
     <div id="voluntary" class="rc-category">
-      <h2>Voluntary Churn &amp; Lifecycle</h2>
+      <h2><i class="fa-solid fa-right-from-bracket rc-fa-section"></i> Voluntary churn &amp; lifecycle</h2>
       <div class="rc-path-list">
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Pause Subscriptions</h3>
+            <h3>Pause subscriptions</h3>
             <p>Give your customers flexibility. Learn how to let subscribers easily pause their billing instead of outright canceling their accounts.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Cancel Save &amp; Offers</h3>
+            <h3>Cancel save &amp; offers</h3>
             <p>Intercept cancellations with targeted, personalized discount offers and down-sell options directly within the offboarding flow.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Customer Self-Service</h3>
+            <h3>Customer self-service</h3>
             <p>Empower your subscribers to update payment details, manage their plans, and view invoices without contacting your support team.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
       </div>
     </div>
 
     <!-- ── COMMUNICATION ── -->
     <div id="communication" class="rc-category">
-      <h2>Communication &amp; Experience</h2>
+      <h2><i class="fa-regular fa-envelope rc-fa-section"></i> Communication &amp; experience</h2>
       <div class="rc-path-list">
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Payment Banners</h3>
+            <h3>Payment banners</h3>
             <p>Keep users informed without disruption. Implement native application banners to alert customers of failing cards or upcoming renewals.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Icon" style="opacity:.6;" />
+            <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Invoice Sequences &amp; Proration</h3>
+            <h3>Invoice sequences &amp; proration</h3>
             <p>Optimize your billing communications. Ensure clarity around upgrades, downgrades, and proration to prevent chargebacks and disputes.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
+
       </div>
     </div>
 
     <!-- ── OFFICE HOURS CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3>👋 Need live guidance on your retention strategy?</h3>
+        <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on your retention strategy?</h3>
         <p>Bring your churn data and configuration questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
@@ -437,8 +477,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <div class="rc-footer-section">
           <span class="rc-footer-label">Retain</span>
-          <a href="#involuntary" class="rc-footer-link">Involuntary Churn</a>
-          <a href="#voluntary" class="rc-footer-link">Voluntary Churn</a>
+          <a href="#involuntary" class="rc-footer-link">Involuntary churn</a>
+          <a href="#voluntary" class="rc-footer-link">Voluntary churn</a>
           <a href="#communication" class="rc-footer-link">Communication</a>
         </div>
 
