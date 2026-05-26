@@ -1,9 +1,8 @@
 ---
 title: Fixed recurring pricing
 excerpt: >-
-  Unravel the secrets of setting up the Fixed Billing Model on Recurly. Master
-  the method of deploying simple or complex subscription terms, with or without
-  add-ons, for your platform.
+  Set up a subscription plan with a fixed base charge — simple for
+  straightforward billing or configurable for complex, multi-period commitments.
 deprecated: false
 hidden: false
 metadata:
@@ -13,61 +12,155 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-video" style={{paddingTop:"56.25%"}}>
+    <iframe
+      src="https://www.youtube.com/embed/P6RWS3X-yFw"
+      title="Fixed recurring pricing overview"
+      allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen
+      style={{position:"absolute", top:0, left:0, width:"100%", height:"100%", border:0}} />
+  </div>
 
-### Required plan
+  <div class="rp-overview">
+    Fixed recurring pricing is Recurly's most straightforward billing model — a set charge billed at regular intervals, with the flexibility to support add-ons, multiple billing periods, and quantity control. Whether you're running a simple monthly subscription or a complex multi-term commitment, this model gives you a reliable foundation.
+  </div>
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
 
-### Video
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#set-up-fixed-recurring-pricing"><span class="rp-toc-num">4</span>Set up fixed recurring pricing</a>
+  </div>
+</div>
 
-<Embed url="https://www.youtube.com/watch?v=P6RWS3X-yFw" title="Create a Plan: Fixed Recurring Pricing" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/P6RWS3X-yFw/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=P6RWS3X-yFw" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FP6RWS3X-yFw%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DP6RWS3X-yFw%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FP6RWS3X-yFw%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+# Definition
 
-# Description
-
-Recurly's Fixed Billing Model presents a robust method for businesses to set up a plan with a base  charge, applicable to their subscription services. The model can be simplified for businesses that prefer a straightforward  subscription or tailored for a more complex, long-term commitment involving multiple billing periods.
+<div class="rp-definition">
+  Fixed recurring pricing is a billing model where subscribers pay a set amount at regular intervals for access to a product or service. It supports optional or required add-ons, multiple billing periods, and quantity controls — making it adaptable to a wide range of subscription structures without sacrificing predictability.
+</div>
 
 # Key benefits
 
-* **Simplicity:** The model is easy to set up, requiring only a base  charge to initiate.
-* **Flexibility:** Add-ons can be incorporated, either as required or optional charges.
-* **Customization:** The model supports simple subscriptions as well as complex, long-term commitments with multiple billing periods.
-* **Control:** The "Editable Quantity" feature can be deselected to prevent subscribers from setting a quantity at sign-up, thus maintaining control over the subscription process.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Simplicity</strong>
+    <span>Easy to set up — all you need is a base charge to get started. No complex configuration required for straightforward subscriptions.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-plus-circle" aria-hidden="true"></i></div>
+    <strong>Add-on flexibility</strong>
+    <span>Attach optional or required add-ons to any plan to offer additional services or features at an extra cost — increasing revenue without creating new plans.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Customization</strong>
+    <span>Supports simple single-period subscriptions and complex, long-term commitments with multiple billing periods — all within the same model.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
+    <strong>Quantity control</strong>
+    <span>Choose whether subscribers can set their own quantity at sign-up or lock it to a fixed amount — giving you full control over the billing process.</span>
+  </div>
+</div>
 
 # Key details
 
-This model can be simplified for businesses that prefer a straightforward  subscription or tailored for a more complex, long-term commitment involving multiple billing periods.
+Fixed recurring pricing works by anchoring every subscription to a base charge that repeats on a schedule you define. Add-ons extend the model naturally: an optional "premium support" add-on, for example, bills each month on top of the base charge without requiring a separate plan.
 
-Optional or required add-ons are another attractive feature of this model, providing an avenue for incorporating additional  charges into the plan. For instance, an optional add-on for "premium support" could be included, which bills each month in addition to the base charge.
+## Industry examples
 
-## Example
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Industry</td><td>Example</td></tr>
+  <tr><td>Streaming media</td><td>Twitch charges $4.99/month</td></tr>
+  <tr><td>Consumer goods</td><td>Bark charges $5/month for their Junior Subscription</td></tr>
+  <tr><td>Services</td><td>FitForMe charges $11.65/month</td></tr>
+</table>
 
-To better illustrate the functionality of **fixed recurring pricing**, we’ve provided a few examples across different industries:
+# Set up fixed recurring pricing
 
-| Industry        | Example                                             |
-| :-------------- | :-------------------------------------------------- |
-| Streaming media | Twitch charges $4.99/month                          |
-| Consumer goods  | Bark charges $5/month for their Junior Subscription |
-| Services        | FitForMe charges $11.65/month                       |
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Set up the base charge</h4><p>Create a plan with a base charge — this is the foundation of your subscription. Navigate to <strong>Configuration → Plans</strong> and select <strong>New Plan</strong>.</p></div>
+  </div>
+</div>
 
-# Set up fixed billing model
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-plan-base-charge" class="rp-zoom-toggle" />
+  <label for="zoom-plan-base-charge">
+    <img class="rp-zoom-img" src="https://files.readme.io/27fbd3dae54ed4bb8e05ab6723cdc0d1b6c11eaccb828958a5437826196bcf58-image.png" alt="New plan form showing base charge configuration" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-plan-base-charge" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/27fbd3dae54ed4bb8e05ab6723cdc0d1b6c11eaccb828958a5437826196bcf58-image.png" alt="" />
+  </label>
+</span>
 
-1. **Setup base charge:** Start by creating a plan with a base  charge. This will form the foundation of your subscription model.
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-plan-pricing-fields" class="rp-zoom-toggle" />
+  <label for="zoom-plan-pricing-fields">
+    <img class="rp-zoom-img" src="https://files.readme.io/15010df5beea41a49ed30c6eb8e7f1113c7f8241f071b22ad4aa49cdf68f1e3c-Screenshot_2025-01-07_at_11.45.37_AM.png" alt="Plan pricing fields in the new plan form" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-plan-pricing-fields" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/15010df5beea41a49ed30c6eb8e7f1113c7f8241f071b22ad4aa49cdf68f1e3c-Screenshot_2025-01-07_at_11.45.37_AM.png" alt="" />
+  </label>
+</span>
 
-<Image align="center" className="border" width="70% " border={true} src="https://files.readme.io/27fbd3dae54ed4bb8e05ab6723cdc0d1b6c11eaccb828958a5437826196bcf58-image.png" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Set subscription terms</h4><p>Define whether your subscription is a simple single-period plan or a longer-term commitment with multiple billing periods. See <a href="https://docs.recurly.com/docs/subscription-terms" target="_blank">Subscription Billing Terms</a> for full configuration details.</p></div>
+  </div>
+</div>
 
-<Image align="center" className="border" width="70% " border={true} src="https://files.readme.io/15010df5beea41a49ed30c6eb8e7f1113c7f8241f071b22ad4aa49cdf68f1e3c-Screenshot_2025-01-07_at_11.45.37_AM.png" />
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-subscription-terms" class="rp-zoom-toggle" />
+  <label for="zoom-subscription-terms">
+    <img class="rp-zoom-img" src="https://files.readme.io/21b748c0ad05543c04f3038188475ae538e06c364fae0f21876ad4d01b5128ad-image.png" alt="Subscription billing terms configuration" style={{display:"block", width:"90%", margin:"16px auto", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-subscription-terms" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/21b748c0ad05543c04f3038188475ae538e06c364fae0f21876ad4d01b5128ad-image.png" alt="" />
+  </label>
+</span>
 
-2. **Set subscription terms:** Depending on your business requirements, your subscription model could be a simple  subscription or a more complex, long-term commitment with multiple billing periods. Refer to Recurly's [Subscription Billing Terms](https://docs.recurly.com/docs/subscription-terms).
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Incorporate add-ons</h4><p>Add optional or required add-ons to offer additional services at an extra cost. For example, a "premium support" add-on bills each month on top of the base charge. Add-ons can also support hybrid pricing strategies for more complex customer needs.</p></div>
+  </div>
+</div>
 
-<Image align="center" width="70% " src="https://files.readme.io/21b748c0ad05543c04f3038188475ae538e06c364fae0f21876ad4d01b5128ad-image.png" />
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-plan-addons" class="rp-zoom-toggle" />
+  <label for="zoom-plan-addons">
+    <img class="rp-zoom-img" src="https://files.readme.io/34d9f61-image.png" alt="Plan add-ons configuration" style={{display:"block", width:"280px", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-plan-addons" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/34d9f61-image.png" alt="" />
+  </label>
+</span>
 
-3. **Incorporate add-ons:** Add-ons are a way to offer additional services or features at an extra cost to your subscribers, enhancing your main service offering. These can be set as either required or optional fees, allowing you to customize your pricing strategy further. For instance, you might offer "premium support" as an optional add-on that incurs a monthly fee on top of the base charge. Add-ons can facilitate a hybrid pricing strategy, accommodating a wider range of customer needs and preferences. To delve deeper into the possibilities of add-ons and items, explore this link. For more complex pricing strategies, including hybrid pricing, visit this section.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Control quantity selection</h4><p>If you're using <a href="https://docs.recurly.com/docs/checkout" target="_blank">Recurly Checkout</a>, go to the checkout configuration page and set the <strong>Quantity</strong> field to editable or fixed. Locking quantity ensures consistency in billing; allowing it lets subscribers choose their own quantity at sign-up and can increase revenue.</p></div>
+  </div>
+</div>
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/34d9f61-image.png" />
-
-4. **Control quantity selection:** If you are using Recurly's [Checkout](https://docs.recurly.com/docs/checkout), in the configuration page, ensure that the "Editable" checkbox under 'Quantity' is not selected for subscriptions or one-time purchases. This way, your subscribers will not have the ability to set a quantity at sign-up, ensuring consistency in your billing process. Or allow your customers to sign up for the quantity they are looking for, and increase your revenue.
-
-<Image align="center" className="border" width="70% " border={true} src="https://files.readme.io/c05bc5cf7222e534dd8ae8ad603d025159011a0b7854c3c95a43016aed3cdb5b-image.png" />
-
-Remember, the Fixed Billing Model offers flexibility and customization to cater to the unique needs of your business and your subscribers. Take advantage of these features to deliver a seamless and effective subscription experience.
+<span class="rp-zoom">
+  <input type="checkbox" id="zoom-quantity-control" class="rp-zoom-toggle" />
+  <label for="zoom-quantity-control">
+    <img class="rp-zoom-img" src="https://files.readme.io/c05bc5cf7222e534dd8ae8ad603d025159011a0b7854c3c95a43016aed3cdb5b-image.png" alt="Checkout quantity control setting" style={{display:"block", width:"90%", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+  </label>
+  <label for="zoom-quantity-control" class="rp-zoom-overlay">
+    <img src="https://files.readme.io/c05bc5cf7222e534dd8ae8ad603d025159011a0b7854c3c95a43016aed3cdb5b-image.png" alt="" />
+  </label>
+</span>
