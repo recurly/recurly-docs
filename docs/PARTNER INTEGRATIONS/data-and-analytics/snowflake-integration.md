@@ -1,8 +1,8 @@
 ---
 title: Snowflake integration
 excerpt: >-
-  Elevate your data insights with Recurly's seamless integration with Snowflake,
-  the leading cloud data platform.
+  Connect Recurly to Snowflake for automatic hourly data exports — no ETL
+  pipelines, no third-party tools, no manual intervention.
 deprecated: false
 hidden: false
 metadata:
@@ -12,77 +12,149 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">
+    Recurly's Snowflake integration shares your merchant data directly into your Snowflake account — automatically, every hour. No ETL pipelines to manage, no third-party vendors, no manual exports. Combine your Recurly data with other datasets in Snowflake for a complete view of your business.
+  </div>
 
-### Required plan
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true" /> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
 
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#integration-guide"><span class="rp-toc-num">4</span>Integration guide</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">5</span>FAQs</a>
+  </div>
+</div>
 
 # Definition
 
-Recurly integrates with Snowflake to share merchant data directly. If you're a Recurly customer, contact our Account Management to enable this feature. The enablement of the Snowflake integration is managed by Recurly's Professional Services: a Recurly Solutions Manager will be assigned to gather your Snowflake credentials and configure the secure data share. With updates every hour or daily, you're assured up-to-date data. Together, Recurly and Snowflake provide a clear view of your business operations. For more details, refer to Recurly's official documentation.
+<div class="rp-definition">
+  Recurly's Snowflake integration uses Snowflake's secure data sharing to push your complete Recurly export data directly into your Snowflake account — updated every hour or daily. Setup is handled by Recurly's Professional Services team, and once configured, data flows automatically with no ongoing maintenance required on your end.
+</div>
 
 # Key benefits
 
-* **Seamless data integration**: Enjoy effortless data transition from Recurly to your Snowflake account, with Recurly managing all intricate ETL processes, eliminating manual intervention, coding, or server management.
-* **Real-time insights**: Stay updated with fresh data through automatic hourly updates, ensuring your latest business metrics are always accessible.
-* **Unified data experience**: Merge your Recurly data seamlessly with other datasets in Snowflake for a holistic data analysis, leveraging Snowflake's robust capabilities.
-* **Enhanced reporting**: Utilize Snowflake's adaptability for custom reports and comprehensive analysis without any hassle.
-* **Cost and time efficiency**: Bypass traditional ETL pipelines or third-party intermediaries to streamline processes, saving both time and resources.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
+    <strong>No-code data integration</strong>
+    <span>Recurly handles all data transfer automatically — no ETL pipelines, no coding, no server management required.</span>
+  </div>
 
-# Dive into Snowflake
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></div>
+    <strong>Hourly data refresh</strong>
+    <span>Stay current with automatic hourly updates so your latest business metrics are always available in Snowflake.</span>
+  </div>
 
-Snowflake is revolutionizing the way organizations harness the power of their data. With its state-of-the-art cloud data platform, businesses across the globe can seamlessly manage data warehousing, data lakes, data engineering, data science, data application development, and data sharing all within a single ecosystem. What truly sets Snowflake apart is its unmatched capability to offer near-unlimited scale, concurrency, and performance across multiple clouds and regions. Moreover, Snowflake is the backbone of the Data Cloud—a global network where data exploration, sharing, and maximizing its value is an integrated experience. Discover more about harnessing your data at Snowflake.com.
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
+    <strong>Unified data analysis</strong>
+    <span>Combine Recurly data with other datasets in Snowflake for cross-platform analytics and custom reporting using Snowflake's full capabilities.</span>
+  </div>
 
-## The synergy of Snowflake and Recurly
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
+    <strong>Time and cost savings</strong>
+    <span>Bypass traditional intermediaries and third-party ETL vendors — the integration handles everything so your team can focus on analysis, not data plumbing.</span>
+  </div>
 
-Recurly's integration with Snowflake empowers businesses to seamlessly export their comprehensive Recurly data, as outlined in their export overview, directly into Snowflake with updates every hour. This integration allows businesses to achieve a more profound understanding of their performance by combining Recurly data with other datasets within Snowflake.
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+    <strong>Full historical data</strong>
+    <span>All historical Recurly data is available in the share from day one — not just recent records.</span>
+  </div>
+</div>
 
-By mentioning the "comprehensive Recurly data," it provides a broader understanding that it's not limited to account-level data only.
+# Key details
 
-### The edge of Recurly’s Snowflake integration
+## What Snowflake offers
 
-While Snowflake simplifies data-intensive report generation and application creation, importing data has always been a challenge. Traditionally, Recurly users had to either manually manage ETL pipelines or rely on third-party vendors. This integration eliminates these challenges, offering a hands-off data export experience. As Paul Snyder from The Daily Wire aptly puts it, "Having Recurly and Snowflake integrated automates our data pull process, enhancing efficiency and saving significant time."
+Snowflake is a cloud data platform that handles data warehousing, data lakes, data engineering, data science, and data sharing within a single ecosystem. It offers near-unlimited scale, concurrency, and performance across multiple clouds and regions — making it a strong foundation for combining Recurly subscription data with your broader business data.
+
+## How the integration works
+
+Recurly uses Snowflake's secure data sharing to push your full export dataset directly into your Snowflake account. This eliminates the need for traditional import processes — no data copying, no manual transfers. Updates run every hour or daily depending on your configuration.
+
+The integration includes all <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a>, with two exceptions: the deprecated **invoices** and **revenue recognition schedules** exports are not included.
+
+## Schema notes
+
+The schema mirrors the standard <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> with the following differences:
+
+- All timestamps are in UTC
+- Custom fields appear as a JSON object in the `custom_fields` column instead of separate columns
+- Additional status columns on accounts and subscriptions mirror the export settings available in the UI
+- An `export_id` column is included to ensure data integrity
+
+## Data refresh
+
+- **Frequency:** Daily or hourly — configured during setup
+- **Daily refresh timing:** Starts at 07:00 UTC; may take several hours to complete and isn't configurable
+- **Guaranteed completion:** Daily refresh finish times aren't guaranteed — if timing is critical, opt for hourly refreshes
+- **Historical data:** All historical data is available from the start — if you have ten years of data in Recurly, all ten years appear in the Snowflake share
+
+## Schema changes
+
+New tables are added to the share automatically. New columns are appended to the end of existing tables. For any breaking changes — such as a column drop — Recurly communicates well in advance. During a schema change, the affected table may be momentarily unavailable; implement retry logic in any downstream processes that depend on real-time availability.
+
+## Time zone support
+
+All timestamps are stored in UTC. Use Snowflake's built-in time zone conversion features to adapt them for your analytics use cases.
 
 # Integration guide
 
-Recurly integrates with Snowflake to share merchant data directly. If you're a Recurly customer, contact our Account Management to enable this feature. With updates every hour or daily, you're assured up-to-date data. Together, Recurly and Snowflake provide a clear view of your business operations. For more details, refer to Recurly's official documentation.
+The Snowflake integration is set up and managed by Recurly's Professional Services team.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Contact your account manager</h4><p>Reach out to your Recurly Account Manager to request enablement of the Snowflake integration.</p></div>
+  </div>
+
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Work with a Solutions Manager</h4><p>A Recurly Solutions Manager will be assigned to gather your Snowflake credentials and configure the secure data share on your behalf.</p></div>
+  </div>
+
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Data flows automatically</h4><p>Once configured, your Recurly data exports to Snowflake on your chosen schedule — hourly or daily — with no ongoing maintenance required.</p></div>
+  </div>
+</div>
 
 # FAQs
 
-**Q: Which tables are included in the exports?**
+<Accordion title="Which tables are included in the exports?">
+  All <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> are included, except for the deprecated **invoices** and **revenue recognition schedules** exports.
+</Accordion>
 
-**A:** All <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> are included, except for the deprecated exports **invoices** and **revenue recognition schedules**.
+<Accordion title="What is the schema for each table?">
+  The schema mirrors the standard <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> with a few differences: all timestamps are in UTC; custom fields appear as a JSON object in the `custom_fields` column instead of separate columns; additional status columns on accounts and subscriptions mirror the export UI settings; and an `export_id` column is included for data integrity.
+</Accordion>
 
-**Q: What is the schema for each table?**
+<Accordion title="What historical data is included?">
+  All historical data is available. If you have ten years of data in Recurly, all ten years are available in the Snowflake share from day one.
+</Accordion>
 
-**A:** The schema mirrors the <a href="https://docs.recurly.com/docs/export-overview" target="_blank">Recurly exports</a> with a few exceptions:
+<Accordion title="How are schema changes managed?">
+  New tables are added automatically, and new columns are appended to the end of existing tables. For breaking changes — such as a column drop — Recurly communicates well in advance. During a schema change, the affected table may be momentarily unavailable, so implement retry logic in any downstream processes that depend on it.
+</Accordion>
 
-* All timestamps are in UTC.
-* Custom fields appear as a JSON object in the `custom_fields` column instead of separate columns.
-* Additional status columns on accounts and subscriptions mirror the export settings available in the UI.
-* An `export_id` column ensures data integrity in the integration.
+<Accordion title="How frequently does data refresh?">
+  Data refreshes either daily or hourly, depending on your configuration.
+</Accordion>
 
-**Q: What data is included?**
+<Accordion title="When do daily refreshes run, and can I adjust the timing?">
+  Daily refreshes begin at 07:00 UTC and may take several hours to complete. The refresh time isn't configurable.
+</Accordion>
 
-**A:** All historical data is available. For instance, if there are 10 years of data in Recurly, then all 10 years will be available in the Snowflake share.
+<Accordion title="Is there a guaranteed finish time for daily refreshes?">
+  No — daily refresh finish times aren't guaranteed. If timing is critical for your workflows, opt for hourly refreshes instead.
+</Accordion>
 
-**Q: How are schema changes managed?**
-
-**A:** New tables get added to the share, and new columns append to the end of existing tables. For any breaking changes, like a column drop, we'll communicate well in advance. During a schema change, the table might be momentarily unavailable. It's recommended to use retry logic for such scenarios.
-
-**Q: How frequently does the data refresh?**
-
-**A:** Data can refresh either daily or hourly.
-
-**Q: When do daily refreshes take place, and can I adjust the timing?**
-
-**A:** Daily refreshes start at 07:00 UTC but may take several hours to finish. At present, the refresh time isn't configurable.
-
-**Q: Is there a guaranteed time for daily refreshes to finish?**
-
-**A:** We don't guarantee a specific finish time for daily refreshes. If timing is critical, we suggest opting for hourly refreshes.
-
-**Q: Can I change the time zone of the timestamps?**
-
-**A:** All timestamps are in UTC, but they can be converted to any time zone for various analytics uses. We recommend using Snowflake's time zone conversion features for this purpose.
+<Accordion title="Can I change the time zone of the timestamps?">
+  All timestamps are stored in UTC, but Snowflake's built-in time zone conversion features let you adapt them for any analytics use case.
+</Accordion>
