@@ -20,6 +20,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --offwhite:   #FFFDF2;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
+  background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
