@@ -71,7 +71,7 @@ This section covers how Recurly handles webhook retries, how to authenticate inc
 * Restrict access to Recurly’s IP ranges (see IP Whitelisting link below).
 * Web-application firewalls (e.g., ModSecurity) may block webhook traffic unless adjusted.
 
-# Key details
+## Key details
 
 If Recurly fails to deliver a webhook, it will retry it (see [Automatic Retries](https://docs.recurly.com/v1.3/docs/automatic-retries#/), below).
 
@@ -86,7 +86,7 @@ You may refuse other IP addresses at your endpoint or firewall.
   </Card>
 </Cards>
 
-# Webhook details  
+# Webhook details
 
 Each webhook is sent as a separate notification, retained for 15 days, and viewable in the Recurly console with full delivery status and error details.
 
@@ -95,10 +95,26 @@ Each webhook is sent as a separate notification, retained for 15 days, and viewa
 * Notifications are stored for **15 days** only.
 * Deleting an endpoint will remove its last 15 days of notifications from the console.
 
-# Key details
+## Key details
 
 Notifications are always delivered separately. For example, if a customer signs up for a subscription and that action triggers a payment, you will receive two distinct notifications—one for the subscription event and another for the payment event.
 
 All webhook notifications are retained in our system for **15 days** and can be accessed via the application console, which also displays failure reasons. While each notification’s timestamp is recorded in UTC, it is presented in your site’s configured time zone when you view notification status.
 
 > **Note:** If you delete an endpoint, any notifications sent to that endpoint within the past 15 days will no longer appear in the console.
+
+# Webhooks states
+
+Every webhook notification in Recurly is assigned a state reflecting its delivery progress. You can filter and view notifications by these states in the Recurly console to monitor and troubleshoot your webhook integrations.
+
+### Key details
+
+Notifications may appear in one of these states:
+
+* **Pending**: Queued and awaiting delivery.
+* **Delivered**: Successfully sent and acknowledged.
+* **Retrying**: Delivery failed and will be attempted again later.
+* **Failed**: All retry attempts exhausted; will not be retried automatically.
+* **Paused**: Stored without any delivery attempts.
+
+<br />
