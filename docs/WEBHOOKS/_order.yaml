@@ -1,5 +1,4 @@
 - overview-webhooks
-- manual-retries
 - cross-site-request-forgery-csrf-for-rails-applications
 - webhook-payloads-json-vs-xml
 - signature-verification
