@@ -20,7 +20,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 # Definition
 
-This integration allows Recurly users to seamlessly export a comprehensive range of their data into Snowflake, a leading cloud data platform. All the Recurly exports, as detailed in their export overview, are readily available in Snowflake. This integration ensures a harmonized data experience, empowering businesses to maximize the benefits of their data across diverse platforms.
+Recurly integrates with Snowflake to share merchant data directly. If you're a Recurly customer, contact our Account Management to enable this feature. The enablement of the Snowflake integration is managed by Recurly's Professional Services: a Recurly Solutions Manager will be assigned to gather your Snowflake credentials and configure the secure data share. With updates every hour or daily, you're assured up-to-date data. Together, Recurly and Snowflake provide a clear view of your business operations. For more details, refer to Recurly's official documentation.
 
 # Key benefits
 
