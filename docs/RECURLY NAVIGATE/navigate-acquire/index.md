@@ -160,20 +160,25 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 6px;
 }
-.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
+/* ✅ FIX #28: semi-transparent overlay; text stays offblack */
+.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
-.rc-sticky-link-active { background: rgba(0,0,0,0.12); font-weight: 800; }
-.rc-sticky-link-active:hover { background: var(--offblack); color: var(--yellow) !important; }
+/* ✅ FIX #27: no persistent background on active item; pin icon identifies current page */
+.rc-sticky-link-active { font-weight: 800; }
+.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+/* ✅ FIX: badge inversion rule removed — semi-transparent hover keeps badge legible without inverting */
 
 /* ── CONTENT SECTIONS ── */
-.rc-lp-section { margin-bottom: 56px; }
+/* ✅ FIX: h2 font-size 1.5rem (was 1.6rem); margin-bottom 48px (was 56px) */
+.rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 {
-  font-size: 1.6rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
+  font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack);
   display: flex; align-items: center; gap: 12px;
 }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+/* ✅ ADD: section intro text rule */
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
@@ -297,7 +302,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR (hidden by default) ── -->
+    <!-- ── ANNOUNCEMENT BAR (hidden by default — no rc-active class) ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
@@ -306,7 +311,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO ── -->
+    <!-- ── HERO (pillar subpage — no stats) ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
@@ -337,8 +342,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <!-- ── PLANS & PRICING ── -->
+    <!-- ✅ FIX: emoji prefix added to all section h2 headings -->
     <div id="plans" class="rc-lp-section">
-      <h2>Plans &amp; Pricing</h2>
+      <h2>🗂️ Plans &amp; Pricing</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -375,7 +381,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── INCENTIVES ── -->
     <div id="incentives" class="rc-lp-section">
-      <h2>Incentives</h2>
+      <h2>🎁 Incentives</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -402,7 +408,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── GIFTING & EXPANSION ── -->
     <div id="gifting" class="rc-lp-section">
-      <h2>Gifting &amp; Expansion</h2>
+      <h2>🎀 Gifting &amp; Expansion</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -429,7 +435,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── PAYMENTS ── -->
     <div id="payments" class="rc-lp-section">
-      <h2>Payments</h2>
+      <h2>💳 Payments</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
