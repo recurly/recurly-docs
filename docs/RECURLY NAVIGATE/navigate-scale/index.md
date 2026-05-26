@@ -1,8 +1,26 @@
 ---
 title: 'Recurly Navigate: Scale'
+excerpt: >-
+  Master the complexities of scaling a global subscription business with
+  Recurly’s advanced analytics, global expansion tools, and revenue optimization
+  strategies. Learn to interpret industry churn benchmarks, automate tax
+  compliance (VAT/GST), manage B2B account hierarchies, and streamline revenue
+  recognition for enterprise-grade growth. Optimized for subscription leaders
+  seeking data-driven insights and secure, scalable payment ecosystems.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Subscription analytics
+    - churn rate benchmarks
+    - global payment expansion
+    - revenue recognition automation
+    - B2B account hierarchies
+    - SaaS fraud prevention
+    - multi-currency localization
+    - Recurly data exports
+    - payment success optimization
+    - enterprise subscription scaling
   robots: index
 ---
 <HTMLBlock>{`
