@@ -341,7 +341,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── INVOLUNTARY CHURN ── -->
     <div id="involuntary" class="rc-category">
-      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Involuntary churn management</h2>
+      <h2><i class="fa-solid fa-user-minus rc-fa-section"></i> Involuntary churn management</h2>
       <div class="rc-path-list">
 
         <a href="#" class="rc-path-card">
