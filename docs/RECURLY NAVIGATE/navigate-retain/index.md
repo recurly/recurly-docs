@@ -1,8 +1,23 @@
 ---
 title: 'Recurly Navigate: Retain'
+excerpt: >-
+  Optimize your subscription retention strategy with Recurly Navigate. Master
+  involuntary churn reduction through dunning and intelligent retries, prevent
+  voluntary churn with save offers and pause features, and recover lost revenue
+  automatically to increase subscriber LTV.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Involuntary churn reduction
+    - subscription revenue recovery
+    - dunning management tools
+    - automated account updater
+    - intelligent payment retries
+    - voluntary churn prevention
+    - subscription pause features
+    - customer retention strategy
+    - and billing communication optimization
   robots: index
 ---
 <HTMLBlock>{`
