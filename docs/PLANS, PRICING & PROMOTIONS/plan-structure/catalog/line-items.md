@@ -13,7 +13,7 @@ metadata:
     Line items are the individual charges listed on a Recurly invoice — each one representing a product, service, or adjustment applied to a transaction. Understanding how to structure and name them keeps your billing transparent, your subscribers informed, and your data compliant.
   </div>
 
-  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
 
   ### Prerequisites
 
@@ -44,25 +44,25 @@ metadata:
 
 <div class="rp-benefits rp-benefits-2x2">
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-list" aria-hidden="true"></i></div>
     <strong>Clear billing breakdown</strong>
     <span>Itemizes every charge on an invoice so subscribers always know exactly what they're paying for.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-dollar-to-slot" aria-hidden="true"></i></div>
     <strong>Stand-alone charge support</strong>
     <span>Line items don't need to be tied to a subscription — they can be invoiced independently for one-off charges.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
     <strong>Displayed across channels</strong>
     <span>Visible in the Admin Console, PDF invoices, Hosted Invoice pages, and Hosted Account Management — no matter how your subscribers view their bills.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">✦</div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
     <strong>Payments compliance</strong>
     <span>Accurate, descriptive line items support lower interchange rates through L2/L3 data programs and are sent to gateways in cases like Klarna usage.</span>
   </div>
@@ -84,7 +84,7 @@ Every invoice line item displays the following columns:
 * **Total** (only shown if tax is applied)
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> Invoices in the Admin Console, Hosted Invoice page, and PDF format show only the first 500 line items. However, the <strong>Subtotal</strong>, <strong>Tax</strong>, and <strong>Total</strong> always reflect all line items — including those beyond the first 500. To download the full set, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true" /> Note</strong> Invoices in the Admin Console, Hosted Invoice page, and PDF format show only the first 500 line items. However, the <strong>Subtotal</strong>, <strong>Tax</strong>, and <strong>Total</strong> always reflect all line items — including those beyond the first 500. To download the full set, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</div>
 </div>
 
 ## Description and naming guidelines
@@ -98,7 +98,7 @@ If your gateway is not HIPAA-compliant, do not include protected health informat
     Use clear, descriptive names rather than generic labels like "Item 1" or "Charge."
   </Card>
 
-  <Card title="Match the product" icon="fa-apple-alt">
+  <Card title="Match the product" icon="fa-apple-whole">
     If you sell fruit, list "Apple," "Orange," and "Banana" rather than "Fruits."
   </Card>
 
@@ -118,7 +118,7 @@ If your gateway is not HIPAA-compliant, do not include protected health informat
     Descriptions must be 255 characters or fewer.
   </Card>
 
-  <Card title="Special character tip" icon="fa-info-circle">
+  <Card title="Special character tip" icon="fa-circle-info">
     Check with your payment gateway about any restrictions on special characters before using them in names or descriptions.
   </Card>
 </Cards>
