@@ -1,8 +1,25 @@
 ---
 title: 'Recurly Navigate: Launch'
+excerpt: >-
+  Master Recurly strategy and launch best practices from the start. Configure
+  payment gateways, schedule ideal Dunning communications, and get a headstart
+  on your subscription analytics. From invoice fundamentals to the "First 90
+  Days" Launchpad learning paths, ensure a seamless transition from beginning
+  production to site optimization with Recurly Navigate's expert-led paths.
 deprecated: false
 hidden: true
 metadata:
+  keywords:
+    - Subscription billing implementation
+    - Recurly launch checklist
+    - SaaS data migration strategy
+    - payment gateway configuration best practices
+    - subscription analytics KPIs
+    - webhook integration for developers
+    - role-based access control setup
+    - automated dunning recovery
+    - API authentication protocols
+    - and go-live deployment guide.
   robots: index
 ---
 <HTMLBlock>{`
