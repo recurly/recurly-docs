@@ -21,9 +21,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --retain:    #FF9D88;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
+  background: #ffffff; /* belt-and-suspenders behind body override */
 }
 .rc-guide * { box-sizing: border-box; }
-body { margin: 0; background: #fff; }
+/* FIX #1: !important required to win against ReadMe host-theme background */
+body { margin: 0; background: #ffffff !important; }
 
 /* ── HOST-THEME ARMOR ── */
 .rc-guide a,
@@ -86,15 +88,10 @@ body { margin: 0; background: #fff; }
   border-radius: 16px;
   margin-bottom: 0;
 }
-/* FIX #4: brand-header margin-bottom → 0 (was 28px, creating too much gap before icon) */
 .rc-brand-header { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 0; }
-/* FIX #1: logo height → 28px (was 40px — too large, competes with pillar identity) */
 .rc-logo-image { height: 28px; width: auto; }
-/* FIX #2: pillar icon margin → 44px auto 20px (was 0 auto 24px — no breathing room between logo and icon) */
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
-/* FIX #3: explicit margin-bottom: 24px on h1 */
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
-/* FIX #7: opacity → .85 (was .9 — too bright against dark overlay) */
 .rc-hero > p { font-size: 1.1rem; opacity: .85; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
 /* ── STICKY NAV — Retain salmon bg ── */
@@ -156,8 +153,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 6px;
 }
-.rc-sticky-link:hover { background: var(--offblack); color: var(--yellow) !important; }
+/* FIX #3: semi-transparent hover overlay — text stays offblack, no badge inversion needed */
+.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+/* FIX #4: active item — no persistent background, map pin icon identifies current page */
+.rc-sticky-link-active { font-weight: 800; }
+.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
@@ -182,7 +184,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 24px;
   align-items: center;
 }
-/* Armor override — explicit border-bottom on base and hover states */
 .rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
 .rc-guide a.rc-path-card:hover {
   border-color: var(--retain);
@@ -201,7 +202,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
-/* Armor-safe selector pattern for secondary button */
 .rc-guide a.rc-btn-secondary {
   display: inline-flex; align-items: center; gap: 8px;
   background: transparent; color: var(--offblack) !important;
