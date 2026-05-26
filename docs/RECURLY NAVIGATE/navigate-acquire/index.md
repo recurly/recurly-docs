@@ -491,7 +491,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
 
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Acquire:</span>
+          <span class="rc-footer-label">Acquire</span>
           <a href="#plans" class="rc-footer-link">Plans &amp; Pricing</a>
           <a href="#incentives" class="rc-footer-link">Incentives</a>
           <a href="#gifting" class="rc-footer-link">Gifting &amp; Expansion</a>
