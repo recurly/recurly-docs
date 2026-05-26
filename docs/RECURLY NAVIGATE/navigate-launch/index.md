@@ -54,17 +54,13 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
-.rc-fa-announce {
-  color: var(--offblack);
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-.rc-fa-cta {
-  color: var(--offblack);
-  font-size: 1.3rem;
-  display: block;
-  margin-bottom: 10px;
-}
+.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+/* Icons on dark/offblack backgrounds — must use hex + !important */
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+/* Icons on light/brightgray/offwhite backgrounds */
+.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
+/* Icons inline in section h2/h3 headings */
+.rc-fa-section { color: var(--offblack); font-size: 1rem; }
 
 /* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
@@ -125,8 +121,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
-
-/* rc-pillar-hero-icon on <img> directly — margin: 44px auto 20px */
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 
 /* ── STICKY NAV — Launch (brightgray bg), collapsed ── */
@@ -194,7 +188,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
-/* Known Issue #27: no background on active item — map pin identifies current page, no persistent tint */
 .rc-sticky-link-active { font-weight: 800; }
 .rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 
@@ -278,7 +271,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO — Pillar subpage: rc-brand-header + rc-pillar-hero-icon on <img> + h1 + p ── -->
+    <!-- ── HERO — Pillar subpage ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
@@ -309,7 +302,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── LAUNCHPAD ── -->
     <div id="launchpad" class="rc-category">
-      <h2>Launchpad</h2>
+      <h2><i class="fa-solid fa-rocket rc-fa-section"></i> Launchpad</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -336,7 +329,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── TECHNICAL SETUP ── -->
     <div id="technical" class="rc-category">
-      <h2>Technical setup</h2>
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Technical setup</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -363,7 +356,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── ONBOARDING ── -->
     <div id="onboarding" class="rc-category">
-      <h2>Onboarding</h2>
+      <h2><i class="fa-solid fa-user-check rc-fa-section"></i> Onboarding</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -388,16 +381,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── OFFICE HOURS CTA ── -->
+    <!-- ── OFFICE HOURS CTA — light card ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3><i class="fa-solid fa-headset rc-fa-cta"></i>Need live guidance on your Launch?</h3>
+        <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on your Launch?</h3>
         <p>Bring your configuration questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV — one section for pillar anchors + utility row ── -->
+    <!-- ── FOOTER NAV ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
