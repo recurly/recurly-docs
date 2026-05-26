@@ -13,7 +13,7 @@ metadata:
     Managed Services gives you a flexible retainer for ongoing execution, configuration, and technical implementation. It's designed for teams that want on-demand help with work typically covered in onboarding and professional services — without needing a new Statement of Work (SOW) for every task. Your service tier, usage commitment, and billing period are all defined in your Order Form.
   </div>
 
-  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true" /> Not included in Starter or Pro — contact Recurly Sales to upgrade</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true" /> Not included in Starter or Pro — contact Recurly Sales to upgrade</div>
 
   <div class="rp-cost">
     <strong>Additional cost</strong><br />
@@ -59,25 +59,25 @@ metadata:
 
 <div class="rp-benefits rp-benefits-2x2">
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
     <strong>Flexible execution without repeated SOWs</strong>
     <span>Get help with recurring configuration and implementation needs without starting a new SOW for each request.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-money-bill" aria-hidden="true"></i></div>
     <strong>Predictable budgeting</strong>
     <span>A prepaid hours model with a hard cap on usage means no surprise overages and easy forecasting.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-flash" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
     <strong>Faster access to help</strong>
     <span>Submit requests through a single portal and get defined response and resource allocation targets.</span>
   </div>
 
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-th-large" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></div>
     <strong>Broad coverage across Recurly products</strong>
     <span>Use hours for implementation support, reporting, optimization, and enablement tasks as your business evolves.</span>
   </div>
@@ -128,7 +128,7 @@ Your entitlements depend on the service tier selected in your Order Form.
 Your Order Form includes your pricing, tier, billing period, and any additional hours purchased.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> Support hours for all tiers are 9:00 AM – 5:00 PM ET, Monday through Friday, excluding US public holidays.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true" /> Note</strong> Support hours for all tiers are 9:00 AM – 5:00 PM ET, Monday through Friday, excluding US public holidays.</div>
 </div>
 
 # Usage, billing, and cap policy
@@ -164,7 +164,7 @@ A customer on the Basic tier commits to eight hours per month (five baseline hou
 You can use hours at your preferred pace within the billing period, but all work depends on resource availability.
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb" aria-hidden="true" /> Tip</strong> Plan large initiatives at least four weeks before your billing period ends to ensure Recurly can schedule the right resources.</div>
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true" /> Tip</strong> Plan large initiatives at least four weeks before your billing period ends to ensure Recurly can schedule the right resources.</div>
 </div>
 
 * **Advance notice:** Requests over 20 hours, or requests submitted within the final 30 days of a billing period, may require additional lead time
@@ -196,7 +196,7 @@ Managed Services includes recurring meetings with a Professional Services repres
 * **Enhanced tier:** One meeting per calendar month (30 minutes)
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> Governance meetings consume hours from your allocated package.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true" /> Note</strong> Governance meetings consume hours from your allocated package.</div>
 </div>
 
 ## Usage reporting
