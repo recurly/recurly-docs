@@ -1,9 +1,9 @@
 ---
 title: Ramp pricing
 excerpt: >-
-  Ramp up your subscription strategy with flexible, future-proof pricing models
-  with Recurly's Ramp Pricing feature. Strategically define price adjustments
-  over time to cater to diverse customer acquisition and retention needs.
+  Configure subscription prices that increase or decrease over time using
+  Recurly's ramp pricing — ideal for introductory offers and customer loyalty
+  programs.
 deprecated: false
 hidden: false
 metadata:
@@ -13,11 +13,6 @@ metadata:
 next:
   description: ''
 ---
-Title: Ramp pricing
-Metadata description: Configure subscription prices that increase or decrease over time using Recurly's ramp pricing — ideal for introductory offers and customer loyalty programs.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
   <div class="rp-overview">
     Ramp pricing lets you define a series of price changes that take effect automatically over a subscription's lifetime. Use it to attract new customers with a lower introductory price that steps up over time, or reward long-term subscribers with a price that decreases as the relationship grows.
