@@ -23,6 +23,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
+body { margin: 0; background: #ffffff !important; }
 
 /* ── HOST-THEME ARMOR ── */
 .rc-guide a,
