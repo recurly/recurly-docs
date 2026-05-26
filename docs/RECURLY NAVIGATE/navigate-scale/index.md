@@ -129,7 +129,7 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
 }
 .rc-nav-chevron {
   font-size: .72rem;
-  color: #fff;
+  color: #0D0D0B;
   opacity: 0.55;
   line-height: 1;
   transition: transform 0.25s ease;
@@ -148,9 +148,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px 4px;
   padding: 12px 20px 18px;
 }
-/* Scale nav: links are white on dark vermillion bg */
+/* Scale nav: links are black on dark vermillion bg */
 .rc-sticky-link {
-  color: #fff !important;
+  color: ##0D0D0B !important;
   text-decoration: none !important;
   font-weight: 700;
   font-size: .83rem;
@@ -164,7 +164,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 6px;
 }
-.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #fff !important; text-decoration: none !important; }
+.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; text-decoration: none !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
