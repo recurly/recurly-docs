@@ -478,7 +478,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── BOTTOM CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3><i class="fa-solid fa-headset rc-fa-section"></i> Need live guidance on your acquisition strategy?</h3>
+        <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on your acquisition strategy?</h3>
         <p>Bring your configuration and growth questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
