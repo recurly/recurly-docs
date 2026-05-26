@@ -23,7 +23,12 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+body { background: #ffffff !important; }
+
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
@@ -37,9 +42,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --offwhite:  #FFFDF2;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
+  background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
-body { margin: 0; background: #fff; }
 
 /* ── HOST-THEME ARMOR ── */
 .rc-guide a,
@@ -47,6 +52,19 @@ body { margin: 0; background: #fff; }
 .rc-guide a:visited,
 .rc-guide a:hover,
 .rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
+
+/* ── FONT AWESOME ICON HELPERS ── */
+.rc-fa-announce {
+  color: var(--offblack);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.rc-fa-cta {
+  color: var(--offblack);
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 10px;
+}
 
 /* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
@@ -64,7 +82,7 @@ body { margin: 0; background: #fff; }
   line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
-.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
@@ -105,14 +123,13 @@ body { margin: 0; background: #fff; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* FIX #1 + #4: Brand header wrapper + logo image (was bare <img style="height:32px">) */
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 
-/* FIX #2 + #3: rc-pillar-hero-icon on <img> directly, 64px (was 48px inner / 72px wrapper div) */
+/* rc-pillar-hero-icon on <img> directly — margin: 44px auto 20px */
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 
-/* ── STICKY NAV — Launch (brightgray bg) ── */
+/* ── STICKY NAV — Launch (brightgray bg), collapsed ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -156,16 +173,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
-.rc-nav-drawer-inner {
-  overflow: hidden;
-  border-top: 1px solid rgba(0,0,0,0.10);
-}
-.rc-nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 4px;
-  padding: 12px 20px 18px;
-}
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 .rc-sticky-link {
   color: var(--offblack) !important;
   text-decoration: none !important;
@@ -185,7 +194,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
-.rc-sticky-link-active { background: rgba(0,0,0,0.12); font-weight: 800; }
+/* Known Issue #27: no background on active item — map pin identifies current page, no persistent tint */
+.rc-sticky-link-active { font-weight: 800; }
 .rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 
 /* ── CATEGORY SECTIONS ── */
@@ -220,7 +230,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-path-content p { font-size: .92rem; color: var(--gray); line-height: 1.5; margin: 0; }
 .rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
-/* ── OFFICE HOURS CTA ── */
+/* ── OFFICE HOURS CTA — light card ── */
 .rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
@@ -238,7 +248,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* ── RESPONSIVE ── */
+/* ── CONSOLIDATED RESPONSIVE BLOCK ── */
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
@@ -261,13 +271,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── ANNOUNCEMENT BAR (hidden — add rc-active to show) ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
-        🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO — Pillar subpage (2b): rc-brand-header + rc-pillar-hero-icon on <img> + h1 + p ── -->
+    <!-- ── HERO — Pillar subpage: rc-brand-header + rc-pillar-hero-icon on <img> + h1 + p ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
@@ -289,7 +300,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
             <a href="#launchpad" class="rc-sticky-link">Launchpad</a>
-            <a href="#technical" class="rc-sticky-link">Technical Setup</a>
+            <a href="#technical" class="rc-sticky-link">Technical setup</a>
             <a href="#onboarding" class="rc-sticky-link">Onboarding</a>
           </div>
         </div>
@@ -305,47 +316,47 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
           </div>
           <div class="rc-path-content">
-            <h3>Launchpad Phase One: Optimize</h3>
+            <h3>Launchpad phase one: Optimize</h3>
             <p>Ensure your Recurly instance is configured for maximum impact. Learn best practices for site settings, payment gateways, and baseline security.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
           </div>
           <div class="rc-path-content">
-            <h3>Launchpad Phase Two: Mastering Metrics</h3>
+            <h3>Launchpad phase two: Mastering metrics</h3>
             <p>Dive deep into Recurly Analytics. Understand your core subscription KPIs, how to read your dashboards, and track success from day one.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
 
     <!-- ── TECHNICAL SETUP ── -->
     <div id="technical" class="rc-category">
-      <h2>Technical Setup</h2>
+      <h2>Technical setup</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
           </div>
           <div class="rc-path-content">
-            <h3>API &amp; Webhook Fundamentals</h3>
+            <h3>API &amp; Webhook fundamentals</h3>
             <p>Learn how to authenticate, connect your backend architecture, and listen to real-time Recurly events seamlessly.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
           </div>
           <div class="rc-path-content">
-            <h3>Data Migration Guide</h3>
+            <h3>Data migration guide</h3>
             <p>Step-by-step instructions for importing your existing customer data, billing information, and active subscriptions securely into Recurly.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
@@ -359,20 +370,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
           </div>
           <div class="rc-path-content">
-            <h3>The First 30 Days Playbook</h3>
+            <h3>The first 30 days playbook</h3>
             <p>A structured checklist and strategic guide for your entire team to ensure a flawless, stress-free go-live experience.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
           </div>
           <div class="rc-path-content">
-            <h3>Team Training &amp; Permissions</h3>
+            <h3>Team training &amp; permissions</h3>
             <p>Learn how to invite new users, set up role-based access control, and train your staff on navigating the admin console.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
@@ -380,7 +391,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── OFFICE HOURS CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3>👋 Need live guidance on your Launch?</h3>
+        <h3><i class="fa-solid fa-headset rc-fa-cta"></i>Need live guidance on your Launch?</h3>
         <p>Bring your configuration questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
@@ -393,7 +404,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launch</span>
           <a href="#launchpad" class="rc-footer-link">Launchpad</a>
-          <a href="#technical" class="rc-footer-link">Technical Setup</a>
+          <a href="#technical" class="rc-footer-link">Technical setup</a>
           <a href="#onboarding" class="rc-footer-link">Onboarding</a>
         </div>
 
