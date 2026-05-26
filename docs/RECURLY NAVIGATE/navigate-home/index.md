@@ -25,7 +25,12 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+body { background: #ffffff !important; }
+
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
@@ -39,9 +44,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --offwhite:  #FFFDF2;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
+  background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
-body { margin: 0; background: #fff; }
 
 /* ── HOST-THEME ARMOR — resets ReadMe's global link styles ── */
 .rc-guide a,
@@ -52,6 +57,19 @@ body { margin: 0; background: #fff; }
 
 /* ── LAYOUT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* ── FONT AWESOME ICON HELPERS ── */
+.rc-fa-announce {
+  color: var(--offblack);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.rc-fa-starter {
+  color: #FFD706 !important;
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 10px;
+}
 
 /* ── ANNOUNCEMENT BAR — hidden by default, show with rc-active ── */
 .rc-announce-bar {
@@ -69,7 +87,7 @@ body { margin: 0; background: #fff; }
   line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
-.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
@@ -100,11 +118,9 @@ body { margin: 0; background: #fff; }
   margin-bottom: 0;
 }
 
-/* FIX #1 + #2: logo height 28px, margin-bottom 0 */
 .rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; width: auto; display: block; }
 
-/* FIX #3: Home title block with 44px top margin */
 .rc-home-title-block { margin-top: 44px; }
 .rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 24px; }
 
@@ -291,22 +307,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── ANNOUNCEMENT BAR — hidden; add class rc-active to show ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
-        🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <!-- FIX #4: event-hub → global-office-hours -->
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
     <!-- ── HERO ── -->
     <div class="rc-hero">
-      <!-- FIX #1 + #2: logo height 28px, margin-bottom 0 -->
       <div class="rc-brand-header">
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
       </div>
-      <!-- FIX #3: Home title block with 44px top margin -->
       <div class="rc-home-title-block">
-        <h1>Your Subscription Success Hub</h1>
+        <h1>Your subscription success hub</h1>
         <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
       </div>
       <div class="rc-hero-stats">
@@ -342,7 +356,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-sticky-link">Retain</a>
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-sticky-link">Scale</a>
             <a href="https://navigate.recurly.com/event-hub/" class="rc-sticky-link" target="_blank" rel="noopener noreferrer">Events ↗</a>
-            <!-- FIX #4: event-hub → global-office-hours -->
             <a href="https://navigate.recurly.com/global-office-hours/" class="rc-sticky-link" target="_blank" rel="noopener noreferrer">Office Hours ↗</a>
           </div>
         </div>
@@ -358,10 +371,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── NEW TO NAVIGATE — dark card ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3>👋 New to Navigate?</h3>
+        <h3><i class="fa-solid fa-map-location-dot rc-fa-starter"></i>New to Navigate?</h3>
         <p>Welcome! Start here to learn how to use this program and find support.</p>
       </div>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-primary">Get Started Here</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-primary">Get started here</a>
     </div>
 
     <!-- ── HUB GRID ── -->
@@ -370,38 +383,37 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hub-icon" style="background-color:#CCC9B8;"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch"></div>
         <h3>Launch</h3>
         <p>Get configured and live fast. Build a solid subscription foundation.</p>
-        <div class="rc-hub-arrow">View Paths →</div>
+        <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-hub-card">
         <div class="rc-hub-icon" style="background-color:#FFD706;"><img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire"></div>
         <h3>Acquire</h3>
         <p>Convert more customers and grow your subscriber base.</p>
-        <div class="rc-hub-arrow">View Paths →</div>
+        <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-hub-card">
         <div class="rc-hub-icon" style="background-color:#FF9D88;"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"></div>
         <h3>Retain</h3>
         <p>Reduce involuntary churn and recover revenue.</p>
-        <div class="rc-hub-arrow">View Paths →</div>
+        <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-scale" class="rc-hub-card">
         <div class="rc-hub-icon" style="background-color:#FF5810;"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"></div>
         <h3>Scale</h3>
         <p>Expand your business and launch new products.</p>
-        <div class="rc-hub-arrow">View Paths →</div>
+        <div class="rc-hub-arrow">View paths →</div>
       </a>
       <a href="https://navigate.recurly.com/event-hub/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
         <div class="rc-hub-icon" style="background-color:#0075FF;"><img src="https://files.readme.io/563321926f2e7a38fe472432f8618ced99db3e226b70d30b21bbb66ce3c89a97-Events_Icon.png" alt="Events"></div>
         <h3>Events</h3>
         <p>Register for webinars and peer learning sessions.</p>
-        <div class="rc-hub-arrow">View Schedule ↗</div>
+        <div class="rc-hub-arrow">View schedule ↗</div>
       </a>
-      <!-- FIX #4: event-hub → global-office-hours -->
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-hub-card" target="_blank" rel="noopener noreferrer">
         <div class="rc-hub-icon" style="background-color:#FF8200;"><img src="https://files.readme.io/3b9d50b3933f927bb9ae2d6e1529d666c17eb63f7305d688d48bb1ce383ac6de-Office_Hours_Icon.png" alt="Office Hours"></div>
         <h3>Office Hours</h3>
         <p>Connect with a Recurly CSM live to ask questions.</p>
-        <div class="rc-hub-arrow">Register Now ↗</div>
+        <div class="rc-hub-arrow">Register now ↗</div>
       </a>
     </div>
 
