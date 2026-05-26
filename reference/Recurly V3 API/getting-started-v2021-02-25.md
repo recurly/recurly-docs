@@ -32,7 +32,7 @@ The Recurly Subscriptions API uses date-based versioning to give you stability w
 Every API request must include an `Accept` header specifying the API version you're targeting.
 
 <div class="rp-callout rp-callout-important">
-  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong>Every request must include an <code>Accept</code> header with a valid API version. Without it, your request will fail.</div>
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true" /> Important</strong>Every request must include an <code>Accept</code> header with a valid API version. Without it, your request will fail.</div>
 </div>
 
 ```
@@ -60,7 +60,7 @@ If you're using one of Recurly's official client libraries, make sure your libra
   <tr><td>v2019-10-10</td><td>3.x</td></tr>
 </table>
 
-We recommend keeping both your API version and client library up to date. Later versions are more performant and include important bug fixes. See the <a href="/docs/api-changelog" target="_blank">changelog</a> for a complete list of improvements.
+We recommend keeping both your API version and client library up to date. Later versions are more performant and include important bug fixes. See the <Anchor label="changelog" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference">changelog</Anchor> for a complete list of improvements.
 
 **Client libraries by language:**
 
@@ -84,7 +84,7 @@ Accept: application/vnd.recurly.latest+json
 ```
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>Using <code>latest</code> means your integration may break without notice if we introduce breaking changes. Use a pinned version in production.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true" /> Warning</strong>Using <code>latest</code> means your integration may break without notice if we introduce breaking changes. Use a pinned version in production.</div>
 </div>
 
 ## Deprecated versions
@@ -119,7 +119,7 @@ Requests to unsupported API versions return a `406` status code with a list of a
 
 API errors are designed for developers. If you're displaying these messages to end users, translate them into language your users will understand — for example, a technical message like "Invalid account code format" might be better displayed as "We couldn't find that account."
 
-For detailed information on transaction-specific error codes, see <a href="https://recurly.com/developers/pages/api-transaction-errors.html" target="_blank">transaction error codes</a>.
+For detailed information on transaction-specific error codes, see our <Anchor label="documentation" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/api-transaction-errors">documentation</Anchor>.
 
 # Pagination
 
@@ -144,7 +144,7 @@ Every listing endpoint returns the same response structure:
 <table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Field</td><td>Description</td></tr>
   <tr><td><code>object</code></td><td>Always <code>"list"</code> for listing endpoints.</td></tr>
-  <tr><td><code>has_more</code></td><td><code>true</code> if there are more pages; <code>false</code> if you've reached the last page.</td></tr>
+  <tr><td><code>has\_more</code></td><td><code>true</code> if there are more pages; <code>false</code> if you've reached the last page.</td></tr>
   <tr><td><code>next</code></td><td>A URL pointing to the next page of results.</td></tr>
   <tr><td><code>data</code></td><td>An array of objects for the current page.</td></tr>
 </table>
@@ -176,8 +176,8 @@ Most listing endpoints accept parameters to filter and sort results:
   <li><code>limit</code> — The number of records to return per page.</li>
   <li><code>order</code> — The sort order (<code>asc</code> for ascending, <code>desc</code> for descending).</li>
   <li><code>sort</code> — The field to sort by (often a date field).</li>
-  <li><code>begin_time</code> — ISO 8601 datetime to start filtering from.</li>
-  <li><code>end_time</code> — ISO 8601 datetime to stop filtering at.</li>
+  <li><code>begin\_time</code> — ISO 8601 datetime to start filtering from.</li>
+  <li><code>end\_time</code> — ISO 8601 datetime to stop filtering at.</li>
 </ul>
 
 ```
@@ -214,7 +214,7 @@ The rate limit is measured over a rolling five-minute window. A production site 
 
 ## Exceeding your limit
 
-If you exceed your rate limit, the API returns a `429 Too Many Requests` status code. If your business needs a higher limit, reach out to <a href="mailto:support@recurly.com" target="_blank">support@recurly.com</a>.
+If you exceed your rate limit, the API returns a `429 Too Many Requests` status code. If your business needs a higher limit, reach out to <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
 
 ## Monitoring your usage
 
@@ -229,32 +229,32 @@ Three response headers help you track your rate limit status:
 
 # What's next
 
-- <a href="recurly-subscriptions/reference" target="_blank">Browse the complete API reference</a>
-- <a href="recurly-subscriptions/changelog" target="_blank">View the API changelog</a>
-- <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/client-libraries" target="_blank">Explore our client libraries</a>
+* <a href="recurly-subscriptions/reference" target="_blank">Browse the complete API reference</a>
+* <a href="recurly-subscriptions/changelog" target="_blank">View the API changelog</a>
+* <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/client-libraries" target="_blank">Explore our client libraries</a>
 
 # FAQs
 
 <Accordion title="Do I have to specify an API version?">
-Yes. Every request must include an `Accept` header with a specific API version. Without it, the API will reject your request with a 406 error.
+  Yes. Every request must include an `Accept` header with a specific API version. Without it, the API will reject your request with a 406 error.
 </Accordion>
 
 <Accordion title="How often are new API versions released?">
-We release new versions as we add significant features or make breaking changes. Each version is supported for an extended period before sunset, giving you time to migrate.
+  We release new versions as we add significant features or make breaking changes. Each version is supported for an extended period before sunset, giving you time to migrate.
 </Accordion>
 
 <Accordion title="Can I use the latest version automatically?">
-You can specify `latest` in your `Accept` header to always use the newest version. Keep in mind that your code could break if we introduce breaking changes — use this only if you're comfortable monitoring for API updates.
+  You can specify `latest` in your `Accept` header to always use the newest version. Keep in mind that your code could break if we introduce breaking changes — use this only if you're comfortable monitoring for API updates.
 </Accordion>
 
 <Accordion title="What happens if I request an old API version?">
-Once an API version reaches its sunset date, requests to that version return a 406 error with a list of supported versions. We give plenty of warning before sunsetting a version.
+  Once an API version reaches its sunset date, requests to that version return a 406 error with a list of supported versions. We give plenty of warning before sunsetting a version.
 </Accordion>
 
 <Accordion title="Do POST, PUT, and DELETE requests count against my rate limit in production?">
-No. In production, only GET requests are rate-limited. Write operations — creating, updating, or deleting data — don't count toward your limit.
+  No. In production, only GET requests are rate-limited. Write operations — creating, updating, or deleting data — don't count toward your limit.
 </Accordion>
 
 <Accordion title="I keep hitting the rate limit. Can I get a higher limit?">
-Yes, contact <a href="mailto:support@recurly.com" target="_blank">support@recurly.com</a> or your account manager to discuss higher limits. We can also help you optimize your integration to use fewer requests.
+  Yes, contact <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> or your account manager to discuss higher limits. We can also help you optimize your integration to use fewer requests.
 </Accordion>
