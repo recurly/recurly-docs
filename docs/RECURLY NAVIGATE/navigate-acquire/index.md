@@ -3,6 +3,24 @@ title: 'Recurly Navigate: Acquire'
 deprecated: false
 hidden: true
 metadata:
+  description: >-
+    Master the subscription acquisition lifecycle. Learn to optimize checkout
+    conversion using Recurly.js and Hosted Payment Pages, manage complex
+    promotion logic with coupons and gift cards, and scale globally with
+    multi-currency support. This Navigate pillar provides the technical
+    framework for building high-conversion, PCI-compliant subscriber onboarding
+    flows designed for Product-Led Growth.
+  keywords:
+    - Subscription acquisition strategy
+    - checkout conversion optimization
+    - Recurly.js integration
+    - automated trial management
+    - recurring billing promotions
+    - hosted payment pages
+    - subscription plan modeling
+    - localized checkout experiences
+    - PCI-compliant payment flows
+    - multi-currency subscription billing
   robots: index
 ---
 <HTMLBlock>{`
