@@ -31,7 +31,12 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+body { background: #ffffff !important; }
+
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
@@ -48,7 +53,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
-body { margin: 0; background: #ffffff !important; }
 
 /* ── HOST-THEME ARMOR ── */
 .rc-guide a,
@@ -56,6 +60,12 @@ body { margin: 0; background: #ffffff !important; }
 .rc-guide a:visited,
 .rc-guide a:hover,
 .rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
+
+/* ── FONT AWESOME ICON HELPERS ── */
+.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: var(--offblack); font-size: 1rem; }
 
 /* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
@@ -73,7 +83,7 @@ body { margin: 0; background: #ffffff !important; }
   line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
-.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
@@ -187,24 +197,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   align-items: center;
   gap: 6px;
 }
-/* ✅ FIX #28: semi-transparent overlay; text stays offblack */
 .rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-/* ✅ FIX #27: no persistent background on active item; pin icon identifies current page */
 .rc-sticky-link-active { font-weight: 800; }
 .rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
-/* ✅ FIX: badge inversion rule removed — semi-transparent hover keeps badge legible without inverting */
 
 /* ── CONTENT SECTIONS ── */
-/* ✅ FIX: h2 font-size 1.5rem (was 1.6rem); margin-bottom 48px (was 56px) */
 .rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 {
   font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack);
   display: flex; align-items: center; gap: 12px;
 }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-/* ✅ ADD: section intro text rule */
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
 
 /* ── LEARNING PATH CARDS ── */
@@ -248,7 +253,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 24px;
   margin-bottom: 56px;
 }
-.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
+.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); display: flex; align-items: center; gap: 10px; }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
 .rc-guide a.rc-btn-secondary {
   display: inline-flex;
@@ -304,18 +309,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
-  .rc-lp-hero-title h1 { font-size: 1.8rem; }
-  .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
-  .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
-  .rc-oh-cta { padding: 24px 20px; }
-  .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
-  .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; }
-  .rc-stat-strip { grid-template-columns: 1fr; }
-  .rc-next-grid { grid-template-columns: 1fr; }
+  .rc-hero h1 { font-size: 1.8rem; }
   .rc-path-card { grid-template-columns: 1fr; gap: 16px; }
   .rc-path-arrow { margin-top: 4px; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
+  .rc-starter-text h3 { flex-wrap: wrap; }
   .rc-announce-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 </style>
@@ -332,8 +330,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── ANNOUNCEMENT BAR (hidden by default — no rc-active class) ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
-        🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
@@ -359,9 +358,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
-            <a href="#plans" class="rc-sticky-link">Plans &amp; Pricing</a>
+            <a href="#plans" class="rc-sticky-link">Plans &amp; pricing</a>
             <a href="#incentives" class="rc-sticky-link">Incentives</a>
-            <a href="#gifting" class="rc-sticky-link">Gifting &amp; Expansion</a>
+            <a href="#gifting" class="rc-sticky-link">Gifting &amp; expansion</a>
             <a href="#payments" class="rc-sticky-link">Payments</a>
           </div>
         </div>
@@ -369,9 +368,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </details>
 
     <!-- ── PLANS & PRICING ── -->
-    <!-- ✅ FIX: emoji prefix added to all section h2 headings -->
     <div id="plans" class="rc-lp-section">
-      <h2>🗂️ Plans &amp; Pricing</h2>
+      <h2><i class="fa-solid fa-sliders rc-fa-section"></i> Plans &amp; pricing</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -381,34 +379,34 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <h3>Plans</h3>
             <p>Learn how to seamlessly structure and configure your core subscription plans to attract and convert your target audience.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Pricing Models icon" style="opacity:.6;">
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Pricing models icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Pricing Models: Tiers vs Ramp</h3>
+            <h3>Pricing models: tiers vs ramp</h3>
             <p>Explore advanced pricing strategies, including tiered models and ramp pricing, to maximize early conversions and lifetime value.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Plan Flexibility icon" style="opacity:.6;">
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Plan flexibility icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Plan Flexibility</h3>
+            <h3>Plan flexibility</h3>
             <p>Understand how to offer flexible plan options, allowing subscribers to pause, seamlessly upgrade, or alter their cadence.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
 
     <!-- ── INCENTIVES ── -->
     <div id="incentives" class="rc-lp-section">
-      <h2>🎁 Incentives</h2>
+      <h2><i class="fa-solid fa-tag rc-fa-section"></i> Incentives</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -418,7 +416,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <h3>Trials</h3>
             <p>Set up and optimize free trials to lower the barrier to entry and effectively turn curious prospects into paying subscribers.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
@@ -428,51 +426,51 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <h3>Coupons</h3>
             <p>Create targeted coupon campaigns to drive flash promotions, reward loyalty, and incentivize new sign-ups during key seasons.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
 
     <!-- ── GIFTING & EXPANSION ── -->
     <div id="gifting" class="rc-lp-section">
-      <h2>🎀 Gifting &amp; Expansion</h2>
+      <h2><i class="fa-solid fa-gift rc-fa-section"></i> Gifting &amp; expansion</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Gift Cards icon" style="opacity:.6;">
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Gift cards icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Gift Cards</h3>
+            <h3>Gift cards</h3>
             <p>Leverage gift cards as a powerful secondary acquisition channel to reach entirely new audiences and drive immediate prepaid revenue.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Gift Subscriptions icon" style="opacity:.6;">
+            <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Gift subscriptions icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Gift Subscriptions</h3>
+            <h3>Gift subscriptions</h3>
             <p>Enable gift subscriptions so your biggest brand advocates can easily purchase and share your service with friends and family.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
 
     <!-- ── PAYMENTS ── -->
     <div id="payments" class="rc-lp-section">
-      <h2>💳 Payments</h2>
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Payments</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
             <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Payments icon" style="opacity:.6;">
           </div>
           <div class="rc-path-content">
-            <h3>Payments for Acquisition</h3>
+            <h3>Payments for acquisition</h3>
             <p>Optimize your checkout experience and payment gateway configurations to reduce friction and boost your overall conversion rates.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
@@ -480,7 +478,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── BOTTOM CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3>👋 Need live guidance on your acquisition strategy?</h3>
+        <h3><i class="fa-solid fa-headset rc-fa-section"></i> Need live guidance on your acquisition strategy?</h3>
         <p>Bring your configuration and growth questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
@@ -492,9 +490,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
         <div class="rc-footer-section">
           <span class="rc-footer-label">Acquire</span>
-          <a href="#plans" class="rc-footer-link">Plans &amp; Pricing</a>
+          <a href="#plans" class="rc-footer-link">Plans &amp; pricing</a>
           <a href="#incentives" class="rc-footer-link">Incentives</a>
-          <a href="#gifting" class="rc-footer-link">Gifting &amp; Expansion</a>
+          <a href="#gifting" class="rc-footer-link">Gifting &amp; expansion</a>
           <a href="#payments" class="rc-footer-link">Payments</a>
         </div>
 
