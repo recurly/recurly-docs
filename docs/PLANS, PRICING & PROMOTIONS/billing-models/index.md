@@ -13,61 +13,66 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">
+    Pricing models are the strategies you use to charge for your products and services. Recurly supports a wide range of models — from simple fixed pricing to complex hybrid and usage-based approaches — plus over 140 currencies, so you can sell globally and bill exactly the way your business works.
+  </div>
 
-### Required plan
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
 
-These features are available to all customers on any Recurly subscription plan.
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#pricing-models"><span class="rp-toc-num">3</span>Pricing models</a>
+  </div>
+</div>
 
 # Definition
 
-Pricing Models are the strategies you use to price your products or services. Recurly provides a diverse range of models including Fixed Recurring, Ramp Pricing, One-Time, Usage-based, Quantity-based, Hybrid Pricing, Prepaid Account Balance, and supports over 140+ currencies.
+<div class="rp-definition">
+  A pricing model is the strategy you use to determine what customers pay and when. Recurly supports fixed recurring, ramp, one-time, usage-based, quantity-based, hybrid, and prepaid balance pricing — giving you the flexibility to match your revenue strategy to your product and your customers.
+</div>
 
 # Key benefits
 
-* **Effective product management:** Easily define and manage recurring products, add-ons, and sellable units through Recurly's UI and API.
-* **Increased monetization:** With add-ons, provide additional services/products to customers, driving up revenue.
-* **Streamlined operations:** A well-structured plan simplifies operations and helps to track sales effectively.
-* **Customer centric:** Tailor your offerings to meet diverse customer needs with flexible plans and add-ons.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Effective product management</strong>
+    <span>Define and manage recurring products, add-ons, and sellable units through Recurly's UI and API — no custom tooling required.</span>
+  </div>
 
-# Key details
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i></div>
+    <strong>Increased monetization</strong>
+    <span>Pair base plans with add-ons to drive incremental revenue and give customers a natural path to spend more.</span>
+  </div>
 
-## Fixed pricing
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+    <strong>Streamlined operations</strong>
+    <span>A consistent pricing structure simplifies day-to-day operations and makes it easier to track sales performance across your entire product line.</span>
+  </div>
 
-[Fixed pricing](https://docs.recurly.com/docs/fixed-recurring-pricing) is a pricing model where customers pay a set amount at regular intervals for access to a product or service. This model provides predictable revenue and is straightforward for customers to understand.
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+    <strong>Global reach</strong>
+    <span>Support for over 140 currencies means you can sell to customers worldwide without worrying about conversion or localization.</span>
+  </div>
+</div>
 
-## Ramp pricing
+# Pricing models
 
-[Ramp pricing](https://docs.recurly.com/docs/ramp-pricing) is a model that allows businesses to start with a lower introductory price, which then increases over time or after a specified period. Additionally, you can offer your loyal customers a decrease in price over time.
-
-## One-time pricing
-
-[One-time pricing](https://docs.recurly.com/docs/one-time-pricing) model involves a single, non-recurring charge for a product or service.
-
-## Usage-based pricing
-
-In [usage-based pricing](https://docs.recurly.com/docs/usage-based-billing), the cost is determined by the amount of usage by the customer. This can be ideal for businesses where customers' use varies significantly.
-
-## Tiered, stairstep and volume pricing
-
-With [tiered](https://docs.recurly.com/docs/-tiered-stairstep-and-volume-pricing) pricing, the price per unit decreases as the quantity of units consumed increases. This model encourages customers to use more units to take advantage of lower unit costs.
-
-In stairstep pricing, customers are charged based on predefined consumption ranges. As usage moves to a higher range, a new price is applied to all units, not just the incremental units.
-
-Volume pricing is a straightforward model where the more units a customer consumes, the less they pay per unit. This model encourages higher usage by offering lower per-unit costs at higher volumes.
-
-## Quantity-based pricing
-
-[Quantity-based pricing](https://docs.recurly.com/docs/quantity-based-pricing) varies the price based on the quantity of items a customer purchases. It includes three variants: Tiered, Stairstep, and Volume Pricing.
-
-## Hybrid pricing
-
-[Hybrid pricing](https://docs.recurly.com/docs/hybrid-pricing) is a combination of two or more pricing models. This offers businesses the flexibility to tailor pricing models based on their products or services and customer behaviors.
-
-## Prepaid account balance
-
-[Prepaid account balance](https://docs.recurly.com/docs/prepaid-account-balance#/) allows customers to prepay and maintain a balance in their account, which can then be used for future purchases.
-
-## Currencies (140+)
-
-Recurly supports over 140 [currencies](https://docs.recurly.com/docs/currencies), allowing businesses to sell their products and services globally without worrying about currency conversion.
+<div class="rp-sdk-grid">
+<Cards>
+  <Card title="Fixed recurring pricing" href="https://docs.recurly.com/docs/fixed-recurring-pricing" target="_blank"></Card>
+  <Card title="Ramp pricing" href="https://docs.recurly.com/docs/ramp-pricing" target="_blank"></Card>
+  <Card title="One-time pricing" href="https://docs.recurly.com/docs/one-time-pricing" target="_blank"></Card>
+  <Card title="Usage-based billing" href="https://docs.recurly.com/docs/usage-based-billing" target="_blank"></Card>
+  <Card title="Tiered, stairstep and volume pricing" href="https://docs.recurly.com/docs/-tiered-stairstep-and-volume-pricing" target="_blank"></Card>
+  <Card title="Quantity-based pricing" href="https://docs.recurly.com/docs/quantity-based-pricing" target="_blank"></Card>
+  <Card title="Hybrid pricing" href="https://docs.recurly.com/docs/hybrid-pricing" target="_blank"></Card>
+  <Card title="Prepaid account balance" href="https://docs.recurly.com/docs/prepaid-account-balance#/" target="_blank"></Card>
+  <Card title="Currencies" href="https://docs.recurly.com/docs/currencies" target="_blank"></Card>
+</Cards>
+</div>
