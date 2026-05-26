@@ -19,3 +19,11 @@ A notification counts as **delivered** only when Recurly gets a timely, successf
 * The endpoint must listen on port **80 (HTTP)** or **443 (HTTPS)**—other ports are not supported.
 * The endpoint must reply within **5 seconds**.
 * The response must be an HTTP **2XX** status (200, 201, 204, etc.). Recurly does not follow redirects, and non-2XX responses are treated as failures.
+
+# Sandbox vs Production 
+
+Recurly sends sandbox and production webhooks from different services, so that the high level of testing done in sandbox mode does not impact production data.
+
+In times of high sandbox testing volume, sandbox webhook deliverability may be delayed by up to **48 hours**.
+
+Recurly may auto-pause sandbox webhook endpoints that consistently return a high number of deliverability errors in a short window of time.
