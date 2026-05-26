@@ -92,6 +92,206 @@ Managed Services focuses on hands-on execution and configuration. Eligible activ
     Onboarding new teams or business units across Recurly products.
   </Card>
 
+  <Card title="Ad hoc training" icon="fa-chalkboard-user">
+    Targeted training sessions to help your team get more out of Recurly.
+  </Card>
+
+  <Card title="Data and reporting" icon="fa-chart-line">
+    Building custom reports and exports, executing bulk API scripts, supporting data migrations, and configuring data feeds.
+  </Card>
+
+  <Card title="Configuration and optimization" icon="fa-sliders">
+    Adjusting settings, plans, or gateways as your business needs evolve; creating or tuning prompts; and period close assistance.
+  </Card>
+
+  <Card title="Solution extension" icon="fa-puzzle-piece">
+    Implementing new features, tune-up audits of your current implementation, and custom retry model implementation.
+  </Card>
+</Cards>
+
+# Service packages and service levels
+
+Your entitlements depend on the service tier selected in your Order Form.
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Basic tier</td><td>Enhanced tier</td></tr>
+  <tr><td>Request method</td><td>Online Service Portal</td><td>Online Service Portal</td></tr>
+  <tr><td>Response time</td><td>Within three business days</td><td>Within one business day</td></tr>
+  <tr><td>Resource allocation target</td><td>Within two weeks</td><td>Within one week</td></tr>
+  <tr><td>Baseline monthly hours</td><td>5</td><td>25</td></tr>
+  <tr><td>Additional monthly hours</td><td>As defined in Order Form</td><td>As defined in Order Form</td></tr>
+  <tr><td>Governance meetings</td><td>Quarterly (30 minutes)</td><td>Monthly (30 minutes)</td></tr>
+  <tr><td>Billing period choices</td><td>Monthly, quarterly, or yearly</td><td>Monthly, quarterly, or yearly</td></tr>
+  <tr><td>Minimum term</td><td>One year</td><td>One year</td></tr>
+</table>
+
+Your Order Form includes your pricing, tier, billing period, and any additional hours purchased.
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true" /> Note</strong> Support hours for all tiers are 9:00 AM – 5:00 PM ET, Monday through Friday, excluding US public holidays.</div>
+</div>
+
+# Usage, billing, and cap policy
+
+Managed Services follows a strict prepaid model to keep usage flexible and budgeting predictable.
+
+## Billing period and consumption
+
+* **Billing period:** Selected in your Order Form (for example, monthly or quarterly)
+* **Consumption rule:** Purchased hours are allocated to the billing period and can be used at any point during that period
+
+## No rollover
+
+Unused hours expire at the end of the billing period. They don't roll over and aren't refundable.
+
+## Hard cap on usage
+
+Work is strictly limited to the prepaid hours in your Order Form — no overages are permitted and negative hour balances aren't allowed. If you run out of hours before the billing period ends, active work pauses until the next billing period begins (or until additional hours are purchased, if your Order Form allows it).
+
+## Example: quarterly billing with monthly hours
+
+A customer on the Basic tier commits to eight hours per month (five baseline hours plus three additional hours) and chooses a quarterly billing period.
+
+<div class="rp-card">
+  * **Total pool:** 24 hours available at the start of the quarter (8 hours × 3 months)
+  * **Flexibility:** Hours can be used at any pace during the quarter
+  * **Expiration:** If 20 hours are used by quarter end, the remaining four expire
+  * **Cap:** If all 24 hours are used by the end of month two, services pause until the next quarter begins
+</div>
+
+# Capacity and end-of-period scheduling
+
+You can use hours at your preferred pace within the billing period, but all work depends on resource availability.
+
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true" /> Tip</strong> Plan large initiatives at least four weeks before your billing period ends to ensure Recurly can schedule the right resources.</div>
+</div>
+
+* **Advance notice:** Requests over 20 hours, or requests submitted within the final 30 days of a billing period, may require additional lead time
+* **No last-minute guarantee:** Recurly can't guarantee delivery of accumulated hours if requests are submitted in the final weeks without prior scheduling — late submission doesn't qualify a request for a refund or rollover
+
+# Service level definitions
+
+## Response time
+
+The time between submitting a request in the Online Service Portal and receiving an initial acknowledgement from Recurly.
+
+* **Basic tier:** Target acknowledgement within three business days
+* **Enhanced tier:** Target acknowledgement within one business day
+
+## Resource allocation
+
+The time required to assign a qualified consultant to your request and schedule the start of work.
+
+* **Basic tier:** Target allocation within two weeks after request validation
+* **Enhanced tier:** Target allocation within one week after request validation
+
+# Governance and reporting
+
+## Governance meetings
+
+Managed Services includes recurring meetings with a Professional Services representative to review priorities and upcoming initiatives.
+
+* **Basic tier:** One meeting per fiscal quarter (30 minutes)
+* **Enhanced tier:** One meeting per calendar month (30 minutes)
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true" /> Note</strong> Governance meetings consume hours from your allocated package.</div>
+</div>
+
+## Usage reporting
+
+Recurly provides a monthly usage report summarizing the hours consumed during the current billing period.
+
+# Request process
+
+All requests must be submitted through the Online Service Portal.
+
+# Exclusions
+
+Managed Services is focused on technical execution and configuration. The following activities aren't included:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Exclusion</td><td>Details</td></tr>
+  <tr><td>Strategic roadmapping</td><td>Long-term architecture planning, business reviews (QBRs/EBRs), and success planning — typically handled by a Technical Account Manager</td></tr>
+  <tr><td>Code-level development</td><td>Writing custom code, building entirely new non-standard integrations, or core software development</td></tr>
+  <tr><td>Crisis management</td><td>24/7 critical incident support (unless you have a separate support contract)</td></tr>
+  <tr><td>On-site services</td><td>All work is delivered remotely</td></tr>
+</table>
+
+# FAQs
+
+<Accordion title="Can I roll over unused hours to the next billing period?">
+  No. Unused hours expire at the end of the billing period and don't roll over.
+</Accordion>
+
+<Accordion title="What happens if we use all our hours before the billing period ends?">
+  Work pauses when you reach your prepaid limit. Active work resumes at the start of the next billing period, or based on additional hours if your Order Form allows it.
+</Accordion>
+
+<Accordion title="How should I plan a large initiative?">
+  If your request is more than 20 hours, or you're close to the end of a billing period, plan at least four weeks ahead so Recurly can schedule the right resources.
+</Accordion>
+
+<Accordion title="How do we submit a request?">
+  Submit all requests through the Online Service Portal.
+</Accordion>
+
+# Definition
+
+<div class="rp-definition">
+  Managed Services is a prepaid, hourly retainer that provides access to Recurly experts for ongoing technical execution, configuration, and implementation support. Use it to request scoped work across Recurly products, based on the service tier and hours defined in your Order Form.
+</div>
+
+# Key benefits
+
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">
+      <i class="fa-solid fa-file-lines" aria-hidden="true" />
+    </div>
+
+    <strong>Flexible execution without repeated SOWs</strong>
+    <span>Get help with recurring configuration and implementation needs without starting a new SOW for each request.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">
+      <i class="fa-solid fa-money-bill" aria-hidden="true" />
+    </div>
+
+    <strong>Predictable budgeting</strong>
+    <span>A prepaid hours model with a hard cap on usage means no surprise overages and easy forecasting.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">
+      <i class="fa-solid fa-bolt" aria-hidden="true" />
+    </div>
+
+    <strong>Faster access to help</strong>
+    <span>Submit requests through a single portal and get defined response and resource allocation targets.</span>
+  </div>
+
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">
+      <i class="fa-solid fa-table-cells-large" aria-hidden="true" />
+    </div>
+
+    <strong>Broad coverage across Recurly products</strong>
+    <span>Use hours for implementation support, reporting, optimization, and enablement tasks as your business evolves.</span>
+  </div>
+</div>
+
+# What Managed Services can cover
+
+Managed Services focuses on hands-on execution and configuration. Eligible activities span five areas:
+
+<Cards>
+  <Card title="Onboarding support" icon="fa-users">
+    Onboarding new teams or business units across Recurly products.
+  </Card>
+
   <Card title="Ad hoc training" icon="fa-chalkboard-teacher">
     Targeted training sessions to help your team get more out of Recurly.
   </Card>
