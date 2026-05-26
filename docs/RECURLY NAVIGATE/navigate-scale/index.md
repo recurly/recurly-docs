@@ -24,7 +24,12 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+/* ── HOST-THEME BACKGROUND OVERRIDE — must be first ── */
+body { background: #ffffff !important; }
+
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── HOST-THEME ARMOR — resets all anchor states site-wide ── */
@@ -46,13 +51,19 @@ a:link, a:visited, a:hover, a:active {
   --scale:      #FF5810;
   font-family: 'Segoe UI', system-ui, sans-serif;
   color: var(--darkgray);
+  background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
-body { margin: 0; background: #fff; }
+
+/* ── FONT AWESOME ICON HELPERS ── */
+.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: var(--offblack); font-size: 1rem; }
 
 /* ── ANNOUNCEMENT BAR — hidden by default ── */
 .rc-announce-bar {
-  display: none; /* hidden on load — no rc-active class */
+  display: none;
   background: var(--yellow);
   color: var(--offblack);
   align-items: center;
@@ -66,7 +77,7 @@ body { margin: 0; background: #fff; }
   line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
-.rc-announce-inner { display: flex; align-items: center; gap: 12px; flex: 1; flex-wrap: wrap; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
 .rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
@@ -106,7 +117,6 @@ body { margin: 0; background: #fff; }
 }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
-/* rc-pillar-hero-icon class sits on the <img> directly — no wrapper div */
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
@@ -166,7 +176,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 6px 4px;
   padding: 12px 20px 18px;
 }
-/* Scale nav: links are black on dark vermillion bg */
 .rc-sticky-link {
   color: #fff !important;
   text-decoration: none !important;
@@ -186,6 +195,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
 .rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
+/* Active item — map pin only, no persistent background */
+.rc-sticky-link-active { font-weight: 800; }
+.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #fff !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
@@ -210,7 +222,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 24px;
   align-items: center;
 }
-/* Armor overrides — border-bottom on base + hover */
 .rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
 .rc-guide a.rc-path-card:hover { border-color: var(--scale); border-bottom: 1px solid var(--scale) !important; box-shadow: 0 4px 16px rgba(255,88,16,.15); transform: translateY(-2px); text-decoration: none !important; }
 
@@ -244,7 +255,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   border-bottom: 2px solid var(--offblack) !important;
 }
 
-/* ── FOOTER NAV — grouped sections, pillar subpage variant ── */
+/* ── FOOTER NAV ── */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
@@ -260,6 +271,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
+  .rc-hero h1 { font-size: 1.8rem; }
   .rc-path-card { grid-template-columns: 1fr; gap: 16px; }
   .rc-path-arrow { margin-top: 4px; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
@@ -279,8 +291,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── ANNOUNCEMENT BAR — hidden on load (no rc-active class) ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
-        🗓️ <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
@@ -290,7 +303,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
       </div>
-      <!-- rc-pillar-hero-icon on the <img> directly — no wrapper div -->
       <img class="rc-pillar-hero-icon" src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale icon">
       <h1>Scale</h1>
       <p>Expand your business, launch new products, and optimize global payments and analytics with advanced insights and enterprise-grade security.</p>
@@ -304,7 +316,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <!-- Scale dark nav: white home icon -->
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
             </a>
@@ -318,131 +329,131 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- ── ADVANCED ANALYTICS & REPORTING ── -->
     <div id="analytics" class="rc-category">
-      <h2>Advanced Analytics &amp; Reporting</h2>
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Advanced analytics &amp; reporting</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
             <h3>Benchmarks</h3>
             <p>See how your subscription business stacks up. Learn how to interpret industry benchmarks for churn, LTV, and growth against your peers.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Churn Reporting</h3>
+            <h3>Churn reporting</h3>
             <p>Master the Churn Analysis dashboard. Understand the difference between net and gross churn and how to identify retention trends.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
             <h3>Payments Hub</h3>
             <p>Optimize your gateway performance. Use the Payments Hub to track transaction success rates and decline reasons across all methods.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Data Exports &amp; Acquisition Data</h3>
+            <h3>Data exports &amp; acquisition data</h3>
             <p>Take your data to go. Learn how to leverage Recurly's robust data exports and acquisition data to power your internal BI tools.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
 
     <!-- ── GLOBAL EXPANSION ── -->
     <div id="expansion" class="rc-category">
-      <h2>Global Expansion</h2>
+      <h2><i class="fa-solid fa-globe rc-fa-section"></i> Global expansion</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Currency &amp; Localization</h3>
+            <h3>Currency &amp; localization</h3>
             <p>Go global with ease. Configure multi-currency support and localize your checkout experience to meet international customer expectations.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Local Payment Methods</h3>
+            <h3>Local payment methods</h3>
             <p>Offer the methods your customers prefer. Learn how to enable and manage alternative payment methods (APMs) globally.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Tax &amp; Compliance</h3>
+            <h3>Tax &amp; compliance</h3>
             <p>Simplify complex tax requirements. Learn how Recurly automates tax calculation and collection across different jurisdictions.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Account Hierarchies</h3>
+            <h3>Account hierarchies</h3>
             <p>Manage complex B2B relationships. Organize accounts into parent-child hierarchies to handle consolidated billing and department-level management.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
 
     <!-- ── REVENUE OPTIMIZATION & SECURITY ── -->
     <div id="optimization" class="rc-category">
-      <h2>Revenue Optimization &amp; Security</h2>
+      <h2><i class="fa-solid fa-shield-halved rc-fa-section"></i> Revenue optimization &amp; security</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Fraud &amp; Chargeback Management</h3>
+            <h3>Fraud &amp; chargeback management</h3>
             <p>Protect your revenue. Implement advanced fraud prevention rules and learn best practices for managing and disputing chargebacks.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>Revenue Recognition</h3>
+            <h3>Revenue recognition</h3>
             <p>Automate your month-end. Learn how Recurly manages deferred revenue and streamlines your accounting workflows.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
           </div>
           <div class="rc-path-content">
-            <h3>App Management &amp; Integrations</h3>
+            <h3>App management &amp; integrations</h3>
             <p>Connect your stack. Learn how to manage third-party app integrations and scale your technical ecosystem with the Recurly API.</p>
           </div>
-          <div class="rc-path-arrow">Start Path →</div>
+          <div class="rc-path-arrow">Start path →</div>
         </a>
       </div>
     </div>
@@ -450,7 +461,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── BOTTOM CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3>👋 Need live guidance on scaling your business?</h3>
+        <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on scaling your business?</h3>
         <p>Bring your expansion and data questions directly to our experts during our weekly open-forum sessions.</p>
       </div>
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
@@ -460,15 +471,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
-        <!-- One rc-footer-section with on-page section anchors only -->
         <div class="rc-footer-section">
           <span class="rc-footer-label">Scale</span>
-          <a href="#analytics" class="rc-footer-link">Analytics &amp; Reporting</a>
-          <a href="#expansion" class="rc-footer-link">Global Expansion</a>
-          <a href="#optimization" class="rc-footer-link">Revenue Optimization</a>
+          <a href="#analytics" class="rc-footer-link">Analytics &amp; reporting</a>
+          <a href="#expansion" class="rc-footer-link">Global expansion</a>
+          <a href="#optimization" class="rc-footer-link">Revenue optimization</a>
         </div>
 
-        <!-- Utility row: Navigate Home (black icon) + Contact Support only -->
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
             <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
