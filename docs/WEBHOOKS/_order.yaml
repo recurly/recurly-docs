@@ -1,5 +1,4 @@
 - overview-webhooks
-- webhooks-states
 - automatic-retries
 - manual-retries
 - cross-site-request-forgery-csrf-for-rails-applications
