@@ -151,15 +151,15 @@ metadata:
 <div class="rn-checklist">
   <div class="rn-cl-head"><i class="fa-solid fa-circle-check" aria-hidden="true"></i><h3>Getting started checklist</h3></div>
   <div class="rn-cl-item">
-    <input type="checkbox" id="gs-1">
+    <input type="checkbox" id="gs-1" />
     <label for="gs-1">Open Payments Hub in your Recurly account<span>Analytics → Payments Hub → Overview</span></label>
   </div>
   <div class="rn-cl-item">
-    <input type="checkbox" id="gs-2">
+    <input type="checkbox" id="gs-2" />
     <label for="gs-2">Confirm your available dashboards are visible: Overview, Payment Processing, Account Updater, Payment Retry Recovery, and Fraud Prevention<span>All Payments Hub dashboards require Analytics permissions for visibility. Note: The Fraud Prevention dashboard is only visible if you're using Kount, and the Account Updater dashboard requires Account Updater to be enabled.</span></label>
   </div>
   <div class="rn-cl-item">
-    <input type="checkbox" id="gs-3">
+    <input type="checkbox" id="gs-3" />
     <label for="gs-3">Take note of the first number that catches your attention on the Overview dashboard<span>You'll dig into this in the next step</span></label>
   </div>
 </div>
