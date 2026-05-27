@@ -24,10 +24,39 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ── HOST-THEME BACKGROUND OVERRIDE — must win against ReadMe global theme ── */
+/* ── HOST-THEME BACKGROUND OVERRIDE ── */
 body { margin: 0; background: #ffffff !important; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
+/* G-2: Hero h1 yellow underline from .rm-Guides-SuperHub rule */
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+/* G-1: Polar font — wildcard ensures all descendants use it */
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 FONT RESTORE — attribute selectors (0,0,2,0) beat wildcard (0,0,1,0); must follow wildcard */
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+/* ── NAVIGATE MASTER ARMOR ──
+   Global CSS section 1.1 prose link rule: (0,0,6,2) with !important.
+   ReadMe wraps HTMLBlock in <p> so ALL Navigate <a> elements match it.
+   Mirroring four :not() exclusions + .rc-guide → (0,0,7,1).
+   All .rc-guide a.[class] overrides must be declared AFTER this block. ── */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
 
 .rc-guide {
   --yellow:    #FFD706;
@@ -39,32 +68,23 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --brightgray:#F1EFE3;
   --offwhite:  #FFFDF2;
   --retain:    #FF9D88;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  color: var(--darkgray);
+  color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── HOST-THEME ARMOR ── */
-.rc-guide a,
-.rc-guide a:link,
-.rc-guide a:visited,
-.rc-guide a:hover,
-.rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
-
 /* ── FONT AWESOME ICON HELPERS ── */
-.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-section { color: var(--offblack); font-size: 1rem; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
-/* ── ANNOUNCEMENT BAR — hidden by default ── */
+/* ── ANNOUNCEMENT BAR — hidden by default; no close button (ReadMe strips onclick) ── */
 .rc-announce-bar {
   background: var(--yellow);
   color: var(--offblack);
   display: none;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 20px;
   font-size: .88rem;
   font-weight: 600;
@@ -75,27 +95,39 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
-.rc-announce-link {
-  color: var(--offblack) !important;
+
+/* Announce link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-announce-link {
+  color: #0D0D0B !important;
   font-weight: 800;
-  text-decoration: none !important;
   white-space: nowrap;
   padding: 4px 12px;
   background: rgba(0,0,0,0.10);
   border-radius: 6px;
   transition: background 0.2s;
+  border-bottom: 0 !important;
 }
-.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
-.rc-announce-close {
-  background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer;
-  color: var(--offblack); padding: 0 2px; opacity: 0.45; transition: opacity 0.2s; flex-shrink: 0;
-}
-.rc-announce-close:hover { opacity: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rc-back-link { color: var(--gray); text-decoration: none !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; }
-.rc-back-link:hover { color: var(--orange); }
+
+/* Back link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link {
+  color: #807D73 !important;
+  font-weight: 700;
+  font-size: .9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color .2s;
+  border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
 
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
@@ -104,7 +136,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: var(--offblack);
+  background-color: #0D0D0B;
   background-size: cover;
   color: #fff;
   padding: 48px 40px 44px;
@@ -118,7 +150,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1.1rem; opacity: .85; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
-/* ── STICKY NAV — Retain salmon bg ── */
+/* ── STICKY NAV — Retain salmon background ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -162,9 +194,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-.rc-sticky-link {
-  color: var(--offblack) !important;
-  text-decoration: none !important;
+
+/* Nav links — (0,0,8,1); hex color required */
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link {
+  color: #0D0D0B !important;
   font-weight: 700;
   font-size: .83rem;
   letter-spacing: 0.4px;
@@ -176,50 +210,66 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  border-bottom: 0 !important;
 }
-.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-sticky-link-active { font-weight: 800; }
-.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+
+/* Active item — no persistent background; map pin icon identifies current page */
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
 .rc-category h2 {
-  font-size: 1.5rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
+  font-size: 1.5rem; font-weight: 800; margin: 0 0 24px; color: #0D0D0B;
   display: flex; align-items: center; gap: 12px;
 }
 .rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
 
-/* ── LEARNING PATH CARDS ── */
+/* ── LEARNING PATH CARDS — (0,0,8,1); hex border + child color overrides ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
-.rc-path-card {
+
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-path-card {
   background: var(--offwhite);
-  border: 1px solid var(--lightgray);
+  border: 1px solid #CCC9B8;
+  border-bottom: 1px solid #CCC9B8 !important;
   border-radius: 12px;
   padding: 20px 24px;
-  text-decoration: none !important;
-  color: inherit;
+  color: #32312D !important;
   transition: all .2s ease;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 24px;
   align-items: center;
 }
-.rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-path-card:hover {
-  border-color: var(--retain);
-  border-bottom: 1px solid var(--retain) !important;
-  box-shadow: 0 4px 16px rgba(255,157,136,.2);
+  border-color: #FF9D88;
+  border-bottom: 1px solid #FF9D88 !important;
+  box-shadow: 0 4px 16px rgba(255,157,136,0.20);
   transform: translateY(-2px);
 }
-.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
-.rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
-.rc-path-content { min-width: 0; }
-.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack); }
-.rc-path-content p { font-size: .92rem; color: var(--gray); line-height: 1.5; margin: 0; }
-.rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
-/* ── OFFICE HOURS CTA ── */
+.rc-path-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0;
+}
+.rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
+
+.rc-path-content { min-width: 0; }
+/* Child elements inside <a> must use hex + !important to override global tangerine inheritance */
+.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B !important; }
+.rc-path-content p { font-size: .92rem; color: #807D73 !important; line-height: 1.5; margin: 0; }
+.rc-path-arrow { color: #FF8200 !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
+
+/* ── OFFICE HOURS CTA — brightgray background ── */
 .rc-starter-cta {
   background: var(--brightgray);
   border: 1px solid var(--lightgray);
@@ -232,41 +282,59 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   margin-bottom: 56px;
 }
 .rc-starter-text { flex: 1; }
-.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
-.rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
+/* h3 must be display: block (default) so .rc-fa-light renders above text */
+.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #0D0D0B; }
+.rc-starter-text p { margin: 0; font-size: .95rem; color: #32312D; line-height: 1.5; }
 
-/* ── SECONDARY BUTTON — canonical pattern: lightgray base → offblack hover ── */
+/* Secondary button — (0,0,8,1); explicit hex border-bottom on base and hover */
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-secondary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   background: transparent;
-  color: var(--offblack) !important;
-  text-decoration: none !important;
+  color: #0D0D0B !important;
   padding: 11px 22px;
   border-radius: 10px;
   font-weight: 700;
   font-size: .9rem;
-  border: 2px solid var(--lightgray);
-  border-bottom: 2px solid var(--lightgray) !important;
+  border: 2px solid #CCC9B8;
+  border-bottom: 2px solid #CCC9B8 !important;
   white-space: nowrap;
   transition: all .2s;
   flex-shrink: 0;
   align-self: center;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-secondary:hover {
-  border: 2px solid var(--offblack) !important;
-  border-bottom: 2px solid var(--offblack) !important;
-  color: var(--offblack) !important;
+  border: 2px solid #0D0D0B !important;
+  border-bottom: 2px solid #0D0D0B !important;
+  color: #0D0D0B !important;
 }
 
 /* ── FOOTER NAV — grouped sections ── */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
-.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; }
-.rc-footer-link:hover { color: var(--orange); }
+.rc-footer-label {
+  font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px;
+  color: #32312D; background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px;
+}
+
+/* Footer links — (0,0,8,1); hex color required */
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important;
+  font-weight: 600;
+  font-size: .88rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color .2s ease;
+  border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
@@ -300,17 +368,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR — add rc-active class to show ── -->
+    <!-- ── ANNOUNCEMENT BAR — add rc-active class to show; no close button ── -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
-      <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
-    <!-- ── HERO — pillar subpage: logo + pillar icon + h1 + subtitle, no stats ── -->
+    <!-- ── HERO ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly" class="rc-logo-image">
@@ -320,10 +387,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Reduce involuntary churn, recover revenue, and keep subscribers engaged with intelligent tools that protect your bottom line.</p>
     </div>
 
-    <!-- ── STICKY NAV — collapsed, section anchors only ── -->
+    <!-- ── STICKY NAV — pillar subpage: section anchors only, collapsed ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
-        <span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span>
+        <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
@@ -471,7 +538,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV — pillar subpage: one section with on-page anchors + utility row ── -->
+    <!-- ── FOOTER NAV — pillar subpage: one section with on-page anchors + utility row only ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
