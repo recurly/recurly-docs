@@ -19,12 +19,16 @@ next:
     Plans are the blueprint for your subscription business — they define what your customers subscribe to, how often they're billed, and how much they pay. Whether your model includes free trials, setup fees, ramp pricing, or price segments, Recurly's plans are built to match your business exactly. There's no limit to the number of plans you can create.
   </div>
 
-  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
+  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
 
   <div class="rp-card">
+
     ### Plans dashboard
 
-    Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard</a> lists all plans defined in your Recurly account. Select any plan name to view its details, edit it, or link to its <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration or <a href="/docs/hosted" target="_blank">Hosted Payment Page</a>.
+```
+Your <a href="https://app.recurly.com/go/plans" target="_blank">plans dashboard</a> lists all plans defined in your Recurly account. Select any plan name to view its details, edit it, or link to its <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration or <a href="/docs/hosted" target="_blank">Hosted Payment Page</a>.
+```
+
   </div>
 
   <div class="rp-toc">
@@ -220,9 +224,9 @@ Price segments let you define multiple price points for a single plan within the
 
 ### How price segments work
 
-* Recurly stores all segment prices and the default price on the plan.
-* You decide which price to apply (by geography, campaign, experiment bucket, etc.) — Recurly doesn't choose the segment for you.
-* Segment data (code and price) is returned via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment" target="_blank">v3 API</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js</a> so your checkout can display the intended price.
+- Recurly stores all segment prices and the default price on the plan.
+- You decide which price to apply (by geography, campaign, experiment bucket, etc.) — Recurly doesn't choose the segment for you.
+- Segment data (code and price) is returned via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#tag/price_segment" target="_blank">v3 API</a> and <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js</a> so your checkout can display the intended price.
 
 ### Implement price segments
 
@@ -249,7 +253,7 @@ Price segments let you define multiple price points for a single plan within the
 </div>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb" aria-hidden="true" /> Tip</strong> For A/B tests, name segments clearly — for example, <code>exp-a</code> and <code>exp-b</code> — and log the chosen segment code with your analytics events.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong> For A/B tests, name segments clearly — for example, <code>exp-a</code> and <code>exp-b</code> — and log the chosen segment code with your analytics events.</div>
 </div>
 
 ### Notes and limits
@@ -265,11 +269,11 @@ Price segments let you define multiple price points for a single plan within the
 
 ### Developer references
 
-* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments" target="_blank">/price_segment</a>
-* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_plans" target="_blank">/plans</a>
-* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription" target="_blank">/subscriptions</a>
-* <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">/create_subscription_change</a>
-* <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js — surface price segments in your front end</a>
+- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_price_segments" target="_blank">/price\_segment</a>
+- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/list_plans" target="_blank">/plans</a>
+- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription" target="_blank">/subscriptions</a>
+- <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_subscription_change" target="_blank">/create\_subscription\_change</a>
+- <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurlyjs#/" target="_blank">Recurly.js — surface price segments in your front end</a>
 
 ## Billing details
 
@@ -370,18 +374,21 @@ Check the boxes to enable email communication for specific billing events. You c
 <div class="rp-card">
   ### Checkout configuration
 
-  After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration to direct customers to purchase it.
+After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration to direct customers to purchase it.
 
   <span class="rp-zoom">
     <input type="checkbox" id="zoom-checkout-config" class="rp-zoom-toggle" />
 
-    <label for="zoom-checkout-config">
-      <img class="rp-zoom-img" src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="Checkout configuration button" style={{display:"block", width:"280px", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
-    </label>
+```
+<label for="zoom-checkout-config">
+  <img class="rp-zoom-img" src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="Checkout configuration button" style={{display:"block", width:"280px", margin:"16px auto", border:"1px solid #CCC9B8", borderRadius:"8px"}} />
+</label>
 
-    <label for="zoom-checkout-config" class="rp-zoom-overlay">
-      <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="" />
-    </label>
+<label for="zoom-checkout-config" class="rp-zoom-overlay">
+  <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="" />
+</label>
+```
+
   </span>
 </div>
 
@@ -419,11 +426,11 @@ Check the boxes to enable email communication for specific billing events. You c
 </div>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true" /> Plan name changes apply to existing subscriptions</strong> Updating a plan's name updates it site-wide. Existing subscriptions will show the new name in the Admin UI, and future invoice line items will use the updated name.</div>
+  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Plan name changes apply to existing subscriptions</strong> Updating a plan's name updates it site-wide. Existing subscriptions will show the new name in the Admin UI, and future invoice line items will use the updated name.</div>
 </div>
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
+  <div><strong><i class="fa fa-info-circle" aria-hidden="true"></i> Note</strong> Versioned plan terms — such as price, billing interval, and setup fees — apply to new subscribers only. Existing subscribers keep the terms that were in effect when they signed up.</div>
 </div>
 
 # Duplicate a plan
@@ -465,7 +472,7 @@ Check the boxes to enable email communication for specific billing events. You c
 </div>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong><i class="fa fa-lightbulb" aria-hidden="true" /> Tip</strong> You can also duplicate a plan immediately after creating it — the success confirmation includes a duplicate option.</div>
+  <div><strong><i class="fa fa-lightbulb" aria-hidden="true"></i> Tip</strong> You can also duplicate a plan immediately after creating it — the success confirmation includes a duplicate option.</div>
 </div>
 
 # Delete a plan
@@ -500,5 +507,7 @@ Check the boxes to enable email communication for specific billing events. You c
 </span>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true" /> Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
+  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
 </div>
+
+<br />
