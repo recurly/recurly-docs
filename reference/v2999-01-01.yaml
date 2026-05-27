@@ -11131,6 +11131,45 @@ components:
           type: string
           description: An identifier for a specific payment gateway.
           maxLength: 13
+    LineItemDiscount:
+      type: object
+      title: Line item discount
+      description: A discount applied to a line item charge by a coupon redemption.
+      properties:
+        object:
+          type: string
+          title: Object type
+          description: Will always be `line_item_discount`.
+          readOnly: true
+        coupon_id:
+          type: string
+          title: Coupon ID
+          description: The ID of the coupon that generated this discount.
+          readOnly: true
+        coupon_redemption_id:
+          type: string
+          title: Coupon Redemption ID
+          description: The ID of the coupon redemption that generated this discount.
+          readOnly: true
+        order_applied:
+          type: integer
+          title: Order applied
+          description: >-
+            The order in which this discount was applied when multiple coupons
+            were redeemed.
+          readOnly: true
+        discount_amount:
+          type: number
+          format: float
+          title: Discount amount
+          description: The amount discounted on this line item by this coupon redemption.
+          readOnly: true
+        currency:
+          type: string
+          title: Currency
+          description: 3-letter ISO 4217 currency code.
+          maxLength: 3
+          readOnly: true
     Coupon:
       type: object
       properties:
@@ -11238,6 +11277,7 @@ components:
             - day
             - month
             - week
+            - billing_period
         free_trial_amount:
           type: integer
           title: Free trial amount
@@ -11367,12 +11407,15 @@ components:
               description: >-
                 Description of the unit of time the coupon is for. Used with
                 `free_trial_amount` to determine the duration of time the coupon
-                is for.  Required if `discount_type` is `free_trial`.
+                is for. Required if `discount_type` is `free_trial`. Use
+                `billing_period` to grant a free trial for a number of billing
+                cycles.
               type: string
               enum:
                 - day
                 - month
                 - week
+                - billing_period
             free_trial_amount:
               type: integer
               title: Free trial amount
@@ -11580,12 +11623,15 @@ components:
           properties:
             unit:
               title: Trial unit
-              description: Temporal unit of the free trial
+              description: >-
+                Temporal unit of the free trial. When `billing_period`, `length`
+                represents the number of billing cycles.
               type: string
               enum:
                 - day
                 - month
                 - week
+                - billing_period
             length:
               type: integer
               title: Trial length
@@ -13641,6 +13687,12 @@ components:
           format: float
           title: Discount
           description: Total discounts applied to this invoice.
+        coupon_redemptions:
+          type: array
+          title: Coupon Redemptions
+          description: The coupon redemptions applied to this invoice.
+          items:
+            $ref: '#/components/schemas/CouponRedemptionMini'
         subtotal:
           type: number
           format: float
@@ -14587,7 +14639,15 @@ components:
           type: number
           format: float
           title: Discount
-          description: The discount applied to the line item.
+          description: The sum of all discounts applied to the line item.
+        discounts:
+          type: array
+          title: Discounts
+          description: >-
+            The breakdown of discounts applied to the line item by coupon
+            redemption.
+          items:
+            $ref: '#/components/schemas/LineItemDiscount'
         liability_gl_account_code:
           type: string
           title: Accounting code for the ledger account.
