@@ -14,6 +14,13 @@ metadata:
     - Recurly Analytics dashboard
   robots: index
 ---
+Page type: Learning Path overview
+Title: Payments Hub
+Metadata description: Payments Hub gives you a unified view of your payment performance across every connected gateway, method, and value-add service — directly inside Recurly.
+Pillar: Scale
+
+---PASTE INTO EDITOR BELOW---
+
 <div class="rn-guide">
 
 <div class="rn-announce" id="rn-announce-bar">
@@ -126,7 +133,15 @@ Before Payments Hub, understanding your payment performance meant logging into e
   </div>
 </div>
 
-<img src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" style={{width:"100%",borderRadius:"14px",border:"1px solid #CCC9B8",marginBottom:"24px"}} />
+<span class="rp-zoom">
+<input type="checkbox" class="rp-zoom-toggle" id="zoom-payments-hub-nav" />
+<label for="zoom-payments-hub-nav">
+<img class="rp-zoom-img" src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" style={{width:"100%",borderRadius:"14px",border:"1px solid #CCC9B8",marginBottom:"24px"}} />
+</label>
+<label for="zoom-payments-hub-nav" class="rp-zoom-overlay">
+<img src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" />
+</label>
+</span>
 
 <div class="rn-callout rn-callout-warn">
   <span class="rn-callout-icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
@@ -208,13 +223,3 @@ Before Payments Hub, understanding your payment performance meant logging into e
 </div>
 
 </div>
-
-***
-
-📋 TODO before publishing:
-
-- [ ] **Back link URL** — `/docs/navigate-scale` is a placeholder; confirm the actual Scale pillar subpage slug.
-- [ ] **Hero stats** — LP overview template calls for three stats (e.g. payment recovery rate, volume metrics). Source had none; add values from Recurly's payments data if available.
-- [ ] **Office Hours CTA** — belongs on the Review & Resources page (step 6), not this page.
-
-<br />
