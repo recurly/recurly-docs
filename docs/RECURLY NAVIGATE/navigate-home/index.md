@@ -28,14 +28,17 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ── HOST-THEME BACKGROUND OVERRIDE — must be first ── */
+/* ── HOST-THEME BACKGROUND OVERRIDE ── */
 body { background: #ffffff !important; }
 
-/* ── GLOBAL CSS IMMUNITY BLOCK — shields Navigate from ReadMe global overrides ── */
-/* G-2: Prevent global guide-page rule from adding yellow underline to hero h1 */
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-/* G-1: Reinforce Polar font in case body !important cascades through */
 .rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
@@ -49,237 +52,210 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --brightgray:#F1EFE3;
   --offwhite:  #FFFDF2;
   font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: var(--darkgray);
+  color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── HOST-THEME ARMOR — resets ReadMe's global link styles ── */
+/* ─────────────────────────────────────────────────────────────────
+   NAVIGATE MASTER ARMOR
+   Global CSS section 1.1 uses four :not() clauses → specificity (0,0,6,2).
+   Mirroring those :not() exclusions + .rc-guide gives us (0,0,7,1) for
+   the broad armor and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
+   ───────────────────────────────────────────────────────────────── */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
 .rc-guide a:hover,
-.rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
+.rc-guide a:active {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
 
 /* ── LAYOUT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
-.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
-/* Icons on dark/offblack backgrounds — must use hex + !important */
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-/* Icons on light/brightgray/offwhite backgrounds */
-.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
-/* Icons inline in section h2/h3 headings */
-.rc-fa-section { color: var(--offblack); font-size: 1rem; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
-/* ── ANNOUNCEMENT BAR — hidden by default, show with rc-active ── */
+/* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
-  display: none;
-  background: var(--yellow);
-  color: var(--offblack);
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  font-size: .88rem;
-  font-weight: 600;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  gap: 12px;
-  line-height: 1.4;
+  display: none; background: #FFD706; color: #0D0D0B;
+  align-items: center; justify-content: space-between;
+  padding: 10px 20px; font-size: .88rem; font-weight: 600;
+  border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
-.rc-announce-link {
-  color: var(--offblack) !important;
-  font-weight: 800;
-  text-decoration: none !important;
-  white-space: nowrap;
-  padding: 4px 12px;
-  background: rgba(0,0,0,0.10);
-  border-radius: 6px;
-  transition: background 0.2s;
+/* Announce link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-announce-link {
+  color: #0D0D0B !important; font-weight: 800;
+  white-space: nowrap; padding: 4px 12px;
+  background: rgba(0,0,0,0.10); border-radius: 6px;
+  transition: background 0.2s; border-bottom: 0 !important;
 }
-.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
-.rc-announce-close {
-  background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer;
-  color: var(--offblack); padding: 0 2px; opacity: 0.45; transition: opacity 0.2s; flex-shrink: 0;
-}
-.rc-announce-close:hover { opacity: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
 /* ── HERO ── */
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: var(--offblack);
-  background-size: cover;
-  color: #fff;
-  padding: 48px 40px 44px;
-  text-align: center;
-  border-radius: 16px;
-  margin-bottom: 0;
+  background-color: #0D0D0B; background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center;
+  border-radius: 16px; margin-bottom: 0;
 }
-
 .rc-brand-header { display: flex; align-items: center; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; width: auto; display: block; }
-
 .rc-home-title-block { margin-top: 44px; }
-.rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 24px; }
-.rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
+.rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2 !important; margin: 0 0 24px; }
+.rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8; line-height: 1.6; }
 
 /* Hero stats */
 .rc-hero-stats {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
-  border-top: 1px solid rgba(255,255,255,0.12);
-  padding-top: 24px; margin-top: 4px;
+  border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px;
 }
 .rc-hero-stat { text-align: center; padding: 0 16px; }
 .rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); line-height: 1.3; }
+.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #CCC9B8; line-height: 1.3; }
 
-/* ── STICKY NAV — collapsed on load ── */
+/* ── STICKY NAV ── */
 details.rc-sticky-nav-wrap {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--brightgray);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  margin: 24px 0 48px 0;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.08);
-  overflow: hidden;
+  position: sticky; top: 0; z-index: 100; background-color: #F1EFE3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0;
+  border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
 }
 details.rc-sticky-nav-wrap > summary {
-  list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none;
+  list-style: none; display: flex; align-items: center;
+  padding: 15px 24px; cursor: pointer; user-select: none;
 }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
 .rc-nav-toggle-label {
   display: inline-flex; align-items: center; gap: 8px;
   font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase;
-  color: var(--offblack);
+  color: #0D0D0B;
 }
-.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+.rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-.rc-sticky-link {
-  color: var(--offblack) !important; text-decoration: none !important;
-  font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase;
-  padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap;
-  display: inline-flex; align-items: center; gap: 6px;
+/* Nav links — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link {
+  color: #0D0D0B !important; font-weight: 700; font-size: .83rem;
+  letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px;
+  border-radius: 7px; transition: all .18s; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
-.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 20px; height: 20px; border-radius: 50%;
-  background: var(--offblack); color: var(--yellow);
-  font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1;
-}
-.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
-/* Active item — no persistent background; map pin icon identifies current page */
-.rc-sticky-link-active { font-weight: 800; }
-.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rc-guide a.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
+.rc-guide a.rc-sticky-link-active { font-weight: 800; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
 /* ── SECTION HEADER ── */
 .rc-sec-header { text-align: center; margin-bottom: 24px; }
-.rc-sec-header h2 { font-size: 2rem; font-weight: 800; margin: 0 0 8px; color: var(--offblack); }
-.rc-sec-header p { font-size: .95rem; color: var(--gray); margin: 0; }
+.rc-sec-header h2 { font-size: 2rem; font-weight: 800; margin: 0 0 8px; color: #0D0D0B; }
+.rc-sec-header p { font-size: .95rem; color: #807D73; margin: 0; }
 
-/* ── GETTING STARTED CTA — dark card, hex + !important required ── */
+/* ── GETTING STARTED CTA — dark card ── */
 .rc-starter-cta {
-  background: #0D0D0B !important;
-  border: 2px solid #FFD706 !important;
-  border-radius: 16px;
-  padding: 28px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 32px;
+  background: #0D0D0B !important; border: 2px solid #FFD706 !important;
+  border-radius: 16px; padding: 28px 32px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; margin-bottom: 32px;
 }
-/* h3 must be display:block (default) so rc-fa-dark icon renders above text */
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #FFD706 !important; }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: #CCC9B8 !important; line-height: 1.5; }
-
-/* Primary button — rc-guide a.[classname] pattern for armor specificity */
+/* Primary button — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-primary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-primary {
-  background: #FFD706 !important;
-  color: #0D0D0B !important;
-  text-decoration: none !important;
-  padding: 12px 26px;
-  border-radius: 10px;
-  font-weight: 800;
-  font-size: .9rem;
-  white-space: nowrap;
-  transition: all .2s;
-  border: 2px solid #FFD706 !important;
-  border-bottom: 2px solid #FFD706 !important;
-  display: inline-flex; align-items: center;
+  background: #FFD706 !important; color: #0D0D0B !important;
+  padding: 12px 26px; border-radius: 10px; font-weight: 800; font-size: .9rem;
+  white-space: nowrap; transition: all .2s; display: inline-flex; align-items: center;
+  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-primary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-primary:hover {
-  background: transparent !important;
-  color: #FFD706 !important;
-  border: 2px solid #FFD706 !important;
-  border-bottom: 2px solid #FFD706 !important;
+  background: transparent !important; color: #FFD706 !important;
+  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
 }
 
 /* ── HUB GRID ── */
 .rc-hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
-.rc-hub-card {
-  background: var(--offwhite); border: 1px solid var(--lightgray);
-  border-radius: 16px; padding: 32px 24px;
-  text-decoration: none !important; color: inherit;
-  transition: all .2s ease; display: flex; flex-direction: column; align-items: center; text-align: center;
+/* Hub cards — (0,0,8,1); border-bottom restore overrides armor ✓ */
+.rm-Markdown.markdown-body .rc-guide a.rc-hub-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-hub-card {
+  background: #FFFDF2; border: 1px solid #CCC9B8;
+  border-bottom: 1px solid #CCC9B8 !important;
+  border-radius: 16px; padding: 32px 24px; color: #32312D !important;
+  transition: all .2s ease; display: flex; flex-direction: column;
+  align-items: center; text-align: center;
 }
-.rc-guide a.rc-hub-card { border-bottom: 1px solid var(--lightgray) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-hub-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-hub-card:hover {
-  border-color: var(--yellow);
-  border-bottom: 1px solid var(--yellow) !important;
-  box-shadow: 0 8px 24px rgba(255,215,6,.15);
-  transform: translateY(-4px);
+  border-color: #FFD706; border-bottom: 1px solid #FFD706 !important;
+  box-shadow: 0 8px 24px rgba(255,215,6,.15); transform: translateY(-4px);
+  color: #32312D !important;
 }
 .rc-hub-icon { width: 64px; height: 64px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
 .rc-hub-icon img { width: 32px; height: 32px; object-fit: contain; }
-.rc-hub-card h3 { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: var(--offblack); }
-.rc-hub-card p { font-size: .9rem; color: var(--gray); line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-hub-arrow { margin-top: 20px; color: var(--orange); font-weight: 700; font-size: .9rem; }
+.rc-hub-card h3 { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #0D0D0B !important; }
+.rc-hub-card p { font-size: .9rem; color: #807D73 !important; line-height: 1.5; margin: 0; flex-grow: 1; }
+.rc-hub-arrow { margin-top: 20px; color: #FF8200 !important; font-weight: 700; font-size: .9rem; }
 
 /* ── FOOTER SUMMARY ── */
 .rc-footer-summary {
-  background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 16px;
+  background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 16px;
   padding: 40px; margin: 48px auto 0; text-align: center; max-width: 900px;
   display: flex; flex-direction: column; align-items: center; gap: 16px;
 }
-.rc-footer-summary h3 { font-size: 1.5rem; font-weight: 800; color: var(--offblack); margin: 0; }
-.rc-footer-summary p { color: var(--darkgray); font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
-.rc-support-link {
-  display: inline-block; color: var(--orange); font-weight: 700;
-  text-decoration: none !important; padding: 10px 20px;
-  background: rgba(255,130,0,0.1); border-radius: 8px; transition: all 0.2s ease;
+.rc-footer-summary h3 { font-size: 1.5rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-footer-summary p { color: #32312D; font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 750px; }
+/* Support link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-support-link {
+  display: inline-block; color: #FF8200 !important; font-weight: 700;
+  padding: 10px 20px; background: rgba(255,130,0,0.1); border-radius: 8px;
+  transition: all 0.2s ease; border-bottom: 0 !important;
 }
-.rc-support-link:hover { background: var(--orange); color: white !important; transform: translateY(-2px); }
+.rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-support-link:hover {
+  background: #FF8200 !important; color: #ffffff !important; transform: translateY(-2px);
+}
 
-/* ── FOOTER NAV — grouped rc-footer-section structure ── */
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+/* ── FOOTER NAV ── */
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label {
-  font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px;
-  color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px;
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+/* Footer links — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important; font-weight: 600; font-size: .88rem;
+  transition: color .2s ease; display: inline-flex; align-items: center;
+  gap: 6px; border-bottom: 0 !important;
 }
-.rc-footer-link {
-  color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .88rem;
-  transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px;
-}
-.rc-footer-link:hover { color: var(--orange); }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
-.rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+.rc-guide a.rc-footer-link:hover img { opacity: 1; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
 
 /* ── CONSOLIDATED RESPONSIVE BLOCK ── */
 @media(max-width:900px){ .rc-hub-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -291,21 +267,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
   .rc-starter-cta { flex-direction: column; align-items: flex-start; }
   .rc-hub-grid { grid-template-columns: 1fr; }
-  .rc-announce-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .rc-announce-bar.rc-active { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 </style>
 
 <div class="rc-guide">
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR — hidden; add class rc-active to show ── -->
-    <div class="rc-announce-bar" id="rcAnnounce">
+    <!-- ── ANNOUNCEMENT BAR (hidden — add rc-active to show) ── -->
+    <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
-      <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
     <!-- ── HERO ── -->
@@ -324,7 +299,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
         <div class="rc-hero-stat">
           <div class="rc-hero-stat-num">Quarterly</div>
-          <div class="rc-hero-stat-label">Merchant Spotlight</div>
+          <div class="rc-hero-stat-label">Merchant spotlight</div>
         </div>
         <div class="rc-hero-stat">
           <div class="rc-hero-stat-num">24/7</div>
@@ -333,7 +308,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── STICKY NAV — collapsed on load, title = "Navigation Menu" ── -->
+    <!-- ── NAVIGATION MENU — sticky + collapsed ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -341,7 +316,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <!-- Active page: black map pin replaces badge entirely — no badge shown -->
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link rc-sticky-link-active">
               <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Navigate Home
             </a>
@@ -418,7 +392,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="mailto:support@recurly.com" class="rc-support-link">Reach out to support@recurly.com →</a>
     </div>
 
-    <!-- ── FOOTER NAV — grouped rc-footer-section structure ── -->
+    <!-- ── FOOTER NAV ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
