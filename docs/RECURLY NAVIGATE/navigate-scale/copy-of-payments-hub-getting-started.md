@@ -14,13 +14,6 @@ metadata:
     - Recurly Analytics dashboard
   robots: index
 ---
-Page type: Learning Path overview
-Title: Payments Hub
-Metadata description: Payments Hub gives you a unified view of your payment performance across every connected gateway, method, and value-add service — directly inside Recurly.
-Pillar: Scale
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rn-guide">
 
 <div class="rn-announce" id="rn-announce-bar">
@@ -223,3 +216,5 @@ Before Payments Hub, understanding your payment performance meant logging into e
 </div>
 
 </div>
+
+<br />
