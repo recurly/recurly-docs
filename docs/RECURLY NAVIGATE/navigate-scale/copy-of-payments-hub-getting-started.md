@@ -25,38 +25,15 @@ metadata:
   <div class="rn-hero-title"><h1 style={{color:"#FFFDF2"}}>Payments Hub</h1></div>
   <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
 </div>
-<details class="rn-nav rn-nav-dark" id="rn-page-nav">
-  <summary>
-    <span class="rn-nav-title">Navigation Menu</span>
-    <span class="rn-nav-chevron">▾</span>
-  </summary>
-  <div class="rn-nav-body">
-    <div class="rn-nav-item">
-      <a href="/docs/navigate-home"><img class="rn-nav-icon" src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt="" /> Navigate Home</a>
-    </div>
-    <div class="rn-nav-item rn-active">
-      <a href="/docs/navigate-scale-payments-hub"><img class="rn-nav-icon" src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt="" /> Payments Hub</a>
-    </div>
-    <div class="rn-nav-item">
-      <a href="/docs/navigate-scale-payments-hub-overview"><span class="rn-nav-badge">1</span> Overview</a>
-    </div>
-    <div class="rn-nav-item">
-      <a href="/docs/navigate-scale-payments-hub-payment-processing"><span class="rn-nav-badge">2</span> Payment processing</a>
-    </div>
-    <div class="rn-nav-item">
-      <a href="/docs/navigate-scale-payments-hub-account-updater"><span class="rn-nav-badge">3</span> Account updater</a>
-    </div>
-    <div class="rn-nav-item">
-      <a href="/docs/navigate-scale-payments-hub-payment-retries"><span class="rn-nav-badge">4</span> Payment retry recovery</a>
-    </div>
-    <div class="rn-nav-item">
-      <a href="/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rn-nav-badge">5</span> Fraud prevention</a>
-    </div>
-    <div class="rn-nav-item">
-      <a href="/docs/navigate-scale-payments-hub-review-resources"><span class="rn-nav-badge">6</span> Review &amp; resources</a>
-    </div>
-  </div>
-</details>
+<nav class="rn-nav">
+  <a class="rn-active" href="/docs/navigate-scale-payments-hub">Payments Hub</a>
+  <a href="/docs/navigate-scale-payments-hub-overview"><span class="rn-nav-badge">1</span> Overview</a>
+  <a href="/docs/navigate-scale-payments-hub-payment-processing"><span class="rn-nav-badge">2</span> Payment processing</a>
+  <a href="/docs/navigate-scale-payments-hub-account-updater"><span class="rn-nav-badge">3</span> Account updater</a>
+  <a href="/docs/navigate-scale-payments-hub-payment-retries"><span class="rn-nav-badge">4</span> Payment retry recovery</a>
+  <a href="/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rn-nav-badge">5</span> Fraud prevention</a>
+  <a href="/docs/navigate-scale-payments-hub-review-resources"><span class="rn-nav-badge">6</span> Review &amp; resources</a>
+</nav>
 <div class="rn-sec-head">
   <div class="rn-sec-icon"><i class="fa-solid fa-chart-bar" aria-hidden="true"></i></div>
   <div>
