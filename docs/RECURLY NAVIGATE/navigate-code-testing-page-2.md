@@ -13,11 +13,11 @@ metadata:
 body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
-/* G-2: Prevent global guide-page rule from adding yellow underline to hero h1 */
+/* G-2: Prevent guide-page rule from adding yellow underline to hero h1 */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-/* G-1: Enforce Polar font everywhere inside Navigate */
+/* G-1: Polar font everywhere inside Navigate */
 .rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-/* FA6 FONT RESTORE — must come AFTER the wildcard and use higher specificity (0,0,2,0 beats 0,0,1,0) */
+/* FA6 FONT RESTORE — attr selectors = (0,0,2,0), beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
@@ -35,79 +35,68 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --brightgray:#F1EFE3;
   --offwhite:  #FFFDF2;
   font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
-  color: var(--darkgray);
+  color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── HOST-THEME ARMOR — upgraded to beat global ReadMe link rules ──
-   Added: .rm-Guides-SuperHub prefix raises specificity to (0,0,2,1) to match global rules
-   Added: color: inherit so global tangerine link color doesn't bleed through
-   Added: text-decoration-line: none as explicit sub-property override
-   NOTE: All .rc-guide a.[classname] border/color overrides MUST be declared AFTER this block ── */
+/* ── HOST-THEME ARMOR ──
+   Stacks ReadMe wrapper classes to reach specificity (0,0,4,1) —
+   beats global rules that use .rm-Markdown.markdown-body a (0,0,2,1)
+   even if global CSS loads dynamically after our <style>.
+   color is NOT set here — every link type sets its own explicit hex color below.
+   All .rc-guide a.[class] border/color overrides must come AFTER this block. ── */
+.rm-Guides-SuperHub .rm-Markdown.markdown-body .rc-guide a,
+.rm-Guides-SuperHub .rm-Markdown .rc-guide a,
 .rm-Guides-SuperHub .rc-guide a,
+.rm-Markdown.markdown-body .rc-guide a,
 .rm-Article .rc-guide a,
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
 .rc-guide a:hover,
 .rc-guide a:active {
-  border-bottom: 0 !important;
   text-decoration: none !important;
   text-decoration-line: none !important;
-  color: inherit !important;
+  border-bottom: 0 !important;
 }
 
 /* ── FONT AWESOME ICON HELPERS ── */
-.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-section { color: var(--offblack); font-size: 1rem; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
 /* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
-  display: none;
-  background: var(--yellow);
-  color: var(--offblack);
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  font-size: .88rem;
-  font-weight: 600;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  gap: 12px;
-  line-height: 1.4;
+  display: none; background: #FFD706; color: #0D0D0B;
+  align-items: center; justify-content: space-between;
+  padding: 10px 20px; font-size: .88rem; font-weight: 600;
+  border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link,
 .rc-guide a.rc-announce-link {
-  color: var(--offblack) !important;
-  font-weight: 800;
-  text-decoration: none !important;
-  white-space: nowrap;
-  padding: 4px 12px;
-  background: rgba(0,0,0,0.10);
-  border-radius: 6px;
-  transition: background 0.2s;
-  border-bottom: 0 !important;
+  color: #0D0D0B !important; font-weight: 800;
+  text-decoration: none !important; text-decoration-line: none !important;
+  white-space: nowrap; padding: 4px 12px;
+  background: rgba(0,0,0,0.10); border-radius: 6px;
+  transition: background 0.2s; border-bottom: 0 !important;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link,
 .rc-guide a.rc-back-link {
-  color: var(--gray) !important;
-  text-decoration: none !important;
-  font-weight: 700;
-  font-size: .9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: color .2s;
-  border-bottom: 0 !important;
+  color: #807D73 !important; text-decoration: none !important; text-decoration-line: none !important;
+  font-weight: 700; font-size: .9rem; display: inline-flex;
+  align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important;
 }
-.rc-guide a.rc-back-link:hover { color: var(--orange) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
 
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
@@ -116,16 +105,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: var(--offblack);
-  background-size: cover;
-  color: #fff;
-  padding: 48px 40px 44px;
-  text-align: center;
-  border-radius: 16px;
-  margin-bottom: 0;
+  background-color: #0D0D0B; background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center;
+  border-radius: 16px; margin-bottom: 0;
 }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: #FFFDF2 !important; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
@@ -133,7 +118,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 /* ── STICKY NAV — Launch (brightgray bg), collapsed ── */
 details.rc-sticky-nav-wrap {
   position: sticky; top: 0; z-index: 100;
-  background-color: var(--brightgray);
+  background-color: #F1EFE3;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
@@ -147,90 +132,97 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
 .rc-nav-toggle-label {
   display: inline-flex; align-items: center; gap: 8px;
   font-weight: 800; font-size: .88rem; letter-spacing: 0.6px;
-  text-transform: uppercase; color: var(--offblack);
+  text-transform: uppercase; color: #0D0D0B;
 }
-.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+.rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link,
 .rc-guide a.rc-sticky-link {
-  color: var(--offblack) !important; text-decoration: none !important;
+  color: #0D0D0B !important; text-decoration: none !important; text-decoration-line: none !important;
   font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase;
   padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap;
   display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
-.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rc-guide a.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rc-guide a.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
 .rc-guide a.rc-sticky-link-active { font-weight: 800; }
-.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
 .rc-category h2 {
-  font-size: 1.5rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
+  font-size: 1.5rem; font-weight: 800; margin: 0 0 24px; color: #0D0D0B;
   display: flex; align-items: center; gap: 12px;
 }
-.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card,
 .rc-guide a.rc-path-card {
-  background: var(--offwhite);
-  border: 1px solid var(--lightgray);
-  border-bottom: 1px solid var(--lightgray) !important;
+  background: #FFFDF2; border: 1px solid #CCC9B8;
+  border-bottom: 1px solid #CCC9B8 !important;
   border-radius: 12px; padding: 20px 24px;
-  text-decoration: none !important; color: var(--darkgray) !important;
-  transition: all .2s ease; display: grid;
-  grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
+  text-decoration: none !important; text-decoration-line: none !important;
+  color: #32312D !important; transition: all .2s ease;
+  display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:hover,
 .rc-guide a.rc-path-card:hover {
-  border-color: var(--lightgray);
-  border-bottom: 1px solid var(--lightgray) !important;
+  border: 1px solid #CCC9B8; border-bottom: 1px solid #CCC9B8 !important;
   box-shadow: 0 4px 16px rgba(204,201,184,.25);
-  transform: translateY(-2px);
-  color: var(--darkgray) !important;
+  transform: translateY(-2px); color: #32312D !important;
+  text-decoration: none !important;
 }
-.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
+.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #F1EFE3; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
-.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack) !important; }
-.rc-path-content p { font-size: .92rem; color: var(--gray) !important; line-height: 1.5; margin: 0; }
-.rc-path-arrow { color: var(--orange) !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
+.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B !important; text-decoration: none !important; }
+.rc-path-content p { font-size: .92rem; color: #807D73 !important; line-height: 1.5; margin: 0; text-decoration: none !important; }
+.rc-path-arrow { color: #FF8200 !important; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; }
 
-/* ── OFFICE HOURS CTA — light card ── */
-.rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
-.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
-.rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
+/* ── OFFICE HOURS CTA ── */
+.rc-starter-cta { background: #F1EFE3; border: 1px solid #CCC9B8; border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
+.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #0D0D0B; }
+.rc-starter-text p { margin: 0; font-size: .95rem; color: #32312D; line-height: 1.5; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary,
 .rc-guide a.rc-btn-secondary {
-  background: transparent; color: var(--offblack) !important;
-  text-decoration: none !important; padding: 10px 24px; border-radius: 10px;
-  font-weight: 700; font-size: .9rem;
-  border: 2px solid var(--offblack); border-bottom: 2px solid var(--offblack) !important;
+  background: transparent; color: #0D0D0B !important;
+  text-decoration: none !important; text-decoration-line: none !important;
+  padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem;
+  border: 2px solid #0D0D0B; border-bottom: 2px solid #0D0D0B !important;
   white-space: nowrap; transition: all .2s; display: inline-block;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:hover,
 .rc-guide a.rc-btn-secondary:hover {
-  background: var(--offblack); color: var(--yellow) !important;
-  border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important;
+  background: #0D0D0B; color: #FFD706 !important;
+  border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important;
+  text-decoration: none !important;
 }
 
 /* ── FOOTER ── */
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link,
 .rc-guide a.rc-footer-link {
-  color: var(--gray) !important; text-decoration: none !important;
+  color: #807D73 !important; text-decoration: none !important; text-decoration-line: none !important;
   font-weight: 600; font-size: .88rem; transition: color .2s ease;
   display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
-.rc-guide a.rc-footer-link:hover { color: var(--orange) !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; text-decoration: none !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
 
 /* ── CONSOLIDATED RESPONSIVE BLOCK ── */
 @media(max-width:768px){
@@ -380,21 +372,24 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV ── */
+    <!-- ── FOOTER NAV ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
+
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launch</span>
           <a href="#launchpad" class="rc-footer-link">Launchpad</a>
           <a href="#technical" class="rc-footer-link">Technical setup</a>
           <a href="#onboarding" class="rc-footer-link">Onboarding</a>
         </div>
+
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
             <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
           </a>
           <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
         </div>
+
       </div>
     </div>
 
