@@ -13,8 +13,15 @@ metadata:
 body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
+/* G-2: Prevent global guide-page rule from adding yellow underline to hero h1 */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+/* G-1: Enforce Polar font everywhere inside Navigate */
 .rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 FONT RESTORE — must come AFTER the wildcard and use higher specificity (0,0,2,0 beats 0,0,1,0) */
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
@@ -33,12 +40,23 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── HOST-THEME ARMOR ── */
+/* ── HOST-THEME ARMOR — upgraded to beat global ReadMe link rules ──
+   Added: .rm-Guides-SuperHub prefix raises specificity to (0,0,2,1) to match global rules
+   Added: color: inherit so global tangerine link color doesn't bleed through
+   Added: text-decoration-line: none as explicit sub-property override
+   NOTE: All .rc-guide a.[classname] border/color overrides MUST be declared AFTER this block ── */
+.rm-Guides-SuperHub .rc-guide a,
+.rm-Article .rc-guide a,
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
 .rc-guide a:hover,
-.rc-guide a:active { border-bottom: 0 !important; text-decoration: none !important; }
+.rc-guide a:active {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  color: inherit !important;
+}
 
 /* ── FONT AWESOME ICON HELPERS ── */
 .rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
@@ -63,7 +81,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
-.rc-announce-link {
+.rc-guide a.rc-announce-link {
   color: var(--offblack) !important;
   font-weight: 800;
   text-decoration: none !important;
@@ -72,13 +90,24 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   background: rgba(0,0,0,0.10);
   border-radius: 6px;
   transition: background 0.2s;
+  border-bottom: 0 !important;
 }
-.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rc-back-link { color: var(--gray); text-decoration: none !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; }
-.rc-back-link:hover { color: var(--orange); }
+.rc-guide a.rc-back-link {
+  color: var(--gray) !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: .9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color .2s;
+  border-bottom: 0 !important;
+}
+.rc-guide a.rc-back-link:hover { color: var(--orange) !important; }
 
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
@@ -97,78 +126,47 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
-
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 
 /* ── STICKY NAV — Launch (brightgray bg), collapsed ── */
 details.rc-sticky-nav-wrap {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: sticky; top: 0; z-index: 100;
   background-color: var(--brightgray);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  margin: 24px 0 48px 0;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.08);
-  overflow: hidden;
+  margin: 24px 0 48px 0; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
 }
 details.rc-sticky-nav-wrap > summary {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding: 15px 24px;
-  cursor: pointer;
-  user-select: none;
+  list-style: none; display: flex; align-items: center;
+  padding: 15px 24px; cursor: pointer; user-select: none;
 }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-
 .rc-nav-toggle-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 800;
-  font-size: .88rem;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: var(--offblack);
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 800; font-size: .88rem; letter-spacing: 0.6px;
+  text-transform: uppercase; color: var(--offblack);
 }
-.rc-nav-chevron {
-  font-size: .72rem;
-  color: var(--offblack);
-  opacity: 0.55;
-  line-height: 1;
-  transition: transform 0.25s ease;
-}
+.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
-
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-.rc-sticky-link {
-  color: var(--offblack) !important;
-  text-decoration: none !important;
-  font-weight: 700;
-  font-size: .83rem;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  padding: 7px 14px;
-  border-radius: 7px;
-  transition: all .18s;
-  white-space: nowrap;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+.rc-guide a.rc-sticky-link {
+  color: var(--offblack) !important; text-decoration: none !important;
+  font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase;
+  padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
-.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
-.rc-sticky-link-active { font-weight: 800; }
-.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
+.rc-guide a.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
+.rc-guide a.rc-sticky-link-active { font-weight: 800; }
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
@@ -180,44 +178,58 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
-.rc-path-card {
+.rc-guide a.rc-path-card {
   background: var(--offwhite);
   border: 1px solid var(--lightgray);
-  border-radius: 12px;
-  padding: 20px 24px;
-  text-decoration: none !important;
-  color: inherit;
-  transition: all .2s ease;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 24px;
-  align-items: center;
+  border-bottom: 1px solid var(--lightgray) !important;
+  border-radius: 12px; padding: 20px 24px;
+  text-decoration: none !important; color: var(--darkgray) !important;
+  transition: all .2s ease; display: grid;
+  grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
 }
-.rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rc-guide a.rc-path-card:hover { border-color: var(--lightgray); border-bottom: 1px solid var(--lightgray) !important; box-shadow: 0 4px 16px rgba(204,201,184,.25); transform: translateY(-2px); }
+.rc-guide a.rc-path-card:hover {
+  border-color: var(--lightgray);
+  border-bottom: 1px solid var(--lightgray) !important;
+  box-shadow: 0 4px 16px rgba(204,201,184,.25);
+  transform: translateY(-2px);
+  color: var(--darkgray) !important;
+}
 .rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
-.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack); }
-.rc-path-content p { font-size: .92rem; color: var(--gray); line-height: 1.5; margin: 0; }
-.rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; white-space: nowrap; }
+.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack) !important; }
+.rc-path-content p { font-size: .92rem; color: var(--gray) !important; line-height: 1.5; margin: 0; }
+.rc-path-arrow { color: var(--orange) !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
 /* ── OFFICE HOURS CTA — light card ── */
 .rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
-.rc-guide a.rc-btn-secondary { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--offblack); border-bottom: 2px solid var(--offblack) !important; white-space: nowrap; transition: all .2s; display: inline-block; }
-.rc-guide a.rc-btn-secondary:hover { background: var(--offblack); color: var(--yellow) !important; border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
+.rc-guide a.rc-btn-secondary {
+  background: transparent; color: var(--offblack) !important;
+  text-decoration: none !important; padding: 10px 24px; border-radius: 10px;
+  font-weight: 700; font-size: .9rem;
+  border: 2px solid var(--offblack); border-bottom: 2px solid var(--offblack) !important;
+  white-space: nowrap; transition: all .2s; display: inline-block;
+}
+.rc-guide a.rc-btn-secondary:hover {
+  background: var(--offblack); color: var(--yellow) !important;
+  border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important;
+}
 
 /* ── FOOTER ── */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
-.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; }
-.rc-footer-link:hover { color: var(--orange); }
+.rc-guide a.rc-footer-link {
+  color: var(--gray) !important; text-decoration: none !important;
+  font-weight: 600; font-size: .88rem; transition: color .2s ease;
+  display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rc-guide a.rc-footer-link:hover { color: var(--orange) !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
-.rc-footer-link:hover img { opacity: 1; }
+.rc-guide a.rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
 /* ── CONSOLIDATED RESPONSIVE BLOCK ── */
@@ -241,7 +253,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   <div class="rc-content-wrap">
 
     <!-- ── ANNOUNCEMENT BAR (hidden — add rc-active to show) ── -->
-    <div class="rc-announce-bar" id="rcAnnounce">
+    <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
@@ -359,7 +371,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── OFFICE HOURS CTA — light card ── -->
+    <!-- ── OFFICE HOURS CTA ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
         <h3><i class="fa-solid fa-headset rc-fa-light"></i>Need live guidance on your Launch?</h3>
@@ -368,24 +380,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV ── -->
+    <!-- ── FOOTER NAV ── */
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
-
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launch</span>
           <a href="#launchpad" class="rc-footer-link">Launchpad</a>
           <a href="#technical" class="rc-footer-link">Technical setup</a>
           <a href="#onboarding" class="rc-footer-link">Onboarding</a>
         </div>
-
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
             <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
           </a>
           <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
         </div>
-
       </div>
     </div>
 
