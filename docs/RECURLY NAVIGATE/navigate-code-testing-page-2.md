@@ -13,11 +13,9 @@ metadata:
 body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
-/* G-2: Prevent guide-page rule from adding yellow underline to hero h1 */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-/* G-1: Polar font everywhere inside Navigate */
 .rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-/* FA6 FONT RESTORE — attr selectors = (0,0,2,0), beats wildcard (0,0,1,0) */
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0) */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
@@ -40,17 +38,25 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── HOST-THEME ARMOR ──
-   Stacks ReadMe wrapper classes to reach specificity (0,0,4,1) —
-   beats global rules that use .rm-Markdown.markdown-body a (0,0,2,1)
-   even if global CSS loads dynamically after our <style>.
-   color is NOT set here — every link type sets its own explicit hex color below.
-   All .rc-guide a.[class] border/color overrides must come AFTER this block. ── */
-.rm-Guides-SuperHub .rm-Markdown.markdown-body .rc-guide a,
-.rm-Guides-SuperHub .rm-Markdown .rc-guide a,
-.rm-Guides-SuperHub .rc-guide a,
-.rm-Markdown.markdown-body .rc-guide a,
-.rm-Article .rc-guide a,
+/* ─────────────────────────────────────────────────────────────────
+   NAVIGATE MASTER ARMOR
+   
+   The global CSS rule (section 1.1, lines 508-521) uses four :not()
+   clauses to reach specificity (0,0,6,2) with !important. Our rules
+   must exceed this. By mirroring those same four :not() exclusions
+   AND including .rc-guide, we reach (0,0,7,1) for the broad armor
+   and (0,0,8,1) for per-element rules — both beat (0,0,6,2).
+   
+   The :not() exclusions are:
+     :not([class*="Button"])  — attr selector = (0,0,1,0)
+     :not(.rp-anchor)         — class = (0,0,1,0)
+     :not(.rp-toc-pill)       — class = (0,0,1,0)
+     :not(.rp-btn)            — class = (0,0,1,0)
+   ───────────────────────────────────────────────────────────────── */
+
+/* BROAD ARMOR — text-decoration and border for ALL Navigate links
+   Specificity: (0,0,7,1) > global (0,0,6,2) ✓ */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
 .rc-guide a:visited,
@@ -58,6 +64,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-guide a:active {
   text-decoration: none !important;
   text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
   border-bottom: 0 !important;
 }
 
@@ -76,26 +84,27 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
-.rm-Markdown.markdown-body .rc-guide a.rc-announce-link,
+/* Announce link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link {
   color: #0D0D0B !important; font-weight: 800;
-  text-decoration: none !important; text-decoration-line: none !important;
   white-space: nowrap; padding: 4px 12px;
   background: rgba(0,0,0,0.10); border-radius: 6px;
   transition: background 0.2s; border-bottom: 0 !important;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:hover,
-.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link,
+/* Back link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link {
-  color: #807D73 !important; text-decoration: none !important; text-decoration-line: none !important;
-  font-weight: 700; font-size: .9rem; display: inline-flex;
-  align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important;
+  color: #807D73 !important; font-weight: 700; font-size: .9rem;
+  display: inline-flex; align-items: center; gap: 6px; transition: color .2s;
+  border-bottom: 0 !important;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:hover,
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
 
 /* ── CONTENT WRAPPER ── */
@@ -117,11 +126,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── STICKY NAV — Launch (brightgray bg), collapsed ── */
 details.rc-sticky-nav-wrap {
-  position: sticky; top: 0; z-index: 100;
-  background-color: #F1EFE3;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  margin: 24px 0 48px 0; border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+  position: sticky; top: 0; z-index: 100; background-color: #F1EFE3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px 0;
+  border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
 }
 details.rc-sticky-nav-wrap > summary {
   list-style: none; display: flex; align-items: center;
@@ -140,14 +147,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link,
+/* Nav links — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link {
-  color: #0D0D0B !important; text-decoration: none !important; text-decoration-line: none !important;
-  font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase;
-  padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap;
+  color: #0D0D0B !important; font-weight: 700; font-size: .83rem;
+  letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px;
+  border-radius: 7px; transition: all .18s; white-space: nowrap;
   display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:hover,
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
@@ -165,46 +173,43 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-path-card,
+/* Path card — (0,0,8,1); border-bottom restore overrides armor ✓ */
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-path-card {
   background: #FFFDF2; border: 1px solid #CCC9B8;
   border-bottom: 1px solid #CCC9B8 !important;
-  border-radius: 12px; padding: 20px 24px;
-  text-decoration: none !important; text-decoration-line: none !important;
-  color: #32312D !important; transition: all .2s ease;
+  border-radius: 12px; padding: 20px 24px; color: #32312D !important;
   display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
+  transition: all .2s ease;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-path-card:hover,
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-path-card:hover {
-  border: 1px solid #CCC9B8; border-bottom: 1px solid #CCC9B8 !important;
-  box-shadow: 0 4px 16px rgba(204,201,184,.25);
-  transform: translateY(-2px); color: #32312D !important;
-  text-decoration: none !important;
+  border: 1px solid #CCC9B8 !important; border-bottom: 1px solid #CCC9B8 !important;
+  box-shadow: 0 4px 16px rgba(204,201,184,.25); transform: translateY(-2px); color: #32312D !important;
 }
 .rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #F1EFE3; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
-.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B !important; text-decoration: none !important; }
-.rc-path-content p { font-size: .92rem; color: #807D73 !important; line-height: 1.5; margin: 0; text-decoration: none !important; }
-.rc-path-arrow { color: #FF8200 !important; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; }
+.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B !important; }
+.rc-path-content p { font-size: .92rem; color: #807D73 !important; line-height: 1.5; margin: 0; }
+.rc-path-arrow { color: #FF8200 !important; font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
 /* ── OFFICE HOURS CTA ── */
 .rc-starter-cta { background: #F1EFE3; border: 1px solid #CCC9B8; border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #0D0D0B; }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: #32312D; line-height: 1.5; }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary,
+/* Button — (0,0,8,1); border-bottom restore overrides armor ✓ */
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-secondary {
-  background: transparent; color: #0D0D0B !important;
-  text-decoration: none !important; text-decoration-line: none !important;
-  padding: 10px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem;
+  background: transparent; color: #0D0D0B !important; padding: 10px 24px;
+  border-radius: 10px; font-weight: 700; font-size: .9rem;
   border: 2px solid #0D0D0B; border-bottom: 2px solid #0D0D0B !important;
   white-space: nowrap; transition: all .2s; display: inline-block;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:hover,
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-secondary:hover {
   background: #0D0D0B; color: #FFD706 !important;
   border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important;
-  text-decoration: none !important;
 }
 
 /* ── FOOTER ── */
@@ -212,14 +217,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link,
+/* Footer links — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-footer-link {
-  color: #807D73 !important; text-decoration: none !important; text-decoration-line: none !important;
-  font-weight: 600; font-size: .88rem; transition: color .2s ease;
-  display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+  color: #807D73 !important; font-weight: 600; font-size: .88rem;
+  transition: color .2s ease; display: inline-flex; align-items: center;
+  gap: 6px; border-bottom: 0 !important;
 }
-.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:hover,
-.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-guide a.rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
@@ -253,7 +259,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── HERO — Pillar subpage ── -->
+    <!-- ── HERO ── -->
     <div class="rc-hero">
       <div class="rc-brand-header">
         <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
@@ -263,7 +269,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Get configured and live fast. Build a solid subscription foundation from day one by mastering the core elements of the Recurly platform.</p>
     </div>
 
-    <!-- ── NAVIGATION MENU — sticky + collapsed (Pillar subpage) ── -->
+    <!-- ── NAVIGATION MENU ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -287,9 +293,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-rocket rc-fa-section"></i> Launchpad</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
-          </div>
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Launchpad phase one: Optimize</h3>
             <p>Ensure your Recurly instance is configured for maximum impact. Learn best practices for site settings, payment gateways, and baseline security.</p>
@@ -297,9 +301,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
-          </div>
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Launchpad phase two: Mastering metrics</h3>
             <p>Dive deep into Recurly Analytics. Understand your core subscription KPIs, how to read your dashboards, and track success from day one.</p>
@@ -314,9 +316,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-gear rc-fa-section"></i> Technical setup</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
-          </div>
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>API &amp; Webhook fundamentals</h3>
             <p>Learn how to authenticate, connect your backend architecture, and listen to real-time Recurly events seamlessly.</p>
@@ -324,9 +324,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
-          </div>
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Data migration guide</h3>
             <p>Step-by-step instructions for importing your existing customer data, billing information, and active subscriptions securely into Recurly.</p>
@@ -341,9 +339,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-user-check rc-fa-section"></i> Onboarding</h2>
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
-          </div>
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>The first 30 days playbook</h3>
             <p>A structured checklist and strategic guide for your entire team to ensure a flawless, stress-free go-live experience.</p>
@@ -351,9 +347,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="#" class="rc-path-card">
-          <div class="rc-path-icon">
-            <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" />
-          </div>
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Team training &amp; permissions</h3>
             <p>Step-by-step instructions for inviting new users, setting up role-based access control, and training your staff on navigating the admin console.</p>
@@ -375,21 +369,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── FOOTER NAV ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
-
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launch</span>
           <a href="#launchpad" class="rc-footer-link">Launchpad</a>
           <a href="#technical" class="rc-footer-link">Technical setup</a>
           <a href="#onboarding" class="rc-footer-link">Onboarding</a>
         </div>
-
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
             <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
           </a>
           <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
         </div>
-
       </div>
     </div>
 
