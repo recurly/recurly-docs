@@ -30,7 +30,7 @@ metadata:
 
 <div class="rn-hero">
   <div class="rn-pillar-tag" style={{background:"rgba(255,88,16,0.20)",border:"1px solid rgba(255,88,16,0.45)",color:"#FF5810"}}>
-    <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1ba5a05-Scale-icon-white.png" alt="Scale" />  Scale
+    <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale" />  Scale
   </div>
   <div class="rn-hero-title"><h1 style={{color:"#FFFDF2"}}>Payments Hub</h1></div>
   <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
