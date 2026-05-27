@@ -310,7 +310,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://drive.google.com/thumbnail?id=16DEzXygnfOAnosP9dTcKi2hhmvNaMuY-&sz=w100-h100" alt="Retain"> Retain
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Dunning 101</h1>
+        <h1>Dunning 101: The basics</h1>
       </div>
       <p>Recover the revenue you've already earned — by building a dunning strategy that works quietly in the background.</p>
       <div class="rc-hero-stats">
