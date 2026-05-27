@@ -28,8 +28,14 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+/* ── HOST-THEME BACKGROUND OVERRIDE — must be first ── */
 body { background: #ffffff !important; }
+
+/* ── GLOBAL CSS IMMUNITY BLOCK — shields Navigate from ReadMe global overrides ── */
+/* G-2: Prevent global guide-page rule from adding yellow underline to hero h1 */
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+/* G-1: Reinforce Polar font in case body !important cascades through */
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
@@ -42,7 +48,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   --lightgray: #CCC9B8;
   --brightgray:#F1EFE3;
   --offwhite:  #FFFDF2;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: var(--darkgray);
   background: #ffffff;
 }
@@ -59,17 +65,13 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
-.rc-fa-announce {
-  color: var(--offblack);
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-.rc-fa-starter {
-  color: #FFD706 !important;
-  font-size: 1.4rem;
-  display: block;
-  margin-bottom: 10px;
-}
+.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+/* Icons on dark/offblack backgrounds — must use hex + !important */
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+/* Icons on light/brightgray/offwhite backgrounds */
+.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
+/* Icons inline in section h2/h3 headings */
+.rc-fa-section { color: var(--offblack); font-size: 1rem; }
 
 /* ── ANNOUNCEMENT BAR — hidden by default, show with rc-active ── */
 .rc-announce-bar {
@@ -123,21 +125,20 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-home-title-block { margin-top: 44px; }
 .rc-home-title-block h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0 0 24px; }
-
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
+.rc-home-title-block > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
 
 /* Hero stats */
 .rc-hero-stats {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
   border-top: 1px solid rgba(255,255,255,0.12);
-  padding-top: 24px; margin-top: 32px;
+  padding-top: 24px; margin-top: 4px;
 }
 .rc-hero-stat { text-align: center; padding: 0 16px; }
 .rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
 .rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
 .rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); line-height: 1.3; }
 
-/* ── STICKY NAV — collapsed on load (no open attr) ── */
+/* ── STICKY NAV — collapsed on load ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
@@ -150,12 +151,7 @@ details.rc-sticky-nav-wrap {
   overflow: hidden;
 }
 details.rc-sticky-nav-wrap > summary {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding: 15px 24px;
-  cursor: pointer;
-  user-select: none;
+  list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none;
 }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
@@ -164,18 +160,14 @@ details.rc-sticky-nav-wrap > summary::marker { display: none; }
   font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase;
   color: var(--offblack);
 }
-.rc-nav-chevron {
-  font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1;
-  transition: transform 0.25s ease;
-}
+.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
 .rc-sticky-link {
-  color: var(--offblack) !important;
-  text-decoration: none !important;
+  color: var(--offblack) !important; text-decoration: none !important;
   font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase;
   padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap;
   display: inline-flex; align-items: center; gap: 6px;
@@ -189,6 +181,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1;
 }
 .rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
+/* Active item — no persistent background; map pin icon identifies current page */
 .rc-sticky-link-active { font-weight: 800; }
 .rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: var(--offblack) !important; }
 
@@ -209,10 +202,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   gap: 24px;
   margin-bottom: 32px;
 }
+/* h3 must be display:block (default) so rc-fa-dark icon renders above text */
 .rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #FFD706 !important; }
 .rc-starter-text p { margin: 0; font-size: .95rem; color: #CCC9B8 !important; line-height: 1.5; }
 
-/* Primary button */
+/* Primary button — rc-guide a.[classname] pattern for armor specificity */
 .rc-guide a.rc-btn-primary {
   background: #FFD706 !important;
   color: #0D0D0B !important;
@@ -342,12 +336,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── STICKY NAV — collapsed on load, title = "Navigation Menu" ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
-        <span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span>
+        <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
           <div class="rc-nav-links">
-            <!-- Active page: black map pin replaces badge entirely -->
+            <!-- Active page: black map pin replaces badge entirely — no badge shown -->
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link rc-sticky-link-active">
               <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Navigate Home
             </a>
@@ -371,7 +365,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── NEW TO NAVIGATE — dark card ── -->
     <div class="rc-starter-cta">
       <div class="rc-starter-text">
-        <h3><i class="fa-solid fa-map-location-dot rc-fa-starter"></i>New to Navigate?</h3>
+        <h3><i class="fa-solid fa-map-location-dot rc-fa-dark"></i>New to Navigate?</h3>
         <p>Welcome! Start here to learn how to use this program and find support.</p>
       </div>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-primary">Get started here</a>
