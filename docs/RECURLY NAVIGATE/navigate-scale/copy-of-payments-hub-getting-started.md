@@ -19,10 +19,10 @@ metadata:
   <a href="/docs/navigate-scale">← Back to Scale</a>
 </div>
 <div class="rn-hero">
-  <div class="rn-pillar-tag" style="background:rgba(255,88,16,0.20);border:1px solid rgba(255,88,16,0.45);color:#FF5810">
+  <div class="rn-pillar-tag" style={{background:"rgba(255,88,16,0.20)",border:"1px solid rgba(255,88,16,0.45)",color:"#FF5810"}}>
     <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1ba5a05-Scale-icon-white.png" alt="Scale" /> Scale
   </div>
-  <div class="rn-hero-title"><h1 style="color:#FFFDF2">Payments Hub</h1></div>
+  <div class="rn-hero-title"><h1 style={{color:"#FFFDF2"}}>Payments Hub</h1></div>
   <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
 </div>
 <details class="rn-nav rn-nav-dark" id="rn-page-nav">
@@ -100,7 +100,7 @@ metadata:
     <p>Each step walks through one dashboard, what it shows, and an activity to try in your account.</p>
   </div>
 </div>
-<div class="rn-sec-head" style="margin-top:40px">
+<div class="rn-sec-head" style={{marginTop:"40px"}}>
   <div class="rn-sec-icon"><i class="fa-solid fa-compass" aria-hidden="true"></i></div>
   <div>
     <h2>How to find it</h2>
@@ -130,7 +130,7 @@ metadata:
     </div>
   </div>
 </div>
-<img src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" style="width:100%;border-radius:14px;border:1px solid #CCC9B8;margin-bottom:24px;" />
+<img src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" style={{width:"100%",borderRadius:"14px",border:"1px solid #CCC9B8",marginBottom:"24px"}} />
 <div class="rn-callout rn-callout-warn">
   <span class="rn-callout-icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
   <div class="rn-callout-body">
@@ -189,7 +189,7 @@ metadata:
     </div>
   </div>
   <div class="rn-footer-util">
-    <a href="/docs/navigate-home"><img class="rn-footer-icon" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="" style="width:14px;height:14px;object-fit:contain" /> Navigate Home</a>
+    <a href="/docs/navigate-home"><img class="rn-footer-icon" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="" style={{width:"14px",height:"14px",objectFit:"contain"}} /> Navigate Home</a>
     <a href="mailto:support@recurly.com"><i class="fa-solid fa-headset" aria-hidden="true"></i> Contact Support</a>
   </div>
 </div>
