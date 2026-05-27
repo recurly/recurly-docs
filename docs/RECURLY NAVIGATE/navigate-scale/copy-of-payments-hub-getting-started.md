@@ -14,13 +14,20 @@ metadata:
     - Recurly Analytics dashboard
   robots: index
 ---
+Page type: Learning Path overview
+Title: Payments Hub
+Metadata description: Payments Hub gives you a unified view of your payment performance across every connected gateway, method, and value-add service — directly inside Recurly.
+Pillar: Scale
+
+---PASTE INTO EDITOR BELOW---
+
 <div class="rn-guide">
 <div class="rn-back">
   <a href="/docs/navigate-scale">← Back to Scale</a>
 </div>
 <div class="rn-hero">
   <div class="rn-pillar-tag" style="background:rgba(255,88,16,0.20);border:1px solid rgba(255,88,16,0.45);color:#FF5810">
-    <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1ba5a05-Scale-icon-white.png" alt="Scale"> Scale
+    <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1ba5a05-Scale-icon-white.png" alt="Scale" /> Scale
   </div>
   <div class="rn-hero-title"><h1 style="color:#FFFDF2">Payments Hub</h1></div>
   <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
@@ -32,10 +39,10 @@ metadata:
   </summary>
   <div class="rn-nav-body">
     <div class="rn-nav-item">
-      <a href="/docs/navigate-home"><img class="rn-nav-icon" src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home</a>
+      <a href="/docs/navigate-home"><img class="rn-nav-icon" src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt="" /> Navigate Home</a>
     </div>
     <div class="rn-nav-item rn-active">
-      <a href="/docs/navigate-scale-payments-hub"><img class="rn-nav-icon" src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt=""> Payments Hub</a>
+      <a href="/docs/navigate-scale-payments-hub"><img class="rn-nav-icon" src="https://files.readme.io/c8c36df1d0552052603885aa5936c2474ddd7b3ece261aa70bac9fee6fd16017-White_Navigate_Home_Pin.png" alt="" /> Payments Hub</a>
     </div>
     <div class="rn-nav-item">
       <a href="/docs/navigate-scale-payments-hub-overview"><span class="rn-nav-badge">1</span> Overview</a>
@@ -189,7 +196,7 @@ metadata:
     </div>
   </div>
   <div class="rn-footer-util">
-    <a href="/docs/navigate-home"><img class="rn-footer-icon" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="" style="width:14px;height:14px;object-fit:contain"> Navigate Home</a>
+    <a href="/docs/navigate-home"><img class="rn-footer-icon" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="" style="width:14px;height:14px;object-fit:contain" /> Navigate Home</a>
     <a href="mailto:support@recurly.com"><i class="fa-solid fa-headset" aria-hidden="true"></i> Contact Support</a>
   </div>
 </div>
