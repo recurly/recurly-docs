@@ -15,16 +15,27 @@ metadata:
   robots: index
 ---
 <div class="rn-guide">
+
+<div class="rn-announce" id="rn-announce-bar">
+  <div class="rn-announce-inner">
+    <i class="fa-solid fa-bullhorn" aria-hidden="true"></i> Announcements go here
+    <a class="rn-announce-link" href="#">Learn more →</a>
+  </div>
+  <button class="rn-announce-close">×</button>
+</div>
+
 <div class="rn-back">
   <a href="/docs/navigate-scale">← Back to Scale</a>
 </div>
+
 <div class="rn-hero">
   <div class="rn-pillar-tag" style={{background:"rgba(255,88,16,0.20)",border:"1px solid rgba(255,88,16,0.45)",color:"#FF5810"}}>
-    <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1ba5a05-Scale-icon-white.png" alt="Scale" /> Scale
+    <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1ba5a05-Scale-icon-white.png" alt="Scale" />  Scale
   </div>
   <div class="rn-hero-title"><h1 style={{color:"#FFFDF2"}}>Payments Hub</h1></div>
   <p>Your payment performance data, all in one place. Learn your way around every dashboard — and know what to look for from day one.</p>
 </div>
+
 <nav class="rn-nav">
   <a class="rn-active" href="/docs/navigate-scale-payments-hub">Payments Hub</a>
   <a href="/docs/navigate-scale-payments-hub-overview"><span class="rn-nav-badge">1</span> Overview</a>
@@ -34,6 +45,7 @@ metadata:
   <a href="/docs/navigate-scale-payments-hub-fraud-prevention"><span class="rn-nav-badge">5</span> Fraud prevention</a>
   <a href="/docs/navigate-scale-payments-hub-review-resources"><span class="rn-nav-badge">6</span> Review &amp; resources</a>
 </nav>
+
 <div class="rn-sec-head">
   <div class="rn-sec-icon"><i class="fa-solid fa-chart-bar" aria-hidden="true"></i></div>
   <div>
@@ -41,10 +53,13 @@ metadata:
     <p>A payment analytics dashboard inside your Recurly account — giving you a complete view of your payment performance without ever leaving the platform.</p>
   </div>
 </div>
+
 <div class="rn-card">
-  <p><strong>The problem it solves</strong></p>
-  <p>Before Payments Hub, understanding your payment performance meant logging into each gateway portal separately and manually reconciling the data.</p>
-  <p>Payments Hub changes that. It pulls all of your payment data — across every connected gateway, payment method, and value-add service — into one place. One view to understand what's working, what isn't, and where to focus.</p>
+
+**The problem it solves**
+
+Before Payments Hub, understanding your payment performance meant logging into each gateway portal separately and manually reconciling the data. Payments Hub changes that. It pulls all of your payment data — across every connected gateway, payment method, and value-add service — into one place. One view to understand what's working, what isn't, and where to focus.
+
 </div>
 
 ### What's inside
@@ -63,6 +78,7 @@ metadata:
     <p>Revenue protected through automatic card updates before payments fail.</p>
   </div>
 </div>
+
 <div class="rn-card-grid-3">
   <div class="rn-wi">
     <h4>Payment retry recovery dashboard</h4>
@@ -77,6 +93,7 @@ metadata:
     <p>Each step walks through one dashboard, what it shows, and an activity to try in your account.</p>
   </div>
 </div>
+
 <div class="rn-sec-head" style={{marginTop:"40px"}}>
   <div class="rn-sec-icon"><i class="fa-solid fa-compass" aria-hidden="true"></i></div>
   <div>
@@ -84,6 +101,7 @@ metadata:
     <p>Payments Hub lives inside Analytics in your Recurly account. No setup required — if you have the Analytics role, it's already there.</p>
   </div>
 </div>
+
 <div class="rn-steps">
   <div class="rn-step">
     <div class="rn-step-num">1</div>
@@ -107,7 +125,9 @@ metadata:
     </div>
   </div>
 </div>
+
 <img src="https://files.readme.io/d1cfc1ddc7985620bb9f4247454a32a9b7176d88e8a359b1940d6ddd2af7280b-Navigate_Slides.png" alt="Navigating to Payments Hub in Recurly Analytics" style={{width:"100%",borderRadius:"14px",border:"1px solid #CCC9B8",marginBottom:"24px"}} />
+
 <div class="rn-callout rn-callout-warn">
   <span class="rn-callout-icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
   <div class="rn-callout-body">
@@ -115,6 +135,7 @@ metadata:
     <p>You need the <strong>Analytics user role</strong> in Recurly. If it's missing from your nav, contact your Recurly admin to confirm your permissions. <a href="https://docs.recurly.com/recurly-subscriptions/docs/user-roles-and-permissions" target="_blank" rel="noopener noreferrer">Learn about user roles →</a></p>
   </div>
 </div>
+
 <div class="rn-callout rn-callout-tip">
   <span class="rn-callout-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span>
   <div class="rn-callout-body">
@@ -129,17 +150,27 @@ metadata:
   <div class="rn-cl-head"><i class="fa-solid fa-circle-check" aria-hidden="true"></i><h3>Getting started checklist</h3></div>
   <div class="rn-cl-item">
     <input type="checkbox" id="gs-1" />
-    <label for="gs-1">Open Payments Hub in your Recurly account<span>Analytics → Payments Hub → Overview</span></label>
+    <label for="gs-1">
+      Open Payments Hub in your Recurly account
+      <span>Analytics → Payments Hub → Overview</span>
+    </label>
   </div>
   <div class="rn-cl-item">
     <input type="checkbox" id="gs-2" />
-    <label for="gs-2">Confirm your available dashboards are visible: Overview, Payment Processing, Account Updater, Payment Retry Recovery, and Fraud Prevention<span>All Payments Hub dashboards require Analytics permissions for visibility. Note: The Fraud Prevention dashboard is only visible if you're using Kount, and the Account Updater dashboard requires Account Updater to be enabled.</span></label>
+    <label for="gs-2">
+      Confirm your available dashboards are visible: Overview, Payment Processing, Account Updater, Payment Retry Recovery, and Fraud Prevention
+      <span>All Payments Hub dashboards require Analytics permissions for visibility. <strong>Note:</strong> The Fraud Prevention dashboard is only visible if you're using Kount, and the Account Updater dashboard requires Account Updater to be enabled.</span>
+    </label>
   </div>
   <div class="rn-cl-item">
     <input type="checkbox" id="gs-3" />
-    <label for="gs-3">Take note of the first number that catches your attention on the Overview dashboard<span>You'll dig into this in the next step</span></label>
+    <label for="gs-3">
+      Take note of the first number that catches your attention on the Overview dashboard
+      <span>You'll dig into this in the next step</span>
+    </label>
   </div>
 </div>
+
 <div class="rn-pager">
   <span class="rn-pager-disabled"><i class="fa-solid fa-flag" aria-hidden="true"></i> Start</span>
   <a class="rn-pager-next" href="/docs/navigate-scale-payments-hub-overview">Next: Overview <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
@@ -153,6 +184,7 @@ metadata:
   <a class="rn-resource-link" href="mailto:support@recurly.com"><i class="fa-solid fa-headset" aria-hidden="true"></i> Contact Recurly Support</a>
   <a class="rn-resource-link" href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe" aria-hidden="true"></i> Join Global Office Hours</a>
 </div>
+
 <div class="rn-footer">
   <div class="rn-footer-group">
     <div class="rn-footer-label">In this path</div>
@@ -166,8 +198,23 @@ metadata:
     </div>
   </div>
   <div class="rn-footer-util">
-    <a href="/docs/navigate-home"><img class="rn-footer-icon" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="" style={{width:"14px",height:"14px",objectFit:"contain"}} /> Navigate Home</a>
-    <a href="mailto:support@recurly.com"><i class="fa-solid fa-headset" aria-hidden="true"></i> Contact Support</a>
+    <a href="/docs/navigate-home">
+      <img class="rn-footer-icon" src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="" style={{width:"14px",height:"14px",objectFit:"contain"}} /> Navigate Home
+    </a>
+    <a href="mailto:support@recurly.com">
+      <i class="fa-solid fa-headset" aria-hidden="true"></i> Contact Support
+    </a>
   </div>
 </div>
+
 </div>
+
+***
+
+📋 TODO before publishing:
+
+- [ ] **Back link URL** — `/docs/navigate-scale` is a placeholder; confirm the actual Scale pillar subpage slug.
+- [ ] **Hero stats** — LP overview template calls for three stats (e.g. payment recovery rate, volume metrics). Source had none; add values from Recurly's payments data if available.
+- [ ] **Office Hours CTA** — belongs on the Review & Resources page (step 6), not this page.
+
+<br />
