@@ -30,14 +30,33 @@ metadata:
 /* ── HOST-THEME BACKGROUND OVERRIDE — must be first ── */
 body { background: #ffffff !important; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+/* ── GLOBAL CSS IMMUNITY BLOCK ── */
+/* G-2: Hero h1 yellow underline */
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+/* G-1: Polar font — wildcard ensures all descendants use it */
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 FONT RESTORE — (0,0,2,0) beats wildcard (0,0,1,0); must come after wildcard */
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* ── HOST-THEME ARMOR — resets all anchor states site-wide ── */
+/* ── NAVIGATE MASTER ARMOR — (0,0,7,1) beats global section 1.1 rule (0,0,6,2)
+   All .rc-guide a.[class] overrides must be declared AFTER this block. ── */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
-a:link, a:visited, a:hover, a:active {
-  border-bottom: 0 !important;
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active {
   text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
 }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
   --yellow:     #FFD706;
@@ -49,25 +68,23 @@ a:link, a:visited, a:hover, a:active {
   --brightgray: #F1EFE3;
   --offwhite:   #FFFDF2;
   --scale:      #FF5810;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  color: var(--darkgray);
+  color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
-.rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-section { color: var(--offblack); font-size: 1rem; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
-/* ── ANNOUNCEMENT BAR — hidden by default ── */
+/* ── ANNOUNCEMENT BAR — hidden by default; add rc-active to show ── */
 .rc-announce-bar {
   display: none;
-  background: var(--yellow);
-  color: var(--offblack);
+  background: #FFD706;
+  color: #0D0D0B;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 20px;
   font-size: .88rem;
   font-weight: 600;
@@ -78,36 +95,36 @@ a:link, a:visited, a:hover, a:active {
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
-.rc-announce-link {
-  color: var(--offblack) !important;
-  font-weight: 800;
-  text-decoration: none !important;
-  white-space: nowrap;
-  padding: 4px 12px;
-  background: rgba(0,0,0,0.10);
-  border-radius: 6px;
-  transition: background 0.2s;
+/* Announce link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-announce-link {
+  color: #0D0D0B !important; font-weight: 800; white-space: nowrap;
+  padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px;
+  transition: background 0.2s; border-bottom: 0 !important;
 }
-.rc-announce-link:hover { background: rgba(0,0,0,0.20); }
-.rc-announce-close {
-  background: none; border: none; font-size: 1.4rem; line-height: 1; cursor: pointer;
-  color: var(--offblack); padding: 0 2px; opacity: 0.45; transition: opacity 0.2s; flex-shrink: 0;
-}
-.rc-announce-close:hover { opacity: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
 /* ── TOP BACK LINK ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rc-back-link { color: var(--gray); text-decoration: none !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; }
-.rc-back-link:hover { color: var(--orange); }
+/* Back link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link {
+  color: #807D73 !important; font-weight: 700; font-size: .9rem;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: color .2s; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
 
 /* ── CONTENT WRAPPER ── */
 .rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* ── PILLAR HERO — no stats on pillar subpage ── */
 .rc-hero {
-  background: linear-gradient(rgba(13,13,11,0.8), rgba(13,13,11,0.8)),
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: var(--offblack);
+  background-color: #0D0D0B;
   background-size: cover;
   color: #fff;
   padding: 48px 40px 56px;
@@ -118,15 +135,15 @@ a:link, a:visited, a:hover, a:active {
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
 .rc-logo-image { height: 28px; display: block; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
-.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: var(--offwhite); }
-.rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
+.rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; margin: 0 0 24px; color: #FFFDF2; }
+.rc-hero > p { font-size: 1.1rem; opacity: .9; max-width: 700px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
 
-/* ── NAVIGATION MENU — Scale: sticky + collapsed, dark vermillion bg ── */
+/* ── NAVIGATION MENU — Scale: sticky + collapsed, vermillion bg, white text ── */
 details.rc-sticky-nav-wrap {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--scale);
+  background-color: #FF5810;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0;
   border-radius: 12px;
@@ -143,128 +160,131 @@ details.rc-sticky-nav-wrap > summary {
 }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-
 /* Scale pillar: toggle label and chevron must be white */
 .rc-nav-toggle-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 800;
-  font-size: .88rem;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: #fff;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 800; font-size: .88rem;
+  letter-spacing: 0.6px; text-transform: uppercase;
+  color: #ffffff;
 }
 .rc-nav-chevron {
-  font-size: .72rem;
-  color: #fff;
-  opacity: 0.55;
-  line-height: 1;
-  transition: transform 0.25s ease;
+  font-size: .72rem; color: #ffffff; opacity: 0.55;
+  line-height: 1; transition: transform 0.25s ease;
 }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
-.rc-nav-drawer-inner {
-  overflow: hidden;
-  border-top: 1px solid rgba(255,255,255,0.20);
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(255,255,255,0.20); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+
+/* Nav links — Scale dark nav: white text — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link {
+  color: #ffffff !important; font-weight: 700; font-size: .83rem;
+  letter-spacing: 0.4px; text-transform: uppercase;
+  padding: 7px 14px; border-radius: 7px; transition: all .18s;
+  white-space: nowrap; display: inline-flex; align-items: center;
+  gap: 6px; border-bottom: 0 !important;
 }
-.rc-nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 4px;
-  padding: 12px 20px 18px;
-}
-.rc-sticky-link {
-  color: #fff !important;
-  text-decoration: none !important;
-  font-weight: 700;
-  font-size: .83rem;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  padding: 7px 14px;
-  border-radius: 7px;
-  transition: all .18s;
-  white-space: nowrap;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #fff !important; text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
 /* Active item — map pin only, no persistent background */
-.rc-sticky-link-active { font-weight: 800; }
-.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #fff !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #ffffff !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.20); color: #ffffff !important; }
 
 /* ── CATEGORY SECTIONS ── */
 .rc-category { margin-bottom: 56px; }
 .rc-category h2 {
-  font-size: 1.6rem; font-weight: 800; margin: 0 0 24px; color: var(--offblack);
+  font-size: 1.6rem; font-weight: 800; margin: 0 0 24px; color: #0D0D0B;
   display: flex; align-items: center; gap: 12px;
 }
-.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
+.rc-category h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
 
 /* ── LEARNING PATH CARDS ── */
 .rc-path-list { display: flex; flex-direction: column; gap: 16px; }
-.rc-path-card {
-  background: var(--offwhite);
-  border: 1px solid var(--lightgray);
-  border-radius: 12px;
-  padding: 20px 24px;
-  text-decoration: none !important;
-  color: inherit;
+/* Path card base — (0,0,8,1) beats armor (0,0,7,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-path-card {
+  background: #FFFDF2; border: 1px solid #CCC9B8;
+  border-bottom: 1px solid #CCC9B8 !important;
+  border-radius: 12px; padding: 20px 24px;
+  color: #32312D !important;
   transition: all .2s ease;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 24px;
-  align-items: center;
+  display: grid; grid-template-columns: auto 1fr auto;
+  gap: 24px; align-items: center;
 }
-.rc-guide a.rc-path-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rc-guide a.rc-path-card:hover { border-color: var(--scale); border-bottom: 1px solid var(--scale) !important; box-shadow: 0 4px 16px rgba(255,88,16,.15); transform: translateY(-2px); text-decoration: none !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-path-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-path-card:hover {
+  border-color: #FF5810 !important;
+  border-bottom: 1px solid #FF5810 !important;
+  box-shadow: 0 4px 16px rgba(255,88,16,0.15);
+  transform: translateY(-2px);
+  color: #32312D !important;
+}
 
-.rc-path-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--brightgray); border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0; }
+.rc-path-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: #F1EFE3; border: 1px solid rgba(0,0,0,0.05); flex-shrink: 0;
+}
 .rc-path-icon img { width: 24px; height: 24px; object-fit: contain; }
 .rc-path-content { min-width: 0; }
-.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--offblack); text-decoration: none !important; }
-.rc-path-content p { font-size: .92rem; color: var(--gray); line-height: 1.5; margin: 0; text-decoration: none !important; }
-.rc-path-arrow { color: var(--orange); font-weight: 700; font-size: .9rem; text-decoration: none !important; white-space: nowrap; }
+.rc-path-content h3 { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: #0D0D0B; }
+.rc-path-content p { font-size: .92rem; color: #807D73; line-height: 1.5; margin: 0; }
+.rc-path-arrow { color: #FF8200; font-weight: 700; font-size: .9rem; white-space: nowrap; }
 
 /* ── BOTTOM CTA ── */
-.rc-starter-cta { background: var(--brightgray); border: 1px solid var(--lightgray); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 56px; }
-.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: var(--offblack); }
-.rc-starter-text p { margin: 0; font-size: .95rem; color: var(--darkgray); line-height: 1.5; }
+.rc-starter-cta {
+  background: #F1EFE3; border: 1px solid #CCC9B8; border-radius: 16px;
+  padding: 24px 32px; display: flex; align-items: center;
+  justify-content: space-between; gap: 24px; margin-bottom: 56px;
+}
+.rc-starter-text h3 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 800; color: #0D0D0B; }
+.rc-starter-text p { margin: 0; font-size: .95rem; color: #32312D; line-height: 1.5; }
 
-/* rc-btn-secondary — armor override on base + hover */
+/* rc-btn-secondary — double-prefix + :not() → (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-secondary {
   display: inline-flex; align-items: center; gap: 8px;
-  background: transparent; color: var(--offblack) !important;
-  text-decoration: none !important;
+  background: transparent; color: #0D0D0B !important;
   padding: 11px 22px; border-radius: 10px;
   font-weight: 700; font-size: .9rem;
-  border: 2px solid var(--offblack);
-  border-bottom: 2px solid var(--offblack) !important;
+  border: 2px solid #0D0D0B;
+  border-bottom: 2px solid #0D0D0B !important;
   white-space: nowrap; transition: all .2s;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-secondary:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-secondary:hover {
-  background: var(--offblack) !important;
-  color: var(--yellow) !important;
-  border: 2px solid var(--offblack) !important;
-  border-bottom: 2px solid var(--offblack) !important;
+  background: #0D0D0B !important; color: #FFD706 !important;
+  border: 2px solid #0D0D0B !important;
+  border-bottom: 2px solid #0D0D0B !important;
 }
 
 /* ── FOOTER NAV ── */
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
-.rc-footer-link { color: var(--gray); text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; }
-.rc-footer-link:hover { color: var(--orange); }
+.rc-footer-label {
+  font-weight: 800; font-size: .75rem; text-transform: uppercase;
+  letter-spacing: .8px; color: #32312D;
+  background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px;
+}
+/* Footer links — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important; font-weight: 600; font-size: .88rem;
+  transition: color .2s ease; display: inline-flex; align-items: center;
+  gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
@@ -288,14 +308,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- ── ANNOUNCEMENT BAR — hidden on load (no rc-active class) ── -->
-    <div class="rc-announce-bar" id="rcAnnounce">
+    <!-- ── ANNOUNCEMENT BAR — hidden on load; add rc-active to show ── -->
+    <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
         <strong>This Thursday:</strong> Global Office Hours — Dunning windows &amp; payment recovery with our lead CSMs.
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
-      <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
     </div>
 
     <!-- ── PILLAR HERO — no stats on pillar subpage ── -->
@@ -311,7 +330,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- ── NAVIGATION MENU — sticky + collapsed (pillar subpage) ── -->
     <details class="rc-sticky-nav-wrap">
       <summary>
-        <span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span>
+        <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
       <div class="rc-nav-drawer">
         <div class="rc-nav-drawer-inner">
@@ -319,9 +338,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/83faba29b18efa915aa8aad0182d79d0f8328da2a9d7ea16504d8ee8a3cf3677-White_Home_Icon_1.png" alt=""> Navigate Home
             </a>
-            <a href="#analytics" class="rc-sticky-link">Analytics &amp; Reporting</a>
-            <a href="#expansion" class="rc-sticky-link">Global Expansion</a>
-            <a href="#optimization" class="rc-sticky-link">Revenue Optimization</a>
+            <a href="#analytics" class="rc-sticky-link">Analytics &amp; reporting</a>
+            <a href="#expansion" class="rc-sticky-link">Global expansion</a>
+            <a href="#optimization" class="rc-sticky-link">Revenue optimization</a>
           </div>
         </div>
       </div>
@@ -333,7 +352,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Benchmarks</h3>
@@ -343,7 +362,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Churn reporting</h3>
@@ -353,7 +372,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Payments Hub</h3>
@@ -363,7 +382,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Data exports &amp; acquisition data</h3>
@@ -380,7 +399,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Currency &amp; localization</h3>
@@ -390,7 +409,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Local payment methods</h3>
@@ -400,7 +419,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Tax &amp; compliance</h3>
@@ -410,7 +429,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Account hierarchies</h3>
@@ -427,7 +446,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-path-list">
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Fraud &amp; chargeback management</h3>
@@ -437,7 +456,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>Revenue recognition</h3>
@@ -447,7 +466,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="#" class="rc-path-card">
           <div class="rc-path-icon">
-            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon" />
+            <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale icon">
           </div>
           <div class="rc-path-content">
             <h3>App management &amp; integrations</h3>
@@ -467,7 +486,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <a href="https://navigate.recurly.com/global-office-hours/" class="rc-btn-secondary" target="_blank" rel="noopener noreferrer">Register for Office Hours</a>
     </div>
 
-    <!-- ── FOOTER NAV — pillar subpage: one section (on-page anchors) + utility row ── -->
+    <!-- ── FOOTER NAV — pillar subpage: on-page anchors only + utility row ── -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
