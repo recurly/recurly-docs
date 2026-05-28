@@ -76,8 +76,8 @@ metadata:
   </div>
 
   <p style="margin: 0; font-size: 16px; line-height: 1.5;">
-    <strong style="font-weight: 700;">This page is updated each month.</strong> <br>
-    If you're subscribed to Recurly Navigate communications, you'll receive an updated calendar each month, but you can also bookmark this page and check in on your own time!<br<br>><strong>Happy Navigating,</strong><br>The Recurly Navigate Team
+    <strong style="font-weight: 700;">This page is updated each month.</strong> <br><br>
+    If you're subscribed to Recurly Navigate communications, you'll receive an updated calendar each month, but you can also bookmark this page and check in on your own time!<br><br><strong>Happy Navigating,</strong><br>The Recurly Navigate Team
 
   </p>
 
