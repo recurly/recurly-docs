@@ -13,29 +13,28 @@ metadata:
 <HTMLBlock>{`
 <div style="background-color: #FDFBF4; padding: 40px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #000000; max-width: 750px; margin: 0 auto; border-radius: 8px;">
 
-<div style="margin: 0 0 16px 0;">
-  <div style="color: #E27210; font-size: 24px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">May 2026</div>
-  <h1 style="color: #E27210; font-size: 48px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming Events</h1>
+  <div style="margin: 0 0 16px 0;">
+    <div style="color: #E27210; font-size: 24px; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;">June 2026</div>
+    <h1 style="color: #E27210; font-size: 48px; font-weight: 700; line-height: 1.1; margin: 0;">Upcoming events</h1>
   </div>
 
   <p style="font-size: 16px; margin: 0 0 32px 0; line-height: 1.5;">
-    As your Customer Success Manager, I want to make sure it's as easy as possible for you to find all the events that will help drive success at your business. Below are this month's key webinars and office hours, and sign up links below.
+    As your Customer Success Manager, I want to make sure it's as easy as possible for you to find all the events that will help drive success at your business. Below are this month's office hours and sign up links.
   </p>
 
-  <div style="background-color: #EFEFE8; border-radius: 16px; padding: 32px; margin-bottom: 24px;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
-      <h2 style="font-size: 26px; font-weight: 700; margin: 0; line-height: 1.3;">Recurly Payments Hub:<br>Your new payment analytics dashboard</h2>
-      <div style="background-color: #FFD400; font-weight: 700; font-size: 12px; padding: 8px 16px; border-radius: 24px; text-transform: uppercase; white-space: nowrap; margin-left: 16px;">
-        Lunch & Learn
-      </div>
+  <div style="background-color: #EFEFE8; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
+    <div>
+      <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">Recurly EMEA Office Hours:<br>Serving our global customers!</h2>
+      <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;"><strong style="font-weight: 700;">We're expanding! Join Office Hours with Christian Oldroyd<br>Senior CSM</strong> out of our London office to serve additional time zones.</p>
+      <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
+        Wednesday, June 3rd | 10:30 AM BST – <a href="https://recurly.registration.goldcast.io/events/0c804347-022c-40bc-8bab-60057744d769?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
+        Wednesday, June 10th | 10:30 AM BST – <a href="https://recurly.registration.goldcast.io/events/b5698a8f-e66a-43c6-add6-5ef1f82909d1?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
+        Wednesday, June 17th | 10:30 AM BST – <a href="https://recurly.registration.goldcast.io/events/e6c2e3df-c84f-4cfe-aa88-e9bcfec76dd1?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
+      </p>
     </div>
-    <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.5;">
-      <strong style="font-weight: 700;">You asked, and we listened. A full picture of your payment performance is now available in one place.</strong><br>
-      Learn what's in the hub, what each metric means, and how to put it to work for you.
-    </p>
-    <p style="margin: 0; font-size: 16px; font-weight: 700;">
-      Thursday, May 7th | 1:00PM CT – <a href="https://navigate.recurly.com/lunch-and-learn/new-payment-hub/" target="_blank"; style="color: #000000; text-decoration: underline;">click here</a> to register
-    </p>
+    <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
+      <img src="https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Christian Oldroyd">
+    </div>
   </div>
 
   <div style="background-color: #FCA048; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
@@ -44,8 +43,7 @@ metadata:
       <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's data dashboards?</p>
       <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
         Join Office Hours with Patrick Rizzo, Senior CSM<br>
-        Wednesday, May 6th | 3:00 PM CT – <a href="https://recurly.registration.goldcast.io/events/04bfde1e-1317-4289-8370-7636d961fbe5?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a><br>
-        Wednesday, May 27th | 3:00 PM CT – <a href="https://recurly.registration.goldcast.io/events/2550cc06-afd3-4823-9357-5dc27c017962?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a>
+        Wednesday, June 17th | 3:00 PM CT – <a href="https://recurly.registration.goldcast.io/events/ea1e847e-7b15-410f-b406-e8886c1d927d?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
@@ -59,7 +57,8 @@ metadata:
       <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's churn tools?</p>
       <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
         Join Office Hours with Julia Lackner, CSM<br>
-        Monday, May 11th | 12:30 PM CT – <a href="https://recurly.registration.goldcast.io/events/4457f490-9921-4594-a4ff-8631684c12b8?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a>
+        Monday, June 1st | 12:30 PM CT – <a href="https://recurly.registration.goldcast.io/events/34549592-81c7-4d98-b7d6-998a241d71f7?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a><br>
+        Monday, June 22nd | 12:30 PM CT – <a href="https://recurly.registration.goldcast.io/events/fda399f1-951b-4e3d-8829-b481a2763325?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
@@ -73,8 +72,7 @@ metadata:
       <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 1.4;">Or just want to learn more about Recurly's acquisition strategies?</p>
       <p style="margin: 0; font-size: 16px; font-weight: 700; line-height: 1.4;">
         Join Office Hours with Santi Gomez, CSM<br>
-        Friday, May 1st| 11:00 AM CT – <a href="https://recurly.registration.goldcast.io/events/5bcffcae-a856-495f-ad08-0d3974fab667?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a><br>
-        Friday, May 22nd | 11:00 AM CT – <a href="https://recurly.registration.goldcast.io/events/5ab3e35c-832b-4e17-8d84-1833f75ec747?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank"; style="color: #000000; text-decoration: underline;">Sign up here</a>
+        Friday, June 12th | 11:00 AM CT – <a href="https://recurly.registration.goldcast.io/events/bf9dbe07-a296-4b23-b029-53f1c099199e?referrer_page=b2fdd0c2-03a5-445b-a0ec-a2b4cf11fdb0" target="_blank" style="color: #0d0d0d !important; text-decoration: underline !important;">Sign up here</a>
       </p>
     </div>
     <div style="width: 120px; height: 120px; background-color: #FFD400; border-radius: 50%; overflow: hidden; flex-shrink: 0; display: flex; justify-content: center; align-items: center;">
@@ -83,8 +81,9 @@ metadata:
   </div>
 
   <p style="margin: 0; font-size: 16px; line-height: 1.5;">
-    <strong style="font-weight: 700;">Need something on an earlier timezone?</strong> Don't worry! Our EMEA based CSM team has you covered. We host weekly office hours for any topic you may need help on.<br>
-    Simply <a href="https://navigate.recurly.com/global-office-hours/" target="_blank"; style="color: #000000; text-decoration: underline; font-weight: 700;">sign up here</a>.
+    <strong style="font-weight: 700;">This calendar is updated monthly.</strong> <br><br>
+    If you're subscribed to Recurly Navigate communications, you'll receive an updated calendar each month. Or feel free to bookmark this page and check in on your own time!<br><br><strong>Happy Navigating,</strong><br>The Recurly Navigate Team
+
   </p>
 
 </div>
