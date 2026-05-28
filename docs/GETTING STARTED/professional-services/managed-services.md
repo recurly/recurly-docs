@@ -15,16 +15,6 @@ metadata:
     <strong>Additional cost</strong><br/>
     Managed Services requires an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">support@recurly.com</a> for pricing details.
   </div>
-  ### Prerequisites
-  <ul class="rp-list">
-    <li>You've purchased Managed Services and have an active Order Form</li>
-    <li>You can submit requests through the Online Service Portal</li>
-  </ul>
-  ### Limitations
-  <ul class="rp-list">
-    <li>Services are delivered remotely during business hours only (9:00 AM – 5:00 PM ET, Monday through Friday, excluding US public holidays)</li>
-    <li>Work is limited to the prepaid hours purchased for the billing period — no overages, and no rollover</li>
-  </ul>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
     <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
@@ -39,6 +29,20 @@ metadata:
     <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">11</span>FAQs</a>
   </div>
 </div>
+
+### Prerequisites
+
+<ul class="rp-list">
+  <li>You've purchased Managed Services and have an active Order Form</li>
+  <li>You can submit requests through the Online Service Portal</li>
+</ul>
+
+### Limitations
+
+<ul class="rp-list">
+  <li>Services are delivered remotely during business hours only (9:00 AM – 5:00 PM ET, Monday through Friday, excluding US public holidays)</li>
+  <li>Work is limited to the prepaid hours purchased for the billing period — no overages, and no rollover</li>
+</ul>
 
 # Definition
 
