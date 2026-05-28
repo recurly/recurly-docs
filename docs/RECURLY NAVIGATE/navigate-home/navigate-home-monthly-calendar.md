@@ -19,7 +19,7 @@ metadata:
   </div>
 
   <p style="font-size: 16px; margin: 0 0 32px 0; line-height: 1.5;">
-    This calendar makes it as easy as possible for you to find all the events that will help drive success at your business. Below are this month's office hours and sign up links.
+    This calendar makes it easy to find events that will help drive success at your business. Below are this month's Customer Success Office Hours and sign up links. We're here to answer any question you have! 
   </p>
 
   <div style="background-color: #EFEFE8; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px;">
