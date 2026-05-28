@@ -1,10 +1,10 @@
 ---
 title: Navigate monthly calendar
 excerpt: >-
-  Need help with analytics? View our May events for live CSM support on the new
-  Payments Hub, acquisition or retention strategy, churn, or data. Sign up for
-  Customer Success Office Hours and webinars on our calendar. This page is
-  updated each month.
+  Need help with analytics? View our June events for live CSM support for
+  reporting, acquisition or retention strategy, churn, or any question you have.
+  Sign up below. This page is updated with Office Hours, Navigate events,
+  Recurly webinars, and more each month.
 deprecated: false
 hidden: false
 metadata:
