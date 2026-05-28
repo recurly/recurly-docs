@@ -306,4 +306,58 @@ This is the overview paragraph. Blank lines between children inside rp-page.
 
 ---
 
+---
+
+## GROUP G — `rp-benefit` blank line cases
+
+### G1 — `rp-benefit` tight (no blank lines, icon + strong + span all consecutive)
+
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Benefit title</strong>
+    <span>Benefit description — tight layout, no blank lines inside rp-benefit.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Benefit title two</strong>
+    <span>Benefit description two — also tight.</span>
+  </div>
+</div>
+
+**Expected:** Both benefit cards render with icon, bold title, and description text.
+
+---
+
+### G2 — `rp-benefit` with blank line between icon div and strong/span
+
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon">
+      <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+    </div>
+
+    <strong>Benefit title</strong>
+    <span>Blank line between icon div and strong/span — mirrors the broken pattern.</span>
+  </div>
+</div>
+
+**Expected:** SHOULD break — strong and span render as code blocks. Confirms the cause.
+
+---
+
+### G3 — `rp-benefit` icon div on one line, tight, strong/span on next lines
+
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Benefit title</strong>
+    <span>Icon div is on one line, strong and span follow with no blank lines.</span>
+  </div>
+</div>
+
+**Expected:** Renders correctly — confirms single-line icon div is fine.
+
+---
+
 *End of test page. Record which tests pass and which fail, then report back.*
