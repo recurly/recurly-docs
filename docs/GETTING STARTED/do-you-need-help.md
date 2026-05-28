@@ -95,7 +95,7 @@ Visit any of the sections in our documentation hub to explore product documentat
   <Card title="Product documentation" href="https://docs.recurly.com/recurly-subscriptions" target="_blank" icon="fa-book">
     Features, settings, and how-to guides for every part of the Recurly platform.
   </Card>
-  <Card title="API guides" href="https://docs.recurly.com/recurly-subscriptions/docs/" target="_blank" icon="fa-code">
+  <Card title="API guides" href="https://docs.recurly.com/recurly-subscriptions/docs/quick-start-guide" target="_blank" icon="fa-code">
     Walkthroughs and integration patterns to help you build on Recurly.
   </Card>
   <Card title="API reference" href="https://docs.recurly.com/recurly-subscriptions/reference" target="_blank" icon="fa-terminal">
