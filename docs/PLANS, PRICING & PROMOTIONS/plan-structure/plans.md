@@ -74,8 +74,7 @@ next:
   <a class="rp-zoom-label" href="#zoom-bc0ddaa4c88b375933ababdc2e75f4af992b177c">
     <img class="rp-zoom-img"
          src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png"
-         alt="New Plan button on the plans list page"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="New Plan button on the plans list page" />
   </a>
   <a id="zoom-bc0ddaa4c88b375933ababdc2e75f4af992b177c" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/bc0ddaa4c88b375933ababdc2e75f4af992b177cef51df4efeed8f7f79b4f3f1-image.png" alt="" />
@@ -95,8 +94,7 @@ next:
   <a class="rp-zoom-label" href="#zoom-085cd9d0ffd02a7545515452a48328200dfbedb1">
     <img class="rp-zoom-img"
          src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png"
-         alt="Plan details form fields"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Plan details form fields" />
   </a>
   <a id="zoom-085cd9d0ffd02a7545515452a48328200dfbedb1" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/085cd9d0ffd02a7545515452a48328200dfbedb1cd74a1c4a6bd6c2444b1fe24-image.png" alt="" />
@@ -116,8 +114,7 @@ next:
   <a class="rp-zoom-label" href="#zoom-1e6fd5ac40d29b88bed2635fcbed5ad786025c3d">
     <img class="rp-zoom-img"
          src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png"
-         alt="Currency picker in plan configuration"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Currency picker in plan configuration" />
   </a>
   <a id="zoom-1e6fd5ac40d29b88bed2635fcbed5ad786025c3d" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/1e6fd5ac40d29b88bed2635fcbed5ad786025c3d2f68fc2cfcb988aa09ab1d4d-planConfiguration_currencyPicker.png" alt="" />
@@ -128,8 +125,7 @@ next:
   <a class="rp-zoom-label" href="#zoom-33e11f60b02b189a65fe8e52c1c763b8bc1d0ae2">
     <img class="rp-zoom-img"
          src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png"
-         alt="Free trial configuration options"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Free trial configuration options" />
   </a>
   <a id="zoom-33e11f60b02b189a65fe8e52c1c763b8bc1d0ae2" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/33e11f60b02b189a65fe8e52c1c763b8bc1d0ae21c433c268c5845d3ebb02443-image.png" alt="" />
@@ -140,8 +136,7 @@ next:
   <a class="rp-zoom-label" href="#zoom-6cd83f00615d5d2814588ceb461b5f2b7e82903e">
     <img class="rp-zoom-img"
          src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png"
-         alt="Setup fee configuration"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Setup fee configuration" />
   </a>
   <a id="zoom-6cd83f00615d5d2814588ceb461b5f2b7e82903e" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/6cd83f00615d5d2814588ceb461b5f2b7e82903ea10a18f1ff005926ca1d61f2-image.png" alt="" />
@@ -161,8 +156,7 @@ next:
   <a class="rp-zoom-label" href="#zoom-efa80b5db6b52990a9d51eb53785e7e6118dba20">
     <img class="rp-zoom-img"
          src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png"
-         alt="Billing configuration section"
-         style="display:block; width:90%; margin:16px auto; border-radius:8px" />
+         alt="Billing configuration section" />
   </a>
   <a id="zoom-efa80b5db6b52990a9d51eb53785e7e6118dba20" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/efa80b5db6b52990a9d51eb53785e7e6118dba207eac402e947f614e56352188-billingConfiguration.png" alt="" />
@@ -182,8 +176,7 @@ next:
   <a class="rp-zoom-label" href="#zoom-acf01be91a70711bb406a12ae7e6c942b6c1e50f">
     <img class="rp-zoom-img"
          src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png"
-         alt="Pricing model selector"
-         style="display:block; width:90%; margin:16px auto; border-radius:8px" />
+         alt="Pricing model selector" />
   </a>
   <a id="zoom-acf01be91a70711bb406a12ae7e6c942b6c1e50f" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/acf01be91a70711bb406a12ae7e6c942b6c1e50f064a95653ed52b33058b713f-pricingModel.png" alt="" />
@@ -204,8 +197,7 @@ Price segments let you define multiple price points for a single plan within the
   <a class="rp-zoom-label" href="#zoom-33c2e19de5efdd80e17eec6a136477329165f932">
     <img class="rp-zoom-img"
          src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png"
-         alt="Price segments configuration"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Price segments configuration" />
   </a>
   <a id="zoom-33c2e19de5efdd80e17eec6a136477329165f932" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/33c2e19de5efdd80e17eec6a136477329165f9326657a0067ad33df32e57a5b1-Screenshot_2025-11-03_at_1.15.33_PM.png" alt="" />
@@ -270,8 +262,7 @@ Price segments let you define multiple price points for a single plan within the
   <a class="rp-zoom-label" href="#zoom-74aa52e78f94702312f92e6fcafbbb00e8e7528e">
     <img class="rp-zoom-img"
          src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png"
-         alt="Billing details fields"
-         style="display:block; width:90%; margin:16px auto; border-radius:8px" />
+         alt="Billing details fields" />
   </a>
   <a id="zoom-74aa52e78f94702312f92e6fcafbbb00e8e7528e" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/74aa52e78f94702312f92e6fcafbbb00e8e7528eaacb5095a12d1c12261e4700-image.png" alt="" />
@@ -290,8 +281,7 @@ Price segments let you define multiple price points for a single plan within the
   <a class="rp-zoom-label" href="#zoom-ace61210674443e1e3313351841cff1758a81a7d">
     <img class="rp-zoom-img"
          src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png"
-         alt="Plan add-ons section"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Plan add-ons section" />
   </a>
   <a id="zoom-ace61210674443e1e3313351841cff1758a81a7d" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/ace61210674443e1e3313351841cff1758a81a7db38f410e62a65578db65c699-image.png" alt="" />
@@ -306,8 +296,7 @@ Optional products that can be included in a recurring subscription's invoices. A
   <a class="rp-zoom-label" href="#zoom-2016200d6fed0e474767bb6da138c4ad3f2091dd">
     <img class="rp-zoom-img"
          src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png"
-         alt="Dunning campaign selector"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Dunning campaign selector" />
   </a>
   <a id="zoom-2016200d6fed0e474767bb6da138c4ad3f2091dd" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/2016200d6fed0e474767bb6da138c4ad3f2091dd3b4783dfe1431da5c86ac551-dunningCampaign.png" alt="" />
@@ -322,8 +311,7 @@ Select the dunning campaign to apply to this plan.
   <a class="rp-zoom-label" href="#zoom-36c3e1eec931e2d3b84a0a1ca45bba5cb9601a35">
     <img class="rp-zoom-img"
          src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png"
-         alt="Customer emails configuration"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Customer emails configuration" />
   </a>
   <a id="zoom-36c3e1eec931e2d3b84a0a1ca45bba5cb9601a35" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/36c3e1eec931e2d3b84a0a1ca45bba5cb9601a358df9d48ac2f79672a58bb00c-customerEmails.png" alt="" />
@@ -338,8 +326,7 @@ Check the boxes to enable email communication for specific billing events. You c
   <a class="rp-zoom-label" href="#zoom-13991f75755f5e278537208a94c860cdb87a6801">
     <img class="rp-zoom-img"
          src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png"
-         alt="Hosted Payment Pages settings"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Hosted Payment Pages settings" />
   </a>
   <a id="zoom-13991f75755f5e278537208a94c860cdb87a6801" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/13991f75755f5e278537208a94c860cdb87a6801883974fac520d0d1ef2334f9-legacyHPP.png" alt="" />
@@ -365,10 +352,10 @@ Check the boxes to enable email communication for specific billing events. You c
   <p>After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration to direct customers to purchase it.</p>
   <span class="rp-zoom">
   <a class="rp-zoom-label" href="#zoom-5812722bde5118573fa786b4a575e1b615b86880">
-    <img class="rp-zoom-img"
+    <img class="rp-zoom-img rp-zoom-img-small"
          src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png"
          alt="Checkout configuration button"
-         style="display:block; width:280px; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         class="rp-zoom-img rp-zoom-img-small" />
   </a>
   <a id="zoom-5812722bde5118573fa786b4a575e1b615b86880" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="" />
@@ -393,8 +380,7 @@ Check the boxes to enable email communication for specific billing events. You c
   <a class="rp-zoom-label" href="#zoom-be953bbb65864484f35eb5cb51428ed06b2c966e">
     <img class="rp-zoom-img"
          src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png"
-         alt="Plan row hover actions showing Edit, Duplicate, and Delete options"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Plan row hover actions showing Edit, Duplicate, and Delete options" />
   </a>
   <a id="zoom-be953bbb65864484f35eb5cb51428ed06b2c966e" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/be953bbb65864484f35eb5cb51428ed06b2c966e5fe83ceacc2696557e976bb6-image.png" alt="" />
@@ -433,8 +419,7 @@ Check the boxes to enable email communication for specific billing events. You c
   <a class="rp-zoom-label" href="#zoom-3b6b286cc277c222905012f1fcd013f9235bdcb5">
     <img class="rp-zoom-img"
          src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png"
-         alt="Duplicate plan form with -copy appended to name and code fields"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Duplicate plan form with -copy appended to name and code fields" />
   </a>
   <a id="zoom-3b6b286cc277c222905012f1fcd013f9235bdcb5" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/3b6b286cc277c222905012f1fcd013f9235bdcb54decb84f7d011e2cad611e78-dup_planDetails.png" alt="" />
@@ -477,8 +462,7 @@ Check the boxes to enable email communication for specific billing events. You c
   <a class="rp-zoom-label" href="#zoom-ced811d9006f4cb407e9866bc6bbb04513fa104e">
     <img class="rp-zoom-img"
          src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png"
-         alt="Delete plan confirmation dialog"
-         style="display:block; width:90%; margin:16px auto; border:1px solid #CCC9B8; border-radius:8px" />
+         alt="Delete plan confirmation dialog" />
   </a>
   <a id="zoom-ced811d9006f4cb407e9866bc6bbb04513fa104e" class="rp-zoom-overlay" href="#rp-close">
     <img src="https://files.readme.io/ced811d9006f4cb407e9866bc6bbb04513fa104e2f3ec05dfc31d00f16acaca3-delete.png" alt="" />
