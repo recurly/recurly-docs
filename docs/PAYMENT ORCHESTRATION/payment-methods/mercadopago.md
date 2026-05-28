@@ -19,27 +19,27 @@ Recurly currently supports Mercado Pago transactions on [Ebanx](https://docs.rec
 
 ### Use cases
 
-* **Seamless subscriptions:** Mercado Pago enables effortless sign-ups for subscriptions, by allowing customers to pay merchants by interacting with their bank app through the checkout flow.
-* **Efficient checkout:** Mercado Pago ensures a quick and secure checkout process, catering to both mobile and desktop users.
+- **Seamless subscriptions:** Mercado Pago enables effortless sign-ups for subscriptions, by allowing customers to pay merchants by interacting with their bank app through the checkout flow.
+- **Efficient checkout:** Mercado Pago ensures a quick and secure checkout process, catering to both mobile and desktop users.
 
 ### Prerequisites & supported gateways
 
-* A connection with Ebanx gateway if your Integration is via Recurly.JS.
-* Your site must support transactions in one of **BRL**, **ARS**, **CPL**, **MXN**, or **UYU**.
-* Mercado Pago is supported on Ebanx in the following countries: Brazil, Argentina, Chile, Mexico, and Uruguay.
+- A connection with Ebanx gateway if your Integration is via Recurly.JS.
+- Your site must support transactions in one of **BRL**, **ARS**, **CLP**, **MXN**, or **UYU**.
+- Mercado Pago is supported on Ebanx in the following countries: Brazil, Argentina, Chile, Mexico, and Uruguay.
 
 ### Limitations
 
-* Supports transactions in **BRL**, **ARS**, **CPL**, **MXN**, or **UYU** currencies only as specified by Mercado Pago.
-* The integration process requires setting up with Ebanx  and Recurly.js and demands technical proficiency.
-* One-time customer or merchant initiated MercadoPago transactions (including force collections) are not supported. Only subscription signup and automatic renewals are supported.
-* Other limitations include:
-  * Invoice / Calendar Aggregation
-  * Parent/Child Accounts
-  * Multiple Subscriptions per Account is not supported
-  * Proration during a Subscription Upgrade or change is not supported
-  * Funds verification and Wallet payment instrument visibility are not supported
-  * Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead.
+- Supports transactions in **BRL**, **ARS**, **CLP**, **MXN**, or **UYU** currencies only as specified by Mercado Pago.
+- The integration process requires setting up with Ebanx  and Recurly.js and demands technical proficiency.
+- One-time customer or merchant initiated MercadoPago transactions (including force collections) are not supported. Only subscription signup and automatic renewals are supported.
+- Other limitations include:
+  - Invoice / Calendar Aggregation
+  - Parent/Child Accounts
+  - Multiple Subscriptions per Account is not supported
+  - Proration during a Subscription Upgrade or change is not supported
+  - Funds verification and Wallet payment instrument visibility are not supported
+  - Coupons are supported however, **100% coupons during signup cannot be supported** as e-mandate creation is a requirement for this payment method. Please use a free trial option instead.
 
 # Description
 
@@ -51,28 +51,28 @@ Available for use with Recurly.js for subscription signups for Recurly Merchants
 
 ### Supported features
 
-* **Subscriptions** Customers can use their Mercado Pago wallet to sign up for subscriptions. If one-time transactions are necessary, MercadoPago is not supported.
+- **Subscriptions** Customers can use their Mercado Pago wallet to sign up for subscriptions. If one-time transactions are necessary, MercadoPago is not supported.
 
-* **R.js Token utilization:** Use Mercado Pago Recurly.js tokens to carry out transactions via V3 Recurly endpoints.
+- **R.js Token utilization:** Use Mercado Pago Recurly.js tokens to carry out transactions via V3 Recurly endpoints.
 
-* **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
+- **Platform support:** Supports transaction flows on both mobile and desktop platforms, offering flexibility for users.
 
-* **Automatic Retries**: Supports up to 3 reattempts after a renewal failure automatically, when the payment method response indicates an insufficient funds or a payment cancellation. Read more about retries in our [Static Retry documentation.](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/specialized-retry-strategies)
+- **Automatic Retries**: Supports up to 3 reattempts after a renewal failure automatically, when the payment method response indicates an insufficient funds or a payment cancellation. Read more about retries in our [Static Retry documentation.](https://docs.recurly.com/recurly-subscriptions/docs/static-retries#/specialized-retry-strategies)
 
 ## Customer bank interactions
 
 **What customers can do within their bank apps:** Customers can cancel enrollments (subscription agreements)  from within their banking application.
 
-* Users can cancel the entire subscription by revoking their enrollment for that subscription. This will cause a complete cancellation of the active subscription within Recurly.
+- Users can cancel the entire subscription by revoking their enrollment for that subscription. This will cause a complete cancellation of the active subscription within Recurly.
 
 ## Required fields
 
 Mercado Pago will require you always send certain data:
 
-* Customer Billing Address
-* Customer Email Address
-* Customer Phone Number
-* Tax ID / Tax ID Type when the Region requires it (Brazil)
+- Customer Billing Address
+- Customer Email Address
+- Customer Phone Number
+- Tax ID / Tax ID Type when the Region requires it (Brazil)
 
 # FAQs
 
@@ -80,7 +80,7 @@ Mercado Pago will require you always send certain data:
 
 **A**: Mercado Pago is directly supported through the below gateway offering. Refer to the associated documentation for setup and troubleshooting guidance:
 
-* [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway)
+- [Ebanx](https://docs.recurly.com/recurly-subscriptions/docs/ebanx-gateway)
 
 #### **Q: I am trying to make a line item purchase with this payment method. Why isn't it working?**
 
@@ -90,6 +90,8 @@ Mercado Pago will require you always send certain data:
 
 **A**: Mercado Pago is supported through Recurly.js and our V3 APIs. You can find links to our API guide and Recurly.js guides below:
 
-* <Anchor label="V3 API Guide" target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html">V3 API Guide</Anchor>
-* <Anchor label="Recurly.js Overview " target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/overview-recurlyjs#/">Recurly.js Overview </Anchor>
-* <Anchor label="Mercado Pago Integration Guide" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide">Mercado Pago Integration Guide</Anchor>
+- <Anchor target="_blank" href="https://recurly.com/developers/api/v2021-02-25/index.html">V3 API Guide</Anchor>
+- <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/overview-recurlyjs#/">Recurly.js Overview&#x20;</Anchor>
+- <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/mercado-pago-integration-guide">Mercado Pago Integration Guide</Anchor>
+
+<br />
