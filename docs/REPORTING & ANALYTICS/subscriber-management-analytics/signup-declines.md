@@ -48,7 +48,7 @@ View your signup decline rate trend over time, so you can monitor signup rate an
 
 **Note:** The amount of signups represented in the current month will be lower than previous month since signups will continually be generated as the month continues.
 
-<Image align="center" border={true} src="https://files.readme.io/ba3e22ac74825cc4b8d60670e829fd951b1b3e592dcfb516fbb49c9e8d8e03c8-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/a21beec6ed8c6b64c80b7a6f6b68bacbde9ba61e17d105967b7d5827b36aa2b2-image.png" className="border" />
 
 ## Decline reasons
 
