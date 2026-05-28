@@ -36,21 +36,20 @@ The "Account" section of Recurly's reporting & analytics offers a comprehensive 
 2. Assess the contributions of new accounts, returning accounts, and churned accounts to the net change.
 3. Identify any significant trends or patterns that can inform strategic decision-making.
 
-<Image align="center" width="75% " src="https://files.readme.io/7cf8f09-image.png" />
+   <Image align="center" border={true} src="https://files.readme.io/1d0059e4bf534566004e1b03c4708d6b2d37f12b0b7a504a57f64f72f680ce44-image.png" className="border" />
+4. This chart shows the number of open accounts over time.  You can see the breakdown by previously existing accounts, new accounts and closed accounts.
+   * **Previously Existing Accounts:** Accounts that were created prior to the specific timeframe.
+   * **New Accounts - Accounts**:  Accounts that were created during the specific timeframe.
+   * **Closed Accounts - Accounts**: Accounts that were closed during the specific timeframe.
+5. The number above each bar represents the total number of open accounts for the given timeframe.
+6. Hover over any point on the bar to view the number of accounts for the selected timeframe.
+7. Gain insights into the fluctuations in account counts and understand how the account base has evolved over time.
+8. Click on any bar in the chart to view the total number of accounts for the selected timeframe.
+9. Analyze the account trends and identify any significant changes or patterns.
+10. Use the interactive features of the widget to navigate through different timeframes and gain a comprehensive understanding of account counts.
 
-1. This chart shows the number of open accounts over time.  You can see the breakdown by previously existing accounts, new accounts and closed accounts.
-
-* **Previously Existing Accounts:** Accounts that were created prior to the specific timeframe.
-* **New Accounts - Accounts**:  Accounts that were created during the specific timeframe.
-* **Closed Accounts - Accounts**: Accounts that were closed during the specific timeframe.
-
-2. The number above each bar represents the total number of open accounts for the given timeframe.
-3. Hover over any point on the bar to view the number of accounts for the selected timeframe.
-4. Gain insights into the fluctuations in account counts and understand how the account base has evolved over time.
-5. Click on any bar in the chart to view the total number of accounts for the selected timeframe.
-6. Analyze the account trends and identify any significant changes or patterns.
-7. Use the interactive features of the widget to navigate through different timeframes and gain a comprehensive understanding of account counts.
-
-<Image align="center" width="75% " src="https://files.readme.io/076fbe9-image.png" />
+    <Image align="center" border={true} src="https://files.readme.io/b3c95c9fbd41ba2fd92440f4ac229d3bdaef3878b54c7cd3aa7c3566d0bd4ea1-image.png" className="border" />
 
 This table is a representation of the chart above, it shows the specific number for each timeframe and account group as well as the net and total number of accounts.
+
+<br />
