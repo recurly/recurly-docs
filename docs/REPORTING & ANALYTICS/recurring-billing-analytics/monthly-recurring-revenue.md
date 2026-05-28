@@ -32,9 +32,7 @@ The Monthly Recurring Revenue (MRR) dashboard is a vital tool for subscription-b
 
 The Monthly Recurring Revenue (MRR) dashboard provides valuable insights into your business's growth and revenue momentum by tracking total MRR and MRR changes. MRR represents the predictable revenue that a business can expect on a monthly basis and is a key metric for subscription-based businesses. It's important to note that MRR is not the same as reportable Generally Accepted Accounting Principles (GAAP) revenue and should not be treated as such.
 
-To ensure access to up-to-date information, utilize the widgets on this dashboard to refresh the screen. The data is updated multiple times a day, and you can check the widget at the bottom of the dashboard to verify the time of the last update.
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/91e2f4a-image.png" />
+The data is updated multiple times a day, and you can check the widget at the bottom of the dashboard to verify the time of the last update.
 
 The MRR dashboard now offers a more nuanced view of your monthly recurring revenue, including insights into failed transactions, transactions in dunning, discounts, and expected MRR.
 
@@ -51,7 +49,7 @@ Examples of adjustments included in the MRR calculation:
 
 The following are **NOT** included in the MRR calculation:
 
-* One-time charges without start\_date and end\_date
+* One-time charges without start_date and end_date
 * One-time credits
 * Taxes
 * Usage-based billing amounts
@@ -66,9 +64,11 @@ For sites that support multiple currencies, the default view shows total MRR acr
 
 For both the Total MRR graph and the MRR Break-Out we have drills for accounts, plans or add-ons.
 
-<Image align="center" alt={2372} border={true} caption="MRR Totals" title="mrr bar chart.png" src="https://files.readme.io/23085f8-mrr_bar_chart.png" width="75% " />
+<Image align="center" border={true} src="https://files.readme.io/f1e965f8fbc00c3b359d588f0fb00b8bfec4e46f49309bc84b24c2f9a29e0730-image.png" className="border" />
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/0bcc8ae-image.png" />
+<br />
+
+<Image align="center" border={true} width="75% " src="https://files.readme.io/0bcc8ae-image.png" className="border" />
 
 These drills provide a detailed view of each account contributing to the data in the bar/number, sorted by total MRR. A convenient filter at the top lets you narrow down the data by specific accounts or emails.
 
@@ -96,7 +96,7 @@ In this section, the MRR can be viewed by:
 * Discounts applied to MRR
 * Total MRR (Sum of MRR, In Dunning, Expected MRR, minus Discounts)
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/01e67fa-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/9e1cce6ae5a9994bb180d575c2eb898cdc0fbec1f46c8ebb091aebc7b73a9d16-image.png" className="border" />
 
 As you can see with the MRR graph,  you have the ability to drill by account, plan or add-on and then can dive even further, as needed.
 
