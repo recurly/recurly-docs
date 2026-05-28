@@ -210,7 +210,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-hero-title">
         <h1>Pricing &amp; Packaging 101</h1>
       </div>
-      <p>Your pricing and packaging setup shapes how subscribers find, choose, and stay on your product. This path walks you through every configuration option in Recurly — from plan structure and add-ons to trials, currencies, and analytics.</p>
+      <p>Your pricing and packaging setup shapes how subscribers find, choose, and stay loyal to your product. This comprehensive learning walks you through best practices, strategy, and configuration in Recurly — from plan structure and add-ons to trials, currencies, and analytics.</p>
       <div class="rc-hero-stats">
         <div class="rc-hero-stat">
           <div class="rc-hero-stat-num">78%</div>
