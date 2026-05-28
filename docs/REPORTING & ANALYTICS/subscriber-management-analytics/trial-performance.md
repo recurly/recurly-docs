@@ -39,19 +39,19 @@ The Trial Performance Dashboard is structured into several sections, each provid
 
 This widget provides an at-a-glance view of your trial performance. It displays the current Trials Started totals, as well as totals for last month, the previous month, three months ago, and one year ago. An up arrow under each total indicates the difference between that timeframe and the Total Started value, providing a quick visual representation of the growth or decline of your trials over time.
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/a821cc1-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/88969ce3bd815c97017027c5c460d9daf8f7931ae485a38a5037fbceb30a8f0c-image.png" className="border" />
 
 ## Trial conversion rate
 
 This section features a line chart that shows the conversion rate for trial subscriptions that transitioned to paid subscriptions during the selected date range. It's important to note that "converted" means the subscription moved from a free trial to a paid subscription, either automatically or manually. However, setup fees charged while the customer is in trial aren't included in this conversion metric. Also, this dashboard doesn't track the state of the subscription after conversion. The date range and interval picker impact the date the subscription started in trial.
 
-<Image align="center" alt={2320} border={true} caption="Trial Performance Rates" title="trial conversion rate.png" src="https://files.readme.io/2c0e218-trial_conversion_rate.png" />
+<Image align="center" border={true} src="https://files.readme.io/a8e723c543b8c036cf3a2479c0aa8ce92e34bad66db709b8a8ebbb41360a3816-image.png" className="border" />
 
 ## Trial subscription status
 
 This bar chart tracks the current state of subscriptions that began as trials during the selected date range. Only subscriptions that started with a trial are included in this chart.
 
-<Image align="center" alt={2836} border={false} caption="Trial Performance Subscription Status" title="Screen Shot 2022-12-17 at 6.44.32 PM.png" src="https://files.readme.io/2b1d075-Screen_Shot_2022-12-17_at_6.44.32_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/71746a777d8ff8e5bfc2665b11545a58b110172e94923a53f61fa4c19ea88e78-image.png" className="border" />
 
 The potential states for these subscriptions are:
 
@@ -66,13 +66,13 @@ The potential states for these subscriptions are:
 
 This section provides more granular detail on the status of trial subscriptions for a selected date range.
 
-<Image align="center" alt={2840} border={false} caption="Trial Performance Subscription Status Detail" title="Screen Shot 2022-12-17 at 6.26.17 PM.png" src="https://files.readme.io/9336ab9-Screen_Shot_2022-12-17_at_6.26.17_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/64f0e46d9657cd4cfc08d2342e9164f33c26dd4713235e8480087bdb6af2899b-image.png" className="border" />
 
 It tracks the following metrics:
 
 * Trials started
 * Converted (Sum of Converted - Auto and Converted - Manual)
-* Converted - Auto
+* Converted - Automatic
 * Converted - Manual
 * Canceled
 * Payment Failed
@@ -105,9 +105,4 @@ In summary, the Trial Performance Dashboard provides a comprehensive view of you
 2. This section provides a more granular view of the status of trial subscriptions over a selected date range.
 3. Use this information to further analyze the effectiveness of your trials and to identify potential issues or areas of improvement.
 
-# Refreshing the dashboard
-
-1. To update the data shown on the "Trial Performance" dashboard, locate the refresh widget on the dashboard.
-2. Click the refresh widget to update the dashboard with the latest data.
-
-Remember, you can contact Recurly Support for further assistance if you're having trouble accessing this dashboard or if you need more in-depth information on how to interpret the data shown.
+<br />
