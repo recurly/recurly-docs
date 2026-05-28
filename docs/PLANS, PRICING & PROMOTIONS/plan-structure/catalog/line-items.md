@@ -75,7 +75,7 @@ Every invoice line item displays the following columns:
 * **Total** (only shown if tax is applied)
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Invoices in the Admin Console, Hosted Invoice page, and PDF format show only the first 500 line items. However, **Subtotal**, **Tax**, and **Total** always reflect all line items — including those beyond the first 500. To download the full set, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Invoices in the Admin Console, Hosted Invoice page, and PDF format show only the first 500 line items. However, Subtotal, Tax, and Total always reflect all line items — including those beyond the first 500. To download the full set, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</div>
 </div>
 
 ## Description and naming guidelines
