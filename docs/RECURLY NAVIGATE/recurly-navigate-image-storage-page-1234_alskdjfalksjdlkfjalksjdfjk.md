@@ -46,6 +46,8 @@ metadata:
 
 </div>
 
+![](https://files.readme.io/556f786c283fc2468e4f543ddbf3e24579a692594fc68dbc8ad4f14877ece148-Christian_Oldroyd_Customer_Success_Manager_II_1.png)
+
 <br />
 
 <br />
