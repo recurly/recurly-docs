@@ -82,7 +82,7 @@ metadata:
 
   <p style="margin: 0; font-size: 16px; line-height: 1.5;">
     <strong style="font-weight: 700;">This calendar is updated monthly.</strong> <br><br>
-    If you're subscribed to Recurly Navigate communications, you'll receive an updated calendar each month. Or feel free to bookmark this page and check in on your own time!<br><br><strong>Happy Navigating,</strong><br>The Recurly Navigate Team
+    If you have a dedicated CSM or are subscribed to Navigate, you'll receive an updated calendar each month. Feel free to bookmark this page and check in on your own time!<br><br><strong>Happy Navigating,</strong><br>Recurly Customer Success
 
   </p>
 
