@@ -350,17 +350,18 @@ Check the boxes to enable email communication for specific billing events. You c
 <div class="rp-card">
   <h3>Checkout configuration</h3>
   <p>After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration to direct customers to purchase it.</p>
-  <span class="rp-zoom">
-  <a class="rp-zoom-label" href="#zoom-5812722bde5118573fa786b4a575e1b615b86880">
-    <img class="rp-zoom-img rp-zoom-img-small"
-         src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png"
-         alt="Checkout configuration button"
-         class="rp-zoom-img rp-zoom-img-small" />
-  </a>
-  <a id="zoom-5812722bde5118573fa786b4a575e1b615b86880" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="" />
-  </a>
-</span>
+  <div class="rp-zoom-small">
+    <span class="rp-zoom">
+      <a class="rp-zoom-label" href="#zoom-5812722bde5118573fa786b4a575e1b615b86880">
+        <img class="rp-zoom-img"
+             src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png"
+             alt="Checkout configuration button" />
+      </a>
+      <a id="zoom-5812722bde5118573fa786b4a575e1b615b86880" class="rp-zoom-overlay" href="#rp-close">
+        <img src="https://files.readme.io/5812722bde5118573fa786b4a575e1b615b8688042c796f0ed304b1bcfdb1165-Screenshot_2024-10-14_at_4.57.29_PM.png" alt="" />
+      </a>
+    </span>
+  </div>
 </div>
 
 # Edit a plan
@@ -472,3 +473,5 @@ Check the boxes to enable email communication for specific billing events. You c
 <div class="rp-callout rp-callout-warning">
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> Deleting a plan is permanent and prevents new customers from subscribing to it. Existing subscriptions continue to renew, but once deleted, a plan can't be reactivated. Subscriptions tied to a deleted plan cannot be edited — including frequency, price, and add-ons.</div>
 </div>
+
+<br />
