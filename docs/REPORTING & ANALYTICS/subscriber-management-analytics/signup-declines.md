@@ -39,20 +39,22 @@ The sign-up decline rate dashboard will provide insights on sign-up transactions
 * **Gateway:** This filter allows you to see which payments didn't go through. You can look at all payment gateways together or examine one at a time to understand where issues are happening.
 * **Failure type:** The dashboard automatically shows the top 5 reasons payments fail, but you can adjust this filter to uncover more reasons behind payment issues.
 * **Payment type:** If you want to see the breakdown of failed payments by the method your customers use, this filter lets you select specific payment options to analyze.
+* **Signup Decline Type:** This filter lets you select either sign-up declines or trial conversion declines to analyze.
+* **Metric type:** This filter allows you to visualize sign-up declines by transaction count or by total amount.
 
 ## Signup declines
 
-View your signup decline rate trend over time, so you can monitor signup rate and explore any growing issues with signups. Compare a similar timeframe year over year to understand your performance. 
+View your signup decline rate trend over time, so you can monitor signup rate and explore any growing issues with signups. Compare a similar timeframe year over year to understand your performance.
 
 **Note:** The amount of signups represented in the current month will be lower than previous month since signups will continually be generated as the month continues.
 
-<Image align="center" src="https://files.readme.io/7111342-Screen_Shot_2024-06-18_at_2.39.34_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/ba3e22ac74825cc4b8d60670e829fd951b1b3e592dcfb516fbb49c9e8d8e03c8-image.png" className="border" />
 
 ## Decline reasons
 
 Dive into the specific decline reasons for invoices that failed on the initial signup attempt. These graphs are broken down by count and % of total failed invoice reasons. Use these graphs to identify any changes in the overall failure types.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/dd02bf3-Screen_Shot_2024-06-18_at_2.42.39_PM.png" />
+<Image align="center" border={true} src="https://files.readme.io/773611047adf6972e447e814ca6aa1d37e081ccf3f5096d7b45cf24a3ac0e032-image.png" className="border" />
 
 ## Gateways & payment methods summary
 
@@ -64,10 +66,14 @@ This section is designed to give you insights into how different gateways and pa
 * **Sign-up decline rate from the start to the end of range:** This shows how the decline rate has changed from the beginning to the end of your selected period, offering a dynamic view of performance over time.
 * **Rate change:** Details the percentage change in the sign-up decline rate during the chosen date range, helping you spot trends or effects of any changes made.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/b9c6caf-Screen_Shot_2024-06-18_at_2.43.00_PM.png" />
+<br />
+
+<Image align="center" border={true} src="https://files.readme.io/7e5636b52c579def3979d402fd4a864ba208798c05865f8e288225e3b3e3e6e9-image.png" className="border" />
 
 ## Related dashboards
 
 Continue to learn more about how Recurly helps you and your signup decline rate by navigating to the related dashboards.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/6504b66e87abd0c47f49004534d37d3b0e04752f77b8ef71050ad5d683a6bc7d-Signup_Declines_-_Related_Dashboards.png" />
+<Image align="center" border={true} src="https://files.readme.io/6504b66e87abd0c47f49004534d37d3b0e04752f77b8ef71050ad5d683a6bc7d-Signup_Declines_-_Related_Dashboards.png" className="border" />
+
+<br />
