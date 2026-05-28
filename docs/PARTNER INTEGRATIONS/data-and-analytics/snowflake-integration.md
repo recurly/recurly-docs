@@ -13,12 +13,8 @@ next:
   description: ''
 ---
 <div class="rp-page">
-  <div class="rp-overview">
-    Recurly's Snowflake integration shares your merchant data directly into your Snowflake account — automatically, every hour. No ETL pipelines to manage, no third-party vendors, no manual exports. Combine your Recurly data with other datasets in Snowflake for a complete view of your business.
-  </div>
-
-  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true" /> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
-
+  <div class="rp-overview">Recurly's Snowflake integration shares your merchant data directly into your Snowflake account — automatically, every hour. No ETL pipelines to manage, no third-party vendors, no manual exports. Combine your Recurly data with other datasets in Snowflake for a complete view of your business.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
     <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
@@ -30,54 +26,33 @@ next:
 
 # Definition
 
-<div class="rp-definition">
-  Recurly's Snowflake integration uses Snowflake's secure data sharing to push your complete Recurly export data directly into your Snowflake account — updated every hour or daily. Setup is handled by Recurly's Professional Services team, and once configured, data flows automatically with no ongoing maintenance required on your end.
-</div>
+<div class="rp-definition">Recurly's Snowflake integration uses Snowflake's secure data sharing to push your complete Recurly export data directly into your Snowflake account — updated every hour or daily. Setup is handled by Recurly's Professional Services team, and once configured, data flows automatically with no ongoing maintenance required on your end.</div>
 
 # Key benefits
 
 <div class="rp-benefits">
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">
-      <i class="fa-solid fa-plug" aria-hidden="true" />
-    </div>
-
+    <div class="rp-benefit-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
     <strong>No-code data integration</strong>
     <span>Recurly handles all data transfer automatically — no ETL pipelines, no coding, no server management required.</span>
   </div>
-
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">
-      <i class="fa-solid fa-clock-rotate-left" aria-hidden="true" />
-    </div>
-
+    <div class="rp-benefit-icon"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></div>
     <strong>Hourly data refresh</strong>
     <span>Stay current with automatic hourly updates so your latest business metrics are always available in Snowflake.</span>
   </div>
-
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">
-      <i class="fa-solid fa-chart-pie" aria-hidden="true" />
-    </div>
-
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
     <strong>Unified data analysis</strong>
     <span>Combine Recurly data with other datasets in Snowflake for cross-platform analytics and custom reporting using Snowflake's full capabilities.</span>
   </div>
-
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">
-      <i class="fa-solid fa-gauge-high" aria-hidden="true" />
-    </div>
-
+    <div class="rp-benefit-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
     <strong>Time and cost savings</strong>
     <span>Bypass traditional intermediaries and third-party ETL vendors — the integration handles everything so your team can focus on analysis, not data plumbing.</span>
   </div>
-
   <div class="rp-benefit">
-    <div class="rp-benefit-icon">
-      <i class="fa-solid fa-database" aria-hidden="true" />
-    </div>
-
+    <div class="rp-benefit-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
     <strong>Full historical data</strong>
     <span>All historical Recurly data is available in the share from day one — not just recent records.</span>
   </div>
@@ -128,12 +103,10 @@ The Snowflake integration is set up and managed by Recurly's Professional Servic
     <div class="rp-step-num">1</div>
     <div><h4>Contact your account manager</h4><p>Reach out to your Recurly Account Manager to request enablement of the Snowflake integration.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Work with a Solutions Manager</h4><p>A Recurly Solutions Manager will be assigned to gather your Snowflake credentials and configure the secure data share on your behalf.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">3</div>
     <div><h4>Data flows automatically</h4><p>Once configured, your Recurly data exports to Snowflake on your chosen schedule — hourly or daily — with no ongoing maintenance required.</p></div>
