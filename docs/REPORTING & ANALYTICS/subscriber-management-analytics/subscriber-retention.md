@@ -29,7 +29,7 @@ Subscriber Retention is a powerful feature within Recurly that allows businesses
 
 > **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
 >
-> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.** 
+> **For additional guidance on navigating and utilizing filter tools, consult our documentation<a href="https://docs.recurly.com/docs/recurly-analytics-overview#navigation-features" target="_blank">here</a>.**
 
 By setting the appropriate interval, subscriptions that start immediately after the expiration of a previous subscription will be counted as a single continuous subscription. This helps provide a more accurate representation of activations and churn.
 
@@ -45,7 +45,7 @@ This section presents insights into the retention trends of subscribers through 
 
 ## Filters
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/4086481672693f7b244e667c4c44f3d8a6908bcd31d1c2c57927bee1ab132351-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/2c453b8f205ed1ab99e8925fee45787bc12568c4a72b4e4d93fbfadbe28def37-image.png" className="border" />
 
 #### Subscriber filters
 
@@ -61,37 +61,33 @@ This section presents insights into the retention trends of subscribers through 
 * **Active (# Still Active)**: The total number of subscriptions still active.
 * **Churned (# Churned)**: The total number of subscriptions that have churned.
 
-## Subscriber cohort descent
+## Subscriber Retention 
 
 A line chart visualizing the subscriber retention rate based on chosen metrics like percentage, active status, or churn rate, across the specified period.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/5596be4-subscriber_cohort_decent.png" />
+<Image align="center" border={true} src="https://files.readme.io/8bf241751759a0c44bf684434000161d6f7b0ec06f20bcb28c447c6b10ae655b-image.png" className="border" />
 
-## Cohort analysis detail
+## Subscriber retention analysis detail
 
 A deep dive into the retention figures of paying subscribers registered in a specific month. The snapshot below reveals the month-wise percentage of these subscribers. Users can now download data spanning up to 100 columns.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/3be94c9-cohort_analysis_detail.png" />
+<Image align="center" border={true} src="https://files.readme.io/49fe9cdbbe44564f81a4b4a3ab44cbc43e1522f617e32ae71d9c6ef803a3c31d-image.png" className="border" />
 
-<Image title="subscriber cohort decent.png" alt={2600} align="center" width="75% " border={true} src="https://files.readme.io/5596be4-subscriber_cohort_decent.png">
-  Subscriber Retention Cohort Decent
-</Image>
+<Image align="center" alt={2600} border={true} caption="Subscriber Retention Cohort Decent" title="subscriber cohort decent.png" src="https://files.readme.io/5596be4-subscriber_cohort_decent.png" width="75% " />
 
 **Cohort Analysis Detail:** is a cohort analysis of retention count for paying subscribers that sign up in a designated month.  The example in the following screenshot shows the percentage of paying subscribers by month. You can download this up to 100 columns now.
 
-<Image title="cohort analysis detail.png" alt={2598} align="center" width="75% " border={true} src="https://files.readme.io/3be94c9-cohort_analysis_detail.png">
-  Subscriber Retention Cohort Analysis Detail
-</Image>
+<Image align="center" alt={2598} border={true} caption="Subscriber Retention Cohort Analysis Detail" title="cohort analysis detail.png" src="https://files.readme.io/3be94c9-cohort_analysis_detail.png" width="75% " />
 
 # Drill experience
 
 Enhance your data analysis by drilling down into specific points directly from the data charts. This feature allows for a deeper understanding of the underlying metrics.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/e64ba86-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/e64ba86-image.png" className="border" />
 
 As part of the drill-down experience, you will encounter detailed data columns, each providing a specific metric:
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/ccbd55c-image.png" />
+<Image align="center" border={true} src="https://files.readme.io/ccbd55c-image.png" className="border" />
 
 * **`new_subscribers`**: Represents whether a subscriber is new within the specified period. A value of 1 indicates a new subscriber; otherwise, it's 0.
 * **`churn_count`**: Indicates whether a subscriber has churned. A value of 1 signifies a churned subscriber during the analyzed period.
