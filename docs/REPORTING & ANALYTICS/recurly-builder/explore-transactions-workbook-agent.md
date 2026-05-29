@@ -117,9 +117,9 @@ The field picker organizes all available dimensions and metrics by topic. Each t
 - Save frequently used queries as a Dashboard using the + Dashboard button in the top-right corner so teammates can access them without rebuilding.
 - The Workbook Agent works best with scoped, specific questions. Include a timeframe, a transaction outcome (e.g. failed, declined), and at least one grouping dimension for the most precise results.
 
-### Saving a new explore
+### Saving a new report
 
-To save an explore:
+To save a report:
 
 1. In the workbook, click **File > Save**.
 2. Give the document a Name and an optional Description
