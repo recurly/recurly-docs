@@ -72,7 +72,7 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 
 You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel. Changes are reflected immediately in the results view.
 
-### Creating a new explorer
+### Creating a new report
 
 1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
 2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
@@ -102,7 +102,7 @@ The field picker organizes all available dimensions and metrics by topic. Each t
 - For large date ranges, start with aggregated metrics (totals, counts) before drilling into line-level detail to keep load times fast.
 - The Workbook Agent works best with specific, scoped questions. Include a timeframe and at least one entity type (account, plan, subscription) for the most accurate results.
 
-### Saving a new explore
+### Saving a report
 
 To save an explore:
 
