@@ -74,9 +74,10 @@ You can use the Agent and the field picker together. After the agent populates a
 
 ### Creating a new explorer
 
-1. Click the **+ New** button in the top-left corner of the page.
-2. Select the data model to use for the workbook.
-3. After you select a model, a blank workbook will display.
+1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
+2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
+3. Toggle between Results (table view), Chart (visualization), or both.&#x20;
+4. Use the Options tab to configure axes, grouping, and chart type.&#x20;
 
 ### Available data
 
