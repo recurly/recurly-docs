@@ -9,10 +9,10 @@ metadata:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* ── HOST-THEME BACKGROUND OVERRIDE ── */
+/* HOST-THEME BACKGROUND OVERRIDE */
 body { background: #ffffff !important; }
 
-/* ── GLOBAL CSS IMMUNITY BLOCK ── */
+/* GLOBAL CSS IMMUNITY BLOCK */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
 .rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
 /* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0); must follow wildcard */
@@ -21,7 +21,8 @@ body { background: #ffffff !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* ── NAVIGATE MASTER ARMOR — (0,0,7,1) beats global section 1.1 rule (0,0,6,2) ── */
+/* NAVIGATE MASTER ARMOR — (0,0,7,1) beats global section 1.1 rule (0,0,6,2)
+   All .rc-guide a.[class] overrides must be declared AFTER this block. */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -37,47 +38,37 @@ body { background: #ffffff !important; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
-/* ── DESIGN TOKENS ── */
 .rc-guide {
-  --yellow:     #FFD706;
-  --orange:     #FF8200;
-  --offblack:   #0D0D0B;
-  --darkgray:   #32312D;
-  --gray:       #807D73;
-  --lightgray:  #CCC9B8;
-  --brightgray: #F1EFE3;
-  --offwhite:   #FFFDF2;
-  --retain:     #FF9D88;
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #CCC9B8;
+  --brightgray:#F1EFE3;
+  --offwhite:  #FFFDF2;
+  --retain:    #FF9D88;
   color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── ICON HELPERS ── */
+/* ── FONT AWESOME ICON HELPERS ── */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
-/* ── LAYOUT ── */
-.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
-.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-
-/* Back link — (0,0,8,1) */
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
-
 /* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar {
-  display: none; background: var(--yellow); color: var(--offblack);
+  display: none; background: #FFD706; color: #0D0D0B;
   align-items: center; justify-content: space-between;
   padding: 10px 20px; font-size: .88rem; font-weight: 600;
   border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4;
 }
 .rc-announce-bar.rc-active { display: flex; }
 .rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
+/* Announce link — (0,0,8,1) beats global prose link rule */
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-announce-link {
   color: #0D0D0B !important; font-weight: 800; white-space: nowrap;
@@ -87,11 +78,22 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
 
+/* ── TOP BACK LINK ── */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+/* Back link — (0,0,8,1) */
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+
+/* ── CONTENT WRAPPER ── */
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
 /* ── HERO ── */
 .rc-hero {
   background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
               url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
-  background-color: var(--offblack); background-size: cover;
+  background-color: #0D0D0B; background-size: cover;
   color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
 }
 .rc-lp-pillar-tag {
@@ -103,43 +105,46 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
-.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8; line-height: 1.6; }
 .rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px; }
 .rc-hero-stat { text-align: center; padding: 0 16px; }
 .rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); line-height: 1.3; }
+.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
+.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #CCC9B8; line-height: 1.3; }
 
-/* ── NAVIGATION ── */
+/* ── NAVIGATION MENU (NON-STICKY — Course/Micro-Path page) ── */
 details.rc-sticky-nav-wrap {
-  position: relative;
-  background-color: var(--retain);
+  position: relative; z-index: 1;
+  background-color: #FF9D88;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  margin: 24px 0 48px; border-radius: 12px;
+  margin: 24px 0 48px 0; border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
 }
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
 details.rc-sticky-nav-wrap > summary::marker { display: none; }
-.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--offblack); }
-.rc-nav-chevron { font-size: .72rem; color: var(--offblack); opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0D0D0B; }
+.rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
 .rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
 details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
 .rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+/* Nav links — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link {
   color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
   text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s;
   white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
+/* Light nav hover — semi-transparent */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
-.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: var(--offblack); color: var(--yellow); font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rc-guide a.rc-sticky-link:hover .rc-step-badge { background: var(--yellow); color: var(--offblack); }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
+/* Active item — no persistent background; map pin identifies current page */
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
@@ -147,32 +152,41 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 /* ── CONTENT SECTIONS ── */
 .rc-lp-section { margin-bottom: 48px; }
-.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
-.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: var(--darkgray); margin: 0 0 16px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* ── CARD ── */
-.rc-card { background: var(--offwhite); border-radius: 16px; padding: 28px; border: 1px solid var(--lightgray); margin-bottom: 24px; }
-.rc-card-title { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 14px; display: flex; align-items: center; gap: 8px; }
-.rc-card p { font-size: .95rem; color: var(--darkgray); line-height: 1.65; margin: 0 0 12px; }
-.rc-card p:last-child { margin-bottom: 0; }
+/* ── CUSTOM SPLIT CARD ── */
+.rc-split-card { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid #CCC9B8; border-radius: 12px; overflow: hidden; margin: 8px 0 28px; }
+.rc-split-panel { padding: 24px 28px; display: flex; flex-direction: column; gap: 10px; }
+.rc-split-panel:first-child { background: #F1EFE3; border-right: 1px solid #CCC9B8; }
+.rc-split-panel:last-child { background: rgba(255,157,136,0.10); }
+.rc-split-label { font-size: .7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.rc-split-panel:first-child .rc-split-label { color: #807D73; }
+.rc-split-panel:last-child .rc-split-label { color: #FF9D88; }
+.rc-split-icon { font-size: 1.4rem; line-height: 1; color: #0D0D0B; }
+.rc-split-panel h4 { font-size: 1rem; font-weight: 800; margin: 0; line-height: 1.3; color: #0D0D0B; }
+.rc-split-panel p { font-size: .9rem; line-height: 1.6; margin: 0; }
+.rc-split-panel:first-child p { color: #807D73; }
+.rc-split-panel:last-child p { color: #32312D; }
 
-/* ── FEATURE CARD GRID ── */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 24px; }
-.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: var(--retain); box-shadow: 0 4px 16px rgba(255,157,136,0.15); transform: translateY(-2px); }
-.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: var(--offblack); }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
+/* ── TYPE SUBLABEL & CARD GRIDS ── */
+.rc-type-sublabel { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #32312D; margin: 0 0 12px; }
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
+.rc-feature-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
+.rc-feature-card:hover { border-color: #FF9D88; box-shadow: 0 4px 16px rgba(255,157,136,0.15); transform: translateY(-2px); }
+.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: #0D0D0B; }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; flex-grow: 1; }
 
 /* ── NUMBERED STEPS ── */
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
-.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F1EFE3; }
 .rc-step:last-child { border-bottom: none; }
-.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
-.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
-.rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
-.rc-step-content strong { color: var(--darkgray); }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: #807D73; line-height: 1.6; margin: 0; }
 
 /* ── CALLOUTS ── */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
@@ -180,39 +194,33 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
 .rc-callout-body { flex: 1; }
 .rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
-.rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
-.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
-.rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
-.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
+.rc-callout-tip { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
+.rc-callout-warning .rc-callout-body > strong { color: #32312D; }
 
 /* ── PATH NAV BUTTONS ── */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #CCC9B8; letter-spacing: .5px; }
+.rc-btn-start { background: #F1EFE3; color: #807D73; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid #CCC9B8; cursor: default; display: inline-block; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-path {
-  background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important;
-  padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem;
-  display: inline-flex; align-items: center; gap: 8px; transition: all .2s;
-  border: 2px solid var(--yellow); border-bottom: 2px solid var(--yellow) !important;
+  background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px;
+  font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px;
+  transition: all .2s; border: 2px solid #FFD706; border-bottom: 2px solid #FFD706 !important;
 }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-btn-path:hover {
-  background: transparent !important; color: var(--offblack) !important;
-  border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important;
-}
-.rc-btn-start {
-  background: var(--brightgray); color: var(--gray); padding: 13px 24px;
-  border-radius: 10px; font-weight: 700; font-size: .9rem;
-  border: 2px solid var(--lightgray); cursor: default; display: inline-flex; align-items: center;
+  background: transparent !important; color: #0D0D0B !important;
+  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
 }
 
 /* ── RESOURCES ── */
-.rc-resources { background: var(--brightgray); border-left: 4px solid var(--retain); border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
-.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resources { background: #F1EFE3; border-left: 4px solid #FF9D88; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+/* Resource links — (0,0,8,1); base color is gray #807D73 */
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link {
   color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
@@ -220,20 +228,27 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
-.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF9D88 !important; }
+.rc-guide a.rc-resource-link:hover {
+  color: #0D0D0B !important; text-decoration: underline !important;
+  text-underline-offset: 3px; text-decoration-color: #FF9D88 !important;
+}
 
 /* ── FOOTER NAV ── */
-.rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: var(--darkgray); background: var(--brightgray); padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+/* Footer links — (0,0,8,1) */
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-footer-link { color: #807D73 !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important; font-weight: 600; font-size: .88rem;
+  transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
 .rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
 .rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
 .rc-footer-link:hover img { opacity: 1; }
-.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
@@ -243,36 +258,38 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
   .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
-  .rc-card-grid { grid-template-columns: 1fr; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; }
+  .rc-split-card { grid-template-columns: 1fr; }
+  .rc-split-panel:first-child { border-right: none; border-bottom: 1px solid #CCC9B8; }
 }
 </style>
 
 <div class="rc-guide">
 
-  <!-- Back link -->
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-back-link">← Back to Retain</a>
   </div>
 
   <div class="rc-content-wrap">
 
-    <!-- Announcement bar (hidden until activated) -->
+    <!-- Announcement bar: add class rc-active to show; no close button (ReadMe strips onclick) -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
-        <strong>Upcoming:</strong> Join our CSMs for a live session.
+        <strong>Upcoming:</strong> Join our CSMs for a live session on this topic.
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
     </div>
 
-    <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
-      <div class="rc-lp-hero-title"><h1>Account Updater</h1></div>
+      <div class="rc-lp-hero-title">
+        <h1>Account Updater</h1>
+      </div>
       <p>Protect your recurring revenue by automatically keeping card details up to date — before payments ever fail.</p>
       <div class="rc-hero-stats">
         <div class="rc-hero-stat">
@@ -290,7 +307,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Navigation menu -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -317,41 +333,48 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </details>
 
-    <!-- Section: What is Account Updater? -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> What is Account Updater?</h2>
-      <p>A proactive service that resolves card lifecycle events before they trigger a payment decline — reducing involuntary churn and eliminating gateway fees on invalid accounts.</p>
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> What is it?</h2>
+      <p>A proactive tool that resolves card lifecycle events before they trigger a decline — reducing involuntary churn and eliminating gateway fees on invalid accounts.</p>
 
-      <div class="rc-card">
-        <div class="rc-card-title"><i class="fa-solid fa-puzzle-piece rc-fa-section"></i> The simple version</div>
-        <p>When a customer's credit or debit card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis — like a subscription renewal — that charge will simply fail. The customer hasn't cancelled; their card just changed.</p>
-        <p><strong>Account Updater (AU) is the solution.</strong> It's a service run by the major card networks — Visa, Mastercard, American Express (AMEX), and Discover — that automatically pushes updated card details to Recurly. Recurly stores that fresh information so that your next billing attempt uses the correct data, without the customer needing to do anything.</p>
+      <div class="rc-split-card">
+        <div class="rc-split-panel">
+          <div class="rc-split-label">The problem</div>
+          <div class="rc-split-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h4>Cards change. Charges fail.</h4>
+          <p>When a customer's card expires, gets lost or stolen, or is reissued by their bank, the card number or expiration date changes. If you're charging that card on a recurring basis, that charge will simply fail — even though the customer never cancelled.</p>
+        </div>
+        <div class="rc-split-panel">
+          <div class="rc-split-label">The fix</div>
+          <div class="rc-split-icon"><i class="fa-solid fa-circle-check" style="color: #FF9D88;"></i></div>
+          <h4>Account Updater handles it automatically.</h4>
+          <p>Visa, Mastercard, AMEX, and Discover push updated card details directly to Recurly. Recurly stores the fresh information so your next billing attempt uses the correct data — no action needed from your customer.</p>
+        </div>
       </div>
 
-      <div class="rc-card-grid">
+      <p class="rc-type-sublabel">Three ways it's delivered</p>
+
+      <div class="rc-card-grid rc-card-grid-3col">
         <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h4>Standard account updater</h4>
-          <p>Supported for Visa, Mastercard, American Express (AMEX), and Discover. Updates are fetched via secure batch files before renewal attempts.</p>
+          <div class="rc-feature-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h4>Standard Account Updater</h4>
+          <p>Supported for Visa, Mastercard, AMEX, and Discover. Updates are fetched via secure batch files before renewal attempts.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-bolt"></i></div>
-          <h4>Real-time account updater (RTAU)</h4>
-          <p>Supported for Visa, Mastercard, and American Express (AMEX) globally, with Discover support available via specific gateways.</p>
+          <h4>Real-Time Account Updater (RTAU)</h4>
+          <p>Supported for Visa, Mastercard, and AMEX globally, with Discover available via specific gateways.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-building-columns"></i></div>
           <h4>Cardrefresher</h4>
-          <p>American Express (AMEX)'s specialized AU service. While many updates now happen via RTAU, Cardrefresher provides a robust fallback for legacy integrations.</p>
+          <p>AMEX's specialized AU service. Provides a robust fallback for legacy integrations while many updates now happen via RTAU.</p>
         </div>
       </div>
     </div>
 
-    <!-- Section: How it works -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-map rc-fa-section"></i> How it works</h2>
-      <p>Account Updater operates in the background across five steps, each handled automatically between the card network and Recurly.</p>
-
+      <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> How it works</h2>
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
@@ -390,8 +413,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
 
-      <div class="rc-callout rc-callout-warning" style="margin-top: 24px;">
-        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
+      <div class="rc-callout rc-callout-warning">
+        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info" style="color: #807D73;"></i></div>
         <div class="rc-callout-body">
           <strong>Note on digital wallets</strong>
           <p>Account Updater works with cards stored in Recurly's vault. Apple Pay and Google Pay handle card lifecycle updates natively within their own ecosystem.</p>
@@ -399,7 +422,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
 
       <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb" style="color: #807D73;"></i></div>
         <div class="rc-callout-body">
           <strong>The bottom line</strong>
           <p>Account Updater fixes outdated card details behind the scenes. It's one of the few revenue recovery tools that is entirely proactive rather than reactive.</p>
@@ -407,14 +430,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Path nav -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">Overview</span>
+      <span class="rc-lp-nav-indicator">1 of 6</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-btn-path">Next: Why use it? →</a>
     </div>
 
-    <!-- Resources -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
@@ -424,29 +445,28 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Footer nav -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Account Updater path:</span>
+          <span class="rc-footer-label">Course: Account Updater:</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater" class="rc-footer-link">Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-footer-link">Why use it?</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations" class="rc-footer-link">Things to consider</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" class="rc-footer-link">How to enable it</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-footer-link">Tracking impact</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case" class="rc-footer-link">Pitch to leadership</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-benefits" class="rc-footer-link">1. Why use it?</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-considerations" class="rc-footer-link">2. Things to consider</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-enable" class="rc-footer-link">3. How to enable it</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-data" class="rc-footer-link">4. Tracking impact</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-account-updater-use-case" class="rc-footer-link">5. Pitch to leadership</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
-            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
           </a>
           <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
         </div>
       </div>
     </div>
 
-  </div><!-- /rc-content-wrap -->
-</div><!-- /rc-guide -->
+  </div>
+</div>
 `}</HTMLBlock>
 
 <br />
