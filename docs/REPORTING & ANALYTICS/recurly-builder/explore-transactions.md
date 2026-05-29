@@ -3,8 +3,8 @@ title: Explore - Transactions
 excerpt: >-
   The Transactions Explore feature is a dynamic, versatile, and powerful tool
   that provides a custom view of your organization's data and is useful for
-  building reports associated with Gateway activity, failure & payment
-  information.
+  building reports across billing, subscription, and account data. Use the
+  Workbook Agent to ask natural-language questions and get AI-assisted analysis.
 deprecated: false
 hidden: false
 metadata:
