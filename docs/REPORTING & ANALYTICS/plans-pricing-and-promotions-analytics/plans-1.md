@@ -24,7 +24,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-Recurly's 'Subscription By Plans Bars' offers a rich, color-coded visualization of your subscriptions categorized by different plans. Displayed over your chosen timeframe, this feature enables users to effortlessly discern the popularity and performance of each plan. The bars can be interacted with, giving a deeper dive into specific subscription data and metrics, while the subsequent 'Subscriptions by Plans Details Chart' offers a thorough trend analysis of your active subscriptions.
+Recurly's 'Subscription By Plans' offers a rich, color-coded visualization of your subscriptions categorized by different plans. Displayed over your chosen timeframe, this feature enables users to effortlessly discern the popularity and performance of each plan. 
 
 > **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
 >
@@ -38,34 +38,14 @@ Recurly's 'Subscription By Plans Bars' offers a rich, color-coded visualization 
 * **Interactive deep dives**: With each bar being drillable, users can seamlessly access detailed subscription metrics, facilitating in-depth analysis without leaving the visualization.
 * **Strategic trend analysis**: The detailed chart highlights the performance trajectories of your plans, assisting in proactive decision-making, plan refinement, and the crafting of targeted subscription strategies.
 
-# Subscription by plans
+# Total Subscriptions
 
-The Subscription By Plans Bars is a visual representation of your subscriptions, segmented by different plans over a selected timeframe. Each bar corresponds to a specific time unit (day, week, or month), and the height of the bar represents the total number of subscriptions. The bar is further color-coded based on different plans, giving you an instant visual clue about which plans are gaining more subscriptions. By clicking on any bar or its section, you can view specific subscription totals for each plan, making it an intuitive tool to understand and compare the popularity of your various plans.
+Total Subscription is a visual representation of your subscriptions, segmented by different plans over a selected timeframe. Each line corresponds to a specific plan, and the height of the bar represents the total number of subscriptions. The line is further color-coded based on different plans, giving you an instant visual clue about which plans are gaining more subscriptions. 
 
-<Image align="center" width="75% " src="https://files.readme.io/5e2564f-subscription_by_plan_bar_chart.png" />
+![](https://files.readme.io/8b3d18f1a6df6163ade85a944acae68d5f9e7f36a9d49fea431b0acf372c2cca-image.png)
 
-Each bar is a drill so the user can drill into the specific subscriptions that make up each bar.
+<br />
 
-The drill fields are:
-
-1. Account Code (links to Account in RA)
-2. Subscription UUID (links to subscription in RA)
-3. Plan Name (links to plan in RA)
-4. Plan Code (links to plan in RA)
-5. Subscription\_plan\_started\_at\_local\_time
-6. Subscription\_trial\_started\_at\_local\_time
-7. Subscription\_trial\_ended\_at\_local\_time
-8. Subscription\_plan\_canceled\_at\_local\_time
-9. Subscription\_plan\_expiree\_at\_local\_time
-10. Subscription\_plan\_expiration\_reason
-11. Active\_invoice\_number
-12. Successful\_payment\_made (yes/no if there was a payment→$0 made on the subscription)
-13. Total\_subscriptions
-14. Total\_new\_subscriptions
-15. Total\_churned\_subscriptions
-
-## Subscriptions by plans details chart
+## Subscription Breakout
 
 The Subscriptions by Plans Details Chart offers a comprehensive view of your active subscriptions for the selected plans compared to the total for all plans. It's organized by timeframe, which can be daily, weekly, or monthly based on your preference. This chart is a powerful tool for analyzing plan performance trends over time. You can identify which plans are consistently popular, which ones are growing, and which might need some attention or restructuring. It's an indispensable resource for strategic planning and informed decision-making regarding your plan offerings.
-
-![](https://files.readme.io/9df20da-subscription_by_plan_details.png "subscription by plan details.png")
