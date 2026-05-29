@@ -2,10 +2,10 @@
 title: Explore - Transactions & Workbook Agent
 excerpt: >-
   The Transactions Explore feature is a is an interactive analytics tool that
-  lets you slice and filter transaction-related data across accounts,
-  subscriptions, plans, dunning events, and more to create custom reports. Use
-  the Workbook Agent to ask natural-language questions and get AI-assisted
-  analysis.
+  lets you slice and filter transaction-related data across payment
+  transactions, fraud signals, geographic data, and subscription activity. Use
+  the Workbook Agent to ask natural-language questions and surface actionable
+  payment insights.
 deprecated: false
 hidden: false
 metadata:
@@ -23,20 +23,22 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ## Definition
 
-The invoices Explore feature is a dynamic, versatile, and powerful tool that provides a custom view of your organization's data. It transforms raw data into insightful and actionable information, catering to a wide array of data needs. From invoice details to account information and various other fields, Explore allows you to delve deeply into your Recurly data.
+The transactions Explore feature is a dynamic, versatile, and powerful tool that provides a custom view of your organization's data. It transforms raw data into insightful and actionable information, catering to a wide array of data needs. This feature is a flexible way to query transaction outcomes, monitor fraud signals, analyze geographic payment patterns, and correlate transaction data with subscription and account records
+
+The Workbook Agent accompanies every Explore session. Ask it plain-language questions and it will identify the relevant fields, construct the query, and return results or a chart. You can refine results conversationally or switch to the field picker for manual control.
 
 # Key benefits
 
-- **Customizable reports for actionable insights**: Recurly Explore provides flexible report-building capabilities, allowing you to create custom reports tailored to your specific business needs.
-- **Comprehensive data views for deep analysis**: From accounts to transactions, Explore offers predefined data views, enabling you to analyze every aspect of your Recurly data.
-- **Optimized decision-making through detailed metrics**: Use dimensions and measures to uncover patterns and make informed decisions that enhance business performance.
+- **Detailed transaction insights for better decision-making**: Explore provides a comprehensive view of all transactions, helping you gain deeper insights into your payment processes.
+- **Customizable reports for enhanced gateway analysis**: Easily build tailored reports to track gateway activity, failures, and payment trends, optimizing your financial operations.
+- **Streamlined fraud monitoring through Kount integration**: Gain a clear view of multiple fraud line items with seamless Kount fraud integration data.
 - **AI-assisted analytics**: Use the Workbook Agent to ask data questions in plain language. The agent interprets your question, selects the relevant fields, and returns a result set or chart.
 
 # Key details
 
-The invoices Explore includes **all** invoices and their corresponding line items. It does not contain transaction or gateway information. The data provided is particularly useful for building reports related to invoicing or accounting. Note that gateway, fraud, error code, or payment method information is not included in this Explore.
+The Transactions Explore includes **all** transactions processed through a gateway, along with corresponding invoices and line items. It does not include all invoices or charge items. Multiple transactions may be associated with a single invoice, and multiple lines may be included for a given transaction when multiple fraud line items are returned from a Kount fraud integration.
 
-With the Recurly invoices Explore feature, you can easily create custom reports and visualize the data that matters most to your business.
+This tool is useful for building reports related to gateway activity, failures, and payment information. It is **not** intended for accounting purposes, which are better handled by the invoices Explore.
 
 ## Explore interface
 
@@ -58,12 +60,19 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 
 **Example prompts:**
 
-- "Show me total invoice revenue by plan for the last 30 days"
-- "Which accounts have open invoices older than 60 days?"
-- "Break down failed charges by dunning state this month"
-- "How many invoice line items are associated with add-ons?"
+- &#x20;“Show me all failed transactions in the last 7 days grouped by failure reason”
+- “What is the total transaction volume by country this month?”
+- &#x20;“Which credit card types have the highest decline rates?”
+- &#x20;“List transactions flagged for fraud in the past 30 days”
+- “Break down successful transactions by plan and subscription state”
 
-![](https://files.readme.io/2296d3c8cd45a5ec1e0e5a244b05be1c63faa5a33fc652eb30533f0f9a273dfc-image.png)
+![](https://files.readme.io/2b46f6b413106f780ea6650e6320f24661730c8a142c3ae7dbc64c18b667a9cc-image.png)
+
+<br />
+
+<br />
+
+<br />
 
 **Switching between Agent and manual mode**
 
@@ -79,24 +88,33 @@ You can use the Agent and the field picker together. After the agent populates a
 
 The field picker organizes all available dimensions and metrics by topic. Each topic maps to a set of underlying data entities:
 
-| Data                 | Description                                                                                              |
-| :------------------- | :------------------------------------------------------------------------------------------------------- |
-| Account Billing Info | Payment method details, billing address and card metadata associated with accounts                       |
-| Accounts             | Account-level attributes including account code, email, address, name, etc                               |
-| Business Entities    | Legal entity data for multi-entity merchants, including entity name and tax region.                      |
-| Dunning Info         | Retry attempts, dunning state, and communication timing for failed payment recovery.                     |
-| Invoice Line Items   | Individual charges and credits at the line level, including unit amounts, quantities, and product codes. |
-| Invoices             | Invoice totals, state (open, collected, failed, voided), currency, and dates.                            |
-| Plans                | Plan codes, names, intervals, and pricing tiers.                                                         |
-| Subscriptions        | Subscription state, start/end dates, trial info, and associated plan and add-on metadata.                |
+| Data                    | Description                                                                                              |
+| :---------------------- | :------------------------------------------------------------------------------------------------------- |
+| Billing Info            | Payment method details, billing address and card metadata associated with accounts                       |
+| Accounts                | Account-level attributes including account code, email, address, name, etc                               |
+| Business Entities       | Legal entity data for multi-entity merchants, including entity name and tax region.                      |
+| Country                 | Country-level geographic dimensions for filtering and grouping transaction data by region.               |
+| Credit Card             | Card brand, card type (debit/credit), issuing bank, last four digits, and expiration data.               |
+| Dunning Info            | Retry attempts, dunning state, and communication timing for failed payment recovery.                     |
+| Fraud Infos             | Fraud risk scores, decision outcomes, and signals returned by Recurly’s fraud detection layer.           |
+| Invoice Line Items      | Individual charges and credits at the line level, including unit amounts, quantities, and product codes. |
+| Invoices                | Invoice totals, state (open, collected, failed, voided), currency, and dates.                            |
+| Operations              | Internal processing metadata including gateway response codes and operation type.                        |
+| Plans                   | Plan codes, names, intervals, and pricing tiers.                                                         |
+| Subscriptions           | Subscription state, start/end dates, trial info, and associated plan and add-on metadata.                |
+| Transaction Statuses    | Standardized transaction outcome states: success, declined, error, voided, and more.                     |
+| Transaction\_Geo (maps) | Geographic coordinates and region data for map-based transaction visualizations.                         |
+| Transactions            | Core transaction fields: amount, currency, type (purchase, refund, void), gateway, and timestamp.        |
 
 ### Tips & best practices
 
-- Use Preview before adding many fields — it confirms the data shape without running a full query.
-- The In-use toggle in the field picker narrows the view to your current selection, making it easier to review what's included.
-- Save frequent queries as a Dashboard using the button in the top-right corner so teammates can access them without rebuilding.
-- For large date ranges, start with aggregated metrics (totals, counts) before drilling into line-level detail to keep load times fast.
-- The Workbook Agent works best with specific, scoped questions. Include a timeframe and at least one entity type (account, plan, subscription) for the most accurate results.
+- Use Preview before adding many fields to confirm the data shape and avoid slow load times on large result sets.
+- The In-use toggle in the field picker narrows the view to your current selection, making it easier to audit what’s included before running a query.
+- Combine Transaction Statuses with Credit Card or Country topics to identify regional or card-type-specific decline patterns.
+- Use the Fraud Infos topic alongside Transactions to correlate fraud signals with transaction outcomes — useful for investigating dispute spikes.
+- For high-volume date ranges, start with aggregated metrics (totals, counts, rates) before drilling into row-level detail to keep performance fast.
+- Save frequently used queries as a Dashboard using the + Dashboard button in the top-right corner so teammates can access them without rebuilding.
+- The Workbook Agent works best with scoped, specific questions. Include a timeframe, a transaction outcome (e.g. failed, declined), and at least one grouping dimension for the most precise results.
 
 ### Saving a new explore
 
