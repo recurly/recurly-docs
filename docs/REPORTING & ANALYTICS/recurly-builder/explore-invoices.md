@@ -22,7 +22,7 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+- Users must have Analytics user role permission.
 
 ## Definition
 
@@ -30,10 +30,10 @@ The invoices Explore feature is a dynamic, versatile, and powerful tool that pro
 
 # Key benefits
 
-* **Customizable reports for actionable insights**: Recurly Explore provides flexible report-building capabilities, allowing you to create custom reports tailored to your specific business needs.
-* **Comprehensive data views for deep analysis**: From accounts to transactions, Explore offers predefined data views, enabling you to analyze every aspect of your Recurly data.
-* **Optimized decision-making through detailed metrics**: Use dimensions and measures to uncover patterns and make informed decisions that enhance business performance.
-* **AI-assisted analytics**: Use the Workbook Agent to ask data questions in plain language. The agent interprets your question, selects the relevant fields, and returns a result set or chart.
+- **Customizable reports for actionable insights**: Recurly Explore provides flexible report-building capabilities, allowing you to create custom reports tailored to your specific business needs.
+- **Comprehensive data views for deep analysis**: From accounts to transactions, Explore offers predefined data views, enabling you to analyze every aspect of your Recurly data.
+- **Optimized decision-making through detailed metrics**: Use dimensions and measures to uncover patterns and make informed decisions that enhance business performance.
+- **AI-assisted analytics**: Use the Workbook Agent to ask data questions in plain language. The agent interprets your question, selects the relevant fields, and returns a result set or chart.
 
 # Key details
 
@@ -45,11 +45,15 @@ With the Recurly invoices Explore feature, you can easily create custom reports 
 
 The Explorer is divided into three areas:
 
-Interface areas Left panel Workbook Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf. Center panel Field picker Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields. Right panel — results area Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing.
+| Interface Area              | Description                                                                                                                                                                                                                  |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Left panel -Workbook        | Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf.                                                                                                     |
+| Center panel - Field picker | Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.                                                    |
+| Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
 
-<Image align="center" border={true} width="700px" src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" className="border" />
 
-<Image align="center" width="700px" src="https://files.readme.io/8e35bc4a88a1cfa9b26c61fbb629a67cf09200c95966cb32f067f46e0e3ee43f-image.png" />
+<Image src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" align="center" width="700px" border={true} />
+
 
 ### Using the Workbook Agent
 
@@ -57,10 +61,10 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 
 **Example prompts:**
 
-* "Show me total invoice revenue by plan for the last 30 days" 
-* "Which accounts have open invoices older than 60 days?" 
-* "Break down failed charges by dunning state this month" 
-* "How many invoice line items are associated with add-ons?"
+- "Show me total invoice revenue by plan for the last 30 days"
+- "Which accounts have open invoices older than 60 days?"
+- "Break down failed charges by dunning state this month"
+- "How many invoice line items are associated with add-ons?"
 
 ![](https://files.readme.io/2296d3c8cd45a5ec1e0e5a244b05be1c63faa5a33fc652eb30533f0f9a273dfc-image.png)
 
@@ -70,11 +74,11 @@ You can use the Agent and the field picker together. After the agent populates a
 
 ### Creating a new explorer
 
-1. Click the **+ New** button in the top-left corner of the page. 
-2. Select the data model to use for the workbook. 
-3.  After you select a model, a blank workbook will display.
+1. Click the **+ New** button in the top-left corner of the page.
+2. Select the data model to use for the workbook.
+3. After you select a model, a blank workbook will display.
 
-### Available data 
+### Available data
 
 The field picker organizes all available dimensions and metrics by topic. Each topic maps to a set of underlying data entities:
 
@@ -91,22 +95,24 @@ The field picker organizes all available dimensions and metrics by topic. Each t
 
 ### Tips & best practices
 
-* Use Preview before adding many fields — it confirms the data shape without running a full query. 
-* The In-use toggle in the field picker narrows the view to your current selection, making it easier to review what's included. 
-* Save frequent queries as a Dashboard using the button in the top-right corner so teammates can access them without rebuilding. 
-* For large date ranges, start with aggregated metrics (totals, counts) before drilling into line-level detail to keep load times fast. 
-* The Workbook Agent works best with specific, scoped questions. Include a timeframe and at least one entity type (account, plan, subscription) for the most accurate results.
+- Use Preview before adding many fields — it confirms the data shape without running a full query.
+- The In-use toggle in the field picker narrows the view to your current selection, making it easier to review what's included.
+- Save frequent queries as a Dashboard using the button in the top-right corner so teammates can access them without rebuilding.
+- For large date ranges, start with aggregated metrics (totals, counts) before drilling into line-level detail to keep load times fast.
+- The Workbook Agent works best with specific, scoped questions. Include a timeframe and at least one entity type (account, plan, subscription) for the most accurate results.
 
 ### Saving a new explore
 
-To save an explore: 
+To save an explore:
 
-1.  In the workbook, click **File > Save**. 
+1. In the workbook, click **File > Save**.
 2. Give the document a Name and an optional Description
 3. Use the Locations browser to find and select the folder you want to save the document to. The document can be moved after saving if needed.
 4. Click **Save** to save the document.
 
-<Image align="center" border={true} width="500px" src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" className="border" />
+
+<Image src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" align="center" width="500px" border={true} />
+
 
 <br />
 
