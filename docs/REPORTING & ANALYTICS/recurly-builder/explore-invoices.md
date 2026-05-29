@@ -1,9 +1,10 @@
 ---
-title: Explore - Invoices
+title: Explore - Invoices & Workbook Agent
 excerpt: >-
-  The Invoices Explore feature is a dynamic, versatile, and powerful tool that
-  provides a custom view of your organization's data and is useful for building
-  reports associated with anything invoice or accounting related.
+  The Invoices Explore feature is a is an interactive analytics tool that lets
+  you slice and filter invoice-related data across accounts, subscriptions,
+  plans, dunning events, and more to create custom reports. Use the Workbook
+  Agent to ask natural-language questions and get AI-assisted analysis.
 deprecated: false
 hidden: false
 metadata:
@@ -32,6 +33,7 @@ The invoices Explore feature is a dynamic, versatile, and powerful tool that pro
 * **Customizable reports for actionable insights**: Recurly Explore provides flexible report-building capabilities, allowing you to create custom reports tailored to your specific business needs.
 * **Comprehensive data views for deep analysis**: From accounts to transactions, Explore offers predefined data views, enabling you to analyze every aspect of your Recurly data.
 * **Optimized decision-making through detailed metrics**: Use dimensions and measures to uncover patterns and make informed decisions that enhance business performance.
+* **AI-assisted analytics**: Use the Workbook Agent to ask data questions in plain language. The agent interprets your question, selects the relevant fields, and returns a result set or chart.
 
 # Key details
 
@@ -39,19 +41,73 @@ The invoices Explore includes **all** invoices and their corresponding line item
 
 With the Recurly invoices Explore feature, you can easily create custom reports and visualize the data that matters most to your business.
 
-1. **Dimensions and measures:** These are the fundamental elements used to assemble custom reports.
-   1. Dimensions, displayed in black text, are qualitative variables such as names, geographical data, and dates—they define the categories you want to analyze. 
-   2. Measures, displayed in orange text, are quantitative variables like counts, totals, or averages—they provide the numerical metrics you're interested in for each category.
-2. **Data views:** Recurly Explore provides a range of predefined data views to jumpstart your data exploration. These views cover various aspects of your Recurly data.
+## Explore interface
 
-<Image align="center" border={true} width="45% " src="https://files.readme.io/9807347932dc95731cc4a6921d0003f84d215e780b12fd0c9467033eded02ace-image.png" className="border" />
+The Explorer is divided into three areas:
 
-* **Custom Fields (Add)**: Use custom fields to create formulaic calculations based on existing fields. Creating custom fields allows for more personalized reporting. [Learn more](https://docs.recurly.com/docs/recurly-builder#creating-a-custom-field).
-* **Account Primary Billing Info**: Explore billing details to enhance your billing strategies.
-* **Accounts**: Review account-related data to analyze your customer base and its behavior.
-* **Business Entities**: Perform custom analysis on business entities linked to invoices at the time of transactions.
-* **Dunning Settings**: Analyze dunning campaign data to improve your debt recovery strategies.
-* **Invoice Line Items**: Review detailed invoice line data for deeper insights into your billing processes.
-* **Invoices**: Explore detailed invoice data to identify trends in your billing patterns.
-* **Plans**: Examine subscription plan data to assess the popularity and effectiveness of each plan.
-* **Subscriptions**: Gain a detailed overview of subscription data to optimize acquisition and retention strategies.
+Interface areas Left panel Workbook Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf. Center panel Field picker Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields. Right panel — results area Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing.
+
+<Image align="center" border={true} width="700px" src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" className="border" />
+
+<Image align="center" width="700px" src="https://files.readme.io/8e35bc4a88a1cfa9b26c61fbb629a67cf09200c95966cb32f067f46e0e3ee43f-image.png" />
+
+### Using the Workbook Agent
+
+The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press Enter (or click the send icon).
+
+**Example prompts:**
+
+* "Show me total invoice revenue by plan for the last 30 days" 
+* "Which accounts have open invoices older than 60 days?" 
+* "Break down failed charges by dunning state this month" 
+* "How many invoice line items are associated with add-ons?"
+
+![](https://files.readme.io/2296d3c8cd45a5ec1e0e5a244b05be1c63faa5a33fc652eb30533f0f9a273dfc-image.png)
+
+**Switching between Agent and manual mode**
+
+You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel. Changes are reflected immediately in the results view.
+
+### Creating a new explorer
+
+1. Click the **+ New** button in the top-left corner of the page. 
+2. Select the data model to use for the workbook. 
+3.  After you select a model, a blank workbook will display.
+
+### Available data 
+
+The field picker organizes all available dimensions and metrics by topic. Each topic maps to a set of underlying data entities:
+
+| Data                 | Description                                                                                              |
+| :------------------- | :------------------------------------------------------------------------------------------------------- |
+| Account Billing Info | Payment method details, billing address and card metadata associated with accounts                       |
+| Accounts             | Account-level attributes including account code, email, address, name, etc                               |
+| Business Entities    | Legal entity data for multi-entity merchants, including entity name and tax region.                      |
+| Dunning Info         | Retry attempts, dunning state, and communication timing for failed payment recovery.                     |
+| Invoice Line Items   | Individual charges and credits at the line level, including unit amounts, quantities, and product codes. |
+| Invoices             | Invoice totals, state (open, collected, failed, voided), currency, and dates.                            |
+| Plans                | Plan codes, names, intervals, and pricing tiers.                                                         |
+| Subscriptions        | Subscription state, start/end dates, trial info, and associated plan and add-on metadata.                |
+
+### Tips & best practices
+
+* Use Preview before adding many fields — it confirms the data shape without running a full query. 
+* The In-use toggle in the field picker narrows the view to your current selection, making it easier to review what's included. 
+* Save frequent queries as a Dashboard using the button in the top-right corner so teammates can access them without rebuilding. 
+* For large date ranges, start with aggregated metrics (totals, counts) before drilling into line-level detail to keep load times fast. 
+* The Workbook Agent works best with specific, scoped questions. Include a timeframe and at least one entity type (account, plan, subscription) for the most accurate results.
+
+### Saving a new explore
+
+To save an explore: 
+
+1.  In the workbook, click **File > Save**. 
+2. Give the document a Name and an optional Description
+3. Use the Locations browser to find and select the folder you want to save the document to. The document can be moved after saving if needed.
+4. Click **Save** to save the document.
+
+<Image align="center" border={true} width="500px" src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" className="border" />
+
+<br />
+
+<br />
