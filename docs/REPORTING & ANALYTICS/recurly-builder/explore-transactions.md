@@ -6,7 +6,7 @@ excerpt: >-
   building reports across billing, subscription, and account data. Use the
   Workbook Agent to ask natural-language questions and get AI-assisted analysis.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
