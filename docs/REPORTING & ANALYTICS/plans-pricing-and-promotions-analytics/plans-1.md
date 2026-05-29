@@ -24,7 +24,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Definition
 
-Recurly's 'Subscription By Plans' offers a rich, color-coded visualization of your subscriptions categorized by different plans. Displayed over your chosen timeframe, this feature enables users to effortlessly discern the popularity and performance of each plan. 
+Recurly's 'Subscription By Plans' offers a rich, color-coded visualization of your subscriptions categorized by different plans. Displayed over your chosen timeframe, this feature enables users to effortlessly discern the popularity and performance of each plan.
 
 > **Note:** It's essential to note the distinction between a subscriber and a subscription. While a single subscriber might hold multiple active subscriptions, this dashboard focuses on counting the individual subscriber, not the number of subscriptions they possess.
 >
@@ -40,7 +40,7 @@ Recurly's 'Subscription By Plans' offers a rich, color-coded visualization of yo
 
 # Total Subscriptions
 
-Total Subscription is a visual representation of your subscriptions, segmented by different plans over a selected timeframe. Each line corresponds to a specific plan, and the height of the bar represents the total number of subscriptions. The line is further color-coded based on different plans, giving you an instant visual clue about which plans are gaining more subscriptions. 
+Total Subscription is a visual representation of your subscriptions, segmented by different plans over a selected timeframe. Each line corresponds to a specific plan, and the height of the bar represents the total number of subscriptions. The line is further color-coded based on different plans, giving you an instant visual clue about which plans are gaining more subscriptions.
 
 ![](https://files.readme.io/8b3d18f1a6df6163ade85a944acae68d5f9e7f36a9d49fea431b0acf372c2cca-image.png)
 
@@ -48,4 +48,16 @@ Total Subscription is a visual representation of your subscriptions, segmented b
 
 ## Subscription Breakout
 
-The Subscriptions by Plans Details Chart offers a comprehensive view of your active subscriptions for the selected plans compared to the total for all plans. It's organized by timeframe, which can be daily, weekly, or monthly based on your preference. This chart is a powerful tool for analyzing plan performance trends over time. You can identify which plans are consistently popular, which ones are growing, and which might need some attention or restructuring. It's an indispensable resource for strategic planning and informed decision-making regarding your plan offerings.
+The three bar charts include net subscriptions, new subscriptions, and churn subscriptions. These charts can be used to analyze the subscription growth rate, identify which plans are gaining or losing subscribers, and determine if certain plans have higher churn rates.
+
+_Plan Performance Net Subscriptions_
+
+<Image align="center" border={true} width="700px" src="https://files.readme.io/eed9e73329d15c55484887486560c75d601d16f0645199f3b6e866cb41e1cd51-image.png" className="border" />
+
+_Plan Performance New Subscriptions _
+
+<Image align="center" border={true} width="700px" src="https://files.readme.io/d4a6468155f422c28af936cfbe7591d3784feb9e734ffcc4dd132c969a12f1f3-image.png" className="border" />
+
+_Plan Performance Churned Subscriptions_
+
+<Image align="center" border={true} width="700px" src="https://files.readme.io/1ec089720efe3ff9d3a27367b13c7c8b67476f4ae33af0dff3f3ad7e08a6659d-image.png" className="border" />
