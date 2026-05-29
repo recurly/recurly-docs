@@ -1,12 +1,13 @@
 ---
-title: Copy of Explore - Invoices & Workbook Agent
+title: Explore - Transactions & Workbook Agent
 excerpt: >-
-  The Invoices Explore feature is a is an interactive analytics tool that lets
-  you slice and filter invoice-related data across accounts, subscriptions,
-  plans, dunning events, and more to create custom reports. Use the Workbook
-  Agent to ask natural-language questions and get AI-assisted analysis.
+  The Transactions Explore feature is a is an interactive analytics tool that
+  lets you slice and filter transaction-related data across accounts,
+  subscriptions, plans, dunning events, and more to create custom reports. Use
+  the Workbook Agent to ask natural-language questions and get AI-assisted
+  analysis.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
