@@ -32,16 +32,15 @@ The Analytics Dashboard serves as your window into the vital performance metrics
 The Overview Dashboard is neatly segmented into three sections: Customers, Subscriptions, and Revenue, each tailored to provide a comprehensive understanding of different business facets. The intuitive user interface hosts a variety of widgets, each offering a suite of common features for a seamless user experience.  
 Below you can find a summary of the interaction tools.
 
-<br />
+### **Utility options (Vertical Ellipses):**
 
-**Vertical Ellipses**:
+Available for both widgets and tables, these ellipses unfold a menu, offering:
 
-Present on widgets featuring charts or tables, the vertical ellipses unveil a dropdown menu offering a host of options:
+* **Ask a Follow-up Question:** Instead of opening a new report, you simply type follow-up questions to drill into subsets, re-aggregate data, or get AI-generated summaries right in the dashboard.
+* **Download:** Users can export the specific tile's query results in various formats, including CSV, PDF, or PNG, for deeper analysis.
+* **Data Timestamp:** Accessed through the vertical ellipse of any widget, revealing the data's last update.
 
-* When you click the vertical ellipse on a widget, you can either download its data or clear the cache to refresh the widget's content.
-* Clicking the vertical ellipse on a column in a table opens options to download data, clear cache and refresh displayed data, or auto-size/resize columns.
-
-**Charts and Legends**:
+### **Charts and Legends**:
 
 Articulating data through bar, line, and pie charts, the widgets on this dashboard encapsulate various metrics including customer, subscriber, subscription, plans, and revenue totals, delineated by time and date ranges. Color-coded information comes with a handy legend on the widget, clarifying the color-value correlation.
 
@@ -52,13 +51,13 @@ Articulating data through bar, line, and pie charts, the widgets on this dashboa
 
 The Customers Section on the dashboard offers a deep dive into key subscriber metrics through five insightful widgets, as illustrated in the following screenshot:
 
-![Customer Dashboard Segment](https://files.readme.io/58793ed-dashboard_customers_section.png)
+<Image align="center" border={true} src="https://files.readme.io/f5ec79fc04b242ef7739324634c95924708206e178d749fc4bb4e86cefc9c1c0-image.png" className="border" />
 
-**1. Active Subscribers:**
+**1. Total Active Subscribers:**
 
 * Reflects the count of unique subscriptions with at least one active subscriber. This encompasses subscribers in a trial phase as well as those who have canceled but haven't churned out yet.
 
-**2. Subscriber Churn Rate:**
+**2. Average Churn Rate:**
 
 * Represents the percentage of subscribers who churned in the last month, calculated against the number of active subscribers at the start of that month.
 
@@ -84,7 +83,7 @@ The Customers Section on the dashboard offers a deep dive into key subscriber me
 >
 > Company X has a Subscriber Churn rate in August of 3.5%. This is found on the Dashboard. The average Subscriber LTV of Company X's subscribers can be calculated as such: Subscriber LTV = ($555,000/ 5,000) (1 + 0.01) / (0.01 + .035), which equals ~$904
 
-**4. Net Subscriber Change:**
+**4. Subscriber Growth:**
 
 * Demonstrates the net subscriber change, formulated as: new subscriber + returning subscriber + churned subscriber.
   * Click on any point on the line to unveil net subscriber totals for the chosen timeframe in hover text.
@@ -102,7 +101,7 @@ Each of these widgets is instrumental in understanding and improving subscriber 
 
 The Subscriptions section provides critical insights into the various subscription plans through three engaging widgets, illustrated in the screenshot below:
 
-![Subscriptions Dashboard Segment](https://files.readme.io/505bedc-Dashboard_subscriptions_section.png)
+<Image align="center" border={true} src="https://files.readme.io/a377dac5eef53338000bd59ccba87794dfb5632bf59e37d2478524e9c58c4ab8-image.png" className="border" />
 
 ### **1. Total Subscriptions:**
 
@@ -117,7 +116,7 @@ The Subscriptions section provides critical insights into the various subscripti
   * Click on a color-coded segment to either exclude that plan from the calculation or to unveil hover text showing the total number of subscriptions for the plan.
   * Access the vertical ellipse→clear cache and refresh action in the Plans Data widget at the dashboard's bottom to check the last update timestamp.
 
-### **3. Top 5 Plans by Subscriptions (Line Chart):**
+### **3. Top 5 Plans Last 6 Months (Line Chart):**
 
 * Depicts the trend of subscriptions across the top five plans over the last six months through a line chart.
   * Click on any point along the lines to view total subscriptions for the selected timeframe in hover text.
@@ -127,7 +126,7 @@ The Subscriptions section provides critical insights into the various subscripti
 
 The Revenue section encompasses four widgets capturing diverse revenue metrics, as shown in the screenshot below:
 
-![Revenue Dashboard Segment](https://files.readme.io/c6d3857-dashboard_revenue_section.png)
+<Image align="center" border={true} src="https://files.readme.io/3b8a8b39615a8c117d887d836a18853ceb297a211c4c90f8736abd73640c89d9-image.png" className="border" />
 
 ### **1. Average Revenue per Customer:**
 
