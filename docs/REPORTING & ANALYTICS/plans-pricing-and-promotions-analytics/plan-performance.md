@@ -81,8 +81,6 @@ _Plan Performance Churned Subscriptions_
 
 <Image align="center" border={true} width="700px" src="https://files.readme.io/1ec089720efe3ff9d3a27367b13c7c8b67476f4ae33af0dff3f3ad7e08a6659d-image.png" className="border" />
 
-<br />
-
 The analysis showcases either the top 5 or top 10 subscription plans, ranked by their total subscriber count. This approach helps in identifying which plans are experiencing higher churn rates, offering a clear perspective on subscriber trends and behaviors.
 
 ### How to use the plan performance subscriptions feature
@@ -98,13 +96,12 @@ The 'Plan Movement' view consists of one trend chart in the 'Plan Movement' sect
 
 * The trend chart provides a visualization of the net movement for the top five plans, which can be valuable in identifying which plans are gaining or losing subscribers.
 
-<Image align="center" alt={2408} caption="Plan Movement Trend" title="pp Plan Movement trend chart.png" src="https://files.readme.io/0651bdf-pp_Plan_Movement_trend_chart.png" />
-
+  <Image align="center" border={true} src="https://files.readme.io/1d7689ed1a8d9d4b37a4f1c9e7296009094d93749a944684925565b29580759b-image.png" className="border" />
 * The bar charts in the 'Plan Movement Breakout' section depict incoming and outgoing subscriptions, allowing you to see how customers are moving between different plans.
 
-<Image align="center" width="75% " src="https://files.readme.io/770b06d-image.png" />
+<Image align="center" border={true} width="700px" src="https://files.readme.io/52b319e0547318589077da9bd67c9f314c413b9db0c49aa214c4dfeb96b35de6-image.png" className="border" />
 
-<Image align="center" width="75% " src="https://files.readme.io/c103e4f-image.png" />
+<br />
 
 ### How to use the plan performance plan movement feature
 
