@@ -34,8 +34,8 @@ The "Subscriber Retention by Plan Section" in Recurly delivers a detailed examin
 
 # Key benefits
 
-* **Plan-specific insights:** Obtain a granular perspective on subscriber activity and trends, filtering specifically by plan, to understand unique retention dynamics.  
-* **Clear data segmentation:** With explicit differentiation between initial plans and subsequent plan changes, ensure data clarity and accuracy in subscriber retention analysis.  
+* **Plan-specific insights:** Obtain a granular perspective on subscriber activity and trends, filtering specifically by plan, to understand unique retention dynamics.
+* **Clear data segmentation:** With explicit differentiation between initial plans and subsequent plan changes, ensure data clarity and accuracy in subscriber retention analysis.
 * **Informed strategy development:** Harness these insights to craft targeted retention initiatives for specific plans, maximizing subscriber longevity.
 
 # Subscriber retention by plan section
@@ -54,16 +54,18 @@ If a subscriber activates a second subscription, they will be counted again in t
 
 Any subsequent changes to the subscription plan will not modify the data presented in this report.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/5a99f1e-subscriber_retention_by_plan.png" />
+<Image align="center" border={true} width="700px" src="https://files.readme.io/44283c5c36e7729c49fe994b1a6fa794e99137ef2435e9ba8facddbd0ce263e3-image.png" className="border" />
 
 ## Subscriber retention by plan active volume
 
 Illustrates the count of active subscribers, grouped by their sign-up periods and chosen plans.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/54332e8-subscriber_retention_by_plan_active_volume.png" />
+<Image align="center" border={true} width="700px" src="https://files.readme.io/ab607870c447bf5f627eff7d16d4af25d41e6472f67433b424c107a663befff5-image.png" className="border" />
 
 ## Subscriber retention by plan churned volume
 
 Reveals the number of subscribers who churned within the selected timeframes and plans.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/af091de-subscriber_retention_by_plan_churn_volume.png" />
+<Image align="center" border={true} width="700px" src="https://files.readme.io/9842a1c2acfc7a0183df9381d5dc73b29d38c813a9fbf62c907a03edfd79d1af-image.png" className="border" />
+
+<br />
