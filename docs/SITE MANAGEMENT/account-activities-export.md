@@ -53,7 +53,11 @@ You can access account activities at two levels:
 
 <br />
 
-###
+<br />
+
+<br />
+
+<br />
 
 <br />
 
@@ -138,7 +142,7 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 2. **Filtered Measures:** To create a measure that is specifically tied to one dimension (e.g., Acted Type by Actor Name), create a pivot table with your target metric and the dimension. Right-click the measure under a specific pivot value and select Create filtered measure.&#x20;
 
 
-<Image src="https://files.readme.io/05aeff02dce97d132b08e141ab868faad8ef6930bfbe0d731b0d3a91e242cd62-image.png" align="center" />
+<Image src="https://files.readme.io/05aeff02dce97d132b08e141ab868faad8ef6930bfbe0d731b0d3a91e242cd62-image.png" align="center" width="500px" />
 
 
 ### Downloading your data
