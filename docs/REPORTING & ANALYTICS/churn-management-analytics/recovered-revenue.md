@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+- Users must have Analytics user role permission.
 
 # Definition
 
@@ -59,19 +59,25 @@ You are able to filter on the invoice creation date, or the invoice closed date,
 
 1. **Recovered revenue KPI:** These indicators offer a real-time snapshot of your revenue dynamics. They help you measure the effectiveness of your revenue recovery strategies by comparing your current payment amounts with totals for the last month, previous month, three months ago, and a year ago. This enables you to identify trends and track progress, supporting informed decisions to proactively manage involuntary churn as you track the amount of revenue recovered over time, and compared to last year.
 
-![](https://files.readme.io/82bf6559f3b90ad2b458c0d0e513079879d6d33d951e0050a89d5dd077bc7baa-image.png)
+
+<Image src="https://files.readme.io/82bf6559f3b90ad2b458c0d0e513079879d6d33d951e0050a89d5dd077bc7baa-image.png" align="center" border={true} />
+
 
 <br />
 
 2. **Recovered Revenue chart:** This bar chart visualizes the revenue that Recurly has helped you recover by minimizing involuntary churn from declined automated invoices. It allows you to see at a glance the financial impact of Recurly's services, making it a powerful tool for forecasting and resource allocation. These charts are displayed as a total revenue saved, or a count of invoices recovered.
 
-<Image align="center" border={true} src="https://files.readme.io/40dfc0fa1fe13c6e9c395906a99fab9b12cc298514d48502e78a8e6915813e60-image.png" className="border" />
+
+<Image src="https://files.readme.io/40dfc0fa1fe13c6e9c395906a99fab9b12cc298514d48502e78a8e6915813e60-image.png" align="center" border={true} />
+
 
 <br />
 
 3. **Recovered Revenue Detail:** This detailed breakdown gives you insights into the processes that drive revenue recovery. By displaying the amount recovered through each process (Expired Card Management, Account Updater, Intelligent Retries, Backup Payment Method, Customer Updates, and External Recovery), it enables you to see which tools are most effective. This knowledge empowers you to focus your efforts on the most productive areas, thereby improving recovery rates, enhancing service continuity, and fostering customer retention. These charts are displayed as a total revenue saved, or a count of invoices recovered.
 
-<Image align="center" border={true} src="https://files.readme.io/1b47403d9847c0becfa5fab2226f73ff73c118f2aae3fb1490013271d45ad266-image.png" className="border" />
+
+<Image src="https://files.readme.io/1b47403d9847c0becfa5fab2226f73ff73c118f2aae3fb1490013271d45ad266-image.png" align="center" border={true} />
+
 
 By having a clear understanding of the Recovered Revenue features, you can maximize their usage and significantly reduce involuntary churn, thereby enhancing your revenue recovery.
 
@@ -79,4 +85,8 @@ By having a clear understanding of the Recovered Revenue features, you can maxim
 
 Continue to learn more about how Recurly helps you prevent churn and your recovered invoice rate by navigating to the related dashboards. Also review your dunning campaign strategy to continue to increase your dunning recoveries.
 
-<Image align="center" src="https://files.readme.io/91d2dd4-Screen_Shot_2024-01-22_at_7.58.05_PM.png" />
+
+<Image src="https://files.readme.io/91d2dd4-Screen_Shot_2024-01-22_at_7.58.05_PM.png" align="center" />
+
+
+<br />
