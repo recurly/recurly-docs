@@ -55,6 +55,8 @@ You can access account activities at two levels:
 
 ###
 
+<br />
+
 ## Explore interface
 
 The Explorer is divided into three areas:
@@ -135,14 +137,16 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 1. **Standard Filters:** Drag and drop any field into the Filters section of the query builder, or click the drop-down/actions menu next to the field header in your data view and select Filter.
 2. **Filtered Measures:** To create a measure that is specifically tied to one dimension (e.g., Acted Type by Actor Name), create a pivot table with your target metric and the dimension. Right-click the measure under a specific pivot value and select Create filtered measure.&#x20;
 
-![](https://files.readme.io/05aeff02dce97d132b08e141ab868faad8ef6930bfbe0d731b0d3a91e242cd62-image.png)
+
+<Image src="https://files.readme.io/05aeff02dce97d132b08e141ab868faad8ef6930bfbe0d731b0d3a91e242cd62-image.png" align="center" />
+
 
 ### Downloading your data
 
 To download your activity data, from the menu, select **Tab** - **Download**. You can choose from several file format options including CSV, Excel and JSON.
 
 
-<Image src="https://files.readme.io/874a53d85998063a2ffc63b6f02421aee951ce68b58eab805d340e0d900f54c6-image.png" border={true} />
+<Image src="https://files.readme.io/874a53d85998063a2ffc63b6f02421aee951ce68b58eab805d340e0d900f54c6-image.png" align="center" border={true} />
 
 
 <br />
