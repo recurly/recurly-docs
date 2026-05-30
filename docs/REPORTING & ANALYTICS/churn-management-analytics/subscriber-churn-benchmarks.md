@@ -52,8 +52,6 @@ The subscriber churn benchmarks dashboard will provide insights on your churn ra
 
 - **Industry:** This filter lets you view benchmark data tailored to your specific industry, providing more relevant insights.
 
-- **Timeframe:** A fixed filter set to provide a monthly overview of your benchmark metrics. This filter cannot be changed.
-
 - **Subscriber Type:** Another non-editable filter, preset to "Paying Subscribers." It focuses your benchmark comparison on those subscribers who have made payments.
 
 ## Subscriber benchmarks
