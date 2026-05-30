@@ -20,13 +20,23 @@ next:
 
 The Account Activities export gives you a detailed log of every user action and modification made within customer accounts on your Recurly site. Use it to audit changes, monitor account interactions, and analyze activity patterns across your subscriber base.
 
+### Required plan
+
+This feature or setting is available to all customers on any Recurly subscription plan.
+
+# Accessing user exports
+
+1. **Go** to the **Admin** section of Recurly.
+2. In the left-side panel, **navigate** to the "**Admin Exports**" option,
+3. Select "**Account Activities**" from the list of available exports.
+
 You can access account activities at two levels:
 
 - **Account level** — view activity for a specific customer account directly on their account page
 - **Site level** — access the full activity log for your entire site via **Admin → Admin Exports**
 
 
-<Image src="https://files.readme.io/636aeeae5e8a87fd6bd25ec1f654e90d5b2235fbe27d695b399e32bc16b3582d-image.png" border={true} />
+<Image src="https://files.readme.io/e1c4a16aba0142612cd6333c0ae95b3bcbba27d5d6f49dd7d89be67ee9126e61-image.png" align="left" width="600px" border={true} />
 
 
 <br />
@@ -43,11 +53,7 @@ You can access account activities at two levels:
 
 <br />
 
-<br />
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+###
 
 ## Explore interface
 
@@ -117,8 +123,6 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 - **Verb** — filter by the action performed, such as `sent_email`, `renewed`, or `marked_past_due`
 - **Metadata** — filter by specific details about the activity, such as a plan name or invoice ID
 
-<br />
-
 ### Creating a new report
 
 1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
@@ -157,14 +161,14 @@ To download your activity data, from the menu, select **Tab** - **Download**. Yo
 
 | Id                                                             | Example                                     | Description                                                                                                         | Data type (max size) |
 | :------------------------------------------------------------- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------ | :------------------- |
-| <span id="account_code">account\_code</span>                   | 123456789                                   | The unique identifier for the customer account associated with the activity.                                        | varchar(50)          |
-| <span id="acted_upon_object_id">acted\_upon\_object\_id</span> | inv-abc123                                  | The unique identifier for the specific object where the activity occurred, such as an invoice or transaction.       | varchar(50)          |
-| <span id="acted_type">acted\_type</span>                       | invoice                                     | The type of object the activity occurred on, such as an invoice or subscription.                                    | varchar(50)          |
-| <span id="actor_name">actor\_name</span>                       | [jane@example.com](mailto:jane@example.com) | The entity that performed the activity — this could be the Recurly Background Bot, an API call, or a specific user. | varchar(255)         |
-| <span id="actor_type">actor\_type</span>                       | user                                        | The type of actor who performed the activity.                                                                       | varchar(50)          |
+| <span id="account_code">account\_code</span>                   | 123456789                                   | The unique identifier for the customer account associated with the activity.                                        | string               |
+| <span id="acted_upon_object_id">acted\_upon\_object\_id</span> | inv-abc123                                  | The unique identifier for the specific object where the activity occurred, such as an invoice or transaction.       | string               |
+| <span id="acted_type">acted\_type</span>                       | invoice                                     | The type of object the activity occurred on, such as an invoice or subscription.                                    | string               |
+| <span id="actor_name">actor\_name</span>                       | [jane@example.com](mailto:jane@example.com) | The entity that performed the activity — this could be the Recurly Background Bot, an API call, or a specific user. | string               |
+| <span id="actor_type">actor\_type</span>                       | user                                        | The type of actor who performed the activity.                                                                       | string               |
 | <span id="created_at">created\_at</span>                       | 2025-01-15T10:30:00Z                        | The timestamp when the activity occurred.                                                                           | datetime             |
-| <span id="verb">verb</span>                                    | sent\_email                                 | The action performed on the object, such as `sent_email`, `renewed`, or `marked_past_due`.                          | varchar(50)          |
-| <span id="metadata">metadata</span>                            | plan\_name: Gold                            | Additional details about the activity, such as a plan name or invoice ID.                                           | tex                  |
+| <span id="verb">verb</span>                                    | sent\_email                                 | The action performed on the object, such as `sent_email`, `renewed`, or `marked_past_due`.                          | string               |
+| <span id="metadata">metadata</span>                            | plan\_name: Gold                            | Additional details about the activity, such as a plan name or invoice ID.                                           | string               |
 
 <br />
 
