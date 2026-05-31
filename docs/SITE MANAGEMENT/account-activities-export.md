@@ -36,30 +36,8 @@ You can access account activities at two levels:
 - **Site level** — access the full activity log for your entire site via **Admin → Admin Exports**
 
 
-<Image src="https://files.readme.io/e1c4a16aba0142612cd6333c0ae95b3bcbba27d5d6f49dd7d89be67ee9126e61-image.png" align="left" width="600px" border={true} />
+<Image src="https://files.readme.io/e1c4a16aba0142612cd6333c0ae95b3bcbba27d5d6f49dd7d89be67ee9126e61-image.png" align="center" width="600px" border={true} />
 
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
 
 ## Explore interface
 
@@ -72,32 +50,8 @@ The Explorer is divided into three areas:
 | Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
 
 
-<Image src="https://files.readme.io/151e9a40bf36f6e8fc2438ae06a4ad5511128db459e51697062f0d77d3dfe510-image.png" border={true} />
+<Image src="https://files.readme.io/151e9a40bf36f6e8fc2438ae06a4ad5511128db459e51697062f0d77d3dfe510-image.png" align="center" border={true} />
 
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
 
 ### Pre-built sample queries
 
@@ -115,8 +69,6 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 - “List all subscription cancellations performed via API in the past 30 days”
 - “Count account activities by type for the current revenue period”
 - “Show me all activities where the acted-upon object is a billing info record”
-
-<br />
 
 ### Available Fields
 
@@ -153,14 +105,10 @@ To download your activity data, from the menu, select **Tab** - **Download**. Yo
 <Image src="https://files.readme.io/874a53d85998063a2ffc63b6f02421aee951ce68b58eab805d340e0d900f54c6-image.png" align="center" border={true} />
 
 
-<br />
-
-<br />
-
 ![]()
 
 
-<Image src="https://files.readme.io/5eeb0615dbbaa65e7a6566580fc02a36aef6bc8f232a8543b33977c284b805f0-image.png" align="center" border={true} />
+<Image src="https://files.readme.io/5eeb0615dbbaa65e7a6566580fc02a36aef6bc8f232a8543b33977c284b805f0-image.png" align="center" width="300px" border={true} />
 
 
 <br />
