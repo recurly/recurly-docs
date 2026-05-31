@@ -38,24 +38,6 @@ The user export feature in Recurly allows administrators to easily download a co
 
 <br />
 
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-\#
-
-<br />
-
 ## Explore interface
 
 The Explorer is divided into three areas:
@@ -69,30 +51,6 @@ The Explorer is divided into three areas:
 
 <Image src="https://files.readme.io/b14849b0185ddbdd34596936d16adf5a7d73a6fb11baae37a842dc3c7616288f-image.png" border={true} />
 
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
 
 ### Pre-built sample queries
 
@@ -142,7 +100,7 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 To download your activity data, from the menu, select **Tab** - **Download**. You can choose from several file format options including CSV, Excel and JSON.
 
 
-<Image src="https://files.readme.io/bbf4a79f307a7e268318352d2b6046a6a297587b4729e4a0147a74220c6bd7b3-image.png" align="left" border={true} />
+<Image src="https://files.readme.io/bbf4a79f307a7e268318352d2b6046a6a297587b4729e4a0147a74220c6bd7b3-image.png" align="left" width="300px" border={true} />
 
 
 <br />
@@ -170,7 +128,7 @@ To download your activity data, from the menu, select **Tab** - **Download**. Yo
 <br />
 
 
-<Image src="https://files.readme.io/9727ad37879c86cdf6a7f77e9689f41e48e0d5a9a80c6443c1c337f11a68da86-image.png" align="left" width="400px" border={true} />
+<Image src="https://files.readme.io/9727ad37879c86cdf6a7f77e9689f41e48e0d5a9a80c6443c1c337f11a68da86-image.png" align="left" width="300px" border={true} />
 
 
 <br />
