@@ -31,12 +31,8 @@ The user export feature in Recurly allows administrators to easily download a co
 3) **Select** "**Users**" from the list of available exports.
 
 
-<Image src="https://files.readme.io/cf686844ae85d399335ac290c89bbdbcb4689628b53de0ead7ea74367f7a7eb7-image.png" align="left" width="600px" border={true} />
+<Image src="https://files.readme.io/cf686844ae85d399335ac290c89bbdbcb4689628b53de0ead7ea74367f7a7eb7-image.png" align="center" width="600px" border={true} />
 
-
-<br />
-
-<br />
 
 ## Explore interface
 
