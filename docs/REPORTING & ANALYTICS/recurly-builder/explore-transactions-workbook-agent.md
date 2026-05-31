@@ -66,13 +66,9 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 - &#x20;“List transactions flagged for fraud in the past 30 days”
 - “Break down successful transactions by plan and subscription state”
 
-![](https://files.readme.io/2b46f6b413106f780ea6650e6320f24661730c8a142c3ae7dbc64c18b667a9cc-image.png)
 
-<br />
+<Image src="https://files.readme.io/2b46f6b413106f780ea6650e6320f24661730c8a142c3ae7dbc64c18b667a9cc-image.png" align="center" />
 
-<br />
-
-<br />
 
 **Switching between Agent and manual mode**
 
