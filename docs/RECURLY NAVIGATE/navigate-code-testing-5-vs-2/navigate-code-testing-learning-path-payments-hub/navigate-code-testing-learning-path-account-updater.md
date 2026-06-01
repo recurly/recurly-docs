@@ -238,7 +238,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Account Updater dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/6c1379d4-8c98-4640-a53b-5b70a60d5f23" loading="lazy" title="Payments Hub: Account Updater dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
         <div class="rc-step-video-caption">A walkthrough of the Account Updater dashboard — card update volume, update types, and revenue protected.</div>
       </div>
