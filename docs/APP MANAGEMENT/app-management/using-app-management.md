@@ -55,8 +55,28 @@ The Subscription dashboards provides insights into your active and churned subsc
 <Image src="https://files.readme.io/7beb46c6c32f389d1fc57663ff3f95dd978bf22fe64cffdabcb832e068a27801-image.png" align="right" border={true} />
 
 
+<br />
 
-<Image src="https://files.readme.io/64bef5a-subs-byProduct.png" align="center" border={true} />
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+
+<Image src="https://files.readme.io/8a88134d0692c155495036284d7709147965b659db11b32d3aeb2d37ce008762-image.png" align="center" border={true} />
 
 
 ## Subscriber retention
@@ -74,7 +94,7 @@ The Subscriber Retention dashboard uses cohort analysis to evaluate paid subscri
 The Billings dashboard shows total gross revenue processed in the App Stores over a selected time period. Billings can be broken down by the App Store from which they originated, and by new revenue (successful first time payments) and renewing revenue.
 
 
-<Image src="https://files.readme.io/c333a20-billings-byProduct.png" align="center" border={true} />
+<Image src="https://files.readme.io/5f15a6ae9a4b9bf6c3d804bf74fd68a082d688c7850b296352045f852f598ed9-image.png" align="center" border={true} />
 
 
 ## Monthly recurring revenue
