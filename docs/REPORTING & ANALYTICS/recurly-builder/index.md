@@ -50,10 +50,8 @@ The Explorer is divided into three areas:
 | Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
 
 
-<Image src="https://files.readme.io/26bc849b2829527adb5b7c95cefc555b6c50b03e68b2b68ee44ee4b027b03743-image.png" align="center" width="700px" border={true} />
+<Image src="https://files.readme.io/69c5288cf91e6fd87bde330738bd87315b96bf3ad235a6255de9920e5ae4838b-image.png" align="center" border={true} />
 
-
-<br />
 
 ### Using the Workbook Agent
 
@@ -78,6 +76,21 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 **Switching between Agent and manual mode**
 
 You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel. Changes are reflected immediately in the results view.
+
+### Opening an existing report
+
+1. Click the **yellow Recurly logo** in the Explore
+2. Either go to **My documents** or the **Hub**. My documents stores your private personal data reports and folders while the Hub is the shared workspace for the entire merchant site.
+3. Click on the folder or report to open
+4. Click on **Edit** or **Explore** in the upper right corner
+
+
+<Image src="https://files.readme.io/876fbccfd3e5c64960151b19b40148fb6688a7320eea40e9af93909becda1147-image.png" align="left" width="200px" border={true} />
+
+
+
+<Image src="https://files.readme.io/fd6030aad81cb48304317f0583221f7df52b0df245f6ced971bf8d3103c5e81f-image.png" align="left" width="200px" border={true} />
+
 
 <br />
 
@@ -116,8 +129,6 @@ To save a report:
 
 <Image src="https://files.readme.io/41965e12577df2175ead2737ac62f6672243bc0a79b460e3204b6eb9dfcd49d7-image.png" align="center" width="500px" border={true} />
 
-
-<br />
 
 <br />
 
