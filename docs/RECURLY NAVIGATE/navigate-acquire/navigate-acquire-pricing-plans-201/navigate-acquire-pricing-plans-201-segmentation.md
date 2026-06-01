@@ -330,7 +330,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Path nav — Start state -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-btn-prev">← Back to Pricing & Packaging 201</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-btn-prev">← Pricing & Packaging 201</a>
       <span class="rc-lp-nav-indicator">1 of 3 · Segmentation</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation-configure" class="rc-btn-path">Next: How to Configure →</a>
     </div>
