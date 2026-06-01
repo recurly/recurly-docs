@@ -1,5 +1,5 @@
 ---
-title: 'Use Billing: Overview'
+title: 'Usage Billing: Overview'
 deprecated: false
 hidden: true
 metadata:
