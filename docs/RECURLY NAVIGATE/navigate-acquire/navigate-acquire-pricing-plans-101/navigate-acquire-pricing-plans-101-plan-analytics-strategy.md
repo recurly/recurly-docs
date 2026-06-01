@@ -437,35 +437,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <span class="rc-lp-nav-indicator">3 of 3 · Analytics</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-review" class="rc-btn-path">Review &amp; Resources →</a>
     </div>
-
-    <!-- Continue your journey -->
-    <div class="rc-next-steps">
-      <h3>🧭 Continue your journey</h3>
-      <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-review" class="rc-next-card">
-          <div class="rc-next-card-tag">Up next</div>
-          <div class="rc-next-card-icon">🏁</div>
-          <h4>Review &amp; Resources</h4>
-          <p>You've completed all six Micro-Paths. Head to the Review &amp; Resources page to test your knowledge and access every resource from across the full P&amp;P 101 series in one place.</p>
-          <div class="rc-next-card-arrow">Go to Review →</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-next-card">
-          <div class="rc-next-card-tag">Series hub</div>
-          <div class="rc-next-card-icon">🎯</div>
-          <h4>P&amp;P 101 Overview</h4>
-          <p>Return to the full series overview to revisit any Micro-Path or share the program with a colleague who's new to Recurly's pricing and packaging tools.</p>
-          <div class="rc-next-card-arrow">View all paths →</div>
-        </a>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon">🎙️</div>
-          <h4>Global Office Hours</h4>
-          <p>Bring any outstanding questions from the full P&amp;P 101 series to our CSMs live. Sessions run weekly — no question is too specific.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-      </div>
-    </div>
-
     <!-- Resources -->
     <div class="rc-resources">
       <h3>📚 Resources</h3>
