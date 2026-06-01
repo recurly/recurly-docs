@@ -1,5 +1,5 @@
 ---
-title: 'Use Billing: Best practices & strategy'
+title: 'Usage Billing: Best practices & strategy'
 deprecated: false
 hidden: true
 metadata:
