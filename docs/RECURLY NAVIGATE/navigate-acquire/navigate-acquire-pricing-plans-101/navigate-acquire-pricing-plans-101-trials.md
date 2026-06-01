@@ -95,72 +95,50 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
 .rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid var(--yellow); }
 .rc-callout-warning .rc-callout-body > strong { color: var(--darkgray); }
+.rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid var(--orange); }
+.rc-callout-caution .rc-callout-body > strong { color: var(--darkgray); }
 
-/* Numbered + Q steps */
+/* Numbered steps */
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
 .rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
 .rc-step:last-child { border-bottom: none; }
 .rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
-.rc-step-num-q { width: 36px; height: 36px; border-radius: 50%; background: var(--yellow); color: var(--offblack); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
 .rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
 .rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
 .rc-step-content p + p { margin-top: 8px; }
 .rc-step-content strong { color: var(--darkgray); }
+.rc-step-content a { color: var(--orange); font-weight: 600; text-decoration: none !important; }
+.rc-guide .rc-step-content a:hover { text-decoration: underline !important; }
 
-/* Checklist */
-.rc-checklist { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin: 20px 0 32px; }
-.rc-checklist-header { padding: 14px 22px; background: var(--offblack); display: flex; align-items: center; gap: 10px; }
-.rc-checklist-header h4 { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow); margin: 0; }
-.rc-checklist-item { padding: 14px 22px; border-bottom: 1px solid var(--brightgray); display: flex; align-items: flex-start; gap: 14px; transition: background .15s; cursor: pointer; }
-.rc-checklist-item:last-child { border-bottom: none; }
-.rc-checklist-item:hover { background: var(--brightgray); }
-.rc-checklist-item input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
-.rc-checkbox-box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--lightgray); flex-shrink: 0; background: #fff; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 1px; }
-.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box { background: var(--offblack); border-color: var(--offblack); }
-.rc-checklist-item input[type="checkbox"]:checked + .rc-checkbox-box::after { content: '✓'; color: var(--yellow); font-size: .75rem; font-weight: 800; line-height: 1; }
-.rc-checklist-item input[type="checkbox"]:checked ~ .rc-checklist-text strong { text-decoration: line-through; color: var(--gray); }
-.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(255,215,6,0.06); }
-.rc-checklist-text { flex: 1; }
-.rc-checklist-text strong { font-size: .9rem; font-weight: 700; color: var(--offblack); display: block; margin-bottom: 2px; transition: color .18s; }
-.rc-checklist-text span { font-size: .8rem; color: var(--gray); line-height: 1.4; display: block; }
-.rc-checklist-footer { padding: 10px 22px; background: var(--brightgray); border-top: 1px solid var(--lightgray); font-size: .78rem; color: var(--gray); font-weight: 600; }
+/* Comparison table */
+.rc-compare-table { width: 100%; border-collapse: collapse; margin: 20px 0 32px; font-size: .88rem; }
+.rc-compare-table th { background: var(--offblack); color: var(--yellow); font-size: .72rem; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; padding: 10px 14px; text-align: left; }
+.rc-compare-table td { padding: 13px 14px; border-bottom: 1px solid var(--brightgray); color: var(--darkgray); vertical-align: top; line-height: 1.5; }
+.rc-compare-table tr:last-child td { border-bottom: none; }
+.rc-compare-table tr:nth-child(even) td { background: var(--offwhite); }
+.rc-compare-table td:first-child { font-weight: 700; color: var(--offblack); }
+.rc-compare-table .rc-tag-yes { display: inline-flex; align-items: center; gap: 4px; font-size: .75rem; font-weight: 700; color: var(--offblack); background: rgba(255,215,6,0.25); border: 1px solid rgba(255,215,6,0.5); padding: 2px 9px; border-radius: 10px; white-space: nowrap; }
+.rc-compare-table .rc-tag-no { display: inline-flex; align-items: center; gap: 4px; font-size: .75rem; font-weight: 700; color: var(--gray); background: var(--brightgray); border: 1px solid var(--lightgray); padding: 2px 9px; border-radius: 10px; white-space: nowrap; }
 
-/* Pitch card */
-.rc-pitch-card { background: #0D0D0B !important; border-radius: 14px; padding: 36px 40px; text-align: center; margin: 0 0 40px; border: 1px solid rgba(255,255,255,0.08); }
-.rc-pitch-emoji { font-size: 2.4rem; margin-bottom: 12px; }
-.rc-pitch-card h3 { font-size: 1.1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #FFD706 !important; margin: 0 0 16px; }
-.rc-pitch-quote { font-size: 1.05rem; color: #FFFDF2 !important; line-height: 1.7; max-width: 680px; margin: 0 auto; font-style: italic; }
-.rc-pitch-quote strong { color: #ffffff !important; font-style: normal; }
-
-/* OH CTA */
-.rc-oh-cta { background: var(--offblack); border: 2px solid var(--yellow); border-radius: 14px; padding: 32px 36px; margin: 32px 0; }
-.rc-oh-cta h4 { color: #FFD706; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
-.rc-oh-cta p { color: #CCC9B8; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
-.rc-oh-cta p strong { color: #FFFDF2; }
-.rc-guide a.rc-oh-btn { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); border-bottom: 2px solid var(--yellow) !important; }
-.rc-guide a.rc-oh-btn:hover { background: transparent !important; color: var(--yellow) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
-
-/* Continue your journey */
-.rc-next-steps { margin: 40px 0 0; }
-.rc-next-steps h3 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 16px; }
-.rc-next-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-.rc-next-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 20px; text-decoration: none !important; color: inherit; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-guide a.rc-next-card { border-bottom: 1px solid var(--lightgray) !important; }
-.rc-guide a.rc-next-card:hover { border-color: #FFD706; border-bottom: 1px solid #FFD706 !important; box-shadow: 0 4px 16px rgba(255,215,6,0.15); transform: translateY(-2px); }
-.rc-next-card-tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--yellow); margin-bottom: 2px; }
-.rc-next-card-icon { font-size: 1.3rem; line-height: 1; }
-.rc-next-card h4 { font-size: .95rem; font-weight: 800; color: var(--offblack); margin: 0; line-height: 1.3; }
-.rc-next-card p { font-size: .85rem; color: var(--gray); line-height: 1.5; margin: 0; flex-grow: 1; }
-.rc-next-card-arrow { font-size: .82rem; font-weight: 700; color: var(--orange); margin-top: 4px; }
+/* Accent cards */
+.rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
+.rc-accent-card.rc-accent-orange { border-left: 4px solid var(--orange); }
+.rc-accent-card.rc-accent-yellow { border-left: 4px solid var(--yellow); }
+.rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 12px; }
+.rc-accent-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.65; margin: 0 0 10px; }
+.rc-accent-card p:last-child { margin-bottom: 0; }
+.rc-accent-card ul { font-size: .9rem; color: var(--gray); line-height: 1.75; padding-left: 20px; margin: 0; }
+.rc-accent-card ul li { margin-bottom: 4px; }
+.rc-accent-card ul li strong { color: var(--darkgray); }
 
 /* Path nav */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
-.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
-.rc-guide a.rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray); transition: all .2s; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }.rc-guide a.rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray); transition: all .2s; }
 .rc-guide a.rc-btn-prev { border-bottom: 2px solid var(--lightgray) !important; }
 .rc-guide a.rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
-.rc-guide a.rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
-.rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; }
+.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); border-bottom: 2px solid var(--yellow) !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+.rc-btn-start-label { font-size: .8rem; font-weight: 600; color: var(--lightgray); }
 
 /* Resources */
 .rc-resources { background: var(--brightgray); border-left: 4px solid var(--yellow); border-radius: 10px; padding: 20px 24px; margin: 48px 0 0; }
@@ -169,7 +147,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-resource-link { color: var(--gray) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--lightgray) !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; }
 .rc-guide .rc-resource-link:hover { color: var(--offblack) !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FFD706 !important; }
 
-/* Footer */
+/* Footer — grouped sections */
 .rc-footer-nav { border-top: 1px solid var(--lightgray); padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
 .rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
 .rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
@@ -188,10 +166,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
   .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
   .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
-  .rc-next-grid { grid-template-columns: 1fr; }
+  .rc-compare-table { font-size: .8rem; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
-  .rc-oh-cta { padding: 24px 20px; }
 }
 </style>
 
@@ -216,16 +193,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Pricing Models — Strategy &amp; Best Practices</h1></div>
-      <p>Choosing the right model is less about features and more about what kind of pricing relationship you want to create with your subscribers. Here's how to match the model to the business outcome — and how to know when you've got it wrong.</p>
+      <div class="rc-lp-hero-title"><h1>Trials — Overview</h1></div>
+      <p>Trials reduce the risk of signing up. But how you structure a trial — whether you require a card, how long you run it, and what happens at the end — shapes both who starts and who converts. This page explains how trials work in Recurly and the key decisions before you configure one.</p>
       <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Fixed first</div><div class="rc-hero-stat-label">default to Fixed — complexity should be justified by a specific business need</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Ramp</div><div class="rc-hero-stat-label">the right tool for closing the gap between commitment and perceived value</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Stairstep</div><div class="rc-hero-stat-label">the simplest quantity model — when bundle pricing is clearer than per-unit math</div></div>
+        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Plan-level</div><div class="rc-hero-stat-label">trial period is configured directly on the plan — not on individual subscriptions</div></div>
+        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Card optional</div><div class="rc-hero-stat-label">billing info at trial signup is configurable — requiring it improves conversion, waiving it widens the funnel</div></div>
+        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Auto-converts</div><div class="rc-hero-stat-label">at trial end Recurly automatically transitions the subscription to active and bills the first period</div></div>
       </div>
     </div>
 
-    <!-- Navigation Menu — page 3 active -->
+    <!-- Navigation Menu — page 1 active -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <span class="rc-nav-chevron">▲</span></span>
@@ -234,266 +211,157 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-sticky-link"><span class="rc-step-badge">1</span> Pricing Models: Overview</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models-configure" class="rc-sticky-link"><span class="rc-step-badge">2</span> Pricing Models: Configure</a>
         <!-- Active page: map pin replaces badge -->
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models-strategy" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Pricing Models: Strategy
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Trials: Overview
         </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials-configure" class="rc-sticky-link"><span class="rc-step-badge">2</span> Trials: Configure</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials-strategy" class="rc-sticky-link"><span class="rc-step-badge">3</span> Trials: Strategy</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
         </a>
       </div></div></div>
     </details>
 
-    <!-- Matching model to business -->
-    <div class="rc-lp-section" id="matching-model">
-      <h2>🏗️ Matching the model to the business outcome</h2>
-      <p>Every pricing model answers a different question about how value is created and delivered in your product. The right model isn't the most sophisticated one — it's the one that most accurately reflects the relationship between what a subscriber pays and what they get. Complexity that doesn't serve that relationship creates confusion on invoices and friction at renewal.</p>
+    <!-- What trials do in Recurly -->
+    <div class="rc-lp-section" id="what-trials-do">
+      <h2>🧪 What trials do in Recurly</h2>
+      <p>A trial in Recurly is a period at the start of a subscription during which the subscriber is not billed. The trial is configured at the plan level — you set a trial length (in days) and decide whether billing information is required to start the trial. When a subscription is created with that plan, Recurly creates it in a <strong>trialing</strong> status and schedules the first invoice for after the trial period ends.</p>
+      <p>At the end of the trial, Recurly automatically transitions the subscription to <strong>active</strong> and generates the first invoice. If a payment method is on file, Recurly attempts to collect immediately. If no payment method was collected during signup (cardless trial), Recurly transitions the subscription to <strong>past due</strong> and triggers your dunning workflow.</p>
+      <p>Trials are not refunds, free accounts, or feature-limited plans. A trialing subscription has full access to the plan's features — it just hasn't been charged yet. This matters for how you communicate the end of the trial to the subscriber.</p>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon">💡</div>
+        <div class="rc-callout-body">
+          <strong>Trial vs. freemium: different tools for different goals</strong>
+          <p>A trial gives a subscriber time-limited access to a paid plan without charge. Freemium gives indefinite access to a limited version of the product at no cost. Recurly handles trials natively — freemium models typically use a free plan priced at $0, which is a different configuration. Don't use a trial to approximate freemium if you need ongoing free access.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trial approaches comparison -->
+    <div class="rc-lp-section" id="trial-approaches">
+      <h2>🔀 Three approaches to trials in Recurly</h2>
+      <p>Recurly supports three ways to create a trial-like experience. Each has different tradeoffs for conversion, tracking, and operational complexity.</p>
+
+      <table class="rc-compare-table">
+        <thead>
+          <tr>
+            <th>Approach</th>
+            <th>How it works</th>
+            <th>Card required?</th>
+            <th>Auto-converts?</th>
+            <th>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plan-level free trial</td>
+            <td>Trial length set on the plan. New subscriptions enter <em>trialing</em> status and auto-convert at trial end.</td>
+            <td><span class="rc-tag-yes">Configurable</span></td>
+            <td><span class="rc-tag-yes">Yes — automatic</span></td>
+            <td>Most subscription products. Clean, native, requires no workarounds.</td>
+          </tr>
+          <tr>
+            <td>Coupon-based trial (100% off first period)</td>
+            <td>A 100% discount coupon applied at checkout gives a $0 first invoice. Subscriber is billed at full price next cycle.</td>
+            <td><span class="rc-tag-yes">Always required</span></td>
+            <td><span class="rc-tag-yes">Yes — automatic</span></td>
+            <td>When you want trial tracking separate from plan config, or targeted trial offers by cohort.</td>
+          </tr>
+          <tr>
+            <td>Manual trial extension via API</td>
+            <td>Override a specific subscription's trial end date via the API or admin UI. Used to extend existing trials case by case.</td>
+            <td><span class="rc-tag-no">Depends on plan</span></td>
+            <td><span class="rc-tag-yes">Yes — at extended end date</span></td>
+            <td>CSM-led or sales-assisted trial management. Not a substitute for plan-level trial setup.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="rc-callout rc-callout-caution">
+        <div class="rc-callout-icon">⚠️</div>
+        <div class="rc-callout-body">
+          <strong>Coupon-based trials add operational overhead</strong>
+          <p>While 100% coupon trials give you more flexibility in targeting and tracking, they require managing coupon codes and redemption limits separately from the plan. For most products, the native plan-level trial is simpler and less error-prone. Reserve the coupon approach for cases where you genuinely need per-cohort or per-campaign trial differentiation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The key decisions -->
+    <div class="rc-lp-section" id="key-decisions">
+      <h2>🎯 The key decisions before you configure</h2>
+      <p>These four decisions determine the shape of your trial and should be resolved before you touch a plan configuration. Changing a plan's trial settings after subscribers are on it doesn't retroactively affect existing subscriptions — new subscribers only.</p>
 
       <div class="rc-steps">
         <div class="rc-step">
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
-            <h4>Default to Fixed unless you have a specific reason not to</h4>
-            <p>Fixed pricing is transparent, predictable, and easy for subscribers to reason about. It's the right choice for the majority of subscription products where the value delivered doesn't meaningfully vary with usage or quantity. If you can't articulate a clear business reason for a more complex model, Fixed is the right choice — and "more sophisticated" isn't a business reason.</p>
+            <h4>How long should the trial be?</h4>
+            <p>Trial length should match the time it takes a new subscriber to reach a moment where the product has delivered clear value — not the time it takes to explore every feature. Common trial lengths are 7, 14, and 30 days. A 30-day trial is rarely better than a 14-day trial unless your product has a genuinely long time-to-value. Longer trials often delay the purchase decision without improving conversion.</p>
+            <p>Set the length in days, not months — Recurly supports both, but days gives you precise control and makes it easier to communicate clearly in onboarding emails ("Your trial ends on [date]").</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">2</div>
           <div class="rc-step-content">
-            <h4>Use Ramp when there's a real commitment gap at signup</h4>
-            <p>Ramp pricing exists to solve one problem: a subscriber who can see the long-term value of your product but isn't ready to commit to the full price before they've experienced it. A lower introductory rate followed by the full price after 2–3 billing cycles can meaningfully improve first-conversion rates for high-ticket subscriptions.</p>
-            <p>Ramp pricing does not solve a value delivery problem. If subscribers are churning because the product doesn't deliver enough value at full price, a ramp just delays the churn — it doesn't prevent it. Fix the product or the pricing level before adding complexity to the model.</p>
+            <h4>Do you require billing information at trial signup?</h4>
+            <p>This is the most consequential decision in trial configuration. <strong>Requiring a card</strong> gives you a higher-quality funnel, automatic conversion at trial end, and no payment collection risk — but reduces trial start rate because many users won't enter card details for something they're not yet convinced about. <strong>Waiving the card requirement</strong> increases trial starts but produces a weaker conversion signal and requires active payment collection before or at trial end.</p>
+            <p>Neither is universally correct. The right answer depends on your product's trust environment, your sales motion (product-led vs. sales-assisted), and how much of your funnel you're optimising for at the top vs. the bottom.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
-            <h4>Use Tiered when per-unit fairness matters more than simplicity</h4>
-            <p>Tiered pricing works well for seat-based models where subscribers expect to see what they're paying per unit and want the transparency of each tier's rate. The invoice math is more complex, but it's also more auditable — every unit's charge is traceable to its tier. If your target buyers have procurement teams reviewing invoices line by line, Tiered billing aligns with how they think about costs.</p>
+            <h4>What happens to subscribers who don't convert at trial end?</h4>
+            <p>For card-required trials: Recurly bills at trial end. If the charge fails, the subscription enters your dunning workflow. For cardless trials: Recurly transitions the subscription to past due and your dunning workflow begins — but you have no guarantee of a payment method on file to bill against. You need an active re-engagement flow (email, in-app, CSM outreach) to collect payment from cardless trial subscribers before they expire.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
           <div class="rc-step-content">
-            <h4>Use Volume when crossing thresholds should create a meaningful rate drop</h4>
-            <p>Volume pricing creates a strong incentive to grow usage — crossing a band boundary drops the price on every existing unit, not just the new ones. This works well for commodity billing where you're competing on price per unit and want to reward high-volume customers visibly. The risk: a subscriber who discovers they could drop one unit and fall into a cheaper band may do exactly that.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">5</div>
-          <div class="rc-step-content">
-            <h4>Use Stairstep when bundle logic is cleaner than per-unit math</h4>
-            <p>Stairstep pricing fits products where seats or units are naturally bundled — 1–5 users as a starter pack, 6–15 as a growth pack, 16–50 as a team plan. The flat fee for each band is easy to communicate and easy to understand on an invoice. The tradeoff: subscribers close to a band ceiling may resist adding one more seat if it bumps the entire charge to the next band. Design bands so the value jump justifies the price jump.</p>
+            <h4>Will you offer trial extensions?</h4>
+            <p>Decide in advance whether trial extensions are a customer success tool (yes, we extend for high-intent users who need more time) or an exception (no, standard trial length is non-negotiable). Ad hoc extensions are possible via the admin UI and API — but if your support team or CSMs are extending trials without a clear policy, you lose conversion signal and extend your revenue recognition timeline unpredictably.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Common mismatches Q&A -->
-    <div class="rc-lp-section" id="qa">
-      <h2>❓ Common pricing model questions</h2>
-      <p>These are the questions most frequently raised in office hours sessions and CSM conversations when merchants are evaluating or auditing their pricing model setup.</p>
+    <!-- What trials are not -->
+    <div class="rc-lp-section" id="what-trials-are-not">
+      <h2>⛔ What trials don't solve</h2>
+      <p>Trials are a trust-building mechanism, not a product or pricing fix. If you're adding a trial to compensate for a problem elsewhere in the funnel, understand what problem you're actually solving before you configure one.</p>
 
-      <div class="rc-steps">
-        <div class="rc-step">
-          <div class="rc-step-num-q">Q</div>
-          <div class="rc-step-content">
-            <h4>"We have a seat-based product. Should we use Tiered or Stairstep?"</h4>
-            <p>Start with the subscriber's perspective: <strong>would they prefer to see a per-seat price, or a bundle price?</strong> If your buyers are procurement-focused and benchmark per-seat costs against competitors, Tiered gives them the per-unit number they're looking for. If your buyers are decision-makers who want to know "what does my team of 12 cost?" without doing math, Stairstep gives them a clean answer. The model that matches how your buyers think about value is almost always the right model.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num-q">Q</div>
-          <div class="rc-step-content">
-            <h4>"Our trial conversion rate is declining. Should we add Ramp pricing?"</h4>
-            <p>Ramp pricing is a commitment tool, not a conversion tool. It reduces the barrier for subscribers who are ready to commit long-term but hesitant at full price — it doesn't address subscribers who aren't yet convinced the product delivers value. Before adding Ramp, check your exit survey data: <strong>is price the stated reason for not converting, or is it something else?</strong> If the problem is value perception, product onboarding, or time-to-value, Ramp won't help. If price really is the barrier for an otherwise engaged user, Ramp is worth testing.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num-q">Q</div>
-          <div class="rc-step-content">
-            <h4>"We chose Volume pricing but subscribers keep reducing their seat count near band boundaries. What's happening?"</h4>
-            <p>This is a known behavior with Volume pricing and it's a signal that your band boundaries are creating more friction than incentive. A subscriber who discovers that dropping from 21 to 20 seats halves their cost will often drop the seat. <strong>Three fixes to consider:</strong> widen your bands so the saving from dropping a seat is smaller relative to the value of that seat; switch to Tiered so only the marginal units change price; or redesign the bands so each boundary represents a meaningful product tier, not just a price break.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num-q">Q</div>
-          <div class="rc-step-content">
-            <h4>"We want to test a new pricing model without affecting existing subscribers. Is that possible?"</h4>
-            <p>Yes — because plan price changes are versioned, you can update the pricing model configuration on a plan and it will only affect new subscriptions created after the change. <strong>Existing subscribers remain on their original model and pricing.</strong> If you want to test a new model with a subset of new subscribers, create a separate plan with the new model and drive a cohort to it — then compare conversion and retention data between the two plans before committing to a full migration.</p>
-          </div>
-        </div>
+      <div class="rc-accent-card rc-accent-orange">
+        <h4>🔒 Trials don't fix churn caused by weak product value</h4>
+        <p>A trial that delays the first payment doesn't change what the subscriber experiences after they convert. If subscribers are churning after their first paid period, a longer trial will shift when the churn happens — it won't reduce the rate. Audit post-trial churn before extending trial length as a retention strategy.</p>
+      </div>
+
+      <div class="rc-accent-card rc-accent-orange">
+        <h4>📊 Trials don't fix pricing that's misaligned with perceived value</h4>
+        <p>If a subscriber goes through a 30-day trial, sees the value, but still doesn't convert because the price feels too high relative to what they're getting, the problem is pricing or packaging — not trial length. Adding Ramp pricing or extending the trial further doesn't fix a value-perception gap. It pushes the decision further out.</p>
+      </div>
+
+      <div class="rc-accent-card rc-accent-yellow">
+        <h4>⚠️ Cardless trials are not demand — they are intent signals</h4>
+        <p>A subscriber who starts a trial without a payment method has expressed curiosity, not commitment. Cardless trial starts can look impressive as a funnel metric while producing almost no paid conversions. Track <strong>trial-to-paid conversion rate</strong> — not trial starts — as the primary measure of trial effectiveness. A card-required trial with half the starts but three times the conversion rate is a better trial.</p>
       </div>
     </div>
 
-    <!-- Audit checklist -->
-    <div class="rc-lp-section" id="audit">
-      <h2>🔍 Pricing model health check</h2>
-      <p>Run this audit on your current plan and add-on pricing configuration. The most common finding is a mismatch between the model chosen and the subscriber behavior it's creating.</p>
-
-      <div class="rc-checklist">
-        <div class="rc-checklist-header">
-          <span style="font-size:1rem;">📋</span>
-          <h4>Pricing model configuration audit</h4>
-        </div>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Every pricing model in use has a documented reason for being that model</strong>
-            <span>If not: audit each plan and add-on against the model framework above. "We've always done it this way" isn't a reason.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>No Ramp plans where the issue is product value, not commitment hesitation</strong>
-            <span>If you're using Ramp and trial conversion is still declining, check exit survey data before assuming the model is the fix.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>All quantity-based add-ons have an open-ended final band (no "To" limit)</strong>
-            <span>If not: subscribers whose quantity exceeds your highest band will trigger a billing error at renewal.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Volume add-ons have been tested for band-boundary gaming behavior</strong>
-            <span>If subscribers cluster just below band thresholds, your bands may be creating a downgrade incentive rather than an upgrade one.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Pricing model changes have been tested in sandbox before production</strong>
-            <span>Especially for Tiered, Volume, and Stairstep — verify the invoice calculation at multiple quantities before activating for subscribers.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Ramp interval schedules have been reviewed with the finance and revenue ops teams</strong>
-            <span>Ramp plans affect recognized revenue timing. Your finance team needs to know about them before they appear on invoices.</span>
-          </div>
-        </label>
-        <div class="rc-checklist-footer">✓ Mark each item complete as you address it — any unchecked item is a specific, actionable opportunity</div>
-      </div>
-    </div>
-
-    <!-- AI era -->
-    <div class="rc-lp-section" id="ai-strategy">
-      <h2>🤖 Pricing models in the AI era</h2>
-      <p>The most significant shift AI is creating for subscription pricing isn't in model selection — it's in price evaluation. AI assistants comparing subscriptions on a subscriber's behalf are increasingly surfacing total cost of ownership, not just the base plan price. A product with complex quantity-based pricing needs to be evaluable at a glance, or the AI model will either present it inaccurately or deprioritise it in favour of simpler comparisons.</p>
-
-      <div class="rc-steps">
-        <div class="rc-step">
-          <div class="rc-step-num-q">Q</div>
-          <div class="rc-step-content">
-            <h4>"How does my pricing model affect how AI tools evaluate my subscription?"</h4>
-            <p>AI assistants answering questions like "how much does X cost for a 15-person team?" rely on your public pricing page, pricing calculators, and structured data. <strong>A Stairstep model that says "Teams of 11–25: $199/mo" is instantly calculable for AI.</strong> A Tiered model requires the AI to compute (10 × $10) + (5 × $8) — and if your pricing page doesn't show the math clearly, it will either compute it wrong or default to a competitor with a simpler answer.</p>
-            <p>This isn't an argument against Tiered pricing — it's an argument for making the calculation visible and easy to verify wherever your pricing is publicly displayed.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num-q">Q</div>
-          <div class="rc-step-content">
-            <h4>"Can AI tools help me decide which pricing model to use?"</h4>
-            <p>Yes — and your Recurly data is the raw material. Export your subscription data including plan distribution, add-on attach rates, and quantity distributions for any existing quantity-based add-ons. Then use an AI tool to analyse it: <strong>"At what quantity do most subscribers cluster on our Tiered add-on — and does that cluster suggest a band boundary problem?"</strong> or <strong>"What is the ARPU difference between subscribers on our Ramp plan vs. Fixed plan at the same billing cycle stage?"</strong></p>
-            <p>These are questions that can take days of manual analysis in a spreadsheet and minutes with an AI tool applied to a clean data export. The cleaner your add-on codes and plan codes, the more useful the analysis will be.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="rc-callout rc-callout-warning">
-        <div class="rc-callout-icon">💡</div>
-        <div class="rc-callout-body">
-          <strong>The simplicity premium in an AI-evaluated world</strong>
-          <p>As AI agents increasingly handle subscription evaluation and management on behalf of subscribers, pricing models that produce predictable, explainable invoices will have a competitive advantage over complex models that are technically correct but hard to describe in a sentence. This doesn't mean you should abandon Tiered or Volume pricing where it's genuinely right for your product — but it does mean that every model decision should be defensible in plain language.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pitch card -->
-    <div class="rc-pitch-card">
-      <div class="rc-pitch-emoji">💵</div>
-      <h3>The simplest model that serves the business is the right model</h3>
-      <p class="rc-pitch-quote">"Every layer of complexity in your pricing model is a layer of <strong>cognitive load on the subscriber</strong>. The model that gets out of the way and lets the value speak is almost always the one that retains best."</p>
-    </div>
-
-    <!-- Thought-provoking question — required on last page of every Micro-Path -->
-    <div class="rc-lp-section">
-      <h2>💭 Something to consider</h2>
-      <div class="rc-steps">
-        <div class="rc-step">
-          <div class="rc-step-num-q">?</div>
-          <div class="rc-step-content">
-            <h4>Look at your current plan and add-on pricing setup: which model is doing the most work for your business — and is it actually the right model for the outcome you're trying to drive?</h4>
-            <p>A seat-based product billed entirely on a flat plan price, for example, may be leaving significant ARPU on the table that a Tiered or Stairstep add-on model would capture without requiring a base price increase. Conversely, a Ramp plan that was introduced to improve trial conversion but hasn't moved the metric in two quarters may be adding complexity without adding value. The right answer isn't always the most sophisticated model — it's the model most accurately matched to how subscribers grow with your product.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- OH CTA — follows thought-provoking question -->
-    <div class="rc-oh-cta">
-      <h4>🗓️ Questions about which pricing model fits your product?</h4>
-      <p>Our Customer Success team runs weekly <strong>Global Office Hours</strong> sessions where you can bring specific pricing model questions — Ramp vs. Fixed tradeoffs, Tiered vs. Stairstep for your seat structure, or how to migrate existing subscribers to a new model without billing disruption.</p>
-      <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
-    </div>
-
-    <!-- Path nav — completion state -->
+    <!-- Path nav — start -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models-configure" class="rc-btn-prev">← Configure</a>
-      <span class="rc-lp-nav-indicator">3 of 3 · Pricing Models</span>
-      <span class="rc-btn-complete">Continue to Trials!</span>
-    </div>
-
-    <!-- Continue your journey -->
-    <div class="rc-next-steps">
-      <h3>🧭 Continue your journey</h3>
-      <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-next-card">
-          <div class="rc-next-card-tag">Next in series</div>
-          <div class="rc-next-card-icon">🧪</div>
-          <h4>Trials</h4>
-          <p>Your pricing model shapes the subscription — your trial strategy determines whether a prospect ever gets there. Learn how free trials, cardless trials, and micro-subscriptions each serve a different conversion goal.</p>
-          <div class="rc-next-card-arrow">Start Trials →</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-next-card">
-          <div class="rc-next-card-tag">Series hub</div>
-          <div class="rc-next-card-icon">🎯</div>
-          <h4>P&amp;P 101 Overview</h4>
-          <p>Return to the full series overview to see all six paths and track your progress through the Pricing &amp; Packaging 101 program.</p>
-          <div class="rc-next-card-arrow">View all paths →</div>
-        </a>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon">🎙️</div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your pricing model questions to our CSMs live. Ask about Ramp vs. Fixed, Tiered vs. Stairstep, or model migrations — sessions run weekly.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-      </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models-configure" class="rc-btn-prev">← Start of Micro-Path</a>
+      <span class="rc-lp-nav-indicator">1 of 3 · Trials</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials-configure" class="rc-btn-path">Next: How to Configure →</a>
     </div>
 
     <!-- Resources -->
     <div class="rc-resources">
       <h3>📚 Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/billing-models" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Pricing Models</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/-tiered-stairstep-and-volume-pricing" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Tiered, Stairstep &amp; Volume Pricing</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/add-ons" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Add-Ons</a>
-        <a href="https://recurly.com/blog/subscription-pricing-strategy-playbook/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📝 Subscription Pricing Strategy Playbook</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/trials" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Trials</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/plans" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Plans</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/coupons" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Coupons</a>
         <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-resource-link">🌐 Global Office Hours</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link">🎧 Contact Support</a>
       </div>
@@ -503,10 +371,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Micro-Path: Pricing Models:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-footer-link">Pricing Models: Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models-configure" class="rc-footer-link">Pricing Models: Configure</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models-strategy" class="rc-footer-link">Pricing Models: Strategy &amp; Best Practices</a>
+          <span class="rc-footer-label">Micro-Path: Trials:</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-footer-link">Trials: Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials-configure" class="rc-footer-link">Trials: Configure</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials-strategy" class="rc-footer-link">Trials: Strategy &amp; Best Practices</a>
         </div>
         <div class="rc-footer-section">
           <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
@@ -514,7 +382,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials" class="rc-footer-link">Trials</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-footer-link">Pricing Models</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plan-analytics" class="rc-footer-link">Analytics</a>
         </div>
         <div class="rc-footer-utility">
