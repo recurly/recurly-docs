@@ -171,7 +171,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; }
 .rc-guide a.rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray); transition: all .2s; }
 .rc-guide a.rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
-.rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; }
+  .rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; }.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); border-bottom: 2px solid var(--yellow) !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+
 
 /* Resources */
 .rc-resources { background: var(--brightgray); border-left: 4px solid var(--yellow); border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
@@ -419,36 +421,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy-configure" class="rc-btn-prev">← Configure</a>
       <span class="rc-lp-nav-indicator">3 of 3 · Account Hierarchy</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Continue to Usage Billing</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing" class="rc-btn-path"></i> Continue to Usage Billing →</a>
     </div>
 
-    <!-- Continue your journey -->
-    <div class="rc-next-steps">
-      <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
-      <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing" class="rc-next-card">
-          <div class="rc-next-card-tag">Next in series</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-chart-simple"></i></div>
-          <h4>Usage Billing</h4>
-          <p>Account Hierarchy handles <em>who</em> gets billed. Usage Billing handles <em>how much</em> — metered consumption logged via API and billed in arrears. The natural next step for enterprise customers with consumption-based pricing.</p>
-          <div class="rc-next-card-arrow">Start Usage Billing →</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-next-card">
-          <div class="rc-next-card-tag">Series hub</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-bullseye"></i></div>
-          <h4>P&amp;P 201 overview</h4>
-          <p>Return to the full series overview to see all six Micro-Paths and track your progress through the advanced program.</p>
-          <div class="rc-next-card-arrow">View all paths →</div>
-        </a>
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your hierarchy questions to our CSMs live — org structure design, Invoice Rollup setup, or migrating existing accounts. Sessions run weekly.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-      </div>
-    </div>
 
     <!-- Resources -->
     <div class="rc-resources">
