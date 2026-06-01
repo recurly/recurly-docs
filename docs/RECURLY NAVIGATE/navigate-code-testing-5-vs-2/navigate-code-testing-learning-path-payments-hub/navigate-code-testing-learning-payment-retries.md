@@ -230,7 +230,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Payment Retry Recovery dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/c45d2fa4-3510-43ca-a6be-75c3945f2780" loading="lazy" title="Payments Hub: Payment Retry Recovery dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
         <div class="rc-step-video-caption">A walkthrough of the Payment Retry Recovery dashboard — recovered transactions, revenue at risk, recovery rate, and success by retry attempt.</div>
       </div>
