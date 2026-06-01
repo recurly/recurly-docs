@@ -72,6 +72,23 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 
 You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel. Changes are reflected immediately in the results view.
 
+### Opening an existing report
+
+1. Click the **yellow Recurly logo** in the Explore
+2. Either go to **My documents** or the **Hub**. My documents stores your private personal data reports and folders while the Hub is the shared workspace for the entire merchant site.
+3. Click on the folder or report to open
+4. Click on **Edit** or **Explore** in the upper right corner
+
+
+<Image src="https://files.readme.io/876fbccfd3e5c64960151b19b40148fb6688a7320eea40e9af93909becda1147-image.png" align="left" width="200px" border={true} />
+
+
+<br />
+
+
+<Image src="https://files.readme.io/fd6030aad81cb48304317f0583221f7df52b0df245f6ced971bf8d3103c5e81f-image.png" align="center" width="200px" border={true} />
+
+
 ### Creating a new report
 
 1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
