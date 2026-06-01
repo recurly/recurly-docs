@@ -398,39 +398,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-analytics-configure" class="rc-btn-prev">← Where to Find It</a>
       <span class="rc-lp-nav-indicator">3 of 3</span>
-      <span class="rc-btn-complete">🎉 P&amp;P 201 complete!</span>
-    </div>
-
-    <!-- Continue Your Journey -->
-    <div class="rc-next-steps">
-      <h3>🧭 Continue your journey</h3>
-      <div class="rc-next-grid">
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-next-card">
-          <div class="rc-next-card-tag">Recommended next</div>
-          <div class="rc-next-card-icon">🛡️</div>
-          <h4>Navigate: Retain</h4>
-          <p>Your analytics will surface the customers most at risk of churning. The Retain pillar teaches you exactly what to do about it — dunning, cancellation saves, Account Updater, and pause strategies that keep the customers your pricing acquired.</p>
-          <div class="rc-next-card-arrow">Explore Retain →</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
-          <div class="rc-next-card-icon">🎯</div>
-          <h4>All Acquire paths</h4>
-          <p>See every learning path in the Acquire pillar — from checkout optimization to conversion tactics, payment method expansion, and the full P&P series.</p>
-          <div class="rc-next-card-arrow">View Acquire →</div>
-        </a>
-
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon">🎙️</div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your completed P&P portfolio to our CSMs live. Let's talk through what you've built, what you're measuring, and what to prioritize next.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-
-      </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-review" class="rc-btn-complete">Continue to Review & Resources →</a>
     </div>
 
     <!-- Resources -->
