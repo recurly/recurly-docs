@@ -419,7 +419,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation-configure" class="rc-btn-prev">← Configure</a>
       <span class="rc-lp-nav-indicator">3 of 3 · Segmentation</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" target="_blank" rel="noopener noreferrer" class="rc-btn-path">Continue to Account Hierarchy -></a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" target="_blank" rel="noopener noreferrer" class="rc-btn-path">Continue to Account Hierarchy →</a>
     </div>
 
    
