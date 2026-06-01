@@ -17,8 +17,8 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-* Users must have analytics user role permission.
-* Users must have Kount enabled on their Recurly site.
+- Users must have analytics user role permission.
+- Users must have Kount enabled on their Recurly site.
 
 # Definition
 
@@ -26,24 +26,24 @@ The Fraud Prevention dashboard provides a comprehensive view of your Kount integ
 
 # Key benefits
 
-* **Quantify Fraud Prevention at a Glance** - The Transactions Blocked KPI immediately communicates how actively the system is protecting your Recurly site. The period-over-period comparison lets stakeholders quickly assess whether fraud pressure is increasing or decreasing without needing a deep data dive.
-* **Detect and Respond to Fraud Attacks in Real Time** - The Blocked Transactions Over Time chart makes sudden fraud spikes immediately visible. This allows fraud and ops teams to investigate and respond quickly, rather than discovering an attack after significant damage has already occurred.
-* **Understand Escalating Risk Before It Becomes a Problem** - The Average Risk Score and its Over Time chart work together to provide an early warning system. A rising risk score trend often precedes a spike in blocked transactions, giving teams a window to tighten rules or thresholds proactively rather than reactively.
-* **Target Fraud Prevention Efforts Where They Matter Most** -The Fraud by Payment Method breakdown shows that card-based payments (credit and debit combined) account for nearly 80% of fraud attempts. This helps teams prioritize where to add friction, strengthen authentication, or adjust risk rules for maximum impact.
+- **Quantify Fraud Prevention at a Glance** - The Transactions Blocked KPI immediately communicates how actively the system is protecting your Recurly site. The period-over-period comparison lets stakeholders quickly assess whether fraud pressure is increasing or decreasing without needing a deep data dive.
+- **Detect and Respond to Fraud Attacks in Real Time** - The Blocked Transactions Over Time chart makes sudden fraud spikes immediately visible. This allows fraud and ops teams to investigate and respond quickly, rather than discovering an attack after significant damage has already occurred.
+- **Understand Escalating Risk Before It Becomes a Problem** - The Average Risk Score and its Over Time chart work together to provide an early warning system. A rising risk score trend often precedes a spike in blocked transactions, giving teams a window to tighten rules or thresholds proactively rather than reactively.
+- **Target Fraud Prevention Efforts Where They Matter Most** -The Fraud by Payment Method breakdown shows that card-based payments (credit and debit combined) account for nearly 80% of fraud attempts. This helps teams prioritize where to add friction, strengthen authentication, or adjust risk rules for maximum impact.
 
 # Key details
 
 ## General Filters (Top Left Corner)
 
-* **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is  30 days.
+- **Date Range:** Adjust the time interval for your data to track and analyze long-term trends. The default view is  30 days.
 
-* **Country:** Filter data to one or more countries.
+- **Country:** Filter data to one or more countries.
 
-* **Gateway:** This filter allows you to isolate individual payment gateways.
+- **Gateway:** This filter allows you to isolate individual payment gateways.
 
-* **Payment method:** This filter lets you drill down into fraud for a specific payment method.
+- **Payment method:** This filter lets you drill down into fraud for a specific payment method.
 
-* **Currency:** This filter allows filtering by the various currencies for your site's geo-location
+- **Currency:** This filter allows filtering by the various currencies for your site's geo-location
 
 ## Transactions Blocked (Fraud)
 
@@ -51,41 +51,55 @@ The total number of transactions flagged and blocked as fraudulent in the select
 
 If this number is higher than you think it should be, or has spiked, there are a few options to consider:
 
-* Your site may be under attack from a fraudster and Kount is working properly.
-* You have updated a fraud rule in Kount recently that may be misbehaving. Speak to your Kount representative to review rules on blocked transactions that you believe to be false positives.
+- Your site may be under attack from a fraudster and Kount is working properly.
+- You have updated a fraud rule in Kount recently that may be misbehaving. Speak to your Kount representative to review rules on blocked transactions that you believe to be false positives.
 
-<Image align="center" border={true} width="200px" src="https://files.readme.io/12e171c5ea1c29c58340c9a23068168a81c46867ccad9b130e4cc29eedd91199-image.png" className="border" />
+
+<Image src="https://files.readme.io/b5fff756ef3175909531dfc747c58471a1837253a0b15604962ce1792ceca132-image.png" align="center" border={true} />
+
 
 ## Blocked Transactions Over Time
 
 This line chart tracks the daily count of fraud-blocked transactions in the time period.
 
-<Image align="center" border={true} width="-100% " src="https://files.readme.io/4b022444681539b49aad0fb8e5e256344bb5f7988b47cab7398ee68d8d5b981c-image.png" className="border" />
+
+<Image src="https://files.readme.io/f680c12887edb3f40f467bf19548b4ca3d655731ee1d93fe0003abe0e482880b-image.png" align="center" border={true} />
+
 
 ## Average Risk Score
 
 The mean Kount risk score assigned to transactions in the selected period, along with comparison to the previous time period.
 
-<Image align="center" border={true} width="150px" src="https://files.readme.io/ce38e193b698996c3abb9501d90b465ebcf63d5747dbb3ac4bb1ecd816eb4195-image.png" className="border" />
+
+<Image src="https://files.readme.io/8c0173d36cf361d293b7c93b4fcb4e0254974106a97f735c1b445e1bd73650ab-image.png" align="center" border={true} />
+
 
 ## Average Risk Score Over Time
 
 This line chart tracks the daily average Kount risk score in the time period. Use this chart to identify when risk levels begin rising so action can be taken before blocked transaction volume surges.
 
-<Image align="center" border={true} src="https://files.readme.io/b36b5bd58d7c5e53689b3e4498d4669e9f07a77db679195bd12ae6916fedaa39-image.png" className="border" />
+
+<Image src="https://files.readme.io/bb4fa2907dee107ab721ce5670bba48681c1c7d6dbdcdf7a84e2d8d4e2e1fb3a-image.png" align="center" border={true} />
+
 
 ## Fraud by Payment Method
 
 This pie chart breaks down blocked fraud transactions by payment method.
 
-<Image align="center" border={true} width="500px" src="https://files.readme.io/7eb8447753999a4abb5246b966990ff9bb34ef70e0588d29b340a867fcafa20e-image.png" className="border" />
+
+<Image src="https://files.readme.io/209e7687a5c62bdb347d4293fe68568eef1344f3f562cf7e9367b7ba8b3820c0-image.png" align="center" border={true} />
+
 
 ## Blocked Transactions by Gateway
 
 This bar chart shows the volume of fraud-blocked transactions by payment gateway.
 
-<Image align="center" border={true} width="00px" src="https://files.readme.io/e3edc529acadd48b9440084b0a9be5bc6b6167c4b89428766ba3c7e4766cbbbd-image.png" className="border" />
 
-<Image align="center" border={true} width="500px" src="https://files.readme.io/27c87c3fc9df44d2cf29c63d753ba730ac40ebc7fb19119bd655623b6e0e732d-image.png" className="border" />
+<Image src="https://files.readme.io/e3edc529acadd48b9440084b0a9be5bc6b6167c4b89428766ba3c7e4766cbbbd-image.png" align="center" width="00px" border={true} />
+
+
+
+<Image src="https://files.readme.io/6447de1fd5e69285189708a13155df282cb500ff2c57bdb22d044769b65f43a0-image.png" align="center" border={true} />
+
 
 <br />

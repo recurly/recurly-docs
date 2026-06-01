@@ -43,9 +43,7 @@ The subscriber benchmarks dashboard will provide insights on your acquisition ra
 
 * **Date Range:** Adjust the monthly period for benchmark comparisons, with a default setting of 14 months, to track and analyze long-term trends.
 
-* **Industry:** See benchmark data specific to your industry, offering relevant insights and comparisons.
-
-* **Timeframe:** A set filter displaying your benchmark metrics on a monthly basis, which cannot be changed.
+* **Benchmarks Industry:** See benchmark data specific to your industry, offering relevant insights and comparisons.
 
 * **Subscriber Type:** This filter is fixed to “Paying Subscribers,” focusing the benchmark comparison on subscribers with at least one paid invoice.
 
@@ -64,7 +62,7 @@ Example: assume a subscriber is active on Jan 1st, 2024 and in dunning, then exp
 
 * **Benchmark Calculation** Benchmark quartiles are generated monthly, providing a consistent framework for comparison at the start of each new month. However, individual Merchant KPI rates, such as the renewal invoice paid rate, are calculated on a daily basis. This means that while the benchmarks themselves are updated monthly, the underlying data for specific KPIs is refreshed throughout the day and can be observed on their respective dashboards. It's important for users to note that although these daily updates occur, the broader benchmark comparisons remain static throughout the month until the next monthly update cycle.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9dc7d2a-Acquisition_Rate_Benchmark.png" />
+<Image align="center" border={true} src="https://files.readme.io/496ee080d8409235e089fd6918f1ac06ffb94e375ee030882156c8918a02260b-image.png" className="border" />
 
 Your ranking within your industry is shown as a percentile, allowing you to track how your acquisition rate compares to peers over time through the trend of your percentile ranking.
 
@@ -78,7 +76,7 @@ The sign-up decline rate is calculated by dividing the number of unsuccessful in
 
 * **Example Calculation:** If 5 accounts try to sign up, and 3 succeed on the first try, 1 fails initially but succeeds later, and 1 fails and never succeeds, the decline rate is 40%. This is because 2 out of the 5 initial sign-up attempts were unsuccessful.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c44cb61-Sign-up_Decline_Rate_Benchmark.png" />
+<Image align="center" border={true} src="https://files.readme.io/c75301528d853b2ea0819fd5023ff98351eaff3847ee0ed8c0dcc42571ee9a7b-image.png" className="border" />
 
 Your performance in this area is displayed as a percentile, showing how you rank compared to others in your industry. Monitoring your percentile trend over time can provide insights into how your sign-up process compares to industry standards and highlights areas for improvement.
 
@@ -92,13 +90,9 @@ The churn rate metric offers insight into the proportion of subscribers lost dur
 
 * **Benchmark Calculation** Benchmarks are calculated at the end of each month, with a new benchmark ranking and percentile available at the start of each month.
 
-* **Multiple Subscriptions:** For subscribers with several subscriptions,  the last expired subscription is used to categorize the churn as e
+* **Multiple Subscriptions:** For subscribers with several subscriptions,  the last expired subscription is used to categorize the churn as either voluntary (the subscriber chose to leave) or involuntary (due to issues like payment failure).
 
-* ither voluntary (the subscriber chose to leave) or involuntary (due to issues like payment failure).
-
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/2640816-Churn_Rate_Benchmark.png" />
-
-<br />
+![](https://files.readme.io/7449fa5015cd883529d9e15eed5b3b36a5fd718d4b4338d127c887501bf8064c-image.png)
 
 Your performance is represented as a percentile, showing how your churn rate compares to others in your industry. Watching the trend of your percentile over time can reveal valuable insights into the effectiveness of your retention strategies and how they stack up against industry norms.
 
@@ -108,8 +102,8 @@ Recurly's benchmark reports offer insights into your performance metrics compare
 
 # FAQs
 
-**What is a "Paid Subscriber"?**\
+**What is a "Paid Subscriber"?**  
 A "Paid Subscriber" refers to a subscriber who has paid for at least one invoice associated with their subscription. This excludes those currently in a trial period or in a dunning process following a trial.
 
-**Why is the timeframe preset to "Monthly"?**\
+**Why is the timeframe preset to "Monthly"?**  
 Benchmarks are set to be compiled and analyzed monthly to ensure uniform data aggregation and calculation, providing clear and comparable metrics consistently across different periods.

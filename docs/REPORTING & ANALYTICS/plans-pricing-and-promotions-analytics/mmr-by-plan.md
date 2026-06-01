@@ -59,7 +59,7 @@ At the top of the dashboard, you can adjust the view grain to show MRR at the pl
 * **Plan** — shows MRR for the plan only
 * **Add-on** — shows MRR for the plan plus its add-ons
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/0e3b319-image.png" className="border" />
+![](https://files.readme.io/9b786f548bbd4d82428e07080d2d2eb39e6c6461e678419019aa6c5e93ebb471-image.png)
 
 ***
 

@@ -56,7 +56,7 @@ This dashboard segment is designed to clarify the total number of customers who 
 
 The KPI widget immediately shows the total number of active subscribers and highlights how this number has changed compared to the same date in the previous year.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9e8cfa7-Subscribers_count.png" />
+<Image align="center" border={true} src="https://files.readme.io/5796968e7db9b40b087b0190b008d80863025582bcdd7a229869ee89f8222dd8-image.png" className="border" />
 
 ## Subscriber growth
 
@@ -72,13 +72,13 @@ This section is designed to give you a clear perspective on the trends influenci
 
 Accompanying this chart, a detailed table breaks down these figures on a monthly basis. This breakdown allows for a deeper dive into the specific changes month over month, offering insights into the ebb and flow of your subscriber dynamics. This data is crucial for understanding the overall health and growth trajectory of your subscriber base.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9130b9a-Subscriber_Growth.png" />
+<Image align="center" border={true} src="https://files.readme.io/855f0f9579c6c6321446f090ced4b7d052e784e2e264139b0af4758c7c9f6cb5-image.png" className="border" />
 
 ## Acquisition and churn rates
 
 View the acquisition rate and churn rates in a YOY comparison to learn how your subscriber base is growing, and what percentage of your subscribers discontinued their subscription either voluntarily or involuntarily. Compare these rates to the benchmarked version to understand how you compare to those in your industry.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/302fbb4-Aqusition_and_Churn_Rates.png" />
+<Image align="center" border={true} src="https://files.readme.io/a7fa2fd0bef616f79fd73995cefdad303e3d4c39fa447657d943dc2e9dbedb4c-image.png" className="border" />
 
 # FAQs
 

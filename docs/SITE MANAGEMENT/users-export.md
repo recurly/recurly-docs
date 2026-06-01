@@ -16,8 +16,8 @@ next:
 
 ### Prerequisites & limitations
 
-* The **Users report** will only include users who had and continue to have access during the selected dates. Deleted users will be excluded from the users report.
-* To capture the most precise history of user access, it's recommended to running this report regularly to provide a more accurate snapshot of user access at any given point in time.
+- The **Users report** will only include users who had and continue to have access during the selected dates. Deleted users will be excluded from the users report.
+- To capture the most precise history of user access, it's recommended to running this report regularly to provide a more accurate snapshot of user access at any given point in time.
 
 # Definition
 
@@ -28,57 +28,103 @@ The user export feature in Recurly allows administrators to easily download a co
 1. **Go** to the **Admin** section of Recurly.
 2. In the left-side panel, **navigate** to the "**Admin Exports**" option.
 
-<Image align="center" className="border" border={true} width="120% " src="https://files.readme.io/38844a1907050a1209bffd4b5e17d04942c4c0ae7010dd22b160626d9a454f90-image.png" />
+3) **Select** "**Users**" from the list of available exports.
 
-3. **Select** "**Users**" from the list of available exports.
 
-<Image align="center" className="border" border={true} width="100% " src="https://files.readme.io/18af1aa02557bcf76b88ec817e3a6725956f695a77215291059e02d6af550ee2-image.png" />
+<Image src="https://files.readme.io/cf686844ae85d399335ac290c89bbdbcb4689628b53de0ead7ea74367f7a7eb7-image.png" align="center" width="600px" border={true} />
 
-# List of users
 
-To obtain an Users Export, visit the Admin Exports page and select the List of Users report. There are two pre-built List of Users report. Version 1 (v1) is a comprehensive report of all users within your Recurly site including first name,  last name, email, user access and date added time. Version 1 (v2) is the same report as v1 but also includes the user role field.
+## Explore interface
 
-<Image align="center" className="border" border={true} width="130% " src="https://files.readme.io/6b0cf2d8e4c4642275227bb47e50955c39e8f3a7010312facdf02bcc1cfab8bd-image.png" />
+The Explorer is divided into three areas:
 
-## Filter options
+| Interface Area              | Description                                                                                                                                                                                                                  |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Left panel -Workbook        | Agent Ask natural-language questions about your invoice data. The agent suggests fields and runs queries on your behalf.                                                                                                     |
+| Center panel - Field picker | Browse and search the full field catalog. Fields are grouped by topic. Click any field to add it to your active query. Use the In-use filter to see only selected fields.                                                    |
+| Right panel - results area  | Toggle between Results (table view), Chart (visualization), or Both. Use the Options tab to configure axes, grouping, and chart type. Click Preview to run a sample query and verify your field selection before committing. |
 
-The Users report provides various filtering options to refine and narrow down your search criteria. You can filter users based on user role, last name and date/time added. Customizing the fields displayed in your report is made easy with the ability to select or exclude specific fields on the Explore screen.
 
-<Image align="center" className="border" border={true} width="130% " src="https://files.readme.io/aae6c220158a448087127ca8f8d82259a29338458af1e1635372e7e0860932cd-image.png" />
+<Image src="https://files.readme.io/b14849b0185ddbdd34596936d16adf5a7d73a6fb11baae37a842dc3c7616288f-image.png" border={true} />
 
-* **Email:** Filter users by their email addresses.
-* **Name:** Filter users by their first and last names.
-* **User Access:** View the list of permissions assigned to each user.
-* **Date Added Time:** Filter users based on the date they accepted their invitation to the Recurly site.
-* **User Role:** Filter users based on the role they are assigned to within your site.
 
-## Select additional filters
+### Pre-built sample queries
 
-To further refine your search, the Users report offers additional filters such as "Search Entire Dataset," "User Role" , "Users Date Added Date" and "Users Last Name". These filters allow you to search users based on their role, by last name and define a specific date range for when users were added to the site.
+- **List of users (v1**) - a comprehensive report of all users within your Recurly site including first name, last name, email, user access and date added time.&#x20;
+- **List of users (v2)** - the same report as v1 but also includes the user role field.
 
-<Image align="center" className="border" border={true} width="100% " src="https://files.readme.io/63b51aea8d78b98d9b24edbaa5dd52dece69efe5dfbfdfd1275a0b1e6ef4093f-image.png" />
 
-## Choose a visualization
+<Image src="https://files.readme.io/3ceeaf7681e6988fc9e83a9f517a887d40a1df14b0809ae1f829e6367cf86ae0-image.png" align="left" width="500px" border={true} />
 
-Tailor your data presentation to suit your preferences by selecting a visualization option that best represents your dataset. Whether it's a table, column chart, bar graph, scatterplot, line graph, pie chart, map, or single value visualization, Recurly provides a range of visualization options to enhance your understanding of the user data.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/c181fbd418869615b74310fccbbc6320e82eff3ad4cec6aeaccca85953147351-image.png" />
+### Using the Workbook Agent
 
-* Table (Default)
-* Column Chart
-* Bar Graph
-* Scatterplot
-* Line Graph
-* Pie Chart
-* Map
-* Single Value
+The Workbook Agent is the fastest way to start an analysis. Type a question in the text box at the bottom of the left panel and press Enter (or click the send icon).
 
-Additional options are available by clicking the ellipses button at the end of the options list where a dropdown list of several more visualization options are presented.
+**Example prompts:**
 
-## Download and save your data
+- "How many admins have each role type? Give me a breakdown"
+- "Which users have admin access but no MFA enabled?"
+- "Show me all users with billing permissions"
 
-Once you have explored and customized your dataset, you can easily download it for further analysis or record-keeping. Simply click the gear icon on the top-right side of the Explore screen and select "Download" to choose from a variety of file format options. For larger datasets exceeding the table visualization limit of 5,000 rows, downloading the file ensures that you can access the complete dataset and analyze all results.
+## Available Fields
 
-<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/4cd82ab6cf633e58de3a4ea8b55fe9de78ba9813d4725fe6f746e3b804d44c7e-image.png" />
+- **Email:** Filter users by their email addresses.
+- **Name:** Filter users by their first and last names.
+- **User Access:** View the list of permissions assigned to each user.
+- **Date Added Time:** Filter users based on the date they accepted their invitation to the Recurly site.
+- **User Role:** Filter users based on the role they are assigned to within your site.
+
+### Creating a new report
+
+1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
+2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
+3. Toggle between Results (table view), Chart (visualization), or both.&#x20;
+4. Use the Options tab to configure axes, grouping, and chart type.&#x20;
+
+### Filtering your data
+
+1. **Standard Filters:** Drag and drop any field into the Filters section of the query builder, or click the drop-down/actions menu next to the field header in your data view and select Filter.
+2. **Filtered Measures:** To create a measure that is specifically tied to one dimension (e.g., Acted Type by Actor Name), create a pivot table with your target metric and the dimension. Right-click the measure under a specific pivot value and select Create filtered measure.&#x20;
+
+
+<Image src="https://files.readme.io/1ba5f548916b68fb496637523d03fa69b0884d6f4777b8dd4a1cc5a136e9e363-image.png" align="center" width="700px" border={true} />
+
+
+### Downloading your data
+
+To download your activity data, from the menu, select **Tab** - **Download**. You can choose from several file format options including CSV, Excel and JSON.
+
+
+<Image src="https://files.readme.io/bbf4a79f307a7e268318352d2b6046a6a297587b4729e4a0147a74220c6bd7b3-image.png" align="left" width="300px" border={true} />
+
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+<br />
+
+
+<Image src="https://files.readme.io/9727ad37879c86cdf6a7f77e9689f41e48e0d5a9a80c6443c1c337f11a68da86-image.png" align="left" width="300px" border={true} />
+
 
 <br />

@@ -4,7 +4,7 @@ excerpt: >-
   Explore Assistant is your natural language chat interface for creating charts
   and graphs from your site’s data.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---

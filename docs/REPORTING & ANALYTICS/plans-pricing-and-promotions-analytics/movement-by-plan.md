@@ -34,18 +34,22 @@ The Movement by Plan dashboard provides insights on subscriber movement by track
 
 Monthly net subscriber movement per plan (inbound minus outbound). Positive values indicate a plan gained more subscribers than it lost from plan changes; negative values indicate more subscribers moved away than arrived.
 
-![](https://files.readme.io/0c0ac587131af66ea1057ffe6aaea406d8c041dbd19b0a5ea68f0e5f4e66d114-image.png)
+<br />
+
+<Image align="center" border={true} src="https://files.readme.io/1d7689ed1a8d9d4b37a4f1c9e7296009094d93749a944684925565b29580759b-image.png" className="border" />
 
 ### Incoming movement
 
 Monthly count of subscribers who moved into each plan from another plan. Shows which plans are the most common destinations when subscribers change plans.
 
-![](https://files.readme.io/e37bc84a8e4c5e67ff41bcc2fdca9d0b9d90e6251e37b068446c42e479a0febe-image.png)
+<Image align="center" border={true} src="https://files.readme.io/4c76138ac0a7dae0e557514e4dcc184db2e42b8f7754d1848825ed1edc65cd4b-image.png" className="border" />
 
 ### Outgoing movement
 
 Monthly count of subscribers who moved out of each plan to another plan. Shows which plans subscribers are most commonly leaving when switching plans.
 
-![](https://files.readme.io/e1d2a675c3a1cb13f4b2d7a6d9148a274398ac9060d16ee406a7625c22e41161-image.png)
+<Image align="center" border={true} src="https://files.readme.io/35a1f734881770699bab43b7e72d56bd8bcef64cecf59ef0f80972022dc52df7-image.png" className="border" />
+
+<br />
 
 <br />

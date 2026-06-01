@@ -18,7 +18,7 @@ This feature is available to all customers on any Recurly subscription plan.
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+- Users must have Analytics user role permission.
 
 # Definition
 
@@ -26,9 +26,9 @@ The renewal decline trendalyzer dashboard provides insights into failed renewal 
 
 # Key benefits
 
-* **Informed decision-making**: Make data-driven decisions to set realistic goals and enhance subscription growth and customer retention strategies.
-* **Forecasting and planning**: Improve forecasting and resource allocation for reachable growth targets.
-* **Customizable data views**: Pivot data to optimize presentation, select specific metrics, and analyze trends across daily, weekly, or monthly ranges.
+- **Informed decision-making**: Make data-driven decisions to set realistic goals and enhance subscription growth and customer retention strategies.
+- **Forecasting and planning**: Improve forecasting and resource allocation for reachable growth targets.
+- **Customizable data views**: Pivot data to optimize presentation, select specific metrics, and analyze trends across daily, weekly, or monthly ranges.
 
 # Key details
 
@@ -36,13 +36,17 @@ This breakout dashboard enables you to adjust the pivot table to view different 
 
 ## General filters (Top left corner)
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/c07f6554067e6bf9f34f841c68ae19c42abca29d6c133a765a77eaede29a3cfc-Renewal_Declines_Trendalyzer.png" />
 
-* **Timeframe**: Analyze different monthly timeframes.
-* **Invoice Creation Date**: Choose a specific date range, up to the last 18 months, for dashboard data. Use dropdown menus to select start and end dates.
-* **Primary Dimension**: Focus on a specific metric by selecting between Payment Type, Brand, Gateway, or Failure Type.
-* **Dimension Breakout 1**: Select an additional dimension from the list, or view all dimensions.
-* **Dimension Breakout 2**: Choose another dimension from the list, or view all dimensions.
-* **Metric**: Select the key metric to analyze, choosing from Decline Rate (%), Total Transactions, or Failed Transactions.
-* **Gateway Type**: Specify the gateway you’d like to view in the data.
-* **Failure Type**: Filter by failure reasons, with options to view the Top 5, Top 10, or all reasons.
+<Image src="https://files.readme.io/ea3a17b3f5cc482d91fa41f61e7d278c099423cf6cf62eca3866413270201d21-image.png" align="center" border={true} />
+
+
+- **Timeframe**: Analyze different monthly timeframes.
+- **Invoice Creation Date**: Choose a specific date range, up to the last 18 months, for dashboard data. Use dropdown menus to select start and end dates.
+- **Primary Dimension**: Focus on a specific metric by selecting between Payment Type, Brand, Gateway, or Failure Type.
+- **Dimension Breakout 1**: Select an additional dimension from the list, or view all dimensions.
+- **Dimension Breakout 2**: Choose another dimension from the list, or view all dimensions.
+- **Metric**: Select the key metric to analyze, choosing from Decline Rate (%), Total Transactions, or Failed Transactions.
+- **Gateway Type**: Specify the gateway you’d like to view in the data.
+- **Failure Type**: Filter by failure reasons, with options to view the Top 5, Top 10, or all reasons.
+
+<br />

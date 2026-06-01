@@ -43,18 +43,17 @@ Recurly's 'Plan Performance Subscription Trials' presents an in-depth look at th
 The 'Trials' view includes two swimlane charts and one status chart in the 'Subscription Trials' section, and one line chart in the 'Trial Conversion Rate' section.
 
 * The swimlane charts provide a visual representation of the status of trial subscriptions, such as conversions to paid subscriptions and non-conversions due to failed payment or cancellation.
+* <Image align="center" border={true} width="700px" src="https://files.readme.io/8a0175d566132e3a354c153643acdd3119ae9a7c45c2ccde8fdea0dfe946a3f5-image.png" className="border" />
 
-<Image align="center" width="75% " src="https://files.readme.io/d147566-image.png" />
+  <Image align="center" border={true} width="700px" src="https://files.readme.io/c55f300cba052d74b40846a43a90f34706dad6dec5a8078ab7b383b22f297265-image.png" className="border" />
 
-<Image align="center" width="75% " src="https://files.readme.io/22c2a27-image.png" />
+  The status chart tracks the current state of subscriptions that began as trials, providing useful insights into how many trials convert to full subscriptions and the potential reasons if they don't.
+* <Image align="center" border={true} width="700px" src="https://files.readme.io/4daf0e242665c04bc5916f7ffb0baa63b445d10d5900afdf124570a0208916a4-image.png" className="border" />
 
-* The status chart tracks the current state of subscriptions that began as trials, providing useful insights into how many trials convert to full subscriptions and the potential reasons if they don't.
+  The 'Trial Conversion Rate' line chart shows the conversion rate of trial subscriptions for each plan, which can be helpful in assessing the effectiveness of trials in converting users to paid subscribers.
+* <Image align="center" border={true} width="700px" src="https://files.readme.io/b2aa1e497d678c84952e31b1825d2198087734af96121e6d471a34691e5547f5-image.png" className="border" />
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/f0920a0-image.png" />
-
-* The 'Trial Conversion Rate' line chart shows the conversion rate of trial subscriptions for each plan, which can be helpful in assessing the effectiveness of trials in converting users to paid subscribers.
-
-<Image align="center" width="75% " src="https://files.readme.io/7c60bf4-image.png" />
+<br />
 
 ### How to use the Plan Performance Subscription Trials feature
 

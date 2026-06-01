@@ -20,7 +20,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-* Users must have Analytics user role permission.
+- Users must have Analytics user role permission.
 
 # Definition
 
@@ -34,9 +34,9 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 # Key benefits
 
-* **Strategic revenue projection:** Through the 'Average LTV' formula, businesses can gain a clearer picture of potential revenue streams by understanding the average projected income from each plan.
-* **Holistic customer valuation:** The 'Subscription Lifetime Value' section offers both a detailed breakdown and an overarching view of lifetime values for various plans, spotlighting plans that excel in long-term fiscal performance.  
-* **Informed business decision-making:** By identifying high-performing plans and understanding the true value of customers, businesses can refine their strategies in pricing, acquisition, and retention, ensuring sustainable growth and profitability.
+- **Strategic revenue projection:** Through the 'Average LTV' formula, businesses can gain a clearer picture of potential revenue streams by understanding the average projected income from each plan.
+- **Holistic customer valuation:** The 'Subscription Lifetime Value' section offers both a detailed breakdown and an overarching view of lifetime values for various plans, spotlighting plans that excel in long-term fiscal performance.
+- **Informed business decision-making:** By identifying high-performing plans and understanding the true value of customers, businesses can refine their strategies in pricing, acquisition, and retention, ensuring sustainable growth and profitability.
 
 # Plan performance LTV
 
@@ -50,21 +50,24 @@ Average LTV reflects the average projected revenue of subscriptions in the selec
 
 Where:
 
-* ARPS is the Average Revenue Per Subscription, calculated by dividing the MRR contributed by all subscriptions active at the end of the month by the number of active subscriptions at the end of the month.
-* Subscription churn rate is calculated by taking the number of churned subscriptions and dividing it by the number of subscriptions active at any time during that month.
-* The symbol \(d\) stands for the discount rate, a consistent value used in revenue projection calculations. This rate factors in various elements such as market, financial, and other associated risks, in addition to the time value of money. By default, Recurly sets this rate at 1%. However, users have the flexibility to modify it via the “Monthly Discount Rate” dropdown.
+- ARPS is the Average Revenue Per Subscription, calculated by dividing the MRR contributed by all subscriptions active at the end of the month by the number of active subscriptions at the end of the month.
+- Subscription churn rate is calculated by taking the number of churned subscriptions and dividing it by the number of subscriptions active at any time during that month.
+- The symbol (d) stands for the discount rate, a consistent value used in revenue projection calculations. This rate factors in various elements such as market, financial, and other associated risks, in addition to the time value of money. By default, Recurly sets this rate at 1%. However, users have the flexibility to modify it via the “Monthly Discount Rate” dropdown.
 
 ### Subscription lifetime value
 
 The Subscription Lifetime Value section visualizes the lifetime values of your subscriptions for selected plans in a detail chart and a total line chart.
 
-* **Lifetime value**: The line chart represents the calculated lifetime values of subscriptions for the selected plans, offering a glimpse of the fiscal value associated with maintaining long-term customer relationships.
+- **Lifetime value**: The line chart represents the calculated lifetime values of subscriptions for the selected plans, offering a glimpse of the fiscal value associated with maintaining long-term customer relationships.
 
-<Image align="center" width="75% " src="https://files.readme.io/c1f5c16-image.png" />
+  <Image src="https://files.readme.io/e7b5b44af7271b28bc5a561c403f612c74a2e219455ee2ca3516537ac779505f-image.png" align="left" width="1000px" border={true} />
+
 
 * **Subscription lifetime values:** This detailed chart provides a breakdown of lifetime values for the top five plans by selected timeframes, aiding in understanding the long-term financial performance of different plans.
 
-![](https://files.readme.io/5114e47-image.png)
+
+<Image src="https://files.readme.io/0c426c7757bc49e9f5b316df96ff266b5d46bb0f61e4e080e8adb91b652e2e69-image.png" align="center" width="1000em" border={true} />
+
 
 ### How to use the Average LTV feature
 
@@ -73,3 +76,5 @@ The Subscription Lifetime Value section visualizes the lifetime values of your s
 3. Use the Average LTV formula: To get a deeper understanding of your LTV, use the Average Subscription LTV formula. Note that you need the ARPS, churn rate, and discount rate to make these calculations.
 4. Identify high-performing plans: Use the information provided by these charts to identify which plans have the highest LTV. Consider focusing your marketing and retention efforts on these plans.
 5. Use this data for strategic planning: Incorporate these insights into your broader business strategy. Use it to inform decisions about pricing, customer acquisition, and customer retention.
+
+<br />

@@ -13,7 +13,7 @@ metadata:
 next:
   description: ''
 ---
-# Overview 
+# Overview
 
 ### Required plan
 
@@ -21,7 +21,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-* Users must have analytics user role permission.
+- Users must have analytics user role permission.
 
 # Definition
 
@@ -29,13 +29,13 @@ The Subscriber Churn Analysis dashboard is an insightful tool that monitors subs
 
 # Key benefits
 
-* **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses. 
+- **Industry comparison**: Compare key subscription metrics with industry benchmarks to understand performance relative to peers, identifying areas of strengths and weaknesses.
 
-* **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
+- **Competitive insights**: Gain insights into how competitors are faring in terms of subscription metrics, uncovering areas to differentiate and improve to gain a competitive edge.
 
-* **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
+- **Informed decision-making**: Make informed decisions based on real-world data to help set realistic goals and expectations for subscription growth and customer retention.
 
-* **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
+- **Forecasting and planning**: Enable more accurate forecasting and long-term planning to help businesses set reachable growth targets and allocate resources effectively.
 
 # Key details
 
@@ -45,9 +45,9 @@ The Subscriber Churn Analysis dashboard is an insightful tool that monitors subs
 
 ## Filters (Top left corner)
 
-* **Date Range:** Utilize dropdown menus to select a specific timeframe and date range for the data displayed on the dashboard.
-* **Timeframe:** Adjust this to view data over different periods for a more detailed or broader overview.
-* **Subscriber Type:** This filter lets you categorize the data by the type of subscriber, whether they are paying, non-paying, or in a trial phase.
+- **Date Range:** Utilize dropdown menus to select a specific timeframe and date range for the data displayed on the dashboard.
+- **Timeframe:** Adjust this to view data over different periods for a more detailed or broader overview.
+- **Subscriber Type:** This filter lets you categorize the data by the type of subscriber, whether they are paying, non-paying, or in a trial phase.
 
 ## Churn rates
 
@@ -65,43 +65,53 @@ There are three key churn rates to consider:
 
 ## Involuntary churn reasons
 
-* **Non-payment:** Subscription churned due to failed transaction and unrecovered invoice.
-* **Invalid tax location:** Subscription churned due to failed a tax validation check.
-* **Non-payment gift:** Subscription churned because gift subscription ended without converting to a paid subscription.
-* **Non-payment trial:** Subscription churned because a trail ended without converting to a paid subscription.
+- **Non-payment:** Subscription churned due to failed transaction and unrecovered invoice.
+- **Invalid tax location:** Subscription churned due to failed a tax validation check.
+- **Non-payment gift:** Subscription churned because gift subscription ended without converting to a paid subscription.
+- **Non-payment trial:** Subscription churned because a trail ended without converting to a paid subscription.
 
 ## Voluntary churn reasons
 
-* **Non-renewing:** Subscription expired after a fixed number of billing cycles and was not renewed.
-* **Account closed:** The subscription churned because its linked account was manually closed.
-* **Canceled:** Customer-initiated cancellation.
-* **Trial ended:** Cardless free trial ended without billing information added.
-* **Gift ended:** The gift card amount exhausted without adding billing info before the next renewal.
+- **Non-renewing:** Subscription expired after a fixed number of billing cycles and was not renewed.
+- **Account closed:** The subscription churned because its linked account was manually closed.
+- **Canceled:** Customer-initiated cancellation.
+- **Trial ended:** Cardless free trial ended without billing information added.
+- **Gift ended:** The gift card amount exhausted without adding billing info before the next renewal.
 
 # Churn rate
 
-View your performance for all your churn rates (overall, involuntary, voluntary) at a single glance to see how the breakdown changes over time. This will allow you to know if there are important changes in the effectiveness of your retention tactics. You can also view your overall churn rate compared to the previous year. 
+View your performance for all your churn rates (overall, involuntary, voluntary) at a single glance to see how the breakdown changes over time. This will allow you to know if there are important changes in the effectiveness of your retention tactics. You can also view your overall churn rate compared to the previous year.
 
 Dive into the breakdown of involuntary vs voluntary to gain additional details.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/ff5e5bf-Screen_Shot_2024-04-15_at_4.11.57_PM.png" />
+
+<Image src="https://files.readme.io/7d1d5bfc37a1cda8fcde23ee46eee47674ac1326e4925bb64c766e42da182aa9-image.png" align="center" border={true} />
+
+
+<br />
 
 ## Involuntary churn
 
 Understand the rate of involuntary churn due to non payment, comparing specific involuntary churn reasons and the year over year trend.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/200c5ee-Screen_Shot_2024-04-15_at_4.12.13_PM.png" />
+
+<Image src="https://files.readme.io/8fd2b701ab1433d9d5318f68dbda66d3339fce8d881774c40a3437a1e6d2d450-image.png" align="center" border={true} />
+
 
 ## Voluntary churn
 
 Understand the rate of voluntary churn, comparing specific involuntary churn reasons and the year over year trend.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/49b9c55-Screen_Shot_2024-04-15_at_4.12.23_PM.png" />
+
+<Image src="https://files.readme.io/b15eb9f8e9a0f024006bf37cd7fe63d4e82491337e00732cd0607880df3e5cd5-image.png" align="center" border={true} />
+
 
 ## Churn reasons
 
 Dive into the data to understand the specifics across all churn reasons.
 
-<Image align="center" className="border" width="80% " border={true} src="https://files.readme.io/282a130-Screen_Shot_2024-04-15_at_4.13.05_PM.png" />
 
-<br/>
+<Image src="https://files.readme.io/4b0201dc9c54e36970cca73931bdb90544d887c174a4bae604ac80820e48263c-image.png" align="right" border={true} />
+
+
+<br />

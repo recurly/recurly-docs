@@ -46,19 +46,19 @@ Furthermore, the dashboard's regional breakdown equips you with the specificity 
 
 ## Billing key performance indicators (KPIs)
 
-<Image align="center" border={true} src="https://files.readme.io/fb1eba6-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/a65b617d1632b38d373d82ade719843db1b94f0093b7193d612695bfe1ae4e0b-image.png" className="border" />
 
-A great widget presenting a detailed breakdown of your payment totals to date. Track how current totals compare to last month, the previous month, three months ago, and even one year ago. Arrowheads under each total provide visual representation of how current figures vary from the 'to-date' total.
+A great widget presenting a detailed breakdown of your payment totals to date. Track how month to date totals compare to last month, two months ago, three months ago, and even one year ago. 
 
 ### Summary
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/cd99ffa-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/9e95f1845631f71c6d52993bb3945b7f00e7c937b8a70b75cb0d5bb0e57bfbe7-image.png" className="border" />
 
 A comprehensive visualization that brings together new and renewing customer payments and refunds over your chosen date range. Witness the dynamics of your billing cycle as new transactions come in and refunds go out.
 
 ## New vs renewing detail
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/e73afb2-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/961ff0e5b32ecf4e99bfd2751fc1fc9b9ea892a0c08414d4d26162bc28376509-image.png" className="border" />
 
 The Net Billings Dashboard offers a meticulous comparative analysis, differentiating between net new and net renewing payments. Here's how it works:
 
@@ -73,14 +73,14 @@ The Net Billings Dashboard offers a meticulous comparative analysis, differentia
 
 ## Billing Drills
 
-In the Summary and New vs Renewing detail you can click any bar or number and there are 2 drills  
+In the Summary and New vs Renewing detail you can click any bar or number and there are 2 drills
 
 * “Product Details” provides a summarized view of the invoice line items, including a breakdown of the products that contribute to the total for the selected billing record. Please note that minor differences may occur between this total and the value displayed on the dashboard due to currency conversion and tax-related rounding.  If more details are required there is an additional drill to view the Transaction and Invoice Details on each product total.
 * “Transaction and Invoice Details” displays all transactions and their associated invoices that contribute to the total for the selected billing record. All totals are presented in the transaction currency.
 
 ## Billings by country
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/98e77e0-image.png" className="border" />
+<Image align="center" border={true} src="https://files.readme.io/3b43ba4efe077cb6fe7e844b1d7f087359ded5bd09f5bd4c4a75117e03677752-image.png" className="border" />
 
 An expanded version of the 'By state' map, taking the geographical scope to a global level. Click on an individual country to view its total payments. Transactions without an assigned country are grouped together in the 'Amount Unmapped' box below the map. Understand your international reach and uncover areas of untapped potential.
 
@@ -90,7 +90,7 @@ An expanded version of the 'By state' map, taking the geographical scope to a gl
 
 This dashboard provides a geographic representation of payment amounts, organized by state. The location is determined based on the account's billing information or, when that's unavailable, the IP address. It's a straightforward tool for understanding regional revenue distribution.
 
-<Image align="center" border={true} width="60% " src="https://files.readme.io/582ba9a-image.png" className="border" />
+<Image align="center" border={true} width="600px" src="https://files.readme.io/fb520256cc62e37a04001f25543126266c18f7c477527829688762374814506b-image.png" className="border" />
 
 The current version focuses on:
 

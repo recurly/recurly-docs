@@ -22,7 +22,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Prerequisites
 
-* Users must have analytics user role permission.
+- Users must have analytics user role permission.
 
 # Definition
 
@@ -37,9 +37,9 @@ The **Dunning Recovery** dashboard highlights how Recurly recovers revenue from 
 
 # Key benefits
 
-* **Effectiveness**: Ensure your dunning strategy is effective to recover failed invoices.
+- **Effectiveness**: Ensure your dunning strategy is effective to recover failed invoices.
 
-* **Insights**: Gain insights into how your dunning recovery rate is trending over time.
+- **Insights**: Gain insights into how your dunning recovery rate is trending over time.
 
 # Key details
 
@@ -59,22 +59,36 @@ This detailed breakdown gives you insights into the processes that drive revenue
 
 The Dunning Recovery dashboard offers a detailed view of the revenue you've successfully recaptured through Recurly's specialized system. It's a focused part of the broader Recovered Revenue dashboard, concentrating on invoices that fail initial payment attempts and subsequently enter the dunning process. The dashboard leverages four key strategies—Account Updater, Customer Updates, Intelligent Retries, and Manual Collection—to maximize the collection of payments.
 
-* **Account Updater:** This feature proactively updates credit card information ahead of subscription renewals, one-time invoice payments, or re-subscription attempts that result in a hard decline. By ensuring payment details are current, it plays a crucial role in minimizing failed transactions and securing continuous revenue flow.
+- **Account Updater:** This feature proactively updates credit card information ahead of subscription renewals, one-time invoice payments, or re-subscription attempts that result in a hard decline. By ensuring payment details are current, it plays a crucial role in minimizing failed transactions and securing continuous revenue flow.
 
-* **Customer Updates:** This mechanism enables customers to update their payment methods after a failure, facilitating another attempt at invoice collection. Recurly can prompt customers for updates through dunning emails or other integrated notifications within your service, aiding in recovering potential lost revenue.
+- **Customer Updates:** This mechanism enables customers to update their payment methods after a failure, facilitating another attempt at invoice collection. Recurly can prompt customers for updates through dunning emails or other integrated notifications within your service, aiding in recovering potential lost revenue.
 
-* **Intelligent Retries:** Employing advanced logic, this system aims to convert failed payment attempts into successes by optimizing the timing of retries. This method effectively decreases involuntary churn due to payment failures.
+- **Intelligent Retries:** Employing advanced logic, this system aims to convert failed payment attempts into successes by optimizing the timing of retries. This method effectively decreases involuntary churn due to payment failures.
 
-* **Manual Collection:** Allows merchants to manually intervene and attempt to collect payment on failed invoices, offering a direct path to address and resolve payment issues.
+- **Manual Collection:** Allows merchants to manually intervene and attempt to collect payment on failed invoices, offering a direct path to address and resolve payment issues.
 
-* **Other:** Invoices that are collected by all other methods not listed above, included backup payment method
+- **Other Dunning:** Invoices that are collected by all other methods not listed above, included backup payment method
 
 This dashboard empowers you with actionable insights into the effectiveness of your dunning strategies and the impact on your revenue recovery efforts.
 
-<Image align="center" alt="Dunning Summary" border={true} caption="Dunning Summary" src="https://files.readme.io/321b7d1-Dunning_Summary.png" width="80% " />
+## Dunning Summary
 
-<Image align="center" alt="Invoice Revenue" border={true} caption="Invoice Revenue" src="https://files.readme.io/1d9cccf-Invoice_Revenue_.png" width="80% " />
 
-<Image align="center" alt="Invoice Counts" border={true} caption="Invoice Counts" src="https://files.readme.io/866f6d4-Invoice_Counts.png" width="80% " />
+<Image src="https://files.readme.io/c2e70156cae6ce44ef88fb0225b46ead2728dd589f8c7cb400506d1f6378221b-image.png" align="center" border={true} />
+
+
+## Recovered Invoice Revenue
+
+
+<Image src="https://files.readme.io/f20b9b50d38201cf173ed03cfcc0637abf10da1da43d31a83f966a6da04ec4da-image.png" align="center" border={true} />
+
+
+## Recovered Invoice Counts
+
+
+<Image src="https://files.readme.io/21b1a96dc44c09e9309007d79c1a7c0be7016ad498b7bc995598084590ce3b1c-image.png" align="center" border={true} />
+
+
+![]()
 
 By having a clear understanding of the Dunning Recovery features, you can maximize their usage and significantly reduce involuntary churn, thereby enhancing your revenue recovery.

@@ -60,12 +60,7 @@ All dashboards are designed for intuitive navigation and data retrieval.
 
 > 📘 The analytics dashboards allow for drill drowns.
 
-## **Actions** (Top right corner)
-
-* **Reload:** Monitors your last data refresh for up to four hours. The counter begins at "1m ago", indicating how updated in the data.
-* **Hide Filters:** Temporarily removes filters visible on the dashboard's top left corner.
-* **Dashboard Actions:** Provides an assortment of functionalities: clearing cache, refreshing data, downloading dashboard data in various formats and arrangements, and resetting filters.
-* **Open Folders:** Toggles folders on the dashboard.
+<br />
 
 ## General filters (Top left corner)
 
@@ -78,18 +73,13 @@ All dashboards are designed for intuitive navigation and data retrieval.
 * **Plan Selection:** Incorporates a dropdown for choosing either a top set of plans or all available ones. This impacts the "Plan Name" filter by narrowing down available choices. For instance, selecting "Top 5 plans" restricts the "Plan Name" filter to only these five.
 * **Plan Name:** Lists plans based on the prior filter's selection.
 
-## **Cache management:**
-
-* **Data Timestamp:** Accessed through the vertical ellipse of any widget, revealing the data's last update.
-* **Individual Widget Refresh:** Clicking the vertical ellipse of a specific widget refreshes its data.
-* **Complete Dashboard Refresh:** Use the 'Actions' section's vertical ellipse to update the entire dashboard. Data is frequently updated, ensuring accuracy post-refresh.
-
 ## **Utility options (Vertical Ellipses):**
 
 Available for both widgets and tables, these ellipses unfold a menu, offering:
 
-* **Data Download & Cache Management:** For individual widgets or columns.
-* **Column Sizing:** To auto-adjust or manually resize columns for better visibility.
+* **Ask a Follow-up Question:** Instead of opening a new report, you simply type follow-up questions to drill into subsets, re-aggregate data, or get AI-generated summaries right in the dashboard.
+* **Download:** Users can export the specific tile's query results in various formats, including CSV, PDF, or PNG, for deeper analysis.
+* **Data Timestamp:** Accessed through the vertical ellipse of any widget, revealing the data's last update.
 
 ## **Chart interpretations:**
 
