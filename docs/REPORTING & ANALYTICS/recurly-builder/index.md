@@ -94,16 +94,12 @@ You can use the Agent and the field picker together. After the agent populates a
 <Image src="https://files.readme.io/fd6030aad81cb48304317f0583221f7df52b0df245f6ced971bf8d3103c5e81f-image.png" align="center" width="200px" border={true} />
 
 
-<br />
-
 ### Creating a new report
 
 1. Browse and search the full field catalog. Fields are grouped by data topic.&#x20;
 2. Click any field to add it to your active query. Use the In-use filter to see only selected fields.
 3. Toggle between Results (table view), Chart (visualization), or both.&#x20;
 4. Use the Options tab to configure axes, grouping, and chart type.&#x20;
-
-<br />
 
 ### Creating a custom field
 
