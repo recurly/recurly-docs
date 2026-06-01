@@ -239,7 +239,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Fraud Prevention dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/ab78f651-0318-4db9-a574-fb9f86213a0e" loading="lazy" title="Payments Hub: Fraud Prevention dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
         <div class="rc-step-video-caption">A walkthrough of the Fraud Prevention dashboard — blocked transactions, risk score trends, and breakdown by payment method and gateway.</div>
       </div>
