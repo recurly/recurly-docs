@@ -314,7 +314,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-pitch-card">
         <i class="fa-solid fa-bullseye rc-fa-dark"></i>
         <h3>The one-line pitch</h3>
-        <p class="rc-pitch-quote">"Account Updater is a proactive <strong>best-effort service</strong> that automatically keeps subscribers' card details current — recovering revenue we'd otherwise lose, with zero friction for customers."</p>
+        <p class="rc-pitch-quote">"Account Updater is a <strong>proactive churn-prevention service</strong> that automatically keeps subscribers' card details current — recovering revenue we'd otherwise lose, with zero friction for customers."</p>
       </div>
     </div>
 
