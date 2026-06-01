@@ -418,36 +418,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation-configure" class="rc-btn-prev">← Configure</a>
       <span class="rc-lp-nav-indicator">3 of 3 · Segmentation</span>
-      <span class="rc-btn-complete">Continue to Account Hierarchy!</span>
+      <span class="rc-btn-complete">Continue to Account Hierarchy -></span>
     </div>
 
-    <!-- Continue your journey -->
-    <div class="rc-next-steps">
-      <h3>🧭 Continue your journey</h3>
-      <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" class="rc-next-card">
-          <div class="rc-next-card-tag">Next in series</div>
-          <div class="rc-next-card-icon">🏢</div>
-          <h4>Account Hierarchy</h4>
-          <p>Segmentation solves multi-market pricing. Account Hierarchy solves multi-entity billing — parent accounts, child accounts, consolidated invoicing, and seat management for B2B enterprise customers.</p>
-          <div class="rc-next-card-arrow">Start Account Hierarchy →</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-next-card">
-          <div class="rc-next-card-tag">Series hub</div>
-          <div class="rc-next-card-icon">🎯</div>
-          <h4>P&amp;P 201 Overview</h4>
-          <p>Return to the full series overview to see all six Micro-Paths and track your progress through the advanced program.</p>
-          <div class="rc-next-card-arrow">View all paths →</div>
-        </a>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon">🎙️</div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your segmentation questions to our CSMs live — segment taxonomy, plan consolidation, A/B testing mechanics, or external analytics setup. Sessions run weekly.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-      </div>
-    </div>
+   
 
     <!-- Resources -->
     <div class="rc-resources">
