@@ -236,7 +236,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Payment Processing dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/aeac2fad-ed31-40a7-a7dd-be89052c9b54" loading="lazy" title="Payments Hub: Payment Processing dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
         <div class="rc-step-video-caption">A walkthrough of the Payment Processing dashboard — success rates, gateway comparison, BIN analysis, and decline reason breakdown.</div>
       </div>
