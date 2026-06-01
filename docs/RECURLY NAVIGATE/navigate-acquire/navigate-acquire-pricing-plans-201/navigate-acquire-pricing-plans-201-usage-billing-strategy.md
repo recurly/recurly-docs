@@ -150,7 +150,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-btn-prev { background: transparent; color: var(--offblack) !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--lightgray); transition: all .2s; }
 .rc-guide a.rc-btn-prev { border-bottom: 2px solid var(--lightgray) !important; }
 .rc-guide a.rc-btn-prev:hover { border: 2px solid var(--offblack) !important; border-bottom: 2px solid var(--offblack) !important; }
-.rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; }
+  .rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; }
+.rc-guide a.rc-btn-path { background: var(--yellow); color: var(--offblack) !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid var(--yellow); border-bottom: 2px solid var(--yellow) !important; }
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: var(--offblack) !important; border: 2px solid var(--yellow) !important; border-bottom: 2px solid var(--yellow) !important; }
+
 
 /* Continue Your Journey */
 .rc-next-steps { margin: 40px 0 0; }
@@ -451,41 +454,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing-configure" class="rc-btn-prev">← Configure</a>
       <span class="rc-lp-nav-indicator">3 of 3</span>
-      <span class="rc-btn-complete">🎉 Path complete!</span>
-    </div>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-models" class="rc-btn-path">🎉 Path complete!</span>
+    </a>
 
-    <!-- Continue Your Journey -->
-    <div class="rc-next-steps">
-      <h3>🧭 Continue your journey</h3>
-      <div class="rc-next-grid">
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-models" class="rc-next-card">
-          <div class="rc-next-card-tag">Recommended next</div>
-          <div class="rc-next-card-icon">🧩</div>
-          <h4>P&amp;P 201: Advanced Pricing Models</h4>
-          <p>Usage billing pairs naturally with hybrid, ramp, and prepaid models. Explore how to layer these approaches for more sophisticated plan portfolios that serve a wider range of customer segments.</p>
-          <div class="rc-next-card-arrow">Start path →</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
-          <div class="rc-next-card-icon">🎯</div>
-          <h4>All Acquire paths</h4>
-          <p>See every learning path in the Acquire pillar — from checkout optimization to pricing strategy, conversion tactics, and payment method expansion.</p>
-          <div class="rc-next-card-arrow">View Acquire →</div>
-        </a>
-
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon">🎙️</div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your usage billing questions, free tier design, or pricing model decisions to our CSMs live. Sessions run weekly and are open to all merchants.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-
-      </div>
-    </div>
-
+ 
     <!-- Resources -->
     <div class="rc-resources">
       <h3>📚 Resources</h3>
