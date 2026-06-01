@@ -421,34 +421,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <span class="rc-btn-complete">Continue to Pricing Models!</span>
     </div>
 
-    <!-- Continue your journey -->
-    <div class="rc-next-steps">
-      <h3>🧭 Continue your journey</h3>
-      <div class="rc-next-grid">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-next-card">
-          <div class="rc-next-card-tag">Next in series</div>
-          <div class="rc-next-card-icon">📊</div>
-          <h4>Pricing Models</h4>
-          <p>You've configured what currencies to charge in. Now learn how to configure what you charge — Fixed, Ramp, Tiered, Volume, and Stairstep models and when each one wins.</p>
-          <div class="rc-next-card-arrow">Start Pricing Models →</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-next-card">
-          <div class="rc-next-card-tag">Series hub</div>
-          <div class="rc-next-card-icon">🎯</div>
-          <h4>P&amp;P 101 Overview</h4>
-          <p>Return to the full series overview to see all six paths and track your progress through the 101 program.</p>
-          <div class="rc-next-card-arrow">View all paths →</div>
-        </a>
-        <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon">🎙️</div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your currency and regional expansion questions to our CSMs live. Sessions run weekly — no agenda required.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-      </div>
-    </div>
-
     <!-- Resources -->
     <div class="rc-resources">
       <h3>📚 Resources</h3>
