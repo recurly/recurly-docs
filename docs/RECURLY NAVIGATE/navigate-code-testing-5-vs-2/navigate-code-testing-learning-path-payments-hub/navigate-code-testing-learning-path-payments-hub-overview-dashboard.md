@@ -234,7 +234,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-step-video">
         <div class="rc-step-video-label"><span>Dashboard demo</span></div>
         <div class="rc-step-video-frame">
-          <iframe src="about:blank" loading="lazy" title="Payments Hub: Overview dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="https://share.synthesia.io/f72f7140-35fe-4aa6-9c7a-8ba798749a04" loading="lazy" title="Payments Hub: Overview dashboard demo" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
         <div class="rc-step-video-caption">A quick walkthrough of the Overview dashboard — what each tile shows and how to use the filters.</div>
       </div>
