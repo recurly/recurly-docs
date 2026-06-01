@@ -382,7 +382,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Path nav -->
     <div class="rc-lp-nav">
-      <span class="rc-btn-start">Start</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-currency" class="rc-btn-prev">← Advanced Currency</a>
       <span class="rc-lp-nav-indicator">1 of 3</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-analytics-configure" class="rc-btn-path">Next: Where to Find It →</a>
     </div>
