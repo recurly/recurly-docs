@@ -339,7 +339,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Path nav -->
     <div class="rc-lp-nav">
-      <span class="rc-btn-start">Start</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-btn-prev">← Pricing & Packaging 101</a>
       <span class="rc-lp-nav-indicator">1 of 3 · Plans</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans-configure" class="rc-btn-path">Next: How to Configure →</a>
     </div>
