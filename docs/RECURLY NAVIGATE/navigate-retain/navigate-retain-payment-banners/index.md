@@ -79,9 +79,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── HERO ── */
 .rc-hero {
-  background: var(--offblack);
-  background-image: url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png');
-  background-size: cover; background-position: center;
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: var(--offblack); background-size: cover;
   color: #fff; padding: 56px 40px 48px; text-align: center; border-radius: 16px;
 }
 .rc-lp-pillar-tag {
@@ -376,7 +376,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-layer-group"></i></div>
           <h4>Used together</h4>
-          <p>Banners and dunning emails are complementary, not competing. Banners catch in-session subscribers; emails catch everyone else. Together, they cover the full spectrum of subscriber behavior.</p>
+          <p>Banners and dunning emails reinforce each other. A subscriber in a dunning window who logs into your product will see the banner in-session — a second, immediate touchpoint that doesn't depend on them checking email. Running both gives you full coverage across every channel where subscribers are reachable.</p>
           <span class="rc-feature-tag">Full coverage</span>
         </div>
       </div>
@@ -401,14 +401,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
 
-      <!-- Tip callout -->
-      <div class="rc-callout rc-callout-tip">
-        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-        <div class="rc-callout-body">
-          <strong>Account Updater and payment banners work together</strong>
-          <p>Account Updater silently resolves eligible card credential issues behind the scenes — no subscriber action needed. Payment banners handle what Account Updater can't: closed accounts, insufficient funds, or any situation that requires the subscriber to step in. Enable both for the most complete involuntary churn prevention available in Recurly.</p>
-        </div>
-      </div>
     </div>
 
     <!-- Path navigation — Start state -->
