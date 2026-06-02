@@ -1,7 +1,7 @@
 ---
 title: 'Plan Price Increase: Why'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
