@@ -807,7 +807,7 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
 
 # What's next
 
-- <a href="/reference" target="_blank">API reference</a> — Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.
+- <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/getting-started-v2021-02-25" target="_blank">API reference</a> — Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.
 - <a href="/docs/recurly-js" target="_blank">Recurly.js</a> — Tokenize card data securely in the browser so raw card numbers never touch your server.
 - <a href="/docs/webhooks" target="_blank">Webhooks</a> — Full reference for every webhook event type, payload schemas, signature verification, and retry behavior.
 - <a href="/docs/dunning" target="_blank">Dunning and payment recovery</a> — Configure automated retry schedules and customer communications for failed payments.
