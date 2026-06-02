@@ -75,7 +75,7 @@ Step One: Identify your logged-in users
 
 This first snippet tells Recurly Engage who is using your app so it can match them against your subscriber list and show the overlay to the right people.
 
-Add it to every page of your app, replacing insert account code here with the subscriber's Recurly account code — this is typically available in your session or user context once someone is logged in.
+Add it to every page of your app, replacing _insert account code here_ with the subscriber's Recurly account code — this is typically available in your session or user context once someone is logged in.
 
 Step Two: Load the Recurly Engage script to your tag manager
 
