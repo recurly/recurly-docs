@@ -166,6 +166,27 @@ details.rc-quiz-reveal[open] > summary { color: var(--offblack); }
 .rc-reflect-card p:last-child { margin-bottom: 0; }
 .rc-reflect-card strong { color: var(--darkgray); }
 
+/* ── OFFICE HOURS CTA — all hex + !important on dark card ── */
+/* h4 must be display: block (default) — rc-fa-dark stacks icon above text */
+.rc-oh-cta { background: #0D0D0B !important; border: 2px solid #FFD706; border-radius: 14px; padding: 32px 36px; margin: 32px 0 0; }
+.rc-oh-cta h4 { color: #FFD706 !important; font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px; }
+.rc-oh-cta p { color: #CCC9B8 !important; font-size: .95rem; line-height: 1.6; margin: 0 0 20px; }
+.rc-oh-cta p strong { color: #FFFDF2 !important; }
+.rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-oh-btn {
+  background: #FFD706 !important; color: #0D0D0B !important; text-decoration: none !important;
+  padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: .9rem;
+  display: inline-flex; align-items: center; gap: 8px; transition: all .2s;
+  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-oh-btn:hover,
+.rc-guide a.rc-oh-btn:hover {
+  background: transparent !important; color: #FFD706 !important;
+  border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important;
+}
+@media(max-width:768px){ .rc-oh-cta { padding: 24px 20px; } }
+
 /* ── ACCENT CARDS ── */
 .rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
 .rc-accent-card.rc-accent-retain { border-left: 4px solid var(--retain); }
@@ -366,6 +387,13 @@ details.rc-quiz-reveal[open] > summary { color: var(--offblack); }
         <div class="rc-reflect-label">Question 2 of 2 · Reflection</div>
         <h4>Look at your dunning email open rate. The gap between that number and 100% is your payment banner opportunity — those are subscribers your recovery emails are missing in the moment. Given what you've learned in this course, which scenario would you deploy first, and what would your first banner say?</h4>
         <p>Start with the trigger that has the most subscribers — whether that's an expiring card pool, an active failed-payment cohort, or an upcoming annual renewal. Then ask: do your subscribers primarily live inside your own app, or in a Recurly-hosted subscriber portal? <strong>That single question determines whether webhooks or Recurly Engage is the faster path to live.</strong> From there, write one sentence of banner copy — specific enough to name the card, the date, or the amount — and you'll have your starting point.</p>
+      </div>
+
+      <!-- Office Hours CTA -->
+      <div class="rc-oh-cta">
+        <h4><i class="fa-solid fa-headset rc-fa-dark"></i>Still have questions? Bring them live.</h4>
+        <p>Whether you're deciding between webhooks and Recurly Engage, trying to interpret your first 30 days of banner data, figuring out the right frequency caps for your subscriber mix, or want a CSM to review your dunning and banner setup together — <strong>Customer Success Global Office Hours</strong> is the place to get answers. Sessions run weekly and are free for all Recurly customers. No question is too specific.</p>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
       </div>
     </div>
 
