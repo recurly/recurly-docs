@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Why'
+title: 'Plan Price Increase: Why increase prices'
 deprecated: false
 hidden: true
 metadata:
