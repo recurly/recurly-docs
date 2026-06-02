@@ -16,7 +16,7 @@ metadata:
 - **Site configuration:** The plans, add-ons, coupons, gift cards, and taxes referenced in your checkout must exist—and be active—on the Recurly site whose public key you’re using.
 - **Currency:** All items in a single `CheckoutPricing` instance must share the same currency code. Change the currency via the `data-recurly="currency"` input or the API before adding items.
 - **One-way DOM binding:** If you call the JavaScript API methods on a pricing instance that’s already `attach`-ed to DOM elements, those input/output elements will **not** auto-update; use API-only mode or re-render values yourself.
-- **PayPal Complete enhancements:&#x20;**&#x54;he plans references in your checkout will be presented to PayPal customers when signing up for subscriptions. See PayPal Complete documentation for usage and more information.
+- **PayPal Complete enhancements:&#x20;**&#x54;he plans references in your checkout will be presented to PayPal customers when signing up for subscriptions. See [PayPal Complete documentation](https://docs.recurly.com/recurly-subscriptions/docs/paypal#paypal-recurring-module-enablement) for usage and more information.
 
 # Key details
 
