@@ -1,5 +1,5 @@
 ---
-title: Plan Changes
+title: Plan Price Increase
 deprecated: false
 hidden: true
 metadata:
