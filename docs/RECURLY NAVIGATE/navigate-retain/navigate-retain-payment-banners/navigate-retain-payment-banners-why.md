@@ -79,9 +79,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── HERO ── */
 .rc-hero {
-  background: var(--offblack);
-  background-image: url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png');
-  background-size: cover; background-position: center;
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: var(--offblack); background-size: cover;
   color: #fff; padding: 56px 40px 48px; text-align: center; border-radius: 16px;
 }
 .rc-lp-pillar-tag {
@@ -326,7 +326,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What involuntary churn is costing you</h2>
 
-      <p>Every subscription business loses revenue to involuntary churn — subscribers whose cards expired, whose payments declined, whose accounts went past due before anyone caught it. These aren't customers who chose to leave. They didn't cancel; their payment method failed, and without an intervention at the right moment, the subscription lapsed. The challenge with dunning emails is that they fire after the fact and compete for attention in a crowded inbox. More than half of the subscribers who need to act on a dunning message never open it.</p>
+      <p>Every subscription business loses revenue to involuntary churn — subscribers whose cards expired, whose payments declined, whose accounts went past due before anyone caught it. These aren't customers who chose to leave. They didn't cancel; their payment method failed, and without an intervention at the right moment, the subscription lapsed. Dunning emails are a critical part of recovery, but they depend entirely on the subscriber opening their inbox — and more than half never do. For the subscribers who are already in a dunning cycle and still actively using your product, an in-session banner closes the loop: it puts the same message in front of them at exactly the moment they're most likely to act on it.</p>
 
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
@@ -379,8 +379,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-layer-group"></i></div>
-          <h4>A complementary layer, not a replacement</h4>
-          <p>Dunning emails address subscribers who check their inbox. Banners address subscribers who use your product. Together, they cover the full spectrum of subscriber behavior and maximize total recovery without requiring you to choose between channels.</p>
+          <h4>Reinforces dunning — for the same subscribers</h4>
+          <p>Most merchants allow product access during dunning, which means subscribers in an active dunning window are still logging in. A payment banner reinforces your dunning emails in-session, reaching those subscribers through a second channel at the moment they're already engaged. And for the ones who never open your emails at all, banners are the only touchpoint that gets through.</p>
         </div>
       </div>
 
