@@ -248,8 +248,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-hero-stat"><div class="rc-hero-stat-num">100%</div><div class="rc-hero-stat-label">Of contract subscribers must be reviewed before migration</div></div>
       </div>
     </div>
-
-        <details class="rc-sticky-nav-wrap" open>
+    
+<details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
@@ -261,12 +261,14 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           Overview
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-sticky-link">
-          ><span class="rc-step-badge">1</span> Why increase prices?
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Why increase prices?
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link rc-sticky-link-active">
-<img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""
-          Things to consider
+          <span class="rc-step-badge">1</span> Why increase prices?
         </a>
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Things to consider
+        </a>
+
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-how" class="rc-sticky-link">
           <span class="rc-step-badge">3</span> How to execute it
         </a>
@@ -284,7 +286,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
       </div></div></div>
     </details>
-
+      
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-clock rc-fa-section"></i> Timing your increase</h2>
       <p>The single most common mistake in a price increase rollout is moving too fast. Rushing the timeline leads to subscriber surprise, support spikes, and avoidable churn. Here's how to think about pacing.</p>
