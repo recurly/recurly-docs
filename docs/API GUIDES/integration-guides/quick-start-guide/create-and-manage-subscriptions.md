@@ -29,6 +29,7 @@ metadata:
 ### Supported SDKs
 
 <div class="rp-sdk-grid">
+
 <Cards>
   <Card title="Ruby" href="https://github.com/recurly/recurly-client-ruby" target="_blank"></Card>
   <Card title="Node.js" href="https://github.com/recurly/recurly-client-node" target="_blank"></Card>
@@ -37,6 +38,7 @@ metadata:
   <Card title="C#" href="https://github.com/recurly/recurly-client-dotnet" target="_blank"></Card>
   <Card title="PHP" href="https://github.com/recurly/recurly-client-php" target="_blank"></Card>
 </Cards>
+
 </div>
 
 ### Prerequisites
@@ -805,8 +807,10 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
 
 # What's next
 
-- <a href="/docs/api" target="_blank">API reference</a> — Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.
+- <a href="/reference" target="_blank">API reference</a> — Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.
 - <a href="/docs/recurly-js" target="_blank">Recurly.js</a> — Tokenize card data securely in the browser so raw card numbers never touch your server.
 - <a href="/docs/webhooks" target="_blank">Webhooks</a> — Full reference for every webhook event type, payload schemas, signature verification, and retry behavior.
 - <a href="/docs/dunning" target="_blank">Dunning and payment recovery</a> — Configure automated retry schedules and customer communications for failed payments.
 - <a href="/docs/add-ons" target="_blank">Add-ons and usage billing</a> — Charge for seats, usage, or optional features on top of a base subscription price.
+
+<br />
