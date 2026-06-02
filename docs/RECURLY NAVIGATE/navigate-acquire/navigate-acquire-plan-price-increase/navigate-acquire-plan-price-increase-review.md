@@ -307,22 +307,22 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link">
-          <span class="rc-step-badge">1</span> Overview
+          Overview
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-sticky-link">
-          <span class="rc-step-badge">2</span> Why increase prices?
+          <span class="rc-step-badge">1</span> Why increase prices?
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link">
-          <span class="rc-step-badge">3</span> Things to consider
+          <span class="rc-step-badge">2</span> Things to consider
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-execute" class="rc-sticky-link">
-          <span class="rc-step-badge">4</span> How to execute it
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-how" class="rc-sticky-link">
+          <span class="rc-step-badge">3</span> How to execute it
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link">
-          <span class="rc-step-badge">5</span> Communicate it
+          <span class="rc-step-badge">4</span> How to communicate it
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-track" class="rc-sticky-link">
-          <span class="rc-step-badge">6</span> Track the impact
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-impact" class="rc-sticky-link">
+          <span class="rc-step-badge">5</span> Tracking impact
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link rc-sticky-link-active">
           <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Review &amp; resources
@@ -434,8 +434,8 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
 
     <!-- PATH NAV BUTTONS -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-track" class="rc-btn-prev">← Track the impact</a>
-      <span class="rc-lp-nav-indicator">7 of 7</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-impact" class="rc-btn-prev">← Track the impact</a>
+      <span class="rc-lp-nav-indicator">6 of 6</span>
       <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
     </div>
 
@@ -495,13 +495,13 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
 
         <div class="rc-footer-section">
           <span class="rc-footer-label">Plan price increase</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">1. Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-footer-link">2. Why increase prices?</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">3. Things to consider</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-execute" class="rc-footer-link">4. How to execute it</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">5. Communicate it</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-track" class="rc-footer-link">6. Track the impact</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-footer-link">7. Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-footer-link">1. Why increase prices?</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. Things to consider</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-how" class="rc-footer-link">3. How to execute it</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">4. How to communicate it</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-impact" class="rc-footer-link">5. Tracking impact</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-footer-link">6. Review &amp; resources</a>
         </div>
 
         <div class="rc-footer-utility">
