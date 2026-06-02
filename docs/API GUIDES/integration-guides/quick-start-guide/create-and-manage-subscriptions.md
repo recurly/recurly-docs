@@ -10,59 +10,51 @@ metadata:
   robots: index
 ---
 <div class="rp-page">
-
   <div class="rp-overview">This guide walks you through building a complete subscription integration with Recurly's API v3 — from authenticating your first request to managing the full subscription lifecycle. By the end, you'll have working code that creates accounts, assigns plans, starts subscriptions, handles billing changes, and responds to lifecycle events via webhooks.</div>
-
-  <div class="rp-plan">✦ Available on all Recurly plans</div>
-
   <div class="rp-cost">
     <strong>Additional cost</strong><br/>
-    Dunning and advanced retry logic require an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com">support@recurly.com</a> for pricing details.
+    Dunning and advanced retry logic require an additional cost. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">support@recurly.com</a> for pricing details.
   </div>
-
-  ### Prerequisites
-  <ul class="rp-list">
-    <li>A Recurly account with API access enabled</li>
-    <li>A private API key from <strong>Integrations > API Keys</strong> in the Recurly Admin Dashboard</li>
-    <li>Your Recurly site ID, visible in the Admin Dashboard URL: <code>app.recurly.com/a/<strong>your-site-id</strong></code></li>
-    <li>One of the supported runtimes: Ruby 2.7+, Node.js 18+, Python 3.8+, Java 11+, .NET 6+, or PHP 8.0+</li>
-  </ul>
-
-  ### Limitations
-  <ul class="rp-list">
-    <li>The Recurly API enforces a rate limit of 1,400 requests per minute per site. Requests beyond this threshold return a <code>429</code> response.</li>
-    <li>Subscription quantity changes take effect at the next renewal by default. Immediate prorated changes require setting <code>timeframe: now</code> on the update request.</li>
-    <li>Trial periods cannot be extended after a subscription is active.</li>
-  </ul>
-
-  ### Supported SDKs
-
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition" target="_blank"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-concepts" target="_blank"><span class="rp-toc-num">2</span>Key concepts</a>
+    <a class="rp-toc-pill" href="#integration-guide" target="_blank"><span class="rp-toc-num">3</span>Integration guide</a>
+    <a class="rp-toc-pill" href="#error-handling-and-troubleshooting" target="_blank"><span class="rp-toc-num">4</span>Error handling and troubleshooting</a>
+    <a class="rp-toc-pill" href="#webhooks" target="_blank"><span class="rp-toc-num">5</span>Webhooks</a>
+    <a class="rp-toc-pill" href="#testing-your-integration" target="_blank"><span class="rp-toc-num">6</span>Testing your integration</a>
+    <a class="rp-toc-pill" href="#whats-next" target="_blank"><span class="rp-toc-num">7</span>What's next</a>
+  </div>
 </div>
+
+### Supported SDKs
 
 <div class="rp-sdk-grid">
 <Cards>
-  <Card title="Ruby" href="https://github.com/recurly/recurly-client-ruby"></Card>
-  <Card title="Node.js" href="https://github.com/recurly/recurly-client-node"></Card>
-  <Card title="Python" href="https://github.com/recurly/recurly-client-python"></Card>
-  <Card title="Java" href="https://github.com/recurly/recurly-client-java"></Card>
-  <Card title="C#" href="https://github.com/recurly/recurly-client-dotnet"></Card>
-  <Card title="PHP" href="https://github.com/recurly/recurly-client-php"></Card>
+  <Card title="Ruby" href="https://github.com/recurly/recurly-client-ruby" target="_blank"></Card>
+  <Card title="Node.js" href="https://github.com/recurly/recurly-client-node" target="_blank"></Card>
+  <Card title="Python" href="https://github.com/recurly/recurly-client-python" target="_blank"></Card>
+  <Card title="Java" href="https://github.com/recurly/recurly-client-java" target="_blank"></Card>
+  <Card title="C#" href="https://github.com/recurly/recurly-client-dotnet" target="_blank"></Card>
+  <Card title="PHP" href="https://github.com/recurly/recurly-client-php" target="_blank"></Card>
 </Cards>
 </div>
 
-<div class="rp-page">
+### Prerequisites
 
-  <div class="rp-toc">
-    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
-    <a class="rp-toc-pill" href="#key-concepts"><span class="rp-toc-num">2</span>Key concepts</a>
-    <a class="rp-toc-pill" href="#integration-guide"><span class="rp-toc-num">3</span>Integration guide</a>
-    <a class="rp-toc-pill" href="#error-handling-and-troubleshooting"><span class="rp-toc-num">4</span>Error handling and troubleshooting</a>
-    <a class="rp-toc-pill" href="#webhooks"><span class="rp-toc-num">5</span>Webhooks</a>
-    <a class="rp-toc-pill" href="#testing-your-integration"><span class="rp-toc-num">6</span>Testing your integration</a>
-    <a class="rp-toc-pill" href="#whats-next"><span class="rp-toc-num">7</span>What's next</a>
-  </div>
+<ul class="rp-list">
+  <li>A Recurly account with API access enabled</li>
+  <li>A private API key from <strong>Integrations > API Keys</strong> in the Recurly Admin Dashboard</li>
+  <li>Your Recurly site ID, visible in the Admin Dashboard URL: <code>app.recurly.com/a/your-site-id</code></li>
+  <li>One of the supported runtimes: Ruby 2.7+, Node.js 18+, Python 3.8+, Java 11+, .NET 6+, or PHP 8.0+</li>
+</ul>
 
-</div>
+### Limitations
+
+<ul class="rp-list">
+  <li>The Recurly API enforces a rate limit of 1,400 requests per minute per site. Requests beyond this threshold return a <code>429</code> response.</li>
+  <li>Subscription quantity changes take effect at the next renewal by default. Immediate prorated changes require setting <code>timeframe: now</code> on the update request.</li>
+  <li>Trial periods cannot be extended after a subscription is active.</li>
+</ul>
 
 # Definition
 
@@ -70,21 +62,12 @@ metadata:
 
 # Key concepts
 
-<div class="rp-card">
-
-**Account** — The record that represents one of your customers in Recurly. Every subscription must belong to an Account, identified by a unique `account_code` you assign. Think of it as your customer ID bridging your system to Recurly's.
-
-**Plan** — The template that defines a subscription's billing interval, currency, and base price. Plans are created in the Recurly Admin Dashboard or via the API, then referenced by `plan_code` when creating subscriptions.
-
-**Subscription** — The active billing relationship between an Account and a Plan. A Subscription tracks its current state (`active`, `canceled`, `expired`, `future`, `paused`), current period dates, and any pending changes.
-
-**Invoice** — The financial record generated at each billing event — trial end, renewal, plan change, or immediate charge. Invoices contain line items, applied credits, and the associated Transaction.
-
-**Transaction** — The record of a single payment attempt against an Invoice. A Transaction can be `success`, `declined`, or `void`, and carries the gateway response code that explains a decline.
-
-**Add-on** — A billable item attached to a Plan that lets you charge for usage, seats, or optional features on top of the base subscription price.
-
-</div>
+- **Account** — The record that represents one of your customers in Recurly. Every subscription must belong to an Account, identified by a unique `account_code` you assign. Think of it as your customer ID bridging your system to Recurly's.
+- **Plan** — The template that defines a subscription's billing interval, currency, and base price. Plans are created in the Recurly Admin Dashboard or via the API, then referenced by `plan_code` when creating subscriptions.
+- **Subscription** — The active billing relationship between an Account and a Plan. A Subscription tracks its current state (`active`, `canceled`, `expired`, `future`, `paused`), current period dates, and any pending changes.
+- **Invoice** — The financial record generated at each billing event — trial end, renewal, plan change, or immediate charge. Invoices contain line items, applied credits, and the associated Transaction.
+- **Transaction** — The record of a single payment attempt against an Invoice. A Transaction can be `success`, `declined`, or `void`, and carries the gateway response code that explains a decline.
+- **Add-on** — A billable item attached to a Plan that lets you charge for usage, seats, or optional features on top of the base subscription price.
 
 # Integration guide
 
@@ -93,7 +76,7 @@ metadata:
 Generate your private API key in the Recurly Admin Dashboard under **Integrations > API Keys**, then pass it as the HTTP Basic Auth username with an empty password on every request.
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong>Security note</strong>Never embed your private API key in client-side code, mobile apps, or version control. Use environment variables or a secrets manager such as AWS Secrets Manager, HashiCorp Vault, or GCP Secret Manager in production.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Security note</strong>Never embed your private API key in client-side code, mobile apps, or version control. Use environment variables or a secrets manager such as AWS Secrets Manager, HashiCorp Vault, or GCP Secret Manager in production.</div>
 </div>
 
 <Tabs>
@@ -310,7 +293,7 @@ Install the Recurly SDK for your language using its standard package manager.
 ```
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong>Tip</strong>The <code>code</code> field is your own identifier — set it to your internal customer or user ID so you can look up accounts by your ID without storing Recurly's <code>id</code> separately.</div>
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>The <code>code</code> field is your own identifier — set it to your internal customer or user ID so you can look up accounts by your ID without storing Recurly's <code>id</code> separately.</div>
 </div>
 
 ## Add a billing token
@@ -323,7 +306,7 @@ Install the Recurly SDK for your language using its standard package manager.
 </div>
 
 <div class="rp-callout rp-callout-important">
-  <div><strong>Important</strong>Billing tokens expire after 20 minutes. Complete the account billing info update immediately after your frontend generates the token. If the token expires, the customer must re-enter their card details.</div>
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong>Billing tokens expire after 20 minutes. Complete the account billing info update immediately after your frontend generates the token. If the token expires, the customer must re-enter their card details.</div>
 </div>
 
 <Tabs>
@@ -533,7 +516,7 @@ Install the Recurly SDK for your language using its standard package manager.
 ```
 
 <div class="rp-callout rp-callout-note">
-  <div><strong>Note</strong>The <code>unit_amount</code> field is returned in the currency's smallest unit — cents for USD. A value of <code>4900</code> means $49.00.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>The <code>unit_amount</code> field is returned in the currency's smallest unit — cents for USD. A value of <code>4900</code> means $49.00.</div>
 </div>
 
 ## Change a subscription plan
@@ -546,7 +529,7 @@ Install the Recurly SDK for your language using its standard package manager.
 </div>
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong>Warning</strong>Setting <code>timeframe: now</code> immediately charges the prorated difference to the card on file. Confirm this is the intended behavior before using it in production — it cannot be undone without issuing a manual credit.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>Setting <code>timeframe: now</code> immediately charges the prorated difference to the card on file. Confirm this is the intended behavior before using it in production — it cannot be undone without issuing a manual credit.</div>
 </div>
 
 <Tabs>
@@ -716,14 +699,14 @@ Install the Recurly SDK for your language using its standard package manager.
 ```
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong>Tip</strong>To reactivate a canceled subscription before its expiry date, send a <code>PUT</code> request to <code>/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID/reactivate</code>. After the expiry date, a new subscription must be created.</div>
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>To reactivate a canceled subscription before its expiry date, send a <code>PUT</code> request to <code>/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID/reactivate</code>. After the expiry date, a new subscription must be created.</div>
 </div>
 
 # Error handling and troubleshooting
 
 ## API error codes
 
-<table class="rp-params">
+<table class="rp-gw-table">
   <tr class="rp-thead-row"><td>HTTP status</td><td>Error type</td><td>Meaning</td><td>What to do</td></tr>
   <tr><td><code>400</code></td><td><code>validation</code></td><td>One or more request parameters failed validation</td><td>Inspect the <code>params</code> array in the error body — each entry names the field and describes the failure</td></tr>
   <tr><td><code>401</code></td><td><code>unauthorized</code></td><td>API key is missing, invalid, or lacks permissions</td><td>Verify the key is correct, confirm it's not revoked, and check it has the required scopes in the Dashboard</td></tr>
@@ -754,9 +737,13 @@ Plan changes with `timeframe: renewal` (the default) don't affect the current bi
 
 # Webhooks
 
+## Configuring webhooks
+
 Recurly sends webhook notifications to your server whenever key subscription events occur — renewals, cancellations, payment failures, and more. Because these events happen asynchronously (often minutes or hours after your API call), webhooks are how your backend stays in sync with Recurly's state rather than polling the API.
 
-<table class="rp-params">
+Subscribe to the following events in **Integrations > Webhooks** in the Recurly Admin Dashboard:
+
+<table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Event</td><td>When it fires</td></tr>
   <tr><td><code>new_subscription_notification</code></td><td>A new subscription is created and activated</td></tr>
   <tr><td><code>updated_subscription_notification</code></td><td>A subscription is modified — plan change, quantity change, or reactivation</td></tr>
@@ -769,7 +756,7 @@ Recurly sends webhook notifications to your server whenever key subscription eve
 </table>
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong>Tip</strong>Configure your webhook endpoint in the Recurly Admin Dashboard under <strong>Integrations > Webhooks</strong>. Recurly sends an HTTP POST to your endpoint with an XML payload and expects a <code>2xx</code> response within 5 seconds — return immediately and process asynchronously if your handler is slow.</div>
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>Recurly sends an HTTP POST to your endpoint with an XML payload and expects a <code>2xx</code> response within five seconds. Return immediately and process the payload asynchronously if your handler is slow.</div>
 </div>
 
 <a class="rp-btn rp-btn-primary" href="/docs/webhooks" target="_blank">Webhooks reference →</a>
@@ -780,7 +767,7 @@ Recurly sends webhook notifications to your server whenever key subscription eve
 
 Your Recurly test site is a fully isolated environment — transactions never move real money and all data is separate from your live site. Use your **test site API key** (visible at the top of your Recurly test site's Dashboard) for all development and QA work.
 
-<table class="rp-params">
+<table class="rp-gw-table">
   <tr class="rp-thead-row"><td>Test card number</td><td>Behavior</td></tr>
   <tr><td><code>4111 1111 1111 1111</code></td><td>Successful charge — Visa</td></tr>
   <tr><td><code>5105 1051 0510 5100</code></td><td>Successful charge — Mastercard</td></tr>
@@ -792,7 +779,7 @@ Your Recurly test site is a fully isolated environment — transactions never mo
 Use `01` for the expiry month, any future year, and any three-digit CVV for all test cards.
 
 <div class="rp-callout rp-callout-tip">
-  <div><strong>Tip</strong>Use the <strong>Time Machine</strong> feature in the Recurly Admin Dashboard to fast-forward subscription billing periods, simulate renewals, trigger dunning runs, and test expiry behavior — without waiting for real time to pass.</div>
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>Use the Time Machine feature in the Recurly Admin Dashboard to fast-forward subscription billing periods, simulate renewals, trigger dunning runs, and test expiry behavior — without waiting for real time to pass.</div>
 </div>
 
 ## Verifying the integration
@@ -800,15 +787,15 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
 <div class="rp-steps">
   <div class="rp-step">
     <div class="rp-step-num">1</div>
-    <div><h4>Confirm the account exists in the Dashboard</h4><p>Navigate to <strong>Accounts</strong> in the Recurly Admin Dashboard and search for the <code>account_code</code> you used. You should see the account with the billing info card and the active subscription listed.</p></div>
+    <div><h4>Confirm the account exists in the Dashboard</h4><p>Navigate to Accounts in the Recurly Admin Dashboard and search for the <code>account_code</code> you used. You should see the account with the billing info card and the active subscription listed.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">2</div>
-    <div><h4>Inspect the invoice and transaction</h4><p>Open the account and check the <strong>Invoices</strong> tab. The first invoice for the subscription should show a <code>collected</code> state, with a linked Transaction showing <code>success</code>.</p></div>
+    <div><h4>Inspect the invoice and transaction</h4><p>Open the account and check the Invoices tab. The first invoice for the subscription should show a <code>collected</code> state, with a linked Transaction showing <code>success</code>.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">3</div>
-    <div><h4>Verify webhook delivery</h4><p>In the Dashboard, go to <strong>Integrations > Webhooks > Webhook logs</strong>. Confirm that <code>new_subscription_notification</code> was sent to your endpoint and received a <code>2xx</code> response. If it shows failed, check your endpoint logs for the received payload.</p></div>
+    <div><h4>Verify webhook delivery</h4><p>In the Dashboard, go to Integrations > Webhooks > Webhook logs. Confirm that <code>new_subscription_notification</code> was sent to your endpoint and received a <code>2xx</code> response. If it shows failed, check your endpoint logs for the received payload.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">4</div>
@@ -818,10 +805,8 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
 
 # What's next
 
-<Cards>
-  <Card title="API reference" href="/docs/api">Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.</Card>
-  <Card title="Recurly.js" href="/docs/recurly-js">Tokenize card data securely in the browser so raw card numbers never touch your server.</Card>
-  <Card title="Webhooks" href="/docs/webhooks">Full reference for every webhook event type, payload schemas, signature verification, and retry behavior.</Card>
-  <Card title="Dunning and payment recovery" href="/docs/dunning">Configure automated retry schedules and customer communications for failed payments.</Card>
-  <Card title="Add-ons and usage billing" href="/docs/add-ons">Charge for seats, usage, or optional features on top of a base subscription price.</Card>
-</Cards>
+- <a href="/docs/api" target="_blank">API reference</a> — Complete endpoint documentation for every Recurly resource — Accounts, Subscriptions, Plans, Invoices, Transactions, and more.
+- <a href="/docs/recurly-js" target="_blank">Recurly.js</a> — Tokenize card data securely in the browser so raw card numbers never touch your server.
+- <a href="/docs/webhooks" target="_blank">Webhooks</a> — Full reference for every webhook event type, payload schemas, signature verification, and retry behavior.
+- <a href="/docs/dunning" target="_blank">Dunning and payment recovery</a> — Configure automated retry schedules and customer communications for failed payments.
+- <a href="/docs/add-ons" target="_blank">Add-ons and usage billing</a> — Charge for seats, usage, or optional features on top of a base subscription price.
