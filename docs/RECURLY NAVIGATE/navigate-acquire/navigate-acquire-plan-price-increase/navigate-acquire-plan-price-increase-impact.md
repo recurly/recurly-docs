@@ -487,38 +487,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
-    <!-- CONTINUE YOUR JOURNEY (appropriate on Course last/R&R page) -->
-    <div class="rc-next-steps">
-      <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
-      <div class="rc-next-grid">
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-packaging-201" class="rc-next-card">
-          <div class="rc-next-card-tag">Recommended next</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h4>Pricing &amp; Packaging 201</h4>
-          <p>Go deeper on advanced pricing structures — segmentation, account hierarchy, usage billing, and the models that turn a single price point into a growth lever.</p>
-          <div class="rc-next-card-arrow">Start path →</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-next-card">
-          <div class="rc-next-card-tag">Explore the pillar</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-bullseye"></i></div>
-          <h4>All Acquire paths</h4>
-          <p>See every learning path in the Acquire pillar — checkout optimization, payment methods, pricing strategy, and more.</p>
-          <div class="rc-next-card-arrow">View Acquire →</div>
-        </a>
-
-        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-card">
-          <div class="rc-next-card-tag">Live session</div>
-          <div class="rc-next-card-icon"><i class="fa-solid fa-microphone"></i></div>
-          <h4>Global Office Hours</h4>
-          <p>Bring your pricing questions to our CSMs live. Sessions run weekly and cover real merchant scenarios.</p>
-          <div class="rc-next-card-arrow">Register →</div>
-        </a>
-
-      </div>
-    </div>
-
     <!-- RESOURCES -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
