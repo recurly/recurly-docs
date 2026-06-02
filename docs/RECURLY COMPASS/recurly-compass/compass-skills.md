@@ -26,7 +26,9 @@ A new subpage under Compass on the left side navigation bar. The Compass Skills 
 
 The Compass Skills page displays cards that connect you with Compass Assistant to accomplish specific outcomes. Guided workflows with progress tracking support configuration changes and activation.
 
-<Image align="center" width="80% " src="https://files.readme.io/8e4372fd8310590d2bc436abc0369ad000239e41c19ecef6151e59de957c212d-image.png" />
+
+<Image src="https://files.readme.io/8e4372fd8310590d2bc436abc0369ad000239e41c19ecef6151e59de957c212d-image.png" align="center" width="80% " />
+
 
 <br />
 
@@ -42,19 +44,44 @@ Filters at the top of the page can be used to filter skills by agent type.
 
 Several skills guide you through configuration steps.
 
-* If you leave a skill before completing, next time you click the skill card button it will pick up from your last step.
-* Guided skills are generally completed once, the skill card can give you an option to view the details.
-* Guided skills configure settings for the site. As such if one user completes the skill, other users will see the skill has been completed.
+- If you leave a skill before completing, next time you click the skill card button it will pick up from your last step.
+- Guided skills are generally completed once, the skill card can give you an option to view the details.
+- Guided skills configure settings for the site. As such if one user completes the skill, other users will see the skill has been completed.
 
-<Image align="center" width="70% " src="https://files.readme.io/e39f9a648562d515dd4d1b88e1e5dfbd301a232c40d5dc0a91b3187123b5412e-image.png" />
+
+<Image src="https://files.readme.io/e39f9a648562d515dd4d1b88e1e5dfbd301a232c40d5dc0a91b3187123b5412e-image.png" align="center" width="70% " />
+
 
 <br />
 
 ## Involuntary Churn Remediation Skill
 
-This skill prompts users to update failed payment methods with in-app messages to engage subscribers to proactively update payment information. This enables a small campaign targeted to subscribers with failed payment methods.  
+This skill prompts users to update failed payment methods with in-app messages to engage subscribers to proactively update payment information. This enables a small campaign targeted to subscribers with failed payment methods.
 
-[Recurly Engage](https://recurly.com/product/engage/) provides more customizable features to create more campaigns and in-app prompts. 
+[Recurly Engage](https://recurly.com/product/engage/) provides more customizable features to create more campaigns and in-app prompts.
+
+**Overview of this skill**
+
+The Compass Assistant will guide you through customizing an Involuntary Churn prompt.
+You may configure the background and button colors, the title, message and button text to appear like your brand.
+
+The Compass Assistant will also prompt you for the domain of your site.  For the call to action (CTA)  button, Compass Assistant needs to know where you will direct your users when they click on the CTA Button to update their payment method. Please provide the exact URL for your page that allows users to update payment information
+
+Once you have reviewed the information for your Involuntary Churn prompt, Compass Assistant will save the prompt details.
+
+**Next steps (outside of Compass Assistant):**<br />There are two quick technical steps to complete before your customers can see it. These involve adding two small code snippets to your site — you'll only need to do this once, and as soon as they're in place your campaign will be live to customers.
+
+Step One: Identify your logged-in users
+
+This first snippet tells Recurly Engage who is using your app so it can match them against your subscriber list and show the overlay to the right people.
+
+Add it to every page of your app, replacing insert account code here with the subscriber's Recurly account code — this is typically available in your session or user context once someone is logged in.
+
+Step Two: Load the Recurly Engage script to your tag manager
+
+This snippet loads the Recurly Engage library on your site via your tag manager, the involuntary churn prompt will fire on all pages that the script is added to. It's recommended to add the script to all pages of your site to encourage users to update their payment method.
+
+[Learn more about adding Recurly Engage to your site via your tag manager.](https://docs.recurly.com/recurly-engage/docs/add-the-redfast-tag)
 
 ## Optimize Default Dunning Skill
 
