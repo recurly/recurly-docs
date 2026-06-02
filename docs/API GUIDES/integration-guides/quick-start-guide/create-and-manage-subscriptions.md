@@ -9,11 +9,6 @@ hidden: true
 metadata:
   robots: index
 ---
-Title: Integrate subscriptions with the Recurly API
-Metadata description: Learn how to authenticate, create accounts, start subscriptions, handle billing changes, and respond to lifecycle events using Recurly's API v3.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
   <div class="rp-overview">This guide walks you through building a complete subscription integration with Recurly's API v3 — from authenticating your first request to managing the full subscription lifecycle. By the end, you'll have working code that creates accounts, assigns plans, starts subscriptions, handles billing changes, and responds to lifecycle events via webhooks.</div>
   <div class="rp-cost">
