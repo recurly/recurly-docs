@@ -1,5 +1,5 @@
 ---
-title: Create and manage subscriptions
+title: Create and manage subscriptions (Not a real guide)
 excerpt: >-
   Learn how to create and manage subscriptions using the Recurly API v3,
   covering authentication, SDK setup, account and plan creation, subscription
