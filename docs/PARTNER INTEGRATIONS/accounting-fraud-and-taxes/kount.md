@@ -20,25 +20,25 @@ This feature **may not be included** in the Starter or Pro plans. If you are int
 
 ### Prerequisites
 
-* You must have a Kount 360 account. Please reach out to Recurly Support or your CSM/TAM if you are not already using this service.
-* You must be able to utilize Recurly.js and invoke the risk related data-collector of that integration method.
-* If you plan on setting up 'Review' rules in Kount, you must be able to [ingest Recurly webhooks and use the API](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) to take action against invoices (refund / void).
+- You must have a Kount 360 account. Please reach out to Recurly Support or your CSM/TAM if you are not already using this service.
+- You must be able to utilize Recurly.js and invoke the risk related data-collector of that integration method.
+- If you plan on setting up 'Review' rules in Kount, you must be able to [ingest Recurly webhooks and use the API](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) to take action against invoices (refund / void).
 
 ### Limitations
 
-* Risk inquiries are only performed on new billing info verifications (sign-ups and billing info updates) for the following payment methods:
-  * Cards (including ApplePay and GooglePay)
-  * All APMs available on the Recurly Platform. If you are not using Recurly.js for APMs (some do not offer this support) then Kount DDC / Session Information will be excluded.
-* Kount Portfolio Merchants will not be able to modify default rules. If you would like a list of default rules that are set, please reach out to Support. These are not listed publicly for anti-fraud purposes.
-* Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information.
-* Integrators using Third Party Checkout (Stripe and Adyen) will need to use fraud tools made available by the gateway. There is not enough information available to Recurly at time of transaction when using these tools to utilize Kount.
+- Risk inquiries are only performed on new billing info verifications (sign-ups and billing info updates) for the following payment methods:
+  - Cards (including ApplePay and GooglePay)
+  - All APMs available on the Recurly Platform. If you are not using Recurly.js for APMs (some do not offer this support) then Kount DDC / Session Information will be excluded.
+- Kount Portfolio Merchants will not be able to modify default rules. If you would like a list of default rules that are set, please reach out to Support. These are not listed publicly for anti-fraud purposes.
+- Existing accounts with a billing info (card or otherwise) on file will not undergo risk inquiries unless they update their billing information.
+- Integrators using Third Party Checkout (Stripe and Adyen) will need to use fraud tools made available by the gateway. There is not enough information available to Recurly at time of transaction when using these tools to utilize Kount.
 
 ### Recommendations and Best Practices
 
-* Use Recurly.js for all supported payment methods if you are not already doing so. This will ensure that the data collector creates a session ID which supports proper fraud detection with Kount and reduces false positives.
-* For APMs that are not supported with Recurly.js, we will support a session ID bypass option. There are no integration changes you need to make for APMs not supported with Recurly.js -- continue to use them as documented.
-* Properly set up your webhooks if your Kount Account has rules for 'Review' flows, and ensure your integration is properly listening for Kount Fraud Update webhooks from Recurly. See **Enabling Kount Review Webhooks** on this page for more information.
-* If you have your own Kount DDC implementation and are sending Recurly a Fraud Session ID, ensure you are sending a valid Kount Session ID or your fraud checks will fail. Sending a 'name', or anything other than a valid Kount format will cause errors.
+- Use Recurly.js for all supported payment methods if you are not already doing so. This will ensure that the data collector creates a session ID which supports proper fraud detection with Kount and reduces false positives.
+- For APMs that are not supported with Recurly.js, we will support a session ID bypass option. There are no integration changes you need to make for APMs not supported with Recurly.js -- continue to use them as documented.
+- Properly set up your webhooks if your Kount Account has rules for 'Review' flows, and ensure your integration is properly listening for Kount Fraud Update webhooks from Recurly. See **Enabling Kount Review Webhooks** on this page for more information.
+- If you have your own Kount DDC implementation and are sending Recurly a Fraud Session ID, ensure you are sending a valid Kount Session ID or your fraud checks will fail. Sending a 'name', or anything other than a valid Kount format will cause errors.
 
 # Definition
 
@@ -50,13 +50,15 @@ Recurly's integration uses Kount's updated **Kount 360** platform.
 
 # Key benefits
 
-* **Reduced fraudulent orders**: Minimize the risk of accepting deceptive orders to safeguard your business.
-* **Decreased chargebacks**: Lower the incidence of chargebacks, preserving both time and financial resources.
-* **Enhanced customer experience**: Offer a secure transaction environment, elevating customer confidence and satisfaction.
-* **Cost efficiency**: Curtail operational expenses tied to fraud detection and management, promoting a healthier bottom line.
-* **Retention boost**: Foster a secure transaction milieu, aiding in reducing customer churn and enhancing loyalty.
+- **Reduced fraudulent orders**: Minimize the risk of accepting deceptive orders to safeguard your business.
+- **Decreased chargebacks**: Lower the incidence of chargebacks, preserving both time and financial resources.
+- **Enhanced customer experience**: Offer a secure transaction environment, elevating customer confidence and satisfaction.
+- **Cost efficiency**: Curtail operational expenses tied to fraud detection and management, promoting a healthier bottom line.
+- **Retention boost**: Foster a secure transaction milieu, aiding in reducing customer churn and enhancing loyalty.
 
-<Image align="center" border={true} width="60% " src="https://files.readme.io/82814e8-d063eb2-image_7.png" className="border" />
+
+<Image src="https://files.readme.io/82814e8-d063eb2-image_7.png" align="center" width="60% " border={true} />
+
 
 Once Kount’s Fraud Service is activated, Recurly initiates risk assessments for new card verifications, including sign-ups and billing info updates. Accounts with existing credit or debit cards will only be assessed if their billing information is updated.
 
@@ -64,10 +66,10 @@ Once Kount’s Fraud Service is activated, Recurly initiates risk assessments fo
 
 For businesses seeking a robust and customizable fraud management solution, Kount Enterprise is the ideal choice. It offers the foundational fraud prevention technology of Kount Basic, enhanced with direct access to your Kount Control Center and a dedicated Kount Customer Success Manager. With Kount Enterprise, you can:
 
-* Create custom rules based on observed fraud trends and specific business policies.
-* Access Kount’s business intelligence tools for comprehensive analysis.
-* Conduct manual reviews for transactions.
-* Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
+- Create custom rules based on observed fraud trends and specific business policies.
+- Access Kount’s business intelligence tools for comprehensive analysis.
+- Conduct manual reviews for transactions.
+- Leverage Kount's advanced artificial intelligence scoring for improved fraud detection.
 
 ## Standard Flows and Behavior
 
@@ -75,18 +77,18 @@ For new billing information (Cards) and APMs, Recurly will send relevant payment
 
 ### Scenarios
 
-* **Subscription Signups**: Subscription signups with a new payment method will be sent to Kount for review as usual.
-* **One Time Transactions/BI Updates**:  One Time / CIT transactions, including Billing Info updates, will be sent to Kount if those updates include new payment information.
-  * If a customer provides the same card number as is already on file, that transaction will be re-reviewed by Kount and can be marked as fraudulent. This may have impact on renewals using that billing info.
-* **MOTO transactions**: Transactions marked as 'MOTO' (either via API or in Recurly Admin) will be sent to Kount without data-collector information by design as the customer is not in session during a MOTO transaction.
-* **Renewals**: Recurring and merchant-initiated transactions are not sent to Kount for review. If an existing Billing Info has been marked as 'fraudulent' due to a CIT transaction being declined by Kount, renewals using that billing information will start to fail.
+- **Subscription Signups**: Subscription signups with a new payment method will be sent to Kount for review as usual.
+- **One Time Transactions/BI Updates**:  One Time / CIT transactions, including Billing Info updates, will be sent to Kount if those updates include new payment information.
+  - If a customer provides the same card number as is already on file, that transaction will be re-reviewed by Kount and can be marked as fraudulent. This may have impact on renewals using that billing info.
+- **MOTO transactions**: Transactions marked as 'MOTO' (either via API or in Recurly Admin) will be sent to Kount without data-collector information by design as the customer is not in session during a MOTO transaction.
+- **Renewals**: Recurring and merchant-initiated transactions are not sent to Kount for review. If an existing Billing Info has been marked as 'fraudulent' due to a CIT transaction being declined by Kount, renewals using that billing information will start to fail.
 
 ### Approval, Review, and Decline Behavior:
 
-* **On Approval** -- if Kount "approves" a transaction, Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway.
-* **On Review** -- if Kount marks a transaction to be "reviewed", Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway. If you mark a 'Review' transaction in Kount as declined, expect a webhook from Recurly. You will need to take action (void or refund) on your own when this happens.
-  * See [Webhook Setup](https://docs.recurly.com/recurly-subscriptions/docs/kount#step-3-webhook-configuration-optional) and our [Kount Webhook Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) for more details.
-* **On Decline** -- if Kount marks a transaction as "declined", Recurly will not send the transaction to the gateway, and the transaction will be marked declined.
+- **On Approval** -- if Kount "approves" a transaction, Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway.
+- **On Review** -- if Kount marks a transaction to be "reviewed", Recurly will send the authorization request to the specified gateway for approval at the bank. The transaction can still be declined by the bank or gateway. If you mark a 'Review' transaction in Kount as declined, expect a webhook from Recurly. You will need to take action (void or refund) on your own when this happens.
+  - See [Webhook Setup](https://docs.recurly.com/recurly-subscriptions/docs/kount#step-3-webhook-configuration-optional) and our [Kount Webhook Integration Guide](https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide) for more details.
+- **On Decline** -- if Kount marks a transaction as "declined", Recurly will not send the transaction to the gateway, and the transaction will be marked declined.
 
 # Kount Configuration
 
@@ -104,7 +106,9 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 6. Add a Description for your Key. Our suggestion is to use the Recurly subdomain that this key will be for, so it is obvious in Kount's dashboard which key goes to which site, if you are using multiples.
 7. Please note again that this is your last chance to copy the actual API Key as the UI will not display it again. So make sure you copy it now (click the 'Copy' button) and click 'Save' after adding a description.
 
-   <Image align="center" src="https://files.readme.io/b1081558529e93b3c2f5890d8a5c219aac99caf915eed6cad7197618a62116bb-Kount-API-Key-Creation.png" />
+
+   <Image src="https://files.readme.io/b1081558529e93b3c2f5890d8a5c219aac99caf915eed6cad7197618a62116bb-Kount-API-Key-Creation.png" align="center" />
+
 8. Your copied key will look something like this: `MG9hMX...lmNjRSMVItTl8zbU1LVXlkNFFKWg==`(the key will be longer, this has been shortened/obfuscated for example purposes). Note the `==` at the end of the key. That is part of the key and should not be deleted.
 9. Obtain your Account MID from your Kount CSM.
 10. Head over to Step 2.
@@ -114,19 +118,24 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 1. Log into your Recurly Site.
 2. Navigate to "Configuration" → "Fraud Management"
 3. Click 'Options' and choose 'Edit Configuration'
-4. Website ID: If you have multiple sites using the same Kount MID/API Key, and you have rules based on 'channels' in Kount 360', you will want to enter your website ID exactly as it is entered into Kount. Otherwise, leave this field blank.
-5. Merchant ID: This will be a 6 digit number provided to you by Kount.
-6. API Key: Enter your Kount 360 that you obtained in Step 1 in this field.
-7. Set your Fraud Monitoring Status to 'Enabled'.
-8. Click 'Save Changes'.
+4. **Website ID**: If you have multiple sites using the same Kount MID/API Key, and you have rules based on 'channels' in Kount 360', you will want to enter your website ID exactly as it is entered into Kount. Otherwise, leave this field blank.
+5. **Merchant ID**: This will be a 6 digit number provided to you by Kount.
+6. **API Key**: Enter your Kount 360 that you obtained in Step 1 in this field.
+7. **Set** your Fraud Monitoring Status to '**Enabled**'.
+8. **APM Configuration**: **Select** which Payment Methods, in addition to Cards, that you wish to use fraud checks on. You may select from any that are active on your site. See example below.
+
+   ![](https://files.readme.io/8162d0afe0ed30e89d25698d015835f8f0c37e7b75ab4c7762ddb7ac4ecec7fe-Kount-APM-configuration.png)
+
+
+9. Click 'Save Changes'.
 
 ## Step 3: Webhook Configuration (Optional)
 
 You will only need to set up webhooks if you plan on using the 'Review' option. Otherwise, you can skip this step.
 
-<Callout icon="📘" theme="info">
-  For merchants who are not ingesting Recurly webhooks or are not integrated using the Review flow (see documentation below), do not use or set up 'Review' rules in Kount 360.
-</Callout>
+> 📘
+>
+> For merchants who are not ingesting Recurly webhooks or are not integrated using the Review flow (see documentation below), do not use or set up 'Review' rules in Kount 360.
 
 1. Log into your Kount 360 Dashboard -- you must have Owner and/or Admin permissions to access API Keys, ensure you are logging in to the correct account credentials.
 2. If you have multiple Organizations, select the correct organization for your business.
@@ -143,7 +152,9 @@ You will only need to set up webhooks if you plan on using the 'Review' option. 
 
 **Example Setup:**
 
-<Image align="center" src="https://files.readme.io/4bf865c71e1172b9b3fbba08374a5005f55f1458bfbf8b478170bbd2367fc1df-Kount-Webhook-Setup.png" />
+
+<Image src="https://files.readme.io/4bf865c71e1172b9b3fbba08374a5005f55f1458bfbf8b478170bbd2367fc1df-Kount-Webhook-Setup.png" align="center" />
+
 
 # Kount Fraud Checks and Special Behavior
 
@@ -159,7 +170,7 @@ Kount has additional layers of fraud protection in Kount Enterprise. Contact Kou
 
 When using Custom Fields (formerly referred to as UDFs or 'User Defined Fields'), the label was not case-sensitive. In Kount 360, the label you send to Recurly will need to match the label you set in Kount. Example:
 
-* If your Kount Rule is set up with a custom field label of '**Velocity**', then you must send '**Velocity**' to Recurly, and not '**velocity**', '**VeLoCiTy**' or '**VELOCITY**' as the rule will not trigger.
+- If your Kount Rule is set up with a custom field label of '**Velocity**', then you must send '**Velocity**' to Recurly, and not '**velocity**', '**VeLoCiTy**' or '**VELOCITY**' as the rule will not trigger.
 
 ### Enabling Kount Review Webhooks
 
@@ -173,6 +184,6 @@ Kount only supports a single endpoint at this time, so if you are sharing your K
 
 You can configure your Kount site settings in your Fraud Management settings within Recurly. Simply enter a value for the 'Website ID' in configuration, and set up your Review rules to look at that value in Kount.
 
-For a quick guide on best practices when ingesting Review webhooks, see our <Anchor label="integration guide on Ingesting Kount Status Webhooks" target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide">integration guide on Ingesting Kount Status Webhooks</Anchor> and next steps.
+For a quick guide on best practices when ingesting Review webhooks, see our <Anchor target="_blank" href="https://docs.recurly.com/recurly-subscriptions/docs/kount-360-review-webhook-guide">integration guide on Ingesting Kount Status Webhooks</Anchor> and next steps.
 
 <br />
