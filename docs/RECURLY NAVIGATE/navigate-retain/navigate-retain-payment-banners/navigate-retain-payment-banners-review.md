@@ -126,36 +126,45 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section > p { font-size: .97rem; line-height: 1.7; color: var(--darkgray); margin: 0 0 24px; }
 
 /* ── MULTIPLE CHOICE QUIZ — pure CSS, no JS ── */
-.rc-quiz-block { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; overflow: hidden; margin-bottom: 28px; }
-.rc-quiz-header { padding: 18px 22px 16px; border-bottom: 1px solid var(--brightgray); }
-.rc-quiz-num { font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .9px; color: var(--retain); margin-bottom: 6px; }
-.rc-quiz-header p { font-size: .98rem; font-weight: 700; color: var(--offblack); line-height: 1.5; margin: 0; }
-.rc-quiz-options { padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
-.rc-quiz-option { display: flex; align-items: flex-start; gap: 12px; padding: 12px 16px; border-radius: 8px; border: 2px solid var(--lightgray); cursor: pointer; transition: all .18s; }
-.rc-quiz-option:hover { border-color: var(--retain); background: rgba(255,157,136,0.05); }
+.rc-quiz { display: flex; flex-direction: column; gap: 28px; margin: 20px 0 0; }
+.rc-quiz-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 14px; overflow: hidden; }
+.rc-quiz-header { padding: 18px 24px 14px; border-bottom: 1px solid var(--brightgray); }
+.rc-quiz-label { font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .9px; color: var(--yellow); background: var(--offblack); display: inline-block; padding: 3px 8px; border-radius: 5px; margin-bottom: 10px; }
+.rc-quiz-q { font-size: 1rem; font-weight: 800; color: var(--offblack); line-height: 1.4; margin: 0; }
+.rc-quiz-options { padding: 14px 24px 10px; display: flex; flex-direction: column; gap: 7px; }
+.rc-quiz-option { display: flex; align-items: flex-start; gap: 10px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--lightgray); background: #fff; cursor: pointer; transition: all .15s; }
+.rc-quiz-option:hover { background: var(--brightgray); }
 .rc-quiz-option input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
-.rc-radio-dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--lightgray); flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all .18s; margin-top: 2px; }
+.rc-radio-dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--lightgray); flex-shrink: 0; margin-top: 1px; transition: all .15s; background: #fff; }
 /* Selected — any option */
-.rc-quiz-option:has(input[type="radio"]:checked) .rc-radio-dot { border-color: var(--offblack); background: var(--offblack); }
-.rc-quiz-option:has(input[type="radio"]:checked) .rc-radio-dot::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--yellow); }
+.rc-quiz-option:has(input[type="radio"]:checked) .rc-radio-dot { background: var(--offblack); border-color: var(--offblack); box-shadow: inset 0 0 0 4px #fff; }
+.rc-quiz-option:has(input[type="radio"]:checked) { background: rgba(13,13,11,0.04); border-color: var(--darkgray); }
 /* Correct answer when selected */
-.rc-quiz-option.rc-correct:has(input[type="radio"]:checked) { border-color: var(--retain); background: rgba(255,157,136,0.09); }
-.rc-quiz-option.rc-correct:has(input[type="radio"]:checked) .rc-radio-dot { background: var(--retain); border-color: var(--retain); }
-.rc-quiz-option.rc-correct:has(input[type="radio"]:checked) .rc-radio-dot::after { background: var(--offblack); }
+.rc-quiz-option.rc-correct:has(input[type="radio"]:checked) { background: rgba(255,157,136,0.09); border-color: var(--retain); }
+.rc-quiz-option.rc-correct:has(input[type="radio"]:checked) .rc-radio-dot { background: var(--retain); border-color: var(--retain); box-shadow: inset 0 0 0 4px #fff; }
 /* Wrong answer when selected */
-.rc-quiz-option:not(.rc-correct):has(input[type="radio"]:checked) { border-color: var(--orange); background: rgba(255,130,0,0.06); }
-.rc-quiz-option:not(.rc-correct):has(input[type="radio"]:checked) .rc-radio-dot { background: var(--orange); border-color: var(--orange); }
-.rc-option-text { font-size: .9rem; color: var(--darkgray); line-height: 1.5; }
-/* Answer reveal via <details> */
-.rc-quiz-reveal { margin: 0 16px 16px; }
-.rc-quiz-reveal summary { font-size: .8rem; font-weight: 700; color: var(--gray); cursor: pointer; padding: 8px 2px; list-style: none; display: flex; align-items: center; gap: 6px; user-select: none; }
-.rc-quiz-reveal summary::-webkit-details-marker { display: none; }
-.rc-quiz-reveal summary::marker { display: none; }
-.rc-quiz-reveal summary::before { content: '▸'; font-size: .75rem; }
-.rc-quiz-reveal[open] summary::before { content: '▾'; }
-.rc-quiz-reveal[open] summary { color: var(--offblack); }
-.rc-quiz-reveal-body { font-size: .88rem; color: var(--darkgray); line-height: 1.65; padding: 12px 16px; background: var(--brightgray); border-radius: 8px; margin: 4px 0 0; }
-.rc-quiz-reveal-body strong { color: var(--offblack); }
+.rc-quiz-option:not(.rc-correct):has(input[type="radio"]:checked) { background: rgba(255,130,0,0.06); border-color: var(--orange); }
+.rc-quiz-option:not(.rc-correct):has(input[type="radio"]:checked) .rc-radio-dot { background: var(--orange); border-color: var(--orange); box-shadow: inset 0 0 0 4px #fff; }
+.rc-option-text { font-size: .88rem; color: var(--darkgray); line-height: 1.4; flex: 1; }
+/* Answer reveal */
+details.rc-quiz-reveal { margin: 4px 24px 20px; }
+details.rc-quiz-reveal > summary { font-size: .8rem; font-weight: 700; color: var(--gray); cursor: pointer; user-select: none; padding: 8px 0 4px; list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+details.rc-quiz-reveal > summary::-webkit-details-marker { display: none; }
+details.rc-quiz-reveal > summary::marker { display: none; }
+details.rc-quiz-reveal > summary::before { content: "▶"; font-size: .58rem; transition: transform .2s; display: inline-block; }
+details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
+details.rc-quiz-reveal[open] > summary { color: var(--offblack); }
+.rc-quiz-answer { background: var(--brightgray); border-left: 4px solid var(--offblack); border-radius: 0 8px 8px 0; padding: 14px 18px; margin-top: 6px; }
+.rc-quiz-answer p { font-size: .88rem; color: var(--darkgray); line-height: 1.6; margin: 0; }
+.rc-quiz-answer strong { color: var(--offblack); }
+
+/* ── REFLECTION CARD ── */
+.rc-reflect-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-left: 4px solid var(--yellow); border-radius: 14px; padding: 24px 28px; margin-top: 28px; }
+.rc-reflect-label { font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .9px; color: var(--offblack); background: var(--yellow); display: inline-block; padding: 3px 8px; border-radius: 5px; margin-bottom: 12px; }
+.rc-reflect-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 10px; line-height: 1.4; }
+.rc-reflect-card p { font-size: .9rem; color: var(--gray); line-height: 1.6; margin: 0 0 8px; }
+.rc-reflect-card p:last-child { margin-bottom: 0; }
+.rc-reflect-card strong { color: var(--darkgray); }
 
 /* ── ACCENT CARDS ── */
 .rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
@@ -178,19 +187,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 }
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:hover,
 .rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
-/* Completion button — retain colored ── */
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-complete:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-btn-complete {
-  background: #FF9D88; color: #0D0D0B !important; text-decoration: none !important;
-  padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem;
-  display: inline-flex; align-items: center; gap: 8px; transition: all .2s;
-  border: 2px solid #FF9D88 !important; border-bottom: 2px solid #FF9D88 !important;
-}
-.rm-Markdown.markdown-body .rc-guide a.rc-btn-complete:hover,
-.rc-guide a.rc-btn-complete:hover {
-  background: transparent !important; color: #0D0D0B !important;
-  border: 2px solid #FF9D88 !important; border-bottom: 2px solid #FF9D88 !important;
-}
+/* Completion indicator — inert span, no click target, per Component 16 */
+.rc-btn-complete { background: var(--brightgray); color: var(--offblack) !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--yellow); cursor: default; user-select: none; }
 
 /* ── CONTINUE YOUR JOURNEY — rc-next-card ── */
 .rc-next-steps { margin: 40px 0 0; }
@@ -323,51 +321,51 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-circle-question rc-fa-section"></i> Check your understanding</h2>
 
-      <!-- Q1: Multiple choice -->
-      <div class="rc-quiz-block">
-        <div class="rc-quiz-header">
-          <div class="rc-quiz-num">Question 1 of 2 · Multiple choice</div>
-          <p>Your expiring card banner is generating healthy impressions but CTR is stuck below 8%. What's the most likely cause?</p>
-        </div>
-        <div class="rc-quiz-options">
-          <label class="rc-quiz-option">
-            <input type="radio" name="q1">
-            <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">A. The banner is appearing too frequently and subscribers have learned to ignore it</span>
-          </label>
-          <label class="rc-quiz-option rc-correct">
-            <input type="radio" name="q1">
-            <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">B. The message is too generic — it doesn't reference the subscriber's card or expiry date</span>
-          </label>
-          <label class="rc-quiz-option">
-            <input type="radio" name="q1">
-            <div class="rc-option-text" style="margin-left:30px;">C. The banner redirect URL is pointing to the wrong page</span>
-          </label>
-          <label class="rc-quiz-option">
-            <input type="radio" name="q1">
-            <div class="rc-radio-dot"></div>
-            <span class="rc-option-text">D. Account Updater is already recovering these subscribers silently</span>
-          </label>
-        </div>
-        <details class="rc-quiz-reveal">
-          <summary>See explanation</summary>
-          <div class="rc-quiz-reveal-body">
-            <strong>B is correct.</strong> Low CTR on a banner with good impressions is almost always a messaging problem. The banner is visible but not compelling enough to act on. Adding specificity — mentioning the card last four digits and the expiry date — tells the subscriber this is a real alert about their account, not a generic notice. Options A and D would affect whether the banner appears at all, not whether subscribers who see it click through. Option C affects completion rate (drop-off after the click), not CTR.
+      <div class="rc-quiz">
+
+        <!-- Q1: Multiple choice — strategic/action-oriented -->
+        <div class="rc-quiz-card">
+          <div class="rc-quiz-header">
+            <div class="rc-quiz-label">Question 1 of 2 · Multiple choice</div>
+            <p class="rc-quiz-q">Your Recurly Analytics shows 40% of subscriber losses last quarter were involuntary — matching the industry average. You already have dunning emails configured. A colleague argues that matching the benchmark means your recovery setup is performing as expected. What's the most important thing missing from that assessment?</p>
           </div>
-        </details>
+          <div class="rc-quiz-options">
+            <label class="rc-quiz-option">
+              <input type="radio" name="q1">
+              <div class="rc-radio-dot"></div>
+              <span class="rc-option-text">A. Dunning email open rates — if subscribers aren't opening the emails, the benchmark comparison is misleading</span>
+            </label>
+            <label class="rc-quiz-option">
+              <input type="radio" name="q1">
+              <div class="rc-radio-dot"></div>
+              <span class="rc-option-text">B. Whether the 40% is trending up month over month, which would invalidate the benchmark as a baseline</span>
+            </label>
+            <label class="rc-quiz-option rc-correct">
+              <input type="radio" name="q1">
+              <div class="rc-radio-dot"></div>
+              <span class="rc-option-text">C. In-session recovery coverage — the 40% benchmark represents what most businesses achieve without payment banners. Reaching it signals an opportunity, not a ceiling.</span>
+            </label>
+            <label class="rc-quiz-option">
+              <input type="radio" name="q1">
+              <div class="rc-radio-dot"></div>
+              <span class="rc-option-text">D. Competitor pricing data — involuntary churn at the benchmark level may indicate price sensitivity masking as payment failure</span>
+            </label>
+          </div>
+          <details class="rc-quiz-reveal">
+            <summary>Reveal answer</summary>
+            <div class="rc-quiz-answer">
+              <p><strong>C is correct.</strong> The 40% stat describes what merchants typically achieve with dunning emails and Account Updater but without in-session payment banners — it's the industry baseline, not the ceiling. Merchants who add payment banners to their stack reach subscribers in the moment dunning emails can't: when they're actively inside the product. "Matching the average" is the signal to act, not to stop. Option A is a useful diagnostic but doesn't identify the structural gap in the recovery stack. Option B matters for trend analysis, but even a stable 40% represents significant recoverable revenue. Option D misidentifies the cause — involuntary churn is definitionally a payment processing failure, not a pricing issue.</p>
+            </div>
+          </details>
+        </div>
+
       </div>
 
-      <!-- Q2: Reflection -->
-      <div class="rc-accent-card rc-accent-retain">
-        <h4><i class="fa-solid fa-pen-to-square" style="margin-right:8px;color:var(--retain);"></i>Question 2 of 2 · Reflection</h4>
-        <p>Look at your dunning email open rate. The gap between that number and 100% represents subscribers your dunning messages are not reaching in the moment that matters — and that gap is your payment banner opportunity.</p>
-        <p>Given what you've learned in this course, which banner scenario would you deploy first for your subscriber base, and what would the message say?</p>
-        <ul>
-          <li><strong>Consider:</strong> where do the majority of your involuntary churned subscribers fail — expiring cards, failed payments, or annual renewals?</li>
-          <li><strong>Consider:</strong> do your subscribers primarily use your app, or a Recurly-hosted subscriber portal? That answer shapes your implementation path.</li>
-          <li><strong>Consider:</strong> what's the one piece of information — card last four, renewal date, amount due — that would make your banner feel specific rather than generic?</li>
-        </ul>
+      <!-- Q2: Reflection card -->
+      <div class="rc-reflect-card">
+        <div class="rc-reflect-label">Question 2 of 2 · Reflection</div>
+        <h4>Look at your dunning email open rate. The gap between that number and 100% is your payment banner opportunity — those are subscribers your recovery emails are missing in the moment. Given what you've learned in this course, which scenario would you deploy first, and what would your first banner say?</h4>
+        <p>Start with the trigger that has the most subscribers — whether that's an expiring card pool, an active failed-payment cohort, or an upcoming annual renewal. Then ask: do your subscribers primarily live inside your own app, or in a Recurly-hosted subscriber portal? <strong>That single question determines whether webhooks or Recurly Engage is the faster path to live.</strong> From there, write one sentence of banner copy — specific enough to name the card, the date, or the amount — and you'll have your starting point.</p>
       </div>
     </div>
 
@@ -375,7 +373,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-btn-prev">← Tracking your impact</a>
       <span class="rc-lp-nav-indicator">7 of 7 · Payment banners</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-btn-complete">Back to Retain →</a>
+      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Course complete!</span>
     </div>
 
     <!-- Continue your journey -->
