@@ -79,102 +79,72 @@ Generate your private API key in the Recurly Admin Dashboard under **Integration
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Security note</strong>Never embed your private API key in client-side code, mobile apps, or version control. Use environment variables or a secrets manager such as AWS Secrets Manager, HashiCorp Vault, or GCP Secret Manager in production.</div>
 </div>
 
-<Tabs>
-  <Tab title="curl">
-  ```bash
-  # Replace YOUR_SITE_ID with your Recurly site ID
-  # Pass the API key as the Basic Auth username; leave the password empty
-  curl -u YOUR_PRIVATE_API_KEY: \
-    https://v3.recurly.com/sites/YOUR_SITE_ID/accounts
-  ```
-  </Tab>
-  <Tab title="Ruby">
-  ```ruby
-  require 'recurly'
+```bash curl
+# Replace YOUR_SITE_ID with your Recurly site ID
+# Pass the API key as the Basic Auth username; leave the password empty
+curl -u YOUR_PRIVATE_API_KEY: \
+  https://v3.recurly.com/sites/YOUR_SITE_ID/accounts
+```
+```ruby Ruby
+require 'recurly'
 
-  # Initialize once; reuse the client instance for every API call
-  client = Recurly::Client.new(api_key: ENV['RECURLY_PRIVATE_KEY'])
-  ```
-  </Tab>
-  <Tab title="Node.js">
-  ```javascript
-  import { Client } from '@recurly/recurly-client'
+# Initialize once; reuse the client instance for every API call
+client = Recurly::Client.new(api_key: ENV['RECURLY_PRIVATE_KEY'])
+```
+```javascript Node.js
+import { Client } from '@recurly/recurly-client'
 
-  // Initialize once at application startup
-  const client = new Client(process.env.RECURLY_PRIVATE_KEY)
-  ```
-  </Tab>
-  <Tab title="Python">
-  ```python
-  import recurly
+// Initialize once at application startup
+const client = new Client(process.env.RECURLY_PRIVATE_KEY)
+```
+```python Python
+import recurly
 
-  # Initialize once; the client is thread-safe
-  client = recurly.Client(api_key=os.environ['RECURLY_PRIVATE_KEY'])
-  ```
-  </Tab>
-  <Tab title="Java">
-  ```java
-  import com.recurly.v3.Client;
+# Initialize once; the client is thread-safe
+client = recurly.Client(api_key=os.environ['RECURLY_PRIVATE_KEY'])
+```
+```java Java
+import com.recurly.v3.Client;
 
-  // Initialize with your private key; store as a singleton
-  Client client = new Client(System.getenv("RECURLY_PRIVATE_KEY"));
-  ```
-  </Tab>
-  <Tab title="C#">
-  ```csharp
-  using Recurly;
+// Initialize with your private key; store as a singleton
+Client client = new Client(System.getenv("RECURLY_PRIVATE_KEY"));
+```
+```csharp C#
+using Recurly;
 
-  // Initialize once; Client is thread-safe
-  var client = new Client(Environment.GetEnvironmentVariable("RECURLY_PRIVATE_KEY"));
-  ```
-  </Tab>
-  <Tab title="PHP">
-  ```php
-  $client = new \Recurly\Client(getenv('RECURLY_PRIVATE_KEY'));
-  ```
-  </Tab>
-</Tabs>
+// Initialize once; Client is thread-safe
+var client = new Client(Environment.GetEnvironmentVariable("RECURLY_PRIVATE_KEY"));
+```
+```php PHP
+$client = new \Recurly\Client(getenv('RECURLY_PRIVATE_KEY'));
+```
 
 ## Install the SDK
 
 Install the Recurly SDK for your language using its standard package manager.
 
-<Tabs>
-  <Tab title="Ruby">
-  ```bash
-  gem install recurly
-  ```
-  </Tab>
-  <Tab title="Node.js">
-  ```bash
-  npm install @recurly/recurly-client
-  ```
-  </Tab>
-  <Tab title="Python">
-  ```bash
-  pip install recurly
-  ```
-  </Tab>
-  <Tab title="Java">
-  ```xml
-  <dependency>
-    <groupId>com.recurly.v3</groupId>
-    <artifactId>api-client</artifactId>
-    <version>4.0.0</version>
-  </dependency>
-  ```
-  </Tab>
-  <Tab title="C#">
-  ```bash
-  dotnet add package Recurly
-  ```
-  </Tab>
-  <Tab title="PHP">
-  ```bash
-  composer require recurly/recurly-client
-  ```
-  </Tab>
-</Tabs>
+```bash Ruby
+gem install recurly
+```
+```bash Node.js
+npm install @recurly/recurly-client
+```
+```bash Python
+pip install recurly
+```
+```xml Java
+<dependency>
+  <groupId>com.recurly.v3</groupId>
+  <artifactId>api-client</artifactId>
+  <version>4.0.0</version>
+</dependency>
+```
+```bash C#
+dotnet add package Recurly
+```
+```bash PHP
+composer require recurly/recurly-client
+```
 
 ## Create an account
 
@@ -185,97 +155,81 @@ Install the Recurly SDK for your language using its standard package manager.
   </div>
 </div>
 
-<Tabs>
-  <Tab title="curl">
-  ```bash
-  curl -u YOUR_PRIVATE_API_KEY: \
-    -H "Content-Type: application/json" \
-    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts \
-    -d '{
-      "code": "acct-jane-smith-001",
-      "first_name": "Jane",
-      "last_name": "Smith",
-      "email": "jane.smith@example.com"
-    }'
-  ```
-  </Tab>
-  <Tab title="Ruby">
-  ```ruby
-  account = client.create_account(
-    body: {
-      code: 'acct-jane-smith-001',
-      first_name: 'Jane',
-      last_name: 'Smith',
-      email: 'jane.smith@example.com'
-    }
-  )
-
-  puts account.id # => "abc123def456"
-  ```
-  </Tab>
-  <Tab title="Node.js">
-  ```javascript
-  const account = await client.createAccount({
+```bash curl
+curl -u YOUR_PRIVATE_API_KEY: \
+  -H "Content-Type: application/json" \
+  -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts \
+  -d '{
+    "code": "acct-jane-smith-001",
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane.smith@example.com"
+  }'
+```
+```ruby Ruby
+account = client.create_account(
+  body: {
     code: 'acct-jane-smith-001',
-    firstName: 'Jane',
-    lastName: 'Smith',
+    first_name: 'Jane',
+    last_name: 'Smith',
     email: 'jane.smith@example.com'
-  })
+  }
+)
 
-  console.log(account.id) // => "abc123def456"
-  ```
-  </Tab>
-  <Tab title="Python">
-  ```python
-  account = client.create_account(body={
-      'code': 'acct-jane-smith-001',
-      'first_name': 'Jane',
-      'last_name': 'Smith',
-      'email': 'jane.smith@example.com'
-  })
+puts account.id # => "abc123def456"
+```
+```javascript Node.js
+const account = await client.createAccount({
+  code: 'acct-jane-smith-001',
+  firstName: 'Jane',
+  lastName: 'Smith',
+  email: 'jane.smith@example.com'
+})
 
-  print(account.id)  # => "abc123def456"
-  ```
-  </Tab>
-  <Tab title="Java">
-  ```java
-  AccountCreate body = new AccountCreate();
-  body.setCode("acct-jane-smith-001");
-  body.setFirstName("Jane");
-  body.setLastName("Smith");
-  body.setEmail("jane.smith@example.com");
+console.log(account.id) // => "abc123def456"
+```
+```python Python
+account = client.create_account(body={
+    'code': 'acct-jane-smith-001',
+    'first_name': 'Jane',
+    'last_name': 'Smith',
+    'email': 'jane.smith@example.com'
+})
 
-  Account account = client.createAccount(body);
-  System.out.println(account.getId()); // => "abc123def456"
-  ```
-  </Tab>
-  <Tab title="C#">
-  ```csharp
-  var accountCreate = new AccountCreate
-  {
-      Code = "acct-jane-smith-001",
-      FirstName = "Jane",
-      LastName = "Smith",
-      Email = "jane.smith@example.com"
-  };
+print(account.id)  # => "abc123def456"
+```
+```java Java
+AccountCreate body = new AccountCreate();
+body.setCode("acct-jane-smith-001");
+body.setFirstName("Jane");
+body.setLastName("Smith");
+body.setEmail("jane.smith@example.com");
 
-  var account = client.CreateAccount(accountCreate);
-  Console.WriteLine(account.Id); // => "abc123def456"
-  ```
-  </Tab>
-  <Tab title="PHP">
-  ```php
-  $account = $client->createAccount([
-      'code' => 'acct-jane-smith-001',
-      'first_name' => 'Jane',
-      'last_name' => 'Smith',
-      'email' => 'jane.smith@example.com'
-  ]);
+Account account = client.createAccount(body);
+System.out.println(account.getId()); // => "abc123def456"
+```
+```csharp C#
+var accountCreate = new AccountCreate
+{
+    Code = "acct-jane-smith-001",
+    FirstName = "Jane",
+    LastName = "Smith",
+    Email = "jane.smith@example.com"
+};
 
-  echo $account->getId(); // => "abc123def456"
-  ```
-  </Tab>
-</Tabs>
+var account = client.CreateAccount(accountCreate);
+Console.WriteLine(account.Id); // => "abc123def456"
+```
+```php PHP
+$account = $client->createAccount([
+    'code' => 'acct-jane-smith-001',
+    'first_name' => 'Jane',
+    'last_name' => 'Smith',
+    'email' => 'jane.smith@example.com'
+]);
+
+echo $account->getId(); // => "abc123def456"
+```
 
 ```json
 // Response (truncated — key fields shown)
@@ -309,75 +263,59 @@ Install the Recurly SDK for your language using its standard package manager.
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Important</strong>Billing tokens expire after 20 minutes. Complete the account billing info update immediately after your frontend generates the token. If the token expires, the customer must re-enter their card details.</div>
 </div>
 
-<Tabs>
-  <Tab title="curl">
-  ```bash
-  curl -u YOUR_PRIVATE_API_KEY: \
-    -H "Content-Type: application/json" \
-    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts/YOUR_ACCOUNT_CODE/billing_info \
-    -d '{
-      "token_id": "tok_abc123xyz789"
-    }'
-  ```
-  </Tab>
-  <Tab title="Ruby">
-  ```ruby
-  billing_info = client.create_billing_info(
-    account_id: 'acct-jane-smith-001',
-    body: { token_id: 'tok_abc123xyz789' }
-  )
+```bash curl
+curl -u YOUR_PRIVATE_API_KEY: \
+  -H "Content-Type: application/json" \
+  -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/accounts/YOUR_ACCOUNT_CODE/billing_info \
+  -d '{
+    "token_id": "tok_abc123xyz789"
+  }'
+```
+```ruby Ruby
+billing_info = client.create_billing_info(
+  account_id: 'acct-jane-smith-001',
+  body: { token_id: 'tok_abc123xyz789' }
+)
 
-  puts billing_info.card_type    # => "Visa"
-  puts billing_info.last_four    # => "1111"
-  ```
-  </Tab>
-  <Tab title="Node.js">
-  ```javascript
-  const billingInfo = await client.createBillingInfo('acct-jane-smith-001', {
-    tokenId: 'tok_abc123xyz789'
-  })
+puts billing_info.card_type    # => "Visa"
+puts billing_info.last_four    # => "1111"
+```
+```javascript Node.js
+const billingInfo = await client.createBillingInfo('acct-jane-smith-001', {
+  tokenId: 'tok_abc123xyz789'
+})
 
-  console.log(billingInfo.cardType) // => "Visa"
-  console.log(billingInfo.lastFour) // => "1111"
-  ```
-  </Tab>
-  <Tab title="Python">
-  ```python
-  billing_info = client.create_billing_info(
-      account_id='acct-jane-smith-001',
-      body={'token_id': 'tok_abc123xyz789'}
-  )
+console.log(billingInfo.cardType) // => "Visa"
+console.log(billingInfo.lastFour) // => "1111"
+```
+```python Python
+billing_info = client.create_billing_info(
+    account_id='acct-jane-smith-001',
+    body={'token_id': 'tok_abc123xyz789'}
+)
 
-  print(billing_info.card_type)  # => "Visa"
-  print(billing_info.last_four)  # => "1111"
-  ```
-  </Tab>
-  <Tab title="Java">
-  ```java
-  BillingInfoCreate body = new BillingInfoCreate();
-  body.setTokenId("tok_abc123xyz789");
+print(billing_info.card_type)  # => "Visa"
+print(billing_info.last_four)  # => "1111"
+```
+```java Java
+BillingInfoCreate body = new BillingInfoCreate();
+body.setTokenId("tok_abc123xyz789");
 
-  BillingInfo billingInfo = client.createBillingInfo("acct-jane-smith-001", body);
-  System.out.println(billingInfo.getCardType()); // => "Visa"
-  ```
-  </Tab>
-  <Tab title="C#">
-  ```csharp
-  var billingInfoCreate = new BillingInfoCreate { TokenId = "tok_abc123xyz789" };
-  var billingInfo = client.CreateBillingInfo("acct-jane-smith-001", billingInfoCreate);
-  Console.WriteLine(billingInfo.CardType); // => "Visa"
-  ```
-  </Tab>
-  <Tab title="PHP">
-  ```php
-  $billingInfo = $client->createBillingInfo('acct-jane-smith-001', [
-      'token_id' => 'tok_abc123xyz789'
-  ]);
+BillingInfo billingInfo = client.createBillingInfo("acct-jane-smith-001", body);
+System.out.println(billingInfo.getCardType()); // => "Visa"
+```
+```csharp C#
+var billingInfoCreate = new BillingInfoCreate { TokenId = "tok_abc123xyz789" };
+var billingInfo = client.CreateBillingInfo("acct-jane-smith-001", billingInfoCreate);
+Console.WriteLine(billingInfo.CardType); // => "Visa"
+```
+```php PHP
+$billingInfo = $client->createBillingInfo('acct-jane-smith-001', [
+    'token_id' => 'tok_abc123xyz789'
+]);
 
-  echo $billingInfo->getCardType(); // => "Visa"
-  ```
-  </Tab>
-</Tabs>
+echo $billingInfo->getCardType(); // => "Visa"
+```
 
 ```json
 // Response (truncated — key fields shown)
@@ -402,99 +340,83 @@ Install the Recurly SDK for your language using its standard package manager.
   </div>
 </div>
 
-<Tabs>
-  <Tab title="curl">
-  ```bash
-  curl -u YOUR_PRIVATE_API_KEY: \
-    -H "Content-Type: application/json" \
-    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions \
-    -d '{
-      "plan_code": "plan-pro-monthly",
-      "account": {
-        "code": "acct-jane-smith-001"
-      },
-      "currency": "USD"
-    }'
-  ```
-  </Tab>
-  <Tab title="Ruby">
-  ```ruby
-  subscription = client.create_subscription(
-    body: {
-      plan_code: 'plan-pro-monthly',
-      account: { code: 'acct-jane-smith-001' },
-      currency: 'USD'
-    }
-  )
-
-  puts subscription.uuid  # => "sub_xyz789abc123"
-  puts subscription.state # => "active"
-  ```
-  </Tab>
-  <Tab title="Node.js">
-  ```javascript
-  const subscription = await client.createSubscription({
-    planCode: 'plan-pro-monthly',
+```bash curl
+curl -u YOUR_PRIVATE_API_KEY: \
+  -H "Content-Type: application/json" \
+  -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions \
+  -d '{
+    "plan_code": "plan-pro-monthly",
+    "account": {
+      "code": "acct-jane-smith-001"
+    },
+    "currency": "USD"
+  }'
+```
+```ruby Ruby
+subscription = client.create_subscription(
+  body: {
+    plan_code: 'plan-pro-monthly',
     account: { code: 'acct-jane-smith-001' },
     currency: 'USD'
-  })
+  }
+)
 
-  console.log(subscription.uuid)  // => "sub_xyz789abc123"
-  console.log(subscription.state) // => "active"
-  ```
-  </Tab>
-  <Tab title="Python">
-  ```python
-  subscription = client.create_subscription(body={
-      'plan_code': 'plan-pro-monthly',
-      'account': {'code': 'acct-jane-smith-001'},
-      'currency': 'USD'
-  })
+puts subscription.uuid  # => "sub_xyz789abc123"
+puts subscription.state # => "active"
+```
+```javascript Node.js
+const subscription = await client.createSubscription({
+  planCode: 'plan-pro-monthly',
+  account: { code: 'acct-jane-smith-001' },
+  currency: 'USD'
+})
 
-  print(subscription.uuid)   # => "sub_xyz789abc123"
-  print(subscription.state)  # => "active"
-  ```
-  </Tab>
-  <Tab title="Java">
-  ```java
-  SubscriptionCreate body = new SubscriptionCreate();
-  body.setPlanCode("plan-pro-monthly");
-  body.setCurrency("USD");
+console.log(subscription.uuid)  // => "sub_xyz789abc123"
+console.log(subscription.state) // => "active"
+```
+```python Python
+subscription = client.create_subscription(body={
+    'plan_code': 'plan-pro-monthly',
+    'account': {'code': 'acct-jane-smith-001'},
+    'currency': 'USD'
+})
 
-  AccountCreate account = new AccountCreate();
-  account.setCode("acct-jane-smith-001");
-  body.setAccount(account);
+print(subscription.uuid)   # => "sub_xyz789abc123"
+print(subscription.state)  # => "active"
+```
+```java Java
+SubscriptionCreate body = new SubscriptionCreate();
+body.setPlanCode("plan-pro-monthly");
+body.setCurrency("USD");
 
-  Subscription subscription = client.createSubscription(body);
-  System.out.println(subscription.getUuid()); // => "sub_xyz789abc123"
-  ```
-  </Tab>
-  <Tab title="C#">
-  ```csharp
-  var subscriptionCreate = new SubscriptionCreate
-  {
-      PlanCode = "plan-pro-monthly",
-      Currency = "USD",
-      Account = new AccountCreate { Code = "acct-jane-smith-001" }
-  };
+AccountCreate account = new AccountCreate();
+account.setCode("acct-jane-smith-001");
+body.setAccount(account);
 
-  var subscription = client.CreateSubscription(subscriptionCreate);
-  Console.WriteLine(subscription.Uuid); // => "sub_xyz789abc123"
-  ```
-  </Tab>
-  <Tab title="PHP">
-  ```php
-  $subscription = $client->createSubscription([
-      'plan_code' => 'plan-pro-monthly',
-      'account' => ['code' => 'acct-jane-smith-001'],
-      'currency' => 'USD'
-  ]);
+Subscription subscription = client.createSubscription(body);
+System.out.println(subscription.getUuid()); // => "sub_xyz789abc123"
+```
+```csharp C#
+var subscriptionCreate = new SubscriptionCreate
+{
+    PlanCode = "plan-pro-monthly",
+    Currency = "USD",
+    Account = new AccountCreate { Code = "acct-jane-smith-001" }
+};
 
-  echo $subscription->getUuid();  // => "sub_xyz789abc123"
-  echo $subscription->getState(); // => "active"
-  ```
-  </Tab>
-</Tabs>
+var subscription = client.CreateSubscription(subscriptionCreate);
+Console.WriteLine(subscription.Uuid); // => "sub_xyz789abc123"
+```
+```php PHP
+$subscription = $client->createSubscription([
+    'plan_code' => 'plan-pro-monthly',
+    'account' => ['code' => 'acct-jane-smith-001'],
+    'currency' => 'USD'
+]);
+
+echo $subscription->getUuid();  // => "sub_xyz789abc123"
+echo $subscription->getState(); // => "active"
+```
 
 ```json
 // Response (truncated — key fields shown)
@@ -532,87 +454,71 @@ Install the Recurly SDK for your language using its standard package manager.
   <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong>Setting <code>timeframe: now</code> immediately charges the prorated difference to the card on file. Confirm this is the intended behavior before using it in production — it cannot be undone without issuing a manual credit.</div>
 </div>
 
-<Tabs>
-  <Tab title="curl">
-  ```bash
-  curl -u YOUR_PRIVATE_API_KEY: \
-    -H "Content-Type: application/json" \
-    -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID/change \
-    -d '{
-      "plan_code": "plan-enterprise-monthly",
-      "timeframe": "now"
-    }'
-  ```
-  </Tab>
-  <Tab title="Ruby">
-  ```ruby
-  change = client.create_subscription_change(
-    subscription_id: 'sub_xyz789abc123',
-    body: {
-      plan_code: 'plan-enterprise-monthly',
-      timeframe: 'now'
-    }
-  )
-
-  puts change.plan.code # => "plan-enterprise-monthly"
-  ```
-  </Tab>
-  <Tab title="Node.js">
-  ```javascript
-  const change = await client.createSubscriptionChange('sub_xyz789abc123', {
-    planCode: 'plan-enterprise-monthly',
+```bash curl
+curl -u YOUR_PRIVATE_API_KEY: \
+  -H "Content-Type: application/json" \
+  -X POST https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID/change \
+  -d '{
+    "plan_code": "plan-enterprise-monthly",
+    "timeframe": "now"
+  }'
+```
+```ruby Ruby
+change = client.create_subscription_change(
+  subscription_id: 'sub_xyz789abc123',
+  body: {
+    plan_code: 'plan-enterprise-monthly',
     timeframe: 'now'
-  })
+  }
+)
 
-  console.log(change.plan.code) // => "plan-enterprise-monthly"
-  ```
-  </Tab>
-  <Tab title="Python">
-  ```python
-  change = client.create_subscription_change(
-      subscription_id='sub_xyz789abc123',
-      body={
-          'plan_code': 'plan-enterprise-monthly',
-          'timeframe': 'now'
-      }
-  )
+puts change.plan.code # => "plan-enterprise-monthly"
+```
+```javascript Node.js
+const change = await client.createSubscriptionChange('sub_xyz789abc123', {
+  planCode: 'plan-enterprise-monthly',
+  timeframe: 'now'
+})
 
-  print(change.plan.code)  # => "plan-enterprise-monthly"
-  ```
-  </Tab>
-  <Tab title="Java">
-  ```java
-  SubscriptionChangeCreate body = new SubscriptionChangeCreate();
-  body.setPlanCode("plan-enterprise-monthly");
-  body.setTimeframe(SubscriptionChangeCreate.Timeframe.NOW);
+console.log(change.plan.code) // => "plan-enterprise-monthly"
+```
+```python Python
+change = client.create_subscription_change(
+    subscription_id='sub_xyz789abc123',
+    body={
+        'plan_code': 'plan-enterprise-monthly',
+        'timeframe': 'now'
+    }
+)
 
-  SubscriptionChange change = client.createSubscriptionChange("sub_xyz789abc123", body);
-  System.out.println(change.getPlan().getCode());
-  ```
-  </Tab>
-  <Tab title="C#">
-  ```csharp
-  var changeCreate = new SubscriptionChangeCreate
-  {
-      PlanCode = "plan-enterprise-monthly",
-      Timeframe = SubscriptionChangeCreate.TimeframeEnum.Now
-  };
+print(change.plan.code)  # => "plan-enterprise-monthly"
+```
+```java Java
+SubscriptionChangeCreate body = new SubscriptionChangeCreate();
+body.setPlanCode("plan-enterprise-monthly");
+body.setTimeframe(SubscriptionChangeCreate.Timeframe.NOW);
 
-  var change = client.CreateSubscriptionChange("sub_xyz789abc123", changeCreate);
-  Console.WriteLine(change.Plan.Code);
-  ```
-  </Tab>
-  <Tab title="PHP">
-  ```php
-  $change = $client->createSubscriptionChange('sub_xyz789abc123', [
-      'plan_code' => 'plan-enterprise-monthly',
-      'timeframe' => 'now'
-  ]);
+SubscriptionChange change = client.createSubscriptionChange("sub_xyz789abc123", body);
+System.out.println(change.getPlan().getCode());
+```
+```csharp C#
+var changeCreate = new SubscriptionChangeCreate
+{
+    PlanCode = "plan-enterprise-monthly",
+    Timeframe = SubscriptionChangeCreate.TimeframeEnum.Now
+};
 
-  echo $change->getPlan()->getCode();
-  ```
-  </Tab>
-</Tabs>
+var change = client.CreateSubscriptionChange("sub_xyz789abc123", changeCreate);
+Console.WriteLine(change.Plan.Code);
+```
+```php PHP
+$change = $client->createSubscriptionChange('sub_xyz789abc123', [
+    'plan_code' => 'plan-enterprise-monthly',
+    'timeframe' => 'now'
+]);
+
+echo $change->getPlan()->getCode();
+```
 
 ```json
 // Response (truncated — key fields shown)
@@ -638,53 +544,37 @@ Install the Recurly SDK for your language using its standard package manager.
   </div>
 </div>
 
-<Tabs>
-  <Tab title="curl">
-  ```bash
-  curl -u YOUR_PRIVATE_API_KEY: \
-    -X DELETE https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID
-  ```
-  </Tab>
-  <Tab title="Ruby">
-  ```ruby
-  subscription = client.cancel_subscription('sub_xyz789abc123')
+```bash curl
+curl -u YOUR_PRIVATE_API_KEY: \
+  -X DELETE https://v3.recurly.com/sites/YOUR_SITE_ID/subscriptions/YOUR_SUBSCRIPTION_ID
+```
+```ruby Ruby
+subscription = client.cancel_subscription('sub_xyz789abc123')
 
-  puts subscription.state # => "canceled"
-  ```
-  </Tab>
-  <Tab title="Node.js">
-  ```javascript
-  const subscription = await client.cancelSubscription('sub_xyz789abc123')
+puts subscription.state # => "canceled"
+```
+```javascript Node.js
+const subscription = await client.cancelSubscription('sub_xyz789abc123')
 
-  console.log(subscription.state) // => "canceled"
-  ```
-  </Tab>
-  <Tab title="Python">
-  ```python
-  subscription = client.cancel_subscription('sub_xyz789abc123')
+console.log(subscription.state) // => "canceled"
+```
+```python Python
+subscription = client.cancel_subscription('sub_xyz789abc123')
 
-  print(subscription.state)  # => "canceled"
-  ```
-  </Tab>
-  <Tab title="Java">
-  ```java
-  Subscription subscription = client.cancelSubscription("sub_xyz789abc123");
-  System.out.println(subscription.getState()); // => "canceled"
-  ```
-  </Tab>
-  <Tab title="C#">
-  ```csharp
-  var subscription = client.CancelSubscription("sub_xyz789abc123");
-  Console.WriteLine(subscription.State); // => "canceled"
-  ```
-  </Tab>
-  <Tab title="PHP">
-  ```php
-  $subscription = $client->cancelSubscription('sub_xyz789abc123');
-  echo $subscription->getState(); // => "canceled"
-  ```
-  </Tab>
-</Tabs>
+print(subscription.state)  # => "canceled"
+```
+```java Java
+Subscription subscription = client.cancelSubscription("sub_xyz789abc123");
+System.out.println(subscription.getState()); // => "canceled"
+```
+```csharp C#
+var subscription = client.CancelSubscription("sub_xyz789abc123");
+Console.WriteLine(subscription.State); // => "canceled"
+```
+```php PHP
+$subscription = $client->cancelSubscription('sub_xyz789abc123');
+echo $subscription->getState(); // => "canceled"
+```
 
 ```json
 // Response (truncated — key fields shown)
