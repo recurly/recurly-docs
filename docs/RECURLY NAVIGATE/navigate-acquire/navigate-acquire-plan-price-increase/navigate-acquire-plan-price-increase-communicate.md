@@ -267,11 +267,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           Overview
         </a>
  
-	<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-wh y" class="rc-sticky-link">
+	<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-sticky-link">
           <span class="rc-step-badge">1</span> Why increase prices?
         </a>
     	
-	<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-sticky-link">
+	<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link">
           <span class="rc-step-badge">2</span> Things to consider
         </a>
   
