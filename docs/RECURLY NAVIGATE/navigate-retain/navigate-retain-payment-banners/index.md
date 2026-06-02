@@ -365,7 +365,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-feature-icon"><i class="fa-regular fa-envelope"></i></div>
           <h4>Dunning emails</h4>
           <p>Sent after a payment fails. Reaches subscribers who check their email — but average billing email open rates are well below 50%, meaning more than half of at-risk subscribers may never see your message.</p>
-          <span class="rc-feature-tag-outline">Reactive</span>
+          <span class="rc-feature-tag">Reactive</span>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-bell"></i></div>
