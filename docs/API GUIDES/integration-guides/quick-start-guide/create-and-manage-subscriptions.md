@@ -9,6 +9,11 @@ hidden: true
 metadata:
   robots: index
 ---
+Title: Integrate subscriptions with the Recurly API
+Metadata description: Learn how to authenticate, create accounts, start subscriptions, handle billing changes, and respond to lifecycle events using Recurly's API v3.
+
+---PASTE INTO EDITOR BELOW---
+
 <div class="rp-page">
   <div class="rp-overview">This guide walks you through building a complete subscription integration with Recurly's API v3 — from authenticating your first request to managing the full subscription lifecycle. By the end, you'll have working code that creates accounts, assigns plans, starts subscriptions, handles billing changes, and responds to lifecycle events via webhooks.</div>
   <div class="rp-cost">
@@ -29,7 +34,6 @@ metadata:
 ### Supported SDKs
 
 <div class="rp-sdk-grid">
-
 <Cards>
   <Card title="Ruby" href="https://github.com/recurly/recurly-client-ruby" target="_blank"></Card>
   <Card title="Node.js" href="https://github.com/recurly/recurly-client-node" target="_blank"></Card>
@@ -38,14 +42,13 @@ metadata:
   <Card title="C#" href="https://github.com/recurly/recurly-client-dotnet" target="_blank"></Card>
   <Card title="PHP" href="https://github.com/recurly/recurly-client-php" target="_blank"></Card>
 </Cards>
-
 </div>
 
 ### Prerequisites
 
 <ul class="rp-list">
   <li>A Recurly account with API access enabled</li>
-  <li>A private API key from <strong>Integrations > API Keys</strong> in the Recurly Admin Dashboard</li>
+  <li>A private API key from <strong>Integrations &gt; API Keys</strong> in the Recurly Admin Dashboard</li>
   <li>Your Recurly site ID, visible in the Admin Dashboard URL: <code>app.recurly.com/a/your-site-id</code></li>
   <li>One of the supported runtimes: Ruby 2.7+, Node.js 18+, Python 3.8+, Java 11+, .NET 6+, or PHP 8.0+</li>
 </ul>
@@ -797,7 +800,7 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
   </div>
   <div class="rp-step">
     <div class="rp-step-num">3</div>
-    <div><h4>Verify webhook delivery</h4><p>In the Dashboard, go to Integrations > Webhooks > Webhook logs. Confirm that <code>new_subscription_notification</code> was sent to your endpoint and received a <code>2xx</code> response. If it shows failed, check your endpoint logs for the received payload.</p></div>
+    <div><h4>Verify webhook delivery</h4><p>In the Dashboard, go to Integrations &gt; Webhooks &gt; Webhook logs. Confirm that <code>new_subscription_notification</code> was sent to your endpoint and received a <code>2xx</code> response. If it shows failed, check your endpoint logs for the received payload.</p></div>
   </div>
   <div class="rp-step">
     <div class="rp-step-num">4</div>
@@ -812,5 +815,3 @@ Use `01` for the expiry month, any future year, and any three-digit CVV for all 
 - <a href="/docs/webhooks" target="_blank">Webhooks</a> — Full reference for every webhook event type, payload schemas, signature verification, and retry behavior.
 - <a href="/docs/dunning" target="_blank">Dunning and payment recovery</a> — Configure automated retry schedules and customer communications for failed payments.
 - <a href="/docs/add-ons" target="_blank">Add-ons and usage billing</a> — Charge for seats, usage, or optional features on top of a base subscription price.
-
-<br />
