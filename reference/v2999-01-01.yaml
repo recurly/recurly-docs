@@ -11243,6 +11243,7 @@ components:
             - forever
             - single_use
             - temporal
+            - billing_periods
         temporal_amount:
           type: integer
           title: Temporal amount
@@ -11511,6 +11512,7 @@ components:
                 - forever
                 - single_use
                 - temporal
+                - billing_periods
             temporal_amount:
               type: integer
               title: Temporal amount
@@ -11759,6 +11761,9 @@ components:
           enum:
             - active
             - inactive
+        remaining_duration:
+          readOnly: true
+          $ref: '#/components/schemas/CouponRedemptionRemainingDuration'
         currency:
           type: string
           title: Currency
@@ -11788,6 +11793,38 @@ components:
             The date and time the redemption was removed from the account
             (un-redeemed).
           format: date-time
+    CouponRedemptionRemainingDuration:
+      type: object
+      properties:
+        type:
+          type: string
+          title: Duration Type
+          description: >-
+            The coupon's duration type. `temporal` includes an `expires_at`
+            timestamp. `billing_periods` includes a `redemptions_remaining`
+            count of billing cycles. `forever` and `single_use` have no
+            additional fields.
+          readOnly: true
+          enum:
+            - forever
+            - single_use
+            - temporal
+            - billing_periods
+        expires_at:
+          type: string
+          title: Expires at
+          format: date-time
+          description: >-
+            Present when `type` is `temporal`. The datetime after which this
+            redemption will no longer apply.
+          readOnly: true
+        redemptions_remaining:
+          type: integer
+          title: Redemptions Remaining
+          description: >-
+            The number of redemption periods remaining for which this coupon
+            will still apply.
+          readOnly: true
     CouponRedemptionCreate:
       type: object
       properties:
@@ -11832,11 +11869,14 @@ components:
         coupon:
           $ref: '#/components/schemas/CouponMini'
         state:
-          title: Invoice state
+          title: Coupon Redemption state
           type: string
           enum:
             - active
             - inactive
+        remaining_duration:
+          readOnly: true
+          $ref: '#/components/schemas/CouponRedemptionRemainingDuration'
         discounted:
           type: number
           format: float
