@@ -13,18 +13,17 @@ metadata:
 
 ## Prerequisites and limitations
 
-* **Site configuration:** The plans, add-ons, coupons, gift cards, and taxes referenced in your checkout must exist—and be active—on the Recurly site whose public key you’re using.
-* **Currency:** All items in a single `CheckoutPricing` instance must share the same currency code. Change the currency via the `data-recurly="currency"` input or the API before adding items.
-* **One-way DOM binding:** If you call the JavaScript API methods on a pricing instance that’s already `attach`-ed to DOM elements, those input/output elements will **not** auto-update; use API-only mode or re-render values yourself.
+- **Site configuration:** The plans, add-ons, coupons, gift cards, and taxes referenced in your checkout must exist—and be active—on the Recurly site whose public key you’re using.
+- **Currency:** All items in a single `CheckoutPricing` instance must share the same currency code. Change the currency via the `data-recurly="currency"` input or the API before adding items.
+- **One-way DOM binding:** If you call the JavaScript API methods on a pricing instance that’s already `attach`-ed to DOM elements, those input/output elements will **not** auto-update; use API-only mode or re-render values yourself.
+- **PayPal Complete enhancements:&#x20;**&#x54;he plans references in your checkout will be presented to PayPal customers when signing up for subscriptions. See PayPal Complete documentation for usage and more information.
 
 # Key details
 
-Recurly automates complicated subscriptions, with many factors influencing the total price at\
-checkout. With this in mind, Recurly.js provides a robust `recurly.Pricing.Checkout` class designed
+Recurly automates complicated subscriptions, with many factors influencing the total price at<br />checkout. With this in mind, Recurly.js provides a robust `recurly.Pricing.Checkout` class designed
 to make determining the actual checkout costs as simple and flexible as possible.
 
-A Recurly.js checkout pricing instance can be attached to the form we created above, or to any other\
-section of your page meant to display pricing.
+A Recurly.js checkout pricing instance can be attached to the form we created above, or to any other<br />section of your page meant to display pricing.
 
 ### Reference
 
@@ -64,12 +63,10 @@ const checkoutPricing = recurly.Pricing.Checkout();
 checkoutPricing.attach('#my-checkout');
 ```
 
-This is the simplest way to use a `CheckoutPricing` instance. Simply pass a container element, and the\
-`CheckoutPricing` instance will use all elements with a valid `data-recurly` attribute to determine
+This is the simplest way to use a `CheckoutPricing` instance. Simply pass a container element, and the<br />`CheckoutPricing` instance will use all elements with a valid `data-recurly` attribute to determine
 price. When a value changes, the `CheckoutPricing` instance will automatically update its calculations.
 
-This allows your customers to manipulate your checkout form at will, and have your checkout page's\
-prices update automatically.
+This allows your customers to manipulate your checkout form at will, and have your checkout page's<br />prices update automatically.
 
 ##### Arguments
 
@@ -87,13 +84,11 @@ Nothing.
 
 ##### Input HTMLElements
 
-Input elements should be user-manipulable elements like `input` or `select`. If you want to input a\
-value but not let a customer manipulate it, use an `<input type="hidden">`.
+Input elements should be user-manipulable elements like `input` or `select`. If you want to input a<br />value but not let a customer manipulate it, use an `<input type="hidden">`.
 
 ###### Subscriptions
 
-`CheckoutPricing` instances can calculate a checkout containing **one or more** subscriptions. The\
-table below lists all available input `HTMLElement` types.
+`CheckoutPricing` instances can calculate a checkout containing **one or more** subscriptions. The<br />table below lists all available input `HTMLElement` types.
 
 | `data-recurly` value | Example Value | Description                                                                                                         |
 | :------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------ |
@@ -102,8 +97,7 @@ table below lists all available input `HTMLElement` types.
 | addon                | `1`           | Addon quantity. To identify the addon being modified, use the `data-recurly-addon` attribute to set the addon code. |
 | tax\_code            | `digital`     | Product tax code.                                                                                                   |
 
-If you would like to calculate multiple subscriptions on a single checkout, group the values for\
-each subscription using the `data-recurly-subscription` attribute. Simply set them to a unique
+If you would like to calculate multiple subscriptions on a single checkout, group the values for<br />each subscription using the `data-recurly-subscription` attribute. Simply set them to a unique
 id to group them. Here's an example:
 
 ```html
@@ -129,19 +123,17 @@ id to group them. Here's an example:
 
 ###### Adjustments
 
-As with subscriptions, `CheckoutPricing` instances can calculate a checkout containing **one or more**\
-adjustments.
+As with subscriptions, `CheckoutPricing` instances can calculate a checkout containing **one or more**<br />adjustments.
 
 **Using an item code**
 
-You may specify an item code from your Recurly catalog. This will automatically retrieve the pricing\
-information for your item.
+You may specify an item code from your Recurly catalog. This will automatically retrieve the pricing<br />information for your item.
 
 | `data-recurly` value | Example Value | Description                                                                                                                                                          |
 | :------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | adjustment           | `0`, `1`      | **Adjustment quantity.** \<br>\<br> Set a unique identifier using `data-recurly-adjustment`. \<br>\<br> Set the item code using `data-recurly-adjustment-item-code`. |
 
-*Example*:
+_Example_:
 
 ```html
 <section id="my-checkout">
@@ -163,7 +155,7 @@ It's also possible to specify all adjustment values inline.
 | :------------------- | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | adjustment           | `0`, `1`      | **Adjustment quantity.** \<br>\<br> Set a unique identifier using `data-recurly-adjustment`. \<br>\<br> Set the amount using `data-recurly-adjustment-amount`, \<br>\<br> currency with `data-recurly-adjustment-currency`, \<br>\<br> tax code with `data-recurly-adjustment-tax-code`, \<br>\<br> and tax exempt status with `data-recurly-adjustment-tax-exempt`. |
 
-*Example*:
+_Example_:
 
 ```html
 <section id="my-checkout">
@@ -214,48 +206,43 @@ Output elements should be plain text elements like `output`, `span`, or `div`.
 | currency\_code       | `USD`, `EUR`  | ISO-4217 currency code.                                                  |
 | currency\_symbol     | `$`, `€`      | Symbolic representation of `currency_code`.                              |
 
-> **Note**: `data-recurly` values ending in `_now` like `subtotal_now` have counterparts ending in `_next`.\
-> As you might expect, these correspond to the next billing cycle cost. These values are especially
+> **Note**: `data-recurly` values ending in `_now` like `subtotal_now` have counterparts ending in `_next`.<br />As you might expect, these correspond to the next billing cycle cost. These values are especially
 > useful for subscriptions with trial periods.
 
 ##### <span class="heading-tag heading-tag--event">events</span> Emit
 
-`CheckoutPricing` instances emit events when various values are set or the price changes. See\
-[Events](#events) for usage.
+`CheckoutPricing` instances emit events when various values are set or the price changes. See<br />[Events](#events) for usage.
 
 | Event name            | Payload                                        | Occurs When                                                                                                    |
 | :-------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
-| *change*              | [`PricingState`](#example-pricingstate-object) | The price changes for any reason.                                                                              |
-| *set.subscription*    | Subscription object                            | A subscription is added to the checkout.                                                                       |
-| *set.plan*            | Plan object                                    | A plan is set on any subscription.                                                                             |
-| *set.addon*           | Addon object                                   | An addon is set on any subscription.                                                                           |
-| *set.adjustment*      | Adjustment object                              | An adjustment is added to the checkout.                                                                        |
-| *set.address*         | Address object                                 | The user's address is changed on the checkout. This is limited to country, postalCode, and vatNumber.          |
-| *set.shippingAddress* | Address object                                 | The user's shipping address is changed on the checkout. This is limited to country, postalCode, and vatNumber. |
-| *set.tax*             | Tax properties object                          | Tax properties are changed on the checkout.                                                                    |
-| *set.currency*        | Currency code                                  | The currency is set on the checkout.                                                                           |
-| *set.coupon*          | Coupon object                                  | A valid coupon is set on the checkout.                                                                         |
-| *unset.coupon*        | Coupon object                                  | An existing valid coupon is removed from the checkout.                                                         |
-| *error.coupon*        | RecurlyError                                   | A requested coupon code is invalid.                                                                            |
-| *set.gift\_card*      | Gift card object                               | A gift card is set on the checkout.                                                                            |
-| *unset.gift\_card*    | Nothing                                        | A gift card is removed from the checkout.                                                                      |
+| _change_              | [`PricingState`](#example-pricingstate-object) | The price changes for any reason.                                                                              |
+| _set.subscription_    | Subscription object                            | A subscription is added to the checkout.                                                                       |
+| _set.plan_            | Plan object                                    | A plan is set on any subscription.                                                                             |
+| _set.addon_           | Addon object                                   | An addon is set on any subscription.                                                                           |
+| _set.adjustment_      | Adjustment object                              | An adjustment is added to the checkout.                                                                        |
+| _set.address_         | Address object                                 | The user's address is changed on the checkout. This is limited to country, postalCode, and vatNumber.          |
+| _set.shippingAddress_ | Address object                                 | The user's shipping address is changed on the checkout. This is limited to country, postalCode, and vatNumber. |
+| _set.tax_             | Tax properties object                          | Tax properties are changed on the checkout.                                                                    |
+| _set.currency_        | Currency code                                  | The currency is set on the checkout.                                                                           |
+| _set.coupon_          | Coupon object                                  | A valid coupon is set on the checkout.                                                                         |
+| _unset.coupon_        | Coupon object                                  | An existing valid coupon is removed from the checkout.                                                         |
+| _error.coupon_        | RecurlyError                                   | A requested coupon code is invalid.                                                                            |
+| _set.gift\_card_      | Gift card object                               | A gift card is set on the checkout.                                                                            |
+| _unset.gift\_card_    | Nothing                                        | A gift card is removed from the checkout.                                                                      |
 
 ### CheckoutPricing API
 
-A `CheckoutPricing` instance can be manipulated with a set of direct method calls. This is useful\
-if you would like to set up a complex pricing schema for your customers, or would just like to
+A `CheckoutPricing` instance can be manipulated with a set of direct method calls. This is useful<br />if you would like to set up a complex pricing schema for your customers, or would just like to
 use a more programmatic method of determining checkout price. Events fire just as they normally
 would when using `CheckoutPricing.attach`.
 
-Note that Recurly.js's DOM binding is one-way. Thus if you use the `CheckoutPricing` API on a pricing\
-instance already attached to a container, the elements within will not update with your
+Note that Recurly.js's DOM binding is one-way. Thus if you use the `CheckoutPricing` API on a pricing<br />instance already attached to a container, the elements within will not update with your
 `CheckoutPricing` API calls. If you would like two-way DOM binding, we suggest using the
 `CheckoutPricing` API without attaching it to a container. If using [React](https://reactjs.org) ,
 consider using our **[react-recurly library](https://github.com/recurly/react-recurly)**, which contains
 [a custom hook for interacting with the CheckoutPricing API](https://recurly.github.io/react-recurly/?path=/docs/hooks-usecheckoutpricing--page).
 
-The example below demonstrates all the ways that a `CheckoutPricing` instance can be manipulated\
-directly.
+The example below demonstrates all the ways that a `CheckoutPricing` instance can be manipulated<br />directly.
 
 ```javascript
 const checkoutPricing = recurly.Pricing.Checkout();
@@ -306,17 +293,13 @@ checkoutPricing
 
 ### PricingPromise
 
-Each `CheckoutPricing` method will return a `PricingPromise`. This allows you to chain many\
-asynchronous calls together without having to manage a complex series of callbacks.
+Each `CheckoutPricing` method will return a `PricingPromise`. This allows you to chain many<br />asynchronous calls together without having to manage a complex series of callbacks.
 
-You don't need to worry much about the internals of a `PricingPromise`, as it is designed to stay\
-out of your way and facilitate asynchronous calls for you.
+You don't need to worry much about the internals of a `PricingPromise`, as it is designed to stay<br />out of your way and facilitate asynchronous calls for you.
 
-The `catch` method, as shown in the example, is used to handle error scenarios, such as when an\
-addon cannot be applied to the selected plan.
+The `catch` method, as shown in the example, is used to handle error scenarios, such as when an<br />addon cannot be applied to the selected plan.
 
-> **Note**: At the end of a chain of pricing method calls, be sure to call `.done()` as this tells the Pricing\
-> instance to begin calculating, and gives you the subscription price.
+> **Note**: At the end of a chain of pricing method calls, be sure to call `.done()` as this tells the Pricing<br />instance to begin calculating, and gives you the subscription price.
 
 ### Example PricingState Object
 
@@ -382,3 +365,5 @@ Emitted by the **change** event
 <br />
 
 ***
+
+<br />
