@@ -1,5 +1,5 @@
 ---
-title: Navigate Code Test - Gemini
+title: Code Test Course
 deprecated: false
 hidden: true
 metadata:
