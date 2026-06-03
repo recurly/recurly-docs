@@ -1,5 +1,5 @@
 ---
-title: Explore - Transactions & Workbook Agent
+title: Explore - Transactions and workbook agent
 excerpt: >-
   The Transactions Explore feature is a is an interactive analytics tool that
   lets you slice and filter transaction-related data across payment
