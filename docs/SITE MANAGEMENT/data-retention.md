@@ -9,15 +9,20 @@ hidden: false
 metadata:
   robots: index
 ---
+Title: Data retention
+Metadata description: Configure automatic redaction of inactive account payment method and PII data after defined retention periods to support GDPR and data minimization requirements.
+
+---PASTE INTO EDITOR BELOW---
+
 <div class="rp-page">
   <div class="rp-overview">Data Retention Settings lets site administrators automatically redact inactive account data on a schedule you control. You set independent retention windows for payment method data and full personally identifiable information (PII) — keeping you compliant with GDPR and similar regulations without any manual effort.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
   <div class="rp-toc">
-    <a class="rp-toc-pill" href="#definition" target="_blank"><span class="rp-toc-num">1</span>Definition</a>
-    <a class="rp-toc-pill" href="#key-benefits" target="_blank"><span class="rp-toc-num">2</span>Key benefits</a>
-    <a class="rp-toc-pill" href="#key-details" target="_blank"><span class="rp-toc-num">3</span>Key details</a>
-    <a class="rp-toc-pill" href="#webhooks" target="_blank"><span class="rp-toc-num">4</span>Webhooks</a>
-    <a class="rp-toc-pill" href="#faqs" target="_blank"><span class="rp-toc-num">5</span>FAQs</a>
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#webhooks"><span class="rp-toc-num">4</span>Webhooks</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">5</span>FAQs</a>
   </div>
 </div>
 
@@ -71,9 +76,13 @@ metadata:
 
 Navigate to **Configuration → Data Retention Settings** to configure retention periods for your site.
 
-
-<Image src="https://files.readme.io/fe41a5f3c60a1674daa23ee530d4e60a5b534d8005ab1f336a78ebc2e69a1839-image.png" align="center" width="75%" border={true} />
-
+<span class="rp-zoom">
+  <a class="rp-zoom-label" href="#zoom-data-retention-settings">
+    <img class="rp-zoom-img"
+         src="https://files.readme.io/fe41a5f3c60a1674daa23ee530d4e60a5b534d8005ab1f336a78ebc2e69a1839-image.png"
+         alt="Data Retention Settings configuration screen" />
+  </a>
+</span>
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>All changes to Data Retention Settings are recorded in the audit log.</div>
@@ -162,7 +171,7 @@ When an account is redacted, Recurly fires an `account.redacted` webhook. The pa
 }
 ```
 
-## XML payload — redacted\_account\_notification
+## XML payload — redacted_account_notification
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -200,5 +209,3 @@ When an account is redacted, Recurly fires an `account.redacted` webhook. The pa
 <Accordion title="How do I enable this feature?">
   Data Retention Settings requires a site feature flag. Contact <a href="mailto:support@recurly.com" target="_blank">Recurly Support</a> to request access, then configure your retention periods at **Configuration → Data Retention Settings**.
 </Accordion>
-
-<br />
