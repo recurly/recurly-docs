@@ -71,6 +71,10 @@ metadata:
 
 Navigate to **Configuration → Data Retention Settings** to configure retention periods for your site.
 
+
+<Image src="https://files.readme.io/fe41a5f3c60a1674daa23ee530d4e60a5b534d8005ab1f336a78ebc2e69a1839-image.png" align="center" width="75%" border={true} />
+
+
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>All changes to Data Retention Settings are recorded in the audit log.</div>
 </div>
