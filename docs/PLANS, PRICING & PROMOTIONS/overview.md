@@ -19,15 +19,15 @@ next:
   </div>
 </div>
 
-<div style={{position: "relative", paddingTop: "72.5%", marginBottom: "28px", borderRadius: "10px", overflow: "hidden"}}>
-  <iframe
-    src="https://fast.wistia.net/embed/iframe/s13n8pz1pu"
+<div style={{position: "relative", paddingTop: "56.25%", marginBottom: "28px", borderRadius: "10px", overflow: "hidden"}}>
+  <iframe src="https://fast.wistia.net/embed/iframe/s13n8pz1pu"
     title="Plans, pricing, and promotions"
     allow="autoplay; fullscreen"
     allowtransparency="true"
     frameBorder="0"
     scrolling="no"
     allowFullScreen
-    style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none"}}
-  />
+    style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none"}}></iframe>
 </div>
+
+<br />
