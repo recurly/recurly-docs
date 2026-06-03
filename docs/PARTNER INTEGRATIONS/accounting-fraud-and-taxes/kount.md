@@ -118,7 +118,7 @@ You may follow these same steps for your Sandbox or Production Kount credentials
 
 8. Your copied key will look something like this: `MG9hMX...lmNjRSMVItTl8zbU1LVXlkNFFKWg==`(the key will be longer, this has been shortened/obfuscated for example purposes). Note the `==` at the end of the key. That is part of the key and should not be deleted.
 
-9. Obtain your Account MID from your Kount CSM.
+9. Obtain your Account MID from your Kount CSM / or a Kount 360 dashboard manager with Admin or Owner permissions. This value can be accessed via the Product Configuration UI only by hovering over the API Keys setup.
 
 10. Head over to Step 2.
 
