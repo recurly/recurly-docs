@@ -9,56 +9,260 @@ metadata:
   title: custom export
   robots: index
 ---
-# Overview
+<span id="rp-close"></span>
 
-The Custom Exports feature gives you direct visibility into the tailored and automated data exports configured for your merchant account. These are not standardized reports but configured with specific data fields, filters based on your business needs. From the Custom Exports page, you can see every active export at a glance — including where your data is going, how often it runs, and where to access.
+<div class="rp-page">
+<div class="rp-overview">
 
-### Required plan
+Custom exports give you a live view of every tailored data export configured for your account — where your data is going, how often it runs, and whether credentials need attention.
 
-This export is available as an optional add-on for customers on all Recurly's plans. Reach out to Support or your CSM for more information.
+</div>
+<div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available as an optional add-on — contact <a href="mailto:support@recurly.com">support@recurly.com</a> or your CSM for more information</div>
+<div class="rp-toc">
+  <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">1</span> Key benefits</a>
+  <a class="rp-toc-pill" href="#access-custom-exports"><span class="rp-toc-num">2</span> Access custom exports</a>
+  <a class="rp-toc-pill" href="#reading-the-exports-table"><span class="rp-toc-num">3</span> Reading the exports table</a>
+  <a class="rp-toc-pill" href="#update-export-credentials"><span class="rp-toc-num">4</span> Update export credentials</a>
+  <a class="rp-toc-pill" href="#verify-a-share"><span class="rp-toc-num">5</span> Verify a share</a>
+</div>
+</div>
 
-<br />
+<div class="rp-callout rp-callout-warning">
+<strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Merchant read-only access</strong>
 
-> 🚧 Please Note: Merchant Read-Only Access
->
-> * Merchants can view export configurations but cannot create or edit exports.
-> * All custom export setup and scheduling is managed by the Recurly team.
-> * To request a new export, modify an existing one, or troubleshoot an error, contact Recurly Support.
+Merchants can view export configurations but cannot create or edit exports. All custom export setup and scheduling is managed by the Recurly team. To request a new export, modify an existing one, or troubleshoot an error, contact <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a>.
+
+</div>
 
 # Key benefits
 
-* **Data tailored to your specific needs**: Unlike standard Exports (which offer a fixed set of reports), Custom Exports are built by Recurly to match a merchant's exact reporting requirements — specific fields, combinations of data, or outputs their standard systems can't produce.
-* **Flexible scheduling**: Custom exports can run daily, monthly or on fully custom cron schedules, which is important for merchants with non-standard billing cycles or reporting windows.
-* **Fits into existing infrastructure**:  Files land directly in the merchant's own storage (S3, GDrive, SFTP), so they slot into existing data pipelines and warehouses without any API work on the merchant's side.
-* **Visibility into export health (new)**: The merchant-facing UI page is actually a new feature. Previously merchants had no visibility into their custom exports. Now they can see status, destination, and frequency at a glance — and take action when something errors (update a secret, verify, etc.).
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Data tailored to your needs</strong>
+    <span>Unlike standard exports with fixed report formats, custom exports are built by Recurly to match your exact reporting requirements — specific fields, data combinations, or outputs your standard systems can't produce.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></div>
+    <strong>Flexible scheduling</strong>
+    <span>Exports can run daily, monthly, or on fully custom cron schedules — important for merchants with non-standard billing cycles or reporting windows.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+    <strong>Fits your existing infrastructure</strong>
+    <span>Files land directly in your own storage — AWS S3, Google Drive, or SFTP — slotting into existing data pipelines and warehouses without any API work on your side.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Visibility into export health</strong>
+    <span>See status, destination, and frequency for every export at a glance — and take action when something errors, such as updating a credential or triggering a verification.</span>
+  </div>
+</div>
 
-<br />
+# Access custom exports
 
-## Accessing Your Custom Exports
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Open Integrations</h4>
+      <p>In the Recurly Admin UI, click Integrations in the left navigation panel.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Select Custom Exports</h4>
+      <p>Click Custom Exports from the Integrations sub-menu. The list displays all exports configured for your account.</p>
+    </div>
+  </div>
+</div>
 
-To view your custom exports:
+<div class="rp-callout rp-callout-note">
+<strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Files are not hosted here</strong>
 
-1. From the Recurly Admin UI, in the left navigation panel, click Integrations.
-2. Click Custom Exports from the Integrations sub-menu.
-3. The Custom Exports list will display all exports configured for your account.
-4. Files are delivered to your configured destination (AWS S3, Google Drive, or SFTP). The Custom Exports page shows configuration and status only — it does not host file downloads.
-5. Depending on the export target (AWS S3, SFTP, etc.), you may need to update your secret key and/or verify in order to access your custom export from your configured destination.
+The Custom Exports page shows configuration and status only. Files are delivered to your configured destination — AWS S3, Google Drive, or SFTP. Depending on your export target, you may need to update your secret key and verify the connection before files can be received.
 
-<br />
+</div>
 
-## Reading the Custom Exports Table
+# Reading the exports table
 
-Each row in the table represents a single export configuration. The table includes the following columns:
+Each row in the table represents a single export configuration.
 
-<br />
+<table class="rp-gw-table">
+  <tr class="rp-thead-row">
+    <td>Column</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>A unique identifier for the export, typically describing the report type and destination.</td>
+  </tr>
+  <tr>
+    <td>Target</td>
+    <td>The type of destination system — AWS S3, Google Drive, or SFTP.</td>
+  </tr>
+  <tr>
+    <td>Bucket / URL / Folder ID</td>
+    <td>The specific destination where exported files are delivered: an S3 bucket name, a Google Drive folder ID, or an SFTP host path.</td>
+  </tr>
+  <tr>
+    <td>Path prefix</td>
+    <td>The sub-path or folder within the destination where files are stored.</td>
+  </tr>
+  <tr>
+    <td>Timezone</td>
+    <td>The timezone used to schedule the export.</td>
+  </tr>
+  <tr>
+    <td>Frequency</td>
+    <td>How often the export runs, including day and time. Common values: Daily, or Custom (e.g., 15th and 30th of each month).</td>
+  </tr>
+  <tr>
+    <td>⋯ Update Secret / Verify</td>
+    <td>For AWS S3 and SFTP targets, credentials must be updated and the share verified before additional exports can be received.</td>
+  </tr>
+</table>
 
-|                             |                                                                                                                               |   |
-| :-------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | - |
-| Name                        | A unique identifier for the export job, typically describing the report type and destination.                                 |   |
-| Bucket / URL / Folder ID    | The destination where exported files are delivered - an Amazon S3 bucket name, a Google Drive folder ID, or a SFTP host path. |   |
-| Path Prefix                 | The sub-path or folder within the destination where files are stored.                                                         |   |
-| Target                      | The type of destination system - AWS S3, Google Drive, or SFTP.                                                               |   |
-| Frequency                   | How often the export runs. Common values are Daily or Custom, e.g. 15th and 30th of each month.                               |   |
-| Update Secret/Verify/Delete |                                                                                                                               |   |
+# Update export credentials
 
-<br />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Locate the export with an error</h4>
+      <p>Navigate to Integrations → Custom Exports. Exports with credential issues are indicated by a red status dot.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Open Update Secret</h4>
+      <p>Click the action menu (⋯) on the right side of the export row and select Update Secret.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Confirm the correct export</h4>
+      <p>Review the read-only export summary at the top of the screen to confirm you're updating the right export.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div>
+      <h4>Fill in the credential fields</h4>
+      <p>Complete the required fields for your export's target type (see below). The Update Secret button stays inactive until all required fields are filled.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div>
+      <h4>Save</h4>
+      <p>Click Update Secret to save the new credentials.</p>
+    </div>
+  </div>
+</div>
+
+## SFTP exports
+
+<table class="rp-params">
+  <tr class="rp-thead-row">
+    <td>Field</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>User *</td>
+    <td>The SFTP username used to authenticate with the server.</td>
+  </tr>
+  <tr>
+    <td>Known hosts *</td>
+    <td>The host key fingerprint for your SFTP server. Used to verify the server's identity and prevent man-in-the-middle attacks.</td>
+  </tr>
+  <tr>
+    <td>Port *</td>
+    <td>The port your SFTP server listens on (commonly 22).</td>
+  </tr>
+  <tr>
+    <td>Authentication method *</td>
+    <td>Select Password to authenticate with a username and password, or Private Key to use an SSH key pair.</td>
+  </tr>
+  <tr>
+    <td>Password *</td>
+    <td>Your SFTP password. Shown only when Authentication Method is set to Password. Click Show to reveal the field while entering.</td>
+  </tr>
+  <tr>
+    <td>Private key *</td>
+    <td>Your SSH private key. Shown only when Authentication Method is set to Private Key.</td>
+  </tr>
+</table>
+
+## AWS S3 exports
+
+<table class="rp-params">
+  <tr class="rp-thead-row">
+    <td>Field</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>Access Key ID *</td>
+    <td>The AWS IAM Access Key ID for the IAM user or role that has write access to the target S3 bucket.</td>
+  </tr>
+  <tr>
+    <td>Secret Access Key *</td>
+    <td>The AWS IAM Secret Access Key paired with the Access Key ID above. Click Show to reveal the field while entering.</td>
+  </tr>
+  <tr>
+    <td>Region *</td>
+    <td>The AWS region where your S3 bucket is hosted (e.g., <code>us-east-1</code>, <code>eu-west-2</code>).</td>
+  </tr>
+</table>
+
+# Verify a share
+
+After updating credentials, or when an export prompts you to verify, use Verify Share to confirm Recurly can successfully reach your destination.
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Locate the export</h4>
+      <p>Navigate to Integrations → Custom Exports and find the export you want to verify.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Open Verify</h4>
+      <p>Click the action menu (⋯) on the right side of the export row and select Verify.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Confirm the correct export</h4>
+      <p>Review the read-only export summary (Target, Bucket / URL, Path Prefix) to confirm you're verifying the right export.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div>
+      <h4>Enter the Verification Value</h4>
+      <p>Enter the Verification Value provided by Recurly. This is a token or string Recurly uses to confirm the connection is valid and that files can be written to the configured path. It is provided by Recurly — you do not create it yourself.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div>
+      <h4>Submit</h4>
+      <p>Click Verify to submit. If you don't have a Verification Value, contact Recurly Support at <a href="mailto:support@recurly.com">support@recurly.com</a> or through the Help menu in your Admin UI — include the export name and your account code.</p>
+    </div>
+  </div>
+</div>
+
+<div class="rp-callout rp-callout-tip">
+<strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What happens after verification</strong>
+
+If verification succeeds, the export status updates and the export resumes on its next scheduled run. If verification fails, double-check that credentials were saved correctly via Update Secret, and that the destination path exists and is accessible. A successful verification does not immediately trigger a file delivery — it confirms the connection is healthy for the next scheduled run.
+
+</div>
