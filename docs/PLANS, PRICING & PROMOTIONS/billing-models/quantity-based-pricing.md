@@ -1,10 +1,8 @@
 ---
 title: Quantity-based pricing
 excerpt: >-
-  Immerse yourself in the fascinating universe of Quantity-Based Pricing!
-  Unearth the transformative pricing models - Tiered Pricing, Volume Pricing,
-  and Stairstep Pricing, that are reshaping how businesses strategize their
-  pricing.
+  Configure tiered, volume, or stairstep pricing models in Recurly to charge
+  customers based on the number of units they purchase.
 deprecated: false
 hidden: false
 metadata:
@@ -14,70 +12,138 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">
+    Quantity-based pricing lets you charge customers based on how many units they purchase — and gives you three distinct models to work with: tiered, volume, and stairstep. Each one unlocks a different incentive structure, from graduated discounts to flat-rate tiers. This page explains how each model works and walks you through setting one up in Recurly.
+  </div>
 
-### Required plan
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#pricing-models"><span class="rp-toc-num">3</span>Pricing models</a>
+    <a class="rp-toc-pill" href="#activate-quantity-based-pricing"><span class="rp-toc-num">4</span>Activate quantity-based pricing</a>
+  </div>
+</div>
 
 # Definition
 
-Quantity-based pricing is a versatile pricing model suitable for businesses wanting to offer flexible pricing based on the number of units a customer acquires.
+<div class="rp-definition">
+  Quantity-based pricing is a flexible billing model that calculates charges based on the number of units a customer acquires. Rather than a flat rate, the price a customer pays shifts with volume — making it a natural fit for businesses that want to reward larger purchases or offer predictable tiers.
+</div>
 
 # Key benefits
 
-* **Pricing flexibility**: This model encourages businesses to incentivize larger purchases, catering to different strategic goals.
-* **Cross-industry adaptability**: The model is versatile, fitting seamlessly across multiple industries and product categories.
-* **Simplified cost calculation**: Users can effortlessly determine the total cost based on the quantity purchased, streamlining transactions.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Pricing flexibility</strong>
+    <span>Incentivize larger purchases with graduated pricing, bulk discounts, or flat-rate tiers — whatever fits your business strategy.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+    <strong>Cross-industry adaptability</strong>
+    <span>Whether you're billing for documents, seats, shirts, or API calls, quantity-based pricing maps cleanly to almost any product or service.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-calculator" aria-hidden="true"></i></div>
+    <strong>Simplified cost calculation</strong>
+    <span>Customers can determine their total cost at a glance based on quantity — reducing friction at checkout and keeping billing transparent.</span>
+  </div>
+</div>
 
-# A dynamic approach to pricing: quantity-based
+# Pricing models
 
-Quantity-Based Pricing isn't just a model, it's an innovative approach to billing that caters to diverse consumption patterns, promotes increased purchases, and provides businesses with a method to variably price their goods or services. This strategy is optimal for businesses of all sizes and sectors, offering them the ability to flexibly adjust their pricing in line with the quantity a customer procures, fostering a symbiotic relationship of value and loyalty.
+Recurly supports three quantity-based pricing models. Each one handles unit pricing differently as volume increases — choose the one that best matches your product's cost structure and the behavior you want to encourage.
 
-### Tiered pricing
+## Tiered pricing
 
-Tiered Pricing is a model that facilitates a gradual cost system based on specified thresholds or "tiers". The unit price changes as the customer purchases more of the product or service, creating a pricing ladder. For example, an office services firm may charge $1 per document for the first 100 documents. However, if a customer requires more, the cost of each document beyond the initial 100 drops to 50¢. This structure provides an incentive for customers to buy more, thereby driving up sales volumes.
+Tiered pricing assigns a different unit price to each range of quantities. As a customer buys more, only the units within each tier are charged at that tier's rate — creating a graduated cost structure.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png" className="border" />
+**Example:** An office services firm charges $1 per document for the first 100, then $0.50 per document beyond that. A customer who orders 150 documents pays $1 × 100 + $0.50 × 50 = $125.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/eb76209-image.png" className="border" />
+<span class="rp-zoom">
+  <a class="rp-zoom-label" href="#">
+    <img src="https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png" alt="Tiered pricing configuration in Recurly" class="rp-zoom-img" />
+  </a>
+</span>
 
-### Volume pricing
+## Volume pricing
 
-Volume Pricing is a strategic approach that motivates customers to purchase in larger quantities by offering a lower per-unit price once they reach a certain volume. All units are charged based on the price of the highest tier reached. So, in the case of a screen-printing t-shirt company, if a customer purchases more than 20 shirts, the per-shirt price reduces from $10 to $9. It's an excellent model for bulk purchases, allowing both the business and customer to benefit from economies of scale.
+Volume pricing charges all units at the rate of the highest tier reached. Once a customer crosses a volume threshold, every unit — including the first — is repriced at the lower rate.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/50fedf7bf0859eea6dd2c1c9e5acc7f142f91f9e3fec6bb1049d151cca5fcd50-Screenshot_2025-01-16_at_11.34.57_AM.png" className="border" />
+**Example:** A screen-printing company charges $10 per shirt for orders of 1–20 shirts, and $9 per shirt for orders over 20. A customer who orders 25 shirts pays $9 × 25 = $225 — not a blended rate.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/271a5ac-image.png" className="border" />
+<span class="rp-zoom">
+  <a class="rp-zoom-label" href="#">
+    <img src="https://files.readme.io/50fedf7bf0859eea6dd2c1c9e5acc7f142f91f9e3fec6bb1049d151cca5fcd50-Screenshot_2025-01-16_at_11.34.57_AM.png" alt="Volume pricing configuration in Recurly" class="rp-zoom-img" />
+  </a>
+</span>
 
-### Stairstep pricing
+## Stairstep pricing
 
-Stairstep Pricing charges a flat rate for a range of quantities, based on specific tiers. For example, a SaaS company might offer pricing tiers based on the number of seats a customer purchases: $50 for 1-10 seats, $100 for 11-20 seats, and $150 for 21+ seats. Regardless of whether a customer acquires 25, 50, or 100 seats, they will pay $150. This model is particularly effective in instances where service delivery costs don't increase linearly with each additional unit, providing predictable revenue and simplifying budget planning for the customer.
+Stairstep pricing charges a flat rate for an entire quantity range — the price doesn't change within a tier, no matter how many units a customer acquires within it.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/c997473503d6a04046f5bc0df17ba02c179f3b7bf47860faed273b86863abdc5-Screenshot_2025-01-16_at_11.36.23_AM.png" className="border" />
+**Example:** A SaaS company prices seat licenses at $50 for 1–10 seats, $100 for 11–20 seats, and $150 for 21+ seats. Whether a customer has 25 or 100 seats, they pay $150 flat. This model is ideal when your delivery costs don't scale linearly with each additional unit.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/8c9fd3c-image.png" className="border" />
+<span class="rp-zoom">
+  <a class="rp-zoom-label" href="#">
+    <img src="https://files.readme.io/c997473503d6a04046f5bc0df17ba02c179f3b7bf47860faed273b86863abdc5-Screenshot_2025-01-16_at_11.36.23_AM.png" alt="Stairstep pricing configuration in Recurly" class="rp-zoom-img" />
+  </a>
+</span>
 
-## Setting up quantity-based pricing model
+# Activate quantity-based pricing
 
-The quantity-based model can be configured using a plan with an add-on. Establish tiers and prices at the plan level and supply a quantity for the subscription add-on. Recurly will handle the calculation of the correct total based on the pricing model and quantity provided. If you use our Hosted Payment Pages, you may want to check the "Editable Quantity" box so that your subscribers can determine a quantity at sign-up.
+Quantity-based pricing is configured on a plan using an add-on. Recurly handles the total calculation automatically once you've defined your tiers, prices, and subscription quantity.
 
-# Guide to activate quantity-based pricing
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Choose your pricing model</h4>
+      <p>Decide whether tiered, volume, or stairstep pricing best fits your business needs. See the <a href="#pricing-models">Pricing models</a> section above for a comparison of each approach.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Set up a plan with an add-on</h4>
+      <p>Quantity-based pricing is applied at the add-on level, not the plan level. Create or edit a plan, then add an add-on to serve as the quantity-priced component.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Define your tiers and prices</h4>
+      <p>On the add-on, select your pricing model and configure each tier's quantity range and unit price. You can add as many tiers as needed.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div>
+      <h4>Assign a quantity to the subscription add-on</h4>
+      <p>When creating or updating a subscription, supply a quantity for the add-on. Recurly uses this value to calculate the correct total based on the pricing model you've configured.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div>
+      <h4>Let Recurly handle the math</h4>
+      <p>Once quantity and tiers are set, Recurly automatically calculates the correct charge at billing time. No custom logic required on your end.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div>
+      <h4>Enable editable quantity (optional)</h4>
+      <p>If you're using Recurly's Checkout or Hosted Payment Pages, check the <strong>Editable Quantity</strong> box on the add-on. This lets subscribers set their own quantity when signing up.</p>
+    </div>
+  </div>
+</div>
 
-1. **Choose the right model**: Determine whether tiered, volume, or stair step pricing is the best fit for your business needs.
-
-<Image align="center" border={true} width="50% " src="https://files.readme.io/0fd67a2-image.png" className="border" />
-
-2. **Plansetup**: Use a plan with an add-on to set up the quantity-based model.
-
-<Image align="center" border={true} width="50% " src="https://files.readme.io/5e9aa7392e822d34d0daee0240098ae9fb192cac2ae433b05e15f7a0f84d9b67-Screenshot_2025-01-16_at_11.32.58_AM.png" className="border" />
-
-3. **Define tiers and prices**: Set up tiers and prices at the plan level.
-
-<Image align="center" border={true} width="50% " src="https://files.readme.io/fd0557c-image.png" className="border" />
-
-4. **Define quantity for subscription add-on**: Provide the quantity for the subscription add-on.
-5. **Manage Calculation**: Recurly will take care of calculating the correct total based on the pricing model and quantity.
-6. **Set editable quantity**: If you're using Recurly's Checkout or Hosted Payment Pages, select the "Editable Quantity" checkbox, so your subscribers can set a quantity when signing up.
-
-<Image align="center" border={true} width="75% " src="https://files.readme.io/c2bacf2-image.png" className="border" />
+<span class="rp-zoom">
+  <a class="rp-zoom-label" href="#">
+    <img src="https://files.readme.io/c2bacf2-image.png" alt="Editable quantity setting on Hosted Payment Pages" class="rp-zoom-img" />
+  </a>
+</span>
