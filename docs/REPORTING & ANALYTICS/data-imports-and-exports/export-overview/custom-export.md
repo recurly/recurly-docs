@@ -14,7 +14,9 @@ metadata:
 
 <div class="rp-page">
 <div class="rp-overview">
+
 Custom exports give you a live view of every tailored data export configured for your account — where your data is going, how often it runs, and whether credentials need attention.
+
 </div>
 <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available as an optional add-on — contact <a href="mailto:support@recurly.com">support@recurly.com</a> or your CSM for more information</div>
 <div class="rp-toc">
@@ -28,7 +30,9 @@ Custom exports give you a live view of every tailored data export configured for
 
 <div class="rp-callout rp-callout-warning">
 <strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Merchant read-only access</strong>
-Merchants can view export configurations but cannot create or edit exports. All custom export setup and scheduling is managed by the Recurly team. To request a new export, modify an existing one, or troubleshoot an error, contact <a href="mailto:support@recurly.com">support@recurly.com</a>.
+
+Merchants can view export configurations but cannot create or edit exports. All custom export setup and scheduling is managed by the Recurly team. To request a new export, modify an existing one, or troubleshoot an error, contact <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a>.
+
 </div>
 
 # Key benefits
@@ -77,7 +81,9 @@ Merchants can view export configurations but cannot create or edit exports. All 
 
 <div class="rp-callout rp-callout-note">
 <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Files are not hosted here</strong>
+
 The Custom Exports page shows configuration and status only. Files are delivered to your configured destination — AWS S3, Google Drive, or SFTP. Depending on your export target, you may need to update your secret key and verify the connection before files can be received.
+
 </div>
 
 # Reading the exports table
@@ -255,16 +261,11 @@ After updating credentials, or when an export prompts you to verify, use Verify 
   </div>
 </div>
 
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#zoom-7d284cc">
-    <img class="rp-zoom-img" src="https://files.readme.io/7d284ccead716c1234c6a5d9ae166ddc311e51d703dc0e26535a83b19c6e2d61-image.png" alt="Verify share dialog showing the Verification Value input field" />
-  </a>
-  <a id="zoom-7d284cc" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/7d284ccead716c1234c6a5d9ae166ddc311e51d703dc0e26535a83b19c6e2d61-image.png" alt="" />
-  </a>
-</span>
-
 <div class="rp-callout rp-callout-tip">
 <strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> What happens after verification</strong>
+
 If verification succeeds, the export status updates and the export resumes on its next scheduled run. If verification fails, double-check that credentials were saved correctly via Update Secret, and that the destination path exists and is accessible. A successful verification does not immediately trigger a file delivery — it confirms the connection is healthy for the next scheduled run.
+
 </div>
+
+<br />
