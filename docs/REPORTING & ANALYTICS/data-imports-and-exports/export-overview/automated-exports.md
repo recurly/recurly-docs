@@ -1,8 +1,8 @@
 ---
 title: Automated exports
 excerpt: >-
-  Discover the efficiency and ease of automating your Recurly data exports,
-  allowing for streamlined data management and enhanced business operations.
+  Schedule and retrieve nightly data exports from Recurly to keep your data
+  warehouse in sync without logging into the admin console.
 deprecated: false
 hidden: false
 metadata:
@@ -12,163 +12,133 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">
+    Automated Exports runs nightly, pulling a full snapshot of your Recurly data and making it available through the API. It's built for teams that want their data warehouse to stay current without manual intervention — no scheduled logins, no copy-paste exports. Configure your exports once in the Integrations section, then retrieve fresh data every day via a private API key.
+  </div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="mailto:support@recurly.com">support@recurly.com</a> or your CSM to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#set-up-automated-exports"><span class="rp-toc-num">4</span>Set up automated exports</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Necessary configurations set up in the "Integrations" section of the Recurly admin console.
-* Users possessing the "Integrations" role to access the "Automated Exports" UI. A few admin level exports will also require both the "Admin" and "Integrations" roles.
-* Familiarity with the Recurly API to retrieve the daily exports.
+<ul class="rp-list">
+  <li>The <strong>Integrations</strong> role assigned to any users who need access to the Automated Exports UI. Some admin-level exports also require the <strong>Admin</strong> role.</li>
+  <li>The necessary configurations set up in the <strong>Integrations</strong> section of the Recurly admin console.</li>
+  <li>Familiarity with the Recurly API to retrieve daily exports.</li>
+</ul>
 
 ### Limitations
 
-* Not available out of the sandbox mode.
-* The service offers the complete data set only, without the option for partial data sets based on status filters available in the Exports UI.
-* A newly available version of an export does not automatically update in your existing configuration; reconfiguration is required to access the latest version.
-* A given automated export file will not be accessible via Recurly API, 60 days after its creation.
+<ul class="rp-list">
+  <li>Not available in sandbox mode.</li>
+  <li>Only full data sets are available — partial sets based on status filters (as seen in the Exports UI) are not supported.</li>
+  <li>A new export version doesn't automatically update your existing configuration. You'll need to reconfigure manually to access the latest version.</li>
+  <li>Export files are accessible via the Recurly API for 60 days after creation. After that, they expire.</li>
+</ul>
 
 # Definition
 
-Automated Exports is a Recurly feature that facilitates scheduled data exports, enabling businesses to automatically synchronize data between Recurly and their data warehouse. It offers a broader set of attributes for each object compared to what is available through individual API objects, enhancing data detail and availability for analysis.
+<div class="rp-definition">
+  Automated Exports is a Recurly feature that runs nightly scheduled data exports, delivering a full snapshot of the previous day's data to your data warehouse. Each export provides a broader set of object attributes than what's available through individual API objects, making it well-suited for analytics, reporting, and data sync workflows.
+</div>
 
 # Key benefits
 
-* **Automated process**: Schedule your data exports to run automatically, saving time and reducing manual effort.
-* **Detailed data**: Gain access to a comprehensive set of attributes for each object, offering richer data for your analyses.
-* **Smooth transition from sandbox to production**: Retain your export schedules configured in sandbox mode when you switch to a production environment, avoiding reconfiguration hassles.
-* **Secure data retrieval**: Utilize secure, temporary URLs to safely access your exported data.
-* **Historical data access**: Retain access to each export for a duration of 60 days, facilitating historical data analysis.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+    <strong>Automated process</strong>
+    <span>Schedule exports to run every night without lifting a finger — no manual downloads, no console logins required.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-table-list" aria-hidden="true"></i></div>
+    <strong>Richer data</strong>
+    <span>Access a broader set of attributes per object than the standard API exposes — giving your analysts more to work with.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-arrow-right-arrow-left" aria-hidden="true"></i></div>
+    <strong>Smooth sandbox-to-production transition</strong>
+    <span>Export schedules configured in sandbox mode carry over when you switch to production, so you don't have to start from scratch.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
+    <strong>Secure data retrieval</strong>
+    <span>Exported data is accessed via secure, time-limited URLs — each one valid for 60 minutes after generation.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></div>
+    <strong>60-day access window</strong>
+    <span>Each export file remains accessible for 60 days, giving you a rolling historical window for analysis and auditing.</span>
+  </div>
+</div>
 
-# Automated exports
+# Key details
 
-Automated Exports is a crucial tool designed to align your data warehouse seamlessly with the data available from Recurly, without the necessity to log into the admin console frequently. This feature is well-suited for businesses aiming for an automated and efficient data management process. Below, we delve deeper into the aspects of availability, configuration, and accessing the rich data sets available through this service.
+For a full list of available exports, see the <a href="https://docs.recurly.com/docs/export-overview#exports-overview" target="_blank">exports overview</a>.
 
-For a full list of available exports, see [here](https://docs.recurly.com/docs/export-overview#exports-overview).
-
-<HTMLBlock>{`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Button</title>
-    <style>
-        .download-button {
-            display: inline-block;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            color: #1C2833FF; 
-            background-color: #F8F8F8FF; 
-            border-radius: 5px;
-            font-weight: normal;
-            transition: background-color 0.5s ease, transform 0.3s ease;
-          	transition: 0.4s !important;
-            font-family: 'Proxima-nova', Arial, sans-serif;
-            max-width: 100%; 
-        }
-
-        .download-button:hover {
-            background-color: #FFFFFFFF; 
-            transform: scale(1.02); 
-        }
-      	a:hover {
-          	color: #888888FF;
-          	text-decoration: underline !important;
-        }
-      </style>
-</head>
-<body>
-    <a href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" class="download-button">Download our complete export schema</a>
-</body>
-</html>
-`}</HTMLBlock>
+<a class="rp-dl-btn" href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" target="_blank">Download complete export schema →</a>
 
 ## Configuration
 
-Initiate the configuration of automated exports through the "Integrations" section, accessible only to users holding the "Integrations" role. Although the configurations can be set up and deleted via the admin console, the daily retrieval of exports necessitates usage of the Recurly API, securing a broader and detailed data set.
+Export configurations are managed in the **Integrations** section of the admin console, accessible only to users with the **Integrations** role. While you can create and delete configurations through the console, daily data retrieval happens through the Recurly API — not the UI.
 
-**Note:** Multiple versions of the same export are allowed.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>Multiple configurations of the same export type are allowed. This is useful if you need different schedules or attribute sets for different destinations.</div>
+</div>
 
-## New versions
+## Export versions
 
-Stay updated by utilizing the newest versions available in the Automated Exports configuration. However, note that the update to the latest version is not automated and demands manual reconfiguration.
+New versions of exports become available periodically. Recurly doesn't automatically update your existing configurations when a new version is released — you'll need to delete the outdated configuration and recreate it using the latest version. Check for updates regularly to make sure you're working with the most current data attributes.
 
-## Details about the data made available
+## Data availability
 
-Benefit from a service that runs nightly, encompassing the entire previous day's data from each chosen export, abiding by the set time-range filters. It is crucial to acknowledge the service's focus on offering the complete data set, thus not providing partial sets based on various status filters.
+Each export runs nightly and covers the **full previous day's data** for every selected export type, subject to any configured time-range filters. Only complete data sets are supported — you can't filter by subscription status or other partial criteria at export time. Those filters are available in the Exports UI but aren't reflected in Automated Exports output.
 
 ## Accessing the data
 
-Retrieve your detailed data exports securely using a private API key to poll a specified endpoint on the Recurly API. The retrieval grants you a secure and temporary URL, active for 60 minutes, directing to the data export's secure storage location.
+Retrieve your exports by polling the designated endpoint on the Recurly API using a private API key. A successful poll returns a secure, temporary URL pointing to the export file in its storage location. That URL is valid for 60 minutes, so download the file promptly after generating it.
 
-**Recommendation:** To ensure the data's readiness for download, initiate the poll approximately 2 hours post the export run. Keep in mind that the exports remain accessible for 60 days post-creation, allowing for an extensive analysis window.
+<div class="rp-callout rp-callout-tip">
+  <div><strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>Poll approximately two hours after the export run to make sure the data is ready. Polling too early may return a 404 — the file simply isn't available yet. Export files remain accessible for 60 days after creation.</div>
+</div>
 
-For an efficient, secure, and automated data export process, leverage Recurly's Automated Exports feature, enhancing your business operations through streamlined data management.
+# Set up automated exports
 
-# **Advanced automated exports guide**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Assign user roles</h4><p>Make sure the team members who need access to the Automated Exports UI have the <strong>Integrations</strong> role. For admin-level exports, they'll also need the <strong>Admin</strong> role.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Navigate to Integrations</h4><p>In the Recurly admin console, select <strong>Integrations</strong> from the navigation panel to open the Automated Exports configuration area.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Configure your exports</h4><p>Add your export configurations — select the export types you need, set your schedule, and choose the relevant attributes. You can create multiple configurations of the same export type if needed.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Keep versions current</h4><p>When a new export version is released, delete the existing configuration and recreate it using the latest version. This is a manual step — Recurly won't update your configuration automatically.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Retrieve exports via the API</h4><p>Use your private API key to poll the designated Recurly API endpoint. The response includes a secure, time-limited URL to the export file. Poll approximately two hours after the nightly run to ensure the data is ready.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Download the exported data</h4><p>Use the temporary URL from the API response to download the export file. The URL is valid for 60 minutes. The file itself remains accessible via the API for 60 days after creation.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Automate retrieval</h4><p>For ongoing operations, set up an automated job that polls the API on a schedule, downloads the export file, and loads it into your data warehouse. This removes the last remaining manual step and keeps your data fully in sync.</p></div>
+  </div>
+</div>
 
-### **Step 1: Verifying your subscription plan**
-
-* **Objective:** Ensure that you are subscribed to a plan that grants access to the Automated Exports feature.
-* **Action:** Verify your subscription to the Recurly Professional or Elite plan.
-* **Tip:** Utilize the sandbox mode for a trial run of the feature.
-
-### **Step 2: Setting up user roles**
-
-* **Objective:** Set up appropriate user roles to manage access to the Automated Exports UI.
-* **Action:** Assign the "Integrations" role to the necessary team members.
-* **Tip:** Proper role assignment helps in managing user permissions efficiently.
-
-### **Step 3: Navigating to the integration section**
-
-* **Objective:** Learn to navigate to the integration section to access Automated Exports settings.
-* **Action:** Open the admin console and select the "Integrations" section from the navigation panel.
-* **Tip:** Familiarize yourself with the admin console to streamline the navigation process.
-
-### **Step 4: Configuring automated exports**
-
-* **Objective:** Set up and configure your automated exports.
-* **Action:** In the "Integrations" section, set up your export configurations, including scheduling and attribute selections.
-* **Tip:** Regularly update your configurations to match your current data requirements.
-
-### **Step 5: Updating export versions**
-
-* **Objective:** Keep your exports updated with the latest versions.
-* **Action:** Delete outdated configurations and re-add them using the newest version available.
-* **Tip:** Regular updates ensure you have access to the most recent and relevant features.
-
-### **Step 6: Understanding the data available**
-
-* **Objective:** Understand the data available through automated exports.
-* **Action:** Explore the details of the data available, including time range filters and the data attributes accessible through this feature.
-* **Tip:** Leveraging the right data attributes can offer deeper insights and facilitate data analysis.
-
-### **Step 7: Accessing the data**
-
-* **Objective:** Learn how to access the data efficiently.
-* **Action:** Utilize your private API key to poll the endpoint on the Recurly API, generating a secure URL for data access.
-* **Tip:** Ensure timely data retrieval within the 60-minute window of URL activation to maintain data security.
-
-### **Step 8: Retrieving the exported data**
-
-* **Objective:** Successfully retrieve the data exported through the service.
-* **Action:** Poll the specified endpoints approximately 2 hours after the export runs to check the data readiness for download.
-* **Tip:** Regular checks can prevent missing out on data due to the 404 response received when the data is not ready.
-
-### **Step 9: Automating data retrieval**
-
-* **Objective:** Streamline operations through data retrieval automation.
-* **Action:** Learn to automate the data retrieval process to save time and reduce manual effort.
-* **Tip:** Utilizing APIs for automation can bring in efficiency and speed in the data retrieval process.
-
-### **Step 10: Maintenance and support**
-
-* **Objective:** Understand how to maintain your automated export configurations and where to find support.
-* **Action:** Learn the best practices for maintaining your configurations and accessing Recurly support for assistance.
-* **Tip:** Regular maintenance ensures smooth operations and quick resolution of any issues.
+<br />
