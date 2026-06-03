@@ -12,6 +12,11 @@ metadata:
 next:
   description: ''
 ---
+Title: Automated exports
+Metadata description: Schedule and retrieve nightly data exports from Recurly to keep your data warehouse in sync without logging into the admin console.
+
+\---PASTE INTO EDITOR BELOW---
+
 <div class="rp-page">
   <div class="rp-overview">
     Automated Exports runs nightly, pulling a full snapshot of your Recurly data and making it available through the API. It's built for teams that want their data warehouse to stay current without manual intervention — no scheduled logins, no copy-paste exports. Configure your exports once in the Integrations section, then retrieve fresh data every day via a private API key.
@@ -82,7 +87,7 @@ next:
 
 For a full list of available exports, see the <a href="https://docs.recurly.com/docs/export-overview#exports-overview" target="_blank">exports overview</a>.
 
-<a class="rp-btn rp-btn-secondary" href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" target="_blank">Download complete export schema →</a>
+<a class="rp-btn-download" href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" target="_blank"><i class="fa-solid fa-arrow-down-to-line" aria-hidden="true"></i> Download complete export schema</a>
 
 ## Configuration
 
@@ -140,3 +145,5 @@ Retrieve your exports by polling the designated endpoint on the Recurly API usin
     <div><h4>Automate retrieval</h4><p>For ongoing operations, set up an automated job that polls the API on a schedule, downloads the export file, and loads it into your data warehouse. This removes the last remaining manual step and keeps your data fully in sync.</p></div>
   </div>
 </div>
+
+<br />
