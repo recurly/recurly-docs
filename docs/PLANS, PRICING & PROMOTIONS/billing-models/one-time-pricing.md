@@ -1,6 +1,9 @@
 ---
 title: One-time pricing
-excerpt: ''
+excerpt: >-
+  Recurly's one-time billing model lets merchants charge setup fees and sell
+  non-recurring items alongside subscriptions — or as standalone purchases —
+  using the item catalog.
 deprecated: false
 hidden: false
 metadata:
@@ -10,41 +13,108 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
 
-### Required plan
+<div class="rp-overview">
+One-time pricing gives you the flexibility to charge setup fees, sell standalone products, and add one-time items to any subscription — all managed through Recurly's item catalog.
+</div>
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-plan">
+  <i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available on all Recurly plans
+</div>
+
+<div class="rp-toc">
+  <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span> Definition</a>
+  <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span> Key benefits</a>
+  <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span> Key details</a>
+  <a class="rp-toc-pill" href="#set-up-one-time-billing"><span class="rp-toc-num">4</span> Set up one-time billing</a>
+</div>
+
+</div>
 
 # Definition
 
-The One-Time Billing Model from Recurly is designed for businesses that need to charge a one-time setup fee or sell non-recurring items in addition to their regular subscription charges. This model is perfect for a variety of scenarios, such as a gym membership that includes an initial equipment fee, IoT companies that sell devices bundled with an annual service fee, web stores that offer exclusive items to their subscribers, or SaaS companies that levy flat fees for professional services or unique events.
-
-Additionally, this pricing structure empowers merchants to sell products to their customers as standalone purchases, not tied to a subscription. Examples include a single purchase of a physical good, a Pay-Per-View event, or an educational course. This flexibility allows merchants to introduce additional revenue streams through one-time sales, enhancing their overall business model.
+<div class="rp-definition">
+Recurly's one-time billing model lets merchants charge a one-time fee — or sell non-recurring items — in addition to their regular subscription charges. It's also designed to support standalone purchases entirely outside of a subscription context. Whether you're a gym charging an equipment fee at signup, an IoT company bundling a device with an annual service plan, a web store selling exclusive items to subscribers, or a SaaS company invoicing flat fees for professional services, one-time pricing handles all of it through a single, consistent billing model.
+</div>
 
 # Key benefits
 
-* **Increased revenue streams:** Charging a one-time fee or selling additional items can significantly augment your revenue.
-* **Versatility:** It supports a broad spectrum of business types, from IoT to gyms, web stores, and SaaS companies.
-* **Ease of management:** The Catalog feature simplifies the management of one-time purchases.
-* **Customer engagement:** Offering additional one-time purchases can boost customer engagement and satisfaction.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>More revenue streams</strong>
+    <span>Charging a setup fee or selling additional items — physical goods, events, courses — creates new revenue opportunities without rebuilding your billing infrastructure.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+    <strong>Versatile by design</strong>
+    <span>Works across industries — IoT, fitness, web commerce, and SaaS — wherever you need to mix recurring and one-time charges in a single checkout flow.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-box-open" aria-hidden="true"></i></div>
+    <strong>Catalog-driven management</strong>
+    <span>The item catalog centralizes your one-time products with default pricing, SKU, accounting code, and tax configuration — ready to sell via API or UI.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+    <strong>Better customer engagement</strong>
+    <span>Giving subscribers access to exclusive one-time purchases — limited products, events, or services — deepens engagement and increases order value.</span>
+  </div>
+</div>
 
 # Key details
 
-The One-Time Billing Model leverages Recurly's Catalog feature for ease of recording and managing one-time purchases. With a default price setting and options to record commonly used attributes like SKU, accounting code, and tax information, the Catalog feature makes it straightforward to sell items via the Recurly API or the User Interface. This model is designed to give businesses more freedom and flexibility in how they charge their customers, enabling them to generate additional revenue from one-time purchases or setup fees.
+One-time billing in Recurly is built on two capabilities: plan setup fees and the item catalog. Used together or independently, they cover the full range of one-time charge scenarios.
 
-## Example
+**Setup fees** are configured at the plan level and charged once at the time of subscription creation — ideal for activation fees, onboarding charges, or initial hardware costs.
 
-| Industry  | Example                                                                                                     |
-| :-------- | :---------------------------------------------------------------------------------------------------------- |
-| Web Store | Rocksbox service offers members the option to purchase a broader selection of jewelry from their web store. |
-| SaaS      | TheHealthyBack charges a flat fee for professional services or one-time events.                             |
+**Item catalog** handles everything else: standalone products, add-on purchases, and any one-time item you want to sell to subscribers or non-subscribers alike. Each catalog item stores a default price and common attributes (SKU, accounting code, tax category) so you don't have to re-enter them at the point of sale.
 
-# Set up one-time billing model
+## Examples by industry
 
-1. **Incorporate a Setup Fee:** Each plan can have one set-up fee. This is ideal for businesses that require an initial investment from the customer, such as gyms, SaaS, or IoT companies.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row">
+    <td>Industry</td>
+    <td>One-time billing example</td>
+  </tr>
+  <tr>
+    <td>Web store</td>
+    <td>Rocksbox offers members the option to purchase additional jewelry from their web store — billed as a one-time charge alongside their subscription.</td>
+  </tr>
+  <tr>
+    <td>SaaS</td>
+    <td>TheHealthyBack charges a flat fee for professional services or one-time events through a purchase adjustment, not a recurring plan.</td>
+  </tr>
+</table>
 
-<Image align="center" className="border" width="50% " border={true} src="https://files.readme.io/d9b94cc-image.png" />
+# Set up one-time billing
 
-2. **Use the item catalog feature:** If your business sells one-time items, use Recurly's <a href="https://docs.recurly.com/docs/catalog" target="_blank">catalog</a>. feature to detail what you sell. This feature helps to record one-time purchases and set a default price. Additionally, it lets you document commonly used attributes such as SKU, accounting code, and tax information, making it easy to sell items via Recurly API or UI.
-3. **Implement one-time purchases:** In your checkout flow, create an adjustment on the account for the product through the Purchases endpoint. This endpoint allows for billing both recurring and one-time purchases together.
+<div class="rp-steps">
+
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Add a setup fee to your plan</h4>
+      <p>Each plan supports one setup fee, charged once when a customer subscribes. This is the right option for businesses that require an upfront investment at signup — gyms, IoT device activations, or SaaS onboarding charges.</p>
+      <span class="rp-zoom"><a class="rp-zoom-label" href="https://files.readme.io/d9b94cc-image.png" target="_blank"><img src="https://files.readme.io/d9b94cc-image.png" alt="Setup fee configuration in Recurly plan settings" /></a></span>
+    </div>
+  </div>
+
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Create your items in the catalog</h4>
+      <p>If your business sells one-time items, add them to Recurly's <a href="https://docs.recurly.com/docs/catalog" target="_blank">item catalog</a>. For each item, set a default price and fill in any commonly used attributes — SKU, accounting code, and tax information. This makes it straightforward to sell items through the Recurly API or directly from the UI without re-entering product details each time.</p>
+    </div>
+  </div>
+
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Implement one-time purchases at checkout</h4>
+      <p>In your checkout flow, create an adjustment on the customer's account for the product using the Purchases endpoint. This endpoint supports billing both recurring subscription charges and one-time purchases together in a single transaction — so your customers see one clean invoice.</p>
+    </div>
+  </div>
+
+</div>
