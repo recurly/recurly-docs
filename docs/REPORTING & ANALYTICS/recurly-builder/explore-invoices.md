@@ -1,5 +1,5 @@
 ---
-title: Explore - Invoices & Workbook Agent
+title: Explore - Invoices and workbook agent
 excerpt: >-
   The Invoices Explore feature is a is an interactive analytics tool that lets
   you slice and filter invoice-related data across accounts, subscriptions,
