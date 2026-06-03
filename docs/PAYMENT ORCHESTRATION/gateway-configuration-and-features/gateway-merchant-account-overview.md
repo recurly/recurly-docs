@@ -17,7 +17,9 @@ next:
 
 When a customer subscribes to your service, the credit card number or other payment instrument is sent from Recurly through a **payment gateway** to your **merchant account** and on to the **card issuer**, or other institution authorizing the transaction. Once the transaction has been approved, the transaction settles, and the merchant bank (Acquirer) ultimately funds you, the merchant, by transferring funds, minus fees, to your business bank account. If a transaction is declined, an error message is sent back through the system to Recurly with information on why and/or how to proceed. **Please note**, the granularity of the decline message is directly tied to a gateway's decline message availability. Some declines can be generic, and no further information is available to Recurly or the Gateway.
 
-![601](https://files.readme.io/3XhVM9NSCyhUigQ54EtO_transactionflow.png "transactionflow.png")
+
+<Image src="https://files.readme.io/393d40568ec94fb48407646431910507180c44cd589216c8591736a64e1ca7f3-transactionflow.png" align="center" />
+
 
 ## Payment Gateways
 
