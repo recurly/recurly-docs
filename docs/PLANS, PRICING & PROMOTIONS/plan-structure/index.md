@@ -26,13 +26,11 @@ next:
 </div>
 
 # Definition
-
 <div class="rp-definition">
   A plan structure is a strategic organization of your products and services. It brings together plans (recurring products), add-ons (additional services or products), and an item catalog (your full list of sellable units) into a single, manageable framework — simplifying how you define, sell, and track your offerings.
 </div>
 
 # Key benefits
-
 <div class="rp-benefits rp-benefits-2x2">
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
@@ -57,8 +55,7 @@ next:
 </div>
 
 # Key details
-
-<div class="rp-sdk-grid">
+<div class="rp-nav-grid">
   <Cards>
     <Card title="Plans" href="https://docs.recurly.com/docs/plans" target="_blank">
       Recurring billing products that define billing frequency and base price — the foundation of your revenue model.
