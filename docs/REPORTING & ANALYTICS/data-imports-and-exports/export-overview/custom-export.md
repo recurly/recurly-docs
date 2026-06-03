@@ -1,5 +1,5 @@
 ---
-title: Custom Exports
+title: Custom exports
 excerpt: >-
   Get a tailored data extract with exactly which information you need to meet
   your business needs
