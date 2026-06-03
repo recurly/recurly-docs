@@ -94,6 +94,8 @@ One-time billing in Recurly is built on two capabilities: plan setup fees and th
 
 # Set up one-time billing
 
+<span id="rp-close"></span>
+
 <div class="rp-steps">
 
   <div class="rp-step">
@@ -101,9 +103,21 @@ One-time billing in Recurly is built on two capabilities: plan setup fees and th
     <div>
       <h4>Add a setup fee to your plan</h4>
       <p>Each plan supports one setup fee, charged once when a customer subscribes. This is the right option for businesses that require an upfront investment at signup — gyms, IoT device activations, or SaaS onboarding charges.</p>
-      <span class="rp-zoom"><a class="rp-zoom-label" href="https://files.readme.io/d9b94cc-image.png"><img src="https://files.readme.io/d9b94cc-image.png" alt="Setup fee configuration in Recurly plan settings" /></a></span>
     </div>
   </div>
+
+</div>
+
+<span class="rp-zoom">
+  <a class="rp-zoom-label" href="#zoom-d9b94cc">
+    <img class="rp-zoom-img" src="https://files.readme.io/d9b94cc-image.png" alt="Setup fee configuration in Recurly plan settings" />
+  </a>
+  <a id="zoom-d9b94cc" class="rp-zoom-overlay" href="#rp-close">
+    <img src="https://files.readme.io/d9b94cc-image.png" alt="" />
+  </a>
+</span>
+
+<div class="rp-steps">
 
   <div class="rp-step">
     <div class="rp-step-num">2</div>
