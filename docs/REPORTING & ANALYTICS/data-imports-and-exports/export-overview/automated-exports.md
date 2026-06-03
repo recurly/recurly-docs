@@ -82,7 +82,7 @@ next:
 
 For a full list of available exports, see the <a href="https://docs.recurly.com/docs/export-overview#exports-overview" target="_blank">exports overview</a>.
 
-<a class="rp-dl-btn" href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" target="_blank">Download complete export schema →</a>
+<a class="rp-btn rp-btn-secondary" href="https://docs.google.com/spreadsheets/d/1U0_Wl_NMScJqKBZoBKMmQnybmLEr0gFi6r7dfNiP9Qc/export?format=xlsx" target="_blank">Download complete export schema →</a>
 
 ## Configuration
 
@@ -140,5 +140,3 @@ Retrieve your exports by polling the designated endpoint on the Recurly API usin
     <div><h4>Automate retrieval</h4><p>For ongoing operations, set up an automated job that polls the API on a schedule, downloads the export file, and loads it into your data warehouse. This removes the last remaining manual step and keeps your data fully in sync.</p></div>
   </div>
 </div>
-
-<br />
