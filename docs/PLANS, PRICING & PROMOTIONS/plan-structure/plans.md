@@ -14,11 +14,6 @@ metadata:
 next:
   description: ''
 ---
-Title: One-time pricing
-Metadata description: Recurly's one-time billing model lets merchants charge setup fees and sell non-recurring items alongside subscriptions — or as standalone purchases — using the item catalog.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
 
 <div class="rp-overview">
