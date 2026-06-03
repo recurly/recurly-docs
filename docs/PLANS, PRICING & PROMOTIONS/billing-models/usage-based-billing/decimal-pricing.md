@@ -1,10 +1,9 @@
 ---
 title: Decimal pricing
 excerpt: >-
-  This document details the concept of Decimal Pricing, its implementation in
-  various business models, and the benefits it brings. It is a comprehensive
-  guide designed to help businesses understand and utilize decimal pricing
-  efficiently.
+  Recurly's decimal pricing supports up to nine decimal places for usage add-on
+  unit prices, enabling precise per-unit billing for businesses whose
+  cost-per-unit is a fractional value.
 deprecated: false
 hidden: false
 metadata:
@@ -14,62 +13,150 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<span id="rp-close"></span>
 
-### Required plan
+<div class="rp-page">
+<div class="rp-overview">
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+Decimal pricing lets you set usage add-on prices with up to nine decimal places — so businesses charging fractions of a cent per unit can bill accurately without rounding errors at the unit level.
+
+</div>
+<div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i>&nbsp; Available on all Recurly plans</div>
+<div class="rp-toc">
+  <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span> Definition</a>
+  <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span> Key benefits</a>
+  <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span> Key details</a>
+  <a class="rp-toc-pill" href="#set-up-decimal-pricing"><span class="rp-toc-num">4</span> Set up decimal pricing</a>
+  <a class="rp-toc-pill" href="#integration-support"><span class="rp-toc-num">5</span> Integration support</a>
+</div>
+</div>
 
 # Definition
 
-Decimal pricing is a pricing method that is ideal for businesses which require non-integer pricing models. For instance, a company providing video streaming services might charge $0.005 per GB of data consumed monthly, then calculate the total charge by multiplying the overall data usage with this unit price and rounding it to the closest cent.
+<div class="rp-definition">
+
+Decimal pricing is a pricing method for businesses that need non-integer unit prices. Instead of rounding prices to the nearest cent at configuration time, you define a precise per-unit cost — up to nine decimal places — and Recurly calculates the invoice total by multiplying usage by that unit price, rounding only the final line item to the currency's supported precision. For example, a video streaming company charging $0.005 per GB sets that exact price, and the total is computed correctly regardless of how much data a customer consumes.
+
+</div>
 
 # Key benefits
 
-* **Precise & flexible pricing**: This model caters to diverse consumption patterns, ensuring every user finds a suitable pricing plan.
-* **Efficient service charge calculation**: The clarity in service charge calculations ensures transparency and accuracy.
-* **Diverse integration support**: The platform is compatible with various pricing models and services, enhancing its adaptability to business needs.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+    <strong>Precise, flexible pricing</strong>
+    <span>Support diverse consumption patterns with fractional unit prices — so every customer is charged accurately for exactly what they use.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-receipt" aria-hidden="true"></i></div>
+    <strong>Accurate charge calculation</strong>
+    <span>Rounding happens at the invoice line item total, not the unit price — keeping calculations transparent and correct for both customers and finance teams.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
+    <strong>Broad integration compatibility</strong>
+    <span>Decimal pricing works across fixed, tiered, volume, and stairstep pricing models, and passes through to supported integration partners.</span>
+  </div>
+</div>
 
-# A new standard for business: decimal pricing
+# Key details
 
-Decimal pricing provides a strategic advantage for enterprises needing to formulate pricing values that aren't integers. It is perfect for situations where the cost per unit of consumption is a decimal figure. For instance, if a video streaming company charges $0.005 for every GB of data used monthly, the total bill is calculated by multiplying the usage with $0.005, and rounding off the result to the nearest cent.
+## Plans and subscriptions
 
-## Decimal pricing application in plans and subscriptions
+Decimal pricing is applied through usage add-ons, created via the Admin Console, the <a href="https://developers.recurly.com/api/v2021-02-25/index.html" target="_blank">V3 API (2021-02-25)</a>, or the <a href="https://recurly.com/developers/api-v2/v2.29/#tag/subscription-usage-records" target="_blank">V2 API</a>.
 
-Decimal pricing can be employed via the creation of a usage add-on through the Admin Console, V3 API (<a href="https://developers.recurly.com/api/v2021-02-25/index.html" target="_blank">2021-02-25</a>), or V2 API (<a href="https://recurly.com/developers/api-v2/v2.29/#tag/subscription-usage-records" target="_blank">here</a>). When indicating pricing in the API, use unit\_amount\_decimal. Decimal pricing caters for up to 9 decimal places in fixed, tiered, volume, and stair step pricing models. When unit\_amount\_decimal is provided, the unit\_amount field is automatically set to null. The plan's predefined prices are used by default when creating a subscription, but you can alter these prices if needed.
+When setting pricing via the API, use the `unit_amount_decimal` field. Decimal pricing supports up to nine decimal places across fixed, tiered, volume, and stairstep pricing models. When `unit_amount_decimal` is provided, `unit_amount` is automatically set to null. A plan's predefined prices are used by default when creating a subscription, but you can override them per subscription as needed.
 
-## Invoices and decimal pricing
+## Invoices
 
-Invoice line item totals are rounded to the decimal values supported by the currency, and the unit\_amount\_decimal value is displayed on the invoices. For API responses, the decimal pricing is stored in the unit\_amount\_decimal field, while the unit\_amount field remains null.
+Invoice line item totals are rounded to the decimal precision supported by the currency. The `unit_amount_decimal` value is displayed on the invoice. In API responses, the decimal price is stored in `unit_amount_decimal` — `unit_amount` will be null.
 
-## Refunding decimal pricing
+## Refunds
 
-Recurly limits refunds to the invoice amount, preventing over-refunding customers. The recommended method is to use line-item refunds for clarity on refunded products. In an open amount refund with decimal pricing, Recurly rounds the amount and refundable quantity to be equivalent to the remaining refundable amount. This might cause minor discrepancies in the refund price, but it will prevent over-refunding. 
+Recurly limits refunds to the invoice amount to prevent over-refunding. Line-item refunds are recommended for clarity on which products are being refunded. For open-amount refunds with decimal pricing, Recurly rounds the amount and refundable quantity to stay within the remaining refundable amount — this may cause minor per-unit discrepancies, but prevents over-refunding.
 
 ## Emails
 
-The unit\_amount\_decimal values are automatically filled into the unit\_amount parameter in emails. If you display invoice line items in your emails, they will automatically work when you start using decimal pricing.  
+The `unit_amount_decimal` value is automatically mapped to the `unit_amount` parameter in email templates. If your templates already display invoice line items, they'll work correctly with decimal pricing without any changes.
 
 ## Exports
 
-Subscription Add-Ons, Subscription Add Ons History, and Subscription Add Ons Usage exports include a unit\_amount\_decimal column to be used when decimal pricing is applied.
+The following exports include a `unit_amount_decimal` column when decimal pricing is in use:
+
+- Subscription Add-Ons
+- Subscription Add-Ons History
+- Subscription Add-Ons Usage
 
 ## Webhooks
 
-Subscription notifications will include a unit\_amount\_in\_decimal\_cents value when decimal pricing is used. The unit\_amount will be null when decimal pricing is used.
+Subscription notifications include a `unit_amount_in_decimal_cents` value when decimal pricing is active. The `unit_amount` field will be null in these cases.
 
-## Guide to activate decimal pricing
+# Set up decimal pricing
 
-1. **Enable Required Features**: Merchants with sites created on or before May 7th, 2018 need to make sure they enable Credit Invoices and Only Bill What Changed to leverage decimal pricing. You can turn these on via the Invoice Settings page.
-2. **Access the Admin Console**: Go to the Admin Console or use V3 API.
-3. **Create Usage Add-on**: Create a usage add-on where you need to apply decimal pricing.
-4. **Specify Pricing in API**: When setting the pricing in the API, use the 'unit\_amount\_decimal' parameter.
-5. **Confirm Changes**: Check the plan's predefined prices and adjust them if necessary.
-6. **Start Using Decimal Pricing**: After successful setup, you can start using decimal pricing in your plans and subscriptions.
-7. **Track and Refine**: Monitor the performance and make necessary changes based on the feedback and analytics.
+<div class="rp-callout rp-callout-note">
+<strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Legacy site requirement</strong>
+
+If your Recurly site was created on or before May 7, 2018, you must enable Credit Invoices and Only Bill What Changed before using decimal pricing. Both settings are available on the Invoice Settings page.
+
+</div>
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Enable required features (legacy sites only)</h4>
+      <p>For sites created on or before May 7, 2018: navigate to Invoice Settings and enable Credit Invoices and Only Bill What Changed.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Create a usage add-on</h4>
+      <p>In the Admin Console or via the V3 API, create the usage add-on where you want to apply decimal pricing.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Set the decimal unit price</h4>
+      <p>When configuring pricing via the API, use the <code>unit_amount_decimal</code> parameter to specify your per-unit price. The <code>unit_amount</code> field will be set to null automatically.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div>
+      <h4>Confirm plan prices</h4>
+      <p>Review the plan's predefined prices and adjust any subscription-level overrides as needed.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div>
+      <h4>Monitor and refine</h4>
+      <p>After go-live, review invoices and exports to confirm charges are calculating as expected. Adjust unit prices based on usage analytics and customer feedback.</p>
+    </div>
+  </div>
+</div>
 
 # Integration support
 
-* The Xero integration supports up to 4 decimal places for the unit\_price. Some prices in Xero will round to two decimal places. The line item total charge will always be correct but the price is limited by the decimals Xero supports.
-* The Quickbooks Online integration supports up to 7 decimal places. The line item total charge will always be correct but the price is limited by the decimals Quickbooks Online supports.
-* Netsuite integration does not currently support decimal pricing. Reach out to [support@recurly.com](mailto:support@recurly.com) if this is a need for your business
+<table class="rp-gw-table">
+  <tr class="rp-thead-row">
+    <td>Integration</td>
+    <td>Decimal support</td>
+  </tr>
+  <tr>
+    <td>Xero</td>
+    <td>Supports up to four decimal places for unit price. Prices may round to two decimal places in Xero's display, but the line item total charge is always correct.</td>
+  </tr>
+  <tr>
+    <td>QuickBooks Online</td>
+    <td>Supports up to seven decimal places. The line item total charge is always correct, though the displayed unit price is limited by QuickBooks Online's precision.</td>
+  </tr>
+  <tr>
+    <td>NetSuite</td>
+    <td>Does not currently support decimal pricing. Contact <a href="mailto:support@recurly.com">support@recurly.com</a> if this is a requirement for your business.</td>
+  </tr>
+</table>
+
+<br />
