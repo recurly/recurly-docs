@@ -65,14 +65,14 @@ metadata:
 
 Every invoice line item displays the following columns:
 
-* **Date**
-* **Description**
-* **Quantity**
-* **Price**
-* **Discount** (when applied)
-* **Subtotal**
-* **Tax** (including rate, when applicable)
-* **Total** (only shown if tax is applied)
+- **Date**
+- **Description**
+- **Quantity**
+- **Price**
+- **Discount** (when applied)
+- **Subtotal**
+- **Tax** (including rate, when applicable)
+- **Total** (only shown if tax is applied)
 
 <div class="rp-callout rp-callout-note">
   <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Invoices in the Admin Console, Hosted Invoice page, and PDF format show only the first 500 line items. However, Subtotal, Tax, and Total always reflect all line items — including those beyond the first 500. To download the full set, use the <a href="https://docs.recurly.com/docs/adjustments-exports" target="_blank">Adjustments Export</a>.</div>
@@ -84,28 +84,32 @@ Well-named line items matter beyond readability. They're required for Commercial
 
 If your gateway is not HIPAA-compliant, do not include protected health information (PHI) in invoice descriptions, product codes, plan names, or line item data.
 
-<div class="rp-sdk-grid">
+<div class="rp-nav-grid">
+
 <Cards columns={4}>
-  <Card title="Be specific" icon="fa-check-circle" target="_blank">
+  <Card title="Be specific">
     Use clear, descriptive names rather than generic labels like "Item 1" or "Charge."
   </Card>
-  <Card title="Match the product" icon="fa-apple-whole" target="_blank">
+  <Card title="Match the product">
     If you sell fruit, list "Apple," "Orange," and "Banana" rather than "Fruits."
   </Card>
-  <Card title="Avoid business names" icon="fa-building" target="_blank">
+  <Card title="Avoid business names">
     Don't repeat your company name in item names or descriptions — for example, "Fruit Shop Items."
   </Card>
-  <Card title="Skip single-character names" icon="fa-font" target="_blank">
+  <Card title="Skip single-character names">
     Avoid names that are a single character or all symbols — they confuse customers and fail compliance checks.
   </Card>
-  <Card title="Where descriptions appear" icon="fa-file-invoice" target="_blank">
+  <Card title="Where descriptions appear">
     Subscriber invoices, Hosted Account Management pages, and Hosted Invoice PDFs.
   </Card>
-  <Card title="Character limit" icon="fa-text-width" target="_blank">
+  <Card title="Character limit">
     Descriptions must be 255 characters or fewer.
   </Card>
-  <Card title="Special character tip" icon="fa-circle-info" target="_blank">
+  <Card title="Special character tip">
     Check with your payment gateway about any restrictions on special characters before using them in names or descriptions.
   </Card>
 </Cards>
+
 </div>
+
+<br />
