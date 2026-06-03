@@ -23,27 +23,29 @@ This payment gateway or setting is available to all customers on any Recurly sub
 
 ### Prerequisites
 
-* Established commercial agreements with WorldPay and Ebanx to facilitate local transactions.
-  * WorldPay also supports dLocal but is not provisioning new accounts for that relationship. For merchants that do not already have a dLocal account, connect with Worldpay on an Ebanx solution.
-* For **Argentinian** processing:
-  * An active Recurly account with Argentine Peso (ARS) currency support
-  * WorldPay payment gateway configured for ARS transactions.
-  * A WorldPay merchant account optimized for handling ARS and capable of performing Zero Dollar Authorizations (ZDA).
-* For **Direct Debit** processing:
-  * An active Recurly account with Euros (EUR) currency support for SEPA, and/or USD for ACH support.
-  * WorldPay payment gateway configured for SEPA / EUR and mandate tokenization support.
-  * WorldPay NACHA pre-verification check enabled for ACH / USD compliance.
+- Established commercial agreements with WorldPay and Ebanx to facilitate local transactions.
+  - WorldPay also supports dLocal but is not provisioning new accounts for that relationship. For merchants that do not already have a dLocal account, connect with Worldpay on an Ebanx solution.
+- For **Argentinian** processing:
+  - An active Recurly account with Argentine Peso (ARS) currency support
+  - WorldPay payment gateway configured for ARS transactions.
+  - A WorldPay merchant account optimized for handling ARS and capable of performing Zero Dollar Authorizations (ZDA).
+- For **TLID (Transaction Link ID)** storage and usage:&#x20;
+  - WorldPay does not automatically return TLIDs on accounts. If you are using this gateway, you must contact WorldPay to start returning this information for Mastercard transactions.
+- For **Direct Debit** processing:
+  - An active Recurly account with Euros (EUR) currency support for SEPA, and/or USD for ACH support.
+  - WorldPay payment gateway configured for SEPA / EUR and mandate tokenization support.
+  - WorldPay NACHA pre-verification check enabled for ACH / USD compliance.
 
 ### Limitations and Requirements
 
-* **ZDA Limitations**
-  * The Tarjeta Naranja card brand does not support ZDA; verifications for this card are processed with a one-dollar charge.
-  * WorldPay SEPA does not support free-trial subscriptions or verification transactions. As a result, WorldPay SEPA billing info updates must occur within the process of processing a transaction.
-* **Tax ID and Sales Tax Requirements**
-  * Transactions require the submission of a tax ID (ex: CUIT) with each transaction in many LATAM countries.
-    * If you are using CUIT, CPF, or CNPJ tax types, you must specify the type via API, else send the tax ID without a`tax_identifier_type`.
-  * Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
-* Check if your business is on Worldpay's list of [Prohibited Business types](http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm).
+- **ZDA Limitations**
+  - The Tarjeta Naranja card brand does not support ZDA; verifications for this card are processed with a one-dollar charge.
+  - WorldPay SEPA does not support free-trial subscriptions or verification transactions. As a result, WorldPay SEPA billing info updates must occur within the process of processing a transaction.
+- **Tax ID and Sales Tax Requirements**
+  - Transactions require the submission of a tax ID (ex: CUIT) with each transaction in many LATAM countries.
+    - If you are using CUIT, CPF, or CNPJ tax types, you must specify the type via API, else send the tax ID without a`tax_identifier_type`.
+  - Certain regions require Sales Tax be applied to the transaction. Check with Worldpay for details and ensure you have Sales Tax configured in your Recurly Site. See our [sales tax documentation](https://docs.recurly.com/docs/tax#/) for instructions.
+- Check if your business is on Worldpay's list of [Prohibited Business types](http://support.worldpay.com/support/kb/gg/billdesk/content/prohibitedmerchantcategories.htm).
 
 > 🚧 Warning
 >
@@ -161,10 +163,10 @@ Supported Regions:
       </td>
 
       <td>
-        * _ARS_* (Visa, MC, Amex, Discover, JCB, Diner's Club, _Tarjeta Naranja_)
-        * _Else_*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
-        * _USD_* for ACH processing.
-        * _EUR_* for SEPA processing.
+        - _ARS_\* (Visa, MC, Amex, Discover, JCB, Diner's Club, _Tarjeta Naranja_)
+        - _Else_\*: USD, ANG, AUD, BRL, CAD, CHF, CLP, CNY, COP, CZK, DKK, EUR, KES, BDT, BBD, AOA, AED, VND, LKR, SAR, RON, PKR, NGN, HNL, BGN, IDR, UYU, PYG, PAB, GTQ, CRC, BOB, MYR, PEN, TRY, GBP, HKD, HRK, HUF, ILS, INR, ISK, JPY, KRW, MXN, NOK, NZD, PLN, RUB, SEK, SGD, THB, VEF, ZAR, TWD, PHP
+        - _USD_\* for ACH processing.
+        - _EUR_\* for SEPA processing.
       </td>
     </tr>
   </tbody>
@@ -218,37 +220,37 @@ Find additional guidance in the [technical documentation](https://developers.rec
 Leveraging the WorldPay global gateway for your business involves a streamlined process. Follow the detailed steps below to enable this gateway seamlessly:
 
 1. **Enable global currencies on your Recurly site**
-   * Log in to your Recurly account.
-   * Navigate to the currency settings and enable Argentine Peso (ARS) as a supported currency if you are processing in Argentina and wish to accept the Tarjeta Naranja card. Otherwise, add applicable global currencies to your account.
+   - Log in to your Recurly account.
+   - Navigate to the currency settings and enable Argentine Peso (ARS) as a supported currency if you are processing in Argentina and wish to accept the Tarjeta Naranja card. Otherwise, add applicable global currencies to your account.
 2. **Configure WorldPay as your payment Gateway**
-   * Still in your Recurly dashboard, go to payment gateways.
-   * Select and configure WorldPay as your payment gateway, ensuring it's set up to accept your supported currencies.
+   - Still in your Recurly dashboard, go to payment gateways.
+   - Select and configure WorldPay as your payment gateway, ensuring it's set up to accept your supported currencies.
 3. **Enable Tarjeta Naranja if applicable** for LATAM processing
-   * Within your WorldPay gateway settings in Recurly, find and toggle on the option to accept payments through Tarjeta Naranja.
+   - Within your WorldPay gateway settings in Recurly, find and toggle on the option to accept payments through Tarjeta Naranja.
 4. **Enable SEPA if applicable**
    1. Ensure you have EUR currency enabled on your site, at WorldPay, and in the gateway configuration.
 5. **Enable ACH if applicable**
    1. Ensure you have USD currency enabled on your site, at WorldPay, and in the gateway configuration. You also need to ensure you have NACHA verification and fraud flows enabled at WorldPay.
 6. **Establish commercial relationships**
-   * Set up commercial relationships with both WorldPay and either Ebanx or dLocal. If necessary, contact [partnerships@recurly.com](mailto:partnerships@recurly.com) for introductions.
+   - Set up commercial relationships with both WorldPay and either Ebanx or dLocal. If necessary, contact [partnerships@recurly.com](mailto:partnerships@recurly.com) for introductions.
 
 ### Settings on the Gateway Side
 
 Setting up your WorldPay account correctly is crucial in ensuring smooth transactions. Here’s how you can go about it:
 
 1. **Initiate WorldPay integration**
-   * Reach out to the WorldPay integration team to kickstart the setup process for your WorldPay account.
+   - Reach out to the WorldPay integration team to kickstart the setup process for your WorldPay account.
 2. **Enable local currencies and zero dollar authorizations**
-   * Ensure that your WorldPay account is configured to support local currencies, including enabling zero-dollar authorizations (ZDA).
-   * Understand the specifics about ZDA, especially in relation to Tarjeta Naranja, which does not support ZDA and processes verifications with a one-dollar charge.
+   - Ensure that your WorldPay account is configured to support local currencies, including enabling zero-dollar authorizations (ZDA).
+   - Understand the specifics about ZDA, especially in relation to Tarjeta Naranja, which does not support ZDA and processes verifications with a one-dollar charge.
 3. **Integration with Ebanx or dLocal**
-   * Establish a functioning relationship with Ebanx or dLocal, integrating them appropriately with your WorldPay account. You do not need to integrate _directly_ to Ebanx or dLocal.
+   - Establish a functioning relationship with Ebanx or dLocal, integrating them appropriately with your WorldPay account. You do not need to integrate _directly_ to Ebanx or dLocal.
 4. **Setting up transaction details**
-   * Be prepared to collect tax ID information, such as the CUIT (tax ID) from your global customers during the initial transactions. If you are not using one of CUIT, CPF, or CNPJ, you can send the Tax ID field without a type definition.
-   * Configure your system to include fields for the tax identifier and its type during the payment process, aligning it to send this information correctly with each transaction to comply with the Argentine regulations.
+   - Be prepared to collect tax ID information, such as the CUIT (tax ID) from your global customers during the initial transactions. If you are not using one of CUIT, CPF, or CNPJ, you can send the Tax ID field without a type definition.
+   - Configure your system to include fields for the tax identifier and its type during the payment process, aligning it to send this information correctly with each transaction to comply with the Argentine regulations.
 5. **Testing**
 
-* Before going live, rigorously test the setup to ensure all elements work harmoniously and comply with the regional requirements.
+- Before going live, rigorously test the setup to ensure all elements work harmoniously and comply with the regional requirements.
 
 By carefully following this step-by-step process, you will have the WorldPay global gateway up and running, ready to facilitate transactions in the global market efficiently. Ensure to refer to the [technical documentation](https://developers.recurly.com/) for any technical assistance during the setup.
 
