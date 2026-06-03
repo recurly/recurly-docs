@@ -7,7 +7,7 @@ excerpt: >-
 deprecated: false
 hidden: false
 metadata:
-  title: custom export
+  title: Custom exports
   robots: index
 ---
 <span id="rp-close"></span>
