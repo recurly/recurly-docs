@@ -5,7 +5,7 @@ excerpt: >-
   Recurly-configured data exports — including destination, schedule, and
   credential status — for AWS S3, Google Drive, and SFTP targets.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: custom export
   robots: index
