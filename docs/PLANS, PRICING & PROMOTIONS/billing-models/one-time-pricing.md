@@ -13,15 +13,12 @@ metadata:
 next:
   description: ''
 ---
-Title: One-time pricing
-Metadata description: Recurly's one-time billing model lets merchants charge setup fees and sell non-recurring items alongside subscriptions — or as standalone purchases — using the item catalog.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
 
 <div class="rp-overview">
+
 One-time pricing gives you the flexibility to charge setup fees, sell standalone products, and add one-time items to any subscription — all managed through Recurly's item catalog.
+
 </div>
 
 <div class="rp-plan">
@@ -40,7 +37,9 @@ One-time pricing gives you the flexibility to charge setup fees, sell standalone
 # Definition
 
 <div class="rp-definition">
+
 Recurly's one-time billing model lets merchants charge a one-time fee — or sell non-recurring items — in addition to their regular subscription charges. It's also designed to support standalone purchases entirely outside of a subscription context. Whether you're a gym charging an equipment fee at signup, an IoT company bundling a device with an annual service plan, a web store selling exclusive items to subscribers, or a SaaS company invoicing flat fees for professional services, one-time pricing handles all of it through a single, consistent billing model.
+
 </div>
 
 # Key benefits
@@ -123,3 +122,5 @@ One-time billing in Recurly is built on two capabilities: plan setup fees and th
   </div>
 
 </div>
+
+<br />
