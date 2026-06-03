@@ -9,11 +9,6 @@ hidden: false
 metadata:
   robots: index
 ---
-Title: Data retention
-Metadata description: Configure automatic redaction of inactive account payment method and PII data after defined retention periods to support GDPR and data minimization requirements.
-
----PASTE INTO EDITOR BELOW---
-
 <div class="rp-page">
   <div class="rp-overview">Data Retention Settings lets site administrators automatically redact inactive account data on a schedule you control. You set independent retention windows for payment method data and full personally identifiable information (PII) — keeping you compliant with GDPR and similar regulations without any manual effort.</div>
   <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
