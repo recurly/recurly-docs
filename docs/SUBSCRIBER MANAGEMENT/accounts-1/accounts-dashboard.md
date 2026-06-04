@@ -47,13 +47,9 @@ next:
 
 # Definition
 
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#zoom-accounts-dashboard">
-    <img class="rp-zoom-img"
-         src="https://files.readme.io/d74cea9-image.png"
-         alt="Recurly Accounts dashboard interface" />
-  </a>
-</span>
+
+<Image src="https://files.readme.io/d74cea9-image.png" align="center" width="75%" border={true} />
+
 
 <div class="rp-definition">Accounts Management in Recurly is the organized interface for handling all customer account activity — from monitoring subscriptions and billing information to searching, creating, updating, closing, or deleting accounts as your business requires.</div>
 
