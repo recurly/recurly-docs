@@ -1,8 +1,9 @@
 ---
 title: Accounts
 excerpt: >-
-  Master your subscribers' details and transactions with Recurly's comprehensive
-  Accounts section, tailoring the experience for each user.
+  Manage all subscriber-related details in Recurly, including account
+  hierarchies, billing and shipping addresses, and payment methods via the
+  Subscriber Wallet.
 deprecated: false
 hidden: false
 metadata:
@@ -12,48 +13,73 @@ metadata:
 next:
   description: ''
 ---
+<div class="rp-page">
+  <div class="rp-overview">The Accounts section in Recurly is your centralized hub for managing all subscriber-related details — from hierarchical structures to billing addresses, shipping, and payment methods. It's designed to keep your subscriber operations organized and efficient at every scale.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
+
 # Definition
 
-The Accounts section in Recurly provides a centralized hub to manage all subscriber-related details, from hierarchical structures to billing and shipping addresses. This essential feature ensures organized, streamlined operations and subscriber management for businesses using Recurly.
+<div class="rp-definition">Accounts in Recurly represent individual subscribers and serve as the single source of truth for all their associated data — subscriptions, invoices, transactions, billing addresses, shipping addresses, and payment methods. Every interaction a subscriber has with your business flows through their account record.</div>
 
-### Dates and Times
+### Dates and times
 
 Recurly records all transactions in **UTC** as the underlying billing timezone. Any dates or times shown on Accounts are automatically converted from UTC to the local time specified in your site settings.
 
 # Key benefits
 
-* **Centralized subscriber management:** One-stop location for all subscriber-related data and actions.
-* **Flexibility in billing:** Enables structured invoice rollups within account hierarchies for efficient billing processes.
-* **Geographic customization:** Manage specific details for countries, provinces, and states, ensuring accurate billing and shipping.
-* **Streamlined shipping management:** Allocate and manage shipping addresses efficiently for each purchase.
-* **Enhanced payment solutions:** The Subscriber Wallet feature facilitates multiple payment methods, providing flexibility and convenience for subscribers.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Centralized subscriber management</strong>
+    <span>One location for all subscriber-related data and actions — no hunting across multiple screens.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Flexible billing structures</strong>
+    <span>Invoice rollups within account hierarchies consolidate billing for enterprise clients with multiple subdivisions.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Geographic customization</strong>
+    <span>Manage country-, province-, and state-specific details to keep billing and shipping accurate across every region.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Multiple payment methods</strong>
+    <span>The Subscriber Wallet lets subscribers store and choose from multiple payment methods, reducing friction at renewal.</span>
+  </div>
+</div>
 
 # Key details
 
-## Account hierarchy
-
-Recurly's [Account Hierarchy](https://docs.recurly.com/docs/account-hierarchy-1) is designed to showcase the relationships between different subscriber accounts. It facilitates understanding parent-child, or primary and linked, account relationships, beneficial for businesses with enterprise clients having multiple subdivisions.
-
-## Account hierarchy - invoice rollup
-
-[Invoice Rollup](https://docs.recurly.com/docs/ah-invoice-rollup) is an ingenious feature that aggregates invoices from child accounts to the parent account, streamlining the billing process. This is particularly handy for businesses looking to consolidate billing for enterprise clients.
-
-## Countries, provinces, and states
-
-Customize and manage subscriber details according to their [geographical location](https://docs.recurly.com/docs/countries-provinces-and-states). This feature ensures accuracy in data recording, billing, and shipping, catering to the specific requirements of countries, provinces, or states.
-
-## Shipping addresses
-
-Manage and allocate the correct [shipping addresses](https://docs.recurly.com/docs/shipping-addresses) for your subscribers, ensuring timely and accurate deliveries. Recurly allows businesses to efficiently handle multiple shipping addresses for various purchases.
-
-## Shipping addresses per purchase
-
-Go one step further by assigning specific [shipping addresses to individual purchases](https://docs.recurly.com/docs/shipping-address-per-line-item). Tailor each transaction to your subscriber's needs, elevating their experience.
-
-## Subscriber wallet
-
-Recurly's [Subscriber Wallet](https://docs.recurly.com/docs/wallet) is a versatile tool, allowing subscribers to store multiple payment methods, granting them the flexibility to choose how they wish to pay..
-
-## Subscriber wallet implementation guide
-
-To ensure the efficient usage and integration of the Subscriber Wallet, Recurly provides a detailed [implementation guide](https://docs.recurly.com/docs/wallet-implementation-guide). This guide walks businesses through the setup and operational processes, ensuring a seamless experience for both the business and its subscribers.
+<div class="rp-nav-grid">
+<Cards>
+  <Card title="Account hierarchy" href="https://docs.recurly.com/docs/account-hierarchy-1" target="_blank">
+    Model parent-child account relationships for enterprise clients with multiple subdivisions.
+  </Card>
+  <Card title="Account hierarchy — invoice rollup" href="https://docs.recurly.com/docs/ah-invoice-rollup" target="_blank">
+    Aggregate invoices from child accounts up to the parent account to consolidate billing.
+  </Card>
+  <Card title="Countries, provinces, and states" href="https://docs.recurly.com/docs/countries-provinces-and-states" target="_blank">
+    Customize subscriber details by geographic location to ensure accuracy in billing and shipping records.
+  </Card>
+  <Card title="Shipping addresses" href="https://docs.recurly.com/docs/shipping-addresses" target="_blank">
+    Manage and allocate shipping addresses for each subscriber to support timely, accurate deliveries.
+  </Card>
+  <Card title="Shipping addresses per purchase" href="https://docs.recurly.com/docs/shipping-address-per-line-item" target="_blank">
+    Assign a specific shipping address to individual line items within a purchase.
+  </Card>
+  <Card title="Subscriber Wallet" href="https://docs.recurly.com/docs/wallet" target="_blank">
+    Store multiple payment methods on a subscriber's account so they can choose how they pay.
+  </Card>
+  <Card title="Subscriber Wallet implementation guide" href="https://docs.recurly.com/docs/wallet-implementation-guide" target="_blank">
+    Step-by-step setup and operational guidance for integrating the Subscriber Wallet into your workflow.
+  </Card>
+</Cards>
+</div>
