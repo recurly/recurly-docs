@@ -205,9 +205,11 @@ Provide the `recurly-signature` header, your endpoint's secret key, and the raw 
 
 ```ruby
 begin
-  Recurly::Webhooks.verify_signature(header,
-                                     ENV['WEBHOOKS_KEY'],
-                                     request.body)
+  Recurly::Webhooks.verify_signature(
+    header,
+    ENV['WEBHOOKS_KEY'],
+    request.body
+  )
 rescue Recurly::Errors::SignatureVerificationError => e
   puts e.message
 end
