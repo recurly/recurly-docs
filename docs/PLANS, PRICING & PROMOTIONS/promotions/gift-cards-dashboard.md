@@ -1,9 +1,8 @@
 ---
 title: Gift cards dashboard
 excerpt: >-
-  Effortlessly manage and track your gift card transactions with Recurly's Gift
-  Cards Dashboard. Streamline gift card operations and enhance customer
-  engagement in a single, user-friendly interface.
+  Use the Gift Cards dashboard to search, view, and manage gift card
+  transactions — including status filtering, delivery edits, and exports.
 deprecated: false
 hidden: false
 metadata:
@@ -13,70 +12,115 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<span id="rp-close"></span>
 
-### Required plan
+<div class="rp-page">
+  <div class="rp-overview">
+    The Gift Cards dashboard is your central hub for locating and managing all gift card activity. Search by redemption code, gifter name, or recipient name — then drill into any card for full transaction details, delivery management, and cancellation controls.
+  </div>
 
-This feature or setting is available if you have the Gift Cards feature activated in your account.
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available when the Gift Cards feature is activated</div>
 
-### Prerequisites
-
-* Active Recurly account with administrative privileges.
-* Gift cards feature activated.
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#dashboard"><span class="rp-toc-num">3</span>Dashboard</a>
+    <a class="rp-toc-pill" href="#gift-card-details"><span class="rp-toc-num">4</span>Gift card details</a>
+    <a class="rp-toc-pill" href="#exports"><span class="rp-toc-num">5</span>Exports</a>
+  </div>
+</div>
 
 # Definition
 
-The Gift Cards Dashboard in Recurly offers a specialized interface for managing all aspects of gift card transactions. It provides tools for tracking gift card purchases, redemptions, and balances, allowing businesses to efficiently administer their gift card programs and enhance customer experiences.
+<div class="rp-definition">
+  The Gift Cards dashboard in Recurly provides a centralized interface for managing all gift card transactions. From here you can track purchases, redemptions, and balances — and take action on individual cards without leaving the Admin Console.
+</div>
 
 # Key benefits
 
-* **Centralized gift card management**: Simplifies the oversight of gift card transactions, from purchase to redemption, ensuring efficient tracking and management.
-* **Enhanced customer engagement**: Facilitates the promotion and use of gift cards, a popular and flexible option for customers, thereby boosting sales and customer loyalty.
-* **Real-time insights and reporting**: Offers up-to-date insights into gift card usage and trends, aiding in strategic decisions and marketing efforts.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-table-list" aria-hidden="true"></i></div>
+    <strong>Centralized management</strong>
+    <span>Track every gift card from purchase through redemption in one place, with status filters that surface exactly what you need.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+    <strong>Enhanced customer engagement</strong>
+    <span>Gift cards are a flexible, popular option for customers. This dashboard makes it fast to support them — editing delivery details or resending emails in seconds.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+    <strong>Real-time insights</strong>
+    <span>See up-to-date gift card usage and trends to inform marketing and operational decisions.</span>
+  </div>
+</div>
 
 # Dashboard
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/c5a25d6-image.png" />
+<span class="rp-zoom"><a class="rp-zoom-label" href="#c5a25d6"><img src="https://files.readme.io/c5a25d6-image.png" alt="Gift Cards dashboard overview" /></a><a id="zoom-c5a25d6" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/c5a25d6-image.png" alt="" /></a></span>
 
-The Gift Cards dashboard is your central hub for locating and managing all Gift Card products for your customers. This interface enables you to perform searches using various identifiers, such as the redemption code, the gifter's name, or the recipient's name.
+Navigate to **Customers → Gift Cards** to access the dashboard. Search for any gift card using the redemption code, gifter's name, or recipient's name.
 
 ## Gift card status
 
-<Image align="center" className="border" width="25% " border={true} src="https://files.readme.io/22b16b5-image.png" />
+Use the status filter to narrow results by the current state of each card.
 
-| Category              | Description                                                     |
-| --------------------- | --------------------------------------------------------------- |
-| All                   | Displays all gift cards regardless of status.                   |
-| Not Yet Redeemed      | Gift cards issued but not yet used by the recipient.            |
-| Redeemed              | Gift cards that have been used by the recipient.                |
-| Has Balance Remaining | Gift cards that are partially used but still have a balance.    |
-| No Balance Remaining  | Gift cards that have been fully used with no remaining balance. |
-| Canceled              | Gift cards that have been canceled and are no longer valid.     |
+<span class="rp-zoom"><a class="rp-zoom-label" href="#22b16b5"><img src="https://files.readme.io/22b16b5-image.png" alt="Gift card status filter" /></a><a id="zoom-22b16b5" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/22b16b5-image.png" alt="" /></a></span>
+
+<table class="rp-pm-table">
+  <tr class="rp-thead-row">
+    <td>Status</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>Displays all gift cards regardless of status.</td>
+  </tr>
+  <tr>
+    <td>Not yet redeemed</td>
+    <td>Gift cards issued but not yet used by the recipient.</td>
+  </tr>
+  <tr>
+    <td>Redeemed</td>
+    <td>Gift cards that have been used by the recipient.</td>
+  </tr>
+  <tr>
+    <td>Has balance remaining</td>
+    <td>Gift cards that are partially used but still have a balance.</td>
+  </tr>
+  <tr>
+    <td>No balance remaining</td>
+    <td>Gift cards that have been fully used with no remaining balance.</td>
+  </tr>
+  <tr>
+    <td>Canceled</td>
+    <td>Gift cards that have been canceled and are no longer valid.</td>
+  </tr>
+</table>
 
 # Gift card details
 
-<Image align="center" width="60% " src="https://files.readme.io/54081b0-image.png" />
+<span class="rp-zoom"><a class="rp-zoom-label" href="#54081b0"><img src="https://files.readme.io/54081b0-image.png" alt="Gift card list view" /></a><a id="zoom-54081b0" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/54081b0-image.png" alt="" /></a></span>
 
-To access detailed information about a specific gift card, select a product from the list and click on its redemption code. 
+Select a gift card from the list and click its redemption code to open the detail view. From here you can see all associated information for that card.
 
-This action will take you to a detailed view of the gift card. Here, you can find all the associated information. 
+<span class="rp-zoom"><a class="rp-zoom-label" href="#6072a05"><img src="https://files.readme.io/6072a05-image.png" alt="Gift card detail view" /></a><a id="zoom-6072a05" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/6072a05-image.png" alt="" /></a></span>
 
-<Image align="center" className="border" width="60% " border={true} src="https://files.readme.io/6072a05-image.png" />
+Clicking the gifter's name navigates to their account. Clicking the purchase invoice number opens the invoice view.
 
-Additionally, clicking on the Gifter’s name will redirect you to their account, and clicking on the Purchase Invoice number will take you to the invoice view.
+## Edit delivery information
 
-## Edit delivery information details
-
-To modify the delivery information, click the “Edit Details” button. Update the necessary fields with the new information and ensure to save your changes.
+Click **Edit Details** to modify delivery information. Update the necessary fields and save your changes.
 
 ## Resend delivery email
 
-If you need to resend the delivery email, simply click on the “Resend Delivery Email” button. Verify the information and click Send to complete the process.
+Click **Resend Delivery Email** to resend the gift card delivery email to the recipient. Verify the information and click **Send** to complete.
 
 ## Cancel gift card
 
-To cancel the selected gift card product, press the “Cancel Gift Card” button in the upper-right menu.
+To cancel the gift card, click **Cancel Gift Card** in the upper-right menu.
 
 # Exports
 
-For in-depth information on Gift Cards exports, visit our dedicated page. [Gift Cards Exports](https://docs.recurly.com/docs/gift-cards-export)
+For full details on available fields and export configuration, see the <a href="https://docs.recurly.com/docs/gift-cards-export" target="_blank">Gift Cards exports</a> page.
