@@ -13,7 +13,7 @@ metadata:
     Webhooks let you notify your internal systems and partner applications whenever something important happens in Recurly. Configure up to ten endpoints per site, subscribe each one to only the events it needs, and use each notification as a trigger to confirm current state via the API — not as a source of truth on its own.
   </div>
 
-  <div class="rp-plan"><i class="fa fa-key" aria-hidden="true" /> Available on all Recurly plans</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
 
   <div class="rp-toc">
     <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
@@ -36,27 +36,24 @@ metadata:
 
 # Key benefits
 
-<div class="rp-benefits">
+<div class="rp-benefits rp-benefits-2x2">
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bell" aria-hidden="true"></i></div>
     <strong>Real-time event alerts</strong>
     <span>Get notified the moment something changes in Recurly — new accounts, subscription updates, payment events, and more — without polling the API.</span>
   </div>
-
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-filter" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-filter" aria-hidden="true"></i></div>
     <strong>Per-endpoint event filtering</strong>
     <span>Subscribe each of your up to ten endpoints to only the specific lifecycle events it needs, so every system receives exactly the signals it cares about.</span>
   </div>
-
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
     <strong>Signature verification</strong>
     <span>Every JSON webhook includes a <code>recurly-signature</code> header so you can cryptographically confirm the notification came from Recurly and hasn't been tampered with.</span>
   </div>
-
   <div class="rp-benefit">
-    <div class="rp-benefit-icon"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+    <div class="rp-benefit-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></div>
     <strong>Automatic retries</strong>
     <span>Failed deliveries are retried up to ten times using exponential backoff, so transient endpoint issues don't mean lost notifications.</span>
   </div>
@@ -90,12 +87,10 @@ When a webhook arrives, use it as a trigger to:
     <div class="rp-step-num">1</div>
     <div><h4>Call the Recurly API</h4><p>Confirm the current status of the resource — don't rely on the webhook payload alone.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Compare against your local record</h4><p>Check whether the API response reflects a change from what your database already has.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">3</div>
     <div><h4>Update only if there's a real change</h4><p>Write to your database only when the API confirms something has actually changed.</p></div>
@@ -105,7 +100,7 @@ When a webhook arrives, use it as a trigger to:
 Because Recurly may retry or resend a webhook, your endpoint **must** accept the same notification more than once and tolerate events arriving out of order.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> For example: an account closes and Recurly sends a notification. If delivery fails, the notification is retried later. In the meantime, the account could reopen — triggering another notification. If your endpoint comes back online, it may receive the closed-account notification <em>after</em> the account was reopened. Always verify current state with the API before acting on a closed-account event.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> For example: an account closes and Recurly sends a notification. If delivery fails, the notification is retried later. In the meantime, the account could reopen — triggering another notification. If your endpoint comes back online, it may receive the closed-account notification <em>after</em> the account was reopened. Always verify current state with the API before acting on a closed-account event.</div>
 </div>
 
 ## Notification storage and timestamps
@@ -115,7 +110,7 @@ Each webhook notification is retained for **15 days** and viewable in the Recurl
 Notification timestamps are recorded in UTC but displayed in your site's configured time zone in the console.
 
 <div class="rp-callout rp-callout-warning">
-  <div><strong><i class="fa fa-exclamation-triangle" aria-hidden="true" /> Warning</strong> If you delete an endpoint, any notifications sent to it within the past 15 days will no longer appear in the console.</div>
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warning</strong> If you delete an endpoint, any notifications sent to it within the past 15 days will no longer appear in the console.</div>
 </div>
 
 # Configuration and security
@@ -182,16 +177,26 @@ Manually retried notifications still count toward the automatic retry limit and 
 
 Each webhook endpoint is configured to receive either **JSON** or **XML** payloads — not both.
 
-JSON is strongly recommended. JSON webhooks provide lightweight payloads containing the event type, object context, and object identifiers you can use to fetch current state via the Recurly API. This aligns with the [best-practice approach](#key-details) of treating webhooks as triggers, not sources of truth.
+JSON is strongly recommended. JSON webhooks provide lightweight payloads containing the event type, object context, and object identifiers you can use to fetch current state via the Recurly API. Use webhooks as triggers to confirm current state — not as sources of truth on their own.
 
 XML payloads are available for integrations that require them, but JSON is Recurly's most modern offering and the format receiving ongoing investment.
+
+## Request headers
+
+Every JSON webhook includes the following headers:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Header</td><td>Description</td></tr>
+  <tr><td><code>recurly-signature</code></td><td>HMAC-SHA256 signature used to verify the notification came from Recurly and hasn't been tampered with. See <a href="#signature-verification">Signature verification</a> for details.</td></tr>
+  <tr><td><code>recurly-notification-id</code></td><td>Unique identifier for this notification. Use this value to deduplicate deliveries — if Recurly retries a failed notification, the <code>recurly-notification-id</code> will be the same across all attempts, letting you detect and safely ignore duplicates.</td></tr>
+</table>
 
 # Signature verification
 
 For all JSON webhooks, Recurly includes a `recurly-signature` header. Verifying this signature confirms the notification came from Recurly and hasn't been altered. Each webhook endpoint has its own unique secret key, found on the **Webhook Endpoints** page.
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa fa-info-circle" aria-hidden="true" /> Note</strong> Signature verification only applies to JSON payloads — XML payloads are not signed.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Signature verification only applies to JSON payloads — XML payloads are not signed.</div>
 </div>
 
 ## Verify using a client library
@@ -230,17 +235,14 @@ When you regenerate a secret key, both the new and previous keys remain valid fo
     <div class="rp-step-num">1</div>
     <div><h4>Extract the timestamp and signature(s)</h4><p>Split the header value on commas. The first element is the timestamp; the remaining elements are signatures. Any other format is invalid.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">2</div>
     <div><h4>Prepare the message</h4><p>Concatenate the timestamp, a literal <code>.</code> character, and the exact raw request body.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">3</div>
     <div><h4>Compute the expected signature</h4><p>Compute the HMAC-SHA256 digest of the prepared message using your endpoint's secret key.</p></div>
   </div>
-
   <div class="rp-step">
     <div class="rp-step-num">4</div>
     <div><h4>Compare signatures</h4><p>Use a constant-time comparison to check the expected signature against each signature from the header. The notification is valid if exactly one matches. Also compare the timestamp against the current time — a large discrepancy could indicate a <a href="https://en.wikipedia.org/wiki/Replay_attack" target="_blank">replay attack</a>.</p></div>
@@ -253,4 +255,4 @@ You can opt in to only the specific notifications you need, on an endpoint-by-en
 
 Each site supports up to **ten webhook endpoints**. Event subscription changes take effect immediately for all subsequent notifications.
 
-A full list of all notifications — with both JSON and XML payloads for each — is available in the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-notifications" target="_blank">Account Notifications</a> reference.
+A full list of all notifications — with both JSON and XML payloads for each — is available in the <a href="https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks" target="_blank">Notifications</a> reference.
