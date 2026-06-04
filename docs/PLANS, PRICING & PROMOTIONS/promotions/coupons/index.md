@@ -154,14 +154,16 @@ Before building a coupon, here's what each field in the creation form does.
   </div>
 </div>
 
-<span class="rp-zoom">
-  <a class="rp-zoom-label" href="#rp-close">
-    <img src="https://files.readme.io/8d4e1fda7827d03b8f9d95d4ab67e4911db8cc092db4072c44c08d0f83f7607a-image.png" alt="Configuration menu with Coupons highlighted" class="rp-zoom-img" />
-  </a>
-  <a id="zoom-8d4e1fd" class="rp-zoom-overlay" href="#rp-close">
-    <img src="https://files.readme.io/8d4e1fda7827d03b8f9d95d4ab67e4911db8cc092db4072c44c08d0f83f7607a-image.png" alt="" />
-  </a>
-</span>
+<div class="rp-zoom-small">
+  <span class="rp-zoom">
+    <a class="rp-zoom-label" href="#rp-close">
+      <img src="https://files.readme.io/8d4e1fda7827d03b8f9d95d4ab67e4911db8cc092db4072c44c08d0f83f7607a-image.png" alt="Configuration menu with Coupons highlighted" class="rp-zoom-img" />
+    </a>
+    <a id="zoom-8d4e1fd" class="rp-zoom-overlay" href="#rp-close">
+      <img src="https://files.readme.io/8d4e1fda7827d03b8f9d95d4ab67e4911db8cc092db4072c44c08d0f83f7607a-image.png" alt="" />
+    </a>
+  </span>
+</div>
 
 <div class="rp-steps">
   <div class="rp-step">
@@ -565,7 +567,7 @@ Track and analyze coupon performance from the **Exports** page under **Reports**
 </Accordion>
 
 <Accordion title="Can subscribers have multiple active coupon redemptions on their account?">
-  Yes — you can allow multiple active coupon redemptions per account, which can result in multiple discounts on a single invoice or line item. Settings for this feature are adjusted on the coupon configuration page. See the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/list_coupons" target="_blank">Multiple Coupons Per Account documentation</a> for details on how stacked discounts are applied.
+  Yes — you can allow multiple active coupon redemptions per account, which can result in multiple discounts on a single invoice or line item. Settings for this feature are adjusted on the coupon configuration page. See the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#tag/coupon" target="_blank">Multiple Coupons Per Account documentation</a> for details on how stacked discounts are applied.
 </Accordion>
 
 <Accordion title="How do I create a coupon that discounts across several billing cycles?">
