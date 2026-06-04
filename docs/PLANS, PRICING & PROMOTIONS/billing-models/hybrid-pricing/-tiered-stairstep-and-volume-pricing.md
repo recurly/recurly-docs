@@ -1,5 +1,5 @@
 ---
-title: Tiered, stairstep and volume pricing
+title: Tiered, volume and stairstep pricing
 excerpt: >-
   Learn how tiered, volume, and stairstep pricing models work in Recurly, and
   how to configure each one on a plan or add-on.
