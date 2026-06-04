@@ -65,11 +65,11 @@ You can create a prepaid account balance via API v3, API v2, or the Admin Consol
 
 ## Via API v3
 
-Send a <a href="https://developers.recurly.com/api/v2019-10-10/index.html#operation/create_purchase" target="_blank">Purchase</a> request containing a `line_item` with `"origin": "prepayment"`.
+Send a <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/create_purchase" target="_blank">Purchase</a> request containing a `line_item` with `"origin": "prepayment"`.
 
 ## Via API v2
 
-Send a <a href="https://dev.recurly.com/docs/create-purchase" target="_blank">Purchase</a> request for a charge adjustment with `"origin": "prepayment"`.
+Send a <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/create_purchase" target="_blank">Purchase</a> request for a charge adjustment with `"origin": "prepayment"`.
 
 ## Via the Admin Console
 
