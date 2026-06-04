@@ -13,8 +13,18 @@ metadata:
 next:
   description: ''
 ---
-# Subscriber management
+<div class="rp-page">
+  <div class="rp-overview">Step into our video tour and experience the powerful features of Recurly's Subscriber Management tools.</div>
+  <div style={{position: "relative", paddingTop: "56.25%", marginBottom: "28px", borderRadius: "10px", overflow: "hidden"}}>
+    <iframe src="https://fast.wistia.net/embed/iframe/tyyztm17dq"
+      title="Subscriber Management video tour"
+      allow="autoplay; fullscreen"
+      allowtransparency="true"
+      frameBorder="0"
+      scrolling="no"
+      allowFullScreen
+      style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none"}}></iframe>
+  </div>
+</div>
 
-Step into our video tour and experience the powerful features of our Subscriber Management tools.
-
-<Embed url="https://fast.wistia.net/embed/iframe/tyyztm17dq?videoFoam=true" title="iframe" provider="fast.wistia.net" href="https://fast.wistia.net/embed/iframe/tyyztm17dq?videoFoam=true" typeOfEmbed="iframe" height="580px" width="800px" iframe="true" />
+<br />
