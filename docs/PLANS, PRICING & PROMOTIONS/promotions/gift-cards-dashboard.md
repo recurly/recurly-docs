@@ -66,7 +66,7 @@ Navigate to **Customers → Gift Cards** to access the dashboard. Search for any
 
 Use the status filter to narrow results by the current state of each card.
 
-<span class="rp-zoom"><a class="rp-zoom-label" href="#22b16b5"><img src="https://files.readme.io/22b16b5-image.png" alt="Gift card status filter" /></a><a id="zoom-22b16b5" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/22b16b5-image.png" alt="" /></a></span>
+<span class="rp-zoom"><a class="rp-zoom-label rp-zoom-small" href="#22b16b5"><img src="https://files.readme.io/22b16b5-image.png" alt="Gift card status filter" /></a><a id="zoom-22b16b5" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/22b16b5-image.png" alt="" /></a></span>
 
 <table class="rp-pm-table">
   <tr class="rp-thead-row">
