@@ -1,9 +1,8 @@
 ---
 title: Gift subscriptions
 excerpt: >-
-  Delve into the world of gift subscriptions with Recurly, where gifting is more
-  than just a one-time transaction. It's a tool to reach new customers, boost
-  engagement and improve your bottom line.
+  Set up gift subscriptions in Recurly using gift cards or gift plans — each
+  with a distinct fulfillment model suited to different business needs.
 deprecated: false
 hidden: false
 metadata:
@@ -13,66 +12,104 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">
+    Recurly supports two approaches to gift subscriptions: gift cards, which are purchased by the giver and redeemed by the recipient on their own timeline, and gift plans, which start immediately at purchase and are managed by you for delivery and messaging. Both approaches are flexible and can be tailored to your business model.
+  </div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#gift-cards-vs-gift-plans"><span class="rp-toc-num">3</span>Gift cards vs. gift plans</a>
+    <a class="rp-toc-pill" href="#configuring-gift-plans"><span class="rp-toc-num">4</span>Configuring gift plans</a>
+  </div>
+</div>
 
 # Definition
 
-Gift subscriptions are a method for existing customers to purchase a subscription as a gift for someone else. They can be implemented through two distinct ways on Recurly platform: Gift Cards and Gift Plans. Each option offers a unique way to engage with your customers and expand your business.
+<div class="rp-definition">
+  Gift subscriptions let existing customers purchase a subscription as a gift for someone else. Recurly supports two implementation methods: gift cards, where the recipient redeems the gift on their own schedule, and gift plans, where the subscription starts at the time of purchase and you handle delivery and communications outside of Recurly.
+</div>
 
 # Key benefits
 
-* **Acquisition and retention synergy**: Gift subscriptions can attract new users and improve loyalty among current customers.
-* **Revenue expansion**: Tapping into the gift market can open up additional revenue streams.
-* **Customer-centric flexibility**: Offers choices between Gift Cards and Gift Subscriptions to suit varied customer preferences.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user-plus" aria-hidden="true"></i></div>
+    <strong>Acquisition and retention</strong>
+    <span>Gift subscriptions bring in new subscribers through the people who know your product best — your existing customers.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-money-bill-trend-up" aria-hidden="true"></i></div>
+    <strong>Additional revenue streams</strong>
+    <span>Tap into gift-giving occasions — holidays, birthdays, milestones — to open purchase channels that sit outside the standard subscription funnel.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexibility for different use cases</strong>
+    <span>Choose between gift cards and gift plans depending on your fulfillment model, customer experience goals, and whether you want Recurly or your own system to handle recipient communications.</span>
+  </div>
+</div>
 
-# Key details
+# Gift cards vs. gift plans
 
-Gift subscriptions, whether through Gift Cards or Gift Subscriptions Plans, provide flexibility, enhance customer acquisition, and drive revenue. 
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-gift" aria-hidden="true"></i></div>
+    <strong>Gift cards</strong>
+    <span>Purchased on the giver's account and redeemed by the recipient when they're ready. Recurly handles the full gift checkout, redemption flow, and automated emails to both the giver and recipient. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/gift-cards" target="_blank">Gift cards</a> for setup details.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></div>
+    <strong>Gift plans</strong>
+    <span>A subscription purchased upfront for a specific period that starts immediately at the time of purchase. You handle messaging, delivery to the recipient, and end-of-gift communications outside of Recurly.</span>
+  </div>
+</div>
 
-**Gift Cards** offer a broad range of benefits. They are purchased on the giver's account and redeemed by the recipient when ready. Recurly's <a href="https://docs.recurly.com/docs/gift-cards" target="_blank">Gift Cards</a> support a fully featured gift checkout, redemption, and automated emails to both the giver and recipient.
+<div class="rp-callout rp-callout-note">
+  <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Gift plans: what Recurly doesn't handle</strong>
+  Recurly does not support collecting gift recipient information, custom gift messages, or email communications with the recipient for gift plans. You'll need to collect recipient details at checkout and manage all gift-related emails in an external system.
+</div>
 
-On the other hand, **Gift Subscriptions Plans** involve upfront payment for a specific period of service. The Gift Subscription starts at the time of purchase, and the merchant handles the messaging and delivery to the recipient. 
+# Configuring gift plans
 
-Both options offer unique benefits and can be tailored to your business needs, offering flexibility to your customers.
+## Choose a plan structure
 
-# Configuring gift subscriptions
+Gift plans can be set up as non-recurring or recurring, depending on the experience you want to offer.
 
-Setting up Gift Subscriptions on Recurly is straightforward and involves the following steps:
+**Non-recurring gift plans** — Create a new plan with **1** billing cycle and set the recurring cycle length to the duration of the gift. The subscription ends automatically after that period.
 
-1. **Choose your gift subscription method**: Based on your business model and customer preferences, choose between Gift Cards and Gift Plans.
+**Recurring gift plans** — Either use your existing plans, or create a separate plan set to **Auto renew until canceled**. A dedicated gift plan makes it easier to track which subscriptions were originally purchased as gifts.
 
-2. **Implementing gift cards**: Visit the dedicated page on implementing Recurly's Gift Cards. Follow the detailed instructions to configure your Gift Card option effectively.
+<span id="rp-close"></span>
 
-3. **Implementing gift plans**: Gift Plans are set up as separate plans on your Recurly account. Depending on your requirements, you can set up non-recurring or recurring Gift Plans.
+<span class="rp-zoom">
+  <a class="rp-zoom-label" href="#rp-close">
+    <img src="https://files.readme.io/ef06d61-image.png" alt="Plan billing cycle configuration for a gift plan in Recurly" class="rp-zoom-img" />
+  </a>
+  <a id="zoom-ef06d61" class="rp-zoom-overlay" href="#rp-close">
+    <img src="https://files.readme.io/ef06d61-image.png" alt="" />
+  </a>
+</span>
 
-   * For non-recurring gift plans, create a new plan with "1" billing cycle and set the recurring cycle to the length of the gift.
+## Set up gift delivery
 
-   * For recurring gift plans, either use your regular plans or create a separate plan set to "Auto renew until canceled". 
+Since Recurly doesn't collect recipient information or send gift-specific emails for gift plans, you'll need to handle this outside of Recurly:
 
-   <Image align="center" className="border" border={true} src="https://files.readme.io/ef06d61-image.png" />
+<div class="rp-list">
+  <ul>
+    <li>Collect the recipient's name, email address, and any custom gift message in your own checkout flow.</li>
+    <li>Send automated gift delivery and confirmation emails through your external email system.</li>
+  </ul>
+</div>
 
-   <br />
+## Handle end-of-gift messaging
 
-4. **Gift delivery**: Since Recurly does not support the collection of gift recipient information, set up an external system to collect this data and send automated emails.
+For non-recurring gift plans, the subscription expires at the end of its billing cycle. The only email Recurly sends at expiry is the standard Subscription Expired email, which goes to the account holder's email address — not the recipient's. Because this template is shared across all plans, it can't carry gift-specific messaging without affecting non-gift plans.
 
-5. **End of gift**: If the Gift Plan is non-recurring, it will end after a specific period. Handle end-of-gift messaging outside Recurly using the `expired_subscription_notification` webhook. Use this webhook to trigger your end-of-gift email to upsell to the gift recipient or the giver.
+Recurly recommends handling end-of-gift communications externally using the `expired_subscription_notification` webhook. When this webhook fires for a gift plan, use it to trigger your own end-of-gift email to upsell the recipient or follow up with the gifter.
 
-By following these steps, you can successfully implement Gift Subscriptions on your Recurly platform and leverage them to grow your business.
-
-### Recurring plans
-
-To create a recurring gift plan, you can either use your regular plans, or create a separate plan that is set to "Auto renew until canceled". The benefit of having a separate plan in this case is the ability to track when the plan was purchased "as a gift".
-
-### Gift delivery
-
-Unlike Gift Cards, Recurly does not support the collection of gift recipient information or a custom gift message, or email communications with the gift recipient. You will need to collect this information in your gift checkout and setup automated emails in a system external to Recurly.
-
-### End of gift
-
-If the gift plan is non-recurring, it will come to an end after a specific amount of time. The only email Recurly sends at the end of a gift plan is the Subscription Expired email, and this goes to the account's email address. While this email template can be configured to send based on the plan, it is the same template for all plans, so it will be hard to have gift specific messaging in this email if it is being shared with non-gift plans.
-
-Due to the above, we suggest end of gift messaging be handled outside of Recurly using the `expired_subscription_notification` webhook. If this webhook is received for a gift plan, you can trigger your own end of gift email to upsell the associated gift recipient, or the gifter who's account the gift subscription is on.
+<div class="rp-callout rp-callout-tip">
+  <strong><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tip</strong>
+  Filtering on the plan code in your webhook handler lets you identify gift plan expirations specifically and trigger the right message — without affecting your standard subscription expiry flow.
+</div>
