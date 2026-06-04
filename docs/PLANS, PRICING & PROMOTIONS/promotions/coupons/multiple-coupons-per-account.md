@@ -1,9 +1,9 @@
 ---
 title: Multiple coupons per account
 excerpt: >-
-  Explore the dynamic ways to drive customer engagement and boost revenue by
-  allowing your customers to redeem multiple coupons and receive multiple
-  discounts at a time.
+  Enable multiple coupons per account to let subscribers stack discounts across
+  campaigns, and configure how percentage and fixed amount discounts are
+  sequenced and calculated on each invoice.
 deprecated: false
 hidden: false
 metadata:
@@ -13,180 +13,219 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">
+    Multiple coupons per account lets subscribers hold more than one active coupon and receive all eligible discounts on each invoice. You control how discounts are sequenced and how multiple percentage discounts interact — giving you flexibility while keeping promotional spend predictable.
+  </div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#how-multiple-coupons-are-applied"><span class="rp-toc-num">3</span>How coupons are applied</a>
+    <a class="rp-toc-pill" href="#multiple-percentage-discounts"><span class="rp-toc-num">4</span>Multiple percentage discounts</a>
+    <a class="rp-toc-pill" href="#proration-refunds-and-invoices"><span class="rp-toc-num">5</span>Proration, refunds, and invoices</a>
+    <a class="rp-toc-pill" href="#enabling-multiple-coupons-per-account"><span class="rp-toc-num">6</span>Enabling multiple coupons</a>
+    <a class="rp-toc-pill" href="#exports"><span class="rp-toc-num">7</span>Exports</a>
+  </div>
+</div>
 
 # Definition
 
-Recurly's "Multiple Coupons per Account" feature allows customers to participate in multiple campaigns or redeem more than one coupon on your checkout page. This feature can apply all eligible coupon discounts to each purchase invoice when multiple coupons are redeemed on an account.
+<div class="rp-definition">
+  Multiple coupons per account is a Recurly feature that allows subscribers to hold more than one active coupon redemption on their account. When multiple coupons are eligible for a purchase, all qualifying discounts are applied to the invoice automatically. You configure the order in which different discount types are applied and how multiple percentage discounts interact with each other.
+</div>
 
 # Key benefits
 
-* **Loyalty through flexibility**: Allows multiple coupons per account, enhancing customer satisfaction and loyalty.
-* **Strategic campaign management**: Facilitates the running of various promotional campaigns concurrently, optimizing marketing efforts.
-* **Granular discount control**: Provides precise control over discount sequencing, with options for percentage or fixed amount precedence.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+    <strong>Flexible stacking</strong>
+    <span>Let subscribers benefit from multiple campaigns simultaneously — for example, a perpetual loyalty discount alongside a limited-time promotional code.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+    <strong>Concurrent campaign management</strong>
+    <span>Run multiple promotional campaigns at once without forcing subscribers to choose between them.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Granular discount control</strong>
+    <span>Configure whether percentage or fixed amount discounts apply first, and choose how multiple percentage discounts compound — keeping promotional margins in check.</span>
+  </div>
+</div>
 
-# Key details
+# How multiple coupons are applied
 
-## Why allow multiple coupons on an account?
+When multiple coupons per account is enabled, any eligible coupon redeemed on the account is automatically applied to each qualifying invoice. All eligible coupons apply — there is no single-coupon-per-invoice cap with this feature active.
 
-Enabling multiple coupons on an account not only magnifies savings for your customers but also broadens the spectrum of your promotional campaigns. Say, you have a loyal customer enjoying a 10% off perpetual early-adopter discount. With the multiple coupons feature, they can now also indulge in your latest $20 off coupon campaign. Should both coupons meet the eligibility criteria for a purchase, voila! Both discounts get applied to the invoice line item, amplifying the joy of savings.
+If you want to limit invoices to one discount while still allowing multiple coupons to exist on an account, use <a href="https://docs.recurly.com/recurly-subscriptions/docs/coupons#discount-level" target="_blank">subscription-level coupons</a> instead. This associates a specific discount with a particular subscription rather than applying all account coupons to every invoice.
 
-## Which coupons are applied to the invoice?
+## Subscription-level coupon application
 
-Upon activating the Multiple Coupons Per Account feature, any eligible coupons redeemed on an account will automatically grace each purchase invoice with their respective discounts. This automatic application is the inherent behavior of this feature and doesn't entertain a one-coupon-per-invoice configuration. However, if your goal is to stick to a single coupon discount per purchase while keeping multiple coupons active on customer accounts, opt for our [Subscription Level](https://docs.recurly.com/coupons-beta#subscription_level_coupons) coupon scheme. This allows you to associate a specific coupon discount with a particular subscription.
+<div class="rp-list">
+  <ul>
+    <li>When multiple subscription-level coupons are redeemed in a purchase where more than one subscription is eligible, the coupons apply to the first eligible and most expensive subscription.</li>
+    <li>If a subscription-level coupon is redeemed but the eligible subscription is already fully discounted by other coupons or credits, the coupon is still redeemed to the subscription — it remains active and unused until the subscription's next invoice.</li>
+    <li>Fixed amount subscription-level coupons do not carry leftover discount to other eligible subscriptions.</li>
+  </ul>
+</div>
 
-## Multiple percentage discounts
+## Account-level coupon application
 
-As you switch on the Multiple Coupons Per Account, decisions await on the handling of multiple percentage discounts, especially when more than one is eligible for a single invoice line item.
+<div class="rp-list">
+  <ul>
+    <li>A fixed amount account-level coupon eligible for all plans and one-time charges applies first to any setup fee, then to other setup fees, then to the first subscription plan fee, working down through plan fees and adjustments as the discount allows.</li>
+    <li>If an account-level coupon is redeemed but all eligible charges are already fully discounted, the coupon is redeemed to the account and remains active and unused until the next invoice.</li>
+  </ul>
+</div>
 
-### Apply to full line item amount
+## Order of coupon application
 
-Choosing "Apply to full line item amount" ensures that each percentage discount addresses the entire line item amount, sequentially from the oldest to the newest redeemed on the account. 
+When both percentage and fixed amount discounts are eligible for a single line item, you choose which type applies first. This setting is configured when enabling multiple coupons per account:
 
-* In cases where fixed-amount coupons precede in settings and are applied to the invoice, the percentage discounts then embrace the net amount post fixed-coupon deductions, veering away from the full line item amount.
-* Upon reaching a full discount on the line item, the curtain falls on further coupon discounts, potentially sidelining an eligible coupon if other coupons have already orchestrated a 100% discount.
-* This method tips the scale in favor of the customer, offering a more generous discount.
+**Apply percentage discounts first** — Percentage discounts are applied before fixed amount discounts. This typically results in a larger total discount for the subscriber.
 
-### Compound the discounts
+**Apply fixed amount discounts first** — Fixed amount discounts are applied before percentage discounts. This results in a smaller total discount and is more favorable to the merchant.
 
-Opting for "Compound the discounts" directs each percentage discount to the net residue post the preceding discount, aligning from the oldest to the newest redeemed on the account.
+When coupons apply across multiple subscriptions or a hybrid purchase, the configured order is preserved. Coupons set for one-time purchases apply based on their discount type (percentage or fixed amount).
 
-* Similar to the previous method, a fully discounted line item halts any further coupon applications, leaving an eligible coupon in the wings if preceding coupons already rendered a 100% discount.
-* This tactic leans towards the merchant’s advantage, rendering a modest discount.
+# Multiple percentage discounts
 
-### Example
+When more than one percentage discount is eligible for a single invoice line item, you choose how they interact.
 
-Let's illustrate with Coupon A offering a 10% discount and Coupon B extending a 50% discount on a $100.00 line item purchase.
+## Apply to full line item amount
 
-* Employing the "Apply to full line item amount" method yields a $10.00 discount from Coupon A and a $50.00 discount from Coupon B, aggregating to a total discount of $60.00 on the line item. Thus, the purchase subtotal rolls down to $40.00.
-* On the other hand, the "Compound the discounts" technique triggers a $10.00 discount from Coupon A and a subsequent $45.00 discount from Coupon B (calculated on the remaining $90.00), amalgamating to a total discount of $55.00 on the line item. Hence, the purchase subtotal modestly descends to $45.00.
+Each percentage discount is applied to the full original line item amount, sequentially from the oldest to the newest redemption on the account.
+
+<div class="rp-list">
+  <ul>
+    <li>If fixed amount coupons are configured to apply first and have already reduced the line item, percentage discounts then apply to the net amount after those deductions — not the original full amount.</li>
+    <li>Once a line item is 100% discounted, no further coupon discounts apply — even if eligible coupons remain.</li>
+    <li>This method is more favorable to the subscriber, producing a larger total discount.</li>
+  </ul>
+</div>
+
+## Compound the discounts
+
+Each percentage discount is applied to the net amount remaining after the previous discount, sequentially from oldest to newest redemption.
+
+<div class="rp-list">
+  <ul>
+    <li>As with the full line item method, a fully discounted line item stops further coupon applications.</li>
+    <li>This method is more favorable to the merchant, producing a smaller total discount.</li>
+  </ul>
+</div>
+
+## Example
+
+Coupon A offers 10% off. Coupon B offers 50% off. Applied to a $100.00 line item:
+
+<table class="rp-pm-table">
+  <tbody>
+    <tr class="rp-thead-row">
+      <td>Method</td>
+      <td>Coupon A discount</td>
+      <td>Coupon B discount</td>
+      <td>Total discount</td>
+      <td>Subtotal</td>
+    </tr>
+    <tr>
+      <td>Apply to full line item amount</td>
+      <td>$10.00 (10% of $100)</td>
+      <td>$50.00 (50% of $100)</td>
+      <td>$60.00</td>
+      <td>$40.00</td>
+    </tr>
+    <tr>
+      <td>Compound the discounts</td>
+      <td>$10.00 (10% of $100)</td>
+      <td>$45.00 (50% of $90)</td>
+      <td>$55.00</td>
+      <td>$45.00</td>
+    </tr>
+  </tbody>
+</table>
+
+# Proration, refunds, and invoices
 
 ## Proration
 
-When a subscription alteration occurs mid-billing cycle, prorated credits and charges come into play. Each discount associated with these prorated amounts is meticulously calculated at the individual coupon redemption level for every line item. For instance, suppose a line item has been graced with three different coupon redemptions. Each of these three discount fragments is prorated individually, their collective discount values then aggregated to form the line item's total discount amount for the prorated charge or credit.
+When a subscription changes mid-billing cycle, prorated credits and charges are calculated individually at the coupon redemption level for each line item. If a line item has three coupon redemptions, each discount fragment is prorated separately, then aggregated into the total discount for that line item.
 
 ## Refunds
 
-* **Line Item Refunds** impeccably preserve the discount amount and identity right down to the individual coupon redemptions on the line item. The invoice displays the line item level discounts, and exports shine a light on the individual coupon redemption discounts.
-* **Open Amount Refunds**, on the flip side, ensure the correct amount is refunded but do not retain the discount amount or identity. The discount remains absent from both the refund invoice and exports.
+**Line item refunds** preserve the discount amount and identity down to the individual coupon redemption. The invoice shows line item–level discounts and exports include per-redemption discount details.
 
-## Invoices
+**Open amount refunds** return the correct total but do not retain discount attribution. The discount amount and coupon identity are absent from both the refund invoice and exports.
 
-The Discounts Applied section on the invoice unfurls a detailed view of all coupons that have lent their discounts to the invoice. In scenarios where a coupon has been redeemed multiple times on the same invoice, a singular mention of the coupon surfaces, accompanied by a count (enclosed in parentheses) indicating the number of redemptions.
+## Invoice display
 
-## Exports
+The Discounts Applied section on each invoice lists all coupons that contributed a discount. If a coupon was redeemed more than once on the same invoice, it appears once with a count in parentheses indicating the number of redemptions.
 
-Merchants have the provision to delve into multiple discounts via the Invoices - Summary, Invoices - Line Items, and the fresh Invoices - Line Item Coupons exports.
+# Enabling multiple coupons per account
 
-### Invoices - summary
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Navigate to Coupon Settings</h4>
+      <p>Go to <strong>Configuration &gt; Coupons</strong>, then click the <strong>Settings</strong> button in the top right of the page.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Enable Multiple Coupons Per Account</h4>
+      <p>Find the <strong>Multiple Coupons Per Account</strong> section and select <strong>Enable</strong>.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Set the order of application</h4>
+      <p>Under <strong>Order of Application</strong>, choose whether percentage discounts or fixed amount discounts apply first when both are eligible for a single line item.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div>
+      <h4>Configure multiple percentage discounts</h4>
+      <p>Under <strong>Multiple Percentage Discounts</strong>, choose <strong>Apply to Full Line Item Amount</strong> or <strong>Compound the Discounts</strong>.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div>
+      <h4>Save and test</h4>
+      <p>Click <strong>Save</strong>. Recurly recommends verifying your configuration in a sandbox environment to confirm coupons are applied in the expected order.</p>
+    </div>
+  </div>
+</div>
 
-This export resolves queries regarding which coupons have been applied to the invoice.
+# Exports
 
-* The `coupon_code` column unveils a comma-separated list of coupon codes, provided the invoice has more than one coupon code applied.
-* A unique roster of coupons applied to the invoice is presented. In cases of multiple redemptions of a coupon on the same invoice, the coupon makes a singular appearance on this list.
-* Coupons contributing to calculated returned credits are also exhibited on this list.
+Multiple coupon discounts are available across three exports. Access all of them from the <strong>Exports</strong> page under <strong>Analytics</strong>.
 
-Explore the minutiae of this export in our [Invoices - Summary export documentation](/export-overview#invoices-summary).
+<table class="rp-gw-table">
+  <tbody>
+    <tr class="rp-thead-row">
+      <td>Export</td>
+      <td>What it shows</td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.recurly.com/recurly-subscriptions/docs/invoices-summary" target="_blank">Invoices – Summary</a></td>
+      <td>The <code>coupon_code</code> column lists all coupon codes applied to the invoice as a comma-separated value. Each coupon appears once even if redeemed multiple times on the same invoice. Coupons contributing to returned credits are also included.</td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.recurly.com/recurly-subscriptions/docs/adjustments-exports" target="_blank">Invoices – Line Items</a></td>
+      <td>The <code>adjustment_discount</code> column shows the total discount for the line item. The <code>adjustment_coupon_code</code> column lists all coupon codes applied to the line item. Each coupon appears once per line item regardless of redemption count.</td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.recurly.com/recurly-subscriptions/docs/adjustments-coupons" target="_blank">Invoices – Line Items – Coupons</a></td>
+      <td>Only available when Multiple Coupons Per Account is enabled. Each coupon discount on a line item gets its own row. The <code>adjustment_discount</code> column shows the discount from the specific coupon in the <code>adjustment_coupon_code</code> column. Two rows with the same coupon code on the same line item indicate multiple redemptions of that coupon.</td>
+    </tr>
+  </tbody>
+</table>
 
-### Invoices - line Items
-
-This export elucidates which coupons have kissed the line item with their discounts and the total discount birthed on the line item.
-
-* The `adjustment_discount` column showcases the total discount for the line item.
-* Should the line item be adorned with more than one coupon code, the `adjustment_coupon_code` column reveals a comma-separated list of these coupon codes.
-* Unique coupons applied to the line item make their way to this list. Even if a coupon is redeemed multiple times on a single line item, its mention is singular.
-* Coupons instrumental in calculating returned credits are also paraded on this list.
-
-Dive deeper into this export via our [Invoices - Line Items export documentation](/export-overview#invoices-line-items).
-
-### Invoices - line Items - coupons
-
-Dedicated to detailing the individual discounts each coupon bestows upon a line item, this export rolls out only when the Multiple Coupons Per Account feature is activated in your coupon settings.
-
-* Each line item discount births a row in this export. A line item basking in multiple discounts will have multiple rows dedicated to it in the export.
-* The `adjustment_discount` column flaunts the fragment of the line item discount crafted by the specific coupon reflected in the `adjustment_coupon_code` column for that row.
-* Each `adjustment_coupon_code` column unveils a single coupon code. Witnessing two rows for the same line item brandishing the same coupon code translates to multiple redemptions of the coupon, each carving out a discount on the line item.
-* Line items pertaining to credits also exhibit any coupons and discounts applied, ensuring accurate credit calculations.
-
-Scrutinize the details of this export in our [Invoices - Line Items Coupons export documentation](/export-overview#invoices-line-items-coupons).
-
-# Guide to enable multiple coupons per account
-
-**Step 1: Navigate to the coupons configuration Page**
-
-* Log into your admin dashboard.
-* Navigate to the ‘Configuration’ section, usually found in the settings or admin panel.
-* Select the ‘Coupons’ page.
-
-**Step 2: Access the Coupon Settings**
-
-* On the ‘Coupons’ page, locate the 'Settings' button at the top right of the page.
-* Click on the ‘Settings’ button.
-
-**Step 3: Enable Multiple Coupons Per Account**
-
-* Find the section titled ‘Multiple Coupons Per Account’ within the Settings page.
-* Select the ‘Enable’ option, usually represented as a checkbox or toggle button.
-
-**Step 4: Configure the Order of Application**
-
-### Order of coupon application
-
-When enabling Multiple Coupons Per Account, a decision must be made on the order in which percentage discounts and fixed amount discounts are applied when both are eligible for a single invoice line item. The two options are:
-
-**Apply Percentage Discounts First**
-
-This approach prioritizes customer savings. All percentage discounts are applied to the line item first, followed by fixed amount discounts. This may result in a larger total discount for the customer.
-
-**Apply Fixed Amount Discounts First**
-
-This option is more favorable to the merchant, as fixed amount discounts are applied to the line item first, followed by percentage discounts, which could result in a smaller total discount for the customer.
-
-### Order of application (subscription vs account level)
-
-When you enable Multiple Coupons Per Account, you need to decide in what order you would like us to apply percentage discounts and fixed amount discounts in the event both discount types are eligible for a single line item on an invoice. In this particular case of multiple coupons being applied to multiple subscriptions or a hybrid purchase, we will preserve the order of the coupon application that is configured in your coupon settings. Coupons that are configured for one-time purchases, will apply based on that type of discount (percentage or fixed amount). 
-
-#### Subscription level coupon application
-
-* Multiple subscription level coupons that are redeemed in a purchase where >1 subscription is eligible, the coupons will apply to the first eligible and more expensive subscription (if applicable).
-
-* If a subscription level coupon is redeemed in a purchase but its eligible subscription is already entirely discounted (presumably by other coupons or credits), the coupon will still be redeemed to the subscription without applying a discount and should remain active and unused until the subscriptions next invoice. 
-
-* Subscription-level coupons that are fixed amount, will not carry over any leftover discount to other eligible subscriptions.
-
-#### Account level coupon application
-
-**Fixed amount account level**
-
-* A fixed amount, account level coupon, that is eligible to all plans and one time charges will apply first to a setup fee if there is one,  and then other setup fees - if there is additional discount remaining, first subscription plan, and work it's way down the plan fees and then the adjustments if the discount can.
-
-* If an account level coupon is redeemed in a purchase but it's eligible charge(s) are already entirely discounted, the coupon will be redeemed to the account and should remain active and unused until the next invoice.
-
-**Continue with the following:**
-
-* In the same ‘Settings’ page, find the section titled ‘Order of Application’.
-* Choose between “Apply Percentage First” or “Apply Fixed Amount First” based on your preference.
-  * “Apply Percentage First” applies percentage discounts before fixed amount discounts.
-  * “Apply Fixed Amount First” applies fixed amount discounts before percentage discounts.
-
-**Step 5: Configure multiple percentage discounts**
-
-* In the same ‘Settings’ page, locate the ‘Multiple Percentage Discounts’ section.
-* Choose between "Apply to Full Line Item Amount" or "Compound the Discounts” based on your preference.
-  * “Apply to Full Line Item Amount” applies each percentage discount to the full line item amount.
-  * “Compound the Discounts” applies each percentage discount to the net result of the previous discount.
-
-**Step 6: Save your settings**
-
-* After confirming that “Order of Application” and “Multiple Percentage Discounts” are set to the options you want, find the ‘Save’ button, usually located at the bottom of the page.
-* Click on the ‘Save’ button to confirm and implement the changes.
-
-**Step 7: Review and test**
-
-* It’s advisable to create a test account or use a sandbox environment to verify the functionality and confirm that the coupons are being applied in the desired manner.
-
-![865](https://files.readme.io/nppgofaXQ2yeqLSibs9g_multiple-coupons-per-account.png "multiple-coupons-per-account.png")
+<br />
