@@ -88,7 +88,7 @@ The hybrid pricing model is designed for businesses whose product catalog doesn'
     <div class="rp-step-num">2</div>
     <div>
       <h4>Integrate with the Recurly API</h4>
-      <p>To use the hybrid model, your system needs to interact with Recurly's API. Review the <a href="https://developers.recurly.com/api/latest.html#operation/create_purchase" target="_blank">Purchases endpoint</a> in the API reference before you begin.</p>
+      <p>To use the hybrid model, your system needs to interact with Recurly's API. Review the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/create_purchase" target="_blank">Purchases endpoint</a> in the API reference before you begin.</p>
     </div>
   </div>
   <div class="rp-step">
