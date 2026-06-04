@@ -58,7 +58,7 @@ next:
 # Dashboard
 
 
-<Image src="https://files.readme.io/c5a25d6-image.png" align="center" width="75%" border={true} framed={true} />
+<Image src="https://files.readme.io/c5a25d6-image.png" align="center" width="75%" border={true} />
 
 
 Navigate to **Customers → Gift Cards** to access the dashboard. Search for any gift card using the redemption code, gifter's name, or recipient's name.
@@ -105,13 +105,13 @@ Use the status filter to narrow results by the current state of each card.
 # Gift card details
 
 
-<Image src="https://files.readme.io/54081b0-image.png" align="center" width="75%" border={true} framed={true} />
+<Image src="https://files.readme.io/54081b0-image.png" align="center" width="75%" border={true} />
 
 
 Select a gift card from the list and click its redemption code to open the detail view. From here you can see all associated information for that card.
 
 
-<Image src="https://files.readme.io/6072a05-image.png" align="center" width="75%" border={true} framed={true} />
+<Image src="https://files.readme.io/6072a05-image.png" align="center" width="75%" border={true} />
 
 
 Clicking the gifter's name navigates to their account. Clicking the purchase invoice number opens the invoice view.
@@ -144,7 +144,7 @@ This is a dummy callout to test whether a native Image component placed immediat
 </div>
 
 
-<Image src="https://files.readme.io/c5a25d6-image.png" align="center" width="75%" border={true} framed={true} />
+<Image src="https://files.readme.io/c5a25d6-image.png" align="center" width="75%" border={true} />
 
 
 <br />
