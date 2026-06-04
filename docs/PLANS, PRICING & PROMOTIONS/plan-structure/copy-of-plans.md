@@ -14,20 +14,23 @@ metadata:
 Paste this entire page into the ReadMe editor. Each test is numbered and labeled.
 Check the rendered output against the expected result for each one.
 
----
+***
 
 ## GROUP A — Blank lines inside `<div>` blocks
 
 ### A1 — `<div>` with NO blank line before markdown heading
 
 <div class="rp-card">
+
 ### Heading inside div — no blank line before it
+
 This is prose directly after the heading, also no blank line.
+
 </div>
 
 **Expected:** Heading renders as a heading. Prose renders as prose. Card styled correctly.
 
----
+***
 
 ### A2 — `<div>` WITH blank line before markdown heading
 
@@ -41,17 +44,19 @@ This is prose after a blank line.
 
 **Expected:** If this breaks, headings inside divs need no blank lines. If it renders fine, blank lines are safe.
 
----
+***
 
 ### A3 — `<div>` with NO blank line before prose only (no heading)
 
 <div class="rp-card">
+
 This is prose with no heading and no blank lines inside the div.
+
 </div>
 
 **Expected:** Prose renders normally inside the card.
 
----
+***
 
 ### A4 — `<div>` with blank line before prose only
 
@@ -63,7 +68,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Tells us if blank lines before prose (not headings) is the trigger.
 
----
+***
 
 ### A5 — Nested `<div>` inside `<div>`, no blank lines
 
@@ -75,7 +80,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Both card and callout render correctly.
 
----
+***
 
 ### A6 — Nested `<div>` inside `<div>`, with blank lines
 
@@ -91,7 +96,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Tests whether blank lines between nested divs break rendering.
 
----
+***
 
 ## GROUP B — `<span>` vs `<div>` tolerance
 
@@ -114,7 +119,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Image renders and clicking it opens the lightbox overlay.
 
----
+***
 
 ### B2 — `<span>` with NO blank lines inside (zoom pattern)
 
@@ -132,7 +137,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Same as B1 — tells us if blank lines inside `<span>` matter.
 
----
+***
 
 ## GROUP C — Markdown headings inside vs outside divs
 
@@ -142,7 +147,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Always renders correctly. Baseline reference.
 
----
+***
 
 ### C2 — Markdown `##` heading outside div, between two divs
 
@@ -158,7 +163,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Heading renders correctly between two divs.
 
----
+***
 
 ### C3 — `<h3>` raw HTML inside a div (no markdown)
 
@@ -169,7 +174,7 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Heading and prose render. Tells us if raw HTML is more reliable than markdown inside divs.
 
----
+***
 
 ## GROUP D — rp-steps inside rp-card (the "Create Plan" card case)
 
@@ -186,18 +191,21 @@ This is prose with a blank line before it but no heading.
 
 **Expected:** Card and step both render correctly.
 
----
+***
 
 ### D2 — `rp-card` containing markdown prose and a heading, no blank lines
 
 <div class="rp-card">
+
 ### Card heading — no blank lines
+
 After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/checkout" target="_blank">Checkout</a> configuration.
+
 </div>
 
 **Expected:** Tests the exact pattern from the broken Plans page card.
 
----
+***
 
 ### D3 — `rp-card` containing markdown prose and a heading, WITH blank lines
 
@@ -211,7 +219,7 @@ After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/c
 
 **Expected:** Directly compares with D2.
 
----
+***
 
 ## GROUP E — rp-plan pill and rp-toc inside rp-page
 
@@ -219,7 +227,9 @@ After creating a plan, you can set up a <a href="https://docs.recurly.com/docs/c
 
 <div class="rp-page">
 <div class="rp-overview">
+
 This is the overview paragraph. No blank lines inside the rp-page div.
+
 </div>
 <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
 <div class="rp-toc">
@@ -230,14 +240,16 @@ This is the overview paragraph. No blank lines inside the rp-page div.
 
 **Expected:** Overview, plan pill, and TOC pills all render correctly.
 
----
+***
 
 ### E2 — Full rp-page header block WITH blank lines between children
 
 <div class="rp-page">
 
 <div class="rp-overview">
+
 This is the overview paragraph. Blank lines between children inside rp-page.
+
 </div>
 
 <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
@@ -251,7 +263,7 @@ This is the overview paragraph. Blank lines between children inside rp-page.
 
 **Expected:** Compares with E1.
 
----
+***
 
 ## GROUP F — Tables (rp-gw-table)
 
@@ -265,7 +277,7 @@ This is the overview paragraph. Blank lines between children inside rp-page.
 
 **Expected:** Table renders with dark header row and branded styling.
 
----
+***
 
 ### F2 — rp-gw-table immediately after a `<span class="rp-zoom">` block (no blank line)
 
@@ -284,7 +296,7 @@ This is the overview paragraph. Blank lines between children inside rp-page.
 
 **Expected:** Both image and table render correctly back to back.
 
----
+***
 
 ### F3 — rp-gw-table immediately after a `<span class="rp-zoom">` block (WITH blank line)
 
@@ -304,9 +316,9 @@ This is the overview paragraph. Blank lines between children inside rp-page.
 
 **Expected:** Compares with F2.
 
----
+***
 
----
+***
 
 ## GROUP G — `rp-benefit` blank line cases
 
@@ -327,7 +339,7 @@ This is the overview paragraph. Blank lines between children inside rp-page.
 
 **Expected:** Both benefit cards render with icon, bold title, and description text.
 
----
+***
 
 ### G2 — `rp-benefit` with blank line between icon div and strong/span
 
@@ -337,14 +349,17 @@ This is the overview paragraph. Blank lines between children inside rp-page.
       <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
     </div>
 
-    <strong>Benefit title</strong>
-    <span>Blank line between icon div and strong/span — mirrors the broken pattern.</span>
+```
+<strong>Benefit title</strong>
+<span>Blank line between icon div and strong/span — mirrors the broken pattern.</span>
+```
+
   </div>
 </div>
 
 **Expected:** SHOULD break — strong and span render as code blocks. Confirms the cause.
 
----
+***
 
 ### G3 — `rp-benefit` icon div on one line, tight, strong/span on next lines
 
@@ -358,6 +373,20 @@ This is the overview paragraph. Blank lines between children inside rp-page.
 
 **Expected:** Renders correctly — confirms single-line icon div is fine.
 
----
+***
 
-*End of test page. Record which tests pass and which fail, then report back.*
+_End of test page. Record which tests pass and which fail, then report back._
+
+<br />
+
+
+<Image src="https://files.readme.io/2f3c920e039599c79b0f1043f4e070b1b9c301e1763d874dee8a144909d38b62-image.png" align="center" width="75%" border={true} framed={true} />
+
+
+<br />
+
+
+<Image src="https://files.readme.io/4668ce08bf74d2e6aa59d9af19e99331f16302712f96806ef77c9867a51b92b8-image.png" align="center" />
+
+
+<br />
