@@ -565,7 +565,7 @@ Track and analyze coupon performance from the **Exports** page under **Reports**
 </Accordion>
 
 <Accordion title="Can subscribers have multiple active coupon redemptions on their account?">
-  Yes — you can allow multiple active coupon redemptions per account, which can result in multiple discounts on a single invoice or line item. Settings for this feature are adjusted on the coupon configuration page. See the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#tag/coupon" target="_blank">Multiple Coupons Per Account documentation</a> for details on how stacked discounts are applied.
+  Yes — you can allow multiple active coupon redemptions per account, which can result in multiple discounts on a single invoice or line item. Settings for this feature are adjusted on the coupon configuration page. See the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/list_coupons" target="_blank">Multiple Coupons Per Account documentation</a> for details on how stacked discounts are applied.
 </Accordion>
 
 <Accordion title="How do I create a coupon that discounts across several billing cycles?">
