@@ -257,4 +257,4 @@ You can opt in to only the specific notifications you need, on an endpoint-by-en
 
 Each site supports up to **ten webhook endpoints**. Event subscription changes take effect immediately for all subsequent notifications.
 
-A full list of all notifications — with both JSON and XML payloads for each — is available in the <a href="https://docs.recurly.com/recurly-subscriptions/docs/overview-webhooks" target="_blank">Notifications</a> reference.
+A full list of all notifications — with both JSON and XML payloads for each — is available in the <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-notifications" target="_blank">Notifications</a> reference.
