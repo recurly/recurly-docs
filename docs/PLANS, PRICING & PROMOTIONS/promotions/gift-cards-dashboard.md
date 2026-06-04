@@ -68,7 +68,7 @@ Navigate to **Customers → Gift Cards** to access the dashboard. Search for any
 Use the status filter to narrow results by the current state of each card.
 
 
-<Image src="https://files.readme.io/22b16b5-image.png" align="center" width="75%" border={true} framed={true} />
+<Image src="https://files.readme.io/22b16b5-image.png" align="center" width="40%" border={true} />
 
 
 <table class="rp-pm-table">
