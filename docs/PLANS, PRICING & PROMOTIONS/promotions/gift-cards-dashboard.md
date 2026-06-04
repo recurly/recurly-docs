@@ -12,8 +12,6 @@ metadata:
 next:
   description: ''
 ---
-<span id="rp-close"></span>
-
 <div class="rp-page">
   <div class="rp-overview">
     The Gift Cards dashboard is your central hub for locating and managing all gift card activity. Search by redemption code, gifter name, or recipient name — then drill into any card for full transaction details, delivery management, and cancellation controls.
@@ -27,6 +25,7 @@ next:
     <a class="rp-toc-pill" href="#dashboard"><span class="rp-toc-num">3</span>Dashboard</a>
     <a class="rp-toc-pill" href="#gift-card-details"><span class="rp-toc-num">4</span>Gift card details</a>
     <a class="rp-toc-pill" href="#exports"><span class="rp-toc-num">5</span>Exports</a>
+    <a class="rp-toc-pill" href="#image-test"><span class="rp-toc-num">6</span>Image test</a>
   </div>
 </div>
 
@@ -58,7 +57,9 @@ next:
 
 # Dashboard
 
-<span class="rp-zoom"><a class="rp-zoom-label" href="#c5a25d6"><img src="https://files.readme.io/c5a25d6-image.png" alt="Gift Cards dashboard overview" /></a><a id="zoom-c5a25d6" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/c5a25d6-image.png" alt="" /></a></span>
+
+<Image src="https://files.readme.io/c5a25d6-image.png" align="center" width="75%" border={true} framed={true} />
+
 
 Navigate to **Customers → Gift Cards** to access the dashboard. Search for any gift card using the redemption code, gifter's name, or recipient's name.
 
@@ -66,7 +67,9 @@ Navigate to **Customers → Gift Cards** to access the dashboard. Search for any
 
 Use the status filter to narrow results by the current state of each card.
 
-<span class="rp-zoom"><a class="rp-zoom-label rp-zoom-small" href="#22b16b5"><img src="https://files.readme.io/22b16b5-image.png" alt="Gift card status filter" /></a><a id="zoom-22b16b5" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/22b16b5-image.png" alt="" /></a></span>
+
+<Image src="https://files.readme.io/22b16b5-image.png" align="center" width="50%" border={true} framed={true} />
+
 
 <table class="rp-pm-table">
   <tr class="rp-thead-row">
@@ -101,11 +104,15 @@ Use the status filter to narrow results by the current state of each card.
 
 # Gift card details
 
-<span class="rp-zoom"><a class="rp-zoom-label" href="#54081b0"><img src="https://files.readme.io/54081b0-image.png" alt="Gift card list view" /></a><a id="zoom-54081b0" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/54081b0-image.png" alt="" /></a></span>
+
+<Image src="https://files.readme.io/54081b0-image.png" align="center" width="75%" border={true} framed={true} />
+
 
 Select a gift card from the list and click its redemption code to open the detail view. From here you can see all associated information for that card.
 
-<span class="rp-zoom"><a class="rp-zoom-label" href="#6072a05"><img src="https://files.readme.io/6072a05-image.png" alt="Gift card detail view" /></a><a id="zoom-6072a05" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/6072a05-image.png" alt="" /></a></span>
+
+<Image src="https://files.readme.io/6072a05-image.png" align="center" width="75%" border={true} framed={true} />
+
 
 Clicking the gifter's name navigates to their account. Clicking the purchase invoice number opens the invoice view.
 
@@ -124,3 +131,20 @@ To cancel the gift card, click **Cancel Gift Card** in the upper-right menu.
 # Exports
 
 For full details on available fields and export configuration, see the <a href="https://docs.recurly.com/docs/gift-cards-export" target="_blank">Gift Cards exports</a> page.
+
+# Image test
+
+This section tests native `<Image>` rendering inside a callout and as a standalone image.
+
+<div class="rp-callout rp-callout-note">
+<strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Test callout</strong>
+
+This is a dummy callout to test whether a native Image component placed immediately after renders correctly inside and adjacent to a custom rp-\* component.
+
+</div>
+
+
+<Image src="https://files.readme.io/c5a25d6-image.png" align="center" width="75%" border={true} framed={true} />
+
+
+<br />
