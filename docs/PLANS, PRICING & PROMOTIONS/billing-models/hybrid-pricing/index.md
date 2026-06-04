@@ -1,9 +1,9 @@
 ---
 title: Hybrid pricing
 excerpt: >-
-  Unlock ultimate flexibility in your pricing strategy with Recurly's Hybrid
-  Pricing Model. Seamlessly combine recurring, quantity-based, usage-based, and
-  one-time models to cater to your unique business needs.
+  Hybrid pricing lets you combine recurring, quantity-based, usage-based, and
+  one-time charges into a single transaction, so subscribers can purchase a
+  subscription and custom products together at checkout.
 deprecated: false
 hidden: false
 metadata:
@@ -13,44 +13,98 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">
+    Hybrid pricing lets you mix and match pricing models — recurring, quantity-based, usage-based, and one-time — within a single transaction. Your subscribers can purchase a subscription alongside custom, non-recurring charges in one checkout, with everything collected on a single invoice.
+  </div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#activating-hybrid-pricing"><span class="rp-toc-num">4</span>Activating hybrid pricing</a>
+  </div>
+</div>
 
 # Definition
 
-The Hybrid Pricing Model allows for a combination of different pricing models such as recurring, quantity-based, usage-based, and one-time models. This strategy enables subscriptions and custom charges (non-recurring products) to be purchased together in a single transaction.
+<div class="rp-definition">
+  The hybrid pricing model lets you combine different pricing structures — recurring, quantity-based, usage-based, and one-time — in a single subscription transaction. Subscriptions and custom charges (non-recurring products) can be purchased together on one invoice, collected immediately.
+</div>
 
 # Key benefits
 
-* **Flexibility:** It accommodates a wide variety of business models and product offerings, accommodating both recurring subscriptions and one-time charges.
-* **Single transaction:** Simplifies the purchasing process by allowing customers to purchase subscriptions and one-time products in a single transaction.
-* **Tailored pricing:** Allows businesses to precisely tailor their pricing strategies to their unique product offerings and customer needs.
-* **Improved customer experience:** By offering a seamless purchasing process, it enhances the overall customer experience.
-* **Effective for diverse product offerings:** Perfect for businesses that offer a combination of digital goods, physical goods, SaaS, and more.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Pricing flexibility</strong>
+    <span>Accommodate a wide variety of business models by combining recurring subscriptions with one-time and usage-based charges — all in one place.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
+    <strong>Single-transaction checkout</strong>
+    <span>Let subscribers purchase a subscription and one-time products together, collected on a single invoice at checkout.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-tag" aria-hidden="true"></i></div>
+    <strong>Tailored pricing strategies</strong>
+    <span>Precisely match your pricing to your product mix — whether that's digital goods, physical goods, SaaS, or any combination.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+    <strong>Better customer experience</strong>
+    <span>Reduce friction at checkout by unifying diverse product types into one seamless purchasing flow.</span>
+  </div>
+</div>
 
 # Key details
 
-The Hybrid Pricing Model by Recurly offers an adaptive solution for businesses requiring diverse pricing strategies. By combining recurring, quantity-based, usage-based, and one-time models, you can address a wide range of business needs. The Hybrid Model particularly excels at supporting subscriptions and custom charges (non-recurring products) purchased together in one transaction.
+The hybrid pricing model is designed for businesses whose product catalog doesn't fit neatly into a single pricing type. By combining recurring, quantity-based, usage-based, and one-time models, you can address a wide range of business needs in a single transaction.
 
-## Example
+## Industry examples
 
-To better illustrate the functionality of Hybrid Pricing, we’ve provided a few examples across different industries:
+| Industry        | Example                                                                                                               |
+| --------------- | --------------------------------------------------------------------------------------------------------------------- |
+| SaaS            | A CRM software charges $50/month per user and bills separately based on the number of leads generated or emails sent. |
+| Streaming media | A streaming service charges $39.99/month and offers one-time purchases for movies or TV show seasons.                 |
+| Consumer goods  | A pet supplies service charges $9.99/month for a subscription and tiered pricing for toy add-ons.                     |
 
-| Industry        | Example                                                                                                            |
-| :-------------- | :----------------------------------------------------------------------------------------------------------------- |
-| SaaS            | A CRM software charges $50/month/user and charges for usage based on the number of leads generated or emails sent. |
-| Streaming media | A streaming service charges $39.99/month and offers one-time products such as movies or TV show seasons.           |
-| Consumer goods  | Pet supplies service charges $9.99/month subscriptions and tiered pricing for toy add-ons.                         |
+# Activating hybrid pricing
 
-# Guide to activate hybrid pricing
+<div class="rp-callout rp-callout-note">
+  <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>
+  Hybrid pricing requires API integration. You'll need access to Recurly's API to create hybrid purchases programmatically.
+</div>
 
-1. **Understand Hybrid Checkout:** Hybrid checkout introduces the concept of a 'purchase' that includes recurring and non-recurring products. It incorporates subscriptions with custom charges.
-2. **API Integration:** To use the hybrid model, you'll need to integrate with Recurly's API. 
-3. **Create a Purchase:** In the API request, submit a subscription with one or many add ons or adjustments on a new or existing account. The subscription and adjustments will appear as line items on a single invoice, which is collected immediately.
-4. **Transaction Management:** A purchase transaction is a single transaction to the gateway. If successful, it will update or create an account in Recurly. If the transaction fails, the request will be rolled back.
-5. **Reference Documentation:** For more information on setting up a Hybrid Checkout, visit the <a href="https://developers.recurly.com/api/latest.html#operation/create_purchase" target="_blank">Purchases</a> section in Recurly's API documentation.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Understand hybrid checkout</h4>
+      <p>Hybrid checkout introduces the concept of a "purchase" — a single transaction that combines recurring subscriptions with non-recurring custom charges (adjustments). Both appear as line items on one invoice.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Integrate with the Recurly API</h4>
+      <p>To use the hybrid model, your system needs to interact with Recurly's API. Review the <a href="https://developers.recurly.com/api/latest.html#operation/create_purchase" target="_blank">Purchases endpoint</a> in the API reference before you begin.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Create a purchase</h4>
+      <p>In your API request, submit a subscription with one or more add-ons or adjustments on a new or existing Account. The subscription and adjustments appear as line items on a single invoice, which is collected immediately.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div>
+      <h4>Understand transaction behavior</h4>
+      <p>A purchase creates a single gateway transaction. If the transaction succeeds, Recurly creates or updates the Account. If it fails, the entire request is rolled back — no partial state is saved.</p>
+    </div>
+  </div>
+</div>
 
-The Hybrid Pricing Model offers businesses the ultimate flexibility in pricing, accommodating a wide array of product offerings and customer purchasing habits. With Recurly's support, setting up this pricing model is straightforward, enhancing your ability to serve your customers better.
+<br />
