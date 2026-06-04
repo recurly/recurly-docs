@@ -1,9 +1,8 @@
 ---
 title: Gift cards
 excerpt: >-
-  Increase customer acquisitions with a gift card program. Add gift card
-  purchases to your checkout and allow gift card recipients to redeem the gift
-  card for credit towards any of your products.
+  Configure and manage Recurly's gift card program — including product setup,
+  purchasing, redemption, delivery management, and third-party integrations.
 deprecated: false
 hidden: false
 metadata:
@@ -13,300 +12,399 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">
+    Recurly's gift card program lets your customers purchase virtual or physical gift cards for friends and family. Each purchase generates a unique redemption code that recipients can apply as credit toward any of your subscription products — across multiple billing cycles until the balance is used up.
+  </div>
 
-### Required plan
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
 
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#building-your-gift-card-product"><span class="rp-toc-num">3</span>Building your gift card product</a>
+    <a class="rp-toc-pill" href="#locating-a-gift-card"><span class="rp-toc-num">4</span>Locating a gift card</a>
+    <a class="rp-toc-pill" href="#purchasing-a-gift-card"><span class="rp-toc-num">5</span>Purchasing a gift card</a>
+    <a class="rp-toc-pill" href="#redeeming-a-gift-card"><span class="rp-toc-num">6</span>Redeeming a gift card</a>
+    <a class="rp-toc-pill" href="#canceling-a-gift-card"><span class="rp-toc-num">7</span>Canceling a gift card</a>
+    <a class="rp-toc-pill" href="#modifying-a-gift-card-product"><span class="rp-toc-num">8</span>Modifying a gift card product</a>
+    <a class="rp-toc-pill" href="#refunding-a-gift-card-purchase"><span class="rp-toc-num">9</span>Refunding a gift card purchase</a>
+    <a class="rp-toc-pill" href="#delivery-issues"><span class="rp-toc-num">10</span>Delivery issues</a>
+    <a class="rp-toc-pill" href="#hosted-pages"><span class="rp-toc-num">11</span>Hosted pages</a>
+    <a class="rp-toc-pill" href="#multicurrency-support"><span class="rp-toc-num">12</span>Multicurrency support</a>
+    <a class="rp-toc-pill" href="#third-party-gift-cards"><span class="rp-toc-num">13</span>Third-party gift cards</a>
+    <a class="rp-toc-pill" href="#additional-details"><span class="rp-toc-num">14</span>Additional details</a>
+  </div>
+</div>
 
 # Definition
 
-Enhance your customer engagement and business growth with Recurly's gift card program. This feature allows you to integrate gift card purchases at your checkout and enables gift card recipients to redeem them as credit towards your products.
-
-The gift card feature in Recurly allows your business to offer virtual or physical gift cards to your customers. These gift cards, once purchased, generate a unique code which can be redeemed by the recipient for credit towards any of your products.
+<div class="rp-definition">
+  Recurly's gift card program lets you offer virtual or physical gift cards to your customers. When a gifter purchases a card, Recurly generates a unique redemption code tied to their account. Once the recipient redeems the code, a credit for the full purchase amount is applied to their account and can be used across multiple subscriptions, invoices, and billing cycles until the balance is depleted.
+</div>
 
 # Key benefits
 
-* **Customer acquisition:** Gift cards can serve as a marketing tool that drives new customers to your business.
-* **Increased revenue:** Gift cards often lead to additional spending beyond the value of the card.
-* **Brand exposure:** Gift cards expose your brand to new potential customers through the recipients.
-* **Customer retention:** They can be used as a tool to retain existing customers by offering them as rewards or incentives.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user-plus" aria-hidden="true"></i></div>
+    <strong>Customer acquisition</strong>
+    <span>Gift cards act as a marketing tool, driving new customers to your business through recipients who may not have discovered you otherwise.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i></div>
+    <strong>Increased revenue</strong>
+    <span>Recipients often spend beyond the card's face value, making gift cards a reliable driver of incremental revenue.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+    <strong>Brand exposure</strong>
+    <span>Every gift card puts your brand in front of a new potential customer — the recipient — who might not have found you on their own.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+    <strong>Customer retention</strong>
+    <span>Use gift cards as rewards or incentives to deepen loyalty with existing customers and keep them engaged with your products.</span>
+  </div>
+</div>
 
-# Creating a gift card
+# Building your gift card product
 
-Before setting up your gift card program, we recommend you consult with a legal and financial advisor. Compliance with federal and state gift card regulations, which include rules around expiration dates, dormant account fees, cash payouts, and escheatment, Recurly Gift Cards can aid in setting up a gift card program, however, it doesn't manage your compliance requirements.
+Before setting up your gift card program, consult with a legal and financial advisor. Gift card programs are subject to federal and state regulations — including rules around expiration dates, dormant account fees, cash payouts, and escheatment. Recurly can help you configure a gift card program, but it doesn't manage your compliance requirements.
 
-Also, consider how you will account for unused card balances in relation to revenue recognition. Additionally, be aware that the introduction of gift card sales may heighten your fraud risk, as these cards are often bought with stolen credit cards and then resold. To mitigate this risk, we recommend that you review your fraud management tools and processes.
+You should also consider how you'll account for unused card balances in relation to revenue recognition. Keep in mind that gift card sales can heighten fraud risk, since cards are sometimes purchased with stolen credit card numbers and resold. Review your fraud management tools and processes before launching.
 
-## Building your gift card product
+<div class="rp-callout rp-callout-warning">
+  <strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Fraud risk</strong>
+  Gift cards are a common fraud vector — often bought with stolen credit card numbers and resold. Recurly recommends reviewing your fraud management tools, enabling the Kount integration, and requiring additional address verification for billing before launching a gift card program.
+</div>
 
-To develop your gift card product on Recurly, follow these steps:
+## Steps to build your gift card product
 
-1. **Navigate** to Configuration→Gift Cards Settings
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Navigate to gift card settings</h4>
+      <p>Go to <strong>Configuration → Gift Cards Settings</strong> and select <strong>Get Started</strong>.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Add gift card amounts</h4>
+      <p>Enter the desired amount and click <strong>Add</strong>. Align amounts with your subscription plans and tiers — consider using higher amounts to cover potential taxes and encourage customers to purchase more. You can add multiple amounts; to remove one, hover over the row and click <strong>Remove</strong>. Merchants with multicurrency support can select the currency for each amount.</p>
+    </div>
+  </div>
+</div>
 
-2. **Select** "Get Started"
+<span class="rp-zoom"><a class="rp-zoom-label" href="#2c1c783"><img src="https://files.readme.io/2c1c783-image.png" alt="Gift card amount entry" /></a><a id="zoom-2c1c783" class="rp-zoom-overlay" href="#rp-close"><img src="https://files.readme.io/2c1c783-image.png" alt="" /></a></span>
 
-3. **Enter** the desired Amount and click "Add".  
-   ![](https://files.readme.io/2c1c783-image.png)
-
-4. **Align** your gift card amounts with your subscription plans/tiers. **Use** a higher amount to cover potential taxes and incentivize customers to purchase more of your products or services.
-
-5. **You can enter** additional amounts if desired. To **remove** an amount, hover over the dots at the end of the row and click "Remove". Merchants with multiple currency support will have the option to select the currency of the Amount.  
-   ![](https://files.readme.io/858978a-image.png)
-
-6. **Specify** a Display Name for the gift card; this will appear on the purchase charge and redemption credit line items.
-
-7. **Enter** a Product Code (this is the product SKU).
-
-8. **Enter** an Accounting Code (this will serve as the general ledger for your gift card purchase charge and redemption credit accounting).
-
-   <Image align="center" border={true} src="https://files.readme.io/3b5021a-image.png" className="border" />
-
-9. **Upload** a design image for your gift card by clicking "Choose File" and selecting the image from your computer. This image will be displayed in the Gift Card Delivery email template.
-
-   <Image align="center" border={true} src="https://files.readme.io/bd0a7c4-image.png" className="border" />
-
-10. **Click** "Create Gift Card" or "Save Changes". Once the gift card product is created, you can access the details anytime from the Gift Cards page.
-
-Remember to remove any private data from your images before uploading as Recurly does not remove Exif data from uploaded images.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div>
+      <h4>Set display name and product code</h4>
+      <p>Enter a <strong>Display Name</strong> for the gift card — this appears on the purchase charge and redemption credit line items. Then enter a <strong>Product Code</strong> (the product SKU).</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div>
+      <h4>Add an accounting code</h4>
+      <p>Enter an <strong>Accounting Code</strong> to serve as the general ledger for gift card purchase charges and redemption credit accounting.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div>
+      <h4>Upload a design image</h4>
+      <p>Click <strong>Choose File</strong> and select an image from your computer. This image appears in the Gift Card Delivery email template. Remove any private data from images before uploading — Recurly does not strip Exif data.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div>
+      <h4>Save your gift card product</h4>
+      <p>Click <strong>Create Gift Card</strong> or <strong>Save Changes</strong>. Once created, you can access the gift card product details at any time from the Gift Cards page.</p>
+    </div>
+  </div>
+</div>
 
 # Locating a gift card
 
-There are 3 ways to locate a gift card:
+There are three ways to locate a gift card:
 
-1. **Through the Gift Cards Dashboard**: Navigating to Customer → Gift Cards and entering the redemption code,  the gifter's name or the recipient’s name.
-2. **Through the Invoices Dashboard**: By using the purchase invoice number.
-3. **Navigating through the customer's account:** By directly going to the customer's account.
+1. **Gift Cards Dashboard** — Navigate to **Customers → Gift Cards** and search by redemption code, gifter name, or recipient name.
+2. **Invoices Dashboard** — Search using the purchase invoice number.
+3. **Customer account** — Navigate directly to the gifter's account.
 
 ## Navigating free trials and gift card scenarios
 
-Recurly demands billing information for free trial sign-ups, with exceptions for gift card scenarios. Given most free trial invoices equal zero dollars before credits (unless a setup fee applies), distinguishing if the subscription began with a gift is critical. This differentiation allows the system to bypass billing information collection at the free trial stage.
+Recurly requires billing information for free trial sign-ups, with one exception: when the subscription starts with a gift card. Since most free trial invoices are $0 before credits (unless a setup fee applies), the system distinguishes whether a subscription began with a gift to decide whether to bypass billing information collection.
 
-If you choose to collect billing information during free trial sign-ups and the first invoice is paid with a gift card credit, Recurly logs this as a gift-started subscription, enabling accurate tracking of such subscriptions.
-
-# Canceling a gift card
-
-Canceling a gift card effectively inactivates its redemption code, preventing any future redemption attempts. This action cannot be reversed, meaning a canceled card cannot be reactivated.
-
-This feature should be employed in situations such as fraudulent gift card purchase, or refunding a gift card. It's important to note that a gift card can only be canceled if it has not yet been redeemed. In the case of refunding a gift card, refund the invoice directly, and Recurly will automatically cancel the card for you (feature under development). If you encounter a fraudulent purchase or a chargeback, you can manually cancel the card. In the case of a chargeback, avoid issuing a refund through Recurly, as the funds would have already been refunded outside Recurly's system.
-
-Upon successful cancellation, Recurly will display an activity for the cancellation on the gifter's account and will issue a `canceled_gift_card_notification` webhook.
-
-## How to cancel a gift card
-
-1. Access the gifter's account and locate the Gift Card Purchases table. Here, you'll find a link to the specific gift card.
-
-2. On the Gift Card Details page, you'll find a red button at the top right corner labeled "Cancel Gift Card".
-
-3. Click "Cancel Gift Card" and confirm the action in the popup.
-
-# Modifying a gift card product
-
-To modify your gift card product, navigate to Configuration → Gift Cards Settings and select "Edit Gift Card". Any changes made will immediately update the gift card. Any new purchases will use the updated version of the gift card, whereas existing purchases will respect the original purchase amount.
+If you do collect billing information during free trial sign-ups and the first invoice is paid with a gift card credit, Recurly logs this as a gift-initiated subscription — enabling accurate tracking going forward.
 
 # Purchasing a gift card
 
-Upon creating the gift card product, customers, aka gifters, can purchase gift cards for their friends and family, aka recipients. A unique redemption code will be generated in Recurly for each gift card purchase. The gift card will be initially associated with the gifter's account and will be associated with the recipient's account upon redemption.
+Once your gift card product is created, customers (gifters) can purchase cards for friends and family (recipients). Recurly generates a unique redemption code for each purchase, initially tied to the gifter's account and linked to the recipient's account upon redemption.
 
-A gift card can be purchased by a new or existing customer. If the gifter is a new customer, a new account will be created for them at the time of purchase. This account will contain the purchase invoice, billing information, and transaction details. Gift cards can be delivered via email or post.
+A gift card can be purchased by a new or existing customer. If the gifter is new, Recurly creates an account for them at the time of purchase containing the invoice, billing information, and transaction details.
 
-With email delivery, Recurly will automatically send the recipient the Gift Card Delivery email containing the redemption code and other gift card details. Alternatively, you can disable the automatic email and send your own email to the recipient.
+## Delivery methods
 
-The post delivery method is available for businesses wishing to offer a physical version of the gift card. Recurly will generate the gift card redemption code and collect shipping details. The business is responsible for printing the code on a physical card and delivering it to the recipient.
+**Email delivery** — Recurly automatically sends the recipient a Gift Card Delivery email with the redemption code and gift card details. You can disable automatic sending and use your own email instead.
+
+**Post delivery** — For businesses offering physical gift cards, Recurly generates the redemption code and collects shipping details. Your team is responsible for printing the code on a physical card and delivering it.
+
+## Purchase options
 
 ### Future send date
 
-Gifters can schedule a future date for the Gift Card Delivery email to be sent to the recipient. This date must be at least an hour in the future and less than a year from the purchase date.
+Gifters can schedule a future delivery date for the Gift Card Delivery email. The date must be at least one hour in the future and no more than one year from the purchase date.
 
 ### Personal message
 
-Recurly provides two message fields for the gift card delivery information: a personal message and a gifter name. The personal message is a 255 character field for a personalized message from the gifter to the recipient. The gifter name is an optional field to collect a signature name for the gifter.
+Recurly provides two message fields: a **personal message** (up to 255 characters) from the gifter to the recipient, and an optional **gifter name** field to collect a signature name.
 
 ### Taxes and discounts
 
-Gift card purchases are not taxed as they are considered payment for future purchases, however, the purchase of a gift card is still sent to your tax partner.  You may choose to bypass your tax service provider entirely by setting the _tax_service_opt_out_ field in either version of the [API](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_gift_card). Currently, discounts on gift card purchases are not supported.
+Gift card purchases are not taxed — they're treated as payment for future purchases — but the purchase is still sent to your tax partner. To bypass your tax service provider entirely, set the `tax_service_opt_out` field via the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_gift_card" target="_blank">API</a>. Discounts on gift card purchases are not currently supported.
 
-### Fighting fraudulent purchases
+### Fraud prevention
 
-To deter fraudulent purchases, Recurly does not permit purchasing a gift card with another gift card credit. Additional fraud prevention tactics are recommended, such as using the Kount integration and requiring additional address information for billing verification.
+Recurly does not permit purchasing a gift card with gift card credit. Additional fraud prevention — such as the Kount integration and requiring billing address verification — is strongly recommended.
 
 ### Purchase confirmation
 
-Upon successful purchase, the gifter will receive a Gift Card Purchase Confirmation email containing details about the gift purchase, such as the amount, personal message, and purchase invoice.
+After a successful purchase, the gifter receives a Gift Card Purchase Confirmation email with details including the amount, personal message, and purchase invoice.
 
 # Redeeming a gift card
 
-A gift card can be redeemed during subscription sign-up or directly on an existing account. Once redeemed, the recipient's account will be linked to the gift card in Recurly, and a gift card credit will be created for the full purchase amount. This credit is available to use across multiple subscriptions, invoices, and billing cycles until the credit balance is depleted.
+A gift card can be redeemed during subscription sign-up or directly on an existing account. Once redeemed, the recipient's account is linked to the gift card in Recurly, and a credit for the full purchase amount is created. That credit is available across multiple subscriptions, invoices, and billing cycles until the balance is depleted.
+
+## Redemption details
 
 ### Redemption code
 
-The redemption code is a unique identifier for each gift card, generated at the time of purchase. It's alphanumeric and not case-sensitive. In case the recipient encounters any difficulty during redemption, Recurly provides a feature to regenerate the code.
+Each gift card has a unique alphanumeric redemption code (not case-sensitive) generated at the time of purchase. If the recipient has difficulty redeeming, you can regenerate the code — see <a href="#regenerating-a-redemption-code">Regenerating a redemption code</a> below.
 
 ### Taxes
 
-It's crucial to note that gift card credits are applied after the tax calculation. If you're collecting taxes and the redeemer does not have a payment method on file, you should ensure to store the customer's taxable address in the account information.
+Gift card credits are applied **after** tax calculation. If you're collecting taxes and the redeemer doesn't have a payment method on file, make sure you've stored a taxable billing address on their account.
 
 ### Discounts
 
-Gift card credits can be used on invoices with coupon discounts. The discounts are applied first, and then the gift card credit. If the invoice total is zero after applying the discounts, the remaining gift card credit will be left on the account for future use.
+Gift card credits can be used on invoices with coupon discounts. Discounts are applied first, then the gift card credit. If the invoice total reaches $0 after discounts, any remaining gift card credit stays on the account for future use.
 
 ### Credit balance
 
-Recurly tracks the credit balance once a gift card is redeemed. This balance can be viewed through the Recurly API, Gift Cards export, or on the customer's account page in the Admin Console.
+Recurly tracks the credit balance once a gift card is redeemed. You can view it via the Recurly API, the Gift Cards export, or the customer's account page in the Admin Console.
 
 ### Billing information
 
-As a business, you can choose to require or not require billing information from gift card redeemers at subscription sign-up. By default, Recurly requires billing information for all subscription sign-ups. However, this can be changed from the Gift Cards page under the Configuration menu. Note that if you're using Recurly's Checkout or Hosted Pages and collecting taxes, billing information is necessary, irrespective of your configuration setting.
+You can choose whether to require billing information from gift card redeemers at subscription sign-up. By default, Recurly requires it for all sign-ups — but you can change this on the Gift Cards page under **Configuration**.
 
-For a free trial sign-up, billing information is required unless the subscription started with a gift. If a gift card redeemer starts a subscription with a free trial, the subscription will convert to a paid subscription after the trial ends. You can track when a gift card subscription converts to a paid subscription and encourage customers to add billing information to prevent service interruption at renewal when additional payment is required.
+<div class="rp-callout rp-callout-note">
+  <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Hosted pages and tax collection</strong>
+  If you're using Recurly's Checkout or Hosted Pages and collecting taxes, billing information is required regardless of your gift card configuration. Billing addresses are needed to calculate tax rates accurately.
+</div>
 
-**Note:** Recurly's [Checkout](https://docs.recurly.com/docs/checkout) and [Hosted Pages](https://docs.recurly.com/v1.0/docs/hosted-pages) represent a cornerstone of the payment processing system. One of the essential aspects of these pages is the collection of [taxes](https://docs.recurly.com/v1.0/docs/tax). The system captures billing information to validate the billing address, a crucial factor in the taxation process. Without this information, determining appropriate tax rates could be imprecise and problematic.
+For free trial sign-ups, billing information is required unless the subscription started with a gift. When a gift card redeemer starts a free trial, the subscription converts to paid after the trial ends. You can track that transition and prompt customers to add billing information before renewal.
+
+# Canceling a gift card
+
+Canceling a gift card inactivates its redemption code, preventing any future redemptions. This action cannot be reversed — a canceled card cannot be reactivated.
+
+Cancel a gift card when you encounter a fraudulent purchase or need to process a refund. A gift card can only be canceled if it has **not yet been redeemed**. For refunds, Recurly will automatically cancel the card when you refund the invoice directly (feature under development). For chargebacks, cancel the card manually — and do not issue a refund through Recurly, since the funds will have already been returned outside Recurly's system.
+
+Upon successful cancellation, Recurly logs an activity on the gifter's account and issues a `canceled_gift_card_notification` webhook.
+
+## How to cancel a gift card
+
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Locate the gift card</h4>
+      <p>Go to the gifter's account and find the <strong>Gift Card Purchases</strong> table. Click the link to the specific gift card.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Cancel the gift card</h4>
+      <p>On the Gift Card Details page, click <strong>Cancel Gift Card</strong> (the red button in the top right corner), then confirm the action in the popup.</p>
+    </div>
+  </div>
+</div>
+
+# Modifying a gift card product
+
+To modify your gift card product, navigate to **Configuration → Gift Cards Settings** and select **Edit Gift Card**. Changes take effect immediately. New purchases will use the updated version; existing purchases respect the original purchase amount.
 
 # Refunding a gift card purchase
 
-The process of refunding a gift card purchase involves certain steps. Primarily, it's recommended to block the associated credit from being used and then perform a full refund to the gifter. Bear in mind that Recurly won't automatically carry out this process, so you'll have to manually do it. Refunding partially or once the card has been redeemed isn't recommended because it would disrupt the balance between your gift card charges and credits, affecting your accounting accuracy.
+<div class="rp-callout rp-callout-warning">
+  <strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Partial refunds not recommended</strong>
+  Refunding partially — or after the card has been redeemed — disrupts the balance between gift card charges and credits, affecting accounting accuracy. The recommended process is to block the credit first, then issue a full refund.
+</div>
 
-## Refund process for redeemed gift card
+The recommended approach is to prevent the associated credit from being used, then process a full refund to the gifter. Recurly does not automate this process.
 
-In a scenario where a subscription purchase paid with gift card credit requires a refund, the gift card credit is returned to the customer's account as general credit. This process preserves the value for the customer, even in the event of a refund.
+## When the gift card has not been redeemed
 
-### When the gift card has not been Redeemed
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Cancel the gift card</h4>
+      <p>Canceling the card prevents it from being redeemed. See <a href="#canceling-a-gift-card">Canceling a gift card</a> above.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Refund the purchase invoice</h4>
+      <p>Issue a full refund on the purchase invoice. You can locate this invoice on the Gift Card Details page.</p>
+    </div>
+  </div>
+</div>
 
-* First, cancel the gift card, which will prevent its redemption.
-* Then, issue a full refund on the purchase invoice. You can locate this invoice on the Gift Card Details page.
+## When the gift card has been redeemed
 
-### When the gift card has been redeemed
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div>
+      <h4>Delete the remaining credit</h4>
+      <p>Find any remaining gift card credit on the recipient's account and delete it.</p>
+    </div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div>
+      <h4>Issue a refund on the purchase invoice</h4>
+      <p>Refund the purchase invoice for the amount equal to the deleted credit — either the full amount or the remaining balance.</p>
+    </div>
+  </div>
+</div>
 
-* Track down the remaining gift card credit on the recipient's account and delete it.
-* Issue a refund on the purchase invoice equal to the deleted credit. It could be either the full amount or a remaining sum.
-* Note that this won't decrease the gift card balance. Hence, manually tracking that the gift card has been refunded becomes essential.
+<div class="rp-callout rp-callout-note">
+  <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Manual tracking required</strong>
+  Refunding after redemption does not decrease the gift card balance in Recurly. You'll need to manually track that the card has been refunded.
+</div>
+
+### Refunds for subscription purchases paid with gift card credit
+
+When a subscription purchase paid with gift card credit is refunded, the credit is returned to the customer's account as general credit — preserving the value for the customer even after the refund.
 
 # Delivery issues
 
-In an online gift card program, some recipients might encounter delivery issues. To manage these issues, Recurly provides your customer service reps with Admin Console tools such as editing delivery information, regenerating the redemption code, and resending the Gift Card Delivery email. All three options can be utilized if the gift card has not been redeemed.
+Recurly provides Admin Console tools for managing delivery issues. Customer service reps can edit delivery information, regenerate the redemption code, and resend the Gift Card Delivery email — all available as long as the gift card hasn't been redeemed.
 
-To locate a gift card, either visit the Gift Cards index page under the Customers section of the Admin Console and search using the redemption code, gifter, or recipient. Alternatively, visit the gifter's account and find the Gift Card Purchases table listing the gift cards that account has purchased.
+To locate a gift card, use the Gift Cards index page under **Customers** (search by redemption code, gifter, or recipient), or navigate to the gifter's account and find the Gift Card Purchases table.
 
-Each gift card has its own Gift Card Details page, linking to both the gifter and recipient account. Once the recipient redeems the gift card, on this page, you can find the redemption status of the gift card, the delivery information, and the links to perform the below actions.
+Each gift card has its own Gift Card Details page that links to both the gifter and recipient accounts and shows the current redemption status.
 
-### Edit delivery information
+## Edit delivery information
 
-If the delivery information provided by the gifter was incorrect, you can access the Recurly Admin Console to edit it before resending the gift card. The editable fields include:
+If the gifter provided incorrect delivery information, you can edit it in the Admin Console before resending the gift card. Editable fields include:
 
-* First Name
-* Last Name
-* Send Date
-* Email Address
-* Street Address
-* Address 2
-* City
-* State
-* Zip
-* Country
-* Phone Number
-* Gifter Name
-* Personal Message
+- First Name, Last Name, Email Address, Gifter Name, Personal Message
+- Send Date
+- Street Address, Address 2, City, State, Zip, Country, Phone Number
 
-#### Address changes
+**Email address changes** — The new address will be used when resending the Gift Card Delivery email.
 
-If the email address is edited, the new address will be used when resending the Gift Card Delivery email. If the physical address is edited, the responsibility of physically sending a new gift card to the recipient lies with you or your fulfillment team, especially if the gift card hasn't been dispatched. Recurly will issue an `updated_gift_card_notification` webhook to notify you when the gift card delivery information is changed.
+**Physical address changes** — Your team (or fulfillment partner) is responsible for physically sending a new card to the corrected address if the card hasn't been dispatched yet. Recurly issues an `updated_gift_card_notification` webhook when delivery information changes.
 
-#### Send date changes
+**Send date changes** — The future send date can only be edited if the send day hasn't passed. Select a new date up to one year from the purchase date, and choose an hour-window send time. Both date and time are in your user profile's timezone.
 
-The future send date can only be edited if the send day is yet to come. When edited, you can select a future day, up to a year from the purchase date. You'll also see a dropdown of hour send windows. Both date and time will be in the timezone of your user profile.
+## Regenerating a redemption code
 
-# Regenerating a redemption code
+If a redemption code was delivered to the wrong person, you can regenerate it. This invalidates the original code immediately and generates a new one — only the new code can be redeemed.
 
-In case the gift card redemption code may have been mistakenly delivered to the wrong person, you can regenerate the redemption code. This action will invalidate the original code and generate a new one to prevent any misuse. The recipient can only redeem this new code.
+Navigate to the Gift Card Details page and click **Regenerate Redemption Code**. Recurly generates the new code automatically and issues an `updated_gift_card_notification` webhook. You can then provide the new code directly to the recipient or resend the Gift Card Delivery email.
 
-To regenerate the code, navigate to the Gift Card Details page and click on the "Regenerate Redemption Code" button. A new code will be automatically generated, and Recurly will notify you via the `updated_gift_card_notification` webhook. You can then provide this new code to the recipient or resend the Gift Card Delivery email with the updated code.
+## Resend the Gift Card Delivery email
 
-### Resend gift card delivery email
-
-You can resend the Gift Card Delivery email to the recipient. This feature is especially useful if you've made changes to the delivery information, regenerated the redemption code, or if the recipient didn't receive the original email. To resend the email, navigate to the Gift Card Details page and click the "Resend Email" button. This option only appears if the gift card has not been redeemed and its send date is not in the future. Once clicked, Recurly will issue a `resend_gift_card_email_notification` webhook.
-
-# Billing information collection for gift card recipients
-
-The versatility of Recurly's system is also evident in the handling of gift card transactions. If you've set your gift card settings to not require billing information, this system will bypass collecting such data for gift card recipients. This bypass takes place when a subscription begins as a gift, and the invoice cost after applying credits is zero dollars. It ensures a frictionless experience for gift card recipients who aren't directly involved in the payment process.
-
-# Tracking of gift-initiated subscriptions
-
-To provide companies with granular data regarding gift subscriptions, Recurly has devised a sophisticated tracking system. This system identifies and records when a subscription starts via a gift card. As a result, companies can discern when billing information isn't needed, leading to more accurate reporting. This invaluable information will be made accessible in the Subscriptions export soon.
-
-Recurly identifies a gift-initiated subscription if the initial subscription invoice was paid using one or more gift card credits, or if a gift card redemption code was redeemed during the sign-up process.
+You can resend the Gift Card Delivery email to the recipient — useful after editing delivery information, regenerating the code, or if the original email wasn't received. The **Resend Email** button appears on the Gift Card Details page when the gift card hasn't been redeemed and the send date is not in the future. Recurly issues a `resend_gift_card_email_notification` webhook when this action is taken.
 
 # Hosted pages
 
-**Gift Card Hosted Payment Page Configurations**  
-Hosted page settings allow you to control the settings for your hosted gift card purchase page. There are three optional payment form fields that do not apply to the gift card purchase page: Editable Quantities, Coupon Codes, and Gift Card Code. The absence of these options on the gift card purchase page is because customers can only purchase one gift card at a time, and coupons or gift card redemption aren't allowed for gift card purchases.
+**Gift Card Hosted Payment Page configurations** — Hosted page settings let you control your hosted gift card purchase page. Three payment form fields don't apply to gift card purchases: Editable Quantities, Coupon Codes, and Gift Card Code. Customers can only purchase one gift card at a time, and coupon or gift card redemption isn't permitted at purchase.
 
-**Gift Card Hosted Payment Page**  
-Customers can buy a gift card through Recurly's Hosted Payment Pages, which offers a specific hosted page for gift card purchases. The gift card can be delivered using an email address as the delivery method. It's important to note that coupon and gift card redemption is not permitted when buying a gift card.
+**Gift Card Hosted Payment Page** — Customers can buy a gift card through Recurly's Hosted Payment Pages using email as the delivery method. Coupon and gift card redemption is not permitted during purchase.
 
-**Gift Card Redemption on Plan Checkout and Hosted Payment Page**  
-You can allow gift card redemption on the Plan Checkout and Hosted Payment Pages. Even if you do not require billing information for gift card redemption, billing information fields will still be displayed on the gift card purchase page. Enhancements to this user experience are underway.
+**Gift card redemption on Plan Checkout and Hosted Payment Page** — You can allow gift card redemption on both the Plan Checkout and Hosted Payment Pages. Even if you don't require billing information for redemption, billing information fields will still appear on the gift card purchase page.
 
-**Hosted Account Management**  
-Customers can redeem a gift card through Hosted Account Management. Gift card purchase history can be found by examining invoice history.
+**Hosted Account Management** — Customers can redeem a gift card through Hosted Account Management. Gift card purchase history appears in invoice history.
 
-## Multicurrency support
+# Multicurrency support
 
-Recurly's Gift Cards support multiple currencies, and if you are using the Multicurrency feature, you can define a list of preset gift card amounts for each currency. Each currency can have a different number of amounts, and you don't need to define amounts for all supported currencies. However, a gift card can only be redeemed on a subscription that uses the same currency as the purchase amount.
+Recurly's gift cards support multiple currencies. If you're using the Multicurrency feature, define a list of preset gift card amounts for each currency on the gift card product settings page. Each currency can have a different number of amounts — you don't need to define amounts for every supported currency.
 
-### Configuring multicurrency support
+<div class="rp-callout rp-callout-note">
+  <strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Currency matching required</strong>
+  A gift card can only be redeemed on a subscription that uses the same currency as the purchase amount.
+</div>
 
-If using the Multicurrency feature, define a list of preset gift card amounts for each currency on the gift card product settings.
+# Third-party gift cards
 
-## InComm and other 3rd party gift cards
+It's possible to use a third-party system — such as InComm — to generate and sell gift cards, then redeem the corresponding credit in Recurly to apply it to a subscription purchase. This approach enables selling physical gift cards at retail locations like Walmart and Best Buy.
 
-It's possible to use another system, such as InComm, to generate and sell gift cards, and then redeem the corresponding gift credit in Recurly to apply to a subscription purchase. This approach enables selling physical gift cards in stores like Walmart and Best Buy.
+## Purchasing with a third party
 
-**Gift Card Purchase with 3rd Party**
+When using a third party like InComm, the purchase event occurs outside of Recurly. Recurly's custom adjustments can record the purchase, but won't create a gift card object in Recurly — you'll only see the invoice and adjustment.
 
-The purchase event occurs outside of Recurly when using a third party like InComm to generate and sell gift cards. While Recurly's custom adjustments can record a third-party gift card purchase, it won't create a purchased gift card in Recurly. Instead, you'll only see the invoice and adjustment for the purchase in Recurly.
+## Redeeming with a third party
 
-**Gift Card Redemption with 3rd Party**
+Once a third-party gift card is validated and redeemed in the external system, create a corresponding credit in Recurly for the same amount, marked with an origin of `external_gift_card`. This allows you to bypass the billing information requirement for gift subscription sign-ups when nothing is due. This can currently only be done via the Adjustments API.
 
-Once a third-party gift card is validated and redeemed in the third-party system, you can create a corresponding credit in Recurly for the same amount. This should be marked with an origin of `external_gift_card`, which allows bypassing the billing information requirement for gift subscription purchases when nothing is due at sign-up. This can currently only be done via the Adjustments API.
+To apply the credit to a subscription sign-up, create the credit **before** creating the subscription. This requires separate API calls to create the account, the credit, and then the subscription.
 
-To apply the gift card credit to the subscription sign-up, you must create the credit before creating the subscription. This involves making separate API calls to create the account, the credit, and then the subscription.
+If you don't want to require billing information from customers redeeming a third-party gift card when nothing is due at sign-up, update the **Require Billing Information?** setting on the Gift Card Settings page under **Configuration**.
 
-If you don't want to require billing information from customers redeeming a third-party gift card when nothing is due at sign-up, you can change the "Require Billing Information?" setting on the Gift Card Settings page under Configuration.
+## Gift card balance
 
-## Using Recurly and a 3rd party vendor together
+To display a customer's gift card balance, use the API to check their account for uninvoiced `external_gift_card` credits and sum the amounts. Use the List Account's Adjustments API call, filtering for `external_gift_card` origin and `pending` status, then sum `unit_amount_in_cents`.
 
-If you want to use both Recurly for online gift card purchases and a third-party vendor for physical gift card purchases, ensure your redemption code lengths are different to avoid duplicates. For instance, if InComm gift cards are typically 16 to 19 characters and Recurly gift cards are 16 characters by default, you could adjust your Recurly gift cards to have a length of 15 or 20 characters.
+Your finance team can track unused balances by identifying all adjustments with a status of `pending` and `external_gift_card` origin in the Invoices – Line Items export.
 
-To change your Recurly gift card redemption code length, contact Recurly Support with your desired length and the Recurly site subdomain you want it on.
+## Using Recurly alongside a third-party vendor
 
-# Gift card balance
+If you want to use both Recurly for online purchases and a third-party vendor for physical cards, ensure your redemption code lengths are different to avoid duplicates. For example, if InComm codes are 16–19 characters and Recurly codes default to 16, you could adjust Recurly's code length to 15 or 20.
 
-To display a customer's gift card balance, you can use the API to check their account for uninvoiced external_gift_card credits and sum the amount. You can do this by using the List Account's Adjustments API call, filtering for `external_gift_card` origin and `pending` status, and then summing the `unit_amount_in_cents` to get the balance total.
-
-Your finance team can track unused balances by identifying all adjustments with a status of "pending" and `external_gift_card` origin in the Invoices - Line Items export.
-
-## Seamless transition from gift subscriptions to paying subscriptions
-
-No matter your preference for billing information collection, Recurly is designed to record the transition from a gift-initiated subscription to a regular, paying subscription. This occurs when a subscription undergoes its first successful payment transaction, signifying a shift in the customer's status.
-
-## Encouraging subscription renewals and upgrades
-
-For customers who don't supply billing information at sign-up, it's crucial to encourage them to add it before a subscription renewal, preventing service disruptions. For subscription upgrades, Recurly uses the billing information on the account to cover the upgrade cost, ensuring a seamless customer experience.
+To change your Recurly gift card redemption code length, contact <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a> with your desired length and the Recurly site subdomain.
 
 # Additional details
 
-### Comprehensive email notifications
+## Tracking gift-initiated subscriptions
 
-Recurly's Gift Cards system supports four email notifications for either the purchaser or the recipient of the gift. These notifications—Gift Card Purchase Confirmation, Gift Card Delivery, Gift Card Balance Low, and Gift Card Redemption Reminder—ensure all parties stay informed about the gift card status, providing a smooth customer experience.
+Recurly records when a subscription starts via a gift card, allowing you to track when billing information isn't needed and produce more accurate reporting. A subscription is identified as gift-initiated when the first invoice was paid using one or more gift card credits, or when a redemption code was applied during sign-up. This data will be available in the Subscriptions export.
 
-### Exports for insightful analytics
+## Transitioning from gift to paid subscriptions
 
-Recurly offers a new "Gift Cards" export and adds data to existing exports. It provides insights into aspects like gift card usage, popular amounts, redemption rates, and more, helping you fine-tune your marketing strategies.
+Recurly records the transition from a gift-initiated subscription to a regular, paying subscription when the first successful payment transaction occurs. For customers who don't supply billing information at sign-up, encourage them to add it before renewal to prevent service disruptions. For subscription upgrades, Recurly uses the billing information on file to cover the upgrade cost.
 
-### Integration with webhooks and API
+## Recurly.js integration
 
-Recurly's Gift Cards offer six possible notification events, allowing you to customize your customer interaction as needed. Furthermore, gift cards can be purchased and redeemed using the Recurly API, providing a convenient and automated way to manage gift card transactions.
+Recurly.js supports gift card purchase and redemption flows. The redemption process uses Recurly.js Pricing to preview a gift card credit applied to a new subscription before checkout — giving customers a transparent view of what they owe.
 
-### Seamless Recurly.js integration
+## Email notifications
 
-Recurly.js allows for seamless integration of the gift card purchase and redemption processes into your system. While purchasing doesn't require any new updates, the redemption process leverages Recurly.js Pricing to preview a gift card credit applied to a new subscription, enhancing transparency for your customers.
+Recurly's gift card system supports four email notifications:
+
+- **Gift Card Purchase Confirmation** — sent to the gifter after a successful purchase
+- **Gift Card Delivery** — sent to the recipient with the redemption code
+- **Gift Card Balance Low** — alerts when the recipient's balance is running low
+- **Gift Card Redemption Reminder** — reminds the recipient to redeem their card
+
+## Webhooks and API
+
+Recurly's gift cards support six webhook notification events, letting you customize customer interactions. Gift cards can also be purchased and redeemed programmatically via the Recurly API.
+
+## Exports
+
+Recurly offers a **Gift Cards** export and adds gift card data to existing exports. Use it to analyze gift card usage, popular amounts, redemption rates, and more.
