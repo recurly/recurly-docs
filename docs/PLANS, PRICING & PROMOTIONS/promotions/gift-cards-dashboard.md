@@ -132,19 +132,4 @@ To cancel the gift card, click **Cancel Gift Card** in the upper-right menu.
 
 For full details on available fields and export configuration, see the <a href="https://docs.recurly.com/docs/gift-cards-export" target="_blank">Gift Cards exports</a> page.
 
-# Image test
-
-This section tests native `<Image>` rendering inside a callout and as a standalone image.
-
-<div class="rp-callout rp-callout-note">
-<strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Test callout</strong>
-
-This is a dummy callout to test whether a native Image component placed immediately after renders correctly inside and adjacent to a custom rp-\* component.
-
-</div>
-
-
-<Image src="https://files.readme.io/c5a25d6-image.png" align="center" width="75%" border={true} />
-
-
 <br />
