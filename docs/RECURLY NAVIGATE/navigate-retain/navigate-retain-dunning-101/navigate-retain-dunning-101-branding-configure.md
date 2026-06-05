@@ -225,7 +225,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <span>~3 min</span>
         </div>
         <div class="rc-video-embed">
-          <iframe src="https://share.synthesia.io/embeds/7f58d816-a65c-42f4-950d-59b11953d1aa" loading="lazy" title="Dunning email template configuration walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+          <iframe src="https://share.synthesia.io/embeds/videos/7f58d816-a65c-42f4-950d-59b11953d1aa" loading="lazy" title="Dunning email template configuration walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
         </div>
         <div class="rc-video-caption">A walkthrough of the email template editor — applying branding, adding dynamic variables, and sending a test.</div>
       </div>
