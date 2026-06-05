@@ -326,27 +326,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
 
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Dunning window length</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-footer-link">Understanding window length</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-footer-link">Configuring your window</a>
-        </div>
-
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Branding &amp; CTAs</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-footer-link">Why branding matters</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-configure" class="rc-footer-link">Configuring email templates</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-strategy" class="rc-footer-link">Subject lines, CTAs &amp; message arc</a>
-        </div>
-
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Multiple campaigns</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-footer-link">Why one campaign isn't enough</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-footer-link">Building and assigning campaigns</a>
-        </div>
-
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">Measuring performance</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-footer-link">Tracking your dunning results</a>
+          <span class="rc-footer-label">Dunning 101/span>
+              <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Dunning 101 overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure">Dunning window length</a>
+   <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview">Branding & CTAs</a>
+   <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview">Multiple campaigns</a>
+   <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics">Measuring performance</a>
+   <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review">Review & resources</a>
         </div>
 
         <div class="rc-footer-utility">
