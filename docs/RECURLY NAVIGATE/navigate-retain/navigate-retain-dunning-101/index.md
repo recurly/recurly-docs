@@ -298,11 +298,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
-                <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-toc-card">
-          <div class="rc-toc-num">4</div>
+                <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-toc-card">
+          <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
-            <h4>Measuring performance</h4>
-            <p>Know where to find your dunning analytics, what metrics to track, and how to establish a review cadence so your setup keeps improving over time.</p>
+            <h4>Review & resources</h4>
+            <p>You've completed Dunning 101. Here's a quick overview of what you learned and all of the resources you've used throughout this path.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
