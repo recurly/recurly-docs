@@ -1,5 +1,5 @@
 ---
-title: 'Dunning 101: Understanding window length'
+title: 'Dunning 101: Dunning window length'
 deprecated: false
 hidden: true
 metadata:
