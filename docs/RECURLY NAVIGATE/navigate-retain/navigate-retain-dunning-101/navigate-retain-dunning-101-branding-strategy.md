@@ -1,5 +1,5 @@
 ---
-title: 'Dunning 101: Why email branding matters'
+title: 'Dunning 101: Branding & CTAs'
 deprecated: false
 hidden: true
 metadata:
