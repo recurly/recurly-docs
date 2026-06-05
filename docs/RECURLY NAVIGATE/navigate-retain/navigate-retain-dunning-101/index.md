@@ -298,6 +298,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
+                <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-toc-card">
+          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-body">
+            <h4>Measuring performance</h4>
+            <p>Know where to find your dunning analytics, what metrics to track, and how to establish a review cadence so your setup keeps improving over time.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
 
       </div>
     </div>
@@ -305,7 +314,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- PATH NAV — Start state -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">Overview · 4 Micro-Paths</span>
+      <span class="rc-lp-nav-indicator">Overview · Dunning 101</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-btn-path">Start path →</a>
     </div>
 
