@@ -6,200 +6,275 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif;max-width:960px;margin:0 auto;padding:0 20px 60px}
-.rc-hero{background:var(--offblack);border-radius:16px;padding:52px 40px 44px;text-align:center;margin-bottom:0}
-.rc-badge{display:inline-block;background:var(--yellow);color:var(--offblack);border-radius:20px;padding:6px 20px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
-.rc-hero h1{font-size:2.3rem;font-weight:800;line-height:1.15;margin:0 0 12px;color:#fff}
-.rc-hero>p{font-size:1rem;max-width:680px;margin:0 auto 28px;color:#CCC9B8;line-height:1.6}
-.rc-hero-stats{display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
-.rc-num{font-size:1.7rem;font-weight:800;color:var(--yellow)}
-.rc-lbl{font-size:.76rem;color:#CCC9B8;text-transform:uppercase;letter-spacing:.5px}
-.rc-nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 32px;padding:16px;background:var(--offwhite);border-radius:14px;border:1px solid var(--lightgray)}
-.rc-nav a{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:10px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.83rem;font-weight:700;transition:all .2s}
-.rc-nav a:hover{border-color:var(--yellow);box-shadow:0 2px 8px rgba(255,215,6,.25);color:var(--offblack);text-decoration:none}
-.rc-nav a.rc-active{background:var(--yellow);border-color:var(--yellow);color:var(--offblack)}
-.rc-snum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:11px;font-weight:800;flex-shrink:0}
-.rc-nav a.rc-active .rc-snum{background:rgba(13,13,11,.15);color:var(--offblack)}
-.rc-sec{margin-bottom:48px}
-.rc-sec-header{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px}
-.rc-sec-icon{width:52px;height:52px;border-radius:14px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
-.rc-sec-header h2{font-size:1.45rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
-.rc-sec-header p{font-size:.9rem;color:var(--gray);margin:0;line-height:1.6}
-.rc-card{background:#fff;border:1px solid var(--lightgray);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 6px rgba(13,13,11,.04)}
-.rc-subhead{font-size:.98rem;font-weight:800;color:var(--offblack);margin:0 0 10px}
-.rc-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
-.rc-steps{display:flex;flex-direction:column;gap:11px;margin-bottom:16px}
-.rc-step{background:#fff;border:1px solid var(--lightgray);border-radius:12px;padding:15px 17px;display:flex;gap:13px;align-items:flex-start}
-.rc-sbadge{width:34px;height:34px;border-radius:9px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.rc-step h3{font-size:.93rem;font-weight:700;margin:0 0 4px;color:var(--offblack)}
-.rc-step p{font-size:.84rem;color:var(--gray);line-height:1.6;margin:0}
-.rc-tip{background:#fffde6;border:1px solid var(--yellow);border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
-.rc-tip strong{color:var(--offblack)}
-.rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
-.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
-.rc-checklist{background:var(--offwhite);border-radius:14px;border:1px solid var(--lightgray);overflow:hidden;margin-bottom:18px}
-.rc-cl-header{padding:13px 19px;border-bottom:1px solid var(--lightgray);display:flex;align-items:center;gap:9px;background:var(--offblack)}
-.rc-cl-header h3{font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--yellow);margin:0}
-.rc-cli{padding:11px 19px;border-bottom:1px solid var(--brightgray);display:flex;gap:11px;align-items:flex-start}
-.rc-cli:last-child{border-bottom:none}
-.rc-cb{width:19px;height:19px;border-radius:5px;border:2px solid var(--lightgray);flex-shrink:0;margin-top:1px;background:#fff}
-.rc-clab{font-size:.85rem;color:var(--darkgray);line-height:1.4}
-.rc-clab span{display:block;font-size:.75rem;color:var(--gray);margin-top:2px}
-.rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
-.rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
-.rc-btn-prev{background:#fff;color:var(--darkgray)}
-.rc-btn-prev:hover{background:var(--brightgray);text-decoration:none}
-.rc-btn-next{background:var(--yellow);color:var(--offblack);border-color:var(--yellow)}
-.rc-btn-next:hover{opacity:.92;text-decoration:none}
-.rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default;pointer-events:none}
-.rc-link-btn{background:var(--yellow);color:var(--offblack);border-color:var(--yellow);margin:0 8px 8px 0}
-.rc-link-btn:hover{opacity:.9;text-decoration:none}
-.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
-.rc-link-sec:hover{background:var(--brightgray);text-decoration:none}
-.rc-resources{margin-top:32px}
-.rc-resources h3{font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);margin:0 0 12px}
-@media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-2col{grid-template-columns:1fr}.rc-hero-stats{gap:14px}.rc-sec-header{flex-direction:column}.rc-sec-nav{flex-direction:column;align-items:stretch}}
+body { background: #ffffff !important; }
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands, .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,.rc-guide a:link,.rc-guide a:visited,.rc-guide a:hover,.rc-guide a:active {
+  text-decoration:none !important;text-decoration-line:none !important;text-decoration-color:transparent !important;text-underline-offset:unset !important;border-bottom:0 !important;
+}
+html{scroll-behavior:smooth;scroll-padding-top:80px;}
+.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;max-width:960px;margin:0 auto;padding:0 0 60px;color:#32312D !important;background:#ffffff;}
+.rc-top-nav{padding:20px 40px 16px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-back-link{color:#807D73 !important;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-back-link:hover{color:#FF8200 !important;}
+.rc-content-wrap{padding:0 40px;}
+@media(max-width:768px){.rc-content-wrap{padding:0 20px;}.rc-top-nav{padding:16px 20px;}}
+.rc-announce-bar{display:none;background:#FFD706;color:#0D0D0B;align-items:center;justify-content:space-between;padding:10px 20px;font-size:.88rem;font-weight:600;border-radius:10px;margin-bottom:16px;gap:12px;line-height:1.4;}
+.rc-announce-bar.rc-active{display:flex;}
+.rc-announce-inner{display:flex;align-items:center;gap:10px;flex:1;flex-wrap:wrap;}
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-announce-link{color:#0D0D0B !important;font-weight:800;padding:4px 12px;background:rgba(0,0,0,0.10);border-radius:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-announce-link:hover{background:rgba(0,0,0,0.20);color:#0D0D0B !important;}
+.rc-hero{background:linear-gradient(rgba(13,13,11,0.82),rgba(13,13,11,0.82)),url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;background-color:var(--offblack);background-size:cover;color:#fff;padding:48px 40px 44px;text-align:center;border-radius:16px;margin-bottom:0;}
+.rc-lp-pillar-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(204,201,184,0.20);border:1px solid rgba(204,201,184,0.45);color:#CCC9B8;font-size:.75rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:20px;}
+.rc-lp-pillar-tag img{width:13px;height:13px;object-fit:contain;}
+.rc-lp-hero-title{text-align:center;margin:0 0 14px;}
+.rc-lp-hero-title h1{font-size:2.4rem;font-weight:800;line-height:1.15;color:#FFFDF2;margin:0;}
+.rc-hero>p{font-size:1rem;opacity:.85;max-width:640px;margin:0 auto;color:#CCC9B8;line-height:1.6;}
+@media(max-width:768px){.rc-hero{padding:36px 20px;}.rc-lp-hero-title h1{font-size:1.8rem;}}
+details.rc-sticky-nav-wrap{position:relative;z-index:1;background-color:var(--brightgray);box-shadow:0 4px 12px rgba(0,0,0,0.08);margin:24px 0 48px 0;border-radius:12px;border:1px solid rgba(0,0,0,0.08);overflow:hidden;}
+details.rc-sticky-nav-wrap>summary{list-style:none;display:flex;align-items:center;padding:15px 24px;cursor:pointer;user-select:none;}
+details.rc-sticky-nav-wrap>summary::-webkit-details-marker{display:none;}
+details.rc-sticky-nav-wrap>summary::marker{display:none;}
+.rc-nav-toggle-label{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.88rem;letter-spacing:0.6px;text-transform:uppercase;color:var(--offblack);}
+.rc-nav-chevron{font-size:.72rem;color:var(--offblack);opacity:0.55;transition:transform 0.25s ease;}
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron{transform:rotate(180deg);}
+.rc-nav-drawer{display:grid;grid-template-rows:0fr;transition:grid-template-rows 0.3s ease;}
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
+.rc-nav-drawer-inner{overflow:hidden;border-top:1px solid rgba(0,0,0,0.10);}
+.rc-nav-links{display:flex;flex-wrap:wrap;gap:6px 4px;padding:12px 20px 18px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-sticky-link{color:#0D0D0B !important;font-weight:700;font-size:.83rem;letter-spacing:0.4px;text-transform:uppercase;padding:7px 14px;border-radius:7px;transition:all .18s;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-sticky-link:hover{background:rgba(0,0,0,0.10);color:#0D0D0B !important;}
+.rc-sticky-link img{width:15px;height:15px;object-fit:contain;}
+.rc-step-badge{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:.65rem;font-weight:800;flex-shrink:0;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-sticky-link-active{font-weight:800;color:#0D0D0B !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-sticky-link-active:hover{background:rgba(0,0,0,0.10);color:#0D0D0B !important;}
+.rc-lp-section{margin-bottom:48px;}
+.rc-lp-section h2{font-size:1.5rem;font-weight:800;margin:0 0 20px;color:var(--offblack);display:flex;align-items:center;gap:12px;}
+.rc-lp-section h2::after{content:"";flex-grow:1;height:1px;background:var(--lightgray);}
+.rc-lp-section p{font-size:.95rem;line-height:1.65;color:var(--darkgray);margin:0 0 16px;}
+.rc-fa-section{color:var(--offblack);font-size:1rem;flex-shrink:0;}
+.rc-fa-light{display:block;margin-bottom:10px;font-size:1.4rem;color:var(--offblack);}
+.rc-fa-dark{display:block;margin-bottom:10px;font-size:1.4rem;color:var(--yellow);}
+.rc-video-card{border:1px solid var(--lightgray);border-radius:14px;overflow:hidden;margin:0 0 40px;}
+.rc-video-header{background:var(--offblack);padding:16px 22px;display:flex;align-items:center;gap:10px;}
+.rc-video-header h4{font-size:.88rem;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--yellow);margin:0;}
+.rc-video-header span{font-size:.78rem;color:var(--lightgray);margin-left:auto;}
+.rc-video-embed{position:relative;overflow:hidden;aspect-ratio:16/9;background:var(--offblack);}
+.rc-video-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:none;}
+.rc-video-caption{padding:12px 22px;font-size:.83rem;color:var(--gray);background:var(--brightgray);border-top:1px solid var(--lightgray);line-height:1.5;}
+.rc-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 32px;}
+.rc-feature-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:12px;padding:20px 22px;}
+.rc-card-title{font-size:1rem;font-weight:800;color:var(--offblack);margin:0 0 10px;display:flex;align-items:center;gap:8px;}
+.rc-feature-card p{font-size:.9rem;color:var(--darkgray);line-height:1.6;margin:0;}
+@media(max-width:768px){.rc-card-grid{grid-template-columns:1fr;}}
+.rc-steps{display:flex;flex-direction:column;gap:12px;margin:0 0 32px;}
+.rc-step{background:#fff;border:1px solid var(--lightgray);border-radius:12px;padding:18px 20px;display:flex;gap:16px;align-items:flex-start;}
+.rc-step-num{width:34px;height:34px;border-radius:9px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.rc-step-content h4{font-size:.95rem;font-weight:700;margin:0 0 5px;color:var(--offblack);}
+.rc-step-content p{font-size:.88rem;color:var(--gray);line-height:1.6;margin:0;}
+.rc-callout{border-radius:10px;padding:16px 20px;margin:20px 0;display:flex;gap:14px;align-items:flex-start;}
+.rc-callout+.rc-callout{margin-top:12px;}
+.rc-callout-icon{font-size:1.1rem;line-height:1.4;flex-shrink:0;}
+.rc-callout-body{flex:1;}
+.rc-callout-body>strong{font-size:.88rem;font-weight:800;display:block;margin-bottom:4px;}
+.rc-callout-body p{font-size:.9rem;line-height:1.55;margin:0;color:var(--darkgray);}
+.rc-callout-tip{background:var(--brightgray);border-left:4px solid var(--offblack);}
+.rc-callout-tip .rc-callout-body>strong{color:var(--offblack);}
+.rc-callout-warning{background:rgba(255,215,6,0.12);border-left:4px solid var(--yellow);}
+.rc-callout-warning .rc-callout-body>strong{color:var(--darkgray);}
+.rc-callout-caution{background:rgba(255,130,0,0.08);border-left:4px solid var(--orange);}
+.rc-callout-caution .rc-callout-body>strong{color:var(--darkgray);}
+.rc-checklist{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:12px;overflow:hidden;margin:20px 0 32px;}
+.rc-checklist-header{padding:14px 22px;background:var(--offblack);display:flex;align-items:center;gap:10px;}
+.rc-checklist-header h4{font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--yellow);margin:0;}
+.rc-checklist-item{padding:14px 22px;border-bottom:1px solid var(--brightgray);display:flex;align-items:flex-start;gap:14px;cursor:pointer;transition:background .15s;}
+.rc-checklist-item:last-of-type{border-bottom:none;}
+.rc-checklist-item:hover{background:var(--brightgray);}
+.rc-checklist-item input[type="checkbox"]{position:absolute;opacity:0;width:0;height:0;pointer-events:none;}
+.rc-checkbox-box{width:22px;height:22px;border-radius:6px;border:2px solid var(--lightgray);flex-shrink:0;background:#fff;display:flex;align-items:center;justify-content:center;transition:all .18s;margin-top:1px;}
+.rc-checklist-item input[type="checkbox"]:checked+.rc-checkbox-box{background:var(--offblack);border-color:var(--offblack);}
+.rc-checklist-item input[type="checkbox"]:checked+.rc-checkbox-box::after{content:'✓';color:var(--yellow);font-size:.75rem;font-weight:800;line-height:1;}
+.rc-checklist-item input[type="checkbox"]:checked~.rc-checklist-text strong{text-decoration:line-through;color:var(--gray);}
+.rc-checklist-item:has(input[type="checkbox"]:checked){background:rgba(204,201,184,0.10);}
+.rc-checklist-text{flex:1;}
+.rc-checklist-text strong{font-size:.9rem;font-weight:700;color:var(--offblack);display:block;margin-bottom:2px;transition:color .18s;}
+.rc-checklist-text span{font-size:.8rem;color:var(--gray);line-height:1.4;display:block;}
+.rc-checklist-footer{padding:10px 22px;background:var(--brightgray);border-top:1px solid var(--lightgray);font-size:.78rem;color:var(--gray);font-weight:600;}
+.rc-pricing-card{border-radius:10px;padding:18px 22px;margin-bottom:12px;border:1px solid var(--lightgray);background:var(--offwhite);}
+.rc-pricing-card.rc-pricing-free{border-left:4px solid #6ab187;}
+.rc-pricing-card.rc-pricing-paid{border-left:4px solid var(--orange);}
+.rc-pricing-card h4{font-size:.95rem;font-weight:800;color:var(--offblack);margin:0 0 6px;}
+.rc-pricing-card p{font-size:.88rem;color:var(--gray);line-height:1.55;margin:0;}
+.rc-webinar-cta{background:#0D0D0B !important;border:2px solid #CCC9B8;border-radius:14px;padding:32px 36px;margin:0 0 40px;display:flex;align-items:center;gap:28px;}
+.rc-webinar-cta-icon{font-size:2.2rem;flex-shrink:0;line-height:1;}
+.rc-webinar-cta-body{flex:1;}
+.rc-webinar-cta-body p{font-size:.95rem;color:#FFFDF2 !important;line-height:1.6;margin:0 0 18px;}
+.rc-webinar-cta-body p em{font-style:normal;font-weight:700;color:#ffffff !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-webinar-btn{background:#CCC9B8 !important;color:#0D0D0B !important;text-decoration:none !important;padding:12px 24px;border-radius:10px;font-weight:800;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-webinar-btn:hover{background:transparent !important;color:#CCC9B8 !important;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;}
+@media(max-width:768px){.rc-webinar-cta{flex-direction:column;gap:16px;padding:24px 22px;}}
+.rc-lp-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:40px 0 16px;}
+.rc-lp-nav-indicator{font-size:.8rem;font-weight:600;color:var(--lightgray);letter-spacing:.5px;}
+.rc-btn-start{background:var(--brightgray);color:var(--gray);padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--lightgray);cursor:default;}
+.rc-btn-complete{background:var(--brightgray);color:var(--offblack) !important;padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid var(--yellow);cursor:default;user-select:none;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-btn-prev{background:transparent;color:#0D0D0B !important;text-decoration:none !important;padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;transition:all .2s;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-btn-prev:hover{border:2px solid #0D0D0B !important;border-bottom:2px solid #0D0D0B !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-btn-path{background:var(--yellow);color:var(--offblack) !important;text-decoration:none !important;padding:13px 28px;border-radius:10px;font-weight:800;font-size:.95rem;display:inline-flex;align-items:center;gap:8px;border:2px solid var(--yellow) !important;border-bottom:2px solid var(--yellow) !important;transition:all .2s;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-btn-path:hover{background:transparent !important;color:var(--offblack) !important;border:2px solid var(--yellow) !important;border-bottom:2px solid var(--yellow) !important;}
+@media(max-width:768px){.rc-lp-nav{flex-wrap:wrap;justify-content:center;}.rc-lp-nav-indicator{width:100%;text-align:center;}}
+.rc-resources{background:var(--brightgray);border-left:4px solid var(--lightgray);border-radius:10px;padding:20px 24px;margin:32px 0 0;}
+.rc-resources h3{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.9px;color:var(--gray);margin:0 0 12px;display:flex;align-items:center;gap:8px;}
+.rc-resource-links{display:flex;flex-wrap:wrap;gap:4px 20px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-resource-link{color:#807D73 !important;text-decoration:underline !important;text-underline-offset:3px;text-decoration-color:#CCC9B8 !important;font-weight:500;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-resource-link:hover{color:#0D0D0B !important;text-decoration:underline !important;text-decoration-color:#CCC9B8 !important;}
+.rc-resource-group{margin-bottom:16px;}
+.rc-resource-group:last-child{margin-bottom:0;}
+.rc-resource-group-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--lightgray);margin:0 0 6px;display:block;}
+.rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:40px;margin-top:48px;padding-bottom:48px;}
+.rc-footer-links{display:flex;flex-direction:column;gap:16px;}
+.rc-footer-section{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;}
+.rc-footer-label{font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.8px;color:var(--darkgray);background:var(--brightgray);padding:4px 10px;border-radius:6px;margin-right:4px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-footer-link{color:#807D73 !important;text-decoration:none !important;font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-footer-link:hover{color:#FF8200 !important;}
+.rc-footer-link img{width:14px;height:14px;object-fit:contain;opacity:0.5;}
+.rc-footer-utility{display:flex;flex-wrap:wrap;gap:24px;margin-top:16px;padding-top:24px;border-top:1px solid var(--brightgray);}
 </style>
-
 <div class="rc-guide">
+  <div class="rc-top-nav"><a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a></div>
+  <div class="rc-content-wrap">
+    <div class="rc-announce-bar"><div class="rc-announce-inner"><i class="fa-regular fa-calendar-days"></i><strong>Upcoming:</strong> Join our CSMs live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register →</a></div></div>
 
-  <div class="rc-hero">
-    <div class="rc-badge">🚀 Navigate · Launchpad Phase 1</div>
-    <h1>Brand Your Emails &amp; Invoices</h1>
-    <p>Branded communications build trust, strengthen subscriber relationships, and make every touchpoint — from signup confirmation to payment receipts — feel like it came from you.</p>
-    <div class="rc-hero-stats">
-      <div><div class="rc-num">Step 4</div><div class="rc-lbl">Phase 1</div></div>
-      <div><div class="rc-num">First</div><div class="rc-lbl">Impression Matters</div></div>
-      <div><div class="rc-num">Trust</div><div class="rc-lbl">Through Consistency</div></div>
-    </div>
-  </div>
-
-  <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one"><span class="rc-snum">🏠</span>Welcome</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing"><span class="rc-snum">1</span>Production Testing</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-dunning-optimization"><span class="rc-snum">2</span>Dunning</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater"><span class="rc-snum">3</span>Account Updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding" class="rc-active"><span class="rc-snum">4</span>Branding</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover"><span class="rc-snum">5</span>Gateway Failover</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review"><span class="rc-snum">✓</span>Review &amp; Resources</a>
-  </nav>
-
-  <div class="rc-sec">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">🎨</div>
-      <div>
-        <h2>Your Brand, On Every Communication</h2>
-        <p>Recurly sends emails and invoices on your behalf — but without customization, they arrive looking generic. Branded templates increase open rates, reduce "is this spam?" confusion, and reinforce your product's identity at every subscriber touchpoint.</p>
-      </div>
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 1</div>
+      <div class="rc-lp-hero-title"><h1>Branding</h1></div>
+      <p>Customize the emails and invoices Recurly sends on your behalf so every subscriber communication reflects your brand.</p>
     </div>
 
-    <div class="rc-card">
-      <p class="rc-subhead">▶ Trail Guide: Branded for Liftoff</p>
-      <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/aa762aae-0ab6-44f9-9b57-a711992871fc" loading="lazy" title="Navigate Launchpad — Branding Your Emails &amp; Invoices" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
-      </div>
-      <p class="rc-video-cap">A walkthrough of Recurly's email and invoice template editor — how to add your logo, brand colors, custom messaging, and subscriber portal links.</p>
-    </div>
+    <details class="rc-sticky-nav-wrap" open>
+      <summary><span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span></summary>
+      <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-overview" class="rc-sticky-link">Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Production testing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-dunning" class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account Updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-branding" class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Branding</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-gateway-failover" class="rc-sticky-link"><span class="rc-step-badge">5</span> Gateway Failover</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-overview" class="rc-sticky-link"><img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start</a>
+      </div></div></div>
+    </details>
 
-    <div class="rc-card">
-      <p class="rc-subhead">📧 What You Can Brand in Recurly</p>
-      <div class="rc-2col">
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Transactional Emails</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Subscription confirmation, payment receipt, renewal reminder, and more — customized with your logo, colors, and messaging.</p>
-        </div>
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Invoice Templates</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Invoices sent to subscribers can include your company logo, business address, and custom footer text—critical for B2B professionalism.</p>
-        </div>
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Dunning Emails</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Your failed payment recovery emails should feel like they came from you. Branded dunning emails significantly improve subscriber response rates.</p>
-        </div>
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Subscriber Portal</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">The hosted billing portal where subscribers manage accounts can also be customized to match your product's look and feel.</p>
-        </div>
-      </div>
-    </div>
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-palette rc-fa-section"></i> Why branding matters</h2>
+      <p>Recurly sends emails and invoices on your behalf. Without customization, they arrive looking generic — which increases "is this spam?" confusion and reduces subscriber response rates, especially on dunning emails. Branded communications build trust and make your billing touchpoints feel like part of your product.</p>
 
-    <div class="rc-tip">
-      <strong>💡 Don't overlook dunning emails:</strong> The payment failure email is often the most important subscriber touchpoint you'll send. A branded dunning email with a prominent "Update Payment Method" button dramatically outperforms a generic billing alert.
-    </div>
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <div class="rc-card-title"><i class="fa-solid fa-envelope rc-fa-section"></i> Transactional emails</div>
+          <p>Signup confirmation, payment receipt, renewal reminder — customized with your logo, colors, and messaging.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-card-title"><i class="fa-solid fa-file-invoice rc-fa-section"></i> Invoice templates</div>
+          <p>Add your logo, business address, and custom footer — critical for B2B subscribers who file invoices.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-card-title"><i class="fa-solid fa-triangle-exclamation rc-fa-section"></i> Dunning emails</div>
+          <p>Your payment failure recovery emails should look like they came from you. Branded dunning emails significantly improve subscriber response rates.</p>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-card-title"><i class="fa-solid fa-user rc-fa-section"></i> Subscriber portal</div>
+          <p>The hosted billing portal where subscribers manage their accounts can also be customized to match your product's look and feel.</p>
+        </div>
+      </div>
 
-    <p class="rc-subhead" style="margin-bottom:12px">🪜 Step-by-Step: Brand Your Templates</p>
-    <div class="rc-steps">
-      <div class="rc-step">
-        <div class="rc-sbadge">1</div>
-        <div>
-          <h3>Access Email Templates</h3>
-          <p>In your Recurly admin, navigate to <strong>Configuration → Email Templates</strong>. You'll see a list of all transactional emails Recurly can send on your behalf.</p>
+      <div class="rc-video-card">
+        <div class="rc-video-header"><h4>Trail guide: brand your templates</h4><span>~3 min</span></div>
+        <div class="rc-video-embed"><iframe src="https://share.synthesia.io/embeds/videos/aa762aae-0ab6-44f9-9b57-a711992871fc" loading="lazy" title="Branding" allowfullscreen allow="encrypted-media; fullscreen;"></iframe></div>
+        <div class="rc-video-caption">How to add your logo, set brand colors, configure your From identity, and send test emails.</div>
+      </div>
+
+      <h2><i class="fa-solid fa-gear rc-fa-section"></i> Configure your templates</h2>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content"><h4>Access email templates</h4><p>Navigate to <strong>Configuration → Email Templates</strong>. You'll see the full list of transactional emails Recurly sends on your behalf.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content"><h4>Upload your logo and set brand color</h4><p>Add your logo (PNG or JPG, max 256 KB) and set your primary brand color. These apply across all email templates via the Header/Footer snippets.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content"><h4>Set your billing contact email</h4><p>Go to <strong>Configuration → Site Settings</strong> and set your Billing Contact Email. This is the "From" address subscribers see on every communication.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content"><h4>Customize dunning email copy</h4><p>Edit your failed payment email templates to match your brand voice. Ensure the CTA button links directly to the subscriber's billing portal page — not a generic login.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">5</div>
+          <div class="rc-step-content"><h4>Customize your invoice template</h4><p>Navigate to <strong>Configuration → Invoice Templates</strong>. Add your logo (max 256 KB), business name, address, and any required compliance footer text.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">6</div>
+          <div class="rc-step-content"><h4>Send a test email for each template</h4><p>Use Recurly's "Send Test Email" function to preview each template in a real inbox — on both desktop and mobile before marking this complete.</p></div>
         </div>
       </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">2</div>
-        <div>
-          <h3>Upload your logo and set brand colors</h3>
-          <p>Add your company logo (PNG or JPG, max 256KB) and set your primary brand color. This applies across all templates via the Header/Footer snippets.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">3</div>
-        <div>
-          <h3>Configure "From" Identity</h3>
-          <p>Go to <strong>Configuration → Site Settings</strong> to set your "Billing Contact Email." This acts as the "From" address for your branded communications.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">4</div>
-        <div>
-          <h3>Customize dunning email copy</h3>
-          <p>Edit failed payment templates to use your brand voice. Ensure the call to action links directly to the subscriber's billing portal page.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">5</div>
-        <div>
-          <h3>Customize the Invoice Template</h3>
-          <p>Go to <strong>Configuration → Invoice Templates</strong>. Add your logo (max 256KB), business name, address, and any required compliance footer text.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">6</div>
-        <div>
-          <h3>Send a test email for each template</h3>
-          <p>Use Recurly's "Send Test Email" function to preview how each template looks in a real inbox — both on desktop and on mobile.</p>
-        </div>
+
+      <div class="rc-checklist">
+        <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Branding checklist</h4></div>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Logo uploaded to email and invoice templates</strong><span>PNG or JPG, max 256 KB.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Brand color set across all templates</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Billing Contact Email set in Site Settings</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Dunning emails customized with branded copy and portal CTA</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Invoice template customized with logo, address, and footer</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Test emails reviewed on desktop and mobile</strong></div></label>
+        <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
     </div>
 
-    <p class="rc-subhead" style="margin-bottom:12px">✅ Branding Checklist</p>
-    <div class="rc-checklist">
-      <div class="rc-cl-header"><h3>Complete Before Moving to Gateway Failover</h3></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Logo uploaded to Recurly email and invoice templates (PNG/JPG, &lt; 256KB)</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Brand colors set and applied across all templates</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Billing Contact Email updated in Site Settings</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Subscription confirmation email customized and tested</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Dunning / payment failure emails customized with clear update CTA</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Invoice template customized with logo, address, and footer</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Test emails sent and reviewed on both desktop and mobile</div></div>
-    </div>
-
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater">← Account Updater</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover">Step 5: Gateway Failover →</a>
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-account-updater" class="rc-btn-prev">← 3. Account Updater</a>
+      <span class="rc-lp-nav-indicator">4 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-gateway-failover" class="rc-btn-path">5. Gateway Failover →</a>
     </div>
 
     <div class="rc-resources">
-      <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization" target="_blank" rel="noopener noreferrer">📖 Invoice Template Customization Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer">📧 Email Template Customization Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/email-templates" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Email templates</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/invoice-customization" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Invoice customization</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+      </div>
+    </div>
+
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Launchpad</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-overview" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-production-testing" class="rc-footer-link">1. Production testing</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-dunning" class="rc-footer-link">2. Dunning</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-account-updater" class="rc-footer-link">3. Account Updater</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-branding" class="rc-footer-link">4. Branding</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-gateway-failover" class="rc-footer-link">5. Gateway Failover</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-review" class="rc-footer-link">6. Review &amp; resources</a>
+        </div>
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home</a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+      </div>
     </div>
   </div>
-
 </div>
 `}</HTMLBlock>
 
