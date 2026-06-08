@@ -106,7 +106,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── NAV ── */
 details.rc-sticky-nav-wrap {
-  position: sticky; top: 0; z-index: 100;
+  position: relative; z-index: 1;
   background-color: var(--brightgray);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px 0; border-radius: 12px;
