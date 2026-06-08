@@ -290,7 +290,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- Nav (sticky + collapsed — LP Overview) -->
-    <details class="rc-sticky-nav-wrap">
+    <details class="rc-sticky-nav-wrap"open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
