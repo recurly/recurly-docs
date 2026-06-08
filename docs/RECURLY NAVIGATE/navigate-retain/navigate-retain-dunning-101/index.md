@@ -247,7 +247,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-sticky-link">Branding &amp; CTAs</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-sticky-link">Multiple campaigns</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-sticky-link">Measuring performance</a>
-				<a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-sticky-link">Review & resources</a>
       </div></div></div>
     </details>
 
@@ -299,15 +298,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
-                <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-toc-card">
-          <div class="rc-toc-num">5</div>
-          <div class="rc-toc-body">
-            <h4>Review & resources</h4>
-            <p>You've completed Dunning 101. Here's a quick overview of what you learned and all of the resources you've used throughout this path.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
 
       </div>
     </div>
@@ -315,7 +305,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- PATH NAV — Start state -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">Overview · Dunning 101</span>
+      <span class="rc-lp-nav-indicator">Overview · 4 Micro-Paths</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-btn-path">Start path →</a>
     </div>
 
@@ -331,7 +321,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-      <!-- FOOTER -->
+  <!-- FOOTER -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
 
