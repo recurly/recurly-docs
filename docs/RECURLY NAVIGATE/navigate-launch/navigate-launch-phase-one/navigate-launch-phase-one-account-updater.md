@@ -6,202 +6,258 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif;max-width:960px;margin:0 auto;padding:0 20px 60px}
-.rc-hero{background:var(--offblack);border-radius:16px;padding:52px 40px 44px;text-align:center;margin-bottom:0}
-.rc-badge{display:inline-block;background:var(--yellow);color:var(--offblack);border-radius:20px;padding:6px 20px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
-.rc-hero h1{font-size:2.3rem;font-weight:800;line-height:1.15;margin:0 0 12px;color:#fff}
-.rc-hero>p{font-size:1rem;max-width:680px;margin:0 auto 28px;color:#CCC9B8;line-height:1.6}
-.rc-hero-stats{display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
-.rc-num{font-size:1.7rem;font-weight:800;color:var(--yellow)}
-.rc-lbl{font-size:.76rem;color:#CCC9B8;text-transform:uppercase;letter-spacing:.5px}
-.rc-nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 32px;padding:16px;background:var(--offwhite);border-radius:14px;border:1px solid var(--lightgray)}
-.rc-nav a{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:10px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.83rem;font-weight:700;transition:all .2s}
-.rc-nav a:hover{border-color:var(--yellow);box-shadow:0 2px 8px rgba(255,215,6,.25);color:var(--offblack);text-decoration:none}
-.rc-nav a.rc-active{background:var(--yellow);border-color:var(--yellow);color:var(--offblack)}
-.rc-snum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:11px;font-weight:800;flex-shrink:0}
-.rc-nav a.rc-active .rc-snum{background:rgba(13,13,11,.15);color:var(--offblack)}
-.rc-sec{margin-bottom:48px}
-.rc-sec-header{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px}
-.rc-sec-icon{width:52px;height:52px;border-radius:14px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
-.rc-sec-header h2{font-size:1.45rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
-.rc-sec-header p{font-size:.9rem;color:var(--gray);margin:0;line-height:1.6}
-.rc-card{background:#fff;border:1px solid var(--lightgray);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 6px rgba(13,13,11,.04)}
-.rc-subhead{font-size:.98rem;font-weight:800;color:var(--offblack);margin:0 0 10px}
-.rc-2col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
-.rc-steps{display:flex;flex-direction:column;gap:11px;margin-bottom:16px}
-.rc-step{background:#fff;border:1px solid var(--lightgray);border-radius:12px;padding:15px 17px;display:flex;gap:13px;align-items:flex-start}
-.rc-sbadge{width:34px;height:34px;border-radius:9px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.rc-step h3{font-size:.93rem;font-weight:700;margin:0 0 4px;color:var(--offblack)}
-.rc-step p{font-size:.84rem;color:var(--gray);line-height:1.6;margin:0}
-.rc-tip{background:#fffde6;border:1px solid var(--yellow);border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
-.rc-tip strong{color:var(--offblack)}
-.rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
-.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
-.rc-pricing-card{border-radius:12px;padding:18px 20px;margin-bottom:10px;border:1px solid var(--lightgray)}
-.rc-pricing-card.free{background:#f0fff4;border-color:#86efac}
-.rc-pricing-card.usage{background:#fffde6;border-color:var(--yellow)}
-.rc-pricing-label{font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
-.rc-pricing-card.free .rc-pricing-label{color:#16a34a}
-.rc-pricing-card.usage .rc-pricing-label{color:#92400e}
-.rc-pricing-card h4{font-size:.93rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}
-.rc-pricing-card p{font-size:.84rem;color:var(--gray);margin:0;line-height:1.5}
-.rc-checklist{background:var(--offwhite);border-radius:14px;border:1px solid var(--lightgray);overflow:hidden;margin-bottom:18px}
-.rc-cl-header{padding:13px 19px;border-bottom:1px solid var(--lightgray);display:flex;align-items:center;gap:9px;background:var(--offblack)}
-.rc-cl-header h3{font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--yellow);margin:0}
-.rc-cli{padding:11px 19px;border-bottom:1px solid var(--brightgray);display:flex;gap:11px;align-items:flex-start}
-.rc-cli:last-child{border-bottom:none}
-.rc-cb{width:19px;height:19px;border-radius:5px;border:2px solid var(--lightgray);flex-shrink:0;margin-top:1px;background:#fff}
-.rc-clab{font-size:.85rem;color:var(--darkgray);line-height:1.4}
-.rc-clab span{display:block;font-size:.75rem;color:var(--gray);margin-top:2px}
-.rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
-.rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
-.rc-btn-prev{background:#fff;color:var(--darkgray)}
-.rc-btn-prev:hover{background:var(--brightgray);text-decoration:none}
-.rc-btn-next{background:var(--yellow);color:var(--offblack);border-color:var(--yellow)}
-.rc-btn-next:hover{opacity:.92;text-decoration:none}
-.rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default;pointer-events:none}
-.rc-link-btn{background:var(--yellow);color:var(--offblack);border-color:var(--yellow);margin:0 8px 8px 0}
-.rc-link-btn:hover{opacity:.9;text-decoration:none}
-.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
-.rc-link-sec:hover{background:var(--brightgray);text-decoration:none}
-.rc-resources{margin-top:32px}
-.rc-resources h3{font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);margin:0 0 12px}
-@media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-2col{grid-template-columns:1fr}.rc-hero-stats{gap:14px}.rc-sec-header{flex-direction:column}.rc-sec-nav{flex-direction:column;align-items:stretch}}
+body { background: #ffffff !important; }
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide [class^="fa-"], .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands, .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,.rc-guide a:link,.rc-guide a:visited,.rc-guide a:hover,.rc-guide a:active {
+  text-decoration:none !important;text-decoration-line:none !important;text-decoration-color:transparent !important;text-underline-offset:unset !important;border-bottom:0 !important;
+}
+html{scroll-behavior:smooth;scroll-padding-top:80px;}
+.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;max-width:960px;margin:0 auto;padding:0 0 60px;color:#32312D !important;background:#ffffff;}
+.rc-top-nav{padding:20px 40px 16px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-back-link{color:#807D73 !important;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-back-link:hover{color:#FF8200 !important;}
+.rc-content-wrap{padding:0 40px;}
+@media(max-width:768px){.rc-content-wrap{padding:0 20px;}.rc-top-nav{padding:16px 20px;}}
+.rc-announce-bar{display:none;background:#FFD706;color:#0D0D0B;align-items:center;justify-content:space-between;padding:10px 20px;font-size:.88rem;font-weight:600;border-radius:10px;margin-bottom:16px;gap:12px;line-height:1.4;}
+.rc-announce-bar.rc-active{display:flex;}
+.rc-announce-inner{display:flex;align-items:center;gap:10px;flex:1;flex-wrap:wrap;}
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-announce-link{color:#0D0D0B !important;font-weight:800;padding:4px 12px;background:rgba(0,0,0,0.10);border-radius:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-announce-link:hover{background:rgba(0,0,0,0.20);color:#0D0D0B !important;}
+.rc-hero{background:linear-gradient(rgba(13,13,11,0.82),rgba(13,13,11,0.82)),url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;background-color:var(--offblack);background-size:cover;color:#fff;padding:48px 40px 44px;text-align:center;border-radius:16px;margin-bottom:0;}
+.rc-lp-pillar-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(204,201,184,0.20);border:1px solid rgba(204,201,184,0.45);color:#CCC9B8;font-size:.75rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:20px;}
+.rc-lp-pillar-tag img{width:13px;height:13px;object-fit:contain;}
+.rc-lp-hero-title{text-align:center;margin:0 0 14px;}
+.rc-lp-hero-title h1{font-size:2.4rem;font-weight:800;line-height:1.15;color:#FFFDF2;margin:0;}
+.rc-hero>p{font-size:1rem;opacity:.85;max-width:640px;margin:0 auto;color:#CCC9B8;line-height:1.6;}
+@media(max-width:768px){.rc-hero{padding:36px 20px;}.rc-lp-hero-title h1{font-size:1.8rem;}}
+details.rc-sticky-nav-wrap{position:relative;z-index:1;background-color:var(--brightgray);box-shadow:0 4px 12px rgba(0,0,0,0.08);margin:24px 0 48px 0;border-radius:12px;border:1px solid rgba(0,0,0,0.08);overflow:hidden;}
+details.rc-sticky-nav-wrap>summary{list-style:none;display:flex;align-items:center;padding:15px 24px;cursor:pointer;user-select:none;}
+details.rc-sticky-nav-wrap>summary::-webkit-details-marker{display:none;}
+details.rc-sticky-nav-wrap>summary::marker{display:none;}
+.rc-nav-toggle-label{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.88rem;letter-spacing:0.6px;text-transform:uppercase;color:var(--offblack);}
+.rc-nav-chevron{font-size:.72rem;color:var(--offblack);opacity:0.55;transition:transform 0.25s ease;}
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron{transform:rotate(180deg);}
+.rc-nav-drawer{display:grid;grid-template-rows:0fr;transition:grid-template-rows 0.3s ease;}
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
+.rc-nav-drawer-inner{overflow:hidden;border-top:1px solid rgba(0,0,0,0.10);}
+.rc-nav-links{display:flex;flex-wrap:wrap;gap:6px 4px;padding:12px 20px 18px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-sticky-link{color:#0D0D0B !important;font-weight:700;font-size:.83rem;letter-spacing:0.4px;text-transform:uppercase;padding:7px 14px;border-radius:7px;transition:all .18s;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-sticky-link:hover{background:rgba(0,0,0,0.10);color:#0D0D0B !important;}
+.rc-sticky-link img{width:15px;height:15px;object-fit:contain;}
+.rc-step-badge{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:.65rem;font-weight:800;flex-shrink:0;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-sticky-link-active{font-weight:800;color:#0D0D0B !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-sticky-link-active:hover{background:rgba(0,0,0,0.10);color:#0D0D0B !important;}
+.rc-lp-section{margin-bottom:48px;}
+.rc-lp-section h2{font-size:1.5rem;font-weight:800;margin:0 0 20px;color:var(--offblack);display:flex;align-items:center;gap:12px;}
+.rc-lp-section h2::after{content:"";flex-grow:1;height:1px;background:var(--lightgray);}
+.rc-lp-section p{font-size:.95rem;line-height:1.65;color:var(--darkgray);margin:0 0 16px;}
+.rc-fa-section{color:var(--offblack);font-size:1rem;flex-shrink:0;}
+.rc-fa-light{display:block;margin-bottom:10px;font-size:1.4rem;color:var(--offblack);}
+.rc-fa-dark{display:block;margin-bottom:10px;font-size:1.4rem;color:var(--yellow);}
+.rc-video-card{border:1px solid var(--lightgray);border-radius:14px;overflow:hidden;margin:0 0 40px;}
+.rc-video-header{background:var(--offblack);padding:16px 22px;display:flex;align-items:center;gap:10px;}
+.rc-video-header h4{font-size:.88rem;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--yellow);margin:0;}
+.rc-video-header span{font-size:.78rem;color:var(--lightgray);margin-left:auto;}
+.rc-video-embed{position:relative;overflow:hidden;aspect-ratio:16/9;background:var(--offblack);}
+.rc-video-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:none;}
+.rc-video-caption{padding:12px 22px;font-size:.83rem;color:var(--gray);background:var(--brightgray);border-top:1px solid var(--lightgray);line-height:1.5;}
+.rc-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 32px;}
+.rc-feature-card{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:12px;padding:20px 22px;}
+.rc-card-title{font-size:1rem;font-weight:800;color:var(--offblack);margin:0 0 10px;display:flex;align-items:center;gap:8px;}
+.rc-feature-card p{font-size:.9rem;color:var(--darkgray);line-height:1.6;margin:0;}
+@media(max-width:768px){.rc-card-grid{grid-template-columns:1fr;}}
+.rc-steps{display:flex;flex-direction:column;gap:12px;margin:0 0 32px;}
+.rc-step{background:#fff;border:1px solid var(--lightgray);border-radius:12px;padding:18px 20px;display:flex;gap:16px;align-items:flex-start;}
+.rc-step-num{width:34px;height:34px;border-radius:9px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.rc-step-content h4{font-size:.95rem;font-weight:700;margin:0 0 5px;color:var(--offblack);}
+.rc-step-content p{font-size:.88rem;color:var(--gray);line-height:1.6;margin:0;}
+.rc-callout{border-radius:10px;padding:16px 20px;margin:20px 0;display:flex;gap:14px;align-items:flex-start;}
+.rc-callout+.rc-callout{margin-top:12px;}
+.rc-callout-icon{font-size:1.1rem;line-height:1.4;flex-shrink:0;}
+.rc-callout-body{flex:1;}
+.rc-callout-body>strong{font-size:.88rem;font-weight:800;display:block;margin-bottom:4px;}
+.rc-callout-body p{font-size:.9rem;line-height:1.55;margin:0;color:var(--darkgray);}
+.rc-callout-tip{background:var(--brightgray);border-left:4px solid var(--offblack);}
+.rc-callout-tip .rc-callout-body>strong{color:var(--offblack);}
+.rc-callout-warning{background:rgba(255,215,6,0.12);border-left:4px solid var(--yellow);}
+.rc-callout-warning .rc-callout-body>strong{color:var(--darkgray);}
+.rc-callout-caution{background:rgba(255,130,0,0.08);border-left:4px solid var(--orange);}
+.rc-callout-caution .rc-callout-body>strong{color:var(--darkgray);}
+.rc-checklist{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:12px;overflow:hidden;margin:20px 0 32px;}
+.rc-checklist-header{padding:14px 22px;background:var(--offblack);display:flex;align-items:center;gap:10px;}
+.rc-checklist-header h4{font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--yellow);margin:0;}
+.rc-checklist-item{padding:14px 22px;border-bottom:1px solid var(--brightgray);display:flex;align-items:flex-start;gap:14px;cursor:pointer;transition:background .15s;}
+.rc-checklist-item:last-of-type{border-bottom:none;}
+.rc-checklist-item:hover{background:var(--brightgray);}
+.rc-checklist-item input[type="checkbox"]{position:absolute;opacity:0;width:0;height:0;pointer-events:none;}
+.rc-checkbox-box{width:22px;height:22px;border-radius:6px;border:2px solid var(--lightgray);flex-shrink:0;background:#fff;display:flex;align-items:center;justify-content:center;transition:all .18s;margin-top:1px;}
+.rc-checklist-item input[type="checkbox"]:checked+.rc-checkbox-box{background:var(--offblack);border-color:var(--offblack);}
+.rc-checklist-item input[type="checkbox"]:checked+.rc-checkbox-box::after{content:'✓';color:var(--yellow);font-size:.75rem;font-weight:800;line-height:1;}
+.rc-checklist-item input[type="checkbox"]:checked~.rc-checklist-text strong{text-decoration:line-through;color:var(--gray);}
+.rc-checklist-item:has(input[type="checkbox"]:checked){background:rgba(204,201,184,0.10);}
+.rc-checklist-text{flex:1;}
+.rc-checklist-text strong{font-size:.9rem;font-weight:700;color:var(--offblack);display:block;margin-bottom:2px;transition:color .18s;}
+.rc-checklist-text span{font-size:.8rem;color:var(--gray);line-height:1.4;display:block;}
+.rc-checklist-footer{padding:10px 22px;background:var(--brightgray);border-top:1px solid var(--lightgray);font-size:.78rem;color:var(--gray);font-weight:600;}
+.rc-pricing-card{border-radius:10px;padding:18px 22px;margin-bottom:12px;border:1px solid var(--lightgray);background:var(--offwhite);}
+.rc-pricing-card.rc-pricing-free{border-left:4px solid #6ab187;}
+.rc-pricing-card.rc-pricing-paid{border-left:4px solid var(--orange);}
+.rc-pricing-card h4{font-size:.95rem;font-weight:800;color:var(--offblack);margin:0 0 6px;}
+.rc-pricing-card p{font-size:.88rem;color:var(--gray);line-height:1.55;margin:0;}
+.rc-webinar-cta{background:#0D0D0B !important;border:2px solid #CCC9B8;border-radius:14px;padding:32px 36px;margin:0 0 40px;display:flex;align-items:center;gap:28px;}
+.rc-webinar-cta-icon{font-size:2.2rem;flex-shrink:0;line-height:1;}
+.rc-webinar-cta-body{flex:1;}
+.rc-webinar-cta-body p{font-size:.95rem;color:#FFFDF2 !important;line-height:1.6;margin:0 0 18px;}
+.rc-webinar-cta-body p em{font-style:normal;font-weight:700;color:#ffffff !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-webinar-btn{background:#CCC9B8 !important;color:#0D0D0B !important;text-decoration:none !important;padding:12px 24px;border-radius:10px;font-weight:800;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-webinar-btn:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-webinar-btn:hover{background:transparent !important;color:#CCC9B8 !important;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;}
+@media(max-width:768px){.rc-webinar-cta{flex-direction:column;gap:16px;padding:24px 22px;}}
+.rc-lp-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:40px 0 16px;}
+.rc-lp-nav-indicator{font-size:.8rem;font-weight:600;color:var(--lightgray);letter-spacing:.5px;}
+.rc-btn-start{background:var(--brightgray);color:var(--gray);padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;border:2px solid var(--lightgray);cursor:default;}
+.rc-btn-complete{background:var(--brightgray);color:var(--offblack) !important;padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid var(--yellow);cursor:default;user-select:none;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-btn-prev{background:transparent;color:#0D0D0B !important;text-decoration:none !important;padding:13px 24px;border-radius:10px;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;border:2px solid #CCC9B8 !important;border-bottom:2px solid #CCC9B8 !important;transition:all .2s;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-btn-prev:hover{border:2px solid #0D0D0B !important;border-bottom:2px solid #0D0D0B !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-btn-path{background:var(--yellow);color:var(--offblack) !important;text-decoration:none !important;padding:13px 28px;border-radius:10px;font-weight:800;font-size:.95rem;display:inline-flex;align-items:center;gap:8px;border:2px solid var(--yellow) !important;border-bottom:2px solid var(--yellow) !important;transition:all .2s;}
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-btn-path:hover{background:transparent !important;color:var(--offblack) !important;border:2px solid var(--yellow) !important;border-bottom:2px solid var(--yellow) !important;}
+@media(max-width:768px){.rc-lp-nav{flex-wrap:wrap;justify-content:center;}.rc-lp-nav-indicator{width:100%;text-align:center;}}
+.rc-resources{background:var(--brightgray);border-left:4px solid var(--lightgray);border-radius:10px;padding:20px 24px;margin:32px 0 0;}
+.rc-resources h3{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.9px;color:var(--gray);margin:0 0 12px;display:flex;align-items:center;gap:8px;}
+.rc-resource-links{display:flex;flex-wrap:wrap;gap:4px 20px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-resource-link{color:#807D73 !important;text-decoration:underline !important;text-underline-offset:3px;text-decoration-color:#CCC9B8 !important;font-weight:500;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-resource-link:hover{color:#0D0D0B !important;text-decoration:underline !important;text-decoration-color:#CCC9B8 !important;}
+.rc-resource-group{margin-bottom:16px;}
+.rc-resource-group:last-child{margin-bottom:0;}
+.rc-resource-group-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--lightgray);margin:0 0 6px;display:block;}
+.rc-footer-nav{border-top:1px solid var(--lightgray);padding-top:40px;margin-top:48px;padding-bottom:48px;}
+.rc-footer-links{display:flex;flex-direction:column;gap:16px;}
+.rc-footer-section{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;}
+.rc-footer-label{font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.8px;color:var(--darkgray);background:var(--brightgray);padding:4px 10px;border-radius:6px;margin-right:4px;}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-footer-link{color:#807D73 !important;text-decoration:none !important;font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;border-bottom:0 !important;}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-footer-link:hover{color:#FF8200 !important;}
+.rc-footer-link img{width:14px;height:14px;object-fit:contain;opacity:0.5;}
+.rc-footer-utility{display:flex;flex-wrap:wrap;gap:24px;margin-top:16px;padding-top:24px;border-top:1px solid var(--brightgray);}
 </style>
-
 <div class="rc-guide">
+  <div class="rc-top-nav"><a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a></div>
+  <div class="rc-content-wrap">
+    <div class="rc-announce-bar"><div class="rc-announce-inner"><i class="fa-regular fa-calendar-days"></i><strong>Upcoming:</strong> Join our CSMs live. <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register →</a></div></div>
 
-  <div class="rc-hero">
-    <div class="rc-badge">🚀 Navigate · Launchpad Phase 1</div>
-    <h1>Enable Account Updater</h1>
-    <p>Keep billing information current automatically so subscribers aren't lost over expired or replaced cards — protecting renewals and revenue before failures ever happen.</p>
-    <div class="rc-hero-stats">
-      <div><div class="rc-num">Step 3</div><div class="rc-lbl">Phase 1</div></div>
-      <div><div class="rc-num">Proactive</div><div class="rc-lbl">Card Updates</div></div>
-      <div><div class="rc-num">↓ Churn</div><div class="rc-lbl">Involuntary</div></div>
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 1</div>
+      <div class="rc-lp-hero-title"><h1>Account Updater</h1></div>
+      <p>Keep card data current automatically so renewals succeed before expired or replaced cards ever reach a failure state.</p>
     </div>
-  </div>
 
-  <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one"><span class="rc-snum">🏠</span>Welcome</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing"><span class="rc-snum">1</span>Production Testing</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-dunning-optimization"><span class="rc-snum">2</span>Dunning</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater" class="rc-active"><span class="rc-snum">3</span>Account Updater</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding"><span class="rc-snum">4</span>Branding</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover"><span class="rc-snum">5</span>Gateway Failover</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review"><span class="rc-snum">✓</span>Review &amp; Resources</a>
-  </nav>
+    <details class="rc-sticky-nav-wrap" open>
+      <summary><span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span></summary>
+      <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-overview" class="rc-sticky-link">Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Production testing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-dunning" class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-account-updater" class="rc-sticky-link rc-sticky-link-active"><img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Account Updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-branding" class="rc-sticky-link"><span class="rc-step-badge">4</span> Branding</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-gateway-failover" class="rc-sticky-link"><span class="rc-step-badge">5</span> Gateway Failover</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-overview" class="rc-sticky-link"><img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start</a>
+      </div></div></div>
+    </details>
 
-  <div class="rc-sec">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">💳</div>
-      <div>
-        <h2>Stop Card Failures Before They Start</h2>
-        <p>Account Updater works silently in the background — checking with card networks to get fresh card numbers before renewal attempts, so payments succeed the first time without any subscriber action.</p>
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> How Account Updater works</h2>
+      <p>Account Updater queries Visa, Mastercard, Discover, and Amex card network files to catch changes in card numbers or expiry dates before your next renewal attempt. For most gateways, checks run days before billing. Stripe and Adyen support real-time updates during the transaction itself. Subscribers never notice — their renewal just succeeds.</p>
+      <p>Account Updater and dunning are complementary: Account Updater reduces the number of payments that fail; dunning recovers the ones that still do (like NSF or lost cards).</p>
+
+      <div class="rc-video-card">
+        <div class="rc-video-header"><h4>Trail guide: Account Updater setup</h4><span>~3 min</span></div>
+        <div class="rc-video-embed"><iframe src="https://share.synthesia.io/embeds/videos/b86fe7bd-1f74-491f-8632-acebd4794615" loading="lazy" title="Account Updater" allowfullscreen allow="encrypted-media; fullscreen;"></iframe></div>
+        <div class="rc-video-caption">How Account Updater works, which card networks are supported, and where to enable it in Recurly.</div>
+      </div>
+
+      <h2><i class="fa-solid fa-toggle-on rc-fa-section"></i> Enable Account Updater</h2>
+
+      <div class="rc-card-grid" style="margin-bottom:16px;">
+        <div class="rc-pricing-card rc-pricing-free">
+          <h4><i class="fa-solid fa-circle-check" style="color:#6ab187;margin-right:6px;"></i> Visa &amp; Discover — enabled directly</h4>
+          <p>Toggle on in <strong>Configuration → Payment Settings</strong>. No additional configuration needed.</p>
+        </div>
+        <div class="rc-pricing-card rc-pricing-paid">
+          <h4><i class="fa-solid fa-credit-card" style="color:var(--orange);margin-right:6px;"></i> Mastercard &amp; Amex — requires codes</h4>
+          <p>Mastercard requires your 4-digit <strong>MCC code</strong>. Amex requires a 10-digit <strong>SE Number</strong> (direct accounts only; Amex OptBlue not supported).</p>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body"><strong>Where to find your codes</strong><p>Your MCC (Merchant Category Code) is on your bank processing statement. Your Amex SE Number is on your direct American Express merchant statement.</p></div>
+      </div>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content"><h4>Open Payment Settings</h4><p>Navigate to <strong>Configuration → Payment Settings</strong>. Account Updater toggle controls appear at the top of this page.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content"><h4>Enable Visa and Discover</h4><p>Toggle both on directly — no codes required. These two networks cover the majority of most subscriber bases.</p></div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content"><h4>Enter Mastercard MCC and Amex SE Number</h4><p>Enter your 4-digit MCC for Mastercard. Enter your 10-digit SE Number for Amex if you have a direct Amex account. Skip Amex if you're on Amex OptBlue via your gateway.</p></div>
+        </div>
+      </div>
+
+      <div class="rc-checklist">
+        <div class="rc-checklist-header"><i class="fa-solid fa-list-check" style="color:var(--yellow);font-size:1rem;"></i><h4>Account Updater checklist</h4></div>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Account Updater enabled for Visa and Discover</strong></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>MCC entered for Mastercard</strong><span>Found on your bank processing statement.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>SE Number entered for Amex (if direct account)</strong><span>Skip if using Amex OptBlue.</span></div></label>
+        <label class="rc-checklist-item"><input type="checkbox"><div class="rc-checkbox-box"></div><div class="rc-checklist-text"><strong>Noted current involuntary churn rate as a baseline</strong><span>Use this in Phase 2 to measure Account Updater's impact.</span></div></label>
+        <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
     </div>
 
-    <div class="rc-card">
-      <p class="rc-subhead">▶ Trail Guide: Secure Your Launch — Account Updater</p>
-      <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/b86fe7bd-1f74-491f-8632-acebd4794615" loading="lazy" title="Navigate Launchpad — Account Updater" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
-      </div>
-      <p class="rc-video-cap">Learn how Account Updater works, what card networks are supported, how to enable it in Recurly, and how to measure its impact on involuntary churn.</p>
-    </div>
-
-    <div class="rc-card">
-      <p class="rc-subhead">🔁 How Account Updater Works</p>
-      <div class="rc-2col">
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Card networks maintain updated files</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Visa, Mastercard, Discover, and Amex maintain files of updated card numbers. Recurly queries these files to catch changes in card numbers or expiry dates.</p>
-        </div>
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Updates happen before billing</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">For most gateways, checks occur days before renewal. However, Stripe and Adyen support <strong>Real-Time</strong> updates during the transaction attempt.</p>
-        </div>
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">No subscriber action required</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Subscribers never know this happened — their subscription just keeps renewing. This directly reduces involuntary churn without any friction.</p>
-        </div>
-        <div>
-          <p style="font-size:.87rem;font-weight:700;color:var(--offblack);margin:0 0 5px">Works alongside dunning</p>
-          <p style="font-size:.84rem;color:var(--gray);line-height:1.5;margin:0">Account Updater and dunning are complementary. AU reduces the volume of payments that fail; dunning recovers the ones that still do (like NSF or lost cards).</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="rc-subhead" style="margin-bottom:10px">💰 Pricing Overview</p>
-    <div class="rc-pricing-card free">
-      <div class="rc-pricing-label">Included — Visa &amp; Discover</div>
-      <h4>Account Updater for Visa &amp; Discover</h4>
-      <p>Visa and Discover card network updates are enabled directly in Payment Settings. These can be turned on without any additional plan changes.</p>
-    </div>
-    <div class="rc-pricing-card usage" style="margin-bottom:16px">
-      <div class="rc-pricing-label">Configuration Required — Mastercard &amp; Amex</div>
-      <h4>Mastercard &amp; American Express Coverage</h4>
-      <p>Mastercard requires your 4-digit <strong>MCC code</strong>. Amex requires a 10-digit <strong>SE Number</strong> (direct accounts only; OptBlue not supported).</p>
-    </div>
-
-    <div class="rc-tip">
-      <strong>💡 Pro Tip:</strong> You can find your <strong>MCC (Merchant Category Code)</strong> on your bank processing statement. For <strong>Amex</strong>, the SE number is found on your direct American Express merchant statement.
-    </div>
-
-    <p class="rc-subhead" style="margin-bottom:12px">🪜 Step-by-Step: Enable Account Updater</p>
-    <div class="rc-steps">
-      <div class="rc-step">
-        <div class="rc-sbadge">1</div>
-        <div>
-          <h3>Navigate to Payment Settings</h3>
-          <p>In your Recurly admin, go to <strong>Configuration → Payment Settings</strong>. Account Updater is located at the top of this page. You'll see toggle controls for each supported card network.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">2</div>
-        <div>
-          <h3>Enable Visa and Discover</h3>
-          <p>Toggle on Account Updater for Visa and Discover — these can be enabled directly. These two networks cover a large share of most subscriber bases.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">3</div>
-        <div>
-          <h3>Enter Mastercard &amp; Amex Codes</h3>
-          <p>Provide your 4-digit <strong>MCC</strong> for Mastercard and 10-digit <strong>SE Number</strong> for Amex. If you are using <strong>Amex OptBlue</strong> via your gateway, you cannot enable Amex here.</p>
-        </div>
-      </div>
-      <div class="rc-step">
-        <div class="rc-sbadge">4</div>
-        <div>
-          <h3>Monitor impact in Phase 2</h3>
-          <p>In Phase 2 of Launchpad, you'll track your Involuntary Churn Rate and Decline Rate at Renewal on the Benchmarks Dashboard. Watch for a decline in both metrics over time.</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="rc-subhead" style="margin-bottom:12px">✅ Account Updater Checklist</p>
-    <div class="rc-checklist">
-      <div class="rc-cl-header"><h3>Complete Before Moving to Branding</h3></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Located Account Updater in Configuration → Payment Settings</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Enabled Account Updater for Visa and Discover</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Entered MCC (Mastercard) and SE Number (Amex) if you have a direct Amex account</div></div>
-      <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Noted your current Involuntary Churn Rate as a baseline for Phase 2 benchmarking</div></div>
-    </div>
-
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-dunning-optimization">← Dunning</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding">Step 4: Branding →</a>
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-dunning" class="rc-btn-prev">← 2. Dunning</a>
+      <span class="rc-lp-nav-indicator">3 of 6</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-branding" class="rc-btn-path">4. Branding →</a>
     </div>
 
     <div class="rc-resources">
-      <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer">📖 Account Updater Docs</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/docs/account-updater" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Account Updater</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+      </div>
+    </div>
+
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Launchpad</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-overview" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-production-testing" class="rc-footer-link">1. Production testing</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-dunning" class="rc-footer-link">2. Dunning</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-account-updater" class="rc-footer-link">3. Account Updater</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-branding" class="rc-footer-link">4. Branding</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-gateway-failover" class="rc-footer-link">5. Gateway Failover</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-review" class="rc-footer-link">6. Review &amp; resources</a>
+        </div>
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link"><img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home</a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+      </div>
     </div>
   </div>
-
 </div>
 `}</HTMLBlock>
 
