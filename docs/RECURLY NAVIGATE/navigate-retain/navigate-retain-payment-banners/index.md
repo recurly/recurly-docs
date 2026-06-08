@@ -53,8 +53,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* ── FONT AWESOME ICON HELPERS ── */
 .rc-fa-announce { color: var(--offblack); font-size: 1rem; flex-shrink: 0; }
-.rc-fa-dark { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
-.rc-fa-light { color: var(--offblack); font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: var(--offblack); font-size: 1rem; }
 
 /* ── LAYOUT ── */
@@ -93,12 +91,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: var(--offwhite); margin: 0; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: var(--lightgray); line-height: 1.6; }
-.rc-hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px; }
-.rc-hero-stat { text-align: center; padding: 0 16px; }
-.rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: var(--lightgray); line-height: 1.3; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: var(--lightgray); line-height: 1.6; }
 
 /* ── NAV — non-sticky, open (Course pages) ── */
 details.rc-sticky-nav-wrap {
@@ -136,57 +129,46 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 
 /* ── CONTENT SECTIONS ── */
-.rc-lp-section { margin-bottom: 52px; }
+.rc-lp-section { margin-bottom: 48px; }
 .rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: var(--offblack); display: flex; align-items: center; gap: 12px; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: var(--lightgray); }
-.rc-lp-section > p { font-size: .97rem; line-height: 1.7; color: var(--darkgray); margin: 0 0 24px; }
+.rc-lp-section > p { font-size: .97rem; line-height: 1.7; color: var(--darkgray); margin: 0 0 16px; }
+.rc-lp-section > p:last-child { margin-bottom: 0; }
 
-/* ── NUMBERED STEPS ── */
-.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0 0; }
-.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--brightgray); }
-.rc-step:last-child { border-bottom: none; }
-.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--offblack); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
-.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: var(--offblack); margin: 0 0 6px; line-height: 1.3; }
-.rc-step-content p { font-size: .92rem; color: var(--gray); line-height: 1.6; margin: 0; }
-.rc-step-content strong { color: var(--darkgray); }
-
-/* ── FEATURE CARD GRIDS ── */
-.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 8px; }
-.rc-card-grid-3col { grid-template-columns: 1fr 1fr 1fr; }
-.rc-feature-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; transition: all .2s ease; }
-.rc-feature-card:hover { border-color: #FF9D88; box-shadow: 0 4px 16px rgba(255,157,136,0.15); transform: translateY(-2px); }
-.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: var(--offblack); }
-.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: var(--offblack); margin: 0; }
-.rc-feature-card p { font-size: .88rem; color: var(--gray); line-height: 1.55; margin: 0; flex-grow: 1; }
-.rc-feature-tag { display: inline-block; margin-top: 4px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: var(--offblack); color: var(--yellow); width: fit-content; }
-.rc-feature-tag-outline { display: inline-block; margin-top: 4px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: transparent; color: var(--gray); border: 1px solid var(--lightgray); width: fit-content; }
-
-/* ── ACCENT CARDS (with left border) ── */
-.rc-accent-card { background: var(--offwhite); border: 1px solid var(--lightgray); border-radius: 12px; padding: 24px 28px; }
-.rc-accent-card.rc-accent-orange { border-left: 4px solid var(--orange); }
-.rc-accent-card.rc-accent-retain { border-left: 4px solid var(--retain); }
-.rc-accent-card h4 { font-size: 1rem; font-weight: 800; color: var(--offblack); margin: 0 0 10px; }
-.rc-accent-card p { font-size: .92rem; color: var(--darkgray); line-height: 1.65; margin: 0 0 10px; }
-.rc-accent-card p:last-child { margin-bottom: 0; }
-
-/* Accent card grid — removes card's standalone margin when inside a grid */
-.rc-card-grid .rc-accent-card { margin: 0; }
-
-/* ── CALLOUTS ── */
-.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 28px 0 0; display: flex; gap: 14px; align-items: flex-start; }
-.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
-.rc-callout-body { flex: 1; }
-/* Direct child > combinator required — never .rc-callout-body strong */
-.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
-.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: var(--darkgray); }
-.rc-callout-tip { background: var(--brightgray); border-left: 4px solid var(--offblack); }
-.rc-callout-tip .rc-callout-body > strong { color: var(--offblack); }
+/* ── TOC CARDS ── */
+.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-toc-card {
+  display: grid; grid-template-columns: 44px 1fr 32px;
+  align-items: center; gap: 16px;
+  background: var(--offwhite); border: 1px solid #CCC9B8;
+  border-bottom: 1px solid #CCC9B8 !important;
+  border-radius: 12px; padding: 18px 22px;
+  transition: all .2s ease; color: inherit;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-toc-card:hover {
+  border-color: #FF9D88 !important;
+  border-bottom: 1px solid #FF9D88 !important;
+  box-shadow: 0 4px 14px rgba(255,157,136,0.12);
+  transform: translateX(3px);
+}
+.rc-toc-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--offblack); color: var(--yellow);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem; font-weight: 800; flex-shrink: 0;
+}
+/* rc-toc-card IS an <a> — child colors must use hex + !important */
+.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B !important; margin: 0 0 4px; }
+.rc-toc-body p { font-size: .88rem; color: #807D73 !important; line-height: 1.5; margin: 0; }
+.rc-toc-arrow { font-size: 1.1rem; color: #CCC9B8 !important; text-align: right; transition: color .2s; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #FF9D88 !important; }
 
 /* ── PATH NAV BUTTONS ── */
 .rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 44px 0 16px; }
 .rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: var(--lightgray); letter-spacing: .5px; text-align: center; }
 .rc-btn-start { background: var(--brightgray); color: var(--gray); padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid var(--lightgray); cursor: default; display: inline-flex; align-items: center; }
-/* rc-btn-path — double-prefix + :not() + hex borders */
 .rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-btn-path {
   background: #FFD706; color: #0D0D0B !important; text-decoration: none !important;
@@ -204,7 +186,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-resources { background: var(--brightgray); border-left: 4px solid var(--retain); border-radius: 10px; padding: 20px 24px; margin: 40px 0 0; }
 .rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: var(--gray); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
 .rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
-/* Resource links — base color #807D73 (gray) */
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-resource-link {
   color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
@@ -227,15 +208,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-footer-link:hover img { opacity: 1; }
 .rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--brightgray); }
 
-/* ── CONSOLIDATED RESPONSIVE BLOCK ── */
+/* ── RESPONSIVE ── */
 @media(max-width:768px){
   .rc-content-wrap { padding: 0 20px; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
-  .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
-  .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
-  .rc-card-grid, .rc-card-grid.rc-card-grid-3col { grid-template-columns: 1fr; }
+  .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
 }
@@ -260,26 +239,12 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain">
-        Retain
+        Retain · Payment banners
       </div>
       <div class="rc-lp-hero-title">
         <h1>Payment banners</h1>
       </div>
-      <p>In-app prompts that reach subscribers at exactly the right moment — while they're already in your product, not hoping they open an email.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Up to 80%</div>
-          <div class="rc-hero-stat-label">Recovery on failing invoices when in-app banners are added to dunning</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">40%</div>
-          <div class="rc-hero-stat-label">Of all subscriber losses are involuntary — customers who didn't mean to leave</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">40%</div>
-          <div class="rc-hero-stat-label">Of subscribers attempting to cancel can be saved by a well-timed in-app prompt</div>
-        </div>
-      </div>
+      <p>Payment banners meet subscribers where they already are: inside your product, engaged, and more likely to act than in any other channel.</p>
     </div>
 
     <!-- Nav: non-sticky, open -->
@@ -307,106 +272,87 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div></div></div>
     </details>
 
-    <!-- Section 1: What are payment banners? -->
+    <!-- Brief intro -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-bell rc-fa-section"></i> What are payment banners?</h2>
-
-      <p>When a subscriber's card expires or a payment fails, silence is the costliest response. They don't know there's a problem — and if they don't know, they can't fix it. Payment banners are in-session notifications that surface directly inside your product the moment a subscriber is most likely to act: while they're already logged in, already using what they're paying for. No inbox required. No link to click. Just a clear, timely prompt at the highest-intent moment possible.</p>
-
-      <p>Payment banners aren't limited to failed payments, either. Surfaced at the right point in a cancellation flow, a banner can offer a pause, a downgrade, or simply acknowledge the subscriber's concern — turning a would-be churn into a retained customer who never needed to leave in the first place. This course covers both scenarios.</p>
-
-      <div class="rc-steps">
-        <div class="rc-step">
-          <div class="rc-step-num">1</div>
-          <div class="rc-step-content">
-            <h4>A risk event is detected</h4>
-            <p>A card is approaching expiration, a payment has been declined, a subscription has gone past due — or a subscriber has just clicked "cancel." Recurly detects the event in real time.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">2</div>
-          <div class="rc-step-content">
-            <h4>The banner triggers in-session</h4>
-            <p>The next time that subscriber logs in — or immediately if they're already active — a targeted notification appears inside your app, subscriber portal, or hosted pages. No waiting for an email to be opened.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">3</div>
-          <div class="rc-step-content">
-            <h4>The message is clear and contextual</h4>
-            <p>The banner explains what the issue is and presents exactly one action: update billing info, confirm a payment method ahead of renewal, or consider an alternative before cancelling. No friction, no ambiguity.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">4</div>
-          <div class="rc-step-content">
-            <h4>The subscriber takes action</h4>
-            <p>One click takes them exactly where they need to go. They update their card, choose a pause over a cancellation, or confirm their details — without hunting through account settings or waiting for a follow-up email.</p>
-          </div>
-        </div>
-        <div class="rc-step">
-          <div class="rc-step-num">5</div>
-          <div class="rc-step-content">
-            <h4>Revenue is protected</h4>
-            <p>The subscription renews without interruption, or the cancellation is averted. The subscriber's experience is seamless. The churn that was about to happen simply doesn't.</p>
-          </div>
-        </div>
-      </div>
+      <p>Payment banners are in-session notifications that appear inside your product when a subscriber's payment is at risk or they've started a cancellation. They reach subscribers at the moment they're most likely to act: while they're already using what they're paying for. Recurly supports both a custom webhook-based implementation and a no-code option via Recurly Engage, both covered in this course.</p>
     </div>
 
-    <!-- Section 2: In-session vs in-inbox -->
+    <!-- What's in this course -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-envelope-open-text rc-fa-section"></i> In-session vs in-inbox</h2>
+      <h2><i class="fa-solid fa-list rc-fa-section"></i> What's in this course</h2>
+      <div class="rc-toc-list">
 
-      <p>Dunning emails are a critical part of any recovery strategy — but they have a fundamental constraint: they depend on the subscriber opening their inbox, reading your message, and clicking through. That's three drop-off points before they ever take action. Payment banners eliminate all three. Here's how the channels compare, and why the most effective approach uses both.</p>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-toc-card">
+          <div class="rc-toc-num">1</div>
+          <div class="rc-toc-body">
+            <h4>Why it matters</h4>
+            <p>The business case for in-session recovery and where payment banners fit alongside your other retention tools.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
 
-      <div class="rc-card-grid rc-card-grid-3col">
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-regular fa-envelope"></i></div>
-          <h4>Dunning emails</h4>
-          <p>Sent after a payment fails. Reaches subscribers who check their email — but average billing email open rates are well below 50%, meaning more than half of at-risk subscribers may never see your message.</p>
-          <span class="rc-feature-tag">Reactive</span>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-bell"></i></div>
-          <h4>Payment banners</h4>
-          <p>Triggered while the subscriber is already in your product. No inbox required. Catches them at their highest-intent moment — engaged, active, and far more likely to act on a prompt they can't miss.</p>
-          <span class="rc-feature-tag">Proactive</span>
-        </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-layer-group"></i></div>
-          <h4>Used together</h4>
-          <p>Banners and dunning emails reinforce each other. A subscriber in a dunning window who logs into your product will see the banner in-session — a second, immediate touchpoint that doesn't depend on them checking email. Running both gives you full coverage across every channel where subscribers are reachable.</p>
-          <span class="rc-feature-tag">Full coverage</span>
-        </div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-use-cases" class="rc-toc-card">
+          <div class="rc-toc-num">2</div>
+          <div class="rc-toc-body">
+            <h4>Use cases</h4>
+            <p>The specific subscriber scenarios where payment banners have the most impact: failed payments, expiring cards, and cancellation save flows.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-webhooks" class="rc-toc-card">
+          <div class="rc-toc-num">3</div>
+          <div class="rc-toc-body">
+            <h4>Webhooks setup</h4>
+            <p>How to build custom payment banners inside your own application using Recurly's webhook events.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-engage" class="rc-toc-card">
+          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-body">
+            <h4>Recurly Engage setup</h4>
+            <p>How to configure and activate payment banners with no engineering work using Recurly Engage.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-strategy" class="rc-toc-card">
+          <div class="rc-toc-num">5</div>
+          <div class="rc-toc-body">
+            <h4>Strategy &amp; best practices</h4>
+            <p>How to time, message, and sequence banners for maximum recovery without disrupting the subscriber experience.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-toc-card">
+          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-body">
+            <h4>Tracking your impact</h4>
+            <p>The metrics to watch and how to measure what your payment banners are recovering over time.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-review" class="rc-toc-card">
+          <div class="rc-toc-num">7</div>
+          <div class="rc-toc-body">
+            <h4>Review &amp; resources</h4>
+            <p>Knowledge check, reflection questions, and the full resource library for this course.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
       </div>
-    </div>
-
-    <!-- Section 3: Two implementation paths -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-code-branch rc-fa-section"></i> Two ways to implement</h2>
-
-      <p>There's no single right approach — the right path depends on your team's engineering capacity, how much control you want over the banner experience, and whether Recurly Engage is part of your current setup. This course covers both options in full.</p>
-
-      <div class="rc-card-grid">
-        <div class="rc-accent-card rc-accent-orange">
-          <h4>Via webhooks</h4>
-          <p>Build fully custom payment banners inside your own application by listening to Recurly payment events. Your team designs and controls the entire experience — placement, styling, messaging, and behavior. The most flexible option.</p>
-          <p><strong>Requires:</strong> Engineering resources to build and maintain.</p>
-        </div>
-        <div class="rc-accent-card rc-accent-retain">
-          <h4>Via Recurly Engage</h4>
-          <p>Deploy payment banners and cancellation save flows with no engineering work. Recurly Engage automatically detects at-risk subscribers and surfaces prompts on your hosted pages and subscriber portal — configure and activate from your Recurly dashboard.</p>
-          <p><strong>Requires:</strong> Recurly Engage, available as a standalone product or as an add-on to Recurly Subscriptions.</p>
-        </div>
-      </div>
-
     </div>
 
     <!-- Path navigation — Start state -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">Overview · 1 of 7</span>
+      <span class="rc-lp-nav-indicator">Overview</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-btn-path">Next: Why it matters →</a>
     </div>
 
