@@ -6,149 +6,509 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif}
-*{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray)}
-.rc-hero{background:var(--offblack);color:#fff;padding:56px 40px 48px;text-align:center;border-radius:16px}
-.rc-badge{display:inline-block;background:var(--yellow);color:var(--offblack);border-radius:20px;padding:6px 18px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
-.rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
-.rc-hero p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 32px;color:var(--lightgray)}
-.rc-hero-stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
-.rc-num{font-size:1.8rem;font-weight:800;color:var(--yellow)}.rc-lbl{font-size:.8rem;color:var(--lightgray);text-transform:uppercase;letter-spacing:.5px}
-.rc-nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 28px}
-.rc-nav a{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:12px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.88rem;font-weight:700;transition:border-color .2s,box-shadow .2s}
-.rc-nav a:hover{border-color:var(--yellow);box-shadow:0 2px 8px rgba(255,215,6,.2);color:var(--offblack)}
-.rc-nav a.is-active{background:var(--yellow);border-color:var(--yellow);color:var(--offblack);box-shadow:0 2px 10px rgba(255,215,6,.25)}
-.rc-snum{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:12px;font-weight:700;flex-shrink:0}
-.rc-sec{margin-bottom:56px}.rc-sec-header{display:flex;align-items:flex-start;gap:20px;margin-bottom:32px}
-.rc-sec-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;background:var(--yellow)}
-.rc-sec-header h2{font-size:1.7rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}.rc-sec-header>div>p{color:var(--gray);font-size:.95rem;line-height:1.5;margin:0}
-.rc-card{background:var(--offwhite);border-radius:16px;padding:28px;border:1px solid var(--lightgray);margin-bottom:24px}
-.rc-subhead{font-size:1rem;font-weight:700;margin:0 0 16px;color:var(--offblack)}
-.rc-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:24px}
-.rc-wi{background:var(--offwhite);border-radius:14px;padding:20px;border:1px solid var(--lightgray);text-align:center}
-.rc-wi-icon{font-size:30px;margin-bottom:10px}.rc-wi h4{font-size:.88rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}.rc-wi p{font-size:.8rem;color:var(--gray);line-height:1.5;margin:0}
-.rc-steps{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
-.rc-step{background:var(--offwhite);border-radius:14px;padding:22px 26px;border:1px solid var(--lightgray);display:flex;gap:18px;align-items:flex-start}
-.rc-sbadge{width:38px;height:38px;border-radius:10px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.rc-step h3{font-size:.98rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}.rc-step p{font-size:.87rem;color:var(--gray);line-height:1.6;margin:0}
-.rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}
-.rc-tipicon{font-size:24px;flex-shrink:0}.rc-tip h4{font-size:.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:.5px;margin:0 0 4px}.rc-tip p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
-.rc-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
-.rc-compare-card{border-radius:14px;padding:24px;border:1px solid var(--lightgray)}
-.rc-compare-card.webhook{background:var(--offwhite);border-top:4px solid var(--orange)}
-.rc-compare-card.engage{background:var(--offwhite);border-top:4px solid var(--yellow)}
-.rc-compare-card h4{font-size:.95rem;font-weight:700;margin:0 0 12px;color:var(--offblack)}
-.rc-compare-card ul{margin:0;padding-left:18px;font-size:.85rem;color:var(--gray);line-height:1.8}
-.rc-tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:12px}
-.rc-tag-orange{background:var(--orange);color:#fff}
-.rc-tag-yellow{background:var(--yellow);color:var(--offblack)}
-.rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
-.rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none}
-.rc-btn-prev,.rc-btn-disabled{border:1px solid var(--lightgray)}
-.rc-btn-prev{background:#fff;color:var(--darkgray)}.rc-btn-next{background:var(--yellow);color:var(--offblack);border:1px solid var(--yellow)}
-.rc-btn-disabled{background:var(--brightgray);color:var(--gray);cursor:default}
-.rc-link-btn{gap:8px;background:var(--yellow);color:var(--offblack);margin:0 8px 8px 0}
-.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
-@media(max-width:640px){.rc-hero h1{font-size:1.7rem}.rc-3col,.rc-compare{grid-template-columns:1fr}.rc-hero{padding:36px 20px 32px}.rc-hero-stats{gap:20px}.rc-nav,.rc-sec-nav,.rc-sec-header{flex-direction:column}.rc-sec-nav{align-items:stretch}}
+/* HOST-THEME BACKGROUND OVERRIDE */
+body { background: #ffffff !important; }
+
+/* GLOBAL CSS IMMUNITY BLOCK */
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+/* FA6 font restore — (0,0,2,0) beats wildcard (0,0,1,0); must follow wildcard */
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+/* NAVIGATE MASTER ARMOR — (0,0,7,1) beats global section 1.1 rule (0,0,6,2) */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #CCC9B8;
+  --brightgray:#F1EFE3;
+  --offwhite:  #FFFDF2;
+  color: #32312D !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* ── FONT AWESOME ICON HELPERS ── */
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
+
+/* ── ANNOUNCEMENT BAR ── */
+.rc-announce-bar {
+  display: none; background: #FFD706; color: #0D0D0B;
+  align-items: center; justify-content: space-between;
+  padding: 10px 20px; font-size: .88rem; font-weight: 600;
+  border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4;
+}
+.rc-announce-bar.rc-active { display: flex; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-announce-link {
+  color: #0D0D0B !important; font-weight: 800; white-space: nowrap;
+  padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px;
+  transition: background 0.2s; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+
+/* ── TOP NAV / BACK LINK ── */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* ── HERO ── */
+.rc-hero {
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: #0D0D0B; background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
+}
+.rc-lp-pillar-tag {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(204,201,184,0.20); border: 1px solid rgba(204,201,184,0.45);
+  color: #CCC9B8; font-size: .75rem; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
+}
+.rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
+.rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+
+/* ── NAV — sticky + collapsed (LP Overview) ── */
+details.rc-sticky-nav-wrap {
+  position: sticky; top: 0; z-index: 100;
+  background-color: #F1EFE3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 24px 0 48px 0; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+}
+details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
+details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
+details.rc-sticky-nav-wrap > summary::marker { display: none; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0D0D0B; }
+.rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link {
+  color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
+  text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s;
+  white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+
+/* ── CONTENT SECTIONS ── */
+.rc-lp-section { margin-bottom: 48px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
+
+/* ── CALLOUTS ── */
+.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-body { flex: 1; }
+.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
+.rc-callout-tip { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+
+/* ── PHASE BANNERS (dark cards) ── */
+.rc-phase-banner {
+  background: #0D0D0B !important; border-radius: 14px;
+  padding: 24px 28px; margin-bottom: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.rc-phase-banner h3 { font-size: .98rem; font-weight: 800; margin: 0 0 6px; text-transform: uppercase; letter-spacing: .8px; }
+.rc-phase-banner h3.launch-phase { color: #CCC9B8 !important; }
+.rc-phase-banner h3.metrics-phase { color: #FFD706 !important; }
+.rc-phase-banner > p { font-size: .87rem; color: #CCC9B8 !important; margin: 0 0 14px; line-height: 1.55; }
+.rc-phase-step { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: .85rem; color: #CCC9B8 !important; }
+.rc-phase-step:last-child { border-bottom: none; }
+.rc-phase-dot { width: 24px; height: 24px; border-radius: 50%; background: #FFD706; color: #0D0D0B; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.rc-phase-dot.orange { background: #FF8200 !important; color: #fff !important; }
+
+/* ── SUPPORT CARDS ── */
+.rc-card-grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0 32px; }
+.rc-feature-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; flex-grow: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-support-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #FFD706; color: #0D0D0B !important;
+  padding: 9px 16px; border-radius: 8px; font-weight: 700; font-size: .82rem;
+  width: fit-content; margin-top: 4px; border-bottom: 0 !important; transition: opacity .2s;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-support-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-support-link:hover { opacity: .88; color: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-support-link-ghost:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-support-link-ghost {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: transparent; color: #0D0D0B !important;
+  padding: 9px 16px; border-radius: 8px; font-weight: 700; font-size: .82rem;
+  width: fit-content; margin-top: 4px; border: 1px solid #CCC9B8 !important;
+  border-bottom: 1px solid #CCC9B8 !important; transition: all .2s;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-support-link-ghost:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-support-link-ghost:hover { border-color: #0D0D0B !important; border-bottom-color: #0D0D0B !important; color: #0D0D0B !important; }
+
+/* ── VIDEO CARD ── */
+.rc-video-card { border: 1px solid #CCC9B8; border-radius: 14px; overflow: hidden; margin: 0 0 40px; }
+.rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
+.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706 !important; margin: 0; }
+.rc-video-header span { font-size: .78rem; color: #CCC9B8 !important; margin-left: auto; }
+.rc-video-embed { position: relative; overflow: hidden; aspect-ratio: 16/9; background: #0D0D0B; }
+.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-video-caption { padding: 12px 22px; font-size: .83rem; color: #807D73; background: #F1EFE3; border-top: 1px solid #CCC9B8; line-height: 1.5; }
+
+/* ── TOC CARDS ── */
+.rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
+.rc-toc-card {
+  display: grid; grid-template-columns: 44px 1fr 32px;
+  align-items: center; gap: 16px;
+  background: #FFFDF2; border: 1px solid #CCC9B8;
+  border-radius: 12px; padding: 18px 22px;
+  transition: all .2s ease;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-toc-card { border-bottom: 1px solid #CCC9B8 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-toc-card:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-toc-card:hover { border-color: #CCC9B8; border-bottom: 1px solid #CCC9B8 !important; box-shadow: 0 4px 14px rgba(204,201,184,0.30); transform: translateX(3px); }
+.rc-toc-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #0D0D0B; color: #FFD706;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem; font-weight: 800; flex-shrink: 0;
+}
+.rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 4px; }
+.rc-toc-body p { font-size: .88rem; color: #807D73; line-height: 1.5; margin: 0; }
+.rc-toc-arrow { font-size: 1.1rem; color: #CCC9B8; text-align: right; transition: color .2s; }
+.rc-guide a.rc-toc-card:hover .rc-toc-arrow { color: #CCC9B8; }
+
+/* ── PATH NAV BUTTONS ── */
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #CCC9B8; letter-spacing: .5px; }
+.rc-btn-start { background: #F1EFE3; color: #807D73; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; border: 2px solid #CCC9B8; cursor: default; display: inline-flex; align-items: center; gap: 8px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+
+/* ── RESOURCES ── */
+.rc-resources { background: #F1EFE3; border-left: 4px solid #CCC9B8; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-resource-link {
+  color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
+  text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem;
+  transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; }
+
+/* ── FOOTER ── */
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
+.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
+  transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .rc-content-wrap { padding: 0 20px; }
+  .rc-top-nav { padding: 16px 20px; }
+  .rc-hero { padding: 36px 20px 36px; }
+  .rc-lp-hero-title h1 { font-size: 1.8rem; }
+  .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
+  .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rc-card-grid-2col { grid-template-columns: 1fr; }
+  .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
+}
 </style>
 
 <div class="rc-guide">
-  <div class="rc-hero">
-    <div class="rc-badge">🔔 Subscriber Experience</div>
-    <h1>Payment Banners</h1>
-    <p>Meet your subscribers where they are — with in-app prompts that turn at-risk payments into seamless renewals, before they ever become churn.</p>
-    <div class="rc-hero-stats">
-      <div><div class="rc-num">3x</div><div class="rc-lbl">More spend from engaged subscribers</div></div>
-      <div><div class="rc-num">40%</div><div class="rc-lbl">Of churn is involuntary</div></div>
-      <div><div class="rc-num">337%</div><div class="rc-lbl">Lift when proactive retention tools are used</div></div>
-    </div>
+
+  <!-- BACK LINK -->
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a>
   </div>
 
-  <nav class="rc-nav">
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners">Payment Banners</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why"><span class="rc-snum">1</span>Why Use It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-use-cases"><span class="rc-snum">2</span>Use Cases</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-webhooks"><span class="rc-snum">3</span>Webhooks</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-engage"><span class="rc-snum">4</span>Recurly Engage</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-best-practices"><span class="rc-snum">5</span>Best Practices</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-pitch"><span class="rc-snum">6</span>Pitch to Leadership</a>
-  </nav>
+  <div class="rc-content-wrap">
 
-  <div class="rc-sec">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">🔔</div>
-      <div>
-        <h2>What are Payment Banners?</h2>
-        <p>In-app and on-page notifications that prompt subscribers to update their payment method at exactly the right moment — while they're already engaged with your product.</p>
+    <!-- ANNOUNCEMENT BAR (hidden by default — add rc-active class to show) -->
+    <div class="rc-announce-bar">
+      <div class="rc-announce-inner">
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>Upcoming:</strong> Join our CSMs for a live session — bring your Launchpad questions.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
     </div>
 
-    <div class="rc-card">
-      <h3 class="rc-subhead">🧩 The simple version</h3>
-      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0 0 14px;">When a subscriber's card is about to expire, has already been declined, or their account is past due, the worst thing that can happen is silence. They don't know there's a problem — and you lose them without either of you intending it. That's involuntary churn, and it accounts for up to 40% of all subscription losses.</p>
-      <p style="font-size:.95rem;color:var(--darkgray);line-height:1.6;margin:0;">Payment Banners solve this by surfacing a targeted, in-session notification — inside your app, on your subscriber portal, or on your hosted pages — that asks subscribers to update their payment details right now, while they're already logged in and engaged. No waiting for an email to be opened. No hoping they click a link. Just a clear, timely prompt at the highest-intent moment possible.</p>
-    </div>
-
-    <h3 class="rc-subhead">💡 How payment banners differ from dunning emails</h3>
-    <div class="rc-3col">
-      <div class="rc-wi"><div class="rc-wi-icon">📧</div><h4>Dunning Emails</h4><p>Sent after a payment fails. Relies on the subscriber opening their inbox, reading the email, and clicking through to update. Reactive and easy to miss.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🔔</div><h4>Payment Banners</h4><p>Triggered while the subscriber is actively using your product. Catches them in the moment with the highest intent to act. Proactive and impossible to ignore.</p></div>
-      <div class="rc-wi"><div class="rc-wi-icon">🔄</div><h4>Together</h4><p>Banners and dunning emails are complementary, not competing. Banners catch in-session users; emails catch everyone else. Use both for maximum coverage.</p></div>
-    </div>
-
-    <h3 class="rc-subhead">🗺️ How it works — the subscriber journey</h3>
-    <div class="rc-steps">
-      <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>A payment risk event occurs</h3><p>A card is approaching expiration, a renewal attempt fails, or an account becomes past due. Recurly detects this and either fires a webhook event or triggers Recurly Engage automatically.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>The subscriber logs in or visits your app</h3><p>This is the key moment. Instead of waiting for them to check their email, the payment banner surfaces immediately within their session — in your app, subscriber portal, or hosted pages.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>The banner prompts action</h3><p>A clear, friendly message explains the issue and provides a direct path to update their payment method. No friction. No hunting through account settings.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>The subscriber updates their payment</h3><p>With one click they're taken directly to their billing info. They update their card. The risk event is resolved — silently, seamlessly, with zero churn.</p></div></div>
-      <div class="rc-step"><div class="rc-sbadge">5</div><div><h3>The next renewal charges successfully</h3><p>Because the payment method is now current, the subscription renews without interruption. The subscriber never experiences a service disruption. Revenue protected.</p></div></div>
-    </div>
-
-    <h3 class="rc-subhead">⚡ Two ways to implement payment banners</h3>
-    <div class="rc-compare">
-      <div class="rc-compare-card webhook">
-        <span class="rc-tag rc-tag-orange">Dev Required</span>
-        <h4>🔗 Via Webhooks</h4>
-        <ul>
-          <li>Recurly fires an event when a risk is detected</li>
-          <li>Your dev team listens for the event</li>
-          <li>They build and render the banner in your app</li>
-          <li>Full control over design and placement</li>
-          <li>Best for custom app experiences</li>
-        </ul>
+    <!-- HERO -->
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag">
+        <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch"> Launch · Launchpad
       </div>
-      <div class="rc-compare-card engage">
-        <span class="rc-tag rc-tag-yellow">No Code</span>
-        <h4>✨ Via Recurly Engage</h4>
-        <ul>
-          <li>Recurly detects the risk automatically</li>
-          <li>Engage surfaces the banner with no dev work</li>
-          <li>Configure triggers, messaging, and timing in-app</li>
-          <li>Works on hosted pages and subscriber portal</li>
-          <li>Best for fast deployment with no engineering lift</li>
-        </ul>
+      <div class="rc-lp-hero-title"><h1>Welcome to Launchpad</h1></div>
+      <p>Your step-by-step guide to optimizing Recurly, mastering your metrics, and building a thriving subscription business — starting right now.</p>
+    </div>
+
+    <!-- NAV — sticky + collapsed (LP Overview) -->
+    <details class="rc-sticky-nav-wrap">
+      <summary>
+        <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
+      </summary>
+      <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+          <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Launchpad overview
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing" class="rc-sticky-link"><span class="rc-step-badge">1</span> Production testing</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-dunning-optimization" class="rc-sticky-link"><span class="rc-step-badge">2</span> Dunning</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater" class="rc-sticky-link"><span class="rc-step-badge">3</span> Account Updater</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding" class="rc-sticky-link"><span class="rc-step-badge">4</span> Branding</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover" class="rc-sticky-link"><span class="rc-step-badge">5</span> Gateway failover</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+      </div></div></div>
+    </details>
+
+    <!-- SECTION: What is Launchpad -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-map-location-dot rc-fa-section"></i> You're live — now let's optimize</h2>
+      <p>Going live is just the beginning. Launchpad is your guided program to make sure Recurly is working as hard as possible for your business from day one.</p>
+
+      <h3 style="font-size:1rem;font-weight:800;color:#0D0D0B;margin:0 0 12px;">What is Navigate Launchpad?</h3>
+      <p>Navigate Launchpad is Recurly's self-paced optimization program for new merchants. It's designed to be completed within 90 days of going live in production — walking you through the most impactful configurations, best practices, and data insights, one step at a time.</p>
+      <p>You don't need to rush. Each module builds on the last. Work through them at your own pace and come back anytime.</p>
+
+      <!-- VIDEO — featured, above content -->
+      <div class="rc-video-card">
+        <div class="rc-video-header">
+          <h4><i class="fa-solid fa-circle-play" style="margin-right:6px;"></i> Trail guide: welcome &amp; UI walkthrough</h4>
+          <span>~5 min</span>
+        </div>
+        <div class="rc-video-embed">
+          <iframe src="https://share.synthesia.io/embeds/videos/ee258c32-42a5-4b28-81f9-47b13ec52fe2" loading="lazy" title="Navigate Launchpad — Welcome and UI Walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+        </div>
+        <div class="rc-video-caption">Get oriented with Recurly's UI, admin navigation, and key support resources.</div>
+      </div>
+
+    </div>
+
+    <!-- SECTION: Two-phase journey -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-route rc-fa-section"></i> Your two-phase journey</h2>
+
+      <div class="rc-phase-banner">
+        <div style="display:flex;align-items:flex-start;gap:16px;">
+          <i class="fa-solid fa-gear" style="color:#CCC9B8 !important;font-size:1.4rem;flex-shrink:0;margin-top:2px;"></i>
+          <div style="flex:1;">
+            <h3 class="launch-phase">Phase 1: Optimization</h3>
+            <p>Lock in the configurations that protect your revenue and deliver a polished subscriber experience.</p>
+            <div class="rc-phase-step"><div class="rc-phase-dot">1</div> Final production testing</div>
+            <div class="rc-phase-step"><div class="rc-phase-dot">2</div> Optimize your dunning strategy</div>
+            <div class="rc-phase-step"><div class="rc-phase-dot">3</div> Enable Account Updater</div>
+            <div class="rc-phase-step"><div class="rc-phase-dot">4</div> Brand your emails &amp; invoices</div>
+            <div class="rc-phase-step"><div class="rc-phase-dot">5</div> Set up gateway failover</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc-phase-banner">
+        <div style="display:flex;align-items:flex-start;gap:16px;">
+          <i class="fa-solid fa-chart-line" style="color:#FFD706 !important;font-size:1.4rem;flex-shrink:0;margin-top:2px;"></i>
+          <div style="flex:1;">
+            <h3 class="metrics-phase">Phase 2: Mastering metrics</h3>
+            <p>Understand the six core KPIs that drive subscription growth, retention, and revenue recovery.</p>
+            <div class="rc-phase-step"><div class="rc-phase-dot orange">1</div> Benchmarks dashboard &amp; reporting tools</div>
+            <div class="rc-phase-step"><div class="rc-phase-dot orange">2</div> Subscriber acquisition &amp; sign-up decline rate</div>
+            <div class="rc-phase-step"><div class="rc-phase-dot orange">3</div> Voluntary &amp; involuntary churn</div>
+            <div class="rc-phase-step"><div class="rc-phase-dot orange">4</div> Renewal invoice paid rate &amp; recovered revenue</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>How to use Launchpad</strong>
+          <p>Each module includes a trail guide video, step-by-step setup guidance, best practices, and a completion checklist. Use the navigation menu above to move between modules — you can return to any step at any time.</p>
+        </div>
       </div>
     </div>
 
-    <div class="rc-tip">
-      <span class="rc-tipicon">💡</span>
-      <div><h4>Account Updater + Payment Banners = Your Two-Layer Defense</h4><p>Account Updater silently fixes card issues behind the scenes for eligible cards. Payment Banners handle everything AU can't — they bring the subscriber into the loop when a human action is needed. Together, they cover the full spectrum of involuntary churn prevention.</p></div>
+    <!-- SECTION: Table of contents -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> What's inside</h2>
+      <p>Launchpad is organized as a single learning path. Work through each topic in order, or jump to the one most relevant to you right now.</p>
+
+      <div class="rc-toc-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing" class="rc-toc-card">
+          <div class="rc-toc-num">1</div>
+          <div class="rc-toc-body">
+            <h4>Production testing</h4>
+            <p>Confirm your integration is working end-to-end in production before your first real subscribers arrive.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-dunning-optimization" class="rc-toc-card">
+          <div class="rc-toc-num">2</div>
+          <div class="rc-toc-body">
+            <h4>Dunning</h4>
+            <p>Configure your failed payment retry logic and email cadence to maximize involuntary churn recovery.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater" class="rc-toc-card">
+          <div class="rc-toc-num">3</div>
+          <div class="rc-toc-body">
+            <h4>Account Updater</h4>
+            <p>Automatically keep card-on-file data current so payment failures caused by stale credentials don't reach your dunning queue.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding" class="rc-toc-card">
+          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-body">
+            <h4>Branding</h4>
+            <p>Apply your brand to subscriber-facing emails and invoices for a consistent, professional experience.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover" class="rc-toc-card">
+          <div class="rc-toc-num">5</div>
+          <div class="rc-toc-body">
+            <h4>Gateway failover</h4>
+            <p>Set up a backup payment gateway so a single-gateway outage doesn't silently stop your revenue.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review" class="rc-toc-card">
+          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-body">
+            <h4>Review &amp; resources</h4>
+            <p>Consolidate what you've configured, check your work against the full optimization checklist, and access all path resources in one place.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+      </div>
     </div>
 
-    <div class="rc-sec-nav">
-      <span class="rc-btn-disabled">🎯 Start</span>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why">Next: Why Use It? →</a>
+    <!-- SECTION: Support -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-headset rc-fa-section"></i> Get help along the way</h2>
+      <p>Each module in Launchpad is designed to be self-serve, but support is available whenever you need it.</p>
+
+      <div class="rc-card-grid-2col">
+        <div class="rc-feature-card">
+          <h4><i class="fa-solid fa-headset rc-fa-section" style="margin-right:6px;"></i> Your customer support team</h4>
+          <p>Have questions as you work through Launchpad? Recurly Support is here to help.</p>
+          <a href="mailto:support@recurly.com" class="rc-support-link"><i class="fa-regular fa-envelope"></i> support@recurly.com</a>
+        </div>
+        <div class="rc-feature-card">
+          <h4><i class="fa-regular fa-file-lines rc-fa-section" style="margin-right:6px;"></i> Navigate resource guide</h4>
+          <p>A quick-reference guide to all Recurly support links, documentation, and program resources.</p>
+          <a href="https://go.recurly.com/recurly_navigate_resource_guide.html" target="_blank" rel="noopener noreferrer" class="rc-support-link-ghost"><i class="fa-solid fa-arrow-down"></i> Download resource guide</a>
+        </div>
+      </div>
     </div>
 
-    <h3 class="rc-subhead" style="margin-top:28px;">📚 Additional resources</h3>
-    <a class="rc-link-btn" href="https://docs.recurly.com/recurly-engage" target="_blank" rel="noopener noreferrer">✨ Recurly Engage Docs</a>
-    <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-subscriptions/docs/webhooks" target="_blank" rel="noopener noreferrer">🔗 Recurly Webhooks Docs</a>
-    <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">🎧 Contact Recurly Support</a>
-    <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/">🌐 Join Global Office Hours</a>
-  </div>
-</div>
+    <!-- PATH NAV -->
+    <div class="rc-lp-nav">
+      <span class="rc-btn-start">Start</span>
+      <span class="rc-lp-nav-indicator">Overview</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing" class="rc-btn-path">Next: Production testing →</a>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="rc-resources">
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly documentation</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+      </div>
+    </div>
+
+    <!-- FOOTER NAV — LP Overview pattern -->
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Launchpad</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one" class="rc-footer-link">Launchpad overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-production-testing" class="rc-footer-link">Production testing</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-dunning-optimization" class="rc-footer-link">Dunning</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-account-updater" class="rc-footer-link">Account Updater</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-branding" class="rc-footer-link">Branding</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-gateway-failover" class="rc-footer-link">Gateway failover</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one-review" class="rc-footer-link">Review &amp; resources</a>
+        </div>
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /rc-content-wrap -->
+</div><!-- /rc-guide -->
 `}</HTMLBlock>
 
 <br />
