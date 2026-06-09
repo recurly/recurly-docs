@@ -208,20 +208,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Analytics: Where to Find It</h1></div>
       <p>Where each analytics question lives — native Recurly dashboards, the exports library, and what to pull for each P&P 201 topic you've configured.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">10+</div>
-          <div class="rc-hero-stat-label">Native analytics dashboards in Recurly Analytics</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Plan-level</div>
-          <div class="rc-hero-stat-label">MRR breakdown available by individual plan</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">External</div>
-          <div class="rc-hero-stat-label">Where usage, segment, and custom cohort analytics must live</div>
-        </div>
-      </div>
+     
     </div>
 
     <!-- Nav -->
