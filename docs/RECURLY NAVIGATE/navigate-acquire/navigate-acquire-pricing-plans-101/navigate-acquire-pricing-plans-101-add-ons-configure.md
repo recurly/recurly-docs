@@ -251,7 +251,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Add-ons — how to configure</h1></div>
+      <div class="rc-lp-hero-title"><h1>Add-ons — How to configure</h1></div>
       <p>A complete walkthrough of creating add-ons both directly on a plan and through the Item Catalog — including key field decisions, usage setup, and the warnings most merchants learn the hard way.</p>
      
     </div>
