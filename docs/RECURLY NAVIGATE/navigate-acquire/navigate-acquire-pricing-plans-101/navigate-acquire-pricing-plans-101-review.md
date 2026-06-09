@@ -196,14 +196,10 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
       </div>
-      <div class="rc-completion-badge">🏁</div>
+     
       <div class="rc-lp-hero-title"><h1>Pricing &amp; Plans 101 — Review &amp; resources</h1></div>
       <p>You've completed Pricing &amp; Plans 101 — six Micro-Paths covering the full foundation of how Recurly's plan and pricing tools work and how to use them well. Use this page to test what you've learned and find every resource from across the series in one place.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">6</div><div class="rc-hero-stat-label">Micro-Paths completed — Plans, Add-Ons, Currency, Pricing Models, Trials, Analytics</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">18</div><div class="rc-hero-stat-label">pages of CSM-curated guidance across configuration, strategy, and best practices</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Your turn</div><div class="rc-hero-stat-label">five knowledge check questions below, then the full resource library to take with you</div></div>
-      </div>
+      
     </div>
 
     <!-- Nav — R&R active, all 6 micro-paths linked -->
