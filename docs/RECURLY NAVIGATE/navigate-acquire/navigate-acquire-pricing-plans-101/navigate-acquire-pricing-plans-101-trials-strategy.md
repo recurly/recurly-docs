@@ -1,5 +1,5 @@
 ---
-title: 'Trials: Best practices & strategy'
+title: 'Trials: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
@@ -216,7 +216,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Trials — Strategy &amp; Best Practices</h1></div>
+      <div class="rc-lp-hero-title"><h1>Trials — Strategy &amp; best practices</h1></div>
       <p>Trial strategy isn't just about how long the trial is — it's about who starts, what they do during it, and whether the trial creates the conditions for a confident purchase decision. Here's how to match trial design to business outcome and know when your trial is the problem vs. when the trial is fine and something else is broken.</p>
       
     </div>
