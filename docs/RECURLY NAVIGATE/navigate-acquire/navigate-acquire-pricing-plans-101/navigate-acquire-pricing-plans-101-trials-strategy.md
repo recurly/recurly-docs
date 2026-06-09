@@ -214,15 +214,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Trials — Strategy &amp; Best Practices</h1></div>
       <p>Trial strategy isn't just about how long the trial is — it's about who starts, what they do during it, and whether the trial creates the conditions for a confident purchase decision. Here's how to match trial design to business outcome and know when your trial is the problem vs. when the trial is fine and something else is broken.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Card first</div><div class="rc-hero-stat-label">default to requiring billing info — cardless trials widen the funnel but rarely improve paid conversion</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Shorter</div><div class="rc-hero-stat-label">shorter trials often outperform longer ones — the goal is a value moment, not feature exploration</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Activate fast</div><div class="rc-hero-stat-label">the most reliable conversion lever is how quickly the subscriber reaches a product value moment</div></div>
-      </div>
+      
     </div>
 
     <!-- Navigation Menu — page 3 active -->
@@ -471,8 +467,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials-strategy" class="rc-footer-link">Trials: Strategy &amp; Best Practices</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing & Plans 101: Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
