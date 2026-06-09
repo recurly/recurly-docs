@@ -177,15 +177,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Plan Analytics — Overview</h1></div>
       <p>Every plan, pricing model, and trial configuration you've built in this series produces data. This Micro-Path is about reading it — understanding what Recurly measures, what the numbers actually mean, and how to connect plan-level analytics to the decisions that drive growth.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">MRR</div><div class="rc-hero-stat-label">monthly recurring revenue — the single most important health metric for any subscription business</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Churn rate</div><div class="rc-hero-stat-label">the percentage of subscribers who cancel each period — the most consequential number to reduce</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Trial conversion</div><div class="rc-hero-stat-label">the share of trialing subscriptions that convert to paid — the proof your trial strategy is working</div></div>
-      </div>
+
     </div>
 
     <!-- Navigation Menu — page 1 active -->
@@ -358,8 +354,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plan-analytics-strategy" class="rc-footer-link">Analytics: Strategy</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing & Plans 101: Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
