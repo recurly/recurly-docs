@@ -214,7 +214,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 201
       </div>
-      <div class="rc-lp-hero-title"><h1>Price Segmentation — Strategy &amp; Best Practices</h1></div>
+      <div class="rc-lp-hero-title"><h1>Price segmentation — Strategy &amp; best practices</h1></div>
       <p>Configuration makes segments work. Strategy makes them valuable. Here's how to design your segment taxonomy, run tests you can actually measure, and avoid the compounding complexity that makes segmentation a liability instead of an asset.</p>
       
     </div>
