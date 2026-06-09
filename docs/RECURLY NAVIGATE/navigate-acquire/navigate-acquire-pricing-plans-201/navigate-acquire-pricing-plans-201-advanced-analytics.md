@@ -207,20 +207,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Advanced Analytics</h1></div>
       <p>You've built a sophisticated pricing and packaging portfolio. Now learn how to measure whether it's working — what Recurly shows you natively, and where the gaps require external tooling.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">10+</div>
-          <div class="rc-hero-stat-label">Native analytics dashboards in Recurly Analytics</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Plan-level</div>
-          <div class="rc-hero-stat-label">MRR breakdown available by individual plan</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">External</div>
-          <div class="rc-hero-stat-label">Where usage, segment, and custom cohort analytics must live</div>
-        </div>
-      </div>
+     
     </div>
 
     <!-- Nav -->
