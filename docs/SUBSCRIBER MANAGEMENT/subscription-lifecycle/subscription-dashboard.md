@@ -1,9 +1,9 @@
 ---
 title: Subscription dashboard
 excerpt: >-
-  Navigate your Recurly subscription management with ease. Our Subscription
-  Dashboard offers comprehensive tools to manage, modify, and understand your
-  customer subscriptions effectively.
+  View, organize, and manage all customer subscriptions from Recurly's
+  centralized subscription dashboard — with filters, sorting, and direct access
+  to create, change, postpone, or expire subscriptions.
 deprecated: false
 hidden: false
 metadata:
@@ -13,83 +13,76 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">The subscription dashboard is your central hub for managing every customer subscription in Recurly. Sort, filter, and search across all subscriptions by account, plan, status, or billing dates — then take action directly from the dashboard to create, modify, postpone, or expire subscriptions.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Active Recurly account with necessary administrative permissions.
-* Basic understanding of Recurly's subscription models and billing cycles.
+<ul class="rp-list">
+  <li>Active Recurly account with administrative permissions</li>
+  <li>Basic understanding of Recurly's subscription models and billing cycles</li>
+</ul>
 
 ### Limitations
 
-* Inability to reactivate expired subscriptions.
+<ul class="rp-list">
+  <li>Expired subscriptions cannot be reactivated</li>
+</ul>
 
 # Definition
 
-The Subscription Dashboard in Recurly is a centralized platform for managing customer subscriptions. It allows for the creation, modification, and analysis of subscriptions, providing tools to handle upgrades, downgrades, postponements, and terminations of customer subscriptions.
-
-# Key benefits
-
-* **Flexible subscription management**: Easily create and modify customer subscriptions, offering versatility with options to upgrade, downgrade, or change billing methods.
-* **Efficient renewal and postponement tools**: Seamlessly manage subscription renewals and implement postponements, catering to diverse customer needs and scenarios.
-* **Clarity in subscription lifecycle**: Gain a clear understanding of the subscription lifecycle stages, from active and paused states to cancellation and expiration, ensuring accurate customer account management.
+<div class="rp-definition">The subscription dashboard is a centralized platform for creating, modifying, and analyzing customer subscriptions. It provides tools to manage the full subscription lifecycle — including upgrades, downgrades, postponements, and terminations — alongside filters and sorting for efficient account oversight.</div>
 
 # Key details
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/862f5f4-image.png" />
 
-This dashboard provides an overview of your subscriptions, providing many ways to organize, search and examine subscriptions. 
+<Image src="https://files.readme.io/862f5f4-image.png" align="center" width="75%" border={true} />
 
-## Subscription lifecycle
 
-#### Future
+## Subscription statuses
 
-Future subscriptions have a start date that is yet to come. They are typically used in B2B contracts where the agreement specifies a future commencement date. Customers are not invoiced for these subscriptions until the start date arrives.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Status</td><td>Description</td></tr>
+  <tr><td>Future</td><td>The subscription has a start date that hasn't arrived yet. Customers are not invoiced until the start date. Common in B2B contracts with a specified future commencement date.</td></tr>
+  <tr><td>Active</td><td>The subscription is live — either paying or in a trial period.</td></tr>
+  <tr><td>Canceled</td><td>The subscription is set to expire at the end of the current term. This occurs when a customer cancels their auto-renewing subscription or when the subscription is designed to end after the current term. A canceled subscription can be reactivated before its scheduled expiration date.</td></tr>
+  <tr><td>Expired</td><td>The subscription has churned and cannot be reactivated. Expiry can be involuntary (failed dunning cycle) or voluntary (cancellation).</td></tr>
+</table>
 
-#### Active
+## Dashboard filters
 
-Active subscriptions include regular paying subscriptions as well as those currently in a trial period.
+The dashboard lets you filter and sort by account, plan code, subscription status, creation date, or next invoice date. Filters can overlap and are not mutually exclusive — for example, the Live filter includes both Renewing and Canceled subscriptions.
 
-#### Canceled
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Filter</td><td>Description</td></tr>
+  <tr><td>All</td><td>Shows all subscriptions.</td></tr>
+  <tr><td>Renewing</td><td>Active subscriptions set to renew, including paused subscriptions.</td></tr>
+  <tr><td>Future start</td><td>Subscriptions scheduled to activate on a future date.</td></tr>
+  <tr><td>Last billing period</td><td>Subscriptions in their final billing cycle, set to expire at the end of the current term.</td></tr>
+  <tr><td>Paused</td><td>Active subscriptions that are currently paused and will not generate invoices.</td></tr>
+  <tr><td>Canceled</td><td>Subscriptions that will end at the close of their current term.</td></tr>
+  <tr><td>Expired</td><td>Subscriptions that are no longer active.</td></tr>
+  <tr><td>Trial</td><td>Active subscriptions currently in a trial phase.</td></tr>
+  <tr><td>Paying</td><td>Active subscriptions that have moved past the trial period.</td></tr>
+</table>
 
-Canceled subscriptions are set to automatically expire at the end of the current term. This status can occur if a customer decides to cancel their auto-renewing subscription, or if the subscription is designed to end after the current term.
+## Subscription actions
 
-#### Expired
+<div class="rp-nav-grid">
 
-Expired subscriptions are those that have churned and cannot be reactivated. They may expire due to involuntary churn, such as failing the dunning cycle, or voluntary churn through cancellation.
+<Cards>
+  <Card title="Create a subscription" href="https://docs.recurly.com/docs/create-subscription" target="_blank">Enroll a customer in a plan — a single customer can hold multiple subscriptions to the same or different plans.</Card>
+  <Card title="Change a subscription" href="https://docs.recurly.com/docs/change-subscription" target="_blank">Upgrade, downgrade, or modify invoicing method, effective immediately or at the next term renewal.</Card>
+  <Card title="Postpone a subscription" href="https://docs.recurly.com/docs/postpone-subscription" target="_blank">Shorten or lengthen a customer's current billing period, useful for putting a subscription on pause.</Card>
+  <Card title="Expire a subscription" href="https://docs.recurly.com/docs/expire-subscription" target="_blank">Cancel a subscription at the next billing date, or terminate it immediately mid-cycle — both result in the subscription expiring.</Card>
+</Cards>
 
-## View your subscriptions
+</div>
 
-The subscriptions dashboard gives an overview of all accounts with subscriptions managed by Recurly. In this dashboard, you can sort subscriptions by account, plan code, subscription status, creation date, or next invoice date. Filters allow you to categorize accounts by subscription status for efficient sorting. Note that categories can overlap and are not mutually exclusive. For instance, the **Live** filter includes both **Renewing** and **Canceled** subscriptions.
-
-| Category            | Description                                                                                              |
-| ------------------- | -------------------------------------------------------------------------------------------------------- |
-| All                 | Shows all subscriptions.                                                                                 |
-| Renewing            | Covers active subscriptions set to renew, including paused subscriptions.                                |
-| Future start        | Includes subscriptions scheduled to activate on a future date.                                           |
-| Last billing period | Encompasses subscriptions in their final billing cycle of the current term, set to expire at term's end. |
-| Paused              | Highlights active subscriptions that are currently paused and will not generate invoices.                |
-| Canceled            | Shows subscriptions that will end at the close of their current subscription term.                       |
-| Expired             | Displays subscriptions that are no longer active.                                                        |
-| Trial               | Captures active subscriptions currently in a trial phase.                                                |
-| Paying              | Refers to active subscriptions that have moved past the trial period.                                    |
-
-## Create a subscription
-
-To enroll your customers in one of your plans, you can create a subscription on their account. A customer may have multiple subscriptions to different plans or multiple subscriptions to the same plan. [Learn more](https://docs.recurly.com/docs/create-subscription).
-
-## Change a subscription
-
-Changes to a customer’s subscription often involve upgrades or downgrades but can also include modifications to the subscription's invoicing method. These changes can be applied immediately within the current billing cycle or deferred to the next term renewal. [Learn more](https://docs.recurly.com/docs/change-subscription).
-
-## Postpone a subscription's renewal date
-
-Postponing a subscription allows you to shorten or lengthen a customer’s current billing period. This feature is particularly useful for putting them on pause. [Learn more](https://docs.recurly.com/docs/postpone-subscription).
-
-## Expire a subscription
-
-When a customer chooses to end their subscription at the next billing date, it is referred to as **canceling** the subscription. If you opt to terminate the subscription early, mid-cycle, this is known as **terminating** the subscription. Both actions lead to the subscription **expiring**. Once a subscription has expired, it cannot be reactivated. However, a canceled subscription can be **reactivated** if the customer decides to continue the subscription before its scheduled expiration date. [Learn more](https://docs.recurly)
+<br />
