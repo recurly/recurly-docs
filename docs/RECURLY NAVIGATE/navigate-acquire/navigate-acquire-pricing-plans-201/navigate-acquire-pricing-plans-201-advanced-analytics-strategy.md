@@ -333,8 +333,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section 4: AI Strategy — Capstone -->
     <div class="rc-lp-section">
-      <h2>🤖 AI Strategy — The Full P&P 201 Picture</h2>
-      <p>Across this series, we've covered AI applications specific to each topic. Here's the synthesis: what does an AI-informed P&P operation look like end-to-end, and what's realistic to build at different stages of your analytics maturity?</p>
+      <h2>🤖 AI Strategy — The Full Pricing & Plans 201 Picture</h2>
+      <p>Across this series, we've covered AI applications specific to each topic. Here's the synthesis: what does an AI-informed pricing and plans operation look like end-to-end, and what's realistic to build at different stages of your analytics maturity?</p>
 
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon">🧠</div>
@@ -378,7 +378,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- OH CTA -->
     <div class="rc-oh-cta">
       <h4>🗓️ Close Out the Series with a Strategy Session</h4>
-      <p>You've completed P&P 201. Bring your portfolio to a <strong>Customer Success Global Office Hours</strong> session — walk through what you've built, what you're measuring, and what you'd like to test next. Our CSMs have seen hundreds of pricing configurations and can help you prioritize what to optimize first.</p>
+      <p>You've completed Pricing & Plans 201. Bring your portfolio to a <strong>Customer Success Global Office Hours</strong> session — walk through what you've built, what you're measuring, and what you'd like to test next. Our CSMs have seen hundreds of pricing configurations and can help you prioritize what to optimize first.</p>
       <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
 
