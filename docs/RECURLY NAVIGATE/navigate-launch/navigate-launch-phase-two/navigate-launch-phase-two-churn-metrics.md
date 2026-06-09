@@ -6,185 +6,455 @@ metadata:
   robots: index
 ---
 <HTMLBlock>{`
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-.rc-guide{--yellow:#FFD706;--orange:#FF8200;--offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;--brightgray:#F1EFE3;--offwhite:#FFFDF2;font-family:'Segoe UI',system-ui,sans-serif;max-width:960px;margin:0 auto;padding:0 20px 60px}
-.rc-hero{background:var(--offblack);border-radius:16px;padding:52px 40px 44px;text-align:center;margin-bottom:0}
-.rc-badge{display:inline-block;background:var(--orange);color:#fff;border-radius:20px;padding:6px 20px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
-.rc-hero h1{font-size:2.3rem;font-weight:800;line-height:1.15;margin:0 0 12px;color:#fff}
-.rc-hero>p{font-size:1rem;max-width:680px;margin:0 auto 28px;color:#CCC9B8;line-height:1.6}
-.rc-hero-stats{display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
-.rc-num{font-size:1.7rem;font-weight:800;color:var(--orange)}
-.rc-lbl{font-size:.76rem;color:#CCC9B8;text-transform:uppercase;letter-spacing:.5px}
-.rc-nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 32px;padding:16px;background:var(--offwhite);border-radius:14px;border:1px solid var(--lightgray)}
-.rc-nav a{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:10px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.83rem;font-weight:700;transition:all .2s}
-.rc-nav a:hover{border-color:var(--orange);box-shadow:0 2px 8px rgba(255,130,0,.2);color:var(--offblack);text-decoration:none}
-.rc-nav a.rc-active{background:var(--orange);border-color:var(--orange);color:#fff}
-.rc-snum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--offblack);color:var(--orange);font-size:11px;font-weight:800;flex-shrink:0}
-.rc-nav a.rc-active .rc-snum{background:rgba(255,255,255,.2);color:#fff}
-.rc-sec{margin-bottom:48px}
-.rc-sec-header{display:flex;align-items:flex-start;gap:18px;margin-bottom:28px}
-.rc-sec-icon{width:52px;height:52px;border-radius:14px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
-.rc-sec-header h2{font-size:1.45rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
-.rc-sec-header p{font-size:.9rem;color:var(--gray);margin:0;line-height:1.6}
-.rc-card{background:#fff;border:1px solid var(--lightgray);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 6px rgba(13,13,11,.04)}
-.rc-subhead{font-size:.98rem;font-weight:800;color:var(--offblack);margin:0 0 10px}
-.rc-metric{background:#fff;border:1px solid var(--lightgray);border-radius:14px;padding:20px 22px;margin-bottom:14px}
-.rc-metric-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-.rc-metric-icon{width:40px;height:40px;border-radius:10px;background:var(--offblack);color:var(--orange);font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.rc-metric h3{font-size:.96rem;font-weight:800;margin:0;color:var(--offblack)}
-.rc-metric p{font-size:.85rem;color:var(--gray);margin:0 0 10px;line-height:1.6}
-.rc-formula{background:var(--brightgray);border-radius:8px;padding:10px 14px;font-size:.83rem;font-family:monospace;color:var(--darkgray);margin-bottom:10px}
-.rc-pills{display:flex;gap:8px;flex-wrap:wrap}
-.rc-pill{padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:700;background:var(--offwhite);border:1px solid var(--lightgray);color:var(--darkgray)}
-.rc-pill.down{background:rgba(22,163,74,.1);color:#15803d;border-color:#86efac}
-.rc-churn-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
-.rc-churn-type{border-radius:12px;padding:17px 19px;border:1px solid var(--lightgray)}
-.rc-churn-type.vol{background:#fff5f0;border-color:#fca5a5}
-.rc-churn-type.inv{background:#fff6ee;border-color:#ffcb99}
-.rc-churn-type h4{font-size:.9rem;font-weight:800;margin:0 0 6px}
-.rc-churn-type.vol h4{color:#dc2626}
-.rc-churn-type.inv h4{color:#b45309}
-.rc-churn-type p{font-size:.83rem;color:var(--gray);line-height:1.5;margin:0 0 8px}
-.rc-churn-type .rc-fix{font-size:.78rem;font-weight:700;color:var(--offblack)}
-.rc-tip{background:#fff6ee;border:1px solid #ffcb99;border-radius:12px;padding:15px 17px;margin-bottom:16px;font-size:.87rem;color:var(--darkgray);line-height:1.6}
-.rc-tip strong{color:var(--offblack)}
-.rc-video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:8px;background:var(--offblack)}
-.rc-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
-.rc-video-cap{font-size:.8rem;color:var(--gray);text-align:center;margin-bottom:4px;font-style:italic}
-.rc-clip{background:var(--offwhite);border:1px solid var(--lightgray);border-radius:14px;padding:16px 18px;margin-bottom:16px}
-.rc-clip-label{display:inline-flex;align-items:center;gap:5px;background:var(--offblack);color:var(--orange);border-radius:6px;padding:3px 10px;font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
-.rc-clip p{font-size:.87rem;color:var(--gray);margin:0 0 10px;line-height:1.5}
-.rc-clip-title{font-size:.93rem;font-weight:700;color:var(--offblack);margin:0 0 6px}
-.rc-webinar-link{display:inline-flex;align-items:center;gap:6px;font-size:.83rem;font-weight:700;color:var(--orange);text-decoration:none}
-.rc-webinar-link:hover{text-decoration:underline}
-.rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
-.rc-btn-prev,.rc-btn-next,.rc-btn-disabled,.rc-link-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.87rem;text-decoration:none;border:1px solid var(--lightgray)}
-.rc-btn-prev{background:#fff;color:var(--darkgray)}
-.rc-btn-prev:hover{background:var(--brightgray);text-decoration:none}
-.rc-btn-next{background:var(--orange);color:#fff;border-color:var(--orange)}
-.rc-btn-next:hover{opacity:.92;text-decoration:none}
-.rc-link-btn{background:var(--orange);color:#fff;border-color:var(--orange);margin:0 8px 8px 0}
-.rc-link-btn:hover{opacity:.9;text-decoration:none}
-.rc-link-sec{background:var(--offwhite);color:var(--darkgray);border:1px solid var(--lightgray)}
-.rc-link-sec:hover{background:var(--brightgray);text-decoration:none}
-.rc-resources{margin-top:32px}
-.rc-resources h3{font-size:.84rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);margin:0 0 12px}
-@media(max-width:640px){.rc-hero{padding:30px 16px 26px}.rc-hero h1{font-size:1.65rem}.rc-churn-compare{grid-template-columns:1fr}.rc-hero-stats{gap:14px}.rc-sec-header{flex-direction:column}.rc-sec-nav{flex-direction:column;align-items:stretch}}
+/* HOST-THEME BACKGROUND OVERRIDE */
+body { background: #ffffff !important; }
+
+/* GLOBAL CSS IMMUNITY BLOCK */
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+/* NAVIGATE MASTER ARMOR */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:    #FFD706;
+  --orange:    #FF8200;
+  --offblack:  #0D0D0B;
+  --darkgray:  #32312D;
+  --gray:      #807D73;
+  --lightgray: #CCC9B8;
+  --brightgray:#F1EFE3;
+  --offwhite:  #FFFDF2;
+  color: #32312D !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* FA ICON HELPERS */
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
+
+/* ANNOUNCEMENT BAR */
+.rc-announce-bar {
+  display: none; background: #FFD706; color: #0D0D0B;
+  align-items: center; justify-content: space-between;
+  padding: 10px 20px; font-size: .88rem; font-weight: 600;
+  border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4;
+}
+.rc-announce-bar.rc-active { display: flex; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-announce-link { color: #0D0D0B !important; font-weight: 800; white-space: nowrap; padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px; transition: background 0.2s; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+
+/* TOP NAV / BACK LINK */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* HERO */
+.rc-hero {
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: #0D0D0B; background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
+}
+.rc-lp-pillar-tag {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(204,201,184,0.20); border: 1px solid rgba(204,201,184,0.45);
+  color: #CCC9B8; font-size: .75rem; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
+}
+.rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
+.rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+
+/* NAV — non-sticky + open (Course page) */
+details.rc-sticky-nav-wrap {
+  position: relative; z-index: 1;
+  background-color: #F1EFE3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 24px 0 48px; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+}
+details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
+details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
+details.rc-sticky-nav-wrap > summary::marker { display: none; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0D0D0B; }
+.rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link { color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px; text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+
+/* CONTENT SECTIONS */
+.rc-lp-section { margin-bottom: 48px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
+
+/* CHURN TYPE CARDS (2-col with colored accents) */
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-feature-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.rc-feature-card-vol { border-left: 4px solid #dc2626; }
+.rc-feature-card-inv { border-left: 4px solid #FF8200; }
+.rc-feature-icon { font-size: 1.4rem; line-height: 1; }
+.rc-feature-icon-vol { color: #dc2626; }
+.rc-feature-icon-inv { color: #FF8200; }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; }
+.rc-fix-label { font-size: .78rem; font-weight: 800; color: #32312D; margin-top: 4px; }
+@media(max-width:768px){ .rc-card-grid { grid-template-columns: 1fr; } }
+
+/* METRIC CARDS */
+.rc-metric-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 14px; padding: 22px 24px; margin-bottom: 16px; }
+.rc-metric-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.rc-metric-icon { width: 40px; height: 40px; border-radius: 10px; background: #0D0D0B; color: #FF8200; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.rc-metric-card h3 { font-size: 1rem; font-weight: 800; margin: 0; color: #0D0D0B; }
+.rc-metric-card p { font-size: .9rem; color: #807D73; margin: 0 0 12px; line-height: 1.6; }
+.rc-formula { background: #F1EFE3; border-radius: 8px; padding: 10px 14px; font-size: .83rem; font-family: monospace !important; color: #32312D; margin-bottom: 12px; }
+.rc-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.rc-pill { padding: 4px 12px; border-radius: 20px; font-size: .75rem; font-weight: 700; background: #FFFDF2; border: 1px solid #CCC9B8; color: #32312D; }
+.rc-pill-down { background: rgba(220,38,38,0.10); color: #dc2626; border-color: #fca5a5; }
+
+/* VIDEO CARD */
+.rc-video-card { border: 1px solid #CCC9B8; border-radius: 14px; overflow: hidden; margin: 0 0 40px; }
+.rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
+.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; margin: 0; }
+.rc-video-header span { font-size: .78rem; color: #CCC9B8; margin-left: auto; }
+.rc-video-embed { position: relative; overflow: hidden; aspect-ratio: 16/9; background: #0D0D0B; }
+.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-video-caption { padding: 12px 22px; font-size: .83rem; color: #807D73; background: #F1EFE3; border-top: 1px solid #CCC9B8; line-height: 1.5; }
+
+/* WEBINAR CLIP CARD */
+.rc-clip-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 14px; padding: 22px 24px; margin: 0 0 32px; }
+.rc-clip-badge { display: inline-flex; align-items: center; gap: 6px; background: #0D0D0B; color: #FF8200; border-radius: 6px; padding: 4px 10px; font-size: .73rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 12px; }
+.rc-clip-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0 0 8px; }
+.rc-clip-card p { font-size: .9rem; color: #32312D; line-height: 1.6; margin: 0 0 14px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-clip-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-clip-link { color: #FF8200 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-clip-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-clip-link:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+
+/* CALLOUT */
+.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-body { flex: 1; }
+.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
+.rc-callout-tip { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
+
+/* NUMBERED STEPS (Phase 1 connection) */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 0 0 32px; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F1EFE3; }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FF8200; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: #807D73; line-height: 1.6; margin: 0; }
+
+/* PATH NAV BUTTONS */
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #CCC9B8; letter-spacing: .5px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-path { background: #FF8200; color: #ffffff !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FF8200 !important; border-bottom: 2px solid #FF8200 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #FF8200 !important; border: 2px solid #FF8200 !important; border-bottom: 2px solid #FF8200 !important; }
+
+/* RESOURCES */
+.rc-resources { background: #F1EFE3; border-left: 4px solid #CCC9B8; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-resource-link { color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem; transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #CCC9B8 !important; }
+
+/* FOOTER NAV */
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
+.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-footer-link { color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem; transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .rc-content-wrap { padding: 0 20px; }
+  .rc-top-nav { padding: 16px 20px; }
+  .rc-hero { padding: 36px 20px 36px; }
+  .rc-lp-hero-title h1 { font-size: 1.8rem; }
+  .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
+  .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rc-card-grid { grid-template-columns: 1fr; }
+}
 </style>
 
 <div class="rc-guide">
 
-  <div class="rc-hero">
-    <div class="rc-badge">📊 Navigate · Launchpad Phase 2</div>
-    <h1>Voluntary &amp; Involuntary Churn</h1>
-    <p>Not all churn is the same — and knowing the difference is what separates reactive businesses from proactive ones. These metrics tell you why subscribers are leaving and what you can do about it.</p>
-    <div class="rc-hero-stats">
-      <div><div class="rc-num">Step 3</div><div class="rc-lbl">Phase 2</div></div>
-      <div><div class="rc-num">2</div><div class="rc-lbl">Types of Churn</div></div>
-      <div><div class="rc-num">↓</div><div class="rc-lbl">Both Should Trend Down</div></div>
-    </div>
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch" class="rc-back-link">← Back to Launch</a>
   </div>
 
-  <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two"><span class="rc-snum">🏠</span>Phase 2 Overview</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard"><span class="rc-snum">1</span>Benchmarks &amp; Reporting</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics"><span class="rc-snum">2</span>Acquisition &amp; Decline</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-active"><span class="rc-snum">3</span>Churn Metrics</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics"><span class="rc-snum">4</span>Revenue &amp; Recovery</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review"><span class="rc-snum">✓</span>Full Course Review</a>
-  </nav>
+  <div class="rc-content-wrap">
 
-  <div class="rc-sec">
-    <div class="rc-sec-header">
-      <div class="rc-sec-icon">📉</div>
-      <div>
-        <h2>Understanding Why Subscribers Leave</h2>
-        <p>Total churn tells you the size of your retention problem. Voluntary vs. Involuntary churn tells you the cause — and each requires a completely different solution. Treating them the same means solving for the wrong problem.</p>
+    <!-- Announcement bar (hidden — add rc-active to show) -->
+    <div class="rc-announce-bar">
+      <div class="rc-announce-inner">
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>Upcoming:</strong> Join our CSMs for a live Q&amp;A on your Launchpad metrics.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register now →</a>
       </div>
     </div>
 
-    <div class="rc-churn-compare">
-      <div class="rc-churn-type vol">
-        <h4>👋 Voluntary Churn</h4>
-        <p>Subscribers who actively chose to cancel. This reflects satisfaction, perceived value, and engagement with your product.</p>
-        <p class="rc-fix">Fix with: Product improvements, better onboarding, pause options, cancellation save flows, loyalty offers.</p>
+    <!-- Hero -->
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag">
+        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 2
       </div>
-      <div class="rc-churn-type inv">
-        <h4>💳 Involuntary Churn</h4>
-        <p>Subscribers lost due to payment failures — expired cards, insufficient funds, or bank declines. These subscribers didn't want to leave.</p>
-        <p class="rc-fix">Fix with: Account Updater, Dunning optimization, Intelligent Retry, clearer payment failure emails.</p>
+      <div class="rc-lp-hero-title"><h1>Voluntary &amp; involuntary churn</h1></div>
+      <p>Not all churn is the same — and knowing the difference is what separates reactive businesses from proactive ones. These metrics tell you why subscribers are leaving and what you can do about it.</p>
+    </div>
+
+    <!-- Nav (non-sticky + open — Course page 3 of 5) -->
+    <details class="rc-sticky-nav-wrap" open>
+      <summary>
+        <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
+      </summary>
+      <div class="rc-nav-drawer"><div class="rc-nav-drawer-inner"><div class="rc-nav-links">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+          <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-sticky-link">Overview</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-sticky-link"><span class="rc-step-badge">1</span> Benchmarks &amp; reporting</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-sticky-link"><span class="rc-step-badge">2</span> Acquisition &amp; decline</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-sticky-link rc-sticky-link-active">
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Churn metrics
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-sticky-link"><span class="rc-step-badge">4</span> Revenue &amp; recovery</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-sticky-link">
+          <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
+        </a>
+      </div></div></div>
+    </details>
+
+    <!-- Section: Overview -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-arrow-trend-down rc-fa-section"></i> Understanding why subscribers leave</h2>
+      <p>Total churn tells you the size of your retention problem. Voluntary vs. involuntary churn tells you the cause — and each requires a completely different solution. Treating them the same means solving for the wrong problem.</p>
+
+      <div class="rc-card-grid">
+        <div class="rc-feature-card rc-feature-card-vol">
+          <div class="rc-feature-icon rc-feature-icon-vol"><i class="fa-solid fa-right-from-bracket"></i></div>
+          <h4>Voluntary churn</h4>
+          <p>Subscribers who actively chose to cancel. This reflects satisfaction, perceived value, and engagement with your product.</p>
+          <p class="rc-fix-label">Fix with: product improvements, better onboarding, pause options, cancellation save flows, loyalty offers.</p>
+        </div>
+        <div class="rc-feature-card rc-feature-card-inv">
+          <div class="rc-feature-icon rc-feature-icon-inv"><i class="fa-solid fa-credit-card"></i></div>
+          <h4>Involuntary churn</h4>
+          <p>Subscribers lost due to payment failures — expired cards, insufficient funds, or bank declines. These subscribers didn't want to leave.</p>
+          <p class="rc-fix-label">Fix with: Account Updater, dunning optimization, Intelligent Retry, clearer payment failure emails.</p>
+        </div>
       </div>
     </div>
 
-    <div class="rc-card">
-      <p class="rc-subhead">▶ Trail Guide: Voluntary &amp; Involuntary Churn Rate</p>
-      <div class="rc-video-wrap">
-        <iframe src="https://share.synthesia.io/embeds/videos/94ebc34a-579b-4129-9a0f-ee926d42a34a" loading="lazy" title="Navigate Launchpad — Churn Metrics" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>
+    <!-- Section: Trail guide video -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Trail guide: voluntary &amp; involuntary churn rate</h2>
+      <div class="rc-video-card">
+        <div class="rc-video-header">
+          <h4>Churn metrics walkthrough</h4>
+          <span>~5 min</span>
+        </div>
+        <div class="rc-video-embed">
+          <iframe src="https://share.synthesia.io/embeds/videos/94ebc34a-579b-4129-9a0f-ee926d42a34a" loading="lazy" title="Navigate Launchpad — Churn Metrics" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
+        </div>
+        <div class="rc-video-caption">How to find churn metrics in the Benchmarks Dashboard, interpret the voluntary vs. involuntary split, and decide what actions to take.</div>
       </div>
-      <p class="rc-video-cap">A walkthrough of the Churn benchmarks — how to find them, how to interpret the voluntary vs. involuntary split, and what actions to take based on what you see.</p>
     </div>
 
-    <div class="rc-metric">
-      <div class="rc-metric-head">
-        <div class="rc-metric-icon">👋</div>
-        <h3>Voluntary Churn Rate</h3>
-      </div>
+    <!-- Section: Voluntary churn rate -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-right-from-bracket rc-fa-section"></i> Voluntary churn rate</h2>
       <p>The percentage of subscribers who actively cancel each month. High voluntary churn signals a product-value mismatch — subscribers aren't finding enough reason to stay.</p>
-      <div class="rc-formula">Subscribers who canceled ÷ Active subscribers (start of period) = Voluntary Churn Rate %</div>
-      <div class="rc-pills">
-        <span class="rc-pill down">↓ Lower is better</span>
-        <span class="rc-pill">Check monthly</span>
-        <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
+
+      <div class="rc-metric-card">
+        <div class="rc-metric-header">
+          <div class="rc-metric-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+          <h3>How it's calculated</h3>
+        </div>
+        <div class="rc-formula">Subscribers who canceled ÷ Active subscribers (start of period) = Voluntary churn rate %</div>
+        <div class="rc-pills">
+          <span class="rc-pill rc-pill-down">Lower is better</span>
+          <span class="rc-pill">Check monthly</span>
+          <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
+        </div>
       </div>
     </div>
 
-    <div class="rc-metric">
-      <div class="rc-metric-head">
-        <div class="rc-metric-icon">💳</div>
-        <h3>Involuntary Churn Rate</h3>
+    <!-- Section: Involuntary churn rate -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-credit-card rc-fa-section"></i> Involuntary churn rate</h2>
+      <p>The percentage of subscribers lost to dunning expiration. This is directly influenced by Account Updater and dunning configuration — if you enabled both in Phase 1, you should expect to see this metric improve over the coming months.</p>
+
+      <div class="rc-metric-card">
+        <div class="rc-metric-header">
+          <div class="rc-metric-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h3>How it's calculated</h3>
+        </div>
+        <div class="rc-formula">Subscribers lost to payment failures ÷ Active subscribers (start of period) = Involuntary churn rate %</div>
+        <div class="rc-pills">
+          <span class="rc-pill rc-pill-down">Lower is better</span>
+          <span class="rc-pill">Check monthly</span>
+          <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
+        </div>
       </div>
-      <p>The percentage of subscribers lost to dunning expiration. This is directly influenced by Account Updater and dunning configuration — if you enabled both in Phase 1, you should expect to see this metric improve.</p>
-      <div class="rc-formula">Subscribers lost to payment failures ÷ Active subscribers (start of period) = Involuntary Churn Rate %</div>
-      <div class="rc-pills">
-        <span class="rc-pill down">↓ Lower is better</span>
-        <span class="rc-pill">Check monthly</span>
-        <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
+
+      <div class="rc-clip-card">
+        <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Where in the webinar?</div>
+        <h4>Deep dive: monitoring the impact of your retention strategy</h4>
+        <p>Fast-forward to the Churn Benchmarking section. CSM Dan Shipley walks through the three churn views — combined, voluntary, and involuntary — to show how to diagnose business health, including a real-world case study on how Account Updater directly lowers involuntary loss.</p>
+        <a href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch "Stack up against the competition" on demand →</a>
       </div>
     </div>
 
-    <div class="rc-clip">
-      <div class="rc-clip-label">🎬 Where in the Webinar?</div>
-      <p class="rc-clip-title">Deep Dive: Monitoring the Impact of Your Retention Strategy</p>
-      <p>Fast-forward to the <strong>Churn Benchmarking</strong> section of this session. CSM Dan Shipley provides a walkthrough on using the three specific churn views (combined, voluntary, and involuntary) to diagnose business health and shares a real-world case study on how Account Updater directly lowers involuntary loss.</p>
-      <a class="rc-webinar-link" href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer">▶ Watch "Stack Up Against the Competition" On-Demand →</a>
+    <!-- Section: Separate diagnosis from treatment -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-magnifying-glass rc-fa-section"></i> Separate your diagnosis from your treatment</h2>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>Always look at the split first</strong>
+          <p>If total churn is high but you don't know the voluntary/involuntary breakdown, you might invest heavily in product improvements when the real problem is simply that Account Updater isn't enabled. The split tells you where to focus.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="rc-tip">
-      <strong>💡 Separate your diagnosis from your treatment:</strong> If total churn is high but you don't know the voluntary/involuntary split, you might invest heavily in product improvements when the real problem is simply that Account Updater isn't enabled. Always look at the split first.
+    <!-- Section: Connecting churn to Phase 1 -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-link rc-fa-section"></i> Connecting churn to your Phase 1 work</h2>
+      <p>The optimizations you completed in Phase 1 directly influence your involuntary churn rate. Here's how to trace the connection.</p>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num"><i class="fa-solid fa-rotate" style="font-size:.8rem;"></i></div>
+          <div class="rc-step-content">
+            <h4>Account Updater</h4>
+            <p>Refreshes expired or replaced cards before renewals attempt, preventing failures that would otherwise register as involuntary churn.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num"><i class="fa-solid fa-envelope" style="font-size:.8rem;"></i></div>
+          <div class="rc-step-content">
+            <h4>Dunning optimization</h4>
+            <p>Recovers failed invoices through retry logic and recovery emails before they result in subscriber loss.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num"><i class="fa-solid fa-code-branch" style="font-size:.8rem;"></i></div>
+          <div class="rc-step-content">
+            <h4>Gateway failover</h4>
+            <p>Prevents outage-driven payment failures that would otherwise register as involuntary churn — routing transactions to a backup gateway automatically.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="rc-card">
-      <p class="rc-subhead">🔗 Connecting Churn to Phase 1 Work</p>
-      <p style="font-size:.88rem;color:var(--gray);line-height:1.7;margin:0 0 10px">The Phase 1 optimizations you completed directly influence your involuntary churn rate. Here's how to trace the connection:</p>
-      <p style="font-size:.87rem;line-height:1.6;color:var(--darkgray);margin:0 0 6px"><strong>Account Updater</strong> → Reduces involuntary churn by refreshing expired cards before renewals fail</p>
-      <p style="font-size:.87rem;line-height:1.6;color:var(--darkgray);margin:0 0 6px"><strong>Dunning Optimization</strong> → Recovers failed invoices before they result in subscriber loss</p>
-      <p style="font-size:.87rem;line-height:1.6;color:var(--darkgray);margin:0"><strong>Gateway Failover</strong> → Prevents outage-driven payment failures that would otherwise register as involuntary churn</p>
+    <!-- Path navigation -->
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-btn-prev">← Acquisition &amp; decline</a>
+      <span class="rc-lp-nav-indicator">3 of 5</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-btn-path">Next: Revenue &amp; recovery →</a>
     </div>
 
-    <div class="rc-sec-nav">
-      <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics">← Acquisition &amp; Decline</a>
-      <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics">Step 4: Revenue &amp; Recovery →</a>
-    </div>
-
+    <!-- Resources -->
     <div class="rc-resources">
-      <h3>Additional Resources</h3>
-      <a class="rc-link-btn" href="https://docs.recurly.com/docs/subscriber-churn-benchmarks" target="_blank" rel="noopener noreferrer">📖 Churn Benchmarks Guide</a>
-      <a class="rc-link-btn rc-link-sec" href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer">🎧 Webinars On-Demand</a>
-      <a class="rc-link-btn rc-link-sec" href="mailto:support@recurly.com">✉ Contact Customer Support</a>
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/docs/subscriber-churn-benchmarks" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: churn benchmarks guide</a>
+        <a href="https://go.recurly.com/Recurly-Navigate-Metrics-Cheatsheet.html" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Launchpad Metrics Cheatsheet</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Support</a>
+      </div>
     </div>
-  </div>
 
-</div>
+    <!-- Footer nav — Course pattern -->
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Launchpad Phase 2</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-benchmarks-dashboard" class="rc-footer-link">1. Benchmarks &amp; reporting</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-acquisition-metrics" class="rc-footer-link">2. Acquisition &amp; decline</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-churn-metrics" class="rc-footer-link">3. Churn metrics</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-retention-metrics" class="rc-footer-link">4. Revenue &amp; recovery</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two-review" class="rc-footer-link">5. Review &amp; resources</a>
+        </div>
+
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /rc-content-wrap -->
+</div><!-- /rc-guide -->
 `}</HTMLBlock>
 
 <br />
