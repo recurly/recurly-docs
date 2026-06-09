@@ -179,20 +179,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Configuring email templates</h1></div>
       <p>Step-by-step: how to apply your branding, add personalization, and get your templates ready to send.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">5 steps</div>
-          <div class="rc-hero-stat-label">To a branded template</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Day 0</div>
-          <div class="rc-hero-stat-label">Send first email immediately</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">4–5 days</div>
-          <div class="rc-hero-stat-label">Between each email on monthly</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
