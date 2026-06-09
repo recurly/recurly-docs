@@ -340,7 +340,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-two" class="rc-path-card">
           <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Launchpad phase two: Mastering metrics</h3>
