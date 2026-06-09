@@ -1,5 +1,5 @@
 ---
-title: 'Account Hierarchy: Best practices & strategy'
+title: 'Account Hierarchy: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
