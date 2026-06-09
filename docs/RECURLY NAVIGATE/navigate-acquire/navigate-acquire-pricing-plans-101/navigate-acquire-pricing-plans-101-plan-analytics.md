@@ -1,5 +1,5 @@
 ---
-title: 'Analytics: Overview'
+title: 'Plan Analytics: Overview'
 deprecated: false
 hidden: true
 metadata:
