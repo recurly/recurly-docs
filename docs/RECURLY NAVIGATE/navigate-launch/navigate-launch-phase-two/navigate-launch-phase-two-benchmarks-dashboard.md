@@ -296,6 +296,28 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div></div></div>
     </details>
 
+ <!-- Section: Trail guide video -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Trail guide: exploring your Benchmarks Dashboard</h2>
+      <div class="rc-video-card">
+        <div class="rc-video-header">
+          <h4>Benchmarks Dashboard walkthrough</h4>
+          <span>~5 min</span>
+        </div>
+        <div class="rc-video-embed">
+          <iframe src="https://share.synthesia.io/embeds/videos/5079f299-d1fa-47f9-aaf2-9cc14a556c67" loading="lazy" title="Navigate Launchpad — Benchmarks Dashboard" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
+        </div>
+        <div class="rc-video-caption">A guided tour of the Benchmarks Dashboard — how to read your KPIs, apply filters, and compare performance against industry peers.</div>
+      </div>
+
+      <div class="rc-clip-card">
+        <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Webinar on demand</div>
+        <h4>Stack up against the competition: mastering benchmarks</h4>
+        <p>Strategic CSM Dan Shipley defines the 9 core benchmarks, shows how to interpret industry quartiles, and shares high-impact strategies — including prepaid card blocking and gateway failover — to improve your performance against peers.</p>
+        <a href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch on demand →</a>
+      </div>
+    </div>
+
     <!-- Section: Recurly's 4 reporting layers -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-layer-group rc-fa-section"></i> Recurly's 4 reporting layers</h2>
@@ -329,27 +351,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Section: Trail guide video -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-circle-play rc-fa-section"></i> Trail guide: exploring your Benchmarks Dashboard</h2>
-      <div class="rc-video-card">
-        <div class="rc-video-header">
-          <h4>Benchmarks Dashboard walkthrough</h4>
-          <span>~5 min</span>
-        </div>
-        <div class="rc-video-embed">
-          <iframe src="https://share.synthesia.io/embeds/videos/5079f299-d1fa-47f9-aaf2-9cc14a556c67" loading="lazy" title="Navigate Launchpad — Benchmarks Dashboard" allow="encrypted-media; fullscreen; microphone; screen-wake-lock;" allowfullscreen></iframe>
-        </div>
-        <div class="rc-video-caption">A guided tour of the Benchmarks Dashboard — how to read your KPIs, apply filters, and compare performance against industry peers.</div>
-      </div>
-
-      <div class="rc-clip-card">
-        <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Webinar on demand</div>
-        <h4>Stack up against the competition: mastering benchmarks</h4>
-        <p>Strategic CSM Dan Shipley defines the 9 core benchmarks, shows how to interpret industry quartiles, and shares high-impact strategies — including prepaid card blocking and gateway failover — to improve your performance against peers.</p>
-        <a href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch on demand →</a>
-      </div>
-    </div>
+   
 
     <!-- Section: Step-by-step -->
     <div class="rc-lp-section">
@@ -399,47 +401,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <strong>Benchmark context matters</strong>
           <p>Always evaluate your KPIs against your industry vertical for the most accurate health check. A sign-up decline rate that looks high in isolation may be typical for your pricing model.</p>
         </div>
-      </div>
-    </div>
-
-    <!-- Section: Checklist -->
-    <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-list-check rc-fa-section"></i> Benchmarks &amp; reporting checklist</h2>
-      <div class="rc-checklist">
-        <div class="rc-checklist-header">
-          <h4>Complete before moving to acquisition metrics</h4>
-        </div>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text"><strong>Located Benchmarks in Analytics → Dashboards → Benchmarks</strong></div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text"><strong>Selected your industry vertical in the dashboard filter</strong></div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text"><strong>Reviewed all 9 core KPI cards for your current performance</strong></div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text"><strong>Applied a date range filter to compare at least two time periods</strong></div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text"><strong>Tried the Recurly AI Assistant with at least one question</strong></div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text"><strong>Downloaded the Metrics Cheatsheet for definition reference</strong></div>
-        </label>
-        <div class="rc-checklist-footer">Tap each item to mark it complete</div>
       </div>
     </div>
 
