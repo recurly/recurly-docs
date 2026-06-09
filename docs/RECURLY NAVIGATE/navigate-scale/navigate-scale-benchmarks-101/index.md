@@ -83,7 +83,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
 }
 .rc-brand-header { display: flex; justify-content: center; margin-bottom: 0; }
-.rc-logo-image { height: 28px; display: block; }
 .rc-pillar-hero-icon { width: 64px; height: 64px; object-fit: contain; display: block; margin: 44px auto 20px; }
 .rc-hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0 0 24px; }
 .rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
