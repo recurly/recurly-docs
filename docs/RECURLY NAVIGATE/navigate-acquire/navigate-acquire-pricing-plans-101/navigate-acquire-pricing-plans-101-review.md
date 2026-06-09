@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Packaging: Review & resources'
+title: 'Pricing & Plans 101: Review & resources'
 deprecated: false
 hidden: true
 metadata:
