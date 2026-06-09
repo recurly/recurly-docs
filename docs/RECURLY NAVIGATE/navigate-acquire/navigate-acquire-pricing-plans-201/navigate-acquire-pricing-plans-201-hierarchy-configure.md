@@ -215,15 +215,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire"> Acquire · P&amp;P 201
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 201
       </div>
       <div class="rc-lp-hero-title"><h1>Account Hierarchy — How to configure</h1></div>
       <p>A step-by-step walkthrough of creating parent and child accounts, setting billing responsibility, enabling Invoice Rollup, and verifying your hierarchy before going live with an enterprise customer.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">UI or API</div><div class="rc-hero-stat-label">hierarchy can be built entirely in the admin console — no API integration required to get started</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Contact support</div><div class="rc-hero-stat-label">Invoice Rollup requires activation by the Recurly support team before it can be used</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Reversible</div><div class="rc-hero-stat-label">parent-child relationships can be changed or removed at any time without affecting existing subscriptions</div></div>
-      </div>
+      
     </div>
 
     <!-- Navigation Menu — page 2 active -->
