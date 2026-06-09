@@ -208,7 +208,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
       </div>
-      <div class="rc-lp-hero-title"><h1>Plan price increase — Use cases</h1></div>
+      <div class="rc-lp-hero-title"><h1>Use cases</h1></div>
       <p>The business case, common triggers, how much to raise, and how to frame it for subscribers.</p>
     </div>
 
@@ -223,9 +223,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link">Overview</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Is a price increase the right move?
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Use cases
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> What to consider before you execute</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> What to consider </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link"><span class="rc-step-badge">3</span> Communicating the change</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your impact</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
