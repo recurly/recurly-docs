@@ -314,14 +314,14 @@ x-tagGroups:
       - account_acquisition
       - billing_info
       - billing_infos
+      - coupon_redemption
       - subscription
       - subscription_change
-      - shipping_address
-      - purchase
       - usage
-      - automated_exports
+      - shipping_address
   - name: Invoices and Payments
     tags:
+      - purchase
       - invoice
       - line_item
       - credit_payment
@@ -333,7 +333,6 @@ x-tagGroups:
       - add-on
       - measured_unit
       - coupon
-      - coupon_redemption
       - unique_coupon_code
   - name: Configuration
     tags:
@@ -341,6 +340,7 @@ x-tagGroups:
       - custom_field_definition
       - shipping_method
       - dunning_campaigns
+      - automated_exports
 tags:
   - name: site
     x-displayName: Site
@@ -21127,6 +21127,13 @@ components:
           description: >-
             Null unless subscription is paused or will pause at the end of the
             current billing period.
+        resume_at:
+          type: string
+          format: date-time
+          title: Resume at
+          description: >-
+            The date the subscription billing resumes following a pause. Null
+            unless the subscription is paused or scheduled to be paused.
         currency:
           type: string
           title: Currency
