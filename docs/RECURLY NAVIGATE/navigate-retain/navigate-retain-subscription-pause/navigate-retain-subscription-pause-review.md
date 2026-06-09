@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: 'Pause subscriptions: Review & resources'
 deprecated: false
 hidden: true
 metadata:
