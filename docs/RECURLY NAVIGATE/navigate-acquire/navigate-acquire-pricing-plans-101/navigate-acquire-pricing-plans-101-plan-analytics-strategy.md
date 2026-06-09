@@ -217,11 +217,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Plan analytics — Strategy & best practices</h1></div>
       <p>Having the data is the easy part. Connecting it to the right decisions — which plans to invest in, which pricing changes to test, which trials to redesign — is where analytics creates real business value. This page closes the Pricing &amp; Plans 101 series with the framework for turning your Recurly data into a continuous improvement cycle.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">ARPU</div><div class="rc-hero-stat-label">the most sensitive indicator that your pricing model changes are working — watch it move after plan changes</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Cohort</div><div class="rc-hero-stat-label">the most reliable way to measure whether a pricing change improved long-term retention, not just conversion</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Plan mix</div><div class="rc-hero-stat-label">the distribution of subscribers across plans — a lagging indicator of whether your value architecture is working</div></div>
-      </div>
+      
     </div>
 
     <!-- Navigation Menu — page 3 active -->
