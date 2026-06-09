@@ -186,20 +186,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Building and assigning campaigns</h1></div>
       <p>How to create a new campaign, configure it correctly, and make sure every plan is pointed at the right one.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">4 steps</div>
-          <div class="rc-hero-stat-label">To a new campaign</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Every plan</div>
-          <div class="rc-hero-stat-label">Must be manually assigned</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Default</div>
-          <div class="rc-hero-stat-label">Catches unassigned plans</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
