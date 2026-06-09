@@ -1,9 +1,9 @@
 ---
 title: Subscriber wallet
 excerpt: >-
-  The "Subscriber Wallet" is an innovative solution designed to enhance the
-  subscription experience for customers by offering them unprecedented
-  flexibility in managing their payments.
+  Give subscribers the flexibility to store multiple payment methods and assign
+  specific billing info to individual subscriptions or purchases — with fallback
+  support to reduce involuntary churn.
 deprecated: false
 hidden: false
 metadata:
@@ -13,170 +13,186 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-There are additional fees to use Wallet. Please reach out to your Account Manager, Account Executive or contact Recurly Support to learn more.
+<div class="rp-page">
+  <div class="rp-overview">Subscriber Wallet lets customers store multiple payment methods on a single account and assign specific billing info to individual subscriptions or purchases. A primary payment method serves as the default for all transactions, with the flexibility to override it per subscription — and a backup payment method available if a charge fails.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Additional fees apply — contact your Account Manager or <a href="mailto:support@recurly.com">Recurly Support</a> to learn more</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#account-hierarchy-support"><span class="rp-toc-num">3</span>Account hierarchy support</a>
+    <a class="rp-toc-pill" href="#feature-compatibility"><span class="rp-toc-num">4</span>Feature compatibility</a>
+    <a class="rp-toc-pill" href="#exports"><span class="rp-toc-num">5</span>Exports</a>
+  </div>
+</div>
 
 # Definition
 
-The "Subscriber Wallet" is an innovative solution designed to enhance the subscription experience for customers by offering them unprecedented flexibility in managing their payments.
+<div class="rp-definition">Subscriber Wallet is a Recurly feature that allows merchants and their subscribers to manage multiple payment methods on an account. Each payment method gets a unique billing info ID that can be assigned to specific subscriptions or one-time purchases. A primary payment method acts as the default for all transactions unless a different billing info ID is specified.</div>
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/488d078d6c1f98273b425a9afed644ea684bc4490ad209fc83ad5f245fd9947f-image.png" />
 
-# Key benefits
+<Image src="https://files.readme.io/488d078d6c1f98273b425a9afed644ea684bc4490ad209fc83ad5f245fd9947f-image.png" align="center" width="75%" border={true} />
 
-* **Payment flexibility:** Customers can choose and switch between different payment methods for their subscriptions. This can be especially useful when one payment method fails or if they simply prefer a different option for certain transactions.
-* **User-centric design:** The primary payment method acts as a default, ensuring seamless transactions even if a user forgets to specify a particular method.
 
 # Key details
 
-The Recurly "Subscriber Wallet" is a feature that allows for enhanced payment flexibility for both merchants and their subscribers. It provides subscribers the ability to manage multiple payment methods and assign specific billing info to different subscriptions or one-time purchases.
+## Setup
 
-## Core functionalities
+Wallet must be included in your Recurly contract. Contact <a href="mailto:support@recurly.com">[support@recurly.com](mailto:support@recurly.com)</a> to enable it.
 
-1. **Multiple Payment Options**: Customers can store multiple payment methods, catering to their dynamic financial situations.
-2. **Adaptive Default Mechanism**: The primary payment method is the default choice unless indicated differently. This guarantees continuous service.
-3. **Customizable Subscriptions**: Specific billing info can be assigned to each subscription, giving customers a tailored experience.
-4. **Fallback Option**: In case a chosen billing method fails, there's a backup in place to ensure continuous service, and offers an additional recovery mechanism to avoid voluntary churn. [Learn more](https://docs.recurly.com/docs/backup-payment-method)
+<ul class="rp-list">
+  <li>For new sites, Credit Invoices and Only Bill What Changed are enabled by default</li>
+  <li>Legacy sites may need to manually activate these feature flags before using Wallet</li>
+  <li>Use the latest API versions to ensure compatibility</li>
+</ul>
 
-## Using the feature
+## Payment methods and subscriptions
 
-To make the best of the wallet feature, merchants need to be aligned with certain prerequisites:
+<ul class="rp-list">
+  <li>The first payment method added to an account automatically becomes the primary payment method</li>
+  <li>An account can store up to 20 billing infos</li>
+  <li>Subscriptions default to the primary billing info when no <code>billing_info_id</code> is set. If the primary payment method changes, those subscriptions switch to the new primary</li>
+  <li>Setting a <code>billing_info_id</code> on a subscription assigns it to a specific, non-primary payment method. That assignment persists even if the primary payment method later changes</li>
+  <li>If a subscription's assigned payment method is deleted, it falls back to the account's primary payment method</li>
+  <li>Deleting all payment methods on an account with active subscriptions may cause subscriptions to expire unless a new payment method is added promptly</li>
+</ul>
 
-* For new merchants, features like "Credit Invoices" and "Only Bill What Changed" are enabled by default. However, legacy sites may need to manually activate these feature flags.
-* Using the latest API versions ensures compatibility.
-* The feature needs to be integrated into the Recurly contract. For setup or queries, merchants can contact the Recurly support team at [support@recurly.com](mailto:support@recurly.com).
+## Invoices
 
-## Management capabilities
+<ul class="rp-list">
+  <li>Invoices generated via API use the billing info provided in the request, a specified <code>billing_info_id</code>, or the account's primary billing info if neither is provided</li>
+  <li>Past-due invoices can have their associated billing info updated via API for collection retries</li>
+  <li>Updating billing info on an account triggers a collection attempt on all unpaid invoices associated with that billing info</li>
+  <li>Unpaid or past-due invoices default to the primary payment method unless a specific payment method is set on the invoice</li>
+</ul>
 
-### Definitions
+## Deleting billing infos
 
-* **Billing Info**: It pertains to the details associated with each payment method, like the card number, address, IP address, etc.
-* **Payment method**: the funding source for making transactions. Such as credit or debit cards, bank account, PayPal.
-  * **Primary Payment Method**: The primary or default payment method for transactions unless specified otherwise.\
-    Endpoints have been designed for:
+<ul class="rp-list">
+  <li>Non-primary billing infos can be deleted freely</li>
+  <li>The sole primary billing info on an account can be deleted</li>
+  <li>When multiple billing infos exist, a new primary must be set before the current primary can be deleted</li>
+</ul>
 
-1. **Creation**: When a new billing info is introduced, it's automatically set as the primary info.
-2. **Modification**: Existing billing info can be updated or a new primary can be designated.
-3. **One-time Purchases & Subscriptions**: Specific billing info can be allocated or modified during these transactions.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Subscriptions or invoices linked to a deleted billing info automatically switch to the primary billing info for future charges or retries, unless a new billing info is specified.</div>
+</div>
 
-### Accounts & subscriptions
+## Collection method behavior
 
-* **Account Creation**: Every new billing info gets a unique ID, facilitating its use in various transactions.
-* **Max Limit**: An account can store up to 20 billing infos.
-* **Subscription Nuances**: By default, subscriptions tap into the primary billing info. But there's flexibility to assign specific billing methods or change them as needed.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Collection method</td><td>Behavior</td></tr>
+  <tr><td>Automatic</td><td>Defaults to the primary billing info unless a specific <code>billing_info_id</code> is set on the subscription or invoice.</td></tr>
+  <tr><td>Manual</td><td>No billing info is required. Switching a subscription from Automatic to Manual removes any previously assigned billing info.</td></tr>
+</table>
 
-### Payment Method and subscriptions
+## Admin UI
 
-* Adding the first payment method to an account automatically makes it the primary payment method.
-* Subscriptions default to the primary payment method when no specific billing\_info\_id is set. If a new primary payment method is added, these subscriptions will switch to it.
-* Setting a specific billing\_info\_id on a subscription allows it to use a non-primary payment method.
-* A subscription can be assigned to a current primary payment method by setting its billing\_info\_id. If the primary payment method changes, the subscription continues using the one initially set as primary.
-* If a subscription's assigned payment method (specific billing\_info\_id) is deleted, the subscription defaults to the account's primary payment method.
-* Deleting all payment methods on an account with active subscriptions may lead to subscription expiration unless a new payment method is added.
+The Recurly Admin UI supports Wallet with a read-only view. Supported payment methods — including Visa, Mastercard, PayPal, and Amazon Pay — are displayed on the account page. Editing non-primary billing info is not available through Hosted Account Management pages, which display the primary billing info only.
 
-### Invoices
+# Account hierarchy support
 
-The billing information is crucial for invoicing:
+Wallet integrates fully with Account Hierarchy, including Invoice Rollup.
 
-* Invoices generated via API use the billing info provided in the request, a specified billing\_info\_id, or default to the account's primary billing info if none is provided.
-* Past due invoices can have their associated billing info updated via API for collection attempts.
-* Unpaid or past due invoices default to the primary payment method unless a specific payment method is set on the invoice.
-* Updating billing info triggers an attempt to collect on all unpaid invoices associated with that billing info.
-
-### Deleting billing infos
-
-* Merchants can delete a customer's non-primary billing infos stored on the account.
-* The sole primary billing info on an account can be deleted.
-* To delete the primary billing info when multiple are present, a new primary must be set first, followed by deletion of the former primary.
-
-> **Note:** Subscriptions or invoices linked to a deleted billing info will switch to the primary billing info for future charges or retries, unless a new billing info is specified.
-
-### Manual collection method
-
-* Subscriptions or invoices set to Automatic Collection Method default to the primary billing info unless otherwise specified.
-* Subscriptions or invoices under Manual Collection Method do not require billing info.
-* Switching a subscription from Automatic to Manual Collection Method removes any assigned billing info.
-
-## Recurly app admin UI
-
-The Recurly admin console supports the wallet feature, currently offering a read-only view. The supported payment methods are displayed neatly, including popular options like Visa, MasterCard, PayPal, and Amazon Pay.
-
-## Exports
-
-Wallet is supported in the Accounts Export and the billing\_info Export:
-
-**Accounts Export** (VERSION 4 - 12/10/20) additions and updates:
-
-* The `tax_location_valid` column, based on the specific billing info in each row.
-* New columns added at the end of the export, before any custom field columns:
-  * `primary_payment_method` column, indicating TRUE or FALSE if the billing info is the primary payment method.
-  * `billing_info_id`, displaying the ID of the billing info.\
-    **billing\_info Export** (VERSION 5 - 12/3/20) additions:
-* A new `primary_payment_method` column, showing TRUE or FALSE based on if the billing info is the primary payment method.
-* `billing_info_id`, displaying the ID of the billing info.
-
-## Hosted pages
-
-* Recurly’s hosted pages will only display the primary billing info for management purposes.
-* Editing non-primary billing info is not currently available via Hosted Account Management pages.
-
-## Payment gateway & account updater support
-
-* Payment routing features compatible with Wallet include:
-  * <a href="https://docs.recurly.com/docs/custom-gateway-routing-configuration" target="_blank">Custom Gateway Routing</a>.
-  * <a href="https://docs.recurly.com/docs/gateway-failover" target="_blank">Gateway Failover</a>.
-  * <a href="https://docs.recurly.com/docs/account-updater" target="_blank">Account Updater</a>.
-
-## Wallet and account hierarchy feature support
-
-Wallet is seamlessly integrated with the Account Hierarchy feature, including Invoice Roll-up.
-
-### Supported use cases
+<Tabs>
+  <Tab title="Child billing self">
 
 **Child billing self**
 
-* Can use the primary payment method for billing.
-* Can use a specific payment method for billing.
-* The backup payment method from the child account will be used if an invoice fails.
+The child account manages its own payment:
+
+- Can use its primary payment method or a specific assigned payment method
+- The child account's backup payment method is used if an invoice fails
+
+  </Tab>
+  <Tab title="Parent billing self">
 
 **Parent billing self**
 
-* Can use the primary payment method for billing.
-* Can use a specific payment method for billing.
-* The backup payment method from the child account will be utilized if an invoice fails.
+The parent account manages its own payment:
+
+- Can use its primary payment method or a specific assigned payment method
+- The backup payment method from the parent account is used if an invoice fails
+
+  </Tab>
+  <Tab title="Child billing parent">
 
 **Child billing parent**
 
-* Can bill using the primary billing info from the parent account.
-* Can bill using specific billing info from the parent account.
-* Backup payment method from the parent account is used if an invoice fails.
-* Aggregate invoices will combine from a single child account when set to use the same billing info as the parent account.
-* Invoice Roll-up will combine invoices from multiple child accounts set to use the same billing info as the parent account.
+The parent account covers the child's charges:
 
-### Important remarks
+- Charges can use the parent's primary billing info or a specific billing info from the parent account
+- The parent account's backup payment method is used if an invoice fails
+- Aggregate invoices combine charges from a child account when set to use the same billing info as the parent
+- Invoice Rollup combines invoices from multiple child accounts set to use the same parent billing info
 
-* When changing the `bill_to` account, all invoices must be paid (as per current functionality).
-* Subscriptions will default to the primary payment method from the new `bill_to` account after a change, until a different payment method is specified.
-* Changing the `bill_to` for an account clears any previously set `billing_info_id` on a subscription. If the `bill_to` changes again, subscriptions will default to the primary billing info of the `bill_to` account until a new `billing_info_id` is set.
-* Uninvoiced charges will be included in the next invoice creation, using the associated payment method.
+  </Tab>
+</Tabs>
 
-## Other Recurly feature support
+### Important behaviors when changing bill-to accounts
 
-* Wallet integrates with the Calendar Billing feature. Subscriptions set to Align or Aggregate onto the same invoice will do so if they use the same payment method.
-* In cases where a subscription upgrade/downgrade request is made, and the site setting requires all invoices to be successfully paid, a collection attempt will be made on each invoice, regardless of the associated payment method.
+<ul class="rp-list">
+  <li>All invoices must be paid before changing the <code>bill_to</code> account</li>
+  <li>After a <code>bill_to</code> change, subscriptions default to the primary payment method of the new <code>bill_to</code> account until a different payment method is specified</li>
+  <li>Changing the <code>bill_to</code> clears any previously set <code>billing_info_id</code> on a subscription. If the <code>bill_to</code> changes again, subscriptions default to the primary billing info of the new account until a new <code>billing_info_id</code> is set</li>
+  <li>Uninvoiced charges are included in the next invoice using the associated payment method at time of invoicing</li>
+</ul>
 
-# Additional notes
+# Feature compatibility
 
-* Wallet is compatible with all payment methods supported by Recurly ([see the list of supported payment methods](https://go.recurly.com/rs/439-LSC-903/images/PaymentOptions_Data-Sheet.pdf)).
-* Refunds are processed back to the original payment method used for the transaction.
-* To change the billing info for the next recurring charge, update the billing info before the next charge is due.
-* For an "immediate change" in subscription, update the billing info before making the change.
-* Recurly's email templates will only include the primary billing info.
-* Third-party integrations like NetSuite, Salesforce, and Zendesk will only display the primary payment method and details, specifically if the primary payment method is a credit card.
-* The ability to list site’s accounts (GET /accounts) will return only the accounts and the primary billing info.
-* Recurly's fraud prevention measures apply at the account level, not at the individual billing info level.
-* Wallet supports 3DS flows in compliance with the PSD2 mandate. Transaction challenges are linked to the specific billing info initially attempted.
-* Wallet is not compatible with certain features, including Auth and Capture, Adyen HPP, and the Verify Billing Info Endpoint.
+## Compatible features
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Feature</td><td>Notes</td></tr>
+  <tr><td><a href="https://docs.recurly.com/docs/backup-payment-method" target="_blank">Backup payment method</a></td><td>Provides an additional recovery mechanism if a primary charge fails.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/docs/custom-gateway-routing-configuration" target="_blank">Custom gateway routing</a></td><td>Fully compatible with Wallet payment routing.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/docs/gateway-failover" target="_blank">Gateway failover</a></td><td>Fully compatible with Wallet payment routing.</td></tr>
+  <tr><td><a href="https://docs.recurly.com/docs/account-updater" target="_blank">Account Updater</a></td><td>Fully compatible with Wallet payment routing.</td></tr>
+  <tr><td>Calendar billing</td><td>Subscriptions set to Align or Aggregate onto the same invoice will do so if they share the same payment method.</td></tr>
+  <tr><td>3DS / PSD2</td><td>Wallet supports 3DS flows. Transaction challenges are linked to the specific billing info initially attempted.</td></tr>
+  <tr><td>All Recurly-supported payment methods</td><td>See the <a href="https://go.recurly.com/rs/439-LSC-903/images/PaymentOptions_Data-Sheet.pdf" target="_blank">supported payment methods list</a>.</td></tr>
+</table>
+
+## Incompatible features
+
+<ul class="rp-list">
+  <li>Auth and Capture</li>
+  <li>Adyen HPP</li>
+  <li>Verify Billing Info Endpoint</li>
+</ul>
+
+## Additional behavior notes
+
+<ul class="rp-list">
+  <li>Refunds are processed to the original payment method used for the transaction</li>
+  <li>To change billing info for the next recurring charge, update the billing info before the charge is due</li>
+  <li>For an immediate subscription change, update billing info before making the change</li>
+  <li>Recurly email templates include only the primary billing info</li>
+  <li>Third-party integrations (NetSuite, Salesforce, Zendesk) display only the primary payment method — and only when it is a credit card</li>
+  <li>The <code>GET /accounts</code> endpoint returns accounts with only the primary billing info</li>
+  <li>Fraud prevention applies at the account level, not at the individual billing info level</li>
+</ul>
+
+# Exports
+
+## Accounts export (v4)
+
+New and updated columns added to the Accounts export:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Column</td><td>Description</td></tr>
+  <tr><td><code>primary_payment_method</code></td><td><code>TRUE</code> or <code>FALSE</code> — indicates whether this billing info is the primary payment method.</td></tr>
+  <tr><td><code>billing_info_id</code></td><td>The ID of the billing info for this row.</td></tr>
+  <tr><td><code>tax_location_valid</code></td><td>Tax location validity based on the specific billing info in each row.</td></tr>
+</table>
+
+## Billing info export (v5)
+
+New columns added to the billing\_info export:
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Column</td><td>Description</td></tr>
+  <tr><td><code>primary_payment_method</code></td><td><code>TRUE</code> or <code>FALSE</code> — indicates whether this billing info is the primary payment method.</td></tr>
+  <tr><td><code>billing_info_id</code></td><td>The ID of the billing info.</td></tr>
+</table>
+
+<br />
