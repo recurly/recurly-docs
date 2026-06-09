@@ -177,20 +177,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Why one campaign isn't enough</h1></div>
       <p>Out of the box, every subscriber gets the same dunning treatment. That means your highest-value annual customers are being recovered with the same window and messaging as a monthly trial subscriber.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">1</div>
-          <div class="rc-hero-stat-label">Default campaign at setup</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">2+</div>
-          <div class="rc-hero-stat-label">Campaigns recommended minimum</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Unlimited</div>
-          <div class="rc-hero-stat-label">Campaigns you can create</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
