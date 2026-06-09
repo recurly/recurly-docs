@@ -265,24 +265,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Packaging 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Add-Ons — Best practices &amp; strategy</h1></div>
       <p>Add-ons are your most powerful lever for increasing ARPU without changing your base price. Here's how to position them, audit what's working, and build a packaging strategy that serves subscribers and your revenue goals.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">ARPU</div>
-          <div class="rc-hero-stat-label">The metric add-ons move most directly</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Attach rate</div>
-          <div class="rc-hero-stat-label">The signal that tells you if positioning is working</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">88%</div>
-          <div class="rc-hero-stat-label">Of consumers say value for money is their top subscription criterion</div>
-        </div>
-      </div>
+     
     </div>
 
     <!-- Navigation Menu — page 3 active, non-sticky, open on load -->
@@ -498,8 +485,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons-strategy" class="rc-footer-link">Add-Ons: Strategy &amp; best practices</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing &amp; Packaging 101 Overview</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing &amp; Plans 101: Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-footer-link">Pricing models</a>
