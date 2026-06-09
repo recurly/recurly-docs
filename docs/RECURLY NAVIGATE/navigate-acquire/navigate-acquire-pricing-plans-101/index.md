@@ -248,7 +248,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">71%</div>
-          <div class="rc-stat-tile-label">Offer Both Monthly &amp; Annual</div>
+          <div class="rc-stat-tile-label">Offer Monthly &amp; Annual</div>
           <div class="rc-stat-tile-context">Across all industries. Software (76%) and Education (80%) lead the way.</div>
         </div>
         <div class="rc-stat-tile">
