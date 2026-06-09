@@ -1,8 +1,9 @@
 ---
 title: Pause subscription
 excerpt: >-
-  Enhance customer retention by leveraging Recurly's Pause Subscription feature.
-  Offer flexibility without canceling the subscription entirely.
+  Temporarily halt a customer subscription for a set number of billing cycles in
+  Recurly — without canceling it — to reduce churn and accommodate changing
+  customer needs.
 deprecated: false
 hidden: false
 metadata:
@@ -12,211 +13,227 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Pause Subscription lets you temporarily halt billing for a set number of cycles without canceling the subscription. The subscription stays active through the end of the current billing period, no mid-cycle adjustments are needed, and the customer returns automatically when the pause ends — or you can resume early at any time.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+    <a class="rp-toc-pill" href="#faqs"><span class="rp-toc-num">3</span>FAQs</a>
+  </div>
+</div>
 
-### Required plan
+### Prerequisites
 
-This feature or setting is available to all customers on any Recurly subscription plan.
+<ul class="rp-list">
+  <li>The subscription must be active — not set to a future date, in trial, a non-converted gift, canceled, or terminated</li>
+  <li>No overdue invoices on the account</li>
+</ul>
+
+### Limitations
+
+<ul class="rp-list">
+  <li>Pauses always take effect at the next billing date — mid-cycle pauses are not supported</li>
+  <li>Usage logging for add-ons is not possible while a subscription is paused</li>
+  <li>Subscribers cannot pause or resume their own subscriptions through Hosted Account Management</li>
+  <li>In regions where SCA is required, resuming a subscription via the Admin UI may cause renewal failures — use the API and require customer re-authentication instead</li>
+  <li>Making an immediate subscription change while a pause is scheduled or active cancels the pause</li>
+  <li>Coupons are not paused alongside the subscription — their duration continues ticking during the pause period</li>
+</ul>
 
 # Definition
 
-The Pause Subscription feature provides merchants with the ability to temporarily halt a subscription, allowing customers to skip certain billing cycles without entirely terminating their subscription.
-
-# Key benefits
-
-* **Reduce churn rates:** By giving customers the option to pause, it prevents outright cancellations and the need to win back lost customers.
-* **Maintain revenue stream:** As the service remains active till the end of the current billing cycle, there's no immediate loss in revenue or the need for prorated refunds.
-* **Flexibility:** Cater to diverse customer needs, whether they are going on a vacation or using a season-specific service.
-* **Ease of management:** Streamlined through both the Admin Console and API.
-* **Improved customer experience:** By providing tailored solutions, enhance customer trust and satisfaction.
+<div class="rp-definition">Pause Subscription is a Recurly feature that temporarily halts a subscription for a specified number of billing cycles. The subscription remains active through the end of the current billing period, no invoices are generated during the pause, and the subscription resumes automatically at the end of the pause period. Pauses can be scheduled, modified, or canceled at any time.</div>
 
 # Key details
 
-Having a Pause Subscription feature is more than just an administrative function; it's a strategic tool in the subscription-based business world. Sometimes, customers may not want to entirely sever ties with a service but might have specific reasons to discontinue temporarily. This can be due to budget constraints, changing frequency of use, traveling, or even when the service is season-based like sports streaming.
+## Pause a subscription
 
-When the pause is initiated, the subscription remains active until the end of the current billing cycle. This respects the payments already made by the subscriber, ensuring they get the value they paid for. From a business standpoint, there’s minimal disruption as no mid-cycle billing adjustments are required.
+Subscriptions can be paused from the Subscription Details page, the Account page, or via the API.
 
-Keep in mind, when resuming paused subscriptions, the EU mandates 3DS / SCA to re-authenticate the consumer prior to resuming the subscription. You can use Recurly's API to re-verify stored billing info and allow consumers to complete these flows.
+<Tabs>
+  <Tab title="Subscription Details">
 
-### Why pause a subscription?
+**From Subscription Details:**
 
-**Retaining customers:** Allowing subscribers to [pause instead of cancel](https://recurly.com/blog/why-pausing-a-subscription-can-be-a-powerful-retention-tactic/) their subscription can deter voluntary churn. When subscribers opt for pausing, they indicate a likelihood to return, thus saving businesses marketing costs associated with winning them back.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Subscription Actions</h4><p>Navigate to the subscription and select Pause Subscription from the Subscription Actions dropdown.</p></div>
+  </div>
+</div>
 
-**Consumer needs:** Various reasons could drive a customer to halt subscription billing, such as:
+<Image src="https://files.readme.io/1732a4e-image.png" align="center" width="75%" border={true} />
 
-* Financial constraints.
-* Infrequent service usage during specific periods.
-* Temporary unavailability, like vacation or travel.
-* Seasonal relevance of a service, as seen with [seasonal services like sports streaming](https://recurly.com/blog/addressing-seasonality-in-your-subscription-business/).
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Configure the pause</h4><p>The Configure Pause Duration window opens. Set the Pause Start Date (defaults to the next billing date) and the Number of Billing Cycles to Skip.</p></div>
+  </div>
+</div>
 
-**Billing and Finance Implications:** Pausing ensures subscriptions remain active until the end of the current billing period. Since most are paid upfront, subscribers can utilize services they've financed. For businesses, this model eliminates complications linked to mid-cycle changes, like prorated refunds or credit issuance for unused service durations.
+<Image src="https://files.readme.io/5b4473e-Screen_Shot_2020-03-16_at_1.44.49_PM.png" align="center" width="75%" border={true} />
 
-### How It works
+<Image src="https://files.readme.io/175d7c5-Screen_Shot_2020-03-16_at_1.45.39_PM.png" align="center" width="75%" border={true} />
 
-**Prerequisites for Pausing:**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Schedule the pause</h4><p>Click Schedule Pause. A confirmation banner appears with the pause details.</p></div>
+  </div>
+</div>
 
-* The subscription should be active.
-* The subscription cannot be set to a future date, in-trial, a non-converted gift, canceled, or terminated.
-* There should be no overdue invoices on the account.
-* The pause is always tied to the next billing date.
-* Usage logging for add-ons isn't possible during the pause.
-* Bill date changes and postponing paused subscriptions have specific conditions to be met.
+<Image src="https://files.readme.io/da2449e-Screen_Shot_2018-07-27_at_2.10.13_PM.png" align="center" width="75%" border={true} />
 
-# How to pause subscriptions
+  </Tab>
+  <Tab title="Account page">
 
-There are 3 ways to pause subscriptions - through the Subscription Details section in the UI, the Account section in the UI or the use of APIs.
+**From the Account page:**
 
-## Pausing from subscription details
+Navigate to the account, locate the subscription, and click **Options → Pause Subscription**.
 
-* Navigate to desired subscription details.
-* Select **Pause Subscription** from the **Subscription Actions** dropdown.
+<Image src="https://files.readme.io/78e6cb7-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" border={true} src="https://files.readme.io/1732a4e-image.png" className="border" />
+  </Tab>
+  <Tab title="API">
 
-* The **Configure Pause Duration** window appears. Here, two fields need attention:
+**Via the API:**
 
-**Pause Start Date**: It's the onset date for the pause, defaulting to the subscription's billing date.
+See the <a href="https://developers.recurly.com/api/latest.html#operation/pause_subscription" target="_blank">pause subscription API documentation</a> for endpoint details and parameters.
 
-![Pause Date Configuration](https://files.readme.io/5b4473e-Screen_Shot_2020-03-16_at_1.44.49_PM.png)
+  </Tab>
+</Tabs>
 
-**Number of Billing Cycles to Skip**: Dictates the duration for the subscription pause.
+## Resume a subscription
 
-![Billing Cycle Configuration](https://files.readme.io/175d7c5-Screen_Shot_2020-03-16_at_1.45.39_PM.png)
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> SCA regions</strong> In regions where SCA is required, resuming via the Admin UI may result in renewal failures. The customer must be involved in the resumption flow, and 3DS re-authentication must be completed before resuming. Use the API and follow the <a href="https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/" target="_blank">3DS stored billing info guide</a> to handle re-authentication.</div>
+</div>
 
-* Post-configuration, selecting **Schedule Pause** finalizes the process. A confirmation banner appears, providing pause details.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to the subscription</h4><p>Open the Subscription Details or the Account page for the customer.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Resume</h4><p>In Subscription Details, select Resume from the Subscription Actions dropdown. From the Account page, find the subscription and select Resume from the Options dropdown.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Billing resumes</h4><p>The subscription moves to active and a new billing cycle begins. An immediate invoice is generated, and if collection is automatic, the payment method is charged. If Calendar Billing is in use, the subscription aligns to the predetermined billing date and any invoice is prorated accordingly.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} src="https://files.readme.io/da2449e-Screen_Shot_2018-07-27_at_2.10.13_PM.png" className="border" />
 
-## Pausing from account
+<Image src="https://files.readme.io/3b26eb5-Screenshot_2018-03-14_19.26.15.png" align="center" width="75%" border={true} />
 
-* Locate the account and desired subscription.
-* Click **Options** → **Pause Subscription**.
 
-<Image align="center" border={true} src="https://files.readme.io/78e6cb7-image.png" className="border" />
+## Modify or cancel a scheduled pause
 
-## Pause from subscription details
+The pause duration can be updated under **Edit Pause** from both the Account page and Subscription Details. A scheduled pause can be canceled from **Subscription Actions** or the **Options** dropdown on the subscription.
 
-* Restarting brings a subscription back to its active state, billing the customer for the new cycle. Paused subscriptions can be resumed from the Subscription Details or Account.
-  * If you are subject to PSD2 / SCA Compliance, you can verify your customer's billing information and re-authenticate 3DS using these steps: [3D secure with stored Billing Information](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/)
-  * Scheduled pauses can be canceled via **Pause** under the subscription's **Options** or **Subscription Actions**.
 
-> 🚧 Current Term Renewal Dates
->
-> While a subscription is paused, the original term renewal date of the subscription will not be updated (in the API this is represented as the current_term_ends_at timestamp). This is due to the fact that the scheduled pause can be canceled, the subscription could be resumed earlier, or the number of pause cycles could be updated. Any of the former events could potentially change the renewal date. Once a subscription is returned to active, the term renewal date will be updated.
->
-> To calculate the new renewal date while a subscription is paused, you will want to take original renewal date and add the length of the pause period.
+<Image src="https://files.readme.io/ce39f10-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" border={true} src="https://files.readme.io/ce39f10-image.png" className="border" />
 
-* The pause duration can be adjusted under **Edit Pause** in both Account and Subscription Details.
+## Term renewal dates while paused
 
-**API Integration:**
+The subscription's term renewal date (`current_term_ends_at` in the API) is not updated while a subscription is paused. This is because the pause can be canceled, the subscription could resume early, or the pause duration could change — any of which would affect the renewal date.
 
-Pausing, restarting, and other related actions can be executed through the API, as detailed in the [API documentation](https://developers.recurly.com/api/latest.html#operation/pause_subscription).
-
-## Resuming a subscription
-
-> 📘 SCA Notice
->
-> Please note: In regions where SCA is required, resuming or reactivating a subscription via the Dashboard may result in renewal failures and therefore is not recommended. Your customer must be involved in the resume/reactivation of a subscription if 3DS Authentication is required, and dashboard updates cannot be used. Please see API integration for more details.
-
-To resume a subscription that is currently paused:
-
-1. **Navigate** to the subscription's **Account** page or **access** the **Subscription Details**.
-2. In the **Subscription Details**, use the **Subscription Action** dropdown menu and select **Resume** to reactivate the subscription.
-   1. **EU Compliance Note**If you are subject to PSD2 / SCA Compliance, you will need to re-authenticate your customer prior to resuming a subscription. Re-authentication must be handled by the consumer directly. You can verify your customer's billing information and re-authenticate 3DS using these steps: [3D secure with stored Billing Information](https://docs.recurly.com/v1.1/docs/using-3d-secure-with-stored-billing-information#/). After a successful billing info verification, feel free to resume the subscription using these steps.
-3. If resuming from the **Account** page, **locate** the individual subscription and select **Resume** from the **Options** dropdown menu.
-4. Upon resuming, the subscription will move from the paused state to an active state, initiating a new billing cycle.
-5. The customer will receive an immediate invoice for the new billing cycle, and the payment method will be charged if the collection method is automatic.
-6. If the [Calendar Billing](doc:calendar-billing) feature is in use, the subscription will align with the predetermined billing date, and any invoice generated will be prorated accordingly.
-
-<Image align="center" border={true} src="https://files.readme.io/3b26eb5-Screenshot_2018-03-14_19.26.15.png" className="border" />
+To calculate the expected renewal date while paused, add the length of the pause period to the original renewal date. Once the subscription returns to active, the renewal date is updated automatically.
 
 ## Closing an account with paused subscriptions
 
-Closing an account that has subscriptions in a paused state will result in the immediate termination of those subscriptions.
+Closing an account that has subscriptions in a paused state immediately terminates those subscriptions.
 
 ## Usage-based add-ons
 
-For usage-based add-ons, billing occurs prior to a subscription entering a paused state. For instance, if usage is recorded for a subscription set to pause on April 2nd, an invoice for any accrued usage-based charges will be issued on that date. It is not possible to log usage while a subscription is paused.
+Usage-based add-on billing runs before the pause begins. If usage is logged before a pause date, an invoice for those charges is issued on the pause date. No usage can be logged while the subscription is paused.
 
-## Considerations and examples
+## Subscriptions changes and pauses
 
-* **Indefinite Pauses:** For longer pauses, a high value (like 1200 for a monthly subscription, translating to 100 years) can be set, but this may [impact churn rate calculations](https://recurly.com/blog/better-way-to-calculate-your-churn-rate/).
-* **Implications of Subscription Changes During a Pause Period:** When a subscription is set to pause or is currently in a paused state, any immediate changes made to the subscription will cancel the pause. This means that if you adjust the subscription details after the pause has been scheduled or while it is active, the pause will no longer be in effect.
+Any immediate subscription change made while a pause is scheduled or active cancels the pause.
 
-**Example scenarios:**
-
-1. Joe, a football streaming subscriber, requests a 4-month pause post season. With his next billing on March 1st, the pause ensures no billing until July 1st.
-2. If Joe's subscription, set for a February 1st pause, gets upgraded on January 20th to include baseball streaming, the scheduled pause is canceled. He will be billed on February 1st for the new plan.  
-   1st pause, gets upgraded on January 20th to include baseball streaming, the scheduled pause is canceled. He will be billed on February 1st for the new plan.
-
-## Billing and invoicing
-
-* **During pause:** No invoices will be generated, and the subscriber won't be charged.
-* **After restart:** Once the subscription restarts, invoicing continues as per the subscription terms. If there were any changes to the subscription plan or add-ons during the pause, they would reflect in the invoice.
+**Example:** Joe's subscription is scheduled to pause on February 1st. On January 20th, his subscription is immediately upgraded to include a new add-on. The scheduled pause is canceled, and he'll be billed on February 1st for the updated plan.
 
 ## Coupons
 
-When a subscription is paused, we will not pause the duration of a coupon applied to the subscription.  
-Coupons can be a great tool to incentivize customers to return to paying for a service. Offering a promotional discount for the customer to upgrade their plan and resume their subscription can be beneficial. Making an immediate subscription change to a new plan and applying the coupon will automatically resume the customer's subscription, returning them to a paying status.
+Coupons are not paused alongside the subscription — their duration continues to run during the pause period.
 
-#### Example 1
+To incentivize a customer to return, offering a discount coupon for a plan upgrade is an effective approach. Making an immediate subscription change to a new plan and applying the coupon simultaneously resumes the subscription and applies the discount.
 
-Joe is subscribed to the Silver Sports Package plan and has a 2-month subscription-level coupon. He decides to pause his subscription for 4 months. After 2 months of the pause, the coupon will expire. When the subscription restarts, the 2-month duration coupon won't apply to the invoice.
+**Example — coupon expires during pause:** Joe has a 2-month subscription-level coupon and pauses for 4 months. After 2 months of the pause, the coupon expires. When the subscription restarts, the coupon no longer applies.
 
-#### Example 2
+**Example — coupon used to resume:** Joe's subscription has been paused for several months. A discount coupon for upgrading to a higher tier is offered to bring him back. He accepts, upgrades using the coupon, and the subscription immediately restarts on the new plan.
 
-Joe, a Silver Sports Package subscriber, has his subscription paused for several months. To incentivize Joe to return to the service, a discount coupon is offered for upgrading to the Platinum Package. Joe accepts, upgrades using the coupon, and his subscription immediately restarts  with the Platinum plan.
+## Billing and invoicing
 
-## Email
+<ul class="rp-list">
+  <li>During pause: no invoices are generated and the subscriber is not charged</li>
+  <li>After resume: invoicing continues per subscription terms, including any plan or add-on changes made during the pause</li>
+</ul>
 
-Subscribers with paused subscriptions may  wish to be notified about the upcoming restart of their subscription. Similarly, those with an upcoming pause at the next renewal may also want a notification. Leveraging the Renewal Reminder email with fields `{{subscription_paused_at}}` and `{{remaining_pause_cycles}}` can display the pause date and remaining paused billing cycles, respectively. Learn more in our **[Email templates](https://docs.recurly.com/docs/email-templates#/)** dedicated page.
+## Email communications
+
+Use the Renewal Reminder email to notify subscribers about an upcoming pause or restart. Two email template parameters support this:
+
+<ul class="rp-list">
+  <li><code>&#123;&#123;subscription_paused_at&#125;&#125;</code> — the date the subscription was paused</li>
+  <li><code>&#123;&#123;remaining_pause_cycles&#125;&#125;</code> — the number of billing cycles remaining in the pause</li>
+</ul>
+
+See the <a href="https://docs.recurly.com/docs/email-templates#/" target="_blank">email templates documentation</a> for setup details.
 
 ## Webhook notifications
 
-Recurly's Pause Subscription feature can send six notification events:
+Six webhook events are available for pause activity:
 
-* Scheduled subscription pause
-* Subscription pause canceled
-* Subscription paused
-* Subscription pause modified
-* Paused subscription renewal
-* Subscription resumed  
-  For each pause notification's specifics, refer to the [Webhooks](https://docs.recurly.com/v1.0/docs/webhooks) documentation.
+<ul class="rp-list">
+  <li>Scheduled subscription pause</li>
+  <li>Subscription pause canceled</li>
+  <li>Subscription paused</li>
+  <li>Subscription pause modified</li>
+  <li>Paused subscription renewal</li>
+  <li>Subscription resumed</li>
+</ul>
 
-## **Exports**
+See the <a href="https://docs.recurly.com/v1.0/docs/webhooks" target="_blank">webhooks documentation</a> for payload details.
 
-Two columns on the Subscriptions Export support this feature:
+## Exports
 
-* `{{_paused_at}}` shows when the subscription was paused.
-* `{{remaining_pause_cycles}}` presents the remaining paused billing cycles.
+Two columns on the Subscriptions export support pause tracking:
 
-## **Analytics**
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Column</td><td>Description</td></tr>
+  <tr><td><code>paused_at</code></td><td>The date the subscription was paused.</td></tr>
+  <tr><td><code>remaining_pause_cycles</code></td><td>The number of billing cycles remaining in the pause period.</td></tr>
+</table>
 
-In Recurly Analytics, the subscriber count encompasses all accounts with at least one active, paused, or canceled subscription, including trials. Paused subscriptions equate to active ones in calculations and aren't seen as churned.  
-Paused subscriptions don't influence MRR while on pause. Given that no invoices are issued during a pause, the subscription contributes zero charges to MRR.
+## Analytics
 
-## **Hosted account management**
-
-Currently, subscribers cannot pause or resume their subscriptions using Hosted Account Management. But a subscription can be manually paused or resumed through the API or Admin Console. In Hosted Account Management, the subscription status will display as "paused" if applicable.
+Paused subscriptions count as active in Recurly Analytics — subscriber counts include accounts with at least one active, paused, or canceled subscription. However, paused subscriptions do not contribute to MRR while on pause, since no invoices are generated during that period.
 
 # FAQs
 
-**Q: What happens when a paused subscription reaches its resumption date?**
+<Accordion title="What happens when a paused subscription reaches its resumption date?">
+The subscription automatically resumes and the subscriber is billed for the next cycle.
+</Accordion>
 
-**A:** The subscription will automatically resume, and the subscriber will be billed for the next cycle.
+<Accordion title="Can a subscription be paused more than once?">
+Yes. Each pause must fully conclude before a new one can be initiated — concurrent pauses aren't supported.
+</Accordion>
 
-**Q: Can a subscription be paused more than once?**
+<Accordion title="Do paused subscriptions affect MRR?">
+No. While a subscription is paused, it doesn't contribute to MRR because no invoices are generated during that period.
+</Accordion>
 
-**A:** Yes, but each pause must conclude before initiating another. Concurrent pauses aren't permitted.
+<Accordion title="What's the difference between pausing and canceling?">
+Pausing temporarily halts billing while preserving the subscriber's relationship with the service. Canceling ends the subscription at the close of the current term, indicating the subscriber doesn't plan to return.
+</Accordion>
 
-**Q: Do paused subscriptions impact Monthly Recurring Revenue (MRR)?**
+<Accordion title="Can I set an indefinite pause?">
+There's no dedicated indefinite pause setting. Some merchants set a very high cycle count (such as 1,200 for a monthly subscription) as a workaround. Note that very long pauses may affect churn rate calculations.
+</Accordion>
 
-**A:** While the subscription remains paused, it won't contribute to MRR because no invoices are generated.
-
-**Q: What's the difference between pausing and canceling a subscription?**
-
-**A:** Pausing temporarily halts billing but retains the subscriber's intent to return. Canceling ends the subscription, indicating the subscriber doesn't plan to continue the service.
-
-Occasionally, customers may want to[ pause their subscription instead of outright canceling](https://recurly.com/blog/why-pausing-a-subscription-can-be-a-powerful-retention-tactic/) their subscription. Having the option to pause instead of cancel is a great way to avoid voluntary churn and reduce marketing dollars to win customers back.
+<br />
