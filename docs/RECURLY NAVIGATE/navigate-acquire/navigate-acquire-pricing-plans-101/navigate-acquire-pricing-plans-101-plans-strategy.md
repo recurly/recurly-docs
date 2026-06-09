@@ -1,5 +1,5 @@
 ---
-title: 'Plans: Best practices & strategy'
+title: 'Plans: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
@@ -213,7 +213,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Plans — Strategy &amp; Best Practices</h1></div>
+      <div class="rc-lp-hero-title"><h1>Plans — Strategy &amp; best practices</h1></div>
       <p>Configuration gets your plan live. Strategy keeps it working. Here's how subscription-forward businesses think about plan design, pricing reviews, and staying competitive in 2026.</p>
     </div>
 
