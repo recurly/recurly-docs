@@ -214,7 +214,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Currency — Strategy &amp; Best Practices</h1></div>
+      <div class="rc-lp-hero-title"><h1>Currency — Strategy &amp; best practices</h1></div>
       <p>Enabling a currency is the first step. Using it strategically — with localised pricing, region-appropriate payment methods, and renewal risk built into your dunning logic — is what turns currency configuration into acquisition growth.</p>
     </div>
 
