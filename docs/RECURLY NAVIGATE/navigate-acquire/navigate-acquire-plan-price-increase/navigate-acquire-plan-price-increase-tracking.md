@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Tracking impact'
+title: 'Plan Price Increase: Tracking your impact'
 deprecated: false
 hidden: true
 metadata:
