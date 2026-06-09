@@ -419,7 +419,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
     </div>
 
     <!-- Continue Your Journey -->
-    <div class="rc-next-steps">
+    <div class="rc-next-steps"style="display: none;">
       <h3>🧭 Continue your journey</h3>
       <div class="rc-next-grid">
 
