@@ -253,7 +253,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain · Subscription pause
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
       <div class="rc-lp-hero-title">
         <h1>Tracking your pause impact</h1>
@@ -353,7 +353,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-warning">
         <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
         <div class="rc-callout-body">
-          <strong>Give your program at least 90 days before optimising</strong>
+          <strong>Give your program at least 90 days before optimizing</strong>
           <p>The average subscriber takes around 80 days to decide whether to return or cancel permanently after pausing. Drawing conclusions from the first 30 days of data will give you a distorted picture — most of your paused subscribers haven't yet reached their decision point. Run the program for a full quarter before making structural changes to eligibility or duration limits.</p>
         </div>
       </div>
