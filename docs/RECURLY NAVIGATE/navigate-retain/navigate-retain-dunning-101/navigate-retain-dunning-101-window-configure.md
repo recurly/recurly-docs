@@ -186,20 +186,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Configuring your window</h1></div>
       <p>Where to find the setting, what to change, and what to check before you save.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">9 steps</div>
-          <div class="rc-hero-stat-label">To a fully configured campaign</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">&lt;30 min</div>
-          <div class="rc-hero-stat-label">To complete setup</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">+11%</div>
-          <div class="rc-hero-stat-label">Recovery from window extension</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
