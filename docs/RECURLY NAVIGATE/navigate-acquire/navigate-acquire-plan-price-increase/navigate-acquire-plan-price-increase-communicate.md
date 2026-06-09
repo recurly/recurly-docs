@@ -225,7 +225,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
       </div>
       <div class="rc-lp-hero-title"><h1>Communicating the change</h1></div>
       <p>What to say, when to say it, and how to use Recurly's notification tools to reach every subscriber at the right moment.</p>
