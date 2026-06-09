@@ -1,9 +1,8 @@
 ---
 title: Account hierarchy
 excerpt: >-
-  Harness the power of structured relationships with Recurly's Account Hierarchy
-  feature. Manage parent-child account relationships, streamline billing
-  processes, and enhance customer experience with ease.
+  Set up and manage parent-child account relationships in Recurly, with flexible
+  billing configuration and full visibility across subscriptions and invoices.
 deprecated: false
 hidden: false
 metadata:
@@ -13,358 +12,381 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">Account Hierarchy lets you model real-world business structures — holding companies, franchises, agencies, enterprise divisions — directly in Recurly. Designate any account as a parent or child, choose who pays the bills, and get consolidated visibility across accounts, subscriptions, and invoices from a single hierarchy overview page.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#billing-configuration"><span class="rp-toc-num">4</span>Billing configuration</a>
+    <a class="rp-toc-pill" href="#modifying-parent-child-relationships"><span class="rp-toc-num">5</span>Modifying relationships</a>
+    <a class="rp-toc-pill" href="#closing-accounts"><span class="rp-toc-num">6</span>Closing accounts</a>
+    <a class="rp-toc-pill" href="#hosted-account-management"><span class="rp-toc-num">7</span>Hosted account management</a>
+    <a class="rp-toc-pill" href="#exports"><span class="rp-toc-num">8</span>Exports</a>
+  </div>
+</div>
 
 # Definition
 
-Account Hierarchy is a feature in Recurly that allows businesses to establish and manage parent-child relationships between accounts. It provides flexibility in billing processes by allowing either the parent or child account to be responsible for charges. This feature is particularly useful for businesses that have B2B customers with multiple divisions, departments, or subsidiaries.
+<div class="rp-definition">Account Hierarchy is a Recurly feature that lets you establish parent-child relationships between accounts. It's designed for B2B merchants whose customers have multiple divisions, departments, or subsidiaries — giving you the flexibility to bill charges to either the child account or a central parent, with consolidated reporting across the entire hierarchy.</div>
 
 # Key benefits
 
-* **Streamlined billing:** Assign billing responsibilities to either the parent or child account, providing flexibility and simplifying the billing process.
-* **Enhanced customer experience:** Enable a more personalized customer experience by tailoring communication and services to individual child accounts.
-* **Efficient management:** Easily manage parent-child relationships through the API or Admin UI, allowing for seamless changes to account structures.
-* **Improved tracking:** Track data around parent-child accounts and associated charges with enhanced export features.
-* **Flexible subscription management:** Handle subscription changes, upgrades, downgrades, and terminations across parent-child accounts with ease.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i></div>
+    <strong>Flexible billing</strong>
+    <span>Assign billing responsibilities to the parent or child account — whichever fits your customers' financial structure.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sitemap" aria-hidden="true"></i></div>
+    <strong>Consolidated visibility</strong>
+    <span>View all child accounts, subscriptions, and invoices under a parent from a single hierarchy overview page.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible subscription management</strong>
+    <span>Handle subscription changes, upgrades, downgrades, and terminations across parent-child accounts with ease.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-table" aria-hidden="true"></i></div>
+    <strong>Enhanced export tracking</strong>
+    <span>Track parent-child accounts and associated charges using dedicated export columns.</span>
+  </div>
+</div>
 
-# Getting started
+# Key details
 
-Every customer account on your Recurly site can be designated as a parent or a child account. You can establish these relationships through the Admin UI or the API. This guide will focus on the Admin UI.
+## Hierarchy rules
 
-# Assigning a parent account
+Before setting up Account Hierarchy, note the following structural constraints:
 
-To assign a parent account via the UI, follow these steps during account creation or when editing an existing account:
+<ul class="rp-list">
+  <li>Any account can be designated as a parent or a child</li>
+  <li>A child account can only have one parent — grandparent relationships are not supported</li>
+  <li>A child account (one that already has a parent) cannot itself be assigned as a parent to another account. These accounts won't appear in the parent dropdown and cannot be assigned via the API</li>
+</ul>
 
-1. Log into your Recurly account.
-2. Navigate to the Customers, then Accounts section.
-3. Create a new account or edit an existing account.
-4. Navigate to the Account Hierarchy section.
-5. Enter the parent account's code (or name).
-6. Select the billing configuration (either Child or Parent's account).
+## Assigning a parent account
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/e433c14-Screen_Shot_2018-10-09_at_3.29.46_PM.png" />
+You can assign a parent during account creation or by editing an existing account.
 
-Please note, a child account (i.e., an account that already has a parent) cannot be assigned as a parent to another account. Child accounts will not appear in the dropdown menu and cannot be assigned as parents via the API.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to Accounts</h4><p>Go to Customers, then Accounts. Create a new account or open an existing one to edit.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open the Account Hierarchy section</h4><p>Scroll to the Account Hierarchy section of the account form.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Enter the parent account code</h4><p>Type the parent account's code or name to search for it.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Select the billing configuration</h4><p>Choose whether charges should be billed to the child account or the parent account.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Save the account</h4><p>Save the new or updated account to confirm the hierarchy link.</p></div>
+  </div>
+</div>
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/6f00e24-Screen_Shot_2019-01-02_at_11.17.04_AM.png" />
 
-In terms of hierarchy levels, a child account can only have one parent assigned to it. For example, a child cannot have both a parent and a grandparent.
+<Image src="https://files.readme.io/e433c14-Screen_Shot_2018-10-09_at_3.29.46_PM.png" align="center" width="75%" border={true} />
 
-# Editing account hierarchy
 
-To modify the hierarchy of existing accounts:
 
-1. Access the account you want to designate as a child.
-2. In the Account Information box on the right side of the page, click the Edit hyperlink.
-3. Scroll down to the Account Hierarchy section.
-4. Search for or select the account you want to designate as the parent.
-5. Select the billing configuration (either Child or Parent's account).
-6. Click the Save Changes button.
+<Image src="https://files.readme.io/6f00e24-Screen_Shot_2019-01-02_at_11.17.04_AM.png" align="center" width="75%" border={true} />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/8b17783-Screen_Shot_2020-08-24_at_11.10.48_AM.png" />
 
-Upon completion, you'll be redirected back to the account page, confirming the successful addition of the account hierarchy link.
+## Viewing account hierarchy
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/6c72d9f-Screen_Shot_2020-08-24_at_11.11.07_AM.png" />
+After saving, hierarchy information is visible from both the parent and child account pages.
 
-# Configuring billing
+<Tabs>
+  <Tab title="Child account">
 
-After designating a parent account, you must decide where all charges should be billed. By default, all charges for a child account will be billed to itself. Alternatively, you can choose to bill all charges to the Parent Account. This is common in businesses where a parent organization manages finances for multiple subsidiaries.
+**Child account view**
 
-For instance, if Pizza Planet headquarters (parent account) owns multiple pizza parlors (child accounts), and a child account is configured to *Bill All Charges to: Parent Account*, all charges will be billed to Pizza Planet Headquarters.
+The Account Information section displays a "Child" tag, along with the parent account name and a link to the parent account. A "View Account Hierarchy" link is also available, providing an overview of all child accounts, subscriptions, and invoices under the parent.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/23498e6-Screen_Shot_2019-01-02_at_11.17.42_AM.png" />
+<Image src="https://files.readme.io/d6ab978-Screen_Shot_2019-01-02_at_11.20.40_AM.png" align="center" width="75%" border={true} />
 
-# Viewing account hierarchy
+  </Tab>
+  <Tab title="Parent account">
 
-After saving a new child account or updating an existing account with a parent, you can view the relevant Account Hierarchy information from both the child and parent accounts.
+**Parent account view**
 
-## Child account information
+The Account Information section displays a "Parent" tag, the count of child accounts associated with this parent, and a link to the Account Hierarchy overview page.
 
-When viewing a child account, the Account Information includes a "Child" tag. This section also includes the Parent Account name and a link to the parent account, as well as a link to View Account Hierarchy, which provides an overview of all child accounts, subscriptions, and invoices.
+<Image src="https://files.readme.io/980d06a-Screen_Shot_2019-01-02_at_11.21.34_AM.png" align="center" width="40%" border={true} />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/d6ab978-Screen_Shot_2019-01-02_at_11.20.40_AM.png" />
+  </Tab>
+</Tabs>
 
-## Parent account information
+## Account hierarchy overview page
 
-When viewing a parent account, the Account Information includes a "Parent" tag. This section also lists the number of child accounts associated with this parent account and provides a link to the Account Hierarchy overview page.
+Accessible from either the child's or parent's account page, the overview includes three index tabs:
 
-<Image align="center" className="border" width="25% " border={true} src="https://files.readme.io/980d06a-Screen_Shot_2019-01-02_at_11.21.34_AM.png" />
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Tab</td><td>What it shows</td></tr>
+  <tr><td>Accounts</td><td>All child accounts associated with the parent.</td></tr>
+  <tr><td>Subscriptions</td><td>All subscriptions belonging to the parent's child accounts.</td></tr>
+  <tr><td>Invoices</td><td>All invoices belonging to the parent and its child accounts.</td></tr>
+</table>
 
-# Account hierarchy overview page
+You can filter accounts, subscriptions, and invoices by whether charges are billed to the child or the parent.
 
-Accessible from either the child's or parent's account information, this page includes several index pages:
 
-* **Accounts**: Lists all child accounts associated with the parent account.
-* **Subscriptions**: Lists all subscriptions belonging to the parent's associated child accounts.
-* **Invoices**: Lists all invoices belonging to the parent and its associated child accounts.
+<Image src="https://files.readme.io/85f50eb-Screen_Shot_2019-01-02_at_11.52.07_AM.png" align="center" width="75%" border={true} />
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/85f50eb-Screen_Shot_2019-01-02_at_11.52.07_AM.png" />
-
-You can filter accounts, subscriptions, and invoices based on whether they are billed to a child account or a parent account.
 
 # Billing configuration
 
-Recurly handles invoice and billing events differently depending on whether a child account is configured to bill charges to itself or to a parent.
+After assigning a parent, you choose where charges are billed. The behavior of invoices, credits, coupons, refunds, and taxes differs depending on this setting.
 
-# Child account that bills to itself
+<Tabs>
+  <Tab title="Child bills to itself">
 
-When a child account is configured to manage its own billing information and responsibilities, it behaves like a regular customer account in Recurly, with the primary difference being its association with a parent account. This association is reflected in the Overview Page in the Admin UI and in our Exports for your convenience.
+**Child bills to itself**
 
-# Child account that bills to parent
+The child account behaves like a standard Recurly account — it manages its own billing information and receives its own invoices. The only difference is its association with a parent, which is reflected in the UI and in exports.
 
-A child account can be configured such that all payment information, invoices, charges, and credits belong to the parent. In this setup, all invoices are owned by the parent account and reside on the parent account. By default, all charges originating from the child account will use the billing information on the parent account. With this configuration, a child account does not need to have billing information on its account for subscriptions or charges to be created.
+  </Tab>
+  <Tab title="Child bills to parent">
 
-> 📘 Adding billing information for a child
->
-> A child account that bills to a parent can also have its own billing information. However, this information will not be used for any charges for the child account. In some cases, you may want to add billing information to a child account if a parent is going to be removed from the account. By doing so, any active subscriptions can be renewed using this billing information after the parent is removed.
+**Child bills to parent**
 
-## Adding a subscription
+All payment information, invoices, charges, and credits are owned by the parent account. The child account does not need billing information for subscriptions or charges to be created.
 
-When adding a subscription for a child, the subscription will be created on the child account. If the subscription is created immediately, the invoice will be created on the parent account. For example, if you are viewing the child account details, you will see the subscription on the account but the invoice will not be listed on the Charges & Credits table. To access the invoice, you will need to go to the Subscription Details to access a link to the invoice.
+<Image src="https://files.readme.io/23498e6-Screen_Shot_2019-01-02_at_11.17.42_AM.png" align="center" width="75%" border={true} />
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/c683a70-Screen_Shot_2018-10-11_at_11.05.17_AM.png" />
+A child account that bills to a parent can still have its own billing information on file — though it won't be used for charges. This is useful if you plan to remove the parent later, so active subscriptions can continue renewing using the child's own payment method.
 
-### Subscription changes
+  </Tab>
+</Tabs>
 
-During immediate subscription changes that result in an invoicing event, an invoice will be created on the parent account. Immediate subscription changes *can* result in a charge invoice and a credit invoice. If a subscription change results in a charge invoice and a credit invoice for the child exists on the parent account, it will be applied on the charge invoice. For example, if a child account has a subscription downgrade that results in a credit invoice on its parent, if a new subscription is added to the child account a credit invoice from the downgrade will be applied to the charge invoice for the new subscription.
+## Subscriptions
 
-## Adding a charge or credit
+When adding a subscription for a child that bills to a parent, the subscription is created on the child account. If created immediately, the resulting invoice is created on the parent account. To access the invoice from the child account, go to the subscription details page.
 
-Posting custom charges or credits to the child account will immediately post an invoice to the parent account.
 
-#### Invoice immediately
+<Image src="https://files.readme.io/c683a70-Screen_Shot_2018-10-11_at_11.05.17_AM.png" align="center" width="75%" border={true} />
 
-If you are adding a charge that "Invoices Now", the invoice will be created immediately. The charge will not be available on the child's Charges & Credits table on their account. You will be able to access the invoice from the parent account's Invoices table or Charges & Credits table.
 
-Posting a custom credit from the child account will create a credit invoice immediately on the parent account. The credit invoice will reside on the parent account under the Charges & Credits table.
+Immediate subscription changes that result in an invoicing event also create the invoice on the parent. A change can produce both a charge invoice and a credit invoice — if a credit exists on the parent from a previous change (such as a downgrade), it will be applied to the new charge invoice.
 
-<Image align="center" src="https://files.readme.io/d62db59-Screen_Shot_2018-10-11_at_12.37.22_PM.png" />
+## Charges and credits
 
-> 🚧 Using the API for transactions
->
-> Currently, we do not *fully* support the [transactions endpoint](https://dev.recurly.com/docs/create-transaction) in the API for custom charges that invoice immediately for Account Hierarchy. While it is possible to create a transaction for a child account that bills to itself, it is not supported for a child account that bills to a parent. We recommend that if you want to create one-time charges for a child account whose bill-to-account is a parent, you create them using the Admin UI or the [purchase endpoint](https://developers.recurly.com/api/latest.html#operation/create_purchase) in the API.
+<Tabs>
+  <Tab title="Invoice immediately">
 
-#### Invoice at next bill date
+**Invoice immediately**
 
-Recurly allows creating custom charges through the Admin UI that can be invoiced at the next bill date. We also allow you to do this through the API using the adjustments API endpoint.
+When a charge invoices immediately, the invoice is created on the parent account. The charge won't appear in the child's Charges & Credits table — access it from the parent's Invoices or Charges & Credits table.
 
-If you are creating a custom charge that invoices at the next bill date, the uninvoiced charge will reside on the child account under the Charges & Credits table until it is invoiced. This means that if you are looking at the Adjustments - Export filtered by uninvoiced adjustments, the Account column will list the account code of the child associated with the uninvoiced adjustment.
+Posting a custom credit from the child account creates a credit invoice immediately on the parent account.
 
-<Image align="center" width="65% " src="https://files.readme.io/a3d4ac6-Screen_Shot_2018-10-11_at_12.51.49_PM.png" />
+<Image src="https://files.readme.io/d62db59-Screen_Shot_2018-10-11_at_12.37.22_PM.png" align="center" width="75%" border={true} />
 
-Uninvoiced charges are picked up in any billing event (adding a subscription, renewing a subscription, posting a charge), except for immediate subscription changes. Once the uninvoiced charge is invoiced, the charge will be moved from the child account Charges & Credits table to the parent account's Charges & Credits table. Additionally, the Adjustments - Export will reflect the parent under the Account column for the invoiced adjustment. If the parent payment method is declined at the time the uninvoiced charge is invoiced, the charge invoice will still be generated on the parent account and marked as failed.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> API limitation for immediate charges</strong> The transactions endpoint does not fully support Account Hierarchy for custom charges that invoice immediately. For one-time charges to a child account that bills to a parent, use the Admin UI or the <a href="https://developers.recurly.com/api/latest.html#operation/create_purchase" target="_blank">purchase endpoint</a> in the API instead.</div>
+</div>
+
+  </Tab>
+  <Tab title="Invoice at next bill date">
+
+**Invoice at next bill date**
+
+Uninvoiced charges reside on the child account's Charges & Credits table until a billing event picks them up (adding a subscription, renewing, or posting a charge — but not immediate subscription changes). Once invoiced, the charge moves to the parent account's Charges & Credits table.
+
+If the parent's payment method declines at the time the uninvoiced charge is invoiced, the charge invoice is still generated on the parent and marked as failed.
+
+<Image src="https://files.readme.io/a3d4ac6-Screen_Shot_2018-10-11_at_12.51.49_PM.png" align="center" width="75%" border={true} />
+
+  </Tab>
+</Tabs>
 
 ## Credit invoices
 
-Credit invoices created manually or as a result of a subscription change, will be created on the parent account if the child bills to the parent. Credit invoices will be applied towards any charge invoice originating from any child.
+Credit invoices created manually or from a subscription change are created on the parent account when the child bills to the parent. These credit invoices apply toward any charge invoice originating from any child of that parent.
 
-#### Example
+A credit invoice originating from one sibling child can apply to a charge invoice for another sibling child, as long as both bill to the same parent. A single credit invoice can be applied across multiple children until the credit is fully used.
 
-A child company called Pizza Planet-Oakland bills to a parent company Pizza Planet - Headquarters. A custom credit invoice is created for Pizza Planet-Oakland that is issued to the parent account. Pizza Planet - San Francisco is a sibling to child company Pizza Planet-Oakland and also bills to the parent company. If a subscription is added to Pizza Planet-San Francisco, the credit invoice originating from *Pizza Planet-Oakland* will be applied to the charge invoice billed to Pizza Planet-Headquarters.
-
-Credit invoices created as a result of creating a custom credit on a *parent account* or originating from a subscription change or refund *for a parent* that may *also* have a subscription, will apply towards any charge invoices created from the parent's children that bill to it. This means that a single credit invoice can be applied across multiple children until the credit is used up entirely.
+Credit invoices from a custom credit or subscription change on the parent account itself also apply toward charge invoices from any child that bills to it.
 
 ## Coupons
 
-Coupons can be redeemed in a number of ways. You can redeem individual coupons via the Admin UI to a child account or when adding a subscription to a child account. You can also redeem coupons via the API. In order for discounts to apply towards an invoice to a parent, the coupon must live on the child account. For example, a subscription is created on a child account and the child account has an eligible account-level coupon on its account. This coupon will be applied towards the eligible charge(s) on the invoice billed to its parent.
+Coupons must be redeemed on the child account for discounts to apply to invoices billed to the parent. An account-level coupon on the child account will apply to eligible charges on the parent's invoice.
 
-Coupons that are redeemed on a parent account will not be applied towards invoices created as a result of a child billing to its parent. If a parent has a coupon(s) on its account, they will only apply to subscriptions or charges created on the parent account *for* the parent (e.g if a parent has its own subscription).
+Coupons redeemed on the parent account only apply to subscriptions or charges created directly on the parent — not to invoices originating from children billing to it.
 
-Coupon application rules are the same as existing coupon logic outlined [here](https://docs.recurly.com/v1.0/docs/coupons#section-coupon-accounting).
+For full coupon logic, see the <a href="https://docs.recurly.com/v1.0/docs/coupons#section-coupon-accounting" target="_blank">coupons documentation</a>.
 
 ## Refunds
 
-Invoice refunds for an invoice on a parent account will create a refund credit invoice on the parent account, which includes credit line items against previously paid for charge line items. Refunding will never reopen the original charge invoice. When refunding an invoice directly, you can choose to distribute the resulting credit balance as a payment refund (cash back on the parent's payment method), or leave it as a credit balance to be used as payment on future invoices.
+Refunding an invoice on a parent account creates a refund credit invoice on the parent with credit line items against previously paid charges. The original charge invoice is never reopened. When refunding directly, you can issue a payment refund (cash back to the parent's payment method) or leave the amount as a credit balance for future invoices.
 
-For more information on how refunds work, visit this [page](https://docs.recurly.com/v1.0/docs/invoices#section-refunds).
+For more on how refunds work, see the <a href="https://docs.recurly.com/v1.0/docs/invoices#section-refunds" target="_blank">invoices documentation</a>.
 
 ## Taxes
 
-If you are using Recurly taxes, line items on an invoice billed to a parent, will be taxed based on the parent's taxable address.
+Invoice line items for a child billing to a parent are taxed based on the parent's taxable address.
 
-#### Collection method
+### Collection method
 
-When **automatic collection** method is used, the invoice line items will be taxed based on the parent's billing information address unless your site settings specify to use account address. If the latter is true, tax will be calculated based on the parent's account information address. If **manual collection** method is used, the invoice line items will be taxed using the parent's account information address.
+With automatic collection, line items are taxed using the parent's billing information address — unless your site settings specify to use the account address, in which case the parent's account address is used. With manual collection, the parent's account address is always used.
 
-#### Tax exempt
+### Tax exemption
 
-If you are utilizing our [tax exemption](https://docs.recurly.com/v1.0/docs/tax#section-exempt-customers) feature, the following rules will apply to account hierarchy accounts:
+<ul class="rp-list">
+  <li>If the parent is tax exempt, all invoices billed to the parent (including those originating from children) are not taxed</li>
+  <li>If a child is tax exempt but the parent is not, invoices generated for that child are not taxed</li>
+</ul>
 
-* if a parent is tax exempt, all parent’s invoices (e.g child that bill to parent invoices and the parent's own invoices if they have their own subscription) will not be taxed
-* If a child is tax exempt but the parent is not, the invoices generated for this child will not be taxed.
+For details, see the <a href="https://docs.recurly.com/v1.0/docs/tax#section-exempt-customers" target="_blank">tax exemption documentation</a>.
 
-> 📘 Displaying Child Information on Invoice
->
-> If you would like to include information (such as name and address) on the invoice to the parent account, you will want to ensure that you pass in a shipping address when creating a subscription. The resulting invoice should display a Bill To address based on the parent's billing information and a Ship To address of the child's shipping address. Additionally, passing in a shipping address will ensure that the invoice is taxed based on the location of the child account. 
->
-> Refer to the Shipping section below for more information.
+### Shipping address and child-based taxation
 
-#### Shipping address
+To tax line items based on the child's location rather than the parent's, specify a shipping address on the child account's subscription. The resulting invoice shows a Bill To address from the parent's billing info and a Ship To address from the child's shipping address.
 
-In some cases, you may want to use tax line items on an invoice based on the location of the child account. We recommend that for this use case, to specify a shipping address for the child account's subscription. The resulting invoice should display a Bill To address based on the parent's billing information and a Ship To address of the child's shipping address.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/e6cffc2-Screen_Shot_2019-01-03_at_12.26.03_PM.png" />
+<Image src="https://files.readme.io/e6cffc2-Screen_Shot_2019-01-03_at_12.26.03_PM.png" align="center" width="75%" border={true} />
 
-There are a couple of ways to apply a shipping address to a subscription, which is outlined in our existing [shipping address documentation](https://docs.recurly.com/v1.0/docs/shipping-addresses).
 
-If you are using the [purchase endpoint in our API](https://docs.recurly.com/v1.0/docs/shipping-address-per-line-item) to create subscriptions and custom charges and also want to use a child's shipping address for taxation, we recommend that you specify an account-level shipping address for the purchase. This means that all line items will be based on the account-level shipping address. Any new subscription(s) created will be associated with this shipping address.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Tax location validation</strong> Recurly only validates the parent account's taxable address — not the child's shipping address. If using the purchase endpoint to create subscriptions with a child shipping address for taxation, specify the shipping address at the account level so it applies to all line items.</div>
+</div>
 
-#### VAT reverse charge notes
+If you use Recurly's EU VAT feature and the parent's taxable address is in the EU and in a different country from your business and VAT number, VAT reverse charges will be included on the invoice.
 
-If you are using Recurly's [EU VAT feature](https://docs.recurly.com/v1.0/docs/eu-vat-2015), and the taxable address for parent invoice is based in the EU and is a different country than that of your business and VAT number, then VAT Reverse charges will be included on the invoice.
+For shipping address setup options, see the <a href="https://docs.recurly.com/v1.0/docs/shipping-addresses" target="_blank">shipping address documentation</a>.
 
-#### Tax location validation
+### VAT
 
-Recurly's [Tax Location Validation](https://docs.recurly.com/v1.0/docs/tax-location-validation) service is used at the time any account's taxable address is added to, or updated on, the account. For example, if a parent account's billing information address or account address was updated, at the time of invoicing, Recurly will check the status of the parent account and allow the invoice to be posted if the parent account is valid and blocks the invoice if the parent account is invalid.
+If you use Recurly's <a href="https://docs.recurly.com/v1.0/docs/eu-vat-2015" target="_blank">EU VAT feature</a> and the parent's taxable address is in the EU and in a different country from your business and VAT number, VAT reverse charges will be included on the invoice.
 
-Note: If you are using the shipping address from the child account as the taxable address, Recurly will not validate the shipping address. This means that Recurly will only evaluate a parent account's location evidence.
+## Invoice display
 
-## View invoice
+On invoices within Account Hierarchy, the parent is labeled "Primary Account" and the child is labeled "Linked Account." This naming appears in invoice PDFs, customer emails, Hosted Account Management invoice displays, and the Admin UI.
 
-The display on customer invoices that are in an Account Hierarchy reads as: "Primary Account" for the parent, and "Linked Account" for the child. The invoice locations where this naming convention will display includes the invoice PDF in customer emails, Hosted Account Management invoice display, and the Recurly App Admin UI.
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/eed8019-Screen_Shot_2018-10-11_at_2.52.16_PM.png" />
+<Image src="https://files.readme.io/eed8019-Screen_Shot_2018-10-11_at_2.52.16_PM.png" align="center" width="75%" border={true} />
+
 
 ## Updating or removing billing information
 
-If you are changing billing information or removing billing information for the *parent* account, this will directly impact any children that bill to this parent. If you remove a parent account's billing information, any non-trial subscriptions for those children that bill to the parent will expire at the next bill date. Trial subscriptions will expire when trial ends, if no payment method is added to the parent account. If billing information is updated, the updated payment method will be used for any charges originating from a child that bills to the parent account.
+Changes to the parent account's billing information affect all children that bill to that parent:
 
-Adding or removing billing information for a *child account* that bills to a parent, has no impact on subscriptions being purchased or renewed. However, if you are planning to remove a parent from a child account, we recommend adding a payment method to the child account so that subscriptions are able to renew after the parent account (and therefore means of payment) is removed.
+<ul class="rp-list">
+  <li>If the parent's billing information is removed, non-trial subscriptions for children billing to the parent expire at the next bill date. Trial subscriptions expire at trial end if no payment method is added to the parent</li>
+  <li>If billing information is updated, the updated payment method applies to all charges from children billing to the parent</li>
+</ul>
+
+Adding or removing billing information on a child account that bills to a parent has no impact on active subscriptions. However, if you plan to remove the parent, add a payment method to the child account first so subscriptions can renew after the parent is removed.
 
 ## Dunning
 
-If you are utilizing [Recurly's Dunning Management](https://docs.recurly.com/v1.0/docs/dunning-management), dunning notifications will be sent to the parent account when invoices move to past due, since the parent account is the invoice owner for children that bill to a parent.
+When using <a href="https://docs.recurly.com/v1.0/docs/dunning-management" target="_blank">Recurly Dunning Management</a>, dunning notifications are sent to the parent account when invoices move to past due — since the parent is the invoice owner for children that bill to it.
 
-# Emails
+## Emails
 
-When using Recurly automatic emails in conjunction with Account Hierarchy, the recipient of the emails (parent or child) depends on the configuration of the billing responsibilities for the child account.
+Which account receives email notifications depends on the child's billing configuration.
 
-#### Child that bills to itself
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Configuration</td><td>Email recipient</td><td>Email types</td></tr>
+  <tr><td>Child bills to itself</td><td>Child account email address</td><td>All enabled email templates</td></tr>
+  <tr><td>Child bills to parent</td><td>Parent account email address</td><td>Invoice emails (new invoice, credit invoice, payment confirmation, payment refunded), subscription emails (new, changed, canceled, expired, trial ending, renewal reminder, SEPA, CC expired), and dunning emails</td></tr>
+</table>
 
-If a child account is set to bill to itself and not pass charges to its parent, any enabled email template will dispatch an email to the child account's email address.
-
-#### Child that bills to parent
-
-For child accounts configured to bill to their parent, it's crucial that only the parent receives email notifications containing invoice information. 
-
-The following emails, if enabled, will be dispatched to the parent account's email address, representing events originating from the child that bills to the parent:
-
-* Invoice (New Invoice, New Credit Invoice, Payment Confirmation, Payment Refunded)
-* Subscription (New Subscription, Subscription Change, Subscription Canceled, Subscription Expired, Expired for Non-Payment, Trial Ending, Renewal Reminder, SEPA, CC Expired)
-* Dunning emails
-
-If a parent or child is permitted to log into their account via Hosted Account Management, Recurly will dispatch all Account emails to the email address of the account initiating the change. 
-
-For instance, if a child account accesses your hosted account management login page and requests account activation, Recurly will send an email to the child account. Likewise, if a parent account requests account activation, Recurly will send an email to the parent account. Furthermore, if a child or a parent requests a Password Reset, the requesting account will receive the email to reset the password. If the password is reset, the account will also receive the 'Password Has Been Reset' success email.
+If a parent or child logs in via Hosted Account Management, all account emails (account activation, password reset, password reset confirmation) go to the email address of the account initiating the action.
 
 # Modifying parent-child relationships
 
-You can remove or change a parent for a child either through the API or the Admin UI. 
+You can remove or change a parent through the Admin UI or the API.
 
 ## Removing a parent
 
-When detaching a parent from a child account, bear in mind that subscriptions on the child account may expire at the next bill date, unless a valid payment method is added to the account. You can remove the parent account in the same manner as changing the parent, by editing the child account and selecting the 'Remove Parent' option before saving the change.
+Edit the child account and select Remove Parent before saving. Once removed, the child becomes an independent account — all charges and subscriptions are billed using billing information on the account itself.
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/e7c545da22a38b300f7c8d4c53ea3b81f48e56e7ef73105d2f6d4082ab574aae-Screenshot_2025-01-16_at_11.52.49_AM.png" />
 
-Upon removal of a parent account, the child account effectively becomes independent. This implies that all charges and subscriptions will be billed using the billing information on the account. If the account had existing billing information (child billing information that existed while it was a child), any active subscriptions will attempt to renew at the next bill date using this billing information. If the billing process fails, active subscriptions will undergo the standard dunning process.
+<Image src="https://files.readme.io/e7c545da22a38b300f7c8d4c53ea3b81f48e56e7ef73105d2f6d4082ab574aae-Screenshot_2025-01-16_at_11.52.49_AM.png" align="center" width="75%" border={true} />
 
-Moving forward, the account will no longer appear in the Account Hierarchy Overview page nor be included in the count of children for that parent. The Accounts - Export will also indicate that the account has been modified and no longer has a parent account associated with it. 
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Ensure the child has billing info</strong> After a parent is removed, subscriptions attempt to renew using billing information on the child account. If none is present, active subscriptions may expire at the next bill date and enter dunning. Add a payment method to the child before removing the parent.</div>
+</div>
+
+After removal, the account is no longer listed in the hierarchy overview page or counted among the parent's children. The Accounts export is updated to reflect that the account no longer has a parent.
 
 ## Changing a parent
 
-When a parent account is replaced for a child, the child account will lose its association with the previous parent. Changes to the parent of an account cannot be made if there are outstanding invoices. This ensures that the account is in good standing (invoices paid, refunds issued to old parent if necessary) before altering the billing owner of the child. The child will be included in the count of children for the new parent and in the Account Hierarchy Overview page for the new parent and its children. The Accounts - Export will also indicate that the account has been modified and has a new parent account associated with it. 
+Replacing a parent severs the child's association with the previous parent. The change cannot be made if there are outstanding invoices — resolve any open invoices before proceeding. After the change, the child appears in the new parent's hierarchy overview and child count, and the Accounts export is updated.
 
-If the child account is set to bill to the parent, any charge or credit invoices will be created on the parent account. Charge invoices will be billed using the new parent account's billing information.
+If the child bills to the parent, charge and credit invoices going forward are created on the new parent account, using the new parent's billing information.
 
-> 🚧 Subscriptions with usage based billing
->
-> If a child account has an active subscription that is billed using [usage based billing](https://docs.recurly.com/v1.0/docs/usage-based-billing) and you change the bill-to-account (e.g., previously billed to Parent A and now bills to Parent B) in the middle of the current billing cycle, there are a few things to note if you decide to do so:
->
-> * Any unbilled usage will be billed to the *new* parent at the next bill date. 
-> * Terminating the subscription in the middle of the current billing cycle will result in an invoice to the *previous* parent for any unbilled usage. 
->
-> If you do not want the previous parent to be invoiced for unbilled usage when terminating the subscription mid-cycle, we recommend that you [zero-out](https://docs.recurly.com/v1.0/docs/usage-based-billing#section-cancel-or-terminate-a-usage-based-subscription) the usage prior to termination.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Usage-based billing mid-cycle</strong> If a child has an active subscription with usage-based billing and you change the bill-to-account mid-cycle: any unbilled usage is billed to the new parent at the next bill date, and terminating the subscription mid-cycle bills unbilled usage to the previous parent. To avoid invoicing the previous parent for unbilled usage on termination, zero out the usage before terminating.</div>
+</div>
 
-### Subscription changes if bill-to-account is different
+### Subscription billing when the bill-to account has changed
 
-When adding, changing, or removing a parent from an account, it's crucial to understand how this will impact any existing subscriptions and/or past invoices on the affected account. Specifically, how an existing subscription(s) is invoiced if a subscription change is made during the middle of the billing cycle. 
+When a parent is added, changed, or removed from an account with an active subscription, any immediate subscription change triggers a full prorated credit to the old bill-to account and a full prorated charge to the new bill-to account — not just the price difference.
 
-If any subscription changes are applied [effective immediately](https://docs.recurly.com/v1.0/docs/change-subscription#section-timing-of-change), and are made to a subscription where the account that paid the most recent invoice for the subscription doesn't match the current billing account, any change will trigger a full prorated credit against the old account, and a new prorated charge against the new bill-to-account. In other words, if you upgrade or downgrade the subscription prior to the next bill date after changing the ***bill to*** account, the *new* bill-to-account is responsible for paying for the *full prorated amount* of the updated subscription for the remainder of the billing cycle, not just the *difference* between the old subscription price and the new subscription price.
+<Accordion title="Example: upgrade after parent change">
+A child is on a monthly Silver plan billed to Parent A. Mid-cycle, the parent is changed to Parent B. The subscription is then immediately upgraded to Gold. Parent A receives a credit for the remaining Silver time. Parent B receives a full prorated rebill to Gold for the remainder of the cycle.
+</Accordion>
 
-Having a different original billing owner can occur in 3 ways:
+<Accordion title="Example: downgrade after parent change">
+A child is on a monthly Gold plan billed to Parent A. Mid-cycle, the parent is changed to Parent B. The subscription is then immediately downgraded to Silver. Parent A receives a credit for the remaining Gold time. Parent B receives a full prorated rebill to Silver.
+</Accordion>
 
-* Adding a parent to an existing account with an active subscription 
-* Changing a parent of a child with an active subscription
-* Removing a parent of a child with an active subscription 
+<Accordion title="Example: removing a parent with an active subscription">
+If a parent is removed from a child with active subscriptions, an immediate downgrade issues a credit invoice to the original parent. An immediate upgrade results in a charge invoice to the child account, provided valid billing information is available.
+</Accordion>
 
-#### Upgrading subscription if billing account has changed since last recent invoice
+<Accordion title="Refunding invoices after a billing account change">
+Invoices paid by a previous bill-to account are refunded to the account that originally paid them. For example, if Child A had invoices paid by Parent A and Parent A is later removed, those invoices can be refunded from Parent A's account — the refund goes to Parent A's payment method.
+</Accordion>
 
-Suppose a child is subscribed to a monthly Silver subscription which is billed to Parent A. During the middle of the monthly billing period, the child's parent bill-to-account is changed to Parent B. Later, the subscription is upgraded to Gold with the timing of change effective immediately. Parent A will receive a credit for the remaining time to Gold. Parent B will receive a full rebill of the subscription to Gold.
+# Closing accounts
 
-#### Downgrading subscription if billing account has changed since last recent invoice
+## Closing a child account
 
-Suppose a child is subscribed to a monthly Gold subscription which is billed to Parent A. During the middle of the monthly billing period, the child's parent bill-to-account is changed to Parent B. The subscription is later immediately downgraded to Silver. Parent A will receive a credit for the remaining time to Gold. Parent B will receive a full rebill of the subscription to Silver. 
+Before closing a child account, resolve any outstanding business — including open or past-due invoices. On closure, billing information is removed and active subscriptions are canceled (they remain active until the end of the current billing period). The child's relationship with its parent is maintained unless the parent is explicitly removed.
 
-#### Removing a parent of child with an active subscription
+## Closing a parent account
 
-If a parent is removed from an account that bills to a parent and there are any active subscriptions on the account, an immediate downgrade will issue a credit invoice to the original parent account. Any immediate upgrades will result in a charge invoice to the account if there is valid billing information available. 
+To close a parent account, you must first close all child accounts or remove the parent from each child. Once all children are closed or detached, close the parent. On closure, billing information is removed and active subscriptions are canceled at the next bill date. The parent-child relationship is retained — reopening the parent does not automatically reopen any child accounts.
 
-> 📘 Refunding invoice if billing account has changed
->
-> If an account has invoices and subscriptions that were previously paid for by a different account (e.g., a parent or different parent from the one it has now), those invoices will be refunded to the original account that paid for them. For example, Child A has an active subscription paid for by Parent A, but Parent A is removed. If you wish to refund any invoices *that were issued* prior to Parent A being removed, you can go to Parent A's account to refund any invoices associated with Child A. Those will be refunded to Parent A's payment method used for those transactions.
-
-# Closing a child or parent account
-
-If you need to **close a child account**, you must conclude any outstanding business with that child account (e.g., close any past due invoices) before you can close the account. Upon closing the child account, any billing information on the account will be removed. Active subscriptions for that child will be canceled and expire at the next bill date. The child account will maintain its relationship with the parent account, unless the parent is removed from the child. 
-
-In the event that a *parent account* needs to be closed (e.g., the parent no longer requires a subscription to your service for its children or the business is shutting down), you must close all child accounts for this parent first or remove the parent from the child. As best practice, you should ensure that each child account has all invoices paid and/or any refunds issued prior to closing the child account. Once all child accounts have been closed, you can close the parent account. Once the parent account is closed, billing information will be removed and if the parent has any active subscriptions, they will be canceled and expire at the next bill date. The parent account will maintain its relationship with the child accounts. Reopening the parent account will *not* automatically reopen the child accounts.
-
-> 🚧 Reopening a child account
->
-> If you want to reopen a child account whose parent account is *closed*, reopening the child account will effectively sever the parent relationship. We recommend that if you want to reopen the child account and maintain the parent, that you reopen the parent account first. 
->
-> However, if a child's parent is still *active*, reopening the child account will maintain the parent-child relationship.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Reopening a child whose parent is closed</strong> Reopening a child account whose parent is closed severs the parent-child relationship. To maintain the relationship, reopen the parent account first. If the parent is still active, reopening the child preserves the relationship.</div>
+</div>
 
 # Hosted account management
 
-If you are using Recurly's [Hosted Account Management](https://docs.recurly.com/v1.0/docs/hosted-account-management) and you plan to allow parents and children with Account Login access, there are some differences between HAM and  the Admin UI. Hosted Account Management pages do not include any labels denoting whether the account is a parent or a child. 
+If you use <a href="https://docs.recurly.com/v1.0/docs/hosted-account-management" target="_blank">Recurly's Hosted Account Management</a> with Account Hierarchy, note that hosted pages don't display parent or child labels.
 
-#### Parent account
-
-When a parent logs into their account, they will be able to view any subscriptions (if the parent is subscribed to a plan) belonging to itself and any invoices created as a result of a child billing to the parent. In most cases, a parent will not have a subscription of their own, therefore a parent would only see invoices originating from a child that billed to it. If a parent updates their payment method, any child that currently bills to the parent, will use the updated billing information. 
-
-#### Child account that bills to parent
-
-When a child that bills to its parent logs into their account page, they will not be able to access any price or invoice information, unless the invoices were created prior to the child account billing to its parent. 
-
-For example, on a regular account in Hosted Account Management,  we display both an invoice link and pricing information for each subscription within the Subscription card. We also include a table of invoices created for that account. For Account Hierarchy, a child that bills to a parent will not have access to invoice or pricing information. This is due to the fact that the parent is the owner of the invoice and payment information. A child cannot view any parent information from the child account page. 
-
-If a child account that bills to its parent, eventually has its parent removed, any invoices belonging to the parent account that were associated with the child will remain on the parent account. 
-
-#### Child account that bills to self
-
-When a child that bills to itself (e.g., uses its own payment method and does not use the parent account) logs into their account, they will be able to view all of their subscriptions and any invoices created for that child account. A child cannot view any parent information from the child account page. 
-
-If a child account is updated to "bill to parent", any invoices created using the parent's billing information will be created on the parent account and not accessible from the child hosted account page. Similarly, invoice and pricing information will not be displayed for any new subscriptions or invoices created for the child account.
-
-#### Child account's parent removed
-
-If the parent is removed and the account is no longer a child, the account will reset to be its own billing owner and the invoices table should be present again.  Any invoices that were created for the account when it previously billed to its parent will not be displayed on the account however, and continue to live on the parent account.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Account type</td><td>What they see in Hosted Account Management</td></tr>
+  <tr><td>Parent</td><td>Their own subscriptions (if any) and invoices originating from children that bill to the parent. Updating their payment method applies to all children billing to them.</td></tr>
+  <tr><td>Child billing to parent</td><td>Cannot access invoice or pricing information — the parent owns the invoices. If the parent is later removed, any invoices that were on the parent remain on the parent and are not accessible from the child's hosted page.</td></tr>
+  <tr><td>Child billing to itself</td><td>Full access to their own subscriptions and invoices. If later updated to bill to a parent, new invoices are created on the parent and are no longer visible from the child's hosted page.</td></tr>
+</table>
 
 # Exports
 
-To facilitate the tracking of data around your parent-child accounts and the associated parent-child accounts to a charge, we've introduced several enhancements to Exports. 
-
 ## Accounts export
 
-We've added a new column to the Accounts export to identify a parent account associated with an account. An account can be identified as a child if there is a parent account code populated in the new parent\_account\_code column. This feature is available in version v3 of the Accounts Export.
+The Accounts export (v3 and later) includes a `parent_account_code` column to identify parent-child relationships.
 
-| Column Name           | Example                                                | Description                                                                                                                              |
-| :-------------------- | :----------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| parent\_account\_code | 123456789, [parent@gmail.com](mailto:parent@gmail.com) | When an account has a parent (i.e., is a child), the account code of the parent for this child account will be populated in this column. |
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Column</td><td>Example value</td><td>Description</td></tr>
+  <tr><td><code>parent_account_code</code></td><td><code>123456789</code></td><td>When an account has a parent (i.e., is a child), this column contains the account code of the parent. Empty for accounts without a parent.</td></tr>
+</table>
+
+<br />
