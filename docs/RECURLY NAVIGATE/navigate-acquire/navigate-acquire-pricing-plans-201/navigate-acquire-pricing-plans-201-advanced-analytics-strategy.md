@@ -217,7 +217,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
-      <div class="rc-lp-hero-title"><h1>Analytics — strategy &amp; best practices</h1></div>
+      <div class="rc-lp-hero-title"><h1>Advanced analytics — strategy &amp; best practices</h1></div>
       <p>Build a measurement framework that closes the loop on everything you've configured — from plan design to pricing models, markets, and the metrics that signal when to iterate.</p>
       
     </div>
