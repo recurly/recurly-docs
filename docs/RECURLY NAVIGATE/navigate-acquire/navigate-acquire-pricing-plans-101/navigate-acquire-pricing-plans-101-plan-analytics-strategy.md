@@ -213,10 +213,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Plan Analytics — Strategy</h1></div>
-      <p>Having the data is the easy part. Connecting it to the right decisions — which plans to invest in, which pricing changes to test, which trials to redesign — is where analytics creates real business value. This page closes the P&amp;P 101 series with the framework for turning your Recurly data into a continuous improvement cycle.</p>
+      <div class="rc-lp-hero-title"><h1>Plan analytics — Strategy & best practices</h1></div>
+      <p>Having the data is the easy part. Connecting it to the right decisions — which plans to invest in, which pricing changes to test, which trials to redesign — is where analytics creates real business value. This page closes the Pricing &amp; Plans 101 series with the framework for turning your Recurly data into a continuous improvement cycle.</p>
       <div class="rc-hero-stats">
         <div class="rc-hero-stat"><div class="rc-hero-stat-num">ARPU</div><div class="rc-hero-stat-label">the most sensitive indicator that your pricing model changes are working — watch it move after plan changes</div></div>
         <div class="rc-hero-stat"><div class="rc-hero-stat-num">Cohort</div><div class="rc-hero-stat-label">the most reliable way to measure whether a pricing change improved long-term retention, not just conversion</div></div>
