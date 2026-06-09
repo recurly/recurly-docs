@@ -202,20 +202,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Usage Billing</h1></div>
       <p>Charge customers based on what they actually consume — and unlock new pathways to acquisition, expansion, and compounding revenue growth.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">61%</div>
-          <div class="rc-hero-stat-label">of SaaS companies now offer usage-based pricing</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">3x</div>
-          <div class="rc-hero-stat-label">higher net revenue expansion for usage-based businesses</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">100%</div>
-          <div class="rc-hero-stat-label">of usage logging is API-driven — no manual entries</div>
-        </div>
-      </div>
+      
     </div>
 
     <!-- Nav -->
