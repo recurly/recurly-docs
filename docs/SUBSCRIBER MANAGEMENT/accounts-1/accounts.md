@@ -1,10 +1,8 @@
 ---
 title: Accounts settings
 excerpt: >-
-  Accounts are core to managing your customers inside of Recurly. The account
-  object stores the entire Recurly history of your customer and acts as the
-  entry point for working with a customer's billing information, subscription
-  data, transactions, invoices and more.
+  View, create, and manage customer accounts in Recurly — including search,
+  filters, billing info, account status, and per-account rate limiting.
 deprecated: false
 hidden: false
 metadata:
@@ -14,112 +12,140 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">The accounts dashboard is your home base for managing customer accounts. Search and filter across your entire customer base, create new accounts, update profile and billing details, and manage account status — all from one place.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#viewing-and-searching-accounts"><span class="rp-toc-num">1</span>Viewing and searching accounts</a>
+    <a class="rp-toc-pill" href="#create-an-account"><span class="rp-toc-num">2</span>Create an account</a>
+    <a class="rp-toc-pill" href="#manage-accounts"><span class="rp-toc-num">3</span>Manage accounts</a>
+    <a class="rp-toc-pill" href="#per-account-rate-limiting"><span class="rp-toc-num">4</span>Per-account rate limiting</a>
+  </div>
+</div>
 
-Use the [accounts dashboard](https://app.recurly.com/go/accounts) to view and manage customer accounts. You can search by first name, last name, email address, account code, and more. Filters let you drill in by category. Categories can overlap — for example, the **Open** filter can include both **Non-subscribers** and **Subscribers**.
+# Viewing and searching accounts
+
+Use the <a href="https://app.recurly.com/go/accounts" target="_blank">accounts dashboard</a> to view and manage customer accounts. You can search by first name, last name, email address, account code, and more.
+
+## Search
+
+The following fields are searchable from the accounts dashboard:
+
+<ul class="rp-list">
+  <li>Account code</li>
+  <li>Company name</li>
+  <li>Email</li>
+  <li>First name</li>
+  <li>Last name</li>
+  <li>Username</li>
+  <li>Coupon code</li>
+</ul>
 
 ## Filters
 
-* **Open** — Accounts that aren’t closed.
-* **Non-subscribers** — Open accounts with no active, canceled, or future subscriptions.
-* **Subscribers** — Open accounts with at least one active or canceled subscription.
-* **In trial** — Subscribers with at least one active or canceled subscription in trial.
-* **Past due** — Subscribers with an invoice in a past-due state.
-* **Non-renewing** — Subscribers that won’t renew after the current term.
-* **Future** — Subscribers with a subscription that hasn’t started yet.
-* **Closed** — Accounts that aren’t open.
+Filters let you drill into your account list by category. Categories can overlap — for example, **Open** can include both **Non-subscribers** and **Subscribers**.
 
-## Account search
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Filter</td><td>Description</td></tr>
+  <tr><td>Open</td><td>Accounts that aren't closed.</td></tr>
+  <tr><td>Non-subscribers</td><td>Open accounts with no active, canceled, or future subscriptions.</td></tr>
+  <tr><td>Subscribers</td><td>Open accounts with at least one active or canceled subscription.</td></tr>
+  <tr><td>In trial</td><td>Subscribers with at least one active or canceled subscription currently in trial.</td></tr>
+  <tr><td>Past due</td><td>Subscribers with an invoice in a past-due state.</td></tr>
+  <tr><td>Non-renewing</td><td>Subscribers that won't renew after the current term.</td></tr>
+  <tr><td>Future</td><td>Subscribers with a subscription that hasn't started yet.</td></tr>
+  <tr><td>Closed</td><td>Accounts that aren't open.</td></tr>
+</table>
 
-You can search by:
+# Create an account
 
-* Account code
-* Company name
-* Email
-* First name
-* Last name
-* Username
-* Coupon code
+From the accounts dashboard, select **New account** to <a href="https://app.recurly.com/go/accounts/new" target="_blank">create a customer account</a>. The following fields are available:
 
-## Create an account
+## Account code
 
-From the accounts overview page, select **New account** to [create a customer account](https://app.recurly.com/go/accounts/new). Provide:
+Uniquely identifies a customer in Recurly — no two accounts can share the same code. Many merchants align this with their own user ID; using the customer's email address is also common.
 
-### Account code
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Account codes can't be changed</strong> Once set, an account code is permanent. Choose carefully before saving.</div>
+</div>
 
-Uniquely identifies a customer in Recurly. No two customers can share the same account code. Many merchants align this value with their own user identifier; using the customer’s email address is also common. Once set, the account code can’t be modified.
-**Invalid account codes:** values that start with a period (`.`) or contain slashes (`/`) or semicolons (`;`).
+The following account code values are invalid:
 
-### Username
+<ul class="rp-list">
+  <li>Values that start with a period (<code>.</code>)</li>
+  <li>Values containing slashes (<code>/</code>) or semicolons (<code>;</code>)</li>
+</ul>
 
-A secondary identifier you can search for in the dashboard.
+## Username
 
-### Email
+A secondary identifier that can be searched from the dashboard.
 
-The customer’s email address. Recurly communications are sent here, and customers use this email to sign in to hosted account management pages. This value doesn’t need to be unique.
+## Email
 
-### CC emails
+The customer's email address. Recurly sends communications here, and customers use it to sign in to hosted account management pages. This value doesn't need to be unique.
 
-Additional addresses that should receive account emails. Separate with commas (for example, `name@domain.com,name2@domain.com`). CC recipients receive the same messages sent to **Email**.
+## CC emails
 
-### First name / Last name / Company / VAT number / Phone number
+Additional addresses that should receive account emails. Separate multiple addresses with commas (e.g., `name@domain.com,name2@domain.com`). CC recipients receive the same messages sent to the primary **Email**.
+
+## First name, last name, company, VAT number, and phone number
 
 Basic profile and tax details.
 
-### Address
+## Address
 
-Used on manual invoices. Include at least postal code and country so taxes can be calculated for the account’s purchases.
+Used on manual invoices. Include at least a postal code and country so taxes can be calculated correctly for the account's purchases.
 
 ## Billing info
 
-The **Billing info** section shows stored payment details. Customers usually add or update this during purchase or when they manage their payment method. You can choose how much of the billing address is required in **Admin → Site settings**. Billing info can differ from the account email and address.
+The **Billing info** section shows stored payment details. Customers typically add or update this during purchase or when managing their payment method. You can configure how much of the billing address is required under **Admin → Site settings**. Billing info can differ from the account's email address and mailing address.
 
 ## Account notes
 
-Leave internal notes to add context — for example, refund reasons or customer requests. Notes are not visible to customers.
+Leave internal notes to add context — for example, refund reasons or special customer requests. Notes are not visible to customers.
 
-## Update accounts
+# Manage accounts
 
-After creation, you can update all fields except the account code.
+## Update an account
 
-## Close accounts
+After creation, all account fields can be updated except the account code.
 
-Closing an account:
+## Close an account
 
-* Permanently deletes stored billing information.
-* Cancels any active subscriptions (they remain active until the current billing period ends).
-* Fails any open invoices.
+Closing an account permanently deletes stored billing information, cancels any active subscriptions (they remain active until the end of the current billing period), and fails any open invoices. Use this only when all business with the customer is complete. The **Close account** option is available in the admin when viewing an account.
 
-Close accounts only when all business with the customer is complete. You’ll see **Close account** in the admin when viewing an account.
+## Reopen a closed account
 
-## Reopen closed accounts
+Reopen from **Account options → Reopen account**, or create a new account using the same account code. Account history is restored, but the customer must provide billing info again before billing can resume.
 
-Reopen an account from **Account options → Reopen account**, or create a new account using the same account code. History is restored, but customers must provide billing info again to resume billing.
+## Delete an account
 
-## Delete accounts
+Accounts can only be deleted in **sandbox** via **Clear test data** in site settings. In production, account data is retained for historical accounting purposes and can't be removed.
 
-Accounts can only be deleted in **sandbox** (see **Clear test data** in site settings). In production, data is retained for historical accounting and can’t be removed.
+# Per-account rate limiting
 
-***
+Recurly enforces built-in, per-account rate limits to protect end-customer accounts from excessive activity. These limits are part of the core Recurly platform and are not tied to deprecated Kount or Fraud Management features.
 
-## Per-account rate limiting
+## What's limited
 
-Recurly enforces built-in, per-account rate limits to protect end-customer accounts from excessive activity. These limits are part of the core Recurly platform and are **not** tied to deprecated Kount/Fraud Management features.
+Counters increment based on the `account_code` used in an API request for:
 
-### What’s limited
+<ul class="rp-list">
+  <li>New subscriptions</li>
+  <li>Transactions</li>
+  <li>Billing info updates</li>
+</ul>
 
-Counters increment based on the **`account_code`** used in an API request for:
+## Viewing limits
 
-* New subscriptions
-* Transactions
-* Billing info updates
+In sandbox, open any test customer account. On the right side of the page — below **Billing info** and **Hosted page links** — you'll see the current per-account limits and their counters for new subscriptions, transactions, and billing info updates.
 
-### Where to see limits (sandbox)
+## Managing limits
 
-In sandbox, open any **test customer account**. On the right side of the page, under **Billing info** and **Hosted page links**, you’ll see the current per-account limits and their counters for **New subscriptions**, **Transactions**, and **Billing info updates**.
+These limits can't be changed. You can manually **reset** the counters from the Recurly UI if needed.
 
-### Management
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> Per-account rate limiting is proprietary to Recurly and is commonly misattributed to legacy Kount/Fraud Management. The limits apply regardless of any external fraud or payment integrations.</div>
+</div>
 
-These limits can’t be changed. You can manually **reset** the counters from the Recurly UI if needed.
-
-> **Note:** This capability is proprietary to Recurly and commonly misattributed to legacy Kount/Fraud Management. The limits apply regardless of any external fraud or payment integrations.
+<br />
