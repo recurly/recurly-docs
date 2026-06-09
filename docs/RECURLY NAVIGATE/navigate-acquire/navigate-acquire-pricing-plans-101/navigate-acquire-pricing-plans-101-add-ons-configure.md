@@ -253,20 +253,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Add-ons — how to configure</h1></div>
       <p>A complete walkthrough of creating add-ons both directly on a plan and through the Item Catalog — including key field decisions, usage setup, and the warnings most merchants learn the hard way.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Plan level</div>
-          <div class="rc-hero-stat-label">or Item Catalog — two paths to the same outcome</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Permanent</div>
-          <div class="rc-hero-stat-label">add-on codes — cannot be changed after creation</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">API required</div>
-          <div class="rc-hero-stat-label">to log usage records for metered add-ons</div>
-        </div>
-      </div>
+     
     </div>
 
     <!-- Navigation Menu — non-sticky, open (Micro-Path page) -->
