@@ -13,18 +13,14 @@ metadata:
 body { background: #ffffff !important; }
 
 /* ── GLOBAL CSS IMMUNITY BLOCK ── */
-/* G-2: Hero h1 yellow underline */
 .rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
-/* G-1: Polar font — wildcard ensures all descendants use it */
 .rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
-/* FA6 FONT RESTORE — (0,0,2,0) beats wildcard (0,0,1,0); must follow wildcard */
 .rc-guide [class^="fa-"],
 .rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
 .rc-guide .fa-brands,
 .rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
 
-/* ── NAVIGATE MASTER ARMOR — (0,0,7,1) beats global section 1.1 rule (0,0,6,2)
-   All .rc-guide a.[class] overrides must be declared AFTER this block. ── */
+/* ── NAVIGATE MASTER ARMOR — (0,0,7,1) ── */
 .rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a,
 .rc-guide a:link,
@@ -41,33 +37,35 @@ body { background: #ffffff !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .rc-guide {
-  --yellow:    #FFD706;
-  --orange:    #FF8200;
-  --offblack:  #0D0D0B;
-  --darkgray:  #32312D;
-  --gray:      #807D73;
-  --lightgray: #CCC9B8;
-  --brightgray:#F1EFE3;
-  --offwhite:  #FFFDF2;
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #CCC9B8;
+  --brightgray: #F1EFE3;
+  --offwhite:   #FFFDF2;
+  font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
   color: #32312D !important;
   background: #ffffff;
 }
 .rc-guide * { box-sizing: border-box; }
 
-/* ── FONT AWESOME ICON HELPERS ── */
+/* ── FA6 ICON HELPERS ── */
 .rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
 .rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
 .rc-fa-section { color: #0D0D0B; font-size: 1rem; }
 
-/* ── TOP NAV ── */
+/* ── LAYOUT ── */
 .rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* ── BACK LINK — (0,0,8,1) ── */
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
-
-.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
 /* ── ANNOUNCEMENT BAR ── */
 .rc-announce-bar { display: none; background: #FFD706; color: #0D0D0B; align-items: center; justify-content: space-between; padding: 10px 20px; font-size: .88rem; font-weight: 600; border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4; }
@@ -84,14 +82,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
 .rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
 .rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
-.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto 32px; color: #CCC9B8; line-height: 1.6; }
-.rc-hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; margin-top: 4px; }
-.rc-hero-stat { text-align: center; padding: 0 16px; }
-.rc-hero-stat + .rc-hero-stat { border-left: 1px solid rgba(255,255,255,0.12); }
-.rc-hero-stat-num { font-size: 1.9rem; font-weight: 800; color: #FFD706; line-height: 1; margin-bottom: 6px; }
-.rc-hero-stat-label { font-size: .72rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #CCC9B8; line-height: 1.3; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
 
-/* ── STICKY NAV ── */
+/* ── NAV — non-sticky, open (Course page) ── */
 details.rc-sticky-nav-wrap { position: relative; z-index: 1; background-color: #FFD706; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin: 24px 0 48px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); overflow: hidden; }
 details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
 details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
@@ -109,7 +102,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
 .rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
 .rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
-.rc-sticky-link:hover .rc-step-badge { background: #FFD706; color: #0D0D0B; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
@@ -121,19 +113,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
-/* ── CARD ── */
-.rc-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 24px 28px; margin: 0 0 20px; }
-.rc-card-title { font-size: 1rem; font-weight: 800; color: #0D0D0B; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
-.rc-card p { font-size: .92rem; color: #32312D; line-height: 1.65; margin: 0 0 10px; }
-.rc-card p:last-child { margin-bottom: 0; }
-
-/* ── TILE ROW ── */
-.rc-tile-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin: 0 0 24px; }
-.rc-tile { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 20px; text-align: center; }
-.rc-tile-icon { font-size: 1.6rem; color: #0D0D0B; margin-bottom: 10px; line-height: 1; }
-.rc-tile h4 { font-size: .9rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; }
-.rc-tile p { font-size: .82rem; color: #807D73; line-height: 1.5; margin: 0; }
-
 /* ── CALLOUT ── */
 .rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
 .rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
@@ -142,6 +121,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
 .rc-callout-caution { background: rgba(255,130,0,0.08); border-left: 4px solid #FF8200; }
 .rc-callout-caution .rc-callout-body > strong { color: #32312D; }
+.rc-callout-tip { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-tip .rc-callout-body > strong { color: #0D0D0B; }
 
 /* ── TOC CARDS ── */
 .rc-toc-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 40px; }
@@ -193,9 +174,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   .rc-top-nav { padding: 16px 20px; }
   .rc-hero { padding: 36px 20px 36px; }
   .rc-lp-hero-title h1 { font-size: 1.8rem; }
-  .rc-hero-stats { grid-template-columns: 1fr; gap: 16px; border-top: none; padding-top: 0; }
-  .rc-hero-stat + .rc-hero-stat { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; margin-top: 0; }
-  .rc-tile-row { grid-template-columns: 1fr; }
   .rc-toc-card { grid-template-columns: 36px 1fr 24px; padding: 14px 16px; }
   .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
   .rc-lp-nav-indicator { width: 100%; text-align: center; }
@@ -206,8 +184,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   <div class="rc-top-nav">
     <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire" class="rc-back-link">← Back to Acquire</a>
   </div>
+
   <div class="rc-content-wrap">
 
+    <!-- ANNOUNCEMENT BAR — add rc-active class to show before publishing -->
     <div class="rc-announce-bar">
       <div class="rc-announce-inner">
         <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
@@ -216,19 +196,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
+    <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-white.png" alt="Acquire"> Acquire
       </div>
       <div class="rc-lp-hero-title"><h1>Plan price increase</h1></div>
-      <p>Confidently raise plan prices without losing subscribers — with the right timing, tools, and communication.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">3–8%</div><div class="rc-hero-stat-label">Avg. revenue uplift from a well-executed price increase</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">~70%</div><div class="rc-hero-stat-label">Subscribers retained after a communicated increase</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">2–4 wks</div><div class="rc-hero-stat-label">Typical time to plan and execute a price change</div></div>
-      </div>
+      <p>When to raise prices, how to decide, how to communicate it — and how to know if it worked.</p>
     </div>
 
+    <!-- NAV — non-sticky, open on load (Course page) -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -238,140 +215,112 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Plan price increase overview
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Overview
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why increase prices?</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> Things to consider</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-how" class="rc-sticky-link"><span class="rc-step-badge">3</span> How to execute it</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link"><span class="rc-step-badge">4</span> How to communicate it</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-impact" class="rc-sticky-link"><span class="rc-step-badge">5</span> Tracking impact</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link"><span class="rc-step-badge">6</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-sticky-link"><span class="rc-step-badge">1</span> Is a price increase the right move?</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> What to consider before you execute</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-sticky-link"><span class="rc-step-badge">3</span> Communicating the change</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your impact</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
         </a>
       </div></div></div>
     </details>
 
+    <!-- SECTION: What this course covers -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-arrow-trend-up rc-fa-section"></i> What is a plan price increase?</h2>
-      <p>A structured approach to raising the price of one or more subscription plans — capturing more revenue from existing subscribers while preserving retention and trust. In Recurly, a <strong>Plan</strong> is the pricing template all subscriptions are built from. Updating a plan's price immediately applies to new subscribers; existing subscribers need to be explicitly migrated.</p>
-
-      <div class="rc-card">
-        <div class="rc-card-title"><i class="fa-solid fa-puzzle-piece rc-fa-section"></i> Why it matters</div>
-        <p>Most subscription businesses undercharge relative to the value they deliver. Costs rise, features ship, and the market shifts — yet plans stay frozen at launch-era pricing. A price increase isn't just a revenue event; it's a signal that your product has grown and your pricing should reflect it.</p>
-        <p>Recurly gives you full control over how and when price changes take effect. You can update a plan's unit amount in the UI, configure whether the change hits at next renewal or immediately, and lock specific subscribers at their current price indefinitely — all without engineering support.</p>
-      </div>
-
-      <div class="rc-tile-row">
-        <div class="rc-tile">
-          <div class="rc-tile-icon"><i class="fa-solid fa-tag"></i></div>
-          <h4>Plan-level update</h4>
-          <p>Update the base price once; all future new subscribers get the new price immediately.</p>
-        </div>
-        <div class="rc-tile">
-          <div class="rc-tile-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h4>Subscriber migration</h4>
-          <p>Explicitly move existing subscribers to the new price — at renewal or with a bulk import.</p>
-        </div>
-        <div class="rc-tile">
-          <div class="rc-tile-icon"><i class="fa-solid fa-lock"></i></div>
-          <h4>Grandfathering</h4>
-          <p>Lock specific subscribers at their current price indefinitely with a subscription-level override.</p>
-        </div>
-      </div>
+      <p>In Recurly, a <strong>Plan</strong> is the pricing template all subscriptions are built from. Updating a plan's price takes effect for new subscribers immediately — existing subscribers stay at their current price until you explicitly migrate them. This course covers the strategy behind a price increase: when it makes sense, what to decide before you act, how to communicate it, and how to measure whether it worked. The UI steps and API mechanics are in Recurly Docs, linked throughout.</p>
 
       <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
         <div class="rc-callout-body">
           <strong>Updating the plan price alone is not enough</strong>
-          <p>Existing subscribers will not automatically move to the new price. They need to be explicitly migrated — either via API, bulk import, or manually — otherwise they continue renewing at the old amount indefinitely.</p>
+          <p>Existing subscribers will not automatically move to the new price. They need to be explicitly migrated — either via API script or individual manual edit — otherwise they continue renewing at the old amount indefinitely.</p>
         </div>
       </div>
     </div>
 
+    <!-- SECTION: TOC -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-map rc-fa-section"></i> Your learning path</h2>
-      <p>Six steps covering everything from the business case to post-change reporting and review. Work through them in order for the full picture, or jump to the topic most relevant to you right now.</p>
+      <h2><i class="fa-solid fa-map rc-fa-section"></i> What you'll cover</h2>
+      <p>Four pages covering the decisions and strategy behind a successful price increase. Work through them in order, or jump to the topic most relevant to where you are right now.</p>
 
       <div class="rc-toc-list">
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-toc-card">
           <div class="rc-toc-num">1</div>
           <div class="rc-toc-body">
-            <h4>Why increase prices?</h4>
-            <p>Build the business case: revenue impact, value alignment, and how to justify the decision internally and to subscribers.</p>
+            <h4>Is a price increase the right move?</h4>
+            <p>The business case, common triggers, how much to increase, and how to frame it for subscribers.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-toc-card">
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
-            <h4>Things to consider</h4>
-            <p>Timing, subscriber segments, grandfathering logic, contract obligations, and what to do with legacy plans.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-how" class="rc-toc-card">
-          <div class="rc-toc-num">3</div>
-          <div class="rc-toc-body">
-            <h4>How to execute it</h4>
-            <p>Update the plan price in the UI, then migrate existing subscribers via API, bulk import, or individual override.</p>
+            <h4>What to consider before you execute</h4>
+            <p>Subscriber segments, timing, grandfathering logic, contract obligations, and legacy plan cleanup — the decisions to lock in before touching the UI.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-toc-card">
-          <div class="rc-toc-num">4</div>
+          <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
-            <h4>How to communicate it</h4>
-            <p>Notification timeline, email templates, and how to use Recurly webhooks to trigger subscriber-facing messages at the right moment.</p>
+            <h4>Communicating the change</h4>
+            <p>Notification timeline, what to say in each touchpoint, and how to use Recurly's email and webhook tools to reach subscribers at the right moment.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-impact" class="rc-toc-card">
-          <div class="rc-toc-num">5</div>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-toc-card">
+          <div class="rc-toc-num">4</div>
           <div class="rc-toc-body">
-            <h4>Tracking impact</h4>
-            <p>Which Recurly reports to watch, KPIs to monitor, and how to build a 30/60/90-day baseline comparison after the change.</p>
+            <h4>Tracking your impact</h4>
+            <p>Which Recurly dashboards to watch, what KPIs to monitor, and how to build the baseline you'll need for a real 30/60/90-day comparison.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-toc-card">
-          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Knowledge check, reflection questions, and all course resources consolidated in one place.</p>
+            <p>A summary of what you covered, a reflection question, and all course resources consolidated in one place.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
       </div>
     </div>
 
+    <!-- PATH NAV BUTTONS -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
       <span class="rc-lp-nav-indicator">Overview</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-btn-path">Next: Why increase prices? →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-btn-path">Next: Is a price increase the right move? →</a>
     </div>
 
+    <!-- RESOURCES -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
-        <a href="https://docs.recurly.com/docs/plans" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Plans</a>
-        <a href="https://docs.recurly.com/docs/subscriptions" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Subscriptions</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/plans" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Plans</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/change-subscription" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Change subscription</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/managing-subscription-methods-guides" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Subscription management guide</a>
         <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
         <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
       </div>
     </div>
 
+    <!-- FOOTER NAV -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Plan price increase</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase" class="rc-footer-link">Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-why" class="rc-footer-link">1. Why increase prices?</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. Things to consider</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-how" class="rc-footer-link">3. How to execute it</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">4. How to communicate it</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-impact" class="rc-footer-link">5. Tracking impact</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-footer-link">6. Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-use-case" class="rc-footer-link">1. Is a price increase the right move?</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-footer-link">2. What to consider before you execute</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-communicate" class="rc-footer-link">3. Communicating the change</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-footer-link">4. Tracking your impact</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-review" class="rc-footer-link">5. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
