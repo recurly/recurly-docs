@@ -211,9 +211,9 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
-      <div class="rc-lp-hero-title"><h1>Pricing &amp; Plans 201: Review &amp; resources</h1></div>
+      <div class="rc-lp-hero-title"><h1>Pricing &amp; Plans 201 — Review &amp; resources</h1></div>
       <p>Six micro-paths. Eighteen pages. One complete advanced pricing and packaging portfolio — built, tested, and ready to measure.</p>
       
     </div>
