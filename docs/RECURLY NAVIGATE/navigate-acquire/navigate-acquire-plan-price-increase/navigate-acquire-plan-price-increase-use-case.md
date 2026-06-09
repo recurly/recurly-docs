@@ -208,7 +208,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
       </div>
-      <div class="rc-lp-hero-title"><h1>Is a price increase the right move?</h1></div>
+      <div class="rc-lp-hero-title"><h1>Plan price increase — Use cases</h1></div>
       <p>The business case, common triggers, how much to raise, and how to frame it for subscribers.</p>
     </div>
 
