@@ -215,20 +215,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Dunning 101</h1></div>
       <p>The top three optimizations that move the needle on payment recovery — plus how to track the results.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">3–5%</div>
-          <div class="rc-hero-stat-label">Avg recovery uplift</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">40%</div>
-          <div class="rc-hero-stat-label">Of churn is passive</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">27%</div>
-          <div class="rc-hero-stat-label">Avg recovery rate</div>
-        </div>
-      </div>
+      
     </div>
 
     <!-- STICKY NAV — LP Overview variant -->
