@@ -1,9 +1,9 @@
 ---
 title: Alternate Email Templates
 excerpt: >-
-  Tailor customer communication, branding, updates regarding local mandates, and
-  more, to each of your customer segments based on the business entity(ies) they
-  subscribe to, or their geographic location.
+  Learn how to create, configure, and manage alternate email template variants
+  in Recurly to deliver personalized, segmented communications to your
+  subscribers.
 deprecated: false
 hidden: false
 metadata:
@@ -13,193 +13,268 @@ metadata:
 next:
   description: ''
 ---
-# Overview
+<div class="rp-page">
+  <div class="rp-overview">Recurly's default email templates cover the full subscription lifecycle out of the box — but alternate email templates let you go further. Create up to 19 additional variants of any non-dunning email template, each with its own branding, content, and audience criteria. Whether you're running a multi-brand operation, serving subscribers across different regions, or targeting specific customer segments, alternate templates give you the control to send the right email from the right brand at the right time.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#create-an-alternate-email-template"><span class="rp-toc-num">3</span>Create an alternate email template</a>
+    <a class="rp-toc-pill" href="#header-and-footer-templates"><span class="rp-toc-num">4</span>Header and footer templates</a>
+    <a class="rp-toc-pill" href="#edit-an-alternate-email-template"><span class="rp-toc-num">5</span>Edit an alternate email template</a>
+    <a class="rp-toc-pill" href="#delete-an-alternate-email-template"><span class="rp-toc-num">6</span>Delete an alternate email template</a>
+  </div>
+</div>
 
-## Required plan
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Sensitive information</strong>To stay compliant with regulations such as PCI-DSS and HIPAA, do not include sensitive information — such as protected health information or credit card numbers — in any Recurly email template.</div>
+</div>
 
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
-
-### Important callout
-
-In order to be compliant with regulations and standards such as PCI-DSS, HIPAA, may we suggest not include any sensitive information (e.g. protected health information, credit card numbers) when using Recurly’s email templates.
-
-> 📘 Alternate Email Template functionality is separate from Dunning Email Campaigns
->
-> To learn more about how to create and manage multiple dunning campaign emails, read our [Dunning documentation](https://docs.recurly.com/docs/dunning-management#email-template-configuration).
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Alternate email templates vs. dunning email campaigns</strong>Alternate email templates are separate from dunning email campaigns. To create and manage multiple dunning campaign emails, see <a href="https://docs.recurly.com/docs/dunning-management#email-template-configuration" target="_blank">Dunning management — email template configuration</a>.</div>
+</div>
 
 # Definition
 
-Default email templates in Recurly refer to predefined layouts and formats which businesses can use to send automated or scheduled emails to their customers. These templates are designed to maintain brand consistency, enhance communication efficiency, and ensure relevant information is communicated in a structured manner.
-
-Alternate email templates, or the ability to create an alternate variant of a given email, empowers merchants to customize information sent via email for each of their unique customer segments. Each non-dunning email template can have up to 20 total variants, which includes the default template variant and 19 alternate email template variants. This means that you can have 20 different variations of each non-dunning email template.
+<div class="rp-definition">Default email templates are Recurly's predefined layouts for automated and scheduled subscriber emails — designed for brand consistency and reliable delivery at every lifecycle event. Alternate email templates let you create up to 19 additional variants of any non-dunning template, each tailored to a specific audience segment. Each variant can carry its own content, branding, subject line, language translations, and audience criteria, so the right version of every email reaches the right subscriber automatically.</div>
 
 # Key benefits
 
-All the benefits our default email templates already brought you... and more!
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></div>
+    <strong>Multi-brand support</strong>
+    <span>Maintain distinct email identities for each of your organization's brands or legal entities, so every subscriber gets communication that feels native to the brand they signed up with.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+    <strong>Compliant regional communications</strong>
+    <span>Include jurisdiction-specific disclosures or mandate-related content for subscribers in particular regions, keeping your email outreach compliant wherever your customers are.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+    <strong>Automated audience targeting</strong>
+    <span>Set audience criteria on each variant so Recurly automatically sends the correct email to the right customer segment — no manual routing required. Subscribers holding plans from multiple brands always receive the email from the correct brand.</span>
+  </div>
+</div>
 
-* **Supports multi-brand organizations:** Ensure each customer email resonates with each of your organization's brands or legal entities
-* **Send compliant emails:** Include local mandate-related communications to customers in specific regions to ensure your email outreach is compliant
-* **Create customer segments to bolster automation and efficiency:** Add audience criteria to each email template variant to automate the process of sending the correct email content to the desired customer audience. Email content and branding is dynamic based on a given applicable invoice event, allowing customers subscribing to more than 1 of your brands at once to receive the right email from the right brand and the right time
+# Create an alternate email template
 
-# Creating an alternate email template
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to Email Templates</h4><p>In the Admin Console, go to the Email Templates section.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Select New Template</h4><p>Find the template you want to create a variant for and click the <strong>New Template</strong> button.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Choose a base template</h4><p>A modal appears prompting you to select which existing template to copy from. If no alternates exist yet, the only option is the default template. Selecting a template copies over all of its settings, subject line, description, body content, language translations, and invoice PDF attachment preferences.</p></div>
+  </div>
+</div>
 
-1. Navigate to Email Templates.
-2. Identify the template you would like to create an alternate email template for, and select the "New Template" button.
-3. A modal will appear. If you haven't created an alternate email template for the given email before, the only option to create a new template off of will be from that email's default email template. **This will copy over all of that default template's (or the specific alternate template you select if others have already been created) settings, subject line, description, body content, language translations, and invoice PDF attachment preferences for emails with invoices associated.**
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/07e5f5beab4218be9cd05ea9020a067cfb0325c41045cdcdd75b33624b4ffc05-Screenshot_2024-12-09_at_8.30.23_PM.png" />
+<Image src="https://files.readme.io/07e5f5beab4218be9cd05ea9020a067cfb0325c41045cdcdd75b33624b4ffc05-Screenshot_2024-12-09_at_8.30.23_PM.png" align="center" width="75%" border={true} />
 
-1. Give the new alternate email template you would like to create a name, which will be internal and not customer-facing, and press "Create."
-2. On the new email template variant page, make sure to fill out all required fields.
-3. Add at least 1 piece of "Audience Criteria." Audience criteria can be any combination of Account Address Country, Billing Address Country, and/or Business Entity. Your template will remain in a "Disabled" state until you have at least 1 piece of Audience Criteria set, which is a requirement before changing it to an "Enabled" state. Press the "Enabled" button once you are ready for this variant to become active and start sending to customers that meet its Audience Criteria.
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/a3d033e8d18f8445fe25d903e15dbe86f39167046b09984bb51bcb83476aa6c6-Screenshot_2024-12-09_at_8.35.47_PM.png" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Name the variant</h4><p>Give the new template variant an internal name — this won't be visible to customers. Click <strong>Create</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Fill out all required fields</h4><p>On the new template variant page, complete all required fields before enabling the variant.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Add audience criteria</h4><p>Add at least one piece of audience criteria — Account Address Country, Billing Address Country, and/or Business Entity. The variant stays in a <strong>Disabled</strong> state until at least one criterion is set. When you're ready for the variant to go live, click <strong>Enabled</strong>.</p></div>
+  </div>
+</div>
 
-1. Press "Save Changes". If you do not save your changes and press "Cancel" or navigate away from the new template without saving, the new alternate template will not be saved nor created.
 
-## Email Template Settings
+<Image src="https://files.readme.io/a3d033e8d18f8445fe25d903e15dbe86f39167046b09984bb51bcb83476aa6c6-Screenshot_2024-12-09_at_8.35.47_PM.png" align="center" width="75%" border={true} />
 
-Email template general settings live at the email template variant level. This means that each individual email template on your site has its own configurable settings that you must set and manage on each variant, including the default variant.
 
-### General email settings available to all email templates are:
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Save your changes</h4><p>Click <strong>Save Changes</strong>. If you navigate away or click <strong>Cancel</strong> without saving, the new variant will not be created.</p></div>
+  </div>
+</div>
 
-* The *"From" email address* (required field) and *"CC email address"* (optional field) you would like to use for the given template variant
-* Whether or not to *append a PDF version of the customer's invoice* if there is an invoice associated with a given email template
-* The option to *disable sending the HTML version* of your email content to customers
-  * By default, Recurly sends both a plain-text and HTML email to your customers. Your user’s mail client will display the HTML version if it can, otherwise it will fall back to the text-only version.
+## Email template settings
 
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/5a25851753d47bcf1c1c7f8a4313271a479cef3bfe2642aee78770d87a6c79a4-Screenshot_2024-12-09_at_8.38.12_PM.png" />
+Settings are configured at the individual variant level — including the default variant. Each variant on your site has its own independent configuration.
 
-There are additional specialized email settings that apply to some emails.
+### General settings (all templates)
 
-For example, you can specify how many days before a renewal event occurs you want to send a renewal email to your customer. Recurly applies the industry-standard amount of days prior to an event to send a given renewal-reminder email to customers, however, you can change those settings by clicking "Options" next to an email template type, and then "Settings." The "Options" dropdown is only available on email templates that have applicable specialized settings.
+- **"From" email address** (required) and **CC email address** (optional) for the variant
+- Whether to **append a PDF version** of the customer's invoice for templates with an associated invoice
+- Whether to **disable the HTML version** of the email — by default, Recurly sends both plain-text and HTML; the recipient's mail client displays HTML if supported, otherwise falls back to plain text
 
-### Email templates with specialized settings include:
 
-* Payment Confirmation
-* Trial Ending
-* All Subscription Renewal Emails (Bill Date Reminder, Term Renewal Reminder, Annual Reminder, Mastercard Reminder, SEPA Renewal Reminder, Credit Card Expired, Ramp Price Change)
+<Image src="https://files.readme.io/5a25851753d47bcf1c1c7f8a4313271a479cef3bfe2642aee78770d87a6c79a4-Screenshot_2024-12-09_at_8.38.12_PM.png" align="center" width="75%" border={true} />
 
-## Audience Criteria
 
-A given email template variant can be sent to a customer based on their **plan(s)**, **billing or account country location**, or the **business entity(ies)** they subscribe to. These criteria are configurable under each email template variant's "Audience Criteria" section. Default email template variants do not have an Audience Criteria section, because they are used as the "fallback" email template to send to any customer who does not meet any attributes specified in an alternate template.
+### Specialized settings (select templates)
 
-### Simple Example
+Some templates support additional settings — for example, configuring how many days before a renewal event a reminder email is sent. To access these, click **Options** next to the template type, then **Settings**. The **Options** dropdown only appears on templates that have applicable specialized settings.
 
-A merchant has 1 business entity that supports subscribers worldwide. They have a default email template for all emails, but are going to create 1 additional variant for each of their emails on Recurly, which have an intended audience of European Union-based subscribers.
+Templates with specialized settings include:
 
-Let's use the "New Subscription" email template as an example. The merchant has a customer, Anne Smith, who lives in France. The merchant creates a separate email template variant for the "New Subscription" email template and sets the Account and Billing Country attributes to "France, Italy, Spain, and Germany."
+- Payment Confirmation
+- Trial Ending
+- Bill Date Reminder
+- Term Renewal Reminder
+- Annual Reminder
+- Mastercard Reminder
+- SEPA Renewal Reminder
+- Credit Card Expired
+- Ramp Price Change
 
-Anne Smith previously received the default template variant for the New Subscription email, will she will now automatically receive the merchant's EU-focused email template variant instead, since she meets its Audience Criteria.
+## Audience criteria
 
-### Unique Audience Criteria
+Audience criteria determine which customers receive a given template variant. Criteria can be any combination of **Plan**, **Billing Address Country**, **Account Address Country**, and **Business Entity**. The default template variant has no audience criteria — it acts as the fallback for any customer who doesn't meet the criteria of any alternate variant.
 
-> 📘 Audience Criteria must be unique for email variants within the same email template type
->
-> You can not use the same Audience Criteria in one variant within a given email template on another variant within the same email template. You can, however, repeat Audience Criteria in a template variant within a completely separate email template.
+### Simple example
 
-Let's use the "New Subscription" email template as an example. If you make three (3) email template variants for "New Subscription," and add your "ACME EU" Business Entity, "France" as an Account Country  and "Italy" as a Billing Country for attributes on the Audience Criteria for a New Subscription template variant, then you will not be able to reuse those specific attributes (ACME EU for Business Entity, and/or France for Account Country, and/or Italy for Billing Country) as criteria on any other template variant under the New Subscription email template type. This prevents conflicting logic in determining which email template variant to send your customers.
+A merchant creates one alternate variant of the New Subscription email template targeting EU-based subscribers, with Account Country and Billing Country set to France, Italy, Spain, and Germany.
 
-### Audience Criteria Hierarchy
+A customer, Anne Smith, lives in France. She previously received the default template variant. Once the EU variant is active, she automatically receives the EU-focused variant instead — no manual action required.
 
-The example above was a simplified way of demonstrating how a merchant would ensure the correct email template variant is sent to a customer. However, it is likely that more complex organizations will require more flexible support.
+### Unique criteria requirement
 
-Depending on your business model, you may have customers that meet attributes that span more than one alternate email variant within any given email template. When this happens, there is a hierarchy that will take effect to send the appropriate email template to your customer. The hierarchy of choosing a template variant when a customer meets **more than one template variant's Audience Criteria** is the following:
+Audience criteria must be unique across all variants within the same email template type. If a variant for New Subscription already uses "ACME EU" as a Business Entity and "France" as an Account Country, no other variant under New Subscription can use those same values. This prevents conflicting logic when Recurly determines which variant to send.
 
-1. **Plan**
-   1. If a Plan is set as the email template variant's Audience Criteria, then the Plan will determine which of your customers will receive the email template variant regardless if any other Audience Criteria has been selected.
-      1. If you choose ***not*** to use Plan in your Audience Criteria, plans will not be taken into consideration when determining which email variant to send a customer at a given point in time.  In this case, Business Entity, Billing Country, or Account Country, if chosen, will be used to determine which template variant to send.
-2. **Business Entity**
-   1. If there is an invoice associated with an email event, or if a customer account has an Overriding Business Entity applied, then the Business Entity will determine which email template variant your customer will receive.
-      1. If you choose ***not*** to use Business Entity in your Audience Criteria, business entities will not be taken into consideration when determining which email variant to send a customer at a given point in time. In this case, Billing Country or Account Country will be used to determine which template variant to send.
-3. **Billing Country**
-   1. If there is no Business Entity attribute set in an email template variant's Audience Criteria, or a business entity is not able to be identified for an email because a customer does not have an Overriding Business Entity applied to their account ***and*** there is no invoice associated with the particular email template, then **Billing Country** will be used to determine which email variant to send a customer.
-4. **Account Country**
-   1. If there is no Business Entity attribute set in an email template variant's Audience Criteria, ***or*** a business entity is not able to be identified for an email because a customer does not have an Overriding Business Entity applied to their account ***and*** there is no invoice associated with the particular email template, ***or*** a Billing Country is not set on a customer's account, which is very common with manual subscriptions and invoices, then the customer's **Account Country** will be used to determine which email variant to send a customer.
+Criteria can, however, be reused across variants in _different_ email template types — the uniqueness rule applies only within a single template type.
 
-### Complex Example
+### Audience criteria hierarchy
 
-Let's put the hierarchy of Audience Criteria behavior into a few practical examples.
+When a customer matches more than one variant's criteria, Recurly uses the following hierarchy to determine which variant to send:
 
-A merchant has one (1) plan and four (4) business entities that they maintain on their single Recurly site. Their plan is called Standard and their entities are ACME INC (which is their site default entity), ACME US, ACME EU, and ACME UK. They have a default email template for all emails, and have created four (4) additional template variants for each of their email templates on Recurly; three (3) reflecting their alternate business entities and one (1) reflecting the their plan. Let's use the New Subscription email template as an example. The Audience Criteria for each of their template variants for the New Subscription email template is as follows:
+1. **Plan** — If a Plan is set as audience criteria on a variant, it takes precedence over all other criteria. Customers on that plan receive that variant regardless of any other attributes. If no Plan criteria is set, plans are not considered.
+2. **Business Entity** — If an invoice is associated with the email event, or the customer's account has an overriding business entity applied, Business Entity determines the variant. If no Business Entity criteria is set, it is not considered.
+3. **Billing Country** — Used when no Business Entity criteria is set, or when a business entity cannot be identified (no overriding entity on the account and no associated invoice).
+4. **Account Country** — Used as the final fallback when no Business Entity criteria is set, no business entity can be identified, and no Billing Country is set on the customer's account. This is common with manual subscriptions and invoices.
 
-**New Subscription**
+### Complex example
 
-* **ACME INC-** No Audience Criteria because it is configured as the default template variant
-* **ACME US-** Account Country and Billing Country = United States, Mexico, Business Entity= ACME US
-* **ACME EU-** Account Country and Billing Country = France, Germany, Italy, Spain, Business Entity= ACME EU
-* **ACME UK-** Account and Billing Country = United Kingdom, Business Entity= ACME UK
-* **Standard Plan-** Plan = Standard
+A merchant has one plan (Standard) and four business entities: ACME INC (site default), ACME US, ACME EU, and ACME UK. They have a default template plus four alternate variants for New Subscription, with the following audience criteria:
 
-There are seven (7) customers we are going to focus on to showcase different scenarios of how the New Subscription template assignment will send to a given customer.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Variant</td><td>Audience criteria</td></tr>
+  <tr><td>ACME INC</td><td>Default — no audience criteria</td></tr>
+  <tr><td>ACME US</td><td>Account Country and Billing Country = United States, Mexico; Business Entity = ACME US</td></tr>
+  <tr><td>ACME EU</td><td>Account Country and Billing Country = France, Germany, Italy, Spain; Business Entity = ACME EU</td></tr>
+  <tr><td>ACME UK</td><td>Account Country and Billing Country = United Kingdom; Business Entity = ACME UK</td></tr>
+  <tr><td>Standard Plan</td><td>Plan = Standard</td></tr>
+</table>
 
-**Customer Accounts and Scenarios**
+The following scenarios show how the hierarchy plays out across seven customer accounts.
 
-* **Anne Smith-** Account and Billing Country in the US, no business entity override on her account
-  * Anne Smith will receive the ACME US email variant for the New Subscription email template
+<div class="rp-card">
 
-`This is because both of Anne's addresses are located in the United States, and she has no business entity account level override. `
+### Anne Smith — receives ACME US variant
+
+Account Country: United States | Billing Country: United States | No business entity override
+
+Both of Anne's addresses are in the US and she has no overriding business entity, so she meets the ACME US criteria and receives that variant.
+
+</div>
+
+<div class="rp-card">
+
+### Gary Johnson — receives ACME EU variant
+
+Account Country: United Kingdom | Billing Country: Germany | No business entity override
+
+Gary meets the criteria for both ACME EU (billing address) and ACME UK (account address). Since he has no overriding business entity, Recurly applies the Billing Country tier of the hierarchy — his German billing address resolves to ACME EU.
+
+</div>
+
+<div class="rp-card">
+
+### Pete Clark — receives ACME INC variant
+
+Account Country: Germany | Billing Country: United Kingdom | Business entity override: ACME INC
+
+Pete meets the location criteria for both ACME EU and ACME UK, but his account-level business entity override takes precedence. Business Entity sits at the top of the hierarchy above all location-based criteria.
+
+</div>
+
+<div class="rp-card">
+
+### Mary Lee — receives ACME EU variant
+
+Account Country: France | No Billing Country | No business entity override
+
+Mary has no overriding business entity and no Billing Country set. Recurly falls through to Account Country, which matches the ACME EU criteria.
+
+</div>
+
+<div class="rp-card">
+
+### Stephanie Jones — receives ACME INC variant (default)
+
+Account Country: Australia | Billing Country: Australia | No business entity override
+
+Stephanie's addresses don't match any alternate variant's criteria and she has no overriding business entity, so she receives the default ACME INC template.
+
+</div>
+
+<div class="rp-card">
+
+### Calvin Charles — receives ACME UK variant
+
+Account Country: Australia | Billing Country: Australia | Business entity override: ACME UK
+
+Calvin's addresses don't match any location-based criteria, but his account-level business entity override is set to ACME UK. Business Entity takes precedence — he always receives the ACME UK variant as long as that entity is configured as a criterion on one of the variants.
+
+</div>
+
+<div class="rp-card">
+
+### David Peterson — receives Standard Plan variant
+
+Account Country: Germany | Billing Country: United Kingdom | Business entity override: ACME INC | Plan: Standard
+
+David meets multiple criteria, but Plan sits at the top of the hierarchy. Because the Standard Plan variant exists and David is on that plan, he receives the plan-specific variant regardless of any other matching criteria.
+
+</div>
+
+# Header and footer templates
+
+Merchants can create up to 20 header templates and 20 footer templates. These are typically used to display organization details such as company name, subsidiary, location, contact information, and logo.
+
+
+<Image src="https://files.readme.io/1bc450d16b284b544de39bd4864fc692fa03f3ee438636e456805f5ce478f81a-Screenshot_2024-12-09_at_8.43.18_PM.png" align="center" width="75%" border={true} />
+
+
+Header and footer templates don't have audience criteria — they're applied directly on each email template variant. If you don't set a specific header or footer on a variant, the site-default templates are applied automatically. You can update a variant's header and footer configuration at any time.
+
+
+<Image src="https://files.readme.io/84836ea3a8b5bb0f16b30b37556a894d242cd09338fb3bc16a1c9dc2d62a7361-Screenshot_2024-12-09_at_8.40.46_PM.png" align="center" width="75%" border={true} />
+
+
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Deleted header/footer templates</strong>If you delete an alternate header or footer template, the default header or footer template is automatically applied to any email template variant that was using the deleted one.</div>
+</div>
+
+# Edit an alternate email template
+
+To edit any template variant — including the default — hover over the ellipsis (**…**) in the row of the variant you want to edit. This opens the edit page for that variant. Click **Save Changes** before navigating away to ensure your edits are applied. All changes take effect on emails generated after saving.
+
+# Delete an alternate email template
+
+Default template variants cannot be deleted, though they and all their variants can be disabled at any time.
+
+To delete an alternate variant, hover over the ellipsis (**…**) in the variant's row, click **Delete**, and confirm. You can also delete a variant from within its own edit page, using the delete option in the bottom-right corner.
+
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Deletion is permanent</strong>Deleted variants cannot be recovered. If you delete an enabled variant that has audience criteria set, customers who matched that variant's criteria will automatically fall through to the next matching variant — or to the default template if no other match exists.</div>
+</div>
 
 <br />
-
-* **Gary Johnson-** Account Country in United Kingdom, Billing Country in Germany, no business entity override on his account
-  * Gary Johnson will receive the **ACME EU** email variant for the New Subscription email template
-
-`Gary does not have an overriding business entity on his account, and he meets the criteria to receive both the ACME EU and ACME UK email variants given his account address in the UK and his billing address in the EU. When this happens, Recurly's attribute hierarchy will choose the Billing Country to determine which variant to send a customer. `
-
-<br />
-
-* **Pete Clark-** Account Country in Germany, Billing Country in United Kingdom, account level business entity override set to ACME INC
-  * Pete Clark will receive the **ACME INC** email variant for the New Subscription email template
-
-`Although Pete meets the criterion to receive both the ACME EU and ACME UK variants, his address locations are irrelevant in determining which variant he should receive, since he has an overriding business entity set on his account. Business Entity is at the top of the hierarchy in determining which variant to assign a customer. `
-
-<br />
-
-* **Mary Lee-** Account Country in France, no Billing Country, no business entity override on her account
-  * Mary Lee will receive the **ACME EU** email variant for the New Subscription email template
-
-`Since Mary does not have an overriding business entity set on her account, and does not have a Billing Country in a different location from her Account Country, she will receive the ACME EU email variant since she meets that variant's Account Country criteria. `
-
-<br />
-
-* **Stephanie Jones-** Account and Billing Country set to Australia, no business entity override on her account
-  * Stephanie Jones will receive the **ACME INC** email variant for the New Subscription email template
-
-`Stephanie lives in Australia, which is outside the geographic specifications of subscribers automatically assigned to any of the alternate business entities and email template variants. Because her account and billing addresses do not meet any of the criteria for receiving an alternate email variant, and there is no overriding business entity set on her account, she will receive the default email template variant. `
-
-<br />
-
-* **Calvin Charles-** Account Country and Billing Country in Australia, account level business entity override set to ACME UK
-  * Calvin Charles will receive the **ACME UK** email variant for the New Subscription email template
-
-`Charles does not have billing or account addresses that would meeting the location-based attributes of any of the alternate email variants, but he does have an overriding business entity assigned on his account. This means that he will always receive the email variants for the ACME UK entity, so long as the ACME UK entity is set as an attribute on one of the merchant's email variants. `
-
-* **David Peterson-** Account Country in Germany, Billing Country in United Kingdom, account level business entity override set to ACME INC, Plan is set to 'Standard'
-  * David Peterson will receive the **Plan** email variant for the New Subscription email template.
-
-`Although David meets the criterion to receive other email variants, the Plan Acceptance Criteria is the first in the hierarchy and anything after that will not be used to determine which variant to send.`
-
-<br />
-
-## Header and Footer templates
-
-Merchants can make up to 20 total header templates and 20 total footer templates. These templates are typically used to communicate organization information like company or subsidiary name, location, contact information, and logos.
-
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/1bc450d16b284b544de39bd4864fc692fa03f3ee438636e456805f5ce478f81a-Screenshot_2024-12-09_at_8.43.18_PM.png" />
-
-Header and Footer templates do not have Audience Criteria. You can apply header and footer templates directly on each email template variant. If you do not set specific header/footer configurations on an email template variant, the default header and footer templates will be automatically applied. You can change an email template's header/footer configurations at any time.
-
-<Image align="center" className="border" border={true} width="75% " src="https://files.readme.io/84836ea3a8b5bb0f16b30b37556a894d242cd09338fb3bc16a1c9dc2d62a7361-Screenshot_2024-12-09_at_8.40.46_PM.png" />
-
-If you delete an alternate header or footer template, the default header or footer template will be automatically applied to any email template variant that was using that deleted header and/or footer.
-
-# Editing an alternate email template
-
-To edit any email template variant within a given email template, including the default variant, hover over the ellipses in the row of the template variant want to edit. That will take you to the edit page for the given template variant. Make sure to press "Save Changes" before navigating away from the screen to ensure any changes you make are applied. All edits will take effect on forward-moving emails generated after your edits have been successfully saved.
-
-# Deleting an alternate email template
-
-Default template variants are not able to be deleted. Default templates and all of its variants can be disabled at any time, however. To delete an alternate email template, hover over the ellipses in the row of the email variant you would like to delete, press delete, and confirm that you would like to proceed. This action is irreversible. Once deleted, there is no way to recover that variant. You can also delete a template variant when editing the individual variant itself, on the bottom right side of the page.
-
-If you decide to delete an alternate email template that is enabled and has Audience Criteria set, the customers who would have receive that template based on the Audience Criteria attributes they met will receive a different template variant whose criteria they meet, otherwise they will receive the default email variant.
