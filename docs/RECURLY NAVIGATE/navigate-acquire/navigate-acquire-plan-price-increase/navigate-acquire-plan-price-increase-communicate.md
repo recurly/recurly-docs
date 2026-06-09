@@ -250,7 +250,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-steps">
         <div class="rc-step">
-          <div class="rc-step-num-time">Day 0</div>
+          <div class="rc-step-num-time">Day 0</div><br>
           <div class="rc-step-content">
             <h4>Initial announcement — 30–90 days before the change</h4>
             <p>Your primary notification. Explain the why, state the new price, give the effective date. This is the most important message in the sequence — give it the most attention. Personalize with the subscriber's current plan name and price where possible.</p>
