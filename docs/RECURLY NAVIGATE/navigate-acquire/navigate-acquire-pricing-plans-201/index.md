@@ -204,7 +204,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Announcement bar (hidden — add rc-active to show) -->
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
-        🗓️ <strong>Upcoming:</strong> Join our CSMs for a live Pricing &amp; Packaging Q&amp;A.
+        🗓️ <strong>Upcoming:</strong> Join our CSMs for a live Pricing &amp; Plans Q&amp;A.
         <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
@@ -249,7 +249,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- About this path -->
     <div class="rc-lp-section">
       <h2>📖 About this path</h2>
-      <p>Pricing &amp; Packaging 101 covered the core Recurly configuration — plans, add-ons, currencies, pricing models, trials, and analytics. This series assumes you have that foundation in place and asks: how do you use it at scale?</p>
+      <p>Pricing &amp; Plans 101 covered the core Recurly configuration — plans, add-ons, currencies, pricing models, trials, and analytics. This series assumes you have that foundation in place and asks: how do you use it at scale?</p>
       <p>Each Micro-Path in 201 tackles a specific challenge that arises as a subscription business matures: serving multiple customer segments without plan sprawl, structuring billing for enterprise accounts, aligning cost with usage, and making your analytics data work as hard as your product does.</p>
 
       <div class="rc-stat-strip">
