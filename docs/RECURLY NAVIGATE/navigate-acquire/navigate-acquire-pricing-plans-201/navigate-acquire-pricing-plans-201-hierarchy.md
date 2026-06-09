@@ -202,15 +202,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire"> Acquire · P&amp;P 201
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 201
       </div>
       <div class="rc-lp-hero-title"><h1>Account Hierarchy</h1></div>
       <p>Enterprise and B2B customers rarely fit the one-account, one-subscription model. Account Hierarchy lets you structure parent and child accounts to reflect how your customers actually operate — and choose exactly where billing lands.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Parent or child</div><div class="rc-hero-stat-label">either can hold billing responsibility — you choose per account</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Invoice Rollup</div><div class="rc-hero-stat-label">consolidates child charges into one parent invoice — requires Calendar Billing + support activation</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">API or UI</div><div class="rc-hero-stat-label">hierarchy can be created and modified in the admin console or via the Recurly API</div></div>
-      </div>
+      
     </div>
 
     <!-- Navigation Menu — page 1 active -->
