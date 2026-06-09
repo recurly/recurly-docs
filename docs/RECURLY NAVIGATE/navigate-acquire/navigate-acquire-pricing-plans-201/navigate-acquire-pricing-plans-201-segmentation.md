@@ -193,11 +193,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Price Segmentation</h1></div>
       <p>Your plan structure shouldn't multiply every time you enter a new market or test a new price point. Price segments let you serve different subscriber groups at different price points — from a single plan configuration.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">1 plan</div><div class="rc-hero-stat-label">serves unlimited price segments — no duplicate configurations required</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Segment code</div><div class="rc-hero-stat-label">assigned at subscription creation to determine which price a subscriber pays</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">External only</div><div class="rc-hero-stat-label">segment performance analytics require tracking outside Recurly — plan for this before you activate</div></div>
-      </div>
+      
     </div>
 
     <!-- Navigation Menu — non-sticky, open, Micro-Path, page 1 active -->
