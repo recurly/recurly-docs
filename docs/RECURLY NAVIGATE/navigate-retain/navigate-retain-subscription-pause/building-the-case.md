@@ -1,112 +1,442 @@
 ---
-title: Building the Case
+title: 'Pause subscriptions: Tracking impact'
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
 <HTMLBlock>{`
-<HTMLBlock>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-  .rc-guide{
-    --yellow:#FFD706;--orange:#FF8200;--vermillion:#FF5810;--salmon:#FF9D88;
-    --offblack:#0D0D0B;--darkgray:#32312D;--gray:#807D73;--lightgray:#CCC9B8;
-    --brightgray:#F1EFE3;--offwhite:#FFFDF2;
-    font-family:'Segoe UI',system-ui,sans-serif;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;color:var(--darkgray)}
-  .rc-hero{background:var(--offblack);color:#fff;padding:56px 40px 48px;text-align:center;border-radius:16px}
-  .rc-badge{display:inline-block;background:var(--yellow);color:var(--offblack);border-radius:20px;padding:6px 18px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
-  .rc-hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin:0 0 14px;color:var(--offwhite)}
-  .rc-hero p{font-size:1.05rem;opacity:.8;max-width:700px;margin:0 auto 0;color:var(--lightgray)}
-  .rc-nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 28px}
-  .rc-nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--lightgray);background:#fff;color:var(--darkgray);text-decoration:none;font-size:.88rem;font-weight:700}
-  .rc-nav a.is-active{background:var(--yellow);border-color:var(--yellow);color:var(--offblack)}
-  .rc-snum{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--offblack);color:var(--yellow);font-size:12px;font-weight:700}
-  .rc-sec-header{display:flex;align-items:flex-start;gap:20px;margin-bottom:32px}
-  .rc-sec-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;background:var(--yellow)}
-  .rc-sec-header h2{font-size:1.7rem;font-weight:800;margin:0 0 6px;color:var(--offblack)}
-  .rc-sec-header>div>p{color:var(--gray);font-size:.95rem;line-height:1.5;margin:0}
-  .rc-card{background:var(--offwhite);border-radius:16px;padding:28px;border:1px solid var(--lightgray);margin-bottom:20px}
-  .rc-subhead{font-size:1rem;font-weight:700;margin:0 0 16px;color:var(--offblack)}
-  .rc-step{background:var(--offwhite);border-radius:14px;padding:22px 26px;border:1px solid var(--lightgray);display:flex;gap:18px;align-items:flex-start;margin-bottom:16px}
-  .rc-sbadge{width:38px;height:38px;border-radius:10px;background:var(--offblack);color:var(--yellow);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .rc-step h3{font-size:.98rem;font-weight:700;margin:0 0 5px;color:var(--offblack)}
-  .rc-step p{font-size:.87rem;color:var(--gray);line-height:1.6;margin:0}
-  .rc-tip{background:var(--offwhite);border:2px solid var(--yellow);border-radius:14px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}
-  .rc-tipicon{font-size:24px;flex-shrink:0}
-  .rc-tip h4{font-size:.82rem;font-weight:700;color:var(--offblack);text-transform:uppercase;letter-spacing:.5px;margin:0 0 4px}
-  .rc-tip p{font-size:.87rem;color:var(--darkgray);line-height:1.55;margin:0}
-  .rc-sec-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;flex-wrap:wrap}
-  .rc-btn-prev,.rc-btn-next{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none}
-  .rc-btn-prev{border:1px solid var(--lightgray);background:#fff;color:var(--darkgray)}
-  .rc-btn-next{background:var(--yellow);color:var(--offblack);border:1px solid var(--yellow)}
-  @media (max-width:640px){
-    .rc-hero h1{font-size:1.7rem}
-    .rc-hero{padding:36px 20px 32px}
-    .rc-nav,.rc-sec-nav,.rc-sec-header{flex-direction:column}
-    .rc-sec-nav{align-items:stretch}
-  }
+/* HOST-THEME BACKGROUND OVERRIDE */
+body { background: #ffffff !important; }
+
+/* GLOBAL CSS IMMUNITY BLOCK */
+.rc-guide h1 { border-bottom: none !important; padding-bottom: 0 !important; }
+.rc-guide, .rc-guide * { font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important; }
+.rc-guide [class^="fa-"],
+.rc-guide [class*=" fa-"] { font-family: "Font Awesome 6 Free" !important; }
+.rc-guide .fa-brands,
+.rc-guide [class*="fa-brands"] { font-family: "Font Awesome 6 Brands" !important; }
+
+/* NAVIGATE MASTER ARMOR */
+.rm-Markdown.markdown-body .rc-guide a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a,
+.rc-guide a:link,
+.rc-guide a:visited,
+.rc-guide a:hover,
+.rc-guide a:active {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  text-underline-offset: unset !important;
+  border-bottom: 0 !important;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+.rc-guide {
+  --yellow:     #FFD706;
+  --orange:     #FF8200;
+  --retain:     #FF9D88;
+  --offblack:   #0D0D0B;
+  --darkgray:   #32312D;
+  --gray:       #807D73;
+  --lightgray:  #CCC9B8;
+  --brightgray: #F1EFE3;
+  --offwhite:   #FFFDF2;
+  font-family: "Polar", "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  color: #32312D !important;
+  background: #ffffff;
+}
+.rc-guide * { box-sizing: border-box; }
+
+/* FA6 ICON HELPERS */
+.rc-fa-announce { color: #0D0D0B; font-size: 1rem; flex-shrink: 0; }
+.rc-fa-dark  { color: #FFD706 !important; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-light { color: #0D0D0B; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+.rc-fa-section { color: #0D0D0B; font-size: 1rem; }
+
+/* ── BACK LINK ── */
+.rc-top-nav { padding: 20px 40px 16px; max-width: 1200px; margin: 0 auto; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-back-link { color: #807D73 !important; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-back-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-back-link:hover { color: #FF8200 !important; }
+
+/* ── CONTENT WRAP ── */
+.rc-content-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* ── ANNOUNCEMENT BAR ── */
+.rc-announce-bar {
+  display: none; background: #FFD706; color: #0D0D0B;
+  align-items: center; justify-content: space-between;
+  padding: 10px 20px; font-size: .88rem; font-weight: 600;
+  border-radius: 10px; margin-bottom: 16px; gap: 12px; line-height: 1.4;
+}
+.rc-announce-bar.rc-active { display: flex; }
+.rc-announce-inner { display: flex; align-items: center; gap: 10px; flex: 1; flex-wrap: wrap; }
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-announce-link {
+  color: #0D0D0B !important; font-weight: 800; white-space: nowrap;
+  padding: 4px 12px; background: rgba(0,0,0,0.10); border-radius: 6px;
+  transition: background 0.2s; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-announce-link:hover { background: rgba(0,0,0,0.20); color: #0D0D0B !important; }
+
+/* ── HERO ── */
+.rc-hero {
+  background: linear-gradient(rgba(13,13,11,0.82), rgba(13,13,11,0.82)),
+              url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;
+  background-color: #0D0D0B; background-size: cover;
+  color: #fff; padding: 48px 40px 44px; text-align: center; border-radius: 16px; margin-bottom: 0;
+}
+.rc-lp-pillar-tag {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,157,136,0.20); border: 1px solid rgba(255,157,136,0.45);
+  color: #FF9D88; font-size: .75rem; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 20px; margin-bottom: 20px;
+}
+.rc-lp-pillar-tag img { width: 13px; height: 13px; object-fit: contain; }
+.rc-lp-hero-title { text-align: center; margin: 0 0 14px; }
+.rc-lp-hero-title h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.15; color: #FFFDF2; margin: 0; }
+.rc-hero > p { font-size: 1rem; opacity: .85; max-width: 640px; margin: 0 auto; color: #CCC9B8; line-height: 1.6; }
+
+/* ── NAV ── */
+details.rc-sticky-nav-wrap {
+  position: relative;
+  z-index: 1;
+  background-color: #FF9D88;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 24px 0 48px 0; border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08); overflow: hidden;
+}
+details.rc-sticky-nav-wrap > summary { list-style: none; display: flex; align-items: center; padding: 15px 24px; cursor: pointer; user-select: none; }
+details.rc-sticky-nav-wrap > summary::-webkit-details-marker { display: none; }
+details.rc-sticky-nav-wrap > summary::marker { display: none; }
+.rc-nav-toggle-label { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .88rem; letter-spacing: 0.6px; text-transform: uppercase; color: #0D0D0B; }
+.rc-nav-chevron { font-size: .72rem; color: #0D0D0B; opacity: 0.55; line-height: 1; transition: transform 0.25s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-chevron { transform: rotate(180deg); }
+.rc-nav-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
+.rc-nav-drawer-inner { overflow: hidden; border-top: 1px solid rgba(0,0,0,0.10); }
+.rc-nav-links { display: flex; flex-wrap: wrap; gap: 6px 4px; padding: 12px 20px 18px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link {
+  color: #0D0D0B !important; font-weight: 700; font-size: .83rem; letter-spacing: 0.4px;
+  text-transform: uppercase; padding: 7px 14px; border-radius: 7px; transition: all .18s;
+  white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+.rc-sticky-link img { width: 15px; height: 15px; object-fit: contain; }
+.rc-step-badge { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #0D0D0B; color: #FFD706; font-size: .65rem; font-weight: 800; flex-shrink: 0; line-height: 1; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-sticky-link-active:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); color: #0D0D0B !important; }
+
+/* ── CONTENT SECTIONS ── */
+.rc-lp-section { margin-bottom: 48px; }
+.rc-lp-section h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 20px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
+.rc-lp-section h2::after { content: ""; flex-grow: 1; height: 1px; background: #CCC9B8; }
+.rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
+
+/* ── KPI CARD GRID ── */
+.rc-card-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 0 0 32px; }
+.rc-feature-card { background: #FFFDF2; border: 1px solid #CCC9B8; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 10px; transition: all .2s ease; }
+.rc-feature-card:hover { border-color: #FF9D88; box-shadow: 0 4px 16px rgba(255,157,136,0.15); transform: translateY(-2px); }
+.rc-feature-icon { font-size: 1.4rem; line-height: 1; color: #0D0D0B; }
+.rc-feature-card h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B; margin: 0; }
+.rc-feature-card p { font-size: .88rem; color: #807D73; line-height: 1.55; margin: 0; flex-grow: 1; }
+.rc-feature-tag { display: inline-block; margin-top: 4px; padding: 3px 10px; border-radius: 20px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; background: #0D0D0B; color: #FFD706; width: fit-content; }
+
+/* ── NUMBERED STEPS ── */
+.rc-steps { display: flex; flex-direction: column; gap: 0; margin: 20px 0 0; }
+.rc-step { display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F1EFE3; }
+.rc-step:last-child { border-bottom: none; }
+.rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
+.rc-step-content p { font-size: .92rem; color: #807D73; line-height: 1.6; margin: 0 0 8px; }
+.rc-step-content p:last-child { margin-bottom: 0; }
+.rc-step-content strong { color: #32312D; }
+
+/* ── CALLOUTS ── */
+.rc-callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+.rc-callout-icon { font-size: 1.1rem; line-height: 1.4; flex-shrink: 0; }
+.rc-callout-body { flex: 1; }
+.rc-callout-body > strong { font-size: .88rem; font-weight: 800; display: block; margin-bottom: 4px; }
+.rc-callout-body p { font-size: .9rem; line-height: 1.55; margin: 0; color: #32312D; }
+.rc-callout-tip     { background: #F1EFE3; border-left: 4px solid #0D0D0B; }
+.rc-callout-warning { background: rgba(255,215,6,0.12); border-left: 4px solid #FFD706; }
+.rc-callout-tip .rc-callout-body > strong     { color: #0D0D0B; }
+.rc-callout-warning .rc-callout-body > strong { color: #32312D; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide .rc-callout-body a { color: #FF8200 !important; font-weight: 600; border-bottom: 0 !important; }
+.rm-Markdown.markdown-body .rc-guide .rc-callout-body a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide .rc-callout-body a:hover { text-decoration: underline !important; text-decoration-color: #FF8200 !important; text-underline-offset: 2px !important; }
+
+/* ── PATH NAV ── */
+.rc-lp-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 40px 0 16px; }
+.rc-lp-nav-indicator { font-size: .8rem; font-weight: 600; color: #CCC9B8; letter-spacing: .5px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-prev { background: transparent; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 24px; border-radius: 10px; font-weight: 700; font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #CCC9B8 !important; border-bottom: 2px solid #CCC9B8 !important; transition: all .2s; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-prev:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-prev:hover { border: 2px solid #0D0D0B !important; border-bottom: 2px solid #0D0D0B !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; text-decoration: none !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+.rm-Markdown.markdown-body .rc-guide a.rc-btn-path:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-btn-path:hover { background: transparent !important; color: #0D0D0B !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
+
+/* ── RESOURCES ── */
+.rc-resources { background: #F1EFE3; border-left: 4px solid #FF9D88; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-resource-link {
+  color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
+  text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem;
+  transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF9D88 !important; }
+
+/* ── FOOTER ── */
+.rc-footer-nav { border-top: 1px solid #CCC9B8; padding-top: 40px; margin-top: 48px; padding-bottom: 48px; }
+.rc-footer-links { display: flex; flex-direction: column; gap: 16px; }
+.rc-footer-section { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.rc-footer-label { font-weight: 800; font-size: .75rem; text-transform: uppercase; letter-spacing: .8px; color: #32312D; background: #F1EFE3; padding: 4px 10px; border-radius: 6px; margin-right: 4px; }
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
+.rc-guide a.rc-footer-link {
+  color: #807D73 !important; text-decoration: none !important; font-weight: 600; font-size: .88rem;
+  transition: color .2s ease; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-footer-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
+.rc-guide a.rc-footer-link:hover { color: #FF8200 !important; }
+.rc-footer-link img { width: 14px; height: 14px; object-fit: contain; opacity: 0.5; transition: opacity .2s ease; }
+.rc-footer-link:hover img { opacity: 1; }
+.rc-footer-utility { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; padding-top: 24px; border-top: 1px solid #F1EFE3; }
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .rc-content-wrap { padding: 0 20px; }
+  .rc-top-nav { padding: 16px 20px; }
+  .rc-hero { padding: 36px 20px 36px; }
+  .rc-lp-hero-title h1 { font-size: 1.8rem; }
+  .rc-lp-nav { flex-wrap: wrap; justify-content: center; }
+  .rc-lp-nav-indicator { width: 100%; text-align: center; }
+  .rc-card-grid { grid-template-columns: 1fr; }
+}
 </style>
-</head>
-<body>
+
 <div class="rc-guide">
 
-  <div class="rc-hero">
-    <div class="rc-badge">🧱 Business Case</div>
-    <h1>Building the Case</h1>
-    <p>Use pause as a retention conversation, not just a feature conversation.</p>
+  <!-- BACK LINK -->
+  <div class="rc-top-nav">
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain" class="rc-back-link">← Back to Retain</a>
   </div>
 
-  <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-subscriptions/update/docs/pause-subscriptions-1"><span class="rc-snum">1</span>What Is It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/why-offer-it"><span class="rc-snum">2</span>Why Offer It?</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/best-practices-1"><span class="rc-snum">3</span>Best Practices</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/metrics-to-track"><span class="rc-snum">4</span>Metrics to Track</a>
-    <a class="is-active" href="https://docs.recurly.com/recurly-subscriptions/docs/building-the-case"><span class="rc-snum">5</span>Building the Case</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-implement"><span class="rc-snum">6</span>How to Implement</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/resources"><span class="rc-snum">✓</span>Resources</a>
-  </nav>
+  <div class="rc-content-wrap">
 
-  <div class="rc-sec-header">
-    <div class="rc-sec-icon">💼</div>
-    <div>
-      <h2>How to explain the value of pause internally</h2>
-      <p>If you need buy-in, frame pause around retention, flexibility, and long-term customer value.</p>
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="rc-announce-bar">
+      <div class="rc-announce-inner">
+        <i class="fa-regular fa-calendar-days rc-fa-announce"></i>
+        <strong>Upcoming:</strong> Bring your pause strategy questions to our CSMs live.
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register for Office Hours →</a>
+      </div>
     </div>
+
+    <!-- HERO -->
+    <div class="rc-hero">
+      <div class="rc-lp-pillar-tag">
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain · Subscription pause
+      </div>
+      <div class="rc-lp-hero-title">
+        <h1>Tracking your pause impact</h1>
+      </div>
+      <p>Three metrics that tell you whether your pause strategy is working — what they measure, how to interpret them, and where to find them.</p>
+    </div>
+
+    <!-- NAV -->
+    <details class="rc-sticky-nav-wrap" open>
+      <summary>
+        <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
+      </summary>
+      <div class="rc-nav-drawer">
+        <div class="rc-nav-drawer-inner">
+          <div class="rc-nav-links">
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
+              <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
+            </a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link">Overview</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why pause reduces churn</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-sticky-link"><span class="rc-step-badge">2</span> Things to consider</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-sticky-link"><span class="rc-step-badge">3</span> How to enable pause</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-sticky-link rc-sticky-link-active">
+              <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Tracking your pause impact
+            </a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
+            <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-sticky-link">
+              <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
+            </a>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- SECTION: THE THREE METRICS -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> The three metrics that matter</h2>
+      <p>Most of pause's value shows up in three numbers. Track these from day one so you have a baseline to optimize against.</p>
+
+      <div class="rc-card-grid">
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-rotate-right"></i></div>
+          <h4>Unpause rate</h4>
+          <p>The percentage of paused subscribers who resume billing before or at the end of their pause period. This is your primary signal of whether pause is retaining customers or just delaying churn.</p>
+          <span class="rc-feature-tag">Primary signal</span>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-clock"></i></div>
+          <h4>Pause duration</h4>
+          <p>How long subscribers are actually pausing. This helps you forecast revenue, time re-engagement outreach, and identify whether your maximum pause limit is set at the right level.</p>
+          <span class="rc-feature-tag">Forecast & timing</span>
+        </div>
+        <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <h4>Voluntary churn rate</h4>
+          <p>Track your voluntary churn before and after enabling pause. A healthy pause program should move this number down over time as pause intercepts cancellations that would otherwise be permanent.</p>
+          <span class="rc-feature-tag">Program health</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: HOW TO INTERPRET THEM -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-magnifying-glass-chart rc-fa-section"></i> How to interpret what you see</h2>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Low unpause rate — adjust before drawing conclusions</h4>
+            <p>An unpause rate below 50% doesn't automatically mean pause is failing — it may mean your pause duration is too long, your mid-pause re-engagement is weak, or pause is being used by subscribers who were going to churn regardless. Check pause duration and re-engagement timing before changing your eligibility rules.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Very short pause durations — surface pause earlier</h4>
+            <p>If most subscribers are pausing for the minimum duration and resuming quickly, they likely knew they only needed a short break. That's a good signal — and a cue to surface pause earlier in the subscriber journey so it catches more temporary-reason cancellations before they escalate.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Maximum pause duration consistently hit — test a longer window</h4>
+            <p>If a significant portion of subscribers are pausing to the maximum and not resuming, your limit may be cutting off subscribers who would have returned with more time. The 80-day average decision window means a two-cycle monthly pause may not be enough for all use cases. Test extending the maximum and watch whether unpause rate improves.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">4</div>
+          <div class="rc-step-content">
+            <h4>Voluntary churn unchanged after enabling pause — check placement</h4>
+            <p>If voluntary churn isn't moving, pause likely isn't being seen at the moment of intent. Review where the pause option appears in your subscriber experience — if it's buried in account settings but not surfaced in the cancellation flow, most at-risk subscribers will never encounter it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-warning">
+        <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="rc-callout-body">
+          <strong>Give your program at least 90 days before optimising</strong>
+          <p>The average subscriber takes around 80 days to decide whether to return or cancel permanently after pausing. Drawing conclusions from the first 30 days of data will give you a distorted picture — most of your paused subscribers haven't yet reached their decision point. Run the program for a full quarter before making structural changes to eligibility or duration limits.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: WHERE TO FIND THE DATA -->
+    <div class="rc-lp-section">
+      <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> Where to find the data in Recurly</h2>
+
+      <div class="rc-steps">
+        <div class="rc-step">
+          <div class="rc-step-num">1</div>
+          <div class="rc-step-content">
+            <h4>Subscription exports — pause duration and status</h4>
+            <p>Go to <strong>Reports → Subscription Exports</strong>. The export includes two pause-specific columns: <strong>paused_at</strong> (when the subscription entered a paused state) and <strong>remaining_pause_cycles</strong> (how many pause cycles remain). Use these to calculate duration and build your unpause rate in your analytics tool of choice.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">2</div>
+          <div class="rc-step-content">
+            <h4>Recurly Analytics — subscriber counts</h4>
+            <p>In <strong>Analytics → Subscribers</strong>, paused subscriptions are counted alongside active subscriptions and are not treated as churned. This means your subscriber count stays intact during a pause program — but watch MRR separately, since paused subscriptions contribute zero to MRR while billing is suspended.</p>
+          </div>
+        </div>
+        <div class="rc-step">
+          <div class="rc-step-num">3</div>
+          <div class="rc-step-content">
+            <h4>Webhooks — real-time event tracking</h4>
+            <p>Use the <strong>subscription_paused</strong> and <strong>subscription_resumed</strong> webhook events to feed pause data into your own analytics pipeline, CRM, or BI tool. These give you event-level granularity that the Recurly UI exports don't surface — including timestamps for each pause and resume event per subscription.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc-callout rc-callout-tip">
+        <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="rc-callout-body">
+          <strong>Track MRR impact separately for annual plan postponements</strong>
+          <p>If you're using the <strong>update_subscription</strong> postponement method for annual plan subscribers, those subscriptions continue to contribute to MRR during the postponement period — unlike a true pause. Monitor annual plan postponements separately in your own reporting so you can accurately calculate the revenue impact of your pause program across both plan types.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PATH NAV -->
+    <div class="rc-lp-nav">
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-btn-prev">← How to enable pause</a>
+      <span class="rc-lp-nav-indicator">4 of 5</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-btn-path">Next: Review &amp; resources →</a>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="rc-resources">
+      <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
+      <div class="rc-resource-links">
+        <a href="https://docs.recurly.com/docs/pause-subscription" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Recurly Docs: Pause subscription</a>
+        <a href="https://recurly.com/developers/reference/webhooks/#subscription-notifications" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-regular fa-file-lines"></i> Webhooks: Subscription notifications</a>
+        <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-resource-link"><i class="fa-solid fa-globe"></i> Join Global Office Hours</a>
+        <a href="mailto:support@recurly.com" class="rc-resource-link"><i class="fa-solid fa-headset"></i> Contact Recurly Support</a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="rc-footer-nav">
+      <div class="rc-footer-links">
+        <div class="rc-footer-section">
+          <span class="rc-footer-label">Subscription pause</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-footer-link">Overview</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-footer-link">1. Why pause reduces churn</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-footer-link">2. Things to consider</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-how-to-enable" class="rc-footer-link">3. How to enable pause</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-tracking" class="rc-footer-link">4. Tracking your pause impact</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-review" class="rc-footer-link">5. Review &amp; resources</a>
+        </div>
+        <div class="rc-footer-utility">
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
+            <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt="Home"> Navigate Home
+          </a>
+          <a href="mailto:support@recurly.com" class="rc-footer-link">Contact Support</a>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="rc-step"><div class="rc-sbadge">1</div><div><h3>Pause supports retention</h3><p>It gives subscribers a temporary alternative to cancellation, which can help reduce voluntary churn.</p></div></div>
-  <div class="rc-step"><div class="rc-sbadge">2</div><div><h3>Pause supports customer choice</h3><p>The 2026 State of Subscriptions report found that 38% of consumers prefer pausing over canceling.</p></div></div>
-  <div class="rc-step"><div class="rc-sbadge">3</div><div><h3>Pause preserves future value</h3><p>When subscribers pause instead of cancel, merchants keep the relationship intact and create a clearer path to return.</p></div></div>
-  <div class="rc-step"><div class="rc-sbadge">4</div><div><h3>Pause aligns with the Retain stage of the flywheel</h3><p>It helps merchants hold onto existing relationships during budget shifts, seasonality, usage gaps, or other temporary disruptions.</p></div></div>
-
-  <div class="rc-card">
-    <h3 class="rc-subhead">🎬 Example from the market</h3>
-    <p style="font-size:0.95rem;color:var(--darkgray);line-height:1.6;margin:0;">
-      Cinemark used Recurly’s pause functionality during pandemic closures to suspend billing without forcing cancellations. According to your source materials, this contributed to a 90% customer retention rate over a 14-month closure period.
-    </p>
-  </div>
-
-  <div class="rc-tip">
-    <span class="rc-tipicon">💡</span>
-    <div><h4>Leadership framing</h4><p>Pause is easiest to justify when positioned as a low-friction way to protect relationships that would otherwise be lost to temporary churn.</p></div>
-  </div>
-
-  <div class="rc-sec-nav">
-    <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-subscriptions/docs/metrics-to-track">← Back: Metrics to Track</a>
-    <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/how-to-implement">Next: How to Implement →</a>
-  </div>
-
 </div>
-</body>
-</html>
-</HTMLBlock>
 `}</HTMLBlock>
 
 <br />
