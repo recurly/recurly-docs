@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Communicate the change'
+title: 'Plan Price Increase: Communicating the change'
 deprecated: false
 hidden: true
 metadata:
