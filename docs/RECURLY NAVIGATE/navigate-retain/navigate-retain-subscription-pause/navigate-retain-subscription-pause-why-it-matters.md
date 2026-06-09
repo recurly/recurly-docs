@@ -251,7 +251,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain · Subscription pause
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
       <div class="rc-lp-hero-title">
         <h1>Why pause reduces churn</h1>
@@ -314,18 +314,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
         <div class="rc-callout-body">
           <strong>Pause usage is growing fast</strong>
-          <p>Pause usage across Recurly merchants increased 337% in the past year, and brands offering pause before cancel saw the strongest engagement and loyalty outcomes. This is no longer a niche feature — it's becoming a baseline expectation for subscription products. (2026 State of Subscriptions)</p>
+          <p>Pause usage across Recurly merchants increased 337% in the past year, and brands offering pause before cancel saw the strongest engagement and loyalty outcomes. This is no longer a niche feature — it's becoming a baseline expectation for subscription products.</p>
         </div>
       </div>
     </div>
 
     <!-- SECTION: PAUSE IN ACTION -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-star rc-fa-section"></i> Pause in action — media &amp; entertainment</h2>
+      <h2><i class="fa-solid fa-star rc-fa-section"></i> Pause in action</h2>
       <p>The benchmarks above are averages. Here's what pause looked like for one merchant under the most challenging conditions possible.</p>
 
       <div class="rc-accent-card rc-accent-retain">
-        <h4><i class="fa-solid fa-film rc-fa-section"></i> A media &amp; entertainment subscription — 90% retention through a 14-month closure</h4>
+        <h4><i class="fa-solid fa-film rc-fa-section"></i> Achieved 90% retention through a 14-month closure</h4>
         <p>A media and entertainment merchant offering a monthly subscription program faced an existential retention problem during the pandemic: their venues were closed for over a year, but mass cancellations would mean starting over from scratch when they reopened.</p>
         <p>By activating Recurly's pause feature, they suspended billing for the entire closure period. No invoices were generated, no subscriptions were cancelled, and no account history was lost. When venues reopened, subscribers resumed exactly where they left off.</p>
         <p><strong>The result: 90% customer retention across 14 months of closure.</strong> The program has since scaled to over 1.5 million active members, with pause still in place as a permanent part of their retention strategy.</p>
