@@ -399,7 +399,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- CONTINUE YOUR JOURNEY — LP R&R page only -->
-    <div class="rc-next-steps">
+    <div class="rc-next-steps"style="display: none;">
       <h3><i class="fa-solid fa-compass rc-fa-section"></i> Continue your journey</h3>
       <div class="rc-next-grid">
 
