@@ -203,7 +203,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-announce-bar" id="rcAnnounce">
       <div class="rc-announce-inner">
-        🗓️ <strong>Upcoming:</strong> Join our CSMs for a live Pricing &amp; Packaging Q&amp;A.
+        🗓️ <strong>Upcoming:</strong> Join our CSMs for a live Pricing &amp; Plans Q&amp;A.
         <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-announce-link">Register Now →</a>
       </div>
       <button class="rc-announce-close" onclick="this.closest('.rc-announce-bar').style.display='none'" aria-label="Dismiss">×</button>
@@ -211,15 +211,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Plans — Strategy &amp; Best Practices</h1></div>
       <p>Configuration gets your plan live. Strategy keeps it working. Here's how subscription-forward businesses think about plan design, pricing reviews, and staying competitive in 2026.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">3–4</div><div class="rc-hero-stat-label">optimal number of plan tiers before decision paralysis sets in</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">1 in 4</div><div class="rc-hero-stat-label">new subscriptions now comes from a previously canceled customer</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">43%</div><div class="rc-hero-stat-label">of consumers comfortable with AI managing their subscriptions</div></div>
-      </div>
     </div>
 
     <!-- Navigation Menu — non-sticky, open, Micro-Path, page 3 active -->
@@ -463,7 +458,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans-strategy" class="rc-footer-link">Plans: Strategy &amp; Best Practices</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
+          <span class="rc-footer-label">Pricing &amp; Plans 101:</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
