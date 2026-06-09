@@ -243,7 +243,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-hero">
 
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Recurly Benchmarks 101
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale
       </div>
       <div class="rc-lp-hero-title"><h1>Renewal &amp; dunning benchmarks</h1></div>
       <p>Three KPIs that measure your payment recovery health — how many invoices get paid, how many fail on first attempt, and how many you recover after they enter dunning.</p>
