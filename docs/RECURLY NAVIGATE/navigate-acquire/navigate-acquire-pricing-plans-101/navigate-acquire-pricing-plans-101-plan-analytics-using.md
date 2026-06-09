@@ -1,5 +1,5 @@
 ---
-title: 'Analytics: Reading your data'
+title: 'Plan Analytics: Reading your data'
 excerpt: 'Need to check slug for this page since the title changed. '
 deprecated: false
 hidden: true
