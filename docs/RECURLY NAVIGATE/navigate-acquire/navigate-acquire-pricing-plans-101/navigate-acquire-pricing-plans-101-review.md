@@ -397,7 +397,7 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
     </div>
     
  <!-- Continue your journey -->
-    <div class="rc-next-steps">
+    <div class="rc-next-steps"style="display: none;">
       <h3>🧭 Continue your journey</h3>
       <div class="rc-next-grid">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-review" class="rc-next-card">
