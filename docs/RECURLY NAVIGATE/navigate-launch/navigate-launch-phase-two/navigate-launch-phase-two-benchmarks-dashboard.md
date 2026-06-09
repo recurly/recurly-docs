@@ -310,13 +310,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-video-caption">A guided tour of the Benchmarks Dashboard — how to read your KPIs, apply filters, and compare performance against industry peers.</div>
       </div>
 
-      <div class="rc-clip-card">
-        <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Webinar on demand</div>
-        <h4>Stack up against the competition: mastering benchmarks</h4>
-        <p>Strategic CSM Dan Shipley defines the 9 core benchmarks, shows how to interpret industry quartiles, and shares high-impact strategies — including prepaid card blocking and gateway failover — to improve your performance against peers.</p>
-        <a href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch on demand →</a>
-      </div>
-    </div>
 
     <!-- Section: Recurly's 4 reporting layers -->
     <div class="rc-lp-section">
@@ -402,7 +395,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>Always evaluate your KPIs against your industry vertical for the most accurate health check. A sign-up decline rate that looks high in isolation may be typical for your pricing model.</p>
         </div>
       </div>
+      </div>
+
+      <div class="rc-clip-card">
+        <div class="rc-clip-badge"><i class="fa-solid fa-circle-play"></i> Webinar on demand</div>
+        <h4>Stack up against the competition: mastering benchmarks</h4>
+        <p>Strategic CSM Dan Shipley defines the 9 core benchmarks, shows how to interpret industry quartiles, and shares high-impact strategies — including prepaid card blocking and gateway failover — to improve your performance against peers.</p>
+        <a href="https://navigate.recurly.com/lunch-and-learn/stack-up-benchmarks/" target="_blank" rel="noopener noreferrer" class="rc-clip-link"><i class="fa-solid fa-circle-play"></i> Watch on demand →</a>
+      </div>
     </div>
+
 
     <!-- Path navigation -->
     <div class="rc-lp-nav">
