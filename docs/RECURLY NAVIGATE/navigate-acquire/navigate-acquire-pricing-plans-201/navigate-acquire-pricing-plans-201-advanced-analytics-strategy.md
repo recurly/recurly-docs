@@ -1,5 +1,5 @@
 ---
-title: 'Advanced Analytics: Best practices & strategy'
+title: 'Advanced Analytics: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
