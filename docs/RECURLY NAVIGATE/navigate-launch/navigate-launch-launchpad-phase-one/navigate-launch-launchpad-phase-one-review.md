@@ -440,7 +440,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-launchpad-phase-one-gateway-failover" class="rc-btn-prev">← Gateway Failover</a>
       <span class="rc-lp-nav-indicator">Overview</span>
-      <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-btn-path"><i class="fa-solid fa-circle-check"></i> Continue to Phase 2</a>
     </div>
 
     <!-- FOOTER NAV — LP R&R pattern: one section row + utility -->
