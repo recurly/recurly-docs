@@ -219,20 +219,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Analytics: Strategy &amp; Best Practices</h1></div>
       <p>Build a measurement framework that closes the loop on everything you've configured — from plan design to pricing models, markets, and the metrics that signal when to iterate.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">10+</div>
-          <div class="rc-hero-stat-label">Native analytics dashboards in Recurly Analytics</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Plan-level</div>
-          <div class="rc-hero-stat-label">MRR breakdown available by individual plan</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">External</div>
-          <div class="rc-hero-stat-label">Where usage, segment, and custom cohort analytics must live</div>
-        </div>
-      </div>
+      
     </div>
 
     <!-- Nav -->
