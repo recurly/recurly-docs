@@ -14,112 +14,196 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">Entitlements let you define and control which features or content a subscriber can access based on what they've purchased. Link entitlements to plans or items — when a customer subscribes, access is granted automatically. Changes to entitlements take effect immediately and are reflected in all subsequent API calls.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 # Definition
 
-Entitlements are granular features built and bundled to manage customer access rights across multiple platforms. These entitlements are often unlocked through subscription purchases across various app stores and the web. Managed through a simple UI, they define what functionalities or services a user can access.
+<div class="rp-definition">Entitlements are granular access rights that define which features or services a subscriber can use. They are linked to recurring products — plans or items — and are granted automatically when a customer purchases a subscription. Entitlements can be applied across platforms (web, mobile, and app stores) and checked in real time via the Recurly API.</div>
 
 # Key benefits
 
-* **Controlled access:** Define and manage access to various features within your product environment, creating a customized user experience.
-* **Cross-platform consistency:** Configure and apply entitlements across different platforms (web, mobile, and app stores), providing users with a seamless experience.
-* **Efficiency:** With Recurly's API support, conduct entitlement checks effectively, streamlining your operations and saving time.
-* **Enhanced monetization:** With the ability to create paywalls, drive revenue by gating premium features or content.
-* **Flexibility:** An unlimited number of entitlements can be created, offering flexibility to meet changing business needs.
+<div class="rp-benefits rp-benefits-2x2">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-lock-open" aria-hidden="true"></i></div>
+    <strong>Controlled access</strong>
+    <span>Define exactly which features each subscriber tier can access, creating differentiated experiences across your product.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+    <strong>Cross-platform consistency</strong>
+    <span>Configure and apply entitlements across web, mobile, and app stores from a single interface.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-dollar-sign" aria-hidden="true"></i></div>
+    <strong>Enhanced monetization</strong>
+    <span>Gate premium features or content behind paywalls to drive revenue from tiered subscription offerings.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-infinity" aria-hidden="true"></i></div>
+    <strong>Unlimited flexibility</strong>
+    <span>Create as many entitlements as your product needs, each linkable to multiple plans or items.</span>
+  </div>
+</div>
 
 # Key details
 
-Recurly's Cross-platform Entitlements enable you to build and manage specific features that determine customer access rights in a simple and unified interface. They allow you to control the extent of features your customers can access based on their subscription levels.
+## Entitlement attributes
 
-For example, if you run a digital magazine, you can create entitlements that allow basic subscribers to access standard content while premium subscribers have additional access to exclusive articles, special reports, or digital events.
+Each entitlement is defined by four attributes:
 
-Creating an entitlement in Recurly requires you to define specific attributes like Name, Code, Description, and Grantors. Once created, these entitlements can be updated in real-time and are reflected immediately in all subsequent API calls. Should you need to delete an entitlement, it is removed from the system instantly.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Attribute</td><td>Description</td></tr>
+  <tr><td>Name</td><td>A concise label summarizing the entitlement's function. Does not appear on subscriber invoices, Checkout, or Hosted Payment Pages. 255-character limit.</td></tr>
+  <tr><td>Code</td><td>A unique identifier within Recurly used to link the entitlement to specific features or functionality in your application, such as feature flags.</td></tr>
+  <tr><td>Description</td><td>A detailed explanation of what the entitlement provides — useful for internal reference and customer-facing context.</td></tr>
+  <tr><td>Grantors</td><td>The recurring products (plans or items) that grant the entitlement upon subscription purchase. An entitlement can be linked to multiple products, and a single product can correspond to multiple entitlements.</td></tr>
+</table>
 
-> **Note:**Retrieving these entitlements can be done through Recurly's API by requesting all active entitlements for a specific customer account. Entitlements are granted when a customer makes a recurring purchase (like a subscription) that is associated with the entitlement.
+## Create an entitlement
 
-# Creating an entitlement
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Navigate to Entitlements</h4><p>Log in to the Recurly Admin UI and go to the Entitlements section.</p></div>
+  </div>
+</div>
 
-   a. **Log in** to your Recurly Admin UI.
 
-   b. **Navigate** to the Entitlements section.
+<Image src="https://files.readme.io/a27e3418d1c785fe38623167fbcb01816c93d3569a252f6faf9a2bbff59b35ee-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a27e3418d1c785fe38623167fbcb01816c93d3569a252f6faf9a2bbff59b35ee-image.png" />
 
-   c. **Click on** "Create your first entitlement" to start creating a new entitlement.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Start a new entitlement</h4><p>Click Create your first entitlement.</p></div>
+  </div>
+</div>
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/38e1b03-image.png" />
 
-   d. **Define** the attributes - Name, Code, Description, and Grantors.
+<Image src="https://files.readme.io/38e1b03-image.png" align="center" width="65%" border={true} />
 
-**Name**
 
-The concise label for the entitlement, summarizing its primary function. It doesn't appear on subscriber invoices, Checkout, or Hosted Payment Pages and has a 255-character limit.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Define the attributes</h4><p>Enter the Name, Code, Description, and Grantors for the entitlement. See the attribute reference table above for field details.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Save</h4><p>Click Create Entitlement to save. The entitlement is available immediately.</p></div>
+  </div>
+</div>
 
-**Code**
+## Assign an entitlement to a plan or item
 
-The unique identifier for the entitlement within Recurly. It facilitates linking the entitlement to specific features or functionalities in your application, such as feature flags.
+Entitlements can be assigned to plans or items during creation or by editing an existing entitlement.
 
-**Description**
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the entitlement</h4><p>Navigate to the Entitlements section and select the entitlement you want to assign.</p></div>
+  </div>
+</div>
 
-A detailed explanation of the entitlement, offering customers insight into its associated feature or functionality.
 
-**Grantors**
+<Image src="https://files.readme.io/5c40763-image.png" align="center" width="65%" border={true} />
 
-Recurring products, like Plans or Items, that provide the entitlement upon a customer's subscription purchase. An Entitlement can be linked to multiple products, and vice versa, a product can correspond to several Entitlements.
 
-e. **Save** your changes by pressing "Create Entitlement".
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Click Edit Entitlement</h4></div>
+  </div>
+</div>
 
-# Assigning an entitlement
 
-a. In your Recurly Admin UI, **navigate** to the Entitlements section.
+<Image src="https://files.readme.io/83ec1b0-image.png" align="center" width="65%" border={true} />
 
-b. **Select** the entitlement you want to assign. **Note**: You can complete this step when creating a new entitlement.
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/5c40763-image.png" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Add an assignment</h4><p>Click Add Assignment and choose Plan or Item.</p></div>
+  </div>
+</div>
 
-c. **Click** on “Edit Entitlement”.
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/83ec1b0-image.png" />
+<Image src="https://files.readme.io/23fac5a-image.png" align="center" width="65%" border={true} />
 
-d. **Click** on “Add Assignment” and **choose** between **Plan** or **Item**.
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/23fac5a-image.png" />
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Select from the list</h4><p>Choose the plan or item to link to this entitlement.</p></div>
+  </div>
+</div>
 
-<Image align="center" width="5px" src="https://files.readme.io/5121661-image.png" />
 
-e. **Select** one from the list to add it.
+<Image src="https://files.readme.io/2886755-image.png" align="center" width="65%" border={true} />
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/2886755-image.png" />
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/3a4c308-image.png" />
 
-f. **Save** changes.
+<Image src="https://files.readme.io/3a4c308-image.png" align="center" width="65%" border={true} />
 
-# Updating an entitlement
 
-   a. **Navigate** to the Entitlements section in your Recurly Admin UI.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Save changes</h4></div>
+  </div>
+</div>
 
-   b. **Select** the entitlement you want to update.
+## Update an entitlement
 
-   c. **Make** the necessary changes to the attributes or associations.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the entitlement</h4><p>Navigate to the Entitlements section and select the entitlement to update.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Make changes</h4><p>Update any attributes or grantor assignments as needed.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save</h4><p>Changes take effect immediately and are reflected in all subsequent API calls.</p></div>
+  </div>
+</div>
 
-   d. **Save** your changes. 
+## Delete an entitlement
 
-> **Note:** All subsequent API calls will reflect these updates.
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Deletion is immediate and permanent</strong> Deleting an entitlement removes it from the system instantly. Ensure no active subscriptions or features depend on the entitlement before proceeding.</div>
+</div>
 
-# Deleting an entitlement
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the entitlement</h4><p>Navigate to the Entitlements section and select the entitlement to delete.</p></div>
+  </div>
+</div>
 
-   a. In your Recurly Admin UI, navigate to the Entitlements section.
 
-   b. Select the entitlement you want to delete.
+<Image src="https://files.readme.io/5c40763-image.png" align="center" width="65%" border={true} />
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/5c40763-image.png" />
 
-   c. Click on "Delete" and then “Confirm”. This will remove the entitlement instantly.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Delete and confirm</h4><p>Click Delete, then Confirm. The entitlement is removed immediately.</p></div>
+  </div>
+</div>
 
-<Image align="center" className="border" width="65% " border={true} src="https://files.readme.io/83ec1b0-image.png" />
+
+<Image src="https://files.readme.io/83ec1b0-image.png" align="center" width="65%" border={true} />
+
+
+<br />
