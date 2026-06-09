@@ -213,20 +213,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Advanced Currency: Strategy &amp; Best Practices</h1></div>
       <p>How to price by market — not by calculator — and how to manage multi-currency operations as your global subscriber base grows.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">140+</div>
-          <div class="rc-hero-stat-label">Currencies supported in Recurly</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Manual</div>
-          <div class="rc-hero-stat-label">All prices set explicitly — no automatic FX conversion</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">1</div>
-          <div class="rc-hero-stat-label">Currency per invoice — mixed-currency invoices not supported</div>
-        </div>
-      </div>
+      
     </div>
 
     <!-- Nav -->
