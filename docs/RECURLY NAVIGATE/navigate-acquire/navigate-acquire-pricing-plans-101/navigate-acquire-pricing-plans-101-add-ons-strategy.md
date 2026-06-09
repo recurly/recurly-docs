@@ -1,5 +1,5 @@
 ---
-title: 'Add-ons: Best practices & strategy'
+title: 'Add-ons: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
