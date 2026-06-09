@@ -69,10 +69,6 @@ The Workbook Agent is the fastest way to start an analysis. Type a question in t
 
 <br />
 
-<br />
-
-<br />
-
 **Switching between Agent and manual mode**
 
 You can use the Agent and the field picker together. After the agent populates a query, you can add or remove fields manually using the center panel. Changes are reflected immediately in the results view.
@@ -106,7 +102,7 @@ You can use the Agent and the field picker together. After the agent populates a
 
 <br />
 
-- **Refresh** - this re-runs or refreshes the report against previously saved data. As an example, If you (or a colleague) ran the exact same query with the same filters, sorts, and fields within the last 6 hours, Explore will instantly load those pre-saved results. It only sends a new query to your data source if the cache has expired or if filters, sorts, and/or fields are changed in the report.
+- **Refresh** - this re-runs or refreshes the report against previously saved data. As an example, If you (or a colleague) ran the exact same query with the same filters, sorts, and fields within the last 1 hour, Explore will instantly load those pre-saved results. It only sends a new query to your data source if the cache has expired or if filters, sorts, and/or fields are changed in the report.
 - **Refresh w/o cache** - this bypasses the stored query results for the report and sends a direct query to your data source to pull live, up-to-the-minute data.
 
 ### Creating a new report
