@@ -359,7 +359,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- PATH NAV BUTTONS -->
     <div class="rc-lp-nav">
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-btn-prev">← What to consider before you execute</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-considerations" class="rc-btn-prev">← What to consider</a>
       <span class="rc-lp-nav-indicator">3 of 5</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-plan-price-increase-tracking" class="rc-btn-path">Next: Tracking your impact →</a>
     </div>
