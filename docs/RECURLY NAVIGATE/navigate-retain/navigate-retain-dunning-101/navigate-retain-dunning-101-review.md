@@ -164,20 +164,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
       <p>You've completed Dunning 101. Here's a summary of everything covered — and all the resources in one place.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">4</div>
-          <div class="rc-hero-stat-label">Micro-Paths completed</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">3–5%</div>
-          <div class="rc-hero-stat-label">Avg recovery uplift from optimizing</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Monthly</div>
-          <div class="rc-hero-stat-label">Review your results</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
