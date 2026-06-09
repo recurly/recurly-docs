@@ -247,24 +247,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Packaging 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Add-Ons</h1></div>
       <p>Add-ons are how you grow revenue beyond the base subscription. They let you package your product flexibly, upsell at the right moment, and give subscribers control over what they pay for.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">4</div>
-          <div class="rc-hero-stat-label">pricing models available on add-ons</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Required</div>
-          <div class="rc-hero-stat-label">or optional — you control whether subscribers can remove them</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Item Catalog</div>
-          <div class="rc-hero-stat-label">enables the same add-on to be reused across multiple plans</div>
-        </div>
-      </div>
+     
     </div>
 
     <!-- Navigation Menu — non-sticky, open on load (Micro-Path) -->
@@ -452,7 +439,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons-strategy" class="rc-footer-link">Add-Ons: Strategy &amp; best practices</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101</span>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing &amp; Packaging 101 Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
