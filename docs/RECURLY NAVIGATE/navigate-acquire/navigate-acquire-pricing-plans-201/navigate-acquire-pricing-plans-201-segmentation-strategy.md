@@ -1,5 +1,5 @@
 ---
-title: 'Segmentation: Best practices & strategy'
+title: 'Segmentation: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
