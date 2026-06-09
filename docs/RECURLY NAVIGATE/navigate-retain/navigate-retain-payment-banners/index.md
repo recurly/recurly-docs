@@ -159,7 +159,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   display: flex; align-items: center; justify-content: center;
   font-size: .85rem; font-weight: 800; flex-shrink: 0;
 }
-/* rc-toc-card IS an <a> — child colors must use hex + !important */
 .rc-toc-body h4 { font-size: .98rem; font-weight: 800; color: #0D0D0B !important; margin: 0 0 4px; }
 .rc-toc-body p { font-size: .88rem; color: #807D73 !important; line-height: 1.5; margin: 0; }
 .rc-toc-arrow { font-size: 1.1rem; color: #CCC9B8 !important; text-align: right; transition: color .2s; }
@@ -235,7 +234,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
   <div class="rc-content-wrap">
 
-    <!-- Hero -->
+    <!-- Hero — unchanged -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain">
@@ -247,7 +246,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <p>Payment banners meet subscribers where they already are: inside your product, engaged, and more likely to act than in any other channel.</p>
     </div>
 
-    <!-- Nav: non-sticky, open -->
+    <!-- Nav: non-sticky, open. Active: Overview. 5-page structure. -->
     <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
@@ -257,28 +256,26 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-sticky-link rc-sticky-link-active">
-          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Payment banners
+          <img src="https://files.readme.io/070e914d23dead09604d5f96b8769c88b8aae704ebd4505415e5854011030110-Black_Navigate_Home_Pin_1.png" alt=""> Overview
         </a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why it matters</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-use-cases" class="rc-sticky-link"><span class="rc-step-badge">2</span> Use cases</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-webhooks" class="rc-sticky-link"><span class="rc-step-badge">3</span> Webhooks setup</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-engage" class="rc-sticky-link"><span class="rc-step-badge">4</span> Recurly Engage setup</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-strategy" class="rc-sticky-link"><span class="rc-step-badge">5</span> Strategy &amp; best practices</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-sticky-link"><span class="rc-step-badge">6</span> Tracking your impact</a>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-review" class="rc-sticky-link"><span class="rc-step-badge">7</span> Review &amp; resources</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-sticky-link"><span class="rc-step-badge">1</span> Why it matters &amp; when to use it</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-implementation" class="rc-sticky-link"><span class="rc-step-badge">2</span> Choosing your implementation path</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-strategy" class="rc-sticky-link"><span class="rc-step-badge">3</span> Strategy &amp; best practices</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-sticky-link"><span class="rc-step-badge">4</span> Tracking your impact</a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-review" class="rc-sticky-link"><span class="rc-step-badge">5</span> Review &amp; resources</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-sticky-link">
           <img src="https://files.readme.io/8e6d7690e1683e5627378d61ec2a127d950fa23c8eeb18b7ef0c6511dc927d45-Return_icon.png" alt=""> Back to Path Start
         </a>
       </div></div></div>
     </details>
 
-    <!-- Brief intro -->
+    <!-- Brief intro — unchanged -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-bell rc-fa-section"></i> What are payment banners?</h2>
       <p>Payment banners are in-session notifications that appear inside your product when a subscriber's payment is at risk or they've started a cancellation. They reach subscribers at the moment they're most likely to act: while they're already using what they're paying for. Recurly supports both a custom webhook-based implementation and a no-code option via Recurly Engage, both covered in this course.</p>
     </div>
 
-    <!-- What's in this course -->
+    <!-- TOC — updated to 5-page structure -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-list rc-fa-section"></i> What's in this course</h2>
       <div class="rc-toc-list">
@@ -286,41 +283,23 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-toc-card">
           <div class="rc-toc-num">1</div>
           <div class="rc-toc-body">
-            <h4>Why it matters</h4>
-            <p>The business case for in-session recovery and where payment banners fit alongside your other retention tools.</p>
+            <h4>Why it matters &amp; when to use it</h4>
+            <p>The business case for in-session recovery, the key stats, and the eight trigger scenarios where payment banners have the most impact.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-use-cases" class="rc-toc-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-implementation" class="rc-toc-card">
           <div class="rc-toc-num">2</div>
           <div class="rc-toc-body">
-            <h4>Use cases</h4>
-            <p>The specific subscriber scenarios where payment banners have the most impact: failed payments, expiring cards, and cancellation save flows.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-webhooks" class="rc-toc-card">
-          <div class="rc-toc-num">3</div>
-          <div class="rc-toc-body">
-            <h4>Webhooks setup</h4>
-            <p>How to build custom payment banners inside your own application using Recurly's webhook events.</p>
-          </div>
-          <div class="rc-toc-arrow">→</div>
-        </a>
-
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-engage" class="rc-toc-card">
-          <div class="rc-toc-num">4</div>
-          <div class="rc-toc-body">
-            <h4>Recurly Engage setup</h4>
-            <p>How to configure and activate payment banners with no engineering work using Recurly Engage.</p>
+            <h4>Choosing your implementation path</h4>
+            <p>How to decide between building with webhooks (engineering-required, full control) or using Recurly Engage (no-code, faster to live) — and what to expect from each before you start.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-strategy" class="rc-toc-card">
-          <div class="rc-toc-num">5</div>
+          <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
             <h4>Strategy &amp; best practices</h4>
             <p>How to time, message, and sequence banners for maximum recovery without disrupting the subscriber experience.</p>
@@ -329,19 +308,19 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-toc-card">
-          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-num">4</div>
           <div class="rc-toc-body">
             <h4>Tracking your impact</h4>
-            <p>The metrics to watch and how to measure what your payment banners are recovering over time.</p>
+            <p>The four metrics to watch and a 90-day framework for measuring what your payment banners are actually recovering over time.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
 
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-review" class="rc-toc-card">
-          <div class="rc-toc-num">7</div>
+          <div class="rc-toc-num">5</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Knowledge check, reflection questions, and the full resource library for this course.</p>
+            <p>Course recap with links back to each page, and the full resource library for everything covered in this course.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -353,10 +332,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
       <span class="rc-lp-nav-indicator">Overview</span>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-btn-path">Next: Why it matters →</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-btn-path">Next: Why it matters &amp; when to use it →</a>
     </div>
 
-    <!-- Resources -->
+    <!-- Resources — unchanged -->
     <div class="rc-resources">
       <h3><i class="fa-solid fa-book-open rc-fa-section"></i> Resources</h3>
       <div class="rc-resource-links">
@@ -368,19 +347,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- Footer nav -->
+    <!-- Footer nav — updated to 5-page structure -->
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Payment banners</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners" class="rc-footer-link">Overview</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-footer-link">1. Why it matters</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-use-cases" class="rc-footer-link">2. Use cases</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-webhooks" class="rc-footer-link">3. Webhooks setup</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-engage" class="rc-footer-link">4. Recurly Engage setup</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-strategy" class="rc-footer-link">5. Strategy &amp; best practices</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-footer-link">6. Tracking your impact</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-review" class="rc-footer-link">7. Review &amp; resources</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-why" class="rc-footer-link">1. Why it matters &amp; when to use it</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-implementation" class="rc-footer-link">2. Choosing your implementation path</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-strategy" class="rc-footer-link">3. Strategy &amp; best practices</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-tracking" class="rc-footer-link">4. Tracking your impact</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-payment-banners-review" class="rc-footer-link">5. Review &amp; resources</a>
         </div>
         <div class="rc-footer-utility">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-footer-link">
