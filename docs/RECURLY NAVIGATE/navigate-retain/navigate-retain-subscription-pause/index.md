@@ -266,7 +266,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Pause subscription</h1>
+        <h1>Pause subscriptions</h1>
       </div>
       <p>Give subscribers a break without losing them. Learn how pause works, when to use it, and how to configure it to reduce voluntary churn.</p>
     </div>
