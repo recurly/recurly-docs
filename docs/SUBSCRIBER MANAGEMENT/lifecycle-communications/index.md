@@ -1,8 +1,9 @@
 ---
 title: Lifecycle communications
 excerpt: >-
-  Elevate your subscriber engagement with Recurly's robust Lifecycle
-  Communications tools, ensuring timely, targeted, and effective messaging.
+  Learn how Recurly's lifecycle communications tools help you send personalized,
+  timely, and targeted messages to subscribers across every stage of their
+  journey.
 deprecated: false
 hidden: false
 metadata:
@@ -12,36 +13,72 @@ metadata:
 next:
   description: ''
 ---
+<div class="rp-page">
+  <div class="rp-overview">Recurly's lifecycle communications tools give you control over every automated touchpoint in the subscriber journey — from renewal reminders and trial-ending notices to cross-channel campaigns. Configure email templates, set timezone-aware delivery, reach a global audience in 30 languages, and connect with third-party platforms like SendGrid and Braze to keep subscribers informed and engaged at every stage.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
+
 # Definition
 
-Lifecycle Communications in Recurly pertains to the structured and strategic communication sent across different stages of a subscriber's journey. It encompasses automated emails, tailored notifications, and segmented messages, ensuring subscribers remain informed, engaged, and connected.
+<div class="rp-definition">Lifecycle communications covers the structured, automated messages Recurly sends at key moments in a subscriber's journey — renewals, trials, payment events, and more. Using customizable email templates, language settings, timezone controls, and third-party integrations, you can make sure the right message reaches the right subscriber at the right time.</div>
 
 # Key benefits
 
-* **Personalized engagement:** Tailor messages to resonate with subscribers, enhancing user experience and loyalty.
-* **Global outreach:** With 30 language supports, communicate effortlessly with a diverse subscriber base.
-* **Timely notifications:** Ensure subscribers never miss an update with timezone-specific emails and crucial reminders.
-* **Segmented targeting:** Drive better engagement by reaching out to the right audience with relevant content.
-* **Seamless deliverability:** Advanced integrations, like Sendgrid, guarantee your emails hit the inbox every time.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Personalized engagement</strong>
+    <span>Tailor messages to match each subscriber's context and preferences, building a stronger connection and improving retention.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+    <strong>Global outreach</strong>
+    <span>With support for 30 languages, you can communicate with a diverse subscriber base in the language that resonates with them.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+    <strong>Timely notifications</strong>
+    <span>Timezone-aware delivery ensures subscribers receive emails when they're most likely to open and act on them.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+    <strong>Segmented targeting</strong>
+    <span>Reach the right audience with content that's relevant to their subscription state, driving higher engagement across the board.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></div>
+    <strong>Reliable deliverability</strong>
+    <span>Integrations with platforms like SendGrid help ensure your emails consistently reach subscribers' primary inboxes.</span>
+  </div>
+</div>
 
 # Key details
 
-## Email templates
+<div class="rp-nav-grid">
 
-Crafting the right message for the right occasion is vital. Recurly offers customizable [email templates](https://docs.recurly.com/docs/email-templates) to cater to various touchpoints in the subscription lifecycle, such as renewal reminders and trial ending notifications.
+<Cards>
+  <Card title="Email templates" href="https://docs.recurly.com/docs/email-templates" target="_blank">
+    Configure and customize email templates for key subscription lifecycle events — renewal reminders, trial endings, payment confirmations, and more.
+  </Card>
+  <Card title="Email language support (30 languages)" href="https://docs.recurly.com/docs/email-template-languages" target="_blank">
+    Send emails in your subscribers' preferred language. Recurly supports 30 languages, making it straightforward to communicate with a global audience.
+  </Card>
+  <Card title="Email timezones and timestamps" href="https://docs.recurly.com/docs/email-time-zones-and-time-stamps" target="_blank">
+    Deliver emails at the right local time for each subscriber. Timezone-aware dispatch increases the likelihood that messages are seen and acted on.
+  </Card>
+  <Card title="Advanced email deliverability (SendGrid)" href="https://docs.recurly.com/docs/sendgrid" target="_blank">
+    Connect Recurly to SendGrid to improve inbox placement and open rates, with dedicated IP options and deliverability monitoring.
+  </Card>
+  <Card title="Cross-channel communications (Braze)" href="https://docs.recurly.com/docs/braze-integration" target="_blank">
+    Feed subscription data into Braze to run personalized, multi-channel campaigns that drive retention and improve the subscriber experience.
+  </Card>
+</Cards>
 
-## Email language support (30)
+</div>
 
-Communicate effectively by respecting and recognizing language preferences. Recurly's Lifecycle Communications extends [support for 30 languages](https://docs.recurly.com/docs/email-template-languages), allowing businesses to send emails that resonate better with the global audience.
-
-## Email timezones and timestamp
-
-Ensuring emails are delivered at the right time in a subscriber's [local timezone](https://docs.recurly.com/docs/email-time-zones-and-time-stamps) can drastically increase engagement and action rates. Recurly's feature ensures timely dispatch, so subscribers receive emails when they're most likely to engage.
-
-## Advanced email deliverability (SendGrid)
-
-Partnering with industry leaders like [Sendgrid](https://docs.recurly.com/docs/sendgrid), Recurly guarantees that your emails not only get dispatched but also land in the subscriber's primary inbox, driving better open rates, engagement, and actions.
-
-## Cross-channel communications (Braze)
-
-Our [Braze Integration](https://docs.recurly.com/docs/braze-integration) allows Recurly users to effortlessly feed subscription information into Braze for targeted customer communication. Braze provides a leading customer engagement platform that enables and automates personalized cross-channel communications to enhance subscriber engagement, drive retention, and improve the user experience.
+<br />
