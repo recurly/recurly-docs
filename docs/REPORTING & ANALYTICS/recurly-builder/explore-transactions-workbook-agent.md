@@ -76,10 +76,7 @@ You can use the Agent and the field picker together. After the agent populates a
 
 ### Opening an existing report
 
-1. Click the **yellow Recurly logo** in the Explore
-2. Either go to **My documents** or the **Hub**. My documents stores your private personal data reports and folders while the Hub is the shared workspace for the entire merchant site.
-3. Click on the folder or report to open
-4. Click on **Edit** or **Explore** in the upper right corner
+1. Click the **yellow Recurly logo** in the upper left corner of the Explore
 
 
 <Image src="https://files.readme.io/876fbccfd3e5c64960151b19b40148fb6688a7320eea40e9af93909becda1147-image.png" align="left" width="200px" border={true} />
@@ -90,6 +87,24 @@ You can use the Agent and the field picker together. After the agent populates a
 
 <Image src="https://files.readme.io/fd6030aad81cb48304317f0583221f7df52b0df245f6ced971bf8d3103c5e81f-image.png" align="center" width="200px" border={true} />
 
+
+2. Either go to **My documents** or the **Hub&#x20;**&#x74;o access saved reports. My documents stores your private personal data reports and folders while the Hub is the shared workspace for the entire site.
+3. Click on the folder or report to open
+4. Select **File-Edit** or click th&#x65;**&#x20;Edit button** in the upper right corner to edit the report.
+5. Save your updates by selecting **File-Save**.
+
+### Run/refresh a report with or without cache
+
+1. Once in an existing report, you can run or refresh the report with or without cache by selecting the View menu
+
+
+<Image src="https://files.readme.io/2b464a13cc19f2e8b6d97c2c3b14107122f810eadc506f0bdda21000c3e77450-image.png" align="center" width="200px" border={true} />
+
+
+<br />
+
+- **Refresh** - this re-runs or refreshes the report against previously saved data. As an example, If you (or a colleague) ran the exact same query with the same filters, sorts, and fields within the last 1 hour, Explore will instantly load those pre-saved results. It only sends a new query to your data source if the cache has expired or if filters, sorts, and/or fields are changed in the report.
+- **Refresh w/o cache** - this bypasses the stored query results for the report and sends a direct query to your data source to pull live, up-to-the-minute data.
 
 ### Creating a new report
 
