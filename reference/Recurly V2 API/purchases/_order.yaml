@@ -1,0 +1,6 @@
+- createpurchase
+- previewpurchase
+- authorizepurchase
+- pendingpurchase
+- capturepurchase
+- cancelpurchase
