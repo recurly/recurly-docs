@@ -119,7 +119,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 .rc-step { 
   display: grid; 
-  grid-template-columns: 90px 1fr; /* Explicitly sets the first column width */
+  grid-template-columns: 100px 1fr; /* Explicitly sets the first column width */
   justify-items: start;            /* Keeps elements left-aligned within their grid tracks */
   gap: 16px; 
   align-items: flex-start; 
