@@ -282,7 +282,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- What's in this path — table of contents -->
     <div class="rc-lp-section">
       <h2>📚 What's in this path</h2>
-      <p>Six Micro-Paths, each focused on an advanced pricing or plans challenge. These build on each other — Segmentation and Hierarchy lay the foundation for how your plan architecture scales, Usage Billing and Advanced Models address how you charge, and Advanced Currency and Analytics cover global operations and measurement.</p>
+      <p>Six Micro-Paths, each focused on an advanced pricing or packaging challenge. These build on each other — Segmentation and Hierarchy lay the foundation for how your plan architecture scales, Usage Billing and Advanced Models address how you charge, and Advanced Currency and Analytics cover global operations and measurement.</p>
 
       <div class="rc-toc-list">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-toc-card">
