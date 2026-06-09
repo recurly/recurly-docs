@@ -187,9 +187,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
-      <div class="rc-lp-hero-title"><h1>Configure Advanced Pricing Models</h1></div>
+      <div class="rc-lp-hero-title"><h1>Configure advanced pricing models</h1></div>
       <p>Exact UI paths and configuration steps for Ramp Pricing, Hybrid Pricing, and Prepaid Account Balance — from plan setup to first subscription.</p>
       
     </div>
