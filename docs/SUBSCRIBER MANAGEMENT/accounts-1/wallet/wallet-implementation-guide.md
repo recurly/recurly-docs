@@ -1,9 +1,9 @@
 ---
 title: Subscriber wallet implementation guide
 excerpt: >-
-  Get set for a seamless payment management experience! Dive into our
-  comprehensive guide on effectively leveraging the Subscriber Wallet on your
-  Recurly site.
+  Learn how to set up and manage multiple payment methods per account using
+  Recurly's Subscriber Wallet, including primary payment method configuration,
+  subscription billing info assignment, and API endpoint usage.
 deprecated: false
 hidden: false
 metadata:
@@ -13,84 +13,149 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-# Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">This guide walks through the core implementation tasks for Subscriber Wallet: setting a primary payment method, storing additional payment methods, assigning billing info to subscriptions and purchases, and managing payment method changes over time. All steps are available through the Recurly API.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-concepts"><span class="rp-toc-num">2</span>Key concepts</a>
+    <a class="rp-toc-pill" href="#integration-guide"><span class="rp-toc-num">3</span>Integration guide</a>
+    <a class="rp-toc-pill" href="#best-practices"><span class="rp-toc-num">4</span>Best practices</a>
+  </div>
+</div>
 
 # Definition
 
-The "Subscriber Wallet" is an innovative payment management feature in Recurly that provides users the flexibility to maintain multiple payment methods and define their subscription-specific preferences.
+<div class="rp-definition">Subscriber Wallet is the Recurly feature that allows a single account to store multiple payment methods, each with a unique <code>billing_info_id</code>. One payment method is designated as primary and used as the default for all transactions. Individual subscriptions and purchases can be pinned to a specific payment method by passing its <code>billing_info_id</code> at the time of creation or update.</div>
 
-# Key benefits
+# Key concepts
 
-* **Simplified subscription management**: Effortlessly set or alter your primary payment method, and associate specific payment methods to particular subscriptions.
-* **Enhanced user experience**: Accommodate up to 20 distinct payment methods, catering to diverse financial preferences and needs.
-* **Optimized payment flow**: With automatic fallback to the primary method, ensure continuous service even when a specific payment mode fails.
-* **Robust integration support**: Impeccably integrated with both Recurly's Product and API Documentation, promising an intuitive and comprehensive user experience.
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Concept</td><td>Description</td></tr>
+  <tr><td>Billing info</td><td>The full set of details associated with a payment method — card number, address, IP address, etc. Each billing info entry has a unique <code>billing_info_id</code>.</td></tr>
+  <tr><td>Payment method</td><td>The funding source for a transaction. Supported types include credit/debit cards, bank accounts, PayPal, and other Recurly-supported methods.</td></tr>
+  <tr><td>Primary payment method</td><td>The default billing info used for any transaction where no specific <code>billing_info_id</code> is provided. Every account has exactly one primary payment method at any given time.</td></tr>
+  <tr><td><code>billing_info_id</code></td><td>A unique identifier assigned to each billing info entry. Used to reference a specific payment method when creating or updating subscriptions and purchases.</td></tr>
+</table>
 
-# Step-by-step implementation
+# Integration guide
 
-### **1. Setting a primary payment method**
+## Step 1 — Set a primary payment method
 
-Every Recurly account needs to have a primary payment method set up. This acts as the default method for any transactions where a specific payment mode isn't defined.  
-**Steps**:
+The first payment method added to an account automatically becomes the primary. Only one payment method can be primary at a time.
 
-* **Initial Setup**: By default, the first payment method added to an account will be considered primary. If you're looking to set another method as primary later, you'll need to update the method's primary status.
-* **Subsequent Additions**: When adding further payment methods, you can designate them as primary right at the moment of their creation. Remember, only one payment method can be primary at any given time.
+To designate a different existing payment method as primary, send a `PUT` request to:
 
-### **2. Adding additional payment methods**
+```
+PUT /accounts/{account_code}/billing_infos/{billing_info_id}
+```
 
-To give users flexibility, Recurly permits up to 20 payment methods per account. Each method has a distinct identifier to streamline subscription and payment linkages.  
-**Steps**:
+Include `primary_payment_method: true` in the request body. The previously primary method is automatically demoted to non-primary.
 
-* Navigate to the "Add Payment Method" section within your Recurly dashboard.
-* Enter the required payment details. This can range from credit card data, bank account details, or digital wallet specifics.
-* Once added, the system will generate a unique `billing_info_id`. This ID can be used to set on specific subscriptions or purchase requests..
+## Step 2 — Add additional payment methods
 
-### **3. Using specific payment methods for subscriptions/purchases**
+An account can store up to 20 billing infos. Each new entry receives a unique `billing_info_id` that can be referenced in future subscription or purchase requests.
 
-The power of the Subscriber Wallet lies in its capacity to allow users to link individual subscriptions to specific payment methods, providing exceptional control over financial transactions.  
-**Steps**:
+To add a payment method, send a `POST` request to:
 
-* **View Payment Methods**: First, fetch the list of available payment methods on your account. Each method will have its unique `billing_info_id`.
-* **Link to Subscription**: While creating or updating a subscription, provide the desired `billing_info_id` to tether the subscription to that specific payment method.
+```
+POST /accounts/{account_code}/billing_infos
+```
 
-### **4. Assigning a Payment Method to a Subscription**
+Provide the payment details in the request body (card data, bank account details, or digital wallet specifics). When updating billing info during a transaction via the `/purchases` or `/subscriptions` endpoints, the following rules apply:
 
-Over time, subscribers may want to switch the payment method linked with specific subscriptions, either for better financial management or due to expiry of the current method.  
-**Steps**:
+<ul class="rp-list">
+  <li>If <code>primary_payment_method: true</code> — the existing primary billing info is updated</li>
+  <li>If <code>primary_payment_method: false</code> — a new non-primary billing info is created</li>
+  <li>If <code>primary_payment_method</code> is omitted — the existing primary billing info is updated</li>
+</ul>
 
-* Navigate to the "My Subscriptions" tab on your dashboard.
-* Select the subscription you wish to modify.
-* Use the "Change Payment Method" option and provide the `billing_info_id` of your chosen payment method.
+## Step 3 — Assign a payment method to a subscription or purchase
 
-### 5. Managing multiple payment methods
+When creating or updating a subscription or purchase, pass the `billing_info_id` of the desired payment method to pin it to that specific method.
 
-Efficient management of multiple payment methods is crucial for subscribers to seamlessly switch between them as needed.  
-**Steps**:
+**On subscription creation or update:**
 
-* **Accessing Payment Methods**: Use the `/accounts/billing_infos` endpoint to view all payment methods associated with an account.
-* **Update or Delete**: Update details or delete a payment method using its `billing_info_id`. To update, send a PUT request to `/accounts/billing_infos/<billing_info_id>` with the necessary changes to the payment method's information, such as card or account number, and address details.
-* **Changing the Primary Payment Method**: To set a payment method as primary, use a PUT request to `/accounts/billing_infos/<billing_info_id>` with `primary_payment_method=true`. This will also relegate the current primary method to a non-primary status.
-* **Updating Billing Info During Transactions**: When making a purchase or creating a subscription via the `/purchases` or `/subscriptions` endpoints, billing info can be updated for accounts with existing billing infos. Follow these guidelines:
-  * If `primary_payment_method` is true, the existing primary billing info will be updated.
-  * If `primary_payment_method` is false, a new non-primary billing info will be created.
-  * If `primary_payment_method` is not included, the existing primary billing info will be updated.
+```
+POST /subscriptions
+PUT  /subscriptions/{subscription_id}
+```
 
-### **6. Modifying specific payment methods on the account**
+**On purchase:**
 
-There may be instances where specific payment details change, such as a new card's issuance or a change in billing address.  
-**Steps**:
+```
+POST /purchases
+```
 
-* Locate the desired payment method in your Subscriber Wallet.
-* Use the “Edit” option and modify the necessary details. For significant modifications, like changing from one card to another, you may need the specific `billing_info_id`.
-* Ensure to save any changes made to retain modifications.  
-  Remember, every business has unique needs. Tailor these steps according to your operational priorities for a seamless implementation of the Subscriber Wallet.  
-  By adhering to this guide, Recurly users can fully harness the capabilities of the Subscriber Wallet, ensuring an optimal subscription management experience. Always keep a close eye on the latest updates to stay ahead of the curve.
+Include `billing_info_id` at the subscription or line-item level. If no `billing_info_id` is provided, the account's current primary payment method is used.
 
-### Managing payment methods
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong> A subscription pinned to a specific <code>billing_info_id</code> retains that assignment even if the account's primary payment method later changes. If the assigned billing info is deleted, the subscription falls back to the primary.</div>
+</div>
 
-* **Avoid repetition**: Do not repeatedly input identical billing info for the same account when creating subscriptions or making one-time purchases. Doing so will create duplicate payment methods on the account. An error message will appear once the account reaches 20 payment methods.  To help prevent duplicate entries, consider using Recurly's [blocking feature](https://docs.recurly.com/recurly-subscriptions/docs/payment-settings#duplicate-billing-infos-prevention). 
-* **Opt for reference**: Add unique billing info only once per account. For future purchases or subscriptions, refer to this information using the `billing_info_id`.
+## Step 4 — Update a subscription's payment method
+
+To change the payment method on an existing subscription, send a `PUT` request to the subscription with the new `billing_info_id`:
+
+```
+PUT /subscriptions/{subscription_id}
+```
+
+To reassign a subscription back to the primary payment method without specifying an ID, omit `billing_info_id` from the request — the subscription will default to whatever is currently primary.
+
+## Step 5 — List and manage payment methods
+
+To retrieve all payment methods stored on an account:
+
+```
+GET /accounts/{account_code}/billing_infos
+```
+
+Each entry in the response includes its `billing_info_id` and a `primary_payment_method` flag.
+
+To update the details of an existing payment method (for example, a new card number or updated billing address):
+
+```
+PUT /accounts/{account_code}/billing_infos/{billing_info_id}
+```
+
+To delete a non-primary payment method:
+
+```
+DELETE /accounts/{account_code}/billing_infos/{billing_info_id}
+```
+
+To delete the primary payment method when multiple are present, first promote a different method to primary using the `PUT` endpoint above, then delete the former primary.
+
+<div class="rp-callout rp-callout-warning">
+  <div><strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Deleting the only payment method</strong> Deleting all payment methods on an account with active subscriptions may cause those subscriptions to expire unless a new payment method is added. Subscriptions or invoices linked to a deleted billing info automatically fall back to the primary — or expire if no primary exists.</div>
+</div>
+
+## Step 6 — Change the primary payment method
+
+To promote a payment method to primary:
+
+```
+PUT /accounts/{account_code}/billing_infos/{billing_info_id}
+```
+
+Set `primary_payment_method: true` in the request body. The current primary is automatically demoted.
+
+When the primary payment method changes:
+
+<ul class="rp-list">
+  <li>Subscriptions with no <code>billing_info_id</code> set switch to the new primary</li>
+  <li>Subscriptions pinned to a specific <code>billing_info_id</code> are unaffected</li>
+  <li>Updating billing info triggers a collection attempt on all unpaid invoices associated with that billing info</li>
+</ul>
+
+# Best practices
+
+<ul class="rp-list">
+  <li>Avoid submitting identical billing info multiple times for the same account. Recurly's <a href="https://docs.recurly.com/recurly-subscriptions/docs/payment-settings#duplicate-billing-infos-prevention" target="_blank">duplicate billing info prevention</a> feature can help block accidental duplicates, but the account will error once the 20-method limit is reached</li>
+  <li>Reference existing payment methods by <code>billing_info_id</code> rather than re-submitting the same card or account details on each purchase or subscription</li>
+  <li>To change the payment method used for the next recurring charge, update the subscription's <code>billing_info_id</code> before the charge date</li>
+  <li>For immediate subscription changes, update the billing info before initiating the change to ensure the correct method is charged</li>
+</ul>
+
+<br />
