@@ -206,20 +206,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Advanced Currency</h1></div>
       <p>Go beyond accepting a single currency — set independent, locally calibrated prices in 140+ currencies and reach customers in markets where local pricing drives conversion.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">140+</div>
-          <div class="rc-hero-stat-label">Currencies supported in Recurly</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Manual</div>
-          <div class="rc-hero-stat-label">All prices set explicitly — no automatic FX conversion</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">1</div>
-          <div class="rc-hero-stat-label">Currency per invoice — mixed-currency invoices are not supported</div>
-        </div>
-      </div>
+     
     </div>
 
     <!-- Nav -->
