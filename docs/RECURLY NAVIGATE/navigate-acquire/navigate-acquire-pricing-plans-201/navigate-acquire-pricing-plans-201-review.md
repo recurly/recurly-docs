@@ -243,7 +243,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
     <!-- Congratulations -->
     <div class="rc-congrats">
       <div class="rc-congrats-emoji">🎓</div>
-      <h2>You've Completed P&amp;P 201</h2>
+      <h2>You've Completed Pricing &amp; Plans 201</h2>
       <p>You've moved well beyond flat-rate billing. You can segment customers by price point, structure account hierarchies, charge for what's actually consumed, build pricing that adapts over time, reach global markets in local currencies, and measure all of it with the right data sources. That's a sophisticated pricing and packaging capability — and one most subscription businesses take years to assemble.</p>
       <div class="rc-congrats-pills">
         <span class="rc-congrats-pill">✓ Segmentation</span>
@@ -268,7 +268,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
             <div class="rc-question-badge">1</div>
             <div class="rc-question-meta">
               <span class="rc-question-type-label">Multiple Choice</span>
-              <span class="rc-question-topic">MP9 — Usage Billing</span>
+              <span class="rc-question-topic">Usage Billing</span>
             </div>
           </div>
           <div class="rc-question-body">
@@ -295,7 +295,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
             <div class="rc-question-badge">2</div>
             <div class="rc-question-meta">
               <span class="rc-question-type-label">Multiple Choice</span>
-              <span class="rc-question-topic">MP10 — Advanced Models</span>
+              <span class="rc-question-topic">Advanced Models</span>
             </div>
           </div>
           <div class="rc-question-body">
@@ -322,7 +322,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
             <div class="rc-question-badge">3</div>
             <div class="rc-question-meta">
               <span class="rc-question-type-label">Multiple Choice</span>
-              <span class="rc-question-topic">MP11 — Advanced Currency</span>
+              <span class="rc-question-topic">Advanced Currency</span>
             </div>
           </div>
           <div class="rc-question-body">
@@ -349,7 +349,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
             <div class="rc-question-badge">4</div>
             <div class="rc-question-meta">
               <span class="rc-question-type-label">Multiple Choice</span>
-              <span class="rc-question-topic">MP12 — Advanced Analytics</span>
+              <span class="rc-question-topic">Advanced Analytics</span>
             </div>
           </div>
           <div class="rc-question-body">
@@ -376,7 +376,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
             <div class="rc-question-badge" style="background: var(--brightgray); color: var(--offblack);">5</div>
             <div class="rc-question-meta">
               <span class="rc-question-type-label">Reflect &amp; Apply</span>
-              <span class="rc-question-topic">MP7 + MP12 — Segmentation &amp; Analytics</span>
+              <span class="rc-question-topic">Segmentation &amp; Analytics</span>
             </div>
           </div>
           <div class="rc-question-open-body">
@@ -391,12 +391,12 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
             <div class="rc-question-badge" style="background: var(--brightgray); color: var(--offblack);">6</div>
             <div class="rc-question-meta">
               <span class="rc-question-type-label">Synthesis</span>
-              <span class="rc-question-topic">Full P&amp;P 201 Series</span>
+              <span class="rc-question-topic">Full Pricing &amp; Plans 201 Series</span>
             </div>
           </div>
           <div class="rc-question-open-body">
-            <p class="rc-question-text">A B2B SaaS company currently has one flat-rate plan at $49/month. They want to accomplish three things: expand into European and LATAM markets, capture more revenue from their most active power users, and reduce churn from customers who cancel because monthly bills feel unpredictable. Drawing on P&P 201, propose a pricing architecture using at least three features from the series. Describe the role each feature plays and name one metric you'd track to know if it's working.</p>
-            <p class="rc-question-guidance"><strong>One possible architecture:</strong> <strong>Hybrid Pricing (MP10)</strong> — a $49 base plan covering platform access + a usage add-on for API calls beyond an included free tier. This captures power-user revenue automatically without surprising casual users; track <em>expansion MRR from usage overages</em>. <strong>Ramp Pricing (MP10)</strong> — an introductory period at $29 for the first 3 months reducing "unpredictable bill" anxiety at acquisition; track <em>churn rate at ramp escalation</em> to confirm the price increase doesn't cause exits. <strong>Multi-Currency (MP11)</strong> — explicit EUR and BRL pricing reflecting local purchasing power (not spot FX rates); track <em>trial-to-paid conversion by currency</em> to confirm each market entry point is calibrated correctly. <strong>Advanced Analytics (MP12)</strong> — Subscriptions + Usage Records exports feeding a BI tool to see plan distribution, segment performance, and per-market churn; the baseline analytics required to know if the above decisions are working.</p>
+            <p class="rc-question-text">A B2B SaaS company currently has one flat-rate plan at $49/month. They want to accomplish three things: expand into European and LATAM markets, capture more revenue from their most active power users, and reduce churn from customers who cancel because monthly bills feel unpredictable. Drawing on Pricing & Plans 201, propose a pricing architecture using at least three features from the series. Describe the role each feature plays and name one metric you'd track to know if it's working.</p>
+            <p class="rc-question-guidance"><strong>One possible architecture:</strong> <strong>Hybrid Pricing </strong> — a $49 base plan covering platform access + a usage add-on for API calls beyond an included free tier. This captures power-user revenue automatically without surprising casual users; track <em>expansion MRR from usage overages</em>. <strong>Ramp Pricing </strong> — an introductory period at $29 for the first 3 months reducing "unpredictable bill" anxiety at acquisition; track <em>churn rate at ramp escalation</em> to confirm the price increase doesn't cause exits. <strong>Multi-Currency </strong> — explicit EUR and BRL pricing reflecting local purchasing power (not spot FX rates); track <em>trial-to-paid conversion by currency</em> to confirm each market entry point is calibrated correctly. <strong>Advanced Analytics </strong> — Subscriptions + Usage Records exports feeding a BI tool to see plan distribution, segment performance, and per-market churn; the baseline analytics required to know if the above decisions are working.</p>
           </div>
         </div>
 
@@ -415,7 +415,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-advanced-analytics-strategy" class="rc-btn-prev">← Advanced Analytics</a>
       <span class="rc-lp-nav-indicator">Series complete</span>
-      <span class="rc-btn-complete">🎉 P&amp;P 201 complete!</span>
+      <span class="rc-btn-complete">🎉 Pricing &amp; Plans 201 complete!</span>
     </div>
 
     <!-- Continue Your Journey -->
