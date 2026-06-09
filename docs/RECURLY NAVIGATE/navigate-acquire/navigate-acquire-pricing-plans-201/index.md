@@ -219,20 +219,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <h1>Pricing &amp; Packaging 201</h1>
       </div>
       <p>You've built the foundation. This series goes deeper — into the pricing architectures that mature subscription businesses use to segment markets, serve enterprise customers, bill for real-world usage, and measure what's actually driving revenue growth.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Hybrid</div>
-          <div class="rc-hero-stat-label">pricing is the emerging standard — base subscription + usage-based add-ons</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">B2B</div>
-          <div class="rc-hero-stat-label">account hierarchy enables one billing relationship across an entire enterprise org</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Segment</div>
-          <div class="rc-hero-stat-label">pricing lets you charge different prices to different markets without duplicating plans</div>
-        </div>
-      </div>
+     
+       </div>
     </div>
 
     <!-- Navigation Menu — sticky, collapsed, LP Overview variant -->
