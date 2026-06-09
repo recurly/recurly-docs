@@ -212,15 +212,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire"> Acquire · P&amp;P 201
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 201
       </div>
       <div class="rc-lp-hero-title"><h1>Price Segmentation — Strategy &amp; Best Practices</h1></div>
       <p>Configuration makes segments work. Strategy makes them valuable. Here's how to design your segment taxonomy, run tests you can actually measure, and avoid the compounding complexity that makes segmentation a liability instead of an asset.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Taxonomy first</div><div class="rc-hero-stat-label">design your segment code structure before creating a single segment in production</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Track externally</div><div class="rc-hero-stat-label">set up analytics before activating — a test you can't measure isn't a test</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Prune regularly</div><div class="rc-hero-stat-label">dead segments accumulate — archive codes with no active subscribers quarterly</div></div>
-      </div>
+      
     </div>
 
     <!-- Navigation Menu — page 3 active -->
