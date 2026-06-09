@@ -233,7 +233,7 @@ details.rc-quiz-reveal > summary { font-size: .82rem; font-weight: 700; color: v
     <div class="rc-hero">
      
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale · Recurly Benchmarks 101
+        <img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt="Scale"> Scale
       </div>
       <div class="rc-lp-hero-title"><h1>Review &amp; resources</h1></div>
       <p>Check your understanding of the 8 benchmark KPIs and access all course resources in one place.</p>
