@@ -305,11 +305,34 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </details>
 
+    <!-- ── ONBOARDING ── -->
+    <div id="onboarding" class="rc-category" style="display: none;">
+      <h2><i class="fa-solid fa-user-check rc-fa-section"></i> Onboarding</h2>
+      <div class="rc-path-list">
+        <a href="#" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>The first 30 days playbook</h3>
+            <p>A structured checklist and strategic guide for your entire team to ensure a flawless, stress-free go-live experience.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="#" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Team training &amp; permissions</h3>
+            <p>Step-by-step instructions for inviting new users, setting up role-based access control, and training your staff on navigating the admin console.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
+    </div>
+
     <!-- ── LAUNCHPAD ── -->
     <div id="launchpad" class="rc-category">
       <h2><i class="fa-solid fa-rocket rc-fa-section"></i> Launchpad</h2>
       <div class="rc-path-list">
-        <a href="#" class="rc-path-card">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-one" class="rc-path-card">
           <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Launchpad phase one: Optimize</h3>
@@ -351,28 +374,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <!-- ── ONBOARDING ── -->
-    <div id="onboarding" class="rc-category">
-      <h2><i class="fa-solid fa-user-check rc-fa-section"></i> Onboarding</h2>
-      <div class="rc-path-list">
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
-          <div class="rc-path-content">
-            <h3>The first 30 days playbook</h3>
-            <p>A structured checklist and strategic guide for your entire team to ensure a flawless, stress-free go-live experience.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-        <a href="#" class="rc-path-card">
-          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
-          <div class="rc-path-content">
-            <h3>Team training &amp; permissions</h3>
-            <p>Step-by-step instructions for inviting new users, setting up role-based access control, and training your staff on navigating the admin console.</p>
-          </div>
-          <div class="rc-path-arrow">Start path →</div>
-        </a>
-      </div>
-    </div>
+
 
     <!-- ── OFFICE HOURS CTA ── -->
     <div class="rc-starter-cta">
