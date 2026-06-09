@@ -175,20 +175,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Why branding your dunning emails matters</h1></div>
       <p>Unbranded dunning emails look like phishing attempts. Branded ones look like a trusted business asking for help. That difference shows up directly in your recovery rate.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">+12%</div>
-          <div class="rc-hero-stat-label">Recovery uplift from branding</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">~60%</div>
-          <div class="rc-hero-stat-label">Higher CTR on branded emails</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Day 0</div>
-          <div class="rc-hero-stat-label">First email should fire</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
