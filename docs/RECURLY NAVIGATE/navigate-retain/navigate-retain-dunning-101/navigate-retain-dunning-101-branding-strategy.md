@@ -191,20 +191,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Subject lines, CTAs &amp; message arc</h1></div>
       <p>What you say — and how urgency escalates across the sequence — is just as important as how the email looks.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">4–5</div>
-          <div class="rc-hero-stat-label">Emails for monthly plans</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">8–10</div>
-          <div class="rc-hero-stat-label">Emails for annual plans</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Unique</div>
-          <div class="rc-hero-stat-label">Copy required per email</div>
-        </div>
-      </div>
+     
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
