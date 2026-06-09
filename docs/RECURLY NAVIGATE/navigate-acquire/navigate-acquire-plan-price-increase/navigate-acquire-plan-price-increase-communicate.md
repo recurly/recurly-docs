@@ -114,9 +114,20 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-lp-section p { font-size: .95rem; line-height: 1.65; color: #32312D; margin: 0 0 16px; }
 
 /* ── NUMBERED STEPS — time label variant ── */
+/* ── NUMBERED STEPS — time label variant ── */
 .rc-steps { display: flex; flex-direction: column; gap: 0; margin: 0 0 24px; }
-.rc-step { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid #F1EFE3; }
+
+.rc-step { 
+  display: grid; 
+  grid-template-columns: 80px 1fr; /* Explicitly sets the first column width */
+  justify-items: start;            /* Keeps elements left-aligned within their grid tracks */
+  gap: 16px; 
+  align-items: flex-start; 
+  padding: 18px 0; 
+  border-bottom: 1px solid #F1EFE3; 
+}
 .rc-step:last-child { border-bottom: none; }
+
 .rc-step-num { width: 36px; height: 36px; border-radius: 50%; background: #0D0D0B; color: #FFD706; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
 .rc-step-num-time { min-width: 56px; height: 36px; padding: 0 12px; border-radius: 20px; background: #0D0D0B; color: #FFD706; display: inline-flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; letter-spacing: .3px; white-space: nowrap; }
 .rc-step-content h4 { font-size: 1.02rem; font-weight: 800; color: #0D0D0B; margin: 0 0 6px; line-height: 1.3; }
@@ -250,7 +261,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       <div class="rc-steps">
         <div class="rc-step">
-          <div class="rc-step-num-time">Day 0</div><br>
+          <div class="rc-step-num-time">Day 0</div>
           <div class="rc-step-content">
             <h4>Initial announcement — 30–90 days before the change</h4>
             <p>Your primary notification. Explain the why, state the new price, give the effective date. This is the most important message in the sequence — give it the most attention. Personalize with the subscriber's current plan name and price where possible.</p>
