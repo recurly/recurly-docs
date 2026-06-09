@@ -194,11 +194,11 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
     <!-- Hero — completion -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
       </div>
       <div class="rc-completion-badge">🏁</div>
-      <div class="rc-lp-hero-title"><h1>Review &amp; Resources</h1></div>
-      <p>You've completed Pricing &amp; Packaging 101 — six Micro-Paths covering the full foundation of how Recurly's plan and pricing tools work and how to use them well. Use this page to test what you've learned and find every resource from across the series in one place.</p>
+      <div class="rc-lp-hero-title"><h1>Pricing &amp; Plans 101 — Review &amp; resources</h1></div>
+      <p>You've completed Pricing &amp; Plans 101 — six Micro-Paths covering the full foundation of how Recurly's plan and pricing tools work and how to use them well. Use this page to test what you've learned and find every resource from across the series in one place.</p>
       <div class="rc-hero-stats">
         <div class="rc-hero-stat"><div class="rc-hero-stat-num">6</div><div class="rc-hero-stat-label">Micro-Paths completed — Plans, Add-Ons, Currency, Pricing Models, Trials, Analytics</div></div>
         <div class="rc-hero-stat"><div class="rc-hero-stat-num">18</div><div class="rc-hero-stat-label">pages of CSM-curated guidance across configuration, strategy, and best practices</div></div>
@@ -233,7 +233,7 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
     <!-- What you covered -->
     <div class="rc-lp-section" id="recap">
       <h2>🗺️ What you covered</h2>
-      <p>Six Micro-Paths, each building a distinct piece of the P&amp;P foundation. Here's the one-line summary of what each one established.</p>
+      <p>Six Micro-Paths, each building a distinct piece of the Pricing &amp; Plans foundation. Here's the one-line summary of what each one established.</p>
       <div class="rc-recap-grid">
         <div class="rc-recap-card">
           <div class="rc-recap-num">MP 1</div>
@@ -408,7 +408,7 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
           <div class="rc-next-card-tag">Up next</div>
           <div class="rc-next-card-icon">🏁</div>
           <h4>Review &amp; Resources</h4>
-          <p>You've completed all six Micro-Paths. Head to the Review &amp; Resources page to test your knowledge and access every resource from across the full P&amp;P 101 series in one place.</p>
+          <p>You've completed all six Micro-Paths. Head to the Review &amp; Resources page to test your knowledge and access every resource from across the full Pricing &amp; Plans 101 series in one place.</p>
           <div class="rc-next-card-arrow">Go to Review →</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-next-card">
@@ -422,7 +422,7 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
           <div class="rc-next-card-tag">Live session</div>
           <div class="rc-next-card-icon">🎙️</div>
           <h4>Global Office Hours</h4>
-          <p>Bring any outstanding questions from the full P&amp;P 101 series to our CSMs live. Sessions run weekly — no question is too specific.</p>
+          <p>Bring any outstanding questions from the full Pricing &amp; Plans 101 series to our CSMs live. Sessions run weekly — no question is too specific.</p>
           <div class="rc-next-card-arrow">Register →</div>
         </a>
       </div>
@@ -436,7 +436,7 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
     <!-- Full resource library -->
     <div class="rc-lp-section" id="all-resources">
       <h2>📚 Full resource library</h2>
-      <p>Every resource referenced across all six Micro-Paths, organized by topic. Bookmark this page as your consolidated P&amp;P 101 reference.</p>
+      <p>Every resource referenced across all six Micro-Paths, organized by topic. Bookmark this page as your consolidated Pricing &amp; Plans 101 reference.</p>
 
       <div class="rc-resource-library">
 
@@ -509,7 +509,7 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
 
     <!-- OH CTA -->
     <div class="rc-oh-cta">
-      <h4>🗓️ Bring your P&amp;P questions to Office Hours</h4>
+      <h4>🗓️ Bring your Pricing &amp; Plans questions to Office Hours</h4>
       <p>You've covered the full foundation. The next step is applying it to your specific configuration — and our Customer Success team runs weekly <strong>Global Office Hours</strong> sessions where you can do exactly that. Bring plan architecture questions, pricing model tradeoffs, trial strategy decisions, or analytics interpretation challenges. No question is too specific.</p>
       <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-oh-btn">Register for Office Hours →</a>
     </div>
@@ -518,8 +518,8 @@ details.rc-quiz-reveal[open] > summary::before { transform: rotate(90deg); }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101:</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing &amp; Plans 101 Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
