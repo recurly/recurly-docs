@@ -215,20 +215,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
       </div>
       <div class="rc-lp-hero-title"><h1>P&amp;P 201: Review &amp; Resources</h1></div>
       <p>Six micro-paths. Eighteen pages. One complete advanced pricing and packaging portfolio — built, tested, and ready to measure.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">6</div>
-          <div class="rc-hero-stat-label">Advanced pricing capabilities mastered</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">140+</div>
-          <div class="rc-hero-stat-label">Markets reachable with multi-currency pricing</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Series complete</div>
-          <div class="rc-hero-stat-label">P&amp;P 201 — all micro-paths finished</div>
-        </div>
-      </div>
+      
     </div>
 
     <!-- Nav -->
