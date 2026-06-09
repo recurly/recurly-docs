@@ -192,15 +192,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Plans — How to Configure</h1></div>
       <p>A step-by-step walkthrough of every field that matters when building a plan in Recurly — including the ones that are permanent, the ones that affect existing subscribers, and the ones most people miss.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">255</div><div class="rc-hero-stat-label">character limit on plan name — visible on invoices</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Permanent</div><div class="rc-hero-stat-label">plan code — cannot be changed after creation</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">New only</div><div class="rc-hero-stat-label">versioned terms apply to new subscribers only</div></div>
-      </div>
     </div>
 
     <!-- Navigation Menu — non-sticky, open, Micro-Path, page 2 active -->
@@ -441,7 +436,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans-strategy" class="rc-footer-link">Plans: Strategy &amp; Best Practices</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
+          <span class="rc-footer-label">Pricing &amp; Plans 101:</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
