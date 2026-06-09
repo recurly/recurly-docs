@@ -249,7 +249,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Add-Ons</h1></div>
+      <div class="rc-lp-hero-title"><h1>Add-Ons — Overview</h1></div>
       <p>Add-ons are how you grow revenue beyond the base subscription. They let you package your product flexibly, upsell at the right moment, and give subscribers control over what they pay for.</p>
      
     </div>
