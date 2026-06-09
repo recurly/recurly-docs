@@ -176,20 +176,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Dunning window length</h1></div>
       <p>The window is the container everything else runs inside. Size it correctly and your retries and emails have maximum time to work.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">27 days</div>
-          <div class="rc-hero-stat-label">Monthly plans</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">60 days</div>
-          <div class="rc-hero-stat-label">Annual plans</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">+11%</div>
-          <div class="rc-hero-stat-label">Recovery from window extension</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
