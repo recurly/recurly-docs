@@ -215,9 +215,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 201
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
-      <div class="rc-lp-hero-title"><h1>Account Hierarchy — How to configure</h1></div>
+      <div class="rc-lp-hero-title"><h1>Account hierarchy — How to configure</h1></div>
       <p>A step-by-step walkthrough of creating parent and child accounts, setting billing responsibility, enabling Invoice Rollup, and verifying your hierarchy before going live with an enterprise customer.</p>
       
     </div>
