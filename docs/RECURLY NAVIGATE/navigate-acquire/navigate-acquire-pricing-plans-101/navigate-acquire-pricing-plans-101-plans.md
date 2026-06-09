@@ -195,11 +195,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Plans</h1></div>
       <p>Your plan is more than a billing configuration — it's the first value message your subscriber sees. Learn what makes a plan portfolio work and why one plan is never enough.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">78%</div><div class="rc-hero-stat-label">of merchants now offer both monthly &amp; annual</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">50–60%</div><div class="rc-hero-stat-label">more revenue per user on annual plans</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">52%</div><div class="rc-hero-stat-label">of subscribers cancel within the first year</div></div>
-      </div>
+     
     </div>
 
     <!-- Navigation Menu — non-sticky, open, Micro-Path variant
