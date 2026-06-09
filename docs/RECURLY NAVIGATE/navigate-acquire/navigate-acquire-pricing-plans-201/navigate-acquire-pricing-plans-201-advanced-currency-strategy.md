@@ -1,5 +1,5 @@
 ---
-title: 'Advanced Currency: Best practices & strategy'
+title: 'Advanced Currency: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
