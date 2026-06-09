@@ -192,7 +192,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Pricing Models</h1></div>
+      <div class="rc-lp-hero-title"><h1>Pricing models — Overview</h1></div>
       <p>The pricing model you choose determines how Recurly calculates what a subscriber owes each billing period — and how they perceive the value of what they're paying for. Here's what each model does and when each one belongs in your setup.</p>
     </div>
 
