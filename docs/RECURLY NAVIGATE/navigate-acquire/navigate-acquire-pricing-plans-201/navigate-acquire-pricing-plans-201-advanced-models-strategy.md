@@ -211,20 +211,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-lp-hero-title"><h1>Advanced Models: Strategy &amp; Best Practices</h1></div>
       <p>When to use each model, how to structure them for your segment, and what to watch for once customers are live on ramp, hybrid, and prepaid plans.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">12</div>
-          <div class="rc-hero-stat-label">Maximum ramp intervals on a single Recurly plan</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">$0</div>
-          <div class="rc-hero-stat-label">Possible first-period cost with an intro ramp structure</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">100%</div>
-          <div class="rc-hero-stat-label">Of prepaid revenue collected before service delivery</div>
-        </div>
-      </div>
+      
+ 
     </div>
 
     <!-- Nav -->
