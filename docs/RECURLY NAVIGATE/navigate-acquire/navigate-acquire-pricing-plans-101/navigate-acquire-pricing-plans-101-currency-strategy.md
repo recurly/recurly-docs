@@ -212,24 +212,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Currency — Strategy &amp; Best Practices</h1></div>
       <p>Enabling a currency is the first step. Using it strategically — with localised pricing, region-appropriate payment methods, and renewal risk built into your dunning logic — is what turns currency configuration into acquisition growth.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Localise</div>
-          <div class="rc-hero-stat-label">don't just convert — €9.99 outperforms €10.43 every time</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Region-first</div>
-          <div class="rc-hero-stat-label">match payment methods to market — not just currency</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Dunning</div>
-          <div class="rc-hero-stat-label">renewal failure patterns differ by region — your campaigns should too</div>
-        </div>
-      </div>
     </div>
 
     <!-- Nav — page 3 active -->
@@ -445,8 +431,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency-strategy" class="rc-footer-link">Currency: Strategy &amp; Best Practices</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing & Plans 101 Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-pricing-models" class="rc-footer-link">Pricing Models</a>
