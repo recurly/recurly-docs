@@ -209,20 +209,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
       </div>
       <div class="rc-lp-hero-title"><h1>Measuring your dunning performance</h1></div>
       <p>The changes you've made only create value if you can see them working. Here's where to look, what to track, and how often to review.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">27%</div>
-          <div class="rc-hero-stat-label">Avg industry recovery rate</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Monthly</div>
-          <div class="rc-hero-stat-label">Minimum review cadence</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Per campaign</div>
-          <div class="rc-hero-stat-label">Track metrics separately</div>
-        </div>
-      </div>
+      
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
