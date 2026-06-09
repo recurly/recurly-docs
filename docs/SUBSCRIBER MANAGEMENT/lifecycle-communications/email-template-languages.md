@@ -1,9 +1,9 @@
 ---
 title: Email language support (30)
 excerpt: >-
-  Empower global communication with Recurly's Email Language Support. Reach out
-  to customers in their native tongue, ensuring clearer understanding and better
-  engagement.
+  Learn how to configure Recurly's email language support to send customer
+  communications in 30 locales, set default languages, and customize email
+  templates by region.
 deprecated: false
 hidden: false
 metadata:
@@ -13,112 +13,138 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-Depending on the Recurly subscription plan, you can enable a varied number of languages in sandbox and production. This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-page">
+  <div class="rp-overview">Recurly supports email communications in 30 locales, letting you reach subscribers in the language they know best. Configure a site-wide default language, set individual customer language preferences, and customize email templates by region — including PDF invoice attachments that automatically match the email language.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Not included in Starter or Pro — contact <a href="https://recurly.com/demo/contact-sales/" target="_blank">Recurly Sales</a> to upgrade</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+    <a class="rp-toc-pill" href="#configure-email-language-support"><span class="rp-toc-num">4</span>Configure email language support</a>
+  </div>
+</div>
 
 # Definition
 
-Email Language Support in Recurly empowers merchants to send customer communications in their preferred language, ensuring a personalized and culturally respectful experience. By delivering emails in the language your customers understand best, you create more engaging and relevant interactions.
-
-In sandbox mode, you can enable and test as many languages as needed. However, in production, the number of languages available depends on your Recurly subscription plan. This feature **may not be included** in the Starter or Pro plans. If you wish to use full Email Language Support, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
+<div class="rp-definition">Email language support lets merchants send customer communications in each subscriber's preferred language and locale. A locale covers more than language — it also determines regional formatting conventions for dates, times, currency symbols, and numbers. In sandbox mode, you can enable and test as many languages as needed. In production, the number of available languages depends on your Recurly subscription plan.</div>
 
 # Key benefits
 
-* **Global reach with a local touch:** Engage customers worldwide, addressing them in their native languages.
-* **Enhanced customer experience:** Elevate the user experience by ensuring clearer understanding and minimized communication barriers.
-* **Increased engagement rates:** Emails in native languages are more likely to be opened and read, boosting interaction.
-* **Streamlined communications:** Avoid confusion and misunderstandings that can arise from language barriers.
-* **Flexible configuration:** Tailor email language settings as per customer or business needs, ensuring optimal results.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+    <strong>Global reach, regional relevance</strong>
+    <span>Communicate with subscribers worldwide in the language and regional conventions that feel native to them — not just a translated version of your default template.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></div>
+    <strong>Better customer experience</strong>
+    <span>Clearer communication reduces friction and misunderstandings, giving subscribers a more confident and comfortable interaction with your brand.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></div>
+    <strong>Higher engagement rates</strong>
+    <span>Emails delivered in a subscriber's native language are more likely to be opened, read, and acted on.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible configuration</strong>
+    <span>Set language preferences at the site level or per individual customer, and adjust them at any time through the API, Hosted Payment Pages, or the Admin Console.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i></div>
+    <strong>Consistent invoice language</strong>
+    <span>PDF invoice attachments automatically match the language of the email, keeping the entire communication consistent end to end.</span>
+  </div>
+</div>
 
 # Key details
 
-Recurly, appreciating the global nature of business, brings forth an extensive language support system for emails. While English remains a widely used medium, it's essential to approach customers in a language they're most comfortable with, especially in regions where English isn't the primary language.
+## Supported languages and locales
 
-### **Supported languages & locales**
+Recurly supports 30 locales. Each locale defines both the language and regional formatting conventions — for example, `en-US` uses `mm/dd/yyyy` for dates while `en-GB` uses `dd/mm/yyyy`.
 
-A locale isn't just about language; it also encompasses specific regional conventions for dates, times, and numbers. With Recurly's support for 30 locales, merchants have a broad spectrum to ensure they're effectively communicating with their international clientele.\
-For instance:
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Language</td><td>API value</td></tr>
+  <tr><td>Chinese (China)</td><td><code>zh-CN</code></td></tr>
+  <tr><td>Danish (Denmark)</td><td><code>da-DK</code></td></tr>
+  <tr><td>Dutch (Belgium)</td><td><code>nl-BE</code></td></tr>
+  <tr><td>Dutch (Netherlands)</td><td><code>nl-NL</code></td></tr>
+  <tr><td>English (Australia)</td><td><code>en-AU</code></td></tr>
+  <tr><td>English (Canada)</td><td><code>en-CA</code></td></tr>
+  <tr><td>English (Ireland)</td><td><code>en-IE</code></td></tr>
+  <tr><td>English (New Zealand)</td><td><code>en-NZ</code></td></tr>
+  <tr><td>English (United Kingdom)</td><td><code>en-GB</code></td></tr>
+  <tr><td>English (United States)</td><td><code>en-US</code></td></tr>
+  <tr><td>Finnish (Finland)</td><td><code>fi-FI</code></td></tr>
+  <tr><td>French (Canada)</td><td><code>fr-CA</code></td></tr>
+  <tr><td>French (France)</td><td><code>fr-FR</code></td></tr>
+  <tr><td>German (Germany)</td><td><code>de-DE</code></td></tr>
+  <tr><td>German (Switzerland)</td><td><code>de-CH</code></td></tr>
+  <tr><td>Hindi (India)</td><td><code>hi-IN</code></td></tr>
+  <tr><td>Italian (Italy)</td><td><code>it-IT</code></td></tr>
+  <tr><td>Japanese (Japan)</td><td><code>ja-JP</code></td></tr>
+  <tr><td>Korean (Korea)</td><td><code>ko-KR</code></td></tr>
+  <tr><td>Polish (Poland)</td><td><code>pl-PL</code></td></tr>
+  <tr><td>Portuguese (Brazil)</td><td><code>pt-BR</code></td></tr>
+  <tr><td>Portuguese (Portugal)</td><td><code>pt-PT</code></td></tr>
+  <tr><td>Romanian (Romania)</td><td><code>ro-RO</code></td></tr>
+  <tr><td>Russian (Russia)</td><td><code>ru-RU</code></td></tr>
+  <tr><td>Slovakian (Slovakia)</td><td><code>sk-SK</code></td></tr>
+  <tr><td>Spanish (Mexico)</td><td><code>es-MX</code></td></tr>
+  <tr><td>Spanish (Spain)</td><td><code>es-ES</code></td></tr>
+  <tr><td>Spanish (United States)</td><td><code>es-US</code></td></tr>
+  <tr><td>Swedish (Sweden)</td><td><code>sv-SE</code></td></tr>
+  <tr><td>Turkish (Turkey)</td><td><code>tr-TR</code></td></tr>
+</table>
 
-* English (United States) or `en-US` follows the `mm/dd/yyyy` format for dates.
-* English (United Kingdom) or `en-GB` adopts the `dd/mm/yyyy` format.
+## Default language
 
-| Language                 | API Value |
-| :----------------------- | :-------- |
-| Chinese (China)          | zh-CN     |
-| Danish (Denmark)         | da-DK     |
-| Dutch (Belgium)          | nl-BE     |
-| Dutch (Netherlands)      | nl-NL     |
-| English (Australia)      | en-AU     |
-| English (Canada)         | en-CA     |
-| English (United Kingdom) | en-GB     |
-| English (Ireland)        | en-IE     |
-| English (New Zealand)    | en-NZ     |
-| English (United States)  | en-US     |
-| Finnish (Finland)        | fi-FI     |
-| French (Canada)          | fr-CA     |
-| French (France)          | fr-FR     |
-| German (Switzerland)     | de-CH     |
-| German (Germany)         | de-DE     |
-| Hindi (India)            | hi-IN     |
-| Italian (Italy)          | it-IT     |
-| Japanese (Japan)         | ja-JP     |
-| Korean (Korea)           | ko-KR     |
-| Portuguese (Brazil)      | pt-BR     |
-| Portuguese (Portugal)    | pt-PT     |
-| Romanian (Romania)       | ro-RO     |
-| Russian (Russia)         | ru-RU     |
-| Slovakian (Slovakia)     | sk-SK     |
-| Spanish (Spain)          | es-ES     |
-| Spanish (Mexico)         | es-MX     |
-| Spanish (United States)  | es-US     |
-| Turkish (Turkey)         | tr-TR     |
-| Swedish (Sweden)         | sv-SE     |
-| Polish (Poland)          | pl-PL     |
+Recurly uses English (United States) as the site default. Merchants on multi-language plans can change the default to any enabled language. The default language is applied to any customer who doesn't have an individual language preference set.
 
-### Setting a default language & disabling one
+## Customer language preference
 
-While Recurly sets English (United States) as the default language, businesses with multi-language plans can alter the default to any enabled language. Should there be a need, it's also feasible to disable an already set up email language.
+Individual customer language preferences can be set through the API, Hosted Payment Pages, the Admin Console, or Hosted Account Management Pages. Always ensure the language assigned to a customer is one that's enabled on your site — setting a disabled language will result in a validation error.
 
-### Customer language preference
+## Email translations and parameters
 
-An integral aspect of this feature is setting the language preference for individual customers. This can be executed through various channels, be it the API, Hosted Payment Pages, the Recurly UI, or Hosted Account Management Pages.
+Recurly provides default email templates in every supported language and allows merchants to customize them further. Some content — such as plan names or your company name — won't be automatically translated and must be updated manually for each language variant. Recurly also adjusts certain email parameters to match regional conventions; for example, currency symbols may appear before or after the amount depending on the locale.
 
-### Email translations & parameters by language
+## PDF invoice attachments
 
-While Recurly offers default email templates in every supported language, it allows for considerable customization. Merchants can edit templates to ensure their content aligns with regional differences within a language. It's crucial to remember that certain elements, like the names of plans or a company's name, won't be automatically translated.\
-Furthermore, Recurly ensures that specific email parameters align with a country's conventions. For example, currency symbols might appear before or after the amount based on regional customs.
+When an email includes an attached PDF invoice, the invoice is generated in the same language as the email. This keeps the entire communication — from subject line to invoice line items — consistent for the subscriber.
 
-### PDF Invoice Attachments
+# Configure email language support
 
-Recurly's attention to detail shines with its feature where attached PDF invoices mirror the language of the email. This ensures consistency in communication and a smoother customer experience.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Configure Languages</h4><p>In the Admin Console, go to <strong>Configuration → Email Templates → Configure Languages</strong>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable a language</h4><p>On the Configure Languages page, select the language you want to enable. Once enabled, it becomes available to assign to individual customers.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Set the default language</h4><p>On the same page, set a site-wide default language. This language is used for any customer without an individual preference set.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Disable a language (if needed)</h4><p>To disable a language, find it on the Configure Languages page and disable it. Customers previously set to that language will automatically revert to the site default.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">5</div>
+    <div><h4>Customize email templates by language</h4><p>Go to <strong>Email Templates</strong> and select a language from the language selector to edit that language's version of a template. Preview and send test emails before enabling the template in production.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">6</div>
+    <div><h4>Set individual customer language preferences</h4><p>Assign a language to individual customers via the Admin Console, API, Hosted Payment Pages, or Hosted Account Management Pages. Only assign languages that are already enabled on your site.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">7</div>
+    <div><h4>Review and maintain translations</h4><p>Periodically review your language-specific email templates to ensure content stays accurate and region-appropriate. Check how Recurly formats locale-specific parameters — such as currency and date formats — to avoid miscommunication.</p></div>
+  </div>
+</div>
 
-## **Step-by-step Process to Configure Email Language Support**
-
-1. **Navigating to the Configuration:**
-   * Log into your Recurly dashboard.
-   * Proceed to Configuration→Email Templates→Configure Languages.
-2. **Enabling a New Language:**
-   * On the "Configure Languages" page, you'll notice options to enable new languages for your site. Select the desired language.
-   * With the language enabled, it's now possible to set it for individual customers, ensuring they receive emails in this specific language.
-3. **Setting the Default Language:**
-   * Within the same "Configure Languages" page, you have the option to set a default language for your site.
-   * Remember, the default language is crucial as it's used for customers who haven't specified any language preference.
-4. **Disabling an Existing Language:**
-   * On the "Configure Languages" page, find the option to disable a previously set language.
-   * Note: Customers set to a now-disabled language will revert to receiving emails in the site's default language.
-5. **Customizing Email Templates for Different Languages:**
-   * Visit the "Email Templates" page.
-   * Here, you can edit email templates for different languages by selecting the desired language from the language selector.
-   * Make sure to preview and send test emails to ensure that the templates align with your expectations before going live.
-6. **Adjusting Customer Language Preferences:**
-   * For individual customer preferences, you can set their email language through the Recurly UI, API, Hosted Payment Pages, or Hosted Account Management Pages.
-   * Always ensure the language set is one that's enabled on your site to avoid any validation errors.
-7. **Checking & Editing Email Translations and Parameters:**
-
-* Periodically review and, if necessary, customize email templates to make them region-specific within a language.
-* Also, familiarize yourself with how Recurly adjusts email parameters based on regional conventions to avoid miscommunication.
-
-By configuring and harnessing the power of Email Language Support, businesses can achieve a more global reach while maintaining a local touch.
+<br />
