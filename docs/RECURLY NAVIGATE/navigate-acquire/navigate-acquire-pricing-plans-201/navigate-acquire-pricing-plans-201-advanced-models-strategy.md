@@ -1,5 +1,5 @@
 ---
-title: 'Advanced Pricing Models: Best practices & strategy'
+title: 'Advanced Pricing Models: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
