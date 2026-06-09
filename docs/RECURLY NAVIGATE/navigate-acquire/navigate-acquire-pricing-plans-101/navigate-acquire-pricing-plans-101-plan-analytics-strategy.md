@@ -1,5 +1,5 @@
 ---
-title: 'Analytics: Strategy & best practices'
+title: 'Plan Analytics: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
