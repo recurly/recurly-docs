@@ -205,7 +205,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain · Dunning 101
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
       <div class="rc-lp-hero-title"><h1>Measuring your dunning performance</h1></div>
       <p>The changes you've made only create value if you can see them working. Here's where to look, what to track, and how often to review.</p>
