@@ -1,11 +1,9 @@
 ---
 title: Countries provinces and states
 excerpt: >-
-  Ensure accurate and standardized location data with Recurly's Countries,
-  Provinces, and States feature. Utilizing ISO alpha-2 codes for all countries,
-  Canadian provinces, and U.S. states. This feature enhances communication with
-  payment gateways and third parties, minimizing address validation errors, and
-  improving overall data accuracy.
+  Recurly converts all countries, Canadian provinces, and U.S. states to ISO
+  alpha-2 codes for use with payment gateways and third-party services.
+  Reference the full code list here.
 deprecated: false
 hidden: false
 metadata:
@@ -15,366 +13,368 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Recurly converts all countries, Canadian provinces, and U.S. states to ISO alpha-2 codes in the database. These codes are used when communicating with payment gateways and third-party services, ensuring a standardized, universally recognized format for location data.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">2</span>Key details</a>
+  </div>
+</div>
 
 # Definition
 
-Recurly's Countries, Provinces, and States feature is a system that converts all countries, Canadian provinces, and U.S. states to ISO alpha-2 codes in our database. These codes are used when communicating with payment gateways and third parties, ensuring a standardized and universally recognized format for location data.
-
-# Key benefits
-
-* **Standardization:** Using ISO alpha-2 codes for Countries, Provinces, and States ensures a universally recognized format while reducing the risk of errors.
-* **Improved communication:** These standardized codes are used when communicating with payment gateways and third parties, ensuring clear and accurate data transmission.
-* **Reduced errors:** Sending all Countries, Provinces, and States to Recurly with capitalized ISO alpha-2 codes minimizes address validation errors with your payment gateways or tax calculation.
-* **Comprehensive coverage:** The system includes codes for all recognized Countries, Canadian provinces, and U.S. states.
+<div class="rp-definition">Recurly's Countries, Provinces, and States system standardizes all location data to capitalized ISO alpha-2 codes before passing it to payment gateways and third parties. Sending the correct codes reduces address validation errors and ensures accurate tax calculation.</div>
 
 # Key details
 
 ## How it works
 
-1. When sending location data to Recurly (such as when setting up an account or processing a transaction), ensure that all Countries, Provinces, and States are sent using their capitalized ISO alpha-2 codes. For example, send "US" for the United States, "CA" for Canada, "ON" for Ontario, "NY" for New York, and so forth.
-2. If Recurly is unable to match the country or province to one of our codes, we will store the raw input you give us. For example, if you send "New York" instead of "NY", we will store "New York" in our database.
-3. These codes are used when communicating with payment gateways and third parties, ensuring clear and accurate data transmission.
+When sending location data to Recurly — for example, when creating an account or processing a transaction — always use capitalized ISO alpha-2 codes. For example: `US` for the United States, `CA` for Canada, `ON` for Ontario, `NY` for New York.
+
+If Recurly cannot match the value you send to a recognized code, it stores the raw input as-is. For example, sending `New York` instead of `NY` stores `New York` in the database, which may cause address validation or tax calculation errors downstream.
 
 ## Countries
 
-* AC - Ascension Island
-* AD - Andorra
-* AE - United Arab Emirates
-* AF - Afghanistan
-* AG - Antigua and Barbuda
-* AI - Anguilla
-* AL - Albania
-* AM - Armenia
-* AO - Angola
-* AQ - Antarctica
-* AR - Argentina
-* AS - American Samoa
-* AT - Austria
-* AU - Australia
-* AW - Aruba
-* AX - Åland Islands
-* AZ - Azerbaijan
-* BA - Bosnia and Herzegovina
-* BB - Barbados
-* BD - Bangladesh
-* BE - Belgium
-* BF - Burkina Faso
-* BG - Bulgaria
-* BH - Bahrain
-* BI - Burundi
-* BJ - Benin
-* BL - Saint Barthélemy
-* BM - Bermuda
-* BN - Brunei
-* BO - Bolivia
-* BQ - British Antarctic Territory
-* BR - Brazil
-* BS - Bahamas
-* BT - Bhutan
-* BV - Bouvet Island
-* BW - Botswana
-* BY - Belarus
-* BZ - Belize
-* CA - Canada
-* CC - Cocos \[Keeling\] Islands
-* CD - Congo \[Democratic Republic\]
-* CF - Central African Republic
-* CG - Congo - Brazzaville
-* CG - Congo \[Republic\]
-* CH - Switzerland
-* CI - Côte d’Ivoire
-* CI - Ivory Coast
-* CK - Cook Islands
-* CL - Chile
-* CM - Cameroon
-* CN - China
-* CO - Colombia
-* CR - Costa Rica
-* CU - Cuba
-* CV - Cabo Verde
-* CX - Christmas Island
-* CY - Cyprus
-* CZ - Czech Republic
-* DE - Germany
-* DG - Diego Garcia
-* DJ - Djibouti
-* DK - Denmark
-* DM - Dominica
-* DO - Dominican Republic
-* DZ - Algeria
-* EC - Ecuador
-* EE - Estonia
-* EG - Egypt
-* EH - Western Sahara
-* ER - Eritrea
-* ES - Spain
-* ET - Ethiopia
-* FI - Finland
-* FJ - Fiji
-* FK - Falkland Islands
-* FK - Falkland Islands \[Malvinas\]
-* FM - Micronesia
-* FO - Faroe Islands
-* FR - France
-* GA - Gabon
-* GB - United Kingdom
-* GD - Grenada
-* GE - Georgia
-* GF - French Guiana
-* GG - Guernsey
-* GH - Ghana
-* GI - Gibraltar
-* GL - Greenland
-* GM - Gambia
-* GN - Guinea
-* GP - Guadeloupe
-* GQ - Equatorial Guinea
-* GR - Greece
-* GS - South Georgia and the South Sandwich Islands
-* GT - Guatemala
-* GU - Guam
-* GW - Guinea-Bissau
-* GY - Guyana
-* HK - Hong Kong
-* HM - Heard Island and McDonald Islands
-* HN - Honduras
-* HR - Croatia
-* HT - Haiti
-* HU - Hungary
-* ID - Indonesia
-* IE - Ireland
-* IL - Israel
-* IM - Isle of Man
-* IN - India
-* IO - British Indian Ocean Territory
-* IQ - Iraq
-* IR - Iran
-* IS - Iceland
-* IT - Italy
-* JE - Jersey
-* JM - Jamaica
-* JO - Jordan
-* JP - Japan
-* KE - Kenya
-* KG - Kyrgyzstan
-* KH - Cambodia
-* KI - Kiribati
-* KM - Comoros
-* KN - Saint Kitts and Nevis
-* KP - North Korea
-* KR - South Korea
-* KW - Kuwait
-* KY - Cayman Islands
-* KZ - Kazakhstan
-* LA - Laos
-* LB - Lebanon
-* LC - Saint Lucia
-* LI - Liechtenstein
-* LK - Sri Lanka
-* LR - Liberia
-* LS - Lesotho
-* LT - Lithuania
-* LU - Luxembourg
-* LV - Latvia
-* LY - Libya
-* MA - Morocco
-* MC - Monaco
-* MD - Moldova
-* ME - Montenegro
-* MF - Saint Martin
-* MG - Madagascar
-* MH - Marshall Islands
-* MK - Macedonia
-* MK - North Macedonia
-* ML - Mali
-* MM - Myanmar \[Burma\]
-* MN - Mongolia
-* MO - Macao
-* MP - Northern Mariana Islands
-* MQ - Martinique
-* MR - Mauritania
-* MS - Montserrat
-* MT - Malta
-* MU - Mauritius
-* MV - Maldives
-* MW - Malawi
-* MX - Mexico
-* MY - Malaysia
-* MZ - Mozambique
-* NA - Namibia
-* NC - New Caledonia
-* NE - Niger
-* NF - Norfolk Island
-* NG - Nigeria
-* NI - Nicaragua
-* NL - Netherlands
-* NO - Norway
-* NP - Nepal
-* NR - Nauru
-* NU - Niue
-* NZ - New Zealand
-* OM - Oman
-* PA - Panama
-* PE - Peru
-* PF - French Polynesia
-* PG - Papua New Guinea
-* PH - Philippines
-* PK - Pakistan
-* PL - Poland
-* PM - Saint Pierre and Miquelon
-* PN - Pitcairn Islands
-* PR - Puerto Rico
-* PS - Palestinian Territories
-* PT - Portugal
-* PW - Palau
-* PY - Paraguay
-* QA - Qatar
-* RE - Réunion
-* RO - Romania
-* RS - Serbia
-* RU - Russia
-* RW - Rwanda
-* SA - Saudi Arabia
-* SB - Solomon Islands
-* SC - Seychelles
-* SD - Sudan
-* SE - Sweden
-* SG - Singapore
-* SH - Saint Helena
-* SI - Slovenia
-* SJ - Svalbard and Jan Mayen
-* SK - Slovakia
-* SL - Sierra Leone
-* SM - San Marino
-* SN - Senegal
-* SO - Somalia
-* SR - Suriname
-* SS - South Sudan
-* ST - São Tomé and Príncipe
-* SV - El Salvador
-* SX - Sint Maarten [Dutch part]
-* SY - Syria
-* SZ - Swaziland
-* TC - Turks and Caicos Islands
-* TD - Chad
-* TF - French Southern Territories
-* TG - Togo
-* TH - Thailand
-* TJ - Tajikistan
-* TK - Tokelau
-* TL - Timor-Leste
-* TL - East Timor
-* TM - Turkmenistan
-* TN - Tunisia
-* TO - Tonga
-* TR - Turkey
-* TT - Trinidad and Tobago
-* TV - Tuvalu
-* TW - Taiwan
-* TZ - Tanzania
-* UA - Ukraine
-* UG - Uganda
-* UM - U.S. Minor Outlying Islands
-* US - United States
-* UY - Uruguay
-* UZ - Uzbekistan
-* VA - Vatican City
-* VC - Saint Vincent and the Grenadines
-* VE - Venezuela
-* VG - British Virgin Islands
-* VI - U.S. Virgin Islands
-* VN - Vietnam
-* VU - Vanuatu
-* WF - Wallis and Futuna
-* WS - Samoa
-* YE - Yemen
-* YT - Mayotte
-* ZA - South Africa
-* ZM - Zambia
-* ZW - Zimbabwe
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Code</td><td>Country</td></tr>
+  <tr><td><code>AC</code></td><td>Ascension Island</td></tr>
+  <tr><td><code>AD</code></td><td>Andorra</td></tr>
+  <tr><td><code>AE</code></td><td>United Arab Emirates</td></tr>
+  <tr><td><code>AF</code></td><td>Afghanistan</td></tr>
+  <tr><td><code>AG</code></td><td>Antigua and Barbuda</td></tr>
+  <tr><td><code>AI</code></td><td>Anguilla</td></tr>
+  <tr><td><code>AL</code></td><td>Albania</td></tr>
+  <tr><td><code>AM</code></td><td>Armenia</td></tr>
+  <tr><td><code>AO</code></td><td>Angola</td></tr>
+  <tr><td><code>AQ</code></td><td>Antarctica</td></tr>
+  <tr><td><code>AR</code></td><td>Argentina</td></tr>
+  <tr><td><code>AS</code></td><td>American Samoa</td></tr>
+  <tr><td><code>AT</code></td><td>Austria</td></tr>
+  <tr><td><code>AU</code></td><td>Australia</td></tr>
+  <tr><td><code>AW</code></td><td>Aruba</td></tr>
+  <tr><td><code>AX</code></td><td>Åland Islands</td></tr>
+  <tr><td><code>AZ</code></td><td>Azerbaijan</td></tr>
+  <tr><td><code>BA</code></td><td>Bosnia and Herzegovina</td></tr>
+  <tr><td><code>BB</code></td><td>Barbados</td></tr>
+  <tr><td><code>BD</code></td><td>Bangladesh</td></tr>
+  <tr><td><code>BE</code></td><td>Belgium</td></tr>
+  <tr><td><code>BF</code></td><td>Burkina Faso</td></tr>
+  <tr><td><code>BG</code></td><td>Bulgaria</td></tr>
+  <tr><td><code>BH</code></td><td>Bahrain</td></tr>
+  <tr><td><code>BI</code></td><td>Burundi</td></tr>
+  <tr><td><code>BJ</code></td><td>Benin</td></tr>
+  <tr><td><code>BL</code></td><td>Saint Barthélemy</td></tr>
+  <tr><td><code>BM</code></td><td>Bermuda</td></tr>
+  <tr><td><code>BN</code></td><td>Brunei</td></tr>
+  <tr><td><code>BO</code></td><td>Bolivia</td></tr>
+  <tr><td><code>BQ</code></td><td>British Antarctic Territory</td></tr>
+  <tr><td><code>BR</code></td><td>Brazil</td></tr>
+  <tr><td><code>BS</code></td><td>Bahamas</td></tr>
+  <tr><td><code>BT</code></td><td>Bhutan</td></tr>
+  <tr><td><code>BV</code></td><td>Bouvet Island</td></tr>
+  <tr><td><code>BW</code></td><td>Botswana</td></tr>
+  <tr><td><code>BY</code></td><td>Belarus</td></tr>
+  <tr><td><code>BZ</code></td><td>Belize</td></tr>
+  <tr><td><code>CA</code></td><td>Canada</td></tr>
+  <tr><td><code>CC</code></td><td>Cocos (Keeling) Islands</td></tr>
+  <tr><td><code>CD</code></td><td>Congo (Democratic Republic)</td></tr>
+  <tr><td><code>CF</code></td><td>Central African Republic</td></tr>
+  <tr><td><code>CG</code></td><td>Congo (Republic) / Congo-Brazzaville</td></tr>
+  <tr><td><code>CH</code></td><td>Switzerland</td></tr>
+  <tr><td><code>CI</code></td><td>Côte d'Ivoire / Ivory Coast</td></tr>
+  <tr><td><code>CK</code></td><td>Cook Islands</td></tr>
+  <tr><td><code>CL</code></td><td>Chile</td></tr>
+  <tr><td><code>CM</code></td><td>Cameroon</td></tr>
+  <tr><td><code>CN</code></td><td>China</td></tr>
+  <tr><td><code>CO</code></td><td>Colombia</td></tr>
+  <tr><td><code>CR</code></td><td>Costa Rica</td></tr>
+  <tr><td><code>CU</code></td><td>Cuba</td></tr>
+  <tr><td><code>CV</code></td><td>Cabo Verde</td></tr>
+  <tr><td><code>CX</code></td><td>Christmas Island</td></tr>
+  <tr><td><code>CY</code></td><td>Cyprus</td></tr>
+  <tr><td><code>CZ</code></td><td>Czech Republic</td></tr>
+  <tr><td><code>DE</code></td><td>Germany</td></tr>
+  <tr><td><code>DG</code></td><td>Diego Garcia</td></tr>
+  <tr><td><code>DJ</code></td><td>Djibouti</td></tr>
+  <tr><td><code>DK</code></td><td>Denmark</td></tr>
+  <tr><td><code>DM</code></td><td>Dominica</td></tr>
+  <tr><td><code>DO</code></td><td>Dominican Republic</td></tr>
+  <tr><td><code>DZ</code></td><td>Algeria</td></tr>
+  <tr><td><code>EC</code></td><td>Ecuador</td></tr>
+  <tr><td><code>EE</code></td><td>Estonia</td></tr>
+  <tr><td><code>EG</code></td><td>Egypt</td></tr>
+  <tr><td><code>EH</code></td><td>Western Sahara</td></tr>
+  <tr><td><code>ER</code></td><td>Eritrea</td></tr>
+  <tr><td><code>ES</code></td><td>Spain</td></tr>
+  <tr><td><code>ET</code></td><td>Ethiopia</td></tr>
+  <tr><td><code>FI</code></td><td>Finland</td></tr>
+  <tr><td><code>FJ</code></td><td>Fiji</td></tr>
+  <tr><td><code>FK</code></td><td>Falkland Islands (Malvinas)</td></tr>
+  <tr><td><code>FM</code></td><td>Micronesia</td></tr>
+  <tr><td><code>FO</code></td><td>Faroe Islands</td></tr>
+  <tr><td><code>FR</code></td><td>France</td></tr>
+  <tr><td><code>GA</code></td><td>Gabon</td></tr>
+  <tr><td><code>GB</code></td><td>United Kingdom</td></tr>
+  <tr><td><code>GD</code></td><td>Grenada</td></tr>
+  <tr><td><code>GE</code></td><td>Georgia</td></tr>
+  <tr><td><code>GF</code></td><td>French Guiana</td></tr>
+  <tr><td><code>GG</code></td><td>Guernsey</td></tr>
+  <tr><td><code>GH</code></td><td>Ghana</td></tr>
+  <tr><td><code>GI</code></td><td>Gibraltar</td></tr>
+  <tr><td><code>GL</code></td><td>Greenland</td></tr>
+  <tr><td><code>GM</code></td><td>Gambia</td></tr>
+  <tr><td><code>GN</code></td><td>Guinea</td></tr>
+  <tr><td><code>GP</code></td><td>Guadeloupe</td></tr>
+  <tr><td><code>GQ</code></td><td>Equatorial Guinea</td></tr>
+  <tr><td><code>GR</code></td><td>Greece</td></tr>
+  <tr><td><code>GS</code></td><td>South Georgia and the South Sandwich Islands</td></tr>
+  <tr><td><code>GT</code></td><td>Guatemala</td></tr>
+  <tr><td><code>GU</code></td><td>Guam</td></tr>
+  <tr><td><code>GW</code></td><td>Guinea-Bissau</td></tr>
+  <tr><td><code>GY</code></td><td>Guyana</td></tr>
+  <tr><td><code>HK</code></td><td>Hong Kong</td></tr>
+  <tr><td><code>HM</code></td><td>Heard Island and McDonald Islands</td></tr>
+  <tr><td><code>HN</code></td><td>Honduras</td></tr>
+  <tr><td><code>HR</code></td><td>Croatia</td></tr>
+  <tr><td><code>HT</code></td><td>Haiti</td></tr>
+  <tr><td><code>HU</code></td><td>Hungary</td></tr>
+  <tr><td><code>ID</code></td><td>Indonesia</td></tr>
+  <tr><td><code>IE</code></td><td>Ireland</td></tr>
+  <tr><td><code>IL</code></td><td>Israel</td></tr>
+  <tr><td><code>IM</code></td><td>Isle of Man</td></tr>
+  <tr><td><code>IN</code></td><td>India</td></tr>
+  <tr><td><code>IO</code></td><td>British Indian Ocean Territory</td></tr>
+  <tr><td><code>IQ</code></td><td>Iraq</td></tr>
+  <tr><td><code>IR</code></td><td>Iran</td></tr>
+  <tr><td><code>IS</code></td><td>Iceland</td></tr>
+  <tr><td><code>IT</code></td><td>Italy</td></tr>
+  <tr><td><code>JE</code></td><td>Jersey</td></tr>
+  <tr><td><code>JM</code></td><td>Jamaica</td></tr>
+  <tr><td><code>JO</code></td><td>Jordan</td></tr>
+  <tr><td><code>JP</code></td><td>Japan</td></tr>
+  <tr><td><code>KE</code></td><td>Kenya</td></tr>
+  <tr><td><code>KG</code></td><td>Kyrgyzstan</td></tr>
+  <tr><td><code>KH</code></td><td>Cambodia</td></tr>
+  <tr><td><code>KI</code></td><td>Kiribati</td></tr>
+  <tr><td><code>KM</code></td><td>Comoros</td></tr>
+  <tr><td><code>KN</code></td><td>Saint Kitts and Nevis</td></tr>
+  <tr><td><code>KP</code></td><td>North Korea</td></tr>
+  <tr><td><code>KR</code></td><td>South Korea</td></tr>
+  <tr><td><code>KW</code></td><td>Kuwait</td></tr>
+  <tr><td><code>KY</code></td><td>Cayman Islands</td></tr>
+  <tr><td><code>KZ</code></td><td>Kazakhstan</td></tr>
+  <tr><td><code>LA</code></td><td>Laos</td></tr>
+  <tr><td><code>LB</code></td><td>Lebanon</td></tr>
+  <tr><td><code>LC</code></td><td>Saint Lucia</td></tr>
+  <tr><td><code>LI</code></td><td>Liechtenstein</td></tr>
+  <tr><td><code>LK</code></td><td>Sri Lanka</td></tr>
+  <tr><td><code>LR</code></td><td>Liberia</td></tr>
+  <tr><td><code>LS</code></td><td>Lesotho</td></tr>
+  <tr><td><code>LT</code></td><td>Lithuania</td></tr>
+  <tr><td><code>LU</code></td><td>Luxembourg</td></tr>
+  <tr><td><code>LV</code></td><td>Latvia</td></tr>
+  <tr><td><code>LY</code></td><td>Libya</td></tr>
+  <tr><td><code>MA</code></td><td>Morocco</td></tr>
+  <tr><td><code>MC</code></td><td>Monaco</td></tr>
+  <tr><td><code>MD</code></td><td>Moldova</td></tr>
+  <tr><td><code>ME</code></td><td>Montenegro</td></tr>
+  <tr><td><code>MF</code></td><td>Saint Martin</td></tr>
+  <tr><td><code>MG</code></td><td>Madagascar</td></tr>
+  <tr><td><code>MH</code></td><td>Marshall Islands</td></tr>
+  <tr><td><code>MK</code></td><td>North Macedonia</td></tr>
+  <tr><td><code>ML</code></td><td>Mali</td></tr>
+  <tr><td><code>MM</code></td><td>Myanmar (Burma)</td></tr>
+  <tr><td><code>MN</code></td><td>Mongolia</td></tr>
+  <tr><td><code>MO</code></td><td>Macao</td></tr>
+  <tr><td><code>MP</code></td><td>Northern Mariana Islands</td></tr>
+  <tr><td><code>MQ</code></td><td>Martinique</td></tr>
+  <tr><td><code>MR</code></td><td>Mauritania</td></tr>
+  <tr><td><code>MS</code></td><td>Montserrat</td></tr>
+  <tr><td><code>MT</code></td><td>Malta</td></tr>
+  <tr><td><code>MU</code></td><td>Mauritius</td></tr>
+  <tr><td><code>MV</code></td><td>Maldives</td></tr>
+  <tr><td><code>MW</code></td><td>Malawi</td></tr>
+  <tr><td><code>MX</code></td><td>Mexico</td></tr>
+  <tr><td><code>MY</code></td><td>Malaysia</td></tr>
+  <tr><td><code>MZ</code></td><td>Mozambique</td></tr>
+  <tr><td><code>NA</code></td><td>Namibia</td></tr>
+  <tr><td><code>NC</code></td><td>New Caledonia</td></tr>
+  <tr><td><code>NE</code></td><td>Niger</td></tr>
+  <tr><td><code>NF</code></td><td>Norfolk Island</td></tr>
+  <tr><td><code>NG</code></td><td>Nigeria</td></tr>
+  <tr><td><code>NI</code></td><td>Nicaragua</td></tr>
+  <tr><td><code>NL</code></td><td>Netherlands</td></tr>
+  <tr><td><code>NO</code></td><td>Norway</td></tr>
+  <tr><td><code>NP</code></td><td>Nepal</td></tr>
+  <tr><td><code>NR</code></td><td>Nauru</td></tr>
+  <tr><td><code>NU</code></td><td>Niue</td></tr>
+  <tr><td><code>NZ</code></td><td>New Zealand</td></tr>
+  <tr><td><code>OM</code></td><td>Oman</td></tr>
+  <tr><td><code>PA</code></td><td>Panama</td></tr>
+  <tr><td><code>PE</code></td><td>Peru</td></tr>
+  <tr><td><code>PF</code></td><td>French Polynesia</td></tr>
+  <tr><td><code>PG</code></td><td>Papua New Guinea</td></tr>
+  <tr><td><code>PH</code></td><td>Philippines</td></tr>
+  <tr><td><code>PK</code></td><td>Pakistan</td></tr>
+  <tr><td><code>PL</code></td><td>Poland</td></tr>
+  <tr><td><code>PM</code></td><td>Saint Pierre and Miquelon</td></tr>
+  <tr><td><code>PN</code></td><td>Pitcairn Islands</td></tr>
+  <tr><td><code>PR</code></td><td>Puerto Rico</td></tr>
+  <tr><td><code>PS</code></td><td>Palestinian Territories</td></tr>
+  <tr><td><code>PT</code></td><td>Portugal</td></tr>
+  <tr><td><code>PW</code></td><td>Palau</td></tr>
+  <tr><td><code>PY</code></td><td>Paraguay</td></tr>
+  <tr><td><code>QA</code></td><td>Qatar</td></tr>
+  <tr><td><code>RE</code></td><td>Réunion</td></tr>
+  <tr><td><code>RO</code></td><td>Romania</td></tr>
+  <tr><td><code>RS</code></td><td>Serbia</td></tr>
+  <tr><td><code>RU</code></td><td>Russia</td></tr>
+  <tr><td><code>RW</code></td><td>Rwanda</td></tr>
+  <tr><td><code>SA</code></td><td>Saudi Arabia</td></tr>
+  <tr><td><code>SB</code></td><td>Solomon Islands</td></tr>
+  <tr><td><code>SC</code></td><td>Seychelles</td></tr>
+  <tr><td><code>SD</code></td><td>Sudan</td></tr>
+  <tr><td><code>SE</code></td><td>Sweden</td></tr>
+  <tr><td><code>SG</code></td><td>Singapore</td></tr>
+  <tr><td><code>SH</code></td><td>Saint Helena</td></tr>
+  <tr><td><code>SI</code></td><td>Slovenia</td></tr>
+  <tr><td><code>SJ</code></td><td>Svalbard and Jan Mayen</td></tr>
+  <tr><td><code>SK</code></td><td>Slovakia</td></tr>
+  <tr><td><code>SL</code></td><td>Sierra Leone</td></tr>
+  <tr><td><code>SM</code></td><td>San Marino</td></tr>
+  <tr><td><code>SN</code></td><td>Senegal</td></tr>
+  <tr><td><code>SO</code></td><td>Somalia</td></tr>
+  <tr><td><code>SR</code></td><td>Suriname</td></tr>
+  <tr><td><code>SS</code></td><td>South Sudan</td></tr>
+  <tr><td><code>ST</code></td><td>São Tomé and Príncipe</td></tr>
+  <tr><td><code>SV</code></td><td>El Salvador</td></tr>
+  <tr><td><code>SX</code></td><td>Sint Maarten (Dutch part)</td></tr>
+  <tr><td><code>SY</code></td><td>Syria</td></tr>
+  <tr><td><code>SZ</code></td><td>Swaziland</td></tr>
+  <tr><td><code>TC</code></td><td>Turks and Caicos Islands</td></tr>
+  <tr><td><code>TD</code></td><td>Chad</td></tr>
+  <tr><td><code>TF</code></td><td>French Southern Territories</td></tr>
+  <tr><td><code>TG</code></td><td>Togo</td></tr>
+  <tr><td><code>TH</code></td><td>Thailand</td></tr>
+  <tr><td><code>TJ</code></td><td>Tajikistan</td></tr>
+  <tr><td><code>TK</code></td><td>Tokelau</td></tr>
+  <tr><td><code>TL</code></td><td>Timor-Leste / East Timor</td></tr>
+  <tr><td><code>TM</code></td><td>Turkmenistan</td></tr>
+  <tr><td><code>TN</code></td><td>Tunisia</td></tr>
+  <tr><td><code>TO</code></td><td>Tonga</td></tr>
+  <tr><td><code>TR</code></td><td>Turkey</td></tr>
+  <tr><td><code>TT</code></td><td>Trinidad and Tobago</td></tr>
+  <tr><td><code>TV</code></td><td>Tuvalu</td></tr>
+  <tr><td><code>TW</code></td><td>Taiwan</td></tr>
+  <tr><td><code>TZ</code></td><td>Tanzania</td></tr>
+  <tr><td><code>UA</code></td><td>Ukraine</td></tr>
+  <tr><td><code>UG</code></td><td>Uganda</td></tr>
+  <tr><td><code>UM</code></td><td>U.S. Minor Outlying Islands</td></tr>
+  <tr><td><code>US</code></td><td>United States</td></tr>
+  <tr><td><code>UY</code></td><td>Uruguay</td></tr>
+  <tr><td><code>UZ</code></td><td>Uzbekistan</td></tr>
+  <tr><td><code>VA</code></td><td>Vatican City</td></tr>
+  <tr><td><code>VC</code></td><td>Saint Vincent and the Grenadines</td></tr>
+  <tr><td><code>VE</code></td><td>Venezuela</td></tr>
+  <tr><td><code>VG</code></td><td>British Virgin Islands</td></tr>
+  <tr><td><code>VI</code></td><td>U.S. Virgin Islands</td></tr>
+  <tr><td><code>VN</code></td><td>Vietnam</td></tr>
+  <tr><td><code>VU</code></td><td>Vanuatu</td></tr>
+  <tr><td><code>WF</code></td><td>Wallis and Futuna</td></tr>
+  <tr><td><code>WS</code></td><td>Samoa</td></tr>
+  <tr><td><code>YE</code></td><td>Yemen</td></tr>
+  <tr><td><code>YT</code></td><td>Mayotte</td></tr>
+  <tr><td><code>ZA</code></td><td>South Africa</td></tr>
+  <tr><td><code>ZM</code></td><td>Zambia</td></tr>
+  <tr><td><code>ZW</code></td><td>Zimbabwe</td></tr>
+</table>
 
-## Canadian Provinces
+## Canadian provinces
 
-* AB - Alberta
-* BC - British Columbia
-* MB - Manitoba
-* NB - New Brunswick
-* NL - Newfoundland
-* NT - Northwest Territories
-* NS - Nova Scotia
-* NU - Nunavut
-* ON - Ontario
-* PE - Prince Edward Island
-* QC - Quebec
-* SK - Saskatchewan
-* YT - Yukon
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Code</td><td>Province / Territory</td></tr>
+  <tr><td><code>AB</code></td><td>Alberta</td></tr>
+  <tr><td><code>BC</code></td><td>British Columbia</td></tr>
+  <tr><td><code>MB</code></td><td>Manitoba</td></tr>
+  <tr><td><code>NB</code></td><td>New Brunswick</td></tr>
+  <tr><td><code>NL</code></td><td>Newfoundland</td></tr>
+  <tr><td><code>NS</code></td><td>Nova Scotia</td></tr>
+  <tr><td><code>NT</code></td><td>Northwest Territories</td></tr>
+  <tr><td><code>NU</code></td><td>Nunavut</td></tr>
+  <tr><td><code>ON</code></td><td>Ontario</td></tr>
+  <tr><td><code>PE</code></td><td>Prince Edward Island</td></tr>
+  <tr><td><code>QC</code></td><td>Quebec</td></tr>
+  <tr><td><code>SK</code></td><td>Saskatchewan</td></tr>
+  <tr><td><code>YT</code></td><td>Yukon</td></tr>
+</table>
 
-## U.S. States
+## U.S. states
 
-* AL - Alabama
-* AK - Alaska
-* AS - American Samoa
-* AZ - Arizona
-* AR - Arkansas
-* AA - Armed Forces Americas
-* AE - Armed Forces
-* AP - Armed Forces Pacific
-* CA - California
-* CO - Colorado
-* CT - Connecticut
-* DE - Delaware
-* DC - District of Columbia
-* FM - Federated States of Micronesia
-* FL - Florida
-* GA - Georgia
-* GU - Guam
-* HI - Hawaii
-* ID - Idaho
-* IL - Illinois
-* IN - Indiana
-* IA - Iowa
-* KS - Kansas
-* KY - Kentucky
-* LA - Louisiana
-* ME - Maine
-* MH - Marshall Islands
-* MD - Maryland
-* MA - Massachusetts
-* MI - Michigan
-* MN - Minnesota
-* MS - Mississippi
-* MO - Missouri
-* MT - Montana
-* NE - Nebraska
-* NV - Nevada
-* NH - New Hampshire
-* NJ - New Jersey
-* NM - New Mexico
-* NY - New York
-* NC - North Carolina
-* ND - North Dakota
-* MP - Northern Mariana Islands
-* OH - Ohio
-* OK - Oklahoma
-* OR - Oregon
-* PA - Pennsylvania
-* PR - Puerto Rico
-* PW - Palau
-* RI - Rhode Island
-* SC - South Carolina
-* SD - South Dakota
-* TN - Tennessee
-* TX - Texas
-* UT - Utah
-* VA - Virginia
-* VI - Virgin Islands
-* VT - Vermont
-* WA - Washington
-* WI - Wisconsin
-* WV - West Virginia
-* WY - Wyoming
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Code</td><td>State / Territory</td></tr>
+  <tr><td><code>AA</code></td><td>Armed Forces Americas</td></tr>
+  <tr><td><code>AE</code></td><td>Armed Forces</td></tr>
+  <tr><td><code>AK</code></td><td>Alaska</td></tr>
+  <tr><td><code>AL</code></td><td>Alabama</td></tr>
+  <tr><td><code>AP</code></td><td>Armed Forces Pacific</td></tr>
+  <tr><td><code>AR</code></td><td>Arkansas</td></tr>
+  <tr><td><code>AS</code></td><td>American Samoa</td></tr>
+  <tr><td><code>AZ</code></td><td>Arizona</td></tr>
+  <tr><td><code>CA</code></td><td>California</td></tr>
+  <tr><td><code>CO</code></td><td>Colorado</td></tr>
+  <tr><td><code>CT</code></td><td>Connecticut</td></tr>
+  <tr><td><code>DC</code></td><td>District of Columbia</td></tr>
+  <tr><td><code>DE</code></td><td>Delaware</td></tr>
+  <tr><td><code>FL</code></td><td>Florida</td></tr>
+  <tr><td><code>FM</code></td><td>Federated States of Micronesia</td></tr>
+  <tr><td><code>GA</code></td><td>Georgia</td></tr>
+  <tr><td><code>GU</code></td><td>Guam</td></tr>
+  <tr><td><code>HI</code></td><td>Hawaii</td></tr>
+  <tr><td><code>IA</code></td><td>Iowa</td></tr>
+  <tr><td><code>ID</code></td><td>Idaho</td></tr>
+  <tr><td><code>IL</code></td><td>Illinois</td></tr>
+  <tr><td><code>IN</code></td><td>Indiana</td></tr>
+  <tr><td><code>KS</code></td><td>Kansas</td></tr>
+  <tr><td><code>KY</code></td><td>Kentucky</td></tr>
+  <tr><td><code>LA</code></td><td>Louisiana</td></tr>
+  <tr><td><code>MA</code></td><td>Massachusetts</td></tr>
+  <tr><td><code>MD</code></td><td>Maryland</td></tr>
+  <tr><td><code>ME</code></td><td>Maine</td></tr>
+  <tr><td><code>MH</code></td><td>Marshall Islands</td></tr>
+  <tr><td><code>MI</code></td><td>Michigan</td></tr>
+  <tr><td><code>MN</code></td><td>Minnesota</td></tr>
+  <tr><td><code>MO</code></td><td>Missouri</td></tr>
+  <tr><td><code>MP</code></td><td>Northern Mariana Islands</td></tr>
+  <tr><td><code>MS</code></td><td>Mississippi</td></tr>
+  <tr><td><code>MT</code></td><td>Montana</td></tr>
+  <tr><td><code>NC</code></td><td>North Carolina</td></tr>
+  <tr><td><code>ND</code></td><td>North Dakota</td></tr>
+  <tr><td><code>NE</code></td><td>Nebraska</td></tr>
+  <tr><td><code>NH</code></td><td>New Hampshire</td></tr>
+  <tr><td><code>NJ</code></td><td>New Jersey</td></tr>
+  <tr><td><code>NM</code></td><td>New Mexico</td></tr>
+  <tr><td><code>NV</code></td><td>Nevada</td></tr>
+  <tr><td><code>NY</code></td><td>New York</td></tr>
+  <tr><td><code>OH</code></td><td>Ohio</td></tr>
+  <tr><td><code>OK</code></td><td>Oklahoma</td></tr>
+  <tr><td><code>OR</code></td><td>Oregon</td></tr>
+  <tr><td><code>PA</code></td><td>Pennsylvania</td></tr>
+  <tr><td><code>PR</code></td><td>Puerto Rico</td></tr>
+  <tr><td><code>PW</code></td><td>Palau</td></tr>
+  <tr><td><code>RI</code></td><td>Rhode Island</td></tr>
+  <tr><td><code>SC</code></td><td>South Carolina</td></tr>
+  <tr><td><code>SD</code></td><td>South Dakota</td></tr>
+  <tr><td><code>TN</code></td><td>Tennessee</td></tr>
+  <tr><td><code>TX</code></td><td>Texas</td></tr>
+  <tr><td><code>UT</code></td><td>Utah</td></tr>
+  <tr><td><code>VA</code></td><td>Virginia</td></tr>
+  <tr><td><code>VI</code></td><td>Virgin Islands</td></tr>
+  <tr><td><code>VT</code></td><td>Vermont</td></tr>
+  <tr><td><code>WA</code></td><td>Washington</td></tr>
+  <tr><td><code>WI</code></td><td>Wisconsin</td></tr>
+  <tr><td><code>WV</code></td><td>West Virginia</td></tr>
+  <tr><td><code>WY</code></td><td>Wyoming</td></tr>
+</table>
+
+<br />
