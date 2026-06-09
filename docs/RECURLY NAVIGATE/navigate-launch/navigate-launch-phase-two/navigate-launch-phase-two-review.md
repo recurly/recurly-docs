@@ -416,7 +416,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-next-item-icon"><i class="fa-solid fa-circle-play"></i></div>
           <h4>Spotlight &amp; on-demand webinars</h4>
           <p>Watch the <strong>Customer Spotlight Series</strong> for peer-led workshops, or browse Navigate On-Demand Events for topics you need.</p>
-          <a href="https://navigate.recurly.com/global-office-hours/" target="_blank" rel="noopener noreferrer" class="rc-next-cta-ghost"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit events →</a>
+          <a href="https://navigate.recurly.com/event-hub/" target="_blank" rel="noopener noreferrer" class="rc-next-cta-ghost"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit events →</a>
         </div>
         <div class="rc-next-item">
           <div class="rc-next-item-icon"><i class="fa-solid fa-robot"></i></div>
