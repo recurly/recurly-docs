@@ -219,9 +219,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
-      <div class="rc-lp-hero-title"><h1>Usage Billing: Strategy &amp; Best Practices</h1></div>
+      <div class="rc-lp-hero-title"><h1>Usage billing - Strategy &amp; best practices</h1></div>
       <p>Build a usage model that lowers acquisition barriers, captures expansion revenue automatically, and stays measurable — even without native analytics in Recurly.</p>
      
     </div>
