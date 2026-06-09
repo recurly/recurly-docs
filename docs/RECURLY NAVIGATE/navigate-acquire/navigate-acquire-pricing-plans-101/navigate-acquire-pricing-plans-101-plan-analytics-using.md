@@ -192,15 +192,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Plan Analytics — Reading Your Data</h1></div>
       <p>A practical walkthrough of where to find the key metrics in Recurly's admin UI — how to navigate to each report, what you're looking at when you get there, and what to export when you need to go deeper than the dashboard.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Dashboard</div><div class="rc-hero-stat-label">Recurly's metrics overview — the fastest way to check the health of your subscription business</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Plan-level</div><div class="rc-hero-stat-label">filter any report by plan to isolate the performance of a specific pricing configuration</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Export ready</div><div class="rc-hero-stat-label">every report in Recurly can be exported to CSV for deeper analysis in a spreadsheet or BI tool</div></div>
-      </div>
+
     </div>
 
     <!-- Navigation Menu — page 2 active -->
@@ -422,8 +418,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plan-analytics-strategy" class="rc-footer-link">Analytics: Strategy</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing & Plans 101: Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
