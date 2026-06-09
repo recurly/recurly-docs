@@ -1,5 +1,5 @@
 ---
-title: 'Currency: Best practices & strategy'
+title: 'Currency: Strategy & best practices'
 deprecated: false
 hidden: true
 metadata:
