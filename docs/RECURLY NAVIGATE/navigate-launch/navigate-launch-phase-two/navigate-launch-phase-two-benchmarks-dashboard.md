@@ -267,7 +267,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 2: Mastering metrics
+        <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt="Launch"> Launch · Launchpad Phase 2
       </div>
       <div class="rc-lp-hero-title"><h1>Benchmarks dashboard &amp; reporting tools</h1></div>
       <p>Before you can act on your metrics, you need to know where to find them. This module maps Recurly's four reporting layers and walks you through the Benchmarks Dashboard.</p>
