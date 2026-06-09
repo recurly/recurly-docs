@@ -1,5 +1,5 @@
 ---
-title: 'Advanced Analtyics: Configuration'
+title: 'Advanced Analytics: Configuration'
 deprecated: false
 hidden: true
 metadata:
