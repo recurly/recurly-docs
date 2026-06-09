@@ -1,0 +1,15 @@
+- listaccountssubscriptions
+- previewsubscription
+- listsubscriptions
+- createsubscription
+- lookupsubscription
+- updatesubscription
+- updatesubscriptionnotes
+- cancelsubscription
+- reactivatecanceledsubscription
+- terminatesubscription
+- postponesubscriptionorextendtrial
+- previewsubscriptionchange
+- converttrial
+- pausesubscription
+- resumesubscription
