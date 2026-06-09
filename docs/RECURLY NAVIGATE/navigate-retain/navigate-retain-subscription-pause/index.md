@@ -266,7 +266,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Pause subscriptions</h1>
+        <h1>Pause subscription</h1>
       </div>
       <p>Give subscribers a break without losing them. Learn how pause works, when to use it, and how to configure it to reduce voluntary churn.</p>
     </div>
@@ -298,10 +298,10 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </details>
 
-    <!-- SECTION: WHAT IS SUBSCRIPTION PAUSE -->
+    <!-- SECTION: WHAT IS Pause Subscriptions -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-circle-pause rc-fa-section"></i> What is subscription pause?</h2>
-      <p>Subscription pause lets you temporarily suspend billing and service delivery for a subscriber — without canceling their subscription. When the pause period ends, billing resumes automatically and the subscriber picks up exactly where they left off: same plan, same price, same account history.</p>
+      <h2><i class="fa-solid fa-circle-pause rc-fa-section"></i> What is Pause Subscriptions?</h2>
+      <p>Pause Subscriptions lets you temporarily suspend billing and service delivery for a subscriber — without canceling their subscription. When the pause period ends, billing resumes automatically and the subscriber picks up exactly where they left off: same plan, same price, same account history.</p>
       <p>It's the right tool when a customer wants a break, not a breakup. Common reasons subscribers pause include travel, budget pressure, seasonal use, or temporary excess inventory — situations where cancellation is permanent but the underlying need isn't.</p>
 
       <div class="rc-card-grid">
@@ -339,7 +339,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- SECTION: WHAT'S IN THIS COURSE -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-map rc-fa-section"></i> What's in this course</h2>
-      <p>This course walks you through everything you need to evaluate, configure, and measure subscription pause — in about eight minutes.</p>
+      <p>This course walks you through everything you need to evaluate, configure, and measure Pause Subscriptions — in about eight minutes.</p>
 
       <div class="rc-toc-list">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-toc-card">
@@ -409,7 +409,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pause subscriptions</span>
+          <span class="rc-footer-label">Pause subscription</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause" class="rc-footer-link">Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-why-it-matters" class="rc-footer-link">1. Why pause reduces churn</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-subscription-pause-considerations" class="rc-footer-link">2. Things to consider</a>
