@@ -205,26 +205,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Pricing &amp; Packaging 101</h1>
+        <h1>Pricing &amp; Plans 101</h1>
       </div>
-      <p>Your pricing and packaging setup shapes how subscribers find, choose, and stay loyal to your product. This comprehensive learning walks you through best practices, strategy, and configuration in Recurly — from plan structure and add-ons to trials, currencies, and analytics.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">78%</div>
-          <div class="rc-hero-stat-label">of merchants offer both monthly &amp; annual plans</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">50–60%</div>
-          <div class="rc-hero-stat-label">more revenue per user on annual plans</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">13%</div>
-          <div class="rc-hero-stat-label">of buyers converted by micro-subscriptions</div>
-        </div>
-      </div>
+      <p>Your pricing and plans setup shapes how subscribers find, choose, and stay loyal to your product. This comprehensive learning walks you through best practices, strategy, and configuration in Recurly — from plan structure and add-ons to trials, currencies, and analytics.</p>
+     
     </div>
 
     <!-- Navigation Menu — sticky, collapsed, LP Overview -->
