@@ -273,8 +273,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon">💡</div>
         <div class="rc-callout-body">
-          <strong>Prerequisites: P&amp;P 101</strong>
-          <p>This series builds directly on the concepts in Pricing &amp; Packaging 101. If you haven't worked through plans, add-ons, pricing models, and trials yet, start there first — the 201 configurations assume those foundations are already in place. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101">Return to P&amp;P 101 →</a></p>
+          <strong>Prerequisites: Pricing &amp; Plans 101</strong>
+          <p>This series builds directly on the concepts in Pricing &amp; Plans 101. If you haven't worked through plans, add-ons, pricing models, and trials yet, start there first — the 201 configurations assume those foundations are already in place. <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101">Return to Pricing & Plans 101 →</a></p>
         </div>
       </div>
     </div>
@@ -282,7 +282,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- What's in this path — table of contents -->
     <div class="rc-lp-section">
       <h2>📚 What's in this path</h2>
-      <p>Six Micro-Paths, each focused on an advanced pricing or packaging challenge. These build on each other — Segmentation and Hierarchy lay the foundation for how your plan architecture scales, Usage Billing and Advanced Models address how you charge, and Advanced Currency and Analytics cover global operations and measurement.</p>
+      <p>Six Micro-Paths, each focused on an advanced pricing or plans challenge. These build on each other — Segmentation and Hierarchy lay the foundation for how your plan architecture scales, Usage Billing and Advanced Models address how you charge, and Advanced Currency and Analytics cover global operations and measurement.</p>
 
       <div class="rc-toc-list">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-toc-card">
