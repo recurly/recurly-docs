@@ -199,15 +199,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- Hero -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · P&amp;P 101
+        <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
       <div class="rc-lp-hero-title"><h1>Trials — How to Configure</h1></div>
       <p>A complete walkthrough of setting up a plan-level free trial, creating a coupon-based trial, and managing individual trial extensions — including the fields that matter and the behaviors you need to test before going live.</p>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Days</div><div class="rc-hero-stat-label">trial length unit — set in days for precise control over the trial end date</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Configurable</div><div class="rc-hero-stat-label">billing info at trial start — required or waived per plan</div></div>
-        <div class="rc-hero-stat"><div class="rc-hero-stat-num">Extendable</div><div class="rc-hero-stat-label">individual trial end dates can be overridden via the admin UI or API</div></div>
-      </div>
+      
     </div>
 
     <!-- Navigation Menu — page 2 active -->
@@ -478,8 +474,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-trials-strategy" class="rc-footer-link">Trials: Strategy &amp; Best Practices</a>
         </div>
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Pricing &amp; Packaging 101:</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">P&amp;P 101 Overview</a>
+          <span class="rc-footer-label">Pricing &amp; Plans 101</span>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101" class="rc-footer-link">Pricing & Plans: Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-plans" class="rc-footer-link">Plans</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-add-ons" class="rc-footer-link">Add-Ons</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-currency" class="rc-footer-link">Currency</a>
