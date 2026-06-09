@@ -1,5 +1,5 @@
 ---
-title: 'Plan Price Increase: Things to consider'
+title: 'Plan Price Increase: What to consider'
 deprecated: false
 hidden: true
 metadata:
