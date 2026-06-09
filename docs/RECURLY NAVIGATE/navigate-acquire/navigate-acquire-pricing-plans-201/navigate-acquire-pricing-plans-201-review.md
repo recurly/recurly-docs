@@ -452,10 +452,10 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
 
     <!-- Resources — all P&P 201 sources -->
     <div class="rc-resources-block">
-      <h3>📚 All P&amp;P 201 Resources</h3>
+      <h3>📚 All Pricing &amp; Plans 201 Resources</h3>
 
       <div class="rc-resource-group">
-        <span class="rc-resource-group-label">Segmentation (MP7)</span>
+        <span class="rc-resource-group-label">Segmentation </span>
         <div class="rc-resource-links">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/plans" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Plans &amp; Price Segments</a>
           <a href="https://docs.recurly.com/docs/billing-models" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Pricing Models</a>
@@ -465,7 +465,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
       <div class="rc-resource-divider"></div>
 
       <div class="rc-resource-group">
-        <span class="rc-resource-group-label">Account Hierarchy (MP8)</span>
+        <span class="rc-resource-group-label">Account Hierarchy </span>
         <div class="rc-resource-links">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/account-hierarchy-1" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Account Hierarchy</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/ah-invoice-rollup" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Invoice Rollup</a>
@@ -475,7 +475,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
       <div class="rc-resource-divider"></div>
 
       <div class="rc-resource-group">
-        <span class="rc-resource-group-label">Usage Billing (MP9)</span>
+        <span class="rc-resource-group-label">Usage Billing </span>
         <div class="rc-resource-links">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/usage-based-billing" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Usage-Based Billing</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/usage-based-pricing-guide" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Usage-Based Pricing Guide</a>
@@ -487,7 +487,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
       <div class="rc-resource-divider"></div>
 
       <div class="rc-resource-group">
-        <span class="rc-resource-group-label">Advanced Models (MP10)</span>
+        <span class="rc-resource-group-label">Advanced Models </span>
         <div class="rc-resource-links">
           <a href="https://docs.recurly.com/docs/ramp-pricing" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Ramp Pricing</a>
           <a href="https://docs.recurly.com/docs/hybrid-pricing" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Hybrid Pricing</a>
@@ -499,7 +499,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
       <div class="rc-resource-divider"></div>
 
       <div class="rc-resource-group">
-        <span class="rc-resource-group-label">Advanced Currency (MP11)</span>
+        <span class="rc-resource-group-label">Advanced Currency </span>
         <div class="rc-resource-links">
           <a href="https://docs.recurly.com/docs/currencies" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Currencies</a>
           <a href="https://docs.recurly.com/docs/currency-support-by-gateway" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Currency Support by Gateway</a>
@@ -510,7 +510,7 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
       <div class="rc-resource-divider"></div>
 
       <div class="rc-resource-group">
-        <span class="rc-resource-group-label">Advanced Analytics (MP12)</span>
+        <span class="rc-resource-group-label">Advanced Analytics </span>
         <div class="rc-resource-links">
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/recurly-analytics-overview" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: Analytics Overview</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/mmr-by-plan" target="_blank" rel="noopener noreferrer" class="rc-resource-link">📖 Recurly Docs: MRR by Plan</a>
@@ -534,8 +534,8 @@ details.rc-answer-reveal > summary:hover { color: var(--offblack); }
     <!-- Footer -->
     <div class="rc-footer-nav">
       <div class="rc-footer-section">
-        <span class="rc-footer-section-label">P&amp;P 201:</span>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">P&amp;P 201 Hub</a>
+        <span class="rc-footer-section-label">Pricing &amp; Plans 201:</span>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201" class="rc-footer-link">Pricing &amp; Plans 201 Hub</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-segmentation" class="rc-footer-link">Segmentation</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-hierarchy" class="rc-footer-link">Account Hierarchy</a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-201-usage-billing" class="rc-footer-link">Usage Billing</a>
