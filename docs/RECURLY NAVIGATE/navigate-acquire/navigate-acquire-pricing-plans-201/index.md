@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Packaging 201: Advanced'
+title: 'Pricing & Plans 201: Advanced'
 deprecated: false
 hidden: true
 metadata:
@@ -216,7 +216,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing &amp; Plans 201
       </div>
       <div class="rc-lp-hero-title">
-        <h1>Pricing &amp; Packaging 201</h1>
+        <h1>Pricing &amp; Plans 201</h1>
       </div>
       <p>You've built the foundation. This series goes deeper — into the pricing architectures that mature subscription businesses use to segment markets, serve enterprise customers, bill for real-world usage, and measure what's actually driving revenue growth.</p>
     </div>
