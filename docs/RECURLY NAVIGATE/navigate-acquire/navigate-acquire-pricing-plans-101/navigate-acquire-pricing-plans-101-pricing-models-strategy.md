@@ -215,7 +215,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-lp-pillar-tag">
         <img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt="Acquire"> Acquire · Pricing & Plans 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Pricing Models — Strategy &amp; Best Practices</h1></div>
+      <div class="rc-lp-hero-title"><h1>Pricing Models — Strategy &amp; best practices</h1></div>
       <p>Choosing the right model is less about features and more about what kind of pricing relationship you want to create with your subscribers. Here's how to match the model to the business outcome — and how to know when you've got it wrong.</p>
     
     </div>
