@@ -342,6 +342,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
 
+ <!-- SECTION: Callout tip -->
       <div class="rc-callout rc-callout-tip">
         <div class="rc-callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
         <div class="rc-callout-body">
@@ -349,14 +350,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <p>These optimizations don't stop working when you close this page. Dunning runs every billing cycle. Account Updater refreshes cards before every renewal. Gateway Failover monitors every transaction. You've built a system — now let it run.</p>
         </div>
       </div>
-      <div class="rc-phase2-cta">
-        <h3><i class="fa-solid fa-chart-line rc-fa-light"></i> Ready for Phase 2?</h3>
-        <p>Now that your setup is optimized, it's time to understand the data. Phase 2 teaches you the six core benchmark metrics every subscription business should track — and how to use them to grow smarter.</p>
-        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-phase2-btn">Start Phase 2: Mastering metrics →</a>
-      </div>
-    </div>
 
-    <!-- SECTION: REFLECTION -->
+ <!-- SECTION: REFLECTION -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-thought-bubble rc-fa-section"></i> Reflect before you move on</h2>
 
@@ -377,7 +372,18 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <h4>When did you last test your checkout flow end-to-end in production — and what would it take to make that a regular practice?</h4>
         <p>Most issues surface between releases, not during them. A brief monthly test with Recurly's test card values takes under 10 minutes and catches regressions early.</p>
       </div>
+      </div>
+
+ <!-- SECTION: PHASE TWO CTA -->
+
+      <div class="rc-phase2-cta">
+        <h3><i class="fa-solid fa-chart-line rc-fa-light"></i> Ready for Phase 2?</h3>
+        <p>Now that your setup is optimized, it's time to understand the data. Phase 2 teaches you the six core benchmark metrics every subscription business should track — and how to use them to grow smarter.</p>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-phase-two" class="rc-phase2-btn">Start Phase 2: Mastering metrics →</a>
+      </div>
     </div>
+
+   
 
     <!-- SECTION: RESOURCES -->
     <div class="rc-lp-section">
