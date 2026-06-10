@@ -306,7 +306,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-pills">
           <span class="rc-pill rc-pill-up">Higher is better</span>
           <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics → Benchmarks</span>
+          <span class="rc-pill">Analytics → Benchmarks → scroll to Acquisition Rate</span>
         </div>
       </div>
     </div>
@@ -325,7 +325,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-pills">
           <span class="rc-pill rc-pill-down">Lower is better</span>
           <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics → Benchmarks</span>
+          <span class="rc-pill">Analytics → Benchmarks → scroll to Signup Decline Rate</span>
         </div>
       </div>
 
