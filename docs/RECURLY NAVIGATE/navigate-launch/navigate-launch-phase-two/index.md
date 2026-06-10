@@ -365,7 +365,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
         <div class="rc-metric-card">
           <div class="rc-metric-card-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <h4>Renewal paid rate</h4>
+          <h4>Renewal invoice paid rate</h4>
           <p>Percentage of renewals collected successfully</p>
         </div>
         <div class="rc-metric-card">
