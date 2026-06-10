@@ -1082,6 +1082,391 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 </Accordion>
 
+<Accordion title="Style Loader — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Stylus — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Stylus Loader — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Tabbable — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="To Slug Case — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="URL Loader — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Use Query Params — ISC">
+
+ISC License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+</Accordion>
+
+<Accordion title="VisibilityJS — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Webpack — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Webpack Assets Manifest — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Webpack Bugsnag Plugins — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Webpack CLI — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Webpack Merge — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Webpack Shell Plugin — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Whatwg Fetch — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="Worker Loader — MIT">
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+</Accordion>
+
+<Accordion title="World Countries — ODbL 1.0">
+
+Open Database License (ODbL) v1.0
+
+The Open Data Commons Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this database while maintaining this same freedom for others. Many databases are covered by copyright, and therefore this document licenses these rights. Some jurisdictions, mainly in the European Union, have specific rights that cover databases, and so the ODbL addresses these rights, too. Finally, the ODbL is also an agreement in contract for users of this database to act in certain ways in return for accessing this database.
+
+Definitions
+
+"Collective Database" — Means this database in unmodified form as part of a collection of independent databases in themselves that together are assembled into a collective whole. A work that constitutes a Collective Database will not be considered a Derivative Database.
+
+"Convey" — As a verb, means using the database in any way that enables a person or organization to obtain a copy of the whole database or a substantial portion of the contents. Conveying does not include interaction with a database through a computer network, or creating and using a Derivative Database, except for copying or storing the contents aside from any interaction with the database.
+
+"Contents" — The contents of this database, which includes the information, independent works, or other material collected into the database. For example, the contents of a database of images would be the images themselves.
+
+"Database" — A collection of material (the "Contents") organized in a systematic or methodical way and individually accessible by electronic or other means offered under the terms of this License.
+
+"Database Directive" — Means Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended or succeeded.
+
+"Database Right" — Means rights resulting from the Chapter III ("sui generis") rights in the Database Directive (as amended and as transposed by member states), which includes the Extraction and Re-utilisation of the whole or a Substantial part of the Contents, as well as any similar rights available in the relevant jurisdiction under Section 10.4.
+
+"Derivative Database" — Means a database based upon the database, and includes any translation, adaptation, arrangement, modification, or any other alteration of the database or of a Substantial part of the Contents. This includes, but is not limited to, Extracting or Re-utilising the whole or a Substantial part of the Contents in a new database.
+
+"Extraction" — Means the permanent or temporary transfer of all or a Substantial part of the Contents to another medium by any means or in any form.
+
+"License" — Means this license agreement and is both a license of rights such as copyright and database rights and an agreement in contract.
+
+"Licensor" — Means the person or persons who offer the database under the terms of this License.
+
+"Non-commercial" — Means not primarily intended for or directed towards commercial advantage or private monetary compensation.
+
+"Produced Work" — a work (such as an image, audiovisual material, text, or sounds) resulting from using the whole or a Substantial part of the Contents (via a search or other query) from this database, a Derivative Database, or this database as part of a Collective Database.
+
+"Publicly" — means to Persons other than You or under Your control by either more than 50% ownership or by the power to direct their activities (such as contracting with an independent consultant).
+
+"Re-utilisation" — means any form of making available to the public all or a Substantial part of the Contents by the distribution of copies, by renting, by online or other forms of transmission.
+
+"Substantial" — Means substantial in terms of quantity or quality. Furthermore, any combination of parts of the database may be considered Substantial if the combination taken as a whole constitutes a Substantial part of the database.
+
+"You" — Means a natural or legal person, or a body of persons corporate or incorporate, who has a right to use the database under these terms.
+
+1.0 Grant of Rights
+
+1.1 Grant of copyright license. Licensor grants You a worldwide, royalty-free, non-exclusive, terminable (but only under Section 9) license to do the following throughout the world, without prejudice to other rights You have in the Contents, under copyright and neighboring rights in the database: (a) To extract the Contents; (b) To re-utilise the Contents in any manner and form; (c) To modify, transform, adapt, translate the Contents; (d) To make derivative databases.
+
+1.2 Grant of database right. Licensor grants You a worldwide, royalty-free, non-exclusive, terminable (but only under Section 9) right to: (a) Extract the whole or Substantial parts of the Contents; (b) Re-utilise the whole or Substantial parts of the Contents; (c) Extract and Re-utilise the whole or Substantial parts of the Contents in conjunction with other Information as part of a Collective Database; and (d) Extract and Re-utilise the whole or Substantial parts of the Contents in a Derivative Database.
+
+2.0 Conditions of Use
+
+2.1 The rights granted in Section 1 above are expressly made subject to You complying with the following conditions: (a) Attribution. You must attribute this database (including any resulting Derivative Database) in the manner specified in Section 4. (b) Share-alike. If You Publicly Convey this database, any Derivative Database, or the database as part of a Collective Database, then You must Publicly Convey that database under the terms of this License or under a license that has substantially similar rights and obligations. If You use the latter option, you must comply with the terms of that license.
+
+3.0 Intellectual Property Rights
+
+3.1 Abatement of copyright. Nothing in this License is intended to, nor shall it have the effect of, reducing, limiting, waiving or otherwise affecting any rights that the Licensor may have as author of the Contents under copyright law.
+
+3.2 Relationship to Contents under copyright. The rights granted under Section 1 relate only to the database rights and any copyright in the database as a whole; they do not extend to copyright or other intellectual property rights in the Contents. Separate licenses may cover the Contents.
+
+4.0 Conditions of Attribution
+
+4.1 Attribution. When making use of the database, you must: (a) Include a notice associating this database with the ODbL and a hyperlink (online) or URL (in print) to http://opendatacommons.org/licenses/odbl/1.0/; (b) Keep intact any copyright notice for the database; (c) If You alter the database, You must add a notice: "This database is adapted from the original database subject to ODbL."
+
+5.0 Derivative Databases and Produced Works
+
+5.1 Produced Works: The Licensor does not grant You any rights in Produced Works.
+
+5.2 Derivative Databases: If You alter, transform, or build a new database upon this database, You may distribute the resulting database only under the terms of this License or a license substantially similar to this License, including any later version of this License.
+
+6.0 Access
+
+6.1 Access to Derivative Databases: If You Publicly Convey a Derivative Database, You must also offer to recipients of the Derivative Database access to the complete and machine-readable Contents of the Derivative Database at no more than a reasonable cost of reproduction.
+
+7.0 Relationship to this License
+
+7.1 Warranties. THE DATABASE IS PROVIDED "AS IS" AND THE LICENSOR MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING WITHOUT LIMITATION WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS, WHETHER OR NOT DISCOVERABLE. THE ENTIRE RISK AS TO THE QUALITY AND ACCURACY OF THE DATABASE IS WITH YOU.
+
+7.2 Liability. SUBJECT TO ANY LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED BY LAW, THE LICENSOR IS NOT LIABLE FOR, AND EXPRESSLY EXCLUDES, ALL LIABILITY FOR LOSS OR DAMAGE HOWEVER AND WHENEVER CAUSED TO ANYONE ARISING OUT OF THE USE OF OR INABILITY TO USE THE DATABASE OR THE CONTENTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE LICENSOR IS NOT LIABLE FOR ANY CLAIMS BY THIRD PARTIES ARISING FROM YOUR USE OF THE DATABASE.
+
+8.0 Termination
+
+8.1 Any breach by You of the terms and conditions of this License automatically terminates this License with immediate effect and without notice to You. For the avoidance of doubt, Persons who have received the database, the Derivative Database, or the database as part of a Collective Database from You under this License will not have their licenses terminated provided their use is in full compliance with this License or a license compatible with this License.
+
+9.0 Compatibility
+
+9.1 Compatibility with other Licenses. If the rights granted under this License can be exercised with a different Open Database License (ODbL), the Licensor authorizes You to exercise the rights granted under this License, provided that You comply with the terms and conditions of that other ODbL.
+
+10.0 General
+
+10.1 If any provision of this License is held to be invalid or unenforceable, that shall not affect the validity or enforceability of the remainder of the terms and conditions of this License and each remaining provision of this License shall be valid and enforceable to the fullest extent permitted by law.
+
+10.2 This License is the entire agreement between the parties with respect to the rights granted here over the database. It replaces any earlier understandings, agreements or representations with respect to the database.
+
+10.3 If You are in breach of the terms of this License, You will not have the rights granted under this License. This does not affect any third party who has received a copy of the database, the Derivative Database, or the database as part of a Collective Database from You, as long as that third party remains in full compliance with the License.
+
+10.4 This License shall be construed as a contract under the laws of the jurisdiction of the Licensor's location.
+
+</Accordion>
+
+# License types
+
+The packages listed above use the following license types. Each license has specific requirements around attribution, redistribution, and modification — the full text of each governs how the associated software may be used.
+
+<table class="rp-gw-table">
+  <tr class="rp-thead-row">
+    <td>License</td>
+    <td>Full name</td>
+    <td>Description</td>
+    <td>Canonical source</td>
+  </tr>
+  <tr>
+    <td>MIT</td>
+    <td>MIT License</td>
+    <td>A permissive license that allows use, modification, and distribution in any context, provided the original copyright notice and license text are retained.</td>
+    <td><a href="https://opensource.org/license/mit" target="_blank">opensource.org</a></td>
+  </tr>
+  <tr>
+    <td>BSD 2-Clause</td>
+    <td>BSD 2-Clause "Simplified" License</td>
+    <td>A permissive license allowing free use and redistribution, with conditions requiring retention of the copyright notice and license text. No endorsement restrictions.</td>
+    <td><a href="https://opensource.org/license/bsd-2-clause" target="_blank">opensource.org</a></td>
+  </tr>
+  <tr>
+    <td>BSD 3-Clause</td>
+    <td>BSD 3-Clause "New" or "Revised" License</td>
+    <td>Similar to BSD 2-Clause, with an additional clause prohibiting use of the copyright holder's name to endorse or promote derived products without permission.</td>
+    <td><a href="https://opensource.org/license/bsd-3-clause" target="_blank">opensource.org</a></td>
+  </tr>
+  <tr>
+    <td>Apache 2.0</td>
+    <td>Apache License, Version 2.0</td>
+    <td>A permissive license that includes an explicit patent grant from contributors. Requires attribution and a copy of the license in distributions; allows sublicensing.</td>
+    <td><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">apache.org</a></td>
+  </tr>
+  <tr>
+    <td>CC0 1.0</td>
+    <td>Creative Commons Zero v1.0 Universal</td>
+    <td>A public domain dedication that waives all copyright and related rights to the fullest extent permitted by law. No conditions apply to use, modification, or distribution.</td>
+    <td><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">creativecommons.org</a></td>
+  </tr>
+  <tr>
+    <td>ISC</td>
+    <td>ISC License</td>
+    <td>A permissive license functionally equivalent to the MIT License, with a simplified two-sentence grant of permission. Requires retention of copyright and license notices.</td>
+    <td><a href="https://opensource.org/license/isc" target="_blank">opensource.org</a></td>
+  </tr>
+  <tr>
+    <td>ODbL</td>
+    <td>Open Database License v1.0</td>
+    <td>A copyleft license for databases. Allows use, modification, and redistribution of the database, provided derivatives are shared under the same license terms.</td>
+    <td><a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank">opendatacommons.org</a></td>
+  </tr>
+  <tr>
+    <td>Unlicense</td>
+    <td>The Unlicense</td>
+    <td>A public domain dedication that releases software into the public domain entirely. No conditions, no attribution requirements — anyone may use, copy, modify, or distribute freely.</td>
+    <td><a href="https://unlicense.org" target="_blank">unlicense.org</a></td>
+  </tr>
+</table>
+
 ***
 
-📋 Batch 7 of 9 complete (entries 61–70 of 90). Next batch: Style Loader through Webpack Merge.
+📋 TODO before publishing:
+
+- [ ] **Package list completeness** — Jeff is reviewing whether the current package list is complete. Add any missing packages before republishing.
+- [ ] **Legal website link** — Sarah noted this page should be linked from the legal portion of recurly.com. Confirm the correct URL and add it to the legal site nav.
+- [ ] **SME assignment** — No SME is currently assigned to this page. Assign an owner before republishing to ensure accuracy can be verified and maintained going forward.
+
+<br />
