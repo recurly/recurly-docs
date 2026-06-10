@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Packaging 101: The Basics'
+title: 'Pricing & Plans 101: The Basics'
 deprecated: false
 hidden: true
 metadata:
