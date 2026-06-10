@@ -50,6 +50,8 @@ metadata:
 
 <br />
 
+![Navigate Monthly Metrics Scorecard](https://files.readme.io/bf0f3ed737a5783fbd0ac153303d2aec540da707789b1225059bdb25a9f3a146-Merchant_Scorecard_Example.png)
+
 <br />
 
 <br />
