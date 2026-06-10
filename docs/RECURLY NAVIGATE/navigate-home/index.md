@@ -290,21 +290,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
       <div class="rc-home-title-block">
         <h1>Your subscription success hub</h1>
-        <p>Everything you need to get the most out of Recurly. Select a path below to uncover best practices, expert guidance, and on-demand education tailored to your KPIs.</p>
-      </div>
-      <div class="rc-hero-stats">
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Weekly</div>
-          <div class="rc-hero-stat-label">Global Office Hours</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">Quarterly</div>
-          <div class="rc-hero-stat-label">Merchant spotlight</div>
-        </div>
-        <div class="rc-hero-stat">
-          <div class="rc-hero-stat-num">24/7</div>
-          <div class="rc-hero-stat-label">On-demand paths</div>
-        </div>
+        <p>Everything you need to get the most out of Recurly. Select a pillar below to uncover best practices, expert customer success guidance, and on-demand education tailored to launch, grow, and scale your subscription business.</p>
       </div>
     </div>
 
