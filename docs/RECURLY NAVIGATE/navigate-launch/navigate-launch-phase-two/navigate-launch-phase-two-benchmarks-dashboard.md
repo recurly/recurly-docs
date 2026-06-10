@@ -383,7 +383,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">5</div>
           <div class="rc-step-content">
             <h4>Try the AI Assistant</h4>
-            <p>Go to <strong>Analytics → Analytics Dashboards</strong> and find the AI Assistant. Ask it plain-language questions about your growth or subscriber trends.</p>
+            <p>Open <strong>Analytics → Dashboard</strong>. Next, find your Compass AI Assistant, a "sparkle" located at the bottom right corner of your interface. Ask it plain-language questions about your growth or subscriber trends.</p>
           </div>
         </div>
       </div>
