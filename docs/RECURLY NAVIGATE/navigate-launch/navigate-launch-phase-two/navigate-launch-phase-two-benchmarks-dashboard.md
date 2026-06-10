@@ -355,7 +355,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">1</div>
           <div class="rc-step-content">
             <h4>Open the Benchmarks Dashboard</h4>
-            <p>In your Recurly admin, go to <strong>Analytics → Dashboards → Benchmarks</strong>. You'll see an overview of your KPIs compared to industry peers.</p>
+            <p>In your Recurly admin, go to <strong>Analytics → Benchmarks overview</strong>. You'll see an overview of your KPIs compared to industry peers.</p>
           </div>
         </div>
         <div class="rc-step">
