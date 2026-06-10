@@ -315,7 +315,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-pills">
           <span class="rc-pill rc-pill-up">Higher is better</span>
           <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
+          <span class="rc-pill">Analytics →  Benchmarks Overview → scroll to Renewal Invoice Paid Rate</span>
         </div>
       </div>
     </div>
@@ -345,7 +345,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-pills">
           <span class="rc-pill rc-pill-up">Higher is better</span>
           <span class="rc-pill">Industry median: ~27%</span>
-          <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
+          <span class="rc-pill">Analytics → Benchmarks Overview → scroll to Dunning Recovery Rate</span>
         </div>
       </div>
     </div>
@@ -364,7 +364,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-pills">
           <span class="rc-pill rc-pill-down">Lower is better</span>
           <span class="rc-pill">Check monthly</span>
-          <span class="rc-pill">Analytics → Dashboards → Benchmarks</span>
+          <span class="rc-pill">Analytics → Benchmarks Overview → scroll to Decline Rate at Renewal</span>
         </div>
       </div>
 
