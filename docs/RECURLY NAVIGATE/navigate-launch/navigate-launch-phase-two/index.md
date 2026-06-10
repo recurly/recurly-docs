@@ -339,7 +339,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <!-- Section: Your 6 core metrics -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Your 6 core benchmark metrics</h2>
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> Your 7 core benchmark metrics</h2>
       <p>These are the metrics that drive subscription growth. They show how well you're acquiring subscribers, how much revenue you're keeping, and how effectively your recovery systems are working.</p>
 
       <div class="rc-metric-grid">
@@ -372,6 +372,11 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-metric-card-icon"><i class="fa-solid fa-rotate"></i></div>
           <h4>Dunning recovery rate</h4>
           <p>Invoices paid / total invoices entering dunning</p>
+        </div>
+        <div class="rc-metric-card">
+          <div class="rc-metric-card-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <h4>Decline rate at renewal</h4>
+          <p>Percentage of failed renewal attempts</p>
         </div>
       </div>
 
