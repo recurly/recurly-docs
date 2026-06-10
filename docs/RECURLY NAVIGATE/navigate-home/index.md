@@ -342,7 +342,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <h3><i class="fa-solid fa-map-location-dot rc-fa-dark"></i>New to Navigate?</h3>
         <p>Welcome! Start here to learn how to use this program and find support.</p>
       </div>
-      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home-getting-started" class="rc-btn-primary">Get started here</a>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-btn-primary">Get started here</a>
     </div>
 
     <!-- ── HUB GRID ── -->
