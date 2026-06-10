@@ -369,7 +369,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
             <h4>Read each metric card</h4>
-            <p>Each card shows your current rate, the benchmark range by quartile, and your trend line. Note which of the 9 KPIs need attention.</p>
+            <p>Each card shows your current rate, the benchmark range by quartile, and your trend line. Note which KPIs need attention.</p>
           </div>
         </div>
         <div class="rc-step">
