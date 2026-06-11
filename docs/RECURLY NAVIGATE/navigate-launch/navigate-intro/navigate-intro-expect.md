@@ -193,8 +193,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     </details>
 
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> What to expect from Navigate</h2>
-<p>Need to write a quick sentence to introduce this page<p/>
+      <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> Your "always-on" Customer Success program</h2><p>
+<p>Need to write a quick sentence to hammer down on the purpose of Navigate and introduce the items below.</p><br>
 
       <!-- MONTHLY SCORECARD -->
       <h2><i class="fa-solid fa-chart-bar rc-fa-section"></i> Monthly Scorecard</h2>
