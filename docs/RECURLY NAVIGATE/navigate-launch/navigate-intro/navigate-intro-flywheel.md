@@ -75,11 +75,13 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
 .rc-flywheel-text { flex:1; min-width:200px; }
 .rc-flywheel-text p { font-size:.93rem; color:#32312D; line-height:1.65; margin:0 0 10px; }
 .rc-flywheel-text p:last-child { margin-bottom:0; }
+
 /* PILLAR CARDS */
 .rc-pillar-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:32px; }
 .rc-pillar { border-radius:14px; overflow:hidden; border:1px solid #CCC9B8; }
 .rc-pillar-head { padding:18px 20px; display:flex; align-items:center; gap:14px; }
-.rc-pillar-head-icon { width:40px; height:40px; background:#0D0D0B; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; color:#FFD706; }
+.rc-pillar-head-icon { width:40px; height:40px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.rc-pillar-head-icon img { width: 32px; height: auto; object-fit: contain; }
 .rc-pillar-head h3 { font-size:1.05rem; font-weight:800; margin:0 0 2px; color:#0D0D0B; }
 .rc-pillar-head p { font-size:.8rem; margin:0; color:#32312D; }
 .rc-pillar-scale .rc-pillar-head h3, .rc-pillar-scale .rc-pillar-head p { color:#0D0D0B; }
@@ -91,6 +93,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
 .rc-pillar-acquire .rc-pillar-head { background:#FFD706; }
 .rc-pillar-retain .rc-pillar-head { background:#FF9D88; }
 .rc-pillar-scale .rc-pillar-head { background:#FF5810; }
+
 /* WHERE TO START TABLE */
 .rc-starttip { background:#0D0D0B; border-radius:14px; padding:24px 28px; margin-bottom:32px; }
 .rc-starttip h4 { font-size:.88rem; font-weight:700; color:#FFD706; text-transform:uppercase; letter-spacing:.5px; margin:0 0 16px; }
@@ -194,31 +197,38 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
       <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> The four pillars, in depth</h2>
 
       <div class="rc-pillar-grid">
-      <div class="rc-pillar rc-pillar-launch">
-  <div class="rc-pillar-head">
-    <div class="rc-pillar-head-icon">
-      <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" />
-    </div>
-    <div>
-      <h3>Launch</h3>
-      <p>Get your subscription engine running</p>
-    </div>
-  </div>
-  <div class="rc-pillar-body">
-    <p>Build a solid foundation: configure your plans, set up payment flows, and make sure your subscriber experience is exactly what you want from day one.</p>
-    <div class="rc-tags">
-      <span class="rc-tag">Subscription setup</span>
-      <span class="rc-tag">Billing models</span>
-      <span class="rc-tag">Checkout</span>
-      <span class="rc-tag">Free trials</span>
-      <span class="rc-tag">Gateway config</span>
-    </div>
-  </div>
-</div>
+      
+        <div class="rc-pillar rc-pillar-launch">
+          <div class="rc-pillar-head">
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" />
+            </div>
+            <div>
+              <h3>Launch</h3>
+              <p>Get your subscription engine running</p>
+            </div>
+          </div>
+          <div class="rc-pillar-body">
+            <p>Build a solid foundation: configure your plans, set up payment flows, and make sure your subscriber experience is exactly what you want from day one.</p>
+            <div class="rc-tags">
+              <span class="rc-tag">Subscription setup</span>
+              <span class="rc-tag">Billing models</span>
+              <span class="rc-tag">Checkout</span>
+              <span class="rc-tag">Free trials</span>
+              <span class="rc-tag">Gateway config</span>
+            </div>
+          </div>
+        </div>
+        
         <div class="rc-pillar rc-pillar-acquire">
           <div class="rc-pillar-head">
-            <div class="rc-pillar-head-icon"><i class="fa-solid fa-user-plus"></i></div>
-            <div><h3>Acquire</h3><p>Grow your subscriber base</p></div>
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/35c0068f04fa0b50334daeeffa3213ef486e96a2a9d628d5057127bb7786d541-Acquire-icon-black.png" alt="Acquire" />
+            </div>
+            <div>
+              <h3>Acquire</h3>
+              <p>Grow your subscriber base</p>
+            </div>
           </div>
           <div class="rc-pillar-body">
             <p>Focus on bringing in new subscribers efficiently and converting them effectively. Pricing strategy, promotional mechanics, and a front door that converts.</p>
@@ -230,10 +240,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
             </div>
           </div>
         </div>
+        
         <div class="rc-pillar rc-pillar-retain">
           <div class="rc-pillar-head">
-            <div class="rc-pillar-head-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <div><h3>Retain</h3><p>Protect revenue, reduce churn</p></div>
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/2d6b0dfecebc907c932c4a7a27f8d76daeb9f8ff7ba76f775e1878a15c658e69-Retain-icon-black.png" alt="Retain" />
+            </div>
+            <div>
+              <h3>Retain</h3>
+              <p>Protect revenue, reduce churn</p>
+            </div>
           </div>
           <div class="rc-pillar-body">
             <p>Retention is where subscription businesses win or lose. This pillar covers dunning, payment recovery, cancellation prevention, and everything in between.</p>
@@ -245,10 +261,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
             </div>
           </div>
         </div>
+        
         <div class="rc-pillar rc-pillar-scale">
           <div class="rc-pillar-head">
-            <div class="rc-pillar-head-icon"><i class="fa-solid fa-chart-line"></i></div>
-            <div><h3>Scale</h3><p>Expand with confidence</p></div>
+            <div class="rc-pillar-head-icon">
+              <img src="https://files.readme.io/38bdbe95e36b4d13be3787855b9a3f2753d18eee342589915213b61a2e07e508-Scale-icon-black.png" alt="Scale" />
+            </div>
+            <div>
+              <h3>Scale</h3>
+              <p>Expand with confidence</p>
+            </div>
           </div>
           <div class="rc-pillar-body">
             <p>When you're ready to grow beyond your initial market, this pillar covers international expansion, advanced analytics, revenue recognition, and high-performance configurations.</p>
@@ -260,6 +282,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
             </div>
           </div>
         </div>
+        
       </div>
 
       <h2><i class="fa-solid fa-circle-question rc-fa-section"></i> Not sure where to start?</h2>
