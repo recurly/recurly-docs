@@ -68,7 +68,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-card p{font-size:.93rem;color:#32312D;line-height:1.65;margin:0 0 12px;}
 .rc-card p:last-child{margin-bottom:0;}
 /* SCORECARD IMAGE */
-.rc-scorecard-img{border-radius:14px;overflow:hidden;border:1px solid #CCC9B8;margin-bottom:24px;}
+.rc-scorecard-img{overflow:hidden;margin-bottom:24px;}
 .rc-scorecard-img img{width:100%;height:auto;display:block;}
 /* 2-COL TILES */
 .rc-wi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px;}
