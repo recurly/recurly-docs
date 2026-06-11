@@ -169,7 +169,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <span class="rc-pillar-icon-chip rc-chip-retain"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Retain</span>
         <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
       </div>
-      <h1>Introduction to Recurly Navigate</h1>
+      <h1>What to expect from Navigate</h1>
       <p class="rc-hero-sub">Your official orientation to Navigate: Recurly's digital Customer Success program built to help you get the most out of Recurly at every stage of your journey.</p>
     </div>
 
@@ -194,6 +194,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-circle-check rc-fa-section"></i> What to expect from Navigate</h2>
+<p>Need to write a quick sentence to introduce this page<p/>
 
       <!-- MONTHLY SCORECARD -->
       <h2><i class="fa-solid fa-chart-bar rc-fa-section"></i> Monthly Scorecard</h2>
