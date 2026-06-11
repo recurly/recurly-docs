@@ -248,17 +248,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
       </div>
 
-      <!-- CHECKLIST -->
-      <h2><i class="fa-solid fa-graduation-cap rc-fa-section"></i> Course complete — you're ready</h2>
-      <div class="rc-checklist">
-        <div class="rc-cl-header"><i class="fa-solid fa-list-check" style="color:#FFD706;"></i><h3>Introduction to Recurly Navigate — completion checklist</h3></div>
-        <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">What Customer Success is<span>And how Navigate brings it to you digitally, at scale</span></div></div>
-        <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">The Recurly Flywheel<span>The four pillars — Launch, Acquire, Retain, Scale — and how all Navigate content maps to each</span></div></div>
-        <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">Navigate Home in Recurly Docs<span>Your central hub for learning paths, webinars, on-demand content, and resources</span></div></div>
-        <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">What to expect from Navigate<span>Monthly scorecards, newsletters, Office Hours, Expert Sessions, and proactive outreach</span></div></div>
-        <div class="rc-cli"><div class="rc-cb"></div><div class="rc-clab">recurlynavigate@recurly.com is whitelisted in your email client<span>Ensures all Navigate communications reach your inbox</span></div></div>
-      </div>
-
       <!-- COMPLETION BLOCK — no buttons -->
       <div class="rc-complete">
         <i class="fa-solid fa-rocket rc-fa-dark"></i>
