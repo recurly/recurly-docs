@@ -197,7 +197,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
       <div class="rc-pillar rc-pillar-launch">
   <div class="rc-pillar-head">
     <div class="rc-pillar-head-icon">
-      <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch icon" />
+      <img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" />
     </div>
     <div>
       <h3>Launch</h3>
