@@ -194,22 +194,27 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
       <h2><i class="fa-solid fa-table-cells rc-fa-section"></i> The four pillars, in depth</h2>
 
       <div class="rc-pillar-grid">
-        <div class="rc-pillar rc-pillar-launch">
-          <div class="rc-pillar-head">
-            <div class="rc-pillar-head-icon"><i class="fa-solid fa-rocket"></i></div>
-            <div><h3>Launch</h3><p>Get your subscription engine running</p></div>
-          </div>
-          <div class="rc-pillar-body">
-            <p>Build a solid foundation: configure your plans, set up payment flows, and make sure your subscriber experience is exactly what you want from day one.</p>
-            <div class="rc-tags">
-              <span class="rc-tag">Subscription setup</span>
-              <span class="rc-tag">Billing models</span>
-              <span class="rc-tag">Checkout</span>
-              <span class="rc-tag">Free trials</span>
-              <span class="rc-tag">Gateway config</span>
-            </div>
-          </div>
-        </div>
+      <div class="rc-pillar rc-pillar-launch">
+  <div class="rc-pillar-head">
+    <div class="rc-pillar-head-icon">
+      <img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch icon" />
+    </div>
+    <div>
+      <h3>Launch</h3>
+      <p>Get your subscription engine running</p>
+    </div>
+  </div>
+  <div class="rc-pillar-body">
+    <p>Build a solid foundation: configure your plans, set up payment flows, and make sure your subscriber experience is exactly what you want from day one.</p>
+    <div class="rc-tags">
+      <span class="rc-tag">Subscription setup</span>
+      <span class="rc-tag">Billing models</span>
+      <span class="rc-tag">Checkout</span>
+      <span class="rc-tag">Free trials</span>
+      <span class="rc-tag">Gateway config</span>
+    </div>
+  </div>
+</div>
         <div class="rc-pillar rc-pillar-acquire">
           <div class="rc-pillar-head">
             <div class="rc-pillar-head-icon"><i class="fa-solid fa-user-plus"></i></div>
