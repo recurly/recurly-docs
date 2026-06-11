@@ -94,6 +94,10 @@ For new billing information (Cards) and APMs, Recurly will send relevant payment
 
 ## API Key Configuration and Setup
 
+> 📘 Kount Portfolio Accounts
+>
+> Please Note: If you have a Kount Basic/Portfolio account with Kount, skip to **Step 2,** **sub-step 7** to configure your Account in Recurly.
+
 ## Step 1: Obtain your Kount 360 API Key and MID
 
 You may follow these same steps for your Sandbox or Production Kount credentials. Please be aware that Sandbox Kount credentials will only work when your Recurly site is in 'Development' mode. Please reach out to Recurly support for assistance.
