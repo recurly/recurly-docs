@@ -82,7 +82,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
 .rc-pillar-head-icon { width:40px; height:40px; background:#0D0D0B; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; color:#FFD706; }
 .rc-pillar-head h3 { font-size:1.05rem; font-weight:800; margin:0 0 2px; color:#0D0D0B; }
 .rc-pillar-head p { font-size:.8rem; margin:0; color:#32312D; }
-.rc-pillar-scale .rc-pillar-head h3, .rc-pillar-scale .rc-pillar-head p { color:#FFFDF2; }
+.rc-pillar-scale .rc-pillar-head h3, .rc-pillar-scale .rc-pillar-head p { color:#0D0D0B; }
 .rc-pillar-body { padding:18px 20px; background:#FFFDF2; }
 .rc-pillar-body p { font-size:.88rem; color:#32312D; line-height:1.65; margin:0 0 12px; }
 .rc-tags { display:flex; flex-wrap:wrap; gap:6px; }
