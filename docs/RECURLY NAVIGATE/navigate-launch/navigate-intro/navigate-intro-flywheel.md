@@ -182,7 +182,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
 
       <div class="rc-flywheel-hero">
         <div class="rc-flywheel-img">
-          <img src="https://drive.google.com/uc?export=view&id=190stbfxuO7mFxVG_7-O49pvIkfGmpv_g" alt="The Recurly Flywheel: Launch, Acquire, Retain, Scale" onerror="this.style.display='none';" />
+          <img src="https://files.readme.io/85e931cea7e5f65844bb1928786a705578636d4a0e6a258be4f0f4a8cb871cac-Recurly-Flywheel.png" alt="The Recurly Flywheel: Launch, Acquire, Retain, Scale" onerror="this.style.display='none';" />
         </div>
         <div class="rc-flywheel-text">
           <p>Every resource in Navigate is structured around the four pillars of a healthy subscription business.</p>
