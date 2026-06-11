@@ -262,7 +262,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-wi">
           <div class="rc-wi-header"><i class="fa-solid fa-book-open" style="color:#FFD706;font-size:1.1rem;"></i><h4>Learning Paths &amp; on-demand</h4></div>
           <p>Self-paced learning paths, how-to guides, and best practice articles, all organized so you can find what's most relevant to where you are right now.</p>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs" target="_blank" rel="noopener noreferrer">Explore Navigate Home →</a>
+          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" target="_blank" rel="noopener noreferrer">Explore Navigate Home →</a>
         </div>
       </div>
 
