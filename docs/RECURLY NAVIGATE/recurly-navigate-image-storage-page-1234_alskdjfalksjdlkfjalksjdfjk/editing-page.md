@@ -68,7 +68,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
 .rc-card p{font-size:.93rem;color:#32312D;line-height:1.65;margin:0 0 12px;}
 .rc-card p:last-child{margin-bottom:0;}
 /* SCORECARD IMAGE */
-.rc-scorecard-img{overflow:hidden;border-radius:8px;}
+.rc-scorecard-img{overflow:hidden;border-radius:8px;width:100%;}
 .rc-scorecard-img img{width:100%;height:auto;display:block;}
 /* 2-COL TILES */
 .rc-wi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px;}
@@ -150,14 +150,14 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
 .rc-phase-title h3 { font-size: 1.05rem; font-weight: 800; color: #FFD706; margin: 0; line-height: 1.2; }
 .rc-phase-content { padding: 24px; border-top: 1px solid #E5E3D8; }
 
-/* 2-COLUMN ACCORDION GRID */
-.rc-acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
+/* ACCORDION CONTENT STACK (1-COLUMN ROW) */
+.rc-acc-grid { display: flex; flex-direction: column; gap: 24px; }
 .rc-acc-text p { font-size: .95rem; color: #32312D; line-height: 1.6; margin: 0 0 16px; }
 .rc-acc-text p:last-child { margin-bottom: 0; }
 .rm-Markdown.markdown-body .rc-guide .rc-acc-text a:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide .rc-acc-text a{color:#FF8200 !important;font-weight:700;border-bottom:0 !important;}
 
 /* VIDEO / IMAGE EMBED PLACEHOLDER */
-.rc-video-embed { position: relative; overflow: hidden; border-radius: 8px; background: #0D0D0B; aspect-ratio: 16/9; }
+.rc-video-embed { position: relative; overflow: hidden; border-radius: 8px; background: #0D0D0B; aspect-ratio: 16/9; width: 100%; }
 .rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
 .rc-placeholder-box { background: #EAE8DA; border: 2px dashed #CCC9B8; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: #807D73; font-size: .9rem; font-weight: 600; text-align: center; padding: 20px;}
 
@@ -165,7 +165,6 @@ details.rc-phase-block[open] .rc-phase-chevron { transform: rotate(180deg); }
   .rc-content-wrap{padding:0 20px;} .rc-top-nav{padding:16px 20px;} .rc-hero{padding:36px 20px 36px;} .rc-hero h1{font-size:1.8rem;}
   .rc-lp-nav{flex-wrap:wrap;justify-content:center;} .rc-lp-nav-indicator{width:100%;text-align:center;}
   .rc-wi-grid{grid-template-columns:1fr;} .rc-next-grid{grid-template-columns:1fr;} .rc-pillar-icon-row{gap:8px;}
-  .rc-acc-grid { grid-template-columns: 1fr; }
 }
 </style>
 
