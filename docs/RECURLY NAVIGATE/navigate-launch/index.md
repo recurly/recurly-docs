@@ -322,7 +322,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" class="rc-path-card">
           <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
-            <h3>Navigate Resource Library</h3>
+            <h3>Navigate resource library</h3>
             <p>A convenient on-stop-shop for all of the support, updates, and documentation links you need.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
