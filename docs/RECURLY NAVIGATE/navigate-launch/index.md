@@ -417,7 +417,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launch</span>
-					<a href="#welcome" class="rc-sticky-link">Welcome to Navigate</a>
+					<a href="#welcome" class="rc-footer-link">Welcome to Navigate</a>
           <a href="#launchpad" class="rc-footer-link">Launchpad</a>
           <a href="#technical" class="rc-footer-link" style="display: none;">Technical setup</a>
           <a href="#onboarding" class="rc-footer-link" style="display: none;">Onboarding</a>
