@@ -296,15 +296,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Intro to Navigate</h3>
-            <p>Understand Customer Success, Navigate's role in your growth, how to use the site, and what you can expect.</p>
+            <p>Understand how Recurly Navigate transforms Customer Success into a one-of-a-kind, "always-on" program built for you. Learn how the site works and what to expect from us.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-path-card">
           <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
-            <h3>Team training &amp; permissions</h3>
-            <p>Step-by-step instructions for inviting new users, setting up role-based access control, and training your staff on navigating the admin console.</p>
+            <h3>Resource library</h3>
+            <p>We've compiled all of the resources and links you need for support and information into a one-stop page.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
