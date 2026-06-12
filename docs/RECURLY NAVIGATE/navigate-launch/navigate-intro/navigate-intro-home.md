@@ -154,8 +154,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <span class="rc-pillar-icon-chip rc-chip-retain"><img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt=""> Retain</span>
         <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
       </div>
-      <h1>Introduction to Recurly Navigate</h1>
-      <p class="rc-hero-sub">Your official orientation to Navigate: Recurly's digital Customer Success program built to help you get the most out of Recurly at every stage of your journey.</p>
+      <h1>How to "navigate" Navigate</h1>
+      <p class="rc-hero-sub">The Subscription Flywheel is designed to help you create a cyclic growth strategy, and Navigate home is built on that philosophy.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
