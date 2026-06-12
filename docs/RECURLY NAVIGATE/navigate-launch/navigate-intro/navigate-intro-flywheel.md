@@ -158,7 +158,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows:1fr; }
         <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
       </div>
       <h1>The Subscription Flywheel</h1>
-      <p class="rc-hero-sub">Navigate is designed around the four pillar of subscription growth: Launch, Acquire, Retain, Scale.</p>
+      <p class="rc-hero-sub">Navigate is designed around the four pillars of subscription growth: Launch, Acquire, Retain, Scale.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
