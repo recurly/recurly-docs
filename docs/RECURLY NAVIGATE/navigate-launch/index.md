@@ -297,6 +297,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-home" class="rc-sticky-link">
               <img src="https://files.readme.io/105d407afb9e682bd60fbc60587b3da1cfb3d09be95148d71529b20fb286aadf-Home_icon_2.png" alt=""> Navigate Home
             </a>
+						<a href="#welcome" class="rc-sticky-link">Welcome to Navigate</a>
             <a href="#launchpad" class="rc-sticky-link">Launchpad</a>
             <a href="#technical" class="rc-sticky-link"style="display: none;">Technical setup</a>
             <a href="#onboarding" class="rc-sticky-link"style="display: none;">Onboarding</a>
@@ -307,7 +308,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 
  <!-- ── GETTING STARTED ── -->
-    <div id="onboarding" class="rc-category">
+    <div id="welcome" class="rc-category">
       <h2><i class="fa-solid fa-signs-post rc-fa-section"></i> Welcome to Navigate</h2>
       <div class="rc-path-list">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-path-card">
@@ -416,6 +417,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-footer-links">
         <div class="rc-footer-section">
           <span class="rc-footer-label">Launch</span>
+					<a href="#welcome" class="rc-sticky-link">Welcome to Navigate</a>
           <a href="#launchpad" class="rc-footer-link">Launchpad</a>
           <a href="#technical" class="rc-footer-link" style="display: none;">Technical setup</a>
           <a href="#onboarding" class="rc-footer-link" style="display: none;">Onboarding</a>
