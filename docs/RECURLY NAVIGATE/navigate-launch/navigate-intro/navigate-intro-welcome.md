@@ -194,7 +194,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <span class="rc-pillar-icon-chip rc-chip-scale"><img src="https://files.readme.io/7038a0b3a299cfe800553d4c8a6721f92b1fc7e031ef697861d3603fb1bb5a05-Scale-icon-white.png" alt=""> Scale</span>
       </div>
       <h1>Welcome to Navigate</h1>
-      <p class="rc-hero-sub">Your official orientation to Navigate: Recurly's digital Customer Success program built to help you get the most out of Recurly at every stage of your journey.</p>
+      <p class="rc-hero-sub">Understand the role Customer Success plays in your overall growth and how Navigate is designed to deliver it for you.</p>
     </div>
 
     <details class="rc-sticky-nav-wrap" open>
