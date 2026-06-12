@@ -304,7 +304,32 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
     </details>
+
+
+ <!-- ── GETTING STARTED ── -->
+    <div id="onboarding" class="rc-category">
+      <h2><i class="fa-solid fa-signs-post rc-fa-section"></i> Welcome to Navigate</h2>
+      <div class="rc-path-list">
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Intro to Navigate</h3>
+            <p>Understand how Recurly Navigate transforms Customer Success into a one-of-a-kind, "always-on" program built for you.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-launch-resource-library" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Navigate Resource Library</h3>
+            <p>A convenient on-stop-shop for all of the support, updates, and documentation links you need.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
+    </div>
    
+
 
     <!-- ── ONBOARDING ── -->
     <div id="onboarding" class="rc-category" style="display: none;">
