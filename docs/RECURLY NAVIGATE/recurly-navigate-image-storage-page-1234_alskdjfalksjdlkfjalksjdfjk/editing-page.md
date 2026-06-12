@@ -304,7 +304,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
           <div class="rc-path-content">
             <h3>Resource library</h3>
-            <p>We've compiled all of the resources and links you need for support and information into a one-stop page.</p>
+            <p>A convenient on-stop-shop for all of the support, updates, and documentation links you need.</p>
           </div>
           <div class="rc-path-arrow">Start path →</div>
         </a>
