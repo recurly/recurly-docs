@@ -287,6 +287,30 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </div>
       </div>
     </details>
+    
+    <!-- ── GETTING STARTED ── -->
+    <div id="gettingstarted" class="rc-category">
+      <h2><i class="fa-solid fa-sign-post rc-fa-section"></i> Onboarding</h2>
+      <div class="rc-path-list">
+        <a href="#" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Intro to Navigate</h3>
+            <p>Welcome to Navigate! Understand the purpose of Customer Success, how Navigate is here to help, how to use the site, and what you can expect from us.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+        <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-path-card">
+          <div class="rc-path-icon"><img src="https://files.readme.io/41c9ced85b9940e8600982eafb33c6d68fc11d01dd9f2fc7611155c43ce3d3fe-Launch-icon-black.png" alt="Launch" style="opacity:.6;" /></div>
+          <div class="rc-path-content">
+            <h3>Team training &amp; permissions</h3>
+            <p>Step-by-step instructions for inviting new users, setting up role-based access control, and training your staff on navigating the admin console.</p>
+          </div>
+          <div class="rc-path-arrow">Start path →</div>
+        </a>
+      </div>
+    </div>
+
 
     <!-- ── ONBOARDING ── -->
     <div id="onboarding" class="rc-category" style="display: none;">
