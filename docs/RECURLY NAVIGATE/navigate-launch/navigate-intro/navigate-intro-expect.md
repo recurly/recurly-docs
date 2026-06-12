@@ -31,7 +31,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .rc-announce-bar.rc-active{display:flex;} .rc-announce-inner{display:flex;align-items:center;gap:10px;flex:1;flex-wrap:wrap;}
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),.rc-guide a.rc-announce-link{color:#0D0D0B !important;font-weight:800;white-space:nowrap;padding:4px 12px;background:rgba(0,0,0,0.10);border-radius:6px;transition:background 0.2s;border-bottom:0 !important;}
 .rm-Markdown.markdown-body .rc-guide a.rc-announce-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,.rc-guide a.rc-announce-link:hover{background:rgba(0,0,0,0.20);color:#0D0D0B !important;}
-.rc-hero{background:linear-gradient(rgba(13,13,11,0.82),rgba(13,13,11,0.82)),url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center;background-color:#0D0D0B;background-size:cover;color:#fff;padding:48px 40px 44px;text-align:center;border-radius:16px;margin-bottom:0;}
+.rc-hero { background:linear-gradient(rgba(13,13,11,0.82),rgba(13,13,11,0.82)),url('https://files.readme.io/7a74d62bff1d532ca5adc49ae3d1c7d39a9703386b62fa98835df5c47a5f84b1-Topo_for_Black_Background_2.png') no-repeat center center; background-color:#0D0D0B; background-size:cover; color:#fff; padding:40px 40px 44px; text-align:center; border-radius:16px; margin-bottom:0; }
 .rc-brand-header{display:flex;justify-content:center;margin-bottom:0;} .rc-logo-image{height:28px;display:block;}
 .rc-pillar-icon-row{display:flex;justify-content:center;gap:12px;margin:36px auto 24px;flex-wrap:wrap;}
 .rc-pillar-icon-chip{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:20px;font-size:.72rem;font-weight:800;letter-spacing:.8px;text-transform:uppercase;}
@@ -160,9 +160,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
     </div>
 
     <div class="rc-hero">
-      <div class="rc-brand-header">
-        <img class="rc-logo-image" src="https://files.readme.io/3a81c518f47c7b9564898238f77cc4fcab026e99e7a7f09817e9815d89e0b297-Logo_for_Black_BG_V1.svg" alt="Recurly">
-      </div>
+     
       <div class="rc-pillar-icon-row">
         <span class="rc-pillar-icon-chip rc-chip-launch"><img src="https://files.readme.io/b6c93b0c856b23bcb18d1c1f5106eb9c83d23d9b505dc37e5ce9ea0d8dcfe89b-Launch-icon-white.png" alt=""> Launch</span>
         <span class="rc-pillar-icon-chip rc-chip-acquire"><img src="https://files.readme.io/d92be816a9e838fb46356e2547d5f8bb663dddb7b4a77cac37434efbd825e216-Acquire-icon-white.png" alt=""> Acquire</span>
