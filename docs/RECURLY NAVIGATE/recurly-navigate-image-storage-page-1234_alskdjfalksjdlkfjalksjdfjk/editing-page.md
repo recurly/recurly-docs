@@ -290,7 +290,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
 
  <!-- ── GETTING STARTED ── -->
-    <div id="onboarding" class="rc-category" style="display: none;">
+    <div id="onboarding" class="rc-category">
       <h2><i class="fa-solid fa-signs-post rc-fa-section"></i> Welcome to Navigate</h2>
       <div class="rc-path-list">
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-intro" class="rc-path-card">
