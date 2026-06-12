@@ -1,7 +1,7 @@
 ---
 title: Editing Page
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
