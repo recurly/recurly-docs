@@ -1,7 +1,7 @@
 ---
 title: 'Pricing & Plans 101: Add-ons'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
