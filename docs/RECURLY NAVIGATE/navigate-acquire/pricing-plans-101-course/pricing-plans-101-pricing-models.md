@@ -308,7 +308,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Ramp -->
         <div class="rc-model-card">
           <div class="rc-model-card-header">
-            <div class="rc-model-icon"><i class="fa-solid fa-stairs"></i></div>
+            <div class="rc-model-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
             <div>
               <p class="rc-model-title">Ramp pricing</p>
               <span class="rc-model-tag">Professional and Elite plans only</span>
@@ -350,7 +350,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <!-- Stairstep -->
         <div class="rc-model-card">
           <div class="rc-model-card-header">
-            <div class="rc-model-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <div class="rc-model-icon"><i class="fa-solid fa-stairs"></i></div>
             <div>
               <p class="rc-model-title">Stairstep pricing</p>
               <span class="rc-model-tag">Available on all plans</span>
