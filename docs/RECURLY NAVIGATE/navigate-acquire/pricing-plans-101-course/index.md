@@ -302,6 +302,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
+         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-toc-card">
+          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-body">
+            <h4>Review & resources</h4>
+            <p>Everything you covered in this course.</p>
+          </div>
+          <div class="rc-toc-arrow">→</div>
+        </a>
+
       </div>
 
       <p style="color: var(--gray); font-size: .92rem;">Each page covers one complete concept from overview to action. Work through them in order for the full picture, or jump to the topic you need most right now.</p>
