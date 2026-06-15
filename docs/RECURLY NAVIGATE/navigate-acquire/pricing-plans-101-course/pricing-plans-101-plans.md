@@ -1,7 +1,7 @@
 ---
 title: 'Pricing & Plans 101: Plans'
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
