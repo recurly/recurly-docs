@@ -303,7 +303,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-arrow">→</div>
         </a>
          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-acquire-pricing-plans-101-analytics" class="rc-toc-card">
-          <div class="rc-toc-num">6</div>
+          <div class="rc-toc-num">7</div>
           <div class="rc-toc-body">
             <h4>Review & resources</h4>
             <p>Everything you covered in this course.</p>
