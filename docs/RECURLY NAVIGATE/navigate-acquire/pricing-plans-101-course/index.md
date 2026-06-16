@@ -1,5 +1,5 @@
 ---
-title: 'Pricing & Plans 101: Course'
+title: Pricing & Plans 101
 deprecated: false
 hidden: true
 metadata:
