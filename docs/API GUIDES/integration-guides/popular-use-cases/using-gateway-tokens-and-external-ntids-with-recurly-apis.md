@@ -57,6 +57,7 @@ When using the Payment gateway references array, billing info updates are not ye
 This step is incredibly important, as the network transaction ID field cannot be passed without this feature flag enabled.
 
 - **Allow NTIDs in APIs**
+- **Enables Backfilling External Tokens**
 
 ## Step 1: Gather Required Information for using a Gateway Token
 
