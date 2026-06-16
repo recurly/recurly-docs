@@ -30,7 +30,7 @@ External payment implementations can capture customer data through a physical pa
 Before continuing with this guide, it’s recommended that you have completed the Quickstart Guide first.
 In this guide, we’ll be using the Accounts and Subscription endpoints of Recurly API, powerful endpoints designed to back signup and onboarding experiences. With these endpoints, you have the flexibility to create accounts and subscriptions with an external NTID for a future dated renewal.
 
-A subscription request can contain several different resources, but we’ll focus on the account references, gateway_token (legacy), gateway_code and network_transaction_id  parameters in this guide.
+A subscription request can contain several different resources, but we’ll focus on the account references, gateway\_token (legacy), gateway\_code and network\_transaction\_id  parameters in this guide.
 
 Since `gateway_code` may be deprecated in the future, using `payment_gateway_references.token` is preferred.
 
@@ -38,20 +38,25 @@ Since `gateway_code` may be deprecated in the future, using `payment_gateway_ref
 
 ### Supported Gateways
 
-* FreedomPay
-* Adyen
-* Commerce Hub
-* Braintree
+- FreedomPay
+- Adyen
+- Commerce Hub
+- Braintree
+- Stripe
 
 ### Supported Endpoints
 
 Currently we only support this in the `/subscriptions` and `/purchases` endpoint when adding future-dated subscriptions.
 
+### Supported Behaviors&#x20;
+
+When using the Payment gateway references array, billing info updates are not yet supported. You must _delete billing info and re-add_.&#x20;**&#x20;**
+
 ### Required Feature Flags
 
 This step is incredibly important, as the network transaction ID field cannot be passed without this feature flag enabled.
 
-* **Allow NTIDs in APIs**
+- **Allow NTIDs in APIs**
 
 ## Step 1: Gather Required Information for using a Gateway Token
 
@@ -63,15 +68,16 @@ For customers who are integrated with a Point of Sale system with a supported ga
 
 <br />
 
-| Parameter                                           | Description                                                                                                                                                                                                                             |
-| :-------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `billing_info.gateway_token`                        | **String**. Child of billing_info. An identifier for the given gateway’s payment method token. Must be used in conjunction with gateway_code and in some cases account_reference and network_transaction_id. **Legacy usage only.**     |
-| `billing_info.payment_gateway_references.token`     | **String**. Child of billing_info. An identifier for the given gateway’s payment method token. Must be used in conjunction with gateway_code and in some cases account_reference and network_transaction_id.  **Go-forward parameter.** |
-| `billing_info.gateway_code`                         | **String**. Child of billing_info. An identifier for a specific payment gateway. Must be used in conjunction with `gateway_token`.                                                                                                      |
-| `billing_info.gateway_attributes.account_reference` | **String**. Child of billing_info/gateway_attributes. Required when using Adyen Tokens, and should contain the shopper reference ID.                                                                                                    |
-| `billing_info_id`                                   | **String**. Billing Info ID for the account. This required.                                                                                                                                                                             |
-| `network_transaction_id`                            | **String**. The network transaction ID associated with the subscription or billing information (token) where required. Must be passed in when using a gateway that does not handle NTIDs on their own when using a gateway token.       |
-| `starts_at`                                         | **String**. Date/time of the future renewal. This field is incredibly important. If omitted, a transaction will be attempted.                                                                                                           |
+| Parameter                                                | Value                                                                                                                                                         | Description                                                                                                                                                                                                                                                                                                                                |
+| :------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `billing_info.gateway_token`                             | **String.&#x20;**&#x54;his will be the gateway token itself.                                                                                                  | **String**. Child of billing\_info. An identifier for the given gateway’s payment method token. Must be used in conjunction with gateway\_code and in some cases account\_reference and network\_transaction\_id. **Legacy usage only. This field does not support Stripe tokens.**                                                        |
+| `billing_info.payment_gateway_references.token`          | **String.&#x20;**&#x54;his will be the gateway token itself.                                                                                                  | **String**. Child of billing\_info. An identifier for the given gateway’s payment method token. Must be used in conjunction with gateway\_code and in some cases account\_reference and network\_transaction\_id.  **Go-forward parameter. Use for all gateways. Certain gateways also require the&#x20;**`reference_type` value (Stripe). |
+| `billing_info.payment_gateway_references.reference_type` | **String.&#x20;**&#x54;his will be the gateway token type. Options: `stripe_payment_method` or `stripe_customer`                                              | **String**. Child of billing\_info. An identifier for the given gateway’s payment method token. Must be used in conjunction with gateway\_code and the token.  **Go-forward parameter. Use for all gateways. Required for Stripe.**                                                                                                        |
+| `billing_info.gateway_code`                              | **String.&#x20;**&#x59;our gateway code.                                                                                                                      | **String**. Child of billing\_info. An identifier for a specific payment gateway. Must be used in conjunction with `gateway_token`.                                                                                                                                                                                                        |
+| `billing_info.gateway_attributes.account_reference`      | **String.&#x20;**&#x54;he Adyen Shopper reference ID. Omit when not using Adyen.                                                                              | **String**. Child of billing\_info/gateway\_attributes. Required when using **Adyen** Tokens, and should contain the shopper reference ID.                                                                                                                                                                                                 |
+| `billing_info_id`                                        | **String.&#x20;**&#x59;our billing info Id.                                                                                                                   | **String**. Billing Info ID for the account. This required.                                                                                                                                                                                                                                                                                |
+| `network_transaction_id`                                 | **String**. The NTID returned to you in the point of sale transaction, where your customer authorized the subscription via card-present terminal interaction. | **String**. The network transaction ID associated with the subscription or billing information (token) where required. Must be passed in when using a gateway that does not handle NTIDs on their own when using a gateway token.                                                                                                          |
+| `starts_at`                                              | **Date.&#x20;**&#x54;he date you want the renewal to start billing in the future.                                                                             | **String**. Date/time of the future renewal. This field is incredibly important. If omitted, a transaction will be attempted.                                                                                                                                                                                                              |
 
 ## Step 2: Create an Account and Store Billing Info ID
 
@@ -96,7 +102,7 @@ It’s recommended, at this point, to store the billing info ID for the next ste
             "country": "US"
         },
       "gateway_attributes":{
-					"account_reference":"adyen-shopper-reference" // Only send for Adyen
+        "account_reference":"adyen-shopper-reference" // Only send for Adyen
       },
 
         "gateway_token":"token-here" // Deprecated Parameter
@@ -105,13 +111,126 @@ It’s recommended, at this point, to store the billing info ID for the next ste
 
 ```
 
-**Note:** In place of the gateway_token parameter you may pass the `payment_gateway_references.token` value instead.
+**Note:** In place of the gateway\_token parameter you may pass the `payment_gateway_references.token` value instead if your gateway supports a one to one field exchange.&#x20;
 
 ```json
 "payment_gateway_references": [{
 	"token": "gateway-token-here",
 }]
 ```
+
+**If you are using Stripe**, you must provide the `reference_type` object and there will be two objects in the `payment_gateway_references` array like so:&#x20;
+
+```json
+{
+"payment_gateway_references": [
+        {
+            "token": "pm_xxxxxxxxxx",
+            "reference_type": "stripe_payment_method"
+        },
+        {
+            "token": "cus_xxxxxxxxxx",
+            "reference_type": "stripe_customer"
+        }
+    ]
+}
+```
+
+## Examples of Each Gateway&#x20;
+
+```json Adyen 
+{
+  "gateway)attributes": {
+    "account_reference": "adyen-shopper-reference"
+  },
+  "gateway_token": "adyen-recurring-detail-reference",
+  "gateway_code": "recurly-gateway-code"
+}
+
+// OR 
+
+{
+  "gateway)attributes": {
+    "account_reference": "adyen-shopper-reference"
+  },
+  "payment_gateway_references": [
+    {
+      "token": "adyen-recurring-detail-reference"
+    }
+  ],
+  "gateway_code": "recurly-gateway-code"
+}
+```
+```json Stripe
+{
+  "payment_gateway_references": [
+    {
+      "token": "stripe-payment-method-id",
+      "reference_type": "stripe_payment_method"
+    },
+    {
+      "token": "stripe-customer-id",
+      "reference_type": "stripe_customer"
+    }
+  ],
+  "gateway_code": "recurly-gateway-code"
+}
+```
+```json Braintree
+{
+  "gateway_token": "braintree-legacy-tokene",
+  "gateway_code": "recurly-gateway-code"
+}
+
+// OR 
+
+{
+  "payment_gateway_references": [
+    {
+      "token": "braintree-legacy-token",
+    }
+  ],
+  "gateway_code": "recurly-gateway-code"
+}
+```
+```json FreedomPay
+{
+  "gateway_token": "freedompay-token",
+  "gateway_code": "recurly-gateway-code"
+}
+
+// OR 
+
+{
+  "payment_gateway_references": [
+    {
+      "token": "freedompay-token"
+    }
+  ],
+  "gateway_code": "recurly-gateway-code"
+}
+```
+```json Commerce Hub
+...
+"gateway_token":"transarmor-token",
+"gateway_code":"recurly-gateway-code"
+...
+}
+
+// OR 
+
+...
+"payment_gateway_references":[{
+  "token":"transarmor-token"
+	}],
+"gateway_code":"recurly-gateway-code"
+...
+}
+```
+
+After submitting this step, store the resulting `billing-info-id`. You will need it for the next step. If you do not have the `billing-info-id` value, query the account to get it.&#x20;
+
+You can use the [Fetch Account endpoint](https://recurly.com/developers/api/v2021-02-25/#operation/get_account) to accomplish this.&#x20;
 
 ## Step 3: Create a Subscription Request
 
@@ -123,7 +242,9 @@ Updating an existing subscription is not supported at this time.
 
 **Endpoint**: `/subscriptions`
 
-```json
+If you are using the `/purchases` endpoint, the logic is much the same, though the payload is slightly different.
+
+```json JSON
 {
     "currency": "USD",
       "account": {
@@ -136,8 +257,6 @@ Updating an existing subscription is not supported at this time.
 }
 ```
 
-If you are using the `/purchases` endpoint, the logic is much the same, though the payload is slightly different.
-
 **Endpoint**: `/purchases`
 
 ```json
@@ -147,11 +266,10 @@ If you are using the `/purchases` endpoint, the logic is much the same, though t
         "code":"account-code"
     },
     "billing_info_id": "123456789", // Required Field
-	  "subscriptions": [
-		{
-			"plan_code": "monthly",
-            "starts_at":"2026-12-15T14:15:22Z" // Must be a future date
-		}
+    "subscriptions": [{
+      "plan_code": "monthly",
+      "starts_at":"2026-12-15T14:15:22Z" // Future date
+    }
 	],
     "gateway_code":"gateway-code",
     "network_transaction_id": "320036244781105" // NTID from a Customer Initiated Transaction
