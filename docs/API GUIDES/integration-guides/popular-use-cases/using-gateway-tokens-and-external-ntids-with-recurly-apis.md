@@ -57,6 +57,9 @@ When using the Payment gateway references array, billing info updates are not ye
 This step is incredibly important, as the network transaction ID field cannot be passed without this feature flag enabled.
 
 - **Allow NTIDs in APIs**
+
+This flag is important to allow Recurly to update meta-data on tokens so we can understand the card brand, display the correct BIN (first 6) and Last 4 of card data, and show the accurate payment method and expiration date if applicable.
+
 - **Enables Backfilling External Tokens**
 
 ## Step 1: Gather Required Information for using a Gateway Token
