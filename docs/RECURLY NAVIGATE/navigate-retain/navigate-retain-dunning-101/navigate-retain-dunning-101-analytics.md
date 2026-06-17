@@ -320,22 +320,23 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-chart-bar"></i></div>
           <h4>Dunning Benchmarks</h4>
-          <p>Found at <strong>Reports → Dunning Benchmarks</strong>. Shows your recovery rate over time compared to Recurly's industry benchmark. Use this monthly to track whether your rate is trending up after configuration changes, and to see how you compare to peers.</p>
+          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Benchmarks</strong>. Shows your recovery rate over time compared to Recurly's industry benchmark. Use this monthly to track whether your rate is trending up after configuration changes, and to see how you compare to peers.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
           <h4>Dunning Summary</h4>
-          <p>Found at <strong>Reports → Dunning Summary</strong>. A per-campaign breakdown of invoices entering dunning, recovery counts, and recovery revenue. Use this to compare performance across campaigns and identify which segment needs attention.</p>
+          <p>Found at <strong>Analytics → Dunning Campaigns → Dunning Summary</strong>. Shows total recovered revenue broken down by recovery method — intelligent retries, Account Updater, customer updates, and manual collection. Use this to understand how your revenue is being recovered, not which campaign is driving it. For per-campaign recovery rates, use the Dunning Effectiveness dashboards instead.</p>
         </div>
-        <div class="rc-feature-card">
-          <div class="rc-feature-icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
-          <h4>Email performance</h4>
-          <p>Found within each campaign under <strong>Configuration → Dunning Management</strong>. Shows open rate and click-through rate per email in the sequence. Use this to identify which emails are underperforming — a drop-off in click-through often signals a weak subject line or broken CTA link.</p>
+          <div class="rc-feature-card">
+          <div class="rc-feature-icon"><i class="fa-solid fa-table-list"></i></div>
+          <h4>Compare Campaigns</h4>
+          <p>Found at <strong>Analytics → Dunning Campaigns → Compare Campaigns</strong>. Shows recovery rate, recovered revenue, and dunning lifecycle data side by side for two campaigns or two versions of the same campaign. Use this to identify which segment is underperforming — and when during the dunning cycle recoveries are happening — so you can make targeted adjustments rather than changing everything at once.</p>
         </div>
+
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
           <h4>Recovered revenue report</h4>
-          <p>Found at <strong>Reports → Recovered Revenue</strong>. Shows total revenue recovered through dunning by time period. Use this alongside Dunning Benchmarks to connect recovery rate improvements to actual dollar impact for your business.</p>
+          <p>Found at <strong>Analytics → Churn Management → Recovered Revenue</strong>. Shows total revenue recovered through dunning by time period. Use this alongside Dunning Benchmarks to connect recovery rate improvements to actual dollar impact for your business.</p>
         </div>
       </div>
     </div>
@@ -353,26 +354,26 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
           <tr>
             <td><strong>Recovery rate</strong></td>
             <td>Dunning Benchmarks</td>
-            <td>At or above the 27% industry average; trending up after changes</td>
+            <td>At or above percentile ranking; compare against industry median</td>
             <td>Review window length, email cadence, and campaign assignments</td>
           </tr>
           <tr>
-            <td><strong>Email open rate</strong></td>
-            <td>Campaign email stats</td>
-            <td>30–45% on early emails; declining naturally toward end of sequence</td>
-            <td>Revisit subject lines — especially on Day 0 and Day 4–5 emails</td>
-          </tr>
-          <tr>
-            <td><strong>Email click-through rate</strong></td>
-            <td>Campaign email stats</td>
-            <td>10–20% on mid-sequence emails; higher on urgency emails</td>
-            <td>Check the payment update link works; review CTA copy and button placement</td>
-          </tr>
-          <tr>
-            <td><strong>Recovery revenue</strong></td>
-            <td>Recovered Revenue report</td>
+            <td><strong>Revenue recovery</strong></td>
+            <td>Churn Management</td>
             <td>Growing month-over-month as setup improves</td>
             <td>Cross-reference with recovery rate — flat revenue on improving rate may indicate volume decline</td>
+          </tr>
+          <tr>
+            <td><strong>Subscriptions saved</strong></td>
+            <td>Subscription Details</td>
+            <td>Growing number of subscriptions saved through dunning efforts; KPIs show a low "past due" count relative to "saved" count</td>
+            <td>Review which subscriber cohorts aren't recovering and consider creating targeted dunning campaigns for those segments; check if campaign assignments cover the right plans</td>
+          </tr>
+          <tr>
+            <td><strong>Dunning lifecycle by day (recovery timing)</strong></td>
+            <td>Compare Campaigns</td>
+            <td>Most recoveries happening earlier in the dunning cycle, not concentrated at the very end (last few days); shows healthy headroom in the window</td>
+            <td>If 10%+ of recoveries happen in the last few days of the cycle, lengthen the dunning window. If few recoveries happen at all late in the cycle, the window may be appropriate for your business</td>
           </tr>
         </tbody>
       </table>
@@ -401,7 +402,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
           <div class="rc-checkbox-box"></div>
           <div class="rc-checklist-text">
             <strong>Monthly: check Dunning Benchmarks</strong>
-            <span>Review recovery rate trend and compare to the 27% industry benchmark. Flag any month-over-month decline for investigation.</span>
+            <span>Review recovery rate trend and compare your percentile ranking to your industry benchmark. Flag any month-over-month decline for investigation.</span>
           </div>
         </label>
         <label class="rc-checklist-item">
@@ -410,14 +411,6 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
           <div class="rc-checklist-text">
             <strong>Monthly: review Dunning Summary by campaign</strong>
             <span>Compare recovery rates across campaigns. If one campaign is significantly below others, investigate window length, email cadence, and plan assignments.</span>
-          </div>
-        </label>
-        <label class="rc-checklist-item">
-          <input type="checkbox">
-          <div class="rc-checkbox-box"></div>
-          <div class="rc-checklist-text">
-            <strong>Quarterly: audit email open and click-through rates</strong>
-            <span>Identify which emails in each sequence are underperforming. Update subject lines or CTAs on any email with a click-through rate below 10%.</span>
           </div>
         </label>
         <label class="rc-checklist-item">
