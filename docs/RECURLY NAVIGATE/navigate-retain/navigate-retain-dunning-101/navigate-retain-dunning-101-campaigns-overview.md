@@ -356,7 +356,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-strategy" class="rc-btn-prev">← Branding &amp; CTAs</a>
-      <span class="rc-lp-nav-indicator">1 of 2</span>
+      <span class="rc-lp-nav-indicator">6 of 9</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-btn-path">Next: Building and assigning campaigns →</a>
     </div>
 
