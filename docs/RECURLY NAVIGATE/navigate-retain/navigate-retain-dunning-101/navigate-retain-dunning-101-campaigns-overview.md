@@ -118,6 +118,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
   text-align: left !important; 
   font-size: .75rem !important; 
   font-weight: 700 !important; 
+	font-color: #ffd706 !important;
   letter-spacing: .5px !important; 
   text-transform: uppercase !important; 
   border: none !important; 
