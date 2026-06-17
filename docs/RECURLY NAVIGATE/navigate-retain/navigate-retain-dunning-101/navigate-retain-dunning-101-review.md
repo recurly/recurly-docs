@@ -249,7 +249,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <h4>Dunning window length</h4>
             <ul>
               <li>The window is the container for all retries and emails — more window means more recovery time</li>
-              <li>Set 27 days for monthly plans and 60 days for annual to fit just inside each billing cycle</li>
+              <li>Set 28 days for monthly plans and 60 days for annual to fit just inside each billing cycle</li>
               <li>A single default window applied to all plans will always underperform — separate campaigns per billing frequency are essential</li>
             </ul>
           </div>
