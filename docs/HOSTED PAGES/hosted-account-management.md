@@ -13,136 +13,201 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Hosted Account Management gives your subscribers a consistent, branded portal to manage their subscriptions without leaving your website. Use Recurly's pre-built hosted pages for a fast setup, or build a fully custom experience using the Recurly API — both options give customers the self-service tools they need.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 # Definition
 
-Hosted Account Management helps you give subscribers a consistent subscription experience on your website. You can either build the experience with Recurly’s API or use Recurly’s preconfigured hosted pages for customers to manage their subscriptions.
-
-> 👍 New Recurly Checkout!
->
-> The new Checkout capability is now available to all Recurly customers. With quick setup and deployment, rich customizable features, and flexible payment options, Checkout is the new standard for fast and low-friction consumer checkout, powering subscription purchases for your business. [Learn more](https://docs.recurly.com/docs/checkout).
+<div class="rp-definition">Hosted Account Management gives subscribers a consistent subscription experience on your website. Choose between Recurly's pre-built hosted pages or a custom-built experience using the Recurly API — either way, customers can view their account status, modify billing details, retrieve past invoices, and manage their subscriptions.</div>
 
 # Key benefits
 
-* **Streamlined customer experience:** Let subscribers manage, update, or cancel their subscriptions without leaving your website.
-* **Flexibility:** Choose between custom-built pages using the Recurly API or Recurly’s hosted pages.
-* **Enhanced security:** Unique secret tokens ensure only authorized access to each customer’s account information.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-user-gear" aria-hidden="true"></i></div>
+    <strong>Streamlined customer experience</strong>
+    <span>Let subscribers manage, update, or cancel their subscriptions without leaving your website — reducing support burden and keeping customers in your ecosystem.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+    <strong>Flexible implementation</strong>
+    <span>Use Recurly's hosted pages for a fast, no-code setup, or build a fully custom experience via the Recurly API — your call based on what your team needs.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Secure access control</strong>
+    <span>Unique secret tokens ensure only authorized customers can access their own account information — with configurable access levels to match your security requirements.</span>
+  </div>
+</div>
 
 # Key details
 
-Recurly's Hosted Account Management gives you the flexibility to tailor the subscription experience to your needs. Customers can view their account status, modify billing details, retrieve past invoices, or make changes to their subscriptions.
-
 ## Access
 
-Customers use pre-defined URLs to access their account management tools. To provide those URLs:
+Customers use pre-defined URLs to access their account management portal. To find and share those URLs:
 
-1. **Navigate** to **Customers** → **Accounts**.
-2. **Select** an account.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open the customer account</h4><p>Navigate to Customers → Accounts and select the account.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} src="https://files.readme.io/162e97316690eaf43d395e6b3525620a1d8c90911d985ec61b54bf19f9518a06-image.png" className="border" />
 
-3. On the right side of the screen, under **Hosted Pages**, you’ll find two options: **Account Management URL** and **Edit Billing Information URL**.
+<Image src="https://files.readme.io/162e97316690eaf43d395e6b3525620a1d8c90911d985ec61b54bf19f9518a06-image.png" align="center" width="75%" border={true} />
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/c6e9fd55c77f2e7f0198bc1a199dfee3ae282e1590334649796df8fbd3a2af2b-image.png" className="border" />
 
-4. Share either one or both URLs with your customer.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Locate the hosted page URLs</h4><p>On the right side of the screen, under Hosted Pages, you'll find two options: Account Management URL and Edit Billing Information URL.</p></div>
+  </div>
+</div>
 
-> **Note:** Bear in mind that what customers can do depends on their access level. You can configure access as either **Account Login** or **Guest View Only**. Continue reading to learn how to configure it.
 
-> ❗️ **Security alert**
->
-> Safeguard this URL and token. Anyone with the link can access the account as the actual customer.
+<Image src="https://files.readme.io/c6e9fd55c77f2e7f0198bc1a199dfee3ae282e1590334649796df8fbd3a2af2b-image.png" align="center" width="75%" border={true} />
 
-### Account management URL
 
-The customer is automatically authenticated and can see all invoices and subscriptions. They can also:
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Note</strong>What customers can do depends on their access level. You can configure access as either Account Login or Guest View Only — see <a href="#customer-access">Customer access</a> below.</div>
+</div>
 
-* Change their payment method
-* Cancel subscriptions
-* Edit their billing information
-* Redeem gift cards
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Share the URLs with your customer</h4><p>Share either or both URLs depending on what the customer needs access to.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} src="https://files.readme.io/f7ac0d55789a6315f80bb5344b81ef612b61775cb088805e049d7b1cbb081329-image.png" className="border" />
+<div class="rp-callout rp-callout-important">
+  <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Security alert</strong>Safeguard these URLs and tokens. Anyone with the link can access the account as the actual customer.</div>
+</div>
 
-They can also change their email and password by clicking their name and selecting an option from the drop-down menu.
+### Account Management URL
 
-<Image align="center" border={true} src="https://files.readme.io/db99fa9a3dbb472288b2e164c09f82d6017e007e0a0ed6fd9aa5e499fee89439-image.png" className="border" />
+The Account Management URL automatically authenticates the customer, giving them access to all their invoices and subscriptions. From this page, customers can:
 
-### Edit billing information URL
+- Change their payment method
+- Cancel subscriptions
+- Edit their billing information
+- Redeem gift cards
 
-With this URL, the customer can quickly update their billing information.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/066cb8da6a7e2b7308d16d5546db252dd7f31900f727488f0506be43040f847b-image.png" className="border" />
+<Image src="https://files.readme.io/f7ac0d55789a6315f80bb5344b81ef612b61775cb088805e049d7b1cbb081329-image.png" align="center" width="75%" border={true} />
+
+
+Customers can also update their email and password by selecting their name and choosing an option from the dropdown menu.
+
+
+<Image src="https://files.readme.io/db99fa9a3dbb472288b2e164c09f82d6017e007e0a0ed6fd9aa5e499fee89439-image.png" align="center" width="75%" border={true} />
+
+
+### Edit Billing Information URL
+
+This URL takes the customer directly to a page where they can update their billing details.
+
+
+<Image src="https://files.readme.io/066cb8da6a7e2b7308d16d5546db252dd7f31900f727488f0506be43040f847b-image.png" align="center" width="75%" border={true} />
+
 
 ## Customer access
 
-Two primary settings control how your customers access Hosted Account Management: **Account Login** and **Guest View Only**. You can let customers register and gain full access to the portal, or give them links to specific hosted invoices. The default setting is **Guest View Only**.
+Two settings control how customers access Hosted Account Management. The default is **Guest View Only**.
 
 ### Account Login
 
-This setting unlocks the full Hosted Account Management portal. Once authenticated:
+Account Login unlocks the full Hosted Account Management portal. Once configured:
 
-* Customers land on a login page that also includes a sign-up section, accessible through your unique vanity URL.
-* Customers can create an account and log in using the email address that appears as their Account Info email address in your Recurly admin.
-* Each customer gets a distinct Hosted Account Management Login Token URL under **Edit Account** in the Recurly admin. Handle this link with care—it provides direct access.
+- Customers land on a login page (with a sign-up section) accessible through your unique vanity URL
+- Customers can create an account and log in using the email address stored as their Account Info email in your Recurly admin
+- Each customer gets a distinct Hosted Account Management Login Token URL under Edit Account in the Recurly admin — handle this link with care, as it provides direct account access
 
-You can include the **account_hosted_maintenance_url** parameter in your Recurly emails to send users straight to their account. For more details on editing email templates, see the [Email templates documentation](/docs/email-templates).
+To send customers directly to their account from Recurly emails, include the `account_hosted_maintenance_url` parameter in your email templates. See the <a href="/docs/email-templates" target="_blank">Email templates documentation</a> for details.
 
-### Guest view only
+### Guest View Only
 
-This setting uses Hosted Account Management to display limited customer details without requiring an account. It’s primarily used for hosted invoice pages and the billing info page.
+Guest View Only displays limited customer details without requiring account registration. It's primarily used for hosted invoice pages and the billing info page.
 
-### Configuration
+### Configure customer access
 
-1. **Log in** to your Recurly admin account.
-2. **Navigate** to **Configuration** → **Hosted Pages Settings**, then scroll to **Account Management Pages**.
-3. **Select** Enabled to activate Hosted Account Management.
-4. **Choose** between **Account Login** and **Guest View Only**.
-5. Under **Account Management Pages**, select what customers can view or edit on their account management page.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Open Hosted Pages Settings</h4><p>Navigate to Configuration → Hosted Pages Settings, then scroll to Account Management Pages.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Enable Hosted Account Management</h4><p>Select Enabled to activate the feature.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Choose your access mode</h4><p>Select either Account Login or Guest View Only.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">4</div>
+    <div><h4>Set customer permissions</h4><p>Under Account Management Pages, select what customers can view or edit in the portal.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} src="https://files.readme.io/916a6727a581f61f59ccc2790f816dcff9e2b068275a72f84d089ca5ea696594-image.png" className="border" />
 
-## Online payments
+<Image src="https://files.readme.io/916a6727a581f61f59ccc2790f816dcff9e2b068275a72f84d089ca5ea696594-image.png" align="center" width="75%" border={true} />
 
-If you’re on the Professional or Elite plan, you can use **Online Payments**. This lets customers pay manual invoices via credit card, PayPal, Amazon account, or ACH. When Online Payments is enabled in Hosted Account Management, a **Make a Payment** option appears on the hosted invoice page.
 
-<Image alt="319" border={false} src="https://files.readme.io/q0n6EYxvRFSPllhMBsYT_online-pay-button.png" title="online-pay-button.png" />
+## Online Payments
 
-<Image alt="328" border={false} src="https://files.readme.io/7FWLL1DTD2vK3eWSYfjO_online-pay-history.png" title="online-pay-history.png" />
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Plan requirement</strong>Online Payments is available on the Professional or Elite plan.</div>
+</div>
 
-If the invoice includes a recurring subscription, an opt-in checkbox appears so customers can use the selected payment method for automatic renewal payments. If they don’t select it, the next invoice will remain manual.
+Online Payments lets customers pay manual invoices via credit card, PayPal, Amazon, or ACH directly from the hosted invoice page. When enabled, a **Make a Payment** button appears on the hosted invoice page. If an invoice includes a recurring subscription, customers are shown an opt-in checkbox to use the selected payment method for future automatic renewal payments — if they don't opt in, the next invoice remains manual.
 
-### Enable online payments
+To enable Online Payments, go to **Hosted Pages Settings** and under **Customer Options**, select the **Pay invoices online** checkbox. If the Make a Payment button doesn't appear, confirm that your gateways are configured correctly.
 
-In your Recurly admin, go to **Hosted Pages Settings** and, under **Customer Options**, select the **Pay invoices online** checkbox. If the **Make a Payment** button doesn’t appear, confirm that your gateways are configured correctly.
+### Test the hosted invoice experience
 
-### Test the customer experience
-
-To test the hosted invoice experience with Online Payments:
-
-1. Issue a manual invoice.
-2. In your Recurly admin, open the invoice.
-3. Select the **Hosted Invoice** button.
-
-This unique link shows the Guest View version of the customer’s hosted invoice.
-
-## Display settings
-
-Both Hosted Account Management and Hosted Payment Pages use the same branding configuration.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Issue a manual invoice</h4><p>Create a manual invoice on the customer's account.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Open the invoice in the admin</h4><p>In your Recurly admin, navigate to the invoice.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Select Hosted Invoice</h4><p>Select the Hosted Invoice button. The unique link that opens shows the Guest View version of the customer's hosted invoice, including the Make a Payment option.</p></div>
+  </div>
+</div>
 
 ## Customization
 
-The customization settings apply to both hosted payment pages and account management pages, so adjust them with both in mind.
+Hosted Account Management and Hosted Payment Pages share the same branding configuration. Changes made here apply to both — adjust with both in mind.
 
-1. Under **Display Options**, **adjust** your branding preferences.
-2. Under **Google Analytics**, **enter** your code so hosted payment pages report to your Google Analytics property.
-3. **Save** your settings.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Adjust branding</h4><p>In Hosted Pages Settings, under Display Options, update your branding preferences.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Connect Google Analytics</h4><p>Under Google Analytics, enter your tracking code so hosted pages report to your Google Analytics property.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Save your settings</h4><p>Select Save. Remember to protect unique token links and review your settings periodically to maintain a secure experience for your customers.</p></div>
+  </div>
+</div>
 
-<Image align="center" border={true} src="https://files.readme.io/83f7bfe9a947a7d30eb2e888f1fc8ae57007a47e72219ae128845de425b14132-image.png" className="border" />
 
-Remember to protect unique token links and review your settings regularly to ensure a secure, clear experience for your customers.
+<Image src="https://files.readme.io/83f7bfe9a947a7d30eb2e888f1fc8ae57007a47e72219ae128845de425b14132-image.png" align="center" width="75%" border={true} />
+
+
+<br />
