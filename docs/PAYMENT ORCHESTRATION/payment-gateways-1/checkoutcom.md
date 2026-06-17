@@ -37,7 +37,7 @@ metadata:
 <div class="rp-callout rp-callout-important">
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Best practices before you start</strong>
   <ul>
-    <li>Checkout.com's fraud detection requires <strong>Recurly.js</strong> to collect browser and device data. If you're using 3D Secure (3DS), Recurly.js is also required. Passing raw card numbers directly via the API is not supported. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information" target="_blank">Recurly.js with stored billing information</a> for guidance on tokenizing stored cards.</li>
+    <li>Checkout.com's fraud detection requires <strong>Recurly.js</strong> to collect browser and device data. If you're using 3D Secure (3DS) Recurly.js is also required. Passing raw card numbers directly via the API is not supported. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information" target="_blank">Recurly.js with stored billing information</a> for guidance on tokenizing stored cards.</li>
     <li>Ensure your Business Entity's Merchant Category Code (MCC) is filled in correctly before enabling 3DS.</li>
     <li>The CVV is required for all CIT card payments, including MOTO. Ensure you are capturing the CVV for return customer transactions including signups, and one-time transactions. Recurly will never store the CVV code on your behalf.</li>
   </ul></div>
