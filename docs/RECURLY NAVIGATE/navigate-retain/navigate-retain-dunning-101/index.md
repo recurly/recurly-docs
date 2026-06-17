@@ -285,7 +285,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">1</div>
           <div class="rc-toc-body">
             <h4>Dunning window length</h4>
-            <p>Understand why the dunning window is your most important configuration setting — and set it to the recommended benchmarks for your billing frequencies.</p>
+            <p>Understand why the dunning window is your most important configuration setting — and set it to the "best-practice" timeframes for your billing frequencies.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -330,7 +330,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">6</div>
           <div class="rc-toc-body">
             <h4>Multiple campaigns</h4>
-            <p>Move beyond the default single campaign by segmenting dunning by plan type and billing frequency — so each subscriber gets a recovery sequence matched to their situation.</p>
+            <p>Move beyond the default single campaign by segmenting dunning by plan type and billing frequency — so each subscriber gets a recovery sequence matched to their agreement.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
