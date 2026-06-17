@@ -181,7 +181,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
       <div class="rc-lp-hero-title"><h1>Dunning window length</h1></div>
       <p>The window is the container everything else runs inside. Size it correctly and your retries and emails have maximum time to work.</p>
@@ -277,7 +277,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-btn-prev">← Dunning 101</a>
-      <span class="rc-lp-nav-indicator">1 of 2</span>
+      <span class="rc-lp-nav-indicator">1 of 9</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-btn-path">Next: Configuring your window →</a>
     </div>
 
@@ -290,13 +290,6 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       </div>
     </div>
 
-    <div class="rc-footer-nav">
-      <div class="rc-footer-links">
-        <div class="rc-footer-section">
-          <span class="rc-footer-label">1 of 9</span>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-footer-link">Understanding window length</a>
-          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-footer-link">Configuring your window</a>
-        </div>
         <div class="rc-footer-section">
                    <span class="rc-footer-label">Dunning 101</span>
          <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101" class="rc-footer-link">Dunning 101 overview</a>
