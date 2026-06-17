@@ -126,12 +126,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-btn-path { background: #FFD706; color: #0D0D0B !important; padding: 13px 28px; border-radius: 10px; font-weight: 800; font-size: .95rem; display: inline-flex; align-items: center; gap: 8px; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; transition: all .2s; }
 .rc-guide a.rc-btn-path:hover { background: transparent !important; border: 2px solid #FFD706 !important; border-bottom: 2px solid #FFD706 !important; }
 
-/* RESOURCES */
-.rc-resources { margin: 40px 0 0; }
-.rc-resources h3 { font-size: 1.05rem; font-weight: 800; color: #0D0D0B; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
-.rc-resource-links { display: flex; flex-direction: column; gap: 8px; }
+/* ── RESOURCES ── */
+.rc-resources { background: #F1EFE3; border-left: 4px solid #FF9D88; border-radius: 10px; padding: 20px 24px; margin: 32px 0 0; }
+.rc-resources h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .9px; color: #807D73; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.rc-resource-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn),
-.rc-guide a.rc-resource-link { color: #807D73 !important; font-size: .9rem; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; border-bottom: 0 !important; transition: color .2s; }
+.rc-guide a.rc-resource-link {
+  color: #807D73 !important; text-decoration: underline !important; text-underline-offset: 3px;
+  text-decoration-color: #CCC9B8 !important; font-weight: 500; font-size: .88rem;
+  transition: all .18s; display: inline-flex; align-items: center; gap: 6px; border-bottom: 0 !important;
+}
+.rm-Markdown.markdown-body .rc-guide a.rc-resource-link:not([class*="Button"]):not(.rp-anchor):not(.rp-toc-pill):not(.rp-btn):hover,
 .rc-guide a.rc-resource-link:hover { color: #0D0D0B !important; text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: #FF9D88 !important; }
 
 /* ── FOOTER ── */
@@ -288,7 +293,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <div class="rc-footer-nav">
       <div class="rc-footer-links">
         <div class="rc-footer-section">
-          <span class="rc-footer-label">Dunning window length</span>
+          <span class="rc-footer-label">1 of 9</span>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-footer-link">Understanding window length</a>
           <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-footer-link">Configuring your window</a>
         </div>
