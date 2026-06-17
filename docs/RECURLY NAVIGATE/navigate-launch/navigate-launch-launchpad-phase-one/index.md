@@ -107,7 +107,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 /* NAV (sticky + collapsed) */
 details.rc-sticky-nav-wrap {
-  position: sticky; top: 0; z-index: 100;
+  position: relative; top: 0; z-index: 100;
   background-color: #F1EFE3;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin: 24px 0 48px; border-radius: 12px;
@@ -276,7 +276,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     </div>
 
     <!-- Nav (sticky + collapsed — LP Overview) -->
-    <details class="rc-sticky-nav-wrap">
+    <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
