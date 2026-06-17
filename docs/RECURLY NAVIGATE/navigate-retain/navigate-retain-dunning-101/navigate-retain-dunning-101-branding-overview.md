@@ -81,6 +81,15 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 .rc-guide a.rc-sticky-link-active { font-weight: 800; color: #0D0D0B !important; }
 .rc-guide a.rc-sticky-link-active:hover { background: rgba(0,0,0,0.10); }
 
+/* VIDEO CARD */
+.rc-video-card { border: 1px solid #CCC9B8; border-radius: 14px; overflow: hidden; margin: 0 0 32px; }
+.rc-video-header { background: #0D0D0B; padding: 16px 22px; display: flex; align-items: center; gap: 10px; }
+.rc-video-header h4 { font-size: .88rem; font-weight: 700; text-transform: uppercase; letter-spacing: .7px; color: #FFD706; margin: 0; }
+.rc-video-header span { font-size: .78rem; color: #CCC9B8; margin-left: auto; }
+.rc-video-embed { position: relative; overflow: hidden; aspect-ratio: 16/9; background: #0D0D0B; }
+.rc-video-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
+.rc-video-caption { padding: 12px 22px; font-size: .83rem; color: #807D73; background: #F1EFE3; border-top: 1px solid #CCC9B8; line-height: 1.5; }
+
 /* CONTENT SECTIONS */
 .rc-lp-section { margin-bottom: 40px; }
 .rc-lp-section h2 { font-size: 1.4rem; font-weight: 800; margin: 0 0 16px; color: #0D0D0B; display: flex; align-items: center; gap: 12px; }
@@ -246,6 +255,17 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <h2><i class="fa-solid fa-envelope-open-text rc-fa-section"></i> What branding your dunning emails means</h2>
       <p>By default, Recurly's dunning email templates are functional but generic — plain layout, no logo, no brand colors. To a subscriber, an unformatted email asking them to update their payment details looks like a phishing attempt, not a trusted message from a business they subscribe to. Brand recognition is what turns a suspicious-looking email into an actionable one.</p>
       <p>Branded dunning emails match your other transactional communications — same logo, colors, tone, and footer. Subscribers recognize who it's from immediately, which increases open rates, click-through rates, and ultimately recovery.</p>
+
+  <div class="rc-video-card">
+        <div class="rc-video-header">
+          <h4>Trail guide: configuring dunning email templates</h4>
+          <span>~3 min</span>
+        </div>
+        <div class="rc-video-embed">
+          <iframe src="https://share.synthesia.io/embeds/videos/aa762aae-0ab6-44f9-9b57-a711992871fc" loading="lazy" title="Dunning email template configuration walkthrough" allowfullscreen allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"></iframe>
+        </div>
+        <div class="rc-video-caption">A walkthrough of the email template editor — applying branding, adding dynamic variables, and sending a test.</div>
+      </div>
 
       <div class="rc-card-grid">
         <div class="rc-feature-card">
