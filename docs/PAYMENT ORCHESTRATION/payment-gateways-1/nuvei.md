@@ -10,9 +10,9 @@ metadata:
 ---
 # Overview
 
-<Callout icon="👍" theme="okay">
-  **Early Access** Nuvei is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
-</Callout>
+> 👍
+>
+> **Early Access** Nuvei is currently available in Early Access. Interested merchants can contact [support@recurly.com](mailto:support@recurly.com) to gain access.
 
 ### Required plan
 
@@ -20,16 +20,15 @@ This feature or setting is available to all customers on any Recurly subscriptio
 
 ### Limitations
 
-<Callout icon="📘" theme="info">
-  ## **Important note**:
+> 📘 **Important note**:
+>
+> Nuvei gateway requires Browser Information in all transactions, so using Recurly.js for new signups and new billing information entry, such as billing info updates, regardless of 3DS usage, is important. You may use Recurly.js for either by following our standard guides for 3DS with Recurly.js. If you need 3DS on known billing information, you may also find our guide for known billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
 
-  Nuvei gateway requires Browser Information in all transactions, so using Recurly.js for new signups and new billing information entry, such as billing info updates, regardless of 3DS usage, is important. You may use Recurly.js for either by following our standard guides for 3DS with Recurly.js. If you need 3DS on known billing information, you may also find our guide for known billing information found in our Integration Guides: [Recurly.js with Stored Billing Information](https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information)
-</Callout>
-
-* Using the API to send in raw card details, or billing info IDs without using Recurly.js will not be supported due to the gateway's strict browser information requirement. Browser details are collected automatically when using Recurly.js.
-* Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
-* Gateway Tokens and Chargeback Notifications are not supported at this time.
-* Processing via the Admin UI may not be supported due to Nuvei's CVV and Customer IP address requirements. As these may be configurable with your gateway, please speak to your Nuvei representative if you need to run Admin transactions.
+- Using the API to send in raw card details, or billing info IDs without using Recurly.js will not be supported due to the gateway's strict browser information requirement. Browser details are collected automatically when using Recurly.js.
+- Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
+- The CVV is required for all CIT card payments, including MOTO. Ensure you are capturing the CVV for return customer transactions including signups, and one-time transactions. Recurly will never store the CVV code on your behalf.
+- Gateway Tokens and Chargeback Notifications are not supported at this time.
+- Processing via the Admin UI may not be supported due to Nuvei's CVV and Customer IP address requirements.&#x20;
 
 # Definition
 
@@ -55,30 +54,30 @@ To enable seamless communication between Recurly and your Nuvei account, it is e
 
 ### Step 1: Obtain your Nuvei credentials
 
-* You'll need to obtain your credentials from your Nuvei account directly, and ensure you have them available for entry in Step 2.
-  * From the REST API **Configuration** tab, click **Generate New API Key**.
-  * You will also need your Site ID, Merchant ID, Secret, and Source verification key.
-* You can find distinct documentation on Nuvei's website: [Access and/or Create API Credentials](https://docs-apm.nuvei.com/generate-api-key/)
-* **Note:** If you intend to use 3DS, you will also need the following information:
-  * Your Acquirer BIN (6 digits)
-  * Your Acquirer Merchant ID
-  * Your Acquirer Country
+- You'll need to obtain your credentials from your Nuvei account directly, and ensure you have them available for entry in Step 2.
+  - From the REST API **Configuration** tab, click **Generate New API Key**.
+  - You will also need your Site ID, Merchant ID, Secret, and Source verification key.
+- You can find distinct documentation on Nuvei's website: [Access and/or Create API Credentials](https://docs-apm.nuvei.com/generate-api-key/)
+- **Note:** If you intend to use 3DS, you will also need the following information:
+  - Your Acquirer BIN (6 digits)
+  - Your Acquirer Merchant ID
+  - Your Acquirer Country
 
 ### Step 2: Setup Nuvei webhooks
 
-* Log into the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
-* Locate the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}](https://callbacks.recurly.com/nuvei/\{\{your-subdomain}}). You may need to repeat this step multiple times.
-* Ensure the status is toggled to ON.
-* Specific events: Chargeback, Chargeback/Dispute
+- Log into the Nuvei dashboard and navigate to **Settings > My Account**. Select the **Events Configuration** tab. Choose 'Client' from the dropdown.
+- Locate the specific events and enter the webhook endpoint as follows: [https://callbacks.recurly.com/nuvei/{{your-subdomain}}](https://callbacks.recurly.com/nuvei/{{your-subdomain}}). You may need to repeat this step multiple times.
+- Ensure the status is toggled to ON.
+- Specific events: Chargeback, Chargeback/Dispute
 
 ### Step 3: Enter your Nuvei credentials in your Recurly site
 
-* Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
-* Enter the details you've obtained from your Nuvei configuration into the following fields:
-  * Your Merchant ID
-  * Your Site ID
-  * Your Secret Key
-  * Your Source Verification Key
+- Navigate to **Configuration > Payment Gateways**and **Select** Nuvei from the options available.
+- Enter the details you've obtained from your Nuvei configuration into the following fields:
+  - Your Merchant ID
+  - Your Site ID
+  - Your Secret Key
+  - Your Source Verification Key
 
 ### Step 4: Enable 3D Secure
 
@@ -86,14 +85,16 @@ If you are choosing to enable 3DS, you must select **Enable 3D Secure** as well 
 
 **Note:** You will also want to ensure the consumer-facing website domain (url) **and** your business' main MCC value are both present in your Default Business Entity before enabling 3DS.
 
-* Your Acquirer BIN, Acquirer Merchant ID (CAID), and Acquirer Country.
-* You can obtain these by speaking to Nuvei directly.
+- Your Acquirer BIN, Acquirer Merchant ID (CAID), and Acquirer Country.
+- You can obtain these by speaking to Nuvei directly.
 
 ### Step 5: Enable currencies
 
 You can add as well as **change** which currencies your Nuvei gateway can accept. Please choose from available currencies depending on which you are approved to accept.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/c4a227a-image.png" className="border" />
+
+<Image src="https://files.readme.io/c4a227a-image.png" align="center" width="80% " border={true} />
+
 
 ### Step 6: Add or Update your gateway
 
@@ -119,7 +120,9 @@ If you haven't already, you can block mismatched Address and CVV code results on
 3. **Set** the Radio Button option to ‘Enabled’. When Enabled, invalid or mismatched CVV code submissions will be rejected based on feedback from the card Issuer.
 4. **Click** `Save Changes`.
 
-<Image align="center" border={true} width="75% " src="https://files.readme.io/9306094-image.png" className="border" />
+
+<Image src="https://files.readme.io/9306094-image.png" align="center" width="75% " border={true} />
+
 
 ### Test your integration
 
