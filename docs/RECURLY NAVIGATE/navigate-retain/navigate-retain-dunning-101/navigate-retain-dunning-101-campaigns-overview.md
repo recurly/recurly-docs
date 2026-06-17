@@ -324,7 +324,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-gem"></i></div>
           <h4>Low-value or price-sensitive plans</h4>
-          <p>Shorter window, lighter cadence. For lower-priced plans where the revenue at stake is small relative to retry costs, a shorter dunning window and fewer emails is the right trade-off. Consider messaging that emphasizes a pause option or a discount to retain the subscriber rather than urgent payment recovery language — the goal is keeping them engaged, not pressuring them.</p>
+          <p>For low-cost plans, use shorter dunning windows and fewer emails to offset retry costs. Focus messaging on engagement—offering pauses or discounts—rather than aggressive payment pressure.</p>
         </div>
         <div class="rc-feature-card">
           <div class="rc-feature-icon"><i class="fa-solid fa-building"></i></div>
