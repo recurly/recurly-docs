@@ -352,7 +352,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-configure" class="rc-btn-prev">← Configuring email templates</a>
-      <span class="rc-lp-nav-indicator">3 of 3</span>
+      <span class="rc-lp-nav-indicator">5 of 9</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-btn-path">Continue to Multiple campaigns →</a>
     </div>
 
