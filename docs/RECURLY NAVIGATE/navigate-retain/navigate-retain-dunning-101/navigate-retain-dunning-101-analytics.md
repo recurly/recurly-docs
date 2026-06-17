@@ -307,7 +307,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+279%</div>
           <div class="rc-stat-tile-label">Recovered revenue in 30 days</div>
-          <div class="rc-stat-tile-context"><strong>My Music Workshop</strong> implemented dunning best practices from scratch through a Recurly Navigate session — setting up separate cycles for trials, monthly, and annual plans — and saw this result in their first month.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
+          <div class="rc-stat-tile-context"><strong>A music education subscription service</strong> implemented dunning best practices from scratch through a Recurly Navigate session — setting up separate cycles for trials, monthly, and annual plans — and saw this result in their first month.<br><br><strong><a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</strong></div>
         </div>
       </div>
 
