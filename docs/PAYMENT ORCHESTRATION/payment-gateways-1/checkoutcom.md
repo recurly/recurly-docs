@@ -39,6 +39,7 @@ metadata:
   <ul>
     <li>Checkout.com's fraud detection requires <strong>Recurly.js</strong> to collect browser and device data. If you're using 3D Secure (3DS), Recurly.js is also required. Passing raw card numbers directly via the API is not supported. See <a href="https://docs.recurly.com/recurly-subscriptions/docs/using-3d-secure-with-stored-billing-information" target="_blank">Recurly.js with stored billing information</a> for guidance on tokenizing stored cards.</li>
     <li>Ensure your Business Entity's Merchant Category Code (MCC) is filled in correctly before enabling 3DS.</li>
+    <li>The CVV is required for all CIT card payments, including MOTO. Ensure you are capturing the CVV for return customer transactions including signups, and one-time transactions. Recurly will never store the CVV code on your behalf.</li>
   </ul></div>
 </div>
 
@@ -173,12 +174,12 @@ https://callbacks.recurly.com/checkout/mywebsite
   </div>
 </div>
 
-| Field | Where to find it |
-|---|---|
-| API Public Key | Checkout.com dashboard → Developers → Keys |
-| Channel ID | Checkout.com dashboard → Developers → Keys |
-| API Secret Key | Checkout.com dashboard → Developers → Keys |
-| Source Verification Key | Generated in Step 2 (Signature key) |
+| Field                   | Where to find it                           |
+| ----------------------- | ------------------------------------------ |
+| API Public Key          | Checkout.com dashboard → Developers → Keys |
+| Channel ID              | Checkout.com dashboard → Developers → Keys |
+| API Secret Key          | Checkout.com dashboard → Developers → Keys |
+| Source Verification Key | Generated in Step 2 (Signature key)        |
 
 ## Step 4 — Enable 3D Secure
 
@@ -203,7 +204,9 @@ Skip this step if you're not using 3DS.
 
 Select the currencies your Checkout.com gateway should accept. You can add or change currencies at any time — choose only from those you're approved to process.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/c4a227a-image.png" className="border" />
+
+<Image src="https://files.readme.io/c4a227a-image.png" align="center" width="75%" border={true} />
+
 
 ## Step 6 — Save your gateway configuration
 
@@ -229,7 +232,9 @@ You can configure Recurly to automatically reject transactions where the billing
 3. Set the option to **Enabled**. When enabled, transactions with an invalid or mismatched CVV are rejected based on issuer feedback.
 4. Select **Save Changes**.
 
-<Image align="center" border={true} width="75%" src="https://files.readme.io/9306094-image.png" className="border" />
+
+<Image src="https://files.readme.io/9306094-image.png" align="center" width="75%" border={true} />
+
 
 ## Test your integration
 
@@ -257,3 +262,5 @@ Production and sandbox environments in Checkout.com are entirely separate system
 <div class="rp-callout rp-callout-important">
   <div><strong><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Going live from a copied configuration</strong> When going live, you cannot simply copy your sandbox gateway configuration. The copied gateway does not carry the correct site identifiers for the production environment — you must re-onboard Checkout.com from scratch in your production site.</div>
 </div>
+
+<br />
