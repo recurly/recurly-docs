@@ -195,7 +195,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
-          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name and pricing correctly, and links to your subscriber portal.</p></div>
+          <div class="rc-step-content"><h4>Check your confirmation email</h4><p>Verify the post-signup email arrives promptly, displays your plan name and pricing correctly, is fully branded and recognizable, and links to your subscriber portal.</p></div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
@@ -212,9 +212,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer{grid-template-rows:1fr;}
         <div class="rc-callout-body"><strong>Run the test on mobile</strong><p>Many checkout issues are device-specific. Use a mobile device and a different browser than your admin setup — this is where subscribers are most likely to encounter friction.</p></div>
       </div>
 
-      <div class="rc-callout rc-callout-caution">
         <div class="rc-callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div class="rc-callout-body"><strong>EU merchants: verify 3DS before launch</strong><p>If you haven't confirmed your 3D Secure setup and you process EU payments, you may see declined transactions at renewal. Review the PSD2 compliance docs linked below before proceeding.</p></div>
+        <div class="rc-callout-body"><strong>EU merchants: verify 3DS before launch</strong><p>If you haven't confirmed your 3D Secure setup and you process EU payments, you may see declined transactions at renewal. Not sure if this applies to you? <a href="https://docs.recurly.com/recurly-subscriptions/docs/revised-payment-services-directive-psd2”>Learn more here</a>.</p></div>
+      </div>
       </div>
 
       <div class="rc-checklist">
