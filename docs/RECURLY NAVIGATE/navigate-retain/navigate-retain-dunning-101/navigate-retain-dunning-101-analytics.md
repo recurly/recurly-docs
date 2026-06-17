@@ -286,24 +286,19 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 
     <!-- WHY IT MATTERS — STATS -->
     <div class="rc-lp-section">
-      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> The impact of branding on recovery</h2>
-      <p>Recurly data shows that merchants who apply full branding — logo, colors, personalization, and a clear CTA — consistently outperform those running generic templates. These aren't marginal gains.</p>
+      <h2><i class="fa-solid fa-chart-line rc-fa-section"></i> What optimized Dunning looks like in practice</h2>
+      <p>These results come from merchants who <strong>overhauled their full dunning setup</strong> — window length, email frequency, branding, and personalization — at once. Use them as a benchmark for what could be possible (depending on your current settings), and rely on your Dunning Effectiveness dashboard to track your own progress.</p>
 
       <div class="rc-stat-strip">
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+12%</div>
-          <div class="rc-stat-tile-label">Recovery rate uplift</div>
-          <div class="rc-stat-tile-context">From adding branded headers, updated window length, and optimized email frequency — one of the highest single-change gains in the dataset.</div>
-        </div>
-        <div class="rc-stat-tile">
-          <div class="rc-stat-tile-num">~60%</div>
-          <div class="rc-stat-tile-label">Higher click-through rate</div>
-          <div class="rc-stat-tile-context">Branded emails with a clear CTA see significantly higher click-through than plain-text templates — subscribers trust what they recognize.</div>
+          <div class="rc-stat-tile-label">Revenue lift in 3 months</div>
+          <div class="rc-stat-tile-context">Across a group of 20 merchants who worked with Recurly's Customer Success team to overhaul their dunning setup — including branding, window length, and email frequency — revenue lifted 12% within three months of launch. Read the <a href="https://recurly.com/content/subscription-case-study-dunning-workshop-to-reduce-customer-churn/" target="_blank" rel="noopener noreferrer">case study</a> to learn more.</div>
         </div>
         <div class="rc-stat-tile">
           <div class="rc-stat-tile-num">+279%</div>
-          <div class="rc-stat-tile-label">Recovery revenue in month 1</div>
-          <div class="rc-stat-tile-context">My Music Workshop implemented all dunning best practices from scratch, including full branding, and saw this result in their first month.</div>
+          <div class="rc-stat-tile-label">Recovered revenue in 30 days</div>
+          <div class="rc-stat-tile-context">My Music Workshop implemented dunning best practices from scratch — separate cycles for trials, monthly, and annual plans, plus full branding — and saw this result in their first month after switching to Recurly. <a href="https://recurly.com/resources/case-study/my-music-workshop/" target="blank" rel="noopener noreferrer">Check out their story</a> for more details.</div>
         </div>
       </div>
 
