@@ -198,8 +198,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       
     </div>
 
-   <!-- STICKY NAV — LP Overview variant -->
-    <details class="rc-sticky-nav-wrap">
+  <!-- STICKY NAV — LP Overview variant -->
+    <details class="rc-sticky-nav-wrap" open>
       <summary>
         <span class="rc-nav-toggle-label">Navigation Menu <i class="fa-solid fa-chevron-up rc-nav-chevron"></i></span>
       </summary>
@@ -214,7 +214,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-sticky-link">
-          Dunning window length
+          <span class="rc-step-badge">1</span> Dunning window length
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-sticky-link rc-sticky-link-active">
