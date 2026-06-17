@@ -297,7 +297,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- PATH NAV -->
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-btn-prev">← Measuring performance</a>
-      <span class="rc-lp-nav-indicator">Path complete</span>
+      <span class="rc-lp-nav-indicator">9 of 9</span>
       <span class="rc-btn-complete"><i class="fa-solid fa-circle-check"></i> Path complete!</span>
     </div>
 
