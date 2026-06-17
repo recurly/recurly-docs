@@ -28,7 +28,7 @@ This feature or setting is available to all customers on any Recurly subscriptio
 - Swapping site modes at will is not supported. Ensure you've got two separate sites for production and development testing to avoid issues.
 - The CVV is required for all CIT card payments, including MOTO. Ensure you are capturing the CVV for return customer transactions including signups, and one-time transactions. Recurly will never store the CVV code on your behalf.
 - Gateway Tokens and Chargeback Notifications are not supported at this time.
-- Processing via the Admin UI may not be supported due to Nuvei's CVV and Customer IP address requirements.&#x20;
+- Processing via the Admin UI may not be supported due to Nuvei's CVV and Customer IP address requirements. If you need to run MOTO transactions, you must integrate to the API, and collect CVV from your customer over the phone.
 
 # Definition
 
