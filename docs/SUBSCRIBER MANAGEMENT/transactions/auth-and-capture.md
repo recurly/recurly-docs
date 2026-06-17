@@ -131,7 +131,7 @@ Authorization and Capture separates payment verification from fund collection in
 </div>
 
 <div class="rp-callout rp-callout-note">
-  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API reference</strong>See the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/cancelPurchase" target="_blank">V3 Cancel</a> or <a href="https://recurly.com/developers/api-v2/v2.29/#operation/cancelPurchase" target="_blank">V2 Cancel</a> documentation for full endpoint details.</div>
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API reference</strong>See the <a href="https://docs.recurly.com/recurly-subscriptions/v2021-02-25/reference/cancelpurchase" target="_blank">V3 Cancel</a> or <a href="https://docs.recurly.com/recurly-subscriptions/v2.29/reference/cancelpurchase" target="_blank">V2 Cancel</a> documentation for full endpoint details.</div>
 </div>
 
 <br />
