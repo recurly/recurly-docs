@@ -303,7 +303,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">3</div>
           <div class="rc-toc-body">
             <h4>Branding dunning emails</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>Discover how adding your brand's visual identity and voice to dunning emails builds subscriber trust — and drives significantly higher payment recovery and click-through rates.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -312,7 +312,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">4</div>
           <div class="rc-toc-body">
             <h4>Configuring email templates</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>Learn how to configure your dunning email templates by applying visual branding, adding dynamic personalization variables, writing distinct copy, and verifying links.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -339,7 +339,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">7</div>
           <div class="rc-toc-body">
             <h4>Building &amp; assigning campaigns</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>Learn how to build targeted dunning campaigns, configure window lengths, and properly assign every plan to the correct sequence.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
@@ -357,7 +357,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-toc-num">9</div>
           <div class="rc-toc-body">
             <h4>Review &amp; resources</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p>Recap the key dunning optimization concepts covered in this path and access a comprehensive list of documentation, videos, and support resources.</p>
           </div>
           <div class="rc-toc-arrow">→</div>
         </a>
