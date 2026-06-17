@@ -218,9 +218,9 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- HERO -->
     <div class="rc-hero">
       <div class="rc-lp-pillar-tag">
-        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain
+        <img src="https://files.readme.io/4307b701706e500c878481348869b422f7b4632dc98773184d97596d2d977f87-Retain-icon-white.png" alt="Retain"> Retain • Dunning 101
       </div>
-      <div class="rc-lp-hero-title"><h1>Dunning 101</h1></div>
+      <div class="rc-lp-hero-title"><h1>Dunning 101: The basics</h1></div>
       <p>The top three optimizations that move the needle on payment recovery — plus how to track the results.</p>
       
     </div>
@@ -299,7 +299,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- PATH NAV — Start state -->
     <div class="rc-lp-nav">
       <span class="rc-btn-start">Start</span>
-      <span class="rc-lp-nav-indicator">Overview · 4 Micro-Paths</span>
+      <span class="rc-lp-nav-indicator">Overview</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-btn-path">Start path →</a>
     </div>
 
