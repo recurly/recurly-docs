@@ -273,7 +273,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         <tbody>
           <tr>
             <td><strong>Monthly</strong></td>
-            <td>27 days</td>
+            <td>28 days</td>
             <td>Sits just inside the 30-day billing cycle, giving retries maximum time without risking a duplicate invoice</td>
           </tr>
           <tr>
@@ -283,8 +283,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           </tr>
           <tr>
             <td><strong>Quarterly</strong></td>
-            <td>~90% of billing cycle</td>
-            <td>Scale with the interval; the same logic applies — preserve as much recovery time as possible without crossing into the next cycle</td>
+            <td>~60 days</td>
+            <td>Long enough to maximize recovery attempts while preventing the "waterfall effect," where a new invoice is generated before the prior one is collected.</td>
           </tr>
           <tr>
             <td><strong>Weekly</strong></td>
