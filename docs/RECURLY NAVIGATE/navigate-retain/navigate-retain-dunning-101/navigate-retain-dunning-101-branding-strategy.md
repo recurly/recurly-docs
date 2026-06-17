@@ -275,7 +275,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
             <td><strong>Day 4–5</strong></td>
             <td>Helpful, mild urgency</td>
             <td>"We're still having trouble processing your payment"</td>
-            <td>Fix it in 60 seconds</td>
+            <td>Fix it today</td>
           </tr>
           <tr>
             <td><strong>Day 10–12</strong></td>
