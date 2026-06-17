@@ -251,8 +251,8 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
       <div class="rc-callout rc-callout-warning">
         <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
         <div class="rc-callout-body">
-          <strong>A single 27-day window on an annual plan is one of the most expensive dunning mistakes</strong>
-          <p>Annual subscribers represent your highest LTV — yet the default setup gives them the same short window as a monthly subscriber. If an annual renewal fails and expires after 27 days, that's potentially a full year of revenue lost from a subscriber who may have resolved their card issue within days or weeks.</p>
+          <strong>A single 10-day window on all plans is one of the most expensive dunning mistakes</strong>
+          <p>Annual subscribers represent your highest LTV — yet the default setup gives them the same short window as a monthly subscriber. If an annual renewal fails and expires after 10 days, that's potentially a full year of revenue lost from a subscriber who may have resolved their card issue within days or weeks. Adjusting your dunning window according to unique plans ensures all subscriptions have ample time for recovery.</p>
         </div>
       </div>
     </div>
