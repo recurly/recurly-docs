@@ -1,8 +1,9 @@
 ---
 title: Authorization and capture
 excerpt: >-
-  Seamlessly Authorize and Capture your subscriber's payment details with
-  Recurly, ensuring a smooth and efficient transaction process.
+  An overview of Recurly's Authorization and Capture feature, including how to
+  authorize, capture, and cancel transactions via the API for greater payment
+  flexibility.
 deprecated: false
 hidden: false
 metadata:
@@ -12,75 +13,125 @@ metadata:
 next:
   description: ''
 ---
-# Overview
-
-### Required plan
-
-This feature or setting is available to all customers on any Recurly subscription plan.
+<div class="rp-page">
+  <div class="rp-overview">Authorization and Capture lets you separate the moment you verify a subscriber's payment method from the moment you actually collect funds — giving you a window to confirm inventory, run fraud checks, or time a charge to coincide with a trial's end. This page explains how the flow works and how to implement it using Recurly's API.</div>
+  <div class="rp-plan"><i class="fa-solid fa-key" aria-hidden="true"></i> Available on all Recurly plans</div>
+  <div class="rp-toc">
+    <a class="rp-toc-pill" href="#definition"><span class="rp-toc-num">1</span>Definition</a>
+    <a class="rp-toc-pill" href="#key-benefits"><span class="rp-toc-num">2</span>Key benefits</a>
+    <a class="rp-toc-pill" href="#key-details"><span class="rp-toc-num">3</span>Key details</a>
+  </div>
+</div>
 
 ### Prerequisites
 
-* Integration with Recurly's API or select client libraries.
-* Recurly's Authorization and Capture feature is compatible with several credit card gateways, including Braintree, Stripe, Adyen, PayPal Complete, Cybersource, Authorize.net, and CardConnect. Additional gateways will be integrated based on merchant demand.
+<ul class="rp-list">
+  <li>Integration with Recurly's API or a supported client library</li>
+  <li>A compatible credit card gateway — Authorization and Capture is supported on Braintree, Stripe, Adyen, PayPal Complete, Cybersource, Authorize.net, and CardConnect. Additional gateways will be added based on merchant demand</li>
+</ul>
 
 ### Limitations
 
-* No support for "partial captures" or "multiple captures."
-* Cannot capture more than the authorized amount.
-* Recurly does not automatically authorize cards before recurring subscription renewals.
-* Delayed capture is not customizable.
-* Some features, like Auth and Capture, are not fully supported with 3rd party integrations such as Xero or Quickbooks Online.
+<ul class="rp-list">
+  <li>Partial captures and multiple captures are not supported</li>
+  <li>You cannot capture more than the originally authorized amount</li>
+  <li>Recurly does not automatically authorize cards before recurring subscription renewals</li>
+  <li>Delayed capture timing is not customizable</li>
+  <li>Authorization and Capture is not fully supported with third-party integrations such as Xero or QuickBooks Online</li>
+</ul>
 
 # Definition
 
-Recurly's "Authorization and Capture" feature allows merchants to initially authorize a subscriber's credit card to ensure its validity and fund availability. Subsequently, merchants can capture the funds at a later, more suitable time.
+<div class="rp-definition">Authorization and Capture is a two-step payment flow that lets you first verify a subscriber's credit card for validity and fund availability, then collect the funds at a time that suits your business. The authorization places a hold on the funds without transferring them — the capture completes the transaction later.</div>
 
 # Key benefits
 
-* **Enhanced payment security**: Authorize credit cards to ensure legitimacy and fund sufficiency before capturing.
-* **Flexible transaction management**: Capture funds when it's most convenient, optimizing cash flow and customer relations.
-* **Efficient error handling**: Quickly identify and rectify payment issues, reducing transaction failures.
-
-## Benefits of authorizing first
-
-By authorizing before capturing, merchants can:
-
-* Ensure product availability before capturing funds for physical goods.
-* Conduct manual fraud reviews prior to fund capture and order fulfillment.
-* Authorize at the start of a free trial and capture funds at the subscription's start.
+<div class="rp-benefits">
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <strong>Stronger payment security</strong>
+    <span>Authorize cards upfront to confirm legitimacy and fund availability before any money moves — giving you a chance to review before committing.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+    <strong>Flexible capture timing</strong>
+    <span>Capture funds when it makes sense for your business — after confirming stock for physical goods, completing a fraud review, or at the end of a free trial period.</span>
+  </div>
+  <div class="rp-benefit">
+    <div class="rp-benefit-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+    <strong>Fewer transaction failures</strong>
+    <span>Catch and resolve payment issues at authorization — before fulfillment or fund movement — so you reduce failed captures and the friction that comes with them.</span>
+  </div>
+</div>
 
 # Key details
 
-## Authorization and capture
+## How authorization and capture works
 
-Recurly’s "Authorization and Capture" functionality enables merchants to first validate a subscriber's credit card for legitimacy and fund availability. Once verified, merchants can capture the due amount at their convenience.
+Authorization and Capture separates payment verification from fund collection into a two-step flow. An authorization confirms the card is valid and the funds are available, placing a hold on the subscriber's account without transferring money. Once you're ready, a capture completes the transaction and moves the funds. If you decide not to proceed, a cancel releases the hold.
 
-## Definitions
+<table class="rp-gw-table">
+  <tr class="rp-thead-row"><td>Action</td><td>What it does</td></tr>
+  <tr><td>Authorize</td><td>Sends a preliminary check to the subscriber's bank to confirm the card is valid and sufficient funds exist. Places a hold on the funds without transferring them.</td></tr>
+  <tr><td>Capture</td><td>Collects the authorized funds from the subscriber's account, completing the transaction.</td></tr>
+  <tr><td>Cancel</td><td>Releases the hold on the subscriber's account without collecting any funds. Use this when you decide not to proceed with a capture.</td></tr>
+</table>
 
-* **Authorize**: A preliminary check with the subscriber's bank to validate the credit card's legitimacy and ensure sufficient funds. This places a hold on the funds but doesn't transfer them.
+## Auth and capture flow
 
-* **Capture**: Post-authorization, this step collects the funds from the subscriber's account, completing the transaction.
+### Part 1: Initiate an authorization
 
-* **Cancel**: If funds aren't captured, this step releases the hold on the subscriber's account.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Access the API or a client library</h4><p>Connect to Recurly's API or your preferred supported client library.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Submit an authorize request</h4><p>Send a POST request to the authorize endpoint for your API version: <code>v3/purchases/authorize</code> or <code>v2/purchases/authorize</code>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">3</div>
+    <div><h4>Confirm transaction details</h4><p>Verify that all transaction details are correctly entered before submitting.</p></div>
+  </div>
+</div>
 
-### Auth and Capture Flow
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API reference</strong>See the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_authorize_purchase" target="_blank">V3 Authorize</a> or <a href="https://recurly.com/developers/api-v2/v2.29/#operation/authorizePurchase" target="_blank">V2 Authorize</a> documentation for full endpoint details.</div>
+</div>
 
-#### Part 1: Initiating authorization
+### Part 2: Capture the authorized amount
 
-* **Step 1**: Access Recurly's API or select client libraries.
-* **Step 2**: Submit a POST request to `v2/purchases/authorize` OR `v3/purchases/authorize` (based on your current API version).
-* **Step 3**: Ensure the transaction details are correctly entered.
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Call the capture endpoint</h4><p>To collect an authorized transaction's funds, send a request to the capture endpoint: <code>v3/purchase/{transaction_id}/capture</code> or <code>v2/purchases/transaction-uuid-{AUTHORIZED-TXN-UUID}/capture</code>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Include the transaction UUID</h4><p>Pass the transaction UUID from the original authorization in the request.</p></div>
+  </div>
+</div>
 
-#### Part 2: Capturing the authorized amount
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API reference</strong>See the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_capture_purchase" target="_blank">V3 Capture</a> or <a href="https://recurly.com/developers/api-v2/v2.29/#operation/capturePurchase" target="_blank">V2 Capture</a> documentation for full endpoint details.</div>
+</div>
 
-* **Step 1**: To capture an authorized transaction, use the `/capture` endpoint.
-* **Step 2**: Include the transaction UUID from the original authorization: `v2/purchases/transaction-uuid-<AUTHORIZED-TXN-UUID-HERE>/capture`or `v3/purchase/{transaction_id}/capture`flow depending on your version.
+### Part 3: Cancel an authorization
 
-#### Part 3: Canceling the authorization
+<div class="rp-steps">
+  <div class="rp-step">
+    <div class="rp-step-num">1</div>
+    <div><h4>Call the cancel endpoint</h4><p>If you decide not to capture the funds, send a request to the cancel endpoint: <code>v3/purchase/{transaction_id}/cancel</code> or <code>v2/purchases/transaction-uuid-{AUTHORIZED-TXN-UUID}/cancel</code>.</p></div>
+  </div>
+  <div class="rp-step">
+    <div class="rp-step-num">2</div>
+    <div><h4>Include the transaction UUID</h4><p>Pass the transaction UUID from the original authorization to release the hold on the subscriber's account.</p></div>
+  </div>
+</div>
 
-* **Step 1**: If you decide not to capture the funds, use the `/cancel` endpoint.
-* **Step 2**: Include the transaction UUID from the original authorization: `v2/purchases/transaction-uuid-<AUTHORIZED-TXN-UUID-HERE>/cancel`or `v3/purchase/{transaction_id}/cancel`, again depending on your version in use.
+<div class="rp-callout rp-callout-note">
+  <div><strong><i class="fa-solid fa-circle-info" aria-hidden="true"></i> API reference</strong>See the <a href="https://recurly.com/developers/api/v2021-02-25/index.html#operation/cancelPurchase" target="_blank">V3 Cancel</a> or <a href="https://recurly.com/developers/api-v2/v2.29/#operation/cancelPurchase" target="_blank">V2 Cancel</a> documentation for full endpoint details.</div>
+</div>
 
-**For V2 Implementations**: You can find all documentation for [V2 Authorize](https://recurly.com/developers/api-v2/v2.29/#operation/authorizePurchase), [V2 Capture](https://recurly.com/developers/api-v2/v2.29/#operation/capturePurchase) and [V2 Cancel](https://recurly.com/developers/api-v2/v2.29/#operation/cancelPurchase) documentation in Recurly's developer hub.
-
-**For V3 Implementations**: You can find [V3 Authorize](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_authorize_purchase), [V3 Capture](https://recurly.com/developers/api/v2021-02-25/index.html#operation/create_capture_purchase) and [V3 Cancel](https://recurly.com/developers/api/v2021-02-25/index.html#operation/cancelPurchase) as well in the [latest V3 documentation](https://recurly.com/developers/api/v2021-02-25/index.html).
+<br />
