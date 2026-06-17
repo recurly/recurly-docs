@@ -232,39 +232,39 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-sticky-link">
-          <span class="rc-badge">1</span> Dunning window length
+          <span class="rc-step-badge">1</span> Dunning window length
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-configure" class="rc-sticky-link">
-          <span class="rc-badge">2</span> Configuring your window
+          <span class="rc-step-badge">2</span> Configuring your window
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-sticky-link">
-          <span class="rc-badge">3</span> Branding dunning emails
+          <span class="rc-step-badge">3</span> Branding dunning emails
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-configure" class="rc-sticky-link">
-          <span class="rc-badge">4</span> Configuring email templates
+          <span class="rc-step-badge">4</span> Configuring email templates
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-strategy" class="rc-sticky-link">
-          <span class="rc-badge">5</span> Branding &amp; CTAs
+          <span class="rc-step-badge">5</span> Branding &amp; CTAs
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-overview" class="rc-sticky-link">
-          <span class="rc-badge">6</span> Multiple campaigns
+          <span class="rc-step-badge">6</span> Multiple campaigns
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-sticky-link">
-          <span class="rc-badge">7</span> Building &amp; assigning campaigns
+          <span class="rc-step-badge">7</span> Building &amp; assigning campaigns
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-analytics" class="rc-sticky-link">
-          <span class="rc-badge">8</span> Measuring performance
+          <span class="rc-step-badge">8</span> Measuring performance
         </a>
         
         <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-sticky-link">
-          <span class="rc-badge">9</span> Review &amp; resources
+          <span class="rc-step-badge">9</span> Review &amp; resources
         </a>
 
       </div></div></div>
