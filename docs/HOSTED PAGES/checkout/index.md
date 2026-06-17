@@ -41,7 +41,7 @@ metadata:
 
 # Key benefits
 
-<div class="rp-benefits-2x2">
+<div class="rp-benefits rp-benefits-2x2">
   <div class="rp-benefit">
     <div class="rp-benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
     <strong>Quick setup and deployment</strong>
