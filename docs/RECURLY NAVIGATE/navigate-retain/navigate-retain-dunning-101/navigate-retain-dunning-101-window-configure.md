@@ -269,21 +269,21 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <div class="rc-step-num">2</div>
           <div class="rc-step-content">
             <h4>Update the window length</h4>
-            <p>Set to <strong>27 days for monthly plans</strong> and <strong>60 days for annual plans</strong>. If you only have one campaign today, set it to 27 days and create a separate annual campaign in step 4.</p>
+            <p>Set to <strong>28 days for monthly plans</strong> and <strong>60 days for annual plans</strong>.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">3</div>
           <div class="rc-step-content">
             <h4>Review your email schedule</h4>
-            <p>Check that your emails are spaced to fit the window — aim for <strong>4–5 emails every 4–5 days</strong> on a monthly campaign, and <strong>8–10 emails spread across 60 days</strong> on annual. Adjust spacing if needed before saving.</p>
+            <p>Check that your emails are spaced to fit the window. For a monthly campaign, aim for <strong>4–5 total emails, sending one every 4-5 days</strong>, and <strong>8–10 emails spread across 60 days</strong> on annual. Adjust spacing if needed before saving.</p>
           </div>
         </div>
         <div class="rc-step">
           <div class="rc-step-num">4</div>
           <div class="rc-step-content">
-            <h4>Create a separate annual campaign</h4>
-            <p>Click <strong>New Campaign</strong>, set the window to 60 days, and build out a longer email sequence. Annual subscribers have more at stake — the messaging and cadence should reflect that.</p>
+            <h4>Ensure your messaging reflects plan length</h4>
+            <p>If you offer monthly and annual plans, you'll need separate campaigns. Remember: annual subscribers have more at stake — the messaging and cadence should reflect that.</p>
           </div>
         </div>
         <div class="rc-step">
