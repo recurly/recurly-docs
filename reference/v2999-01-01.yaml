@@ -7837,7 +7837,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Entitlements'
+                $ref: '#/components/schemas/EntitlementList'
         '404':
           description: Incorrect site or account ID.
           content:
@@ -20667,7 +20667,7 @@ components:
       description: >-
         Represents the connection type. One of the connection types of your
         enabled App Connectors
-    Entitlements:
+    EntitlementList:
       type: object
       description: >-
         A list of privileges granted to a customer through the purchase of a
