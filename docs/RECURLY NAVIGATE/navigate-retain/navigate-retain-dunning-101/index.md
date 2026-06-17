@@ -364,6 +364,16 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
       </div>
     </div>
+    
+        <!-- PATH NAV — Start state -->
+    <div class="rc-lp-nav">
+      <span class="rc-btn-start">Start</span>
+      <span class="rc-lp-nav-indicator">Overview</span>
+      <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-window-length" class="rc-btn-path">Start path →</a>
+    </div>
+
+
+
 
     <!-- RESOURCES -->
     <div class="rc-resources">
