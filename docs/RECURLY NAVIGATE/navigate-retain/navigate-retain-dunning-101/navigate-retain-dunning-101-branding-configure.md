@@ -292,7 +292,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-overview" class="rc-btn-prev">← Why branding matters</a>
-      <span class="rc-lp-nav-indicator">2 of 3</span>
+      <span class="rc-lp-nav-indicator">4 of 9</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-branding-strategy" class="rc-btn-path">Next: Subject lines, CTAs &amp; message arc →</a>
     </div>
 
