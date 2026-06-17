@@ -449,7 +449,7 @@ label.rc-checklist-item:has(input[type="checkbox"]:checked) { background: rgba(2
 
     <div class="rc-lp-nav">
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-campaigns-configure" class="rc-btn-prev">← Multiple campaigns</a>
-      <span class="rc-lp-nav-indicator">1 of 1</span>
+      <span class="rc-lp-nav-indicator">8 of 9</span>
       <a href="https://docs.recurly.com/recurly-subscriptions/docs/navigate-retain-dunning-101-review" class="rc-btn-path">Continue to Review &amp; Resources →</a>
     </div>
 
