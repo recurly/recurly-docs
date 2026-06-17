@@ -246,7 +246,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
     <!-- THE PROBLEM -->
     <div class="rc-lp-section">
       <h2><i class="fa-solid fa-circle-exclamation rc-fa-section"></i> The problem with a single default campaign</h2>
-      <p>Recurly ships with one dunning campaign applied to every plan. That works as a starting point, but a monthly consumer subscriber and an annual enterprise customer have very different recovery profiles — different LTV at stake, different likelihood of updating their card quickly, and different messaging that will resonate. One campaign can't do all of that well.</p>
+      <p>Recurly ships with one dunning campaign applied to every plan. That works as a starting point, but a monthly consumer subscriber and an annual enterprise customer have very different recovery profiles — different LTV at stake, different likelihood of updating their card quickly, and different messaging that will resonate. One campaign can't do all of that well.<br><br><strong>Note:</strong> Multiple dunning campaigns are not available on the Starter plan. <a href="mailto:support@recurly.com">Contact support</a> to inquire about your plan if needed.</p>
 
       <div class="rc-callout rc-callout-warning">
         <div class="rc-callout-icon"><i class="fa-solid fa-circle-info"></i></div>
@@ -292,7 +292,7 @@ details.rc-sticky-nav-wrap[open] .rc-nav-drawer { grid-template-rows: 1fr; }
           <tr><th>Campaign type</th><th>Window</th><th>Email count</th><th>Tone</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Monthly consumer</strong></td><td>27 days</td><td>4–5 emails</td><td>Friendly, concise</td></tr>
+          <tr><td><strong>Monthly consumer</strong></td><td>28 days</td><td>4–5 emails</td><td>Friendly, concise</td></tr>
           <tr><td><strong>Annual</strong></td><td>60 days</td><td>8–10 emails</td><td>Higher-touch, value-focused</td></tr>
           <tr><td><strong>Student / low-value</strong></td><td>14–21 days</td><td>3–4 emails</td><td>Casual, option-forward</td></tr>
           <tr><td><strong>Enterprise / team</strong></td><td>60+ days</td><td>8–12 emails</td><td>Formal, consequence-aware</td></tr>
